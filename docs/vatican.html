@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vatican Challenge Part 5 — identified as an Antonio Elio cipher</title>
-<meta name="description" content="Cardinal Farnese to the nuncio Poggio, Rome 15 April 1542, ASV Segr. Stato Spagna 1A/2. Not solved, but identified: a polyphonic-syllabic cipher of the kind Antonio Elio designed for Paul III's chancery. Five structural measurements match that design, including a doubled-digit suppression that reproduces a written chancery rule.">
+<title>Vatican Challenge Part 5 — Simon Klee's solution reviewed</title>
+<meta name="description" content="Review of Simon Klee's accepted solution of Vatican Challenge Part 5, Cardinal Farnese to nuncio Poggio, Rome, April 1542: recovered key, candidate plaintext, controls, manuscript checks, and remaining uncertainties.">
 <link rel="stylesheet" href="style.css?v=20260919a">
 <meta name="date" content="2026-09-15">
-<meta name="last-modified" content="2026-09-18">
+<meta name="last-modified" content="2026-09-20">
 </head>
 <body id="top">
 <header class="nav"><div class="in">
@@ -15,7 +15,7 @@
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="hellen1752.html"><span class="st stuck">unsolved; investigation open</span><b>Hellen 1752–1763</b><span class="yr">1752&ndash;63</span></a></li><li><a href="nunzio1718.html"><span class="st found">already solved; key extended</span><b>Nunziatura di Spagna 1718</b><span class="yr">1718&ndash;20</span></a></li><li><a href="ceva1632.html"><span class="st partial">read in part</span><b>Barberini to Ceva 1632</b><span class="yr">1632</span></a></li><li><a href="pallotto1629.html"><span class="st found">already in print</span><b>Pallotto to Barberini 1629</b><span class="yr">1629</span></a></li><li><a href="sp106box10.html"><span class="st partial">file explained, read in part</span><b>SP 106/10 codebreaker</b><span class="yr">1623&ndash;24</span></a></li><li><a href="charlesixducroc.html"><span class="st found">already solved</span><b>Charles IX to du Croc</b><span class="yr">1565&ndash;67 or 1572</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">37</span><b>Solved</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">19</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">20</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">8</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 85 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="hellen1752.html"><span class="st stuck">unsolved; investigation open</span><b>Hellen 1752–1763</b><span class="yr">1752&ndash;63</span></a></li><li><a href="nunzio1718.html"><span class="st found">already solved; key extended</span><b>Nunziatura di Spagna 1718</b><span class="yr">1718&ndash;20</span></a></li><li><a href="ceva1632.html"><span class="st partial">read in part</span><b>Barberini to Ceva 1632</b><span class="yr">1632</span></a></li><li><a href="pallotto1629.html"><span class="st found">already in print</span><b>Pallotto to Barberini 1629</b><span class="yr">1629</span></a></li><li><a href="sp106box10.html"><span class="st partial">file explained, read in part</span><b>SP 106/10 codebreaker</b><span class="yr">1623&ndash;24</span></a></li><li><a href="charlesixducroc.html"><span class="st found">already solved</span><b>Charles IX to du Croc</b><span class="yr">1565&ndash;67 or 1572</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">37</span><b>Solved</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">20</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">20</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">7</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 85 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <a href="index.html#recent">Latest</a>
     <a href="catalogue.html">Catalogue</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
@@ -36,28 +36,65 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">7 3 4 5 7 4 9 0 3 5 5 7 5 2 8 0 6 8 0 5 7 3 8 0 3<br>3 4 7 8 0 8 5 7 2 0 3 2 7 6 5 7 9 6 0 3 9 3 5 2 2 7&#94;.<br>&hellip; 6549 digits over four folios</div>
-  <p class="kicker">Working notes &middot; September 2026</p>
-  <h1>The Vatican cipher of April 1542</h1>
-  <p class="sub">Cardinal Alessandro Farnese to the nuncio Giovanni Poggio at the court of Charles V, Rome, 15 April 1542.
+  <div class="cipherstrip">73 4 57 4 9 03 5<br>d&nbsp;&nbsp; o&nbsp;&nbsp; p&nbsp;&nbsp; o&nbsp;&nbsp; &middot;&nbsp;&nbsp; l&nbsp;&nbsp; a<br>&hellip; 6,562 corrected digit tokens over four folios</div>
+  <p class="kicker">Solution review &middot; September 2026</p>
+  <h1>The Farnese letter, solved by Simon Klee</h1>
+  <p class="sub">Cardinal Alessandro Farnese to the nuncio Giovanni Poggio at the court of Charles V, Rome, April 1542.
   Archivio Segreto Vaticano, Segr. Stato Spagna 1A/2, ff. 70r&ndash;73v. Set as
-  <a href="https://mysterytwister.org/">MysteryTwister</a>&rsquo;s Vatican Challenge Part 5 by George Lasry in 2019, and
-  still open.</p>
-  <p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-09-18">18 September 2026</time></p>
+  <a href="https://mysterytwister.org/">MysteryTwister</a>&rsquo;s Vatican Challenge Part 5 by George Lasry in 2019;
+  solved by <a href="https://simonklee.dk/farnese-letter">Simon Klee</a> in September 2026.</p>
+  <p class="meta">Daniel Bourdeau &middot; resolved <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-09-20">20 September 2026</time> &middot; independent review and earlier attempt: Daniel Bourdeau</p>
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-document">The document</a><a href="#what-is-established">What is established</a><a href="#what-is-excluded">What is excluded</a><a href="#what-the-cipher-is">What the cipher is</a><a href="#what-the-specialists-say-about-breaking-">What the specialists say about breaking it</a><a href="#the-plaintext-is-unpublished-but-its-nei">The plaintext is unpublished — but its neighbour</a><a href="#the-finding-that-best-explains-why-this-">The finding that best explains why this one resi</a><a href="#the-last-structural-question-answered">The last structural question, answered</a><a href="#where-it-stands">Where it stands</a><a href="#the-manuscript-images">The manuscript images, and the sibling letter</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#solution-review">Why the solution holds</a><a href="#the-document">The document</a><a href="#what-is-established">What is established</a><a href="#what-is-excluded">What is excluded</a><a href="#what-the-cipher-is">What the cipher is</a><a href="#what-the-specialists-say-about-breaking-">What the specialists say about breaking it</a><a href="#the-plaintext-is-unpublished-but-its-nei">The plaintext is unpublished — but its neighbour</a><a href="#the-finding-that-best-explains-why-this-">The finding that best explains why this one resi</a><a href="#the-last-structural-question-answered">The last structural question, answered</a><a href="#where-it-stands">Where it stands</a><a href="#the-manuscript-images">The manuscript images, and the sibling letter</a></nav>
 <figure class="lead"><img src="vatican_meister176.jpg" alt="Meister 1906, page 176: the Farnese chancery keys of 1539 to 1542, including the last cipher with Poggio"><figcaption>Meister 1906, page 176: the Farnese chancery keys of 1539 to 1542, including the last cipher with Poggio. Meister, Die Geheimschrift, 1906, via the Internet Archive.</figcaption></figure>
 <div class="callout">
-  <h3>Not solved &mdash; but no longer unidentified</h3>
-  <p>Five attacks have been run here against this cryptogram. It is still unread. What changed this session is that the cipher now has a name: it is a <b>polyphonic-syllabic cipher of the kind invented by Antonio Elio</b>, cipher secretary to Paul III and therefore to the very chancery that sent this letter. Every structural measurement made here turns out to match that documented design, including one that reproduces a written chancery instruction. And the specialists who solved its siblings state in print that ciphertext-only attack on this family is &ldquo;nearly impossible, even with modern computing&rdquo;.</p>
-  <p>Since then the 400&nbsp;dpi manuscript images and the sibling letter have been examined (section 10). They give an
-  image-verified transcript and exclude every renumbering of the printed Farnese keys, but they carry no separators,
-  no decipherment and no key.</p>
+  <h3>Solved &mdash; Klee&rsquo;s submission was accepted</h3>
+  <p><a href="https://simonklee.dk/farnese-letter">Simon Klee recovered the key and a candidate plaintext</a> and
+  submitted them to MysteryTwister on 15 September 2026. The challenge team accepted the submission. The key is
+  stable and the letter reads continuously; the edition correctly remains cautious about damaged digits and supplied
+  letters.</p>
+  <p>The earlier conclusion on this page was wrong. Digit <code>4</code> is <i>o</i>, not a null; <code>9</code> is the
+  null. The core key gives each letter one code of one or two digits, with a small layer of dotted syllable and title
+  codes. It is not the Antonio Elio polyphonic-syllabic system proposed below.</p>
 </div>
 
-<h2 id="the-document"><span class="num">01</span> The document</h2>
+<h2 id="solution-review"><span class="num">01</span> Why the solution holds</h2>
+
+<p>Klee searched for the code assignments and the boundaries between one- and two-digit codes together. The decisive
+check is the split experiment: either half of the letter independently recovers the same eighteen letters and null,
+in all twelve half-text restarts. The same method recovers invented keys from clean and damaged synthetic texts; a
+shuffled copy of the real digits scores far worse. This is much stronger than one fluent output from one language
+model.</p>
+
+<p>The page then tests the model. A predicted <i>u</i> in <i>Montepulciano</i> points to a digit transcribed as
+<code>2</code>; the manuscript shows the clerk&rsquo;s hooked <code>1</code>, exactly the code for <i>u/v</i>. A systematic
+image review found five duplicated groups, fourteen omitted digits and two swapped pairs in the public transcription.
+Historical sources independently corroborate the public offer of papal aid at Speyer and the Gonzaga people and places
+in the closing report.</p>
+
+<p>After those corrections, 6,358 of 6,562 digit tokens are read exactly, including 365 nulls; 170 tokens are consumed
+by recorded departures and 34 remain in gaps. That supports the recovered key and the substance of the 1,241-word
+Italian reading. It does not turn every damaged passage into certainty, which is why &ldquo;candidate plaintext&rdquo; remains
+the right description of the edition.</p>
+
+<p>The recovered alphabet is <code>5=a 8=e 6=i 4=o 1=u/v 7=n 2=r 0=s 3=m 03=l 73=d 80=t 57=p 27=c 72=b 37=f 75=g 07=z</code>;
+<code>81=et</code> and <code>9</code> is null. Dotted pairs supply <i>ce/ci, qua/que/qui, non</i> and three abbreviated
+titles. The opening reads <i>Dopo la partita del Montepulciano</i>, &ldquo;After Montepulciano&rsquo;s departure&rdquo;.</p>
+
+<p class="meta">Primary credit and research files: <a href="https://simonklee.dk/farnese-letter">Simon Klee,
+&ldquo;The Farnese letter&rdquo;</a>. Repository record: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/vatican5/SOLUTION.md">solution review</a>
+and <a href="https://github.com/dbourdeau/cyphersolver/blob/main/vatican5/key.md">recovered key</a>.</p>
+
+<div class="callout">
+  <h3>Earlier investigation retained, conclusions superseded</h3>
+  <p>The remainder of this page records the failed September 2026 investigation for reproducibility. Its measurements
+  and exclusions may describe what was tried, but claims that the cipher was unsolved, that <code>4</code> was a null,
+  or that the design was an Antonio Elio polyphonic syllabary are retracted.</p>
+</div>
+
+<h2 id="the-document"><span class="num">02</span> The document</h2>
 
 <p>Four folios, 6549 code digits, with long passages left in clear. The clear passages date and place it beyond doubt:
 they mention <b>la dieta di Spira</b>, the Diet of Speyer which sat from February to April 1542; <b>la materia della
