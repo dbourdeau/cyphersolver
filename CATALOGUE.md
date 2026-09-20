@@ -1,4 +1,4 @@
-# Catalogue of unsolved historical ciphers for future work
+# The Unsolved Catalogue
 
 Compiled 17 Sept 2026 from (a) the Gallica/BnF catalogue harvest in `gallica_sweep/` (331 SRU records whose
 descriptions mention *chiffre*; 225 items described as "avec chiffre" or "en chiffre" **without** a noted
