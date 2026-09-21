@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "target": "henter1707",
+  "title": "Mihály Hentér to Ferenc Rákóczi II, 8 July 1707",
+  "documents": [
+    {
+      "id": "mnl-g15-d80-f38",
+      "shelfmark": "MNL OL, G 15, Caps. D, Fasc. 80, fol. 38",
+      "date": "8 July 1707",
+      "year": 1707,
+      "country": "Ottoman Empire",
+      "route": "Constantinople -> Ferenc Rákóczi II",
+      "language": "Hungarian",
+      "pages": 2,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": ["interlinear"],
+        "source": "Contemporary or near-contemporary decipherment written above the cipher lines on MNL OL G 15 Caps. D Fasc. 80 fol. 38; overlooked by DECODE R496, whose inline_plaintext field is false.",
+        "partial": false
+      },
+      "length": {
+        "tokens": 0,
+        "distinct": 0,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Authenticated DECODE full-resolution images IMG_R496_I3689_P1.png and IMG_R496_I3690_P2.png",
+        "image_quality": "good",
+        "notes": "The interlinear plaintext recovers the substantive message. Some middle clauses remain palaeographically uncertain where the plaintext hand overlaps cipher characters. Archive rights prohibit republishing the scans."
+      }
+    }
+  ],
+  "system": {
+    "types": ["monoalphabetic", "nomenclator"],
+    "summary": "Monoalphabetic substitution written with letters, digits, and graphic signs, with nomenclator elements; the same system occurs in Hentér's fols. 40 and 46.",
+    "symbol_kind": "digits and letters",
+    "distinct_symbols": 0,
+    "diacritics": {
+      "used": true,
+      "note": "Several cipher signs resemble letters or digits distinguished by small strokes; a few are graphic signs not safely representable in ASCII."
+    },
+    "homophones": {
+      "used": false,
+      "max_per_vowel": 1,
+      "max_per_consonant": 1
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 0,
+      "kinds": ["common words", "names", "titles"],
+      "unread_groups": 0
+    },
+    "nulls": {
+      "present": false,
+      "count": 0
+    },
+    "key_order": "random",
+    "word_division": "kept",
+    "doubled_letters": "written twice",
+    "sibling_key": "The same cipher appears in MNL OL G 15 Caps. D Fasc. 80 fols. 40 and 46 (DECODE R533 and R534), both with interlinear plaintext.",
+    "notes": "Secure control: wi6xi2i4 = Felséged."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "Interlinear plaintext on the target folio itself; DECODE R496 failed to flag it.",
+      "found": "during attempt",
+      "used": true
+    },
+    "inputs": ["images", "cleartext context", "crib", "sibling key"],
+    "attack": "archive decipherment",
+    "human_role": "Provided authenticated access to the DECODE images.",
+    "tools": ["authenticated DECODE image access", "PIL region crops", "manual palaeographic comparison"],
+    "models": ["gpt-5"],
+    "sessions": 1,
+    "first_date": "2026-09-20",
+    "last_date": "2026-09-20"
+  },
+  "solution": [
+    {
+      "date": "2026-09-20",
+      "kind": "access",
+      "what": "Used the authenticated DECODE session and cookie to retrieve the full-resolution recto and verso of R496 and the sibling records R533 and R534.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "literature search",
+      "what": "Located Benedek Láng's identification of fols. 38, 40, and 46 as Hentér's three 1707 monoalphabetic letters (C.Hen.01-03).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "reading",
+      "what": "Discovered and read the interlinear Hungarian decipherment on R496, recovering the Belgrade pasha's proposed military support, Hentér's audience negotiations, and the request to free a captive.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "verification",
+      "what": "Checked the closing formula against R533: wi6xi2i4 = Felséged, with the same substitution recurring across the three Hentér letters.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "class": "already solved",
+    "fraction_read": 0.8,
+    "verification": ["contemporary decipherment", "key confirms", "historical consistency"],
+    "notes": "The historical decipherment covers the full cipher and makes the message's substance clear. About one fifth of a publication-quality diplomatic transcription remains uncertain because the interlinear hand overlaps the cipher, not because the cryptographic values are unknown."
+  }
+}
