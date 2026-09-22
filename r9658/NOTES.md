@@ -51,7 +51,7 @@ the 1522 key: its decipherment, somewhere in Salazar A-26, is the text to seek (
 - [x] siblings: identified as Lope Hurtado; sibling target lopehurtado/ (catalogue 144, same volume and cipher)
 - [x] known-keys: the 1522 Lope Hurtado code groups recognised on every page; not applied line by line
 - [x] clear-pages: all six DECODE images viewed; no decipherment among them
-- [x] retry (access): RAH Biblioteca Digital (bibliotecadigital.rah.es) tried 22 Sept 2026 for Salazar A-26 and the contemporary deciphering: it returns nothing to automated requests (403 / bot check; see lopehurtado/NOTES.md). Daniel would have to search it by hand for 'Salazar y Castro A-26' and pull the deciphering near ff. 371-377
+- [x] retry (access): RAH Biblioteca Digital (bibliotecadigital.rah.es) tried 22 Sept 2026 for Salazar A-26 and the contemporary deciphering: it returns nothing to automated requests (403 / bot check; see lopehurtado/NOTES.md). Daniel would have to search it by hand for 'Salazar y Castro A-26' and pull the deciphering near ff. 371-377. Asked 22 Sept 2026; Daniel chose to move on, so the target stays closed as calendared
 
 Catalogue entry 145 removed on 22 Sept 2026. DECODE correction queued (`decode_updates/queue.json`).
 Images (`img/`) and the record page (`decode/`) are RAH/DECODE material, git-ignored.
