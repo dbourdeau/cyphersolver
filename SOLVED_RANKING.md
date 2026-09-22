@@ -209,6 +209,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 | p105 | **Guise? → Mercœur, BnF fr. 15564 f. 78** (DECODE R4158) | 1587 | 2 | 3 | 4 | 3 | 1 | 4 | **2.60** | D 2: a published key extended by about 15 values. H 3: League strategy in Brittany, Parma's troops, Bellièvre. N 4: not in print. |
 | p106 | **Galeazzo Visconti (Campo a Landriano) → Anne de Montmorency, 30 Aug 1528**, BnF fr. 3034 f. 154 (DECODE R4223) | 1528 | 2 | 3 | 4 | 3 | 1 | 3 | **2.75** | D 2: a published key extended on the letter, checked on two signed siblings. H 3: the League's council of war at Landriano, Milan or Pavia. N 4: not in print. V 3: 92.7% of signs, numbered codes open. |
 | p107 | **Burghley → Walsingham (Walsingham letter-book)**, BL Harley MS 260 f. 395 (DECODE R8362) | 1573 | 1 | 1 | 1 | 1 | 3 | 3 | **1.40** | D 1: nothing enciphered; two boxed cover-name markers. H 1: a known printed letter. |
+| p108 | **Guise? → Mercœur, BnF fr. 15564 ff. 119 and 142** (DECODE R4162, R4165) | 1587 | 2 | 3 | 4 | 3 | 1 | 4 | **2.60** | D 2: a published key extended by about a dozen values. H 3: League levies and the Protestant army of 1587, Pfyffer, Châtillon. N 4: not in print. V 4: 95.1% of letter signs, measured. |
 
 ## By single axis
 
