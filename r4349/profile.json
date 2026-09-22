@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "r4349",
- "title": "Ciphered colophon of the Strängnäs Sequentiarium, 1517, Uppsala UB C 513 f. 19v (DECODE R4349)",
+ "title": "Uppsala UB C 513 (DECODE R4349): the ciphered colophon of the Strängnäs sequentiary, 1517, and the six-sign close of a Swedish note pasted on f. 1r",
  "documents": [
   {
    "id": "R4349",
@@ -34,6 +34,38 @@
     "notes": "Measured with --letters: the hyphens at two line ends are not counted. The minims of 'Annp' are ambiguous (m or nn); the catalogue's nn is kept. In both 'cpnxfntx' the n is partly a macron over cp."
    },
    "read": "read"
+  },
+  {
+   "id": "R4349-slip",
+   "shelfmark": "Uppsala universitetsbibliotek, C 513, slip pasted on f. 1r (Alvin record 193385, attachment 3; DECODE R4349)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Sweden",
+   "route": "Unnamed writer to Anders Larsson (in the brewhouse), a short private note sent with medicines",
+   "language": "Old Swedish",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none",
+    "partial": false
+   },
+   "length": {
+    "tokens": 6,
+    "distinct": 5,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Alvin full TIFF of f. 1r (attachment 3); clear text in slip.txt, signs in signs.txt",
+    "image_quality": "good",
+    "notes": "The six signs look like cursive letters of the same hand: ÿ, ɑ, M, ÿ, u (or m), ꝺ (the hand's looped d)."
+   },
+   "read": "not read"
   }
  ],
  "system": {
@@ -58,7 +90,7 @@
   "key_order": "alphabetical",
   "word_division": "kept",
   "doubled_letters": "kept",
-  "notes": "Plain consonants b and p also occur (liber, scriptus, presens, pro), so cipher b and p are each two-valued; context decides. The rubricated initial A of Anno is not enciphered. The words are set under chant notation as part of the book."
+  "notes": "Plain consonants b and p also occur (liber, scriptus, presens, pro), so cipher b and p are each two-valued; context decides. The rubricated initial A of Anno is not enciphered. The words are set under chant notation as part of the book. The second piece, six signs closing the f. 1r slip, is of unknown system (probably a concealed signature)."
  },
  "conditions": {
   "prior_solution": {
@@ -114,13 +146,33 @@
    "kind": "verification",
    "what": "Fixed k=i and x=u (neither is a consonant in the text) and chose b/f/p by beam search over the whole colophon: the output matches the catalogue's reading word for word, prp = pro in context.",
    "result": "worked"
+  },
+  {
+   "kind": "access",
+   "what": "Prompted by the stop hook, checked all 175 Alvin images of C 513 for DECODE's 'six symbols in a note'. Back pastedown: clear pen trials only. Front: a pasted Old Swedish note to Anders Larsson ending in six signs.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed the slip's clear Old Swedish text (herbs and cinnamon bark sent for Anders Larsson's chest) and the six signs ÿ ɑ M ÿ u ꝺ.",
+   "result": "worked"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Applied the colophon's vowel shift to the six signs: none of b f k p x occurs, so it does not fit.",
+   "result": "failed"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Tried all 23 alphabet shifts on five readings of the signs (yamyud, yamymd, yanyud, yamynd, iamiud) and plain abbreviation (initials, closing formula): nothing.",
+   "result": "failed"
   }
  ],
  "outcome": {
-  "class": "already solved",
-  "fraction_read": 1.0,
+  "class": "read in part",
+  "fraction_read": 0.954,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.txt, cipher letters (all 125 given a value)",
+  "fraction_read_source": "reading.txt and signs.txt, cipher tokens: 125 colophon letters read, 6 slip signs unread",
   "key": "recovered",
   "codes_open": {
    "open": 0,
@@ -130,6 +182,13 @@
   "verification": [
    "key confirms"
   ],
-  "notes": "Read in the Uppsala catalogue (1992). Added here: the ciphertext transcription, the exact rule (u→x, consonant b/p two-valued), the folio's scan location, and DECODE corrections (not six symbols; date 1517; Latin; a colophon, not a letter)."
+  "notes": "Colophon read in the Uppsala catalogue (1992), checked on a new transcription. The six signs on the f. 1r slip, which DECODE's note means, are not read: too short. Added here: both transcriptions, the slip's text, the exact vowel-shift rule, and DECODE corrections.",
+  "gaps": [
+   {
+    "item": "the six signs closing the f. 1r slip (ÿ ɑ M ÿ u ꝺ)",
+    "blocker": "too-short",
+    "detail": "six signs, no key, no sibling in the same hand, no crib"
+   }
+  ]
  }
 }

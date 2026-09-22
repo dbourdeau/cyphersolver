@@ -1,10 +1,17 @@
 # Ciphered colophon of the Strängnäs Sequentiarium, 1517 (Uppsala UB C 513 f. 19v; DECODE R4349) — NOTES
 
-**Verdict: read in full, and already read in print.** Catalogue entry 235 ("Unknown sender (Strängnäs) to unknown
-recipient") is not a letter. It is the scribe's dated colophon in a Dominican sequentiary, written in a vowel-shift
-cipher and set under chant notation on f. 19v. The Uppsala manuscript catalogue (1992) gives the rule and the full
-reading. This session found the folio, transcribed the ciphertext letter by letter for the first time, pinned down the
-rule, and checked that it gives the printed reading. Worked in one session on 2026-09-22.
+**Verdict: the manuscript holds two ciphered pieces. The long one is read in full (already in print). The six-sign one,
+which is what DECODE's note describes, is not read: it is too short.**
+
+1. f. 19v, the scribe's dated colophon (1517): 125 letters in a vowel-shift cipher, set under chant notation. The Uppsala
+   manuscript catalogue (1992) gives the rule and the reading. Transcribed here and checked; read in full.
+2. f. 1r, a slip pasted in: a short private letter in Old Swedish (the catalogue says only "Anders Larsson receives
+   medicines"). It closes "...til liff oth sel" followed by **six signs**, `ÿ ɑ M ÿ u ꝺ`. This is DECODE's "short
+   ciphertext of six symbols out in a note" and its "unknown sender to unknown recipient". Not read: six signs, no key,
+   no sibling. Probably a concealed signature.
+
+A first pass took DECODE's note to be a garbled description of the colophon. A check of all 175 Alvin images (prompted
+by the stop hook) found the slip. Worked in one session on 2026-09-22.
 
 ## Sources
 
@@ -78,7 +85,41 @@ Västerås"). 125 of 125 cipher letters have a value (100%), and all 19 words re
 
 ## DECODE corrections (queued)
 
-Status Non-decrypted → Decrypted (reading in print). Date: 1517. Place: Strängnäs (convent of the Dominicans),
-written for the Västerås convent. Language: Latin. Symbols: alphabet, not graphic signs. Cipher type: simple
-substitution (vowel shift). It is a colophon, not a letter, and "six symbols" should be four lines, 125 letters.
-The only image on the record is a placeholder; the folio is Alvin attachment 42.
+Status Non-decrypted → Partially decrypted: the colophon is read (in print), the six signs are not. Date 1517 for the
+book; the slip is later, undated. Place: Strängnäs Dominican convent, written for Västerås. Language: Latin
+(colophon), Old Swedish (slip). Symbols: alphabet. Cipher type: simple substitution (vowel shift) for the colophon.
+The six-symbol note is the pasted slip on f. 1r (Alvin attachment 3), a letter to Anders Larsson, and the colophon on
+f. 19v (attachment 42) is a second cipher on the same manuscript. The only image on the record is a placeholder.
+
+## The slip on f. 1r (Alvin attachment 3) and its six signs (`slip.txt`, `signs.txt`)
+
+A strip of paper pasted over the top of f. 1r (it hides part of the first staves), in a post-medieval cursive. It is a
+private letter in Old Swedish, a first transcription (`?` = uncertain):
+
+```
+thetta skal wal[?] larens?+ andhers hess? / lass son wara andhers y brygghe stuffuan  [+ skriffue interlined]
+kære hertans brodher andhers larsson h[elsa]? / sändher yagh edher littit örther til edher / brysth kanelbark men
+yak ffruchthar ath / han är gammal kære brodher edhra / [w]älgärningar? är yak ffor ringa til at betala / hwilket yak
+tager then effuige gudh / til help then yak edher beffaller til / liff oth sel  ÿ ɑ M ÿ u ꝺ
+```
+
+"...[to] Anders Larsson in the brewhouse. Dear heart's brother Anders Larsson, I send you a few herbs for your chest,
+cinnamon bark, but I fear it is old. Dear brother, your kindnesses I am too poor to repay, which I leave to the eternal
+God, to whom I commend you in life and soul." Then the six signs, where a signature would stand. They look like
+cursive letters of the same hand (ÿ as in *yagh*; ꝺ is the hand's looped d, as in *edher*), in two groups of three,
+each group opening with ÿ.
+
+Tried, all without a reading: the colophon's vowel shift (none of b f k p x occurs); all 23 shifts of the alphabet on
+five readings of the signs (yamyud, yamymd, yanyud, yamynd, iamiud); a plain abbreviation (initials of a name, a closing
+formula). Six signs with two repeats cannot fix a substitution, and nothing else in the book is in the same hand.
+
+## Remaining gaps
+- the six signs closing the f. 1r slip (ÿ ɑ M ÿ u ꝺ) - blocker: too-short; six signs, no key, no sibling in the same hand, no crib beyond "a signature stands here"
+
+## Escalation
+- [x] siblings: DECODE has no other record from this manuscript or from Carolina Rediviva in this group; all 175 Alvin images of C 513 checked; the only other writing is pen trials on the back pastedown (an alphabet, "Thögmersdage Thögbane"?), clear
+- [x] clear-pages: the slip's own clear text read; it gives the context (a signature) but no crib for the letters
+- [x] known-keys: the colophon's vowel shift applied; no b/f/k/p/x among the signs, so it does not fit
+- [x] print: the Uppsala catalogue (1992) describes the slip without the signs; Collijn 1917 not checked
+- [x] key-rebuild: all 23 alphabet shifts on five readings of the signs; nothing
+- [n/a] retry: nothing reads, so nothing to regrade; six signs cannot be retried to a unique reading
