@@ -1,0 +1,102 @@
+{
+ "schema_version": 1,
+ "target": "r9658",
+ "title": "Lope Hurtado de Mendoza (Rome) to Charles V, 23 December 1522 (RAH 9/26 ff. 371-376, DECODE R9658)",
+ "documents": [
+  {
+   "id": "R9658",
+   "shelfmark": "RAH, Signatura 9/26 (Salazar A-26), ff. 371-376 (DECODE R9658)",
+   "date": "23 Dec 1522",
+   "year": 1522,
+   "country": "Italy",
+   "route": "Lope Hurtado de Mendoza (Rome) to Charles V",
+   "language": "Spanish",
+   "pages": 11,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "contemporary deciphering in Salazar A-26, not imaged; abstract in Bergenroth CSP Spain ii no. 510",
+    "partial": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "not transcribed; all six DECODE images viewed",
+    "image_quality": "fair",
+    "notes": "Closed from the literature after viewing."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "Lope Hurtado's 1522 system: Latin-trigram code groups plus a homophonic letter alphabet of cursive signs (see lopehurtado/).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "notes": "Identified by the recurring code groups ton/zar/xul/rab/tu/yub/top/taf; not applied line by line."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Contemporary deciphering (RAH Salazar A-26), abstracted in G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), no. 510.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code with Opus 5, and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "web cache search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched the DECODE record and six images; the f. 376v docket names Lope Hurtado, Rome, December; the cipher shows Lope Hurtado's code groups (ton, zar, xul, rab).",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Fetched Bergenroth CSP Spain ii December 1522 (pp. 510-519) and grepped Salazar A. 26: no. 510 = ff. 371-377, Lope Hurtado to the Emperor, 23 Dec 1522, 'Autograph in cipher. Contemporary deciphering.'",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "DECODE sender (Jeronimo Adorno?), recipient and date corrected. Nothing new read. Catalogue entry 145 removed; DECODE correction queued; no write-up."
+ }
+}
