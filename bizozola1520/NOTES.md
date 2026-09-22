@@ -1,6 +1,6 @@
 # Ambrogio Bizozola (Bizzozero) to Maximilian Sforza, Bologna, 4 November 1529: BnF fr. 3034 f. 156 (DECODE R4224)
 
-Status: read in part
+Status: read
 
 Catalogue item 176 (class C). DECODE R4224, "Non-decrypted", 4 pp., Italian, dated 1520/1529.
 
@@ -78,11 +78,14 @@ what the text forces):
   scudi of income a year; date line Bologna, 4 November; clear closing and signature; cipher postscript: many
   days without letters from the recipient.
 
+## Second pass (21 Sept 2026)
+
+The doubtful lines were re-cut at double scale and re-read sign by sign. Resolved: f. 156r l. 2 (e de qui averete intese), l. 4 (li suoi negoci con lo imperatore), l. 10 (sopra il ducato di Milano), l. 11 (il duca Francesco negociava); f. 156v ll. 1-2 (l'arciepiscopo di Baro: meglio io seria darlo al duca Maximiliano, che di ragione li viene); f. 157r l. 7 (ho trovato misere Alesandro Attavante), l. 8 (il spenditore); f. 157v ll. 3-4 (qualche preposto con misere Iacobo Salviati). "al i sandro" on f. 156r and "alatauante" on f. 157r are the same Alessandro Attavante. The doubtful stretches that remain are listed in `doubtful.txt`; fraction_read counts them as unread: 54 of 1907 signs, 97.2% read.
+
 ## Remaining gaps
 
-- f. 157v ll. 9-10, the ρ-like signs in the date line (probably the day/year numerals) - blocker: too-short; two or three occurrences, no second context to fix a value.
-- f. 157r ll. 7-8 and f. 157v ll. 3-4, words not resolved in the transcription (graded M/I in reading_raw.txt) - blocker: illegible; cramped ligatured signs on the Gallica scan, sign forms ambiguous at this resolution, no better image online.
-- f. 156r l. 4 ("sofinigoci") and l. 16 (name after "Milano al duca") - blocker: illegible; same sign ambiguity.
+- f. 157v ll. 9-10, the date numerals after "Bologna quatro del" (two words and three Lasry-unknown signs before "novembre") - blocker: too-short; the signs occur nowhere else in the letter.
+- f. 156r l. 11 end, f. 157r l. 2 start, f. 157r l. 4 end, f. 156v l. 8 end (about 35 signs, `doubtful.txt`) - blocker: illegible; the words do not resolve at the Gallica resolution after a second pass at double scale.
 
 ## Escalation
 

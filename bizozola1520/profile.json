@@ -136,29 +136,37 @@
    "what": "Date line 'Bologna, quattro del ... novembre' plus 'domane sarà l'intrata' matched to Charles V's entry into Bologna, 5 Nov 1529.",
    "result": "worked",
    "date": "2026-09-21"
+  },
+  {
+   "kind": "verification",
+   "what": "Second pass on the doubtful lines at double scale: Maximilian named as the candidate for Milan, Alessandro Attavante, Iacopo Salviati identified; doubtful stretches listed in doubtful.txt.",
+   "result": "worked",
+   "date": "2026-09-21"
   }
  ],
  "outcome": {
-  "class": "read in part",
-  "fraction_read": 0.9,
+  "class": "read",
+  "fraction_read": 0.972,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "All four pages transcribed and read in sense except about six lines of doubtful words and the date numerals; Lasry key plus homophones.",
+  "notes": "All four pages read; 54 of 1907 signs doubtful; Lasry key plus homophones; dated from content.",
   "key": "recovered",
   "gaps": [
    {
-    "item": "rho-like signs in the date line, f. 157v ll. 9-10",
+    "item": "date numerals, f. 157v ll. 9-10",
     "blocker": "too-short",
-    "detail": "two or three occurrences"
+    "detail": "three unknown signs, no other occurrence"
    },
    {
-    "item": "f. 157r ll. 7-8, f. 157v ll. 3-4, f. 156r ll. 4, 16: words not resolved",
+    "item": "about 35 signs in four lines listed in doubtful.txt",
     "blocker": "illegible",
-    "detail": "ambiguous ligatured sign forms on the Gallica scan"
+    "detail": "not resolved on the Gallica scan after a double-scale second pass"
    }
-  ]
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "bizozola1520/codes.txt (all signs) minus bizozola1520/doubtful.txt (doubtful stretches counted as unread)"
  }
 }
