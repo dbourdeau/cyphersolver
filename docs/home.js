@@ -66,3 +66,26 @@
   }
   show();
 })();
+
+// the slides: when one comes round, its strip of cipher deciphers itself tile by tile
+(()=>{
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches; if(still) return;
+  const GL='0123456789abcdefghilmnopqrstuxyz';
+  const run=panel=>{
+    const tiles=[...panel.querySelectorAll('.bn-solve .bt:not(.more)')]; if(!tiles.length) return;
+    const token=(panel._bt=(panel._bt||0)+1);
+    tiles.forEach(t=>{ const p=t.querySelector('.p'); p.dataset.v=p.dataset.v||p.textContent; p.textContent=''; t.classList.add('scr'); t.classList.remove('hit'); });
+    tiles.forEach((t,i)=>setTimeout(()=>{
+      if(panel._bt!==token) return;
+      const p=t.querySelector('.p'), v=p.dataset.v, t0=performance.now();
+      const f=now=>{ if(panel._bt!==token) return; const q=Math.min(1,(now-t0)/380);
+        p.textContent=q<1?Array.from({length:Math.max(1,v.length)},()=>GL[Math.random()*GL.length|0]).join(''):v;
+        if(q<1) requestAnimationFrame(f); else { t.classList.remove('scr'); t.classList.add('hit'); } };
+      requestAnimationFrame(f);
+    },500+i*170));
+  };
+  const panels=document.querySelectorAll('.bn-panel');
+  const mo=new MutationObserver(ms=>ms.forEach(m=>{ const el=m.target; if(el.classList.contains('on') && !m.oldValue?.split(' ').includes('on')) run(el); }));
+  panels.forEach(p=>mo.observe(p,{attributes:true,attributeFilter:['class'],attributeOldValue:true}));
+  const first=document.querySelector('.bn-panel.on'); if(first) run(first);
+})();

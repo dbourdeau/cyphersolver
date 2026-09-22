@@ -16,7 +16,7 @@ of "Recent findings" all carry the day the finding landed, from _dates.json, whi
 """
 import re, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
-VERSION = '20260921d'
+VERSION = '20260921e'
 SITE = 'Unsolved Historical Ciphers'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -54,6 +54,8 @@ GENERATED = [
     r'<script src="zoom\.js[^"]*" defer></script>\n?',
     r'<!-- live:start -->.*?<!-- live:end -->\n?', r'<script src="home\.js[^"]*" defer></script>\n?',
     r'<meta name="(?:date|last-modified)"[^>]*>',
+    r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
+    r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
 ]
 
 def normalise(s):
@@ -119,6 +121,10 @@ def stamp_finding(li):
     key = finding_key(li)
     iso = DATES['findings'].setdefault(key, TODAY)
     stamp = f'<time class="fdate" datetime="{iso}">{fmt_date(iso, short=True)}</time>'
+    li = re.sub(r'<span class="fth">.*?</span><!-- /fth -->', '', li, flags=re.S)
+    slugs = [x for x in re.findall(r'href="([a-z0-9]+)\.html', li) if any(q['slug'] == x for q in PAGES)]
+    th = mini_thumb(slugs[-1], 'fth') if slugs else ''
+    if th: stamp = th + '<!-- /fth -->' + stamp
     return li.replace('<li>', '<li>' + stamp, 1)
 
 # slug, nav label, year label, sort year, place, status class, status text, title, blurb, quote, rights
@@ -1227,6 +1233,75 @@ def avatars_html(slug):
     return (f'<span class="avs" title="{tip}">' +
             ''.join(f'<img src="{p["img"]}" alt="" loading="lazy">' for p in people) + '</span>')
 
+def mini_thumb(slug, cls):
+    """A small square for list rows and findings: a crop of the script when there is one, the correspondent's
+    portrait tucked into its corner; the portrait alone when there is no script image; '' when there is neither."""
+    im = IMAGES.get(slug)
+    people = sorted(PICTURED.get(slug, []), key=lambda p: p['role'] != 'sender')
+    if not im and not people: return ''
+    inner = f'<img class="sc" src="{im[0]}" alt="" loading="lazy">' if im else f'<img class="pt" src="{people[0]["img"]}" alt="" loading="lazy">'
+    if im and people: inner += f'<img class="pc" src="{people[0]["img"]}" alt="" loading="lazy">'
+    return f'<span class="{cls}">{inner}</span>'
+
+def reveal_run(slug, n=9):
+    """The opening run of a reveal passage, for the slides on the index: n cipher tokens with their readings."""
+    f = HERE / 'reveal' / f'{slug}.json'
+    if not f.exists(): return None
+    d = json.loads(f.read_text(encoding='utf-8'))
+    toks = [t for t in d.get('tokens', []) if t.get('g') and t.get('p') and t.get('cls') not in ('plain', 'null', 'unk') and t['p'] != '?']
+    if len(toks) < 4: return None
+    return d, toks[:n]
+
+def slide_extras(slug):
+    """Portraits of the correspondents and a strip of the cipher deciphering itself, for a slide on the index."""
+    people = sorted(PICTURED.get(slug, []), key=lambda p: p['role'] != 'sender')
+    who = ''
+    if people:
+        one = lambda p: (f'<span class="bw"><img src="{p["img"]}" alt="" loading="lazy"><span><i>{"from" if p["role"] == "sender" else "to"}</i>'
+                         f'{html.escape(p["name"])}</span></span>')
+        who = '<div class="bn-who">' + '<b aria-hidden="true">&rarr;</b>'.join(one(p) for p in people) + '</div>'
+    run = reveal_run(slug)
+    strip = ''
+    if run:
+        d, toks = run
+        tiles = ''.join(f'<span class="bt"><span class="g">{html.escape(t["g"])}</span><span class="p">{html.escape(t["p"])}</span></span>' for t in toks)
+        strip = (f'<div class="bn-solve"><span class="bk">See it solved</span><div class="bts">{tiles}<span class="bt more">&hellip;</span></div>'
+                 f'<a href="{slug}.html#{html.escape(d.get("anchor") or "", quote=True)}" class="bl">{html.escape(d.get("unit") or "")}</a></div>')
+    return who, strip
+
+def bnx_panels(s):
+    """Dress every slide of the index carousel: its correspondents over the picture and the opening of its
+    cipher deciphering underneath. A slide without a picture gets a panel made of the two. Idempotent."""
+    s = re.sub(r'\n?<!-- bnx -->.*?<!-- /bnx -->', '', s, flags=re.S)
+    s = s.replace('class="bn-panel hasart" data-bnx="1"', 'class="bn-panel noart"').replace('class="bn-panel hasart on" data-bnx="1"', 'class="bn-panel noart on"')
+    def dress(panel):
+        cta = re.search(r'class="cta" href="([a-z0-9]+)\.html"', panel)
+        if not cta: return panel
+        who, strip = slide_extras(cta.group(1))
+        if not (who or strip): return panel
+        if '<figure class="art">' in panel:
+            panel = panel.replace('<figure class="art">', '<figure class="art">' + (f'<!-- bnx -->{who}<!-- /bnx -->' if who else ''), 1)
+            if strip: panel = panel.replace('</figure>', f'<!-- bnx -->{strip}<!-- /bnx --></figure>', 1)
+        else:       # after the text column, which closes on the first </div> after the call to action
+            j = panel.index('</div>', panel.index('</a>', cta.end())) + len('</div>')
+            panel = panel[:j] + f'\n<!-- bnx --><figure class="art solveart">{who}{strip}</figure><!-- /bnx -->' + panel[j:]
+            panel = re.sub(r'class="bn-panel noart( on)?"', lambda k: f'class="bn-panel hasart{k.group(1) or ""}" data-bnx="1"', panel, count=1)
+        return panel
+    # each slide runs from its opening tag to the next slide's, the last one to the end of the carousel
+    starts = [m.start() for m in re.finditer(r'<div class="bn-panel', s)]
+    if not starts: return s
+    end = s.index('<h2 id="recent">', starts[-1]) if '<h2 id="recent">' in s[starts[-1]:] else len(s)
+    bounds = starts + [end]
+    return s[:starts[0]] + ''.join(dress(s[bounds[i]:bounds[i + 1]]) for i in range(len(starts))) + s[end:]
+
+def cattop_html(n=6):
+    """The highest-priority open entries of the Unsolved Catalogue, for the index."""
+    import _catalogue_page as C
+    top = sorted([e for e in C.DATA['entries'] if e['counted'] and C.is_open(e)], key=lambda e: (-C.priority(e), e['id']))[:n]
+    li = ''.join(f'  <li><a href="catalogue.html#e{e["id"]}">{C.people_html(e) or C.blank_html(e)}<span class="t">{C.esc(e["title"])}</span>'
+                 f'<span class="pr" title="priority">{C.priority(e):.1f}</span><span class="yr">{C.esc(e["date"])}</span></a></li>\n' for e in top)
+    return f'<!-- cattop:start -->\n<h3 class="listhead">Top of the queue</h3>\n<ul class="list cattop">\n{li}</ul>\n<!-- cattop:end -->\n'
+
 def card_html(p):
     im = IMAGES.get(p['slug'])
     thumb = f'    <img class="thumb" src="{im[0]}" alt="" loading="lazy">\n' if im else ''
@@ -1374,7 +1449,7 @@ def process(path):
         FEATURED =['raince', 'hesse1603', 'catinat1691', 'voynich', 'feuquieres', 'armstrong', 'lucca', 'warsaw', 'richelieu', 'sunyatsen']
         feat = [next(p for p in PAGES if p['slug'] == f) for f in FEATURED]
         rest = sorted([p for p in PAGES if p['slug'] not in FEATURED], key=lambda p: ({'solved': 0, 'found': 1, 'partial': 2, 'stuck': 3}[p['st']] if p['slug'] not in ('famous', 'solved') else 4, -p['y']))
-        row = lambda p: (f'  <li><a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span><span class="t">{p["title"]}</span>'
+        row = lambda p: (f'  <li><a href="{p["slug"]}.html">{mini_thumb(p["slug"], "rth") or "<span class=rth></span>"}<span class="st {p["st"]}">{p["stt"]}</span><span class="t">{p["title"]}</span>'
                          f'{when_html(p, cls="dt")}<span class="yr">{p["year"]}</span></a></li>\n')
         REST_VISIBLE = 10       # "And the rest" shows this many rows; the others fold behind the button
         shown, folded = rest[:REST_VISIBLE], rest[REST_VISIBLE:]
@@ -1384,6 +1459,9 @@ def process(path):
                  '<h3 class="listhead">And the rest</h3>\n<ul class="list">\n' + ''.join(row(p) for p in shown) + '</ul>\n' + more +
                  f'<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups, filterable by outcome and period, '
                  f'with the results that are still only in the notes &rarr;</a></p>\n<!-- cards:end -->')
+        s = bnx_panels(s)
+        s = re.sub(r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?', '', s, flags=re.S)
+        s = re.sub(r'(<h2 id="catalogue">.*?)(\n<p><a class="more" href="catalogue\.html")', lambda m: m.group(1) + '\n' + cattop_html().rstrip('\n') + m.group(2), s, count=1, flags=re.S)
         if '<!-- cards:start -->' in s:
             s = re.sub(r'<!-- cards:start -->.*?<!-- cards:end -->', lambda m: cards, s, flags=re.S)
         else:

@@ -91,6 +91,55 @@ def update_md():
 
 
 # ---------- HTML ----------
+# Correspondents with a public-domain portrait on the site (_portraits.json), matched by hand-checked patterns
+# on the "correspondents" field; a wrong face is worse than none, so ambiguous names carry a date test.
+PORTRAITS = {}
+for _v in json.loads((HERE / '_portraits.json').read_text(encoding='utf-8')).values():
+    for _p in _v:
+        if _p.get('img'): PORTRAITS.setdefault(_p['name'], _p['img'])
+FACES = [
+    (r'Frederick II', 'Frederick II', lambda e: 1740 <= e['year'] <= 1786),
+    (r'Henry Percy', 'Henry Percy', None),
+    (r"Catherine de' Medici|Catherine de M[ée]dicis", "Catherine de' Medici", None),
+    (r'Charles I\b', 'Charles I', lambda e: 1625 <= e['year'] <= 1649),
+    (r'Charles I\b|Charles V\b', 'Charles V', lambda e: 1516 <= e['year'] <= 1558),
+    (r'Francis I(?:st)?\b|Franis I\b', 'Francis I', lambda e: 1515 <= e['year'] <= 1547),
+    (r'Montmorency', 'Anne de Montmorency', lambda e: 1520 <= e['year'] <= 1567),
+    (r'duke of Nevers|duc de Nevers|Duke of Nivernois', 'Duke of Nevers', lambda e: 1565 <= e['year'] <= 1595),
+    (r'Merc(?:œ|oe)ur', 'Duc de Mercœur', None),
+    (r'Henri II\b', 'Henry II', lambda e: 1547 <= e['year'] <= 1559),
+    (r'R[áa]k[óo]czi', 'Francis II Rákóczi', lambda e: 1700 <= e['year'] <= 1735),
+    (r'Oxenstierna', 'Axel Oxenstierna', None),
+    (r'Secretary Cecil|Burghley|Burleigh|Baurleigh', 'William Cecil', lambda e: 1550 <= e['year'] <= 1598),
+    (r'Walsingham', 'Francis Walsingham', lambda e: 1568 <= e['year'] <= 1590),
+    (r'Elizabeth R\b', 'Elizabeth I', lambda e: 1558 <= e['year'] <= 1603),
+    (r'William V\b', 'William V', lambda e: 1766 <= e['year'] <= 1806),
+    (r'Maarten van der Goes', 'Maarten van der Goes', None),
+    (r'Dirk van Hogendorp', 'Dirk van Hogendorp', None),
+    (r'Starhemberg|Staremberg', 'Gundaker Starhemberg', lambda e: 1700 <= e['year'] <= 1745),
+]
+
+def faces(e):
+    """(name, image) for each correspondent of e with a portrait, in the order they appear (sender first)."""
+    c, out = e['correspondents'], []
+    for pat, name, ok in FACES:
+        m = re.search(pat, c)
+        if m and re.match(r'\w*\s?\?', c[m.end():]): m = None      # a name the catalogue itself queries
+        if m and name in PORTRAITS and (ok is None or ok(e)) and name not in [n for _, n, _ in out]:
+            out.append((m.start(), name, PORTRAITS[name]))
+    return [(n, i) for _, n, i in sorted(out)]
+
+def people_html(e):
+    f = faces(e)
+    if not f: return ''
+    tip = esc(' → '.join(n for n, _ in f)).replace('"', '&quot;')
+    return f'<span class="avs" title="{tip}">' + ''.join(f'<img src="{i}" alt="" loading="lazy">' for _, i in f) + '</span>'
+
+def blank_html(e):
+    """No portrait: a small wax roundel with the entry's language initial."""
+    return f'<span class="avs none" aria-hidden="true"><i>{esc((e.get("language") or "?")[:2])}</i></span>'
+
+
 
 # ---------- HTML ----------
 def dots(v, cls=''):
@@ -114,7 +163,7 @@ def row(e):
     return (f'<tr class="e" data-id="{e["id"]}" tabindex="0" aria-expanded="false">'
             f'<td class="prio"><b>{priority(e):.1f}</b></td>'
             f'<td class="date">{esc(e["date"])}<span class="num">no. {e["id"]}</span></td>'
-            f'<td class="item"><b>{seen} {esc(e["title"])}</b>{noted}<span class="sub">{esc(e["why"])}</span></td>'
+            f'<td class="item">{people_html(e)}<b>{seen} {esc(e["title"])}</b>{noted}<span class="sub">{esc(e["why"])}</span></td>'
             f'<td class="shelf">{esc(e["shelfmark"])}{("<br>" + arks) if arks else ""}</td>'
             f'<td class="sc">{dots(e["importance"])}</td><td class="sc">{dots(e["solvability"])}</td><td class="sc">{dots(e["difficulty"], "diff")}</td>'
             f'<td class="cls"><span class="badge {e["cls"]}">{e["cls"]}</span></td></tr>'

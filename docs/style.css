@@ -231,7 +231,7 @@ figure.lead img{max-height:420px;object-fit:cover;width:100%}
 @media (prefers-reduced-motion: reduce){.bn-panel{transition:none;transform:none}}
 @media print{.bn-ctl{display:none}.bn-panel[hidden]{display:none}}
 .bignews.hasart .art,.bn-panel .art{margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--rule);box-shadow:var(--shadow);aspect-ratio:4/3;max-height:340px}
-.bignews.hasart .art img,.bn-panel .art img{width:100%;height:100%;object-fit:cover;display:block;filter:sepia(.15)}
+.bignews.hasart .art > img,.bn-panel .art > img{width:100%;height:100%;object-fit:cover;display:block;filter:sepia(.15)}
 @media (max-width:760px){.bignews.hasart{grid-template-columns:1fr}.bignews.hasart .art{aspect-ratio:16/9}}
 
 /* progressive disclosure on the home page */
@@ -642,7 +642,7 @@ blockquote.reading,blockquote.big{font-family:var(--period);font-size:1.3rem;lin
 /* the seal on every write-up: pressed in once, outcome in the wax */
 .hero{position:relative}
 @media (min-width:761px){.hero:has(> .seal) > .sub,.hero:has(> .seal) > h1{margin-right:10rem}}
-.hero .seal{position:absolute;right:1.4rem;bottom:.8rem;width:8.2rem;height:8.2rem;display:grid;place-items:center;pointer-events:none;
+.hero .seal{position:absolute;right:1.4rem;top:7.2rem;width:8.2rem;height:8.2rem;display:grid;place-items:center;pointer-events:none;
   color:var(--wx);transform:rotate(-12deg);filter:drop-shadow(0 .25rem .4rem rgba(0,0,0,.35))}
 .hero .seal::before{content:"";position:absolute;inset:0;border-radius:51% 47% 53% 46%/48% 54% 45% 52%;
   background:radial-gradient(circle at 36% 30%,color-mix(in srgb,var(--wx) 55%,#fff) 0 10%,var(--wx) 42%,color-mix(in srgb,var(--wx) 60%,#000) 100%);
@@ -710,3 +710,65 @@ html.zv-lock{overflow:hidden}
 @media (max-width:600px){.livecount .lc{min-width:calc(50% - .3rem);flex:1}.randbtn{width:100%}}
 .sb-big b{font-variant-numeric:tabular-nums}
 .sb-big b .sb-n{display:inline-block;margin:0;font-size:inherit;color:inherit;line-height:inherit}
+
+/* ---------------------------------------------------------------- pictures in the index lists and slides */
+/* Recent findings: a crop of the script, the correspondent's portrait in its corner */
+ul.findings li:has(> .fth){padding-left:4.8rem;min-height:4.6rem}
+ul.findings li:has(> .fth)::before{display:none}
+.fth,.rth{position:relative;display:inline-block;flex:none}
+.fth{position:absolute;left:0;top:.72rem;width:3.8rem;height:3.8rem}
+.fth .sc,.fth .pt,.rth .sc,.rth .pt{display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);
+  filter:sepia(.28) saturate(.85) contrast(1.05);background:var(--panel2)}
+.fth .pt,.rth .pt{border-radius:50%}
+.fth .pc,.rth .pc{position:absolute;right:-.4rem;bottom:-.4rem;width:1.75rem;height:1.75rem;border-radius:50%;object-fit:cover;
+  border:1px solid color-mix(in srgb,var(--gold) 60%,transparent);box-shadow:0 0 0 2px var(--bg);filter:sepia(.18) saturate(.9)}
+/* And the rest: the same, smaller, as the first column */
+ul.list a:has(> .rth){grid-template-columns:auto auto 1fr auto auto}
+.rth{width:2.7rem;height:2.7rem}
+.rth:empty{border-radius:6px;border:1px dashed var(--rule);background:repeating-linear-gradient(135deg,transparent 0 5px,color-mix(in srgb,var(--gold) 7%,transparent) 5px 6px)}
+.rth .pc{width:1.3rem;height:1.3rem;right:-.3rem;bottom:-.3rem}
+@media (max-width:620px){ul.list a:has(> .rth){grid-template-columns:auto 1fr auto;gap:.7rem}ul.list a:has(> .rth) .dt{display:none}.rth{width:2.2rem;height:2.2rem}
+  ul.findings li:has(> .fth){padding-left:3.6rem;min-height:3.4rem}.fth{width:2.8rem;height:2.8rem}.fth .pc{width:1.35rem;height:1.35rem}}
+/* the Unsolved Catalogue: top of the queue on the index, faces in the table */
+ul.list.cattop a{grid-template-columns:4.6rem 1fr auto auto}
+ul.list.cattop .avs{justify-self:center}
+ul.list.cattop .avs img{width:34px;height:34px}
+ul.list.cattop .pr{font-family:var(--display);font-size:1.15rem;color:var(--gold)}
+.avs.none i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;font:600 .62rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;font-style:normal;
+  color:color-mix(in srgb,var(--gold) 80%,var(--ink));border:1px dashed color-mix(in srgb,var(--gold) 45%,transparent);background:color-mix(in srgb,var(--gold) 6%,transparent)}
+#cat td.item > .avs{float:left;margin:.1rem .6rem .2rem 0}
+#cat td.item > .avs img{width:34px;height:34px}
+@media (max-width:620px){ul.list.cattop a{grid-template-columns:4.6rem 1fr auto}ul.list.cattop .yr{display:none}}
+
+/* the slides: who wrote to whom over the picture, and the cipher deciphering underneath it */
+.bn-panel .art{position:relative;text-align:left}
+.bn-who{position:absolute;top:.6rem;left:.6rem;z-index:1;display:flex;align-items:center;gap:.45rem;padding:.28rem .7rem .28rem .28rem;border-radius:999px;
+  background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(6px);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent)}
+.bn-who b{color:var(--gold);font-weight:400}
+.bw{display:flex;align-items:center;gap:.45rem;font:500 .8rem/1.15 var(--display);color:var(--head)}
+.bw img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:1px solid color-mix(in srgb,var(--gold) 60%,transparent);filter:sepia(.18) saturate(.9)}
+.bw i{display:block;font:normal .56rem/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.bn-solve{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:1.6rem .75rem .65rem;
+  background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--bg) 88%,transparent) 42%)}
+.bn-solve .bk{display:block;font:.6rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem}
+.bts{display:flex;gap:.28rem;overflow:hidden;mask-image:linear-gradient(to right,#000 85%,transparent)}
+.bt{display:flex;flex-direction:column;align-items:center;flex:none;min-width:1.7rem;padding:.14rem .38rem .1rem;border-radius:5px;
+  border:1px solid color-mix(in srgb,var(--gold) 28%,var(--rule));background:color-mix(in srgb,var(--panel) 85%,transparent)}
+.bt .g{font:.64rem var(--mono);color:var(--muted)}
+.bt .p{font:1rem/1.2 var(--period);color:var(--gold2);min-height:1.2em;transition:color .3s}
+.bt.more{justify-content:center;color:var(--muted);border-style:dashed}
+.bt.scr .p{color:var(--muted);font-family:var(--mono);font-size:.78rem}
+.bt.hit{animation:btpop .45s ease-out}
+@keyframes btpop{0%{transform:translateY(0)}40%{transform:translateY(-3px);border-color:var(--gold)}100%{transform:none}}
+.bn-solve .bl{position:absolute;right:.75rem;top:1.55rem;font:.6rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:0}
+.bn-solve .bl:hover{color:var(--gold2)}
+/* a slide with no picture: a panel of its correspondents and its cipher */
+.bn-panel .art.solveart{display:flex;flex-direction:column;justify-content:center;gap:1.1rem;padding:1.3rem 1.2rem;
+  background:radial-gradient(120% 90% at 30% 20%,color-mix(in srgb,var(--gold) 9%,var(--panel)),var(--panel2));}
+.art.solveart .bn-who{position:static;align-self:flex-start;background:none;border:0;backdrop-filter:none;padding:0;gap:.7rem;flex-wrap:wrap}
+.art.solveart .bw img{width:68px;height:68px}
+.art.solveart .bw{font-size:1rem}
+.art.solveart .bn-solve{position:relative;background:none;padding:0}
+.art.solveart .bn-solve .bl{top:0}
+.art.solveart .bts{flex-wrap:wrap;mask-image:none}
+@media (prefers-reduced-motion: reduce){.bt.hit{animation:none}}

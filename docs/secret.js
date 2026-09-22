@@ -56,18 +56,84 @@
     for(let i=0;i<im.data.length;i+=4){ const n=Math.random()*38; im.data[i]=120+n; im.data[i+1]=95+n; im.data[i+2]=55+n; im.data[i+3]=Math.random()<.5?10:0; }
     x.putImageData(im,0,0); return c; })();
   function seeded(seed){ let s=seed>>>0||1; return ()=>{ s^=s<<13; s^=s>>>17; s^=s<<5; return ((s>>>0)%10000)/10000; }; }
+  // the sheet's outline: deckled, frayed edges with a few nicks, walked clockwise
+  const ROLL=44;   // height of the rolled ends of the scroll, top and bottom
+  function edge(W,H,rand){
+    const pts=[], I=16, T=ROLL*.62, step=3;
+    let j=0;
+    const side=(len,fn)=>{ const a=rand()*6.3, b=rand()*6.3, f1=.006+rand()*.004, f2=.021+rand()*.012; let nick=0, dn=0;
+      for(let t=0;t<=len;t+=step){
+        j=j*.55+(rand()-.5)*2.6;                                   // correlated jitter: fibres, not a saw
+        if(nick<=0 && rand()<.006){ nick=6+(rand()*10|0); dn=4+rand()*8; }
+        let d=Math.sin(t*f1+a)*3.2+Math.sin(t*f2+b)*1.6+j;
+        if(nick>0){ d+=dn*Math.sin(Math.PI*nick/12); nick--; }
+        fn(t,d); } };
+    side(W,(t,d)=>pts.push([t,T+d*.5]));
+    side(H,(t,d)=>pts.push([W-I-d,t]));
+    side(W,(t,d)=>pts.push([W-t,H-T-d*.5]));
+    side(H,(t,d)=>pts.push([I+d,H-t]));
+    const path=new Path2D(); path.moveTo(...pts[0]); for(const q of pts) path.lineTo(...q); path.closePath();
+    return path;
+  }
+  function stain(x,y,r,rand){      // an irregular tide mark: a few overlapping blobs, darker at the rim
+    for(let i=0;i<4;i++){ const ox=x+(rand()-.5)*r*.5, oy=y+(rand()-.5)*r*.5, rr=r*(.55+rand()*.45);
+      const s=ctx.createRadialGradient(ox,oy,rr*.1,ox,oy,rr);
+      s.addColorStop(0,'rgba(140,95,35,.025)'); s.addColorStop(.8,'rgba(135,90,32,.05)'); s.addColorStop(.95,'rgba(115,72,25,.07)'); s.addColorStop(1,'rgba(140,95,35,0)');
+      ctx.fillStyle=s; ctx.beginPath(); ctx.ellipse(ox,oy,rr,rr*(.7+rand()*.3),rand()*3,0,7); ctx.fill(); }
+  }
+  function roll(W,y,rand,top){     // the rolled end: a cylinder of the same paper, its spiral showing at each end
+    const x0=6, x1=W-6, h=ROLL, r=h/2;
+    const g=ctx.createLinearGradient(0,y,0,y+h);
+    g.addColorStop(0,'#8a6534'); g.addColorStop(.2,'#d9c08e'); g.addColorStop(.42,'#f3e5c3'); g.addColorStop(.7,'#c9a86f'); g.addColorStop(1,'#6e4c22');
+    ctx.save(); ctx.shadowColor='rgba(0,0,0,.35)'; ctx.shadowBlur=10; ctx.shadowOffsetY=top?5:-2;
+    ctx.fillStyle=g; ctx.beginPath(); ctx.roundRect(x0,y,x1-x0,h,r*.5); ctx.fill(); ctx.restore();
+    ctx.save(); ctx.beginPath(); ctx.roundRect(x0,y,x1-x0,h,r*.5); ctx.clip();
+    ctx.globalAlpha=.55; for(let yy=y;yy<y+h;yy+=PAPER.height) for(let xx=0;xx<W;xx+=PAPER.width) ctx.drawImage(PAPER,xx,yy); ctx.globalAlpha=1;
+    const e=ctx.createLinearGradient(x0,0,x1,0); e.addColorStop(0,'rgba(80,50,15,.45)'); e.addColorStop(.06,'rgba(80,50,15,0)'); e.addColorStop(.94,'rgba(80,50,15,0)'); e.addColorStop(1,'rgba(80,50,15,.45)');
+    ctx.fillStyle=e; ctx.fillRect(x0,y,x1-x0,h);
+    ctx.strokeStyle='rgba(90,58,20,.18)'; ctx.lineWidth=1;
+    for(let i=0;i<3;i++){ const yy=y+h*(.3+i*.2)+(rand()-.5)*3; ctx.beginPath(); ctx.moveTo(x0+30,yy); ctx.bezierCurveTo(W*.35,yy+(rand()-.5)*4,W*.65,yy+(rand()-.5)*4,x1-30,yy); ctx.stroke(); }
+    ctx.restore();
+    for(const cx of [x0+r*.5, x1-r*.5]){  // the spiral at each end
+      ctx.save(); ctx.translate(cx,y+r); ctx.scale(.42,1);
+      ctx.fillStyle='#b8955c'; ctx.beginPath(); ctx.arc(0,0,r*.98,0,7); ctx.fill();
+      ctx.strokeStyle='rgba(70,44,14,.7)'; ctx.lineWidth=1.6; ctx.beginPath();
+      for(let t=0;t<16;t+=.1){ const rr=r*.94*(1-t/17); ctx.lineTo(Math.cos(t)*rr,Math.sin(t)*rr); } ctx.stroke();
+      ctx.restore(); }
+    ctx.strokeStyle='rgba(55,32,8,.5)'; ctx.lineWidth=1.2; ctx.beginPath(); ctx.roundRect(x0,y,x1-x0,h,r*.5); ctx.stroke();
+  }
   function paper(W,H,rand){
-    ctx.clearRect(0,0,W,H); ctx.beginPath(); ctx.roundRect(0,0,W,H,Math.round(Math.min(W,H)*.035)); ctx.clip();   // rounded sheet, in the PNG too
-    ctx.fillStyle='#ecdcb8'; ctx.fillRect(0,0,W,H);
-    const g=ctx.createRadialGradient(W/2,H*.45,Math.min(W,H)*.25,W/2,H/2,Math.max(W,H)*.75);
-    g.addColorStop(0,'rgba(255,248,225,.35)'); g.addColorStop(.7,'rgba(150,110,50,.12)'); g.addColorStop(1,'rgba(90,60,20,.45)');
+    ctx.clearRect(0,0,W,H);
+    const sheet=edge(W,H,rand);
+    ctx.save(); ctx.clip(sheet);
+    ctx.fillStyle='#e9d6ac'; ctx.fillRect(0,0,W,H);
+    const g=ctx.createRadialGradient(W/2,H*.45,Math.min(W,H)*.22,W/2,H/2,Math.max(W,H)*.72);
+    g.addColorStop(0,'rgba(255,247,222,.38)'); g.addColorStop(.65,'rgba(150,108,48,.14)'); g.addColorStop(1,'rgba(92,58,18,.5)');
     ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
-    for(let i=0;i<5;i++){ const x=rand()*W, y=rand()*H, r=40+rand()*140, s=ctx.createRadialGradient(x,y,r*.2,x,y,r);
-      s.addColorStop(0,'rgba(140,95,35,.06)'); s.addColorStop(.85,'rgba(140,95,35,.10)'); s.addColorStop(1,'rgba(140,95,35,0)'); ctx.fillStyle=s; ctx.fillRect(x-r,y-r,2*r,2*r); }
+    for(let i=0;i<6;i++) stain(rand()*W,rand()*H,50+rand()*150,rand);
+    for(let i=0;i<60;i++){ const x=rand()*W, y=rand()*H, r=.8+rand()*(rand()<.12?5:2.2);   // foxing
+      ctx.fillStyle=`rgba(${118+rand()*30|0},${68+rand()*20|0},${24+rand()*15|0},${.07+rand()*.2})`;
+      ctx.beginPath(); ctx.ellipse(x,y,r,r*(.6+rand()*.5),rand()*3,0,7); ctx.fill(); }
     ctx.save(); ctx.globalAlpha=.9; for(let y=0;y<H;y+=PAPER.height) for(let x=0;x<W;x+=PAPER.width) ctx.drawImage(PAPER,x,y); ctx.restore();
-    // the fold
-    const f=ctx.createLinearGradient(0,H/2-14,0,H/2+14); f.addColorStop(0,'rgba(90,60,20,0)'); f.addColorStop(.5,'rgba(90,60,20,.14)'); f.addColorStop(.52,'rgba(255,250,235,.25)'); f.addColorStop(1,'rgba(90,60,20,0)');
+    // laid-paper chain lines and a few fibres
+    ctx.strokeStyle='rgba(120,85,40,.04)'; ctx.lineWidth=1.2;
+    for(let x=60+rand()*40;x<W;x+=95){ ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x+(rand()-.5)*6,H); ctx.stroke(); }
+    ctx.strokeStyle='rgba(95,65,30,.12)'; ctx.lineWidth=.8;
+    for(let i=0;i<40;i++){ const x=rand()*W, y=rand()*H, a=rand()*6.3, l=6+rand()*18;
+      ctx.beginPath(); ctx.moveTo(x,y); ctx.quadraticCurveTo(x+Math.cos(a+1)*l*.5,y+Math.sin(a+1)*l*.5,x+Math.cos(a)*l,y+Math.sin(a)*l); ctx.stroke(); }
+    // the folds: one across, one down
+    const f=ctx.createLinearGradient(0,H/2-14,0,H/2+14); f.addColorStop(0,'rgba(90,60,20,0)'); f.addColorStop(.5,'rgba(90,60,20,.15)'); f.addColorStop(.52,'rgba(255,250,235,.26)'); f.addColorStop(1,'rgba(90,60,20,0)');
     ctx.fillStyle=f; ctx.fillRect(0,H/2-14,W,28);
+    const v=ctx.createLinearGradient(W/2-10,0,W/2+10,0); v.addColorStop(0,'rgba(90,60,20,0)'); v.addColorStop(.5,'rgba(90,60,20,.07)'); v.addColorStop(.53,'rgba(255,250,235,.14)'); v.addColorStop(1,'rgba(90,60,20,0)');
+    ctx.fillStyle=v; ctx.fillRect(W/2-10,0,20,H);
+    // shadow thrown by the rolls onto the sheet
+    for(const [y0,dir] of [[ROLL*.6,1],[H-ROLL*.6,-1]]){ const c=ctx.createLinearGradient(0,y0,0,y0+dir*40);
+      c.addColorStop(0,'rgba(60,36,10,.35)'); c.addColorStop(1,'rgba(60,36,10,0)'); ctx.fillStyle=c; ctx.fillRect(0,Math.min(y0,y0+dir*40),W,40); }
+    // the edges browned and scorched: wide soft strokes along the outline, clipped to the inside
+    for(const [w,a] of [[90,.045],[56,.065],[32,.09],[16,.15],[6,.28]]){ ctx.lineWidth=w; ctx.strokeStyle=`rgba(88,52,16,${a})`; ctx.stroke(sheet); }
+    ctx.lineWidth=1.6; ctx.strokeStyle='rgba(60,32,8,.5)'; ctx.stroke(sheet);
+    ctx.restore();
+    roll(W,0,rand,true); roll(W,H-ROLL,rand,false);
   }
   function pigpen(x,y,s,g){ // box shape by grid position, dot below or inside
     const i=+g[0], dot=g[1], L=x, R=x+s, T=y-s, B=y;
