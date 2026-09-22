@@ -1,0 +1,150 @@
+{
+ "schema_version": 1,
+ "target": "r8358",
+ "title": "Burghley to Walsingham, Westminster 5 July 1572: name codes in a letter-book copy, BL Harley MS 260 f. 262 (DECODE R8358)",
+ "documents": [
+  {
+   "id": "f262",
+   "shelfmark": "BL Harley MS 260 ff. 262r-262v; DECODE R8358",
+   "date": "1572-07-05",
+   "year": 1572,
+   "country": "England/France",
+   "route": "Westminster -> Paris (Burghley -> Walsingham)",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Letter printed in Digges, The Compleat Ambassador (1655), July 1572, with the cipher left as figures; Walsingham's 13 July reply there too. No decipherment found."
+   },
+   "length": {
+    "tokens": 15,
+    "distinct": 11,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE scans IMG_R8358_I38616_P1-P2",
+    "image_quality": "good",
+    "notes": "Boxed codes [2] [3] [4] [5], monogram ⅌B, single letters A and F, one five-letter run m o R d A."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "monoalphabetic"
+  ],
+  "summary": "Small name code of boxed digits, single letters and a monogram, plus one short letter run; inserted in a clear letter.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 11,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Copy in a letter-book; the codes were copied from the sent letters."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Digges 1655 prints the letter and the reply with the cipher unread; CSP Foreign x July 1572 does not calendar them",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "image cropping",
+   "print search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Downloaded the two R8358 images with the DECODE cookie.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Identified the pages as Walsingham's letter-book: Burghley to Walsingham, Westminster 5 July 1572 (DECODE pages in reverse order).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Found the letter and Walsingham's 13 July reply in Digges 1655, cipher printed as figures.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Searched CSP Foreign x July 1572 (BHO pp. 140-163) for the letter or a decipherment.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Checked sibling records R8356-R8364 and Tomokiyo's Elizabethan survey for a 1572 Walsingham key.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "Code [3] = the French King from context and Walsingham's reply.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Applied r8361's rule (box after a word marks a cover-name) to 'Milan [4]'; [2], [5], monogram, A, F and the run m o R d A get no value.",
+   "result": "failed",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0.13,
+  "verification": [
+   "historical consistency"
+  ],
+  "notes": "Explained and in print; one code identified by context; the rest needs the key.",
+  "gaps": [
+   {
+    "item": "letter run m o R d A",
+    "blocker": "too-short",
+    "detail": "five signs, no key"
+   },
+   {
+    "item": "codes [2], [4], [5], monogram, A, F",
+    "blocker": "no-key-material",
+    "detail": "no Walsingham-Burghley 1572 key known"
+   }
+  ]
+ }
+}
