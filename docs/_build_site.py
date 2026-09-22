@@ -131,6 +131,11 @@ def stamp_finding(li):
 
 # slug, nav label, year label, sort year, place, status class, status text, title, blurb, quote, rights
 PAGES = [
+    dict(slug='r1212', label='Bornemisza c. 1556', year='c. 1556', y=1556.5, place='Transylvania &rarr; Ferdinand I', st='found', stt='read at the time',
+         title='Bornemisza on the Kendi treason, Transylvania c. 1556 &mdash; read at the time',
+         blurb='DECODE R1212, catalogued as a Latin letter from an unknown sender to &ldquo;Paulo Borne?&rdquo; (HHStA Vienna, Chiffrenschl&uuml;ssel Kt. 13 Fasc. 20 ff. 38&ndash;39), is a report in the cipher of P&aacute;l Bornemisza, Bishop of Transylvania, written in his own voice to Ferdinand I: Ferenc Kendi, &ldquo;ter perfidus&rdquo;, has lost Transylvania to the king. A contemporary hand deciphered it between the lines; its key is the next DECODE record, R1211. Every run was re-read from the signs with that key, correcting the gloss in a dozen places; 276 of 288 cipher tokens read, nine number codes stay open.',
+         quote='&ldquo;Hec sunt verba Francisci Kendi ad me in Vasarhel sub comiciis&rdquo;',
+         rights='&Ouml;sterreichisches Staatsarchiv, HHStA, via DECODE R1212 (images not reproduced)'),
     dict(slug='r8358', label='Burghley to Walsingham July 1572', year='1572', y=1572.51, place='Westminster &rarr; Paris', st='stuck', stt='key not found', title='Burghley to Walsingham, 5 July 1572 &mdash; name codes in a clear letter, one read', blurb='BL Harley MS 260 f. 262 (DECODE R8358), catalogued as Burghley to an unknown recipient, is a copy in Walsingham&rsquo;s Paris letter-book of Burghley&rsquo;s letter of 5 July 1572, printed in Digges 1655 with the cipher left as figures. Context and Walsingham&rsquo;s reply fix [3] as the French King; the other codes and a five-letter run need the lost key.', quote='Some that are come home bear us in hand that [3] reneweth the m o R. d A. [4] whereby the last matter is hindered', rights='British Library (images via DECODE, not reproduced)'),
     dict(slug='walsingham1572', label='Walsingham to Burghley 1573', year='1573', y=1573.05, place='Paris &rarr; London', st='stuck', stt='too short, no key', title='Walsingham to Burghley, 20 January 1572/3 &mdash; attempted, not read', blurb='A letter-book copy in Harley MS 260, printed by Digges in 1655. It is clear English apart from one six-sign port name in digits and signs, and a mark where the copyist left out another name. No key of 1572-73 survives, and the one other group in the same system, in Burghley&rsquo;s reply, is not enough to choose between Dieppe, Calais or Nantes.', quote='a Gentleman of [9] departed hence to 2 1 &#8984; &epsilon; 9 4 with intention to imbarke there', rights='British Library (images via DECODE, not reproduced)'),
     dict(slug='mercoeur1586', label='&ldquo;MR&rdquo; to Merc&oelig;ur 1586', year='[1586]', y=1586.48, place='? &rarr; Merc&oelig;ur, Brittany', st='stuck', stt='too short, no key',
@@ -1122,6 +1127,7 @@ IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch o
 IMAGES['kaa4591'] = None
 IMAGES['kaa4591b'] = None
 IMAGES['r1874'] = None
+IMAGES['r1212'] = None
 IMAGES['r1875'] = None
 IMAGES['haga1620'] = ('haga1620_lead.jpg', 'R2113 p.2, Constantinople 31 March 1620: clear Dutch with the cipher spans inline, (44) ende (45) arbeiden bij (4) om tyt te winnen', 'Nationaal Archief, The Hague, via DECODE R2113')
 IMAGES['deswart1782'] = ('deswart1782_lead.jpg', 'De Swart&rsquo;s despatch of 8 March 1782, first page: the clear salutation, then the marked groups 15, 452, 730, 833 = waar bij ingesloten', 'Nationaal Archief, The Hague, via DECODE R1036')

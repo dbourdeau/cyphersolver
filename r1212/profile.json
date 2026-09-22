@@ -1,0 +1,172 @@
+{
+ "schema_version": 1,
+ "target": "r1212",
+ "title": "Pál Bornemisza to Ferdinand I on the Kendi treason, Transylvania c. 1556 (DECODE R1212)",
+ "documents": [
+  {
+   "id": "R1212",
+   "read": "read",
+   "shelfmark": "ÖStA HHStA Staatskanzlei Interiora, Chiffrenschlüssel Kt. 13, Fasc. 20, ff. 38-39 (DECODE R1212)",
+   "date": "undated (c. 1556)",
+   "year": 1556,
+   "country": "Hungary",
+   "route": "Transylvania -> King Ferdinand I",
+   "language": "Latin",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear decipherment over nearly every cipher run; no printed edition found.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 288,
+    "unit": "mixed",
+    "measured": false,
+    "file": "none"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R1212_I6001-I6004 via saved session cookie",
+    "image_quality": "good",
+    "notes": "Read in bands at half then full resolution by subagents; each run deciphered from the signs with key R1211 and compared with the gloss. Token counts hand-tallied from reading_p1-2.md and reading_p3-4.md (274 cipher words + 14 codes)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Monoalphabetic homophonic cipher in graphic signs and digits (1-3 signs per letter), word division kept, with a tiny numeric nomenclator (34 Transsylvania, 27 Petrovics) and further unkeyed number codes.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "sibling_key": "DECODE R1211 (f. 37, same fascicle)",
+  "notes": "Writer loose with the key: x/v also u, ~ also u/o, 9 (c) for t, barred Π for h, ϐ for c/h. Digit pairs inside runs are letters (34 = al)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary interlinear decipherment on the letter itself; key R1211 on DECODE.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "human_role": "Project-level: DECODE login cookie and /goal target setting. No target-specific intervention.",
+  "tools": [
+   "PIL (cropping and zooming the page images)"
+  ],
+  "models": [
+   "claude-opus-5[1m]",
+   "subagents for page-by-page reading"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Fetched R1212 metadata and four images from DECODE with the saved cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Viewed the pages: interlinear Latin gloss over nearly every cipher run; docket names Paulo Bornemisza; p.4 foot sign rows with pencil letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Spot-checked glosses against signs (horum omnium, nullus, fidia, tumultus): consistent homophonic letter substitution.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Listed DECODE records of Kt. 13 Fasc. 20 ff. 34-45; fetched R1209-R1215. R1211 (f. 37) is the graphic-sign key with codes 34 Transsylvania, 27 Petrovics; R1210 (f. 36) an older numeric Bornemisza key of c. 1540.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Web search for a printed edition (Bornemisza, Kendi, cipher, 1556).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "First-pass transcription of pp. 1-2 and 3-4 by two subagents, glosses checked against key R1211.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Full-resolution second passes: every run deciphered from the signs, compared with the gloss; a dozen gloss corrections, unglossed runs read, apparent codes 0399/134/34 shown to be letters; sender identified as Bornemisza from first-person passages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Tried R1210's name codes on the unkeyed numbers 24, 15, 10, 41, 70, 55, 78, 18, 52: no sense.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 0.958,
+  "grades": {
+   "H": 257,
+   "M": 14,
+   "I": 3
+  },
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Whole letter read; the contemporary gloss verified and corrected sign by sign with key R1211. Open: 9 unkeyed number codes and 3 illegible signs.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_p1-2.md + reading_p3-4.md: cipher words 274 (257 secure + 14 uncertain in sense read, 3 unread) + codes 14 (5 keyed, 9 not): 276/288 = 0.958 (hand tally by the reading passes).",
+  "key": "recovered",
+  "codes_open": {
+   "open": 9,
+   "total": 11,
+   "tokens_open": 9
+  },
+  "gaps": [
+   {
+    "item": "number codes 24, 15, 10, 41, 70, 55, 78, 18, 52",
+    "blocker": "no-key-material",
+    "detail": "not on key R1211; R1210 codes are another cipher; unread at the time too"
+   },
+   {
+    "item": "two signs p.1 l.9; run R Ɔ C p.3 l.5",
+    "blocker": "illegible",
+    "detail": "covered by a struck gloss / sign not in key"
+   }
+  ]
+ }
+}
