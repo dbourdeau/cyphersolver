@@ -164,12 +164,24 @@
    "kind": "solver",
    "what": "Anneal on the adjudicated text under seven unit models (per-unit letter, 7-9 merged, bare 7 null, upper only, brackets as word codes, CV syllabary, Caprile/che pins); seeds disagree, no Italian.",
    "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Third reading of p. 2 L13-L25, every unit checked on the image: 11 changes, estimated residual error 2-3%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Size-matched controls: 144 true signs fail even noise-free (42%); 90-100 signs with 3-5% noise succeed (92-95%). The real text filtered to 87 labels still does not converge, so it is not a simple one-letter-per-sign homophonic cipher.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "not read",
   "fraction_read": 0,
   "verification": [],
-  "notes": "Attempted, open. Both cipher pages double-transcribed and adjudicated; controls show the solver needs <5% transcription error and the residual is about 5-8%; no unit model converges. Needs a key or crib (Caprile 1519 key), better images, or a third reading of p. 2."
+  "notes": "Attempted, open. Both pages transcribed three ways and adjudicated (~2-5% residual error). Size-matched controls show a simple homophonic cipher of this size would be solved; the real text does not converge under any tested unit model, so the system has word, null or syllable signs not yet identified. Needs a crib or key (Caprile 1519 key from R1133/7c, if the same system)."
  }
 }

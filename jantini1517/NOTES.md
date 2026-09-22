@@ -71,6 +71,13 @@ sibling, the cipher is not readable from the material available.
   solver's limit, and the cipher's structure (codes, nulls) is unconfirmed. Moving it on needs one of three things: a key
   or crib (the Caprile 1519 key rebuilt from R1133/7c, if it is the same cipher); a better physical image (ASMo) for
   the faint small upper signs; or a third, careful reading of p. 2 L13-L25.
+- Third reading of p. 2 L13-L25 (`t1126_p2d.txt`, changes in `p2_third.md`): 11 units changed, every unit checked on the
+  image, estimated error 2-3 %. Final text `t1126_p1c.txt` + `t1126_p2final.txt`, solver input `c_v6.txt` (1,257 units, 143
+  labels) and `c_v6f.txt` (labels seen 3+ times: 1,184 units, 87 labels). Anneal 3 seeds x 12 x 400k: no convergence.
+- Controls matched to this size: with 144 true signs, even a perfect transcription gives only 42 %, and 3 % noise gives
+  29 %. With 90-100 signs and 3-5 % noise, 92-95 %. The filtered real text (87 labels, about 3 % noise) should therefore
+  solve if it were a simple one-letter-per-sign homophonic cipher. It does not, so the cipher is not that: word
+  signs, nulls or syllable signs are likely. Without a crib this is where a ciphertext-only attack stops.
 
 ## Remaining gaps
 
