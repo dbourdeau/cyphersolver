@@ -38,7 +38,7 @@ def main():
     path, model = pos[0], pos[1]
     restarts = int(pos[2]) if len(pos) > 2 else 8
     iters = int(pos[3]) if len(pos) > 3 else 60000
-    m = lm.load(model, spaces=bool(os.environ.get('SPACES')))
+    m = lm.load(model, order=int(os.environ['ORDER']) if os.environ.get('ORDER') else None, spaces=bool(os.environ.get('SPACES')))
     alpha = m.alpha
     lines = read_tokens(path)
     toks = [t for _, ts in lines for t in ts if t not in nulls]

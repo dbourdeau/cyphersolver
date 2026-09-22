@@ -54,6 +54,8 @@ S = [
     ("sibling key", "Opened all other Mantova records on DECODE (R7858-R7888): 16th-17th century keys.", "failed"),
     ("transcription", "Subagent second pass of P1 (262 signs, 3 runs, 3 misreadings fixed) and clear-text transcription.", "worked"),
     ("solver", "P1 re-solved from the second pass in Latin, Italian and modern Italian: no reading.", "failed"),
+    ("statistics", "P1: digraphic test (sign-pair IC 0.005, no), periodicity test (column IC flat for periods 2-8, not polyalphabetic), vowel/consonant alternation 0.713 above all 200 shuffles (linear text, not transposed).", "worked"),
+    ("solver", "P1 annealed in Spanish, Catalan, French, German, Portuguese, and with order-3 Latin/Italian models over 150 restarts: no reading.", "failed"),
 ]
 
 prof = {
