@@ -1,6 +1,6 @@
 # DECODE R1818 "Sami": homemade cipher sheet, Folkrörelsearkivet i Västerbotten (Umeå)
 
-Status: no write-up (attempted, closed unread: a dense two-page homemade cipher of Latin letters, invented signs and numerals; the only scan is about 125 px/cm and too coarse to transcribe the signs reliably; no key, crib, sibling or print)
+Status: no write-up (skipped as impossible, closed unread: a dense two-page homemade cipher of Latin letters, invented signs and numerals; the only scan is about 125 px/cm and too coarse to transcribe the signs reliably; no key, crib, sibling or print)
 
 Catalogue: id 234, "Unknown sender (Please Select (only U.S. / Can / Aus)) to unknown recipient", DECODE R1818.
 "Please Select (only U.S. / Can / Aus)" is an unfilled DECODE form default for the origin region, not a place.
