@@ -12,7 +12,7 @@ def opt(name, default=''):
     if name in args:
         i = args.index(name); v = args[i+1]; del args[i:i+2]; return v
     return default
-poly = {k: v.split('/') for k, v in (kv.split('=') for kv in opt('--poly', 'E=d/ch,n=w/b/t/o,o=b/w,#=g/u').split(',') if kv)}
+poly = {k: v.split('/') for k, v in (kv.split('=') for kv in opt('--poly', 'E=d/ch,n=w/b/t/o,o=b/w,#=g/u,j=s/ch').split(',') if kv)}
 setv = dict(kv.split('=') for kv in opt('--set').split(',') if kv)
 out = opt('--out')
 key = {}
