@@ -22,6 +22,9 @@
   "fr-grand-siecle": {"language": "fr", "period": "1630-1700", "norm": "early", "order": 4, "spaces": false,
     "sources": ["fr-grand-siecle"], "language_id": false, "use_for": "quadgram scoring of 17th-c. literary French",
     "replaces": ["richelieu/build_ngrams.py"]},
+  "fr-1750-nospace": {"language": "fr", "period": "1700-1800", "norm": "modern", "order": 5, "spaces": false,
+    "sources": ["fr-gutenberg"], "language_id": false,
+    "use_for": "18th-c. French without word divisions, for code-group work (swieten1757)"},
 
   "de-modern": {"language": "de", "period": "1780-1945", "norm": "modern", "order": 5, "spaces": true,
     "sources": ["de-gutenberg"], "use_for": "German plaintext, WW1/WW2 hand ciphers (ADFGVX, Abwehr, Orpo)",

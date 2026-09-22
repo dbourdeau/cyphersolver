@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Van Swieten to Cobenzl (1757&ndash;1759) &mdash; Read</title>
+<meta name="description" content="Three ciphered despatches from Gottfried van Swieten at Bonn to Count Cobenzl in Brussels (ARA Brussels, Secr&eacute;tairerie d&rsquo;&Eacute;tat et de Guerre 1236; DECODE R955&ndash;R957), catalogued as non-decrypted. The 1757 letter carries its own decipherment; the 1759 table, an alphabetical syllabary of 343 numbers, was rebuilt from the ciphertext alone by annealing a monotone key against a French language model, then corrected from the clear text around each passage. Read: the Hanau magistrates and neutrality, the new convention for Prussian Gueldre and Moers, and a frank report on Soubise&rsquo;s army and its generals.">
+<link rel="stylesheet" href="style.css?v=20260921e">
+<meta name="date" content="2026-09-22">
+<meta name="last-modified" content="2026-09-22">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="swieten1757.html" aria-current="page"><span class="st solved">read</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="marburg1635.html"><span class="st solved">read</span><b>Marburg cipher report</b><span class="yr">1635&ndash;52</span></a></li><li><a href="harley286.html"><span class="st solved">read</span><b>D&rsquo;Ewes&rsquo;s cipher log 1635</b><span class="yr">1635&ndash;36</span></a></li><li><a href="harley1582r8504.html"><span class="st solved">read</span><b>Stafford November 1586</b><span class="yr">1586</span></a></li><li><a href="harley1582r8500.html"><span class="st solved">read</span><b>Stafford August 1586</b><span class="yr">1586</span></a></li><li><a href="walsingham1572.html"><span class="st stuck">too short, no key</span><b>Walsingham to Burghley 1573</b><span class="yr">1573</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">89</span><b>Solved</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">49</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">21</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">27</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 187 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <a href="catalogue.html">The Unsolved Catalogue</a>
+    <a href="atlas.html">Atlas</a>
+    <a href="keys.html">Key web</a>
+    <a href="secret.html">Secret letter</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <a class="ext" href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+  <div class="cipherstrip">290 312 343 429 288 291 150 337 429 312 405 337<br>la n ou ve l le c on ve n ti on<br>alphabetical table &middot; a 100 &middot; de 180 &middot; la 290 &middot; pr 357 &middot; t 398 &middot; z 442</div>
+  <p class="kicker">Bonn &rarr; Brussels &middot; numerical syllabary, two tables &middot; 1757&ndash;1759 &middot; read</p>
+  <h1>Van Swieten to Cobenzl, Bonn 1757&ndash;1759</h1>
+  <p class="sub">ARA Brussels, Secr&eacute;tairerie d&rsquo;&Eacute;tat et de Guerre, inv.&nbsp;1236, ff.&nbsp;141, 327&ndash;328, 344&ndash;345 &middot; DECODE R955&ndash;R957, &ldquo;non-decrypted&rdquo; &middot; letters in French with ciphered passages in three-digit numbers</p>
+  <p class="sub">The 1757 passage is deciphered in clear on its own page &middot; the 1759 table rebuilt from 553 groups with no key or crib beyond the surrounding clear text &middot; 96&nbsp;% of the groups read</p>
+  <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-22">22 September 2026</time></p>
+<div class="seal solved" aria-hidden="true"><span>read</span></div>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">Three letters, two tables</a><a href="#r955">The 1757 table, from its own decipherment</a><a href="#method">Rebuilding the 1759 table</a><a href="#r957">Bonn, 14 January 1759</a><a href="#r956">Bonn, 4 February 1759</a><a href="#residuals">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<div class="callout"><strong>Summary.</strong> Gottfried van Swieten, later Mozart&rsquo;s and Haydn&rsquo;s patron in Vienna, began as a diplomat under Count Cobenzl, the Empress&rsquo;s minister plenipotentiary in the Austrian Netherlands. From Bonn, the court of the Elector of Cologne, he reported to Cobenzl on the French armies in Germany during the Seven Years&rsquo; War, putting the sensitive sentences into numbers. DECODE holds three of these letters as non-decrypted. The undated one (R955) has the decipherment written under the numbers: the magistrates of Hanau debated neutrality in case the French left. It shows the system, an alphabetical list of letters and syllables with a few homophones. The two letters of January and February 1759 use a new table in the same style, with numbers 100&ndash;442. No key for it survives. It was rebuilt from the ciphertext by annealing a code-to-syllable map that must stay in alphabetical order, scored by a French language model. One random start in eight came out as French. The rest was corrected by hand against the clear text round each passage. The letters report the convention that left the revenues of Prussian Gueldre to the French while keeping the Empress&rsquo;s sovereignty, the principality of Moers handed to a prince without asking her, and a sharp judgement of Soubise&rsquo;s army. That army lived on Gueldre&rsquo;s contributions and planned no magazines, and among its generals only Broglie was competent. <em>Status: read. About 21 of 553 groups in the 1759 letters stay open, nearly all proper names.</em></div>
+
+<h2 id="documents"><span class="num">01</span> Three letters, two tables</h2>
+<table>
+<tr><th>Record</th><th>Folio, date</th><th>Cipher</th><th>Read</th></tr>
+<tr><td>R955</td><td>f.&nbsp;141, undated (1757&ndash;58, while the French held Hanau)</td><td>89 groups, dotted, 202&ndash;586</td><td>from the decipherment written below them</td></tr>
+<tr><td>R957</td><td>ff.&nbsp;327&ndash;328, Bonn, 14 January 1759</td><td>210 groups in two unbroken runs</td><td>all but four groups</td></tr>
+<tr><td>R956</td><td>ff.&nbsp;344&ndash;345, Bonn, 4 February 1759</td><td>343 groups in nineteen runs set inside clear sentences</td><td>all but about 16 groups</td></tr>
+</table>
+<p>In 1759 the digits run on with no separators. They divide into threes, which the lengths of the runs confirm. Four DECODE transcriptions had dropped or doubled digits; those runs were re-read from the scans.</p>
+<figure><img src="swieten1757_lead.jpg" alt="Page of numbers in groups of three separated by dots, followed by a French sentence in clear" loading="lazy"><figcaption>R955, f.&nbsp;141: the ciphered sentence, and under it the same sentence in clear. ARA Brussels via DECODE.</figcaption></figure>
+
+<h2 id="r955"><span class="num">02</span> The 1757 table, from its own decipherment</h2>
+<p>The clear lines on f.&nbsp;141 repeat the cipher word for word: &ldquo;on a d&eacute;lib&eacute;r&eacute; ici dans une d&eacute;putation de Magistrat sur le parti &agrave; prendre au cas que les Fran&ccedil;ois fussent oblig&eacute;s d&rsquo;abandonner Hanau, on a os&eacute; opiner pour la neutralit&eacute; et conclure m&ecirc;me; on garde cependant un profond secret l&agrave;-dessus comme de raison.&rdquo; Aligning the two gives values that rise with the alphabet: a 202/203, ab 205, an 216, ar 220, as 223, at 224, au 228, be 241, c 250, d 279, da 280, de 282/290, en 308, er 313, et 315, fu 337, gi 343, ha 355, i 364, l 387, le 388, les 389, li 390, ma 396, ne 411, o 422, on 435, p 447, po 453, pr 455, que 465, r 469, ra 471, re 472, s 480, su 488, t 494, ta 496, ti 500, tr 503, u 511, ur 512. Each letter heads its own section and is followed by its syllables. The common units have a second number.</p>
+
+<h2 id="method"><span class="num">03</span> Rebuilding the 1759 table</h2>
+<p>The 1759 numbers do not fit the 1757 values, but if the new table was built the same way, it has a strong constraint: a higher number never stands for an alphabetically earlier syllable. The solver (<code>msolve.py</code>) keeps one inventory index per observed number, sorted, and allows at most two numbers per syllable. It anneals the boundaries against a French character model (<code>fr-1750-nospace</code>, added to the shared <code>lang/</code> registry), with a small bonus per decoded letter. As a control, a 274-group French passage encoded with a random alphabetical table was recovered verbatim. On the real 491 clean groups, one start in eight gave &ldquo;la nouvelle convention on laisse le revenu&hellip; en r&eacute;servant la souverainet&eacute;&hellip; l&rsquo;imp&eacute;ratrice&rdquo;, and the other seven did not.</p>
+<p>The key was then corrected by hand, run by run, against the French sentence each run sits in. For example, &ldquo;avant que les campagnes soient garnies, <em>on ne songe pas &agrave; faire des magazins</em>, si ce n&rsquo;est <em>aux d&eacute;pens des &Eacute;tats de l&rsquo;Empire qui</em> sont enti&egrave;rement &eacute;puis&eacute;s&rdquo;. The end of the table falls into place: x 438/439, y 441, z 442. So do word entries filed in their alphabetical slot: nous, pour, qui, roi, comte.</p>
+<figure><img src="swieten1757_r956.jpg" alt="Handwritten French lines with long runs of digits between the words" loading="lazy"><figcaption>R956, f.&nbsp;344: runs of unseparated digits inside the clear text (&ldquo;le grand principe paro&icirc;t &ecirc;tre de faire 392 135 133 389 385 403&hellip;&rdquo; = <em>subsister l&rsquo;arm&eacute;e du roi y sans qu&rsquo;il en co&ucirc;te un sou</em>).</figcaption></figure>
+
+<h2 id="r957"><span class="num">04</span> Bonn, 14 January 1759</h2>
+<p>&hellip; de l&rsquo;administration; <em>la nouvelle convention laisse les revenus &agrave; la [G&hellip;] en r&eacute;servant la souverainet&eacute; &agrave; l&rsquo;Imp&eacute;ratrice. On promet de toujours [?] de la part des Fran&ccedil;ois. Dans cette supposition, sans que nous ayons aucun ordre de la cour &agrave; ce sujet, et cela cause beaucoup de m&eacute;sintelligences. On vient de la part de la [G&hellip;] de mettre en possession de la principaut&eacute; de Meurs le prince de Con[&hellip;] [&hellip;] qui vous formez des pr&eacute;tensions sans pr&eacute;venir seulement l&rsquo;Imp&eacute;ratrice, qui en est souveraine.</em></p>
+<p>The Prussian lands on the Lower Rhine (Gueldre, Moers) were in French and Austrian hands from 1757. The passage records a convention that left their revenues to one party and the sovereignty to Maria Theresa. It also reports a grant of Moers made without informing her.</p>
+
+<h2 id="r956"><span class="num">05</span> Bonn, 4 February 1759</h2>
+<p>Il est constant que l&rsquo;arm&eacute;e du Prince de Soubise est dans le meilleur &eacute;tat qu&rsquo;on puisse imaginer &hellip; avant que les campagnes soient garnies, <em>on ne songe pas &agrave; faire des magazins</em> si ce n&rsquo;est <em>aux d&eacute;pens des &Eacute;tats de l&rsquo;Empire qui</em> sont enti&egrave;rement &eacute;puis&eacute;s; le grand principe para&icirc;t &ecirc;tre de faire <em>subsister l&rsquo;arm&eacute;e du roi y sans qu&rsquo;il en co&ucirc;te un sou</em>. La campagne pass&eacute;e en fait la preuve, aussi <em>le prince [name]</em> a-t-il avou&eacute; que les <em>contributions de la Gueldre</em> avoient <em>suffi &agrave; l&rsquo;entretien de son arm&eacute;e</em>, et qu&rsquo;on avoit m&ecirc;me <em>transmis assez d&rsquo;argent &agrave; l&rsquo;arm&eacute;e de Contades</em> pour subvenir aux frais <em>du traitement des troupes pendant l&rsquo;hiver</em>, et que toutes les op&eacute;rations de l&rsquo;ann&eacute;e pass&eacute;e n&rsquo;avoient <em>eu d&rsquo;autre but. Le prince pense</em> bien, mais le reste est <em>malintentionn&eacute;</em>; outre cela <em>il n&rsquo;y a pas un officier g&eacute;n&eacute;ral entendu &agrave; cette arm&eacute;e, except&eacute; le duc de Broglio; le major g&eacute;n&eacute;ral (?) des Li&eacute;geois de Vaut est int&eacute;ress&eacute; et ignorant, et non l&rsquo;intendant n&eacute;cessaire pour mettre en &oelig;uvre le syst&egrave;me</em> que j&rsquo;ai d&eacute;taill&eacute; ci-dessus &hellip; D&rsquo;ailleurs, <em>homme non violent</em>, je n&rsquo;ai pas besoin de <em>parler de Dumesnil</em>; il est universellement connu pour &ecirc;tre <em>prussien, [&hellip;] le prince Camille</em> &hellip; Parmi <em>les mar&eacute;chaux de ce[&hellip;]</em> il n&rsquo;y a que <em>[name] qu&rsquo;on estime</em>. Comme de notre c&ocirc;t&eacute; nous ne pouvons pas r&eacute;sister aux <em>plaintes fond&eacute;es des &Eacute;tats</em>, et que <em>les ordres de la cour</em> nous obligent de faire des repr&eacute;sentations &hellip; on a pris occasion de former des plaintes contre <em>le comte de Pergen</em> comme s&rsquo;il n&rsquo;agissoit pas conform&eacute;ment aux int&eacute;r&ecirc;ts de la cause commune.</p>
+
+<h2 id="residuals"><span class="num">06</span> What remains uncertain</h2>
+<ul>
+<li><b>232</b> (twice, R957): a name filed under G, the body that receives the revenues and acts on Moers. Unread (I).</li>
+<li><b>147 100 126 148</b> (R956): the prince who &ldquo;avowed&rdquo;. From the context it should be Soubise, but the numbers are out of alphabetical order, so this is probably a name group. Unread (I).</li>
+<li><b>170 323 441</b> (R957) and <b>170 271 289 337</b> (R956): the syllables decode (con&hellip;, &hellip;il l&rsquo;on) but the words do not resolve. Conjectural (M).</li>
+<li><b>290 313 316 313 373</b> (R956): the one marshal &ldquo;qu&rsquo;on estime&rdquo;. The syllables read la-n-ne-n-r and the name is not identified; the digit division here is uncertain in the scan. Unread (I).</li>
+<li>&ldquo;on promet de toujours&rdquo; and &ldquo;supposition [pr] sans que&rdquo; (R957) read awkwardly (C). &ldquo;le major g&eacute;n&eacute;ral&rdquo; rests on a single number, 300 (C).</li>
+</ul>
+
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/swieten1757.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">07</span> Sources</h2>
+<ul>
+<li>Archives g&eacute;n&eacute;rales du Royaume, Brussels, Secr&eacute;tairerie d&rsquo;&Eacute;tat et de Guerre, inv.&nbsp;1236; images and transcriptions on DECODE, records R955, R956, R957 (transcribers SofPe 2019, XL 2020).</li>
+<li>No printed edition or earlier decipherment of these letters was found.</li>
+</ul>
+<p class="muted">Transcriptions, solver, key and readings: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/swieten1757">swieten1757/</a> in the repository.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archives g&eacute;n&eacute;rales du Royaume, Brussels, via DECODE</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="eichel1758.html" rel="prev">&larr; Eichel 1758 1758</a><a href="acciaiuoli1757.html" rel="next">Acciaiuoli 1758 1758&ndash;60 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="solve-replay.js?v=20260921e" defer></script>
+<script src="zoom.js?v=20260921e" defer></script>
+<script src="site.js?v=20260921e"></script>
+</body>
+</html>

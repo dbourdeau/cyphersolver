@@ -203,6 +203,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 | p99 | **Sir Edward Stafford (Paris) → [Walsingham], 20 Aug 1586**, BL Harley MS 1582 ff. 65–66 (DECODE R8500) | 1586 | 3 | 2 | 4 | 3 | 1 | 4 | **2.85** | D 3: letter key rebuilt from a sibling decipherment and glosses, 6 = e found. H 2: Junius, Cambrai and Balagny, a short postscript. N 4: never deciphered. V 4: all 61 signs read, four by context. |
 | p100 | **Łaski, King John's side, a Bavarian at Wardein → the Bavarian court**, BayHStA KAA 4591 ff.226–261 (DECODE R9403, R9414, R9415) | 1531–37 | 4 | 3 | 4 | 3 | 1 | 3 | **3.25** | D 4: two new homophonic sign alphabets rebuilt from one-line glosses by annealing and beam search; Łaski's key with e/r swapped. H 3: King John's diplomacy with Bavaria, the Sultan's terms, the Pressburg diet, Turkish arming 1537. N 4: never read. V 3: 99.5% and 95.3%, but the German letter 91.3%. |
 | p101 | **Sir Edward Stafford (Paris) → [Walsingham], 9 Nov 1586**, BL Harley MS 1582 ff. 76–77 (DECODE R8504) | 1586 | 1 | 1 | 4 | 3 | 1 | 4 | **1.95** | D 1: one word, sibling key applied. H 1: a single word, *princes*. N 4: not in print. |
+| p102 | **Gottfried van Swieten (Bonn) → Count Cobenzl, 1757–59**, ARA Brussels SEG 1236 (DECODE R955–R957) | 1757–59 | 5 | 3 | 4 | 3 | 1 | 4 | **3.60** | D 5: 1759 syllabary rebuilt ciphertext-only by monotone annealing against an LM, then from context. H 3: French army finances and generals, the Gueldre convention. N 4: not in print. |
 
 ## By single axis
 
@@ -526,3 +527,4 @@ D'Ewes's cipher log 1635–36 provisional score: 0.25×3 + 0.25×2 + 0.20×4 + 0
 Stafford August 1586 provisional score: 0.25×3 + 0.25×2 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **2.85** (p99): a key rebuilt from sibling letters' decipherment, applied to an unread postscript.
 KAA 4591 letters 1531–37 provisional score: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×3 = **3.25** (p100): Łaski's key adapted, two homophonic keys rebuilt from glosses, read 99.5%, 95.3% and 91.3%.
 Stafford November 1586 provisional score: 0.25×1 + 0.25×1 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **1.95** (p101): one cipher word read with a sibling key.
+Van Swieten to Cobenzl 1757–59 provisional score: 0.25×5 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **3.60** (p102): an alphabetical syllabary rebuilt from ciphertext alone, read 96%.

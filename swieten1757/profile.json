@@ -1,0 +1,231 @@
+{
+ "schema_version": 1,
+ "target": "swieten1757",
+ "title": "Gottfried van Swieten (Bonn) to Count Cobenzl, 1757-59, three despatches with ciphered passages (ARA Brussels SEG 1236, DECODE R955-R957)",
+ "documents": [
+  {
+   "id": "R955",
+   "shelfmark": "ARA Brussels, Secretairerie d'Etat et de Guerre inv. 1236 f. 141; DECODE R955",
+   "date": "undated (1757-58)",
+   "year": 1758,
+   "country": "Austria (Austrian Netherlands)",
+   "route": "Bonn -> Brussels",
+   "language": "French",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate paragraph"
+    ],
+    "source": "The clear text written below the numbers is the decipherment."
+   },
+   "length": {
+    "tokens": 89,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher/R955.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DECODE DOC_R955_D1823_1823.txt (SofPe 2019)",
+    "image_quality": "good",
+    "notes": "DECODE digits checked against the images; runs with dropped or doubled digits re-read from the scans."
+   }
+  },
+  {
+   "id": "R957",
+   "shelfmark": "ARA Brussels, Secretairerie d'Etat et de Guerre inv. 1236 ff. 327-328; DECODE R957",
+   "date": "14 Jan 1759",
+   "year": 1759,
+   "country": "Austria (Austrian Netherlands)",
+   "route": "Bonn -> Brussels",
+   "language": "French",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment known; DECODE: non-decrypted."
+   },
+   "length": {
+    "tokens": 210,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher/R957.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DECODE DOC_R957_D1822_1822.txt (SofPe 2019)",
+    "image_quality": "good",
+    "notes": "DECODE digits checked against the images; runs with dropped or doubled digits re-read from the scans."
+   }
+  },
+  {
+   "id": "R956",
+   "shelfmark": "ARA Brussels, Secretairerie d'Etat et de Guerre inv. 1236 ff. 344-345; DECODE R956",
+   "date": "4 Feb 1759",
+   "year": 1759,
+   "country": "Austria (Austrian Netherlands)",
+   "route": "Bonn -> Brussels",
+   "language": "French",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment known; DECODE: non-decrypted."
+   },
+   "length": {
+    "tokens": 343,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher/R956.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DECODE DOC_R956_D1958_1958.txt (XL 2020)",
+    "image_quality": "good",
+    "notes": "DECODE digits checked against the images; runs with dropped or doubled digits re-read from the scans."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "Three-digit alphabetical syllabary: letters, syllables and a few words and names in alphabetical order with occasional homophones; 1757 table 202-586, a different 1759 table 100-442.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "3",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 150,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names"
+   ],
+   "unread_groups": 21
+  },
+  "nulls": {
+   "present": "unknown",
+   "count": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "sibling_key": "R955's 1757 table (from its own decipherment): same design, different numbers.",
+  "notes": "R955 groups are dot-separated; the 1759 runs are unseparated digits inside clear text."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "R955 only: decipherment written on the page itself. R956/R957: none known, nothing in print.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login and passed its session cookie to the model, set up Claude Code with Opus 5, and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "curl (DECODE)",
+   "python"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "DECODE R955-R957 fetched with the session cookie: 8 page images, 3 transcriptions.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Web search and local Tomokiyo/cryptiana copies for a printed decipherment.",
+   "result": "failed"
+  },
+  {
+   "kind": "reading",
+   "what": "R955: the clear lines under the numbers are the decipherment; aligned, they give an alphabetical syllabary (a 203, de 282, on 435, re 472...).",
+   "result": "worked"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "R955's values applied to the 1759 runs directly and linearly rescaled to 100-442.",
+   "result": "failed"
+  },
+  {
+   "kind": "solver",
+   "what": "Monotone-map annealer (msolve.py) onto a sorted inventory of French units, LM score + per-letter bonus; first runs collapsed onto repeated long words (no multiplicity cap) and a score bug (sum taken as mean).",
+   "result": "failed"
+  },
+  {
+   "kind": "control",
+   "what": "Synthetic 274-group French text under a random alphabetical table: recovered verbatim once the 2-codes-per-unit cap and bonus 1.5 were set.",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "what": "8 random starts on the 491 clean 1759 groups; seed 5 gave readable French (la nouvelle convention... souverainete... imperatrice), the others gibberish.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Four DECODE runs with dropped/doubled digits re-read from the images; a separate sign before run 1 dropped.",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "what": "Seeded polish pass with enlarged inventory drifted to worse keys.",
+   "result": "failed"
+  },
+  {
+   "kind": "crib",
+   "what": "Key corrected by hand run by run against the surrounding clear French (magazins, Contades, Broglio, comte de Pergen); x 438/439, y 441, z 442 close the table.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 0.962,
+  "key": "recovered",
+  "codes_open": {
+   "open": 12,
+   "total": 150,
+   "tokens_open": 21
+  },
+  "grades": "unknown",
+  "verification": [
+   "historical consistency",
+   "contemporary decipherment"
+  ],
+  "gaps": [
+   {
+    "blocker": "open-codes",
+    "item": "232 (x2), 147 100 126 148, 170 323 441, 170 271 289 337, 357: names and one-off groups"
+   },
+   {
+    "blocker": "illegible",
+    "item": "290 313 316 313 373 (R956 run 16), digit division uncertain"
+   }
+  ],
+  "notes": "fraction_read = 1 - 21 unread of 553 groups in R956+R957; R955 read from its decipherment."
+ }
+}
