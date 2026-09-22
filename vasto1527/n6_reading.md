@@ -1,5 +1,7 @@
 # BnF fr. 3022 no. 6 (ff. 16–17v): Marquis del Vasto to Charles V, [Rome, early December 1527]
 
+> **Superseded in part (22 Sept 2026).** The measured reading is `n6_signs.tsv` (`n6_measure.py`: 98.0% of 1,680 cipher tokens). Changed since this file: da = otro (not liga), dop = tiempo (not invierno), bet = dello, dab = tiene; Lasry's syllable labels corrected (boz = esto, bab = mas, bar = tan, bop = como, bopt = ellos, bie = el, bis = de, bep = es/en); <37> = final(mente); "at" and "quia" are switch markers. See NOTES.md.
+
 The catalogue lists this as "Rapport, en espagnol, avec chiffre, à l'empereur" (no author). It is del Vasto's.
 It opens "A seis de noviembre escrivi a V. M. muy largo y tanbien a xxvij de setiembre, cuyos duplicados
 van con esta", and reports the agreement for the Pope's liberty "y de los cardenales". Del Vasto stays in Rome only until the Prince of Orange arrives, "el qual se espera que verna de aqui a tres dias", which dates it to early December 1527.

@@ -1,0 +1,185 @@
+# BnF fr. 3022 no. 6 (ff. 16v-17v): sign-level reading file, measured by n6_measure.py.
+# Tokens are the cipher signs of Lasry's 2026 decryption (prior/BnF_fr3022_f16_decryption.txt, sections 16, 17a,
+# 17b, 17va, 17vb), one token per sign, in his labels: a single letter = a letter sign (value from Lasry's key);
+# a word label (qve, de, por, con, esta, ha/te ...) = one of his two-per-syllable code signs; [xxx] = nomenclator
+# group; <33> <12> <37> = his 'unknown' glyphs; ? = an unlabelled sign (mostly the barred sign, a stop).
+# The '_' word breaks and <plaintext> markers of his file are dropped. Checked against Gallica views 32-34
+# (hi/c032-c034) on 2026-09-22 where the reading turns on which glyph is written.
+# Columns: loc (Lasry section.line) | tokens | reading | status | note
+# status: r = read with Lasry's key/labels as they stand; i = read with a value inferred from context in the
+#   18 Sept 2026 pass (n6_reading.md); n = read with a value inferred from context or a glyph check in the
+#   22 Sept 2026 pass (i and n are grade I: a code identified, or a Lasry label/letter corrected); u = not read;
+#   x = sign seen on the image but absent from Lasry's token list (counted, not read); w = the same, read.
+# The measure counts tokens: read = r + i + n + w; fraction = read / (all tokens, x and w included).
+16.1	<33> s	[at]	n	'at' = clear/cipher switch marker, not text: it stands at every boundary in nos. 6 and 19 (after 'Mylan.', after 'socorrido.' on f. 17r, at the ends of cipher runs on ff. 41r and 41v)
+16.1	y y por	[y y por]	u	'y y por [mq] creo': does not join; not read
+16.2	<12> p	[mq]	u	'mq' word, <12> glyph unknown
+16.2	c r e o m a s p r e s t o s e a	creo mas presto sea	r
+16.2	fin	esto	n	boz: Lasry 'fin'; = esto (5 contexts in nos. 6 and 19)
+16.2	por qve s e g v n la	porque segun la	r
+16.2	[dnh]	[dnh]	u	'segun la [dnh]'; 'en [dnh] ya no se halla que comer' (no. 19) suggests Roma, which does not fit here
+16.3	no la s e g v i r a n en v e n i r t a n	no la seguiran en venir tan	r
+16.3	a a <33> i n t e	adelante	n	'bbato' + t e on the image; = adelante as spelled in 16.8; transcription or scribal slip
+16.3	no qve d a n d o	no quedando	r
+16.4	en lo b a r d i a e x e r c i t o	en Lombardia exercito	r
+16.4	[bet] s	dellos	n	bet = dello: 'exercito dellos tan pujante'; no. 19 f. 41v 'el poco cuidado que [bet] he' (= dello)
+16.4	t a n p v i a n t e qve p v d i e s e r e s i s t i r a v n a g r v e s a b a n d a	tan pujante que pudiese resistir a una gruesa banda	r
+16.5	al	de	n	glyph 'bis' (de); Lasry 'al'
+16.5	a l e m a n e s qve p o d r i a	alemanes que podria	r
+16.6	al	el	i	glyph 'bie' = el (el bolver, el quedar, el camino, el exercito)
+16.6	r e i de v n g r i a por	rey de Ungria por	r
+16.6	[di]	mandado	i	'por [di] de V. M.'
+16.6	de [title1] [title2]	de V. M.	r
+16.7	ha/te n e r b a x a r en	hazer baxar en	r
+16.7	[coy]	Italia	i	'hazer baxar en [coy]' (Germans brought down by the King of Hungary)
+16.7	?	.	n	barred stop sign before 'y'
+16.7	y s v c e d i e n d o y ha/te ll a n d o s e	y sucediendo y hallandose	r
+16.8	con s	ellos	n	glyph 'bopt' (Lasry 'con s'); = ellos in both places (16.8, 17b.14); plain 'bop' = como
+16.8	p a s a d o s	pasados	r
+16.8	con	tan	n	glyph 'bar' = tan (also 'tenemos tan cerca', 17b.9)
+16.8	a de la n t e c r e o qve t e r n i a n d i f i c v l t o s o	adelante creo que ternian dificultoso	r
+16.9	al	el	i	bie = el
+16.9	b o l v e r y qve m a s	bolver y que mas	r
+16.9	al	el	i	bie = el
+16.9	qve d a r y	quedar y	r
+16.9	[bnq]	[bnq]	u	'el quedar y [bnq] y finalmente no podrian ...'
+16.9	y	y	r
+17a.1	<37>	final	n	<37> (ʃ-like sign) = final(mente); 'y finalmente yo veo', 'y finalmente el exercito esta' in no. 19
+17a.1	m e n t e no p o d r i a n s i n o e s p e r a r g r a n p e r d i d a y por	mente no podrian sino esperar gran perdida y por	r
+17a.2	fin	esto	n	boz = esto: 'y por esto pienso'
+17a.2	p i e n s o qve qve r a n	pienso que querran	r
+17a.2	[baf]	primero	i
+17a.2	a c a b a r lo de lo n b a r d i a qve ha/te n e r o t r o c a m i n o y	acabar lo de Lombardia que hazer otro camino y	r
+17a.5	<33> s p l <33>	[at quia]	w	'at quia' on the image after 'socorrido.', before the cipher (Lasry put it in <plaintext>); both switch markers ('quia' also before the cipher at 17b.1 and on f. 41r)
+17a.5	es g a n a r en	es ganar en	r
+17a.5	al	el	i	bie = el
+17a.5	c a m i n o a	camino a	r
+17a.6	[rar]	[rar]	u	'ganar en el camino a [rar] y ponella debaxo el mando de V. M.': Florencia or Luca, not decided (cac = Florencia)
+17a.6	y p o n e ll a de b a x o el m a n d o de [title1] [title2] qve en	y ponella debaxo el mando de V. M. que en	r
+17a.7	fin s	estos	n	boz = esto
+17a.7	[dop] s	tiempos	n	dop = tiempo ('si el [tiempo] que ya entra fuerte no lo estorva', no. 19)
+17a.7	es	es	r
+17a.7	e n de la s lo s	[en delas los]	u	'es en de las los que mas se ha de trabajar': 'es [una] de las [cosas]'? not read
+17a.7	qve m a s s e ha/te de t r a b a i a r de a c a b a r s e p v e s	que mas se ha de trabajar de acabarse pues	r
+17a.8	[bad]	basta	i	'[bad]ra a sustentar' = bastara
+17a.8	r a a s v s t e n t a r	ra a sustentar	r
+17a.8	al	el	i	bie = el
+17a.9	e x e r c i t o qve es por lo m a s p r i n c i p a l y la qve [title1] [title2]	exercito que es por lo mas principal y la que V. M.	r
+17a.10	[bas]	deve	i	'la que V. M. [bas] mas desear' (deve or puede)
+17a.10	m a s de s e a r y	mas desear y	r
+17b.1	p l <33> ?	[quia] .	n	'quia' + barred stop: switch marker before the cipher (as on f. 17r and f. 41r)
+17b.1	al	el	i	bie = el
+17b.1	[biq]	duque	i
+17b.1	d v r b i n o	de Urbino	r
+17b.1	es de	[es de]	u	'el duque de Urbino [es de] otro exercito': expected 'con el'; not read
+17b.1	[da]	otro	n	da = otro: 'no[da]s' = nosotros (no. 19), 'no hiziesen [otro] fruto' (no. 19)
+17b.1	e x e r c i t o esta e n a r n i y t o d r i t i e r a s el p a t r i m o n i o es	exercito esta en Narni y Todi, tierras del Patrimonio, es	r
+17b.2	[der]	poca	i	'es [der] gente', 'se hallara [der] resistencia'
+17b.2	g e n t e y	gente y	r
+17b.2	[raq]	mi	i
+17b.3	p a r e c e r es	parecer es	r
+17b.3	[baf]	primero	i
+17b.3	qve s a l g a el e x e r c i t o qve s e p r o v e s i e n a la	que salga el exercito que se provea Siena la	r
+17b.4	[dnd]	qual	i
+17b.4	es m v i de v o t a de [title1] [title2] y y en esta	es muy devota de V. M. y en esta	r
+17b.5	[bim]	empresa	i
+17b.5	s e r v i r a	servira	r
+17b.5	qve de con	[que de con]	u	'servira [que de con] mil [cny]': not read
+17b.5	[cip]	mil	i	cip = mil ('[biz] [cip] [ceg]s' = N mil hombres, no. 19)
+17b.5	[cny]	[cny]	u
+17b.5	qve en v e r d a d lo s t e n e m o s a ll e s por t e n e ll a s e g v r a y	que en verdad los tenemos a ellos por tenella segura y	r
+17b.6	?	.	n	stop
+17b.6	y	y	r
+17b.6	[dod]	quando	i
+17b.6	s a l g a	salga	r
+17b.6	al	el	i	bie = el
+17b.7	e x e r c i t o i r a	exercito ira	r
+17b.7	qve l	[que l]	u	'ira [que l] camino': 'por el camino' expected; not read
+17b.7	c a m i no por qve no f a l t a r a n b i t v a ll a s y s e r a p o n e r es p a n t o a	camino porque no faltaran vituallas y sera poner espanto a	r
+17b.8	[car]	[car]	u	'poner espanto a [car]': los florentinos? not decided
+17b.8	y o c a s i o n a	y ocasion a	r
+17b.9	fin s	estos	n	boz = esto
+17b.9	e n e m i g o s qve t e n e m o s	enemigos que tenemos	r
+17b.9	con	tan	n	bar = tan
+17b.9	c e r c a de ha/te n e ll e s ha/te n e r	cerca de hazelles hazer	r
+17b.10	[bny]	[bny]	u	'hazer [bny] un movimiento'
+17b.10	v n m o v i m i e n t o y qve qve s i v e r a n qve s e v a s o b r e	un movimiento y que si veran que se va sobre	r
+17b.11	[cac]	Florencia	i	'se va sobre [cac] creen que iran a socorrella'; 'no tienen gente para defender [cac]'
+17b.11	c r e n qve i r a n a s o c o r e ll a qve lo p v e de s ha/te n e r y s i lo	creen que iran a socorrella que lo pueden hazer y si lo	r
+17b.12	i	s	n	sign t (I or S in the key): 'si los recogeran'
+17b.12	r e c o g e r a n qve p o d r i a s e r qve no	recogeran que podria ser que no	r
+17b.13	?	.	n	stop
+17b.13	p o d r a i r	podra ir	r
+17b.13	al	el	i	bie = el
+17b.13	e x e r c i t o la	exercito la	r
+17b.13	[bog]	buelta	i
+17b.13	de p e r o s a qve s e ha/te ll a r a de s p r o v e i d a por qve	de Perosa que se hallara desproveida porque	r
+17b.14	con s	ellos	n	glyph 'bopt' = ellos
+17b.14	no	no	r
+17b.14	[dab]	tiene	n	'[dab]n gente' = tienen; cf. das 'el exercito que [das]n aca cerca' (no. 19)
+17b.14	n g e n t e p a r a de f e n de	n gente para defender	r
+17b.15	[cac]	Florencia	i
+17b.15	y de x a r g v a r n e c i d a la d i c h a p e r o s a qve es v n a t i e r a el p a t r i m o n i o m v i	y dexar guarnecida la dicha Perosa que es una tierra del Patrimonio muy	r
+17va.2	[bag]	rica	i	'muy [bag] y muy gruesa'
+17va.2	y m v i g r v e s a y la p r i n c i p a l de	y muy gruesa y la principal de	r
+17va.2	[der] de	[der de]	u	'la principal de [der] de pais': der = poca elsewhere does not fit; not read
+17va.2	p a i s qve c i e r t a m e n t e s e t o m a r a	pais que ciertamente se tomara	r
+17va.3	<37>	finalmente	n	<37> = final(mente), as 17a.1
+17va.3	y de x a n d o s e p r o v e i d a s e p v e de	y dexandose proveida se puede	r
+17va.4	s	i	n	sign t read I: 'se puede ir al estado'
+17va.4	r a ll	r al	r
+17va.4	[boq]	estado	i
+17va.4	de v r b i n o y t o m a ll o en	de Urbino y tomallo en	r
+17va.5	al	el	i	bie = el
+17va.5	[dnd]	qual	i
+17va.5	se?	se	r
+17va.5	ha/te ll a r a	hallara	r
+17va.5	[der]	poca	i
+17va.5	r e s i s t e n c i a y p a s e r e n la	resistencia y pasaren la	r
+17va.6	[deh]	Marca	i	'su camino es por la [deh] porque traen su artilleria por agua hasta Ravena' (no. 19)
+17va.6	d o n de no p v e de n f a l t a r v i t v a ll a s y	donde no pueden faltar vituallas y	r
+17va.7	sin	mas	i	bab = mas: 'y de[mas] pasaren', 'y de[mas] tienen el camino' (no. 19)
+17va.7	s e p o d r a v e r lo qve ha/te n e	se podra ver lo que haze	r
+17va.7	al	el	i	bie = el
+17va.7	e x e r c i t o qve esta en lo b a r d i a s i c a m i n a r a e n	exercito que esta en Lombardia si caminara en	r
+17va.8	no	[cnt]	u	glyph 'cnt', not the 'cnz' of no; 'en [cnt] parte se puede esperar': ninguna or otra, not decided
+17va.8	p a r t e s e p v e de e s p e r a r	parte se puede esperar	r
+17va.9	es	[es]	u	'esperar [es] mas ventaja': not read
+17va.9	m a s v e n t a i a por qve es f v e r a el r e i n o y e n p a r t e qve s e g v a r d a	mas ventaja porque es fuera del reino y en parte que se guarda	r
+17va.10	con	como	i	glyph 'bop' = como (also 17vb.4, 17vb.8, 17vb.10)
+17va.10	s i s e e s t v t i e s e	si se estuviese	r
+17va.11	al	el	i	bie = el
+17va.11	e x e r c i t o de n t r o	exercito dentro	r
+17va.11	[ge+]	[ge+]	u	after 'dentro' and before 'y'; also after clear text before 'y piensase' (no. 19); a stop? not read
+17va.11	y s i p e r s e v e r a	y si persevera	r
+17va.11	<37>	r	n	the glyph is ſ (r), not <37>: 'perseverara'
+17va.11	a e n lo de lo n b a r d i a p o d r a s e i r m a s f a c i l m e n t e a s o c o r e ll a	a en lo de Lombardia podrase ir mas facilmente a socorrella	r
+17va.13	[beb]	[beb]	u	'socorrella [beb] porque es mejor el camino'
+17va.13	por qve e s m e i o r e l c a m i n o y m a s a b v n d a n t e de b i t v a ll a s	porque es mejor el camino y mas abundante de vituallas	r
+17va.14	<37>	finalmente	n	<37> = final(mente)
+17va.14	s i no lo s s v i s s e s e n a c o i e r e n	si no los suyços se acogieren	r
+17va.15	[rar]	[rar]	u
+17va.15	p o d r a s e t o m a r a p v n t a m i e n t o	podrase tomar apuntamiento	r
+17va.15	es [bnc]	[es bnc]	u	'tomar apuntamiento [es] [bnc]'; bnc also 'podran llegar [es] [bnc]' (no. 19); not read
+17vb.1	y de	y de	r
+17vb.1	sin	mas	i	bab = mas: demas
+17vb.1	p a s a r e n lo n b a r d i a y	pasaren Lombardia y	r
+17vb.1	es	en	n	glyph bep here = en ('y en todo'); see 17vb.4-8
+17vb.1	t o d o no de x a r e de de n i r a [title1] [title2] qve el e x e r c i t o por lo de a d v e n i r no s e p v e de s o s t e n e r de esta m a n e r a y qve [title1] [title2] p i e n t e	todo no dexare de dezir a V. M. que el exercito por lo de advenir no se puede sostener desta manera y que V. M. piense	r
+17vb.4	con	como	i	bop = como
+17vb.4	por o t r a s l e	por otras le	r
+17vb.4	[det]	he	i
+17vb.4	e s c r i t o y o	escrito y o	r
+17vb.4	es	en	n	bep = en: 'y o en alguna manera de dinero o en hazelles la guerra'
+17vb.4	a l g v n a m a n e r a de	alguna manera de	r
+17vb.5	[dnb]	dinero	i
+17vb.5	o	o	r
+17vb.5	es	en	n	bep = en
+17vb.5	ha/te n e ll e s la g v e r a de la m a n e r a qve s e de v e ha/te n e r de p o n e ll o s e n e l a p r i e t o qve e ll o s la de m a n de n y qve qve c r e a [title1] [title2] qve	hazelles la guerra de la manera que se deve hazer de ponellos en el aprieto que ellos la demanden y que crea V. M. que	r
+17vb.8	es	en	n	bep = en: 'que en tantas faltas como ay'
+17vb.8	t a n t a s f a l t a s	tantas faltas	r
+17vb.8	con	como	i	bop = como
+17vb.8	a i e n e s t e e x e r c i t o y t a n t a s m i s e r i a s e s i n p o s i b l e qve e l s e r v i c i o de [title1] [title2] s e ha/te g a	ay en este exercito y tantas miserias es imposible que el servicio de V. M. se haga	r
+17vb.10	con	como	i	bop = como
+17vb.10	s v s f i e l e s v a s a ll o s de s e a m o s y	sus fieles vasallos deseamos y	r
+17vb.11	?	.	n	stop before the clear close
