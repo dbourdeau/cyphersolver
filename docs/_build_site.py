@@ -232,6 +232,11 @@ PAGES = [
          blurb='Ten lines of invented signs in TNA SP 106/5, catalogued on DECODE as King Charles I to Boswell, 1628, and undeciphered. Mark Woodard read the monoalphabetic cipher on DECODE in 2021. Here: two of his three open signs read, the sender identified from the endorsement as Sir Ralph Boswell, and the letter dated to 15 December 1627.',
          quote='&ldquo;our greate Duke returned from Plimmouth to Whitehall, contrary to the opinion of very many&rdquo;',
          rights='The National Archives, Kew, via DECODE R413'),
+    dict(slug='r1862', label='Rome 1628', year='1628', y=1628.33, place='Rome &rarr; Venice', st='partial', stt='read in part',
+         title='A Venetian ambassador at Rome to the Doge, 29 April 1628 &mdash; read in part',
+         blurb='DECODE R1862 (ASVe Busta 27 f. 354), catalogued as an anonymous ciphered letter from Rome with no transcription and nothing known of its contents. Its cipher is the one in the sibling record R1874, which is imaged together with the chancery&rsquo;s own decipherment; aligning that decipherment to its cipher by soft-EM rebuilt the key &mdash; a syllabary grid in which the prefix gives the vowel and the last two digits the consonant &mdash; and it reads this despatch unchanged. Cardinal Barberini had asked twice whether Palmanova was fortified and the Pontebba pass secured; the ambassador pressed that the Pope go in person as legate to settle Mantua and Savoy. About 84% of the groups read; page 2, lines 18&ndash;28 and twenty word-code tokens are still open.',
+         quote='&ldquo;se Palma si era ben fortificava, [&hellip;] o presidio aveva, se il passo della Pontebba si era ben assicurato&rdquo;',
+         rights='Archivio di Stato di Venezia, via DECODE R1862 (images not reproduced)'),
     dict(slug='r1874', label='Mocenigo 1628', year='1628', y=1628.8, place='Madrid &rarr; Venice', st='found', stt='read at the time',
          title='Mocenigo to the Doge, Madrid 1628 &mdash; read at the time',
          blurb='DECODE R1874, catalogued as an undated letter of unknown sender and recipient (ASVe Busta 30 f. 174), is Alvise Mocenigo&rsquo;s despatch from Madrid to the Doge and Senate of 26 October 1628, <em>CSP Venice</em> 21 no. 515. The record holds the chancery&rsquo;s decipherment of the whole letter and a second, separately enciphered copy. Paragraph marks and the three &ldquo;conte di Olivares&rdquo; group runs tie the decipherment to the numerical syllabic cipher; the key was not rebuilt.',
@@ -523,20 +528,6 @@ PAGES = [
          blurb='DECODE catalogues RAH Salazar A-31 ff. 128&ndash;131 as a <em>Non-decrypted</em> letter of Luis Fern&aacute;ndez from Rome, April 1424, and it was taken up as the longest ciphertext before 1450. The date is a typo: the letter is the Duke of Sessa&rsquo;s despatch of 18 April 1524 and its duplicate, skipped by Bergenroth. Eight sibling letters in the same cipher carry the court&rsquo;s decipherment; about 110 code groups and the alphabet were rebuilt from them by token tiling and template matching. The cipher now reads at the word level: the Pope&rsquo;s secretary withholds the Bishop of Veroli&rsquo;s letters, and Sessa asks the Pope for money for the Swiss. Four groups are attested nowhere and stay open.',
          quote='&ldquo;habl&eacute; en la ora a Su Santidad a pedirle que haya provisi&oacute;n &hellip; pues tiene color para ello&rdquo;',
          rights='Manuscript: Real Academia de la Historia, via DECODE'),
-    # Unpublished 22 Sept 2026 at George Lasry's request: he and a historian have deciphered and analysed these
-    # letters for a publication of their own. The page is kept in unpublished/. Do not republish without his word.
-    # dict(slug='fr3029f134', label='Letter to the King (fr. 3029 f. 134)', year='c. 1521?', y=1521.0, place='unknown &rarr; the King of France', st='solved', stt='read',
-    #      title='A cipher letter to the King, BnF fr. 3029 f. 134 &mdash; read with Lasry&rsquo;s key',
-    #      blurb='BnF fr. 3029 ff. 134&ndash;135 (DECODE R3670), an unsigned cipher letter addressed &ldquo;Au Roy&rdquo;, catalogued as not deciphered. George Lasry broke the volume&rsquo;s cipher in 2023, but this letter had not been read. Read here in full with his key unchanged: a war to recover costs against the lands of the Church under the defensive league, the Venetian ambassador, the see of Toledo given to the bishop of Palencia with pensions to three cardinals, and a rumoured poisoning. Only nine name-sign tokens stay open; the date (DECODE 1530, content nearer 1521) is not settled.',
-    #      quote='&ldquo;l&rsquo;arcevesch&eacute; de Tolete avoit est&eacute; donn&eacute;e a l&rsquo;evesque de Palance&rdquo;',
-    #      rights='Manuscript images: Biblioth&egrave;que nationale de France / Gallica'),
-    # Unpublished 22 Sept 2026 at George Lasry's request: he and a historian have deciphered and analysed these
-    # letters for a publication of their own. The page is kept in unpublished/. Do not republish without his word.
-    # dict(slug='fr3092', label='Duprat at Calais 1521', year='1521', y=1521.8, place='Calais &rarr; Francis I', st='solved', stt='read',
-    #      title='Duprat at Calais, 1521: three cipher memoirs, BnF fr. 3092 &mdash; read with Lasry&rsquo;s key',
-    #      blurb='Three &ldquo;M&eacute;moires chiffr&eacute;s&rdquo; in BnF fr. 3092 (DECODE R3699&ndash;R3701), catalogued as undeciphered despatches of an unknown sender of 1520. Read in full with George Lasry&rsquo;s 2023 fr. 3029 key, unchanged; only one had been read before. They are the French commissioners&rsquo; reports from the Calais conference of autumn 1521: Chancellor Duprat on Wolsey back from Flanders, an hour alone in Wolsey&rsquo;s wardrobe, Gattinara, and the duke of Albany&rsquo;s secret voyage to Scotland. Two of Lasry&rsquo;s blank name signs are identified from context: &ldquo;roy&rdquo; and the Emperor.',
-    #      quote='&ldquo;m&rsquo;a retire en sa garderobe, ou avons demeure long temps tous seulz&rdquo;',
-    #      rights='Manuscript images: Biblioth&egrave;que nationale de France / Gallica, via DECODE'),
     dict(slug='visconti1528', label='Visconti 1528', year='1528', y=1528.66, place='Campo a Landriano &rarr; the grand ma&icirc;tre', st='partial', stt='read in part',
          title='Galeazzo Visconti to Montmorency from the camp at Landriano, 30 August 1528',
          blurb='BnF fr. 3034 f. 154 (DECODE R4223), catalogued as from an unknown sender and not deciphered. The cipher is Galeazzo Visconti&rsquo;s, and George Lasry had published its key in 2023 but not the text. Read here in part, 1247 of 1337 signs, with his key extended on the letter: a council of war at Landriano on marching to Milan or Pavia, which Visconti lost to a scheme of &ldquo;Francesco&rdquo; and the Venetian officers. Two signed sibling letters show the crossed sign is the figure 4, so the name codes 48, 4&theta; and 4r are numbered codes with no surviving key.',
@@ -1235,6 +1226,7 @@ IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch o
 IMAGES['kaa4591'] = None
 IMAGES['kaa4591b'] = None
 IMAGES['sperantio1534'] = None
+IMAGES['r1862'] = None
 IMAGES['r1874'] = None
 IMAGES['r1212'] = None
 IMAGES['r1854'] = None

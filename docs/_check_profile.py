@@ -100,6 +100,7 @@ def check(folder, quiet=False):
         ln = d.get('length', {}) if isinstance(d, dict) else {}
         if ln.get('measured') is True:
             if not ln.get('file'): errors.append(f'documents[{i}].length: measured is true but no file is named')
+            elif ln['file'].startswith('withheld:'): pass    # file kept out of the public repo; count stands as measured
             elif not (ROOT / folder / ln['file']).exists(): errors.append(f'documents[{i}].length.file: {ln["file"]} not found')
     if not quiet:
         print(f'{folder}: profile.json')

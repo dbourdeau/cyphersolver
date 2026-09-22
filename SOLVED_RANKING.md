@@ -578,3 +578,5 @@ Cipher letters to Gianfrancesco Gonzaga, 1428–30 provisional score: 0.25×5 + 
 Vatican Challenge Part 5 (Farnese → Poggio, 1542) provisional score: 0.25×1 + 0.25×3 + 0.20×1 + 0.10×3 + 0.10×4 + 0.10×4 = **2.30** (p125): solved by Simon Klee (Sept 2026); reviewed here, where seven sessions had not read it.
 
 Silentium Dei (pseudo-Arndt, 1798) provisional score: 0.25×1 + 0.25×1 + 0.20×2 + 0.10×3 + 0.10×2 + 0.10×4 = **1.80** (p126): a book cipher with its key on p. 83; the work was finding the book behind a misdescribed DECODE record and reading every passage, not breaking it.
+
+Venetian ambassador at Rome to the Doge, 29 April 1628 provisional score: 0.25×4 + 0.25×3 + 0.20×3 + 0.10×3 + 0.10×2 + 0.10×3 = **3.15** (p127): an unread syllabary broken by rebuilding its key from a sibling record's contemporary decipherment, by EM alignment rather than by hand; the letter reports the papal Secretary of State probing Venice's frontier defences in the first weeks of the Mantuan succession war. Read in part (~84%): one block of page 2 and the word codes are open.
