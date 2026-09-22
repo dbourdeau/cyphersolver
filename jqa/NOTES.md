@@ -1,10 +1,10 @@
 # JQA at St Petersburg: the despatches are NOT in the Armstrong code; his own code rebuilt, and Ford's
 # "not decyphered" passage of No. 88 (25 June 1812) read
 
-Status: read (22 Sept 2026, third pass). No. 88, measured with `measure.py`: **375 of 390 code groups read as sense
-(0.962)**; the nine lines Ford left out 129/133 (0.970), the remainder 246/257 (0.957). 382/390 groups have a value;
-355/390 (0.910) without the grade-I values. Still open: 7 groups cut by the microfilm gutter (needs the original),
-4 groups where JQA's own encoding does not fit the sense (im-pas-sion-ed for 'impaired'), and 4 single code groups.
+Status: read (22 Sept 2026, third pass). No. 88, measured with `measure.py`: **376 of 390 code groups read as sense
+(0.964)**; the nine lines Ford left out 129/133 (0.970), the remainder 247/257 (0.961). 382/390 groups have a value;
+356/390 (0.913) without the grade-I values. Still open: 7 groups cut by the microfilm gutter (needs the original),
+4 groups where JQA's own encoding does not fit the sense (im-pas-sion-ed for 'impaired'), and 3 single code groups.
 The second pass (earlier on 22 Sept) stood at 0.910; see section 5.
 
 ## 1. The premise, checked
@@ -85,7 +85,7 @@ wants *impaired*. Probably JQA's own encoding slip; counted as not read.
 Frame **0207** (left leaf): 13 lines of code, then clear sentences (Manifestos of both parties expected; Peace with
 Turkey signed a third time; "It is not General Kutuzoff but Count Rostopchin who is appointed Governor, civil and
 Military, of Moscow"), then 5 more lines. Groups: `rem88.txt` (257 groups, 7 with digits lost in the gutter).
-249 valued, 246 read as sense:
+249 valued, 247 read as sense:
 
 > If this proposition has in any form been disclosed to the Russian government, it was certainly neither unreasonable
 > nor im-[mod(erate)] nor inconsistent with a system rigorously and [in]-[fl]-ex-[ib]-ly de-fen-sive (underlined), to
@@ -96,13 +96,13 @@ Military, of Moscow"), then 5 more lines. Groups: `rem88.txt` (257 groups, 7 wit
 > [sa]-id - such a proposal as France had never thought of making to Russia even after the [bat]-tle of Fri-ed-la-nd.
 > [clear text] ... an army of reserve is forming there, and it is [...] probab-le that if great success on the, on the
 > side of the French should mark the commencement of the war, the Emperor Napoleon will at-[tem]-p-t to pene-t-rate
-> directly to that centre of the em-[pire] the [along] the side-{res} of the Baltic.
+> directly to that centre of the em-[pire] than [along] the sho-res of the Baltic.
 
 The ambassador is Lauriston, the French ambassador; Kurakin's note is the Russian ambassador's demand at Paris for the
 evacuation of Prussia (April 1812), which Napoleon treated as a declaration of war. "Even after the battle of
 Friedland" (June 1807, before Tilsit): France had never proposed evacuating Prussia even when Russia was beaten.
 
-## 5. Third pass (22 Sept 2026): 0.910 -> 0.962
+## 5. Third pass (22 Sept 2026): 0.910 -> 0.964
 
 New sources: the clerk's interlinear decodes on 0047, 0048 (rest), 0210-0211 and 0247 (`clerk_0047.tsv`,
 `clerk_0048b.tsv`, `clerk_0210_0211.tsv`, `clerk_0247.tsv`, 560 pairs; `clerk_notes_pages2.md`), and coded blocks of
@@ -121,7 +121,7 @@ What moved, with evidence:
 | rem88 l.11 `426 699 1535+` | ne-{at}-{al} | [negotiate] at all | 1535 with the doubling mark = all; 426 slot 423 need < 426 < 428 nei (I) |
 | rem88 l.13 `1309 888 1576 996 520 1453 416` | {...} long of {...}-ed la-nd | [bat]-**588** tle(d) of Fri-ed-la-nd | 996 = fri (C, No. 95 fri-end-ship x2, a fri-end x2); 1453 la, 416 nd (Fin-la-nd); the second group is 588 (the 5 has its top bar), 588 = tled (set-tled, C); 1309 slot 1308 bas < 1309 < 1310 be (I) |
 | rem88 l.16 `220 586 1384 1416` | {proper le the if} | probab-le that if | 220 = probab (clerk 0047R19 'it is probab-le that', 0190L6, 0190R26; the lone 0184R11 'proper' is the outlier); the third group is 1384 (4 over 5) |
-| rem88 l.18-19 `539 927 ... 1540` | em-{927} the {ambass} | em-[pire] the [along] | 927 context only (I); 1540 slot 1537 alliance < 1538 ally < 1540 (I) |
+| rem88 l.18-19 `539 927 1383 1540 1385 1097 748` | em-{927} the {ambass} the side-{res} | em-[pire] than [along] the sho-res of the Baltic | 927 context only (I); 1540 slot 1537 alliance < 1538 ally < 1540 (I); 1383 than and 1097 sho are digits JQA overwrote (5/3, 9->7; M); 748 res (M) |
 
 ## Remaining gaps
 
@@ -130,7 +130,6 @@ What moved, with evidence:
 - rem88 l.5 1508 before [pre]-liminary - blocker: open-codes; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs
 - rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: open-codes; no occurrence in any decoded frame or Ford block read
 - rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: open-codes
-- rem88 l.19 748 after 1099 side ('the side-res of the Baltic') - blocker: open-codes; 748 re/res (M); the group before is 1099 (two looped 9s), not 1097 sho
 
 ## Escalation
 
@@ -139,7 +138,7 @@ What moved, with evidence:
 - [x] known-keys: Armstrong's THE=972 table tested and ruled out (18 Sept); Pinkney's London code not found in print or online
 - [x] print: Ford 4:357-358 prints both passages as not decyphered; no other printed reading found; JQA's diary (Primary Source Cooperative) confirms the two strokes at Wilna
 - [x] key-rebuild: table rebuilt to 1,070 numbers (`consolidate.py` + `overrides.tsv`, every override with its reason); alphabetical-slot bracketing (`slots.py`, `slot_inferences.tsv`, grade I)
-- [x] retry: No. 88 re-read against the image a third time: 792 (not 492), 1061 (not 1081), 588 (not 888), 1384 (not 1385) corrected; 570 and 1099 confirmed
+- [x] retry: No. 88 re-read against the image a third time: 792 (not 492), 1061 (not 1081), 588 (not 888), 1384 (not 1385) corrected; 570 confirmed; 1097 and 1383 read as JQA's own overwritten digits
 
 ## Next
 
