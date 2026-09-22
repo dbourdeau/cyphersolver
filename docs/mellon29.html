@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frater Elias&rsquo;s secret names (c. 1525) &mdash; Attempted</title>
+<meta name="description" content="Beinecke Mellon MS 29 (DECODE R2877), catalogued as a ciphered letter of Elias of Cortona. It is actually an alchemical codex of about 1525. Its Italian prologue hides the twelve &ldquo;spirits&rdquo; (zodiac cover names) and two recipes for silver and gold in about 234 letters of cipher. A later owner copied the cipher onto the pastedown without reading it. Monoalphabetic, homophonic, progressive, Vigen&egrave;re and Alberti-disk attacks against Italian and Latin all failed. It stays unread and may be invented pseudo-text.">
+<link rel="stylesheet" href="style.css?v=20260921e">
+<meta name="date" content="2026-09-22">
+<meta name="last-modified" content="2026-09-22">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="swieten1757.html"><span class="st solved">read</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">read</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li><li><a href="harley7001.html"><span class="st partial">read in part</span><b>Reade 1641</b><span class="yr">1641</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">95</span><b>Solved</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">53</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">26</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">32</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 207 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <a href="catalogue.html">The Unsolved Catalogue</a>
+    <a href="atlas.html">Atlas</a>
+    <a href="keys.html">Key web</a>
+    <a href="secret.html">Secret letter</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <a class="ext" href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+<div class="cipherstrip"><span>Ariete se chiama srcon pggy</span><span>Leo se chiama rqlpsonspyh &szlig;</span><span>piglia i nomi del signor: ylior lay gnotrh ghplr agksro</span></div>
+<p class="kicker">Pseudo-Elias of Cortona &middot; alchemical codex, North Italy &middot; letter cipher of an unknown kind &middot; c. 1525 &middot; attempted, not read</p>
+<h1>The secret names in Frater Elias&rsquo;s <i>Lumen luminum</i></h1>
+<p class="sub">Beinecke Rare Book and Manuscript Library, Mellon MS 29 (DECODE R2877). This is not a letter. It is a small Venetian (?) alchemical book, ascribed to Brother Elias, St Francis&rsquo;s successor, and falsely dated 1315. In its Italian prologue the twelve zodiac signs stand for twelve &ldquo;spirits&rdquo;, and what each of them &ldquo;is called&rdquo; is written in cipher. So are the ingredients of a recipe for gold and one for silver.</p>
+<p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-22">22 September 2026</time></p>
+<div class="seal stuck" aria-hidden="true"><span>not read</span></div>
+</section>
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-book">The book and where the cipher is</a><a href="#the-cipher">The cipher text</a><a href="#what-was-tried">What was tried</a><a href="#what-it-is">What it probably is, and what would finish it</a><a href="#sources">Sources</a></nav>
+<div class="callout"><strong>Summary.</strong> The catalogue entry, taken from DECODE, described a ciphered letter from Elias of Cortona (d. 1253) to an unknown recipient, dated 1525, in &ldquo;graphic signs&rdquo;. The images show something else: a paper codex of the <i>Lumen luminum</i>, copied in North Italy about 1525, with the cipher confined to the Italian prologue on ff. 1v&ndash;2v. A late sixteenth-century owner recopied it on the front pastedown. The cipher is about 234 lower-case letters with three scribal signs. It fills a twelve-line table giving what each zodiac sign &ldquo;se chiama&rdquo; (is called), and the ingredient lists of a Sol recipe and a Luna recipe. The recipes use the zodiac names in clear, so the table should be the key to the cover names. The letter statistics look language-like (IC 0.075), but no simple system produces Italian or Latin. Monoalphabetic, homophonic, Caesar and Trithemius shifts, Vigen&egrave;re, an Alberti cipher disk with an unknown ring, and a word-pattern solver over some 170 substance names were all tried. A control shows that the substitution solver would have broken a real Italian ingredient list of this size. The text stays unread. The shapes of its words suggest invented &ldquo;secret names&rdquo; as much as a cipher. The Beinecke catalogue already suspected charlatanism.</div>
+
+<h2 id="the-book"><span class="num">01</span> The book and where the cipher is</h2>
+<p>Mellon MS 29 has 33 leaves, written in red and black in an italic hand. It opens with an Italian prologue (ff. 1r&ndash;2v). Then comes <i>Liber alkimistalis quem frater Elia edidit apud Imperatorem federicum &hellip; Incipit liber lumen luminum traslatus de sarracenico ac hebraico in latinum</i> (ff. 3r&ndash;36r). Last are a Latin&ndash;Arabic synonym list and some Italian recipes (ff. 36r&ndash;37v). Every leaf was checked. The Latin treatise and the recipes are in clear, with only the usual &#658; and &#8468; weight signs. The cipher is on four pages only.</p>
+<ul>
+<li><b>f. 1r</b>, clear: the book was &ldquo;experimentado nel 1315&rdquo;. Its medicine serves the Sun and the Moon, whose names the author has hidden in two figures, a star and a reversed C with a p. Five bodies make sun and moon: Saturn, Jupiter, Mars, Venus and Mercury.</li>
+<li><b>f. 1v</b>, clear: the medicines, &ldquo;ouer nomi deli spiriti che lauano purgano et mondificano li corpi&rdquo;, are Aries, Taurus, Gemini and the rest of the twelve signs. Then comes the <b>Sol recipe</b>: &ldquo;Primo nel nome de dio piglierai:&rdquo; followed by three lines of cipher, then in clear &ldquo;Dapoi pista in mortaro et tritale in poluere minutissima &hellip; agiongerai &#658; che dir onze de leone&rdquo;.</li>
+<li><b>f. 2r</b>: the <b>Luna recipe</b>, &ldquo;piglia i nomi del signor.&rdquo;, followed by three lines of cipher that contain the clear words <i>in</i> and <i>cioe</i>. It goes on in clear: &ldquo;&hellip; et scorpio et tauro et gemini piglia &#658; cioe drama 1&rdquo;.</li>
+<li><b>f. 2v</b>: the <b>zodiac table</b>, &ldquo;Ariete se chiama &hellip;&rdquo; for all twelve signs.</li>
+<li><b>Front pastedown</b>, a later hand: the Luna recipe and the table copied again, with many variants, among clear notes in Italian and Latin. The notes gloss the planets (&ldquo;sol significa oro, luna significa argento, saturno significa piombo &hellip; mercurio significa argento vivo&rdquo;) but not the cipher.</li>
+</ul>
+<figure><img src="mellon29_lead.jpg" alt="f. 2v: twelve lines, each a zodiac sign, the words se chiama, and a string of cipher letters" loading="lazy"><figcaption>f. 2v, the table: &ldquo;Ariete se chiama srcon pggy&rdquo;, &ldquo;Taurus se chiama lrqrlrpnqsr7g&rdquo; and so on to &ldquo;Pissis se chiama 7<sup>t</sup> by hqph yv&rdquo;.</figcaption></figure>
+
+<h2 id="the-cipher"><span class="num">02</span> The cipher text</h2>
+<p>The transcription is in <code>mellon29/transcription.txt</code>. It uses 3 for &#658;, 7 for the et-sign, 9 for the con-sign and B for &szlig;. Q with a straight tail is kept apart from looped g. Agnieszka Rec (2014) quotes Cancer and Scorpio as &ldquo;irgp&int;hk&int;cel&rdquo; and &ldquo;prk&int;yq&int;7gp&rdquo;, which agrees on the long s and the et-sign. The q/g split is not certain, so every test was run with and without it.</p>
+<figure><img src="mellon29_sol.jpg" alt="f. 1v: Primo nel nome de dio piglierai, then two lines of cipher words" loading="lazy"><figcaption>f. 1v, the Sol recipe: &ldquo;piglierai: o&int;or &middot; Rerpij leor sglgr&#658; &middot; hshr hyor larohgt gsg yh&#658;y solir t&#658;s &middot; noyp. Dapoi pista im mortaro &hellip;&rdquo;</figcaption></figure>
+<figure><img src="mellon29_luna.jpg" alt="f. 2r: Ciot piglia i nomi del signor, then two lines of cipher words separated by points" loading="lazy"><figcaption>f. 2r, the Luna recipe: &ldquo;piglia i nomi del signor. ylior. lay. gnotrh. ghplr. agksro. in &#658;shuk&int;&int;. cioe gpr. &int;grghs. hr. hqih&#658;. y&#658;. set. V&#658; Vs. sn. qrpt.&rdquo;</figcaption></figure>
+<table>
+<tr><th>Sign</th><th>&ldquo;se chiama&rdquo;</th><th>Sign</th><th>&ldquo;se chiama&rdquo;</th></tr>
+<tr><td>Ariete</td><td><code>srcon pggy</code></td><td>Libra</td><td><code>9 qsgqxqkb3</code></td></tr>
+<tr><td>Taurus</td><td><code>lrqrlrpnqsr7g&#771;</code></td><td>Scorpio</td><td><code>prk syqs7qp</code></td></tr>
+<tr><td>Gemini</td><td><code>qrqrsipqsop 3g</code></td><td>Sagitarius</td><td><code>xi<sup>n</sup> ak 7 sqol</code></td></tr>
+<tr><td>Cancer</td><td><code>irqpshkscel</code></td><td>Capricorno</td><td><code>7<sup>n</sup> qqpypt7r</code></td></tr>
+<tr><td>Leo</td><td><code>rqlpsonspyh B</code></td><td>Aquario</td><td><code>qk sqrongya</code></td></tr>
+<tr><td>Virgo</td><td><code>pqyqpqs. q. st</code></td><td>Pissis</td><td><code>7<sup>t</sup> by hqph yv</code></td></tr>
+</table>
+<p>The index of coincidence is 0.075 in the table and 0.075 in the recipe lists, a language-like value. The two parts differ, however. <i>q</i> is 17% of the table and under 2% of the lists, and <i>h</i> 3% against 10%. Sukhotin&rsquo;s vowel test picks <i>q</i> as the main vowel in one part and <i>r</i> in the other. Some shapes are very hard to get from real words under a fixed substitution: Virgo&rsquo;s <code>pqyqpqsqst</code> has <i>q</i> in every second place, and Taurus and Gemini both begin <code>?r?r</code> (<code>lrqrlr</code>, <code>qrqr</code>).</p>
+<figure><img src="mellon29_pastedown.jpg" alt="Front pastedown: a later hand copies the Luna recipe with its cipher words" loading="lazy"><figcaption>Front pastedown, late sixteenth century: &ldquo;Se tu vorai far argento perfettissimo &hellip; di al nome di iddio ylior lay girrt h g kyli gixkso vshu Rs si aptrugr sgaghs hr hy yh&#658; y&#658;sot a&#658; vssugint&rdquo;. It is a looser copy of f. 2r, not a decipherment.</figcaption></figure>
+
+<h2 id="what-was-tried"><span class="num">03</span> What was tried</h2>
+<ul>
+<li><b>Simple substitution</b> by annealing with the <code>lang/</code> 4-gram models (Italian 1490&ndash;1620, modern Italian, Latin). Runs were made with and without word division, with q and g split and merged, and with the table and lists together and apart. The best was &minus;4.0 per letter, which is gibberish. <b>Control:</b> a 206-letter Italian ingredient list (&ldquo;sale armoniaco onze una, argento vivo &hellip;&rdquo;) under a random key comes out at &minus;2.6 and nearly word-perfect. A simple substitution of Italian would have been found.</li>
+<li><b>Homophonic</b> (many letters for one): gibberish.</li>
+<li><b>Caesar and Trithemius progressive shifts</b> for each entry, over five alphabets (with &#658; = z and 7 = &amp;), steps 0, &plusmn;1 and &plusmn;2: nothing.</li>
+<li><b>Vigen&egrave;re</b>, periods 2&ndash;7, with the key running or restarting at each entry: nothing beyond overfitting.</li>
+<li><b>Reversed words; every other letter a null</b>: nothing.</li>
+<li><b>Alberti&rsquo;s cipher disk.</b> The cipher letters include <i>k</i>, <i>y</i>, <i>h</i> and an et-sign, and two capitals (<i>R</i>, <i>V</i>) sit inside the runs. That is how Alberti&rsquo;s movable lower-case ring and index capitals look. His published ring was tried on each segment. Then an unknown ring was annealed together with a separate setting for each of 19 segments. Nothing read, even with that much freedom.</li>
+<li><b>Word patterns</b> against about 170 Italian names of salts, metals, minerals, numbers and weights, with a consistent key required across the table: no fit. Only one name, <i>cristallo</i>, even matches Ariete&rsquo;s letter pattern.</li>
+</ul>
+
+<h2 id="what-it-is"><span class="num">04</span> What it probably is, and what would finish it</h2>
+<p>If the strings are a real cipher, it is a private system with changing alphabets or whole-name code words. About 234 letters in fourteen short units are too few to rebuild such a system without a clear copy. The alternative fits the book as well. The strings may be invented &ldquo;names&rdquo; that look like a secret to a buyer: the book is credited to the Franciscan general, backdated by two centuries, bound under an IHS stamp, and says it hides even the names of Sun and Moon in &ldquo;figures&rdquo;. The Beinecke catalogue description already suggests &ldquo;the intention to deceive a pious but gullible devotee&rdquo;. Rec (2014) called the table a code and left it aside. The later owner who copied it onto the pastedown could not read it either. Another manuscript of this Italian <i>Elias</i> prologue with the recipes in clear would settle it. None was found.</p>
+
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/mellon29.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">05</span> Sources</h2>
+<ul>
+<li>Beinecke Rare Book and Manuscript Library, Mellon MS 29, <i>Lumen luminum, etc.</i>, full colour images at <a href="https://collections.library.yale.edu/catalog/17388793">Yale Digital Collections</a> (front pastedown and ff. 1r&ndash;2v are images 2&ndash;6). The same images are on DECODE, record <a href="https://de-crypt.org/decrypt-web/RecordsView/2877">R2877</a> (login).</li>
+<li>Beinecke Library, <a href="https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.mell029.htm">catalogue description of Mellon MS 29</a>, Beinecke pre-1600 manuscripts.</li>
+<li>Agnieszka Rec, &ldquo;Ciphers and Secrecy Among the Alchemists: A Preliminary Report&rdquo;, <a href="https://societasmagica.org/userfiles/files/Newsletters/docs/SMN_Fall_2014_Issue_31.pdf"><i>Societas Magica Newsletter</i> 31</a> (Fall 2014), note 8.</li>
+<li>Paolo Galiano, &ldquo;I codici manoscritti di Frate Elia&rdquo;, Simmetria Institute (quotes the prologue from the Beinecke description); ed., <i>Lumen luminum ad Fredericum imperatorem</i> (Simmetria, 2021), not seen.</li>
+</ul>
+<p class="muted">Transcription, solver scripts, notes and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/mellon29"><code>mellon29/</code></a>.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Beinecke Rare Book and Manuscript Library, Yale University (public domain images)</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="egmond.html" rel="prev">&larr; Charles of Egmond 18 July (?) · year unknown</a><a href="raince.html" rel="next">Raince 1526 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="solve-replay.js?v=20260921e" defer></script>
+<script src="zoom.js?v=20260921e" defer></script>
+<script src="site.js?v=20260921e"></script>
+</body>
+</html>

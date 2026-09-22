@@ -1,0 +1,169 @@
+{
+ "schema_version": 1,
+ "target": "mellon29",
+ "title": "Pseudo-Elias of Cortona, Lumen luminum, cipher recipes and zodiac table, North Italy c. 1525 (Beinecke Mellon MS 29; DECODE R2877)",
+ "documents": [
+  {
+   "id": "R2877",
+   "shelfmark": "Beinecke Rare Book and Manuscript Library, Mellon MS 29, ff. 1v-2v and front pastedown; DECODE R2877",
+   "date": "c. 1525",
+   "year": 1525,
+   "country": "Italy",
+   "route": "unknown",
+   "language": "unknown",
+   "pages": 4,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the manuscript (the later pastedown copy is unglossed), in the Beinecke catalogue, in Rec 2014 or in Galiano's articles."
+   },
+   "length": {
+    "tokens": 234,
+    "distinct": 24,
+    "unit": "letters",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Yale Digital Collections IIIF, canvases 17388795-17388799 (full resolution crops)",
+    "image_quality": "good",
+    "notes": "Sol recipe list (f. 1v), Luna recipe list (f. 2r) and 12-entry zodiac table (f. 2v); q/g distinction uncertain (Rec 2014 reads g where this transcription has q in two entries). Scribal signs kept as 3 (ʒ), 7 (et-sign), 9 (con-sign), B (ß). The pastedown copy is recorded but not counted. 'in' and 'cioe' are clear words inside the f. 2r list and are included in the count."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Letter strings with a few scribal signs, standing for the substances behind twelve zodiac cover names and for two recipe lists; not simple substitution, possibly polyalphabetic, a whole-name code, or invented pseudo-text.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 27,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none known"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "DECODE R2877 Non-decrypted; Rec 2014 (Societas Magica Newsletter 31, n. 8) calls it a code and does not solve it",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Selected the target from the catalogue and set the goal; no other input.",
+  "tools": [
+   "Yale IIIF image download",
+   "lang/ n-gram models (it-modern, it-cinquecento, la)",
+   "simulated-annealing substitution solvers",
+   "Vigenere and progressive-shift search",
+   "Alberti-ring annealer",
+   "word-pattern solver"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Downloaded all 69 Yale IIIF images of Mellon MS 29 and full-resolution crops of the cipher lines; checked DECODE R2877 (same images, no transcription, no key).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Beinecke catalogue description, Rec 2014 (Societas Magica Newsletter 31), Galiano's articles on Elias' alchemical codices, general web search for the Italian prologue.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Located the cipher (ff. 1v, 2r, 2v and the pastedown copy; ff. 3r-37v checked, clear) and transcribed the 234-letter corpus with its scribal signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "statistics",
+   "what": "IC 0.075 in both sections (language-like), but the zodiac table and the recipe lists have different letter profiles (q 17% vs <2%, h 3% vs 10%); Sukhotin puts q as the main vowel in one and r in the other.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "One-to-one monoalphabetic annealing against Italian and Latin, with and without word division, q/g split and merged, sections together and apart: best -4.0 per char (gibberish).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "A synthetic 206-letter Italian ingredient list under a random key is recovered by the same solver at -2.6 per char, so a simple substitution of Italian would have been found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Homophonic (many-to-one) annealing; Caesar and Trithemius progressive shifts per entry over five alphabets; Vigenere periods 2-7 restarting or running; reversed words; alternate-letter nulls.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "Alberti cipher disk (lowercase ring with k, y, h, &; capitals R and V inside the runs as index letters): Alberti's published ring per segment, then an unknown ring with 19 per-segment offsets annealed jointly.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Word-pattern solver over ~170 Italian substance, number and weight words: no consistent key; Virgo 'pqyqpqsqst' and the 'qrqr'/'lrqrlr' shapes fit no substance name.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "ciphertext.txt: no letter given a value",
+  "verification": [
+   "none"
+  ],
+  "key": "none",
+  "notes": "Attempted, closed unread. Not a letter: an alchemical codex; the cipher hides the substances behind twelve zodiac cover names and two recipe lists. Not simple substitution; no key, clear copy or print decipherment known; possibly invented pseudo-text (the Beinecke catalogue's 'hint of charlatanism').",
+  "gaps": [
+   {
+    "item": "zodiac table, f. 2v (12 entries)",
+    "blocker": "no-key-material",
+    "detail": "not simple substitution; no key or clear copy known"
+   },
+   {
+    "item": "Sol and Luna recipe lists, ff. 1v and 2r",
+    "blocker": "no-key-material",
+    "detail": "about 115 letters, too short for a polyalphabetic attack without a key"
+   }
+  ]
+ }
+}
