@@ -109,3 +109,8 @@ Somogyi's numbers and of 267 with the clear extract 268 gives glyph → value.
   "de insolente, intolerabile", "sopra la dote". Unidentified signs left: q^s+x̄ (a place-name nomenclator?),
   ♀, a capital-E sign, a wavy null. Both agents found the glyph-box line assignment unreliable in the lower half
   of pp. 2–3 — read from the plates directly next time.
+
+## Shelfmark fix (19 Sept 2026)
+
+The Vestigia record of 2831 (`vestigia/doc2831.json`, `archive_ref`) gives **Sforzesco, Potenze estere, Ungheria,
+cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. profile.json corrected.

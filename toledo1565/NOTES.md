@@ -118,3 +118,14 @@ Searching *carta cifrada Toledo* limited to 1565 returns exactly one García de 
 `python decode.py` prints the decode of `transcription.txt`; `python render.py` rewrites `reading_raw.md`.
 The working crops are not kept in the repo: regenerate them from `img/` with a crop-and-upscale of the
 region you want (2.5–5× LANCZOS on a grayscale conversion is what the figures were read at).
+
+## Companion letter no. 249 uses the same key (19 Sept 2026)
+
+PARES search `texto=Garcia de Toledo Malta`, 1565, lists EST,LEG,1394,249 (record 3576586, dbCode 27138937, four
+images): "Duplicado de carta de García de Toledo … a Felipe II", Messina 16 July 1565, one page with thirteen lines
+of figures in clear Spanish. The figures decode with this key: *Sauiendo le entrado el socorro* · *la llegada de
+los* (navios) · *Cabo Bono* · *Argel* · *las galeras … con la gente a la Goleta* · *a mal tiempo* · *(r)espuesta
+del Maestre* · *forma de ponelle mas gente* · *falta* · *pide mas de la que yo agora le puedo dar* · *partiran las
+galeras mañana* (ñ = *nn*). New sign: a barred θ for *ll* (in *llegada*, *ponelle*); the *r* of *respuesta* is
+written as an M-like sign. Not transcribed in full. No. 248 (same day, to Eraso) is in clear on its first page.
+Estado leg. 1395 not checked.
