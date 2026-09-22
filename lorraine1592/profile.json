@@ -37,10 +37,10 @@
  ],
  "system": {
   "types": [
-   "homophonic",
+   "monoalphabetic",
    "nomenclator"
   ],
-  "summary": "Letter substitution in ordinary cursive letterforms and their barred, dotted or capital variants, with modest homophony, plus numeric nomenclator figures (13-146) for names and words.",
+  "summary": "Reciprocal letter-pair substitution written in ordinary cursive letterforms (a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x), two dots under a letter for a doubled letter, a null (looped ae), a few special signs, and figures for syllables and words (31 = ma, 139 = vous, 145 = me).",
   "symbol_kind": "digits and letters",
   "digit_groups": {
    "width": "2-3",
@@ -52,43 +52,22 @@
    "note": "Crossbar, overbar and dots on a letterform make a distinct cipher symbol."
   },
   "homophones": {
-   "used": true,
-   "max_per_vowel": 6,
-   "max_per_consonant": 5,
-   "per_letter": {
-    "a": 2,
-    "c": 3,
-    "d": 2,
-    "e": 6,
-    "h": 1,
-    "i": 1,
-    "l": 1,
-    "m": 1,
-    "n": 5,
-    "o": 3,
-    "p": 2,
-    "q": 1,
-    "r": 4,
-    "s": 5,
-    "t": 2,
-    "u": 4,
-    "y": 1
-   }
+   "used": false
   },
   "nomenclator": {
    "present": true,
    "entries": 14,
    "kinds": "unknown",
-   "unread_groups": 14
+   "unread_groups": 11
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
   "key_order": "unknown",
   "word_division": "none",
-  "doubled_letters": "unknown",
+  "doubled_letters": "two dots under the letter",
   "sibling_key": "Four 1592 key sheets in the Nevers key book fr. 3995 (ff. 32, 83-84, 98, 103) examined and eliminated; no Lorraine key on DECODE, Cryptiana or in print. None used.",
-  "notes": "per_letter is the 44-symbol key in ct/no97_solution.txt; with a quarter of glyph identifications wrong, some homophones may be transcription splits. Coincidence statistics put the system between monoalphabetic and fully homophonic."
+  "notes": "Re-read 22 Sept 2026 (ct/no97_reread.txt, ct/no97_reading2.md): the 18 Sept key's values paired reciprocally, and the pair key with the c/e and b/h splits reads the letter. Special signs λ, m̄, U, E, π, γ, ꝗ, figure-4 mostly unresolved."
  },
  "conditions": {
   "prior_solution": {
@@ -118,7 +97,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-09-18",
-  "last_date": "2026-09-18"
+  "last_date": "2026-09-22"
  },
  "solution": [
   {
@@ -192,37 +171,77 @@
    "kind": "control",
    "what": "Noise and systematic-merge controls: the -2.10 score matches 6-12 merged glyph pairs, i.e. about 65-75% of letters correct; the transcription limits the reading.",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "The 18 Sept key's values pair reciprocally (a/i, o/r, d/q, n/s); tested as an 11-pair reciprocal alphabet a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x with the transcription's c split into e (t) and c (f), B into b (p) and h (x), dots = doubled letter, ae = null: lowercase-only decode turns into French (infiniment mal satisfait du peu d'execution; conserver la plaine).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Native IIIF image of f227 sheared -0.031, 21 line bands cut into 5 crops each at 2.3x; every cipher line re-read against the pair key, glyph choices (e/c, b/h, dotted forms) decided with the key in hand; word-graded transcription ct/no97_reread.txt (1,105 tokens).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "crib",
+   "what": "Nomenclator figures from context: 31 = ma (com-31-nder, de-31-nde, 31 resolution), 139 = vous (chemins, 139 tiendres), 145 = me (affin que 141 ne 145 delaissent); the other 11 figures unassigned.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "fr. 3621 notice searched for sibling Lorraine/Vaudemont cipher pieces: none (ciphered pieces are Birago 31/36, Potier 79, Dinteville 114/116).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "measure_reread.py: 790/1,105 cipher tokens in words graded H/C = 0.715 (letters 0.721, figures 21/38); the 18 Sept key+tokens give the same words for 449/1,105 = 0.406; 4 emendations (two omitted v in Chasteau(v)ilain, q(u)e, promesses).",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "ct/no97_eye.txt with the key in ct/no97_solution.txt: cipher tokens (letter symbols + figures; [[clear]] words and punctuation excluded); every letter symbol has a key value, the 38 figure tokens are unread",
-  "fraction_read": 0.966,
-  "fraction_coherent": 0.7,
+  "fraction_read_source": "ct/no97_reread.txt measured by measure_reread.py: cipher tokens (letter signs, special signs, nulls, figures; clear words excluded) in words graded H or C, 790/1,105",
+  "fraction_read": 0.715,
+  "fraction_coherent": 0.715,
   "codes_open": {
-   "open": 14,
+   "open": 11,
    "total": 14,
-   "tokens_open": 38
+   "tokens_open": 17
   },
-  "grades": "unknown",
+  "grades": {
+   "H": 505,
+   "C": 285,
+   "M": 78,
+   "I": 237
+  },
   "verification": [
    "matched control",
    "historical consistency"
   ],
   "gaps": [
    {
-    "item": "Connective text between secure words: about a quarter of the glyph identifications in ct/no97_eye.txt are wrong",
-    "blocker": "not-attempted",
-    "detail": "Re-reading the 42 crops in lc/ with the key in hand, correcting barred, dotted and capital variants, was proposed and not done (NOTES section 6, ct/no97_reading.md section 6)."
+    "item": "Special signs λ, m̄, U, E, π, γ, ꝗ, low-barred t, figure-4 and the words they sit in",
+    "blocker": "open-codes",
+    "detail": "No key survives; each sign occurs 1-11 times, too few for context to fix most."
    },
    {
-    "item": "14 nomenclator figures (38 tokens)",
+    "item": "Figures 57, 98, 141, 122, 123, 13, 137, 88, 146, 121, 103 (17 tokens)",
     "blocker": "open-codes",
-    "detail": "No key survives; values only from context or a second letter in the same cipher."
+    "detail": "Single letter, no key, no sibling in the same cipher."
+   },
+   {
+    "item": "Garbled runs L12, L13, L18, L20 (about 45 tokens)",
+    "blocker": "illegible",
+    "detail": "At IIIF 1:1 the glyph sequence does not decode under the pair key; e/c, b/h and dotted forms not separable at this resolution."
    }
   ],
-  "notes": "fraction_read counts symbols given a value (1,071/1,109); fraction_coherent is an estimate from the merge controls (65-75% of letters correct), not a measurement, and it is the figure the read bar uses. NOTES.md has no '## Remaining gaps' or '## Escalation' section; the gaps above are taken from NOTES section 6 and ct/no97_reading.md section 6. Contributed by aryasn2026 (PR #4)."
+  "notes": "Re-read 22 Sept 2026 with the key in hand; the 18 Sept 'SOLVED' head and its 0.966 fraction_read (symbols given any value) and 0.7 estimate are superseded by the measured 0.715. Contributed 18 Sept by aryasn2026 (PR #4); re-read by Claude."
  }
 }

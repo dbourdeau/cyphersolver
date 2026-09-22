@@ -1,0 +1,43 @@
+# BnF fr. 3621 no. 97 (f. 109, Gallica canvas f227): re-read of the cipher with the key in hand, 22 Sept 2026.
+#
+# Source: the native 4046x5762 IIIF image, sheared -0.031 and cut into 21 line bands (img/, git-ignored),
+# each band viewed in five crops at 2.3x (img/g/L??_?.png) and four at 2x (img/seg/).
+#
+# THE SYSTEM, as the re-read shows it (supersedes the 44-free-symbol key of no97_solution.txt):
+#   a reciprocal letter-pair substitution written in ordinary letterforms:
+#       a<->i  b<->p  c<->f  d<->q  e<->t  g<->u  l<->y  m<->z  n<->s  o<->r  h<->x
+#   (the glyph written is the pair-mate of the plain letter: glyph "t" = plain e, glyph "ſ" = plain n);
+#   two dots under a letter double it (ṇ = ss, c̤ = ff, c̈ = tt); the looped æ is a null;
+#   a handful of special signs (λ, Θ, ꝗ, m̄, π, γ, E, ŧ, ʒ, figure-4 ...) and 14 figures for syllables/words.
+#   The earlier transcription's "c" merged two glyphs, the secretary e (-> t) and c (-> f); its "B"
+#   merged b (-> p) and the looped secretary h (-> x). Those two merges are most of the old key's errors.
+#
+# FORMAT: one line per manuscript line; each word is  tokens=plain/GRADE
+#   tokens: the old transcription's token names (no97_eye.txt), joined by '.', corrected against the image;
+#           tok:val overrides the key value for that one token (used for the c/e split, B = b or h, C = t or n,
+#           and marked emendations); tok: (empty value) = null.
+#   plain:  the reading (u/v and i/j folded; apostrophes dropped); '?' = not read.
+#   GRADE:  H secure, C probable, M doubtful, I unread.
+#   <n>=value/GRADE for nomenclator figures.
+# Measured by ../measure_reread.py.
+
+L00: W.D=?/I a.i.L:y=iay/H t.n.c:t.t=este/H g=?/I a.s.c.a.s.a.z.t.s.c:t=infiniment/H j.W.x=?/I z.i.y=mal/H A=/C n.i.c:t.a.n.c.i.a.c:t=satisfait/H M=?/I q.G=du/H B.t.G=peu/H x=/H q.t.B:x.t.f.G.c:t.a.r.s=dexecution/H G=?/I <139>=vous/C
+L01: <57>=?/I T=?/I t.c:t=et/H f.t.g.y.B:x=ceulx/H q.t=de/H y.Q=la/H <98>=?/I E.c=?/I r.s.c:t=ont/C q.t=de/H c:t.i.s.c:t=tant/H q.t=de/H p.t.J:ll.t.n=belles/C A.x=/C b.o.r.z.t.J:ss.t.J=promesses/H <141>=?/I m=?/I i.g.r.a.t.S=avoient/C c.i.a.c:t=fait/H y=l/M
+L02: W=?/I q.t=de/H <145>=me/C x=/H i.N.a.n.c:t.t.o=assister/H t.c:t=et/H q.t=de/H <122>=?/I <123>=?/I G=?/I b.a.r.c:n.s.a.t.o.n=pionniers/C o=?/I t.c:t=et/H F=?/I z.G.s.a.c:t.a.r.s.J=munitions/H j=?/I q.N:r.t.J:ss.t.x.o.i=dressera/M
+L03: T.a.t.s=?ien/M c.i.a.c:t=fait/H <139>=vous/C M.P=?/I y.t=le/H c.i.a.o.t=faire/H J:l.t.s.c:t.t.s.G:d.o.t=lentendre/C J.W=?/I f.y.i.a.o.t.z.t.s.c:t=clairement/H i.z:u.G:.q.a.c:t.D=audits/C <57>=?/I Z=?/I t.c:t=et/H y.t.J=les/H q.T=de/H
+L04: B.g.c:t.t.J=putes/H q.t=de/H E=?/I <98>=?/I x=/H t.C=et/H <139>=vous/C s.t=ne/H z.i.s.G:q.T:u.a.t.J=manquies/M i.z.t=ame/H W.D=?/I J:d.t.z.i.s.q.t.o=demander/M z.i.C.a.s.i=?/I <141>=?/I J.U=?/I f.r.s.B:.s.x.R=conno/C
+L05: a.U:s.n.t.s.c:t=issent/C y.t=le/H a.G.n.C.t=iuste/H x=/H z.t.y:s.f.r.s.c:t.i.s.c:t.t.z.t.c:n.C=mescontantement/C G=?/I <139>=vous/C Q.a.t.s=?/I q.r.a.J=dois/C i.G.r.a.o=avoir/H y=l/C <137>=?/I M=?/I a.y=il/H T=?/I c=f/H
+L06: i.G.y.q.o.i=auldra/H o.L.G.y.t.o=?/I q.t=de/H B.v.G.q.t.s.T:c.T=prudence/C A.x=/C i.K.a.C:n=affin/C <141>=?/I J=?/I Y=?/I s.t=ne/H <145>=me/C q.t.y.i.a.n.t.s.c:t=delaisent/C U.Q=?/I c:t.r.G.c:t=tout/H i=a/H x=/H f.r.G=cou/H
+L07: B=p/H P=?/I t.c:t=et/H q.t=de/H z.G.s.a.c:t.a.r.C:n.J=munitions/H t.Z:t=et/C f.H.t.G.a:a.G.y.B:x=chevaulx/H q=?/I <121>=?/I G=?/I r=?/I j=?/I t.c:t=et/H i.G.y.c:t.o.t=aultre/H f.r.z.r.q.a.c:t.t.J=comodites/H M=?/I
+L08: A.Z.n.L=?/I <57>=?/I <145>=me/C E=?/I q.t=de/H <31>=ma/C s.q.t=nde/H V.Y=?/I y.i=la/H B.y.i.s.t=plane/H a=i/C
+L09: y=l/C c.i.G.y.q.o.i=fauldra/H W.P=?/I y.t=le/H o.t.z.t.K:tt.o.f:e=remettre/C <13>=?/I r.L=ou/C y.x.t=le/C C=?/I y.G.L:y=luy/C T=?/I q.a.o.t=dire/H <139>=vous/C z.z.t.Q=?/I t.n.f.o.a.o.t=escrire/H J.A.x=?/I i.c.a.C:n=afin/C q.t=de/H s=?/I
+L10: o.t.f.T.B.G.r.a.v=recepuoir/H z.r.s=mon/H f.r.z.i.s.q.t.z.t.c:n.c:t=comandement/C Z.M=?/I s.t=ne/H B.t.a.q.i.a.r.L.y=?/I z.t.C:tt.o.t=mettre/C y=?/I d.G.t.y.d=quelq/C d.G.a=qui/C B.r.G.o=pour/H L:y=y/C f.r.z=com/H <31>=ma/C
+L11: s.q.t.o=nder/H t.c:t=et/H G:c.r.s.J.t.o.G.t.o=conserver/H y.i=la/H B.y.i.s.t=plane/H a=?/I d.G.i.s.c:t=quant/C i=a/C s.t=ne/C <139>=vous/C x=/H f.T.G.y.B:x=ceulx/H q.t=de/H <88>=?/I E.t=?/I Q.G.r.a.t.a.c=?/I G.t.o=?/I y.z.r.L.y=?/I B.r.G.o=pour/H c.i=fa/H
+L12: a.o.t=ire/H Y.x=?/I B.i.n.t.v=paser/C i.t.G.y.B.G.r.J.c.r.o=?/I y.t.n=les/C W.P=?/I y.t.G.o=leur/H T=?/I J.t.n=ses/H b.o.r.z.t.N.t.n=promesses/H s.T=ne/C z.T=me/C t.D=?/I a.s.q.G.t.a.o.r.s.c:t=indueiront/C U.T.C=?et/M o.t.r=re/M
+L13: y.G.z.t.s.C=lument/M M.a.t.s=?ien/M T=?/I y.t=le/H c.t.o.i=fera/H L=?/I y.t=le/C C=?/I q.t.n=des/H z.i.a.C=?/I c.s.i.c.r.c.a.t.G.r.G=?/I y.q.a.o.i=?/I L.Z=?/I i.B.o.t.J=apres/H y.t.K.t.f.f:.C=leffect/C U=?/I q.t=de/H
+L14: f.H.i.n.c:t.t.i.G=chasteau/H a.y.i.a.s.D=vilains/C x=/H <145>=me/C s.j.c.i.a.J=nefais/M t.J=es/M q.t=de/H o.i.z.t.s.T.o=ramener/H z.r.s=mon/H i.o.z.T=arme/H q.r:r.r.a.c:t.t.J=droites/M Y.x=?/I d.G.i.o.c:t.a.t.o.J=quartiers/H q.t=de/H
+L15: y.i=la/H c.i.G.y.f.H.t=faulche/H Q=?/I t.c:t=et/H z.t=me/H B.o.T.i.q.G.t.o.c:t.a=preadverti/C y=?/I a.s.C=?/I G.G=?/I a.r.G.o=iour/C <139>=vous/C <145>=me/C L=?/I B.r.G.Z=pou/M O.t.J=?/I i.O.a.G.t.o.a.t=?/I <145>=me/C <31>=ma/C s=n/H
+L16: q.t=de/H v.i.L.y.t=?/I T=?/I f.H.t.z.a.s.D=chemins/H <139>=vous/C C.a.t.s.q.o.t.J=tiendres/H U=?/I a.y=il/C s.T=ne/C G.r.D.G=vous/M y.x=?/I c.i.G.y.c:t=fault/H B.r.G.o=pour/H c:t.i.s.C=tant/H c.i.a.o.t=faire/H B.i.v.r.a.n.c:t.o.t=paroistre/H i.G.y.q=auld/C
+L17: a.n=is/C q.t=de/H x=/H W=?/I <88>=?/I <31>=ma/C o.t.n.r.y.G.c:t.a.r.s=resolution/H M=?/I <146>=?/I T.a.t.s=?ien/M y.t=le/H Z=/C b.t.G=peu/H q.t=de/H z.r.a.t.s=moien/H d.T=que/C c=?/I n.t.f.r.g.o.n=secours/H <139>=vous/C <145>=me/C c:p.o.r.z.T.n=promes/C B.i.o=par/H q=d/H
+L18: t.y.i=ela/H B.r.G.o=pour/H p.i.G.i.a.s.T.o=?/I y.t=le/C C.t.s.H=?/I c.q.G.q.a.s.c.r.s=?/I f.H.i.n.c:t.t.i.G=chasteau/H a.y.i.a.C:n=vilain/C x=/H i.a.s.n.L:y=ainsy/C <139>=vous/C y.r.s=lon/C i.G.r.a.C=avoit/C U.W=?/I B.o.r.z.a.n=promis/H x=/H M=?/I
+L20: W.n.G.o.c:t.t=?surte/M J.t.n=ses/H B.o.r.W:.z.z.t.n=promesses/C i.t.J=?/I c.i.a.o.t=faire/H U=?/I B.i.N.t.v=passer/C o:.r.G.y.C.o.T=oultre/C z.i.q.a.s.c:t.t=?/I x=/H Y=?/I <103>=?/I T.M=?/I

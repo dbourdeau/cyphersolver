@@ -1,9 +1,14 @@
 # Charles III of Lorraine to the comte de Vaudémont, Nancy, 18 June 1592 (BnF fr. 3621 no. 97)
 
-**Status: SOLVED (18 Sept 2026). The cipher is broken and the key recovered; the letter is read in
-part, the remainder limited by the eye-transcription of the glyphs and not by the cryptanalysis.**
-Catalogue item 15. The full account is in `ct/no97_reading.md`; the key and decode are in
-`ct/no97_solution.txt`.
+**Status: read in part — 71.5% of cipher tokens read as sense, measured (22 Sept 2026).** The
+system is broken: a reciprocal letter-pair substitution (a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x),
+dots for doubled letters, a null, a few special signs and syllable/word figures (31 = ma, 139 = vous,
+145 = me). 790 of 1,105 cipher tokens read (`python measure_reread.py`); the 18 Sept key and
+transcription gave the same words for 40.6%. Open: most special signs, 11 of 14 figures, four garbled
+runs. See §9 (the re-read), `## Remaining gaps`, `## Escalation`. The 18 Sept head read "SOLVED"; that
+overstated it — the key was a 44-symbol fit that hid the pair system, and the reading was an estimate.
+Catalogue item 15. Reading of record: `ct/no97_reading2.md` and `ct/no97_reread.txt`; the 18 Sept
+account (`ct/no97_reading.md`, `ct/no97_solution.txt`) is kept for the record.
 
 The document was catalogued as unsolved: **DECODE record 9449** is this exact piece and gives its
 status as `Non-decrypted` (<https://de-crypt.org/decrypt-web/RecordsView/9449>). No key for it has
@@ -184,3 +189,40 @@ nomenclator figures, which no surviving key supplies. User must verify: the DECO
 the site's own interface; the identification of DECODE's "Charles II, Duke of Lorraine" with Charles III;
 and every transcription here, clear and ciphered, as my reading of a secretary hand — about a quarter of
 the cipher glyph identifications are still wrong, which is why the reading is partial.
+
+## 9. The re-read with the key in hand (22 Sept 2026)
+
+Done as §6 proposed, from the native IIIF image of canvas f227 (4046 × 5762), sheared −0.031 and cut into
+21 line bands, each viewed in five crops at 2.3× (`img/g/`, git-ignored; `img/mkcrops.py` makes the
+sheared page). Full account in `ct/no97_reading2.md`.
+
+* **The key is a reciprocal pair cipher**, not 44 free symbols. The 18 Sept values already paired
+  (a↔i, o↔r, d↔q, n↔s); read as pairs the whole alphabet falls into eleven: a/i b/p c/f d/q e/t g/u
+  l/y m/z n/s o/r h/x. Two dots under a letter double it (ṇ = ss, c̤ = ff, c̈ = tt); the looped æ is a
+  null word-divider; Θ = s.
+* **Two transcription merges** caused most of the 18 Sept errors: `c` was both the secretary e (→ t)
+  and c (→ f), so every f was lost; `B` was both b (→ p) and the looped secretary h (→ x).
+* **Figures**: 31 = *ma* (*com-31-nder*, *de-31-nde*, *31 resolution*), 139 = *vous* (*chemins, 139
+  tiendrés*), 145 = *me* (*affin que 141 ne 145 delaissent*) — so at least part of the nomenclator is
+  syllabic. Graded C.
+* **Measured** (`measure_reread.py`; rule in its docstring: a token is read if its word is graded H/C):
+  790/1,105 = **0.715** (letter signs 0.721; figures 21/38). Before: the 18 Sept key and tokens give the
+  same words for 449/1,105 = 0.406. Four emendations, listed by the script.
+* The *chasteauilains* slip of §5b is confirmed twice (L14, L18): the scribe omitted the *v* both times.
+* Siblings: the fr. 3621 notice lists no other Lorraine or Vaudémont piece in cipher (the ciphered
+  pieces are Birago nos. 31/36, Potier no. 79, Dinteville nos. 114/116 — Nevers's own correspondents).
+
+## Remaining gaps
+
+- Special signs λ, m̄, U, E, π, γ, ꝗ, low-barred t, figure-4 (about 60 tokens, and the words they sit in) - blocker: open-codes; no key survives and each sign occurs 1-11 times, too few for context to fix most of them.
+- Figures 57, 98, 141, 122, 123, 13, 137, 88, 146, 121, 103 (17 tokens) - blocker: open-codes; one letter, no key, no sibling in the same cipher.
+- Garbled runs L12 (after *passer*), L13 (*des … apres*), L18 (*pour … Chasteauvilain*), L20 (*m'a d…te*) (about 45 tokens) - blocker: illegible; at IIIF 1:1 the glyph sequence does not decode under the pair key; needs the original or a higher-resolution scan to tell e/c, b/h and dotted forms apart.
+
+## Escalation
+
+- [x] siblings: fr. 3621 notice read for other Lorraine/Vaudémont cipher pieces — none; no. 22 is plaintext only (§1).
+- [x] clear-pages: the clear text of no. 97 and the postscript transcribed (`ct/clear_texts.md`) and used as context; no decipherment on the page.
+- [x] known-keys: fr. 3995 ff. 32, 83-84, 98, 103 eliminated (§4); Tomokiyo's Lorraine keys (Bréval c. 1620, Bassompierre 1593) are other systems.
+- [x] print: Lepage 1864 stops in 1591; no print of this letter found (§4).
+- [x] key-rebuild: 18 Sept search key re-derived as the eleven-pair reciprocal key with doubling dots and a null (§9).
+- [x] retry: every line re-read from the page with the key in hand (§9, `ct/no97_reread.txt`); the Archives de Meurthe-et-Moselle (possible duplicate or key) not consulted — needs physical access or their catalogue.
