@@ -475,6 +475,11 @@ ul.findings b{color:var(--head)}
 .nav .panel.wp{width:min(640px,calc(100vw - 2rem));grid-template-columns:1.35fr 1fr}
 .nav .panel .foot{grid-column:1/-1;border-top:1px solid var(--rule);padding-top:.7rem;margin-top:.1rem;display:flex;justify-content:space-between;gap:.6rem 1.2rem;flex-wrap:wrap;font-size:.86rem}
 .nav .panel .foot a{border:0;color:var(--gold2)}
+.nav .panel.ex{width:min(400px,calc(100vw - 2rem));grid-template-columns:1fr;gap:.6rem}
+.nav .panel.ex li a{grid-template-columns:1fr;gap:.05rem;padding:.45rem .6rem}
+@media (max-width:860px){ .nav .panel.wp,.nav .panel.ex{width:auto;grid-template-columns:1fr} }
+.nav .panel.ex li a .d{font-size:.8rem;color:var(--muted);line-height:1.3}
+.nav .panel.ex li a[href="highlights.html"] b::after{content:"new";margin-left:.5rem;font:600 .58rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-ink);background:var(--gold);padding:.08em .45em;border-radius:4px;vertical-align:.15em}
 .nav .panel .foot a:hover,.nav .panel .foot a[aria-current]{color:var(--head)}
 .nav .panel li a .st{min-width:1.6em;justify-content:center}
 @media (max-width:860px){.nav .panel.wp{grid-template-columns:1fr}}

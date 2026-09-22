@@ -346,6 +346,7 @@ Nothing more can be done online; the key or the text is located in an archive.
 ### Surveys
 
 - [`top50/`](top50/) — Schmeh's Top 50 cross-referenced entry by entry and re-checked against what has been solved since each post.
+- [Thirty favourites](https://dbourdeau.github.io/cyphersolver/highlights.html) — ten funny, ten historically significant and ten ingenious findings from the write-ups, each linked to its page.
 - [Why the famous ciphers resist](https://dbourdeau.github.io/cyphersolver/famous.html) — Kryptos, Voynich, Dorabella, Beale, Linear A, Phaistos, the pigeon message, sorted by the actual reason each holds out.
 
 ## Repository layout

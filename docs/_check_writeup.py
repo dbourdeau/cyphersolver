@@ -25,7 +25,7 @@ sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 HERE = pathlib.Path(__file__).resolve().parent          # docs/
 ROOT = HERE.parent
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
-SURVEYS = {'famous', 'solved'}
+SURVEYS = {'famous', 'solved', 'highlights'}
 NOT_TARGETS = {'docs', 'papers', 'gallica_siblings', 'gallica_sweep', 'top50', 'oldest', 'source_headings.txt'}
 
 def read(p):
