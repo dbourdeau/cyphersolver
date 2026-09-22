@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walsingham letter-book (1572) &mdash; Attempted</title>
+<meta name="description" content="BL Harley MS 260 ff. 367&ndash;369 (DECODE R8361), catalogued as a ciphered letter from an unknown sender to an unknown recipient, November 1572. It is Walsingham&rsquo;s Paris letter-book: four clear English letters of Leicester, Burghley and Walsingham, printed in Digges&rsquo;s Compleat Ambassador (1655) with the cipher left as figures. One name code, [3] = the Queen, is fixed by context. The other codes and a nine-sign letter run stay unread without the key.">
+<link rel="stylesheet" href="style.css?v=20260921e">
+<meta name="date" content="2026-09-22">
+<meta name="last-modified" content="2026-09-22">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="marburg1635.html"><span class="st solved">read</span><b>Marburg cipher report</b><span class="yr">1635&ndash;52</span></a></li><li><a href="harley286.html"><span class="st solved">read</span><b>D&rsquo;Ewes&rsquo;s cipher log 1635</b><span class="yr">1635&ndash;36</span></a></li><li><a href="harley1582r8500.html"><span class="st solved">read</span><b>Stafford August 1586</b><span class="yr">1586</span></a></li><li><a href="r8361.html" aria-current="page"><span class="st stuck">key not found</span><b>Walsingham letter-book 1572</b><span class="yr">1572</span></a></li><li><a href="kaa4591b.html"><span class="st partial">read in part</span><b>&#321;aski, King John, Wardein 1531&ndash;37</b><span class="yr">1531&ndash;1537</span></a></li><li><a href="jantini1517.html"><span class="st stuck">key not found</span><b>Fantini 1517&ndash;18</b><span class="yr">1517&ndash;1518</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">87</span><b>Solved</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">49</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">21</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">25</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 183 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <a href="catalogue.html">The Unsolved Catalogue</a>
+    <a href="atlas.html">Atlas</a>
+    <a href="keys.html">Key web</a>
+    <a href="secret.html">Secret letter</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <a class="ext" href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+<div class="cipherstrip">The partie 776 + w5 &Dagger; 6 3 &cap; 6 remaineth here in London &middot; He wisheth [3] to look well to Scotland &middot; [3] = the Queen</div>
+<p class="kicker">London &harr; Paris &middot; name codes in clear letters &middot; November 1572 &middot; attempted, open</p>
+<h1>Walsingham&rsquo;s letter-book, November 1572: Burghley, Leicester and Walsingham</h1>
+<p class="sub">BL Harley MS 260 ff. 367r&ndash;369v (DECODE R8361, catalogue 125), listed as &ldquo;unknown sender to unknown recipient&rdquo;. The six pages are a fair copy of four English letters of Sir Francis Walsingham&rsquo;s Paris embassy. They are in clear except for a few name codes and one short cipher run.</p>
+<p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-22">22 September 2026</time></p>
+<div class="seal stuck" aria-hidden="true"><span>key not found</span></div>
+</section>
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-record">What the record is</a><a href="#the-cipher">The cipher passages</a><a href="#what-reads">What reads, and what was tried</a><a href="#what-remains">What remains</a><a href="#sources">Sources</a></nav>
+<div class="callout"><strong>Summary.</strong> DECODE lists R8361 as a six-page ciphered letter from an unknown sender to an unknown recipient, November 1572, &ldquo;short parts encrypted only&rdquo;. The images show a later fair-copy letter-book of Walsingham&rsquo;s embassy in France. It holds the end of a letter of the Earl of Leicester to Walsingham, Burghley to Walsingham of 7 November 1572, and Walsingham to Sir Thomas Smith and to Burghley, both of 27 November 1572. All four letters are printed in Dudley Digges&rsquo;s <em>The Compleat Ambassador</em> (1655), pp. 297&ndash;301. Digges set the cipher as garbled figures (&ldquo;vI9T#tw516p I 6&rdquo;) and did not decipher it. The cipher is small: eight boxed name codes, a letter code H, and one run of nine signs, 21 tokens in all. The boxed code [3] is the Queen: that is the only value that fits all four places it occurs. The codes [7] and [9], H and the nine-sign run stay unread. No Walsingham&ndash;Burghley key of 1572 is known, and the run is too short to break without one.</div>
+
+<h2 id="the-record"><span class="num">01</span> What the record is</h2>
+<p>The page heads carry the running date &ldquo;November 1572&rdquo;. The letters are copied one after another with their addresses, in one hand, so this is a register, not the letters as sent. DECODE images P5 and P6 are in reverse folio order.</p>
+<table>
+<tr><th>Image</th><th>Folio</th><th>Content</th></tr>
+<tr><td>P1</td><td>367r</td><td>End of Leicester to Walsingham (&ldquo;the [blank] of November 1572&rdquo;); Burghley to Walsingham, Westminster, 7 November 1572, begins</td></tr>
+<tr><td>P2</td><td>367v</td><td>Burghley ends; Walsingham to Sir Thomas Smith, begins</td></tr>
+<tr><td>P3&ndash;P4</td><td>368r&ndash;v</td><td>Walsingham to Smith, Paris, 27 November 1572; Walsingham to Burghley begins</td></tr>
+<tr><td>P6, P5</td><td>369r, 369v</td><td>Walsingham to Burghley, Paris, 27 November 1572; Walsingham to Smith of 5 December begins</td></tr>
+</table>
+
+<h2 id="the-cipher"><span class="num">02</span> The cipher passages</h2>
+<figure><img src="r8361_lead.jpg" alt="Harley MS 260 f. 367r: the boxed code 9 after Rome, then the line The partie 776 + w5 6 3 6 remaineth here in London" loading="lazy"><figcaption>f. 367r, Burghley to Walsingham, 7 November 1572: &ldquo;written to Rome [9]&rdquo;, then &ldquo;The partie &hellip; 776 + w5 &Dagger; 6 3 &cap; 6 remaineth here in London&rdquo;.</figcaption></figure>
+<p>Burghley, 7 November:</p>
+<ul>
+<li>&ldquo;a person come, as he saith, from Florence <b>[9]</b>&rdquo;</li>
+<li>&ldquo;letters which the partie hath written to Rome <b>[9]</b>&rdquo;</li>
+<li>&ldquo;The partie <b>776 + w5 &Dagger; 6 3 &cap; 6</b> remaineth here in London &hellip; and yet I doubt the P. will smell of him&rdquo;. This is a letter cipher, probably spelling the person&rsquo;s name.</li>
+</ul>
+<p>Walsingham to Burghley, 27 November:</p>
+<figure><img src="r8361_f369r.jpg" alt="Harley MS 260 f. 369r, upper half, with the boxed codes 3, 9 and 3" loading="lazy"><figcaption>f. 369r: &ldquo;He wisheth [3] to look well to Scotland&rdquo; and &ldquo;If Steward himself, or the [9], shall learn any thing that toucheth [3]&rdquo;.</figcaption></figure>
+<ul>
+<li>&ldquo;delivered to Steward, for that Glasgow <b>[7]</b> was not here&rdquo;</li>
+<li>&ldquo;he biddeth me tell him as <b>[3]</b> that he is now without fear of danger&rdquo;</li>
+<li>&ldquo;He wisheth <b>[3]</b> to look well to Scotland, and that Manessier is sent but to abuse her Majesty with fair words&rdquo;</li>
+<li>&ldquo;If Steward himself, or the <b>[9]</b>, shall learn any thing that toucheth <b>[3]</b>, I shall be advertised&rdquo;</li>
+<li>&ldquo;within these 8 days &hellip; <b>[7]</b> protested that he should never be quiet so long as the exercise of Religion continued in any one place of Christendom&rdquo;</li>
+<li>&ldquo;both he and Spain shall, for the avoiding of suspicion of the Legate&rsquo;s coming, entertain the <b>[3]</b> with good words&rdquo;</li>
+<li>&ldquo;I have requested <b>H</b> to be throughly advertised&rdquo;</li>
+</ul>
+
+<h2 id="what-reads"><span class="num">03</span> What reads, and what was tried</h2>
+<p><b>[3] = the Queen.</b> In all four places the code stands for a person English policy turns on: someone warned to look to Scotland, someone news may &ldquo;touch&rdquo;, someone France and Spain mean to &ldquo;entertain with good words&rdquo;. The Queen fits every time, and no other candidate fits all four. Grade C (consistent context, no key).</p>
+<p><b>[7], [9], H.</b> [7] follows &ldquo;Glasgow&rdquo; (the Bishop of Glasgow, Mary Stuart&rsquo;s ambassador) and is also the man who swore never to rest while the Reformed religion survived. That points to the Cardinal of Lorraine or the Duke of Guise, but a code that follows a name may mark a title rather than a person. [9] follows both &ldquo;Florence&rdquo; and &ldquo;Rome&rdquo; and then stands alone (&ldquo;the [9]&rdquo;). Its three uses do not settle on one person, so it stays open.</p>
+<p><b>The nine-sign run.</b> It mixes digits, a letter and signs. Nine symbols of an unknown alphabet cannot be read without the key.</p>
+<p>What was checked: the sibling records from the same volume (R8357, R8363) have no key. The pages carry no glosses. Tomokiyo&rsquo;s survey of Elizabethan ciphers (Cecil&ndash;Norris, Throckmorton, Stafford) has no Walsingham key of 1570&ndash;73. CSP Foreign vol. x does not calendar these letters. Digges prints them without deciphering the codes.</p>
+
+<h2 id="what-remains"><span class="num">04</span> What remains</h2>
+<ul>
+<li>The letter run &ldquo;776 + w5 &Dagger; 6 3 &cap; 6&rdquo;, f. 367r: too short, no key.</li>
+<li>Codes [7] (&times;2), [9] (&times;3) and H: no key material.</li>
+</ul>
+<p>Leads: the originals Walsingham sent (Hatfield or SP 70) may carry Burghley&rsquo;s clerk&rsquo;s decipherment, and Digges&rsquo;s other letters of 1571&ndash;73 use the same boxed codes, so a full inventory of them could fix [7] and [9].</p>
+
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/r8361.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">05</span> Sources</h2>
+<ul>
+<li>British Library, Harley MS 260 ff. 367r&ndash;369v, via <a href="https://de-crypt.org/decrypt-web/RecordsView/8361">DECODE R8361</a> (images, login).</li>
+<li>Dudley Digges, <em>The Compleat Ambassador</em> (London 1655), pp. 297&ndash;301.</li>
+<li><em>Calendar of State Papers Foreign, Elizabeth</em>, vol. x, 1572&ndash;1574, ed. A. J. Crosby (1876), November 1572 (<a href="https://www.british-history.ac.uk/cal-state-papers/foreign/vol10/pp200-210">BHO</a>).</li>
+<li>Satoshi Tomokiyo, Cryptiana, &ldquo;Elizabethan ciphers&rdquo;.</li>
+</ul>
+<p class="muted">Notes, transcription and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/r8361">r8361/</a>.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; British Library, via DECODE R8361</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="mondoucet.html" rel="prev">&larr; Mondoucet 1571&ndash;74</a><a href="lanssac.html" rel="next">Lanssac 1573 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="solve-replay.js?v=20260921e" defer></script>
+<script src="zoom.js?v=20260921e" defer></script>
+<script src="site.js?v=20260921e"></script>
+</body>
+</html>
