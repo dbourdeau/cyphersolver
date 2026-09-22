@@ -29,7 +29,7 @@ et quel que je soys, je ne diray avec verité [que] vostre tres fidelle serviteu
 tel m'aymer tousjours et conserver en voz bonnes graces, lesquelles saluant avec toute humilité, je suppliray Dieu,
 Monseigneur, vous donner en tres parfaicte santé tres heureuse et tres longue vie.
 
-**C ∞ 6 ƥ z ι ◊ é ι ⊕** [de · null · Randan · (de?)], ce xxvij Mars.
+**C ∞ 6 ƥ z ι ◊ é** [de · null · Randan] ~~ι ⊕~~ [a false start, 'de', struck through], ce xxvij Mars.
 
 Vostre tres humble et tres obeissant serviteur [monogram].
 

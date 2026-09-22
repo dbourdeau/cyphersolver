@@ -21,6 +21,8 @@ CODES = {'94': 'le marquis', '6': "M. d'Entragues", '23': 'la reine de Navarre',
 # signs read as nulls in context: ∞ is not in the key (the key's rule: invented signs are nulls);
 # ƥ after it in the f.30 run gives no sense as 'a' and is taken with it (see NOTES, Remaining gaps).
 NULLS = {('run', 4), ('run', 5), ('dateline', 1)}
+# the last two dateline signs (ι ⊕, 'de') are a false start struck through with '=' and left pale: cancelled
+CANCELLED = {('dateline', 8), ('dateline', 9)}
 # z is the key's q-sign, but in the dateline it stands where n is needed (Randan): this writer's 2 and z
 # are one shape (fr. 3413 f. 102: '2 4 7' = qui, 'x n 2' = bon).
 OVERRIDE = {('dateline', 4): 'n'}
@@ -36,7 +38,9 @@ def decode():
             rows.append((rec, fol, kind, signs[0], CODES[signs[0]], 'code'))
             continue
         for i, s in enumerate(signs):
-            if (kind, i) in NULLS:
+            if (kind, i) in CANCELLED:
+                rows.append((rec, fol, kind, s, ALPHA[s], 'cancelled'))
+            elif (kind, i) in NULLS:
                 rows.append((rec, fol, kind, s, '', 'null'))
             elif (kind, i) in OVERRIDE:
                 rows.append((rec, fol, kind, s, OVERRIDE[(kind, i)], 'letter'))
@@ -55,5 +59,7 @@ if __name__ == '__main__':
             f.write('\t'.join(r) + '\n')
     for kind in ('dateline', 'run'):
         print(kind, ' '.join(r[4] or '·' for r in rows if r[2] == kind))
-    n = len(rows); nulls = sum(r[5] == 'null' for r in rows)
-    print(f'{n} units, {n - nulls} read as sense, {nulls} nulls')
+    n = len(rows); nulls = sum(r[5] == 'null' for r in rows); canc = sum(r[5] == 'cancelled' for r in rows)
+    doubtful = 1  # the ƥ in the run, taken as a null against its key value
+    print(f'{n} units: {n - nulls - canc} letters/words/codes, {nulls} nulls, {canc} cancelled; '
+          f'{n - doubtful} accounted for ({(n - doubtful) / n:.3f}), {doubtful} doubtful')

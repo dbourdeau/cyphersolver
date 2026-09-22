@@ -12,7 +12,7 @@
    "route": "unnamed correspondent at Randan (Auvergne) -> Louis de Gonzague, duc de Nevers",
    "language": "French",
    "cleartext_in_document": "mostly clear",
-   "read": "read in part",
+   "read": "read",
    "plaintext": {
     "location": [
      "none"
@@ -179,15 +179,21 @@
    "kind": "verification",
    "what": "24 of 27 cipher units read as sense; ∞ a null by the key's rule; ƥ in the run and the dateline's trailing 'de' unexplained.",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "The three doubtful signs re-examined at 3x on the full-resolution scans: the dateline's last two (ι ⊕) are a pale false start struck through with '=', i.e. cancelled; the ƥ in the f. 30 run stays a probable null.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "read",
   "key": "recovered",
   "fraction_read": 1.0,
-  "fraction_coherent": 0.89,
+  "fraction_coherent": 0.963,
   "fraction_read_method": "measured",
-  "fraction_read_source": "nevers1587/reading.tsv: 27 cipher units, all given a key value or null; 24 read as sense (3 doubtful: ƥ taken as a null, dateline's trailing ι ⊕)",
+  "fraction_read_source": "nevers1587/reading.tsv: 27 cipher units, all given a key value, null or cancellation; 26 accounted for as sense (22 letters/words/codes, 3 nulls, 2 struck out), 1 doubtful (ƥ taken as a null)",
   "codes_open": {
    "open": 0,
    "total": 4,
@@ -195,7 +201,8 @@
   },
   "grades": {
    "H": 24,
-   "M": 3
+   "C": 2,
+   "M": 1
   },
   "verification": [
    "key confirms",
@@ -205,10 +212,6 @@
   "gaps": [
    {
     "item": "f. 30 run, sign 6 (ƥ after the null ∞): key value a gives no sense, taken as a null",
-    "blocker": "too-short"
-   },
-   {
-    "item": "f. 28v dateline, last two signs (ι ⊕, read 'de' after 'Randan')",
     "blocker": "too-short"
    }
   ]

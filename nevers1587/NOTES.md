@@ -3,10 +3,10 @@
 Catalogue item 185, "Unknown sender (Rome) to Louis Gonzaga, duke of Nevers, 2 ciphertexts" (class C, scored by
 rule). Session of 22 September 2026.
 
-Status: read in part. Both letters are in clear French with a few cipher items; every item is read with the key
-**BnF fr. 3995 no. 11** (the Nevers key book), used unchanged. 24 of 27 cipher units read as sense (0.89, measured
-from `reading.tsv`); the other three are single signs whose key values are known but which do not fit the sense
-(one probable null, a stray "de" after the place name). DECODE's "Rome" is wrong: the first letter is dated
+Status: read. Both letters are in clear French with a few cipher items; every item is read with the key
+**BnF fr. 3995 no. 11** (the Nevers key book), used unchanged. 26 of 27 cipher units accounted for (0.963, measured
+from `reading.tsv`): 22 letters, words and codes, 3 nulls, and 2 signs of a struck-out false start; one sign (ƥ in
+the f. 30 run) is taken as a null against its key value. DECODE's "Rome" is wrong: the first letter is dated
 **"De Randan, ce XXVII mars"** in cipher.
 
 ## The documents
@@ -75,7 +75,9 @@ a null with ∞ (grade M).
 **f. 28v dateline** `C | ∞ | 6 ƥ z ι ◊ é | ι ⊕` = **de · [null] · Randan · (de)**: *"De Randan, ce xxvij Mars"*.
 C = de (capital), 6 = r, ƥ = a, z = n (the writer's 2 and z are one shape: "2 4 7" = qui and "x n 2" = bon in the
 sibling), ι = d (his dotted-i form of the d-sign), ◊ = a, é = n (looped, ∂-like). The last two signs read d, e and are
-not explained (a repeated "de", or nulls ending the run with the flourish "="; grade M).
+a false start: at full resolution (canvas 53, 3× crop) the ⊕ is a pale blot struck through with a double "="
+stroke, and the ι stands just before it. The writer began "de" in cipher, cancelled it, and wrote "ce xxvij Mars" in
+clear. Read as cancelled (grade C).
 
 **Codes (f. 28r)**: *"en ce temps mesme 94 [le marquis] y arriva, qui vendit une terre a 6 [M. d'Entragues], dont ils
 s'estoient remis a mons. de Lyon pour le marché"*; *"pour ce qui est de 23 [la reine de Navarre], je ne m'en suis voulu
@@ -106,7 +108,9 @@ for Randan, Chenonceau, Espernon: no hit on these letters). No reading anywhere 
 
 ## Remaining gaps
 - f. 30 run, sign 6 (ƥ, after the null ∞) - blocker: too-short; key value a gives no sense, taken as a null; one occurrence, nothing to test it against
-- f. 28v dateline, last two signs (ι ⊕, read "de" after "Randan") - blocker: too-short; values are the key's, the sense is not; no other dateline of this writer in cipher
+
+(The dateline's last two signs, first listed here as unexplained, were re-examined at full resolution on
+22 Sept 2026 and are a struck-out false start; see The reading.)
 
 ## Escalation
 - [x] siblings: fr. 3975 ff. 29-31 (addresses, docket, a credence note in another hand) and fr. 3974-3978 notices searched for the same correspondent; fr. 3413 f. 102 found (same hand, glossed) and used to calibrate the glyph forms
@@ -114,7 +118,7 @@ for Randan, Chenonceau, Espernon: no hit on these letters). No reading anywhere 
 - [x] known-keys: Tomokiyo's fr. 3995 keys nos. 9-16 viewed; no. 10 ruled out (45 = Picardie); no. 11 fits and reads everything
 - [x] print: Tomokiyo nevers.htm and league.htm; Mémoires de Nevers (1665) full text on Gallica: nothing
 - [x] key-rebuild: n/a for the key (no. 11 is complete); the writer's glyph forms rebuilt from the glossed sibling (Ŧ = p, F = et, 1 = d, 0/⊕ = e, 2/z)
-- [x] retry: both items re-decoded with the calibrated forms (enum_readings.py, edits.py list the blind attempts that failed before calibration)
+- [x] retry: both items re-decoded with the calibrated forms (enum_readings.py, edits.py list the blind attempts that failed before calibration); the three doubtful signs re-examined at full resolution, the dateline pair found struck out
 
 ## Files
 
