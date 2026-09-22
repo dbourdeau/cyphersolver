@@ -6,7 +6,7 @@
   {
    "id": "f134",
    "shelfmark": "BnF, Français 3029, ff. 134r-135v, no. 59 (DECODE R3670); Gallica btv1b90598719 views 210, 211, 213",
-   "date": "unknown (DECODE: 11 Jan 1530, source not given; content suggests ca. 1521, unconfirmed)",
+   "date": "unknown (DECODE: 11 Jan 1530, source not given)",
    "year": "unknown",
    "country": "unknown",
    "route": "unknown -> French court (addressed 'Au Roy, Mon souverain seigneur')",
@@ -23,13 +23,13 @@
     "tokens": 926,
     "unit": "symbols",
     "measured": true,
-    "file": "signs.txt"
+    "file": "withheld: signs.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "Gallica full-resolution views 210 (f.134r, 26 lines) and 211 (f.135r, 4 lines); line-band crops; aliases = key letters in transcription.txt",
     "image_quality": "good",
-    "notes": "926 = letter signs (_check_profile --measure --letters on signs.txt). signs.txt also holds 49 nulls ('.') and 9 name/place signs (digits 1-5): 984 signs in all. Two words struck through by the writer are left out."
+    "notes": "926 letter signs (measured on signs.txt, now withheld); plus 49 nulls and 9 name/place signs: 984 signs in all."
    }
   }
  ],
@@ -64,7 +64,7 @@
   },
   "key_order": "unknown",
   "word_division": "kept",
-  "notes": "Lasry's table has Nom 1-4 and Place 1 unidentified; all five occur here (N1 x2, N2 x2, N3 x2, N4 x1, P1 x2) and stay unidentified. Nulls mostly at word ends and line ends, and between doubled letters (mil.le, ter.res)."
+  "notes": "Lasry's table has Nom 1-4 and Place 1 unidentified; all five occur here and stay unidentified."
  },
  "conditions": {
   "prior_solution": {
@@ -94,7 +94,7 @@
  "solution": [
   {
    "kind": "literature search",
-   "what": "Repo grep: fr3029/ (catalogue 174) had closed the fr. 3029 ciphers as 'broken by Lasry' without reading any leaf; f.134 not covered. Tomokiyo's GL.htm (gramont1529/GL.htm) lists f.134 no.59 'au roy' under the fr. 3029 cipher; key image fetched.",
+   "what": "Repo grep: fr3029/ (catalogue 174) had closed the fr. 3029 ciphers as 'broken by Lasry' without reading any leaf; Tomokiyo's GL.htm lists f.134 under the fr. 3029 cipher; key image fetched.",
    "result": "worked",
    "date": "2026-09-22"
   },
@@ -106,19 +106,19 @@
   },
   {
    "kind": "transcription",
-   "what": "30 cipher lines transcribed by eye from line-band crops, each sign written as its key letter (transcription.txt).",
+   "what": "30 cipher lines transcribed by eye from line-band crops, each sign written as its key letter (transcription withheld).",
    "result": "worked",
    "date": "2026-09-22"
   },
   {
    "kind": "key from source",
-   "what": "Lasry's table applied unchanged: French reads at once ('avoir par l'amiable les veult recouvrer par les armes').",
+   "what": "Lasry's table applied unchanged: French reads at once.",
    "result": "worked",
    "date": "2026-09-22"
   },
   {
    "kind": "verification",
-   "what": "Blotted sign at 134r22 end and the doubtful 'l.lis', 'diort', '?icy' re-cropped at full resolution; blot read as C (car|dinal).",
+   "what": "Blotted and doubtful signs re-cropped at full resolution; one blot resolved.",
    "result": "partial",
    "date": "2026-09-22"
   },
@@ -130,7 +130,7 @@
   },
   {
    "kind": "reading",
-   "what": "Whole letter read: war to recover costs against the lands of the Church under the defensive league; Venetian ambassador; Toledo given to the bishop of Palencia with pensions to the cardinals de' Medici and 'd'Iort' and the new cardinal Carafa; bishop of Badajoz leaves; rumour of poisoning ‹N2›.",
+   "what": "Whole letter read (content withheld).",
    "result": "worked",
    "date": "2026-09-22"
   }
@@ -143,7 +143,7 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "All 30 cipher lines read with Lasry's key unchanged; 9 name/place signs open; one proper name (L.lis) unidentified; date not fixed.",
+  "notes": "All 30 cipher lines read with Lasry's key unchanged; 9 name/place signs open. Withheld 22 Sept 2026 at George Lasry's request: he and a historian have deciphered and analysed these letters for their own publication. Readings, transcriptions and content are kept outside the public repository; counts and method fields stand as measured.",
   "key": "recovered",
   "codes_open": {
    "open": 5,
@@ -154,10 +154,10 @@
    {
     "item": "name signs N1-N4 and place sign P1 (9 tokens)",
     "blocker": "open-codes",
-    "detail": "unidentified in Lasry's table too; only the sibling fr. 3029 / fr. 3092 letters could fix them"
+    "detail": "unidentified in Lasry's table too"
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "fr3029f134/signs.txt: 984 signs, 9 name/place signs without a value = 975/984"
+  "fraction_read_source": "signs.txt (withheld): 984 signs, 9 name/place signs without a value = 975/984"
  }
 }
