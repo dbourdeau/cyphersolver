@@ -106,7 +106,7 @@ in attribute and manifest strings (`&eacute;`, `&rsquo;`, `&mdash;`), plain UTF-
   (`read`, `read in part`, `not a cipher`, `already in print`, `double pass not broken`…), `blurb` three or four
   sentences, `quote` one line from the reading, `rights` the archive's credit line.
 - Add the slug to `IMAGES`: `('<slug>_lead.jpg', 'caption', 'credit')`, or `None`. Every page needs the key.
-- Portraits of the correspondents, where possible: for the principal sender and the principal recipient (named
+- Portraits of the correspondents (required; `_check_writeup.py` fails without one): for the principal sender and the principal recipient (named
   people only), look for a public-domain portrait on Wikimedia Commons (Wikidata P18 is a good start; a painting,
   drawing, engraving, medal or miniature; no photos of busts or tombs, no CC-BY files). Check the file's
   description and dates match the person, not a namesake or relative. Reuse the image of anyone already in
@@ -114,7 +114,8 @@ in attribute and manifest strings (`&eacute;`, `&rsquo;`, `&mdash;`), plain UTF-
   `python docs/_add_portrait.py <slug> sender|recipient "<name>" "File:<Commons file>" "<Portrait by X, 1590>"`,
   which checks the licence, crops the face and updates the manifest; the build puts the from/to strip under the
   title. Look at the crop (profiles are often missed). Leave a side out when the person is anonymous, an office,
-  or has no trustworthy portrait; skip pages that are not letters between people.
+  or has no trustworthy portrait. Skipping is allowed only when it is impossible: both sides anonymous or offices, not a letter
+  between people, or nothing trustworthy on Commons after a real search. Then record why in `docs/_explore_skip.json` under `"portrait"`; the checker accepts that instead.
 - If the page is solved or partly read, update the `solved` survey entry's blurb and quote counts.
 
 ## 2a. The explore features: reveal, atlas, key web
@@ -122,13 +123,16 @@ in attribute and manifest strings (`&eacute;`, `&rsquo;`, `&mdash;`), plain UTF-
 The "How it was solved" replay needs nothing: the build draws it from `profile.json` (three steps or more). The other
 three are data files you edit by hand; each is a few lines, and skipping one leaves the target off that feature.
 
-- **Watch it decipher** (`docs/reveal/<slug>.json`, rendered by `cipher-reveal.js`): only when the repository holds a
+- **Watch it decipher** (`docs/reveal/<slug>.json`, rendered by `cipher-reveal.js`; required, `_check_writeup.py` fails without it): build it whenever the repository holds a
   sign-level transcription paired with a key or decoder. Run the target's own decoder over one continuous passage of
   40–250 groups, ideally the one the page quotes; never fill values from memory or from the plaintext alone. Format:
   `{"slug", "anchor": "<h2 id the reveal goes under>", "title", "caption", "unit", "key_note",
   "tokens": [{"g": "972", "p": "the", "cls": ""}]}` with `cls` one of `unk` (p `?`), `unc`, `code`, `plain` (clear
   text, `g` empty), `null`. Check the result against the page's reading and mark disagreements `unc`. The build
   places the figure once, after the anchor h2. Copy an existing file (`reveal/armstrong.json`, `reveal/toledo1565.json`).
+  Skipping is allowed only when it is impossible: no passage can be decoded sign by sign (unread, clear text,
+  no transcription and no image to make one). Then record why in
+  `docs/_explore_skip.json` under `"reveal"`.
 - **Atlas** (`docs/atlas.json`): for each letter with a known origin and destination, append
   `{"slug", "doc", "year": <decimal>, "date", "from", "to", "st", "label"}` to `letters`, adding any new city to
   `places` as `[lat, lon]`. A court or a person goes where they were at that date; leave a letter out rather than guess.

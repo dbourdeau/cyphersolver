@@ -286,6 +286,17 @@ def check_slug(slug):
         item(bool(q) and not todo, f'decode_updates/queue.json queues the DECODE edits for {folder} '
              f'(python decode_updates/queue.py add {folder}, fill the TODOs; or queue.py skip {folder} "<why>")'
              + (': TODO fields left' if todo else ''))
+    # portraits and "watch it decipher" (skill steps 2 and 2a): required on every page, or a reason recorded in
+    # docs/_explore_skip.json {"portrait": {slug: why}, "reveal": {slug: why}}
+    try: skip = json.loads(read(HERE / '_explore_skip.json') or '{}')
+    except ValueError: skip = {}
+    try: pics = json.loads(read(HERE / '_portraits.json') or '{}')
+    except ValueError: pics = {}
+    item(any(q.get('img') for q in pics.get(slug) or []) or slug in skip.get('portrait', {}),
+         f'a correspondent portrait in docs/_portraits.json (python docs/_add_portrait.py), '
+         f'or the reason there is none in docs/_explore_skip.json "portrait"')
+    item((HERE / 'reveal' / f'{slug}.json').exists() or slug in skip.get('reveal', {}),
+         f'a "watch it decipher" file docs/reveal/{slug}.json, or the reason there is none in docs/_explore_skip.json "reveal"')
     # the explore data (skill step 2a): nudges only, since many targets have no named key or no known route
     try: kw = json.loads(read(HERE / 'keys.json') or '{}')
     except ValueError: kw = {}
