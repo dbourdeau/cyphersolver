@@ -1,0 +1,147 @@
+{
+ "schema_version": 1,
+ "target": "bayard1526",
+ "title": "Gilbert Bayard (Toledo) to Anne de Montmorency, 5 Jan 1526 (BnF Clairambault 325 f. 84; DECODE R2285)",
+ "documents": [
+  {
+   "id": "R2285",
+   "shelfmark": "BnF Clairambault 325 f. 84 (17th-c. copy); DECODE R2285",
+   "date": "5 Jan 1526",
+   "year": 1526,
+   "country": "France",
+   "route": "Toledo -> Montmorency (Spanish court)",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the copy; Champollion-Figeac 1847 prints the letter without the cipher passage."
+   },
+   "length": {
+    "tokens": 56,
+    "distinct": 29,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R2285 images IMG_R2285_I16203/I16204 (BnF Clairambault 325 f. 84r-v)",
+    "image_quality": "good",
+    "notes": "Graphic signs imitated by a 17th-c. copyist; three lines on f. 84r."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "Graphic-sign cipher, 56 signs of 29 kinds in a 17th-c. copy; same sign pool as the Raince and Calvimont alphabets of 1525-26, values unknown.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 29,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Tomokiyo lists it unsolved; Champollion-Figeac 1847 prints the letter omitting the cipher",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Selected the target; the DECODE session cookie was supplied earlier.",
+  "tools": [
+   "DECODE authenticated image download",
+   "Gallica IIIF",
+   "archive.org full text",
+   "lang fr-1530-despatches 5-gram",
+   "simulated annealing"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Fetched DECODE R2285 images with the saved cookie; located the three cipher lines on f. 84r.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Transcribed 56 signs (29 kinds) into labels, ct.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Tomokiyo cryptiana francis page: unsolved; hidden alignment with marginal note does not fit.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Champollion-Figeac 1847 no. CCXVIII prints the letter from a Brequigny copy and omits the cipher.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Biermann Calvimont key (Clair. 325 f. 67) mapped by sign shape, pinned anneal: no sense.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Raince 1526 key (Tomokiyo) with nulls ny/K removed: -3.5/sign, gibberish.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Homophonic anneal, free and constrained, 24+30 restarts: best restarts disagree; underdetermined.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [],
+  "notes": "Blocked on key material and length; the original letter (V. 41 f. 4) might carry cleaner signs or a decipherment.",
+  "gaps": [
+   {
+    "blocker": "no-key-material",
+    "item": "cipher passage f. 84r ll. 17-19"
+   },
+   {
+    "blocker": "too-short",
+    "item": "same passage"
+   }
+  ]
+ }
+}
