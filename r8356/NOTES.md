@@ -26,8 +26,11 @@ Walsingham's letter to Burghley on f. 112v.
 
 Digges, *The Compleat Ambassador* (1655) p. 106 (text `burghley1572/lit/digges1655.txt` l. 9544ff.) prints
 the letter with the run as figures ("He':1627 40q0n 6> nu shewed me his Mistresses Letters dated the seventh …")
-and [E4] as "54". So the run was never glossed in print. The letter is not in CSP Foreign 1569–71 as a
-decipherment.
+and [E4] as "54". So the run was never glossed in print. CSP Foreign ix no. 1821 (Louviers, 25 June 1571; `lit/csp9_jun1571b.txt`) calendars the **sent** letter (it has
+extra paragraphs on Walsingham's charges), summarising the plot to steal away the Queen of Scots without naming
+[12], the run or [E4]. The original is in the State Papers, Foreign (TNA SP 70), not digitised free; if it carries
+an interlinear decipherment, it would read the run. No. 1834 (to Leicester, 30 June, 'partly in cipher') is the
+same channel.
 
 ## Analysis
 
@@ -41,12 +44,13 @@ decipherment.
 
 ## Remaining gaps
 - nine-sign run on f. 112v l. 1 - blocker: too-short; nine signs, pattern fits no word, no key
+- sent original in TNA SP 70 (CSP For. ix 1821) - blocker: needs-physical-access; not online, may carry a decipherment
 - codes [12] and [E4] - blocker: no-key-material; each occurs once, no Walsingham 1571 key on DECODE, in Tomokiyo or in print
 
 ## Escalation
 - [x] siblings: R8357, R8358, R8361, R8363 (same letter-book) checked; the R8361 run gives no crib
 - [x] clear-pages: f. 113r is the Queen's letter in clear, not a decipherment
 - [x] known-keys: no Walsingham 1570-73 key known (Tomokiyo's Elizabethan page, DECODE); none tried
-- [x] print: Digges 1655 p. 106 prints the cipher as figures; CSP Foreign has no decipherment
+- [x] print: Digges 1655 p. 106 prints the cipher as figures; CSP For. ix 1821 calendars the sent letter without the names
 - [n/a] key-rebuild: nineteen signs across two runs; nothing to anneal on
 - [n/a] retry: no key to retry with; pattern check done and recorded above
