@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "target": "walsingham1572nov",
+ "title": "Walsingham to Burghley, Paris, 12 November 1572, letter-book copy, BL Harley MS 260 ff. 364-365 (DECODE R8359-R8360, catalogue item 126)",
+ "documents": [
+  {
+   "id": "R8359-R8360",
+   "shelfmark": "BL Harley MS 260 ff. 364-365 (DECODE R8359, R8360)",
+   "date": "12 November 1572",
+   "year": 1572,
+   "country": "England",
+   "route": "Paris -> London",
+   "language": "English",
+   "pages": 3,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No cipher signs copied; placeholders [9]/[3]. Digges 1655 prints the same copy.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "symbols",
+    "measured": false,
+    "file": "unknown"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images R8359, R8360",
+    "image_quality": "good",
+    "notes": "Clear English; six boxed placeholder digits and one blank where cipher names stood."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "No cipher copied: the letter-book clerk replaced each cipher name with a boxed number ([9], [3]).",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown",
+   "entries": "unknown",
+   "kinds": [],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": "unknown",
+   "count": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "n/a",
+  "notes": "Same placeholder practice as walsingham1572 (R8362-R8364)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Digges, The Compleat Ambassador (1655) prints the letter with the placeholders; no decipherment.",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the catalogue entry with /goal. No target-specific intervention recorded.",
+  "tools": [],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Viewed R8359 (2 images) and R8360: clear letter-book copies of Walsingham to Burghley, 12 Nov 1572; cipher replaced by [9] x5, [3] x1 and a blank.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Found the letter in Digges 1655 (djvu text): printed with the same placeholders, not deciphered.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "verification": [],
+  "notes": "Closed: no ciphertext survives in this copy.",
+  "gaps": [
+   {
+    "item": "six placeholders and one blank, ff. 364r-365r",
+    "blocker": "no-key-material"
+   }
+  ]
+ }
+}
