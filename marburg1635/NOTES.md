@@ -52,7 +52,7 @@ excused ("damit ich aus allen fall entschuldigt sein"), so he writes as an offic
 Second pass on lines 1–2 (22 Sept): line 2 `12 7 12 / 6 0 0 8 T 4 / 0 9 / 12 F / 6 7 W / 7 4 12 / 6 0 1 F F / 4 5 D 9 6 12`
 = "(w)ir (d)ennoch nur seit ihr endes halber ... ursach" (an initial sign dropped in transcription on two words);
 line 1 `1 7 6 / A 5 0 1 W F` = "die landts..." (first sign is 1 = d, not 7; A = l here). Unread: the last ~9 signs of
-line 1 and ~6 blotted signs in lines 7 and 9, about 15 of 590 signs. ≈97% read as sense (estimated by word group). Class:
+line 1 and ~6 blotted signs in lines 7 and 9, about 15 of 590 signs. 96.8% measured in `reading_tokens.txt` (538 signs, 17 unread). Class:
 read; key recovered.
 
 ## Remaining gaps
