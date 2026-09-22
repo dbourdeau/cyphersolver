@@ -19,3 +19,12 @@
 - Ark btv1b90606498 (added to fetch.py ARKS). f.23r = canvas 47 (w2400); ~9 cipher lines with interlinear glosses above.
 - 255 tresve, 254 paix, 250 tout, 297 catholiques glossed directly. So 250 is "tout", and the no. 80 reading
   "faire 250 avec le Roy de Navarre" = paix should be re-checked (likely 254).
+
+## Second pass (21 Sept)
+- fr. 3984 f.182r/v re-read at w4000 (crops H339_*, H340_*): ~35 function-word and name codes aligned (280 de, 26 du Mayne,
+  409 que, 112 il, 110 pour, 105 faire, 362 la, 342 en, 457 duc de Feria, 42 Guise, 85.64.170 Mr le cardinal, 413 resolution...).
+  "115 celuy" in the first pass is 113. 327 conflict (Espagnolz vs Francois) left open.
+- BnF espagnol 336 = ark btv1b100325613 (added to fetch.py as VOL=esp336). no.79 (2 Mar) = canvases 268-269, no.80 (18 May)
+  = 272(-273), no.81 (4 July) = 270-271. Only no.81 f.159r carries interlinear glosses (partial, faint); nos.79/80 are bare
+  cipher with clear passages. No separate decipherment seen in canvases 260-275.
+- fr. 3985 canvases 48-49 are the blank verso and address leaf: nothing further to take.

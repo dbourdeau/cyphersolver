@@ -95,10 +95,10 @@ Applied to the three readings:
 
 ## Remaining gaps
 
-- no. 62 code numbers 30, 69, 85, 163, 247, 253, 257(?) and the ⅅX sign - blocker: open-codes; the letter reads around them, values not glossed in the three harvested decipherments.
-- no. 100 code numbers 22, 27, 49, 50, 64, 103, 150, 153, 161, 163, 227 (×3), 230, 258, 260, 274, 302, 305 and the large XC sign - blocker: open-codes; context proposals only (section 5).
-- no. 11 code numbers 50, 64 (archbishop of Lyon by history only), 130, 283, 305, and 250 uneasy - blocker: open-codes.
-- no. 62 f. 130v, three cipher lines (~half the signs) - blocker: illegible; recto ink bleed-through on the Gallica image, no better image online.
+- no. 62 code numbers 30, 69, 163, 247, 253, 257(?) and the ⅅX sign - blocker: open-codes; the letter reads around them, values not glossed in the three harvested decipherments.
+- no. 100 code numbers 22, 27, 49, 50, 103, 150, 153, 161, 163, 227 (×3), 230, 258, 260, 274, 302, 305 and the large XC sign - blocker: open-codes; context proposals only (section 5).
+- no. 11 code numbers 50 (Lyon? by history only; 64 = *le* is now glossed, so "le [50]" not "l'archevesque de"), 130, 283, 305, and 250 uneasy - blocker: open-codes.
+- no. 62 f. 130v, three cipher lines, ~62% read after registering and subtracting the mirrored recto at native resolution (221 *mariage*, *niece du duc de Florance*, 45 with 29); a blot dense on both sides and codes 100, 191, 223, 247 remain - blocker: illegible.
 - no. 11 seven short doubtful spans (ends of ll. 2, 20, start of l. 6 under a smudge, v10) - blocker: illegible; smudged or ambiguous sign forms.
 
 ## Escalation
@@ -109,4 +109,6 @@ Applied to the three readings:
 - [x] print: Tomokiyo (savoy.htm, league.htm) read; no printed reading of these letters found as far as checked.
 - [x] key-rebuild: letter-sign corrections (section 5) and code values by alignment with the contemporary decipherments and by context.
 - [x] retry: second sign-by-sign pass on all three letters with the corrected key and the harvested codes; codes regraded H/C/M/I.
-- Next: read fr. 3984 f. 182r closely (skipped by the harvest) and esp. 336 nos. 79-81 for the remaining codes.
+- [x] second harvest (21 Sept): fr. 3984 f. 182r-v re-read at higher resolution, ~40 more values (85 Monsieur, 64 le, 113 celuy, 114 eulx, 331 disoit, 349 estoit, 400 promettre ...; 257 glossed "en la faveur de" once, so ambiguous; the old "115 celuy" was 113). BnF esp. 336 (ark btv1b100325613): nos. 79 (canvases 268-269), 80 (272-273), 81 (270-271); only no. 81 is glossed (368 ma, 408 part, 359 ils, 383 ne). fr. 3985 f. 23v/24 blank/address.
+- [x] image-processing: f. 130v bleed-through removed by registering the mirrored recto (patch-wise warp, ~1 px) and whitening bleed-level pixels.
+- Result: 26 codes (22, 27, 30, 49, 50, 69, 103, 106, 130, 150, 153, 161, 163, 227, 230, 240, 241, 247, 253, 258, 260, 274, 275, 283, 302, 305) occur in NO surviving glossed decipherment. They can be closed only by the office key itself (not known to survive) or context; esp. 336 nos. 79-80 carry some of them unglossed (227, 163) and could give context values after a letter-key reading.

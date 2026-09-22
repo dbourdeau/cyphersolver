@@ -191,3 +191,34 @@ Mayenne] *et* [113 luy] [251 faict] [105 faire] [280 de] *grandes offres.*
 - Long h/ƒ is used for both **n** and **l** (*quelque, Borbon* vs *contantemant*); ł/h = l.
 - "g u" (e + 11 joined) = *en*; "bm/vm" = d confirmed (*deu, de, conduysant*).
 - 292 once follows *le* ("le [292]"): *royaume* is possible there, *couronne* elsewhere (*la [292]*).
+
+## f.130v cipher lines — cleaned-image pass
+
+Method: native Gallica f233/f234 (4944 px wide). Recto mirrored, registered by ECC affine, then refined with a
+quadratic displacement field fitted to ~200 template-matched tiles in the band y 3000-4100 (residual <1 px).
+Bleed level per bin of recto darkness was estimated from the verso, and verso pixels no darker than that level were
+set to paper. Cleaned strips (2x): W_line1.png (native y 3190-3350), W_line2.png (3330-3490), W_line3.png (3450-3610).
+The earlier y figures (1610-1780 of the 2400 px version) were about 60 px too low. The clean pass removes most of
+the bleed. Where the verso cipher strokes are no darker than the bleed (line 3 after 29), they are lost with it.
+
+### line 1
+signs: 100 . pp(a) g(e) m(e?) 11ŧ(n t? / 4t s?) s ^ #(o) #(o)? δδ(m) 12(a) . 252 . 191 .
+French: [100 ?] *a e… …o(m)a* [252 dict] [191 ?]. The run between "a e" and "ma" is clean but still ambiguous.
+It may be "a esté" plus a short word.
+
+### line 2
+signs: ∇(p/y) g(e) ooo(s) . **221** . ƀ(b) □(u) ℓ?(l) m(e) 11(n) λ̂(i) g(e) 8(c) m(e) . ƀ/δ(d) u(ŝ) □(u) ƀ(d?) ŝ(u) … 8(c) . 280 .
+20(f) h(l) #(o) 3H(r) 12(a) ƒ(n) 8(c) g(e) . … pp(a) ŝ(u) g(e) … 8(c) ǝ ɱ(e) … . 46 .
+French: *…es?* **[221 mariage]** *… niece du duc* [280 de] *Florance … au(?) …* [46 Lorraine].
+Code 221 (mariage) is now visible. The old reading had it and the first pass could not confirm it.
+
+### line 3
+signs: ℓℓf(et) α? b? ℓ m . 223 . ƀ □ . 45 . pp(a) v(ŝ) g(e) 8(c) . 29 . 4+(null) [ink blot, recto and verso ink
+together] h(l?) ooo(s) m(e) . 251 . 247 . then clear "Je suis attendant"
+French: *et …* [223 ?] *…* [45 le duc de Lorraine] *avec* [29 le Roy de Navarre] *…lse?* [251 faict] [247 ?].
+
+### Result
+Line 1 is only slightly better. Line 2 gains [221 mariage] and the Florance/niece run. Line 3 gains a new code, 223.
+Combined reading: "[100] a e[…]ma [dict] [191] …es [mariage] … niece du duc de Florance … [Lorraine] | et …
+[223] … [le duc de Lorraine] avec [le Roy de Navarre] … [faict] [247]". About 62% of signs read (was ~55%).
+Still open: codes 100, 191, 223, 247; the 5-6 signs after "a e" in line 1; the run before 46; the blot in line 3.
