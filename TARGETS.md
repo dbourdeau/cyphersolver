@@ -225,6 +225,7 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Ferenc Wesselényi → unknown recipient, "1 Jan 1664"**, catalogue 45, DECODE R674 (MNL OL E 199 8.1.01): read 22 Sept 2026 ciphertext-only; a draft to the King (Leopold I), c. 1663–64, reversed alphabet with vowel homophones (alphabet of key R672); 241/244 tokens, codes 60 and 64 open. See [wesselenyi1664/](wesselenyi1664/) and the [write-up](https://dbourdeau.github.io/cyphersolver/wesselenyi1664.html).
 - **Scribe's colophon of the Dominican sequentiary Uppsala UB C 513** (f. 19v, Strängnäs 1517), catalogue 235, DECODE R4349. Not a letter; vowel-shift colophon already read in the Uppsala catalogue (1992), transcribed and checked 22 Sept 2026. See [r4349/](r4349/).
 - **"N. Wottoy ?" → unknown recipient, June 1554**, catalogue 120, DECODE R8499 (BL Harley MS 1582 ff. 8–10): read in part 22 Sept 2026; Dr Nicholas Wotton (Soissons) to Queen Mary, 13 June 1554, key R354 (SP 106/2 f. 162); 75.0% firm, 89.4% incl. tentative; deciphered copy ff. 5r–7v not digitised. See [harley1582r8499/](harley1582r8499/).
 - **Unknown sender → "Paulo Borne?"**, catalogue 267, DECODE R1212 (HHStA Chiffrenschlüssel Kt. 13 Fasc. 20 ff. 38–39): read at the time; Pál Bornemisza's report to Ferdinand I on the Kendi treason, c. 1556, key R1211 on the next record, every run re-read; 9 number codes open. See [r1212/](r1212/).

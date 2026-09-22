@@ -932,6 +932,11 @@ PAGES = [
          blurb='DECODE R688, in the <em>Chiffres 1664&ndash;1668</em> bundle of the Vienna Hungarian conspiracy files, is catalogued as a simple substitution in graphic signs. The signs are Cyrillic letters and the language is Serbian: a prisoner named Stojan greets the aghas, knezes and his Vlachs by name and begs them to get him out of the German prison. A slip on f. 31 holds a second, damaged note.',
          quote='&ldquo;&#1084;&#1086;&#1078;&#1080;&#1090;&#1077; &#1084;&#1077;&#1085;&#1077; &#1080;&#1079;&#1074;&#1072;&#1076;&#1080;&#1090;&#1100; &#1080;&#1079; &#1085;&#1077;&#1084;&#1072;&#1095;&#1082;&#1080;&#1081; &#1090;&#1072;&#1084;&#1085;&#1080;&#1094;&#1077;&rdquo; (you can get me out of the German prison)',
          rights='&Ouml;sterreichisches Staatsarchiv, HHStA, via DECODE R688'),
+    dict(slug='wesselenyi1664', label='Wessel&eacute;nyi c. 1663&ndash;64', year='c. 1663&ndash;64', y=1663.9, place='Palatine Wessel&eacute;nyi &rarr; Leopold I', st='solved', stt='read',
+         title='Wessel&eacute;nyi&rsquo;s cipher draft, c. 1663&ndash;64 &mdash; Read',
+         blurb='DECODE R674 (MNL OL E 199, 8. pallium 1. 01), a one-page Latin draft in the Wessel&eacute;nyi family archive catalogued as non-decrypted, hides its key words in a reversed alphabet, 24 = a down to 1 = z, with vowel homophones 25&ndash;29. Broken ciphertext-only with a Latin model, then confirmed by DECODE key R672, which has the same alphabet. The Palatine proposes joining the regiments of Heister, Schneidau and Sporck to force a town to take an imperial garrison. 241 of 244 cipher tokens read; codes 60 and 64 stay open.',
+         quote='&ldquo;quod ista nux durissima tandem aliquando necessario frangi debet&rdquo;',
+         rights='Magyar Nemzeti Lev&eacute;lt&aacute;r, via DECODE R674 (images not reproduced)'),
     dict(slug='hyde', label='Hyde', year='1659&ndash;60', y=1659, place='Brussels', st='found', stt='explained',
          title='Hyde&rsquo;s ciphered superscriptions &mdash; not a cipher at all',
          blurb='The four &ldquo;undeciphered addresses&rdquo; on Hyde&rsquo;s letters to Barwick decode to nothing under the full Hyde&ndash;Barwick key printed in 1721, because, as the 1724 editor states, they were numbers &ldquo;signifying nothing &hellip; only to puzzle the Enemy&rdquo;.',
@@ -1145,6 +1150,7 @@ IMAGES['kaa4591'] = None
 IMAGES['kaa4591b'] = None
 IMAGES['r1874'] = None
 IMAGES['r1212'] = None
+IMAGES['wesselenyi1664'] = None
 IMAGES['harley1582r8499'] = ('harley1582r8499_lead.jpg', 'Harley MS 1582 f. 8r: &ldquo;Pleasing it your highness to understand that&rdquo;, then the cipher: Carew was at Compi&egrave;gne with the French king, the rebels and the Constable', 'British Library, Harley MS 1582 f. 8r (via DECODE R8499)')
 IMAGES['r1875'] = None
 IMAGES['haga1620'] = ('haga1620_lead.jpg', 'R2113 p.2, Constantinople 31 March 1620: clear Dutch with the cipher spans inline, (44) ende (45) arbeiden bij (4) om tyt te winnen', 'Nationaal Archief, The Hague, via DECODE R2113')
