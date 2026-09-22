@@ -252,6 +252,11 @@ PAGES = [
          blurb='Nine ciphered reports of the imperial vice-chancellor from Hamburg and Gl&uuml;ckstadt, January to April 1639, in the Trauttmansdorff archive at Kl&aacute;&scaron;ter (DECODE R3811&ndash;R4736). M&iacute;rka rebuilt the key in 2012 and read one letter but printed nothing. From the same interlinear glosses the key falls out as a regular table: 41&ndash;100 are consonant&ndash;vowel syllables, two consonants to each ten in reverse alphabetical order, and the low numbers are homophones. All nine letters decipher in a first pass: Ban&eacute;r in Lower Saxony, Arnim&rsquo;s bid for pardon, the Danish mediation and its collapse.',
          quote='&ldquo;besser ein ungeschlossener, durch den Feindt zertrennter Craistag als ein geschlossener mit einer expressen Neutralitet&rdquo;',
          rights='St&aacute;tn&iacute; oblastn&iacute; archiv v Plzni, via DECODE R3811&ndash;R4736'),
+    dict(slug='marburg1635', label='Marburg cipher report', year='1635&ndash;52', y=1635.5, place='Unknown &rarr; Hesse-Kassel', st='partial', stt='read in part',
+         title='The Marburg cipher report &mdash; a Hesse-Kassel letter&rsquo;s digit cipher rebuilt and read',
+         blurb='DECODE R4500, a German report in Hesse-Kassel&rsquo;s cipher files at Marburg, ends in fourteen lines of digits and signs, with a contemporary gloss over the first four. No key sheet in the volume fits; the key was rebuilt by annealing against a sixteenth-century German model and checked against the gloss. Lines 3&ndash;14 read: the writer has reported to the Emperor and the Elector of Bavaria and asks to be held excused. Lines 1&ndash;2 stay open.',
+         quote='&ldquo;damit ich aus allen fall entschuldigt sein&rdquo;',
+         rights='Hessisches Staatsarchiv Marburg, HStAM 4 d Nr. 1218, via DECODE'),
     dict(slug='heusner1637', label='Heusner 1637', year='1637', y=1637.4, place='Kassel &rarr; Oxenstierna', st='found', stt='read by others',
          title='Heusner von Wandersleben to Oxenstierna, 1637 &mdash; already read by Waldisp&uuml;hl and Kopal',
          blurb='A German numerical homophonic letter from Kassel, catalogued twice (DECODE R4332 &ldquo;partly solved&rdquo;, R3816 &ldquo;not solved&rdquo;). The two records carry the same three scans, and the letter was deciphered by Michelle Waldisp&uuml;hl and Nils Kopal (HistoCrypt 2024). Their key, applied here to a fresh transcription of one page, reproduces their reading. The letter is dated 15 May 1637, not March; the code numbers stay open.',
@@ -1042,6 +1047,7 @@ IMAGES['hereditary1796'] = ('hereditary1796_lead.jpg', 'R2239, head of the lette
 IMAGES['r1892'] = ('r1892_lead.jpg', 'Page 2, the head of the Dutch postscript: in het hollandsch met cijffer, then digit pairs written top over bottom', 'Koninklijk Huisarchief, The Hague, via DECODE R1892')
 IMAGES['r2242'] = ('r2242_lead.jpg', 'Page 1: four cipher lines, the clear Dutch written beneath', 'Koninklijk Huisarchief, The Hague, via DECODE R2242')
 IMAGES['r2234'] = ('r2234_lead.jpg', 'The head of the letter: section capital D, the date in clear, then one line per alphabet', 'Koninklijk Huisarchief, The Hague, via DECODE R2234')
+IMAGES['marburg1635'] = ('marburg1635_lead.jpg', 'The cipher lines with the contemporary gloss over the first four', 'Hessisches Staatsarchiv Marburg, via DECODE R4500')
 IMAGES['r2232'] = ('r2232_lead.jpg', 'The opening of the letter: clear text, then the numbers with superscript indices', 'Koninklijk Huisarchief, The Hague, via DECODE R2232')
 IMAGES['r1942'] = ('r1942_lead.jpg', 'Hogendorp&rsquo;s ciphered dispatch no. 12 of 5 July 1803: the clear address to Maarten van der Goes followed by the marked numerical groups', 'Nationaal Archief, The Hague, via DECODE R1942')
 
