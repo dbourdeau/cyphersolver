@@ -1,0 +1,83 @@
+{
+ "schema_version": 1,
+ "target": "ducroc",
+ "title": "Catherine de Médicis to Philibert du Croc, Saint-Maur, 27 April 1567 (Destray 1924, facsimile plate)",
+ "documents": [
+  {
+   "id": "letter",
+   "read": "not read",
+   "shelfmark": "Archives départementales de la Nièvre (original); facsimile in P. Destray, Philibert du Croc (1924), plate after p. 56, Gallica bpt6k932364m f61",
+   "date": "27 Apr 1567",
+   "year": 1567,
+   "country": "France",
+   "route": "Saint-Maur -> unknown (du Croc, at the Queen of Scots' court per the clear text)",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": ["none"],
+    "source": "Destray prints the letter (p. 53) without a decipherment; the Cipherbrain thread (Schmeh, 19 May 2021) proposed no reading; Tomokiyo lists it as unsolved. Whether the Nièvre archive holds a decipherment was not checked."
+   },
+   "length": {
+    "tokens": 166,
+    "distinct": 41,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ct.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF plate at 3328 x 4796 px",
+    "image_quality": "good",
+    "notes": "Measured 166 tokens / 41 distinct include 19 dots; without the dots 147 tokens / 40 distinct, as in NOTES. Several glyph identities uncertain (ticks, hooked G, y/ȥ); not checked by a second reader."
+   }
+  }
+ ],
+ "system": {
+  "types": ["undetermined"],
+  "summary": "Symbol cipher of Latin letters, a few digits and graphic signs (40 distinct), with sparse dots of unknown function; system not established.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 40,
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Lasry's key for Charles IX to du Croc (cryptiana GL.htm, 25 May 2022): a different symbol set, does not fit; not used.",
+  "notes": "Dots occur 11 times in NOTES' count (19 dot tokens in ct.txt) and may be phrase marks or nulls; four vertical ticks may be letters or marks. Clear lead-in 'Jay receu du sr x3 lettres en datte' suggests the cipher opens with dates."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No reading found: Cipherbrain 2021 thread, Tomokiyo's unsolved list, Destray 1924.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": ["images", "cleartext context"],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": ["French 5-gram language model (lm.py)", "homophonic annealer (solve.py)", "matched control (control.txt)"],
+  "models": ["claude-fable-5-1"],
+  "sessions": 1,
+  "first_date": "2026-09-16",
+  "last_date": "2026-09-16"
+ },
+ "solution": [
+  {"date": "2026-09-16", "kind": "access", "what": "Fetched the Destray plate through Gallica's IIIF route at native resolution.", "result": "worked"},
+  {"date": "2026-09-16", "kind": "transcription", "what": "Transcribed six cipher lines at glyph level (ct.txt): 147 symbols, 40 distinct, plus dots.", "result": "worked"},
+  {"date": "2026-09-16", "kind": "sibling key", "what": "Compared Lasry's Charles IX to du Croc key: different symbol set, does not fit.", "result": "ruled out"},
+  {"date": "2026-09-16", "kind": "control", "what": "147-letter passage of du Croc's 1567 despatch under a 40-symbol homophonic key: the annealer recovers 28-41 % over six seeds, so a ciphertext-only attack at this length is below threshold and was not run on the target.", "result": "failed"}
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "no reading file; no sign has a value",
+  "grades": "unknown",
+  "verification": ["none"],
+  "notes": "Transcribed, attempted, not solved: needs cribs (du Croc's April 1567 letters, Catherine's letters of the month) or evidence that the dots/ticks are word separators."
+ }
+}

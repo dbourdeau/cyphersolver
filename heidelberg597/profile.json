@@ -1,0 +1,142 @@
+{
+ "schema_version": 1,
+ "target": "heidelberg597",
+ "title": "Alchymey teuczsch, alchemical recipe book, East Bavaria 1426, Heidelberg Cod. Pal. germ. 597 (DECODE R2876)",
+ "documents": [
+  {
+   "id": "cpg597",
+   "read": "read in part",
+   "shelfmark": "Heidelberg UB, Cod. Pal. germ. 597 (DECODE R2876)",
+   "date": "1426 (f. 9r: 'ym [tauro] xiiii und xxvj')",
+   "year": 1426,
+   "country": "Bavaria",
+   "route": "not applicable (a recipe book, not a letter)",
+   "language": "German",
+   "pages": 85,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Wattenbach, Anzeiger fuer Kunde der deutschen Vorzeit NF 16 (1869), cols. 264-268 (plaintexts of ff. 1r, 5v, 6v); Eis 1957/1982 extracts; Kalning, Miller, Zimmermann, Cod. Pal. germ. 496-670 (2014), pp. 257-260, quotations resolved, incl. f. 93r",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Heidelberg digi.ub IIIF images (Public Domain Mark), 85 written leaves; glyph boxes by seg.py/seg2.py, enlarged strips",
+    "image_quality": "good",
+    "notes": "No continuous transcription of the cipher was made; only the alphabets (f. 1r, f. 6v, f. 91v) and check words (f. 1r l. 2, f. 11r, f. 93r) were transcribed sign by sign, so no token count exists. The survey of all 85 leaves locates the cipher runs."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Three simple sign alphabets for German (key A, the compiler's 24-sign 'new abc' of f. 1r; key B, stroke and figure signs of ff. 6v and 91v; set C of ff. 1r, 5v-6r, 44v, 93r), used for substance names inline in clear recipes and for a few whole passages.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": "unknown",
+   "note": "Set C distinguishes a box with one dot (e) from a box with two dots (t); dotted-box variants in the f. 6r glossary are not assigned."
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "none; the three sets share a b c d e and differ for i, n",
+  "notes": "distinct_symbols is key A (24 signs incl. sch and ch). Key B has 19 values fixed from Wattenbach's f. 6v plaintext, with medial and final s as different signs; set C is fixed for 11 letters. Key A m-ch graded lower (read from shape under the strike)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Wattenbach 1869 (broke and described the ciphers, facsimiles and plaintexts of ff. 1r, 5v, 6v); Eis 1957/1982; Heidelberg catalogue 2014 (reads f. 93r). DECODE R2876 'Non-decrypted' is stale.",
+   "found": "unknown",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading",
+   "key from archive"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the oldest-cipher candidate list (oldest/CANDIDATES.md A4). Images are free (no login). No target-specific intervention recorded in NOTES or git.",
+  "tools": [
+   "lines.py (ink-profile line detection)",
+   "seg.py, seg2.py (connected-component glyph boxes, strike-line removal)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-18",
+  "last_date": "2026-09-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-18",
+   "kind": "access",
+   "what": "IIIF manifest and images of the 85 written leaves fetched with a browser User-Agent; catalogue pp. 256-261, Bischoff 1954 and Wattenbach's pages obtained.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "literature search",
+   "what": "Found Wattenbach 1869, Eis and the 2014 catalogue: the ciphers were broken in 1869. The candidate list's 'ff. 70-71' shown to be Bischoff's item numbers, not folios.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "statistics",
+   "what": "Survey of all 85 leaves (three agents) locating every cipher run: f. 1r, ff. 5v-6r, 6v, 7r-22r, 9r, 44v, 46r-v, 54r-61r, 79ar, 91v, 93r.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "key from source",
+   "what": "Key A: the compiler's struck 24-sign alphabet on f. 1r read after removing the strike line (seg2.py), aligned with Wattenbach's reading 'abcdefghiklmnopqrsstuwschch'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "verification",
+   "what": "Key A checked on f. 1r l. 2 'hab es' and the f. 11r heading 'niklas gank?icz' (modern pencil gloss 'Niklas Gankwiz'); one sign unread.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "crib",
+   "what": "Key B: f. 6v aligned glyph by glyph (seg.py) against Wattenbach's printed invocation; 19 values; f. 91v found to be the same set in abc order.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "crib",
+   "what": "Set C: 11 letters fixed from the catalogue's f. 93r reading 'in dem caichen' and Wattenbach's f. 1r l. 1 'Das ist ein abc'; s and t from one word each.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "fraction_read": "unknown",
+  "verification": [
+   "independent clear copy",
+   "key confirms"
+  ],
+  "notes": "Read by Wattenbach 1869; added here: the alphabets recovered from the images and checked, set C partly fixed, the survey, the folio correction. Open: no continuous transcription of the recipe cipher (ff. 7r-22r, 46r-v, 54r-61r), f. 9r ll. 7-12, the f. 6r glossary or f. 44v; key A m-ch unchecked on running text. NOTES has no '## Remaining gaps' section."
+ }
+}

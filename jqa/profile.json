@@ -1,0 +1,215 @@
+{
+ "schema_version": 1,
+ "target": "jqa",
+ "title": "John Quincy Adams to the Secretary of State, St Petersburg, No. 88, 25 June 1812: the passages Ford printed as not decyphered (NARA M35 reel 3 frames 0206-0207)",
+ "documents": [
+  {
+   "id": "no88-gap",
+   "read": "read in part",
+   "shelfmark": "NARA M35 reel 3 frame 0206 (triplicate); Ford, Writings of JQA 4:357 '[Nine lines of this paragraph not decyphered.]'",
+   "date": "25 Jun 1812",
+   "year": 1812,
+   "country": "United States",
+   "route": "St Petersburg -> Washington",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The clerk's interlinear decode on frame 0206 stops exactly where Ford's gap starts; Ford prints the gap as not decyphered."
+   },
+   "length": {
+    "tokens": 134,
+    "distinct": 100,
+    "unit": "code groups",
+    "measured": true,
+    "file": "gap88.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M35 reel 3 frame 0206",
+    "image_quality": "unknown",
+    "notes": "Group transcription in gap88.txt; clear words kept inline."
+   }
+  },
+  {
+   "id": "no88-remainder",
+   "read": "read in part",
+   "shelfmark": "NARA M35 reel 3 frame 0207 (left leaf); Ford 4:358 'remainder of letter ... undecyphered'",
+   "date": "25 Jun 1812",
+   "year": 1812,
+   "country": "United States",
+   "route": "St Petersburg -> Washington",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Ford prints the remainder as undecyphered; no decode on the NARA copy recorded in NOTES."
+   },
+   "length": {
+    "tokens": 257,
+    "distinct": 161,
+    "unit": "code groups",
+    "measured": true,
+    "file": "rem88.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M35 reel 3 frame 0207",
+    "image_quality": "unknown",
+    "notes": "The measured 257 includes 7 tokens with lost digits (142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx); render.py counts the 250 complete groups. NOTES give 210 of 250 rendered; render.py now gives 212 of 250."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "Numerical syllable-and-word code (the = 1385) cut into alphabetical blocks of about 50 numbers, the blocks shuffled; whole words in 1-100.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 371,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Armstrong's THE=972 code (armstrong/), which Madison's editors said JQA used; tested and ruled out. Pinkney's London code named in Smith's 1809 instructions (Ford 3:327-28) not tested.",
+  "notes": "distinct_symbols = distinct groups in pairs_jqa.txt (262 H, 93 M, 48 I lines). separation is as transcribed in gap88.txt; the manuscript's separators are not recorded."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Ford printed both passages as not decyphered; the clerk's decode on frame 0206 covers only the rest of the despatch. No other reading found.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Project-level: set up Claude Code with Fable 5.1 or Opus 5 and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "render.py (table application)",
+   "codescore.py (frame scoring for code texture)",
+   "../armstrong/decode972.py (THE=972 test)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-18",
+  "last_date": "2026-09-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-18",
+   "kind": "literature search",
+   "what": "Checked the Madison editors' claim that JQA used Armstrong's THE=972 code against Ford 3:327-28 and 3:370.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "access",
+   "what": "Fetched NARA M35 reels 2 and 3 frames and scored them for code texture (codescore.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "sibling key",
+   "what": "Applied the 592-entry Armstrong THE=972 table to JQA's 1812 despatches: noise; his code has the = 1385, of = 1576.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "key from source",
+   "what": "Read the clerk's interlinear decodes on frames 0206 and 0189 into pairs_jqa.txt (262 clerk-attested pairs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "statistics",
+   "what": "Worked out the code's structure: alphabetical blocks of about 50 numbers, shuffled, whole words in 1-100.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "prediction",
+   "what": "Filled groups by slot inference inside the blocks and context (48 I and 93 M pairs).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "reading",
+   "what": "Ford's nine undecyphered lines (gap88.txt) read 124 of 134 groups: Rumyantsev's strokes at Wilna and the false report of his death.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "reading",
+   "what": "The remainder on frame 0207 (rem88.txt) renders 212 of 250 complete groups, in threads only.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "python render.py gap88.txt (124 of 134) and rem88.txt (212 of 250 complete groups; the 7 truncated tokens counted unread): 336 of 391 cipher tokens given a value, M and I values included",
+  "fraction_read": 0.859,
+  "codes_open": {
+   "open": "unknown",
+   "total": "unknown",
+   "tokens_open": 55
+  },
+  "grades": "unknown",
+  "verification": [
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "No. 88 gap passage: 10 groups unread (1434, 168, 1081, 1425, 83, 1575, 1405, 1112, 492, 1060)",
+    "blocker": "not-attempted",
+    "detail": "NOTES 'Next': more clerk-decoded pages (0182-0185, 0190, 0194-0199, 0211; reel 2) are unread and should settle the {n} groups."
+   },
+   {
+    "item": "No. 88 remainder (frame 0207): 38 complete groups unread and the text readable in threads only",
+    "blocker": "not-attempted",
+    "detail": "Same route: more clerk-decoded pages into pairs_jqa.txt."
+   },
+   {
+    "item": "No. 88 remainder: 7 groups with lost digits at line ends",
+    "blocker": "illegible",
+    "detail": "Transcribed as 142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx."
+   }
+  ],
+  "notes": "NOTES.md has no '## Remaining gaps' or '## Escalation' section; the gaps above are taken from its sections 3-4 and 'Next'. Of the 124 groups read in the gap passage, 27 are slot inferences (README). Coherence is lower than fraction_read on the remainder, which NOTES call 'not yet a clean text'. Model id from commit trailers (Claude Opus 5, 1M context); the jqa files were committed inside commits about other targets."
+ }
+}

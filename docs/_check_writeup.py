@@ -420,11 +420,16 @@ def audit(brief=False):
         first = r['section'].split(' ')[0]
         if first not in ('Solved:', 'Read', 'Partly') or len(r['dirs']) != 1: continue
         k = outcome_kind(next(iter(r['dirs'])).split('/')[-1])
-        if k in want and want[k] != first: drift.append(f'{key_words(r["target"])}: README section {first} but profile says {k}')
+        if (k in want and want[k] != first) or (k and k not in want and first in ('Solved:', 'Read')):
+            drift.append(f'{key_words(r["target"])}: README section {first} but profile says {k}')
         for s in r['slugs']:
             ks = outcome_kind(s) if (ROOT / s / 'profile.json').exists() else k   # a page with its own folder
-            if s not in pages or ks not in want: continue
-            st, stt = pages[s]; badge = re.sub(r'<[^>]+>|&[a-z]+;', '', stt).strip().lower()
+            if s not in pages or not ks: continue
+            st, stt = pages[s]
+            if ks not in want:
+                if st == 'solved': drift.append(f'{s}.html: badge {st}/{stt} but profile says {ks}')
+                continue
+            badge = re.sub(r'<[^>]+>|&[a-z]+;', '', stt).strip().lower()
             ok = {'solved': st == 'solved' and badge.startswith('solved'),
                   'read': st == 'solved' and not badge.startswith('solved'),
                   'read in part': st == 'partial'}[ks]

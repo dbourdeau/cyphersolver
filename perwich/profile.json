@@ -1,0 +1,88 @@
+{
+ "schema_version": 1,
+ "target": "perwich",
+ "title": "William Perwich to Lord Arlington, Paris, 9 April 1670, TNA SP 78/129 f. 180",
+ "documents": [
+  {
+   "id": "f180",
+   "read": "read",
+   "shelfmark": "TNA SP 78/129 f. 180",
+   "date": "9 Apr 1670",
+   "year": 1670,
+   "country": "England",
+   "route": "Paris -> London",
+   "language": "English",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": ["unrelated source"],
+    "source": "Published decipherment announced by the National Archives on 14 Oct 2025 (Matthew Brown; independently George Lasry, Norbert Biermann and Satoshi Tomokiyo); TNA blog 'Secret diplomatic message deciphered after 350 years'. Copy in plaintext_tna.txt.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 494,
+    "distinct": 48,
+    "unit": "letters",
+    "measured": true,
+    "file": "perwich.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Satoshi Tomokiyo's transcription (cryptiana blog, Sept 2025) of the TNA images published 4 Aug 2025",
+    "image_quality": "unknown",
+    "notes": "Measured with --skip '^[^\\t]*$' (tab-separated cipher rows only). 494 cells include the clear word 'likelyhood' after the block; 493 cipher cells = 414 plaintext cells + 47 column-tail nulls + 32 cells in the two null lines (rows 1 and 22), which matches solve20.py report. Cells are mostly letters but include scribal abbreviations (ye, yt, ym, wt, &) and nomenclator numbers; residual c/e, U/ll and 6/o slips are in the transcription."
+   }
+  }
+ ],
+ "system": {
+  "types": ["transposition", "nomenclator"],
+  "summary": "Columnar transposition with 20 columns, each written out as a line padded with nulls, framed by two null lines, with a few numeric nomenclator codes inside the plaintext.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 48,
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": true, "entries": 5, "kinds": ["names", "places"], "unread_groups": 5},
+  "nulls": {"present": true, "count": 79},
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "sibling_key": "none used",
+  "notes": "Key as transcribed row numbers in plaintext column order: 15 20 19 17 18 21 16 14 2 4 3 5 6 7 13 12 11 10 9 8. Nulls: 47 column-tail cells plus the two null lines (23 + 9 cells). Nomenclator entries counted from the plaintext (40, 60, 61, 96, 97); 910 and 192 sit in the null tails."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "TNA blog, 14 Oct 2025: broken independently by Matthew Brown and by Lasry, Biermann and Tomokiyo; plaintext in plaintext_tna.txt",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": ["transcription", "published reading"],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": ["quadgram hill-climber over column order (solve20.py)", "chi-squared and digram-repeat tests (grid.py, routes.py)", "substitution solvers (masc.py, stream.py, segclimb.py)"],
+  "models": ["claude-opus-5"],
+  "sessions": 1,
+  "first_date": "2026-09-15",
+  "last_date": "2026-09-15"
+ },
+ "solution": [
+  {"date": "2026-09-15", "kind": "transcription", "what": "Took Tomokiyo's transcription (perwich.txt) of the TNA images as the ciphertext.", "result": "worked"},
+  {"date": "2026-09-15", "kind": "statistics", "what": "Chi-squared of the whole grid against English (160) and a digram-repeat test over the transcribed columns, used to argue the cipher was a substitution, not a transposition.", "result": "failed"},
+  {"date": "2026-09-15", "kind": "solver", "what": "Substitution and route attacks on the grid (masc.py, routes.py, stream.py, segclimb.py) under the substitution hypothesis; the reading they produced was wrong.", "result": "failed"},
+  {"date": "2026-09-15", "kind": "literature search", "what": "Found the TNA announcement of 14 Oct 2025 that the cipher had been broken twice as a 20-column transposition with nulls.", "result": "worked"},
+  {"date": "2026-09-15", "kind": "hypothesis", "what": "Rows 2-21 of the transcription are the 20 columns padded with nulls; rows 1 and 22 are null lines. The chi-squared failure is explained by 8 q nulls (106 of 160); on plaintext cells only it is 28.0.", "result": "worked"},
+  {"date": "2026-09-15", "kind": "solver", "what": "Quadgram hill-climber over the order of rows 2-21 (solve20.py), without the published plaintext, finds the cyclic key; its start is fixed by the text and by the 14 longer columns.", "result": "worked"},
+  {"date": "2026-09-15", "kind": "verification", "what": "The 414 plaintext cells equal the token count of the published plaintext and read as it does, apart from transcription slips (c/e, U for ll, 6 for o).", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "fraction_read": 0.988,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "python solve20.py report: 414 plaintext cells, 5 of them nomenclator numbers without a value (40, 60, 61, 96, 97); 409/414",
+  "codes_open": {"open": 5, "total": 5, "tokens_open": 5},
+  "grades": "unknown",
+  "verification": ["independent clear copy", "key confirms"],
+  "notes": "Solved by others in Oct 2025; this project first argued, wrongly, that it was a substitution, then reproduced the published break. The transposition key is complete; the nomenclator numbers are unread (40 probably a place, 60 96 and 61 persons). Status in NOTES: no write-up."
+ }
+}

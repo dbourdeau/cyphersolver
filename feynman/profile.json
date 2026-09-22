@@ -1,0 +1,69 @@
+{
+ "schema_version": 1,
+ "target": "feynman",
+ "title": "Feynman ciphers nos. 2 and 3 (1953): verification of David Vierra's 2023 solution",
+ "documents": [
+  {
+   "id": "no2",
+   "read": "read",
+   "shelfmark": "Feynman cipher no. 2",
+   "date": "unknown",
+   "year": 1953,
+   "country": "unknown",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {"location": ["unrelated source"], "source": "Housman, A Shropshire Lad LXII ('Terence, this is stupid stuff'), ll. 19-32; identified by D. Vierra, May 2023 (codewarrior0.github.io cipher-blog).", "partial": false},
+   "length": {"tokens": 261, "distinct": 26, "unit": "letters", "measured": false, "file": "verify.py"},
+   "transcription": {"by": "published", "source": "unknown (ciphertext string C2 in verify.py; its source is not recorded)", "image_quality": "no images", "notes": "Count is len(C2) in verify.py, not from _check_profile.py --measure (the ciphertext is embedded in a script)."}
+  },
+  {
+   "id": "no3",
+   "read": "read",
+   "shelfmark": "Feynman cipher no. 3",
+   "date": "unknown",
+   "year": 1953,
+   "country": "unknown",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {"location": ["unrelated source"], "source": "Opening sentences of Feynman, Phys. Rev. 91, 1291 (1953), 'Atomic Theory of the lambda Transition in Helium'; identified by D. Vierra, May 2023.", "partial": false},
+   "length": {"tokens": 231, "distinct": 26, "unit": "letters", "measured": false, "file": "verify.py"},
+   "transcription": {"by": "published", "source": "unknown (ciphertext string C3 in verify.py; its source is not recorded)", "image_quality": "no images", "notes": "Count is len(C3) in verify.py, not from _check_profile.py --measure."}
+  }
+ ],
+ "system": {
+  "types": ["monoalphabetic", "polyalphabetic", "transposition"],
+  "summary": "Two monoalphabetic substitution alphabets alternating word by word (alphabet 1 at each line start), even-length words reversed after substitution, word boundaries dropped.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 26,
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": false},
+  "nulls": {"present": false},
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "notes": "Alphabets from Vierra: A1 = MANYREQUS.HVBCID.OLWGZX.K., A2 = JHAZTENYXMLOCUFBQVKPSGW.D. (position i = cipher letter for plaintext A+i). In no. 2 the encoder breaks the alternation once (ENGLAND BREWS both under A2)."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "online", "where": "David Vierra, May 2023, https://codewarrior0.github.io/cipher-blog/2023/05/27/feynman-solved.html", "found": "before attempt", "used": true},
+  "inputs": ["transcription", "published key", "published reading"],
+  "attack": "published key",
+  "human_role": "unknown",
+  "tools": ["re-encryption check (verify.py)", "Viterbi word segmentation over the two alphabets (decrypt.py)"],
+  "models": ["unknown"],
+  "sessions": 1,
+  "first_date": "2026-09-14",
+  "last_date": "2026-09-14"
+ },
+ "solution": [
+  {"date": "2026-09-14", "kind": "literature search", "what": "Found the target solved by David Vierra (May 2023): two alternating alphabets, even-length words reversed.", "result": "worked"},
+  {"date": "2026-09-14", "kind": "verification", "what": "Re-encrypted the claimed plaintexts (verify.py): no. 3 228/231 positions match (one-letter slip and a transposed pair); no. 2 first 118 characters exact, 208/261 overall, mismatches explained by an alternation break and the encoder's wording of line 27.", "result": "worked"},
+  {"date": "2026-09-14", "kind": "reading", "what": "Independent decryption from the ciphertexts with the published alphabets and dictionary Viterbi segmentation (decrypt.py) recovers both plaintexts, garbling only at the encoder's slips.", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "verification": ["key confirms", "independent clear copy"],
+  "notes": "Solved by Vierra 2023; the published key and readings were confirmed here, nothing added. README lists it among entries 'solved by others with nothing to add here', not counted in the results. The folder has no profile-relevant fraction file; fraction_read not recorded."
+ }
+}

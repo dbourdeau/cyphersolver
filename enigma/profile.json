@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "target": "enigma",
+ "title": "\"KR Blitz\" Enigma message, OB Oberrhein IIa to OKW, 10 January 1945 (Schmeh 2019; TARGETS no. 19)",
+ "documents": [
+  {
+   "id": "msg86",
+   "read": "not read",
+   "shelfmark": "Funkspruch form no. 86, photo supplied by Hptm. Wolfgang Schmidt (Bundeswehr museum, Feldafing), published by Klaus Schmeh 7 Jan 2019",
+   "date": "10 Jan 1945",
+   "year": 1945,
+   "country": "Germany",
+   "route": "OB Oberrhein IIa (Nachrichtenstelle Karpathen) -> OKW",
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": ["none"],
+    "source": "No decipherment known; Friederes (2023, bomm) searched Enigma I and other models and found nothing."
+   },
+   "length": {
+    "tokens": 97,
+    "distinct": 25,
+    "unit": "letters",
+    "measured": true,
+    "file": "NOTES.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Schmeh's photo of the form (Enigma-Himmler.jpg, 1200 x 1683), read at glyph level",
+    "image_quality": "fair",
+    "notes": "Measured from the ciphertext block in NOTES.md (--letters, skipping every line that is not 5-letter groups); matches the header count 97. Four doubtful glyphs (groups 4, 7, 12, 18); readings differ from Friederes' in 4 letters. Indicator HIQ RST read from the header (not BIQ)."
+   }
+  }
+ ],
+ "system": {
+  "types": ["polyalphabetic"],
+  "summary": "Presumed Army/Luftwaffe Enigma I (UKW B assumed) with plugboard, Grundstellung HIQ and enciphered message key RST; machine settings unknown.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 25,
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": false},
+  "nulls": {"present": false},
+  "key_order": "not applicable",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Kenngruppe question settled on the Huppenkothen 1945 key: the first group is ciphertext, so all 97 letters are ciphertext. Machine model (UKW, left-wheel step) is still an assumption."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Schmeh 2019 and 2021 list it unsolved; Tomokiyo unsolved.htm; Friederes 2023 thesis attack found nothing.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": ["images"],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": ["Enigma reference machine (enigma_core.py)", "numba plugboard hill-climber with E/N starts and ILS (solver.py, climb2.py, run_all.py)", "simulated annealing (sa.py)", "German Enigma-convention n-gram model (lm_build.py)", "indicator check (analyze.py)", "controls (controls.py, calib.py, bench*.py)"],
+  "models": ["claude-fable-5-1"],
+  "sessions": 1,
+  "first_date": "2026-09-16",
+  "last_date": "2026-09-17"
+ },
+ "solution": [
+  {"date": "2026-09-16", "kind": "transcription", "what": "Read the form and the 97-letter text from Schmeh's photo at glyph level; indicator HIQ RST; four doubtful glyphs compared with earlier readings.", "result": "worked"},
+  {"date": "2026-09-16", "kind": "literature search", "what": "Found Friederes' 2023 bomm attack (Enigma I UKW-B and other models, nothing found; middle ring not enumerated).", "result": "worked"},
+  {"date": "2026-09-16", "kind": "hypothesis", "what": "Kenngruppe question: decrypting the Huppenkothen 1945 message with its published key from the first group shows no discriminant group, so all 97 letters are ciphertext.", "result": "worked"},
+  {"date": "2026-09-16", "kind": "control", "what": "Calibrated the climber on real 1945 ciphertext and 40 synthetic 97-letter texts: 67 % with E-starts, 81-86 % with N-starts and ILS; failures are low-IC plaintexts at the unicity edge.", "result": "worked"},
+  {"date": "2026-09-16", "kind": "verification", "what": "Indicator check (analyze.py) validated on Huppenkothen parts 1-3: returns the published rings and message keys.", "result": "worked"},
+  {"date": "2026-09-16", "kind": "solver", "what": "Exhaustive pass main97: Enigma I, UKW B, no left step, 60 wheel orders x 17,576 x 26 locations; 32 of 60 orders completed before interruption on 17 Sept, no convincing plaintext.", "result": "failed"}
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "results/main97/log.txt: best candidates per wheel order are not German",
+  "grades": "unknown",
+  "verification": ["none"],
+  "notes": "Status in NOTES: attempt in progress. Remaining passes: the 28 unfinished wheel orders, left-wheel step variants, the 92-letter variant, UKW C; historically the OKW copy or BA-MA RH 19 XIV could hold the clear text."
+ }
+}

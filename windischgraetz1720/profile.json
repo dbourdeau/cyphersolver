@@ -1,0 +1,118 @@
+{
+ "schema_version": 1,
+ "target": "windischgraetz1720",
+ "title": "Charles VI to Count Leopold Viktorin Windischgrätz, four letters, Vienna 3 Feb 1720 - 11 Apr 1722, SOA Plzeň RA Windischgrätz (DECODE R5019-R5024)",
+ "documents": [
+  {
+   "id": "No. 1",
+   "read": "read",
+   "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 694 karton 5 (autograph, DECODE R5019); inv. 5 book 5 pp. 401-404 (copy, DECODE R5020)",
+   "date": "3 Feb 1720",
+   "year": 1720,
+   "country": "Austria (Emperor Charles VI)",
+   "route": "Vienna -> The Hague",
+   "language": "German",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"], "source": "No decipherment on the documents or in print; Mírka 2012 describes the letter but prints no decryption."},
+   "length": {"tokens": 223, "distinct": 137, "unit": "mixed", "measured": true, "file": "ct_1720-02-03.txt"},
+   "transcription": {
+    "by": "llm from images",
+    "source": "Numbers from the register copy R5020, checked against the autograph R5019 (DECODE images)",
+    "image_quality": "unknown",
+    "notes": "26 passages A-Z. --measure --digits gives 224 because the clear-text column of passage J contains the figure 50; the cipher columns hold 223 numbers (counted per line)."
+   }
+  },
+  {
+   "id": "No. 2",
+   "read": "read",
+   "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 694 karton 5 (autograph, DECODE R5021); inv. 5 book 5 pp. 404-407 (copy, DECODE R5022)",
+   "date": "13 Apr 1720",
+   "year": 1720,
+   "country": "Austria (Emperor Charles VI)",
+   "route": "Vienna -> The Hague",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"]},
+   "length": {"tokens": 37, "unit": "mixed", "measured": false, "file": "dec_R5018_letters.md"},
+   "transcription": {"by": "llm from images", "source": "Register copy (book 5), DECODE images", "image_quality": "unknown",
+    "notes": "Counts for Nos. 2, 3, 6 are a script count of the numbers, [sign] and two-letter code tokens in the bold cipher strings of dec_R5018_letters.md, not a --measure result; there is no separate ciphertext file."}
+  },
+  {
+   "id": "No. 3",
+   "read": "read",
+   "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 5 book 5 pp. 407-409 (copy, DECODE R5023; autograph not found)",
+   "date": "24 Jul 1720",
+   "year": 1720,
+   "country": "Austria (Emperor Charles VI)",
+   "route": "Vienna -> The Hague",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"]},
+   "length": {"tokens": 88, "unit": "mixed", "measured": false, "file": "dec_R5018_letters.md"},
+   "transcription": {"by": "llm from images", "source": "Register copy (book 5), DECODE images", "image_quality": "unknown"}
+  },
+  {
+   "id": "No. 6",
+   "read": "read",
+   "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 5 book 5 pp. 414-416 (copy, DECODE R5024)",
+   "date": "11 Apr 1722",
+   "year": 1722,
+   "country": "Austria (Emperor Charles VI)",
+   "route": "Vienna -> Cambrai",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"]},
+   "length": {"tokens": 67, "unit": "mixed", "measured": false, "file": "dec_R5018_letters.md"},
+   "transcription": {"by": "llm from images", "source": "Register copy (book 5), DECODE images", "image_quality": "unknown"}
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "syllabic", "nomenclator"],
+  "summary": "Two keys: No. 1 in the Chancellery two-part nomenclator R5017 (1-400 letters, bigrams, trigrams and nulls; 401-977 words and names), Nos. 2, 3, 6 in the private key R5018 (letters as numbers 10-38 and graphic signs, vowels with a second number, ~300 codes 39-210 and two-letter groups, nulls 3-7, 9).",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {"width": "1-3", "separation": "spaces"},
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": false},
+  "homophones": {"used": true, "max_per_vowel": 3, "max_per_consonant": 2},
+  "nomenclator": {"present": true, "entries": "unknown", "kinds": ["syllables", "common words", "names", "places", "titles"], "unread_groups": 2},
+  "nulls": {"present": true},
+  "key_order": "partly alphabetical",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Not applicable: both keys (R5017, R5018) survive in the same family archive and were used directly.",
+  "notes": "Homophone counts are for R5018 (number + sign per letter, vowels a second number); R5017 also gives single letters with homophones. R5017 nomenclator 401-977 is alphabetical (Aachen to zu). Key slips found in use: R5017 31 = zu (key: el), 268 = ein (key: em); R5018 copyist's signs drift (D/N, Z/G)."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "no", "where": "Mírka, Západočeské archivy 2012 (repr. Crypto-World 3-4/2013) describes the letters and keys but prints no decryption; none found by web search 19 Sept 2026", "found": "not found", "used": false},
+  "inputs": ["images", "key from archive", "cleartext context"],
+  "attack": "key from archive",
+  "human_role": "Supplied the DECODE login (session cookie) for images and key records.",
+  "tools": ["dec.py (key application)", "tile.py (image crops)"],
+  "models": ["claude-opus-5"],
+  "sessions": 1,
+  "first_date": "2026-09-19",
+  "last_date": "2026-09-19"
+ },
+ "solution": [
+  {"date": "2026-09-19", "kind": "access", "what": "Fetched DECODE R5017-R5024 images and record pages; the letter records point to keys R5017 and R5018.", "result": "worked"},
+  {"date": "2026-09-19", "kind": "literature search", "what": "Mírka 2012 found: describes the private key and the Reichshofrat nomenclator, prints no decryption; web search found none.", "result": "worked"},
+  {"date": "2026-09-19", "kind": "key from source", "what": "Transcribed R5017 in full (syllabary 1-400, nomenclator 401-999; 41 low-confidence cells flagged).", "result": "worked"},
+  {"date": "2026-09-19", "kind": "key from source", "what": "Transcribed R5018 (24-letter grid of numbers and signs, ~300 codes, nulls).", "result": "worked"},
+  {"date": "2026-09-19", "kind": "transcription", "what": "No. 1 cipher numbers (26 passages) from the register copy, checked against the autograph (ct_1720-02-03.txt).", "result": "worked"},
+  {"date": "2026-09-19", "kind": "reading", "what": "No. 1 decoded with R5017 via dec.py; key slips 31 = zu and 268 = ein found from sense; 446 and 638 stay uncertain.", "result": "worked"},
+  {"date": "2026-09-19", "kind": "reading", "what": "Nos. 2, 3, 6 read with R5018 letter by letter; drifting copyist signs settled by the surrounding numbered letters.", "result": "worked"},
+  {"date": "2026-09-19", "kind": "verification", "what": "All 35 passages read as German fitting the clear context and the 1720-22 diplomacy (Alberoni's fall, Beretti Landi marriage proposal).", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 0.995,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "dec_R5017_letter.md and dec_R5018_letters.md: cipher tokens (223 + 192 = 415); the uncertain nomenclator values 446 and 638 counted unread (2); signs marked ? but read in context counted read",
+  "codes_open": {"open": 2, "total": "unknown", "tokens_open": 2},
+  "grades": "unknown",
+  "verification": ["key confirms", "historical consistency"],
+  "notes": "Both keys survive and were applied directly; no cryptanalysis. Nos. 4, 5 and 7 of the register are not on DECODE and have no document entry. The clear text of Nos. 2, 3, 6 is only summarised around the cipher passages."
+ }
+}

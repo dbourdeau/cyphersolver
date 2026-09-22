@@ -588,6 +588,7 @@ heidelberg597/crops/
 heidelberg597/*.jpg
 heidelberg597/*.pdf
 heidelberg597/*.json
+!heidelberg597/profile.json
 heidelberg597/*.txt
 heidelberg597/hsc.html
 oldest/decode/
@@ -719,3 +720,6 @@ vieuville1587/*.png
 vieuville1587/man*.json
 vieuville1587/nevers_tomokiyo.htm
 vieuville1587/tom.txt
+
+# every target keeps a profile.json (CLAUDE.md), even where the folder ignores *.json
+!/*/profile.json

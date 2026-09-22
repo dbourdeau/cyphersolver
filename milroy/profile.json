@@ -1,0 +1,56 @@
+{
+ "schema_version": 1,
+ "target": "milroy",
+ "title": "Milroy cipher telegrams (Cox 3 Dec 1862, Bascom 4 Dec 1861): found solved by Richard Bean, 2026",
+ "documents": [
+  {
+   "id": "cox-1862",
+   "read": "not applicable",
+   "shelfmark": "Milroy's copy, transcribed in the Jasper County Library lesson plan",
+   "date": "3 Dec 1862",
+   "year": 1862,
+   "country": "unknown",
+   "route": "Cox -> Milroy",
+   "language": "English",
+   "cleartext_in_document": "none",
+   "plaintext": {"location": ["unrelated source"], "source": "Richard Bean with Claude Opus 5 (2026), on cryptiana https://cryptiana.web.fc2.com/code/civilwar1b_milroy.htm", "partial": false},
+   "length": {"tokens": 79, "unit": "code groups", "measured": false, "file": "route.py"},
+   "transcription": {"by": "published", "source": "Jasper County Library lesson plan (Milroy's own copy)", "image_quality": "no images", "notes": "Count is the words of the raw string in route.py after the indicator 'China' and a '-' are removed, counted with split(), not with _check_profile.py --measure. NOTES call the transcription unreliable; the grid also holds nulls and code words."}
+  }
+ ],
+ "system": {
+  "types": ["transposition", "code"],
+  "summary": "Stager Cipher No. 7: word route transposition on six fixed columns, the indicator word giving the number of lines, columns entered in a set sequence up or down, with nulls and code words.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": true, "entries": "unknown", "kinds": "unknown"},
+  "nulls": {"present": true},
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "notes": "Indicator words from Bean's solution: China = 8 lines, Turkey = 12, Austria = 9. The Bascom telegram (4 Dec 1861) was not handled here."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "online", "where": "cryptiana unsolved list marks it Solved: Richard Bean with Claude Opus 5, 2026 (civilwar1b_milroy.htm)", "found": "before attempt", "used": true},
+  "inputs": ["transcription", "published key", "published reading"],
+  "attack": "published key",
+  "human_role": "unknown",
+  "tools": ["route search with word-bigram scoring (route.py)"],
+  "models": ["unknown"],
+  "sessions": 1,
+  "first_date": "2026-09-14",
+  "last_date": "2026-09-14"
+ },
+ "solution": [
+  {"date": "2026-09-14", "kind": "literature search", "what": "cryptiana's unsolved list (fetched 2026-09-14) marks the item Solved by Richard Bean with Claude Opus 5, 2026.", "result": "worked"},
+  {"date": "2026-09-14", "kind": "verification", "what": "Spot check on Milroy's copy: 'imboden by to forward' is column 6 rows 1-4 downward and 'what is if' column 1 rows 3-1 upward, consistent with Bean's grid.", "result": "worked"},
+  {"date": "2026-09-14", "kind": "solver", "what": "Blind word-bigram search over all 6-column routes (route.py) did not converge: unreliable transcription, nulls and code words. Not pursued.", "result": "failed"}
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "verification": ["key confirms"],
+  "notes": "Solved by Bean 2026; only spot-checked here, nothing added; key state is Bean's. README lists it among entries solved by others and not counted in the results."
+ }
+}

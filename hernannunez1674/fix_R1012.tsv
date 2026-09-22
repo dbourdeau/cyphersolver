@@ -1,0 +1,63 @@
+record	token_no	decode_token	image_reading	value	kind	grade	note
+R1012	24	189	184	sobre	misread	H	last digit is this hand's looped 4 (DECODE reads it 9 throughout); margin "haze sobre el articulo"
+R1012	29	son	xu	cu	misread	H	line-initial xu (x written as a loop pair); arti+cu+lo = articulo
+R1012	32	96	46	de	misread	H	looped 4 read as 9; 46 8 = del (proyecto); the preceding 13 carries a superscript mark = literal "13" (margin "articulo 13")
+R1012	39	96	46	de	misread	H	looped 4; del tratado
+R1012	43	ge	ye	es	misread	H	y with long tail read as g; 46 ye 71 = de-es-te (deste)
+R1012	45	sos	xo	co	misread	H	line-end xo with flourish; xo y = con (con esse reyno)
+R1012	53	ue	uc	mu	misread	H	uc 22 = muy
+R1012	55	soo	xo	co	misread	H	xo oc = como (margin "muy como de su gran")
+R1012	58	icf	ucf	su	misread	C	u joined to f by a loop (= uf); margin "de su gran"; same shape as token 397
+R1012	65	c	6+	o	misread	H	6 with bar over = 6+ = o; ju-i-ci-o = juizio
+R1012	68	69	69	ru	new-code	C	r-series 65 ra 66 re 68 ro -> 69 ru; p-ru-de-n-ci-a = prudencia
+R1012	69	96	46	de	misread	H	looped 4; pru-de-n-cia
+R1012	77	E	6+	o	misread	H	6 with bar = o; c re o = creo
+R1012	95	xoy	xo y	con	misread	H	two groups joined by a flourish; convenido con el
+R1012	105	Se	F̄	todo	new-code	C	F with overbar (DECODE "Se"); todo+s = todos (los puntos); same sign at token 172
+R1012	113	96	46	de	misread	H	looped 4; del proyecto
+R1012	155	167	167	Suecia	new-code	H	167 = Suecia (NOTES addition; not in key.json/dec.py); margin "las armas que la Suecia"
+R1012	172	65)Se	65 ) F̄	ra todo	misread	C	65 ra + bracket + F̄ todo -> "aora) todos"; DECODE also dropped the 6+ (o) between 21 and 65
+R1012	205	2/E	2ℰ	dos	new-code	C	numeral 2 with a superscript curl = literal number (same mark over 13 in "articulo 13"); anula+dos = anulados
+R1012	209	es	er	j	new-code	M	reads "er", followed by hooked 8 (DECODE 9) = o: me-j-o-r = mejor; value fixed by margin, sign identity uncertain
+R1012	216	es	N̲	V.S.	misread	C	underlined N-like sign = V.S. (DECODE elsewhere writes it N and dec.py maps N to nothing); margin "save VS que"
+R1012	222	25b3	△	a	new-code	M	triangle sign; tr+△+do = tratado (also line-1 "188 △ 48", where DECODE omitted △); with key 188=tr, △ would be "ata"; with token 536 the consistent reading is △=a and 188=trat, or △ null with 188=trata
+R1012	245	ox	oc	mo	misread	H	xo oc = como (cla-u-su-las follows; DECODE margin "IL" is "clausulas")
+R1012	267	32	32	x	new-code	C	p re te 32 ta r = pretextar (margin "pretextar", DECODE margin "presentar")
+R1012	273	xcy	xe y	cen	misread	C	xe y with flourish; ha-ce-n = hazen
+R1012	274	17	17	y	new-code	C	written 1) (7 as ")"); "y lo que no quieren" (margin)
+R1012	282	cel	cel	hazer	new-code	C	clear three-letter code group; margin "quieren hazer los principes"
+R1012	292	500	500		null	M	line-initial 500 before ra (ya); hundreds 200/300/700 are nulls in the key; preceding DECODE "as" is "a =" (null + line-end hyphens), not za
+R1012	305	cg	eg	he	misread	H	que he representado
+R1012	332	167	167	Suecia	new-code	H	167 = Suecia (NOTES addition); margin "que la Suecia"
+R1012	336	138	13 8	el	misread	C	two groups 13 8 = el (13 = e in this letter, not null; cf. 13 ef = esse, 13 8 = el passim); tenga el freno
+R1012	346	auf	a uf	su	misread	H	a (null) + uf su; su-p-li-co = suplico
+R1012	349	xouN	xo 21 N̲	co a V.S.	misread	C	xo co + 21 a + underlined V.S. sign; "suplico a VS"
+R1012	363	to	10	b	misread	H	10 = b; ha-b-la-r-le = hablarle; DECODE also has "ef" for if and "x a id" for "6+ xa if" (o ca si) on this line
+R1012	384	acat	uc at	mucha	misread	H	uc mu + at cha; muchas obligaciones
+R1012	397	rcf	ucf	su	misread	C	same u-loop-f sign as token 58 (tt mark above); a su suegro
+R1012	408	as.	a		null	H	line-end a with flourish (null); the next DECODE "as" (line-initial) is also the null a, not za
+R1012	416	96	46	de	misread	H	looped 4; de-ve-r-le = deverle
+R1012	428	ce	ec	me	misread	H	VS me escrive
+R1012	435	E	ℰ	ll	new-code	C	crossed ℰ-like sign = ll; followed by hooked 8 (DECODE 8) = o: ha-ll-o = hallo; same sign in aquello, lleve, lleno
+R1012	446	ge	ye	es	misread	H	que es de su servicio; DECODE skipped the image line "28 xo oc ye ed 63 8 15 ad 66 xe 31 ec d" before this (s como espanol por parecerme que)
+R1012	459	ge	ye	es	misread	H	en es-a corte = essa corte
+R1012	470	500	(500		null	M	bracketed 500 under the last line of p.4 (catchword position); hundreds are nulls
+R1012	475	92	42	vi	misread	H	looped 4; in-vi-a-do = inviado
+R1012	483	ao	ad	pa	misread	H	har-to pa-r-ci-a-l
+R1012	498	otd	ot d	ch que	misread	H	ot ch + struck d que; dich(o) que assegurare
+R1012	504	96	46	de	misread	H	looped 4; de-es-to = desto
+R1012	535	100	100	algun	new-code	M	100 △ 28 = algunas (margin "en algunas cosas"); split between 100 and △ uncertain (100=algun with △=a, or 100=alguna with △ null)
+R1012	536	25b3	△	a	new-code	M	triangle sign; see token 222
+R1012	538	00	xo	co	misread	H	DECODE split xo into "00" "0"; xo af B = cosas
+R1012	539	0			misread	H	spurious: the o of xo (token 538)
+R1012	542	00	xo	co	misread	H	xo oc = como (split as above)
+R1012	543	0			misread	H	spurious: the o of xo (token 542)
+R1012	544	c	oc	mo	misread	H	oc = mo; DECODE then omits "ℰ Ŧ" (= lle) before 41 ve: lleve
+R1012	562	C	ℰ	ll	new-code	C	crossed ℰ sign = ll; a-que-ll-o = aquello
+R1012	563	S	8̂	o	new-code	C	8 with hooked top (distinct from plain 8 = l) = o; aquello
+R1012	569	mi	ni	fi	misread	H	con-fi-r-ma-re = confirmare
+R1012	582	09	og	ho	misread	H	og ho + 20 n + 10 b + 66 re = honbre (hombre)
+R1012	586	F	ℰ Ŧ	lle	misread	C	ℰ ll + barred 7/F-like sign = e (as in lleve); lle-no = lleno
+R1012	602	S	8̂	o	new-code	C	hooked 8 = o after dan (mte): fundamento
+R1012	607	t	d	que	misread	H	struck d at line end = que; a veces que su propia
+R1012	620	asegunado>			null	H	no cipher group on the image: the passage ends "13 74 a a~" (DECODE 79 for 74 tu -> inquietud; "os" is the end flourish); "asegunado" is the clear "asegurado" of the text below

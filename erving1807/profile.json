@@ -1,0 +1,152 @@
+{
+ "schema_version": 1,
+ "target": "erving1807",
+ "title": "George W. Erving to James Madison, Madrid, 24 Mar 1807, private No. 21 'in the Cypher of the Legation' (Pinckney's code), Founders Madison/02-13-02-0559",
+ "documents": [
+  {
+   "id": "no21-24mar1807",
+   "read": "read",
+   "shelfmark": "NARA RG 59 DD Spain vol. 10 = M31 reel 12 frames 0283-0286 (RC1); LoC Madison Papers mjm014714 (RC2 duplicate)",
+   "date": "24 Mar 1807",
+   "year": 1807,
+   "country": "United States",
+   "route": "Madrid -> Washington",
+   "language": "English",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Madison's interlinear decode on RC1, printed in PJM-SS 13:529-31 (Founders 02-13-02-0559) with holes and [sic]s; the editors say the key was not found.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 581,
+    "distinct": 238,
+    "unit": "code groups",
+    "measured": false,
+    "file": "erving_groups.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 reel 12 frames 0284-0286 (RC1, with Madison's decode) collated with LoC mjm014714 images 0604-0607 (RC2)",
+    "image_quality": "unknown",
+    "notes": "Count made by splitting the dotted runs of erving_groups.txt on '.'; docs/_check_profile.py --measure treats each dotted run as one token (90 runs), so the count is not tool-measured. NOTES: some line alignments of the opening paragraph are approximate; the groups at the holes were checked on both copies."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "Numerical word-and-syllable code of the Madrid legation (Pinckney's code; the = 1651, of = 133), groups joined by dots.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "dots"
+  },
+  "distinct_symbols": 238,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Pinckney's own despatches in the same code (M31 reel 7 frames 0346-0352 with Wagner's decode on 0348; reel 8 frames 0083-0084) supplied pairs; used.",
+  "notes": "distinct_symbols counts the letter's groups; no full key rebuilt (NOTES 'Not done')."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Madison's contemporary interlinear decode on RC1, printed by the Madison editors (PJM-SS 13:529-31, Founders 02-13-02-0559) with its holes.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading",
+   "sibling key"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Project-level: set up Claude Code with Fable 5.1 or Opus 5 and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "dl.py (NARA frame download)",
+   "codescore.py (frame scoring for code texture)",
+   "chain.py (Founders correspondent chain via Wayback)",
+   "sheets.py, crop.py"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-18",
+  "last_date": "2026-09-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-18",
+   "kind": "access",
+   "what": "Fetched RC1 (NARA M31 reel 12 frames 0283-0286) and RC2 (LoC tile URLs for mjm014714).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transcription",
+   "what": "Transcribed the groups with Madison's interlinear readings into erving_groups.txt and collated the holes on both copies.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "sibling key",
+   "what": "Read pairs from Pinckney's decoded despatches in the same code (reel 7 frames 0346-0352, reel 8 0083-0084): 69 in, 1515 late, 1578 that, 1583 ter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "reading",
+   "what": "Closed the printed holes: in the scale, Hanover (x5), see that he was more so, Gibraltar, been lately doing; Madison's slips identified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "verification",
+   "what": "Checked sp[eak] (1212 = sp): the rest of the word is missing in both copies, so the loss is Erving's own.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "NOTES Results: every hole in Madison's printed decode closed; no token-level reading file",
+  "fraction_read": 1.0,
+  "codes_open": {
+   "open": 0,
+   "total": 238,
+   "tokens_open": 0
+  },
+  "grades": "unknown",
+  "verification": [
+   "contemporary decipherment",
+   "key confirms"
+  ],
+  "notes": "Read at the time by Madison; this project closed the holes in the printed text (a small completion). The only loss is Erving's dropped -eak after 1212, missing in both copies. No full Pinckney key was rebuilt (key: partial). Model id from commit trailers (Claude Opus 5, 1M context); the files were committed inside commits about other targets."
+ }
+}

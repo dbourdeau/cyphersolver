@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "target": "herbault1626",
+ "title": "Phelipeaux d'Herbault (Paris) to Philippe de Béthune (Rome), 13 February 1626, BnF fr. 3669 no. 25 (read from its twin no. 26)",
+ "documents": [
+  {
+   "id": "no. 25",
+   "read": "read in part",
+   "shelfmark": "BnF Français 3669 no. 25, ff. 69-71 (Gallica btv1b9060205q, canvases 74-76); twin copy no. 26, ff. 72-74 (canvases 77-79)",
+   "date": "13 Feb 1626",
+   "year": 1626,
+   "country": "France",
+   "route": "Paris -> Rome",
+   "language": "French",
+   "pages": "unknown",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": ["separate folio", "interlinear"],
+    "source": "No. 26 (ff. 72-74) is the same letter with the same cipher runs at the same points, deciphered between the lines by a contemporary hand.",
+    "partial": true
+   },
+   "length": {"tokens": "unknown", "unit": "mixed", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF images (black-and-white microfilm openings); the reading transcribes the clear text and the interlinear decipherment of no. 26",
+    "image_quality": "unknown",
+    "notes": "The ciphertext was not transcribed group by group; only the opening of run 1 (to 92 g 17 ᴢ 43 x cu 4 7 ᴢ ᵈ p x ᴣ ᴣ 6 ᵷ x) and the end of run 3 (… 68 93 …) are given, so no token count. NOTES: the two clerks' figures 'are read differently at this resolution'."
+   }
+  }
+ ],
+ "system": {
+  "types": ["nomenclator"],
+  "summary": "Nomenclator of one- to three-character groups mixing Arabic figures and letter-forms, about 18 groups for 48 plaintext letters in the first run, so most groups stand for syllables or words.",
+  "symbol_kind": "digits and letters",
+  "digit_groups": {"width": "1-3", "separation": "unknown"},
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": true, "entries": "unknown", "kinds": "unknown", "unread_groups": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "The volume holds about thirty further letters of 1625-26 in the same cipher, nearly all glossed; not used to tabulate a key.",
+  "notes": "Key not tabulated."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "in archive", "where": "Contemporary interlinear decipherment on the twin copy, BnF fr. 3669 no. 26 (ff. 72-74)", "found": "during attempt", "used": true},
+  "inputs": ["images"],
+  "attack": "archive decipherment",
+  "human_role": "unknown",
+  "tools": ["fetch.sh, region.sh, zoom.sh (Gallica IIIF openings and zoomed regions)"],
+  "models": ["claude-opus-5"],
+  "sessions": 1,
+  "first_date": "2026-09-18",
+  "last_date": "2026-09-18"
+ },
+ "solution": [
+  {"date": "2026-09-18", "kind": "access", "what": "Fetched the Gallica IIIF manifest of fr. 3669 and the openings for pieces 24-27; fixed canvas = folio + 5 on ff. 70 and 73.", "result": "worked"},
+  {"date": "2026-09-18", "kind": "hypothesis", "what": "Catalogue task: check whether no. 26 is the decipherment of no. 25.", "result": "worked"},
+  {"date": "2026-09-18", "kind": "verification", "what": "Clear text of nos. 25 and 26 compared: identical word for word; cipher runs fall after the same clear words; groups match at the two points checked (run 1 opening, run 3 ending). No group-for-group identity claimed.", "result": "worked"},
+  {"date": "2026-09-18", "kind": "reading", "what": "Transcribed the letter with the interlinear decipherment of no. 26 for each cipher run (ct/letter_13feb1626.md); two proper names and 'Soubise' uncertain, a few glossed stretches left as '…'.", "result": "partial"}
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "none",
+  "fraction_read": "unknown",
+  "grades": "unknown",
+  "verification": ["contemporary decipherment", "independent clear copy", "historical consistency"],
+  "notes": "Read at the time: the reading is the contemporary decipherment on the twin copy, not an independent decryption. Unread in ct/letter_13feb1626.md: one whole run after 'les Anglois et les autres' ([chiffre: …]), ellipses inside the first and last passages; uncertain: Santriny, Montembelans, Soubise. Whether the letter or the series is in print was not checked."
+ }
+}

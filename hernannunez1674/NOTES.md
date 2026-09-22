@@ -24,8 +24,39 @@ Added to the Balbases table from these letters (context-certain):
 - 4 = t (dentro, otro, neutralidad)
 - unstruck `d` in DECODE's transcription = struck d = que
 
-Unread groups: about 7% (R1012 62/624, R1013 20/372, R1014 29/484, R1015 7/236). Almost all are DECODE misreadings
-(split or merged groups, "25b3", "00 0"), not gaps in the key. The margins cover the same passages.
+Unread groups after the first pass: about 7% (R1012 62/624, R1013 20/372, R1014 29/484, R1015 7/236). Almost all are
+DECODE misreadings (split or merged groups, "25b3", "00 0"), not gaps in the key. The margins cover the same passages.
+
+## Second pass: the unread groups on the images (22 Sept 2026)
+
+Images fetched from DECODE with the `bordeaux/decode/cookie.txt` cookie into `img/` (git-ignored). Every group dec.py
+left unread (`unread_groups.tsv`) was found on the image and read against its margin; results with grades in
+`fix_R1012.tsv` and `fix_R1013-15.tsv`, applied by `dec2.py` (output `read2/`).
+
+- 62 DECODE misreadings: this hand's closed 4 read as 9 ("96" = 46 de, "189" = 184 sobre, "92" = 42 vi), g for y
+  ("ge" = ye es), xo split as "00" + "0", merged groups (xoy = xo y, 138 = 13 8, atad = at ad).
+- 48 code groups the Balbases table lacks, fixed by the margin: bof guerra, cuf Inglaterra, 187 tiempo, 149 quanto,
+  111 comercio, cin haviendo, cel hacer, on electo, F with bar = todo, C+ / crossed sign = ll (with a vowel mark after
+  it: small S = o, cross = e), 69 ru, 32 x, 17 y / oc, 76‡ enen, 21‡ a.
+- 7 nulls, 1 illegible (R1014).
+- Key corrections applied throughout: 13 = e (not a null here: 13 8 el, 13 ef esse); underlined N = V.S.
+- DECODE omits two lines of R1012: p.1 "28 41 xe 28 63 / 92 76 21 ef 31 if 63 29 tt 15 13 53 46 ad" (...mas veces no
+  vienen a ser sino un juego de pa-) and p.4 "28 xo oc ye ed 63 8 15 ad 66 xe 31 ec d" (...s como español por parecerme
+  que). They are not in the token count.
+
+Measured (`dec2.py`): 1,716 tokens, 1 unread, 11 values graded M; 0.999 read, 0.993 without the M values.
+
+## Remaining gaps
+- one R1014 group - blocker: illegible; the sign cannot be read on the DECODE image and the margin does not fix it
+- 11 values graded M (R1012 6, R1013 3, R1014 1, R1015 1) - blocker: illegible; the signs are unclear on the image
+
+## Escalation
+- [x] siblings: Balbases 1677 and Carpio 1677, same volume; the Balbases key reads these letters
+- [x] clear-pages: every passage has its margin decipherment, used as the check
+- [x] known-keys: Balbases 1677 key applied unchanged
+- [n/a] print: no edition found (web search 21 Sept 2026)
+- [x] key-rebuild: 48 code groups added from the margins
+- [x] retry: all 118 first-pass unread groups re-read on the images
 
 ## How it went
 

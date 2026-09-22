@@ -1,0 +1,135 @@
+{
+ "schema_version": 1,
+ "target": "vasto1527",
+ "title": "Marquis del Vasto to Charles V and the letter to \"Garbino\", 1527-28, BnF fr. 3022 nos. 6, 10, 20 (catalogue item 7)",
+ "documents": [
+  {
+   "id": "no10",
+   "read": "read",
+   "shelfmark": "BnF fr. 3022 no. 10, ff. 26-28 + f. 39 (Gallica btv1b90601558 views 51-55, 76-77)",
+   "date": "27 Sep 1527",
+   "year": 1527,
+   "country": "Spain (Charles V)",
+   "route": "Ischia -> Charles V",
+   "language": "Spanish",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["unrelated source"],
+    "source": "George Lasry's decryption (2023) with Satoshi Tomokiyo's edited text (2026), cryptiana GL.htm 'Gasto-Charles V Cipher 1'; copy in prior/BnF_fr3022_f26_decryption.txt. Some groups still marked '?'.",
+    "partial": true
+   },
+   "length": {"tokens": "unknown", "unit": "mixed", "measured": false},
+   "transcription": {
+    "by": "published",
+    "source": "Lasry/Tomokiyo decryption file (prior/)",
+    "image_quality": "unknown",
+    "notes": "Found already solved; no work of this project on the text."
+   }
+  },
+  {
+   "id": "no6",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 3022 no. 6, ff. 16v-17v (views 32-34)",
+   "date": "[early Dec 1527]",
+   "year": 1527,
+   "country": "Spain (Charles V)",
+   "route": "Rome -> Charles V",
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": ["unrelated source"],
+    "source": "Lasry's 2026 preliminary letter-level decryption ('Gasto-Charles V Cipher 2', cryptiana GL.htm), prior/BnF_fr3022_f16_decryption.txt; code groups left as [xxx].",
+    "partial": true
+   },
+   "length": {"tokens": 1675, "unit": "mixed", "measured": false, "file": "prior/BnF_fr3022_f16_decryption.txt"},
+   "transcription": {
+    "by": "published",
+    "source": "Lasry's letter-level decryption, checked here against the f. 16v ciphertext on the Gallica images",
+    "image_quality": "unknown",
+    "notes": "Count taken by a one-off tally over lines 7-76 of Lasry's file (ff. 16v-17v): space-separated items, '_' separators and 5 <plaintext> markers excluded; 54 of them are [code] groups. Not a --measure count, and Lasry's file is a decryption, not a ciphertext transcription."
+   }
+  },
+  {
+   "id": "no20",
+   "read": "not read",
+   "shelfmark": "BnF fr. 3022 no. 20, ff. 44r-46v (views 86-91); 18th-c. copy Clair. 327 ff. 279-280",
+   "date": "11 Apr 1528",
+   "year": 1528,
+   "country": "Spain (Charles V)",
+   "route": "Madrid -> Garbino",
+   "language": "Italian",
+   "pages": 6,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["none"],
+    "source": "No decipherment: Clair. 327 copy is undeciphered; no French decipherment or base key found; Cipherbrain 2016-17 found no known nomenclator for Ranzo's code."
+   },
+   "length": {"tokens": 1321, "distinct": "unknown", "unit": "code groups", "measured": true, "file": "n20"},
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution Gallica scans of ff. 44r-46v; plus ~2,600 groups of Ranzo's signed letters in BnF fr. 2988 (n20/ranzo_c0*.txt) transcribed by subagents",
+    "image_quality": "unknown",
+    "notes": "Sum of --measure over n20/f44r, f44v, f45r, f45v, f46r, f46v.txt with --skip '^\\|' (155+73+316+171+366+240); includes one '·' separator and bracketed doubt marks. NOTES give 1,315 groups (546 types) after load.py drops those."
+   }
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "nomenclator", "code"],
+  "summary": "Nos. 6/10: Caesar-shifted substitution over a 21-letter alphabet with homophones and three-letter b-/c-/d- code groups; no. 20: Ranzo's code of initial letter plus a non-alphabetical number.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": true},
+  "nomenclator": {"present": true, "kinds": ["names", "places", "common words", "word parts"], "unread_groups": "unknown"},
+  "nulls": {"present": true},
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "No. 6 shares Lasry's Cipher 2 key with no. 19 (ff. 40-43, 6 Nov 1527), used for code contexts. No. 20 shares its code with Ranzo's signed letters in fr. 2988 and fr. 3019 no. 27; no key found.",
+  "notes": "No. 20 base lists per letter (a1-326 … z1-35) from the addition sheet (additione.json); numbering tested not alphabetical (n20/alphatest.py, z = -0.5 vs +6.5 on an alphabetical control), hence key_order random for no. 20. z-groups behave as nulls or punctuation."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "cryptiana GL.htm: Lasry 2023 / Tomokiyo 2026 reading of no. 10; Lasry 2026 preliminary letter-level decryption of no. 6 (Cipher 2). Nothing for no. 20.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": ["images", "published reading", "published key", "cleartext context"],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": ["word-substitution annealer with Kneser-Ney word-bigram Italian LM (n20/solve2.py)", "alphabetical-order test with power check (n20/alphatest.py)", "annealers assuming alphabetical order (n20/solve.py, anchor.py, free.py)", "calibration on encoded Castiglione control (n20/calib.py)"],
+  "models": ["claude-opus-5"],
+  "sessions": 2,
+  "first_date": "2026-09-18",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {"date": "2026-09-18", "kind": "access", "what": "Fetched fr. 3022 (Gallica btv1b90601558) and identified the three catalogue pieces and folios.", "result": "worked"},
+  {"date": "2026-09-18", "kind": "literature search", "what": "Found no. 10 already solved by Lasry (2023) with Tomokiyo's edited text (2026), and Lasry's 2026 preliminary decryption of Cipher 2 covering no. 6 and no. 19.", "result": "worked"},
+  {"date": "2026-09-18", "kind": "verification", "what": "Checked Lasry's no. 6 decryption against the f. 16v ciphertext (dʃfp = creo, nnbt = mas, qʃftxp = presto); identified no. 6 as del Vasto's own letter of early Dec 1527.", "result": "worked"},
+  {"date": "2026-09-18", "kind": "reading", "what": "Identified about 40 b-/c-/d- code groups of no. 6 from context across nos. 6 and 19 (doz = Lautreque, deh = la Marca, dnb = dinero …) and made an edited reading (n6_reading.md); about 15 codes and some stretches open.", "result": "partial"},
+  {"date": "2026-09-18", "kind": "transcription", "what": "Transcribed no. 20 (1,315 groups) and ~2,600 groups of Ranzo's signed letters in fr. 2988; addition sheet transcribed (additione.json).", "result": "worked"},
+  {"date": "2026-09-18", "kind": "hypothesis", "what": "No. 20 code is initial letter + number, the number running in alphabetical order within each letter (solve.py, anchor.py).", "result": "ruled out"},
+  {"date": "2026-09-18", "kind": "control", "what": "Word annealer (solve2.py) on a held-out 3,900-word Castiglione control encoded the same way: ~46 % token, ~9 % type accuracy.", "result": "partial"},
+  {"date": "2026-09-18", "kind": "solver", "what": "solve2.py on no. 20 + Ranzo: a stable function-word skeleton (che, il, per, non …) across six restarts; no content words.", "result": "failed"},
+  {"date": "2026-09-18", "kind": "literature search", "what": "Sought cribs: Clair. 327 and Clair. 314 copies (undeciphered), fr. 2988 other cipher pieces (a different French cipher), fr. 3019 no. 27 Ranzo letter (no decipherment), no duplicate text between no. 20 and Ranzo letters.", "result": "failed"},
+  {"date": "2026-09-21", "kind": "access", "what": "DECODE R1894 (catalogue 170) identified as the fr. 2988 Ranzo letter already transcribed; no key or decipherment on the record.", "result": "failed"}
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.55,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Estimate over nos. 6 and 20: no. 6 ~1,675 items valued by Lasry's decryption bar ~15 code groups and some stretches; no. 20 1,321 groups with no reading (the function-word skeleton not counted). Upper bound 1,675/2,996 = 0.56. No. 10 excluded (not worked here).",
+  "codes_open": {"open": 15, "total": "unknown", "tokens_open": "unknown"},
+  "grades": "unknown",
+  "verification": ["historical consistency"],
+  "gaps": [
+   {"item": "No. 20 (Madrid, 11 Apr 1528, to Garbino), whole letter", "blocker": "no-key-material", "detail": "Ranzo's code is non-alphabetical; the annealer recovers only function words on a matched control. Needs Ranzo's base table or a clear copy (Garbino's side, Spanish/Italian archives, Gattinara's papers)."},
+   {"item": "No. 6: about 15 code groups and some '…' stretches", "blocker": "open-codes", "detail": "Codes with one or no clear context (n6_reading.md)."}
+  ],
+  "notes": "NOTES.md has no '## Remaining gaps' or '## Escalation' section; gaps sourced from its verdict table and the no. 20 section. NOTES and README call no. 6 'read', but no measured fraction exists for it; recorded here as read in part."
+ }
+}
