@@ -7,6 +7,7 @@ values. A letter outside the candidates is reported as NEW (a value this letter 
 
     python r3708/decode.py            # per-run check
     python r3708/decode.py --reveal   # write docs/reveal/r3708.json
+    python r3708/decode.py f139       # the same check on f. 139 (ciphertext_f139.txt, reading_f139.tsv)
 """
 import json, os, sys
 
@@ -31,15 +32,16 @@ def norm(ch):
     return {'v': 'u', 'j': 'i'}.get(ch, ch)
 
 
-def runs():
+def runs(part=''):
+    sfx = '_' + part if part else ''
     ct = {}
-    for line in open(os.path.join(HERE, 'ciphertext.txt'), encoding='utf8'):
+    for line in open(os.path.join(HERE, f'ciphertext{sfx}.txt'), encoding='utf8'):
         if line.startswith('#') or not line.strip():
             continue
         rid, signs = line.rstrip('\n').split('\t')
         ct[rid] = [s for s in signs.split() if s != 'S^t']
     rd = {}
-    for line in open(os.path.join(HERE, 'reading.tsv'), encoding='utf8'):
+    for line in open(os.path.join(HERE, f'reading{sfx}.tsv'), encoding='utf8'):
         f = line.rstrip('\n').split('\t')
         rd[f[0]] = (f[2], f[3])
     return ct, rd
@@ -67,8 +69,8 @@ def align(signs, plain, rid=''):
     return out, len(letters) - i
 
 
-def main():
-    ct, rd = runs()
+def main(part=''):
+    ct, rd = runs(part)
     total = ok = 0
     for rid, signs in ct.items():
         plain = rd[rid][0].replace(' ', '')
@@ -124,4 +126,5 @@ def reveal():
 
 
 if __name__ == '__main__':
-    reveal() if '--reveal' in sys.argv else main()
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    reveal() if '--reveal' in sys.argv else main(args[0] if args else '')

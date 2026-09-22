@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "r3708",
- "title": "Paris informant to the Nevers household, 6 June 1588 (BnF fr. 3976 fol. 133-134, DECODE R3708)",
+ "title": "Paris informant to the Nevers household, 6 and 9 June 1588 (BnF fr. 3976 fol. 133-134, DECODE R3708; fol. 139)",
  "documents": [
   {
    "id": "f133",
@@ -30,6 +30,35 @@
     "source": "Gallica IIIF full resolution",
     "image_quality": "good",
     "notes": "18 runs, 230 signs (one character or '1'+character), counted with a python tokenizer over ciphertext.txt excluding St abbreviations and underlined code numbers; --measure counts space-separated tokens (63 distinct)."
+   }
+  },
+  {
+   "id": "f139",
+   "shelfmark": "BnF Français 3976 fol. 139 (piece 74); Gallica btv1b9060548h view 234; not on DECODE",
+   "date": "9 June 1588",
+   "year": 1588,
+   "country": "France",
+   "route": "the same Paris informant -> the Nevers household",
+   "language": "French",
+   "cleartext_in_document": "mostly clear",
+   "read": "read",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear glosses over every run and most code numbers; read independently with the key and compared."
+   },
+   "length": {
+    "tokens": 106,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ciphertext_f139.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full resolution",
+    "image_quality": "good",
+    "notes": "6 runs, 106 signs, counted by r3708/decode.py f139."
    }
   }
  ],
@@ -130,21 +159,40 @@
    "kind": "verification",
    "what": "All 18 runs read as French in context; 226 of 230 signs certain, 4 single-occurrence signs read from context (reading.tsv).",
    "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "BnF notice of fr. 3976 lists piece 74, f. 139, 'Lettre chiffrée avec déchiffrement ... Ce 9 juing 1588'; Gallica view 234; not a DECODE record.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "f. 139's six runs (106 signs) read with the key unchanged; every reading matches the contemporary interlinear gloss (levee de deniers, notaires, argent a rente, Nilly Marcel prevost des marchans et eschevins, Marcel y soit, la lieutenance generalle).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Code glosses on f. 139 identify 10 = Espernon, 38 = Garrault, 98 = la paix, 107 = Grand Escuyer, confirm 9 = Guise, 11 = Roy, 24 = Nevers; 10 = Epernon also fits ff. 62 and 133. Gloss over 79 illegible.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read",
   "key": "recovered",
-  "fraction_read": 0.983,
+  "fraction_read": 0.988,
   "fraction_read_method": "measured",
-  "fraction_read_source": "r3708/ciphertext.txt and reading.tsv: 230 signs, 4 read from context only",
+  "fraction_read_source": "r3708/ciphertext.txt + reading.tsv (230 signs, 4 from context) and ciphertext_f139.txt + reading_f139.tsv (106 signs, all by the key)",
   "codes_open": {
-   "open": 9,
-   "total": 15,
+   "open": 8,
+   "total": 18,
    "tokens_open": 2
   },
   "verification": [
    "key confirms",
+   "contemporary decipherment",
    "historical consistency"
   ],
   "gaps": [
@@ -159,11 +207,11 @@
     "detail": "single occurrence; name spelled Nuilly in clear on f. 133r"
    },
    {
-    "item": "code numbers 4, 10, 23, 25, 33, 79, 94, 105, 106",
+    "item": "code numbers 4, 23, 25, 33, 79, 94, 105, 106",
     "blocker": "open-codes",
-    "detail": "no number list known; siblings gloss only 11 and 24"
+    "detail": "no number list known; siblings gloss 9, 10, 11, 24, 38, 98, 107; the f. 139 gloss over 79 is illegible"
    }
   ],
-  "notes": "First reading. Also corrects the sibling's code 24 from Navarre to Nevers."
+  "notes": "First reading. Corrects the sibling's code 24 from Navarre to Nevers; f. 139's contemporary glosses confirm the key independently."
  }
 }
