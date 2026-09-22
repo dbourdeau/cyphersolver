@@ -3,7 +3,7 @@
   python r9407/probe.py "jo5yEuw6wxbz#Ey3vcHw" *b *z *#"""
 import sys, os, re
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, '..'))
+sys.path.insert(0, os.path.join(HERE, '..', '..'))
 from lang import lm
 M = lm.load('de-1500s', spaces=False)
 A, K, LP = M.A, M.order, M.lp

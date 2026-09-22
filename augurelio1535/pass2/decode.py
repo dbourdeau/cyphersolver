@@ -3,7 +3,7 @@ Beam decode of transcription.txt: each sign takes its key value, or for polyphon
 model prefers in context (beam over the whole line). Output: page.line decrypt (· marks a polyphonic choice)."""
 import re, sys, os, math
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, '..'))
+sys.path.insert(0, os.path.join(HERE, '..', '..'))
 from lang import lm
 M = lm.load('de-1500s', spaces=False)
 A = M.A; K = M.order; LP = M.lp

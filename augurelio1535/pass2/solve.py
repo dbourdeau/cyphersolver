@@ -5,7 +5,7 @@ Each sign maps to one letter of the model alphabet (a-z less j, v) or '_' (null)
 import argparse, math, random, re, sys, os
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, '..'))
+sys.path.insert(0, os.path.join(HERE, '..', '..'))
 from lang import lm
 
 ap = argparse.ArgumentParser()

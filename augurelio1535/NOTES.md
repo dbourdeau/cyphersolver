@@ -1,6 +1,8 @@
-# Jörg Weinmeister to the Dukes of Bavaria, 10 December 1535 (DECODE R9407, "Augurellio")
+# Jörg Weinmeister to the Dukes of Bavaria, spring 1533 (DECODE R9407, "Augurellio")
 
-Status: read in part (f.233 and f.235 read in full; the f.234 column read in part)
+Status: read (96.6% of plaintext words, measured; second pass 22 Sept 2026 read image P6 = f.235r and corrected the date to spring 1533)
+
+The folder name keeps the first pass's '1535'; the letter is of late April-May 1533 (see "Second pass" below).
 
 Catalogue entry 164, "Augurellio to ...". BayHStA Kurbayern Äußeres Archiv 4591 ff. 232-235, DECODE R9407,
 7 images (P1 f.232 dorse, P2 address, P3 f.233, P4 f.234 = a column and a slip, P5 f.235, P7 address leaf;
@@ -67,23 +69,59 @@ the whole letter about 89%.** The slip and the address leaf read 92%; the slip e
 - Clear Latin in the text: "Rarum novarum autem quae hic habemus", "Et propter illum hominem plures",
   "Quid autem actum sit", "Illud tamen summe necessarium esse existimo".
 
+## Second pass (22 Sept 2026): image P6, the date, the full reading
+
+Work in `pass2/`: `transcription.txt` (4,363 signs, one character per sign, all cipher pages), `key.txt`,
+`decode.py` (polyphonic beam over the de-1500s model), `solve.py` (numpy annealer), `ctx.py`, `fix.py`,
+`decrypt_v7.txt`, and **`reading.txt`**, the reading of the whole letter.
+
+- **P6 is on DECODE.** `bordeaux/decode/fetch_decode.py` lists seven images for R9407 (P1-P7); P6 had simply never
+  been downloaded. It is a straight photograph of **f.235r**, 36 lines, the leaf that image P4 shows at an angle
+  (the first pass's "f.234 column", P4a: its l.04 `...l5nwt3cvmnQ3` = P6 l.05 `...b5nwt3cvmNf3`). The
+  needs-physical-access gap is closed: f.235r reads in full.
+- **Page order by sense:** f.233r (P3), P5 (the page with Simontornya), f.235r (P6), the slip on f.234 (P4, "Datum
+  ut in literis", signed), the postscript on the address leaf (P7, signed again).
+- **The date is spring 1533, not December 1535.** The letter describes King John's siege of Palota against
+  Laszlo More (`More Lesl[o]`, P5 l.14): "er [King John] durch den [∇] und herr Casparn mit 4000 zu fuess und ross,
+  ungern, turcken und Behamen ... het in ainem festen schloss Palota genent belegern lassen". Hungarian sources
+  (hu.wikipedia "Palota ostroma (1533)", rubicon.hu) give exactly this siege: Hieronymus Łaski with Hassan bey's
+  Turks and fifty Czech miners, from 14 April 1533, the walls mined at the end of May; Ferdinand stood aside by
+  agreement. The letter is written while "si sein noch darvor", after "ostertag" (Easter 1533 = 13 April), and
+  Katzianer is told that Ferdinand "mit dem turcken ein frid gemacht" (the 1533 truce/peace). The dorse docket reads
+  "10. Decembris 33" (the first pass read 35); it is a filing date or the date of the covering letters ("datum ut
+  in literis"). The outer address (P2) is "Doctor Christof [W...], Bayrisch rhat, meinem freundlichen lieben
+  bruder": the packet went through the writer's brother, a Bavarian councillor in Munich.
+- **The ∇ sign** is a name: it besieges Palota with herr Caspar (P3 l.07, P5 l.17), and recurs with Minckwitz and
+  Kraków on f.235r. Probably **Łaski** (grade C). **The dotted ʃ sign** is King Ferdinand ("seins herren [ʃ] ...
+  das er [ʃ] mit dem turcken ein frid gemacht"; "von [ʃ] nit bewilligt"; "zu Wien").
+- **Key notes:** the hourglass ⧖ (Z) = F.G. is distinct from the slashed ✗ = u; `mγ` is one sign, m; Ψ = ll,
+  Ħ-bar B = rr; the tiny superscript ° = p in "Caspar"; clear numerals 4000 (P3 l.08) and 34 (P3 l.16) sit inside the
+  cipher. Polyphonic: E d/ch, π w/b/t/o, o b/w, ‡‡ g/u, j s/ch.
+- **f.235r (new):** Schetinger is not to use the Jew further, who cannot be trusted: he let the letters be copied at
+  Kraków before delivering them; Minckwitz has copies of the dukes' letters and, being at feud with [∇], may turn
+  them against them; herr Caspar, who has been told to treat with the Turk on the dukes' behalf, asks them to be
+  gracious to him and his children; a copy of a letter of Ferdinand's councillor now in Turkey to the regents at
+  Vienna is enclosed; the Chancellor is going to Constantinople; Weinmeister will report what is negotiated there.
+- Measured with a word count over `pass2/reading.txt`: 1,002 plaintext words, 34 unread (31 words, 3 uses of ∇):
+  **96.7%** (1,003 words, 33 unread, after P3 l.09 "More Lesli genant" was taken from the first pass). The letter meets the read bar.
+
 ## Remaining gaps
 
-- f.234 column (P4a), about 35% of its words - blocker: needs-physical-access; the DECODE photograph takes this column at an angle, with the right margin outside the frame (line ends lost) and the lower third curved and faint; image P6, which would carry the rest of the leaf, is not in the record. A straight photograph of f.234 would close it.
-- the word signs ʒ (P4a l.03), Ω (P4a l.32) and K (f.235 l.11) - blocker: no-key-material; no key in the volume gives them and each occurs once or twice.
-- f. 233 l.31 (five signs at the head of the line) and f. 235 l.16 (one word between "sonder" and "ist der") - blocker: open-codes; all five spots the measure flagged were re-checked at the image on 22 Sept 2026: l. 02 is the scribe's spelling "fuet" for fuert (no sign lost), l. 07 "uolgt" uses n = o, which the sign carries, and l. 30 reads "si allein" (the ll sign), so only these two remain. They are legible but yield no word under any value the letter uses elsewhere; the sense of each sentence is not in doubt.
+- about 31 scattered words across the four cipher pages (listed as {?} in pass2/reading.txt) - blocker: open-codes; the signs are legible, each was retried with the extended key and at the image, and none gives a word under a value the letter uses; the sense of each sentence is not in doubt.
+- the ∇ name sign (4 uses; probably Łaski) and one name at f.235r l.16 - blocker: open-codes; no key of the volume gives them.
+- the first pass's f.234 column (P4a) - closed 22 Sept 2026: it is f.235r, read from image P6.
 
 ## Escalation
 
-- [x] siblings: the System A′ letters R9408-R9413, R9427 and their keys (kaa4591/sysA, r9413/key_v3) applied;
+- [x] siblings: all seven images of R9407 listed and fetched (P6 was on DECODE); the System A′ letters R9408-R9413, R9427 and their keys (kaa4591/sysA, r9413/key_v3) applied;
   R9410's gloss key fits this letter.
 - [x] clear-pages: the contemporary gloss over f.233 lines 1-3 read at zoom ("Genedig fursten und herrn ...
   Caspar ... das leger"); the faint single-sign glosses on f.235 used.
 - [x] known-keys: R9369 (the key addressed to Augurelio, f.172) tested and rejected; the R9423 register checked.
-- [x] print: web searches (Augurelio + Bayern 1535 + Chiffre; Weinmeister + Palota/Móré) found no edition; the
+- [x] print: Hungarian accounts of the 1533 siege of Palota (hu.wikipedia, rubicon.hu) found 22 Sept 2026 and used to date the letter; web searches (Augurelio + Bayern 1535 + Chiffre; Weinmeister + Palota/Móré) found no edition; the
   humanist G. A. Augurello (d. 1524) is a different man.
 - [x] key-rebuild: EM, hard-EM, a supervised key from the aligned readings, a word-aware beam.
-- [x] retry: two look-alike split passes; a full hand check of both main pages against the image; six reading
+- [x] retry: second pass re-read every line of all four cipher pages at the image with a polyphonic beam decoder; two look-alike split passes; a full hand check of both main pages against the image; six reading
   rounds; a final targeted pass over every word that failed the measure.
 
 ## Steps
@@ -92,3 +130,6 @@ the whole letter about 89%.** The slip and the address leaf read 92%; the slip e
   identified; P3/P5/P4/P7 transcribed; annealing and greedy climbs failed; R9410 key gave German; look-alike
   splits; EM/hard-EM/supervised key; hand check of both main pages; six reading rounds; f.233 95.7%,
   f.235 96.1% measured; the writer identified as Jörg Weinmeister from the ciphered signature.
+- 2026-09-22 (second pass): P6 fetched (f.235r) and read; independent transcription of all pages (4,363 signs);
+  annealer + polyphonic beam; every line checked at the image; date fixed to spring 1533 from the Palota siege;
+  96.6% of plaintext words read; class raised to read.
