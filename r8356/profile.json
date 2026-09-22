@@ -1,0 +1,144 @@
+{
+ "schema_version": 1,
+ "target": "r8356",
+ "title": "Walsingham letter-book, June 1571: Walsingham to Burghley with a cipher run and name codes, BL Harley MS 260 ff. 112v-113r (DECODE R8356)",
+ "documents": [
+  {
+   "id": "ff112v-113r",
+   "shelfmark": "BL Harley MS 260 ff. 112v-113r; DECODE R8356",
+   "date": "1571-06-25",
+   "year": 1571,
+   "country": "England/France",
+   "route": "Paris -> London (Walsingham -> Burghley); Elizabeth -> Walsingham",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Letters printed in Digges, The Compleat Ambassador (1655) p. 106 with the cipher left as figures; no decipherment found."
+   },
+   "length": {
+    "tokens": 11,
+    "distinct": 8,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE scans IMG_R8356_I38606_P1-P2",
+    "image_quality": "good",
+    "notes": "Boxed codes [12] and [E4]; one nine-sign run 6 1 7 4 a H 6 H H on f. 112v."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "monoalphabetic"
+  ],
+  "summary": "Small name code of boxed digits/letters plus a run of mixed digits and letters for one name or phrase, inserted in a clear letter.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 8,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Copy in a letter-book; the codes were copied from the sent letters."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Digges 1655 p. 106 prints the letter but leaves the cipher as figures; CSP Foreign has no decipherment",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "image cropping",
+   "print search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Downloaded the two R8356 images with the DECODE cookie.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Identified ff. 112v-113r as Walsingham letter-book: Walsingham to Burghley 25 June 1571 (cipher) and Elizabeth to Walsingham (clear).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Found Walsingham to Burghley in Digges 1655 p. 106; cipher printed as figures.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed the run 6 1 7 4 a H 6 H H and codes [12], [E4].",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Pattern check: ABCDEFAFF fits no English word under one-to-one substitution.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Compared with the R8361 run and looked for a Walsingham 1570-73 key; no crib, no key.",
+   "result": "failed",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0.0,
+  "verification": [
+   "historical consistency"
+  ],
+  "notes": "Explained and in print; cipher run and two codes unread, no key.",
+  "gaps": [
+   {
+    "item": "nine-sign run on f. 112v",
+    "blocker": "too-short",
+    "detail": "nine signs, no key"
+   },
+   {
+    "item": "codes [12], [E4]",
+    "blocker": "no-key-material",
+    "detail": "no Walsingham 1571 key known"
+   }
+  ]
+ }
+}
