@@ -20,6 +20,8 @@
       // whole-word codes (de, la, le roi, Monsieur...) only at word boundaries
       const ph=phrases.find(p=>t.startsWith(p,i) && (i===0||/[^a-z]/.test(t[i-1])) && !/[a-z]/.test(t[i+p.length]||''));
       if(ph){ out.push({g:pick(key.enc[ph]),p:ph,cls:ph.length>2?'code':''}); i+=ph.length; continue; }
+      // no sign for w: written as a double u, as the clerks spelt foreign names; the receiver reads uu back as w
+      if(c==='w' && !key.enc.w && key.enc.u){ out.push({g:pick(key.enc.u),p:'u'},{g:pick(key.enc.u),p:'u'}); i++; continue; }
       const l=key.fold[c]&&!key.enc[c]?key.fold[c]:c;
       if(key.enc[l]) out.push({g:pick(key.enc[l]),p:l});
       else if(/[a-z0-9]/.test(c)) out.push({g:'',p:c,cls:'plain'});
@@ -240,6 +242,7 @@
     // the code's own capitals (Et, King, I) are not the writer's: shown in lower case
     const val=g=>{ const v=k.dec[g]; return v==null?null:v.toLowerCase(); };
     const tk=c.map(g=>gap(g)?{g:'',p:' ',cls:'null wb'}:g[0]==='~'?{g:'',p:g.slice(1),cls:'plain'}:{g,p:val(g)??'?',cls:val(g)!=null?'':'unk'});
+    if(!k.enc.w) for(let i=0;i+1<tk.length;i++) if(tk[i].g && tk[i].p==='u' && tk[i+1].g && tk[i+1].p==='u'){ tk[i].show='w'; tk[i+1].show=''; i++; }   // uu = w (the key still says u)
     key=k; tokens=c.filter(g=>k.kind==='pigpen'||!gap(g))
       .map(g=>gap(g)?{g:'|',p:' ',cls:'null'}:g[0]==='~'?{g:'',p:g.slice(1),cls:'plain'}:{g,p:val(g)||'?'});
     $('recv').hidden=false;

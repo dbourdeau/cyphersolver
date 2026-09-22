@@ -11,7 +11,7 @@
   const isCipher=t=>t.g && t.cls!=='plain';
 
   function build(fig, d){
-    const toks=d.tokens.map(t=>({g:t.g||'', p:t.p==null?'':String(t.p), cls:t.cls||''}));
+    const toks=d.tokens.map(t=>({g:t.g||'', p:t.p==null?'':String(t.p), cls:t.cls||'', show:t.show}));   // show: displayed in place of p (a sealed letter's uu = w)
     const ciph=toks.filter(isCipher);
     const key=new Map();                       // group -> {p, n, cls}
     for(const t of ciph){ const k=key.get(t.g)||{p:t.p,n:0,cls:t.cls}; k.n++; key.set(t.g,k); }
@@ -63,7 +63,7 @@
       els.find(el=>el.dataset.g===r.dataset.g).scrollIntoView({block:'nearest',behavior:still?'auto':'smooth'}); });
 
     let run=0;
-    const settle=(el,t)=>{ el._p.textContent=t.p||' '; el.classList.add('done'); };
+    const settle=(el,t)=>{ el._p.textContent=(t.show??t.p)||' '; el.classList.add('done'); };
     function play(){
       const me=++run; fig.classList.remove('cipher'); fig.querySelector('.cr-mode').setAttribute('aria-pressed','false');
       els.forEach((el,i)=>{ el.classList.remove('done'); el._p.textContent=toks[i].cls==='plain'?toks[i].p:' '; });
