@@ -3,9 +3,8 @@
 Catalogue no. 184. Session of 22 September 2026. (Worked in a folder named `nevers1587/` on the unmerged `main-fresh`
 branch; moved here on merge because `nevers1587/` on main is the Randan letters, R4285/R4286.)
 
-Status: in progress
-
-The key was found and partly confirmed; the letter is not read. See "Where it stands".
+Outcome: attempted, open (closed 22 Sept 2026, second session). Not read: the letter text is illegible on the only
+images (B/W microfilm); the code numbers read against Tomokiyo's key no. 16 (`items.tsv`), the three letter runs do not.
 
 ## The document
 
@@ -96,6 +95,31 @@ character, worse than shuffled text. So no. 16 is not the key of the letter text
 Conclusion: at this transcription accuracy neither reading (clear hand, or letter cipher) can be established, and
 the solver can't be expected to converge on noise this high. The blocker is the legibility of the microfilm.
 
+## Third pass (22 Sept, afternoon): the whole letter swept, runs scored, print searched
+
+* **Where the cipher is.** Swept all four pages at native resolution in strips. f. 101r and f. 102r carry no code
+  numbers I can see (only clear amounts such as 1200). The cipher items are on **f. 101v** (about 25 code numbers and
+  runs A, B) and **f. 102v** (about 12 numbers and run C). Listed with their key-16 values and grades in `items.tsv`.
+* **Key no. 16 re-read from the sheet** (`keys/alpha16.png`, rotated): **s = i / 5**, not i/h as first transcribed
+  (`key16.txt` corrected). The rest of the alphabet stands.
+* **Code numbers.** 42 et 43 = eschevins et maire de ville (H); 63̄ = La Vieuville (three times, H); 2̄ = Rethelois;
+  48 = chasteau; 30 = artillerie; 50 = Rethel, 64 = Reims, 15 = garnison (M); "33 et 35 et 34" fits the barred list
+  (Conty, Montpensier, Soissons: three princes named together) better than the plain one (menées, menaces, surprise).
+  Where no bar is visible, both values are recorded.
+* **The three letter runs** (`runs.py`): every reading key no. 16 allows, with the ambiguous glyphs expanded (9 as a
+  or the tailed t; the Z-sign as m/r/l/g; h, which no. 16 has no substitute for, as any letter), scored with
+  `fr-1530-despatches` alone and inside their clear context ("eschevins et … pour", "de pouvoir … vous entretenir",
+  "avec les … faudra"). None gives French. Best: A "si et rou essance de si", B "sie de lan", C "requelae"
+  ("requeste" only if two digits are misread). So either the digits are misread on the microfilm (the 2/s, 9/t and
+  6/b pairs matter), or the runs use signs the key sheet does not list. They stay unread.
+* **Print.** Gomberville, *Mémoires du duc de Nevers* (1665): part 1 (Gallica bpt6k6435941k, bpt6k8717151d) and part 2
+  (Google Books H2eV4wAmIr0C, searchable) have no hit for Vieuville / Vieville / Vieuuille / Aignan near 1587. BnF
+  fr. 4715 and 4716 (Nevers papers with other Vieuville letters, notices cc577658, cc57766h) hold 1589 letters, not
+  this one. DECODE R4289 lists no documents or transcription.
+* **Next leaves.** f. 103 (item 35, Nevers to the Queen Mother, 1 Oct 1587, Gallica canvas 189) is in the same hasty
+  hand, a copy, with no cipher. f. 127 (item 46, Nevers to La Vieuville, 23 Oct 1587, canvas 229) is a second letter
+  to the same man. Neither gives a decipherment.
+
 ## Why it stops here
 
 The cipher here is a thin layer (code numbers and short runs) inside about 110 lines of clear autograph. Reading
@@ -105,16 +129,16 @@ transcription, the runs can't be separated or tested reliably.
 
 ## Remaining gaps
 
-* Clear text: not transcribed (blocker: illegible on the microfilm to this reader; a colour scan or a palaeographer would unblock it).
-* Cipher runs: key identified, runs not deciphered (blocker: none from outside).
+- letter text, ff. 101r–102v (about 110 lines of clear French in a hasty secretary's hand) - blocker: illegible; only a B/W microfilm exists online (Gallica, and DECODE's copy of it); read at about 30–40%; needs a colour scan or the original in the BnF reading room
+- runs A and B (f. 101v) and C (f. 102v), 33 signs - blocker: illegible; every key-16 reading scored, none is French; the digit forms that decide them (2/s, 9/t, 6/b) cannot be told apart on the microfilm
+- code numbers without a visible bar (28, 29, 33–35, 36, 80) - blocker: illegible; plain or barred list cannot be decided from the microfilm
 
-## Escalation (not yet done)
+## Escalation
 
-1. Transcribe the clear text line by line from Gallica canvases 185–188 at native resolution, with a
-   project-standard notation for the inserted runs.
-2. Test each run against key16.txt. Allow clear syllables inside runs and figures read either way (6/b, 5/s, 1/7).
-3. DONE 22 Sept: sibling BnF fr. 3416 = Gallica `btv1b9058240c`, ff. 52v–53r on canvas 62 (openings, 7447 px). It is
-   the same hasty hand, mostly clear with code numbers (25, 63, 42 et 51, 42 et 43, 1200, 500…). What looked like
-   marginal glosses are the ends of f. 52v's lines running into the gutter. **No decipherment, so no calibration.**
-4. Check whether Nevers's letters of Sept–Oct 1587 are printed. Nevers's *Mémoires* (Gomberville, 1665) carries
-   pieces from the fr. 3974–3995 series.
+- [x] siblings: fr. 3416 f. 53v (31 Aug 1587, same hand, no decipherment); fr. 3975 f. 103 and f. 127 (next Nevers letters, no decipherment); fr. 4715/4716 Vieuville letters are 1589
+- [x] clear-pages: none; the BnF notice's "avec chiffrement et déchiffrement" is not borne out on ff. 101–102
+- [x] known-keys: Tomokiyo nos. 11, 12, 16 tried; no. 16 reads the code numbers, not the runs
+- [x] print: Gomberville 1665 parts 1 and 2, Tomokiyo nevers.htm, BnF notices: not printed
+- [x] key-rebuild: substitution anneal on the f. 101r glyph transcription with noise control (fails at this legibility); run-by-run exhaustive key-16 search with LM
+- [x] retry: every run and number rescored with the corrected key (s = i/5); no change
+- [x] images: DECODE R4289's 14 images are cut from the same Gallica microfilm (btv1b90605473, 396 views); Gallica SRU finds no other digitisation of fr. 3975, colour or otherwise

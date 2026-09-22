@@ -6629,9 +6629,9 @@
    }
   },
   "vieuville1587": {
-   "writeup": null,
+   "writeup": "https://dbourdeau.github.io/cyphersolver/vieuville1587.html",
    "key": {
-    "none": "Tomokiyo's Nevers key no. 16 (BnF fr. 3995 f. 32v) fits the code numbers only; the letter text is not read"
+    "none": "Tomokiyo's Nevers key no. 16 (BnF fr. 3995 f. 32v) reads the code numbers only; the three letter runs give no sense under it and the letter text is illegible on the microfilm"
    },
    "cite": "S. Tomokiyo, cryptiana, Nevers ciphers (key no. 16)",
    "fields": {
@@ -6644,13 +6644,44 @@
     "R4289": {
      "decode_status": "Non-decrypted",
      "proposed": "Non-decrypted",
-     "note": "Not read. BnF fr. 3975 item 34 (ff. 101r-102v), a copy dated 'De St Aignen, ce 30 septembre 1587'; no decipherment on the leaves despite the BnF notice. Code numbers fit Tomokiyo's Nevers key no. 16 (42 eschevins, 43 maire de ville); the letter text is not read at the legibility of the microfilm. A partial glyph transcription of f. 101r is attached.",
+     "note": "Not read. BnF fr. 3975 item 34 (ff. 101r-102v), a copy dated 'De St Aignen, ce 30 septembre 1587'; no decipherment on the leaves despite the BnF notice. Mostly clear French in a very hasty hand, with code numbers and three short runs on ff. 101v and 102v. Code numbers read with Tomokiyo's Nevers key no. 16 (42 et 43 eschevins et maire de ville, 63 barred La Vieuville, 48 chasteau, 30 artillerie); the runs and the letter text are not read at the legibility of the microfilm. Not printed in Gomberville's Memoires (1665). The list of cipher items with their key values and a partial glyph transcription of f. 101r are attached.",
      "reading": null,
      "reading_not_needed": true,
      "transcription": [
+      "vieuville1587/items.tsv",
       "vieuville1587/ct_101r.txt"
      ],
      "sent": false
+    }
+   }
+  },
+  "mellon136": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/mellon136.html",
+   "key": {
+    "file": "mellon136/NOTES.md",
+    "lang": "German",
+    "how": "key drawn in the manuscript itself, p. 83 ('Die Figur unserer geheimen Schrift'): pigpen-type grid, cell shape = letter pair, dot = second letter, plus a ligature table; used unchanged"
+   },
+   "cite": "Klaus Schmeh, 'Ein verschlüsseltes Buch aus dem Jahr 1798', Cipherbrain, 4 March 2022 (p. 24 plaintext from George Lasry's transcription and Nils Kopal's decryption; short passages in a reader's comment)",
+   "fields": {
+    "cleartext_lang": "German",
+    "plaintext_lang": "German",
+    "symbol_sets": "graphic signs: pigpen-type alphabet with ligature signs (Rosicrucian 'geheime Schrift'), key on p. 83",
+    "cipher_type": "monoalphabetic substitution (pigpen) with ligature signs",
+    "sender": "none (not a letter; alchemical book pseudonymously ascribed to Johann Arndt; copied 1798, Glücksbrunn)",
+    "receiver": "none",
+    "start_year": "1798"
+   },
+   "records": {
+    "R2873": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Read (cyphersolver mellon136/, 22 Sept 2026). Not a letter: the alchemical manuscript book 'Das zweyte Silentium Dei', copied 18-25 Sept 1798, ascribed to Johann Arndt (d. 1621). 31 cipher passages on pp. 24-76 (p. 24 wholly in cipher; the rest are phrases inside clear German). The key is drawn in the book on p. 83 and reads all of them: 1,545 signs, 2 unread. P. 24 was already read by G. Lasry and N. Kopal (Schmeh, Cipherbrain, 2022). Same images free at Yale Digital Collections 10187248.",
+     "reading": "mellon136/reading.txt",
+     "sent": false,
+     "transcription": [
+      "mellon136/transcription.txt"
+     ]
     }
    }
   }

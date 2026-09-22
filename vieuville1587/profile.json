@@ -58,7 +58,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "unknown",
+   "where": "none found (Tomokiyo, Gomberville 1665, BnF notices, DECODE)",
    "found": "not found",
    "used": false
   },
@@ -69,8 +69,10 @@
   "attack": "key from archive",
   "human_role": "Target chosen by the user from the catalogue; no hand help.",
   "tools": [
+   "Google Books search",
+   "PIL",
    "curl",
-   "PIL"
+   "lang fr-1530-despatches"
   ],
   "models": [
    "claude-opus-5"
@@ -163,6 +165,48 @@
    "kind": "solver",
    "what": "Merged confusable glyph classes (u/n/m/w, e/c/r) and re-ran the anneal: best -4.76/char, no French.",
    "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Re-read key no. 16's alphabet from the sheet image (rotated): s = i/5, not i/h; key16.txt corrected.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Swept ff. 101r-102v at native resolution in strips: code numbers and runs only on f.101v and f.102v; ~37 items listed with key-16 values and grades in items.tsv.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Code numbers read with key no. 16: 42/43 eschevins/maire de ville, 63(bar) La Vieuville x3, 2(bar) Rethelois, 48 chasteau, 30 artillerie; barred vs plain undecided where no bar is visible.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "runs.py: every key-16 reading of runs A (18 signs), B (8), C (7) with ambiguous glyphs expanded, scored with fr-1530-despatches alone and inside the clear context: no French (best 'si et rou essance de si', 'sie de lan', 'requelae').",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Gomberville Memoires part 2 (Google Books H2eV4wAmIr0C) searched for Vieuville/Vieville/Vieuuille/Aignan; BnF fr. 4715/4716 notices; DECODE document list: letter not printed, no transcription.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Next leaves of fr. 3975 checked: f.103 (to the Queen Mother, 1 Oct 1587) and f.127 (to La Vieuville, 23 Oct 1587): no decipherment.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Looked for a better image: DECODE's R4289 images are crops of the same Gallica microfilm; Gallica SRU lists no other (colour) digitisation of fr. 3975.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -173,13 +217,29 @@
   ],
   "gaps": [
    {
-    "blocker": "illegible",
-    "item": "clear autograph text (~110 lines)"
+    "item": "letter text ff. 101r-102v (~110 lines of clear French)",
+    "blocker": "illegible"
    },
    {
-    "blocker": "illegible",
-    "item": "inserted cipher runs"
+    "item": "runs A, B, C (33 signs)",
+    "blocker": "illegible"
+   },
+   {
+    "item": "code numbers without a visible bar (28, 29, 33-35, 36, 80)",
+    "blocker": "illegible"
    }
-  ]
+  ],
+  "fraction_read": 0.0,
+  "codes_open": {
+   "open": 5,
+   "total": 31
+  },
+  "grades": {
+   "H": 5,
+   "C": 8,
+   "M": 13,
+   "I": 5
+  },
+  "notes": "Code numbers identified against key no. 16 only; the letter text and the three letter runs are unread. fraction_read counts the run signs and the letter text, neither of which reads."
  }
 }
