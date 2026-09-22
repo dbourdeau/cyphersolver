@@ -68,7 +68,7 @@ Tomokiyo, who solicits contributions on the page.
 | Telegram to Sun Yat-sen (1916) | solved | `sunyatsen/`, docs/sunyatsen.html |
 | Sun Yat-sen intercepted telegrams, JACAR 1.6.1.4-2-1-2 vols 2–4 (1916–17) | mostly solved 2026-09-18 | `sunyatsen/y1916/NOTES.md`, `sunyatsen/y1917/NOTES.md`; open: 文密 six-vowel code (Jul 1916–Jun 1917), Swatow original not in 088300/088400 |
 | Letter of Richard Forster (1644) | found already read by others (Lasry, Biermann, Pitt Sept 2026); alphabet verified blind here, 31/34 symbols | `forster/` |
-| Variable-length figure code, Austrian archives: DECODE R2159 (1644) | read in full; polyphonic 24-figure alphabet | `lucca/`, docs/lucca.html |
+| Variable-length figure code, Austrian archives: DECODE R2159 (1644) | read in full; 24-figure alphabet, one polyphonic figure (17 = i/n was a transcription error, checked against the images) | `lucca/`, docs/lucca.html |
 | Variable-length figure code, Austrian archives: DECODE R1408 (Warsaw 1627) | read in full; ordered alphabet with syllables, nulls and word codes | `warsaw/`, docs/warsaw.html |
 | Henry III → Segur (1583–86) | three of the four letters read (ff. 233, 239, 288v, 1585–86); alphabetical letters + 70-syllable table; sender is Henry of Navarre | `segur/`, docs/segur.html |
 

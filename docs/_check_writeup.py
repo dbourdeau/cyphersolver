@@ -212,6 +212,27 @@ def key_words(target_cell):
 # ---------------------------------------------------------------------------
 # one write-up
 
+def image_problems(slug, images=None, skip=None):
+    """Images on the page (README Conventions, writeup skill section 1): every image figure names its own source in
+    data-credit, and the page shows a snip of the cipher (a figure or an IMAGES
+    entry), or docs/_explore_skip.json "snip" says why none can be had. Returns (uncredited figures, problems)."""
+    if images is None: images = manifest()[1]
+    if skip is None:
+        try: skip = json.loads(read(HERE / '_explore_skip.json') or '{}')
+        except ValueError: skip = {}
+    page = read(HERE / f'{slug}.html') or ''
+    figs = [m for m in re.finditer(r'<figure((?! class="(?:party|lead))[^>]*)>.*?</figure>', page, re.S)
+            if re.search(r'<img src="[^"]+\.(?:jpe?g|png|gif|webp|svg)"', m.group(0)) and 'portrait_' not in m.group(0)]
+    bare = [re.search(r'<img src="([^"]+)"', m.group(0)).group(1) for m in figs
+            if not (re.search(r'data-credit="([^"]*)"', m.group(1)) or [0, ''])[1].strip()]
+    probs = []
+    if bare: probs.append(f'{len(bare)} image figure(s) without data-credit naming their source: {", ".join(bare[:6])}')
+    im = images.get(slug)      # True when IMAGES has a lead crop (its credit is the entry's third field)
+    if not figs and not im and slug not in skip.get('snip', {}):
+        probs.append('no snip of the cipher on the page: crop one from the scans (IMAGES entry or a figure), '
+                     'or record why none can be had in docs/_explore_skip.json "snip"')
+    return bare, probs
+
 def check_slug(slug):
     pages, images, version = manifest()
     rows = readme_rows()
@@ -313,6 +334,8 @@ def check_slug(slug):
     item(any(q.get('img') for q in pics.get(slug) or []) or slug in skip.get('portrait', {}),
          f'a correspondent portrait in docs/_portraits.json (python docs/_add_portrait.py), '
          f'or the reason there is none in docs/_explore_skip.json "portrait"')
+    for prob in image_problems(slug, skip=skip)[1] or [None]:
+        item(prob is None, prob or 'every image names its source (data-credit) and the page shows a snip of the cipher')
     item((HERE / 'reveal' / f'{slug}.json').exists() or slug in skip.get('reveal', {}),
          f'a "watch it decipher" file docs/reveal/{slug}.json, or the reason there is none in docs/_explore_skip.json "reveal"')
     # the explore data (skill step 2a): nudges only, since many targets have no named key or no known route
@@ -439,6 +462,19 @@ def audit(brief=False):
             if not ok: drift.append(f'{s}.html: badge {st}/{stt} but profile says {ks}')
     print(f'G. Solved vs read (README Conventions): section or badge disagrees with profile.json: {len(drift)}')
     for x in drift: print('   ' + x)
+    # 8. images: every figure credited to its own source; a snip of the cipher on every page (informational)
+    try: skip = json.loads(read(HERE / '_explore_skip.json') or '{}')
+    except ValueError: skip = {}
+    imgs = []
+    for s in sorted(html_slugs - SURVEYS):
+        if s not in pages: continue
+        bare, probs = image_problems(s, images, skip)
+        if probs: imgs.append((s, len(bare), any(p.startswith('no snip') for p in probs)))
+    print(f'H. Images (writeup skill section 1): {sum(1 for x in imgs if x[1])} pages with uncredited figures '
+          f'({sum(x[1] for x in imgs)} figures), {sum(1 for x in imgs if x[2])} pages with no snip of the cipher')
+    if not brief:
+        for s, n, nosnip in imgs:
+            print(f'   {s}: ' + ', '.join(filter(None, [f'{n} uncredited' if n else '', 'no snip' if nosnip else ''])))
     return problems, gaps
 
 # ---------------------------------------------------------------------------

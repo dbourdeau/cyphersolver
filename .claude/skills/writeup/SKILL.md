@@ -100,6 +100,24 @@ and version stamps; you write everything else. Required parts, in order:
 6. Figures: `<figure><img src="<slug>_<what>.jpg" alt="…" loading="lazy"><figcaption>…</figcaption></figure>`, cut
    from the scans at the width of the text column (about 1100 px), JPEG, under 400 KB each, named `<slug>_…`.
    Page images themselves are never committed; crops for the site are.
+   **Every image names its own source, and every page shows the cipher.**
+   - A snip of the cipher is required on every page (`_check_writeup.py` fails without one). Crop it from the
+     scans the work used: a clear stretch of cipher, ideally with its gloss or decipherment. Look for the scans
+     in the target folder, here and in the main checkout (`C:\Users\dbour\cypher\<folder>`). If they are not
+     there, fetch them (Gallica IIIF, DECODE with the cookie, BL IIIF, PARES, archive.org for printed texts). Only
+     when no image can be had (none exists, or only a paid or physical copy) record why in
+     `docs/_explore_skip.json` under `"snip"`.
+   - Every image figure carries `data-credit` naming **its specific source**: holder, shelfmark and folio or
+     page, and the route. For example: `<figure data-credit="Biblioth&egrave;que nationale de France, fr. 3976
+     f. 133v, via Gallica">`, `"British Library, Harley MS 260 f. 419r, via DECODE R8364"`, `"Meister, Die
+     Geheimschrift (1906), p. 176, via the Internet Archive"`, `"S. Tomokiyo, Cryptiana"`. A diagram made here
+     from a scan says so: `"Drawn here from BnF fr. 2984 p. 30 (Gallica)"`. The build prints the credit as
+     `Image: …` at the end of the caption, so do not also write it into the caption text. The checker fails a
+     figure without one.
+   - The third field of an `IMAGES` lead crop is its credit, in the same specific form.
+   - BnF cipher photographs (Gallica, or BnF photographs on DECODE): George Lasry passed on (22 Sept 2026) that
+     crops may be used with proper attribution, so use them. Exception: fr. 3029 and fr. 3092 (his own
+     forthcoming work) stay withheld.
 7. Close with `<p class="muted">` pointing to the repository folder, then `<!-- site:footer -->`.
 
 Write the HTML with the Write tool, not a Bash heredoc (long payloads fail to parse). HTML entities for accents

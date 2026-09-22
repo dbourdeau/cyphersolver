@@ -1,14 +1,17 @@
 # Fra Giovanni di Lucca to the Emperor, 30 May 1644 (DECODE R2159, ÖStA HHStA Staatskanzlei Interiora, Chiffrenschlüssel Kt. 20 Fasc. 27 ff. 18-19) — NOTES
 
-**Verdict: read.** The cipher paragraph is a 24-figure alphabet with two polyphonic figures (17 = i or n, 19 = t or s),
-groups delimited by dots, plaintext Italian. All 231 groups read; two spellings are odd (`ogn modo`, `Bogodania`) and
-one word is ambiguous (`io il habi` / `no il habi`). Tomokiyo's unsolved page lists the item under "Variable-length
+**Verdict: read.** The cipher paragraph is a 24-figure alphabet with one polyphonic figure (19 = t or s), groups
+delimited by dots, plaintext Italian. All 231 groups read; one spelling is odd (`ogn modo`). *Corrected 22 Sept 2026
+against the DECODE images (§7): the "17 = n" of the first session was ten transcription errors for 14, so 17 is only
+i, `Bogodania` and `non l'habi` are confirmed, and the clear frame names the speaker as Koniecpolski.* Tomokiyo's unsolved page lists the item under "Variable-length
 Figure Code in Austrian Archives (1644, 1627)" with the note that it "can be deciphered to read *Al principe di
 trenti…*" and that "someone versed in Italian would be able to complete the decryption"; nobody had. DECODE still
 carries the record as *Non-decrypted*, cipher type *Unknown*, with a placeholder date range of 1686–1877.
 
 Session 2026-09-16. Ciphertext is Tomokiyo's transcription (variable2.htm); the DECODE images need a login and
-were not seen, so the transcription is taken on trust and two readings below depend on that.
+were not seen, so the transcription was taken on trust. Session 2026-09-22: images seen, transcription corrected
+(§7); [ct.txt](ct.txt) is now the corrected text, the first-session text is in git history (commit before 22 Sept).
+§§1–4 below describe the first session's work on the uncorrected text and are kept as the record of it.
 
 ## 1. The ciphertext
 
@@ -62,7 +65,8 @@ alphabetical and shows no regularity that I can see.
 *Alternative to polyphony.* Everything attributed to "17 = n" could also be a transcription of **14** misread as 17
 (a 4 and a 7 are close in seventeenth-century hands), and "19 = s" could be a misread figure for an *s* number that is
 otherwise unused (16, 20, 24, 27–31). Both would turn this into an ordinary homophonic alphabet. Only the DECODE
-images can settle it; the reading is the same either way.
+images can settle it; the reading is the same either way. **Settled for 17 (22 Sept 2026, §7): every "17 = n" is a
+14 on the page. 17 = i only (14 occurrences), 14 = n (20). 19 stays t/s.**
 
 ## 4. Reading
 
@@ -89,7 +93,7 @@ Normalised:
 
 > **Al principe di Transil[u]ania lo impedirò con ogn[i] modo che il Turco non li dia aiuto, e farò rivoltare contra
 > di lui, se sarà bisogno, il principe di Bog[o]dania, et li darò dumilia Cosachi, et manderò a voi con una sua
-> lettera all'Imperatore che non faccia pace fin che [io] l'habbi humiliato o vinto.**
+> lettera all'Imperatore che non faccia pace fin che non l'habbi humiliato o vinto.**
 
 > *As to the Prince of Transylvania: I shall by every means prevent the Turk from giving him help, and if need be I
 > shall make the Prince of Moldavia rise against him and give him two thousand Cossacks, and I shall send [him] to you
@@ -104,7 +108,8 @@ Notes on the text:
 - `19 25 9` before *lettera* is *sua* (Viterbi) or *tua*; *sua* is the grammatical reading (a letter of his, the
   Prince of Moldavia's, or of the speaker's).
 - `17 18 17 11 10 9 4 17` is *io il habi* or *no il habi* (*non l'habbi*); Viterbi takes *no*. Either way the sense
-  is "until [I] have humbled or defeated him".
+  is "until [I] have humbled or defeated him". *Settled 22 Sept 2026 (§7): the page has `14 18 14 11 10 3 4 17`,
+  *non l'habi*.*
 - `4` = b occurs only in *bisogno*, *Bogodania*, *habi*; `2` = g only in *ogn*, *bisogno*, *Bogodania*; `32` = r once,
   in *rivoltare*. These three values rest on one to three occurrences each, all in words that no other letter fits.
 
@@ -128,14 +133,38 @@ Tomokiyo's article quotes only the cipher.
 
 ## 6. What remains
 
-- The images (DECODE, login) to check the 4/7 and the *s* question in §3, the three odd spellings, and the cleartext
-  frame that names the speaker.
+- ~~The images (DECODE, login) to check the 4/7 question~~ done 22 Sept 2026 (§7). Still open: the *s* question
+  (does 19 = s hide a different figure?), *Transiuania* without *l*, *ogn* without *i*: the images show `19` in both
+  places of *Transiuania* and no extra group, so the spellings look like the writer's; a closer look at the two
+  shapes of 19 is the remaining check.
+- A full transcription of the clear frame (ff. 18–19), read only in outline in §7.
 - The other two items in the same article, R1408 (Warsaw, 24 December 1627, Italian, two-digit groups with letter
   pairs) and R2179 (undelimited digits), are different ciphers and were not attempted.
 
+## 7. Checked against the manuscript (22 Sept 2026)
+
+DECODE R2159 images P1 and P2 (ÖStA HHStA, Staatskanzlei Interiora, Chiffrenschlüssel Kt. 20 Fasc. 27 ff. 18–19;
+fetched with the DECODE cookie, kept outside the repository; the record's notice restricts publishing). The cipher is
+12 lines on f. 18r between clear Italian. The writer's 4 is a crossed stroke that looks like a barred 7; his 7 is
+plain. Tomokiyo's transcription reads the crossed 4 correctly as 14 in most places, but as 17 in ten: *principe*
+(twice, `26 21 17 14 6 15 26 1`), *manderò* (`12 3 14 8`), *con una* (`6 13 14 23 14 3`), *non faccia*
+(`14 18 14`), *non l'habi* (`14 18 14 11 10 3 4 17`) and *vinto* (`23 15 14 22 18`). Every plain 17 on the page is
+*i*. With the ten groups corrected ([ct.txt](ct.txt)), 17 is a single letter and the cipher has one polyphonic figure
+(19); the Viterbi choices change in two places, both to what §4 argued for: *Bogodania* (not *Bogodanna*) and *non
+l'habi* (not *no il habi*). Tomokiyo's crib *Al principe di* was right; its apparent inconsistency (§2 item 2) came from
+the transcription.
+
+The clear frame, read in outline (not transcribed letter by letter): the friar, sent from Vilnius by the King, was
+passed on to *il suo Generalissimo il Sig.re Stanislao Conespolschi* (Grand Hetman Stanisław Koniecpolski), told him it
+was the moment to help the Emperor, and Koniecpolski "answered angelically" that he would, from affection for the
+House of Austria and zeal for religion and reason of state — then the cipher. After it: this has not yet taken effect
+because Rákóczi has sent a great sum of money to Constantinople to have the Prince [of Moldavia] made *mazul* (deposed).
+The letter is dated *dalla Città di Brodi, Residentia dell'Ill.mo … Generalissimo Conespolschi, li 30 di Maggio 1644*.
+So the speaker of the cipher paragraph is **Koniecpolski**, the §5 inference confirmed, and the place is Brody.
+
 ## Files
 
-- [ct.txt](ct.txt) — Tomokiyo's transcription, 231 groups.
+- [ct.txt](ct.txt) — Tomokiyo's transcription, 231 groups, with ten 17→14 corrections from the DECODE images (§7).
 - [lm.py](lm.py) — Italian 5-gram model builder (corpus not committed; Gutenberg 45334, 56498, 61704–61706).
 - [solve.py](solve.py) — homophonic annealer (unconstrained runs).
 - [crib_anneal.py](crib_anneal.py) — the eight-letter crib-fixed annealing that produced the reading.
@@ -143,5 +172,5 @@ Tomokiyo's article quotes only the cipher.
 - [control.py](control.py) — the shuffled-ciphertext control.
 
 Checked: transcription counts, crib consistency, convergence over seeds, shuffled controls, word-level Italian.
-Not checked: the manuscript images, the cleartext frame, the identity of the speaker. User must verify: the
+Checked 22 Sept 2026: the cipher against the manuscript images (§7). Read in outline only: the cleartext frame. User must verify: the
 historical attribution in §5 before it is repeated anywhere.

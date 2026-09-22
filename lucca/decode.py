@@ -2,7 +2,7 @@
 import numpy as np,itertools
 lp=np.load('it5.npy')
 ct=[int(x) for x in open('ct.txt').read().split()]
-key={1:'e',2:'g',3:'a',4:'b',5:'f',6:'c',7:'e',8:'d',9:'a',10:'h',11:'l',12:'m',13:'o',14:'n',15:'i',17:'in',18:'o',19:'ts',21:'r',22:'t',23:'u',25:'u',26:'p',32:'r'}
+key={1:'e',2:'g',3:'a',4:'b',5:'f',6:'c',7:'e',8:'d',9:'a',10:'h',11:'l',12:'m',13:'o',14:'n',15:'i',17:'i',18:'o',19:'ts',21:'r',22:'t',23:'u',25:'u',26:'p',32:'r'}
 def lp5(a,b,c,d,e): return float(lp[a*456976+b*17576+c*676+d*26+e])
 def viterbi(ct,key):
     cands=[[ord(ch)-97 for ch in key[c]] for c in ct]
