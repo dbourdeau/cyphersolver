@@ -113,7 +113,11 @@ in attribute and manifest strings (`&eacute;`, `&rsquo;`, `&mdash;`), plain UTF-
   `docs/_portraits.json`. Then
   `python docs/_add_portrait.py <slug> sender|recipient "<name>" "File:<Commons file>" "<Portrait by X, 1590>"`,
   which checks the licence, crops the face and updates the manifest; the build puts the from/to strip under the
-  title. Look at the crop (profiles are often missed). Leave a side out when the person is anonymous, an office,
+  title. Look at the crop (profiles are often missed). A figure cropped from a public-domain group scene is acceptable
+  when the source identifies which figure is the person (the Commons/Wikidata description, a key or legend, a label
+  in the image, or a reliable source naming the position): add `--box x0,y0,x1,y1` (fractions of the image; it
+  crops that region from a 2000-px copy) and make the caption say it is a detail, e.g. "Detail of <scene>, <artist,
+  date>". If the figure cannot be identified with confidence, do not crop. Leave a side out when the person is anonymous, an office,
   or has no trustworthy portrait. Skipping is allowed only when it is impossible: both sides anonymous or offices, not a letter
   between people, or nothing trustworthy on Commons after a real search. Then record why in `docs/_explore_skip.json` under `"portrait"`; the checker accepts that instead.
 - If the page is solved or partly read, update the `solved` survey entry's blurb and quote counts.

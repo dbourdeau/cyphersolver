@@ -1,11 +1,15 @@
 """Add a sender or recipient portrait to a write-up.
 
-    python docs/_add_portrait.py <slug> <sender|recipient> "<display name>" "File:<Commons file>" "<what, e.g. Portrait by Titian, 1551>"
+    python docs/_add_portrait.py <slug> <sender|recipient> "<display name>" "File:<Commons file>" "<what, e.g. Portrait by Titian, 1551>" [--box x0,y0,x1,y1]
     python docs/_add_portrait.py <slug> --clear
 
 Checks the Commons licence (public domain or CC0 only), downloads an 800-px copy, crops a 192-px square around the
 face (YuNet, fetched once into ~/.cache; top-centre fallback) to docs/portrait_<name>.jpg, and updates
 docs/_portraits.json. A person already on the site reuses their image. Rebuild with _build_site.py afterwards.
+
+--box x0,y0,x1,y1 (fractions of the image width/height) crops that region instead of detecting a face, from a
+2000-px copy so a small figure in a group scene stays sharp; the region is squared around its centre and resized
+to 192 px. Use it only when the source identifies which figure is the person; caption it "Detail of <scene>, ...".
 """
 import io, json, pathlib, re, sys, unicodedata, urllib.parse, urllib.request
 from PIL import Image
@@ -34,8 +38,13 @@ def faces(im):
     except Exception as e:
         print('face detection unavailable, using top-centre crop:', e); return []
 
-def crop(im, out=192):
+def crop(im, out=192, box=None):
     W, H = im.size
+    if box:
+        x0, y0, x1, y1 = box[0] * W, box[1] * H, box[2] * W, box[3] * H
+        side = int(min(max(x1 - x0, y1 - y0), W, H)); cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+        l = int(min(max(cx - side / 2, 0), W - side)); t = int(min(max(cy - side / 2, 0), H - side))
+        return im.crop((l, t, l + side, t + side)).resize((out, out), Image.LANCZOS)
     fs = [f for f in faces(im) if f[1] + f[3] / 2 < H * .7]
     if fs:
         x, y, w, h = max(fs, key=lambda f: f[2]); side = min(W, H, int(w * 2.8)); cx, cy = x + w / 2, y + h * .75
@@ -45,7 +54,7 @@ def crop(im, out=192):
     l = int(min(max(cx - side / 2, 0), W - side)); t = int(min(max(cy - side / 2, 0), H - side))
     return im.crop((l, t, l + side, t + side)).resize((out, out), Image.LANCZOS)
 
-def main(a):
+def main(a, box=None):
     data = json.loads(MANIFEST.read_text(encoding='utf-8')) if MANIFEST.exists() else {}
     slug = a[0]
     if not (DOCS / f'{slug}.html').exists(): sys.exit(f'no page docs/{slug}.html')
@@ -56,10 +65,10 @@ def main(a):
         if role not in ('sender', 'recipient'): sys.exit('role must be sender or recipient')
         f = f if f.startswith('File:') else 'File:' + f
         known = {p['file']: p['img'] for v in data.values() for p in v if p.get('file')}
-        img = known.get(f)
+        img = None if box else known.get(f)
         if not img:
             q = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode({'action': 'query', 'titles': f,
-                'prop': 'imageinfo', 'iiprop': 'url|extmetadata', 'iiurlwidth': 800, 'format': 'json'})
+                'prop': 'imageinfo', 'iiprop': 'url|extmetadata', 'iiurlwidth': 2000 if box else 800, 'format': 'json'})
             info = next(iter(json.loads(get(q))['query']['pages'].values())).get('imageinfo')
             if not info: sys.exit(f'{f} not found on Commons')
             lic = info[0].get('extmetadata', {}).get('LicenseShortName', {}).get('value', '')
@@ -67,7 +76,7 @@ def main(a):
             used = {p['img'] for v in data.values() for p in v if p.get('img')}
             img, n = f'portrait_{key(name)}.jpg', 2
             while img in used or (DOCS / img).exists(): img, n = f'portrait_{key(name)}-{n}.jpg', n + 1
-            crop(Image.open(io.BytesIO(get(info[0]['thumburl']))).convert('RGB')).save(DOCS / img, quality=86, optimize=True)
+            crop(Image.open(io.BytesIO(get(info[0].get('thumburl') or info[0]['url']))).convert('RGB'), box=box).save(DOCS / img, quality=86, optimize=True)
             print('saved', img, '(' + lic + ')')
         rows = [p for p in data.get(slug, []) if p['role'] != role]
         rows.append({'role': role, 'name': name, 'img': img, 'what': what.rstrip('.'),
@@ -77,5 +86,9 @@ def main(a):
     print(slug, '->', [p['name'] for p in data.get(slug, [])])
 
 if __name__ == '__main__':
-    if len(sys.argv) not in (3, 6): sys.exit(__doc__)
-    main(sys.argv[1:])
+    args, box = sys.argv[1:], None
+    if '--box' in args:
+        i = args.index('--box'); box = [float(v) for v in args[i + 1].split(',')]; del args[i:i + 2]
+        if len(box) != 4 or not (0 <= box[0] < box[2] <= 1 and 0 <= box[1] < box[3] <= 1): sys.exit('--box x0,y0,x1,y1 in 0..1')
+    if len(args) not in (2, 5): sys.exit(__doc__)
+    main(args, box)
