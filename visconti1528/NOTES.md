@@ -70,13 +70,23 @@ army will go to cut the road between Milan and Pavia.
 Glyph totals (final.md): 1338 cipher glyphs; 1240 read with confidence (92.7%); 45 read with the sense open or
 tentative; 53 without a value.
 
+## Code identifications from the full sibling readings (22 Sept 2026, second session pass)
+
+fr3045_f28_reading.md and fr3096_f91_reading.md (both read in part):
+- [48] = probably Saint-Pol: fr. 3096 l.8 "cum l'andata di [48]" (June 1529, when Saint-Pol left the camp for Genoa); fits "a casa de [48]" here (the council at the French commander's lodging, attended by the Duke of Urbino). Probable, no clear-text match.
+- [peu] = probably the King: fr. 3045 l.19 "per servicio di [ep]", the same formula as v04-05 "il servicio dil [peu]". Probable.
+- [rr] = a French agent acting for the King, not the King (fr. 3096 l.3 "[rr] heri ... fece l'oficio de vostro bono servitore"); name not found. The r21 "[r r ᵽ]" here is rr plus one sign.
+- [4θ], [4r], [qq] and the so../lo../do.. final pair do not occur in either sibling. qq recurs in fr. 3045 as an overbarred name-like group, not identified.
+- fr. 3096 also shows q = F (facio, fece, farà) and a b-shaped H / h-shaped B pair; no change to the readings here.
+Crediting the two probable identifications (48 x2, peu x2) moves the measured figure from 1240 to about 1246 of 1338 (93.1%). The rest stays blocked as listed below; the read bar (95%) is not reached.
+
 ## Remaining gaps
-- nomenclator codes 48 (x2), 4θ, 4r, rr, qq, peu (x2), the rex context - blocker: no-key-material; numbered code, no key in Lasry's or Tomokiyo's tables or in the two sibling letters
+- nomenclator codes 4θ, 4r, rr, qq (48 probably Saint-Pol and peu probably the King, from the siblings, not proved) - blocker: no-key-material; numbered code, no key list survives, both siblings read in full without resolving them
 - the final sign pair of so../lo../do.. (r10-12) and the one-off signs [Y r] r12, [mur·][ω] r16, [v b] r30, Π v08-09 - blocker: too-short; they occur only here, the siblings show no occurrence to test a value on
 - v03 middle and v06 small signs - blocker: illegible; two zoom passes on the Gallica native gave no stable shape
 
 ## Escalation
-- [x] siblings: fr. 3045 f.28 (Visconti to Angelo Bolano, Alessandria 15 Oct 1528, btv1b9060156p view 54) and fr. 3096 f.91r (Visconti to Francis I, pieve de Locate 15 June 1529, btv1b9060015d view 94) opened; key confirmed on both ("mal tratamento", "che disperat-"); the crossed sign is the figure 4, so 48/4θ/4r are numbered codes; rr and qq recur as groups; peu and the one-off signs do not occur
+- [x] siblings: both siblings then read in full (fr3045_f28_reading.md, fr3096_f91_reading.md): 48 = Saint-Pol and peu = King probable, rr a French agent; fr. 3045 f.28 (Visconti to Angelo Bolano, Alessandria 15 Oct 1528, btv1b9060156p view 54) and fr. 3096 f.91r (Visconti to Francis I, pieve de Locate 15 June 1529, btv1b9060015d view 94) opened; key confirmed on both ("mal tratamento", "che disperat-"); the crossed sign is the figure 4, so 48/4θ/4r are numbered codes; rr and qq recur as groups; peu and the one-off signs do not occur
 - [x] clear-pages: the verso and address leaf carry no decipherment; f.153 (view 242) is a separate clear item
 - [x] known-keys: Lasry's Visconti table (the base key); the Bizozola key of fr. 3034 f.156 is a different cipher
 - [x] print: Tomokiyo GL.htm (key only), web search: no edition of the letter
