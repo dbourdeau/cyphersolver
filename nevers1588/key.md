@@ -17,18 +17,20 @@ or the figure "1" (written like a dotted i) followed by a character. Several sig
 | j | 3 |
 | l | n, o |
 | m | 19, m |
-| n | 1d (18), l |
+| n | 1d (18), l, [ (bracket-like), long J-like sign (f. 133) |
 | o | 17, k |
 | p | J, 1b, 16 |
-| q | 4 with a cross below, h (qu) |
+| q | h (qu), 1s (qu in "evesque", f. 133v) |
 | r | 14, g, 9 |
 | s | 13, f |
 | t | 12, e (ε) |
 | u / v | d (δ), 11 |
 | x | c |
 | y | ϙ (y with a cross), q |
+| z | 4 with a cross below (curez, bruictz, f. 133v; was listed under q) |
 
-Code numbers (plain, uncoded figures in the text): 11 = le Roy, 24 = [roi de] Navarre (both glossed on f. 131);
+Code numbers (plain, uncoded figures in the text): 11 = le Roy, 24 = the duc de Nevers (both glossed on f. 131; the
+gloss over 24 reads "nevers", first misread here as Navarre, corrected 22 Sept 2026 from ff. 133-134, `r3708/`);
 102 = Paris, 9 = duc de Guise (from context); 40 with m above = 40 000.
 
 The cells with several values are what the transcription and the readings support. Some may be one glyph misread

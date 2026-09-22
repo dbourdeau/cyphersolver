@@ -38,7 +38,7 @@ in this session (Gomberville's *Mémoires de Nevers* not searched for this lette
   variants, unigram penalty) collapsed to e/n/t strings. Too little text for a transcription this noisy.
 * **The same informant wrote ff. 131 (4 June 1588) and 133 (6 June 1588)** of the volume, same hand, same
   cipher, same monogram. **f. 131 (canvas 221) carries interlinear decipherments** of its runs: "quelques mutins
-  d'entr'eux", "conte de Brissac", "que s'il pouvoit", "Roy", and the code numbers 24 = Navarre, 11 = le Roy.
+  d'entr'eux", "conte de Brissac", "que s'il pouvoit", "Roy", and the code numbers 24 = Nevers (gloss "nevers"; first misread as Navarre), 11 = le Roy.
   Aligning "7 i7 id i2 t 6 s 8 g p i3 f 2 X" = "c o n t e d e b r i s s a c" showed the unit: **a sign is one
   character, or "1" (a dotted i-like figure) plus a character.** The first gloss confirmed m=19, u=d, t=12, i=p,
   n=l, s=f.
@@ -72,7 +72,7 @@ The runs in their clear context (`reading.tsv`):
 > **remueroit tant de messages(?) en ce royaume** que led. 11 en auroit **la plus petite part**. Voila tout ce
 > que j'ay peu scavoir de nouveau.
 
-Code numbers, from f. 131's glosses and this context: 11 = le Roy (glossed), 24 = [roi de] Navarre (glossed),
+Code numbers, from f. 131's glosses and this context: 11 = le Roy (glossed), 24 = the duc de Nevers (glossed "nevers" on f. 131; first misread as Navarre, corrected from ff. 133-134, see `r3708/`),
 102 = Paris (context), 9 = the duc de Guise (context: threatens the King's council, commands 40 000 men),
 12 = probably the Queen Mother; 10, 20, 28, 49, 70 not identified (20 is a count, "20 des plus belles villes").
 
