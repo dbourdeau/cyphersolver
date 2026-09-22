@@ -50,17 +50,5 @@ def beam(signs, width=40):
             if len(beams) >= width: break
     return beams[0][2]
 
-res, page, ctx = [], '', []
-for l in open(os.path.join(HERE, 'transcription.txt'), encoding='utf8'):
-    if l.startswith('=='): page = l.split()[1]; continue
-    m = re.match(r'(\d\d)\s+(.*)', l.rstrip('\n'))
-    if not m: continue
-    parts = re.split(r'(\[[^\]]*\])', m.group(2))
-    txt = ''
-    for p in parts:
-        if p.startswith('['): txt += ' ' + p + ' '; continue
-        s = p.replace(':', '').replace('?', '').replace('jo', 'J').replace('mg', 'M').replace(' ', '')
-        if s: txt += beam(s)
-    res.append(f'{page}.{m.group(1)} {txt}')
-print('\n'.join(res))
-if out: open(out, 'w', encoding='utf8').write('\n'.join(res) + '\n')
+for arg in sys.argv[2:]:
+    print(beam(arg.replace('jo','J').replace('mg','M')))
