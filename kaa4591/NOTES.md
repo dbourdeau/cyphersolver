@@ -30,6 +30,8 @@ they are separate letters in at least six systems, several with their key a few 
 | R9427 | 287 | German newsletter to a duke, dated 24 April [15]34, postscript 25 April; gloss over lines 1–10 | System A′ | partial key from gloss: 5 a, 4/ω e, □ n, p i, 8 h, 9 o, ↓ r, ÿ t, 7 m, π b, X = F.G. | **broken**, key rebuilt from its own gloss; P1 11–35 and P2 decoded (`r9427/decrypt.txt`), read in part |
 
 System A (signs ↓ ω π 4 8 ÿ …) is also the system of R9368, R9407 (Augurelio), R9411–R9412 (Cornelio Sperantio):
+(R9411–R9412 are written up separately in `sperantio1534/`: King John to the dukes, 6 Feb 1534, and a Buda
+newsletter of 8 Feb 1534, both read with the key of R9415, System L; catalogue 163.)
 the Bavarian agents in Rome/Italy, 1530s. Key R9369 (f.172) is "Dno Aurelio Augurelio".
 
 ## R9325 (f.129) — read

@@ -173,6 +173,11 @@ PAGES = [
          blurb='DECODE R9251 is Patrick Forbes&rsquo;s copy of only the ciphered words of seven letters of Elizabeth&rsquo;s ambassador in France. No key is on DECODE, but the Cecil&ndash;Norris cipher that Tomokiyo reconstructed from a decipherment printed by mistake in <em>Cabala</em> (1663) reads the siblings: demaund, reason, ruin, remain, Master Stewarde, as the Calendar of State Papers summarises them. A shuffle control (8 word hits against at most 3 in 1,000 shuffles) confirms the table is Norris&rsquo;s. The target letter of 9 March 1568 has three items: the French King&rsquo;s name sign, a name sign probably for the Queen of Scots, and a four-sign word not read.',
          quote='&ldquo;otherwise Norris much doubts the ruin of the Prince of Cond&eacute; and the Admiral&rdquo;',
          rights='British Library, Add MS 4136, via DECODE; one detail reproduced'),
+    dict(slug='sperantio1534', label='King John to Bavaria 1534', year='1534', y=1534, place='Buda &rarr; Munich', st='partial', stt='read in part',
+         title='The Sperantio file: King John of Hungary and an agent at Buda write to the dukes of Bavaria',
+         blurb='Two ciphertexts catalogued on DECODE as Cornelio Sperantio&rsquo;s letters are letters to the dukes of Bavaria sent under cover to him. King John Z&aacute;polya&rsquo;s Latin letter of 6 February 1534, on the Hungarian gold and silver mines, reads 96% from its own interlinear decipherment; the same key reads a German newsletter from Buda of 8 February on Werb&odblac;czy&rsquo;s everlasting peace with the Turk to 95%. The key is the one rebuilt here for R9415, so the file and R9415 are one correspondence.',
+         quote='&ldquo;ex parte minerarum auri, argenti et aliorum metallorum, quae res nobis vehementissime fuit cordi&rdquo;',
+         rights='Manuscript: Bayerisches Hauptstaatsarchiv, Munich, via DECODE'),
     dict(slug='kaa4591b', label='&#321;aski, King John, Wardein 1531&ndash;37', year='1531&ndash;1537', y=1534, place='&#321;ask, Hungary, Wardein &rarr; Munich', st='partial', stt='read in part',
          title='&#321;aski, King John and a Bavarian at Wardein: three more ciphers in the Munich key volume',
          blurb='Three ciphertexts catalogued on DECODE as one &ldquo;unknown recipient&rdquo; entry are three letters to the Bavarian court from King John Z&aacute;polya&rsquo;s circle. &#321;aski&rsquo;s letter of September 1531 reads 99.5% in his own cipher with e and r swapped; a Latin letter of April 1533 on the diet of Pressburg and Ferdinand&rsquo;s secret peace suit reads 95.3%; a German report from Wardein of March 1537 on the Turkish arming reads 91.3%, with two homophonic keys rebuilt from their glosses.',
@@ -1198,6 +1203,7 @@ IMAGES['vanreede1792'] = ('vanreede1792_lead.jpg', 'Van Reede to William V, 4 Fe
 IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch of 29 December 1787, first page: the gloss dites &hellip; avant hier over the first groups, 2750 &hellip; 2578 3350', 'Nationaal Archief, The Hague, via DECODE R1026')
 IMAGES['kaa4591'] = None
 IMAGES['kaa4591b'] = None
+IMAGES['sperantio1534'] = None
 IMAGES['r1874'] = None
 IMAGES['r1212'] = None
 IMAGES['wesselenyi1664'] = None

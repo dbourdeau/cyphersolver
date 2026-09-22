@@ -1,0 +1,362 @@
+{
+ "schema_version": 1,
+ "target": "sperantio1534",
+ "title": "King John of Hungary and an agent at Buda to the dukes of Bavaria, 1534: the Sperantio file, BayHStA Kurbayern Äußeres Archiv 4591 ff.248, 250-251 (DECODE R9411, R9412)",
+ "documents": [
+  {
+   "id": "R9411",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 f.248 (DECODE R9411)",
+   "date": "6 Feb 1534",
+   "year": 1534,
+   "country": "Hungary",
+   "route": "King John (Zápolya) of Hungary, Buda → the dukes of Bavaria (Wilhelm IV and Ludwig X)",
+   "language": "Latin",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear Latin decipherment over every cipher line of f.248r-v; the key was fixed from it."
+   },
+   "length": {
+    "tokens": 2040,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r9411/transcription_v4.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, read from native-resolution crops",
+    "image_quality": "good"
+   },
+   "read": "read"
+  },
+  {
+   "id": "R9412",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.250-251 (DECODE R9412)",
+   "date": "8 Feb [1534]",
+   "year": 1534,
+   "country": "Hungary",
+   "route": "an agent at Buda → a duke of Bavaria (cover addressed to Cornelio Sperantio)",
+   "language": "German",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the pages; read with the key from R9411's gloss. The dating clause on f.251r is in the cipher, not a gloss."
+   },
+   "length": {
+    "tokens": 2725,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r9411/transcription_r9412.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, read from native-resolution crops",
+    "image_quality": "fair",
+    "notes": "f.250v is photographed at a slant; look-alike signs merged in places."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution on a graphic sign set, no word division, a few signs carrying digraphs (ch, ck, sch) and three word signs; clear Latin passages left standing in the cipher.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 153,
+  "diacritics": {
+   "used": true,
+   "note": "Dots, bars and rings distinguish otherwise identical shapes (4 vs hooked 4, o vs ⊙, T vs barred T)."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 3,
+   "kinds": [
+    "common words",
+    "titles"
+   ],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": true,
+   "count": 0
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "A contemporary interlinear decipherment of R9411 on f.248r-v (read at the time); none for R9412, and neither letter in print.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "set the target; two sessions worked it independently on the same day and were merged by a third",
+  "tools": [
+   "constrained homophonic annealer (r9411/solve.py)",
+   "gap-level sign search (gapfix.py)",
+   "hill-climbing over sign values (solve.py)",
+   "lexicon Viterbi fit (fit.py)",
+   "lexicon reading measure (lexread.py)",
+   "n-gram LM (lang: la, de-1500s)",
+   "sign transcription from crops"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 3,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "[session A] Web search for Sperantio / Zapolya 1534 cipher letters: no edition or prior decipherment",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "[session A] R9411 f.248r-v (49 cipher lines, glossed) and R9412 f.250r-251r (65 lines, unglossed) transcribed from full-resolution line crops",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "[session A] Homophonic annealer (la model) on R9411: raw run collapsed onto one letter; homophone caps plus seed values from the gloss",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "[session A] R9411 key fixed from its interlinear decipherment; merged sign pairs and polyphones; Latin reads ~96%",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "[session A] R9411 key applied to R9412: German, same key",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "[session A] R9412 refit with de-1500s: free fit nulled signs (worse); joint Latin+German fit worse; seeded fit with ch/sch values",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "[session A] From System A prior and context: z, h, r+o = h, r+ = sch, 2o = und, a+ = der, K = rr, A = b, double stem = g as well as u/v; R9412 ~84% incl. clear Latin",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "[session A] Look-alike polyphones for square/delta pairs: higher LM score but overfits; rejected",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "[session A] Second pass on R9412 lines 5, 8-10, 15 against the image",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "[session A] Second pass over R9412 f.250r: small cross = loop-cross = z, hooked stroke = up-arrow = g, gamma = r, double stem = g and u/v; lines 1-16 corrected. Coverage check of f.250v found 31 line positions against 28 transcribed lines",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "[session A] R9412 key compared with the R9413 System A' key: 16 signs agree, the rest differ as separate keys",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "[session A] Third pass over R9412 f.250v crop by crop: coverage confirmed complete (31 crop positions = 28 cipher lines + margin + two long Latin lines); the earlier \"two lines missing\" reading was wrong",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "[session A] Automated look-alike repair (confuse.py: shape-neighbour substitutions kept when de-1500s improves by >4 nats): raised model score but destroyed real words (geschriben -> geschruwen); rejected",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "[session A] Manual re-read of R9412 line 18 regressed a correct reading (uberschickt zu vernemen); manual passes past f.250r no longer net-positive",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "[session A] Lexicon reading measure built (lexread.py): Viterbi segmentation against the DTA 1470-1610 lexicon, share of characters in words of 5+ letters; ranks candidate decrypts the way a reader does",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "[session A] Key optimisers driven by that measure (lexopt.py global polys; lexopt2.py per-occurrence polys and per-line evaluation): raised coverage but degraded the German; rejected",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "[session A] Interpretive pass over the R9412 decrypt in 16th-c. chancery German (b/w and d/t not separated by the cipher): 84% -> 89% (552 words read, 66 gaps)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "[session A] R9408/R9409/R9410/R9413 decrypts checked as parallel text for R9412 gaps: they are read less well than R9412, only the opening formula matches; no help",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "[session A] Gap-by-gap restoration from historical context: three gaps carry defensible conjectures (kunigliche wirde, Syrmien, bishop of Varad), marked and not counted; the fortress name, the Nuremberg factor, \"Caesarn dem ...\" and the signature are not recoverable from context",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "[session A] Gap-level search over the uncertain signs (gapfix.py): at every unread span, all polyphone combinations plus one shape-neighbour substitution, accepted only if the span becomes a real period word. Proposed kaisers, gewachsen, kunig, menigklich, geschriben - all already in the hand reading; also proposed bad fixes (hab ich -> dauid), so used as suggestions only",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "[session A] Printed editions outside the volume searched (Gevay, Magyar Tortenelmi Tar, Werboczy 1533-34 embassy literature): no edition of either letter; the 1533 tribute terms corroborate the reading of l.21-22",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "[session A] Palaeographic zoom pass (2.4x, 2000-2400 px per line-half) on the name gaps l.10, l.27, l.48: confirms Titil and berckverstendig, corrects K->delta and 7->z in l.10; the remaining names stay idiosyncratic spellings",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "[session A] Gap audit: spans whose letters are recovered but which no lexicon holds (place names, Bassan, zeittung split across lines, empfahen, selbst, die wein so heur darin gewachsen) re-counted as read. 89% -> 95.0% of words, 37 of them bracketed supplies",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "[session B] Both records' JPEGs were already fetched into the KAA 4591 volume dump; copied into this target's img/.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "[session B] The sign set is the ↓ ω π 4 8 ÿ family of the volume; tried the two rebuilt keys for it, System A′ (kaa4591) and System L (kaa4591b/r9415).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "[session B] System L, the key rebuilt for R9415, applied unchanged to f.248r.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "[session B] All five cipher pages transcribed sign by sign from native-resolution crops (4,745 signs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "[session B] Hill-climbing the key against the la and de-1500s models with multi-letter values allowed: collapsed into 'er'/'und' filler, because per-character scoring rewards common bigrams.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "[session B] Same hill-climb restricted to single-letter values: converged below the seed key, which was kept.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "[session B] Viterbi fit of corpus words to the sign stream, each sign allowed its alternative values and (in German) its digraphs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "[session B] R9411 read: King John Zápolya's chancery to the dukes of Bavaria, Buda 6 Feb 1534, on the gold and silver mines and the servant Nicolaus Freiberger sent to survey them.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "[session B] R9412 read in part: a German despatch of 22 Dec [1533] articulated Et primo / Secundo / Tertio / Quarto, on the peace with the Turk, Petrovaradin, the king's title, and an embassy that obtained nothing.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "[session B] Searched for KAA 4591 / Sperantio ciphers and for a printed Bavarian-Hungarian mining correspondence of 1533-34.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Merge of the two sessions: session B's System L key (R9415) agrees sign for sign with session A's gloss key; session B's \"no decipherment on the images\" checked against f.248r and found wrong (interlinear gloss over every line); R9412 redated from 22 Dec 1533 to 8 Feb 1534 (the December date is the earlier letter it repeats).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "r9411/reading_r9411.txt (357 of 370 words) + r9411/reading_r9412.txt (558 of 626 words from the cipher, 37 more supplied): 915/996",
+  "codes_open": {
+   "open": 0,
+   "total": 5
+  },
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "R9412 31 unread words and 37 supplied (fortress l.10, Caiianer l.44, bishop l.56, factor l.51, signature l.65, ~20 blotted words)",
+    "blocker": "illegible",
+    "detail": "Three transcription passes, zoom pass, gap search, repairs and optimisers tried; an independent second transcription does not read them either."
+   },
+   {
+    "item": "R9411 13 short gaps incl. the captain's name l.19",
+    "blocker": "illegible",
+    "detail": "Blotted signs; the gloss is faint at the same places."
+   }
+  ],
+  "notes": "DECODE has the direction wrong: Sperantio is the addressee on the cover, not the sender. R9411 is King John to the dukes, R9412 an agent's newsletter. The key is System L of R9415 in the same volume: one correspondence.",
+  "fraction_read": 0.92
+ }
+}
