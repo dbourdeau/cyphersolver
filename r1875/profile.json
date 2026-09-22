@@ -1,0 +1,142 @@
+{
+ "schema_version": 1,
+ "target": "r1875",
+ "title": "Sebastiano Foscarini (Escorial) to the Doge and Senate of Venice, 13 October 1761 (DECODE R1875)",
+ "documents": [
+  {
+   "id": "R1875",
+   "shelfmark": "Archivio di Stato di Venezia, IT ASVe 0045 010 (Serie) Busta 30 f. 178; DECODE R1875",
+   "date": "13 October 1761",
+   "year": 1761,
+   "country": "Spain",
+   "route": "Escorial -> Doge and Senate, Venice",
+   "language": "Italian",
+   "pages": 6,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate folio"
+    ],
+    "source": "Contemporary chancery decipherment written on the despatch: interlinear on p. 1, pp. 3-4 for the cipher of pp. 1-2 and 5.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1565,
+    "unit": "letters",
+    "measured": true,
+    "file": "plain_ciphered.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Decipherment transcribed from the DECODE images; ciphertext (under ink bars) not transcribed.",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Cipher lines struck through with heavy ink bars by the chancery; digits only partly legible."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Numerical cipher of Italian (alphabet plus syllabary per crittologia.eu on Foscarini's ciphers); groups separated by points.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown",
+   "entries": "unknown",
+   "kinds": [
+    "unknown"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": "unknown",
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "Key not rebuilt; not needed for the reading."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The chancery decipherment written on the despatch itself (images 8967, 8969-8970).",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Posed the target from the catalogue; DECODE account cookie.",
+  "tools": [
+   "DECODE authenticated image server",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched the six images and record metadata with the stored DECODE cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "Read signature and address: Sebastian Foscarini, ambassador, Escorial 13 Oct 1761, no. 178 sola.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Zoomed the cipher lines: digits under heavy ink bars, only partly legible.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "crittologia.eu: Foscarini's decipherments were written on the despatch and the cipher barred.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "Identified the interlinear text of p. 1 and pp. 3-4 as the chancery decipherment (catch-words 'dell'Ecc.mo Senato'; p. 4 ends 'Sono per ogni conto', resumed in clear on p. 5); transcribed it in full.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "fraction_read": 1.0,
+  "key": "none",
+  "codes_open": {
+   "open": 0,
+   "tokens_open": 0
+  },
+  "gaps": [],
+  "grades": {
+   "H": 0,
+   "C": 0,
+   "M": 0,
+   "I": 0
+  },
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Read at the time; sender, recipient and content identified; key not rebuilt."
+ }
+}

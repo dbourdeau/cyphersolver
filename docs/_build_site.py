@@ -629,6 +629,11 @@ PAGES = [
          blurb='Eleven code letters of the French ambassador to Rouill&eacute; and Bernis in the Dutch royal archives, listed on DECODE as unsolved. The Dutch codebreaker Lyonet&rsquo;s decipherments of eight sibling letters were among the images, filed as clear pages; aligned group by group they rebuild the 1,200-group code, which reads nine of the undeciphered letters in part (86% of groups overall; R1071, in another code, stays unread). Convoys and herring, the Gouvernante&rsquo;s tears over her father, Ostend and Nieuport, spies for England and a French loan in London; Bussemaker&rsquo;s 1906 extracts recur word for word.',
          quote='&ldquo;faut-il que ce soit moi qui favorise les moyens de faire du mal &agrave; mon p&egrave;re?&rdquo; &middot; the Princess Governess to d&rsquo;Affry, April 1757',
          rights='Koninklijk Huisarchief, The Hague, via DECODE'),
+    dict(slug='r1875', label='Foscarini 1761', year='1761', y=1761.8, place='Escorial &rarr; Venice', st='found', stt='read at the time',
+         title='Foscarini to the Doge, Escorial 1761 &mdash; read at the time',
+         blurb='DECODE R1875, catalogued as a ciphered letter from an unnamed sender in Spain to an unknown recipient, is despatch no. 178 of Sebastiano Foscarini, Venetian ambassador at the court of Charles III, written at the Escorial on 13 October 1761. The chancery deciphered it on the despatch itself, between the lines and on the facing pages, and barred out every cipher line. The letter reads in full: Madrid&rsquo;s view of the broken-off Anglo-French peace talks, and a union with &ldquo;another court&rdquo; &mdash; the secret Family Compact.',
+         quote='&ldquo;&hellip;credono agevole il caso di una congiunzione atta a sostenere li vicendevoli interessi.&rdquo;',
+         rights='Manuscript rights: Archivio di Stato di Venezia, via DECODE (images not reproduced)'),
     dict(slug='lucini1767', label='Lucini 1767', year='1767', y=1767.8, place='Madrid &rarr; Rome', st='solved', stt='read',
          title='Nuncio Lucini from Madrid to the Secretariat of State, 13 October 1767',
          blurb='A clear letter from the Madrid nunciature whose last sentence goes into figures. Lasry&rsquo;s 2020 key for the series was on the DECODE record, but nobody had deciphered this passage. Read here after one transcription slip and one wrong key value were corrected: the nuncio thinks Charles III wants a permanent licence to try clergy before lay judges in order to put down unrest.',
@@ -1016,6 +1021,7 @@ IMAGES['vanreede1792'] = ('vanreede1792_lead.jpg', 'Van Reede to William V, 4 Fe
 IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch of 29 December 1787, first page: the gloss dites &hellip; avant hier over the first groups, 2750 &hellip; 2578 3350', 'Nationaal Archief, The Hague, via DECODE R1026')
 IMAGES['kaa4591'] = None
 IMAGES['r1874'] = None
+IMAGES['r1875'] = None
 IMAGES['haga1620'] = ('haga1620_lead.jpg', 'R2113 p.2, Constantinople 31 March 1620: clear Dutch with the cipher spans inline, (44) ende (45) arbeiden bij (4) om tyt te winnen', 'Nationaal Archief, The Hague, via DECODE R2113')
 IMAGES['deswart1782'] = ('deswart1782_lead.jpg', 'De Swart&rsquo;s despatch of 8 March 1782, first page: the clear salutation, then the marked groups 15, 452, 730, 833 = waar bij ingesloten', 'Nationaal Archief, The Hague, via DECODE R1036')
 IMAGES['nevers1589'] = ('nevers1589_lead.jpg', 'BnF Fran\u00e7ais 3977 f. 318: the Recueil sommaire of letters written in cipher by the King\u2019s enemies, September and October 1589 \u2014 a digest in clear French, the cipher itself elsewhere', 'Biblioth\u00e8que nationale de France')
