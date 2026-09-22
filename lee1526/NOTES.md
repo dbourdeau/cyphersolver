@@ -206,6 +206,25 @@ and 109. The new work is a verbatim reading of the f. 245 blocks (confirming Tuk
 duplicate, whose decipherment is not online. Closing the last 9.4% would need Tuke's decipherment of the 8 April
 original at TNA (physical access). Closed, no write-up; catalogue 101 removed 21 Sept 2026; DECODE corrections queued.
 
+## Catalogue 115: R8551 (Vesp. C IV f. 156, 1527)
+
+Catalogue no. 115 ("Edouard Lee Almosinar (Hispania) to unknown recipient", DECODE R8551, "Non-decrypted", 1 pp.).
+Both images (recto and verso) viewed at full resolution 22 Sept 2026 (git-ignored in img/).
+
+- f. 156r (old foliation 143), heading "Hispania 1527", foot "Edouarde Lee / Almosinar" (a later label; *Almosinar* =
+  almoner). A holograph clear English letter to Wolsey ("your grace"), dated "At Valladolit the v^th of June" and
+  signed "your graces most bounden preest". Content: this day the Prince was christened with much pomp, "his name is
+  Philippe", godfathers the Constable and the duke of Alva, the Queen of Portugal godmother; reports from France that
+  the Pope is dead, Andrea Doria taken and Bourbon's appointment with the Florentines; the duke of Urbino; Pompeius
+  Colonna's writing against the Pope and a general council at Spires; "venerunt mihi omnia bona pariter cum illa".
+- Lines 3-5 carry a struck-through passage (Latin/English in ordinary script, cancelled with pen strokes). It is a
+  deletion, not cipher.
+- f. 156v: blank except the docket "To my lordes grace".
+- This is the closing leaf of *L&P* IV no. 3152 (Lee to Wolsey, Valladolid 5 June 1527, calendared from Vesp. C IV),
+  which gives the baptism passage in the same words.
+
+Outcome: not a cipher; nothing to read. Closed and removed from the catalogue 22 Sept 2026; DECODE correction queued.
+
 ## Catalogue 114: R8556 (Vesp. C IV f. 161, 1527)
 
 Catalogue no. 114 ("Bpp. Worecestr, Ed. Lee Eleem. (Hispania) to unknown recipient", Vesp. C IV f. 161, old foliation
