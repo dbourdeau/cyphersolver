@@ -22,9 +22,13 @@ not from memory. The slug is the folder name unless a page already exists under 
 - `git fetch origin` and read `origin/main:docs/_build_site.py`, not the branch copy, if they differ: main's is newer.
 - Read one recent page for tone and structure: `docs/gramont1529.html` (solved), `docs/lorraine1592.html`
   (partly read), `docs/orpo1942.html` (attempted, not solved).
-- Decide the outcome class. `st` in the manifest is one of `solved` (read end to end or nearly), `partial`
+- Decide the outcome class. `st` in the manifest is one of `solved` (meets the read bar), `partial`
   (partly read), `found` (explained, or found already solved by others), `stuck` (attempted, not solved). The README
   section, solved.html and SOLVED_* rows follow from it.
+- Solved or read (README Conventions): for `st='solved'`, the badge `stt` starts with `solved` when the key was broken
+  here (profile `conditions.attack` ciphertext-only, crib or known plaintext) and is `read` when an existing key or
+  decipherment was used. The README row goes in "Solved: key broken here" or "Read with an existing key or
+  decipherment" to match. `--audit` section G checks both.
 - Dates: "Date" is the document's date. The work date is the day the finding first landed in the repository
   (`git log --diff-filter=A --format=%ad --date=short -- <folder>/ | tail -1` if it was not today).
 
@@ -155,7 +159,7 @@ three are data files you edit by hand; each is a few lines, and skipping one lea
 
 ## 3. The ledgers in the repository root
 
-- `README.md`: one row in the matching `## Results` table (Solved / Explained / Partly read or adjudicated /
+- `README.md`: one row in the matching `## Results` table (Solved: key broken here / Read with an existing key or decipherment / Explained / Partly read or adjudicated /
   Found already solved by others / Attempted and closed). Five columns: Target (name, place, dates, shelfmark,
   catalogue item and class), Date (of the document), work date, Result (bold outcome, then what was read and
   what is open), Where: `` [`<folder>/`](<folder>/) · [write-up](https://dbourdeau.github.io/cyphersolver/<slug>.html) ``.

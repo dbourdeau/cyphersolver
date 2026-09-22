@@ -424,14 +424,14 @@ ul.findings b{color:var(--head)}
 .tl .pt{cursor:pointer;outline:none;transform-box:fill-box;transition:opacity .3s,filter .3s}
 .tl .pt .core{stroke:var(--bg);stroke-width:1.2;transform-box:fill-box;transform-origin:center;transition:transform .25s cubic-bezier(.34,1.8,.5,1),stroke .2s}
 .tl .pt .halo{opacity:0;transform-box:fill-box;transform-origin:center;transition:opacity .25s,transform .25s}
-.tl .pt.read .halo{opacity:.35}
+.tl .pt.read .halo,.tl .pt.solved .halo{opacity:.35}
 .tl .pt.offline .core{opacity:.5}
 .tl .pt:hover .core,.tl .pt:focus-visible .core,.tl .pt.hot .core{transform:scale(1.75);stroke:var(--head);stroke-width:1.4}
 .tl .pt:hover .halo,.tl .pt:focus-visible .halo,.tl .pt.hot .halo{opacity:.9;transform:scale(2.2)}
 .tl.dim .pt:not(.hot){opacity:.28}
 .tl .pt.off{opacity:.08!important;pointer-events:none}
 .tl.armed .pt{animation:tl-drop .7s cubic-bezier(.2,1.4,.4,1) backwards;animation-delay:calc(var(--i) * 9ms)}
-.tl.armed .pt.read .halo{animation:tl-pulse 3.2s ease-in-out infinite;animation-delay:calc(var(--i) * 70ms)}
+.tl.armed .pt.read .halo,.tl.armed .pt.solved .halo{animation:tl-pulse 3.2s ease-in-out infinite;animation-delay:calc(var(--i) * 70ms)}
 @keyframes tl-drop{from{opacity:0;transform:translateY(calc(-1 * var(--dy) - 30px))}to{opacity:1;transform:none}}
 @keyframes tl-pulse{0%,100%{opacity:.25}50%{opacity:.6}}
 .tl.pre .pt{opacity:0}
@@ -464,7 +464,7 @@ ul.findings b{color:var(--head)}
 .tltip .tt-arrow{position:absolute;width:12px;height:12px;left:var(--ax,50%);bottom:-6px;margin-left:-6px;transform:rotate(45deg);
   background:var(--bg2);border-right:1px solid color-mix(in srgb,var(--c) 45%,var(--rule));border-bottom:1px solid color-mix(in srgb,var(--c) 45%,var(--rule))}
 .tltip.below .tt-arrow{bottom:auto;top:-6px;transform:rotate(225deg)}
-@media (prefers-reduced-motion: reduce){.tl.armed .pt,.tl.armed .pt.read .halo{animation:none}.tl.pre .pt{opacity:1}.tltip{transition:none}}
+@media (prefers-reduced-motion: reduce){.tl.armed .pt,.tl.armed .pt.read .halo,.tl.armed .pt.solved .halo{animation:none}.tl.pre .pt{opacity:1}.tltip{transition:none}}
 .sb-foot{font-size:.8rem;color:var(--muted);margin:.8rem 0 0;line-height:1.5}
 .sb-foot code{font-family:var(--mono);font-size:.9em}
 @media (max-width:760px){.sb-grid{grid-template-columns:1fr 1fr}.scoreboard{padding:1.2rem 1.1rem 1rem}.scoreboard::before{display:none}}

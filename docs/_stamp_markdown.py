@@ -86,7 +86,8 @@ def stamp_table(lines, i, header, date_of):
 
 # README: heading above the table -> the word that heads its date column
 README_TABLES = {
-    '### Solved': 'Solved',
+    '### Solved: key broken here': 'Solved',
+    '### Read with an existing key or decipherment': 'Read',
     '### Explained: not a cipher, or nothing to read': 'Explained',
     '### Partly read or adjudicated': 'Read',
     '### Found already solved by others (the lists are stale)': 'Verified',

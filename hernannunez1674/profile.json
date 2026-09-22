@@ -36,7 +36,7 @@
  "conditions": {
   "prior_solution": {"exists": "partial", "where": "Marginal decipherments on every passage; sibling key rebuilt in this project for balbases1677", "found": "before attempt", "used": true},
   "inputs": ["images", "transcription", "known plaintext"],
-  "attack": "known plaintext",
+  "attack": "sibling key",
   "human_role": "Supplied the DECODE cookie.",
   "tools": ["align2.py (hard-EM aligner from balbases1677)", "dec.py"],
   "models": ["claude-opus-5"],
@@ -58,6 +58,6 @@
   "fraction_read_source": "read/R*.txt headers, Balbases key on DECODE transcription groups: 1,716 groups, 118 unknown (R1012 62/624, R1013 20/372, R1014 29/484, R1015 7/236); unknowns are mostly DECODE transcription slips, and every passage has a verified contemporary margin decipherment",
   "key": "recovered",
   "verification": ["contemporary decipherment", "historical consistency"],
-  "notes": "Margins verified and illegible margin words recovered from the key."
+  "notes": "Margins verified and illegible margin words recovered from the key. Attack corrected 22 Sept 2026 from 'known plaintext': every passage carries its contemporary margin decipherment, and the Balbases 1677 key (balbases1677/key.json) was applied unchanged."
  }
 }

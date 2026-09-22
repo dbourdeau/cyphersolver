@@ -115,6 +115,21 @@ ESCALATION = [
 PARTIAL = re.compile(r'status:\s*\**\s*(read in part|partly read|partial)|\bread in part\b', re.I)
 
 READ_BAR = 0.95    # README Conventions, "The read bar"; no field standard exists (DECODE status is owner-assigned)
+BROKEN = {'ciphertext-only', 'crib', 'known plaintext'}   # README Conventions, "Solved and read"
+
+def outcome_kind(folder):
+    """'solved' (key broken here, text meets the read bar), 'read' (read bar met with an existing key or
+    decipherment), else the profile's outcome.class; None without a profile."""
+    try: prof = json.loads(read(ROOT / folder / 'profile.json') or 'null')
+    except ValueError: return None
+    if not prof: return None
+    cls = (prof.get('outcome') or {}).get('class'); cond = prof.get('conditions') or {}
+    prior = cond.get('prior_solution') or {}
+    if cls == 'read': return 'solved' if cond.get('attack') in BROKEN else 'read'
+    if (cls == 'already solved' and cond.get('attack') in BROKEN and prior.get('used') is False
+            and prior.get('found') == 'after reading'): return 'solved'    # broken here before the prior reading was found
+    return cls
+
 
 def read_bar(folder):
     """(meets, reasons_not) for the read bar: coherent share >= 0.95, no gap not-attempted, every document read."""
@@ -352,7 +367,7 @@ def audit(brief=False):
 
     # 2. README rows with a repo link but no write-up page
     notes_only = [r for r in rows if not r['slugs'] and r['dirs']
-                  and r['section'].split(' ')[0] in ('Solved', 'Explained:', 'Partly', 'Found')]
+                  and r['section'].split(' ')[0] in ('Solved:', 'Read', 'Explained:', 'Partly', 'Found')]
     print(f'B. README results rows with no write-up page (notes only): {len(notes_only)}')
     if not brief:
         for r in notes_only: print(f'   [{r["section"][:22]}] {key_words(r["target"])}  ->  {", ".join(sorted(r["dirs"]))}/')
@@ -396,6 +411,26 @@ def audit(brief=False):
     print(f'F. Read bar (README Conventions): read in part but meeting the bar: {len(ready)}; classed read but below it: {len(below)}')
     for d in ready: print(f'   reclass to read?  {d}/')
     for d, why in below: print(f'   below the bar     {d}/  ({"; ".join(why)})')
+    # 7. solved vs read (README Conventions): README section and page badge against the profile (informational)
+    want = {'solved': 'Solved:', 'read': 'Read', 'read in part': 'Partly'}
+    pages = {m.group(1): (m.group(2), m.group(3)) for m in re.finditer(
+        r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)', stt='([^']*)'", read(HERE / '_build_site.py'), re.S)}
+    drift = []
+    for r in readme_rows():
+        first = r['section'].split(' ')[0]
+        if first not in ('Solved:', 'Read', 'Partly') or len(r['dirs']) != 1: continue
+        k = outcome_kind(next(iter(r['dirs'])).split('/')[-1])
+        if k in want and want[k] != first: drift.append(f'{key_words(r["target"])}: README section {first} but profile says {k}')
+        for s in r['slugs']:
+            ks = outcome_kind(s) if (ROOT / s / 'profile.json').exists() else k   # a page with its own folder
+            if s not in pages or ks not in want: continue
+            st, stt = pages[s]; badge = re.sub(r'<[^>]+>|&[a-z]+;', '', stt).strip().lower()
+            ok = {'solved': st == 'solved' and badge.startswith('solved'),
+                  'read': st == 'solved' and not badge.startswith('solved'),
+                  'read in part': st == 'partial'}[ks]
+            if not ok: drift.append(f'{s}.html: badge {st}/{stt} but profile says {ks}')
+    print(f'G. Solved vs read (README Conventions): section or badge disagrees with profile.json: {len(drift)}')
+    for x in drift: print('   ' + x)
     return problems, gaps
 
 # ---------------------------------------------------------------------------

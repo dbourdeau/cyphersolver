@@ -37,7 +37,12 @@ MONTHS = ('January', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December')
 SHORT = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec')
 # what the first date means, by status class
-VERB = {'solved': 'solved', 'found': 'resolved', 'partial': 'solved in part', 'stuck': 'attempted'}
+VERB = {'solved': 'solved', 'found': 'resolved', 'partial': 'read in part', 'stuck': 'attempted'}
+def verb_of(p):
+    """Byline verb. st 'solved' covers both outcomes that meet the read bar: 'solved' (key broken here) and
+    'read' (an existing key or decipherment); the badge text says which, and the verb follows it."""
+    if p['st'] == 'solved' and not re.sub(r'<[^>]+>|&[a-z]+;', '', p['stt']).strip().startswith('solved'): return 'read'
+    return VERB.get(p['st'], 'posted')
 VERB_SHORT = {'partial': 'part read'}      # the card and list stamps have less room
 
 def fmt_date(iso, short=False):
@@ -95,7 +100,7 @@ def page_dates(slug, s):
     elif rec.get('hash') != h: rec['updated'], rec['hash'] = TODAY, h
     return rec
 
-DATEISH = re.compile(r'^(?:solved(?: in part)?|resolved|attempted|posted|read|published|first published|updated)?'
+DATEISH = re.compile(r'^(?:solved(?: in part)?|resolved|attempted|posted|read(?: in part)?|published|first published|updated)?'
                      r'\s*(?:\d{1,2}\s+)?(?:' + '|'.join(MONTHS) + r'|Sept?)?\s*\d{4}$', re.I)
 
 def meta_html(p, rec, old):
@@ -105,7 +110,7 @@ def meta_html(p, rec, old):
     for part in re.split(r'\s*(?:&middot;|·)\s*', old or '')[1:]:
         flat = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', part))).strip()
         if flat and not DATEISH.match(flat): keep.append(part.strip())
-    verb = VERB.get(p['st'], 'posted') if p else 'posted'
+    verb = verb_of(p) if p else 'posted'
     if p and p['slug'] in ('famous', 'solved'): verb = 'posted'
     bits = [author, f'{verb} <time datetime="{rec["first"]}">{fmt_date(rec["first"])}</time>']
     if rec['updated'] != rec['first']:
@@ -158,7 +163,7 @@ PAGES = [
          blurb='DECODE R9256 is a Forbes Papers tracing of the four cipher passages in Percy&rsquo;s letter of 23 July 1559: 63 signs in a box script with dot and underline marks. Cecil deciphered them at the time and the letter is calendared, but which words were in cipher is not printed. No single letter substitution fits the four passages, and the text is too short to break without the key.',
          quote='&ldquo;A few words in cipher, deciphered by Cecill&rdquo; (Bain, CSP Scotland I, no. 501)',
          rights='Images: British Library, via DECODE'),
-    dict(slug='wod1568', label='Throckmorton leaves 1559', year='1559, 1568', y=1559.53, place='Paris &rarr; Elizabeth I', st='solved', stt='read',
+    dict(slug='wod1568', label='Throckmorton leaves 1559', year='1559, 1568', y=1559.53, place='Paris &rarr; Elizabeth I', st='partial', stt='read in part',
          title='Throckmorton to Elizabeth, 10 July 1559, the margin cipher, and John Wood 1568 &mdash; read in part',
          blurb='Tomokiyo lists two unidentified ciphers on BL Add MS 4136 ff. 32&ndash;33. Throckmorton&rsquo;s own ciphered letter of 10 July 1559 on f. 32, never printed, is read at about 85&ndash;90% with his Cipher 1. The margin is a word-sign code (222 groups, half used once) that needs its key or the 8 July despatches; John Wood&rsquo;s 39-sign line of 1568 has no unique solution.',
          quote='&ldquo;I judge your Majesty will be desirous to be further enformed thereof&rdquo;',
@@ -173,7 +178,7 @@ PAGES = [
          blurb='Six DECODE records listed as not decrypted are Patrick Forbes&rsquo;s copies of the ciphered stretches of eighteen despatches of Elizabeth&rsquo;s ambassador in France. Smith&rsquo;s own key is in the same volume (f. 179, DECODE R9261). With it the 1563 passages agree word for word with Forbes&rsquo;s print of 1741, and the 1564&ndash;66 passages, which the Calendar of State Papers only summarises, are read in Smith&rsquo;s words: the Cardinal of Lorraine banqueting with Cond&eacute;, the Lennox marriage offer, a bearer &ldquo;double, or rather triple&rdquo;.',
          quote='&ldquo;this bearer Hume is altogether a Lidington, whom you shall find double, I am afraid, or rather triple&rdquo;',
          rights='British Library, Add MS 4136, via DECODE; photographs not republished beyond two details'),
-    dict(slug='norreys1567', label='Norreys 1567&ndash;68', year='1567&ndash;68', y=1567.6, place='Paris &rarr; Cecil', st='solved', stt='read',
+    dict(slug='norreys1567', label='Norreys 1567&ndash;68', year='1567&ndash;68', y=1567.6, place='Paris &rarr; Cecil', st='partial', stt='read in part',
          title='Sir Henry Norreys to Cecil, 1567&ndash;68 &mdash; DECODE R9251',
          blurb='DECODE R9251 is Patrick Forbes&rsquo;s copy of only the ciphered words of seven letters of Elizabeth&rsquo;s ambassador in France. No key is on DECODE, but the Cecil&ndash;Norris cipher that Tomokiyo reconstructed from a decipherment printed by mistake in <em>Cabala</em> (1663) reads the siblings: demaund, reason, ruin, remain, Master Stewarde, as the Calendar of State Papers summarises them. A shuffle control (8 word hits against at most 3 in 1,000 shuffles) confirms the table is Norris&rsquo;s. The target letter of 9 March 1568 has three items: the French King&rsquo;s name sign, a name sign probably for the Queen of Scots, and a four-sign word not read.',
          quote='&ldquo;otherwise Norris much doubts the ruin of the Prince of Cond&eacute; and the Admiral&rdquo;',
@@ -188,7 +193,7 @@ PAGES = [
          blurb='Three ciphertexts catalogued on DECODE as one &ldquo;unknown recipient&rdquo; entry are three letters to the Bavarian court from King John Z&aacute;polya&rsquo;s circle. &#321;aski&rsquo;s letter of September 1531 reads 99.5% in his own cipher with e and r swapped; a Latin letter of April 1533 on the diet of Pressburg and Ferdinand&rsquo;s secret peace suit reads 95.3%; a German report from Wardein of March 1537 on the Turkish arming reads 91.3%, with two homophonic keys rebuilt from their glosses.',
          quote='&ldquo;numquam pacem uel inducias consequuturum nisi cedat regno Hungarie&rdquo; (&#321;aski, 1531)',
          rights='Manuscript: Bayerisches Hauptstaatsarchiv, Munich, via DECODE'),
-    dict(slug='kaa4591', label='Bavarian key volume 1529&ndash;83', year='1529&ndash;1583', y=1556, place='Buda, Krak&oacute;w, Pressburg &rarr; Munich', st='solved', stt='read',
+    dict(slug='kaa4591', label='Bavarian key volume 1529&ndash;83', year='1529&ndash;1583', y=1556, place='Buda, Krak&oacute;w, Pressburg &rarr; Munich', st='partial', stt='read in part',
          title='The Bavarian key volume: fourteen ciphertexts in Kurbayern &Auml;u&szlig;eres Archiv 4591',
          blurb='Fourteen ciphertexts bound in the Munich chancery&rsquo;s key volume, catalogued on DECODE as one &ldquo;unknown sender&rdquo; group, are letters in at least six systems. The Fulda protest of 1576 reads with the key five leaves earlier; &#321;aski&rsquo;s letters of 1529&ndash;30 read from a key rebuilt from their glosses; seven German reports of 1534&ndash;35 on Hungary, the Turks and France are broken and read in part, one from ciphertext alone with a new sixteenth-century German model.',
          quote='&ldquo;Rogatus Dux Bavariae auxilio sit&rdquo; (R9325, 1576)',
@@ -204,7 +209,7 @@ PAGES = [
          blurb='DECODE R4502, catalogued as an undeciphered letter of Johann Valentin Andreae, is a copy of the printed <em>Chymische Hochzeit Christiani Rosencreutz</em> in the Ritman Library. Its four &ldquo;cipher pages&rdquo; are the novel&rsquo;s inscriptions. The two long ones are simple substitutions in an invented type-cut alphabet, and the page boy speaks both aloud a paragraph later; the 19-sign table was rebuilt here and decodes both. The two sign lines are the dates 1378 and 1459, as Foxcroft&rsquo;s 1690 English edition already gave them.',
          quote='&ldquo;HIE LIGT BEGRABEN VENUS DIE SCHON[E] FRAW SO MANCHEN HOHEN MANN UMB GLUCK EHR SEGEN UND WOLFART GEBRACHT HATT&rdquo;',
          rights='Embassy of the Free Mind (Ritman Library), Amsterdam, via DECODE R4502 (public images)'),
-    dict(slug='ferdinand1619', label='Ferdinand of Bavaria 1619', year='1619', y=1619.97, place='Bonn &rarr; Munich', st='solved', stt='read',
+    dict(slug='ferdinand1619', label='Ferdinand of Bavaria 1619', year='1619', y=1619.97, place='Bonn &rarr; Munich', st='solved', stt='solved',
          title='Ferdinand of Bavaria, Elector of Cologne, to Duke Maximilian I, Bonn, 22 December 1619 &mdash; the League&rsquo;s winter quarters',
          blurb='Ten pages of figures at the end of the Bavarian chancery&rsquo;s cipher-key volume, entered on DECODE with no author, no recipient, no place and no language. The cipher is a homophonic substitution on the even two-digit numbers 10&ndash;78, with two word-end signs and a three-digit nomenclator; it was broken ciphertext-only by annealing against a 16th-century German model, and the key then read the neighbouring letter unchanged (&ldquo;Albrecht von Gottes Gnaden&rdquo;). The letter names itself on its clear last page: Bonn, 22 December 1619, signed Ferdinand &mdash; Ferdinand of Bavaria, Elector-Archbishop of Cologne, writing to his brother Maximilian I six weeks after Frederick V&rsquo;s coronation in Prague about quartering, paying and marching the Catholic League&rsquo;s troops, and about not letting his own Domkapitel and Landst&auml;nde be eaten by them. 95.8% of the cipher tokens read; 31 nomenclator groups stay open, since no key for this cipher survives.',
          quote='&ldquo;den Catolischen ins gemein und ohne underschied [wird] geringer Zeit &uuml;brig sein, sich [vor] des andern Theils Einfal, Gwalt und Betrangnus zu entweren&rdquo;',
@@ -245,7 +250,7 @@ PAGES = [
          blurb='Catalogue item 207 bundled fourteen DECODE records from the Riksarkivet as one Latin cipher of an unknown sender. They are four unrelated groups. The two letters of Johann Friedrich, archbishop of Bremen, to Johan Adler Salvius at Hamburg, November and December 1631, are <strong>read in full</strong>: the decipherer&rsquo;s interlinear glosses give four consecutive numbers per letter, and the bands follow the alphabet written in six columns and read downwards, which places the letters nobody glossed. The archbishop begs for Swedish succour against Gronsfeld&rsquo;s and B&ouml;nninghausen&rsquo;s troops. Three key-box ciphertexts &mdash; a Latin letter cipher, a Latin figure letter of 1628 and a figure letter to Amsterdam of 1632 &mdash; were attacked and stay open.',
          quote='&ldquo;und in die euserste gefahr kommen w&uuml;rden&rdquo; &middot; 73 38 97 75 83 98 20 74 = euserste',
          rights='Manuscript rights: Riksarkivet, Stockholm, via DECODE'),
-    dict(slug='ceva1632', label='Barberini to Ceva 1632', year='1632', y=1632, place='Rome &rarr; Paris', st='solved', stt='read',
+    dict(slug='ceva1632', label='Barberini to Ceva 1632', year='1632', y=1632, place='Rome &rarr; Paris', st='partial', stt='read in part',
          title='Barberini to Nuncio Ceva &mdash; the two letters of ASV Francia 346 without a published reading',
          blurb='The catalogue listed five ciphertexts as a transcription job. George Lasry had in fact reconstructed the key of the dossier in 2020 and read four of its eleven letters, which covered three of the five; no reading of the other two was published. A beam search over the unseparated figures, under an Italian model built partly from the dossier&rsquo;s own clear passages, reads both, and agrees on 77.5% of letters with the decipherment written between the lines in 1632. Six of the ninety-five nomenclator elements Lasry left blank are given values, among them 830 = Francia; 117 stay unread.',
          quote='&ldquo;&hellip;conseguenze che tengano disunita per un lungo pezzo la Francia, e sotto giogo alle esterne violenze, o almeno impotente a soccorrer li suoi alleati.&rdquo;',
@@ -254,7 +259,7 @@ PAGES = [
          title='Maltravers to Ormonde &mdash; a regular block cipher',
          blurb='Doubled letters written with consecutive figures betray a regular key (consonants three figures each from 7, vowels from 64, nulls 91&ndash;111). Every spelled word reads, and the nomenclator is then confirmed clause for clause against Wentworth&rsquo;s own dispatches in Knowler&rsquo;s <em>Strafforde&rsquo;s Letters</em> (1739): the King refusing Kildare, and Ormonde moved for the Council &ldquo;in exchange&rdquo; for Sir Piers Crosby.',
          quote='&ldquo;he was angry [with the Lord Deputy] &hellip; upon his motion [Ormonde] is to be a councellor&rdquo;'),
-    dict(slug='harley286', label='D&rsquo;Ewes&rsquo;s cipher log 1635', year='1635&ndash;36', y=1635.3, place='Suffolk (private record)', st='solved', stt='read',
+    dict(slug='harley286', label='D&rsquo;Ewes&rsquo;s cipher log 1635', year='1635&ndash;36', y=1635.3, place='Suffolk (private record)', st='solved', stt='solved',
          title='Sir Simonds D&rsquo;Ewes&rsquo;s cipher log of his son&rsquo;s fits, 1635&ndash;36',
          blurb='BL Harley MS 286 f. 61, on DECODE as an undeciphered letter of 1635 from an unknown sender, is a private slip of the antiquary Sir Simonds D&rsquo;Ewes in the alphabet he invented at school. No key is printed; it was rebuilt by crib on <em>convulsio</em> and <em>plena luna</em>. The Latin log records, one line to a fit, the convulsions of his infant son Clopton from 3 April 1635, with weekdays and moon phases that check against the calendar; 96.5% of the words read.',
          quote='&ldquo;in quorum tertia os ipsius pene ad aurem dextram convulsum, quod ante numquam observavi&rdquo;',
@@ -264,7 +269,7 @@ PAGES = [
          blurb='DECODE R6&ndash;R10, catalogued as unread ciphers of the nuncio in France dated 1552, are passages of five letters of March&ndash;December 1553. All were deciphered on arrival and are printed deciphered in Lestocquoy&rsquo;s Acta Nuntiaturae Gallicae 9 (1972); Lasry&rsquo;s key has been on the records since 2020, and it reproduces the print. The one unprinted passage, three cancelled cipher lines of 14 December, is read here: the clear postscript about the fleet bound for Corsica, enciphered and struck out.',
          quote='&ldquo;l&rsquo;armata regia che part&igrave; per Corsica ha havuto fortuna et non si sa come n&eacute; dove sia&rdquo;',
          rights='Manuscript images: Archivio Apostolico Vaticano, via DECODE R6&ndash;R10'),
-    dict(slug='malvezzi1548', label='Ferdinand I to Malvezzi 1548', year='1548', y=1548.06, place='Augsburg &rarr; Constantinople', st='solved', stt='read',
+    dict(slug='malvezzi1548', label='Ferdinand I to Malvezzi 1548', year='1548', y=1548.06, place='Augsburg &rarr; Constantinople', st='partial', stt='read in part',
          title='Ferdinand I to Malvezzi, 23 January 1548 &mdash; the French at the Porte, and the envoy&rsquo;s money',
          blurb='DECODE R366, eight pages, carried as only partially decrypted: Ferdinand&rsquo;s letter to his resident at the Porte, mostly clear Latin with about three pages in graphic signs. The key was on DECODE itself, filed at the same shelfmark as a separate record (R367), and with it the ciphered passages read. They hold the politics: the French are working to wreck the Habsburg&ndash;Ottoman peace only because they dare not attack Charles V with their own forces and want it done at the Sultan&rsquo;s charges; R&uuml;stem Pasha is not to doubt Habsburg sincerity. The rest is Malvezzi&rsquo;s pay &mdash; 4,300 ducats by the hand of the secretary Justus de Argento, and a credit of 3,000 more repayable at Venice. The cipher&rsquo;s nulls are whole Latin words (<em>etiam</em>, <em>idcirco</em>, <em>Porro</em>) dropped among the signs. Short stretches on pages 1 and 7 stay unread.',
          quote='&ldquo;Galli tam multipliciter et dolose hanc pacem subuertere conantibus&hellip; imperatoris Turcorum sumptibus&rdquo;'),
@@ -294,7 +299,7 @@ PAGES = [
          blurb='Nine ciphered reports of the imperial vice-chancellor from Hamburg and Gl&uuml;ckstadt, January to April 1639, in the Trauttmansdorff archive at Kl&aacute;&scaron;ter (DECODE R3811&ndash;R4736). M&iacute;rka rebuilt the key in 2012 and read one letter but printed nothing. From the same interlinear glosses the key falls out as a regular table: 41&ndash;100 are consonant&ndash;vowel syllables, two consonants to each ten in reverse alphabetical order, and the low numbers are homophones. All nine letters decipher in a first pass: Ban&eacute;r in Lower Saxony, Arnim&rsquo;s bid for pardon, the Danish mediation and its collapse.',
          quote='&ldquo;besser ein ungeschlossener, durch den Feindt zertrennter Craistag als ein geschlossener mit einer expressen Neutralitet&rdquo;',
          rights='St&aacute;tn&iacute; oblastn&iacute; archiv v Plzni, via DECODE R3811&ndash;R4736'),
-    dict(slug='marburg1635', label='Marburg cipher report', year='1635&ndash;52', y=1635.5, place='Unknown &rarr; Hesse-Kassel', st='solved', stt='read',
+    dict(slug='marburg1635', label='Marburg cipher report', year='1635&ndash;52', y=1635.5, place='Unknown &rarr; Hesse-Kassel', st='solved', stt='solved',
          title='The Marburg cipher report &mdash; a Hesse-Kassel letter&rsquo;s digit cipher rebuilt and read',
          blurb='DECODE R4500, a German report in Hesse-Kassel&rsquo;s cipher files at Marburg, ends in fourteen lines of digits and signs, with a contemporary gloss over the first four. No key sheet in the volume fits; the key was rebuilt by annealing against a sixteenth-century German model and checked against the gloss. The passage reads: the writer has reported to the Emperor and the Elector of Bavaria and asks to be held excused. Nine signs stay open.',
          quote='&ldquo;damit ich aus allen fall entschuldigt sein&rdquo;',
@@ -329,17 +334,17 @@ PAGES = [
          blurb='The rest of Fuenmayor&rsquo;s ciphered correspondence in Brussels: eight letters from Spain&rsquo;s envoy in London and twelve from its plenipotentiary at Nijmegen. The key rebuilt here for Balbases reads all twenty unchanged, 88% of 23,463 groups, once six boundary-less DECODE transcriptions are re-segmented. Sixteen margins are confirmed; four letters without one, two catalogued as non-decrypted, are read only in gist, so the set stays read in part.',
          quote='ni de la paz ni de la guerra mientras no tuviremos apariencias m&aacute;s ciertas',
          rights='Archives g&eacute;n&eacute;rales du Royaume, Brussels, via DECODE R966&ndash;R984, R1001'),
-    dict(slug='balbases1677', label='Balbases 1677', year='1677&ndash;78', y=1677.6, place='Nijmegen &rarr; Copenhagen', st='solved', stt='read',
+    dict(slug='balbases1677', label='Balbases 1677', year='1677&ndash;78', y=1677.6, place='Nijmegen &rarr; Copenhagen', st='solved', stt='solved',
          title='The marqu&eacute;s de los Balbases to Fuenmayor, 1677&ndash;78 &mdash; a Nijmegen plenipotentiary&rsquo;s cipher rebuilt and four undeciphered letters read',
          blurb='Fourteen ciphered letters from Spain&rsquo;s plenipotentiary at the Nijmegen congress to its envoy in Denmark. Ten carry a contemporary decipherment in the margin; four, of September 1677 and March 1678, carry none, and no key survives. The key was rebuilt from the ten margins by anchoring repeated words and aligning: letters and syllables in numbers, disguised letter-pair syllables, reversed vowel-first pairs and some twenty word codes. It reads all fourteen, down to the fear after the fall of Ghent.',
          quote='con la p&eacute;rdida de Gante estamos temiendo la de otras importantes plazas',
          rights='Archives g&eacute;n&eacute;rales du Royaume, Brussels, via DECODE R985&ndash;R998'),
-    dict(slug='carpio1677', label='Carpio 1677', year='1677', y=1677.8, place='Rome &rarr; Copenhagen', st='solved', stt='read',
+    dict(slug='carpio1677', label='Carpio 1677', year='1677', y=1677.8, place='Rome &rarr; Copenhagen', st='solved', stt='solved',
          title='The Marqu&eacute;s del Carpio to Fuenmayor, 1677 &mdash; a Spanish ambassador&rsquo;s syllabic cipher rebuilt and all ten letters read',
          blurb='Ten ciphered letters from Spain&rsquo;s ambassador in Rome to its envoy in Denmark, eight deciphered in the margin without the key and two catalogued as non-decrypted. The key was rebuilt from the letters: numbers for letters and for syllables in rows of five, struck numbers for a second syllable table, and letter pairs that are syllables with a disguised consonant. It reads all ten: the French fleet at Messina and Catania, Orange raising the siege of Charleroi, Innocent XI refusing Carpio an audience, and Cardinal d&rsquo;Estr&eacute;es at Turin.',
          quote='la pr&oacute;xima campa&ntilde;a habr&aacute; guerra en Mil&aacute;n, pues el Cardenal de Estr&eacute;es, que est&aacute; en Tur&iacute;n, no se descuida',
          rights='Archives g&eacute;n&eacute;rales du Royaume, Brussels, via DECODE R1002&ndash;R1011'),
-    dict(slug='feuquieres', label='Feuqui&egrave;res', year='1691', y=1691, place='Pignerol &rarr; Suze', st='solved', stt='read',
+    dict(slug='feuquieres', label='Feuqui&egrave;res', year='1691', y=1691, place='Pignerol &rarr; Suze', st='solved', stt='solved',
          title='Feuqui&egrave;res to Catinat &mdash; the petit chiffre of the Pignerol governors',
          blurb='The 418-group despatch of 25 January 1691 that the 1819 editor of Catinat&rsquo;s papers could not read and Bazeries read but never printed. The same edition prints a second letter in the same 367-group code, Louvois to d&rsquo;Herleville of 6 September 1690, with its contemporary translation; the two letters share 72 groups, and hand alignment carried between them reads 586 of their 601 tokens. Feuqui&egrave;res&rsquo; plan for the surprise of Veillane: two roads into the town, eighty horse to Saint-Ambroise, an attack at two points, and the dragoons not to be let escape into the castle.',
          quote='&ldquo;j&rsquo;attaqueray [par] deux endrois, et surtout &hellip; prendray garde que les dragons ne puissent m&rsquo;eschaper&rdquo;',
@@ -349,7 +354,7 @@ PAGES = [
          blurb='The 1819 editor of Catinat&rsquo;s papers printed seven court despatches of July&ndash;September 1691 in figures and could not read them; Bazeries rebuilt the code from them in 1893, printed two in clear for the Man in the Iron Mask, and stopped. His table reads all seven from the library&rsquo;s OCR of the volume, 12,362 groups, checked against the page images; the two he printed agree at 98 and 99 %. The other five are read here for the first time, among them the King&rsquo;s twenty-page letter of 14 September: bring the army back over the Alps, hold the passes, keep Carmagnole to cover the negotiation with the Pope, then burn it, and take Coni in the winter.',
          quote='&ldquo;je me suis d&eacute;termin&eacute; &agrave; pr&eacute;f&eacute;rer le parti solide &agrave; l&rsquo;honorable&rdquo; &middot; Louis XIV, 14 September 1691',
          rights='Page images: Bayerische Staatsbibliothek, CC BY-NC-SA'),
-    dict(slug='herbault1626', label='Herbault', year='1626', y=1626, place='Paris &rarr; Rome', st='solved', stt='resolved',
+    dict(slug='herbault1626', label='Herbault', year='1626', y=1626, place='Paris &rarr; Rome', st='solved', stt='read',
          author='Arya Sanketbhai Patel',
          title='Herbault to B&eacute;thune, 13 February 1626 &mdash; the decipherment three folios away',
          blurb='The one letter marked &ldquo;avec chiffre&rdquo; and not &ldquo;avec chiffre et d&eacute;chiffrement&rdquo; among some thirty of 1625&ndash;26 to the ambassador in Rome. It is not an undeciphered text: no. 26 is not a second letter but the same despatch, carrying the same cipher with the plaintext written between the lines in 1626. Identity fixed on the word-for-word clear text, the cipher runs falling at the same points and matching groups. The ciphered passages are the papal Legate and &ldquo;le Pape pour l&rsquo;acheminement de ces troupes in la Valteline&rdquo;, the admission that France made peace with the Huguenots because &ldquo;le faix d&rsquo;une double guerre ne se pouvoit plus supporter&rdquo;, the Dutch squadron sailing home with the Huguenot admiral, and Savoy&rsquo;s attempt to engage France against Spain six weeks before Monz&oacute;n. Contributed by Arya Sanketbhai Patel.',
@@ -367,7 +372,7 @@ PAGES = [
          blurb='Rommel set the King&rsquo;s ciphered passages to the Landgrave of Hesse-Kassel as rows of figures he could not read, then printed the key six years later with one sample and stopped. Put together, they read all seven passages, about 4,100 groups: Bouillon and the German princes, the Gunpowder Plot and M&eacute;rargues &ldquo;forg&eacute;s sur mesme enclume&rdquo;, two million livres for the Dutch, and on 20 May 1606 the call to the princes to take counsel together against a Spanish King of the Romans, &ldquo;pour la conservation de la libert&eacute; germanique&rdquo;. Contributed by Arya Sanketbhai Patel.',
          quote='&ldquo;tous les roys et princes qui doivent avoir jalousie de l&rsquo;agrandissement &hellip; de la puissance espagnole doibvent d&rsquo;heure aviser et prendre conseil ensemble&rdquo;',
          rights='Page images: Internet Archive'),
-    dict(slug='urquhart', label='Urquhart', year='1652', y=1652, place='London', st='solved', stt='octastich read',
+    dict(slug='urquhart', label='Urquhart', year='1652', y=1652, place='London', st='partial', stt='read in part',
          title='Urquhart&rsquo;s Cyphral Octastich &mdash; a book cipher on his own Jewel, read without the plaintext',
          blurb='Eight lines and a &ldquo;Decagram&rdquo; of numbers on the last leaf of The Jewel (1652), Schmeh&rsquo;s Top 50 no. 28. Number k indexes a word on physical page k of the book, and Urquhart took the first word of the initial he needed: a habit checkable without any plaintext. The public transcription was thirteen numbers short; the 1983 edition&rsquo;s photographs on the HCPortal give 285, which decode straight with 238 of 284 first-occurrence hits against 0.43 for shuffled and random-page controls, into a royalist prayer for Charles II. Vals AI published the rule in August 2026 as a Claude Fable 5.1 result; the companion distich claim does not reproduce.',
          quote='&ldquo;Great Lord, mantaine that regal familie &hellip; Our Emperour, King, Monarch and Protector&rdquo;'),
@@ -406,7 +411,7 @@ PAGES = [
          blurb='The King of Hungary answers Ferrara&rsquo;s call for help in the first weeks of the War of Ferrara, with troops, route, names and plan in a sign cipher. DECODE lists it as partly decrypted, but it was printed in 1877 and again by Fraknói in 1895. The runs are read here from the image and a working key rebuilt; four garbled places in the printed text are corrected, among them the closing sentence the edition prints as nonsense.',
          quote='&ldquo;Speramus cito nos res nostras ita disposituros, ut meliori postea modo vos iuvare possemus&rdquo;',
          rights='Manuscript rights: Archivio di Stato di Modena (images not reproduced)'),
-    dict(slug='sadoleto1482', label='Sadoleto 1482', year='1482', y=1482.5, place='Pozsony &rarr; Ferrara', st='solved', stt='read',
+    dict(slug='sadoleto1482', label='Sadoleto 1482', year='1482', y=1482.5, place='Pozsony &rarr; Ferrara', st='partial', stt='read in part',
          title='Nicol&ograve; Sadoleto to Ercole I d&rsquo;Este, Pozsony 1482 &mdash; the Venetian counter-offer to Matthias Corvinus',
          blurb='Ferrara&rsquo;s envoy at the Hungarian court in the first summer of the War of Ferrara wrote parts of his despatches in a sign cipher; they were never printed, and DECODE lists four as partly decrypted. The alphabet is rebuilt from two sibling letters filed with their contemporary clear copies, which also shows that two of the four targets were read at the time. The cipher of 16 July 1482, which has no clear copy, is read but for a few words under stains and the fold: Venice had offered Matthias Veglia, a fleet command for his natural son J&aacute;nos Corvin and a hundred thousand ducats a year, and Sadoleto urged that the League match it. A faded block of 17 August gives fragments only.',
          quote='&ldquo;et voleva dargli Vegla, et voleva lo figlio (e bastardo) per loco capitaneo &hellip; per mare, et gli voleva dare ogni anno cento milia&rdquo;',
@@ -437,7 +442,7 @@ PAGES = [
          blurb='A seventeenth-century copy (BnF Clairambault 325 f. 84, DECODE R2285) of a letter from one of the French negotiators at Toledo carries 56 cipher signs of 29 kinds. Champollion-Figeac printed the letter in 1847 but left the cipher out. The Calvimont and Raince keys of the same months share its shapes but not its values, and the passage is too short to solve blind.',
          quote='&ldquo;celuy de Ferrare a Calatheu [cipher] comme j&rsquo;espere vous dire dimenche&rdquo;',
          rights='Biblioth&egrave;que nationale de France, via DECODE R2285'),
-    dict(slug='raince', label='Raince', year='1526', y=1526, place='Rome &rarr; the Court', st='solved', stt='read',
+    dict(slug='raince', label='Raince', year='1526', y=1526, place='Rome &rarr; the Court', st='partial', stt='read in part',
          title='Raince to Montmorency, Rome, 1526 &mdash; the key was misread by one column',
          blurb='Eight ciphered despatches of the French embassy&rsquo;s secretary at Rome sit in BnF fr. 2984; about 106 lines of them, the 13 May and 20 November 1526 letters to Montmorency, exist in no edition. The obstacle was never cryptanalytic. Tomokiyo published the key in 2020, but reading which glyph sits under which letter in his table by eye slips a column: <em>l</em>, <em>m</em> and <em>n</em> were each a place wrong, and every reading built on it was corrupt. Measured off the image instead &mdash; every ink blob within 15&nbsp;px of a header column &mdash; the table resolves a control line glyph for glyph with nothing left over, and 86 of the 106 lines then read by hand from the microfilm. Nine days before the League of Cognac: the Castilians and the Bourguignons, <em>le chemin de Valence</em>, a capitulation for which <em>ilz seront cause de la destruction</em>, the plague in Rome, advices reaching the Imperials by their own people, and a man taken <em>un jour, en plaine place pres du palais</em>. Two months after the Colonna raid, a pontificate that <em>seroit la cause de la totale ruine de sa maison</em>. The clear close of 13 May, transcribed here, expects Andrea Doria at Civitavecchia within a day with six galleys.',
          quote='&ldquo;qui estoit en la court de Savoye est party pour venir icy&rdquo; &middot; &ldquo;[le] pontificat seroit la cause de la totale ruine de sa maison&rdquo;',
@@ -447,7 +452,7 @@ PAGES = [
          blurb='Three ciphered despatches of the French agents at Ferrara, BnF fr. 3096 nos. 63, 65 and 66, listed unread beside two glossed siblings. Lasry&rsquo;s key holds; the leaves add a null, a nomenclator for the duke and four letter forms. Eighteen thousand signs segmented from the Gallica scans, clustered and classified, then every line read on review sheets; the duplicate pair, which enciphers different stretches, checks itself. Alfonso d&rsquo;Este will not take the kingdom or the captaincy of the French army, and the agents call his difficulties pretexts, eight months before Cambrai.',
          quote='&ldquo;risolutamente concluse per cosa dil mondo non voler per s&eacute; alcunamente accettare il regno et manco far l&rsquo;impresa a suo nome&rdquo;',
          rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
-    dict(slug='egmond', label='Charles of Egmond', year='18 July (?) · year unknown', y=1525, place='Arnhem &rarr; grand master of France', st='solved', stt='read; minor uncertainties',
+    dict(slug='egmond', label='Charles of Egmond', year='18 July (?) · year unknown', y=1525, place='Arnhem &rarr; grand master of France', st='solved', stt='solved',
          title='Charles of Egmond &mdash; a ciphered request for support in war',
          blurb='A cipher George Lasry had already solved in 2023 (key on cryptiana), solved again here independently: the French body and ciphered address read with an inferred graphic substitution key and nulls. Charles asks the grand master to support his affairs and assist the commander of Saint John. Arnhem, apparently 18 July; year unknown. Minor glyph uncertainties and literal anomalies remain explicit.',
          quote='lequel est cause que suis entre en ceste guerre', rights='Biblioth&egrave;que nationale de France / Gallica'),
@@ -471,7 +476,7 @@ PAGES = [
          blurb='Catalogued as a letter of the French marshals to the King dated 1520 (BnF fr. 3081 f. 41, DECODE R2322), the two cipher pages are a copy of the articles Cardinal Campeggio swore to the cardinals Bourbon, Lorraine and Tournon: if elected pope, he would work for the return of Milan, Asti and Genoa to Francis I. George Lasry read the first page in 2022; the second, unpublished, is read here with his key and a few sign corrections.',
          quote='&ldquo;s&rsquo;il plaist a Dieu me donner grace d&rsquo;estre pape&rdquo;',
          rights='Biblioth&egrave;que nationale de France, via DECODE R2322'),
-    dict(slug='rome1536', label='M&acirc;con 1536&ndash;37', year='1536&ndash;37', y=1536.5, place='Rome, Orvieto &rarr; the grand ma&icirc;tre', st='solved', stt='read',
+    dict(slug='rome1536', label='M&acirc;con 1536&ndash;37', year='1536&ndash;37', y=1536.5, place='Rome, Orvieto &rarr; the grand ma&icirc;tre', st='partial', stt='read in part',
          title='The cardinal de M&acirc;con in Rome to Montmorency, 1536&ndash;1537 &mdash; eight letters from an &ldquo;unknown sender&rdquo;',
          blurb='Eight ciphered records of BnF fr. 3053, catalogued as an unknown correspondent writing to Anne de Montmorency from Rome. The sender signs three of them in clear: Charles H&eacute;mard de Denonville, bishop and then cardinal of M&acirc;con, ambassador to Paul III. Tomokiyo reconstructed the cipher from this very volume and Lasry re-tabulated it in 2023, but nobody published a word of the text. Seven records are now read in part and the eighth resolved &mdash; its cipher is a second fr. 3053 key whose contemporary decipherment stands on the next leaf. The Pope manoeuvring over the general council and the Germans, Andrea Doria&rsquo;s galleys and a suspected secret treaty, Milan refused to the Farnese, the Sienese exiles, a conclave weighed while Paul III fails, and an estate in France offered to the Pope&rsquo;s son.',
          quote='&ldquo;le dict pape vouloit entretenir le roy de mariage &hellip; pour ce s&rsquo;en prevaloir vers le dict Empereur&rdquo;',
@@ -491,7 +496,7 @@ PAGES = [
          blurb='Twenty-nine DECODE records (RAH Salazar 9/23&ndash;9/26, R9593&ndash;R9657) held here as unread ciphertexts of the imperial ambassador at Venice. Satoshi Tomokiyo had reconstructed the cipher outright and published it in September 2025, a year before the entry was scored, so there is no break to be had. The entry is corrected instead: the run spans four volumes and not one, every record is dated 1522 so the treaty of July 1523 is not in it, nine of the letters are Lope Hurtado de Mendoza&rsquo;s, and almost all carry a contemporary decipherment. The nomenclator turns out to be alphabetically ordered, which fills in the numeral run; three values so predicted are then confirmed in two letters outside Tomokiyo&rsquo;s coverage, both read in part here: R9653 on the siege of Rhodes, and R9635, a whole page of cipher on the sums owed by the Signoria and the restitution of goods seized from imperial vassals. Lope Hurtado&rsquo;s code groups take finals S&aacute;nchez&rsquo;s key does not have &mdash; a third cipher, still unreconstructed.',
          quote='&ldquo;ducados allende de los otros xviii mil &hellip; mas de xv mil ducados&rdquo;',
          rights='Manuscript: Real Academia de la Historia, via DECODE'),
-    dict(slug='lopehurtado1523', label='Lope Hurtado 1523&ndash;24', year='1523&ndash;24', y=1523.6, place='Rome &rarr; Charles V and Gattinara', st='solved', stt='read',
+    dict(slug='lopehurtado1523', label='Lope Hurtado 1523&ndash;24', year='1523&ndash;24', y=1523.6, place='Rome &rarr; Charles V and Gattinara', st='partial', stt='read in part',
          title='Lope Hurtado de Mendoza at Rome, 1523&ndash;24 &mdash; the key rebuilt, six letters read in part',
          blurb='Eight DECODE records (RAH Salazar 9/28 and 9/30, R9667&ndash;R9869) catalogued as unread June 1523 ciphertexts to an unknown recipient are letters of May 1523 to March 1524 to Charles V and the Grand Chancellor Gattinara. Two were calendared by Bergenroth from contemporary decipherings (CSP Spain 2, nos. 548 and 617); the &ldquo;Claro&rdquo; leaf bound with R9667 is the Abbot of N&aacute;jera&rsquo;s, not Hurtado&rsquo;s. The key, changed since 1522, is rebuilt from the clerk&rsquo;s clear bound with the letter of 5 February 1524, and the six uncalendared letters are read in part: Beaurain&rsquo;s mission, a Pope who wants France ruined or a truce, the Datary Giberti, an agent unpaid.',
          quote='&ldquo;lo que mas dessea es que el Rey de Francia se destruya&rdquo;',
@@ -506,12 +511,12 @@ PAGES = [
          blurb='DECODE R9660&ndash;R9666 were catalogued as seven Non-decrypted letters of &ldquo;Luis Fern&aacute;ndez?&rdquo; from Sesa to an unknown recipient. They are the Duke of Sessa&rsquo;s despatches to Charles V, 20 February to 27 April 1523, in RAH Salazar A-27. Bergenroth calendared four of them in 1866 from the court&rsquo;s decipherments on other leaves of the volume. The cipher is the 1524 Sessa nomenclator, and a paragraph of the uncalendared February letter was read with that key as a check.',
          quote='&ldquo;&hellip; a ver a Su Santidad, mas con color de &hellip;&rdquo;',
          rights='Real Academia de la Historia, via DECODE'),
-    dict(slug='soria1523', label='Soria 1523', year='1523', y=1523.5, place='Genoa &rarr; Charles V', st='solved', stt='read',
+    dict(slug='soria1523', label='Soria 1523', year='1523', y=1523.5, place='Genoa &rarr; Charles V', st='partial', stt='read in part',
          title='Lope de Soria to Charles V, Genoa, 1523 &mdash; two ciphers, one broken from a court decipherment and one with no key at all',
          blurb='Eleven DECODE records (RAH Salazar A-28, R9488&ndash;R9498), none deciphered before: five despatches of the imperial ambassador at Genoa, June to August 1523, with their duplicates. The later cipher was rebuilt from a Soria letter that carries the court&rsquo;s decipherment. The earlier one had no key or crib and fell to a substitution solver scored on Castilian of the 1520s. The letters read on the Venetian league, the French descent, a plan to seize Bergamo and Brescia, Siena, Beaurain&rsquo;s mission and Andrea Doria&rsquo;s first approach to the Emperor.',
          quote='&ldquo;los dichos [rip] usaran con [pur] los tratos que uso Otaviano Campofregoso quando se fizo la liga general&rdquo;',
          rights='Manuscript: Real Academia de la Historia, via DECODE'),
-    dict(slug='sessa1524', label='Sessa 1524', year='1524', y=1524.3, place='Rome &rarr; Charles V', st='solved', stt='read',
+    dict(slug='sessa1524', label='Sessa 1524', year='1524', y=1524.3, place='Rome &rarr; Charles V', st='partial', stt='read in part',
          title='The Duke of Sessa to Charles V, Rome, 18 April 1524 &mdash; a &ldquo;1424&rdquo; cipher that is a century younger',
          blurb='DECODE catalogues RAH Salazar A-31 ff. 128&ndash;131 as a <em>Non-decrypted</em> letter of Luis Fern&aacute;ndez from Rome, April 1424, and it was taken up as the longest ciphertext before 1450. The date is a typo: the letter is the Duke of Sessa&rsquo;s despatch of 18 April 1524 and its duplicate, skipped by Bergenroth. Eight sibling letters in the same cipher carry the court&rsquo;s decipherment; about 110 code groups and the alphabet were rebuilt from them by token tiling and template matching. The cipher now reads at the word level: the Pope&rsquo;s secretary withholds the Bishop of Veroli&rsquo;s letters, and Sessa asks the Pope for money for the Swiss. Four groups are attested nowhere and stay open.',
          quote='&ldquo;habl&eacute; en la ora a Su Santidad a pedirle que haya provisi&oacute;n &hellip; pues tiene color para ello&rdquo;',
@@ -556,7 +561,7 @@ PAGES = [
          blurb='Two letters of a Ferrarese in Ippolito d&rsquo;Este&rsquo;s household in Hungary (ASMo Ungheria b. 4, Fantini nos. 5&ndash;6; DECODE R1126&ndash;R1127, filed as &ldquo;Jantini&rdquo;). The cipher is of the family of Caprile&rsquo;s 1519 letters, shown here to be syllabic from a pairing with their 1882 decipherment. The 1,370 columns were transcribed; a syllabary annealer that recovers a control of the same size produces no Italian, and Caprile&rsquo;s values do not fit.',
          quote='&ldquo;&hellip; per la mandata dil duca Lorezo in Franza&rdquo;, then two pages of signs',
          rights='Archivio di Stato di Modena, via DECODE R1126'),
-    dict(slug='caprile1519', label='Caprile 1519&ndash;21', year='1519&ndash;21', y=1520.3, place='Eger, Buda &rarr; Ferrara', st='solved', stt='read',
+    dict(slug='caprile1519', label='Caprile 1519&ndash;21', year='1519&ndash;21', y=1520.3, place='Eger, Buda &rarr; Ferrara', st='partial', stt='read in part',
          title='Giuliano Caprile and Alfonso Cistarelli to Ferrara, 1519&ndash;1521 &mdash; most read at the time or since, two more read in part',
          blurb='Catalogue items 157 and 158: eight DECODE records of two agents of Cardinal Ippolito d&rsquo;Este at Eger (ASMo Ambasciatori Ungheria b. 4). The 1519 letters were deciphered in 1882 and the postscript of 16 February 1521 by Judit W. Somogyi in 2025. Her texts were used as a crib to rebuild the homophonic sign cipher of 1520&ndash;21, which reads two letters with no decipherment anywhere, R1136 and R1139, in part. R1128 (a different 1519 cipher) and Cistarelli&rsquo;s figure cipher R1137 stay open.',
          quote='&ldquo;lui m&rsquo;ha resposto dice de voler andar in Italia&rdquo;',
@@ -576,7 +581,7 @@ PAGES = [
          blurb='BnF fr. 3854 nos. 41&ndash;43. The two &ldquo;undeciphered&rdquo; m&eacute;moires of 26&ndash;27 March were read by Lasry in 2023; they are read again here from the leaves, with three small corrections. The third, whose decipherment was meant to be the crib, is a different number code, and its clerk never glossed the first twelve lines. A key rebuilt from about 3,300 glossed groups reads them: Conti to Laigue, 5 March 1649, explaining the Rueil conference away to Archduke Leopold Wilhelm.',
          quote='&ldquo;d&egrave;s le moment qu&rsquo;il entrera en France, cette conf&eacute;rence se rompra&rdquo;',
          rights='Manuscript images: Biblioth&egrave;que nationale de France'),
-    dict(slug='vich1511', label='Vich 1511&ndash;12', year='1511&ndash;12', y=1511.5, place='Spain &rarr; Rome', st='solved', stt='3 of 4 read',
+    dict(slug='vich1511', label='Vich 1511&ndash;12', year='1511&ndash;12', y=1511.5, place='Spain &rarr; Rome', st='partial', stt='3 of 4 read',
          title='Ferdinand the Catholic to Jer&oacute;nimo de Vich, 1511&ndash;12 &mdash; Ravenna, Milan and a spiritual war on Louis XII',
          blurb='Three letters of Ferdinand the Catholic to his ambassador at Rome, AHN Estado 8715 N.45, N.57 and N.60 (April 1511 to September 1512), written wholly in cipher and filed without the decipherment their siblings carry. The nomenclator, a homophonic alphabet with 153 code groups for words and syllables, was rebuilt by lining two deciphered siblings up with the clerk&rsquo;s text, and then read the three letters it was not built from. Julius II&rsquo;s cardinals and Venice, Ferdinand&rsquo;s account of how his army was pushed into Ravenna, the Sforza restoration in Milan. The 1515 letter is another system. Terrateig&rsquo;s 1963 edition, not seen, may already print them.',
          quote='&ldquo;las cosas de guerra es muy peligroso [&hellip;] los que estan absentes della; que siempre se ha de remitir a los que las tienen presentes&rdquo;',
@@ -586,17 +591,17 @@ PAGES = [
          blurb='DECODE R9954 is five pages of invented signs from Cisneros&rsquo;s agent at the court of King Charles, catalogued as Non-decrypted. Tomokiyo&rsquo;s key for Ayala&rsquo;s letter of 12 July (R10024) reads it unchanged. Read here before the 1875 edition was found, and checked against it: the sale of vacant Castilian offices around Chi&egrave;vres, Queen Germaine&rsquo;s dealings with France, the peace of Noyon to be proclaimed, and the King&rsquo;s departure for Spain fixed on 30 August.',
          quote='&ldquo;cerca de los oficios que estan vacos en estos reynos&rdquo;',
          rights='Archivo General de Simancas, via DECODE R9954'),
-    dict(slug='spinelly1516', label='Spinelly 1517', year='1517', y=1517.1, place='Brussels &rarr; Henry VIII', st='solved', stt='read',
+    dict(slug='spinelly1516', label='Spinelly 1517', year='1517', y=1517.1, place='Brussels &rarr; Henry VIII', st='solved', stt='solved',
          title='Thomas Spinelly to Henry VIII, Brussels, 1 February 1517',
          blurb='BL Cotton MS Galba B V ff. 40&ndash;41 (DECODE R8416), catalogued as a letter of Spinelly to an unknown recipient, London 1516, not decrypted. It is Spinelly&rsquo;s clear despatch to the King from the court of Charles at Brussels, with five lines in a substitution of invented signs and no decipherment. A crib from the clear text (&ldquo;audensier&rdquo;) gives the alphabet: the Audiencier and Luigi Marliano expect the King&rsquo;s entry into Brussels, and the Emperor at Cambrai about the 15th. <i>Letters and Papers</i> had only summarised the Cambrai clause.',
          quote='&ldquo;and [the Emperor] about the xv day of the present monethe so to Cambray&rdquo;',
          rights='Manuscript images: British Library (via DECODE)'),
-    dict(slug='guiche1551', label='La Guiche 1551', year='1551', y=1551, place='Rome &rarr; the French court', st='solved', stt='read',
+    dict(slug='guiche1551', label='La Guiche 1551', year='1551', y=1551, place='Rome &rarr; the French court', st='partial', stt='read in part',
          title='La Guiche from Rome, 1551, with Noailles and Seure, 1558 &mdash; a symbol cipher nobody deciphered',
          blurb='BnF fran&ccedil;ais 3138 no. 22: Claude de La Guiche&rsquo;s letter to Montmorency of 22 November 1551 carries 406 signs of cipher with no decipherment anywhere. The 22 invented signs are a simple substitution, broken here by permutation annealing with a French despatch model. Dom Diego and the Sienese envoy, and the Count of Santa Fiora ready to come over to the king. Noailles&rsquo;s Venice letter of 1558 was deciphered in the margin at the time; Seure&rsquo;s Lisbon letters are left open.',
          quote='&ldquo;le conte Sainte Fiore est mal satisfaict&hellip; et que facilement se reduiroit au service du roy&rdquo;',
          rights='Biblioth&egrave;que nationale de France / Gallica'),
-    dict(slug='rennes1563', label='Rennes 1562&ndash;64', year='1562&ndash;64', y=1563, place='the French court &rarr; the imperial court', st='solved', stt='read',
+    dict(slug='rennes1563', label='Rennes 1562&ndash;64', year='1562&ndash;64', y=1563, place='the French court &rarr; the imperial court', st='partial', stt='read in part',
          title='Catherine de M&eacute;dicis and the bishop of Rennes: four unread cipher letters, 1562&ndash;64',
          blurb='Four letters to the French ambassador at the imperial court in the Bishop of Rennes&rsquo; cipher, none deciphered before: Catherine&rsquo;s of 31 July 1563 (BnF fr. 3181 f. 55), whose cipher La Ferri&egrave;re printed as an empty bracket; a 1564 order to leave the precedence quarrel; Bourdin&rsquo;s of December 1562 on the leaked marriage overture; and a note to be deciphered by Rennes himself and burned. Each secretary&rsquo;s hand was calibrated on glossed letters in the same hand and every line decoded by a language-model lattice: from 65% to 99% of each letter read.',
          quote='&ldquo;pour le bien de la Chrestient&eacute; et avancer le concile&hellip; laisser l&agrave; quelque secretaire&hellip; soubz couleur d&rsquo;aucuns voz affaires particuliers&rdquo;',
@@ -702,7 +707,7 @@ PAGES = [
          blurb='A ciphered despatch from R&aacute;k&oacute;czi&rsquo;s man at the Moldavian court (DECODE R478) was catalogued as undeciphered, with no key. Scoring all 94 R&aacute;k&oacute;czi chancery keys on DECODE against it picked out R609, a Hungarian syllabic nomenclator, which reads it unchanged. The Tsar suing Charles XII for peace, the Muscovite and Polish envoys at Ia&#351;i, a message from Pekri to the voivode, and the Swede at Vilna.',
          quote='&ldquo;tudv&aacute;n az bar&aacute;t az Port&aacute;nak szem&eacute;nek &eacute;s f&uuml;l&eacute;nek lenni&rdquo;',
          rights='MNL OL, via DECODE; lead crop only'),
-    dict(slug='papai1706', label='P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10', year='1706&ndash;10', y=1706.5, place='Constantinople &rarr; R&aacute;k&oacute;czi', st='solved', stt='read',
+    dict(slug='papai1706', label='P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10', year='1706&ndash;10', y=1706.5, place='Constantinople &rarr; R&aacute;k&oacute;czi', st='partial', stt='read in part',
          title='J&aacute;nos P&aacute;pai to Ferenc R&aacute;k&oacute;czi II, 1706&ndash;1710 &mdash; the envoy&rsquo;s own key',
          blurb='Twelve ciphered despatches of R&aacute;k&oacute;czi&rsquo;s envoy at the Porte (DECODE R731&ndash;R823, filed under three catalogue entries, one as from an &lsquo;unknown sender&rsquo;) were catalogued as undeciphered. The key issued to P&aacute;pai survives as DECODE R580, a Hungarian syllabic nomenclator, and nothing linked the two. Applied unchanged, it gives values for 16,346 of 16,861 groups in eleven letters, the rest mostly nulls: Imperial troops crossing Ottoman ground, audiences before the internuncio, the French ambassador failing to bring the Porte to war, the French and Muscovite ambassadors, money. The twelfth letter (Belgrade, 1710) uses a graphic-sign alphabet and stays unread.',
          quote='&ldquo;legyen patientia &hellip; ne kellyen illy haszontalan k&ouml;lteni&rdquo; &middot; the Kiaya&rsquo;s answer, 2 January 1710',
@@ -742,12 +747,12 @@ PAGES = [
          blurb='A single leaf of comma-separated figures in the archive of the Cologne nunciature (DECODE R24), catalogued as an unread 1721 letter of unknown sender. The record already carries George Lasry&rsquo;s 2020 key and Paolo Bonavoglia&rsquo;s reading: a curate suspended <i>a divinis</i>, news wanted from Tournai, &ldquo;the Cologne affair&rdquo;, an offer to write to a correspondent. Checked against the image; three values added from context (qu, gli, g), date and place fixed from the heading; seven tokens stay open.',
          quote='sopra l&rsquo;affare di Colonia, ma egli, a quel che vedo, ne &egrave; informato',
          rights='Archivio Apostolico Vaticano, via DECODE'),
-    dict(slug='windischgraetz1721', label='Windischgr&auml;tz 1721', year='1721', y=1721.9, place='Brussels &rarr; Windischgr&auml;tz', st='solved', stt='read',
+    dict(slug='windischgraetz1721', label='Windischgr&auml;tz 1721', year='1721', y=1721.9, place='Brussels &rarr; Windischgr&auml;tz', st='partial', stt='read in part',
          title='The Windischgr&auml;tz brothers&rsquo; key letter, 18 November 1721 &mdash; read with Jakub M&iacute;rka&rsquo;s reconstructed key',
          blurb='A family letter of the Counts Windischgr&auml;tz catalogued on DECODE as non-decrypted: German in clear with thirteen passages in dotted numbers. The key Jakub M&iacute;rka reconstructed in 2023 from the brothers&rsquo; other letters, attached to the record, with no reading of the letter published, reads every letter-spelled passage at once. The writer, waiting for the Congress of Cambrai, complains of the Emperor, the Prince&rsquo;s plan and the succession; 23 nomenclator codes stay open.',
          quote='&ldquo;eine Excusation zu machen&rdquo; &middot; 22.38.23.3.40.36.27.20.6.30',
          rights='Manuscript images: St&aacute;tn&iacute; oblastn&iacute; archiv v Plzni, via DECODE'),
-    dict(slug='swieten1757', label='Van Swieten 1757', year='1757&ndash;59', y=1758.5, place='Bonn &rarr; Brussels', st='solved', stt='read',
+    dict(slug='swieten1757', label='Van Swieten 1757', year='1757&ndash;59', y=1758.5, place='Bonn &rarr; Brussels', st='solved', stt='solved',
          title='Van Swieten to Cobenzl from Bonn, 1757&ndash;59 &mdash; an alphabetical syllabary rebuilt from the ciphertext',
          blurb='Three despatches of the young Gottfried van Swieten to Count Cobenzl, catalogued on DECODE as non-decrypted. The 1757 passage carries its own decipherment and shows the system: an alphabetical list of letters and syllables. No key survives for the 1759 table, so it was rebuilt from 553 groups by annealing a code map held in alphabetical order against a French language model, then corrected from the clear text round each run. Read at 96%: the Gueldre convention, Moers, and a frank verdict on Soubise&rsquo;s army and its generals.',
          quote='&ldquo;le grand principe para&icirc;t &ecirc;tre de faire subsister l&rsquo;arm&eacute;e du roi sans qu&rsquo;il en co&ucirc;te un sou&rdquo; &middot; Bonn, 4 February 1759',
@@ -822,7 +827,7 @@ PAGES = [
          blurb='BL Cotton MS Caligula C II f. 74r is the only letter of Mary&rsquo;s ciphered correspondence with Norfolk in the Tower with no contemporary decipherment, dated only &ldquo;the tventi of this instant&rdquo;. Tomokiyo rebuilt the key from the three deciphered siblings and overlaid a partial letter-by-letter decode. Undeciphered did not mean unsolved: the key was available, and the contribution here is the transcription and the reading. The key is checked on f. 66r, and the letter is read in 23 lines from the new British Library IIIF images, stitched from tiles. Written weeks after the Regent Moray&rsquo;s murder: Elizabeth blames Mary for the harquebus shot, Morton is rumoured on the move, and Norfolk is to write through the Bishop of Ross or Lady Scrope, never in his own hand.',
          quote='&ldquo;I am asured that sche &hellip; sueves me the veyt of Murray death; but God knoueth&rdquo;',
          rights='Manuscript images: British Library'),
-    dict(slug='lanssac', label='Lanssac', year='1573', y=1573, place='Warsaw &rarr; Paris', st='solved', stt='read',
+    dict(slug='lanssac', label='Lanssac', year='1573', y=1573, place='Warsaw &rarr; Paris', st='solved', stt='solved',
          title='Lanssac to Charles IX, Warsaw, 26 April 1573 &mdash; the Polish election embassy&rsquo;s cipher',
          blurb='BnF fr. 4735 f. 124, catalogued &ldquo;avec chiffre&rdquo; with no decipherment. The key is a homophonic letter cipher with word signs, recovered from a sibling letter whose Court decipherment survives as gutter-cut marginal notes (&ldquo;car je n&rsquo;ay pas cinquante escuz&rdquo;) and checked against the fragments on f. 124 itself. Both passages read, and the key then opens the three election letters whose only &ldquo;decipherment&rdquo; was that cut gloss: the Polish nation &ldquo;autant v&eacute;nale &hellip; comme sont les Allemans&rdquo;, the Emperor&rsquo;s three hundred thousand spent for nothing, and on 9 May the election carried against the Sultan, the Emperor, the princes of the Empire, Spain, Muscovy and Sweden, &ldquo;qui tous estoient bandez contre vostre Majest&eacute;&rdquo;. Tomokiyo&rsquo;s published table for the cipher is corrected.',
          quote='&ldquo;qui tous estoient bandez contre vostre Majest&eacute;&rdquo; &middot; P&#322;ock, 9 May 1573',
@@ -852,17 +857,17 @@ PAGES = [
          blurb='BnF fr. 3976 ff. 133&ndash;134 (DECODE R3708), catalogued as an unknown sender to an unknown recipient, is the third letter of the court informant of ff. 62 and 131, with eighteen cipher runs and no decipherment. The key rebuilt for f. 62 read every run. Three weeks after the Barricades, the cur&eacute;s of Saint-Andr&eacute; and Saint-Beno&icirc;t are stirring up the people, La Chapelle carries the H&ocirc;tel de Ville&rsquo;s decisions to Guise&rsquo;s council, and the &eacute;chevin Cotteblanche refuses to let the Arsenal&rsquo;s guns go to Corbeil. His letter of 9 June (f. 139), glossed at the time, confirms the key run for run.',
          quote='Il n&rsquo;y a que les curez St Andr&eacute; et St Benoist qui font rage de mutiner le peuple',
          rights='Biblioth&egrave;que nationale de France, via Gallica'),
-    dict(slug='nevers1588', label='Informant to Nevers, April 1588', year='1588', y=1588.32, place='Paris &rarr; Nevers', st='solved', stt='read',
+    dict(slug='nevers1588', label='Informant to Nevers, April 1588', year='1588', y=1588.32, place='Paris &rarr; Nevers', st='solved', stt='solved',
          title='A court informant to the Duke of Nevers, 29 April 1588 &mdash; read',
          blurb='BnF fr. 3976 f. 62 (DECODE R3705), a Paris news letter to Louis de Gonzague, duc de Nevers, with nineteen cipher runs and no decipherment. No known Nevers key fitted; the key was rebuilt from the interlinear glosses of the same informant&rsquo;s letter of 4 June 1588 and every run read. Henri III nearly had five or six Paris ligueurs drowned; Guise answered that he had forty thousand men.',
          quote='Il cuyda estre resolu au conseil de prendre et jetter en l&rsquo;eau cinq ou six des plus grans ligueurs de Paris',
          rights='Biblioth&egrave;que nationale de France, via Gallica'),
-    dict(slug='needham1587', label='Needham before Sluys 1587', year='1587', y=1587.57, place='Sluys &rarr; Walsingham', st='solved', stt='read',
+    dict(slug='needham1587', label='Needham before Sluys 1587', year='1587', y=1587.57, place='Sluys &rarr; Walsingham', st='solved', stt='solved',
          title='Francis Needham before Sluys, 28 July 1587 &mdash; the pigpen letter, read',
          blurb='BL Harley MS 287 ff. 39&ndash;40, catalogued on DECODE as a partially decrypted letter of &ldquo;Needham&rdquo; to an unknown recipient, is Francis Needham&rsquo;s letter to Walsingham from Leicester&rsquo;s fleet before Sluys. A contemporary hand glossed a few cipher words; the long runs of f. 39v were bare. The key, a three-grid pigpen with the alphabet in order, was rebuilt from the glosses and every run was read: Parma had closed the channel with hoys and flyboats chained together.',
          quote='&ldquo;the chanel was b[&hellip;]ed with hoyes and flyboates fastened wyth chaynes, strengthned behind wyth flatt bootes&rdquo;',
          rights='Manuscript images: British Library, via DECODE'),
-    dict(slug='harley287', label='Cobham at Ostend 1588', year='1588', y=1588.2, place='Ostend &rarr; Walsingham', st='solved', stt='read',
+    dict(slug='harley287', label='Cobham at Ostend 1588', year='1588', y=1588.2, place='Ostend &rarr; Walsingham', st='solved', stt='solved',
          title='Lord Cobham at Ostend, 20&ndash;22 March 1588 &mdash; the peace commissioner&rsquo;s cipher, read',
          blurb='BL Harley MS 287 ff. 70&ndash;72, catalogued on DECODE as seven ciphertexts of an unknown sender to an unknown recipient, are two letters of Lord Cobham, Elizabeth&rsquo;s peace commissioner at Ostend, of 20 and 22 March 1587/8, with a report from Middelburg. No decipherment existed. Broken from the clear words around the runs: a graphic-sign substitution with a small nomenclator (15 = Parma, &#9633; = the States). Every run reads, among them Parma&rsquo;s new canal from Ghent to Sluys and the prisoners Pigot and Barney.',
          quote='&ldquo;I would think myself most unhappy to be a means to conclude an irreligious peace&rdquo;',
@@ -883,7 +888,7 @@ PAGES = [
          blurb='BnF fr. 3413 no. 62 was catalogued with three cipher keys bound in the same volume that might read it. None does. The letter, from a secretary of Cardinal Pellev&eacute; in Rome to Jean de Piles of the League&rsquo;s council in Paris, is almost all in clear and carries the news of Henri&nbsp;III&rsquo;s murder as it reached Rome. Its ninety-odd signs of cipher are in the Nevers&ndash;Piles alphabet that Tomokiyo identified. His partial table was filled out from a deciphered letter of 1586 in fr. 4715 in the same cipher. Read: <em>Cassin</em>, <em>la protection</em>, <em>vostre regne</em>, <em>depeschera</em>, <em>mon maitre a est&eacute; retir&eacute;</em>, and the signature, probably <em>Baron</em>. About thirty signs, most of them code signs, remain open.',
          quote='&ldquo;le Roy a est&eacute; tu&eacute;, et c&rsquo;est le Roy de Navarre qui l&rsquo;a faict faire&rdquo;',
          rights='Manuscript images: Biblioth&egrave;que nationale de France'),
-    dict(slug='cobham1588', label='Cobham 1588', year='1588', y=1588.4, place='Ostend &rarr; Walsingham', st='solved', stt='read',
+    dict(slug='cobham1588', label='Cobham 1588', year='1588', y=1588.4, place='Ostend &rarr; Walsingham', st='partial', stt='read in part',
          title='Lord Cobham to Walsingham, May&ndash;June 1588',
          blurb='Four letters of the English peace commissioner in the Low Countries, clear English with cipher passages in Greek-like signs (BL Harley 287, DECODE R8490&ndash;R8496). The key record the catalogue pointed to is Bodley&rsquo;s 1590 cipher. The right alphabet comes from Cobham&rsquo;s April letters in the same volume, deciphered between the lines at the time. A sign inventory from the glosses and a word solver read about a third of the cipher words: armadas, the haven, Italians arriving, within France.',
          quote='&Lambda;&#1016;7&perp;V = their (f. 75, interlinear)',
@@ -898,12 +903,12 @@ PAGES = [
          blurb='A letter of 17 September 1590 from the Duke of Mantua to his uncle Nevers, with long passages in unbroken two-digit figures, catalogued as not deciphered and credited to &ldquo;the duke of Nevers&rdquo;. The key filed in Nevers&rsquo;s papers, BnF fr. 3995 f. 64 (Tomokiyo no. 35), reads it unchanged: 95% of the cipher. Mantua passes on the rumour that Sixtus V was poisoned by the Spaniards and assures Henri IV of his devotion against the common enemy.',
          quote='che la morte del Papa sia stata procurata con veleno da Spagnoli',
          rights='Biblioth&egrave;que nationale de France'),
-    dict(slug='champagne1590', label='Champagne 1590', year='1590&ndash;91', y=1590.5, place='Paris, Champagne &rarr; Nevers', st='solved', stt='read',
+    dict(slug='champagne1590', label='Champagne 1590', year='1590&ndash;91', y=1590.5, place='Paris, Champagne &rarr; Nevers', st='partial', stt='read in part',
          title='Champagne news-letters to Nevers (1590&ndash;91)',
          blurb='Six letters to the duc de Nevers catalogued as one ciphered correspondence. No. 23 is a clear copy with a nine-entry name code whose key is bound on the next leaf, and reads in full. Nos. 24, 25 and 60 share a two-digit alphabet laid out in alphabetical order, rebuilt from a few letters glossed between the lines: ten of twelve runs read. No. 78 and Lauri&egrave;re&rsquo;s 1593 letter stay open.',
          quote='la rupture de l&rsquo;edict [de] l&rsquo;union &middot; contre la ligue',
          rights='Biblioth&egrave;que nationale de France'),
-    dict(slug='stowe166', label='Edmondes to Burghley 1592&ndash;94', year='1592&ndash;94', y=1592.2, place='Henri IV&rsquo;s court &rarr; Burghley', st='solved', stt='read',
+    dict(slug='stowe166', label='Edmondes to Burghley 1592&ndash;94', year='1592&ndash;94', y=1592.2, place='Henri IV&rsquo;s court &rarr; Burghley', st='partial', stt='read in part',
          title='Edmondes to Burghley, 1592&ndash;1594 &mdash; &ldquo;Lord Threr?&rdquo; and the King&rsquo;s secrets',
          blurb='BL Stowe MS 166, catalogued on DECODE as six ciphertexts of &ldquo;Lord Threr?&rdquo; to an unknown recipient, are despatches to the Lord Treasurer, Burghley, in Thomas Edmondes&rsquo;s papers, written from Henri IV&rsquo;s camp in 1592 and 1594. The graphic-sign cipher is a simple substitution of English with a few homophones and person signs, broken from the clear text around it. Every passage reads except four lines on f. 59: the King breaking off his sister&rsquo;s marriage, Montmorency&rsquo;s demand for the young Cond&eacute;, and designs on Reims in 1594.',
          quote='&ldquo;the K. thereuppon saide vnto me that his faith is not vendible&rdquo;',
@@ -992,7 +997,7 @@ PAGES = [
          blurb='DECODE R688, in the <em>Chiffres 1664&ndash;1668</em> bundle of the Vienna Hungarian conspiracy files, is catalogued as a simple substitution in graphic signs. The signs are Cyrillic letters and the language is Serbian: a prisoner named Stojan greets the aghas, knezes and his Vlachs by name and begs them to get him out of the German prison. A slip on f. 31 holds a second, damaged note.',
          quote='&ldquo;&#1084;&#1086;&#1078;&#1080;&#1090;&#1077; &#1084;&#1077;&#1085;&#1077; &#1080;&#1079;&#1074;&#1072;&#1076;&#1080;&#1090;&#1100; &#1080;&#1079; &#1085;&#1077;&#1084;&#1072;&#1095;&#1082;&#1080;&#1081; &#1090;&#1072;&#1084;&#1085;&#1080;&#1094;&#1077;&rdquo; (you can get me out of the German prison)',
          rights='&Ouml;sterreichisches Staatsarchiv, HHStA, via DECODE R688'),
-    dict(slug='wesselenyi1664', label='Wessel&eacute;nyi c. 1663&ndash;64', year='c. 1663&ndash;64', y=1663.9, place='Palatine Wessel&eacute;nyi &rarr; Leopold I', st='solved', stt='read',
+    dict(slug='wesselenyi1664', label='Wessel&eacute;nyi c. 1663&ndash;64', year='c. 1663&ndash;64', y=1663.9, place='Palatine Wessel&eacute;nyi &rarr; Leopold I', st='solved', stt='solved',
          title='Wessel&eacute;nyi&rsquo;s cipher draft, c. 1663&ndash;64 &mdash; Read',
          blurb='DECODE R674 (MNL OL E 199, 8. pallium 1. 01), a one-page Latin draft in the Wessel&eacute;nyi family archive catalogued as non-decrypted, hides its key words in a reversed alphabet, 24 = a down to 1 = z, with vowel homophones 25&ndash;29. Broken ciphertext-only with a Latin model, then confirmed by DECODE key R672, which has the same alphabet. The Palatine proposes joining the regiments of Heister, Schneidau and Sporck to force a town to take an imperial garrison. 241 of 244 cipher tokens read; codes 60 and 64 stay open.',
          quote='&ldquo;quod ista nux durissima tandem aliquando necessario frangi debet&rdquo;',
@@ -1012,7 +1017,7 @@ PAGES = [
          blurb='Four despatches of the Saxon foreign minister to his minister resident in St Petersburg (HStAD 10731 Nr. 12, DECODE R5005&ndash;R5008). The 1841 despatch was transcribed in full, 3,969 unseparated digits. The rubbed-out pencil decipherment still shows <em>la pre m i er e</em> over 11 70 82 34 29 40, so the table is letters and syllables in pairs. No key survives on DECODE, and homophonic and syllabic solvers checked on a control produce no French.',
          quote='&ldquo;la pre m i er e&rdquo; over 11 70 82 34 29 40',
          rights='Hauptstaatsarchiv Dresden, via DECODE'),
-    dict(slug='soglia1848', label='Soglia 1848', year='1848', y=1848, place='Rome &rarr; Innsbruck', st='solved', stt='read',
+    dict(slug='soglia1848', label='Soglia 1848', year='1848', y=1848, place='Rome &rarr; Innsbruck', st='solved', stt='solved',
          title='Cardinal Soglia to the nuncio Viale Prel&agrave; &mdash; a nomenclator with an alphabetical code',
          blurb='Rome, 15 June 1848: a ciphered dispatch to the nuncio at Innsbruck, intercepted at Turin and printed by Mazzini&rsquo;s <em>L&rsquo;Italia del Popolo</em> with a prize for its reader, posted on Cipherbrain in 2014 as unsolved. 5 is the word break, pairs of the other eight digits are letters and syllables, 8XXX is a one-part code in alphabetical order; a nomenclator annealer, checked first on a synthetic control, gave the first words. A counter-order: stay with the Emperor, do not ask for your passports. The nuncio had left Innsbruck the day before. Eleven code groups stay open.',
          quote='&ldquo;per nuove sopraggiunte circostanze Le partecipo [&hellip;] del (Padre) che Ella rimanga in Inspruck presso l&rsquo;(Imperatore)&rdquo;',
@@ -1032,7 +1037,7 @@ PAGES = [
          blurb='DECODE R1039, catalogued as an undeciphered letter of the new Dutch envoy to Catherine II, dated 4 October 1785. Its first two images are the Griffie&rsquo;s decipherment, headed &ldquo;Ont cyfferde Missive&rdquo; and keyed to the 424 cipher groups by margin numbers. Rechteren withheld his letter to Grand Duke Paul on De Swart&rsquo;s advice and, sure that all his post was opened, asked for couriers and replies in cipher. The pair is the best known-plaintext sample of the code still missing for De Swart&rsquo;s 1787 letter.',
          quote='&ldquo;De zekere overtuiging, waarin ik ben, dat alle mijne Brieven geopend worden&rdquo;',
          rights='Manuscript: Nationaal Archief, The Hague, via DECODE'),
-    dict(slug='vanreede1787', label='Van Reede 1787', year='1787&ndash;93', y=1787.9, place='Berlin &rarr; The Hague', st='solved', stt='read',
+    dict(slug='vanreede1787', label='Van Reede 1787', year='1787&ndash;93', y=1787.9, place='Berlin &rarr; The Hague', st='partial', stt='read in part',
          title='Van Reede from Berlin, 1787&ndash;1793 &mdash; the Grand Chiffre despatches read, the 1793 code open',
          blurb='DECODE lists three ciphered letters of the Dutch envoy at Berlin as non-decrypted. The French despatches of December 1787 and March 1788 are in William V&rsquo;s Grand Chiffre of 1782 (DECODE R1024), confirmed on a control letter with known plaintext; the digits the DECODE transcription left under one catch-all sign were resolved with a French language model. They report the King of Prussia&rsquo;s refusal to guarantee the Dutch possessions overseas in the 1788 alliance, and Russian and Austrian moves in the Turkish war. The 1793 letter to the Secret Committee is in another, marked three-digit code and stays unread.',
          quote='&ldquo;le Roi a dit qu&rsquo;il ne pouvoit pas garantir nos possessions d&rsquo;outre-mer&rdquo;',
@@ -1052,17 +1057,17 @@ PAGES = [
          blurb='DECODE R1942 is Hogendorp&rsquo;s ciphered dispatch no. 12, listed as non-decrypted with its subject unknown. Sillem&rsquo;s 1890 biography says that, after Vorontsov rebuffed him, Hogendorp sought to reach Alexander I through the Dutch-born Russian general Van Suchtelen; its footnote names the source as the ciphered dispatch of the same day, no. 12. The matching 1803 codebook is DECODE R1035. The subject is secure, but the 286 groups have not yet been aligned to an exact plaintext.',
          quote='&ldquo;Hogendorp vond zijne houding althans zo wonderlijk dat hij naar andere kanalen zocht&rdquo;',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1942'),
-    dict(slug='r1892', label='Orange prince 1795', year='c. 1795', y=1795.5, place='Germany &rarr; the Orange troops', st='solved', stt='read',
+    dict(slug='r1892', label='Orange prince 1795', year='c. 1795', y=1795.5, place='Germany &rarr; the Orange troops', st='partial', stt='read in part',
          title='A son of William V on the &eacute;migr&eacute; rassemblement, c. 1795 &mdash; the &ldquo;non-decrypted&rdquo; R1892 is a 6&times;6 digit square',
          blurb='DECODE R1892, two pages in the papers of Prince William V catalogued as an unsolved letter from an unknown writer. Every letter is a pair of digits 1&ndash;6 written one above the other; the square was recovered ciphertext-only from the Dutch postscript and read the French page unchanged. A son of the Stadholder tells the officer of the Dutch troops in Germany to accept it if General Dundas stops their pay or orders them to embark, and to explain their footing in British service. About thirty graphic word signs remain unread.',
          quote='&ldquo;il faudroit y souscrire et vous borner uniquement &agrave; t&acirc;cher d&rsquo;obtenir &hellip; une gratification&rdquo;',
          rights='Koninklijk Huisarchief, The Hague, via DECODE'),
-    dict(slug='r2242', label='Prince Frederick 1795', year='1795', y=1795.35, place='London &rarr; the Hereditary Prince', st='solved', stt='read',
+    dict(slug='r2242', label='Prince Frederick 1795', year='1795', y=1795.35, place='London &rarr; the Hereditary Prince', st='partial', stt='read in part',
          title='Prince Frederick of Orange to his brother, 7 May 1795 &mdash; the &ldquo;non-decrypted&rdquo; R2242 reads with the R1892 key',
          blurb='DECODE R2242, four pages in the papers of King William I catalogued as an unread numerical substitution. The digit pairs are the square recovered for R1892, and it reads them unchanged; page 1 carries its own clear Dutch under the cipher, which confirms the key and a dozen word signs. The cipher pages report the scattered &eacute;migr&eacute; troops, the Basel ratification and envoys sent to Paris. About twenty word signs remain unread.',
          quote='&ldquo;dan zoo zij geen Robespierismus durven te introduceeren&rdquo;',
          rights='Koninklijk Huisarchief, The Hague, via DECODE'),
-    dict(slug='hereditary1796', label='Hereditary Prince 1796', year='1796', y=1796.2, place='Berlin &rarr; Prince Frederik', st='solved', stt='read',
+    dict(slug='hereditary1796', label='Hereditary Prince 1796', year='1796', y=1796.2, place='Berlin &rarr; Prince Frederik', st='solved', stt='solved',
          title='The Hereditary Prince from Berlin, 12 March 1796 &mdash; the &ldquo;non-decrypted&rdquo; R2239 reads with a word list rebuilt from its sibling',
          blurb='DECODE R2239, three pages of numbers in the papers of William V, catalogued as an unsolved book cipher. Each group takes a whole entry of a numbered word list, chosen letters of it, or the entry cut at the front or back; the sibling R2237 carries its own contemporary decipherment, and aligning the two rebuilt the list. It read 70% of the letter; the body then proved to be printed by Colenbrander in 1906, and with that crib the unprinted opening was read: the conference between Haugwitz and Lord Elgin on a Prussian d&eacute;marche in Paris for the Orange restoration.',
          quote='&ldquo;le comte Haugwitz me dit avant-hier au bal du Roi qu&rsquo;il viendroit un de ces jours chez moi pour me parler sur cet objet&rdquo;',
@@ -1096,7 +1101,7 @@ PAGES = [
          blurb='DECODE R1941 holds a letter and its annex in a plain numerical code reaching at least 1339: 303 groups, 222 distinct. The archive inventory places it with the commissioners for the districts ceded around Zevenaar, writing from D&uuml;sseldorf in the Grand Duchy of Berg. No key is on DECODE, Croiset&rsquo;s 1803 book does not fit, and Colenbrander does not print it.',
          quote='&ldquo;602 441 373&rdquo;, three times: probably a name or title',
          rights='Nationaal Archief, via DECODE'),
-    dict(slug='castelcicala1816', label='Castelcicala 1816&ndash;23', year='1816&ndash;1823', y=1819.5, place='London, Paris &rarr; Naples', st='solved', stt='read',
+    dict(slug='castelcicala1816', label='Castelcicala 1816&ndash;23', year='1816&ndash;1823', y=1819.5, place='London, Paris &rarr; Naples', st='partial', stt='read in part',
          title='Castelcicala to the Marchese di Circello and to Medici, 1816&ndash;1823 &mdash; the code rebuilt from four glossed letters',
          blurb='Twenty-four ciphered despatches of the Neapolitan ambassador Fabrizio Ruffo, principe di Castelcicala, in the Naples archive (DECODE R9553&ndash;R9589), all in one syllabic, homophonic code of about 2,450 groups. &ldquo;Marchese di Ciscello&rdquo; is the recipient, Circello, misread. Contemporary decipherments on four letters of 1816 and 1823 gave 162 values and 45% of the groups; no letter reads through yet.',
          quote='&ldquo;La Francia desidera il Cardinale Castiglione per Papa&rdquo; (R9571, 8 September 1823)',
@@ -1128,16 +1133,16 @@ PAGES = [
          title='The Swatow telegram to Sun Yat-sen &mdash; a systematic code condenser',
          blurb='Twenty consonants, five vowels, ten-letter words: a code condenser over the standard Chinese telegraph code. The family of systematic tables is small enough to brute-force, and one key reads 41 characters: Mo Qingyu&rsquo;s independence at Chaozhou and Sun&rsquo;s men ordered out of the Swatow garrison headquarters, 3 April 1916.',
          quote='潮城由莫擎宇獨立。我軍亦光復汕頭。後莫率大隊來，令我退出鎮守府&hellip;'),
-    dict(slug='sunintercepts', label='Sun Yat-sen wires', year='1916&ndash;17', y=1916.3, place='Shanghai &harr; Tokyo', st='solved', stt='read',
+    dict(slug='sunintercepts', label='Sun Yat-sen wires', year='1916&ndash;17', y=1916.3, place='Shanghai &harr; Tokyo', st='solved', stt='solved',
          title='Sun Yat-sen&rsquo;s circle on the wire, 1916&ndash;17 &mdash; the intercepts the Foreign Ministry could not read',
          blurb='The Ministry of Communications copied every telegram to or from Sun Yat-sen&rsquo;s people for the Japanese Foreign Ministry, which filed them unread. Fifty-six condenser telegrams of March&ndash;May 1916 read under five more keys of the Swatow telegram&rsquo;s family, each accepted only when it read telegrams it was not fitted to, with rhyme-day dates as an independent check. They cover the monarchy cancelled, money wired via Taiwan, the price of a Wuhan rising, Chen Qimei&rsquo;s murder, and the Foreign Ministry&rsquo;s own advice relayed back to Sun. Also a Hankow +111 telegram and Sun &harr; Dai Jitao, March 1917.',
          quote='克強言外務省意先生宜緩赴青島。 &middot; Tokyo to Shanghai, 26 May 1916',
          rights='Telegram images: JACAR'),
-    dict(slug='huangxing', label='Huang Xing', year='1916', y=1916.5, place='China / Japan', st='solved', stt='scheme found',
+    dict(slug='huangxing', label='Huang Xing', year='1916', y=1916.5, place='China / Japan', st='solved', stt='solved',
          title='Huang Xing to Lin Hu and Li Genyuan &mdash; a kana condenser',
          blurb='Listed as &ldquo;solved but specific scheme unknown&rdquo;: the Japanese Foreign Ministry filed a decode nobody could read, and an encipherment nobody could name. Both recovered, and then corrected from the frames: three kana carry one character deterministically from a private code, a superfluous kana had hidden the repeats, and the vowel is not free.',
          quote='護國軍能速入湘贛甚好。章行嚴何日東渡？速令出發，並望預電。興　徑'),
-    dict(slug='adfgvx', label='ADFGVX', year='1918', y=1918, place='Eastern Front', st='partial', stt='9 of 22 read',
+    dict(slug='adfgvx', label='ADFGVX', year='1918', y=1918, place='Eastern Front', st='found', stt='9 of 22 read',
          title='The ADFGVX residue of 1918 &mdash; twenty-two mutilated messages against known keys',
          blurb='Schmeh&rsquo;s Top 50 lists twenty-two German radio messages of November 1918 as unsolved, but the keys were published in 2017 and the messages are garbled in transmission. The comment thread that read nine of them is tabulated for the first time, Lasry&rsquo;s unpublished CHI key is rebuilt, his readers&rsquo; method re-derives the solved pages blind, and the ten never read resist every key and a key-free attack that fails its own control.',
          quote='9 solved &middot; 3 partial &middot; 10 open &middot; best open score &minus;6.9 against &minus;4.4 to &minus;6.0 solved'),
@@ -1237,7 +1242,7 @@ IMAGES['r1942'] = ('r1942_lead.jpg', 'Hogendorp&rsquo;s ciphered dispatch no. 12
 
 SURVEYS = ('famous', 'solved')
 # chip value on writeups.html, menu label, badge class, predicate
-GROUPS = [('solved', 'Solved', 'solved', lambda p: p['st'] == 'solved'),
+GROUPS = [('solved', 'Solved or read', 'solved', lambda p: p['st'] == 'solved'),
           ('found', 'Explained', 'found', lambda p: p['st'] == 'found'),
           ('partial', 'Partly read', 'partial', lambda p: p['st'] == 'partial' and p['slug'] not in SURVEYS),
           ('stuck', 'Attempted, not solved', 'stuck', lambda p: p['st'] == 'stuck'),
@@ -1295,10 +1300,10 @@ SEARCH_HTML = (
 # "Where" column links to a site page is a write-up (checked against PAGES), any other row is notes only.
 PERIODS = [('1500s', 'to 1599', lambda y: y < 1600), ('1600s', '1600s', lambda y: 1600 <= y < 1700),
            ('1800s', '1700s and 1800s', lambda y: 1700 <= y < 1900), ('1900s', '1900s', lambda y: 1900 <= y < 9000)]
-KINDS = [('solved', 'solved'), ('found', 'explained or found solved'), ('partial', 'partly read'),
+KINDS = [('solved', 'solved or read'), ('found', 'explained or found solved'), ('partial', 'partly read'),
          ('stuck', 'attempted, not solved'), ('offline', 'waiting on an archive'), ('survey', 'survey')]
 # README section heading, status class, badge text
-README_SECTIONS = [('### Solved', 'solved', 'solved'), ('### Explained', 'found', 'explained'),
+README_SECTIONS = [('### Solved', 'solved', 'solved'), ('### Read with', 'solved', 'read'), ('### Explained', 'found', 'explained'),
                    ('### Partly read', 'partial', 'partly read'), ('### Found already solved', 'found', 'found solved'),
                    ('### Attempted and closed', 'stuck', 'attempted'), ('### Offline only', 'offline', 'offline only'),
                    ('### In progress', 'partial', 'in progress')]
@@ -1439,7 +1444,7 @@ def when_html(p, cls='when'):
     """The short datestamp shown on the index cards and list rows."""
     rec = DATES['pages'].get(p['slug'])
     if not rec: return ''
-    verb = 'posted' if p['slug'] in ('famous', 'solved') else VERB.get(p['st'], 'posted')
+    verb = 'posted' if p['slug'] in ('famous', 'solved') else verb_of(p)
     return (f'<time class="{cls}" datetime="{rec["first"]}" '
             f'title="{verb} {fmt_date(rec["first"])}, updated {fmt_date(rec["updated"])}">'
             f'{VERB_SHORT.get(p["st"], verb)} {fmt_date(rec["first"], short=True)}</time>')
@@ -1622,7 +1627,7 @@ def process(path):
     # the wax seal pressed into a write-up's hero: its outcome, in the colour of its badge
     s = re.sub(r'\n?<div class="seal [a-z]+" aria-hidden="true">.*?</div>', '', s)
     if page and page['slug'] not in SURVEYS and '<section class="hero">' in s:
-        word = plain(page['stt']) if len(plain(page['stt'])) <= 14 else VERB[page['st']]
+        word = plain(page['stt']) if len(plain(page['stt'])) <= 14 else verb_of(page)
         seal = f'\n<div class="seal {page["st"]}" aria-hidden="true"><span>{html.escape(word)}</span></div>'
         s = re.sub(r'(<section class="hero">.*?)(\n</section>)', lambda m: m.group(1) + seal + m.group(2), s, count=1, flags=re.S)
     # "Watch it decipher": a page with docs/reveal/<slug>.json and no reveal of its own gets one, once, right after the h2
