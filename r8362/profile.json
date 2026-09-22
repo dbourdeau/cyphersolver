@@ -1,0 +1,126 @@
+{
+ "schema_version": 1,
+ "target": "r8362",
+ "title": "Walsingham letter-book, 24 Jan 1572/3: Burghley to Walsingham, clear letter with two boxed cover-name markers, BL Harley MS 260 f. 395 (DECODE R8362)",
+ "documents": [
+  {
+   "id": "f395",
+   "shelfmark": "BL Harley MS 260 f. 395r; DECODE R8362",
+   "date": "1573-01-24",
+   "year": 1573,
+   "country": "England/France",
+   "route": "Westminster -> Paris (Burghley -> Walsingham)",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "The letter is clear; printed in Digges, The Compleat Ambassador (1655)."
+   },
+   "length": {
+    "tokens": 2,
+    "distinct": 1,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE scan IMG_R8362_I38624_P",
+    "image_quality": "good",
+    "notes": "Two boxed 9s, after the cover-names Lyons and Roome."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "No substitution text: two boxed-digit markers after cover-names (place names for persons) in a clear letter.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 1,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Copy in a letter-book; the codes were copied from the sent letters."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Digges 1655 prints the clear letter",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "image cropping",
+   "print search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Downloaded the R8362 image with the DECODE cookie (decrypt-custom filesrv, _P.jpg).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Read the page: clear Burghley letter, 24 Jan 1572/3; only boxed 9 after Lyons and Roome.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Found the letter in Digges 1655 (digges1655.txt l. 24938).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Boxed digit after a word = cover-name marker (R8361 digges_codes inventory); nothing to decipher.",
+   "result": "worked",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "not a cipher",
+  "fraction_read": 1.0,
+  "verification": [
+   "historical consistency"
+  ],
+  "notes": "Clear letter; the two cipher marks are cover-name markers. Identity behind Lyons/Roome not established.",
+  "gaps": [
+   {
+    "item": "cover-names Lyons, Roome",
+    "blocker": "no-key-material",
+    "detail": "not glossed anywhere"
+   }
+  ]
+ }
+}
