@@ -56,6 +56,8 @@ S = [
     ("solver", "P1 re-solved from the second pass in Latin, Italian and modern Italian: no reading.", "failed"),
     ("statistics", "P1: digraphic test (sign-pair IC 0.005, no), periodicity test (column IC flat for periods 2-8, not polyalphabetic), vowel/consonant alternation 0.713 above all 200 shuffles (linear text, not transposed).", "worked"),
     ("solver", "P1 annealed in Spanish, Catalan, French, German, Portuguese, and with order-3 Latin/Italian models over 150 restarts: no reading.", "failed"),
+    ("sibling key", "Opened DECODE R1855 (Modena Este keys, incl. Malatesta Novello 1441) and R1852 (Florence Dieci keys 1424-32): sign sets differ from P1, no fit.", "failed"),
+    ("solver", "P1 syllable-aware anneal (each sign a letter, one of 27 common Latin/Italian syllables or word signs, or null; frequency prior): no reading.", "failed"),
 ]
 
 prof = {
