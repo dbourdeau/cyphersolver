@@ -205,3 +205,15 @@ Outcome: read at the time and calendared (Tuke's decipherments; L&P IV 2173, 302
 and 109. The new work is a verbatim reading of the f. 245 blocks (confirming Tuke) and of 90.6% of the 20 April
 duplicate, whose decipherment is not online. Closing the last 9.4% would need Tuke's decipherment of the 8 April
 original at TNA (physical access). Closed, no write-up; catalogue 101 removed 21 Sept 2026; DECODE corrections queued.
+
+## Catalogue 114: R8556 (Vesp. C IV f. 161, 1527)
+
+Catalogue no. 114 ("Bpp. Worecestr, Ed. Lee Eleem. (Hispania) to unknown recipient", Vesp. C IV f. 161, old foliation
+149, DECODE R8556, 2 pp.). Both images downloaded with the DECODE cookie and read 22 Sept 2026 (git-ignored in
+img8556/). It is a **clear** English leaf in a secretary hand, headed "Hispania 1527", with no cipher sign on either
+page. It continues R8552-R8555 (ff. 157-160) of the joint despatch of Ghinucci, Lee and Poyntz to Wolsey, Valladolid
+17 July 1527 (L&P IV no. 3271): the bishop of Worcester's talk with the Emperor, the council's meeting with the French
+orator in Mons. de Nassau's chamber at eight in the morning, the Emperor's peace terms, the offers made by Secretary
+Tamarlet, the Viceroy and Bayard, the President (of Bordeaux) and Mons. de Praet, "ij millions qualefied for dayes of
+paye", and the treaty of Madrid. "Eleem." is the "Eleemosynarius" (almoner) of Lee's title, not a person.
+Closed as no cipher and removed from the catalogue; DECODE correction queued (N/A, recipient Wolsey).
