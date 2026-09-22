@@ -772,3 +772,33 @@ ul.list.cattop .pr{font-family:var(--display);font-size:1.15rem;color:var(--gold
 .art.solveart .bn-solve .bl{top:0}
 .art.solveart .bts{flex-wrap:wrap;mask-image:none}
 @media (prefers-reduced-motion: reduce){.bt.hit{animation:none}}
+
+/* ---------------------------------------------------------------- a sealed letter: deciphers only when the seal is broken */
+.cr-t.wb{min-width:.7rem;padding:0;visibility:hidden}
+.creveal.sealed .cr-t:not(.plain) .p{opacity:0}
+.creveal.sealed .cr-play,.creveal.sealed .cr-mode{visibility:hidden}
+.creveal .cr-tiles{position:relative}
+.cr-gate{display:flex;justify-content:center;margin:1.3rem 0 .5rem}
+.cr-break,.cr-break:hover,.cr-break:focus{display:flex;flex-direction:column;align-items:center;gap:.7rem;background:none;border:0;box-shadow:none;transform:none;padding:.4rem 1rem;cursor:pointer;color:var(--gold2)}
+.cr-break .cr-lbl{font:600 .78rem var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:.45rem 1rem;border-radius:999px;border:1px solid var(--gold);
+  background:color-mix(in srgb,var(--gold) 12%,transparent);transition:background .2s,color .2s,opacity .3s}
+.cr-break:hover .cr-lbl,.cr-break:focus-visible .cr-lbl{background:var(--gold);color:var(--gold-ink)}
+.cr-seal{position:relative;width:5.2rem;height:5.2rem;filter:drop-shadow(0 .35rem .5rem rgba(0,0,0,.4));transition:transform .25s}
+.cr-break:hover .cr-seal{transform:rotate(-8deg) scale(1.06)}
+.cr-seal i{position:absolute;inset:0;border-radius:51% 47% 53% 46%/48% 54% 45% 52%;
+  background:radial-gradient(circle at 36% 30%,#e0695b 0 9%,#9b2a22 45%,#5a120d 100%);
+  box-shadow:inset 0 0 0 .38rem #7a1d16,inset 0 0 0 .46rem #c0544a;transition:transform .8s cubic-bezier(.5,-.3,.7,1),opacity .8s}
+.cr-seal i:first-child{clip-path:polygon(0 0,54% 0,44% 22%,58% 40%,42% 60%,56% 78%,46% 100%,0 100%)}
+.cr-seal i:last-child{clip-path:polygon(54% 0,100% 0,100% 100%,46% 100%,56% 78%,42% 60%,58% 40%,44% 22%)}
+.cr-seal::after{content:"✦";position:absolute;inset:0;display:grid;place-items:center;font-size:1.6rem;color:rgba(60,8,5,.7);text-shadow:0 1px 0 rgba(255,190,170,.3);transition:opacity .3s}
+.creveal.breaking .cr-seal::after{opacity:0}
+.creveal.breaking .cr-seal i:first-child{transform:translate(-2.2rem,1.4rem) rotate(-38deg);opacity:0}
+.creveal.breaking .cr-seal i:last-child{transform:translate(2.2rem,1.6rem) rotate(34deg);opacity:0}
+.creveal.breaking .cr-lbl{opacity:0}
+.creveal.breaking .cr-tiles::after{content:"";position:absolute;inset:-.4rem 0;pointer-events:none;
+  background:linear-gradient(100deg,transparent 30%,color-mix(in srgb,var(--gold) 45%,transparent) 50%,transparent 70%);background-size:250% 100%;
+  animation:crsweep .9s ease-in-out forwards;mix-blend-mode:screen}
+@keyframes crsweep{from{background-position:120% 0}to{background-position:-20% 0}}
+.creveal.unsealed .cr-t.done:not(.plain):not(.wb){animation:crflip .55s cubic-bezier(.2,.8,.3,1.2)}
+@keyframes crflip{0%{transform:rotateX(90deg);box-shadow:0 0 0 transparent}55%{transform:rotateX(-12deg);box-shadow:0 0 14px color-mix(in srgb,var(--gold) 70%,transparent);border-color:var(--gold)}100%{transform:none}}
+@media (prefers-reduced-motion: reduce){.cr-seal i,.creveal.breaking .cr-tiles::after,.creveal.unsealed .cr-t.done{transition:none;animation:none}}

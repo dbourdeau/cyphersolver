@@ -68,7 +68,7 @@
       const me=++run; fig.classList.remove('cipher'); fig.querySelector('.cr-mode').setAttribute('aria-pressed','false');
       els.forEach((el,i)=>{ el.classList.remove('done'); el._p.textContent=toks[i].cls==='plain'?toks[i].p:' '; });
       if(still){ els.forEach((el,i)=>settle(el,toks[i])); bar.style.width='100%'; return; }
-      const n=els.length, step=Math.max(10,Math.min(70,3400/n)), lag=6, t0=performance.now();
+      const n=els.length, step=fig.dataset.manual?Math.max(35,Math.min(110,5200/n)):Math.max(10,Math.min(70,3400/n)), lag=6, t0=performance.now();
       function frame(now){
         if(me!==run) return;
         const k=Math.floor((now-t0)/step); let left=false;
@@ -82,11 +82,22 @@
     }
     fig.querySelector('.cr-play').addEventListener('click',play);
     fig.querySelector('.cr-mode').addEventListener('click',e=>{ const v=fig.classList.toggle('cipher'); e.currentTarget.setAttribute('aria-pressed',v); });
+    if(fig.dataset.manual){      // a letter someone sent: it stays sealed until the reader breaks the seal
+      els.forEach((el,i)=>{ el._p.textContent=toks[i].cls==='plain'?toks[i].p:' '; });
+      fig.classList.add('sealed');
+      const gate=document.createElement('div'); gate.className='cr-gate';
+      gate.innerHTML='<button type="button" class="cr-break"><span class="cr-seal" aria-hidden="true"><i></i><i></i></span><span class="cr-lbl">Break the seal and decipher</span></button>';
+      fig.querySelector('.cr-tiles').after(gate);
+      gate.querySelector('button').addEventListener('click',()=>{
+        fig.classList.add('breaking');
+        setTimeout(()=>{ gate.remove(); fig.classList.remove('sealed','breaking'); fig.classList.add('unsealed'); play(); },still?0:900);
+      },{once:true});
+    }
     return play;
   }
 
   const io='IntersectionObserver' in window ? new IntersectionObserver(es=>es.forEach(e=>{
     if(e.isIntersecting && e.target._play){ io.unobserve(e.target); e.target._play(); } }),{threshold:.3}) : null;
-  figs.forEach(fig=>fetch(fig.dataset.src).then(r=>r.json()).then(d=>{ fig._play=build(fig,d); if(io) io.observe(fig); else fig._play(); })
+  figs.forEach(fig=>fetch(fig.dataset.src).then(r=>r.json()).then(d=>{ fig._play=build(fig,d); if(fig.dataset.manual) return; if(io) io.observe(fig); else fig._play(); })
     .catch(()=>{ fig.innerHTML='<p class="cr-info">The interactive decipherment could not be loaded.</p>'; }));
 })();

@@ -16,7 +16,7 @@
     let i=0;
     while(i<t.length){
       const c=t[i];
-      if(/\s/.test(c)){ if(key.kind==='pigpen' && out.length && out[out.length-1].g!=='|') out.push({g:'|',p:' ',cls:'null'}); i++; continue; }
+      if(/\s/.test(c)){ if(out.length && out[out.length-1].g!=='|'){ if(key.kind==='pigpen') out.push({g:'|',p:' ',cls:'null'}); else out[out.length-1].wb=true; } i++; continue; }
       // whole-word codes (de, la, le roi, Monsieur...) only at word boundaries
       const ph=phrases.find(p=>t.startsWith(p,i) && (i===0||/[^a-z]/.test(t[i-1])) && !/[a-z]/.test(t[i+p.length]||''));
       if(ph){ out.push({g:pick(key.enc[ph]),p:ph,cls:ph.length>2?'code':''}); i+=ph.length; continue; }
@@ -35,6 +35,7 @@
     const parts=Object.keys(key.enc).map(p=>p.toLowerCase()).filter(p=>/^[a-z]+$/.test(p)).sort((a,b)=>b.length-a.length);
     const out=[];
     for(const w of t.match(/[a-z]+|[0-9]+/g)||[]){
+      if(out.length) out[out.length-1].wb=true;    // the word before this one ended there
       if(codeIdx.has(w)){ out.push({g:pick(codeIdx.get(w)),p:w}); continue; }
       // cheapest spelling by dynamic programming over the syllables
       const best=new Array(w.length+1).fill(null); best[0]=[];
@@ -167,7 +168,7 @@
     // lay the groups out first to know the height
     const lines=[[]]; let x=0;
     for(const t of tokens){
-      const txt=t.g||t.p, w=key.kind==='pigpen'?(t.g==='|'?26:34):ctx.measureText(txt).width + (t.cls==='plain'?4:0);
+      const txt=t.g||t.p, w=key.kind==='pigpen'&&t.cls!=='plain'?(t.g==='|'?26:34):ctx.measureText(txt).width + (t.cls==='plain'?4:0);
       if(t.g==='|' && x===0) continue;
       if(x+w>W-2*M && lines[lines.length-1].length){ lines.push([]); x=0; if(t.g==='|') continue; }
       lines[lines.length-1].push({t,w,x}); x+=w+gap;
@@ -184,8 +185,8 @@
       for(const {t,w,x} of line){
         const jx=(rand()-.5)*2, jy=(rand()-.5)*3;
         ctx.globalAlpha=.78+rand()*.22;
-        if(key.kind==='pigpen'){ if(t.g!=='|'){ ctx.lineWidth=2.8; ctx.lineCap='round'; pigpen(M+x+jx,y+jy,30,t.g); } }
-        else{ ctx.font=(t.cls==='plain'?'italic ':'')+`${fs}px "IM Fell English", Georgia, serif`; ctx.fillText(t.g||t.p,M+x+jx,y+jy); }
+        if(key.kind==='pigpen' && t.cls!=='plain'){ if(t.g!=='|'){ ctx.lineWidth=2.8; ctx.lineCap='round'; pigpen(M+x+jx,y+jy,30,t.g); } }
+        else{ ctx.font=(t.cls==='plain'?'italic ':'')+`${fs||40}px "IM Fell English", Georgia, serif`; ctx.fillText(t.g||t.p,M+x+jx,y+jy); }
       }
       y+=lh;
     }
@@ -221,8 +222,10 @@
   const say=t=>{ $('status').textContent=t; setTimeout(()=>{ if($('status').textContent===t) $('status').textContent=''; },4000); };
   $('dl').addEventListener('click',()=>cv.toBlob(b=>{ const a=document.createElement('a'); a.href=URL.createObjectURL(b);
     a.download=`secret-letter-${key.id}.png`; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),4000); say('Letter saved.'); },'image/png'));
-  // the sealed link: key, groups (clear words prefixed with ~), signature; never the plaintext
-  const pack=()=>tokens.map(t=>t.g==='|'?'|':t.g||('~'+t.p)).join('.');
+  // the sealed link: key, groups (clear words prefixed with ~), word breaks (/), signature; never the plaintext.
+  // Groups are joined with _, which no key uses (pigpen signs carry dots and colons, Rommel's figures commas);
+  // links made before this change joined them with . and are still read.
+  const pack=()=>tokens.flatMap(t=>t.g==='|'?['/']:[t.g||('~'+t.p)].concat(t.wb?['/']:[])).join('_');
   $('link').addEventListener('click',async()=>{
     const url=`${location.origin}${location.pathname}#k=${key.id}&c=${encodeURIComponent(pack())}`+(sig.value.trim()?`&s=${encodeURIComponent(sig.value.trim())}`:'')+(to.value.trim()?`&t=${encodeURIComponent(to.value.trim())}`:'');
     try{ await navigator.clipboard.writeText(url); say('Sealed link copied. Only the ciphertext travels in it.'); }catch(e){ prompt('Copy this link',url); }
@@ -231,16 +234,20 @@
   // ---------------------------------------------------------------- receiving a sealed link
   const h=new URLSearchParams(location.hash.slice(1));
   if(h.get('k') && h.get('c') && byId[h.get('k')]){
-    const k=byId[h.get('k')], c=h.get('c').split('.'), s=h.get('s')||'', tt=h.get('t')||'';
-    const tk=c.map(g=>g==='|'?{g:'|',p:' ',cls:'null'}:g[0]==='~'?{g:'',p:g.slice(1),cls:'plain'}:{g,p:k.dec[g]??'?',cls:k.dec[g]?'':'unk'})
-      .filter(t=>!(k.kind==='pigpen' && t.g==='|'));
-    key=k; tokens=c.map(g=>g==='|'?{g:'|',p:' ',cls:'null'}:g[0]==='~'?{g:'',p:g.slice(1),cls:'plain'}:{g,p:k.dec[g]||'?'});
+    const raw=h.get('c'), k=byId[h.get('k')], s=h.get('s')||'', tt=h.get('t')||'';
+    const c=(raw.includes('_')||!raw.includes('.')?raw.split('_'):raw.split('.')).filter(g=>g!=='');
+    const gap=g=>g==='/'||g==='|';
+    // the code's own capitals (Et, King, I) are not the writer's: shown in lower case
+    const val=g=>{ const v=k.dec[g]; return v==null?null:v.toLowerCase(); };
+    const tk=c.map(g=>gap(g)?{g:'',p:' ',cls:'null wb'}:g[0]==='~'?{g:'',p:g.slice(1),cls:'plain'}:{g,p:val(g)??'?',cls:val(g)!=null?'':'unk'});
+    key=k; tokens=c.filter(g=>k.kind==='pigpen'||!gap(g))
+      .map(g=>gap(g)?{g:'|',p:' ',cls:'null'}:g[0]==='~'?{g:'',p:g.slice(1),cls:'plain'}:{g,p:val(g)||'?'});
     $('recv').hidden=false;
     $('recv-h').textContent=(s?`${s} has sent `:'Someone has sent ')+(tt?`${tt} a letter in cipher`:'you a letter in cipher');
-    $('recv-p').innerHTML=`It is written in the cipher of ${k.who}, ${k.year}. Scroll down and it will decipher itself with the key rebuilt on <a href="${k.slug}.html">that write-up</a>; hover a group to see every place it recurs. Then write one back.`;
+    $('recv-p').innerHTML=`It is written in the cipher of ${k.who}, ${k.year}. Break the seal below and it will decipher with the key rebuilt on <a href="${k.slug}.html">that write-up</a>; hover a group to see every place it recurs. Then write one back.`;
     const data={title:`A letter in the cipher of ${k.who.split(',')[0]}`,unit:k.kind==='code'?'code groups':k.kind==='pigpen'?'signs':'figures',
       caption:`Sent with a sealed link from ${SITE}/secret.html.`,key_note:k.note,tokens:tk};
-    const fig=$('recv-reveal'); fig.dataset.src=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));
+    const fig=$('recv-reveal'); fig.dataset.manual='1'; fig.dataset.src=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));
     const s2=document.createElement('script'); s2.src='cipher-reveal.js?again'; document.body.appendChild(s2);
     msg.value=''; sig.value=''; to.value='';
     btns.forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===key.id));
