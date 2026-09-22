@@ -1,0 +1,157 @@
+{
+ "schema_version": 1,
+ "target": "jantini1517",
+ "title": "Benedetto Fantini (DECODE 'Jantini'), Buda and Eger, to the Este court, 1517-1518 (ASMo, Ambasciatori, Ungheria b. 4, Fantini nos. 5-6; DECODE R1126, R1127; catalogue 156)",
+ "documents": [
+  {
+   "id": "R1126",
+   "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Benedetto Fantini no. 5 (DECODE R1126; Vestigia 1849)",
+   "date": "1517",
+   "year": 1517,
+   "country": "Ferrara",
+   "route": "Buda -> Ferrara (recipient unidentified)",
+   "language": "Italian",
+   "pages": 6,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 581,
+    "distinct": 137,
+    "unit": "symbols",
+    "measured": true,
+    "file": "c1126_p1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images R1126 P1-P6; column transcription of p. 1 only (18 cipher lines); p. 2 (about 26 lines) not transcribed",
+    "image_quality": "fair",
+    "notes": "Upper/base notation per column. One reader; 137 distinct labels in 581 columns shows the labels are not yet consistent."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "R1127",
+   "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Benedetto Fantini no. 6 (DECODE R1127; Vestigia 1851)",
+   "date": "6 Mar 1518",
+   "year": 1518,
+   "country": "Ferrara",
+   "route": "Eger -> Ferrara (recipient unidentified)",
+   "language": "Italian",
+   "pages": 4,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "not transcribed",
+    "image_quality": "poor"
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Two-tier signs (a base stroke 7, m, n, g, y, L-bracket with a small sign above or inside), resembling Caprile's 1519 cipher but with a different sign inventory; the unit (letter, syllable or word) is not established.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 137,
+  "diacritics": {
+   "used": true,
+   "note": "The small sign above each base stroke is part of the sign; how it combines with the base is not established."
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Caprile 1519 two-tier cipher (caprile1519, itself unbuilt) compared: sign inventory differs"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "No decipherment or clear copy in the Vestigia file (Fantini nos. 1-7); none found in print",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Selected the target; the DECODE session cookie was supplied earlier.",
+  "tools": [
+   "DECODE authenticated image download",
+   "Vestigia public API",
+   "lang it-cinquecento 4-gram simulated annealing",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched DECODE R1126/R1127 metadata and images; Vestigia search found Fantini's whole file (V1846-V1852), all images fetched.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "what": "Sender identified as Benedetto Fantini (DECODE misreads 'Jantini'), Ferrarese agent in Ippolito d'Este's household; only nos. 5 and 6 contain cipher, and no decipherment is in the file.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Column transcription (upper sign / base stroke) of R1126 p. 1, 18 cipher lines, 581 columns.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "what": "Homophonic anneal (it-cinquecento 4-grams, unigram penalty) over p. 1 columns, with the frequent 7g/7y signs kept, merged, or treated as nulls: 6 restarts x 60k moves each.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "what": "Statistics: the three-column run 7 / g / m-with-b recurs 14 times and 7g or 7y occurs 45 times in 581 columns, too often for one letter per column; 7g and 7y behave like word signs. The unit of the cipher is unresolved.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Web search and the Bonzagni 1512 and Caprile 1519 Este-Hungary siblings for a printed decipherment or shared key: Bonzagni is a different alphabet, Caprile's 1519 key is itself not built.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [],
+  "notes": "Attempted, open. Needs a consistent second transcription of both cipher pages of R1126 (about 1,800 columns) and a decision on the cipher unit before a ciphertext-only attack is meaningful; no key or decipherment known."
+ }
+}
