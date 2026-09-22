@@ -95,14 +95,14 @@ Lepage&rsquo;s 1864 edition of Charles III&rsquo;s League correspondence stops i
 resolves the block into 21 line bands &mdash; but the clustering was unnecessary. <strong>The glyphs are ordinary cursive minuscules</strong>, the same letters as the clear text, some with dots or a bar, with a
 handful of special signs, and at one and a half times native they can be read straight off the page. The contributor&rsquo;s eye transcription recorded 1,109 tokens: 1,071 letter symbols in 44 distinct forms,
 and 38 nomenclator figures. Its letter frequencies match French rank for rank through fourteen places, and its coincidence statistics sit between a monoalphabetic and a fully homophonic system.</p>
-<figure><img src="lorraine1592_f109_cipher.jpg" alt="A line of the cipher of BnF Français 3621 folio 109, showing discrete cursive letterforms rather than geometric symbols" loading="lazy">
-<figcaption>BnF Fran&ccedil;ais 3621 f. 109, the opening of the fifteenth line (L14 in the re-read). The first eight forms, <i>f x i n e t i g</i>, spell <em>chasteau</em>. Biblioth&egrave;que nationale de France.</figcaption></figure>
+<figure data-credit="Biblioth&egrave;que nationale de France, fr. 3621 f. 109, via Gallica btv1b52524472n view 227"><img src="lorraine1592_f109_cipher.jpg" alt="A line of the cipher of BnF Français 3621 folio 109, showing discrete cursive letterforms rather than geometric symbols" loading="lazy">
+<figcaption>BnF Fran&ccedil;ais 3621 f. 109, the opening of the fifteenth line (L14 in the re-read). The first eight forms, <i>f x i n e t i g</i>, spell <em>chasteau</em>. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3621 f. 109, via Gallica btv1b52524472n view 227.</span></figcaption></figure>
 <p>The random-move annealer of the earlier attempt was shown, on a control with a known key of the same size, to recover only 37&ndash;56% of letters at &minus;2.64 per character while the true key scored &minus;1.62:
 the failure was in the search. A steepest-ascent sweep, kicked out of local optima, recovers known keys at 98.7&ndash;99.6%. Two traps were closed on the way (free nulls that delete every hard position, and a
 degenerate <em>etenete&hellip;</em> key). The key it found was checked against the manuscript, not the model: the eight-form group it reads <strong>chasteau</strong> occurs twice in the cipher, and
 <strong>Chasteauvillain stands in the clear on the same page</strong>, in the body and in the postscript.</p>
-<figure><img src="lorraine1592_f109_clear.jpg" alt="A line of clear French on the same page reading: aussi si dieu nous fault la grace de prendre Chasteau" loading="lazy">
-<figcaption>The same page, in clear: &ldquo;aussi si dieu nous fault la grace de prendre Chasteau[villain]&rdquo;. Biblioth&egrave;que nationale de France.</figcaption></figure>
+<figure data-credit="Biblioth&egrave;que nationale de France, fr. 3621 f. 109, via Gallica btv1b52524472n view 227"><img src="lorraine1592_f109_clear.jpg" alt="A line of clear French on the same page reading: aussi si dieu nous fault la grace de prendre Chasteau" loading="lazy">
+<figcaption>The same page, in clear: &ldquo;aussi si dieu nous fault la grace de prendre Chasteau[villain]&rdquo;. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3621 f. 109, via Gallica btv1b52524472n view 227.</span></figcaption></figure>
 <p>Because a 4-gram search over 44 free parameters could manufacture French from nothing, the pipeline was also run unchanged on shuffled nulls of the same symbols and frequencies, and scored blind:</p>
 <table>
 <thead><tr><th></th><th>4-gram score</th><th>Dictionary coverage</th><th>Distinct words of 6+ letters</th></tr></thead>

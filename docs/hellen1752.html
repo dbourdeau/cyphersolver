@@ -7,7 +7,7 @@
 <meta name="description" content="An open investigation of Hellen's intercepted cipher letters to Frederick II. A transcription audit corrects the inputs; digitized decipherments in Fagel 5206 offer an untested lead for 1752. No plaintext or key has been recovered.">
 <link rel="stylesheet" href="style.css?v=20260921e">
 <meta name="date" content="2026-09-20">
-<meta name="last-modified" content="2026-09-20">
+<meta name="last-modified" content="2026-09-22">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -45,7 +45,7 @@
 <div class="parties"><figure class="party recipient"><img src="portrait_frederick-ii.jpg" alt="Frederick II" title="Frederick II: Portrait, Anton Graff. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Frederick II</figcaption></figure></div><!-- /parties -->
 <p class="sub">KHA, Prins Willem V, inventory 196 · seven catalogue targets and one related letter · French</p>
 <p class="sub">The transcription has been audited. An archive collection of deciphered letters offers a lead for 1752, but no matching decipherment has yet been retrieved.</p>
-<p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-20">20 September 2026</time></p>
+<p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-20">20 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
 <div class="seal stuck" aria-hidden="true"><span>attempted</span></div>
 </section>
 <main>
@@ -71,6 +71,7 @@
 <h2 id="audit"><span class="num">02</span> What the audit corrected</h2>
 <p>The previous parser removed question marks before recognizing numbers: <code>2 1 ? ?</code>, for example, became the definite value <code>21</code>. It also counted empty newline fragments as unreadable groups, included the heading year 1752 as ciphertext, and discarded cipher before a cleartext tag on the same line. The revised parser retains uncertainty, source line and page references, underlining and carets, and ciphertext on both sides of cleartext tags.</p>
 <p>On R1953, image 13448, the three-line passage beginning <code>1426 825 963</code> occurs twice on the manuscript. It must not be deleted as a DECODE transcription duplication. The two versions are not identical, and neither has been established as the correct reading.</p>
+<figure data-credit="Koninklijk Huisarchief, Prins Willem V, inv. 196, via DECODE R1953"><img src="hellen1752_r1953_repeat.jpg" alt="Six lines of dotted three- and four-digit code numbers, the last three repeating the first three" loading="lazy"><figcaption>R1953 (4 January 1752), image 13448 (photographed sideways; shown turned): the three-line passage beginning <code>1426 825 963</code> and, directly below, its second copy. The two copies are not identical, and the code is unread. <span class="credit">Image: Koninklijk Huisarchief, Prins Willem V, inv. 196, via DECODE R1953.</span></figcaption></figure>
 <p>The letters are provisionally grouped into 1752, 1756 and 1763 code families. Earlier frequency-density tests did not produce readable text, but that failure does not establish random codebook ordering, prove the proposed homophone clusters, or rule out a future ciphertext-only solution. Those stronger conclusions have been withdrawn.</p>
 
 <h2 id="lead"><span class="num">03</span> The archival lead</h2>
@@ -87,7 +88,7 @@
 <!-- replay:end -->
 <h2 id="sources"><span class="num">05</span> Sources and working record</h2>
 <ul>
-<li>DECODE records linked in the document table: KHA, Prins Willem V, inventory 196. Manuscript images and DECODE transcriptions were available locally; the complete image set is not reproduced on this page.</li>
+<li>DECODE records linked in the document table: KHA, Prins Willem V, inventory 196. Manuscript images and DECODE transcriptions were available locally; the complete image set is not reproduced on this page; one crop of R1953 is shown above.</li>
 <li><a href="https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29?page=120">Nationaal Archief, Familie Fagel, 1.10.29</a>, inventory 5206: catalogue evidence for the deciphered-letter collection.</li>
 <li>Karl de Leeuw, <a href="https://pure.uva.nl/ws/files/3074957/12760_Thesis.pdf"><em>Cryptology and statecraft in the Dutch Republic</em></a> (2000), chapter reprinting “The Black Chamber in the Dutch Republic and the Seven Years’ War, 1751–63”, <em>Diplomacy &amp; Statecraft</em> 10(1), 1999, pp. 1–30; especially notes 45–46, 72 and 76.</li>
 <li><a href="https://de-crypt.org/decrypt-web/RecordsView/2824">DECODE R2824</a>, Additional Information: the rejected Dutch-key lead.</li>
@@ -95,7 +96,7 @@
 <p class="muted">The <a href="https://github.com/dbourdeau/cyphersolver/tree/main/hellen1752">working record</a> contains the audit, parser, measured transcription projections and research profile. Status: in progress.</p>
 </main>
 <footer><div class="in">
-  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Source manuscripts: KHA, Prins Willem V, inventory 196; no manuscript images reproduced</span>
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Source manuscripts: KHA, Prins Willem V, inventory 196; one crop of R1953, via DECODE</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="michell1751.html" rel="prev">&larr; Michell 1751 1751</a><a href="jones1753.html" rel="next">Schaeblin to Mr Jones 1753 1753 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="solve-replay.js?v=20260921e" defer></script>

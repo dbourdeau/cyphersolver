@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fra Giovanni di Lucca to the Emperor (1644) — Solved</title>
-<meta name="description" content="Decipherment of DECODE R2159, a 231-figure Italian cipher paragraph in a letter of Fra Giovanni di Lucca to Ferdinand III, 30 May 1644 (ÖStA HHStA): a 24-figure alphabet with two polyphonic figures, 17 = i/n and 19 = t/s, read end to end with crib-fixed annealing, shuffled controls and a Viterbi pass.">
+<meta name="description" content="Decipherment of DECODE R2159, a 231-figure Italian cipher paragraph in a letter of Fra Giovanni di Lucca to Ferdinand III, 30 May 1644 (ÖStA HHStA): a 24-figure alphabet with one polyphonic figure, 19 = t/s (a second, 17 = i/n, was a transcription error, corrected from the manuscript), read end to end with crib-fixed annealing, shuffled controls and a Viterbi pass.">
 <link rel="stylesheet" href="style.css?v=20260921e">
 <meta name="date" content="2026-09-16">
-<meta name="last-modified" content="2026-09-16">
+<meta name="last-modified" content="2026-09-22">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -41,13 +41,13 @@
 </div>
 
 <section class="hero">
-  <div class="cipherstrip">3 11 26 21 17 17 6 15 26 1 8 17<br>19 21 9 14 19 15 25 3 14 15 3<br>11 13 15 12 26 1 8 17 21 18</div>
+  <div class="cipherstrip">3 11 26 21 17 14 6 15 26 1 8 17<br>19 21 9 14 19 15 25 3 14 15 3<br>11 13 15 12 26 1 8 17 21 18</div>
   <p class="kicker">Vienna · polyphonic figure cipher · 1644 · solved</p>
   <h1>Fra Giovanni di Lucca to the Emperor</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_ferdinand-iii.jpg" alt="Ferdinand III" title="Ferdinand III: Portrait, Frans Luycx. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Ferdinand III</figcaption></figure></div><!-- /parties -->
   <p class="sub">30 May 1644 · Österreichisches Staatsarchiv, HHStA, Staatskanzlei Interiora, Chiffrenschlüssel Kt. 20 Fasc. 27 ff. 18&ndash;19 · DECODE R2159</p>
-  <p class="sub">Two hundred and thirty-one dot-delimited figures of Italian, listed as non-decrypted, read in full once two figures are allowed to carry two letters each</p>
-  <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-16">16 September 2026</time></p>
+  <p class="sub">Two hundred and thirty-one dot-delimited figures of Italian, listed as non-decrypted, read in full; checked against the manuscript, which names the speaker as Koniecpolski</p>
+  <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
 <div class="seal solved" aria-hidden="true"><span>solved</span></div>
 </section>
 
@@ -56,15 +56,17 @@
 <div class="callout">
 <strong>Summary.</strong> S. Tomokiyo&rsquo;s page of unsolved ciphers carries this item with the remark that it &ldquo;can be deciphered to read
 <em>Al principe di trenti&hellip;</em>&rdquo; and that &ldquo;someone versed in Italian would be able to complete the decryption&rdquo;. Nobody had, and the
-reason is visible in the crib itself: <em>principe</em> is written <code>26 21 17 17 6 15 26 1</code>, so the figure 17 must be <em>i</em> and <em>n</em> in the
-same word, which no substitution allows. It is a <strong>polyphonic</strong> alphabet: 17 stands for <em>i</em> or <em>n</em>, 19 for <em>t</em> or <em>s</em>, and the
-other twenty-two figures for one letter each, with two figures for each of <em>a</em>, <em>e</em>, <em>o</em>, <em>u</em>. Fixing the eight letters the crib gives
+reason is visible in the transcription: <em>principe</em> is written <code>26 21 17 17 6 15 26 1</code>, so the figure 17 must be <em>i</em> and <em>n</em> in the
+same word, which no substitution allows. It was read here first as a <strong>polyphonic</strong> alphabet, 17 standing for <em>i</em> or <em>n</em> and 19 for
+<em>t</em> or <em>s</em>. The manuscript images later showed that the writer&rsquo;s crossed 4 had been transcribed as 17 in ten groups: every &ldquo;17 = n&rdquo;
+is a 14 on the page, and 17 is only <em>i</em>. So twenty-three figures carry one letter each (two figures each for <em>a</em>, <em>e</em>, <em>o</em>, <em>u</em>,
+<em>i</em>), and only 19 carries two. Fixing the eight letters the crib gives
 without contradiction and annealing the other sixteen against an Italian 5-gram model, every seed returns the same reading; the same procedure on five
 shufflings of the ciphertext returns nothing. A Viterbi pass over the two alternatives then chooses <em>i</em> or <em>n</em>, <em>t</em> or <em>s</em> at each
 occurrence. The paragraph relays an offer to Ferdinand III, in the spring of R&aacute;k&oacute;czi&rsquo;s invasion of Hungary: to keep the Turk from helping the
 Prince of Transylvania, to raise the Prince of Moldavia against him, to supply two thousand Cossacks, and to press the Emperor to make no peace until he is
-humbled or beaten.
-<em>Status: read. Three spellings and the speaker&rsquo;s name wait on the manuscript images, which need a DECODE login.</em>
+humbled or beaten. The clear text around the cipher names the speaker: the Grand Hetman <strong>Stanis&#322;aw Koniecpolski</strong>, at Brody.
+<em>Status: read, and checked against the manuscript (22 September 2026). One polyphonic figure (19) and two short spellings remain as the writer left them.</em>
 </div>
 
 <h2 id="document"><span class="num">01</span> The document</h2>
@@ -72,19 +74,21 @@ humbled or beaten.
 Starhemberg letter of 1758). His note on this one: from Fra Giovanni di Lucca to the Emperor, 30 May 1644, in Italian; &ldquo;the number groups may consist
 of one or two digits, but there is no difficulty in identifying individual groups because the groups are delimited by dots.&rdquo; DECODE&rsquo;s public record
 says <em>Non-decrypted</em>, cipher type <em>Unknown</em>, symbol set numerical, two pages, partly encrypted, with a placeholder date range of 1686&ndash;1877.
-The images are not public. Everything below rests on the transcription.</p>
-<pre>3 11 26 21 17 17 6 15 26 1 8 17 19 21 9 14 19
+The images need a DECODE login. The first reading rested on Tomokiyo&rsquo;s transcription alone; on 22 September 2026 the cipher was checked group by
+group against the image of f. 18r, and ten groups corrected from 17 to 14 (&sect;03). The text below is the corrected one.</p>
+<pre>3 11 26 21 17 14 6 15 26 1 8 17 19 21 9 14 19
 15 25 3 14 15 3 11 13 15 12 26 1 8 17 21 18 6 13 14 18 2 14 12 13 8 18 6 10 1 15 11 22 25
 21 6 18 14 13 14 11 17 8 15 9 3 15 23 22 13 1 5 9 21 18 21 15 25 13 11 19 3 32 7 6 18
-14 22 21 9 8 17 11 25 15 19 7 19 3 21 9 4 15 19 13 2 14 18 17 11 26 21 17 17 6 15
+14 22 21 9 8 17 11 25 15 19 7 19 3 21 9 4 15 19 13 2 14 18 17 11 26 21 17 14 6 15
 26 1 8 15 4 18 2 13 8 3 14 17 9 7 22 11 17 8 3 21 13 8 23 12 17 11 15 3 6 18 19
-9 6 10 15 7 22 12 3 17 8 1 21 13 9 25 18 17 6 13 17 23 17 3 19 25 9 11 7 22
-1 21 3 9 11 15 12 26 7 21 9 22 13 21 7 6 10 7 17 18 17 5 3 6 15 9 26 9 6 7
-5 17 14 6 10 7 17 18 17 11 10 9 4 17 10 25 12 17 11 15 9 19 13 18 23 15 17
+9 6 10 15 7 22 12 3 14 8 1 21 13 9 25 18 17 6 13 14 23 14 3 19 25 9 11 7 22
+1 21 3 9 11 15 12 26 7 21 3 22 13 21 7 6 10 7 14 18 14 5 3 6 15 9 26 3 6 7
+5 17 14 6 10 7 14 18 14 11 10 3 4 17 10 25 12 17 11 15 9 19 13 18 23 15 14
 22 18</pre>
-<p>231 groups, 24 distinct figures (1&ndash;15, 17&ndash;19, 21&ndash;23, 25, 26, 32), index of coincidence 0.050. There is exactly one doubled pair in the whole
-text, <code>17 17</code>, and it occurs twice in the same word. Italian prose doubles a consonant at three to four positions in a hundred, so a plain
-letter-for-letter substitution is excluded before anything is tried: the doubles are being split between homophones, or a figure is doing two jobs.</p>
+<figure data-credit="&Ouml;sterreichisches Staatsarchiv, HHStA, Staatskanzlei Interiora, Chiffrenschl&uuml;ssel Kt. 20 Fasc. 27 f. 18r, via DECODE R2159"><img src="lucca_f18r_cipher.jpg" alt="Italian letter in which a clear line is followed by eight lines of dotted one- and two-digit numbers" loading="lazy"><figcaption>f. 18r, the cipher paragraph: it follows the clear <em>della Religione e ragion di stato</em> and runs for eight lines of dotted figures back into the clear <em>tal cosa fin&rsquo; ora non &egrave; hauto effetto</em>. The figures read <em>Al principe di Transilvania lo impedir&ograve; con ogni modo che il Turco non li dia aiuto &hellip;</em> The crossed figure in <em>principe</em> and <em>con una</em> is the writer&rsquo;s 4, so the group is 14, not 17. <span class="credit">Image: &Ouml;sterreichisches Staatsarchiv, HHStA, Staatskanzlei Interiora, Chiffrenschl&uuml;ssel Kt. 20 Fasc. 27 f. 18r, via DECODE R2159.</span></figcaption></figure>
+<p>231 groups, 24 distinct figures (1&ndash;15, 17&ndash;19, 21&ndash;23, 25, 26, 32), index of coincidence 0.050. As first transcribed there was exactly one
+doubled pair, <code>17 17</code>, twice in the same word, and it drove the polyphonic reading below. On the page that pair is <code>17 14</code>: the corrected
+text has no doubled group at all, and the writer simply avoids double letters (<em>Cosachi</em>, <em>dumilia</em>, <em>habi</em>).</p>
 
 <h2 id="solving"><span class="num">02</span> Solving</h2>
 <ol>
@@ -98,7 +102,7 @@ without contradiction: 3 a, 11 l, 8 d, 17 i, 26 p, 21 r, 1 e, 19 t.</li>
 <li><strong>Crib-fixed annealing.</strong> With those eight fixed and the other sixteen figures free, six seeds converge on one reading at &minus;2.50 nats per
 5-gram: <code>alpriicipeditrantiuanialoimpediroconoinmodocheilturcononlidiaaiutoefaroriuoltase&hellip;</code> &mdash; <em>lo impedir&ograve; &hellip; che il
 Turco non li dia aiuto e far&ograve; rivoltare&hellip;</em> Word after word is Italian, to the last group.</li>
-<li><strong>Two figures carry two letters.</strong> Holding the rest, 17 reads <em>n</em> in <em>principe</em> (twice), <em>mander&ograve;</em>,
+<li><strong>Two figures carry two letters</strong> (on the uncorrected transcription; see the note after the key). Holding the rest, 17 reads <em>n</em> in <em>principe</em> (twice), <em>mander&ograve;</em>,
 <em>con una</em>, <em>non</em>, <em>vinto</em>, and <em>i</em> in <em>di</em>, <em>il</em>, <em>impedir&ograve;</em>, <em>li</em>, <em>lui</em>,
 <em>dumilia</em>, <em>finch&eacute;</em>; 19 reads <em>t</em> in <em>Transilvania</em>, <em>rivoltare</em>, <em>sua</em>, <em>humiliato</em>,
 <em>vinto</em>, and <em>s</em> in <em>Transilvania</em>, <em>se sar&agrave; bisogno</em>, <em>Cosachi</em>. No third value is needed for either.
@@ -113,22 +117,26 @@ do, and the shuffles show that eight fixed letters on this text do not manufactu
 <h2 id="key"><span class="num">03</span> The key</h2>
 <table>
 <tr><th class="n">1</th><th class="n">2</th><th class="n">3</th><th class="n">4</th><th class="n">5</th><th class="n">6</th><th class="n">7</th><th class="n">8</th><th class="n">9</th><th class="n">10</th><th class="n">11</th><th class="n">12</th><th class="n">13</th><th class="n">14</th><th class="n">15</th><th class="n">17</th><th class="n">18</th><th class="n">19</th><th class="n">21</th><th class="n">22</th><th class="n">23</th><th class="n">25</th><th class="n">26</th><th class="n">32</th></tr>
-<tr><td>e</td><td>g</td><td>a</td><td>b</td><td>f</td><td>c</td><td>e</td><td>d</td><td>a</td><td>h</td><td>l</td><td>m</td><td>o</td><td>n</td><td>i</td><td><b>i / n</b></td><td>o</td><td><b>t / s</b></td><td>r</td><td>t</td><td>u</td><td>u</td><td>p</td><td>r</td></tr>
-<tr class="muted"><td>7</td><td>3</td><td>16</td><td>3</td><td>3</td><td>13</td><td>10</td><td>10</td><td>12</td><td>6</td><td>13</td><td>6</td><td>13</td><td>10</td><td>18</td><td>24</td><td>14</td><td>9</td><td>14</td><td>8</td><td>4</td><td>7</td><td>7</td><td>1</td></tr>
+<tr><td>e</td><td>g</td><td>a</td><td>b</td><td>f</td><td>c</td><td>e</td><td>d</td><td>a</td><td>h</td><td>l</td><td>m</td><td>o</td><td>n</td><td>i</td><td>i</td><td>o</td><td><b>t / s</b></td><td>r</td><td>t</td><td>u</td><td>u</td><td>p</td><td>r</td></tr>
+<tr class="muted"><td>7</td><td>3</td><td>16</td><td>3</td><td>3</td><td>13</td><td>10</td><td>10</td><td>12</td><td>6</td><td>13</td><td>6</td><td>13</td><td>20</td><td>18</td><td>14</td><td>14</td><td>9</td><td>14</td><td>8</td><td>4</td><td>7</td><td>7</td><td>1</td></tr>
 </table>
 <p class="muted">Third row: occurrences. Figures 16, 20, 24 and 27&ndash;31 do not occur; <em>q</em>, <em>z</em> and consonantal <em>v</em> are absent from the text.
 The arrangement shows no alphabetical order. <em>b</em>, <em>g</em> and the second <em>r</em> rest on one to three occurrences each, in words no other letter fits
 (<em>bisogno</em>, <em>Bogdania</em>, <em>habbi</em>; <em>ogni</em>, <em>bisogno</em>, <em>Bogdania</em>; <em>rivoltare</em>).</p>
-<p><strong>An alternative to polyphony.</strong> Every &ldquo;17 = n&rdquo; could be a 14 transcribed as 17 (a 4 and a 7 are close in seventeenth-century hands), and
-&ldquo;19 = s&rdquo; could be a misread figure for an <em>s</em> otherwise unused. Either would make this an ordinary homophonic alphabet. The images would settle it;
-the reading is unchanged either way.</p>
+<p><strong>17 is not polyphonic: checked against the manuscript.</strong> The first session proposed that every &ldquo;17 = n&rdquo; might be a 14 transcribed
+as 17, since a 4 and a 7 are close in seventeenth-century hands. The image of f. 18r settles it. The writer&rsquo;s 4 is a crossed stroke that looks like a
+barred 7; his 7 is plain. Tomokiyo&rsquo;s transcription reads the crossed 4 as 14 in most places but as 17 in ten: <em>principe</em> twice
+(<code>26 21 17 14 6 15 26 1</code>), <em>mander&ograve;</em> (<code>12 3 14 8</code>), <em>con una</em> (<code>6 13 14 23 14 3</code>), <em>non</em> twice
+(<code>14 18 14</code>) and <em>vinto</em> (<code>23 15 14 22 18</code>). Every plain 17 on the page is <em>i</em>. Tomokiyo&rsquo;s crib <em>Al principe
+di</em> was right all along. 19 = <em>t</em> / <em>s</em> stands: the page has the same figure in both places of <em>Transiuania</em>. The key above is the
+corrected one.</p>
 
 <h2 id="reading"><span class="num">04</span> Reading</h2>
 <figure class="creveal" data-src="reveal/lucca.json"></figure>
 <blockquote>
 <strong>Al principe di Transil[u]ania lo impedir&ograve; con ogn[i] modo che il Turco non li dia aiuto, e far&ograve; rivoltare contra di lui, se sar&agrave;
 bisogno, il principe di Bog[o]dania, et li dar&ograve; dumilia Cosachi, et mander&ograve; a voi con una sua lettera all&rsquo;Imperatore che non faccia pace
-fin che [io] l&rsquo;habbi humiliato o vinto.</strong>
+fin che non l&rsquo;habbi humiliato o vinto.</strong>
 </blockquote>
 <blockquote>
 <em>As to the Prince of Transylvania: I shall by every means prevent the Turk from giving him help, and if need be I shall make the Prince of Moldavia rise
@@ -136,37 +144,41 @@ against him and give him two thousand Cossacks, and I shall send [him] to you wi
 humbled or defeated him.</em>
 </blockquote>
 <ul>
-<li><em>Transiuania</em> (<code>19 21 9 14 19 15 25 3 14 15 3</code>) has no <em>l</em>, and <em>ogn modo</em> lacks the <em>i</em> of <em>ogni</em>: the writer&rsquo;s
-spelling or a dropped group, in each case.</li>
+<li><em>Transiuania</em> (<code>19 21 9 14 19 15 25 3 14 15 3</code>) has no <em>l</em>, and <em>ogn modo</em> lacks the <em>i</em> of <em>ogni</em>. The page
+shows no dropped group in either place, so these are the writer&rsquo;s spellings.</li>
 <li><em>Bogodania</em> (<code>4 18 2 13 8 3 14 17 9</code>): <em>Bogdania</em> is the ordinary Italian and Turkish name of Moldavia (Boğdan). The extra <code>13</code>
-is the writer&rsquo;s or the transcriber&rsquo;s. The Viterbi pass prefers <em>Bogodanna</em> on statistics; the place-name fixes 17 = <em>i</em> here.</li>
+is on the page, so it is the writer&rsquo;s. The first Viterbi pass preferred <em>Bogodanna</em>; with 17 = <em>i</em> only, the question does not arise.</li>
 <li><code>19 25 9</code> before <em>lettera</em> is <em>sua</em> (Viterbi) or <em>tua</em>; <em>sua</em> is the grammatical reading.</li>
-<li><code>17 18 17 11 10 9 4 17</code> is <em>io il habi</em> or <em>no il habi</em> (<em>non l&rsquo;habbi</em>); the sense is the same.</li>
+<li>The transcription gave <code>17 18 17 11 10 9 4 17</code>, <em>io il habi</em> or <em>no il habi</em>. The page has <code>14 18 14 11 10 3 4 17</code>:
+<em>non l&rsquo;habi</em>.</li>
 </ul>
 
 <h2 id="context"><span class="num">05</span> Context</h2>
 <p>In February 1644 Gy&ouml;rgy R&aacute;k&oacute;czi I, Prince of Transylvania, invaded Habsburg Hungary in alliance with Sweden and France and with the
 Porte&rsquo;s leave. Through the spring Ferdinand III&rsquo;s diplomacy worked to have the Ottoman support withdrawn and to find pressure on R&aacute;k&oacute;czi&rsquo;s
 eastern flank. The paragraph is a first-person offer, carried by the friar, from someone who claims to be able to work on the Porte, to set the Prince of
-Moldavia (Vasile Lupu) against R&aacute;k&oacute;czi, and to dispose of two thousand Cossacks. <strong>Who is speaking is not in the cipher.</strong> That
-combination of levers points to Poland &mdash; the King, W&#322;adys&#322;aw IV, who was Ferdinand III&rsquo;s brother-in-law, or the Grand Hetman Stanis&#322;aw
-Koniecpolski, who kept his own relations with Moldavia and the Tatars and had beaten the Tatars at Ochmat&oacute;w that January &mdash; but that is an inference
-from the content, not a reading.</p>
+Moldavia (Vasile Lupu) against R&aacute;k&oacute;czi, and to dispose of two thousand Cossacks. Who is speaking is not in the cipher, but the clear text
+around it says who. The friar, sent on from Vilnius by the King, came to <em>il suo Generalissimo il Sig.<sup>re</sup> Stanislao Conespolschi</em>, the Grand
+Hetman Stanis&#322;aw Koniecpolski. He told him it was the moment to help the Emperor, and Koniecpolski &ldquo;answered angelically&rdquo; that he would, from
+affection for the House of Austria and from zeal for religion and reason of state. Then comes the cipher. After it, the friar reports that the offer has
+not yet taken effect, because R&aacute;k&oacute;czi has sent a great sum of money to Constantinople to have the Prince of Moldavia deposed (<em>fatto
+mazul</em>). The letter is dated from Brody, Koniecpolski&rsquo;s residence. Koniecpolski kept his own relations with Moldavia and the Tatars, and had
+beaten the Tatars at Ochmat&oacute;w that January. (The clear frame is read here in outline, not transcribed letter by letter.)</p>
 <p>Fra Giovanni di Lucca (Giovanni Giuliani da Lucca), Dominican, is known from his <em>Relatione</em> and <em>Itinerario</em> as a missionary of the 1620s and
 1630s to the Tatars, Circassians, Abkhazians, Mingrelians and Georgians, and from later work in Moldavia (Cristian Luca, 2004, not consulted here). A
-Dominican who moved between Moldavia, the Cossack lands and Vienna is the sort of courier such an offer would use. Whether the cleartext of ff. 18&ndash;19
-names the principal, the manuscript would show; Tomokiyo&rsquo;s article quotes only the cipher.</p>
+Dominican who moved between Moldavia, the Cossack lands and Vienna is the sort of courier such an offer would use.</p>
 
 <h2 id="method"><span class="num">06</span> Method and files</h2>
 <ol>
-<li>Ciphertext from Tomokiyo&rsquo;s article; counts, doubles and index of coincidence checked (<code>lucca/ct.txt</code>).</li>
+<li>Ciphertext from Tomokiyo&rsquo;s article; counts, doubles and index of coincidence checked (<code>lucca/ct.txt</code>). Corrected 22 September 2026
+against the DECODE images: ten groups 17&nbsp;&rarr;&nbsp;14.</li>
 <li>Italian 5-gram model with absolute discounting and interpolation, Roman-numeral page references stripped (<code>lucca/lm.py</code>).</li>
 <li>Homophonic annealer, unconstrained (<code>lucca/solve.py</code>), then with the eight consistent crib letters fixed (<code>lucca/crib_anneal.py</code>).</li>
 <li>Polyphonic Viterbi over {i, n} for 17 and {t, s} for 19 (<code>lucca/decode.py</code>).</li>
 <li>Shuffled-ciphertext control of the crib-fixed procedure (<code>lucca/control.py</code>).</li>
 </ol>
-<p class="muted">Checked: transcription counts, crib consistency, convergence across seeds, five shuffled controls, word-level Italian. Not checked: the manuscript
-images, the cleartext frame, the identity of the speaker. The historical attribution in &sect;05 is an inference and should be verified before it is repeated.</p>
+<p class="muted">Checked: transcription counts, crib consistency, convergence across seeds, five shuffled controls, word-level Italian, and (22 September 2026)
+every cipher group against the manuscript image. Read in outline only: the clear frame that names Koniecpolski.</p>
 
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/lucca.json"></figure>
