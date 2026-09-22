@@ -1,0 +1,151 @@
+{
+ "schema_version": 1,
+ "target": "goertz1717",
+ "title": "Görtz peace memorandum, 1717, cipher passages (KB Stockholm I.g.18, DECODE R4350)",
+ "documents": [
+  {
+   "id": "memo1717",
+   "shelfmark": "National Library of Sweden, I.g.18 (Murberg collection), PDF pp. 34-41; DECODE R4350",
+   "date": "1717",
+   "year": 1717,
+   "country": "Sweden",
+   "route": "Görtz (or his circle) to Charles XII (inferred)",
+   "language": "German",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the copy, on DECODE or in print."
+   },
+   "length": {
+    "tokens": 809,
+    "distinct": 175,
+    "unit": "code groups",
+    "measured": true,
+    "file": "groups.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE PDF IMG_R4350_I26104_P.pdf, pp. 34, 35, 37, 38, 41",
+    "image_quality": "good",
+    "notes": "Numeric groups 1-848; clear German words left inside the cipher; ~10 line-end groups lost in the gutter."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "Numeric code 1-848 with homophones (frames 712 x 113), probably a homophonic nomenclator of ~850 entries; German plaintext.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 175,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Only Görtz key on DECODE is R7691, a French 4-digit code of 1716 (different system)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "none found on DECODE, BL Add MS 32287 keys or by web search",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "group statistics",
+   "homophonic annealer (de-modern)",
+   "monotone syllabary annealer",
+   "synthetic control"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Downloaded the R4350 PDF (114 images, whole Murberg volume) with the DECODE cookie; located the cipher on pp. 34-41.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed five cipher passages: 809 groups, 175 distinct, with the clear words kept.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "statistics",
+   "what": "Repeats show homophone frames (712 49/80/848/548 113); 778 (8%) is not a word separator.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Web search for the memorandum and a Görtz cipher in print.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Downloaded BL Add MS 32287 keys R7690-R7702; R7691 (Görtz, 1716) is a French 4-digit code, R7690 French 10-540, the rest Gyllenborg French codes.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "Homophonic letter annealer, de-modern order 5, clear words fixed, 8 seeds x 3M; best -2.05/char, gibberish. French/Swedish/Italian worse.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "Alphabetical-syllabary monotone annealer adapted from swieten1757, German inventory, 8 seeds: word salad.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "control",
+   "what": "Synthetic 809-letter German text in 174 homophones not recovered by the annealer, with or without a KL frequency prior: the attack is below solvability at this length.",
+   "result": "failed",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Needs Görtz's German chancery key (Riksarkivet) or the original with a decipherment.",
+  "gaps": [
+   {
+    "item": "all five cipher passages (809 groups)",
+    "blocker": "no-key-material",
+    "detail": "German code not on DECODE or in print; ciphertext-only failed incl. synthetic control"
+   }
+  ]
+ }
+}
