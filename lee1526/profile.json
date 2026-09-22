@@ -60,6 +60,64 @@
     "image_quality": "good",
     "notes": "Three cipher lines on f. 238v transcribed sign by sign; two or three signs doubtful."
    }
+  },
+  {
+   "id": "R8473",
+   "shelfmark": "BL Cotton MS Vespasian C III f. 245 (DECODE R8472-R8473)",
+   "date": "1526-05-13",
+   "year": 1526,
+   "country": "England",
+   "route": "Spain (imperial court) -> England (Wolsey)",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Tuke's decipherment, image 4 of R8473; L&P iv 2173."
+   },
+   "length": {
+    "tokens": 238,
+    "distinct": "unknown",
+    "unit": "mixed",
+    "measured": false,
+    "file": "r8473_reading.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R8473_I39133_P1, P4",
+    "image_quality": "good",
+    "notes": "Two cipher blocks read sign by sign with Tomokiyo's key, checked against Tuke; plaintext word count by hand."
+   }
+  },
+  {
+   "id": "R8533",
+   "shelfmark": "BL Cotton MS Vespasian C IV ff. 109-110 (DECODE R8533)",
+   "date": "1527-04-20",
+   "year": 1527,
+   "country": "England",
+   "route": "Spain (imperial court) -> England (Wolsey)",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Tuke's interlinear decipherment on f. 110r only; ff. 109r-v deciphered by Tuke from the 8 April original (TNA, not online). L&P iv 3028/3055."
+   },
+   "length": {
+    "tokens": 457,
+    "distinct": "unknown",
+    "unit": "mixed",
+    "measured": false,
+    "file": "r8533_reading.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R8533_I39374_P1, P4, P2",
+    "image_quality": "good",
+    "notes": "Three passes; cipher plaintext words counted by script from the token list; 414 read (90.6%)."
+   }
   }
  ],
  "system": {
@@ -257,6 +315,48 @@
    "what": "Letters and Papers IV no. 4564 calendars R8575 as 'Mostly cipher, pp. 7' with '2. Decipher by Tuke. Pp. 7' at f. 245; the clear passages on p. 1 (Radcliff, the ship taken in Bayonna in Galicia) match the summary word for word.",
    "result": "worked",
    "date": "2026-09-21"
+  },
+  {
+   "kind": "access",
+   "what": "Catalogue 101: downloaded the 13 images of R8472, R8473, R8533, R8535 and Tomokiyo's key documents with the session cookie.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "verification",
+   "what": "R8472 and R8535 clear; R8473 f. 245 and R8533 ff. 109-110 carry the Lee-Worcester sign cipher.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "literature search",
+   "what": "L&P iv 2173 (13 May 1526, deciphered by Tuke), 3055 (20 Apr 1527 duplicate of 3028, 8 Apr, Tuke's decipher at R.O.).",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "reading",
+   "what": "R8473 read sign by sign with Tomokiyo's key; then found Tuke's decipherment is image 4 of the record; agrees word for word.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "reading",
+   "what": "R8533 first pass with Tomokiyo's key: about 83% (estimated).",
+   "result": "partial",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "crib",
+   "what": "Used L&P iv 3028's quotations of the 8 April original as a crib for R8533: 85.7% then 86.4% counted.",
+   "result": "partial",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Third pass: ÷ with bar = them, Ⱶ = the Emperor, # = would, the 'marquis' group = INACHUS; 414/457 (90.6%). Name signs and underlined clusters stay open.",
+   "result": "partial",
+   "date": "2026-09-21"
   }
  ],
  "outcome": {
@@ -265,6 +365,6 @@
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Read at the time; 16 of 17 records carry no cipher. Nothing new to read. R8602 (catalogue 104, 1529) is the same: clear, no cipher. R8578 (catalogue 106, 16 Oct 1528) is the same: clear, no cipher. R8582 (catalogue 105, 18 Nov 1528) is a full cipher page, read at the time by Tuke (L&P IV 4948 ii). R8559 (catalogue 112, July 1527) is clear with one short cipher run deciphered interlinearly ('but the intimation'); part of L&P IV 3271."
+  "notes": "Read at the time; 16 of 17 records carry no cipher. Nothing new to read. R8602 (catalogue 104, 1529) is the same: clear, no cipher. R8578 (catalogue 106, 16 Oct 1528) is the same: clear, no cipher. R8582 (catalogue 105, 18 Nov 1528) is a full cipher page, read at the time by Tuke (L&P IV 4948 ii). R8559 (catalogue 112, July 1527) is clear with one short cipher run deciphered interlinearly ('but the intimation'); part of L&P IV 3271. Catalogue 101: R8472-73 (13 May 1526, to Henry VIII) read at the time by Tuke (image 4), re-read, agrees; R8535 clear; R8533 (20 Apr 1527 duplicate) read at the time from the original (Tuke, TNA), re-read here 90.6% with the L&P crib."
  }
 }

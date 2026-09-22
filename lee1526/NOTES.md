@@ -163,3 +163,45 @@ Both images and Tomokiyo's key document downloaded 21 Sept 2026 (git-ignored in 
 
 Outcome: read at the time; nothing new to read. Closed and removed from the catalogue 21 Sept 2026; DECODE
 correction queued (recipient Wolsey, status "Decrypted (at the time)").
+
+## Catalogue 101: R8472, R8473, R8533, R8535 (13 May 1526 - 6 May 1527)
+
+Catalogue no. 101 ("Edw. Lee (Hispania) to unknown recipient, 4 ciphertexts", class B, rule-scored). All 13 images
+and Tomokiyo's key documents downloaded 21 Sept 2026 (git-ignored in img/c101/). Three letters:
+
+- **R8472 + R8473** (Vesp. C III ff. 244-245, Seville, 13 May 1526): one letter of Lee to **Henry VIII** ("your
+  highness"), not Wolsey. f. 244r-v clear; f. 245 has two cipher blocks (about 16 lines, about 238 words).
+  **Read at the time:** R8473 image 4 is Tuke's decipherment of both blocks, headed "13 May. Civill. E. L.".
+  L&P IV 2173 (Vesp. C. III. 244, "part cipher, deciphered by Tuke") summarises it. The blocks were read here sign by
+  sign with Tomokiyo's key and checked against Tuke: they agree word for word, except that the cipher has "somutche"
+  where Tuke wrote "somewhat", the cipher spells out numbers Tuke gives as numerals, and Tuke copies one phrase twice
+  and strikes it through (r8473_reading.txt). Content: the Imperial court waits on events in France; the Spaniards about
+  Milan, with many slain; the French King sends 400 men-of-arms and 5-6,000 foot into Burgundy; Hesdin not to be
+  delivered; Moncada's commission after suppressing the Moors of Valencia. (L&P 2174, f. 246, is the companion letter
+  to Wolsey, not in this catalogue entry.)
+- **R8533** (Vesp. C IV ff. 109-110, new foliation 120-121, Valladolid, 20 April 1527, Lee to Wolsey, holograph,
+  endorsed "A duplicate the xx of April 1527"): mostly cipher. Pages in order: image 1 = f. 109r, image 4 = f. 109v,
+  image 2 = f. 110r (ending, with Tuke's interlinear decipherment above its cipher runs), image 3 = address leaf.
+  L&P IV 3055 calendars it only as "to the same effect as his letter of the 8 April, and nearly in the same words".
+  The 8 April original is L&P IV 3028 (Vesp. C. IV. 88, not on DECODE), with "Decipher of the above by Tuke, R. O."
+  So the text was read at the time; the decipherment of ff. 109r-v is at TNA and not online.
+  **Read here in part, 414 of 457 cipher words (90.6%, counted)** in r8533_reading.txt (three passes; L&P 3028's
+  long quotations, lp3028.txt, used as crib). It is Almain's talk: "you must beware that you truste not the French
+  King to muche, for he mocketh you as he have doone us"; Perot's letter, "the Kynge of Englonde would have me to
+  take his doughter and geve hym Boloyne. Nay, nay, that cardinall hath entreted me most instantly ..."; the Duke of
+  Richmond "whome they intend to make kynge of Irelande", who "at lengthe he will be for the French King, as Scotland
+  is"; the French King "evel beloved in Fraunce ... dare not comme to Paris"; "the doughter of the qwene of
+  Portugale" barred by the treaty of Madrid; "the doughters of Denmarke"; the Suisses ("sutcheners"). f. 110r's
+  "don marquis" in Tuke's gloss is "INACHUS" in the cipher, as L&P prints ("don Inachus").
+  Open (43 words): name/code signs outside Tomokiyo's table (ꟸ, #, ɱ, A, ʍ; my lady Eleanor, don Inigo and the
+  Princess are the crib's candidates but no sign is fixed), two blots and one struck sign, eight underlined clusters
+  that look like nulls (Tuke leaves the f. 110r one unglossed), and three short runs with no crib.
+  Key additions to Tomokiyo: # = would, ÷ with bar = them, Ⱶ = the Emperor, ‡ = French King (on R8473 also
+  "your highness"), ℯ = is/for/we by context, ı = that/to, 9 = l and q, 0 = d, d-with-ascender = u, ϒ/hooked p = w.
+- **R8535** (Vesp. C IV f. 125, new foliation, Valladolid, 6 May 1527): clear English despatch of Lee to Wolsey,
+  signed "Edouarde Lee almosinar"; no cipher on either page.
+
+Outcome: read at the time and calendared (Tuke's decipherments; L&P IV 2173, 3028, 3055), like catalogue 105, 107
+and 109. The new work is a verbatim reading of the f. 245 blocks (confirming Tuke) and of 90.6% of the 20 April
+duplicate, whose decipherment is not online. Closing the last 9.4% would need Tuke's decipherment of the 8 April
+original at TNA (physical access). Closed, no write-up; catalogue 101 removed 21 Sept 2026; DECODE corrections queued.
