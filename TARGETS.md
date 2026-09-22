@@ -225,6 +225,7 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Unknown sender → the duc de Nevers, "1 Jan 1588"**, catalogue 187, DECODE R3705: read 22 Sept 2026; a court informant's letter of 29 Apr 1588, key rebuilt from the glossed sibling f. 131. See [nevers1588/](nevers1588/) and the [write-up](https://dbourdeau.github.io/cyphersolver/nevers1588.html).
 - **[Guise] → the duc de Mercœur, 16 Apr 1587**, catalogue 171, DECODE R4158 (siblings R4155, R4167): read 22 Sept 2026 with Lasry's 2022 fr. 15564 key, extended; 983 of 998 signs. See [mercoeur1587/](mercoeur1587/) and the [write-up](https://dbourdeau.github.io/cyphersolver/mercoeur1587.html).
 - **[Guise] → the duc de Mercœur, 27 May and 20 Jun 1587**, catalogue 172, DECODE R4162, R4165: read 22 Sept 2026 with Lasry's 2022 fr. 15564 key, extended; 95.1% of 2,477 letter signs. See [guise1587/](guise1587/) and the [write-up](https://dbourdeau.github.io/cyphersolver/guise1587.html).
 - **Sir Edward Stafford → [Walsingham], 9 Nov 1586**, catalogue 117, DECODE R8504: read 22 Sept 2026; clear letter, one cipher word (*princes*) read with the R8500 key. See [harley1582r8504/](harley1582r8504/) and the [write-up](https://dbourdeau.github.io/cyphersolver/harley1582r8504.html).
