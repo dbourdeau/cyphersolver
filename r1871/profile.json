@@ -1,0 +1,147 @@
+{
+ "schema_version": 1,
+ "target": "r1871",
+ "title": "Venetian despatches in ASVe Busta 30: Alvise Mocenigo, Rome 25 Apr 1558 (DECODE R1873) and Sebastiano Foscarini, Paris 11 Sep 1680 (DECODE R1871)",
+ "documents": [
+  {
+   "id": "R1873",
+   "shelfmark": "ASVe, IT ASVe 0045 010 Busta 30 ff. 4-6 (DECODE R1873)",
+   "date": "25 April 1558",
+   "year": 1558,
+   "country": "Italy",
+   "route": "Alvise Mocenigo, Venetian ambassador at Rome, to Doge Lorenzo Priuli",
+   "language": "Italian",
+   "pages": 6,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Paolo Bonavoglia, 'Decifra dispacci veneziani', crittologia.eu (Wayback snapshot 2025-06-22)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 176,
+    "distinct": 89,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r1873_ciphertext.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Bonavoglia's transcription on crittologia.eu",
+    "image_quality": "good",
+    "notes": "Images viewed here (DECODE login); transcription not redone."
+   }
+  },
+  {
+   "id": "R1871",
+   "shelfmark": "ASVe, IT ASVe 0045 010 Busta 30 f. 4 (DECODE R1871)",
+   "date": "11 September 1680",
+   "year": 1680,
+   "country": "France",
+   "route": "Sebastiano Foscarini, Venetian ambassador in France, to the Doge (despatch no. 117)",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Paolo Bonavoglia, 'Decifra dispacci veneziani', crittologia.eu (listed; not retrievable 2026-09-22)",
+    "partial": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false,
+    "file": "unknown"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "not transcribed here",
+    "image_quality": "good",
+    "notes": "One page of continuous digits; not transcribed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "R1873: Venetian nomenclator, each sign a base letter with a superscript letter (letters, syllables, words), Bonavoglia's 'Cifra n. 3' family. R1871: Foscarini's 1680s numerical nomenclator (Paris and Madrid).",
+  "symbol_kind": "letters",
+  "distinct_symbols": 89,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Bonavoglia's reconstructed Venetian keys (Cifra n. 3 family; Foscarini 1680s)",
+  "notes": "The two records are unrelated despatches 122 years apart; DECODE's 1555/England metadata on R1871 appears copied from R1872."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "crittologia.eu/critto/venezia_nomenclatore.html (Bonavoglia); pointer in Tomokiyo's note on DECODE R1872",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "Wayback Machine",
+   "BHO CSP Venice"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Fetched R1871-R1873 images with the DECODE cookie and viewed them; identified Mocenigo (Rome 25 Apr 1558) and Foscarini (Paris 11 Sep 1680, no. 117) from signatures and dockets.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Grepped CSP Venice vi April 1558 on BHO for the Mocenigo despatch.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Followed Tomokiyo's R1872 note to Bonavoglia's page (live site HTTP 500); Wayback copy holds the R1873 transcription and full decipherment and lists the Foscarini 1680-09-11 despatch.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "fraction_read": "unknown",
+  "grades": "unknown",
+  "verification": [
+   "unknown"
+  ],
+  "notes": "Nothing new. R1873 read by Bonavoglia; R1871's decipherment is on his site but was unreachable. Catalogue 264 resolved."
+ }
+}
