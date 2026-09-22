@@ -52,17 +52,17 @@
     "partial": "unknown"
    },
    "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
-    "unit": "symbols",
-    "measured": false,
-    "file": "unknown"
+    "tokens": 610,
+    "distinct": 211,
+    "unit": "code groups",
+    "measured": true,
+    "file": "runs.txt"
    },
    "transcription": {
-    "by": "unknown",
-    "source": "not transcribed here",
+    "by": "llm from images",
+    "source": "transcribed here from deskewed line strips (two agents)",
     "image_quality": "good",
-    "notes": "One page of continuous digits; not transcribed."
+    "notes": "First pass; 3/5 and 2/0 confusions likely, L22 middle weakest; 1,839 digits."
    }
   }
  ],
@@ -70,7 +70,7 @@
   "types": [
    "nomenclator"
   ],
-  "summary": "R1873: Venetian nomenclator, each sign a base letter with a superscript letter (letters, syllables, words), Bonavoglia's 'Cifra n. 3' family. R1871: Foscarini's 1680s numerical nomenclator (Paris and Madrid).",
+  "summary": "R1873: Venetian nomenclator, each sign a base letter with a superscript letter (letters, syllables, words), Bonavoglia's 'Cifra n. 3' family. R1871: Foscarini's 1680s numerical nomenclator (Paris and Madrid). R1871 segmented as 3-digit groups (first digit 1-5, second 1-6, third 0-9; rare digits 0/7/8/9 only in third place), 211 distinct; not alphabetically ordered.",
   "symbol_kind": "letters",
   "distinct_symbols": 89,
   "diacritics": {
@@ -106,7 +106,9 @@
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
   "tools": [
    "Wayback Machine",
-   "BHO CSP Venice"
+   "BHO CSP Venice",
+   "simulated annealing",
+   "Italian 4-gram"
   ],
   "models": [
    "claude-opus-5"
@@ -133,6 +135,48 @@
    "kind": "literature search",
    "what": "Followed Tomokiyo's R1872 note to Bonavoglia's page (live site HTTP 500); Wayback copy holds the R1873 transcription and full decipherment and lists the Foscarini 1680-09-11 despatch.",
    "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Transcribed R1871's cipher page (23 lines, 1,839 digits) from deskewed strips with two agents.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "Tested pair and self-delimiting ([1-4]*[5-0], [1-5]*[6-0]) segmentations; homophonic annealing gave no Italian.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "Found rare digits 0/7/8/9 fixed mod 3 within lines: 3-digit groups; DP segmentation to 612 groups, 211 distinct.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Monotone (ordered syllabary) annealer, 12 seeds, clean Italian 4-gram; synthetic ordered control recovered in part, real text not.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Sukhotin vowel test: vowel-like and consonant-like codes interleave, so the table is not alphabetical.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Free letter-per-code and letter/syllable annealers, 14 seeds: seed-dependent overfit gibberish.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Searched for the key and Bonavoglia's Foscarini page: DECODE Venetian keys R1788-R1790 (16th c., no match); crittologia storia page 404/refused, not archived.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -142,6 +186,6 @@
   "verification": [
    "unknown"
   ],
-  "notes": "Nothing new. R1873 read by Bonavoglia; R1871's decipherment is on his site but was unreachable. Catalogue 264 resolved."
+  "notes": "R1873 read by Bonavoglia (nothing added). R1871 attempted, not read: 3-digit homophonic/syllabic nomenclator, one page too short to solve blind; key and Bonavoglia's decipherment unreachable."
  }
 }
