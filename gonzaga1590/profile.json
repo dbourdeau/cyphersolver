@@ -1,0 +1,193 @@
+{
+ "schema_version": 1,
+ "target": "gonzaga1590",
+ "title": "Vincenzo I Gonzaga, Duke of Mantua, to Louis de Gonzague, duc de Nevers, 17 Sept 1590 (BnF fr. 3979 ff. 92-93, DECODE R4176)",
+ "documents": [
+  {
+   "id": "f92",
+   "shelfmark": "BnF, Français 3979, ff. 92r-93r (DECODE R4176, images P1-P14)",
+   "date": "17 Sept 1590",
+   "year": 1590,
+   "country": "Italy",
+   "route": "Mantua -> Louis de Gonzague, duc de Nevers (France)",
+   "language": "Italian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment on the record; not deciphered in print or online (DECODE Non-decrypted; Tomokiyo lists the key only)."
+   },
+   "length": {
+    "tokens": 943,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ct_92r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R4176 high-resolution strips, read at 3x; f. 92r by the main session, ff. 92v and 93r by two subagents",
+    "image_quality": "fair",
+    "notes": "Unseparated two-digit figures. Counted as digits/2 plus signs over the non-comment lines (943; the blot not counted); _check_profile --measure splits on spaces and does not fit this format. reading.md's table gives 945. Files: ct_92r.txt, ct_92v.txt, ct_93r.txt (ct.txt a combined working copy)."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Two-digit figures written unseparated: 11-40 letters with homophones, 41-99 words and names, plus overbarred figures and signs for titles and common words (Tomokiyo's Nevers no. 35, BnF fr. 3995 f. 64).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "notes": "An overbar on a letter figure doubles it. Hand traps: 3/9, 0/8, 7/8 and 27/28 look alike."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "checked DECODE R4176 (Non-decrypted) and Tomokiyo cryptiana nevers.htm (key listed, letter not deciphered)",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the problem. No target-specific intervention recorded.",
+  "tools": [
+   "DECODE image download (cookie)",
+   "Gallica IIIF",
+   "python beam decoder with the lang/ it-cinquecento model (beam.py, dec.py)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Tomokiyo nevers.htm and the DECODE record checked for a decipherment of R4176.",
+   "result": "failed",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "access",
+   "what": "DECODE R4176 images P1-P14 downloaded with the session cookie.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "key from source",
+   "what": "Tomokiyo's Nevers cipher no. 35, described as used by the Duke of Mantua in 1590, traced to BnF fr. 3995 f. 64 'Per Cavare 1590' (Gallica btv1b525085665 canvas 131) and read.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "transcription",
+   "what": "Unseparated two-digit figures transcribed from the images: f. 92r in the main session, ff. 92v and 93r by two subagents.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "reading",
+   "what": "Key applied unchanged; Italian reads at once on f. 92r (la morte del Papa sia stata procurata con veleno da Spagnoli).",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "solver",
+   "what": "Beam decoder with the it-cinquecento LM resolving 3/9 and 0/8 look-alikes, then 7/8 added; f. 93r reads through.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "key from source",
+   "what": "Sign and title values (che, per, et, S. M.ta, Legato, Monsignor ...) read from the key sheet and substituted.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "verification",
+   "what": "Retry pass: a subagent re-read the doubtful lines at 3x; about 829 of 945 tokens now read (88%); garbled stretches on f. 92r and f. 93r and three signs absent from the key remain.",
+   "result": "partial",
+   "date": "2026-09-21"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "fraction_read": 0.88,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "gonzaga1590/reading.md token table (cipher tokens; [..] stretches counted as unread, lengths estimated)",
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "key": "recovered",
+  "codes_open": {
+   "open": 3,
+   "total": "unknown",
+   "tokens_open": 3
+  },
+  "notes": "Archive key applied unchanged; Mantua on the rumoured poisoning of Sixtus V by the Spaniards and his devotion to the French crown.",
+  "gaps": [
+   {
+    "item": "f. 92r l2, l4, l5 tail, l7, l8 middle (~61 tokens)",
+    "blocker": "illegible",
+    "detail": "writer's slips; not fixed by the look-alike alternatives"
+   },
+   {
+    "item": "f. 92r l3b (~12 tokens)",
+    "blocker": "illegible",
+    "detail": "ink blot"
+   },
+   {
+    "item": "f. 92v three signs not on the key, ~6 tokens",
+    "blocker": "open-codes",
+    "detail": "each once, not on fr. 3995 f. 64"
+   },
+   {
+    "item": "f. 93r l2, l4, l5 (~34 tokens)",
+    "blocker": "illegible",
+    "detail": "re-read at 3x without a fit"
+   },
+   {
+    "item": "f. 93r l8 looped code group (~3 tokens)",
+    "blocker": "illegible",
+    "detail": "figures uncertain"
+   }
+  ]
+ }
+}

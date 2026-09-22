@@ -1,6 +1,6 @@
 # Vincenzo Gonzaga (Mantua) to Louis de Gonzague, duc de Nevers, 17 Sept 1590 — BnF fr. 3979 ff. 92–93, DECODE R4176
 
-Status: in progress
+Status: read in part (about 88% of cipher tokens, estimated in reading.md; key complete from the archive)
 
 Session of 21 September 2026. Catalogue entry "Vincenzo Gonzaga, duke of Nevers → Louis Gonzaga". The sender is
 Vincenzo I Gonzaga, **Duke of Mantua** (DECODE's "duke of Nevers" for him is a slip), writing to his uncle Nevers.
@@ -54,5 +54,18 @@ il Legato ha scritto in Italia", "{T} Monsignor" = "Di Monsignor" (flag-Γ).
 
 ## Remaining gaps
 
-- f. 92r lines 5 and 8: transcription errors, only part decoded — blocker: not-attempted (retranscribe).
-- f. 93r l1–l5, l8: stretches that decode to nonsense (transcription slips; 27/28 and 3/9) — blocker: not-attempted (retry with the 27→28 alternative added to `beam.py`).
+The full working reading and the token count are in `reading.md` (829 of 945 tokens read, 88%, estimated).
+
+- f. 92r l2 (~11 tokens), l4 (~8), l5 tail (~10), l7 (~6), l8 middle (~26): stretches that lose phase; writer's slips, not fixed by the 3/9, 0/8 or 7/8 look-alike alternatives in the retry pass - blocker: illegible; no other copy of the letter
+- f. 92r l3b (~12): figures under an ink blot after "buoni" - blocker: illegible; one image only
+- f. 92v three signs ({0Δ}, {4-sign}, {9}) not on the key sheet as read, plus "la mondezza a me" (~6) - blocker: open-codes; each occurs once, not on fr. 3995 f. 64
+- f. 93r l2 (~10), l4 (~14), l5 (~10): stretches that do not read ("-za per me", "ho manc[a]to", "sin h[ora]", "darne c[..] parte") - blocker: illegible; retry pass re-read them at 3x without a fit
+- f. 93r l8 (~3): looped, dotted code group before "comune nemico" - blocker: illegible; figures uncertain
+
+## Escalation
+- [n/a] siblings: DECODE holds no other Mantua 1590 letter in this cipher; Tomokiyo's no. 35 entry names the use (Duke of Mantua, 1590) but lists no other letters, so none was opened
+- [x] clear-pages: none; the clear passages on ff. 92-93 are the letter's own clear text, no decipherment on the record
+- [x] known-keys: Tomokiyo's Nevers no. 35 (fr. 3995 f. 64) fits and was applied unchanged
+- [x] print: Tomokiyo nevers.htm and DECODE: no decipherment or edition of this letter
+- [n/a] key-rebuild: the key is complete from the archive sheet; the unread stretches are transcription or writer's slips, not missing key values
+- [x] retry: doubtful lines re-read at 3x by a subagent with 3/9, 0/8, 7/8 and 27/28 alternatives in beam.py; 92v and 93r mostly recovered, the stretches above remain
