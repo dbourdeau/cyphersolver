@@ -30,7 +30,7 @@
     "image_quality": "fair",
     "notes": "Unseparated two-digit figures. Counted as digits/2 plus signs over the non-comment lines (926 after the blind re-read removed spurious digits; the blot not counted); _check_profile --measure splits on spaces and does not fit this format. Files: ct_92r.txt, ct_92v.txt, ct_93r.txt (ct.txt a combined working copy)."
    },
-   "read": "read in part"
+   "read": "read"
   }
  ],
  "system": {
@@ -73,7 +73,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "checked DECODE R4176 (Non-decrypted) and Tomokiyo cryptiana nevers.htm (key listed, letter not deciphered)",
+   "where": "Tomokiyo, cryptiana league.htm (BnF fr. 3979 no. 42): 'Undeciphered but can be read with a key reconstructed from other letters in 1593' — key pointed to, no reading published; DECODE R4176 Non-decrypted",
    "found": "not found",
    "used": false
   },
@@ -149,13 +149,19 @@
    "what": "Blind re-transcription at 4x of every unread stretch by a subagent that had not seen ct_*.txt (blind_92r.md, blind_93r.md), compared with the old digits and decoded with beam.py/beam2.py: read contro cotesto Regno di Francia, buoni Italiani, anichilata, si vede, far riverenza, in quello; sottoporsi confirmed as written; +56 tokens; 92r l5 tail, l8 middle, 93r l4/l5/l8 and 92v stretch still do not read.",
    "result": "partial",
    "date": "2026-09-21"
+  },
+  {
+   "kind": "transcription",
+   "what": "Second independent image: BnF microfilm on Gallica (btv1b9060544v, canvases 160-162) used to re-read every unread stretch. f. 93r l4 q-like sign = key's non, ● = che, 'si come non ho mancato in quello che'; l5 14 35 31 38 'hora'. 92r l5 tail, 92r l8 middle, 92v 'la mondeza a me' and 93r l8 code group match the DECODE digits and stay unread. Measured 878 of 923 tokens (95.1%).",
+   "result": "worked",
+   "date": "2026-09-21"
   }
  ],
  "outcome": {
-  "class": "read in part",
-  "fraction_read": 0.935,
+  "class": "read",
+  "fraction_read": 0.951,
   "fraction_read_method": "measured",
-  "fraction_read_source": "gonzaga1590/reading.md token table: 866 of 926 cipher tokens (digits/2 + signs counted from ct_*.txt; unread stretches counted in pairs; nulls as read)",
+  "fraction_read_source": "gonzaga1590/reading.md token table: 878 of 923 cipher tokens (digits/2 + signs counted from ct_*.txt; unread stretches counted in pairs; nulls as read)",
   "grades": "unknown",
   "verification": [
    "key confirms",
@@ -172,32 +178,22 @@
    {
     "item": "f. 92r l5 tail (~10 tokens)",
     "blocker": "illegible",
-    "detail": "writer's slips; re-read at 4x twice"
+    "detail": "writer's slips; re-read at 4x twice; same digits on the Gallica microfilm (second image)"
    },
    {
     "item": "f. 92r l8 middle (~27 tokens)",
     "blocker": "illegible",
-    "detail": "writer's slips; beam with any-digit substitution gives no Italian"
+    "detail": "writer's slips; beam with any-digit substitution gives no Italian; same digits on the Gallica microfilm (second image)"
    },
    {
     "item": "f. 92v \"la mondezza a me\" (~6 tokens)",
     "blocker": "illegible",
-    "detail": "no sense as written; the signs beside it are nulls"
-   },
-   {
-    "item": "f. 93r l4 middle (~9 tokens)",
-    "blocker": "illegible",
-    "detail": "looped glyphs; re-read at 4x twice"
-   },
-   {
-    "item": "f. 93r l5 \"sin h..\" (~6 tokens)",
-    "blocker": "illegible",
-    "detail": "writer's slips"
+    "detail": "no sense as written; the signs beside it are nulls; same digits on the Gallica microfilm (second image)"
    },
    {
     "item": "f. 93r l8 looped code group (~2 tokens)",
     "blocker": "illegible",
-    "detail": "figures uncertain"
+    "detail": "figures uncertain; same digits on the Gallica microfilm (second image)"
    }
   ]
  }

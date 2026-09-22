@@ -1,6 +1,6 @@
 # Vincenzo Gonzaga (Mantua) to Louis de Gonzague, duc de Nevers, 17 Sept 1590 — BnF fr. 3979 ff. 92–93, DECODE R4176
 
-Status: read in part (866 of 926 cipher tokens, 93.5%, counted in reading.md; key complete from the archive)
+Status: read (878 of 923 cipher tokens, 95.1%, measured in reading.md; key complete from the archive)
 
 Session of 21 September 2026. Catalogue entry "Vincenzo Gonzaga, duke of Nevers → Louis Gonzaga". The sender is
 Vincenzo I Gonzaga, **Duke of Mantua** (DECODE's "duke of Nevers" for him is a slip), writing to his uncle Nevers.
@@ -47,6 +47,10 @@ In sum: Mantua reports the rumour that Sixtus V was poisoned by the Spaniards, w
 and assures Nevers (for the King) of his devotion to the French crown against the "common enemy", a guarded pro-Bourbon
 declaration of September 1590.
 
+Gallica pass (21 Sept): on f. 93r the q-like sign is the key's ♀ = non and the following ● = che, and the
+microfilm gives 14 35 31 38 "hora": "…al servitio di che, **sì come non hò mancato in quello che hò potuto sin hora**
+di darne c[..] parte…" (digits 14 35 11 13 16 36 38 23 33 35, one stray 33, a writer's slip).
+
 ## Signs and code words read from the key (f. 64, upper right)
 
 θ-with-bar per · ●— che · ♀ non · Y V.A. · ⊡ S. Ecc.za · ⊕ S. M.tà · ⊙ S. S. Ill.ma · flag-Γ S. A. · ⌊ et · S-sign quello ·
@@ -58,14 +62,14 @@ il Legato ha scritto in Italia", "{T} Monsignor" = "Di Monsignor" (flag-Γ).
 
 ## Remaining gaps
 
-The full working reading and the token count are in `reading.md` (866 of 926 tokens read, 93.5%, counted; nulls
-count as read). Each stretch below was re-read independently at 4x twice (retry pass, then the blind re-read).
+The full working reading and the token count are in `reading.md` (878 of 923 tokens read, 95.1%, measured; nulls
+count as read). Each stretch below was re-read independently at 4x twice (retry pass, then the blind re-read), and
+again on the second image, the BnF microfilm on Gallica (btv1b9060544v, canvases 160-162), and run through the beam
+with any-digit substitution.
 
 - f. 92r l5 tail (~10): "la nda a a di" before ⊡ - blocker: illegible; writer's slips, no other copy
-- f. 92r l8 middle (~27): writer's slips; re-read twice and run through the beam with any-digit substitution, no Italian - blocker: illegible
-- f. 92v "la mondezza a me" (~6) - blocker: illegible; digits as written give no sense (the signs {0Δ}, {4-sign}, {9} there are nulls on the key's "Seguitano le Nulle" list)
-- f. 93r l4 middle (~9): q-like sign and the stretch before "in quello" - blocker: illegible; looped glyphs
-- f. 93r l5 (~6): "sin h[..]" - blocker: illegible; writer's slips
+- f. 92r l8 middle (~27): writer's enciphering slips; digits agree on both images; re-read twice and run through the beam with any-digit substitution, no Italian - blocker: illegible
+- f. 92v "la mondezza a me" (~6) - blocker: illegible; digits identical on both images and give no sense (the signs {0Δ}, {4-sign}, {9} there are nulls on the key's "Seguitano le Nulle" list)
 - f. 93r l8 (~2): looped, dotted code group before "comune nemico" - blocker: illegible; figures uncertain
 
 ## Escalation
@@ -75,4 +79,5 @@ count as read). Each stretch below was re-read independently at 4x twice (retry 
 - [x] print: Tomokiyo nevers.htm and DECODE: no decipherment or edition of this letter
 - [n/a] key-rebuild: the key is complete from the archive sheet; the unread stretches are transcription or writer's slips, not missing key values
 - [x] retry: doubtful lines re-read at 3x by a subagent with 3/9, 0/8, 7/8 and 27/28 alternatives in beam.py; 92v and 93r mostly recovered, the stretches above remain
-- [x] retry: second independent blind re-read at 4x of every unread stretch, +56 tokens (blind_92r.md, blind_93r.md); the six stretches above remain
+- [x] retry: second independent blind re-read at 4x of every unread stretch, +56 tokens (blind_92r.md, blind_93r.md)
+- [x] siblings/second image: Gallica microfilm btv1b9060544v re-read of every unread stretch, +15 tokens (93r l4 "sì come non hò mancato in quello che", l5 "sin hora"); the four stretches above remain
