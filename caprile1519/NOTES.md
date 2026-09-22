@@ -22,7 +22,7 @@ DECODE R1128–R1139 (R1137 is Cistarelli). Images fetched with the shared cooki
 | R1131 | no. 5a | 1861 | 12 May 1519 | partial | 5b, 5c (V1862–1863) | 1519 two-tier |
 | R1132 | no. 6a | 1864 | May 1519 | decrypted | 6b, 6c (V1865–1866) | 1519 two-tier |
 | R1133 | no. 7a | 1867 | May 1519 | decrypted | 7b, 7c (V1868–1869) | 1519 two-tier |
-| R1134 | no. 8a | 1870 | 12/15 Jun 1519 | partial | 8b, 8c (V1871–1872); interlinear on pp. 4–5 | 1519 two-tier |
+| R1134 | no. 8a | 1870 | 12/15 Jun 1519 | partial | 8b, 8c (V1871–1872), covering pp. 1–3 only; pp. 4–5 are a second letter (Buda 15 Jun) in clear with cipher insertions, no decipherment | 1519 two-tier |
 | R1135 | no. 10a | 1874 | 1519 | partial | 10b (V1875, 19th-c. copy, gaps); interlinear gloss on the leaf | 1519 two-tier |
 | R1136 | no. 11 | 1876 | 8 Mar 1520 | partial | none found | 1520–21 sign cipher |
 | R1137 | Cistarelli no. 3 | 1904 | 25 Jul 1520 | partial | none found | two-digit numeric |
@@ -110,6 +110,8 @@ another 1882-paired letter (R1131/5b, R1132/6b) line by line against the deciphe
 codebook, then R1128.
 
 ## Log
+
+- 2026-09-21/22 (Fantini session, `pair5/`, `pair8/`, `pairX/`): R1131/5b alignment fails (water stain; no better than shuffled). R1134 pp. 4–5 carry no interlinear gloss (corrected in the table). **R1130 against 4c shows the 1519 cipher is syllabic**: upper sign ≈ consonant, base ≈ vowel (7 none, m e, n o), bracket-L = CV syllables ([y] te, [m] re, [&] to, [s] si, [L] ra); `intertenere` = y/7 9/7 [y] c/7 [y] z/m [m]; ~20 values, held-out 16/18 vs shuffled 8.1 (`pairX/t.txt`, `plain.txt`, `key.json`). The one-letter-per-column values in `fixed1519.json` conflict with it and should be rechecked. A control-validated syllabary annealer is in `jantini1517/syl_anneal.py`.
 
 - 2026-09-21: DECODE R1126–R1140 metadata and images; Vestigia searches "Caprile" (52) and "Cistarelli" (20);
   contact sheets of every page. Transcriptions of R1137 and of the 1520–21 cipher by two agents. Literature: ASMo
