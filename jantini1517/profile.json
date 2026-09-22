@@ -176,12 +176,18 @@
    "kind": "control",
    "what": "Size-matched controls: 144 true signs fail even noise-free (42%); 90-100 signs with 3-5% noise succeed (92-95%). The real text filtered to 87 labels still does not converge, so it is not a simple one-letter-per-sign homophonic cipher.",
    "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Caprile R1133/7c shows bracket signs are whole words; under that model Fantini's letters fall into 189 runs of about 5 signs (903 tokens, 121 labels). A control of that shape at 3% noise recovers 7%: ciphertext-only is infeasible.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "not read",
   "fraction_read": 0,
   "verification": [],
-  "notes": "Attempted, open. Both pages transcribed three ways and adjudicated (~2-5% residual error). Size-matched controls show a simple homophonic cipher of this size would be solved; the real text does not converge under any tested unit model, so the system has word, null or syllable signs not yet identified. Needs a crib or key (Caprile 1519 key from R1133/7c, if the same system)."
+  "notes": "Attempted, closed unread for lack of key material. Both pages transcribed three ways (~2-5% residual error). The bracket signs are word codes (as in Caprile 1519), leaving letter runs of about 5 signs; a matched control recovers 7%. Needs a key or crib: the Caprile 1519 key, or an ASMo decipherment."
  }
 }

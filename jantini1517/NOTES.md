@@ -78,6 +78,13 @@ sibling, the cipher is not readable from the material available.
   29 %. With 90-100 signs and 3-5 % noise, 92-95 %. The filtered real text (87 labels, about 3 % noise) should therefore
   solve if it were a simple one-letter-per-sign homophonic cipher. It does not, so the cipher is not that: word
   signs, nulls or syllable signs are likely. Without a crib this is where a ciphertext-only attack stops.
+- Structural check against Caprile R1133 and its 1882 decipherment (7c): there, 1,327 columns carry 2,177 letters, and 245
+  bracket signs are whole words. Read the same way, Fantini's ~290 brackets are word codes, and they cut the letter signs
+  into 189 runs averaging 4.8 signs (903 letter tokens, 121 labels; `c_v5nb.txt`). A control of that shape (runs of 5
+  broken by code gaps, 121 symbols, 3 % noise) recovers **7 %**. So ciphertext-only cannot read this letter at any
+  transcription quality. Only a key or crib can: the Caprile 1519 key, where it shares labels (82 shared label types
+  covering 76 % of Fantini's tokens, but the commonest signs differ: Fantini 2/7, &/m, zf/7 against Caprile 9/7, m/7,
+  L/7), or an ASMo decipherment not on Vestigia. This is an outside blocker (no key material).
 
 ## Remaining gaps
 
