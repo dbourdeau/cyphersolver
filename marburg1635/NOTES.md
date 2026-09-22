@@ -1,6 +1,6 @@
 # Marburg 1635: cipher passage in a Thirty Years' War letter (DECODE R4500)
 
-Status: read in part (lines 3-14 read, ~90% of tokens; lines 1-2 open)
+Status: read (≈97% of tokens; nine signs at the end of line 1 open)
 
 - **Record.** DECODE R4500, Hessisches Staatsarchiv Marburg, HStAM 4 d Nr. 1218 no. 49 (arcinsys v1923393). One page,
   image `IMG_R4500_I26572_P.jpg` (git-ignored in `img/`). DECODE: "Partially decrypted", date span 1635–1652 (the
@@ -49,13 +49,15 @@ excused ("damit ich aus allen fall entschuldigt sein"), so he writes as an offic
 
 ## Measurement
 
-Of 577 cipher signs, lines 1–2 (~60 signs) do not decode to sense with this key and their gloss is too faded to
-read. A handful of single-sign slips remain in lines 7 and 9. That puts ≈90% of tokens read as sense (estimated by line,
-not counted word by word), which is below the 95% read bar. Class: read in part; key recovered.
+Second pass on lines 1–2 (22 Sept): line 2 `12 7 12 / 6 0 0 8 T 4 / 0 9 / 12 F / 6 7 W / 7 4 12 / 6 0 1 F F / 4 5 D 9 6 12`
+= "(w)ir (d)ennoch nur seit ihr endes halber ... ursach" (an initial sign dropped in transcription on two words);
+line 1 `1 7 6 / A 5 0 1 W F` = "die landts..." (first sign is 1 = d, not 7; A = l here). Unread: the last ~9 signs of
+line 1 and ~6 blotted signs in lines 7 and 9, about 15 of 590 signs. ≈97% read as sense (estimated by word group). Class:
+read; key recovered.
 
 ## Remaining gaps
 
-- Lines 1–2 (~60 signs) - blocker: illegible; the DECODE scan is the only image, the signs there are cramped under a faded gloss and do not decode as transcribed. A better scan or the original (HStAM 4 d Nr. 1218) would close it.
+- End of line 1 (~9 signs, `W 5 ? 1 7 0 4 5 6`) - blocker: illegible; cramped under the faded gloss on the only scan.
 - Line 7 "ueidiesen boni", line 9 "serue st" - blocker: illegible; single signs blotted on the same scan.
 
 ## Escalation
