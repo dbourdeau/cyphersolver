@@ -1,0 +1,199 @@
+{
+ "schema_version": 1,
+ "target": "ferdinand1619",
+ "title": "Ferdinand of Bavaria, Elector of Cologne, to Duke Maximilian I of Bavaria, Bonn, 22 December 1619",
+ "documents": [
+  {
+   "id": "R9426",
+   "read": "read",
+   "shelfmark": "BayHStA, Kurbayern Äußeres Archiv 4591, ff. 281-286 (DECODE R9426)",
+   "date": "22 Dec 1619",
+   "year": 1619,
+   "country": "Electorate of Cologne",
+   "route": "Bonn -> Munich",
+   "language": "German",
+   "pages": 10,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "no decipherment with the letter; DECODE status 'Non-decrypted'; no printed edition found",
+    "partial": false
+   },
+   "length": {
+    "tokens": 2614,
+    "distinct": 66,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R9426_I44572_P1..P11 (login only, not public domain)",
+    "corrections": 60,
+    "image_quality": "fair",
+    "notes": "docs/_check_profile.py --measure over transcription.txt gives 3932 tokens / 634 distinct, which counts the bracketed clear words and the two word-end separator signs as tokens; the profile uses count.py's figure of 2614 enciphered tokens (2519 letter tokens, 95 nomenclator tokens), which is the unit the read bar is measured in. Image 7 duplicates image 6 (same page photographed twice), so the ten pages are on eleven images."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution on even two-digit figures 10-78 with two word-end separator signs, plus a three-digit nomenclator.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 63,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 1,
+   "per_letter": {
+    "a": 3,
+    "e": 3,
+    "i": 2,
+    "o": 3,
+    "u": 2
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 32,
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 31
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "separator symbol"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "DECODE R9426 'Non-decrypted'; not in Briefe und Akten NF I/1 (Franz 1966), Hurter viii, Wolf/Breyer iv or Pastor; 'Kurbayern Aeusseres Archiv 4591' cited nowhere",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "supplied the DECODE account whose cookie fetched the images in an earlier session; nothing else",
+  "tools": [
+   "simulated annealing over a homophonic key (solve.py)",
+   "lang de-1500s 5-gram character model",
+   "LM-guided single-token transcription repair (repair.py, wordfix.py)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "DECODE record page and the eleven images, already in the untracked kaa4591/img/ work folder from the catalogue-161 session",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "agent sweep of Briefe und Akten zur Geschichte des Dreissigjaehrigen Krieges NF I/1 (Franz 1966), Hurter viii, Wolf/Breyer iv, Pastor, Google Books and archive.org for a printed text or decipherment of either 1619 letter",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "ten pages read line by line into transcription.txt, clear passages bracketed; pages 3-10 photographed upside down and rotated first",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "statistics",
+   "what": "symbol inventory: 34 even two-digit values carry the letters, three-digit and odd two-digit groups stand apart, two signs recur at every word end",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "homophonic substitution with vowel homophones and a separate nomenclator, German plaintext",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "six annealing restarts over pages 1-3 (932 letters) against lang de-1500s",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "ten restarts over all ten pages (2482 letters); the key table settled and the text read as German",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "decode.py flagged every word the model dislikes; about sixty single-token transcription slips corrected (digit pairs 0/6, 3/5, 1/4, 2/7, 5/8), a sample re-checked on the images at full zoom",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "the key applied unchanged to the sibling record R9425 (ff. 278-280, same correspondence): its first cipher line reads 'lbrecht von Gottes Gnaden'",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "KAA 4591's own key records searched for the 1619 cipher: R9419 (f. 267) is a Latin 1-99 nomenclator, R9420-R9423 are 1530s-1583 alphabets",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "R9425's red marginal notes enhanced by channel separation and contrast, hoping for a group-by-group decipherment of the nomenclator; the margin is an abstract of the letter, not a decipherment",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "sender, recipient, place and date established from the clear last page ('meiner Statt Bonn den 22. Decembris Anno 1619', signed Ferdinand) and from the ciphered 'mein Thumbcapitel', 'meine Landtstendt', Paderborn",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "fraction_read": 0.958,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "count.py over transcription.txt: enciphered tokens; letters in words that do not read as German counted unread, nomenclator groups without an established value counted unread",
+  "codes_open": {
+   "open": 31,
+   "total": 32,
+   "tokens_open": 74
+  },
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "notes": "Letters: 2483 of 2519 read. Nomenclator: only 248 = 'und' is established, from its own contexts. Four words (37 tokens) still do not read and three read as proper names whose bearers are not identified."
+ }
+}
