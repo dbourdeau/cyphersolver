@@ -1,0 +1,164 @@
+{
+ "schema_version": 1,
+ "target": "bizozola1520",
+ "title": "Ambrogio Bizozola to Maximilian Sforza, Bologna 4 Nov 1529 (BnF fr. 3034 ff. 156-157, DECODE R4224)",
+ "documents": [
+  {
+   "id": "f156",
+   "shelfmark": "BnF, Français 3034, ff. 156r-157v, no. 69 (DECODE R4224); Gallica btv1b90600370 views 246-249",
+   "date": "4 Nov 1529 (inferred)",
+   "year": 1529,
+   "country": "Italy",
+   "route": "Bologna -> France (Maximilian Sforza at the French court)",
+   "language": "Italian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment; Lasry's key table (05/11/2023) shown on Tomokiyo's cryptiana GL.htm, no published plaintext."
+   },
+   "length": {
+    "tokens": 1914,
+    "unit": "symbols",
+    "measured": false,
+    "file": "cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Shape codes transcribed by eye from Gallica full-resolution views 246, 247 and 249 (codes.txt)",
+    "image_quality": "good",
+    "notes": "1914 signs transcribed, all 66 lines of the four pages (non-space characters of cipher.txt; _check_profile --measure counts space-separated words or ASCII letters only, neither fits this code)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "homophonic"
+  ],
+  "summary": "Letter substitution with invented signs, words spaced, a few homophones and one sign serving a/u and one f/s (Lasry key).",
+  "symbol_kind": "symbols",
+  "digit_groups": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": "unknown",
+   "entries": "unknown",
+   "kinds": [],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": true,
+   "count": 1
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "notes": "Long-loop sign = t; ʒ = a and u; ʃ = f and s; small cross = e; ꝏ a line-end filler; rho-like signs in the date line unread."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Lasry key table (05/11/2023) on Tomokiyo, cryptiana GL.htm; no plaintext published there or on DECODE",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "curl/urllib (Gallica IIIF)",
+   "python line segmentation (seg.py)",
+   "python decoder (decode.py)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Grepped Tomokiyo's GL.htm (saved copy in gramont1529/) for fr. 3034: section names the Bizozola-Sforza cipher and shows Lasry's key image; fetched it.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "access",
+   "what": "Gallica SRU dc.source adj 'Français 3034' gave btv1b90600370; contact sheet of views 240-251 located ff. 156-158; natives fetched (one 429 on view 251).",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "transcription",
+   "what": "Lines segmented by projection; all 66 lines of ff. 156r-157v transcribed into shape codes by eye.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "key from source",
+   "what": "Lasry's table applied (decode.py): Italian reads at once (per le mie ultime di Cremona; con lo imperatore; al marchese di Monferrato).",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Homophones forced by context: long-loop sign = t, ʒ = a and u, ʃ = f and s, small cross = e in the postscript.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "reading",
+   "what": "All four pages read: partition of the Milanese state discussed in the Emperor's council; Charles V's entry into Bologna; misser Giulio, the Pope; a few lines doubtful.",
+   "result": "partial",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "ꝏ occurs only at line ends where the word runs on (al duca ꝏ / di Savoia): a line-end filler.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "verification",
+   "what": "Date line 'Bologna, quattro del ... novembre' plus 'domane sarà l'intrata' matched to Charles V's entry into Bologna, 5 Nov 1529.",
+   "result": "worked",
+   "date": "2026-09-21"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "fraction_read": 0.9,
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "All four pages transcribed and read in sense except about six lines of doubtful words and the date numerals; Lasry key plus homophones.",
+  "key": "recovered",
+  "gaps": [
+   {
+    "item": "rho-like signs in the date line, f. 157v ll. 9-10",
+    "blocker": "too-short",
+    "detail": "two or three occurrences"
+   },
+   {
+    "item": "f. 157r ll. 7-8, f. 157v ll. 3-4, f. 156r ll. 4, 16: words not resolved",
+    "blocker": "illegible",
+    "detail": "ambiguous ligatured sign forms on the Gallica scan"
+   }
+  ]
+ }
+}
