@@ -232,3 +232,14 @@ Catalogue no. 113 ("B. Worecster, Ed. Lee Eleem. (Hispania) to unknown recipient
 - No cipher sign on either page. DECODE's "ciphertext" is the whole-volume listing again.
 
 Outcome: not a cipher; nothing to read. Closed and removed from the catalogue 22 Sept 2026; DECODE correction queued.
+
+## Catalogue 108: R8574 (Vesp. C IV ff. 259-261, 1528)
+
+Catalogue no. 108 ("B. Worc., Ed. Lee (Hispania) to unknown recipient", Vesp. C IV ff. 259-261, old foliation
+240-242, DECODE R8574, 6 pp.). All six images downloaded with the DECODE cookie and read 22 Sept 2026 (git-ignored in
+img/). It is a **clear** English letter in a secretary hand, headed "Hispania 1528", signed "Hier. Eps Wigornien" and
+"Edouarde Lee", with no cipher sign on any page. It opens "Right honorable, we have received your two letters" and
+advises its correspondent how to answer the Emperor: the particular peace between the King and the Emperor, the
+delivery of the pledges (the French princes) and the French king's assurance, commissions and mandates, and Jean
+Allemand's communications. Wolsey is "my lord Cardinal" in the third person, so he is not the recipient; the
+recipient is not identified here. Closed as no cipher and removed from the catalogue; DECODE correction queued (N/A).
