@@ -569,6 +569,11 @@ PAGES = [
          blurb='Blenheim Papers Add MS 61575 f. 95 is catalogued on DECODE (R8774) as a non-decrypted numerical cipher. The page has no numbers: it is seven lines of plain French, spelled by ear and split into syllables, thanking someone for teaching the writer to write in cipher and wishing them a good journey. Writer and recipient are unidentified.',
          quote='&ldquo;en me mon trant d&rsquo;es cria re en sif fer&rdquo;',
          rights='British Library, via DECODE; image not reproduced'),
+    dict(slug='bay1706', label='Bay to R&aacute;k&oacute;czi 1706', year='1706', y=1706.2, place='J&aacute;szv&aacute;s&aacute;r &rarr; R&aacute;k&oacute;czi', st='solved', stt='read',
+         title='Andr&aacute;s Bay to Ferenc R&aacute;k&oacute;czi II, J&aacute;szv&aacute;s&aacute;r, 8 March 1706',
+         blurb='A ciphered despatch from R&aacute;k&oacute;czi&rsquo;s man at the Moldavian court (DECODE R478) was catalogued as undeciphered, with no key. Scoring all 94 R&aacute;k&oacute;czi chancery keys on DECODE against it picked out R609, a Hungarian syllabic nomenclator, which reads it unchanged. The Tsar suing Charles XII for peace, the Muscovite and Polish envoys at Ia&#351;i, a message from Pekri to the voivode, and the Swede at Vilna.',
+         quote='&ldquo;tudv&aacute;n az bar&aacute;t az Port&aacute;nak szem&eacute;nek &eacute;s f&uuml;l&eacute;nek lenni&rdquo;',
+         rights='MNL OL, via DECODE; lead crop only'),
     dict(slug='papai1706', label='P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10', year='1706&ndash;10', y=1706.5, place='Constantinople &rarr; R&aacute;k&oacute;czi', st='solved', stt='read',
          title='J&aacute;nos P&aacute;pai to Ferenc R&aacute;k&oacute;czi II, 1706&ndash;1710 &mdash; the envoy&rsquo;s own key',
          blurb='Twelve ciphered despatches of R&aacute;k&oacute;czi&rsquo;s envoy at the Porte (DECODE R731&ndash;R823, filed under three catalogue entries, one as from an &lsquo;unknown sender&rsquo;) were catalogued as undeciphered. The key issued to P&aacute;pai survives as DECODE R580, a Hungarian syllabic nomenclator, and nothing linked the two. Applied unchanged, it gives values for 16,346 of 16,861 groups in eleven letters, the rest mostly nulls: Imperial troops crossing Ottoman ground, audiences before the internuncio, the French ambassador failing to bring the Porte to war, the French and Muscovite ambassadors, money. The twelfth letter (Belgrade, 1710) uses a graphic-sign alphabet and stays unread.',
@@ -1005,6 +1010,7 @@ IMAGES['guiche1551'] = ('guiche1551_lead.jpg', 'BnF fr. 3138 f. 60v, La Guiche t
 IMAGES['rakoczi1707'] = None
 IMAGES['rakoczi1704'] = None
 IMAGES['papai1706'] = None
+IMAGES['bay1706'] = ('bay1706_lead.jpg', 'The opening of the letter, clear salutation then cipher', 'MNL OL G15 D 81/5, via DECODE R478')
 IMAGES['charlesixducroc'] = ('charlesixducroc_lead.jpg', 'Charles IX to Philibert du Croc: the main letter in graphic cipher, with the signature and postscript lower on the leaf', 'Archives d&eacute;partementales de la Ni&egrave;vre, reproduced by Destray (1924), via Gallica and DECODE R2789')
 IMAGES['vanreede1792'] = ('vanreede1792_lead.jpg', 'Van Reede to William V, 4 February 1792: the figures with the contemporary pencil gloss &mdash; ci tro n sur le(s) &hellip; demi', 'Koninklijk Huisarchief, The Hague, via DECODE R1057')
 IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch of 29 December 1787, first page: the gloss dites &hellip; avant hier over the first groups, 2750 &hellip; 2578 3350', 'Nationaal Archief, The Hague, via DECODE R1026')

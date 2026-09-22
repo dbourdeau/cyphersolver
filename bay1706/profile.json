@@ -1,0 +1,149 @@
+{
+ "schema_version": 1,
+ "target": "bay1706",
+ "title": "András Bay to Ferenc Rákóczi II, Jászvásár 8 March 1706 (DECODE R478)",
+ "documents": [
+  {
+   "id": "R478",
+   "read": "read",
+   "shelfmark": "MNL OL G15 Caps. D. Fasc. 81. 5 (DECODE R478)",
+   "date": "8 March 1706",
+   "year": 1706,
+   "country": "Moldavia",
+   "route": "Jászvásár (Iași) -> Ferenc Rakoczi II",
+   "language": "Hungarian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No prior plaintext; read here with Rakoczi's key DECODE R609."
+   },
+   "length": {
+    "tokens": 414,
+    "unit": "code groups",
+    "measured": true,
+    "file": "R478_transcription.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "R478_transcription.txt",
+    "image_quality": "good",
+    "notes": "DECODE transcription (AJ 2020) corrected against the images: 7 fixes. Group count from decode.py's parse (digits are spaced, so --measure cannot split them)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Hungarian two-digit syllabary (letters with homophones, CV syllables, short words) plus a 149-293 nomenclator of places, peoples and titles, with nulls.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "commas"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": 1
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "sibling_key": "DECODE R609 (G15 C 43/56); R561 an earlier issue",
+  "notes": "Key not linked to the letter on DECODE."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "DECODE 'Non-decrypted'; web search found no edition",
+   "found": "unknown",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Posed the target; supplied the DECODE session cookie earlier.",
+  "tools": [
+   "DECODE key records",
+   "key scorer with Hungarian 4-gram LM",
+   "table decoder"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched R478 record, DECODE transcription and both page images with the project cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "key from source",
+   "what": "Fetched the 94 G15 key transcriptions (R549-R646) and scored each on R478 by coverage and Hungarian 4-gram score (score_keys.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "R609 ranked first (98% coverage, -2.57/char) and gave running Hungarian; R561 second.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Checked DECODE's transcription line by line against the images; 7 corrections (iv->10, 0->clear é, 1257->127, 74 and 63 restored, etc.).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "decode.py: 414 groups, 413 with R609 values, 50 = ba from context; one ~10-group stretch reads letter by letter without clear sense.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Web search (Hungarian) for Bay's 1706 Moldavian despatches: no edition or decipherment found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 0.976,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py over R478_transcription.txt: 414 cipher groups all given values; ~10 groups in one p. 2 stretch read letter by letter but not as sense, counted unread (404/414).",
+  "key": "recovered",
+  "codes_open": {
+   "open": 1,
+   "total": 1,
+   "tokens_open": 1
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Report from the Moldavian court: Muscovite and Polish envoys, Tsar seeking peace with Charles XII, Pekri's message to the voivode, the Swede at Vilna."
+ }
+}
