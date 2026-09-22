@@ -217,3 +217,18 @@ orator in Mons. de Nassau's chamber at eight in the morning, the Emperor's peace
 Tamarlet, the Viceroy and Bayard, the President (of Bordeaux) and Mons. de Praet, "ij millions qualefied for dayes of
 paye", and the treaty of Madrid. "Eleem." is the "Eleemosynarius" (almoner) of Lee's title, not a person.
 Closed as no cipher and removed from the catalogue; DECODE correction queued (N/A, recipient Wolsey).
+
+## Catalogue 113: R8557 (Vesp. C IV f. 162, 1527)
+
+Catalogue no. 113 ("B. Worecster, Ed. Lee Eleem. (Hispania) to unknown recipient", DECODE R8557, "Non-decrypted",
+2 pp.). Both images downloaded and viewed 22 Sept 2026 (git-ignored in img/).
+
+- f. 162r-v (old foliation 150), heading "Hispania 1527", margin "B: Worcester / Ed: Lee / Eleem." (bishop of
+  Worcester, Edward Lee, *eleemosynarius*): a leaf of a joint Ghinucci-Lee despatch to Wolsey ("your grace") from the
+  Emperor's court, summer 1527, in clear English. Content: the French ambassadors' demands, the bishop of Tarbes's
+  instructions, the audience with the Emperor, Monsieur de Prat and Monsieur de Burlant, the Emperor's complaint that
+  conditions of the treaty of Madrid were impossible to fulfil. The verso ends mid-sentence ("we wold write to the
+  kinges highnes and your grace"), so the letter goes on elsewhere.
+- No cipher sign on either page. DECODE's "ciphertext" is the whole-volume listing again.
+
+Outcome: not a cipher; nothing to read. Closed and removed from the catalogue 22 Sept 2026; DECODE correction queued.
