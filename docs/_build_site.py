@@ -932,6 +932,11 @@ PAGES = [
          rights='British Library, via DECODE'),
     dict(slug='bergamo1585', label='Paris nunciature, Francia 18', year='1585&ndash;87', y=1586.2, place='Paris &rarr; Rome', st='solved', stt='read &mdash; R16 and R17 read here',
          title='The Paris nunciature to the Secretariat, Francia 18, 1585&ndash;87', blurb='Three ciphered despatches catalogued as partly decrypted (AAV Segr. Stato Francia 18, DECODE R15&ndash;R17). R15 had been read by George Lasry; R16&rsquo;s decryption on DECODE is a copy of R15&rsquo;s, so R16 was unread. Read here with Lasry&rsquo;s key and the nomenclator Meister printed in 1906: Guise refuses the King&rsquo;s sale of church property unless given Metz and money. R17 reads with Meister&rsquo;s key no. 40 of 1587: Lorraine, the Guises and the reiters.', quote='il Duca di Guisa mi ha mandato a dire', rights='Archivio Apostolico Vaticano, via DECODE'),
+    dict(slug='harley1582r8505', label='Estat du Roy de Navarre', year='after 1580', y=1584.5, place='France &rarr; an English file', st='stuck', stt='not read',
+         title='&ldquo;L&rsquo;Estat du Roy de Navarre et de son party en France&rdquo; &mdash; Attempted',
+         blurb='DECODE R8505, catalogued as four pages of graphic signs by an unknown sender, London, language &ldquo;English?&rdquo;, is a French political memoir on Henri de Navarre&rsquo;s party (BL Harley MS 1582 ff. 263&ndash;264), written after 1580 and filed with Sir Edward Stafford&rsquo;s papers. Identified and transcribed here for the first time: about 3,630 graphic signs written inline in the clear French, with ten nomenclator numbers between dots. Homophonic on the statistics (IC 0.040, a clean Sukhotin vowel split), but no key was recovered under any language model. The record paired with it in the catalogue, R8501, proved to be a Stafford letter already read from its own decipherment.',
+         quote='&ldquo;L&rsquo;Estat du Roy de Navarre &amp; de son party en france&rdquo;',
+         rights='Manuscript: British Library, Harley MS 1582 (images on DECODE, not reproduced)'),
     dict(slug='harley1582r8500', label='Stafford August 1586', year='1586', y=1586.63, place='Paris &rarr; Walsingham', st='solved', stt='read',
          title='Stafford to Walsingham, Paris, 20 August 1586 &mdash; Read',
          blurb='DECODE R8500, catalogued as a non-decrypted letter of an unknown sender, London, is Sir Edward Stafford&rsquo;s holograph despatch from Paris of 20 August 1586 (BL Harley MS 1582 ff. 65&ndash;66). Its five cipher runs in the postscript were never deciphered on the page. Read here with Stafford&rsquo;s letter key, rebuilt from a contemporary decipherment (f. 72r) and glosses (f. 73r) on sibling letters: <code>6</code> is <i>e</i>, not a null. Junius&rsquo; son came from Cambrai with papers of his credit with Balagny.',
@@ -1778,6 +1783,7 @@ if __name__ == '__main__':
 IMAGES['poyntz1527'] = None
 IMAGES['stafford1586'] = None
 IMAGES['harley1582r8500'] = None
+IMAGES['harley1582r8505'] = ('harley1582r8505_lead.jpg', 'The heading and the first cipher run of f. 263r.', 'British Library, Harley MS 1582 f. 263r (via DECODE)')
 IMAGES['harley1582r8504'] = None
 IMAGES['poupet1522'] = ('poupet1522_lead.jpg', 'Passage A in cipher and in the 1522 decipherment: <em>Combien que je vouldroie mectre mon ame en gaige</em>', 'Biblioteca Nacional de Espa&ntilde;a, via DECODE R1187')
 IMAGES['santacroce1552'] = ('santacroce1552_lead.jpg', 'ASV Francia 3 f. 248r (DECODE R9), Paris, 14 December 1553: three cipher lines struck through, the same postscript written in clear beneath', 'Archivio Apostolico Vaticano, via DECODE R9')

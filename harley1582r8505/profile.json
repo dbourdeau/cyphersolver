@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "target": "harley1582r8505",
+ "title": "\"L'Estat du Roy de Navarre et de son party en France\", BL Harley MS 1582 ff. 263-264 (DECODE R8505)",
+ "documents": [
+  {
+   "id": "R8505",
+   "read": "not read",
+   "shelfmark": "BL, Harley MS 1582 ff. 263-264 (DECODE R8505)",
+   "date": "unknown (after 1580; internal references to 1576, 1577 and 1580)",
+   "year": 1585,
+   "country": "France",
+   "route": "unknown -> unknown (the volume is an English secretary's file; place of writing unknown)",
+   "language": "French",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"], "partial": false},
+   "length": {"tokens": 3630, "distinct": 56, "unit": "symbols", "measured": true, "file": "ciphertext.txt"},
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R8505_I39259_P1-P4 at full resolution",
+    "image_quality": "fair",
+    "notes": "First transcription of this document. f.263r read by the main model, f.264r and the two versos by two subagents working from a shared sign chart (signs.md); sign names normalised afterwards. All three readers flagged the b/T, omega-family, epsilon-family and Pi-family splits as uncertain, so the sign-level error rate is probably 10-15%."
+   }
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "nomenclator", "undetermined"],
+  "summary": "Graphic-sign cipher of about 50 shapes with nomenclator numbers written between dots; the statistics fit a homophonic alphabet, but the key is not recovered.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 56,
+  "diacritics": {"used": false, "note": "no systematic marks seen; dot groups of one to four dots punctuate the runs"},
+  "homophones": {"used": true},
+  "nomenclator": {"present": true, "entries": 10, "kinds": ["names"], "unread_groups": 10},
+  "nulls": {"present": false},
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Navarre's numeric cipher with Segur (BnF 500 Colbert 401, recovered in ../segur) is not this key; it is numeric, not graphic.",
+  "notes": "Nomenclator numbers seen in the text: 6, 21, 26, 36, 51, 57, 72, 81, 99, 721. Index of coincidence 0.0398 over 3630 tokens; Sukhotin's test splits the signs into about 20 'vowel' signs carrying 51% of the text."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "no", "where": "none found on the DECODE record, in the volume's other records (R8498-R8506), or in print/calendars", "found": "not found", "used": false},
+  "inputs": ["images", "cleartext context"],
+  "attack": "ciphertext-only",
+  "human_role": "supplied the DECODE login cookie (stored in the repository) and the target",
+  "tools": ["simulated annealing over homophonic keys (solve.py, solve3.py)", "letter/syllable/null variant (solve2.py)", "shared lang/ n-gram LMs", "Sukhotin vowel test"],
+  "models": ["claude-opus-5[1m]"],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {"date": "2026-09-22", "kind": "literature search", "what": "Checked the catalogue's two records: R8501 (Harley 1582 ff. 71-72) proved to be a Stafford 1586 despatch already read in the sibling target harley1582r8500 from its own f.72r decipherment; only R8505 was open.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "access", "what": "Fetched the four full-resolution R8505 images with the DECODE session cookie.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "hypothesis", "what": "Identified the document from its clear text: the French memoir 'L'Estat du Roy de Navarre & de son party en France', written after 1580, on Navarre's standing, places, gentlemen and alliances. DECODE had no title, no date, no author and gave the language as English.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "literature search", "what": "Searched for the memoir in print and in the Calendars of State Papers Foreign 1583-86, and for a graphic-sign Navarre key in DECODE and Tomokiyo's tables.", "result": "failed"},
+  {"date": "2026-09-22", "kind": "transcription", "what": "Transcribed every cipher run on all four sides (3,630 sign tokens, 56 sign names) against a shared sign chart; lines slope by a full line-height across the page, so runs were followed in overlapping band crops.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "statistics", "what": "IC 0.0398 over 3,630 tokens and Sukhotin's vowel test: consistent with a homophonic alphabet of about 50 signs, not with a syllabary (the commonest sign carries 8.7% of the text).", "result": "worked"},
+  {"date": "2026-09-22", "kind": "solver", "what": "Homophonic annealing with a 1530-1600 French LM (order 4/5, no spaces) and a unigram-frequency penalty, up to 20 restarts x 400k moves, whole text and page by page.", "result": "failed"},
+  {"date": "2026-09-22", "kind": "solver", "what": "Variant allowing each sign to stand for a letter, a common syllable, a double or a null.", "result": "failed"},
+  {"date": "2026-09-22", "kind": "control", "what": "Language control: the same anneal under English, Spanish, Italian and 17th-c. French models reaches the same score as the French despatch model (about -2.9/char against -1.9 for real text), so no language fits and no key was found.", "result": "ruled out"}
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "ciphertext.txt: 3630 cipher tokens, none given a value",
+  "codes_open": {"open": 10, "total": 10, "tokens_open": 14},
+  "verification": ["none"],
+  "notes": "The document is identified and transcribed for the first time; the cipher is not broken. The most likely obstacles are the sign-level transcription error rate and the possibility that the key mixes letters with syllables, doubles and nulls, as a 1583 letter to Segur describes for Navarre's ciphers of these years."
+ }
+}

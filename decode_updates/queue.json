@@ -6441,36 +6441,35 @@
     }
    }
   },
-  "ferdinand1619": {
-   "writeup": "https://dbourdeau.github.io/cyphersolver/ferdinand1619.html",
+  "harley1582r8505": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/harley1582r8505.html",
    "key": {
-    "file": "ferdinand1619/key.txt",
-    "lang": "DE",
-    "how": "rebuilt ciphertext-only here by annealing against a 16th-century German character model: homophonic substitution on the even two-digit figures, a b c d e f = 10 12 14 16 18 20, g h i l m n o p q r s t u x z = 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58, second series a 60/70, e 62/72, i 64, o 66/76, u 68, k 74, w 78; two signs mark word ends; three-digit groups and odd two-digit groups are a nomenclator of which only 248 = und is established. Verified on the sibling R9425, which the same key reads unchanged."
+    "none": "no key for this cipher is known: none on the DECODE record, none in the volume's other records (R8498-R8506), none in print"
    },
    "cite": null,
    "fields": {
-    "author": "Ferdinand of Bavaria (1577-1650), Elector-Archbishop of Cologne, Prince-Bishop of Paderborn, Muenster, Hildesheim and Liege",
-    "sender": "Ferdinand of Bavaria, Elector of Cologne",
-    "receiver": "Duke Maximilian I of Bavaria, his elder brother (addressed 'hertzliebster herr Schwager', 'E. L.')",
-    "origin_city": "Bonn ('Geben in meiner Statt Bonn', clear, last page)",
-    "date": "22 December 1619 ('den 22. Decembris Anno 1619', clear, last page); DECODE gives only the year",
-    "cleartext_language": "German",
-    "plaintext_language": "German",
-    "cipher_type": "homophonic substitution (even two-digit figures, vowels with 2-3 homophones) with a three-digit nomenclator",
-    "pages": "10 pages on 11 images: image 7 is a second photograph of the page on image 6; images 3-10 are upside down",
-    "related_records": "R9425 (ff. 278-280), the same cipher and the same correspondence, read unchanged by this key"
+    "title": "L'Estat du Roy de Navarre & de son party en France",
+    "cleartext_language": "French (DECODE has 'English?')",
+    "plaintext_language": "French",
+    "country": "France (place of writing; the volume is held in London)",
+    "dating": "after 1580 (internal references to 1576, 1577 and Brouage 'l'an 1580')",
+    "cipher_type": "homophonic substitution with a small nomenclator (DECODE has 'Unknown')",
+    "symbol_set": "graphic signs, about 50 distinct, plus nomenclator numbers written between dots"
    },
    "records": {
-    "R9426": {
+    "R8505": {
      "decode_status": "Non-decrypted",
-     "proposed": "Decrypted",
-     "note": "Read here ciphertext-only (22 Sept 2026): 2504 of 2614 cipher tokens, 95.8%. The record's unknown author, recipient, place and language are all recovered: Ferdinand of Bavaria, Elector of Cologne, to Duke Maximilian I of Bavaria, Bonn, 22 December 1619, in German, on the quartering, pay and march of the Catholic League's troops in Westphalia. Key rebuilt from this record's own text and confirmed on R9425. Open: 31 of the 32 nomenclator groups (only 248 = und), three proper names, four words.",
-     "reading": [
-      {
-       "file": "decode_updates/decryptions/R9426.txt"
-      }
+     "proposed": "Non-decrypted",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "harley1582r8505/ct_p1.txt",
+      "harley1582r8505/ct_p2.txt",
+      "harley1582r8505/ct_p3.txt",
+      "harley1582r8505/ct_p4.txt",
+      "harley1582r8505/signs.md"
      ],
+     "note": "Identified 22 Sept 2026: the document is the French political memoir 'L'Estat du Roy de Navarre & de son party en France' (heading on f. 263r), written after 1580, on Navarre's two qualities, his places and garrisons in Guyenne, Languedoc, Dauphine and Provence, his gentlemen, and the Catholic and German alliances. The record's language should be French, not 'English?'. All four sides were transcribed (attached, ~3,630 sign tokens, with a sign chart); the cipher is homophonic on the statistics (IC 0.040) with nomenclator numbers 6, 21, 26, 36, 51, 57, 72, 81, 99, 721, and is not read. Status stays Non-decrypted. Note also that R8501 (Harley 1582 ff. 71-72) carries its own contemporary decipherment on f. 72r.",
      "sent": false
     }
    }
