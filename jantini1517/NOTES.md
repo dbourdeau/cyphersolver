@@ -53,6 +53,25 @@ Conclusion: the annealer works at this length and noise, so the failure is the m
 Without a crib (no decipherment, no clear copy, no printed text) and with a key different from the only paired
 sibling, the cipher is not readable from the material available.
 
+
+## Second attempt, 22 Sept 2026
+
+- Transcriptions: p. 1 read twice (t1126.txt, t1126_p1b.txt), agreement 90 %, adjudicated to `t1126_p1c.txt` (561 units).
+  P. 2 read twice (t1126_p2.txt, t1126_p2b.txt), agreement 76 %, adjudicated to `t1126_p2c.txt` (~790 units; about 20
+  decisions in L13-L17 unchecked). Combined solver input `c_v5.txt`: 1,258 units, 144 labels, 88 seen 3+ times.
+- Conventions settled: a raised y belongs to the base before it (y/7); "r" is a 7 with an entry stroke; "7 9" (bare 7, then
+  a 9 on the line) behaves as one sign, and "7 9 m^b" occurs 30 times.
+- Controls (synthetic Italian, the same solver): at 1,190 tokens and 90 symbols it recovers 98.7 % of letters with no noise,
+  92 % at 5 % label noise and 27-28 % at 10-15 %. So the method works at this length only if the transcription is 95 % right.
+- Solver runs on the adjudicated text (it-cinquecento 4-grams, 10 restarts x 300k moves, 4 seeds): the seeds disagree and
+  produce no Italian. The same happens with these unit models: one letter per unit; "7 9" merged; bare 7 as a null; upper
+  sign only; brackets as word codes (runs split at brackets); a consonant+vowel syllabary (upper = consonant, base =
+  vowel); and pins from Caprile's 1519 values and from "che".
+- What blocks it: the transcription error is still about 5-8 % (the adjudicators' own estimate), which is just past the
+  solver's limit, and the cipher's structure (codes, nulls) is unconfirmed. Moving it on needs one of three things: a key
+  or crib (the Caprile 1519 key rebuilt from R1133/7c, if it is the same cipher); a better physical image (ASMo) for
+  the faint small upper signs; or a third, careful reading of p. 2 L13-L25.
+
 ## Remaining gaps
 
 - R1126 cipher pp. 1–2 (43 lines, ~1,370 columns) - blocker: no-key-material; no decipherment, clear copy or key anywhere; Caprile's key does not fit; ciphertext-only syllabary anneal fails where controls succeed

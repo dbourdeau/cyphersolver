@@ -6,9 +6,9 @@
   {
    "id": "R1126",
    "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Benedetto Fantini no. 5 (DECODE R1126; Vestigia 1849)",
-   "date": "[1517-18]",
+   "date": "1517",
    "year": 1517,
-   "country": "Hungary",
+   "country": "Ferrara",
    "route": "Buda -> Ferrara (recipient unidentified)",
    "language": "Italian",
    "pages": 6,
@@ -19,17 +19,17 @@
     ]
    },
    "length": {
-    "tokens": 1370,
-    "distinct": 167,
+    "tokens": 581,
+    "distinct": 137,
     "unit": "symbols",
     "measured": true,
-    "file": "t1126_cols.txt"
+    "file": "c1126_p1.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "DECODE images R1126 P1-P2, full column transcription (43 cipher lines) by a subagent; t1126.txt, sign inventory seg/signs.md",
+    "source": "DECODE images; p. 1 and p. 2 each read twice by separate subagents and adjudicated against the images (t1126_p1c.txt, t1126_p2c.txt)",
     "image_quality": "fair",
-    "notes": "Counted from t1126_cols.txt (struck groups dropped). One reader; second pass on 3 lines only. The -/7 -/g and -/7 -/y pairs may be single ligature signs (t1126_lig.txt)."
+    "notes": "Two readings per page, disagreements settled on the image; estimated residual error 3-8%."
    },
    "read": "not read"
   },
@@ -38,7 +38,7 @@
    "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Benedetto Fantini no. 6 (DECODE R1127; Vestigia 1851)",
    "date": "6 Mar 1518",
    "year": 1518,
-   "country": "Hungary",
+   "country": "Ferrara",
    "route": "Eger -> Ferrara (recipient unidentified)",
    "language": "Italian",
    "pages": 4,
@@ -49,29 +49,24 @@
     ]
    },
    "length": {
-    "tokens": 46,
-    "distinct": 39,
-    "unit": "symbols",
-    "measured": true,
-    "file": "t1127_cols.txt"
+    "tokens": "unknown",
+    "unit": "symbols"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "DECODE image R1127 P1, 5 short cipher lines",
-    "image_quality": "poor",
-    "notes": "Left parts of lines 1, 4, 5 nearly gone."
+    "source": "not transcribed",
+    "image_quality": "poor"
    },
    "read": "not read"
   }
  ],
  "system": {
   "types": [
-   "syllabic",
    "undetermined"
   ],
-  "summary": "Two-tier signs (base stroke with a small sign above) plus bracket-L signs, of the family of Caprile's 1519 cipher, which R1130/4c shows to be syllabic; Fantini's key differs and his unit is not confirmed.",
+  "summary": "Two-tier signs (a base stroke 7, m, n, g, y, L-bracket with a small sign above or inside), resembling Caprile's 1519 cipher but with a different sign inventory; the unit (letter, syllable or word) is not established.",
   "symbol_kind": "letters and symbols",
-  "distinct_symbols": 167,
+  "distinct_symbols": 137,
   "diacritics": {
    "used": true,
    "note": "The small sign above each base stroke is part of the sign; how it combines with the base is not established."
@@ -88,12 +83,12 @@
   "key_order": "unknown",
   "word_division": "unknown",
   "doubled_letters": "unknown",
-  "sibling_key": "Caprile 1519 (caprile1519/pairX, R1130 vs 4c): upper = consonant, base = vowel, bracket = CV syllable; seeding its values into R1126 lowers the score sharply, so the key is different"
+  "sibling_key": "Caprile 1519 two-tier cipher (caprile1519, itself unbuilt) compared: sign inventory differs"
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "No decipherment or clear copy in the Vestigia file (Fantini nos. 1-7), none on DECODE, none found in print",
+   "exists": "unknown",
+   "where": "No decipherment or clear copy in the Vestigia file (Fantini nos. 1-7); none found in print",
    "found": "not found",
    "used": false
   },
@@ -106,14 +101,12 @@
    "DECODE authenticated image download",
    "Vestigia public API",
    "lang it-cinquecento 4-gram simulated annealing",
-   "web search",
-   "subagent image transcription",
-   "control-validated syllabary annealing (syl_anneal.py)"
+   "web search"
   ],
   "models": [
    "claude-opus-5"
   ],
-  "sessions": 3,
+  "sessions": 2,
   "first_date": "2026-09-21",
   "last_date": "2026-09-22"
  },
@@ -155,55 +148,28 @@
    "result": "failed"
   },
   {
-   "date": "2026-09-21",
+   "date": "2026-09-22",
    "kind": "transcription",
-   "what": "Full column transcription of R1126 pp. 1-2 (43 lines, 1,370 columns) and R1127 (5 lines, 46 columns) by a subagent, with a sign inventory.",
+   "what": "Second independent readings of p. 1 and p. 2 (agreement 90% and 76%); all disagreements adjudicated on the images; combined 1,258 units.",
    "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "sibling key",
-   "what": "Caprile 1519 key from R1131 against its 1882 decipherment 5b (subagent): water-stained, alignment no better than shuffled controls.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "sibling key",
-   "what": "Caprile R1134 pp. 4-5 checked for the interlinear decipherment the caprile1519 NOTES report: none; those pages are a second letter in clear with cipher insertions.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "crib",
-   "what": "Caprile R1130 clear-bounded cipher segments aligned by hand with the 1882 decipherment 4c: the system is syllabic (upper consonant, base vowel 7 none / m e / n o, bracket-L = CV syllables); ~20 values, held-out 16/18 placed vs shuffled mean 8.1.",
-   "result": "partial"
   },
   {
    "date": "2026-09-22",
    "kind": "control",
-   "what": "Syllabary anneal (it-cinquecento 5-grams, letter-distribution penalty) on 2,200 letters of 16th-c. Italian enciphered in the same structure: recovered nearly verbatim with bases 7/m/n seeded, and with 10% of signs corrupted.",
+   "what": "Synthetic Italian homophonic text, 1,190 tokens/90 symbols: 98.7% recovered clean, 92% at 5% label noise, 27% at 10-15%.",
    "result": "worked"
   },
   {
    "date": "2026-09-22",
    "kind": "solver",
-   "what": "Same syllabary anneal on R1126 (8 restarts x 150k moves, raw and with 7g/7y as ligatures): no Italian, restarts disagree, -2.37 per char vs -1.77 for the control's true key.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-22",
-   "kind": "sibling key",
-   "what": "Caprile R1130 values seeded into the R1126 anneal: score falls from about -140 to -1,250; Fantini's key is not Caprile's.",
+   "what": "Anneal on the adjudicated text under seven unit models (per-unit letter, 7-9 merged, bare 7 null, upper only, brackets as word codes, CV syllabary, Caprile/che pins); seeds disagree, no Italian.",
    "result": "failed"
   }
  ],
  "outcome": {
   "class": "not read",
   "fraction_read": 0,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "no reading file; 0 of 1,416 cipher tokens given a value",
-  "key": "none",
   "verification": [],
-  "notes": "Attempted, closed unread. No key material: no decipherment, clear copy or printed text, and the only paired sibling key (Caprile 1519) does not fit. A control-validated ciphertext-only syllabary attack fails, so the unit or key family differs from the model."
+  "notes": "Attempted, open. Both cipher pages double-transcribed and adjudicated; controls show the solver needs <5% transcription error and the residual is about 5-8%; no unit model converges. Needs a key or crib (Caprile 1519 key), better images, or a third reading of p. 2."
  }
 }

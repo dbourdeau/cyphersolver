@@ -1,0 +1,26 @@
+# R1126 p2 L13-25 adjudication (A = t1126_p2.txt, B = t1126_p2b.txt)
+- L13 u4 -/=?: A (kept, not re-verified)
+- L13 u9-11 u/7 &/m 9/#?: A for u/7 &/m (u between 7 and m, & over m right); third unit left #/#? (blot)  [other]
+- L13 u13-14 #/# -/[9]: bracket reads b clearly -> #/# -/[b]  [other]
+- L13 u16 -/n: A (c sits over the 7, n bare)
+- L13 u19 u/7: A
+- L13 +n/n: A (not seen)
+- L14 u15 [f]?/[t]: B, kept doubtful -/[t]?
+- L14 u23-24: -/[b] -/[n]? [other: B's b, A's n]
+- L14 +-/m: A
+- L14 u33 c/7?: A (not resolved)
+- L15 u2, u10, u13-17, u23: A (not resolved at zoom; B's splits not supported)
+- L16 u4 h/n: A; u13 p/n: A; u15 -/[r]: A; u29 [f]: A
+- L17 u3, u7, u9, u19-20: A
+- L18 u8: B -/[b] (clear "Lb Lg Lr")
+- L18 u17 x/e?: A
+- L19 u1-3, u5 [l], u10-11 blot y: A
+- L19 u25-26: B placement, -/m l/[m]? [other: A's l, B's position]
+- L19 u28 h/n: A
+- L20 u1-2: -/[b] s/7 [other]
+- L20 u17-18: -/[b] -/[n] [other]
+- L21 u8 #/#?: A; u12 -/[b]: B; u17-19: -/[&] a/n? -/[y] [other]; u30 c/m?: A
+- L22 u8-9 -/n -/9: B; u12-13 1/n k/4: B; u18 z/7: B; u24 -/[t]: A; u26 zf/7: A
+- L23 u2-6: B bases with h/n -> h/n -/n d/a 1/t c/n d/7? [other]; u15 1/n? -/7?: B; u20-21: A; u30 -/[#]?: B
+- L24 +-/m: A; u17 [l]: A; u19 zf/7: A; u25-28: -/7 d/n t/7 c/t o/t? [other]; u33 -/[b]: B
+- L25 u2 -/=?: A; u4-6: A; u10 u/e?: A; u13-14: A; u18-19 &/7 -/[d]: A; u27 [l]: A; u29 z/7?: B
