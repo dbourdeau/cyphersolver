@@ -28,7 +28,9 @@ not from memory. The slug is the folder name unless a page already exists under 
 - Solved or read (README Conventions): for `st='solved'`, the badge `stt` starts with `solved` when the key was broken
   here (profile `conditions.attack` ciphertext-only, crib or known plaintext) and is `read` when an existing key or
   decipherment was used. The README row goes in "Solved: key broken here" or "Read with an existing key or
-  decipherment" to match. `--audit` section G checks both.
+  decipherment" to match. Below the read bar (`st='partial'`) the same split: badge `solved in part` and table
+  "Partly solved: key broken here, read in part", or badge `read in part` (or a detail such as `2 of 7 read`) and
+  table "Partly read with an existing key or decipherment". `--audit` section G checks all four.
 - Dates: "Date" is the document's date. The work date is the day the finding first landed in the repository
   (`git log --diff-filter=A --format=%ad --date=short -- <folder>/ | tail -1` if it was not today).
 
@@ -159,7 +161,7 @@ three are data files you edit by hand; each is a few lines, and skipping one lea
 
 ## 3. The ledgers in the repository root
 
-- `README.md`: one row in the matching `## Results` table (Solved: key broken here / Read with an existing key or decipherment / Explained / Partly read or adjudicated /
+- `README.md`: one row in the matching `## Results` table (Solved: key broken here / Read with an existing key or decipherment / Explained / Partly solved: key broken here, read in part / Partly read with an existing key or decipherment /
   Found already solved by others / Attempted and closed). Five columns: Target (name, place, dates, shelfmark,
   catalogue item and class), Date (of the document), work date, Result (bold outcome, then what was read and
   what is open), Where: `` [`<folder>/`](<folder>/) · [write-up](https://dbourdeau.github.io/cyphersolver/<slug>.html) ``.

@@ -89,7 +89,8 @@ README_TABLES = {
     '### Solved: key broken here': 'Solved',
     '### Read with an existing key or decipherment': 'Read',
     '### Explained: not a cipher, or nothing to read': 'Explained',
-    '### Partly read or adjudicated': 'Read',
+    '### Partly solved: key broken here, read in part': 'Read',
+    '### Partly read with an existing key or decipherment': 'Read',
     '### Found already solved by others (the lists are stale)': 'Verified',
     '### Attempted and closed from the evidence': 'Attempted',
 }

@@ -7,12 +7,13 @@ Categories are the README's own sections. Every number on the page is derived he
   solved    ### Solved: key broken here         (key recovered here by cryptanalysis; text meets the read bar)
   read      ### Read with an existing key       (text meets the read bar with a key or decipherment that already existed)
   nothing   ### Explained                        (shown to carry no message)
-  partly    ### Partly read or adjudicated
+  partsolved ### Partly solved                   (key broken here, text below the read bar)
+  partly    ### Partly read with an existing key (text below the read bar)
   found     ### Found already solved by others   (the lists were stale)
   closed    ### Attempted and closed             (attacked with controls; the notes say why it stops)
   offline   ### Offline only                     (nothing more can be done online)
   active    ### In progress
-Overrides: rows whose target text matches OVERRIDE are moved (Voynich sits in 'Partly read or adjudicated' as adjudicated, and nothing of it was read).
+Overrides: rows whose target text matches OVERRIDE are moved (none at present).
 """
 import re, pathlib, html, datetime
 
@@ -25,6 +26,7 @@ SECTIONS = [
     ('solved',  '### Solved'),
     ('read',    '### Read with'),
     ('nothing', '### Explained'),
+    ('partsolved', '### Partly solved'),
     ('partly',  '### Partly read'),
     ('found',   '### Found already solved'),
     ('closed',  '### Attempted and closed'),
@@ -34,13 +36,13 @@ SECTIONS = [
 # Rows whose date carries no year but can be bracketed: counted at the latest possible year, so the
 # years-of-silence sum is never overstated. Egmond: to the grand maître (Montmorency, from 1526); Charles died June 1538.
 YEAR_BRACKET = {'Charles of Egmond': 1537}
-OVERRIDE = {'Voynich': 'closed'}  # Voynich sits under 'adjudicated': tested, not read
+OVERRIDE = {}  # README row text -> category, for rows filed in a table that does not match their outcome
 LABEL = {
-    'solved': 'solved here', 'read': 'read with an existing key', 'nothing': 'no message', 'partly': 'partly read', 'found': 'already solved elsewhere',
+    'solved': 'solved here', 'read': 'read with an existing key', 'nothing': 'no message', 'partsolved': 'partly solved here', 'partly': 'partly read with an existing key', 'found': 'already solved elsewhere',
     'closed': 'closed, with the reason', 'offline': 'waiting on an archive', 'active': 'in progress',
 }
 COLOR = {  # CSS variables from style.css
-    'solved': 'var(--green)', 'read': 'color-mix(in srgb, var(--green) 50%, var(--blue))', 'nothing': 'var(--blue)', 'partly': 'var(--violet)', 'found': 'var(--amber)',
+    'solved': 'var(--green)', 'read': 'color-mix(in srgb, var(--green) 50%, var(--blue))', 'nothing': 'var(--blue)', 'partsolved': 'var(--violet)', 'partly': 'color-mix(in srgb, var(--violet) 50%, var(--blue))', 'found': 'var(--amber)',
     'closed': 'var(--red)', 'offline': 'var(--muted)', 'active': 'var(--gold)',
 }
 
@@ -160,7 +162,7 @@ def build(items):
     oldest = min(read, key=lambda d: d['year'])
     span = [it['year'] for it in items if it['year']]
     pct = round(100 * nread / attacked)
-    order = ['solved', 'read', 'nothing', 'found', 'partly', 'active', 'closed', 'offline']
+    order = ['solved', 'read', 'nothing', 'found', 'partsolved', 'partly', 'active', 'closed', 'offline']
     bar = ''.join(
         f'<span class="seg {c}" style="flex:{n[c]};background:{COLOR[c]}" title="{n[c]} {LABEL[c]}"></span>'
         for c in order if n[c])
