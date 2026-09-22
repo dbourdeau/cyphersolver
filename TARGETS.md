@@ -225,6 +225,7 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Unknown sender (Villeroy) → unknown recipient, "5 Feb 1587"**, catalogue 173, DECODE R4157 (BnF fr. 15564 ff. 30–34): read 22 Sept 2026. Catherine de Médicis (Chenonceau) → Villeroy, 7 Feb 1581 (printed, *Lettres* t. VII pp. 349–353); the f. 33r cipher read with Tomokiyo's key extended by twelve values, last line = *d'Angleterre* + padding. See [r4157/](r4157/).
 - **Ferenc Wesselényi → unknown recipient, "1 Jan 1664"**, catalogue 45, DECODE R674 (MNL OL E 199 8.1.01): read 22 Sept 2026 ciphertext-only; a draft to the King (Leopold I), c. 1663–64, reversed alphabet with vowel homophones (alphabet of key R672); 241/244 tokens, codes 60 and 64 open. See [wesselenyi1664/](wesselenyi1664/) and the [write-up](https://dbourdeau.github.io/cyphersolver/wesselenyi1664.html).
 - **Scribe's colophon of the Dominican sequentiary Uppsala UB C 513** (f. 19v, Strängnäs 1517) and the note on f. 1r, catalogue 235, DECODE R4349. Read in part 22 Sept 2026: the vowel-shift colophon read (in print 1992); the six signs closing the note to Anders Larsson too short. See [r4349/](r4349/).
 - **"N. Wottoy ?" → unknown recipient, June 1554**, catalogue 120, DECODE R8499 (BL Harley MS 1582 ff. 8–10): read in part 22 Sept 2026; Dr Nicholas Wotton (Soissons) to Queen Mary, 13 June 1554, key R354 (SP 106/2 f. 162); 75.0% firm, 89.4% incl. tentative; deciphered copy ff. 5r–7v not digitised. See [harley1582r8499/](harley1582r8499/).
