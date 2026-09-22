@@ -76,9 +76,10 @@
    "used": false
   },
   "inputs": [
-   "images"
+   "images",
+   "known plaintext"
   ],
-  "attack": "sibling key",
+  "attack": "known plaintext",
   "human_role": "Posed the target from the catalogue; DECODE account cookie.",
   "tools": [
    "DECODE authenticated image server",
@@ -182,7 +183,7 @@
    "historical consistency",
    "matched control"
   ],
-  "notes": "Key rebuilt from the sibling R1874 and applied unchanged. 98.4% of the code-group tokens have a value; 84% of them stand in lines that read as continuous Italian (measure.py, it-cinquecento). Work stopped at the session rate limit, not at a blocker.",
+  "notes": "Key rebuilt from the sibling R1874 and applied unchanged. 98.4% of the code-group tokens have a value; 84% of them stand in lines that read as continuous Italian (measure.py, it-cinquecento). Work stopped at the session rate limit, not at a blocker. Attack set 22 Sept 2026 to known plaintext (was sibling key): no key existed; the syllabary was rebuilt here by aligning R1874's contemporary decipherment to its cipher (README Conventions, Solved and read).",
   "gaps": [
    {
     "item": "20 code-group tokens (1.6%) in the word/name band of the key",
