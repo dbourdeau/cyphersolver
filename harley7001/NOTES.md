@@ -2,9 +2,9 @@
 
 Catalogue entry 136 "... (Paris) to unknown recipient", 19 Apr 1641 (rule-scored, class C). Worked 22 Sept 2026.
 Outcome: read in part.
-- 88% of the cipher tokens are read from values on the key.
+- 89% of the cipher tokens are read from values on the key.
 - 5% are read from values rebuilt here (grade C).
-- 7% are conjectured (grade M, see gaps).
+- 6% are conjectured (grade M, see gaps).
 
 ## What the record is
 
@@ -53,7 +53,7 @@ Passage B: Reade is told that Sir William St Ravy "has done Mr Forster no good o
 eye over him". This matches the clear text that follows it.
 
 ## Remaining gaps
-- code groups 90, 160, 203, 319, 359, 444, 452, 455, 487, 539, 650, 673, 718 (x2), 729 - blocker: no-key-material; blank in the only surviving key reconstruction (R9115), each occurs once or twice, conjectured from context and alphabetical slot (7% of tokens)
+- code groups 90, 160, 319, 359, 444, 452, 455, 487, 539, 650, 673, 718 (x2) - blocker: no-key-material; blank in the only surviving key reconstruction (R9115), each occurs once or twice, conjectured from context and alphabetical slot (6% of tokens; 203 done and 729 Court were later found as side notes on the key sheet)
 
 ## Escalation
 - [x] siblings: R7767 (Harley 7001 f. 202, 1645) is a different Committee of Both Kingdoms cipher; Add MS 32256 key volume (R9113-R9219) searched by correspondent; only R9115 is Windebank's
@@ -61,4 +61,4 @@ eye over him". This matches the clear text that follows it.
 - [x] known-keys: R8694 (Browne, Add MS 72438) tried first and failed; R9115 fits
 - [x] print: web and Windebank literature searched; letter not printed or calendared (Harleian, not in CSP Domestic)
 - [x] key-rebuild: alphabetical bracketing of the code filled the blanks as conjectures (524 return, 562 secure, 573 they, 660 willing ...; 600 take is on the key)
-- [x] retry: all groups re-run with the corrected glyph readings (φ, Δ, ɔ, δ); 189 of 215 read from key values, 11 more from rebuilt values
+- [x] retry: all groups re-run with the corrected glyph readings (φ, Δ, ɔ, δ); 191 of 215 read from key values, 11 more from rebuilt values
