@@ -141,3 +141,4 @@ transcription, the runs can't be separated or tested reliably.
 - [x] print: Gomberville 1665 parts 1 and 2, Tomokiyo nevers.htm, BnF notices: not printed
 - [x] key-rebuild: substitution anneal on the f. 101r glyph transcription with noise control (fails at this legibility); run-by-run exhaustive key-16 search with LM
 - [x] retry: every run and number rescored with the corrected key (s = i/5); no change
+- [x] images: DECODE R4289's 14 images are cut from the same Gallica microfilm (btv1b90605473, 396 views); Gallica SRU finds no other digitisation of fr. 3975, colour or otherwise
