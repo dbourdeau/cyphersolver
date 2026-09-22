@@ -208,6 +208,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 | p104 | **Unknown sender → the King, BnF fr. 3029 ff. 134–135** (DECODE R3670) | c. 1521? | 1 | 3 | 4 | 3 | 1 | 4 | **2.35** | D 1: a published key applied unchanged. H 3: Toledo, the cardinals' pensions, a Church war and the Venetian league. N 4: not in print. |
 | p105 | **Guise? → Mercœur, BnF fr. 15564 f. 78** (DECODE R4158) | 1587 | 2 | 3 | 4 | 3 | 1 | 4 | **2.60** | D 2: a published key extended by about 15 values. H 3: League strategy in Brittany, Parma's troops, Bellièvre. N 4: not in print. |
 | p106 | **Galeazzo Visconti (Campo a Landriano) → Anne de Montmorency, 30 Aug 1528**, BnF fr. 3034 f. 154 (DECODE R4223) | 1528 | 2 | 3 | 4 | 3 | 1 | 3 | **2.75** | D 2: a published key extended on the letter, checked on two signed siblings. H 3: the League's council of war at Landriano, Milan or Pavia. N 4: not in print. V 3: 92.7% of signs, numbered codes open. |
+| p107 | **Burghley → Walsingham (Walsingham letter-book)**, BL Harley MS 260 f. 395 (DECODE R8362) | 1573 | 1 | 1 | 1 | 1 | 3 | 3 | **1.40** | D 1: nothing enciphered; two boxed cover-name markers. H 1: a known printed letter. |
 
 ## By single axis
 
@@ -536,3 +537,5 @@ Reade to his cousin 1641 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×
 Letter to the King, fr. 3029 f. 134 provisional score: 0.25×1 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **2.35** (p104): a published key applied unchanged to an unread letter, read end to end.
 Guise to Mercœur 1587 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **2.60** (p105): a published key, extended, read an unread letter end to end.
 Visconti to Montmorency 1528 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×3 = **2.75** (p106): Lasry's published key extended on an unread letter, read in part.
+
+Burghley to Walsingham 1573 (Walsingham letter-book) provisional score: 0.25×1 + 0.25×1 + 0.20×1 + 0.10×1 + 0.10×3 + 0.10×3 = **1.40** (p107): a clear letter catalogued as a cipher.

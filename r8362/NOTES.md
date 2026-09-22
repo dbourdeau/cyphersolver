@@ -1,6 +1,6 @@
 # R8362: Burghley to Walsingham, 24 January 1572/3 (BL Harley MS 260 f. 395; DECODE R8362; catalogue entry "W. Baurleighs?")
 
-Status: no write-up. Closed 22 Sept 2026. The letter is clear, and Digges printed it in 1655. The only "cipher" on
+Status: not a cipher, explained (written up 22 Sept 2026). The letter is clear, and Digges printed it in 1655. The only "cipher" on
 the page is two boxed 9s, which mark cover-names. There is no letter cipher or code to read.
 
 ## What the record is
