@@ -1,0 +1,22 @@
+# R4157 = BnF fr. 15564 f. 33r: Catherine de Médicis to Villeroy, Chenonceau, 7 Feb 1581. Cipher block, read with key.tsv.
+# One line per manuscript line. [..] = nomenclator code; {..} = null or padding; ? = graded M (context).
+# Clear text before: "car, à ce que j'entends, nous n'i gaingnerions rien, se dizant par deçà qu'il"
+
+L0  {N3+ Nff Nsm} doibt al|
+L1  er en flandres receuoir [le] serment [de] fi[de]lite [de] ceulx [de]s {PIb}|
+L2  pais bas [pour] mon filz et [qui]l y doibt [de]mourer et [que] [le] [prince] [de] con[de]e? do|
+L3  ibt mener [le]s forces [qui] s'assemblent et [faire] [tout] ce [qui]lz [pour]ront [pour]|
+L4  [le] seruice [de] mon[dict] filz [qui] se [dict] aussi y [de]buoir aler {Dst 4+ Z7}|
+L5  au temps [que] [nous] auez escript et non [de]uant [mais] [nous] ne laisser|
+L6  ons [de] [le] nommer [avec] [le][dict] sieur [de] monpensier au[dict] pouoi<r omitted>|
+L7  [de] [la] [le]gation d [Angleterre?] {xe Z7 Nsm N3+ x Nsm dd SS x aq xe Z7 PIb tt Nsm Nff N3+ xe Nsm Nz}
+
+# Normalised:
+# ... qu'il doibt aller en Flandres recevoir le serment de fidélité de ceulx des Païs-Bas pour mon filz, et qu'il y doibt
+# demourer, et que le prince de Condé doibt mener les forces qui s'assemblent, et faire tout ce qu'ilz pourront pour le
+# service de mondict filz, qui se dict aussi y debvoir aller au temps que nous avez escript, et non devant; mais nous ne
+# laisserons de le nommer avec ledict sieur de Montpensier audict pouvoir de la légation d'Angleterre.
+#
+# Tally (tokens.txt, 289 tokens): 262 message signs read as sense (3 graded M: e2 in "Condé", ō = Angleterre, and the
+# missing r of "pouoir"); 7 nulls inside the text (declared nulls Dst, 4+, Z7; start padding N3+ Nff Nsm; line-end π̄);
+# 20-sign tail after ō = padding (see NOTES.md).

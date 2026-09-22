@@ -1,0 +1,213 @@
+{
+ "schema_version": 1,
+ "target": "r4157",
+ "title": "Catherine de Médicis to Villeroy, Chenonceau, 7–8 Feb 1581, BnF fr. 15564 ff. 30–34, cipher block on f. 33r (DECODE R4157, catalogued as unknown sender, 5 Feb 1587)",
+ "documents": [
+  {
+   "id": "f33",
+   "shelfmark": "BnF fr. 15564 f. 33r (letter ff. 30–34; DECODE R4157, images P1–P6)",
+   "date": "7 February 1581",
+   "year": 1581,
+   "country": "France",
+   "route": "Chenonceau → Guyenne (Villeroy with Anjou)",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "margin",
+     "separate paragraph",
+     "printed edition"
+    ],
+    "source": "Contemporary decipherment in a second hand in the left margin and on three lines under the block; printed without comment in Lettres de Catherine de Médicis t. VII (1899) pp. 349–353. (the lines under the block are coded as separate paragraph)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 289,
+    "unit": "symbols",
+    "measured": true,
+    "file": "tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica native scan, view 43 (4651 × 2118 crop), checked at 2x zoom",
+    "image_quality": "good",
+    "notes": "Two passes: tokens_v1.txt (66 labels, several merged look-alikes), tokens.txt (73 labels, split against Tomokiyo's key)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution on graphic signs (Greek letters, digits, invented shapes), one to three signs per letter, a small nomenclator used also for syllables, and nulls that pad the start and end of the block.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 73,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 16,
+   "kinds": [
+    "common words",
+    "names",
+    "syllables"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": 27
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "special signs for mm and ss",
+  "sibling_key": "Satoshi Tomokiyo's reconstruction of this cipher (cryptiana, henryiii.htm, 'f.33', image henryiii1.png); fits, extended here by twelve values.",
+  "notes": "289 tokens, 73 labels (docs/_check_profile.py --measure r4157/tokens.txt). An overbar marks nomenclator codes (le, prince, mais, la, Angleterre) and some nulls."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary decipherment on the page; printed as plain text in Lettres de Catherine de Médicis t. VII (1899); key reconstructed by Tomokiyo (cryptiana, date unknown), last line unread, no plaintext published. Also in print (1899) and a published key (Tomokiyo).",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "known plaintext",
+   "published reading"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the catalogue entry. No target-specific intervention recorded.",
+  "tools": [
+   "em_align.py",
+   "sa_null.py",
+   "key.tsv decoder"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "DECODE R4157 images downloaded with the cookie; found to be Gallica openings of fr. 15564 ff. 30–34 plus a crop of the cipher block; full-resolution views fetched from Gallica IIIF.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Docket read: 'Double de la lettre de la Royne mere du Roy à Mr de Villeroy'; content (Anjou and the Low Countries, Condé's troops) and 'Chenonceau' point to Feb 1581, not 1587.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Lettres de Catherine de Médicis t. IX (1586–88) searched for a 5 Feb 1587 letter to Villeroy.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "t. VII (1579–81): letter found, pp. 349–353, 'Orig. fonds français 15564 f° 30', cipher printed as its marginal decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "First-pass sign labels of the eight cipher lines (tokens_v1.txt, 290 tokens, 66 labels).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "One sign per letter against the printed crib: windowed consistency test, fixed-pair (two signs per letter) test, parity test.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "EM alignment and simulated annealing (letter or null per sign type) against the 148-letter printed crib: best 63 errors; the crib was only half the plaintext.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Tomokiyo's cryptiana page on Charles IX / Henry III ciphers has a reconstructed key for fr. 15564 f. 33, last line unread.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Mapped first-pass labels onto Tomokiyo's key: the block reads, including the passage deciphered at the time under the block.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Second pass at 2x zoom splitting merged look-alike signs (ψ/ɣ, ᴀ/Δ, ϖ/ʊ/&, ɦ/б, v/V, ʒ/Ʒ); tokens.txt, key.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Twelve values added from context: 18 = dict, C̄σ = mais, ß̄ = la, ō = Angleterre, 4/b = nous (not vous), ℬ = p, ꝏ = u, ꝑ = t, ψ = n, ᴀ and & = z, F̣ = i.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Last line: 20 signs after 'd ō' tested as text; they contain the declared null Z7 twice and the start-of-block padding signs, give no French, and the decipherer and f. 33v's clear text both end the passage there: padding.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Reading compared with the contemporary decipherment and the edition: agrees except 'et non devant', 'ne laisserons de le nommer', 'Monpensier'.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.txt tally over tokens.txt: 262 message signs read as sense (3 graded M), 27 nulls and end padding; 289 of 289 tokens accounted for",
+  "codes_open": {
+   "open": 0,
+   "total": 16,
+   "tokens_open": 0
+  },
+  "gaps": [
+   {
+    "blocker": "open-codes",
+    "item": "ō = Angleterre, single occurrence, graded M"
+   },
+   {
+    "blocker": "open-codes",
+    "item": "latin e after the de code in Condé: e/é or null"
+   },
+   {
+    "blocker": "open-codes",
+    "item": "missing r of 'pouoir' at the end of line 6"
+   }
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Read in full with Tomokiyo's key extended; the contemporary decipherment and the 1899 edition agree. DECODE's metadata (unknown sender, 5 Feb 1587) corrected to Catherine de Médicis → Villeroy, 7 Feb 1581."
+ }
+}
