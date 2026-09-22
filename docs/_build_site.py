@@ -232,6 +232,11 @@ PAGES = [
          blurb='Ten lines of invented signs in TNA SP 106/5, catalogued on DECODE as King Charles I to Boswell, 1628, and undeciphered. Mark Woodard read the monoalphabetic cipher on DECODE in 2021. Here: two of his three open signs read, the sender identified from the endorsement as Sir Ralph Boswell, and the letter dated to 15 December 1627.',
          quote='&ldquo;our greate Duke returned from Plimmouth to Whitehall, contrary to the opinion of very many&rdquo;',
          rights='The National Archives, Kew, via DECODE R413'),
+    dict(slug='r1862', label='Rome 1628', year='1628', y=1628.33, place='Rome &rarr; Venice', st='partial', stt='read in part',
+         title='A Venetian ambassador at Rome to the Doge, 29 April 1628 &mdash; read in part',
+         blurb='DECODE R1862 (ASVe Busta 27 f. 354), catalogued as an anonymous ciphered letter from Rome with no transcription and nothing known of its contents. Its cipher is the one in the sibling record R1874, which is imaged together with the chancery&rsquo;s own decipherment; aligning that decipherment to its cipher by soft-EM rebuilt the key &mdash; a syllabary grid in which the prefix gives the vowel and the last two digits the consonant &mdash; and it reads this despatch unchanged. Cardinal Barberini had asked twice whether Palmanova was fortified and the Pontebba pass secured; the ambassador pressed that the Pope go in person as legate to settle Mantua and Savoy. About 84% of the groups read; page 2, lines 18&ndash;28 and twenty word-code tokens are still open.',
+         quote='&ldquo;se Palma si era ben fortificava, [&hellip;] o presidio aveva, se il passo della Pontebba si era ben assicurato&rdquo;',
+         rights='Archivio di Stato di Venezia, via DECODE R1862 (images not reproduced)'),
     dict(slug='r1874', label='Mocenigo 1628', year='1628', y=1628.8, place='Madrid &rarr; Venice', st='found', stt='read at the time',
          title='Mocenigo to the Doge, Madrid 1628 &mdash; read at the time',
          blurb='DECODE R1874, catalogued as an undated letter of unknown sender and recipient (ASVe Busta 30 f. 174), is Alvise Mocenigo&rsquo;s despatch from Madrid to the Doge and Senate of 26 October 1628, <em>CSP Venice</em> 21 no. 515. The record holds the chancery&rsquo;s decipherment of the whole letter and a second, separately enciphered copy. Paragraph marks and the three &ldquo;conte di Olivares&rdquo; group runs tie the decipherment to the numerical syllabic cipher; the key was not rebuilt.',
@@ -1221,6 +1226,7 @@ IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch o
 IMAGES['kaa4591'] = None
 IMAGES['kaa4591b'] = None
 IMAGES['sperantio1534'] = None
+IMAGES['r1862'] = None
 IMAGES['r1874'] = None
 IMAGES['r1212'] = None
 IMAGES['r1854'] = None
