@@ -197,29 +197,59 @@
    "kind": "transcription",
    "what": "f. 130v (no. 62) bleed-through removed by registering the mirrored native-resolution recto patch by patch and whitening bleed-level pixels; the three cipher lines went from about 55% to about 62% of signs, confirming 221 mariage and reading 'niece du duc de Florance'.",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "Context reading of the unglossed BnF esp. 336 nos. 79-80 (ark btv1b100325613, canvases 268-273) with the corrected key: 283 lettres, 163 prince(s), 227 seigneur(s) given C values (reading_esp336.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "Third pass on no. 11 (reading11_final.md): all harvested values re-applied, 64.280.50 and 250 re-read at native resolution; 58/58 code tokens valued (41 H, 11 C, 6 M), ~714/720 letter signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "Third pass on no. 62 (reading62_final.md): recto 607/617 tokens valued (98%), 62/62 codes; verso blot shown to be one sign, ~70/101 tokens; 223, 247 open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "Third pass on no. 100 (reading100_final.md): 103 venir, 257 faveur(s), 142 serviteur, 115 bon by agreeing contexts; all 1000 enciphered tokens valued (codes 65 H, 26 C, 19 M).",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
-  "fraction_read": "unknown",
-  "fraction_read_method": "estimated",
+  "class": "read",
+  "fraction_read": 0.98,
+  "fraction_read_method": "measured",
   "key": "partial",
   "verification": [
+   "contemporary decipherment",
    "historical consistency",
-   "contemporary decipherment"
+   "key confirms"
   ],
-  "notes": "Letter signs read ~93% (no. 11), ~94%/55% (no. 62 recto/verso), ~85% (no. 100); code groups partly open.",
+  "notes": "Final pass 21 Sept 2026: no. 11 ~714/720 letter signs, 58/58 codes (41 H, 11 C, 6 M); no. 62 recto 607/617 tokens (98%), 62/62 codes (36 H, 13 C, 13 M), verso ~70/101; no. 100 1000/1000 tokens (codes 65 H, 26 C, 19 M). Overall ~97% of enciphered tokens valued.",
   "gaps": [
    {
-    "item": "~28 code numbers (22, 27, 30, 49, 50, 64, 69, 85, 103, 130, 150, 153, 161, 163, 227, 230, 240, 241, 247, 253, 258, 260, 274, 275, 283, 302, 305) and the DX and XC signs",
-    "blocker": "open-codes",
-    "detail": "fr. 3984 f.182r close harvest and esp. 336 nos. 79-81 next"
+    "item": "no. 62 f. 130v: ~6 signs under recto ink, one blot, codes 223 and 247, an unsegmented 8-sign run",
+    "blocker": "illegible",
+    "detail": "bleed-through; ~70 of ~101 verso tokens valued"
    },
    {
-    "item": "no. 62 f.130v, three cipher lines",
-    "blocker": "illegible",
-    "detail": "recto ink bleed-through"
+    "item": "no. 11: ~6 letter signs in four short spans; no. 62 recto: 10 letter signs",
+    "blocker": "illegible"
+   },
+   {
+    "item": "M-grade code values (no. 100: 22, 27, 49, 50, 104, 150, 153, 230, 274, 278, 302, 305, XC; no. 62: 69, 100, 30, DX, 292, 109 and others; no. 11: 305, 130, 292, 106, 50)",
+    "blocker": "open-codes",
+    "detail": "no surviving gloss; every decipherment in this key harvested"
    }
-  ]
+  ],
+  "fraction_read_source": "reading11_final.md, reading62_final.md, reading100_final.md count tables: enciphered tokens (letter signs excl. nulls + code tokens) with a value; no. 11 ~772/778, no. 62 607/617 recto + ~70/101 verso, no. 100 1000/1000 = ~2449/2496"
  }
 }
