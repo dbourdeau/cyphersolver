@@ -6696,6 +6696,34 @@
      "sent": false
     }
    }
+  },
+  "lorraine1592": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/lorraine1592.html",
+   "key": {
+    "file": "lorraine1592/ct/no97_reread.txt",
+    "lang": "FR",
+    "how": "ciphertext-only: reciprocal letter-pair substitution (a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x), dots under a letter double it, looped ae a null; figures 31 = ma, 139 = vous, 145 = me from context. Key and reading in the header and body of no97_reread.txt (decoder: lorraine1592/measure_reread.py); supersedes the 18 Sept 44-symbol key in ct/no97_solution.txt"
+   },
+   "cite": null,
+   "fields": {
+    "plaintext_lang": "French",
+    "cipher_types": "simple substitution (reciprocal letter pairs, written in ordinary letterforms), nomenclator",
+    "sender": "Charles III, Duke of Lorraine (DECODE's 'Charles II' is the same duke under the older numbering)",
+    "origin_region": "Duchy of Lorraine"
+   },
+   "records": {
+    "R9449": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Read in part, 71.5% of cipher tokens measured (790/1,105). Reciprocal letter-pair cipher with doubling dots, a null, special signs and 14 syllable/word figures (31 ma, 139 vous, 145 me); no key survives. Broken ciphertext-only 18 Sept 2026 by a contributor (aryasn2026, PR #4), re-read from the page with the key in hand 22 Sept 2026. Open: most special signs, 11 of 14 figures, four garbled runs (L12, L13, L18, L20). No. 22 of the same volume (R9444) is an unrelated plaintext decipherment of January 1592 letters, not a crib for this one.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R9449.txt"
+      }
+     ],
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {
