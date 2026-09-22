@@ -656,7 +656,7 @@ blockquote.reading,blockquote.big{font-family:var(--period);font-size:1.3rem;lin
   .hero .seal{animation:sealpress .7s cubic-bezier(.2,.9,.3,1.2) .35s both}
   @keyframes sealpress{0%{opacity:0;transform:rotate(-24deg) scale(1.6)}60%{opacity:1;transform:rotate(-10deg) scale(.94)}100%{transform:rotate(-12deg) scale(1)}}
 }
-@media (max-width:760px){.hero .seal{position:relative;right:auto;bottom:auto;margin:.9rem 0 0 .3rem;width:6rem;height:6rem}.hero .seal span{font-size:.7rem;max-width:4rem}}
+@media (max-width:760px){.hero .seal{right:.9rem;top:.8rem;bottom:auto;width:4.6rem;height:4.6rem}.hero .seal::after{inset:.65rem}.hero .seal span{font-size:.56rem;letter-spacing:.1em;max-width:3.4rem}.hero:has(> .seal) > .kicker{margin-right:4.6rem}}
 @media print{body::before,.hero .seal{display:none}}
 
 /* ---------------------------------------------------------------- deep-zoom viewer (zoom.js) */
