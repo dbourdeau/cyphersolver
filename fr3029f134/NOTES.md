@@ -48,6 +48,11 @@ de la Mota, Charles V's favourite, which, with a "cardinal de Medicis" and a Chu
 (Gian Vincenzo Carafa 1527, Gian Pietro Carafa 1536). Not resolved; the page says so. That the DECODE date is 11 Jan,
 the day Croÿ died, may be a coincidence.
 
+
+Update 22 Sept 2026: the sister memoirs in BnF fr. 3092 ff. 101-107 (`fr3092/`), read with the same key, identify
+<N3> as the word "roy" (either king) and <N2> as the Emperor (Charles V), grade C from context; <N1> is probably the
+King of England (M); <N4> and <P1> stay open. Here that gives "promectre au roy", "la court de l'Empereur".
+
 ## Remaining gaps
 
 - name signs N1-N4 and place sign P1, 9 tokens - blocker: open-codes; unidentified in Lasry's table too; only a

@@ -1,0 +1,236 @@
+{
+ "schema_version": 1,
+ "target": "fr3092",
+ "title": "French commissioners at Calais (Duprat) to Francis I, autumn 1521: three 'Mémoires chiffrés', BnF fr. 3092 ff. 101-107 (DECODE R3699-R3701)",
+ "documents": [
+  {
+   "id": "f101",
+   "shelfmark": "BnF, Français 3092, f. 101r, no. 43 (DECODE R3699, image P2)",
+   "date": "autumn 1521 (after Wolsey's return from Bruges, late Aug 1521; DECODE '1520-01-11/1540')",
+   "year": 1521,
+   "country": "England (Calais)",
+   "route": "Calais -> Francis I (the chancellor, Antoine Duprat, and fellow commissioners)",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Lasry's raw decipherment of this leaf, edited by S. Tomokiyo, cryptiana GL.htm ('BnF fr.3092, f.100'), covers all 26 lines; found before the attempt and used as a check after reading."
+   },
+   "length": {
+    "tokens": 1252,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R3699 image P2 (2885 px), overlapping half-width band crops; aliases = key letters in transcription_f101.txt",
+    "image_quality": "good",
+    "notes": "1252 = letter signs (_check_profile --measure signs.txt --letters --drop-first --skip '^10[347]'); plus 10 nulls and 2 name signs."
+   },
+   "read": "read"
+  },
+  {
+   "id": "f103",
+   "shelfmark": "BnF, Français 3092, ff. 103r-104r, no. 44 (DECODE R3700, images P2, P3, P5)",
+   "date": "autumn 1521 (before Albany's landing in Scotland, Nov 1521)",
+   "year": 1521,
+   "country": "England (Calais)",
+   "route": "Calais (French commissioners) -> the French court",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves or in print."
+   },
+   "length": {
+    "tokens": 1568,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R3700 images P2, P3, P5; band crops; transcription_f103.txt (transcription subagent)",
+    "image_quality": "good",
+    "notes": "1568 letter signs (--skip '^10[17]'); plus 1 null, 8 name signs; two blotted signs struck by the writer not counted."
+   },
+   "read": "read"
+  },
+  {
+   "id": "f107",
+   "shelfmark": "BnF, Français 3092, f. 107r-v, no. 46 (DECODE R3701, images P3, P4)",
+   "date": "autumn 1521 (Calais conference, Aug-Nov 1521)",
+   "year": 1521,
+   "country": "England (Calais)",
+   "route": "Calais -> Francis I (first person, probably Duprat)",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves or in print."
+   },
+   "length": {
+    "tokens": 1701,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R3701 images P3, P4; band crops; transcription_f107.txt (transcription subagent), spot-checked 107r18-21",
+    "image_quality": "good",
+    "notes": "1701 letter signs (--skip '^10[134]'); plus 4 nulls, 3 name signs."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Simple substitution with invented signs (one per letter, O with two forms), words spaced, six null signs and five name/place signs (Lasry key).",
+  "symbol_kind": "symbols",
+  "digit_groups": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": 1
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 5,
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": true,
+   "count": 15
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "notes": "N1, N2, N3, N4 occur here (13 tokens); N3 identified from context as 'roy' (generic, both kings), N2 as the Emperor; N1 (King of England?) and N4 tentative. The writer draws O as a circle on a plain stem (the key's L shape) at times."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Lasry key table (05/11/2023) and an edited text of f.101r (as 'fr.3092 f.100') on Tomokiyo's cryptiana GL.htm; no text of ff.103-104 or f.107 anywhere found",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code and posed the problem with /goal (catalogue card 182, DECODE R3699-R3701). No target-specific intervention recorded.",
+  "tools": [
+   "curl (DECODE images with session cookie)",
+   "python/PIL crops",
+   "transcription subagents",
+   "lang.lm best_language"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Repo grep: fr3029/ and fr3029f134/ notes and Tomokiyo's GL.htm list fr. 3092 ff. 101, 103, 107 in Lasry's fr. 3029 cipher; GL.htm prints Lasry's raw decipherment of 'f.100' (edited by Tomokiyo), dated tentatively and suggested as possibly Elizabethan.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "DECODE record pages R3699-R3701 fetched with the session cookie; 11 images downloaded (full-resolution leaves P2/P3/P5, openings as .jpeg).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "key from source",
+   "what": "Lasry's table applied to f.101r line 1: 'on ne se devoit glorifier jusques a la fin et que tant de choses', matching Tomokiyo's text; key applies unchanged.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "f.101r (26 lines) transcribed by eye from overlapping band crops, each sign as its key letter; ff.103r-104r (65 lines) and f.107r-v (40 lines) given to two transcription subagents with a written brief.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "f.101r compared with Tomokiyo's edited text: agrees; his unread '<?>' after 'mal' is two null signs (Ш, slash). 107r18-21 checked sign for sign against the image; 103v10 name sign confirmed as N3.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "lang.lm.best_language on the 4,521 letter signs: fr-1600-letters first (-1.93 vs fr-modern -2.12).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "BnF inventory of fr. 3092 (cc49555w) fetched: nos. 43/44/46 'Mémoire chiffré' among 1521 Robertet papers (Mouzon, Nassau's army, Villandry at Calais 8 Nov).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "All three read: Calais conference 1521 (Wolsey, Gattinara, 'moy chancelier' = Duprat); Albany's secret departure for Scotland; Wolsey's private talk, 'domp Prevost', the Emperor to be sent to Spain. Name signs graded from context with fr. 3029 f.134: N3 = roy, N2 = the Emperor, N1 = King of England?, N4 open.",
+   "result": "worked",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 0.997,
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "All 131 cipher lines read with Lasry's key unchanged; 13 name-sign tokens have no key value (N3 and N2 identified from context, N1 and N4 tentative); dated to the Calais conference, autumn 1521.",
+  "key": "recovered",
+  "codes_open": {
+   "open": 2,
+   "total": 4,
+   "tokens_open": 2
+  },
+  "gaps": [
+   {
+    "item": "name signs N1 (104r09) and N4 (101r19), 2 tokens",
+    "blocker": "open-codes",
+    "detail": "one use each here; identity graded M and I from context; no key or decipherment names them"
+   },
+   {
+    "item": "blotted signs at 103r23 end and 104r09 start",
+    "blocker": "illegible",
+    "detail": "struck through by the writer; not counted"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "fr3092/signs.txt: 4,549 signs, 13 name signs without a key value = 4,536/4,549"
+ }
+}
