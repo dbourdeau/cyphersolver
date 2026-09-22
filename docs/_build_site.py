@@ -16,7 +16,9 @@ of "Recent findings" all carry the day the finding landed, from _dates.json, whi
 """
 import re, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
-VERSION = '20260921e'
+ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
+         '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
+VERSION ='20260921e'
 SITE = 'Unsolved Historical Ciphers'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -53,7 +55,7 @@ GENERATED = [
     r'<!-- replay:start -->.*?<!-- replay:end -->\n?', r'<script src="solve-replay\.js[^"]*" defer></script>\n?',
     r'<script src="zoom\.js[^"]*" defer></script>\n?',
     r'<!-- live:start -->.*?<!-- live:end -->\n?', r'<script src="home\.js[^"]*" defer></script>\n?',
-    r'<meta name="(?:date|last-modified)"[^>]*>',
+    r'<meta name="(?:date|last-modified)"[^>]*>', r'<link rel="(?:icon|apple-touch-icon)"[^>]*>',
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
 ]
@@ -1439,6 +1441,9 @@ def process(path):
     # versions, anchor for "Top", script
     s = re.sub(r'<link rel="stylesheet" href="style.css[^"]*">', f'<link rel="stylesheet" href="style.css?v={VERSION}">', s)
     if 'href="style.css' not in s: s = s.replace('</head>', f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>', 1)
+    # the tab icon: a wax seal with a key (favicon.svg, PNG fallbacks rendered from it)
+    s = re.sub(r'<link rel="(?:icon|apple-touch-icon)"[^>]*>\n?', '', s)
+    s = s.replace('</head>', ICONS + '</head>', 1)
     # page scripts carry a hash of their own content, so an edit reaches browsers without a VERSION bump
     s = re.sub(r'<script src="(secret|cipher-reveal|atlas)\.js(?:\?[^"]*)?"',
                lambda m: f'<script src="{m.group(1)}.js?v={hashlib.sha1((HERE / (m.group(1) + ".js")).read_bytes()).hexdigest()[:8]}"', s)
