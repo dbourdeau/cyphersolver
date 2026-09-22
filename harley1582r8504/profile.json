@@ -1,0 +1,125 @@
+{
+ "schema_version": 1,
+ "target": "harley1582r8504",
+ "title": "Sir Edward Stafford to [Walsingham], 9 November 1586 (BL Harley MS 1582 ff. 76-77; DECODE R8504)",
+ "documents": [
+  {
+   "id": "R8504",
+   "shelfmark": "BL Harley MS 1582 ff. 76-77 (DECODE R8504)",
+   "date": "1586-11-09",
+   "year": 1586,
+   "country": "England",
+   "route": "France (Paris, English embassy) -> England (Walsingham)",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page; read with the key rebuilt in harley1582r8500."
+   },
+   "length": {
+    "tokens": 7,
+    "distinct": 7,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images R8504_I39254_P1-P2",
+    "image_quality": "fair",
+    "notes": "One seven-sign word on f. 76r line 2, transcribed sign by sign at 8x."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Letter substitution with homophones (6=e, w=a, x=i/y ...) plus single-sign and numeric codes (B Villeroy, O+ Nemours, 120 French ambassador, 47 King of Navarre).",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 7,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "yes",
+  "notes": "Same cipher as R8500-R8503."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not on the page; not in CSP Foreign XXI pt 1 (Nov 1586)",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "sibling key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up the coding agent with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "R8504 images fetched with the R8500 siblings.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "Clear holograph letter, f. 76r; one cipher word on line 2; f. 77 blank.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "CSP Foreign XXI pt 1, Nov 1586: only a different 9 Nov letter to Burghley; this one not calendared.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "Applied harley1582r8500 key: E=p x=i h=n 6=e II=s; Pi and rho by context r, c: princes.",
+   "result": "worked",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 1.0,
+  "key": "partial",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "gaps": [],
+  "notes": "Single word read; two sign values from context."
+ }
+}

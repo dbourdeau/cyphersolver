@@ -225,6 +225,7 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Sir Edward Stafford → [Walsingham], 9 Nov 1586**, catalogue 117, DECODE R8504: read 22 Sept 2026; clear letter, one cipher word (*princes*) read with the R8500 key. See [harley1582r8504/](harley1582r8504/) and the [write-up](https://dbourdeau.github.io/cyphersolver/harley1582r8504.html).
 - **Sir Edward Stafford → [Walsingham], Paris, 20 Aug 1586**, catalogue 119, DECODE R8500: read 22 Sept 2026; five postscript runs, key rebuilt from siblings R8501/R8502. See [harley1582r8500/](harley1582r8500/) and the [write-up](https://dbourdeau.github.io/cyphersolver/harley1582r8500.html).
 
 - **Mondoucet → Charles IX, BnF fr. 16127: 13 July 1572, 4 Jan and 9 Sept 1573** (row 31; catalogue 1–2): read in part 2026-09-17/21. 13 July: key built by hand from the 16 July crib, text still only scattered words; 9 Sept has a verbatim Court decipherment; 4 Jan decoded ~60 % ciphertext-only, then found printed in Didier 1891 i 141–142. `gallica_sweep/mondoucet/`.

@@ -825,6 +825,11 @@ PAGES = [
          blurb='DECODE R8503, catalogued as a cipher letter of Sir Edward Stafford to an unknown recipient, is his holograph despatch from Paris to Sir Francis Walsingham of 19 September 1586 (BL Harley MS 1582 ff. 74&ndash;75). Its four short cipher runs were deciphered between the lines at the time. Re-read sign by sign here, they check exactly: a null <code>6</code>, homophones for <i>i</i>, <i>l</i> and <i>e</i>, and codes 47, 59 and 74 for Navarre, Cond&eacute; and Guise.',
          quote='&ldquo;three &hellip; sworn and dispatched to kill him and the Prince of Cond&eacute;&rdquo;',
          rights='Manuscript: British Library, Harley MS 1582 (images on DECODE, not reproduced)'),
+    dict(slug='harley1582r8504', label='Stafford November 1586', year='1586', y=1586.86, place='Paris &rarr; Walsingham', st='solved', stt='read',
+         title='Stafford to Walsingham, 9 November 1586 &mdash; Read',
+         blurb='DECODE R8504, catalogued as a non-decrypted cipher letter of Sir Edward Stafford to an unknown recipient (BL Harley MS 1582 ff. 76&ndash;77), is a short holograph in clear English. Its one cipher word, seven signs on line 2, reads <i>princes</i> with Stafford&rsquo;s letter key rebuilt from sibling letters in the same volume. Not calendared in CSP Foreign.',
+         quote='&ldquo;a paquet wth princes from your honor&rdquo;',
+         rights='Manuscript: British Library, Harley MS 1582 (images on DECODE, not reproduced)'),
     dict(slug='clair357', label='Clairambault 357, 1586', year='1586', y=1586.8, place='Angoumois &rarr; a League leader', st='found', stt='decipherment found',
          title='An anonymous figure cipher of October 1586 &mdash; the &ldquo;unread&rdquo; two thirds were deciphered in 1586, on the next leaf and between the lines',
          blurb='A League-period letter in two-digit figures, listed with a partial key and two thirds of its first page unread. The volume holds its own decipherment: folio 168 is a clear text of the cipher down to a cross mark, and from that cross to the end the decipherer wrote the plaintext between the lines. Tomokiyo&rsquo;s key agrees with the glosses (<em>Guienne</em>, <em>tres confident</em>, <em>Fum&eacute;</em>), which also give 87&nbsp;=&nbsp;e and the King of Navarre&rsquo;s sign. The letter: Fum&eacute;, vice-admiral of Guyenne and Navarre&rsquo;s Catholic confidant, keeps proposing a reconciliation between Navarre and the addressee, probably Guise, while Catherine de M&eacute;dicis negotiates.',
@@ -1633,6 +1638,7 @@ if __name__ == '__main__':
 IMAGES['poyntz1527'] = None
 IMAGES['stafford1586'] = None
 IMAGES['harley1582r8500'] = None
+IMAGES['harley1582r8504'] = None
 IMAGES['poupet1522'] = ('poupet1522_lead.jpg', 'Passage A in cipher and in the 1522 decipherment: <em>Combien que je vouldroie mectre mon ame en gaige</em>', 'Biblioteca Nacional de Espa&ntilde;a, via DECODE R1187')
 IMAGES['santacroce1552'] = ('santacroce1552_lead.jpg', 'ASV Francia 3 f. 248r (DECODE R9), Paris, 14 December 1553: three cipher lines struck through, the same postscript written in clear beneath', 'Archivio Apostolico Vaticano, via DECODE R9')
 IMAGES['walsingham1585'] = ('walsingham1585_lead.jpg', 'Add MS 32657 f. 194, 10 September 1585: &ldquo;The 13 will in no sort neither be [signs] nor otherwise make [signs] a party&rdquo;, the decipherment above blotted out', 'British Library, Add MS 32657 f. 194 (via DECODE R4844)')
