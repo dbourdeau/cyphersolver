@@ -1,6 +1,7 @@
 # Mondoucet → Charles IX, Brussels 13 July 1572 (BnF fr. 16127 ff. 60–61) — reading
 
-Status 2026-09-17: **solved.** The key recovered by hand from the 16 July crib (ff. 62–64) decodes the
+Status 2026-09-21: **not read beyond scattered words** (retry with the a/alpha split: `hand/decode_retry.txt`; the "solved" of 17 Sept below was over-read).
+Status 2026-09-17 (superseded): **solved.** The key recovered by hand from the 16 July crib (ff. 62–64) decodes the
 13 July despatch. Confirmed to exhaustion against the control.
 
 ## The cipher system (settled)

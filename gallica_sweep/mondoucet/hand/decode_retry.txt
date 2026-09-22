@@ -1,0 +1,138 @@
+# 13 July 1572, retry with the a/alpha split, 21 Sept 2026 (hand/decode_retry.py, hand/score_retry.py; SM=0.3 NP=3.5 W=300,
+# LM f1573/fr5.npy). Transcriptions hand/ct_f60_split.txt, ct_f60v_split.txt, ct_f61_split.txt (split.py: 42 of 76
+# round-a/@ tokens are open alpha; f. 61 'ð' normalised to O). Output is verbatim beam output, '·' = null.
+#
+# Control, 16 July block (ct_f62 + ct_f62v) against the Court's reading pt_f64.txt (863 letters). NOT held out: key2 was
+# built on this block. Score = pt letters matched by a monotone difflib alignment; in brackets, matches in runs >= 4.
+#   base  (key2, 1572)                     60.3 %  (39.5 %)
+#   ext   (key2 + alpha = r, 1573 counts)   61.1 %  (40.3 %)
+#   k1573 (key1573_split2 directly)        56.2 %  (35.7 %)
+#   chance (13 July decode vs pt_f64)      12-15 % (5.0 %)
+#
+# Sense measure on 13 July (ext, split): word-divided by hand; a stretch counts only if it is >= 2 consecutive real
+# words in a grammatical run that is not contradicted by its neighbours. Strict = >= 3 words of plain period sense.
+#   J3 "que ie ne puis" (11)  J9 "encore en forme" (13)  J14 "depuis semblablement" (18)
+#   J15 "deliberations des [re]solutions" (24)  M1 "le prince ... service" (18)  K1 "ce que ie" (7)
+#   lenient 91 / 1,082 glyphs = 8 %;  strict (J3 only, 11) = 1 %.
+# The rest is LM-fluent but meaningless ("triste apres la uoir uarne se rueil"); words such as "anglots", "cathologue",
+# "theatre" are the language model filling, not evidence. With key2, split vs unsplit transcription changes 21 of 29 lines, none into sense.
+== base (split)
+  J1  st··adieuseassezdetresunuale
+  J2  tristeapreslauoiruarneserueilpensentrouuen
+  J3  tlusamouragequeienepuisquespierreieneuicti
+  J4  onsualenusauezuousatisfaitesau·onsnouuera
+  J5  ipasets·erueilleen·noticesoitdescourtourn
+  J6  erententenduresoupconnuestiltarda·utantde
+  J7  succesarmesistalonespnotestristesdeseruen
+  J8  tleursasemplimentquenouspardela·d·estout
+  J9  presencoreenformedesnuagesurleursbeaucoup
+ J10  deraisonsenco·rcedeuantescristesaintsasse
+ J11  eclairdauant·d·ebonheurenementsousueni
+ J12  riennenesaisseprendregardseigneuroudeet
+ J13  d···esonmaisseaupreiudice··p·ensderni
+ J14  eregardeportedeserai·depuisemblablementaco
+ J15  ursdeliberationsdesolutionsderenttrou
+ J16  uertesqueienesnepuisentestesenetrees·seig
+ J17  neurdesgen·ereuiuree···t·surletroistor
+ J18  reurapardesgensanglotsnoncestandil··sere
+ J19  tienarriuesetaireenmem·esuoirpourneparlesmo
+ J20  nsensinagitdeforcathologueestmortbienpou
+ J21  rcettefectionsrepresen·fuites·desuerser
+ J22  etbiencesoindepierrecommeilenesautrestou
+  K1  t·cequeieterriere·presdelarent·d·edorionse·i
+  M1  lleprincese··ruicesurmoiie·n
+  M2  aitd·anslagl·oirdependadeso
+  M3  ntdec·etteandreienesesfair
+  M4  edanssontheatredependanstreda·nsu·
+  M5  nualenteualetablit·ercesuiu
+  M6  antencecequoiaus·sissure
+== ext (split)
+  J1  st··adieuseassezproposunuale
+  J2  tristeapreslauoiruarneserueilpensentrouuen
+  J3  tlusamouragequeienepuisquespierreieneuicti
+  J4  onsualenusauezuousfaitpartesau·onsnouuera
+  J5  ipasets·erueilleen·noticesoitdescourtquin
+  J6  emententenduresoupconnuestiltarda·utantde
+  J7  srecesarmesistalonespnotestristesdeseruen
+  J8  tleursasseplorentauenirspardela·d·estout
+  J9  presencoreenformedesnuagesurleursbeaucoup
+ J10  deraisonsuncourirdeuantescristesaintsasse
+ J11  eclairdauant·d·ebonheurenementsombreil
+ J12  riennenesaisseprendregardseigneuroudeet
+ J13  d···esonmaisseaupreiudice··p·ensderni
+ J14  eregardestitudedeca·sdepuisemblablementaco
+ J15  ursdeliberationsdesolutionsderenttrou
+ J16  uertesqueienesnepuisentestesenetrees·seig
+ J17  neurdesgen·ereuiuree···t·surletroistor
+ J18  reurapardesgensanglotsnoncestandil··sere
+ J19  tienarriuesetaireenmem·esuoirpourneparlesmo
+ J20  nsensinagitdeforcathologueestmortbienpou
+ J21  rcettefectionsrepresen·fuites·desuerser
+ J22  etbiencesoindepierrecommeilenesautrestou
+  K1  t·cequeieterriere·presdelarent·d·edorionse·i
+  M1  lleprincese··ruicequicomtede
+  M2  pieddanslagl·oirdependadeso
+  M3  ntdec·etteandreienesesp·oi
+  M4  rdanssontheatrederendanstreda·nsu·
+  M5  nualenteualetablit·ercesuiu
+  M6  antencecequoiaus·sissure
+== k1573 (split)
+  J1  uidesdieuxpassezproposdesale
+  J2  cri·tsapreslauoirenc·eserueilpenseetmillen
+  J3  elesamouragequeienexpliquesperdreenceulxmi
+  J4  llefacon·sdi·fferenaitpartepassansnouuers
+  J5  l·aprisdequelqueon·netecesontdescourtquin
+  J6  emententen·dresoupconnoistoitarda·u·antau
+  J7  precesarmesistaloneipnotestristesdeuerrea
+  J8  uioursade·plorentreentreparleca·d·estout
+  J9  prefe·m·meenformedemenacesarciersbeaucoup
+ J10  deraisonspectacledeuantescrisiesaintsauie
+ J11  illa·rdauant·d·ebonheurenementpierreil
+ J12  riennenesai·seprendregardesirsetprudeet
+ J13  led·esonmaisteaupreiudice··p·enseoree
+ J14  tlemarticultedesecar·d·iuisenplac·ementace
+ J15  ttedeliberationsresolutionsderentsecu
+ J16  terdessurlenesnepuisentescepenetreestmeco
+ J17  nstrueuren·trelucre····cesursairespier
+ J18  reurapardesgensanglotsnonmesmandel··iure
+ J19  rlesarm·e·setaireenmem·esuiletourne··rlesmo
+ J20  nsensonamo··urirlatenluimemeimput··enbe·
+ J21  rcettefectione·mbrasesdroites·d·iuerser
+ J22  etbiencesoindespereencorelleneelucreceiu
+  K1  s·cesmeiluerriere·prem··ierent·d·editionse·i
+  M1  lleprincel·a·estcequicom·edi
+  M2  ated·unefamillirdependa·ien
+  M3  tplusde··mandealenesesmai·
+  M4  sdan·sletheatrederomainstreda·nsu·
+  M5  nualentefameunplia··ncedeia
+  M6  assenteteaccides·sussaue
+== base (unsplit)
+  J1  ut··m·ieuxcaus·editiesuiuale
+  J2  tristeapreslauoiruarneserueilpensentrouuen
+  J3  tlusamouragequeienepuisquespierreieneuicti
+  J4  onsualenusauezuousatisfaitesau·onsnouuera
+  J5  ipasets·erueilleen·noticesoitdescourtourn
+  J6  erententendulesoupconnuestiltarda·utantde
+  J7  douceluimedistulineepnotestristesdefermen
+  J8  tsquisasenproientquenoispasdeca·d·estout
+  J9  presencoreenuilledesnuageselleestbeaucoup
+ J10  deraisonsancialcideuantescristesaintsasse
+ J11  eclariuauant·d·ebonheurenementsouslesi
+ J12  biennenesaisseprendregardseigneuroudeet
+ J13  d···esonmaisseaubruitdece··sdeaquelqu
+ J14  eferaisociatedeserai·depuisemblablementaco
+ J15  ursdeliberationsdesolutionssoienttrou
+ J16  uertesqueienesnepuisentestesenetreestmeco
+ J17  nduireprendirequeieu·des·surletheodore
+ J18  ilnyapasdesgensanglotsnoncestandil··sele
+ J19  uiennemiersto·ireenmem·equilestu·neioliereu
+ J20  nsensifanindifficatenuilleestmortbienpou
+ J21  rcettefectionsdesirses·reites·desamiser
+ J22  etbiencesoindepierrecommeilenceaucieltou
+  K1  t·cequeieterrierespiecessaient·d·edorionse·i
+  M1  lleprincese··ruicesurmoiie·n
+  M2  aitdonnefauldroydefend·deso
+  M3  ntdec·etteandreienesesfair
+  M4  edanssontheatredependanstreda·nsu·
+  M5  nualentelalecapita·ir·esuiu
+  M6  antencecequoiaus·sissure
