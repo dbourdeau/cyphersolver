@@ -213,6 +213,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 | p109 | **Court informant → Nevers, BnF fr. 3976 f. 62** (DECODE R3705) | 1588 | 3 | 4 | 4 | 3 | 1 | 4 | **3.35** | D 3: no key; rebuilt from a sibling's glosses, polyphonic signs. H 4: Henri III's plan to drown the Paris ligueurs, April 1588. N 4: not in print. |
 | p110 | **Galeazzo Visconti → Angelo Bolano and → Francis I, 1528–29**, BnF fr. 3045 f. 28, fr. 3096 f. 91 (DECODE R4230, R4256) | 1528–29 | 2 | 3 | 4 | 3 | 1 | 3 | **2.75** | D 2: a published key extended by five rules. H 3: the League after Lautrec, Savona, the Venetians and the peace of 1529. N 4: not in print. V 3: 95.3% of signs, read at the bar by a thin margin, numbered codes open. |
 | p111 | **Pál Bornemisza → Ferdinand I, HHStA Chiffrenschlüssel Kt. 13 Fasc. 20 ff. 38–39** (DECODE R1212) | c. 1556 | 1 | 3 | 2 | 3 | 1 | 4 | **2.20** | D 1: read at the time, key on the next record. H 3: the Kendi party and the loss of Transylvania, 1556. N 2: unpublished decipherment, re-read and corrected. |
+| p112 | **Dr Nicholas Wotton (Soissons) → Queen Mary I, 13 June 1554**, BL Harley MS 1582 ff. 8–10 (DECODE R8499) | 1554 | 3 | 4 | 4 | 3 | 1 | 2 | **3.15** | D 3: archive key found, but a sign transcription of ~3,200 signs had to be rebuilt against it eight times. H 4: Carew and the rebels of 1554 at the French court, the Isle of Wight and Plymouth. N 4: not in print. V 2: 75% firm, read in part. |
 
 ## By single axis
 
@@ -548,3 +549,4 @@ Burghley to Walsingham 1573 (Walsingham letter-book) provisional score: 0.25×1 
 Informant to Nevers, 29 April 1588 provisional score: 0.25×3 + 0.25×4 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **3.35** (p109): a key rebuilt from a glossed sibling read an unread letter end to end.
 Visconti to Bolano and to Francis I 1528–29 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×3 = **2.75** (p110): Lasry's published key extended on two unread sibling letters, read (upgraded from read in part 22 Sept 2026; scores unchanged).
 Bornemisza to Ferdinand I c. 1556 provisional score: 0.25×1 + 0.25×3 + 0.20×2 + 0.10×3 + 0.10×1 + 0.10×4 = **2.20** (p111): read at the time; key found on the next record and the gloss re-read sign by sign.
+Wotton to Queen Mary 13 June 1554 provisional score: 0.25×3 + 0.25×4 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×2 = **3.15** (p112): read in part with the SP 106 key R354; the contemporary decipherment at ff. 5r–7v is not digitised.

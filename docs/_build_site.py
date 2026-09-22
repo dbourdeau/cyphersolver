@@ -131,6 +131,11 @@ def stamp_finding(li):
 
 # slug, nav label, year label, sort year, place, status class, status text, title, blurb, quote, rights
 PAGES = [
+    dict(slug='harley1582r8499', label='Wotton to Queen Mary 1554', year='1554', y=1554.45, place='Soissons &rarr; Queen Mary', st='partial', stt='read in part',
+         title='Wotton to Queen Mary, Soissons, 13 June 1554 &mdash; Read in part',
+         blurb='DECODE R8499, catalogued as &ldquo;N. Wottoy ?&rdquo; to an unknown recipient, is Dr Nicholas Wotton&rsquo;s holograph despatch to Mary I from the French court (BL Harley MS 1582 ff. 8&ndash;10), almost wholly in cipher. Its key is on DECODE as R354 (SP 106/2 f. 162, &ldquo;France 1554&rdquo;). Applied and corrected over eight passes, it reads 75% of 2,801 signs firmly, 89% with tentative readings: Carew and the rebels with the French king and the Constable, pensions and a band with wages, the Isle of Wight and Plymouth, and a repentant rebel met in Paris. The contemporary decipherment at ff. 5&ndash;7 is not digitised.',
+         quote='&ldquo;the ysle of Wight might be taken &hellip; and how it might be kept&rdquo;',
+         rights='British Library, Harley MS 1582, via DECODE R8499; key The National Archives, SP 106/2 f. 162, via DECODE R354'),
     dict(slug='r1212', label='Bornemisza c. 1556', year='c. 1556', y=1556.5, place='Transylvania &rarr; Ferdinand I', st='found', stt='read at the time',
          title='Bornemisza on the Kendi treason, Transylvania c. 1556 &mdash; read at the time',
          blurb='DECODE R1212, catalogued as a Latin letter from an unknown sender to &ldquo;Paulo Borne?&rdquo; (HHStA Vienna, Chiffrenschl&uuml;ssel Kt. 13 Fasc. 20 ff. 38&ndash;39), is a report in the cipher of P&aacute;l Bornemisza, Bishop of Transylvania, written in his own voice to Ferdinand I: Ferenc Kendi, &ldquo;ter perfidus&rdquo;, has lost Transylvania to the king. A contemporary hand deciphered it between the lines; its key is the next DECODE record, R1211. Every run was re-read from the signs with that key, correcting the gloss in a dozen places; 276 of 288 cipher tokens read, nine number codes stay open.',
@@ -1128,6 +1133,7 @@ IMAGES['kaa4591'] = None
 IMAGES['kaa4591b'] = None
 IMAGES['r1874'] = None
 IMAGES['r1212'] = None
+IMAGES['harley1582r8499'] = ('harley1582r8499_lead.jpg', 'Harley MS 1582 f. 8r: &ldquo;Pleasing it your highness to understand that&rdquo;, then the cipher: Carew was at Compi&egrave;gne with the French king, the rebels and the Constable', 'British Library, Harley MS 1582 f. 8r (via DECODE R8499)')
 IMAGES['r1875'] = None
 IMAGES['haga1620'] = ('haga1620_lead.jpg', 'R2113 p.2, Constantinople 31 March 1620: clear Dutch with the cipher spans inline, (44) ende (45) arbeiden bij (4) om tyt te winnen', 'Nationaal Archief, The Hague, via DECODE R2113')
 IMAGES['deswart1782'] = ('deswart1782_lead.jpg', 'De Swart&rsquo;s despatch of 8 March 1782, first page: the clear salutation, then the marked groups 15, 452, 730, 833 = waar bij ingesloten', 'Nationaal Archief, The Hague, via DECODE R1036')

@@ -1,0 +1,24 @@
+# Key changes v5, p1.16-p1.30 (from full-resolution crops of img/p1.jpg)
+
+- `ll` p1.16 (after "me"): image is a single ǂ with a bar, the key's "they ǂ." sign; read **they** (tentative): "advertisith me they have concludid that". Relabelled NULL_DAG_BAR (value they).
+- `>` vs `^`: on p1.16 and p1.18 the sign labelled `>` is a triangle open/pointing left, while `^` is an upright closed Δ. `>` = o ("ocasion" p1.18, "con-" p1.16), `^` = n. This separates the ^ n/o label: the o-cases of `^` should be rechecked as `>`.
+- `+` on p1.20 (after d+): image is ǂ with a crossbar, the key's o homophone ǂ, not b. Relabelled NULL_DAG_O = o; `ll` after it = n. Gives "commo-cion" (p1.19-20).
+- `d` p1.16 (after mu): tall looped ꝺ = the key's dark ꝺ c-homophone ("conc-").
+- p1.21 `<` after `B .`: image is α with a dot (key t "α-dot"), not the crossed α (g). Relabelled a. (t). With xi: "to".
+- p1.21 `xh` before `or 6 y=`: image is an upright Y with a crossbar (Y_CROSS, key s), not the looped x. The word therefore reads "s-low", not "allow"; left tentative as {(a)low}.
+- p1.23 CIRC_FILLED (after the French king ⊙): a plain, heavily inked small circle, not a ⊙. The key's plain o = **hath**: "he the French king hath encreasidde the pensions". Relabelled O_SMALL (tentative). CIRC_FILLED is gone from p1.
+- p1.23 `xi` in "pensions": the sign is ʒ with an overbar (key i, `z`), not ξ. Relabelled z; "pensions" is now firm (x 8 ^ [XX] P z 6 [rho] mu Y+).
+- p1.22 "to **that** purpose": sy S a. = th-a-t (letters, not the th-code alone). Dx > pt [ft q=] ss x = "pourp-", another `>` = o.
+- p1.24 `0` after G= (who): a plain small o with no dot, not the null o. (0). Read as O_SMALL = hath (tentative): "who hath none".
+- p1.24 "crownes": E + . [q=] > C= ^ 8 P = c r o w n e s. Another `>` = o.
+- p1.24 `H=` before xi: no overbar on the image; plain H. With H = u (as on p3/p6) and xi → z (ʒ, i): Y+ H z a. # = "suite" (tentative): "crownes the suite of the Cardinal Farnese".
+- p1.26 `nj` (ɳ) = k (key k ɳ): nj xi or b [rho XX] # e/ = "kolleg(e)", firm letters. `t~` in "saie" (Y+ S+ t~ ct) reads i/y here; it is not the null ~+ drawn in key_null (tentative; p1.25 "Farnese" needs f in the same place, so t~ may be two signs).
+- p1.27 `o` (before Ap none) is the same plain small circle as p1.24: O_SMALL = hath (tentative).
+- p1.27 `ss` in "crownes" (E u [CURL_D] xe ss J+ # [q=] Y+): the ß has the z-tail, SS_TAIL = w. "crownes" is firm; `CURL_D` again reads as a null.
+- p1.27 "two": Y_ y= xe = t w o (letters, firm).
+- p1.28 `b` before `> ss u x=`: the image is a b with a bar through the stem (ƀ, key f), not the plain ƃ (l). Relabelled BBAR = f; the ß after it has the z-tail (SS_TAIL = w): BBAR > SS_TAIL u x= = "fowre", then q+ pt ^ Z= [:] ss [XX] d+ OMEGA = "hundrid". "fowre hundrid" firm.
+- p1.28 `<` (after q=): α with a dot (a., t), not crossed α. `ll` after q): single ǂ = key o (NULL_DAG_O). The run NULL_DAG_O CURL_D_BAR [q=] a. 8 [CURL_D] + . d+ OMEGA reads o f ? e r i d = {offerid} only if CURL_D_BAR = f (key "ꝸ-crossed" f) and a. is a slip for a second f. Tentative; on p1.16 CURL_D_BAR reads as a null.
+- OMEGA (plain ω) = d in "hundrid" p1.28, "concludid" p1.16, "advertisith" p1.16 (a d). With the one "there" reading unconfirmed on these lines, OMEGA = d here.
+- p1.29 `8` (twice): the image sign is ƺ (a looped z with a crossbar), key d, i.e. 8/ not 8. `H .` is ⅃ with a crossbar (J+, n), not H. The line reads firm: or L_ v 8/ [CURL_D -2] o/ J+ S. = "leading", B = of, S = a, + S, ^ 8/ = "band" (so `S,` = a here, `+` without a dot = b). "leading of a band yt him list as he saithe".
+- p1.30 "pensions": Dx [q=] x= ^ XUND d+ -8 mu [:] XUND = p e n s i o n s, so XUND = s (both) and `-8` = o in this word (δ̄ is c in the key; here o). Firm apart from -8.
+- CURL_D (hooked ꝺ) reads as null in every place on p1.16-p1.30 (p1.17 "changes" c?, p1.25 "Cardinal", p1.27 "crownes", p1.28, p1.29 "leading").
