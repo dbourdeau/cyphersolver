@@ -65,6 +65,7 @@ about 4,337 (P2 1,740 + P3 880 + P4 1,515 + P5 202) = 0.916; P1's 262 signs all 
 ## Escalation
 - [x] siblings: R1853 (register, 14 images) read for keys; all other Mantova records on DECODE opened (R7858-R7888 = Archivio Gonzaga E.I.2 b. 423, 16th-17th c. keys; R7888-R7890 = 1395 Armanini); none for 1428-30
 - [x] clear-pages: P3's interlinear gloss is the contemporary decipherment (used as key source); P5 is the verso of Cattanei's second letter, not a clear copy
+- [x] known-keys (2): DECODE R1855 (Modena, Este keys incl. 'Malatesta Novello' 1441) and R1852 (Florence Dieci di Balìa keys 1424-32) opened: sign sets differ from P1's (ſſ, η, H, cc, ʒ), no fit; Falcioni's 2004 note on Malatesta chancery ciphers is not online
 - [x] known-keys: register keys "cum Malatesta dni Pandulfi", "nova cum fratribus de Malatestis", "ultima / prima cum Karolo de Malatestis", "Ziffra nova" 1417 tried on P1: values do not fit (seeded anneal -4.2/char)
 - [x] print: web search (Pandolfo Malatesta, Gonzaga, cifra, 1428); Treccani DBI; Falcioni 2015 (Pandolfo and the council of Ferrara) found: prints the 1438 plaintext only
 - [x] key-rebuild: P2 and P4 keys rebuilt ciphertext-only and extended by per-sign and per-occurrence rescoring; P3 key completed from context; P1 annealed under 12 hypotheses (Latin, Italian, modern Italian, costed nulls, vowel classes, separators as spaces, word/line/global reversal, split and merged digraphs)
