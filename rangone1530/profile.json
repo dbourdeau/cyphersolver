@@ -1,0 +1,243 @@
+{
+ "schema_version": 1,
+ "target": "rangone1530",
+ "title": "Guido Rangone to Anne de Montmorency, Venice, 10 Jan 1530 (BnF fr. 3070 f. 81, DECODE R4249) and 24 Dec 1529 (BnF fr. 3082 f. 42)",
+ "documents": [
+  {
+   "id": "fr3070_f81",
+   "shelfmark": "BnF, Français 3070, f. 81r, no. 40 (DECODE R4249); 18th-c. copy Clair. 331 f. 15 (Gallica btv1b9000761d view 15)",
+   "date": "10 Jan 1530",
+   "year": 1530,
+   "country": "Italy",
+   "route": "Venice -> Anne de Montmorency",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf or in the Clairambault copy; none in print or online."
+   },
+   "length": {
+    "tokens": 156,
+    "unit": "symbols",
+    "measured": true,
+    "file": "tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R4249 images (Gallica scans of fr. 3070) at 1.4-3x line crops, checked against the Clair. 331 copy",
+    "image_quality": "good",
+    "notes": "156 = lines A1-A6 of tokens.txt (264 total over both letters, measured with _check_profile --measure)."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "fr3082_f42",
+   "shelfmark": "BnF, Français 3082, f. 42r, no. 19 (Gallica btv1b9060318p view 65; not on DECODE); 18th-c. copy Clair. 330 f. 206 (btv1b9000769q view 210)",
+   "date": "24 Dec 1529",
+   "year": 1529,
+   "country": "Italy",
+   "route": "Venice -> Anne de Montmorency",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf or in the Clairambault copy."
+   },
+   "length": {
+    "tokens": 108,
+    "unit": "symbols",
+    "measured": true,
+    "file": "tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica native view 65, crops, checked against the Clair. 330 copy",
+    "image_quality": "good",
+    "notes": "108 = lines B1-B5 of tokens.txt."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic simple substitution for Italian with about 50 invented signs (vowels 2-8 signs, consonants 1-3), one null, no word division, no nomenclator found.",
+  "symbol_kind": "symbols",
+  "digit_groups": "unknown",
+  "distinct_symbols": 54,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 8,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "notes": "54 = sign types as transcribed after splitting three look-alike pairs; key in key.json."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "DECODE Non-decrypted; Tomokiyo (cryptiana francis.htm) lists both Clairambault copies as undeciphered; no key on Lasry's GL.htm; no edition found",
+   "found": "unknown",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: posed the catalogue card (item 181) with /goal. No target-specific intervention.",
+  "tools": [
+   "curl (DECODE with project cookie, Gallica IIIF)",
+   "python simulated annealing (solve.py, solve2.py)",
+   "lang it-cinquecento 5-gram",
+   "subagent for sibling-volume search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Tomokiyo francis.htm: Rangone ciphers in Clair. 330 f. 206 and Clair. 331 f. 15, undeciphered, same cipher; GL.htm has no Rangone key.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "DECODE R4249 8 images with the project cookie; Clair. 331 view 15 and Clair. 330 view 210 from Gallica.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "Clair. copy headings 'Vol. 134 fol. 81' / 'Vol. 143 fol. 42' give Béthune volume numbers; Gallica SRU search located fr. 3082 no. 19 (the 24 Dec 1529 original), view 65.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Both originals transcribed sign by sign (cipher.txt, 264 signs), checked against the copies.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "statistics",
+   "what": "51 types, flat top frequencies (19,19,16,14,13): homophonic.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Repository keys of Italians in French service 1528-29 (Visconti, Bizozola, Sormano, Gramont) compared by sign set.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "Homophonic annealing against it-cinquecento 5-gram (solve.py): degenerate 'iiii' optimum, then pseudo-Italian with no consensus after adding a frequency penalty.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "control",
+   "what": "Genuine Italian of the letter's clear text scores -1.72 per 5-gram vs -2.3 for the solver's best: search failure, not model failure.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "Incremental-delta annealer (solve2.py), 40 restarts x 2M moves: one restart at -1.97 reads 'malissimo satisfato di lui', 'mandato a dirlo al signore Cesare', 'il Fregoso', 'una pratica di lei mi dispiacera'; perturbed restarts return to it.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "Subagent checked four other Rangone letters of 1529-30 (fr. 3012, 3013, 3034, 2980): all clear; Joachin 1529 cipher (fr. 3012 no. 51) is a different system.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Hand corrections from words: 6=h, tailed sign=f (oferte), D=b (ben disposte), vt null; three look-alike sign pairs split after re-inspection.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "DBI Fregoso: married Rangone's sister autumn 1529, commanded Ravenna/Cervia for Venice, made governor of Verona by the Senate Jan 1530 (the 'grande oferte').",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "Word-aware scoring (spaced.py): coordinate ascent and pair brute force over the rare signs; no alternative beats noise, null option deletes letters.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "reading.md: 232/264 cipher signs read as sense (87.9%).",
+   "result": "partial",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "fraction_read": 0.879,
+  "grades": "unknown",
+  "verification": [
+   "historical consistency"
+  ],
+  "notes": "Both passages concern Cesare Fregoso, Rangone's brother-in-law: Venice's offers to him (A) and his action 'con spada et cappa' (B). Open signs occur once each; the two letters are all the ciphertext known.",
+  "key": "partial",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "gaps": [
+   {
+    "item": "A1 'a [y S] de venire' and A2 '[q y] le mie' (9 signs)",
+    "blocker": "too-short",
+    "detail": "y occurs twice; 'me' fits A1 and fails A2, 'b' fails A1"
+   },
+   {
+    "item": "A6 'la [xo]icon[p]uorano' (12 signs)",
+    "blocker": "too-short",
+    "detail": "xo occurs once; no parallel run"
+   },
+   {
+    "item": "B3 'de [a]en' and 'volse r[c d 9]a' (9 signs)",
+    "blocker": "too-short",
+    "detail": "signs a, c, d, 9 occur once each; several words fit"
+   },
+   {
+    "item": "B4 'il f[?] da rovi[n]are' (2 signs)",
+    "blocker": "too-short",
+    "detail": "tailed sign reads f in A, makes no word here"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "rangone1530/reading.md 'Measure': cipher tokens per run, open runs counted unread (32 of 264)"
+ }
+}

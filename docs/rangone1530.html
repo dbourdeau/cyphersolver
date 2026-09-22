@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guido Rangone to Montmorency, 1529&ndash;1530 &mdash; Read in part</title>
+<meta name="description" content="Two cipher passages in letters of Count Guido Rangone to Anne de Montmorency from Venice, 24 December 1529 (BnF Fran&ccedil;ais 3082 f. 42) and 10 January 1530 (BnF Fran&ccedil;ais 3070 f. 81, DECODE R4249). The homophonic cipher, about fifty invented signs, was broken here ciphertext-only by simulated annealing and read in part (88% of signs). Both passages concern Cesare Fregoso, Rangone&rsquo;s new brother-in-law, and the great offers Venice made him.">
+<link rel="stylesheet" href="style.css?v=20260921e">
+<meta name="date" content="2026-09-22">
+<meta name="last-modified" content="2026-09-22">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="swieten1757.html"><span class="st solved">read</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">read</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li><li><a href="harley7001.html"><span class="st partial">read in part</span><b>Reade 1641</b><span class="yr">1641</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">100</span><b>Solved</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">53</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">29</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">33</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 216 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <a href="catalogue.html">The Unsolved Catalogue</a>
+    <a href="atlas.html">Atlas</a>
+    <a href="keys.html">Key web</a>
+    <a href="secret.html">Secret letter</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <a class="ext" href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+<div class="cipherstrip">&#1046; &#618; &asymp; &#638; &rho; N L &#1046; 8 &rho; &#643; &#632; L &rho; &Pi; &#643; &#632; &#985;<br>m a l i s s i m o &middot; s a t i s f a t o<br>&#618; &#643; &#548; = a &middot; &omega; P &infin; = e &middot; 8 &#985; = o</div>
+<p class="kicker">Venice &rarr; Anne de Montmorency &middot; homophonic substitution &middot; 1529&ndash;1530 &middot; read in part</p>
+<h1>Guido Rangone to Anne de Montmorency, December 1529 and January 1530</h1>
+<div class="parties"><figure class="party sender"><img src="portrait_guido-rangone.jpg" alt="Guido Rangone" title="Guido Rangone: Portrait after Titian, c. 1534. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Guido Rangone</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_anne-de-montmorency.jpg" alt="Anne de Montmorency" title="Anne de Montmorency: Portrait by Jean Clouet, c. 1530. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Anne de Montmorency</figcaption></figure></div><!-- /parties -->
+<p class="sub">BnF Fran&ccedil;ais 3070 f. 81 (DECODE R4249, catalogue item 181) and its sibling Fran&ccedil;ais 3082 f. 42, with the eighteenth-century copies in Clairambault 331 and 330. Two short cipher passages in Italian letters, broken here without a key: about fifty invented signs standing for Italian letters, several for each vowel.</p>
+<p class="meta">Daniel Bourdeau &middot; solved in part <time datetime="2026-09-22">22 September 2026</time></p>
+<div class="seal partial" aria-hidden="true"><span>read in part</span></div>
+</section>
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters">The letters</a><a href="#the-cipher">The cipher</a><a href="#the-letter-of-24-december-1529">The letter of 24 December 1529</a><a href="#the-letter-of-10-january-1530">The letter of 10 January 1530</a><a href="#how-it-was-broken">How it was broken</a><a href="#what-remains">What remains open</a><a href="#sources">Sources</a></nav>
+<div class="callout"><strong>Summary.</strong> The catalogue card was DECODE R4249, a letter of &ldquo;Guido Ramgone&rdquo; from Venice, 10 January 1530, with seven lines of cipher and no decipherment. Tomokiyo had listed its Clairambault copy and a copy of a second Rangone letter (24 December 1529) as undeciphered, in the same cipher. The Clairambault headings give the old B&eacute;thune volume numbers, and that led to the original of the second letter, Fran&ccedil;ais 3082 f. 42, which DECODE does not have. The two passages together are 264 signs of 54 kinds. No key survives and none of the keys known for Italians in French service in these years uses these signs. So the cipher was attacked ciphertext-only: simulated annealing against a sixteenth-century Italian letter model, 40 long runs, until one reached the score of real Italian and produced &ldquo;malissimo satisfato di lui&rdquo;, &ldquo;il signore Cesare&rdquo; and &ldquo;il Fregoso&rdquo;. Hand corrections from the words and a check of every sign&rsquo;s weight finished the key: 232 of 264 signs (88%) read as sense. Both passages are about Cesare Fregoso, who had just married Rangone&rsquo;s sister and whom Venice made governor of Verona that January, the &ldquo;grande oferte&rdquo; of the January letter. Four short runs of signs that occur only once stay open, because there is no more ciphertext.</div>
+
+<h2 id="the-letters"><span class="num">01</span> The letters</h2>
+<p>Count Guido Rangone (1485&ndash;1539), a condottiere from Modena in French service, spent the winter of 1529&ndash;30 in Venice after the defeat at Landriano. He wrote to the Grand Master, Anne de Montmorency, in Italian, mostly in clear: news of the Peace of Bologna, the Duke of Urbino, the Turkish envoy, the Swiss and Grisons going home. Twice he switched to cipher.</p>
+<ul>
+<li><b>24 December 1529</b>, Fran&ccedil;ais 3082 f. 42r, no. 19 (Gallica view 65). Five lines of cipher after the passage on Ravenna and Cervia, which Venice was handing back to the Pope. Copy: Clairambault 330 f. 206, headed &ldquo;Vol. 143 fol. 42&rdquo;.</li>
+<li><b>10 January 1530</b>, Fran&ccedil;ais 3070 f. 81r, no. 40 (DECODE R4249). Seven lines of cipher after &ldquo;adesso lo dir&ograve; pi&ugrave; brevemente che io potr&ograve;. Mons.r&rdquo;, broken by the clear words &ldquo;vida V. Ex. che tratti sono questi&rdquo;. Autograph signature &ldquo;S.re Guido Rangone Co.&rdquo;. Copy: Clairambault 331 f. 15, headed &ldquo;Vol. 134 fol. 81&rdquo;.</li>
+</ul>
+<p>Neither copy has a decipherment. Four other Rangone letters from Venice in 1529&ndash;30 (Fran&ccedil;ais 3012 no. 44, 3013 no. 19, 3034 no. 18, 2980 no. 44) were checked and are in clear. The ciphered letter of Joachin de Vaux from Ferrara, March 1529, in Fran&ccedil;ais 3012 uses a different sign set.</p>
+<figure><img src="rangone1530_lead.jpg" alt="The cipher lines of Rangone's letter of 10 January 1530" loading="lazy"><figcaption>Fran&ccedil;ais 3070 f. 81r: the seven cipher lines of 10 January 1530, with the clear words &ldquo;vida V. Ex. che tratti sono questi&rdquo; in line 5. BnF, Gallica (via DECODE R4249).</figcaption></figure>
+
+<h2 id="the-cipher"><span class="num">02</span> The cipher</h2>
+<p>A homophonic simple substitution without word division. Vowels have two to eight signs each (e: &omega;, P, &infin; and two stars; a: &#618;, &#643;, &#548;; o: 8 and &#985;), consonants one to three (n: K, &#5077;&#5071;, &#12620;; l: &asymp;, &xi;, &#10017;). One sign is a null: it stands inside the name <em>Fre&middot;goso</em>. No code signs for names were found. This is the ordinary Italian design of the 1520s, with more homophones than the ciphers of Visconti or Bizozola from the same campaigns. The key is in <code>rangone1530/key.json</code>.</p>
+<p>Three pairs of look-alike signs turned out to be different signs and had to be separated: a capital &Theta; (t) against the narrow &theta; (i), a &ldquo;&ni;&rdquo; with a leading dash (u) against the plain one (i), and two blotted stars.</p>
+
+<h2 id="the-letter-of-24-december-1529"><span class="num">03</span> The letter of 24 December 1529</h2>
+<figure class="creveal" data-src="reveal/rangone1530.json"></figure>
+<figure><img src="rangone1530_1529.jpg" alt="The cipher lines of the letter of 24 December 1529" loading="lazy"><figcaption>Fran&ccedil;ais 3082 f. 42r: the cipher begins after &ldquo;sua bona voluntade&rdquo; (&ldquo;il Fre&middot;goso&rdquo;) and resumes after &ldquo;li giorni passati con spada et cappa&rdquo;. BnF, Gallica btv1b9060318p view 65.</figcaption></figure>
+<p>Clear text in roman, the decipherment in bold; <code>[?]</code> marks signs not read.</p>
+<blockquote><p>&hellip; ancora che la recuperi per questa altra via, haura visto sua bona voluntade <b>il Fregoso</b> li giorni passati con spada et cappa <b>tolse fare la cosa de [?]en; mai pi&ugrave; [v]olse r[? ? ?]a le cose ben disposte in casa, e har&agrave; il f[?] da rovi[n]are; e ho una pratica di lei [che] mi dispiacer&agrave;.</b> Qui ancora si trovar&agrave; l&rsquo;Orator del Turco &hellip;</p></blockquote>
+<p>&ldquo;&hellip; will have seen his good will. Fregoso, these past days, &lsquo;with sword and cloak&rsquo;, took it on himself to do the business of [?]; never again did he want [?] the things well arranged in the house, and he will have the [?] to ruin [?]; and I have a negotiation concerning her [or: Your Excellency] which will displease me.&rdquo;</p>
+<p>Fregoso had commanded Ravenna and Cervia for Venice since September 1528, the towns the clear sentence before the cipher is about. <em>Con spada et cappa</em> means in person and without ceremony. The word after &ldquo;la cosa de&rdquo; has one unread sign. Fregoso&rsquo;s old enterprise against Genoa would give <em>de Gen[ova]</em>, cut short, and <em>de ben</em> fits as well.</p>
+
+<h2 id="the-letter-of-10-january-1530"><span class="num">04</span> The letter of 10 January 1530</h2>
+<blockquote><p>Io vi scrissi ultimamente Ill.mo S.re uno certo caso acaduto mi et non li dissi pi&ugrave; oltra per alhora; adesso lo dir&ograve; pi&ugrave; brevemente che io potr&ograve;. Mons.r <b>&rsquo;l fa instantia a [? ?] de venire al servicio loro, [? ?] le mie &hellip; malissimo satisfato di lui; ha mandato a dirlo al signore Cesare e farli grande oferte.</b> Vida V. Ex. che tratti sono questi, <b>essendo seguito la [?]icon[p]uorano a[t]tenderui.</b> Hora lassamo andare questi mei particulari &hellip;</p></blockquote>
+<p>&ldquo;My Lord, he urges [me?] to come into their service &hellip; is very ill satisfied with him; he has sent to tell it to Signor Cesare and to make him great offers. See, Your Excellency, what treatment this is, it having followed [?] &hellip;&rdquo;</p>
+<p>In January 1530 the Venetian Senate appointed Cesare Fregoso military governor of Verona with 2,500 ducats a year (<em>Dizionario Biografico degli Italiani</em>, &ldquo;Fregoso, Cesare&rdquo;). He had married Rangone&rsquo;s sister Costanza that autumn. The cipher is Rangone&rsquo;s complaint that the Republic was courting his brother-in-law while it treated him badly, the &ldquo;certo caso&rdquo; of his previous letter. In October 1530 the French in turn dismissed Rangone over his protests at a cut in his pension.</p>
+
+<h2 id="how-it-was-broken"><span class="num">05</span> How it was broken</h2>
+<ol>
+<li>Both originals and both copies were transcribed sign by sign (<code>cipher.txt</code>): 264 signs, flat top frequencies, so homophonic.</li>
+<li>Simulated annealing of the sign-to-letter map against the <code>it-cinquecento</code> five-gram model, with a letter-frequency penalty. Short runs gave pseudo-Italian and no two runs agreed. The clear text of the same letter scores &minus;1.72 per five-gram, the runs &minus;2.3: the search was failing, not the model.</li>
+<li>An incremental annealer, 40 restarts of two million moves each. One restart reached &minus;1.97 and read real words and the name Fregoso. Every perturbed restart from that key went back to it.</li>
+<li>A sensitivity table: 35 signs are fixed by the text with margins of 6 to 85 log units; the others occur once or twice.</li>
+<li>Corrections from the words: б = h (<em>ha mandato</em>, <em>e har&agrave;</em>, <em>ho una</em>), the tailed sign = f (<em>oferte</em>), D = b (<em>ben disposte</em>), the null, and the three split pairs.</li>
+<li>Word-aware scoring of the remaining signs, singly and in pairs, under a spaced language model. No reading won by more than noise, so they stay open.</li>
+</ol>
+
+<h2 id="what-remains"><span class="num">06</span> What remains open</h2>
+<ul>
+<li>A1&ndash;A2: &ldquo;a [? ?] de venire&rdquo; and &ldquo;[? ?] le mie&rdquo;, 9 signs. The sign &#612; occurs twice: &ldquo;me&rdquo; reads in the first place and gives no Italian in the second; the annealer&rsquo;s &ldquo;b&rdquo; reads in neither.</li>
+<li>A6: &ldquo;la [?]icon[p]uorano&rdquo;, 12 signs. One sign occurs only here and the run has no parallel.</li>
+<li>B3: &ldquo;de [?]en&rdquo; and &ldquo;volse r[? ? ?]a&rdquo;, 9 signs occurring once each; several words fit.</li>
+<li>B4: &ldquo;il f[?] da rovi[n]are&rdquo;, 2 signs.</li>
+<li>Readings that assume an encipherer&rsquo;s slip: <em>ven[i]re</em> (the h sign for i), <em>al [s]ignore</em> (&#632; t for &rho; s), <em>Cesare e</em> (&theta; i for e), <em>rovi[n]are</em>.</li>
+</ul>
+<p>These are blocked by length: the two passages are all the known text in this cipher.</p>
+
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/rangone1530.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">07</span> Sources</h2>
+<ul>
+<li>BnF, Fran&ccedil;ais 3070 f. 81 (Gallica btv1b9059934c; DECODE <a href="https://de-crypt.org/decrypt-web/RecordsView/4249">R4249</a>).</li>
+<li>BnF, Fran&ccedil;ais 3082 f. 42 (<a href="https://gallica.bnf.fr/ark:/12148/btv1b9060318p/f65.item">Gallica btv1b9060318p, view 65</a>).</li>
+<li>BnF, Clairambault 331 f. 15 (<a href="https://gallica.bnf.fr/ark:/12148/btv1b9000761d/f15.item">view 15</a>) and Clairambault 330 f. 206 (<a href="https://gallica.bnf.fr/ark:/12148/btv1b9000769q/f210.item">view 210</a>).</li>
+<li>S. Tomokiyo, <a href="https://cryptiana.web.fc2.com/code/francis.htm">&ldquo;Ciphers of Francis I&rdquo;</a>, cryptiana, sections Clair. 330 and 331.</li>
+<li><a href="https://www.treccani.it/enciclopedia/cesare-fregoso_(Dizionario-Biografico)/">&ldquo;Fregoso, Cesare&rdquo;</a>, <em>Dizionario Biografico degli Italiani</em>; <a href="https://condottieridiventura.it/guido-ii-rangoni/">Guido II Rangoni</a>, Condottieri di ventura.</li>
+</ul>
+<p class="muted">Transcription, key, solvers and notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/rangone1530">rangone1530/</a>.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Biblioth&egrave;que nationale de France / Gallica</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="bizozola1520.html" rel="prev">&larr; Bizozola 1529 1529</a><a href="sperantio1534.html" rel="next">King John to Bavaria 1534 1534 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=f00596e5" defer></script>
+<script src="solve-replay.js?v=20260921e" defer></script>
+<script src="zoom.js?v=20260921e" defer></script>
+<script src="site.js?v=20260921e"></script>
+</body>
+</html>
