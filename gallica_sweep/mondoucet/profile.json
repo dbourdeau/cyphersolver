@@ -1,0 +1,293 @@
+{
+ "schema_version": 1,
+ "target": "gallica_sweep/mondoucet",
+ "title": "Claude de Mondoucet to Charles IX from the Low Countries, 13 July 1572, 4 Jan 1573 and 9 Sept 1573, BnF fr. 16127",
+ "documents": [
+  {
+   "id": "1572-07-13",
+   "read": "not read",
+   "shelfmark": "BnF fr. 16127 ff. 60-61",
+   "date": "13 Jul 1572",
+   "year": 1572,
+   "country": "France",
+   "route": "Brussels -> French court",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No Court decipherment in fr. 16127; not in Didier's edition (the Reims register begins 6 Sept 1572; Didier's introduction lists this letter as 'chiffrée et en grande partie sans déchiffrement')."
+   },
+   "length": {
+    "tokens": 1082,
+    "distinct": 54,
+    "unit": "symbols",
+    "measured": true,
+    "file": "hand/ct_f60.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF canvases 125-127, hand transcription at glyph level",
+    "image_quality": "fair",
+    "notes": "Measured with --drop-first: ct_f60.txt 875 (less 3 bracketed clear words = 872), ct_f60v.txt 44, ct_f61.txt 166; total 1,082 cipher glyphs including nulls. distinct is ct_f60.txt's."
+   }
+  },
+  {
+   "id": "1573-01-04",
+   "read": "read",
+   "shelfmark": "BnF fr. 16127 ff. 126v-127v",
+   "date": "4 Jan 1573",
+   "year": 1573,
+   "country": "France",
+   "route": "Antwerp -> French court",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "L. Didier, Lettres et négociations de Claude de Mondoucet, t. 1 (1891), pp. 141-142, from Mondoucet's register (Bibliothèque de Reims); archive.org lettresetngocia01mondgoog. No decipherment in fr. 16127; four interlinear Court glosses on f. 127r only."
+   },
+   "length": {
+    "tokens": 1476,
+    "distinct": 57,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f1573/ct/f126v_127_v4.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full-resolution canvases 263-265 and strips",
+    "corrections": 24,
+    "image_quality": "fair",
+    "notes": "--measure --drop-first gives 1,834 tokens; less 358 word separators '/', '.' and bracketed clear words = 1,476 (NOTES: 1,468). distinct 57 includes '/'. Corrections: 20 glyph edits in the v2 strip re-check plus 4 kept in the v4 constrained pass; 52 signs re-marked as alpha in v3."
+   }
+  },
+  {
+   "id": "1573-09-09",
+   "read": "read",
+   "shelfmark": "BnF fr. 16127 ff. 135-137 (decipherment ff. 139-141)",
+   "date": "9 Sept 1573",
+   "year": 1573,
+   "country": "France",
+   "route": "Amsterdam -> French court",
+   "language": "French",
+   "pages": 6,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Court decipherment ('deschiffré') ff. 139r-141r, verbatim; verified by glyph-letter alignment."
+   },
+   "length": {
+    "tokens": 4735,
+    "distinct": 66,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f1573/ct/blk2.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full-resolution canvases 280-287",
+    "image_quality": "fair",
+    "notes": "Two files: f135r.txt 558 tokens less 117 separators = 441; blk2.txt (ff. 135v-137r) 5,510 less 1,216 separators = 4,294; total 4,735, as in NOTES. Tail f. 137v (c. 21 lines) not transcribed; its decipherment is on f. 141r."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution of invented and letter-form signs (one glyph per letter, 24-letter alphabet) with a few digraph and word signs and nulls, inline in clear French.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 55,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "word parts"
+   ],
+   "entries": "unknown"
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "partial",
+  "doubled_letters": "unknown",
+  "sibling_key": "The 1572 key (hand/key2.json) and the 1573 key (f1573/key1573_split2.json) are one system; the 1573 key was seeded from the 1572 one.",
+  "notes": "c. 55 signs in the 1573 key; 23 = qu, crossed phi = ll; word signs (dict, faict, pour, quil, monsieur). Round a and open alpha were first merged; split, alpha = r, round a = l/y/i. Scribe's gaps fall at word boundaries 66% of the time."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "9 Sept 1573: Court decipherment on ff. 139-141 (used as known plaintext). 4 Jan 1573: printed in clear by Didier, t. 1 (1891), pp. 141-142, found 21 Sept 2026 after the ciphertext-only passes. 13 July 1572: no reading anywhere known.",
+   "found": "after reading",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "known plaintext",
+   "crib",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Project-level: set up Claude Code with the models and posed the problem with /goal; chose which leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "glyph clustering (glyph_cluster.py)",
+   "anchored HMM alignment (hand/anchor_align2.py)",
+   "hard-EM aligner with word signs (f1573/align.py)",
+   "beam decoder with period-French 5-gram (hand/lm_decode.py, f1573/decode1573.py)",
+   "held-out control scorer (f1573/score_ctl.py)",
+   "glyph-alternative tester (f1573/tryalt.py)"
+  ],
+  "models": [
+   "claude-fable-5-1",
+   "claude-opus-4-8",
+   "claude-opus-5"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-09-17",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-17",
+   "kind": "access",
+   "what": "Swept fr. 16127 on Gallica entire: c. 20 Mondoucet cipher despatches 1571-74 with Court decipherments, except 13 July 1572.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "transcription",
+   "what": "Transcribed the verbatim pairs 29 Aug 1572 / f. 9 and 16 July 1572 / f. 64 by hand and by glyph clustering.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "solver",
+   "what": "Four aligners, each validated on synthetic controls, run on the two pairs.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "statistics",
+   "what": "1.3-1.4 glyphs per letter even on the glossed pair; later traced to a segmenter artefact (hand counts give one glyph per letter).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "crib",
+   "what": "Hand glyph transcription of 16 July ff. 62r-62v anchored on the interlinear glosses ('pouvez', 'leur délivrance', 'au 30') and the f. 64 decipherment; anchored HMM alignment gave homophone counts, fixed by hand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "control",
+   "what": "Beam decode of the 16 July block with the key reproduced the decipherer's gloss 'leur delivrance des espagnols'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "reading",
+   "what": "Decoded 13 July 1572 (ff. 60r, 60v, 61r): reads in stretches (le prince, service du roi, Espaigne, le pape, Angleterre, garnison); transcription-limited.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "verification",
+   "what": "9 Sept 1573: 4,735 cipher glyphs transcribed and hard-EM-aligned against the Court decipherment ff. 139-141 line for line; ratio 0.91 glyphs/letter, so the decipherment is verbatim, not abridged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "sibling key",
+   "what": "1573 key of c. 55 signs from the 9 Sept alignment, seeded with the 1572 key; same system.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "control",
+   "what": "Key re-estimated from 9 Sept block 2 only, block 1 decoded blind: 77% of letters correct (303/391); word-space LM variant 61-64%, dropped.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "reading",
+   "what": "4 Jan 1573 decoded ciphertext-only with the 1573 key; the gloss 'hambourg' independently reproduced on l. 26; about two-thirds of glyphs in stretches that read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Re-transcription of all 39 lines of 4 Jan against the strips (v2), 20 glyph edits; small net gain.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "what": "Split the a class into round a and open alpha on f135r, f137r and 4 Jan; re-alignment gives alpha = r only; control 77.5% -> 78.3%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "what": "Alpha marked on all five 9 Sept pages (key1573_split2.json, round a = l/y/i); control 79.0%; tryalt constrained pass kept 4 of 11 image-ambiguous alternatives on 4 Jan; best reading 55-60% of letters. Ciphertext-only plateau.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Found the 4 Jan cipher passage printed in clear in Didier, Lettres et négociations de Claude de Mondoucet, t. 1 (1891), pp. 141-142; confirms the decode word for word where it read and fills the gaps. 13 July 1572 not in Didier.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "13 July 1572: open alpha marked against round a on the strips of ff. 60r-61r (hand/split.py; 42 of 76 a-class signs are alpha; f. 61 barred o normalised).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "what": "Retry: 13 July re-decoded with key2 + alpha = r (1573 counts) and with key1573_split2 directly (hand/decode_retry.py). Control on the 16 July block, not held out: 60.3% -> 61.1% (alpha = r), 56.2% (1573 key), chance 12-15%. 13 July glyphs in stretches reading as sense: ~8% lenient, ~1% strict (hand/decode_retry.txt).",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.864,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Cipher glyphs of the three documents (7,293): 9 Sept (4,735) and 4 Jan (1,476) counted read; 13 July 1572 (1,082) counted at 8 % (87 glyphs), the lenient hand count of stretches reading as sense in hand/decode_retry.txt (strict count 1 %).",
+  "grades": "unknown",
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy",
+   "matched control",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "13 July 1572, cipher lines J1-J22 (f. 60r), K1 (f. 60v), M1-M6 (f. 61r)",
+    "blocker": "no-key-material",
+    "detail": "No decipherment in fr. 16127 or Didier. After the a/alpha split retry the 1572 key (fitted on one 863-letter crib, ~60% on that block) reads only ~1-8% of the glyphs as sense. The leaves are legible; the limit is the key. f. 61 transcription residue remains but would not read without a better key."
+   }
+  ],
+  "notes": "9 Sept read by the Court (verified verbatim); 4 Jan read ciphertext-only to ~55-60% of letters, then from print; the project's own contribution is the 1573 key (alpha = r) and the ~79% control."
+ }
+}

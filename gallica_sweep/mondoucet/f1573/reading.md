@@ -89,3 +89,38 @@ is the next step, not a new model.
 `ct/` transcriptions · `pt/` decipherment · `align.py` · `align_out.txt`, `blk2_align.txt` · `key1573.json`,
 `key_blk2only.json` · `decode1573.py`, `decode_sp.py` (dropped variant) · `build_lm.py`, `build_lm_sp.py` ·
 `score_ctl.py` · `dec_4jan.txt` · helpers `q.py`, `band.py`, `lines.py`, `strips.py`, `stack.py`.
+
+## 4. Re-transcription pass, 21 Sept 2026
+
+All 39 lines of 4 Jan re-checked against the strips (`ct/f126v_127_v2.txt`, 20 glyph edits marked `# v2:`;
+decoded as `dec_4jan_v2.txt`, same settings). Net gain small: l. 03 "particuliers", l. 30 "avec … que le produit",
+l. 23 "…oublier de"; l. 05 lost "seize". Two shapes do exist inside the `a` class (round closed a vs. open alpha with
+crossing tail) but the 9 Sept key does not separate them, so they stay merged. Verdict: the passage stays **read in
+part**. It will not move further without a key that splits a/alpha, i.e. re-transcribing 9 Sept block 2 with the
+split and re-aligning, or finding a decipherment elsewhere.
+
+**a/α split (same day).** Open alpha marked `α` on f135r, f137r (`ct/*_split.txt`, `ct/blk2_split.txt`) and 4 Jan
+(`ct/f126v_127_v3.txt`, 52 α). Re-alignment (`key1573_split.json`): α = r (42) and nothing else; round a = y/l/i on
+the split pages, never r. Held-out control 77.5 % → 78.3 %. 4 Jan v3 (`dec_4jan_v3.txt`) gains "avant dire" (l. 14),
+"il voudroit qui" (l. 29), "donneur" (l. 13). Still read in part. What remains: split α on f135v–f136v too (cleans the
+round-a values), then the l/d/b foot-curl confusion.
+
+**Full split + constrained pass.** α marked on all five 9 Sept pages (`key1573_split2.json`: round a = l65 y47 i26,
+α = r123). Held-out control 79.0 % (NP=3.5), 73.7 % (NP=1.0). `tryalt.py` tested 11 image-ambiguous glyph
+alternatives on 4 Jan; 4 kept on decoder score (`ct/f126v_127_v4.txt`, `dec_4jan_v5.txt`), none settled by image.
+Best composite reading ≈ 55–60 % of letters (≈ 65 % with conjectures); ll. 03–04, 13, 21–22, 27, 31 stay unread.
+**Closed as read in part**: ciphertext-only decoding has plateaued at ~79 % letter accuracy on the control, so a
+full reading of 4 Jan needs a contemporary decipherment (not in fr. 16127) or a copy of the letter elsewhere.
+
+## 5. Solved: the clear text is in print (21 Sept 2026)
+
+The whole 4 Jan cipher passage is printed in clear by L. Didier, *Lettres et négociations de Claude de Mondoucet*,
+t. 1 (Paris/Reims 1891; archive.org identifier `lettresetngocia01mondgoog` = vol. 1, which covers the Reims register Sept 1572 – Sept 1573; earlier noted here as t. 2 in error), pp. 141–142, from Mondoucet's own letter register (Bibliothèque de Reims MS), dated "D'Anvers,
+ce IIIIe jour de janvier 1573". OCR in `pt/f126v_127_didier.txt` (archive.org `lettresetngocia01mondgoog`).
+It confirms the decode word for word where it read ("seize ou dix huict cappitaines", "soubz umbre de chercher party",
+"désavantaige de vostre service", "ceste forme de wartgueld avec le duc de Brunsvick", "cent mil escuz à Hambourg, que
+l'on croyt debvoir servir pour pareil effect") and fills the gaps: the German captain sent to spy, Alba's wartgeld with
+Brunswick and Saxe-Lauenburg, and an Irish bishop kept at Antwerp by Alba for the Ireland practice (line 31's
+"l'Irlande" and the gloss "?couillart" region). Glosses: "Lan…" = Lauembourg. The passage is **read** (from print);
+this project's contribution is the independent ciphertext-only recovery (~79 % control) and the 1573 key with α = r.
+Contamination note: the edition existed before any of this work but was not consulted until after passes 1–3.
