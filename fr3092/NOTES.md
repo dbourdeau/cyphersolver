@@ -1,6 +1,6 @@
 # BnF fr. 3092 ff. 101-107, three "Mémoires chiffrés" (DECODE R3699-R3701) — NOTES
 
-Status: read (22 Sept 2026). Key: Lasry 2023 (fr. 3029 cipher), applied unchanged. Two name signs tentative.
+Status: no write-up (unpublished 22 Sept 2026 at George Lasry's request: he and a historian have deciphered and analysed these letters for their own publication; do not publish or send to DECODE without his word). Read 22 Sept 2026. Key: Lasry 2023 (fr. 3029 cipher), applied unchanged. Two name signs tentative.
 
 ## What it is
 

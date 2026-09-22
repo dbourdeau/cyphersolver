@@ -1,6 +1,6 @@
 # BnF fr. 3029 ff. 134-135 (no. 59), cipher letter "Au Roy" (DECODE R3670) — NOTES
 
-Status: read (22 Sept 2026). Key: Lasry 2023, applied unchanged. Name signs open.
+Status: no write-up (unpublished 22 Sept 2026 at George Lasry's request: he and a historian have deciphered and analysed these letters for their own publication; do not publish or send to DECODE without his word). Read 22 Sept 2026. Key: Lasry 2023, applied unchanged. Name signs open.
 
 ## What it is
 
