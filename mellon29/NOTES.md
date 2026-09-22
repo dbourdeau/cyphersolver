@@ -96,6 +96,21 @@ Every test ran on the 234-letter transcription, scored with `lang` models (it-mo
   Italian or Latin substance names under any fixed substitution. Only "cristallo" even fits Ariete's pattern.
   Shapes like these are typical of invented pseudo-text.
 
+## Sibling manuscript check (22 Sept 2026, second pass)
+
+- Sarah Lang, "Sources of Alchemical Cryptography" (Univ. of Tartu repository), a survey of alchemical cipher
+  manuscripts, does not list Mellon MS 29. The only Italian sibling it lists with an Elias text is Manchester,
+  John Rylands Latin MS 65 (15th c., Italy; contents in Briggs, AFH 20, 1927). That manuscript opens with the
+  *Lumen luminum* (canvas 3) and also has Elias's *Vademecum*. All 449 images were scanned
+  (https://www.digitalcollections.manchester.ac.uk/view/MS-LATIN-00065/1). Its *Lumen luminum* is the Latin text
+  only: it has no Italian prologue, no zodiac table and no recipes in clear. Its "cipher table" (f. 1v) is a
+  pseudo-Lullian *Tabula alphabetorum Raymundi*, where single letters stand for substances (E vitriolum,
+  F salnitrum, G cinabrium, ...). It is a letter-per-substance notation, not the Mellon system.
+- Lullian letter-formula hypothesis: if each Mellon cipher letter stood for one substance, the zodiac entries would
+  be formulas of 9-13 ingredients. Letters repeat within one "name" (pqyqpqsqst), so this gives no sense, and it
+  cannot be checked without Mellon's own alphabet, which the book does not contain. Under the Rylands alphabet the
+  strings are not readable either.
+
 ## Reading of the evidence
 
 1. The texts cannot be the zodiac names re-enciphered or plain Decknamen. The recipes use the zodiac names in
@@ -118,7 +133,8 @@ Every test ran on the 234-letter transcription, scored with `lang` models (it-mo
 ## Escalation
 
 - [x] siblings: every leaf of the codex checked (3r-37v); no other cipher, no key, no gloss; the pastedown copy is
-  unglossed
+  unglossed; Rylands Latin MS 65 (the Elias Lumen luminum sibling in Lang's survey) scanned in full: no Italian
+  prologue, its letter table is a Lullian alphabet
 - [x] clear-pages: the pastedown's clear gloss explains only the planets; no clear copy of the recipes
 - [x] known-keys: Alberti's published ring tested; no other key known for alchemical texts ascribed to Elias
 - [x] print: Beinecke catalogue, Rec 2014, Galiano's articles; no decipherment
