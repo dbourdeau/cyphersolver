@@ -128,3 +128,21 @@ in July, to Wolsey. All 18 images were downloaded and looked at 21 Sept 2026 (gi
 
 Outcome: read at the time (interlinear on R8568; Tuke's decipherment of R8573) and calendared. Nothing new to read.
 Closed and removed from the catalogue 21 Sept 2026; DECODE corrections queued.
+
+## Catalogue 112: R8559 (Vesp. C IV f. 164, July 1527)
+
+Catalogue no. 112 ("B. Worcester, E. Lee (Hispania) to unknown recipient", DECODE R8559, "Partially decrypted", 2 pp.).
+Both images and Tomokiyo's key document downloaded 21 Sept 2026 (git-ignored in img/).
+
+- f. 164r-v (old foliation 152), margin "B: Worcester / E. Lee", heading "Hispania 1527" (verso "1517", a slip), ending
+  "See fol. 166": a leaf of the joint Ghinucci-Lee despatch to Wolsey of July 1527, in clear English. Content: the
+  Pope's release, the viceroy's letters, Tarbes's instructions, the French offer of "ij millions of crounes" with the
+  delivery of Madame Eleanor, the indemnity bonds of the treaty of Madrid. Same matter as R8552-R8555 above:
+  part of L&P IV no. 3271 (identified by content, not by folio).
+- The only cipher is one run of about 13 signs on the verso ("the second had no thinge ellz" + cipher), deciphered
+  interlinearly at the time: **"but the intimation"**. Tomokiyo's key fits the tail (- m a t i o n = `-ɔ7…-c`).
+- The two signs on the recto ("afore which is this ÷ and semblable to this signe ⸗") are reference marks tying the
+  letter to an enclosure, not cipher.
+
+Outcome: read at the time; nothing new to read. Closed and removed from the catalogue 21 Sept 2026; DECODE
+correction queued (recipient Wolsey, status "Decrypted (at the time)").
