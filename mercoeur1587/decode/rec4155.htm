@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DECRYPT-WEB</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/decrypt-web/css/select2.min.css?v=19.13.27">
+<link rel="stylesheet" href="/decrypt-web/css/select2-bootstrap5.min.css?v=19.13.27">
+<link rel="stylesheet" href="/decrypt-web/css/sweetalert2.min.css?v=19.13.27">
+<link rel="stylesheet" href="/decrypt-web/plugins/fontawesome-free/css/all.min.css?v=19.13.27">
+<link rel="stylesheet" href="/decrypt-web/adminlte3/css/adminlte.min.css?v=19.13.27">
+<link rel="stylesheet" href="/decrypt-web/css/decryptweb23.min.css?v=19.13.27">
+<script data-pace-options='{"ajax":{"trackMethods":["GET","POST"],"ignoreURLs":["/session?"]}}' src="/decrypt-web/js/pace.js?v=19.13.27"></script><!-- Single quotes for data-pace-options -->
+<script src="/decrypt-web/js/element-internals-polyfill.min.js?v=19.13.27"></script>
+<script src="/decrypt-web/js/ewcore.min.js?v=19.13.27"></script>
+<script>
+var $rowindex$ = null;
+Object.assign(ew, {"DEBUG":false,"SESSION_TIMEOUT_COUNTDOWN":60,"SESSION_KEEP_ALIVE_INTERVAL":0,"API_FILE_TOKEN_NAME":"filetoken","API_URL":"api/","API_ACTION_NAME":"action","API_OBJECT_NAME":"table","API_LIST_ACTION":"list","API_VIEW_ACTION":"view","API_ADD_ACTION":"add","API_EDIT_ACTION":"edit","API_DELETE_ACTION":"delete","API_LOGIN_ACTION":"login","API_FILE_ACTION":"file","API_UPLOAD_ACTION":"upload","API_JQUERY_UPLOAD_ACTION":"jupload","API_SESSION_ACTION":"session","API_LOOKUP_ACTION":"lookup","API_LOOKUP_PAGE":"page","API_IMPORT_ACTION":"import","API_EXPORT_ACTION":"export","API_EXPORT_CHART_ACTION":"chart","API_PUSH_NOTIFICATION_ACTION":"push","API_PUSH_NOTIFICATION_SUBSCRIBE":"subscribe","API_PUSH_NOTIFICATION_DELETE":"delete","API_2FA_ACTION":"2fa","API_2FA_SHOW":"show","API_2FA_VERIFY":"verify","API_2FA_RESET":"reset","API_2FA_BACKUP_CODES":"codes","API_2FA_NEW_BACKUP_CODES":"newcodes","API_2FA_SEND_OTP":"otp","TWO_FACTOR_AUTHENTICATION_TYPE":"google","MULTIPLE_OPTION_SEPARATOR":",","AUTO_SUGGEST_MAX_ENTRIES":10,"LOOKUP_PAGE_SIZE":100,"FILTER_PAGE_SIZE":100,"MAX_EMAIL_RECIPIENT":3,"UPLOAD_THUMBNAIL_WIDTH":200,"UPLOAD_THUMBNAIL_HEIGHT":0,"MULTIPLE_UPLOAD_SEPARATOR":"¦","IMPORT_FILE_ALLOWED_EXTENSIONS":"csv","USE_COLORBOX":true,"PROJECT_STYLESHEET_FILENAME":"css/decryptweb23.min.css","EMBED_PDF":true,"LAZY_LOAD":true,"REMOVE_XSS":true,"ENCRYPTED_PASSWORD":true,"INVALID_USERNAME_CHARACTERS":"<>\"'&","INVALID_PASSWORD_CHARACTERS":"<>\"'&","USE_RESPONSIVE_TABLE":false,"RESPONSIVE_TABLE_CLASS":"table-responsive","SEARCH_FILTER_OPTION":"None","OPTION_HTML_TEMPLATE":"<span class=\"ew-option\">{value}</span>","PAGE_LAYOUT":"layout","CLIENT_VALIDATE":true,"IN_OPERATOR_VALUE_SEPARATOR":"|","TABLE_BASIC_SEARCH":"search","TABLE_BASIC_SEARCH_TYPE":"searchtype","TABLE_PAGE_NUMBER":"page","TABLE_SORT":"sort","FORM_KEY_COUNT_NAME":"key_count","FORM_ROW_ACTION_NAME":"k_action","FORM_BLANK_ROW_NAME":"k_blankrow","FORM_OLD_KEY_NAME":"k_oldkey","IMPORT_MAX_FAILURES":1,"TWO_FACTOR_AUTHENTICATION_PASS_CODE_LENGTH":6,"USE_JAVASCRIPT_MESSAGE":true,"LIST_ACTION":"list","VIEW_ACTION":"view","EDIT_ACTION":"edit"}, {"CURRENCY_FORMAT":"$#,##0.00","IS_LOGGEDIN":true,"IS_AUTOLOGIN":false,"LANGUAGE_ID":"en-US","PATH_BASE":"/decrypt-web/","PROJECT_NAME":"decryptweb23","SESSION_ID":"Ih57HJWkbeQSYfDGKgl3SnVhns4847Ex3jqfxcdL3aY","ANTIFORGERY_TOKEN_KEY":"csrf_value","ANTIFORGERY_TOKEN":"kLJ5sKYrkI5cLgiQJNPPRIxw1wFi7+4qzBaqol+dOami1k6EkU+p725IPvYc4Pol6BKxZACL3Br8cJ6TOfhdmg==","API_JWT_AUTHORIZATION_HEADER":"X-Authorization","API_JWT_TOKEN":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3OTAwODY2MzIsImp0aSI6IjlxTXhIeWFCczhyOW9mdVg0V3EyYVdnRmtOY1pMbGx4eXZrQTUxa0RuaWs9IiwiaXNzIjoiZGUtY3J5cHQub3JnIiwibmJmIjowLCJleHAiOjE3OTAxMTU0MzIsInNlY3VyaXR5Ijp7InVzZXJuYW1lIjoiZGFuaWVsYm91cmRlYXUiLCJ1c2VyaWQiOm51bGwsInBhcmVudHVzZXJpZCI6IiIsInVzZXJsZXZlbGlkIjoiMiIsInBlcm1pc3Npb24iOjB9fQ.52eUEllQ2JX5YhE0bfg5dK-8tux9BRr_btLv5AekhsyfOvHL7qg5-Fy5_-X_wLcMr74mrIjLp7BnvIB0dFYn0w","IMAGE_FOLDER":"images/","SESSION_TIMEOUT":0,"TIMEOUT_URL":"/decrypt-web/logout","SERVER_SEARCH_FILTER":false,"CLIENT_SEARCH_FILTER":false,"ROWTYPE_VIEW":1,"ROWTYPE_ADD":2,"ROWTYPE_EDIT":3,"DATE_FORMAT":"M/d/yy","TIME_FORMAT":"h:mm a","DATE_SEPARATOR":"/","TIME_SEPARATOR":":","DECIMAL_SEPARATOR":".","GROUPING_SEPARATOR":",","NUMBER_FORMAT":"#,##0.###","PERCENT_FORMAT":"#,##0%","CURRENCY_CODE":"USD","CURRENCY_SYMBOL":"$","NUMBERING_SYSTEM":"","TOKEN_NAME_KEY":"csrf_name","TOKEN_NAME":"csrf6ab28de8d5f8f","CURRENT_USER_NAME":"danielbourdeau","IS_SYS_ADMIN":false,"IS_R_T_L":false});
+loadjs(ew.PATH_BASE + "jquery/jquery.min.js?v=19.13.27", "jquery");
+loadjs(ew.PATH_BASE + "js/popper.min.js?v=19.13.27", "popper");
+loadjs(ew.PATH_BASE + "js/luxon.min.js?v=19.13.27", "luxon");
+loadjs([
+    ew.PATH_BASE + "js/mobile-detect.min.js?v=19.13.27",
+    ew.PATH_BASE + "js/purify.min.js?v=19.13.27",
+    ew.PATH_BASE + "js/cropper.min.js?v=19.13.27",
+    ew.PATH_BASE + "jquery/load-image.all.min.js?v=19.13.27"
+], "others");
+loadjs(ew.PATH_BASE + "js/sweetalert2.min.js?v=19.13.27", "swal");
+ew.language.phrases = {"2fadisabled":"Two factor authentication disabled","2faenabled":"Two factor authentication enabled","2faresetfailed":"Failed to disable two factor authentication","2faverificationfailed":"Two factor authentication verification failed","accept":"Accept","actiondeleted":"Deleted","actioninserted":"Inserted","actioninsertedgridadd":"Inserted (Grid-Add)","actionupdated":"Updated","actionupdatedgridedit":"Updated (Grid-Edit)","actionupdatedmultiupdate":"Updated (Multi-Update)","activateaccount":"Your account is activated","activatefailed":"Activation failed","add":"Add","addblankrow":"Add blank row","addbtn":"Add","addevent":"Add event","addlink":"Add","addmasterdetaillink":"Master/Detail Add","addsuccess":"Added successfully","advancedsearch":"Advanced Search","aggregatecolon":": ","aggregateequal":"=","allrecords":"All","allword":"All words","anyword":"Any word","apititle":"REST API","audittrailautologin":"autologin","audittrailfailedattempt":"failed attempt: %n","audittrailuserloggedin":"user already logged in","audittrailpasswordexpired":"password expired","audittraillogin":"login","audittraillogout":"logout","autologinfailed":"Auto login failed","average":"Average","backtolist":"Back to List","backtologin":"Back to login page","backtomasterrecordpage":"Back to master table","backupcodes":"Backup codes (2FA)","backupcodesmsg":"Save your backup codes somewhere safe but accessible. You can only use each backup code once.","basicsearchkeyword":"Search keyword","batchdeletebegin":"*** Batch delete begin ***","batchdeleterollback":"*** Batch delete rollback ***","batchdeletesuccess":"*** Batch delete successful ***","batchinsertbegin":"*** Batch insert begin ***","batchinsertrollback":"*** Batch insert rollback ***","batchinsertsuccess":"*** Batch insert successful ***","batchupdatebegin":"*** Batch update begin ***","batchupdaterollback":"*** Batch update rollback ***","batchupdatesuccess":"*** Batch update successful ***","blankoptiontext":"&nbsp;","booleanno":"No","booleanyes":"Yes","buttonactions":"Actions","buttonaddedit":"Add/Edit","buttondetails":"Master/Detail","buttonexport":"Export","buttonlistoptions":"Options","buttonlistoptionscard":"Options","buttonsearch":"Search","cancelbtn":"Cancel","cancellink":"Cancel","changepassword":"Change Password","changepasswordmessage":"Change Password","changepasswordpage":"Change Password","changepasswordbtn":"Change","chartexporterror1":"Unable to get %t image from %e","chartexporterror2":"Missing file name","chartexporterror3":"Upload folder does not exist","chartexporterror4":"Upload folder is not writable","chartorder":"Order by","chartorderxasc":"Labels Ascending","chartorderxdesc":"Labels Descending","chartorderyasc":"Values Ascending","chartorderydesc":"Values Descending","choosefilebtn":"Choose...","choosefile":"Drop file here or click to upload","choosefiles":"Drop files here or click to upload","clear":"Clear","clickrecaptcha":"Please click reCAPTCHA checkbox","clicktodrilldown":"Click to drill down","closeaccountbtn":"Delete data and close my account","closebtn":"Close","columns":"Columns","confirm":"Confirm","confirmbtn":"Confirm","confirmcancel":"Do you want to cancel?","confirmpassword":"Confirm Password","conflictcancellink":"Cancel","cookieconsenttitle":"Cookies","cookieconsentsummary":"Use this space to summarize your privacy and cookie use policy.","copy":"Copy","copylink":"Copy","copytoclipboard":"Copy to clipboard","copiedtoclipboard":"Copied to clipboard","count":"Count","countselected":"%s selected","crop":"Crop","crosstabsummary":"Summary","currentfilters":"Current filters:","currentpassword":"Current password: ","customactioncompleted":"'%s' completed","customactioncancelled":"'%s' cancelled","customactionfailed":"'%s' failed","customactionnotallowed":"'%s' not allowed","customview":"CUSTOM VIEW","danger":"Error","debug":"Debug","delete":"Delete","deletebtn":"Delete","deletecancelled":"Delete cancelled","deleteconfirm":"Are you sure you want to delete?","deleteeventconfirm":"Are you sure you want to delete this event?","deletefailed":"Failed to delete record(s)","deletefilter":"Delete filter","deletefilterconfirm":"Delete filter %s?","deletelink":"Delete","deleteselectedlink":"Delete Selected Records","deleterecordsfailed":"Delete failed for records with keys: %k","deletesuccess":"Deleted successfully","detaillink":"","detailcount":"<span class='badge bg-primary ew-detail-count-%c'>%c</span>","details":"Details","disable2fa":"Disable two factor authentication","disable2faconfirm":"Are you sure you want to disable two factor authentication?","disablenotifications":"Disable notifications","disablenotificationsconfirm":"Are you sure you want to disable notifications?","downloadbtn":"Download","drilldownallrecords":"All records","drilldownfilters":"Drill down filters:","dupindex":"Duplicate value '%v' for unique index '%f'","dupkey":"Duplicate primary key: '%f'","edit":"Edit","editbtn":"Edit","editlink":"Edit","editselectedlink":"Edit selected records","email":"Email","emailaddress":"Email address","emailformsender":"From","emailformrecipient":"To","emailformcc":"Cc","emailformbcc":"Bcc","emailformsubject":"Subject","emailformmessage":"Message","emailformcontenttype":"Send as","emailformcontenttypeurl":"URL","emailformcontenttypehtml":"HTML","emptylabel":"(Empty)","enable2fa":"Enable two factor authentication","enablenotifications":"Enable notifications","enterfiltername":"Enter filter name","enternewpassword":"Please enter new password","enteroldpassword":"Please enter old password","enterpassword":"Please enter password","enterrequiredfield":"Please enter required field - %s","entersearchcriteria":"Please enter search criteria","entersecuritycodegoogle":"Please enter security code from the Google Authenticator (or backup code)","entersecuritycodeemail":"Please enter one time password sent to your email account (or backup code)","entersecuritycodesms":"Please enter one time password sent to your mobile phone (or backup code)","entersecuritycode":"Please enter one time password for verification","enterotpemailaddress":"Please enter your email account to receive the one time password","enterotpmobilenumber":"Please enter your mobile phone number to receive the one time password","enterusername":"Please enter username","entervalidatecode":"Please enter validation code","enterpropersenderemail":"Exceed maximum sender email count or email address incorrect","enterproperrecipientemail":"Exceed maximum recipient email count or email address incorrect","enterproperccemail":"Exceed maximum cc email count or email address incorrect","enterproperbccemail":"Exceed maximum bcc email count or email address incorrect","entersubject":"Please enter subject","entervalue":"Please enter value","entervalue2":"Please enter second value","error":"Error","exactphrase":"Exact phrase","exceedmaxretry":"Exceed maximum login retry count. Account is locked. Please try again in %t minutes","exceedmaxemailexport":"Exceed maximum export email count. Please try again later","exportchart":"Exporting chart: ","exportchartdata":"Exporting chart data","exportcharterror":"Failed to export chart: ","exportclassnotfound":"Export class not found","exporting":"Exporting, please wait...","exporttocsv":"Export to CSV","exporttoemail":"Email","exporttoexcel":"Export to Excel","exporttohtml":"Export to HTML","exporttopdf":"Export to PDF","exporttoword":"Export to Word","exporttoxml":"Export to XML","failedtoexport":"Failed to export","failedtosendmail":"Failed to send email.","fieldname":"Field Name","fieldrequiredindicator":"","filenotfound":"File not found","filter":"Filter","filterallrecords":"All records","filtercancel":"Cancel","filtername":"Filter name","filternovalue":"No value selected","filterok":"OK","filters":"Filters","resetpasswordresponse":"You will receive password recovery instructions shortly if your email address is registered.","resetpassword":"Reset Password","generatepassword":"Generate password","getnewcodes":"Get new codes","goback":"Go Back","gridaddcancelled":"Grid Add cancelled","gridaddlink":"Grid Add","gridcancellink":"Cancel","grideditcancelled":"Grid edit cancelled","grideditlink":"Grid Edit","gridinsertlink":"Insert","gridsavelink":"Save","group":"Groups","groupsperpage":"Groups per page","highlight":"Highlight","highlightbtn":"Highlight","homepage":"Home","import":"Import","importmaxfailuresexceeded":"Maximum number of errors (%s) exceeded","importrowerror":"Failed to import row #%i: %e","importinvalidfileextension":"Invalid file extension '%e'","importinvalidfieldname":"Invalid field name: %f","importinvalidfieldvalue":"Invalid value for field '%f': %v","importnoheaderrow":"No header row for import","importresult":"Processed %c of %t records from %f (success: %s, failure: %e)","importsave":"The records are not saved yet. If you accept the results, press 'Save' button.","importservererror":"Failed to process uploaded file(s)","importuploaderror":"Failed to upload %f: %s","importuploadcomplete":"Upload completed, processing file(s)...","importuploadprogress":"Uploading...(p%)","incorrectcreditcard":"Incorrect credit card number","incorrectdate":"Incorrect date (%s)","incorrectemail":"Incorrect email","incorrectfield":"Incorrect field value","incorrectfloat":"Incorrect floating point number","incorrectguid":"Incorrect GUID","incorrectinteger":"Incorrect integer","incorrectmin":"Number must be larger than or equal to %s","incorrectmindate":"Date/Time must be later than or same as %s","incorrectmax":"Number must be smaller than or equal to %s","incorrectmaxdate":"Date/Time must be eariler than or same as %s","incorrectphone":"Incorrect phone number","incorrectrange":"Number must be between %1 and %2","incorrectregexp":"Regular expression not matched","incorrectsecuritycode":"Incorrect security code","incorrectssn":"Incorrect social security number","incorrecttime":"Incorrect time (%s)","incorrecturl":"Invalid URL","incorrectvalidationcode":"Incorrect validation code, please enter again.","incorrectzip":"Incorrect ZIP code","info":"Information","inlineaddlink":"Inline Add","inlinecopylink":"Inline Copy","inlineeditlink":"Inline Edit","insertcancelled":"Insert cancelled","insertfailed":"Insert failed","insertlink":"Insert","insertsuccess":"Inserted successfully","invaliddate":"Invalid date","invalidkeyvalue":"Invalid key value","invalidrecord":"Invalid Record! Key is null","invalidpostrequest":"Invalid post request","invalidparameter":"Invalid Parameter","invalidpassword":"Invalid Password","invalidpasswordchars":"Password must not contain &, <, >, \", or '","invalidnewpassword":"Invalid New Password","invaliduidpwd":"Incorrect user name or password","invalidusernamechars":"Username must not contain &, <, >, \", or '","jwttokenexpired":"Your session has expired, please refresh your page.","language":"Language","learnmore":"Learn More","lightboxtitle":" ","lightboxcurrent":"image {current} of {total}","lightboxprevious":"previous","lightboxnext":"next","lightboxclose":"close","lightboxxhrerror":"This content failed to load.","lightboximgerror":"This image failed to load.","list":"","listactionbutton":"Actions","loading":"Loading...","login":"Login","loginazure":"Login with Azure","logincancelled":"Login cancelled","loginfacebook":"Login with Facebook","loginsucceeded":"Login successful, redirecting...","loginfailed":"Login with %p failed","logingoogle":"Login with Google","loginmsg":"Sign in to start your session","loginoptions":"Options","loginor":"- OR -","loginsaml":"Login with SAML","loginpage":"Login","login2fapage":"Login (Two factor authentication)","logout":"Logout","lookuptitle":"Lookup - %s","masterdetailcopylink":"Master/Detail Copy","masterdetaileditlink":"Master/Detail Edit","masterdetaillistlink":"Detail List","masterdetailviewlink":"Master/Detail View","maxfilesize":"Max. file size (%s bytes) exceeded.","mismatchpassword":"Mismatch Password","missinglookuptablename":"Missing lookup table name","missingdisplayfieldname":"Missing display field name","missingdisplayfieldvalue":"Missing display field value","missingpdfobject":"Missing PDFObject","missinguserlevelid":"Missing User Level ID","missinguserlevelname":"Missing User Level name","mobilenumber":"Mobile phone number","multicolumncards":"Cards view","multicolumntable":"Table view","multiplemasterdetails":"Master/Detail","newpassword":"New Password","next":"Next","noaddrecord":"No records to be added","nofieldselected":"No field selected for update","nopermission":"You do not have permission to access %s.","noaddpermission":"You do not have permission to add the record.","nochartdata":"No data to display","nodeletepermission":"You do not have permission to delete the record.","nodistinctcolvals":"No distinct column values for SQL: ","noeditpermission":"You do not have permission to edit the record.","nohtmlform":"HTML form not found","norecord":"No records found","norecordforkey":"No record found for key = ","noreportorcharts":"No report or charts are available for this page.","norecordselected":"No records selected","nosubscription":"You have no subscription","nosubscriptions":"No subscriptions found","notablegenerated":"No tables generated","notice":"Notice","notifications":"Notifications","notificationsdisabled":"Notifications disabled","notificationsenabled":"Notifications enabled","nouserlevel":"No user level settings.","nulllabel":"(Null)","of":"of","okbtn":"OK","old":"Old","oldpassword":"Old Password","overwritebtn":"Overwrite","overwritelink":"Overwrite","page":"Page","pagenotfound":"Route '%p' not found.","pagerfirst":"First","pagerlast":"Last","pagernext":"Next","pagerprevious":"Previous","password":"Password","passwordmask":"********","passwordrequest":"Password Request","passwordchanged":"Password Changed","passwordexpired":"Password Expired. Please change password.","passwordstrength":"Strength: %p","passwordtoosimple":"Your password is too simple","permission":"Permissions","permissionadd":"Add/Copy","permissionadmin":"Admin","permissiondelete":"Delete","permissionedit":"Edit","permissionexport":"Export","permissionimport":"Import","permissionlistsearchview":"List/Search/View","permissionlist":"List","permissionlookup":"Lookup","permissionpush":"Push","permissionsearch":"Search","permissionview":"View","personaldatabtn":"Personal Data","personaldatacontent":"Your account contains personal data that you have given us. This page allows you to download or delete that data.","personaldatadeletefailure":"Unexpected error occurred deleting user","personaldatadeletesuccess":"Personal data deleted successfully","personaldatatitle":"Personal Data","personaldatawarning":"Deleting this data will permanently remove your account, and this cannot be recovered.","pleaseselect":"Please select","prev":"Prev","primarykeyunspecified":"Primary key unspecified","printerfriendly":"Printer Friendly","privacypolicy":"Privacy Policy","privacypolicycontent":"Use this page to detail your site's privacy policy.","pushnotificationdefaulttitle":"New Notification","pushnotificationformtitle":"Title","pushnotificationformbody":"Body","pushnotificationfailure":"Failed to send push notifications (failure = %f)","pushnotificationsent":"Push notifications are sent<br>(success = %s, failure = %f)","pushnotificationsuccess":"All push notifications are sent (success = %s)","querybuilder":"Query Builder","quicksearchauto":"Auto","quicksearchautoshort":"","quicksearchall":"All keywords","quicksearchallshort":"All","quicksearchany":"Any keywords","quicksearchanyshort":"Any","quicksearchexact":"Exact match","quicksearchexactshort":"Exact","recipient":"Recipient(s)","record":"Record","recordchangedbyotheruser":"Data has been changed by other user. Click [Reload] to retrieve the changed data (your data in the form will be overwritten) or click [Overwrite] to overwrite the changed data.","recorddeleted":"record(s) deleted","recordinserted":"record(s) inserted","recordupdated":"record(s) updated","recordsperpage":"Page size","register":"Register","registerbtn":"Register","registersuccess":"Registration succeeded","registersuccessactivate":"Registration succeeded. An email has been sent to your email address, please click the link in the email to activate your account.","registerpage":"Registration","relatedrecordrequired":"You cannot add or update a record because the foreign key value does not exist in the master table '%t'","relatedrecordexists":"You cannot delete a record because related records exist in the detail table '%t'","reloadbtn":"Reload","reloadlink":"Reload","rememberme":"Remember me","remove":"Remove","replace":"Replace","report":"Report","resetpwd":"Reset Password","resetpwdtitle":"Reset Password","resendregisteremailbtn":"Resend registration email","resendregisteremailsuccess":"Registration email for user '%u' has been re-sent","resendregisteremailfailure":"Failed to re-send register email for user '%u'","reset":"Reset","resetallfilter":"Reset all filters","resetconcurrentuserbtn":"Reset concurrent user session","resetconcurrentusersuccess":"Session for user '%u' has been reset","resetconcurrentuserfailure":"Failed to reset session for user '%u'","resetloginretrybtn":"Reset login retry count","resetloginretrysuccess":"Login retry count for user '%u' has been reset","resetloginretryfailure":"Failed to reset login retry count for user '%u'","resetsearchbtn":"Reset","resetsearch":"Reset","resetusersecretbtn":"Reset user secret","resetusersecretsuccess":"User secret for user '%u' has been reset","resetusersecretfailure":"Failed to reset user secret for user '%u'","rptavg":"AVG","rptcnt":"COUNT","rptdtlrec":" detail records","rptgrandsummary":"Grand Summary","rptmax":"MAX","rptmin":"MIN","rptpagesummary":"Page Summary","rptsum":"SUM","rptsumhead":"Summary for %c: %v","savebtn":"Save","savecurrentfilter":"Save current filter","scan2faqrcode":"After installing the Google Authenticator, scan the QR Code above and enter the verification code","search":"Search","searchbtn":"Search","searchlink":"Search","searchpanel":"Search Panel","securitycode":"Security code","securitycodeverified":"Security code verified, redirecting...","selectall":"Select all","selectbtn":"Select","sendemailbtn":"Send","sendemailsuccess":"Email sent successfully","sender":"Sender","sendotp":"Send one time password","sendotpconfirm":"Are you sure you want to send the one time password?","sendotpsuccess":"One time password is sent successfully.","sendotpfailed":"One time password is not sent with error: %e","sendotpskipped":"One time password is skipped for invalid account '%a' of user '%u'","sendotpcancelled":"One time password is cancelled by user","sendpushnotification":"Send push notifications","sendpushnotificationbtn":"Send","sendpushnotificationstoall":"No subscriptions selected. Send push notifications to all?","sendpwd":"Send","sequencenumber":"%s.","servercommunicationerror":"An error occured while communicating to the server.","servererror":"An internal error has occurred while processing your request.","sessionwillexpire":"Your session will expire in %s seconds. Click OK to continue your session.","sessionexpired":"Your session has expired.","setpasswordexpiredbtn":"Set password expired","setpasswordexpiredsuccess":"Password for user '%u' has been set as expired","setpasswordexpiredfailure":"Failed to set password for user '%u' as expired","showallbtn":"Show all","showall":"Show all","skip":"Skip","sortup":"Ascending","sortdown":"Descending","subject":"Subject","success":"Success","summary":"Summary","summarycolon":": ","table":"TABLE","tables":"Tables","to":"to","top":"Top","total":"Total","unauthorizeduserid":"The current user (%c) is not authorized to assign the user ID (%u).","unauthorizedparentuserid":"The current user (%c) is not authorized to assign the parent user ID (%p).","unauthorizedmasteruserid":"The current user (%c) is not authorized to insert the record. Master filter: %f","unsupportedbrowser":"Your browser is not supported by this page","update":"Update","updatebtn":"Update","updatecancelled":"Update cancelled","updatefailed":"Update failed","updatelink":"Update","updateselectedlink":"Update Selected Records","updatesomerecordsfailed":"Update failed for records with keys: %k","updatesuccess":"Updated successfully","uploading":"Uploading...","uploadstart":"Start","uploadcancel":"Cancel","uploaddelete":"Delete","uploadoverwrite":"Overwrite old file?","uploaderror1":"The uploaded file size exceeds the upload_max_filesize directive in php.ini","uploaderror2":"The uploaded file size exceeds the MAX_FILE_SIZE directive that was specified in the HTML form","uploaderror3":"The uploaded file was only partially uploaded","uploaderror4":"No file was uploaded","uploaderror6":"Missing a temporary folder","uploaderror7":"Failed to write file to disk","uploaderror8":"A PHP extension stopped the file upload","uploaderrorpostmaxsize":"The uploaded file size exceeds the post_max_size directive in php.ini","uploaderrormaxfilesize":"File is too big","uploaderrorminfilesize":"File is too small","uploaderroracceptfiletypes":"File type not allowed","uploaderrormaxnumberoffiles":"Maximum number of files exceeded","uploaderrormaxwidth":"Image exceeds maximum width","uploaderrorminwidth":"Image requires a minimum width","uploaderrormaxheight":"Image exceeds maximum height","uploaderrorminheight":"Image requires a minimum height","uploaderrormaxfilelength":"Total length of file names exceeds field length","useradministrator":"Administrator","useranonymous":"Anonymous","userdefault":"Default","useremail":"Email","userexists":"User already exists","userlevel":"User Level: ","userleveladministratorname":"User level name for user level -1 must be 'Administrator'","userlevelanonymousname":"User level name for user level -2 must be 'Anonymous'","userlevelpermission":"User Level Permissions","userlevelidinteger":"User level ID must be integer","userleveldefaultname":"User level name for user level 0 must be 'Default'","userlevelidincorrect":"User defined user level ID must be larger than 0","userlevelnameincorrect":"User defined user level name cannot be 'Anonymous', 'Administrator' or 'Default'","userloggedin":"User '%u' already logged in","username":"User Name","usernotfound":"User '%u' not found","userprofilecorrupted":"User profile is corrupted. Please logout and login again","valuenotexist":"Value does not exist","verify":"Verify","view":"View","viewimagegallery":"Click to view image","viewlink":"View","viewpageaddlink":"Add","viewpagecopylink":"Copy","viewpagedeletelink":"Delete","viewpagedetaillink":"","viewpageeditlink":"Edit","warning":"Warning","week":"Week","wrongfiletype":"File type is not allowed.","year":"Year","=":"&nbsp;","equal":"=","in":"in","not in":"not in","<>":"&lt;&gt;","<":"&lt;","<=":"&lt;=",">":"&gt;",">=":"&gt;=","like":"contains","not like":"doesn't contain","starts with":"starts with","not starts with":"doesn't starts with","ends with":"ends with","not ends with":"doesn't ends with","is empty":"is empty","is not empty":"is not empty","is null":"is null","is not null":"is not null","between":"between","not between":"not between","and":"and","or":"or","future":"Future","past":"Past","last14days":"Last 14 days","last30days":"Last 30 days","last7days":"Last 7 days","next14days":"Next 14 days","next30days":"Next 30 days","next7days":"Next 7 days","today":"Today","tomorrow":"Tomorrow","yesterday":"Yesterday","lastmonth":"Last month","nextmonth":"Next month","thismonth":"This month","lasttwoweeks":"Last two weeks","lastweek":"Last week","nexttwoweeks":"Next two weeks","nextweek":"Next week","thisweek":"This week","lastyear":"Last year","nextyear":"Next year","thisyear":"This year","400desc":"The server cannot or will not process the request due to an apparent client error.","401desc":"The request requires valid user authentication.","403desc":"You are not permitted to perform the requested operation.","404desc":"The requested resource could not be found. Please verify the URI and try again.","405desc":"The request method is not supported for the requested resource.","500desc":"Unexpected condition encountered preventing server from fulfilling request.","501desc":"The server does not support the functionality required to fulfill the request.","datetimepicker":{"today":"Go to today","clear":"Clear selection","close":"Close the picker","selectMonth":"Select Month","previousMonth":"Previous Month","nextMonth":"Next Month","selectYear":"Select Year","previousYear":"Previous Year","nextYear":"Next Year","selectDecade":"Select Decade","previousDecade":"Previous Decade","nextDecade":"Next Decade","previousCentury":"Previous Century","nextCentury":"Next Century","pickHour":"Pick Hour","incrementHour":"Increment Hour","decrementHour":"Decrement Hour","pickMinute":"Pick Minute","incrementMinute":"Increment Minute","decrementMinute":"Decrement Minute","pickSecond":"Pick Second","incrementSecond":"Increment Second","decrementSecond":"Decrement Second","toggleMeridiem":"Toggle Meridiem","selectTime":"Select Time","selectDate":"Select Date"},"select2":{"errorLoading":"The results could not be loaded.","inputTooLong":"Please delete %s character(s)","inputTooShort":"Please enter %s or more characters","loadingMore":"Loading more...","maximumSelected":"You can only select %s item(s)","noResults":"No results found","searching":"Searching...","removeAllItems":"Remove all items","removeItem":"Remove item","search":"Search"},"querybuilderjs":{"add_rule":"Add rule","add_group":"Add group","delete_rule":"Delete","delete_group":"Delete","invert":"Invert","NOT":"NOT","conditions":{"AND":"AND","OR":"OR"},"operators":{"equal":"=","not_equal":"&lt;&gt;","in":"in","not_in":"not in","less":"&lt;","less_or_equal":"&lt;=","greater":"&gt;","greater_or_equal":"&gt;=","between":"between","not_between":"not between","begins_with":"starts with","not_begins_with":"doesn't starts with","contains":"contains","not_contains":"doesn't contain","ends_with":"ends with","not_ends_with":"doesn't end with","is_empty":"is empty","is_not_empty":"is not empty","is_null":"is null","is_not_null":"is not null"},"errors":{"no_filter":"No filter selected","empty_group":"The group is empty","radio_empty":"No value selected","checkbox_empty":"No value selected","select_empty":"No value selected","string_empty":"Empty value","string_exceed_min_length":"Must contain at least {0} characters","string_exceed_max_length":"Must not contain more than {0} characters","string_invalid_format":"Invalid format ({0})","number_nan":"Not a number","number_not_integer":"Not an integer","number_not_double":"Not a real number","number_exceed_min":"Must be greater than {0}","number_exceed_max":"Must be lower than {0}","number_wrong_step":"Must be a multiple of {0}","number_between_invalid":"Invalid values, {0} is greater than {1}","datetime_empty":"Empty value","datetime_invalid":"Invalid date format ({0})","datetime_exceed_min":"Must be after {0}","datetime_exceed_max":"Must be before {0}","datetime_between_invalid":"Invalid values, {0} is greater than {1}","boolean_not_valid":"Not a boolean","operator_not_multiple":"Operator '{1}' cannot accept multiple values"}},"fullcalendar":{"week":{"dow":"0","doy":"4"},"buttonText":{"prev":"prev","next":"next","prevYear":"prev year","nextYear":"next year","year":"year","today":"today","month":"month","week":"week","day":"day","list":"list"},"buttonHints":{"prev":"Previous $0","next":"Next $0"},"weekText":"W","weekTextLong":"Week","closeHint":"Close","timeHint":"Time","eventHint":"Event","allDayText":"all-day","moreLinkText":"more","noEventsText":"No events to display","viewHint":"$0 view","navLinkHint":"Go to $0"}};ew.vars = {"languages":{"languages":[]},"login":{"isLoggedIn":true,"currentUserName":"danielbourdeau","logout":{"ew-action":"redirect","url":"/decrypt-web/logout"},"logoutUrl":"/decrypt-web/logout","logoutText":"<i data-phrase=\"Logout\" class=\"fa-solid fa-arrow-right-from-bracket ew-icon me-2\"><span class=\"visually-hidden\">Logout</span></i>Logout","canLogout":true,"login":{"ew-action":"redirect","url":"/decrypt-web/login"},"loginTitle":"Login","loginText":"<i data-phrase=\"Login\" class=\"fa-solid fa-arrow-right-to-bracket ew-icon\"><span class=\"visually-hidden\">Login</span></i>","canLogin":false,"resetPassword":{"ew-action":"redirect","url":"/decrypt-web/resetpassword"},"resetPasswordUrl":"/decrypt-web/resetpassword","resetPasswordText":"Reset Password","canResetPassword":false,"register":{"ew-action":"redirect","url":"/decrypt-web/register"},"registerUrl":"/decrypt-web/register","registerText":"Register","canRegister":false,"changePassword":{"ew-action":"redirect","url":"/decrypt-web/changepassword"},"changePasswordUrl":"/decrypt-web/changepassword","changePasswordText":"Change Password","canChangePassword":true,"personalData":{"ew-action":"redirect","url":"/decrypt-web/personaldata"},"hasPersonalData":true,"personalDataUrl":"/decrypt-web/personaldata","personalDataText":"Personal Data"}};
+ew.ready(["wrapper", "jquery"], ew.PATH_BASE + "jquery/jsrender.min.js?v=19.13.27", "jsrender", ew.renderJsTemplates);
+ew.ready("jquery", ew.PATH_BASE + "jquery/jquery-ui.min.js?v=19.13.27", "widget");
+</script>
+<script>
+ew.vars.navbar = {"items":[{"id":21,"name":"mi_records","text":"DECODE Records","parentId":-1,"level":0,"href":"/decrypt-web/RecordsList","attrs":" data-url=\"RecordsList\" data-ew-action=\"none\" class=\"nav-link dropdown-toggle ew-dropdown\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":[{"id":74,"name":"mci_List/Search_Records","text":"List/Search Records","parentId":21,"level":1,"href":"/decrypt-web/RecordsList","attrs":" class=\"dropdown-item\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":58,"name":"mci_Create_New_Record","text":"Create New Record","parentId":21,"level":1,"href":"/decrypt-web/RecordsAdd","attrs":" class=\"dropdown-item\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":20,"name":"mi_documents","text":"Documents","parentId":21,"level":1,"href":"/decrypt-web/DocumentsList?cmd=resetall","attrs":" class=\"dropdown-item\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":9,"name":"mi_images","text":"Images","parentId":21,"level":1,"href":"/decrypt-web/ImagesList?cmd=resetall","attrs":" class=\"dropdown-item\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false}],"open":false},{"id":78,"name":"mi_recordview","text":"Expert view","parentId":-1,"level":0,"href":"/decrypt-web/RecordviewList","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":76,"name":"mi_Documents_by_century","text":"Statistics by century","parentId":-1,"level":0,"href":"/decrypt-web/DocumentsByCentury","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":3,"name":"mi_project","text":"Projects","parentId":-1,"level":0,"href":"/decrypt-web/ProjectList","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":15,"name":"mci_Administration","text":"Administration","parentId":-1,"level":0,"href":"","attrs":" data-ew-action=\"nonenone\" class=\"nav-link dropdown-toggle ew-dropdown\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":[{"id":26,"name":"mi_record_group","text":"Record Group","parentId":15,"level":1,"href":"/decrypt-web/RecordGroupList","attrs":" class=\"dropdown-item\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false}],"open":false}],"accordion":false,"compact":false};
+</script><script>
+ew.vars.menu = {"items":[{"id":21,"name":"mi_records","text":"DECODE Records","parentId":-1,"level":0,"href":"/decrypt-web/RecordsList","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":[{"id":74,"name":"mci_List/Search_Records","text":"List/Search Records","parentId":21,"level":1,"href":"/decrypt-web/RecordsList","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":58,"name":"mci_Create_New_Record","text":"Create New Record","parentId":21,"level":1,"href":"/decrypt-web/RecordsAdd","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":20,"name":"mi_documents","text":"Documents","parentId":21,"level":1,"href":"/decrypt-web/DocumentsList?cmd=resetall","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":9,"name":"mi_images","text":"Images","parentId":21,"level":1,"href":"/decrypt-web/ImagesList?cmd=resetall","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false}],"open":false},{"id":78,"name":"mi_recordview","text":"Expert view","parentId":-1,"level":0,"href":"/decrypt-web/RecordviewList","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":76,"name":"mi_Documents_by_century","text":"Statistics by century","parentId":-1,"level":0,"href":"/decrypt-web/DocumentsByCentury","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":3,"name":"mi_project","text":"Projects","parentId":-1,"level":0,"href":"/decrypt-web/ProjectList","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false},{"id":15,"name":"mci_Administration","text":"Administration","parentId":-1,"level":0,"href":"","attrs":" data-ew-action=\"none\" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":[{"id":26,"name":"mi_record_group","text":"Record Group","parentId":15,"level":1,"href":"/decrypt-web/RecordGroupList","attrs":" class=\"nav-link\"","target":"","isHeader":false,"active":false,"icon":"","label":"","isNavbarItem":true,"items":null,"open":false}],"open":false}],"accordion":true,"compact":false};
+</script><script>
+var cssfiles = [
+    ew.PATH_BASE + "css/jquery.fileupload.css?v=19.13.27",
+    ew.PATH_BASE + "css/jquery.fileupload-ui.css?v=19.13.27",
+    ew.PATH_BASE + "css/cropper.min.css?v=19.13.27"
+];
+cssfiles.push(ew.PATH_BASE + "colorbox/colorbox.css?v=19.13.27");
+loadjs(cssfiles, "css");
+var cssjs = [];
+cssjs.push(ew.PATH_BASE + "jquery/query-builder.min.js?v=19.13.27");
+cssjs.push(ew.PATH_BASE + "css/query-builder.min.css?v=19.13.27");
+var jqueryjs = [
+    ew.PATH_BASE + "jquery/select2.full.min.js?v=19.13.27",
+    ew.PATH_BASE + "jquery/jqueryfileupload.min.js?v=19.13.27",
+    ew.PATH_BASE + "jquery/typeahead.jquery.min.js?v=19.13.27"
+];
+jqueryjs.push(ew.PATH_BASE + "colorbox/jquery.colorbox.min.js?v=19.13.27");
+jqueryjs.push(ew.PATH_BASE + "js/pdfobject.min.js?v=19.13.27");
+ew.ready(["jquery", "dom", "popper"], ew.PATH_BASE + "bootstrap5/js/bootstrap.min.js?v=19.13.27", "bootstrap"); // Bootstrap
+ew.ready("bootstrap", ew.PATH_BASE + "adminlte3/js/adminlte.min.js?v=19.13.27", "adminlte"); // AdminLTE (After Bootstrap)
+ew.ready(["jquery", "widget"], [jqueryjs], "jqueryjs");
+ew.ready(["bootstrap", "adminlte", "jqueryjs", "luxon", "others"], ew.PATH_BASE + "js/ew.min.js?v=19.13.27", "makerjs");
+ew.ready("makerjs", [
+    cssjs,
+    ew.PATH_BASE + "js/userfn.js?v=19.13.27",
+    ew.PATH_BASE + "js/userevent.js?v=19.13.27"
+], "head");
+</script>
+<script>
+loadjs(ew.PATH_BASE + "css/tempus-dominus.min.css?v=19.13.0");
+ew.ready("head", [
+    ew.PATH_BASE + "js/tempus-dominus.min.js?v=19.13.0",
+    ew.PATH_BASE + "js/ewdatetimepicker.min.js?v=19.13.0"
+], "datetimepicker");
+</script>
+<script>
+// Load chart *.js
+loadjs(ew.PATH_BASE + "js/chart.min.js?v=19.13.1", "chartjs");
+ew.ready(["chartjs", "luxon"], [
+    ew.PATH_BASE + "js/chartjs-adapter-luxon.min.js?v=19.13.1",
+    ew.PATH_BASE + "js/chartjs-plugin-annotation.min.js?v=19.13.1",
+    ew.PATH_BASE + "js/chartjs-plugin-datalabels.min.js?v=19.13.1"
+], "chart");
+// Create chart
+ew.createChart = function (args) {
+    loadjs.ready(["head", "chart"], function () {
+        let $ = jQuery,
+            canvas = document.getElementById(args.canvasId),
+            config = args.chartJson,
+            showPercentage = args.showPercentage,
+            yFieldFormat = args.yFieldFormat,
+            yAxisFormat = args.yAxisFormat;
+        canvas.dir = "ltr"; // Keep it LTR so currency symbol position in the format pattern will not be changed
+        let formatNumber = function (value, format) {
+            if (format == "Currency")
+                return ew.formatCurrency(value, ew.CURRENCY_FORMAT);
+            else if (format == "Number")
+                return ew.formatNumber(value, ew.NUMBER_FORMAT);
+            else if (format == "Percent")
+                return ew.formatPercent(value, ew.PERCENT_FORMAT);
+            return value;
+        };
+        if (config.data && config.data.datasets.length > 0) {
+            config.options.onHover = function (e) {
+                let el = this.getElementsAtEventForMode(e.native, "nearest", { intersect: true }, false);
+                e.native.target.style.cursor = (el.length) ? "pointer" : "default";
+            };
+            let axis = config.options.indexAxis == "y" ? "x" : "y";
+            if (!["pie", "doughnut"].includes(config.type)) { // Format x/y axis for non pie/doughnut charts
+                // Format Primary Axis (x/y)
+                config.options.scales[axis] = $.extend(true, {}, config.options.scales[axis], {
+                    ticks: {
+                        callback: function (value, index, values) {
+                            let format = yAxisFormat.length ? yAxisFormat[0] : "";
+                            return formatNumber(value, format);
+                        }
+                    }
+                });
+                // Format Secondary Axis (y1)
+                if (config.options.scales["y1"]) {
+                    config = $.extend(true, {}, config, {
+                        options: {
+                            scales: {
+                                y1: {
+                                    ticks: {
+                                        callback: function (value, index, values) {
+                                            let format = yAxisFormat.length > 1 ? yAxisFormat[1] : "";
+                                            return formatNumber(value, format);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+            config = $.extend(true, {}, config, {
+                plugins: [ChartDataLabels],
+                options: {
+                    plugins: {
+                        datalabels: {
+                            align: ["line", "area"].includes(config.type) ? "top" : ew.IS_RTL ? "right" : "center",
+                            rotation: config.type == "bar" && config.options.indexAxis != "y" ? -90 : 0, // Rotate label -90 degrees for column chart
+                            formatter: function (value, context) {
+                                let format = yFieldFormat.length > context.datasetIndex ? yFieldFormat[context.datasetIndex] : (yFieldFormat.length > 0 ? yFieldFormat[0] : "");
+                                if (["pie", "doughnut"].includes(config.type) && showPercentage) { // Show as percentage
+                                    let sum = context.dataset.data.reduce((accum, val) => {
+                                        return accum + val;
+                                    });
+                                    value = value / sum;
+                                    format = "Percent";
+                                }
+                                return formatNumber(value, format);
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    let label = ["pie", "doughnut"].includes(config.type) ? context.label || "" : "",
+                                        value = context.raw,
+                                        format = yFieldFormat.length > context.datasetIndex ? yFieldFormat[context.datasetIndex] : (yFieldFormat.length > 0 ? yFieldFormat[0] : "");
+                                    if (label)
+                                        label += ": ";
+                                    if (["pie", "doughnut"].includes(config.type) && showPercentage) {
+                                        let sum = context.dataset.data.reduce((accum, val) => {
+                                            return accum + val;
+                                        });
+                                        value = value / sum;
+                                        format = "Percent";
+                                    }
+                                    label += formatNumber(value, format);
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }, ew.chartConfig, ew.charts[args.id]); // Deep copy (chart config + global config + user chart config)
+            if (ew.isDark()) {
+                Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)";
+                Chart.defaults.color = "white";
+            }
+            let evtArgs = { id: args.id, ctx: canvas, config: config };
+            $(document).trigger("chart", [evtArgs]);
+            let chart = new Chart(evtArgs.ctx, evtArgs.config);
+            if (ew.DEBUG)
+                console.log(evtArgs.config);
+            evtArgs.ctx.addEventListener("click", function (e) {
+                let activePoints = chart.getElementsAtEventForMode(e, "index", { intersect: true }, false);
+                if (activePoints[0]) {
+                    let activePoint = activePoints[0],
+                        links = chart.data.datasets[activePoint.datasetIndex].links,
+                        link = Array.isArray(links) ? links[activePoint.index] : {};
+                    if (args.useDrilldownPanel) {
+                        ew.showDrillDown(null, canvas, link.url, link.id, link.hdr);
+                    } else if (args.useDrilldownPanel === false) { // If null, no drilldown
+                        return ew.redirect(link.url);
+                    }
+                }
+            });
+            window.exportCharts["chart_" + args.id] = chart; // Export chart
+        } else {
+            canvas.classList.add("d-none");
+        }
+    });
+};
+</script>
+<script>
+ew.ready("head", [ew.PATH_BASE + "ckeditor/ckeditor.js?v=19.13.1", ew.PATH_BASE + "js/eweditor.js?v=19.13.1"], "editor");
+</script>
+<!-- Navbar -->
+<script type="text/html" id="navbar-menu-items" class="ew-js-template" data-name="navbar" data-seq="10" data-data="navbar" data-method="appendTo" data-target="#ew-navbar">
+{{if items}}
+    {{for items}}
+        <li id="{{:id}}" data-name="{{:name}}" class="{{if parentId == -1}}nav-item ew-navbar-item{{/if}}{{if isHeader && parentId > -1}}dropdown-header{{/if}}{{if items && parentId == -1}} dropdown{{/if}}{{if items && parentId != -1}} dropdown-submenu{{/if}}{{if items && level == 1}} dropdown-hover{{/if}} d-none d-sm-block">
+            {{if isHeader && parentId > -1}}
+                {{if icon}}<i class="{{:icon}}"></i>{{/if}}
+                <span>{{:text}}</span>
+            {{else}}
+            <a href="{{:href}}"{{if target}} target="{{:target}}"{{/if}}{{if items}} role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"{{/if}}{{if attrs}}{{:attrs}}{{/if}}>
+                {{if icon}}<i class="{{:icon}}"></i>{{/if}}
+                <span>{{:text}}</span>
+            </a>
+            {{/if}}
+            {{if items}}
+            <ul class="dropdown-menu">
+                {{include tmpl="#navbar-menu-items"/}}
+            </ul>
+            {{/if}}
+        </li>
+    {{/for}}
+{{/if}}
+</script>
+<!-- Sidebar -->
+<script type="text/html" class="ew-js-template" data-name="menu" data-seq="10" data-data="menu" data-target="#ew-menu">
+{{if items}}
+    <ul class="nav nav-pills nav-sidebar nav-child-indent flex-column{{if compact}} nav-compact{{/if}}" data-widget="treeview" role="menu" data-accordion="{{:accordion}}">
+    {{include tmpl="#menu-items"/}}
+    </ul>
+{{/if}}
+</script>
+<script type="text/html" id="menu-items">
+{{if items}}
+    {{for items}}
+        <li id="{{:id}}" data-name="{{:name}}" class="{{if isHeader}}nav-header{{else}}nav-item{{if items}} has-treeview{{/if}}{{if active}} active current{{/if}}{{if open}} menu-open{{/if}}{{/if}}{{if isNavbarItem}} d-block d-sm-none{{/if}}">
+            {{if isHeader}}
+                {{if icon}}<i class="{{:icon}}"></i>{{/if}}
+                <span>{{:text}}</span>
+                {{if label}}
+                <span class="right">
+                    {{:label}}
+                </span>
+                {{/if}}
+            {{else}}
+            <a href="{{:href}}"{{if target}} target="{{:target}}"{{/if}}{{if attrs}}{{:attrs}}{{/if}}>
+                {{if icon}}<i class="nav-icon {{:icon}}"></i>{{/if}}
+                <p>{{:text}}
+                    {{if items}}
+                        <i class="right fa-solid fa-angle-left"></i>
+                        {{if label}}
+                            <span class="right">
+                                {{:label}}
+                            </span>
+                        {{/if}}
+                    {{else}}
+                        {{if label}}
+                            <span class="right">
+                                {{:label}}
+                            </span>
+                        {{/if}}
+                    {{/if}}
+                </p>
+            </a>
+            {{/if}}
+            {{if items}}
+            <ul class="nav nav-treeview"{{if open}} style="display: block;"{{/if}}>
+                {{include tmpl="#menu-items"/}}
+            </ul>
+            {{/if}}
+        </li>
+    {{/for}}
+{{/if}}
+</script>
+<script type="text/html" class="ew-js-template" data-name="languages" data-seq="10" data-data="languages" data-method="prependTo" data-target=".navbar-nav.ms-auto">
+{{for languages}}<li class="nav-item"><a class="nav-link{{if selected}} active{{/if}} ew-tooltip" title="{{>desc}}" data-ew-action="language" data-language="{{:id}}">{{:id}}</a></li>{{/for}}</script>
+<script type="text/html" class="ew-js-template" data-name="login" data-seq="10" data-data="login" data-method="appendTo" data-target=".navbar-nav.ms-auto">
+{{if canSubscribe}}
+<li class="nav-item"><a id="subscribe-notification" class="nav-link disabled">{{:subscribeText}}</a></li>
+{{/if}}
+{{if isLoggedIn}}
+<li class="nav-item dropdown text-body">
+    <a id="ew-nav-link-user" class="nav-link ew-user" data-bs-toggle="dropdown" href="#">
+        <i class="fa-solid fa-user"></i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="ew-nav-link-user">
+        <div class="dropdown-header">
+            <i class="fa-solid fa-user me-2"></i>{{:currentUserName}}
+        </div>
+        <div class="dropdown-divider"></div>
+        {{if hasPersonalData}}
+        <a class="dropdown-item" id="personal-data"{{props personalData}} data-{{:key}}="{{>prop}}"{{/props}}>{{:personalDataText}}</a>
+        {{/if}}
+        {{if canChangePassword}}
+        <a class="dropdown-item" id="change-password"{{props changePassword}} data-{{:key}}="{{>prop}}"{{/props}}>{{:changePasswordText}}</a>
+        {{/if}}
+        {{if enable2FAText}}
+        <a class="dropdown-item{{if !enable2FA}} d-none{{/if}}" id="enable-2fa" data-ew-action="enable-2fa">{{:enable2FAText}}</a>
+        {{/if}}
+        {{if backupCodes}}
+        <a class="dropdown-item{{if !showBackupCodes}} d-none{{/if}}" id="backup-codes" data-ew-action="backup-codes">{{:backupCodes}}</a>
+        {{/if}}
+        {{if disable2FAText}}
+        <a class="dropdown-item{{if !disable2FA}} d-none{{/if}}" id="disable-2fa" data-ew-action="disable-2fa">{{:disable2FAText}}</a>
+        {{/if}}
+        {{if canLogout}}
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-footer text-end py-0">
+            <a class="btn btn-default"{{props logout}} data-{{:key}}="{{>prop}}"{{/props}}>{{:logoutText}}</a>
+        </div>
+        {{/if}}
+    </div>
+</li>
+{{else}}
+    {{if canLogin}}
+<li class="nav-item"><a class="nav-link ew-tooltip" title="{{:loginTitle}}"{{props login}} data-{{:key}}="{{>prop}}"{{/props}}>{{:loginText}}</a></li>
+    {{/if}}
+    {{if canLogout}}
+<li class="nav-item"><a class="nav-link ew-tooltip"{{props logout}} data-{{:key}}="{{>prop}}"{{/props}}>{{:logoutText}}</a></li>
+    {{/if}}
+{{/if}}
+</script>
+<meta name="generator" content="PHPMaker 2023.13.0">
+</head>
+<body class="hold-transition sidebar-collapse ew-layout-top-nav" style="">
+<div class="wrapper ew-layout">
+    <!-- Main Header -->
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-red navbar-dark border-bottom-0">
+        <div class="container-fluid">
+            <!-- Left navbar links -->
+            <ul id="ew-navbar" class="navbar-nav">
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link" data-widget="pushmenu" data-enable-remember="true" data-ew-action="none"><i class="fa-solid fa-bars ew-icon"></i></a>
+                </li>
+                <a class="navbar-brand d-none d-sm-block" href="/decrypt-web/RecordsList">
+                    <img src="/decrypt-web/images/logo-decode.png" alt="" class="brand-image ew-brand-image">
+                </a>
+            </ul>
+            <!-- Right navbar links -->
+            <ul id="ew-navbar-end" class="navbar-nav ms-auto"></ul>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-red">
+        <div class="brand-container">
+            <!-- Brand Logo //** Note: Only licensed users are allowed to change the logo ** -->
+            <a href="/decrypt-web/RecordsList" class="brand-link">
+                <img src="/decrypt-web/images/logo-decode.png" alt="" class="brand-image ew-brand-image">
+            </a>
+                    </div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel -->
+                        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                                <div class="info">
+                    <a class="d-block">danielbourdeau</a>
+                </div>
+                            </div>
+                        <!-- Sidebar Menu -->
+            <nav id="ew-menu" class="mt-2"></nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+                <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">DECODE Records <small class="text-muted">View</small></h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-end ew-breadcrumbs"><li class="breadcrumb-item" id="ew-breadcrumb1"><a href="/decrypt-web/RecordsList" title="Home" class="ew-home"><i data-phrase="HomePage" class="fa-solid fa-house ew-icon"><span class="visually-hidden">Home</span></i></a></li><li class="breadcrumb-item" id="ew-breadcrumb2"><a href="/decrypt-web/RecordsList"><span id="ew-page-caption">DECODE Records</span></a></li><li class="breadcrumb-item active" id="ew-breadcrumb3">View</li></ol>                </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+            </div>
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <section class="content">
+        <div class="container-fluid">
+<div class="btn-toolbar ew-toolbar">
+<div class="ew-detail-option d-inline-block text-nowrap" data-name="button"><div class="btn-group btn-group-sm ew-btn-dropdown" data-table=""><button type="button" class="btn-default btn dropdown-toggle" data-title="Master/Detail" data-bs-toggle="dropdown" data-bs-auto-close="true"><i data-phrase="ButtonDetails" class="icon-master-detail ew-icon"><span class="visually-hidden">Master/Detail</span></i></button><ul class="dropdown-menu ew-dropdown-menu ew-list-options"><li><a class="ew-row-link ew-detail dropdown-item" data-action="list" href="/decrypt-web/ImagesList?showmaster=records&amp;fk_id=4155">Images <span class="badge bg-primary ew-detail-count-2">2</span></a></li><li><a class="ew-row-link ew-detail dropdown-item" data-action="list" href="/decrypt-web/DocumentsList?showmaster=records&amp;fk_id=4155">Documents <span class="badge bg-primary ew-detail-count-0">0</span></a></li><li class="dropdown-submenu dropdown-hover"><a class="ew-row-link ew-detail dropdown-item" data-action="list" href="/decrypt-web/AssociatedRecordsList?showmaster=records&amp;fk_id=4155">Associated<br>Records <span class="badge bg-primary ew-detail-count-0">0</span></a><ul class="dropdown-menu"><li><a class="dropdown-item ew-row-link ew-detail-view" data-action="view" data-caption="Master/Detail View" href="/decrypt-web/RecordsView/4155?showdetail=associated_records"><i data-phrase="MasterDetailViewLink" class="icon-md-view ew-icon me-2"><span class="visually-hidden">Master/Detail View</span></i>Master/Detail View</a></li></ul></li></ul></div></div></div>
+<div class="navhead"><a href="/decrypt-web/RecordsEdit/4155">Edit Record</a><br/>
+<a href="/decrypt-web/ImagesList?showmaster=records&fk_id=4155">Manage Images</a>&nbsp;|
+<a href="/decrypt-web/DocumentsList?showmaster=records&fk_id=4155">Manage Documents</a>&nbsp;|
+<a href="/decrypt-web/AssociatedRecordsList?showmaster=records&fk_id=4155">Associated Records</a><br/>
+<a href="/decrypt-web/RecordsDelete/4155">Delete Record</a>
+</div><div class='sumbox'>
+<div class='detbox'>
+<span class='recinf'>Record Information</span><br/><b>ID:</b>4155<br/><b>Name:</b>BNF_Français_15564_027</div>
+<div class='detbox'>
+<span class='recinf'>Current Location</span><br/><b>Country:</b>France<br/><b>City:</b>Paris<br/><b>City:</b>Bibliotheque nationale de France (BnF), Français 15564 fol. 27.</div>
+<div class='detbox'>
+<span class='recinf'>Origin</span><br/><b>Dates:</b> - <br/><b>Author:</b><br/><b>Sender:</b><br/><b>Receiver:</b>Philippe-Emmanuel, duke of Mercoeur<br/><b>Region:</b><br/><b>City:</b></div>
+<div class='detbox'>
+<span class='recinf'>Content</span><br/><b>Type:</b>Cipher<br/><b>Status:</b>Non-decrypted<br/><b>Cipher Type:</b>Unknown<br/><b>Symbol Sets:</b>Graphic signs, Alphabet, Numerical<br/><b>Pages:</b>1</div>
+<div class='detbox'>
+<span class='recinf'>Creation</span><br/><b>Owner:</b>22<br/><b>Creator:</b>22<br/><b>Creation Date:</b>2023-02-20 13:43:34<br/><b>Access mode:</b>Authentication required</div>
+</div>
+    <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      // here
+      var oldsrc = slides[slideIndex-1].getElementsByTagName("img")[0].src;
+      slides[slideIndex-1].getElementsByTagName("img")[0].src = oldsrc.replace('file=TH_','file=');
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <div class='imgbox'><div class='imgth'>
+<img class='hover-shadow' onclick='openModal();currentSlide(1)' src='/decrypt-custom/filesrv/?file=TH_IMG_R4155_I24481_P1.jpeg'/>
+</div>
+<div class='imgth'>
+<img class='hover-shadow' onclick='openModal();currentSlide(2)' src='/decrypt-custom/filesrv/?file=TH_IMG_R4155_I24481_P2.jpg'/>
+</div>
+</div>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="manage-img-box"><a class="manage-img" href="/decrypt-web/ImagesList?showmaster=records&fk_id=4155">Go to the <b>Image Manager</b> to zoom and view/edit metadata</a></div>
+    <div class="modal-content">
+        <div class="mySlides">
+            <div class="numbertext">1/2</div>
+            <img src="/decrypt-custom/filesrv/?file=TH_IMG_R4155_I24481_P1.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2/2</div>
+            <img src="/decrypt-custom/filesrv/?file=TH_IMG_R4155_I24481_P2.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+		  <div class="imgnavbox">
+          <div class="column">
+              <img class="demo" src="/decrypt-custom/filesrv/?file=TH_IMG_R4155_I24481_P1.jpeg" onclick="currentSlide(1)" alt="IMG_R4155_I24481_P1.jpeg"/>
+          </div>
+          <div class="column">
+              <img class="demo" src="/decrypt-custom/filesrv/?file=TH_IMG_R4155_I24481_P2.jpg" onclick="currentSlide(2)" alt="IMG_R4155_I24481_P2.jpg"/>
+          </div>
+        </div>
+    </div>
+</div>
+<hr/>
+<div class='imgbox'></div>
+<div class='imgbox'></div>
+<div class="ew-message-dialog d-none"></div><main class="view">
+<form name="frecordsview" id="frecordsview" class="ew-form ew-view-form overlay-wrapper" action="/decrypt-web/RecordsView" method="post" novalidate autocomplete="off">
+<script>
+var currentTable = {"tableName":"records","tableCaption":"DECODE Records","fields":{"id":{"name":"id","caption":"ID","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"name":{"name":"name","caption":"Name","visible":true,"required":true,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty"]},"owner_id":{"name":"owner_id","caption":"OwnerID","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"owner":{"name":"owner","caption":"Owner","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"record_group_id":{"name":"record_group_id","caption":"Group","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"c_holder":{"name":"c_holder","caption":"Current Location and Name","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"c_cates":{"name":"c_cates","caption":"Dates","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"c_author":{"name":"c_author","caption":"Authors","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"c_lang":{"name":"c_lang","caption":"Languages","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"current_country":{"name":"current_country","caption":"Country","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"current_city":{"name":"current_city","caption":"City","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"current_holder":{"name":"current_holder","caption":"Holder","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"author":{"name":"author","caption":"Author","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"sender":{"name":"sender","caption":"Sender","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"receiver":{"name":"receiver","caption":"Receiver","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"origin_region":{"name":"origin_region","caption":"Region","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"origin_city":{"name":"origin_city","caption":"Origin City","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"start_year":{"name":"start_year","caption":"Start Year","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"start_month":{"name":"start_month","caption":"Start Month","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"start_day":{"name":"start_day","caption":"Start Day","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"end_year":{"name":"end_year","caption":"End Year","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"end_month":{"name":"end_month","caption":"End Month","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"end_day":{"name":"end_day","caption":"End Day","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"record_type":{"name":"record_type","caption":"Record<br/>Type","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"status":{"name":"status","caption":"Status","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"symbol_sets":{"name":"symbol_sets","caption":"Symbol Set","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"cipher_types":{"name":"cipher_types","caption":"Cipher Type","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"cipher_type_other":{"name":"cipher_type_other","caption":"Cipher Type (notes)","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"symbol_set_other":{"name":"symbol_set_other","caption":"Symbol Sets (notes)","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"number_of_pages":{"name":"number_of_pages","caption":"No. of Pages","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"inline_cleartext":{"name":"inline_cleartext","caption":"Inline Cleartext","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal"]},"inline_plaintext":{"name":"inline_plaintext","caption":"Inline Plaintext","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal"]},"cleartext_lang":{"name":"cleartext_lang","caption":"Cleartext<br/>Language","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"plaintext_lang":{"name":"plaintext_lang","caption":"Plaintext<br/>Language","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"private_ciphertext":{"name":"private_ciphertext","caption":"Private Ciphertext","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal"]},"document_types":{"name":"document_types","caption":"Available Documents","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"paper":{"name":"paper","caption":"Paper","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"additional_information":{"name":"additional_information","caption":"Additional Information","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","in","not_in","begins_with","not_begins_with","contains","not_contains","ends_with","not_ends_with","is_empty","is_not_empty","is_null","is_not_null"]},"creator_id":{"name":"creator_id","caption":"Creator","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"access_mode":{"name":"access_mode","caption":"Access Mode","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"creation_date":{"name":"creation_date","caption":"Creation Date","visible":true,"required":true,"isInvalid":false,"raw":false,"clientFormatPattern":"M/d/yy","clientSearchOperators":["equal","not_equal","in","not_in","less","less_or_equal","greater","greater_or_equal","between","not_between"]},"km_encoded_plaintext_type":{"name":"km_encoded_plaintext_type","caption":"Key: encoded plaintext type","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_numbers":{"name":"km_numbers","caption":"Key: numbers","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_content_words":{"name":"km_content_words","caption":"Key: content words","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_function_words":{"name":"km_function_words","caption":"Key: function words","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_syllables":{"name":"km_syllables","caption":"Key: syllables","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_morphological_endings":{"name":"km_morphological_endings","caption":"Key: morphological endings","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_phrases":{"name":"km_phrases","caption":"Key: phrases","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_sentences":{"name":"km_sentences","caption":"Key: sentences","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_punctuation":{"name":"km_punctuation","caption":"Key: punctuation","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_nomenclature_size":{"name":"km_nomenclature_size","caption":"Key: nomenclature size","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_sections":{"name":"km_sections","caption":"Key: sections","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_headings":{"name":"km_headings","caption":"Key: headings","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_plaintext_arrangement":{"name":"km_plaintext_arrangement","caption":"Key: plaintext arrangement","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_ciphertext_arrangement":{"name":"km_ciphertext_arrangement","caption":"Key: ciphertext arrangement","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_memorability":{"name":"km_memorability","caption":"Key: memorability","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_symbol_set":{"name":"km_symbol_set","caption":"Key: symbol set","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_diacritics":{"name":"km_diacritics","caption":"Key: diacritics","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_code_length":{"name":"km_code_length","caption":"Key: code length","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_code_type":{"name":"km_code_type","caption":"Key: code types","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_metaphors":{"name":"km_metaphors","caption":"Key: metaphors","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]},"km_material_properties":{"name":"km_material_properties","caption":"Key: material properties","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","is_null","is_not_null"]},"km_instructions":{"name":"km_instructions","caption":"Key: instructions","visible":true,"required":false,"isInvalid":false,"raw":false,"clientFormatPattern":"","clientSearchOperators":["equal","not_equal","less","less_or_equal","greater","greater_or_equal","between","not_between","is_null","is_not_null"]}}};
+ew.deepAssign(ew.vars, { tables: { records: currentTable } });
+var currentPageID = ew.PAGE_ID = "view";
+var currentForm;
+var frecordsview;
+loadjs.ready(["wrapper", "head"], function () {
+    let $ = jQuery;
+    let fields = currentTable.fields;
+
+    // Form object
+    let form = new ew.FormBuilder()
+        .setId("frecordsview")
+        .setPageId("view")
+        .build();
+    window[form.id] = form;
+    currentForm = form;
+    loadjs.done(form.id);
+});
+</script>
+<script>
+loadjs.ready("head", function () {
+    // Write your table-specific client script here, no need to add script tags.
+});
+</script>
+<input type="hidden" name="csrf_name" value="csrf6ab28de8d5f8f"><!-- CSRF token name -->
+<input type="hidden" name="csrf_value" value="kLJ5sKYrkI5cLgiQJNPPRIxw1wFi7+4qzBaqol+dOami1k6EkU+p725IPvYc4Pol6BKxZACL3Br8cJ6TOfhdmg=="><!-- CSRF token value -->
+<input type="hidden" name="t" value="records">
+<input type="hidden" name="modal" value="0">
+<table class="table table-striped table-bordered table-hover table-sm ew-view-table">
+    <tr id="r_id">
+        <td class="w-col-2"><span id="elh_records_id">ID</span></td>
+        <td data-name="id">
+<span id="el_records_id">
+<span>
+4155</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_name">
+        <td class="w-col-2"><span id="elh_records_name">Name</span></td>
+        <td data-name="name">
+<span id="el_records_name">
+<span>
+BNF_Français_15564_027</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_owner">
+        <td class="w-col-2"><span id="elh_records_owner">Owner</span></td>
+        <td data-name="owner">
+<span id="el_records_owner">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_c_holder">
+        <td class="w-col-2"><span id="elh_records_c_holder">Current Location and Name</span></td>
+        <td data-name="c_holder">
+<span id="el_records_c_holder">
+<span>
+<b>Paris</b>,Bibliotheque nationale de France (BnF), Français 15564 fol. 27. <br><small>BNF_Français_15564_027</small></span>
+</span>
+</td>
+    </tr>
+    <tr id="r_c_cates">
+        <td class="w-col-2"><span id="elh_records_c_cates">Dates</span></td>
+        <td data-name="c_cates">
+<span id="el_records_c_cates">
+<span class="fst-italic">
+1587 - </span>
+</span>
+</td>
+    </tr>
+    <tr id="r_c_author">
+        <td class="w-col-2"><span id="elh_records_c_author">Authors</span></td>
+        <td data-name="c_author">
+<span id="el_records_c_author">
+<span style='font-size:smaller;'>
+<b></b><br/> </span>
+</span>
+</td>
+    </tr>
+    <tr id="r_c_lang">
+        <td class="w-col-2"><span id="elh_records_c_lang">Languages</span></td>
+        <td data-name="c_lang">
+<span id="el_records_c_lang">
+<span style='font-size:smaller;'>
+<b>Cleartext:</b>French<br/><b>Plaintext:</b></span>
+</span>
+</td>
+    </tr>
+    <tr id="r_current_country">
+        <td class="w-col-2"><span id="elh_records_current_country">Country</span></td>
+        <td data-name="current_country">
+<span id="el_records_current_country">
+<span>
+France</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_current_city">
+        <td class="w-col-2"><span id="elh_records_current_city">City</span></td>
+        <td data-name="current_city">
+<span id="el_records_current_city">
+<span>
+Paris</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_current_holder">
+        <td class="w-col-2"><span id="elh_records_current_holder">Holder</span></td>
+        <td data-name="current_holder">
+<span id="el_records_current_holder">
+<span>
+Bibliotheque nationale de France (BnF), Français 15564 fol. 27.</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_author">
+        <td class="w-col-2"><span id="elh_records_author">Author</span></td>
+        <td data-name="author">
+<span id="el_records_author">
+<span class="fw-bold">
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_sender">
+        <td class="w-col-2"><span id="elh_records_sender">Sender</span></td>
+        <td data-name="sender">
+<span id="el_records_sender">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_receiver">
+        <td class="w-col-2"><span id="elh_records_receiver">Receiver</span></td>
+        <td data-name="receiver">
+<span id="el_records_receiver">
+<span>
+Philippe-Emmanuel, duke of Mercoeur</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_origin_region">
+        <td class="w-col-2"><span id="elh_records_origin_region">Region</span></td>
+        <td data-name="origin_region">
+<span id="el_records_origin_region">
+<span class="fw-bold">
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_origin_city">
+        <td class="w-col-2"><span id="elh_records_origin_city">Origin City</span></td>
+        <td data-name="origin_city">
+<span id="el_records_origin_city">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_start_year">
+        <td class="w-col-2"><span id="elh_records_start_year">Start Year</span></td>
+        <td data-name="start_year">
+<span id="el_records_start_year">
+<span>
+1587</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_start_month">
+        <td class="w-col-2"><span id="elh_records_start_month">Start Month</span></td>
+        <td data-name="start_month">
+<span id="el_records_start_month">
+<span>
+2</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_start_day">
+        <td class="w-col-2"><span id="elh_records_start_day">Start Day</span></td>
+        <td data-name="start_day">
+<span id="el_records_start_day">
+<span>
+4</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_end_year">
+        <td class="w-col-2"><span id="elh_records_end_year">End Year</span></td>
+        <td data-name="end_year">
+<span id="el_records_end_year">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_end_month">
+        <td class="w-col-2"><span id="elh_records_end_month">End Month</span></td>
+        <td data-name="end_month">
+<span id="el_records_end_month">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_end_day">
+        <td class="w-col-2"><span id="elh_records_end_day">End Day</span></td>
+        <td data-name="end_day">
+<span id="el_records_end_day">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_record_type">
+        <td class="w-col-2"><span id="elh_records_record_type">Record<br/>Type</span></td>
+        <td data-name="record_type">
+<span id="el_records_record_type">
+<span class="fw-bold" style='font-size:smaller;'>
+Cipher</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_status">
+        <td class="w-col-2"><span id="elh_records_status">Status</span></td>
+        <td data-name="status">
+<span id="el_records_status">
+<span class="fw-bold" style='font-size:smaller;'>
+Non-decrypted</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_symbol_sets">
+        <td class="w-col-2"><span id="elh_records_symbol_sets">Symbol Set</span></td>
+        <td data-name="symbol_sets">
+<span id="el_records_symbol_sets">
+<span>
+<span class="ew-option">Graphic signs</span><span class="ew-option">Alphabet</span><span class="ew-option">Numerical</span></span>
+</span>
+</td>
+    </tr>
+    <tr id="r_cipher_types">
+        <td class="w-col-2"><span id="elh_records_cipher_types">Cipher Type</span></td>
+        <td data-name="cipher_types">
+<span id="el_records_cipher_types">
+<span>
+<span class="ew-option">Unknown</span></span>
+</span>
+</td>
+    </tr>
+    <tr id="r_cipher_type_other">
+        <td class="w-col-2"><span id="elh_records_cipher_type_other">Cipher Type (notes)</span></td>
+        <td data-name="cipher_type_other">
+<span id="el_records_cipher_type_other">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_symbol_set_other">
+        <td class="w-col-2"><span id="elh_records_symbol_set_other">Symbol Sets (notes)</span></td>
+        <td data-name="symbol_set_other">
+<span id="el_records_symbol_set_other">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_number_of_pages">
+        <td class="w-col-2"><span id="elh_records_number_of_pages">No. of Pages</span></td>
+        <td data-name="number_of_pages">
+<span id="el_records_number_of_pages">
+<span>
+1</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_inline_cleartext">
+        <td class="w-col-2"><span id="elh_records_inline_cleartext">Inline Cleartext</span></td>
+        <td data-name="inline_cleartext">
+<span id="el_records_inline_cleartext">
+<span>
+Yes</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_inline_plaintext">
+        <td class="w-col-2"><span id="elh_records_inline_plaintext">Inline Plaintext</span></td>
+        <td data-name="inline_plaintext">
+<span id="el_records_inline_plaintext">
+<span>
+No</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_cleartext_lang">
+        <td class="w-col-2"><span id="elh_records_cleartext_lang">Cleartext<br/>Language</span></td>
+        <td data-name="cleartext_lang">
+<span id="el_records_cleartext_lang">
+<span>
+French</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_plaintext_lang">
+        <td class="w-col-2"><span id="elh_records_plaintext_lang">Plaintext<br/>Language</span></td>
+        <td data-name="plaintext_lang">
+<span id="el_records_plaintext_lang">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_private_ciphertext">
+        <td class="w-col-2"><span id="elh_records_private_ciphertext">Private Ciphertext</span></td>
+        <td data-name="private_ciphertext">
+<span id="el_records_private_ciphertext">
+<span>
+True</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_document_types">
+        <td class="w-col-2"><span id="elh_records_document_types">Available Documents</span></td>
+        <td data-name="document_types">
+<span id="el_records_document_types">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_paper">
+        <td class="w-col-2"><span id="elh_records_paper">Paper</span></td>
+        <td data-name="paper">
+<span id="el_records_paper">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_access_mode">
+        <td class="w-col-2"><span id="elh_records_access_mode">Access Mode</span></td>
+        <td data-name="access_mode">
+<span id="el_records_access_mode">
+<span>
+Authentication required</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_creation_date">
+        <td class="w-col-2"><span id="elh_records_creation_date">Creation Date</span></td>
+        <td data-name="creation_date">
+<span id="el_records_creation_date">
+<span>
+2/20/23</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_encoded_plaintext_type">
+        <td class="w-col-2"><span id="elh_records_km_encoded_plaintext_type">Key: encoded plaintext type</span></td>
+        <td data-name="km_encoded_plaintext_type">
+<span id="el_records_km_encoded_plaintext_type">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_numbers">
+        <td class="w-col-2"><span id="elh_records_km_numbers">Key: numbers</span></td>
+        <td data-name="km_numbers">
+<span id="el_records_km_numbers">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_content_words">
+        <td class="w-col-2"><span id="elh_records_km_content_words">Key: content words</span></td>
+        <td data-name="km_content_words">
+<span id="el_records_km_content_words">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_function_words">
+        <td class="w-col-2"><span id="elh_records_km_function_words">Key: function words</span></td>
+        <td data-name="km_function_words">
+<span id="el_records_km_function_words">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_syllables">
+        <td class="w-col-2"><span id="elh_records_km_syllables">Key: syllables</span></td>
+        <td data-name="km_syllables">
+<span id="el_records_km_syllables">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_morphological_endings">
+        <td class="w-col-2"><span id="elh_records_km_morphological_endings">Key: morphological endings</span></td>
+        <td data-name="km_morphological_endings">
+<span id="el_records_km_morphological_endings">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_phrases">
+        <td class="w-col-2"><span id="elh_records_km_phrases">Key: phrases</span></td>
+        <td data-name="km_phrases">
+<span id="el_records_km_phrases">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_sentences">
+        <td class="w-col-2"><span id="elh_records_km_sentences">Key: sentences</span></td>
+        <td data-name="km_sentences">
+<span id="el_records_km_sentences">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_punctuation">
+        <td class="w-col-2"><span id="elh_records_km_punctuation">Key: punctuation</span></td>
+        <td data-name="km_punctuation">
+<span id="el_records_km_punctuation">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_nomenclature_size">
+        <td class="w-col-2"><span id="elh_records_km_nomenclature_size">Key: nomenclature size</span></td>
+        <td data-name="km_nomenclature_size">
+<span id="el_records_km_nomenclature_size">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_sections">
+        <td class="w-col-2"><span id="elh_records_km_sections">Key: sections</span></td>
+        <td data-name="km_sections">
+<span id="el_records_km_sections">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_headings">
+        <td class="w-col-2"><span id="elh_records_km_headings">Key: headings</span></td>
+        <td data-name="km_headings">
+<span id="el_records_km_headings">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_plaintext_arrangement">
+        <td class="w-col-2"><span id="elh_records_km_plaintext_arrangement">Key: plaintext arrangement</span></td>
+        <td data-name="km_plaintext_arrangement">
+<span id="el_records_km_plaintext_arrangement">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_ciphertext_arrangement">
+        <td class="w-col-2"><span id="elh_records_km_ciphertext_arrangement">Key: ciphertext arrangement</span></td>
+        <td data-name="km_ciphertext_arrangement">
+<span id="el_records_km_ciphertext_arrangement">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_memorability">
+        <td class="w-col-2"><span id="elh_records_km_memorability">Key: memorability</span></td>
+        <td data-name="km_memorability">
+<span id="el_records_km_memorability">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_symbol_set">
+        <td class="w-col-2"><span id="elh_records_km_symbol_set">Key: symbol set</span></td>
+        <td data-name="km_symbol_set">
+<span id="el_records_km_symbol_set">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_diacritics">
+        <td class="w-col-2"><span id="elh_records_km_diacritics">Key: diacritics</span></td>
+        <td data-name="km_diacritics">
+<span id="el_records_km_diacritics">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_code_length">
+        <td class="w-col-2"><span id="elh_records_km_code_length">Key: code length</span></td>
+        <td data-name="km_code_length">
+<span id="el_records_km_code_length">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_code_type">
+        <td class="w-col-2"><span id="elh_records_km_code_type">Key: code types</span></td>
+        <td data-name="km_code_type">
+<span id="el_records_km_code_type">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_metaphors">
+        <td class="w-col-2"><span id="elh_records_km_metaphors">Key: metaphors</span></td>
+        <td data-name="km_metaphors">
+<span id="el_records_km_metaphors">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_material_properties">
+        <td class="w-col-2"><span id="elh_records_km_material_properties">Key: material properties</span></td>
+        <td data-name="km_material_properties">
+<span id="el_records_km_material_properties">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+    <tr id="r_km_instructions">
+        <td class="w-col-2"><span id="elh_records_km_instructions">Key: instructions</span></td>
+        <td data-name="km_instructions">
+<span id="el_records_km_instructions">
+<span>
+</span>
+</span>
+</td>
+    </tr>
+</table>
+</form>
+</main>
+<div id='additional_information'>
+<p><b>Additional Information</b><br/>
+<p>The image is not in the public domain. Publishing it is only possible with the permission of the archive.<br />
+Images are available at https://archivesetmanuscrits.bnf.fr/.</p><br/><b>Created by:</b>lehoanna<br/></p>
+</div>
+        <script>
+        document.getElementById('ew-page-spinner').style.display = "none";
+        document.getElementsByClassName('btn-toolbar').style.display = "none";
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        </script>
+        <script>
+loadjs.ready("load", function () {
+    // Startup script
+    document.title += " R" + document.location.href.replace(/.*[^0-9]([0-9]+)[^0-9]*$/,"$1");
+    $("<tr><td align=\"center\" colspan=\"2\"><div id=\"hloc\" class=\"inlinehead\">Location</div></td></tr>").insertBefore("#r_current_country");
+    $("<tr><td colspan=\"2\"><div id=\"horig\" class=\"inlinehead\">Origin</div></td></tr>").insertBefore("#r_author");
+    $("<tr><td colspan=\"2\"><div id=\"hcont\" class=\"inlinehead\">Content</div></td></tr>").insertBefore("#r_record_type");
+    //$("<div class=\"ew-table-select-row\">Documents</div>").insertBefore("#r_current_country");
+    $("<tr><td colspan=\"2\"><div id=\"hform\" class=\"inlinehead\">Format</div></td></tr>").insertBefore("#r_paper");
+    $("<tr><td colspan=\"2\"><div id=\"hadd\" class=\"inlinehead\">Additional Information</div></td></tr>").insertAfter("#r_ink_type");
+    $("<tr><td colspan=\"2\"><div id=\"hmeta\" class=\"inlinehead\">Key Metadata</div></td></tr>").insertAfter("#r_end_year");
+    $(`
+    <tr><td colspan=\"2\"><div class="inlinehead">
+    <a href="#hloc">Location</a> |
+    <a href="#hdt">Doc. Types</a> |
+    <a href="#horig">Origin</a> | 
+    <a href="#hcont">Content</a> | 
+    <a href="#hform">Format</a> | 
+    <a href="#hadd">Add. Info.</a> |
+    <a href="#hmeta">Key Metadata</a>
+    </div></td></tr>
+    `).insertBefore("#r_id");
+    $("span.ew-search-operator:contains('contains')").css("visibility","hidden");
+    $(".btn-toolbar").hide();
+});
+</script>
+        </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- ** Note: Only licensed users are allowed to change the copyright statement. ** -->
+        <div class="ew-footer-text"><p>&copy; DECRYPT Project</p><p>Héder, M ; Megyesi, B. The DECODE Database of Historical Ciphers and Keys: Version 2. In: Dahlke, C; Megyesi, B (eds.) <i>Proceedings of the 5th International Conference on Historical Cryptology HistoCrypt 2022<i>. Linkoping, Sweden : LiU E-Press (2022) pp. 111-114. , 4 p. <a href="https://eprints.sztaki.hu/10338/1/Heder_111_32898863_ny.pdf">[pdf]</a></p>
+<p>Megyesi Beáta, Esslinger Bernhard, Fornés Alicia, Kopal Nils, Láng Benedek, Lasry George, Leeuw Karl de, Pettersson Eva, Wacker Arno, Waldispühl Michelle. Decryption of historical manuscripts: the DECRYPT project. <i>CRYPTOLOGIA</i> 44 : 6 pp. 545-559. , 15 p. (2020) <a href="https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1716410">[link]</a></p>
+<p>Megyesi, B., Blomqvist, N., and Pettersson, E. (2019) The DECODE Database: Collection of Historical Ciphers and Keys. In <i>Proceedings of the 2nd International Conference on Historical Cryptology.</i> HistoCrypt 2019, June 23-25, 2019, Mons, Belgium. NEALT Proceedings Series 37, Linköping Electronic Press. <a href="https://cl.lingfil.uu.se/~bea/publ/decode-histocrypt-2019.pdf">[pdf]</a></p>
+
+</div>
+        <div class="float-end d-none d-sm-inline"></div>
+    </footer>
+</div>
+<!-- ./wrapper -->
+<script>
+loadjs.done("wrapper");
+</script>
+<!-- template upload (for file upload) -->
+<script id="template-upload" type="text/html">
+{{for files}}
+    <tr class="template-upload">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{{:name}}</p>
+            <p class="error"></p>
+        </td>
+        <td>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar bg-success" style="width: 0%;"></div></div>
+        </td>
+        <td>
+            {{if !#index && !~root.options.autoUpload}}
+            <button type="button" class="btn btn-default btn-sm start" disabled>Start</button>
+            {{/if}}
+            {{if !#index}}
+            <button type="button" class="btn btn-default btn-sm cancel">Cancel</button>
+            {{/if}}
+        </td>
+    </tr>
+{{/for}}
+</script>
+<!-- template download (for file upload) -->
+<script id="template-download" type="text/html">
+{{for files}}
+    <tr class="template-download">
+        <td>
+            <span class="preview">
+                {{if !exists}}
+                <span class="error">File not found</span>
+                {{else url && extension == "pdf"}}
+                <div class="ew-pdfobject" data-url="{{>url}}" style="width: 200px;"></div>
+                {{else url && extension == "mp3"}}
+                <audio controls><source type="audio/mpeg" src="{{>url}}"></audio>
+                {{else url && extension == "mp4"}}
+                <video controls><source type="video/mp4" src="{{>url}}"></video>
+                {{else thumbnailUrl}}
+                <a href="{{>url}}" title="{{>name}}" download="{{>name}}" class="ew-lightbox"><img class="ew-lazy" loading="lazy" src="{{>thumbnailUrl}}"></a>
+                {{/if}}
+            </span>
+        </td>
+        <td>
+            <p class="name">
+                {{if !exists}}
+                <span class="text-muted">{{:name}}</span>
+                {{else url && (extension == "pdf" || thumbnailUrl) && extension != "mp3" && extension != "mp4"}}
+                <a href="{{>url}}" title="{{>name}}" data-extension="{{>extension}}" target="_blank">{{:name}}</a>
+                {{else url}}
+                <a href="{{>url}}" title="{{>name}}" data-extension="{{>extension}}" download="{{>name}}">{{:name}}</a>
+                {{else}}
+                <span>{{:name}}</span>
+                {{/if}}
+            </p>
+            {{if error}}
+            <div><span class="error">{{:error}}</span></div>
+            {{/if}}
+        </td>
+        <td>
+            <span class="size">{{:~root.formatFileSize(size)}}</span>
+        </td>
+        <td>
+            {{if !~root.options.readonly && deleteUrl}}
+            <button type="button" class="btn btn-default btn-sm delete" data-type="{{>deleteType}}" data-url="{{>deleteUrl}}">Delete</button>
+            {{else !~root.options.readonly}}
+            <button type="button" class="btn btn-default btn-sm cancel">Cancel</button>
+            {{/if}}
+        </td>
+    </tr>
+{{/for}}
+</script>
+<!-- modal dialog -->
+<div id="ew-modal-dialog" class="modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="ew-modal-dialog-title" aria-hidden="true"><div class="modal-dialog modal-fullscreen-sm-down"><div class="modal-content"><div class="modal-header"><h5 id="ew-modal-dialog-title" class="modal-title"></h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"></div><div class="modal-footer"></div></div></div></div>
+<!-- modal lookup dialog -->
+<div id="ew-modal-lookup-dialog" class="modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="ew-modal-lookup-dialog-title" aria-hidden="true"><div class="modal-dialog modal-fullscreen-sm-down"><div class="modal-content"><div class="modal-header"><h5 id="ew-modal-lookup-dialog-title" class="modal-title"></h5></div><div class="modal-body p-0"></div><div class="modal-footer"><button type="button" class="btn btn-primary ew-btn" data-value="true" data-bs-dismiss="modal">OK</button><button type="button" class="btn btn-default ew-btn" data-value="false" data-bs-dismiss="modal">Cancel</button></div></div></div></div>
+<!-- add option dialog -->
+<div id="ew-add-opt-dialog" class="modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="ew-add-opt-dialog-title" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 id="ew-add-opt-dialog-title" class="modal-title"></h5></div><div class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-primary ew-btn">Add</button><button type="button" class="btn btn-default ew-btn" data-bs-dismiss="modal">Cancel</button></div></div></div></div>
+<!-- import dialog -->
+<div id="ew-import-dialog" class="modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="ew-import-dialog-title" aria-hidden="true"><div class="modal-dialog modal-lg modal-fullscreen-sm-down"><div class="modal-content"><div class="modal-header"><h5 id="ew-import-dialog-title" class="modal-title"></h5></div>
+<div class="modal-body">
+    <div class="fileinput-button ew-file-drop-zone w-100">
+        <input type="file" class="form-control ew-file-input" title="" id="importfiles" name="importfiles[]" multiple lang="en-US">
+        <div class="text-muted ew-file-text">Drop file here or click to upload</div>
+    </div>
+    <div class="message d-none mt-3"></div>
+    <div class="progress d-none mt-3"><div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div></div>
+    <div class="result mt-3"></div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary ew-import-btn d-none">Save</button>
+    <button type="button" class="btn btn-default ew-close-btn" data-bs-dismiss="modal">Close</button>
+</div>
+</div></div></div>
+<!-- image cropper dialog -->
+<div id="ew-cropper-dialog" class="modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="ew-cropper-dialog-title" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="ew-cropper-dialog-title" class="modal-title">Crop</h5>
+            </div>
+            <div class="modal-body">
+                <div id="ew-crop-image-container"><img id="ew-crop-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary ew-crop-btn">Crop</button>
+                <button type="button" class="btn btn-default ew-skip-btn" data-bs-dismiss="modal">Skip</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- tooltip -->
+<div id="ew-tooltip"></div>
+<!-- drill down -->
+<div id="ew-drilldown-panel"></div>
+<script>
+loadjs.done("wrapper");
+loadjs.ready(ew.bundleIds, () => loadjs.isDefined("foot") || loadjs.done("foot"));
+</script>
+</body>
+</html>

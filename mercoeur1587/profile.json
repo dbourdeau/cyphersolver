@@ -1,0 +1,164 @@
+{
+ "schema_version": 1,
+ "target": "mercoeur1587",
+ "title": "[Henri, duc de Guise] to the duc de Mercœur, 16 April 1587, BnF fr. 15564 f. 78 (DECODE R4158; siblings R4155, R4167)",
+ "documents": [
+  {
+   "id": "f78",
+   "shelfmark": "BnF fr. 15564 f. 78 (DECODE R4158, images P2/P3/P5)",
+   "date": "16 April 1587",
+   "year": 1587,
+   "country": "France",
+   "route": "unknown",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the letter; Lasry 2022 published only the key and the f. 27 decipherment.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 952,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f78_labels.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R4158 images (one page in three overlapping frames)",
+    "image_quality": "good",
+    "notes": "952 label tokens with nomenclator groups as one token; 998 signs counting group members singly (NOTES tally)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution with a small nomenclator, in cipher runs interleaved with clear text.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 70,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": "unknown",
+   "count": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "George Lasry's 2022 key for BnF fr. 15564 (cryptiana GL.htm), fits unchanged; extended by about 15 values.",
+  "notes": "70 distinct labels measured over 952 tokens."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Lasry 2022 solved the key (GL.htm) and published the f. 27 decipherment only, not f. 78",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the catalogue entry. No target-specific intervention recorded.",
+  "tools": [
+   "beam2.py",
+   "consist.py",
+   "lang fr-1600-letters"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "cryptiana GL.htm: Lasry solved ff. 27, 78, 119, 142 in 2022; key table and f. 27 decipherment published.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Downloaded DECODE images of R4155, R4158, R4167 and neighbouring records.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Used the f. 27 overlay to calibrate sign shapes against Lasry's key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Labelled every sign of f. 78 in f78_labels.txt, one line per cipher run.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Beam search over each label's key values under the fr-1600-letters order-5 model (beam2.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Consistent-assignment anneal, one value per label (consist.py): collapsed homophones, worse than the beam.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Three sign-by-sign passes against native-resolution crops added about 15 sign and code values.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Tally: 983 of 998 cipher signs read as sense; 15 open (3 code groups, 12 signs).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 0.985,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "f78_reading.txt pass-3 tally, counted sign by sign: 983 of 998 cipher signs (group members counted singly) read as sense; [?], [??] and open code groups counted unread",
+  "codes_open": {
+   "open": 3,
+   "total": "unknown",
+   "tokens_open": 3
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Read with Lasry's key extended; three code groups and twelve signs open."
+ }
+}
