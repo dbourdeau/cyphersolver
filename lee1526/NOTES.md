@@ -75,6 +75,23 @@ frontier; the Emperor to go to Italy in spring) agrees with the key test above. 
 is not among DECODE's images. Nothing new to read; closed and removed from the catalogue 21 Sept 2026, DECODE
 correction queued (status Decrypted at the time, recipient Wolsey, key R8566).
 
+## Catalogue 107: R8575 (28 July 1528), cipher letter read at the time
+
+Catalogue no. 107 ("Eps. Wign., E. Lee (Hispania) to unknown recipient", Vesp. C IV ff. 262-265, old foliation 243-244,
+DECODE R8575, 8 images). All eight downloaded 21 Sept 2026. Pp. 1-6 are almost entirely in the Lee-Worcester sign
+cipher, with short clear passages (p. 1: "we have wryten to your grace afore that Radcliff merchante of London ... the
+xth of June ... for a shippe taken in Bayonna in Galicia"; p. 4 a clear block on the Emperor; p. 6 the clear close,
+"at Valadolit the xxviij of Julie 1528", signed "Hier. Eps Wigorniens / Edouardus Lee"); image 8 is the address leaf.
+No interlinear decipherment on the DECODE images.
+
+**Read at the time and calendared.** Letters and Papers Henry VIII IV no. 4564 (Vesp. C. IV. 243): "Ghinucci and Lee
+to Wolsey ... Valladolid, 28 July 1528. Signed. Mostly cipher, pp. 7. Add. Endd." and "2. Decipher by Tuke. Pp. 7"
+(ibid. f. 245). The calendar gives a long summary of the deciphered text (the King's letters of 24 March received 26
+June; the French post and St. Bonet; letters opened at Bordeaux; why they joined the French intimation of war; the
+collector at Saragossa; the Emperor's obligations and the fleur de lys). The clear passages on the images match it word
+for word. Tuke's decipherment is not among DECODE's images. Nothing new to read; closed and removed from the catalogue
+21 Sept 2026, DECODE correction queued (Decrypted at the time, recipient Wolsey, key R8566).
+
 ## Catalogue 102: R8465 (Vesp. C III f. 238, Seville, 15 April 1526)
 
 Lee to Wolsey, holograph, 2 pp. Page 2 (f. 238v) has three lines of the Lee-Worcester sign cipher, with no gloss.
