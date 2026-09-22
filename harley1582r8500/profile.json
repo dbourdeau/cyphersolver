@@ -1,0 +1,149 @@
+{
+ "schema_version": 1,
+ "target": "harley1582r8500",
+ "title": "Sir Edward Stafford (Paris) to [Walsingham], 20 August 1586 (BL Harley MS 1582 ff. 65-66; DECODE R8500)",
+ "documents": [
+  {
+   "id": "R8500",
+   "shelfmark": "BL Harley MS 1582 ff. 65-66 (DECODE R8500)",
+   "date": "1586-08-20",
+   "year": 1586,
+   "country": "England",
+   "route": "France (Paris, English embassy) -> England (Walsingham)",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the page; read here with the key rebuilt from siblings R8501/R8502."
+   },
+   "length": {
+    "tokens": 61,
+    "distinct": 20,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R8500_I39234_P1-P4",
+    "image_quality": "good",
+    "notes": "Five postscript runs on f. 65v transcribed sign by sign; sibling runs transcribed by a subagent (sib_runs.txt)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Letter substitution with homophones (6=e, w=a, x=i/y ...) plus single-sign and numeric codes (B Villeroy, O+ Nemours, 120 French ambassador, 47 King of Navarre).",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 20,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "yes",
+  "notes": "Same cipher as R8501-R8503; key rebuilt from the f. 72r decipherment and f. 73r glosses."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the letter; not in CSP Foreign XXI pt 1 (Harley MS)",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "sibling key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up the coding agent with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched R8500 record, API metadata and 4 full-resolution images with the session cookie; also R8501, R8502, R8504 images.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "Read pages: clear despatch, Paris 20 Aug 1586, signed Stafford; cipher only in five postscript runs on f. 65v, no glosses.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "CSP Foreign XXI pt 1 August 1586 (BHO pp. 64-80): a different Stafford letter of 20 Aug; this one not calendared.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Applied the R8503 values (6 null, D=v, h=l ...): no sense.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "crib",
+   "what": "f. 73r (R8502) glosses Junius, Cambray, Balagny, Germany over the same cipher words: runs 1, 2 and 4 matched.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Subagent transcribed ~480 signs of sibling runs on ff. 71r-73r; found f. 72r is a contemporary decipherment of the f. 71 runs.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "key from source",
+   "what": "Aligned f. 71 runs with the f. 72r decipherment: letter key rebuilt; 6 = e, not null.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "Read runs: Junius sonne / from Cambraye / credit with Balagny / Balagny / mayntayne.",
+   "result": "worked",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 1.0,
+  "key": "partial",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "gaps": [],
+  "notes": "All five runs read as sense; four sign values from context only."
+ }
+}

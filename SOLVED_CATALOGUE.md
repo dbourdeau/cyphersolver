@@ -135,6 +135,7 @@ but are not "solved" in the sense of the title.
 | 97 | **András Bay → Ferenc Rákóczi II**, MNL OL G15 Caps. D. Fasc. 81. 5 (DECODE R478; catalogue 51) | 8 Mar 1706 | 21 Sept 2026 | Read with Rákóczi's key DECODE R609 unchanged, found by scoring all 94 G15 keys; 413/414 groups in key, ~97.6% read as sense. [bay1706/](bay1706/) |
 | 98 | **Sir Simonds D'Ewes, private cipher log of his son's fits**, BL Harley MS 286 f. 61 (DECODE R7759; catalogue 130) | 1635–36 | 22 Sept 2026 | Read: D'Ewes's invented alphabet, key rebuilt by crib; Latin log of Clopton D'Ewes's convulsion fits from 3 Apr 1635, 96.5% of words read; trimmed last line and two faint phrases open | [`harley286/`](harley286/) · [write-up](https://dbourdeau.github.io/cyphersolver/harley286.html) |
 | 99 | **Unknown writer → Hesse-Kassel**, HStAM 4 d Nr. 1218 no. 49 (DECODE R4500; catalogue 153) | undated (1635–52) | 22 Sept 2026 | Read: digit-and-sign substitution rebuilt by annealing, confirmed by the contemporary gloss; ~97% read, nine signs open. [write-up](https://dbourdeau.github.io/cyphersolver/marburg1635.html) |
+| 100 | **Sir Edward Stafford (Paris) → [Walsingham]**, BL Harley MS 1582 ff. 65–66 (DECODE R8500; catalogue 119) | 20 Aug 1586 | 22 Sept 2026 | Read: five postscript runs with the letter key rebuilt from sibling decipherment (f. 72r) and glosses (f. 73r); Junius' son from Cambrai, credit with Balagny | [`harley1582r8500/`](harley1582r8500/) · [write-up](https://dbourdeau.github.io/cyphersolver/harley1582r8500.html) |
 
 ## 3. Explained: not a cipher, or nothing to read
 

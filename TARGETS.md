@@ -225,6 +225,8 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Sir Edward Stafford → [Walsingham], Paris, 20 Aug 1586**, catalogue 119, DECODE R8500: read 22 Sept 2026; five postscript runs, key rebuilt from siblings R8501/R8502. See [harley1582r8500/](harley1582r8500/) and the [write-up](https://dbourdeau.github.io/cyphersolver/harley1582r8500.html).
+
 - **Mondoucet → Charles IX, BnF fr. 16127: 13 July 1572, 4 Jan and 9 Sept 1573** (row 31; catalogue 1–2): read in part 2026-09-17/21. 13 July: key built by hand from the 16 July crib, text still only scattered words; 9 Sept has a verbatim Court decipherment; 4 Jan decoded ~60 % ciphertext-only, then found printed in Didier 1891 i 141–142. `gallica_sweep/mondoucet/`.
 
 - **The Hereditary Prince (Berlin) → Prince Frederik, 12 Mar 1796**, catalogue 218, DECODE R2239 (KHA Prins Willem V inv. 337). Read: word-list code rebuilt from R2237, body in Colenbrander's Gedenkstukken II no. 752, opening read, 21 Sept 2026; R2236 open. See [hereditary1796/](hereditary1796/).

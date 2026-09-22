@@ -59,3 +59,7 @@ None. ω ʒ ϖ is read as "and" from the gloss without splitting it into letters
 - [x] retry: all four runs re-read with the rebuilt values; all agree with the glosses
 
 Images are BL material behind the DECODE login: kept git-ignored in `img/`.
+
+## Correction (22 Sept 2026)
+
+The sibling letters R8501/R8502 (see [harley1582r8500/](../harley1582r8500/)) show that `6` is the letter e, not a null: run 1 is v-i-l-l-e-q-u-i-e-r with `6` as the e after the doubled l, and run 3 k-y-l-l with `6` = e ("kylle"). The readings are unchanged.

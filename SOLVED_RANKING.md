@@ -200,6 +200,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 | p96 | **András Bay → Ferenc Rákóczi II, Jászvásár, 8 Mar 1706**, MNL OL G15 D 81/5 (DECODE R478) | 1706 | 2 | 3 | 4 | 3 | 1 | 4 | **2.85** | D 2: archive key found by scoring 94 G15 keys, applied unchanged. H 3: Muscovite–Swedish peace feelers, Rákóczi's Moldavian intelligence. N 4: never deciphered. V 4: 413/414 groups in key, ~10 without sense. |
 | p97 | **Sir Simonds D'Ewes, cipher log of his son's fits, 1635–36**, BL Harley MS 286 f. 61 (DECODE R7759) | 1635–36 | 3 | 2 | 4 | 3 | 1 | 4 | **2.85** | D 3: private invented alphabet, no key in print, rebuilt by crib on recurring Latin words. H 2: a family record, the illness of an antiquary's son. N 4: never read. V 4: 96.5% of words, weekdays and moon phases check. |
 | p98 | **Unknown writer → Hesse-Kassel**, HStAM 4 d Nr. 1218 no. 49 (DECODE R4500) | 1635–52 | 3 | 2 | 3 | 3 | 1 | 3 | **2.55** | D 3: no key in the volume; rebuilt by annealing and hand fixes, checked on the gloss. H 2: anonymous report on imperial-Bavarian matters. N 3: only lines 1–4 glossed at the time. V 4: ~97 %, nine signs open. |
+| p99 | **Sir Edward Stafford (Paris) → [Walsingham], 20 Aug 1586**, BL Harley MS 1582 ff. 65–66 (DECODE R8500) | 1586 | 3 | 2 | 4 | 3 | 1 | 4 | **2.85** | D 3: letter key rebuilt from a sibling decipherment and glosses, 6 = e found. H 2: Junius, Cambrai and Balagny, a short postscript. N 4: never deciphered. V 4: all 61 signs read, four by context. |
 
 ## By single axis
 
@@ -520,3 +521,4 @@ Mantua to Nevers 1590 provisional score: 0.25×1 + 0.25×3 + 0.20×4 + 0.10×2 +
 Mondoucet provisional score: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×1 + 0.10×2 = **3.25** (p95): a hand-built key from the volume's own crib; the 1573 passage later found in Didier's edition.
 Bay to Rákóczi 1706 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **2.85** (p96): an unlinked archive key identified by scoring and applied unchanged, read end to end.
 D'Ewes's cipher log 1635–36 provisional score: 0.25×3 + 0.25×2 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **2.85** (p97): a private invented alphabet rebuilt by crib, read 96.5%.
+Stafford August 1586 provisional score: 0.25×3 + 0.25×2 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **2.85** (p99): a key rebuilt from sibling letters' decipherment, applied to an unread postscript.
