@@ -777,6 +777,11 @@ PAGES = [
          rights='British Library, via DECODE'),
     dict(slug='bergamo1585', label='Paris nunciature, Francia 18', year='1585&ndash;87', y=1586.2, place='Paris &rarr; Rome', st='solved', stt='read &mdash; R16 and R17 read here',
          title='The Paris nunciature to the Secretariat, Francia 18, 1585&ndash;87', blurb='Three ciphered despatches catalogued as partly decrypted (AAV Segr. Stato Francia 18, DECODE R15&ndash;R17). R15 had been read by George Lasry; R16&rsquo;s decryption on DECODE is a copy of R15&rsquo;s, so R16 was unread. Read here with Lasry&rsquo;s key and the nomenclator Meister printed in 1906: Guise refuses the King&rsquo;s sale of church property unless given Metz and money. R17 reads with Meister&rsquo;s key no. 40 of 1587: Lorraine, the Guises and the reiters.', quote='il Duca di Guisa mi ha mandato a dire', rights='Archivio Apostolico Vaticano, via DECODE'),
+    dict(slug='stafford1586', label='Stafford 1586', year='1586', y=1586.72, place='Paris &rarr; Walsingham', st='found', stt='read at the time',
+         title='Stafford to Walsingham, Paris 1586 &mdash; Read',
+         blurb='DECODE R8503, catalogued as a cipher letter of Sir Edward Stafford to an unknown recipient, is his holograph despatch from Paris to Sir Francis Walsingham of 19 September 1586 (BL Harley MS 1582 ff. 74&ndash;75). Its four short cipher runs were deciphered between the lines at the time. Re-read sign by sign here, they check exactly: a null <code>6</code>, homophones for <i>i</i>, <i>l</i> and <i>e</i>, and codes 47, 59 and 74 for Navarre, Cond&eacute; and Guise.',
+         quote='&ldquo;three &hellip; sworn and dispatched to kill him and the Prince of Cond&eacute;&rdquo;',
+         rights='Manuscript: British Library, Harley MS 1582 (images on DECODE, not reproduced)'),
     dict(slug='clair357', label='Clairambault 357, 1586', year='1586', y=1586.8, place='Angoumois &rarr; a League leader', st='found', stt='decipherment found',
          title='An anonymous figure cipher of October 1586 &mdash; the &ldquo;unread&rdquo; two thirds were deciphered in 1586, on the next leaf and between the lines',
          blurb='A League-period letter in two-digit figures, listed with a partial key and two thirds of its first page unread. The volume holds its own decipherment: folio 168 is a clear text of the cipher down to a cross mark, and from that cross to the end the decipherer wrote the plaintext between the lines. Tomokiyo&rsquo;s key agrees with the glosses (<em>Guienne</em>, <em>tres confident</em>, <em>Fum&eacute;</em>), which also give 87&nbsp;=&nbsp;e and the King of Navarre&rsquo;s sign. The letter: Fum&eacute;, vice-admiral of Guyenne and Navarre&rsquo;s Catholic confidant, keeps proposing a reconciliation between Navarre and the addressee, probably Guise, while Catherine de M&eacute;dicis negotiates.',
@@ -1576,6 +1581,7 @@ if __name__ == '__main__':
     (HERE / 'pages.json').write_text(json.dumps(meta, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     print('built', ', '.join(done))
 IMAGES['poyntz1527'] = None
+IMAGES['stafford1586'] = None
 IMAGES['poupet1522'] = ('poupet1522_lead.jpg', 'Passage A in cipher and in the 1522 decipherment: <em>Combien que je vouldroie mectre mon ame en gaige</em>', 'Biblioteca Nacional de Espa&ntilde;a, via DECODE R1187')
 IMAGES['santacroce1552'] = ('santacroce1552_lead.jpg', 'ASV Francia 3 f. 248r (DECODE R9), Paris, 14 December 1553: three cipher lines struck through, the same postscript written in clear beneath', 'Archivio Apostolico Vaticano, via DECODE R9')
 IMAGES['walsingham1585'] = ('walsingham1585_lead.jpg', 'Add MS 32657 f. 194, 10 September 1585: &ldquo;The 13 will in no sort neither be [signs] nor otherwise make [signs] a party&rdquo;, the decipherment above blotted out', 'British Library, Add MS 32657 f. 194 (via DECODE R4844)')
