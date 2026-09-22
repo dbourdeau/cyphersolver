@@ -1,9 +1,11 @@
 # Galeazzo Visconti, two cipher letters 1528-1529 (catalogue 179, DECODE R4230, R4256)
 
-Read in part: 1382 of 1477 cipher glyphs read as sense (93.6%, measured by script over the two token files).
-fr. 3096 f.91 is read (667/699 = 95.4%); fr. 3045 f.28 is read in part (715/778 = 91.9%). Key: partial (the
-letters are recovered; the numbered nomenclator is not). Written up 22 Sept 2026 as
-https://dbourdeau.github.io/cyphersolver/visconti1529.html.
+Read: 1408 of 1477 cipher glyphs read as sense (95.3%, measured by script over the two token files). Both letters
+are at or above the read bar: fr. 3096 f.91 667/699 = 95.4%; fr. 3045 f.28 741/778 = 95.2% after the push pass of
+22 Sept 2026. The margin is thin: without two judgement calls on fr. 3045 ("lorro" = loro, +2; "lui" with the
+unique dotted p taken as U from sense only, +3) that letter is 736/778 = 94.6% and the target would be read in part.
+Key: partial (the letters are recovered; the numbered nomenclator is not). Written up 22 Sept 2026 as
+https://dbourdeau.github.io/cyphersolver/visconti1529.html (upgraded from read in part the same day).
 
 ## Sources
 
@@ -57,25 +59,29 @@ Lasry's table as extended in ../visconti1528/NOTES.md, plus these rules found on
 
 ## Letter 1: fr. 3045 f.28, to Angelo Bolano, Alessandria, 15 Oct 1528
 
-Bolano. [42] Solo ve dà questa [rr]: Savona che è stata socorsa, per la tarditate dil mondo; dico che l[u]i(?) proveda
+Bolano. [42] Solo ve dà questa [rr]: Savona che è stata socorsa, per la tarditate dil mondo; dico che lui(!) proveda
 a tuto [qq], altramente tuto irà sempre male, de l'andata de Montigia per intrare in Savona; sep[a]r[at]ione(?) sono
-causa si questo capo è stato de la reputacione in fo[..](?) com[..]natale(?). Perduta, ogniuno voleva andare ale
-stancie, ch'era a disperare li coligati, quali poco mancano eserlo, et pur al(?) tuto tanto agio, dito, trovando
-espedienti che la cosa, che disperata, lo a(?) nocamento se harà cum Urbino; et se vederà reconciare almanco male cosa
-durisima. Tuti li aventureri partiti per loro poltronia et ingani de loro capitanei, quanto ci è uno soldo, il che
-causa che Italiani che le hano [rr] li denari de nansi sono in Puglia. Designati qua(?) [rr] se mandava in
-as[.]sedio(?) [..] havese(?) rimostrato la ruina [qq]; li lance che ne [.]convengano sono pochi, et serano assai tardi,
-e a(?) penso chi andrano paga gionti a [..]npiano(?); Dio scia come sono malo contenti per servicio di [ep], che [non
-s'ante](?) ogni mio mal tratamento, *[clear]* che sarà la fine de la mia, cum ricomandarme ala sua bona gra[tia]. Da
+causa si questo capo è stato de la reputacione in fo[u]ra, come batale perduta: ogniuno voleva andare ale stancie,
+ch'era a disperare li coligati, quali poco mancano eserlo, et pur al(?) tuto tanto agio, dito, trovando espedienti
+che la cosa, che disperata, lo a(?) nocamento se harà cum Urbino; et se vederà reconciare almanco male cosa durisima.
+Tuti li aventureri partiti per loro poltronia et ingani de loro capitanei, quanto(?) ci è(?) uno soldo, il che causa
+che Italiani che le hano [rr] li denari de nansi sono in Puglia. Designati qua(?) [rr] se mandava in as[.]sedio(?)
+[..] havese(?) rimostrato la ruina [qq]; li lance che ne [.]convengano sono pochi, et serano assai tardi, e a(?) penso
+chi andrano paga gionti a [..]npiano(?); Dio scia come sono malo contenti per servicio di [ep], che obsante (=
+obstante) ogni mio mal tratamento, *[clear]* che sarà la fine de la mia, cum ricomandarme ala sua bona gra[tia]. Da
 Alexandria ali XV de ottobre 1528.
 
-English: the only news is that Savona has been relieved, "for the slowness of the world"; someone should provide for
-everything [qq], or things will keep going badly. He mentions the expedition of "Montigia" (probably René de
-Montejean) to get into Savona, and says divisions have cost this command its reputation. Everyone wants winter
-quarters; the allies are near despair; measures with Urbino may patch things up. The adventurer infantry have left
-through their captains' cowardice and deceit, since hardly a soldo is paid; the advance money is "in Puglia" (with the
-wreck of Lautrec's army). The lances are few and will come late. God knows how discontented the men are in the
-service of [ep] (the King).
+(!) "lui": the dotted p occurs only here and takes U from sense alone, like m = X in "espedienti". Both "loro" in l.11-12 are
+written LO-R-R-O, with a doubled R; both R values standard.
+
+English: the only news is that Savona has been relieved, "for the slowness of the world"; he says someone should
+provide for everything [qq], or things will keep going badly. He mentions the expedition of "Montigia" (probably René
+de Montejean) to get into Savona, and says divisions have cost this command its reputation abroad: "like a lost
+battle, everyone wanted to go into winter quarters". The allies are near despair; measures with Urbino may patch
+things up. The adventurer infantry have left through their captains' cowardice and deceit, since hardly a soldo is
+paid; the advance money is "in Puglia" (with the wreck of Lautrec's army). The lances are few and will come late. God
+knows how discontented the men are in the service of [ep] (the King), "which, despite all my ill treatment, will be
+my end".
 
 ## Letter 2: fr. 3096 f.91r, to Francis I, pieve de Locate, 15 June 1529
 
@@ -106,15 +112,14 @@ defeat at Landriano (21 June 1529).
 
 | letter | glyphs | read as sense | sense open | unread | code |
 |---|---|---|---|---|---|
-| fr. 3045 f.28 (R4230) | 778 | 715 (91.9%) | 45 | 5 | 13 |
+| fr. 3045 f.28 (R4230) | 778 | 741 (95.2%) | 19 | 5 | 13 |
 | fr. 3096 f.91 (R4256) | 699 | 667 (95.4%) | 24 | 4 | 4 |
-| both | 1477 | 1382 (93.6%) | 69 | 9 | 17 |
+| both | 1477 | 1408 (95.3%) | 43 | 9 | 17 |
 
 ## Remaining gaps
-- fr. 3045 l.5 "in fora com[u]nal" (16 glyphs) - blocker: too-short; values known, sense unresolved, the sign combination occurs only here; two retry passes
-- fr. 3045 l.15 "..havese" stretch - blocker: too-short; values known, the start does not parse, occurs only here; two retry passes
-- fr. 3045 l.18 place name "[..]npiano" ("in Piano"?) - blocker: too-short; one-off place name, not identified
-- fr. 3045 l.20 "onsante" - blocker: too-short; values known, no Italian fits, occurs only here
+- fr. 3045 l.18 place name "[ιn]npiano" (7 glyphs) - blocker: too-short; one-off place name; enhanced crop reads "ι n f o ψ L y n"; Serravalle, Novi, Gavi, Ovada, Acqui, Castelpiano and the Scrivia plain checked, none fits
+- fr. 3045 l.15 "as[.]sedio ... havese" stretch (about 9 glyphs) - blocker: too-short; values known, the start does not parse, occurs only here; accented á seen on enhancement, "assedio" would need a transposition
+- fr. 3045 scattered single signs: l.4 "sep[a]r", l.5 the u of "fo[u]ra", l.8 "pur al", l.9 "lo a", l.16 stray ∂, l.17 "a penso" - blocker: too-short; each a one-off value or sense in a secure context
 - fr. 3096 L12 "[.]sante ... cherì" and L18 "se terrò" stretches - blocker: too-short; values known, the phrases do not resolve and occur only here
 - codes [48], [rr], [qq], [42], [ep] - blocker: no-key-material; numbered nomenclator, no key list survives in Lasry, Tomokiyo or the siblings
 
@@ -125,3 +130,7 @@ defeat at Landriano (21 June 1529).
 - [x] print: Tomokiyo GL.htm (key only); web search for an edition of either letter, 22 Sept 2026: none found
 - [x] key-rebuild: key extended (bare Λ doubling mark, far = CHE/NTO, ρ = F, θ = D and G, q = H and F, y = N/B)
 - [x] retry: two passes on fr. 3045 (2-3x crops of l.5, l.15, l.18, l.20; then the sibling rules): 708 -> 715 glyphs
+- [x] retry (push pass, 22 Sept 2026, fr3045_f28_final.md "## Push pass"): sibling value y = B and phrase reading: "come batale perduta, ogniuno voleva andare ale stancie" (l.5-6), "che obsante ogni mio mal tratamento" (l.20), "lorro" = loro (l.11-12), "dico che lui proveda" (l.2, dotted p = U from sense only, flagged): 715 -> 741 of 778 (95.2%)
+- [x] enhancement: autocontrast and unsharp mask at 1.6x on l.2, 4, 15, 16, 17, 18: á in l.15, l.18 letters "ι n f o ψ L y n"; no reading changed
+- [x] print (second search, 22 Sept 2026): web search for the Bolano letters, the infantry pay and Savona 1528 context (Doria's defection, Saint-Pol at Alessandria); no edition, nothing pins a reading
+- [x] Lombard forms: fora = "in fuora", obsante = obstante with T dropped (as in sep[a]r[at]ione), lorro, nansi = dinanzi; "ognisanti" and several place names tested and rejected

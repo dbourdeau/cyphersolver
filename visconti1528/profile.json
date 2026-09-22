@@ -145,41 +145,47 @@
    "what": "Siblings fr. 3045 f.28 and fr. 3096 f.91r opened: key confirmed ('mal tratamento'); crossed sign = figure 4, so 48/4θ/4r are numbered codes; rr, qq recur as groups; no key for the codes.",
    "result": "partial",
    "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "Third pass with the visconti1529 sibling rules on every open stretch (tokens.txt, count_tokens.py): fuo = fu, r09 qq and r21 rr (overbarred) are codes, v07 spurious A removed; enhancement (autocontrast, unsharp, threshold, 2x) shows the v03 middle legible with code 4r. 1247/1337 = 93.3%.",
+   "result": "partial",
+   "date": "2026-09-22"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "fraction_read": 0.927,
+  "fraction_read": 0.933,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Letter text read; the numbered nomenclator codes, a recurring final sign pair, a few one-off signs and two illegible stretches open.",
+  "notes": "Letter text read in part; the numbered nomenclator codes (4r also in v03, rr in r21, qq in r09), a recurring final sign pair, one-off signs and one blotted spot (v01) open.",
   "key": "partial",
   "codes_open": {
    "open": 6,
    "total": 7,
-   "tokens_open": 8
+   "tokens_open": 12
   },
   "gaps": [
    {
-    "item": "nomenclator codes 48 (x2), 4θ, 4r, rr, qq, peu (x2), rex context",
+    "item": "nomenclator codes 48 (x2), 4θ, 4r (r25, v03), rr (r21), qq (r09), peu (x2)",
     "blocker": "no-key-material",
     "detail": "numbered code; no key in Lasry, Tomokiyo or the siblings"
    },
    {
-    "item": "final sign pair of so../lo../do.. (r10-12); one-off signs [Y r] r12, [mur·][ω] r16, [v b] r30, Π v08-09",
+    "item": "final sign pair of so../lo../do.. (r10-12); one-off signs and stretches r07, r09, r12, r16, r21, r27, r30, v07, v08, v09",
     "blocker": "too-short",
-    "detail": "occur only here; no sibling occurrence"
+    "detail": "occur only here; no sibling occurrence; third-pass readings needed two or more slips"
    },
    {
-    "item": "v03 middle and v06 small signs",
+    "item": "v01 blotted ψ̄ and ſt ligature",
     "blocker": "illegible",
-    "detail": "two zoom passes on the Gallica native"
+    "detail": "solid ink blot, unchanged after enhancement"
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "visconti1528/final.md glyph totals: 1240 of 1338 cipher glyphs read with confidence (glyph counts by eye; 45 read with sense open and 53 unread counted as unread)"
+  "fraction_read_source": "visconti1528/tokens.txt counted by count_tokens.py (third pass): 1247 of 1337 cipher glyphs read as sense; 53 sense open, 21 unread and 16 code glyphs counted as unread"
  }
 }

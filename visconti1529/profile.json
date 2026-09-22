@@ -31,7 +31,7 @@
     "image_quality": "fair",
     "notes": "798 = tokens in the token file (_check_profile --measure), code groups counted per written glyph plus annotation tokens; the reading counts 778 cipher glyphs (fr3045_f28_final.md, by script)."
    },
-   "read": "read in part"
+   "read": "read"
   },
   {
    "id": "fr3096_f91",
@@ -193,17 +193,23 @@
    "what": "Web search for an edition of either letter: none.",
    "result": "failed",
    "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "Push pass on fr. 3045 (fr3045_f28_final.md '## Push pass'): sibling y = B and phrase reading give 'come batale perduta, ogniuno voleva andare ale stancie' (l.5-6), 'che obsante ogni mio mal tratamento' (l.20), loro written LO-R-R-O, 'dico che lui proveda' (dotted p = U from sense only, flagged); enhancement and a second web search changed nothing else. 715 -> 741/778 (95.2%); target 1408/1477 (95.3%), read by a thin margin (94.6% on fr. 3045 without the two judgement calls).",
+   "result": "worked",
+   "date": "2026-09-22"
   }
  ],
  "outcome": {
-  "class": "read in part",
-  "fraction_read": 0.936,
+  "class": "read",
+  "fraction_read": 0.953,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "fr. 3096 read, fr. 3045 read in part; the numbered codes and a few one-off stretches open.",
+  "notes": "Both letters read: fr. 3096 95.4%, fr. 3045 95.2% after the push pass (94.6% without two judgement calls: doubled-R loro, dotted p = U in lui from sense only). Numbered codes and a few one-off stretches open.",
   "key": "partial",
   "codes_open": {
    "open": 5,
@@ -212,9 +218,14 @@
   },
   "gaps": [
    {
-    "item": "fr. 3045 l.5 'in fora com[u]nal' (16 glyphs), l.15, l.18 place name, l.20 'onsante'",
+    "item": "fr. 3045 l.15 'as[.]sedio ... havese' stretch and l.18 place name '[ιn]npiano'",
     "blocker": "too-short",
-    "detail": "values known, sense unresolved, combinations occur only here; two retry passes"
+    "detail": "values known, occur only here; place names near Alessandria checked, none fits; three passes and enhancement"
+   },
+   {
+    "item": "fr. 3045 scattered single signs (l.4, l.5, l.8, l.9, l.16, l.17)",
+    "blocker": "too-short",
+    "detail": "one-off values or sense in secure contexts"
    },
    {
     "item": "fr. 3096 L12 and L18 stretches",
@@ -228,6 +239,6 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "visconti1529/fr3045_f28_final.md and fr3096_f91_final.md, by script over the token files: 715/778 + 667/699 = 1382/1477 cipher glyphs read as sense; sense-open, unread and code glyphs counted as unread"
+  "fraction_read_source": "visconti1529/fr3045_f28_final.md (push pass) and fr3096_f91_final.md, by script over the token files: 741/778 + 667/699 = 1408/1477 cipher glyphs read as sense; sense-open, unread and code glyphs counted as unread"
  }
 }

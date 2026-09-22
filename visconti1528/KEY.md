@@ -40,3 +40,9 @@ Readings so far (r = recto line):
 - r14: "li de la Signoria erano tropo ... che se"
 - r15-16: "... de andare a Milano. Rex il che ... proveditore"
 - closing (clear): "... fin de questa ma[teria], pregando nostro S[ignor] Dio dona a V.S. bona e longa vitta. Da al Campo a Landriano ali XXX d'aust"
+
+Third pass additions (sibling rules, see final.md):
+- "fuo" (qF s n) = Lombard "fu", as in fr. 3096 "che fuo", "fuose".
+- The overlined `q q` in r09 is the code group [qq] of fr. 3045. It is followed by 5 n M S d = "volse".
+- ρ = F (fr. 3096 rule); it occurs in v07 "sfu[m]o".
+- A bare Λ stands before k in v09 "spire[Λ]rà" (doubling mark, per fr. 3096).

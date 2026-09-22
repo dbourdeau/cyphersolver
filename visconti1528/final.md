@@ -65,3 +65,56 @@ These are glyph counts made by eye: recto from the two reading files (not re-cou
 
 ## English summary
 Galeazzo Visconti writes from the camp at Landriano on 30 August 1528, in the aftermath of a council of war held at the lodging of a commander whose name is in code [X8]. The question was whether the army should march on Milan or on Pavia, and Visconti had argued for Milan. He says a scheme of Francesco's, whispered to the Venetian (Signoria) officers, was meant to swing the vote, and that the Duke of Urbino, the Venetian proveditor and most of the captains then favoured Pavia. Visconti, who was usually asked to speak first, was this time called on after Francesco and the others. When he made the case for Milan he was interrupted, first by Francesco and then by others he is ashamed to name, and in the end he was let speak only with difficulty. He warns that if things go on this way the result will be "a stew of bad digestion". He says he sees much but can do little to remedy it, and asks Montmorency to see to matters for all the captains, in the service of the King (the code "peu"). He reports that the Duke of Urbino and the proveditor have said the army will go to cut the road between Milan and Pavia, and he will write the rest later. The closing, in clear, sends good wishes and is dated from the camp at Landriano, 30 August.
+
+## Third pass (sibling rules)
+
+Token file: `tokens.txt` (all 39 cipher lines). Counts come from `count_tokens.py`. The second-pass state is kept in the same format, and it counts to 1338 glyphs, 1235 read, 54 sense open, 39 unread and 10 code.
+**Baseline check.** The second-pass table says 1240 read. The token file gives 1235. The difference of 5 has two causes:
+- `peu` ×2 is counted as code here, but the table counted it as read (2 glyphs).
+- The verso per-line "sense open" cells add up to 25, but the table's total says 22 (3 glyphs). The table's verso total was wrong.
+
+The X8, ǂθ and ǂr groups, which the table counted as unread, are counted here as code.
+
+Changes:
+1. **r01, r12 "fuo" is read as sense** (+6). It is the Lombard form of "fu". The sibling fr. 3096 has "che fuo" and "se fuose".
+2. **The blotted A\* signs in r05 "duca", r10 "et" and r12 "quest[a]" are read** (+3). Each one is a retouch over a letter that the word fixes.
+3. **The YB in r03 "Miilano" is read as I** (+1). It is a written dittography inside a secure word.
+4. **r09 `q q` is the overlined code group [qq]** (2 glyphs, now code). This is the same group as in fr. 3045 l.2 and l.16. The image shows `5 n` after it, not `s n`, so the text is **[qq] volse [X8] che il duca d'Urbino tirase ...**.
+5. **v07 has no A between "et" and "io".** The image shows `d a · Y n · far`, so the reading is "et io che se andarà". One spurious token is removed, which brings the total to 1337.
+6. **v08: + = A in "camino" and y = N in "don-" are read** (+2). Both words are secure.
+7. **v07 ρ = F** under the sibling rule: `+ S ρ s m n` = "o sfu[m]o". The sense is still open.
+8. **v09: the "Π" of "spire[Π]rà" is a bare Λ before k.** Under the doubling rule it gives "spire-rrà". That is not a known form, so the sense stays open. The v08 Π in "traversat[Π]" is a true Π shape, not Λ. It is still unread.
+9. **r10-r12 `y Y'`:** the values I-I ("soi / loi / doi") are now entered as sense open, not unread. "soi" and "doi" fit Lombard, but "loi" does not settle it.
+
+Checked with no change:
+- **r03 "la mia":** the sign read as E in "era" is the rising-tail E, not a bare Λ.
+- **r07 "asc-i-ilati":** there is no Λ and no 'far' in it.
+- **r09 "cicsai pui":** it has no Λ, and "l Y l" are plain ʟ ψ ʟ signs.
+- **v03 middle:** the Λ-shaped signs there are E, as in "per" and "me" on the same line.
+- **v06 "em":** it may be a clear abbreviation.
+- **'far' is CHE at every one of its places here.** NTO fits none of them.
+- **r12 [Y r], r16 [mur·][ω], r21 [r r ᵽ], r25 [ǂr], r27 "+", r30 [v b], v01 [ψ̄]…[ſt] and v06 w, y:** these were not resolved.
+
+| | glyphs | read as sense | sense open | unread | code |
+|---|---|---|---|---|---|
+| second pass (token file) | 1338 | 1235 (92.3%) | 54 | 39 | 10 |
+| third pass | 1337 | **1247 (93.3%)** | 53 | 25 | 12 |
+
+The letter is below the 95% bar. That bar would need 1271 glyphs read.
+
+### Third pass, addendum: enhancement and native-reader review
+
+I enhanced the open spots with autocontrast, unsharp mask and 2x zoom, working on the line crops taken from the deskewed natives (scratchpad c1/enh1.png).
+- **r21 `r r` has an overbar.** It is the sibling code group **[rr]**, the French agent of fr. 3096. That gives "poi a me [rr] [ᵽ] acuvante se". The 2 glyphs move from unread to code. The ᵽ and "acuvante" stay open.
+- **Still illegible after enhancement:**
+  - v01: the blotted ψ̄ is a solid blob, and ſt is a ligature with a flourish.
+  - v03 middle: `Λ m l s S o 7 d n m m ı t ǂ ï r`. The strokes are clear, but they give no word.
+  - The following were not resolved either: r07 ʃu, r16 [m u r·][ω], r27 +, r30 [v b], v06 w and y, and v09 ▮.
+- **Readings tested and not adopted** (the rule was at most one scribal slip per word, with every glyph supporting the reading):
+  - r07 "asc-i-ilati": asociati, aconsigliati, radunati and ascoltati each need two or more changes.
+  - r09 "cicsai pui": "(as)sai più" leaves "cic" (3 glyphs) unexplained.
+  - v09: "inspirerà" would need the Λ to be a spurious doubling and the first Y to be dropped, which is two slips.
+  - v07: "sfumo" is not a sense-bearing verb here.
+  - r10-12: "soi / doi" are Lombard forms, but "loi" is not secure, so all three stay sense open.
+
+Final counts: 1337 glyphs, **1247 read (93.3%)**, 53 sense open, 23 unread, 14 code.

@@ -1,6 +1,7 @@
 # Galeazzo Visconti to Anne de Montmorency, Campo a Landriano, 30 Aug 1528 (catalogue 177)
 
-Read in part (92.7% of cipher glyphs read with confidence, measured by glyph count in final.md). Key: partial
+Read in part (1247 of 1337 cipher glyphs read as sense, 93.3%, measured by count_tokens.py over tokens.txt, third
+pass 22 Sept 2026). Key: partial
 (the letters are recovered; the numbered nomenclator is not). Written up 22 Sept 2026 as
 https://dbourdeau.github.io/cyphersolver/visconti1528.html.
 
@@ -87,10 +88,23 @@ letter was read: a bare Λ is a doubling mark (que[Λ]la = quella, a[Λ]sai = as
 as well as CHE (altrotanto, mancamento, quanto). They have not been re-applied to this letter's open stretches
 (so../lo../do.., asciilati, ascicsai pui, acuvante, the v03 and v07 runs). The counts above are unchanged.
 
+## Third pass (22 Sept 2026)
+
+final.md "## Third pass (sibling rules)" and its addendum; token file tokens.txt, counted by count_tokens.py.
+- "fuo" (r01, r12) = Lombard *fu*, as in fr. 3096 "che fuo", "fuose"; blotted retouches in r05, r10, r12 read.
+- r09 overlined `q q` = code [qq] (fr. 3045 l.2, l.16), followed by "volse": "[qq] volse [48] che il duca d'Urbino tirase".
+- r21 `r r` is overbarred: code [rr], the French agent of fr. 3096 ("poi a me [rr] [ᵽ] acuvante se").
+- v07 has no A between "et" and "io": "et io che se andarà" (1 token removed, total 1337).
+- v03 middle, enhanced on the Gallica native (autocontrast, unsharp mask, threshold, 2x): the signs are sharp and
+  legible, "m ı t ǂ ï r"; the ǂ-r pair is the numbered code 4r seen in r25. The v03 gap is a code, not illegible.
+- 'far' is CHE at every place here (NTO fits none); several readings tested and not adopted (final.md).
+
+Counts: 1337 glyphs; 1247 read as sense (93.3%); 53 sense open; 21 unread; 16 code. Below the 95% bar (1271 needed).
+
 ## Remaining gaps
-- nomenclator codes 4θ, 4r, rr, qq (48 probably Saint-Pol and peu probably the King, from the siblings, not proved) - blocker: no-key-material; numbered code, no key list survives, both siblings read in full without resolving them
-- the final sign pair of so../lo../do.. (r10-12) and the one-off signs [Y r] r12, [mur·][ω] r16, [v b] r30, Π v08-09 - blocker: too-short; they occur only here, the siblings show no occurrence to test a value on
-- v03 middle and v06 small signs - blocker: illegible; two zoom passes on the Gallica native gave no stable shape
+- nomenclator codes 48 (x2), 4θ, 4r (r25 and v03), rr (r21), qq (r09), peu (x2) (48 probably Saint-Pol and peu probably the King, from the siblings, not proved) - blocker: no-key-material; numbered code, no key list survives, both siblings read in full without resolving them
+- the final sign pair of so../lo../do.. (r10-12, values I-I, "soi/doi" Lombard, "loi" not secure), the one-off signs [Y r] r12, [mur·][ω] r16, ᵽ and "acuvante" r21, + r27, [v b] r30, Π v08, the v07 "sfu[m]o" and v09 "spire[Λ]rà" stretches, r07 "asciilati", r09 "cicsai pui" - blocker: too-short; they occur only here, the siblings show no occurrence to test a value on, readings tested in the third pass need two or more slips
+- v01 blotted ψ̄ and the ſt ligature - blocker: illegible; a solid ink blot and a flourished ligature, unchanged after enhancement
 
 ## Escalation
 - [x] siblings: both siblings then read in full (fr3045_f28_reading.md, fr3096_f91_reading.md): 48 = Saint-Pol and peu = King probable, rr a French agent; fr. 3045 f.28 (Visconti to Angelo Bolano, Alessandria 15 Oct 1528, btv1b9060156p view 54) and fr. 3096 f.91r (Visconti to Francis I, pieve de Locate 15 June 1529, btv1b9060015d view 94) opened; key confirmed on both ("mal tratamento", "che disperat-"); the crossed sign is the figure 4, so 48/4θ/4r are numbered codes; rr and qq recur as groups; peu and the one-off signs do not occur
@@ -99,3 +113,5 @@ as well as CHE (altrotanto, mancamento, quanto). They have not been re-applied t
 - [x] print: Tomokiyo GL.htm (key only), web search: no edition of the letter
 - [x] key-rebuild: key extended on this letter (ne=S, me=L, y=N/B, crossed psi read with y, theta=G, p=M, far=CHE, fu=FU, q=H/F by shape, three E forms, word-divider strokes identified)
 - [x] retry: second pass over every open spot and the whole verso glyph by glyph (final.md)
+- [x] retry (third pass, 22 Sept 2026): sibling rules from visconti1529 re-applied to every open stretch (doubling Λ, far = NTO, ρ = F, fuo = fu); r09 qq and r21 rr identified as codes; 1240 (by eye) / 1235 (token file) -> 1247 of 1337
+- [x] enhancement: autocontrast, unsharp mask, threshold and 2x zoom on the Gallica native crops of r21, v01, v03, v06, v07, v09: r21 rr overbarred; v03 signs legible and the ǂ-r pair is code 4r; only the v01 blot stays illegible

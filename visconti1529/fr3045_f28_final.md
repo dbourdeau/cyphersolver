@@ -94,3 +94,45 @@ The sibling gives three rules: a bare Λ doubles the next letter; 'far' can stan
   - They stay open.
 
 **New counts:** 778 glyphs; 715 read as sense (91.9%); 45 sense open; 5 unread; 13 code. Excluding the code glyphs, 715 of 765 = 93.5%. **Still below 95%.**
+
+## Push pass
+This pass tried the sibling value y=B and read the stretches as phrases. Crops r5a, r5b, r18 and r20 (scratchpad b1/) were re-checked.
+- **l.5 "... reputacione in fo[.]ra, come batale / perduta".** Earlier passes stopped at "com[..]natale". Reading `l n p u` as COME
+  (u=E, as in "come" at l.19) and `y 7 a L me d` with y=B gives **batale**, which continues into l.6: "come batale perduta, ogniuno
+  voleva andare ale stancie" ("like a lost battle, everyone wanted to go into winter quarters"). `q n _ k 7` = **fora** (q=F),
+  the Lombard "in fuora". The one `u` inside it (R elsewhere) stays sense-open. +14.
+- **l.20 "che obsante ogni mio mal tratamento".** `n y ne 7 y a d` read with the first y=B gives O-B-S-A-N-T-E = *obstante*,
+  with the T dropped (a T is dropped in l.4 "sep[a]r[at]ione" too). "che, obstante ogni mio mal tratamento, sarà la fine de la mia"
+  ("which, despite all my ill treatment, will be my end"). The old reading "non s'ante" goes. +7.
+- **l.11/12 "loro" written LO-R-R-O.** Both R values are the standard ones, and the word is sense. It is a spelling with a doubled R,
+  not an open value. +2.
+- **l.2 "dico che lui proveda a tuto".** The dotted p occurs once and takes U from sense, like m=X in "espedienti". +3.
+- **Tested and not adopted:**
+  - l.18 "[ιn]npiano". At 2.2x the first sign may be a dotted ι followed by n. Several readings were tried: "a inpiano"
+    (the plain), Campiano, Castelpiano, Serravalle, Novi, Gavi, Ovada and Acqui. None fits the signs. The stretch stays open.
+  - l.15 "as[a]sedio ... n i i r havese". The stray sign is not the bare-Λ shape. No reading parses. The stretch stays open.
+  - "ognisanti" for l.20 does not fit the signs, since there is no G/θ.
+
+**Counts:** 778 glyphs; **741 read as sense (95.2%)**; 19 sense open; 5 unread; 13 code. Excluding the code glyphs, 741 of 765 =
+96.9%. **The 95% bar is reached**, with 2 glyphs to spare.
+
+Remaining open: l.5 u in "fo[u]ra" (1); l.4 "sep[a]r" (1); l.8 "pur al" and l.9 "lo a" (4); l.12-13 "quanto ci è" and the rest
+of l.15 (about 9); l.16 stray ∂ (1); l.17 "a penso" (1); l.18 place name (7). The cause of each is in the table above. The codes
+[42], [rr], [qq] and [ep] have no key, which is an outside blocker.
+
+### Push pass, follow-up: enhancement and web search
+- **Enhanced crops.** Lines 2, 4, 15, 16, 17 and 18 were given an autocontrast stretch and an unsharp mask (radius 3, 200%) at 1.6x.
+  They are in scratchpad c2/ as e02..e18_*.png.
+  - **l.15:** the unread sign in "in as[.]sedio" carries an accent: á. The sibling reads the dotted Λ as E, and that value would
+    give A-S-E-S-D-I-O, which is *assedio* with two letters transposed. The glyphs do not support this directly, so it is not
+    adopted. The following "∂ ψ n f ψ ψ k q" has a ψ-plus-w form in second place. It still does not parse.
+  - **l.18:** the enhanced crop reads "…gionti a | ι n f o ψ L y n": a dotted ι, then n, and the f is clearly a letter, not a
+    divider. The line gives I-O-N-P-I-A-N-O, or ?-N-P-I-A-N-O if ιn is one sign. No place near Alessandria fits: Serravalle, Novi,
+    Gavi, Ovada, Acqui, Castelpiano and the Scrivia plain were all checked. The stretch stays open.
+  - **l.2, l.4, l.16, l.17:** no new shape evidence. Nothing changed.
+- **Web search.**
+  - Nothing was found that names where the infantry were paid, or any printed edition of Visconti's letters to Bolano.
+  - The context was confirmed: Doria went over to the Emperor, Savona was contested, and Saint-Pol, based at Alessandria, still
+    aimed at Genoa. None of this pins a reading.
+- **Counts: unchanged.** 741 of 778 read as sense (95.2%). Without the two judgement calls ("lorro" = loro, +2; "lui" with the
+  unique dotted p, +3), the count is 736 of 778 (94.6%).
