@@ -161,6 +161,11 @@ PAGES = [
          blurb='DECODE R9251 is Patrick Forbes&rsquo;s copy of only the ciphered words of seven letters of Elizabeth&rsquo;s ambassador in France. No key is on DECODE, but the Cecil&ndash;Norris cipher that Tomokiyo reconstructed from a decipherment printed by mistake in <em>Cabala</em> (1663) reads the siblings: demaund, reason, ruin, remain, Master Stewarde, as the Calendar of State Papers summarises them. A shuffle control (8 word hits against at most 3 in 1,000 shuffles) confirms the table is Norris&rsquo;s. The target letter of 9 March 1568 has three items: the French King&rsquo;s name sign, a name sign probably for the Queen of Scots, and a four-sign word not read.',
          quote='&ldquo;otherwise Norris much doubts the ruin of the Prince of Cond&eacute; and the Admiral&rdquo;',
          rights='British Library, Add MS 4136, via DECODE; one detail reproduced'),
+    dict(slug='kaa4591b', label='&#321;aski, King John, Wardein 1531&ndash;37', year='1531&ndash;1537', y=1534, place='&#321;ask, Hungary, Wardein &rarr; Munich', st='partial', stt='read in part',
+         title='&#321;aski, King John and a Bavarian at Wardein: three more ciphers in the Munich key volume',
+         blurb='Three ciphertexts catalogued on DECODE as one &ldquo;unknown recipient&rdquo; entry are three letters to the Bavarian court from King John Z&aacute;polya&rsquo;s circle. &#321;aski&rsquo;s letter of September 1531 reads 99.5% in his own cipher with e and r swapped; a Latin letter of April 1533 on the diet of Pressburg and Ferdinand&rsquo;s secret peace suit reads 95.3%; a German report from Wardein of March 1537 on the Turkish arming reads 91.3%, with two homophonic keys rebuilt from their glosses.',
+         quote='&ldquo;numquam pacem uel inducias consequuturum nisi cedat regno Hungarie&rdquo; (&#321;aski, 1531)',
+         rights='Manuscript: Bayerisches Hauptstaatsarchiv, Munich, via DECODE'),
     dict(slug='kaa4591', label='Bavarian key volume 1529&ndash;83', year='1529&ndash;1583', y=1556, place='Buda, Krak&oacute;w, Pressburg &rarr; Munich', st='solved', stt='read',
          title='The Bavarian key volume: fourteen ciphertexts in Kurbayern &Auml;u&szlig;eres Archiv 4591',
          blurb='Fourteen ciphertexts bound in the Munich chancery&rsquo;s key volume, catalogued on DECODE as one &ldquo;unknown sender&rdquo; group, are letters in at least six systems. The Fulda protest of 1576 reads with the key five leaves earlier; &#321;aski&rsquo;s letters of 1529&ndash;30 read from a key rebuilt from their glosses; seven German reports of 1534&ndash;35 on Hungary, the Turks and France are broken and read in part, one from ciphertext alone with a new sixteenth-century German model.',
@@ -1040,6 +1045,7 @@ IMAGES['charlesixducroc'] = ('charlesixducroc_lead.jpg', 'Charles IX to Philiber
 IMAGES['vanreede1792'] = ('vanreede1792_lead.jpg', 'Van Reede to William V, 4 February 1792: the figures with the contemporary pencil gloss &mdash; ci tro n sur le(s) &hellip; demi', 'Koninklijk Huisarchief, The Hague, via DECODE R1057')
 IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch of 29 December 1787, first page: the gloss dites &hellip; avant hier over the first groups, 2750 &hellip; 2578 3350', 'Nationaal Archief, The Hague, via DECODE R1026')
 IMAGES['kaa4591'] = None
+IMAGES['kaa4591b'] = None
 IMAGES['r1874'] = None
 IMAGES['r1875'] = None
 IMAGES['haga1620'] = ('haga1620_lead.jpg', 'R2113 p.2, Constantinople 31 March 1620: clear Dutch with the cipher spans inline, (44) ende (45) arbeiden bij (4) om tyt te winnen', 'Nationaal Archief, The Hague, via DECODE R2113')
