@@ -58,7 +58,7 @@ The full working reading and the token count are in `reading.md` (829 of 945 tok
 
 - f. 92r l2 (~11 tokens), l4 (~8), l5 tail (~10), l7 (~6), l8 middle (~26): stretches that lose phase; writer's slips, not fixed by the 3/9, 0/8 or 7/8 look-alike alternatives in the retry pass - blocker: illegible; no other copy of the letter
 - f. 92r l3b (~12): figures under an ink blot after "buoni" - blocker: illegible; one image only
-- f. 92v three signs ({0Δ}, {4-sign}, {9}) not on the key sheet as read, plus "la mondezza a me" (~6) - blocker: open-codes; each occurs once, not on fr. 3995 f. 64
+- f. 92v "la mondezza a me" (~3) - blocker: illegible; digits as written give no sense (the three signs {0Δ}, {4-sign}, {9} there are nulls: Δ, crossed ♀ and hooked ρ are on the key's "Seguitano le Nulle" list, f. 64 upper right)
 - f. 93r l2 (~10), l4 (~14), l5 (~10): stretches that do not read ("-za per me", "ho manc[a]to", "sin h[ora]", "darne c[..] parte") - blocker: illegible; retry pass re-read them at 3x without a fit
 - f. 93r l8 (~3): looped, dotted code group before "comune nemico" - blocker: illegible; figures uncertain
 
