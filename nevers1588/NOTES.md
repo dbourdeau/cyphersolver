@@ -85,7 +85,7 @@ Guise's threat in reply.
 - R01 name: letters read (f-o-u-g/j-e-r-e-s), the person not identified. Blocker: none from outside;
   identification is a history question, not a cipher gap.
 - R18 one word "mes?a?es": read as "messages" if the unique sign 1r = g. Blocker: too-short (the sign occurs once).
-- Code numbers 10, 28, 49, 70 (and 12, 9 by context only): open-codes; the informant's number list is not in
+- Code numbers 28, 49, 70 (and 12, 9 by context only): open-codes (10 = Épernon, glossed on f. 139, see `r3708/`); the informant's number list is not in
   fr. 3995 as far as checked, and f. 131/133 gloss only 11 and 24.
 
 ## Escalation
