@@ -1,5 +1,8 @@
 # Same-key plaintext pairs
 
+> **Superseded 22 Sept 2026.** The R1944/R1946 matches below were not confirmed by full transcriptions
+> (R1944_alignment.tsv, R1946_alignment.tsv). Only 222= niet stands. See NOTES.md.
+
 ## R1945 — Bourdeaux, Berlin, 3 February 1801
 
 DECODE marks this record decrypted and supplies three pages of numerical

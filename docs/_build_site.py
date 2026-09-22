@@ -1026,6 +1026,11 @@ PAGES = [
          blurb='DECODE R10198: a letter of the Controller General of Finances on the Geertruidenberg talks, with French prose alternating with lines of a numerical code and 22 lines of code alone. Four alignment models show the French is not the decipherment of the figures. The 471-group code has no key on DECODE or in print.',
          quote='on veut la paix, ou la veut seure, mais on veut encore menager l&rsquo;honneur de son gouvernement',
          rights='Via DECODE R10198; not in the public domain'),
+    dict(slug='toulon1803', label='Toulon 1803', year='1803', y=1803.6, place='The Hague &rarr; St Petersburg', st='stuck', stt='key not digitised',
+         title='Toulon to Van Hogendorp, 30 July 1803 &mdash; the code identified, its book offline',
+         blurb='DECODE R2034: a one-page letter from the Batavian foreign ministry&rsquo;s cipher clerk to the envoy in Russia, in Croiset&rsquo;s six-series Correspondentiecijffer, which survives only as a physical booklet (NA 2.21.045/34313). The three decrypted 1801 Berlin dispatches in the same code were transcribed and aligned: they fix 3 of its 67 words, and nine values claimed earlier are withdrawn. R1035, R1038 and R1891 do not fit.',
+         quote='394 handen &middot; 58 brengen &middot; 222&#773; niet',
+         rights='Nationaal Archief, The Hague, via DECODE R2034'),
     dict(slug='spaen1808', label='Van Spaen 1808', year='1808', y=1808.0, place='D&uuml;sseldorf &rarr; The Hague', st='stuck', stt='key not found',
          title='Van Spaen to Van der Goes, 14&ndash;15 January 1808 &mdash; transcribed, no key survives online',
          blurb='DECODE R1941 holds a letter and its annex in a plain numerical code reaching at least 1339: 303 groups, 222 distinct. The archive inventory places it with the commissioners for the districts ceded around Zevenaar, writing from D&uuml;sseldorf in the Grand Duchy of Berg. No key is on DECODE, Croiset&rsquo;s 1803 book does not fit, and Colenbrander does not print it.',
@@ -1741,3 +1746,4 @@ IMAGES['wotton1585'] = ('wotton1585_lead.jpg', 'Add MS 32657 f. 167: the draft o
 IMAGES['randolph1570'] = ('randolph1570_lead.jpg', 'BL Cotton MS Caligula C II f. 278, the contemporary decipherment of Randolph to Sussex, 5 July 1570: cipher words with the English written above', 'British Library, via DECODE R4932')
 IMAGES['hamilton1569'] = ('hamilton1569_lead.jpg', 'BL Add MS 33531 f. 73r, Mary Queen of Scots to Archbishop Hamilton, 18 January 1569: the clear salutation and the first lines of cipher', 'British Library, via DECODE R8347')
 IMAGES['throck1569'] = ('throck1569_lead.jpg', 'BL Add MS 33531 f. 79r, Throckmorton to Moray, 20 July 1569: cipher words among the clear text, the interlinear decipherment faded under a water stain', 'British Library, via DECODE R8348')
+IMAGES['toulon1803'] = ('toulon1803_lead.jpg', 'R2034, the first five rows of code, each group under its series mark: wave, caret, double stroke, bar or plus', 'Nationaal Archief, The Hague, via DECODE R2034')

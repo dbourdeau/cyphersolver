@@ -21,16 +21,16 @@
    },
    "length": {
     "tokens": 110,
-    "distinct": 104,
+    "distinct": 103,
     "unit": "code groups",
     "measured": true,
-    "file": "transcription.txt"
+    "file": "ciphertext.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "Authenticated DECODE image IMG_R2034_I14728_P1",
     "image_quality": "good",
-    "notes": "Three-digit figures with six kinds of superscript mark plus unmarked groups; one trailing grammatical dash."
+    "notes": "Three-digit figures under five kinds of mark (wave, caret, double stroke, overbar, plus) or none; one trailing dash. Re-transcribed 22 Sept 2026: ten readings of the 20 Sept transcription corrected."
    }
   }
  ],
@@ -78,11 +78,12 @@
    "partial-codebook lookup"
   ],
   "models": [
-   "gpt-5"
+   "gpt-5",
+   "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 3,
   "first_date": "2026-09-20",
-  "last_date": "2026-09-20"
+  "last_date": "2026-09-22"
  },
  "solution": [
   {
@@ -133,14 +134,76 @@
    "kind": "statistics",
    "what": "Checked whether values within each marked series are alphabetical, using R1946's recovered pairs (e.g. ~ series: 297 Men, 370 Heer, 500 dat, 580 de, 733 zeer, 884 waar). They are not, so page-order/monotone-alphabet attacks do not apply.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Re-read R2034 from the DECODE image at full zoom; ten groups corrected (336~, 897\", 880^, 859~, 528-, 145^, 616+, 215-, 625-, 188-).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Applied Van Kampen's full 1,849-entry R1035 nomenclator under all 2,520 mark mappings; coverage at or below a random-mark baseline (22% vs 28%); the best mapping's \"met Zijne Keizerlijke Majesteit\" is an artefact. R1942 also at chance against R1035.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Checked unvisited Batavian DECODE records R1926, R1947, R2053, R1033: per-digit marks, four-digit groups or the R1035 book; none uses key 34313.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "crib",
+   "what": "Transcribed same-key R1946 (202 groups) and R1944 (115 groups) in full and aligned them with their contemporary solutions; R1946 aligns one-to-one to word 150, confirmed by 153= Paul and 222= niet.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Checked the 20-21 Sept anchors against the full transcriptions: 51~ van, 279 en, 153 Paul, 43~ zyne, 304~ wegens, 380~ de do not occur where claimed (R1946 van = 444=/957~, wegens = 564~, Paul = 153= not bare 153); withdrawn.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "crib",
+   "what": "Looked up every R2034 group in the four same-key transcriptions: 222- niet and 394 handen (R1946, high), 58 brengen (R1944, medium); 907^ zoo / 934\" wonderlijk kept as a conjecture from Sillem.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Re-tested R1038 (1765) since its rejection used the withdrawn anchors: no entry for niet, handen or brengen, and it marks digits, not groups.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
   "class": "offline only",
-  "fraction_read": 0.13,
+  "fraction_read": 0.045,
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Exact key survives but only physically: NA 2.21.045/34313 (dup. 2.21.227/335; Museum B1 392). Same-key known plaintext (R1944-R1946, R1942) is exhausted: 9/67 words. Codebook series are not alphabetical, so the remaining words cannot be recovered statistically. Digitizing the key would make the reading mechanical."
+  "notes": "Attempted, open. The key survives only as a physical booklet (NA 2.21.045/34313; dup. 2.21.227/335; Museum B1 392). Full transcriptions of same-key R1944 and R1946 (1801) fix 3 of 67 words (222- niet, 394 handen, 58 brengen); the nine values claimed on 20-21 Sept were not reproducible and were withdrawn. The series are not alphabetical, so the rest cannot be recovered without the book.",
+  "key": "partial",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "partial_solution.md: 3 of the 67 text groups between the controls 430~ and 763~ fixed from same-key plaintext",
+  "codes_open": {
+   "open": 64,
+   "total": 67,
+   "tokens_open": 64
+  },
+  "gaps": [
+   {
+    "item": "64 of the 67 text groups",
+    "blocker": "no-key-material",
+    "detail": "key survives only as NA 2.21.045/34313, not digitised; the solved same-key letters R1944-R1946 do not contain these groups"
+   },
+   {
+    "item": "the reading of the letter",
+    "blocker": "needs-physical-access",
+    "detail": "Croiset Correspondentiecijffer, Museum voor Communicatie B1 392 (photocopy NA 2.21.045/34313)"
+   }
+  ]
  }
 }

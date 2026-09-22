@@ -1,6 +1,9 @@
 # Toulon to Van Hogendorp, 30 July 1803 — DECODE R2034
 
-Status: in progress (blocked on the physical key; 9 of 67 words fixed from same-key known plaintext).
+Status: attempted, open (closed from the evidence 22 Sept 2026: the key survives only as a physical booklet,
+NA 2.21.045 inv. 34313, not digitised; fresh full transcriptions of the same-key 1801 letters R1944 and R1946 fix
+only 2 of R2034's 67 words with confidence, 222= niet and 394 handen, plus 58 brengen at medium confidence. The nine
+"secure" values claimed on 20-21 Sept are withdrawn; see "Session of 22 September 2026" at the end.)
 
 ## Source
 
@@ -124,3 +127,82 @@ Sillem's biography explicitly cites R1942, dispatch no. 12 of 5 July 1803, for t
 **Status: in progress. Blocked (offline key).** R2034 stands at 9/67 words. The only way forward is the
 physical key, NA 2.21.045 inv. 34313 (duplicate description NA 2.21.227/335, Museum voor Communicatie B1 392):
 request a scan.
+
+## Session of 22 September 2026: transcription corrected, 1801 letters re-read, earlier values withdrawn
+
+**R2034 re-transcribed** (`ciphertext.txt`; the 20 Sept version is kept as `ciphertext_2026-09-20.txt`). Ten
+groups were misread before: 336~ (not 336^), 897" (894"), 880^ (080^), 859~ (839~), 528- (320-), 145^ (115^),
+616+ (666+), 215- (245-), 625- (625"), 188- (180-). The doubtful ones were checked at full zoom. The faint stroke
+under 227 is the wave of 909~ in the next line. There are 110 groups, 103 of them distinct. 430~ opens the letter,
+763~ closes it at group 69, and the 67 groups between them carry the text.
+
+**R1946 and R1944 transcribed in full and aligned with their solution sheets** (`R1946_transcription.txt`,
+`R1946_solution.txt`, `R1946_alignment.tsv`, and the same three files for R1944).
+- R1946 (Bourdeaux, Berlin, 7 Feb 1801, no. 20) has 202 groups against a 158-word solution. The alignment is strictly
+  one group per word from the start control 357" to word 150. Group 142, 153=, falls on *Paul* and group 151, 222=, on
+  *niet*, which confirms it. The groups after "niet" are the end, the end control and 42 padding groups. The
+  solution reads "de Heer van **Krudner**", not Lucchesini. Two dots above a figure (e.g. 974 = *De*) are a separate
+  mark from the double stroke. The agent merged them into ", which probably explains some of the 13 groups that
+  land on two different words.
+- R1944 (31 Jan 1801, no. 16; its solution is misfiled as R1946 image 3) has 115 groups against a 77-word solution.
+  The subject is a stolen cipher: Rosencrantz's cipher was copied by a servant, the bureau was broken into, and
+  Schuez goes to St Petersburg with a new cipher. The alignment is certain only in stretches: 927+ = *Cyffer* (three
+  times), 237" = *zyn*, 480^ = *dat*, 335^ = *van*, 453= = *Heer*. Two runs of 13 and 8 groups have no counterpart
+  in the solution.
+- A spot check of R1946 page 4 line 1 against the image confirms the agent's readings
+  (357" 974 453= 444= 429= 81^ 580~ 370~ 957~ 421=).
+
+**The 20-21 Sept anchors do not survive.** Neither full transcription contains 51~, 380~, 43~, 279 or 304~ where
+the earlier alignment put them. In R1946, *van* is 444=, 957~, 61~ and others; *de* has many groups; *wegens* is
+564~. *Paul* is 153= with a bar, but R2034 has a bare 153 (checked on the image). The earlier table in
+`related_plaintext_pairs.md` rested on partial readings that were never saved as transcriptions, and it cannot be
+reproduced. Withdrawn: 51~ van, 279 en, 153 Paul, 43~ zyne, 304~ wegens, 380~ de. Sillem's "zo wonderlijk" pair
+(907^ 934" in R1942) is kept only as a conjecture. Sillem paraphrases dispatch no. 12, and nothing in the print ties
+the phrase to a particular point in the cipher.
+
+**What R2034 now has** (same number and same mark in a solved 1801 letter):
+
+| Group | R2034 position | Value | Source | Grade |
+| --- | --- | --- | --- | --- |
+| 222- (overbar) | 52 | niet | R1946 word 150, confirmed by the Paul/niet anchors | high |
+| 394 | 6 | handen | R1946 word 111 | high |
+| 58 | 29 | brengen | R1944, last word of the text | medium |
+| 907^, 934" | 51, 19 | zoo, wonderlijk | Sillem paraphrase of R1942 | conjecture |
+
+Groups in R2034's padding also recur: 205- = *gantschelyk* and 458+ = *ook* in R1946, and 239" = *antwoord*. They
+confirm that this is the same code, but they add nothing to the text. Same numbers under a different mark are
+different entries and give nothing.
+
+**Other leads closed this session**
+- R1035 (the 5 Aug 1803 book, Van Kampen's 1,849-entry `Nomenclator.csv`) was tested under all 2,520 assignments of
+  R2034's five marks to R1035's six. Coverage is at or below a random-mark baseline (natural mapping 22%, random
+  28%). The best mapping's "met Zijne Keizerlijke Majesteit" is one phrase entry (324+) beside two empty cells: an
+  artefact. None of the old 1801 values fits any R1035 series either. R1942 is also at chance against R1035
+  (25% vs 26%), so its July 1803 dispatch is not in that book.
+- DECODE records not yet looked at: R1926 (Schimmelpenninck, London, 28 Feb 1803, decrypted) marks individual
+  digits (°, /, ^, bars), so it uses a different key. It is probably of the R1891 kind, 34312. R1947 and R2053 are
+  Van Dedem 1789 four-digit letters, and R1033 is Six van Oterleek 1808 in R1035. None is in 34313.
+- R1038 (1765 St Petersburg key) was re-tested because its earlier rejection rested on the withdrawn anchors. It
+  still fails. Its parsed key (`deswart1782/R1038_key_parsed.tsv`) has no entry for *niet*, *handen* or *brengen*,
+  and it marks individual digits rather than whole groups. R2032, R2051 and R2052 are the 1784-86 Rechteren-family
+  known pairs (deswart1782), from another key.
+- R2034 and R1942 share 51~, 934", 279, 756~, 153, 686+, 907^, 304~, 380~ and 144~, scattered and never in the same
+  order. So Toulon is not re-enciphering a passage of Hogendorp's dispatch.
+
+**Why this is closed.** R2034 is 67 words long. Only three of them can be fixed from the surviving same-key
+plaintext (R1944-R1946). The code is a word code in six non-alphabetical series (see 21 Sept), homophonic, with
+roughly 6,000 cells. A short letter in it cannot be read without the book. The book is NA 2.21.045 inv. 34313 (old
+5187; photocopy at the NA, original Museum voor Communicatie B1 392), also described at NA 2.21.227/335. It has not
+been digitised. A scan of its six written pages would make the reading mechanical.
+
+## Remaining gaps
+- 64 of the 67 text groups (all except 222-, 394, 58) - blocker: no-key-material; key survives only as NA 2.21.045/34313, not digitised, and the same-key solved letters R1944-R1946 do not contain these groups
+- the whole letter's reading - blocker: needs-physical-access; the Croiset Correspondentiecijffer (Museum B1 392) must be scanned
+
+## Escalation
+- [x] siblings: R1942, R1944, R1945, R1946 (same key) transcribed; R1926, R1896, R1947, R2053, R1033, R1943, R1925 checked (other keys)
+- [x] clear-pages: the only clear text is date, salutation and closing; no decipherment on the record
+- [x] known-keys: R1035 (all mark mappings), R1038, R1891 tried; none fits
+- [x] print: Sillem 1890, Colenbrander Gedenkstukken IV (via fagel1804), Hogendorp correspondence 1943, Tomokiyo, HistoCrypt 2026: no decipherment
+- [x] key-rebuild: 1801 solutions aligned in full; the series are not alphabetical, so no bracketing; 3 values
+- [n/a] retry: every R2034 group was looked up in all four same-key transcriptions; nothing further to regrade
