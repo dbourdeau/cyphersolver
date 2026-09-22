@@ -36,6 +36,8 @@ made: the ciphertext was never copied into this volume.
 - [x] siblings: R8356-R8364 fetched by walsingham1572; same placeholder practice throughout
 - [x] clear-pages: the copy is itself the clear text; the omitted names are the only secret
 - [x] known-keys: n/a, no cipher signs to apply a key to
+- [x] other images: DECODE R8359 has exactly 2 images, R8360 has 1 (record pages checked); all viewed, no other copy on DECODE
+- [x] calendar: CSP For. x November 1572 (BHO pp. 200-210) has no Walsingham letter of 12 Nov; the original (SP 70 or SP 52) is not calendared there and not online outside State Papers Online (paid)
 - [x] print: Digges 1655 prints the letter with the placeholders; not in CSP For. x as a separate deciphered item
 - [n/a] key-rebuild: no ciphertext
 - [n/a] retry: nothing read
@@ -47,4 +49,5 @@ made: the ciphertext was never copied into this volume.
 ## Steps
 1. Viewed the three images already fetched by walsingham1572: clear letter-book copies, placeholders only.
 2. Located the letter in Digges 1655: printed with the same placeholders.
-3. Closed; DECODE corrections queued (sender, recipient, place, date, language, "no cipher copied").
+3. DECODE records checked for other images (none); CSP For. x Nov 1572 searched (no entry for this letter); web search found nothing.
+4. Closed; DECODE corrections queued (sender, recipient, place, date, language, "no cipher copied").
