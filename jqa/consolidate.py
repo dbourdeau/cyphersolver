@@ -13,7 +13,7 @@ R = {'H': 0, 'C': 1, 'M': 2, 'I': 3}
 def key(s):
     return re.sub(r'[^a-z]', '', re.sub(r'\(.*?\)', '', s.lower()))
 src = {}
-files = ['pairs_jqa.txt'] + sorted(glob.glob('clerk_*.tsv')) + sorted(glob.glob('ford_pairs*.tsv')) + sorted(glob.glob('slot_*.tsv'))
+files = ['pairs_jqa.txt'] + sorted(glob.glob('clerk_*.tsv')) + sorted(glob.glob('ford_pairs*.tsv')) + sorted(glob.glob('ford1812_pairs*.tsv')) + sorted(glob.glob('slot_*.tsv'))
 for f in files:
     for l in open(f, encoding='utf8'):
         p = l.rstrip('\n').split('\t')

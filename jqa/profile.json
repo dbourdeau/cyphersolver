@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "no88-gap",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "NARA M35 reel 3 frame 0206 (triplicate); Ford, Writings of JQA 4:357 '[Nine lines of this paragraph not decyphered.]'",
    "date": "25 Jun 1812",
    "year": 1812,
@@ -35,7 +35,7 @@
   },
   {
    "id": "no88-remainder",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "NARA M35 reel 3 frame 0207 (left leaf); Ford 4:358 'remainder of letter ... undecyphered'",
    "date": "25 Jun 1812",
    "year": 1812,
@@ -224,24 +224,54 @@
    "kind": "reading",
    "what": "No. 88 re-measured with measure.py and a sense-flag file (sense88.tsv): 379 of 390 groups valued, 355 read as sense (0.910); Ford's nine lines 127/133 (0.955), the remainder 228/257 (0.887). Before this session: 336 of 391 valued (0.859), sense not measured.",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Clerk interlinear decodes read on frames 0047, 0048 (rest), 0210-0211, 0247 (560 pairs; clerk_0047.tsv etc.); 0056-57 found to be a clear decyphered copy of No. 46; 220 = probab (three clerk readings) replaces proper.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "crib",
+   "what": "Coded blocks of eight despatches Oct 1811-Sept 1812 transcribed and aligned with Ford vol. 4; No. 95 aligned against the Department's clear copy on 0230-0232 (1,926 pairs; ford1812_pairs*.tsv): 996 = fri (friendship), 1457+ = ll (Chancellor), 83 = opposition, 1061 = cu, 588 = tled.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "No. 88 re-read on zoomed crops of 0206R and 0207: 792 not 492 (by), 1061 not 1081 (e-va-cu-ation), 588 not 888 (bat-tle), 1384 not 1385 (that); 570 and 1099 confirmed; the 7 line-end groups are cut by the binding gutter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "Alphabetical-slot inferences (grade I) for the remaining groups: 1403 ib and 350 fl (in-fl-ex-ib-ly, inflexibly), 1309 bat (battle of Friedland), 426 negotiate, 1540 along; 927 pire from context only.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "measure.py: 375 of 390 groups read as sense (0.962), gap88 0.970, rem88 0.957; open: 7 gutter-cut groups, im-pas-sion-ed (JQA slip for impaired), 1508, 1185, 570, 748.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
+  "class": "read",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "python measure.py (22 Sept 2026): 355 of 390 code groups of No. 88 read as sense = 0.910 (gap88 127/133 = 0.955, rem88 228/257 = 0.887, the 7 gutter-cut groups counted unread); groups valued 379/390; without the I-graded values 336/390 = 0.862",
-  "fraction_read": 0.91,
+  "fraction_read_source": "python measure.py (22 Sept 2026, third pass): 375 of 390 code groups of No. 88 read as sense = 0.962 (gap88 129/133 = 0.970, rem88 246/257 = 0.957; the 7 gutter-cut groups counted unread); 382/390 valued; 355/390 = 0.910 without the grade-I values. Second pass: 355/390 = 0.910.",
+  "fraction_read": 0.962,
   "codes_open": {
-   "open": "unknown",
-   "total": 962,
-   "tokens_open": 35
+   "open": 4,
+   "total": 1070,
+   "tokens_open": 15
   },
   "grades": {
-   "H": 285,
-   "C": 24,
-   "M": 27,
-   "I": 19
+   "H": 299,
+   "C": 27,
+   "M": 29,
+   "I": 20
   },
   "verification": [
    "contemporary decipherment",
@@ -249,38 +279,30 @@
   ],
   "gaps": [
    {
-    "item": "gap88 im-pas-ion-ed (1424 1112 1433 520): valued but not sense",
+    "item": "rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx), cut by the binding gutter on the microfilm of frame 0207",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "gap88 im-pas-sion-ed (1424 1112 1433 520): clear and attested groups, the sense wants impaired (JQA's encoding)",
     "blocker": "open-codes"
    },
    {
-    "item": "gap88 492 use where 'by' is wanted (probably JQA's slip for 792)",
+    "item": "rem88 l.5 1508 before [pre]-liminary",
     "blocker": "open-codes"
    },
    {
-    "item": "gap88 1457 in Chan-ce-?-or (may be 1452 with the doubling mark)",
-    "blocker": "illegible"
-   },
-   {
-    "item": "gap88 grade-I words 1434 journ, 168 ey, 83 opposition, 1398 thither",
+    "item": "rem88 l.9 1185 (He [took?] it as a demonstration)",
     "blocker": "open-codes"
    },
    {
-    "item": "rem88 word before 'defensive' (350 289 1403 897)",
+    "item": "rem88 l.11 570 tol in \"it tol he said\"",
     "blocker": "open-codes"
    },
    {
-    "item": "rem88 e-va-{10?1}-ation and 1508 before 'preliminary'",
-    "blocker": "illegible"
-   },
-   {
-    "item": "rem88 groups 1185; 699 1535 570; 1309 888 996 520 1453 416; 220 586 1416; 927 1540 748 not read as sense",
+    "item": "rem88 l.19 748 after 1099 side",
     "blocker": "open-codes"
-   },
-   {
-    "item": "rem88 seven groups with digits lost in the microfilm gutter",
-    "blocker": "illegible"
    }
   ],
-  "notes": "22 Sept 2026: code rebuilt from eight more clerk-decoded frames and 39 Ford-aligned 1811 blocks; No. 88 re-read and measured for sense. Below the 95% read bar overall (0.910), so read in part; Ford's nine lines alone reach 0.955 counting grade-I values (0.895 without). More interlinear pages remain on reel 3 (0047, 0056-57, 0211, 0228-29, 0233, 0247) and Ford prints the 1812 decipherments; these are the route to the open groups. Model ids: claude-opus-5 (18 Sept), claude-opus-5-5 (22 Sept). outcome.grades counts the 355 No. 88 groups read as sense (gap 101 H 7 C 11 M 8 I; remainder 184 H 17 C 16 M 11 I)."
+  "notes": "22 Sept 2026, third pass: the code table grew from 962 to 1,070 numbers with the clerk decodes on 0047, 0048, 0210-0211, 0247 and eight 1811-1812 despatches aligned with Ford (No. 95 against the Department's clear copy); No. 88 re-read against the image a third time (792, 1061, 588, 1384 corrected). 0.910 -> 0.962: meets the read bar; both parts of the letter (Ford's nine lines 0.970, the remainder 0.957) read. Grades counted over the 375 sense groups by measure.py. 22 Sept 2026: code rebuilt from eight more clerk-decoded frames and 39 Ford-aligned 1811 blocks; No. 88 re-read and measured for sense. Below the 95% read bar overall (0.910), so read in part; Ford's nine lines alone reach 0.955 counting grade-I values (0.895 without). More interlinear pages remain on reel 3 (0047, 0056-57, 0211, 0228-29, 0233, 0247) and Ford prints the 1812 decipherments; these are the route to the open groups. Model ids: claude-opus-5 (18 Sept), claude-opus-5-5 (22 Sept). outcome.grades counts the 355 No. 88 groups read as sense (gap 101 H 7 C 11 M 8 I; remainder 184 H 17 C 16 M 11 I)."
  }
 }
