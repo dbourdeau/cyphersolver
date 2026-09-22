@@ -1,0 +1,163 @@
+{
+ "schema_version": 1,
+ "target": "fr3029f134",
+ "title": "Unknown sender to the King (Francis I), BnF fr. 3029 ff. 134-135, no. 59 (DECODE R3670)",
+ "documents": [
+  {
+   "id": "f134",
+   "shelfmark": "BnF, Français 3029, ff. 134r-135v, no. 59 (DECODE R3670); Gallica btv1b90598719 views 210, 211, 213",
+   "date": "unknown (DECODE: 11 Jan 1530, source not given; content suggests ca. 1521, unconfirmed)",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "unknown -> French court (addressed 'Au Roy, Mon souverain seigneur')",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves. Lasry's key table (05/11/2023) for this cipher is on Tomokiyo's cryptiana GL.htm, which lists f.134 among the letters in the cipher but prints readable text only for f.67 and f.186."
+   },
+   "length": {
+    "tokens": 926,
+    "unit": "symbols",
+    "measured": true,
+    "file": "signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica full-resolution views 210 (f.134r, 26 lines) and 211 (f.135r, 4 lines); line-band crops; aliases = key letters in transcription.txt",
+    "image_quality": "good",
+    "notes": "926 = letter signs (_check_profile --measure --letters on signs.txt). signs.txt also holds 49 nulls ('.') and 9 name/place signs (digits 1-5): 984 signs in all. Two words struck through by the writer are left out."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Simple substitution with invented signs (one per letter, O with two forms), words spaced, six null signs and five name/place signs (Lasry key).",
+  "symbol_kind": "symbols",
+  "digit_groups": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": 1
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 5,
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 5
+  },
+  "nulls": {
+   "present": true,
+   "count": 49
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "notes": "Lasry's table has Nom 1-4 and Place 1 unidentified; all five occur here (N1 x2, N2 x2, N3 x2, N4 x1, P1 x2) and stay unidentified. Nulls mostly at word ends and line ends, and between doubled letters (mil.le, ter.res)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Lasry key table (05/11/2023) on Tomokiyo's cryptiana GL.htm (section 'De la Tremoille's(?) Cipher'); no plaintext of f.134 published there or on DECODE",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the problem with /goal (the DECODE R3670 catalogue card). No target-specific intervention recorded.",
+  "tools": [
+   "curl (Gallica IIIF)",
+   "python/PIL crops",
+   "lang.lm best_language"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Repo grep: fr3029/ (catalogue 174) had closed the fr. 3029 ciphers as 'broken by Lasry' without reading any leaf; f.134 not covered. Tomokiyo's GL.htm (gramont1529/GL.htm) lists f.134 no.59 'au roy' under the fr. 3029 cipher; key image fetched.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "Gallica SRU dc.source 'Français 3029' gave btv1b90598719; canvases unlabelled, so contact strips (views 182-218) located f.134r = view 210, f.135r = 211, address = 213.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "30 cipher lines transcribed by eye from line-band crops, each sign written as its key letter (transcription.txt).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "key from source",
+   "what": "Lasry's table applied unchanged: French reads at once ('avoir par l'amiable les veult recouvrer par les armes').",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "Blotted sign at 134r22 end and the doubtful 'l.lis', 'diort', '?icy' re-cropped at full resolution; blot read as C (car|dinal).",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "lang.lm.best_language on the letters: fr-1600-letters first (-2.00 vs fr-modern -2.20, la -2.69).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "Whole letter read: war to recover costs against the lands of the Church under the defensive league; Venetian ambassador; Toledo given to the bishop of Palencia with pensions to the cardinals de' Medici and 'd'Iort' and the new cardinal Carafa; bishop of Badajoz leaves; rumour of poisoning ‹N2›.",
+   "result": "worked",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 0.991,
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "All 30 cipher lines read with Lasry's key unchanged; 9 name/place signs open; one proper name (L.lis) unidentified; date not fixed.",
+  "key": "recovered",
+  "codes_open": {
+   "open": 5,
+   "total": 5,
+   "tokens_open": 9
+  },
+  "gaps": [
+   {
+    "item": "name signs N1-N4 and place sign P1 (9 tokens)",
+    "blocker": "open-codes",
+    "detail": "unidentified in Lasry's table too; only the sibling fr. 3029 / fr. 3092 letters could fix them"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "fr3029f134/signs.txt: 984 signs, 9 name/place signs without a value = 975/984"
+ }
+}
