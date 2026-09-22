@@ -85,6 +85,12 @@ sibling, the cipher is not readable from the material available.
   transcription quality. Only a key or crib can: the Caprile 1519 key, where it shares labels (82 shared label types
   covering 76 % of Fantini's tokens, but the commonest signs differ: Fantini 2/7, &/m, zf/7 against Caprile 9/7, m/7,
   L/7), or an ASMo decipherment not on Vestigia. This is an outside blocker (no key material).
+- Caprile 1519 key test (22 Sept): the seeded EM aligner `caprile1519/syl_em2.py` was re-run on R1133 (`t1133_full.txt`)
+  against the 7c decipherment. It collapses: 12 iterations, sign purity 0.33 (chance level). Only the seeds
+  ([d]=de, [s]=vostra, [&]=maesta) and a few letters (c/7=o, L/7=o, m/n=r, u/7=a, x/7=t) are firm. Those were pinned on
+  Fantini's text and gave no Italian. Fantini's commonest signs (2/7, &/m, zf/7) have no firm Caprile value. Rebuilding
+  the 1519 key needs a new R1133 transcription (16 % of it is illegible in the faded band). That is caprile1519's own open
+  task, and even then the difference in the commonest signs makes the same key unlikely.
 
 ## Remaining gaps
 
