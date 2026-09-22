@@ -225,6 +225,7 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Scribe's colophon of the Dominican sequentiary Uppsala UB C 513** (f. 19v, Strängnäs 1517), catalogue 235, DECODE R4349. Not a letter; vowel-shift colophon already read in the Uppsala catalogue (1992), transcribed and checked 22 Sept 2026. See [r4349/](r4349/).
 - **"N. Wottoy ?" → unknown recipient, June 1554**, catalogue 120, DECODE R8499 (BL Harley MS 1582 ff. 8–10): read in part 22 Sept 2026; Dr Nicholas Wotton (Soissons) to Queen Mary, 13 June 1554, key R354 (SP 106/2 f. 162); 75.0% firm, 89.4% incl. tentative; deciphered copy ff. 5r–7v not digitised. See [harley1582r8499/](harley1582r8499/).
 - **Unknown sender → "Paulo Borne?"**, catalogue 267, DECODE R1212 (HHStA Chiffrenschlüssel Kt. 13 Fasc. 20 ff. 38–39): read at the time; Pál Bornemisza's report to Ferdinand I on the Kendi treason, c. 1556, key R1211 on the next record, every run re-read; 9 number codes open. See [r1212/](r1212/).
 - **Galeazzo Visconti → Angelo Bolano (15 Oct 1528) and → Francis I (15 June 1529)**, catalogue 179, DECODE R4230 (fr. 3045 f. 28), R4256 (fr. 3096 f. 91): read 22 Sept 2026 with Lasry's 2023 key, extended; 95.3% of 1477 signs, both letters read (to the King 95.4%, to Bolano 95.2%, thin margin). See [visconti1529/](visconti1529/).

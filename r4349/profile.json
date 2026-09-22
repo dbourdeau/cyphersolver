@@ -1,0 +1,135 @@
+{
+ "schema_version": 1,
+ "target": "r4349",
+ "title": "Ciphered colophon of the Strängnäs Sequentiarium, 1517, Uppsala UB C 513 f. 19v (DECODE R4349)",
+ "documents": [
+  {
+   "id": "R4349",
+   "shelfmark": "Uppsala universitetsbibliotek, C 513, f. 19v (Alvin record 193385, attachment 42; DECODE R4349)",
+   "date": "1517 (the colophon's own date)",
+   "year": 1517,
+   "country": "Sweden",
+   "route": "Colophon of a Dominican scribe, Strängnäs convent, for the Västerås convent; not a letter",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Andersson-Schmitt, Hallberg & Hedlund, Mittelalterliche Handschriften der Universitätsbibliothek Uppsala, Bd. 5 (1992), pp. 275-276, entry C 513; the catalogue page is the PDF attached to DECODE R4349",
+    "partial": false
+   },
+   "length": {
+    "tokens": 125,
+    "distinct": 16,
+    "unit": "letters",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Alvin full-resolution TIFF of f. 19v (attachment 42), four text lines under the chant notation",
+    "image_quality": "good",
+    "notes": "Measured with --letters: the hyphens at two line ends are not counted. The minims of 'Annp' are ambiguous (m or nn); the catalogue's nn is kept. In both 'cpnxfntx' the n is partly a macron over cp."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Vowel shift: each vowel is written as the next letter of the alphabet (a→b, e→f, i→k, o→p, u→x), consonants plain, word division kept.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 16,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "kept",
+  "notes": "Plain consonants b and p also occur (liber, scriptus, presens, pro), so cipher b and p are each two-valued; context decides. The rubricated initial A of Anno is not enciphered. The words are set under chant notation as part of the book."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Uppsala C-collection catalogue Bd. 5 (1992), entry C 513, gives the rule and the full reading; the catalogue page is attached to the DECODE record itself",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code, and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "key application to own transcription",
+   "n-gram language model (lang/ la) beam search for two-valued letters"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched DECODE R4349 with the shared cookie: the only image is a placeholder icon; the attached PDF is two pages of the Uppsala C-collection catalogue describing C 513.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "The catalogue entry states that the book is dated in secret script on f. 19v, each vowel replaced by the following consonant ('Annp dpmknk' = Anno domini), and prints the full reading.",
+   "result": "worked"
+  },
+  {
+   "kind": "access",
+   "what": "Located f. 19v in the Alvin scans (attachment 42; attachment 40 is f. 18v) and downloaded the full TIFF.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed the four ciphered lines letter by letter (125 letters, 19 words with two line-end hyphens).",
+   "result": "worked"
+  },
+  {
+   "kind": "control",
+   "what": "Applied the inverse shift, first word by word under the Latin model: k and x were misjudged because the model folds k into c, and prp came out as oro.",
+   "result": "partial"
+  },
+  {
+   "kind": "verification",
+   "what": "Fixed k=i and x=u (neither is a consonant in the text) and chose b/f/p by beam search over the whole colophon: the output matches the catalogue's reading word for word, prp = pro in context.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.txt, cipher letters (all 125 given a value)",
+  "key": "recovered",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "verification": [
+   "key confirms"
+  ],
+  "notes": "Read in the Uppsala catalogue (1992). Added here: the ciphertext transcription, the exact rule (u→x, consonant b/p two-valued), the folio's scan location, and DECODE corrections (not six symbols; date 1517; Latin; a colophon, not a letter)."
+ }
+}
