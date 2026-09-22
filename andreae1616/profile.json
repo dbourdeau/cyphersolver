@@ -1,0 +1,114 @@
+{
+ "schema_version": 1,
+ "target": "andreae1616",
+ "title": "Andreae, Chymische Hochzeit Christiani Rosencreutz, Strassburg 1616: printed secret-script inscriptions (DECODE R4502)",
+ "documents": [
+  {
+   "id": "R4502",
+   "read": "read",
+   "shelfmark": "Embassy of the Free Mind (Ritman Library), Amsterdam; Chymische Hochzeit, Strassburg 1616, pp. 73, 95, 97, 116; DECODE R4502",
+   "date": "1616",
+   "year": 1616,
+   "country": "Holy Roman Empire (Strassburg print)",
+   "route": "not applicable (printed book)",
+   "language": "German",
+   "pages": 4,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "separate paragraph",
+     "printed edition"
+    ],
+    "source": "The novel glosses the pp. 95 and 97 inscriptions in the following paragraphs (pp. 96, 98); Foxcroft 1690 / crcsite.org edition footnotes 12, 14, 15, 21 give all four, the sign lines as the dates 1378 and 1459.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 156,
+    "distinct": 19,
+    "unit": "letters",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R4502 public images P3-P8 (about 1450 px per opening)",
+    "corrections": 0,
+    "image_quality": "fair",
+    "notes": "Letter inscriptions only; the two symbolic date lines (about 10 signs each) are described in NOTES, not transcribed. The three dotted variants for M/N/O were assigned with the plaintext in view."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "other"
+  ],
+  "summary": "Simple substitution in an invented type-cut alphabet, words divided, for two inscriptions; two further lines of alchemical and numeral signs give dates.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 19,
+  "diacritics": {
+   "used": true,
+   "note": "M, N and O are dotted variants of one base shape."
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "written twice",
+  "sibling_key": "none",
+  "notes": "U and V share one sign; one capital form (initial H)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "The novel itself (glosses on pp. 96, 98); Foxcroft, The Hermetick Romance (1690), as footnoted on crcsite.org.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Posed the target from the catalogue; DECODE cookie already on file.",
+  "tools": [
+   "decode.py (sign-table decoder)",
+   "docs/_check_profile.py --measure"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {"date": "2026-09-22", "kind": "literature search", "what": "Repo and web search for R4502 / Andreae cipher; no decipherment found under that description.", "result": "failed"},
+  {"date": "2026-09-22", "kind": "access", "what": "Fetched DECODE record, metadata and 8 public images; identified the item as a printed copy of the Chymische Hochzeit, not a letter.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "hypothesis", "what": "The p.95 and p.97 inscriptions are the texts the page boy speaks on pp.96 and 98; tested as a simple substitution.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "crib", "what": "Aligned BEGRABEN, FRAW, GLUCK, FRUCHT, BAUMS etc.; built a 19-sign table consistent over both inscriptions.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "literature search", "what": "DTA and 12koerbe omit the inscriptions; crcsite.org (Foxcroft 1690) footnotes all four, sign lines as 1378 and 1459.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "verification", "what": "decode.py over ciphertext.txt reproduces both German texts; date lines checked structurally against 1378/1459 (M, CCCC, IX, XX, V visible).", "result": "partial"}
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.txt: 156 cipher letters of the two letter inscriptions, all given values; the two date lines read as wholes (graded C)",
+  "grades": {"H": 2, "C": 2, "M": 0, "I": 0},
+  "verification": [
+   "independent clear copy",
+   "key confirms"
+  ],
+  "notes": "Not a letter: DECODE's four cipher pages are the printed inscriptions of the novel, which glosses its own two long ones. Per-sign values in the two symbolic date lines stay graded C."
+ }
+}

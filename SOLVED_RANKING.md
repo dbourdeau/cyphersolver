@@ -253,6 +253,7 @@ Ranked by how firmly the negative is established and how prominent the item was.
 | 7 | Unknown sender → unknown recipient, BL Sloane MS 3188 ff. 109–169 (DECODE R8506–R8530) | 17th c. | 17th-century English stroke shorthand, not a cipher: notes on John Dee's spirit Actions and writings, attributed to William Shippen | Catalogue 138 + 139; settled from the images; shorthand unread |
 | 8 | W. Loeschner → unknown, ÖStA HHStA Chiffrenschlüssel Kt. 20 (DECODE R2227) | 1816 | Not a cipher: a clear German memorandum amending the Staatskanzlei cipher instruction; its number groups are worked examples with the plaintext above them | Catalogue 269; settled from the images |
 | 9 | Stojan (a Serb prisoner) → aghas, knezes and kin, ÖStA HHStA Verschwörerakten Fasc. 327 (DECODE R688) | 1664–68 | Not a cipher: DECODE's "graphic signs" are Cyrillic letters writing a Serbian prisoner's plea | Catalogue 270; settled from the images |
+| 10 | Andreae, *Chymische Hochzeit*, Strassburg 1616 (DECODE R4502) | 1616 | Not a letter: the printed novel's inscriptions, glossed by the text itself; sign lines are the dates 1378 and 1459 | Catalogue 210; settled from the images and the novel |
 
 ## Third tier: found already solved by others
 
