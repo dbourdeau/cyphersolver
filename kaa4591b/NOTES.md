@@ -83,6 +83,12 @@ Hans Schwab of Kraków as carrier. Postscript: "der herr Camermaister hat mein z
 - [x] print: web search 22 Sept 2026 (Łaski 1531 Lasci 17 Septembris, Zápolya letters to the Bavarian dukes, Augurelio) found no edition; Acta Tomiciana t. 8 (1530-32, Jagiellonian Digital Library) exists but is the Polish royal chancery's record and was not searched page by page; kaa4591 search for KAA 4591 also nothing
 - [x] key-rebuild: la- and de-1500s annealing and beam search for L and G; gloss-seeded
 - [x] retry: three visual passes over R9414, R9415 zoom pass 22 Sept, gapfill.py over every unread R9414 word
+- [x] retry (2nd, 22 Sept 2026, from the ferdinand1619 session): a whole-word wildcard lexicon pass was written for
+  R9414's 56 single-gap marks (`r9414/wildfill.py`: treat the gap as any letter, match the 171,189-type de-1500s
+  lexicon, score in context). It returns nothing, and for a structural reason worth recording: every `[..1]` in
+  `reading_v3.txt` is a whole unread **word**, not an unread sign inside a read word, so there is no in-word pattern
+  to constrain. The per-sign version of this search is what gapfill.py already does. Short of better images, the
+  ~65 unresolved words are at the limit of these scans, not of the method.
 
 ## Files
 
