@@ -57,6 +57,8 @@ In 4715 the plain m is r, but in no. 62 the tailed m is o ("protection", "Baron"
 
 ## Further readings in no. 62 using these values
 
+(First session, 18 Sept. Superseded in part by the 22 Sept section below: b/6, φ/ɸ, Θ and the V2 guesses are corrected there.)
+
 - **S1: "b 1 6 Ⱥ ÷ W 4 æ ⊡ − | ʃ" = "[b] de-pesche-ra [ʃ]"**, i.e. "…**depeschera** … dedans deux jours …". 1 is the code for de,
   6=p, W 4=ch. The first b is probably a code sign for the subject (the Pope?). ʃ is t in the key, or a code.
 - **G: "Depuis que ⌘ Ƒ τ x̶ tt ◻ ∇ V 9 | ooo ⊡ Ⱥ" = "[⌘ Ƒ τ] mon maitre a esté retiré"**. The second line has the *dotted*
@@ -94,19 +96,58 @@ So the table can't be applied blindly.
 - `solve.py` anneals the unread signs under a 6-gram French LM, with each group scored in its clear-text context.
   The groups are too short: it only stabilises the signature ("baron").
 
+## Session 22 Sept 2026: second pass with fr. 4715 f. 2 and Tomokiyo's table
+
+Files: `no62_cipher.txt` (the 14 cipher runs as sign tokens, 91 signs, measured), `decode62.py` (key with the source of
+every value, prints the reading and measures the fraction), `fr4715_f2_aligned.txt` (fr. 4715 f. 2 at full resolution:
+all 29 cipher lines viewed, about 50 words aligned sign-by-sign with the interlinear; the rest not transcribed).
+
+New values and what they give:
+
+- `Ƒ` = **le**. In fr. 4715 the s-with-bar sign is "le" ("pour le bien", "le monde"). S2 `Ƒ 3 tt ħ θ ◻` = **le doien**
+  (ħ = i, Tomokiyo's second i form).
+- `⌘` = **Mr** (Tomokiyo's code list). `x` = **m** (fr. 4715 "madame", "qui monstrent"). `⋕` (H with two bars) = **o**.
+  G = "Depuis que **Mr le [τ] mon maistre** a esté retiré". τ is still unread; "Cardinal" is the likely sense (M grade).
+- H `ʃ ɔ θ φ ɔ ◻ η − 7 b ɸ q` = **j'ay veu ung advis**. ʃ = jay (fr. 4715 line 1: "ʃ receu" = "Jay receu"),
+  ɔ◻η = "ung", b = v (Tomokiyo u/v), ɸ = i as in "protection".
+- I `W ⋕ ◻ Ⱥ 9 ⊡ x æ` = **confirme** (Ⱥ = f, Tomokiyo's f). The passage reads: "Depuis que Mr le [τ] mon maistre a esté
+  retiré, j'ay veu ung advis qui confirme plus particulierement que nul aultre" — the writer has seen a notice that
+  confirms the news (Henri III's death) more precisely than any other. A constrained word search over the fr-gutenberg
+  lexicon ranked "confirme" first among sense readings.
+- Corrections: the S1 sign read as `Ⱥ` before is a θ (e); the sign after `x` in G is `⋕`, not tt; the signature's last
+  sign is `Ħ` = n (fr. 4715 H = n), so **Baron** is read, not Barot.
+- `a` = f and `n` = et (fr. 4715 "ferons", "responces et", "et a mon avis"). This makes V2 `n a æ η ◻ θ` = "et f e g n e",
+  which is not sense; the "Champaigne"/"regne" guesses do not survive. V2 stays unread.
+- C `φ tt o V æ ʃ° ÷` gives v-o-p-a-e-?-s with the known values: no sense ("vos amis", "vos gens" each need one value to
+  break). Unread.
+- fr. 3612 (Tomokiyo's source, six Piles letters with interlinear decipherments) was searched again on Gallica (SRU):
+  not digitised.
+
+Measured (`python decode62.py`): 91 cipher signs, **75 read as sense = 0.824** (before this session, the same count over
+the readings then in NOTES gave 47/91 = 0.516).
+
 ## Status
 
-The bound keys were **tested, and none fits**. The cipher is Tomokiyo's Nevers-Piles alphabet, whose values are
-supplemented from fr. 4715 f. 2. The letter's substance is in clear.
+**Read in part, 82% measured.** The letter's substance is in clear; the cipher runs now read:
+depeschera … dedans deux jours **le doien**; **la protection**; Mons. **Cassin**; **vostre** […];
+**Mr le [τ] mon maistre**; **j'ay veu ung advis qui confirme**; signature **Baron**.
 
-Cipher groups read so far:
-- **Mons. Cassin**
-- **la protection**
-- **vostre regne**
-- **depeschera**
-- **… mon maitre a esté retiré**
-- the signature **Baron**. A "Sr Baron" writes in the same 1593 League dossier as Piles (Gallica btv1b9059406b, piece u).
+## Remaining gaps
 
-Still open, about 30 signs: the code signs ⌘ Ƒ τ ʃ, and groups C, H and I.
+- S1 first sign `Ƃ` (subject of "depeschera": Sa Sainteté? il?) - blocker: open-codes; a single code sign, no entry in Tomokiyo's table and not on the aligned part of fr. 4715 f. 2
+- S1 last sign `ʃ` after "depeschera" - blocker: open-codes; the jay value does not fit here, one sign
+- G `τ` (after "Mr le") - blocker: open-codes; one code sign, sense probably "Cardinal", no key entry
+- C `φ tt o V æ ʃ° ÷` ("ce qui touche …") - blocker: no-key-material; known values give v-o-p-a-e-?-s, not sense; the missing values would come from fr. 3612 (not digitised)
+- V2 `n a æ η ◻ θ` ("à vostre …") - blocker: no-key-material; known values give et-f-e-g-n-e, not sense; same source missing
 
-Images: `img/` (git-ignored). Crops `grp_*.jpg` show each cipher group at native resolution.
+## Escalation
+
+- [x] siblings: fr. 4715 f. 2 (same cipher, interlinear) fetched at full resolution, 29 lines viewed, ~50 words aligned (`fr4715_f2_aligned.txt`); lines 7, 9-11, 13, 16, 18, 21-29 not aligned sign by sign
+- [x] clear-pages: the letter itself is clear except the 14 runs; its context gave the cribs
+- [x] known-keys: the three keys bound in fr. 3413 (nos. 53, 61, 69) tested, none fits; Tomokiyo's Nevers-Piles table used; Nevers-Pellevé and Nevers-Guise tables do not fit
+- [x] print: no edition of no. 62 found; Tomokiyo's cryptiana nevers.htm is the only discussion
+- [x] key-rebuild: key extended from fr. 4715 f. 2 and Tomokiyo; constrained word search (fr-gutenberg lexicon) over C, I, V2
+- [x] retry: every unread run (S1 ends, S2, C, G, H, I, V2) re-decoded with the extended key and regraded; S2, G, H and I now read. Still possible: a full sign-by-sign transcription of fr. 4715 f. 2 (lines 7, 9-11, 13, 16, 18, 21-29) might give τ, ʃ°, Ƃ or the n/a pair; fr. 3612 (not digitised) is the real key source
+
+Images: `img/` (git-ignored). Full-resolution pages `btv1b52510705j_f259-261_full.jpg`, `btv1b52509819x_f17/18_full.jpg`,
+line crops in `img/g4715/`.

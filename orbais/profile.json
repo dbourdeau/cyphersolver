@@ -21,16 +21,16 @@
     "source": "No decipherment on the letter. Tomokiyo (cryptiana nevers.htm) identified the Nevers-Piles cipher and the name Cassin only."
    },
    "length": {
-    "tokens": 90,
+    "tokens": 91,
     "unit": "symbols",
-    "measured": false,
-    "file": "solve.py"
+    "measured": true,
+    "file": "no62_cipher.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "Gallica images of ff. 126-127, cipher groups cropped at native resolution (img/, git-ignored)",
+    "source": "Gallica full-resolution images of ff. 126v-127r (canvases 260-261), cipher runs cropped at native resolution (img/, git-ignored)",
     "image_quality": "unknown",
-    "notes": "No plain ciphertext file: the ten cipher groups are written as glyph-label lists in solve.py; counted there (90 signs, not by --measure, so measured false). NOTES say about 90 signs in about 10 groups."
+    "notes": "no62_cipher.txt: the 14 cipher runs as sign tokens, 91 signs, measured with --measure --drop-first (22 Sept 2026). Replaces the glyph lists in solve.py."
    }
   }
  ],
@@ -41,7 +41,7 @@
   ],
   "summary": "Tomokiyo's Nevers-Piles symbol alphabet with homophones and code signs for common words and titles, used for short runs in a clear French letter.",
   "symbol_kind": "digits and symbols",
-  "distinct_symbols": "unknown",
+  "distinct_symbols": 41,
   "diacritics": {
    "used": "unknown"
   },
@@ -54,7 +54,7 @@
     "common words",
     "titles"
    ],
-   "unread_groups": 4
+   "unread_groups": 3
   },
   "nulls": {
    "present": "unknown"
@@ -62,8 +62,8 @@
   "key_order": "unknown",
   "word_division": "partial",
   "doubled_letters": "unknown",
-  "sibling_key": "Tomokiyo's partial Nevers-Piles table (from fr. 3612 f. 9, not digitised) and BnF fr. 4715 f. 2 (Guise to Nevers 1586, same cipher, interlinear decipherment); both used. The three keys bound in fr. 3413 (nos. 53, 61, 69) do not fit.",
-  "notes": "Some values disagree between Tomokiyo's table and the cribs (his b=u, m=r, 8=c; cribs give p, o, t); in fr. 4715 plain m is r, in no. 62 tailed m is o. Signs are letter-shaped glyphs, digits and graphic signs; symbol_kind approximates this mix."
+  "sibling_key": "Tomokiyo's partial Nevers-Piles table (from fr. 3612 f. 9, not digitised) and BnF fr. 4715 f. 2 (Guise to Nevers 1586, same cipher, interlinear decipherment; ~50 words aligned in fr4715_f2_aligned.txt); both used. The three keys bound in fr. 3413 (nos. 53, 61, 69) do not fit.",
+  "notes": "Some values disagree between Tomokiyo's table and the cribs (his b=u, m=r, 8=c; cribs give p, o, t); in fr. 4715 plain m is r, in no. 62 tailed m is o. Signs are letter-shaped glyphs, digits and graphic signs; symbol_kind approximates this mix. 22 Sept: 41 distinct signs in no. 62 (measured). Homophones confirmed: n = ◻/Ħ/H, o = tt/m(tailed)/⋕, m = ∇/x, e = θ/æ, i = 9/ħ/ɸ, u/v = ɔ/φ/b. Codes: ⌘ = Mr, Ƒ = le, n = et, ʃ = jay, 1 = de."
  },
  "conditions": {
   "prior_solution": {
@@ -83,14 +83,16 @@
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
   "tools": [
    "glyph annealer in clear-text context with French 6-gram LM (solve.py)",
-   "constrained word search (wordsearch.py, ws2.py)"
+   "constrained word search (wordsearch.py, ws2.py)",
+   "decode62.py: key with per-value source, reading and measured fraction",
+   "constrained word search over the fr-gutenberg lexicon (lang/corpora), scratch"
   ],
   "models": [
    "claude-opus-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-18",
-  "last_date": "2026-09-18"
+  "last_date": "2026-09-22"
  },
  "solution": [
   {
@@ -134,41 +136,98 @@
    "kind": "reading",
    "what": "With the added values: 'depeschera', '[code] mon maitre a esté retiré', 'vostre regne'; groups C, H, I and code signs ⌘ Ƒ τ ʃ unread.",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Fetched fr. 3413 ff. 126-127 and fr. 4715 ff. 2r-v at full IIIF resolution from Gallica; fr. 3612 checked again on Gallica SRU: not digitised.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Re-transcribed the 14 cipher runs of no. 62 at native resolution into no62_cipher.txt (91 signs, measured). Corrections: S1 sign is θ not Ⱥ; G sign after x is ⋕ not tt; signature ends Ħ (= n).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Viewed all 29 cipher lines of fr. 4715 f. 2 and aligned ~50 words with the interlinear (fr4715_f2_aligned.txt): adds ʃ = jay, ʃ-with-bar = le, x = m, tailed m = o, a = f, n = et, ⋕ = n, o = p, d = x, ω = a, Δ = z. Full sign-by-sign transcription not completed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Re-read Tomokiyo's nevers.htm and his Nevers-Piles table image: ⌘ = Mr, n = et, Ⱥ = f, ħ-form = i, b = u.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "S2 = 'le doien'; G = 'Mr le [τ] mon maistre'; H = \"j'ay veu ung advis\"; I = 'confirme' (constrained word search ranks it highest among sense readings); signature Baron confirmed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Constrained word search over C, I and V2 with the extended key (fr-gutenberg lexicon, up to 2 broken values).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Old guesses tested against the extended key: V2 gives et-f-e-g-n-e, so 'regne'/'Champaigne' fail; C gives v-o-p-a-e-?-s, no sense.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.6,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "NOTES: 'about 30 signs' open of the 90 signs in solve.py's ten groups (group-by-group tally of the readings in NOTES gives about 51-60 read)",
+  "fraction_read": 0.824,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode62.py over no62_cipher.txt: 91 cipher signs, 75 in runs that read as sense (code signs Ƃ, ʃ, τ and runs C, V2 counted unread). Same count over the 18 Sept readings: 47/91 = 0.516.",
   "codes_open": {
-   "open": 4,
+   "open": 3,
    "total": "unknown",
-   "tokens_open": "unknown"
+   "tokens_open": 3
   },
-  "grades": "unknown",
+  "grades": {
+   "H": 6,
+   "C": 6,
+   "M": 0,
+   "I": 0
+  },
   "verification": [
    "key confirms",
    "historical consistency"
   ],
   "gaps": [
    {
-    "item": "Code signs ⌘ Ƒ τ ʃ (title/subject codes in groups S1 and G)",
+    "item": "S1 first sign Ƃ (subject of depeschera)",
     "blocker": "open-codes",
-    "detail": "No key entry; context suggests 'Monseigneur le Cardinal' for ⌘ Ƒ τ."
+    "detail": "single code sign, no entry in Tomokiyo or the aligned part of fr. 4715 f. 2"
    },
    {
-    "item": "Group S2 'Ƒ 3 tt h Ⱥ ◻' (le doyen? a guess)",
-    "blocker": "not-attempted",
-    "detail": "Would need more sign values from a full transcription of fr. 4715 f. 2."
+    "item": "S1 last sign ʃ after depeschera",
+    "blocker": "open-codes",
+    "detail": "jay value does not fit here"
    },
    {
-    "item": "Groups C, H and I",
-    "blocker": "not-attempted",
-    "detail": "NOTES name the next step: a full transcription of fr. 4715 f. 2 (~900 signs, interlinear decipherment) to recover the key; not done."
+    "item": "G code τ after Mr le",
+    "blocker": "open-codes",
+    "detail": "probably Cardinal; no key entry"
+   },
+   {
+    "item": "Run C φ tt o V æ ʃ° ÷",
+    "blocker": "no-key-material",
+    "detail": "known values give v-o-p-a-e-?-s, not sense; fr. 3612 not digitised"
+   },
+   {
+    "item": "Run V2 n a æ η ◻ θ",
+    "blocker": "no-key-material",
+    "detail": "known values give et-f-e-g-n-e, not sense; fr. 3612 not digitised"
    }
   ],
-  "notes": "NOTES.md has no '## Remaining gaps' or '## Escalation' section; the gaps above are sourced from its 'Open groups' and 'Other sources tried' sections. The letter's substance is in clear."
+  "notes": "Letter substance is in clear. Cipher runs: depeschera … le doien; la protection; Cassin; vostre […]; Mr le [τ] mon maistre; j'ay veu ung advis qui confirme; Baron. Grades count cipher runs (decode62.py READ): H = protection (2 runs), Cassin, vostre, stre, Baron; C = de-pes, chera, le doien, Mr le … mon mai, j'ay veu ung advis, confirme."
  }
 }
