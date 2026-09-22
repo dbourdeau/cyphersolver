@@ -1,0 +1,125 @@
+{
+ "schema_version": 1,
+ "target": "r8870",
+ "title": "Numeric code letter ending 'Duplicata', BL Add MS 32280 ff. 1-2 (DECODE R8870)",
+ "documents": [
+  {
+   "id": "ff1-2",
+   "shelfmark": "BL Add MS 32280 ff. 1-2; DECODE R8870",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves, on DECODE or among the volume's key records."
+   },
+   "length": {
+    "tokens": 901,
+    "distinct": 463,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE scans IMG_R8870_I41130_P1-P4",
+    "image_quality": "good",
+    "notes": "Numeric groups 1-1647; hyphens join groups into words; ends 'Duplicata'."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Numeric code of about 1,650 groups, with hyphenated syllable compounds; flat distribution (463 types in 901 tokens).",
+  "symbol_kind": "digits",
+  "distinct_symbols": 463,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Ends 'Duplicata'; companion f. 3 (R8871) is an unrelated trigram code."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "none found on DECODE or among the 27 key records of Add MS 32280",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "group statistics",
+   "key-record comparison (subagent)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Used R8870 images downloaded in the r8871 session.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed ff. 1r-2r: 901 numeric groups.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "statistics",
+   "what": "463 distinct, 257 hapax, max 1647: flat large code.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Tested R8890 (French 6001+) and R8894-R8919 (Dutch 1823-42) by range and Principal frequency lists.",
+   "result": "failed",
+   "date": "2026-09-21"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Needs the key or a decipherment; ciphertext-only rebuild not feasible at 901 tokens.",
+  "gaps": [
+   {
+    "item": "whole letter (901 groups)",
+    "blocker": "no-key-material",
+    "detail": "no key on DECODE or in the volume's key records"
+   }
+  ]
+ }
+}
