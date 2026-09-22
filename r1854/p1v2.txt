@@ -1,0 +1,63 @@
+# R1854 p.1 (IMG_R1854_I8411_P1), Pandolfo Malatesta to Gianfrancesco Gonzaga, Rome 22 Apr 1428.
+# SECOND-PASS transcription (22 Sept 2026) from fresh 8-16x autocontrast crops of every cipher line.
+# Lines numbered by MANUSCRIPT text line (L01 "Magnifice...", L04 "... decrevi ne", L14 "sua hon. sorore");
+# only lines carrying cipher are listed. {word} = clear Latin word kept for context (not a cipher sign).
+# Three runs: RUN1 L04 end -> L06 "donec"; RUN2 L07 end -> L09 "precor"; RUN3 L10 end -> L13 "Recommendo".
+# Source resolution is ~15 px per sign: fine marks are at the limit of what the scan shows.
+#
+# LEGEND: signs
+#   ss  = long double s (two descending ſ strokes joined by one top curl running right)
+#   n   = eta: arch with the right leg descending below the line (η/ɳ); L11 "I . n" is a looped variant
+#   A   = arch with no descender (∩), left foot often curled; first pass 'a'
+#   H   = plain H, crossbar only between the uprights
+#   H#  = H whose crossbar(s) run out on both sides (‡‡ / #-like)
+#   I   = I with top and base bars (no serif-less form seen)
+#   cc  = two joined c's (always a pair; never ct, never dotted)
+#   Z   = 5-like sign: flat top bar, down-stroke bending into a long descender (Ƽ/ʕ); first pass '5'
+#   Z3  = small crossed ʒ (ꝫ-like, several strokes), L12 "Z Z3 Z" only; first pass '5' (maybe a corrected Z)
+#   bz  = ligature: tall stem + small tailed ʒ (ƀʒ); always one unit
+#   K   = stem with a closed triangular bowl/check at the right (ꝁ-like); first pass 'B'
+#   Xb  = gamma/x whose lower half closes into a bowl (ɣ with loop, "Ȣ"); first pass 'x', '&' or '8'
+#   x   = plain crossed x, often with a long lower-left tail
+#   y   = psi (ψ)
+#   9   = small loop sitting on a straight stem (♀/ꝗ-like, loop centred)
+#   q   = q-form: bowl left of the stem (L07 "valeat q" only); maybe a 9 variant
+#   oo  = two joined loops (ꝏ/ω); open-topped ω forms not separable from closed ones at this resolution
+#   v   = v, left arm longer
+#   vb  = v whose right arm curls into a small loop (ʋ/ɒ), L05 only (2x); maybe a v variant
+#   8   = figure 8
+#   4   = 4/ɥ-like sign with a tail sweeping left (L11 "8 4 8")
+#   +   = plain cross
+#   t+  = cross with a small ring on the left arm / at the crossing (⌖)
+#   *   = asterisk / double x (✱, ⋇)
+#   O   = omega Ω (closed bowl with feet bar)
+#   P   = pi Π with left leg
+#   F   = T with extra bar (Ŧ), L05 only
+#   g   = flat-topped ʒ/g with descender (ꞡ), L05 only
+#   &   = grey blot (ring + cross, smudged or corrected sign), L08 only
+# LEGEND: separators / marks (tokens kept in place; the solver may drop them)
+#   //  = double oblique stroke        /  = single oblique (only between clear and cipher, L10)
+#   |   = faint thin vertical/oblique stroke through or between signs (lighter ink; maybe a later word divider)
+#   :   = colon                        ... = three (or four) dots           .  = single mid-height dot
+# Descenders of the line above that cross a sign (p of ipsam/premissare/amplitudinem) are ignored.
+#
+L04: {decrevi} {ne} cc ss Z
+L05: K bz Z + n A I // x : Z ... H ss . t+ vb + y H bz Z | oo 9 Z F A cc // Z | H# n 8 * : // cc ... 8 bz K cc O n H 9 + y A cc : ss | g cc ss 8 vb 8 bz
+L06: x n H y I {donec} {sciam}
+L07: {quo} {modo} {valeat} q x Z * : ss cc //
+L08: Z H bz ss // A y | n I ss : 8 I v cc t+ Z O n A cc // v O H . & H# // A oo bz n | ss Xb H n y O ... I H // ss Z // * H# bz cc n ss P n H I // 8 bz Z
+L09: ss I ... ss n A y H n oo n P // oo bz {precor} {itaque}
+L10: {negligere} / cc ss n v ... K I n ss H n + A Xb | ss 9 + A bz P // oo
+L11: : ss oo ss // I . n ss H // oo bz ... H cc H# ss | x ss A n bz A P v H ss ... I K ss O : I Xb | * H# v A // 9 ss ... cc bz 8 4 8 : cc oo : ss Z n
+L12: H n A bz Z v Z // ss ... | Z v H Xb H n A v Z I H 9 | cc v ss // A ... K 9 oo // 8 bz Z Z3 Z 9 | I n I ss A cc // I | n I // I n H : ss cc ss bz A
+L13: cc ss | y I // ... ss Z K // v oo ... oo // Xb A n H ss cc // K bz I . {Recommendo} {me}
+#
+# FREQUENCIES (signs 262, excluding separators): ss 32, n 25, H 20, cc 19, Z 19, I 19, A 18, bz 17, oo 11, v 10,
+#   8 9, K 7, y 7, 9 7, + 5, H# 5, O 5, Xb 5, x 4, * 4, P 4, t+ 2, vb 2, F 1, g 1, q 1, & 1, 4 1, Z3 1
+# separators: // 24, | 13, ... 12, : 10, . 4, / 1
+# DIFFERENCES FROM p1_tokens.txt (266 signs; line labels below are FIRST-PASS numbers L01-L10 = my L04-L13):
+#   first-pass 'x' (8) = x (4) + Xb (3) + 1 duplicate;
+#   '&' L05b ("ss & H") = Xb; L07 "a 8" -> "A Xb"; first-pass L08 "ss x ss a x ss a n" had a duplicated
+#   "a x ss" (overlapping crops) -> "ss | x ss A n"; first-pass L06 "ss 5 n a y" -> "ss n A y" (no Z there);
+#   L09 "5 5 5" -> "Z Z3 Z"; L04 "9 x" -> "q x"; L02 two 'v' -> 'vb'; single dots '.' and faint '|' strokes
+#   recorded (first pass folded them into '_' or into t+).
