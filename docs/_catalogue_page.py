@@ -1,6 +1,7 @@
 """Build docs/catalogue.html and the tables in ../CATALOGUE.md from ../catalogue.json.
 
-Run from docs/:  python _catalogue_page.py   then   python _build_site.py   (nav, footer, contents strip).
+Run from docs/:  python _catalogue_page.py   (it runs _build_site.py afterwards for the nav, footer and contents
+strip; a catalogue.html left with the bare <!-- site:nav --> marker has no navigation bar).
 
 catalogue.json is the single source: entries with 1-5 scores for importance, solvability and difficulty.
 The page embeds the JSON and computes a priority score client-side from adjustable weights; it also renders a
@@ -323,3 +324,5 @@ var hm=/^#e(\\d+)$/.exec(location.hash);if(hm&&rows[hm[1]]){{var r0=rows[hm[1]].
 if __name__ == '__main__':
     update_md()
     build_html()
+    import subprocess, sys
+    subprocess.run([sys.executable, '_build_site.py'], check=True, cwd=pathlib.Path(__file__).parent)
