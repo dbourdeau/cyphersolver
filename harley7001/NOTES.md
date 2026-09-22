@@ -61,4 +61,5 @@ eye over him". This matches the clear text that follows it.
 - [x] known-keys: R8694 (Browne, Add MS 72438) tried first and failed; R9115 fits
 - [x] print: web and Windebank literature searched; letter not printed or calendared (Harleian, not in CSP Domestic)
 - [x] key-rebuild: alphabetical bracketing of the code filled the blanks as conjectures (524 return, 562 secure, 573 they, 660 willing ...; 600 take is on the key)
+- [x] key-rebuild (LM): en-1640s ranking of bracket-consistent candidates for the 13 blanks (`lmfill.py`) does not discriminate (prefers the shortest word, e.g. come/he/of); no conjecture upgraded
 - [x] retry: all groups re-run with the corrected glyph readings (φ, Δ, ɔ, δ); 191 of 215 read from key values, 11 more from rebuilt values
