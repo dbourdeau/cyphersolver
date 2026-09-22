@@ -1446,7 +1446,7 @@ def process(path):
         s = re.sub(r'<script src="home\.js[^"]*" defer></script>\n?', '', s)
         s = re.sub(r'(<section class="hero">.*?)(\s*<div class="jump">)', lambda m: m.group(1) + '\n' + live_html() + m.group(2), s, count=1, flags=re.S)
         s = s.replace('</body>', f'<script src="home.js?v={VERSION}" defer></script>\n</body>', 1)
-        FEATURED =['raince', 'hesse1603', 'catinat1691', 'voynich', 'feuquieres', 'armstrong', 'lucca', 'warsaw', 'richelieu', 'sunyatsen']
+        FEATURED = ['raince', 'hesse1603', 'catinat1691', 'voynich', 'feuquieres', 'armstrong']
         feat = [next(p for p in PAGES if p['slug'] == f) for f in FEATURED]
         rest = sorted([p for p in PAGES if p['slug'] not in FEATURED], key=lambda p: ({'solved': 0, 'found': 1, 'partial': 2, 'stuck': 3}[p['st']] if p['slug'] not in ('famous', 'solved') else 4, -p['y']))
         row = lambda p: (f'  <li><a href="{p["slug"]}.html">{mini_thumb(p["slug"], "rth") or "<span class=rth></span>"}<span class="st {p["st"]}">{p["stt"]}</span><span class="t">{p["title"]}</span>'
