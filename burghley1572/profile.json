@@ -1,0 +1,134 @@
+{
+ "schema_version": 1,
+ "target": "burghley1572",
+ "title": "Lord Burghley to Francis Walsingham, Audley End, 2 Sept 1571 (BL Harley MS 260 ff. 143-145; DECODE R8357)",
+ "documents": [
+  {
+   "id": "R8357",
+   "shelfmark": "British Library, Harley MS 260 ff. 143-145; DECODE R8357",
+   "date": "2 Sep 1571",
+   "year": 1571,
+   "country": "England",
+   "route": "Audley End -> Paris",
+   "language": "English",
+   "pages": 6,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the images; Digges 1655 pp. 123-124 prints the groups undeciphered."
+   },
+   "length": {
+    "tokens": 4,
+    "distinct": 4,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher_groups.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Authenticated DECODE images IMG_R8357_I38609_P1-P6 (letter-book copy)",
+    "image_quality": "good",
+    "notes": "One cipher line on f.143v; signs and numbers mixed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "Numbered code groups with sign affixes, used in two short spots of an otherwise clear letter; key unknown.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Digges, The Compleat Ambassador (1655) pp. 123-124 prints the letter with the cipher undeciphered",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "Selected the target; the DECODE session cookie was supplied earlier.",
+  "tools": [
+   "DECODE authenticated image download",
+   "archive.org full text (Digges 1655)",
+   "British History Online CSP Foreign ix",
+   "Tomokiyo cryptiana"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Downloaded the six DECODE R8357 images with the saved cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Read the clear letter: Burghley to Walsingham, Audley End, 2 Sept 1571 (not 1572); the only cipher is two items on f.143v.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Digges 1655 prints the letter pp. 123-124 with the groups undeciphered; CSP Foreign ix does not calendar it.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Tomokiyo's Cecil-Norris table (norreys1567) applied: letter-alphabet system, gives nonsense on these numbered groups.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Checked the eight other Harley 260 DECODE records (R8356, R8358-R8364) for a key or decipherment: none.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [],
+  "gaps": [
+   {
+    "blocker": "no-key-material",
+    "item": "f.143v item 1 ʒ368"
+   },
+   {
+    "blocker": "no-key-material",
+    "item": "f.143v item 2 45 □477ה ⌐□⌐418"
+   }
+  ],
+  "notes": "Two code items, no key anywhere; letter otherwise clear and printed by Digges. DECODE date/receiver/place corrections queued."
+ }
+}
