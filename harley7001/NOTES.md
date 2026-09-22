@@ -56,7 +56,7 @@ eye over him". This matches the clear text that follows it.
 - code groups 90, 160, 319, 359, 444, 452, 455, 487, 539, 650, 673, 718 (x2) - blocker: no-key-material; blank in the only surviving key reconstruction (R9115), each occurs once or twice, conjectured from context and alphabetical slot (6% of tokens; 203 done and 729 Court were later found as side notes on the key sheet)
 
 ## Escalation
-- [x] siblings: R7767 (Harley 7001 f. 202, 1645) is a different Committee of Both Kingdoms cipher; Add MS 32256 key volume (R9113-R9219) searched by correspondent; only R9115 is Windebank's
+- [x] siblings: R7767 (Harley 7001 f. 202, 1645) is a different Committee of Both Kingdoms cipher; Add MS 32256 key volume (R9113-R9219) searched by correspondent; only R9115 is Windebank's. All 1630-50 keys in the volume opened: R9114 (Laud 1636) is a blank printed grid, R9116 (Charles I to the Queen 1642) a frequency tally, R9117-R9119 are 1644-45 royal keys; none carries Windebank values
 - [x] clear-pages: none; the clear text around the passages was used as context
 - [x] known-keys: R8694 (Browne, Add MS 72438) tried first and failed; R9115 fits
 - [x] print: Calendar of the Clarendon State Papers vol. 1 (1872, archive.org full text) grepped: Windebank's papers there stop at his flight (Dec 1640), no Reade letter, no 1641 key; web and Windebank literature searched; letter not printed or calendared (Harleian, not in CSP Domestic)
