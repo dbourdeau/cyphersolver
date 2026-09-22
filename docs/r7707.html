@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pseudo-letter cipher of 1728 &mdash; Attempted</title>
+<meta name="description" content="BL Add MS 32287 ff. 37-40 (DECODE R7707): one page of 205 invented cursive signs, docketed 4 August 1728, filed with the worksheets of a contemporary codebreaker who got no further than frequency counts. The signs were transcribed and checked against his tally. The text has a flat frequency profile (IoC 1.07), so it is not a simple substitution. Monoalphabetic, Vigenère and Quagmire-type attacks in seven languages failed. It stays unread.">
+<link rel="stylesheet" href="style.css?v=20260921e">
+<meta name="date" content="2026-09-22">
+<meta name="last-modified" content="2026-09-22">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="swieten1757.html"><span class="st solved">read</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html" aria-current="page"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="harley7001.html"><span class="st partial">read in part</span><b>Reade 1641</b><span class="yr">1641</span></a></li><li><a href="marburg1635.html"><span class="st solved">read</span><b>Marburg cipher report</b><span class="yr">1635&ndash;52</span></a></li><li><a href="harley286.html"><span class="st solved">read</span><b>D&rsquo;Ewes&rsquo;s cipher log 1635</b><span class="yr">1635&ndash;36</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">94</span><b>Solved</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">53</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">24</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">30</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 202 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <a href="catalogue.html">The Unsolved Catalogue</a>
+    <a href="atlas.html">Atlas</a>
+    <a href="keys.html">Key web</a>
+    <a href="secret.html">Secret letter</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <a class="ext" href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+<p class="kicker">Unknown sender &rarr; unknown recipient &middot; invented sign alphabet &middot; 1728 &middot; attempted, not read</p>
+<h1>A cipher of 1728 that its own codebreaker could not read</h1>
+<p class="sub">British Library, Add MS 32287 ff. 37&ndash;40 (DECODE R7707). One page of 205 cursive signs, filed with a codebreaker&rsquo;s frequency tables and a docket dated 4 August 1728.</p>
+<p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-22">22 September 2026</time></p>
+<div class="seal stuck" aria-hidden="true"><span>not read</span></div>
+</section>
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-documents">The documents</a><a href="#the-cipher">The cipher</a><a href="#what-was-tried">What was tried</a><a href="#what-would-finish-it">What would finish it</a><a href="#sources">Sources</a></nav>
+<div class="callout"><strong>Summary.</strong> The catalogue listed R7707 as a ciphered letter between unknown correspondents, with DECODE&rsquo;s volume span 1716&ndash;1836 as its date. The eight images show one cipher page, f. 37r: ten lines of invented cursive signs, 205 in all, each followed by a dot. The other leaves are a codebreaker&rsquo;s worksheets. They hold frequency tallies, contact tables, a list of the signs that occur doubled, and the guess &ldquo;l &ndash; vowel &ndash; e&rdquo;. There is also an unrelated household bill, and a docket, &ldquo;4 Aout 1728 / 31 Aout / 5 8bre&rdquo;. The codebreaker never reached a reading. The signs were transcribed here, and the counts agree with his tally on f. 40r. The index of coincidence is 1.07, which is flat. That rules out a simple substitution in any language. Monoalphabetic annealing in seven languages failed. So did Vigenère and Beaufort at periods 5 and 10, and a Quagmire-type search with an unknown sign alphabet. Two hundred signs are too few to break a polyalphabetic system without the key. The letter stays unread.</div>
+
+<h2 id="the-documents"><span class="num">01</span> The documents</h2>
+<figure><img src="r7707_lead.jpg" alt="The first four lines of f. 37r: cursive invented signs, each followed by a dot" loading="lazy"><figcaption>f. 37r, lines 1&ndash;4. On line 4, &ldquo;8 5e 8&rdquo; is written faintly.</figcaption></figure>
+<ul>
+<li><b>f. 37r</b>: the cipher, ten lines, 205 signs, no word division. About 27 distinct signs.</li>
+<li><b>f. 38r&ndash;v</b>: a first tally, with some signs struck out; a list headed &ldquo;Duplicates&rdquo;; tables of the signs before and after the commonest sign and after <i>l</i>.</li>
+<li><b>f. 39r</b>: an unrelated household account in English (bread, flour, milk, meat, sugar: 18s 11d).</li>
+<li><b>f. 39v</b>: the codebreaker&rsquo;s guesses: <i>l</i> a vowel, <i>e</i>; three other signs consonants.</li>
+<li><b>f. 40r</b>: a fair count of 26 signs, with a second &ldquo;Duplicates&rdquo; list.</li>
+<li><b>f. 40v</b>: docket <i>S.<sup>n</sup> 4 Aout 1728 / L.<sup>s</sup> 31 Aout / L.<sup>s</sup> 5 8bre</i>. It is in French and lists three letters.</li>
+</ul>
+<figure><img src="r7707_tally.jpg" alt="f. 40r: a column of cipher signs with dotted leaders and counts, and a list headed Duplicates" loading="lazy"><figcaption>f. 40r: the contemporary frequency count and the &ldquo;Duplicates&rdquo; list.</figcaption></figure>
+
+<h2 id="the-cipher"><span class="num">02</span> The cipher</h2>
+<p>The transcription (<code>ct.txt</code>) uses arbitrary labels for the signs. Its counts match the 1728 tally within a few units for every sign: the commonest sign has 14 against his 14, and <i>l</i> has 13 against his 16. The &ldquo;Duplicates&rdquo; are simply the signs that occur doubled in the text.</p>
+<p>The index of coincidence is 1.07, where 1.0 is random. A monoalphabetic substitution of French or English would give 1.7&ndash;2.0. There is no repeated trigram in 205 signs. The periodic index rises slightly at periods 5, 10 and 15 (1.25, 1.34, 1.29). That hints at a five-alphabet system, but columns of about 41 signs are too short to prove it.</p>
+
+<h2 id="what-was-tried"><span class="num">03</span> What was tried</h2>
+<ul>
+<li>Simple substitution by simulated annealing with the <code>lang/</code> 4-gram models: English, French, German, Dutch, Italian, Spanish, Latin. The best was about &minus;5.1 log-probability per letter; real text scores about &minus;2.5. There are no words.</li>
+<li>Vigen&egrave;re, Beaufort and variant Beaufort at periods 5 and 10. These took the order of the 1728 tally as the sign alphabet. None reads.</li>
+<li>An unknown sign alphabet combined with periodic shifts (Quagmire type), periods 5 and 10, French and English. None reads.</li>
+</ul>
+
+<h2 id="what-would-finish-it"><span class="num">04</span> What would finish it</h2>
+<p>Only outside material. That could be the key, or the other letters on the docket (31 August and 5 October 1728). More text in the same system would make a periodic attack feasible. The other DECODE records from Add MS 32287 (R7746&ndash;R7751) are Swedish keys of the 1830s, not this alphabet.</p>
+
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/r7707.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">05</span> Sources</h2>
+<ul>
+<li>British Library, Add MS 32287 ff. 37&ndash;40, images on DECODE, record <a href="https://de-crypt.org/decrypt-web/RecordsView/7707">R7707</a> (login).</li>
+</ul>
+<p class="muted">Transcription, scripts, notes and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/r7707"><code>r7707/</code></a>.</p>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; British Library, via DECODE R7707</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="palm1727.html" rel="prev">&larr; Palm 1727 1727</a><a href="sp106r597.html" rel="next">Stosch&ndash;Walton cipher instructions c. 1731 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="solve-replay.js?v=20260921e" defer></script>
+<script src="zoom.js?v=20260921e" defer></script>
+<script src="site.js?v=20260921e"></script>
+</body>
+</html>
