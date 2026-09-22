@@ -61,7 +61,7 @@ Raince's key.
 - same passage - blocker: too-short; 56 signs of 29 kinds, which a ciphertext-only homophonic attack cannot settle
 
 ## Escalation
-- [x] siblings: Clairambault 325 f. 67 (Calvimont, Biermann key) and Raince fr. 2984 checked; neither key fits
+- [x] siblings: Clairambault 325 f. 67 (Calvimont, Biermann key) and Raince fr. 2984 checked; neither key fits. BnF catalogue search for Gilbert Bayard's original letters: fr. 3005 no. 60, fr. 3010 no. 30, fr. 3046 no. 35 (Malines 1530, to Montmorency), fr. 2968 no. 49, fr. 3921 no. 30; none is the Toledo 1526 original and Tomokiyo reports no cipher in them. The original ("V. 41 f. 4") was not identified
 - [x] clear-pages: f. 84v is clear text (the letter continues); no decipherment on either image
 - [x] known-keys: Calvimont 1525/26 (Biermann) and Raince 1526 (Tomokiyo) tried, both ruled out
 - [x] print: Champollion-Figeac 1847 CCXVIII prints the letter and omits the cipher; Tomokiyo lists it as unsolved
