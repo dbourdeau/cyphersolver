@@ -1,0 +1,118 @@
+{
+ "schema_version": 1,
+ "target": "muxetula1531",
+ "title": "Giovanni Antonio Muscetula (Rome) to Charles V, 24 Oct 1531, AGS Estado leg. 853 doc. 91 (DECODE R9961, R9962)",
+ "documents": [
+  {
+   "id": "R9961",
+   "shelfmark": "AGS, Estado, leg. 853, doc. 91 (DECODE R9961; R9962 = its first leaf)",
+   "date": "24 Oct 1531",
+   "year": 1531,
+   "country": "Italy",
+   "route": "Giovanni Antonio Muscetula (imperial agent, Rome) to Charles V",
+   "language": "Spanish",
+   "pages": 24,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio",
+     "margin"
+    ],
+    "source": "contemporary decipherment bound as doc. 91 bis (AGS scans 021-023, paragraphs A, b, C, d keyed to the letter's margins); two blocks glossed in the margin (scans 009, 017)",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "decipherment sheet transcribed from DECODE images; cipher not transcribed",
+    "image_quality": "good",
+    "notes": "About 90 cipher lines on scans 001-006, 009, 011-012, 017."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Luo Cifrario 22: homophonic sign alphabet with a few code signs (ba = Vuestra Magestad, sign for que, ll); Spanish.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "notes": "Key from Luo 2021 p. 637; not applied letter by letter."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "contemporary decipherment bound as doc. 91 bis of the same letter",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code with Opus 5, and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "image viewing"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Grepped Tomokiyo's AGS Estado page: R9962 is a subset of R9961, cipher Lu.22; no decipherment mentioned.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Searched Luo 2021 thesis: Cifrario 22 is Muscetula's key (p. 637); leg. 853 doc. 91 not in her corpus.",
+   "result": "worked"
+  },
+  {
+   "kind": "access",
+   "what": "Fetched R9962 (4) and R9961 (24) images with the shared cookie.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Viewed every page: scans 021-023 are a decipherment headed 'De Muxetula', paragraphs A, b, C, d; marginal decipherments on 009 and 017.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Paragraph letters match the letter's margin letters; decipherment openings continue the clear text before each block; code sign ba (V. Md.) sits where the decipherment has 'a V. Md.' in block C.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Read at the time; decipherment bound as doc. 91 bis. Catalogue entry 203 removed; no write-up."
+ }
+}
