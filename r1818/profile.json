@@ -1,0 +1,143 @@
+{
+ "schema_version": 1,
+ "target": "r1818",
+ "title": "Homemade cipher sheet 'Sami', Folkrörelsearkivet i Västerbotten, Umeå (DECODE R1818)",
+ "documents": [
+  {
+   "id": "p1-p2",
+   "shelfmark": "Folkrörelsearkivet i Västerbotten, Umeå (no archive reference on DECODE); DECODE R1818",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Sweden",
+   "route": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment, key or reference on DECODE, in print or online."
+   },
+   "length": {
+    "tokens": 355,
+    "distinct": 113,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_sample.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE scans IMG_R1818_I8263_P1.png, IMG_R1818_I8264_P2.png (2006 x 1358 px, about 125 px/cm)",
+    "image_quality": "poor",
+    "notes": "Six-line sample of p. 2 (355 space-separated units); the full sheet, about 7,500 signs, is not transcribed. About half the signs doubtful; the scan is too coarse for this crowded, overwritten hand."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "Homemade cipher (letters, invented symbols and digits) mixing Latin letter shapes, invented signs (ʒ-form, E-forms, circled a, face, hearts, X, beta) and numerals, with commas as word dividers; repeated word-level units suggest code signs beside a letter substitution.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "DECODE name 'Sami'; created on DECODE by Beáta Megyesi, 16 Oct 2020. Region field is the unfilled form default."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "none found on DECODE, in print or online",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "image crops",
+   "web search",
+   "DECODE API"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched the R1818 record page, API metadata and both images with the DECODE session cookie.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Web searches on Folkrörelsearkivet i Västerbotten, DECRYPT/Megyesi and 'Sami' cipher, and Swedish chiffer/lönnskrift terms.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Checked the full DECODE list and R1810-R1826 for other records of this holder or a key: none.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Tested whether the sheet is plain Swedish in an old cursive hand: the letter runs do not read as Swedish, German or Latin, and invented signs and numerals are mixed in; it is a cipher.",
+   "result": "ruled out",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed six lines of p. 2 at 3x zoom as a sample (355 units); about half the signs doubtful at 125 px/cm.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "statistics",
+   "what": "Repeated units in the sample ('F S , ʒCt' x2, 'y S ,'/'v S ,' x3, 'bʒa' x4, 'Nr' x4) suggest word signs beside a letter substitution.",
+   "result": "partial",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Closed unread: needs a scan at 600 dpi or more (or physical access at Umeå) for a sign-accurate transcription; no key, crib or sibling exists.",
+  "gaps": [
+   {
+    "item": "both pages (about 7,500 signs)",
+    "blocker": "illegible",
+    "detail": "only scan is about 125 px/cm; crowded, overwritten hand; needs a new scan or physical access"
+   },
+   {
+    "item": "key / crib",
+    "blocker": "no-key-material",
+    "detail": "no key, crib, sibling or reference on DECODE, in print or online"
+   }
+  ]
+ }
+}
