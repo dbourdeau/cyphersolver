@@ -719,7 +719,7 @@ PAGES = [
          rights='Biblioth&egrave;que nationale de France'),
     dict(slug='gonzaga1590', label='Mantua to Nevers 1590', year='1590', y=1590.71, place='Mantua &rarr; Nevers', st='partial', stt='read in part',
          title='Vincenzo Gonzaga, Duke of Mantua, to the duc de Nevers (1590)',
-         blurb='A letter of 17 September 1590 from the Duke of Mantua to his uncle Nevers, with long passages in unbroken two-digit figures, catalogued as not deciphered and credited to &ldquo;the duke of Nevers&rdquo;. The key filed in Nevers&rsquo;s papers, BnF fr. 3995 f. 64 (Tomokiyo no. 35), reads it unchanged: about 88% of the cipher. Mantua passes on the rumour that Sixtus V was poisoned by the Spaniards and assures Henri IV of his devotion against the common enemy.',
+         blurb='A letter of 17 September 1590 from the Duke of Mantua to his uncle Nevers, with long passages in unbroken two-digit figures, catalogued as not deciphered and credited to &ldquo;the duke of Nevers&rdquo;. The key filed in Nevers&rsquo;s papers, BnF fr. 3995 f. 64 (Tomokiyo no. 35), reads it unchanged: about 93% of the cipher. Mantua passes on the rumour that Sixtus V was poisoned by the Spaniards and assures Henri IV of his devotion against the common enemy.',
          quote='che la morte del Papa sia stata procurata con veleno da Spagnoli',
          rights='Biblioth&egrave;que nationale de France'),
     dict(slug='champagne1590', label='Champagne 1590', year='1590&ndash;91', y=1590.5, place='Paris, Champagne &rarr; Nevers', st='solved', stt='read',

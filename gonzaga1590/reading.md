@@ -13,11 +13,11 @@ Mi trovo debitore di risposta à quattro di V. Ecc.a, l'una del 12, l'altra del 
 l'ultima del 6 Agosto, alle quali andarò rispondendo per ordine, pregandola ad iscusarmi se hò tardato à farlo,
 perche la morte di N. S.re successa alli 27 del passato à 23 hore, n'è stata cagione, parendomi ispediente che l'E. V.
 sia de primi avisati del successore che piacerà à Dio darci, non lasciando di dirle, che è opinione di molti, che la
-morte del Papa **sia stata procurata con veleno da Spagnoli**, non lo potendo **far risolvere a favor loro [..]
-contro [..] la conservatione** del quale **e desiderata da tutti i buoni [..]** conoscendosi P.— **[..] cotesta
-potenza, {M} li medesimi Spagnoli procureranno di sottoporsi[?] a ognuno [..] S. Ecc.za da che mi spiace** per i molti
+morte del Papa **sia stata procurata con veleno da Spagnoli**, non lo potendo **far risolvere a favor loro
+contro cotesto Regno di Francia, la conservatione** del quale **e desiderata da tutti i buoni Italiani,** conoscendosi P.— **che, anichilata cotesta
+potenza, {M} li medesimi Spagnoli procureranno di sottoporsi a ognuno [..] S. Ecc.za da che mi spiace** per i molti
 buoni **effetti che mi prometto che ne debbano seguire**, et veram.te da tutti i Potentati Italiani non è cosa più
-desiderata della conversione del Rè al Catolicismo, **il che seguendo [..] chiaramente aperta alla via della
+desiderata della conversione del Rè al Catolicismo, **il che seguendo, si vede chiaramente aperta alla via della
 grandeza a di che [..] a questo Regno di Francia.**
 
 S'io non hò mandato sin hora altro huomo in iscambio del Malegnano, è proceduto dalla carestia de soggetti fedeli,
@@ -47,8 +47,8 @@ quello che V. E. mi scrive colla sua del
 
 ## f. 93r
 
-6 d'Agosto, presupongo che questa mia la troverà **presso S. M.tà, alla quale la priego far [..]za per me, con
-certificarla della ottima mia volontà verso il suo Re, al servitio di [●] si come [{q-sign}] hò manc[a]to [..] e lo
+6 d'Agosto, presupongo che questa mia la troverà **presso S. M.tà, alla quale la priego far riverenza per me, con
+certificarla della ottima mia volontà verso il suo Re, al servitio di [●] si come [{q-sign}] hò [..] in quello
 per hò potuto sin h[..] di darne c[..] parte, e si stia sicura la S. M.tà per[?] oltre la mia particolar
 inclinatione, et verso cotesta corona, et parimente la con S. M.tà gli interessi contro il [..] comune nemico, me le
 renderà sempre devotissimo servitore, come a tempo et luogo conveniente conoscerà chiaramente da gli effetti.**
@@ -65,28 +65,28 @@ inviare le lettere mandatemi dall'E. V. alla quale bacio le mani pregandole da D
 
 ## Tokens read vs unread
 
-One token is one figure pair or one sign. Totals come from the digit lines (digits ÷ 2 + signs, the {blot} not
-counted). Unread counts are estimated from the length of each unread stretch.
+One token is one figure pair or one sign; nulls count as read. Totals are measured from the digit lines of
+`ct_92r.txt`, `ct_92v.txt`, `ct_93r.txt` (digits ÷ 2 + signs, the {blot} not counted), after the blind 4x re-read of
+21 Sept removed the spurious digits it found (hence 926, not the earlier 945). Unread counts are the lengths of the
+unread stretches, counted in pairs.
 
 | page | tokens | unread | read |
 |---|---|---|---|
-| f. 92r | 345 | 73 | 272 |
+| f. 92r | 328 | 37 | 291 |
 | f. 92v | 233 | 6 | 227 |
-| f. 93r | 367 | 37 | 330 |
-| **total** | **945** | **116** | **829 (88%)** |
+| f. 93r | 364 | 17 | 347 |
+| **total** | **926** | **60** | **866 (93.5%)** |
 
-Unread pieces:
+Read in the blind re-read (21 Sept, 4x, digits taken before the old transcription was opened): 92r "contro cotesto
+Regno di Francia", "tutti i buoni Italiani", "anichilata cotesta potenza", "sottoporsi" as written, "si vede
+chiaramente"; 93r "far riverenza per me", "in quello". Two stray digits (92r l2, l4) are left out as writer's slips.
 
-- 92r l2 (~11): "[59] contro c [62][51] tm sto": a code group 59 and a stretch that has lost phase.
-- 92r l3b (~12): after "buoni", "itatal {blot} iiant": the blot covers one figure.
-- 92r l4 (~8): the opening "ancach.ila aia" before "cotesta potenza".
-- 92r l5 (~10): "la nda a a di" before ⊡. The reading "sottoporsi" needs two corrections to the digits.
-- 92r l7 (~6): "o sti ued me" after "il che seguendo".
-- 92r l8 (~26): the middle, "e tr.la acqu.. ati de acce a di acet [26 Inglesi] ae". Probably several slips by the
-  writer, and not fixed by the 3/9, 0/8 or 7/8 alternatives.
-- 92v (~6): the signs {0Δ}, {4-sign} and {9} are not in the key as read, plus "la mondezza a me" (dubitando stante la ..).
-- 93r l2 (~10): the word before "-za per me". "riverenza" fits the sense but not the digits as seen.
-- 93r l4 (~14): the q-like sign, the ● after "servitio di" (che does not fit the sense), and "ho manc[a]to [..]" (~12).
-- 93r l5 (~10): "sin h[ora]" (14 9 35 32 30 80) and "darne c[..] parte".
-- 93r l8 (~3): a looped code group (5/8 8 8, dotted) before "comune nemico". It reads like [Re di] Spagna or a name
-  code, but the figures are not certain.
+Unread pieces (each re-read independently at 4x twice; blocker: illegible, writer's slips or looped glyphs):
+
+- 92r l5 tail (~10): "la nda a a di" (30 13 16 16 21 22 22 38 21 37) before ⊡.
+- 92r l8 middle (~27): "e tr.la acqu.. ati de acce a di acet [26 Inglesi] ae" before "a questo Regno di Francia".
+  Writer's slips; re-read twice and run through the beam with any-digit substitution, no Italian.
+- 92v (~6): "la mondezza a me" (dubitando stante la ..). The signs {0Δ}, {4-sign}, {9} are nulls on the key.
+- 93r l4 middle (~9): the q-like sign and "11 13 16 36 30 23 33 35" between "si come" and "in quello".
+- 93r l5 (~6): "sin h[..]" (14 9 35 32 30 80).
+- 93r l8 (~2): a looped, dotted code group before "comune nemico".

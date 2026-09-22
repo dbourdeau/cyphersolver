@@ -1,6 +1,6 @@
 # Vincenzo Gonzaga (Mantua) to Louis de Gonzague, duc de Nevers, 17 Sept 1590 — BnF fr. 3979 ff. 92–93, DECODE R4176
 
-Status: read in part (about 88% of cipher tokens, estimated in reading.md; key complete from the archive)
+Status: read in part (866 of 926 cipher tokens, 93.5%, counted in reading.md; key complete from the archive)
 
 Session of 21 September 2026. Catalogue entry "Vincenzo Gonzaga, duke of Nevers → Louis Gonzaga". The sender is
 Vincenzo I Gonzaga, **Duke of Mantua** (DECODE's "duke of Nevers" for him is a slip), writing to his uncle Nevers.
@@ -22,7 +22,10 @@ not this letter).
 The key fits at once. On the death of Sixtus V (27 Aug 1590): "…che la morte del Papa **sia stata procurata con veleno
 da [Spagnoli]**…", "…**la conservatione** …", "…**desiderata da tutti i buoni**…", "…**cotesta potenza, li medesimi
 [Spagnoli]**…", "…**mi spiace** per i molti buoni **effetti che mi prometto che ne debbano seguire**…" (on the King's
-conversion to Catholicism) "…**chiaramente aperta alla** … **grandezza**…". Hand traps: 3/9 and 0/8 look alike; `beam.py`
+conversion to Catholicism) "…**chiaramente aperta alla** … **grandezza**…". The blind 4x re-read (21 Sept, `blind_92r.md`) added "…far risolvere a favor loro **contro cotesto
+Regno di Francia**, la conservatione del quale è desiderata da tutti i buoni **Italiani**, conoscendosi P. che,
+**anichilata** cotesta potenza, li medesimi Spagnoli procureranno di **sottoporsi** [as written] a ognuno…" and "…il che
+seguendo, **si vede** chiaramente aperta alla via della grandezza…". Hand traps: 3/9 and 0/8 look alike; `beam.py`
 resolves them with `it-cinquecento`.
 
 ## f. 92v (`ct_92v.txt`, 8 cipher lines)
@@ -37,7 +40,8 @@ alcuno {sign} conto della religione." Short passages: "{●} … [60]" before "h
 About half reads: "…certificarlo della ottima … volontà verso il suo Re al servitio {Γ}… si assicuri la {⊕}{⊖} oltre la
 mia particolar inclinatione e verso cotesta corona … parimente … gli interessi contro il … comune nemico me le renderà
 sempre devotissimo servitore come a tempo e luogo conveniente {●} conoscerà chiaramente da gli effetti." Here the writer's
-28 (u/v) looks like 27 (servitio, potuto, verso).
+28 (u/v) looks like 27 (servitio, potuto, verso). The blind 4x re-read (`blind_93r.md`) read "la priego **far riverenza** per me" (32 for 31, 27 for
+28) and "ho [..] **in quello** per ho potuto".
 
 In sum: Mantua reports the rumour that Sixtus V was poisoned by the Spaniards, welcomes Henri IV's expected conversion,
 and assures Nevers (for the King) of his devotion to the French crown against the "common enemy", a guarded pro-Bourbon
@@ -54,13 +58,15 @@ il Legato ha scritto in Italia", "{T} Monsignor" = "Di Monsignor" (flag-Γ).
 
 ## Remaining gaps
 
-The full working reading and the token count are in `reading.md` (829 of 945 tokens read, 88%, estimated).
+The full working reading and the token count are in `reading.md` (866 of 926 tokens read, 93.5%, counted; nulls
+count as read). Each stretch below was re-read independently at 4x twice (retry pass, then the blind re-read).
 
-- f. 92r l2 (~11 tokens), l4 (~8), l5 tail (~10), l7 (~6), l8 middle (~26): stretches that lose phase; writer's slips, not fixed by the 3/9, 0/8 or 7/8 look-alike alternatives in the retry pass - blocker: illegible; no other copy of the letter
-- f. 92r l3b (~12): figures under an ink blot after "buoni" - blocker: illegible; one image only
-- f. 92v "la mondezza a me" (~3) - blocker: illegible; digits as written give no sense (the three signs {0Δ}, {4-sign}, {9} there are nulls: Δ, crossed ♀ and hooked ρ are on the key's "Seguitano le Nulle" list, f. 64 upper right)
-- f. 93r l2 (~10), l4 (~14), l5 (~10): stretches that do not read ("-za per me", "ho manc[a]to", "sin h[ora]", "darne c[..] parte") - blocker: illegible; retry pass re-read them at 3x without a fit
-- f. 93r l8 (~3): looped, dotted code group before "comune nemico" - blocker: illegible; figures uncertain
+- f. 92r l5 tail (~10): "la nda a a di" before ⊡ - blocker: illegible; writer's slips, no other copy
+- f. 92r l8 middle (~27): writer's slips; re-read twice and run through the beam with any-digit substitution, no Italian - blocker: illegible
+- f. 92v "la mondezza a me" (~6) - blocker: illegible; digits as written give no sense (the signs {0Δ}, {4-sign}, {9} there are nulls on the key's "Seguitano le Nulle" list)
+- f. 93r l4 middle (~9): q-like sign and the stretch before "in quello" - blocker: illegible; looped glyphs
+- f. 93r l5 (~6): "sin h[..]" - blocker: illegible; writer's slips
+- f. 93r l8 (~2): looped, dotted code group before "comune nemico" - blocker: illegible; figures uncertain
 
 ## Escalation
 - [n/a] siblings: DECODE holds no other Mantua 1590 letter in this cipher; Tomokiyo's no. 35 entry names the use (Duke of Mantua, 1590) but lists no other letters, so none was opened
@@ -69,3 +75,4 @@ The full working reading and the token count are in `reading.md` (829 of 945 tok
 - [x] print: Tomokiyo nevers.htm and DECODE: no decipherment or edition of this letter
 - [n/a] key-rebuild: the key is complete from the archive sheet; the unread stretches are transcription or writer's slips, not missing key values
 - [x] retry: doubtful lines re-read at 3x by a subagent with 3/9, 0/8, 7/8 and 27/28 alternatives in beam.py; 92v and 93r mostly recovered, the stretches above remain
+- [x] retry: second independent blind re-read at 4x of every unread stretch, +56 tokens (blind_92r.md, blind_93r.md); the six stretches above remain

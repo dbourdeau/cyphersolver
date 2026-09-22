@@ -19,7 +19,7 @@
     "source": "No contemporary decipherment on the record; not deciphered in print or online (DECODE Non-decrypted; Tomokiyo lists the key only)."
    },
    "length": {
-    "tokens": 943,
+    "tokens": 926,
     "unit": "mixed",
     "measured": true,
     "file": "ct_92r.txt"
@@ -28,7 +28,7 @@
     "by": "llm from images",
     "source": "DECODE R4176 high-resolution strips, read at 3x; f. 92r by the main session, ff. 92v and 93r by two subagents",
     "image_quality": "fair",
-    "notes": "Unseparated two-digit figures. Counted as digits/2 plus signs over the non-comment lines (943; the blot not counted); _check_profile --measure splits on spaces and does not fit this format. reading.md's table gives 945. Files: ct_92r.txt, ct_92v.txt, ct_93r.txt (ct.txt a combined working copy)."
+    "notes": "Unseparated two-digit figures. Counted as digits/2 plus signs over the non-comment lines (926 after the blind re-read removed spurious digits; the blot not counted); _check_profile --measure splits on spaces and does not fit this format. Files: ct_92r.txt, ct_92v.txt, ct_93r.txt (ct.txt a combined working copy)."
    },
    "read": "read in part"
   }
@@ -143,13 +143,19 @@
    "what": "Retry pass: a subagent re-read the doubtful lines at 3x; about 829 of 945 tokens now read (88%); garbled stretches on f. 92r and f. 93r and three signs absent from the key remain.",
    "result": "partial",
    "date": "2026-09-21"
+  },
+  {
+   "kind": "transcription",
+   "what": "Blind re-transcription at 4x of every unread stretch by a subagent that had not seen ct_*.txt (blind_92r.md, blind_93r.md), compared with the old digits and decoded with beam.py/beam2.py: read contro cotesto Regno di Francia, buoni Italiani, anichilata, si vede, far riverenza, in quello; sottoporsi confirmed as written; +56 tokens; 92r l5 tail, l8 middle, 93r l4/l5/l8 and 92v stretch still do not read.",
+   "result": "partial",
+   "date": "2026-09-21"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "fraction_read": 0.88,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "gonzaga1590/reading.md token table (cipher tokens; [..] stretches counted as unread, lengths estimated)",
+  "fraction_read": 0.935,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "gonzaga1590/reading.md token table: 866 of 926 cipher tokens (digits/2 + signs counted from ct_*.txt; unread stretches counted in pairs; nulls as read)",
   "grades": "unknown",
   "verification": [
    "key confirms",
@@ -164,27 +170,32 @@
   "notes": "Archive key applied unchanged; Mantua on the rumoured poisoning of Sixtus V by the Spaniards and his devotion to the French crown.",
   "gaps": [
    {
-    "item": "f. 92r l2, l4, l5 tail, l7, l8 middle (~61 tokens)",
+    "item": "f. 92r l5 tail (~10 tokens)",
     "blocker": "illegible",
-    "detail": "writer's slips; not fixed by the look-alike alternatives"
+    "detail": "writer's slips; re-read at 4x twice"
    },
    {
-    "item": "f. 92r l3b (~12 tokens)",
+    "item": "f. 92r l8 middle (~27 tokens)",
     "blocker": "illegible",
-    "detail": "ink blot"
+    "detail": "writer's slips; beam with any-digit substitution gives no Italian"
    },
    {
-    "item": "f. 92v \"la mondezza a me\" (~3 tokens)",
+    "item": "f. 92v \"la mondezza a me\" (~6 tokens)",
     "blocker": "illegible",
-    "detail": "no sense as written; the three signs beside it are nulls on the key"
+    "detail": "no sense as written; the signs beside it are nulls"
    },
    {
-    "item": "f. 93r l2, l4, l5 (~34 tokens)",
+    "item": "f. 93r l4 middle (~9 tokens)",
     "blocker": "illegible",
-    "detail": "re-read at 3x without a fit"
+    "detail": "looped glyphs; re-read at 4x twice"
    },
    {
-    "item": "f. 93r l8 looped code group (~3 tokens)",
+    "item": "f. 93r l5 \"sin h..\" (~6 tokens)",
+    "blocker": "illegible",
+    "detail": "writer's slips"
+   },
+   {
+    "item": "f. 93r l8 looped code group (~2 tokens)",
     "blocker": "illegible",
     "detail": "figures uncertain"
    }
