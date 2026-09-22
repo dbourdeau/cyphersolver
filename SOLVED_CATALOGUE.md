@@ -151,6 +151,7 @@ but are not "solved" in the sense of the title.
 | Beale Paper no. 1 | 1885 | 14 Sept 2026 | Fabrication argued; book-cipher scan over Gutenberg negative | Argument, not proof |
 | Unknown sender → unknown recipient, BL Sloane MS 3188 ff. 109–169, DECODE R8506–R8530 (catalogue 138 + 139) | 17th c. | 21 Sept 2026 | English stroke shorthand, not a cipher: notes on Dee's spirit diaries and writings (Shippen) | Recognising shorthand from the images and the BL catalogue description |
 | W. Loeschner → unknown, ÖStA HHStA Chiffrenschlüssel Kt. 20 ff. 30–40, DECODE R2227 (catalogue 269) | 1 Jul 1816 | 21 Sept 2026 | Not a cipher: a clear memorandum on the Staatskanzlei cipher instruction; its number examples are glossed | Reading the heading, the signature and the glossed examples |
+| Stojan (a Serb prisoner) → aghas, knezes and kin, ÖStA HHStA Verschwörerakten Fasc. 327 Konv. D ff. 30–31, DECODE R688 (catalogue 270) | undated (bundle 1664–68) | 22 Sept 2026 | Not a cipher: the "graphic signs" are Cyrillic, a clear Serbian plea to be got out of the German prison | Recognising the script; transcribed, about a quarter of the words doubtful |
 
 ## 4. Found already solved by others (lists stale)
 

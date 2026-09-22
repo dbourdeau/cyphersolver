@@ -1,0 +1,109 @@
+{
+ "schema_version": 1,
+ "target": "r688",
+ "title": "Serbian prisoner's letter, HHStA Verschwörerakten Fasc. 327 Konv. D ff. 30-31 (DECODE R688)",
+ "documents": [
+  {
+   "id": "R688",
+   "shelfmark": "ÖStA HHStA, Ung. Akt. Spec. Verschwörerakten VII. Varia, Fasc. 327, Konv. D (Chiffres 1664-1668), ff. 30-31 (DECODE R688)",
+   "date": "unknown",
+   "year": 1664,
+   "country": "Austria",
+   "route": "unknown",
+   "language": "Serbian",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No cipher: the pages are plain Serbian written in Cyrillic (Church Slavonic spelling)."
+   },
+   "length": {
+    "tokens": 240,
+    "distinct": 178,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R688_I4036_P1, IMG_R688_I4037_P2",
+    "image_quality": "fair",
+    "notes": "Letter of Stojan (f. 30r-v), its postscript and a four-line slip (f. 31) transcribed line for line; about a quarter of the words doubtful or unread (blots, deletions, damaged slip)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "No cipher: a clear Serbian letter in Cyrillic script, catalogued as a simple substitution in graphic signs.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "DECODE lists it as a simple substitution in graphic signs; the signs are Cyrillic letters."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "none",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched DECODE R688 (2 images) and the nearest key record R707 with the session cookie.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "Looked at the images: the \"graphic signs\" are ordinary Cyrillic letters writing vernacular Serbian (Сїи листь писа Стоянь ... извадить из немачкий тамнице). No cipher; the R707 Latin numeric key is irrelevant.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed both pages and the slip line for line and gave an English gist: Stojan asks aghas, knezes and his Vlach kin to get him out of the German prison.",
+   "result": "partial",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "not a cipher",
+  "fraction_read": 1,
+  "verification": [
+   "none"
+  ],
+  "notes": "Not a cipher: clear Serbian Cyrillic letter of a prisoner, Stojan, asking to be freed from a German (Habsburg) prison; the transcription leaves about a quarter of the words doubtful. Writer's place and recipients only partly identified."
+ }
+}
