@@ -37,7 +37,7 @@ per-sign candidate sets (`beam.py`) and a word-aware beam using DTA word unigram
 fixes (o- read as ō, Ӿ read as #, the curved ℋ merged into #, the ɔo/ꝏo ligatures, dropped signs).
 
 Measured with `work/measure.py` (a word counts as read only when it carries no "?" and no more than one of its
-signs takes a value used nowhere else in the letter): **f.233 95.7%, f.235 96.1%, the f.234 column 65%,
+signs takes a value used nowhere else in the letter): **f. 233 96.4%, f. 235 96.1%, the f.234 column 65%,
 the whole letter about 89%.** The slip and the address leaf read 92%; the slip ends "Datum ut in litteris", which matches the faint later gloss over that line.
 
 ## What it says
@@ -71,7 +71,7 @@ the whole letter about 89%.** The slip and the address leaf read 92%; the slip e
 
 - f.234 column (P4a), about 35% of its words - blocker: needs-physical-access; the DECODE photograph takes this column at an angle, with the right margin outside the frame (line ends lost) and the lower third curved and faint; image P6, which would carry the rest of the leaf, is not in the record. A straight photograph of f.234 would close it.
 - the word signs ʒ (P4a l.03), Ω (P4a l.32) and K (f.235 l.11) - blocker: no-key-material; no key in the volume gives them and each occurs once or twice.
-- f.233 l.02 "furt", l.07 "uolgt", l.30-31, f.235 l.16 "trost hilft", l.20 "heist" - blocker: open-codes; single signs whose value occurs nowhere else in the letter, so the value cannot be fixed; the sense is not in doubt in most of them.
+- f. 233 l.31 (five signs at the head of the line) and f. 235 l.16 (one word between "sonder" and "ist der") - blocker: open-codes; all five spots the measure flagged were re-checked at the image on 22 Sept 2026: l. 02 is the scribe's spelling "fuet" for fuert (no sign lost), l. 07 "uolgt" uses n = o, which the sign carries, and l. 30 reads "si allein" (the ll sign), so only these two remain. They are legible but yield no word under any value the letter uses elsewhere; the sense of each sentence is not in doubt.
 
 ## Escalation
 
