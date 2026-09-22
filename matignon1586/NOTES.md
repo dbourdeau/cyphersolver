@@ -1,5 +1,10 @@
 # Forget / Matignon / Mayenne, BnF fr. 15572 (+ fr. 15571), 1586
 
+Status: in progress. Read in part, measured 22 Sept 2026: 28% of the target's cipher tokens read as
+sense (4,325 of 12,994 transcribed figures, 33%; 22% after a scrambled-key control), key for Cipher-1
+recovered, Cipher-3 leaves untouched. Most gaps are workable (see "Remaining gaps"), so the target is
+not closed. Per leaf: "Coverage, measured" below; `measure.py`, `measure.json`.
+
 Catalogue item 12 (`CATALOGUE.md`), class B, solvability 5. Ten leaves that S. Tomokiyo
 (`cryptiana`, *Henry III's Cipher with Ambassadors*) marks **undeciphered** although he publishes
 partial tables for the two keys involved.
@@ -43,7 +48,7 @@ be read off the leaf. Fixed here:
 | **150** | **157 right – 158 left** | a page and a half wholly in cipher |
 | **154** | **161 right** | clear opening, then c. 25 lines of cipher |
 | **173** | **180 right** | "Sire" in clear, then c. 30 lines of cipher |
-| **196** | **203 right** | clear to *auquel*, then 32 lines of cipher to the foot |
+| **196** | **203 right** | clear to *auquel*, then the rest of that line and 30 full lines of cipher to the foot (31 in all; 26 transcribed) |
 | **201** | **208 right** | the **same despatch**: clear a line and a half further, cipher, then clear again for the last three lines |
 
 The clear openings identify the despatches: f. 123r "Sire, la dernière que j'ay eu l'honneur est
@@ -153,7 +158,7 @@ Two leaves have now been pushed hard enough to measure the cost of this cipher:
   even at eight tiles a line and flattened: it decodes to "a r o m e ? e [car] l m a l a i c t e
   d e n e p o r t e ..." and no reading of it is French, which most likely means a place or
   person name in it.
-* **f. 196** (36 lines, small hand) is not yet transcribed: the line fit alone needed a comb, a
+* **f. 196** (31 cipher lines counting the part-line after *auquel*; "36" was wrong; small hand) is not yet transcribed: the line fit alone needed a comb, a
   spacing-constrained DP, re-centring on glyph boxes and a manual offset, and still does not place
   every line well enough to tile. That is before a figure is read.
 
@@ -190,7 +195,8 @@ line to line — so none of these alone is enough:
 What works, and what the next pass should just do: draw the fitted lines on the flattened block,
 look at the overlay, and set the per-leaf offset by hand — then tile with a band of about half the
 pitch. f. 143 and f. 201 both fitted cleanly this way; f. 196 (the smallest hand) still does not,
-and that is why its 32 lines are untranscribed while f. 201's fit is ready to use.
+and that is why its 31 lines were untranscribed at that point while f. 201's fit was ready to use.
+(Later on 18 Sept, 26 of the 31 were transcribed: see "Coverage, measured".)
 
 
 ## The f. 18/f. 19 crib and the figures-to-French pipeline
@@ -233,7 +239,7 @@ f. 143 gives noise, because that is a different secretary.
 **Read in substance or in stretches, all in the solved Cipher-1:** f. 143r+v (earlier), **f. 150**
 (13 ciphered lines over a clear Forget letter to Villeroy, April 1586), **f. 154** (28 lines, the
 army's pay crisis), **f. 173** (33 lines, to the King: no one will lend and no one will go surety),
-**f. 196** (26 lines) and **f. 201** (30 lines) — one despatch on two leaves, a siege report naming
+**f. 196** (26 of its 31 lines transcribed) and **f. 201** (30 lines) — one despatch on two leaves, a siege report naming
 **"le mareschal de Matignon"**, and **fr. 15571 f. 177** (28 lines, Mayenne's design for Gascony,
 31 Dec 1585). See the `f*_reading.md` files.
 
@@ -244,14 +250,18 @@ one side gives 12% and no runs. That validates both transcriptions at once. (An 
 a homophonic cipher offers several figures per letter, so f. 201 is a **re-encipherment** of the
 same text, not a copy of f. 196.
 
-**The target is at least three ciphers** — see `ciphers.md`. ff. 123–124 and f. 110 do not answer to
-the solved key, on figure statistics and on a crib. fr. 15571's ciphered page at canvas 187 left is
-a fourth hand again, untested.
+~~**The target is at least three ciphers**~~ — **retracted** in `ciphers.md`: ff. 123–124, f. 110 and
+ff. 78v/79r are all Cipher-1 (scrambled-key control and the f. 78v margin decipherment); the "three
+ciphers" came from label drift between transcription sittings. The only other cipher in the item is
+Matignon's Cipher-3 (ff. 276 and fr. 15571 f. 179). fr. 15571's ciphered page at canvas 187 left,
+called "a fourth hand" here, **is fr. 15571 f. 179** (the slip is bound upside down; its foliation
+reads 179 when turned), i.e. the Cipher-3 leaf, not a fourth cipher.
 
 **A crib for the second cipher exists**: f. 79r (canvas 85 right), Mayenne's own letter from the
 camp at Tonneins, 5 March 1586, carries a seven-line cipher block **with its decipherment down the
 left margin**. "rouergue" matches the block's figures in exactly one place, giving `4+`=r, `6`=o,
-`h`=u, `f`=e, `B`=g.
+`h`=u, `f`=e, `B`=g. **(Withdrawn: f. 79r is Cipher-1 and the solved key reads it; the single
+"rouergue" hit was chance. See `ciphers.md`.)**
 
 ### Additions to the folio index
 
@@ -259,8 +269,9 @@ left margin**. "rouergue" matches the block's figures in exactly one place, givi
 |---|---|---|
 | **79r** | **85 right** | Mayenne to the King, camp de Tonneins 5 March 1586, signed Charles de Lorraine; 7 cipher lines **with marginal decipherment** — the crib for Cipher-2 |
 | **125r** | **131 right** | clear letter: Castets besieged, the battery, M. d'Alincourt, Matignon, Mayenne |
-| **fr. 15571 177** | **185 right** | Forget, 31 Dec 1585, 28 cipher lines in Cipher-1 (foliated 190 struck / 177) |
-| **fr. 15571 178v** | **187 left** | a full page of cipher in a fourth hand, untested |
+| **fr. 15571 177** | **185 right** | Forget, 31 Dec 1585, 29 cipher lines in Cipher-1 (24 transcribed; foliated 190 struck / 177) |
+| **fr. 15571 179** | **187 left** | the Cipher-3 slip, bound upside down (was listed here as "178v, fourth hand"); ~25 lines; `img/BnFfr15571f179.jpg` (cryptiana) carries an interlinear decipherment in magenta |
+| **fr. 15572 276** | **285 right** | the other Cipher-3 leaf: a small slip, ~27 lines wholly in cipher; siblings ff. 277r-278r (canvases 286 right to 287 right, cipher) are deciphered in ff. 279-280 (clear from 288 right) |
 | **fr. 15571 180** | **188 right** | (fixes the foliation: f. 180 recto is canvas 188 right) |
 
 ### Tools added
@@ -286,3 +297,61 @@ See `f110_status.md`. It is in the same key (decoded with the solved key it beat
 diagnosis is transcription, not cryptanalysis: a solver seeded with the solved key moves 23 of 27
 shared labels away from it, which means my names for this scribe's shapes do not match the figures
 the key is keyed on. The fix is an exemplar set for this hand.
+
+## Coverage, measured (22 Sept 2026)
+
+The coverage figures in the `f*_reading.md` files ("about half", "two thirds") were estimates.
+`measure.py` replaces them with a count (rule in its docstring; output `measure.json`): a cipher token
+is **read** only if `key.json` gives it a value (tokens not in the key, `BOX`, `?` and unidentified
+codes count unread) **and** its decoded letters fall inside a run of at least three corpus words
+(count >= 20) totalling at least ten letters. Each leaf is decoded as `dec.py` does. Untranscribed
+lines count as unread, estimated at the leaf's tokens per line (30 a line for untranscribed leaves).
+Control: the same decoder and rule with the key's single-letter values shuffled (3 seeds).
+
+| leaf | lines transcribed / on leaf | tokens | read | read / transcribed | scrambled floor | corrected |
+|---|---|---|---|---|---|---|
+| f. 110 | 37 / 54 | 1,699 (+781 est.) | 167 | 0.10 | 0.09 | 0.01 |
+| f. 123r | 36 / 36 | 1,097 | 228 | 0.21 | 0.13 | 0.10 |
+| f. 123v | 41 / 41 | 1,251 | 403 | 0.32 | 0.12 | 0.23 |
+| f. 124r | 35 / 35 | 1,203 | 314 | 0.26 | 0.12 | 0.17 |
+| f. 124v | 22 / 22 | 727 | 141 | 0.19 | 0.12 | 0.08 |
+| f. 143r | 21 / 21 | 724 | 424 | 0.59 | 0.11 | 0.54 |
+| f. 143v | 33 / 33 | 1,182 | 654 | 0.55 | 0.08 | 0.51 |
+| f. 150 | 13 / 13 | 445 | 189 | 0.42 | 0.04 | 0.40 |
+| f. 154 | 28 / 28 | 1,061 | 501 | 0.47 | 0.08 | 0.43 |
+| f. 173 | 33 / 33 | 1,082 | 306 | 0.28 | 0.08 | 0.22 |
+| f. 196 | 26 / 31 | 840 (+162 est.) | 376 | 0.45 | 0.07 | 0.41 |
+| f. 201 | 30 / 30 | 987 | 455 | 0.46 | 0.07 | 0.42 |
+| fr. 15571 f. 177 | 24 / 29 | 696 (+145 est.) | 167 | 0.24 | 0.14 | 0.12 |
+| f. 276 (Cipher-3) | 0 / ~27 | (+810 est.) | 0 | – | – | – |
+| fr. 15571 f. 179 (Cipher-3) | 0 / ~25 | (+750 est.) | 0 | – | – | – |
+| **total** | | **12,994 (+2,648 est.)** | **4,325** | **0.33** | | **0.26** |
+
+Of the whole target (~15,642 tokens) **0.28 is read (0.22 chance-corrected)**. 90% of transcribed
+tokens are keyed; the gap between "keyed" and "read" is the transcription noise the notes describe.
+The prose estimates were high on f. 143r ("two thirds": 0.59), f. 173 ("half": 0.28), f. 201 ("two
+thirds": 0.46) and f. 177 ("a third": 0.24), and gave no figure for ff. 123-124 (0.19-0.32). f. 110
+scores at its scrambled floor: unread, as `f110_status.md` says. Line counts checked on the images:
+f. 196 has 31 cipher lines (26 transcribed; untranscribed are the part-line after *auquel*, the first
+three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transcribed).
+
+## Remaining gaps
+
+- fr. 15572 f. 110 (54 lines, 37 transcribed; ~0% read) - blocker: not-attempted; same key, but the transcription is internally inconsistent and the exemplar set for this hand (cut glyphs, label against keyed figures) has not been built
+- ff. 123r, 123v, 124r, 124v (4,278 figures; 21/32/26/19% read) - blocker: not-attempted; key verified on these leaves; re-transcription against the `key143_*.png` visual key not done (f. 123r was the first page transcribed in this hand)
+- unread share of ff. 143r (41%), 143v (45%), 150 (58%), 154 (53%), 173 (72%), 201 (54%) - blocker: not-attempted; single-figure slips on confusable shapes; the higher-magnification second pass that closed f. 143r l. 7 has not been run on these lines
+- f. 196: 5 of 31 lines untranscribed, 55% of transcribed tokens unread - blocker: not-attempted; part-line after *auquel*, full lines 1-3 and 13 never transcribed; f. 201 is the same despatch and a figure-by-figure crib
+- fr. 15571 f. 177: 5 of 29 lines untranscribed, 76% of transcribed tokens unread - blocker: not-attempted; smaller hand, noisy transcription, no second pass
+- Cipher-3, fr. 15572 f. 276 (canvas 285 right, ~27 lines) - blocker: not-attempted; not transcribed; key material exists (deciphered siblings f. 189/190, ff. 277-278/279-280, f. 282 margin; Tomokiyo's partial table)
+- Cipher-3, fr. 15571 f. 179 (canvas 187 left, upside down, ~25 lines) - blocker: not-attempted; not transcribed; `img/BnFfr15571f179.jpg` (cryptiana) already carries an interlinear decipherment in magenta, not yet transcribed or checked
+- names in ff. 196/201 (Sainct M-, la Bar-/la Garde, Montb-, la B-ault) - blocker: not-attempted; joint figure-by-figure reading of the two encipherments not done
+- code 49 (frequent) and the other codes valued `+` in `key.json`; name codes 82, 84, 98 - blocker: open-codes; no context fixes them yet, and the siblings ff. 14/15, 18/19, 78-79, 91-92 have not been searched for each
+
+## Escalation
+
+- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures); f. 125r clear letter read for context. Not yet: ff. 91-92, and the Cipher-3 siblings ff. 189/190, 277-280, 282
+- [x] clear-pages: f. 144 checked (a separate letter, not a clear copy of f. 143); f. 19 found to be the decipherment of f. 18; f. 125r is a clear letter, not a decipherment
+- [ ] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); Cipher-3's key (Tomokiyo's partial table, deciphered siblings) not yet tried on ff. 276 / fr. 15571 f. 179
+- [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks. His f. 179 image with interlinear decipherment was saved but not transcribed
+- [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; cold and seeded solves on f. 110
+- [ ] retry: done on f. 143r (three passes) and f. 110 (3 and 5 columns); not done on ff. 123-124, 143v, 150, 154, 173, 196, 201, 177, whose unread lines have had one transcription pass only

@@ -5,7 +5,8 @@ Canvas 185 right of fr. 15571 (ark `btv1b90618802`). An archivist's hand heads t
 de Turenne ayant paru en campagne avec gens et canons, on a changé d'advis, et résolu d'aller en
 Gascogne où Mrs du Mayne et de Matignon devoient [commander]"*, with a second note at the foot:
 **"Dessein de Mr du Mayne pour la conduitte de son armée en Gascogne et les difficultez qui s'y
-rencontrent."** Four clear lines, then 28 lines of cipher.
+rencontrent."** Four clear lines, then 29 lines of cipher (counted on the image 22 Sept; "28" earlier), of which 24
+are transcribed. Measured coverage (`measure.py`): 24% of transcribed tokens, 20% of the leaf.
 Transcription in `f177_cipher.txt`, decoder output in `reading_f177.txt`.
 
 ## This leaf is in the solved cipher

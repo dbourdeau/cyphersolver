@@ -53,5 +53,12 @@ the classes by matching against figures whose values the key already fixes — t
 other hands, which is why they read. That is focused manual work on one page. I could not do it
 reliably at this figure size in this session.
 
-**Nine of the ten leaves are read. This one is not, and I would rather say so than publish a reading
-I cannot stand behind.**
+**This leaf is not read, and I would rather say so than publish a reading I cannot stand behind.**
+
+**Correction (22 Sept 2026).** An earlier version of this line said "Nine of the ten leaves are read".
+That was wrong. The other leaves are *read in part*, and measured (`measure.py`: a figure counts as read
+only if the key gives it a value and it falls inside a run of real French words) the transcribed
+leaves read between 19% (f. 124v) and 59% (f. 143r); overall 33% of the 12,994 transcribed figures,
+28% of the whole target once the untranscribed lines and the two Cipher-3 leaves are counted. f. 110
+itself scores 10%, against a scrambled-key floor of 9%, i.e. nothing. See `NOTES.md`, "Coverage,
+measured".
