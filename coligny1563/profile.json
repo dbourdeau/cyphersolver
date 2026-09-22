@@ -1,0 +1,178 @@
+{
+ "schema_version": 1,
+ "target": "coligny1563",
+ "title": "Coligny to Elizabeth I, 2, 24 and 29 Jan 1563, BL Add MS 4136 ff. 141-148 (DECODE R9237, R9239, R9240)",
+ "documents": [
+  {
+   "id": "R9237",
+   "shelfmark": "BL Add MS 4136 ff. 141-142 (DECODE R9237)",
+   "date": "2 Jan 1563",
+   "year": 1563,
+   "country": "France",
+   "route": "Gaspard de Coligny to Elizabeth I",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "CSP Foreign vi no. 7; Forbes, Full View ii 247-249; English decipherment on the original in TNA SP 70",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "distinct": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "not transcribed; images viewed",
+    "image_quality": "good",
+    "notes": "Forbes's copy of the ciphered passages only, numbered, with margin glosses."
+   }
+  },
+  {
+   "id": "R9239",
+   "shelfmark": "BL Add MS 4136 ff. 143-146 (DECODE R9239)",
+   "date": "24 Jan 1563",
+   "year": 1563,
+   "country": "France",
+   "route": "Gaspard de Coligny to Elizabeth I",
+   "language": "French",
+   "pages": 4,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "CSP Foreign vi no. 145; Forbes, Full View ii 300-303; English decipherment on the original in TNA SP 70",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "distinct": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "not transcribed; images viewed",
+    "image_quality": "good",
+    "notes": "Forbes's copy of the ciphered passages only, numbered, with margin glosses."
+   }
+  },
+  {
+   "id": "R9240",
+   "shelfmark": "BL Add MS 4136 ff. 146-148 (DECODE R9240)",
+   "date": "29 Jan 1563",
+   "year": 1563,
+   "country": "France",
+   "route": "Gaspard de Coligny to Elizabeth I",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "CSP Foreign vi (entry before no. 186); Forbes, Full View ii 319-321; English decipherment on the original in TNA SP 70",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "distinct": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "not transcribed; images viewed",
+    "image_quality": "good",
+    "notes": "Forbes's copy of the ciphered passages only, numbered, with margin glosses."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "Graphic-sign substitution with nulls and code signs: the Condé party cipher (key DECODE R335, TNA SP 106/1 f. 69), the same as R9238. Not deciphered here.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "notes": "On R335 '&' and '14' are nulls and 'ω' = La Royne d'Angleterre; the heading line of each letter shows them."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Forbes, A Full View of the Public Transactions in the Reign of Q. Elizabeth ii (1741) 247-249, 300-303, 319-321; CSP Foreign vi (1869) nos. 7, 145 and the 29 Jan entry",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "foix1563 session had tied f.143 lower and f.148 top to Coligny letters of late January (glosses 'delivr', 'surprendre', 'escrire').",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Fetched all nine DECODE images; read the margin headings ('L'Amiral de France a la Reine d'Angleterre', dated) and glosses on each letter; R9239 image 4 = R9240 image 1.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Matched the glosses to Forbes ii (local OCR smith1562/forbes2.txt): 2 Jan Meur ('narrestons'), 24 Jan Orleans ('rayſonnable', 'Normandie', 'vingt quatriesme de Janvier'), 29 Jan Orleans ('surprendre le dict Lyon', 'faict eſcrire', 'gendarmerie', 'delivre').",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "CSP Foreign vi on British History Online: no. 7 (2 Jan), no. 145 (24 Jan) and the 29 Jan entry are each 'in cipher, deciphered'.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "fraction_read": 1.0,
+  "grades": {
+   "H": 1
+  },
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Read at the time and printed 1741; identified from margin glosses; catalogue entry 93 removed, no write-up."
+ }
+}
