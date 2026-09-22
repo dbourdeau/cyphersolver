@@ -74,7 +74,8 @@
    "group statistics",
    "homophonic annealer (de-modern)",
    "monotone syllabary annealer",
-   "synthetic control"
+   "synthetic control",
+   "exhaustive hill-climb with shotgun restarts"
   ],
   "models": [
    "claude-opus-5"
@@ -129,6 +130,12 @@
   {
    "kind": "control",
    "what": "Synthetic 809-letter German text in 174 homophones not recovered by the annealer, with or without a KL frequency prior: the attack is below solvability at this length.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "control",
+   "what": "Second control from in-corpus modern German (true -1.63/char): 20M-move anneals at 4 temperatures and 2 orders, an exhaustive hill-climb with restarts, and a fixed-letter-count swap annealer all fail (best -1.90, e/n-flood).",
    "result": "failed",
    "date": "2026-09-22"
   }
