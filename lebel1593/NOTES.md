@@ -2,7 +2,7 @@
 
 Catalogue entry "Lebel, Savoyard ambassador, to the Duke of Savoy, three letters" (class C). Opened 21 Sept 2026.
 
-Status: read (all three letters; ~97% of enciphered tokens; see section 8). Written up as `docs/lebel1593.html`.
+Status: read (all three letters; ~98% of enciphered tokens; see section 8). Written up as `docs/lebel1593.html`.
 
 ## 1. Prior art: the key is published, the three letters are not read
 
