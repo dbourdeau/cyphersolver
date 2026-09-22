@@ -20,8 +20,8 @@
     "source": "The clerk's interlinear decode on frame 0206 stops exactly where Ford's gap starts; Ford prints the gap as not decyphered."
    },
    "length": {
-    "tokens": 134,
-    "distinct": 100,
+    "tokens": 133,
+    "distinct": 106,
     "unit": "code groups",
     "measured": true,
     "file": "gap88.txt"
@@ -30,7 +30,7 @@
     "by": "llm from images",
     "source": "NARA M35 reel 3 frame 0206",
     "image_quality": "unknown",
-    "notes": "Group transcription in gap88.txt; clear words kept inline."
+    "notes": "Group transcription in gap88.txt; clear words kept inline. Re-read 22 Sept 2026 from zoomed crops: 168 (not 158), 1426 (not 1425), 302 (not 502); the underlined 1102 at the foot of the left leaf is a catchword (cw:1102), not counted. python measure.py: 133 code groups (docs/_check_profile.py --measure counts 143 tokens including the clear words)."
    }
   },
   {
@@ -60,7 +60,7 @@
     "by": "llm from images",
     "source": "NARA M35 reel 3 frame 0207",
     "image_quality": "unknown",
-    "notes": "The measured 257 includes 7 tokens with lost digits (142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx); render.py counts the 250 complete groups. NOTES give 210 of 250 rendered; render.py now gives 212 of 250."
+    "notes": "rem88.txt: 257 code groups, 7 with digits lost in the microfilm gutter (142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx), counted as unread. python measure.py counts the groups; docs/_check_profile.py --measure counts 298 tokens including the clear line."
    }
   }
  ],
@@ -69,18 +69,18 @@
    "code",
    "syllabic"
   ],
-  "summary": "Numerical syllable-and-word code (the = 1385) cut into alphabetical blocks of about 50 numbers, the blocks shuffled; whole words in 1-100.",
+  "summary": "Numerical syllable-and-word code (the = 1385), about 1,600 numbers; 1-100 mostly whole words; values climb alphabetically only in short runs, then break; superscript o = plural, a mark under a group modifies it.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-4",
    "separation": "spaces"
   },
-  "distinct_symbols": 371,
+  "distinct_symbols": 962,
   "diacritics": {
    "used": false
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
    "present": true,
@@ -100,33 +100,39 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "Armstrong's THE=972 code (armstrong/), which Madison's editors said JQA used; tested and ruled out. Pinkney's London code named in Smith's 1809 instructions (Ford 3:327-28) not tested.",
-  "notes": "distinct_symbols = distinct groups in pairs_jqa.txt (262 H, 93 M, 48 I lines). separation is as transcribed in gap88.txt; the manuscript's separators are not recorded."
+  "notes": "distinct_symbols = numbers in code_table.tsv (22 Sept 2026: 391 H, 241 C, 311 M, 19 I), built by consolidate.py from pairs_jqa.txt, clerk_*.tsv (interlinear decodes on frames 0048, 0182, 0183, 0184, 0185, 0189, 0190, 0194, 0198, 0206), ford_pairs*.tsv (39 coded 1811 blocks aligned with Ford vol. 4) and slot_inferences.tsv. Homophones: several words have two groups (those 551/651, English 1291/1292, with 1190/1192-era variants, few 329/350). separation is as transcribed; the manuscript uses dots and spaces."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "Ford printed both passages as not decyphered; the clerk's decode on frame 0206 covers only the rest of the despatch. No other reading found.",
+   "where": "Ford printed both No. 88 passages as not decyphered; the clerk's decode on frame 0206 covers only the rest of the despatch. No other reading found. Ford vol. 4 prints the Department's decipherments of OTHER 1811 despatches in the same code; those were used as known plaintext to rebuild the code (22 Sept 2026), not as a reading of No. 88.",
    "found": "not found",
    "used": false
   },
   "inputs": [
+   "cleartext context",
    "images",
-   "known plaintext",
-   "cleartext context"
+   "known plaintext"
   ],
   "attack": "known plaintext",
   "human_role": "Project-level: set up Claude Code with Fable 5.1 or Opus 5 and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
   "tools": [
-   "render.py (table application)",
+   "../armstrong/decode972.py (THE=972 test)",
+   "align.py (DP alignment of code groups with Ford's printed plaintext)",
    "codescore.py (frame scoring for code texture)",
-   "../armstrong/decode972.py (THE=972 test)"
+   "consolidate.py (merges clerk, Ford and slot sources into code_table.tsv)",
+   "measure.py (sense measure with sense88.tsv)",
+   "render.py (table application)",
+   "slots.py (alphabetical-slot brackets)",
+   "strip.py/crop.py (crops)"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-18",
-  "last_date": "2026-09-18"
+  "last_date": "2026-09-22"
  },
  "solution": [
   {
@@ -176,40 +182,105 @@
    "kind": "reading",
    "what": "The remainder on frame 0207 (rem88.txt) renders 212 of 250 complete groups, in threads only.",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Located the images of NARA M35 reel 3 in the main checkout (img03, downloaded 18 Sept) and surveyed the contact sheets: interlinear clerk decodes on frames 0048, 0182-0185, 0190, 0194, 0198, 0211 and later; 'decyphered' sheets for 1811 despatches (0011, 0037, 0064, 0067, 0072, 0082, 0092, ...).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Read the clerk's interlinear decodes on frames 0182 (No. 80, 29 Feb 1812) and 0048 (top) by hand, and on 0183R, 0184, 0185, 0190, 0194R, 0198R with two transcription agents: ~2,000 pairs (1,296 H, 869 M) in clerk_*.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "crib",
+   "what": "Transcribed 39 coded blocks of 1811 despatches (frames 0005-0132) and aligned them with the plaintext Ford printed from the Department's decipherments (Writings vol. 4) using align.py, checked by eye: 589 C and 270 M pairs in ford_pairs*.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "statistics",
+   "what": "Merged all sources into one table (consolidate.py, overrides.tsv for 40 disputed numbers): 962 numbers, 391 H, 241 C, 311 M, 19 I. The alphabetical order holds only in short runs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Re-read the No. 88 groups from zoomed crops of frames 0206 and 0207: three digits corrected (168, 1426, 302) and a catchword (1102) removed; 1081 in the remainder line 5 is blurred.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "prediction",
+   "what": "Alphabetical-slot bracketing of the groups still unread (slots.py): nine grade-I values (168 ey, 1434 journ, 83 opposition, 143 mod, 815 def, 239 sive, 108 comply, 432 net, 726 rate); 1575 and 1540, first slot-inferred as off and along, were then attested by Ford as adv and ambass.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "No. 88 re-measured with measure.py and a sense-flag file (sense88.tsv): 379 of 390 groups valued, 355 read as sense (0.910); Ford's nine lines 127/133 (0.955), the remainder 228/257 (0.887). Before this session: 336 of 391 valued (0.859), sense not measured.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "python render.py gap88.txt (124 of 134) and rem88.txt (212 of 250 complete groups; the 7 truncated tokens counted unread): 336 of 391 cipher tokens given a value, M and I values included",
-  "fraction_read": 0.859,
+  "fraction_read_source": "python measure.py (22 Sept 2026): 355 of 390 code groups of No. 88 read as sense = 0.910 (gap88 127/133 = 0.955, rem88 228/257 = 0.887, the 7 gutter-cut groups counted unread); groups valued 379/390; without the I-graded values 336/390 = 0.862",
+  "fraction_read": 0.91,
   "codes_open": {
    "open": "unknown",
-   "total": "unknown",
-   "tokens_open": 55
+   "total": 962,
+   "tokens_open": 35
   },
-  "grades": "unknown",
+  "grades": {
+   "H": 285,
+   "C": 24,
+   "M": 27,
+   "I": 19
+  },
   "verification": [
+   "contemporary decipherment",
    "historical consistency"
   ],
   "gaps": [
    {
-    "item": "No. 88 gap passage: 10 groups unread (1434, 168, 1081, 1425, 83, 1575, 1405, 1112, 492, 1060)",
-    "blocker": "not-attempted",
-    "detail": "NOTES 'Next': more clerk-decoded pages (0182-0185, 0190, 0194-0199, 0211; reel 2) are unread and should settle the {n} groups."
+    "item": "gap88 im-pas-ion-ed (1424 1112 1433 520): valued but not sense",
+    "blocker": "open-codes"
    },
    {
-    "item": "No. 88 remainder (frame 0207): 38 complete groups unread and the text readable in threads only",
-    "blocker": "not-attempted",
-    "detail": "Same route: more clerk-decoded pages into pairs_jqa.txt."
+    "item": "gap88 492 use where 'by' is wanted (probably JQA's slip for 792)",
+    "blocker": "open-codes"
    },
    {
-    "item": "No. 88 remainder: 7 groups with lost digits at line ends",
-    "blocker": "illegible",
-    "detail": "Transcribed as 142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx."
+    "item": "gap88 1457 in Chan-ce-?-or (may be 1452 with the doubling mark)",
+    "blocker": "illegible"
+   },
+   {
+    "item": "gap88 grade-I words 1434 journ, 168 ey, 83 opposition, 1398 thither",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "rem88 word before 'defensive' (350 289 1403 897)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "rem88 e-va-{10?1}-ation and 1508 before 'preliminary'",
+    "blocker": "illegible"
+   },
+   {
+    "item": "rem88 groups 1185; 699 1535 570; 1309 888 996 520 1453 416; 220 586 1416; 927 1540 748 not read as sense",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "rem88 seven groups with digits lost in the microfilm gutter",
+    "blocker": "illegible"
    }
   ],
-  "notes": "NOTES.md has no '## Remaining gaps' or '## Escalation' section; the gaps above are taken from its sections 3-4 and 'Next'. Of the 124 groups read in the gap passage, 27 are slot inferences (README). Coherence is lower than fraction_read on the remainder, which NOTES call 'not yet a clean text'. Model id from commit trailers (Claude Opus 5, 1M context); the jqa files were committed inside commits about other targets."
+  "notes": "22 Sept 2026: code rebuilt from eight more clerk-decoded frames and 39 Ford-aligned 1811 blocks; No. 88 re-read and measured for sense. Below the 95% read bar overall (0.910), so read in part; Ford's nine lines alone reach 0.955 counting grade-I values (0.895 without). More interlinear pages remain on reel 3 (0047, 0056-57, 0211, 0228-29, 0233, 0247) and Ford prints the 1812 decipherments; these are the route to the open groups. Model ids: claude-opus-5 (18 Sept), claude-opus-5-5 (22 Sept). outcome.grades counts the 355 No. 88 groups read as sense (gap 101 H 7 C 11 M 8 I; remainder 184 H 17 C 16 M 11 I)."
  }
 }
