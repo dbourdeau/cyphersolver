@@ -1,0 +1,289 @@
+{
+ "schema_version": 1,
+ "target": "vatican5",
+ "title": "Vatican Challenge Part 5: Cardinal Alessandro Farnese to the nuncio Giovanni Poggio, Rome 15 April 1542 (AAV Segr. Stato Spagna 1A ff. 70r-73v, DECODE R92)",
+ "documents": [
+  {
+   "id": "R92",
+   "read": "not read",
+   "shelfmark": "AAV Segr. Stato, Spagna 1A/2, ff. 70r-73v (DECODE R92, ASV_i1025_SdS_Spain_IA-2)",
+   "date": "15 Apr 1542",
+   "year": 1542,
+   "country": "Papacy",
+   "route": "Rome -> Giovanni Poggio, bishop of Tropea, nuncio in Spain",
+   "language": "Italian",
+   "pages": 8,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Simon Klee, 'The Farnese letter' (https://simonklee.dk/farnese-letter), published 16 Sept 2026, accepted by MysteryTwister; key and edited Italian, some damaged passages marked uncertain",
+    "partial": false
+   },
+   "length": {
+    "tokens": 6534,
+    "distinct": 41,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ASV_i1025_SdS_Spain_IA-2.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "EHum, 9 Jan 2016, for the MysteryTwister challenge (byte-identical to DECODE R92's DOC_R92_D1633_1633.txt); image-verified re-read by the project 2026-09-18 (IA-2_reread.txt, 6489 digit tokens measured)",
+    "corrections": 151,
+    "image_quality": "good",
+    "notes": "Measured with --digits: 6534 tokens counts single digits plus a few digit tokens in the cleartext frame; 'distinct' 41 counts digit+mark variants (7^. etc.), not signs. NOTES' parse5 count is 6553 digits; Klee's corrected transcription has 6562. The re-read changed 151 positions (62 substitutions, 39 insertions, 22 deletions; four dittographies on 071v, struck digits on 072v/073r); 52 '?' remain at the 071v fold and under blots. No written separators between code groups (Lasry, e-mail 16 Sept 2026)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Mixed one-/two-digit monoalphabetic substitution (18 letters, u/v one code, no h, 9 = null, 81 = et) with unwritten code boundaries, plus a small layer of dotted pairs for ce/ci/qua/que/qui, non and three titles (Klee's key).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 29,
+  "diacritics": {
+   "used": true,
+   "note": "A dot on one digit of a two-digit code selects a syllable, 'non' or an abbreviated title (27^=ce, 2^7=qua, 7^2=que, 72^=ci, 57^=non, 5^7=qui, 0^5=S.S.ta, 40^=S.M.ta, 6^0=V.S.)."
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 10,
+   "kinds": [
+    "syllables",
+    "common words",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": 1
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "written once (doubled digits strongly suppressed, 0.30 of chance; Farnese chancery rule 'senza duplicare le consonanti', Meister p. 223)",
+  "sibling_key": "Spain IA-1 (DECODE R91, same volume, Dec 1541) is a different key; Meister 1906 keys nos. 1-3 (Montepulciano/Poggio 1539-42, Piacenza 1545) and Lasry's S6 key (1568-70) tested and excluded; none used.",
+  "notes": "Null 9 occurs 365 times in Klee's alignment. The project's own diagnosis (4 = null, vowel digits {7,0,3,1}, Antonio Elio polyphonic-syllabic design) is superseded by Klee's key: 4 = o, 9 = null. distinct_symbols counts the 20 undotted codes plus 9 dotted codes of key.md."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Simon Klee, 'The Farnese letter', simonklee.dk, 16 Sept 2026 (submitted to MysteryTwister 15 Sept, accepted). Published while this project's attack (14-18 Sept) was running; the project recorded it only on 20 Sept.",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal. Target-specific: resumed the target with a directive to solve it (15 Sept), opened a DECODE account and downloaded R91/R92 (16-18 Sept), relayed George Lasry's e-mail that the manuscript has no separators, and brought in and credited Klee's solution (20 Sept commit, no model trailer).",
+  "tools": [
+   "bias-corrected mutual information diagnostics (mi3.py)",
+   "lattice/beam-Viterbi solver with simulated annealing (native/Program5.cs, vsolve.exe)",
+   "period-Italian 5-gram LM from Nuntiaturberichte OCR (build_it_lm.py, lmns.py)",
+   "bigram/trigram partition likelihood with annealing (bigramfit.py, trigramfit.py, trigramfit_es.py, vc.py)",
+   "synthetic matched controls (make_syn.py, syn_tri.py, vc_syn.py, elio_syn.py, synk2.py)",
+   "byte-pair unit discovery (bpe.py)",
+   "EM unit segmentation (segem.py) and unit-level annealer (usolve.py, oracle.py)",
+   "phase and parity tests (phase.py, gphase.py)",
+   "DECODE fetch and transcript comparison (decode/fetch_decode.py, decode/compare_transcripts.py)"
+  ],
+  "models": [
+   "claude-opus-5[1m]",
+   "claude-fable-5-1"
+  ],
+  "sessions": 7,
+  "first_date": "2026-09-14",
+  "last_date": "2026-09-20"
+ },
+ "solution": [
+  {
+   "date": "2026-09-14",
+   "kind": "access",
+   "what": "Took the MysteryTwister Part 5 transcript (EHum 2016) and the solved Part 4 sibling transcript (Portugal IA-1).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-14",
+   "kind": "statistics",
+   "what": "Mutual-information diagnostics: digit 4 behaves as a null/word separator, 8 and 5 never end words, dotted digits mostly 7/2/0. The null diagnosis was wrong (Klee: 4 = o, 9 = null).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-14",
+   "kind": "solver",
+   "what": "C# lattice solver (polyphonic singles, dotted singles, 2- and 3-digit codes; 5-gram LM + KL + MDL + word coverage) on the real text: no convergent key.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-14",
+   "kind": "control",
+   "what": "Synthetic key-1-style cipher: the pure LM objective is not identifiable; dictionary coverage separates true from wrong keys.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "key from source",
+   "what": "Meister 1906 keys nos. 1-3 (Montepulciano, the Poggio key 'mandata per il Montepulciano', Piacenza 1545) applied under trigram likelihood: all score below search optima.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "solver",
+   "what": "Exact bi/trigram partition likelihood, annealing 21 letters over 9 digits (polyphonic single-digit model), Italian: 24 runs, 24 different keys, chance-level agreement.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "control",
+   "what": "Same search on a 7000-letter synthetic polyphonic cipher (syn_tri.py) recovers the true key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "hypothesis",
+   "what": "Plaintext Spanish: 12 runs under a Don Quijote trigram model, no convergence.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "hypothesis",
+   "what": "Two-digit syllables on a fixed phase (vowel slots {2,0,7,5} after the Meister key-1 dot rule): no even/odd difference.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "statistics",
+   "what": "Word-final enrichment and frequency mass put the vowel-bearing digits at {7,0,3,1}. Wrong under Klee's key (7=n, 0=s, 3=m, 1=u/v).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "solver",
+   "what": "Partition search constrained to vowels {7,0,3,1} (vc.py): 24 runs, agreement 0.861 against chance 0.799.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "control",
+   "what": "Matched synthetic with the believed structure (vc_syn.py): key recovered at 0.97 and 0.93 on two seeds, so the real text was judged not a polyphonic single-digit substitution.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "solver",
+   "what": "Lattice solver with --null=4 --vowdig=7031 --consdig=85269: Italian-looking decodes but no convergence across four seeds; the word-coverage metric shown to be gameable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "statistics",
+   "what": "One key across all pages (chi-squared), doubled digits suppressed, 27 and 80 as dominant word-final units, 441 repeated 7-grams, BPE units mostly one to three digits: diagnosed a variable-length syllabic code with nomenclature. The one-key and one/two-digit-unit findings fit Klee's key; the syllabic/nomenclature reading did not.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "literature search",
+   "what": "Lasry-Megyesi-Kopal 2021 and Lasry-Simonetta-Biermann HistoCrypt 2025 read; the cipher was identified as an Antonio Elio polyphonic-syllabic design. This identification was wrong.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "statistics",
+   "what": "Global two-digit grid tested in three phasings (gphase.py): none exists; units are variable-length.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "access",
+   "what": "DECODE R92 image route probed without a login: only 200x256 thumbnails, unreadable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "control",
+   "what": "Elio-design synthetic (elio_syn.py) does not reproduce the real text's consonant runs or repetition; read as evidence of a nomenclature layer.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "literature search",
+   "what": "Clear copies located (BAV Chigi L III 65 ff. ~165-190, AAV Lettere de' Principi 14 A, Naples Carte Farnesiane 723) and key volume Chigi M II 49; none digitised. Meister pp. 176-178, 222-224 re-read from scans.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "solver",
+   "what": "EM segmentation into one- and two-digit units (41 types, incl. 80, 57, 27, 03, 73) then unit-level annealing (usolve.py): fails on real text and on its synthetic control; oracle shows a pre-fixed segmentation caps the score.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "access",
+   "what": "DECODE account obtained (human); George Lasry confirms by e-mail that the Part 5 manuscript has no visual separators between tokens.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "access",
+   "what": "Downloaded R92 (eight 400-dpi images, transcription, address leaf) and R91 (IA-1 sibling). R92 transcription byte-identical to the challenge text; no interlinear decipherment (faint writing is show-through).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transcription",
+   "what": "Seven page agents re-read every cipher line of 070r-073r against the images (IA-2_reread.txt): 151 positions corrected, dots checked. Structural statistics unchanged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "sibling key",
+   "what": "Spain IA-1 (R91): different digit profile and no doubling suppression, so a different key.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "key from source",
+   "what": "Doubled-digit rate as a relabelling invariant: no renumbering of Meister keys 1 or 2, nor any single-digit polyphonic design, gives IA-2's rate.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "literature search",
+   "what": "DECODE searched for further Farnese/Poggio material; Camera Apostolica R23, R202-R204 fetched: Avignon keys of c. 1379, irrelevant.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-20",
+   "kind": "verification",
+   "what": "Simon Klee's independent solution (published 16 Sept 2026, MysteryTwister-accepted) reviewed and accepted: split-half recoveries agree, synthetic and shuffled controls, manuscript checks, historical corroboration. Key recorded in key.md; the project's own diagnosis marked superseded.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "No reading file in vatican5/: the project's attacks gave no cipher token a value. Klee's published alignment (outside this project) accounts for 6358 of 6562 corrected digit tokens exactly, 170 by recorded departures, 34 in gaps.",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Not read by this project after seven sessions; it misdiagnosed the system as an Antonio Elio polyphonic-syllabic cipher with 4 as null. Solved independently by Simon Klee (key in key.md, credit his). key = none refers to this project's recovery; Klee's key is complete. Verification lists Klee's checks as reviewed here on 20 Sept 2026 (SOLUTION.md)."
+ }
+}

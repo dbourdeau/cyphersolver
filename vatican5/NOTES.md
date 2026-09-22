@@ -1,4 +1,14 @@
-# Vatican Challenge Part 5 (MysteryTwister) — work in progress
+# Vatican Challenge Part 5 (MysteryTwister) — solved by Simon Klee
+
+> **Status update, 20 September 2026.** Simon Klee recovered the key and a candidate plaintext, published
+> [“The Farnese letter”](https://simonklee.dk/farnese-letter), and received MysteryTwister's acceptance. The result
+> has been reviewed here and is accepted as a solution: independent half-text recoveries, synthetic and shuffled
+> controls, checks against the manuscript, and historical corroboration support it. Some damaged passages remain
+> editorially uncertain. See [`SOLUTION.md`](SOLUTION.md) and [`key.md`](key.md).
+>
+> The investigation below is retained as an audit trail, but its final diagnosis is **superseded**. In particular,
+> `4` is `o` rather than a null; `9` is the null; and the core is a mixed one-/two-digit monoalphabetic key, not the
+> proposed Antonio Elio polyphonic-syllabic design.
 
 Ciphertext: ASV Segr. Stato Spagna 1A/2 (Farnese → nuncio Poggio, Rome 15 Apr 1542), transcript
 `ASV_i1025_SdS_Spain_IA-2.txt` from the MysteryTwister challenge (G. Lasry, 2019). 6553 digit tokens,

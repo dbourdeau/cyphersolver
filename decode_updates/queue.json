@@ -6593,6 +6593,66 @@
      "sent": false
     }
    }
+  },
+  "vatican5": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/vatican.html",
+   "key": {
+    "none": "R92: key recovered by Simon Klee (https://simonklee.dk/farnese-letter), not a DECODE record; R91: no key known"
+   },
+   "cite": "S. Klee, 'The Farnese letter' (2026), https://simonklee.dk/farnese-letter; accepted by MysteryTwister (Vatican Challenge Part 5)",
+   "records": {
+    "R92": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Solved by Simon Klee, Sept 2026 (key, corrected transcription, edited Italian and token alignment published at simonklee.dk/farnese-letter; MysteryTwister accepted it). Cardinal Alessandro Farnese to Giovanni Poggio, bishop of Tropea, nuncio in Spain, Rome 15 April 1542 (address leaf and closing line). The DECODE transcription is byte-identical to the MysteryTwister text; an image-verified re-reading (151 digit positions corrected, four dittographies on 071v, 222 dots) is attached.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "vatican5/IA-2_reread.txt"
+     ],
+     "sent": false
+    },
+    "R91": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. Spagna IA-1: a Farnese chancery letter of December 1541 (Nuremberg diet, Buda) in a different key and design from R92 (doubled digits 0.88 of chance against 0.30); the four document images are cleartext Farnese letters of summer 1542. No key or decipherment on the record.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   },
+   "fields": {
+    "sender": "Cardinal Alessandro Farnese",
+    "receiver": "Giovanni Poggio, bishop of Tropea, nuncio in Spain",
+    "origin_city": "Rome",
+    "date": "R92: 15 Apr 1542; R91: Dec 1541 (DECODE's 1538/1612 is the span of the volume)"
+   }
+  },
+  "vieuville1587": {
+   "writeup": null,
+   "key": {
+    "none": "Tomokiyo's Nevers key no. 16 (BnF fr. 3995 f. 32v) fits the code numbers only; the letter text is not read"
+   },
+   "cite": "S. Tomokiyo, cryptiana, Nevers ciphers (key no. 16)",
+   "fields": {
+    "sender": "Louis de Gonzague, duc de Nevers",
+    "receiver": "Robert de La Vieuville",
+    "origin_city": "Saint-Aignan",
+    "date": "30 Sep 1587"
+   },
+   "records": {
+    "R4289": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. BnF fr. 3975 item 34 (ff. 101r-102v), a copy dated 'De St Aignen, ce 30 septembre 1587'; no decipherment on the leaves despite the BnF notice. Code numbers fit Tomokiyo's Nevers key no. 16 (42 eschevins, 43 maire de ville); the letter text is not read at the legibility of the microfilm. A partial glyph transcription of f. 101r is attached.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "vieuville1587/ct_101r.txt"
+     ],
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {

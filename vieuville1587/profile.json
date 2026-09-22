@@ -1,0 +1,185 @@
+{
+ "schema_version": 1,
+ "target": "vieuville1587",
+ "title": "Nevers to La Vieuville, St-Aignan, 30 Sept 1587 (BnF fr. 3975 fol. 101, DECODE R4289)",
+ "documents": [
+  {
+   "id": "f101",
+   "shelfmark": "BnF Français 3975 item 34, ff. 101r-102v; Gallica btv1b90605473 canvases 185-188; DECODE R4289",
+   "date": "30 Sept 1587",
+   "year": 1587,
+   "country": "France",
+   "route": "Louis de Gonzague, duc de Nevers (St-Aignan) -> Robert de La Vieuville",
+   "language": "French",
+   "cleartext_in_document": "mostly clear",
+   "read": "not read",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "BnF notice says 'avec chiffrement et dechiffrement', but no decipherment is on the two leaves; not in Gomberville's Memoires part 1 (1665)."
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full resolution + DECODE halves",
+    "image_quality": "fair",
+    "notes": "Not transcribed yet; hasty hand, microfilm."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Clear letter with inserted runs in Tomokiyo's Nevers cipher no. 16 (1587): letter+figure homophones, code numbers 10-100 and overbarred 1-81.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "notes": "Key read from fr. 3995 f. 32v into vieuville1587/key16.txt."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Target chosen by the user from the catalogue; no hand help.",
+  "tools": [
+   "curl",
+   "PIL"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "DECODE R4289 images fetched with the saved cookie; Gallica ark of fr. 3975 found (btv1b90605473, f.101r = canvas 185).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Tomokiyo nevers.htm: no reading of this letter; hidden note on the 31 Aug 1587 sibling (fr. 3416 f.53v) where key no.11 failed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Tested key no. 12 (Apr 1587, fr. 3995 f.26): a symbol alphabet unlike the letter.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Read key no. 16 (1587, fr. 3995 f.32v) in full; its code numbers fit the letter (42 eschevins, 43 maire de ville) and it reads Tomokiyo's sibling snippet ('vostre main', 'parle').",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "Whole letter a cipher: ruled out; most is clear French in a hasty hand, with ciphered runs inserted.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Straight no.16 reading of the run 'd65 i8 th6 6725' gives no French; clear text only ~30-40% legible at the zoom tried.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Gomberville, Memoires du duc de Nevers (1665) part 1 on Gallica searched (Vieuville, Aignan): letter not printed there.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Fetched sibling fr. 3416 ff. 52v-53r (Gallica btv1b9058240c canvas 62): same hand, clear text with code numbers, no decipherment; apparent margin glosses are line-ends from the facing page.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Glyph-level transcription of 19 lines of f.101r (ct_101r.txt, ~900 glyphs, 28 signs, ~60% per-glyph confidence).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "statistics",
+   "what": "Raw transcription scored as French: -5.67/char vs shuffled -7.86 and real French ~-1.5; not clear French as transcribed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Homophonic substitution anneal with unigram-KL penalty (solve2.py), 8 restarts: best -4.53/char, no French.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "control.py: French enciphered homophonically with glyph noise; solve2 recovers it at 0% and 20% noise, fails at 40% even on 4000 chars; the real transcription scores like the 40% case.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Key no.16 applied directly to the f.101r transcription: 74% glyph coverage, decrypt -7.68/char (worse than shuffled).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Merged confusable glyph classes (u/n/m/w, e/c/r) and re-ran the anneal: best -4.76/char, no French.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "partial",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "blocker": "illegible",
+    "item": "clear autograph text (~110 lines)"
+   },
+   {
+    "blocker": "illegible",
+    "item": "inserted cipher runs"
+   }
+  ]
+ }
+}

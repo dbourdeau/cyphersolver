@@ -1398,13 +1398,13 @@
    "shelfmark": "BnF, Français 3975 fol. 101",
    "folio_note": "",
    "cls": "C",
-   "status": "DECODE R4289: Non-decrypted, 4 pp., unknown; alphabet, graphic signs, numerical; images login. Not viewed here. DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/.",
+   "status": "DECODE R4289 = BnF fr. 3975 item 34, ff. 101r-102v, Nevers to La Vieuville, St-Aignan 30 Sept 1587 (copy; no decipherment on the leaves). Attempted 22 Sept 2026 (vieuville1587/NOTES.md): the code numbers fit Tomokiyo's Nevers key no. 16 (fr. 3995 f. 32v, transcribed in vieuville1587/key16.txt; 42 eschevins, 43 maire de ville), which also reads the 31 Aug 1587 sibling (fr. 3416 f. 53v), but not the letter text. The hand on the Gallica microfilm is legible at about 30-40%; a glyph transcription of 19 lines does not read under a substitution anneal, and a noise control shows the solver needs under ~20-30% glyph error. Keys 11 and 12 ruled out.",
    "why": "Ciphered letter of Louis Gonzaga, duke of Nevers to Robert de La Vieuville, 30 Sep 1587; what the cipher hides is not known.",
    "importance": 3,
    "solvability": 2,
    "difficulty": 4,
    "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "verify": "A colour scan or the original (BnF reading room) for a usable transcription; Nevers's Mémoires (Gomberville 1665) for a printed copy.",
    "ark": "",
    "links": [
     {
@@ -1417,7 +1417,8 @@
    "decode_ids": [
     4289
    ],
-   "scored": "rule"
+   "scored": "rule",
+   "outcome": "attempted, open"
   },
   {
    "id": 189,
@@ -2118,24 +2119,24 @@
   {
    "id": 262,
    "counted": false,
-   "year": null,
-   "date": "undated",
-   "title": "Unknown sender (Spain) to unknown recipient, 2 ciphertexts",
-   "correspondents": "Unknown sender → unknown recipient",
-   "place": "Spain",
+   "year": 1541,
+   "date": "Dec 1541 (letter on the Nuremberg diet and Buda)",
+   "title": "Farnese chancery cipher, Spagna 1A (IA-1, DECODE R91), companion of Vatican Challenge Part 5",
+   "correspondents": "Cardinal Alessandro Farnese → Giovanni Poggio, nuncio in Spain (probably; same dossier)",
+   "place": "Rome → Spain",
    "language": "Italian",
    "region": "Papacy",
-   "period": "unknown",
-   "shelfmark": "ASV, i. 1025, Segretario di Stato, doss. IA (2 items)",
+   "period": "1501-1550",
+   "shelfmark": "AAV, Segr. Stato, Spagna 1A (IA-1; DECODE R91)",
    "folio_note": "",
    "cls": "C",
-   "status": "DECODE R91–R92 (2 records): Non-decrypted, 13 pp., type not given; numerical; images login. Not viewed here. Nunciature ciphers were normally deciphered on arrival, and the decifrati are often filed in the same busta or printed in the Nunziature series: look for them before attacking. DECODE note: DECODE's date 1538/1612 is the span of the volume. Ciphers within cleartext. Comment from archive: Lett. Orig. e cifre del card. Farnese al nunzio, 4 oct 1539-24 nov. 1548. ff. 7-123. Lett. Orig. del card. Camerlengo al card. Farnese, 26 jan 1540-7 jan. 1544, …",
-   "why": "Ciphered despatches of Unknown sender to unknown recipient; what the cipher hides is not known.",
+   "status": "DECODE R91: five cipher page images and four cleartext Farnese letters of summer 1542, downloaded and measured here 18 Sept 2026 (vatican5/NOTES.md). 2,956 digits; a different key and design from IA-2: doubled digits at 0.88 of chance (IA-2 0.30), wide gaps not word division. No key sheet, no decipherment on the record. The companion IA-2 (DECODE R92, the Farnese letter of 15 Apr 1542, Vatican Challenge Part 5) was solved by Simon Klee in Sept 2026 (vatican5/SOLUTION.md) and is recorded in SOLVED_CATALOGUE.md; his key does not transfer.",
+   "why": "Farnese's ciphered despatch to the nuncio in Spain, December 1541, on the Nuremberg diet and Buda; unread.",
    "importance": 1,
    "solvability": 3,
    "difficulty": 4,
-   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Look for the decifrati in the same busta and in the printed Nunziature volumes, then view the images. Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "score_note": "R92 solved by Simon Klee and moved out; entry narrowed to R91, which was measured but not attacked here.",
+   "verify": "Try Klee's method (mixed one-/two-digit monoalphabetic with dotted codes, null search) on R91 before anything else; then look for its decifrato in the Spagna series or the Nunziature print.",
    "ark": "",
    "links": [
     {
@@ -2147,13 +2148,13 @@
      "href": "https://de-crypt.org/decrypt-web/RecordsView/92"
     }
    ],
-   "seen": "catalogue",
+   "seen": "image",
    "source": "DECODE",
    "decode_ids": [
-    91,
-    92
+    91
    ],
-   "scored": "rule"
+   "scored": "rule",
+   "outcome": "attempted, open"
   },
   {
    "id": 263,
@@ -2169,13 +2170,13 @@
    "shelfmark": "ASVe, IT ASVe 0045 010 (Serie) Busta 27 f 354",
    "folio_note": "",
    "cls": "C",
-   "status": "DECODE R1862: Non-decrypted, 4 pp., unknown; numerical; images login. Not viewed here. DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive.",
+   "status": "DECODE R1862: Non-decrypted, 4 pp., unknown; numerical; images login. Page 1 viewed here (r1874/NOTES.md): the same cipher as R1874 (ASVe Busta 30, Mocenigo 1628), whose contemporary decipherment is imaged on that record; not attacked. That decipherment is the crib to rebuild the key for this letter. DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive.",
    "why": "Ciphered letter of Unknown sender to unknown recipient, 29 Apr 1628; what the cipher hides is not known.",
    "importance": 2,
    "solvability": 2,
    "difficulty": 4,
    "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "verify": "Rebuild the R1874 key from its decipherment (images 8955-59) and apply it here.",
    "ark": "",
    "links": [
     {
