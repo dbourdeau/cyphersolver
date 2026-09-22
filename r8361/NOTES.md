@@ -50,15 +50,15 @@ Cipher tokens (measured, transcription.txt): 21; 4 read (19%).
 
 ## Remaining gaps
 - letter run "776 + w5 ‡ 6 3 ∩ 6" (f. 367r) - blocker: too-short; nine signs of an unknown alphabet, no key in print or on DECODE
-- codes [7] (×2), [9] (×3), H - blocker: no-key-material; Walsingham–Burghley 1572 key not known to survive, contexts do not fix a single person
+- standalone codes [7], [9], H (once each) and cover-names Glasgow/Florence - blocker: no-key-material; Walsingham–Burghley 1572 key not known to survive, contexts do not fix a single person
 
 ## Escalation
 - [x] siblings: R8357 and R8363 (same volume) are being worked in `burghley1572/`, `walsingham1572/`; neither holds a key
 - [x] clear-pages: all six pages are clear text; no decipherment or interlinear glosses
 - [x] known-keys: Tomokiyo's Elizabethan cipher page (Cecil–Norris, Throckmorton, Stafford) has no Walsingham 1570–73 key
 - [x] print: Digges 1655 prints all four letters, cipher left as figures; CSP Foreign x Nov 1572 does not calendar them
-- [x] key-rebuild: context fixes [3]; [7]/[9]/H occur 1–3 times with no consistent reading; nine-sign run too short
-- [n/a] retry: nothing new to rerun; no extended key
+- [x] key-rebuild: inventoried every boxed code in Digges 1655 (`digges_codes.txt`, 9 hits, 1572–73). Burghley's letter of Feb 1573 writes "Glasco [9]", "Glasco [g]", i.e. the same cover-word carries a box with varying digits: a box AFTER a word marks it as a cover-name (Florence, Rome, Glasgow = persons), not a separate code. So [9] after Florence/Rome and [7] after Glasgow are markers; the codes proper are [3] ×4 (the Queen), "the [9]" ×1, "[7] protested" ×1, H ×1. Cover-names Glasgow/Florence are not glossed anywhere in Digges.
+- [x] retry: regraded every token with the marker reading: [3] = Queen stays C; standalone [9], [7], H each occur once, no value fixed; the nine-sign run unchanged (too short)
 
 ## Next leads
 - The originals Walsingham sent (Hatfield / SP 70/125) may carry Burghley's clerk's decipherment interlined.
