@@ -1,0 +1,94 @@
+{
+ "schema_version": 1,
+ "target": "wesselenyi1664",
+ "title": "Ferenc Wesselényi to Leopold I(?), cipher passages in a Latin draft, c. 1663-64 (DECODE R674)",
+ "documents": [
+  {
+   "id": "R674",
+   "read": "read",
+   "shelfmark": "MNL OL E 199 (Wesselényi family archive), 8. pallium 1. 01 (DECODE R674)",
+   "date": "undated (c. 1663-64; DECODE 1 Jan 1664 is the start of a 1664-1670 span)",
+   "year": 1664,
+   "country": "Hungary",
+   "route": "Ferenc Wesselényi -> King Leopold I (inferred from 'Maiestatis Vestrae')",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["none"],
+    "source": "No decipherment on the page or in print; read here.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 244,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "DECODE transcription DOC_R674_D1892 (EK, 2020), checked against image IMG_R674_I4003",
+    "image_quality": "good",
+    "notes": "One correction: after 'prius' the first number is 10, not 20. DECODE's b/g/i/o letters are 6/9/1/0."
+   }
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "nomenclator"],
+  "summary": "Reversed-alphabet substitution on numbers 1-24 (24=a ... 1=z) with vowel homophones 25=a, 26=e, 28=o, 29=u and a few higher code numbers (60, 64) for names or places; word runs embedded in Latin clear text.",
+  "symbol_kind": "digits",
+  "digit_groups": {"width": "1-2", "separation": "dots"},
+  "distinct_symbols": 27,
+  "diacritics": {"used": false},
+  "homophones": {"used": true, "max_per_vowel": 2, "max_per_consonant": 1},
+  "nomenclator": {"present": true, "entries": 2, "kinds": ["names", "places"], "unread_groups": 2},
+  "nulls": {"present": false},
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "sibling_key": "DECODE R672 (MNL OL P 1238 Teleki collection, cipher keys no. 12): same reversed alphabet, but syllables Ba-Bu at 25-29 and Ka-Ku at 60-64; found after the reading, confirms the letters, does not give the codes.",
+  "notes": "Writer's slip: 9 (q) for p once in 'Spork'."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "DECODE 'Non-decrypted'; no printed edition found.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": ["images", "transcription", "cleartext context"],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: DECODE login cookie and /goal target setting. No target-specific intervention.",
+  "tools": ["simulated annealing substitution solver (wesselenyi1664/solve2.py)", "lang/ n-gram LM (la, hu-modern)", "PIL crops"],
+  "models": ["claude-opus-5-5"],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {"date": "2026-09-22", "kind": "access", "what": "Fetched R674 metadata, image and DECODE transcription with the saved cookie.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "transcription", "what": "Parsed DECODE transcription into 244 number tokens (b/g/i/o -> 6/9/1/0); checked against the image, one correction (10 not 20 after 'prius').", "result": "worked"},
+  {"date": "2026-09-22", "kind": "solver", "what": "Unconstrained homophonic anneal with Latin and Hungarian 4-gram LMs.", "result": "failed"},
+  {"date": "2026-09-22", "kind": "solver", "what": "One-to-one anneal: Latin impossible (21-letter model, 25 symbols); Hungarian gave pseudo-Hungarian.", "result": "failed"},
+  {"date": "2026-09-22", "kind": "solver", "what": "Latin anneal with at most two numbers per letter: all 8 seeds give readable Latin (tria millia hominum constituere, praesidium maiestatis vestrae reciperent).", "result": "worked"},
+  {"date": "2026-09-22", "kind": "crib", "what": "Fixed key by hand from 'si Dominus Generalis', tria millia hominum, duo millia peditum; names Haster (Heister), Snaidau (Schneidau), Spork; nux (3=x), ab indusio.", "result": "worked"},
+  {"date": "2026-09-22", "kind": "literature search", "what": "Web search for a printed edition or prior decipherment of the draft.", "result": "failed"},
+  {"date": "2026-09-22", "kind": "sibling key", "what": "Fetched R675 and keys R665-R673, R676-R690; scored each against the recovered values. R672 has the same reversed alphabet (19 agreements); its 60/64 (Ka/Ku) do not fit.", "result": "partial"},
+  {"date": "2026-09-22", "kind": "verification", "what": "Re-decoded every run with the final key; all Latin in context. Codes 60, 64 left unread.", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 0.988,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md / decode_out.txt: 244 cipher tokens, 241 letters read, codes 60 (x1) and 64 (x2) unread.",
+  "codes_open": {"open": 2, "total": 2, "tokens_open": 3},
+  "grades": {"H": 239, "M": 2},
+  "verification": ["key confirms", "historical consistency"],
+  "gaps": [
+   {"item": "code 60 (Dominus Generalis [60])", "blocker": "no-key-material", "detail": "once; not in R672 or any Teleki / Fasc. 327 key"},
+   {"item": "code 64 (ad [64] in castris; videns [64])", "blocker": "no-key-material", "detail": "twice; a place that might take an imperial garrison"}
+  ],
+  "notes": "Whole draft read ciphertext-only; alphabet later confirmed by DECODE key R672. Open: two code numbers."
+ }
+}
