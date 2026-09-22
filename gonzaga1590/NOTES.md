@@ -81,3 +81,7 @@ with any-digit substitution.
 - [x] retry: doubtful lines re-read at 3x by a subagent with 3/9, 0/8, 7/8 and 27/28 alternatives in beam.py; 92v and 93r mostly recovered, the stretches above remain
 - [x] retry: second independent blind re-read at 4x of every unread stretch, +56 tokens (blind_92r.md, blind_93r.md)
 - [x] siblings/second image: Gallica microfilm btv1b9060544v re-read of every unread stretch, +15 tokens (93r l4 "sì come non hò mancato in quello che", l5 "sin hora"); the four stretches above remain
+
+## Route
+
+Written "Di Malceseno sul Lago di Garda a 17 di Settembre 1590" (f. 93r, Gallica btv1b9060544v canvas 163). The address leaf (f. 94) names no place; Nevers signed two commissions at Château-Thierry on 23 and 24 Sept 1590 (BnF fr. 3983 nos. 46-47), so the atlas routes the letter Malcesine -> Château-Thierry.
