@@ -1,0 +1,233 @@
+{
+ "schema_version": 1,
+ "target": "visconti1529",
+ "title": "Galeazzo Visconti to Angelo Bolano (Alessandria, 15 Oct 1528) and to Francis I (pieve de Locate, 15 June 1529), BnF fr. 3045 f. 28 and fr. 3096 f. 91 (DECODE R4230, R4256)",
+ "documents": [
+  {
+   "id": "fr3045_f28",
+   "shelfmark": "BnF, Français 3045, f. 28, no. 24 (DECODE R4230); Gallica btv1b9060156p view 54 (address view 55)",
+   "date": "15 Oct 1528",
+   "year": 1528,
+   "country": "Italy",
+   "route": "Alessandria -> Angelo Bolano",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf; Lasry's key table covers the cipher; no plaintext published."
+   },
+   "length": {
+    "tokens": 798,
+    "unit": "symbols",
+    "measured": true,
+    "file": "fr3045_f28_tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica native view 54, line crops at 1.4-3x; glyph-by-glyph token file",
+    "image_quality": "fair",
+    "notes": "798 = tokens in the token file (_check_profile --measure), code groups counted per written glyph plus annotation tokens; the reading counts 778 cipher glyphs (fr3045_f28_final.md, by script)."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "fr3096_f91",
+   "shelfmark": "BnF, Français 3096, f. 91r, no. 47 (DECODE R4256); Gallica btv1b9060015d view 94, right half",
+   "date": "15 June 1529",
+   "year": 1529,
+   "country": "Italy",
+   "route": "League camp at the pieve de Locate -> Francis I",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf; no plaintext published."
+   },
+   "length": {
+    "tokens": 874,
+    "unit": "symbols",
+    "measured": true,
+    "file": "fr3096_f91_tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica native view 94, right half deskewed 1.6 deg, crops at 1.5-2.5x; glyph-by-glyph token file",
+    "image_quality": "fair",
+    "notes": "874 = tokens in the file including 156 '|' word separators; the reading counts 699 cipher glyphs, each code group as 1 (fr3096_f91_final.md, by script)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Invented-sign substitution for Italian with a few homophones (three E forms, two A forms), a sign for CHE, and a numbered nomenclator written with figures (48, 4θ, 4r) and letter groups (rr, qq, peu).",
+  "symbol_kind": "symbols",
+  "digit_groups": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "names",
+    "common words"
+   ],
+   "unread_groups": 5
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "notes": "Bare Lambda is a doubling mark; the far-sign is CHE or NTO; theta is D and G; q is H (and F in fr. 3096). Same cipher as visconti1528."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Lasry key table (05/11/2023) 'BNF Francais 3045f28 and 3034f154 - Italian' on Tomokiyo's cryptiana GL.htm; key only, no plaintext; DECODE Non-decrypted; web search found no edition",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the catalogue card (item 177). No target-specific intervention recorded.",
+  "tools": [
+   "curl (Gallica IIIF)",
+   "python/PIL deskew and crops"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "DECODE R4230/R4256 (Non-decrypted); Tomokiyo GL.htm lists both under Visconti's cipher with Lasry's key; no edition found.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "Gallica btv1b9060156p view 54 (fr. 3045 f.28) and btv1b9060015d view 94 (fr. 3096 f.91, right half) downloaded in the visconti1528 session.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "First passes in the visconti1528 session (fr3045_f28_reading.md, fr3096_f91_reading.md) with the Landriano key: Italian reads ('mal tratamento'); crossed sign = figure 4 (42, 48).",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Second pass on fr. 3096 by an agent, glyph by glyph from deskewed crops (fr3096_f91_tokens.txt).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Bare Lambda = doubling mark; far = NTO as well as CHE; rho = F; y = B in bono.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "fr. 3096 read: 667/699 glyphs (95.4%), measured.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Second pass on fr. 3045 by an agent, glyph by glyph (fr3045_f28_tokens.txt); theta = D and G, q = H.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "fr. 3045 read in part: 708/778 (91.0%).",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "control",
+   "what": "Retry at 2-3x on l.5, l.15, l.18, l.20; rr = 'nova' tested in three contexts.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "fr. 3096 rules applied to fr. 3045: assai, quanto ci è; 715/778 (91.9%).",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "DECODE metadata fetched: R4230 = fr. 3045 f.28, R4256 = fr. 3096 f.91; clear closes read 'XV' on both images, not 12.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Web search for an edition of either letter: none.",
+   "result": "failed",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "fraction_read": 0.936,
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "fr. 3096 read, fr. 3045 read in part; the numbered codes and a few one-off stretches open.",
+  "key": "partial",
+  "codes_open": {
+   "open": 5,
+   "total": 5,
+   "tokens_open": 17
+  },
+  "gaps": [
+   {
+    "item": "fr. 3045 l.5 'in fora com[u]nal' (16 glyphs), l.15, l.18 place name, l.20 'onsante'",
+    "blocker": "too-short",
+    "detail": "values known, sense unresolved, combinations occur only here; two retry passes"
+   },
+   {
+    "item": "fr. 3096 L12 and L18 stretches",
+    "blocker": "too-short",
+    "detail": "values known, phrases occur only here"
+   },
+   {
+    "item": "codes 48, rr, qq, 42, ep",
+    "blocker": "no-key-material",
+    "detail": "no key list survives"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "visconti1529/fr3045_f28_final.md and fr3096_f91_final.md, by script over the token files: 715/778 + 667/699 = 1382/1477 cipher glyphs read as sense; sense-open, unread and code glyphs counted as unread"
+ }
+}

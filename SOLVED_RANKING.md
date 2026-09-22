@@ -211,6 +211,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 | p107 | **Burghley → Walsingham (Walsingham letter-book)**, BL Harley MS 260 f. 395 (DECODE R8362) | 1573 | 1 | 1 | 1 | 1 | 3 | 3 | **1.40** | D 1: nothing enciphered; two boxed cover-name markers. H 1: a known printed letter. |
 | p108 | **Guise? → Mercœur, BnF fr. 15564 ff. 119 and 142** (DECODE R4162, R4165) | 1587 | 2 | 3 | 4 | 3 | 1 | 4 | **2.60** | D 2: a published key extended by about a dozen values. H 3: League levies and the Protestant army of 1587, Pfyffer, Châtillon. N 4: not in print. V 4: 95.1% of letter signs, measured. |
 | p109 | **Court informant → Nevers, BnF fr. 3976 f. 62** (DECODE R3705) | 1588 | 3 | 4 | 4 | 3 | 1 | 4 | **3.35** | D 3: no key; rebuilt from a sibling's glosses, polyphonic signs. H 4: Henri III's plan to drown the Paris ligueurs, April 1588. N 4: not in print. |
+| p110 | **Galeazzo Visconti → Angelo Bolano and → Francis I, 1528–29**, BnF fr. 3045 f. 28, fr. 3096 f. 91 (DECODE R4230, R4256) | 1528–29 | 2 | 3 | 4 | 3 | 1 | 3 | **2.75** | D 2: a published key extended by five rules. H 3: the League after Lautrec, Savona, the Venetians and the peace of 1529. N 4: not in print. V 3: 93.6% of signs, numbered codes open. |
 
 ## By single axis
 
@@ -543,3 +544,4 @@ Visconti to Montmorency 1528 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.
 Burghley to Walsingham 1573 (Walsingham letter-book) provisional score: 0.25×1 + 0.25×1 + 0.20×1 + 0.10×1 + 0.10×3 + 0.10×3 = **1.40** (p107): a clear letter catalogued as a cipher.
 
 Informant to Nevers, 29 April 1588 provisional score: 0.25×3 + 0.25×4 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **3.35** (p109): a key rebuilt from a glossed sibling read an unread letter end to end.
+Visconti to Bolano and to Francis I 1528–29 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×3 = **2.75** (p110): Lasry's published key extended on two unread sibling letters, read in part.

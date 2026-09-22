@@ -80,6 +80,13 @@ fr3045_f28_reading.md and fr3096_f91_reading.md (both read in part):
 - fr. 3096 also shows q = F (facio, fece, farà) and a b-shaped H / h-shaped B pair; no change to the readings here.
 Crediting the two probable identifications (48 x2, peu x2) moves the measured figure from 1240 to about 1246 of 1338 (93.1%). The rest stays blocked as listed below; the read bar (95%) is not reached.
 
+## Lead from the siblings (visconti1529)
+
+22 Sept 2026. Two rules were found on the siblings (visconti1529/, fr. 3096 f.91 and fr. 3045 f.28) after this
+letter was read: a bare Λ is a doubling mark (que[Λ]la = quella, a[Λ]sai = assai), and the 'far' sign stands for NTO
+as well as CHE (altrotanto, mancamento, quanto). They have not been re-applied to this letter's open stretches
+(so../lo../do.., asciilati, ascicsai pui, acuvante, the v03 and v07 runs). The counts above are unchanged.
+
 ## Remaining gaps
 - nomenclator codes 4θ, 4r, rr, qq (48 probably Saint-Pol and peu probably the King, from the siblings, not proved) - blocker: no-key-material; numbered code, no key list survives, both siblings read in full without resolving them
 - the final sign pair of so../lo../do.. (r10-12) and the one-off signs [Y r] r12, [mur·][ω] r16, [v b] r30, Π v08-09 - blocker: too-short; they occur only here, the siblings show no occurrence to test a value on

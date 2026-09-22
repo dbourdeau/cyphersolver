@@ -225,6 +225,7 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Galeazzo Visconti → Angelo Bolano (15 Oct 1528) and → Francis I (15 June 1529)**, catalogue 179, DECODE R4230 (fr. 3045 f. 28), R4256 (fr. 3096 f. 91): read in part 22 Sept 2026 with Lasry's 2023 key, extended; 93.6% of 1477 signs, the letter to the King read (95.4%). See [visconti1529/](visconti1529/).
 - **Unknown sender → the duc de Nevers, "1 Jan 1588"**, catalogue 187, DECODE R3705: read 22 Sept 2026; a court informant's letter of 29 Apr 1588, key rebuilt from the glossed sibling f. 131. See [nevers1588/](nevers1588/) and the [write-up](https://dbourdeau.github.io/cyphersolver/nevers1588.html).
 - **[Guise] → the duc de Mercœur, 16 Apr 1587**, catalogue 171, DECODE R4158 (siblings R4155, R4167): read 22 Sept 2026 with Lasry's 2022 fr. 15564 key, extended; 983 of 998 signs. See [mercoeur1587/](mercoeur1587/) and the [write-up](https://dbourdeau.github.io/cyphersolver/mercoeur1587.html).
 - **[Guise] → the duc de Mercœur, 27 May and 20 Jun 1587**, catalogue 172, DECODE R4162, R4165: read 22 Sept 2026 with Lasry's 2022 fr. 15564 key, extended; 95.1% of 2,477 letter signs. See [guise1587/](guise1587/) and the [write-up](https://dbourdeau.github.io/cyphersolver/guise1587.html).
