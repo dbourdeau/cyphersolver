@@ -43,8 +43,16 @@ In sum: Mantua reports the rumour that Sixtus V was poisoned by the Spaniards, w
 and assures Nevers (for the King) of his devotion to the French crown against the "common enemy", a guarded pro-Bourbon
 declaration of September 1590.
 
+## Signs and code words read from the key (f. 64, upper right)
+
+θ-with-bar per · ●— che · ♀ non · Y V.A. · ⊡ S. Ecc.za · ⊕ S. M.tà · ⊙ S. S. Ill.ma · flag-Γ S. A. · ⌊ et · S-sign quello ·
+↓ quali · ‡ quanti · T mille · + conto · ※ lettere · Γ di · 7 il. Titles 41–63: 42 Mons. di, 43 Gran Duca di, 45 Papa,
+47 Re di, 55 Cardinale di, 58 Duca di, 60 Legato … (overbarred 96 Mercœur, 97 Nemours; plain 96 Spagnoli, 97 Roma).
+So on f. 93r "{box-sign}" = et ("a tempo et luogo conveniente", "corona et parimente"), "{bar-circle}" = per,
+"{circle-plus}" = S. M.tà ("si assicuri la S. M.tà per…", "con S. M.tà gli interessi"); on f. 92v "{●} ti il [60]" = "che
+il Legato ha scritto in Italia", "{T} Monsignor" = "Di Monsignor" (flag-Γ).
+
 ## Remaining gaps
 
 - f. 92r lines 5 and 8: transcription errors, only part decoded — blocker: not-attempted (retranscribe).
 - f. 93r l1–l5, l8: stretches that decode to nonsense (transcription slips; 27/28 and 3/9) — blocker: not-attempted (retry with the 27→28 alternative added to `beam.py`).
-- Signs {⊖} {Γ} {□} {q} and code 60: values on fr. 3995 f. 64 top-right columns not yet read — blocker: not-attempted.
