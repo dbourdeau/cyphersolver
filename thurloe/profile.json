@@ -170,12 +170,13 @@
    "apply_keys.py (period keys scored by quadgram LM)",
    "solve_a2.py (simulated annealing, bijective and homophonic modes)",
    "stats_a.py (alphabetical-key search)",
-   "lm_build.py (Dutch/French quadgram LMs)"
+   "lm_build.py (Dutch/French quadgram LMs)",
+   "control.py (matched control for solve_a2.py)"
   ],
   "models": "unknown",
   "sessions": 1,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-15"
+  "last_date": "2026-09-22"
  },
  "solution": [
   {
@@ -219,6 +220,12 @@
    "kind": "crib",
    "what": "(d) cribs like 'horse' and 'hang' in the rich clear frame fit many assignments equally well.",
    "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Matched control for solve_a2.py on (a) (control.py, control_out.txt): synthetic texts in (a)'s exact layout (66+47+15 = 128 letters, 8 code groups), held-out Dutch/French/period-English text, 40 trials per cell, solver code unchanged. Recovered (>= 80% of letters): simple substitution 39/40 nl, 40/40 fr, 36/40 en; 25-symbol homophonic (homo, LAM 0.5, MAXH 2) 26/40 nl, 24/40 fr, 17/40 en. (a)'s own best (-4.71 nl, -4.57 fr per quad) lies below all 40 Dutch and all 40 French homophonic controls, so the negative is meaningful: (a) is long enough, and is not a <=2-homophone letter cipher of Dutch/French text as modelled.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -228,6 +235,28 @@
   "verification": [
    "none"
   ],
-  "notes": "Verdict STUCK: too short for cryptanalysis, no key online. Originals in Bodleian Rawlinson A, not digitised; sibling decipherments would be in the Nationaal Archief (a) and the Clarendon MSS (b-d), not online. No matched control is recorded for the solver failure on (a). The only commit (347fef4b5, 2026-09-15) has no model trailer."
+  "notes": "Verdict STUCK: too short for cryptanalysis, no key online. Originals in Bodleian Rawlinson A, not digitised; sibling decipherments would be in the Nationaal Archief (a) and the Clarendon MSS (b-d), not online. Matched control run 2026-09-22 (control.py): the solver recovers synthetic texts of (a)'s layout (simple substitution 95-100%, 25-symbol homophonic 43-65% of trials), so the failure on (a) is meaningful, not a length artefact. The only commit (347fef4b5, 2026-09-15) has no model trailer.",
+  "gaps": [
+   {
+    "item": "(a) Beverning 1653, 136 groups",
+    "blocker": "no-key-material",
+    "detail": "Matched control shows the length suffices for the solver, which still fails: system not the one modelled. Needs the key or a deciphered sibling despatch (Nationaal Archief), and Boreel's new code for the 8 code groups."
+   },
+   {
+    "item": "(b) du Gard 1656, 27 tokens",
+    "blocker": "too-short",
+    "detail": "Cover address, no key online."
+   },
+   {
+    "item": "(c) Brussels 1656, 16 digits",
+    "blocker": "too-short",
+    "detail": "A 12-sign name and a 4-sign word."
+   },
+   {
+    "item": "(d) Waddall 1656, 50 groups",
+    "blocker": "too-short",
+    "detail": "29 distinct homophonic symbols in 50 groups; key in the Clarendon MSS, not online."
+   }
+  ]
  }
 }

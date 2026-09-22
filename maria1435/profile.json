@@ -78,14 +78,15 @@
   "human_role": "Project-level: set up Claude Code with Opus 5 and posed the oldest-cipher candidate list (oldest/CANDIDATES.md A1). The image is public on DECODE. No target-specific intervention recorded in NOTES or git.",
   "tools": [
    "annealer with Catalan quadgram model (solve.py, lm/catalan.txt)",
-   "PARES image fetcher (pares_fetch.py)"
+   "PARES image fetcher (pares_fetch.py)",
+   "control.py (matched control for solve.py)"
   ],
   "models": [
    "claude-opus-5"
   ],
   "sessions": "unknown",
   "first_date": "2026-09-18",
-  "last_date": "2026-09-18"
+  "last_date": "2026-09-22"
  },
  "solution": [
   {
@@ -153,6 +154,12 @@
    "kind": "solver",
    "what": "Annealing, one sign = one letter, Catalan quadgram model, with and without the 1429 look-alike values and cribs (la treua, treua, tregua, castella, M z = es): every crib heavily penalised, output gibberish.",
    "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "control",
+   "what": "Matched control (control.py, control_out.txt): 60+60 synthetic Catalan texts in f. 59r's exact layout (runs of 11/14/17 signs, 39 letters + 3 word signs, 18+3 = 21 distinct), monoalphabetic and 1429-style homophonic keys, solve.anneal() unchanged (20 seeds x 200k). Recovered (>= 80% letters) 0/60 and 0/60; median accuracy 0.08 / 0.13; solver optimum above the true key in 120/120. A true 5-letter crib is penalised by median 42-46 (>= 35 in 79/120), as much as the target's cribs, so the crib penalties are not evidence against a monoalphabetic cipher.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -167,10 +174,15 @@
   "gaps": [
    {
     "item": "All three cipher runs (42 signs)",
+    "blocker": "too-short",
+    "detail": "Matched control: the annealer recovers 0/120 synthetic texts of this exact layout and sign inventory, monoalphabetic or homophonic."
+   },
+   {
+    "item": "All three cipher runs (42 signs)",
     "blocker": "no-key-material",
-    "detail": "Needs reg. 3225's other 1435 folios (ACA, not digitised), the second key of B.A.H.M. ms. 677 ff. 160-161, or a queen-side key at the ARV; the 42 signs alone are too short."
+    "detail": "Needs reg. 3225's other 1435 folios (ACA, not digitised), the second key of B.A.H.M. ms. 677 ff. 160-161, or a queen-side key at the ARV."
    }
   ],
-  "notes": "Attempted, closed from the evidence. No matched control was run for the 42-sign annealing; the negative rests on crib penalties, not on a control."
+  "notes": "Attempted, closed from the evidence. Matched control run 2026-09-22: 0/120 recovered at this length, so the solver negative says nothing about the cipher (too short); the earlier crib-penalty argument against a monoalphabetic cipher is withdrawn."
  }
 }

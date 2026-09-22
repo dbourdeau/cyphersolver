@@ -171,7 +171,8 @@ dotted signs = word boundaries, annealing over the three runs with their clear c
 - Every crib placement is heavily penalised: "la treua" at run-2 start −63; "treua" at any offset −35 to −90;
   "tregua" −61 or worse; "castella" anywhere in run 3 −50 to −128; "M z = es" −30. Most other offsets conflict
   because a repeated sign (8R, 8) would have to stand for two letters.
-- Conclusion: under a plain monoalphabetic model the expected words do not fit, so the cipher almost certainly
+- (Superseded 2026-09-22 by the matched control below: true cribs on synthetic monoalphabetic text are penalised
+  just as much, so the penalties are not evidence about the cipher.) Earlier conclusion: under a plain monoalphabetic model the expected words do not fit, so the cipher almost certainly
   uses homophones, nulls or syllabic signs (the three 8-shapes and the 6-8L pairing point that way), and 42 signs
   cannot decide it. A key or a sibling text is required; the text alone is not readable to a defensible standard.
 
@@ -191,3 +192,55 @@ key obtained and ruled out, reg. 3226 swept clean. Blocked on two things:
    folios (around ff. 50-80) or a check for other ciphered pages.
 3. Reg. 3113 now swept too (clean). Every online register of both chanceries for 1421-39 has been checked.
 4. Failing the archives, the 42 signs alone cannot be read to a defensible standard.
+
+## Matched control (2026-09-22)
+
+`control.py` → `control_out.txt` (60 trials per design, 1,616 s). Synthetic ciphertexts copy f. 59r's layout
+exactly: three runs of 11/14/17 signs, the three dotted word signs in the same places, 39 letter tokens, and a
+random key drawn so that the ciphertext has exactly 18 distinct alphabet signs + 3 word signs = 21, as the target.
+Plaintext: held-out Catalan (last 20% of `lang/` corpus `ca-gutenberg`, which is what `lm/catalan.txt` was); LM:
+`solve.load_lm()` on the other 80%. Attack: `solve.anneal()` unchanged (20 seeds × 200,000 iterations), plus the
+crib test (5 seeds with the first five letters of run 2 pinned, true or wrong). Two key designs: *mono* (one sign
+per letter, what solve.py models) and *homo* (1429-key style, three signs per vowel).
+
+| | mono | homo |
+|---|---|---|
+| recovered (≥ 80% of letters right) | **0/60** | **0/60** |
+| ≥ 50% right | 0/60 | 1/60 |
+| accuracy median / max | 0.08 / 0.44 | 0.13 / 0.56 |
+| solver optimum scores above the true key | 60/60 | 60/60 |
+| penalty for pinning the **true** 5-letter crib, median (q10–q90) | 42.5 (19–70) | 45.5 (27–76) |
+| true crib penalty ≥ 35 | 39/60 | 40/60 |
+| penalty for a **wrong** 5-letter crib, median | 56 | 64 |
+| true crib outscores wrong crib | 41/60 | 37/60 |
+| ≥ 80% right even with the true crib pinned | 0/60 | 3/60 |
+
+What it means:
+
+- At 42 signs the method recovers nothing, even when the cipher is exactly the monoalphabetic design it
+  searches: in every trial the annealer finds a key that the Catalan model prefers to the true one (true keys score
+  −452 to −689, optima −344 to −502; the target's −401 is inside that band). So the attack's failure on f. 59r
+  says nothing about the cipher; the text is below what this method can break. **Blocker: too-short.**
+- **The crib argument above is withdrawn.** The earlier conclusion ("every crib heavily penalised, −35 to −90, so
+  the cipher is not monoalphabetic") does not hold: a *correct* crib on a genuinely monoalphabetic control is
+  penalised by the same amount (median 42–46, two thirds of trials ≥ 35), and a true crib beats a wrong one only
+  about 65% of the time. The penalties on "la treua", "treua", "castella" are neither evidence against those
+  cribs nor evidence for homophones. Homophones/nulls remain plausible on other grounds (three 8-shapes, the
+  6–8L pairing, the 1429 key's three signs per vowel), not on the solver's output.
+
+## Remaining gaps
+
+- All three cipher runs (42 signs, 21 distinct) - blocker: too-short; the matched control recovers 0/120 synthetic
+  texts of this layout with this solver, so no ciphertext-only attack on the 42 signs can be trusted.
+- The same 42 signs - blocker: no-key-material; the queen's key (reg. 3225's other 1435 folios, not digitised;
+  B.A.H.M. ms. 677 ff. 160-161 "aliud abecedarium"; any queen-side key at the ARV) is not online. Needs the ACA
+  or the Corpus Christi library.
+
+## Escalation
+
+- [x] siblings: regs 3226, 3224, 2693, 3113 and Cartas Reales Alfonso IV swept in full, no cipher; reg. 3225 itself not digitised.
+- [x] clear-pages: reg. 2693 holds the king's ciphered letters registered in clear, but not this letter's plaintext; the page has no decipherment.
+- [x] known-keys: 1413 jargon key R10182, 1437 Montcada-Amat key R10183, 1429 Castile-war key (Cortès & Pons 1986) tried; alphabets do not fit.
+- [x] print: prior literature checked, nothing printed (NOTES "Status").
+- [x] key-rebuild: annealing with Catalan LM, with and without 1429 look-alike values and cribs; matched control shows 42 signs are below what it can recover.
+- [x] retry: every crib placement retried; nothing to regrade without key material.
