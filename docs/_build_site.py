@@ -381,6 +381,11 @@ PAGES = [
          blurb='A letter of Florence&rsquo;s envoy to the Count of Urbino, listed on DECODE as non-decrypted, though its interlinear decipherment makes it decrypted; what the record lacks is the key or a reference to it. The abb&eacute; Gabbrielli glossed a few of its words in 1863 and built a key from them, which Meister printed in 1902; the letter was never printed. The three long runs he left unread are decoded sign by sign with his glosses as seeds, two of his nulls resolved and four new values confirmed on the siblings.',
          quote='&ldquo;perch&eacute; dice che Madonna &egrave; pure femina e sospetosa&rdquo;',
          rights='Manuscript images: Archivio di Stato di Firenze, via DECODE R3754'),
+    dict(slug='r1854', label='Mantua letters 1428&ndash;30', year='1428&ndash;1430', y=1428.5, place='Rome and Forl&igrave; &rarr; Gianfrancesco Gonzaga', st='partial', stt='read in part',
+         title='Cipher letters to Gianfrancesco Gonzaga, 1428&ndash;1430 &mdash; Read in part',
+         blurb='DECODE R1854, catalogued as one letter from an unknown sender, is four cipher letters to the lord of Mantua: Pandolfo Malatesta (Rome, April 1428), an unnamed agent (Rome, August 1428), an informant at Forl&igrave; (November 1428) and Francesco de&rsquo; Cattanei (Rome, February 1430). Two keys were rebuilt from the ciphertext alone and one taken from a contemporary interlinear gloss; three letters read (96.6&ndash;100%): a Gonzaga marriage, the Malatesta and the count of Urbino, and the archbishop of Patras offering his see to Venice. Pandolfo Malatesta&rsquo;s own runs stay unread.',
+         quote='&ldquo;et quod Carolus est nimis iuvenis ad talia&rdquo;',
+         rights='Archivio di Stato di Mantova, via DECODE R1854 (images not reproduced)'),
     dict(slug='maria1435', label='Mar&iacute;a 1435', year='1435', y=1435, place='Valencia &rarr; Gaeta', st='stuck', stt='not read, keys tested',
          title='Queen Mar&iacute;a to Alfonso V, Valencia 1435 &mdash; Attempted',
          blurb='The oldest unread ciphertext on DECODE with a public image: 42 signs inside a Catalan letter of Queen Mar&iacute;a to Alfonso V, written in Valencia on the day of Ponza, about something &ldquo;continued until All Saints&rdquo;, almost certainly the truce with Castile. Both printed Aragonese keys of the decade were tested: the 1437 alphabet is unrelated, and the 1429 nomenclator seems to match the word signs while its alphabet does not. Four neighbouring registers, 1,414 images, hold no cipher at all; the king&rsquo;s own register shows his letter to her of 27 July 1435 was sent <i>in ciffra</i>.',
@@ -1211,6 +1216,7 @@ IMAGES['kaa4591b'] = None
 IMAGES['sperantio1534'] = None
 IMAGES['r1874'] = None
 IMAGES['r1212'] = None
+IMAGES['r1854'] = None
 IMAGES['wesselenyi1664'] = None
 IMAGES['harley1582r8499'] = ('harley1582r8499_lead.jpg', 'Harley MS 1582 f. 8r: &ldquo;Pleasing it your highness to understand that&rdquo;, then the cipher: Carew was at Compi&egrave;gne with the French king, the rebels and the Constable', 'British Library, Harley MS 1582 f. 8r (via DECODE R8499)')
 IMAGES['r1875'] = None

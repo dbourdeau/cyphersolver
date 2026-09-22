@@ -1,6 +1,6 @@
 # R1854 — "Mantova enciphered letters": four cipher letters to Gianfrancesco Gonzaga, 1428–1430
 
-Status: read in part (22 Sept 2026). Four of five images read (P2–P5, 3 letters + a verso); P1 (Pandolfo Malatesta,
+Status: read in part (22 Sept 2026); written up at docs/r1854.html. Four of five images read (P2–P5, 3 letters + a verso); P1 (Pandolfo Malatesta,
 22 April 1428) not read. Key: recovered for P2, P3 (from the contemporary gloss), P4/P5; none for P1.
 Catalogue #152 "Unknown sender to unknown recipient" (Mantova State Archive).
 
