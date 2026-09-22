@@ -204,6 +204,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 | p100 | **Łaski, King John's side, a Bavarian at Wardein → the Bavarian court**, BayHStA KAA 4591 ff.226–261 (DECODE R9403, R9414, R9415) | 1531–37 | 4 | 3 | 4 | 3 | 1 | 3 | **3.25** | D 4: two new homophonic sign alphabets rebuilt from one-line glosses by annealing and beam search; Łaski's key with e/r swapped. H 3: King John's diplomacy with Bavaria, the Sultan's terms, the Pressburg diet, Turkish arming 1537. N 4: never read. V 3: 99.5% and 95.3%, but the German letter 91.3%. |
 | p101 | **Sir Edward Stafford (Paris) → [Walsingham], 9 Nov 1586**, BL Harley MS 1582 ff. 76–77 (DECODE R8504) | 1586 | 1 | 1 | 4 | 3 | 1 | 4 | **1.95** | D 1: one word, sibling key applied. H 1: a single word, *princes*. N 4: not in print. |
 | p102 | **Gottfried van Swieten (Bonn) → Count Cobenzl, 1757–59**, ARA Brussels SEG 1236 (DECODE R955–R957) | 1757–59 | 5 | 3 | 4 | 3 | 1 | 4 | **3.60** | D 5: 1759 syllabary rebuilt ciphertext-only by monotone annealing against an LM, then from context. H 3: French army finances and generals, the Gueldre convention. N 4: not in print. |
+| p103 | **Robert Reade (Paris) → his cousin, 19 Apr 1641**, BL Harley MS 7001 ff. 148–149 (DECODE R7766) | 1641 | 2 | 3 | 4 | 3 | 1 | 3 | **2.60** | D 2: an archive key reconstruction found by correspondent and applied, blanks bracketed alphabetically. H 3: Windebank's exile and possible return, Strafford's trial year. N 4: not in print. V 3: 93% with 7% conjectured. |
 
 ## By single axis
 
@@ -528,3 +529,4 @@ Stafford August 1586 provisional score: 0.25×3 + 0.25×2 + 0.20×4 + 0.10×3 + 
 KAA 4591 letters 1531–37 provisional score: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×3 = **3.25** (p100): Łaski's key adapted, two homophonic keys rebuilt from glosses, read 99.5%, 95.3% and 91.3%.
 Stafford November 1586 provisional score: 0.25×1 + 0.25×1 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **1.95** (p101): one cipher word read with a sibling key.
 Van Swieten to Cobenzl 1757–59 provisional score: 0.25×5 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×4 = **3.60** (p102): an alphabetical syllabary rebuilt from ciphertext alone, read 96%.
+Reade to his cousin 1641 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×3 = **2.60** (p103): an archive key reconstruction applied to an unread letter, read in part.
