@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "target": "labbe1582",
+  "title": "Desiderio l’Abbé to Nevers, Prague and Breslau, 1577",
+  "documents": [
+    {
+      "id": "no30",
+      "shelfmark": "BnF fr. 3198 no. 30",
+      "date": "2 March 1577",
+      "year": 1577,
+      "country": "France",
+      "route": "Prague -> France",
+      "language": "French",
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ]
+      },
+      "length": {
+        "tokens": 834,
+        "distinct": 10,
+        "unit": "symbols",
+        "measured": true,
+        "file": "prague_draft_digits.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "Counts are draft written digits, not deciphered letters or established cipher units. 29 inventoried runs; one obscured locus plus glyph/join uncertainties."
+      },
+      "read": "not read"
+    },
+    {
+      "id": "no37",
+      "shelfmark": "BnF fr. 3198 no. 37",
+      "date": "2 May 1577",
+      "year": 1577,
+      "country": "France",
+      "route": "Breslau -> France",
+      "language": "French",
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ]
+      },
+      "length": {
+        "tokens": 77,
+        "distinct": 8,
+        "unit": "symbols",
+        "measured": true,
+        "file": "breslau_draft_digits.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "Count is draft written digits, not established cipher units. Two spans around clear plusieurs; alternate witness differences unresolved."
+      },
+      "read": "not read"
+    },
+    {
+      "id": "no38",
+      "shelfmark": "BnF fr. 3198 no. 38",
+      "date": "2 May 1577",
+      "year": 1577,
+      "country": "France",
+      "route": "Breslau -> France",
+      "language": "French",
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ]
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "mixed",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "Substantially repeats no. 37; not counted as independent data. See breslau_cipher_draft.md; no independent plaintext."
+      },
+      "read": "not read"
+    }
+  ],
+  "system": {
+    "types": [
+      "undetermined"
+    ],
+    "summary": "Numerical insertions in clear French, with token boundaries under investigation.",
+    "symbol_kind": "digits",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "digit_groups": {
+      "width": "unknown",
+      "separation": "mixed"
+    },
+    "notes": "Numerical stream has explicit points; role of pointed six, nulls and unit boundaries unproved. Rejected crib mappings must not be treated as recovered values."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "transcription",
+      "cleartext context",
+      "crib"
+    ],
+    "attack": "crib",
+    "human_role": "Identified manuscript and requested solving to completion.",
+    "models": [
+      "GPT-6"
+    ],
+    "last_date": "2026-09-23",
+    "tools": [
+      "PIL crops",
+      "shared lang.lm fr-1600-letters, orders 4 and 5",
+      "Python segmentation probes",
+      "Segment.cs, PairNull.cs, MayProbe.cs",
+      "web catalogue searches"
+    ]
+  },
+  "solution": [
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Resumed existing local notes and IIIF scans; earlier Prague cipher transcription incomplete. Regenerated native-scale crops.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "verification",
+      "what": "Inspected Breslau cipher at native scale; numeral order and digit grouping require renewed analysis. Earlier notes are unverified prior project work, not an independent decipherment.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "transcription",
+      "what": "Transcribed sixteen Prague recto insertions and May cipher into runs_draft.json; glyph and grouping uncertainties retained.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "solver",
+      "what": "Tested 63 greedy one/two-digit prefix partitions. Unrestricted homophonic scoring collapsed to repeated letters; constrained swaps produced no coherent text. Testing point-delimited pairs next.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "solver",
+      "what": "Swept 1566 retained forward/backward greedy prefix segmentations on the frozen initial draft; six pair variants and pointed-six null variants gave no coherent manuscript plaintext.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "transcription",
+      "what": "Expanded to 29 Prague insertions plus the two May spans; measured 834 and 77 draft digits. Rechecked f64 lower cipher against its repeated view on f65.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "crib",
+      "what": "Imposed hypothetical mais...jamais, then ne/ni, in point-delimited pair parses of May. No coherent extension; all crib mappings rejected as unvalidated.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "control",
+      "what": "Constrained pair substitution solver recovered 538 of 538 synthetic plaintext letters. This verifies the restricted implementation, not the manuscript model. See control/result.tsv.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "reading",
+      "what": "Read f63 reference to sending a copy of the cipher by one of two routes on 24 February to Sr Barquin (name provisional). Corrected par lune, previously misread as a place.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "literature search",
+      "what": "Located catalogue mirror for fr. 4695 no. 51, Labbe to Nevers, Prague 5 February 1577, Gallica btv1b90582923; plausible earlier correspondence, not inspected and not a demonstrated key enclosure.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "New Gallica image/manifest requests failed by connection reset or timeout via Python, curl and browser; earlier-letter/enclosure trail remains externally blocked.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "class": "not read",
+    "key": "none",
+    "fraction_read": 0,
+    "fraction_read_method": "estimated",
+    "fraction_read_source": "All cipher insertions remain unvalidated; clear prose and imposed cribs excluded. Cipher-token boundaries remain unknown.",
+    "verification": [
+      "none"
+    ],
+    "gaps": [
+      {
+        "item": "Prague cipher, all inventoried insertions",
+        "blocker": "no-key-material",
+        "detail": "No validated values or segmentation; draft only."
+      },
+      {
+        "item": "May cipher, nos. 37 and 38",
+        "blocker": "no-key-material",
+        "detail": "Duplicate witnesses without plaintext."
+      },
+      {
+        "item": "Overwritten/uncertain cipher figures",
+        "blocker": "illegible",
+        "detail": "f64r08 obscured locus and unresolved glyph variants."
+      },
+      {
+        "item": "Earlier letter/enclosure trail in fr. 4695 no. 51",
+        "blocker": "needs-physical-access",
+        "detail": "Digital access currently fails; restored images or another copy needed, not necessarily an in-person visit."
+      }
+    ],
+    "notes": "Attempt closed for now; research target remains open. No claim of cryptographic impossibility and no partial-solve percentage based on clear prose. See REASSESSMENT.md."
+  }
+}

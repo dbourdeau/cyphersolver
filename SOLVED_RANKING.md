@@ -17,7 +17,6 @@ The **Passano Wolsey account** is provisionally p135 at **3.35**: a ciphertext-o
 
 The **Segura letter of 1596** is provisionally p136 at **3.45**: a short unknown homophonic cipher read from images, with a reported comet prediction and six tentative sign assignments; no independent key.
 
-
 The **Potocka and Mniszech letters** are provisionally p137 at **2.90**: an independently recovered bilingual alphabet, but one separate cipher remains unread and there is no independent plaintext.
 
 ## Axes and weights
