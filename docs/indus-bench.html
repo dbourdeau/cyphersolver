@@ -69,18 +69,21 @@
   <label for="ib-key">Key: one sign per line, ICIT glyph id &lt;tab&gt; value &lt;tab&gt; gloss</label>
   <textarea id="ib-key" spellcheck="false" placeholder="# language: dra&#10;740&#9;anru&#9;jar&#10;520&#9;ampu&#9;arrow"></textarea>
   <label for="ib-lang">Claimed language</label>
-  <select id="ib-lang"><option value="sa">Sanskrit (Monier-Williams)</option><option value="dra">Dravidian (DEDR)</option><option value="sux">Sumerian (ePSD2)</option></select>
+  <select id="ib-lang"><option value="sa">Sanskrit (Monier-Williams)</option><option value="dra">Dravidian (DEDR)</option><option value="sux">Sumerian (ePSD2)</option><option value="mu">Munda (JAMBU)</option><option value="ta">Old Tamil (Sangam-cited)</option><option value="bu">Burushaski</option></select>
+  <label for="ib-mode">Scoring</label>
+  <select id="ib-mode"><option value="v">Vowels kept (recommended: it recognises the real Linear Elamite key)</option><option value="c">Consonants only (Sanskrit, Dravidian, Sumerian)</option></select>
   <div class="ib-btns"><button class="primary" id="ib-run" disabled>Score the key</button></div>
   <p class="ib-msg" id="ib-msg">Loading the corpus and the lexicons&hellip;</p>
   <div class="ib-bar"><i id="ib-prog"></i></div>
 </div>
 <div class="ib-out" id="ib-out">
   <p>Values are written in Latin transliteration (IAST or similar). They are reduced to coarse consonant classes (k/g, c/j, t/d with retroflexes, p/b, the nasals, m, y, r, l, v, s/&#347;/&#7779;/h) with the vowels dropped, as the script is taken to leave them to the reader. A text reads to the extent its consonants parse into words of the lexicon, plus one case-ending consonant. The score is the share of consonants covered by words of three or more consonants.</p>
-  <p>Two warnings from the full bench (<a href="indus.html#bench">the write-up</a>). A key fitted blindly to the corpus reads about 93&ndash;94% of it in any of the three languages, so a high reading rate means nothing on its own. And a key needs about twenty signs before the test says anything.</p>
+  <p>Three warnings from the full bench (<a href="indus.html#bench">the write-up</a>). A key fitted blindly to the corpus reads about 93% of it in any language, so a high reading rate means nothing on its own. The consonants-only score cannot even recognise the accepted decipherment of Linear Elamite; keeping the vowels can, so use that. And beating the shuffles is necessary, not sufficient: a key whose author tuned it to give pronounceable syllables beats its shuffles on any lexicon of short words, in whatever language. A key needs about twenty signs before the test says anything.</p>
 </div>
 </div>
 
 <h2 id="how-the-numbers-are-made">How the numbers are made</h2>
+<p>The accepted decipherment of Linear Elamite (Desset and colleagues 2022) was used as a check. On its own corpus, with Hallock&rsquo;s Elamite glossary, its key beats 96 of 100 shuffles with the vowels kept, and does not beat them with the consonants only.</p>
 <p>The corpus is the 2,088 lines of three or more signs in the ICIT-derived dump of the Indus inscriptions, in reading order, on ICIT (Wells) glyph ids. The lexicons are the headwords of Monier-Williams (Cologne Digital Sanskrit Dictionaries), the forms of the Dravidian Etymological Dictionary (DEDR, all languages), and the nouns of the electronic Pennsylvania Sumerian Dictionary (ePSD2). Only their consonant skeletons are bundled. The shuffles permute the key&rsquo;s values among keyed signs in bands of ten by frequency (three for keys of fewer than sixty signs), so each shuffled key has the same values on signs of about the same frequency. The anchor test counts, for the eight copper-tablet texts written on the back of a picture, how often the reading contains a word for that animal in the claimed language. The code is <code>indus/bench.py</code>; this page is its in-browser version.</p>
 </main>
 <footer><div class="in">
@@ -89,7 +92,7 @@
 </div></footer>
 <script>
 (function () {
-  var D = null, LEX = {};
+  var D = null, LEX = {}, LEXV = {};
   var $ = function (id) { return document.getElementById(id); };
   function skel(x, cls) {
     x = x.toLowerCase().replace(/ĝ/g, 'n').replace(/ḫ/g, 'k').replace(/ṃ/g, 'n').replace(/ḥ/g, '').replace(/r̤/g, 'l');
@@ -99,11 +102,21 @@
     for (var i = 0; i < x.length; i++) { var c = cls[x[i]]; if (c) s += c; }
     return s.replace(/(.)\1+/g, '$1');
   }
+  var VOW = { a: 'a', e: 'a', i: 'i', o: 'u', u: 'u', 'ə': 'a', 'ɛ': 'a', 'æ': 'a', 'ɔ': 'u', 'ɨ': 'i', 'ʌ': 'a', 'ɯ': 'u' };
+  function skelv(x, cls) {
+    x = x.toLowerCase().replace(/ĝ/g, 'n').replace(/ḫ/g, 'k').replace(/ṃ/g, 'n').replace(/ḥ/g, '').replace(/r̤/g, 'l');
+    x = x.normalize('NFD').replace(/\p{M}/gu, '');
+    x = x.replace(/([kgcjtdpb])h/g, '$1').replace(/h/g, 's');
+    var s = '';
+    for (var i = 0; i < x.length; i++) { var c = cls[x[i]]; if (c) s += c.toUpperCase(); else if (VOW[x[i]]) s += VOW[x[i]]; }
+    return s.replace(/(.)\1+/g, '$1');
+  }
+  var MAXLEN = 8;
   function coverage(s, words, end) {
     var n = s.length, best = new Array(n + 1).fill(-1); best[0] = 0;
     for (var i = 0; i < n; i++) {
       if (best[i] < 0) continue;
-      for (var L = 1; L <= Math.min(8, n - i); L++) {
+      for (var L = 1; L <= Math.min(MAXLEN, n - i); L++) {
         var w = s.substr(i, L);
         if (words.has(w) || (L > 1 && words.has(w.slice(0, -1)) && end.indexOf(w[L - 1]) >= 0)) {
           var v = best[i] + (L >= 3 ? L : 0);
@@ -160,32 +173,36 @@
     var n = Object.keys(raw).length;
     if (!n) { $('ib-msg').textContent = 'No key lines found: use "sign<tab>value" lines with ICIT glyph ids.'; return; }
     $('ib-run').disabled = true;
+    var mode = $('ib-mode').value, LX = mode === 'v' ? LEXV : LEX, EN = mode === 'v' ? D.endingsv : D.endings;
+    MAXLEN = mode === 'v' ? 12 : 8;
     var key = {};
-    Object.keys(raw).forEach(function (g) { key[g] = skel(raw[g], D.classes); });
+    Object.keys(raw).forEach(function (g) { key[g] = (mode === 'v' ? skelv : skel)(raw[g], D.classes); });
     var freq = {}, tok = 0;
     D.T.forEach(function (t) { t.forEach(function (g) { freq[g] = (freq[g] || 0) + 1; tok++; }); });
     var kt = 0; Object.keys(key).forEach(function (g) { kt += freq[g] || 0; });
     var out = ['<p><b>' + n + '</b> signs keyed; <b>' + (100 * kt / tok).toFixed(0) + '%</b> of sign tokens have a value.</p>'];
     var rows = [], NS = 100, band = n > 60 ? 10 : 3, verdict = '';
-    var langs = ['sa', 'dra', 'sux'], names = { sa: 'Sanskrit', dra: 'Dravidian', sux: 'Sumerian' };
+    var langs = Object.keys(LX), names = { sa: 'Sanskrit', dra: 'Dravidian', sux: 'Sumerian', mu: 'Munda', ta: 'Old Tamil', bu: 'Burushaski' };
+    if (langs.indexOf(lang) < 0) { $('ib-msg').textContent = 'That language has only the vowels-kept lexicon.'; $('ib-run').disabled = false; return; }
     for (var li = 0; li < langs.length; li++) {
       var L = langs[li], r = rng(61 + li);
-      var real = score(D.T, key, LEX[L], D.endings[L]), sims = [];
+      var real = score(D.T, key, LX[L], EN[L]), sims = [];
       for (var i = 0; i < NS; i++) {
-        sims.push(score(D.T, shuffled(key, freq, band, r), LEX[L], D.endings[L]));
-        $('ib-prog').style.width = (100 * (li * NS + i + 1) / (3 * NS)) + '%';
+        sims.push(score(D.T, shuffled(key, freq, band, r), LX[L], EN[L]));
+        $('ib-prog').style.width = (100 * (li * NS + i + 1) / (langs.length * NS)) + '%';
         if (i % 5 === 4) { $('ib-msg').textContent = names[L] + ': shuffle ' + (i + 1) + ' of ' + NS; await pause(); }
       }
       sims.sort(function (a, b) { return a - b; });
       var ge = sims.filter(function (s) { return s >= real; }).length;
       rows.push('<tr><td>' + names[L] + (L === lang ? ' (claimed)' : '') + '</td><td>' + (100 * real).toFixed(1) + '%</td><td>' +
         (100 * sims[50]).toFixed(1) + '% (' + (100 * sims[0]).toFixed(1) + '&ndash;' + (100 * sims[NS - 1]).toFixed(1) + ')</td><td>' + ge + ' of ' + NS + '</td></tr>');
-      if (L === lang) verdict = ge <= 5 ? 'The key reads its claimed language better than 95% of its shuffles.' :
+      if (L === lang) verdict = ge <= 5 ? 'The key reads its claimed language better than 95% of its shuffles. Check the other rows: if it beats its shuffles in other languages too, the edge is phonotactic (pronounceable syllables), not evidence for the language.' :
         'The key reads its claimed language no better than its own shuffles: ' + ge + ' of ' + NS + ' shuffled keys do as well.';
     }
     out.push('<table><tr><th>Lexicon</th><th>Key</th><th>Shuffles, median (range)</th><th>Shuffles as good</th></tr>' + rows.join('') + '</table>');
     if (n < 20) verdict = 'With ' + n + ' signs the keyed signs rarely stand next to each other, so the reading test cannot tell a right key from a wrong one.';
-    var ah = anchorHits(key, lang), as = 0, ra = rng(97), age = 0;
+    var ah = (D.animals[lang] && mode === 'c') ? anchorHits(key, lang) : null, as = 0, ra = rng(97), age = 0;
+    if (ah === null) { out.push('<p>The copper-tablet anchor test runs in the consonants-only mode for Sanskrit, Dravidian and Sumerian.</p>'); out.push('<div class="ib-verdict">' + verdict + '</div>'); $('ib-out').innerHTML = out.join(''); $('ib-msg').textContent = 'Done.'; $('ib-run').disabled = false; return; }
     for (var j = 0; j < NS; j++) { var x = anchorHits(shuffled(key, freq, band, ra), lang); as += x; if (x >= ah) age++; }
     out.push('<p>Copper-tablet anchors: the reading contains a ' + names[lang] + ' word for the animal on the back in <b>' + ah + ' of 8</b> texts; shuffled keys ' + (as / NS).toFixed(2) + ' on average, as many or more in ' + age + ' of ' + NS + '.</p>');
     out.push('<div class="ib-verdict">' + verdict + '</div>');
@@ -197,6 +214,7 @@
     D = d;
     D.T = d.texts.map(function (t) { return t.split(' '); });
     ['sa', 'dra', 'sux'].forEach(function (L) { LEX[L] = new Set(d.lex[L]); });
+    Object.keys(d.lexv).forEach(function (L) { LEXV[L] = new Set(d.lexv[L]); });
     var sel = $('ib-preset');
     Object.keys(d.keys).forEach(function (k) { var o = document.createElement('option'); o.value = k; o.textContent = d.keys[k].title; sel.appendChild(o); });
     sel.addEventListener('change', function () {
@@ -205,7 +223,7 @@
     });
     $('ib-key').addEventListener('input', function () { var p = parse($('ib-key').value); if (p.lang && LEX[p.lang]) $('ib-lang').value = p.lang; });
     $('ib-run').disabled = false; $('ib-run').addEventListener('click', run);
-    $('ib-msg').textContent = 'Ready: ' + d.texts.length + ' lines; lexicons of ' + d.lex.sa.length + ', ' + d.lex.dra.length + ' and ' + d.lex.sux.length + ' word skeletons.';
+    $('ib-msg').textContent = 'Ready: ' + d.texts.length + ' lines; six lexicons (' + Object.keys(d.lexv).map(function (L) { return d.lexv[L].length; }).join(', ') + ' word skeletons).';
   }).catch(function () { $('ib-msg').textContent = 'Could not load indus_bench.json.'; });
 })();
 </script>

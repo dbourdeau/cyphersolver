@@ -34,6 +34,7 @@ Usage: python bench.py <mw.txt> <dedr forms.csv> <sux_gloss.tsv> [yajnadevam xli
 Writes results/bench.md.
 """
 import csv
+import functools
 import glob
 import os
 import random
@@ -50,7 +51,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = []
 random.seed(61)
 ENDINGS = {'sa': set('smntyrv'), 'dra': set('nlrmtk'), 'sux': set('krtsn')}
-LANGNAME = {'sa': 'Sanskrit (Monier-Williams)', 'dra': 'Dravidian (DEDR)', 'sux': 'Sumerian (ePSD2)'}
+LANGNAME = {'sa': 'Sanskrit (Monier-Williams)', 'dra': 'Dravidian (DEDR)', 'sux': 'Sumerian (ePSD2)',
+            'mu': 'Munda (JAMBU)', 'ta': 'Old Tamil (Sangam-cited Tamil Lexicon)', 'bu': 'Burushaski (Berger, Yoshioka)'}
+ENDINGS_V = {'sa': set('SMNTYRV'), 'dra': set('NLRMTK'), 'sux': set('KRTSN'), 'mu': set('NKTR'),
+             'ta': set('NLRMTK'), 'bu': set('MNTSK')}
 SIGN_ANCHORS = {'341': ['rhinoceros'], '749': ['goat'], '753': ['hare'], '777': ['goat', 'archer'],
                 '778': ['goat', 'archer']}
 TEXT_ANCHORS = [('806 233 384 740', 'goat'), ('503 615 740', 'rhinoceros'), ('235 705 33 845 407 321 407', 'hare'),
@@ -78,6 +82,7 @@ for cls, chars in (('k', 'kgqx'), ('c', 'cj'), ('t', 'td'), ('p', 'pbf'), ('n', 
         CLASS[ch] = cls
 
 
+@functools.lru_cache(maxsize=None)
 def skel(x):
     """Consonant skeleton on coarse classes. Aspiration (a consonant + h) is dropped; a bare h joins s."""
     x = x.lower().replace('ĝ', 'n').replace('ḫ', 'k').replace('ṃ', 'n').replace('ḥ', '').replace('r̤', 'l')
@@ -85,6 +90,23 @@ def skel(x):
     x = ''.join(c for c in x if not unicodedata.combining(c))
     x = re.sub(r'([kgcjtdpb])h', r'\1', x).replace('h', 's')
     s = ''.join(CLASS[c] for c in x if c in CLASS)
+    return re.sub(r'(.)\1+', r'\1', s)
+
+
+VOWEL = {'a': 'a', 'e': 'a', 'i': 'i', 'o': 'u', 'u': 'u'}
+for _v, _c in (('ə', 'a'), ('ɛ', 'a'), ('æ', 'a'), ('ɔ', 'u'), ('ɨ', 'i'), ('ʌ', 'a'), ('ɯ', 'u')):
+    VOWEL[_v] = _c
+
+
+@functools.lru_cache(maxsize=None)
+def skelv(x):
+    """Vowel-aware skeleton: the consonant classes (upper case) with the vowels kept in three classes
+    (a/e, i, o/u), as a syllabic script writes them. Used for the B2v test."""
+    x = x.lower().replace('ĝ', 'n').replace('ḫ', 'k').replace('ṃ', 'n').replace('ḥ', '').replace('r̤', 'l')
+    x = unicodedata.normalize('NFD', x)
+    x = ''.join(c for c in x if not unicodedata.combining(c))
+    x = re.sub(r'([kgcjtdpb])h', r'\1', x).replace('h', 's')
+    s = ''.join(CLASS[c].upper() if c in CLASS else VOWEL.get(c, '') for c in x)
     return re.sub(r'(.)\1+', r'\1', s)
 
 
@@ -103,7 +125,32 @@ def lexicons(mw, dedr, sux):
           for r in csv.DictReader(open(sux, encoding='utf-8'), delimiter='\t')]
     lex['sux'] = {skel(a) for a, _ in sw if skel(a)}
     gl['sux'] = sw
-    return lex, gl
+    raw = {'sa': [a for a, _ in w], 'dra': [a for a, _ in dw], 'sux': [a for a, _ in sw]}
+    return lex, gl, raw
+
+
+def extra_raw(scout):
+    """Word lists for Munda (JAMBU: Pinnow 1959, Munda 1968 Proto-Kherwarian, Zide 1982 Sora, Santali
+    survey, Kharia), Old Tamil (Tamil Lexicon entries citing Sangam works or Tolkappiyam, romanised
+    headword) and Burushaski (Berger via JAMBU, Yoshioka), from the scout folder."""
+    raw = {'mu': [], 'ta': [], 'bu': []}
+    if not scout or not os.path.isdir(scout):
+        return raw
+    for fn in glob.glob(os.path.join(scout, 'munda', 'jambu', '2026*.csv')):
+        for r in csv.reader(open(fn, encoding='utf-8')):
+            if len(r) > 2 and r[2]:
+                raw['mu'].append(re.sub(r"[()ˈˌʔ'\-]", '', r[2]))
+    p = os.path.join(scout, 'oldtamil', 'mtl_sangam_cited_entries.csv')
+    if os.path.exists(p):
+        for r in csv.DictReader(open(p, encoding='utf-8')):
+            h = r['body'].split('||')[0].strip()
+            if h:
+                raw['ta'].append(h.replace('-', ''))
+    for fn in glob.glob(os.path.join(scout, 'burushaski', 'jambu', '2026*.csv')):
+        for r in csv.reader(open(fn, encoding='utf-8')):
+            if len(r) > 2 and r[2]:
+                raw['bu'].append(re.sub(r"[()ˈˌʔ'\-=]", '', r[2]))
+    return raw
 
 
 def dedr_glosses(dedr_forms):
@@ -134,8 +181,9 @@ def coverage(s, words, endings, maxlen=8):
     return max(best[n], 0)
 
 
-def runs(t, key):
+def runs(t, key, sk=None):
     """Maximal runs of keyed signs, as skeletons."""
+    sk = sk or skel
     out, cur = [], ''
     for g in t:
         v = key.get(g)
@@ -144,18 +192,18 @@ def runs(t, key):
                 out.append(cur)
             cur = ''
         else:
-            cur += skel(v)
+            cur += sk(v)
     if cur:
         out.append(cur)
     return out
 
 
-def score(texts, key, words, endings):
+def score(texts, key, words, endings, sk=None, maxlen=8):
     tot = cov = 0
     for t in texts:
-        for s in runs(t, key):
+        for s in runs(t, key, sk):
             tot += len(s)
-            cov += coverage(s, words, endings)
+            cov += coverage(s, words, endings, maxlen)
     return cov / tot if tot else 0.0
 
 
@@ -203,7 +251,7 @@ def animal_words(lang, gl, animal):
     return {skel(w) for w, g in gl[lang] if pat.search(g) and len(skel(w)) >= 2}
 
 
-def bench_key(name, meta, key, gloss, texts, freq, lex, gl, lines_all):
+def bench_key(name, meta, key, gloss, texts, freq, lex, gl, lines_all, lexv=None):
     lang = meta['lang']
     say('## %s' % meta['title'])
     say()
@@ -233,6 +281,23 @@ def bench_key(name, meta, key, gloss, texts, freq, lex, gl, lines_all):
             LANGNAME[L], ' (claimed)' if L == lang else '', 100 * real, 100 * sims[100], 100 * sims[0],
             100 * sims[-1], ge))
     say()
+    if lexv and len(key) >= 20:
+        say('**B2v the same, vowels kept** (three vowel classes; the version that passes the Linear Elamite '
+            'control, B5c; 100 shuffles):')
+        say()
+        say('| lexicon | real key | shuffles median (range) | shuffles as good |')
+        say('|---|---|---|---|')
+        b2['v'] = {}
+        for L in lexv:
+            real = score(texts, key, lexv[L], ENDINGS_V[L], skelv, 12)
+            sims = sorted(score(texts, k2, lexv[L], ENDINGS_V[L], skelv, 12)
+                          for k2 in shuffles(key, freq, n=100, band=10 if len(key) > 60 else 3))
+            ge = sum(1 for s in sims if s >= real)
+            b2['v'][L] = (real, sims[50], ge)
+            say('| %s%s | %.1f%% | %.1f%% (%.1f-%.1f) | %d of 100 |' % (
+                LANGNAME[L], ' (claimed)' if L == lang else '', 100 * real, 100 * sims[50], 100 * sims[0],
+                100 * sims[-1], ge))
+        say()
     say('**B3 the copper-tablet anchors.**')
     say()
     sa = []
@@ -357,12 +422,14 @@ def fitted(lex, freq, texts, L, iters=3000):
     return cur / tot, key
 
 
-def main(mw, dedr, sux, yaj=None):
+def main(mw, dedr, sux, yaj=None, scout=None):
     rows = [r for r in load() if r['flat']]
     texts = [ln for r in rows for ln in r['seq'] if len(ln) >= 3]
     freq = Counter(g for t in texts for g in t)
-    lex, gl = lexicons(mw, dedr, sux)
+    lex, gl, raw = lexicons(mw, dedr, sux)
     gl['dra'] = dedr_glosses(dedr)
+    raw.update({L: v for L, v in extra_raw(scout).items() if v})
+    lexv = {L: {skelv(w) for w in ws if skelv(w)} for L, ws in raw.items()}
     say('# A test bench for Indus decipherments')
     say()
     say('%d lines of 3+ signs (ICIT-derived corpus). Lexicon skeletons: %s.' % (
@@ -416,7 +483,7 @@ def main(mw, dedr, sux, yaj=None):
         keys.append((os.path.basename(p)[:-4],) + load_key(p))
     summary = []
     for name, meta, key, gloss in keys:
-        b2 = bench_key(name, meta, key, gloss, texts, freq, lex, gl, rows)
+        b2 = bench_key(name, meta, key, gloss, texts, freq, lex, gl, rows, lexv)
         summary.append((meta['title'], meta['lang'], b2 if len(key) >= 20 else None))
     say('## B5 Controls')
     say()
@@ -429,22 +496,44 @@ def main(mw, dedr, sux, yaj=None):
         c, _ = fitted(lex, freq, fit_texts, L)
         say('- (b) ceiling, %s: a key fitted by hill-climbing (one consonant class per sign, 250 commonest signs, '
             '3,000 steps, 1,000 lines) reads %.1f%% of those lines.' % (LANGNAME[L], 100 * c))
+    if scout:
+        import elamite_control as ec
+        le = os.path.join(scout, 'linear_elamite')
+        tx = os.path.join(le, 'elamicon_linear_elamite_texts.csv')
+        if os.path.exists(tx):
+            ekey, etexts = ec.load_le(tx, os.path.join(le, 'elamicon_signvalues.csv'))
+            ef = Counter(g for t in etexts for g in t)
+            hall = os.path.join(scout, 'elamite', 'hallock1969_glossary_ocr.txt')
+            for lab, sk, lx, en, ml in (('consonants only', skel, ec.hallock(hall, skel), set('rkpnmt'), 8),
+                                        ('vowels kept', skelv, ec.hallock(hall, skelv), set('RKPNMT'), 12)):
+                real = score(etexts, ekey, lx, en, sk, ml)
+                sims = sorted(score(etexts, k2, lx, en, sk, ml) for k2 in shuffles(ekey, ef, n=100, band=10))
+                say('- (c) a real decipherment, Linear Elamite (Desset 2022 values, Elamicon corpus, Hallock 1969 '
+                    'Elamite lexicon), %s: %.1f%% against shuffles %.1f%% (%.1f-%.1f), %d of 100 as good.' % (
+                        lab, 100 * real, 100 * sims[50], 100 * sims[0], 100 * sims[-1], sum(1 for x in sims if x >= real)))
     say()
     say('## Summary')
     say()
-    say('| key | claimed | reads claimed language | shuffles median | shuffles as good | best other language |')
-    say('|---|---|---|---|---|---|')
+    say('| key | claimed | consonants only: key / shuffles / as good | vowels kept: key / shuffles / as good | '
+        'best other language, vowels kept |')
+    say('|---|---|---|---|---|')
     for title, lang, b2 in summary:
         if b2 is None:
-            say('| %s | %s | too few signs for a reading test | | | |' % (title, lang))
+            say('| %s | %s | too few signs for a reading test | | |' % (title, lang))
             continue
-        other = max((L for L in b2 if L != lang), key=lambda L: b2[L][0] - b2[L][1])
-        say('| %s | %s | %.1f%% | %.1f%% | %d/200 | %s %.1f%% (shuffles %.1f%%) |' % (
-            title, lang, 100 * b2[lang][0], 100 * b2[lang][1], b2[lang][2], other, 100 * b2[other][0], 100 * b2[other][1]))
+        v = b2.get('v', {})
+        cv = '%.1f%% / %.1f%% / %d of 100' % (100 * v[lang][0], 100 * v[lang][1], v[lang][2]) if lang in v else ''
+        others = [L for L in v if L != lang]
+        ot = ''
+        if others:
+            o = max(others, key=lambda L: v[L][0] - v[L][1])
+            ot = '%s %.1f%% / %.1f%% / %d of 100' % (o, 100 * v[o][0], 100 * v[o][1], v[o][2])
+        say('| %s | %s | %.1f%% / %.1f%% / %d of 200 | %s | %s |' % (
+            title, lang, 100 * b2[lang][0], 100 * b2[lang][1], b2[lang][2], cv, ot))
     os.makedirs(os.path.join(HERE, 'results'), exist_ok=True)
     with open(os.path.join(HERE, 'results', 'bench.md'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(OUT) + '\n')
 
 
 if __name__ == '__main__':
-    main(*sys.argv[1:5])
+    main(*sys.argv[1:6])

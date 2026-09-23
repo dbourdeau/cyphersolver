@@ -616,12 +616,66 @@ Scripts: `merge_m77.py`, `replicate_m77.py`, `segment.py`, `allographs.py`, `exp
    (`keys/fairservis1992_raw.tsv`: 23 sure, 83 likely, 110 unsure, 22 unmatched; his example seals are cited by
    Marshall/Mackay plate numbers, so no match could be confirmed through a seal). `build_fairservis.py` makes
    two keys: sure + likely (97 signs, 64% of tokens) and with the unsure matches (172 signs). His key reads
-   Dravidian 87.7% against 86.5% for its shuffles (71 of 200 as good), Sanskrit 85.6% against 85.2%; the wide
-   key 92.8% against 92.4% (70 of 200). Anchor texts naming their animal 5 of 8, shuffles 5.4 on average. No
+   Dravidian 87.7% against 86.2% for its shuffles (63 of 200 as good), Sanskrit 85.6% against 85.2%; the wide
+   key 92.8% against 92.7% (90 of 200) (tenth-pass run). Anchor texts naming their animal 5 of 8, shuffles 5.4 on average. No
    anchor sign keyed (341, 749, 753, 777 unmatched or unsure). He reads both endings as third-person suffixes
    (740 an 'honorific', 520 ar), which does not separate the two classes of names they mark. Like every key
    tested, it reads no better than its own shuffles; with whole-word values the raw rate is high for any
    arrangement.
+
+## Tenth pass (23 Sept 2026): a real decipherment as control, more languages, Meluhha, weights
+
+Scripts: `elamite_control.py`, `bench.py` (vowel-aware mode B2v, Munda / Old Tamil / Burushaski lexicons, B5c),
+`meluhha_oracc.py`, `weights.py`; results in `results/elamite_control.md`, `bench.md`, `meluhha_oracc.md`,
+`weights.md`. Source data (scratchpad, not committed): JAMBU (github.com/moli-mandala/data: Pinnow 1959, Munda
+1968, Zide 1982, Santali survey, Kharia; Berger and Yoshioka for Burushaski), the Madras Tamil Lexicon entries
+citing Sangam works, Hallock 1969 Glossary of Achaemenid Elamite (archive.org OCR), the Elamicon/OCLEI Linear
+Elamite corpus with its sign-value table, ORACC epsd2 (CC0), Hemmy (Marshall 1931, Mackay 1938) and Vats 1940
+weight tables typed from the page images.
+
+1. **The bench on a real decipherment (Linear Elamite, Desset et al. 2022).** 168 lines, 2,520 signs, 246 sign
+   variants keyed with 61 sound values; lexicon Hallock's Achaemenid Elamite headwords (a thousand years later,
+   OCR). With consonants only, the real key reads 60.7% against 62.4% for its shuffles (156 of 200 as good): **the
+   consonant-skeleton test cannot see a correct key on a small corpus.** With the vowels kept (three classes,
+   `bench.skelv`), the real key reads 25.7% against 19.6% (2 of 100 as good in the first check). So the
+   bench's null results for the Indus keys in the consonant mode (eighth pass) are weaker evidence than they
+   were stated to be; the vowel-aware mode (B2v) is the one with power, and the Indus keys are now also scored
+   in it (see 2).
+2. **The Indus keys, vowels kept, in six languages** (B2v; the new lexicons are Munda from JAMBU, 14,430
+   forms; Old Tamil, 5,127 Tamil Lexicon headwords cited from Sangam works; Burushaski, 16,619 forms from Berger
+   and Yoshioka). 100 shuffles each.
+   - Yajnadevam (Sanskrit): Sanskrit 53.0% against 44.8% (10 of 100 as good, not significant); **Dravidian
+     70.4% against 61.2% (0 of 100)**; Sumerian, Munda, Old Tamil, Burushaski at chance. Without his values for
+     the ending signs (740 an, 520 n, 400/90/151) the Sanskrit edge goes (42.6% against 43.9%, 29 of 50) and the
+     Dravidian one stays (57.6% against 52.5%, 2 of 50). A key tuned by its author to give pronounceable
+     syllables keeps an advantage over its shuffles on a lexicon of short CV-CV words, whatever the language;
+     the Dravidian edge of a Sanskrit key is that effect, not evidence for Dravidian. The vowel-aware test is
+     necessary, not sufficient.
+   - Fairservis 1992: below its shuffles in every language (Dravidian 92.7% against 97.4%, 97 of 100 as good;
+     with the unsure matches 95.8% against 98.4%).
+   - Parpola 1994: below its shuffles (Dravidian 77.3% against 92.5%, 100 of 100 as good): his whole-word values
+     sit where the parse cannot join them into longer words.
+   - So no published key passes the vowel-aware test in its own language. (Controls in this run: the planted
+     keys 96-99% against 86-90% for their shuffles; fitted keys 92.7-93.8%; Linear Elamite 25.7% against 19.2%,
+     4 of 100 with the vowels kept, 80 of 100 with consonants only.)
+3. **Meluhha in cuneiform** (`meluhha_oracc.py`; 161 ORACC attestations in 121 texts, 77 Ur III, 91
+   administrative). Nanaza and Samar are on three Irisagrig tablets of Šu-Suen 6 (Nisaba 15 371, CUSAS 40 1354
+   and 1582; months 3 and 12), always as 'oil allotment of the men of Meluhha, royal donated slaves, shepherds of
+   bezoars': a standing allotment. The first name is written na-na-za twice and na-na-sa3 once, a z/s
+   alternation that can mark a sound Sumerian spelling lacked. Every other person tied to Meluhha has a Sumerian
+   or Akkadian name: Ur-Lamma son of Meluhha (Girsu, 5 texts), Ur-Igalim son of Meluhha, Lu-sunzida 'man of
+   Meluhha', Ili-ahi, Elum-Meluh, an overseer of Meluhha, the envoy Utu-illat who went to Meluhha. 'Son of
+   Meluhha' names a second generation at Girsu (the 'village of Meluhha' near Gu'abba). No further Meluhhan
+   personal names; the two known ones stay the only language evidence. Goods: abba wood (furniture, a weapon)
+   20, carnelian 14, copper 10, mes wood 9, Meluhha-style chairs and tables 5, boats 5, the dar bird, the
+   ur-DAR animal.
+4. **The weights and the numerals** (`weights.py`; 472 weights: Hemmy in Marshall 1931 and Mackay 1938, Vats
+   1940 without the 107 values where print confuses 3 and 8). The binary-then-decimal series (1, 2, 4 ... 64,
+   160, 200, 320, 640, 1600 ...) fits 81% of them within 5% on a unit of 0.8585 g (Kenoyer's 0.871 g), against 2%
+   (best 29%) for random series: the transcription is sound and the system is real. The stroke numerals do not
+   follow it: the short and long strokes are dominated by 3 (160 and 209 tokens), which the series lacks; the
+   tiered numerals by 7, 6 and 12 (6% of tiered tokens are powers of two). The numbers written on seals and
+   tablets count things, or the capacity measure of the long strokes (seventh pass), not weight units.
 
 ## Limitations
 

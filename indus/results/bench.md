@@ -21,10 +21,21 @@ Mahadevan (1998) reads 740 and 520 as the masculine and non-masculine singular s
 | Dravidian (DEDR) | 71.9% | 69.5% (59.6-74.6) | 32 of 200 |
 | Sumerian (ePSD2) | 46.5% | 44.2% (21.8-55.3) | 73 of 200 |
 
+**B2v the same, vowels kept** (three vowel classes; the version that passes the Linear Elamite control, B5c; 100 shuffles):
+
+| lexicon | real key | shuffles median (range) | shuffles as good |
+|---|---|---|---|
+| Sanskrit (Monier-Williams) (claimed) | 53.0% | 44.8% (35.1-59.1) | 10 of 100 |
+| Dravidian (DEDR) | 70.4% | 61.2% (52.6-69.8) | 0 of 100 |
+| Sumerian (ePSD2) | 19.7% | 17.5% (7.6-28.5) | 34 of 100 |
+| Munda (JAMBU) | 41.8% | 42.1% (24.2-55.1) | 53 of 100 |
+| Old Tamil (Sangam-cited Tamil Lexicon) | 12.6% | 9.9% (4.7-16.9) | 19 of 100 |
+| Burushaski (Berger, Yoshioka) | 40.4% | 41.7% (21.8-53.1) | 57 of 100 |
+
 **B3 the copper-tablet anchors.**
 
 - anchor signs: 341 (rhinoceros) = m: no; 749 (goat) = isan: no; 753 (hare) = r: no; 777 (goat/archer) = ras: no; 778 (goat/archer) = ras: no.
-- anchor texts naming their own animal (a sa word for it, 2+ consonants, inside the reading): 4 of 8; naming another tablet animal: 2.2 on average; shuffled keys: mean 2.62, as many or more in 45 of 200.
+- anchor texts naming their own animal (a sa word for it, 2+ consonants, inside the reading): 4 of 8; naming another tablet animal: 2.2 on average; shuffled keys: mean 2.65, as many or more in 46 of 200.
 
 **B4 structure.**
 
@@ -40,14 +51,25 @@ Mahadevan (1998) reads 740 and 520 as the masculine and non-masculine singular s
 
 | lexicon | real key | shuffles median (range) | shuffles as good | 
 |---|---|---|---|
-| Sanskrit (Monier-Williams) | 85.6% | 85.2% (78.4-93.1) | 89 of 200 |
-| Dravidian (DEDR) (claimed) | 87.7% | 86.5% (79.4-92.8) | 71 of 200 |
-| Sumerian (ePSD2) | 69.1% | 70.9% (43.7-82.1) | 127 of 200 |
+| Sanskrit (Monier-Williams) | 85.6% | 85.3% (78.8-93.7) | 94 of 200 |
+| Dravidian (DEDR) (claimed) | 87.7% | 86.2% (79.4-93.1) | 63 of 200 |
+| Sumerian (ePSD2) | 69.1% | 71.0% (43.9-82.8) | 119 of 200 |
+
+**B2v the same, vowels kept** (three vowel classes; the version that passes the Linear Elamite control, B5c; 100 shuffles):
+
+| lexicon | real key | shuffles median (range) | shuffles as good |
+|---|---|---|---|
+| Sanskrit (Monier-Williams) | 89.1% | 95.8% (88.8-98.0) | 99 of 100 |
+| Dravidian (DEDR) (claimed) | 92.7% | 97.4% (91.5-99.0) | 97 of 100 |
+| Sumerian (ePSD2) | 62.2% | 64.8% (39.0-73.9) | 64 of 100 |
+| Munda (JAMBU) | 78.5% | 84.5% (76.5-87.9) | 97 of 100 |
+| Old Tamil (Sangam-cited Tamil Lexicon) | 62.3% | 60.6% (29.0-77.4) | 40 of 100 |
+| Burushaski (Berger, Yoshioka) | 83.5% | 88.1% (80.0-92.6) | 86 of 100 |
 
 **B3 the copper-tablet anchors.**
 
 - anchor signs: 341 (rhinoceros): no value; 749 (goat): no value; 753 (hare): no value; 777 (goat/archer): no value; 778 (goat/archer): no value.
-- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 5 of 8; naming another tablet animal: 4.2 on average; shuffled keys: mean 5.42, as many or more in 176 of 200.
+- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 5 of 8; naming another tablet animal: 4.2 on average; shuffled keys: mean 5.39, as many or more in 171 of 200.
 
 **B4 structure.**
 
@@ -63,14 +85,25 @@ Mahadevan (1998) reads 740 and 520 as the masculine and non-masculine singular s
 
 | lexicon | real key | shuffles median (range) | shuffles as good | 
 |---|---|---|---|
-| Sanskrit (Monier-Williams) | 91.6% | 91.4% (84.6-95.6) | 95 of 200 |
-| Dravidian (DEDR) (claimed) | 92.8% | 92.4% (89.0-95.7) | 70 of 200 |
-| Sumerian (ePSD2) | 73.5% | 76.7% (45.0-84.0) | 146 of 200 |
+| Sanskrit (Monier-Williams) | 91.6% | 91.1% (84.5-95.7) | 71 of 200 |
+| Dravidian (DEDR) (claimed) | 92.8% | 92.7% (89.1-95.7) | 90 of 200 |
+| Sumerian (ePSD2) | 73.5% | 76.1% (44.1-83.9) | 142 of 200 |
+
+**B2v the same, vowels kept** (three vowel classes; the version that passes the Linear Elamite control, B5c; 100 shuffles):
+
+| lexicon | real key | shuffles median (range) | shuffles as good |
+|---|---|---|---|
+| Sanskrit (Monier-Williams) | 90.9% | 94.6% (89.4-97.0) | 95 of 100 |
+| Dravidian (DEDR) (claimed) | 95.8% | 98.4% (95.1-99.2) | 94 of 100 |
+| Sumerian (ePSD2) | 60.4% | 60.9% (35.3-68.0) | 55 of 100 |
+| Munda (JAMBU) | 78.0% | 79.9% (74.2-84.6) | 85 of 100 |
+| Old Tamil (Sangam-cited Tamil Lexicon) | 63.0% | 59.6% (28.1-71.4) | 41 of 100 |
+| Burushaski (Berger, Yoshioka) | 84.5% | 85.3% (77.3-89.7) | 61 of 100 |
 
 **B3 the copper-tablet anchors.**
 
 - anchor signs: 341 (rhinoceros): no value; 749 (goat): no value; 753 (hare): no value; 777 (goat/archer): no value; 778 (goat/archer): no value.
-- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 6 of 8; naming another tablet animal: 4.6 on average; shuffled keys: mean 6.13, as many or more in 170 of 200.
+- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 6 of 8; naming another tablet animal: 4.6 on average; shuffled keys: mean 6.04, as many or more in 171 of 200.
 
 **B4 structure.**
 
@@ -87,7 +120,7 @@ Mahadevan (1998) reads 740 and 520 as the masculine and non-masculine singular s
 **B3 the copper-tablet anchors.**
 
 - anchor signs: 341 (rhinoceros): no value; 749 (goat): no value; 753 (hare): no value; 777 (goat/archer): no value; 778 (goat/archer): no value.
-- anchor texts naming their own animal (a sa word for it, 2+ consonants, inside the reading): 0 of 8; naming another tablet animal: 0.2 on average; shuffled keys: mean 0.11, as many or more in 200 of 200.
+- anchor texts naming their own animal (a sa word for it, 2+ consonants, inside the reading): 0 of 8; naming another tablet animal: 0.2 on average; shuffled keys: mean 0.08, as many or more in 200 of 200.
 
 **B4 structure.**
 
@@ -104,7 +137,7 @@ Mahadevan (1998) reads 740 and 520 as the masculine and non-masculine singular s
 **B3 the copper-tablet anchors.**
 
 - anchor signs: 341 (rhinoceros): no value; 749 (goat): no value; 753 (hare): no value; 777 (goat/archer): no value; 778 (goat/archer): no value.
-- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 3 of 8; naming another tablet animal: 2.6 on average; shuffled keys: mean 2.04, as many or more in 66 of 200.
+- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 3 of 8; naming another tablet animal: 2.6 on average; shuffled keys: mean 2.01, as many or more in 67 of 200.
 
 **B4 structure.**
 
@@ -120,14 +153,25 @@ Mahadevan (1998) reads 740 and 520 as the masculine and non-masculine singular s
 
 | lexicon | real key | shuffles median (range) | shuffles as good | 
 |---|---|---|---|
-| Sanskrit (Monier-Williams) | 52.2% | 43.6% (34.1-58.6) | 52 of 200 |
-| Dravidian (DEDR) (claimed) | 54.0% | 44.6% (40.0-59.1) | 55 of 200 |
-| Sumerian (ePSD2) | 25.4% | 22.7% (13.0-31.0) | 38 of 200 |
+| Sanskrit (Monier-Williams) | 52.2% | 43.7% (35.6-58.5) | 63 of 200 |
+| Dravidian (DEDR) (claimed) | 54.0% | 44.7% (38.9-59.4) | 59 of 200 |
+| Sumerian (ePSD2) | 25.4% | 22.8% (12.4-30.6) | 42 of 200 |
+
+**B2v the same, vowels kept** (three vowel classes; the version that passes the Linear Elamite control, B5c; 100 shuffles):
+
+| lexicon | real key | shuffles median (range) | shuffles as good |
+|---|---|---|---|
+| Sanskrit (Monier-Williams) | 67.9% | 84.6% (67.6-86.9) | 97 of 100 |
+| Dravidian (DEDR) (claimed) | 77.3% | 92.5% (77.5-94.6) | 100 of 100 |
+| Sumerian (ePSD2) | 38.6% | 37.1% (23.7-61.8) | 37 of 100 |
+| Munda (JAMBU) | 66.7% | 67.0% (52.3-85.9) | 53 of 100 |
+| Old Tamil (Sangam-cited Tamil Lexicon) | 50.4% | 47.9% (38.4-72.9) | 38 of 100 |
+| Burushaski (Berger, Yoshioka) | 76.1% | 91.1% (75.4-93.4) | 92 of 100 |
 
 **B3 the copper-tablet anchors.**
 
 - anchor signs: 341 (rhinoceros): no value; 749 (goat): no value; 753 (hare): no value; 777 (goat/archer) = koli "fig + crab, the fig tree Ficus": names it by the sound, = gole "notched extremity or horn of a bow."; kal "nilgiri ibex."; koḷai "hold as of a string in a bow, determinat"; 778 (goat/archer) = koli "fig + crab": names it by the sound, = gole "notched extremity or horn of a bow."; kal "nilgiri ibex."; koḷai "hold as of a string in a bow, determinat".
-- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 2 of 8; naming another tablet animal: 1.8 on average; shuffled keys: mean 2.33, as many or more in 178 of 200.
+- anchor texts naming their own animal (a dra word for it, 2+ consonants, inside the reading): 2 of 8; naming another tablet animal: 1.8 on average; shuffled keys: mean 2.27, as many or more in 165 of 200.
 
 **B4 structure.**
 
@@ -137,20 +181,22 @@ Mahadevan (1998) reads 740 and 520 as the masculine and non-masculine singular s
 
 ## B5 Controls
 
-- (a) power, Sanskrit (Monier-Williams): planted key reads 99.0% of its synthetic corpus; its shuffles median 89.7%, best 91.1%.
-- (a) power, Dravidian (DEDR): planted key reads 96.3% of its synthetic corpus; its shuffles median 85.8%, best 87.7%.
-- (a) power, Sumerian (ePSD2): planted key reads 97.6% of its synthetic corpus; its shuffles median 87.2%, best 88.4%.
-- (b) ceiling, Sanskrit (Monier-Williams): a key fitted by hill-climbing (one consonant class per sign, 250 commonest signs, 3,000 steps, 1,000 lines) reads 93.8% of those lines.
-- (b) ceiling, Dravidian (DEDR): a key fitted by hill-climbing (one consonant class per sign, 250 commonest signs, 3,000 steps, 1,000 lines) reads 93.3% of those lines.
+- (a) power, Sanskrit (Monier-Williams): planted key reads 98.8% of its synthetic corpus; its shuffles median 88.9%, best 90.4%.
+- (a) power, Dravidian (DEDR): planted key reads 97.0% of its synthetic corpus; its shuffles median 85.5%, best 87.0%.
+- (a) power, Sumerian (ePSD2): planted key reads 96.8% of its synthetic corpus; its shuffles median 84.2%, best 86.1%.
+- (b) ceiling, Sanskrit (Monier-Williams): a key fitted by hill-climbing (one consonant class per sign, 250 commonest signs, 3,000 steps, 1,000 lines) reads 94.0% of those lines.
+- (b) ceiling, Dravidian (DEDR): a key fitted by hill-climbing (one consonant class per sign, 250 commonest signs, 3,000 steps, 1,000 lines) reads 93.1% of those lines.
 - (b) ceiling, Sumerian (ePSD2): a key fitted by hill-climbing (one consonant class per sign, 250 commonest signs, 3,000 steps, 1,000 lines) reads 92.7% of those lines.
+- (c) a real decipherment, Linear Elamite (Desset 2022 values, Elamicon corpus, Hallock 1969 Elamite lexicon), consonants only: 60.7% against shuffles 62.3% (54.6-66.7), 80 of 100 as good.
+- (c) a real decipherment, Linear Elamite (Desset 2022 values, Elamicon corpus, Hallock 1969 Elamite lexicon), vowels kept: 25.7% against shuffles 19.2% (12.7-26.0), 4 of 100 as good.
 
 ## Summary
 
-| key | claimed | reads claimed language | shuffles median | shuffles as good | best other language |
-|---|---|---|---|---|---|
-| Yajnadevam 2024 (github.com/yajnadevam/lipi, xlits.csv) | sa | 75.3% | 75.1% | 87/200 | dra 71.9% (shuffles 69.5%) |
-| Fairservis 1992, The Harappan Civilization and its Writing, Appendix A | dra | 87.7% | 86.5% | 71/200 | sa 85.6% (shuffles 85.2%) |
-| Fairservis 1992, The Harappan Civilization and its Writing, Appendix A (with unsure matches) | dra | 92.8% | 92.4% | 70/200 | sa 91.6% (shuffles 91.4%) |
-| Kak 1988, A frequency analysis of the Indus script (Cryptologia 12(3), 129-143) | sa | too few signs for a reading test | | | |
-| Mahadevan 1998 and 2014 | dra | too few signs for a reading test | | | |
-| Parpola 1994 (Deciphering the Indus Script, CUP), Fig. 15.2 and pp. 94-96, 179-280 | dra | 54.0% | 44.6% | 55/200 | sa 52.2% (shuffles 43.6%) |
+| key | claimed | consonants only: key / shuffles / as good | vowels kept: key / shuffles / as good | best other language, vowels kept |
+|---|---|---|---|---|
+| Yajnadevam 2024 (github.com/yajnadevam/lipi, xlits.csv) | sa | 75.3% / 75.1% / 87 of 200 | 53.0% / 44.8% / 10 of 100 | dra 70.4% / 61.2% / 0 of 100 |
+| Fairservis 1992, The Harappan Civilization and its Writing, Appendix A | dra | 87.7% / 86.2% / 63 of 200 | 92.7% / 97.4% / 97 of 100 | ta 62.3% / 60.6% / 40 of 100 |
+| Fairservis 1992, The Harappan Civilization and its Writing, Appendix A (with unsure matches) | dra | 92.8% / 92.7% / 90 of 200 | 95.8% / 98.4% / 94 of 100 | ta 63.0% / 59.6% / 41 of 100 |
+| Kak 1988, A frequency analysis of the Indus script (Cryptologia 12(3), 129-143) | sa | too few signs for a reading test | | |
+| Mahadevan 1998 and 2014 | dra | too few signs for a reading test | | |
+| Parpola 1994 (Deciphering the Indus Script, CUP), Fig. 15.2 and pp. 94-96, 179-280 | dra | 54.0% / 44.7% / 59 of 200 | 77.3% / 92.5% / 100 of 100 | ta 50.4% / 47.9% / 38 of 100 |

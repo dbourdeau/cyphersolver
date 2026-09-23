@@ -157,7 +157,7 @@ def rp7(texts, keys, lex):
 
 
 def main(mw, dedr, sux, yaj):
-    lex, _ = bench.lexicons(mw, dedr, sux)
+    lex, _, _ = bench.lexicons(mw, dedr, sux)
     keys = [('Yajnadevam', 'sa', bench.load_yajnadevam(yaj)[1]),
             ('Parpola 1994', 'dra', bench.load_key(os.path.join(HERE, 'keys', 'parpola1994.tsv'))[1])]
     say('# The main findings on the M77 texts')
