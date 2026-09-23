@@ -52,6 +52,8 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 | `fr-1650-rome` | French 1600–1670 | Guizot's Bordeaux despatches + Henri IV, order 7, no spaces | code-group work, mid-17th c. |
 | `fr-grand-siecle` | French 1630–1700 | Sévigné, Retz, Pascal, Corneille, quadgram | literary 17th-c. French |
 | `de-modern` | German 1780–1945 | Gutenberg, 3.2 M | ADFGVX, Abwehr, Orpo |
+| `de-1500s` | German 1470–1610 | DTA prints 1472–1609 | 16th-c. chancery German |
+| `de-1640s` | German 1600–1670 | DTA: Theatrum Europaeum I (1635), Olearius (1647), Simplicissimus (1669) + the 1470–1610 prints | Thirty Years' War letters (baner1640) |
 | `de-enigma` | German 1930–1945 | same, Enigma conventions | Wehrmacht traffic |
 | `nl-modern` | Dutch | Gutenberg | Thurloe, Abwehr |
 | `es-modern` | Spanish | Gutenberg incl. Quijote, 6 M | default Spanish |
