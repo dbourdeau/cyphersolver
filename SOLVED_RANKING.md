@@ -19,6 +19,8 @@ The **Segura letter of 1596** is provisionally p136 at **3.45**: a short unknown
 
 The **Potocka and Mniszech letters** are provisionally p137 at **2.90**: an independently recovered bilingual alphabet, but one separate cipher remains unread and there is no independent plaintext.
 
+The **Reims letter of 19 June 1589** (R2276) is provisionally p138 at **3.00**: a long letter wholly in cipher, read in part by extending Tomokiyo's partial Nevers-Piles table, with new content on the Reims succession of 1589; the identification of the cipher was already known (Biermann 2021, unpublished).
+
 ## Axes and weights
 
 | Axis | Weight | 1 | 5 |
@@ -34,6 +36,7 @@ The **Potocka and Mniszech letters** are provisionally p137 at **2.90**: an inde
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
+| p138 | **Unknown writer (probably Jean de Piles) → unnamed patron**, Reims, BnF fr. 20974 pp. 1–3 (DECODE R2276) | 19 June 1589 | 3 | 3 | 4 | 4 | 1 | 2 | **3.00** | Three pages wholly in cipher read to 91.8% by extending a partial published table; catalogue date and addressee corrected; torn edges and ~80 words open. [r2276](https://dbourdeau.github.io/cyphersolver/r2276.html)
 | p137 | **Potocka and Mniszech to Dunin** | 1714–16 / undated | 3 | 3 | 4 | 3 | 1 | 2 | **2.90** | Nine letters share the recovered alphabet; person codes and Mniszech remain open. [potocka1714](https://dbourdeau.github.io/cyphersolver/potocka1714.html) |
 | p136 | **Matheo de Segura → Constable of Castile**, BnF es. 336 no. 99 | 1596 | 4 | 3 | 4 | 4 | 2 | 3 | **3.45** | Unknown sign cipher read; six tentative values, no independent plaintext. [segura1596](https://dbourdeau.github.io/cyphersolver/segura1596.html) |
 | p135 | **Giovan Gioacchino da Passano (attributed): Wolsey account**, Clairambault 331 | March 1530 | 4 | 3 | 4 | 3 | 2 | 3 | **3.35** | 96.0% of surviving signs coherent with explicit corrections; rare signs and omitted continuation open. [Write-up](https://dbourdeau.github.io/cyphersolver/joachim1530.html) |
@@ -621,3 +624,6 @@ Mémoire en chiffre 1560 provisional score: 0.25×5 + 0.25×3 + 0.20×5 + 0.10×
 Segura to the Constable of Castile, 8 August 1596 provisional score: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×2 + 0.10×3 = **3.45** (p136). Novelty means no reading found, not proof that none exists.
 
 Potocka and Mniszech provisional score (p137): 0.25×3 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×2 = **2.90**. Novelty remains provisional.
+
+
+Reims letter, 19 June 1589 (R2276) provisional score: 0.25×3 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×1 + 0.10×2 = **3.00** (p138). Novelty means no published reading found; Biermann's 2021 identification is reported as private.

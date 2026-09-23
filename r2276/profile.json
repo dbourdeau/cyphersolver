@@ -1,0 +1,245 @@
+{
+ "schema_version": 1,
+ "target": "r2276",
+ "title": "Letter from Reims, 19 June [1589], on the Reims chapter's postulation, in the Nevers-Piles cipher, BnF fr. 20974 pp. 1-3 (DECODE R2276)",
+ "documents": [
+  {
+   "id": "R2276",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 20974 pp. 1-3 (Gallica btv1b9062131g f1-f3; DECODE R2276 images 1-3)",
+   "date": "19 June [1589]",
+   "year": 1589,
+   "country": "France (Catholic League)",
+   "route": "Reims -> unknown (a patron who approved the postulation)",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the letter. Tomokiyo (cryptiana guise.htm) reports Norbert Biermann (2021, private communication) found it reads with the Nevers-Piles cipher; no text published."
+   },
+   "length": {
+    "tokens": 3920,
+    "unit": "symbols",
+    "measured": true,
+    "file": "t1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R2276 PNGs (3016-3320 px wide), line strips at 1.5-3x; page 3 read rotated 180",
+    "image_quality": "fair",
+    "notes": "Water damage on the left of p. 2, torn right edge of p. 1 ll. 1-4 and 16-31, stains on p. 3. _check_profile.py --measure --drop-first gives 1632 + 1778 + 563 tokens incl. '...' damage markers; 3920 signs after merging the two-sign codes bb and 3Z (decode.py), the count used by measure.py. Two passes plus relabelling during six reading rounds. Pages in t2.txt and t3.txt."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Tomokiyo's Nevers-Piles symbol alphabet: homophones for the common letters, nulls, and code signs for short words, titles and names.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 59,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "titles"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Tomokiyo's partial Nevers-Piles table (from BnF fr. 3612 f. 9, not digitised) and BnF fr. 4715 f. 2 (Cardinal de Guise to Nevers 1586, same cipher, interlinear decipherment; fully aligned here, ~1,050 sign=value pairs, fr4715_values.json).",
+  "notes": "Codes found in this letter beyond Tomokiyo's table: ʒ+Ձ = cardinal, bb = leur, ʒ = le/du, ce-ligature = pour, ꝺ with superscript o = faire, large hooked b = ie, ẋ = vous, ⊞ = parle (from fr. 4715), dotted cursive M = lettre, ⊿ = s. Superscript marks change a sign's value, so diacritics.used is true."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Tomokiyo, cryptiana guise.htm and unsolved.htm: Biermann (2021, private) found the Nevers-Piles cipher reads it; no reading published",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "sibling key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login and passed its session cookie to the model, set up Claude Code, and posed the problem with /goal; cleared the goal at 91.8% and asked for the write-up. No target-specific intervention recorded.",
+  "tools": [
+   "polyphonic beam decoder, French 5-gram (beam.py)",
+   "word-level Viterbi over a 30k-word lexicon with bigrams (wdec.py)",
+   "hard-EM re-estimation of per-sign value sets (hardem.py, keyest.py)",
+   "reading-to-sign aligner and measure (check.py, measure.py)",
+   "subagents for transcription and line-by-line reading against images"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-23"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "DECODE R2276 record and three page images fetched with the project cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Tomokiyo guise.htm: fr. 20974 no. 1 'undeciphered'; Biermann 2021 found it reads with the Nevers-Piles cipher (private). Web search: no published text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Tomokiyo's partial Nevers-Piles table and the orbais/ values from fr. 4715 f. 2.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "First pass of all three pages, 93 lines, ~4,000 signs; page 3 read rotated.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Free homophonic anneal under the French 5-gram: collapses to e/s text.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Anneal of unknown labels only with Tomokiyo values fixed: nothing readable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Polyphonic beam over conflated shapes: words appear (presence, chapitre, chanoines, archidiacre brulart, postulation, lansquenetz, parme, elbeuf).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Second pass: page 1 by hand at 2x, pages 2-3 by two agents; swash-g, open/closed box, new signs split.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "Word Viterbi with lexicon and bigrams plus hard-EM on value sets: content identified (Reims chapter postulation, Saint-Remi, Elbeuf ransom, Parma).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Gallica f4 is the letter's verso with the 1556 d'Albany key pasted on: the source of the 1556/Guise attribution, not the letter's key.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Round 1 (agents): date line 'de Reims ... dix neufiesme de iuin', Mayenne, 18,000 lansquenets and 8,000 reiters; many readings were key-conforming non-words.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Tomokiyo's table header (a..z, nulls) read: one value per glyph; conflicts traced to transcription labels.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "Extra codes from the readings: ʒ+Ձ = cardinal, d with superscript t = il, ce-ligature = pour, ʒ = du/le, bb = leur; key_v2 to key_v5.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "reading",
+   "what": "Rounds 2-4 (agents, images, key_v5-v7): p. 1 90%, p. 2 86%, p. 3 88%; codes faire, ie, vous, lettre found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "reading",
+   "what": "Targeted round on the '?' words: 107 left; letter strict 88.9%, sense 91.8% (measure.py).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "sibling key",
+   "what": "BnF fr. 4715 f. 2 fully aligned with its interlinear (~1,050 pairs): ⊞ = parle, ẋ = vous (never i), swash g = que, ꝺ mostly t in that hand; key_v8.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "verification",
+   "what": "Escalation recorded: siblings (fr. 4715 f. 2, orbais), clear pages (none), known keys, print (none), key rebuild, retry; remaining gaps blocked by tears, stains, single signs or open codes.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.918,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "measure.py over reading.txt and t1-t3.txt with key_v7.json: 3598 of 3920 cipher signs aligned to letters of real French words or declared nulls ('?' words and skipped signs count as unread); strict key agreement 3484/3920 = 0.889.",
+  "codes_open": {
+   "open": 2,
+   "total": "unknown",
+   "tokens_open": "unknown"
+  },
+  "grades": "unknown",
+  "verification": [
+   "historical consistency",
+   "key confirms"
+  ],
+  "gaps": [
+   {
+    "item": "torn right edge of p. 1 ll. 1-4 and 16-31; left margin of p. 2 ll. 1-2, 15-28, 39-40",
+    "blocker": "illegible",
+    "detail": "paper lost; signs not in the 3,920"
+   },
+   {
+    "item": "ink blot p. 3 l. 2 and stained start of p. 3 l. 3",
+    "blocker": "illegible",
+    "detail": "signs under the stain cannot be told apart"
+   },
+   {
+    "item": "about 25 single-sign '?' in running text",
+    "blocker": "too-short",
+    "detail": "one sign each, sentence complete without it"
+   },
+   {
+    "item": "boxed cross N at t1.21 and t1.36",
+    "blocker": "open-codes",
+    "detail": "= parle in fr. 4715 f. 2; fits t1.21 only"
+   },
+   {
+    "item": "about 80 unread words of two or more signs",
+    "blocker": "open-codes",
+    "detail": "no French word fits signs and sense after six rounds, sibling alignment and lexicon search"
+   }
+  ],
+  "notes": "Read in part. Letter from Reims, 19 June [1589], on the Reims chapter's postulation for the archbishopric (Brulart, Frison), the Elbeuf ransom, Parma. key_v7 is the reading key; key_v8 adds fr. 4715 values."
+ }
+}
