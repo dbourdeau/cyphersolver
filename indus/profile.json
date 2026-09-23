@@ -116,7 +116,11 @@
    "slots.py (context classes)",
    "numerals.py (numbers vs weights)",
    "lang_control.py (Sanskrit, Sumerian controls)",
-   "sound_tests.py (ending proposals vs corpus and DEDR)"
+   "sound_tests.py (ending proposals vs corpus and DEDR)",
+   "equation_rebus.py",
+   "leads.py",
+   "sanskrit_key_test.py",
+   "elamite.py"
   ],
   "models": [
    "claude-opus-5-5"
@@ -255,6 +259,41 @@
    "kind": "verification",
    "what": "Published ending proposals (Finnish 1969 genitive 740 / dative 520; Soviet -at(tu); Parpola a 'cow') against the corpus and DEDR: exclusivity and alternation hold; 3 + 520 fixed compound argues against a case ending; no Dravidian arrow word gives -kku (Tamil utu ~ sociative -otu only).",
    "result": "partial"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Tablet equations as rebuses (777, 749, 753) in Dravidian, Sanskrit, Sumerian: true animal ranks 6-24 of 25 against control animals; no language's puns fit; 341 is a pictogram. Compound tablet signs behave as logograms.",
+   "result": "failed"
+  },
+  {
+   "kind": "statistics",
+   "what": "Name units vs opening/ending units across Mohenjo-daro and Harappa seals: no difference in site skew (p = 0.44).",
+   "result": "failed"
+  },
+  {
+   "kind": "control",
+   "what": "Yajnadevam's Sanskrit key (lipi xlits.csv): parse coverage of MW words 88.3% against 87.0% median for 200 frequency-matched shuffled keys (63/200 as good); tablet readings never name the picture (0/11).",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "Proto-Elamite accounts (1,467 tablets): capacity vs counting systems count different things (JS 0.362 bits, p < 0.002), the same kind of split as the Indus short/long strokes (0.592).",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "Time depth via object type (Kenoyer and Meadow 2010): late bar seals keep the grammar of square seals; vocabulary shifts (806 from 2% to 16%).",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "Short stroke pair = second element of the opening formula (56% after openers; alternates with 60 and 1).",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "West Asian seals lack the Indus grammar (ending last 2/11 vs 55%, p = 0.016; no opener).",
+   "result": "worked"
   }
  ],
  "outcome": {

@@ -379,6 +379,51 @@ The published ending proposals (Parpola 1994: 94-96): the Finnish team's 1969 pa
 - The name + epithet formula 845 (61) 407 and the tablet signs 749, 341, 753 have no reading in Parpola's 1994
   table; of the seven sign = image equations his system reads one (777, *koli*).
 
+## Fifth pass (23 Sept 2026): seven leads
+
+Scripts: `equation_rebus.py`, `leads.py` (L2, L5, L6, L7), `sanskrit_key_test.py`, `elamite.py`; results in
+`results/equation_rebus.md`, `leads.md`, `sanskrit_key_test.md`, `elamite.md`.
+
+1. **The tablet equations as rebuses (negative for every language).** Of the four signs the tablets tie to
+   pictures, 341 (= rhinoceros) is itself a drawing of a horned quadruped: a logogram. The other three are
+   compounds: 777 fig + crab (= goat, archer), 749 jar with limbs and three strokes (= goat), 753 jar with a wheel
+   inside (= hare). For each language, the best sound match between words for the component pictures (alone or
+   two joined, starting with the target's first sound) and words for the animal, ranked against 24 control
+   animals with ties counted against the true one (1 = best of 25): Dravidian 19, 23, 12, 23; Sanskrit 13, 24,
+   18, 17; Sumerian 8, 13, 6, 21. Chance is about 13. No language's puns pick out the tablet animals; the
+   compound signs behave as logograms (word signs), not rebuses. The corpus hardly writes their parts as
+   sequences (820 + 740 twice).
+2. **Names against titles across sites (negative).** On seals from Mohenjo-daro and Harappa, two-sign units that
+   contain a name sign are no more tied to one site than openings and endings (standardised skew 1.13 against
+   1.00-1.09; permutation p = 0.44). If they are names, they are names shared between cities (deities, clans or
+   offices), not local people.
+3. **A published Sanskrit decipherment under the same controls (Yajnadevam; key from github.com/yajnadevam/lipi,
+   xlits.csv, 716 signs on about 20 letter classes).** Under the key the ending slot reads 740 = -an, 520 = -n,
+   and 400/90/151 = i/a/y; the openers 817/820/861 all read r; the marked fish 235/240/233 have no value. Null
+   test: texts become consonant skeletons and are parsed into Monier-Williams headwords; the real key covers
+   88.3% of consonants with words of 3+ consonants, 200 keys shuffling its values among signs of similar
+   frequency give a median 87.0% (range 79.1-91.0%), and 63 of 200 do as well: the key reads no better than
+   chance. His readings of the copper tablets never name the picture on the other side (0 of 11; the goat
+   tablet M-548 reads 'one who kills with an arrow', the text Parpola links to the archer). Mahadevan's readings
+   are not machine-readable online; Parpola's were tested in the second pass.
+4. **Proto-Elamite as the structural parallel.** In the Proto-Elamite accounts (1,467 tablets; SFU remap of the
+   CDLI corpus), entries measured in the grain-capacity system name different things from entries in the counting
+   systems (Jensen-Shannon 0.362 bits, 0 of 500 permutations; 6,274 entries). The Indus split between short and
+   long strokes is of the same kind and stronger (0.592). The Indus numerals are an accounting device of the
+   Proto-Elamite family. Linear Elamite has no corpus online to compare.
+5. **Time depth.** Kenoyer and Meadow (2010, CISI 3.1: xliv-lviii) date object types at Harappa: square seals with
+   an animal from late Period 3A (c. 2450 BC) to 3C; bar seals with script only in Period 3C alone (c. 2200-1900
+   BC); tablets mid-3B to 3C. Late bar seals against square seals: the grammar is unchanged (740 in 50% of both,
+   opening 17-18%, second ending 3-5%); the vocabulary moves: the leaf-in-oval 806 goes from 2% to 16% of
+   objects, 405/407 and 154 rise, 741, 390, 520 and 368 fall. The frame is stable and the names change.
+6. **The short stroke pair is part of the opening.** 326 of its 583 tokens (56%) follow the openers 817/820/861;
+   35% precede a fish, leaf or crab sign; in the same frame it alternates with 60 and a single stroke. The
+   opening is [817/820/861] + [2 | 60 | 1] + name; 97 seals open exactly so.
+7. **The West Asian seals lack the Indus grammar.** Of 11 seals from the Gulf, Mesopotamia, Iran and unprovenanced
+   round/cylinder seals, 2 end in 740/520/400/90 (South Asia 55%; binomial p = 0.016), none begins with an opener
+   (21%; p = 0.075), 9 carry a numeral (57%). This supports Parpola's view that they write non-Indus (local)
+   names in Indus signs; matching them to Meluhhan names in cuneiform needs sound values nobody has.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
