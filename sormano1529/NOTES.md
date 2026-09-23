@@ -6,6 +6,10 @@ failed attempts to break the cipher from the digitised microfilm, and they remai
 what that source will and will not support. **Section 6 records what happened when George Lasry's 2023 key
 was put in front of me: the cipher reads, and two of my earlier conclusions were wrong.**
 
+Outcome disagreement (22 Sept 2026, site review): `sormano/` covers the same three letters and its profile says read
+(fraction unknown), this one says read in part (0.05). Reconcile the two the next time either is worked. Joachim de
+Vaulx and Gian Gioacchino de Passano are the same man (section 6).
+
 **Two corrections to my own earlier statements in this file.**
 
 1. I wrote that "no published Lasry key for this manuscript could be found (searched Cryptologia,

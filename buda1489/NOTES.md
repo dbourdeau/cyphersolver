@@ -1,5 +1,9 @@
 # Milanese embassy at Buda, 1489–92: Maffeo da Treviglio's cipher (ASMi Sforzesco 642/645/650)
 
+Status: read in part (reclassified from "read" 22 Sept 2026). Both undeciphered despatches are read, the 22 Nov 1489
+letter only in patches on page 3 after line 19; four signs have no value; the share of signs read has never been
+measured, so the read bar (README Conventions) is not shown to be met.
+
 Session of 18 September 2026. Goal: read the cipher letters of the Milanese embassy in Hungary that have no
 contemporary decipherment, using the key Judit W. Somogyi reconstructed in 2016 and the cipher/clear pairs
 she used, so as to beat the project's oldest reading (1497) with texts of 1489–90.
@@ -114,3 +118,22 @@ Somogyi's numbers and of 267 with the clear extract 268 gives glyph → value.
 
 The Vestigia record of 2831 (`vestigia/doc2831.json`, `archive_ref`) gives **Sforzesco, Potenze estere, Ungheria,
 cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. profile.json corrected.
+
+## Remaining gaps
+Scope: the two despatches with no decipherment, Vestigia 2831 (22 Nov 1489) and DECODE R1098 (12 Jan 1490). R1146
+and R1158 are other ciphers and are not part of this reading.
+- 2831 p. 3 after l. 19, about a third of that page's words - blocker: not-attempted; read only in patches, the ink is lighter and the stacked crops drift; the per-row crop pass straight from the plate (Method, on the page) has not been run, and part may prove illegible after it
+- 2831 p. 1 ll. 21–26, last words of each line - blocker: illegible; stain at the right edge, no other image (DECODE and Vestigia serve the same negative)
+- four unvalued signs (♀-like sign with a cross below, capital E with three bars, a wavy horizontal null, a stroke that may be a second null) - blocker: open-codes; not in Somogyi's table as printed, each too rare to fix from context so far
+- the recurring ro+et pair on p. 3 after "ad" (a place name) - blocker: open-codes; probably a nomenclator entry Somogyi's key does not list
+- nomenclator signs for madonna Bianca, zo. Corvino and il vescovo varadino - blocker: open-codes; met once each, shapes not confirmed
+- R1098 ll. 5, 6 and 9, short groups including the word after "divertira ad" (Tulln?) - blocker: not-attempted; not retried with the sign values gained later from the 1489 letter
+- share of cipher signs read - blocker: not-attempted; never measured (only 2831 p. 1 ll. 1–10 and R1098 were transcribed to tokens). Next step: a full token transcription of 2831 pp. 1–4 and a measured count against the reading files
+
+## Escalation
+- [x] siblings: Maffeo's and the embassy's letters in cart. 642/645/650 opened on Vestigia and DECODE: R1155 (clear copy Vestigia 2240), R1147 (Vestigia 603, Labancz no. 45), R1152 (clear draft), R1146 and R1158 (other ciphers); no clear copy of 2831 or R1098 exists among them
+- [x] clear-pages: R1098 p. 2 is clear and restates cipher ll. 7–10 (used as a control); 2831 p. 4 ll. 3–17 are a clear postscript; Somogyi's five cipher/clear pairs located, 267/268 used for calibration
+- [x] known-keys: Somogyi's 2016 key is the only known key of this cipher and is the one used; the abbot of Forlì's cipher (R1146/R1147) is a different system
+- [ ] print: Somogyi 2016 (prints only 2831 ll. 1–2) and Labancz's 1491 edition checked; Nagy and Nyáry, *Magyar diplomácziai emlékek Mátyás király korából* (1875–78), which prints Milanese despatches from Hungary to 1490, not yet searched for these two letters
+- [x] key-rebuild: about twenty sign values beyond Somogyi's table recovered from the unread letters by single-word cribs (7 = f, n+crossed 4 = ss, x' = do, a: = gli, q^o = re, b^a = na)
+- [ ] retry: not done after the last sign gains; p. 3 of 2831 and R1098 ll. 5, 6, 9 have not been re-run with the full sign list

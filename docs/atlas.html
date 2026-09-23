@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Cipher Atlas — five centuries of secret letters on the map</title>
 <meta name="description" content="Every ciphered letter this site has read or attempted, drawn as an arc from where it was written to where it was sent, from Urbino in 1425 to Mogilev in 1942. Scrub or play through time.">
-<link rel="stylesheet" href="style.css?v=20260922a">
+<link rel="stylesheet" href="style.css?v=20260922b">
 <style>
-.atlas-wrap{width:min(1240px,calc(100vw - 2rem));position:relative;left:50%;transform:translateX(-50%);margin:1rem 0 1.5rem}
+.atlas-wrap{max-width:900px;margin:1rem auto 1.5rem}
 .atlas{position:relative;border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden;background:var(--panel3);box-shadow:var(--shadow)}
 .atlas svg{display:block;width:100%;height:auto;touch-action:none;cursor:grab}
 .atlas svg:active{cursor:grabbing}
@@ -98,7 +98,7 @@
 @media (max-width:640px){.a-legend{max-width:100%;justify-content:flex-start}.a-count{display:none}.a-legend{position:static;padding:.5rem .6rem}}
 </style>
 <meta name="date" content="2026-09-21">
-<meta name="last-modified" content="2026-09-21">
+<meta name="last-modified" content="2026-09-22">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -109,7 +109,7 @@
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="mellon136.html"><span class="st solved">read; key in the book</span><b>Silentium Dei 1798</b><span class="yr">1798</span></a></li><li><a href="swieten1757.html"><span class="st solved">solved</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">solved</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">74</span><b>Solved or read</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">57</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">55</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">33</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 221 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="mellon136.html"><span class="st solved">read; key in the book</span><b>Silentium Dei 1798</b><span class="yr">1798</span></a></li><li><a href="swieten1757.html"><span class="st solved">solved</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">solved</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">72</span><b>Solved or read</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">56</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">56</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">33</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 219 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary class="active">Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html" aria-current="page"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a href="catalogue.html">Catalogue</a>
@@ -136,7 +136,7 @@
   sent. Press play to watch five centuries of secret diplomacy cross the map, from a Florentine commissioner at Urbino in 1425 to a
   German police radio net on the Eastern Front in 1942. Hover an arc for the letter, click it for the write-up.</p>
   <div class="jump"><a href="#map">The map</a><a href="#routes">Busiest routes</a><a href="#about">About the data</a><a href="keys.html">The key web</a></div>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
 </section>
 
 <main>
@@ -184,7 +184,7 @@ map draws no frontiers, because they moved too often over five centuries. Colour
 </div></footer>
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="atlas.js?v=d57d3f1b" defer></script>
-<script src="site.js?v=20260922a"></script>
+<script src="atlas.js?v=5e9be40d" defer></script>
+<script src="site.js?v=20260922b"></script>
 </body>
 </html>

@@ -91,7 +91,7 @@ Guise's threat in reply.
 ## Escalation
 
 - siblings: done — ff. 131 and 133 (same hand, same key) give the key; f. 131's glosses are the crib. f. 139
-  (9 June, "chiffrée avec déchiffrement") not yet checked for more code glosses.
+  (9 June, "chiffrée avec déchiffrement") was checked in the r3708 work: its glosses give codes 10 (Épernon), 38, 98 and 107.
 - clear pages: done — the letter's own clear text supplies the context for every run.
 - known keys: done — Tomokiyo nos. 10, 11, 16, 18 and the c. 45 alphabet tried and rejected.
 - print: not done — Gomberville's *Mémoires de Nevers* (1665) may print this letter; not searched.

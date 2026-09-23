@@ -89,10 +89,28 @@ and version stamps; you write everything else. Required parts, in order:
 2. `<!-- site:nav -->` on its own line right after `<body>`.
 3. `<section class="hero">`: optional `<div class="cipherstrip">` (a line of the cipher, a line of its reading,
    a few key equivalences); `<p class="kicker">place → recipient · cipher type · dates · outcome</p>`; `<h1>`;
-   one or two `<p class="sub">` with shelfmark, what it is, what was done; `<p class="meta">Daniel Bourdeau</p>`
-   (the builder adds the dates; a contributor's credit goes in the callout, not the byline).
-4. `<main>` opening with `<div class="callout"><strong>Summary.</strong> …</div>`: what was catalogued, what was
-   found, how, what stays open. Five to ten sentences.
+   one `<p class="sub">`: a single plain sentence (about 30 words, no shelfmark) saying what it is and what came
+   of it; `<p class="meta">Daniel Bourdeau</p>` (the builder adds the dates; a contributor's credit goes in the
+   summary box, not the byline).
+4. `<main>` opening with the "At a glance" box. The shelfmark goes in its Where row. Each row is one or two short, plain sentences for a
+   reader who has never seen the page; facts only from the page, measured numbers exactly as in the body:
+   ```html
+   <div class="callout glance">
+   <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Read &middot; 241 of 244 cipher numbers</span></p>
+   <dl>
+     <dt>The letter</dt><dd>Sender to recipient, place, date; what the document is.</dd>
+     <dt>Where</dt><dd>Holder and shelfmark; DECODE record and how it was catalogued.</dd>
+     <dt>The cipher</dt><dd>The system in a sentence or two.</dd>
+     <dt>How it was read</dt><dd>Where the key came from and how it was checked.</dd>
+     <dt>What it says</dt><dd>The content, at most one short quotation.</dd>
+     <dt>Still open</dt><dd>The concrete gaps.</dd>
+   </dl>
+   </div>
+   ```
+   The badge carries the outcome as the title gives it (Read / Read in part / Attempted / Not a cipher…) and the
+   measure. Relabel rows that do not fit ("The document", "How it was tried", "Why it resists"), drop an empty
+   one, and add a "Credit" row for prior work or a contributor. Examples: `docs/toledo1565.html`,
+   `docs/wesselenyi1664.html`.
 5. Numbered `<h2><span class="num">01</span> …</h2>` sections: the documents and keys; the reading (one section
    per letter, with the text in the original language and, where useful, a translation); method; what remains
    uncertain (list every unread group and the grade of every doubtful reading, H/C/M/I as in README Conventions);

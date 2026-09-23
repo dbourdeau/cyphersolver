@@ -252,7 +252,7 @@ def check_slug(slug):
         item('<p class="meta">' in page, 'hero has the <p class="meta"> byline the builder stamps')
         item(bool(re.search(r'<title>.+</title>', page)) and 'name="description"' in page, 'title and meta description')
         item(bool(re.search(r'<h2[^>]*>.*?Sources', page, re.S)), 'a Sources section', warn=True)
-        item(bool(re.search(r'\bclass="callout"', page)), 'a summary callout at the top of <main>', warn=True)
+        item(bool(re.search(r'\bclass="callout[" ]', page)), 'a summary callout at the top of <main>', warn=True)
         for img in set(re.findall(r'<img[^>]+src="([^"]+)"', page)):
             item((HERE / img).exists(), f'figure file docs/{img} exists')
         item(f'?v={version}' in page if version else True, 'page carries the current stylesheet version (else rebuild)', warn=True)

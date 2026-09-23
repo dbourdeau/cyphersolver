@@ -3,7 +3,8 @@
 Catalogue 266 ("Unknown sender to unknown recipient", ASVe IT ASVe 0045 010 Busta 30 f. 174, undated, class C).
 
 **Result: read at the time.** The record's 16 images hold the ciphered despatch *and* the chancery's decipherment of
-it. Identified from the clear text and CSP Venice vol. 21 no. 515. Key not rebuilt.
+it. Identified from the clear text and CSP Venice vol. 21 no. 515. Key not rebuilt here; it was rebuilt later from this
+record's cipher and decipherment for the sibling R1862 (see `r1862/NOTES.md`; decipherment transcribed in full in `tx/decipherment.txt`).
 
 ## What the record is
 
@@ -58,7 +59,7 @@ prints the English summary of the ciphered passage about England. No publication
 
 ## Open
 
-- The key (syllabary/nomenclator) is not rebuilt; the decipherment makes the letter readable without it.
+- The key (syllabary/nomenclator) was not rebuilt in this target; the decipherment makes the letter readable without it. It was rebuilt later for R1862 (`r1862/`).
 - The decipherment pages 8955–8959 are transcribed on DECODE only roughly (as cleartext); paragraphs 6–7 are
   re-read in `tx/para6-7.txt`.
 - DECODE R1862 (Busta 27 f. 354, 1628, 4 pp., "Ser.mo Principe", same cipher) is in the same cipher; DECODE places it at Rome, so possibly another Venetian envoy;

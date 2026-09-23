@@ -1,4 +1,4 @@
-// shared behaviour: theme, menu, active link, contents strip, scroll-reveal, card glow, interlinear tiles, queue filter
+// shared behaviour: theme, menu, active link, contents strip, card glow, interlinear tiles, queue filter
 (function(){
   // theme: stored choice wins, otherwise follow the OS
   const root=document.documentElement;
@@ -33,12 +33,6 @@
     const io=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ links.forEach(l=>l.classList.remove('on')); const l=map.get(e.target.id); if(l) l.classList.add('on'); } }); },{rootMargin:'-20% 0px -70% 0px'});
     map.forEach((a,id)=>{ const h=document.getElementById(id); if(h) io.observe(h); });
   }
-  // scroll reveal (kept subtle; never leaves content hidden)
-  const els=document.querySelectorAll('main > h2, main > p, main > table, main > figure, main > blockquote, main > .callout, main > .cards, main > .stats, main > ol, main > ul, main > #decoder, main > details, main > h3, main > .tg, main > .item');
-  if(!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const rio=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); rio.unobserve(e.target);} }),{threshold:.05,rootMargin:'0px 0px -5% 0px'});
-  els.forEach(el=>{ if(el.getBoundingClientRect().top < innerHeight*1.1) return; el.classList.add('reveal'); rio.observe(el); });
-  setTimeout(()=>els.forEach(el=>el.classList.add('in')),2000);
 })();
 // render [{g:'972', p:'the', cls:''}, ...] as interlinear tiles into a container
 function renderTiles(el, items){
@@ -53,12 +47,12 @@ function renderTiles(el, items){
 // 'show more' blocks on the home page
 document.querySelectorAll('.showmore').forEach(b=>b.addEventListener('click',()=>{ const box=b.previousElementSibling; const open=box.hasAttribute('hidden'); if(open) box.removeAttribute('hidden'); else box.setAttribute('hidden',''); b.textContent = open ? 'Show fewer' : b.dataset.label || b.textContent; }));
 document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent);
-// big-news rotation: one panel at a time, every 9 s; pauses on hover, focus, hidden tab or the pause button; no auto-rotate under reduced motion
+// big-news rotation: one panel at a time; turns by itself (every 9 s) only after the reader presses play; pauses on hover, focus, hidden tab
 (function(){
   const box=document.querySelector('.bignews.bn-rot'); if(!box) return;
   const panels=[...box.querySelectorAll('.bn-panel')]; if(panels.length<2) return;
   const dots=box.querySelector('.bn-dots'), pauseBtn=box.querySelector('.bn-pause');
-  let i=0, timer=null, paused=matchMedia('(prefers-reduced-motion: reduce)').matches, hovering=false;
+  let i=0, timer=null, paused=true, hovering=false;
   panels.forEach((p,k)=>{ const b=document.createElement('button'); b.type='button'; b.setAttribute('role','tab'); b.setAttribute('aria-label','Show item '+(k+1)); b.addEventListener('click',()=>{ go(k); restart(); }); dots.appendChild(b); });
   const db=[...dots.children];
   function go(k, instant){
@@ -315,35 +309,4 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     legend.classList.toggle('filtering',on.length>0);
     pts.forEach(p=>p.classList.toggle('off', on.length>0 && !on.includes(p.dataset.cat)));
   });
-})();
-
-/* scoreboard numbers count up from zero when they scroll into view */
-(()=>{
-  const bs=document.querySelectorAll('.sb-big b'); if(!bs.length) return;
-  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const run=b=>{
-    const t=b.firstChild; if(!t || t.nodeType!==3) return;
-    const m=t.textContent.match(/[\d,]+/); if(!m) return;
-    const end=+m[0].replace(/,/g,''), comma=m[0].includes(','), fmt=v=>comma?v.toLocaleString('en-US'):String(v);
-    // the number counts inside a box held at its final width, so nothing around it moves
-    const pre=t.textContent.slice(0,m.index), post=t.textContent.slice(m.index+m[0].length);
-    const n=document.createElement('span'); n.className='sb-n'; n.textContent=m[0];
-    t.textContent=pre; b.insertBefore(n,t.nextSibling); if(post) b.insertBefore(document.createTextNode(post),n.nextSibling);
-    // the display face has proportional figures: reserve the width of the widest digit in every place
-    const w=s=>{ n.textContent=s; return n.getBoundingClientRect().width; };
-    const wide=[...'0123456789'].reduce((a,d)=>w(d)>w(a)?d:a,'0');
-    n.style.minWidth=Math.ceil(w(m[0].replace(/\d/g,wide)))+'px';
-    n.textContent=fmt(0);
-    const dur=Math.min(2200, 900+end/15); let t0=null;
-    const step=now=>{
-      if(t0===null) t0=now;
-      const k=Math.max(0,Math.min(1,(now-t0)/dur)), e=1-Math.pow(1-k,3);
-      n.textContent=fmt(Math.round(end*e));
-      if(k<1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  };
-  if(still || !('IntersectionObserver' in window)) return;
-  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ io.unobserve(e.target); run(e.target); } }),{threshold:.6});
-  bs.forEach(b=>io.observe(b));
 })();

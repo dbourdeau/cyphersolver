@@ -1,17 +1,9 @@
 // The home page's live header: real ciphertext from the reveal passages deciphers itself line by line and names its
-// letter, then the next one; the counters count up once; the random button opens any write-up.
+// letter, then the next one; the random button opens any write-up.
 (async()=>{
   const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const wait=ms=>new Promise(r=>setTimeout(r,ms));
-
-  // counters
-  const nums=document.querySelectorAll('.livecount b[data-n]');
-  if(!still) nums.forEach(b=>{ const n=+b.dataset.n, t0=performance.now(), d=1400+Math.min(1200,n);
-    b.textContent='0';
-    const f=now=>{ const k=Math.min(1,(now-t0)/d), e=1-Math.pow(1-k,3); b.textContent=Math.round(n*e).toLocaleString('en');
-      if(k<1) requestAnimationFrame(f); };
-    requestAnimationFrame(f); });
 
   // random cipher
   const rb=document.querySelector('.randbtn');

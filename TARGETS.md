@@ -291,9 +291,9 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 - **Beatrice d'Aragona**, catalogue 160, DECODE R1140–R1143 and R1154 — earlier readings located, 20 Sept 2026. Four cipher letters in editions of 1877–78; R1154 is plain Italian of 29 May 1505. March Virtus/Fortis/M. markers remain unexplained. See [beatrice1482/](beatrice1482/).
 
-- **Milanese embassy at Buda, 1489–92** (ASMi Sforzesco 642/645/650; DECODE R1098, Vestigia 2831) — read, 19 Sept 2026.
+- **Milanese embassy at Buda, 1489–92** (ASMi Sforzesco 642/645/650; DECODE R1098, Vestigia 2831) — read in part, 19 Sept 2026 (reclassified 22 Sept 2026: share read not measured).
   Somogyi's 2016 key re-anchored to the signs through the cipher-and-clear pair of 2 April 1490; the letters of 22 Nov 1489
-  (four pages) and 12 Jan 1490 read. DECODE R1147, R1155 and R1152 turned out to have contemporary clear copies or to be
+  (four pages; page 3 in patches, four signs unvalued) and 12 Jan 1490 read. DECODE R1147, R1155 and R1152 turned out to have contemporary clear copies or to be
   clear drafts; R1146 and R1158 are in other ciphers, still unread. See [`buda1489/`](buda1489/).
 | Target | Status | Dir |
 |---|---|---|

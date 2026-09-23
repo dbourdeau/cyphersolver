@@ -1,6 +1,6 @@
 // "How it was solved": <figure class="sreplay" data-src="steps/slug.json">, inserted by _build_site.py from the target's
 // profile.json.  Every solution step is a bead on a track: moves that worked stay on the line, failed and ruled-out moves
-// drop below it as dead ends.  A playhead walks the steps when the figure scrolls into view; beads can be stepped or clicked.
+// drop below it as dead ends.  A playhead walks the steps when the reader presses play; beads can be stepped or clicked.
 (()=>{
   const figs=document.querySelectorAll('.sreplay[data-src]'); if(!figs.length) return;
   const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -64,8 +64,7 @@
     beads.forEach(b=>b.classList.remove('seen')); card.innerHTML=`<p class="sr-idle">Press play, or click any step.</p>`;
     return start;
   }
-  const io='IntersectionObserver' in window ? new IntersectionObserver(es=>es.forEach(e=>{
-    if(e.isIntersecting && e.target._start){ io.unobserve(e.target); e.target._start(); } }),{threshold:.4}) : null;
-  figs.forEach(fig=>fetch(fig.dataset.src).then(r=>r.json()).then(d=>{ fig._start=build(fig,d); if(io && fig._start) io.observe(fig); })
+  // the replay waits for the reader: play, or click a step
+  figs.forEach(fig=>fetch(fig.dataset.src).then(r=>r.json()).then(d=>{ build(fig,d); })
     .catch(()=>{ fig.remove(); }));
 })();

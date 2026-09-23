@@ -8,7 +8,7 @@ concern Ferrara's defection from France before the Peace of Cambrai.
 | item | leaf / Gallica view | date | state |
 |---|---|---|---|
 | no. 62 | f. 113 / view 117 | 22 March 1529 | cipher with contemporary interlinear decipherment; key control |
-| no. 63 | ff. 115–116 / views 119–121 | after 23 February 1529 | target; read as far as it goes, see `n63_reading.md`; final leaf missing |
+| no. 63 | ff. 115–116 / views 119–121 | after 23 February 1529 | target; read as far as it goes, see `n63_reading.md`; final leaf is f. 123, bound out of order (sormano1529/NOTES.md), not read |
 | no. 65 | ff. 119–120 / views 123–124 | 23 February 1529 | target; read, see `n65_reading.md` / `n65_transcription.md` |
 | no. 66 | ff. 121–122 / views 125–127 | 23 February 1529 | target; docketed `duplicata`; read, see `n66_reading.md` |
 | no. 67 | f. 124 | 1529 | Sormano's `Doppio`, cipher with decipherment; second control |
@@ -82,4 +82,10 @@ context — this is what exposed the null). Raw Gallica pages are not tracked.
 No. 65 is transcribed throughout; its remaining uncertain patches (chiefly
 f. 119v L25–37 and f. 120r L01–L19) should be settled against no. 66, where
 much of that matter stands in clear. Then no. 63, the longest and most heavily
-enciphered of the three, and locate its missing final leaf.
+enciphered of the three, including its final leaf f. 123 (found in the sormano1529 work, bound out of order).
+
+## Outcome disagreement with sormano1529 (22 Sept 2026, site review)
+
+This target and `sormano1529/` cover the same three letters (nos. 63, 65, 66). This profile says class read, fraction
+unknown; `sormano1529/profile.json` says read in part, 0.05. The two records should be reconciled into one outcome
+the next time either is worked; not reclassified in the review, by decision.

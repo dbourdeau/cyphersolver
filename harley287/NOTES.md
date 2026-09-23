@@ -1,6 +1,6 @@
 # Harley MS 287: Lord Cobham at Ostend, 20–22 March 1587/8 (DECODE R8477, R8482–R8487)
 
-Status: read (every cipher run of ff. 70r–72v read; one surname and the code numbers 42 and .7. uncertain; f. 11 is a different item, not read)
+Status: read in part (every cipher run of ff. 70r–72v read in sense; one surname, one verb, scattered words and the code numbers 42 and .7. open; share read not measured; f. 11 is a different item, not read). Reclassified from "read" 22 Sept 2026: nothing measures the share of cipher tokens read, so the read bar (README Conventions) is not shown to be met.
 
 Catalogue item 132 ("Unknown sender to unknown recipient, 7 ciphertexts, 20–22 Mar 1587"). Sibling item 131
 (R8490–R8496, Cobham to Walsingham, May–June 1588) is worked in `cobham1588/` by another session, which uses the
@@ -140,3 +140,20 @@ satisfied touching 500 ... *instructions* no man shall draw ..." (short runs, C)
 `img/` (DECODE images, BL copyright, git-ignored). Fetched with the DECODE cookie route (see memory
 decode-access). No solver code: the key was built by hand from cribs (that bearer hath; instructions; under
 colour thereof; any money; preparations; companies of footmen; subject to interception).
+
+## Remaining gaps
+- code number 42, f. 70r ("15 will never yield to send 42 hither") - blocker: open-codes; occurs once, context allows commissioners or forces
+- code sign .7. before "ships", f. 70r - blocker: open-codes; read as the Queen from context (C), not confirmed by a second occurrence
+- the Jesuit's surname on f. 71r (+∪∧∧..#7, read Bastune?) - blocker: not-attempted; no glyph-level transcription of the word yet, and no printed source searched for a Jesuit sent post to Italy in March 1588
+- one verb on f. 70r ("will not [keep them] from") - blocker: not-attempted; conjectured from context, not re-read sign by sign
+- scattered words marked … or (?) on ff. 70v, 71r, 72r and 72v - blocker: not-attempted; the reading was done word by word from crops, with no sign-by-sign transcription to retry them against the key
+- share of cipher tokens read - blocker: not-attempted; never measured. Next step: transcribe ff. 70r–72v sign by sign into a file and measure the reading against it (`docs/_check_profile.py --measure`)
+- f. 11 (R8477), a different code of about eight groups - blocker: too-short; no key on DECODE or in the volume, too few groups to rebuild one
+
+## Escalation
+- [x] siblings: catalogue 131 (R8490–R8496, `cobham1588/`) is the same cipher; its glosses on f. 89 (R8493) confirm the letter values; needham1587 (ff. 39–40) and the key R8497 in the same volume checked, different systems
+- [x] clear-pages: none of the seven leaves carries an interlinear, marginal or separate decipherment; the clear passages are the letters' own text
+- [x] known-keys: Bodley's key R8497 (1590) tried, a different alphabet; the cobham1588 key is this key, merged sign by sign; neither gives 42 or .7.
+- [x] print: CSP Foreign vol. 21 pt 4 (March 1588 sections) checked; it calendars other Cobham letters from SP 77, not these, and prints no decipherment
+- [x] key-rebuild: key built by hand from clear-text cribs (commaunded to attend, under colour thereof, any money, instructions); nomenclator 15 and □ fixed from context
+- [ ] retry: not done; the open words and the doubtful readings have not been re-run sign by sign, because no glyph-level transcription exists yet

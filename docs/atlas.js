@@ -199,10 +199,6 @@
   slider.addEventListener('input',()=>{ if(raf) stop(); draw(+slider.value,true); });
   document.getElementById('aall').addEventListener('click',()=>{ if(raf) stop(); draw(1945,false); });
 
-  // open on the whole map, then play once the map is in view
+  // open on the whole map; it plays only when the reader presses Play
   refresh();
-  if(!still && 'IntersectionObserver' in window){
-    const io=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ io.disconnect(); shown.clear(); draw(1420,false); btn.click(); } },{threshold:.5});
-    io.observe(root);
-  }
 })();

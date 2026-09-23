@@ -30,7 +30,8 @@
     "source": "Vestigia 3240x4320 images, segmented into strips and crops",
     "image_quality": "fair",
     "notes": "Only p. 1 ll. 1-10 (564 signs) were transcribed to tokens; the rest was read by eye from crops, so no full sign count exists. Lines 1-2 reproduce Somogyi exactly. Page 4 has two cipher lines, then a clear postscript."
-   }
+   },
+   "read": "read in part"
   },
   {
    "id": "R1098",
@@ -59,7 +60,8 @@
     "source": "DECODE images fetched by Daniel (git-ignored)",
     "image_quality": "fair",
     "notes": "Count from NOTES (agent's 469 signs); the CSV mixes clear and cipher rows, so not measured. Agent pass conflated z/3, d/ð, s/ſ, u/v; second pass by eye on raw crops."
-   }
+   },
+   "read": "read in part"
   },
   {
    "id": "V267",
@@ -158,7 +160,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-09-18",
-  "last_date": "2026-09-19"
+  "last_date": "2026-09-22"
  },
  "solution": [
   {
@@ -208,16 +210,60 @@
    "kind": "literature search",
    "result": "partial",
    "what": "Framing corrected: 'nobody had deciphered' becomes 'no published decipherment'; Somogyi held the key and printed a specimen of the letter."
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Reclassified from 'read' to 'read in part': no measured share of signs read; page 3 of the 1489 letter after l. 19 read only in patches (about a third of its words), four signs unvalued, R1098 ll. 5, 6, 9 short groups open. NOTES gain Remaining gaps and Escalation sections; next step is a full token transcription and a measured count.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "fraction_read": "unknown",
   "verification": [
    "matched control",
    "independent clear copy",
    "key confirms"
   ],
-  "notes": "Readings are in gist in places; a few signs unidentified and stained line ends. 'matched control' refers to Somogyi's printed lines 1-2."
+  "notes": "Read in part since 22 Sept 2026: share of signs read not measured, p. 3 of the 1489 letter after l. 19 in patches. Readings are in gist in places; a few signs unidentified and stained line ends. 'matched control' refers to Somogyi's printed lines 1-2.",
+  "key": "partial",
+  "gaps": [
+   {
+    "item": "2831 p. 3 after l. 19, about a third of that page's words",
+    "blocker": "not-attempted",
+    "detail": "read only in patches, the ink is lighter and the stacked crops drift; the per-row crop pass straight from the plate (Method, on the page) has not been run, and part may prove illegible after it"
+   },
+   {
+    "item": "2831 p. 1 ll. 21–26, last words of each line",
+    "blocker": "illegible",
+    "detail": "stain at the right edge, no other image (DECODE and Vestigia serve the same negative)"
+   },
+   {
+    "item": "four unvalued signs (♀-like sign with a cross below, capital E with three bars, a wavy horizontal null, a stroke that may be a second null)",
+    "blocker": "open-codes",
+    "detail": "not in Somogyi's table as printed, each too rare to fix from context so far"
+   },
+   {
+    "item": "the recurring ro+et pair on p. 3 after \"ad\" (a place name)",
+    "blocker": "open-codes",
+    "detail": "probably a nomenclator entry Somogyi's key does not list"
+   },
+   {
+    "item": "nomenclator signs for madonna Bianca, zo. Corvino and il vescovo varadino",
+    "blocker": "open-codes",
+    "detail": "met once each, shapes not confirmed"
+   },
+   {
+    "item": "R1098 ll. 5, 6 and 9, short groups including the word after \"divertira ad\" (Tulln?)",
+    "blocker": "not-attempted",
+    "detail": "not retried with the sign values gained later from the 1489 letter"
+   },
+   {
+    "item": "share of cipher signs read",
+    "blocker": "not-attempted",
+    "detail": "never measured (only 2831 p. 1 ll. 1–10 and R1098 were transcribed to tokens). Next step: a full token transcription of 2831 pp. 1–4 and a measured count against the reading files"
+   }
+  ]
  }
 }
