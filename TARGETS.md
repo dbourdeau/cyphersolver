@@ -225,6 +225,8 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Speculum cipher flyleaf**, anonymous annotation in SCH R 201 (1618 volume; DECODE R4817; catalogue 271): solved 23 Sept 2026, completing Rous’s partial reading; 79 signs assigned, 78 coherent without correction; literal GEFAE remains a probable error for Gefäß. [r4817/](https://dbourdeau.github.io/cyphersolver/r4817.html).
+
 - **Nevers (Saint-Quentin) → Villeroy, 16 Aug 1595** (catalogue 277, BnF fr. 3993 no. 102 ff. 148–149): attempted, closed unread 22 Sept 2026; key not in fr. 3995 (no. 76 read in full: same signs, other values), homophonic readings ruled out against a matched control (`nevers1595/`).
 - **Hugo de Moncada (Monaco) → Charles V, 6 Oct 1524** (catalogue 273, BNE MSS/20213/12, DECODE R1191): found printed 1854 (CODOIN XXIV pp. 417–419) with one gap; key rebuilt here, gap read 22 Sept 2026 (`moncada1524/`).
 - **Vatican Challenge Part 5, Farnese → Poggio, April 1542** (catalogue 262, DECODE R92): solved by Simon Klee, Sept 2026, accepted by MysteryTwister; reviewed here 20 Sept 2026 and the Elio-syllabary diagnosis withdrawn (`vatican5/SOLUTION.md`). R91, the companion in another key, stays open.

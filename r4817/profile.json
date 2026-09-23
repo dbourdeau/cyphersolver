@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "target": "r4817",
+  "title": "Cipher flyleaf in Speculum sophicum rhodo-stauroticum, SCH R 201 (DECODE R4817)",
+  "documents": [
+    {
+      "id": "flyleaf",
+      "shelfmark": "Zentralbibliothek Zürich, SCH R 201",
+      "year": 1618,
+      "country": "unknown",
+      "language": "German",
+      "pages": 1,
+      "read": "read",
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Korn 2023, note 41, partial reading credited to Anne-Simone Rous",
+        "partial": true
+      },
+      "length": {
+        "tokens": 79,
+        "distinct": 19,
+        "unit": "symbols",
+        "measured": true,
+        "file": "transcription.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "source": "e-manuscripta image 1033442",
+        "notes": "Five lines, 19 shape classes with neutral IDs; final E in GEFAE preserved. Full page 3409x4031; all 42 volume canvases visually surveyed."
+      },
+      "date": "Undated annotation in a volume catalogued 1618"
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic"
+    ],
+    "summary": "Graphic substitution on a five-line German alchemical note.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 19,
+    "diacritics": {
+      "used": true,
+      "note": "A solid dot vs an open ring above a line distinguishes I and O."
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": false
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "unknown",
+    "word_division": "partial",
+    "doubled_letters": "Written twice, including the two adjacent F crosses in OFFEN.",
+    "notes": "One sign represents U/V. Only attested signs reconstructed. No surviving historical key found."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "partial",
+      "where": "Anne-Simone Rous in Uwe Maximilian Korn, Bilderfahrzeug (2023), note 41",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "published reading"
+    ],
+    "attack": "crib",
+    "human_role": "User supplied DECODE target and requested prior-art check and completion.",
+    "models": [
+      "GPT-6"
+    ],
+    "first_date": "2026-09-22",
+    "last_date": "2026-09-23",
+    "sessions": 1,
+    "tools": [
+      "Python deterministic substitution decoder",
+      "IIIF image retrieval",
+      "Pillow contact sheets",
+      "Web prior-art search"
+    ]
+  },
+  "solution": [
+    {
+      "kind": "literature search",
+      "what": "Found Korn 2023 note 41 with Rous partial decipherment before attempting cipher. Targeted Tomokiyo searches returned no relevant result.",
+      "result": "worked"
+    },
+    {
+      "kind": "access",
+      "what": "Retrieved e-manuscripta IIIF manifest and 2000px original flyleaf image 1033442. DECODE web extraction failed.",
+      "result": "worked"
+    },
+    {
+      "kind": "hypothesis",
+      "what": "Visual distinction between triple-angle M and double-angle N suggests PRIMA MATERIA. Double cross in last line likely FF, yielding OFFEN. Testing all signs next.",
+      "result": "partial"
+    },
+    {
+      "kind": "reading",
+      "what": "Full-resolution image resolves the apparent UND as VOM: underlined small circle is O, triple angles M; triangle serves U/V. Thus ram gall, not gall and ram.",
+      "result": "worked"
+    },
+    {
+      "kind": "verification",
+      "what": "All five lines read with same substitution; literal GEFAE remains a likely scribal error for GEFAS, to be preserved separately from editorial correction.",
+      "result": "partial"
+    },
+    {
+      "kind": "literature search",
+      "what": "Exact-phrase searches for ram gall / hemispherical vessel / furnace-scales found no independent text match.",
+      "result": "failed"
+    },
+    {
+      "kind": "verification",
+      "what": "Visually surveyed all 42 library canvases in contact sheets; no companion key or second specimen identified.",
+      "result": "worked"
+    },
+    {
+      "kind": "statistics",
+      "what": "docs/_check_profile.py --measure transcription.txt: 79 tokens, 19 distinct; IC 0.0727. Deterministic replay assigns 79; ledger flags line 3 position 8 only.",
+      "result": "worked"
+    },
+    {
+      "kind": "reading",
+      "what": "All five lines read. VOM and OFFEN complete prior work; GEFAE remains literal, with Gefaess explicitly conjectural. 78/79 coherent without emendation.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "class": "read",
+    "key": "recovered",
+    "fraction_read": 1.0,
+    "fraction_coherent": 0.9873417721518988,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "token_ledger.json: 79 cipher tokens assigned; one flagged anomaly at line 3 position 8 excluded from coherent fraction. Generated by decode.py from transcription.txt + key.json.",
+    "codes_open": {
+      "open": 0,
+      "total": 0,
+      "tokens_open": 0
+    },
+    "grades": {
+      "I": 78,
+      "M": 1
+    },
+    "verification": [
+      "none"
+    ],
+    "notes": "Internal substitution consistency and German syntax; no independent plaintext or archive key. Rous partial reading used before attack. All occurring signs read; literal GEFAE preserved, Gefaess conjectural. Alchemical interpretation and annotation date/author remain unknown."
+  }
+}
