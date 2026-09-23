@@ -19,17 +19,17 @@ mixed into clear Latin, with one name sign and groups of separator signs. Many s
 |---|---|---|
 | a | open δ-like hook (ɣ) | atentis, quam, Catalonia, factas, alias |
 | b | T with a bar (Ƭ) | sibi (×6), debet, deberet, nobis, dubitamus, tribulacione |
-| c | small o | cum, duce, dices, cogitare, pocius |
+| c | small o (as i) | cum, duce, dices, hic, contenti |
 | d | double cross ‡ | duce, de, ideo, diceres, deficere, quod |
 | e | δ | et (×6), deberet, remanere, necessitatem |
 | f | Ϭ (σ with a flag) | factus, facto, futurum (×2), deficere, suficere |
 | g | 4-like sign (ɕ) | negocium, negociis, cogitare, congedio |
 | h | 2-like / ʒ-like sign | hoc, habet, habere, hic |
-| i | small o | ideo, sibi, nisi, Siciliam |
+| i | small o (as c) | ideo, sibi, modis, qui, detinent |
 | l | ϑ (looped d) | velit, alias, tribulacione, Catalonia, cancellarius |
 | m | ɛ with a foot (t-like) | cum, sumus, mentem, remanere, modis |
 | n | n | in, nobis, contenti, detinent, remanere |
-| o | small o | ideo, bosco, toto, nostrorum |
+| o | double loop ꝏ | modis, nostrorum, nos, contenti, con- |
 | p | ⊥ (inverted T with a stroke) | placet, recipiat, expensis, respectum, prout, potes, poterimus |
 | q | ⊧ (double-barred upright) | quod (×9), quam, quia, qui, quasi |
 | r | single upright (ı) | diceres, atribueret, remanere, istorum, adversariorum |
@@ -39,8 +39,9 @@ mixed into clear Latin, with one name sign and groups of separator signs. Many s
 | x | ɑ-like sign | expensis, ex, Ambaxiatis |
 | Rex / Regis Aragonum | dotted V (V̇) | lines 1, 6, 9, 10 |
 
-c, i and o share one sign on the 1920 halftone; in the original they may be distinguished by a tick or dot
-that the reproduction loses. d and p look alike at this resolution (both barred uprights); where they could be
+The letter o is a double loop (ꝏ), c and i a single small o: *modis* is ɛ ꝏ ‡ o T, *contenti* o ꝏ n c′ δ n c′ o,
+*hic* ʓ o o. Found on a 5× re-read of line 24 (the first pass had merged ꝏ into two o's). c and i still look alike
+on the 1920 halftone; the original may separate them by a tick or dot. d and p look alike at this resolution (both barred uprights); where they could be
 separated, p is ⊥ and d is ‡.
 
 **Separators.** Groups of λ-, ʒ- and ɑ-like signs (λʒ … λʒ) stand at four places: line 4 (Puig ";"), line 8

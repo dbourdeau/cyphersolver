@@ -14,8 +14,9 @@ is a decipherment, not a transcription.
 
 **Second session, 23 Sept 2026: the key.** Puig never printed his key. It is now rebuilt from the one image of the
 ciphertext, the p. 475 facsimile, read against Puig's text of the same page (`key.md`, `src/plate475_check.tsv`).
-It is a plain one-sign-per-letter substitution, 20 letter values, plus a dotted-V sign for the King of Aragon and
-groups of null separator signs. It reads every legible cipher run on the plate: 755 of 826 plaintext letters are
+It is a plain one-sign-per-letter substitution, 20 letter values (o a double loop ꝏ, c and i a single small o),
+plus a dotted-V sign for the King of Aragon and groups of null separator signs. Line 24 is transcribed sign by
+sign as seen (58 signs) in `docs/reveal/benedict1399.json`. It reads every legible cipher run on the plate: 755 of 826 plaintext letters are
 confirmed sign by sign (91.4%; 96.3% of the legible runs) and no sign contradicts the key. It also corrects Puig in
 three places: *te sicudum* is **tenendum**, *abique congerio* is **absque congedio**, *necesaria* is *necessaria*.
 The earlier verdict below (3a, "not at the resolution of the only scan") was too pessimistic: at 3–5× with

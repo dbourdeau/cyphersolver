@@ -94,7 +94,7 @@
    "monoalphabetic",
    "nomenclator"
   ],
-  "summary": "Simple substitution, one invented or letter-shaped sign per letter (20 values: a hook, b T-bar, c/i/o one o-sign on the halftone, d double cross, e delta, f flagged sigma, g 4-shape, h 2-shape, l looped d, m footed epsilon, n n, p inverted T, q double-barred upright, r upright stroke, s T, t c with superscript, u/v joined cb, x alpha-shape), signs joined by hair-lines with no word division, mixed into clear Latin; a dotted V for the King of Aragon; groups of lambda/z-like signs as null separators at sentence breaks. Rebuilt from the p. 475 facsimile against Puig's text (key.md).",
+  "summary": "Simple substitution, one invented or letter-shaped sign per letter (20 values: a hook, b T-bar, c and i a single o, o a double loop, d double cross, e delta, f flagged sigma, g 4-shape, h 2-shape, l looped d, m footed epsilon, n n, p inverted T, q double-barred upright, r upright stroke, s T, t c with superscript, u/v joined cb, x alpha-shape), signs joined by hair-lines with no word division, mixed into clear Latin; a dotted V for the King of Aragon; groups of lambda/z-like signs as null separators at sentence breaks. Rebuilt from the p. 475 facsimile against Puig's text (key.md).",
   "symbol_kind": "symbols",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -116,7 +116,7 @@
   "key_order": "unknown",
   "word_division": "none",
   "sibling_key": "Two keys of Climent in the same papers (doc. 595) that Puig could not apply to any document; not printed. Clement VII's Lavinde alphabets (Meister 1906, Schlüsselsammlung I) are the nearest printed keys.",
-  "notes": "c, i and o share one sign on the 1920 halftone and d/p are hard to separate; the original may distinguish them. Key rebuilt from known plaintext (Puig's reading), not ciphertext-only."
+  "notes": "c and i share one small o on the 1920 halftone (o is a double loop) and d/p are hard to separate; the original may distinguish them. Key rebuilt from known plaintext (Puig's reading), not ciphertext-only."
  },
  "conditions": {
   "prior_solution": {
@@ -225,6 +225,12 @@
    "date": "2026-09-23",
    "kind": "reading",
    "what": "The key corrects Puig in three places: 'te sicudum' (line 4) is 'tenendum' (c' delta n delta n dcross cb m-sign; the clear text just before has 'in suspenso tenendum'); 'abique congerio' is 'absque congedio'; 'necesaria' is written 'necessaria'. Four separator groups (lambda/z signs) stand where Puig prints ';' or a dash and are not printed by him: read as null punctuation.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "transcription",
+   "what": "Write-up pass: line 24 (modis ... absque) re-read at 5x and transcribed sign by sign as seen, 58 signs, for the site's decipher replay. It showed that o is a double loop, distinct from the single o used for c and i; one tall stroke in 'istorum' unexplained.",
    "result": "worked"
   }
  ],
