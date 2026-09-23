@@ -8,6 +8,15 @@ import _build_site as site
 
 
 class RecentFindingsTests(unittest.TestCase):
+    def test_deduplicates_exact_findings_but_keeps_distinct_updates(self):
+        first = '<li><b>Letter</b><span class="fnd">First reading</span></li>'
+        later = '<li><b>Letter</b><span class="fnd">Revised reading</span></li>'
+        page = '<h2 id="recent">Recent findings</h2>\n<ul class="findings">' + first + first + later + '</ul>'
+        with patch.object(site, 'stamp_finding', side_effect=lambda li: li):
+            result = site.fold_findings(page)
+        self.assertEqual(result.count(first), 1)
+        self.assertEqual(result.count(later), 1)
+
     def test_rejects_accidentally_copied_navigation(self):
         page = ('<h2 id="recent">Recent findings</h2>\n<ul class="findings">'
                 '<li><a href="writeups.html#kind=solved"><span class="st solved">77</span>'

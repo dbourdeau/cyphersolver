@@ -1660,7 +1660,16 @@ def fold_findings(s, n=RECENT_VISIBLE):
     if any(re.search(r'<span class="st [^"]+">', li) for li in items):
         raise ValueError('Recent findings contains navigation status badges. '
                          'Restore the editorial findings; do not copy menu <li> entries.')
-    items = [stamp_finding(li) for li in items]
+    # Concurrent publications can insert the same finding twice. Compare the
+    # editorial content without generated dates or thumbnails; keep the first.
+    seen = set()
+    unique = []
+    for li in items:
+        key = normalise(li)
+        if key not in seen:
+            seen.add(key)
+            unique.append(stamp_finding(li))
+    items = unique
     if not items: return s
     head = '<ul class="findings">\n' + '\n'.join(items[:n]) + '\n</ul>'
     rest = items[n:]
