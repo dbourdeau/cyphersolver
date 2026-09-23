@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Highlights — thirty favourites from the cipher archive</title>
+<meta name="description" content="Thirty favourite findings from two hundred cipher write-ups: ten that are funny (a drunk envoy, a king and a nun, John Dee's spirits catalogued as secret letters), ten that matter to history (the relief of Malta, the murder of the Duke of Guise, Louis XIV giving up Piedmont) and ten that are simply ingenious (a despatch in lemon juice, nulls that are whole Latin words, a father's coded log of his baby's fits).">
+<link rel="stylesheet" href="style.css?v=20260922a">
+<style>
+/* highlights page: categories, timeline, cards, the decipher effect */
+main{--c-funny:var(--amber);--c-funny-bg:var(--amber-bg);--c-hist:var(--red);--c-hist-bg:var(--red-bg);--c-ing:var(--blue);--c-ing-bg:var(--blue-bg)}
+.hl-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;margin:1.6rem 0 1.2rem}
+.hl-stat{background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:.9rem 1rem}
+.hl-stat b{display:block;font-family:var(--display);font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.05;color:var(--head);font-weight:600}
+.hl-stat span{font:.72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:640px){.hl-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* the timeline */
+.hl-time{position:relative;margin:1.4rem 0 .4rem;padding:2.4rem 0 2.2rem}
+.hl-time .axis{position:absolute;left:0;right:0;top:50%;height:1px;background:var(--rule)}
+.hl-time .tick{position:absolute;top:calc(50% + .6rem);transform:translateX(-50%);font:.68rem var(--mono);color:var(--muted)}
+.hl-time .tick::before{content:"";position:absolute;left:50%;top:-.65rem;width:1px;height:.4rem;background:var(--rule)}
+.hl-dot{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:0;padding:0;cursor:pointer;
+  background:var(--c);box-shadow:0 0 0 3px var(--bg),0 0 12px color-mix(in srgb,var(--c) 60%,transparent);transition:transform .18s}
+.hl-dot:hover,.hl-dot:focus-visible{transform:scale(1.45);outline:none;z-index:2}
+.hl-dot.up{top:calc(50% - 1.05rem)} .hl-dot.dn{top:calc(50% + 1.05rem)}
+.hl-dot[data-cat=funny]{--c:var(--c-funny)} .hl-dot[data-cat=hist]{--c:var(--c-hist)} .hl-dot[data-cat=ing]{--c:var(--c-ing)}
+.hl-dot.dim{opacity:.15}
+.hl-tip{position:absolute;bottom:calc(100% - 1.2rem);transform:translateX(-50%);background:var(--bg2);border:1px solid var(--rule);border-radius:10px;
+  padding:.4rem .65rem;font-size:.84rem;white-space:nowrap;box-shadow:var(--shadow);pointer-events:none;opacity:0;transition:opacity .15s;z-index:5;color:var(--ink)}
+.hl-tip.on{opacity:1}
+.hl-tip b{font-family:var(--mono);font-size:.74rem;color:var(--gold2);margin-right:.4rem;font-weight:500}
+
+/* filter bar */
+.hl-bar{position:sticky;top:3.4rem;z-index:20;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;padding:.7rem 0;margin:.4rem 0 1rem;
+  background:linear-gradient(var(--bg) 70%,transparent)}
+.hl-chip{font:.8rem var(--mono);letter-spacing:.04em;padding:.42rem .85rem;border-radius:999px;border:1px solid var(--rule);background:var(--panel);color:var(--ink2);cursor:pointer;display:inline-flex;align-items:center;gap:.45rem;transition:border-color .2s,background .2s}
+.hl-chip i{width:.6rem;height:.6rem;border-radius:50%;background:var(--c,var(--gold));display:inline-block}
+.hl-chip[data-f=funny]{--c:var(--c-funny)} .hl-chip[data-f=hist]{--c:var(--c-hist)} .hl-chip[data-f=ing]{--c:var(--c-ing)}
+.hl-chip:hover{border-color:var(--c,var(--gold))}
+.hl-chip[aria-pressed=true]{border-color:var(--c,var(--gold));background:color-mix(in srgb,var(--c,var(--gold)) 16%,var(--panel));color:var(--head)}
+.hl-chip.lucky{margin-left:auto;--c:var(--gold)}
+@media (max-width:640px){
+  .hl-bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}
+  .hl-bar::-webkit-scrollbar{display:none}
+  .hl-chip{flex:none;padding:.38rem .7rem}
+  .hl-chip.lucky{margin-left:0}
+}
+
+/* section heads */
+.hl-sec{scroll-margin-top:7rem}
+.hl-lede{font-size:1.08rem;color:var(--ink2);max-width:46rem;margin:-.2rem 0 1.4rem}
+.hl-sec h2 .dotc{display:inline-block;width:.55em;height:.55em;border-radius:50%;background:var(--c);margin-right:.45em;vertical-align:.12em;box-shadow:0 0 14px var(--c)}
+.hl-sec.funny{--c:var(--c-funny);--cb:var(--c-funny-bg)} .hl-sec.hist{--c:var(--c-hist);--cb:var(--c-hist-bg)} .hl-sec.ing{--c:var(--c-ing);--cb:var(--c-ing-bg)}
+
+/* cards */
+.hl{position:relative;display:grid;grid-template-columns:4.2rem minmax(0,1fr) minmax(0,15rem);gap:0 1.3rem;padding:1.4rem 1.4rem 1.3rem 1rem;margin:0 0 1.1rem;
+  background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);scroll-margin-top:7.5rem;
+  transition:border-color .25s,transform .25s,box-shadow .25s,opacity .5s;overflow:hidden}
+.hl::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c)}
+.hl:hover{border-color:color-mix(in srgb,var(--c) 55%,var(--rule));transform:translateY(-2px);box-shadow:var(--shadow)}
+.hl.flash{animation:hlflash 1.6s ease}
+@keyframes hlflash{0%,100%{box-shadow:none}25%,60%{box-shadow:0 0 0 2px var(--c),0 0 40px color-mix(in srgb,var(--c) 45%,transparent)}}
+.hl-n{font-family:var(--display);font-size:2.9rem;line-height:.9;color:var(--c);font-weight:600;opacity:.9;text-align:right;font-variant-numeric:lining-nums}
+.hl-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .7rem;margin:0 0 .45rem;font:.76rem var(--mono);color:var(--muted);letter-spacing:.02em}
+.hl-meta .yr{color:var(--c);font-weight:600}
+.hl h3{font-family:var(--display);font-size:clamp(1.18rem,2.2vw,1.42rem);line-height:1.22;margin:0 0 .6rem;color:var(--head)}
+.hl p{margin:0 0 .75rem}
+.hl-q{margin:.9rem 0 .8rem;padding:.75rem 1rem;border-left:0;border-radius:10px;background:var(--cb);position:relative}
+.hl-q .dec{font-family:var(--period,var(--serif));font-size:1.06rem;line-height:1.45;color:var(--head);margin:0;font-style:italic;min-height:1.4em}
+.hl-q .dec.scr{font-style:normal;font-family:var(--mono);font-size:.94rem;letter-spacing:.02em;color:var(--c)}
+.hl-q .tr{margin:.4rem 0 0;font-size:.93rem;color:var(--ink2)}
+.hl-q .lang{display:block;margin:0 0 .3rem;font:.62rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hl-go{font:.8rem var(--mono);letter-spacing:.03em;border:0;color:var(--gold2)}
+.hl-go::after{content:" \2192";transition:margin .2s}
+.hl-go:hover::after{margin-left:.3rem}
+.hl-fig{margin:0;align-self:start}
+.hl-fig img{width:100%;height:11.5rem;object-fit:cover;border-radius:10px;border:1px solid var(--rule);display:block;filter:saturate(.9);transition:filter .25s;cursor:zoom-in}
+.hl:hover .hl-fig img{filter:saturate(1.05)}
+.hl-fig figcaption{font-size:.72rem;line-height:1.35;color:var(--muted);margin-top:.4rem}
+.hl-glyph{align-self:start;height:11.5rem;border-radius:10px;border:1px dashed var(--rule);display:flex;align-items:center;justify-content:center;text-align:center;padding:1rem;
+  font:.86rem/1.7 var(--mono);color:var(--c);background:repeating-linear-gradient(135deg,transparent 0 9px,var(--panel) 9px 10px);word-break:break-word}
+.hl.hide{display:none}
+.hl-bigstat{font-family:var(--display);font-size:1.7rem;color:var(--head);margin:.2rem 0 .1rem}
+@media (max-width:820px){
+  .hl{grid-template-columns:minmax(0,1fr);padding:1.1rem 1rem 1rem 1.1rem}
+  .hl-n{font-size:1.9rem;text-align:left;margin-bottom:.3rem}
+  .hl-fig,.hl-glyph{grid-column:1/-1;margin-top:.6rem}
+  .hl-fig img{height:10rem}
+  .hl-glyph{height:auto;min-height:5rem}
+}
+@media (prefers-reduced-motion:reduce){.hl,.hl-dot,.hl-go::after{transition:none}.hl.flash{animation:none;outline:2px solid var(--c)}}
+</style>
+<meta name="date" content="2026-09-22">
+<meta name="last-modified" content="2026-09-22">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="mellon136.html"><span class="st solved">read; key in the book</span><b>Silentium Dei 1798</b><span class="yr">1798</span></a></li><li><a href="swieten1757.html"><span class="st solved">solved</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">solved</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">74</span><b>Solved or read</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">56</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">54</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">33</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 219 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary class="active">Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html" aria-current="page"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a href="catalogue.html">Catalogue</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="cipherstrip" id="hl-strip">ſπϙ ✕⊢ · 1424 1112 1433 520 · prfsfns lkbfr<br>du citron sur les quatre demi-pages blanches<br>la monaca · Uriel · 8319 &lt; 8340 &lt; 8374</div>
+  <p class="kicker">A survey &middot; September 2026</p>
+  <h1>Thirty favourites from the archive</h1>
+  <p class="sub">Ten that made us laugh, ten that matter to history, and ten that are simply ingenious, picked from two hundred
+  cipher write-ups that run from 1425 to 1933</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-22">22 September 2026</time></p>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#funny">Ten that made us laugh</a><a href="#historic">Ten that matter to history</a><a href="#ingenious">Ten that are simply ingenious</a><a href="#method">How these were chosen</a><a href="#sources">Sources</a></nav>
+<div class="callout">
+<strong>Why this page exists.</strong> Most of the work on this site is slow: a key rebuilt sign by sign, a catalogue record
+corrected, a letter found to be in print since 1877. But reading five centuries of other people&rsquo;s secret mail also turns up
+royal scandals, clerical blunders and some very clever tricks. Here are thirty of the best. Each card links to its full write-up,
+with the images, the key and the measured reading. As each quotation scrolls into view, it deciphers itself.
+</div>
+
+<div class="hl-stats" aria-label="The thirty in numbers">
+  <div class="hl-stat"><b>30</b><span>findings</span></div>
+  <div class="hl-stat"><b>1425&ndash;1933</b><span>five centuries</span></div>
+  <div class="hl-stat"><b>8</b><span>languages</span></div>
+  <div class="hl-stat"><b>6</b><span>never ciphers, or no message</span></div>
+</div>
+
+<div class="hl-time" id="hl-time" aria-label="The thirty on a timeline; select a dot to jump to its card">
+  <div class="axis"></div>
+  <div class="hl-tip" id="hl-tip" role="status"></div>
+</div>
+
+<div class="hl-bar" role="toolbar" aria-label="Filter the highlights">
+  <button class="hl-chip" type="button" data-f="all" aria-pressed="true">All thirty</button>
+  <button class="hl-chip" type="button" data-f="funny" aria-pressed="false"><i></i>Funny</button>
+  <button class="hl-chip" type="button" data-f="hist" aria-pressed="false"><i></i>Historic</button>
+  <button class="hl-chip" type="button" data-f="ing" aria-pressed="false"><i></i>Ingenious</button>
+  <button class="hl-chip lucky" type="button" id="hl-lucky">&#9860; Surprise me</button>
+</div>
+
+<!-- ============================================================ FUNNY -->
+<section class="hl-sec funny" data-sec="funny">
+<h2 id="funny"><span class="num">01</span> <span class="dotc" aria-hidden="true"></span>Ten that made us laugh</h2>
+<p class="hl-lede">Drunk envoys, royal gossip, catalogue clerks with the best of intentions, and one minister who could not quite work his own code.</p>
+
+<article class="hl" id="augurelio1535" data-cat="funny" data-year="1533" data-label="Talk to him when he is sober">
+  <div class="hl-n">01</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1533</span><span>Hungary &rarr; the Dukes of Bavaria</span><span class="st solved">read</span></p>
+    <h3>&ldquo;To be spoken with in the morning, when he is sober&rdquo;</h3>
+    <p>DECODE filed this letter under &ldquo;Augurellio&rdquo;, the name on its address leaf. At the foot of two leaves it is signed, in
+    cipher, <em>Iorg Weinmaister</em>: J&ouml;rg Weinmeister, a Bavarian agent in Hungary. Most of it is grim news, including the siege of
+    the castle of Palota and a report of fifty thousand Turks marching from Belgrade on Buda. Then the talks on relieving Palota
+    run into a practical problem. The magnate T&ouml;r&ouml;k B&aacute;lint was sent to discuss the relief one evening in Vienna while well
+    drunk, and will have to be approached again the next morning.</p>
+    <blockquote class="hl-q"><span class="lang">the reading, in English</span>
+      <p class="dec">&hellip;one evening at Vienna well drunk, was sent to talk of the relief, and is to be spoken with in the morning when he is sober.</p>
+    </blockquote>
+    <a class="hl-go" href="augurelio1535.html">Weinmeister 1533, read 96.7%</a>
+  </div>
+  <div class="hl-glyph" aria-hidden="true">Iorg<br>Weinmaister<br>&middot; signed in cipher &middot;</div>
+</article>
+
+<article class="hl" id="dandini1580" data-cat="funny" data-year="1580" data-label="The King and the nun">
+  <div class="hl-n">02</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1580</span><span>Rome &rarr; the nuncio in Paris</span><span class="st solved">read</span></p>
+    <h3>The Pope, the King of France, and the nun</h3>
+    <p>This is a cipher enclosure from the papal Secretariat of State to the nuncio Dandini. George Lasry had broken its companion in 2020;
+    this one keeps his frame but shuffles the letter codes, and was rebuilt here by annealing. The result matches the clerk&rsquo;s decipherment
+    under the figures word for word, except that the cipher has <em>commercio</em> where the clerk wrote <em>concetto</em>. What Rome wanted
+    kept secret was the gossip about Henri III and a nun. Whether or not it was true, the scandal was so great that the King &ldquo;should stop
+    going to that monastery altogether&rdquo;, and the nuncio is to press this on him hard. The companion letter adds that he is not to raise
+    the matter of the nun with the Queen.</p>
+    <blockquote class="hl-q" lang="it"><span class="lang">Italian</span>
+      <p class="dec">La voce et l&rsquo;opinione della pratica del Re Chr.mo con la monaca &egrave; uscita tanto publica che se ne ragiona hormai per tutto</p>
+      <p class="tr" lang="en">The talk of the Most Christian King&rsquo;s affair with the nun has become so public that it is discussed everywhere.</p>
+    </blockquote>
+    <a class="hl-go" href="dandini1580.html">Como to Dandini 1580</a>
+  </div>
+  <figure class="hl-fig" data-credit="Archivio Apostolico Vaticano, Francia 283C f. 52, via DECODE R72"><img src="dandini1580_lead.jpg" alt="The cipher enclosure R72, figures with the clerk's decipherment written beneath" loading="lazy"><figcaption>Francia 283C f. 52: the figures, and the clerk&rsquo;s decipherment beneath. <span class="credit">Image: Archivio Apostolico Vaticano, Francia 283C f. 52, via DECODE R72.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="sloane3188" data-cat="funny" data-year="1650" data-label="John Dee's angels, catalogued as letters">
+  <div class="hl-n">03</div>
+  <div>
+    <p class="hl-meta"><span class="yr">17th c.</span><span>Sloane MS 3188</span><span class="st found">not a cipher</span></p>
+    <h3>Twenty-five &ldquo;secret letters&rdquo; that are notes on John Dee&rsquo;s conversations with angels</h3>
+    <p>DECODE lists Sloane MS 3188 ff. 109&ndash;169 as twenty-five undeciphered ciphertexts, sender and recipient unknown. They are bound
+    straight after Dee&rsquo;s own diaries of his spirit &ldquo;actions&rdquo;. They turn out to be a later reader&rsquo;s notes on those diaries, in
+    seventeenth-century English stroke shorthand with the names written out in longhand. The leaves hold an index of the Actions, a list of
+    Dee&rsquo;s writings, and a note on Kelley and Prague dated 1595. There is no cipher, no letter and no correspondent in them.</p>
+    <blockquote class="hl-q"><span class="lang">longhand inside the shorthand</span>
+      <p class="dec">1582 &hellip; E.T. &hellip; Uriel &hellip; Reuchlin &middot; Reconciliatio Kelliana</p>
+    </blockquote>
+    <a class="hl-go" href="sloane3188.html">Shippen&rsquo;s notes on Dee</a>
+  </div>
+  <figure class="hl-fig" data-credit="British Library, Sloane MS 3188 f. 109r, via DECODE R8506"><img src="sloane3188_lead.jpg" alt="A leaf of shorthand strokes with names in longhand" loading="lazy"><figcaption>f. 109r: shorthand strokes, with names written out in longhand. <span class="credit">Image: British Library, Sloane MS 3188 f. 109r, via DECODE R8506.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="prussia1702" data-cat="funny" data-year="1702" data-label="A thank-you note for cipher lessons">
+  <div class="hl-n">04</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1702&ndash;23</span><span>Blenheim Papers, Add MS 61575</span><span class="st found">not a cipher</span></p>
+    <h3>A &ldquo;numerical cipher&rdquo; with no numbers, thanking someone for cipher lessons</h3>
+    <p>DECODE catalogues folio 95 as a non-decrypted numerical cipher by &ldquo;Frederic, Re di Prussia&rdquo;. There are no numbers on the page.
+    It is seven lines of plain French, spelled by ear and chopped into syllables, and the writer is thanking someone for showing him how to
+    write in cipher. Judging by the spelling, the lessons went better than the dictation.</p>
+    <blockquote class="hl-q" lang="fr"><span class="lang">French, as spelled</span>
+      <p class="dec">moy en me mon trant d&rsquo;es cria re</p>
+      <p class="tr" lang="en">&hellip;for the trouble you took with me in showing me how to write in cipher</p>
+    </blockquote>
+    <a class="hl-go" href="prussia1702.html">A lesson in cipher</a>
+  </div>
+  <div class="hl-glyph" aria-hidden="true">en me mon trant<br>d&rsquo;es cria re<br>&middot; no digits at all &middot;</div>
+</article>
+
+<article class="hl" id="hyde" data-cat="funny" data-year="1659" data-label="Numbers signifying nothing">
+  <div class="hl-n">05</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1659&ndash;60</span><span>Hyde &harr; Barwick</span><span class="st found">explained</span></p>
+    <h3>Coded addresses that meant nothing at all, on purpose</h3>
+    <p>Several of the royalist letters between Edward Hyde and John Barwick carry numbered superscriptions that no key reads, including the
+    full Hyde&ndash;Barwick key printed in 1721. The explanation had been in print for three centuries. The editor of Barwick&rsquo;s
+    <em>Life</em>, who had the papers, says the numbers were decoys.</p>
+    <blockquote class="hl-q"><span class="lang">the 1724 edition</span>
+      <p class="dec">superscribed with Numbers signifying nothing &hellip; only to puzzle the Enemy, if they should fall into their Hands</p>
+    </blockquote>
+    <a class="hl-go" href="hyde.html">Hyde</a>
+  </div>
+  <figure class="hl-fig" data-credit="P. Barwick, Vita Johannis Barwick (London, 1721), p. 396, via the Internet Archive"><img src="hyde_p396.jpg" alt="A printed page of Barwick's Life with the cipher letters" loading="lazy"><figcaption><em>Vita Johannis Barwick</em> (1721), p. 396. <span class="credit">Image: P. Barwick, Vita Johannis Barwick (London, 1721), p. 396, via the Internet Archive.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="eichel1758" data-cat="funny" data-year="1758" data-label="A cipher made entirely of nulls">
+  <div class="hl-n">06</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1758</span><span>&ldquo;Cypher from Mr Eichel&rdquo;, Prussia</span><span class="st found">nulls only</span></p>
+    <h3>An unsolved cipher that is nothing but padding</h3>
+    <p>This sheet of figures sits in the Prussian papers at Kew. The key the catalogue proposed does not fit it. The key filed in the same
+    volume does, and it begins by declaring every number that contains a 7, plus four whole ranges, to be a null. On that rule 117 of the 139
+    groups are nulls, and 21 of the remaining 22 land on cells the key leaves blank. It is a dummy sheet, and there was never a message on it.</p>
+    <blockquote class="hl-q" lang="fr"><span class="lang">the key&rsquo;s first rule</span>
+      <p class="dec">Tous les nro o&ugrave; je trouve un ou plusieurs 7 sont les nonvaleurs</p>
+      <p class="tr" lang="en">Every number in which I find one or more 7s is a null.</p>
+    </blockquote>
+    <a class="hl-go" href="eichel1758.html">Eichel 1758</a>
+  </div>
+  <figure class="hl-fig" data-credit="The National Archives, Kew, via DECODE R595"><img src="eichel1758_lead.jpg" alt="A sheet of four-digit numbers" loading="lazy"><figcaption>The Eichel sheet: 139 groups, 117 of them declared nulls. <span class="credit">Image: The National Archives, Kew, via DECODE R595.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="sessa1524" data-cat="funny" data-year="1524" data-label="Off by exactly a century">
+  <div class="hl-n">07</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1524</span><span>Rome &rarr; Charles V</span><span class="st partial">read in part</span></p>
+    <h3>The oldest long cipher on the list, off by exactly a hundred years</h3>
+    <p>DECODE dated two letters from Rome to &ldquo;April 1424&rdquo;. That would have made them the longest ciphertext before 1450, and they
+    were picked as a flagship target on that basis. The letter gives its own date on f. 128v: <em>De Roma xviij de Abril 1524</em>. The
+    catalogue&rsquo;s &ldquo;Luis Fern&aacute;ndez&rdquo; is the Duke of Sessa, Charles V&rsquo;s ambassador. Eight sibling letters carry the
+    court&rsquo;s own decipherments, and they supplied the alphabet and about 110 code groups.</p>
+    <blockquote class="hl-q" lang="es"><span class="lang">Spanish</span>
+      <p class="dec">De Roma xviij de Abril 1524</p>
+      <p class="tr" lang="en">From Rome, 18 April 1524, and not 1424.</p>
+    </blockquote>
+    <a class="hl-go" href="sessa1524.html">Sessa 1524</a>
+  </div>
+  <div class="hl-glyph" aria-hidden="true">1424<br>&darr;<br>1524</div>
+</article>
+
+<article class="hl" id="conley1652" data-cat="funny" data-year="1652" data-label="How Cowley became Mr Conley">
+  <div class="hl-n">08</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1652&ndash;53</span><span>Paris &rarr; Holland</span><span class="st stuck">too short, no key</span></p>
+    <h3>How the poet Abraham Cowley became a correspondent called &ldquo;Mr. Conley&rdquo;</h3>
+    <p>The docket on these royalist letters reads <em>mr Cowleys Hand</em>. DECODE read it as &ldquo;Conleys&rdquo; and made that name the
+    author. The letters are in clear English. The only cipher in them is 23 numbers in five short runs, too few to break, so the most tantalising
+    phrase stays shut.</p>
+    <blockquote class="hl-q"><span class="lang">English, with its code</span>
+      <p class="dec">the person that came lately from 248:88:46:47:96:52:7:57</p>
+    </blockquote>
+    <a class="hl-go" href="conley1652.html">Cowley&rsquo;s hand 1652&ndash;53</a>
+  </div>
+  <figure class="hl-fig" data-credit="British Library, Harley MS 7003 f. 314r, via DECODE R7768"><img src="conley1652_lead.jpg" alt="A royalist letter in English with a short run of numbers" loading="lazy"><figcaption>Harley MS 7003 f. 314r. <span class="credit">Image: British Library, Harley MS 7003 f. 314r, via DECODE R7768.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="legation" data-cat="funny" data-year="1812" data-label="John Quincy Adams, impassioned">
+  <div class="hl-n">09</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1812</span><span>St Petersburg &rarr; Washington</span><span class="st partial">solved in part</span></p>
+    <h3>John Quincy Adams fumbles his own code: &ldquo;impassioned&rdquo; for &ldquo;impaired&rdquo;</h3>
+    <p>Despatch No. 88 of June 1812 reports that the Russian Chancellor Rumyantsev had suffered a stroke. Worthington Ford printed nine of its
+    lines in 1914 as &ldquo;not decyphered&rdquo;. Adams&rsquo;s code, which turns out not to be the one historians assumed, was rebuilt here from
+    the clerk&rsquo;s decodes, and the nine lines now read. The exception is four groups whose values are all certain. They spell
+    <em>im-pas-sion-ed</em> where the sense wants &ldquo;impaired&rdquo;, most likely Adams&rsquo;s own slip at the codebook.</p>
+    <blockquote class="hl-q"><span class="lang">English, syllable by syllable</span>
+      <p class="dec">if his ac-tive in-flu-ence had not been im-pas-ion-ed before it, it can scarcely fa-il to have been af-fect-ed</p>
+    </blockquote>
+    <a class="hl-go" href="legation.html">Erving &amp; Adams</a>
+  </div>
+  <figure class="hl-fig" data-credit="National Archives and Records Administration, RG 59, M35 reel 3, frame 0206"><img src="legation_no88.jpg" alt="Despatch No. 88 in code numbers" loading="lazy"><figcaption>No. 88, 25 June 1812, in figures. <span class="credit">Image: National Archives and Records Administration, RG 59, M35 reel 3, frame 0206.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="soglia1848" data-cat="funny" data-year="1848" data-label="The Pope's order, a day late">
+  <div class="hl-n">10</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1848</span><span>Rome &rarr; Innsbruck</span><span class="st solved">solved</span></p>
+    <h3>The Pope&rsquo;s secret counter-order: intercepted, published with a prize, and a day late anyway</h3>
+    <p>On 15 June 1848 Cardinal Soglia sent 955 digits to the nuncio at Innsbruck, where the Emperor had fled. Mazzini&rsquo;s <em>L&rsquo;Italia
+    del Popolo</em> intercepted the despatch, printed it, and offered &ldquo;a prize of some size for the best interpreter of these figures&rdquo;.
+    Nobody claimed it, and in 2014 it was posted on Cipherbrain as unsolved. The code turned out to be alphabetical: <em>Imperatore</em> 8319
+    comes before <em>istruzione</em> 8340, which comes before <em>Monsignor</em> 8374. The order tells the nuncio to stay with the Emperor
+    wherever he goes. According to the <em>Dizionario Biografico</em>, he had left Innsbruck on 14 June, the day before it was sent.</p>
+    <blockquote class="hl-q"><span class="lang">the reading, in English</span>
+      <p class="dec">&hellip;of the Holy Father that you remain at Innsbruck with the Emperor and wherever he may go</p>
+    </blockquote>
+    <a class="hl-go" href="soglia1848.html">Soglia 1848</a>
+  </div>
+  <figure class="hl-fig" data-credit="Tony Gaffney, via Klaus Schmeh, Cipherbrain"><img src="soglia1848_block_head.jpg" alt="The head of the printed block of digits" loading="lazy"><figcaption>The printed block of 955 digits. <span class="credit">Image: Tony Gaffney, via Klaus Schmeh, Cipherbrain.</span></figcaption></figure>
+</article>
+</section>
+
+<!-- ============================================================ HISTORIC -->
+<section class="hl-sec hist" data-sec="hist">
+<h2 id="historic"><span class="num">02</span> <span class="dotc" aria-hidden="true"></span>Ten that matter to history</h2>
+<p class="hl-lede">Sieges, assassinations, a bought crown and a king&rsquo;s change of plan, several of them read here for the first time.</p>
+
+<article class="hl" id="florence1429" data-cat="hist" data-year="1425" data-label="The oldest cipher read here">
+  <div class="hl-n">01</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1425</span><span>Urbino &rarr; Florence</span><span class="st solved">read</span></p>
+    <h3>1425: the oldest cipher read on this site</h3>
+    <p>Early in 1425, Galeotto da Ricasoli wrote from Urbino to Florence&rsquo;s war magistracy. Gabbrielli glossed a few words in 1863, and
+    Meister printed a key in 1902, but the letter itself was never printed and its three long cipher runs were never read. They have now been
+    decoded sign by sign. <em>Madonna</em> is the Countess of Urbino, Caterina Colonna, niece of Pope Martin V.</p>
+    <blockquote class="hl-q" lang="it"><span class="lang">Italian</span>
+      <p class="dec">perch&eacute; dice che Madonna &egrave; pure femina e sospetosa</p>
+      <p class="tr" lang="en">because he says that Madonna is, after all, a woman, and suspicious</p>
+    </blockquote>
+    <a class="hl-go" href="florence1429.html">Ricasoli 1425</a>
+  </div>
+  <figure class="hl-fig" data-credit="Archivio di Stato di Firenze, via DECODE R3754"><img src="florence1429_lead.jpg" alt="The 1425 letter with its cipher runs" loading="lazy"><figcaption>Ricasoli to the Dieci, 1425. <span class="credit">Image: Archivio di Stato di Firenze, via DECODE R3754.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="sadoleto1482" data-cat="hist" data-year="1482" data-label="Venice tries to buy a king">
+  <div class="hl-n">02</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1482</span><span>Pozsony &rarr; Ferrara</span><span class="st partial">solved in part</span></p>
+    <h3>Venice tries to buy the King of Hungary</h3>
+    <p>In July 1482, in the first weeks of the War of Ferrara, the Este envoy at Matthias Corvinus&rsquo;s court reported in cipher what Venice
+    was offering the king: the island of Veglia, a command at sea for his natural son, and 100,000 ducats a year. The alphabet was rebuilt from
+    sibling letters that survive with clear copies. This letter has no clear copy and had never been printed.</p>
+    <blockquote class="hl-q" lang="it"><span class="lang">Italian</span>
+      <p class="dec">et voleva dargli Vegla, et voleva lo figlio (e bastardo) per loco capitaneo &hellip; per mare</p>
+      <p class="tr" lang="en">and they wanted to give him Veglia, and wanted his son (a bastard) as their captain &hellip; at sea</p>
+    </blockquote>
+    <a class="hl-go" href="sadoleto1482.html">Sadoleto 1482</a>
+  </div>
+  <figure class="hl-fig" data-credit="Archivio di Stato di Modena, via DECODE R1102"><img src="sadoleto1482_lead.jpg" alt="Sadoleto's cipher letter" loading="lazy"><figcaption>Sadoleto to Ercole d&rsquo;Este. <span class="credit">Image: Archivio di Stato di Modena, via DECODE R1102.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="toledo1565" data-cat="hist" data-year="1565" data-label="The relief of Malta">
+  <div class="hl-n">03</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1565</span><span>Messina &rarr; Philip II</span><span class="st solved">solved</span></p>
+    <h3>The relief of Malta, reported in figures during the Great Siege</h3>
+    <p>García de Toledo, viceroy of Sicily, wrote to Philip II on 16 July 1565 with every sensitive word in two-digit figures. No decipherment
+    survives anywhere. Two cribs gave eleven letters, and then the figures 12&ndash;43 turned out to run through the alphabet in order, so all
+    1,930 groups could be read. The letter tells how the small relief force got into the Borgo, and how La Valette&rsquo;s fire signals turned
+    back a second run of galleys. It also reports that Sicily could no longer pay for the war.</p>
+    <blockquote class="hl-q" lang="es"><span class="lang">Spanish</span>
+      <p class="dec">el maestre les hizo las sennales del fuego clarissimas para que no entrassen</p>
+      <p class="tr" lang="en">the Grand Master made them the fire signals, very clear, so that they would not come in</p>
+    </blockquote>
+    <a class="hl-go" href="toledo1565.html">Toledo 1565</a>
+  </div>
+  <figure class="hl-fig" data-credit="Archivo General de Simancas, Estado leg. 1394 no. 247 f. 1r, via PARES"><img src="toledo1565_f1r_lead.jpg" alt="Clear Spanish with words replaced by two-digit figures" loading="lazy"><figcaption>Estado leg. 1394 no. 247, f. 1r. <span class="credit">Image: Archivo General de Simancas, Estado leg. 1394 no. 247 f. 1r, via PARES.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="lanssac" data-cat="hist" data-year="1573" data-label="How France bought Poland">
+  <div class="hl-n">04</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1573</span><span>Warsaw &rarr; Paris</span><span class="st solved">solved</span></p>
+    <h3>How France bought the crown of Poland</h3>
+    <p>These are the French envoys&rsquo; letters to Charles IX during the election that made Henri of Anjou King of Poland. The key came from a
+    sibling letter whose only decipherment was a set of margin notes half cut away by the binder, one of them <em>car je n&rsquo;ay pas cinquante
+    escuz</em>. It then opened three election letters. In them, the Poles can be won by money &ldquo;as are the Germans, their neighbours&rdquo;.
+    On 9 May the election is carried against the Emperor, Spain, Muscovy and Sweden.</p>
+    <blockquote class="hl-q" lang="fr"><span class="lang">French</span>
+      <p class="dec">d&rsquo;Espaigne, du Moscovite et du Roy de Su&egrave;de, qui tous estoient bandez contre vostre Majest&eacute;</p>
+      <p class="tr" lang="en">of Spain, of the Muscovite and of the King of Sweden, who were all banded against Your Majesty</p>
+    </blockquote>
+    <a class="hl-go" href="lanssac.html">Lanssac 1573</a>
+  </div>
+  <figure class="hl-fig" data-credit="Biblioth&egrave;que nationale de France, fr. 4735 f. 124, via Gallica btv1b9060724s canvas 242"><img src="lanssac_f124.jpg" alt="A cipher letter of 1573 in invented signs" loading="lazy"><figcaption>BnF fr. 4735 f. 124. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 4735 f. 124, via Gallica btv1b9060724s canvas 242.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="morosini1588" data-cat="hist" data-year="1588" data-label="The murder of the Duke of Guise">
+  <div class="hl-n">05</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1588&ndash;89</span><span>Blois &rarr; Rome</span><span class="st solved">read</span></p>
+    <h3>The papal legate reports the murder of the Duke of Guise</h3>
+    <p>Cardinal Morosini, legate in France, sent 36 cipher enclosures to Rome, all of them written as one unbroken stream of digits. They were cut
+    apart with an Italian language model and Meister&rsquo;s key of 1906, and 34 now read end to end. They cover the Estates of Blois, Saluzzo and
+    Henri III&rsquo;s march on Paris, and they report the killing of the Guises in the King&rsquo;s own chamber.</p>
+    <blockquote class="hl-q" lang="it"><span class="lang">Italian</span>
+      <p class="dec">il Duca di Guisa nela camera di S. M.t&agrave; &egrave; stato per ordine di S. M.t&agrave; amazato a colpi di pugnale</p>
+      <p class="tr" lang="en">the Duke of Guise has been killed with dagger blows, in His Majesty&rsquo;s chamber, by His Majesty&rsquo;s order</p>
+    </blockquote>
+    <a class="hl-go" href="morosini1588.html">Morosini 1588</a>
+  </div>
+  <figure class="hl-fig" data-credit="Archivio Apostolico Vaticano, Francia 22 f. 308r, via DECODE R43"><img src="morosini1588_lead.jpg" alt="A page of continuous digits" loading="lazy"><figcaption>Francia 22 f. 308r: one run-on stream of digits. <span class="credit">Image: Archivio Apostolico Vaticano, Francia 22 f. 308r, via DECODE R43.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="gonzaga1590" data-cat="hist" data-year="1590" data-label="The Pope was poisoned">
+  <div class="hl-n">06</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1590</span><span>Mantua &rarr; the duc de Nevers</span><span class="st solved">read</span></p>
+    <h3>&ldquo;The Pope&rsquo;s death was procured with poison by the Spaniards&rdquo;</h3>
+    <p>Vincenzo Gonzaga, Duke of Mantua, wrote to the duc de Nevers on 17 September 1590, three weeks after the death of Sixtus V. The key
+    filed among Nevers&rsquo;s own papers reads 95% of the cipher unchanged. Mantua passes on the rumour that the Spaniards poisoned the Pope,
+    and welcomes Henri IV&rsquo;s expected conversion.</p>
+    <blockquote class="hl-q" lang="it"><span class="lang">Italian</span>
+      <p class="dec">che la morte del Papa sia stata procurata con veleno da Spagnoli</p>
+      <p class="tr" lang="en">that the Pope&rsquo;s death was procured with poison by the Spaniards</p>
+    </blockquote>
+    <a class="hl-go" href="gonzaga1590.html">Mantua to Nevers 1590</a>
+  </div>
+  <figure class="hl-fig" data-credit="Biblioth&egrave;que nationale de France, fr. 3979 f. 92r, via DECODE R4176"><img src="gonzaga1590_lead.jpg" alt="Gonzaga's letter with cipher" loading="lazy"><figcaption>BnF fr. 3979 f. 92r. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3979 f. 92r, via DECODE R4176.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="norfolk1570" data-cat="hist" data-year="1570" data-label="Mary Queen of Scots to Norfolk">
+  <div class="hl-n">07</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1570</span><span>Tutbury &rarr; the Tower</span><span class="st solved">read</span></p>
+    <h3>Mary Queen of Scots writes to Norfolk in the Tower</h3>
+    <p>Mary wrote this letter weeks after the murder of the Regent Moray, and it is the only one in the series with no contemporary
+    decipherment. Tomokiyo rebuilt the key but published only a partial overlay, and here the letter is read in full, all 23 lines. Mary
+    reports that Elizabeth blames her for Moray&rsquo;s death. Norfolk is to write only through the Bishop of Ross or Lady Scrope, and never
+    in his own hand.</p>
+    <blockquote class="hl-q"><span class="lang">English, as she spelled it</span>
+      <p class="dec">I am asured that sche &hellip; sueves me the veyt of Murray death; but God knoueth</p>
+      <p class="tr">I am assured that she lays on me the blame [Scots <em>wyte</em>] for Moray&rsquo;s death; but God knows</p>
+    </blockquote>
+    <a class="hl-go" href="norfolk1570.html">Mary to Norfolk</a>
+  </div>
+  <figure class="hl-fig" data-credit="British Library, Cotton MS Caligula C II f. 74r, via the BL IIIF service"><img src="norfolk1570_f74r_lines.jpg" alt="Mary's cipher letter, lines of invented signs" loading="lazy"><figcaption>Cotton MS Caligula C II f. 74r. <span class="credit">Image: British Library, Cotton MS Caligula C II f. 74r, via the BL IIIF service.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="hesse1603" data-cat="hist" data-year="1603" data-label="Henri IV's German letters">
+  <div class="hl-n">08</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1602&ndash;09</span><span>Paris &rarr; Kassel</span><span class="st solved">read</span></p>
+    <h3>Henri IV&rsquo;s secret letters to a German prince: printed, keyed, and never put together</h3>
+    <p>Rommel printed the ciphered passages of Henri IV&rsquo;s letters to Landgrave Maurice of Hesse-Kassel in figures in 1840. Six years
+    later he printed the key, and nobody ever applied one to the other. Doing so reads all seven passages, about 4,100 groups. They cover
+    Bouillon and the German princes, the Gunpowder Plot, two million livres for the Dutch, and a call in 1606 to resist a Spanish King of the
+    Romans. This reading was contributed by Arya Sanketbhai Patel.</p>
+    <blockquote class="hl-q" lang="fr"><span class="lang">French</span>
+      <p class="dec">pour la conservation de la libert&eacute; germanique</p>
+      <p class="tr" lang="en">for the preservation of German liberty</p>
+    </blockquote>
+    <a class="hl-go" href="hesse1603.html">Hesse</a>
+  </div>
+  <figure class="hl-fig" data-credit="Rommel (ed.), Correspondance in&eacute;dite de Henri IV avec Maurice-le-Savant (1840), p. 310, via the Internet Archive"><img src="hesse1603_p310.jpg" alt="A printed page of cipher figures" loading="lazy"><figcaption>Rommel 1840, p. 310: printed in figures, unread. <span class="credit">Image: Rommel (ed.), Correspondance in&eacute;dite de Henri IV avec Maurice-le-Savant (1840), p. 310, via the Internet Archive.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="catinat1691" data-cat="hist" data-year="1691" data-label="Louis XIV gives up Piedmont">
+  <div class="hl-n">09</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1691</span><span>Versailles &rarr; Piedmont</span><span class="st solved">read</span></p>
+    <h3>Louis XIV decides to give up Piedmont, in five despatches read for the first time</h3>
+    <p>The 1819 editor of Catinat&rsquo;s memoirs printed seven despatches in figures and could not read them. Bazeries rebuilt the code in
+    1893 while hunting the Man in the Iron Mask, printed two, and stopped. His table reads all seven, 12,362 groups. They include the
+    King&rsquo;s twenty-page letter of 14 September: bring the army back over the Alps, hold Carmagnole as long as possible to cover the talks
+    with the Pope, then strip it and burn it.</p>
+    <blockquote class="hl-q" lang="fr"><span class="lang">French</span>
+      <p class="dec">je me suis d&eacute;termin&eacute; &agrave; pr&eacute;f&eacute;rer le parti solide &agrave; l&rsquo;honorable</p>
+      <p class="tr" lang="en">I have resolved to prefer the solid course to the honourable one</p>
+    </blockquote>
+    <a class="hl-go" href="catinat1691.html">Catinat 1691</a>
+  </div>
+  <figure class="hl-fig" data-credit="M&eacute;moires de Catinat, t. II (1819), p. 320, Bayerische Staatsbibliothek, via the MDZ"><img src="catinat1691_p320.jpg" alt="A printed page of code figures from Catinat's memoirs" loading="lazy"><figcaption><em>M&eacute;moires de Catinat</em> (1819), p. 320. <span class="credit">Image: M&eacute;moires de Catinat, t. II (1819), p. 320, Bayerische Staatsbibliothek, via the MDZ.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="acciaiuoli1757" data-cat="hist" data-year="1758" data-label="The attempt on the King of Portugal">
+  <div class="hl-n">10</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1758&ndash;60</span><span>Lisbon &rarr; Rome</span><span class="st solved">read</span></p>
+    <h3>The nuncio&rsquo;s secret account of the attempt on the King of Portugal</h3>
+    <p>On the night of 3 September 1758, José I of Portugal was shot at in his carriage. The first of eight ciphers from the Lisbon nuncio
+    Acciaiuoli is his secret account of it. They were read with George Lasry&rsquo;s 2020 key, together with 25 code groups fixed from three
+    leaves deciphered at the time.</p>
+    <blockquote class="hl-q" lang="it"><span class="lang">Italian</span>
+      <p class="dec">il Teixeira ferito a morte &hellip; il Re molto ferito del braccio destro</p>
+      <p class="tr" lang="en">Teixeira mortally wounded &hellip; the King badly wounded in the right arm</p>
+    </blockquote>
+    <a class="hl-go" href="acciaiuoli1757.html">Acciaiuoli 1758</a>
+  </div>
+  <figure class="hl-fig" data-credit="Archivio Apostolico Vaticano, Portogallo 117/6 f. 106r, via DECODE R199"><img src="acciaiuoli1757_lead.jpg" alt="The nuncio's cipher despatch" loading="lazy"><figcaption>Portogallo 117/6 f. 106r. <span class="credit">Image: Archivio Apostolico Vaticano, Portogallo 117/6 f. 106r, via DECODE R199.</span></figcaption></figure>
+</article>
+</section>
+
+<!-- ============================================================ INGENIOUS -->
+<section class="hl-sec ing" data-sec="ing">
+<h2 id="ingenious"><span class="num">03</span> <span class="dotc" aria-hidden="true"></span>Ten that are simply ingenious</h2>
+<p class="hl-lede">Invisible ink, decoy words, a monk&rsquo;s vowel shift, and the detective work that turns a mislabelled record into a story.</p>
+
+<article class="hl" id="vanreede1792" data-cat="ing" data-year="1792" data-label="The lemon-juice letter">
+  <div class="hl-n">01</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1792</span><span>Berlin &rarr; The Hague</span><span class="st solved">read</span></p>
+    <h3>A cipher whose only job is to say that the real letter is in lemon juice</h3>
+    <p>The Dutch envoy van Reede wrote from Berlin on 4 February 1792. Read in full with the 1782 <em>Grand Chiffre</em>, the letter is a cover
+    note. The four blank half-pages of its enclosure carry writing in lemon juice, the Prince of Orange is to be told, and &ldquo;the following
+    figures are nulls&rdquo;. Those 21 nulls decode to a planted jumble of <em>Conseil d&rsquo;Etat</em>, <em>la Russie</em> and
+    <em>Archiduc</em>, which is bait for anyone who opens the letter.</p>
+    <blockquote class="hl-q" lang="fr"><span class="lang">French</span>
+      <p class="dec">il y a du citron sur les quatre demi-pages blanches de l&rsquo;incluse</p>
+      <p class="tr" lang="en">there is lemon juice on the four blank half-pages of the enclosure</p>
+    </blockquote>
+    <a class="hl-go" href="vanreede1792.html">Van Reede 1792</a>
+  </div>
+  <figure class="hl-fig" data-credit="Koninklijk Huisarchief, The Hague, Prins Willem V inv. 205, via DECODE R1057 (rotated here)"><img src="vanreede1792_lead.jpg" alt="Van Reede's one-page cipher letter" loading="lazy"><figcaption>KHA, Prins Willem V inv. 205. <span class="credit">Image: Koninklijk Huisarchief, The Hague, Prins Willem V inv. 205, via DECODE R1057 (rotated here).</span></figcaption></figure>
+</article>
+
+<article class="hl" id="goldbar" data-cat="ing" data-year="1933" data-label="Ten of every letter">
+  <div class="hl-n">02</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1933</span><span>Shanghai</span><span class="st found">no message</span></p>
+    <h3>$300,000,000 in gold bars, and almost exactly ten of every letter</h3>
+    <p>Seven gold bars, said to have been issued in Shanghai in 1933 to certify a deposit of over $300,000,000, carry sixteen strings of Latin
+    letters. For ninety years nobody read them. Their letter counts are the problem: against a flat distribution they give a chi-squared of 1.25,
+    where honest random sampling gives about 25. No cipher can produce that. Substitution and transposition keep the skew of the plaintext, and
+    a one-time pad lands near 25. Someone counted out the letters and arranged them to look like cryptography.</p>
+    <blockquote class="hl-q"><span class="lang">the test</span>
+      <p class="dec">&chi;&sup2; = 1.25 on 25 degrees of freedom, where chance predicts 25</p>
+    </blockquote>
+    <a class="hl-go" href="goldbar.html">Gold bars</a>
+  </div>
+  <figure class="hl-fig" data-credit="Kevin McCurley, &ldquo;Cryptograms on Gold bars from China&rdquo;, IACR (1996), iacr.org/misc/china"><img src="goldbar_bar.jpg" alt="A gold bar stamped with letters" loading="lazy"><figcaption>One of the bars. <span class="credit">Image: Kevin McCurley, &ldquo;Cryptograms on Gold bars from China&rdquo;, IACR (1996), iacr.org/misc/china.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="harley286" data-cat="ing" data-year="1635" data-label="A father's cipher log">
+  <div class="hl-n">03</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1635&ndash;36</span><span>Suffolk, a private record</span><span class="st solved">solved</span></p>
+    <h3>A father&rsquo;s secret log of his baby son&rsquo;s fits</h3>
+    <p>DECODE has this as a letter of 1635, &ldquo;unknown sender to unknown recipient&rdquo;. It is Sir Simonds D&rsquo;Ewes, the antiquary,
+    writing Latin in a private alphabet he invented at school. The page is a log, one line per convulsion, of his infant son Clopton from
+    3 April 1635, with the day, the hour and the phase of the moon. The alphabet was rebuilt from the cribs <em>convulsio</em> and <em>plena
+    luna</em>, and 96.5% of the words read. The weekdays and moons all check against the calendar. Clopton died on 9 May 1636.</p>
+    <blockquote class="hl-q" lang="la"><span class="lang">Latin</span>
+      <p class="dec">in quorum tertia os ipsius pene ad aurem dextram convulsum, quod ante numquam observavi</p>
+      <p class="tr" lang="en">in the third of which his mouth was drawn almost to his right ear, which I had never seen before</p>
+    </blockquote>
+    <a class="hl-go" href="harley286.html">D&rsquo;Ewes&rsquo;s cipher log 1635</a>
+  </div>
+  <figure class="hl-fig" data-credit="British Library, Harley MS 286 f. 61, via DECODE R7759"><img src="harley286_lead.jpg" alt="A slip of private cipher with dated margins" loading="lazy"><figcaption>Harley MS 286 f. 61. <span class="credit">Image: British Library, Harley MS 286 f. 61, via DECODE R7759.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="malvezzi1548" data-cat="ing" data-year="1548" data-label="Nulls that are Latin words">
+  <div class="hl-n">04</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1548</span><span>Augsburg &rarr; Constantinople</span><span class="st partial">read in part</span></p>
+    <h3>Decoy words: nulls that look like Latin</h3>
+    <p>Ferdinand I wrote to Malvezzi, his resident at the Ottoman Porte, in a cipher of graphic signs padded with whole words that look like
+    part of the Latin: <em>etiam</em>, <em>idcirco</em>, <em>atque</em>, <em>Porro</em>. The key was already on DECODE, filed as a separate
+    record at the same shelfmark. The letter shows the French trying to wreck the Habsburg&ndash;Ottoman peace, and Malvezzi&rsquo;s pay:
+    4,300 ducats at once.</p>
+    <blockquote class="hl-q"><span class="lang">the decoys</span>
+      <p class="dec">etiam &middot; idcirco &middot; atque &middot; cum &middot; Porro</p>
+    </blockquote>
+    <a class="hl-go" href="malvezzi1548.html">Ferdinand I to Malvezzi 1548</a>
+  </div>
+  <figure class="hl-fig" data-credit="Hadt&ouml;rt&eacute;nelmi Lev&eacute;lt&aacute;r, Budapest, 1548/3, p. 4, via DECODE R366"><img src="malvezzi1548_p4_back_to_clear.jpg" alt="Cipher signs giving way to clear Latin" loading="lazy"><figcaption>p. 4: the cipher hands back to clear Latin. <span class="credit">Image: Hadt&ouml;rt&eacute;nelmi Lev&eacute;lt&aacute;r, Budapest, 1548/3, p. 4, via DECODE R366.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="r4349" data-cat="ing" data-year="1517" data-label="A monk's vowel shift">
+  <div class="hl-n">05</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1517</span><span>Str&auml;ngn&auml;s</span><span class="st partial">colophon read</span></p>
+    <h3>A monk signs his chant book in code</h3>
+    <p>The scribe who copied this Dominican sequentiary in 1517 dated it in a colophon where every vowel is written as the letter after it: a
+    becomes b, e becomes f, i becomes k, o becomes p and u becomes x. The Uppsala catalogue printed the reading in 1992. Watch the quotation
+    below: it starts as the scribe wrote it.</p>
+    <blockquote class="hl-q" lang="la"><span class="lang">Latin, vowels shifted</span>
+      <p class="dec" data-rule="vowel">presens liber sequencionarius est scriptus in conuentu strengenensi</p>
+      <p class="tr" lang="en">this sequentiary was written in the convent at Str&auml;ngn&auml;s</p>
+    </blockquote>
+    <a class="hl-go" href="r4349.html">Str&auml;ngn&auml;s sequentiary 1517</a>
+  </div>
+  <figure class="hl-fig" data-credit="Uppsala University Library, C 513 f. 19v, via Alvin (public domain)"><img src="r4349_lead.jpg" alt="Chant staves with a ciphered colophon beneath" loading="lazy"><figcaption>C 513 f. 19v: the colophon under four staves. <span class="credit">Image: Uppsala University Library, C 513 f. 19v, via Alvin (public domain).</span></figcaption></figure>
+</article>
+
+<article class="hl" id="andreae1616" data-cat="ing" data-year="1616" data-label="A novel whose hero reads the cipher">
+  <div class="hl-n">06</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1616</span><span>Strassburg, a printed book</span><span class="st found">already read</span></p>
+    <h3>The &ldquo;undeciphered letter&rdquo; is a novel, and one of its characters reads the cipher aloud</h3>
+    <p>DECODE R4502 is a copy of the <em>Chymische Hochzeit Christiani Rosencreutz</em> (Strassburg, 1616). Its four &ldquo;cipher pages&rdquo;
+    are inscriptions in the story, cut in an invented alphabet. A paragraph later the page boy reads both long ones aloud. The two lines of
+    signs are the dates 1378 and 1459, which Foxcroft&rsquo;s English edition of 1690 already gives.</p>
+    <blockquote class="hl-q" lang="de"><span class="lang">German</span>
+      <p class="dec">HIE LIGT BEGRABEN VENUS DIE SCHONE FRAW SO MANCHEN HOHEN MANN UMB GLUCK EHR SEGEN UND WOLFART GEBRACHT HATT</p>
+      <p class="tr" lang="en">Here lies buried Venus, the fair lady who has cost many a great man his fortune, honour, blessing and welfare</p>
+    </blockquote>
+    <a class="hl-go" href="andreae1616.html">Chymische Hochzeit inscriptions</a>
+  </div>
+  <figure class="hl-fig" data-credit="Embassy of the Free Mind (Ritman Library), Amsterdam, Chymische Hochzeit (Strassburg 1616), p. 97, via DECODE R4502"><img src="andreae1616_lead.jpg" alt="A printed page with a line of invented letters" loading="lazy"><figcaption><em>Chymische Hochzeit</em> (1616), p. 97. <span class="credit">Image: Embassy of the Free Mind (Ritman Library), Amsterdam, Chymische Hochzeit (Strassburg 1616), p. 97, via DECODE R4502.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="r688" data-cat="ing" data-year="1664" data-label="A Serbian prisoner among the ciphers">
+  <div class="hl-n">07</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1664&ndash;68</span><span>a Habsburg prison &rarr; his kin</span><span class="st found">not a cipher</span></p>
+    <h3>A prisoner&rsquo;s plea, filed among the state ciphers because nobody could read it</h3>
+    <p>This letter was bound into the Vienna papers of the Hungarian magnates&rsquo; conspiracy, in a file headed <em>Chiffres 1664&ndash;1668</em>.
+    DECODE lists it as a simple substitution in graphic signs. The signs are Cyrillic letters and the language is Serbian. It was written by
+    Stojan, in prison, who greets his Vlachs by name, asks for money to be brought, and sends greetings to his wife. The clerks who filed it,
+    it seems, could not read it.</p>
+    <blockquote class="hl-q"><span class="lang">from the Serbian</span>
+      <p class="dec">brothers, have mercy on me: you can get me out of the German prison, and your souls out of hell</p>
+    </blockquote>
+    <a class="hl-go" href="r688.html">Stojan&rsquo;s letter from prison</a>
+  </div>
+  <figure class="hl-fig" data-credit="&Ouml;sterreichisches Staatsarchiv, HHStA, Verschw&ouml;rerakten Fasc. 327 Konv. D f. 30r, via DECODE R688 (image 1)"><img src="r688_lead.jpg" alt="A letter in Cyrillic script" loading="lazy"><figcaption>HHStA, Verschw&ouml;rerakten Fasc. 327, f. 30r. <span class="credit">Image: &Ouml;sterreichisches Staatsarchiv, HHStA, Verschw&ouml;rerakten Fasc. 327 Konv. D f. 30r, via DECODE R688 (image 1).</span></figcaption></figure>
+</article>
+
+<article class="hl" id="buda1489" data-cat="ing" data-year="1489" data-label="A key printed as numbers">
+  <div class="hl-n">08</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1489&ndash;90</span><span>Buda &rarr; Milan</span><span class="st solved">read</span></p>
+    <h3>A key published only as numbers, turned back into signs</h3>
+    <p>In 2016 Judit W. Somogyi reconstructed the Milanese ambassador&rsquo;s key, but printed it only as numbers, without a picture of a single
+    sign. Her numbers run in order of first appearance in the letter of 2 April 1490, which survives with its clear copy. Matching that letter
+    to its copy gives back every sign&rsquo;s shape, and then the key works. It reads the despatch of 22 November 1489 on peace with Frederick
+    III, the John Corvinus marriage, and Queen Beatrice&rsquo;s &ldquo;insatiable wrath of Juno&rdquo;. The despatch also warns that intercepted
+    cipher letters had been read.</p>
+    <blockquote class="hl-q" lang="it"><span class="lang">Italian</span>
+      <p class="dec">Le littere in cifra che forono intercepte, le quale duplicate sono state scoperte ancora qua</p>
+      <p class="tr" lang="en">the cipher letters that were intercepted, whose duplicates have been uncovered here too</p>
+    </blockquote>
+    <a class="hl-go" href="buda1489.html">Buda 1489</a>
+  </div>
+  <figure class="hl-fig" data-credit="Archivio di Stato di Milano, Sforzesco 650, letter of 22 November 1489, via Vestigia"><img src="buda1489_lead.jpg" alt="Maffeo da Treviglio's cipher despatch" loading="lazy"><figcaption>Sforzesco 650, 22 November 1489. <span class="credit">Image: Archivio di Stato di Milano, Sforzesco 650, letter of 22 November 1489, via Vestigia.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="clair357" data-cat="ing" data-year="1586" data-label="Deciphered in 1586, on the next leaf">
+  <div class="hl-n">09</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1586</span><span>Angoumois &rarr; a League leader</span><span class="st found">decipherment found</span></p>
+    <h3>The &ldquo;unread&rdquo; part was deciphered in 1586</h3>
+    <p>Two thirds of this anonymous League letter of October 1586 were listed as unread. On the next leaf, f. 168, is a clear text of the cipher
+    down to a cross mark. After the cross, the decipherer had switched to writing the plaintext between the lines of cipher. The glosses confirm
+    Tomokiyo&rsquo;s key (87 = e). The letter says that Fum&eacute;, vice-admiral of Guyenne, keeps proposing a reconciliation between
+    Navarre and the League leader it is written to.</p>
+    <blockquote class="hl-q" lang="fr"><span class="lang">French</span>
+      <p class="dec">Fum&eacute;, visadmiral de Guienne, tres confident du Roy de Navarre, bien qu&rsquo;il soit catholique</p>
+      <p class="tr" lang="en">Fum&eacute;, vice-admiral of Guyenne, very much in the King of Navarre&rsquo;s confidence, although he is a Catholic</p>
+    </blockquote>
+    <a class="hl-go" href="clair357.html">Clairambault 357, 1586</a>
+  </div>
+  <figure class="hl-fig" data-credit="Biblioth&egrave;que nationale de France, Clairambault 357 f. 167r, via Gallica"><img src="clair357_f167r_glosses.jpg" alt="Cipher lines with plaintext written between them" loading="lazy"><figcaption>Clairambault 357 f. 167r, with interlinear glosses. <span class="credit">Image: Biblioth&egrave;que nationale de France, Clairambault 357 f. 167r, via Gallica.</span></figcaption></figure>
+</article>
+
+<article class="hl" id="r1944" data-cat="ing" data-year="1801" data-label="A despatch about stolen ciphers">
+  <div class="hl-n">10</div>
+  <div>
+    <p class="hl-meta"><span class="yr">1801</span><span>Berlin &rarr; The Hague</span><span class="st found">clear copy found</span></p>
+    <h3>A cipher despatch about stolen ciphers, whose own clear copy was misfiled</h3>
+    <p>The Batavian chargé in Berlin wrote in cipher on 31 January 1801, and DECODE lists the despatch as undeciphered. Its clear copy is the
+    third image of the next record. The subject is ciphers going astray. Rosenkrantz blames a servant who copied his cipher, and the envoy Lusi
+    says &ldquo;much more definitely&rdquo; that the desk his cipher was kept in had been forced.</p>
+    <blockquote class="hl-q" lang="nl"><span class="lang">Dutch</span>
+      <p class="dec">dat het bureau, waar in zyn Cyffer was, is geforceerd geworden</p>
+      <p class="tr" lang="en">that the desk in which his cipher was kept had been forced open</p>
+    </blockquote>
+    <a class="hl-go" href="r1944.html">Bourdeaux 1801</a>
+  </div>
+  <figure class="hl-fig" data-credit="Nationaal Archief, The Hague, 2.01.08 inv. 257 fol. 295, via DECODE R1946 (image 3)"><img src="r1944_lead.jpg" alt="The clear copy of the despatch" loading="lazy"><figcaption>The clear copy, misfiled under the next record. <span class="credit">Image: Nationaal Archief, The Hague, 2.01.08 inv. 257 fol. 295, via DECODE R1946 (image 3).</span></figcaption></figure>
+</article>
+</section>
+
+<h2 id="method"><span class="num">04</span> How these were chosen</h2>
+<p>The thirty come from the two hundred or so write-ups on this site and the notes behind them. They were chosen for the story, not the
+difficulty; <a href="writeups.html">the full list</a> sorts by outcome, and the hardest breaks are ranked in the repository&rsquo;s
+<a href="https://github.com/dbourdeau/cyphersolver/blob/main/SOLVED_RANKING.md" rel="noopener">solved ranking</a>. Each badge gives the
+status stated on the write-up: <em>solved</em> means the key was broken here, <em>read</em> that an existing key or decipherment was used,
+and <em>read in part</em> that some of the text is still open. Quotations keep the original spelling, and the translations follow the
+write-ups. Six of the thirty turned out not to be ciphers at all, or to hold no message: that is its own finding, and a common one.</p>
+<p>Every image is credited on its card to the archive or edition that holds it. Select an image to open it full size.</p>
+
+<h2 id="sources"><span class="num">05</span> Sources</h2>
+<ul>
+<li>The write-ups linked from each card, with their working notes in the <a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">repository</a>, one folder per target.</li>
+<li>The <a href="https://de-crypt.org/decrypt-web" rel="noopener">DECODE database</a> (Megyesi et al.), where most of the records live, and the published keys of George Lasry, Satoshi Tomokiyo, Judit W. Somogyi and Aloys Meister.</li>
+<li>The printed editions named on each write-up, among them Rommel 1840/1846, the <em>M&eacute;moires de Catinat</em> (1819) and Barwick&rsquo;s <em>Life</em> (1721/1724).</li>
+</ul>
+
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="scorpion.html" rel="prev">&larr; Scorpion 1991</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script>
+(()=>{
+  const cards=[...document.querySelectorAll('.hl')];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- the timeline: one dot per card, placed by year
+  const tl=document.getElementById('hl-time'), tip=document.getElementById('hl-tip');
+  const Y0=1400, Y1=1950, pos=y=>((y-Y0)/(Y1-Y0)*100);
+  [1400,1500,1600,1700,1800,1900].forEach(y=>{ const t=document.createElement('span'); t.className='tick'; t.style.left=pos(y)+'%'; t.textContent=y; tl.appendChild(t); });
+  const placed=[];
+  cards.forEach(c=>{
+    const y=+c.dataset.year, x=pos(y), d=document.createElement('button');
+    d.type='button'; d.className='hl-dot'; d.dataset.cat=c.dataset.cat; d.style.left=x+'%';
+    const near=placed.filter(p=>Math.abs(p-x)<1.6).length; if(near===1) d.classList.add('up'); else if(near>=2) d.classList.add('dn');
+    placed.push(x);
+    const yr=c.querySelector('.hl-meta .yr').textContent;
+    d.setAttribute('aria-label',yr+': '+c.dataset.label);
+    const show=()=>{ tip.innerHTML='<b>'+yr+'</b>'+c.dataset.label; tip.style.left=Math.min(88,Math.max(12,x))+'%'; tip.classList.add('on'); };
+    d.addEventListener('mouseenter',show); d.addEventListener('focus',show);
+    d.addEventListener('mouseleave',()=>tip.classList.remove('on')); d.addEventListener('blur',()=>tip.classList.remove('on'));
+    d.addEventListener('click',()=>go(c));
+    c._dot=d; tl.appendChild(d);
+  });
+
+  // ---- filters
+  const chips=[...document.querySelectorAll('.hl-chip[data-f]')], secs=[...document.querySelectorAll('.hl-sec')];
+  function filter(f){
+    chips.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.f===f)));
+    secs.forEach(s=>{ s.hidden = !(f==='all'||s.dataset.sec===f); });
+    cards.forEach(c=>c._dot.classList.toggle('dim', !(f==='all'||c.dataset.cat===f)));
+    try{ history.replaceState(null,'',f==='all'?location.pathname:'#only='+f); }catch(e){}
+  }
+  chips.forEach(b=>b.addEventListener('click',()=>filter(b.dataset.f)));
+  const m=location.hash.match(/^#only=(funny|hist|ing)$/); if(m) filter(m[1]);
+
+  function go(c){
+    const sec=c.closest('.hl-sec'); if(sec.hidden) filter('all');
+    c.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+    c.classList.remove('flash'); void c.offsetWidth; c.classList.add('flash');
+    const q=c.querySelector('.dec'); if(q) setTimeout(()=>decipher(q,true),reduce?0:350);
+  }
+  let last=-1;
+  document.getElementById('hl-lucky').addEventListener('click',()=>{
+    const pool=cards.filter(c=>!c.closest('.hl-sec').hidden); let i;
+    do{ i=Math.floor(Math.random()*pool.length); }while(pool.length>1 && i===last); last=i; go(pool[i]);
+  });
+
+  // ---- the decipher effect: each quotation starts as cipher and resolves into its plaintext
+  const SIGNS='⊢✕ſπϙ⊤ʓꞗ∇ΔΘΞΦΨ§¶†‡0123456789';
+  const vowel=s=>s.replace(/[aeiou]/g,v=>({a:'b',e:'f',i:'k',o:'p',u:'x'})[v]);
+  const quotes=[...document.querySelectorAll('.hl-q .dec')];
+  quotes.forEach(q=>{ q.dataset.plain=q.textContent; q.setAttribute('aria-label',q.dataset.plain); });
+  function scrambled(t,from){
+    let o=''; for(let i=0;i<t.length;i++){ const ch=t[i]; o+= i<from||/[\s.,;:…()\[\]'’&-]/.test(ch) ? ch : SIGNS[(Math.random()*SIGNS.length)|0]; } return o;
+  }
+  function decipher(q,again){
+    const t=q.dataset.plain; if(q._run) return; if(q._done && !again) return;
+    if(reduce){ q.textContent=t; q._done=true; return; }
+    q._run=true; q.classList.add('scr');
+    const shifted=q.dataset.rule==='vowel'?vowel(t):null;
+    const dur=Math.min(2200,700+t.length*14), t0=performance.now()+(shifted?700:0);
+    if(shifted) q.textContent=shifted;
+    const step=now=>{
+      const k=Math.max(0,Math.min(1,(now-t0)/dur)), n=Math.floor(k*t.length);
+      if(now>=t0) q.textContent = shifted ? t.slice(0,n)+shifted.slice(n) : scrambled(t,n);
+      if(k<1) requestAnimationFrame(step); else { q.textContent=t; q.classList.remove('scr'); q._run=false; q._done=true; }
+    };
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window && !reduce){
+    quotes.forEach(q=>{ q.textContent = q.dataset.rule==='vowel' ? vowel(q.dataset.plain) : scrambled(q.dataset.plain,0); q.classList.add('scr'); });
+    const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ decipher(e.target); io.unobserve(e.target); } }),{rootMargin:'0px 0px -15% 0px'});
+    quotes.forEach(q=>io.observe(q));
+  }
+
+  // ---- the hero strip decrypts itself once
+  const strip=document.getElementById('hl-strip');
+  if(strip && !reduce){
+    const final=strip.innerHTML, lines=['Thirty favourites','the funny · the historic · the ingenious','1425 → 1933'];
+    setTimeout(()=>{ let k=0; const tick=()=>{ k+=.04; strip.innerHTML=lines.map(l=>scrambled(l,Math.floor(Math.min(1,k)*l.length))).join('<br>'); if(k<1) setTimeout(tick,45); }; tick(); },900);
+    strip.addEventListener('click',()=>{ strip.innerHTML=final; });
+  }
+})();
+</script>
+<script src="zoom.js?v=20260922a" defer></script>
+<script src="site.js?v=20260922a"></script>
+</body>
+</html>

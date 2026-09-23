@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Unsolved Historical Ciphers — Working Notes, Solutions and Corrections</title>
 <meta name="description" content="An informal benchmark of a frontier AI (Claude Fable 5.1) on historical ciphers nobody has read, drawn from Tomokiyo's catalogue, Elonka Dunin's famous unsolved codes and Schmeh's Top 50: archival research plus purpose-built solvers run against controls, with new decipherments, corrections where a solution already existed in print, and a record of exactly where and why each attempt stops.">
-<link rel="stylesheet" href="style.css?v=20260921e">
+<link rel="stylesheet" href="style.css?v=20260922a">
 <meta name="date" content="2026-09-14">
 <meta name="last-modified" content="2026-09-22">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -18,13 +18,11 @@
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="mellon136.html"><span class="st solved">read; key in the book</span><b>Silentium Dei 1798</b><span class="yr">1798</span></a></li><li><a href="swieten1757.html"><span class="st solved">solved</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">solved</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">74</span><b>Solved or read</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">56</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">54</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">33</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">1</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 218 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
-    <a href="catalogue.html">The Unsolved Catalogue</a>
-    <a href="atlas.html">Atlas</a>
-    <a href="keys.html">Key web</a>
-    <a href="secret.html">Secret letter</a>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="mellon136.html"><span class="st solved">read; key in the book</span><b>Silentium Dei 1798</b><span class="yr">1798</span></a></li><li><a href="swieten1757.html"><span class="st solved">solved</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">solved</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">74</span><b>Solved or read</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">56</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">54</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">33</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 219 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a href="catalogue.html">Catalogue</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
-    <a class="ext" href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
   </nav>
 </div></header>
@@ -49,7 +47,7 @@
 <!-- live:start -->
 <div class="livecount"><button type="button" class="randbtn" aria-label="Open a random write-up">Random cipher &rarr;</button></div>
 <!-- live:end -->
-  <div class="jump"><a href="#scoreboard">The ledger</a><a href="#recent">Latest findings</a><a href="#writeups">Write-ups</a><a href="#catalogue">The Unsolved Catalogue</a><a href="voynich.html">Voynich</a><a href="secret.html">Write a secret letter</a></div>
+  <div class="jump"><a href="highlights.html">Thirty favourites</a><a href="#scoreboard">The ledger</a><a href="#recent">Latest findings</a><a href="#writeups">Write-ups</a><a href="#catalogue">The Unsolved Catalogue</a><a href="voynich.html">Voynich</a><a href="secret.html">Write a secret letter</a></div>
   <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-14">14 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time> &middot; <a href="mailto:dnbourdeau@gmail.com">dnbourdeau@gmail.com</a></p>
 </section>
 
@@ -877,6 +875,7 @@
   <li><a href="matthias1482.html"><span class="rth"><img class="sc" src="matthias1482_statuimus_lines.jpg" alt="" loading="lazy"><img class="pc" src="portrait_matthias-corvinus.jpg" alt="" loading="lazy"></span><span class="st found">read in 1877</span><span class="t">Matthias Corvinus to Ercole I d&rsquo;Este, Pozsony 1 June 1482 &mdash; DECODE R1156</span><time class="dt" datetime="2026-09-19" title="resolved 19 September 2026, updated 22 September 2026">resolved 19 Sept 2026</time><span class="yr">1482</span></a></li>
   <li><a href="heidelberg597.html"><span class="rth"><img class="sc" src="heidelberg597_lead.jpg" alt="" loading="lazy"></span><span class="st found">read in 1869</span><span class="t">Alchymey teuczsch, 1426 &mdash; the sign alphabets of an alchemists&rsquo; notebook (Cod. Pal. germ. 597)</span><time class="dt" datetime="2026-09-18" title="resolved 18 September 2026, updated 22 September 2026">resolved 18 Sept 2026</time><span class="yr">1426</span></a></li>
   <li><a href="reserva12.html"><span class="rth"><img class="sc" src="reserva12_block1.jpg" alt="" loading="lazy"><img class="pc" src="portrait_ferdinand-i-of-aragon.jpg" alt="" loading="lazy"></span><span class="st found">read in 1931</span><span class="t">A Catalan letter in transposition, Barcelona 2 May [1413&ndash;16] &mdash; ACA Reserva 12</span><time class="dt" datetime="2026-09-18" title="resolved 18 September 2026, updated 22 September 2026">resolved 18 Sept 2026</time><span class="yr">1413&ndash;16</span></a></li>
+  <li><a href="highlights.html"><span class=rth></span><span class="st partial">thirty favourites</span><span class="t">Thirty favourites from the archive</span><time class="dt" datetime="2026-09-22" title="read in part 22 September 2026, updated 22 September 2026">part read 22 Sept 2026</time><span class="yr">survey</span></a></li>
   <li><a href="castelcicala1816.html"><span class="rth"><img class="sc" src="castelcicala1816_lead.jpg" alt="" loading="lazy"><img class="pc" src="portrait_luigi-de-medici.jpg" alt="" loading="lazy"></span><span class="st partial">solved in part</span><span class="t">Castelcicala to the Marchese di Circello and to Medici, 1816&ndash;1823 &mdash; the code rebuilt from four glossed letters</span><time class="dt" datetime="2026-09-21" title="solved in part 21 September 2026, updated 21 September 2026">part read 21 Sept 2026</time><span class="yr">1816&ndash;1823</span></a></li>
   <li><a href="r1892.html"><span class="rth"><img class="sc" src="r1892_lead.jpg" alt="" loading="lazy"></span><span class="st partial">solved in part</span><span class="t">A son of William V on the &eacute;migr&eacute; rassemblement, c. 1795 &mdash; the &ldquo;non-decrypted&rdquo; R1892 is a 6&times;6 digit square</span><time class="dt" datetime="2026-09-21" title="solved in part 21 September 2026, updated 21 September 2026">part read 21 Sept 2026</time><span class="yr">c. 1795</span></a></li>
   <li><a href="r2242.html"><span class="rth"><img class="sc" src="r2242_lead.jpg" alt="" loading="lazy"><img class="pc" src="portrait_hereditary-prince-william.jpg" alt="" loading="lazy"></span><span class="st partial">read in part</span><span class="t">Prince Frederick of Orange to his brother, 7 May 1795 &mdash; the &ldquo;non-decrypted&rdquo; R2242 reads with the R1892 key</span><time class="dt" datetime="2026-09-21" title="read in part 21 September 2026, updated 21 September 2026">part read 21 Sept 2026</time><span class="yr">1795</span></a></li>
@@ -964,8 +963,8 @@
   <li><a href="maria1435.html"><span class="rth"><img class="sc" src="maria1435_f59r_letter.jpg" alt="" loading="lazy"><img class="pc" src="portrait_maria-of-castile.jpg" alt="" loading="lazy"></span><span class="st stuck">not read, keys tested</span><span class="t">Queen Mar&iacute;a to Alfonso V, Valencia 1435 &mdash; Attempted</span><time class="dt" datetime="2026-09-18" title="attempted 18 September 2026, updated 22 September 2026">attempted 18 Sept 2026</time><span class="yr">1435</span></a></li>
   <li><a href="famous.html"><span class=rth></span><span class="st partial">the famous ones</span><span class="t">Why the famous ciphers resist</span><time class="dt" datetime="2026-09-15" title="posted 15 September 2026, updated 17 September 2026">part read 15 Sept 2026</time><span class="yr">survey</span></a></li>
 </ul></div>
-<button class="showmore" type="button">Show 202 more write-ups</button>
-<p class="allws"><a href="writeups.html">All 218 write-ups, filterable by outcome and period, with the results that are still only in the notes &rarr;</a></p>
+<button class="showmore" type="button">Show 203 more write-ups</button>
+<p class="allws"><a href="writeups.html">All 219 write-ups, filterable by outcome and period, with the results that are still only in the notes &rarr;</a></p>
 <!-- cards:end -->
 
 <h2 id="catalogue"><span class="num">02</span> The Unsolved Catalogue</h2>
@@ -997,8 +996,8 @@ search away from "solved in 1858".</p>
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="zoom.js?v=20260921e" defer></script>
-<script src="site.js?v=20260921e"></script>
-<script src="home.js?v=20260921e" defer></script>
+<script src="zoom.js?v=20260922a" defer></script>
+<script src="site.js?v=20260922a"></script>
+<script src="home.js?v=20260922a" defer></script>
 </body>
 </html>

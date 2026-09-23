@@ -13,15 +13,17 @@
   const nav=document.querySelector('.nav'), tog=document.querySelector('.navtoggle');
   if(tog){ tog.addEventListener('click',()=>{ const open=nav.classList.toggle('open'); tog.setAttribute('aria-expanded',open); }); }
   // write-ups dropdown: close on outside click or Escape
-  const menu=document.querySelector('.nav details.menu');
-  if(menu){
-    document.addEventListener('click',e=>{ if(menu.open && !menu.contains(e.target)) menu.open=false; });
-    document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ menu.open=false; nav.classList.remove('open'); if(tog) tog.setAttribute('aria-expanded','false'); } });
+  // dropdowns (Write-ups, Explore): one open at a time; close on outside click or Escape
+  const menus=[...document.querySelectorAll('.nav details.menu')];
+  menus.forEach(m=>m.addEventListener('toggle',()=>{ if(m.open) menus.forEach(o=>{ if(o!==m) o.open=false; }); }));
+  if(menus.length){
+    document.addEventListener('click',e=>{ menus.forEach(m=>{ if(m.open && !m.contains(e.target)) m.open=false; }); });
+    document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ menus.forEach(m=>m.open=false); nav.classList.remove('open'); if(tog) tog.setAttribute('aria-expanded','false'); } });
   }
   // active section links (index) and active page
   const here=location.pathname.split('/').pop()||'index.html';
   document.querySelectorAll('.nav .links > a').forEach(a=>{ const h=a.getAttribute('href').split('#')[0]; if(h===here && !a.getAttribute('href').includes('#')) a.classList.add('active'); });
-  document.querySelectorAll('.nav .panel a[aria-current]').forEach(a=>{ const sum=menu&&menu.querySelector('summary'); if(sum) sum.classList.add('active'); });
+  document.querySelectorAll('.nav .panel a[aria-current]').forEach(a=>{ const sum=a.closest('details.menu')?.querySelector('summary'); if(sum) sum.classList.add('active'); });
   // card glow follows the pointer
   document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e=>{ const r=c.getBoundingClientRect(); c.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%'); }));
   // contents strip: highlight the section in view
