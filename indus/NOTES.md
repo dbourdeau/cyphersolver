@@ -769,6 +769,13 @@ saturates when every sign is a syllable).
   **Hold-out generalisation of a fitted key does not identify the language.** A key fitted by statistics alone
   cannot be the decipherment the prize asks for; the language evidence in this folder remains the two grammar tests
   (eleventh and twelfth passes), which point to Dravidian conditionally.
+- **Matched lexicons** (`matched_holdout.py`, `results/matched_holdout.md`): every lexicon cut to the same 2,405
+  skeletons with the same spread of consonant counts, 5 draws, z-score of the held-out margin. Positive control, a
+  synthetic corpus written in Dravidian: Old Tamil wins 4 of 5 draws (z 8.8), but DEDR, the lexicon the text was
+  drawn from, comes last (2.0): the ranking depends on how a lexicon is made. Indus: Burushaski 6.2, Sumerian 6.1,
+  Sanskrit 6.0, DEDR 5.2, Old Tamil 5.1, Munda 5.0, overlapping from draw to draw. Inconclusive; if anything weakly
+  against an Old-Tamil-like lexicon, which ranks fifth where the control says it should win. Fitted keys do not
+  identify the language even with matched lexicons and unseen texts.
 
 ## Limitations
 
