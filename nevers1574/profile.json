@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "target": "nevers1574",
+  "title": "Henriette de Clèves and Renato Birago to the duke of Nevers, Lyon, September 1574, BnF fr. 3315 ff. 15-16, 21",
+  "documents": [
+    {
+      "id": "f15",
+      "read": "read in part",
+      "shelfmark": "BnF français 3315 ff. 15-16 (Gallica btv1b90600800 images f17-f18)",
+      "date": "16 Sep [1574]",
+      "year": 1574,
+      "country": "France",
+      "route": "Lyon -> duke of Nevers",
+      "language": "French",
+      "pages": 3,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": ["interlinear", "separate folio"],
+        "source": "contemporary or near-contemporary interlinear decipherment and original clear ending",
+        "partial": true
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "symbols",
+        "measured": false,
+        "file": "f15_reading.md"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Gallica IIIF, 4000-pixel openings and enlarged overlapping crops",
+        "image_quality": "fair",
+        "notes": "Cipher is sharp, but the much smaller interlinear decipherment is overwritten, crowded and locally faded. Secure opening and clear ending recorded; no continuous diplomatic transcription claimed."
+      }
+    },
+    {
+      "id": "f21",
+      "read": "read",
+      "shelfmark": "BnF français 3315 f. 21 (Gallica btv1b90600800 images f23-f24)",
+      "date": "28 Sep 1574",
+      "year": 1574,
+      "country": "France",
+      "route": "Lyon -> duke of Nevers",
+      "language": "Italian",
+      "pages": 1,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": ["interlinear", "separate paragraph"],
+        "source": "complete contemporary clear fair copy under the cipher flap",
+        "partial": false
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "symbols",
+        "measured": false,
+        "file": "f21_transcription.md"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Gallica IIIF, 4000-pixel opening and enhanced crop",
+        "image_quality": "good",
+        "notes": "Complete transcription; one short expression in the first sentence remains uncertain."
+      }
+    }
+  ],
+  "system": {
+    "types": ["monoalphabetic", "homophonic"],
+    "summary": "Graphic substitution alphabet with special doubled-letter signs and nulls; close to, but not identical with, Nevers collection no. 2 of 1584.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": "unknown",
+    "diacritics": {"used": true, "note": "Related key uses marked or compound signs for doubled consonants."},
+    "homophones": {"used": true, "max_per_vowel": "unknown", "max_per_consonant": "unknown"},
+    "nomenclator": {"present": false},
+    "nulls": {"present": true, "count": "unknown"},
+    "key_order": "alphabetical",
+    "word_division": "none",
+    "sibling_key": "Nevers collection no. 2, BnF fr. 3995 f. 16 (1584); similar but not exact. Tomokiyo notes F=e and 9=q on the 1574 leaves, with x, y, z in clear.",
+    "notes": "The exact 1574 table was not reconstructed. The target supplies stronger evidence than the sibling: an interlinear decipherment on f. 15 and a parallel clear copy on f. 21."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "partial",
+      "where": "The manuscript itself preserves a contemporary interlinear decipherment on f. 15, a clear ending on f. 16r, and a complete clear copy under the cipher flap on f. 21; Tomokiyo described the system but published no reading.",
+      "found": "during attempt",
+      "used": true
+    },
+    "inputs": ["images", "known plaintext", "cleartext context", "sibling key"],
+    "attack": "archive decipherment",
+    "human_role": "The human selected the target and requested a solve/read followed by a write-up. No target-specific transcription or cryptanalytic intervention.",
+    "tools": ["Gallica IIIF", "Pillow crops", "exact-phrase literature search"],
+    "models": ["gpt-5"],
+    "sessions": 1,
+    "first_date": "2026-09-22",
+    "last_date": "2026-09-23"
+  },
+  "solution": [
+    {"date": "2026-09-22", "kind": "access", "what": "Mapped manuscript folios to Gallica openings and fetched full-resolution images of ff. 15 and 21 and the neighbouring keys.", "result": "worked"},
+    {"date": "2026-09-22", "kind": "reading", "what": "Found and transcribed the complete clear Italian fair copy beneath Birago's cipher flap at f. 21.", "result": "worked"},
+    {"date": "2026-09-22", "kind": "reading", "what": "Identified the small writing between the cipher lines of f. 15 as a contemporary word-by-word decipherment, not random pen trials.", "result": "worked"},
+    {"date": "2026-09-22", "kind": "key from source", "what": "Fetched Nevers no. 2 of 1584 from BnF fr. 3995 f. 16 and confirmed that it is only a sibling key, not the exact target alphabet.", "result": "partial"},
+    {"date": "2026-09-22", "kind": "literature search", "what": "Checked a superficially similar Henri III appeal printed by Lavisse and rejected it as a crib because it predates this letter and has a different sender.", "result": "failed"},
+    {"date": "2026-09-22", "kind": "reading", "what": "Read the opening on f. 15 and the clear ending on f. 16r; continuous transcription of the cipher leaves remained blocked by the overwritten minute hand.", "result": "partial"}
+  ],
+  "outcome": {
+    "class": "read in part",
+    "fraction_read": 0.4,
+    "fraction_read_method": "estimated",
+    "fraction_read_source": "f. 21 is complete (271 whitespace-delimited words in the transcribed quotation); the f. 15 opening and f. 16 clear ending are legible, but most of the two dense cipher pages are not continuously transcribed. The 0.4 is a rough page-and-text-weighted estimate, not a token count.",
+    "key": "none",
+    "codes_open": "unknown",
+    "grades": "unknown",
+    "verification": ["contemporary decipherment", "independent clear copy"],
+    "notes": "The target is not wholly undecrypted: both leaves preserve their own reading aids. f. 21 is complete; f. 15 remains palaeographically incomplete.",
+    "gaps": [
+      {"item": "f. 15r-v continuous transcription", "blocker": "illegible", "detail": "Minute interlinear French is crossed by larger cipher signs and locally faded; enlarged crop pass recovered anchors but not a defensible continuous text."},
+      {"item": "exact 1574 substitution table", "blocker": "illegible", "detail": "1584 Nevers no. 2 is similar but differs. Exact table could be rebuilt by glyph-level alignment of the f. 21 cipher slip with its interlinear Italian gloss."},
+      {"item": "f. 21 first-sentence expression", "blocker": "illegible", "detail": "Fair copy appears to read 'per saluato suo'; perhaps a personal name or abbreviation."}
+    ]
+  }
+}
