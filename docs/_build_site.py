@@ -1643,7 +1643,13 @@ def fold_findings(s, n=RECENT_VISIBLE):
     .more block. Entries may be added to either list by hand; this gathers them all in order and re-splits."""
     m = re.search(r'(<h2 id="recent">.*?</h2>\n(?:<p>.*?</p>\n)?)(<ul class="findings">.*?)(?=\n<h2|\n<!-- |\Z)', s, re.S)
     if not m: return s
-    items = [stamp_finding(li) for li in re.findall(r'<li>.*?</li>', m.group(2), re.S)]
+    items = re.findall(r'<li>.*?</li>', m.group(2), re.S)
+    # Navigation entries have been accidentally pasted here during publication
+    # merges. Do not date and promote menu links as research findings.
+    if any(re.search(r'<span class="st [^"]+">', li) for li in items):
+        raise ValueError('Recent findings contains navigation status badges. '
+                         'Restore the editorial findings; do not copy menu <li> entries.')
+    items = [stamp_finding(li) for li in items]
     if not items: return s
     head = '<ul class="findings">\n' + '\n'.join(items[:n]) + '\n</ul>'
     rest = items[n:]
