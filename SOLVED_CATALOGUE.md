@@ -196,6 +196,17 @@ Unsigned cipher slip, Brussels 9 Oct 1721, ASV Arch. Nunz. Colonia 5 f. 26r (DEC
 
 Segreteria di Stato (Rome) to the Nunciature in Spain, 11 ciphered despatches Jul–Dec 1736, ASV Segr. Stato Spagna 423 (DECODE R26, R179–R188) — solved and read by George Lasry, Oct 2020, key and decipherment attached to every record, but with no nomenclator values; 46 of the 166 groups recovered here from context, 90.6% → 95.3% read (see [nunzio1736/](nunzio1736/), [write-up](https://dbourdeau.github.io/cyphersolver/nunzio1736.html)).
 
+**Prior-art check of the 22 Sept 2026 new-solves sweep (catalogue 272–334).** Seven of the 63 entries added that day were found already read and removed the same day (ids not reused):
+- **Mary Queen of Scots (Wingfield) → Mauvissière, 30 Oct 1584**, BnF fr. 3158 f. 57 (catalogue 285): deciphered and translated by Lasry, Biermann and Tomokiyo, *Cryptologia* 2023 (letter F57); Labanoff printed only the clear text.
+- **Isabella of Castile → the Duke of Estrada, [3 Oct] 1503**, AGS PTR leg. 53 doc. 69 (catalogue 288): deciphered by Bergenroth, *CSP Spain* i no. 385 (duplicates 386–388), “written in two different keys of cipher”; only the English calendar version is printed.
+- **Giacomo Soranzo (London) → the Council of Ten, 11 Sept 1553**, ASVe Capi del Consiglio dei Dieci b. 14 ff. 83–84, DECODE R1851 (catalogue 286): deciphered at the time and calendared from the decipher in *CSP Venice* v no. 789; DECODE's date 1555 should read 1553.
+- **Michiel Surian → the Council of Ten, 12 June 1558**, ASVe b. 29 ff. 97–98, DECODE R1867 (catalogue 324): deciphered by Luigi Pasini, *CSP Venice* vi no. 1241.
+- **Henri IV (Chauny) → Nevers, 13 Sept 1591**, BnF fr. 3615 f. 90 (catalogue 315): printed in full in the *Mémoires de Nevers* ii 269 and the *Lettres missives* iii 483–484; whether the print covers the passage left undeciphered on the original is still to check.
+- **Beaton and Mary Stuart's side, 1575–80**, TNA SP 53/10 nos. 85–86, 98 and SP 53/11 nos. 31–32, DECODE R3826, R3830, R3832–R3834 (catalogue 299): read at the time (no. 85 deciphered in no. 86, no. 98 a deciphered extract, nos. 31–32 clear copies calendared in *CSP Scotland*).
+- **Clarke → General Caffarelli, 19 Oct 1812**, SHD 1M-2352 (catalogue 274): the text is known from the plaintext slip pinned to the despatch (Hansky; Cipherbrain 2021). The margin's re-encoding in the unpublished table no. 29 is open only as a known-plaintext code reconstruction.
+
+Eight more were narrowed to the part still unread (294, 296, 298, 319, 320, 321, 322, 326): the L'Abbadia letter (SP 53/11 no. 35 is Somer's own worksheet), Ranuzzi's 1684–85 letters (*Acta Nuntiaturae Gallicae* 10), the Savoy and Canisy letters of the Rohan papers (*Mémoires*, 1758), BnF es. 336 ff. 69, 81, 101, 148 (Lasry 2023, Tomokiyo), fr. 3641 nos. 3, 28, 43 (decipherments in nos. 4, 29, 44), the Dupuy 265 passages (Friedmann 1884, Lasry), Catherine of Aragon's letters of 1507 and 3 Nov 1509, and 26 of the 38 Add MS 61574 records (plaintext over the cipher) are read.
+
 ## 5. Where the model was strongest, across the set*
 
 These are patterns over the 18 items above, not measurements.
