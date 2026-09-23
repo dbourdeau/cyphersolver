@@ -459,6 +459,55 @@ Scripts: `sixth.py` (G1, G2, O1), `pe_formula.py`, `fish_star_world.py`; results
    Dravidian case: the first step of the fish readings is distinctive, even though the compound check built
    on it is not.
 
+## Seventh pass (23 Sept 2026): Tamil star names, ritual pictures, time, a slot grammar, Meluhhan names
+
+Scripts: `tamil_stars.py` (+ `rebus/tlex_star_min.tsv`), `seventh.py` (R1, T1, P1), `meluhha.py`; results in
+`results/tamil_stars.md`, `seventh.md`, `meluhha.md`. (profile.json not updated, at the user's request.)
+
+1. **Numeral + fish against the Tamil star names actually attested.** The Tamil Lexicon (Madras 1924-36,
+   searched on DSAL: all 111 headwords ending in -min, and full text for Pleiades, constellation, asterism,
+   Ursa) has numeral + min star names for 3 (mum-min, Mrgasiras), 5 (ai-m-min, Hasta/Rohini), 6 (aru-min,
+   ara-min, Pleiades) and 7 (elu-min, Ursa Major, the only one cited from Sangam poetry, Narrinai 231); none
+   for 1, 2, 4, 8 or 12. In the corpus, stroke numerals before a fish sign (pairs left out, 86 tokens) have an
+   attested value in 43% of cases against 63% before other signs: the star-name values are
+   *under*-represented (one-sided p = 1.0). By value: 6 + fish is enriched 3.4 times (11 tokens; the Pleiades
+   reading survives), 12 + fish 3.1 times (10, no Tamil name), 1 + fish 1.7 times (33, no name); 3 is
+   depleted (0.7), 5 absent, 7 + fish once against 56 sevens before other signs (0.2). With the pairs
+   included, 211 of 297 numeral + fish tokens are the short or long pair, for which no star name exists. So
+   the numeral + fish series as a whole is not the Tamil numeral + min series; only '6 + fish = Pleiades'
+   fits, and that is also the reading with the widest cross-cultural parallels (the Pleiades as a group of
+   six or seven).
+   Munda check: Campbell's Santali-English dictionary (1899, archive.org cu31924096339464) confirms hako
+   'a fish' and ipil 'a star' (no pun) and names the Pleiades Sorenko (the Soren clan's totem), not by a
+   numeral.
+2. **Is the 520 ending a mark of divine names?** No sign of it. On objects with a ritual picture
+   (anthropomorphic figure, scene, tree, composite animal, cross; 98 with text) 6.1% of texts end in 520,
+   on unicorn seals 12.4%, on other animal seals 6.6% (ritual against animal p = 0.18). Fish name + 520
+   occurs on 3 of 100 ritual objects against 6.2% of all pictured objects (binomial p = 0.12), and the
+   fish + 520 names sit mostly on unicorn (76 of 1,018) and zebu (7 of 44) seals. Ritual tablets carry
+   740 names (the 'cross' tablets 104 645 590 235 240 740 90 in six copies). If the fish names are divine,
+   the pictures do not show it; they behave like owners' names on ordinary seals.
+3. **Time depth (object type as the clock, Kenoyer and Meadow 2010).** All sites: the late bar seals (Period
+   3C only) end in 520 half as often as square seals (4.7% against 10.3%, p = 0.009) and more often have no
+   ending (56.5% against 46.0%, p = 0.004); 740 unchanged (39% against 44%, p = 0.17). At Harappa alone the
+   same direction, not significant (60 bar seals). Fish + 520 names fall from 5.4% of square seals to 2.2% of
+   bar seals, while fish signs as such do not (37% against 34%). The late seals drop the 520 class and the
+   ending more than they change the grammar: a shift in naming or in seal use, not evidence of sound
+   change. (Per-object stratigraphy is in CISI 3.1's data list, not online, so period comes from type only.)
+4. **A slot grammar as a predictor.** Hiding each sign of 1,200 complete one-line texts in turn
+   (leave-one-text-out): commonest sign top-1 11.4%, left neighbour 29.7%, both neighbours 46.3% (top-5
+   68.3%; last sign 64.8%); adding the G1 ending grid gives nothing (45.0%). The known structure is local:
+   two neighbours capture it, and nearly half of all signs are predictable from them. A damaged-sign
+   restorer is possible in principle, but the corpus file marks no internal damage (every text is flagged
+   complete), so there is nothing to restore without the ICIT damage codes.
+5. **The Meluhhan names.** The only two probable Meluhhan personal names, Na-na-za and Sab-ma-ar
+   (Laursen and Steinkeller 2017: 83-84; Nisaba 15 371, Urusagrig, Su-Suen 6, via harappa.com), are 2-3
+   syllables. On one-line square seals the name slot (text less opener formula and ending) is 1-3 signs in
+   52% of 1,148 seals, so names of that length fit the seals easily; a slot opening with a doubled sign
+   (as Na-na-) is no commoner than a doubled sign anywhere in a slot (2.2% against 1.9%). With two names
+   this rules nothing in or out. CDLI's search could not be queried from the command line to look for
+   more.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
@@ -475,14 +524,16 @@ Scripts: `sixth.py` (G1, G2, O1), `pe_formula.py`, `fish_star_world.py`; results
 
 Done: the M77 map (`align_m77.py`), CISI vol. 1 (third pass), Parpola 1994's 24 readings (R3), the copper-tablet
 bilinguals, slot classes, numbers and measures, the Sanskrit and Sumerian controls, the ending proposals (fourth
-pass). Open:
+pass); the leads of the fifth to seventh passes. Open:
 
 1. The full ICIT corpus (4,537 objects; account from Andreas Fuls) and CISI vol. 2 (H-396, H-568, H-598, H-602):
    rerun everything; the copper-tablet side-A texts of M-603/604 need a sharper image than CISI vol. 1's scan.
 2. The seven sign = image equations are the firmest meaning anchors: a reading of 749, 341, 753 and the lens sign
    should fit markhor goat, rhinoceros, hare and bull, in whatever language is proposed.
-3. The numeral + star names are the only language-specific fit; test them against a fourth language family
-   (Munda or Burushaski star names), and look for a reason 5 + fish is absent.
+3. Done in the sixth and seventh passes: the fish = star word is Dravidian-only among the South Asian
+   families, but the numerals before the fish do not follow the Tamil numeral + min star names; only 6 + fish
+   (Pleiades) fits. Open: 12 + fish and 1 + fish (enriched, no Tamil name), and the ICIT damage codes for a
+   sign restorer.
 4. The readings of Parpola 1997 and 2003 not in the 1994 table.
 
 ## Prior work
