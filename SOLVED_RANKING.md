@@ -357,6 +357,9 @@ Ordered by how much this repo added.
    identified with them; from Puig's one facsimile page (22 June 1400) the key he never printed rebuilt against his
    text: simple substitution, 20 letter values, a sign for the King of Aragon, null separators; 91.4% of the plate's
    cipher letters confirmed, three corrections to Puig. Ruled out as a record candidate (the reading is Puig's).
+8. **Cardinal Matthäus Schiner to Henry VIII, Trent, 14 June 1516, BL Cotton Vitellius B XIX f. 131.** Deciphered by Büchi and
+   Schiess in 1925 (italics = deciphered, no key printed); L&P's "not deciphered" corrected. The 14 cipher stretches
+   located and translated, L&P shown to print 6 of them, and the 1516 London abstract matched to the ciphered content.
 
 Perwich, the Feynman ciphers, Ferdinand III, Milroy, the Confederate dictionary code and Mazarin–Bordeaux 1654 were found
 solved by others with nothing added here and are no longer listed (removed 17 September 2026).
