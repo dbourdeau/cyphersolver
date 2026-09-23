@@ -5,7 +5,7 @@ sys.path.insert(0,str(root/'docs'))
 import _check_profile as check
 p=json.loads((P/'profile.json').read_text());cov=json.loads((P/'coverage.json').read_text())
 for d in p['documents']:
-    rid=d['id'];c=cov['documents'][rid[1:]];f=P/(rid+'-cipher.txt');m=check.measure(f,digits=True)
+    rid=d['id'];c=cov['documents'][rid[1:]];f=P/(rid+('-tokens.txt' if rid=='R7524' else '-cipher.txt'));m=check.measure(f,digits=True)
     d['length']=dict(tokens=m['tokens'],distinct=m['distinct'],unit='code groups',measured=True,file=f.name)
     d['language']='Polish and Latin' if rid=='R7524' else 'French and Polish' if rid=='R7526' else 'French (with Polish names and clear passages)'
     d['cleartext_in_document']='interspersed' if rid=='R7524' else 'mostly clear'

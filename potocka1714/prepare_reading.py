@@ -30,7 +30,7 @@ for rec in records:
         if r['record']!=rec:continue
         md += [f"Standalone codes, image {r['page']}: "+' '.join('<'+str(n)+'>' for n in r['tokens'])+'. Unidentified; listed separately from the passage order.','']
         for i,n in enumerate(r['tokens']):own.append(dict(record=rec,segment='codes-'+r['page'],position=i+1,cipher=str(n),plain='?',grade='',coherent=False))
-    (P/f'R{rec}-cipher.txt').write_text(' '.join(t['cipher'] for t in own)+'\n')
+    (P/(f'R{rec}-tokens.txt' if rec=='7524' else f'R{rec}-cipher.txt')).write_text(' '.join(t['cipher'] for t in own)+'\n')
     tokens+=own
     summaries[rec]=dict(tokens=len(own),valued=sum(t['plain']!='?' for t in own),conservative_coherent=sum(t['coherent'] for t in own))
 (P/'reading.md').write_text('\n'.join(md),encoding='utf8')
