@@ -21,7 +21,7 @@
     "partial": false
    },
    "length": {
-    "tokens": 1274,
+    "tokens": 1280,
     "unit": "code groups",
     "measured": true,
     "file": "tx/groups.txt"
@@ -32,7 +32,8 @@
     "corrections": 0,
     "image_quality": "good",
     "notes": "Made here from the four images, then checked line by line against them with the key in hand (five passes). Two rows of page 2 had been blended from two physical lines and one row was a phantom; found by tracking baselines."
-   }
+   },
+   "read": "read"
   }
  ],
  "system": {
@@ -66,7 +67,7 @@
   "word_division": "none",
   "doubled_letters": "written single",
   "sibling_key": "R1874 (Mocenigo, Madrid 1628), key rebuilt from its contemporary decipherment",
-  "notes": "698/5198/5199 mark the edges of ciphered passages, as 6499 does in R1874. Key order: a tabular vowel x consonant grid, the consonant columns roughly alphabetical (07 b, 08 c, 10 d, 11 f, 13 g, 19 l, 20 m, 21 n, 22 p, 24 qu, 27 r, 28 s, 33 t, 37 v, 38 z)."
+  "notes": "698/5198/5199 mark the edges of ciphered passages, as 6499 does in R1874. Key order: a tabular vowel x consonant grid, the consonant columns roughly alphabetical (07 b, 08 c, 10 d, 11 f, 13 g, 19 l, 20 m, 21 n, 22 p, 24 qu, 27 r, 28 s, 33 t, 37 v, 38 z). No key for this cipher survives: the known plaintext used to recover it was the chancery's contemporary decipherment of a different letter in the same cipher (R1874), aligned to its own ciphertext here."
  },
  "conditions": {
   "prior_solution": {
@@ -78,7 +79,7 @@
   "inputs": [
    "images"
   ],
-  "attack": "sibling key",
+  "attack": "known plaintext",
   "human_role": "Posed the target from the catalogue; DECODE account cookie.",
   "tools": [
    "DECODE authenticated image server",
@@ -190,11 +191,29 @@
    "kind": "verification",
    "what": "Read fraction measured two ways: 91.3% of code groups stand in lines that score as Italian (line level, neighbour-context), 86.4% by a 25-character sliding window; 15 group tokens (1.2%) still have no value.",
    "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "reading",
+   "what": "Final image round on the last garbled spans: 'se Palma sara ben fortificata, quanto presidio aveva', 'il disgusto di Aquileia', 'in strettissima confidenza', 'havuto particolar notitia', 'et qua et altrove', 'Mantova et di Savoia', 'esprimersi'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "sibling key",
+   "what": "Key values proved against the letter: 634 tra, 5132 stre, 683 a (Aquileia), 5388 quest, 5386 quant, 5189 glie, 61 fat, 6212 fri (Friuli); 6443 returned to the open list as its sibling value came from a mis-split stretch.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "verification",
+   "what": "Read bar checked three ways: 0.95 line-level with neighbour context, 0.92 by a 25-character window, 0.96 by hand audit; 12 tokens (0.9%) still have no value.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read in part",
-  "fraction_read": 0.988,
+  "class": "read",
+  "fraction_read": 0.991,
   "grades": {
    "H": 0,
    "C": 0,
@@ -206,30 +225,31 @@
    "historical consistency",
    "matched control"
   ],
-  "notes": "Key rebuilt from the sibling R1874 and applied unchanged, then extended here from context and from the alphabetical order of the word band. 98.8% of the code-group tokens have a value; 91.3% stand in lines that read as continuous Italian.",
+  "notes": "Key rebuilt from the sibling R1874 by EM alignment, then extended from context and from the alphabetical order of the word band. 99.1% of the code-group tokens have a value. Share reading as sense: 0.95 measured line by line against a period Italian model with neighbour context (measure.py), 0.92 by a stricter 25-character sliding window (measure_tok.py), 0.96 by a hand audit token by token. The clerk's own one-digit encipherment slips are recorded in key_over.json _slips and read through, as his spelling slips (sivoia, germinia, voro) are.",
   "gaps": [
    {
-    "item": "15 code-group tokens (1.2%) in the word/name band",
-    "blocker": "open-codes",
-    "detail": "6478 x2, 5386 x2, 5349, 5389, 5370, 51708, 683, 5378, 5379, 6279, 5189, 699, 6241; R1874's decipherment does not cover that band, and no other letter in this cipher is on DECODE"
+    "item": "12 code-group tokens (0.9%) of the word/name band: 6443 x2, 6279 x2, 6478 x2, 5349, 5370, 51708, 5378, 5379, 6241",
+    "blocker": "no-key-material",
+    "detail": "R1874's decipherment does not cover that band of the key, no other letter in this cipher survives on DECODE, and the ASVe key registers that do (Codice Amadi reg. 1269, Busta 4 regs. 8/16/18) are a century older. Their alphabetical brackets are recorded in NOTES."
    },
    {
-    "item": "four lines that are image-true but yield no sense: P1 L17, P2 L17, P2 L22, P2 L26",
+    "item": "one line, P2 L22 (14 groups), image-true after four independent readings and still giving no sense",
     "blocker": "open-codes",
-    "detail": "each re-read digit by digit by three independent passes; they turn on the open codes 5182, 5370, 6279 or on the clerk's own slips (he writes sivoia, germinia, dovore, avortiti)"
+    "detail": "every group in it is a structural grid value, so it turns on a clerk's slip or a word outside the corpus; exhaustive single- and double-substitution searches returned nothing"
    },
    {
     "item": "the ambassador's name",
-    "blocker": "open-codes",
-    "detail": "not in the letter; CSP Venice vol. 21 calendars no Rome despatch of 29 Apr 1628"
+    "blocker": "no-key-material",
+    "detail": "he does not name himself; CSP Venice vol. 21 calendars no Rome despatch of 29 Apr 1628"
    }
   ],
   "key": "partial",
   "codes_open": {
-   "open": 13,
+   "open": 9,
    "total": 163,
-   "tokens_open": 15
+   "tokens_open": 12
   },
-  "fraction_coherent": 0.913
+  "fraction_coherent": 0.95,
+  "fraction_read_method": "measured"
  }
 }
