@@ -280,6 +280,105 @@ have from single signs: it must make 740/520 alternate as endings, 400/90/151 fo
 epithet after names, and give numbers two forms. None of this is a reading; it is the grammar a reading must
 fit, and the places (name slots on the copper tablets, 'fig', 'pot') where meaning is fixed by pictures.
 
+## Fourth pass (23 Sept 2026): tablets, sign classes, measures, language controls, sound values
+
+### Quick fix: M77 direction
+
+M77 is not mirrored: only one line begins with the jar (1093.2, "342 82 342", Parpola's text 1093 with a repeated
+sign), so Mahadevan's lines are already in reading order. The '4 + fig' tablets (H-289, H-290) are simply not in
+M77; no M77 line has a numeral before the fig sign.
+
+### 1. The copper tablets as bilinguals (`rebus/copper_tablets.tsv`, `copper.py`, `results/copper.md`)
+
+Parpola 1994 Fig. 7.14 (PDF pp. 129-130 of the archive.org scan) gives the 46 prototype groups of the Mohenjo-daro
+copper tablets (217 tablets): each group's inscription, its reverse (an image, or a sign in place of the image),
+the number of copies, and the group linked to it by an identical inscription. Every ICIT copper-tablet text was
+rendered in its drawn layout (`render_texts.py`) and matched to a group: 28 texts from ICIT, 15 read from the
+drawing into ICIT numbers (marked approximate), 3 not transcribed. ICIT had kept only the sign side of several
+linked groups (749, 341, 753, 777, "165 900 790"), which now have their inscriptions.
+
+- **Seven sign = image equations** (same inscription, image on one tablet, sign on the other): 777 (fig+crab) =
+  markhor goat (B9/C5) *and* horned archer (B19/C6); 749 = markhor goat (A2/C4); 341 = rhinoceros (B5/A11);
+  753 = hare (B7/C2); a lens-shaped sign with two triangles = long-horned bull (B1/C1); "3 700 900 165" = bull
+  with heart-shaped spots (B10/A7). The elephant text (706 33 923 740) also stands above a horned tiger (B12).
+- **Name and title split.** Titles, shared by texts with different images: 845 (61) 407 (hare, knot, archer,
+  bull-tiger), 142 615 615 (long-horned bull, composite animal, rhinoceros, and the lens sign that equals that
+  bull), 705 33 (hare, rhinoceros), 503 615 (short-horned bull, rhinoceros). Names, specific to one image across
+  different texts: 806 233 = markhor goat (A1, A2); 235 233 (222 740) = rhinoceros (B15a, B15b, B16);
+  255 435 690 = short-horned bull (B4, C3); 905 32 597 = composite animal (B17). A minimal pair: 503 615 740 =
+  rhinoceros (B5), 503 615 752 740 = short-horned bull (B11).
+- **One image, several names.** The markhor goat goes with four texts and two signs (749, 777); the rhinoceros with
+  three texts and one sign (341). The images are not one-to-one with names: several beings (or several names of
+  one) share an image, and one sign (777) names two images, which is why Parpola reads both as one deity.
+- **The names do not transfer to the seals.** No tablet name occurs on seals with its tablet animal more than
+  chance (best 235 233 with the rhinoceros, 1 of 9 seals, p = 0.14). With the second pass (no sign-motif link on
+  1,107 seals) this says the seal texts are not labels of the seal animal.
+
+### 2. Sign classes from slots (`slots.py`, `results/slots.md`)
+
+106 signs (15+ occurrences) clustered by their left and right neighbours (PPMI, cosine, 24 classes, 50 bootstrap
+runs). The method recovers what is known from shape: the fish series falls into one class (54% of pairs share a
+class against 6% by chance; 220, 240, 235, 233, 231 together in 90%+ of runs); the short numerals cluster (4, 5, 16
+stable); 405 and 407, which share one glyph in the database font, are inseparable. New: the leaf-in-oval signs 803
+and 806 and the crab 798 fall in the fish class, the class that fills the name slot on the tablets; the signs
+counted by long strokes (520, 923, 845, the pots 705/706) form another class; the ending 740 groups with 156, 154,
+158, and 400 is a class of its own. The long-stroke numerals do not cluster (0 of 10 pairs): each behaves like part
+of the word it counts.
+
+### 3. Numbers and measures (`numerals.py`, `results/numerals.md`)
+
+- The weight hypothesis fails. Harappan weights run 1, 2, 4, 8, 16, 32, 64 then decimal. Written values go 1-8, 12
+  and one sign for 24 (10 times); no 16, 32 or 64. Powers of two are 63% of numeral tokens against 66% expected if
+  small numbers are simply commoner; the tiered series avoids them (7%). The numbers are not weight units.
+- Counting is in rows of at most four (6 = 3+3, 7 = 4+3, 8 = 4+4, 12 = 4+4+4), no decimal grouping.
+- Counted versus fixed: signs whose number varies are counted things (the pot 700: 2, 3, 4, 6; 390; 900; 590;
+  405/407; 140; the plain fish; the jar after tiered numbers 6, 7, 12). Pairs whose number never varies are fixed
+  terms: the short pair before the name signs (240, 235, 803, 806, 798, 231, 61: 82-97% one value), 3 long + 520,
+  923, 845 (94-100%), tiered 7 + 585 and 575 (100%), the long pair + fish 220 (91%). '3 + 156', the Harappa tablets'
+  whole text, is 3 in 35 of 40.
+- Combining and counting forms: before the plain fish (the star-name compounds) the numbers are short or tiered
+  45 times and long 5; before the pot (counted goods) long 42 and short 6.
+
+### 4. Second-language control (`lang_control.py`, `results/lang_control.md`)
+
+Same baseline as R4, rerun on Sanskrit (Monier-Williams, Cologne csl-orig, 25 star names ending in a word for
+star, 23 first members) and Sumerian (ePSD2, ORACC, CC0, 48 constellation names):
+
+| | Tamil (Parpola's -min list) | Sanskrit (MW) | Sumerian (ePSD2) |
+|---|---|---|---|
+| picture concepts giving a star name (strict, first sense) | 15% (30% loose) | 19% | 10% (the picture is itself a constellation) |
+| a word for 'fish' that is also a word for 'star' | min (the everyday word for both) | rsi (a fish; the Seven Sages = Great Bear), ilvala (a fish; the stars of Orion's head) | mul ('star'; also 'a fish') |
+| fig = pole star | vata 'banyan' = vata 'north' (vata-min) | dhruva 'the Indian fig-tree' = dhruva 'the pole star' | none |
+| numbers that begin a star name | 3, 4 (homophone), 5, 6, 7 | none | none |
+
+On pictures, the Tamil check is no stronger than Sanskrit's or Sumerian's. The fish = star pun is not Dravidian
+only: Parpola (1994: 214) knew of Lezgi and set it aside as not old; Sumerian mul is as old as the Indus script, and
+Sanskrit has two. Sanskrit even repeats the fig = pole-star pun. What is specific to Tamil is the numeral + star
+names; they cover 73% of the numeral + fish tokens but predict a 5 + fish that never occurs and miss the 1 and 12
+that do. So the language question stays open; the numerals are the one place where Dravidian fits better than
+the controls.
+
+### 5. Sound values against the structure (`sound_tests.py`, `results/sound_tests.md`)
+
+The published ending proposals (Parpola 1994: 94-96): the Finnish team's 1969 paradigm, nominative zero, genitive
+= jar 740, dative = arrow 520 (abandoned by Parpola); the Soviet jar = oblique *-at(tu)*, dative *-kku*; Parpola
+1994, jar = cow's head *a* 'cow' = possessive *-a*, and 'man' (90) = *al* 'servant'.
+
+- What the corpus supports: 740 and 520 never touch (0 and 0), 15 signs take both directly, and they alternate
+  mostly after fish-sign names; 740 is followed by 400 (166) or the 'man' 90 (85), the shape of a genitive with a
+  head noun ("X's man"), which fits Parpola's jar = possessive and man = *al*; 520 is final 87% of the time and
+  follows a fish-sign name 55% of the time.
+- What it does not support: 520 comes straight after a bare '3' (long strokes) 45 times with a value that never
+  varies, a lexical compound rather than a case ending.
+- Rebus support in DEDR: *a* 'cow' (Malayalam, Proto-Dravidian) gives the possessive -a; no Dravidian word for
+  jar, pot or pitcher (156 forms, 21 languages) has a genitive shape; no word for arrow (54 forms, 16 languages) has
+  the dative shape -kku; the only suffix-shaped arrow word is Tamil *utu*, matching the sociative *-otu* 'with'
+  (grade C, a candidate, not a reading).
+- The numeral constraint fits Dravidian combining forms (*mu-*, *aru-*, *elu-* in compounds, *munru*, *aru*,
+  *elu* alone) but equally Sanskrit (*tri-* / *trayah*) and others, so it does not choose the language.
+- The name + epithet formula 845 (61) 407 and the tablet signs 749, 341, 753 have no reading in Parpola's 1994
+  table; of the seven sign = image equations his system reads one (777, *koli*).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
@@ -294,13 +393,17 @@ fit, and the places (name slots on the copper tablets, 'fig', 'pot') where meani
 
 ## Next steps
 
-1. (Done for Mahadevan: `align_m77.py`.) Extend the map to Parpola 1994's numbers through the mayig CISI files.
-2. (Done for vol. 1.) H-396, H-568, H-598, H-602 need CISI vol. 2 (print); M-603/604 side A need a sharper image.
-3. (Done: R3.) Next: the readings of Parpola 1997 and 2003 that are not in the 1994 table.
-4. A second-language control for R4: the same baseline with a Sanskrit (or Sumerian) star-name list, to see
-   whether Tamil fits the attested Indus pairs better than a language taken at random.
-5. Substitution classes: which units fill the slot before "845 61 407" and similar recurring tails. That is the
-   Koskenniemi-Parpola 1970 method, run on the full corpus.
+Done: the M77 map (`align_m77.py`), CISI vol. 1 (third pass), Parpola 1994's 24 readings (R3), the copper-tablet
+bilinguals, slot classes, numbers and measures, the Sanskrit and Sumerian controls, the ending proposals (fourth
+pass). Open:
+
+1. The full ICIT corpus (4,537 objects; account from Andreas Fuls) and CISI vol. 2 (H-396, H-568, H-598, H-602):
+   rerun everything; the copper-tablet side-A texts of M-603/604 need a sharper image than CISI vol. 1's scan.
+2. The seven sign = image equations are the firmest meaning anchors: a reading of 749, 341, 753 and the lens sign
+   should fit markhor goat, rhinoceros, hare and bull, in whatever language is proposed.
+3. The numeral + star names are the only language-specific fit; test them against a fourth language family
+   (Munda or Burushaski star names), and look for a reason 5 + fish is absent.
+4. The readings of Parpola 1997 and 2003 not in the 1994 table.
 
 ## Prior work
 

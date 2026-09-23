@@ -111,7 +111,12 @@
    "rebus_checks.py (numeral restriction, 24 readings, Tamil-lexicon chance baseline)",
    "motif_checks.py (sign-motif permutation test, copper-tablet pairing)",
    "easyocr page-header index of the CISI vol. 1 scan",
-   "structure.py (numeral systems, counted nouns, ending paradigms, name + formula, segmentation)"
+   "structure.py (numeral systems, counted nouns, ending paradigms, name + formula, segmentation)",
+   "copper.py (tablet bilinguals)",
+   "slots.py (context classes)",
+   "numerals.py (numbers vs weights)",
+   "lang_control.py (Sanskrit, Sumerian controls)",
+   "sound_tests.py (ending proposals vs corpus and DEDR)"
   ],
   "models": [
    "claude-opus-5-5"
@@ -219,6 +224,36 @@
   {
    "kind": "prediction",
    "what": "Constraints any phonetic reading must meet: two numeral forms, 740/520 as alternating endings with 400/90/151 after them, an epithet 845 (61) 407 after names; pictorial anchors for fig (783/785), pot (700), fig+crab = archer.",
+   "result": "partial"
+  },
+  {
+   "kind": "verification",
+   "what": "M77 checked for mirrored left-to-right texts: not mirrored (one line starts with the jar); the 4 + fig tablets are simply absent from M77.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Copper tablets as bilinguals: Parpola 1994 Fig. 7.14 (46 groups, 217 tablets) matched to ICIT; seven sign = image equations (777 = goat and archer, 749 = goat, 341 = rhinoceros, 753 = hare, lens sign = bull, 3 700 900 165 = spotted bull); titles (845 (61) 407, 142 615 615) split from names (806 233 goat, 235 233 rhinoceros).",
+   "result": "partial"
+  },
+  {
+   "kind": "statistics",
+   "what": "Slot classes (PPMI context clustering, 106 signs, bootstrap): recovers the fish series and short numerals; leaf signs 803/806 and crab 798 join the fish (name) class; long-stroke-counted signs form a class.",
+   "result": "worked"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Numerals as Harappan weight units (binary then decimal): rejected; values 1-8, 12, 24, no powers of two beyond chance; counted signs (varying values) separated from fixed numeral compounds.",
+   "result": "ruled out"
+  },
+  {
+   "kind": "control",
+   "what": "Second-language control: Sanskrit (MW) and Sumerian (ePSD2) give picture-to-star-name rates of 19% and 10% against Tamil's 15%; fish = star homophones exist in Sumerian (mul) and Sanskrit (rsi, ilvala); dhruva = fig tree and pole star; only numeral + star names are Tamil-specific.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Published ending proposals (Finnish 1969 genitive 740 / dative 520; Soviet -at(tu); Parpola a 'cow') against the corpus and DEDR: exclusivity and alternation hold; 3 + 520 fixed compound argues against a case ending; no Dravidian arrow word gives -kku (Tamil utu ~ sociative -otu only).",
    "result": "partial"
   }
  ],
