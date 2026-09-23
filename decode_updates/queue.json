@@ -6772,7 +6772,67 @@
    }
   },
   "baner1640": {
-   "skip": "Not on DECODE: the letter (APUG 568 f. 239, Kircher correspondence) has no DECODE record, so there is no record to correct; the Riksarkivet key records consulted (R4122, R4123, R4266, R4325) were only tried and their metadata is not contradicted by this work beyond what is already there. A new-record proposal would need the manuscript images, which are behind the Museo Galileo login."
+   "writeup": "https://dbourdeau.github.io/cyphersolver/baner1640.html",
+   "key": {
+    "none": "The Banér-Stålhandske letter itself is not on DECODE; the four key records below were tried against it and none fits. Entries correct the key records' own metadata."
+   },
+   "cite": "Chifferklaver låda II cover labels (Riksarkivet), as imaged on the records",
+   "records": {
+    "R4122": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "Key identified: headed 'Ciphera cum Dno Gustavo Horn, Dn. Johanne et Carolo Bannerio' (two copies). Homophonic alphabet, three values per letter (A 76 33 34, B 77 32 35 ... Z 99 10 57; Å Ä Ö 58-66), plus a sign nomenclator naming Wallenstein, Magdeburg, Rostock, Stettin, Kolberg, Wolgast, Anklam, Torquato Conti: the Pomeranian campaign, c. 1630-31, not '1600'. Transcription attached (value lists per letter).",
+     "fields": {
+      "sender": "Gustav Horn / Johan Banér / Carl Banér (key shared between them)",
+      "start_year": "1630",
+      "end_year": "1631"
+     },
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "baner1640/key_r4122.json"
+     ],
+     "sent": false
+    },
+    "R4123": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "Key identified: Johan Banér's cipher with Axel Oxenstierna, 'begagnad från slutet af 1634' (cover: Banér's letters to Oxenstierna in AOSB II:6 nos. 116-118). Homophonic alphabet 7-102, four values per letter (A 10 41 55 83 ...), a reverse table 'Resolutionis facilior apprehensio a 7 ad 102', and a word code 106-862. The same code is copied in R4325 as 'Generalis Campi Marschalli Johan Banneris Cyffer'. Alphabet transcription attached. It does not read the Banér-Stålhandske letter of 29 Dec 1640 (APUG 568 f. 239).",
+     "fields": {
+      "sender": "Johan Banér",
+      "receiver": "Axel Oxenstierna",
+      "start_year": "1634"
+     },
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "baner1640/key_r4123.json"
+     ],
+     "sent": false
+    },
+    "R4325": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "A chancery register of several keys (cover: 1640, Kansliet; a = 34 54 74 102 122; 10 41 55 83; 5 29 55 102). Contains a copy of Banér's code of R4123 headed 'Generalis Campi Marschalli Johan Banneris Cyffer', a 'Bortwick' cipher, a four-digit code (1400-5194), and further alphabets. Transcription of the third alphabet (A 5 29 55 102 ... with Å Ä Ö) attached.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "baner1640/key_r4325c.json"
+     ],
+     "sent": false
+    },
+    "R4266": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "'Clavis Num. 2 cum Ekehielm' (cover: 1640, Ekehielm; a = 20 76 44): a 'Regulart ABC' homophonic table 9-76 with Swedish letters and digraph signs (mm 42, nn 40, ss 32, sch 41) and a German word code 305-570. Tried against the Banér-Stalhandske letter: no fit.",
+     "fields": {
+      "start_year": "1640"
+     },
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {

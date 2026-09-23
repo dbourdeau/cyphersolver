@@ -170,7 +170,7 @@ def main(argv):
             d = os.path.join(OUT, rec)
             os.makedirs(d, exist_ok=True)
             open(os.path.join(d, 'additional_information.txt'), 'w', encoding='utf-8').write(info_line(t, q, r) + '\n')
-            f = [f'status: {r["decode_status"]} -> {r["proposed"]}'] + [f'{a}: -> {b}' for a, b in q['fields'].items()]
+            f = [f'status: {r["decode_status"]} -> {r["proposed"]}'] + [f'{a}: -> {b}' for a, b in {**q.get('fields', {}), **r.get('fields', {})}.items()]
             open(os.path.join(d, 'fields.txt'), 'w', encoding='utf-8').write('\n'.join(f) + '\n')
             if needs_key and q['key'].get('file'):
                 open(os.path.join(d, 'key.txt'), 'w', encoding='utf-8').write(key_file(rec, t, q))

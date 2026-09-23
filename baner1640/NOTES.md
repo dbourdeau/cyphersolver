@@ -99,3 +99,7 @@ letter of the 16th went by; 442 is what Banér means to march on, "... 442 loszu
 - [x] key-rebuild: key rebuilt from cribs by multiset annealing and word-by-word extension (above).
 - [x] retry: every unread stretch re-run with the full key; the unread stretches use values fixed elsewhere, so no
   key change can read them: they need the image.
+
+## DECODE update queued
+
+`decode_updates/queue.json` (baner1640): the letter is not on DECODE; the four key records tried get their own metadata: R4122 = Horn / Johan and Carl Banér cipher, c. 1630-31 (Pomeranian nomenclator); R4123 = Banér-Oxenstierna code from late 1634 (AOSB II:6 nos. 116-118); R4325 = 1640 chancery register containing a copy of R4123 as "Generalis Campi Marschalli Johan Banneris Cyffer"; R4266 = Clavis Num. 2 cum Ekehielm, 1640. Alphabet transcriptions attached for R4122, R4123, R4325. Not sent: needs write access.
