@@ -1,0 +1,251 @@
+{
+ "schema_version": 1,
+ "target": "selve1535",
+ "title": "Georges de Selve, bishop of Lavaur, French ambassador at Venice, to Francis I, 14 Sept 1535 (BnF fr. 3091 f. 25, DECODE R3697) and 5 July 1536 (BnF fr. 3045 ff. 42-49, DECODE R4232); catalogue 178",
+ "documents": [
+  {
+   "id": "R3697",
+   "shelfmark": "BnF, Français 3091 f. 25r-v, no. 14 (DECODE R3697); Gallica btv1b9060253s views 27 (right), 28 (left)",
+   "date": "14 Sept 1535 (BnF catalogue: 4 Sept)",
+   "year": 1535,
+   "country": "Italy",
+   "route": "Venice -> Francis I",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "margin"
+    ],
+    "source": "Contemporary decipherments written above struck cipher runs on f. 25r (3 runs) and in the left margin of f. 25v (1 run); the unstruck runs have none."
+   },
+   "length": {
+    "tokens": 1076,
+    "unit": "symbols",
+    "measured": true,
+    "file": "R3697_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica native film scans of the two-page openings; line strips; three passes per page (work/f25r*.md, f25v*.md)",
+    "image_quality": "poor",
+    "notes": "1076 = signs in R3697_signs.txt counted by stats.py (one character per sign, nulls and unread included). Struck runs are laid out as read letters plus ? to the agents' per-strip counts (about +-3 per line)."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "R4232",
+   "shelfmark": "BnF, Français 3045 ff. 42-49, no. 31 (DECODE R4232); Gallica btv1b9060156p views 82-95; cipher on ff. 43v, 44r, 44v, 45r, 48r",
+   "date": "5 July 1536",
+   "year": 1536,
+   "country": "Italy",
+   "route": "Venice -> Francis I",
+   "language": "French",
+   "pages": 14,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "margin"
+    ],
+    "source": "Contemporary decipherments beside four of the runs (ff. 44v, 45r, 48r and the name group on f. 44r); the long runs on ff. 43v-44r have none."
+   },
+   "length": {
+    "tokens": 1448,
+    "unit": "symbols",
+    "measured": true,
+    "file": "R4232_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF at 2600 px and native crops; one agent per page (work/v84.md ... v94.md), open spots re-read on native crops",
+    "image_quality": "good",
+    "notes": "1448 = signs in R4232_signs.txt counted by stats.py (one character per sign, nulls and unread included)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Invented-sign simple substitution for French with a few homophones (a, e, l, u), nulls between doubled letters, and at least one name code.",
+  "symbol_kind": "letters and symbols",
+  "digit_groups": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Tomokiyo's table plus: slash = c as well as l; the c and d hooks interchange; z also t; X = m and u; a null (p+omega, vf, small S, dots) is written between doubled letters; the 1535 letter uses a Latin R for o and beta for v. The name code '/ X y X / X' is glossed 'Rang..' (Guido Rangone)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Key table only: S. Tomokiyo, cryptiana francis.htm 'Selve's Cipher' (reconstructed from fr. 3045 ff. 42-49; names fr. 3091 f. 25 as the same cipher); no plaintext published. Contemporary partial decipherments on the leaves (glosses). DECODE 'Non-decrypted'. Charriere, Negociations dans le Levant I, prints other Selve letters of 1535-36, not these.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code and posed the catalogue card (item 178). No target-specific intervention recorded.",
+  "tools": [
+   "curl (Gallica IIIF, DECODE)",
+   "python/PIL crops"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "DECODE R3697/R4232 metadata (R3697 is fr. 3091 f. 25, not fr. 3045); Tomokiyo francis.htm gives the key table for Selve's cipher, no plaintext; BnF catalogue records cite no edition.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "Gallica btv1b9060156p views 82-95 (fr. 3045) and btv1b9060253s views 27-28 (fr. 3091) at 2600-4400 px and native; cipher located on views 84, 85, 86, 88, 94 and on f. 25r-v.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "key from source",
+   "what": "Tomokiyo's table applied to fr. 3045 view 84 line 1: 'en tres grand danger combien que le nombre des assiegeans'.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "One agent per page on R4232 (views 84, 85, 86/88/94): 1448 signs, extra homophones and the doubling nulls found; four glossed runs agree with the readings.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "R4232 open spots re-read on native crops: v94 'ceste annee' (the unread verb), v88 'guerre'; name code valued from its gloss 'Rang..'.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "literature search",
+   "what": "Charriere, Negociations de la France dans le Levant I, pp. 265-320 read page by page on Gallica (no OCR): Selve letters of 18 June 1535, 22 Aug 1535, 24 Jan and 8 Feb 1536 printed, not these two.",
+   "result": "ruled out",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "R3697 first pass (f. 25r, f. 25v): about 70% / 50% of the unstruck cipher; new signs R = o, beta = v; soft film scan.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "DECODE images of R3697 fetched with the project cookie: screenshots of the same film at lower resolution; no gain.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "R3697 second pass with the extended table: f. 25r 92%, f. 25v lower block 97% of the unstruck cipher.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "crib",
+   "what": "R3697 third pass: the decipherer's glosses used as cribs on the struck runs ('au marchant', 'ung sansacque cy prochain', 'amiablement pour la charge qu'il a de Vesprim'); struck runs from about 20% to 40%; 'soubz umbre de marchandise', 'fus adverty, meu de coniecture' read.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "f. 25r r8-r9 read as '... Anthon[e] de Le[yve] de luy tenir le guet' (Antonio de Leyva, governor of Milan); not secured by the signs.",
+   "result": "partial",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "sibling key",
+   "what": "fr. 3019 f. 97r (Rodez and Selve, 16 Nov 1536) opened: three short glossed runs in the same cipher; no occurrence of the open r8 name.",
+   "result": "failed",
+   "date": "2026-09-22"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "fraction_read": 0.906,
+  "grades": "unknown",
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "R4232 read (99.1% of non-null signs); R3697 read in part (79.1%; 94.9% of the cipher not under the decipherer's strike). Both together 2248 of 2481 non-null signs.",
+  "key": "recovered",
+  "codes_open": {
+   "open": 0,
+   "total": 1,
+   "tokens_open": 0
+  },
+  "gaps": [
+   {
+    "item": "R3697 struck runs f. 25r A, B, C1-C3 and f. 25v T1-T3 (182 signs)",
+    "blocker": "illegible",
+    "detail": "the decipherer's ruling runs through every sign on the only (film) images; glosses give most of the plaintext; a colour image or the original would separate the lighter strike ink"
+   },
+   {
+    "item": "R3697 f. 25r r16 end (5 signs), r9 blot (1)",
+    "blocker": "illegible",
+    "detail": "erased by the writer; solid blot"
+   },
+   {
+    "item": "R3697 f. 25r r8-r9 'a pr[...] Anthon[e] de Le[...]' (17 signs)",
+    "blocker": "illegible",
+    "detail": "a blot and two cancellation diagonals cross four signs; the name is not secured; every candidate tried"
+   },
+   {
+    "item": "R3697 f. 25r r11 (4 signs), r5 (2), r7 (1)",
+    "blocker": "too-short",
+    "detail": "isolated legible groups that fit no word; no sibling text to test them"
+   },
+   {
+    "item": "R3697 f. 25v L5 final group (7 signs) and lone a before 'quand' (1)",
+    "blocker": "illegible",
+    "detail": "cancellation diagonal and blot; the cipher breaks off into struck clear text"
+   },
+   {
+    "item": "R4232 13 single signs",
+    "blocker": "illegible",
+    "detail": "blots and corrections under the decipherer's ruling; none affects the sense"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "R3697_signs.txt and R4232_signs.txt counted by stats.py: 2248 of 2481 non-null cipher signs read (letters, the glossed name code and one numeral); ? counted as unread"
+ }
+}
