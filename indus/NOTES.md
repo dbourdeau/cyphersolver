@@ -777,6 +777,14 @@ saturates when every sign is a syllable).
   against an Old-Tamil-like lexicon, which ranks fifth where the control says it should win. Fitted keys do not
   identify the language even with matched lexicons and unseen texts.
 
+- **CDLI full-text search for Meluhhan names** (23 Sept; cdli.earth, transliteration search 'me-luh', ATF export
+  paged, 223 texts, 149 not in the ORACC set). The additions are lexical lists (Meluhha wood, carnelian, the Meluhha
+  bird), royal inscriptions (Sargon's boats of Meluhha, Gudea, Shulgi's 'speckled dog of Meluhha'), Neo-Assyrian
+  texts where Meluhha means Nubia (irrelevant), Ur III inventories, a 'field of Meluhha' (ZA 74 65) and a granary
+  'in Meluhha' village (BM 025318). The only people named: Šu-ilišu, 'translator of Meluhha' (his seal, CDLI seal
+  014339; an Akkadian name) and Dadi, 'soldier of the Meluhha boat' (BIN 8 298, Old Akkadian). No further foreign
+  Meluhhan personal names: Nanaza and Samar remain the only direct evidence of the language in cuneiform.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
