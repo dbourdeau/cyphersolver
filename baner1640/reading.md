@@ -9,7 +9,7 @@ Emendations of the transcription or of the encipherer's slips are marked `{read:
 
     34 20 78 83 [508]
     i  o  b  s
-    Jobs(t)? [508]          — the courier of the first copy? (reading doubtful)
+    Jobs[508]              — Jobst + surname in code, the courier of the first copy (M)
 
 ## S2 (after "das andere aber")
 
@@ -28,11 +28,11 @@ Emendations of the transcription or of the encipherer's slips are marked `{read:
 ## S4 (after "... undt so starck als es ihm muglig mir entgegen leitten")
 
     66 25 38 85 39 90 82 43 63 75 77 92 13 28 29 21 36 83 93 41 93 18 33 32 23 27 11 30 62 [361] 40 74 55 84 10 77 62 43 41 92
-    {86}t w  a  a  u  c  h  d  e  i  n  s  c  h  l {e} s  i  e {n} a  g  i  r  e  n  d  e         d  a  z  u  z  i  e  h  e  n
+    e  t  w  a  a  u  c  h  d  e  i  n  s  c  h  l {e} s  i  e {n} a  g  i  r  e  n  d  e         d  a  z  u  z  i  e  h  e  n
     etwa auch die in Schlesien agirende [361] dazu ziehen
 
-Three slips: the first figure is read 86 (e) for Neal's 66 (p); "d e i n" for "die in" (encipherer's transposition);
-"Schl-s-sie-i-en" has 36 (s) for e and 93 (i) for n.
+The manuscript has 86 for Neal's 66 and 36 (corrected in ct_neal.txt). Slips of the copy: "d e i n" for "die in";
+93 (i) for n in "Schlesien".
 
 ## S5 (after "So wollt der herr General Major")
 
@@ -65,9 +65,9 @@ a dropped or misread figure. The phrase "eisen o vi rechte zu" (14 tokens) is no
 
 ## S7 (after "damit ich ihm inmittelst mit seiner andeutung")
 
-    38 24 29 77 92 27 23 13 41 44 98 86 26 18 23 28 81 86 37 90 23 77 73 29 25 27 9? 62 64 57 33 62 79 86 11 96 24 52 97 62 64
-    w  o  h  i  n  e  r  s  e  i  n  e  n  a  r  c  h  e  z  u  r  i  c  h  t  e  ?  e  n  t  g  e  g  e  n  w  o  l  t  e  n
-    wohin er seinen (M)arche zu richte(n), entgegen wolten   ("kommen")
+    38 24 29 77 92 27 23 13 41 44 98 86 26 18 23 28 81 86 37 90 23 77 73 29 25 27 92 62 64 57 33 62 79 86 11 96 24 52 97 62 64
+    w  o  h  i  n  e  r  s  e  i  n  e  n  a  r  c  h  e  z  u  r  i  c  h  t  e  n  e  n  t  g  e  g  e  n  w  o  l  t  e  n
+    wohin er seinen (M)arche zu richten, entgegen wolten   ("kommen")
 
 ## Translation (sense)
 

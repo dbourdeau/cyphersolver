@@ -28,10 +28,10 @@
     "file": "ct_neal.txt"
    },
    "transcription": {
-    "by": "published",
-    "source": "Philip Neal's transcription as published on Cipherbrain; checked against the 617-655 px blog images where legible",
-    "image_quality": "poor",
-    "notes": "274 two-digit values (74 distinct) and 14 three-digit code words, measured with --drop-first (segment labels). The blog images cannot confirm single figures; five slips are inferred from the reading (S4 first figure 66 for 86, 36 and 93 in 'Schlesien', 26 in 'Marche', one figure unread '9?')."
+    "by": "mixed",
+    "source": "Philip Neal's transcription (Cipherbrain), checked figure by figure against the Museo Galileo scans of APUG 568 f. 239r-v (1469x2304 px)",
+    "image_quality": "fair",
+    "notes": "274 two-digit values and 14 three-digit code words (--drop-first). Four figures corrected from the scans: S4 66->86, S4 36->86, S5 57->47, S7 illegible->92."
    }
   }
  ],
@@ -155,15 +155,33 @@
    "what": "decode.py applies key.json: 239 of 274 cipher tokens read as sense (87.2%); unread: a name in S2, 14 tokens in S5, 4 tokens in S1, 2 in S6, the illegible figure in S7; all 14 code words open.",
    "result": "partial",
    "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "Found the Museo Galileo Kircher scans served openly (archimede.imss.fi.it/kircher/568/large/239r.jpg, 239v.jpg); the login only guards the search database.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Re-read every cipher line on the scans: Neal right except four figures (S4 66->86, 36->86; S5 57->47; S7 = 92).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "reading",
+   "what": "Re-measured with the corrected transcription: 244 of 274 (89.1%); S1 = Jobs[508] (Jobst), S7 complete. Digit-confusion search (emend.py) finds nothing for the S5 stretch; the copy itself is corrupt there.",
+   "result": "partial",
+   "date": "2026-09-22"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.872,
+  "fraction_read": 0.891,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode.py over ct_neal.txt: two-digit cipher tokens in words read as sense, 239/274; code words excluded",
-  "fraction_coherent": 0.872,
+  "fraction_read_source": "decode.py over ct_neal.txt (corrected against the APUG 568 scans): two-digit cipher tokens in words read as sense, 244/274; code words excluded",
+  "fraction_coherent": 0.891,
   "codes_open": {
    "open": 14,
    "total": 14,
@@ -175,19 +193,19 @@
   ],
   "gaps": [
    {
-    "item": "S2 name after 'Johann' (11 tokens) and S1 (4 tokens): the couriers of the two copies",
-    "blocker": "illegible",
-    "detail": "Only the 617-655 px blog images are available; the figures cannot be checked, and the letters as transcribed do not form a name."
+    "item": "S2 name after 'Johann' (11 tokens)",
+    "blocker": "needs-physical-access",
+    "detail": "Figures confirmed on the manuscript scan; values fixed elsewhere, so the only known copy is corrupt; the sent original or a Swedish register copy is not digitised."
    },
    {
-    "item": "S5 'eisen o vi rechte' (14 tokens), 'o ?' (2) and the stray e of 'sobaldt e ich' (1); S6 '? o' (2); S7 figure '9?' (1)",
-    "blocker": "illegible",
-    "detail": "Every value in these stretches is fixed elsewhere by other words, so the stretches are corrupt in the transcription or the copy; needs the APUG 568 f. 239 images at full resolution (Museo Galileo database, registered login) or the other copy the Cipherbrain caption points to."
+    "item": "S5 'eisen o vi rechte' (14), 'o ?' (2), stray e (1); S6 '? o' (2)",
+    "blocker": "needs-physical-access",
+    "detail": "Figures confirmed on the manuscript scan; the copy is corrupt; another witness needed."
    },
    {
     "item": "Code words 361, 442, 464, 508, 513, 568, 766, 767, 770, 772, 773, 775, 778, 783",
-    "blocker": "open-codes",
-    "detail": "No key survives; each occurs once. Context only: 442 is what Banér marches against (Regensburg or 'the Bavarians'), 361 the troops acting in Silesia, 508 and 568 the routes of the duplicate; 778, 772, 770 fall where letters are missing (darau-ff, au-ss, ko-mm-en)."
+    "blocker": "no-key-material",
+    "detail": "No key survives; each occurs once. 7xx possibly letters (auf solche Weise, darauf), not counted."
    }
   ],
   "notes": "First reading of the letter. Key rebuilt here from context cribs; no Swedish key on DECODE matches."

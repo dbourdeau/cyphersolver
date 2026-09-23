@@ -1,11 +1,12 @@
 # Banér to Stålhandske, Hof, 29 December 1640 (intercepted copy, Kircher correspondence APUG 568 f. 239) — NOTES
 
-**Status: read in part — 239 of 274 cipher tokens (87.2%) read as sense, measured (`python decode.py`), 22 Sept
+**Status: read in part — 244 of 274 cipher tokens (89.1%) read as sense, measured (`python decode.py`), 22 Sept
 2026.** First reading of the letter; key rebuilt here (`key.json`, 70 values) from context cribs. It reads: Banér
 means "nach der Oberpfaltz und gegen die [442]" to march; the enemy will gather against him "und etwa auch die in
 Schlesien agirende [361] dazu ziehen"; Stålhandske is to "gute acht geben" and, when the enemy moves, follow "mit
 einer guten Fürsichtigkeit"; report "durch Espionen"; and tell Banér "wohin er seine Marche zu richten". Open: the
-couriers' names (S1, S2), one corrupt stretch in S5, and all 14 code words. Reading of record: `reading.md`.
+second courier's name (S2), one corrupt stretch in S5 (both confirmed on the manuscript: the copy is corrupt), and all
+14 code words (no key). Reading of record: `reading.md`.
 
 Catalogue: "Intercepted letter, Banér to Stålhandske" (new-solves sweep, 22 Sept 2026). Session 2026-09-22.
 
@@ -80,11 +81,25 @@ letter of the 16th went by; 442 is what Banér means to march on, "... 442 loszu
   falls where letters are missing: "darau[778]" (darauff), "au[772]" (auss), "ko[770]en" (kommen/können),
   "?o[783]en" (sollen/wollen?). The 7xx codes may be syllables or double letters; not settled.
 
+## The manuscript (22 Sept, second pass)
+
+The Museo Galileo serves the Kircher scans openly at `https://archimede.imss.fi.it/kircher/568/large/239r.jpg` and
+`239v.jpg` (1469 x 2304 px; the login page only guards the search database). Every cipher line re-read from them:
+Neal's transcription is right except S4 first figure 86 (Neal 66, now "etwa" needs no emendation), S4 "Schl-86-sien"
+(Neal 36), S5 "g u 47 e n" (Neal 57; 47 = t, new value) and S7 figure = 92 (n, "richten"). `ct_neal.txt` carries the
+corrections. S1 "34 20 78 83 [508]" reads "Jobs[508]" = Jobst + a surname in code (M). With the figures confirmed,
+the remaining stretches (S2 name, S5 "eisen o vi rechte", S6 "? o") use values fixed by other words: this copy is
+corrupt there. Re-measured: 244 of 274 (89.1%).
+
+Digit-confusion search (`emend.py`: up to two confusable figures per stretch, ranked by de-1640s in context) finds
+no reading for the S5 stretch. Hypothesis, not counted: the 7xx codes are letters, giving "au[772] solche [766]eise"
+= "auf solche Weise" and "darau[778]" = "darauf".
+
 ## Remaining gaps
 
-- S2 name after "Johann" (11 tokens, read "ohrs?acbuet") and S1 (4 tokens, "iobs", perhaps "Jobs(t)"), the couriers' names - blocker: illegible; only the 617-655 px blog images exist here, the letters as transcribed do not form a name, and every value but 12 is fixed elsewhere, so the figures are misread.
-- S5 "eisen o vi rechte" (14 tokens), "o ?" before "ein guten" (2), the stray e in "sobaldt e ich" (1); S6 "? o" before [783] (2); S7 figure "9?" (1) - blocker: illegible; every value except 2 and 60 is fixed by other words, so the stretches are corrupt in Neal's transcription or in the copy; needs APUG 568 f. 239 at full resolution (Museo Galileo Kircher database, registered login) or the second copy the Cipherbrain caption points to.
-- Code words 361, 442, 464, 508, 513, 568, 766, 767, 770, 772, 773, 775, 778, 783 - blocker: open-codes; no key survives (none of the Banér keys on DECODE is this one) and each occurs once; context gives only the sense.
+- S2 name after "Johann" (11 tokens, read "ohrs?acbuet") - blocker: needs-physical-access; the figures are confirmed on the manuscript and every value but 12 is fixed by other words, so the only known copy is corrupt; the sent original or a register copy in Banér's papers (Riksarkivet) is needed and is not digitised.
+- S5 "eisen o vi rechte" (14 tokens), "o ?" before "ein guten" (2), the stray e in "sobaldt e ich" (1); S6 "? o" before [783] (2) - blocker: needs-physical-access; figures confirmed on the manuscript, values fixed elsewhere, so the copy is corrupt; only another witness would settle them.
+- Code words 361, 442, 464, 508, 513, 568, 766, 767, 770, 772, 773, 775, 778, 783 - blocker: no-key-material; no key survives (none of the Banér keys on DECODE is this one), each occurs once, and context gives only the sense.
 
 ## Escalation
 
@@ -97,8 +112,8 @@ letter of the 16th went by; 442 is what Banér means to march on, "... 442 loszu
 - [x] print: web search for the letter, Cipherbrain comments, EMLO, Oxenstierna's printed letters (only Banér to
   Oxenstierna): no reading.
 - [x] key-rebuild: key rebuilt from cribs by multiset annealing and word-by-word extension (above).
-- [x] retry: every unread stretch re-run with the full key; the unread stretches use values fixed elsewhere, so no
-  key change can read them: they need the image.
+- [x] retry: manuscript scans fetched (Museo Galileo) and every line re-read; four figures corrected; every unread
+  stretch re-run with the full key and with digit-confusion emendation (`emend.py`); S1 read (Jobs[t]), S7 completed.
 
 ## DECODE update queued
 

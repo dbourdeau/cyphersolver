@@ -10,16 +10,14 @@ key = json.load(open(os.path.join(HERE, 'key.json'), encoding='utf-8'))
 
 # unread spans: (segment, first index, last index inclusive) over the segment's tokens, codes included in indexing
 UNREAD = {
-    'S1': [(0, 3)],            # "Jobs"? doubtful
     'S2': [(10, 20)],          # ohrs?acbuet: the name after "Johann"
     'S5': [(29, 29),           # the stray e of "sobaldt e ich"
            (61, 74),           # eisen o vi rechte
            (82, 83)],          # o ? before "ein guten"
     'S6': [(26, 27)],          # ? o before [783]
-    'S7': [(26, 26)],          # 9? (illegible figure)
 }
 # emendations: (segment, index) -> letter read in place of the key's value
-EMEND = {('S4', 0): 'e', ('S4', 16): 'e', ('S4', 20): 'n'}
+EMEND = {('S4', 20): 'n'}   # the manuscript has 93 (i) where Schlesien needs n: encipherer's slip
 
 segs = {}
 for l in open(os.path.join(HERE, 'ct_neal.txt'), encoding='utf-8'):
