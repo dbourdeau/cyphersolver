@@ -11,6 +11,8 @@ verify (see the last section).
 
 The **Speculum cipher flyleaf** is provisionally p133 at **2.30**: a short substitution completed from acknowledged prior partial work, with one emendation and no independent clear copy.
 
+The **Mémoire en chiffre** is provisionally p134 at **2.95**: substantial historical content, but an inherited partial key and an editorial reading without external plaintext verification. Novelty score is provisional.
+
 ## Axes and weights
 
 | Axis | Weight | 1 | 5 |
@@ -26,6 +28,7 @@ The **Speculum cipher flyleaf** is provisionally p133 at **2.30**: a short subst
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
+| p134 | **Mémoire en chiffre**, BnF fr. 3157 no. 67 | 12 Dec 1560 | 3 | 4 | 3 | 3 | 1 | 2 | **2.95** | Extensive Agenais report; inherited local partial solution completed editorially, seven small uncertainties. Novelty unproven; no independent clear copy. [memoire1560](https://dbourdeau.github.io/cyphersolver/memoire1560.html) |
 | p133 | **Speculum cipher flyleaf**, SCH R 201 (R4817) | Undated; volume 1618 | 2 | 2 | 3 | 2 | 1 | 4 | **2.30** | Rous partial solution completed; 78/79 coherent without emendation, internal consistency only. [r4817](https://dbourdeau.github.io/cyphersolver/r4817.html) |
 | 1 | **Henry of Navarre → Ségur**, 500 Colbert 401 ff. 233, 239, 288v (+ f. 366, f. 333) | 1585–86 | 5 | 4 | 5 | 5 | 2 | 4 | **4.35** | The only target solved from the manuscript images with no transcription and no key family known in advance: 461 figures transcribed from Gallica, the syllabary found by the mod-5 test, a structured annealer at 97 % on a matched control, then the whole 440-canvas volume swept. Content is the German levy of 1585–86 and Casimir; the sender is corrected from Henry III to Navarre. Word-signs partly open |
 | 2 | **Swatow telegram to Sun Yat-sen**, JACAR B03050738800 | 1916 | 4 | 4 | 5 | 3 | 2 | 4 | **3.90** | Code condenser over the Chinese telegraph code recovered by brute force over 57,600 keys with a character language model. Reports the Chaozhou rising and the fall of Swatow in the 1916 anti-Yuan campaign; 41 of 44 characters, the rest garbled by the operator |
@@ -602,3 +605,5 @@ Unknown author, "L'Estat du Roy de Navarre" (Harley 1582, after 1580) provisiona
 Selve at Venice to Francis I 1535–36 provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×3 = **2.75** (p131): Tomokiyo's published key extended on two unread despatches; the 1536 letter read, the 1535 letter read in part.
 
 Speculum cipher flyleaf provisional score: 0.25×2 + 0.25×2 + 0.20×3 + 0.10×2 + 0.10×1 + 0.10×4 = **2.30** (p133). Partial prior work used; no independent key; one marked textual error.
+
+Mémoire en chiffre: 0.25×3 + 0.25×4 + 0.20×3 + 0.10×3 + 0.10×1 + 0.10×2 = **2.95** (provisional).
