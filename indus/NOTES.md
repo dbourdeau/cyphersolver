@@ -721,6 +721,34 @@ Grammar of the Santhal Language (archive.org full texts).
    The copper tablets' seven equations stay the firm set; 347 and 460 are the two additions worth carrying to the
    bench as anchors, marked provisional.
 
+## Twelfth pass (23 Sept 2026): word order, female names, the keys on the new anchors
+
+Scripts: `typology.py`, `anchors_bench.py`; results in `results/typology.md`, `results/anchors_bench.md`.
+
+1. **Word order (T1).** The man sign 90 (178 tokens, both corpora) stands right after the ending 740 in 112
+   (63%) and ends the text in 117; it opens a text 27 times, and those texts are 90 90 ..., 90, 90 400 - only
+   one (90 500 740) has the 'man + name + ending' shape. The seal formula is 'X-740 man': possessor (or the name
+   with its personal suffix) first, head noun last. Sumerian and Elamite put the head first ('lu2 X-ak', as the
+   cuneiform itself writes 'lu2 me-luh-ha', man of Meluhha); Dravidian, Indo-Aryan, Munda and Burushaski put
+   the possessor first.
+2. **Female names (T2).** The woman-figure signs (Fairservis A-2 93, A-3 95/96) end or sit in only four names (93
+   three times with 740, 95 once with 520): too few to test Proto-Dravidian's non-masculine women against Tamil
+   and Sumerian.
+3. **The two grammar tests together (T3).** A class suffix on the singular noun that separates persons from
+   stars (eleventh pass): Dravidian yes (-an against -am / -tu, rational / non-rational), Elamite yes (animate -r
+   against inanimate -me), Indo-Aryan in part (three genders across many declensions), Sumerian, Munda and
+   Burushaski no (class shown by agreement or number, not on the singular noun). Possessor before head: Dravidian,
+   Indo-Aryan, Munda, Burushaski yes; Sumerian and Elamite no. **Only Dravidian passes both outright;
+   Indo-Aryan in part.** Conditional on 740/520 being suffixes of the name (fixed per name, final, bound to it
+   by the segmenter), 90 being a head noun, and the fish names being stars. It is the strongest argument for
+   the language family in this folder, and it uses no sound values.
+4. **The keys on the provisional anchors** (`anchors_bench.py`; sign 460 = tree, ten texts written with a
+   tree, the gharial or fish). No key gives 460 a word for tree (Yajnadevam d; Fairservis murYal, his 'three
+   conical structures'; the others have no value). Anchor texts containing a word for their picture: Yajnadevam 5
+   of 10 (shuffles 4.7), Fairservis 7 (7.5), Mahadevan 6 (4.1; 32 of 200 shuffles as good), Parpola 3 (4.4), Kak
+   0. None above chance; with short Dravidian and Sanskrit words, 4-7 of 10 texts contain some picture word by
+   chance, so this form of the test is weak.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
