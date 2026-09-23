@@ -6440,7 +6440,9 @@
   "harley1582r8505": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/harley1582r8505.html",
    "key": {
-    "none": "no key for this cipher is known: none on the DECODE record, none in the volume's other records (R8498-R8506), none in print"
+    "file": "harley1582r8505/key_letters.txt",
+    "lang": "French",
+    "how": "homophonic alphabet of about 50 graphic signs, rebuilt here from the ciphertext alone; the letter m is written as a group of two, three or four dots"
    },
    "cite": null,
    "fields": {
@@ -6455,17 +6457,16 @@
    "records": {
     "R8505": {
      "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "reading": null,
-     "reading_not_needed": true,
+     "proposed": "Partially decrypted",
+     "reading": "decode_updates/decryptions/R8505.txt",
      "transcription": [
-      "harley1582r8505/ct_p1.txt",
-      "harley1582r8505/ct_p2.txt",
-      "harley1582r8505/ct_p3.txt",
-      "harley1582r8505/ct_p4.txt",
+      "harley1582r8505/final/f1.txt",
+      "harley1582r8505/final/f2.txt",
+      "harley1582r8505/final/f3.txt",
+      "harley1582r8505/final/f4.txt",
       "harley1582r8505/signs.md"
      ],
-     "note": "Identified 22 Sept 2026: the document is the French political memoir 'L'Estat du Roy de Navarre & de son party en France' (heading on f. 263r), written after 1580, on Navarre's two qualities, his places and garrisons in Guyenne, Languedoc, Dauphine and Provence, his gentlemen, and the Catholic and German alliances. The record's language should be French, not 'English?'. All four sides were transcribed (attached, ~3,630 sign tokens, with a sign chart); the cipher is homophonic on the statistics (IC 0.040) with nomenclator numbers 6, 21, 26, 36, 51, 57, 72, 81, 99, 721, and is not read. Status stays Non-decrypted. Note also that R8501 (Harley 1582 ff. 71-72) carries its own contemporary decipherment on f. 72r.",
+     "note": "Identified and deciphered 22 Sept 2026. The document is the French political memoir 'L'Estat du Roy de Navarre & de son party en France' (heading on f. 263r), written after 1580; the language is French, not 'English?'. The cipher is a homophonic alphabet of about fifty graphic signs, broken here from the ciphertext alone: the key is attached. Its unusual feature is that the letter m is written as a group of two, three or four dots, which earlier readings took for punctuation. 95.1% of the deciphered text reads as French; ten nomenclator numbers (6, 21, 26, 36, 51, 57, 72, 81, 99, 721) have no values, though 72 is a country (almost certainly France) and 81 a person (probably the King). Note also that R8501 (Harley 1582 ff. 71-72) carries its own contemporary decipherment on f. 72r.",
      "sent": false
     }
    }

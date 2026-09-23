@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Richelieu's Cipher to M. de Rancé (July 1629) — Reconstruction and Verification</title>
 <meta name="description" content="Ciphertext-only reconstruction of the homophonic cipher used by Cardinal Richelieu in two letters to Denis Bouthillier de Rancé (BnF Français 3829, ff. 87 & 89), and its verification against Avenel's 1858 edition.">
-<link rel="stylesheet" href="style.css?v=20260922b">
+<link rel="stylesheet" href="style.css?v=20260922a">
 <meta name="date" content="2026-09-14">
-<meta name="last-modified" content="2026-09-22">
+<meta name="last-modified" content="2026-09-21">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,7 +18,7 @@
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="mellon136.html"><span class="st solved">read; key in the book</span><b>Silentium Dei 1798</b><span class="yr">1798</span></a></li><li><a href="swieten1757.html"><span class="st solved">solved</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">solved</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">72</span><b>Solved or read</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">57</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">58</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">34</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 223 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="toulon1803.html"><span class="st stuck">key not digitised</span><b>Toulon 1803</b><span class="yr">1803</span></a></li><li><a href="mellon136.html"><span class="st solved">read; key in the book</span><b>Silentium Dei 1798</b><span class="yr">1798</span></a></li><li><a href="swieten1757.html"><span class="st solved">solved</span><b>Van Swieten 1757</b><span class="yr">1757&ndash;59</span></a></li><li><a href="r7707.html"><span class="st stuck">not read</span><b>Pseudo-letter cipher 1728</b><span class="yr">1728</span></a></li><li><a href="r688.html"><span class="st found">not a cipher</span><b>Stojan&rsquo;s letter from prison</b><span class="yr">1664&ndash;68</span></a></li><li><a href="wesselenyi1664.html"><span class="st solved">solved</span><b>Wessel&eacute;nyi c. 1663&ndash;64</b><span class="yr">c. 1663&ndash;64</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=solved"><span class="st solved">75</span><b>Solved or read</b></a></li><li><a href="writeups.html#kind=found"><span class="st found">56</span><b>Explained</b></a></li><li><a href="writeups.html#kind=partial"><span class="st partial">54</span><b>Partly read</b></a></li><li><a href="writeups.html#kind=stuck"><span class="st stuck">32</span><b>Attempted, not solved</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 219 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a href="catalogue.html">Catalogue</a>
@@ -43,24 +43,24 @@
   <p class="kicker">France · homophonic cipher · 1629 · solved (confirmed by Avenel 1858)</p>
   <h1>Richelieu's Cipher to Monsieur de Rancé</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-richelieu.jpg" alt="Cardinal Richelieu" title="Cardinal Richelieu: Portrait by Philippe de Champaigne, 1633–40. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Richelieu</figcaption></figure></div><!-- /parties -->
-  <p class="sub">Two letters of Richelieu from July 1629 with sensitive words in figures, rebuilt here from the ciphertext alone. Avenel had printed them deciphered in 1858, and the two readings agree.</p>
-  <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-14">14 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
+  <p class="sub">July 1629 · Bibliothèque nationale de France, Français 3829, ff. 87 and 89</p>
+  <p class="sub">A ciphertext-only reconstruction — and its confirmation against a decipherment printed in 1858</p>
+  <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-14">14 September 2026</time> &middot; updated <time datetime="2026-09-21">21 September 2026</time></p>
 <div class="seal solved" aria-hidden="true"><span>solved</span></div>
 </section>
 
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#system">The cipher system</a><a href="#decipherment">Decipherment</a><a href="#method">Method</a><a href="#verification">Verification: Avenel, 1858</a><a href="#try">Try the key</a><a href="#sources">Sources</a></nav>
-<div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Solved &middot; confirmed by Avenel 1858</span></p>
-<dl>
-  <dt>The letters</dt><dd>Cardinal Richelieu to Denis Bouthillier de Ranc&eacute;, the Queen Mother&rsquo;s secretary: Saint-Privat, 7 July 1629, and an undated letter of mid-July. They were written days after the Peace of Al&egrave;s.</dd>
-  <dt>Where</dt><dd>BnF Fran&ccedil;ais 3829, ff. 87 and 89. Listed as undeciphered by Tomokiyo and on DECODE (R9461&ndash;R9462). Worked from Tomokiyo&rsquo;s published transcription, since the images are not freely online.</dd>
-  <dt>The cipher</dt><dd>A homophonic substitution with a small nomenclature: two-digit numbers for letters, extra numbers for the vowels, a stroke that doubles a letter, and codes for persons and countries.</dd>
-  <dt>How it was read</dt><dd>The alphabet, the vowel homophones, the doubling mark and two word-codes were recovered by statistical cryptanalysis plus cribs.</dd>
-  <dt>Credit</dt><dd>D.-L.-M. Avenel printed both letters with their decipherment in 1858, having rebuilt the key from other archive papers. The independent reading agrees with his in every ciphered word.</dd>
-  <dt>What it says</dt><dd>The King is angry at the Boneuil affair. Richelieu would like the Duchesse de Chevreuse caught near the frontier, and calls the peace &ldquo;miraculeuse&rdquo;.</dd>
-  <dt>Still open</dt><dd>Nothing in the reading. The catalogues should mark both letters as deciphered, citing Avenel III (1858).</dd>
-</dl>
+<div class="callout">
+<strong>Summary.</strong> Two partly enciphered letters from Cardinal Richelieu to Denis Bouthillier de Rancé, written in
+July 1629, are listed as undeciphered in the current reference catalogues of historical ciphers (S. Tomokiyo's
+<em>Unsolved Historical Ciphers</em>; the DECRYPT project's DECODE database, records R9461–R9462).
+Working only from a published transcription, the substitution alphabet, its vowel homophones, a doubling
+mark and two word-codes were recovered by statistical cryptanalysis plus cribs. A literature search made afterwards
+showed that D.-L.-M. Avenel had already printed both letters <em>with</em> their decipherment in 1858, having
+reconstructed the key from other archival documents. The independent reconstruction agrees with Avenel's reading
+in every word. The cipher is therefore <strong>solved, but not newly solved</strong>; this page documents the
+key, the method, and the correction to the catalogues.
 </div>
 
 <h2 id="documents"><span class="num">01</span> The documents</h2>
@@ -317,8 +317,8 @@ the transcription <a href="https://cryptiana.web.fc2.com/code/richelieu1629.txt"
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="r1874.html" rel="prev">&larr; Mocenigo 1628 1628</a><a href="pallotto1629.html" rel="next">Pallotto to Barberini 1629 1629 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=f00596e5" defer></script>
-<script src="solve-replay.js?v=20260922b" defer></script>
-<script src="zoom.js?v=20260922b" defer></script>
-<script src="site.js?v=20260922b"></script>
+<script src="solve-replay.js?v=20260922a" defer></script>
+<script src="zoom.js?v=20260922a" defer></script>
+<script src="site.js?v=20260922a"></script>
 </body>
 </html>

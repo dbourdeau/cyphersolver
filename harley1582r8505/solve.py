@@ -16,7 +16,7 @@ M = lm.load('fr-1530-despatches', order=5, spaces=False)
 def load_runs():
     runs = []
     for fn in sorted(glob.glob(os.path.join(HERE, os.environ.get('CT','ct_p*.txt')))):
-        for line in open(fn, encoding='utf-8'):
+        for line in open(fn, encoding='utf-8', errors='replace'):
             if line.startswith('#') or '|' not in line:
                 continue
             parts = [p.strip() for p in line.split('|')]
@@ -25,7 +25,9 @@ def load_runs():
             seg = []
             for t in ' : '.join(parts[2::2]).replace('/', ' ').split():
                 t = t.rstrip('?')
-                if not t or t == ':' or t.startswith('#') or t in ('.', '..', '-'):
+                if t in (':', '.', '..', ':2', ':3', ':4', '::'):
+                    seg.append('DOT'); continue
+                if not t or t.startswith('#') or t == '-':
                     if seg: runs.append(seg); seg = []
                     continue
                 seg.append(t.split('/')[0])

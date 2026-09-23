@@ -1,0 +1,345 @@
+# ct2_p3.txt - Harley 1582 f.263v (p3), SECOND transcription, read afresh from the manuscript image.
+# The page was first de-skewed (img/page_dsh.jpg, shear -0.031 on img/p3.jpg) so that every MS line
+# runs horizontally; each entry below is ONE MS line, in page order.
+# Format as ct_p3.txt:   3.<n> | clear before | SIGNS | clear after
+# ' / ' marks a visible gap between sign groups; 'name?' = doubtful; #81 = a number written .81.
+# Lines are numbered 3.1 .. 3.47 down the page; the '[y=nnn]' at the end of each entry is that
+# line's y in thumbnail coordinates, so any entry can be re-cut from the image directly.
+# The numbering is NOT the same as ct_p3.txt's: ct_p3 merged some MS lines and split others.
+#
+# ============================ SIGN NAMES USED HERE ============================
+# Names follow signs.md as it now stands (the f.264v pass revised it while this pass ran).
+# Three signs carry values the old ct_p1..p4.txt files did not have, and they are the reason no
+# sign in those files ever decoded to m, b or f:
+#
+#  :2 :3 :4   A CLUSTER OF 2, 3 OR 4 DOTS.  It is a LETTER, not punctuation: **m**.
+#             ct_p3 wrote every cluster ':' and treated it as a word separator.  The dot count is
+#             recorded only so the question can be re-opened; all counts behave alike.
+#             Proof on this page: 3y900 "... :3 d G R PiG b L o o 7 :3 dd L ne L Xo E J Om w L n"
+#             = "maison enne_mie de la chres..."; 3y301 "J PiG :3 :3 7 X L" = "comme le";
+#             3y1004 "... y hg L w :3 L B 7" = "permette"; 3y301 "... E3 :3 sh dd Gm b n" = "moiens".
+#             Statistically ':' = m also beats every other letter, and beats treating it as a
+#             separator, on a word-segmentation score over all four sides.
+#             CROP: img/m_sign_comme1.jpg - the two clusters spelling the "mm" of "comme" (3y301).
+#
+#  phi        A CLOSED OVAL PIERCED BY A LONG VERTICAL STEM, the stem showing above AND below the
+#             oval (like printed phi).  It is **b**.  ct_p3 merged it with the tall long-s below
+#             and so gave every one of them 'u'.  Proof: the line at 3y538/551 ends
+#             "... wT E n Pi b | phi w psi n" = "...ra son bras", then the line-fill dash.
+#             CROP: img/b_sign1.jpg - "b phi w psi n" = "-n b r a s".
+#  f          A TALL LONG-S / f: hook or loop at the TOP OF THE STEM ONLY, nothing pierced.  = u.
+#             (3y900 "hg sh f w X 7 wT L G Pi dd o ne wT L" = "pour le reioindre".)
+#
+#  eq         A SHORT VERTICAL STROKE WITH A SMALL CLUSTER OF 2-3 DOTS AT ITS UPPER RIGHT, written
+#             as ONE sign.  It is **f**.  ct_p3 split it into 'I' + ':', i.e. a t-sign plus an
+#             m-sign, which is why f never appeared and t and m were over-counted.
+#             Proof: 3y1398 "...L :4 7 T wT L w psi eq 7 w :4 7 L o" = "demeurera ferme en";
+#             3y1413 "X q y :2 E Xo eq psi dd wf L" = "luy mal faite".
+#             A dot cluster with NO vertical in front of it is still :2/:3/:4 = m.
+#             OPEN QUESTION: the two-dot cluster ':2' may itself be f rather than m.  :3 and :4 are
+#             secure m (maison, ennemie, comme, mains, remedier, -ment, mariage, permette, armee,
+#             moiens), but ':2' alone at 3.24 gives "du Roy son :2rere" = "son frere", i.e. exactly
+#             where eq is wanted - most likely a faint vertical that was missed.  With only 11 ':2'
+#             tokens on this page the segmentation score cannot separate m from f (-6337 vs -6318).
+#             Left as read.
+#
+#  E3         EPSILON WITH TWO BOWLS OPEN TO THE LEFT ("reversed 3"), no crossing stroke.  = s.
+#  E          LUNATE epsilon, a C with one middle bar.  = a.
+#             ct_p3 had only 'E' and made every epsilon 'a'.  Verified here at 12x on four
+#             epsilons: 3y282 opens "E3 sh dd b Gm o X L f w" = "soin en leur"; 3y1248 opens
+#             "E3 sh wT B dd wT ne L" = "sortir de le"; 3y301 "7 T w E3 :3 sh dd Gm b n" =
+#             "eurs moiens"; 3y1248 "... ne wT L E3 f wT X 7" = "espandre sur le".
+#             EVERY OTHER 'E' IN THIS FILE IS UNVERIFIED on this distinction - the split arrived
+#             late in the pass.  A dedicated epsilon-only pass is the single highest-value next
+#             step; the a-count is still about 2.4 points above French.
+#
+#  #          TWO VERTICALS AND TWO HORIZONTALS.  A THIRD d-sign beside ne (1 vertical, 2 bars)
+#             and H (2 verticals, 1 bar).  Left written '#'; dec.py decodes it d.
+#             Proof: 3y1271 "hg d dd R # 7 J Gm Xo f y w0 q dd" = "pais de celui qui";
+#             3y790 gives "ou sans doute" and "craindra"; 3y1398 "de ceus # e la religion".
+#             Reached independently by three of the five readers, and it scores best of all 21
+#             letters on the segmentation score.
+#
+# ------------- the shapes that decide a letter class, as seen on this page -------------
+#  T   stem with a short bar to the LEFT at the top (or a lead-in dash at mid height) and a closed
+#      loop at the foot = u.   b  loop at the foot, plain stem, NO top bar = n.
+#      d  bowl with a stem CROSSING it and a small hook at the top left = a.   B  beta = t.
+#      (b / T / d / B are the commonest confusion on the page.)
+#  dd  a PLAIN c-bowl with a straight ascender on its right = i.
+#      Eb  an EPSILON (bowl with a middle bar) with a vertical down its right side = t.  Near-twins.
+#  hg  hourglass (X closed top and bottom) = p, repeatedly misread as X / Xo (chi) = l:
+#      3y301 "L n hg w u B" = "esprit", 3y1004 "y hg L w :3 L B 7" = "permette".
+#      That confusion alone accounts for the p deficit and the l excess in ct_p3.
+#  J   reversed L, vertical on the right, foot running LEFT along the bottom = c.
+#      L   L, vertical on the left, foot running RIGHT = e.
+#  wT  omega + top bar + a vertical THROUGH it = r (one sign, not 'ne'+'w').
+#      wf  omega + top bar + a stroke rising ABOVE the bar only = t.   w0  plain omega, no bar = q.
+#  sh / PiG  3-4 rounded minims, or a Pi with three legs = o.   U  only two minims, with a tail = s.
+#  U (s) vs Usq (g): U's bottom stroke runs on past the right minim as a tail; Usq is closed by a
+#      bottom bar that stops.  Both occur on 3y1398 twelve sign-widths apart ("ceUs", "reliUsqion").
+#  tl  one vertical crossed near mid height by ONE bar running only to the LEFT, stem showing above
+#      and below = c.  ct_p3 read these as '7'; true 7 has its bar on top with nothing above it.
+#  rho NEW, value unknown: a stem with a small closed loop at its UPPER RIGHT and a lead-in dash,
+#      the stem running on down past the loop.  Not G (9-shaped) and not b (loop at the foot).
+#      Written 'rho?'.  Three instances, on 3y1499 and 3y1531.
+#
+# ------------- what the new values do to the letter counts -------------
+# Over the 3,825 sign tokens of ct_p1..p4, adding ':'=m and '#'=d puts m at 2.95% (French 3.0) and
+# d at 4.26% (3.7).  Before this pass f stood at 0.03% (needs ~1.1), b at 0, p at 1.41% (needs 2.5),
+# h at 0.18% (needs 0.7), against a 9.96% (7.6), u 9.83% (8.1), e 19.1% (17), l 6.64% (5.5).
+# phi=b, eq=f, hg-for-X and E3=s each take a bite out of exactly the classes that were too fat.
+# h (Om) is the one letter still unaccounted for.
+#
+
+# --- notes carried over from the five reading passes ---
+# [A] harley1582r8505 f.263v (p3) - re-transcription pass A, lines y=538..699 (de-skewed page img/page_dsh.jpg).
+# [A] Sign names per the calibrated chart in the brief (E/d/psi=a, Oi=b, +/J/ti/tr=c, ne/H=d, 7/Gm/L=e,
+# [A] Br/Usq=g, Om=h, G/dd/y/c/u/V=i, X/Xo=l, b/o=n, Pi/PiG/sh=o, hg=p, w0/cy=q, w/wT=r, n/R/U/F/II=s,
+# [A] B/Eb/I/wf=t, T/f/q=u, ':'=m; '#' (two verticals + two horizontals) = d, per the live dec.py key.
+# [A] NEW / CLARIFIED SIGN NAMES INTRODUCED IN THIS PASS
+# [A] :2-  = a dot group of TWO dots with a LONG HORIZONTAL DASH ruled underneath them (..  over  ---).
+# [A] This is the commonest dot mark on these lines. Older transcriptions wrote it plain ':'.
+# [A] I write it ':2' in the sign column and flag here that the underline is present; where the
+# [A] dots stand alone with no underline I write ':2' too but note it in the line comment.
+# [A] I:   = a tall plain vertical bar IMMEDIATELY followed by a two-dot colon set to its right
+# [A] (bar, then one dot high and one dot low). It occurs twice in a row at y=551 ("I :2 I :2").
+# [A] Old name was 'I' + ':' as two tokens; I keep them as two tokens but flag the pairing,
+# [A] because on the page the bar and its colon are written as one gesture.
+# [A] psiU = the psi sign written with a deeply ROUNDED cup (U) rather than a V cup, the stem passing
+# [A] through it. Same letter as psi/d (= a); listed only so the shape is on record. Written 'psi'.
+# [A] tl   = vertical stroke with a short bar joining it on the LEFT at mid height (-|).  Letter c.
+# [A] Distinct on the page from J (reversed L, foot along the bottom to the left) though both = c.
+# [A] f    = tall long-s with a hook at the TOP ONLY, no closed circle round the stem (ʃ / ƒ).  Letter u.
+# [A] The brief called this shape 'phi'; on this page 'phi'/'Oi' is the DIFFERENT shape below, so
+# [A] every long-s-with-hook is written 'f' here.  Confirmed by "instrument", "pour luy", "auec".
+# [A] Oi   = closed oval with a long vertical stem passing right through it, above AND below (Ф / ɸ),
+# [A] usually with a lead-in dash from the left.  Letter b.  (= 'phi' in the live dec.py key.)
+# [A] Genuinely close to 'f'; the test is whether the loop is CLOSED around the stem.
+# [A] E3   = a reversed-3 / double-bowl epsilon, both bowls open to one side, no crossing stroke.
+# [A] Letter s, NOT a.  Only two on these lines (y551 "dores(e)navant", y615 "desguiser") but
+# [A] both were read 'E' (=a) by every earlier pass and both wreck the word.  It is very close
+# [A] to plain E (epsilon ε, one bowl) - this is the single worst confusion left on the page.
+# [A] THREE SHAPE RULES THAT DECIDED MOST OF THE DOUBTFUL SIGNS (worth adding to signs.md)
+# [A] 1. bowl/loop on the LEFT + tall stem on its RIGHT  ->  'dd' if the bowl is an open c (= i),
+# [A] 'b' if the loop is closed (= n).   tall stem on the LEFT + bowl hanging at its lower RIGHT
+# [A] (nearly always with a lead-in dash from the left)  ->  'T' (= u).  i.e. a 'd'-shape is n/i,
+# [A] a 'b'-shape is u.  Earlier passes have these two swapped in many places.
+# [A] 2. hg (hourglass) vs X (chi): the hourglass has a horizontal bar CLOSING it top and bottom.
+# [A] At this size it reads as a plain chi. Four of them on these lines were 'X' in ct_p3 and each
+# [A] one turns p into l: "principal", "peut", "les places", "le prince", "de parme" all depend on it.
+# [A] 3. u (open cup with a lead-in dash, = i) vs o (CLOSED circle with a lead-in dash, = n): the only
+# [A] difference is whether the circle is closed. "religion" at y603 turns on it.
+# [A] Note on line geometry: the de-skewed page still has 16-45 thumbnail units of rise per line from
+# [A] x=400 to x=1345 (it is not constant, and some lines rise faster past mid-line), so each line was
+# [A] cut with a sloping band (helper scut.py in the scratchpad), not with pdcut.py's horizontal band.
+# [B] ct2_part_B.txt - Harley 1582 f.263v (p3), re-transcription of 14 consecutive manuscript lines
+# [B] of the de-skewed page img/page_dsh.jpg. Labels 3y790 ... 3y977 are the y values given in the
+# [B] brief, in order; each label is the next manuscript line down, starting from the one whose band
+# [B] at y=790 holds "Personne maintenant ...".
+# [B] LINE CORRESPONDENCE (checked against ct_p3.txt): 3y790 = ct_p3 3.12, 3y806 = 3.13, 3y821 = 3.14,
+# [B] 3y836 = 3.15, 3y853 = 3.16, 3y868 = 3.17, 3y884 = 3.18, 3y900 = 3.19, 3y916 = 3.20, 3y928 = 3.21,
+# [B] 3y938 = 3.22, 3y951 = 3.23, 3y963 = 3.24, 3y977 = 3.25.
+# [B] NOTE: the brief says the "Lorraine" line is at y=900; on the de-skewed page it is the line one
+# [B] step EARLIER in the given list, labelled 3y884 here. The y values drift relative to the real
+# [B] rows (the rows are 15-18 thumbnail units apart at the left margin near the top and ~11 at the
+# [B] foot, and every row falls ~20 units over the width of the page), so the labels are ordinal.
+# [B] NEW / CLARIFIED SIGN NAMES USED HERE
+# [B] E3   = epsilon written as TWO bows (upper + lower), the lower bow running out into a tail along
+# [B] the baseline (a reversed '3'). Kept apart from E, which on this page is a LUNATE C/E
+# [B] (one bowl open right) with a single straight tongue in the middle. E = a ("de mal
+# [B] contens", 3y806; "a sa deuotion", 3y951). E3 = s: "desseing" (3y821), "et Escosse"
+# [B] (3y836), "les lettres" (3y868), "a Lisbone" (3y853), "le s[e]ul" (3y977). Earlier
+# [B] transcriptions merged the two. (signs.md was updated to the same distinction mid-task.)
+# [B] Br   = a SQUARE C open to the right: top bar, left vertical, bottom bar (signs.md's '['). g.
+# [B] Gives "desseing" (3y821), "d'ingenieur" (3y853), "d'Angleterre" (3y900), "la charge"
+# [B] (3y951). NOT to be read as Gm, which is a bare Gamma (top bar + left stem only) = e.
+# [B] rt   = a vertical crossed by ONE short bar running RIGHT from its MIDDLE (mirror of tl). = c.
+# [B] "auec rt Gm n B L maison ennemie" = "avec ceste maison ennemie" (3y884). ct_p3 read b.
+# [B] tl   = the mirror image, bar running LEFT from the middle of the stem. Also = c (3y790, 3y951).
+# [B] c    = a plain crescent open to the RIGHT, often with a ligature dash, no closed bowl and no
+# [B] ascender. = i. "qui sert" and "a Lisbone" (3y853), "ordinaires" (3y900), "deuotion"
+# [B] (3y951), "scay ie bien" (3y977). ct_p3 read most of these as o.
+# [B] hg   = the hourglass: a chi with a straight BAR closing its top (the feet stay open). = p.
+# [B] "pour" (3y884), "pratique" (3y900), "particuliere" (3y884), "permette" (3y963),
+# [B] "apparence" (3y951). At low zoom it is easily taken for a plain X (= l).
+# [B] Oi   = a closed oval PIERCED by a long vertical stem, stem clearly visible above AND below.
+# [B] = b. Found at 3y853 ("a Lisbone") and 3y977 ("bien"); signs.md now calls this sign phi
+# [B] and calls the plain long-s f. Here the brief's names are kept: Oi = b, phi = the tall
+# [B] long-s / f with a hooked top and no pierced oval = u.
+# [B] PiG  = flat top bar with THREE straight legs; kept apart from sh (3-4 ROUNDED minims, cursive
+# [B] m/w). PiG = o in "mais-PiG-n ennemie" (3y884), "religion" (3y928), "du Roy" (3y938);
+# [B] but the same shape at the end of 3y821 gives "en an-PiG-le | terre et Escosse", which
+# [B] wants g. Both were re-checked at maximum zoom and look identical. Flagged, unresolved.
+# [B] I    = a plain vertical stroke (no serifs) standing immediately before a dot group ("I :2").
+# [B] Kept as a separate token, as in ct_p3.
+# [B] DOT GROUPS. :3 and :4 are securely m - "de mal contens" (3y806), "maison / ennemie" (3y884),
+# [B] "les lettres me sont venues es mains" (3y868), "remedier" (3y916), "-ment" (3y900), "mariage"
+# [B] (3y977), "permette" (3y963), "armee" (3y951). :2 (exactly TWO dots) is NOT m on these lines:
+# [B] 3y938 gives "... du Roy son :2-rere" = "son frere", and 3y928 "... sont I :2 rere a ses
+# [B] pratiques". A two-dot group looks like a separate sign, most probably f. Recorded as read.
+# [B] OTHER OBSERVATIONS
+# [B] T (u) always carries a horizontal lead-in dash crossing the stem at mid height with the bowl
+# [B] at the lower RIGHT; b (n) is a bare loop at the foot with a plain stem and no lead-in dash;
+# [B] d (a) is a bottom bowl with a stem whose top curls back LEFT in a small hook.
+# [B] o (n) is a closed circle with a ligature dash at mid height (entering from the left, or
+# [B] leaving to the right). At 3y790 x~830 one circle carries a small detached tick ABOVE and no
+# [B] dash; recorded as o, since no stroke passes through it (that would be Oi = b).
+# [B] # (two verticals crossed by two horizontals) behaves as the letter d throughout this page:
+# [B] "ousans#oute" -> "ou sans doute", "crain#ra" -> "craindra", "lestat#angleterre",
+# [B] "quisert#ingenieur". Left as # per the brief. H (two verticals, ONE crossbar) is also d.
+# [B] Bands were cut by tracing each row's ink maximum column by column, because the rows of the
+# [B] de-skewed page still fall by ~20 thumbnail units from the left margin to the right edge.
+# [C] ct2_part_C.txt - Harley 1582 f.263v (p3), lines y=1398..1503, re-read sign by sign
+# [C] from img/page_dsh.jpg (de-skewed; thumbnail coords). Supersedes ct_p3.txt lines 3.30-3.36.
+# [C] Format: 3y<y> | clear | SIGNS | clear | ...
+# [C] NEW / RE-DEFINED SIGN NAMES IN THIS FILE
+# [C] tl    one vertical stroke crossed near mid-height by ONE long horizontal bar that runs only to
+# [C] the LEFT of the stem (the stem sticks out above AND below the bar; the bar does not cross
+# [C] to the right).  = c.  ct_p3 read this as '7'; '7' proper has its bar ON TOP with the stem
+# [C] hanging from the bar's right end and nothing above the bar.  Proof: 3y1398
+# [C] "ne L tl 7 q II # 7 Xo psi w L X dd Usq G sh b" = "de ceus de la religion".
+# [C] #     two verticals AND two horizontals (a true #).  Still written '#', but in 3y1398 it stands
+# [C] exactly where the plaintext needs **d** ("...de ceus # e la religion..." = "de ceus DE la
+# [C] religion"), i.e. it is a third d-sign beside 'ne' (1 vertical, 2 bars) and 'H' (2 verticals,
+# [C] 1 bar).  Recorded as '#' per instructions, not silently re-spelled.
+# [C] :2 :3 :4   dot clusters = m, as briefed.  Counted from the image each time.
+# [C] eq    **THE MISSING f.**  A plain vertical stroke (short, serifed, x-height, no bar, no bowl)
+# [C] IMMEDIATELY followed by a small cluster of 2-3 dots set beside its upper right.  The pair
+# [C] is ONE sign and it is **f**, not 'I' + a dot group.  Two independent controls, both on
+# [C] lines read sign by sign:
+# [C] 3y1398 x1211-1218  "...ne L :4 7 T wT L w psi | I :3 | 7 w :4 7 L o"
+# [C] = "demeurera" + f + "erme en"  ->  "demeurera FERME en [72]"
+# [C] 3y1413 x872-879    "...X q y :2 E Xo | I :2 | psi dd wf L"
+# [C] = "luy mal" + f + "aite"       ->  "luy mal FAITE"
+# [C] ct_p3 wrote both as 'I' + ':' , which is exactly why f is missing from the letter counts
+# [C] (ct2_head.txt: "f 0.03% (needs ~1.1) ... f and h are still hidden").  Written 'I :3' /
+# [C] 'I :2' in the line above for 3y1398 because that is literally what is on the page; from
+# [C] 3y1413 on it is written 'eq', the key's own name for f.  Free dot clusters with no vertical
+# [C] in front of them stay ':2/:3/:4' = m.
+# [C] U     two minims with the bottom stroke running on past the second one as a tail = s.
+# [C] Distinguished from Usq (= g), whose bottom bar closes the two verticals and stops.  The
+# [C] pair is hard: 3y1398 has both, 12 sign-widths apart ("ceUs" and "reliUsq-ion").  Controls:
+# [C] 3y1413 x541-552 "Xo Gm U" = "les"; 3y1398 x1071-1081 Usq inside "religion".
+# [C] WARNING recorded, not invented: at 3y1398 x~962-973 there is a sign made of two short verticals
+# [C] standing on a long horizontal foot-stroke.  It is all but identical to the 'Usq' (= g) of
+# [C] "religion" 100 units further right on the SAME line, yet the plaintext there requires s.
+# [C] Written 'II' (= s) with the shape described; it is probably the 'U' defined above (the
+# [C] foot-stroke does run on past the right-hand minim).  See the report.
+# [C] NOT A SIGN: the loop at 3y1398 x~943-949 that ct_p3 transcribed as 'G' is the descender of the
+# [C] "g" of the clear-text line above (y=1380); verified on a tall crop.  Dropped.
+# [C] ================= LINES BELOW ARE PROVISIONAL =================
+# [C] 3y1461, 3y1487 and 3y1503 were read only at chunk zoom (~25 px per thumbnail unit), not sign by
+# [C] sign at 10-25x as 3y1398 was.  Individual shapes in the a/i/u/s classes are unreliable and the
+# [C] seams between chunks may drop or double a sign.  Do NOT feed these three lines to a solver as
+# [C] ground truth; the stretches that DO decode are marked in the report.
+# [D] ct2_part_D.txt - Harley 1582 f.263v (p3), re-transcription of the band y=1515..1647,
+# [D] read sign by sign from img/page_dsh.jpg with pdcut.py at scale 3.5-9.0, 22 Sept 2026.
+# [D] LINE IDENTIFICATION.  The ink-row maxima of the de-skewed page in this band are at
+# [D] y = 1494.8, 1515.1, 1532.6, 1550.1, 1572.4, 1589.6, 1606.5, 1625.3, 1647.1, 1664.9.
+# [D] The brief's two content anchors fix the mapping: the line that ends "On ... la Roine qu'elle a
+# [D] faict merveille e quelques" is the ink line at y=1550.1, and the line that begins "fois en
+# [D] reproche d'ingratitude ..." is the ink line at y=1572.4.  The brief calls those 1531 and 1547,
+# [D] so the brief's y values sit about one line ABOVE the measured ink row.  The seven requested
+# [D] lines are therefore the seven consecutive ink lines 1532.6 ... 1647.1, and they are labelled
+# [D] below with the brief's y values (3y1515 ... 3y1647).  The ink line at 1515.1 - the line just
+# [D] above, which is also half cipher - is transcribed too, as 3y1499, so that nothing in the band
+# [D] is missing whichever way the numbering is meant.
+# [D] NEW / RE-DEFINED SIGN NAMES INTRODUCED HERE
+# [D] rho   a stem with a SMALL CLOSED LOOP AT ITS UPPER RIGHT and a lead-in dash from the left,
+# [D] the stem running on down past the loop (shape: P / rho).  It is NOT the 9-shaped `G`
+# [D] (loop at the top with the descender coming off the loop's RIGHT) and NOT `b` (loop at
+# [D] the FOOT).  Earlier readings merged it with `G`.  Its value is unknown; written `rho?`.
+# [D] Seen at 3y1499 x~1049-1059 and x~1250-1260.
+# [D] DISCRIMINATORS USED (they decide letters, so they are recorded)
+# [D] T (=u)  stem with a bowl at its LOWER RIGHT, almost always with a lead-in dash from the left
+# [D] at mid height; the stem stops at the bowl.  Confirmed by "qualite" + "leurs".
+# [D] b (=n)  plain stem ending in a small CLOSED RING at the foot, no lead-in dash.
+# [D] B (=t)  stem with a bowl on its right at MID height and the stem running on well BELOW the
+# [D] bowl (beta).  This is the sign most often misread as T.
+# [D] d (=a)  c-bowl whose ascender crosses the bowl's upper-right arm, small flag at the top left.
+# [D] dd (=i) c-bowl with a straight ascender standing on its right, not crossing.
+# [D] 7/Gm (=e) bar-on-top with the stem at the RIGHT end / at the LEFT end.  Both e.
+# [D] ne (=d) one vertical crossed by two horizontals that project on BOTH sides.
+# [D] Usq (=g) two verticals standing on a bottom bar; the bar may overshoot to the right.
+# [D] psi (=a) a cup with a stem rising through its middle.
+# [D] cy (=q) a narrow loop with a long tail that curls away to the LEFT below the line.
+# [D] w0 (=q) plain round omega, no bar.  w (=r) omega + flat top bar.  wf (=t) omega + top bar +
+# [D] a stroke rising ABOVE the bar.
+# [D] Doubtful signs are marked `name?`.  ` / ` marks a visible gap inside a run.
+# [D] The decode of each line (python dec.py) is given on the '#=' comment line under it.
+# [D] = anduenementenleursletsobegeridesleeura | ... | eniersto / uaautresetnoniaanetne
+# [D] = qualitesque?d | ... | auosetllluesatendrreasouamannieequilsoautannreshebeaaeeeennea
+# [D] = aauentsal / luimtonellisirdelueotmrqtle?tgeruice   ("...t?geruice" looks like -seruice with the g-sign read wrong)
+# [D] = elenalasde elegdenndeniereloutture teI/s m
+# [D] = qne | ... | mouienuantertaiaeabes
+# [D] = qualeuteaareeusaenrbaenesieaasaiutalemeuremlloaeealeurasaestceruelleaq
+# [D] = eetda / aliansea   (the tail looks like -ALLIANCE with dd/F read one class off)
+# [D] CAVEATS ON THIS PASS
+# [D] 1. The de-skew is not perfect across the full width: on every line the ink row climbs by about
+# [D] 6-10 thumbnail units between x=1150 and the right margin, so the right-hand quarter of each
+# [D] line had to be re-cut with a band 6-9 units higher.  Signs in that zone are the least secure.
+# [D] 2. Three sign families stayed unresolved and are marked `?` wherever they occur:
+# [D] - the `Usq`/`H`/`F`/`II` family (two uprights with one or two bars): the bar's height and
+# [D] whether it overshoots decide between g, d and s, and at this resolution it often cannot
+# [D] be called.  3y1531 ends `...Usq? 7 w T G J Gm` = "?eruice", i.e. that one is almost
+# [D] certainly an s-sign, not Usq.
+# [D] - `E` vs the new `E3` (=s, lunate epsilon vs reversed-3 epsilon, added to signs.md during
+# [D] this session).  Every `E` below was read before that distinction was published and some
+# [D] of them are `E3`; the a-count in these lines is visibly too high.
+# [D] - `rho?` (see header) - a real, repeated shape with no value yet.
+# [D] 3. What reads cleanly and validates the chart: `w0 T psi X dd B Gm` = "qualite" (3y1515),
+# [D] `X Gm T w n` = "leurs" (3y1499), `w0 T G X II` = "quils" (3y1515), `X Gm T w` = "leur"
+# [D] (3y1628), `J Gm w T L X X L` = "ceruelle"/"cruelle" (3y1628), `Xo dd E o F 7` = "-liance"
+# [D] (3y1647).  The stretches between them do not yet read, which is a transcription problem,
+# [D] not a key problem.
+# [MAIN] ct2_part_MAIN.txt - rows read by the lead pass: y=282, 301, 1004, 1024, 1041, 1062, 1248, 1271
+# [MAIN] Sign names already normalised to the canonical signs.md: phi = pierced oval = b; f = tall long-s = u;
+# [MAIN] E3 = reversed-3 epsilon = s; E = lunate epsilon = a.
+
+3.1 | a mesure que ses ennemis se rallient | E3 sh dd b Gm o X L f w 7 b Eb wT L B 7 o E b w L n f n + dd B psi b wf # 7 E L F # G + 7 n L B dd wT psi f y T Usq w0 q dd # G b 7 w | (line end, right margin)  [y=282]
+3.2 | (line start) | w dd n R 7 b B Xo 7 T wT L n hg w u B 7 Eb Xo 7 T w E3 :3 sh dd Gm b n E Xo Gm T w n | les plus grands princes de la Chrestiente | J PiG :3 :3 7 X L / #36 #81 | Et l'alliance par ladite d'un  [y=301]
+3.3 | ruyn[t]e toua auy a la Religion e s'est retranche toute Espagne de fa[?] / Ay auec ceux [t]ollement quel y a apparu quel il se iettera a v[ost]re p[ar]tie p[our] biens contre les. | (no cipher on this line - clear French throughout) | (line end)  [y=538]
+3.4 | brac[?]e a[uec] cite[?] Catholiques (faint) | Gm B L n X sh T n 7 w E X 7 E psi eq eq L tl B G o Pi b n L wf :3 d J B dd sh o E # T X psi X L w0 q dd ne Pi w Gm E3 L o d f psi b wf X Gm :2 7 w E n PiG b phi w psi n | (line-fill dash, line end)   [decodes: etesl-ouseralea-atmtm-ectinonsetm-action-adulale-quidoresenauant-lemerasonbras; "qui dores en auant le m... son bras" is firm, the first half is not]  [y=551]
+3.5 | (line start; cipher begins at the left margin) | ne w sh dd ne B Gm dd Xo 7 sh L + phi B 7 T wT # 7 n Gm n X Xo T n X Gm wT o q :2 dd I f/cy? ne # L n n 7 dd b Pi E | . (full stop; paragraph ends, rest of line blank)  [y=566]
+3.6 | Ce + qui vn non son b[?] numero Inquiete e doffiance ne doubtera point de cest Article, Car ayant ch[?] reduit d[?]ce paix sans offense e sans dommage tout ainsi la | (no cipher on this line - clear French throughout) | (line end)  [y=580]
+3.7 | Religion. Il ne s'y peut plus fier: Et se voyant forclos de ce Party, il voudra s'appuier d'vn autre ou il y aura a la besongne | J Gm n B # 7 n L w 7 b ne w L | (line-fill dash, line end)   [decodes: cestdeserendre = "c'est de se rendre"]  [y=592]
+3.8 | (line start; cipher fills the whole line) | sh f J Usq L eq PiG T dd o n Eb wT f :3 7 b wf hg wT dd o + G hg E Xo # 7 Xo psi w T G b 7 ne L tl Gm T II # Gm X d wT L Xo u Br G sh b J Pi :4 L E dd b n G R PiG dd Eb cy T G X o L | (line-fill dash, line end)   [decodes: oucgetm ou instrument principal de la ruine de ceus de la religion come ainsi soit quil ne]  [y=603]
+3.9 | (line start; cipher fills the left half) | hg L f B # L E3 Usq f dd R 7 w J Gm eq psi dd + B ne d o T 7 w n E f B wT L :3 7 b B | Execrable envers tous hommes qu'ils s'agissent en zele e y r[?]auoter sua a q[uelque]   [decodes: peutde(s)guisercetmaictdanuersautrement; first sign hourglass (hg) not chi; the E after "L" is where the plaintext wants s - see header note]  [y=615]
+3.10 | ...pour que ce fust le party de sa Religion de sa gl[oi]re o[?] est notam[m]ent q[ue] sans la vi[ctoire] | # L :3 PiG b n dd Gm T w ne L f Gm Xo q Gm T wT 7 o X psi Xo sh dd d B w E c wf . L wT | (line end)   [decodes: demonsieur de uelueur en la loi a trait.er - "de Monsieur ..." is firm, the rest not]  [y=628]
+3.11 | (line start; cipher fills the whole line) | d f L + X L hg wT c b tl 7 # L hg E w :4 7 hg PiG q wT Xo f y wT 7 o # w L Xo 7 R hg Xo E tr 7 E psi T dd Xo wf L o U dd d psi T Pi L n q d d B I J Gm I U T dd Xo Xo f y | (line end)   [decodes: auec le prince de parme pour luy rendre les places a-auil tensia... ; "auec le prince de Parme pour luy rendre les places" is firm]  [y=640]
+3.12 | (line start) | J u n n b d ne psi | pour sauuer les personnes qui ch[?] en r[?]s[?]m este ch[?] i any[?]   [decodes: cissnada - does not read; the old ct had "J o R n T d ne psi"]  [y=653]
+3.13 | Notables familles. | (no cipher on this line - short clear line, paragraph ends; rest of line blank) | (line end)  [y=665]
+3.14 | Ce [paragraph mark] au quam[?] a Larvoi[?] fait ditre[?] Luy e les Estatz, on n'a assez apparu qu'il n'a de Jutchon[= Intention?] que de sortir bagues sauues e rauoir ses prisonniers, a qui se bon ch[?] a[?] | (no cipher on this line - clear French throughout) | (line end)  [y=684]
+3.15 | quils auant a tous les Jours prez d[e] luy / les plus e agreables aus, Estatz, v[ost]re f[?]uagnet[?], La Febre, Aurilly e ch[?] resistant ch[?] qui auront auruchdes[?] | (no cipher on this line - clear French throughout) | (line end)  [y=699]
+3.16 | Personne maintenant a fondement certain quil retiendra en France - | Pi T n psi o R # sh q Eb L Xo L w PiG psi E H? o eq wT Gm wT L tl w d G o # w E w0 f dd Xo o 7 wT L X 7 q L | (line end)  [y=790]
+3.17 | (line start) | J sh o B wT L Xo T y , f b hg d w B psi ne L :3 E Xo J sh b wf L o n | dont le subiect estant beau, veu que le nombre e croist e multiplie tous les jours  [y=806]
+3.18 | soubz lestat present: Luy a il de plus plausible que de luy mettre en main, pour le moins en lesprit | w0 f L X w0 T 7 # L n E3 7 dd b Br L o d o PiG Xo 7 | (line end)  [y=821]
+3.19 | (line start) | B 7 w wT L 7 wf L E3 J sh n R 7 | en delivrant par mesmes moiens e le Roy de France de s'embrouiller e le Roy d'Espagne de peine? Et Je scay que des lan-  [y=836]
+3.20 | part le Roy d'Espagne faisons traictes a la soubz main avec luy par un certain | G B E X dd 7 b cy T c n Gm w B # dd o Br L o G L f wT psi X c E3 phi sh b 7 ne Pi b wf | (line end)  [y=853]
+3.21 | (line start) | Xo 7 E3 X Gm Eb wT L R :4 7 n sh b wf q L o T 7 E3 Gm R :3 E G b R | Maintenant aussi la Roine sa mere va traicter avec luy le mariage de sa fille &  [y=868]
+3.22 | Lorraine | hg sh f w X 7 wT L G Pi dd o ne wT L psi T 7 J rt Gm n B L :4 d G R PiG b L o o 7 :4 dd L ne L Xo E J Om w L n Eb dd L o B 7 L q hg? d w B dd J f Xo c 7 wT L | (line end)  [y=884]
+3.23 | (line start) | :4 L o B # L Xo 7 E3 wf E Eb # d b Br Xo 7 B L wT w L psi cy T PiG y q 7 f X 7 E hg w d wf c w0 f L E sh wT ne c b E G wT L n # 7 J Gm T Pi ne L Pi T y E Gm L o 7 E3? J Pi | (line end)  [y=900]
+3.24 | (line start) | R 7 #6 H Pi dd B wT L :4 7 ne G 7 w | (line ends short, rest of the line blank)  [y=916]
+3.25 | Car quant a fu(?) | #21 J Usq L eq ne L X E Usq f L w L + Pi b B w L tr 7 f II ne 7 Xo psi wT L X dd Br G PiG b L o #72 X 7 #81 n sh b eq w L wT 7 E | ses pratiques  [y=928]
+3.26 | e Pour avenir se suspecte quil ne le laissera jamais tenir la campagne e France. Et d'autre part il se | ne L L eq dd 7 B E o wf # T w PiG y n Pi b :2 wT Gm w L | (line-fill dash, line end)  [y=938]
+3.27 | (line start) | w0 f dd X | ne prendra jamais | Xo E J Om psi w Br L ne T o L d wT :? 7 L | qui ne sont | d E3 E ne L f sh B c Pi b tl L cy T dd Xo o y d psi hg E w L o ne 7 w0 f L Xo 7 | (line-fill dash, line end)  [y=951]
+3.28 | (line start) | wT PiG y Xo q y hg L w :3 L B 7 | (short line, rest of the line blank)  [y=963]
+3.29 | (line start) | #57 n + E G dd Gm phi c 7 b | n'est pas si facile a vaincre? Mais quoy qu'on confesse aussy quelle est aisee a troubler | X L E3 q Xo :4 psi w dd d Usq Gm ne #721? | (line-fill dash, line end) [the final group is written between dots; it may instead be the sign 7 followed by the number .21.]  [y=977]
+3.30 | aggreable aux uns ... partir le Pais en Ligue e mis la Court e au Conseil en combustion | J Gm n B wf d f wT L E3? B L f b hg wT dd o + 7 | (dash, line end)  [y=1041]
+3.31 | (line start) | w0 f dd | sans les beaucoup examiner ...  [y=1062]
+3.32 | maintenues? e savoir tousiours | E3 sh wT B dd wT ne L Xo d f o Gm T? wT :3 7 L # L wT 7 dd R wf w L E X sh T wT Xo E dd L B 7 wT L wf 7 n hg d b ne wT L E3 f wT X 7 | (dash, line end)  [y=1248]
+3.33 | (line start) | hg d dd R # 7 J Gm Xo f y w0 q dd | la voudroit troubler en elle. A cest effect savoir ...  [y=1271]
+3.34 | que seule ombre e protestation de mariage · | wf d o ne dd n w0 f L X 7 hg psi wT B V ne L tl 7 q II # 7 Xo psi w L X dd Usq G sh b ne L :4 7 T wT L w psi eq 7 w :4 7 L o #72 L wf | (line end)  [y=1398]
+3.35 | (line start) | 7 E #99 Xo Gm U #81 #36 E q w sh o B X 7 T ne 7 :4 Pi V L o # 7 X q y :2 E Xo eq psi dd wf L 7 B hg Pi T w d u? o b 7 X L psi L o b 7 w L n q E d? Gm X L E b? psi c E n 7 w b? Gm w wf? L | (line end)  [y=1413]
+3.36 | (line start) | Gm B hg Pi T w w? Xo 7 E #99 | Si dea la amendemens elle ait tenu la ligue que s'estoit touchant ... les choses ne fussent au poinct ou elles sont ... (line end; all clear after the run)  [y=1427]
+3.37 | et celluy ou elle a esté tres marrie de les voir | PiG/sh T E b ne E X psi :2 w T? o J Gm · | Le Roy de Navarre ... (line end)  [y=1443]
+3.38 | mieulx | 7 T w f w0 w? · L Xo 7 psi Xo T q 7 w c c? B 7 T? psi dd w w? E d b L n o V E 7 X Pi T U T w0/cy T psi X q B L o y n L X X? sh b Xo E X 7 T w L X 7 Xo Gm E E psi f f T o ne Pi 7 n · L E b w T G b L I | (line end) [PROVISIONAL]  [y=1461]
+3.39 | (line start) | q L E Pi Pi Pi d d X 7 n psi X q b T q n E 7 I Gm o B sh o B f b 7 b L Xo 7 T L T L n n w w · L 7 7 Eb L o w d w d n L I Gm b c o X w T? sh V L y X L f w E 7 b o T o 7 :2 G n X L E E :2 7 w w d sh o # 7 Eb L X Gm | (line-fill dash, line end) [PROVISIONAL]  [y=1487]
+3.40 | (line start, x=468; the line above the brief's first line) | d o ne q 7 b Gm :3 7 o B L o X Gm T w n X Gm wf n PiG phi? Gm Usq? 7 w G? H L n X 7 L q w E | qui est gratuit ... honorable- | 7 b rho? L w n Eb Pi / T E psi f B w L n L B o sh b rho? E d o 7 B b 7 | (line-fill dash, line end)  [y=1499]
+3.41 | (line start, x=469) | w0 T psi X dd B Gm U cy T 7 G? H? | Cela faut quy ne | E f sh n Gm B X X X q 7 n psi B Gm o ne w w L psi U sh T E :4 d b b G 7 L w0 T G X II Pi d T Eb psi / o b w L F? Om 7 phi? L psi E L Gm 7 Gm o b 7 E | (line end, x~1292)  [y=1515]
+3.42 | (line start, x=471) | E psi T? 7 b B n d X / Xo T? V :2 I sh o? Gm? X Xo dd? n G w # L Xo T? L Pi eq w w0? wf X L rho? wf Usq? 7 w T G J Gm | On ... [blotted word] ... la Roine qu'elle a faict merveille e quelques (clear to the line end)  [y=1531]
+3.43 | fois en reproche d'ingratitude. Mais elle se peut souvenir q depuis l'an 70 | Gm X L o psi X psi n H 7 Gm X Gm Br? ne 7 b o # 7 b G L w X sh T? T? w L I? Gm? / n :2 | (line-fill dash, line end)  [y=1547]
+3.44 | (line start, x=471) | w0? b 7 | Jamais Je n'en di tam d'affect suy passe tam de peril. Et croy a quelle fin l'an 79 fins | :3? Pi T? V L / o T? psi o B Gm w B E G? d Gm? E phi 7 n? | (line-fill dash, line end)  [y=1580]
+3.45 | THIS LINE IS CLEAR ONLY - no cipher anywhere on it. It reads: "Car quant aux dictes prest[z] l'an 1576 est a Monsaigneur qui l[u]y [f]aict, a cy respondre. Depuis Il cy a d[i]t a d'une sorte pour g[...] Jntuiest a luy -" | (no signs) | (line end)  [y=1611]
+3.46 | (line start, x=473; the whole line is cipher) | cy T d X Gm T B L E d w L 7 T n E 7 b? w phi d 7 o 7 n dd? L E d? n E V T B d X L :2? 7 T w L :2 X Xo sh d Gm / L d X Gm T w E n d L n B J Gm w T L X X? L E cy? | (line end, x~1240)  [y=1628]
+3.47 | ron so[n]uoir e plus estre [c]onuenoir puis n[a]tre quilz se conseruassent [i]aux tant aux mesmes sans auoir est honnuer(?) dy k[e] sa part . | L Gm wf # E / E? Xo dd? E o? F? 7 E3? | (line end, x~1312)  [y=1647]

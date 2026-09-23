@@ -1,0 +1,85 @@
+# Harley 1582 f.264v (p4), SECOND transcription, read sign by sign from img/p4.jpg
+# against the broken key (key.json). Supersedes ct_p4.txt, which was made before the break
+# and is ~15-20% wrong at sign level.
+#
+# NEW / CORRECTED SIGN NAMES (shapes described as seen on this page)
+# ------------------------------------------------------------------
+# :2 :3 :4   the DOT GROUPS (two, three and four dots).  These are NOT punctuation and NOT
+#            word dividers: they are the cipher's letter **m**.  All three dot counts behave
+#            as the same letter here; the count is recorded only so the question can be
+#            re-opened.  Pinned by 7 Eb :2 psi G o B Gm b Tu o wf = "et MAINTENANT",
+#            by Xo psi :3 G B dd 7 = "l'AMITIE", and by :4 PiG b n c Gm q wT ne L = "MONSIEUR de".
+#            (signs.md said "dot groups -> transcribe as ':' , a separate token"; that is the
+#            single biggest error in the old files, which is why no sign mapped to m.)
+#
+# phi        φ = a closed OVAL PIERCED BY A LONG VERTICAL STEM (stem shows above and below the
+#            oval).  This is the cipher's letter **b**.  Pinned by "de BEAUcaire" (end of 4.4)
+#            and, on p2 l.17, by psi n U L f w Gm # T b Gm phi sh b o 7 E wT = "asseure d'une
+#            BONNE ar[mee]".  It was being confused with:
+# f          ƒ/ʃ = a tall long-s: a hook/loop at the TOP of the stem only, usually with a short
+#            cross-bar on the left; nothing pierces a closed oval.  f = u.
+#            phi and f are the m/b pair the old files collapsed.
+#
+# E3         ε/"reversed 3" = an epsilon with TWO bowls, open to the left, no crossing stroke.
+#            = s.  NEW NAME.  It was being written "E".
+# E          ϵ = LUNATE epsilon, a C with a single middle bar.  = a.  (The two really are two
+#            different shapes: compare "issant" in 4.1 with "estroite" in 4.1.)
+# Eb         ε with a long vertical through it.  = t.  (unchanged)
+#
+# T          ъ = stem with a SHORT BAR TO THE LEFT at the top and a closed loop at the foot.  = u.
+# b          stem with a closed loop at the foot and NO top bar.  = n.
+#            T and b are the second big confusion: the old file wrote "b" for both, which is why
+#            "monsieur" and "auquel" came out "monsienr"/"auqnel".
+#
+# #          the true hash sign (two verticals, two horizontals) = d, as is H (two verticals,
+#            one crossing horizontal) and ne (one vertical, two horizontals).  All three occur
+#            on this page and are distinct shapes; the old file mixed # and H freely.
+# PiG        m-LIKE three-legged sign with a flat top bar (looks like a printed m) = o.
+# w / wT     omega with a flat bar / the same with a vertical through the bar.  Both = r.
+# wf         omega+bar joined to a long-s, one unit = t.
+#
+# CONFIDENCE, line by line
+#   4.1 4.2 4.3 4.5 4.6   read sign by sign at 8-12x; each decodes to running French.
+#   4.4 4.7 4.9 4.11      read at 7-8x; decode mostly French, individual signs flagged '?'.
+#   4.8 4.10              short runs, read but not confirmed by a reading; treat as provisional.
+# '?' = that sign is doubtful.  Where a run does not decode I have kept what I actually see
+# rather than mend it (see 4.3, the nine signs between "hors de" and "places").
+#
+# Format as ct_p4.txt: <page>.<line> | clear before | SIGNS | clear after
+
+4.1 | (line start; the clear above ends "...Item les pais de Toulouse") | 7 Eb :2 psi G o B Gm b Tu o wf dd sh f u n U E o Eb H L Xo psi :3 G B dd 7 Gm E3 wf w Pi u Eb L # 7 :4 PiG b n c Gm q wT ne L | (line end)
+# = "et maintenant iouissant de l'amitie estroite de Monsieur de"   (100% French, no residue)
+
+4.2 | (line start) | :3 PiG o n u 7 T wT :4 PiG o :4 sh w L o J y E f cy T Gm Xo X d Xo 7 q wT L n Eb b Gm J L E3 n psi dd w L R? 7 X L T b 7 b B | (line end)
+# = "Monsieur Monmorenci auquel la leur est necessaire ..."  (tail after "necessaire" uncertain)
+
+4.3 | (line start) | E n U Gm T w L wT Om Pi wT E3 # 7 T Pi PiG f T w PiG q n hg Xo E tr 7 E3 ne L B Pi T wf L X d hg w sh f dd o J Gm # L Xo psi b Usq T Gm | (line-fill dash, line end)
+# = "asseurer hors de [ T Pi PiG f T w PiG q n = u o o u u r o u s, unresolved ] places
+#    de toute la prouince de Langue-"   (the nine signs were re-checked at 10x and are as written)
+
+4.4 | (line start) | ne Pi J w0 f u? L n wf | la plus riche e importante de toute la France | 7? R? Eb E b B G tr 7 Xo f V d E n L f w 7 H Gm phi L E f | (line-fill dash, line end)
+# = "doc qui est ... estant icelui a asseure de beau-"   (run 2 begins at thumb x~1000)
+
+4.5 | (line start) | tr psi dd wT L n q wT Xo Gm w Pi E3 b L wf # 7 Xo E U 7 o Gm n J G Tu f E3 L 7 ne Gm phi L II dd L w n H L X L I 7 o E - # 7 J d wT | (line end)
+# = "caire sur le Rosne et de la seneschaussee de Besiers de le tena? - de car-"
+#   (4.4 "...de Beau" + 4.5 "caire" = BEAUCAIRE; "de Besiers" = Beziers; "de car"+4.6 = CARCASSONNE)
+
+4.6 | (line start) | ti psi n E3 sh b o 7 ne T? Br? H L # Gm Xo L y tr E B Om 7 Gm Eb psi T w L E3 hg Xo Tu tr 7 n ne dd :3 hg PiG wT Eb E b tr L B psi o wf E f q T n | (line end)
+# = "cassonne de ?g de de le i cathe et autres places d'importance tant au..."
+#   (the four signs after "cassonne de" are doubtful; "places d'importance" is certain)
+
+4.7 | (line start) | cy T 7 U E f o B Xo d o Usq q L H PiG J . | De ceste province vient de la Religion ...
+# = "que ?aunt Languedoc."   ("Languedoc" certain; the five signs after "que" doubtful)
+
+4.8 | ... e maintenant y en a plus de cinq cent des familles | hg Xo f E3? dd ne | (line-fill dash, line end)
+# = "plus?id" - provisional, six signs only
+
+4.9 | (line start) | w n f q b Xo 7 E y U Pi B psi Xo E # L T sh Eb G sh o ne T wT Pi V # L b E Tu? E? wT w 7 :4 psi dd n | une seule circonstance e ...
+# = "...?le ais o? ta la deuotion du roy de Nauarre mais"   (from "a la deuotion" on, certain)
+
+4.10 | ... tenu les villes de Nismes e d'Arles haute e basse | 7 B J PiG T phi? L wT wT L :2 | (line end)
+# = "et coub?erre" - provisional; the sixth sign is phi or f
+
+4.11 | (line start) | Gm o Eb hg Xo q E3 dd 7 T Tu? w n E f Eb wT Gm U Xo Tu hg hg? w G b q G o hg E f B L ne sh w L o U Gm y L n wf T Pi V E3 dd o 7 | qui les a tousiours
+# = "ent plusieurs autres la pp?ri... pau?te... est voisine"   (middle third doubtful;
+#   "ent plusieurs autres" at the head and "est voisine" at the tail are certain)

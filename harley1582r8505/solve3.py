@@ -50,6 +50,7 @@ def main():
     N = int(cnt.sum()); tot = sum(FR.values())
     exp = {FINE.encode(c)[0]: FR[c] / tot * N for c in FR}
     W = float(os.environ.get('W', '3'))
+    T0 = float(os.environ.get('T0', '30'))
     print(len(signs), 'signs', N, 'tokens', len(vow), 'vowel signs', file=sys.stderr)
 
     def pen(obs):
@@ -69,8 +70,8 @@ def main():
                 M = FINE
                 rsc = np.array([M.score_idx(key[r]) for r in seq])
                 cur = rsc.sum() - W * pen(obs); best = (cur, key.copy())
-            T = 2.5 * (1 - frac) + 0.02
-            if it % 50000 == 49999: T = 2.0
+            T = T0 * (1 - frac) + 0.02
+            if it % 50000 == 49999: T = T0 * 0.5
             i = random.randrange(len(signs)); old = int(key[i]); nv = random.choice(cand[i])
             if nv == old: continue
             key[i] = nv

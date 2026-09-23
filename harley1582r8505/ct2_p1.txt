@@ -1,0 +1,52 @@
+# ct2_p1.txt - Harley 1582 f.263r (p1), SECOND transcription, read sign by sign from img/p1.jpg
+# at 3-9x native zoom against the broken key (key.json).  Supersedes final/f1.txt, which descends
+# from a first pass made before the break.
+# Format:  1.<n> | clear before | SIGNS space separated | clear after      [y=<thumbnail y>]
+# '?' = that sign is doubtful.  ' / ' = a visible gap.  #81 = the number written .81.
+# Sign names follow signs.md as revised by the f.264v and f.263v passes (see the headers of
+# ct2_p4.txt and ct2_p3.txt).  In particular :2 :3 :4 are the DOT GROUPS = m (a letter, not
+# punctuation); eq = short vertical with a dot cluster at its upper right = f; phi = closed oval
+# pierced by a long stem = b; f = tall long-s, hook at the top only = u; E3 = two-bowled epsilon
+# = s; E = lunate epsilon = a; T = top bar to the LEFT + loop at the foot = u; b = loop at the
+# foot, no top bar = n; hg = hourglass (the X is CLOSED BY A BAR ACROSS THE TOP) = p; Br/Usq = g;
+# Pi = Pi with the bar on TOP = o; Usq = the same shape with the bar at the BOTTOM = g.
+# The decode of each line is given in the comment below it.
+
+1.1 | ...sa faveur. Joinct que | Xo 7 :3 psi X w0 f G Xo n U Gm o B | (line end; runs on into 1.2)   [y=279]
+# = "le mal quils sent[..." - w0 (plain omega, no bar) = q, not the 'wf' of f1: "quils", not "tils".
+
+1.2 | (line start; cipher fills the whole line) | L b Eb H T Pi sh q f 7 w o Gm :4 L b wf hg wT L E3 L o Eb # T #81 7 B cy q u Xo n E wf L b ne 7 o Eb H Gm #21 | (line end)   [y=316]
+# = "...]ent du [g]ouuernement present du .81. et quils atendent de .21."
+# NOTE: the sign after "du" is a clean Pi (top bar, two legs down, no bottom bar) at 8x with
+# contrast stretched - NOT the square-bottomed Usq that means g, which stands a few signs into
+# 1.5.  Read as seen; the plaintext wants g ("gouvernement"), so either the scribe inverted the
+# sign or Pi carries a second value.  Everywhere else on this page Pi reads o ("troupes", 1.6).
+
+1.3 | (line start) | Oi X psi f Gm o dd w | voir les exemples & eschantillons | hg? T G Xo 7 b :3 Pi o E3 B wT L | donne grand | Xo q U wf w 7 E T | (line end; runs on into 1.4)   [y=334]
+# = "a l'auenir ... qu'il en monstre ... lustre au"
+# The first sign of the middle run is a FULL hourglass, closed by a bar at the top AND at the
+# bottom (heavily retraced, 8x).  The other four hourglass signs on this page (1.2 "present",
+# 1.6 "troupes", 1.13 "lesparle") are closed by a bar across the TOP ONLY.  Those read p; this
+# one has to read q ("qu'il en monstre").  Left as 'hg?': it may be a second sign.
+
+1.4 | (line start) | #51 ne f cy T L Xo | personne n'a occasion de se plaindre et auquel nul ne peut jusques icy reprocher, ...   [y=373]
+
+1.5 | ...Il a tant paty | PiG f # 7 E3 b Pi q T L Oi f F dd :3 hg sh n ne q #81 Pi f H L E3 :4 psi b Usq Gm w dd Gm U # Gm E3 | (line end; runs on into 1.6)   [y=427]
+# = "ou des nouueau[x] impos du .81. ou des mangeries des ..."
+# f1 had 'E' (=a) for the first epsilon: it is a two-bowled E3 (=s), "ou des".  The hourglass
+# before "sh n" is barred at the BOTTOM only.  'F' (a stem with two bars to the right, 6 tokens
+# in the whole corpus) decodes t and gives "nouueaut impos"; the plaintext wants "nouueaux",
+# and no sign in the key carries x at all, so F is the likeliest x-sign.
+# Compare Usq at the end of this line (bar at the BOTTOM, = g in "mangeries") with the Pi of 1.2.
+
+1.6 | (line start) | B wT Pi q hg Gm n ne L #21 w0 T G Xo II | ont suivi a une haine ...   [y=454]
+# = "troupes de .21. quils" + "ont suivi..."   f1 had 'u' for the i of "quils"; the sign is G.
+
+1.7 | ...qu'on a se plaindre de | Eb PiG q E3 eq Pi wT U cy f 7 ne L Xo T y | . (line end)   [y=470]
+# = "tous fors que de lui."  The fifth sign is a bold HORIZONTAL bar with TWO DOTS above it,
+# read as one sign: this is the eq (= f) of the f.263v pass, written with a horizontal instead
+# of a vertical stroke.  f1 and ct_p1 took it for a bare two-dot cluster (m) and got "mors".
+# This is the shape the ct2_p3 header suspected behind the ':2' tokens.
+
+1.8 | ...Et y a apparent qu'il a | q L T :3 7 E3 :4 Gm U | (line end)   [y=500]
+# = "ueu mesmes" (veu mesmes)
