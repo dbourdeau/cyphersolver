@@ -43,6 +43,7 @@ numbers wherever a figure is followed by a figure or o, only about 45 figures ar
 | no. 66 | fr. 3995 ff. 122v–123r (canvas 235) | λ = n, π = o, θ = l; no French |
 | no. 65 (Lesdiguières) | fr. 3995 ff. 120v–121r (canvas 232) | symbol + two numbers per letter, nulls 10, 20 ... 100; λ = B, π = O; no French |
 | nos. 68–74 | fr. 3995 ff. 126–139 | Italian or figures only |
+| no. 60, Court cipher given to Nevers, Montereau Aug 1593 (used with the secretary of state Revol, Villeroy's predecessor) | `nevers1593/key60.txt`, `decode60.py` | applied to the whole transcription (figures as its syllables 12 du, 13 pu, 20 u, 54 pa...; λ, π, Δ, T as its signs): scattered syllables, no French |
 
 ## Solver runs and controls
 
@@ -86,7 +87,7 @@ nomenclator (syllables and word codes with marks the copyist dropped), which 753
 ## Escalation
 - [x] siblings: fr. 3993 no. 133 (18 Aug, ff. 173-174, next letter to Villeroy) is all clear; nos. 22 and 46 are listed as plain copies; the Balagny and Charles de Gonzague ciphers of the same weeks are different systems
 - [x] clear-pages: none; the copy has no decipherment and no gloss
-- [x] known-keys: fr. 3995 nos. 65, 66, 68-76 read or checked on the image (no. 76 read in full: same sign family, different assignments); Balagny alphabet (Tomokiyo)
+- [x] known-keys: fr. 3995 no. 60 (Court cipher of 1593, decoder from nevers1593/), nos. 65, 66, 68-76 read or checked on the image (no. 76 read in full: same sign family, different assignments); Balagny alphabet (Tomokiyo)
 - [x] print: Memoires de Nevers (1665) t. 2 full text searched (exact phrases), not printed; Tomokiyo's League page lists it undeciphered; web search found no edition
 - [x] key-rebuild: ciphertext-only anneals under six unit models, validated on a matched homophonic control that solves; the syllabic model's control fails
 - [n/a] retry: nothing was read, so there is nothing to regrade
