@@ -1,0 +1,174 @@
+{
+ "schema_version": 1,
+ "target": "indus",
+ "title": "Indus script: Parpola, 'Study of the Indus Script' (ICES Tokyo 2005) tested against the ICIT-derived and M77 corpora",
+ "documents": [
+  {
+   "id": "icit",
+   "shelfmark": "ICIT-derived corpus, yajnadevam/indus-website population-script.sql (2,543 objects, CISI numbers)",
+   "date": "c. 2600-1900 BCE",
+   "year": -2300,
+   "country": "Pakistan, India, West Asia",
+   "route": "not applicable (seals, sealings, tablets, pottery)",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No bilingual; Parpola's Proto-Dravidian readings of about twenty signs are proposals."
+   },
+   "length": {
+    "tokens": 11253,
+    "distinct": 572,
+    "unit": "symbols",
+    "measured": true,
+    "file": "data/signs_reading.txt"
+   },
+   "read": "not read",
+   "transcription": {
+    "by": "published",
+    "source": "ICIT (Wells and Fuls) as digitised in the indus-website database; glyphs identified by rendering its font",
+    "image_quality": "no images",
+    "notes": "Fused repeated pairs (e.g. 792 = eye+eye) split back into two signs before counting."
+   }
+  },
+  {
+   "id": "m77",
+   "shelfmark": "Mahadevan 1977 corpus (M77/IDF-80), 2,906 texts, via joyboseroy/indus_decipher",
+   "date": "c. 2600-1900 BCE",
+   "year": -2300,
+   "country": "Pakistan, India, West Asia",
+   "route": "not applicable",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No bilingual."
+   },
+   "length": {
+    "tokens": 14153,
+    "distinct": 418,
+    "unit": "symbols",
+    "measured": false
+   },
+   "read": "not read",
+   "transcription": {
+    "by": "published",
+    "source": "Mahadevan 1977, machine-readable export of indusscript.in (not copied into the folder)",
+    "image_quality": "no images",
+    "notes": "Counted by m77_checks.py on the external file; 14,153 tokens including 781 unread-sign placeholders."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "not a cipher"
+  ],
+  "summary": "Undeciphered Bronze Age sign system of about 400-600 signs, probably logo-syllabic, written mostly right to left on seals and tablets; language unknown.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 572,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Diacritics here are the strokes and roofs added to base signs such as the fish (Parpola's 'diacritic additions')."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No accepted decipherment. Parpola's rebus readings are in print (1994, 2005); the corpus checks of his 2005 claims were computed here.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "Gave the harappa.com PDF (Parpola's lecture) as the target with /goal; no target-specific intervention.",
+  "tools": [
+   "build_corpus.py (SQL dump to TSV)",
+   "render_glyphs.py (font rendering to identify signs)",
+   "parpola_checks.py (claim tests, within-line shuffle nulls, bigram surprisal)",
+   "m77_checks.py (independent corpus)",
+   "align_m77.py (ICIT-to-Mahadevan sign map by text alignment)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-23",
+  "last_date": "2026-09-23"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "harappa.com PDF blocked by Cloudflare for plain curl; fetched with a browser user agent. It is Parpola's 2005 lecture, not an inscription.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Looked for machine-readable corpora: mayig CISI (179 texts, too few), indus_decipher (M77, ICIT-derived CSV), yajnadevam indus-website SQL dump with CISI numbers.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Parsed the SQL dump into data/corpus.tsv (2,543 objects, reading order from the direction field) and identified Parpola's signs by rendering the site's font.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Looked up the seals Parpola cites: M-634, M-357, M-1169, M-172, M-57/M-387, M-205, M-478/479, L-11 match his descriptions; K-10 matches only if short and long two-stroke signs are one; seven cited objects absent.",
+   "result": "partial"
+  },
+  {
+   "kind": "statistics",
+   "what": "Jar 9.9-11.3% of tokens; jar+jar once in each corpus, on the same unprovenanced round seal (M77 9901 = ICIT 3889); 0 in South Asia against 4.0 expected under within-line shuffle (p about 0.007).",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "Bigram surprisal of West Asian finds against South Asian texts: round/cylinder seals at the 90th percentile for unusual order; one square seal (Salut) also atypical.",
+   "result": "partial"
+  },
+  {
+   "kind": "statistics",
+   "what": "Compound units behind the readings: eye+eye, water+eye, 6+fish, numeral+pot, crab+fish-series significant; 7+fish (1 seal) and fig+fish (1 here) single attestations; crab + plain fish 0; 2+fish (62) and 3+fish (19) unread in the lecture.",
+   "result": "partial"
+  },
+  {
+   "kind": "statistics",
+   "what": "Within-line sign repetition is about half of chance at lengths 4-10 (Farmer's observation), consistent with word-level seal legends.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Aligned ICIT and M77 through shared texts (align_m77.py: four repeated tablet sets as seeds, hard EM, 978 lines, 96% sign agreement) and reran the sign claims on M77: same single jar+jar, 7+fish and two fig+fish objects; crab + plain fish below chance, crab + marked fish above.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "none",
+  "verification": [
+   "none"
+  ],
+  "notes": "Undeciphered script: no bilingual, language unknown. The work tests the corpus evidence behind Parpola's 2005 claims; several confirmed, some readings rest on one or two seals."
+ }
+}
