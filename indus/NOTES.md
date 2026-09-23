@@ -16,7 +16,9 @@ overseer; 'water'+'eye' = *nīr-k-kaṇṭi* irrigation officer). Both parts res
 frequencies, one sign that never doubles, sequences that recur, pairs that behave as units. Those counts can be
 checked, and that is what this folder does. No phonetic reading can be verified from the corpus alone (Parpola
 p. 42: statistics cannot prove or disprove writing; Sproat agreed, n. 20). The Indus script remains undeciphered.
-This is progress on the evidence the decipherment claims stand on, not a decipherment.
+The first two passes test the evidence Parpola's readings stand on; the third ("toward a reading") sets out the
+structural layer a reading must fit, the step that came before sound values in Linear B and proto-cuneiform:
+two numeral systems, an ending paradigm, a name + epithet formula, and signs whose meaning pictures fix.
 
 ## Corpora
 
