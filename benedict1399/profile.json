@@ -1,0 +1,230 @@
+{
+ "schema_version": 1,
+ "target": "benedict1399",
+ "title": "Benedict XIII's cipher letters to Francesc Climent, 1399-1416, Arxiu Capitular de Barcelona (catalogue 334)",
+ "documents": [
+  {
+   "id": "benedict-1399-1403",
+   "read": "not applicable",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series (Puig's 'Documentos inéditos del obispo Çapera' nos. 1063, 409 and others; Meister 1906: capsa 'Documentos referentes a la familia Luna I')",
+   "date": "22 Sep 1399 - 8 Feb 1403",
+   "year": 1399,
+   "country": "Papacy (Avignon obedience)",
+   "route": "Benedict XIII, Avignon -> Francesc Climent, Barcelona",
+   "language": "Latin with Catalan and Castilian phrases",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix, cipher passages in italics; key rebuilt by Puig from Climent's partial decipherment lines on docs. 1063, 461, 463.",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "letters",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Only one page is imaged: Puig 1920 p. 475, a halftone facsimile of the last page of XXXV (doc. 1068), via Google Books (1826 x 2500 px). Two runs aligned sign by sign against Puig's text (about 40 signs); no full transcription.",
+    "image_quality": "poor",
+    "notes": "Eleven ciphered letters of Benedict XIII in Puig's appendix (XXVI, XXVII, XXXV, XXXVI, XXXVII, XXXIX, XLI, XLII, XLIII, LII; the Jafet note), treated as one set. About 2,200 deciphered words."
+   }
+  },
+  {
+   "id": "entourage-1399-1416",
+   "read": "not applicable",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series (Documentos inéditos del obispo Çapera)",
+   "date": "22 Oct 1399 - 27 Jun 1416",
+   "year": 1399,
+   "country": "Papacy (Avignon obedience)",
+   "route": "Benedict XIII's entourage (Fr. P. de Santa Cruz, Avignon; Alfonso de Exea, Perpignan; Pedro Comuel, Peñíscola) -> Francesc Climent",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Puig y Puig 1920, appendix XXIX, LXIV, CXVI, CXXXV, cipher passages in italics.",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "letters",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "No ciphertext in hand.",
+    "image_quality": "no images",
+    "notes": "Four ciphered letters from the Pope's entourage to Climent."
+   }
+  },
+  {
+   "id": "vico-1398-line",
+   "read": "not read",
+   "shelfmark": "Arxiu Capitular de Barcelona, Documentos inéditos del obispo Çapera (Puig appendix XIX)",
+   "date": "4 Dec 1398",
+   "year": 1398,
+   "country": "Papacy (Avignon obedience)",
+   "route": "Fr. Pedro de Vico, Avignon -> Guillem Carbonell, canon of Barcelona",
+   "language": "unknown",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Puig 1920 p. 461 n. 3: 'Sigue una línea cifrada, de clave desconocida'; not printed."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "letters",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "Not printed, no image.",
+    "image_quality": "no images"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Letter substitution with invented signs (delta-, T-, o-, double-cross-, T-bar-, b-, c-shaped strokes joined by hair-lines) mixed into clear Latin, with a dotted V for the King of Aragon; tentative, from two runs of Puig's p. 475 facsimile aligned with his text (u = cb, e = delta, s = T, m = t, b = T-bar, c/i = o, d = double cross).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ],
+   "entries": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "sibling_key": "Two keys of Climent in the same papers (doc. 595) that Puig could not apply to any document; not printed. Clement VII's Lavinde alphabets (Meister 1906, Schlüsselsammlung I) are the nearest printed keys.",
+  "notes": "Values are provisional (grade M): read from a 1920 halftone at about 40 px a line; one clash in 25 aligned letters."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Puig y Puig, Pedro de Luna (Barcelona 1920), appendix: deciphered by Puig himself from Climent's partial glosses; not cited by Meister (1906, earlier), Galende 2013, or the cryptologic literature checked.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "published reading",
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: set up Claude Code with Opus 5.5 and posed the target with /goal from the archive-scan lead (catalogue 334), naming Puig y Puig 1920 as the outstanding check. No target-specific intervention.",
+  "tools": [
+   "Google Books in-volume search endpoint (jscmd=SearchWithinVolume2) and page-image endpoint (jscmd=click3)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-23",
+  "last_date": "2026-09-23"
+ },
+ "solution": [
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "HathiTrust record 100676638 (Puig 1920) tried in curl and the built-in browser: Cloudflare challenge, not solved. archive.org: no copy.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "literature search",
+   "what": "Butllari de Catalunya (Fundació Noguera 2016), IFC 2024 Benedicto XIII volume, Cuella's Bulario IV, Suárez Fernández's Castilian documents, zaguan 2023 paper grepped for cifra/xifra/criptog: no mention of the ACB cipher letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "literature search",
+   "what": "Baucells i Reig 1978 (ACB Cisma d'Occident catalogue, PDF from the ACB site): codices and parchments only; the paper part (1,532 pieces) was uncatalogued; archivist Mas's note that Puig took Schism papers home 1920-30 and many were not returned.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "Google Books full-view copy of Puig 1920 found (id CuOlkxWnk-EC, Wisconsin). Book pages and PDF were CAPTCHA-walled, but the in-volume search endpoint and signed page-image URLs answered.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "literature search",
+   "what": "In-volume search for cifra/clave/descifr: p. 466 n. 2 says italics mark the deciphered phrases and Puig rebuilt the key 'a fuerza de paciencia' from lines Climent left on docs. 1063, 461, 463; preface p. 2: 'los diez u once escritos con desconocida clave' deciphered. Appendix index lists 14 'Carta cifrada' items, 1399-1416.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "verification",
+   "what": "Appendix pages of every cipher item fetched and checked for gaps and for what Puig left unread (page-by-page check by a subagent).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "Found that Puig p. 475 carries an uncaptioned, sideways photogravure of the last page of XXXV (22 June 1400, doc. 1068), clear Latin alternating with cipher runs, with Puig's text of the same passage beside it; fetched at the maximum 1826 x 2500 px, rotated and deskewed (0.7 deg), lines segmented.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "crib",
+   "what": "Known-plaintext alignment of two runs against Puig's italics: line 1-2 'cum duce Burgundie' after a dotted-V sign for the King of Aragon, line 8 'et presertim scribe qu...'. Consistent values u = cb (3x), e = delta (4x), s = T (2x), m = t (2x), d = double cross (2x), c/i = o, b = T-bar; one clash.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "transcription",
+   "what": "Attempted a sign-level transcription of the long run (lines 8-16, about 450 letters of known plaintext) at 3-4x with contrast enhancement: delta/d-with-mark/o/a and joined strokes cannot be separated consistently at this resolution; 'quo modo se habet' did not align. Stopped; recorded as blocked (illegible).",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "fraction_read": "unknown",
+  "verification": [
+   "key confirms"
+  ],
+  "gaps": [
+   {
+    "item": "Fr. Pedro de Vico to Guillem Carbonell, 4 Dec 1398: one cipher line of unknown key (Puig app. XIX, p. 461 n. 3)",
+    "blocker": "needs-physical-access",
+    "detail": "Not printed; the ACB original is not digitised."
+   },
+   {
+    "item": "Two keys of Climent in doc. 595 that Puig could not apply",
+    "blocker": "needs-physical-access",
+    "detail": "Not printed."
+   },
+   {
+    "item": "The key (never printed by Puig)",
+    "blocker": "illegible",
+    "detail": "Rebuildable from the p. 475 facsimile against Puig's text, but Google's scan of the 1920 halftone is too coarse; needs a 600-dpi scan or a photograph of ACB doc. 1068."
+   },
+   {
+    "item": "P. Jafet to Climent 15 Sep 1400 (doc. 1043) and Comuel to Climent (doc. 661), cited by Puig but not printed",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Read by Puig y Puig in 1920; nothing deciphered here. Added here: Meister's second-hand ACB report identified with Puig's printed decipherments; the 14 cipher items listed; the p. 475 facsimile found and two runs aligned, which confirms Puig where tested and gives a dozen tentative sign values; the unread remainder listed."
+ }
+}

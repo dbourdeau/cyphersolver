@@ -137,8 +137,10 @@ letter in patches, four signs unvalued, share read not measured; see `buda1489/`
 Five sweeps (Iberia, Italy, Central/North, France-England-manuscripts, hard targets any date); notes in
 `scan_2026-09-23/`. Result: **no unread pre-1425 ciphertext with images online.** Every earlier lead needs photographs:
 - **Benedict XIII, ACB Barcelona, capsa "Documentos referentes a la familia Luna I"** (c. 1394-1417): autograph letter
-  with cipher lines + ~3 folio pages of instruction largely in cipher (Meister 1906 pp. 22-23, from Ehrle). The best
-  shot at a ciphertext-only record. Puig y Puig 1920 not yet checked for a transcription. Catalogue 334.
+  with cipher lines + ~3 folio pages of instruction largely in cipher (Meister 1906 pp. 22-23, from Ehrle).
+  **RULED OUT 23 Sept 2026: read in 1920.** Puig y Puig, *Pedro de Luna* (1920), deciphered and printed 14 cipher
+  letters to Francesc Climent, 1399-1416 (italics = deciphered), key rebuilt from Climent's own glosses; p. 475 is
+  a facsimile of one page. Google Books CuOlkxWnk-EC. See `benedict1399/`, docs/benedict1399.html. Catalogue 334 removed.
 - **Florence 1414**, Signori Responsive filza 1 (Meister 1902 p. 49; Gabbrielli partial key). Catalogue 335.
 - **Siena 1421**, Concistoro 2308 fasc. 2 no. 1, one of 29 "partly deciphered" letters; Ilardi reel 1503 has keys only. Catalogue 336.
 - Faenza 27 Oct 1425 (Averardo de' Medici), unreadable to Albizzi's office (Guasti II 457). Catalogue 337.
