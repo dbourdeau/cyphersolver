@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "target": "florence1414",
+  "title": "Letters to the Signoria of Florence in the \"Cifra Decemviri di Balìa 1414\" (ASF, Signori responsive, old filza 1; key: Chiavi delle cifre II, pars 3 no. 1)",
+  "documents": [
+    {
+      "id": "letters1414",
+      "shelfmark": "ASF, 'Lettere della Signoria risponsive, filza 1' (Gabbrielli/Meister, old numbering); now probably Signori, Responsive 7 or 8, or Signori-Dieci-Otto, Legazioni e commissarie, missive e responsive 8; exact letters unknown",
+      "date": "1414",
+      "year": 1414,
+      "country": "Florence",
+      "route": "unknown -> Florence",
+      "language": "unknown",
+      "pages": "unknown",
+      "cleartext_in_document": "interspersed",
+      "read": "not read",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Gabbrielli (1864) read enough words to build his partial table, probably as glosses on the letters (as on the 1424 Ricasoli letters); not seen. No reading printed.",
+        "partial": true
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "no images",
+        "notes": "No images of the letters are online (DECODE, Yale Ilardi reels, ASF PAD all checked 23 Sept 2026). 'cleartext_in_document: interspersed' is the norm for Florentine ciphered despatches of the period, not an observation."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic"
+    ],
+    "summary": "Homophonic substitution on invented signs and Latin letters, with three word signs (per, et, che), as rebuilt by Gabbrielli from a few words; the full system (nulls, nomenclator) is unknown.",
+    "symbol_kind": "letters and symbols",
+    "distinct_symbols": 38,
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 4,
+      "max_per_consonant": 3,
+      "per_letter": {
+        "a": 4,
+        "b": 1,
+        "c": 2,
+        "d": 1,
+        "e": 2,
+        "f": 1,
+        "g": 2,
+        "i": 2,
+        "l": 2,
+        "n": 3,
+        "o": 2,
+        "p": 1,
+        "q": 1,
+        "r": 2,
+        "s": 2,
+        "t": 2,
+        "u": 2,
+        "x": 1
+      }
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 3,
+      "kinds": [
+        "common words"
+      ],
+      "unread_groups": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "random",
+    "word_division": "none",
+    "notes": "Counts from Meister 1902 p. 49 (Gabbrielli's partial table), 35 letter signs + 3 word signs = 38, matching Somogyi 2016 (Fi1). h, k, m, z blank in the table. The × sign stands under both e and u in the print."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "partial",
+      "where": "Gabbrielli's partial key (ASF Chiavi delle cifre II, pars 3 no. 1, 1864), printed by Meister 1902 p. 49; the letters are not printed and no continuous reading is known",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "published key"
+    ],
+    "attack": "none",
+    "human_role": "Set the goal (read the 1414 letters past the read bar, as for florence1429). The DECODE session cookie on disk from earlier sessions was used for the metadata check. No images supplied.",
+    "tools": [
+      "DECODE API metadata dump",
+      "Dataverse search API",
+      "ASF PAD DeepZoom tile fetcher"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-09-23",
+    "last_date": "2026-09-23"
+  },
+  "solution": [
+    {
+      "date": "2026-09-23",
+      "kind": "key from source",
+      "what": "Read the 1414 table in Meister 1902 p. 49 (ULB Münster PDF) at 300 dpi and transcribed it (KEY.md): 35 letter signs, per = 8, et = f, che = dum; 38 in all, as Somogyi 2016 counts.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Searched the DECODE metadata dump and the live API for Florence/Signori/1414 records; fetched and viewed R3796 and R3752, the only non-Dieci Florence records.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Searched Yale Dataverse for Ilardi reels of Gabbrielli vol. II or Signori letters: only reels 58, 207 and 1503 are digitised.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "literature search",
+      "what": "Read the ASF inventory N/9 (Signori, Dieci di Balìa, Otto di Pratica): today's Signori Responsive 1 is 1340, so Gabbrielli's 'filza 1' is an old number; 1414 letters can be in Signori Responsive 7-8 or Legazioni e commissarie, missive e responsive 4/8. Dieci Responsive start in 1424.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Fetched the ASF PAD images of Signori, Legazioni e commissarie registers 5 (1410-30, images 6-146) and 6 (1411-42, images 6-110 = ff. 1-52, including the 1414 instructions at ff. ~35-52, f. 42 naming the Ladislaus peace) and scanned them for cipher runs or a copied key: all in clear.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "class": "offline only",
+    "key": "partial",
+    "fraction_read": 0,
+    "verification": [
+      "none"
+    ],
+    "gaps": [
+      {
+        "item": "all 1414 letters in the cipher (sender and number unknown)",
+        "blocker": "needs-physical-access"
+      }
+    ],
+    "notes": "Blocked: no image of any 1414 letter is online. Next: ASF photographs of Gabbrielli vol. II pars 3 no. 1 (key page with his list of letters used) and index, then the letters."
+  }
+}
