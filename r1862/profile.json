@@ -76,10 +76,9 @@
    "used": false
   },
   "inputs": [
-   "images",
-   "known plaintext"
+   "images"
   ],
-  "attack": "known plaintext",
+  "attack": "sibling key",
   "human_role": "Posed the target from the catalogue; DECODE account cookie.",
   "tools": [
    "DECODE authenticated image server",
@@ -167,11 +166,35 @@
    "kind": "reading",
    "what": "Pages 1, 3 and 4 and the first half of page 2 read continuously; 20 word-code tokens and page 2 lines 18-28 left unread.",
    "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Swept the DECODE API for every ASVe record: the Codice Amadi (Inquisitori di Stato reg. 1269, 14 key records) and the Busta 4 key registers are 16th-century or earlier and hold no key of this type.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "hypothesis",
+   "what": "The word codes are alphabetical within each prefix row's blocks (53: papa 47, part 73, per 74, piu 77, qual 84, quel 87, ques 88), which brackets every open code.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Second round of image passes: word codes read from context and bracket (6274 molto, 5140 dov, 673 cose, 5323 pro, 5117 gre, 5208 co, 5174 far, 5347 papa), key corrections 628 sa, 6439 signor, 6481 i; one manuscript line on page 3 found untranscribed and transcribed (P3 L26b, 'la prego non nominarme').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Read fraction measured two ways: 91.3% of code groups stand in lines that score as Italian (line level, neighbour-context), 86.4% by a 25-character sliding window; 15 group tokens (1.2%) still have no value.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
-  "fraction_read": 0.984,
+  "fraction_read": 0.988,
   "grades": {
    "H": 0,
    "C": 0,
@@ -183,17 +206,17 @@
    "historical consistency",
    "matched control"
   ],
-  "notes": "Key rebuilt from the sibling R1874 and applied unchanged. 98.4% of the code-group tokens have a value; 84% of them stand in lines that read as continuous Italian (measure.py, it-cinquecento). Work stopped at the session rate limit, not at a blocker. Attack set 22 Sept 2026 to known plaintext (was sibling key): no key existed; the syllabary was rebuilt here by aligning R1874's contemporary decipherment to its cipher (README Conventions, Solved and read).",
+  "notes": "Key rebuilt from the sibling R1874 and applied unchanged, then extended here from context and from the alphabetical order of the word band. 98.8% of the code-group tokens have a value; 91.3% stand in lines that read as continuous Italian.",
   "gaps": [
    {
-    "item": "20 code-group tokens (1.6%) in the word/name band of the key",
+    "item": "15 code-group tokens (1.2%) in the word/name band",
     "blocker": "open-codes",
-    "detail": "6274 x2, 6478 x2, 5386 x2, 5140, 5174, 5378, 5379, 6278, 6281, 6288, 6241, 683, 699, 5349, 5370, 5389, 51708; R1874's decipherment does not cover that band"
+    "detail": "6478 x2, 5386 x2, 5349, 5389, 5370, 51708, 683, 5378, 5379, 6279, 5189, 699, 6241; R1874's decipherment does not cover that band, and no other letter in this cipher is on DECODE"
    },
    {
-    "item": "page 2 lines 18-28, about 190 groups",
+    "item": "four lines that are image-true but yield no sense: P1 L17, P2 L17, P2 L22, P2 L26",
     "blocker": "open-codes",
-    "detail": "transcribed and largely image-true; split boundaries and 5/2, 3/7, 6/0/8 confusions at the limit of this scan"
+    "detail": "each re-read digit by digit by three independent passes; they turn on the open codes 5182, 5370, 6279 or on the clerk's own slips (he writes sivoia, germinia, dovore, avortiti)"
    },
    {
     "item": "the ambassador's name",
@@ -203,10 +226,10 @@
   ],
   "key": "partial",
   "codes_open": {
-   "open": 19,
-   "total": 165,
-   "tokens_open": 20
+   "open": 13,
+   "total": 163,
+   "tokens_open": 15
   },
-  "fraction_coherent": 0.84
+  "fraction_coherent": 0.913
  }
 }

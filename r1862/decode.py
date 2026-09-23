@@ -17,7 +17,7 @@ KEY.update({g: v for g, v in OVER.items() if not g.startswith('_')})
 def lines():
     out = []
     for l in open(os.path.join(HERE, 'tx', 'groups.txt'), encoding='utf8'):
-        m = re.match(r'(P\d L\d+):\s*(.*)', l)
+        m = re.match(r'(P\d L\d+[a-z]?):\s*(.*)', l)
         if not m:
             continue
         body = m.group(2)
