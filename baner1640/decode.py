@@ -14,9 +14,9 @@ UNREAD = {
     'S5': [(29, 29),           # the stray e of "sobaldt e ich"
            (61, 74),           # eisen o vi rechte
            (82, 83)],          # o ? before "ein guten"
-    'S6': [(26, 27)],          # ? o before [783]
 }
 # emendations: (segment, index) -> letter read in place of the key's value
+CODELETTERS = {'766': 'w', '770': 'm', '772': 'f', '778': 'f', '783': 'g'}   # 7xx codes read as letters (C/M)
 EMEND = {('S4', 20): 'n'}   # the manuscript has 93 (i) where Schlesien needs n: encipherer's slip
 
 segs = {}
@@ -30,7 +30,8 @@ for s, toks in segs.items():
     row = []
     for i, t in enumerate(toks):
         if len(t) == 3:
-            codes += 1; row.append((t, f'[{t}]', 'code')); continue
+            codes += 1
+            row.append((t, CODELETTERS[t].upper() if t in CODELETTERS else f'[{t}]', 'code')); continue
         tot += 1
         un = any(a <= i <= b for a, b in UNREAD.get(s, []))
         p = EMEND.get((s, i), key.get(t, '?'))

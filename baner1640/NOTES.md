@@ -1,6 +1,6 @@
 # Banér to Stålhandske, Hof, 29 December 1640 (intercepted copy, Kircher correspondence APUG 568 f. 239) — NOTES
 
-**Status: read in part — 244 of 274 cipher tokens (89.1%) read as sense, measured (`python decode.py`), 22 Sept
+**Status: read in part — 246 of 274 cipher tokens (89.8%) read as sense, measured (`python decode.py`), 22 Sept
 2026.** First reading of the letter; key rebuilt here (`key.json`, 70 values) from context cribs. It reads: Banér
 means "nach der Oberpfaltz und gegen die [442]" to march; the enemy will gather against him "und etwa auch die in
 Schlesien agirende [361] dazu ziehen"; Stålhandske is to "gute acht geben" and, when the enemy moves, follow "mit
@@ -89,17 +89,25 @@ Neal's transcription is right except S4 first figure 86 (Neal 66, now "etwa" nee
 (Neal 36), S5 "g u 47 e n" (Neal 57; 47 = t, new value) and S7 figure = 92 (n, "richten"). `ct_neal.txt` carries the
 corrections. S1 "34 20 78 83 [508]" reads "Jobs[508]" = Jobst + a surname in code (M). With the figures confirmed,
 the remaining stretches (S2 name, S5 "eisen o vi rechte", S6 "? o") use values fixed by other words: this copy is
-corrupt there. Re-measured: 244 of 274 (89.1%).
+corrupt there. Re-measured: 246 of 274 (89.8%).
 
 Digit-confusion search (`emend.py`: up to two confusable figures per stretch, ranked by de-1640s in context) finds
 no reading for the S5 stretch. Hypothesis, not counted: the 7xx codes are letters, giving "au[772] solche [766]eise"
 = "auf solche Weise" and "darau[778]" = "darauf".
 
+## The 7xx codes are letters (22 Sept, third pass)
+
+Freeing every value used in the unread stretches and treating the 7xx codes as letter symbols (`solve3_7x.py`, rest
+of the key fixed), the annealer returns "auf solche Weise" (772 = f, 766 = W) on its own, and "sie ko[m]en, dass sie
+mö[g]en" in S6 (770 = m, 60 = m, 783 = g), which fits the clear "wie seine und des feindes gelegenheit sey ...
+berichten". 778 = f (darauf). Treating all three-digit numbers as letters does not read (361-568 stay word codes).
+Re-measured: 246 of 274 (89.8%); codes read as letters 5 of 14.
+
 ## Remaining gaps
 
 - S2 name after "Johann" (11 tokens, read "ohrs?acbuet") - blocker: needs-physical-access; the figures are confirmed on the manuscript and every value but 12 is fixed by other words, so the only known copy is corrupt; the sent original or a register copy in Banér's papers (Riksarkivet) is needed and is not digitised.
-- S5 "eisen o vi rechte" (14 tokens), "o ?" before "ein guten" (2), the stray e in "sobaldt e ich" (1); S6 "? o" before [783] (2) - blocker: needs-physical-access; figures confirmed on the manuscript, values fixed elsewhere, so the copy is corrupt; only another witness would settle them.
-- Code words 361, 442, 464, 508, 513, 568, 766, 767, 770, 772, 773, 775, 778, 783 - blocker: no-key-material; no key survives (none of the Banér keys on DECODE is this one), each occurs once, and context gives only the sense.
+- S5 "eisen o vi rechte" (14 tokens), "o ?" before "ein guten" (2), the stray e in "sobaldt e ich" (1) - blocker: needs-physical-access; figures confirmed on the manuscript, values fixed elsewhere, so the copy is corrupt; only another witness would settle them.
+- Code words 361, 442, 464, 508, 513, 568, 767, 773, 775 (766, 770, 772, 778, 783 read as letters) - blocker: no-key-material; no key survives (none of the Banér keys on DECODE is this one), each occurs once, and context gives only the sense.
 
 ## Escalation
 

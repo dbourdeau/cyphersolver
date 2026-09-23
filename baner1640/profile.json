@@ -173,19 +173,25 @@
    "what": "Re-measured with the corrected transcription: 244 of 274 (89.1%); S1 = Jobs[508] (Jobst), S7 complete. Digit-confusion search (emend.py) finds nothing for the S5 stretch; the copy itself is corrupt there.",
    "result": "partial",
    "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "Freed every value in the unread stretches and treated the 7xx codes as letters: the annealer returned 'auf solche Weise' (772 f, 766 W) and 'dass sie mögen' (783 g, 60 m) unprompted; 246 of 274 (89.8%). All three-digit numbers as letters does not read.",
+   "result": "worked",
+   "date": "2026-09-22"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.891,
+  "fraction_read": 0.898,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode.py over ct_neal.txt (corrected against the APUG 568 scans): two-digit cipher tokens in words read as sense, 244/274; code words excluded",
-  "fraction_coherent": 0.891,
+  "fraction_read_source": "decode.py over ct_neal.txt (corrected against the APUG 568 scans): two-digit cipher tokens in words read as sense, 246/274; code words excluded",
+  "fraction_coherent": 0.898,
   "codes_open": {
-   "open": 14,
+   "open": 9,
    "total": 14,
-   "tokens_open": 14
+   "tokens_open": 9
   },
   "verification": [
    "historical consistency",
@@ -198,14 +204,14 @@
     "detail": "Figures confirmed on the manuscript scan; values fixed elsewhere, so the only known copy is corrupt; the sent original or a Swedish register copy is not digitised."
    },
    {
-    "item": "S5 'eisen o vi rechte' (14), 'o ?' (2), stray e (1); S6 '? o' (2)",
+    "item": "S5 'eisen o vi rechte' (14), 'o ?' (2), stray e (1)",
     "blocker": "needs-physical-access",
     "detail": "Figures confirmed on the manuscript scan; the copy is corrupt; another witness needed."
    },
    {
-    "item": "Code words 361, 442, 464, 508, 513, 568, 766, 767, 770, 772, 773, 775, 778, 783",
+    "item": "Code words 361, 442, 464, 508, 513, 568, 767, 773, 775",
     "blocker": "no-key-material",
-    "detail": "No key survives; each occurs once. 7xx possibly letters (auf solche Weise, darauf), not counted."
+    "detail": "No key survives; each occurs once. 766, 770, 772, 778, 783 read as letters."
    }
   ],
   "notes": "First reading of the letter. Key rebuilt here from context cribs; no Swedish key on DECODE matches."
