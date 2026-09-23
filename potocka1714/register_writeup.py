@@ -24,7 +24,11 @@ if 'potocka1714/' not in s:
     start=s.index('### Partly solved: key broken here, read in part');i=s.index('\n|---',start);i=s.index('\n',i+1)+1;s=s[:i]+row+s[i:]
 f.write_text(s,encoding='utf8')
 f=R/'SOLVED_CATALOGUE.md';s=f.read_text(encoding='utf8')
-if 'potocka1714/' not in s:s+='\n**'+target+'**, 23 September 2026: '+result+' '+where+'\n'
+if 'potocka1714/' not in s:
+    n=max(map(int,re.findall(r'^\| (\d+) \|',s,re.M)))+1
+    i=s.index('\n|---',s.index('## 2. Partly read'));i=s.index('\n',i+1)+1
+    row=f'| {n} | **{target}** | 1714–16 / undated | 23 Sept 2026 | **Read in part** | Polish R7526 postscript and cross-letter inference; 863/887 Potocka tokens valued, Mniszech unread. | Image transcription, language identification and key recovery; no independent clear copy. {where} |\n'
+    s=s[:i]+row+s[i:]
 f.write_text(s,encoding='utf8')
 f=R/'SOLVED_RANKING.md';s=f.read_text(encoding='utf8')
 if 'potocka1714.html' not in s:
