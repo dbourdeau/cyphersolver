@@ -8,9 +8,9 @@ to identify signs by shape (see render_glyphs.py).
 
 Output: data/corpus.tsv with one row per object:
   sealid  cisi  site  type  complete  direction  signs_visual  signs_reading  motif
-signs_visual is the stored order (IDX 0,1,...), which is the left-to-right order of
-the picture; signs_reading reverses it when DIRECTION is R/L, so that the first sign
-is the first one read. Both are space-separated glyph ids. motif is the field-symbol
+signs_visual is the stored order (IDX 0,1,...), normalised to the usual right-to-left
+layout; signs_reading reverses it for every object (also those written L/R, which the
+dump stores mirrored), so that the first sign is the first one read. Both are space-separated glyph ids. motif is the field-symbol
 code from the ICONOGRAPHY table (Bull1 = 'unicorn' and its sub-types, Elep, Rhin, Zebu ...).
 
 Usage: python build_corpus.py path/to/population-script.sql
@@ -79,7 +79,10 @@ def main(sql_path):
             seal = seals.get(sid)
             ins = insc.get(sid, [sid, '', ''])
             direction = ins[2]
-            reading = list(reversed(s)) if direction == 'R/L' else s
+            # the dump stores every text in one normalised order (the jar, which ends texts,
+            # is at IDX 0 for 839 of 840 R/L and 29 of 30 L/R objects); DIRECTION records only
+            # how the object was written, so the reading order is the reverse for all objects
+            reading = list(reversed(s))
             w.writerow([sid, (seal[3] if seal and seal[3] != 'NULL' else ''),
                         sites.get(seal[1], seal[1]) if seal else '',
                         '|'.join(types.get(sid, [])), ins[1], direction,

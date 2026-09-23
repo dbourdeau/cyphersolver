@@ -31,7 +31,7 @@ This is progress on the evidence the decipherment claims stand on, not a deciphe
    copied here). No site or object type; the 9xxx texts are the West Asian finds.
 
 The two sign lists were tied together by aligning the texts the corpora share (`align_m77.py`): seeded with
-four tablet sets repeated 10-41 times in both, hard EM matched 978 lines with 96% of aligned signs on a single M77
+four tablet sets repeated 10-41 times in both, hard EM matched 991 lines (978 before the direction fix) with 96% of aligned signs on a single M77
 counterpart (`data/icit_m77_map.tsv`). It recovers the known values (jar 740 = M77 342, fish 220 = M77 59) and
 gives the fish series = M77 59-75, crab = 53/58, fig = 348/367/370/371, eye 809 and 832 = 375, water = 294,
 pot = 328, numerals 97-121. The sign claims were then rerun on M77 (`results/m77_checks.md`).
@@ -62,8 +62,11 @@ The database fuses some repeated pairs into one glyph (219 = fish+fish, 792 = ey
 grid+grid, 821, 791, 401 ...). `signs.SPLIT` splits them back, so repetition is counted as sequence; stroke
 numerals such as 34 stay whole. Sign 740 is never fused with itself.
 
-Direction: 2,440 objects read right to left, 103 left to right; `signs_reading` reverses R/L objects, so the
-first id is the first sign read. Checked: 740 ends lines (in M77 it ends 974 lines and begins 4).
+Direction: 2,440 objects are written right to left, 103 left to right, but the dump stores every text in one
+normalised order (the jar, which ends texts, is at the start of the stored order for 839 of 840 R/L and 29 of
+30 L/R objects), so `signs_reading` is the reverse of the stored order for all objects. (Corrected in the third
+pass: the first two passes left the 103 L/R objects backwards; the counts below are rerun.) In M77 the jar
+ends 974 lines and begins 4.
 
 ## Results, claim by claim
 
@@ -77,9 +80,9 @@ Full output: `results/parpola_checks.md` (ICIT) and `results/m77_checks.md` (M77
 | C2 | 25-50% of signs occur once (p. 36, Farmer) | M77 27% of 418; ICIT 34% of 590 | confirmed, low end |
 | C4 | most frequent sign almost 10% (p. 47) | M77 342: 9.9%; ICIT 740: 11.3% | confirmed |
 | C5 | it never stands beside itself in the Indus Valley; once, on a round seal probably from Mesopotamia (p. 47) | Once in each corpus, on the same seal: ICIT sealid 3889, round, unprovenanced, reads 467 550 1 740 740, which the sign map turns into 178 216 97 342 342; M77 9901 reads 178 53 97 342 342 (four of five signs agree; the second is read differently). South Asia 0. The 13 South Asian lines that hold the jar twice would put the two side by side 4.0 times on average if their order were shuffled; only 0.7% of 5,000 shuffles give 0. Under independent signs, 110 would be expected | confirmed (p about 0.007); "very often" overstates the null (4, not 110) |
-| C6 | West Asian square seals carry typical sequences, round and cylinder ones common signs in unusual order (p. 47) | Bigram model trained on South Asia: 9 round/cylinder seals at a median 94th percentile of surprisal and 90th for order-surprise; Kish square seal typical (51st); Salut (Oman) square seal atypical (98th) | confirmed for round/cylinder; one square counterexample |
+| C6 | West Asian square seals carry typical sequences, round and cylinder ones common signs in unusual order (p. 47) | Bigram model trained on South Asia: 9 round/cylinder seals at a median 95th percentile of surprisal and 95th for order-surprise; Kish square seal typical (54th); Salut (Oman) square seal atypical (98th) | confirmed for round/cylinder; one square counterexample |
 | C7 | fish signs almost every tenth sign on seals (p. 52) | 695 of 7,165 seal tokens = 9.7% | confirmed |
-| C8 | '6'+'fish' and '7'+'fish'; '7'+'fish' is a whole large Harappa seal (p. 54) | ICIT: 6+fish 9 (PMI 3.1, 0/300 shuffles); 7+fish once, H-9 (Harappa), the whole text. M77: 6+fish 16 (4.4 expected); 7+fish once, text 4009 (Harappa), the whole text, 112 59 = ICIT 17 220 under the sign map: the same seal | confirmed in both; 7+fish rests on one seal |
+| C8 | '6'+'fish' and '7'+'fish'; '7'+'fish' is a whole large Harappa seal (p. 54) | ICIT: 6+fish 10 (PMI 3.2, 0/300 shuffles); 7+fish once, H-9 (Harappa), the whole text. M77: 6+fish 16 (4.4 expected); 7+fish once, text 4009 (Harappa), the whole text, 112 59 = ICIT 17 220 under the sign map: the same seal | confirmed in both; 7+fish rests on one seal |
 | C8 | (not in the lecture) | numerals before plain fish, ICIT: 2 x62, 3 x19, 6 x9, 12 x8, 4 x6, 1 x5, 7 x1; M77: 2 x83, 3 x20, 6 x16, 12 x9, 1 x6, 4 x4, 7 x1. The lecture reads 10 of 110 (17 of 139). Correction (second pass): the "2" here lumps the long pair (51/67), which Parpola 1994 reads as 'intermediate space' (*vel-min*), with the short pair (11/16); 3+fish is read in 1994 | not read in the lecture; read in the 1994 book, see R1-R3 |
 | C9 | 'roof'+'fish' sign (p. 54) | 235: 186 tokens, 236 (between strokes) 21 | exists, frequent |
 | C10 | 'fig'+'fish' on M-172 and M-414 (p. 55) | M-172 = 850 786 220 1 18 405: yes. M-414 not in the ICIT dump; M77 has fig+fish exactly twice. Fig is followed by the jar 19 times (M77 23), by the fish once (M77 twice); not above chance | confirmed; the reading rests on two seals |
@@ -157,20 +160,22 @@ Numerals: counting homophones (*nal* 'four' = *nal* 'day', *nal-min* 'asterism')
 - **The numeral restriction does not hold.** Parpola 1994: 194: numbers before the fish "are restricted to 3,
   4, 6 and 7. The hypothesis of a Dravidian pun offers an alternative which explains this restriction".
   Counting stroke numerals before the plain fish (leaving out the long pair, his 'intermediate space', and the
-  short pair, a non-numeral for him): 1 (ICIT 5 / M77 6), 3 (19/20), 4 (6/4), 6 (9/16), 7 (1/1), 12 (8/9); 5
+  short pair, a non-numeral for him): 1 (ICIT 5 / M77 6), 3 (19/20), 4 (6/4), 6 (10/16), 7 (1/1), 12 (8/9); 5
   never. The pun predicts 5 (*ai-m-min*, a Tamil asterism), which never occurs, and cannot give 1 or 12, which
-  do. 73% of the tokens (35/48, 41/56) have a number with a Tamil star name.
+  do. 73% of the tokens (36/49, 41/56) have a number with a Tamil star name.
 - **The frequency order is reversed.** He calls 6+fish the most frequent and 3+fish next; in both corpora
-  3+fish (19, 20) outnumbers 6+fish (9, 16).
+  3+fish (19, 20) outnumbers 6+fish (10, 16).
 - **"Ligatured fish are never preceded by numbers" (1994: 196)** holds only if the short stroke pair is not a
   number (it stands before a ligatured fish 135 times). Single and triple strokes still stand before
-  ligatured fish 35 times (ICIT) and 23 (M77). "Never doubled" holds: no ligatured fish is doubled; the plain
+  ligatured fish 36 times (ICIT) and 23 (M77). "Never doubled" holds: no ligatured fish is doubled; the plain
   fish is, 6 and 7 times.
 - **The 24 readings of Fig. 15.2** (R3 table in `results/rebus_checks.md`). Real units in both corpora:
   3+fish, 6+fish, eye+eye, hearth+rings (15/27 against 0.1-0.2 expected), rings+'space' (29/34 against
   1.7-1.8), 'space'+fish (51/67 against 7-11). At or below chance: fish+fish, 7+fish (one seal), fig+fish
-  (M-172, M-414), fig+'space' (1), crab + plain fish (0/2, below chance). 4+fig with the three-leaf fig never
-  occurs; if his 'fig' there is the branched sign 405/407, 4 + it is a strong unit (17/24). The 'squirrel' of
+  (M-172, M-414), fig+'space' (1), crab + plain fish (0/2, below chance). 4+fig with the three-leaf fig occurs
+  3 times in ICIT (H-289, H-290 and an unnumbered tablet, all incised tablets from Harappa, all three with the
+  pipal-leaf motif on the reverse, as Parpola says of H-289), 0 in M77 (whose left-to-right texts are stored
+  mirrored). The branched sign 405/407 after 4 is a separate, strong unit (18/24). The 'squirrel' of
   no. 13 was not found in ICIT.
 
 The readings split in two. Those built on frequent, recurrent pairs (rings+space *Muruku-Vel*, hearth+rings,
@@ -213,6 +218,65 @@ Ursa Major (7+fish) and the North Star (fig+fish), rest on one and two seals.
 Not freely online: the full ICIT (4,537 objects, 19,616 sign occurrences) needs an account from Andreas Fuls
 (fuls@epigraphica.de), and CISI vol. 2 is print only. The request is the user's to send. The scripts rerun
 unchanged on a fuller export in the indus-website schema; ICIT's own export would need a converter.
+
+## Third pass (23 Sept 2026): toward a reading, the structural layer (`structure.py`)
+
+Scripts without a bilingual have been read by first finding what the signs mean as a class, before any sound
+value. Kober's inflected "triplets" came before Ventris's grid in Linear B; the numeral systems came first in
+proto-cuneiform; Proskouriakoff read Maya dates and events before the syllabary. This pass sets out that layer
+for the Indus texts from the corpus itself, with the image-bearing objects as anchors. Output:
+`results/structure.md`. Grades: **A** = a fact of the corpus at p < 0.001; **B** = anchored in images or in
+more than one test; **C** = interpretation, stated so it can be tested.
+
+1. **Two numeral systems (A).** Short strokes and long strokes precede different classes of sign, even at the
+   same value: for 1, 3, 4, 5 (both stroke pairs left out) short strokes stand before 390, 156, 900, the plain
+   fish 220, 405/407; long strokes before 520, the pot 700, 923, 845 and the jar (Jensen-Shannon 0.59 bits,
+   0 of 1,000 permutations). With the pairs included the split is sharper (0.52; the short pair goes before the
+   marked fish 240/235/233/231, the long pair before the plain fish and the jar). Long 3 + pot is by itself the
+   whole text of 22 Harappa tablets (M77: 111). *Proposal (C):* long strokes count goods and vessels (the pot's
+   own picture confirms it on the Fig. 1 tablets M-478/479, where 4 + pot accompanies a person offering a pot);
+   short strokes are numbers inside names, as in the star names 3/6/7 + fish. A language reading has to give
+   the two series two forms: Dravidian does have them (adjectival *mu-*, *aru-*, *elu-* in compounds, counting
+   *munru*, *aru*, *elu* on their own), but so do many languages, so this narrows the reading without choosing
+   the language.
+2. **Counted nouns (A).** Signs that follow a numeral far more often than chance: 597 and 417 (always, after 2),
+   48, the pot 700 (78% of its occurrences), 384, 585, 226, 156, 803, 900, 840, 140, 923, the fish 220, 575,
+   390. These are nouns for countable things (table S2).
+3. **An ending slot with alternants (A, Kober).** The line-final class is 740 (71% of its tokens end a line),
+   400 (89%), 520 (87%), 90, 156, 151, 700, 407, 527, 154. 58 stems occur with two or more different endings,
+   e.g. 840 32 + {740, 740 400, nothing}; 235 240 + {740 90, 740 151, 520}; 240 100 + {740 400, 740 151, 740};
+   13 840 + {740, 740 400}. The endings stack in a fixed order: 740 400 166 times against 400 740 11; 740 90
+   85 against 0; 740 151 9 against 0. 520 and 740 never stand side by side, as two alternants of one slot
+   would not. *Proposal (C):* 740 is a grammatical ending (Parpola's genitive), and 400, 90, 151 a second slot
+   after it (titles or case endings); 520 is a different filler of the first slot.
+4. **A formula after names (A/B).** The sequence 845 (61|63) 407 occurs in 10 distinct texts (37 objects, seals
+   and copper tablets). In all 10 the phrase before it contains a sign of the fish series or the leaf-in-oval
+   806; a random stretch of the same length does so with probability 0.27 (binomial p = 1.8e-6). On the copper
+   tablets the phrase before the formula changes with the image: 235 705 33 = hare, 806 = archer, 415 220 =
+   'loop', 798 240 = tiger (x2) / gaur (x1), while 845 (61) 407 stays. On three seals the jar comes just before
+   it (... 740 845 407; ... 740 140 845 407). *Proposal (C):* NAME (+ 740) + 845 (61) 407 is a name followed
+   by an epithet or title; the name carries a fish sign, Parpola's god/star sign, and on the tablets names the
+   being in the picture. The elephant tablets have a different pattern: 706 33 923 740 (elephant) against
+   705 33 923 740 1 (composite animal), where the first sign alone changes with the picture.
+5. **Picture anchors (B).**
+   - 'Fig' (ICIT 783/785): the three '4 + fig + jar' tablets from Harappa (H-289, H-290, one unnumbered) all
+     show a pipal leaf on the reverse; the pipal motif occurs on 4 objects in all. The sign means 'fig'.
+   - 'Pot' (700): 4 + pot on M-478/479 beside a scene of a pot offered to a tree (Parpola 2005, Fig. 1).
+   - Fig + crab ligature (777) = the horned archer (Parpola's copper-tablet pairing), and the archer's own text
+     begins with the leaf sign 806: the archer is tied to fig imagery twice.
+   - Seals: no sign goes with the seal animal (second pass), so seal texts are not names of the animal.
+6. **Words (C).** Cutting lines where the pair cohesion is low (PMI < 2 bits or fewer than 3 examples) gives a
+   segmented corpus with 1,208 distinct units; the commonest units of two or more signs are 861 2 (92), 740 400
+   (89), 817 2 (78), 740 90 (55), 820 2 (52), 176 740, 32 220, 760 740, 3 156, 590 390, 840 32 (table S5). The
+   line-initial class (817, 820, 861 followed by the short pair 2; 920, 503, 692) is a second fixed slot at the
+   start, the counterpart of the endings.
+
+Put together, a typical seal text has the shape [opening sign + short pair] [counted or named units, with
+short-stroke numbers inside names] [ending 740/520] [second ending 400/90/151], and a copper-tablet text
+[name with a fish or leaf sign] [epithet 845 (61) 407]. A phonetic proposal now has constraints it did not
+have from single signs: it must make 740/520 alternate as endings, 400/90/151 follow them, 845 (61) 407 an
+epithet after names, and give numbers two forms. None of this is a reading; it is the grammar a reading must
+fit, and the places (name slots on the copper tablets, 'fig', 'pot') where meaning is fixed by pictures.
 
 ## Limitations
 

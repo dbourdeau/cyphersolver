@@ -33,38 +33,38 @@ Model: bigram language model (interpolated with unigram) trained on the 2508 Sou
 
 | object | site | type | signs (reading order) | bits/sign | pct | order | pct |
 |---|---|---|---|---|---|---|---|
-| sealid 160 | Hajar | TAB:I | 117 615 615 | 6.83 | 88 | -0.42 | 78 |
-| sealid 1971 | Kish | SEAL:S | 416 840 60 3 220 590 390 740 | 4.54 | 51 | -1.39 | 51 |
-| sealid 2153 | Luristan | SEAL:C | 91 840 413 831 | 7.82 | 95 | +0.01 | 87 |
-| sealid 3863 | Qala'at al-Bahrain | SEAL:C | 160 90 55 60 190 | 7.54 | 93 | -0.22 | 82 |
-| sealid 3865 | Ra's al-Junayz | POT:T:g | 4 405 | 4.48 | 50 | -1.40 | 50 |
-| sealid 3882 | Susa | SEAL:CY | 924 1 319 31 55 2 150 416 | 8.90 | 98 | +0.68 | 96 |
-| sealid 3884 | Tell Umma | TAG:L | 127 705 2 4 390 | 6.16 | 80 | -0.64 | 74 |
-| sealid 3889 | Unknown | SEAL:C | 467 550 1 740 740 | 5.89 | 76 | +0.13 | 89 |
-| sealid 3897 | Ur | SEAL:C | 528 220 924 340 93 | 10.26 | 100 | +0.69 | 96 |
-| sealid 3898 | Ur | SEAL:C | 415 803 1 328 4 2 | 8.11 | 96 | +1.04 | 98 |
-| sealid 4173 | Salut | SEAL:S | 595 278 2 4 392 | 8.67 | 98 | +0.60 | 95 |
-| sealid 5227 | Karzakan | SEAL:C | 91 31 455 220 | 6.41 | 84 | -0.34 | 80 |
-| sealid 5228 | Karzakan | SEAL:C | 91 32 1 33 | 6.43 | 84 | +0.25 | 90 |
-| sealid 5229 | Saar | SEAL:C | 55 220 91 1 93 31 | 7.71 | 94 | +0.42 | 93 |
+| sealid 160 | Hajar | TAB:I | 117 615 615 | 6.83 | 89 | -0.42 | 81 |
+| sealid 1971 | Kish | SEAL:S | 416 840 60 3 220 590 390 740 | 4.53 | 54 | -1.40 | 54 |
+| sealid 2153 | Luristan | SEAL:C | 91 840 413 831 | 7.80 | 95 | -0.01 | 89 |
+| sealid 3863 | Qala'at al-Bahrain | SEAL:C | 190 60 55 90 160 | 8.75 | 98 | +0.99 | 99 |
+| sealid 3865 | Ra's al-Junayz | POT:T:g | 4 405 | 4.29 | 48 | -1.59 | 45 |
+| sealid 3882 | Susa | SEAL:CY | 924 1 319 31 55 2 150 416 | 8.90 | 98 | +0.68 | 97 |
+| sealid 3884 | Tell Umma | TAG:L | 127 705 2 4 390 | 6.13 | 81 | -0.66 | 76 |
+| sealid 3889 | Unknown | SEAL:C | 467 550 1 740 740 | 5.88 | 78 | +0.13 | 91 |
+| sealid 3897 | Ur | SEAL:C | 528 220 924 340 93 | 10.26 | 100 | +0.69 | 97 |
+| sealid 3898 | Ur | SEAL:C | 415 803 1 328 4 2 | 8.09 | 96 | +1.02 | 99 |
+| sealid 4173 | Salut | SEAL:S | 595 278 2 4 392 | 8.67 | 98 | +0.60 | 97 |
+| sealid 5227 | Karzakan | SEAL:C | 91 31 455 220 | 6.41 | 85 | -0.34 | 83 |
+| sealid 5228 | Karzakan | SEAL:C | 91 32 1 33 | 6.46 | 85 | +0.28 | 93 |
+| sealid 5229 | Saar | SEAL:C | 55 220 91 1 93 31 | 7.69 | 94 | +0.41 | 95 |
 
-- other (3): median percentile, bits/sign 80, order 74
-- square (2): median percentile, bits/sign 98, order 95
-- round/cylinder (9): median percentile, bits/sign 94, order 90
+- other (3): median percentile, bits/sign 81, order 76
+- square (2): median percentile, bits/sign 98, order 97
+- round/cylinder (9): median percentile, bits/sign 95, order 95
 
 ## C7 Share of the fish signs (p. 52)
 - fish series (219 220 221 222 224 226 228 229 230 231 232 233 234 235 236 240 241 242 243 244): 695 of 7165 tokens on seals = 9.7% ("almost every tenth sign"); plain fish 220: 296; roof-fish 235: 186.
 
 ## C8 Numeral + fish (p. 54)
-- numerals read immediately before the plain fish, by value: 1: 5, 2: 62, 3: 19, 4: 6, 6: 9, 7: 1, 12: 8
+- numerals read immediately before the plain fish, by value: 1: 5, 2: 63, 3: 19, 4: 6, 6: 10, 7: 1, 12: 8
 - whole inscriptions that are numeral + plain fish: B-3 Banawali SEAL:S (4 strokes); 151 Farmana SEAL:S (2 strokes); H-1086 Harappa POT:T:s (6 strokes); H-1028 Harappa SEAL:S (6 strokes); H-1737 Harappa POT:T:s (3 strokes); H-1736 Harappa POT:T:s (3 strokes); H-9 Harappa SEAL:S (7 strokes); H-1084 Harappa POT:T:s (2 strokes)
-- signs most often read right after a numeral: 220 (110), 740 (84), 240 (77), 390 (72), 520 (51), 156 (48), 32 (47), 700 (47), 235 (37), 3 (32), 803 (32), 590 (31)
+- signs most often read right after a numeral: 220 (112), 740 (87), 390 (78), 240 (78), 700 (56), 520 (52), 156 (50), 32 (47), 235 (37), 3 (33), 803 (32), 590 (31)
 
 ## C9-C13 Fig, crab and their combinations (pp. 55-59)
 - fig 772 773 776 783 784 785 786: 28 tokens
 - fig+crab ligature 777 778 782: 7 tokens
 - crab 794 798: 110 tokens
-- signs read right after the fig: {'740': 19, '4': 3, '32': 1, '895': 1, '220': 1, '530': 1, '233': 1}
+- signs read right after the fig: {'740': 22, '32': 1, '895': 1, '220': 1, '530': 1, '233': 1}
     - fig+crab on L-11 Lothal SEAL:S: 817 2 778 255 435 705 590
     - fig+crab on M-603 Mohenjo-daro TAB:C: 777
     - fig+crab on M-604 Mohenjo-daro TAB:C: 777
@@ -94,10 +94,10 @@ Share of inscriptions (one line, excluding numerals) with a sign occurring twice
 |---|---|---|---|
 | 2 | 483 | 1.0% | 2.0% |
 | 3 | 613 | 5.1% | 6.5% |
-| 4 | 537 | 5.2% | 13.8% |
+| 4 | 537 | 5.2% | 13.9% |
 | 5 | 362 | 9.9% | 20.6% |
-| 6 | 186 | 17.7% | 29.4% |
-| 7 | 93 | 25.8% | 36.2% |
+| 6 | 186 | 17.7% | 29.3% |
+| 7 | 93 | 25.8% | 36.4% |
 | 8 | 33 | 12.1% | 46.5% |
 | 9 | 17 | 29.4% | 52.5% |
 | 10+ | 21 | 14.3% | 60.8% |
@@ -105,11 +105,11 @@ Share of inscriptions (one line, excluding numerals) with a sign occurring twice
 ## C17 Are the proposed compounds real units? (PMI against a within-line shuffle)
 | pair (reading order) | observed | expected | PMI (bits) | shuffles >= observed |
 |---|---|---|---|---|
-| 6 + fish (aru-min, Pleiades) | 9 | 1.0 | 3.13 | 0 / 300 |
-| 7 + fish (elu-min, Ursa Major) | 1 | 1.6 | -0.71 | 225 / 300 |
-| any numeral + fish | 110 | 51.5 | 1.09 | 0 / 300 |
-| any numeral + pot | 47 | 12.6 | 1.90 | 0 / 300 |
-| fig + fish (vata-min, north star) | 1 | 0.8 | 0.29 | 151 / 300 |
-| crab + fish series (kon-min) | 28 | 10.2 | 1.45 | 0 / 300 |
+| 6 + fish (aru-min, Pleiades) | 10 | 1.1 | 3.18 | 0 / 300 |
+| 7 + fish (elu-min, Ursa Major) | 1 | 1.7 | -0.76 | 225 / 300 |
+| any numeral + fish | 112 | 51.6 | 1.12 | 0 / 300 |
+| any numeral + pot | 56 | 14.5 | 1.95 | 0 / 300 |
+| fig + fish (vata-min, north star) | 1 | 0.8 | 0.32 | 151 / 300 |
+| crab + fish series (kon-min) | 28 | 10.2 | 1.46 | 0 / 300 |
 | eye + eye (kan-kani, overseer) | 9 | 0.1 | 6.54 | 1 / 300 |
 | water + eye (nir-k-kanti) | 3 | 0.1 | 4.86 | 0 / 300 |

@@ -110,7 +110,8 @@
    "align_m77.py (ICIT-to-Mahadevan sign map by text alignment)",
    "rebus_checks.py (numeral restriction, 24 readings, Tamil-lexicon chance baseline)",
    "motif_checks.py (sign-motif permutation test, copper-tablet pairing)",
-   "easyocr page-header index of the CISI vol. 1 scan"
+   "easyocr page-header index of the CISI vol. 1 scan",
+   "structure.py (numeral systems, counted nouns, ending paradigms, name + formula, segmentation)"
   ],
   "models": [
    "claude-opus-5-5"
@@ -194,6 +195,31 @@
    "kind": "statistics",
    "what": "Signs vs field motifs: no sign-motif association on 1,107 seals (best p = 0.006 of 333 pairs); on copper tablets 6 of 7 repeated texts go with one motif (hare, archer, elephant, loop, goat).",
    "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Direction bug found: the dump stores L/R texts mirrored (jar first in stored order for 29 of 30 L/R objects); reading order reversed for all 103 L/R objects and every analysis rerun; H-289 now reads 4 + fig + jar with a pipal leaf on the reverse, as Parpola says.",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "Two numeral systems: short and long strokes of the same value precede different sign classes (JS 0.59 bits, p < 0.001): long strokes count pots and goods (520, 700, 923, 845), short strokes go with 390, 156, 900 and the fish signs.",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "Kober-style paradigms: 58 stems with alternating endings; ending slot {740, 520} followed by a second slot {400, 90, 151} in fixed order (740 400 166 vs 11; 740 90 85 vs 0).",
+   "result": "worked"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Formula 845 (61) 407 follows a phrase with a fish-series or leaf sign in all 10 distinct texts (p = 1.8e-6); on copper tablets the phrase before it changes with the image (hare, archer, loop, tiger): name + epithet construction.",
+   "result": "partial"
+  },
+  {
+   "kind": "prediction",
+   "what": "Constraints any phonetic reading must meet: two numeral forms, 740/520 as alternating endings with 400/90/151 after them, an epithet 845 (61) 407 after names; pictorial anchors for fig (783/785), pot (700), fig+crab = archer.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -203,6 +229,6 @@
   "verification": [
    "none"
   ],
-  "notes": "Undeciphered script: no bilingual, language unknown. The work tests the corpus evidence behind Parpola's 2005 claims; several confirmed, some readings rest on one or two seals."
+  "notes": "Undeciphered script: no bilingual, language unknown. Parpola's claims tested (several confirmed, some readings rest on one or two seals); the structural layer a reading must fit set out: two numeral systems, an ending paradigm, a name + epithet formula, picture anchors."
  }
 }

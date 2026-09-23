@@ -10,15 +10,15 @@ Parpola 1994: 194: "the numbers actually attested before the 'fish' sign in the 
 | 3 | mu-m-min (Mrgasiras) | 19 | 20 |
 | 4 | only through a homophone: nal-min "day-star, asterism" | 6 | 4 |
 | 5 | ai-m-min (Hasta / Rohini) | 0 | 0 |
-| 6 | aru-min (Pleiades) | 9 | 16 |
+| 6 | aru-min (Pleiades) | 10 | 16 |
 | 7 | elu-min (Ursa Major) | 1 | 1 |
 | 12 | none | 8 | 9 |
 
-- numeral + fish tokens whose number has a Tamil star name: ICIT 35 of 48 (73%), M77 41 of 56 (73%).
+- numeral + fish tokens whose number has a Tamil star name: ICIT 36 of 49 (73%), M77 41 of 56 (73%).
 
 ## R2 Numerals before ligatured fish
 
-- ICIT, stroke numerals other than the short and long pairs, before a ligatured fish: 35; {('31', '240'): 8, ('1', '240'): 5, ('1', '235'): 5, ('1', '233'): 3, ('33', '240'): 2, ('55', '235'): 2, ('31', '243'): 2, ('3', '226'): 1}
+- ICIT, stroke numerals other than the short and long pairs, before a ligatured fish: 36; {('1', '240'): 7, ('31', '240'): 7, ('1', '235'): 5, ('1', '233'): 3, ('33', '240'): 2, ('55', '235'): 2, ('31', '243'): 2, ('3', '226'): 1}
 - M77, same: 23; {('MSg86', 'MSg67'): 5, ('MSg97', 'MSg67'): 2, ('MSg97', 'MSg65'): 2, ('MSg121', 'MSg65'): 2, ('MSg97', 'MSg72'): 2, ('MSg86', 'MSg75'): 2, ('MSg89', 'MSg67'): 2, ('MSg86', 'MSg65'): 2}
 - the short pair (ICIT 2) before a ligatured fish: 135; the plain fish doubled: ICIT 6, M77 7; a ligatured fish doubled: ICIT 0.
 
@@ -30,9 +30,9 @@ Counts in reading order; for two-sign readings, expected count if the two signs 
 |---|---|---|---|---|---|---|---|---|
 | 1 | fish | min | 296 |  |  | 381 |  |  |
 | 2 | fish + fish | min + min | 6 | 8.2 | 47 | 7 | 10.7 | 36 |
-| 3 | 3 + fish | mu-m-min | 19 | 10.6 | 0 | 20 | 13.6 | 0 |
-| 4 | 6 + fish | aru-min | 9 | 1.0 | 0 | 16 | 1.1 | 0 |
-| 5 | 7 + fish | elu-min | 1 | 1.5 | 217 | 1 | 2.2 | 256 |
+| 3 | 3 + fish | mu-m-min | 19 | 10.7 | 0 | 20 | 13.6 | 0 |
+| 4 | 6 + fish | aru-min | 10 | 1.0 | 0 | 16 | 1.1 | 0 |
+| 5 | 7 + fish | elu-min | 1 | 1.6 | 217 | 1 | 2.2 | 256 |
 | 6 | roof + fish | mai-m-min | 186 |  |  | 216 |  |  |
 | 7 | halving + fish | pacu + min | 140 |  |  | 188 |  |  |
 | 8 | dot + fish | pottu + min | 60 |  |  | 73 |  |  |
@@ -42,14 +42,14 @@ Counts in reading order; for two-sign readings, expected count if the two signs 
 | 12 | hearth + rings | cul + muruku | 15 | 0.1 | 0 | 27 | 0.2 | 0 |
 | 13 | rings + squirrel | muruku + pillai | 0 | 0.0 | 300 | n/a |  |  |
 | 14 | rings + space | muruku + vel | 29 | 1.7 | 0 | 34 | 1.8 | 0 |
-| 15 | space + fish | vel-min | 51 | 7.3 | 0 | 67 | 10.7 | 0 |
+| 15 | space + fish | vel-min | 51 | 7.2 | 0 | 67 | 10.7 | 0 |
 | 16 | fig + fish | vata-min | 1 | 0.8 | 132 | 2 | 0.9 | 79 |
 | 17 | fig + space | vata + vel | 1 | 0.6 | 111 | 1 | 0.6 | 121 |
-| 18 | 4 + fig | nal + vata | 0 | 0.2 | 300 | 0 | 0.2 | 300 |
-| 18b | 4 + branched sign 405/407 (if that is his fig) | nal + vata | 17 | 1.3 | 0 | 24 | 1.5 | 0 |
+| 18 | 4 + fig | nal + vata | 3 | 0.2 | 15 | 0 | 0.2 | 300 |
+| 18b | 4 + branched sign 405/407 (if that is his fig) | nal + vata | 18 | 1.4 | 0 | 24 | 1.5 | 0 |
 | 19 | fig + crab (ligature) | koli | 7 |  |  | n/a |  |  |
 | 20 | crab | kol | 110 |  |  | 137 |  |  |
-| 21 | crab + fish | kon-min | 0 | 3.3 | 300 | 2 | 4.2 | 292 |
+| 21 | crab + fish | kon-min | 0 | 3.2 | 300 | 2 | 4.2 | 292 |
 | 22 | pot | - | 81 |  |  | 323 |  |  |
 | 23 | man | al | 109 |  |  | 134 |  |  |
 | 24 | cow head (the jar) | a (possessive) | 1267 |  |  | 1395 |  |  |
