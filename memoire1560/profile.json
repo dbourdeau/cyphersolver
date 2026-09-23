@@ -1,0 +1,181 @@
+{
+ "schema_version": 1,
+ "target": "memoire1560",
+ "title": "Mémoire en chiffre du XIIe décembre 1560: anonymous report from the Agenais to Montmorency, BnF fr. 3157 no. 67",
+ "documents": [
+  {
+   "id": "fr3157-67",
+   "shelfmark": "BnF fr. 3157 no. 67, ff. 152r-156v (Gallica btv1b90598645 views 153-158)",
+   "date": "1560-12-12",
+   "year": 1560,
+   "country": "France",
+   "route": "Agenais -> court (Montmorency)",
+   "language": "French",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves, the dorse or the neighbouring items; only the heading 'Du xiie decembre 1560' is in clear."
+   },
+   "length": {
+    "tokens": 1715,
+    "distinct": 908,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full resolution, half-width 3-line crops",
+    "image_quality": "fair",
+    "notes": "Tokens are cipher words (the manuscript divides words with '/'); 9,497 signs in all. First pass by three agents, then a key-guided correction pass by four agents against the images (corrections_<fol>.tsv, about 300 x->r fixes)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "polyphonic",
+   "code"
+  ],
+  "summary": "Homophonic substitution in a cursive pseudo-script with word division, two-stroke units (zo=u, pp=m, s3=r, lz=d) and four whole-word codes (pour, roy, et, sieur).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 41,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "separator symbol",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Main trap: the rounder r-form (n) versus x (e). Polyphonic delta (u/v, b, g) and double dagger (i, a). No name codes; all persons and places spelt out."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No DECODE record, not on Tomokiyo or Lasry (GL.htm) lists, no edition found by web search. Brunet 2019 on Clairac not reachable.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: posed the catalogue entry with /goal. No target-specific intervention.",
+  "tools": [
+   "solve.py (homophonic annealer, word spaces, fr-1530-despatches 5-gram)",
+   "decrypt.py (key.txt with units and word codes)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-23"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Located item 67 in fr. 3157: the BnF notice's folio numbers precede the item numbers, so the cipher is ff. 152r-156v (not f. 158). Fetched the ten pages from Gallica IIIF.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "Checked the dorse and the neighbouring Villars letters for a decipherment or key: none.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "key from source",
+   "what": "Looked at Lasry's GL.htm tables for Henri II / Charles IX as the brief asked: different symbol sets.",
+   "result": "ruled out",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Three agents transcribed the ten pages into ASCII sign codes (one stopped after three pages by a tool block; a fresh agent did 153v-154r).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "One-sign-per-letter homophonic annealing with word spaces: gibberish (-4.2/char).",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "statistics",
+   "what": "z followed by o in 262 of 283 cases: 'zo' taken as one unit; most frequent words Tzox, Wx, Wxm, hx.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Seeded Tzox=que, Wx/Wxm=le/les, hx=de; annealer read 'les derniers advertissemens', 'les affaires de pardeça'.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "crib",
+   "what": "Aligned decrypted words with the French they must be: entendu (r=n, io=u), avoir, ordinairement (s3=r), souloit (nn=s); reran the annealer with these units (-3.2/char).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "prediction",
+   "what": "Standalone groups read from context as codes: Z=pour, 4=roy, c+/i+/e+=et, F/g=sieur.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Key-guided correction pass by four agents against the images, changing a sign only where the image supports it: about 300 x->r fixes, the looped sign y (=i) identified, missing signs restored.",
+   "result": "worked",
+   "date": "2026-09-23"
+  },
+  {
+   "kind": "reading",
+   "what": "Line-by-line reading with marked emendations; lz=d found during it (despuis, disans, d'environ); 16 of 1,715 cipher words left unread.",
+   "result": "worked",
+   "date": "2026-09-23"
+  },
+  {
+   "kind": "literature search",
+   "what": "Web search for an edition or decipherment (names, places, shelfmark): none; Brunet 2019 on Clairac not reachable.",
+   "result": "failed",
+   "date": "2026-09-23"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 0.989,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_152r-154r.txt + reading_154v-156v.txt against ciphertext.txt: 16 words marked [..] out of 1,715 cipher words (108 more read with a marked emendation).",
+  "verification": [
+   "historical consistency"
+  ],
+  "key": "recovered",
+  "codes_open": {
+   "open": 0,
+   "total": 9,
+   "tokens_open": 0
+  },
+  "notes": "Key broken here ciphertext-only. Content fits the Agenais in Dec 1560: Clairac assembly, Caumont, Biron at Bergerac, Navarre at Nérac, the États of Orléans deputies. Writer unnamed."
+ }
+}
