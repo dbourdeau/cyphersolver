@@ -15,6 +15,8 @@ The **Speculum cipher flyleaf** is provisionally p133 at **2.30**: a short subst
 
 The **Passano Wolsey account** is provisionally p135 at **3.35**: a ciphertext-only recovery after re-transcription, substantial historical content, but 13 emendations and no independent key. The omitted continuation is not recovered.
 
+The **Segura letter of 1596** is provisionally p136 at **3.45**: a short unknown homophonic cipher read from images, with a reported comet prediction and six tentative sign assignments; no independent key.
+
 ## Axes and weights
 
 | Axis | Weight | 1 | 5 |
@@ -30,6 +32,7 @@ The **Passano Wolsey account** is provisionally p135 at **3.35**: a ciphertext-o
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
+| p136 | **Matheo de Segura → Constable of Castile**, BnF es. 336 no. 99 | 1596 | 4 | 3 | 4 | 4 | 2 | 3 | **3.45** | Unknown sign cipher read; six tentative values, no independent plaintext. [segura1596](https://dbourdeau.github.io/cyphersolver/segura1596.html) |
 | p135 | **Giovan Gioacchino da Passano (attributed): Wolsey account**, Clairambault 331 | March 1530 | 4 | 3 | 4 | 3 | 2 | 3 | **3.35** | 96.0% of surviving signs coherent with explicit corrections; rare signs and omitted continuation open. [Write-up](https://dbourdeau.github.io/cyphersolver/joachim1530.html) |
 | p134 | **Unknown Catholic gentleman of the Agenais → Montmorency**, "Mémoire en chiffre", BnF fr. 3157 no. 67 | 12 Dec 1560 | 5 | 3 | 5 | 4 | 1 | 4 | **3.90** | Unknown homophonic cursive-sign system with units and word codes broken ciphertext-only; 98.9% read; the Clairac assembly, Biron at Bergerac, Navarre at Nérac, the Agenais deputies to Orléans; historical consistency only. [memoire1560](https://dbourdeau.github.io/cyphersolver/memoire1560.html) |
 | p133 | **Speculum cipher flyleaf**, SCH R 201 (R4817) | Undated; volume 1618 | 2 | 2 | 3 | 2 | 1 | 4 | **2.30** | Rous partial solution completed; 78/79 coherent without emendation, internal consistency only. [r4817](https://dbourdeau.github.io/cyphersolver/r4817.html) |
@@ -611,3 +614,5 @@ Speculum cipher flyleaf provisional score: 0.25×2 + 0.25×2 + 0.20×3 + 0.10×2
 
 Passano account: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×2 + 0.10×3 = **3.35** (provisional judgment, 23 Sept 2026).
 Mémoire en chiffre 1560 provisional score: 0.25×5 + 0.25×3 + 0.20×5 + 0.10×4 + 0.10×1 + 0.10×4 = **3.90** (p134): D 5, unknown system broken from images with no crib; H 3, a detailed regional report at the start of the regency, new but not a decision of state; N 5, no reading anywhere; R 4, item located against a wrong catalogue folio, ten pages transcribed and corrected against the images; F 1, on no list; V 4, read end to end at 98.9%, internal and historical consistency only.
+
+Segura to the Constable of Castile, 8 August 1596 provisional score: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×2 + 0.10×3 = **3.45** (p136). Novelty means no reading found, not proof that none exists.

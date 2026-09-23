@@ -225,6 +225,8 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Matheo de Segura → Constable of Castile, 8 Aug 1596**, BnF es. 336 no. 99 (catalogue 321): read 23 Sept 2026; all 125 cipher tokens proposed, six tentative, no independent key. [`segura1596/`](segura1596/) · [write-up](https://dbourdeau.github.io/cyphersolver/segura1596.html)
+
 - **Giovan Gioacchino da Passano (attributed) → Francis I, March 1530**, Clairambault 331 f. 156 (catalogue 281): surviving Wolsey account read, 386/402 coherent with 13 emendations; dotted signs were decisive. Partial key; omitted page and three lines unavailable. [Write-up](https://dbourdeau.github.io/cyphersolver/joachim1530.html).
 - **Mémoire en chiffre**, 12 December 1560 (BnF fr. 3157 no. 67; catalogue 276): solved 22–23 Sept 2026, key broken here ciphertext-only (homophonic cursive-sign substitution with units and word codes), read 98.9% of 1,715 cipher words; an Agenais gentleman to Montmorency on the Protestant rising. See `memoire1560/`.
 
