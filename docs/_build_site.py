@@ -263,6 +263,11 @@ PAGES = [
          blurb='The catalogue listed five ciphertexts as a transcription job. George Lasry had in fact reconstructed the key of the dossier in 2020 and read four of its eleven letters, which covered three of the five; no reading of the other two was published. A beam search over the unseparated figures, under an Italian model built partly from the dossier&rsquo;s own clear passages, reads both, and agrees on 77.5% of letters with the decipherment written between the lines in 1632. Six of the ninety-five nomenclator elements Lasry left blank are given values, among them 830 = Francia; 117 stay unread.',
          quote='&ldquo;&hellip;conseguenze che tengano disunita per un lungo pezzo la Francia, e sotto giogo alle esterne violenze, o almeno impotente a soccorrer li suoi alleati.&rdquo;',
          rights='Manuscript rights: Archivio Apostolico Vaticano, via DECODE'),
+    dict(slug='bagno1652', label='Guidi di Bagno 1652', year='1652', y=1652.01, place='Paris &rarr; Rome', st='stuck', stt='key not found',
+         title='Guidi di Bagno to the Secretariat, 5 January 1652 &mdash; the suggested key excluded',
+         blurb='The first despatch in AAV Francia 104 is four pages of figures from the papal nunciature during the Fronde. All five DECODE images were checked. Lasry&rsquo;s Francia 346 key cannot fit: it reserves 6 as a separator, while this letter repeatedly writes 66 and 666. There is no attached transcript, decipherment, clear copy or edition, and OCR was too noisy for a defensible sign-level transcription. The letter remains unread; it needs the 1652 Paris key or the Secretariat&rsquo;s register decipherment.',
+         quote='The Francia 346 separator rule is incompatible with the manuscript.',
+         rights='Manuscript rights: Archivio Apostolico Vaticano, via DECODE R5622'),
     dict(slug='ormonde', label='Ormonde', year='1634&ndash;35', y=1634, place='Ireland / England', st='solved', stt='solved',
          title='Maltravers to Ormonde &mdash; a regular block cipher',
          blurb='Doubled letters written with consecutive figures betray a regular key (consonants three figures each from 7, vowels from 64, nulls 91&ndash;111). Every spelled word reads, and the nomenclator is then confirmed clause for clause against Wentworth&rsquo;s own dispatches in Knowler&rsquo;s <em>Strafforde&rsquo;s Letters</em> (1739): the King refusing Kildare, and Ormonde moved for the Council &ldquo;in exchange&rdquo; for Sir Piers Crosby.',
@@ -1245,6 +1250,7 @@ IMAGES['visconti1528'] = ('visconti1528_lead.jpg', 'BnF fr. 3034 f. 154r, lines 
 IMAGES['lebel1593'] = ('lebel1593_lead.jpg', 'Fr. 3983 no. 62, f. 130r (10 March 1593): the clear opening, then the cipher, letter signs run together and code numbers set off by dots', 'Biblioth&egrave;que nationale de France, fr. 3983 f. 130r, via Gallica btv1b9059406b')
 IMAGES['wod1568'] = ('wod1568_lead.jpg', 'Add MS 4136 f. 32: the first four lines of Throckmorton&rsquo;s letter of 10 July 1559 in his Cipher 1', 'British Library, Add MS 4136, via DECODE R2988')
 IMAGES['norreys1567'] = ('norreys1567_lead.jpg', 'Add MS 4136 f. 161: Forbes&rsquo;s numbered copy of Norreys&rsquo;s ciphered words, 6 February to 9 March 1567/8', 'British Library, Add MS 4136, via DECODE R9251')
+IMAGES['bagno1652'] = ('bagno1652_lead.jpg', 'Francia 104 f. 6r, the first cipher page of Guidi di Bagno&rsquo;s despatch of 5 January 1652: unseparated figures with occasional Italian words left clear', 'Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104, via DECODE R5622')
 IMAGES['guiche1551'] = ('guiche1551_lead.jpg', 'BnF fr. 3138 f. 60v, La Guiche to Montmorency, 22 November 1551: invented signs between lines of clear French, the first two cipher lines struck through', 'Biblioth&egrave;que nationale de France, fr. 3138 f. 60v, via Gallica btv1b90601662 view 65')
 
 IMAGES['rakoczi1707'] = None

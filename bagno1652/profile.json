@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "target": "bagno1652",
+  "title": "Niccolò Guidi di Bagno to the Secretariat of State, Paris, 5 January 1652 (AAV Francia 104; DECODE R5622)",
+  "documents": [
+    {
+      "id": "R5622",
+      "shelfmark": "AAV Segreteria di Stato, Francia 104, ff. 5r-7v; DECODE R5622",
+      "date": "1652-01-05",
+      "year": 1652,
+      "country": "France/Papal States",
+      "route": "Paris -> Rome (Niccolò Guidi di Bagno -> Secretariat of State)",
+      "language": "Italian",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": ["none"],
+        "source": "No decipherment, clear copy or edition found."
+      },
+      "length": {
+        "tokens": "unknown",
+        "distinct": 10,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE images IMG_R5622_I30780_P1-P5",
+        "image_quality": "good",
+        "notes": "Four cipher pages; OCR and glyph segmentation were too inaccurate for publication."
+      }
+    }
+  ],
+  "system": {
+    "types": ["undetermined"],
+    "summary": "Unseparated decimal stream with Italian words left clear; code boundaries and values are unknown.",
+    "symbol_kind": "digits",
+    "distinct_symbols": 10,
+    "diacritics": {"used": false},
+    "homophones": {"used": "unknown"},
+    "nomenclator": {"present": "unknown"},
+    "nulls": {"present": "unknown"},
+    "key_order": "unknown",
+    "word_division": "partial",
+    "doubled_letters": "unknown",
+    "sibling_key": "none",
+    "notes": "Repeated 66 and 666 exclude the Francia 346 convention in which 6 is a separator and never part of a code."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "No edition or decipherment found; DECODE has no transcription or attached document.",
+      "found": "before attempt",
+      "used": false
+    },
+    "inputs": ["images", "cleartext context", "published key"],
+    "attack": "ciphertext-only",
+    "human_role": "Project-level: supplied an authenticated DECODE session and posed the target with the suggestion to test the Francia 346 key. No target-specific reading or transcription was supplied.",
+    "tools": ["DECODE metadata and image inspection", "Francia 346 decoder", "EasyOCR", "character segmentation and glyph clustering", "web and catalogue search"],
+    "models": ["gpt-5"],
+    "sessions": 1,
+    "first_date": "2026-09-22",
+    "last_date": "2026-09-22"
+  },
+  "solution": [
+    {"kind": "access", "what": "Downloaded and inspected all five authenticated DECODE images.", "result": "worked", "date": "2026-09-22"},
+    {"kind": "sibling key", "what": "Checked the exact shelfmark and adjacent DECODE records; no same-text or same-key sibling was found.", "result": "failed", "date": "2026-09-22"},
+    {"kind": "key from source", "what": "Tested Lasry's reconstructed Francia 346 key; its mandatory 6 separator is incompatible with R5622's repeated 66 and 666, and a checked line gives malformed groups and no Italian.", "result": "ruled out", "date": "2026-09-22"},
+    {"kind": "transcription", "what": "Tried whole-line OCR, digit segmentation and glyph clustering on ff. 6r-7v.", "result": "failed", "date": "2026-09-22"},
+    {"kind": "literature search", "what": "Searched exact shelfmark, sender, date and route and checked the Ranuzzi/Acta Nuntiaturae Gallicae lead; no edition of this despatch or online decifrati register was found.", "result": "failed", "date": "2026-09-22"}
+  ],
+  "outcome": {
+    "class": "not read",
+    "fraction_read": 0.0,
+    "verification": ["none"],
+    "notes": "Attempted, open. Francia 346 is excluded; needs a reliable manual transcription and the 1652 Paris nunciature key or Secretariat decipherment.",
+    "gaps": [
+      {"item": "ciphertext on ff. 6r-7v", "blocker": "no-key-material", "detail": "no matching key, decipherment or clear copy; Francia 346 excluded"},
+      {"item": "sign-level transcription", "blocker": "illegible", "detail": "human-readable scans, but OCR and automatic segmentation are not reliable enough"},
+      {"item": "Secretariat register or 1652 Paris key", "blocker": "needs-physical-access", "detail": "no digitised witness found"}
+    ]
+  }
+}
