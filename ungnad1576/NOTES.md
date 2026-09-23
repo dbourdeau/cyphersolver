@@ -40,6 +40,8 @@ long enough for a ciphertext-only break.
 | HCPortal (index of all 1,493 records, `catalogue_harvest/hcportal/`) | Nothing for Ungnad, Türkei or Constantinople. |
 | Láng 2015 PDF (real-d.mtak.hu/922) and *Real Life Cryptology* 2018 (OAPEN, open access) | Neither reproduces the letter or the key; the figures are Mednyánszky/Rákóczi keys, plates I-II are Quart. Lat. 2254 ff. 33-34. RLC's appendix (p. 195) counts "6 letters: Türkei I Karton 32, 34, 37, 43, 44, 93, 110, 1577-1581, Breuner, Sinzendorff, Ungnad, Rudolf II, German", no reading published. |
 | Web search (Láng OUP blog 2017; Fóti, *Történelmi Szemle* 2026/1, which cites Türkei I Kt. 31-33) | No transcription or image of ff. 199-203. |
+| ÖStA AIS, other fonds | **SB Khevenhüller/Riegersburg 4-6** (ID 3434715): Ungnad's letters of 1574 to Archduke Charles of Inner Austria, "mit teilweise chiffrierten Berichten aus Konstantinopel", German. It is an item record but has no scans; the owner's permission is needed for use. A sibling in the same years, with clear text around the cipher, but blocked the same way. |
+| Kellner, "Spionageabwehr in der Frühen Neuzeit" (Ljubljana e-book) | About Talman's 18th-c. ciphers only; nothing on Ungnad. No edition of Ungnad's 1573-78 despatches was found. |
 
 ## Result so far
 
@@ -56,6 +58,7 @@ in this session. Every gap is blocked from outside: the letter needs photographs
 
 - Siblings: Ungnad's deciphered German despatches of 1577 (Kt. 34-3, Kt. 35-3) would test the key against a
   contemporary decipherment. Not digitised either (checked in the Archivinformationssystem). Blocked the same way.
+- Siblings, other fonds: Khevenhüller/Riegersburg 4-6 (Ungnad → Archduke Charles, 1574, partly ciphered, German) would give clear context plus cipher in the same hand and years; no scans, private deposit. Blocked.
 - Clear pages: the letter is wholly in cipher (Láng: "teljes"); a covering clear letter or register copy may be
   among ff. 1-304 of 32-3, but the Konvolut has no images.
 - Known keys: found (R392, KEY.md). Nothing else on DECODE, HCPortal or in Láng's two books.
