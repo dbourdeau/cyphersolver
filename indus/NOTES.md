@@ -424,6 +424,41 @@ Scripts: `equation_rebus.py`, `leads.py` (L2, L5, L6, L7), `sanskrit_key_test.py
    (21%; p = 0.075), 9 carry a numeral (57%). This supports Parpola's view that they write non-Indus (local)
    names in Indus signs; matching them to Meluhhan names in cuneiform needs sound values nobody has.
 
+## Sixth pass (23 Sept 2026): ending grid, opening formula, Proto-Elamite shape, a fourth family
+
+Scripts: `sixth.py` (G1, G2, O1), `pe_formula.py`, `fish_star_world.py`; results in `results/sixth.md`,
+`pe_formula.md`, `fish_star_world.md`. (profile.json not updated for this pass, at the user's request.)
+
+1. **The ending grid (Kober).** 2,560 lines: no ending 1,208, 740 894, 520 202, 740 400 158, 740 90 79,
+   520 400 11, 740 151 8. The choice of ending is strongly predicted by the last sign of the stem (mutual
+   information 0.865 bits, 0 of 1,000 permutations): stems ending in a fish sign take 520 in 50% of lines,
+   all other stems in 4%; stems ending in 176, 752, 923, 803, 61, 222, 630, 636 always take 740; stems ending
+   in a single stroke usually take none. So 520 is the ending of the fish (god/star) names and 740 the
+   ending of the rest: a class split like noun classes, or 520 a word that follows divine names.
+2. **The second slot goes with the genre.** After 740, the 'man' 90 is a seal formula (48 of its 79 lines on square
+   seals; Mohenjo-daro 43) and 400 a tablet formula (139 of 158 on incised and moulded tablets, 138 at
+   Harappa); mutual information with object type 0.394 bits, with site 0.323, with the stem 0.639 (all p <
+   0.001). 'X-740 man' on seals, 'X-740 400' on Harappa tablets.
+3. **The opening formula.** 317 texts open [817 | 820 | 861] + [2 | 60 | 1]: 817 and 861 take only the stroke
+   pair, 820 also takes 60 (22) and a single stroke (11). The opener does not depend on whether a name sign
+   follows (p = 0.81); it varies with site and object type (p < 0.001) and a little with what follows
+   (p = 0.006); not significantly with the field animal (p = 0.06). Three regional or genre variants of
+   one heading, not three different titles.
+4. **Proto-Elamite text shape.** Proto-Elamite entries (signs before a number) end in a two-sign tail shared by
+   3+ different heads in 38% of 1,598 entries (commonest M218 M288, after 20 different heads), the Indus lines in 64% (740 400, 760 740, 740 90 ...). 66% of Proto-Elamite texts open with a
+   heading line without a number. Same architecture (heading, entries with a fixed final element), the
+   Indus more formulaic.
+5. **A fourth family and the world base rate of the fish = star pun (CLICS4, 2,895 languages with both
+   words).** Identical words for 'fish' and 'star' in 3 languages (0.1%: Lezgian, two Chatino varieties),
+   near-identical in 6 more; the control ('three' against 'star') 1 of 2,681. Burushaski (fish tum / cumo,
+   star asii / sii), Indo-Aryan (Hindi, Bengali, Marathi, Nepali ...) and modern Dravidian basic lists (which
+   give 'star' as the loan natcattiram) have no pun; Munda is absent from CLICS; Santali star is ipil (Bodding), and
+   the Santali fish word (hako, from memory) is not yet checked against a dictionary. So in basic vocabulary the fish = star pun is rare worldwide and, among
+   the four South Asian families, belongs to Dravidian alone (Old Tamil *min*); the Sumerian and Sanskrit
+   cases of the fourth pass are specialised fish names, not the ordinary words. This restores part of the
+   Dravidian case: the first step of the fish readings is distinctive, even though the compound check built
+   on it is not.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
