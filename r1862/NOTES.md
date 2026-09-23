@@ -3,9 +3,11 @@
 Catalogue entry: "Unknown sender (Roma) to unknown recipient", 4 pp., numerical, DECODE status "Non-decrypted",
 no transcription on the record.
 
-**Result: read in part (91% of the code groups).** The cipher is broken and the key rebuilt; the letter is read
-continuously on all four pages except four lines, and 98.8% of its code groups have a value. What is left are
-thirteen word codes and the four lines that turn on them.
+**Result: read.** The cipher is broken and the key rebuilt from a sibling's contemporary decipherment; 99.1% of
+the 1,280 code groups have a value, and the letter reads continuously on all four pages except one line. Measured
+share reading as sense: **0.95** line by line against a period Italian model with neighbour context (`measure.py`),
+0.92 by a stricter 25-character window (`measure_tok.py`), 0.96 by a hand audit token by token. Twelve tokens of
+the word band and one line (P2 L22) stay open.
 
 ## What the record is
 
@@ -92,18 +94,26 @@ foreign policy and Venice backing Nevers, so the content sits exactly where it s
 
 ## Remaining gaps
 
-- 15 code-group tokens (1.2%): 6478 x2, 5386 x2, 5349, 5389, 5370, 51708, 683, 5378, 5379, 6279, 5189, 699, 6241 - blocker: open-codes; all in the word/name band, which R1874's decipherment does not cover, and no other letter in this cipher is on DECODE. Their alphabetical brackets are known: 5370 is a "par-" word, 5182 an f/g/h word, 6279 an m/n word, 6443 a t/u/v/z word.
-- four lines that are image-true but give no sense: P1 L17, P2 L17, P2 L22, P2 L26 (about 55 groups) - blocker: open-codes; each was re-read digit by digit by three independent passes, and they turn on those codes or on the clerk's own slips (he writes "sivoia" for Savoia, "germinia", "dovore", "avortiti")
-- the ambassador's name - blocker: open-codes; not in the letter, and CSP Venice vol. 21 calendars no Rome despatch of 29 Apr 1628
+- 12 code-group tokens (0.9%) of the word/name band: 6443 x2, 6279 x2, 6478 x2, 5349, 5370, 51708, 5378, 5379, 6241 - blocker: no-key-material; R1874's decipherment does not cover that band, no other letter in this cipher survives on DECODE, and the ASVe key registers that do (Codice Amadi reg. 1269, Busta 4 regs. 8/16/18) are a century older. Alphabetical brackets: 5370 and 5349 are "par-" words; 5378/5379 fall between "piu" and "qual"; 6279 between "molto" and "non"; 6443 after "suo"; 6478 between "poc" and "tio".
+- one line, P2 L22 (14 groups), image-true after four independent readings - blocker: open-codes; every group in it is a structural grid value, so the fault is a clerk's slip or a word outside the corpus; exhaustive single- and double-substitution searches over the key's own value set returned nothing.
+- the ambassador's name - blocker: no-key-material; he does not name himself, and CSP Venice vol. 21 calendars no Rome despatch of 29 Apr 1628.
+
+## The clerk's own slips
+
+He miscodes as well as misspells, always by one digit, and the slips are recorded in `key_over.json` `_slips` and
+read through (the transcription keeps what he wrote): 6220 for 6223 in "esprimersi", 632 for 672 in "confidenza",
+5337 for 5137 in "altrove", 5388 for 5308 in "cosi", 68 for 637 in "Mantova", 537 for 627 in "considerati",
+6480 for 6490 in "piu", 6222 for 622 in "preparati". His spelling slips are left as written and read through the
+same way: sivoia, germinia, voro, avortiti, dovore, partcolar, soto, efetuar, conunicarla.
 
 ## Escalation
 
-- [x] siblings: R1874 (Busta 30) gave the key; its second enciphered copy gave more alignment data. A sweep of the whole DECODE record list for ASVe material found no other letter in this cipher (only 16th-century Busta 6-30 letters, the Busta 4 key registers and the Codice Amadi).
+- [x] siblings: R1874 (Busta 30) gave the key; its second enciphered copy gave more alignment data. A sweep of the entire DECODE record list for ASVe material found no other letter in this cipher.
 - [x] clear-pages: this record has none; R1874's images 8955-8959 are its decipherment and were transcribed here
-- [x] known-keys: the Codice Amadi (ASVe Inquisitori di Stato reg. 1269, 14 key records on DECODE) and the Busta 4 key registers (Reg. 8, 16, 18) were opened - all 16th-century or earlier, graphic-sign and letter-plus-number systems, none of this type
+- [x] known-keys: the Codice Amadi (ASVe Inquisitori di Stato reg. 1269, 14 key records) and the Busta 4 key registers (Reg. 8, 16, 18) were opened - all 16th-century or earlier and of other types
 - [x] print: CSP Venice vol. 21 (23-30 Apr 1628), Tomokiyo's Venetian pages, Bonavoglia's "Decifra dispacci veneziani": nothing for this despatch
-- [x] key-rebuild: soft-EM alignment against R1874's decipherment with a synthetic control; then the grid filled by structure, the word codes read from context, and three inherited values corrected (628, 6439, 6481) using the alphabetical order of the word band
-- [x] retry: eleven image passes in all; one manuscript line on page 3 was found untranscribed and added (P3 L26b, "la prego non nominarme"), two page-2 rows had been blended from two physical lines and one row was a phantom
+- [x] key-rebuild: soft-EM alignment against R1874's decipherment with a synthetic control; the grid filled by structure; the word codes read from context and bracketed by the alphabetical order of the word band; values inherited from the sibling corrected where this letter disproved them (628 sa, 6439 signor, 6481 i, 634 tra, 5132 stre, 6443 back to open)
+- [x] retry: sixteen image passes in all. One manuscript line on page 3 was found untranscribed and added (P3 L26b, "la prego non nominarme"); two page-2 rows had been blended from two physical lines and one row was a phantom; page 4 had two spurious groups.
 
-What would move the remaining gaps: another letter in this cipher (ASVe Busta 27 holds more of the series; none is
-digitised on DECODE), or the Venetian chancery's own key for it, which is not among the ASVe key records on DECODE.
+What would move the rest: another letter in this cipher (ASVe Busta 27 holds more of the series; none is digitised
+on DECODE), or the Venetian chancery's own key for it, which is not among the ASVe key records on DECODE.

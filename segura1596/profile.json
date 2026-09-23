@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "target": "segura1596",
+  "title": "Matheo de Segura to the Constable of Castile, 8 August 1596",
+  "documents": [
+    {
+      "id": "segura1596",
+      "shelfmark": "BnF espagnol 336 no.99 ff.196r-198r, Gallica views 336-340",
+      "date": "8 Aug 1596",
+      "year": 1596,
+      "country": "Spain",
+      "language": "Spanish",
+      "pages": 5,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment visible on downloaded pages."
+      },
+      "length": {
+        "tokens": 125,
+        "distinct": 35,
+        "unit": "symbols",
+        "measured": true,
+        "file": "cipher_tokens.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "Final eight runs: 125 tokens after splitting joined signs and adding the two-sign boundary at the comet introduction; six M values retained."
+      },
+      "read": "read"
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic"
+    ],
+    "summary": "Homophonic graphic-sign substitution, with two proposed nulls and a proposed special ll sign.",
+    "symbol_kind": "letters and symbols",
+    "distinct_symbols": 35,
+    "diacritics": {
+      "used": true,
+      "note": "Above/below marks distinguished; two underdotted signs tentatively null; other dotted signs retained."
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": false,
+      "entries": 0,
+      "unread_groups": 0
+    },
+    "nulls": {
+      "present": true,
+      "count": 2
+    },
+    "key_order": "unknown",
+    "word_division": "none",
+    "doubled_letters": "A singleton dotted sign tentatively represents ll.",
+    "notes": "System describes the proposed reading; no independent key. Full historical alphabet unknown."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "No prior reading located; cryptiana lists this item undeciphered. This is a search result, not proof of absence.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "cleartext context"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "User supplied shelfmark, date, prior-art summary and suggested Devos 1950 keys.",
+    "models": [
+      "GPT-6"
+    ],
+    "tools": [
+      "Python requests",
+      "web search",
+      "Python and C# homophonic annealing",
+      "es-golden-age order-5 language model",
+      "PIL image crops",
+      "decode.py"
+    ],
+    "sessions": 1,
+    "first_date": "2026-09-23",
+    "last_date": "2026-09-23"
+  },
+  "solution": [
+    {
+      "date": "2026-09-23",
+      "kind": "literature search",
+      "what": "Local cached cryptiana GL.htm and unsolved.htm locate f.196 at Gallica view 280 and explicitly list its short ciphertext as undeciphered. No reading consulted.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Gallica highres, IIIF native/default, item and manifest endpoints return HTTP 403; live cryptiana returns 503. Alternate access investigation continues.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Downloaded Wikimedia Commons mirrors with descriptive User-Agent; f280 is folio 164, not target. Located target at views 336-340 (ff196-198).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "verification",
+      "what": "Inspected five written pages: two encrypted passages at 196v/197r, Madrid 8 August 1596 and signature on 198r. Live cryptiana fetched over HTTP with User-Agent.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "transcription",
+      "what": "Draft 114-token transcription; found missing e D at clear/cipher boundary; tested splitting joined dc/lb/B into q-u/e-l/e-s and distinguishing final looped L.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "solver",
+      "what": "Python homophonic annealing failed; constrained pronostico crib also failed and rejected. C# annealing, 250 restarts each on joined, dots-collapsed and split/dots-collapsed variants. Only split variant produced coherent spans: dizen que el mundo..., el rey, ...escudero, paresce que anda...",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "reading",
+      "what": "Using solver-derived spans and manuscript, recovered comet passage: dizen que el mundo se acabara o morira el rey por setiembre ...; first passage includes Aponte and Escudero. No external plaintext used. Remaining singletons and segmentation under examination.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "key from source",
+      "what": "Compared published Descovar, Fuentes-Pimentel, Ibarra-Doria, Ibarra-Zuniga and Cg.13 symbol sets; no direct match. Devos 1950 full tables not obtained; not claimed tested.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "reading",
+      "what": "Final image-based key gives all eight cipher runs; two nulls, openC=t, Q=n, X=m and ud=ll remain M. Raw text and editorial caveats in reading.md.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "verification",
+      "what": "Decoder roundtrip reproduces saved literal runs; measured 125 tokens, 35 types, I=119 M=6. No external key or independent decipherment verifies the solution.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "class": "read",
+    "key": "recovered",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "token_reading.tsv generated by decode.py: 125 cipher tokens assigned, including 2 proposed nulls. Six M assignments excluded give 119/125 = 0.952.",
+    "grades": {
+      "I": 119,
+      "M": 6
+    },
+    "codes_open": {
+      "open": 0,
+      "total": 0,
+      "tokens_open": 0
+    },
+    "verification": [
+      "none"
+    ],
+    "notes": "Complete proposed reading, 95.2% excluding M. Key reconstructed only for used signs; no independent confirmation. Name segmentation and shorter passage syntax remain uncertain."
+  }
+}

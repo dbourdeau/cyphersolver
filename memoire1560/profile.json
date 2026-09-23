@@ -1,180 +1,187 @@
 {
-  "schema_version": 1,
-  "target": "memoire1560",
-  "title": "Mémoire en chiffre du XIIe décembre 1560",
-  "documents": [
-    {
-      "id": "memoire",
-      "shelfmark": "BnF français 3157, no. 67, ff. 152r–156v",
-      "year": 1560,
-      "country": "France",
-      "language": "French",
-      "pages": 11,
-      "cleartext_in_document": "separate passages",
-      "plaintext": {
-        "location": [
-          "none"
-        ]
-      },
-      "length": {
-        "tokens": 8262,
-        "distinct": 55,
-        "unit": "symbols",
-        "measured": true,
-        "file": "cipher_tokens.txt"
-      },
-      "transcription": {
-        "by": "llm from images",
-        "source": "Inherited local worktree memoire-chiffre-1560-76e15d; copied 2026-09-23",
-        "image_quality": "good",
-        "notes": "Editorial sign units measured by docs/_check_profile.py --measure cipher_tokens.txt --drop-first. The inherited ASCII convention conflates some graphic variants; 55 is not a definitive inventory of distinct cipher signs. Ten body pages, marginal addition and one-word dorse included."
-      },
-      "read": "read",
-      "date": "12 December 1560"
-    }
-  ],
-  "system": {
-    "types": [
-      "homophonic",
-      "nomenclator"
+ "schema_version": 1,
+ "target": "memoire1560",
+ "title": "Mémoire en chiffre du XIIe décembre 1560: anonymous report from the Agenais to Montmorency, BnF fr. 3157 no. 67",
+ "documents": [
+  {
+   "id": "fr3157-67",
+   "shelfmark": "BnF fr. 3157 no. 67, ff. 152r-156v (Gallica btv1b90598645 views 153-158)",
+   "date": "1560-12-12",
+   "year": 1560,
+   "country": "France",
+   "route": "Agenais -> court (Montmorency)",
+   "language": "French",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
     ],
-    "summary": "Cursive letter substitution with whole-word signs, provisionally homophonic; some apparent variants are transcription inconsistencies.",
-    "symbol_kind": "symbols",
-    "distinct_symbols": "unknown",
-    "diacritics": {
-      "used": "unknown"
-    },
-    "homophones": {
-      "used": true
-    },
-    "nomenclator": {
-      "present": true
-    },
-    "nulls": {
-      "present": "unknown"
-    },
-    "key_order": "unknown",
-    "word_division": "separator symbol",
-    "notes": "The alphabet is only partially reconstructed. Do not use the inherited decoder as if it produced the normalized editorial reading."
-  },
-  "conditions": {
-    "prior_solution": {
-      "exists": "unknown",
-      "where": "Previous local project attempt was used. No external decipherment located; absence of all published prior art is not proven.",
-      "found": "before attempt",
-      "used": true
-    },
-    "inputs": [
-      "images",
-      "transcription"
-    ],
-    "attack": "ciphertext-only",
-    "human_role": "Supplied shelfmark, source URL and candidate description.",
-    "models": [
-      "unknown"
-    ],
-    "first_date": "2026-09-22",
-    "last_date": "2026-09-23",
-    "tools": [
-      "inherited solve.py and partial key",
-      "image comparisons and enlarged crops",
-      "audit_alignment.py (alignment aid, not evidence)",
-      "measure_reading.py"
-    ]
-  },
-  "solution": [
-    {
-      "date": "2026-09-23",
-      "kind": "access",
-      "what": "Found previous project attempt with manuscript images, ten-page transcription, partial key and reading for final five pages; preserved a copy in main workspace. Earlier solver steps are described in inherited NOTES.md, not independently witnessed this session.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-09-23",
-      "kind": "reading",
-      "what": "Inspected all ten page images and inherited sign transcription; reconstructed the first five pages and revised the final five. Normalization uses language context as well as partial substitution.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-09-23",
-      "kind": "sibling key",
-      "what": "Inspected Lasry Charles IX–du Croc table preserved in ducroc/GL_CharlesIX.png; incompatible letter and code values. Henri II table retrieval failed with HTTP 503, so no Henri II test is claimed.",
-      "result": "ruled out"
-    },
-    {
-      "date": "2026-09-23",
-      "kind": "transcription",
-      "what": "Read omitted marginal addition at 153r.14 and the cipher endorsement Advertissemens on presumed dorse 157v.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-09-23",
-      "kind": "verification",
-      "what": "Regional enlargements resolved most inherited blanks, including pour les faire respondre par leur bouche, Si ainsi estoit, sement, oster; recognized a horizontal filler falsely transcribed as POUR.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-09-23",
-      "kind": "literature search",
-      "what": "Exact title, shelfmark and name searches found catalogue descriptions and general context but no matching reading or secure identification of Montseuignac. This is a limited negative search, not proof of novelty.",
-      "result": "partial"
-    },
-    {
-      "date": "2026-09-23",
-      "kind": "verification",
-      "what": "Retried seven residual passages against enlarged scans and repeated forms. Preserved doubts rather than choosing exact name or pronoun expansions. No independent clear copy or primary codebook found.",
-      "result": "partial"
-    },
-    {
-      "date": "2026-09-23",
-      "kind": "statistics",
-      "what": "Counted 8262 transcribed sign units; excluded all 191 units on seven doubtful lines, yielding 8071/8262 = 97.688% conservative editorial coverage. Not independently measured decipherment accuracy.",
-      "result": "worked"
-    }
-  ],
-  "outcome": {
-    "class": "read",
-    "key": "partial",
-    "fraction_read": "unknown",
-    "fraction_coherent": 0.976882110869039,
-    "fraction_read_method": "measured",
-    "fraction_read_source": "coverage.tsv and cipher_tokens.txt: 8262 editorial sign units, 191 units on all seven bracketed lines conservatively excluded. Measures coverage of reconstructed coherent prose, not independent symbol accuracy.",
-    "grades": {
-      "H": 0,
-      "C": 0,
-      "M": 191,
-      "I": 8071
-    },
-    "codes_open": {
-      "open": "unknown",
-      "total": "unknown",
-      "tokens_open": 5
-    },
-    "verification": [
-      "none"
-    ],
-    "gaps": [
-      {
-        "item": "152r.12, name Montseuignac",
-        "blocker": "no-key-material",
-        "detail": "Plausible literal spelling, no external confirmation or exact graphic key; enlarged and searched."
-      },
-      {
-        "item": "152r.15, 152v.21, 152v.26, 153r.10: four short groups",
-        "blocker": "open-codes",
-        "detail": "Pronoun/relative meanings inferred, exact expansions and graphic distinctions remain uncertain after repeated-form comparison."
-      },
-      {
-        "item": "153r.17 negative before irriter",
-        "blocker": "no-key-material",
-        "detail": "Sense suggests negative; exact initial glyph value not established at this occurrence."
-      },
-      {
-        "item": "153v.08 mark beside cancellation",
-        "blocker": "open-codes",
-        "detail": "Could be part of canceled group or an additional sign; retained unread."
-      }
-    ],
-    "notes": "Read as a normalized editorial reconstruction with limited bracketed uncertainties. Partial inherited alphabet, no independent decipherment or held-out control. Continuing prior local work, not a fresh blind solve; first-publication priority not established."
+    "source": "No decipherment on the leaves, the dorse or the neighbouring items; only the heading 'Du xiie decembre 1560' is in clear."
+   },
+   "length": {
+    "tokens": 1715,
+    "distinct": 908,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full resolution, half-width 3-line crops",
+    "image_quality": "fair",
+    "notes": "Tokens are cipher words (the manuscript divides words with '/'); 9,497 signs in all. First pass by three agents, then a key-guided correction pass by four agents against the images (corrections_<fol>.tsv, about 300 x->r fixes)."
+   },
+   "read": "read"
   }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "polyphonic",
+   "code"
+  ],
+  "summary": "Homophonic substitution in a cursive pseudo-script with word division, two-stroke units (zo=u, pp=m, s3=r, lz=d) and four whole-word codes (pour, roy, et, sieur).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 41,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "separator symbol",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Main trap: the rounder r-form (n) versus x (e). Polyphonic delta (u/v, b, g) and double dagger (i, a). No name codes; all persons and places spelt out."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No DECODE record, not on Tomokiyo or Lasry (GL.htm) lists, no edition found by web search. Brunet 2019 on Clairac not reachable.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: posed the catalogue entry with /goal. No target-specific intervention.",
+  "tools": [
+   "solve.py (homophonic annealer, word spaces, fr-1530-despatches 5-gram)",
+   "decrypt.py (key.txt with units and word codes)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-23"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Located item 67 in fr. 3157: the BnF notice's folio numbers precede the item numbers, so the cipher is ff. 152r-156v (not f. 158). Fetched the ten pages from Gallica IIIF.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "verification",
+   "what": "Checked the dorse and the neighbouring Villars letters for a decipherment or key: none.",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "key from source",
+   "what": "Looked at Lasry's GL.htm tables for Henri II / Charles IX as the brief asked: different symbol sets.",
+   "result": "ruled out",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Three agents transcribed the ten pages into ASCII sign codes (one stopped after three pages by a tool block; a fresh agent did 153v-154r).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "solver",
+   "what": "One-sign-per-letter homophonic annealing with word spaces: gibberish (-4.2/char).",
+   "result": "failed",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "statistics",
+   "what": "z followed by o in 262 of 283 cases: 'zo' taken as one unit; most frequent words Tzox, Wx, Wxm, hx.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Seeded Tzox=que, Wx/Wxm=le/les, hx=de; annealer read 'les derniers advertissemens', 'les affaires de pardeça'.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "crib",
+   "what": "Aligned decrypted words with the French they must be: entendu (r=n, io=u), avoir, ordinairement (s3=r), souloit (nn=s); reran the annealer with these units (-3.2/char).",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "prediction",
+   "what": "Standalone groups read from context as codes: Z=pour, 4=roy, c+/i+/e+=et, F/g=sieur.",
+   "result": "worked",
+   "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Key-guided correction pass by four agents against the images, changing a sign only where the image supports it: about 300 x->r fixes, the looped sign y (=i) identified, missing signs restored.",
+   "result": "worked",
+   "date": "2026-09-23"
+  },
+  {
+   "kind": "reading",
+   "what": "Line-by-line reading with marked emendations; lz=d found during it (despuis, disans, d'environ); 16 of 1,715 cipher words left unread.",
+   "result": "worked",
+   "date": "2026-09-23"
+  },
+  {
+   "kind": "literature search",
+   "what": "Web search for an edition or decipherment (names, places, shelfmark): none; Brunet 2019 on Clairac not reachable.",
+   "result": "failed",
+   "date": "2026-09-23"
+  },
+  {
+   "kind": "verification",
+   "what": "Merged with a parallel project pass on the same item (main 13e0f27b2): its margin (153r.14, 'assemblez en la chambre du conseil') and dorse ('Advertissemens') readings decoded with key.txt and confirmed; added to the reading.",
+   "result": "worked",
+   "date": "2026-09-23"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "fraction_read": 0.989,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_152r-154r.txt + reading_154v-156v.txt against ciphertext.txt: 16 words marked [..] out of 1,715 cipher words (108 more read with a marked emendation).",
+  "verification": [
+   "historical consistency"
+  ],
+  "key": "recovered",
+  "codes_open": {
+   "open": 0,
+   "total": 9,
+   "tokens_open": 0
+  },
+  "notes": "Key broken here ciphertext-only. Content fits the Agenais in Dec 1560: Clairac assembly, Caumont, Biron at Bergerac, Navarre at Nérac, the États of Orléans deputies. Writer unnamed."
+ }
 }

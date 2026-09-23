@@ -12,9 +12,13 @@ KEY = {g: v[0] for g, v in base.items() if v[2] >= 2 or v[1] >= .8}
 over_path = os.path.join(HERE, 'key_over.json')
 OVER = json.load(open(over_path, encoding='utf8')) if os.path.exists(over_path) else {}
 KEY.update({g: v for g, v in OVER.items() if not g.startswith('_')})
+for g in OVER.get('_open', []):   # values the sibling alignment got from a mis-split stretch: treat as unread
+    KEY.pop(g, None)
 
 
 def lines():
+    """Rows of tx/groups.txt. A group listed in key_over.json's _slips is the clerk's own miscoding:
+    it keeps its written digits in the transcription and is read with the value he meant."""
     out = []
     for l in open(os.path.join(HERE, 'tx', 'groups.txt'), encoding='utf8'):
         m = re.match(r'(P\d L\d+[a-z]?):\s*(.*)', l)
@@ -28,8 +32,20 @@ def lines():
             else:
                 for g in part.split():
                     items.append(('g', re.sub(r'[?^]', '', g)))
-        out.append((m.group(1), items))
+        lab = m.group(1)
+        gi = 0
+        for k, (kind, v) in enumerate(items):
+            if kind != 'g':
+                continue
+            s = SLIPS.get(f'{lab}:{gi}')
+            if s:
+                items[k] = ('g', s[0])
+            gi += 1
+        out.append((lab, items))
     return out
+
+
+SLIPS = OVER.get('_slips', {})   # {"<line>:<index>": ["<group as the clerk should have written it>", "<value>"]}
 
 
 def render(items, mark=True):

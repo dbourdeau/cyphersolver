@@ -9,9 +9,13 @@ All scores are judgments on a 1–5 scale, not measurements. The composite is a 
 are stated; change them and the order changes. Entries marked * carry an inference that the notes do not
 verify (see the last section).
 
+The **Mémoire en chiffre of 12 December 1560** (BnF fr. 3157 no. 67) is provisionally p134 at **3.90**: an unknown homophonic system with two-stroke units broken ciphertext-only from the images and read at 98.9%, new content on the Agenais rising, but regional weight and no outside control.
+
 The **Speculum cipher flyleaf** is provisionally p133 at **2.30**: a short substitution completed from acknowledged prior partial work, with one emendation and no independent clear copy.
 
-The **Mémoire en chiffre** is provisionally p134 at **2.95**: substantial historical content, but an inherited partial key and an editorial reading without external plaintext verification. Novelty score is provisional.
+The **Passano Wolsey account** is provisionally p135 at **3.35**: a ciphertext-only recovery after re-transcription, substantial historical content, but 13 emendations and no independent key. The omitted continuation is not recovered.
+
+The **Segura letter of 1596** is provisionally p136 at **3.45**: a short unknown homophonic cipher read from images, with a reported comet prediction and six tentative sign assignments; no independent key.
 
 The **Potocka and Mniszech letters** are provisionally p135 at **2.90**: an independently recovered bilingual alphabet, but one separate cipher remains unread and there is no independent plaintext.
 
@@ -30,8 +34,9 @@ The **Potocka and Mniszech letters** are provisionally p135 at **2.90**: an inde
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
-| p135 | **Potocka and Mniszech to Dunin** | 1714–16 / undated | 3 | 3 | 4 | 3 | 1 | 2 | **2.90** | Nine letters share the recovered alphabet; person codes and Mniszech remain open. [potocka1714](https://dbourdeau.github.io/cyphersolver/potocka1714.html) |
-| p134 | **Mémoire en chiffre**, BnF fr. 3157 no. 67 | 12 Dec 1560 | 3 | 4 | 3 | 3 | 1 | 2 | **2.95** | Extensive Agenais report; inherited local partial solution completed editorially, seven small uncertainties. Novelty unproven; no independent clear copy. [memoire1560](https://dbourdeau.github.io/cyphersolver/memoire1560.html) |
+| p136 | **Matheo de Segura → Constable of Castile**, BnF es. 336 no. 99 | 1596 | 4 | 3 | 4 | 4 | 2 | 3 | **3.45** | Unknown sign cipher read; six tentative values, no independent plaintext. [segura1596](https://dbourdeau.github.io/cyphersolver/segura1596.html) |
+| p135 | **Giovan Gioacchino da Passano (attributed): Wolsey account**, Clairambault 331 | March 1530 | 4 | 3 | 4 | 3 | 2 | 3 | **3.35** | 96.0% of surviving signs coherent with explicit corrections; rare signs and omitted continuation open. [Write-up](https://dbourdeau.github.io/cyphersolver/joachim1530.html) |
+| p134 | **Unknown Catholic gentleman of the Agenais → Montmorency**, "Mémoire en chiffre", BnF fr. 3157 no. 67 | 12 Dec 1560 | 5 | 3 | 5 | 4 | 1 | 4 | **3.90** | Unknown homophonic cursive-sign system with units and word codes broken ciphertext-only; 98.9% read; the Clairac assembly, Biron at Bergerac, Navarre at Nérac, the Agenais deputies to Orléans; historical consistency only. [memoire1560](https://dbourdeau.github.io/cyphersolver/memoire1560.html) |
 | p133 | **Speculum cipher flyleaf**, SCH R 201 (R4817) | Undated; volume 1618 | 2 | 2 | 3 | 2 | 1 | 4 | **2.30** | Rous partial solution completed; 78/79 coherent without emendation, internal consistency only. [r4817](https://dbourdeau.github.io/cyphersolver/r4817.html) |
 | 1 | **Henry of Navarre → Ségur**, 500 Colbert 401 ff. 233, 239, 288v (+ f. 366, f. 333) | 1585–86 | 5 | 4 | 5 | 5 | 2 | 4 | **4.35** | The only target solved from the manuscript images with no transcription and no key family known in advance: 461 figures transcribed from Gallica, the syllabary found by the mod-5 test, a structured annealer at 97 % on a matched control, then the whole 440-canvas volume swept. Content is the German levy of 1585–86 and Casimir; the sender is corrected from Henry III to Navarre. Word-signs partly open |
 | 2 | **Swatow telegram to Sun Yat-sen**, JACAR B03050738800 | 1916 | 4 | 4 | 5 | 3 | 2 | 4 | **3.90** | Code condenser over the Chinese telegraph code recovered by brute force over 57,600 keys with a character language model. Reports the Chaozhou rising and the fall of Swatow in the 1916 anti-Yuan campaign; 41 of 44 characters, the rest garbled by the operator |
@@ -595,7 +600,7 @@ Vatican Challenge Part 5 (Farnese → Poggio, 1542) provisional score: 0.25×1 +
 
 Silentium Dei (pseudo-Arndt, 1798) provisional score: 0.25×1 + 0.25×1 + 0.20×2 + 0.10×3 + 0.10×2 + 0.10×4 = **1.80** (p126): a book cipher with its key on p. 83; the work was finding the book behind a misdescribed DECODE record and reading every passage, not breaking it.
 
-Venetian ambassador at Rome to the Doge, 29 April 1628 provisional score: 0.25×4 + 0.25×3 + 0.20×3 + 0.10×3 + 0.10×2 + 0.10×3 = **3.15** (p127): an unread syllabary broken by rebuilding its key from a sibling record's contemporary decipherment, by EM alignment rather than by hand; the letter reports the papal Secretary of State probing Venice's frontier defences in the first weeks of the Mantuan succession war. Read in part (~84%): one block of page 2 and the word codes are open.
+Venetian ambassador at Rome to the Doge, 29 April 1628 provisional score: 0.25×4 + 0.25×3 + 0.20×3 + 0.10×3 + 0.10×2 + 0.10×3 = **3.15** (p127): an unread syllabary broken by rebuilding its key from a sibling record's contemporary decipherment, by EM alignment rather than by hand; the letter reports the papal Secretary of State probing Venice's frontier defences in the first weeks of the Mantuan succession war. Read (0.95 measured): twelve word codes and one line are open.
 
 Moncada to Charles V 1524 provisional score: 0.25×2 + 0.25×3 + 0.20×1 + 0.10×3 + 0.10×2 + 0.10×4 = **2.35** (p128): printed in 1854 from the court's decipherment; the key rebuilt here against the print reads the print's one gap (Bourbon asking to be taken to Spain).
 Isabella of Castile to the Duke of Estrada, 20 Aug 1503 provisional score: 0.25×1 + 0.25×4 + 0.20×5 + 0.10×4 + 0.10×2 + 0.10×2 = **3.05** (p129): the one cipher Bergenroth could not read, read in part with a key printed in 1994. It ranks on novelty and content, not on cryptanalysis.
@@ -609,6 +614,7 @@ Selve at Venice to Francis I 1535–36 provisional score: 0.25×2 + 0.25×3 + 0.
 
 Speculum cipher flyleaf provisional score: 0.25×2 + 0.25×2 + 0.20×3 + 0.10×2 + 0.10×1 + 0.10×4 = **2.30** (p133). Partial prior work used; no independent key; one marked textual error.
 
-Mémoire en chiffre: 0.25×3 + 0.25×4 + 0.20×3 + 0.10×3 + 0.10×1 + 0.10×2 = **2.95** (provisional).
+Passano account: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×2 + 0.10×3 = **3.35** (provisional judgment, 23 Sept 2026).
+Mémoire en chiffre 1560 provisional score: 0.25×5 + 0.25×3 + 0.20×5 + 0.10×4 + 0.10×1 + 0.10×4 = **3.90** (p134): D 5, unknown system broken from images with no crib; H 3, a detailed regional report at the start of the regency, new but not a decision of state; N 5, no reading anywhere; R 4, item located against a wrong catalogue folio, ten pages transcribed and corrected against the images; F 1, on no list; V 4, read end to end at 98.9%, internal and historical consistency only.
 
-Potocka and Mniszech provisional score (p135): 0.25×3 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×2 = **2.90**. Novelty remains provisional.
+Segura to the Constable of Castile, 8 August 1596 provisional score: 0.25×4 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×2 + 0.10×3 = **3.45** (p136). Novelty means no reading found, not proof that none exists.
