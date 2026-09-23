@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "target": "joachim1530",
+  "title": "Passano from London to Francis I, 15 March 1530: ciphered account in Clairambault 331",
+  "documents": [
+    {
+      "id": "clair331-f156-157",
+      "read": "not read",
+      "shelfmark": "BnF Clairambault 331, ff. 156r-157v (cipher on f. 157r-v; Gallica canvases f149-f150)",
+      "date": "15 March 1530",
+      "year": 1530,
+      "country": "France",
+      "route": "London -> French court",
+      "language": "unknown",
+      "pages": 3,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": ["none"],
+        "source": "The diplomatic letter is clear and a related passage was printed by Le Grand, but no decipherment of the enciphered account was found.",
+        "partial": false
+      },
+      "length": {
+        "tokens": 402,
+        "distinct": 20,
+        "unit": "symbols",
+        "measured": true,
+        "file": "ciphertext.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Gallica IIIF full-resolution images of Clairambault 331, canvases f149-f150",
+        "corrections": "unknown",
+        "image_quality": "good",
+        "notes": "Provisional sign-level transcription. Curved glyphs are given mnemonic aliases; some lookalikes and a few line-end signs remain uncertain. Clear 'in summa' and amounts are excluded."
+      }
+    }
+  ],
+  "system": {
+    "types": ["undetermined"],
+    "summary": "Undetermined cipher written with a small inventory of letters, numerals, and curved signs in nine account entries; simple one-to-one substitution has failed a controlled test.",
+    "symbol_kind": "digits and letters",
+    "digit_groups": {"width": "1", "separation": "contiguous"},
+    "distinct_symbols": 20,
+    "diacritics": {"used": "unknown", "note": "Numerous dots may be letter dots or marks on cipher signs; their function is not established."},
+    "homophones": {"used": "unknown"},
+    "nomenclator": {"present": "unknown"},
+    "nulls": {"present": "unknown"},
+    "key_order": "unknown",
+    "word_division": "none",
+    "doubled_letters": "unknown",
+    "sibling_key": "The 13 March 1530 Joachim cipher on Clairambault 331 f. 149 has a visibly different sign inventory; the Ferrara Passano/Sormano cipher in fr. 3096 was inspected and is also different.",
+    "notes": "The copyist says that a page and three lines of cipher follow. The account has legible scudi amounts and a total but the entries remain unread."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "Tomokiyo calls it undeciphered; Le Grand and the Letters and Papers calendar omit the cipher account.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": ["images", "transcription", "cleartext context"],
+    "attack": "ciphertext-only",
+    "human_role": "The user identified the Gallica target and requested a solve or reading.",
+    "tools": ["Gallica IIIF image access", "manual image transcription", "frequency and coincidence analysis", "permutation annealing (solve.py, fastsolve.py)", "many-to-one annealing (solve_homo.py)", "word-segmentation search (wordsolve.py)", "positive and noisy controls (validate.py)"],
+    "models": ["it-cinquecento", "fr-1530-despatches", "es-golden-age", "la", "it-modern", "en-modern"],
+    "sessions": 2,
+    "first_date": "2026-09-22",
+    "last_date": "2026-09-22"
+  },
+  "solution": [
+    {"date": "2026-09-22", "kind": "access", "what": "Located f. 156 and its continuation on f. 157r-v through the Gallica IIIF manifest and downloaded high-resolution images.", "result": "worked"},
+    {"date": "2026-09-22", "kind": "literature search", "what": "Identified Giovan Gioacchino da Passano and compared Le Grand's printed diplomatic letter and Letters and Papers no. 6307; neither prints the account cipher.", "result": "partial"},
+    {"date": "2026-09-22", "kind": "transcription", "what": "Transcribed nine account entries on both sides of f. 157, including 402 proposed cipher signs; separated clear amounts and 'in summa'.", "result": "partial"},
+    {"date": "2026-09-22", "kind": "statistics", "what": "Measured 20 distinct proposed signs and index of coincidence 0.0819; checked repeats and periodic coincidence.", "result": "worked"},
+    {"date": "2026-09-22", "kind": "solver", "what": "Tried one-to-one Italian permutation search, including a 40 by 80,000-step incremental search, period-specific u/v, French, Spanish, Latin, modern Italian, English, reversal and adjacent swaps.", "result": "failed"},
+    {"date": "2026-09-22", "kind": "solver", "what": "Tried frequent signs as spaces and as nulls, homophonic mappings, and Italian dictionary segmentation.", "result": "failed"},
+    {"date": "2026-09-22", "kind": "control", "what": "A 402-sign artificial Italian monoalphabetic cryptogram of matching entry lengths recovered 20/20 assignments; with 10% and 20% random symbol corruption, 18/20 and 17/20 assignments remained recoverable.", "result": "worked"},
+    {"date": "2026-09-22", "kind": "hypothesis", "what": "A plain one-sign/one-letter substitution is inadequate for the copied account, or the provisional transcription has more systematic sign conflation than the controls' random errors.", "result": "partial"}
+  ],
+  "outcome": {
+    "class": "not read",
+    "key": "none",
+    "fraction_read": 0.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "ciphertext.txt: no proposed sign has a verified plaintext value; 0/402 cipher tokens read",
+    "verification": ["none"],
+    "notes": "The surrounding clear letter and the account's clear numerals are not counted as decrypted cipher text. No connected cipher reading is defensible yet."
+  }
+}
