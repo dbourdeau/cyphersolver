@@ -91,13 +91,14 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "No accepted decipherment. Parpola's rebus readings are in print (1994, 2005); the corpus checks of his 2005 claims were computed here.",
+   "where": "No accepted decipherment. Parpola's rebus readings are in print (1994, 2005) and were the object of the tests; the corpus and lexicon checks were computed here.",
    "found": "not found",
    "used": false
   },
   "inputs": [
    "transcription",
-   "images"
+   "images",
+   "published reading"
   ],
   "attack": "none",
   "human_role": "Gave the harappa.com PDF (Parpola's lecture) as the target with /goal; no target-specific intervention.",
@@ -106,12 +107,15 @@
    "render_glyphs.py (font rendering to identify signs)",
    "parpola_checks.py (claim tests, within-line shuffle nulls, bigram surprisal)",
    "m77_checks.py (independent corpus)",
-   "align_m77.py (ICIT-to-Mahadevan sign map by text alignment)"
+   "align_m77.py (ICIT-to-Mahadevan sign map by text alignment)",
+   "rebus_checks.py (numeral restriction, 24 readings, Tamil-lexicon chance baseline)",
+   "motif_checks.py (sign-motif permutation test, copper-tablet pairing)",
+   "easyocr page-header index of the CISI vol. 1 scan"
   ],
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-23",
   "last_date": "2026-09-23"
  },
@@ -159,6 +163,36 @@
   {
    "kind": "verification",
    "what": "Aligned ICIT and M77 through shared texts (align_m77.py: four repeated tablet sets as seeds, hard EM, 978 lines, 96% sign agreement) and reran the sign claims on M77: same single jar+jar, 7+fish and two fig+fish objects; crab + plain fish below chance, crab + marked fish above.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Parpola 1994 (archive.org DLI scan): Fig. 15.2 table of 24 readings, Appendix of 99 Tamil -min compounds, p. 194 numeral claim; Dravidian Database v1.1 (Zenodo, CC BY) for Tamil lemmas.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "1994 claim that numbers before the fish are restricted to 3, 4, 6, 7 and that the pun explains it: corpora have 1, 3, 4, 6, 7, 12 and never 5 (ai-m-min, a Tamil asterism); 3+fish outnumbers 6+fish in both corpora.",
+   "result": "failed"
+  },
+  {
+   "kind": "statistics",
+   "what": "Fig. 15.2 readings in both corpora: 3+fish, 6+fish, eye+eye, hearth+rings, rings+space, space+fish above chance; 7+fish, fig+fish, fig+space, fish+fish, crab+fish at or below chance; 4+fig absent.",
+   "result": "partial"
+  },
+  {
+   "kind": "control",
+   "what": "Chance baseline for the 'compound attested in Tamil' check: 15-48% of 98 fixed picture concepts have a Tamil word beginning a Tamil star name in -min (68% any -min compound).",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "CISI vol. 1 scan (user-supplied): M-414 photo confirms fig+fish; M-604 fig+crab on side B, side A worn; concordance FC = M77 number checked on 10 objects (8 exact).",
+   "result": "partial"
+  },
+  {
+   "kind": "statistics",
+   "what": "Signs vs field motifs: no sign-motif association on 1,107 seals (best p = 0.006 of 333 pairs); on copper tablets 6 of 7 repeated texts go with one motif (hare, archer, elephant, loop, goat).",
    "result": "worked"
   }
  ],

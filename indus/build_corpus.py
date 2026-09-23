@@ -7,10 +7,11 @@ glyph -> Unicode (private-use) map drives the site's Indus font, which we render
 to identify signs by shape (see render_glyphs.py).
 
 Output: data/corpus.tsv with one row per object:
-  sealid  cisi  site  type  complete  direction  signs_visual  signs_reading
+  sealid  cisi  site  type  complete  direction  signs_visual  signs_reading  motif
 signs_visual is the stored order (IDX 0,1,...), which is the left-to-right order of
 the picture; signs_reading reverses it when DIRECTION is R/L, so that the first sign
-is the first one read. Both are space-separated glyph ids.
+is the first one read. Both are space-separated glyph ids. motif is the field-symbol
+code from the ICONOGRAPHY table (Bull1 = 'unicorn' and its sub-types, Elep, Rhin, Zebu ...).
 
 Usage: python build_corpus.py path/to/population-script.sql
 """
@@ -37,7 +38,10 @@ def tuples(block, n):
 
 
 def block(sql, table):
-    i = sql.index('VALUES', sql.index('INSERT INTO %s (' % table))  # skip the column list
+    k = sql.find('INSERT INTO %s (' % table)
+    if k < 0:
+        k = sql.index('INSERT INTO %s(' % table)          # ICONOGRAPHY is written without a space
+    i = sql.index('VALUES', k)  # skip the column list
     j = sql.find('INSERT INTO', i)
     return sql[i:j if j > 0 else None]
 
@@ -55,6 +59,7 @@ def main(sql_path):
     for sid, g, idx in tuples(block(sql, 'GLYPHSEQUENCE'), 3):
         seq[sid].append((int(idx), g))
     glyphs = tuples(block(sql, 'GLYPH'), 2)
+    motif = dict(tuples(block(sql, 'ICONOGRAPHY'), 2))
 
     os.makedirs(os.path.join(HERE, 'data'), exist_ok=True)
     with open(os.path.join(HERE, 'data', 'glyphs.tsv'), 'w', encoding='utf-8', newline='') as f:
@@ -68,7 +73,7 @@ def main(sql_path):
     with open(os.path.join(HERE, 'data', 'corpus.tsv'), 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t')
         w.writerow(['sealid', 'cisi', 'site', 'type', 'complete', 'direction',
-                    'signs_visual', 'signs_reading'])
+                    'signs_visual', 'signs_reading', 'motif'])
         for sid in sorted(seq, key=int):
             s = [g for _, g in sorted(seq[sid])]
             seal = seals.get(sid)
@@ -78,7 +83,7 @@ def main(sql_path):
             w.writerow([sid, (seal[3] if seal and seal[3] != 'NULL' else ''),
                         sites.get(seal[1], seal[1]) if seal else '',
                         '|'.join(types.get(sid, [])), ins[1], direction,
-                        ' '.join(s), ' '.join(reading)])
+                        ' '.join(s), ' '.join(reading), motif.get(sid, '')])
             n += 1
     print('objects written:', n)
 
