@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "target": "ungnad1576",
+  "title": "David Ungnad, imperial ambassador at Constantinople, to Maximilian II, 12 March 1576: a despatch wholly in cipher (HHStA Türkei I 32-3, ff. 199-203; key: Gévay copy, OSZK Quart. Lat. 2254 f. 23 = DECODE R392)",
+  "documents": [
+    {
+      "id": "despatch1576",
+      "shelfmark": "ÖStA HHStA StAbt Türkei I 32-3 (Korrespondenzen 01.1576-04.1576), fol. 199-203 (Láng 2015 C.Ung.03)",
+      "date": "12 Mar 1576",
+      "year": 1576,
+      "country": "Holy Roman Empire",
+      "route": "Constantinople -> Vienna",
+      "language": "unknown",
+      "pages": "unknown",
+      "cleartext_in_document": "none",
+      "read": "not read",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Láng 2015 records no decipherment ('megfejtetlen'); none found online.",
+        "partial": false
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "no images",
+        "notes": "No image of the despatch is online: the ÖStA Archivinformationssystem record for Türkei I 32-3 (ID 3855252) has no scans and no item-level entries; not on DECODE or HCPortal. 'cleartext_in_document: none' follows Láng's 'teljes' (wholly in cipher); five folios per the shelfmark. Language German per Láng's 'német?' and the German key; not observed."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic",
+      "nomenclator"
+    ],
+    "summary": "As given by Ungnad's key (Gévay copy, DECODE R392): one graphic sign per letter (q, x blank), eleven signs for German digraphs and doubled letters (ch, st, sch, ff, ss, ll, ä, ö, nn, rr, tt), a nomenclator of Latin cover words, numbers and signs for names and terms, and numbers written as letter groups. Whether the 1576 despatch uses this key is not yet checked.",
+    "symbol_kind": "letters and symbols",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": true
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 48,
+      "kinds": [
+        "names",
+        "places",
+        "titles",
+        "common words"
+      ],
+      "unread_groups": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "random",
+    "word_division": "unknown",
+    "notes": "Counts from the key (KEY.md): 24 letter signs + 11 digraph/umlaut signs; about 48 nomenclator entries on ff. 23r-v. The ciphertext itself has not been seen, so distinct_symbols, nulls and word division are unknown."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "No reading of the 12 March 1576 despatch is known (Láng 2015: 'megfejtetlen'). The key exists as a 19th-c. copy (OSZK Quart. Lat. 2254 f. 23, on DECODE as R392); Ungnad's German despatches of Jan and Aug 1577 were deciphered at the time (Láng C.Ung.04-05).",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "key from archive"
+    ],
+    "attack": "none",
+    "human_role": "Set the goal (read the despatch to 95%). The DECODE session cookie on disk from earlier sessions was used to fetch the key images. No images of the despatch supplied.",
+    "tools": [
+      "DECODE API metadata dump",
+      "ÖStA Archivinformationssystem record walker",
+      "PyMuPDF text search of Láng 2015 and 2018"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-09-23",
+    "last_date": "2026-09-23"
+  },
+  "solution": [
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Searched the local DECODE list dump (10,106 records) and fetched live API views of the 16th-c. HHStA Chiffrenschlüssel records (R1196-R1548): no Türkei I ciphertext, nothing attributed to Ungnad; R1228 ('Constantinople') is an Italian numeric syllabary.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "literature search",
+      "what": "Read Láng 2015 (repertory pp. 191, 250-252): C.Ung.03 undeciphered, German?; Ungnad's other despatches of 1573-74 and 1577 deciphered; his key survives as Gévay's copy OSZK Quart. Lat. 2254 f. 23r-v (T.Gev.20). Real Life Cryptology 2018 (OAPEN) cites the same key but prints no image of it.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "key from source",
+      "what": "Found the Gévay copy on DECODE as R392 (NSZL_Quart_Lat_2254_23, 'David Ungnad', 1570-1580), fetched both images and transcribed the key into KEY.md: sign alphabet, 11 digraph/umlaut signs, ~48 nomenclator entries, numbers as letter groups.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Walked the ÖStA Archivinformationssystem tree: Türkei I 32 = ID 967784, 32-3 = ID 3855252 (01-04.1576, fol. 1-304, public) has no scans and no item records; Kartons 29, 30, 34, 35 likewise. Only early cartons (e.g. 4-4, 1536) carry per-item images.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "access",
+      "what": "Searched HCPortal's full index (1,493 records) and the web (Láng OUP blog 2017, Fóti 2026) for images or a transcription of ff. 199-203: none.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "class": "offline only",
+    "key": "recovered",
+    "fraction_read": 0,
+    "verification": [
+      "none"
+    ],
+    "gaps": [
+      {
+        "item": "the whole despatch, Türkei I 32-3 ff. 199-203",
+        "blocker": "needs-physical-access"
+      }
+    ],
+    "notes": "Blocked: no image of the despatch is online. The key is in hand (DECODE R392, transcribed in KEY.md); 'key: recovered' means found, not yet confirmed against this letter. Next: HHStA reproductions of Türkei I 32-3 ff. 199-203 (and 34-3 ff. 3-11, 16-17 as a deciphered control)."
+  }
+}
