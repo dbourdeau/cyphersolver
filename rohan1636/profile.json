@@ -1,0 +1,81 @@
+{
+ "schema_version": 1,
+ "target": "rohan1636",
+ "title": "Rohan papers and the Franco-Dutch correspondence, 1635–1636",
+ "documents": [
+  {
+   "id": "fr3758-no100",
+   "read": "not read",
+   "shelfmark": "BnF Français 3758 no. 100, manuscript pp. 114–118, Gallica views 126–130",
+   "date": "30 Jun 1635",
+   "year": 1635,
+   "country": "France",
+   "route": "Fontainebleau → Châtillon and Brézé with the Franco-Dutch army",
+   "language": "French",
+   "pages": 5,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {"location": ["none"], "source": "No decipherment of the symbol bands was verified."},
+   "length": {"tokens": "unknown", "unit": "mixed", "measured": false},
+   "transcription": {"by": "llm from images", "source": "Gallica views 126–130", "image_quality": "good", "notes": "Clear French copied provisionally; the cipher signs were not transcribed sign by sign."}
+  },
+  {
+   "id": "fr3758-no104",
+   "read": "not read",
+   "shelfmark": "BnF Français 3758 no. 104, manuscript pp. 123–128, Gallica views 135–140",
+   "date": "3 Aug 1635",
+   "year": 1635,
+   "country": "France",
+   "route": "Nijmegen → Servien",
+   "language": "French",
+   "pages": 6,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {"location": ["none"], "source": "No decipherment of the symbol bands was verified."},
+   "length": {"tokens": "unknown", "unit": "mixed", "measured": false},
+   "transcription": {"by": "llm from images", "source": "Gallica views 135–140", "image_quality": "good", "notes": "Clear French copied provisionally; the cipher signs were not transcribed sign by sign."}
+  }
+ ],
+ "system": {
+  "types": ["undetermined"],
+  "summary": "The two 1635 letters mix clear French with cipher bands of digits and invented signs; no 1635 key was verified.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "sibling_key": "The 1637 Saint-Chamond key was inspected as a structural comparison; its use here is unverified.",
+  "notes": "The Rohan letters of 1636 may use a different key. Their paired ciphertext is unavailable in the supplied Français 5190 scan."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "no", "where": "The cipher bands of Français 3758 nos. 100 and 104 were not found in print in this search.", "found": "not found", "used": false},
+  "inputs": ["images", "cleartext context", "published reading"],
+  "attack": "none",
+  "human_role": "The user supplied the target description, archive URLs and the proposed Savoy/Canisy known-plaintext route.",
+  "tools": ["Gallica image inspection", "Google Books and catalogue search"],
+  "models": ["unknown"],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {"date": "2026-09-22", "kind": "access", "what": "Checked Français 5190; view requests past 90 returned the same final image, manuscript p. 80.", "result": "partial"},
+  {"date": "2026-09-22", "kind": "literature search", "what": "Read the printed Savoy and Canisy plaintext in the 1758 Mémoires and identified Sainte-Geneviève MS 3338 as a second witness for Français 3758.", "result": "partial"},
+  {"date": "2026-09-22", "kind": "reading", "what": "Transcribed the clear prose of Français 3758 nos. 100 and 104, marking the cipher gaps.", "result": "partial"},
+  {"date": "2026-09-22", "kind": "sibling key", "what": "Inspected the published 1637 Saint-Chamond cipher as a structural comparison; no assignment to the 1635 correspondents was established.", "result": "ruled out"}
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "No enciphered token in the 1635 letters has a verified value; clear prose is excluded from the fraction.",
+  "verification": ["none"],
+  "gaps": [
+   {"item": "Français 3758 no. 100 cipher bands", "blocker": "no-key-material", "detail": "No verified key or matching plaintext."},
+   {"item": "Français 3758 no. 104 cipher bands", "blocker": "no-key-material", "detail": "No verified key or matching plaintext."}
+  ],
+  "notes": "The Savoy/Canisy letters are printed deciphered, but the matching manuscript ciphertext and d'Émery's letter are beyond the supplied Français 5190 reproduction. The surrounding clear prose of the 1635 letters is read."
+ }
+}
