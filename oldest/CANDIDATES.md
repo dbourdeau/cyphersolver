@@ -132,6 +132,23 @@ letter in patches, four signs unvalued, share read not measured; see `buda1489/`
   keys R2633/R2634/R2652 before any search. Santa Maria La Nova inscription, Voynich, Rohonc: not text ciphers of
   this kind.
 
+## Scan of 23 Sept 2026: beyond DECODE (target: older than the 1425 reading)
+
+Five sweeps (Iberia, Italy, Central/North, France-England-manuscripts, hard targets any date); notes in
+`scan_2026-09-23/`. Result: **no unread pre-1425 ciphertext with images online.** Every earlier lead needs photographs:
+- **Benedict XIII, ACB Barcelona, capsa "Documentos referentes a la familia Luna I"** (c. 1394-1417): autograph letter
+  with cipher lines + ~3 folio pages of instruction largely in cipher (Meister 1906 pp. 22-23, from Ehrle). The best
+  shot at a ciphertext-only record. Puig y Puig 1920 not yet checked for a transcription. Catalogue 334.
+- **Florence 1414**, Signori Responsive filza 1 (Meister 1902 p. 49; Gabbrielli partial key). Catalogue 335.
+- **Siena 1421**, Concistoro 2308 fasc. 2 no. 1, one of 29 "partly deciphered" letters; Ilardi reel 1503 has keys only. Catalogue 336.
+- Faenza 27 Oct 1425 (Averardo de' Medici), unreadable to Albizzi's office (Guasti II 457). Catalogue 337.
+- Leads, no ciphertext known: Navarre key c. 1394-1406 (AGN Papeles sueltos leg. 178), Pisan key 1325 (ACA CRD Jaime II
+  10044), Carrara-Ruprecht keys 1402, Teutonic Order OBA 2987 (1419, probably in Koeppen), Modena 1395 (three short
+  passages), Milan 1428/1447 short passages (Osio).
+- Ruled out: Lucca Guinigi 1404-06 (printed deciphered 1925), Venice "1441" (= Steno 1411), Hanse/Baltic/Hungarian/
+  Imperial/Polish/Bohemian editions to 1450 (no cipher letters of their own), Rožmberk ciphers (16th c.), Portugal
+  (nothing before 1532), medieval manuscript cryptograms (one-liners, read).
+
 ## Recommended order
 1. **A1** (1435): pull reg. 3225 from PARES, find siblings, test the 1429 and 1437 keys, anneal. Cheapest shot at
    the oldest reading anyone has published.
