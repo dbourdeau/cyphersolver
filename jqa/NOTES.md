@@ -1,10 +1,10 @@
 # JQA at St Petersburg: the despatches are NOT in the Armstrong code; his own code rebuilt, and Ford's
 # "not decyphered" passage of No. 88 (25 June 1812) read
 
-Status: read (22 Sept 2026, third pass). No. 88, measured with `measure.py`: **376 of 390 code groups read as sense
-(0.964)**; the nine lines Ford left out 129/133 (0.970), the remainder 247/257 (0.961). 382/390 groups have a value;
-356/390 (0.913) without the grade-I values. Still open: 7 groups cut by the microfilm gutter (needs the original),
-4 groups where JQA's own encoding does not fit the sense (im-pas-sion-ed for 'impaired'), and 3 single code groups.
+Status: read (22 Sept 2026, third pass). No. 88, measured with `measure.py`: **380 of 390 code groups read as sense
+(0.974)**; the nine lines Ford left out 133/133 (1.000), the remainder 247/257 (0.961). 382/390 groups have a value;
+362/390 (0.928) without the grade-I values. Still open: 7 groups cut by the microfilm gutter (needs the original)
+and 3 single code groups (1508, 1185, 570).
 The second pass (earlier on 22 Sept) stood at 0.910; see section 5.
 
 ## 1. The premise, checked
@@ -35,8 +35,8 @@ a value only where the neighbours are in order (`slots.py`). A superscript o aft
 group changes it (doubled letter, -ed, or a different word: 1107 paper, 1107+ well). A few groups carry two values in
 the sources (508 rect and ear; 1570 of and occurr; 1173 when and would).
 
-**Sources of the table** (all merged by `consolidate.py` into `code_table.tsv`, 1,070 numbers after the third pass: 431 H, 312 C, 307 M,
-20 I; disagreements in `code_conflicts.txt`, hand decisions in `overrides.tsv`):
+**Sources of the table** (all merged by `consolidate.py` into `code_table.tsv`, 1,166 numbers after the third pass: 431 H, 393 C, 324 M,
+18 I; disagreements in `code_conflicts.txt`, hand decisions in `overrides.tsv`):
 
 | File | What | Pairs |
 |---|---|---|
@@ -61,7 +61,7 @@ Triplicate, M35 reel 3 frame 0206 (the clerk's decode stops exactly where Ford's
 { } = valued but not sense):
 
 > ... and expectation. But the [journ-ey] itself of the Emperor Alexander to Wilna was in opposition to the
-> Chan-ce-ll-or and adv-ice, and if his active influence had not been {im-pas-sion-ed} before it, it can scarcely
+> Chan-ce-ll-or and adv-ice, and if his active influence had not been im-pa-ir-ed before it, it can scarcely
 > fail to have been affected by his illness immediately after his arrival [thither], which was undoubtedly an
 > apo-ple-ct-ic stroke. Since then he has had a second and a more severe one. In the German Gazettes even his
 > death has been announced; but that was a mistake. At all events it is scarcely possible that he should remain much
@@ -77,8 +77,10 @@ news could reach St Petersburg, places the first stroke soon after Rumyantsev re
 25 June. Ford printed none of this. JQA's diary for September 1812 records Romanzoff speaking of two strokes of
 apoplexy suffered with the Emperor at Wilna.
 
-{im-pas-sion-ed}: 1424 1112 1433 520 are clear on the image and each value is attested (im, pas, ion, ed); the sense
-wants *impaired*. Probably JQA's own encoding slip; counted as not read.
+im-pa-ir-ed: the groups on the page are 1424 [1102] 1112 1433 520. JQA's catchword at the foot of the left leaf is
+1102 (pa, C 9x), the group he meant to begin the next page with, and in No. 83 (0190L5) he writes un-im-pa-ir-ed as
+1477 1424 1102 1435 520 (1435 ir, C 3x). The 1112 1433 at the top of the right leaf are his own copying slips
+(one digit each) for 1102 1435; read as intended, *impaired* (grade C by the No. 83 parallel).
 
 ## 4. The "remainder of letter ... undecyphered" (Ford 4:358)
 
@@ -102,18 +104,19 @@ The ambassador is Lauriston, the French ambassador; Kurakin's note is the Russia
 evacuation of Prussia (April 1812), which Napoleon treated as a declaration of war. "Even after the battle of
 Friedland" (June 1807, before Tilsit): France had never proposed evacuating Prussia even when Russia was beaten.
 
-## 5. Third pass (22 Sept 2026): 0.910 -> 0.964
+## 5. Third pass (22 Sept 2026): 0.910 -> 0.974
 
 New sources: the clerk's interlinear decodes on 0047, 0048 (rest), 0210-0211 and 0247 (`clerk_0047.tsv`,
 `clerk_0048b.tsv`, `clerk_0210_0211.tsv`, `clerk_0247.tsv`, 560 pairs; `clerk_notes_pages2.md`), and coded blocks of
 eight 1811-1812 despatches aligned with Ford vol. 4 (`codes_ford1812*.txt`, `ford1812_pairs*.tsv`, 1,926 pairs;
 No. 95 against the Department's clear copy on 0230-0232; `ford1812_notes.md`). `consolidate.py` now reads them; the
-table has 1,070 numbers.
+table has 1,166 numbers (with `ford1812_pairs_b.tsv`: Nos. 71, 72, 74, 75, 81; `ford1812b_notes.md`).
 
 What moved, with evidence:
 
 | No. 88 | was | now | evidence |
 |---|---|---|---|
+| gap88 l.3-4 `1424 [cw 1102] 1112 1433 520` | {im-pas-sion-ed} | im-pa-ir-ed, *impaired* (C) | catchword 1102 pa; No. 83 un-im-pa-ir-ed = 1477 1424 1102 1435 520 (0190L5): 1112 1433 are JQA's slips for 1102 1435 |
 | gap88 l.2 `1025 1016 1457 908` | Chan-ce-{last}-or | Chan-ce-ll-or (C) | No. 73 (0165, Ford 4:256) writes the same four groups, 1457 with the doubling mark = ll |
 | gap88 l.5 first group | 492 use | **792** by (H) | re-read on 0206R: an open hook, not this hand's looped 4 |
 | rem88 l.4 `142x 350 289 1403 897` | few-ex-table-ly | [in]-[fl]-ex-[ib]-ly, *inflexibly* (I) | slots 1401 I < 1403 < 1404 ic and 347 fit < 350 < 352; 350 has a hook under the 0; the single Ford alignments (few, fi, table, cal) disagree with each other, and the 0194 "1403" (cal-cu-late) has a blotted 4, probably 1003 cal |
@@ -126,7 +129,6 @@ What moved, with evidence:
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
-- gap88 l.3-4 im-pas-sion-ed (1424 1112 1433 520) - blocker: open-codes; the four groups are clear and attested, the sense wants 'impaired': JQA's own encoding, not a gap in the table
 - rem88 l.5 1508 before [pre]-liminary - blocker: open-codes; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs
 - rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: open-codes; no occurrence in any decoded frame or Ford block read
 - rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: open-codes
@@ -137,7 +139,7 @@ What moved, with evidence:
 - [x] clear-pages: Ford vol. 4 decipherments aligned for 39 coded 1811 blocks and 8 despatches of Oct 1811-Sept 1812, No. 95 against the Department's clear copy on 0230-0232 (`ford_pairs*.tsv`, `ford1812_pairs*.tsv`)
 - [x] known-keys: Armstrong's THE=972 table tested and ruled out (18 Sept); Pinkney's London code not found in print or online
 - [x] print: Ford 4:357-358 prints both passages as not decyphered; no other printed reading found; JQA's diary (Primary Source Cooperative) confirms the two strokes at Wilna
-- [x] key-rebuild: table rebuilt to 1,070 numbers (`consolidate.py` + `overrides.tsv`, every override with its reason); alphabetical-slot bracketing (`slots.py`, `slot_inferences.tsv`, grade I)
+- [x] key-rebuild: table rebuilt to 1,166 numbers (`consolidate.py` + `overrides.tsv`, every override with its reason); alphabetical-slot bracketing (`slots.py`, `slot_inferences.tsv`, grade I)
 - [x] retry: No. 88 re-read against the image a third time: 792 (not 492), 1061 (not 1081), 588 (not 888), 1384 (not 1385) corrected; 570 confirmed; 1097 and 1383 read as JQA's own overwritten digits
 
 ## Next
