@@ -412,3 +412,5 @@ exists: Rao et al. 2009 (entropy), Yadav et al. 2010, Farmer et al. 2004, and th
 None of these checks Parpola 2005's specific counts and cited seals, his 1994 numeral restriction, or the
 chance rate of his Tamil-compound control as done here; the counts and tables in `results/` were all
 computed in these two sessions.
+
+Draft write-up page: `unpublished/indus.html` (not on the site; see `unpublished/README.md` for publishing).
