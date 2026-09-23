@@ -677,6 +677,50 @@ weight tables typed from the page images.
    tiered numerals by 7, 6 and 12 (6% of tiered tokens are powers of two). The numbers written on seals and
    tablets count things, or the capacity measure of the long strokes (seventh pass), not weight units.
 
+## Eleventh pass (23 Sept 2026): the ending class as a language test; new sign = picture anchors
+
+Scripts: `noun_class.py`, `anchors.py`; results in `results/noun_class.md`, `results/anchors.md` (+ `anchors.png`).
+Grammar sources read: Hoffmann 1903 Mundari Grammar, Bodding 1929 Materials for a Santali Grammar, Phillips 1873
+Grammar of the Santhal Language (archive.org full texts).
+
+1. **Which names take 520** (ICIT-derived and M77 additions pooled; 1,957 name + ending lines, 520 in 14.1%;
+   the name's last sign as its head). 520 is a small closed class: the fish series takes it in 154 of 254 lines
+   (220 65/106, 240 44/65, 233 28/32, 231 9/14, 235 8/13; Fisher p = 6 x 10^-83), plus one fixed unit, long 3 +
+   520 (56 of 63), sign 70 (20 of 20), and in part 400 (10/21), 460 (6/19), 31 (5/11). Everything Fairservis
+   identifies as a human figure, animal, plant, object, tool, building or landscape takes 740: 24 of 754 lines
+   with 520 (the horned man 100 0/105, grain 390 0/51 and 405 0/44, bow 900 0/49, shield 923 0/33, settlement
+   861 0/14, the long pair 32 0/76). So the object at the end of a name does not decide its class: a 'he of
+   the X' title (Mahadevan's reading of 740) takes the personal ending whatever X is, and the 520 names are the
+   fish names, Parpola's stars.
+2. **Against the class systems of the candidate languages.** A split of persons (740) from stars (520) is what
+   Old Tamil's rational / non-rational (uyartinai / aḵrinai), Proto-Dravidian masculine / non-masculine (Old
+   Telugu, Mahadevan 1998) and Sumerian human / non-human do. Sanskrit gender fits in part (the nakshatra names
+   are mostly feminine; some are masculine and neuter). **Munda does not fit**: Hoffmann (1903: 'Distinction
+   between living beings and inanimate objects') counts 'all heavenly bodies as well as the causes of natural
+   phenomena, such as rain, thunder, lightning, hail' as living beings, and marks the distinction by number
+   only, with no class suffix on a singular noun: a Munda language would put star names with persons and would
+   not write a two-way singular ending at all. Caveats: the test rests on 740 marking persons and the fish names
+   being stars; and the signs Fairservis calls sun and moon (803, 920, 820) take 740 (2 of 40), so if those
+   identifications hold the 520 class is narrower than 'heavenly bodies' (which again fits gender or rationality
+   better than Munda animacy). The first language test in this project that excludes a candidate family on
+   grammar alone, without sound values; it cannot separate Dravidian from Sumerian.
+3. **New sign = picture candidates** (`anchors.py`). Over 1,360 distinct (text, picture) units the sign-level
+   test finds only object-type confounds (400, the tablet ending, with the tablet pictures). Texts always written
+   with one picture add 18 pairings beyond the copper tablets, mostly moulded tablets (the gharial with four
+   different texts; the multi-headed animal with 347 741 176 740 90 on 8; a cross with 104 645 590 235 240 740 90 on
+   7; a tree with 465 806 158 on 5; fish with 27 32 740 400 on 3 incised tablets). Judged by eye on the render
+   sheet:
+   - **347**, a horned, crested quadruped drawn like 341 (the copper tablets' rhinoceros): with the multi-headed
+     animal on 8 of its 9 objects (one text, 8 moulded tablets; the ninth a gaur seal). Candidate anchor, a
+     logogram for the animal on the other face.
+   - **460**, three tall cones on a base: with the tree / plant picture in 4 of its 5 distinct tablet texts (354
+     460 798 740, 15 460 798 740, 495 460 740 400, 415 240 495 460 752 740; p = 0.0005). The best supported of the
+     new candidates, since it rests on four different texts, if the cones are trees or shoots. 460 takes 520 in
+     6 of 19 lines, the only non-fish sign besides 400 to do so often: plants are non-rational in Tamil.
+   - **645** (an X) with the cross motif, and **318** (a bar with teeth) with the gharial: one text each, weak.
+   The copper tablets' seven equations stay the firm set; 347 and 460 are the two additions worth carrying to the
+   bench as anchors, marked provisional.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
