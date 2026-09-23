@@ -27,9 +27,9 @@
    },
    "transcription": {
     "by": "llm from images",
-    "source": "Only one page is imaged: Puig 1920 p. 475, a halftone facsimile of the last page of XXXV (doc. 1068), via Google Books (1826 x 2500 px). Two runs aligned sign by sign against Puig's text (about 40 signs); no full transcription.",
+    "source": "Only one page is imaged: Puig 1920 p. 475, a halftone facsimile of the last page of XXXV (doc. 1068), via Google Books (1826 x 2500 px), deskewed and read line by line at 3-5x. Every cipher run on the plate checked word by word against Puig's text (148 words, 826 plaintext letters; src/plate475_check.tsv); no free-standing sign transcription.",
     "image_quality": "poor",
-    "notes": "Eleven ciphered letters of Benedict XIII in Puig's appendix (XXVI, XXVII, XXXV, XXXVI, XXXVII, XXXIX, XLI, XLII, XLIII, LII; the Jafet note), treated as one set. About 2,200 deciphered words."
+    "notes": "Eleven ciphered letters of Benedict XIII in Puig's appendix (XXVI, XXVII, XXXV, XXXVI, XXXVII, XXXIX, XLI, XLII, XLIII, LII; the Jafet note), treated as one set. About 2,200 deciphered words. The plate check covers the only imaged page."
    }
   },
   {
@@ -94,29 +94,29 @@
    "monoalphabetic",
    "nomenclator"
   ],
-  "summary": "Letter substitution with invented signs (delta-, T-, o-, double-cross-, T-bar-, b-, c-shaped strokes joined by hair-lines) mixed into clear Latin, with a dotted V for the King of Aragon; tentative, from two runs of Puig's p. 475 facsimile aligned with his text (u = cb, e = delta, s = T, m = t, b = T-bar, c/i = o, d = double cross).",
+  "summary": "Simple substitution, one invented or letter-shaped sign per letter (20 values: a hook, b T-bar, c/i/o one o-sign on the halftone, d double cross, e delta, f flagged sigma, g 4-shape, h 2-shape, l looped d, m footed epsilon, n n, p inverted T, q double-barred upright, r upright stroke, s T, t c with superscript, u/v joined cb, x alpha-shape), signs joined by hair-lines with no word division, mixed into clear Latin; a dotted V for the King of Aragon; groups of lambda/z-like signs as null separators at sentence breaks. Rebuilt from the p. 475 facsimile against Puig's text (key.md).",
   "symbol_kind": "symbols",
   "distinct_symbols": "unknown",
   "diacritics": {
    "used": "unknown"
   },
   "homophones": {
-   "used": "unknown"
+   "used": false
   },
   "nomenclator": {
    "present": true,
    "kinds": [
     "names"
    ],
-   "entries": "unknown"
+   "entries": 1
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
   "key_order": "unknown",
-  "word_division": "unknown",
+  "word_division": "none",
   "sibling_key": "Two keys of Climent in the same papers (doc. 595) that Puig could not apply to any document; not printed. Clement VII's Lavinde alphabets (Meister 1906, Schlüsselsammlung I) are the nearest printed keys.",
-  "notes": "Values are provisional (grade M): read from a 1920 halftone at about 40 px a line; one clash in 25 aligned letters."
+  "notes": "c, i and o share one sign on the 1920 halftone and d/p are hard to separate; the original may distinguish them. Key rebuilt from known plaintext (Puig's reading), not ciphertext-only."
  },
  "conditions": {
   "prior_solution": {
@@ -127,9 +127,10 @@
   },
   "inputs": [
    "published reading",
-   "images"
+   "images",
+   "known plaintext"
   ],
-  "attack": "none",
+  "attack": "known plaintext",
   "human_role": "Project-level: set up Claude Code with Opus 5.5 and posed the target with /goal from the archive-scan lead (catalogue 334), naming Puig y Puig 1920 as the outstanding check. No target-specific intervention.",
   "tools": [
    "Google Books in-volume search endpoint (jscmd=SearchWithinVolume2) and page-image endpoint (jscmd=click3)"
@@ -137,7 +138,7 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-23",
   "last_date": "2026-09-23"
  },
@@ -195,12 +196,42 @@
    "kind": "transcription",
    "what": "Attempted a sign-level transcription of the long run (lines 8-16, about 450 letters of known plaintext) at 3-4x with contrast enhancement: delta/d-with-mark/o/a and joined strokes cannot be separated consistently at this resolution; 'quo modo se habet' did not align. Stopped; recorded as blocked (illegible).",
    "result": "failed"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "Second session. Tried for a sharper image of p. 475: Google Books serves 1826 x 2500 at most (w=4000 and zoom 4-6 give nothing larger); the second Google copy (wP0wAQAAMAAJ) is snippet view; HathiTrust still behind Cloudflare in curl; Claude in Chrome not connected; no other digitised copy found by web search.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "transcription",
+   "what": "Plate re-cut from the page, rotated, deskewed -0.7 deg by maximising the row-profile contrast, 26 line centres found from the smoothed ink profile; each cipher run cut into ~500-750 px strips and viewed at 3-5x with autocontrast, alongside Puig's text of p. 475-476.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "crib",
+   "what": "Known-plaintext alignment over all cipher runs of the plate (lines 1-6, 8-17, 23-25), word by word against Puig's italics. One sign per letter emerges: a hook, b T-bar, c/i/o o, d double cross, e delta, f flagged sigma, g 4-shape, h 2-shape, l looped d, m footed epsilon, n, p inverted T, q double-barred upright, r upright, s T, t c', u/v cb, x alpha-shape; dotted V = King of Aragon (4x). The first session's clash was a misread of joined strokes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "verification",
+   "what": "Word-by-word tally (src/plate475_check.tsv): 148 words, 826 plaintext letters; 125 words confirmed sign by sign, 16 with 1-3 blurred signs, 7 illegible (line 4, underlined/overwritten in the original). 755/826 letters confirmed (91.4%; 96.3% of legible runs); no sign contradicts the key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "reading",
+   "what": "The key corrects Puig in three places: 'te sicudum' (line 4) is 'tenendum' (c' delta n delta n dcross cb m-sign; the clear text just before has 'in suspenso tenendum'); 'abique congerio' is 'absque congedio'; 'necesaria' is written 'necessaria'. Four separator groups (lambda/z signs) stand where Puig prints ';' or a dash and are not printed by him: read as null punctuation.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "already solved",
-  "key": "partial",
-  "fraction_read": "unknown",
+  "key": "recovered",
+  "fraction_read": 0.914,
   "verification": [
    "key confirms"
   ],
@@ -216,15 +247,31 @@
     "detail": "Not printed."
    },
    {
-    "item": "The key (never printed by Puig)",
-    "blocker": "illegible",
-    "detail": "Rebuildable from the p. 475 facsimile against Puig's text, but Google's scan of the 1920 halftone is too coarse; needs a 600-dpi scan or a photograph of ACB doc. 1068."
-   },
-   {
     "item": "P. Jafet to Climent 15 Sep 1400 (doc. 1043) and Comuel to Climent (doc. 661), cited by Puig but not printed",
     "blocker": "needs-physical-access"
+   },
+   {
+    "item": "Plate line 4, 'non approbando nec reprobando; de cardinali catan-' (7 words, 42 letters)",
+    "blocker": "illegible",
+    "detail": "Underlined and overwritten in the original; the halftone does not separate the signs. Needs a photograph of ACB doc. 1068 or a 600-dpi scan of Puig p. 475."
+   },
+   {
+    "item": "16 plate words with 1-3 blurred signs (29 letters)",
+    "blocker": "illegible",
+    "detail": "Listed in src/plate475_check.tsv (status p); nothing contradicts the key."
+   },
+   {
+    "item": "Separator groups (4 on the plate)",
+    "blocker": "too-short",
+    "detail": "Read as null punctuation; whether the dotted V inside two of them is meant cannot be settled from four instances."
+   },
+   {
+    "item": "The other ten 1399-1403 letters' ciphertext",
+    "blocker": "needs-physical-access",
+    "detail": "The key applies, but no image exists; Puig's reading stands for them."
    }
   ],
-  "notes": "Read by Puig y Puig in 1920; nothing deciphered here. Added here: Meister's second-hand ACB report identified with Puig's printed decipherments; the 14 cipher items listed; the p. 475 facsimile found and two runs aligned, which confirms Puig where tested and gives a dozen tentative sign values; the unread remainder listed."
+  "notes": "Read by Puig y Puig in 1920 (the reading is his). Added here: Meister's second-hand ACB report identified with Puig's printed decipherments; the 14 cipher items listed; in a second session the key Puig never printed rebuilt from the p. 475 facsimile against his text (20 letters, name sign, null separators), confirming 91.4% of the plate's cipher letters sign by sign (96.3% of the legible part) with no contradiction, and correcting Puig in three places (tenendum, absque congedio, necessaria). fraction_read is the plate's sign-by-sign confirmed share, not the reading of the text, which is Puig's and complete.",
+  "fraction_read_method": "measured"
  }
 }

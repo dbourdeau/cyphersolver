@@ -354,8 +354,9 @@ Ordered by how much this repo added.
    rule checked on the archive's image.
 7. **Benedict XIII to Francesc Climent, Arxiu Capitular de Barcelona, 1399–1416.** Deciphered by Puig y Puig in 1920
    (14 letters, italics = deciphered, key from Climent's own glosses, never printed). Meister's unseen 1906 report
-   identified with them; Puig's one facsimile page (22 June 1400) aligned on two runs with his text: letter
-   substitution in invented signs with a sign for the King of Aragon. Ruled out as a record candidate.
+   identified with them; from Puig's one facsimile page (22 June 1400) the key he never printed rebuilt against his
+   text: simple substitution, 20 letter values, a sign for the King of Aragon, null separators; 91.4% of the plate's
+   cipher letters confirmed, three corrections to Puig. Ruled out as a record candidate (the reading is Puig's).
 
 Perwich, the Feynman ciphers, Ferdinand III, Milroy, the Confederate dictionary code and Mazarin–Bordeaux 1654 were found
 solved by others with nothing added here and are no longer listed (removed 17 September 2026).

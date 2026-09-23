@@ -225,7 +225,7 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
-- **Benedict XIII → Francesc Climent, 1399–1416**, Arxiu Capitular de Barcelona (catalogue 334): found already read, 23 Sept 2026. Deciphered and printed by Puig y Puig, *Pedro de Luna* (1920); p. 475 facsimile aligned with his text; key never printed. [`benedict1399/`](benedict1399/) · [write-up](https://dbourdeau.github.io/cyphersolver/benedict1399.html)
+- **Benedict XIII → Francesc Climent, 1399–1416**, Arxiu Capitular de Barcelona (catalogue 334): found already read, 23 Sept 2026. Deciphered and printed by Puig y Puig, *Pedro de Luna* (1920); key never printed by him, rebuilt here from the p. 475 facsimile against his text (20 letters, 91.4% of the plate confirmed; three corrections). [`benedict1399/`](benedict1399/) · [write-up](https://dbourdeau.github.io/cyphersolver/benedict1399.html)
 
 Potocka and Mniszech to Dunin (catalogue 280): Potocka alphabet recovered, group read in part; Mniszech R7524 remains open. [`potocka1714/`](potocka1714/) · [write-up](https://dbourdeau.github.io/cyphersolver/potocka1714.html)
 

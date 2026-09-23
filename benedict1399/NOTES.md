@@ -1,6 +1,7 @@
 # Benedict XIII's cipher letters to Francesc Climent, 1399–1416 (Arxiu Capitular de Barcelona) — catalogue 334
 
-Status: found already read (Puig y Puig 1920). Written up as `docs/benedict1399.html`.
+Status: found already read (Puig y Puig 1920); key rebuilt here from the p. 475 facsimile (second session, 23 Sept
+2026; `key.md`). Written up as `docs/benedict1399.html`.
 
 **Result, 23 Sept 2026:** the "best shot" at an unread cipher from c. 1400 was read a century ago. Meister (1906,
 pp. 22–23, second-hand from Ehrle) reported in the Barcelona cathedral archive a letter of Benedict XIII with some
@@ -10,6 +11,15 @@ y Puig, canon of Barcelona, found the same material among the papers Francesc Cl
 (1387–1430)* (Barcelona: Editorial Políglota, 1920), with the deciphered passages set in italics. The check the
 archive scan left open ("Puig y Puig 1920 may print a transcription; HathiTrust blocked") is closed: it does, and it
 is a decipherment, not a transcription.
+
+**Second session, 23 Sept 2026: the key.** Puig never printed his key. It is now rebuilt from the one image of the
+ciphertext, the p. 475 facsimile, read against Puig's text of the same page (`key.md`, `src/plate475_check.tsv`).
+It is a plain one-sign-per-letter substitution, 20 letter values, plus a dotted-V sign for the King of Aragon and
+groups of null separator signs. It reads every legible cipher run on the plate: 755 of 826 plaintext letters are
+confirmed sign by sign (91.4%; 96.3% of the legible runs) and no sign contradicts the key. It also corrects Puig in
+three places: *te sicudum* is **tenendum**, *abique congerio* is **absque congedio**, *necesaria* is *necessaria*.
+The earlier verdict below (3a, "not at the resolution of the only scan") was too pessimistic: at 3–5× with
+autocontrast on the deskewed plate, the signs separate once the plaintext fixes the alignment.
 
 ## 1. How it was found
 
@@ -80,7 +90,7 @@ claves"). Puig marks nothing as unread. The doubtful forms inside italics ("n s 
 "Cardinalis ispanie e l.", "v. stm perfui", "cer ificari") look like decipherment slips or misprints, one letter or
 word each.
 
-## 3a. The facsimile: what the cipher looks like, and a first check of Puig
+## 3a. The facsimile: what the cipher looks like, and a first check of Puig (first session; superseded by `key.md`)
 
 - The cipher runs are strings of small invented signs (δ-, T-, o-, ‡-, Ƭ-, b-, c-shaped strokes, many joined by
   hair-lines), mixed into clear Latin. A dotted **V̇** stands for the King of Aragon (Puig prints "Regis Arag." /
@@ -117,8 +127,16 @@ word each.
   blocker: needs-physical-access.
 - Any further cipher pieces among the ~1,532 paper documents that Puig did not print, and those not returned after
   1920–30 - blocker: needs-physical-access.
-- The key itself (never printed): rebuildable from the p. 475 facsimile against Puig's text, but not at the
-  resolution of the only scan reachable - blocker: illegible; needs a 600-dpi scan of the book or an ACB photograph.
+- Plate line 4, *non approbando nec reprobando; de cardinali catan-* (7 words, 42 letters): the original has an
+  underlined (expunged?) stretch and overwriting here, and the halftone does not separate the signs - blocker:
+  illegible; needs a photograph of ACB doc. 1068 (or a 600-dpi scan of Puig p. 475).
+- 16 words on the plate with one to three signs too blurred to confirm (29 letters; listed in
+  `src/plate475_check.tsv`, status p) - blocker: illegible; same remedy.
+- The separator groups (four on the plate, λʒ … λʒ with a dotted V or barred p inside two of them): read as null
+  punctuation at sentence breaks; Puig prints nothing for them. Whether the dotted V inside is a null or a meant
+  sign - blocker: too-short (four instances on one page).
+- The key applies to the other ten letters of 1399–1403, but their ciphertext is not imaged anywhere - blocker:
+  needs-physical-access.
 
 ## Escalation
 
@@ -127,9 +145,11 @@ word each.
 - [x] known-keys: Meister's Avignon keys (Lavinde 1379, Schlüsselsammlung I) could only be tested on ciphertext; none is printed.
 - [x] print: Puig 1920 (this reading); Meister 1906; Ehrle ALKG 5–7 (nothing); Baucells 1978 (parchments only);
   IFC 2024 *Benedicto XIII, el Papa Luna* and Cuella's Bulario (nothing on the cipher).
-- [x] key-rebuild: the p. 475 facsimile (last page of XXXV) aligned with Puig's text on two runs; a dozen values
-  recur consistently, but the halftone at 40 px a line is too coarse for a full sign-level transcription.
-- [n/a] retry: the reading is Puig's and he marks nothing unread; nothing of ours to retry until a better image exists.
+- [x] key-rebuild: second session: every cipher run on the p. 475 plate aligned with Puig's text at 3–5× on the
+  deskewed image; full 20-letter key plus name sign and separators (`key.md`); 91.4% of the plate's cipher letters
+  confirmed, no contradiction; three corrections to Puig.
+- [x] retry: the partial first-session alignment (two runs, one clash) redone over the whole plate; the clash was a
+  misread of joined strokes. Remaining unconfirmed signs need a sharper image.
 
 ## Sources
 
