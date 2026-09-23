@@ -1,33 +1,70 @@
-# Passano's ciphered account, London, 15 March 1530
+# Passano's account of Wolsey's assets, London, March 1530
 
-Status: attempted and closed from the present evidence — no verified reading of the cipher.
+Status: read — surviving account substantially deciphered, 386/402 tokens coherent (96.02%) with 13 explicit emendations; key partial. The copyist's omitted page and three lines remain unavailable and unread.
+
+## Result, 23 September 2026
+
+The 22 September negative was overturned by re-transcription. Dots distinguish plaintext letters: `3=i / 3d=d`, `7=o / 7d=p`, `8=i / 8d=q`, `9=o / 9d=t`, and `S=a / Sd=g`. Straight strokes (`1`, `1d`) were separated from curved `2`, `2d`. A many-to-one substitution search on this inventory immediately gave connected Italian. The account lists ready cash, credits, one year's revenues, baghe (probably jewels/rings), gold and silver vessels, and household furnishings; its last passage names Winchester, St Albans and York.
+
+The formerly “clear in summa” is actually cipher `1 m S m m`, followed by `7`: **un anno**. It belongs in the ciphertext. The old 402-token transcription and the final 402-token transcription are not the same sign inventory; the fresh dotted transcription initially had 397 tokens, to which these five were added. There are sixteen physical cipher lines, grouped into nine provisional transcription blocks, **not nine cipher lines or nine independent accounts**. The actual structure is an introduction, six short listed items and a longer final passage, with seven right-margin entries.
+
+`READING.md` gives every surviving line in Italian, cautious English sense, the clear sums, all residual problems, and the unavailable continuation. `key.json` supplies the inferred alphabet and each local emendation. `decode.py` creates literal and edited readings plus a 402-row token audit. No historical key or parallel decipherment has been found.
 
 ## Source and identification
 
-BnF, Collection Clairambault 331, f. 156r–157v, [Gallica btv1b9000761d](https://gallica.bnf.fr/ark:/12148/btv1b9000761d). Digital canvases `f148`–`f150` correspond to the three sides. The heading identifies a copy of a letter to the king and one enclosed for the Grand Master, dated 15 March. The Italian letter is by Giovan Gioacchino da Passano (Jean Joachim, sieur de Vaux), writing from London to Francis I. The account attached to it occupies f. 157r–v. Its nine lines of cipher are followed by separate, clear scudi amounts. The French copyist notes: “En apres suivent une page 3 lignes en chiffre. Et puis est escript ce qui suit.”
+BnF Clairambault 331, f. 156r–157v, [Gallica btv1b9000761d](https://gallica.bnf.fr/ark:/12148/btv1b9000761d), digital canvases f148–f150 (two facing pages per canvas). The surviving cipher is f. 157r–v, f149 right and f150 left. The copy's heading dates the royal letter and accompanying Grand Master's letter 15 March 1530. Attribution to Giovan Gioacchino da Passano (Jean Joachim, sieur de Vaux) follows the existing identification and London diplomatic context; it is not a newly decrypted signature. The royal letter addresses Francis I. The cipher account occurs before the valediction and the second letter.
 
-The immediately preceding clear text says Passano is trying to recover payments from Cardinal Wolsey: “8 termini et pagamenti per 4 anni.” It mentions outstanding quittances for May and November 1528 and May 1529, and a payment of 12,500 scudi. The clear passage after the cipher resumes “Sire, dopp[o] l'haver con ogni reverentia et humilita basciati le mani de V. Mta ...”. These are context, **not decrypted text**.
+The preceding clear text discusses recovering payments and quittances from Cardinal Wolsey, including May and November 1528 and May 1529 and 12,500 scudi. This context was known before the attack, but is not a parallel plaintext. The new account reading identifies a different subject: the disposition of goods and revenues, not merely the French instalment schedule.
 
-Tomokiyo lists f. 156 among the undeciphered Italian letters in this volume, describing the cipher as apparently a list of sums. No DECODE record or published decipherment was found in the searches of 22 September 2026. Le Grand's *Histoire du divorce de Henry VIII*, vol. 3, and *Letters and Papers Henry VIII* no. 6307 contain a **related but differently dated** Passano report; they do not supply a reading of this account. They must not be treated as a parallel plaintext.
+The marginal source reference appears **Vol. 79, fol. 78**, correcting the earlier notes' “70”; its present shelfmark is unverified. After the account the copyist explicitly says a page and three lines in cipher follow, then resumes clear Italian. This is an omission in the historical copy, not a technical image-access problem.
 
-## Cipher transcription and structure
+## Prior work and contamination
 
-`ciphertext.txt` records 402 proposed signs in nine account entries, omitting the plain “in summa” and Roman-numeral amounts. It is a provisional, sign-level transcription from full-resolution Gallica IIIF images (`f149`–`f150`), with 20 aliased signs. The sheet has no secure word divisions. Letter-like and numeral-like forms recur; dots above some forms may be meaningful and are not resolved. This is a research transcription, not a diplomatic one, and any further attack should recheck it against the manuscript.
+The user's candidate and the 22 September research identified Tomokiyo's Francis I page as listing this passage undeciphered. There is no identified DECODE record and no matching key or published decipherment in the local material. On 23 September Cryptiana returned HTTP 503 and the Gallica viewer failed in the web text tool; the previously downloaded Gallica images were inspected directly. Searches for the shelfmark, Passano, Wolsey and recovered wording did not locate a parallel text. This supports “no prior reading found,” not a categorical novelty claim.
 
-Index of coincidence: 0.0819. The most common aliases are `4` (58), `3` (51), `9` (39), `i` (39), `S` (35), `7` (33), and `m` (29). Item lengths and repeated runs were preserved. The different cipher at f. 149 in the same volume and the Passano/Sormano cipher in BnF fr. 3096 have visibly different sign inventories; neither gives an established key here.
+The related Passano dispatch in Le Grand III p. 412 and *Letters and Papers Henry VIII* IV no. 6307 is dated **4 April 1530**. It is not the plaintext of this March account. A post-solution lexical check in OVI/CNR's AGLIO confirms regional `dese` = ten, but the financial sentence remains uncertain. No target plaintext was imported from that source.
 
-## Attempts and controls
+## Attack history and verification
 
-- Italian one-to-one substitution search, including 40 × 80,000-step incremental annealing, did not yield connected language. Period Italian, modern Italian, French, Spanish, Latin, and English models were tried; reversal and adjacent-pair swapping were also tried. The initial Italian solver erroneously omitted `v`; that defect was corrected and the results rerun.
-- Treating frequent signs as spaces or nulls, many-to-one mappings, and Italian dictionary word segmentation also failed to yield a defensible reading.
-- A positive control of matching length and item structure recovered all 20 of 20 assignments for an artificial Italian monoalphabetic cryptogram. With 10% and 20% random sign corruption it still recovered 18/20 and 17/20, respectively, with recognizable Italian. This supports rejecting **simple one-sign/one-letter substitution on the current transcription**, not all possible cipher systems. Systematic glyph conflation or a more complex cipher could still account for the failure.
+1. The previous session transcribed 402 proposed signs as 20 classes; substitution, language variants, null/space hypotheses and many-to-one searches failed. Its positive and noisy controls worked, but random corruption could not exclude systematic merging of dotted signs. The old transcription and scripts remain as evidence of this failed route.
+2. Fresh inspection produced `ciphertext_dotted.txt`, 397 tokens, 28 types. `recheck/search.cjs` uses a seeded incremental four-gram annealer, the shared `it-cinquecento` model and a frequency-divergence penalty. 100 restarts × 100,000 iterations gave connected text from random keys. Without the penalty the model preferred repeated `i`, a failed preliminary trial. The merged-sign trial still yielded distorted text. Saved result files retain both principal outputs.
+3. Manual extension supplied `1d=b`, `n=m`, `T=s`, and identified three unsolved rare signs. Image checking led to 13 local contextual emendations, mostly missing/displaced dots. These are exposed rather than silently baked into the alphabet. `Rebatuti`, not `restituti`, is the supported reading. The cipher phrase `un anno` was recovered from the passage previously called clear.
+4. The final inventory has 402 tokens, 28 aliases, IC 0.0602 (measured by `_check_profile.py --measure`). 395 tokens have inferred letter values; 386 read coherently under the conservative editorial audit. Internal checks are repeated words, connected Italian on both sides, three place names, accounting vocabulary, and the sum of the right-margin numeral components: 150+50+60+20+250+200+20=750. Numerical multipliers and the inline stacked notation remain qualified. No independent contemporary key is claimed.
 
-No plaintext value, keyword, cipher key, or connected passage is verified. The clear letter identifies the business of the account but does not disclose the text of its entries.
+## Reproduction
+
+From the repository root:
+
+```
+python joachim1530/decode.py
+python docs/_check_profile.py --measure joachim1530/ciphertext_rechecked.txt
+python docs/_check_profile.py joachim1530
+```
+
+For the breakthrough run:
+
+```
+python joachim1530/recheck/prepare.py
+node joachim1530/recheck/search.cjs dotted 100 100000 2351
+```
+
+The search deliberately uses the pre-breakthrough 397-token transcription without manual corrections. The final decoder uses the 402-token inventory. The model binary is regenerated, not committed. Full images are in the shared `gallica_331/` cache; the site includes credited crops of both cipher pages.
 
 ## Remaining gaps
 
-The 402 cipher signs remain unread. A full diplomatic transcription should distinguish dotted and lookalike signs and include the clear amounts in alignment with the nine entries. The original outgoing letter, its enclosure, or a matching cipher key, if extant, would be decisive. The heading's reference to “Vol. 70 fol. 78” has not been identified securely with a surviving manuscript, and no parallel plaintext has been verified.
+- `[D]` (four occurrences), `[Q]` (two), `[S2]` (one): blocker: no-key-material. Wolsey and a royal title are plausible for D and S2; Q may be a pronoun or title. None has a verified expansion. Do not substitute whole words as if recovered from a key.
+- `so [D]` twice, the extra stroke in `parutite`, and the `dese`/stacked-sum junction: blocker: no-key-material. All occurrences were inspected and decoded; an independent copy or original is needed to settle abbreviation, copy errors, segmentation and numerical phrasing. Nine additional tokens are excluded from coherent coverage despite assigned letter values. The 13 emendations elsewhere are separately audited.
+- A page and three lines explicitly omitted by the copyist: blocker: needs-physical-access (or an independent complete digital copy). These are not present in the supplied manuscript. No token denominator or plaintext can be manufactured for them.
 
 ## Escalation
 
-Compare the Clairambault copy with any original of the 15 March 1530 letter or attached account; search the diplomatic registers and key books for Passano's London correspondence. If an independent copy or key is found, redo the sign inventory before attempting a solution. Until then, classify this as attempted and closed from the present evidence, not solved.
+- [x] siblings: reopened manuscript f. 149, Gallica f141; its Greek/geometric inventory is different. Its heading/body dating is inconsistent. It does not supply this account's key. Neighbouring clear material is not a decipherment.
+- [x] clear-pages: the full f148–f150 opening was inspected. After the account are a declared omission, valediction and accompanying clear letter, not a plaintext of the account.
+- [x] known-keys: the existing comparison with Ferrara Passano/Sormano material, fr. 3096, yielded no matching inventory. No historical key for this London account was located. The account alphabet is now reconstructed explicitly.
+- [x] print: checked local Le Grand/Letters and Papers research and verified no. 6307's April date. Shelfmark, correspondent and wording searches yielded no parallel. Cryptiana was unavailable on recheck; no fresh full-site search is claimed.
+- [x] key-rebuild: dotted transcription, seeded many-to-one annealing, repeated-context key extension, complete image checking, all 16 lines decoded, un anno restored.
+- [x] retry: all rare signs and awkward transitions reread. D, Q, S2, so and dese remain explicit and uncounted; further expansion requires outside evidence. The omitted continuation cannot be attacked from this copy.
+
+## Writeup outcome
+
+The **surviving account** meets the repository's >=95% read bar with a partial key. This is not “whole original letter decrypted”; the absent continuation is prominently excluded from the percentage. No DECODE correction is sent because no record has been identified. Catalogue item 281 is removed from the open list and the old negative superseded; the failed evidence is preserved.

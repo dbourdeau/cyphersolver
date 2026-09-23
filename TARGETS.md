@@ -225,6 +225,9 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Giovan Gioacchino da Passano (attributed) → Francis I, March 1530**, Clairambault 331 f. 156 (catalogue 281): surviving Wolsey account read, 386/402 coherent with 13 emendations; dotted signs were decisive. Partial key; omitted page and three lines unavailable. [Write-up](https://dbourdeau.github.io/cyphersolver/joachim1530.html).
+- **Mémoire en chiffre**, 12 December 1560 (BnF fr. 3157 no. 67; catalogue 276): solved 22–23 Sept 2026, key broken here ciphertext-only (homophonic cursive-sign substitution with units and word codes), read 98.9% of 1,715 cipher words; an Agenais gentleman to Montmorency on the Protestant rising. See `memoire1560/`.
+
 - **Speculum cipher flyleaf**, anonymous annotation in SCH R 201 (1618 volume; DECODE R4817; catalogue 271): solved 23 Sept 2026, completing Rous’s partial reading; 79 signs assigned, 78 coherent without correction; literal GEFAE remains a probable error for Gefäß. [r4817/](https://dbourdeau.github.io/cyphersolver/r4817.html).
 
 - **Nevers (Saint-Quentin) → Villeroy, 16 Aug 1595** (catalogue 277, BnF fr. 3993 no. 102 ff. 148–149): attempted, closed unread 22 Sept 2026; key not in fr. 3995 (no. 76 read in full: same signs, other values), homophonic readings ruled out against a matched control (`nevers1595/`).

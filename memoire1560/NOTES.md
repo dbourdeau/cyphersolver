@@ -65,6 +65,10 @@ emendation, and 16 scattered words are left unread.
 8. **Reading.** Read line by line: `reading_152r-154r.txt` and `reading_154v-156v.txt`. Emendations are in
    [ ], unread words are [..].
 
+## A parallel pass
+
+While this session worked, another session copied this folder part-way through the correction pass and published an "editorial reconstruction" of the same item (main commit 13e0f27b2: 97.7% by sign units, key called partial; files READING.md, VERIFY.md, coverage.*, reading_working.tsv, alignment_draft.json). It read two things this session had not transcribed, both confirmed against key.txt: the margin at 153r.14, `+mmxppdWxm Wx+ fg+ppdS3x io f:xrmx:W` = "assemblez en la chambre du conseil", and the dorse line = "Advertissemens". Both are added to `reading_152r-154r.txt`. Its files are kept for its image checks. Where they differ, the reading files here supersede them: the key is recovered (all ten pages corrected against the images, including 152v and 153r, which the parallel pass had not corrected) and the reading covers 98.9% of cipher words.
+
 ## Content
 
 **Who wrote it.** The writer is a Catholic gentleman of the Agenais, a neighbour of the sieur de Fumel ("monsieur
