@@ -611,6 +611,18 @@ Scripts: `merge_m77.py`, `replicate_m77.py`, `segment.py`, `allographs.py`, `exp
    (52.2 / 54.0 / 25.4%). `docs/_check_writeup.py` now treats atlas, keys, secret and indus-bench as tool
    pages (TOOL_PAGES), not write-ups missing a PAGES entry.
 
+6. **Fairservis 1992 on the bench.** His Appendix A (238 signs, Dravidian values with DEDR numbers) was
+   transcribed from the archive.org page images and matched to ICIT glyphs by drawing
+   (`keys/fairservis1992_raw.tsv`: 23 sure, 83 likely, 110 unsure, 22 unmatched; his example seals are cited by
+   Marshall/Mackay plate numbers, so no match could be confirmed through a seal). `build_fairservis.py` makes
+   two keys: sure + likely (97 signs, 64% of tokens) and with the unsure matches (172 signs). His key reads
+   Dravidian 87.7% against 86.5% for its shuffles (71 of 200 as good), Sanskrit 85.6% against 85.2%; the wide
+   key 92.8% against 92.4% (70 of 200). Anchor texts naming their animal 5 of 8, shuffles 5.4 on average. No
+   anchor sign keyed (341, 749, 753, 777 unmatched or unsure). He reads both endings as third-person suffixes
+   (740 an 'honorific', 520 ar), which does not separate the two classes of names they mark. Like every key
+   tested, it reads no better than its own shuffles; with whole-word values the raw rate is high for any
+   arrangement.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
