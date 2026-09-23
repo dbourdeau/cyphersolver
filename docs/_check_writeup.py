@@ -26,6 +26,7 @@ HERE = pathlib.Path(__file__).resolve().parent          # docs/
 ROOT = HERE.parent
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'famous', 'solved', 'highlights'}
+TOOL_PAGES = {'atlas', 'keys', 'secret', 'indus-bench'}   # interactive pages, not write-ups
 NOT_TARGETS = {'docs', 'papers', 'gallica_siblings', 'gallica_sweep', 'top50', 'oldest', 'source_headings.txt'}
 
 def read(p):
@@ -374,7 +375,7 @@ def audit(brief=False):
     dirs = target_dirs()
     listed_dirs = set().union(*(r['dirs'] for r in rows)) if rows else set()
     listed_slugs = set().union(*(r['slugs'] for r in rows)) if rows else set()
-    html_slugs = {p.stem for p in HERE.glob('*.html')} - {'index', 'catalogue', 'writeups'}
+    html_slugs = {p.stem for p in HERE.glob('*.html')} - {'index', 'catalogue', 'writeups'} - TOOL_PAGES
     problems = 0
 
     # 1. finished in the notes, nowhere else. The shared checkout is often on a stale branch, so a page that

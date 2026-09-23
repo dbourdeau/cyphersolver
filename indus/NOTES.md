@@ -572,6 +572,45 @@ Scripts: `tamil_stars.py` (extended), `tablets.py`, `bench.py` (+ `keys/`); resu
      240 (and 400, 460) take both freely. This supports a noun-class reading of 740/520 (Mahadevan's
      masculine/non-masculine, or any other lexical class), not his sound values.
 
+## Ninth pass (23 Sept 2026): M77 as a replication sample, segmentation, the sign list, an in-browser bench
+
+Scripts: `merge_m77.py`, `replicate_m77.py`, `segment.py`, `allographs.py`, `export_bench.py`; results in
+`results/merge_m77.md`, `replicate_m77.md`, `segment.md`, `allographs.md`; page `docs/indus-bench.html` with
+`docs/indus_bench.json`. `signs.load()` takes `with_m77=True` / `only_m77=True`.
+
+1. **M77 merged.** Mahadevan's 1977 concordance (2,906 texts, mapped to ICIT ids through
+   `icit_m77_map.tsv`; 588 tokens of 149 M77 signs have no counterpart and stay unknown) against the 2,543
+   ICIT-derived objects: 1,242 M77 texts match an ICIT object (840 exactly, 402 within a quarter of their signs,
+   each object used once), 1,664 do not. Site blocks recovered from the matches: Mohenjo-daro 1000-3399,
+   Harappa 4000-5299, Lothal 7000s, Kalibangan 8000s; 635 additions stay 'unknown' site. The merged corpus has
+   4,200 objects, but 102 additions repeat an ICIT text exactly (extra copies, or one object counted twice) and
+   no object type is known, so the additions are used as an independent **replication sample**, not pooled
+   blindly.
+2. **Every structural finding replicates on the M77-only texts** (`replicate_m77.md`): endings fixed per name
+   (4 of 385 names take both, shuffled median 26); fish-final names take 520 in 61% of lines, other names 5%;
+   740 and 520 never adjacent; **6 + fish** 8 of 24 numerals before a fish against 2.9% elsewhere (ratio 11.5,
+   p = 2 x 10^-7), 7 + fish never; the short and long strokes precede different signs (JSD 0.774 bits, 0 of
+   500 permutations); neither published key beats its shuffles (Yajnadevam 65.0% against 67.6%; Parpola 54.9%
+   against 45.3%, 37 of 100 as good). On the merged corpus: 6 + fish 17 of 81 (ratio 6.5, p = 7 x 10^-10).
+3. **Unsupervised segmentation** (Goldwater's Dirichlet-process unigram model, Gibbs-sampled, told nothing
+   of the structure). It cuts after the opening formula in 95% of cases (M77: 90%), and before the ending
+   740/520 in only 22% (M77: 30%) against 52% (50%) of other gaps: the ending binds to the name as a suffix,
+   not a word of its own. On sign-shuffled lines it cuts 83-100% of gaps everywhere. Mean word 1.66 signs
+   (53% one sign, 32% two). Recurrent words found without supervision include [861 2], [817 2], [820 2],
+   [740 400], [740 90], [32 220], [3 156], [33 700], [255 435 690] (Mahadevan's 'merchant of the city'),
+   [503 615 752 740] and the 29-copy tablet text.
+4. **Is the sign list over-split?** For the 223 signs with 5+ tokens: of the 248 pairs in the top 1% by shape
+   (rendered glyphs, Dice overlap), 20.6% are also in the top 5% by context (positive-PMI neighbour vectors),
+   four times the 5% expected if shape and context were independent. Merging every such pair shrinks 223 signs
+   to 180 (-19%), and many merged groups are paradigmatic sets (3 ~ 4, the pair ~ one stroke, the fish
+   series 220 240 235 233 231, 803 806 838 382), not variants. True variants (e.g. 405 ~ 407, 527 ~ 526,
+   226 ~ 234) are a minority: the working inventory stays in the hundreds, the logo-syllabic range.
+5. **The bench in the browser** (`docs/indus-bench.html`): paste a key, it scores B2 against 100 shuffles in
+   the three lexicons and the anchor texts, with the bundled Parpola, Mahadevan and Kak keys (Yajnadevam's is
+   not bundled: no licence stated). Checked against `bench.py`: the Parpola key gives the same real-key scores
+   (52.2 / 54.0 / 25.4%). `docs/_check_writeup.py` now treats atlas, keys, secret and indus-bench as tool
+   pages (TOOL_PAGES), not write-ups missing a PAGES entry.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

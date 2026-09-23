@@ -40,24 +40,27 @@ CENTRAL_ASIA = {'Gonur Depe', 'Altyn Depe', 'Shortughai'}
 OUTSIDE = WEST_ASIA | CENTRAL_ASIA | {'Unknown', ''}
 
 
-def load(split=True):
-    """Rows of data/corpus.tsv with 'seq' = reading-order list of lines (lists of ids)."""
+def load(split=True, with_m77=False, only_m77=False):
+    """Rows of data/corpus.tsv with 'seq' = reading-order list of lines (lists of ids).
+    with_m77 adds the M77-only texts of data/corpus_m77_added.tsv (merge_m77.py); only_m77 gives them alone."""
+    files = ([] if only_m77 else ['corpus.tsv']) + (['corpus_m77_added.tsv'] if with_m77 or only_m77 else [])
     rows = []
-    with open(os.path.join(HERE, 'data', 'corpus.tsv'), encoding='utf-8') as f:
-        for r in csv.DictReader(f, delimiter='\t'):
-            lines, cur = [], []
-            for g in r['signs_reading'].split():
-                if g in ('0', '999'):
-                    if cur:
-                        lines.append(cur)
-                    cur = []
-                    continue
-                cur.extend(SPLIT.get(g, [g]) if split else [g])
-            if cur:
-                lines.append(cur)
-            r['seq'] = lines
-            r['flat'] = [g for ln in lines for g in ln]
-            rows.append(r)
+    for fn in files:
+        with open(os.path.join(HERE, 'data', fn), encoding='utf-8') as f:
+            for r in csv.DictReader(f, delimiter='\t'):
+                lines, cur = [], []
+                for g in r['signs_reading'].split():
+                    if g in ('0', '999'):
+                        if cur:
+                            lines.append(cur)
+                        cur = []
+                        continue
+                    cur.extend(SPLIT.get(g, [g]) if split else [g])
+                if cur:
+                    lines.append(cur)
+                r['seq'] = lines
+                r['flat'] = [g for ln in lines for g in ln]
+                rows.append(r)
     return rows
 
 

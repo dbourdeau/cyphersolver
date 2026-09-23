@@ -412,7 +412,7 @@ def main(mw, dedr, sux, yaj=None):
     keys = []
     if yaj:
         keys.append(('yajnadevam',) + load_yajnadevam(yaj))
-    for p in sorted(glob.glob(os.path.join(HERE, 'keys', '*.tsv'))):
+    for p in sorted(p for p in glob.glob(os.path.join(HERE, 'keys', '*.tsv')) if not p.endswith('_raw.tsv')):
         keys.append((os.path.basename(p)[:-4],) + load_key(p))
     summary = []
     for name, meta, key, gloss in keys:
