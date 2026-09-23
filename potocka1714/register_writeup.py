@@ -45,7 +45,7 @@ f=R/'CATALOGUE.md';s=f.read_text(encoding='utf8');needle='## Read or resolved he
 if 'potocka1714' not in s:s=s.replace(needle,needle+'\n\nItem **280** narrowed to Mniszech R7524; nine Potocka letters removed to [potocka1714](https://dbourdeau.github.io/cyphersolver/potocka1714.html), alphabet recovered, readings with explicit gaps.\n',1)
 f.write_text(s,encoding='utf8')
 f=D/'index.html';s=f.read_text(encoding='utf8')
-if 'href="potocka1714.html"' not in s:s=s.replace('<ul class="findings">','<ul class="findings">\n<li><b>Potocka and Mniszech to Dunin, 1714–16 and undated</b> — <span class="fnd">A Polish postscript unlocks nine letters’ alphabet.</span> Four person codes and Mniszech’s separate cipher remain open. <a href="potocka1714.html">write-up</a></li>',1)
+if '<b>Potocka and Mniszech to Dunin, 1714–16 and undated</b>' not in s:s=s.replace('<ul class="findings">','<ul class="findings">\n<li><b>Potocka and Mniszech to Dunin, 1714–16 and undated</b> — <span class="fnd">A Polish postscript unlocks nine letters’ alphabet.</span> Four person codes and Mniszech’s separate cipher remain open. <a href="potocka1714.html">write-up</a></li>',1)
 f.write_text(s,encoding='utf8')
 # Queue public extracts. Clear prose not transcribed is represented by gaps.
 q=load(R/'decode_updates/queue.json');t=q['targets'][slug];t['key']={'file':'potocka1714/key-potocka.json','lang':'PL/FR','how':'Recovered here from R7526 by Polish monoalphabetic annealing and cross-letter inference.'};t['cite']=None;t['fields']={}
