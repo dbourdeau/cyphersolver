@@ -508,6 +508,70 @@ Scripts: `tamil_stars.py` (+ `rebus/tlex_star_min.tsv`), `seventh.py` (R1, T1, P
    this rules nothing in or out. CDLI's search could not be queried from the command line to look for
    more.
 
+## Eighth pass (23 Sept 2026): 12 + fish and 1 + fish, the tablets as a genre, a decipherment test bench
+
+Scripts: `tamil_stars.py` (extended), `tablets.py`, `bench.py` (+ `keys/`); results in `results/tamil_stars.md`,
+`tablets.md`, `bench.md`. (profile.json not updated, at the user's request.)
+
+1. **12 + fish and 1 + fish are artifacts.** Seven of the ten 12 + fish tokens are one seal impressed on seven
+   Lothal sealings (705 500 741 1 55 220 740 90). The single stroke before a fish is mostly the stroke of the
+   opener formula (820 1 240; 817 2 1 240) or part of Harappa tablet formulas made in many copies
+   (171 32 31 240 636 740 400; 692 1 240 636 740). Counting each distinct text once and leaving out the
+   opener-slot stroke: 12 + fish x1.3 (4 tokens), 1 + fish x1.3 (18), 4 x1.0, 3 x0.9, 7 x0.2 (1 token), 5 absent,
+   **6 + fish x4.8** (10 of 59 numerals before a fish against 3.5% elsewhere; binomial p = 4 x 10^-5). The one
+   numeral + fish unit beyond chance is 6 + fish, often text-initial and in the fixed unit 16 220 520 (H-98,
+   H-789, H-942; K-150 with the short 6). The Pleiades reading is the only star name the numerals support.
+2. **The Harappa tablets are a genre.** 96% of incised and 85% of moulded tablets are from Harappa. Texts
+   repeat: 1.86 and 1.66 objects a text (square seals 1.07); 21 tablet texts exist in 5+ copies (the commonest:
+   501 405 2 240 520 x29, all with the unicorn; 176 740 400 x27; 3 156 x22; 33 700 x14). Most copied texts keep
+   one picture (or a picture on some copies and none on others). Tablet vocabulary: the pot 700 (57 against 9
+   on square seals), 400 (247/53), 501, 436, 137, 158, 636; 711 and 318 never on seals; the seal-only signs
+   are 585, 595, 632, 70, 621, 742, 923. 18% of distinct tablet texts (less the ending) occur whole inside a
+   square-seal text, against a median 10% for the same texts shuffled (range 7-12%): tablets repeat the
+   names and titles of the seals. **Number + one sign as the whole text**: 9% of tablets (3 156 x22, long
+   3 + pot x14, long 4 + pot x7, long 2 + pot x7), 5% of square seals, 30% of inscribed pottery. **The pot
+   takes the long strokes**: 45 of the 51 numerals before 700 on tablets are long strokes, 6 short. With the
+   fifth pass (long and short strokes are two numeral systems, split like Proto-Elamite's capacity and
+   counting systems), 'long N + pot' reads as a capacity measure, and the tablets that carry nothing else as
+   tokens or tallies of a quantity; the others copy seal names with a tablet ending (740 400), as issued
+   tokens of a seal-holder would.
+3. **A test bench for decipherments (`bench.py`, `keys/`, `results/bench.md`).** Prior tooling
+   (joyboseroy/indus_decipher, leameiners/decipherement_protocol) tests whether the signs behave like
+   writing; neither scores a proposed sign key. The bench takes any key (sign -> value in the claimed language,
+   ICIT ids) and scores: B1 coverage; B2 reading against 200 shuffles of the key (values permuted among keyed
+   signs of similar frequency), on consonant skeletons parsed into Monier-Williams, DEDR and ePSD2 words, in
+   the claimed language and the other two; B3 the copper-tablet anchors (signs 341, 749, 753, 777/778 and
+   eight texts on the back of a picture); B4 numerals, the short/long strokes, endings and openers; B5
+   controls. Keys: Yajnadevam 2024 (681 signs, his xlits.csv), Parpola 1994 (30 signs, from Fig. 15.2 and the
+   ending proposals), Mahadevan 1998/2014 (5 signs: 740 -(a)nru, 520 -(a)mpu, the 'merchant of the city'
+   phrase 255 435 690 740 = mar-kol-pat-anru, his Fig. 2 = M-857), Kak 1988 (7 of his Table 4 Brahmi values
+   whose drawings match one ICIT sign without doubt). Other published keys are not usable without a sign
+   concordance: Fairservis 1992 (about 230 signs, his own codes, archive.org), Hunter 1934 (Brahmi comparison
+   table), the Soviet team (drawings); Rao 1982 and Jha and Rajaram 2000 are not online.
+   - **Controls.** A planted key reads 96.5-98.7% of a synthetic corpus of real words against 85.9-89.5%
+     for its shuffles (best shuffle 87-91%): the test can see a true key. But a key fitted to the real
+     corpus by hill-climbing (one consonant class a sign, 250 signs) reads 94.0% of it as Sanskrit, 93.1%
+     as Dravidian and 93.1% as Sumerian: any language can be read at a higher rate than any published key
+     reaches, so a reading rate alone is no evidence.
+   - **Yajnadevam:** Sanskrit 75.3% against shuffles 75.1% (87 of 200 as good); Dravidian 71.9% (32 of
+     200). Anchor signs: none read as their animal (341 = m, 749 = isan, 753 = r); anchor texts naming their
+     animal 4 of 8, shuffles 2.6 on average, 45 of 200 as many. Numerals: 12 of 22 stroke signs get a
+     one-letter value that starts the number word (the chance rate is about 1 in 8 a sign), none the word;
+     short and long strokes of a number get the same value; the three openers all read r.
+   - **Parpola 1994:** Dravidian 54.0% against 44.6% (59 of 200 shuffles as good), Sanskrit 52.2% against
+     43.7% (54 of 200): not above chance, and not language-specific. (A first run with coarser shuffle
+     bands of five signs showed 8 of 200; with bands of three it is chance, so the apparent edge came from
+     where the long morpheme values sit, not from the language.) 6 of 8 keyed numerals are read as the
+     number word, by construction; 777/778 koli matches DEDR kal 'Nilgiri ibex' by sound (a goat: the
+     tablets tie 777 to the goat), a single chance-level hit; anchor texts 2 of 8, shuffles 2.3.
+   - **Mahadevan, Kak:** too few signs for a reading test. **Key-independent test of Mahadevan's
+     gender reading of the endings:** a gender suffix belongs to the noun, so each name should take one
+     ending only. Whole names (the text before 740 or 520, with or without 400/90/151 after) seen with
+     both endings: 5 of 881, against a median 46 (33-57) with the endings shuffled among lines. The endings
+     are fixed per name, as gender or any lexical class would be; by last sign, only the fish signs 220 and
+     240 (and 400, 460) take both freely. This supports a noun-class reading of 740/520 (Mahadevan's
+     masculine/non-masculine, or any other lexical class), not his sound values.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

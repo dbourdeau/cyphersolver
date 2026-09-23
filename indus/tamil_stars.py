@@ -51,11 +51,23 @@ def main():
     say()
     say('Numeral + min star names attested (rebus/tlex_star_min.tsv): values %s.' % sorted(good))
     say()
-    for lab, skip in (('pairs left out', {'2', '32'}), ('pairs included', set())):
+    seen, distinct = set(), []
+    for r in rows:
+        k = tuple(tuple(ln) for ln in r['seq'])
+        if k not in seen:
+            seen.add(k)
+            distinct.append(r)
+    for lab, skip, rs in (('pairs left out', {'2', '32'}, rows), ('pairs included', set(), rows),
+                          ('pairs left out, distinct texts only (duplicate sealings and tablet copies counted once)',
+                           {'2', '32'}, distinct),
+                          ('distinct texts, and the single stroke left out where it stands in the opener formula '
+                           '(after 817/820/861, the pair or 60)', {'2', '32', 'opener'}, distinct)):
         tok = []
-        for r in rows:
+        for r in rs:
             for ln in r['seq']:
-                for a, b in zip(ln, ln[1:]):
+                for i, (a, b) in enumerate(zip(ln, ln[1:])):
+                    if 'opener' in skip and a in ('1', '31') and i and ln[i - 1] in ('817', '820', '861', '2', '32', '60'):
+                        continue
                     if a in NUMS and a not in skip and b not in NUMS:
                         tok.append((NUMS[a][0], b in FISH))
         fish = Counter(v for v, f in tok if f)
@@ -86,6 +98,19 @@ def main():
         say('- numeral + fish with no attested star name: %s (%d of %d tokens).' % (
             ', '.join('%d x%d' % kv for kv in sorted(miss.items())), sum(miss.values()), nf))
         say()
+    # the single stroke before a fish: numeral, or the opener formula's stroke?
+    ctx = Counter()
+    for r in distinct:
+        for ln in r['seq']:
+            for i in range(len(ln) - 1):
+                if ln[i] in ('1', '31') and ln[i + 1] in FISH:
+                    prev = ln[i - 1] if i else '^'
+                    ctx['after the opener formula (817/820/861 or the pair)' if prev in ('817', '820', '861', '2', '32', '60')
+                        else 'text-initial' if prev == '^' else 'after another sign'] += 1
+    say('## The single stroke before a fish (distinct texts)')
+    say()
+    say('- %s.' % '; '.join('%s: %d' % kv for kv in ctx.most_common()))
+    say()
     os.makedirs(os.path.join(HERE, 'results'), exist_ok=True)
     with open(os.path.join(HERE, 'results', 'tamil_stars.md'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(OUT) + '\n')
