@@ -749,6 +749,27 @@ Scripts: `typology.py`, `anchors_bench.py`; results in `results/typology.md`, `r
    0. None above chance; with short Dravidian and Sanskrit words, 4-7 of 10 texts contain some picture word by
    chance, so this form of the test is weak.
 
+## Thirteenth pass (23 Sept 2026): fitted keys on unseen texts
+
+Script: `fit_holdout.py`; result `results/fit_holdout.md`. The one validation the prize commentary asks for that a
+fitted key can be put through: fit a syllabic key to the ICIT-derived lines (2,088; 250 commonest signs, 47 values
+= consonant class x vowel class, bare vowels, bare consonants; 20,000 hill-climbing steps), then read the 975
+M77-only lines that do not repeat a training line, against 100 shuffles of the fitted key. Credit: consonants
+covered by words of 3+ consonants (with vowels credited, a random key already scored 95%: the vowel-aware parse
+saturates when every sign is a syllable).
+
+- Every language's fitted key keeps an edge on the unseen texts: Dravidian (DEDR) 91.6% against 90.3% (1 of 100
+  shuffles as good), Sanskrit 93.6 / 91.7 (0), Sumerian 85.0 / 81.5 (0), Munda 79.8 / 77.2 (2), Old Tamil
+  76.3 / 64.6 (0), Burushaski 78.8 / 69.7 (0).
+- A key fitted to sign-shuffled training lines does not (Dravidian 91.6 against 93.0, 99 of 100; Sanskrit 68 of
+  100): the fitted keys learn the script's real recurrent sign sequences, which any lexicon can partly map onto its
+  words, not the language. A planted synthetic Dravidian key generalises too (95.3 against 93.3, 0 of 100).
+- The margins do not rank the languages: they are largest for the smallest lexicons (Old Tamil +11.7 points,
+  Burushaski +9.1) and smallest for the densest (DEDR +1.3, Monier-Williams +1.9), i.e. they measure lexicon density.
+  **Hold-out generalisation of a fitted key does not identify the language.** A key fitted by statistics alone
+  cannot be the decipherment the prize asks for; the language evidence in this folder remains the two grammar tests
+  (eleventh and twelfth passes), which point to Dravidian conditionally.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
