@@ -83,6 +83,18 @@ and pp. 75-76 give the geometry of the three burning glasses (M. O. Q. inches, l
 
 Measured (`python decode.py`): 1,545 cipher signs in 31 passages, 345 words, 2 signs unread.
 
+## The recipes in English (22 Sept 2026)
+
+The clear German around every cipher passage was transcribed and translated, recipe by recipe, in
+`clear/pp24-49.md` and `clear/pp50-77.md` (German, then English, page by page; cipher words in ‹ › and bold).
+It covers pp. 24-32, 43-48, 50-56, 59-63, 69-71 and 73-77. Pages with no cipher and no step of these recipes
+were skipped (33-42, 49, 57-58, 64-68, 72). Thirteen recipes are on the site page, section 04: spirit of
+mercury; the glass stone (silver, gold, medicine); ores in four operations; aurum potabile; feather alum; oil
+of talc; Attractio Astri Mundi and the seed water; the vitrified stone; flowers per descensum; the flower
+"cure"; concentration of wine; the seven-metal electrum and mirror; the rules for setting the machine. The clear
+text also shows a slip in the cipher: p. 60 enciphers "lutire das Glas No. S.", but the luted glass is P
+(p. 24 legend, and "No. P." in clear on p. 61). Several Kurrent words in the clear text are marked (?).
+
 ## Remaining gaps
 
 - p. 24, No. M.: "ist ein gläserner {?}", one sign, probably a pictographic or alchemical vessel sign, not in the
