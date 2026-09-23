@@ -1,0 +1,454 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057757_d0e299">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057757">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4707
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057757_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757">Français 4707 • Anc. 9529 • Recueil de minutes et de copies de pièces concernant l'histoire de l'année 1586.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e120">Fol. 1 • 1 Lettre du roi HENRI III au duc de Nevers, Louis de Gonzague. « Paris, 10 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e128">Fol. 1 • 2 Lettre de CATHERINE DE MEDICIS audit duc de Nevers. « Paris, 12 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e136">Fol. 1 • 3 Lettre de CATHERINE DE MEDICIS à la duchesse de Nevers. Même date. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e144">Fol. 1 • 4 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à la reine Catherine de Médicis. « De La Cassine, ce 17 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e152">Fol. 1 et 2 • 5-6 Lettres de CATHERINE DE MEDICIS audit duc de Nevers. « Paris, 19 juillet 1586 ». Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e160">Fol. 2 • 7 Lettre du duc DE NEVERS, LOUIS DE GONZAGUE, à la reine Catherine de Médicis. « De La Cassine, ce 22 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e168">Fol. 2 • 8 Lettre de CATHERINE de MEDICIS à la duchesse de Nevers. « Paris, 19 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e176">Fol. 3 • 9 Lettre de HENRIETTE DE CLEVES, duchesse DE NEVERS, à la reine Catherine de Médicis. « De La Cassine, ce 22 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e184">Fol. 3 • 10 Lettre de CATHERINE DE MEDICIS à Louis de Gonzague, duc de Nevers. 25 juillet 1586. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e192">Fol. 3 • 11 Lettre du roi HENRI III audit duc de Nevers. « Escrit à Ollinville, le 25 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e200">Fol. 3 et 4 • 12-13 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, au roi Henri III et à la reine Catherine de Médicis. « De Roncheres, ce 29 juillet 1586 ». Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e208">Fol. 4 • 14 Lettre de la reine CATHERINE DE MEDICIS audit duc de Nevers. « De Blois, 4 aoust 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e216">Fol. 4 et 5 • 15-16 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à la reine Catherine de Médicis, et fin d'une lettre, en forme de mémoire justificatif, adressée à Henriette de Clèves, épouse dudit duc. 1586. Copie et minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e229">Fol. 7 • 17 Déchiffrement d'une partie chiffrée d'une dépêche de l' « abbé d'Orbais », JEAN DE PILES, au duc de « G[uise]. 1er jenvier 1586 ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e245">18-20 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e251">Fol. 9 • 18 « à Mr le c[ardinal] de B[ourbon]. Cassine, 5 janvier 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e268">Fol. 10 • 19 à Henri de Lorraine, duc « de G[uise]. Cassine, 8 janvier 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e285">Fol. 10 • 20 à Louis de Lorraine, « c[ardinal] de Guise ». Même date. Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e299">Fol. 11 • 21 Copie d'une partie de lettre au duc de « G[uise], r[eçue] 9 de l'an 1586 » par le duc Nevers ? Parties chiffrées accompagnées du déchiffrement. La lettre est souscrite de deux C entrelacés.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e307">22 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, sans adresse.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e324">Fol. 13 et 14 • 23-25 « Coppie d'une lectre de la reyne [CATHERINE DE MEDICIS] à Mr de Guyse, avec la response » dudit duc DE GUISE « à icelle, et coppie de celle escrite par Monseigneur [le duc DE NEVERS] aud. Sr de G[uise]... 22 janvier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e338">Fol. 15 • 26 Lettre dudit duc DE NEVERS « à Mr le c[ardinal de G[uise]... Cassine, 25 janvier 1586 ». Copie. Chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e349">Fol. 16 et 17 • 27-28 « Copie de deux lectres que le roy HENRY [III] a escrittes à Mr de Guise ». Paris, 5 et 7 février 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e360">Fol. 18 et suiv • 29-33 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, à divers, parmi lesquels sont nommés les duc et cardinal de Guise, le Sr « de Chamloiseau,... La Cassine, 15 fevrier... 1 mars... 15 mars... 1 avril 1586 ». Minutes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e371">Fol. 25 • 34 « Memoire à Mr de Chamloiseau de ce qu'il aura à respondre à Monseigneur et Mme les duc et duchesse de Guise, de la part de Monseigneur et Mme les duc et duchesse DE NEVERS », sur deux mariages projetés entre leurs enfants. « La Cassine, 9 avril 1586 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e388">Fol. 27 • 35 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, au duc de Guise, concernant lesdits deux mariages projetés. « De La Cassine, ce 9 avril 1586 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e396">Fol. 28 • 36 Lettre de HENRIETTE DE CLEVES, duchesse DE NEVERS, à la duchesse de Guise, sur le même sujet. La Cassine, 9 avril 1586. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e404">Fol. 29 • 37 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à « Mr de Mayneville », sur le même sujet. « La Cassine, 9 avril 1586 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e415">Fol. 30 • 38 Lettre de HENRIETTE DE CLEVES, duchesse DE NEVERS, à la duchesse de Guise, sur le même sujet. La Cassine, 10 avril 1586. Minute.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e423">39-42 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e429">Fol. 31 • 39 à « Mrde Cavriane, medecin de la reyne mere du roy... De La Cassine Le Duc, ce 21 avril 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e442">Fol. 33 et 34 • 40-41 « à Mr le c[ardinal] de G[uise]... Cassine, 1 may 1586 », et �� Rethel, 20 may 1586 ». Copies.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e459">Fol. 35 • 42 « à Mrde Montpensier,... De La Cassine, ce 25 may 1586 ». Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e472">Fol. 36 • 43 Lettre d' « ERNEST » DE BAVIERE, archevêque électeur de Cologne, « à Mr le duc de Guize,... De Bonne, le 30 may 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e488">Fol. 37 • 44 Lettre du roi HENRI III audit duc de Nevers. « A S. Maur des Fossez, le 11 jung 1586 ». Copie, accompagnée en marge des réflexions dudit duc.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e496">Fol. 38 • 45 Lettre de « FRANÇOIS DE BOURBON », duc DE MONTPENSIER, audit duc de Nevers. Mézières, 18 juin 1586. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e504">Fol. 39 • 46 Lettre de « FRANÇOIS DE BOURBON », duc DE MONTPENSIER, au Sr « de Champloiseau,... Mezieres, 18 jung 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e515">Fol. 40 • 47 « Memoire du voiage de Mr de Montigny » à Châlons-sur-Marne auprès du duc de Guise, et à La Cassine auprès du duc de Nevers, pour l'accommodement du différend Randan-Lavardin. « 22 juin 1586 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e529">Fol. 42 • 48 « Advis donné au roy par les princes, officiers de la couronne et aultres seigneurs de son conseil cy apres declarez, assavoir Mrs les ducs de Mercueur, de Guise, de Mayne et d'Aumalle, mareschaux de Retz, de Biron et d'Aumont, Mrs de Chavigny, de La Vauguyon, de Suze, de Rambouillet et de La Mote Fenelon, ausquelz S. M. avoit commandé s'assembler pour accorder le differend d'entre Mrs de Randan et de Lawerdin,... 4 may 1584 ». Une note de la main du duc de Nevers nous apprend que c'est cet avis que lui « aporta Mr de Montigny, le 22 juin 1586 ». Copie.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e555">49-52 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e561">Fol. 43 • 49 à la reine Catherine de Médicis. « De La Cassine, ce 23 juign 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e572">Fol. 44 • 50 au roi Henri III. « De La Cassine, ce 23 juign 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e583">Fol. 45 • 51 à « Mrde Villeroy,... De La Cassine, ce 23 jung 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e596">Fol. 45 • 52 à « Mrde Bellyevre ». Même date. Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e609">Fol. 46 • 53 Lettre de HENRIETTE DE CLEVES, duchesse DE NEVERS, à la reine Catherine de Médicis. La Cassine, 24 juin 1586. Minute.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e617">54-57 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e623">Fol. 47 • 54 à une personne qui n'est point nommée. 26 juin 1586. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e634">Fol. 48 • 55 à la reine Catherine de Médicis. « De La Cassine, ce 17 juillet 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e645">Fol. 49 • 56 à « Mrde Villeroy,... De La Cassine, ce 17 juillet 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e658">Fol. 49 • 57 à « Mrde Bellievre ». Même date. Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e671">Fol. 50 • 58 « Extraict de la lectre de Mr DE CHAMPLOISEAU », où sont notés les points principaux débattus entre lui et le Sr « Dalleret », en vue d'un mariage entre une fille du duc de Nevers, Catherine de Gonzague (?), et François de Bourbon, duc de Montpensier. « Du 21 julliet 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e685">Fol. 52 • 59 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à « Mr Marchant, [son] tresorier. [La Cassine], 22 juillet 1586 ». Copie. Quelques mots sont écrits en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e696">Fol. 54 • 60 Lettre de HENRIETTE DE CLEVES, duchesse DE NEVERS, à la reine Catherine de Médicis. La Cassine, 22 juillet 1586. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e704">Fol. 55 • 61 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à la reine Catherine de Médicis. « De La Cassine, ce 22 juillet 1586 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e712">Fol. 56 • 62 Lettre du roi HENRI III audit duc de Nevers. « Escrit à Chantelou, le 24 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e720">63-71 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e726">Fol. 57 • 63 au roi Henri III. « De Roncheres, ce 29 juillet 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e737">Fol. 58 • 64 à « Mrde Cavriane,... De Roncheres, ce 29 juillet 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e750">Fol. 59 • 65 à la reine Catherine de Médicis. « De Roncheres, ce 29 juillet 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e761">Fol. 60 • 66 au cardinal de Bourbon-Vendôme. « De Coullomiers, ce 2 aoust 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e772">Fol. 61 • 67 au roi Henri III. « De La Guierche, ce 18 aoust 1586 ». Copie. A la suite est le libellé d'un placet en faveur du comte de Grandpré, gouverneur de Mézières.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e783">Fol. 62 • 68 à « Mrde S. Martin,... De Montrichart, ce 25 aoust 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e796">Fol. 63 • 69 à « Mrde Bellievre,... De Chenonceau, ce 29 aoust 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e809">Fol. 64 et 65 • 70-71 au roi Henri III. Amiens et Chenonceau. Septembre 1588 et 1586. Minutes. La lettre cotée 70 paraît incomplète au commencement.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e820">Fol. 66 • 72 Lettre de la reine CATHERINE DE MEDICIS au roi Henri III. « De Chenonceau, ce 13 septembre 1586 ». Copie.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e828">73-91 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e834">Fol. 67 • 73 à « Mrde Bellievre,... De Chenonceau, ce 14 septembre 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e847">Fol. 67 • 74 à « Mrde Villeroy,... De Chenonceau, ce 14 septembre 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e860">Fol. 69 • 75 à « Mrde Randan,... De Chenonceau, ce 14 septembre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e873">Fol. 70 • 76 à « Mr le cardinal de Pelvé,... De Chenonceau, ce 20 septembre 1586 ». Minute. Chiffre.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e887">Fol. 71 • 77 à « Mr [l']abé d'Orbais [J. de Piles]... De Chenonceau, ce 19 septembre 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e901">Fol. 72 • 78 à « Mrde Bellievre,... De Chenonceau, ce 28 septembre 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e914">Fol. 73 • 79 à « Mrde Villeroy ». Chenonceau, 28 septembre 1586. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e927">Fol. 74 • 80 au Srde « Monthelon,... Chenonceau, 6 octobre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e943">Fol. 76 • 81 « au roy » Henri III. Même date. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e954">Fol. 77 • 82 à « Mrde Bellievre ». Même date. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e967">Fol. 78 • 83 à « Mrde Villeroy ». Chenonceau, 5 octobre 1586. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e980">Fol. 79 • 84 « à Mrde Bellievre,... De Chenonceau, ce 10 octobre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e993">Fol. 80 • 85 « à Mr le chancellier » Philippe Hurault de Cheverny. Même date. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1007">Fol. 80 • 86 « à Mrde Videville,... De Chenonceau, ce 11 octobre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1020">Fol. 81 et 83 • 87-88 « à Mrde Villeroy ». Chenonceau, 12 et 21 octobre 1586. Minutes.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1033">Fol. 84 • 89 « à Mrde Bellievre,... De Chenonceau, ce 21 octobre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1046">Fol. 85 • 90 « au roy [Henri III]... Chenonceau, 25 octobre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1057">Fol. 86 • 91 « à Mrde Villeroy ». Même date. Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1070">Fol. 87 • 92 « Copie de la lectre escritte par [CHARLES DE LORRAINE, duc] DU MAINE, au roy [Henri III], sur le faict de la fille de Caumont,... Novembre 1586 ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1083">93-94 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1089">Fol. 89 • 93 à « Mrde Villeroy,... Chinon, 5 novembre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1102">Fol. 90 • 94 au duc de Mayenne. « De Lestilly, ce 9 novembre 1586 ». Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1113">Fol. 91 • 95 « Sur les questions proposées, sçavoir : Si Mr de Nevers et Mme sa femme se pourroient faire donnation mutuelle au survivant de tous leurs [biens] pour en joïr par usufruict, et, pour la conservation de leur maison, s'ilz pourroient donner tous leurs biens à [leur fils], à la charge de donner à chacune des filles 150,000 escuz pour leur legitime, le conseil est d'avis... Deliberé à Paris, le 15 novembre 1586. Signé : CANAYE ». Copie, accompagnée de notes de la main du duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1127">96 Lettre.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1148">97-103 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1154">Fol. 94 et 95 • 97-98 à « Mrde Villeroy,... Chaumoussy » et « Cognac », 5 et 15 décembre 1586. Copies.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1167">Fol. 97 • 99 au roi Henri III. « De Coignac, ce 15 decembre 1586 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1178">Fol. 100 et 101 • 100-101 à « Mrde Villeroy ». Cognac, 19 et 25 décembre 1586. Copies.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1191">Fol. 102 • 102 à « Mmede Randan,... De Coignac, ce 27 decembre 1586 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1204">Fol. 103 • 103 à « Mrde Villeroy,... De Coignac, ce dernier jour de l'an 1586 ». Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057757_d0e1220">104 « Memoires des abus que fait G. à Donchery. 1586 ». Copie Fol. 105.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Fol. 11<br/>Ce niveau ne correspond pas à une unité matérielle communicable. Veuillez sélectionner une cote dans un niveau supérieur.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					<ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057757');">Français 4707 (cote) • Recueil de minutes et de copies de pièces concernant l'histoire de l'année 1586.</a></li></ul>
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">division : Fol. 11</div>
+<div class="did-label">
+<div class="did-unittitle">21 Copie d'une partie de lettre au duc de « G[uise], r[eçue] 9 de l'an 1586 » par le duc Nevers ? Parties chiffrées accompagnées du déchiffrement. La lettre est souscrite de deux C entrelacés.</div>
+</div>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

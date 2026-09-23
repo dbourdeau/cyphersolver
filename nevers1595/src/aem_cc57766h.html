@@ -1,0 +1,512 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057766">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057766">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4716
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057766_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766">Français 4716 • Anc. 9538 • Recueil de pièces originales et de copies concernant l'histoire de France, durant l'année 1589.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e302">Fol. 1 et suiv • 1-4 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, au roi Henri III. Nevers, La Charité, Vierzon, Nevers, 31 et 16 juillet, 22 mars et 4 juillet 1589. Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e310">Fol. 6 • 5 Lettre des prévôt des marchands et échevins de Paris aux échevins de Châteaudun. Paris, 19 janvier 1589. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e318">Fol. 7 • 6 Lettre, avec chiffre et déchiffrement, signée : « ARLOT ». 21 octobre 1589. Au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e326">Fol. 8 • 7 Lettre, avec chiffre et déchiffrement, au duc de Nevers. On y lit : « Les compagnies de gens de pied qui estoyent aveq Mr de Tavannes à Flavigny en Bourgongne, ont esté rencontrées par Farvacques et le baron de Viteaux, qui les ont deffaictes, apres aspre combat. Led. Sr de Tavannes s'est retiré aud. Flavigny... Ce 18 mars » 1589.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e343">8-14 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e349">Fol. 9 et 10 • 8-10 au roi Henri III. Machecoul et La Garnache, 16 et 15 janvier 1589. Copies.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e360">Fol. 11 • 11 « à Mmede Guise. 31 août 1589 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e373">Fol. 12 et suiv • 12-14 au roi Henri III. Nevers, Decize, Nevers, 4 avril, 6 juin, 9 avril 1589. Copies.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e384">Fol. 15 • 15 Lettre de « E. LE ROY, abbé de S. Martin de Nevers », au roi Henri III. 3 juillet 1589. Copie.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e392">16-18 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e398">Fol. 17 • 16 au roi Henri III. « La Grenache », 7 janvier 1589. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e409">Fol. 18 • 17 « à Mrde Retz,... La Grenache », 7 janvier 1589. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e422">Fol. 19 • 18 au roi Henri III. « La Grenache », 6 janvier 1589. Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e433">Fol. 21 • 19 « Lectre escritte » au duc de Savoie par un partisan de la Ligue et du roi d'Espagne. 24 septembre 1589. Copie.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e441">Fol. 23 • 20-23 Lettre du duc de Nevers au « cardinal de Bourbon. La Grenache, 7 janvier 1589 ». Copie.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e452">Fol. 23 • 21-22 « au roy [Henri III]. La Grenache, 7 janvier 1589 ». Copies.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e463">Fol. 23 • 23 au duc de Mercoeur. « La Grenache, 7 janvier 1589 ». Copie.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e474">Fol. 25 et 26 • 24 « Extraict de lectres escriptes par plusieurs personnes, à Rome, par l'ordinaire party le 9 juillet 1589 ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e482">Fol. 25 • « Extraict de lectre de Mr [l'abbé] d'Orbes [JEAN DE PILES]. Du 8e juillet. A Mr Haton ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e497">Fol. 26 • « AUROUX. A Mr Quoquelay. Du 8 juillet ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e560">Fol. 28 • 25 « Ce qui a esté proposé par les sieurs de Jacob, conseiller d'Estat et grand maistre de l'artillerie du duc de Savoye, et Davise, conseiller d'Estat et l'ung des senateurs de Chambery, depputtés par S. A. à Mrs de la cour de parlement de... Daulphiné... et à Mr le collonnel Alfonse ». Août 1589. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e583">Fol. 30 • 26 Lettre adressée au duc de Nevers, « de Mauleon, [le] 24 janvier 1589 », par JEAN DE BEAUMANOIR, Sr DE « LAVARDYN ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e594">Fol. 31 • 27 Lettre du « comte DE ... CHAULNES » au duc de Nevers. « De l'armée pres Estampes, ce 18 juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e602">Fol. 32 • 28 Déclaration faite « à la requisition... du Sr Tanvenay, gentilhomme du roy de Navarre », par ARNAUD SORBIN, évêque de Nevers, concernant le ferme propos que ledit évêque a de rester fidèle au roi Henri III. Nevers, 26 juin 1589. Copie collationnée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e613">Fol. 34 • 29 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, au cardinal de Bourbon Condé, dit « le cardinal de Vendos[m]e ». Nevers, 23 décembre 1589. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e621">Fol. 35 • 30 Déchiffrement d'une lettre. On y lit : « ... marquis de Maignelay a surpris la ville de La Fere, en Picardie, et S. Quantin en bransle... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e629">Fol. 35 • 31 Autre déchiffrement, qui peut se rattacher à l'article précédent, concernant les menées de la Ligue pour compromettre Louis de Gonzague, duc de Nevers. 1er novembre 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e643">Fol. 36 • 32 Lettre du Sr DE « RAGNY » au duc de Nevers. Ragny, 8 octobre 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e659">Fol. 38 • 33 Lettre du « chevalier DE DIO,... à Mr de Villeroy,... De Chambery, le 19 aoust 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e670">Fol. 40 • 34 Lettre du Sr de « DUNES » au duc de Nevers. 21 septembre 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e681">Fol. 42 • 35 Déchiffrement d'une lettre, en italien, adressée au duc de Nevers par un de ses agents à Mantoue. Mantoue, 30 mai 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e689">Fol. 44 • 36 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à son neveu, le duc de Mantoue. Nevers, 4 octobre 1589. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e697">Fol. 46 • 37 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, au pape. Clamecy, 19 septembre 1589. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e705">Fol. 47 • 38 Lettre de « CLAUSSE DE PONTZ » au duc de Nevers. « De Chaallons, ce 13 decembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e718">Fol. 49 • 39 Lettre d'ARNAUD SORBIN, évêque de Nevers, au duc de Nevers. Nevers, 28 mai 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e726">Fol. 51 • 40 Lettre du Sr DE « RAGNY » au duc de Nevers. Ragny, 15 avril 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e737">Fol. 53 et 54 • 41-42 Certificats de service militaire délivrés par CHARLES TOURPIN, comte DE CRISSE, pour Georges Du Moulin, seigneur de La Souche, René Charces, écuyer, Sr de Vau, « paroisse de Martigni Briand », et « Jacques Le Couturier, Sr Des Ernaux, paroisse de Jarzé ». 14 et 21 janvier 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e751">Fol. 55 et 57 • 43-44 Lettres du Sr « MYRON » au duc de Nevers. Tours, 26 mai, et camp de Jargeau, 24 juin 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e762">Fol. 59 • 45 « Memoire envoié de Bourges au capitaine Païsan, pour rendre le chasteau des Ayx ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e770">Fol. 59 • 46 « Capitulation faitte avec le capitaine Paysan, touchant les Ayx Dangillon, le 12 jullet 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e778">Fol. 60 • 47 « Copie de la trefve faitte avec Vezelay, le 27 settembre 1589 », entre le Sr de Rochefort-Pleuvaut, gouverneur de Vézelay, d'une part, et le Sr de Chanlemys, lieutenant du duc de Nevers, d'autre part.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e792">Fol. 61 • 48 Lettre adressée au duc de Nevers, signée : « Vostre tres humble et tres obeissente servente JARNAC,... Bourges, 24 juillet » 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e800">Fol. 63 • 49 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Maizieres, le 15 mars 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e808">Fol. 64 • 50 « Coppie du marché fait le... 29 mars... 1589, à Tours, avec Mre Pierre Saget, commissaire des salpetres et canonier ordinaire, pour le fornissement du magazin à pouldre de Chaalons ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e822">Fol. 68 • 51 « Estat abregé des deniers imposez en la generalité de Languedoy, establye à Bourges, en l'année 1589... Faict et veriffié par nous FRANÇOIS LE MARESCHAL, Sr DE CORBET, conseiller du roy et tresorier general de France, estably à Bourges, le 5... janvier 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e836">Fol. 80 • 52 « Estat du payement, solde et entretenement des gens de guerre destinez pour la garde et conservation du païs de Nivernoys... Clamecy, 12 may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e844">Fol. 82 • 53 Questionnaire « pour bailler aux espions » qui devaient être envoyés par le roi Henri III aux villes de l'Union. Ce questionnaire, dressé par le duc de Nevers, fut « doné au[dit] roy » par ledit duc, après la sortie d'Amboise des prisonniers confiés au Sr Le Guast. 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e855">Fol. 84 • 54 Lettre du Sr « DE LA ROCHE » au duc de Nevers. « De Riom, ce 23 juin 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e866">Fol. 86 • 55 Lettre du Sr DE « SAGONNE » au duc de Nevers. Au dos on lit, de la main du duc de Nevers : « R. 9 de l'an 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e877">Fol. 87 • 56 Lettre adressée au duc de Nevers, signée : « Vostre tres humble servante CHAULNES ». Au dos on lit : « Mme DE COUCY ». 25 juin 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e888">Fol. 88 • 57 « Estat des munitions qui ont esté trouvées aux bateries, ce matin 5 janvier 1589... Faict au camp devant La Garnache, ce jeudy 5 janvier 1589. FEUGIERE ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e896">Fol. 89 • 58 Lettre de « DIETERICH DE SCTRONTZER » au duc de Nevers. « De Mauvilli, ce 9 aoust 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e904">Fol. 90 • 59 Lettre du roi HENRI III à « Mr de Schonberg,... Au camp de Poissy, le 30 juillet 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e915">Fol. 91 • 60 Lettre de SIMON DE SAULX, baron DE TORPES, au duc de Nevers. « A Pluviers, ce 9 aoust 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e923">Fol. 92 • 61 Memoire « sur la poisanteur des bouletz à canon... Desize, juin 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e931">Fol. 94 • 62 Lettre adressée au duc de Nevers, signée : « CHEVRIERES ». Lyon, 10 octobre 1589 ?.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e939">Fol. 96 • 63 Lettre, avec chiffre, de JEROME DE MONTHOLON, conseiller au conseil d'État et au parlement. Tours, 26 mai 1589.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e947">64-70 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e953">Fol. 97 • 64 au Sr « de Gevre,... De Nevers, ce 4 avril 1589 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e967">Fol. 98 • 65 « à Mr le cardinal de Vendosme,... De Clamecy, ce 17 aoust 1589 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e981">Fol. 99 • 66 au « cardinal de Bourbon,... Clamecy, 30 aoust 1589 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e992">Fol. 99 • 67 au « cardinal de Vendosme,... Clamecy, 30 aoust 1589 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1003">Fol. 99 • 68 au comte « de Soissons,... Clamecy, 30 aoust 1589 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1014">Fol. 99 • 69 au Sr « de Crillon,... Clamecy, 30 aoust 1589 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1028">Fol. 99 • 70 au Sr « de Montigny,... Clamecy, 30 aoust 1589 ». Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1042">Fol. 100 • 71 Lettre de « LOÏS DE CRILON » au duc de Nevers. « De Tours, ce 24 d'aoust... 1589 ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1050">72-77 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1056">Fol. 102 • 72 « à la royne » douairière, Louise de Lorraine. Nevers, 28 novembre 1589. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1067">Fol. 103 • 73 à « Mrde Liancourt,... La Cherité... ce 10 juillet 1589 ». Copie. Même date.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1080">Fol. 103 • 74 à « Mrde Clermont,... De La Cherité, ce 10 juillet 1589 ». Copie. Même date.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1093">Fol. 103 • 75 à « Mrde Chemerault ». Même date. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1106">Fol. 103 • 76 à « Mrde Dune ». Même date. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1119">Fol. 103 • 77 au « comte de Grandpré,... La Cherité... 10 juillet 1589 ». Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1130">Fol. 104 • 78 Lettre du Sr « REGNAULT » au duc de Nevers. « Du Sauvage, ce 19 juing 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1141">Fol. 105 • 79 Lettre du Sr « DE SANCY » au duc de Nevers. « De Cintré, pres Langres, ce 18 jung 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1152">Fol. 106 • 80 Lettre de « CHARLES ROUAULT » au duc de Nevers. « A Machecou, ce 12 janvyer 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1160">Fol. 108 • 81 Lettre du Sr « CHALMAND » au Sr Pasquier, secretaire des finances ? Rome, 23 septembre 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1174">Fol. 109 • 82 Lettre « pour les affaires de Monseigneur le cardinal de Bourbon, legat, à Mr Serre, tresorier general de Monseigneur en ses legation et conte Venise, en Avignon », écrite par « GALLIFFET », à « Paris, le 2 octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1185">Fol. 110 • 83-84 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, « à Mr de Chemerault et aux maire et eschevins de Poitiers. La Grenaiche, 7 janvier 1589 ». Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1196">Fol. 113 • 85 Lettre relative aux mariages projetés entre les ducs de Guise et de Nevers, pour leurs enfants. Cette lettre est actuellement sans souscription ni adresse. Chiffre. 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1204">Fol. 114 • 86 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Maizieres, ce 1 avril 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1212">Fol. 116 • 87 Lettre datée de Sancerre, 25 juin 1589, concernant « la delivrance du secretaire de Mr l'evesque de Nevers » entre les mains de Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1226">Fol. 118 • 88 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à « Mr de Villeroy,... De Desize, ce 15 avril 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1237">Fol. 119 • 89 Lettre du Sr D'ARQUYEN au duc de Nevers. 7 avril 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1248">Fol. 121 • 90 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Si, le 30 avril 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1256">Fol. 123 • 91 Lettre du Sr DE « VIDEVILLE » au duc de Nevers. 12 mars 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1267">Fol. 125 • 92 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Maiziers, le 11 apvril 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1275">Fol. 126 • 93 Lettre du Sr DE « CHEVIGNY » au duc de Nevers. St-Amand, mai 1589. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1289">Fol. 127 • 94 Lettre du Sr « MYRON » au duc de Nevers. Mantes, 16 janvier 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1300">Fol. 129 • 95 Lettre du Sr « P. VIGIER » au duc de Nevers. Blois, 10 janvier 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1311">Fol. 131 • 96 « Memoire » du duc DE NEVERS au Sr « de Launay,... Clamecy, 11 may 1589 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1322">Fol. 133 • 97 Lettre de « FRANÇOYS DE RUYMAN » au duc de Nevers. « De Lyon, ce 18 novembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1330">Fol. 135 • 98 « Noms des regimans et compagnies suisses quy sont alés trover le feu roy, en jullet 1589, conduitz par Mr de Longueville. Baillé par le collonel GALATY, le 27 [janvier] 1590, à La Cherité ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1341">Fol. 137 • 99 Lettre adressée au duc de Nevers, le 2 avril 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1349">Fol. 138 • 100 Lettre de « GUILLAUME GELLA ». Paris, 15 octobre 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1357">Fol. 139 • 101 « Memoire pour respondre à la lectre que le Sr Sardiny escript à Monseigneur de Nevers, le 27 novembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057766_d0e1368">Fol. 141 • 102 « Estat des sommes de deniers qui doivent estre payées à Laurent Arigger, du canton de Solleurre, colonnel d'un regiment de treize enseignes de Suisses, pour son estat de colonnel et pour les officiers dud. regiment, pour un mois, commenceant le 16 apvril 1589, qui est le jour du partement de leurs maisons, et finissant le 16 may ». Copie.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4716 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57766h&Cote=Français 4716&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4716 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9538</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire de France, durant l'année 1589.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Arnoul. • Lettre (1589).</p>
+<p>Arquien, D'. • Lettres.</p>
+<p>Auroux. • Lettre.</p>
+<p>Balzac, Charles de, sieur de Dunes. • Lettres.</p>
+<p>Beaumanoir De Lavardin, Jean de, maréchal de France. • Lettres.</p>
+<p>Bourges. • Généralité, impositions (1590).</p>
+<p>Chabot, Charles de, sieur de Jarnac. • Lettres.</p>
+<p>Chalmand. • Lettres.</p>
+<p>Châlons-sur-Marne. • Notes et pièces diverses.</p>
+<p>Chaulnes, Louis d'Ongnies, comte de. • Lettres.</p>
+<p>Chevigny, De. • Lettre.</p>
+<p>Davise, du Sénat de Chambéry. • Mission (1589).</p>
+<p>Dio, Chevalier de. • Lettre (1589).</p>
+<p>France. • Pitorre (1589).</p>
+<p>Gella, Guillaume. • Lettres.</p>
+<p>Gonzague, Famille de.</p>
+<p>Guerre. • Pièces (1589).</p>
+<p>Harlay de Sancy, Nicolas de. • Lettres.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Jacob, de, grand-maître de l'artillerie. • Mission (1589).</p>
+<p>La Grange, Antoine de, sieur d'Arquien et de Montigny. • Actes et lettres.</p>
+<p>La Madeleine, François de, marquis de Ragny. • Lettres.</p>
+<p>La Roche, De. • Lettres.</p>
+<p>La Vieuville, Robert, marquis de. • Lettres.</p>
+<p>Languedoc. • Impôts.</p>
+<p>Le Roy, É., abbé de Saint-Martin de Nevers. • Lettre.</p>
+<p>Ligue, La. • Notes et pièces diverses.</p>
+<p>Marillac, Michel de, garde des sceaux. • Lettres.</p>
+<p>Miette. • Lettre.</p>
+<p>Miron, Robert, prévôt des marchands. • Lettres et actes.</p>
+<p>Montholon, Jérôme de. • Lettres.</p>
+<p>Mylon, Benoît, sr de Videville. • Lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Pièces diverses.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Ornano, Alphonse d', maréchal de France. • Actes et lettres.</p>
+<p>Paris. Administration et institutions. • Échevins, actes et lettres.</p>
+<p>Piles, Jean de, abbé d'Orbais. • Lettres.</p>
+<p>Regnault, Étienne, trésorier de l'Extraordinaire des guerres. • Lettres.</p>
+<p>Rochechouart, Marie-Claude de, baronne de Jarsac. • Lettres.</p>
+<p>Rouault, Charles. • Lettre.</p>
+<p>Ruiman, François de. • Lettre (1589).</p>
+<p>Sagonne, Georges, comte de. • Lettres.</p>
+<p>Saint-Chamond, Melchior Mitte de Chevrières, marquis de. • Lettres.</p>
+<p>Saulx, Simon de, baron de Torpes. • Lettre.</p>
+<p>Sorbin de Sainte-Foi, Arnaud, évêque de Nevers. • Déclaration.</p>
+<p>Sorbin de Sainte-Foi, Arnaud, évêque de Nevers. • Lettres.</p>
+<p>Suisse. • Troupes, levées, montres, états de paiement, règlements, etc.</p>
+<p>Vézelay. • Pièces diverses.</p>
+<p>Vigier, P. • Lettre (1589).</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e302');">1-4 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, au roi Henri III. Nevers, La Charité, Vierzon, Nevers, 31 et 16 juillet, 22 mars et 4 juillet 1589. Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e310');">5 Lettre des prévôt des marchands et échevins de Paris aux échevins de Châteaudun. Paris, 19 janvier 1589. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e318');">6 Lettre, avec chiffre et déchiffrement, signée : « ARLOT ». 21 octobre 1589. Au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e326');">7 Lettre, avec chiffre et déchiffrement, au duc de Nevers. On y lit : « Les compagnies de gens de pied qui estoyent aveq Mr de Tavannes à Flavigny en Bourgongne, ont esté rencontrées par Farvacques et le baron de Viteaux, qui les ont deffaictes, apres aspre combat. Led. Sr de Tavannes s'est retiré aud. Flavigny... Ce 18 mars » 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e343');">8-14 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e384');">15 Lettre de « E. LE ROY, abbé de S. Martin de Nevers », au roi Henri III. 3 juillet 1589. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e392');">16-18 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e433');">19 « Lectre escritte » au duc de Savoie par un partisan de la Ligue et du roi d'Espagne. 24 septembre 1589. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e441');">20-23 Lettre du duc de Nevers au « cardinal de Bourbon. La Grenache, 7 janvier 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e474');">24 « Extraict de lectres escriptes par plusieurs personnes, à Rome, par l'ordinaire party le 9 juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e560');">25 « Ce qui a esté proposé par les sieurs de Jacob, conseiller d'Estat et grand maistre de l'artillerie du duc de Savoye, et Davise, conseiller d'Estat et l'ung des senateurs de Chambery, depputtés par S. A. à Mrs de la cour de parlement de... Daulphiné... et à Mr le collonnel Alfonse ». Août 1589. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e583');">26 Lettre adressée au duc de Nevers, « de Mauleon, [le] 24 janvier 1589 », par JEAN DE BEAUMANOIR, Sr DE « LAVARDYN ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e594');">27 Lettre du « comte DE ... CHAULNES » au duc de Nevers. « De l'armée pres Estampes, ce 18 juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e602');">28 Déclaration faite « à la requisition... du Sr Tanvenay, gentilhomme du roy de Navarre », par ARNAUD SORBIN, évêque de Nevers, concernant le ferme propos que ledit évêque a de rester fidèle au roi Henri III. Nevers, 26 juin 1589. Copie collationnée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e613');">29 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, au cardinal de Bourbon Condé, dit « le cardinal de Vendos[m]e ». Nevers, 23 décembre 1589. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e621');">30 Déchiffrement d'une lettre. On y lit : « ... marquis de Maignelay a surpris la ville de La Fere, en Picardie, et S. Quantin en bransle... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e629');">31 Autre déchiffrement, qui peut se rattacher à l'article précédent, concernant les menées de la Ligue pour compromettre Louis de Gonzague, duc de Nevers. 1er novembre 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e643');">32 Lettre du Sr DE « RAGNY » au duc de Nevers. Ragny, 8 octobre 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e659');">33 Lettre du « chevalier DE DIO,... à Mr de Villeroy,... De Chambery, le 19 aoust 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e670');">34 Lettre du Sr de « DUNES » au duc de Nevers. 21 septembre 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e681');">35 Déchiffrement d'une lettre, en italien, adressée au duc de Nevers par un de ses agents à Mantoue. Mantoue, 30 mai 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e689');">36 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à son neveu, le duc de Mantoue. Nevers, 4 octobre 1589. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e697');">37 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, au pape. Clamecy, 19 septembre 1589. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e705');">38 Lettre de « CLAUSSE DE PONTZ » au duc de Nevers. « De Chaallons, ce 13 decembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e718');">39 Lettre d'ARNAUD SORBIN, évêque de Nevers, au duc de Nevers. Nevers, 28 mai 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e726');">40 Lettre du Sr DE « RAGNY » au duc de Nevers. Ragny, 15 avril 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e737');">41-42 Certificats de service militaire délivrés par CHARLES TOURPIN, comte DE CRISSE, pour Georges Du Moulin, seigneur de La Souche, René Charces, écuyer, Sr de Vau, « paroisse de Martigni Briand », et « Jacques Le Couturier, Sr Des Ernaux, paroisse de Jarzé ». 14 et 21 janvier 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e751');">43-44 Lettres du Sr « MYRON » au duc de Nevers. Tours, 26 mai, et camp de Jargeau, 24 juin 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e762');">45 « Memoire envoié de Bourges au capitaine Païsan, pour rendre le chasteau des Ayx ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e770');">46 « Capitulation faitte avec le capitaine Paysan, touchant les Ayx Dangillon, le 12 jullet 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e778');">47 « Copie de la trefve faitte avec Vezelay, le 27 settembre 1589 », entre le Sr de Rochefort-Pleuvaut, gouverneur de Vézelay, d'une part, et le Sr de Chanlemys, lieutenant du duc de Nevers, d'autre part.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e792');">48 Lettre adressée au duc de Nevers, signée : « Vostre tres humble et tres obeissente servente JARNAC,... Bourges, 24 juillet » 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e800');">49 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Maizieres, le 15 mars 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e808');">50 « Coppie du marché fait le... 29 mars... 1589, à Tours, avec Mre Pierre Saget, commissaire des salpetres et canonier ordinaire, pour le fornissement du magazin à pouldre de Chaalons ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e822');">51 « Estat abregé des deniers imposez en la generalité de Languedoy, establye à Bourges, en l'année 1589... Faict et veriffié par nous FRANÇOIS LE MARESCHAL, Sr DE CORBET, conseiller du roy et tresorier general de France, estably à Bourges, le 5... janvier 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e836');">52 « Estat du payement, solde et entretenement des gens de guerre destinez pour la garde et conservation du païs de Nivernoys... Clamecy, 12 may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e844');">53 Questionnaire « pour bailler aux espions » qui devaient être envoyés par le roi Henri III aux villes de l'Union. Ce questionnaire, dressé par le duc de Nevers, fut « doné au[dit] roy » par ledit duc, après la sortie d'Amboise des prisonniers confiés au Sr Le Guast. 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e855');">54 Lettre du Sr « DE LA ROCHE » au duc de Nevers. « De Riom, ce 23 juin 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e866');">55 Lettre du Sr DE « SAGONNE » au duc de Nevers. Au dos on lit, de la main du duc de Nevers : « R. 9 de l'an 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e877');">56 Lettre adressée au duc de Nevers, signée : « Vostre tres humble servante CHAULNES ». Au dos on lit : « Mme DE COUCY ». 25 juin 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e888');">57 « Estat des munitions qui ont esté trouvées aux bateries, ce matin 5 janvier 1589... Faict au camp devant La Garnache, ce jeudy 5 janvier 1589. FEUGIERE ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e896');">58 Lettre de « DIETERICH DE SCTRONTZER » au duc de Nevers. « De Mauvilli, ce 9 aoust 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e904');">59 Lettre du roi HENRI III à « Mr de Schonberg,... Au camp de Poissy, le 30 juillet 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e915');">60 Lettre de SIMON DE SAULX, baron DE TORPES, au duc de Nevers. « A Pluviers, ce 9 aoust 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e923');">61 Memoire « sur la poisanteur des bouletz à canon... Desize, juin 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e931');">62 Lettre adressée au duc de Nevers, signée : « CHEVRIERES ». Lyon, 10 octobre 1589 ?.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e939');">63 Lettre, avec chiffre, de JEROME DE MONTHOLON, conseiller au conseil d'État et au parlement. Tours, 26 mai 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e947');">64-70 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1042');">71 Lettre de « LOÏS DE CRILON » au duc de Nevers. « De Tours, ce 24 d'aoust... 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1050');">72-77 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1130');">78 Lettre du Sr « REGNAULT » au duc de Nevers. « Du Sauvage, ce 19 juing 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1141');">79 Lettre du Sr « DE SANCY » au duc de Nevers. « De Cintré, pres Langres, ce 18 jung 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1152');">80 Lettre de « CHARLES ROUAULT » au duc de Nevers. « A Machecou, ce 12 janvyer 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1160');">81 Lettre du Sr « CHALMAND » au Sr Pasquier, secretaire des finances ? Rome, 23 septembre 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1174');">82 Lettre « pour les affaires de Monseigneur le cardinal de Bourbon, legat, à Mr Serre, tresorier general de Monseigneur en ses legation et conte Venise, en Avignon », écrite par « GALLIFFET », à « Paris, le 2 octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1185');">83-84 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, « à Mr de Chemerault et aux maire et eschevins de Poitiers. La Grenaiche, 7 janvier 1589 ». Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1196');">85 Lettre relative aux mariages projetés entre les ducs de Guise et de Nevers, pour leurs enfants. Cette lettre est actuellement sans souscription ni adresse. Chiffre. 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1204');">86 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Maizieres, ce 1 avril 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1212');">87 Lettre datée de Sancerre, 25 juin 1589, concernant « la delivrance du secretaire de Mr l'evesque de Nevers » entre les mains de Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1226');">88 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à « Mr de Villeroy,... De Desize, ce 15 avril 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1237');">89 Lettre du Sr D'ARQUYEN au duc de Nevers. 7 avril 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1248');">90 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Si, le 30 avril 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1256');">91 Lettre du Sr DE « VIDEVILLE » au duc de Nevers. 12 mars 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1267');">92 Lettre de ROBERT DE « LA VIEUVILLE » au duc de Nevers. « De Maiziers, le 11 apvril 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1275');">93 Lettre du Sr DE « CHEVIGNY » au duc de Nevers. St-Amand, mai 1589. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1289');">94 Lettre du Sr « MYRON » au duc de Nevers. Mantes, 16 janvier 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1300');">95 Lettre du Sr « P. VIGIER » au duc de Nevers. Blois, 10 janvier 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1311');">96 « Memoire » du duc DE NEVERS au Sr « de Launay,... Clamecy, 11 may 1589 ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1322');">97 Lettre de « FRANÇOYS DE RUYMAN » au duc de Nevers. « De Lyon, ce 18 novembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1330');">98 « Noms des regimans et compagnies suisses quy sont alés trover le feu roy, en jullet 1589, conduitz par Mr de Longueville. Baillé par le collonel GALATY, le 27 [janvier] 1590, à La Cherité ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1341');">99 Lettre adressée au duc de Nevers, le 2 avril 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1349');">100 Lettre de « GUILLAUME GELLA ». Paris, 15 octobre 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1357');">101 « Memoire pour respondre à la lectre que le Sr Sardiny escript à Monseigneur de Nevers, le 27 novembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057766_d0e1368');">102 « Estat des sommes de deniers qui doivent estre payées à Laurent Arigger, du canton de Solleurre, colonnel d'un regiment de treize enseignes de Suisses, pour son estat de colonnel et pour les officiers dud. regiment, pour un mois, commenceant le 16 apvril 1589, qui est le jour du partement de leurs maisons, et finissant le 16 may ». Copie.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
