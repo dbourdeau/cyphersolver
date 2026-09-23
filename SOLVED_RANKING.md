@@ -13,6 +13,8 @@ The **Speculum cipher flyleaf** is provisionally p133 at **2.30**: a short subst
 
 The **Mémoire en chiffre** is provisionally p134 at **2.95**: substantial historical content, but an inherited partial key and an editorial reading without external plaintext verification. Novelty score is provisional.
 
+The **Potocka and Mniszech letters** are provisionally p135 at **2.90**: an independently recovered bilingual alphabet, but one separate cipher remains unread and there is no independent plaintext.
+
 ## Axes and weights
 
 | Axis | Weight | 1 | 5 |
@@ -28,6 +30,7 @@ The **Mémoire en chiffre** is provisionally p134 at **2.95**: substantial histo
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
+| p135 | **Potocka and Mniszech to Dunin** | 1714–16 / undated | 3 | 3 | 4 | 3 | 1 | 2 | **2.90** | Nine letters share the recovered alphabet; person codes and Mniszech remain open. [potocka1714](https://dbourdeau.github.io/cyphersolver/potocka1714.html) |
 | p134 | **Mémoire en chiffre**, BnF fr. 3157 no. 67 | 12 Dec 1560 | 3 | 4 | 3 | 3 | 1 | 2 | **2.95** | Extensive Agenais report; inherited local partial solution completed editorially, seven small uncertainties. Novelty unproven; no independent clear copy. [memoire1560](https://dbourdeau.github.io/cyphersolver/memoire1560.html) |
 | p133 | **Speculum cipher flyleaf**, SCH R 201 (R4817) | Undated; volume 1618 | 2 | 2 | 3 | 2 | 1 | 4 | **2.30** | Rous partial solution completed; 78/79 coherent without emendation, internal consistency only. [r4817](https://dbourdeau.github.io/cyphersolver/r4817.html) |
 | 1 | **Henry of Navarre → Ségur**, 500 Colbert 401 ff. 233, 239, 288v (+ f. 366, f. 333) | 1585–86 | 5 | 4 | 5 | 5 | 2 | 4 | **4.35** | The only target solved from the manuscript images with no transcription and no key family known in advance: 461 figures transcribed from Gallica, the syllabary found by the mod-5 test, a structured annealer at 97 % on a matched control, then the whole 440-canvas volume swept. Content is the German levy of 1585–86 and Casimir; the sender is corrected from Henry III to Navarre. Word-signs partly open |
@@ -607,3 +610,5 @@ Selve at Venice to Francis I 1535–36 provisional score: 0.25×2 + 0.25×3 + 0.
 Speculum cipher flyleaf provisional score: 0.25×2 + 0.25×2 + 0.20×3 + 0.10×2 + 0.10×1 + 0.10×4 = **2.30** (p133). Partial prior work used; no independent key; one marked textual error.
 
 Mémoire en chiffre: 0.25×3 + 0.25×4 + 0.20×3 + 0.10×3 + 0.10×1 + 0.10×2 = **2.95** (provisional).
+
+Potocka and Mniszech provisional score (p135): 0.25×3 + 0.25×3 + 0.20×4 + 0.10×3 + 0.10×1 + 0.10×2 = **2.90**. Novelty remains provisional.
