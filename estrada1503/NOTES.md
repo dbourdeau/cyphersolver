@@ -108,6 +108,7 @@ The marriage of Catherine and Henry is not the subject of this letter.
   gam, gep … raf, ru) does not occur.
 - [x] print: CSP Spain i 369 (unread), Tomokiyo spanish.htm (no reading), Galende 1994 (key only); no edition found.
 - [n/a] key-rebuild: the key is complete in print; the open runs are unread signs, not unknown values.
+- [x] retry (image enhancement, 22 Sept): every PARES route re-tested (zoom 10/20/100, print view, quality flags): max 997x1396, no IIIF or tiles. Strips at 4-6x with unsharp masking, read against Galende's plate (p. 167) of sign forms: adds isolated words (l. 12 *cud* una, l. 13 *tal resistencia … en ninguna dellas*) but the open runs stay ambiguous between two or three sign forms. A reading past ~50% is not possible from these images; the push to 95% is closed as impossible until Simancas supplies high-resolution photographs.
 - [x] retry: X was read with Y (all 47 lines) and Z (first lines and closing) beside it; runs that read in one copy
   were carried over. A further sign-by-sign pass at this resolution would add little; better images are the step.
 
