@@ -785,6 +785,21 @@ saturates when every sign is a syllable).
   014339; an Akkadian name) and Dadi, 'soldier of the Meluhha boat' (BIN 8 298, Old Akkadian). No further foreign
   Meluhhan personal names: Nanaza and Samar remain the only direct evidence of the language in cuneiform.
 
+## Fourteenth pass (23 Sept 2026): Tamil-Brahmi names, registered predictions
+
+Scripts: `tamil_brahmi.py`, `predict_test.py`; `PREDICTIONS.md` (committed before the test, 70e563ca8);
+results `results/tamil_brahmi.md`, `results/predict_test.md`.
+
+1. **Tamil-Brahmi names** (Mahadevan 2003, Early Tamil Epigraphy, Appendix II, archive.org OCR, parsed; about 100 full
+   names). 68% end in a masculine suffix (-an, -on, -ko, -antai, -nanti, -porai), 5% are marked feminine, the rest
+   are mostly OCR debris; mean 1.6 words a name. The Indus endings split 86% (740) / 14% (520); names are 1-6 signs
+   (mean 3.2). Agreement in shape: one dominant class suffix on the last element, a small second class, possessor
+   first (X-an makan). But the Indus minority class is the fish names, not women's names; only a rational /
+   non-rational reading maps one onto the other. Consistent with Dravidian, without power against Sanskrit.
+2. **Registered predictions from the Dravidian model failed.** P1 (a rational plural sign replacing 740 on the same
+   names): none; the candidates replace 740 less often than chance. P3 (520 stems alternate no more than 740 stems):
+   10.9% against 8.0%, fails narrowly. The model makes no correct prediction beyond the data it was built on.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -24,3 +24,14 @@ by permutation of final signs among lines (200 permutations). P1 holds if some s
 slot signs (400, 90, 151) replaces 740 at p < 0.01 on the discovery corpus and again (p < 0.05) on the held-out
 texts; P2 holds if that sign's share of 520 stems is below its share of 740 stems; P3 holds if the share of 520
 stems seen with more than one final sign is not above that of 740 stems.
+
+## Results (added after the test; `predict_test.py`, `results/predict_test.md`)
+
+- **P1 fails.** No sign replaces 740 on the same names beyond chance; the candidates (156 on 5 stems, 407 on 3, 154 on
+  3) do so less often than permutation expects (18.5, 14.8, 8.3). No rational plural is visible.
+- **P2** not testable (no P1 sign).
+- **P3 fails narrowly.** 520 stems appear with more than one final sign in 10.9% of cases (19 of 175), 740 stems in
+  8.0% (73 of 909).
+- A seal names one holder, so no plural need appear on seals; but that is an explanation found after the result and
+  is recorded as such. As registered, the Dravidian rational / non-rational model made two predictions beyond the
+  data it was built on, and neither came out.
