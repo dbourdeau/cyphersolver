@@ -1,0 +1,176 @@
+{
+ "schema_version": 1,
+ "target": "moncada1524",
+ "title": "Hugo de Moncada to Charles V, Monaco, 6 October 1524 (BNE MSS/20213/12, DECODE R1191)",
+ "documents": [
+  {
+   "id": "R1191",
+   "shelfmark": "BNE, MSS/20213/12 (BNE Digital 8b55d967-e74e-4bad-bec4-bdfd44c43886, 'Carta 9'; DECODE R1191)",
+   "date": "6 Oct 1524",
+   "year": 1524,
+   "country": "Spain",
+   "route": "Hugo de Moncada (Monaco) to Charles V",
+   "language": "Spanish",
+   "pages": 2,
+   "read": "read",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Colección de documentos inéditos para la historia de España XXIV (1854), pp. 417-419, from the secretariat's CLARO (Salazar, C. V., 1524, p. 3); pencil note on f. 1r points to it",
+    "partial": true
+   },
+   "length": {
+    "tokens": 442,
+    "distinct": 54,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ct_tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R1191_I5941/I5942 (970 x 1395 px), deskewed and cropped 3-8x; ct.txt with the printed plaintext beside each run",
+    "image_quality": "fair",
+    "notes": "Low resolution: a few sign pairs (4 / H, 6 / delta, o variants) are not always separable, so some signs carry two values in KEY.md. The BNE full-resolution viewer is behind a Cloudflare challenge."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution of invented signs for Spanish letters (2-5 signs for common letters), with a handful of code groups in Latin letters.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 54,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "partial",
+  "doubled_letters": "unknown",
+  "notes": "A double cross written after a base sign makes a separate sign (S / S#, z / z#, 4 / H). Code groups: lay = yo, ne = duque; =D., P#D, =P#D.f unread."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "CODOIN XXIV (Madrid 1854) pp. 417-419, with a gap ('me rogaba que le llevase .... muchas razones'); Tomokiyo (spanish2C, June 2026) had not found it",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Project-level: obtained a DECODE login and passed its session cookie to the model, and posed the problem with /goal from the catalogue entry. No target-specific intervention recorded.",
+  "tools": [
+   "image viewing",
+   "DECODE API",
+   "web search",
+   "EM alignment"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "BNE Digital viewer blocked by a Cloudflare challenge (browser pane and curl); IIIF paths 403.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "DECODE dump searched for 1524 BNE records: R1191 'NLS_MSS_20213_12' (no author) is the letter; two images fetched with the cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Pencil margin note read as 'Descifrada en t.o 24 Col. Doc. inéd.'; CODOIN XXIV found on the Internet Archive (bub_gb_VGwxkA0412wC): the letter printed pp. 417-419 with the cipher deciphered, one gap.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Cipher runs transcribed from the DECODE image, deskewed -2.7 deg, cropped 3-8x: 442 signs in 17 runs (ct.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Soria 1523 keys A and B (Genoa, same court) compared: three-letter code groups, a different system.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "what": "EM alignment of each run against the printed plaintext (em_align.py; sign emits 0-2 letters, letters may be skipped, printed gap free) gave the homophonic key; finished by hand in KEY.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "verification",
+   "what": "Print checked against the cipher run by run (tienen pan, si el duque de Genoua querra dexar yr las galeras, que fuese fuerte, largamente sobre esto, muy mal contento, de la Mota): agreement.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Print's gap read with the rebuilt key at 6-8x: 'a España' (4 8 s w A n~ r) and 'diziendome' (f# 3 S# z# L p # H b L); 99 and three code groups left open.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "fraction_read": 0.968,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "moncada1524/ct.txt against reading.txt, cipher tokens: 428 of 442 given a value; open = code groups =D., P#D, =P#D.f (12 signs) and 99 (2 signs)",
+  "key": "recovered",
+  "codes_open": {
+   "open": 4,
+   "total": 6,
+   "tokens_open": 14
+  },
+  "gaps": [
+   {
+    "item": "code groups =D., P#D, =P#D.f (12 signs)",
+    "blocker": "too-short",
+    "detail": "each occurs once, no key; the print gives no counterpart except 'duque' for the first"
+   },
+   {
+    "item": "99 at the end of cipher line 2 (2 signs)",
+    "blocker": "too-short",
+    "detail": "set apart at the margin; 'a a' or line-end nulls"
+   }
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "The 1854 print (from the secretariat's decipherment) agrees with the cipher wherever checked; the key rebuilt from it reads the print's gap: 'que le lleuase a España, [99] diziendome muchas razones para ello'."
+ }
+}
