@@ -1527,6 +1527,13 @@ Registered first (eighty-first set, 3a3228581), tested on distinct names and lin
 even on non-fish heads (A + B and B). Classes agree 47 of 47 with F. After 740, 90 and 400 are each selected by their
 own set of heads (Jaccard 0.13). Tally 516 held, 591 failed.
 
+## Ninety-sixth pass (24 Sept 2026): counted 520 and the suffixes
+
+Registered first (eighty-second set, 3be2cf466), tested on distinct lines (`predict_test82.py`). 'N 520' is the fixed
+phrase '705/706 33 520' (46 of 55), not counted 520. After the ending: 400 is the Harappa tablet suffix; 90 (with its
+look-alike 151) is the seal suffix of one-off names; each head takes one of them, chosen by the head's shape category.
+Tally 529 held, 598 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

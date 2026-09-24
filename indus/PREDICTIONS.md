@@ -4017,3 +4017,19 @@ The suffixes
 Replication
 - **PS19** B: PS6 holds.
 - **PS20** B: 90 heads and 400 heads overlap less than when suffixes are shuffled (Jaccard).
+
+## Results of the eighty-second set (added after the test; `predict_test82.py`, `results/predict_test82.md`)
+
+Thirteen held, seven failed. '520 after a number' is one fixed phrase, not general counting: 55 distinct tokens, 93%
+line-final (PS1), 48 of them after 33 (value 3, PS2), and (post-test count) the sign before the number is 705 in 32 and
+706 in 14, so '705/706 33 520' accounts for 46 of 55. 520 follows a number far more often than 740 does (PS5: 27%
+against 7%) only because of this phrase; no fish is ever counted with it (PS4) and it is not a tablet form (PS3). The
+suffixes after the ending are three different signs with different jobs. 400 is the tablet and Harappa suffix (PS13:
+80% of 400 suffix lines on tablets against 21% of 90 lines; PS14: 76% at Harappa against 25%) and has other uses (PS7:
+46% of 400 tokens follow an ending). 90 is the seal suffix of individual names: 90-suffixed names are one-off far more
+often (PS17: 76% against 49%), and 90 bodies hold fish more, not less (PS15 fails: 55% against 32%). 151 behaves like a
+variant of 90 (PS10: its heads overlap with 90's, Jaccard 0.31, against 0.05 with 400's) but is mostly used elsewhere
+(PS8: 13% after an ending). A head takes one suffix (PS9: 60 of 72), 90 and 400 take different heads (PS20 in B: Jaccard
+0.03, p = 0.0001), the head's shape category predicts 90 (PS11, p = 0.0001), and suffixes go with common heads (PS16:
+24% against 3%). Not supported: 90 being only a suffix (PS6: 67%; PS19 in B: 51%), 90 heads being counted less (PS12),
+and '520 400' heads being fish (PS18: 4 of 10). Tally, counting parts: 529 held, 598 failed (1127 registered).
