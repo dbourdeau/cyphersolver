@@ -3310,3 +3310,22 @@ the same picture on both more often than chance (TP5: 46 matches over 74 tablets
 its picture with it across media. Reading: seal pictures are largely independent of the name; the tablet pairing
 (sixty-fifth set) is a tablet practice that reuses seal text-picture combinations. Tally, counting parts: 381 held,
 456 failed (837 registered).
+
+# Sixty-eighth set, registered before testing (24 September 2026): tablets that copy seal texts
+
+F lines. 'Copied line' = a tablet (TAB types) line of 2+ signs identical to a line on some seal; 'copied seal' = a seal
+with a line that some tablet copies. Motifs as in the sixty-seventh set ('None' = no motif; Bull1 = unicorn).
+10,000-draw permutations; p < 0.05.
+
+- **CP1** Copied tablet lines are name lines more often than other tablet lines, length-stratified.
+- **CP2** Copied seal lines recur on more seals than uncopied seal lines (rank test on seal counts).
+- **CP3** 80%+ of copied tablet lines are from Harappa.
+- **CP4** A copied tablet line comes from the same site as a seal bearing it more often than when tablet sites are
+  shuffled.
+- **CP5** Tablets with a copied line have a motif recorded more often than other tablets.
+- **CP6** Copied seal lines are shorter than uncopied seal lines (rank test).
+- **CP7** Among seals with a motif, copied seals carry the unicorn less often than uncopied seals.
+- **CP8** Exact copies are at least twice as common as near copies (tablet lines one substitution away from a seal
+  line and not identical to any).
+- **CP9** Copied tablet lines carry a numeral less often than other tablet lines.
+- **CP10** Copied seal name lines end in 740 more often than uncopied seal name lines.
