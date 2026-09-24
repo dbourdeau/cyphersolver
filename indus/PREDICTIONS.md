@@ -8335,3 +8335,18 @@ name-final syllable, and that measure mostly ranks noise. (3) As in set 175, the
 and head share while the candidates stay close together; this does not choose between them. What it adds for L: the
 typology-matched decoys inside the compatible fifth (Japanese, Turkish) fit the Indus names worse than both South Asian
 candidates. Progress by the registered rule: streak 0. Tally, counting parts: 1308 held, 1207 failed (2515 registered).
+
+# Hundred-and-ninety-eighth set, registered before testing (24 September 2026): decipherment loop 23, the genre control for set 197 (five hypotheses)
+
+Metric after loop 22: S 4.697, R 81.3%, M 16.6% (M+ 41.4%), G margin A 46.2 / B 34.7, P 0, L 4, L world 81.3% / 68.3%;
+streak 0. Set 197 put the candidates' inscriptional donor names nearest the Indus names and the decoys' modern
+given-name lists further off, which genre alone could do. Here genre is held to name lists on both sides: candidates
+= Sanskrit names from Monier-Williams ('N. of a man / woman', syllables, as set 171) and Old Tamil names from the
+Sangam poets list (grapheme clusters, as set 171); decoys = Japanese and Turkish given names as set 197. Same four
+measures, rarefaction, distances and mean-rank rule as set 197.
+
+- **GC1** With genre held to lists, at least one candidate list ranks nearer the Indus names than both decoys.
+- **GC2** Both candidate lists rank nearer than both decoys.
+- **GC3** Sanskrit (dictionary) names rank nearer than Japanese (dictionary) names.
+- **GC4** The nearest of the four is the same in both random halves of the Indus names (seed 198).
+- **GC5** Progress rule: GC1 and GC4 hold (the candidate advantage survives the genre control and replicates).
