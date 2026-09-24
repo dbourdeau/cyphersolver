@@ -2474,3 +2474,22 @@ right writing 7.9% earlier, 3.8% later), HT10 (the head signs of names change, M
 share is stable, 16.6% against 15.8%). HT4 and HT8 lack cases per period (12-15 tiered numerals of 5-8; 16-23 short
 threes). At Harappa the grammar and the number system are stable while the administration (receipts, count sizes),
 the writing direction and the particular names change. Tally, counting parts: 224 held, 333 failed (557 registered).
+
+# Fortieth set, registered before testing (24 September 2026): the core findings in Mahadevan's transcription (round 4 of 10)
+
+Findings tested so far on F, A or pooled samples, now on B alone (the M77 texts absent from A; Mahadevan's own
+transcription). Tests and thresholds as the thirty-fifth set's hypothesis named. 10,000-draw permutations; p < 0.05;
+under 20 cases fails as untestable.
+
+- **MB1** (as SR10) the tiered form is for 5-8.
+- **MB2** (as SR11) long-stroke numerals stand before container and device signs more than short ones.
+- **MB3** (as SR20) long-stroke numerals open their line more than short ones.
+- **MB4** (as SR8) the affixed fish are a name's last sign less often than the plain fish.
+- **MB5** (as SR16) 80%+ of heads with 5+ names fix their ending.
+- **MB6** (as SR12) the number depends on the following sign.
+- **MB7** (as SR1) the last sign carries more information about the ending than the first.
+- **MB8** (as LT1) lines of 8+ signs hold two or more endings more often than lines of 5-7.
+- **MB9** (as L16) the fish variants 233, 235, 240 alternate with 220 in otherwise identical names more than matched
+  random sign pairs.
+- **MB10** (as J8) for signs after a numeral 10+ times, the commonest value accounts on average for 60%+ of their
+  numerals.
