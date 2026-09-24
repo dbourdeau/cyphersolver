@@ -167,7 +167,7 @@ def main(path):
     say('- count-token values %s; MI %.4f; p = %.4f.' % (dict(Counter(vc).most_common(4)), o, p))
     rec_('L9', p < 0.05)
 
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     hs = [r for r in seals if r['site'].strip() == 'Harappa' and names_in(r) and mot(r) and mot(r) not in ('-', 'None')]
     a = [mot(r).startswith('Bull1') for r in hs if names_in(r)[0][0] in tb]
     c = [mot(r).startswith('Bull1') for r in hs if names_in(r)[0][0] not in tb]

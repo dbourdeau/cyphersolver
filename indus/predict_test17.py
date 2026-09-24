@@ -433,7 +433,7 @@ def main(path):
 
     # U21, U22
     seals = [r for r in intact if kind(r) == 'SEAL']
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     uni = [r for r in seals if mot(r).startswith('Bull1')]
     oth = [r for r in seals if mot(r) and mot(r) not in ('-', 'None') and not mot(r).startswith('Bull1')]
     say('## U21 unicorn seals carry longer texts')

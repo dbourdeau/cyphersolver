@@ -1914,6 +1914,15 @@ Registered first (hundred-and-thirty-fourth set, 19fddf009), tested (`predict_te
 independent text codes (VN = counts 95%, LP/IT/SP/MT = names 78%, SC = bare lines); the closer inscriptions are new,
 not an ICIT category. Tally 1037 held, 984 failed.
 
+## Audit (24 Sept 2026): the motif-field 'None' bug in sets 17-40
+
+The ICIT motif field stores 'None' where no motif is recorded (found in the sixty-fifth set; 1,677 of the 3,681 clean
+F objects). Audit of the earlier readers (`predict_test17`, 18, 21, 24, 27, 29, 30, 31, 34, 35, 36 `make_tests`, 39,
+40): each already excluded 'None' and '-' wherever having a motif mattered, and otherwise only tested for Bull1. Rerun
+with the same seeds and 'None' mapped to no motif: output identical to the unpatched run in all twelve, and to the
+recorded results except one unrelated permutation p-value (twenty-seventh set L16, 0.0001 to 0.0002, still holds). No
+verdict changes; the scripts now carry the explicit check. Tally unchanged: 1037 held, 984 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

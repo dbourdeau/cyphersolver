@@ -72,7 +72,7 @@ def main(path):
     mnt = [r for r in intact if r['type'] == 'TAB:B' and names_in(r)]
     seals = [r for r in intact if r['type'].startswith('SEAL')]
     tabs = [r for r in intact if r['type'].startswith('TAB')]
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     kind = lambda g: NUMS[g][1]
     res = []
 

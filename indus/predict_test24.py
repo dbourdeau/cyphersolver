@@ -174,7 +174,7 @@ def main(path):
         for ln in r['seq']:
             nm = name_of(ln)
             if nm:
-                mot = recs[r['sealid']][18].strip().split(':')[0].strip()
+                mot = '' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip().split(':')[0].strip()
                 typ = r['type'] if r['type'] in ('SEAL:S', 'SEAL:R') else 'other'
                 seals.append({'name': nm, 'mot': mot if mot and mot not in ('-', 'None') else None,
                               'typ': typ, 'head': headed(ln)})

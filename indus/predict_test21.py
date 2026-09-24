@@ -218,7 +218,7 @@ def main(path):
     rec_('R10', ok)
 
     say('## R11 bare seals are not unicorn seals')
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     known = [(r, ln) for r, ln in seal_l if mot(r) and mot(r) not in ('-', 'None')]
     bb = [not mot(r).startswith('Bull1') for r, ln in known if bare(ln)]
     nn = [not mot(r).startswith('Bull1') for r, ln in known if name_of(ln)]

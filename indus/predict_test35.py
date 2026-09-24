@@ -261,7 +261,7 @@ def main(path, font_path):
         return 'tablet variants at a numeral %s' % fline(a, len(tv), c_, len(sv), p), p < 0.05 and a / max(1, len(tv)) > c_ / max(1, len(sv)), len(tv)
     run('SR13', 'tablets vary in numbers, seals in words', sr13)
 
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
 
     def sr14(c):
         ss = [r for r in city[c] if r['type'].startswith('SEAL') and mot(r) and mot(r) not in ('-', 'None')]

@@ -70,7 +70,7 @@ def main(path):
     kind = lambda r: r['type'].split(':')[0]
     tabs = [r for r in intact if kind(r) == 'TAB']
     seals = [r for r in intact if kind(r) == 'SEAL']
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     known = lambda r: mot(r) and mot(r) not in ('-', 'None')
     res = []
 

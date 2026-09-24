@@ -177,7 +177,7 @@ def main(path):
     icit_full.LINES_REVERSED = True
     recs = {rec[0]: rec for rec in icit_full.records(path)}
     objs = [r for r in icit_full.objects(path) if r['flat']]
-    fp = lambda r: recs[r['sealid']][18].split(':')[0].strip()
+    fp = lambda r: '' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].split(':')[0].strip()
     fgood = lambda r: fp(r) not in ('', 'None', '-', 'Othr', 'Unknown')
     md = lambda r: r['site'].strip() == 'Mohenjo-daro'
     lvm = lambda r: level('Mohenjo-daro', recs[r['sealid']])

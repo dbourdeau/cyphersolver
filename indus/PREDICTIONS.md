@@ -3251,6 +3251,15 @@ the ICIT motif field holds the string 'None' where no motif is recorded; the fir
 both, MT6/MT7 over all objects). The recorded run treats 'None' as no motif. Earlier sets that read this field may be
 affected; flagged for an audit. Tally, counting parts: 370 held, 447 failed (817 registered).
 
+Audit, 24 September 2026: the earlier sets that read the motif field (seventeenth, eighteenth, twenty-first,
+twenty-fourth, twenty-seventh, twenty-ninth to thirty-first, thirty-fourth to thirty-sixth, thirty-ninth, fortieth)
+already excluded 'None' (and '-') at every point where having a motif mattered; their other uses only ask for Bull1
+(unicorn), which 'None' cannot match, and the fortieth passes no motif at all. The corpus-A motif field (`signs.load`)
+never holds 'None'. All twelve scripts were rerun with their own seeds and 'None' mapped to no motif: output
+identical to the unpatched run in every case, and identical to the recorded results except one permutation p-value
+in the twenty-seventh set (L16, 0.0001 to 0.0002, unrelated to motifs; still holds). No verdict changes; the tally
+stands.
+
 # Sixty-sixth set, registered before testing (24 September 2026): replicating loop 3 on held-out data (loop 3, round 10)
 
 Each test repeats a finding of the fifty-seventh to sixty-fifth sets on data not used to find it: B alone, other sites

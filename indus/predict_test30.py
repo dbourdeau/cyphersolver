@@ -66,7 +66,7 @@ def main(path):
     hseals = [r for r in seals if har(r) and names_in(r)]
     ends = lambda b, rb: len(b) >= len(rb) and b[-len(rb):] == rb
     kind = lambda g: NUMS[g][1]
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     res = []
 
     def rec_(k, ok):

@@ -79,7 +79,7 @@ def main(path):
     tabs = [r for r in intact if r['type'].startswith('TAB')]
     kind = lambda g: NUMS[g][1]
     hasnum = lambda t: any(g in NUMS for g in t)
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     res = []
 
     def rec_(k, ok):

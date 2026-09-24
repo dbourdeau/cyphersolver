@@ -19,7 +19,7 @@ def main():
     E, L_ = G([r for r in har if lv(r) == 'E']), G([r for r in har if lv(r) == 'L'])
     rd.say('- Harappa objects with a level: earlier %d, later %d.' % (len(E.objs), len(L_.objs)))
     rd.say()
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     tests = make_tests(cat, {}, mot)
 
     def both(key, title, tk):

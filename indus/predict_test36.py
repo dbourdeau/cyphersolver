@@ -196,7 +196,7 @@ def main(path, font_path):
     late = G([r for r in md if level('Mohenjo-daro', recs[r['sealid']]) == 'L'])
     tok = Counter(g for t in two.lines + other.lines for g in t)
     comp = T.complexity(font_path, [g for g in tok if tok[g] >= 5])
-    mot = lambda r: recs[r['sealid']][18].strip()
+    mot = lambda r: ('' if recs[r['sealid']][18].strip() in ('', 'None') else recs[r['sealid']][18].strip())
     tests = make_tests(cat, comp, mot)
     res = []
 
