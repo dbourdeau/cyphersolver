@@ -635,3 +635,34 @@ than names with the same ending and no 400. A and B.
 
 **N10 The 'man' sign is a noun, not repeated after a human head.** Names whose head is a human figure (Fairservis A)
 are followed by 90 less often than other 740 names. Pooled A + B (B alone is too small; decided here, before testing).
+
+## Results of the fifteenth set (added after the test; `predict_test15.py`, `results/predict_test15.md`; check after the test `robust15.py`, `results/robust15.md`)
+
+One held, nine failed.
+
+- **N4 holds, and survives the check.** Names found once use freer signs than recurring names, length-matched (A
+  +0.228, B +0.120; p = 0.0001, 0.0004). Checked for the obvious artefact (a repeated name repeats its own neighbours
+  and so lowers its signs' freedom): with freedom from distinct lines only, +0.112 (p = 0.0002) and +0.053 (p = 0.022);
+  with freedom from texts that contain no name at all, +0.097 (p = 0.002) and +0.057 (p = 0.050). Smaller, still
+  there. Rare names, like foreign ones (Y2, RF2), lean on free signs: two independent signs of phonetic spelling for
+  names that had no stock form. It says which kind of sign to look at for sound values; it assigns none.
+- **N1 fails, narrowly.** 740 is preceded by a numeral in 6.9% (A) and 5.7% (B) of its tokens, head-class signs 18.1%
+  and 10.5%: counted less than heads, but above the registered third in both samples. Not shown to be a suffix.
+- **N2 fails, the other way.** 520 is preceded by a numeral in 22.4% and 21.9% of its tokens, more than the heads
+  (18.1%, 10.5%). 520 is counted like a noun, not bound like a suffix: '3 + 520', '2 + 520'. The two endings do not
+  behave alike: 740 is rarely counted, 520 often. Fairservis calls 520 'a point or spear'; a countable unit or object
+  fits better than a class suffix.
+- **N3 fails** (A: the tail after 741 is an attested name 46 of 98 times against 18 for a random position, p = 0.0001;
+  B: 3 of 22 against 9, the reverse). Holds in one transcription only.
+- **N5 fails** (the second sign of a bound pair is not the freer one: 12 of 30, 15 of 27).
+- **N6 fails** (3 of 549 tablet texts equal a seal name body; no more than shuffled order): tablets do not carry the
+  seal names.
+- **N7 fails** (headed lines end in 740 83% and 81%, headless 85% and 89%): the heading is not tied to the person class.
+- **N8 fails** (West Asian enrichment and rare-name enrichment do not rank signs alike, rho 0.03): the two phonetic
+  tendencies do not yet point at the same individual signs; the West Asian sample (92 tokens) is too small to rank
+  signs.
+- **N9 fails, the other way** (names followed by 400 contain a numeral less often: 26% against 42%, 12% against 29%).
+  400 is not a plural agreeing with numerals.
+- **N10 fails** (human-headed 740 names are followed by 90 as often as others: 6.4% against 5.8%).
+
+Tally, counting parts: 18 held, 44 failed (62 registered).

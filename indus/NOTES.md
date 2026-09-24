@@ -1005,6 +1005,15 @@ of 96. Both fit 740 as the person class (Mahadevan's -an). Near misses: K8 (head
 p = 0.052), K12 (free signs simpler, B p = 0.061). Failed and informative: K13 (fish heads do not keep sky company),
 K9 / K10 (the H4 and H1 leads do not replicate), K4 (agreement in A only). Tally 17 held, 35 failed.
 
+## Twenty-ninth pass (24 Sept 2026): morphology and sound signs
+
+Registered first (PREDICTIONS.md, fifteenth set, 675e2f358), tested (`predict_test15.py`), checked (`robust15.py`).
+**N4 holds and survives the repetition check**: once-only names use freer signs (A +0.228, B +0.120; with freedom from
+name-free texts +0.097, +0.057). Failed and informative: **N2** (520 is counted like a noun, 22% after a numeral,
+more than heads; 740 only 6-7%, N1): the two endings differ, 520 looks like a countable word; N9 (400 is not plural;
+reverse); N3 (741 as oblique form: A yes, B no); N6 (tablets do not carry seal names); N7, N8, N5, N10. Tally 18
+held, 44 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
