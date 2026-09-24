@@ -129,3 +129,23 @@ Either failing counts against Hypothesis T. A length effect alone (short names r
   assignment would spread them, not held in one city. A personal name borne by one family would be local; this looks
   more like a pool of names or titles in use everywhere, or like seals carried between cities. It is an observation
   for a future registered test, not a finding.
+
+# Fifth set, registered before testing (24 September 2026)
+
+**Hypothesis V: a recurring name marks the same holder or generation.** If the names are personal names, seals that
+carry the same name were made for one person, or for people of one time, and should be found in the same level of a
+site. If they are hereditary names, offices or titles, they persist across levels. Not looked at here before.
+
+Unit as in the fourth set: distinct intact seals (type SEAL) of the fuller ICIT corpus with a name and an ending 740 /
+520 (heading removed, trailing 400 / 90 / 151 dropped); identical name + ending = same name. Pairs are counted within
+a site.
+
+**V1 Period.** Seals with a known excavators' period: Mohenjo-daro Early / Intermediate / Late (field 9), Harappa
+Period 3 sub-phase B / C (field 10). Among same-site pairs of seals bearing the same name, the share in the same
+period exceeds the share when period labels are shuffled among the seals of that site (10,000 times), p < 0.05.
+
+**V2 Depth.** Mohenjo-daro seals with a recorded depth (field 11): same-name pairs have a smaller median depth
+difference than when depths are shuffled among the site's seals (10,000 times), p < 0.05.
+
+Hypothesis V holds if V1 and V2 both hold. If both fail, recurring names persist across levels (names or titles
+handed on); that is the alternative, and it counts for it only if the same-name pairs are also not closer than chance.
