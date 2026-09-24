@@ -2228,6 +2228,14 @@ The dominant-ending argument cuts both ways (Prakrit genitive -sa). Name structu
 names more than the literary Tamil list; the language stays undecided (no comparable Tamil-Brahmi list). Tally 1210
 held, 1134 failed.
 
+## Hundred-and-eighty-eighth pass (24 Sept 2026): Tamil donation-record names as the matching Dravidian comparator
+
+Registered first (5d332dded). DHARMA Tamil corpora (tfa-*, CC BY 4.0) cloned; 1,396 Tamil personal names taken from the
+English translations (`lang_names.tam_records`), mirroring the Prakrit list. Both lists are person-like and open, like
+Indus names. Indus names are nearer Prakrit on closure and on the stock of compound heads (43% against 35% and 16%),
+nearer Tamil on length (JSD 0.009 against 0.056) and on the single dominant suffix (82% against 47% and 23%). A split,
+not a verdict: name structure does not decide Dravidian against Indo-Aryan. Tally 1217 held, 1137 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

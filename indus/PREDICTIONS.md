@@ -7553,3 +7553,25 @@ Methods as set 173.
 - **TD9** Real Tamil record names recur between the catches more than akshara-shuffled names (above 95% of 1,000).
 - **TD10** Of TD4, TD5 and TD7, at least two favour the Prakrit names (name structure nearer Indo-Aryan donor names
   than Dravidian donor names).
+
+## Results of the hundred-and-seventy-fourth set (added after the test; `predict_test174.py`, `results/predict_test174.md`)
+
+Seven held, three failed. 1,396 distinct Tamil names from the DHARMA donation records (SII 522, Pallava 477). They are
+person-like (TD1: 7.20, 0.07, 0.75), as open as the Indus names (TD2: quotient 0.70) and recur beyond combinatorics
+(TD9: 35 against 0.5), like the Prakrit donor names: the genre behaves the same in both languages.
+
+**The two comparators split the evidence.** Nearer the Prakrit (Indo-Aryan) donor names: the closure of the last
+element (TD4: log distance 0.37 against 0.79; Tamil record names do not close their last akshara, TD3: R 1.60) and,
+the clearest difference, the stock of compound heads: the ten commonest Indus heads cover 43% of names, the Prakrit
+compound heads (-rakhita, -guta, -dina ...) 35% of distinct names, the Tamil two-akshara endings only 16% (TD6 fails,
+TD7 holds). Nearer the Tamil names: the length distribution, almost identical (TD5 fails: JSD 0.009 against 0.056;
+means 4.27 signs, 4.46 and 3.61 aksharas), and the dominance of one ending (TD8: 740 on 82%, Tamil -ṉ on 47%, the
+commonest Prakrit stem ending on 23%). TD10 holds by its registered rule (two of three comparisons favour Prakrit),
+but with the length result pointing strongly the other way the honest reading is a split, not a verdict.
+
+Caveats: the Tamil records are 7th-16th century (the Prakrit list 200 BCE-400 CE), and many of their names are
+Sanskrit-derived royal or religious names; the Prakrit names are stems without the case ending while the Tamil ones
+carry the suffix; aksharas are not Indus signs; both lists carry extraction noise. Summary of sets 171-174: a
+Sumerian-type name structure is excluded; between Indo-Aryan and Dravidian, Indus names share the 'modifier + stock
+head' build of early Prakrit donor names and the length and single dominant suffix of Tamil names; the language is
+not decided by name structure. Tally, counting parts: 1217 held, 1137 failed (2354 registered).
