@@ -1978,6 +1978,14 @@ length (96%), positions (92%) and last signs (98%); the ending paradigm holds in
 Parpola's own transcription of these seals '2 + fish' is the commonest count and '6 + fish' does not occur, so the
 set-138 discrepancy is not ICIT's sign identification. Tally 1069 held, 1002 failed.
 
+## Hundred-and-fifty-fourth pass (24 Sept 2026): find spots inside Mohenjo-daro
+
+Registered first (hundred-and-fortieth set, 8a36ae13b). ICIT fields 4 (area) and 5 (block/house, street) were used for
+the first time. Text content does not follow find spot: no co-location of same text or same head, no household
+vocabulary, no area effect on genre, ending, motif or length. Copper tablets alone cluster by area (VS-A, the citadel
+mounds; none in DK-G North). Seals were lost across the city independently of what they say. Tally 1070 held, 1011
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

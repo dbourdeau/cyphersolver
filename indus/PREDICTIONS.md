@@ -6328,3 +6328,18 @@ test; MI tests as rtools (1,000 permutations). p < 0.05.
 - **FS9** Long seal texts (5+ signs) depend on sub-area (MI).
 - **FS10** Seals found in streets and lanes (field 5 naming a street or lane) are names less often than seals found
   in houses (lost in public places versus kept at home; Fisher).
+
+## Results of the hundred-and-fortieth set (added after the test; `predict_test140.py`, `results/predict_test140.md`)
+
+One held, nine failed. 1,000 Mohenjo-daro seals with text, 800 with a sub-area, 502 in an identified house. Inside
+the city, what a seal says does not follow where it was found: same-text seals are not significantly co-located
+(FS1: 40 pairs, 40% in the same sub-area against 26%, p = 0.075), same-head names are not (FS2), seals from one house
+share signs no more than seals from neighbouring houses (FS3: +0.012), and the genre mix (FS4), the 740/520 ending
+(FS7), the unicorn motif (FS8) and text length (FS9) do not depend on the area. Street and lane finds are names as
+often as house finds (FS10 fails: 57% against 51%). Copper tablets, by contrast, cluster (FS5 holds, MI 0.048, p =
+0.0001): checked after the test, VS-A has 15 copper tablets against 44 seals (25%), the SD/L citadel mounds 7 against
+19, DK-G North none against 87 seals and DK-G South 25 against 376. Identical copper texts are not co-located (FS6),
+so the clustering is of the object type (workshops or deposits), not of texts. Reading: seals circulated and were lost
+across the city independently of their text; a seal text is not tied to a neighbourhood or household in any way these
+records can detect. Limits: sub-areas are excavation units, not social units, and the house labels are the
+excavators'. Tally, counting parts: 1070 held, 1011 failed (2081 registered).
