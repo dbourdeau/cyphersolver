@@ -8585,3 +8585,22 @@ a known answer and is language-specific; the dictionary-parse key bench does not
 C = 2 of 4 methods passed. The two-direction WORD model gains on the fixed test (top-10 3.0% -> 3.9%) but not A -> B
 (2.5% both; GA4, GA5 fail). Progress (GA6): streak 0. Next: the published Indus keys through this scorer. Tally,
 counting parts: 1332 held, 1231 failed (2563 registered).
+
+# Two-hundred-and-sixth set, registered before testing (24 September 2026): decipherment loop 31, the published keys through the validated scorer (five hypotheses)
+
+Metric after loop 30: prize tiers V 0.008%, C 2 of 4 (the character-LM key scorer of set 205 passes the Linear B gate
+and is language-specific), U 0; streak 0. The published Indus keys (keys/*.tsv on ICIT ids: Fairservis 1992,
+Mahadevan 2014, Parpola 1994, Kak 1988; Yajnadevam 2024 xlits.csv) go through that scorer: every distinct line (A +
+B) decoded, values joined without dividers, scored per character by an order-5 character model (the order chosen on
+Linear B) of each language: Sanskrit (Monier-Williams headwords), Dravidian (DEDR forms, all languages), Sumerian
+(ePSD2 citation forms); keys' values and all word lists reduced to plain lowercase a-z (diacritics stripped) so the
+three languages are scored alike. Each key against 100 of its own shuffles (values permuted among signs of similar
+frequency, bench.shuffles, band 10).
+
+- **KY1** At least one published key beats 95 or more of its 100 shuffles in its claimed language.
+- **KY2** Every key that passes KY1 also fails to beat 95 of 100 shuffles in both other languages (it is specific).
+- **KY3** For most keys (majority), the margin over the shuffle median is largest in the claimed language.
+- **KY4** Positive check that the reduction to a-z does not break the gate: Ventris's Linear B key, Greek model trained
+  on the same reduced forms, still beats 95 of 100 shuffles on the even lines.
+- **KY5** Progress rule: KY1 and KY2 hold (a published key reads its language as specifically as Ventris's reads
+  Greek). If KY1 fails, the folder records that no published key passes a gate-validated test.
