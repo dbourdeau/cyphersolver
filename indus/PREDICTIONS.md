@@ -1973,3 +1973,38 @@ The heading
 Tokens and pots (F)
 - **I22** Incised count tokens have the value 4 more often than moulded ones.
 - **I24** Pot inscriptions with a name ending come from Harappa more often than seals with a name ending do.
+
+## Results of the thirty-first set (added after the test; `predict_test31.py`, `results/predict_test31.md`)
+
+Fourteen held, eleven failed. (The first run stopped on a comprehension bug in I1, a filter placed after the unpacking;
+it was fixed and the set rerun with the same seed.)
+
+**Copper tablets: a vocabulary of their own, tied to the picture.**
+- **I3 holds**: copper tablets with the same text carry the same picture in 92% of 586 pairs (p = 0.0001).
+- I1 fails decisively: none of the 139 copper-tablet lines is a seal name body. **I4 holds**: they open with different
+  signs from seal lines (p = 0.0001). **I2 holds**: they use fish signs less (-12 points).
+- The copper-tablet text goes with its picture, not with the names of people: it most likely names or describes what
+  is shown. This is the one place where Indus text and a known referent (the animal or scene) are paired consistently,
+  the 'copper-tablet bilingual' already used as an anchor in the earlier passes (anchors.py); here it is confirmed that
+  the pairing is exclusive and repeatable.
+
+**Moulded name tablets and receipts are different genres.**
+- **I8 holds** (moulded name tablets end in 520 in 18.7%, receipts in 1 of 83), **I9 holds** (they carry the heading
+  7%, receipts never), **I12 holds** (they are later at Harappa: 51% against 21%), **I23 holds** (they run left to right
+  5.4% against 2.5% of seals: moulded, so reversed). I10, I11 fail.
+- **I14 holds**: receipt names contain a fish sign far less often than seal names (15.7% against 46.1%). Receipts name
+  persons (740, no fish); moulded name tablets carry the fuller, titled, fish-bearing names. I13 fails the other way
+  (receipt names hold numerals less often, 22.9% against 47.3%).
+
+**Numeral idioms.** **I15 holds** (a two-sign name is 'numeral + sign' more often than pairs inside longer names: 17.3%
+against 14.2%) and **I16 holds** (the idiom's sign closes the name 45.4% of the time, other pairs' second sign 36.5%):
+a numeral idiom is often a whole name or its head. I17 fails.
+
+**The heading.** **I18 holds**: for all 14 heads with 5+ headed and 5+ unheaded names, the majority ending is the same
+with and without the heading. The heading is outside the name's grammar. **I25 holds**: Kalibangan seal lines carry the
+heading less than Mohenjo-daro's (-14.7 points, p = 0.012): a regional habit. I19, I20, I21 fail.
+
+**Other.** **I7 holds** (names on other-animal seals end in a head-class sign less often: 30% against 40%). **I22 holds**
+(incised count tokens are 4 in 42%, moulded in 22%). I5, I6, I24 fail.
+
+Tally, counting parts: 168 held, 244 failed (412 registered).

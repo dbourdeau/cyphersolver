@@ -1151,6 +1151,14 @@ it is a name idiom, not a count.** Moulded tokens count less (HA11). Headed stro
 (HA15 reverse). Other-animal seals: more 520 names, shorter names (HA16, HA17). Copper tablets: never headed, all
 Mohenjo-daro (HA20, HA21); small objects carry labels (HA22). Tally 154 held, 233 failed.
 
+## Forty-fifth pass (24 Sept 2026): labels, moulded names, idioms, the heading
+
+Registered first (PREDICTIONS.md, thirty-first set, a05254f78), tested (`predict_test31.py`). **Copper tablets: same
+text, same picture in 92% of pairs (I3); no copper text is a seal name (I1, 0 of 139); different openers (I4), fewer
+fish (I2): the text names or describes what is pictured.** Moulded name tablets carry 520, the heading, later dates
+(I8, I9, I12); receipts are 740 persons without fish (I14). Numeral idioms are whole names or heads (I15, I16). The
+heading never changes the ending (I18, 14 of 14); Kalibangan uses it less (I25). Tally 168 held, 244 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
