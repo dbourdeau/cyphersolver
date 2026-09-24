@@ -44,6 +44,7 @@ Level X items with public solutions (Vatican Part 3, Catherine of Aragon) are on
 |---|---|---|---|---|
 | 115 | Bigram Substitution, Part 2 | II | Solved 24 Sept 2026 (no earlier LLM solve); key verified by re-encryption; answer in `private/` (git-ignored), not yet submitted | `115-bigram2/` |
 | 180 | Monoalphabetic Substitution with Camouflage, Part 6 | II | Attempted, open: the search never reaches the true key | `180-camouflage6/` |
+| 272-274, 292 | Weakened ElsieFour 1-3, ElsieFour 1 | II / III | In progress: SAT model recovers keys with 12 known cells; full known-plaintext recovery not yet finished | `272-274-weakened-elsiefour/` |
 
 Answers to live challenges are kept in each folder's `private/` directory, which is git-ignored: the repository is public,
 and publishing an answer would spoil the challenge.
