@@ -31,7 +31,7 @@ TOOL_PAGES = {'atlas', 'keys', 'secret', 'indus-bench', 'glossary'}   # interact
 # profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
 FAMOUS = {'indus', 'voynich', 'beale', 'kryptos', 'dorabella', 'zodiac', 'z340', 'z13', 'linear_a', 'lineara',
           'phaistos', 'rongorongo', 'rohonc', 'goldbar', 'pigeon', 'shugborough', 'tamamshud'}
-NOT_TARGETS = {'docs', 'papers', 'gallica_siblings', 'gallica_sweep', 'top50', 'oldest', 'source_headings.txt'}
+NOT_TARGETS = {'docs', 'papers', 'mtc3', 'gallica_siblings', 'gallica_sweep', 'top50', 'oldest', 'source_headings.txt'}
 
 def read(p):
     try: return pathlib.Path(p).read_text(encoding='utf-8')
