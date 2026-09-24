@@ -5892,3 +5892,22 @@ merged). Lines with a rare sign are longer (RA5: 4.9 against 4.3). Otherwise rar
 more medial (RA3, the other way), not clustered (RA4; RA10 in F'), not more Mohenjo-daran (RA6: 64% both), not usually
 next to a common sign in the numbering (RA7: 16%), and 14% of their tokens stand in the ending slot as heads before an
 ending or closer (RA8). Tally, counting parts: 985 held, 960 failed (1945 registered).
+
+# Hundred-and-twenty-eighth set, registered before testing (24 September 2026): forbidden pairs and a family grammar (ten hypotheses)
+
+Distinct lines (A + B) unless stated. 'Common' = non-numeral signs with 20+ tokens. Expected adjacency count of a pair =
+(left count x right count) / total adjacencies. A 'gap' = a pair of common signs with expected 5+ and observed 0; an
+'excess' pair = observed 5+ and at least 5 times expected. Blocks as before. 1,000 within-line shuffles where marked;
+p < 0.05.
+
+- **FA1** There are at least twice as many gaps as in within-line shuffles (mean over 1,000).
+- **FA2** 50%+ of excess pairs involve an ending (740/520), a suffix (400/90/151) or a numeral.
+- **FA3** 20%+ of common non-ending signs never directly precede 740.
+- **FA4** Signs that precede 740 and signs that directly follow a numeral overlap at Jaccard 0.3 or less.
+- **FA5** Block-level adjacency (block of left sign, block of right sign) carries mutual information beyond within-line
+  shuffles (1,000).
+- **FA6** Block-level adjacency MI is 20%+ of sign-level adjacency MI.
+- **FA7** Gap pairs are same-block less often than excess pairs are.
+- **FA8** B: FA1 holds.
+- **FA9** F without copper: FA5 holds.
+- **FA10** 30%+ of gaps involve a heading sign or a numeral.
