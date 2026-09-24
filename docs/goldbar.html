@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Chinese gold bar cryptograms (1933) — not a cipher at all</title>
-<meta name="description" content="The Latin-letter cryptograms stamped on seven gold bars said to have been issued in Shanghai in 1933 contain almost exactly ten of every letter of the alphabet. That is about a trillion times too uniform to be an encryption of natural language. The inscriptions were constructed, not enciphered.">
+<title>The Chinese gold bar cryptograms, Shanghai 1933</title>
+<meta name="description" content="The sixteen Latin-letter strings stamped on seven gold bars said to have been issued in Shanghai in 1933 contain almost exactly ten of every letter of the alphabet. No encryption of a natural-language text gives a distribution that uniform: the letters were counted out by hand, and there is no message.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <style>
 .freqchart{width:100%;max-width:760px;height:auto;color:var(--ink);margin:1rem 0;display:block}
@@ -48,10 +48,10 @@
 
 <section class="hero">
   <div class="cipherstrip">MQOLCSJTLGAJOKBSSBOMUPCE<br>FEWGDRHDDEEUMFFTEEMJXZR<br>ZUQUPNZN &middot; VIOHIKNNGUAB</div>
-  <p class="kicker">Shanghai &middot; 1933 &middot; famous unsolved &middot; resolved</p>
+  <p class="kicker">Shanghai &middot; 1933 &middot; Latin letters stamped on gold bars &middot; Schmeh Top 50 no. 49</p>
   <h1>The Chinese gold bar cryptograms</h1>
-  <p class="sub">Seven bars said to certify a deposit of $300,000,000, stamped with sixteen strings of Latin letters that nobody has read in ninety years</p>
-  <p class="sub">They have not been read because there is nothing to read. The letters were dealt out, not enciphered.</p>
+  <p class="sub">Seven bars said to certify a deposit of $300,000,000, stamped with sixteen strings of Latin letters for which no decipherment has been proposed in ninety years</p>
+  <p class="sub">The strings contain almost exactly ten of every letter, a distribution flatter than any encryption can produce. The letters were counted out and arranged by hand, so there is no ciphertext and no message. The flat count had been noticed before (a commenter on Schmeh&rsquo;s blog, Nick Pelling, Bret Bowen); this page checks the transcription against the photographs and measures how improbable the pattern is.</p>
   <p class="meta">Daniel Bourdeau &middot; resolved <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-09-21">21 September 2026</time></p>
 <div class="seal found" aria-hidden="true"><span>no message</span></div>
 </section>
@@ -60,9 +60,9 @@
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#object">The object</a><a href="#corpus">The sixteen cryptograms</a><a href="#finding">Ten of everything</a><a href="#why">Why no cipher can do that</a><a href="#meaning">What it means</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> The sixteen inscriptions hold 263 letters between them, and they contain <em>almost exactly ten of every letter of the
-alphabet</em> &mdash; twenty-one of the twenty-six appear exactly ten times. Measured against a uniform distribution the chi-squared statistic is
-<strong>1.25 on 25 degrees of freedom, where random sampling predicts 25</strong>. That is a one-in-a-trillion level of over-uniformity, and it is
-not something any encryption can produce: substitution and transposition both preserve the plaintext&rsquo;s frequency skew, and even a one-time pad
+alphabet</em>: twenty-one of the twenty-six appear exactly ten times. Measured against a uniform distribution the chi-squared statistic is
+<strong>1.25 on 25 degrees of freedom, where random sampling predicts 25</strong>. That is a one-in-a-trillion level of over-uniformity, and no
+encryption can produce it: substitution and transposition both preserve the plaintext&rsquo;s frequency skew, and even a one-time pad
 is still random sampling and lands near 25. Somebody laid out ten of each letter and arranged them to look like cryptograms.
 <em>Status: resolved as a construction, not a cipher. There is no message.</em>
 </div>
@@ -76,7 +76,7 @@ photographs in the hope that reading the cryptograms would help settle it.</p>
 <figure data-credit="Kevin McCurley, &ldquo;Cryptograms on Gold bars from China&rdquo;, IACR (1996), iacr.org/misc/china"><img src="goldbar_bar.jpg" alt="A gold bar stamped with USA, the figure 300000000, two portraits, and rows of Latin-letter cryptograms">
 <figcaption>One of the bars (IACR, 1996). The cryptograms are stamped around the portraits, above and below the figure 300000000. <span class="credit">Image: Kevin McCurley, &ldquo;Cryptograms on Gold bars from China&rdquo;, IACR (1996), iacr.org/misc/china.</span></figcaption></figure>
 
-<p>Elonka Dunin has carried the item on her list of famous unsolved codes ever since. In 2020 she reached the attorney named on the IACR page, who
+<p data-term-ok>Elonka Dunin has carried the item on her list of famous unsolved codes ever since. In 2020 she reached the attorney named on the IACR page, who
 confirmed he had seen the bars, described them as about the size of a remote control, and said the banks had not treated the claim as legitimate;
 his file was closed. Others have noted that the aircraft depicted on the bars is a model that did not fly until 1934 or 1935, after the date the
 bars claim for themselves.</p>
@@ -90,7 +90,7 @@ letter on at least one clear bar, UGMNCBXCFLDBEY is thirteen letters on every ba
 clearest cast, possibly B on another), and the second K of KOWVRSRKWTMLDH is not visible on any bar. Details in the notes.</p>
 
 <h2 id="finding"><span class="num">03</span> Ten of everything</h2>
-<p>Count the letters and the answer arrives immediately.</p>
+<p>Counting the letters shows the pattern.</p>
 <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" class="freqchart" role="img" aria-label="Letter counts on the gold bars are almost perfectly uniform, unlike English">
 <line x1="34" y1="266" x2="726" y2="266" stroke="currentColor" stroke-opacity=".35"/>
 <line x1="34" y1="199.5" x2="726" y2="199.5" stroke="#6fd39a" stroke-dasharray="4 4" stroke-opacity=".9"/>
@@ -187,11 +187,11 @@ except I which is off by three:</p>
 <tr><td>S</td><td class="num">11</td><td>all other 21 letters</td><td class="num">10</td></tr>
 </table>
 
-<p>Ten of each would be 260 letters exactly; the transcription gives 263. Re-reading the photographs removes one letter (the fourteen-letter string
+<p>Ten of each would be 260 letters exactly; the transcription gives 263. Checking the photographs removes one letter (the fourteen-letter string
 is thirteen on the bars) and leaves one more in doubt, so the true total is 261 or 262. It does not remove the deviations: I is thirteen on every
-reading, and depending on how the two doubtful glyphs are read the letters off by one are three to seven. The bars carry <em>about</em> ten of each
-letter, not exactly ten with a noisy transcription. Under every defensible reading the chi-squared stays between 1.2 and 1.5 and the probability
-near one in a trillion. A person counting out ten of each letter and losing count by one or two is precisely this pattern.</p>
+reading, and depending on how the two doubtful glyphs are transcribed the letters off by one are three to seven. The bars themselves carry <em>about</em> ten of each
+letter; the deviations are not transcription noise. Under every defensible reading the chi-squared stays between 1.2 and 1.5 and the probability
+near one in a trillion. A person counting out ten of each letter and losing count by one or two gives this pattern.</p>
 
 <h2 id="why"><span class="num">04</span> Why no cipher can do that</h2>
 <table class="kt">
@@ -203,18 +203,18 @@ near one in a trillion. A person counting out ten of each letter and losing coun
 <tr><td>random 263-letter strings at least this uniform, out of 200,000</td><td><b>0</b></td></tr>
 </table>
 
-<p>The point that does the work is not that the distribution is flat. It is that the distribution is flat <em>beyond what randomness allows</em>.
-Take the candidates in turn:</p>
+<p>The argument rests on the distribution being flat <em>beyond what randomness allows</em>.
+The candidate ciphers in turn:</p>
 <ul>
 <li><b>Simple substitution</b> renames letters but cannot change how often they occur, so it preserves the plaintext&rsquo;s skew. Index of
 coincidence stays near 0.066.</li>
 <li><b>Any transposition</b> reorders letters and leaves the counts completely untouched.</li>
 <li><b>A short-key Vigen&egrave;re</b> flattens partway, to roughly 0.045, and leaves periodic structure behind.</li>
-<li><b>A long key, or a one-time pad</b>, does reach a flat expectation &mdash; but it gets there by random sampling, and random sampling is noisy.
+<li><b>A long key, or a one-time pad</b>, reaches a flat expectation, but by random sampling, and random sampling is noisy.
 Draw 263 letters uniformly and the counts scatter with a standard deviation near 3.1, so you expect a spread from about 4 to 16 and a chi-squared
 near 25. Twenty-one letters landing on exactly ten is not what randomness looks like.</li>
 </ul>
-<p>Only deliberate construction produces it. And once the letters were dealt out, the arrangement into sixteen strings looks unconsidered: there are
+<p>Only deliberate construction produces it. The arrangement of the letters into the sixteen strings looks random. There are
 71 places where a letter repeats inside a string, against 65.6 expected when the same pool of letters is shuffled at random into the same lengths.
 Somebody counted out ten of each letter and distributed them.</p>
 
@@ -222,10 +222,10 @@ Somebody counted out ten of each letter and distributed them.</p>
 <p>The inscriptions are decorative filler, made to look like cryptography on an object whose purpose was to look like a security. That sits with
 everything else known about the bars: an aircraft that had not yet been built on a bar dated 1933, banks that declined the claim, and a legal file
 closed without resolution.</p>
-<p>The honest conclusion is that the item should move off the unsolved-cipher lists, not because it has been read but because there is no message in
-it. Ninety years of failure to decipher these strings has a simple explanation, and it is the one the statistics force.</p>
+<p>The item should be reclassified on the lists of famous ciphers as a construction with no message in
+it. The statistics explain why ninety years of attempts produced no decipherment.</p>
 <p class="muted">On the transcription: the argument was first made on the IACR&rsquo;s 1996 transcription alone, with its author&rsquo;s warning that
-some letters were hard to read. The letters have since been re-read from the fifteen IACR photographs, enlarged and contrast-stretched. Fourteen of
+some letters were hard to read. The letters have since been re-transcribed from the fifteen IACR photographs, enlarged and contrast-stretched. Fourteen of
 the sixteen strings are confirmed; one is a letter shorter than published and one letter in another is unresolved at the resolution available. The
 statistics were recomputed for every reading, and the result does not move.</p>
 
@@ -236,8 +236,8 @@ statistics were recomputed for every reading, and the result does not move.</p>
 <ul>
 <li>Kevin McCurley, <a href="https://www.iacr.org/misc/china/">&ldquo;Cryptograms on Gold bars from China&rdquo;</a>, IACR, 1996, and the
 <a href="https://www.iacr.org/misc/china/cryptograms.html">compiled cryptograms</a>. Photographs reproduced from that page.</li>
-<li>Elonka Dunin, <a href="https://elonka.com/UnsolvedCodes.html">list of famous unsolved codes</a>, including her 2020 update.</li>
-<li>Klaus Schmeh, <a href="https://scienceblogs.de/klausis-krypto-kolumne/2017/02/11/the-top-50-unsolved-encrypted-messages-49-the-chinese-goldbar-cryptogram/">&ldquo;The Top 50 unsolved encrypted messages: 49. The Chinese goldbar cryptogram&rdquo;</a>, 2017, where a commenter first noticed the ten-of-each pattern.</li>
+<li data-term-ok>Elonka Dunin, <a href="https://elonka.com/UnsolvedCodes.html">list of famous unsolved codes</a>, including her 2020 update.</li>
+<li data-term-ok>Klaus Schmeh, <a href="https://scienceblogs.de/klausis-krypto-kolumne/2017/02/11/the-top-50-unsolved-encrypted-messages-49-the-chinese-goldbar-cryptogram/">&ldquo;The Top 50 unsolved encrypted messages: 49. The Chinese goldbar cryptogram&rdquo;</a>, 2017, where a commenter first noticed the ten-of-each pattern.</li>
 <li>Reproduce with <code>goldbar/analyse.py</code> in the repository.</li>
 </ul>
 
