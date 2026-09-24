@@ -1970,6 +1970,14 @@ Parpola's 'most frequent sequence'; '3 + fish' second and the '7 + fish' seal do
 a head. The Soviet-team inflection claims fail as stated. Possible sign-identification difference with Parpola's corpus
 noted. Tally 1060 held, 1001 failed.
 
+## Hundred-and-fifty-third pass (24 Sept 2026): a second transcription (Parpola's CISI)
+
+Registered first (hundred-and-thirty-ninth set, d3781d240). The open CISI digitisation (mayig, MIT, M-1 to M-184) was
+loaded (`cisi.py`, `data/cisi_mayig.tsv`) and joined to ICIT by CISI number: 157 intact objects. The editions agree on
+length (96%), positions (92%) and last signs (98%); the ending paradigm holds in Parpola's numbering (88%). In
+Parpola's own transcription of these seals '2 + fish' is the commonest count and '6 + fish' does not occur, so the
+set-138 discrepancy is not ICIT's sign identification. Tally 1069 held, 1002 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

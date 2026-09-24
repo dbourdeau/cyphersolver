@@ -6285,3 +6285,22 @@ both editions and equal length. Numeral values: R.NUMS of the mapped glyph. Dist
 - **CS10** The ending paradigm holds in CISI's text: of CISI lines whose last sign maps to 740 or 520 or a closer,
   the sign before it maps to a sign attested before that ending in the rest of ICIT (A + B minus these objects) in
   80%+.
+
+## Results of the hundred-and-thirty-ninth set (added after the test; `predict_test139.py`, `results/predict_test139.md`)
+
+Nine held, one failed. 157 joined intact objects (sides with P000 left out). The two editions agree closely on these
+Mohenjo-daro seals: the same length in 96% (CS1), 92% of positions on 143 single-line objects (CS2), the last sign in
+98% (CS5), the jar P324 the commonest last sign (CS6: 71 of 157). The ending paradigm holds in Parpola's text: the sign
+before an ending is one ICIT attests there in 88% (CS10). CISI uses fewer distinct signs (CS9: 176 against 215;
+Parpola's inclusive allographs). Disagreements fall on rare signs (CS8: 23% against 5%), not on the positions the
+digitiser marked uncertain or damaged (CS7 fails, 9.5% against 8.2%); the commonest are P230/798, P201/65 and
+P364/806, splits between near-identical signs.
+
+**The '6 + fish' question.** CS3 and CS4 hold: the counted fish agree between editions (23 of 28), and in Parpola's
+own CISI text of these objects the counts before a fish are 2 (13), 1, 3 (2 each), 14, 8, 4; no 6. The rarity of
+'6 + fish' found in the hundred-and-thirty-eighth set is therefore not a matter of ICIT's sign identification, at
+least on the 157 Mohenjo-daro seals CISI's digitisation covers; Parpola's 'most frequent sequence' must rest on
+counting sequences rather than distinct texts, or on other sites, or on a wider sense of 'six'. Caveat: the
+M77-to-ICIT half of the sign map was learned by alignment on the whole corpus, which includes these objects, so
+agreement rates are an upper bound; the numeral and fish identities (P122 = 2, P126 = 6, P050 = 220) are not in
+doubt. Tally, counting parts: 1069 held, 1002 failed (2071 registered).
