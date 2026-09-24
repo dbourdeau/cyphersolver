@@ -1498,6 +1498,13 @@ names are real, varied counts, not fixed name parts. 'N [mod head]' with an atte
 'N [fish head]'. Names and formulas are two systems over one sign set: fewer shared pairs than chance, different
 neighbours for the same sign, the counted item closes formulas only. Tally 479 held, 548 failed.
 
+## Ninety-second pass (24 Sept 2026): the grammar of the formulas
+
+Registered first (seventy-eighth set, b445293c9), tested on distinct lines (`predict_test78.py`). Formulas read as
+[header] [N item] ([N item]): the header (a name in 23%) selects the item, the item sets the count, a header takes
+several items, two-count formulas list different items, and headers are commoner on seals. Items are somewhat more
+often formula-only signs. Tally 491 held, 556 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

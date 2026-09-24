@@ -3826,3 +3826,19 @@ Replication
 - **FG18** B: FG3 holds.
 - **FG19** Harappa (F): FG8 holds.
 - **FG20** Mohenjo-daro (F): FG8 holds.
+
+## Results of the seventy-eighth set (added after the test; `predict_test78.py`, `results/predict_test78.md`)
+
+Twelve held, eight failed; distinct lines throughout. Of 725 numeral formulas, 499 have signs before the first number
+(a 'pre'). The pre works as a header: it selects the counted item (FG3: 3.35 bits, p = 0.0001; FG18 in B, p = 0.019),
+a repeated pre occurs with several items (FG4: 40 of 50), 23% of pres are attested name bodies (FG1), and seal formulas
+have a pre more often than tablet formulas (FG6: 72% against 62%). The item sets the count (FG8, p = 0.0001; FG19
+Harappa, p = 0.02; FG20 Mohenjo-daro, p = 0.0001), items are formula-only signs more often than pre signs (FG9: 13%
+against 8%), and most items take several values (FG12: 34 of 63). Two-count formulas list different items (FG14: 57 of
+58). So the formula reads as [header] [N item] ([N item]): a header, often a name, followed by counted items. Not
+supported: pre-final signs are not name heads more than items are (FG2: 76 against 86; FG17 in B: 25 against 27), and
+FG5 (68% of pres end in a name head) is close to the base rate (two thirds of formula tokens are head signs); seal
+headers are not names more than tablet headers (FG7); items are not closed off by 400/90/151 (FG10: 18%; what follows is
+615, 390, 527, 405); items before a final 400 are few in number (22) and varied (FG11); cities share few (value, item)
+types (FG13: 17%); lists do not run large to small (FG15) and item pairs do not recur (FG16: 1). Tally, counting parts:
+491 held, 556 failed (1047 registered).
