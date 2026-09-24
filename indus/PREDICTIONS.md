@@ -2697,3 +2697,21 @@ more often one-off names in B (RP6: 78% against 82%), so SK7 does not replicate 
 Caveat: B is a second transcription of largely the same objects, so it guards against transcription choices, not
 against the sample; the other-site tests are the independent ones. Tally, counting parts: 269 held, 358 failed (627
 registered).
+
+# Forty-seventh set, registered before testing (24 September 2026): inside the number-first formulas (second loop, round 1 of 10)
+
+'Formula' = a non-name line (2+ signs, no 740 or 520), as in the forty-fourth set. A + B pooled unless F is named.
+Numeral value and kind from numerals.NUMS. 10,000-draw permutations; p < 0.05.
+
+- **FI1** In formulas, the numeral kind (short, long, tiered) depends on the sign that follows (MI, permutation).
+- **FI2** The last sign of a formula depends on whether it opens with a numeral (MI, permutation).
+- **FI3** Formulas opening with a numeral are shorter than other formulas (rank test).
+- **FI4** (numeral value, next sign) pairs in formulas are idiomatic: fewer distinct pairs than when numerals are
+  shuffled among formula numeral slots.
+- **FI5** 20%+ of formulas with a numeral share their non-numeral residue with another formula carrying a different
+  numeral value.
+- **FI6** In formulas, 90%+ of numerals stand directly before a non-numeral sign.
+- **FI7** Harappa formulas open with a numeral more often than Mohenjo-daro formulas, length-stratified (F).
+- **FI8** Tablet formulas open with a numeral more often than seal formulas, length-stratified (F).
+- **FI9** 10%+ of formula tokens (numerals left out) are signs never seen in a name body.
+- **FI10** Formulas found on 2+ objects are shorter than formulas found on one (F, distinct texts, rank test).
