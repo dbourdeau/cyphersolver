@@ -23,7 +23,7 @@ from predict_test108 import genre
 from predict_test161 import heading
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-MODEL = {'keys': ['tri', 'pos', 'end'], 'kn': True}          # set 125 (BB2-BB4)
+MODEL = {'keys': ['tri', 'pos', 'end', 'ftri'], 'kn': True}  # set 125 (BB2-BB4); ftri = graphic-family trigram, set 194 (FB1-FB6)
 ANCHORS = {'749': 'markhor goat', '341': 'rhinoceros', '753': 'hare', '777': 'markhor goat / horned archer'}  # copper-tablet equations (fourth pass)
 VALUES = {}                                                   # no sound value has passed a registered test
 CAGED = {'226', '232', '153', '236', '241', '144', '393', '895', '466', '804', '878', '689'}  # set 184
@@ -44,9 +44,8 @@ def data():
 
 
 def structure(tr, te):
-    w = fit(tr, MODEL['keys'], MODEL['kn'])
-    m = M2(tr)
-    bits = xent([r for t in te for r in m.rows(t, MODEL['kn'])], w)
+    from famlm import score3
+    bits, w = score3(tr, te, MODEL['keys'], MODEL['kn'])
     uni = Counter(g for t in tr for g in list(t) + ['</s>'])
     n = sum(uni.values())
     h1 = -sum(v / n * math.log2(v / n) for v in uni.values())

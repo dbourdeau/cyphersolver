@@ -8209,3 +8209,13 @@ end; weights fitted on the training lines' own dev split). A design run on the t
 - **FB4** Decade families gain more than the coarser hundred blocks (g // 100) as families.
 - **FB5** The weight fitted to `ftri` is nonzero on both the fixed split and the A->B run.
 - **FB6** Progress rule: FB1 and FB2 hold (S improves and the gain replicates on B).
+
+## Results of the hundred-and-ninety-fourth set (added after the test; `predict_test194.py`, `results/predict_test194.md`, `famlm.py`)
+
+All six held. Seeing the two previous signs by their graphic family (ICIT decade block) improves S for the first time
+since the metric began: 4.7124 -> 4.6973 bits/sign on the fixed test (FB1, gain 0.015). Trained on A and tested on the
+new B lines the gain is larger, 5.259 -> 5.237 (FB2). Random families of the same sizes gain nothing (-0.002 to +0.0004;
+the decade families beat all 20 draws, FB3), nor do the coarse hundred blocks (-0.001, FB4); the family component gets
+weight 0.08 in both runs (FB5). So graphic variants share contexts: the variant marks (cage, strokes, fish marks) sit on
+a base sign whose grammatical environment carries over, which fits the morphographic reading of loops 9-14. S enters the
+metric at 4.697. Progress: streak 0. Tally, counting parts: 1294 held, 1202 failed (2496 registered).

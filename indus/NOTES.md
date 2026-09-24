@@ -2362,6 +2362,12 @@ Registered first (fa167cfa6). G is now scored as a margin over shuffled lines. G
 frequent heads) raises it on B 30.7 to 34.7 and F 17.0 to 17.3, but covers only 56% of B. Progress: streak 0. Tally
 1288 held, 1202 failed.
 
+## Two-hundred-and-eighth pass (24 Sept 2026): decipherment loop 19, graphic families as context
+
+Registered first (24f8dffc4). A family-trigram component (famlm.py) improves S for the first time: 4.712 -> 4.697; the
+gain replicates A -> B (0.022) and random families of the same sizes give none (20 of 20). Progress: streak 0. Tally
+1294 held, 1202 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
