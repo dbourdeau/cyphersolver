@@ -7786,3 +7786,30 @@ sense begins with the concept) chose obscure words: 'man' became Monier-Williams
 not the ordinary words (nara, puruṣa; āḷ, maṉ). The keys therefore measure lookup noise as much as language, and no
 language inference is drawn. The next loop repeats the test with a lookup that prefers the basic word. Tally, counting
 parts: 1238 held, 1163 failed (2401 registered).
+
+# Hundred-and-eighty-first set, registered before testing (24 September 2026): decipherment loop 6, a world-wide language search by rebus substitution (eight hypotheses)
+
+Loop 5's depiction keys failed on lookup noise. Loop 6 replaces the lookup with basic vocabulary and replaces the three
+hand-picked languages with every language that can be scored. Depiction map (fixed now, before any language is
+scored): signs.FISH -> FISH; noun_class.HUMAN -> PERSON; signs.CRAB -> CRAB; signs.FIG -> FIG; and each sign Fairservis
+identifies ('sure'/'likely') whose identification (before '=>') contains, first in this order, one of: woman ->
+WOMAN, bow -> BOW, arrow -> ARROW, pot / jar / container -> POT, tree -> TREE, sun -> SUN, moon / crescent -> MOON,
+rain -> RAIN (PRECIPITATION), mountain -> MOUNTAIN, river -> RIVER, drum -> DRUM, comb -> COMB, shield -> SHIELD,
+sickle -> SICKLE, fence -> FENCE, roof / cover -> ROOF, grain -> GRAIN, leaf / pipal -> LEAF, duck -> DUCK, bee ->
+BEE, spear -> SPEAR, axe -> AXE, basket -> BASKET, wheel -> WHEEL, man -> PERSON. Words: CLICS4 (clics4/cldf
+forms, the first form of each language for each concept), compared as IPA segment strings (normalised Levenshtein
+over segments). Substitution pairs as set 179 on A and on B names; pairs whose two signs map to the same concept are
+left out (every language 'matches' them); chance = the language's words shuffled among the concepts (200 draws); z =
+(observed - shuffled mean) / shuffled sd. Languages scored: those with words for 12+ of the mapped concepts and 30+
+usable pairs. Families from CLICS4's Family_Name; Indo-Aryan = Indo-European languages of South Asia (longitude
+66-92, latitude 6-36).
+
+- **LS1** Dravidian languages have a mean percentile rank of 0.75 or more among all scored languages.
+- **LS2** Indo-Aryan languages have a mean percentile rank of 0.75 or more.
+- **LS3** The Dravidian mean z is above the Indo-Aryan mean z.
+- **LS4** Among families with 5+ scored languages, Dravidian has the highest mean z.
+- **LS5** The median z over all languages is below 0.5 (the test does not reward every language).
+- **LS6** Scores are stable: Spearman between per-language z on A-pairs and on B-pairs is 0.3 or more.
+- **LS7** The top-ranked language has z >= 2 on A-pairs and on B-pairs separately (a P candidate).
+- **LS8** Control: with the concepts shuffled among the signs (20 shuffled maps), Dravidian's mean percentile falls
+  below its real value in 19 of 20 (any Dravidian lead depends on the depictions).
