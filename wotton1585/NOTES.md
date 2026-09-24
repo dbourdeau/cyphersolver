@@ -20,7 +20,7 @@ There is no letter cipher. The drafts can be read as they stand; the only task i
 | 10 | **King James VI** | "possess themselves of 10 and 19"; "the 10 house"; "hold the 10 from Stirling"; "his reconciliation with 10" (the drafts also write "the K." in clear) |
 | 9 | Queen Elizabeth / England (probable) | "the K. ... very desirous of the 9 friendship" |
 | 20 | a banished or disaffected lord seeking peace with the King through Arran; "20 make some incursion upon the L. of [Jo]hnstone with whom he hath a quarrel" → **Lord Maxwell** (probable) |
-| 24 | a Catholic lord, suspected of a secret agreement with Arran and of a plan to take the King to France, paying his men with French crowns (the Jesuits' 6000 crowns) → **Earl of Huntly** (probable; not certain) |
+| 24 | a Catholic lord, suspected of a secret agreement with Arran and of a plan to take the King to France, paying his men with French crowns (the Jesuits' 6000 crowns) → ~~Earl of Huntly~~ **Sir Thomas Kerr of Ferniehirst** (CSP Scotland viii glosses "Farnyhurst"; see below) |
 | 3 | France or the Guise party (probable) | "divert him from 3", "convey him towards 3 ... into France" |
 | 27, 40 | two of Gray's associates at court ("39. 40. 27. [cannot] live safely in the court"); 27 "was greatly hers [Mary's] and is a great favourer of the Hamiltons" | unidentified (candidates: Secretary Maitland, Justice Clerk Bellenden) |
 | 32 | a place into which Arran might "convey himself" (a castle) | unidentified |
