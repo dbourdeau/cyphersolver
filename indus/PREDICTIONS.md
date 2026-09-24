@@ -6507,3 +6507,26 @@ the 520 class does not grow. This is the diachronic form of the finding that the
 productive default, 520 a closed set of old heads. Reading: the ending slot is a stable convention over the period the
 levels cover (generations, not centuries of language change); if it wrote grammatical endings, the grammar did not
 move in that span. Tally, counting parts: 1085 held, 1028 failed (2113 registered).
+
+# Hundred-and-forty-fifth set, registered before testing (24 September 2026): Mahadevan 2014, the 'merchant of the city' phrase (eight hypotheses)
+
+First external direction, follow-up. Claims taken from the text of Mahadevan 2014 (Dravidian Proof of the Indus
+Script via the Rig Veda, Bulletin of the Indus Research Centre 4; read in the PDF, Section I and Section III
+notes), not from memory. His gender reading of the endings was tested before (X8-X10) and is not repeated. Claims:
+(a) the four-sign sequence A B C D (WOLF, HOOK, CROSSROADS, JAR = ICIT 255 435 690 740, as mapped in the eighth
+pass) 'can occur as a complete text, also more often as part of longer inscriptions'; (b) it is 'an integral
+linguistic unit', subdivided into AB and CD, with AB 'an attribute qualifying CD', C the root and D its suffix;
+(c) the Indus texts 'consist mostly of word signs depicting names and titles'; (d) the JAR-BEARER sign (M015 = ICIT
+154-158) and the BEARER (M012 = ICIT 151) are names (a seer; a dynasty). Distinct lines (A + B); F for sites. p < 0.05.
+
+- **MH1** ABCD is a complete text in at least one distinct line, and more of its distinct lines are longer texts
+  than complete texts.
+- **MH2** The phrase splits AB | CD: AB occurs without CD, and CD without AB, each in 3+ distinct lines.
+- **MH3** AB qualifies other heads: AB directly before a head other than 690, followed by 740, in 3+ distinct lines.
+- **MH4** The junction B-C (435-690) is the weakest of the three (lowest PMI over distinct lines).
+- **MH5** Inside longer texts, ABCD is final (followed only by markers or nothing) in 80%+.
+- **MH6** The bearer signs (151, 154-158) are name heads (last body sign before 740 or 520) in 50%+ of their tokens
+  in distinct lines.
+- **MH7** 'Mostly names and titles': 50%+ of distinct seal lines in F are names (genre 'name') or closers.
+- **MH8** As a title ('merchant of the city') the phrase occurs at 2+ sites in F and after 5+ different preceding
+  signs.
