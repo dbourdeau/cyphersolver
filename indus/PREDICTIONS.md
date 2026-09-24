@@ -385,3 +385,22 @@ Knossos and Pylos as the sources the same rule selects 47 signs, 96% of them syl
 misses 36 of 81 syllabograms. On the Indus corpus it selects 46 of 189 signs (numerals, openers, endings left out); 34
 are free on both sides. Top: 741, 742, 745 (the jar with strokes; variants of the 740 ending, i.e. grammatical
 elements, which logo-syllabic scripts usually spell by sound), 455, 365, 140, 315, 440, 125, 717, 111, 368, 480, 892.
+
+# Twelfth set, registered before testing (24 September 2026): testing the candidate sound-sign shortlist
+
+The shortlist (`results/sound_shortlist.md`, 46 signs) was drawn from home texts only. If its signs are sound signs:
+
+**SL1 Foreign names are spelled with them.** Of West Asian sign tokens (740, 520, openers and numerals left out), the
+share that are shortlist signs exceeds length-matched home draws (10,000), p < 0.05. Not independent of Y2 / RF2 (the
+list rests on the same measure); it checks the discrete list, and a failure would count against it.
+
+**SL2 Swapping one candidate for another gives a variant of the same name.** Substitution pairs: two distinct names
+(fourth-set definition, every intact object of the fuller corpus) with the same ending and length, differing at exactly
+one position. Candidate pairs: both swapped signs on the shortlist; other pairs: at least one not. Candidate pairs share
+a findspot (a site where both names occur) more often than other pairs, with the labels permuted within strata of the
+rarer name's object count (1, 2, 3+), 10,000 times, p < 0.05.
+
+**SL3 The same, for object type**: candidate pairs share an object type (SEAL / TAB / TAG / other) more often, same
+permutation, p < 0.05.
+
+The shortlist is judged supported if SL2 or SL3 holds as well as SL1.
