@@ -94,3 +94,23 @@ an internal 740 exceeds that among length-matched texts without one, Fisher p < 
   second possessor), but it was the registered one.
 - Tally of the registered predictions: 2 held (Q1, Q2: the head decides the class), 4 failed (P1, P3, R1, R2). The
   structural reading predicts where the class is set; it has not predicted plurals, numeral placement or stacking.
+
+# Fourth set, registered before testing (24 September 2026)
+
+**Hypothesis T: the two name classes are two kinds of name.** If the fish signs are 'star / god' (Parpola) and the
+520 class is closed around them, 520-ending names are divine or astral names, or titles made from them, shared by
+many holders; 740-ending names ('X's man') are personal names, one holder each. Nobody has looked at this here.
+
+Unit: distinct intact seals (object type SEAL; sealings and tablets left out, since one seal makes many sealings and
+tablets were made in batches) of the fuller ICIT corpus (icit_full.py). Name = the text before the ending with the
+heading removed (817 / 820 / 861 + 2 / 60 / 1), plus its ending 740 or 520 (a trailing 400 / 90 / 151 dropped).
+
+**T1 Recurrence.** A 520 name recurs on another seal more often than a 740 name of the same length: stratified by
+name length (1, 2, 3, 4+ signs before the ending), the pooled difference in the share of seals whose name recurs is
+positive, permutation p < 0.05 (ending labels shuffled within strata, 10,000 times).
+
+**T2 Spread.** Among names on 2+ seals, 520 names are found at 2+ sites more often than 740 names, same
+stratification, permutation p < 0.05; and 520 names beat a site-shuffled null (site labels shuffled among the seals)
+while 740 names do not.
+
+Either failing counts against Hypothesis T. A length effect alone (short names recur more) does not count for it.
