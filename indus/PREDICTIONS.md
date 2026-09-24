@@ -5589,3 +5589,25 @@ stand after 740 ('740 + closer', CE8: 34 lines; CE5: in 54% of lines with both, 
 closers are a set of endings that either replace 740 or stack after it. Not supported: 'closer 400' at the smaller sites
 (CE14: 1 line) and non-400 closer tails being counts (CE15: 32%). CE12 repeats CE2 on the same data (registered in error
 as a separate F' test) and is not independent evidence. Tally, counting parts: 932 held, 905 failed (1837 registered).
+
+# Hundred-and-nineteenth set, registered before testing (24 September 2026): the ending slot as a paradigm (fifteen hypotheses)
+
+From the hundred-and-eighteenth set: the ending slot holds 740, 520 or a closer (CL), and a closer can also stack
+after 740. 'Filler' = 740, 520 or a closer at the end of a body (heading unit removed); 'stack' = 740 or 520 directly
+followed by a closer. Distinct lines (A + B) unless stated; F' = F without copper. p < 0.05.
+
+- **EP1** 'Closer + 740' is under 10% of the adjacencies between a closer and 740 (the order is 740 then closer).
+- **EP2** Closers stack after 740 at least three times as often as after 520 (distinct lines).
+- **EP3** Which closer is used depends on whether 740 stands before it or a head does (MI).
+- **EP4** Bodies before '740 + closer' are longer than bodies before a closer alone (rank test).
+- **EP5** Lines with the heading unit have 740 before their closer more often than other closer lines.
+- **EP6** 80%+ of '740 + closer' lines are on seals (F').
+- **EP7** '740 + closer' lines are at Mohenjo-daro more often than closer-alone lines (F').
+- **EP8** 5+ bodies are attested with 3+ different fillers (740, 520 or particular closers).
+- **EP9** The filler is predicted by the head more than by the city (MI head > MI city, F' lines at the two cities).
+- **EP10** 70%+ of the 11 closers appear directly after 740 at least once.
+- **EP11** '740 + closer + 400' occurs in 2 or fewer distinct lines (no double suffix).
+- **EP12** Closer choice depends on the city (MI, F').
+- **EP13** Closer choice depends on seal against tablet (MI, F').
+- **EP14** B: EP1 holds.
+- **EP15** B: 5+ bodies occur before both 740 and a closer.
