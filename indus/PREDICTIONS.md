@@ -2891,3 +2891,16 @@ among lines (1,000 shuffles for repeat rates, 10,000 otherwise); p < 0.05.
   ranks 1-50).
 - **EN9** The sign sets of Mohenjo-daro and Harappa overlap more (Jaccard) for name lines than for formulas (F).
 - **EN10** Long lines (8+) have a lower repeat rate than lines of 3-5 signs.
+
+## Results of the fifty-third set (added after the test; `predict_test53.py`, `results/predict_test53.md`)
+
+Two held, eight failed, and the failures mostly point the other way: name lines, not formulas, are the formulaic
+genre. Name lines repeat their adjacent pairs more (EN1: 0.85 against 0.72), use fewer distinct signs at equal token
+counts (EN2: formulas had fewer in 0 of 1,000 subsamples) and hold fewer once-attested signs (EN3: 0.7% against 1.3%
+per token); their sign frequencies are more skewed (EN8: slope -0.81 against -0.69). First and last signs are about as
+varied in both (EN4, EN5), and name and formula sign sets overlap across the cities about equally (EN9, p = 0.064).
+Harappa lines (EN6: 0.79 against 0.73) and tablet lines (EN7: 0.88 against 0.70) repeat their pairs more. EN10 (long
+lines repeat less: 0.69 against 0.79) fails on its permutation because the shuffled groups keep line counts, not token
+counts, so the smaller long-line group is penalised under the null as well; the design was size-confounded. Reading:
+the formula genre is the open, varied one (many signs, many rare ones), the name genre the closed, repetitive one.
+Tally, counting parts: 309 held, 388 failed (697 registered).

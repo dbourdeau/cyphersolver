@@ -1315,6 +1315,12 @@ Registered first (fifty-second set, e4aa4d94f), tested (`predict_test52.py`). Or
 precedences (66 against 12 over the scalar rank). Numerals and fish attributes float, mostly inside long names; order
 does not depend on the ending or the city. Tally 307 held, 380 failed.
 
+## Sixty-seventh pass (24 Sept 2026): how predictable each genre is (loop 2, round 7)
+
+Registered first (fifty-third set, 67dcbd266), tested (`predict_test53.py`). Reversed expectation: name lines are the
+repetitive, closed genre (more repeated pairs, fewer signs, fewer hapaxes); formulas are open and varied. Harappa and
+tablet lines are the most repetitive. Tally 309 held, 388 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
