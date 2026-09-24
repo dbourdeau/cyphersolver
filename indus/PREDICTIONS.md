@@ -5538,3 +5538,17 @@ with signs after it; 'heading + word' = template starting H not followed by N. F
 - **OT13** 'Other' texts are one-off more often than name texts (F').
 - **OT14** B: OT8 holds.
 - **OT15** F': OT8 holds.
+
+## Results of the hundred-and-seventeenth set (added after the test; `predict_test117.py`, `results/predict_test117.md`)
+
+Nine held, six failed. The 312 'other' lines are extensions of the known genres: 160 are names with a short tail (OT4:
+89% of tails 1-3 signs), 100 are bare lines that contain a fish (OT1: 79% end in a name head; OT2: 85% start with a name
+opener; OT3: more on tablets and potsherds than names, 37% against 25%), 31 are closer lines with a short tail (OT5: 94%
+1-2 signs), and 18 are headed lines with a word after the heading (mostly '820 60', not 368: OT7 fails). Only 3 of
+2,722 lines stay unassigned (OT8: '740 400', '740 90', '861 2 740 90'; OT14 in B: 2 of 973; OT15 in F': 89 of 2,217,
+4%). The key new observation: the sign after a mid-line closer is 400 in 25 of 31 cases (OT6: 81% numerals or
+suffixes), so closers take the same 400 suffix as the 740 ending; this makes the closers look like endings rather
+than formula words (to be tested next). Name tails start with 1, 679, 621, 565, 90, 32, but that is not mostly
+counts, closers or suffixes (OT9: 47%). Not supported: 151/156 as the tail-taking closers (OT10), fish-bare lines using
+fewer formula-only signs (OT11), 'other' lines on seals more than bare lines (OT12), and 'other' texts being one-off
+(OT13, the other way). Tally, counting parts: 919 held, 903 failed (1822 registered).

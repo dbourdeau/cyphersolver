@@ -1798,6 +1798,13 @@ before a real count; published structural claims split: 740-as-suffix and fish v
 six/seven-fish pattern does not, and the statistics fit both linguistic and non-linguistic views. Tally 910 held, 897
 failed.
 
+## Hundred-and-thirty-first pass (24 Sept 2026): the lines no genre claims (loop start)
+
+Registered first (hundred-and-seventeenth set, 4e862aee8), tested (`predict_test117.py`). Start of a self-directed
+test-learn-propose loop. The 'other' lines are names with tails, bare lines with a fish, closer lines with tails and
+headed words; only 3 lines of 2,722 remain unassigned. Lead: closers take the 400 suffix like 740 (25 of 31 closer
+tails), so closers may be endings. Tally 919 held, 903 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
