@@ -2746,3 +2746,16 @@ other. 10,000-draw permutations; p < 0.05. Random-pair baselines draw lines from
   class (tablets only; Fisher).
 - **ML10** Where one line of a two-line object carries a numeral, the other carries one less often than when lines are
   paired across two-line objects.
+
+## Results of the forty-eighth set (added after the test; `predict_test48.py`, `results/predict_test48.md`)
+
+Four held, six failed. Multi-line objects are rare among intact F objects (78 of 3,681), so most tests are thin. A name
+line and a formula share an object more often than shuffled line kinds give (ML1: 36 of 78, p = 0.0004), and multi-line
+objects are a Mohenjo-daro habit (ML8: 3.4% against 0.6% at Harappa); their lines are a little shorter (ML4: 3.4
+against 3.7). On two-line objects a numeral tends to sit in one line only (ML10: 16 of 50 partners with a numeral,
+p = 0.0497, borderline). Failures: the formula beside a name is not more often a count (ML2: 47% against 68%, the
+other way), lines of one object do not share signs (ML3), too few objects carry two names (ML5, ML6: 3 pairs, not
+testable), multi-line formulas do not open with numbers more (ML7), and only 3 multi-line tablet texts exist (ML9).
+Bug fix before recording: the first ML10 run shuffled the partner lines among themselves, which leaves the count
+unchanged (p = 1.0); the recorded test draws each partner from all lines of two-line objects, as registered. Tally,
+counting parts: 282 held, 365 failed (647 registered).

@@ -1285,6 +1285,12 @@ Registered first (forty-seventh set, 74ec8ae5d), tested (`predict_test47.py`). F
 grammar (kind set by the next sign, idiomatic value-sign pairs) and 39% recur with only the number changed: tally
 entries. Numeral-first is a Harappa and tablet habit. Tally 278 held, 359 failed.
 
+## Sixty-second pass (24 Sept 2026): objects with more than one line (loop 2, round 2)
+
+Registered first (forty-eighth set, 682e78113), tested (`predict_test48.py`). Only 78 intact multi-line objects; where
+they exist, a name line tends to pair with a formula (not a count), mostly at Mohenjo-daro, and a numeral tends to sit
+in one line only (borderline). Most tests are too thin. Tally 282 held, 365 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
