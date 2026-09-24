@@ -155,6 +155,9 @@ def model_family(t):
 def tex(s): return str(s).replace('\\', '/').replace('&', '\\&').replace('%', '\\%').replace('_', '\\_').replace('#', '\\#').replace('$', '\\$')
 
 
+def mark(t): return tex(t['target']) + ('$^\\dagger$' if t.get('external') else '')
+
+
 def pct(a, b): return f'{100 * a / b:.0f}' if b else '0'
 
 
@@ -322,6 +325,9 @@ def main():
     other = [t for t, f in zip(ps, [MT.profile_paths()[t['target']].parent for t in ps])
              if set(git('log', '--format=%an', 'HEAD', '--', f.relative_to(ROOT).as_posix()).split('\n')) - owner - {''}]
     m('Nexternal', len(other)); m('Nexternalworked', sum(1 for t in other if t['method'] != NA))
+    m('Nexternalobtained', sum(1 for t in other if t['method'] not in (NA, NOT)))
+    ext_ids = {id(t) for t in other}
+    for t in ps: t['external'] = id(t) in ext_ids
     folders = [MT.profile_paths()[t['target']].parent for t in ps]
     m('Nnotes', sum(1 for f in folders if (f / 'NOTES.md').exists()))
     m('Ncode', sum(1 for f in folders if any(f.rglob('*.py')) or any(f.rglob('*.cs'))))
@@ -332,6 +338,9 @@ def main():
     for k, v in M.items():
         safe = ''.join(names.get(ch, ch) for ch in k)
         lines.append(f'\\newcommand{{\\{safe}}}{{{str(v).replace(",", "{,}")}}}')
+    lines.append('\\newcommand{\\ContribTargets}{' + '; '.join(
+        f'{tex(t["target"])} ({SHORT[t["method"]]}' + (f', {t["ext"]})' if t['ext'] in ('complete', 'partial') else ')')
+        for t in sorted(other, key=lambda t: t['target'])) + '}')
     lines.append('\\newcommand{\\TopLanguages}{' + ', '.join(f'{tex(k)} {v}' for k, v in langs.most_common(6)) + '}')
     (OUT / 'macros.tex').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
@@ -380,10 +389,10 @@ def main():
     rows = ['\\begin{table*}[t]', '\\centering\\small', '\\resizebox{\\textwidth}{!}{%', '\\begin{tabular}{@{}lrllrll@{}}', '\\toprule',
             'target & year & language & system & tokens & key order & extent \\\\', '\\midrule']
     for t in ct:
-        rows.append(f'{tex(t["target"])} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
+        rows.append(f'{mark(t)} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
                     f'{t["tokens"] if t["tokens"] else "--"} & {tex(t["key_order"])} & {t["ext"]} \\\\')
     rows += ['\\bottomrule', '\\end{tabular}}',
-             f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone.}}', '\\end{table*}', '']
+             f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone. $^\\dagger$~worked by \\Contributor.}}', '\\end{table*}', '']
     T.append('\n'.join(rows))
     (OUT / 'tables.tex').write_text('\n'.join(T), encoding='utf-8')
 
@@ -391,11 +400,11 @@ def main():
     head = 'target & year & language & system & method & extent & tokens \\\\'
     A = ['\\onecolumn', '{\\scriptsize', '\\begin{longtable}{@{}llrlllr@{}}',
          '\\caption{\\label{tab:all} Every target in the corpus, by date of the earliest document. Methods: '
-         + '; '.join(f'{ABBR[x]} {SHORT[x]}' for x in MT.METHODS) + '. Full profiles are in the data release.}\\\\',
+         + '; '.join(f'{ABBR[x]} {SHORT[x]}' for x in MT.METHODS) + '. $^\\dagger$~worked by \\Contributor. Full profiles are in the data release.}\\\\',
          '\\toprule', head.replace('target & year', 'target & year'), '\\midrule', '\\endfirsthead',
          '\\toprule', head, '\\midrule', '\\endhead', '\\bottomrule', '\\endlastfoot']
     for t in sorted(ps, key=lambda t: (t['year'] or 9999, t['target'])):
-        A.append(f'{tex(t["target"])} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
+        A.append(f'{mark(t)} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
                  f'{ABBR[t["method"]]} & {t["ext"]} & {t["tokens"] if t["tokens"] else "--"} \\\\')
     A += ['\\end{longtable}}', '']
     (OUT / 'appendix.tex').write_text('\n'.join(A), encoding='utf-8')
@@ -410,6 +419,7 @@ def main():
         base['solution.kinds'] = '; '.join(x.get('kind', '') for x in t['steps'])
         base['solution.failed_steps'] = sum(1 for x in t['steps'] if x.get('result') in ('failed', 'ruled out'))
         base['documents.count'] = t['ndocs']
+        base['worked_by'] = 'second contributor' if t['external'] else 'first author'
         for d in prof['documents']: rows_.append({**base, **ex.flat(d, 'doc', {})})
     cols = []
     for r in rows_:

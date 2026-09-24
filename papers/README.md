@@ -57,8 +57,12 @@ are left out. Every number, table and the appendix are generated from the profil
 
 ```bash
 PYTHONUTF8=1 python papers/lasry/_analysis.py
-cd papers/lasry && tectonic llm-ciphers.tex
+cd papers/lasry && tectonic llm-ciphers.tex          # anonymous submission
+cd papers/lasry && tectonic llm-ciphers-camera.tex   # camera-ready: authors named, Arya Sanketbhai Patel credited
 ```
+
+Targets worked by Arya Sanketbhai Patel (found from the git authors of each target folder) are marked with a dagger in
+the tables and appendix, listed in the method section, and carry `worked_by = second contributor` in `targets.csv`.
 
 ## Cryptologia submission (first to go): `cryptologia/`
 

@@ -16,11 +16,26 @@
 \special{papersize=210mm,297mm}
 \input{generated/macros}
 
+% Submission version: anonymous. Camera-ready: compile llm-ciphers-camera.tex, which defines \cameraready and so
+% names the authors and credits the second contributor by name (as the write-ups on the project site do) in the
+% text, the tables and the acknowledgements.
+\newif\ifanon
+\ifdefined\cameraready \anonfalse \else \anontrue \fi
+\ifanon
+  \newcommand{\Contributor}{the second contributor}
+  \newcommand{\ContributorFull}{A second contributor}
+\else
+  \newcommand{\Contributor}{Arya Sanketbhai Patel}
+  \newcommand{\ContributorFull}{Arya Sanketbhai Patel}
+\fi
+
 \title{Large Language Models against Historical Ciphers: \\ A Profiled Record of \Ntargets\ European Targets, \YearMin--\YearMax}
 
-% Camera-ready only:
-% \author{Daniel Bourdeau \\ Independent researcher \\ {\tt dnbourdeau@gmail.com} \And George Lasry}
+\ifanon
 \author{Anonymous submission}
+\else
+\author{Daniel Bourdeau \\ Independent researcher \\ {\tt dnbourdeau@gmail.com} \And George Lasry}
+\fi
 \date{}
 
 \begin{document}
@@ -80,7 +95,7 @@ The profiles were written by model agents instructed to source every value from 
 
 \paragraph{Models and harness.} The work was done by LLMs running as coding agents in terminal harnesses with file, shell and web access. Claude models (mainly Opus~5, Opus~5.5 and Fable~5.1) worked on \Nclaude\ targets in Claude Code; OpenAI GPT-5 and GPT-6 models worked on \Ngpt\ targets in the Codex harness, \Nboth\ of them shared with a Claude model; the model is not recorded for \Nmodelunknown. Long tasks were split among parallel sub-agents, for example one per manuscript page for transcription, and merged by the main agent. The corpus is too unbalanced between model families to compare them, and we do not.
 
-\paragraph{What the humans did.} The first author's part was small and mostly at the project level. The first author obtained a DECODE login with the privileges needed to see images and keys and handed the agent the session cookie, so that it could fetch records itself; set up the harness; and posed each problem as a standing goal, which keeps the agent working until the stated condition holds. During the work the first author occasionally chose which of several leads the agent had identified to pursue. The first author did not transcribe, propose keys or readings, or write code. A second contributor ran the same kind of agent on \Nexternal\ targets and submitted the work to the repository as pull requests, which the first author reviewed and merged; what that contributor did beyond running the agent is not recorded in the notes. In \Nhumaninput\ targets the first author went further and supplied a specific source (a printed book the agent could not download) or suggested a route (a candidate key, archive addresses); these are marked in the data. The agents did the rest: locating images through archive interfaces, transcription, statistics, hypotheses, writing and running solvers, searching printed editions, and writing up.
+\paragraph{What the humans did.} The first author's part was small and mostly at the project level. The first author obtained a DECODE login with the privileges needed to see images and keys and handed the agent the session cookie, so that it could fetch records itself; set up the harness; and posed each problem as a standing goal, which keeps the agent working until the stated condition holds. During the work the first author occasionally chose which of several leads the agent had identified to pursue. The first author did not transcribe, propose keys or readings, or write code. \ContributorFull\ worked \Nexternal\ targets with Claude Code and contributed them to the repository as pull requests, which the first author reviewed and merged; the results on those targets are his, and they are marked $^\dagger$ in the tables and the appendix: \ContribTargets. His notes record the agent's steps, not his own part in them, so for these targets the human's role is not itemised. In \Nhumaninput\ targets the first author went further and supplied a specific source (a printed book the agent could not download) or suggested a route (a candidate key, archive addresses); these are marked in the data. The agents did the rest: locating images through archive interfaces, transcription, statistics, hypotheses, writing and running solvers, searching printed editions, and writing up.
 
 \paragraph{Tools.} Solvers were written per target, mostly in Python with C\# for speed: hill climbing and simulated annealing over homophonic and syllabic keys, annealers constrained to an alphabetical key design, monotone alignment of ordered key slots, hard EM aligners from ciphertext to a contemporary decipherment, and SAT encodings. The scoring models were character $n$-gram models built from period corpora, for example nineteenth-century editions of sixteenth-century French correspondence, shared across targets through one registry.
 
@@ -162,6 +177,11 @@ In all, \NNA\ targets are classed not applicable: \NnotCipher\ turned out not to
 \section{Conclusion}
 
 On historical ciphers, an agentic LLM behaves less like a solver than like a research assistant that can also write solvers. It reads the manuscript, finds the key or the decipherment in the archive or in print, recognises a crib in the clear text, and exploits structure such as an alphabetical key. Of the \Nobtained\ targets whose text it obtained, the key was recovered here for \Nrecovered, and from the ciphertext alone for \NCT. Its failures follow the classical limits: short texts, large nomenclators, double encipherment and noisy transcriptions. Classifying outcomes by method keeps these two contributions apart, and we recommend it to anyone reporting decipherments made with such tools. The profile schema, the \Ntargets\ profiles and the working record behind them (notes, transcriptions, code and commit history) are released with the paper so that later work can check any profile against its sources and add targets and models on the same terms.
+
+\ifanon\else
+\section*{Acknowledgements}
+Arya Sanketbhai Patel worked the \Nexternal\ targets marked $^\dagger$, including the ciphertext-only key recovery for the letter of Charles III of Lorraine to Vaud\'emont (1592), and wrote them up for the project site.
+\fi
 
 \bibliographystyle{histocrypt}
 \bibliography{refs}

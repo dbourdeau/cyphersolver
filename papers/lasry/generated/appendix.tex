@@ -1,7 +1,7 @@
 \onecolumn
 {\scriptsize
 \begin{longtable}{@{}llrlllr@{}}
-\caption{\label{tab:all} Every target in the corpus, by date of the earliest document. Methods: CT key from ciphertext only; EPT key from external plaintext; APT key from adjacent plaintext; EK external key matched; KK known key applied; DEC existing decipherment; NS not solved; NA not applicable. Full profiles are in the data release.}\\
+\caption{\label{tab:all} Every target in the corpus, by date of the earliest document. Methods: CT key from ciphertext only; EPT key from external plaintext; APT key from adjacent plaintext; EK external key matched; KK known key applied; DEC existing decipherment; NS not solved; NA not applicable. $^\dagger$~worked by \Contributor. Full profiles are in the data release.}\\
 \toprule
 target & year & language & system & method & extent & tokens \\
 \midrule
@@ -51,7 +51,7 @@ mellon29 & 1525 & -- & undetermined & NS & none & 234 \\
 bayard1526 & 1526 & French & undetermined & NS & none & 56 \\
 lee1526 & 1526 & English & homophonic or simple + nomenclator & KK & complete & 823 \\
 raince & 1526 & French & homophonic or simple + nomenclator & KK & partial & 5629 \\
-poyntz1527 & 1527 & English & homophonic or simple + nomenclator & DEC & complete & 44 \\
+poyntz1527$^\dagger$ & 1527 & English & homophonic or simple + nomenclator & DEC & complete & 44 \\
 soria1527 & 1527 & Spanish & homophonic or simple + nomenclator & DEC & complete & -- \\
 vasto1527 & 1527 & Italian, Spanish & code or codebook & KK & partial & 3001 \\
 visconti1528 & 1528 & Italian & homophonic or simple + nomenclator & KK & partial & 1344 \\
@@ -62,7 +62,7 @@ gramont1529 & 1529 & French & homophonic or simple + nomenclator & KK & complete
 kaa4591 & 1529 & German, Latin & undetermined & APT & partial & -- \\
 rangone1530 & 1529 & Italian & substitution, no nomenclator & CT & partial & 264 \\
 sormano & 1529 & Italian & homophonic or simple + nomenclator & KK & complete & -- \\
-sormano1529 & 1529 & Italian & substitution, no nomenclator & KK & partial & -- \\
+sormano1529$^\dagger$ & 1529 & Italian & substitution, no nomenclator & KK & partial & -- \\
 joachim1530 & 1530 & Italian & homophonic or simple + nomenclator & CT & complete & 402 \\
 isabella1531 & 1531 & Spanish & syllabic nomenclator & DEC & complete & -- \\
 kaa4591b & 1531 & German, Latin & homophonic or simple + nomenclator & APT & partial & 9468 \\
@@ -152,27 +152,27 @@ morosini1588 & 1588 & Italian & homophonic or simple + nomenclator & KK & comple
 nevers1588 & 1588 & French & homophonic or simple + nomenclator & APT & complete & 344 \\
 r3708 & 1588 & French & homophonic or simple + nomenclator & APT & complete & 336 \\
 mendoza1589 & 1589 & Spanish & syllabic nomenclator & DEC & complete & 822 \\
-nevers1589 & 1589 & French & not a cipher & NA & n/a & -- \\
+nevers1589$^\dagger$ & 1589 & French & not a cipher & NA & n/a & -- \\
 orbais & 1589 & French & homophonic or simple + nomenclator & KK & partial & 91 \\
 ottobon & 1589 & Italian & syllabic nomenclator & NS & none & 1528 \\
 r2276 & 1589 & French & homophonic or simple + nomenclator & KK & partial & 3920 \\
 champagne1590 & 1590 & French & homophonic or simple + nomenclator & APT & partial & 196 \\
 gonzaga1590 & 1590 & Italian & homophonic or simple + nomenclator & KK & complete & 926 \\
 dinteville1592 & 1592 & French & homophonic or simple + nomenclator & NS & none & -- \\
-lorraine1592 & 1592 & French & homophonic or simple + nomenclator & CT & partial & 1109 \\
-maisse1592 & 1592 & French & homophonic or simple + nomenclator & DEC & complete & 80 \\
+lorraine1592$^\dagger$ & 1592 & French & homophonic or simple + nomenclator & CT & partial & 1109 \\
+maisse1592$^\dagger$ & 1592 & French & homophonic or simple + nomenclator & DEC & complete & 80 \\
 pelissier1592 & 1592 & French & homophonic or simple + nomenclator & KK & partial & 18451 \\
 stowe166 & 1592 & English & homophonic or simple + nomenclator & CT & partial & -- \\
 lebel1593 & 1593 & French & homophonic or simple + nomenclator & KK & complete & 1935 \\
 nevers1593 & 1593 & French & homophonic or simple + nomenclator & KK & partial & 395 \\
 sega1593 & 1593 & French & homophonic or simple + nomenclator & NS & none & -- \\
-sessa1593 & 1593 & Spanish & syllabic nomenclator & KK & partial & 53 \\
+sessa1593$^\dagger$ & 1593 & Spanish & syllabic nomenclator & KK & partial & 53 \\
 joyeuse & 1594 & French & syllabic nomenclator & NS & none & 358 \\
 nevers1595 & 1595 & French & homophonic or simple + nomenclator & NS & none & 753 \\
 sloane3188 & 1595 & English & not a cipher & NA & n/a & -- \\
 segura1596 & 1596 & Spanish & substitution, no nomenclator & CT & complete & 125 \\
 bethune & 1601 & French & syllabic nomenclator & APT & partial & 2849 \\
-hesse1603 & 1602 & French & homophonic or simple + nomenclator & KK & complete & 4100 \\
+hesse1603$^\dagger$ & 1602 & French & homophonic or simple + nomenclator & KK & complete & 4100 \\
 breves1603 & 1603 & French & homophonic or simple + nomenclator & DEC & complete & -- \\
 breves1610 & 1610 & French & homophonic or simple + nomenclator & NS & none & 100 \\
 louis1615 & 1615 & French & homophonic or simple + nomenclator & DEC & complete & -- \\
@@ -183,7 +183,7 @@ ferdinand1619 & 1619 & German & homophonic or simple + nomenclator & CT & comple
 haga1620 & 1620 & Dutch & homophonic or simple + nomenclator & KK & complete & -- \\
 sp106box10 & 1623 & English, Italian & code or codebook & KK & partial & -- \\
 damiata1624 & 1625 & Italian & homophonic or simple + nomenclator & DEC & complete & 361 \\
-herbault1626 & 1626 & French & homophonic or simple + nomenclator & DEC & complete & -- \\
+herbault1626$^\dagger$ & 1626 & French & homophonic or simple + nomenclator & DEC & complete & -- \\
 warsaw & 1627 & Italian & syllabic nomenclator & CT & complete & 465 \\
 boswell1628 & 1628 & English & substitution, no nomenclator & KK & complete & 442 \\
 r1862 & 1628 & Italian & homophonic or simple + nomenclator & EPT & complete & 1280 \\
