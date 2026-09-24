@@ -2321,3 +2321,41 @@ and numeral-idiom line-break results rest on M77's line division), SR7 (Harappa 
 SR15 (headed names are rare at Harappa), SR17 (non-fish 520 heads are few in each city).
 
 Tally, counting parts: 203 held, 304 failed (507 registered).
+
+# Thirty-sixth set, registered before testing (24 September 2026): the core findings beyond the two cities and over time
+
+The thirty-fifth set found ten findings that hold at Mohenjo-daro and at Harappa separately, and four that hold at
+Harappa only. Here they meet a third sample: all other home sites pooled ('other sites': every site except Mohenjo-daro,
+Harappa and the West Asian finds), and Mohenjo-daro's earlier (Early + Intermediate) and later (Late) levels taken
+separately. Data F, intact objects, lines reversed; A for direction (OS19). Tests, statistics and thresholds are those
+of the thirty-fifth set's hypothesis with the same number; a sample with under 20 cases fails the hypothesis as
+untestable. 10,000-draw permutations; p < 0.05.
+
+The ten core findings at the other sites
+- **OS1** (as SR1) the last sign carries more information about the ending than the first.
+- **OS2** (as SR2) heads come from a smaller inventory than first signs.
+- **OS3** (as SR3) human-figure heads take 740 more often than other heads.
+- **OS16** (as SR16) 80%+ of heads with 5+ names fix their ending.
+- **OS8** (as SR8) affixed fish are a name's last sign less often than the plain fish.
+- **OS10** (as SR10) the tiered form is for 5-8.
+- **OS11** (as SR11) long-stroke numerals stand before container and device signs.
+- **OS12** (as SR12) the number depends on the following sign.
+- **OS20** (as SR20) long-stroke numerals open their line.
+- **OS18** (as SR18) frequent signs are simpler.
+
+Transfer
+- **OS4** The head-to-ending rule learned at Mohenjo-daro and Harappa together predicts the other sites' endings for
+  those heads at 90%+ and above the majority baseline (binomial).
+
+The Harappa habits at the other sites
+- **OS9** (as SR9) the stroke pair is followed by a fish more often than the short three.
+- **OS13** (as SR13) tablet variants differ at a numeral more often than seal-name variants.
+- **OS14** (as SR14) unicorn seals carry longer texts than other-animal seals.
+- **OS19** (as SR19) left-to-right texts are rarer on seals than on other objects (A).
+
+Over time at Mohenjo-daro (each finding must hold in the earlier and in the later levels)
+- **OT1** (as SR1) the last sign decides the ending.
+- **OT3** (as SR3) human-figure heads take 740.
+- **OT16** (as SR16) the head fixes the ending.
+- **OT11** (as SR11) long strokes count containers and devices.
+- **OT12** (as SR12) the number depends on the following sign.
