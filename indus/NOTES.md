@@ -2331,6 +2331,13 @@ distinct form (plural, collective or total?). Progress; streak 0. Tally 1266 hel
 Registered first (feb4e72fa). Adding F's 432 extra lines to training makes S slightly worse (4.719); different
 transcription habits. No progress: streak 1. Tally 1266 held, 1192 failed.
 
+## Two-hundred-and-third pass (24 Sept 2026): decipherment loop 14, strokes inside the U
+
+Registered first (24e5dcd6f). The plain U 700 is a counted, text-final unit (A and B); the U with a long stroke inside
+(705 / 706) heads the closing formula (followed by 33 in 49% against 0%); short strokes inside (702 / 703) are hardly ever
+counted. With the jar (loop 11): strokes inside a container sign make a different word or form, a productive device.
+Progress; streak 0. Tally 1273 held, 1192 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

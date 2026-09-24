@@ -8063,3 +8063,16 @@ tokens); U with a long vertical stroke inside 704 / 705 / 706 (P316; 705 / 706 a
 - **UI5** UI4 holds on B.
 - **UI6** The short-stroked U 702 / 703 are preceded by a numeral less often than 700 (A + B; 17 tokens, weak).
 - **UI7** Progress rule: UI1 with UI2, or UI4 with UI5 (the inner-stroke device generalises from the jar to the U).
+
+## Results of the hundred-and-eighty-ninth set (added after the test; `predict_test189.py`, `results/predict_test189.md`)
+
+Seven held, none failed. **The inner-stroke device generalises from the jar to the U.** The plain U 700 is a counted
+unit that ends the text: preceded by a numeral in 45% against 13% for the U with a long stroke inside (705 / 706)
+(UI1; B 30% against 10%, UI2) and final in 45% against 3% (UI4; B 43% against 8%, UI5). The stroked U opens the closing
+formula: followed by the long 3 in 49% against 0% for the plain U (UI3). The U with two or three short strokes inside
+(702 / 703) is almost never counted (UI6: 1 of 18 against 37%). Reading, with loop 11: strokes drawn inside a container
+sign (jar, U) turn it into a different word or form, a productive graphic device of the script: the plain container
+counts or ends, the stroked container is a name element or the head of the closing formula. This is structural
+knowledge any reading must reproduce (a reading of 700 as a measure or container must give 705 / 706 a related word
+that heads the closing formula). Progress (new, replicated on B): streak 0. Tally, counting parts: 1273 held, 1192
+failed (2465 registered).
