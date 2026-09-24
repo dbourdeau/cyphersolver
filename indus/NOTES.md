@@ -2320,6 +2320,12 @@ Registered first (378570453). The plain jar 740 ends 88% of lines; with one, two
 the inner stroke is not a stroke written after the jar. A third job-changing mark after the cage and the fish marks.
 Progress (new, replicated); streak 0. Tally 1263 held, 1183 failed.
 
+## Two-hundred-and-first pass (24 Sept 2026): decipherment loop 12, doubling and brackets
+
+Registered first (08a83e65d). Doubled signs stand at the edges of texts (final 41% against 21%, initial 36% against 29%,
+same directions on B) and doubled 615 is followed differently from single 615; brackets change nothing. Doubling is a
+distinct form (plural, collective or total?). Progress; streak 0. Tally 1266 held, 1187 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -8011,3 +8011,15 @@ and the brackets. Distinct lines; A and B separately.
   random splits of 615 tokens).
 - **DB6** Bracketed signs (101/103, 905) are final more often than their bases (100; 904, 927) (A + B).
 - **DB7** Progress rule: at least one of DB1, DB3, DB4 holds in A with the same direction in B.
+
+## Results of the hundred-and-eighty-seventh set (added after the test; `predict_test187.py`, `results/predict_test187.md`)
+
+Three held, four failed. Signs doubled 3+ times: 220, 390, 615, 700, 790, 809, 820, 892 (147 doubled tokens, 1,323
+single). **Doubled signs sit at the edges of texts.** They end the line more often than the single sign, not less
+(DB1 and DB2 fail the other way: 41% against 21% in A, 34% against 26% in B) and open it more often (DB4: 36% against
+29%, same direction in A and B), and they take the ending as often as single signs (DB3). The doubled 615 is followed
+by different signs from the single 615 (DB5: JSD 0.58 against a random-split 95th percentile of 0.36). Brackets do not
+change position (DB6, 23 tokens). Reading: doubling is a distinct form, not just emphasis: a doubled sign tends to
+stand as a text's first or last element (short texts made of a doubled sign and little else), consistent with a
+plural, collective or total. DB7 holds (DB4 new and replicated in direction on B): progress, streak 0. Tally, counting
+parts: 1266 held, 1187 failed (2453 registered).
