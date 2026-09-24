@@ -28,11 +28,12 @@ def build(repo):
             lines = defaultdict(list)
             for g in side['graphemes']:
                 ft = g.get('features') or [0, 1, 0]
-                lines[ft[1]].append((g['id'], ft[0], ft[2]))
+                lines[ft[1]].append((g['id'], ft[0], ft[2], ','.join(str(x) for x in ft[3:]) or '-'))
             for ln in sorted(lines):
                 gs = lines[ln][::-1]
                 rows.append((side['id'], side.get('description', '').replace('\t', ' '), str(ln),
-                             ' '.join(g for g, d, u in gs), ' '.join(str(d) for g, d, u in gs), ' '.join(str(u) for g, d, u in gs)))
+                             ' '.join(g for g, d, u, f in gs), ' '.join(str(d) for g, d, u, f in gs),
+                             ' '.join(str(u) for g, d, u, f in gs), ' '.join(f for g, d, u, f in gs)))
     feats = {}
     for f in sorted(glob.glob(os.path.join(repo, 'features', '*.json'))):
         try:
@@ -42,7 +43,7 @@ def build(repo):
         feats[d['id']] = (d.get('description', '').replace('\t', ' '), ','.join(d.get('mahadevan_graphemes', [])))
     with open(TSV, 'w', encoding='utf-8', newline='\n') as out:
         out.write(HEADER)
-        out.write('side\tdescription\tline\tsigns\tdamage\tuncertainty\n')
+        out.write('side\tdescription\tline\tsigns\tdamage\tuncertainty\tfeatures\n')
         for r in rows:
             out.write('\t'.join(r) + '\n')
     with open(os.path.join(HERE, 'data', 'cisi_signs.tsv'), 'w', encoding='utf-8', newline='\n') as out:
@@ -69,13 +70,15 @@ def _read(path):
 
 
 def load():
-    """{side id: {'description', 'seq': [[P signs] per line], 'damage': [[..]], 'unc': [[..]]}}"""
+    """{side id: {'description', 'seq': [[P signs] per line], 'damage', 'unc', 'feat' (allograph features after the
+    three defaults, comma-joined, '-' if none): [[..]] per line}}"""
     objs = {}
     for r in _read(TSV):
-        o = objs.setdefault(r['side'], {'description': r['description'], 'seq': [], 'damage': [], 'unc': []})
+        o = objs.setdefault(r['side'], {'description': r['description'], 'seq': [], 'damage': [], 'unc': [], 'feat': []})
         o['seq'].append(r['signs'].split())
         o['damage'].append([int(x) for x in r['damage'].split()])
         o['unc'].append([int(x) for x in r['uncertainty'].split()])
+        o['feat'].append(r.get('features', '').split())
     return objs
 
 
