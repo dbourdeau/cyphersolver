@@ -4905,3 +4905,31 @@ block 7 is counted less, not more (SB9: 11% against 17%), block 8 is not the end
 shuffles give (SB12: 928 adjacent pairs, the reverse of the prediction; e.g. fish beside fish), and opener and head are
 not from different blocks more than chance (SB13). SB15 (block roles agree in A and B, 7 of 7) holds trivially since
 every block's majority role is 'medial'. Tally, counting parts: 726 held, 801 failed (1527 registered).
+
+# Hundred-and-third set, registered before testing (24 September 2026): the formula closers (twenty hypotheses)
+
+'Closers' = the ninety-ninth set's final specialists other than 740, 520 and 400: 151, 154, 156, 161, 226, 241, 426,
+527, 565, 621, 679. 'Closer line' = a distinct line (A + B) of 2+ signs ending in a closer. Name bodies, heads and
+embedding as before; F without copper for object and site tests; motif as in the sixty-seventh set. 10,000-draw
+permutations; p < 0.05.
+
+- **FX1** 80%+ of closer lines are formulas (no 740/520).
+- **FX2** 20%+ of closer tokens directly follow a numeral.
+- **FX3** 10%+ of closer tokens directly follow 740 or 520.
+- **FX4** Closer lines are shorter than other formulas (rank test).
+- **FX5** 60%+ of closer tokens are on seals (F).
+- **FX6** Closer lines are a larger share of lines at Mohenjo-daro than at Harappa (F).
+- **FX7** The sign before a closer depends on which closer (MI).
+- **FX8** Under 3% of lines hold two different closers.
+- **FX9** Closer lines embed an attested name body more often than other formulas.
+- **FX10** Closer lines open with a heading sign more often than other formulas.
+- **FX11** Closer lines hold a numeral less often than other formulas.
+- **FX12** 50%+ of 156 tokens directly follow a numeral.
+- **FX13** The sign before a closer is a name head in 50%+.
+- **FX14** Closers' left-neighbour sets overlap little: mean pairwise Jaccard 0.2 or less (closers with 5+ tokens).
+- **FX15** Closer texts recur on 2+ objects more often than other formula texts (F).
+- **FX16** Seal closer lines are on unicorn seals less often than other seal lines (F).
+- **FX17** 5+ of the closers have 5+ tokens in B.
+- **FX18** B: FX1 holds.
+- **FX19** F without copper: FX1 holds.
+- **FX20** 80%+ of closer lines have 2-4 signs.
