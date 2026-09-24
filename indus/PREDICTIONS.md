@@ -2622,3 +2622,16 @@ Head class from classes(A). A, B pooled unless F is named. 10,000-draw permutati
 - **NN8** Non-name lines open with a heading (817, 820, 861) less often than name lines.
 - **NN9** Harappa has a larger share of non-name lines than Mohenjo-daro, length-stratified (F).
 - **NN10** The five commonest last signs of non-name lines cover 50%+ of them.
+
+## Results of the forty-fourth set (added after the test; `predict_test44.py`, `results/predict_test44.md`)
+
+Seven held, three failed. Half the lines (2,019 of 3,914 in A + B) have no ending, and they are not names that lost it:
+they end in a head-class sign 18% of the time against 42% for name bodies (NN1). They are shorter (NN6: 3.4 against
+4.6 signs), carry numerals more (NN4: 60% against 44%), sit off the seals more (NN2: +9.4 points, length-stratified),
+are commoner at Harappa (NN9: +7.8 points) and are headed slightly less (NN8: 12% against 14%). About a fifth of those
+of 3+ signs contain an attested name body, more than shuffles give (NN5: 249 of 1,200, p = 0.001), so names are also
+cited inside other formulas. They do not recur more (NN7: 14.5% both), the seal motif does not track them (NN3), and
+their last signs are spread (NN10: top five 700, 400, 390, 156, 405 cover 38%). Reading: a second genre of short
+counting or tagging formulas, mostly on tablets and at Harappa, that can embed a name without its ending. NN2 and NN9
+overlap with the known tablet/receipt findings. Deviation: NN5 used 1,000 shuffles. Tally, counting parts: 254 held,
+353 failed (607 registered).

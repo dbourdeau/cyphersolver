@@ -1252,6 +1252,12 @@ Registered first (forty-third set, 57cc9703f), tested (`predict_test43.py`). A o
 but not reducible to a scalar position. Rank is stable over body length; inversions sit in one-off names. Tally 247
 held, 350 failed.
 
+## Fifty-eighth pass (24 Sept 2026): lines without a name (round 8 of 10)
+
+Registered first (forty-fourth set, 512e3a236), tested (`predict_test44.py`). Lines with no 740/520 are half the corpus
+and form their own genre: shorter, numeral-rich, off the seals, commoner at Harappa, rarely ending in a head sign; a
+fifth embed an attested name body. Tally 254 held, 353 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
