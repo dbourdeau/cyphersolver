@@ -7461,3 +7461,18 @@ syllable of the Monier-Williams stem; Linear B = the last syllabogram. Rarefacti
 - **LT5** The share of names whose final element is the commonest one is closer between Indus and Old Tamil cores than
   between Indus and Sanskrit stems.
 - **LT6** Linear B persons' commonest final syllabogram covers a smaller share of names than 740 does of Indus names.
+
+## Results of the hundred-and-seventy-second set (added after the test; `predict_test172.py`, `results/predict_test172.md`)
+
+Three held, three failed. With the honorific removed (464 of 542 names), Old Tamil name cores still close their last
+element strongly (LT1: R 0.30), more than the Indus names (0.71), so the Indus R stays nearer the Sanskrit syllable R
+(LT2 fails), and the Indus body lengths stay nearer Sanskrit syllables (LT3 fails: JSD 0.08 against 0.11); Tamil cores
+are longer (LT4 fails: 5.4 aksharas against 4.3 signs). **One feature is Tamil-like: the dominant name ending.** 82% of
+Indus names end in 740, and 67% of Old Tamil name cores end in -ṉ (the masculine personal suffix -aṉ), against 8% for
+the commonest final syllable of Sanskrit stems (LT5) and 13% for Linear B (LT6). That puts a number on Mahadevan's
+740 = -aṉ argument. It is not decisive: Monier-Williams gives uninflected stems, and an inflected Indo-Aryan name
+list (Prakrit donors in the genitive -sa, not obtainable cleanly here) would also be concentrated on one ending.
+Summary of sets 171-172: name structure excludes a Sumerian-type language a second time (first element closed there,
+last element closed here); between Dravidian and Indo-Aryan the name lists available do not decide, with lengths and
+closure nearer Sanskrit and the dominant masculine-type ending nearer Tamil. Tally, counting parts: 1203 held, 1131
+failed (2334 registered).

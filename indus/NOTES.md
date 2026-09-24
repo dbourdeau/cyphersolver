@@ -2211,6 +2211,14 @@ headers). Sumerian names close the first element (R 1.41), Indus the last (0.71)
 structure. Tamil and Sanskrit not separated: the Sangam list's honorific -ār and long names make it a poor comparator.
 Tally 1200 held, 1128 failed.
 
+## Hundred-and-eighty-sixth pass (24 Sept 2026): the Tamil comparison repaired, and the ending profile
+
+Registered first (fd7521be8). With the honorific -ār removed by a fixed rule, Tamil name cores still close their last
+element more than Indus names and are longer; Indus lengths and closure stay nearer Sanskrit syllables. The dominant
+ending is Tamil-like: 740 ends 82% of Indus names, -ṉ (masculine -aṉ) 67% of Tamil cores, against 8% (Sanskrit stems)
+and 13% (Linear B); not decisive, since an inflected Indo-Aryan list (Prakrit genitive -sa) was not obtainable. Dravidian
+against Indo-Aryan stays open. Tally 1203 held, 1131 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
