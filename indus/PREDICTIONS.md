@@ -5679,3 +5679,15 @@ Distinct names (A + B) unless stated. 'Left neighbours' of a sign = the set of s
 - **C5J** Within fish heads, the class depends on the sign before the fish (MI, distinct names).
 - **C5K** B: C5B holds.
 - **C5L** B: C5I holds.
+
+## Results of the hundred-and-twenty-first set (added after the test; `predict_test121.py`, `results/predict_test121.md`)
+
+Four held, eight failed: nothing in the context explains the 520 class beyond the head itself. 43% of distinct 520
+lines have a fish directly before 520 (C5I; B 40%, just under, C5L), 90 never follows 520 (C5D: 0 in all of F), the 520
+names are dominated by a few repeated ones (C5E: 26% are 501 405 2 240, 415 220, 233, 240, 705 33), and the fish heads
+222 (always 740) and 220 (mostly 520) take different words before them (C5G: Jaccard 0.13). But 520 names do not open
+with fish more (C5B, C5K), the non-fish 520 heads are not preceded by fish more (C5A, p = 0.06) nor keep fish company
+(C5F), the count does not depend on the class (C5C), counted fish heads do not take 520 more on distinct names (C5H,
+the other way), and the sign before a fish head does not choose its class (C5J, p = 0.15). Reading: class membership
+is a property of each head, learned per word, not derived from its neighbours; the internal evidence on this question
+is exhausted. Tally, counting parts: 948 held, 931 failed (1879 registered).

@@ -1826,6 +1826,12 @@ plain closers differ only in whether they may follow 740 (and plain ones take 40
 is close to exhausted; next targets: what separates the 740 and 520 classes beyond fish, and sign choice inside slots.
 Tally 944 held, 923 failed.
 
+## Hundred-and-thirty-fifth pass (24 Sept 2026): what else marks the 520 class
+
+Registered first (hundred-and-twenty-first set, 2e6dc3370), tested (`predict_test121.py`). No contextual cue beyond the
+head predicts the 520 class; class is lexical, per head. 90 never follows 520 anywhere; 520 names are dominated by a few
+repeated names. This line of questioning is exhausted on internal evidence. Tally 948 held, 931 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
