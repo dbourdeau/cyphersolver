@@ -3628,3 +3628,20 @@ What heads are
 - **HR18** Headed names (heading unit) have a different head distribution from unheaded names (MI).
 - **HR19** Distinct 740 names are longer than distinct 520 names (rank test).
 - **HR20** The ten commonest heads are all at both cities (F).
+
+## Results of the seventy-fourth set (added after the test; `predict_test74.py`, `results/predict_test74.md`)
+
+Twelve held, eight failed; all counts over distinct names. The 'common head + particular opener' model gets real
+support. Heads are the shared part: head types occur at both cities more often than opener types (HR1: 49% against
+34%; HR6 in one-off names: 42% against 30%), the ten commonest heads (760, 100, 33, 220, 798, 176, 32, 390, 690, 900)
+are all at both cities (HR20), and they cover more names than the ten commonest openers (HR3: 423 against 346 of 982;
+HR4 in B: 131 against 104 of 266). Long names keep a known head far more often than a known opener (HR11: 161 against
+39). The ending belongs to the head: given the head, the opener adds nothing (HR10: p = 0.87), and the ending depends on
+the head's shape category (HR14, p = 0.0001). 520 is the fish-head ending: 41% of distinct 520 names are fish-headed
+(HR15) and only 2 of 46 common non-fish heads take 520 in the majority (HR16). Fish are more often openers than heads
+(HR17: 16% against 10%). In 2-sign names the opener and head combine without detectable preference (HR8: p = 0.88), but
+in longer names first and last are linked (HR9: p = 0.002), and HR8/HR10 are null results with limited power. Not
+supported: heads taking more varied partners (HR2, p = 0.09), openers being unique to one name (HR7: 11%), heads being
+counted in formulas more than openers (HR12), role following category (HR13, p = 0.08), tablet heads being seal heads
+more than openers (HR5: 76% against 74%), titled names having their own heads (HR18), 740 names being longer (HR19).
+Tally, counting parts: 453 held, 514 failed (967 registered).

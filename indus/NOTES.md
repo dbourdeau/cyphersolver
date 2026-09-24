@@ -1469,6 +1469,13 @@ counting each line and name once, including the whole core and the fish-head/end
 unconfirmed: 520 avoiding 400 (EF17), tally recurrence (FI5), larger seal values (SC1), 520 on fewer unicorns (EF19);
 the Harappa numeral-first effect shrinks from +26.5 to +5.9 points. Tally 441 held, 506 failed.
 
+## Eighty-eighth pass (24 Sept 2026): heads as roles, openers as persons
+
+Registered first (seventy-fourth set, efbc411ca), tested on distinct names (`predict_test74.py`). Names split into a
+shared head (few types, at both cities, kept in long names, carrying the ending, which depends on its shape category;
+fish heads take 520) and a more local, more varied opener that does not affect the ending. Openers are not unique to
+single names, so the opener is not simply a personal name. Tally 453 held, 514 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
