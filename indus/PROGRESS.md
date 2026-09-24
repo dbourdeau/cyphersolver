@@ -20,13 +20,29 @@ A component moves only when a registered set supports the change. S and R are th
 anchors; P and L need outside evidence, and a real decipherment would show first as P > 0 with S falling (a reading
 makes the texts more predictable) and M rising.
 
+## Stopping rule (owner's goal, 24 September 2026)
+
+The loops continue until 20 consecutive loops make no progress. A loop counts as progress if a metric component
+improves, or if a new (non-replication) finding holds and is replicated on a held-out sample within the same loop.
+The 'streak' column counts consecutive loops without progress.
+
 ## Log
 
-| Loop | Sets | S bits (explained) | R roles | M meanings | P | L open | Note |
+| Loop | Sets | S bits (explained) | R roles | M meanings | P | L open | Note (streak) |
 |---|---|---|---|---|---|---|---|
+
 | baseline | 1-175 | 4.712 (24.9%) | 56.2% | 16.6% | 0 | 4 | model tri + pos + end, discounted (set 125) |
 | 1 | 176 | 4.712 (24.9%) | 72.9% | 16.6% | 0 | 4 | role / class / numeral-value components add nothing to S; slot-based modifier role adopted in R |
 | 2 | 177 | 4.712 (24.9%) | 81.1% | 16.6% | 0 | 4 | variable-order model +0.005 only (not adopted); anchors 347/460 untestable on new objects; bare-line roles adopted |
 | 3 | 178 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | depiction of the head predicts the ending on B; human/tool/plant/fish classes enter M+ |
 | 4 | 179 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | substitution-phonetics test works on Linear B (p = 0.001); no published key passes on both samples |
 | 5 | 180 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | depiction keys per language: none passes both samples; lookup too noisy to compare languages |
+| 6 | 181 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | world-wide rebus search (503 languages): no language signal; simple rebus reading of depicted signs unsupported |
+| 7 | 182 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | substitutions not semantic either (only the fish family); no categories inferable |
+| 8 | 183 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | depiction groups are shape families; only fish (and tools weakly) are used alike |
+| 9 | 184 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | the cage (four small strokes) is a grammatical affix: caged signs replace the ending (0 of 92 followed by 740/520), B replicates |
+| 10 | 185 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | fish marks change the grammatical job (roof hat = attribute); with the cage, morphology inside the fish signs |
+| 11 | 186 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the jar turn the ending into a name element, B replicates (progress; streak 0) |
+| 12 | 187 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | doubled signs stand at text edges (A and B); brackets change nothing (progress; streak 0) |
+| 13 | 188 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | extra F lines make S slightly worse (4.719); no progress (streak 1) |
+| 14 | 189 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the U: plain 700 counted/final, 705/706 heads the closing formula; inner-stroke device generalises (progress; streak 0) |

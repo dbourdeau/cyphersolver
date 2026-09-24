@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "target": "sinzendorff1578",
+  "title": "Johann Joachim von Sinzendorff, imperial ambassador at Constantinople, to Rudolf II, 3-7 September 1578: a despatch wholly in cipher (HHStA Türkei I 37-2, ff. 1-8)",
+  "documents": [
+    {
+      "id": "despatch1578",
+      "shelfmark": "ÖStA HHStA StAbt Türkei I 37-2 (Korrespondenzen 09.1578-10.1578), fol. 1-8 (Láng 2015 C.Sin.03)",
+      "date": "3-4 and 6-7 Sep 1578",
+      "year": 1578,
+      "country": "Holy Roman Empire",
+      "route": "Constantinople -> Prague",
+      "language": "unknown",
+      "pages": "unknown",
+      "cleartext_in_document": "none",
+      "read": "not read",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Láng 2015 records no decipherment ('megfejtetlen'); none found online.",
+        "partial": false
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "no images",
+        "notes": "No image of the despatch is online: the ÖStA Archivinformationssystem record for Türkei I 37-2 (ID 3855633, fol. 1-313) has no scans and no item-level entries; not on DECODE or HCPortal. 'cleartext_in_document: none' follows Láng's 'teljes' (wholly in cipher); eight folios per the shelfmark. Language German per Láng; not observed."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "unknown"
+    ],
+    "summary": "Not seen. Candidate keys of the same series: Ungnad's (DECODE R392: monoalphabetic signs, German digraph signs, nomenclator) and Breuner's of 1575 (DECODE R1384: signs with vowel homophones, 15 double-letter signs, 8 nulls, Roman-numeral nomenclator).",
+    "symbol_kind": "unknown",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown",
+      "unread_groups": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "notes": "The ciphertext has not been seen; every system field is unknown. The two candidate keys are transcribed in ungnad1576/key_r392.txt and sinzendorff1578/key_r1384.txt."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "No reading of the September 1578 despatch is known (Láng 2015: 'megfejtetlen'); Sinzendorff's and Breuner's joint despatches of March and May 1581 were deciphered at the time (Láng C.Sin.01-02, Türkei I 43-3 and 44-2), also not digitised.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "sibling key"
+    ],
+    "attack": "none",
+    "human_role": "Set the goal ('solve' catalogue 343). The DECODE session cookie on disk from earlier sessions was used to fetch key images. No images of the despatch supplied.",
+    "tools": [
+      "DECODE API metadata dump",
+      "DECODE key-transcription sweep (606 HHStA key records)",
+      "ÖStA Archivinformationssystem record walker",
+      "PyMuPDF text search of Láng 2015",
+      "archive.org full text of Hammer-Purgstall GOR iv"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-09-24",
+    "last_date": "2026-09-24"
+  },
+  "solution": [
+    {
+      "date": "2026-09-24",
+      "kind": "literature search",
+      "what": "Read Láng 2015 repertory p. 252: C.Sin.03 = Türkei I 37 Konv. 2 ff. 1-8, 3-4 and 6-7 Sept 1578, German, undeciphered, wholly in cipher; siblings C.Sin.01-02 (1581, with Breuner) deciphered at the time.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "access",
+      "what": "Walked the ÖStA Archivinformationssystem: Türkei I 37 = ID 967789, files 37-1/37-2/37-3 (IDs 3855632-3855634), public, no scans, no item records.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "access",
+      "what": "Searched the DECODE list dump (10,106 records) for Türkei I, Sinzendorff, Breuner, Constantinople 1570-1590: no ciphertext of this correspondence.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "sibling key",
+      "what": "Fetched and read the endorsements of the unnamed 1570s HHStA keys on DECODE: R1384 = 'Ciffra pro Dno Joanne Preyner, 1 May 1575' (Breuner's embassy to the Porte; transcribed in key_r1384.txt); R1382 Kobenzl 1576 (Poland), R1383 Manrique 1579, R1511 Polish-Prussian, R1515 Balassa, R1516 Schwendi; R1590 'Breuner?' is a 1749 code. No sheet endorsed for Sinzendorff.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "literature search",
+      "what": "Grepped Hammer-Purgstall GOR iv (1827) for Sinzendorf (13 hits) and searched the web in German, English and Hungarian for an edition or image of the September 1578 despatch: none.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "sibling key",
+      "what": "Opened every sheet of Kt. 14 ff. 107-138 (R1374-R1391, the 1571-79 keys): Dornberg (Venice 1575), Rome, Italian, Polish keys, R1380 an Italian Ottoman-affairs key under Selim II (c. 1571-74), R1381 a German Ottoman-frontier fragment (A-B nomenclator, no endorsement), printed French forms of the 1590s. Then fetched DECODE's own transcriptions for 278 of the 286 records R1192-R1555 and grepped them: no key for Sinzendorff.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "access",
+      "what": "Full-text searched the ÖStA Archivinformationssystem across all fonds for a duplicate of the despatch (Sinzendorf 1578 / Konstantinopel / chiffriert / Ziffer): only Hofkammer financial files on his embassy's gifts and pay (FHKA SUS RA 315.1, 315.3, 276.29), no despatch, no scans.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "method": "not applicable",
+    "method_basis": "The 3-7 September 1578 despatch (HHStA Türkei I 37-2 ff. 1-8) is not digitised anywhere; only candidate keys of the same series (DECODE R392 Ungnad, R1384 Breuner 1575) were found and transcribed.",
+    "contribution": [
+      "none"
+    ],
+    "class": "offline only",
+    "key": "none",
+    "fraction_read": 0,
+    "verification": [
+      "none"
+    ],
+    "gaps": [
+      {
+        "item": "the whole despatch, Türkei I 37-2 ff. 1-8",
+        "blocker": "needs-physical-access"
+      }
+    ],
+    "notes": "Blocked: no image of the despatch is online. Candidate keys R392 and R1384 are transcribed but untested. Next: HHStA reproductions of Türkei I 37-2 ff. 1-8, with 43-3 and 44-2 (1581, deciphered) as controls, ordered together with no. 342."
+  }
+}

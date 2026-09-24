@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "target": "medici1425",
+  "title": "Averardo de' Medici and Piero Guicciardini, Faenza, to the Dieci di Balìa, 27 October 1425: the cipher part Albizzi's embassy could not read (ASF, Dieci di Balìa, Responsive 1425; copy in Guasti, Commissioni II pp. 457-458)",
+  "documents": [
+    {
+      "id": "faenza_27oct1425",
+      "shelfmark": "ASF, Dieci di Balìa, Responsive, filza for October 1425 (number not yet identified); clear part copied in Rinaldo degli Albizzi's register, printed by Guasti, Commissioni di Rinaldo degli Albizzi II (1869) pp. 457-458",
+      "date": "27 Oct 1425",
+      "year": 1425,
+      "country": "Florence",
+      "route": "Faenza -> Florence (forwarded to the Florentine embassy in Rome and returned)",
+      "language": "Italian",
+      "pages": "unknown",
+      "cleartext_in_document": "separate passages",
+      "read": "not read",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "The register copy printed by Guasti gives the clear opening and stops at 'Quanto più pensiamo etc. quia multa sunt ciferata, nobis ignota'. No decipherment known.",
+        "partial": false
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "no images",
+        "notes": "No image of the letter is online. DECODE's 32 Dieci Responsive records (filze 2, 3, 7, 8, 9, 22) were all viewed; none is of 1425. ASF's image server (PAD/MAP) was unreachable on 24 Sept 2026, and the Dieci Responsive are not among the fonds PAD digitised."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "undetermined"
+    ],
+    "summary": "Unknown: only the clear part of the letter survives in print. By date and office it is probably a Dieci commissioner cipher of the kind rebuilt for Galeotto Fibindacci da Ricasoli in 1424 (homophonic signs, nulls, small nomenclator), but no sign of it has been seen.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "random",
+    "word_division": "none",
+    "notes": "symbol_kind, key_order and word_division are the norm for Florentine Dieci ciphers of 1424-30 (florence1429, Gabbrielli's key volume), not observations of this letter."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "No decipherment in Guasti or elsewhere; Gabbrielli's key volume (Ilardi reel 58) has no key for 1425-29.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "cleartext context"
+    ],
+    "attack": "none",
+    "human_role": "Set the goal (decipher the letter). The DECODE session cookie on disk from earlier sessions was used to fetch the Dieci images. No images of the target supplied.",
+    "tools": [
+      "DECODE API metadata dump and live list",
+      "DECODE image fetch",
+      "archive.org djvu text",
+      "Wayback CDX"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-09-24",
+    "last_date": "2026-09-24"
+  },
+  "solution": [
+    {
+      "date": "2026-09-24",
+      "kind": "literature search",
+      "what": "Read Guasti, Commissioni II pp. 457-458 (archive.org djvu text): the Dieci sent the commissioners' letter of 27 Oct 1425 to the Rome embassy and asked for it back; the register copies the clear opening and notes 'quia multa sunt ciferata, nobis ignota'. The cipher runs from 'Quanto più pensiamo' to the date.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "access",
+      "what": "Searched the DECODE metadata dump (10,106 records) and the live list (newest R10198) for Florence, Dieci, Averardo, Faenza, Guicciardini: only Dieci Responsive 2, 3, 7, 8, 9, 22 are on DECODE. Fetched and viewed all 32 images of R3758-R3789: filza 7 = 1424 Visconti letters, filza 8 = 1430 (Fibindacci, Pontremoli; R3765 is the decipherment of R3766), filza 9 = 1431 clear letters of Averardo and of the Ridolfi-Medici embassy, filza 22 = later. None is the Faenza letter.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "key from source",
+      "what": "Checked Gabbrielli's key volume (Ilardi reel 58, as filmed for florence1429): keys for 1424 (pp. 1-4) and 1430 (pp. 5-9) only; the filmed sender index covers A-B only, so an Averardo entry cannot be checked.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "literature search",
+      "what": "Grepped the 1955 MAP inventory (archive.org): MAP I nos. 89-207 and MAP II nos. 1, 375 are the letters received by Averardo and Piero as commissioners at Faenza, Jul-Dec 1425 (from the Dieci, Cosimo, Alamanno Salviati, other commissioners). None marked 'in cifra'. Possible siblings or a draft; not yet seen.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "access",
+      "what": "Tried the ASF image server (archiviodistatofirenze.cultura.gov.it, PAD and MAP) from the shell and the in-app browser: connection timed out, as did cultura.gov.it; the old archiviodistato.firenze.it host returns 410. Wayback holds the PAD pages but not the image tiles.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "method": "not applicable",
+    "method_basis": "The ciphertext is not reachable: no image of the 27 Oct 1425 letter is online (DECODE, Yale Ilardi reels, ASF image server all checked), and the printed copy omits the cipher.",
+    "contribution": [
+      "catalogue correction"
+    ],
+    "class": "offline only",
+    "key": "none",
+    "fraction_read": 0,
+    "verification": [
+      "none"
+    ],
+    "gaps": [
+      {
+        "item": "the cipher part of the letter of 27 Oct 1425 ('Quanto più pensiamo ...' to the date)",
+        "blocker": "needs-physical-access"
+      }
+    ],
+    "notes": "Blocked. Next: MAP I-II (Faenza commission letters) when the ASF server is back; order ASF photographs of Dieci di Balìa, Responsive, Oct-Nov 1425. DECODE corrections for R3758-R3789 queued."
+  }
+}

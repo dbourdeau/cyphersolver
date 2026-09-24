@@ -144,6 +144,9 @@ Five sweeps (Iberia, Italy, Central/North, France-England-manuscripts, hard targ
 - **Florence 1414**, Signori Responsive filza 1 (Meister 1902 p. 49; Gabbrielli partial key). Catalogue 335.
 - **Siena 1421**, Concistoro 2308 fasc. 2 no. 1, one of 29 "partly deciphered" letters; Ilardi reel 1503 has keys only. Catalogue 336.
 - Faenza 27 Oct 1425 (Averardo de' Medici), unreadable to Albizzi's office (Guasti II 457). Catalogue 337.
+  **Attempted 24 Sept 2026, blocked:** not among DECODE's Dieci records (all 32 of filze 7/8/9/22 viewed: 1424, 1430,
+  1431), ASF image server down and Dieci Responsive not digitised. Leads: MAP I 89-207 / MAP II 1, 375 (the
+  commissioners' incoming Faenza letters), then ASF photographs. See `medici1425/`.
 - Leads, no ciphertext known: Navarre key c. 1394-1406 (AGN Papeles sueltos leg. 178), Pisan key 1325 (ACA CRD Jaime II
   10044), Carrara-Ruprecht keys 1402, Teutonic Order OBA 2987 (1419, probably in Koeppen), Modena 1395 (three short
   passages), Milan 1428/1447 short passages (Osio).

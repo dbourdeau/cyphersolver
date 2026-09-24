@@ -2279,6 +2279,65 @@ Sanskrit and Sumerian under the substitution test: none passes on both samples. 
 glossary words ('man' = agredadus, anmu·ṛo·n), so no language inference; loop 6 repeats it with a basic-word lookup.
 Tally 1238 held, 1163 failed.
 
+## Hundred-and-ninety-fifth pass (24 Sept 2026): decipherment loop 6, world-wide language search by rebus substitution
+
+Registered first (e9c7583d4). 503 CLICS4 languages scored by how well their basic words for the depicted concepts (83
+signs, 23 concepts) make substitutable Indus signs sound alike. No signal: Dravidian and Indo-Aryan both at the 44th
+percentile, the top languages at chance level for 503 draws. A simple rebus reading of the depicted signs is not
+supported in any language. P 0, L unchanged. Tally 1242 held, 1167 failed.
+
+## Hundred-and-ninety-sixth pass (24 Sept 2026): decipherment loop 7, are substitutions semantic?
+
+Registered first (352af55c6). Substitutable signs share a depicted category only through the fish signs; human
+figures almost never replace human figures (1 of 138), and partners do not predict categories, so nothing could be
+inferred. With loop 6: name slots are filled without regard to sound (in 503 languages) or to depicted class, except
+the fish family. Metric unchanged. Tally 1243 held, 1174 failed.
+
+## Hundred-and-ninety-seventh pass (24 Sept 2026): decipherment loop 8, are the depiction identifications coherent?
+
+Registered first (abab7d302). Depiction groups are real shape families (human figures, tools, fish), but only the fish
+are used alike (and tools weakly); human figures are used as distinct elements, and shape cohesion does not predict use
+cohesion. The picture is a weak guide to reading beyond the fish class. Metric unchanged. Tally 1248 held, 1177 failed.
+
+## Hundred-and-ninety-eighth pass (24 Sept 2026): decipherment loop 9, the cage as a grammatical affix
+
+Registered first (30a66e155). Caged signs (four small strokes around a sign) end lines 73% against 20% for their bases,
+are never followed by 740 / 520 (0 of 92), share their bases' stems (cosine 0.43 against 0.09) and replicate on B:
+the cage turns a head into a closing form replacing the ending, morphology inside the sign. Established for the caged
+fish, suggested for the rest (17 non-fish tokens). R gains a caged-marker role. Tally 1253 held, 1178 failed.
+
+## Hundred-and-ninety-ninth pass (24 Sept 2026): decipherment loop 10, the other fish marks
+
+Registered first (c0c14f8de). The marks on the fish change its job in A and B: the roof hat marks an attribute (before
+another fish 40% against 15%), bar / roof / whisker fish are less often heads than the plain fish, and the variant
+agrees with the preceding sign and the counted value. With the cage (loop 9): one fish word written with marks for
+head, attribute and closing forms. Metric unchanged. Tally 1258 held, 1180 failed.
+
+## Two-hundredth pass (24 Sept 2026): decipherment loop 11, the strokes inside the jar
+
+Registered first (378570453). The plain jar 740 ends 88% of lines; with one, two or three strokes inside (741, 742,
+745) it ends 3% (A) and 14% (B): the inner strokes turn the ending into an internal name element, mostly on seals, and
+the inner stroke is not a stroke written after the jar. A third job-changing mark after the cage and the fish marks.
+Progress (new, replicated); streak 0. Tally 1263 held, 1183 failed.
+
+## Two-hundred-and-first pass (24 Sept 2026): decipherment loop 12, doubling and brackets
+
+Registered first (08a83e65d). Doubled signs stand at the edges of texts (final 41% against 21%, initial 36% against 29%,
+same directions on B) and doubled 615 is followed differently from single 615; brackets change nothing. Doubling is a
+distinct form (plural, collective or total?). Progress; streak 0. Tally 1266 held, 1187 failed.
+
+## Two-hundred-and-second pass (24 Sept 2026): decipherment loop 13, more training text for S
+
+Registered first (feb4e72fa). Adding F's 432 extra lines to training makes S slightly worse (4.719); different
+transcription habits. No progress: streak 1. Tally 1266 held, 1192 failed.
+
+## Two-hundred-and-third pass (24 Sept 2026): decipherment loop 14, strokes inside the U
+
+Registered first (24e5dcd6f). The plain U 700 is a counted, text-final unit (A and B); the U with a long stroke inside
+(705 / 706) heads the closing formula (followed by 33 in 49% against 0%); short strokes inside (702 / 703) are hardly ever
+counted. With the jar (loop 11): strokes inside a container sign make a different word or form, a productive device.
+Progress; streak 0. Tally 1273 held, 1192 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

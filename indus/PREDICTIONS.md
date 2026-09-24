@@ -7786,3 +7786,308 @@ sense begins with the concept) chose obscure words: 'man' became Monier-Williams
 not the ordinary words (nara, puruṣa; āḷ, maṉ). The keys therefore measure lookup noise as much as language, and no
 language inference is drawn. The next loop repeats the test with a lookup that prefers the basic word. Tally, counting
 parts: 1238 held, 1163 failed (2401 registered).
+
+# Hundred-and-eighty-first set, registered before testing (24 September 2026): decipherment loop 6, a world-wide language search by rebus substitution (eight hypotheses)
+
+Loop 5's depiction keys failed on lookup noise. Loop 6 replaces the lookup with basic vocabulary and replaces the three
+hand-picked languages with every language that can be scored. Depiction map (fixed now, before any language is
+scored): signs.FISH -> FISH; noun_class.HUMAN -> PERSON; signs.CRAB -> CRAB; signs.FIG -> FIG; and each sign Fairservis
+identifies ('sure'/'likely') whose identification (before '=>') contains, first in this order, one of: woman ->
+WOMAN, bow -> BOW, arrow -> ARROW, pot / jar / container -> POT, tree -> TREE, sun -> SUN, moon / crescent -> MOON,
+rain -> RAIN (PRECIPITATION), mountain -> MOUNTAIN, river -> RIVER, drum -> DRUM, comb -> COMB, shield -> SHIELD,
+sickle -> SICKLE, fence -> FENCE, roof / cover -> ROOF, grain -> GRAIN, leaf / pipal -> LEAF, duck -> DUCK, bee ->
+BEE, spear -> SPEAR, axe -> AXE, basket -> BASKET, wheel -> WHEEL, man -> PERSON. Words: CLICS4 (clics4/cldf
+forms, the first form of each language for each concept), compared as IPA segment strings (normalised Levenshtein
+over segments). Substitution pairs as set 179 on A and on B names; pairs whose two signs map to the same concept are
+left out (every language 'matches' them); chance = the language's words shuffled among the concepts (200 draws); z =
+(observed - shuffled mean) / shuffled sd. Languages scored: those with words for 12+ of the mapped concepts and 30+
+usable pairs. Families from CLICS4's Family_Name; Indo-Aryan = Indo-European languages of South Asia (longitude
+66-92, latitude 6-36).
+
+- **LS1** Dravidian languages have a mean percentile rank of 0.75 or more among all scored languages.
+- **LS2** Indo-Aryan languages have a mean percentile rank of 0.75 or more.
+- **LS3** The Dravidian mean z is above the Indo-Aryan mean z.
+- **LS4** Among families with 5+ scored languages, Dravidian has the highest mean z.
+- **LS5** The median z over all languages is below 0.5 (the test does not reward every language).
+- **LS6** Scores are stable: Spearman between per-language z on A-pairs and on B-pairs is 0.3 or more.
+- **LS7** The top-ranked language has z >= 2 on A-pairs and on B-pairs separately (a P candidate).
+- **LS8** Control: with the concepts shuffled among the signs (20 shuffled maps), Dravidian's mean percentile falls
+  below its real value in 19 of 20 (any Dravidian lead depends on the depictions).
+
+## Results of the hundred-and-eighty-first set (added after the test; `predict_test181.py`, `results/predict_test181.md`)
+
+Four held, four failed. 83 signs mapped to 23 depicted concepts; 100 concept pairs among substitutable signs; 503
+CLICS4 languages scored. **No language signal.** Dravidian (Kannada, Malayalam, Tamil, Telugu) and Indo-Aryan
+(Bengali, Hindi; Northern Pashto caught by the region filter) both sit at the 44th percentile (LS1, LS2 fail), Dravidian
+slightly above Indo-Aryan in mean z (LS3: -0.22 against -0.41, both below zero). No family stands out (LS4: best Uralic
+0.33), and the median z is -0.14 (LS5 holds: the test does not reward every language). The top languages (Ao Chungli
+z 3.12, Embera, Lower Sorbian, Dargwa dialects, Hungarian) are what the maximum of 503 draws gives by chance (about 3):
+LS7 'holds' (Ao Chungli A z 2.53, B z 2.08) but is a multiple-comparison artefact, not a P candidate. LS6's high
+stability (0.79) reflects that A and B share most concept pairs, so the two samples are not independent at this level.
+The shuffled-map control (LS8) puts Dravidian at 0 or near it in most shuffles, below its real 0.44 in 15 of 20, short of
+the registered 19. Reading: basic words for what the signs depict, in any of 503 languages, do not make substitutable
+Indus signs sound alike. Either the substitutions are not phonetic (signs alternate as words, not as sounds), or the
+depictions are misidentified, or the language is not represented; a simple rebus reading of the depicted signs is not
+supported. P stays 0; L unchanged (no family excluded, none favoured). Tally, counting parts: 1242 held, 1167 failed
+(2409 registered).
+
+# Hundred-and-eighty-second set, registered before testing (24 September 2026): decipherment loop 7, are substitutions semantic? (eight hypotheses)
+
+Metric after loop 6: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loop 6 found no phonetic signal in substitutions
+under any language's words. Loop 7 asks whether substitutions are semantic instead: signs replacing each other because
+they depict the same kind of thing, as word signs would. Categories: Fairservis letter (A humans, C/D animals, E
+plants, F sky, G structures, H weapons, I implements, J containers, K measures, L cloth/ornaments, M drums, N landscape,
+Q fish-like), with signs.FISH as Q and noun_class.HUMAN as A. Substitution pairs as set 179 (A + B names, lexical signs,
+weighted by frames); chance = categories shuffled among the identified signs (1,000 draws).
+
+- **SE1** Substitution pairs of two identified signs are same-category more often than chance.
+- **SE2** SE1 holds with the fish series left out.
+- **SE3** SE1 holds on B's names alone.
+- **SE4** Human-figure signs' identified substitution partners are human figures in 30%+ of pair weight.
+- **SE5** Same-category pairs are 40%+ of identified-pair weight.
+- **SE6** Leave-one-out: an identified sign's category is the majority category of its identified partners (3+
+  partners) in 50%+ of such signs, above the shuffled rate (95th percentile).
+- **SE7** If SE6 holds, unidentified signs with 3+ identified partners and a 60%+ majority get that category; M+ rises
+  by 2 points or more (adoption rule, registered now).
+- **SE8** Signs that substitute across categories are rarer than within, even among signs of the same position class
+  (heads only): same-category share among head-slot substitutions above chance.
+
+## Results of the hundred-and-eighty-second set (added after the test; `predict_test182.py`, `results/predict_test182.md`)
+
+One held, seven failed. **Substitutions are not semantic either.** Substitutable signs share a depicted category more
+than chance only because the fish signs replace one another (SE1: 0.168 against 0.112, p = 0.024; without the fish
+series 0.095 against 0.109, SE2 fails; B alone p = 0.066, SE3). Human figures almost never replace human figures (SE4:
+1 of 138 pair weight), same-category pairs are a sixth of the total (SE5), a sign's partners do not predict its
+category (SE6: 0.22 leave-one-out against a shuffled 95th percentile of 0.29), so no category could be inferred for
+unidentified signs (SE7), and head-slot substitutions are not category-bound (SE8). Reading, with loop 6: the slots of
+Indus names take signs without regard either to how their depicted words sound (in 503 languages) or to what they
+depict, except that fish signs form a family. Either Fairservis's identifications are largely wrong, or the name
+elements work like arbitrary name parts (as personal-name elements do in many naming systems), or both. M+ and P do
+not move. Tally, counting parts: 1243 held, 1174 failed (2417 registered).
+
+# Hundred-and-eighty-third set, registered before testing (24 September 2026): decipherment loop 8, are the depiction identifications coherent? (eight hypotheses)
+
+Metric after loop 7: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loops 6-7 found that substitutions follow neither
+the sound of the depicted words nor the depicted category (except fish). Loop 8 asks whether the identifications are
+the weak link. If a category is a real depiction class, its signs should look alike (shape) and be used alike
+(context). Shapes: set 137's font renderings and mean pairwise IoU against 1,000 random sign sets of the same size;
+contexts: set 62's context similarity (signs with 20+ tokens) against random pairs. Categories as set 182 (Fairservis
+letters; signs.FISH; noun_class.HUMAN).
+
+- **DI1** Human-figure signs (noun_class.HUMAN) form a shape family (p < 0.05).
+- **DI2** Fairservis's A signs not in HUMAN still look like the HUMAN signs more than random signs do (mean best IoU).
+- **DI3** Weapons and implements (H, I) form a shape family.
+- **DI4** Control: the fish series forms a shape family (as SH6).
+- **DI5** Human-figure signs are used alike: mean context similarity of HUMAN pairs above random pairs (p < 0.05).
+- **DI6** Weapons and implements are used alike.
+- **DI7** Across categories with 3+ signs, shape cohesion and context cohesion correlate (Spearman > 0).
+- **DI8** The fish series is used alike (context), the known positive case.
+
+## Results of the hundred-and-eighty-third set (added after the test; `predict_test183.py`, `results/predict_test183.md`)
+
+Five held, three failed. **The identification groups are coherent in shape**: human figures (DI1: mean IoU 0.38, p =
+0.001), weapons and implements (DI3: 0.23, p = 0.004) and the fish (DI4: 0.32, p = 0.001) each form a visual family.
+(DI2 had no case: Fairservis's A signs are all in HUMAN.) **But only some groups are used alike**: the fish strongly
+(DI8: context similarity 0.16, p = 0.001), weapons and implements weakly (DI6: 0.06, p = 0.04), human figures not at all
+(DI5: 0.05 over 7 signs, p = 0.27); across categories, looking alike does not go with being used alike (DI7: Spearman
+-0.07). Reading, with loops 6-7: the depictions are not simply wrong (the groups are visually real), but a shared
+picture does not mean a shared use, except for the fish, which behave as one family of variants of a single word or
+class; human-figure signs behave as distinct name elements. What a sign depicts is therefore a weak guide to its
+reading beyond the fish class. Metric unchanged. Tally, counting parts: 1248 held, 1177 failed (2425 registered).
+
+# Hundred-and-eighty-fourth set, registered before testing (24 September 2026): decipherment loop 9, is the cage a grammatical affix? (seven hypotheses)
+
+Metric after loop 8: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Two of the closers (226, 241) are fish drawn
+inside a 'cage' of four small strokes. If the cage is a grammatical marker that attaches to many signs, that is a
+compositional rule inside the signs, the kind of structure a decipherment builds on. Caged / base pairs from Parpola's
+sign list (CISI digitisation, cisi.p2icit; 'caged by four small vertical strokes'): 226/220, 232 and 153/231, 236/235,
+241/240, 144/142, 393/tree family (390, 392, 405, 406, 407, 409, 48, 64), 895/892, 466/A family (465, 467, 468, 471,
+472, 474), 804/leaf-tree (803, 838), 878/877, 689/71. Distinct lines of A + B unless stated. 'Final' = last sign of the
+line, or followed only by 400 / 90. Fisher tests pool the tokens of all caged signs against all their bases.
+
+- **CG1** Caged signs are line-final more often than their bases.
+- **CG2** Caged signs are followed by 740 or 520 less often than their bases (the cage takes the place of the ending).
+- **CG3** The effect is not only the fish: CG1 holds for the non-fish pairs pooled.
+- **CG4** Caged and base signs share their preceding signs (cosine of preceding-sign distributions, pooled pairs) more
+  than random sign pairs of similar frequency do (the cage attaches to the same stems).
+- **CG5** CG1 holds on B alone.
+- **CG6** Caged signs are used as closers: 60%+ of their tokens are line-final with no 740 / 520 anywhere after them.
+- **CG7** If CG1, CG2 and CG6 hold, R gains a 'caged marker' role for caged tokens not already counted (adoption rule).
+
+## Results of the hundred-and-eighty-fourth set (added after the test; `predict_test184.py`, `results/predict_test184.md`)
+
+Five held, one failed (CG7 is the adoption rule). **The cage works like a grammatical affix drawn around a sign.**
+Caged signs (a sign inside four small strokes; 92 tokens) end the line in 73% against 20% for their plain bases (CG1,
+p < 0.0001), are never followed by 740 or 520 (CG2: 0 of 92 against 16%), attach to the same stems as their bases
+(CG4: cosine of preceding signs 0.43 against 0.09 for random partners, p = 0.001), and behave as closers (CG6: 73%
+final with no ending after them). It replicates on B (CG5: 82% against 28%). The cage turns a name's head into a
+closing form that stands in place of the ending: morphology written inside the sign. Limit: outside the fish, caged
+signs are too few (17 tokens) to confirm the rule (CG3: 47% against 35%, n.s.), so it is established for the caged fish
+and suggested for the rest. Under CG7 the caged signs not already among the closers get a 'caged marker' role in R.
+Tally, counting parts: 1253 held, 1178 failed (2431 registered).
+
+# Hundred-and-eighty-fifth set, registered before testing (24 September 2026): decipherment loop 10, do the other fish marks work as affixes? (seven hypotheses)
+
+Metric after loop 9: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4. Loop 9 found the cage works as a grammatical affix.
+Loop 10 asks the same of the other marks added to the fish: plain 220; stroke in the body 231; horizontal bar 233;
+caret-shaped 'roof' hat 235; whiskers 240 (Parpola's list via the CISI digitisation). Outside the fish these marks are
+too rare to test (1-18 tokens). Names via R.name_of on distinct lines; A and B (M77 additions) separately.
+
+- **MF1** In A, the variant predicts its slot in the name (head against modifier) beyond permutation (MI).
+- **MF2** MF1 holds on B.
+- **MF3** The roof fish 235 stands directly before another fish sign more often than the plain fish does (Fisher,
+  A + B): the hat marks an attribute.
+- **MF4** Names headed by the whisker fish 240 take 520 more often than names headed by the plain fish 220 (Fisher,
+  A + B).
+- **MF5** The direction of each variant's head-slot difference from the plain fish is the same in A and in B for all
+  four marked variants.
+- **MF6** On B, the value of a numeral run before a fish depends on the variant (MI; NP4's result on a new sample).
+- **MF7** The variant depends on the preceding sign beyond permutation (MI), in A and in B (the mark agrees with its
+  context, as inflection would).
+
+## Results of the hundred-and-eighty-fifth set (added after the test; `predict_test185.py`, `results/predict_test185.md`)
+
+Five held, two failed. **The marks added to the fish change its job.** The variant predicts whether the fish is a
+name's head or a modifier, in A (MF1: MI 0.036, p = 0.0001) and B (MF2: 0.074, p = 0.0007). The roof-hat fish 235
+stands directly before another fish in 40% against 15% for the plain fish (MF3, p < 0.0001): the hat marks an
+attribute. The bar (233), roof (235) and whisker (240) fish are less often heads than the plain fish 220 in both
+samples (A -0.11 / -0.21 / -0.18; B -0.21 / -0.29 / -0.24); MF5 fails only on the stroke fish 231, whose difference is
+near zero with opposite signs (-0.03, +0.01). The variant agrees with its context: it depends on the preceding sign in
+both samples (MF7: MI 0.79 and 1.02, p = 0.0001) and, on B, on the counted value before it (MF6: p = 0.012, NP4
+replicated on a new sample). Whisker-fish names do not take 520 more than plain-fish names (MF4). Reading, with loop
+9: the fish family is one word written with a small set of marks that change its grammatical job, the plain fish as
+head, the marked fish as attributive or derived forms, the caged fish as a closing form; morphology inside the signs.
+Roles already cover these tokens, so the metric does not move. Tally, counting parts: 1258 held, 1180 failed (2438
+registered).
+
+# Hundred-and-eighty-sixth set, registered before testing (24 September 2026): decipherment loop 11, the strokes inside the jar (eight hypotheses)
+
+Standing goal (owner, 24 Sept): loops until 20 in a row make no progress (PROGRESS.md stopping rule). Metric after loop
+10: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; no-progress streak 0. Loops 9-10 found marks that change a sign's
+grammatical job (the cage; the fish marks). Loop 11 asks the same of the jar: 740 (plain), 741 (one stroke inside),
+742 (two), 745 (three), per Parpola's list (P324-P327 via the CISI digitisation). Distinct lines; A and B separately
+where stated. 'Final' = last sign or followed only by 400 / 90.
+
+- **JV1** Stroked jars (741, 742, 745) are final less often than the plain jar (A; Fisher).
+- **JV2** JV1 holds on B.
+- **JV3** Stroked jars are directly followed by 740 or 520 more often than the plain jar is (A + B): a stroked jar can
+  be a head that takes the ending.
+- **JV4** Stroked jars are preceded by a numeral less often than the plain jar (the strokes inside do the counting).
+- **JV5** The inner strokes are graded: across 740, 741, 742, 745, the share final falls (or rises) monotonically with
+  the stroke count (Spearman |rho| = 1 over the four points).
+- **JV6** The stroked jars are relatively more frequent on tablets than on seals, compared with the plain jar (F;
+  Fisher).
+- **JV7** 741 and '740 1' (the jar followed by a single stroke) stand in the same frames more than random sign pairs of
+  similar frequency (the stroke inside = a stroke after).
+- **JV8** Progress rule: at least one of JV1/JV3 holds with a same-direction replication on B.
+
+## Results of the hundred-and-eighty-sixth set (added after the test; `predict_test186.py`, `results/predict_test186.md`)
+
+Five held, three failed. **The strokes inside the jar turn the ending into a name element.** The plain jar 740 ends
+the line in 88% of its tokens; the stroked jars 741, 742, 745 in 3% (JV1, A) and 14% (JV2, B). They are occasionally
+followed by an ending themselves (JV3: 1.0% against 0.1%, p = 0.02) and are preceded by a numeral less often (JV4:
+4.2% against 7.1%). They belong to seals more than the plain jar does (JV6 fails the other way: 20% on tablets
+against 42%). The three stroke counts are not graded (JV5: final 0.86, 0.07, 0.12, 0.06), and 741 does not stand where
+'740 1' stands (JV7: no shared frame), so the inner stroke is not a stroke written after the jar. Reading, with loops
+9-10: a third mark that changes a sign's job, here turning the commonest ending into an internal element of the
+name; the script marks grammatical function by strokes and cages drawn onto a base sign. JV8 (progress rule) holds:
+new and replicated on B. Tally, counting parts: 1263 held, 1183 failed (2446 registered).
+
+# Hundred-and-eighty-seventh set, registered before testing (24 September 2026): decipherment loop 12, doubling and brackets (seven hypotheses)
+
+Metric after loop 11: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 0. An automatic sweep of Parpola's list for
+'base + mark' pairs (a marked sign whose description begins with a base sign's description) finds few pairs beyond
+those already tested: cage (8), stroke (the jar, 3), bracket (2: 101-103/100, 905/904-927), hatching (1: 924/923).
+Loop 12 tests the other visible device, doubling (a lexical sign written twice in a row, TY4: 5% of lines, mostly 615),
+and the brackets. Distinct lines; A and B separately.
+
+- **DB1** A lexical sign written doubled (x x) ends the line (or stands before 400 / 90) less often than the same sign
+  written once, pooled over signs doubled 3+ times (A; Fisher).
+- **DB2** DB1 holds on B.
+- **DB3** Doubled pairs are followed by 740 / 520 less often than the single sign is (A + B).
+- **DB4** Doubled pairs stand at the start of the line more often than the single sign (A + B): doubling marks the
+  opening element.
+- **DB5** The doubled 615 has a different set of following signs from the single 615 (JSD above the 95th percentile of
+  random splits of 615 tokens).
+- **DB6** Bracketed signs (101/103, 905) are final more often than their bases (100; 904, 927) (A + B).
+- **DB7** Progress rule: at least one of DB1, DB3, DB4 holds in A with the same direction in B.
+
+## Results of the hundred-and-eighty-seventh set (added after the test; `predict_test187.py`, `results/predict_test187.md`)
+
+Three held, four failed. Signs doubled 3+ times: 220, 390, 615, 700, 790, 809, 820, 892 (147 doubled tokens, 1,323
+single). **Doubled signs sit at the edges of texts.** They end the line more often than the single sign, not less
+(DB1 and DB2 fail the other way: 41% against 21% in A, 34% against 26% in B) and open it more often (DB4: 36% against
+29%, same direction in A and B), and they take the ending as often as single signs (DB3). The doubled 615 is followed
+by different signs from the single 615 (DB5: JSD 0.58 against a random-split 95th percentile of 0.36). Brackets do not
+change position (DB6, 23 tokens). Reading: doubling is a distinct form, not just emphasis: a doubled sign tends to
+stand as a text's first or last element (short texts made of a doubled sign and little else), consistent with a
+plural, collective or total. DB7 holds (DB4 new and replicated in direction on B): progress, streak 0. Tally, counting
+parts: 1266 held, 1187 failed (2453 registered).
+
+# Hundred-and-eighty-eighth set, registered before testing (24 September 2026): decipherment loop 13, more training text for S (five hypotheses)
+
+Metric after loop 12: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 0. S has not moved in twelve loops:
+richer model components added nothing. Loop 13 adds data instead. The fuller ICIT export (F) holds distinct lines that
+are not among progress.py's lines (A + B); adding them to the training lines (never to the fixed test lines, and
+excluding any F line identical to a test line) is a legitimate improvement of the same benchmark. Model as
+progress.py (tri + pos + end, discounted; weights fitted on a development split of the training lines).
+
+- **SX1** Training on progress.py's training lines plus F's extra distinct lines lowers S by 0.03 bits or more (the
+  metric's training data is then extended).
+- **SX2** Adding only F's extra seal lines lowers S by 0.01 or more.
+- **SX3** With the extra lines, the share of test tokens unseen in training falls by 0.5 points or more.
+- **SX4** The gain is not only from copper tablets: adding F's extra lines without copper tablets lowers S by 0.02 or
+  more.
+- **SX5** Progress rule: SX1 holds.
+
+## Results of the hundred-and-eighty-eighth set (added after the test; `predict_test188.py`, `results/predict_test188.md`)
+
+None held, five failed. Adding F's 432 extra distinct lines to the 2,177 training lines makes S slightly worse, not
+better (SX1: 4.712 to 4.719; seals only 4.723, SX2; without copper 4.717, SX4), though it cuts the unseen test signs
+from 2.05% to 1.58% (SX3, short of 0.5 points). The extra lines apparently follow different transcription habits (F
+is the fuller export, with fragmentary and variant readings that A's cleaning left out), so more text of that kind
+does not help the benchmark. No progress this loop: streak 1. Tally, counting parts: 1266 held, 1192 failed (2458
+registered).
+
+# Hundred-and-eighty-ninth set, registered before testing (24 September 2026): decipherment loop 14, strokes inside the U (seven hypotheses)
+
+Metric after loop 13: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 1. Loop 11 found that strokes inside the
+jar change its job. Parpola's list has the same device on the U: plain U 700 (P310, the measure container of the count
+tokens); U with a long vertical stroke inside 704 / 705 / 706 (P316; 705 / 706 are the signs of the closing formula
+'705 33 520'); U with two or three short strokes inside 702 / 703 (P311, P312). Distinct lines; A and B separately.
+
+- **UI1** The plain U 700 is directly preceded by a numeral more often than the stroked U 705 / 706 (A; Fisher).
+- **UI2** UI1 holds on B.
+- **UI3** 705 / 706 are directly followed by the long 3 (33) more often than 700 is (A + B).
+- **UI4** 700 ends the line (or stands before 400 / 90) more often than 705 / 706 (A).
+- **UI5** UI4 holds on B.
+- **UI6** The short-stroked U 702 / 703 are preceded by a numeral less often than 700 (A + B; 17 tokens, weak).
+- **UI7** Progress rule: UI1 with UI2, or UI4 with UI5 (the inner-stroke device generalises from the jar to the U).
+
+## Results of the hundred-and-eighty-ninth set (added after the test; `predict_test189.py`, `results/predict_test189.md`)
+
+Seven held, none failed. **The inner-stroke device generalises from the jar to the U.** The plain U 700 is a counted
+unit that ends the text: preceded by a numeral in 45% against 13% for the U with a long stroke inside (705 / 706)
+(UI1; B 30% against 10%, UI2) and final in 45% against 3% (UI4; B 43% against 8%, UI5). The stroked U opens the closing
+formula: followed by the long 3 in 49% against 0% for the plain U (UI3). The U with two or three short strokes inside
+(702 / 703) is almost never counted (UI6: 1 of 18 against 37%). Reading, with loop 11: strokes drawn inside a container
+sign (jar, U) turn it into a different word or form, a productive graphic device of the script: the plain container
+counts or ends, the stroked container is a name element or the head of the closing formula. This is structural
+knowledge any reading must reproduce (a reading of 700 as a measure or container must give 705 / 706 a related word
+that heads the closing formula). Progress (new, replicated on B): streak 0. Tally, counting parts: 1273 held, 1192
+failed (2465 registered).
+
+# Hundred-and-ninetieth set, registered before testing (24 September 2026): decipherment loop 15, the leaf family (six hypotheses)
+
+Metric after loop 14: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 0. Loops 9-14 found marks and inner
+strokes that change a sign's job. The leaf shape in Parpola's list carries several attachments: a small diamond on top
+(817, 824, 856, 861: the heading signs), a tree at the bottom (803, 838), a stroke inside (808, 809, 830, 832), a hatched
+square inside (810, 812, 814), a diagonal stroke inside (831). Positions: initial, medial, final (last sign or before
+400 / 90) and name head (directly before 740 / 520). Distinct lines; A and B separately.
+
+- **LF1** In A, the attachment predicts the position class (initial / medial / head / final) beyond permutation (MI).
+- **LF2** LF1 holds on B.
+- **LF3** Leaf + stroke inside is a name head more often than leaf + tree (A + B; Fisher).
+- **LF4** Leaf + tree stands medially (not initial, not head, not final) more often than leaf + stroke inside (A + B).
+- **LF5** Leaf + diamond (the heading) is line-initial in 60%+ (A + B; a replication check of the known heading).
+- **LF6** Progress rule: LF1 and LF2 both hold, or LF3 holds with the same direction in A and in B separately.

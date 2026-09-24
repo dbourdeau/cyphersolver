@@ -26,6 +26,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL = {'keys': ['tri', 'pos', 'end'], 'kn': True}          # set 125 (BB2-BB4)
 ANCHORS = {'749': 'markhor goat', '341': 'rhinoceros', '753': 'hare', '777': 'markhor goat / horned archer'}  # copper-tablet equations (fourth pass)
 VALUES = {}                                                   # no sound value has passed a registered test
+CAGED = {'226', '232', '153', '236', '241', '144', '393', '895', '466', '804', '878', '689'}  # set 184
 DEPICT = ('human', 'tool', 'plant', 'fish')                   # set 178 (DC1-DC3, DC5): depiction classes confirmed by use on B
 FAMILIES = {'Dravidian': 'open', 'Indo-Aryan': 'open', 'Burushaski / isolate': 'open', 'unknown (lost) language': 'open',
             'Sumerian': 'excluded (Q1, H7, TY1, LN1)', 'Elamite': 'excluded (head-initial order; Q1)',
@@ -75,6 +76,8 @@ def roles(DL):
                 role = 'ending'
             elif g in CL:
                 role = 'closer'
+            elif g in CAGED:
+                role = 'caged marker'  # set 184 (CG1-CG2, CG6): the cage replaces the ending
             elif g in ('400', '90') and i > 0 and (t[i - 1] in R.END or t[i - 1] in CL):
                 role = 'post-ending marker'
             elif i == 0 and heading(t):
