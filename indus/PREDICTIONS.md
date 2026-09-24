@@ -2684,3 +2684,16 @@ in the original sets; head class and ranks from A. 10,000-draw permutations (1,0
 - **RP8** (NN4) At other sites, non-name lines carry a numeral more often than name lines.
 - **RP9** (EM7) At other sites, a numeral is first more often in non-name lines than in name lines (lines with one).
 - **RP10** (EM9) In B, 2-sign non-name lines are numeral + sign more often than 2-sign name bodies.
+
+## Results of the forty-sixth set (added after the test; `predict_test46.py`, `results/predict_test46.md`)
+
+Nine held, one failed. At the smaller sites (529 objects, 548 lines) doubling is above shuffles (RP1: 18 doubles,
+p = 0.02) and names avoid distant repeats (RP2: 1 of 93 bodies, p = 0.014); non-name lines carry more numerals (RP8:
+70% against 56%) and open with them more (RP9: 39% against 22%). In Mahadevan's transcription alone the order findings
+hold: transitive orders (RP3: 2 cyclic of 94 triples), names growing at the front (RP4: 18 against 4) and ending in a
+known name (RP5: 52 against 5); non-name lines rarely end in a head sign (RP7: 14% against 46%) and 2-sign ones are
+counts (RP10: 52% against 16%). The one failure is the weakest earlier finding: bodies that break the A ranking are not
+more often one-off names in B (RP6: 78% against 82%), so SK7 does not replicate and should be treated as unconfirmed.
+Caveat: B is a second transcription of largely the same objects, so it guards against transcription choices, not
+against the sample; the other-site tests are the independent ones. Tally, counting parts: 269 held, 358 failed (627
+registered).

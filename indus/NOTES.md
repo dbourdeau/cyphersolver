@@ -1265,6 +1265,20 @@ Registered first (forty-fifth set, cb47618d7), tested (`predict_test45.py`). Non
 are followed by varied signs (often 845, 151, 156). 400 after a name and 400 in these formulas are separate uses: in
 formulas it never follows a name body. Tally 260 held, 357 failed.
 
+## Sixtieth pass (24 Sept 2026): replicating rounds 5-9 (round 10 of 10)
+
+Registered first (forty-sixth set, 6f792f8eb), tested (`predict_test46.py`). Nine of ten findings from rounds 5-9
+replicate on held-out data (smaller sites, or Mahadevan's transcription alone): deliberate doubling, no distant repeats,
+transitive leftward-growing name order, and the number-first non-name genre. SK7 (inversions in one-off names) does
+not. Tally 269 held, 358 failed.
+
+Summary of rounds 1-10 of this loop (sets 37-46, 100 hypotheses): 52 held. What stands up: (1) names are built
+leftward from a head in one transitive order of slots, the same in both cities and both transcriptions, though not a
+single number per sign; (2) half the lines are a second genre, short number-first formulas off the seals that can cite
+a common name without its ending; (3) adjacent doubling is deliberate and mostly one sign (615), and is not a variant
+spelling; (4) the core name and number grammar survives on Mahadevan's transcription alone and over time at Harappa.
+None of this gives sound values; it is structure, not a reading.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
