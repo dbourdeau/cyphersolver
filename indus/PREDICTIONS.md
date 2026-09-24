@@ -3020,3 +3020,20 @@ not post-name signs (CL8: 527, 156, 154 follow an ending in 1% of tokens), they 
 the sign before them is usually not a head (CL10: 4 of 18), and they are not a Harappa habit (CL5) or unheaded (CL9).
 The fifty-fifth set's alternative endings should be read as short sign pairs; only 400 and 151 as post-name signs remain
 from before. Tally, counting parts: 328 held, 409 failed (737 registered).
+
+# Fifty-eighth set, registered before testing (24 September 2026): the fish signs (loop 3, round 2)
+
+Fish signs = signs.FISH (220 plain and its variants). Names from A + B pooled unless F is named; 'body tokens' = signs
+inside name bodies. 10,000-draw permutations (1,000 for within-body shuffles); p < 0.05.
+
+- **FS1** Two different fish signs stand adjacent in bodies more often than within-body shuffles give.
+- **FS2** In adjacent fish pairs of different signs, 220 is second more often than first (sign test).
+- **FS3** Fish tokens are more frequent per token in name bodies than in formulas.
+- **FS4** Bodies ending in a fish sign are more varied in their ending (entropy) than bodies ending in a non-fish sign
+  (label permutation).
+- **FS5** Fish tokens in bodies are preceded by a numeral more often than other body tokens.
+- **FS6** Which fish sign is used depends on the preceding sign (body tokens with one; MI, permutation).
+- **FS7** Which fish sign is used depends on the following sign (MI, permutation).
+- **FS8** Which fish sign is used depends on the city (F names, Mohenjo-daro against Harappa; MI, permutation).
+- **FS9** Fish tokens are a smaller share of name-body tokens at Harappa than at Mohenjo-daro (F).
+- **FS10** Fish tokens in formulas are last more often than other formula tokens.
