@@ -5751,3 +5751,18 @@ stated.
 - **BM10** A bigram trained on names is 1+ bit worse on count lines than on held-out names.
 - **BM11** A bigram trained on A is within 1 bit of B-trained on held-out B lines (same training size).
 - **BM12** Adding the role model (BM1) helps more on the smaller sites' lines than on the cities' held-out lines.
+
+## Results of the hundred-and-twenty-third set (added after the test; `predict_test123.py`, `results/predict_test123.md`)
+
+Seven held, five failed. The structural findings improve prediction of held-out lines. Adding the role model (numeral
+kind, heading, ending, suffix, closer, fish, other) to the sign bigram cuts cross-entropy from 6.38 to 5.86 bits per sign
+(BM1), more on the smaller sites (BM12: 0.60 against 0.53); genre-specific bigrams cut it to 6.17 (BM2); and position in
+the line alone (first, middle, next-to-last, last) gives 5.43 bits, better than the plain bigram and 0.9 bits better
+than the unigram (BM3). Names carry longer dependencies than counts (BM8: trigram gain 0.74 against 0.65) and a
+name-trained model does 2 bits worse on counts (BM10: 5.52 against 7.55), so the genres are different sequence types
+on one vocabulary. A-trained models are within 1 bit of B-trained ones on B (BM11: 6.82 against 5.96). Not supported:
+knowing the ending barely helps predict the head (BM5: 38% to 42%); common heads predict the ending at 90%, not 95%
+(BM6); penalising repeats does not help (BM7); a Mohenjo-daro model is only 0.14 bits worse on Harappa than a Harappa
+one (BM9, under 0.3). BM4 was ill-posed: a smoothed bigram scores almost identically forwards and backwards, so it cannot
+detect reading direction (6.384 both). Next: combine position, roles and bigrams in one model. Tally, counting parts:
+967 held, 939 failed (1906 registered).

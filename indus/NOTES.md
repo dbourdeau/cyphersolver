@@ -1839,6 +1839,12 @@ and openers are a nearly closed inventory (95%, 88% seen), the head predicts the
 ~85%), the last sign predicts the genre 77%, bigrams save 1.8 bits per sign and trigrams a further 0.6. These are the
 benchmark numbers for any future model. Tally 960 held, 934 failed.
 
+## Hundred-and-thirty-seventh pass (24 Sept 2026): does structure improve prediction?
+
+Registered first (hundred-and-twenty-third set, 35326462e), tested (`predict_test123.py`). Yes: role classes cut held-out
+cross-entropy by 0.5 bits per sign, genre by 0.2, and position alone beats the bigram (5.43 against 6.38). The cities'
+sequences differ only slightly (0.14 bits). BM4 (direction) was ill-posed for a bigram. Tally 967 held, 939 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
