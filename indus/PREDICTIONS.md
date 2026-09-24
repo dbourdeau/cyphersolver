@@ -5623,3 +5623,27 @@ closer choice a little (EP12, p = 0.006), the medium not significantly (EP13, p 
 (EP4), not headed more (EP5), not more on seals (EP6: 79%, just under 80%) or at Mohenjo-daro (EP7). Model: body +
 {740 | 520 | closer | 740 + stacking closer} + optional 400 (not after a stacked closer) or 90 (after 740 only).
 Tally, counting parts: 941 held, 911 failed (1852 registered).
+
+# Hundred-and-twentieth set, registered before testing (24 September 2026): two kinds of closer (fifteen hypotheses)
+
+From the hundred-and-nineteenth set: six closers are seen after 740 ('stacking': 151, 161, 527, 565, 621, 679) and five
+are not ('plain': 154, 156, 226, 241, 426). Bodies, classes and heads as before; distinct lines (A + B) unless stated;
+F' = F without copper. p < 0.05.
+
+- **SK1** Plain closers' bodies also occur before 740 more often than stacking closers' bodies (closer directly after the
+  body).
+- **SK2** 25%+ of stacking-closer tokens directly follow 740.
+- **SK3** F': plain closers directly follow 740 in 1 distinct line or none.
+- **SK4** Plain closers follow a 520-class head more often than stacking closers do.
+- **SK5** Stacking-closer lines are on tablets more often than plain-closer lines (F').
+- **SK6** Plain closers take 400 after them more often than stacking closers.
+- **SK7** The closer kind depends on the city (F', Fisher two-sided).
+- **SK8** When no 740 intervenes, 90%+ of classed heads before stacking closers are 740-class.
+- **SK9** Under 80% of classed heads before plain closers are 740-class.
+- **SK10** Plain closers' heads are counted (numeral before) more often than stacking closers' heads.
+- **SK11** Bodies before stacking closers are attested 740 names more often than bodies before plain closers.
+- **SK12** B: SK1 holds.
+- **SK13** F': stacking closers follow 740 in 25%+ of tokens (SK2).
+- **SK14** F': SK11 holds.
+- **SK15** The first sign of name tails (after a mid-line ending) is a stacking closer at least three times as often as a
+  plain closer.
