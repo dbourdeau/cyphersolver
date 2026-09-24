@@ -4191,3 +4191,19 @@ The fuller corpus
 - **HO18** (QS1) The middle sign of 3-sign bodies tells more about the head than about the opener.
 - **HO19** (PS2) 80%+ of distinct 'N 520' lines are '705/706 33 520'.
 - **HO20** (CG7) 80%+ of heads with 5+ names take one ending in 90%+.
+
+## Results of the eighty-sixth set (added after the test; `predict_test86.py`, `results/predict_test86.md`)
+
+Twelve held, eight failed, with a clear split. The number system travels everywhere: at the smaller sites (457
+distinct lines) the tiered form is for 5-8 (HO5: 59% against 5%) and the next sign sets the numeral kind (HO6, p =
+0.0003). The name grammar does not travel to the smaller sites: no right-branching signal (HO1: 4 against 4), no
+fish-520 link (HO2: 48% against 38%, p = 0.20), heads less fixed in class (HO3: 11 of 17), classes matching A + B only
+89% (HO4, just under 90%), and only a third of names ending in a common city head (HO8: 33%). In Mahadevan's
+transcription the recent name findings hold: head selects modifier (HO9), bodies keep their ending (HO10: 5 of 314),
+one suffix per head (HO11: 34 of 36), the item sets the count (HO12), names and formulas count differently (HO13) and
+names are the repetitive genre (HO14). In the fuller corpus: 90 and 400 take different heads (HO17), the middle leans
+on the head (HO18), 'N 520' is the 705/706 33 520 phrase (HO19: 37 of 45) and classes are fixed (HO20: 41 of 49). Not
+confirmed in F: the header selecting the item (HO16, p = 0.13; FG3 rested on A + B) and 'N mod head' outnumbering 'mod
+N head' (HO15: 98 against 92). Reading: the two cities share one name grammar and one number system; the smaller sites
+share the number system but write names differently (or too few survive to show the pattern). Tally, counting parts:
+575 held, 632 failed (1207 registered).

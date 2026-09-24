@@ -1553,6 +1553,16 @@ separately at Mohenjo-daro and at Harappa (classes, right-branching, tiered 5-8,
 order). Local style: Mohenjo-daro longer, headed names; Harappa suffixed receipts and more formulas, different counted
 items and some different common heads. Tally 563 held, 624 failed.
 
+## Hundredth pass (24 Sept 2026): recent findings on held-out data
+
+Registered first (eighty-sixth set, 187d09005), tested (`predict_test86.py`). The number system holds at the smaller
+sites; the name grammar (fish-520, classes, right-branching, common heads) does not show there. In B and the fuller
+corpus the name findings hold; FG3 (header selects item) and the N-mod-head order are not confirmed in F.
+
+Summary of sets 84-86: Harappa's writing lengthens and moves to seals and moulded tablets over time with its grammar
+unchanged; Mohenjo-daro and Harappa share one grammar with different local styles; the smaller sites share the
+numerals but not the name system. Tally 575 held, 632 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
