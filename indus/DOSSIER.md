@@ -74,6 +74,10 @@ chance to be used alike, but merging every such pair reduces 223 common signs on
 - **Registered predictions from the Dravidian model failed** (`PREDICTIONS.md`, committed before the test): no
   sign replaces 740 on the same names as a rational plural would, and the 520 names alternate slightly more, not less,
   than the 740 names. The Dravidian reading fits the structure it was built on and has not yet predicted anything new.
+- **Registered predictions of a head-final name with a class suffix held** (second set): the ending follows the
+  last sign (names sharing it agree 95% of the time, sharing the first sign 83%), and a non-final fish sign does not
+  bring 520 (8% against 55% for fish-final names), on held-out texts. Against Sumerian and Elamite; neutral between
+  Dravidian and Indo-Aryan.
 - **Early Tamil names** (Tamil-Brahmi, Mahadevan 2003) share the shape of the Indus name slot (one dominant class
   suffix, a small second class, possessor first), but their minority class is women's names, not star names; the
   comparison is consistent with Dravidian without excluding Indo-Aryan (`tamil_brahmi.py`).

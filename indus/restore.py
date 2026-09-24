@@ -9,7 +9,8 @@ R1  Cases: single-line texts broken at exactly one edge (reading start or readin
 R2  Prediction without parallels: a model trained on intact lines that do NOT contain L anywhere (so the answer
     cannot be looked up). Predictors: (a) the commonest sign in that position (start / end of a line); (b) the
     neighbour: the sign most often found next to L's edge sign on that side; (c) (b) plus the line position
-    (e.g. after a name-final sign at the reading end, the ending grid). Top-1 and top-5 accuracy.
+    (e.g. after a name-final sign at the reading end, the ending grid); (d) an interpolation of the two edge signs
+    (trigram), the neighbour and the edge prior. Top-1 and top-5 accuracy.
 R3  The same with parallels allowed (the standard method): how often an intact line in the rest of the corpus
     supplies the answer (a check that the answer key is consistent).
 
@@ -88,9 +89,24 @@ def main(path):
                     nb[t[i]] += 1
                     if i == len(t) - 1:
                         nbpos[t[i]] += 1
+        # (d) interpolated model: two edge signs (trigram), one (bigram), line-edge prior
+        e2 = L[:2] if side == 'start' else L[-2:]
+        tri = Counter()
+        for t in train:
+            for i in range(len(t) - 2):
+                if side == 'start' and tuple(t[i + 1:i + 3]) == tuple(e2):
+                    tri[t[i]] += 1
+                if side == 'end' and tuple(t[i:i + 2]) == tuple(e2):
+                    tri[t[i + 2]] += 1
+        sc = Counter()
+        nt, nn, npp = sum(tri.values()), sum(nb.values()), sum(pos.values())
+        for g in set(tri) | set(nb) | set(pos):
+            sc[g] = (0.5 * tri[g] / nt if nt else 0) + (0.35 * nb[g] / nn if nn else 0) + 0.15 * pos[g] / max(npp, 1)
+        preds_d = [g for g, _ in sc.most_common(5)]
         preds = {'(a) commonest sign at that edge': [g for g, _ in pos.most_common(5)],
                  '(b) commonest neighbour of the edge sign': [g for g, _ in nb.most_common(5)],
-                 '(c) neighbour at the line edge': [g for g, _ in (nbpos or nb).most_common(5)]}
+                 '(c) neighbour at the line edge': [g for g, _ in (nbpos or nb).most_common(5)],
+                 '(d) two edge signs + neighbour + edge (interpolated)': preds_d}
         for k, p in preds.items():
             res[k][0] += bool(p) and p[0] == truth
             res[k][1] += truth in p

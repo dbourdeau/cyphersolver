@@ -853,6 +853,24 @@ right mark broken edges; replaces the rough parse of replicate_full.py), `restor
 5. **Paper draft** for Lasry: `PAPER_DRAFT.md` (bench validated on Linear Elamite, structure, language, negative results,
    what is new, limitations).
 
+## Sixteenth pass (23 Sept 2026): second registered predictions, restoration model, period detail, famous-target rule
+
+1. **Second registered predictions hold** (`PREDICTIONS.md`, committed before the test; `predict_test2.py`). Q1: the
+   ending follows the name's last sign (MI excess 0.307 bits held out) far more than its first (0.052); names sharing a
+   last sign agree in ending 95.4% (first sign 83.1%). Q2: a fish sign inside the name but not last takes 520 in 8.2%
+   (held out), fish-final 55.0%, no fish 5.4%. Head-final compound with a class suffix; against Sumerian and Elamite;
+   does not separate Dravidian from Indo-Aryan.
+2. **Restoration, interpolated model** (two edge signs + neighbour + edge prior): 24% top-1, 51% top-5 - no better than
+   the neighbour-at-edge model (27%): with parallels withheld, two-sign contexts are too sparse.
+3. **Periods, which name signs move.** Mohenjo-daro, earlier -> Late: 760, 798, 240, 527, 806 gain; 156, 390, 100, 892
+   lose. Harappa 3B -> 3C: 440 (0 -> 7% of objects) and 416 (1 -> 7%) appear; the pot 700 falls (32 -> 24%). Mackay's
+   sub-phase numbering was not used (its direction is ambiguous in the records).
+4. **Gulf catalogue not added**: Laursen 2010's 29 seals are given only as drawings (his Fig. 11); not transcribed.
+5. **Famous targets keep no profile.json** (owner's rule): indus/, voynich/, beale/ profiles removed; `FAMOUS` in
+   `docs/_check_writeup.py` is honoured by the write-up checker, `_check_profile.py --audit` and
+   `_export_profiles.py`; CLAUDE.md updated. `PAPER_DRAFT.md` is a standalone article, not paper data.
+6. **Site**: new section 'Predictions, restorations and foreign names' on docs/indus.html.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

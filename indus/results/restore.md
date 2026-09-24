@@ -9,6 +9,7 @@
 | (a) commonest sign at that edge | 9 of 157 (6%) | 24 (15%) |
 | (b) commonest neighbour of the edge sign | 38 of 157 (24%) | 87 (55%) |
 | (c) neighbour at the line edge | 43 of 157 (27%) | 64 (41%) |
+| (d) two edge signs + neighbour + edge (interpolated) | 37 of 157 (24%) | 80 (51%) |
 
 - start: truth is a heading sign: 9; start: truth is a heading sign and (c) gets it: 0; end: truth is an ending (740/520): 13; end: truth is an ending and (c) gets it: 10.
 

@@ -112,6 +112,14 @@ def main(path):
         d = divergence(e, l, rng)
         say('- PD2 divergence earlier / later: %s.' % '; '.join(
             '%s %.3f bits (z %.1f, permutations as large %.3f)' % (k, v[0], v[1], v[2]) for k, v in d.items()))
+ 
+        ce = Counter(g for r in e for g in set(r['flat']) if g not in GRAM)
+        cl = Counter(g for r in l for g in set(r['flat']) if g not in GRAM)
+        ne_, nl_ = len(e), len(l)
+        diff = sorted(((cl[g] / nl_ - ce[g] / ne_), g) for g in set(ce) | set(cl) if ce[g] + cl[g] >= 8)
+        say('- name signs that gain most in the later level (share of objects, earlier -> later): %s; that lose most: %s.' % (
+            ', '.join('%s %.0f%% -> %.0f%%' % (g, 100 * ce[g] / ne_, 100 * cl[g] / nl_) for d_, g in diff[::-1][:5]),
+            ', '.join('%s %.0f%% -> %.0f%%' % (g, 100 * ce[g] / ne_, 100 * cl[g] / nl_) for d_, g in diff[:5])))
         say()
     os.makedirs(os.path.join(HERE, 'results'), exist_ok=True)
     with open(os.path.join(HERE, 'results', 'periods.md'), 'w', encoding='utf-8') as f:
