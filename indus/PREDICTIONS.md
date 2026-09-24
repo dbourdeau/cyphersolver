@@ -3192,3 +3192,20 @@ graffiti, and 66 of them stand first before a numeral ('700 33', '700 32', '700 
 other direction relative to the F line order, not an uncounted 700. Also: 700 700 is not a Harappa tablet form (CN7:
 4 of 19), and most counted signs take more than one numeral kind (CN8: 15 of 74 take one). Tally, counting parts: 360
 held, 437 failed (797 registered).
+
+# Sixty-fourth set, registered before testing (24 September 2026): lines running the other way (loop 3, round 8)
+
+F lines (intact, reversed order as in M4). 'Reversed count token' = 700 followed only by numerals; 'normal count token'
+= numerals followed by 700. 'Reversed name line' = a line of 3+ signs whose first sign is 740 or 520 and whose last is
+neither. A's 'direction' field joined by CISI number where needed. 10,000-draw permutations; p < 0.05.
+
+- **DR1** Reversed count tokens are a larger share of count tokens on moulded tablets (TAB:B) than on incised (TAB:I).
+- **DR2** Objects with a reversed count token have direction 'L/R' in A more often than objects with a normal one.
+- **DR3** Reversed name lines are 2%+ of F lines containing 740 or 520.
+- **DR4** Reversed name lines are off seals more often than normal name lines.
+- **DR5** 30%+ of reversed name lines, read backwards, give an attested name body.
+- **DR6** 90%+ of reversed count tokens are from Harappa.
+- **DR7** Potsherd graffiti (POT types) carry reversed forms (count or name) at a higher line share than seals.
+- **DR8** The value of a count token does not depend on its direction (MI permutation p >= 0.05).
+- **DR9** In A, 'L/R' lines end in 740/520 less often than other lines.
+- **DR10** At most 10% of A seals with a direction entry are 'L/R'.
