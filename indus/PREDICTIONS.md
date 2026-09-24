@@ -6693,3 +6693,15 @@ closer) are more varied than 740 heads (PV4 fails the other way, 0.102), a sign 
 head in the same sense. 740 and 520 bodies are the same length (PV5). Reading, with TM6 (all new late heads take 740):
 740 is the open ending that new, rare and local heads go to; 520 is a small fixed set of widespread heads. The
 productivity measure itself is underpowered here. Tally, counting parts: 1102 held, 1042 failed (2144 registered).
+
+## Results of the hundred-and-forty-ninth set (added after the test; `predict_test149.py`, `results/predict_test149.md`)
+
+One held, four failed. **A closer is not a fused head + 740.** Closer stems are no more often attested as stem + X +
+740 than 520 stems are (CF1: 16% against 21%). Of 49 stems attested both ways, a closer's commonest X covers only 39%
+(CF2), no better than closer labels shuffled (CF3: p = 0.07); the bearer closers 154 and 156 alternate with X = 900
+(7), 752 (4), 760 (3) and only 3 times with 690 (CF4: 14%), so the '255 435 156' / '255 435 690 740' alternation of set
+145 is one case, not a rule. What holds: the part before a closer is as long as a 740 body minus its head (CF5: 3.02
+against 2.97), i.e. a closer takes the place of head + ending in length, without replacing any particular head.
+Reading: closers fill the slot of a whole head + ending but are their own words (as the alternative-closer sets had
+them, each with its own heads), not abbreviations of a titled noun; it gives no support to reading the bearer signs
+as 'merchant' or any other specific head. Tally, counting parts: 1103 held, 1046 failed (2149 registered).

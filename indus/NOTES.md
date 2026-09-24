@@ -2045,6 +2045,13 @@ Registered first (2ea4fc25d). 520 names use 26 heads in 163 names; at equal size
 take 740 (93% against 84%) and new 740 heads are rare signs. Baayen's P is underpowered (91 hapax heads) and does not
 separate the endings. 740 is the open ending, 520 a small fixed set. Tally 1102 held, 1042 failed.
 
+## Hundred-and-sixty-third pass (24 Sept 2026): closers as head + ending in one sign
+
+Registered first (2ea4fc25d). Closers occupy the length of a head + ending (stem 3.02 against 2.97) but do not
+replace any particular head: a closer's commonest alternative covers 39% (chance level), and the bearer closers
+alternate with 900 / 752 / 760 more than with 690. The set-145 alternation is one case, not a rule. Tally 1103 held,
+1046 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
