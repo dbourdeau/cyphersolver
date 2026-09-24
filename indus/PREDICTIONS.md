@@ -5474,3 +5474,31 @@ only 1.5 times its shuffled value (PR11; PR17 in B: 1.35), under the 2x threshol
 (PR14). 'Number before noun' holds only 1.2 to 1 (PR16), because numerals also follow 705/706 and headings. Neither the
 linguistic nor the non-linguistic view is decided by these tests. Tally, counting parts: 891 held, 896 failed (1787
 registered).
+
+# Hundred-and-sixteenth set, registered before testing (24 September 2026): sets 114-115 on held-out data (twenty hypotheses)
+
+Findings of the hundred-and-fourteenth and hundred-and-fifteenth sets re-tested on F without copper (F'), the smaller
+sites (OS) and B. Definitions as in those sets. 10,000-draw permutations (1,000 where marked); p < 0.05.
+
+The '2' prefix
+- **HX1** F': in '2 N X', X's commonest count elsewhere equals N more often than N + 2 (SR13).
+- **HX2** B: 'N X' is attested without the '2' for 50%+ of '2 N X' (SR4).
+- **HX3** B: SR13 holds.
+- **HX4** OS: 70%+ of lines with a '2 N' run are on seals (SR6).
+- **HX5** F': runs of 3+ numeral signs are under 3% (SR15).
+- **HX6** B: SR15 holds.
+- **HX7** F': five signs cover 50%+ of the signs after '2 N' runs (SR3).
+Published proposals
+- **HX8** F': 10+ minimal pairs of bodies differ by one fish sign (PR3).
+- **HX9** B: 5+ such minimal pairs.
+- **HX10** F': under 2% of 740 tokens are line-initial (PR6).
+- **HX11** B: PR6 holds.
+- **HX12** F': 400/90/151 precede 740 in under 5% of their adjacencies with it (PR7).
+- **HX13** B: PR7 holds.
+- **HX14** B: non-adjacent repeats are rarer than in within-line shuffles (PR10, 1,000).
+- **HX15** OS: PR10 holds (1,000).
+- **HX16** F': the rank-frequency slope over ranks 1-100 is between -1.3 and -0.7 (PR13).
+- **HX17** B: PR13 holds (ranks 1-100 or all if fewer).
+- **HX18** F': 50%+ of adjacent-pair types occur once (PR15).
+- **HX19** B: conditional entropy of the next sign is under 80% of the unigram entropy (PR12).
+- **HX20** OS: 70%+ of distinct numeral + fish names are on one object (PR2).
