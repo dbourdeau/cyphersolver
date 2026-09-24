@@ -2829,3 +2829,13 @@ numeral; value = the run of numerals before it. Head class from classes(A). 10,0
 - **CT8** Seal counts are on square seals (SEAL:S) more often than seal name lines are.
 - **CT9** The counted sign depends on Mohenjo-daro against Harappa (seal counts; MI, permutation).
 - **CT10** Under 50% of counted-sign tokens on seals are of signs also counted on tablets.
+
+## Results of the fifty-first set (added after the test; `predict_test51.py`, `results/predict_test51.md`)
+
+Four held, six failed. The counted sign on a seal is usually not a head sign (CT2: 20% against 42% of name heads), is
+also an ordinary name sign (CT4: 37 of 42), takes many values (CT3: 14 of 21; 390 and 405 run 2-9, 220 and 151 up to
+12), and closes the line about half the time (CT7: 48%). There is no fixed template (CT1: heading + number + sign in
+8%), value does not grow with length (CT5) or heading (CT6: headed 3.4 against 3.9), seal counts are not more often on
+square seals (CT8: 79% against 86%, the other way), the cities do not clearly count different things (CT9, p = 0.095),
+and seals mostly count the same signs tablets count (CT10: 62%). So the same signs are counted on both media; what
+differs (fiftieth set) is the range and the notation. Tally, counting parts: 300 held, 377 failed (677 registered).

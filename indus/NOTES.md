@@ -1303,6 +1303,12 @@ Registered first (fiftieth set, b2d090112), tested (`predict_test50.py`). Seal c
 tiered, headed, in longer formulas that sometimes cite a name, counting other signs (390 with 3-9). Not tied to the
 motif and not site-specific among seals. Tally 296 held, 371 failed.
 
+## Sixty-fifth pass (24 Sept 2026): the seal count formulas (loop 2, round 5)
+
+Registered first (fifty-first set, 4b79fb709), tested (`predict_test51.py`). Seal counts count ordinary non-head name
+signs (390, 405, 220, 156, 151) across wide value ranges, with no fixed template and mostly the same signs as tablet
+counts. Tally 300 held, 377 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
