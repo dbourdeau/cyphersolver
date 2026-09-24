@@ -3221,3 +3221,20 @@ catalogue's direction field does not flag these objects (DR2: 9% against 8% 'L/R
 backwards (DR3: 3 of 1,619 lines, none giving an attested body), so the reversal is a count-token and tablet
 phenomenon. Caveat: whether the TAB:B reversal is in the objects or in how impressions were entered in ICIT cannot be
 told from the data. Tally, counting parts: 366 held, 441 failed (807 registered).
+
+# Sixty-fifth set, registered before testing (24 September 2026): moulded against incised tablets (loop 3, round 9)
+
+F objects of type TAB:B (moulded) and TAB:I (incised); 'text' = the object's lines joined; motif from the ICIT record
+(field 18). Formula-only signs as in the fifty-fourth set. 10,000-draw permutations; p < 0.05.
+
+- **MT1** Distinct TAB:B texts recur on 2+ objects more often than distinct TAB:I texts.
+- **MT2** TAB:B texts are shorter than TAB:I texts (rank test).
+- **MT3** TAB:B lines are name lines less often than TAB:I lines, length-stratified.
+- **MT4** 80%+ of TAB:B objects are from Harappa.
+- **MT5** TAB:B objects have a motif recorded more often than TAB:I objects.
+- **MT6** Among TAB:B objects with a motif, the text depends on the motif (MI, permutation).
+- **MT7** Pairs of TAB:B objects with the same text share their motif more often than pairs across texts
+  (permutation of motifs among objects).
+- **MT8** TAB:B lines carry a numeral more often than TAB:I lines, length-stratified.
+- **MT9** TAB:B texts contain a formula-only sign less often than TAB:I texts.
+- **MT10** TAB:B lines repeat a line found on a seal more often than TAB:I lines.
