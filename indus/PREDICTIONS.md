@@ -5416,3 +5416,40 @@ runs start with '2' or '1' (SR1: 71%; just under 70% in B, SR16: 65%, and F', SR
 (SR5), doubled numerals being common (SR8: 9%), '1 N' after an ending (SR10: 26%), small-first runs opening lines (SR11),
 and N being 3+ (SR12: 61%). Large-first and small-first runs are both followed by a counted sign (SR9). Tally, counting
 parts: 880 held, 887 failed (1767 registered).
+
+# Hundred-and-fifteenth set, registered before testing (24 September 2026): structural predictions of published proposals (twenty hypotheses)
+
+Each hypothesis is a structural consequence of a published view, stated so the data can contradict it; none tests a
+proposed sound value. Views (from memory of the literature, to be checked against the sources): Parpola 1994 (fish
+signs as 'star/god' words, numeral + fish as named star groups such as 'six' and 'seven' stars, theophoric personal
+names); Mahadevan 1977 and Parpola (740 and 520 as grammatical suffixes, suffixes stack after the ending); Farmer,
+Sproat and Witzel 2004 (a non-linguistic sign system: many singletons, short texts, little repetition); Rao et al.
+2009 and Yadav et al. 2010 (language-like sequential structure, text segmentable into frequent pairs). Distinct lines
+(A + B) unless stated; F without copper (F') for objects and sites. 10,000-draw permutations (1,000 where marked); p < 0.05.
+
+Parpola: fish
+- **PR1** Values 6 and 7 are a larger share of the numbers directly before a fish than before other signs.
+- **PR2** 70%+ of distinct names with a numeral + fish pair are on one object only (F').
+- **PR3** 10+ minimal pairs exist: distinct name bodies that differ only by swapping one fish sign for another.
+- **PR4** Numeral + fish names are on seals in 80%+ (F').
+- **PR5** Fish-final names occur at both cities as often as other names (two-sided p >= 0.05; F', distinct bodies).
+Mahadevan and Parpola: suffixes
+- **PR6** Under 2% of 740 tokens are line-initial.
+- **PR7** 400, 90 and 151 directly precede 740 in under 5% of their adjacencies with 740.
+Farmer, Sproat and Witzel
+- **PR8** 20%+ of sign types in F (with copper) occur once.
+- **PR9** Mean line length is under 5 signs (F', distinct lines).
+- **PR10** Non-adjacent repetition of a sign within a line is rarer than in within-line shuffles (all lines, 1,000).
+Rao et al. and Yadav et al.
+- **PR11** Adjacent-sign mutual information is at least twice its mean under within-line shuffles.
+- **PR12** Conditional entropy of the next sign given the previous is under 80% of the unigram entropy.
+- **PR13** The rank-frequency slope over ranks 1-100 is between -1.3 and -0.7.
+- **PR14** The 50 commonest adjacent pairs cover 30%+ of adjacent-pair tokens.
+- **PR15** 50%+ of adjacent-pair types occur once.
+Order of number and noun
+- **PR16** 'Numeral + non-numeral' adjacencies outnumber 'non-numeral + numeral' by 1.5 to 1 or more.
+Replication
+- **PR17** B: PR11 holds.
+- **PR18** F': PR12 holds.
+- **PR19** B: PR8 holds (B's sign types).
+- **PR20** F': PR1 holds.
