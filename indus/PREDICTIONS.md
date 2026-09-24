@@ -8675,3 +8675,20 @@ contexts (4.6966 against 4.7141; DF4). So the graphic-family effect replicates w
 carry nothing beyond the decade families: added as a second component, S is unchanged (4.6842 -> 4.6845; DF2 fails)
 and A -> B worse (DF3 fails); the decade blocks already capture the variants (ICIT numbers variants next to their
 base sign). No progress by the rule: streak 3. Tally, counting parts: 1339 held, 1240 failed (2579 registered).
+
+# Two-hundred-and-ninth set, registered before testing (24 September 2026): decipherment loop 34, roles in closer lines (five hypotheses)
+
+Metric after loop 33: R 81.3% (2,245 tokens without a role: 1,034 in count lines, 790 other, 408 in closer lines);
+streak 3. Sets 118-120 found the closers acting as alternative endings. If so, the body before a closer is a name
+body like the body before 740 / 520: its last sign a name head, the rest modifiers. Tested before adopting the role.
+Closer lines = lines whose genre (predict_test108.genre) is 'closer'; the closer = the line's last closer sign
+(predict_test103.CL); the body = the signs before it, numerals excepted. Name heads = signs seen directly before 740
+or 520 in A's distinct lines.
+
+- **RL1** In A's closer lines, the sign directly before the closer is a known name head more often than the other
+  body signs of those lines (one-sided Fisher p < 0.05).
+- **RL2** The same in B's new lines (heads from A).
+- **RL3** The sign before a closer is a known name head at least half as often as the sign before 740 / 520 in B.
+- **RL4** Body signs before a closer (not the last) are known name modifiers (seen in A name bodies before their head)
+  more often than chance draws of signs matched on frequency (B, p < 0.05).
+- **RL5** Progress rule: RL1 and RL2 hold; then closer-line bodies get the roles name head / name modifier in R.
