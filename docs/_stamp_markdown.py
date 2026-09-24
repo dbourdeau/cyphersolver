@@ -85,15 +85,8 @@ def stamp_table(lines, i, header, date_of):
 
 
 # README: heading above the table -> the word that heads its date column
-README_TABLES = {
-    '### Solved: key broken here': 'Solved',
-    '### Read with an existing key or decipherment': 'Read',
-    '### Explained: not a cipher, or nothing to read': 'Explained',
-    '### Partly solved: key broken here, read in part': 'Read',
-    '### Partly read with an existing key or decipherment': 'Read',
-    '### Found already solved by others (the lists are stale)': 'Verified',
-    '### Attempted and closed from the evidence': 'Attempted',
-}
+import _methods as M
+README_TABLES = {M.SECTION[m]: 'Landed' for m in M.METHODS}   # one table per outcome method
 
 # SOLVED_CATALOGUE has no links in its rows, so its targets are matched by name
 CATALOGUE_SLUGS = [

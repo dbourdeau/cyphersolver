@@ -18,7 +18,10 @@
     const S=d.steps, n=S.length, dead=S.filter(s=>s.result==='failed'||s.result==='ruled out').length;
     const days=(d.first && d.last && /^\d{4}-/.test(d.first) && /^\d{4}-/.test(d.last)) ? Math.round((new Date(d.last)-new Date(d.first))/864e5)+1 : null;
     const o=d.outcome||{}, pr=d.prior||{};
-    const chips=[o.class&&`<span class="sr-c out-${cls(o.class==='read'?'worked':o.class==='read in part'?'partial':'x')}">${esc(o.class)}</span>`,
+    const ext={'read':'complete','already solved':'complete','read in part':'partial','not read':'text not obtained'}[o.class];
+    const chips=[o.method?`<span class="sr-c out-${cls(ext==='complete'?'worked':ext==='partial'?'partial':'x')}">${esc(o.method)}</span>`
+        :o.class&&`<span class="sr-c out-${cls(o.class==='read'?'worked':o.class==='read in part'?'partial':'x')}">${esc(o.class)}</span>`,
+      o.method&&ext&&`<span class="sr-c">extent: ${esc(ext)}</span>`,
       d.attack&&d.attack!=='none'&&`<span class="sr-c">attack: ${esc(d.attack)}</span>`,
       pr.exists&&pr.exists!=='no'&&`<span class="sr-c">earlier reading: ${esc(pr.exists)}${pr.found?' &middot; found '+esc(pr.found):''}</span>`].filter(Boolean).join('');
     fig.innerHTML=`<div class="sr-head"><div><span class="sr-kick">How it was solved</span>

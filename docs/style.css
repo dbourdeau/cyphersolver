@@ -97,6 +97,8 @@ img{max-width:100%}
 .hero .sub.small{font-size:.92rem;margin-top:.5rem}
 .hero .meta{color:var(--muted);font-size:.88rem;margin-top:1rem;font-family:var(--mono)}
 .hero .meta time{color:var(--ink2)}
+.hero .outcome{font-family:var(--mono);font-size:.84rem;margin:.35rem 0 0;color:var(--ink2)}
+.hero .outcome a{color:var(--gold);text-decoration:underline dotted;text-underline-offset:3px}
 .hero .cipherstrip{position:absolute;right:1.2rem;top:1.4rem;font-family:var(--mono);font-size:.7rem;color:color-mix(in srgb,var(--gold) 40%,transparent);letter-spacing:.35em;user-select:none;pointer-events:none;text-align:right;line-height:1.9}
 @media (max-width:760px){.hero .cipherstrip{display:none}}
 .hero .parties{display:flex;align-items:center;gap:1.1rem;margin:.2rem 0 1rem;flex-wrap:wrap}
@@ -495,6 +497,7 @@ ul.findings b{color:var(--head)}
 .wfilters .chip{padding:.2rem .65rem;border-radius:999px;border:1px solid var(--rule);background:var(--bg);color:var(--ink2);font-family:var(--mono);font-size:.72rem;cursor:pointer;box-shadow:none;transform:none}
 .wfilters .chip[aria-pressed=true]{background:var(--gold);color:var(--gold-ink);border-color:var(--gold)}
 .wfilters .chip:hover{border-color:var(--gold)}
+.wfilters .gl{font-family:var(--mono);font-size:.7rem;margin-left:.4rem;color:var(--muted)}
 .wfilters input[type=search]{flex:1 1 12rem;min-width:8rem;padding:.3rem .7rem;border-radius:999px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);font:inherit;font-size:.86rem}
 .wfilters input[type=search]:focus{outline:none;border-color:var(--gold)}
 .wcount{font-family:var(--mono);font-size:.72rem;color:var(--muted);margin:.6rem 0 0;letter-spacing:.04em}
@@ -807,3 +810,7 @@ ul.list.cattop .pr{font-family:var(--display);font-size:1.15rem;color:var(--gold
 .creveal.unsealed .cr-t.done:not(.plain):not(.wb){animation:crflip .55s cubic-bezier(.2,.8,.3,1.2)}
 @keyframes crflip{0%{transform:rotateX(90deg);box-shadow:0 0 0 transparent}55%{transform:rotateX(-12deg);box-shadow:0 0 14px color-mix(in srgb,var(--gold) 70%,transparent);border-color:var(--gold)}100%{transform:none}}
 @media (prefers-reduced-motion: reduce){.cr-seal i,.creveal.breaking .cr-tiles::after,.creveal.unsealed .cr-t.done{transition:none;animation:none}}
+.gloss dt{margin-top:1.1rem;font-weight:600}
+.gloss dt .st{margin-right:.5rem;vertical-align:.1em}
+.gloss dd{margin:.3rem 0 0 0;color:var(--ink2)}
+.gloss dd a{white-space:nowrap}

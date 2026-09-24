@@ -3,16 +3,13 @@
 Run  python _build_stats.py  from docs/ (then _build_site.py as usual). Idempotent: rewrites the block between
 <!-- stats:start --> and <!-- stats:end -->, inserting it after <main> the first time, and adds the jump link.
 
-Categories are the README's own sections. Every number on the page is derived here, nothing is typed in:
-  solved    ### Solved: key broken here         (key recovered here by cryptanalysis; text meets the read bar)
-  read      ### Read with an existing key       (text meets the read bar with a key or decipherment that already existed)
-  nothing   ### Explained                        (shown to carry no message)
-  partsolved ### Partly solved                   (key broken here, text below the read bar)
-  partly    ### Partly read with an existing key (text below the read bar)
-  found     ### Found already solved by others   (the lists were stale)
-  closed    ### Attempted and closed             (attacked with controls; the notes say why it stops)
-  offline   ### Offline only                     (nothing more can be done online)
-  active    ### In progress
+Categories are the README's own sections, one per outcome method (docs/_methods.py, George Lasry's categories):
+  ct, extpt, adjpt   the key recovered here: ciphertext-only, from external plaintext, from adjacent plaintext
+  extkey, known      an existing key applied: one matched here from elsewhere, or one already identified
+  deciph             an existing complete decipherment transcribed and checked
+  notsolved, na      attempted without result; not a cipher or not reachable
+  active             ### In progress
+Every number on the page is derived here, nothing is typed in. The Extent column (complete / partial) is counted too.
 Overrides: rows whose target text matches OVERRIDE are moved (none at present).
 """
 import re, pathlib, html, datetime
@@ -22,28 +19,19 @@ README = HERE.parent / 'README.md'
 INDEX = HERE / 'index.html'
 YEAR_NOW = datetime.date.today().year
 
-SECTIONS = [
-    ('solved',  '### Solved'),
-    ('read',    '### Read with'),
-    ('nothing', '### Explained'),
-    ('partsolved', '### Partly solved'),
-    ('partly',  '### Partly read'),
-    ('found',   '### Found already solved'),
-    ('closed',  '### Attempted and closed'),
-    ('offline', '### Offline only'),
-    ('active',  '### In progress'),
-]
+import sys; sys.path.insert(0, str(HERE))
+import _methods as M
+SECTIONS = [(M.KEY[m], M.SECTION[m]) for m in M.METHODS] + [('active', '### In progress')]
 # Rows whose date carries no year but can be bracketed: counted at the latest possible year, so the
 # years-of-silence sum is never overstated. Egmond: to the grand maître (Montmorency, from 1526); Charles died June 1538.
 YEAR_BRACKET = {'Charles of Egmond': 1537}
 OVERRIDE = {}  # README row text -> category, for rows filed in a table that does not match their outcome
-LABEL = {
-    'solved': 'solved here', 'read': 'read with an existing key', 'nothing': 'no message', 'partsolved': 'partly solved here', 'partly': 'partly read with an existing key', 'found': 'already solved elsewhere',
-    'closed': 'closed, with the reason', 'offline': 'waiting on an archive', 'active': 'in progress',
-}
+LABEL = {M.KEY[m]: M.LABEL[m] for m in M.METHODS}
+LABEL.update(na='not a cipher or not reachable', active='in progress')
 COLOR = {  # CSS variables from style.css
-    'solved': 'var(--green)', 'read': 'color-mix(in srgb, var(--green) 50%, var(--blue))', 'nothing': 'var(--blue)', 'partsolved': 'var(--violet)', 'partly': 'color-mix(in srgb, var(--violet) 50%, var(--blue))', 'found': 'var(--amber)',
-    'closed': 'var(--red)', 'offline': 'var(--muted)', 'active': 'var(--gold)',
+    'ct': 'var(--green)', 'extpt': 'color-mix(in srgb, var(--green) 65%, var(--blue))', 'adjpt': 'color-mix(in srgb, var(--green) 40%, var(--blue))',
+    'extkey': 'var(--violet)', 'known': 'color-mix(in srgb, var(--violet) 50%, var(--blue))', 'deciph': 'var(--amber)',
+    'notsolved': 'var(--red)', 'na': 'var(--muted)', 'active': 'var(--gold)',
 }
 
 def parse_year(s):
@@ -91,7 +79,8 @@ def load():
             note = strip_md(cells[-2]) if len(cells) >= 4 else ''
             head2 = cols[-2] if len(cols) >= 4 else ''
             when = strip_md(cells[2]) if len(cells) >= 5 else ''
-            items.append(dict(name=name, date=date.strip(), year=parse_year(date) or next((y for k, y in YEAR_BRACKET.items() if name.startswith(k)), None), cat=c, note=note,
+            ext = strip_md(cells[cols.index('Extent')]) if 'Extent' in cols and len(cells) == len(cols) else ''
+            items.append(dict(ext=ext, name=name, date=date.strip(), year=parse_year(date) or next((y for k, y in YEAR_BRACKET.items() if name.startswith(k)), None), cat=c, note=note,
                               notehead=head2, when=when, whenhead=cols[2] if len(cols) >= 5 else '',
                               href=m.group(1) if m else ''))
     return items
@@ -154,15 +143,16 @@ def timeline_svg(items):
 def build(items):
     n = {c: sum(1 for it in items if it['cat'] == c) for c, _ in SECTIONS}
     total = len(items)
-    attacked = total - n['offline']                     # everything that got a real attempt online
-    nread = n['solved'] + n['read']                     # texts that meet the read bar
-    decided = nread + n['nothing'] + n['found']     # outcomes with a definite answer
-    read = [it for it in items if it['cat'] in ('solved', 'read') and it['year']]
+    broke = n['ct'] + n['extpt'] + n['adjpt']            # key recovered here by cryptanalysis
+    applied = n['extkey'] + n['known'] + n['deciph']     # an existing key or decipherment applied
+    got = [it for it in items if it['cat'] in ('ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph')]
+    part = sum(1 for it in got if it['ext'] == 'partial')
+    attacked = total - n['na'] - n['active']
+    read = [it for it in got if it['ext'] == 'complete' and it['year']]
     silence = sum(YEAR_NOW - it['year'] for it in read)
     oldest = min(read, key=lambda d: d['year'])
     span = [it['year'] for it in items if it['year']]
-    pct = round(100 * nread / attacked)
-    order = ['solved', 'read', 'nothing', 'found', 'partsolved', 'partly', 'active', 'closed', 'offline']
+    order = ['ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph', 'active', 'notsolved', 'na']
     bar = ''.join(
         f'<span class="seg {c}" style="flex:{n[c]};background:{COLOR[c]}" title="{n[c]} {LABEL[c]}"></span>'
         for c in order if n[c])
@@ -172,18 +162,18 @@ def build(items):
     lines.append('<!-- stats:start -->')
     lines.append('<section class="scoreboard" id="scoreboard" aria-labelledby="sb-h">')
     lines.append('<h2 id="sb-h"><span class="num">&sum;</span> The ledger so far</h2>')
-    lines.append(f'<p class="sb-lede">{total} targets taken from the three lists. {attacked} were attacked online; {n["offline"]} stop at an archive door before any cryptanalysis is possible. Every outcome is one of eight kinds, and the honest denominator for a &ldquo;success rate&rdquo; is the {attacked} attacked, not the {total}.</p>')
-    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} targets">{bar}</div>')
+    lines.append(f'<p class="sb-lede">{total} targets. Each is classed by how its text was obtained (the <a href="glossary.html">method</a>) and by how much of it was obtained (complete or partial). {n["na"]} turned out not to be ciphers or could not be reached, and {n["active"]} are in progress, which leaves {attacked} attempted.</p>')
+    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} targets by method">{bar}</div>')
     lines.append(f'<div class="sb-legend">{legend}</div>')
     lines.append('<div class="sb-grid">')
-    lines.append(f'<div class="sb-big"><b>{nread} <small>of {attacked}</small></b><span>attacked targets read in full or in substance, {pct}&nbsp;%: {n["solved"]} solved here (the key broken by cryptanalysis), {n["read"]} read with a key or decipherment that already existed. One completes an alphabet another solver published (Boswell 1643); one applies a table already in print to letters never before decoded (Catinat 1691).</span></div>')
-    lines.append(f'<div class="sb-big"><b>{decided}</b><span>questions settled one way or another: read, shown to carry no message, or found already solved in print, in a comment thread, or on GitHub.</span></div>')
-    lines.append(f'<div class="sb-big"><b>{n["closed"]}</b><span>attacks that stop with a stated reason and a control that passed where the target failed. A negative here says something; it is not a shrug.</span></div>')
-    lines.append(f'<div class="sb-big"><b>{silence:,}</b><span>years of silence ended, summed over the {len(read)} texts read' + (f' that carry a date ({nread - len(read)} undated)' if len(read) != nread else '') + f': each had waited from its date until {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
+    lines.append(f'<div class="sb-big"><b>{broke}</b><span>keys recovered here by cryptanalysis: {n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.</span></div>')
+    lines.append(f'<div class="sb-big"><b>{applied}</b><span>texts obtained with a key or decipherment that already existed: {n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.</span></div>')
+    lines.append(f'<div class="sb-big"><b>{n["notsolved"]}</b><span>attempts that stop without the text, each with the reason in its notes.</span></div>')
+    lines.append(f'<div class="sb-big"><b>{silence:,}</b><span>years of silence ended, summed over the {len(read)} dated texts obtained in full ({part} more are partial): each had waited from its date until {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
     lines.append('</div>')
-    lines.append(f'<p class="sb-note">Every target by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a colour in the legend to isolate an outcome.</p>')
+    lines.append(f'<p class="sb-note">Every target by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a colour in the legend to isolate a method.</p>')
     lines.append(timeline_svg(items))
-    lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. &ldquo;Already solved elsewhere&rdquo; and &ldquo;no message&rdquo; are not decipherments and are not counted as such. Rows are documents, not correspondents: S&eacute;gur f.&nbsp;143 and Urquhart&rsquo;s distich stand as separate open items beside the letters and the octastich that were read.</p>')
+    lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
     lines.append('</section>')
     lines.append('<!-- stats:end -->')
     return '\n'.join(lines), n

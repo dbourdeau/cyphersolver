@@ -18,7 +18,7 @@ import re, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20260922b'
+VERSION ='20260924a'
 SITE = 'Unsolved Historical Ciphers'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -41,6 +41,7 @@ VERB = {'solved': 'solved', 'found': 'resolved', 'partial': 'read in part', 'stu
 def verb_of(p):
     """Byline verb. st 'solved' covers both outcomes that meet the read bar: 'solved' (key broken here) and
     'read' (an existing key or decipherment); the badge text says which, and the verb follows it."""
+    if p.get('method'): return 'posted'      # the outcome line under the dateline carries method and extent
     plain_stt = re.sub(r'<[^>]+>|&[a-z]+;', '', p['stt']).strip()
     if p['st'] == 'solved' and not plain_stt.startswith('solved'): return 'read'
     if p['st'] == 'partial' and plain_stt.startswith('solved'): return 'solved in part'
@@ -65,6 +66,7 @@ GENERATED = [
     r'<meta name="(?:date|last-modified)"[^>]*>', r'<link rel="(?:icon|apple-touch-icon)"[^>]*>',
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
+    r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
 ]
 
 def normalise(s):
@@ -1351,14 +1353,47 @@ IMAGES['r2232'] = ('r2232_lead.jpg', 'The opening of the letter: clear text, the
 IMAGES['r1942'] = ('r1942_lead.jpg', 'Hogendorp&rsquo;s ciphered dispatch no. 12 of 5 July 1803: the clear address to Maarten van der Goes followed by the marked numerical groups', 'Nationaal Archief, The Hague, via DECODE R1942')
 
 SURVEYS = ('famous', 'solved', 'highlights')
+# Outcome method (George Lasry's categories, _methods.py): a page whose target has a profile with outcome.method
+# takes its badge, colour, seal and byline verb from the profile, so the hand-typed st/stt above only stand for
+# surveys, famous targets and pages without a classified profile.  p['method'] / p['extent'] drive the filters.
+import _methods as M
+PROFILE_SLUG = {'bordeaux': 'bordeaux1653'}      # profile folder -> page slug, where they differ beyond case
+def attach_methods():
+    paths = M.profile_paths()
+    by_slug = {PROFILE_SLUG.get(k, k): v for k, v in paths.items()}
+    for p in PAGES:
+        p['method'] = p['extent'] = None
+        if p['slug'] in SURVEYS: continue
+        prof = M.load(by_slug[p['slug']]) if p['slug'] in by_slug else None
+        out = (prof or {}).get('outcome') or {}
+        if out.get('method') not in M.METHODS: continue
+        p['method'], p['extent'] = out['method'], M.extent(prof)
+        p['frac'] = out.get('fraction_coherent') if isinstance(out.get('fraction_coherent'), (int, float)) else \
+                    out.get('fraction_read') if isinstance(out.get('fraction_read'), (int, float)) else None
+        p['stt_hand'] = p['stt']
+        p['st'] = M.status_class(p['method'], p['extent'])
+        p['stt'] = M.badge(p['method'], p['extent'], out.get('class'))
+
+def outcome_html(p):
+    """The hero's outcome line: method linked to its glossary entry, and extent."""
+    m = p.get('method')
+    if not m: return ''
+    ext = {'complete': 'complete', 'partial': 'partial', 'none': 'text not obtained', 'n/a': ''}[p['extent']]
+    if p['extent'] == 'partial' and p.get('frac'): ext += f' ({round(100 * p["frac"])}% of the cipher)'
+    bits = [f'Method: <a href="glossary.html#{M.KEY[m]}">{M.LABEL[m] if m != M.NA else plain(p["stt"])}</a>']
+    if ext: bits.append(f'Extent: {ext}')
+    return '<p class="outcome">' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'
+
+attach_methods()
+
 # chip value on writeups.html, menu label, badge class, predicate
-GROUPS = [('solved', 'Solved or read', 'solved', lambda p: p['st'] == 'solved'),
-          ('found', 'Explained', 'found', lambda p: p['st'] == 'found'),
-          ('partial', 'Partly read', 'partial', lambda p: p['st'] == 'partial' and p['slug'] not in SURVEYS),
-          ('stuck', 'Attempted, not solved', 'stuck', lambda p: p['st'] == 'stuck'),
+GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], M.status_class(m, 'complete'), (lambda m: lambda p: p.get('method') == m)(m))
+          for m in M.METHODS] + [
+          ('other', 'Not yet classified', 'todo', lambda p: not p.get('method') and p['slug'] not in SURVEYS),
           ('survey', 'Surveys', 'todo', lambda p: p['slug'] in SURVEYS)]
 # the Explore menu: the pages that are not write-ups (slug, label, one line)
 EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the historic, the ingenious'),
+           ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
            ('famous', 'The famous ones', 'Why Voynich, Kryptos, Beale and Dorabella resist'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
            ('keys', 'Key web', 'Which key read which letter'),
@@ -1367,7 +1402,7 @@ CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><pa
            'stroke="currentColor" stroke-width="1.6"/></svg>')
 NAV_LATEST = 6          # write-ups shown in the menu; the rest are one click away on writeups.html
 
-def kind_of(p): return 'survey' if p['slug'] in SURVEYS else p['st']
+def kind_of(p): return 'survey' if p['slug'] in SURVEYS else M.KEY[p['method']] if p.get('method') else 'other'
 
 def nav_html(current):
     """The Write-ups menu. It stopped listing every page when the count passed forty: it now shows the newest few,
@@ -1377,8 +1412,8 @@ def nav_html(current):
                     key=lambda p: (DATES['pages'].get(p['slug'], {}).get('first', TODAY), p['y']), reverse=True)[:NAV_LATEST]
     lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><span class="st {p["st"]}">{p["stt"]}</span>'
                   f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span></a></li>' for p in latest)
-    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><span class="st {cls}">{sum(1 for p in PAGES if pred(p))}</span>'
-                     f'<b>{name}</b></a></li>' for key, name, cls, pred in GROUPS)
+    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><span class="st {cls}">{n}</span>'
+                     f'<b>{name}</b></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
     in_explore = any(slug == current for slug, _, _ in EXPLORE)
     on = ' class="active"' if not in_explore and (current == 'writeups' or any(p['slug'] == current for p in PAGES)) else ''
     panel = (f'<div class="grp"><h4>Latest</h4><ul>{lis}</ul></div>'
@@ -1420,8 +1455,8 @@ SEARCH_HTML = (
 # "Where" column links to a site page is a write-up (checked against PAGES), any other row is notes only.
 PERIODS = [('1500s', 'to 1599', lambda y: y < 1600), ('1600s', '1600s', lambda y: 1600 <= y < 1700),
            ('1800s', '1700s and 1800s', lambda y: 1700 <= y < 1900), ('1900s', '1900s', lambda y: 1900 <= y < 9000)]
-KINDS = [('solved', 'solved or read'), ('found', 'explained or found solved'), ('partial', 'partly read'),
-         ('stuck', 'attempted, not solved'), ('offline', 'waiting on an archive'), ('survey', 'survey')]
+KINDS = [(M.KEY[m], M.LABEL[m]) for m in M.METHODS] + [('other', 'not yet classified'), ('survey', 'survey')]
+EXTENTS = [('complete', 'complete'), ('partial', 'partial'), ('none', 'text not obtained')]
 # README section heading, status class, badge text
 README_SECTIONS = [('### Solved', 'solved', 'solved'), ('### Read with', 'solved', 'read'), ('### Explained', 'found', 'explained'),
                    ('### Partly solved', 'partial', 'partly solved'), ('### Partly read', 'partial', 'partly read'), ('### Found already solved', 'found', 'found solved'),
@@ -1459,6 +1494,7 @@ def readme_notes():
     try: text = (HERE.parent / 'README.md').read_text(encoding='utf-8')
     except FileNotFoundError: return []
     slugs = {p['slug'] for p in PAGES}
+    PATHS = M.profile_paths()
     notes, seen_pages, st = [], set(), None
     for line in text.splitlines():
         if line.startswith('## '): st = None
@@ -1477,7 +1513,14 @@ def readme_notes():
         links = re.findall(r'\]\(([^)\s]+)\)', where)
         if not links: continue
         notes.append(dict(target=md_inline(target), date=html.escape(date, quote=False), y=year_of(date),
-                          result=md_inline(result), url=repo_url(links[0]), st=st[0], stt=st[1]))
+                          result=md_inline(result), url=repo_url(links[0]), st=st[0], stt=st[1], kind='other', extent=''))
+        folder = links[0].lstrip('./').split('/')[0].lower()
+        prof = M.load(PATHS[folder]) if folder in PATHS else None
+        out = (prof or {}).get('outcome') or {}
+        if out.get('method') in M.METHODS:
+            ext = M.extent(prof)
+            notes[-1].update(kind=M.KEY[out['method']], extent=ext, st=M.status_class(out['method'], ext),
+                             stt=M.badge(out['method'], ext, out.get('class')))
     for slug in sorted(slugs - seen_pages - set(SURVEYS)):
         print(f'  note: {slug}.html has no README row')
     return notes
@@ -1486,7 +1529,7 @@ def writeups_html():
     def q(*parts): return html.escape(plain(' '.join(parts)).lower(), quote=True)
     rows = []
     for p in sorted(PAGES, key=lambda p: p['y']):
-        rows.append(f'<li data-kind="{kind_of(p)}" data-period="{period_of(p["y"])}" data-src="page" '
+        rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-period="{period_of(p["y"])}" data-src="page" '
                     f'data-q="{q(p["label"], p["title"], p["place"], p["year"], p["blurb"], p["stt"])}">'
                     f'<a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span>'
                     f'<span class="t">{avatars_html(p["slug"])}{p["title"]}</span>{when_html(p, cls="dt")}<span class="yr">{p["year"]}</span>'
@@ -1494,11 +1537,12 @@ def writeups_html():
     notes = readme_notes()
     nrows = []
     for n in sorted(notes, key=lambda n: n['y']):
-        nrows.append(f'<li data-kind="{n["st"]}" data-period="{period_of(n["y"])}" data-src="notes" '
+        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-period="{period_of(n["y"])}" data-src="notes" '
                      f'data-q="{q(n["target"], n["result"], n["date"], n["stt"])}">'
                      f'<a href="{n["url"]}" rel="noopener"><span class="st {n["st"]}">{n["stt"]}</span>'
                      f'<span class="t">{n["target"]}</span><span class="dt">notes &#8599;</span><span class="yr">{n["date"]}</span>'
                      f'<span class="b">{n["result"]}</span></a></li>')
+    used = {p_kind for p_kind in [kind_of(p) for p in PAGES] + [n['kind'] for n in notes]}
     chips = lambda facet, vals: ''.join(f'<button type="button" class="chip" data-facet="{facet}" data-val="{k}" aria-pressed="false">{label}</button>' for k, label in vals)
     total = len(rows) + len(nrows)
     return (
@@ -1517,7 +1561,9 @@ def writeups_html():
         '  <div class="jump"><a href="#pages">Write-ups</a><a href="#notes">Only in the notes</a><a href="catalogue.html">Catalogue</a></div>\n'
         '  <p class="meta">Daniel Bourdeau</p>\n</section>\n\n<main>\n\n'
         '<div class="wfilters" role="search">\n'
-        f'  <div class="facet"><span class="flabel">Outcome</span>{chips("kind", KINDS)}</div>\n'
+        f'  <div class="facet"><span class="flabel">Method</span>{chips("kind", [k for k in KINDS if k[0] in used])}'
+        '<a class="gl" href="glossary.html">what these mean</a></div>\n'
+        f'  <div class="facet"><span class="flabel">Extent</span>{chips("extent", EXTENTS)}</div>\n'
         f'  <div class="facet"><span class="flabel">Period</span>{chips("period", [(k, l) for k, l, _ in PERIODS])}</div>\n'
         f'  <div class="facet"><span class="flabel">Where</span>{chips("src", [("page", "site page"), ("notes", "notes only")])}</div>\n'
         '  <div class="facet"><span class="flabel">Search</span><input id="wq" type="search" placeholder="titles, places, summaries" aria-label="Search the write-ups">'
@@ -1530,6 +1576,38 @@ def writeups_html():
         'Each row links to the folder with the notes, transcriptions and code. The rows are read from the README at build time, '
         'so a result lands here as soon as it is logged there.</p>\n'
         '<ul class="list wl">\n' + '\n'.join(nrows) + '\n</ul>\n</section>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
+
+# glossary.html: the outcome methods (with a count of write-ups under each, linked into the filtered index) and the
+# cryptologic terms the write-ups use.  Generated from _methods.py, the same vocabulary the badges and checkers use.
+def glossary_html():
+    counts = {m: sum(1 for p in PAGES if p.get('method') == m) for m in M.METHODS}
+    meth = ''.join(
+        f'<dt id="{M.KEY[m]}"><span class="st {M.status_class(m, "complete")}">{M.LABEL[m]}</span> {m[0].upper() + m[1:]}</dt>\n'
+        f'<dd>{html.escape(M.DEFINE[m])} <a href="writeups.html#kind={M.KEY[m]}">{counts[m]} write-up{"s" if counts[m] != 1 else ""} &rarr;</a></dd>\n'
+        for m in M.METHODS)
+    terms = ''.join(f'<dt id="{a}">{html.escape(t)}</dt>\n<dd>{html.escape(d)}</dd>\n' for a, t, d in M.TERMS)
+    return (
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<title>Glossary &mdash; how each cipher was solved, and the terms used</title>\n'
+        '<meta name="description" content="The outcome categories used on every write-up (how the key or text was obtained, and how '
+        'much of it) and the cryptologic terms the write-ups use.">\n'
+        f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>\n<body id="top">\n<!-- site:nav -->\n\n'
+        '<section class="hero">\n  <p class="kicker">Reference &middot; outcome methods &middot; terms</p>\n'
+        '  <h1>Glossary</h1>\n'
+        '  <p class="sub">Every write-up states two things about its outcome. The <b>method</b> says how the key or the text was '
+        'obtained. The <b>extent</b> says how much of the text was obtained: complete or partial. The methods follow the '
+        'categories proposed by George Lasry, with one addition for items that already had a full decipherment.</p>\n'
+        '  <p class="meta">Daniel Bourdeau</p>\n</section>\n\n<main>\n\n'
+        '<h2 id="methods">Methods</h2>\n<p>The first three are cryptanalysis: the key was recovered here. The next three '
+        'applied a key or decipherment that already existed; the work was transcription and decipherment. Whether someone had '
+        'solved an item before, and when that was found, is stated on each write-up.</p>\n'
+        f'<dl class="gloss">\n{meth}</dl>\n\n'
+        '<h2 id="extent-complete-or-partial">Extent</h2>\n<p><b>Complete</b>: at least 95% of the cipher symbols give sense, '
+        'every document is covered, and what stays open is scattered code groups or pieces blocked from outside. '
+        '<b>Partial</b>: anything less; the write-up lists what is open and why.</p>\n\n'
+        f'<h2 id="terms">Terms</h2>\n<dl class="gloss">\n{terms}</dl>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
+
 
 def footer_html(current):
     order = sorted([p for p in PAGES if p['slug'] not in ('famous', 'solved')], key=lambda p: p['y'])
@@ -1567,7 +1645,7 @@ def when_html(p, cls='when'):
     verb = 'posted' if p['slug'] in ('famous', 'solved') else verb_of(p)
     return (f'<time class="{cls}" datetime="{rec["first"]}" '
             f'title="{verb} {fmt_date(rec["first"])}, updated {fmt_date(rec["updated"])}">'
-            f'{VERB_SHORT.get(p["st"], verb)} {fmt_date(rec["first"], short=True)}</time>')
+            f'{verb if p.get("method") else VERB_SHORT.get(p["st"], verb)} {fmt_date(rec["first"], short=True)}</time>')
 
 def avatars_html(slug):
     """The correspondents' portraits as a small overlapping pair, for cards and list rows."""
@@ -1771,13 +1849,23 @@ def process(path):
     # dateline: when the finding landed, and when the page last really changed
     mm = re.search(r'<p class="meta">(.*?)</p>', s, re.S)
     if mm: s = s[:mm.start()] + meta_html(page, rec, mm.group(1)) + s[mm.end():]
+    # the outcome line under the dateline: method (linked to the glossary) and extent, from the profile
+    s = re.sub(r'\n?<p class="outcome">.*?</p><!-- /outcome -->', '', s, flags=re.S)
+    oc = outcome_html(page) if page else ''
+    if oc and '<section class="hero">' in s:
+        s = re.sub(r'(<section class="hero">.*?<p class="meta">.*?</p>)', lambda m: m.group(1) + '\n' + oc, s, count=1, flags=re.S)
+    # the kicker's last segment names the outcome in older pages; it follows the profile's method now
+    if page and page.get('method'):
+        s = re.sub(r'(<p class="kicker">.*?)(?:&middot;|·)\s*(?:solved|read|read in part|solved in part|partly read|partly solved|attempted|attempted, open|'
+                   r'not solved|unsolved|explained|found solved|already solved|in progress)\s*(</p>)',
+                   lambda m: m.group(1).rstrip() + m.group(2), s, count=1, flags=re.S)
     s = re.sub(r'<meta name="(?:date|last-modified)"[^>]*>\n?', '', s)
     s = s.replace('</head>', f'<meta name="date" content="{rec["first"]}">\n'
                              f'<meta name="last-modified" content="{rec["updated"]}">\n</head>', 1)
     # the wax seal pressed into a write-up's hero: its outcome, in the colour of its badge
     s = re.sub(r'\n?<div class="seal [a-z]+" aria-hidden="true">.*?</div>', '', s)
     if page and page['slug'] not in SURVEYS and '<section class="hero">' in s:
-        word = plain(page['stt']) if len(plain(page['stt'])) <= 14 else verb_of(page)
+        word = M.INFO[page['method']][2] if page.get('method') else plain(page['stt']) if len(plain(page['stt'])) <= 14 else verb_of(page)
         seal = f'\n<div class="seal {page["st"]}" aria-hidden="true"><span>{html.escape(word)}</span></div>'
         s = re.sub(r'(<section class="hero">.*?)(\n</section>)', lambda m: m.group(1) + seal + m.group(2), s, count=1, flags=re.S)
     # "Watch it decipher": a page with docs/reveal/<slug>.json and no reveal of its own gets one, once, right after the h2
@@ -1919,13 +2007,12 @@ def live_html():
 
 # steps/<slug>.json: the solution steps of each target's profile.json, with its conditions and outcome, for the
 # "How it was solved" replay (solve-replay.js).  A profile folder is its page's slug, give or take case.
-PROFILE_SLUG = {'bordeaux': 'bordeaux1653'}
 STEPS = set()
 def write_steps():
     slugs = {p['slug'] for p in PAGES}
     out = HERE / 'steps'; out.mkdir(exist_ok=True)
-    for f in sorted(HERE.parent.glob('*/profile.json')):
-        slug = PROFILE_SLUG.get(f.parent.name, f.parent.name.lower())
+    for folder, f in M.profile_paths().items():
+        slug = PROFILE_SLUG.get(folder, folder)
         if slug not in slugs: continue
         pr = json.loads(f.read_text(encoding='utf-8'))
         steps = pr.get('solution') or []
@@ -1943,6 +2030,7 @@ if __name__ == '__main__':
     for f in sorted(HERE.glob('*.html')):      # date every page before any menu is built: the menu lists the newest
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')
+    (HERE / 'glossary.html').write_text(glossary_html(), encoding='utf-8')
     done = [process(p) for p in sorted(HERE.glob('*.html'))]
     save_dates(DATES)
     print('search index:', write_search_index(), 'entries')
