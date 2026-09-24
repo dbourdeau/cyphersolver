@@ -2288,3 +2288,36 @@ Objects and signs
 - **SR14** Unicorn seals carry longer texts than other-animal seals (rank test).
 - **SR18** Frequent signs are graphically simpler (Spearman of complexity against log token count, negative).
 - **SR19** Left-to-right texts are rarer on seals than on other objects (A).
+
+## Results of the thirty-fifth set (added after the test; `predict_test35.py`, `results/predict_test35.md`)
+
+Ten held, ten failed. This set is the robustness check of the core findings: each had to hold at Mohenjo-daro and at
+Harappa separately.
+
+**Findings that hold in both cities** (the project's most robust results):
+- **SR1** the last sign of a name carries more information about the ending than the first (p = 0.0001 in both);
+- **SR2** name heads come from a smaller inventory than first signs (p = 0.0001, 0.0006);
+- **SR3** human-figure heads take 740 without exception (53 of 53 at Mohenjo-daro, 26 of 26 at Harappa);
+- **SR16** the head fixes the ending (85% and 88% of heads with 5+ names);
+- **SR8** the affixed fish are attributes (last in 14% and 28% of cases, the plain fish 33% and 45%);
+- **SR10** tiered numerals write 5-8 (60% and 64% of those values, against 5% and 3% of 3-4);
+- **SR11** long-stroke numerals count containers and devices (10% against 4%; 75% against 4%);
+- **SR12** the number depends on the sign that follows (MI 1.29 and 0.96 bits);
+- **SR20** long-stroke numerals open their line (20% against 13%; 62% against 31%);
+- **SR18** frequent signs are graphically simpler (Spearman -0.15 and -0.16).
+
+**Near miss.** SR4: the head-to-ending rule learned at Harappa predicts Mohenjo-daro at 93.2% (baseline 83.7%), but the
+rule learned at Mohenjo-daro predicts Harappa at 88.6% (baseline 79.0%), under the registered 90%. The rule transfers
+well above chance in both directions (p < 1e-7) and misses the bar in one.
+
+**Harappa only** (the pooled results were carried by Harappa): SR9 (the stroke pair before fish: 41.5% against 5.3% at
+Harappa, 23.0% against 15.4% at Mohenjo-daro, p = 0.09), SR13 (tablets vary at numerals: 28.7% at Harappa; Mohenjo-daro's
+27 tablet variant pairs never do), SR14 (unicorn seals carry longer texts: p = 0.0007 at Harappa, 0.11 at Mohenjo-daro),
+SR19 (seals avoid left-to-right writing: p = 0.0002 at Harappa, 0.083 at Mohenjo-daro). These are Harappa habits, not
+general rules of the script, until shown elsewhere.
+
+**Not testable per city** (too few cases in at least one city): SR5 and SR6 (multi-line texts are few; the bound-pair
+and numeral-idiom line-break results rest on M77's line division), SR7 (Harappa 16 discordant names, though p = 0.038),
+SR15 (headed names are rare at Harappa), SR17 (non-fish 520 heads are few in each city).
+
+Tally, counting parts: 203 held, 304 failed (507 registered).

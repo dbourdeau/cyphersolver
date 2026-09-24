@@ -1187,6 +1187,17 @@ Label heads are name heads in seal names (LB1, LB2 reverse). Moulded labels shar
 not (LB4). Harappa moulded pictures change over time and were made in batches (LB7, LB9, LB10). Tally 193 held, 294
 failed.
 
+## Forty-ninth pass (24 Sept 2026): the core findings, city by city
+
+Registered first (PREDICTIONS.md, thirty-fifth set, 38d6a2fff), tested (`predict_test35.py`). **Robust in both
+Mohenjo-daro and Harappa**: the last sign decides the ending (SR1), heads are a small inventory (SR2), human heads take
+740 without exception (SR3, 53/53 and 26/26), the head fixes the ending (SR16), affixed fish are attributes (SR8),
+tiered numerals write 5-8 (SR10), long strokes count containers (SR11), the number depends on the following sign
+(SR12), long numbers open lines (SR20), frequent signs are simpler (SR18). Rule transfer between cities 88.6% / 93.2%
+(SR4, just under the bar one way). **Harappa-only**: stroke pair + fish (SR9), tablets varying in numbers (SR13),
+longer unicorn texts (SR14), seals avoiding left-to-right (SR19). Too few cases per city: SR5, SR6, SR7, SR15, SR17.
+Tally 203 held, 304 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
