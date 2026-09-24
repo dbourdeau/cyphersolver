@@ -2058,6 +2058,12 @@ Registered first (2ea4fc25d). Numeral compounds spread to more sites than matche
 given sign differs between Mohenjo-daro and Harappa (same commonest value for 39% of 69 signs; the '2 + fish' pairs
 are the shared exception). The compounds are fixed locally, not a common vocabulary. Tally 1104 held, 1050 failed.
 
+## Hundred-and-sixty-fifth pass (24 Sept 2026): copper tablets by area
+
+Registered first (2ea4fc25d). On 65 copper tablets with a sub-area, the picture depends on the area: text-only
+tablets in DK-G South, the animal series in VS-A, anthropomorphs and composites on the citadel mounds; texts do not
+cluster, and an area's tablets span levels. Picture sets kept in particular quarters. Tally 1107 held, 1052 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

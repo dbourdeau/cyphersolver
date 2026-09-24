@@ -6719,3 +6719,16 @@ each city but the fixing differs between cities, so they are not a shared vocabu
 measures) across the civilisation; the exceptions are the stroke-pair fish '2 235' / '2 240', which are the same
 everywhere. That fits local naming customs (or local counting conventions) more than common words. Tally, counting
 parts: 1104 held, 1050 failed (2154 registered).
+
+## Results of the hundred-and-fifty-first set (added after the test; `predict_test151.py`, `results/predict_test151.md`)
+
+Three held, two failed; small sample (65 copper tablets with a sub-area). The picture depends on the area (CU1: MI
+1.13 bits over 63 tablets, p = 0.0001), and so does having a picture at all (CU2: p = 0.005); same-picture tablets
+share an area more than chance (CU3: 21% against 15%, p = 0.04). Checked after the test: DK-G South has mostly
+text-only tablets (16 of 25) and no animal picture except one tiger; VS-A has the animal set (elephant 3, gaur, hare,
+anthropomorph, composite, loop); the SD/L citadel mounds carry anthropomorphs, composites, hare and gaur. Texts do
+not cluster by area (CU4: shared signs -0.04) and the tablets of one area are not from one level (CU5: 0.487 against
+0.487, 25 tablets with a level). Reading: copper tablets were made or kept as picture sets in particular parts of the
+city (text-only ones in DK-G South, the animal series in VS-A and on the citadel), across levels; their texts vary
+within each set. This adds a place to the copper tablets' picture-set organisation (LB, CT sets) but says nothing new
+about the texts. Tally, counting parts: 1107 held, 1052 failed (2159 registered).
