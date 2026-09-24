@@ -5862,3 +5862,22 @@ better overall (RL1: 4.662 against 4.659), entropy does not keep falling toward 
 the first predicts the second (RL8: 25% against 33%; RL9 in B), because the last sign is usually 740, which says little
 about what comes before it. Reading: no new mechanism; the line's end is fixed by its ending and the (head, ending)
 pair selects the modifier. Tally, counting parts: 982 held, 953 failed (1935 registered).
+
+# Hundred-and-twenty-seventh set, registered before testing (24 September 2026): the rare signs (ten hypotheses)
+
+'Rare sign' = a non-numeral sign with 1-3 tokens in the distinct lines of the sample; 'common' = 20+. 'Frame-mates' of a
+rare token = common signs seen in the same (previous, next) frame elsewhere. Blocks and catalogue numbers as in the
+hundred-and-second set. Distinct lines (A + B) unless stated; F' = F without copper. 10,000-draw permutations (1,000
+where marked); p < 0.05.
+
+- **RA1** Frame-mates share the rare sign's block more often than random common signs do.
+- **RA2** Frame-mates have catalogue numbers within 10 of the rare sign more often than random common signs do.
+- **RA3** Rare-sign tokens are medial (neither first nor last) more often than common-sign tokens.
+- **RA4** Rare signs stand next to another rare sign more often than within-line shuffles give (1,000).
+- **RA5** Lines with a rare sign are longer than lines without (rank test).
+- **RA6** Rare-sign tokens are at Mohenjo-daro more often than common-sign tokens (F').
+- **RA7** 50%+ of rare signs have a common sign whose catalogue number differs by 1.
+- **RA8** Under 5% of rare-sign tokens stand in the ending slot (directly before 740/520 at the line end, or as a
+  closer).
+- **RA9** B: RA1 holds.
+- **RA10** F': RA4 holds (1,000).
