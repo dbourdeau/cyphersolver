@@ -2419,6 +2419,12 @@ Registered first (5f60855dc). Weighting phrases by rarity does not help; a third
 0.16): the phrase-picture effect is split-dependent. Seals: phrases no better than guessing the bull. No progress:
 streak 1. Tally 1323 held, 1221 failed.
 
+## Two-hundred-and-seventeenth pass (24 Sept 2026): decipherment loop 28, the picture vault without split luck
+
+Registered first (452a50f8d). Leave-one-out: 16.9% (p = 0.05); families 13.6% (p = 0.14); 49 of 50 splits above null
+median. A weak tendency only; set 201's p = 0.001 was a favourable split. No progress: streak 2. Tally 1324 held, 1225
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

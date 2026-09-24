@@ -8505,3 +8505,14 @@ from both ends are one family, and a family is left out whole. Null: motifs shuf
 - **LO4** Over 50 random half splits by family (seeds 300-349), the matcher's accuracy exceeds its null median in 40
   or more.
 - **LO5** Progress rule: LO1 and LO2 hold (a picture vault that does not depend on the split or on mould variants).
+
+## Results of the two-hundred-and-third set (added after the test; `predict_test203.py`, `results/predict_test203.md`)
+
+One held, four failed. Leave-one-out over the 218 text groups predicts 60 of 356 matched tablets' pictures (16.9%; p
+= 0.052; LO1 fails); with near duplicates left out together (205 families) 48 of 352 (13.6%; p = 0.14; LO2 fails);
+without the elephant phrase 14.1% (p = 0.13; LO3 fails). Over 50 random family splits the matcher beats its null
+median in 49 (median accuracy 14.0%, range 5.6-34.8%; LO4 holds). **Reading:** there is a consistent but weak tendency
+for shared phrases to go with the same picture; set 201's p = 0.001 was a favourable split. The tablets do not yet
+give a picture vault that a panel would accept. No progress: streak 2. Prize tier 3's picture line is corrected to
+'weak: leave-one-out 16.9% (p = 0.05), 13.6% with near duplicates together (p = 0.14)'. Tally, counting parts: 1324
+held, 1225 failed (2549 registered).
