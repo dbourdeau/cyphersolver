@@ -6415,3 +6415,17 @@ predict_test108. p < 0.05.
 - **LK7** 20%+ of multi-line texts have a line made only of numerals (a separate count line).
 - **LK8** Where one line of a two-line text is a name (ends 740/520), the other line is not a name in 70%+ (the lines
   are separate fields, not one name wrapped).
+
+## Results of the hundred-and-forty-second set (added after the test; `predict_test142.py`, `results/predict_test142.md`)
+
+Six held, two failed. 77 multi-line texts, 81 junctions; every chance comparison run with the lines as listed and
+reversed. **Line breaks respect the units found by statistics alone.** No junction splits a bound pair (LK2: 0
+against about 5 by chance, either order), junctions split a name unit 4 times as listed and never reversed against
+8-9 by chance (LK1), each line is a well-formed text on its own (LK3: 120 lines against 79 and 94) and lines end in a
+marker twice as often as random segments (LK4: 64 against 32 and 52). Lines are unbalanced in 70% of two-line texts
+(LK6), so the break follows the syntax, not the space. Where one line is a name, the other is not a name in 42 of 43
+(LK8): the second line is a separate field (a closer such as 621, a title-like 790 / 930 / 817, or strokes like
+'31 32'), not a wrapped name. Failed: numerals are separated from the next sign no less than chance (LK5: 7 against
+10, few cases) and numeral-only lines are 13% (LK7). This is the first check of the segmentation from outside the
+sign statistics: the scribes' own line breaks fall where the units say word boundaries are. Tally, counting parts:
+1080 held, 1019 failed (2099 registered).

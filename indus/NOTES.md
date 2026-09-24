@@ -1994,6 +1994,13 @@ chain, and the counted sign is usually a modifier, not the head. Order typology:
 agreement, short closed ending slot: compatible with Dravidian or Indo-Aryan order, against Sumerian, not separating
 the first two. Tally 1074 held, 1017 failed.
 
+## Hundred-and-fifty-sixth pass (24 Sept 2026): line breaks as word boundaries
+
+Registered first (hundred-and-forty-second set, 474c26fb4). On 77 multi-line texts (both line orders), line breaks
+never split a bound pair and almost never a name unit; each line is a well-formed text and ends in a marker twice as
+often as chance; the second line of a name text is a separate field. The scribes' breaks confirm the statistical
+segmentation from outside. Tally 1080 held, 1019 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
