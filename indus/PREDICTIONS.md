@@ -6530,3 +6530,19 @@ linguistic unit', subdivided into AB and CD, with AB 'an attribute qualifying CD
 - **MH7** 'Mostly names and titles': 50%+ of distinct seal lines in F are names (genre 'name') or closers.
 - **MH8** As a title ('merchant of the city') the phrase occurs at 2+ sites in F and after 5+ different preceding
   signs.
+
+## Results of the hundred-and-forty-fifth set (added after the test; `predict_test145.py`, `results/predict_test145.md`)
+
+Four held, four failed. The phrase 255 435 690 740 is in 22 distinct lines. Held: it is a complete text once and
+part of a longer text 21 times (MH1); it splits into AB and CD, each recurring without the other (MH2: AB alone 20,
+CD alone 12); seal lines are mostly names or closers (MH7: 59%); and the phrase occurs at three sites (Mohenjo-daro
+21, Harappa 5, Kalibangan 1) after 9 different preceding signs (MH8), as a title or a name part used by many.
+Failed: AB never qualifies another head before 740 (MH3: 0), so 'AB is an attribute of CD' is not shown by AB
+modifying anything else; instead AB's other partner is a bearer closer ('255 435 156', '255 435 154', '255 435 156
+400'), so AB is a unit that takes either 690 740 or a closer. The B-C junction is not weaker than A-B (MH4: PMI 4.96
+against 4.98; the weak junction is C-D, 1.87, because 740 is everywhere), the phrase ends the text in 76% (MH5, just
+under 80%; it is followed by counts '900 1 3 42x' or a second name on the rest), and the bearer signs he reads as
+names (151, 154-158) are almost never name heads (MH6: 1 of 196): they are closers, as the grammar already had them.
+Reading: Mahadevan's phrase is a real recurring unit across sites, but its internal structure is AB + (CD or closer),
+not attribute + suffixed root, and his bearer readings conflict with how the bearer signs are used. Tally, counting
+parts: 1089 held, 1032 failed (2121 registered).

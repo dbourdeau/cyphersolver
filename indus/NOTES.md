@@ -2017,6 +2017,13 @@ stacking closers and count texts are flat between early and late levels at both 
 new in the late level take 740 in 34 of 34 (against 83%): 740 is the productive default, the 520 class closed and old.
 Tally 1085 held, 1028 failed.
 
+## Hundred-and-fifty-ninth pass (24 Sept 2026): Mahadevan 2014, the 'merchant of the city' phrase
+
+Registered first (hundred-and-forty-fifth set, 5729984d7), claims read in the text of Mahadevan 2014. The phrase 255
+435 690 740 is a real unit (22 lines, three sites, nine preceding signs) that splits AB | CD, but AB alternates with a
+bearer closer ('255 435 156') rather than qualifying other heads, and the bearer signs he reads as names are closers
+(1 of 196 as heads). Tally 1089 held, 1032 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
