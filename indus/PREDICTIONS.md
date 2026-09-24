@@ -5950,3 +5950,23 @@ under half turn up again in the F lines that A + B lack (CW10: 41%). CW6 (99% sh
 but is weak, since short frames such as line boundaries are shared by almost everything. Reading: frequent but loose
 collocations that string together, consistent with the pairwise-precedence picture of earlier sets rather than a
 lexicon of two-sign words. Tally, counting parts: 996 held, 969 failed (1965 registered).
+
+# Hundred-and-thirtieth set, registered before testing (24 September 2026): material and size (twelve hypotheses)
+
+Two ICIT record fields not used before: field 13 'material' (Steatite 1,846, Clay 495, Faience 425, Copper 218, ...;
+'-' = missing) and field 31, read here as the object's main dimension in millimetres (seal median 26, tablet median
+18; '0' = missing). The reading of field 31 as size is an inference from its values, not documented here. F objects
+with the field present; genres, heading unit, motif as before. 10,000-draw permutations; p < 0.05; two-sided where marked.
+
+- **MS1** On seals, text length correlates with size (Spearman 0.2+, significant).
+- **MS2** Seals with the heading unit are larger than seals without (rank test).
+- **MS3** Unicorn seals are larger than seals with other motifs (rank test).
+- **MS4** Seals with a name line and seals with a closer line differ in size (two-sided rank).
+- **MS5** Faience objects carry shorter texts than steatite objects (rank test).
+- **MS6** Among tablets, genre depends on material (MI).
+- **MS7** 50%+ of moulded tablets (TAB:B) with a material recorded are faience.
+- **MS8** The 520 share of names differs between steatite and other materials (two-sided).
+- **MS9** Seal size differs between Mohenjo-daro and Harappa (two-sided rank).
+- **MS10** At Harappa, later seals are larger than earlier seals (rank test).
+- **MS11** Among all objects with a size, count lines are on smaller objects than name lines (rank test).
+- **MS12** Seals with a numeral formula are larger than seals with only a name (rank test).
