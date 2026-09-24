@@ -2932,3 +2932,21 @@ counted items (FO2: 20% against 21% after a numeral), not headed (FO9), not loca
 are longer, not shorter (FO6: 4.0 against 3.2). Against expectation they sit on seals more, not less (FO4: -15.3
 points, length-stratified). Reading: a long tail of rare, line-final labels in longer uncounted seal formulas, which
 is what makes the formula genre open. Tally, counting parts: 314 held, 393 failed (707 registered).
+
+# Fifty-fifth set, registered before testing (24 September 2026): other endings on seals (loop 2, round 9)
+
+'Uncounted seal formula' = an F seal line of 2+ signs with no 740/520 and no numeral. 'Candidate ending' = a sign last
+in 10+ such lines. Positions and names from A + B pooled unless stated. Head class from classes(A). 10,000-draw
+permutations; p < 0.05.
+
+- **EH1** 50%+ of candidate endings stand last in 70%+ of their A + B tokens.
+- **EH2** In uncounted seal formulas ending in a candidate, the sign before it is head-class more often than signs at
+  other non-final positions.
+- **EH3** In 15%+ of uncounted seal formulas ending in a candidate, the rest of the line is an attested name body.
+- **EH4** 10+ name bodies are attested both before 740/520 and before a candidate ending.
+- **EH5** The candidate ending depends on the sign before it (MI, permutation).
+- **EH6** Seal lines ending in a candidate are shorter than seal name lines (rank test).
+- **EH7** Under 5% of candidate tokens (A + B) are directly followed by 740 or 520.
+- **EH8** Among seal lines, those ending in a candidate are commoner at Mohenjo-daro than at Harappa.
+- **EH9** 70%+ of candidates stand last in 50%+ of their B tokens.
+- **EH10** Five or fewer candidates cover 50%+ of the last signs of uncounted seal formulas.
