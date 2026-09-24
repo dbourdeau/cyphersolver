@@ -7864,3 +7864,21 @@ Indus names take signs without regard either to how their depicted words sound (
 depict, except that fish signs form a family. Either Fairservis's identifications are largely wrong, or the name
 elements work like arbitrary name parts (as personal-name elements do in many naming systems), or both. M+ and P do
 not move. Tally, counting parts: 1243 held, 1174 failed (2417 registered).
+
+# Hundred-and-eighty-third set, registered before testing (24 September 2026): decipherment loop 8, are the depiction identifications coherent? (eight hypotheses)
+
+Metric after loop 7: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loops 6-7 found that substitutions follow neither
+the sound of the depicted words nor the depicted category (except fish). Loop 8 asks whether the identifications are
+the weak link. If a category is a real depiction class, its signs should look alike (shape) and be used alike
+(context). Shapes: set 137's font renderings and mean pairwise IoU against 1,000 random sign sets of the same size;
+contexts: set 62's context similarity (signs with 20+ tokens) against random pairs. Categories as set 182 (Fairservis
+letters; signs.FISH; noun_class.HUMAN).
+
+- **DI1** Human-figure signs (noun_class.HUMAN) form a shape family (p < 0.05).
+- **DI2** Fairservis's A signs not in HUMAN still look like the HUMAN signs more than random signs do (mean best IoU).
+- **DI3** Weapons and implements (H, I) form a shape family.
+- **DI4** Control: the fish series forms a shape family (as SH6).
+- **DI5** Human-figure signs are used alike: mean context similarity of HUMAN pairs above random pairs (p < 0.05).
+- **DI6** Weapons and implements are used alike.
+- **DI7** Across categories with 3+ signs, shape cohesion and context cohesion correlate (Spearman > 0).
+- **DI8** The fish series is used alike (context), the known positive case.
