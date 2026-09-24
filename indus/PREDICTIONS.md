@@ -7073,3 +7073,21 @@ p < 0.05.
   140).
 - **MX10** The share of 3+-sign names with a shared opener differs between early and late levels (site-stratified
   permutation as TM, two-sided).
+
+## Results of the hundred-and-sixty-first set (added after the test; `predict_test161.py`, `results/predict_test161.md`)
+
+Five held, five failed. **This set largely withdraws set 159's 'office + name' reading.** The length controls show
+that openness grows with unit length: 1-sign names are title-like (OF2: 1.29, 0.69, 0.62), 2-sign names only just
+person-like (OF1: 3.04, 0.24, 0.82). An opener is a single sign drawn from the sign inventory, so its closed,
+title-like profile (PL1) is nearly automatic, and the core's openness (PL2) follows from its length. The 33 'shared
+openers' are mostly frequent signs, several of them numerals (3, 31, 32, 33, 55) or common signs (700, 820, 861, 920):
+copper-tablet texts begin with one as often as seal names do (OF10: 56% against 57%), pictureless seals carry them as
+often as pictured seals (OF5: 17% against 19%), the two West Asian names are no different (OF9), and names under a
+heading have them more, not less (OF6 fails the other way: 82% against 53%). The motif link is weak once length is
+split: opener z 0.98 against head z -0.08 in 3-sign names, 2.03 against 1.93 in 4+-sign names (OF3 holds on the
+registered rule but the margin is small), and openers are not more motif-specific than heads (OF4: 35% against 31%).
+What holds: openers last across levels far more than cores (OF8: 48% against 4%, as single signs do against
+multi-sign units) and cores recombine with openers at the shuffled maximum (OF7: 36, range 33-36), i.e. openers
+attach freely to cores. Reading: set 159's PL1/PL2 contrast is mostly an artefact of comparing single signs with
+multi-sign units; PL4's motif link survives only weakly. Tally, counting parts: 1148 held, 1080 failed (2228
+registered).

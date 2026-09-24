@@ -2130,6 +2130,14 @@ closed (1.2). Gujarat seals: names open. Controls replicate on new splits (Linea
 Umma against Nippur). RP7 degenerate (no titles in series D); Harappa moulded tablets intermediate. Tally 1143 held,
 1075 failed.
 
+## Hundred-and-seventy-fifth pass (24 Sept 2026): the opener as an office - largely withdrawn
+
+Registered first (sets 161-162 together, e16ba7393). Openness grows with unit length (1-sign names title-like,
+2-sign just person-like), so set 159's 'openers title-like, cores person-like' is mostly an artefact of comparing
+single signs with multi-sign units. The 'shared openers' are frequent signs and numerals, as common on copper labels
+and pictureless seals as on seal names; the motif link is weak once length is split. Openers attach freely to cores.
+Set 159's packed-legend support is withdrawn except a weak motif link. Tally 1148 held, 1080 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
