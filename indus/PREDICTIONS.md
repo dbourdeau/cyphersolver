@@ -2622,3 +2622,65 @@ Head class from classes(A). A, B pooled unless F is named. 10,000-draw permutati
 - **NN8** Non-name lines open with a heading (817, 820, 861) less often than name lines.
 - **NN9** Harappa has a larger share of non-name lines than Mohenjo-daro, length-stratified (F).
 - **NN10** The five commonest last signs of non-name lines cover 50%+ of them.
+
+## Results of the forty-fourth set (added after the test; `predict_test44.py`, `results/predict_test44.md`)
+
+Seven held, three failed. Half the lines (2,019 of 3,914 in A + B) have no ending, and they are not names that lost it:
+they end in a head-class sign 18% of the time against 42% for name bodies (NN1). They are shorter (NN6: 3.4 against
+4.6 signs), carry numerals more (NN4: 60% against 44%), sit off the seals more (NN2: +9.4 points, length-stratified),
+are commoner at Harappa (NN9: +7.8 points) and are headed slightly less (NN8: 12% against 14%). About a fifth of those
+of 3+ signs contain an attested name body, more than shuffles give (NN5: 249 of 1,200, p = 0.001), so names are also
+cited inside other formulas. They do not recur more (NN7: 14.5% both), the seal motif does not track them (NN3), and
+their last signs are spread (NN10: top five 700, 400, 390, 156, 405 cover 38%). Reading: a second genre of short
+counting or tagging formulas, mostly on tablets and at Harappa, that can embed a name without its ending. NN2 and NN9
+overlap with the known tablet/receipt findings. Deviation: NN5 used 1,000 shuffles. Tally, counting parts: 254 held,
+353 failed (607 registered).
+
+# Forty-fifth set, registered before testing (24 September 2026): names inside the other formulas (round 9 of 10)
+
+Non-name lines as in the forty-fourth set. 'Embedded body' = the longest contiguous run (2+ signs) of a non-name line
+that is an attested name body (A + B pooled; ties to the rightmost). 10,000-draw permutations; p < 0.05.
+
+- **EM1** The sign right after an embedded body is 400, 90, 151 or 700 in 30%+ of cases where a sign follows.
+- **EM2** 2-sign bodies that are embedded are commoner as names than 2-sign bodies that are never embedded (rank test on
+  name counts).
+- **EM3** Embedded bodies seen 2+ times are followed by 2+ different signs (or line end) in 50%+ of cases.
+- **EM4** Non-name lines with an embedded body are off seals more often than other non-name lines, length-stratified
+  (F).
+- **EM5** Harappa non-name lines embed a body less often than Mohenjo-daro ones, length-stratified (F).
+- **EM6** Where an embedded body has something before it, the sign just before is a numeral or a heading (817, 820,
+  861) in 40%+ of cases.
+- **EM7** In lines with a numeral, the numeral is the first sign more often in non-name lines than in name lines.
+- **EM8** The first sign depends on the line kind (non-name against name lines; MI, permutation).
+- **EM9** 2-sign non-name lines are numeral + sign more often than 2-sign name bodies are.
+- **EM10** Non-name lines ending in 400 have an embedded body directly before the 400 in 30%+ of cases.
+
+## Results of the forty-fifth set (added after the test; `predict_test45.py`, `results/predict_test45.md`)
+
+Six held, four failed. 300 of 2,019 non-name lines embed an attested name body. The embedded names are the common ones
+(EM2: 2-sign bodies used as names 3.4 times on average against 1.7 for those never embedded) and combine freely with
+what follows (EM3: 40 of 53 have 2+ different followers). Embedding lines sit off the seals (EM4: +10 points,
+length-stratified). The formula genre is number-first: a numeral opens 47% of non-name lines that have one, against 24%
+of name lines (EM7); half of 2-sign non-name lines are numeral + sign against 17% of 2-sign bodies (EM9); the first sign
+alone separates the two kinds (EM8, p = 0.0001). What follows an embedded name is not a post-name or container sign
+(EM1: 12%; commonest 845, 151, 156), what precedes it is not mostly a number or heading (EM6: 28%), Harappa does not
+embed less (EM5), and 400 in non-name lines never follows a name body (EM10: 0 of 170; it follows 156, 158, 892, 137),
+so 400 there is a different use from the post-name 400 of the receipts. Tally, counting parts: 260 held, 357 failed
+(617 registered).
+
+# Forty-sixth set, registered before testing (24 September 2026): replicating rounds 5-9 on held-out data (round 10 of 10)
+
+Each test repeats a finding of the forty-first to forty-fifth sets on data not used to find it: B alone (Mahadevan's
+transcription), or 'other sites' = F objects from sites other than Mohenjo-daro and Harappa. Definitions and tests as
+in the original sets; head class and ranks from A. 10,000-draw permutations (1,000 where the original used 1,000).
+
+- **RP1** (DB1) Doubles exceed within-line shuffles at other sites.
+- **RP2** (DB6) Name bodies avoid non-adjacent repeats at other sites (bodies of 3+).
+- **RP3** (OR2) Dominant orders are transitive in B alone (pairs in 3+ bodies): cyclic triples under 25%.
+- **RP4** (OR7) Names grow at the front in B alone.
+- **RP5** (OR8) Long bodies end in an attested name more than they begin with one, in B alone.
+- **RP6** (SK7) In B, bodies against the A ranking are more often one-off names.
+- **RP7** (NN1) In B, non-name lines end in a head-class sign less often than name bodies.
+- **RP8** (NN4) At other sites, non-name lines carry a numeral more often than name lines.
+- **RP9** (EM7) At other sites, a numeral is first more often in non-name lines than in name lines (lines with one).
+- **RP10** (EM9) In B, 2-sign non-name lines are numeral + sign more often than 2-sign name bodies.
