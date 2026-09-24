@@ -1034,6 +1034,15 @@ use other heads (U17), pots lack the heading (U20), unicorn seals carry longer, 
 cylinder seals lack endings even at Indus sites (U24). 33-520 is a seal-closing formula, not an ending (U6-U10 fail).
 Tally 43 held, 69 failed.
 
+## Thirty-second pass (24 Sept 2026): the two genres
+
+Registered first (PREDICTIONS.md, eighteenth set, c46ce5f43), tested (`predict_test18.py`), described
+(`describe18.py`). Held: N700 tablets are a Harappa count-token class (W1, W2, W7, W8): 318 of 361 are bare 'long
+3 / 4 / 2 + 700', one unit per piece, no endings, 29% of Harappa tablets against 2% at Mohenjo-daro (likely known from
+the HARP reports). Sealings are seal texts (W11); tiered numerals are seal numerals (W15); the closing formula is
+'705 / 706 + 33 + 520' (W16). Eighteen failed, including W12 (sealings do not share the tablets' 400) and W25 (heading
+later only at Harappa). Tally 50 held, 87 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

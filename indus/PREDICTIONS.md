@@ -930,3 +930,44 @@ Persons, titles and animals
 - **W23** Unicorn seals end in 740 rather than 520 more often than other-animal seals, length-stratified (F).
 - **W24** Names followed by 90 ('man') are on unicorn seals more often than other seal names (F, Fisher).
 - **W25** The heading is commoner in later levels, at both Mohenjo-daro and Harappa (Fisher each) (F).
+
+## Results of the eighteenth set (added after the test; `predict_test18.py`, `results/predict_test18.md`; description after the test `describe18.py`, `results/describe18.md`)
+
+Seven held, eighteen failed. (W16's printed list of preceding signs was wrong in the first run, showing the label
+instead of the sign; the statistic was not affected. The script is corrected and the signs are in describe18.md.)
+
+**The Harappa count tokens.**
+- **W1 holds** (the other signs on N700 tablets come from a far smaller set: entropy 2.15 bits lower, p = 0.0001), **W2
+  holds** (N700 tablets almost never hold a second count pair: 2 of 361, against 79% of other tablets with a numeral),
+  **W7 holds** (N700 tablets lack endings: +45 points), **W8 holds** (352 of the 361 are from Harappa: 29% of Harappa
+  tablets, 2% of Mohenjo-daro's, p = 3e-30).
+- Description: 318 of the 361 are the bare texts 'long 3 + 700' (121), 'long 4 + 700' (108) and 'long 2 + 700' (89);
+  the rest add a few signs (413 575 335 711 33 700 ten times). These are count tokens of two to four measures, one
+  unit per piece, from Harappa. The class is very likely described in the Harappa excavation reports (Meadow and
+  Kenoyer's tablets); the counts here are a check, not a discovery.
+- W3 fails (moulded and incised alike), W4 fails (no change between levels), W5 fails narrowly (700 on tablets is counted
+  79% of the time against the 80% bar), W6 fails the other way (tablets with 400 carry fewer numerals: 400 belongs to
+  the name-bearing tablets), W9 fails the other way (N700 tablets carry fewer head signs), W10 fails (N700 texts are
+  not more often duplicated).
+
+**Sealings, pots, numerals.**
+- **W11 holds**: sealing texts are closer to seal texts than to tablet texts in all 1,000 draws: sealings are seal
+  impressions in content as in form.
+- W12 fails (no 400 after the ending on sealings, 0 of 12): U5's '400 off the seals' is a tablet trait, not a sealing
+  one.
+- W13 fails (pot lines end 740 in 21 of 22, against 86% on tablets; p = 0.18).
+- **W15 holds**: tiered numerals are seal numerals (11% of seal numerals, 5% of tablet numerals, p < 0.0001).
+- W14 fails (only 9% of long-stroke numerals on seals are the 33 of 33-520).
+
+**The closing formula.**
+- **W16 holds**: the sign before 33-520 comes from a tiny set (entropy 2.26 bits below that before plain 520). It is 705
+  (37 of 57) or 706 (15): the formula is '705 / 706 + 33 + 520', three signs, both 705-33 and 706-33 being bound
+  pairs of the seventh set.
+- W17 fails (no attribute before it), W18 fails (not an other-animal seal trait), W19 fails the other way (33-520 lines
+  carry the heading more, not less).
+
+**Persons, animals, levels.** W20 fails narrowly (human heads with the heading +5.4 points, p = 0.079), W21, W22, W24
+fail, W23 fails narrowly (unicorn seals end 740 +6.2 points, p = 0.053), W25 fails (the heading is commoner later at
+Harappa, 14% against 5%, p = 0.0006, but not at Mohenjo-daro).
+
+Tally, counting parts: 50 held, 87 failed (137 registered).
