@@ -2872,3 +2872,22 @@ inverted pairs involve a numeral or fish sign (PO9); frequent signs move more (P
 not set by the ending (PO5, p = 0.07) or by the city (PO6: 7 of 52). Reading: a fixed skeleton (slots and pair
 precedences), with numerals and fish attributes floating inside long names. Deviation: PO6 used 1,000 shuffles. Tally,
 counting parts: 307 held, 380 failed (687 registered).
+
+# Fifty-third set, registered before testing (24 September 2026): how predictable each genre is (loop 2, round 7)
+
+Genres: name lines (name_of) and formulas (non-name lines), A + B unless F is named. 'Repeat rate' of a set of lines =
+share of its adjacent-pair tokens whose pair occurs in 2+ lines of the set. Genre comparisons shuffle the genre labels
+among lines (1,000 shuffles for repeat rates, 10,000 otherwise); p < 0.05.
+
+- **EN1** Formulas have a higher repeat rate than name lines.
+- **EN2** Formulas use fewer distinct signs than name lines at equal token counts (in 95%+ of 1,000 equal-size
+  subsamples).
+- **EN3** Signs attested once in A + B are commoner per token in name lines than in formulas.
+- **EN4** First signs are more varied (entropy) in name lines than in formulas.
+- **EN5** Name bodies' last signs are less varied (entropy) than formulas' last signs.
+- **EN6** Harappa lines have a higher repeat rate than Mohenjo-daro lines (F).
+- **EN7** Tablet lines have a higher repeat rate than seal lines (F).
+- **EN8** The rank-frequency (Zipf) slope is steeper for formulas than for name lines (log-log least squares over
+  ranks 1-50).
+- **EN9** The sign sets of Mohenjo-daro and Harappa overlap more (Jaccard) for name lines than for formulas (F).
+- **EN10** Long lines (8+) have a lower repeat rate than lines of 3-5 signs.
