@@ -12,6 +12,7 @@ Decipherment happens in stages, so the metric is a vector, one component per sta
 | S structure | held-out bits per sign on a fixed 80/20 split (seed 2026) of the distinct lines, best registered model | lower |
 | R roles | share of sign tokens whose job is fixed by a tested rule (numeral, ending, closer, marker, heading, name head, counted sign ...) | higher |
 | M meanings | share of sign tokens whose sign has an externally anchored meaning (numeral values, copper-tablet sign = picture equations) | higher |
+| M+ meaning classes | M plus signs whose depicted class (Fairservis) is confirmed by use on held-out data (from loop 3) | higher |
 | P sound values | signs with a sound value that passed a registered held-out test (the prize) | higher |
 | L language | candidate language families not yet excluded by registered tests | lower |
 
@@ -26,3 +27,4 @@ makes the texts more predictable) and M rising.
 | baseline | 1-175 | 4.712 (24.9%) | 56.2% | 16.6% | 0 | 4 | model tri + pos + end, discounted (set 125) |
 | 1 | 176 | 4.712 (24.9%) | 72.9% | 16.6% | 0 | 4 | role / class / numeral-value components add nothing to S; slot-based modifier role adopted in R |
 | 2 | 177 | 4.712 (24.9%) | 81.1% | 16.6% | 0 | 4 | variable-order model +0.005 only (not adopted); anchors 347/460 untestable on new objects; bare-line roles adopted |
+| 3 | 178 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | depiction of the head predicts the ending on B; human/tool/plant/fish classes enter M+ |
