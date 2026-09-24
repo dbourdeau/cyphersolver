@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The ADFGVX residue of 1918 &mdash; twenty-two mutilated messages against known keys</title>
-<meta name="description" content="The twenty-two ADFGVX radio messages from the Eastern Front that Klaus Schmeh lists as unsolved are not unbroken ciphers: Lasry, Niebel, Kopal and Wacker published the keys in 2017. The 2017 comment thread, read in full, had solved nine and partly read three. Here the thread is tabulated for the first time, Lasry's unpublished CHI key is rebuilt, Norbert's block-edit method is reimplemented and re-derives the solved pages blind, and the ten never-read messages are tested against every key and a key-free attack that fails its own control.">
+<title>Twenty-two garbled ADFGVX messages of November 1918</title>
+<meta name="description" content="Twenty-two German ADFGVX radio messages from the Eastern Front, November 1918, on Klaus Schmeh's list of unsolved messages. Their keys were published by Lasry, Niebel, Kopal and Wacker in 2017; the messages fail to decrypt because letters were lost or added in transmission. The 2017 comment thread had decrypted nine and three in part. Here those results are tabulated, Lasry's unpublished CHI key is rebuilt, and a search for up to two garbled blocks under the fifteen known keys reproduces the nine and finds nothing for the other ten.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-15">
 <meta name="last-modified" content="2026-09-15">
@@ -39,9 +39,9 @@
 </div>
 
 <section class="hero">
-  <p class="kicker">Working notes &middot; September 2026</p>
-  <h1>The ADFGVX residue of 1918 &mdash; twenty-two mutilated messages against known keys</h1>
-  <p class="sub">Schmeh&rsquo;s Top 50 lists twenty-two German radio messages from the Eastern Front of November 1918 as unsolved. They are not unbroken ciphers. The keys were published in 2017, and what defeats these messages is loss in transmission. Nine were read in the comment thread, three partly, and ten have never been read by anyone.</p>
+  <p class="kicker">Eastern Front, German army radio traffic &middot; ADFGVX (substitution square and columnar transposition) &middot; November 1918</p>
+  <h1>Twenty-two garbled ADFGVX messages of November 1918</h1>
+  <p class="sub">Twenty-two German radio messages from the Eastern Front, November 1918, on Klaus Schmeh&rsquo;s list of ADFGVX messages that would not decrypt. Their keys were published in 2017; the messages fail because letters were lost or added in transmission. The known keys were applied with a search for up to two garbled blocks per message. Nine had been decrypted in the 2017 comment thread and three in part; the search reproduces those, and the other ten give nothing under any of the fifteen keys.</p>
   <p class="meta">Daniel Bourdeau &middot; resolved <time datetime="2026-09-15">15 September 2026</time> &middot; sources: Schmeh, Top 50 no. 46 and the &ldquo;Unsolved ADFGVX messages&rdquo; page provided by George Lasry; the 70 comments under the post (Norbert Biermann, Armin, Thomas, Max Baertl, George Lasry, 2017); Lasry, Niebel, Kopal and Wacker, <i>Cryptologia</i> 2017; James Rives Childs, <i>German Military Ciphers from February to November 1918</i></p>
 <div class="seal found" aria-hidden="true"><span>9 of 22 read</span></div>
 </section>
@@ -50,31 +50,31 @@
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#list">What the list is</a><a href="#keys">The keys, made machine-readable</a><a href="#table">The table nobody published</a><a href="#method">Norbert’s method, reimplemented</a><a href="#open">The ten open messages, tested</a><a href="#status">Status, and what would change it</a><a href="#files">Files</a></nav>
 <div class="callout">
   <h3>Status &nbsp; <span class="st partial">9 solved &middot; 3 partial &middot; 10 open</span></h3>
-  <p>The list entry should read &ldquo;22 messages, 9 solved, 3 partly read, 10 open&rdquo;, and the key Lasry recovered in the thread belongs alongside the published fourteen. Norbert&rsquo;s method of 2017, two block edits of up to five letters against a known key, is reimplemented here with a German language model and re-derives the solved pages without a hint of their plaintext. On the ten open messages it finds nothing with any of the fifteen keys, and a key-free attack cannot recover the transposition at these lengths even on a planted control. The open ten need the Childs originals or a key that was never in the corpus.</p>
+  <p>The list entry should say &ldquo;22 messages, 9 decrypted, 3 partly decrypted, 10 open&rdquo;, and the key Lasry recovered in the thread belongs alongside the published fourteen. Norbert&rsquo;s method of 2017, two block edits of up to five letters against a known key, is reimplemented here with a German language model and re-derives the solved pages without a hint of their plaintext. On the ten open messages it finds nothing with any of the fifteen keys, and a key-free attack cannot recover the transposition at these lengths even on a planted control. The open ten need the Childs originals or a key that was never in the corpus.</p>
 </div>
 
 <h2 id="list"><span class="num">01</span> What the list is</h2>
 
-<p>James Rives Childs, the American cryptanalyst attached to the French in 1918, kept a transcript of German ADFGVX traffic intercepted on the Eastern Front. In 2017 George Lasry, Ingo Niebel, Nils Kopal and Arno Wacker broke the corpus with a hill-climbing attack on the transposition and recovered 618 cryptograms under fourteen three-day keys, from September to December 1918. Lasry then gave Klaus Schmeh a list of the messages that would not decrypt under any of those keys, and Schmeh published it as &ldquo;Unsolved ADFGVX messages from World War I&rdquo;, with the keys attached, and later as no. 46 on his Top 50.</p>
+<p data-term-ok>James Rives Childs, the American cryptanalyst attached to the French in 1918, kept a transcript of German ADFGVX traffic intercepted on the Eastern Front. In 2017 George Lasry, Ingo Niebel, Nils Kopal and Arno Wacker broke the corpus with a hill-climbing attack on the transposition and recovered 618 cryptograms under fourteen three-day keys, from September to December 1918. Lasry then gave Klaus Schmeh a list of the messages that would not decrypt under any of those keys, and Schmeh published it as &ldquo;Unsolved ADFGVX messages from World War I&rdquo;, with the keys attached, and later as no. 46 on his Top 50.</p>
 
 <p>Lasry&rsquo;s own note on that page says what the problem is: the keys are &ldquo;most certainly all the keys used during the period&rdquo;, so &ldquo;the challenge is to understand how the cryptograms were mutilated&rdquo;. ADFGVX is unforgiving about length. The columnar transposition splits the letter stream by the key length, so one lost or added letter moves every column boundary after it and turns the rest of the message into noise. A message with two garbles is no longer decryptable by the key, even though the key is known.</p>
 
-<p>Between February and September 2017 the comment thread under the post did most of the work. Norbert Biermann, Armin, Thomas, Max Baertl and Lasry himself read message after message. Schmeh announced a consolidating article and never wrote it, so those readings existed only as scattered comments and no table of which messages are solved had been published. The first thing this write-up does is publish that table.</p>
+<p>Between February and September 2017 the comment thread under the post did most of the work. Norbert Biermann, Armin, Thomas, Max Baertl and Lasry himself decrypted message after message. Schmeh announced a consolidating article and never wrote it, so those decryptions existed only as scattered comments, and no table of the results was found in print or online. The first thing this write-up does is publish that table.</p>
 
 <h2 id="keys"><span class="num">02</span> The keys, made machine-readable</h2>
 
 <p>Lasry&rsquo;s list gives each key as a transposition permutation and a 36-character substitution square, the cells in row order of A D F G V X. Three of the fourteen squares contain runs of hyphens for cells never recovered, and the text layer of the PDF collapses those runs into en- and em-dashes, leaving squares of 34 or 35 characters. Expanding each dash back to the run length that makes 36 repairs all three. All fourteen are in <code>keys.json</code>.</p>
 
-<p>The key numbers admit two readings. Either <code>perm[i]</code> is the column emitted i-th, or it is the position at which column i is emitted. Both round-trip self-consistently, so an encrypt-decrypt test cannot tell them apart. Decrypting a real message can. It is the second.</p>
+<p>The key numbers admit two interpretations. Either <code>perm[i]</code> is the column emitted i-th, or it is the position at which column i is emitted. Both round-trip self-consistently, so an encrypt-decrypt test cannot tell them apart. Decrypting a real message can. It is the second.</p>
 
 <h3>The key not on the list</h3>
 
 <p>On 3 May 2017 Lasry reported in the thread that a two-part message, the FFVXV cryptogram of 13 November and the AFAFF fragment that continues it, decrypted jointly under a key that was in none of the fourteen periods: transposition word CMBLAKOHIDENFJGP, length 16. He gave the joint plaintext, 173 letters, and noted that his program had needed all 356 ciphertext letters to recover a length-16 key. The substitution square was not published. It is rebuilt here by aligning the untransposed bigrams of the two cryptograms with his plaintext, Norbert&rsquo;s corrections applied: 24 of 36 cells, with the digits and the letters M, Q and Y unrecovered because the message never uses them. It is the fifteenth entry in <code>keys.json</code> and the repo&rsquo;s notes call it the CHI key, after the header of the message it enciphered.</p>
 
-<h2 id="table"><span class="num">03</span> The table nobody published</h2>
+<h2 id="table"><span class="num">03</span> The 2017 results in one table</h2>
 <figure class="creveal" data-src="reveal/adfgvx.json"></figure>
 
-<p>The thread, all 70 comments, read in full. Page numbers are Childs&rsquo;s transcript pages as Schmeh printed them; two messages carry no page number on the list. Letter counts are of the received ciphertext, with the gaps marked in the printed transcription counted separately. The reading is by the person who first posted it.</p>
+<p>All 70 comments of the thread were gone through. Page numbers are Childs&rsquo;s transcript pages as Schmeh printed them; two messages carry no page number on the list. Letter counts are of the received ciphertext, with the gaps marked in the printed transcription counted separately. Each decryption is credited to the person who first posted it.</p>
 
 <table>
 <tr><th>Childs page</th><th class="n">letters</th><th>status</th><th>key</th><th>reading</th></tr>
@@ -102,7 +102,7 @@
 <tr><td>217</td><td class="n">170</td><td><span class="st stuck">open</span></td><td>none fits</td><td class="muted">&mdash;</td></tr>
 </table>
 
-<p>Nine solved, three partly read, ten never read. One further transcript page, 187 as printed (SELLV&hellip;, &ldquo;Stellv. Gen. Kom. 9 AK Breslau&rdquo;), was a message the Kassel team had already solved and does not belong on the list; Lasry said so in the thread. The two CHI messages were listed as unsolvable under the published keys, which is true; they were solved by finding a key that was not published.</p>
+<p>Nine decrypted, three decrypted in part, ten with no decryption found anywhere. One further transcript page, 187 as printed (SELLV&hellip;, &ldquo;Stellv. Gen. Kom. 9 AK Breslau&rdquo;), was a message the Kassel team had already solved and does not belong on the list; Lasry said so in the thread. The two CHI messages were listed as undecryptable under the published keys, which is true; they were decrypted after Lasry recovered a key that was not published.</p>
 
 <h2 id="method"><span class="num">04</span> Norbert&rsquo;s method, reimplemented</h2>
 
@@ -124,7 +124,7 @@
 <tr><td class="muted">best open message (158, 170)</td><td class="muted">20, 19</td><td class="n muted">&minus;6.89</td><td class="muted">noise</td></tr>
 </table>
 
-<p>The solved pages are recognisable German at a glance even where the block edit is not quite right, and the residual garbles are the single-letter losses that a second pass repairs. The 105 and 109 lines score lower than the others because the two-block search only approximates their mutilation; both texts are nevertheless readable in the raw output and both agree with Norbert&rsquo;s 2017 readings.</p>
+<p>The solved pages are recognisable German at a glance even where the block edit is not quite right, and the residual garbles are the single-letter losses that a second pass repairs. The 105 and 109 lines score lower than the others because the two-block search only approximates their mutilation; both texts are nevertheless legible in the raw output and both agree with Norbert&rsquo;s 2017 decryptions.</p>
 
 <h2 id="open"><span class="num">05</span> The ten open messages, tested</h2>
 
@@ -149,7 +149,7 @@
 
 <h3>The CHI key on the two page-153 messages</h3>
 
-<p>In September 2017 Norbert suggested, without testing it, that the two page-153 messages might belong to the CHI key, since they are of the same period. Direct decryption with parity repair, and the block search, both return noise for both messages. Either a further unlisted key, or losses heavier than two blocks.</p>
+<p>In September 2017 Norbert suggested, without testing it, that the two page-153 messages might belong to the CHI key, since they are of the same period. Direct decryption with parity repair, and the block search, both return noise for both messages. The cause is a further unlisted key or losses heavier than two blocks.</p>
 
 <h3>A key-free attack, and why it fails</h3>
 
@@ -164,7 +164,7 @@
 
 <h2 id="status"><span class="num">06</span> Status, and what would change it</h2>
 
-<p>The residue is nine solved, three partly read, ten open, and the ten are open for a reason that is now measured rather than assumed. Three things would change it.</p>
+<p>Nine messages are decrypted, three in part, ten open. The ten were tested in September 2026 and fail under every known key with up to two block edits. Three things would change that.</p>
 
 <table>
 <tr><th>what</th><th>why it would matter</th></tr>
@@ -173,7 +173,7 @@
 <tr><td>A search past two edits</td><td>Three block edits against fifteen keys is within reach of compute and is the natural next step; it was not run here because two edits was the standard that solved everything the 2017 readers solved, and the scores give no sign that any open message is close.</td></tr>
 </table>
 
-<p>Until one of those arrives, the useful products are the table above, the fifteen keys in machine-readable form with the three damaged squares repaired and the CHI square rebuilt, and a decoder that reproduces the 2017 solutions blind.</p>
+<p>Until one of those arrives, the useful products are the table above, the fifteen keys in machine-readable form with the three damaged squares repaired and the CHI square rebuilt, and a decoder that reproduces the 2017 decryptions without being given their plaintext.</p>
 
 <h2 id="files"><span class="num">07</span> Files</h2>
 
