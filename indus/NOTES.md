@@ -1372,6 +1372,13 @@ Registered first (sixtieth set, c3512b34b), tested (`predict_test60.py`). Frame 
 variants of common ones: the best match is unstable across transcriptions and does not share position or ending. Rare
 signs lean to formulas. Tally 345 held, 422 failed.
 
+## Seventy-fifth pass (24 Sept 2026): recurring units inside names (loop 3, round 5)
+
+Registered first (sixty-first set, b5e8d716f), tested (`predict_test61.py`). About a hundred recurring two-sign units
+cover 46% of name-body tokens, are shared by both cities, reused across name lengths and often stand alone as names;
+many are number + item or fish + item. The inventory is transcription-sensitive (29% carry over to B). Tally 352 held,
+425 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

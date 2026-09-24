@@ -3121,3 +3121,16 @@ where a null is needed; p < 0.05.
 - **SG8** 20%+ of units contain a fish sign.
 - **SG9** 60%+ of units found in long bodies (5+) are also found in bodies of 3-4.
 - **SG10** 30%+ of units are also attested as whole 2-sign bodies.
+
+## Results of the sixty-first set (added after the test; `predict_test61.py`, `results/predict_test61.md`)
+
+Seven held, three failed. 103 adjacent pairs recur in 5+ distinct name bodies, and they cover 46% of body tokens, more
+than recurring pairs cover in shuffled bodies (SG1, p = 0.001). Units sit at the end of the name more than the start
+(SG2: 326 against 207, partly the head-final rule), are shared by both cities (SG4: 78 of 102), are reused between short
+and long names (SG9: 95 of 102), stand alone as whole 2-sign names about half the time (SG10: 48 of 103), and a third
+contain a numeral (SG7: 35) and nearly half a fish sign (SG8: 47). They are not rigid: 30% also occur reversed (SG3:
+73 of 103 never reversed), a unit's first sign does not strongly call its second (SG6: 0.45), and only 29% of A's units
+recur 3+ times in B (SG5), which is smaller and splits some compounds differently, so the unit inventory depends on the
+transcription. Reading: names are largely assembled from a stock of about a hundred two-sign units, many of them
+number + item or fish + item, that also serve as short names on their own. Tally, counting parts: 352 held, 425 failed
+(777 registered).
