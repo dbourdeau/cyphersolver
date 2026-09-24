@@ -1787,6 +1787,17 @@ pattern does not appear (fish are counted 2 mostly), though fish variants behave
 and low repetition hold but fit name texts too; language-like predictability holds only partly. Caveat: authors' views
 summarised from memory, and the ICIT sign numbering may differ from theirs. Tally 891 held, 896 failed.
 
+## Hundred-and-thirtieth pass (24 Sept 2026): sets 114-115 on held-out data
+
+Registered first (hundred-and-sixteenth set, fafc35587), tested (`predict_test116.py`). Nineteen of twenty replicate: the
+'2' prefix is not part of the count in F', B and the smaller sites; fish-variant minimal pairs, 740 as a suffix, low
+repetition, Zipf-like frequencies and one-off numeral + fish names hold on held-out data.
+
+Summary of sets 114-116: 'small-then-large' numeral runs are a '2' prefix (the heading '2' without its heading sign)
+before a real count; published structural claims split: 740-as-suffix and fish variants as distinct words fit, the
+six/seven-fish pattern does not, and the statistics fit both linguistic and non-linguistic views. Tally 910 held, 897
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

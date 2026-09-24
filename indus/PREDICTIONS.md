@@ -5502,3 +5502,14 @@ Published proposals
 - **HX18** F': 50%+ of adjacent-pair types occur once (PR15).
 - **HX19** B: conditional entropy of the next sign is under 80% of the unigram entropy (PR12).
 - **HX20** OS: 70%+ of distinct numeral + fish names are on one object (PR2).
+
+## Results of the hundred-and-sixteenth set (added after the test; `predict_test116.py`, `results/predict_test116.md`)
+
+Nineteen held, one failed. The '2' prefix replicates: in F' X's usual count equals N 17 times and N + 2 never (HX1; B: 4
+and 0, HX3), 'N X' exists without the '2' in B (HX2: 11 of 13), '2 N' lines are seal lines at the smaller sites (HX4: 6
+of 8), '2 N' counts few things (HX7: 390, 220 cover most), and numeral runs are short (HX5, HX6). The structural
+predictions replicate: fish-variant minimal pairs (HX8: 73 in F'; HX9: 32 in B), 740 almost never line-initial (HX10,
+HX11), suffixes after the ending in B (HX13: 2 of 72; F' 9 of 175 = 5.1%, just over the 5% line, HX12), fewer distant
+repeats than chance (HX14 in B; HX15 at the smaller sites), a Zipf-like curve (HX16: -0.92; HX17: -0.83), mostly unique
+pair types (HX18: 70%), predictable next signs in B (HX19: ratio 0.47, with the plug-in caveat), and one-off numeral +
+fish names at the smaller sites (HX20: 21 of 22). Tally, counting parts: 910 held, 897 failed (1807 registered).
