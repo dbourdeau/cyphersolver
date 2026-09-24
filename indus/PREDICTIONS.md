@@ -3037,3 +3037,14 @@ inside name bodies. 10,000-draw permutations (1,000 for within-body shuffles); p
 - **FS8** Which fish sign is used depends on the city (F names, Mohenjo-daro against Harappa; MI, permutation).
 - **FS9** Fish tokens are a smaller share of name-body tokens at Harappa than at Mohenjo-daro (F).
 - **FS10** Fish tokens in formulas are last more often than other formula tokens.
+
+## Results of the fifty-eighth set (added after the test; `predict_test58.py`, `results/predict_test58.md`)
+
+Seven held, three failed. Fish signs are a name-internal series: 16% of body tokens against 7% of formula tokens (FS3).
+Different fish stand side by side more than shuffles give (FS1: 174 pairs, p = 0.001), with no fixed order between the
+plain fish and its variants (FS2: 220 second 30, first 28). A fish is counted more often than other body signs (FS5: 21%
+after a numeral against 10%), and which fish is written depends on both neighbours (FS6: MI 0.97 bits; FS7: 0.87 bits)
+and a little on the city (FS8: 0.05 bits, p = 0.0001). Fish-final bodies take either ending (FS4: entropy 0.96 against
+0.38 bits), restating the mixed fish heads of earlier sets. Harappa does not use fewer fish (FS9) and fish do not close
+formulas (FS10). Reading: the fish series behaves like a set of qualifiers in names, chosen by context, often counted,
+and stackable. Tally, counting parts: 335 held, 412 failed (747 registered).

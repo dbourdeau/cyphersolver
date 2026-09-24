@@ -1354,6 +1354,12 @@ fifty-fifth set do not hold up: with an attested body required, closer lines are
 pairs, the new closers are not post-name signs, and 400 without an ending is too rare to test. Withdrawn as a finding.
 Tally 328 held, 409 failed.
 
+## Seventy-second pass (24 Sept 2026): the fish signs (loop 3, round 2)
+
+Registered first (fifty-eighth set, d51359e6a), tested (`predict_test58.py`). The fish series is name-internal,
+stackable (different fish adjacent, no fixed order), often counted, chosen by both neighbours and slightly by city;
+fish-final bodies take either ending. Tally 335 held, 412 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
