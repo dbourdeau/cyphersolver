@@ -1779,6 +1779,14 @@ not an addend (X's usual count equals N 27 times, N + 2 never); it acts like the
 sign, on seals, counting 220 and 390 mostly. So 'small-then-large' runs are not compound numbers. Tally 880 held, 887
 failed.
 
+## Hundred-and-twenty-ninth pass (24 Sept 2026): structural predictions of published proposals
+
+Registered first (hundred-and-fifteenth set, 9920848a3), tested (`predict_test115.py`). Parpola's six/seven-fish
+pattern does not appear (fish are counted 2 mostly), though fish variants behave as distinct words in personal names;
+740 behaves as a suffix with 400/90/151 stacking after it (Mahadevan, Parpola); Farmer et al.'s singletons, short texts
+and low repetition hold but fit name texts too; language-like predictability holds only partly. Caveat: authors' views
+summarised from memory, and the ICIT sign numbering may differ from theirs. Tally 891 held, 896 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

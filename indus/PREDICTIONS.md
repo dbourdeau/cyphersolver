@@ -5453,3 +5453,24 @@ Replication
 - **PR18** F': PR12 holds.
 - **PR19** B: PR8 holds (B's sign types).
 - **PR20** F': PR1 holds.
+
+## Results of the hundred-and-fifteenth set (added after the test; `predict_test115.py`, `results/predict_test115.md`)
+
+Eleven held, nine failed. These test structural consequences only, under this project's sign identifications and
+numeral values (ICIT numbering), which may not match each author's; the views are summarised from memory and should
+be checked against the sources before citing. Parpola (fish): numbers before a fish are 6 or 7 less often, not more,
+than before other signs (PR1: 4% against 9%; PR20 in F': 4% against 9%), so the 'six stars / seven stars' pattern does
+not show here (fish are mostly counted 2, sixty-ninth set); numeral + fish names are one-off (PR2: 93%) and fish
+variants make many minimal pairs (PR3: 111), consistent with distinct words in personal names, but they are on seals in
+only 68% (PR4) and fish-final names occur at both cities more often than other names (PR5: 13% against 5%, the reverse
+of 'as local as others'). Mahadevan and Parpola (suffixes): 740 almost never begins a line (PR6: 9 of 1,218) and
+400/90/151 almost never precede it (PR7: 9 of 219), consistent with 740 as a suffix and suffixes stacking after it.
+Farmer, Sproat and Witzel: a third of sign types are singletons (PR8: 33% in F; B only 12%, PR19, as B merges rare
+signs), lines are short (PR9: 4.3), and non-adjacent repeats are rarer than chance (PR10); these fit their view but
+also fit short name-like texts. Rao and Yadav (language-like order): the next sign is well predicted (PR12: conditional
+entropy 52% of unigram; PR18 F': 49%, though plug-in estimates on this few tokens understate conditional entropy), the
+frequency curve is Zipf-like (PR13: slope -0.90), and pair types are mostly singletons (PR15: 65%); but adjacent MI is
+only 1.5 times its shuffled value (PR11; PR17 in B: 1.35), under the 2x threshold, and the top 50 pairs cover 25%
+(PR14). 'Number before noun' holds only 1.2 to 1 (PR16), because numerals also follow 705/706 and headings. Neither the
+linguistic nor the non-linguistic view is decided by these tests. Tally, counting parts: 891 held, 896 failed (1787
+registered).
