@@ -6828,3 +6828,13 @@ inside the city: 1.15 times observed between areas (WC3: 35 of 44 HR heads also 
 (WC4). Caveat: the level splits compare generations, so their overlap also measures turnover of names over time; the
 area split (WC1) is the cleaner check and gives the same answer. Tally, counting parts: 1117 held, 1053 failed (2170
 registered).
+
+## Results of the hundred-and-fifty-fourth set (added after the test; `predict_test154.py`, `results/predict_test154.md`)
+
+One held, five failed; the set is underpowered. Only 14 long names (body 3+) recur on two or more seals (28 seal
+pairs, 6 with Mohenjo-daro sub-areas), against 26 short names (107 pairs). Long-name pairs are from the same site
+somewhat more often (SP1: 61% against 41%, p = 0.051), but not from the same sub-area (SP2: 2 of 6), level (SP3: 5 of
+8) or motif (SP6: 19% against 14%), and are not co-located beyond chance (SP4: 6 pairs). Short-name pairs are not
+co-located either (SP5 holds, p = 0.10). Reading: with so few repeated long names, same-name seals cannot be tied to
+one owner; that 92% of names are on a single seal (set 147) is itself the main fact, and it fits one seal per
+person. Tally, counting parts: 1118 held, 1058 failed (2176 registered).

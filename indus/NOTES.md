@@ -2077,6 +2077,12 @@ Registered first (9f410531e). Inside Mohenjo-daro (DK against HR: estimate 7.4 t
 5.5 times) and Harappa (early against late), names are a large population and heads a closed one (1.13-1.15 times).
 Set 147 does not depend on regional fashion. Tally 1117 held, 1053 failed.
 
+## Hundred-and-sixty-eighth pass (24 Sept 2026): same name, same person?
+
+Registered first (9f410531e). Underpowered: only 14 long names recur (6 usable Mohenjo-daro pairs). Long-name pairs
+share a site somewhat more (61% against 41%, p = 0.051) but not an area, level or motif. Same-name seals cannot be
+tied to one owner; one name per seal (92%) is the fact that fits personal seals. Tally 1118 held, 1058 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
