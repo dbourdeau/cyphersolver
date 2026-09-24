@@ -4501,3 +4501,15 @@ value share 0.9+; 'variable' = under 0.6. 10,000-draw permutations; p < 0.05.
 - **FZ18** Frozen signs are also name heads more often than variable signs.
 - **FZ19** B: FZ2 holds.
 - **FZ20** F: FZ1 holds.
+
+## Results of the ninety-third set (added after the test; `predict_test93.py`, `results/predict_test93.md`)
+
+Four held, sixteen failed: frozen numerals before a sign are rare, so counts are mostly real counts. Of 66 signs
+counted 5+ times, only 4 always take one value (FZ1: 236 = 2, 632 = 2, 717 = 2, 923 = 3; FZ20 in F: 3 of 62), 36 are
+variable, and 700 is variable (FZ17: value share 0.59). The four frozen pairs keep their value in B (FZ10: 4 of 4), are
+all at Mohenjo-daro (FZ8: 14 of 14 located tokens) and are written with long strokes more (FZ3: 67% against 41%). They
+are not a class otherwise: not more in names (FZ2, FZ19), not more name-final (FZ5), not always counted (FZ4), not more
+often 3 (FZ11), not heads more (FZ18); variable counts are not more in formulas (FZ6) or line-final (FZ7, p = 0.06) or on
+tablets (FZ9); notation does not predict frozenness (FZ15, FZ16). Note: the '705/706 33' unit of the ninety-second set
+is not in this count because there the numeral follows the sign; the frozen pattern shows up on both sides of a sign
+but only for a handful of Mohenjo-daro signs. Tally, counting parts: 627 held, 720 failed (1347 registered).

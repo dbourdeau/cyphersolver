@@ -1610,6 +1610,12 @@ Summary of sets 90-92: each medium has its own text type (copper tablets fixed l
 mid-line 740 closes a short name followed by an annotation; '705/706 33' is a fixed unit, not a jar count. Tally 623
 held, 704 failed.
 
+## Hundred-and-seventh pass (24 Sept 2026): frozen numbers and real counts
+
+Registered first (ninety-third set, 4cb5c2b4d), tested (`predict_test93.py`). Only 4 of 66 counted signs have a fixed
+number (236 = 2, 632 = 2, 717 = 2, 923 = 3), all Mohenjo-daro, long-stroke, stable in B; the rest, including 700, are
+real variable counts. Tally 627 held, 720 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
