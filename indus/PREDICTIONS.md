@@ -3676,3 +3676,21 @@ What heads are
 - **QS18** Receipt names (ending + 400) end in a top-10 head more often than other names (distinct lines).
 - **QS19** Names cited in formulas end in a top-10 head more often than names in general.
 - **QS20** In 3-sign bodies, fish stand in the middle more often than first or last.
+
+## Results of the seventy-fifth set (added after the test; `predict_test75.py`, `results/predict_test75.md`)
+
+Nine held, eleven failed. The constituent structure is clear and replicates in B: names are [opener [middle head]].
+In 3-sign bodies the middle sign is tied to the head more than to the opener (QS1: 4.18 against 3.63 bits; QS6 in B:
+3.98, p = 0.0001, against 3.33, p = 0.48; heads have fewer types, so the comparison is conservative); (middle, head)
+is an attested 2-sign name far more often than (opener, middle) (QS2: 74 against 31); in 4-sign bodies the last two
+signs form a name far more often than the first two (QS3: 55 against 19; QS7 in B: 14 against 1). Numerals stand
+directly before the head more than first (QS5: 126 against 91): the count belongs to the head. The common heads are
+also the counted things and stand alone as names: heads counted in formulas head four times as many names (QS15:
+10.0 against 2.5), all ten commonest heads are also 1-sign names (QS16), and names cited inside formulas end in a
+top-10 head more often (QS19: 50% against 43%). What failed: fish sit first more than in the middle (QS20: 63, 43, 17)
+and the middle is not mainly numerals or fish (QS4: 36%); motifs do not track head or opener at Mohenjo-daro (QS8,
+QS9); Harappa seals and tablets name the same heads (QS10); small-site openers are city openers as often as heads are
+(QS11); heads do not outlast openers across Harappa periods (QS12, p = 0.13); pairs sharing an opener are only
+borderline local (QS13, p = 0.058) and pairs sharing a head are local too (QS14 fails, p = 0.021), so opener and head
+cannot be told apart as person against place; receipts do not favour common heads (QS18); and most 1-sign names are
+not mainly heads in longer names (QS17: 25 of 69). Tally, counting parts: 462 held, 525 failed (987 registered).

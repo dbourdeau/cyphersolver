@@ -1476,6 +1476,14 @@ shared head (few types, at both cities, kept in long names, carrying the ending,
 fish heads take 520) and a more local, more varied opener that does not affect the ending. Openers are not unique to
 single names, so the opener is not simply a personal name. Tally 453 held, 514 failed.
 
+## Eighty-ninth pass (24 Sept 2026): how the name is put together
+
+Registered first (seventy-fifth set, 445ccf781), tested on distinct names (`predict_test75.py`). Names are right-
+branching, [opener [middle head]]: the middle binds to the head, (middle, head) and the last two of four signs form
+attested names, and numerals stand before the head. The common heads are the counted things of the formulas and stand
+alone as names. Locality does not separate opener from head (both local), and motifs track neither. Tally 462 held,
+525 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
