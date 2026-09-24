@@ -4293,3 +4293,34 @@ segment is sometimes a known name (TN17: 10 of 23; TN20 in B: 3 of 7 are one sig
 Reading: a medial 740 or 520 is mostly not the end of a first name but part of a longer compound (an inner '... 740 ...'
 element), with the true name at the end; the long lines that looked like two names (thirty-eighth set, LT1) are better
 read as long single names at Mohenjo-daro. Tally, counting parts: 582 held, 665 failed (1247 registered).
+
+# Eighty-ninth set, registered before testing (24 September 2026): the three heading signs (twenty hypotheses)
+
+'Heading' = 817, 820 or 861 as the first sign of a line of 2+ signs; 'headed name line' = a headed line that is a name
+line. Distinct lines (A + B) unless stated; F distinct (site, type, line) and objects for site, type and motif tests.
+Motif as in the sixty-seventh set. 10,000-draw permutations; p < 0.05.
+
+What chooses the heading sign
+- **HS1** The heading sign depends on the head of the name that follows (MI).
+- **HS2** It depends on the city (F, MI).
+- **HS3** It depends on seal against tablet (F, MI).
+- **HS4** 861-headed lines are formulas more often than 817-headed lines.
+- **HS5** 90%+ of 817 headings are followed by 2.
+- **HS6** 90%+ of 820 headings are followed by 2.
+- **HS7** 90%+ of 861 headings are followed by 2.
+- **HS8** The sign after the heading (2 against other) depends on the heading sign (MI).
+- **HS9** The same body follows 2+ different heading signs in 20%+ of bodies seen headed 2+ times.
+Where heading signs occur otherwise
+- **HS10** 50%+ of non-initial 817/820/861 tokens directly follow a numeral.
+- **HS11** Under 2% of lines hold two heading-sign tokens.
+What headed names are
+- **HS12** At Mohenjo-daro, headed name bodies are longer than unheaded ones (rank test).
+- **HS13** Headed names take 740 as often as unheaded names (two-sided p >= 0.05).
+- **HS14** Headed names hold a fish less often than unheaded names.
+- **HS15** At Mohenjo-daro, headed name lines carry a suffix less often than unheaded ones.
+- **HS16** Headed seals carry the unicorn more often than unheaded seals (F objects).
+- **HS17** Headed names are one-off (one object) more often than unheaded names (F).
+- **HS18** 95%+ of headed lines are the only line on their object (F).
+Replication
+- **HS19** B: HS1 holds.
+- **HS20** B: HS7 holds.
