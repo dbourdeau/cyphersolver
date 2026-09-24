@@ -5226,3 +5226,15 @@ The closers
 - **RG18** B: BC9 holds.
 - **RG19** OS: 70%+ of 390 lines are on seals (BC11).
 - **RG20** OS: 30%+ of 615 tokens stand next to 615 (BC4).
+
+## Results of the hundred-and-tenth set (added after the test; `predict_test110.py`, `results/predict_test110.md`)
+
+Eighteen held, two failed. The genres-as-frames findings replicate: the last sign tells the genre far more than the
+first in F' (RG2: 1.30 against 0.39 bits), B (RG4: 1.36 against 0.56) and the smaller sites (RG6: 1.28 against 0.39);
+the first sign still tells something (RG3); genre sets line length in F' and at the smaller sites (RG8, RG9); the
+smaller sites also share one vocabulary across genres (RG7: 25% genre-specific); and bare lines are nearer counts than
+names in F' (RG1: 0.39 against 0.34), though not in B (RG5: 0.56 against 0.56). The closer findings replicate too: 615
+is the doubled sign (RG10: 74%; RG20 small sites: 6 of 9), 368 takes other words than 740 (RG11: 0.12; RG15 in B: 0.10)
+and follows a heading in about 30% (RG12, RG18), 390 is counted 3+ (RG13: 93% in F'; RG17 in B: 83%, under 90%) and is a
+seal sign at the smaller sites (RG19: 78%), and the two uses of 400 have almost disjoint predecessors (RG14: 0.08; RG16
+in B: 0.12). Tally, counting parts: 822 held, 865 failed (1687 registered).

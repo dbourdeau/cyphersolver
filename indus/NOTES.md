@@ -1737,6 +1737,16 @@ Registered first (hundred-and-ninth set, 86fc334b7), tested (`predict_test109.py
 seal sign that also fills the heading slot (after 817/861), 390 a seal sign counted 3+, 615 the doubled sign, and bare
 400 a different sign-use from post-name 400 (disjoint predecessors). Tally 804 held, 863 failed.
 
+## Hundred-and-twenty-fourth pass (24 Sept 2026): sets 108-109 on held-out data
+
+Registered first (hundred-and-tenth set, 10b965156), tested (`predict_test110.py`). Eighteen of twenty replications
+held across F', B and the smaller sites: genres share a vocabulary and are defined by their last sign; 368, 390, 615 and
+the two 400s keep their separate uses.
+
+Summary of sets 108-110: the four genres are frames on one shared vocabulary, recognised by their closing sign; the
+signs that close bare lines each have a distinct job (368 heading-slot and seal sign, 390 a high-count seal sign, 615 the
+doubled sign), and 400 has two unrelated uses. Tally 822 held, 865 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
