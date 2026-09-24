@@ -197,3 +197,20 @@ strata (1, 2, 3, 4+ signs), permutation of the object type within strata, p < 0.
   (+3.9 points, p = 0.27).
 - Tally: 2 held, 10 failed. Not checked against Frenez's work on the Lothal sealings, which should be read before any
   claim about sealed goods moving between cities.
+
+# Seventh set, registered before testing (24 September 2026)
+
+**Hypothesis X: scribes break lines between words, and our segments are words.** If heading, name and ending are
+units of the language, a seal text that runs onto a second line should be broken at a segment boundary, and tightly
+bound sign pairs should not be split. Parpola used line division as segmentation evidence; not measured here.
+
+Unit: intact seals (SEAL) of the fuller ICIT corpus with 2+ lines, lines in reading order (icit_full.py). A gap is the
+position between two adjacent signs of the text; a break is a gap at a line end.
+
+**X1 Segment boundaries.** Boundary gaps: after the heading (817 / 820 / 861 followed by 2 / 60 / 1) and before the
+ending (740 / 520 as defined in the fourth set). The share of breaks falling on boundary gaps exceeds the expectation
+with each text's breaks placed at random among its gaps (10,000 times), p < 0.05.
+
+**X2 Bound pairs are not split.** Bound pairs: the 30 commonest ordered sign pairs (count 10+) with the highest PMI,
+counted in single-line intact seal texts. In multi-line texts, gaps inside a bound pair are breaks less often than
+other gaps of the same texts, Fisher p < 0.05.
