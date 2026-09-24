@@ -6993,3 +6993,23 @@ Harappa 409). Linear B and Ur III as sets 152 and 158.
 - **RP8** Ur III owners, Umma against Nippur: title-like (UR1 with a third city).
 - **RP9** Ur III whole legends, Umma against Nippur: person-like (UR3).
 - **RP10** Indus names on seals, Gujarat (Lothal, Dholavira) against Mohenjo-daro: estimate at least 3 times observed.
+
+## Results of the hundred-and-fifty-ninth set (added after the test; `predict_test159.py`, `results/predict_test159.md`)
+
+Five held, five failed. **The packed-legend reading gains support.** Openers of 3+-sign names have the title-like
+profile (PL1: estimate/observed 1.37, shared 0.63, on one seal 0.57; 33 of Mohenjo-daro... of the smaller city's 52
+openers also in the other, PL3: 63%), while the name cores (body minus opener + ending) are strongly person-like (PL2:
+8.86, 0.08, 0.95). On seals with a motif, the opener carries more information about the picture than the head does
+(PL4: permutation z 2.53 against 0.95; MI 1.73 against 1.29 bits, 508 names). So an Indus name of three or more signs
+looks like a shared, closed first element that goes with the seal's emblem, plus an individual core: the shape of
+'office or lineage + personal name', packed into one unit rather than set on separate lines as in Ur III legends.
+Same-opener seals are not more often in one city than same-head seals (PL10: 67% against 69%), so the opener is not
+a local lineage mark. PL5 holds but is degenerate (after-ending closers, 400 and 90 are 2-3 sign types per city) and
+carries no weight.
+
+**Fuls 2024 is supported on word dividers.** Signs 1 and 2 do not behave as dividers: the text on both sides of an
+inner sign 1 is a complete text elsewhere no more often than around other signs (PL6: 4.2% against 4.0%), for sign 2
+far less (PL7: 0.3%, sign 2 is bound to what follows), and line breaks do not fall next to them (PL8: 7 and 1 against
+10 and 9). Wells's partial divider reading fails. Fuls's word length of about 1.7 is not matched by this project's
+unit chaining (PL9: 1.36 signs per word with units from 5+ bodies; the figure depends on the unit threshold).
+Tally, counting parts: 1135 held, 1073 failed (2208 registered).

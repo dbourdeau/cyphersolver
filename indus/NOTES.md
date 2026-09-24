@@ -2116,6 +2116,13 @@ one unit. Fuls's Corpus (2022) and Sign Catalog (2023), previews supplied by the
 (e.g. 923 45, 752 53, 906 16) match this project's ICIT export, so the books describe the same data; the previews
 add no texts. Tally 1130 held, 1068 failed.
 
+## Hundred-and-seventy-third pass (24 Sept 2026): the packed-legend reading and word dividers
+
+Registered first (sets 159-160 together, 210b1fe5b). Openers of 3+-sign names are title-like (closed, 63% shared
+between cities) and carry more information about the seal motif than heads do (z 2.5 against 0.95), while name cores
+are strongly person-like (8.9 times observed): 'office / lineage + personal name' packed into one unit. Fuls 2024
+supported: signs 1 and 2 are not word dividers (Wells rejected). PL5 degenerate. Tally 1135 held, 1073 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
