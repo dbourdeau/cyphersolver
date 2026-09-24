@@ -3394,3 +3394,38 @@ ending better than the first sign (AM19: 0.45 against 0.22 bits), restating the 
 endings rarely alternate on one body (AM7: 10 bodies) and 520 is not an off-seal form (AM8, AM9, the other way); the
 heads of the smaller sites are not all city heads (AM6: 79%); common openers are not especially productive (AM17);
 small-site names are not shorter (AM20). Tally, counting parts: 399 held, 468 failed (867 registered).
+
+# Seventieth set, registered before testing (24 September 2026): twenty hypotheses on the local name stocks
+
+F name tokens (names_in; site, object type, ICIT record) unless stated; 'city' = Mohenjo-daro or Harappa. 'Name' =
+(body, ending); 'one-off' = on one object. Units as in the sixty-first set; motif as in the sixty-seventh ('None' = no
+motif). Harappa period via rtools.level. Site/label nulls shuffle labels among the tokens tested. 10,000-draw
+permutations (1,000 where stated); p < 0.05.
+
+Time and place
+- **PN1** At Harappa, a name on 2+ dated objects keeps to one period more often than when periods are shuffled.
+- **PN2** Distinct opening pairs (first two body signs) are shared by the two cities more often than distinct closing
+  pairs (last two).
+- **PN3** Within one site, seals with identical texts share the motif more often than when motifs are shuffled within
+  the site.
+- **PN4** The ten names on the most objects have 60%+ of their tokens at Harappa.
+- **PN5** Unit sharing is local: one-off names at one city share units with other one-offs of the same city more than
+  when city labels are shuffled among one-off names (1,000 shuffles).
+Length and content
+- **PN6** Names with a numeral in the body are longer (rank test).
+- **PN7** Names with a fish sign are longer (rank test).
+- **PN8** Names with a numeral + fish pair are a larger share at Mohenjo-daro than at Harappa.
+- **PN9** At Harappa, 520 names are shorter than 740 names (rank test).
+- **PN10** Bodies with a doubled sign are a larger share at Mohenjo-daro than at Harappa.
+- **PN11** 520 names contain a fish more often than 740 names.
+Object and name
+- **PN12** Names off the seals are shorter than names on seals (rank test).
+- **PN13** Distinct seal names are one-off more often than distinct names off seals.
+- **PN14** Tablet names are also attested on a seal more often than potsherd names are.
+- **PN15** At Harappa, tablet names are shorter than seal names (rank test).
+- **PN16** Names with the heading unit are one-off more often than unheaded names (A + B lines).
+Inside the one-off names
+- **PN17** In 70%+ of one-off names of 2+ signs, the head also heads 5+ distinct names.
+- **PN18** In one-off names of 3+, the first sign is rare (5 or fewer tokens in F) more often than the head is.
+- **PN19** Harappa heads are less varied than Mohenjo-daro heads (entropy, label permutation).
+- **PN20** A larger share of distinct names repeats (2+ objects) at Harappa than at Mohenjo-daro.
