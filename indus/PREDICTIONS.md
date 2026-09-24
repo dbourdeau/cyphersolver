@@ -2493,3 +2493,13 @@ under 20 cases fails as untestable.
   random sign pairs.
 - **MB10** (as J8) for signs after a numeral 10+ times, the commonest value accounts on average for 60%+ of their
   numerals.
+
+## Results of the fortieth set (added after the test; `predict_test40.py`, `results/predict_test40.md`)
+
+Nine held, one failed. On Mahadevan's transcription alone (1,554 lines, 544 names) the core findings replicate: MB1
+(tiered for 5-8: 66% against 6%), MB2 (long strokes before containers and devices: 56% against 3%), MB3 (long numbers
+open lines: 57% against 21%), MB4 (affixed fish last 13% against 31%), MB5 (28 of 33 heads fix their ending), MB6 (the
+number depends on the sign, MI 1.05), MB7 (the last sign decides the ending, +0.26 bits), MB9 (fish variants alternate
+with 220, p = 0.001), MB10 (the commonest value covers 67% of a sign's numerals). MB8 fails narrowly (two endings in 3
+of 42 long lines against 5 of 306, p = 0.060). The core of the name grammar and the number system does not depend on
+the transcription. Tally, counting parts: 233 held, 334 failed (567 registered).

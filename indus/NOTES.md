@@ -1225,6 +1225,12 @@ Registered first (thirty-ninth set, dc9014a5d), tested (`predict_test39.py`). Gr
 Harappa's levels (HT1-HT3); receipts, larger counts and left-to-right writing are earlier, and the heads change (HT5,
 HT6, HT9, HT10); the 520 share is stable (HT7). Tally 224 held, 333 failed.
 
+## Fifty-fourth pass (24 Sept 2026): the core in Mahadevan's transcription (round 4 of 10)
+
+Registered first (fortieth set, b28b2cdfb), tested (`predict_test40.py`). Nine of ten core findings replicate on B
+alone (number system, affixed fish, head-ending rule, fish variants, number idioms); long lines with two names narrowly
+miss (MB8, p = 0.060). Tally 233 held, 334 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
