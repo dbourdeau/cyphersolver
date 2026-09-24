@@ -1291,6 +1291,12 @@ Registered first (forty-eighth set, 682e78113), tested (`predict_test48.py`). On
 they exist, a name line tends to pair with a formula (not a count), mostly at Mohenjo-daro, and a numeral tends to sit
 in one line only (borderline). Most tests are too thin. Tally 282 held, 365 failed.
 
+## Sixty-third pass (24 Sept 2026): the tally entries (loop 2, round 3)
+
+Registered first (forty-ninth set, 8afb1c4f6), tested (`predict_test49.py`). Two thirds of tally formulas are the known
+700 count tokens; the rest (156, 861, 390, 405, 817 390) are single items with their own typical count, spread over
+sites. Counts above 4 are rare. Tally 288 held, 369 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

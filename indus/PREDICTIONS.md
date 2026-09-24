@@ -2776,3 +2776,14 @@ formula' = a formula in one. 10,000-draw permutations; p < 0.05.
 - **TL8** All members of a tally group come from one site more often than when sites are shuffled among tally formulas.
 - **TL9** In 80%+ of tally groups the numeral stands in the same position (first sign or not) in every member.
 - **TL10** Tally groups contain two consecutive values more often than same-size draws from all formula values.
+
+## Results of the forty-ninth set (added after the test; `predict_test49.py`, `results/predict_test49.md`)
+
+Six held, four failed, with a large caveat: of the 619 tally formulas in 34 groups, 401 are the known count tokens
+(numeral + 700, Harappa tablets, values 2-4), so TL1 (narrow value range, p = 0.0001), TL2 (Harappa 76% against 19%)
+and TL7 (tablets 76% against 28%) mostly restate that finding. The other groups are small: 156 (44, mostly 3), 861 (31,
+Harappa tablets, 3), 390 (24, seals, 3-8), 405 (10), 817 390 (10). What is new: tallied items are 1-2 signs (TL3: 32 of
+34), each item has its own typical count (TL6, MI 0.55 bits, p = 0.0001), and counts fall off steeply above 4 (TL5:
+89, 307, 369, 195, 69, 50, 31, 18, 9, 1, 1, 8 for 1-12). Failures: tallied items are ordinary signs, not formula-only
+ones (TL4: 3% against 42%); groups span sites rather than staying at one (TL8: 4 of 34); the numeral moves (TL9: 68%);
+groups do not favour consecutive values (TL10). Tally, counting parts: 288 held, 369 failed (657 registered).
