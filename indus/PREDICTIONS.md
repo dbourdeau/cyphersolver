@@ -4757,3 +4757,18 @@ share' = share of its tokens that are line-first, 'final share' = line-last. 'In
 - **PZ18** 50%+ of final specialists are in the 520 class or are post-name signs (400, 90, 151) or the endings.
 - **PZ19** Medial signs are the fish and numeral-adjacent signs: fish are medial in 80%+ of fish types with 10+ tokens.
 - **PZ20** B: PZ2 holds.
+
+## Results of the ninety-ninth set (added after the test; `predict_test99.py`, `results/predict_test99.md`)
+
+Nine held, eleven failed. Of 138 non-numeral signs with 10+ tokens, 21 keep one end of the line in 70%+ of tokens
+(PZ1: 15%, under 20%): 7 openers (491, 545, 692, 817, 853, 861, 880) and 14 closers (151, 154, 156, 161, 226, 241, 400,
+426, 520, 527, 565, 621, 679, 740) (PZ2; PZ20 in B: 6 against 2). Positions are very stable: the same role in A and B
+for 62 of 67 signs (PZ9) and at Mohenjo-daro and Harappa for 46 of 51 (PZ10). Openers are followed by a numeral (PZ7:
+64% against 13%), i.e. they are heading-type signs, and lines that open with one are longer (PZ15: 5.1 against 4.3);
+820 is not among them (it also occurs inside lines), so PZ6 fails. Openers are seal signs (PZ12: 69% against 60%) and
+closers tablet signs (PZ11: 39% against 33%). The closers are mostly not name heads (PZ5: 5 of 14) nor 520-class or
+suffix signs (PZ18: 4 of 14); besides 740, 520 and 400 they are formula closers (151, 154, 156, 527, 565, 621, 679),
+several of which the ninety-first set found in the tails after a mid-line name. Fish are inside signs (PZ19: 8 of 10).
+Not supported: openers or closers combining more freely (PZ3, PZ4), closers after numbers (PZ8, the other way),
+frequency differences (PZ13, PZ14), shorter closed lines (PZ16), and closers being more final in formulas (PZ17).
+Tally, counting parts: 692 held, 775 failed (1467 registered).

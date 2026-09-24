@@ -1655,6 +1655,12 @@ copper and on moulded tablets. 845 is essentially a copper word; 407 also ends s
 Summary of sets 96-98: copper labels are a separate vocabulary (845, 407, fixed units like '3 42x'); removing copper
 leaves the name findings intact (AM10 withdrawn); picture labels are medium-specific. Tally 683 held, 764 failed.
 
+## Hundred-and-thirteenth pass (24 Sept 2026): position specialists
+
+Registered first (ninety-ninth set, 1fea03ca4), tested (`predict_test99.py`). 7 opener signs (heading-type, followed
+by numerals, on seals) and 14 closer signs (740, 520, 400 and a set of formula/tail closers 151, 154, 156, 527, 565,
+621, 679) hold their positions in both transcriptions and both cities (93%, 90%). Tally 692 held, 775 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
