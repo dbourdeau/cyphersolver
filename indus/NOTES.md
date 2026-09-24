@@ -878,6 +878,34 @@ right mark broken edges; replaces the rough parse of replicate_full.py), `restor
    exclusivity of the endings (Hunter 1934). Contradictions: Wells 2006: 200-208 prefers Munda on word structure;
    Mahadevan 1970: 46 finds opener proportions the same at every site. Site, dossier and draft corrected.
 
+## Seventeenth pass (23-24 Sept 2026): Wells and Mahadevan tested, third predictions, grammar model, sign classes, seals
+
+Scripts: `wells_test.py`, `predict_test3.py`, `grammar_model.py`, `name_classes.py`, `anchors_full.py`; results in
+`results/wells_test.md`, `predict_test3.md`, `grammar_model.md`, `name_classes.md`, `anchors_full.md`.
+
+1. **Wells 2006 (Munda) tested.** His case (pp. 203-208) is that Indus words use prefixes ('initial clusters') and
+   insertions, which PDr lacks. On the corpus: the heading is not a prefix selected by a root (pairs sharing the next
+   sign share the opener only 6 points above chance, against 16 points for the ending on the name's last sign); no
+   small set of name-initial signs combines with many roots (the five commonest initial signs cover 27% of names, the
+   five final 30%, with similar productivity); the 31 insertions are mostly fish-type signs and numerals, i.e.
+   attribute + head compounds, ordinary in Dravidian. His arguments do not survive the data.
+2. **Mahadevan 1970 on the openers: confirmed; our claim withdrawn.** In M77, 817 and 861 are one sign (both map to
+   MSg267). In the ICIT-derived corpus, Mohenjo-daro against Harappa with all three openers: MI 0.002 bits, p = 0.66.
+   The 'site / object-type effect' of the sixth pass (O1) came from Lothal (817 13 of 22) and the TAG:B sealings (817
+   10 of 10), impressions of a few seals. Site, dossier and draft corrected.
+3. **Third registered predictions fail** (R1 numerals as attributes: 26% of name-internal numerals stand last; R2
+   stacked possessives: 11% against 34%). Tally: 2 held, 4 failed.
+4. **Slot grammar against n-grams on unseen texts** (2,140 held-out lines): unigram 6.23 bits/sign, bigram 5.07,
+   trigram 4.99, slot grammar 5.11 (bigram names) / 5.04 (trigram names). The explicit rules capture what local
+   n-grams capture, no more.
+5. **Sign classes inside names** (84 signs with 15+ tokens; SVD-reduced neighbour profiles + position + ending,
+   k-means k = 8, 30 bootstraps): name-final 740-class heads (176, 760, 798, 752, 923 ...; 66% final, 520 in 1 of 600);
+   the fish group with the stroke pair, 60, 741, 803, 806 (58% inside, 520 in 158 of 282); name-initial first elements
+   (32, 920, 255, 590, 61, 415 ...; 45-59% initial). Stability 0.35-0.70: tendencies, not sharp classes.
+6. **Seals: the text does not follow the picture.** 1,556 distinct seal texts of the fuller corpus: one sign-animal
+   association survives Bonferroni (700 with the short-horned bull, 3 of 17 texts); no sign goes with the standard or
+   the trough. Seal texts do not name their animal; no new anchors.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
