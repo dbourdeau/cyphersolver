@@ -54,7 +54,11 @@ The plaintext ends "...EMERGE AND EXERT E" plus the tool's X pad (odd length), s
 - the key equals what `2-gram-subst.py kpa --outkey` derives from the recovered plaintext;
 - all 84 single-occurrence ciphertext bigrams reread: none admits another same-length reading;
 - the last ciphertext bigram (XB) also decodes as EX in "EXIST", "CONTEXT" and "EXPLAINING".
-Open suspicion: the plaintext stops mid-word ("...EMERGE AND EXERT EX"), so the reference key may come from a longer
+Cause found (same day): the ending was misread. The ciphertext also fits "...INSTITUTIONS EMERGE AND EVOLVE" + the
+tool's X pad (1607 letters padded to 1608); "EXERT EX" and "EVOLVE X" differ only in two single-occurrence bigrams
+(XE,RT vs VO,LV), and the language model cannot tell them apart. Corrected key: `private/ANSWER_key_676_v2.txt` (changes LV,
+RT, VO, XE). A format test with Part 1's fully determined key was accepted, so the route and format are fine.
+Earlier suspicion, now withdrawn: the plaintext stops mid-word ("...EMERGE AND EXERT EX"), so the reference key may come from a longer
 plaintext than the one encrypted here. Next step: ask the MysteryTwister team how the reference was built. Do not spend
 attempts on guessed variants.
 
