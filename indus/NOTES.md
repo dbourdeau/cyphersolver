@@ -1692,6 +1692,16 @@ signs are a second family of seal inscriptions, mostly Mohenjo-daro: no 740/520,
 sign before the closer in two thirds, each closer with its own heads, one closer per line. Partly restores the
 alternative-closer idea of the fifty-fifth set. Tally 737 held, 810 failed.
 
+## Hundred-and-eighteenth pass (24 Sept 2026): line templates
+
+Registered first (hundred-and-fourth set, 3ff7b1716), tested (`predict_test104.py`). About half of all distinct lines
+follow ten role templates (X, XE, XNX, NX, XNXE, HNXE, XC, XES, HNX, XN), the same in A and B; templates vary with
+medium, city and Harappa period, with the widest range on seals and at Mohenjo-daro.
+
+Summary of sets 102-104: shape families weakly predict use (block 1 heads, block 3 formulas); lines ending in a closer
+are a second seal-inscription family at Mohenjo-daro; ten role templates cover half the corpus. Tally 746 held, 821
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

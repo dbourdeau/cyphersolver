@@ -4976,3 +4976,17 @@ object, site and period tests. 10,000-draw permutations; p < 0.05.
 - **TP18** F without copper: TP1 holds.
 - **TP19** B: TP1 holds.
 - **TP20** 70%+ of F lines with a template starting 'HN' and containing E are from Mohenjo-daro.
+
+## Results of the hundred-and-fourth set (added after the test; `predict_test104.py`, `results/predict_test104.md`)
+
+Nine held, eleven failed. Reduced to role strings, 2,722 distinct lines use 391 templates; the commonest are X (344),
+XE (252), XNX (155), NX (131), XNXE (88), HNXE (80), XC (77), XES (67), HNX (64), XN (63), FXE (52), NXE (51). The ten
+commonest cover 49% (TP1, just under half; TP18 in F: 51%; TP19 in B: 54%), and A's and B's top five share four (TP4).
+Templates depend on medium (TP2) and city (TP3); Mohenjo-daro and seals use a wider range of them (TP10: +0.67 bits;
+TP11: +1.30 bits). Lines rarely hold two numbers (TP15: 8%), and graffiti are rarely names (TP17: 86% without E). Not
+supported: 'XE' leading on seals and 'NX' on tablets (TP5, TP6: plain 'X' leads both, since distinct lines collapse the
+repeated count tokens); 'H' always followed by N (TP7: 82%); E always final (TP8: 87%; the mid-line endings of the
+ninety-first set); 'XC' as the closer template (TP9: 22%; closers take many shapes); copper using fewer templates (TP12,
+reverse: fixed labels are few lines, not few shapes); 'NX' being 2-4 counts (TP13: 65%); E and C excluding each other
+(TP14: 65 lines, 2.4%); templates stable over Harappa periods (TP16: p = 0.0001, they change); and headed names being
+Mohenjo-daran (TP20: 68%, just under). Tally, counting parts: 746 held, 821 failed (1567 registered).
