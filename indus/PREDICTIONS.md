@@ -5797,3 +5797,23 @@ next to it. Finer position buckets do worse (CM10), and the model is 5.69 bits, 
 A + B lack (CM5), about 0.8 bits worse than on its own held-out lines. Benchmark: 4.9 bits per sign in-sample held-out,
 5.7 on new lines; any model claiming more structure should beat these. Tally, counting parts: 972 held, 944 failed
 (1916 registered).
+
+# Hundred-and-twenty-fifth set, registered before testing (24 September 2026): beating the benchmark (ten hypotheses)
+
+Benchmark (hundred-and-twenty-fourth set): position class + two-sign context, 4.92 bits per sign on held-out A + B lines,
+5.69 on new F lines. Same split and weight-fitting on a training slice. Each hypothesis states a structural claim and its
+predictive test.
+
+- **BB1** Lines are anchored at their end: a unigram by distance from the end (0, 1, 2, 3+) beats one by distance
+  from the start (0, 1, 2, 3+) by 0.1+ bits.
+- **BB2** Replacing the four-way position class with distance-from-end (4 buckets) in the benchmark gains 0.05+ bits.
+- **BB3** Absolute-discount (Kneser-Ney style) smoothing of the bigram beats add-one by 0.5+ bits.
+- **BB4** Using that bigram in the benchmark instead of the add-one bigram inside the context model gains 0.1+ bits.
+- **BB5** Backing off unknown and rare signs (fewer than 3 training tokens) to their catalogue block improves the
+  benchmark on new F lines by 0.1+ bits.
+- **BB6** Adding a line-length-conditioned position unigram (length 2, 3, 4, 5+ by position) gains 0.05+ bits.
+- **BB7** Adding a 'next-to-last given last' reverse term is not possible left to right; instead, adding a unigram
+  conditioned on the first sign of the line gains 0.05+ bits.
+- **BB8** The best of these models scores under 4.8 bits per sign on held-out A + B lines.
+- **BB9** The best model scores under 5.5 bits on new F lines.
+- **BB10** The best model's gain over the benchmark on B (80/20) is positive.
