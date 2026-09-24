@@ -2635,3 +2635,22 @@ their last signs are spread (NN10: top five 700, 400, 390, 156, 405 cover 38%). 
 counting or tagging formulas, mostly on tablets and at Harappa, that can embed a name without its ending. NN2 and NN9
 overlap with the known tablet/receipt findings. Deviation: NN5 used 1,000 shuffles. Tally, counting parts: 254 held,
 353 failed (607 registered).
+
+# Forty-fifth set, registered before testing (24 September 2026): names inside the other formulas (round 9 of 10)
+
+Non-name lines as in the forty-fourth set. 'Embedded body' = the longest contiguous run (2+ signs) of a non-name line
+that is an attested name body (A + B pooled; ties to the rightmost). 10,000-draw permutations; p < 0.05.
+
+- **EM1** The sign right after an embedded body is 400, 90, 151 or 700 in 30%+ of cases where a sign follows.
+- **EM2** 2-sign bodies that are embedded are commoner as names than 2-sign bodies that are never embedded (rank test on
+  name counts).
+- **EM3** Embedded bodies seen 2+ times are followed by 2+ different signs (or line end) in 50%+ of cases.
+- **EM4** Non-name lines with an embedded body are off seals more often than other non-name lines, length-stratified
+  (F).
+- **EM5** Harappa non-name lines embed a body less often than Mohenjo-daro ones, length-stratified (F).
+- **EM6** Where an embedded body has something before it, the sign just before is a numeral or a heading (817, 820,
+  861) in 40%+ of cases.
+- **EM7** In lines with a numeral, the numeral is the first sign more often in non-name lines than in name lines.
+- **EM8** The first sign depends on the line kind (non-name against name lines; MI, permutation).
+- **EM9** 2-sign non-name lines are numeral + sign more often than 2-sign name bodies are.
+- **EM10** Non-name lines ending in 400 have an embedded body directly before the 400 in 30%+ of cases.
