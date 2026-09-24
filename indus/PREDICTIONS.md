@@ -7445,3 +7445,19 @@ gives stems without case endings. Reading: the name lists confirm the head-final
 separates Indus from Sumerian, but the available Dravidian list (literary names with an honorific) is not comparable
 enough to rank Dravidian against Indo-Aryan; see the follow-up set. Tally, counting parts: 1200 held, 1128 failed
 (2328 registered).
+
+# Hundred-and-seventy-second set, registered before testing (24 September 2026): the Tamil comparison repaired, and the ending profile (six hypotheses)
+
+Set 171's Old Tamil list failed as a comparator because the Sangam names carry the honorific -ār. Here the honorific
+is removed by a fixed rule written before testing: a final 'ார்' (-ār) is replaced by the pulli '்' on the preceding
+consonant (muṭavaṉār > muṭavaṉ, the plain -aṉ form); other names are kept as they are. 'Final element' of a full
+name: Indus = the ending (740 or 520, R.names_in); Old Tamil = the last akshara of the core; Sanskrit = the last
+syllable of the Monier-Williams stem; Linear B = the last syllabogram. Rarefaction and JSD as set 171.
+
+- **LT1** Old Tamil name cores close their last element: R < 1.
+- **LT2** On a log scale the Indus R is closer to the Old Tamil core R than to the Sanskrit syllable R.
+- **LT3** The Indus body length distribution is closer (JSD) to Old Tamil cores than to Sanskrit syllables.
+- **LT4** The mean length of Old Tamil cores (aksharas) is within 1 of the Indus body mean (signs).
+- **LT5** The share of names whose final element is the commonest one is closer between Indus and Old Tamil cores than
+  between Indus and Sanskrit stems.
+- **LT6** Linear B persons' commonest final syllabogram covers a smaller share of names than 740 does of Indus names.
