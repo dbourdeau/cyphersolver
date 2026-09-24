@@ -4558,3 +4558,30 @@ copper and seal texts share signs slightly more than different animals' do (CU9:
 link across media. Not supported: few distinct labels (CU10: 70 texts for 198 tablets), 740 rare (CU15: 44%), animal
 tablets carrying names (CU16: the other way, 36% against 79% for 'Othr'), 'Othr' being more varied (CU17), repeated
 labels having pictures more (CU7). Tally, counting parts: 640 held, 727 failed (1367 registered).
+
+# Ninety-fifth set, registered before testing (24 September 2026): the single stroke '1' (twenty hypotheses)
+
+Sign '1' (value 1, short) keeps turning up outside counting: after the heading 820, after mid-line 740, as a 520-class
+head. Distinct lines (A + B) unless stated; comparisons against the short numerals '2' and '3' (their tokens). F for
+object and site tests. 10,000-draw permutations; p < 0.05.
+
+- **ON1** '1' is directly followed by a non-numeral less often than '2' and '3'.
+- **ON2** '1' is line-final more often than '2' and '3'.
+- **ON3** '1' directly follows 740 or 520 more often than '2' and '3'.
+- **ON4** 90%+ of 'heading + 1' are '820 1'.
+- **ON5** 70%+ of '1' tokens are preceded by a non-numeral.
+- **ON6** The sign before '1' is a name head more often than the sign before '2' or '3'.
+- **ON7** Bodies ending in '1' take 520 more often than bodies ending in another numeral.
+- **ON8** Five signs cover 50%+ of the non-numerals after '1'.
+- **ON9** '1' tokens are on seals more often than '2' and '3' tokens (F).
+- **ON10** '1' is a larger share of numeral tokens at Mohenjo-daro than at Harappa (F).
+- **ON11** '1' stands inside a name body more often than '2' and '3'.
+- **ON12** Under 5% of '1' tokens begin a line.
+- **ON13** '1' stands next to another numeral less often than '2' and '3'.
+- **ON14** After a medial 740, '1' is followed by the line end within two signs in 70%+.
+- **ON15** The sign after '1' depends on the sign before it (MI).
+- **ON16** Lines with '1' are on one object only more often than lines with '2' or '3' (F).
+- **ON17** Signs counted with '1' and signs counted with '2' overlap in at most 30% of their types.
+- **ON18** B: ON2 holds.
+- **ON19** B: ON3 holds.
+- **ON20** In formulas, 50%+ of '1' tokens directly precede a non-numeral.
