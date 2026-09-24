@@ -107,3 +107,40 @@ def _parse(t, heads, rules):
 def coverage(lines, heads, rules=ALL_RULES):
     ls = list(lines)
     return sum(parse(t, heads, rules) is not None for t in ls) / max(1, len(ls))
+
+
+# Set 193: G2, a stricter grammar, and the G margin (real lines parsed minus shuffled lines parsed).
+G2_RULES = ALL_RULES + ('short', 'one', 'u')
+
+
+def head_stats(lines):
+    from collections import Counter
+    hc, mc = Counter(), Counter()
+    for t in lines:
+        nm = R.name_of(list(t))
+        if nm and nm[0]:
+            hc[nm[0][-1]] += 1
+            for g in nm[0][:-1]:
+                mc[g] += 1
+    return hc, mc
+
+
+def parse2(t, heads, hc, mc):
+    lab = parse(t, heads, G2_RULES)
+    if lab == 'bare':
+        b = [g for g in t if g not in ('400', '90')]
+        if not (hc[b[-1]] >= 5 and hc[b[-1]] > mc[b[-1]]):
+            return None
+    return lab
+
+
+def shuffled(lines, n=20, seed=192):
+    import random
+    rnd = random.Random(seed)
+    return [tuple(rnd.sample(t, len(t))) for _ in range(n) for t in lines]
+
+
+def margin(lines, f):
+    ls = list(lines)
+    sh = shuffled(ls)
+    return sum(f(t) for t in ls) / max(1, len(ls)) - sum(f(t) for t in sh) / max(1, len(sh))
