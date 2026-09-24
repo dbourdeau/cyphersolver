@@ -1142,6 +1142,15 @@ seal-holders (J1: 76% of matches at Harappa against 17% of seal names) who are p
 heading (J12, J13). Count tokens shift from incised to moulded over time (J16); other-animal seals carry more numerals
 (J20). J21 invalid (the heading contains the stroke pair). Tally 145 held, 217 failed.
 
+## Forty-fourth pass (24 Sept 2026): the Harappa system in detail
+
+Registered first (PREDICTIONS.md, thirtieth set, 9a7a91f7d), tested (`predict_test30.py`). Receipts lie near the seals
+of the people they name (HA1); moulded name tablets are a different genre (HA5); a receipt head is shared by several
+seal-holders (HA3). **Correction: the receipt number stands inside the name, never directly before it (HA6, 0 of 19):
+it is a name idiom, not a count.** Moulded tokens count less (HA11). Headed stroke-pair fish names are mostly 740
+(HA15 reverse). Other-animal seals: more 520 names, shorter names (HA16, HA17). Copper tablets: never headed, all
+Mohenjo-daro (HA20, HA21); small objects carry labels (HA22). Tally 154 held, 233 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

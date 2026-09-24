@@ -1883,3 +1883,40 @@ Seals, direction, labels
 - **HA21** 90%+ of copper tablets come from Mohenjo-daro (A).
 - **HA22** Texts on rods, bangles and miscellaneous objects (ROD, BNGL, MISC) carry an ending less often than seal texts,
   length-stratified (F).
+
+## Results of the thirtieth set (added after the test; `predict_test30.py`, `results/predict_test30.md`)
+
+Nine held, sixteen failed.
+
+**Receipts and seals.**
+- **HA1 holds**: a receipt lies closer in depth to the Harappa seals whose names end in its name (median 5.5 ft) than
+  to random Harappa seals (p = 0.0009): receipts and the seals of the people they name were buried near each other.
+  HA2 fails narrowly (same level 50%, p = 0.056).
+- **HA5 holds**: moulded tablets with a name match a Harappa seal name far less than receipts do (21.5% against 50.6%):
+  the moulded name tablets are another genre. HA4 fails narrowly (incised name tablets without 400 match 36.9%, p =
+  0.052).
+- **HA3 holds** (half of the receipt heads end 3+ different seal names: a head is shared by several seal-holders, so a
+  receipt name alone does not pick out one person). HA10 fails (receipt heads are the last sign in only 48% of their
+  seal-name occurrences).
+- **HA6 fails, and corrects the receipt picture**: on none of the 19 receipts with a number does the number stand
+  directly before the name body; it stands inside it. The receipt's 'number' is part of the name (a numeral idiom, J7,
+  J8), not a separate count. The receipt format is '[name, which may contain a numeral idiom]-740 400'.
+- HA24, HA25, HA13 fail.
+
+**Idioms.** HA7 fails narrowly (the commonest value is the same on seals and tablets for 10 of 14 shared signs, 71%,
+bar 75%), HA8 fails (numerals do not open names more than chance), HA9 fails (numeral + fish is not a whole name more
+than numeral + another sign).
+
+**Tokens.** **HA11 holds**: moulded count tokens carry smaller values than incised ones (by 0.32, p = 0.0003). HA12
+fails (moulded texts do not come in more copies per text).
+
+**Titles.** HA14 fails, HA15 fails the other way: headed stroke-pair fish names take 520 in only 19% (13 of 68). The
+L11 / E12 picture (stroke-pair fish take 520; they carry the heading) holds for each part separately but not for their
+combination: headed stroke-pair fish names are mostly 740 names.
+
+**Seals and labels.** **HA16 holds** (other-animal seals carry 520 names more: 24.4% against 17.3%, p = 0.040) and **HA17
+holds** (their names are shorter, p = 0.0001). **HA20 holds** (no copper-tablet line carries the heading: 0 of 133,
+against 20% of seal lines), **HA21 holds** (148 of 149 copper tablets are from Mohenjo-daro), **HA22 holds** (rods,
+bangles and miscellaneous objects carry an ending 27 points less than seals: labels). HA23, HA18, HA19 fail.
+
+Tally, counting parts: 154 held, 233 failed (387 registered).
