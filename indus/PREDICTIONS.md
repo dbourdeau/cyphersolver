@@ -6071,3 +6071,22 @@ texts are shorter at both cities (PH9, PH10). The 520-steatite link holds at Moh
 Harappa (PH7: 14% both), and at Mohenjo-daro the non-steatite names are mostly copper-tablet labels, which are almost all
 740; so the hundred-and-thirtieth set's MS8 mainly reflects copper labels, not a steatite preference. Tally, counting
 parts: 1027 held, 984 failed (2011 registered).
+
+# Hundred-and-thirty-fourth set, registered before testing (24 September 2026): our genres against ICIT's text codes (ten hypotheses)
+
+ICIT field 25 holds a text code per object (SS, SC, VN, MT, IT, SP, LP, NU, TS, LC, 2L, MS, ...), apparently the
+database's own classification of the inscription; it is derived from the texts, so agreement is a validation of our
+genres against an independent classifier, not new evidence about the script. Seen before registering: VN lines are
+almost all our counts, NU lines are mostly potsherd graffiti. Lines of F objects; genres as in the hundred-and-eighth
+set. Thresholds as stated.
+
+- **IC1** Normalised agreement: MI(field 25, genre) / H(genre) is 0.3+.
+- **IC2** 90%+ of VN lines are our counts.
+- **IC3** 70%+ of LP, IT, SP and MT lines together are our names.
+- **IC4** 80%+ of NU lines are made of numerals only.
+- **IC5** 80%+ of TS lines are single signs.
+- **IC6** 60%+ of LC lines are our counts.
+- **IC7** 90%+ of 2L objects have two or more lines.
+- **IC8** No single ICIT code holds 50%+ of our closer lines (the closer inscriptions are not an ICIT category).
+- **IC9** 50%+ of our bare lines are coded SC.
+- **IC10** No single genre holds 70%+ of SS lines.
