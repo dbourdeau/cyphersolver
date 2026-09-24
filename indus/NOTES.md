@@ -2313,6 +2313,13 @@ another fish 40% against 15%), bar / roof / whisker fish are less often heads th
 agrees with the preceding sign and the counted value. With the cage (loop 9): one fish word written with marks for
 head, attribute and closing forms. Metric unchanged. Tally 1258 held, 1180 failed.
 
+## Two-hundredth pass (24 Sept 2026): decipherment loop 11, the strokes inside the jar
+
+Registered first (378570453). The plain jar 740 ends 88% of lines; with one, two or three strokes inside (741, 742,
+745) it ends 3% (A) and 14% (B): the inner strokes turn the ending into an internal name element, mostly on seals, and
+the inner stroke is not a stroke written after the jar. A third job-changing mark after the cage and the fish marks.
+Progress (new, replicated); streak 0. Tally 1263 held, 1183 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

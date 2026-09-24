@@ -7980,3 +7980,15 @@ where stated. 'Final' = last sign or followed only by 400 / 90.
 - **JV7** 741 and '740 1' (the jar followed by a single stroke) stand in the same frames more than random sign pairs of
   similar frequency (the stroke inside = a stroke after).
 - **JV8** Progress rule: at least one of JV1/JV3 holds with a same-direction replication on B.
+
+## Results of the hundred-and-eighty-sixth set (added after the test; `predict_test186.py`, `results/predict_test186.md`)
+
+Five held, three failed. **The strokes inside the jar turn the ending into a name element.** The plain jar 740 ends
+the line in 88% of its tokens; the stroked jars 741, 742, 745 in 3% (JV1, A) and 14% (JV2, B). They are occasionally
+followed by an ending themselves (JV3: 1.0% against 0.1%, p = 0.02) and are preceded by a numeral less often (JV4:
+4.2% against 7.1%). They belong to seals more than the plain jar does (JV6 fails the other way: 20% on tablets
+against 42%). The three stroke counts are not graded (JV5: final 0.86, 0.07, 0.12, 0.06), and 741 does not stand where
+'740 1' stands (JV7: no shared frame), so the inner stroke is not a stroke written after the jar. Reading, with loops
+9-10: a third mark that changes a sign's job, here turning the commonest ending into an internal element of the
+name; the script marks grammatical function by strokes and cages drawn onto a base sign. JV8 (progress rule) holds:
+new and replicated on B. Tally, counting parts: 1263 held, 1183 failed (2446 registered).
