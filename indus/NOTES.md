@@ -1731,6 +1731,12 @@ Registered first (hundred-and-eighth set, 9f09dec3f), tested (`predict_test108.p
 (only 15% of common signs are genre-bound, mostly name signs) and are defined by their frames: the last sign predicts
 the genre far better than the first. Object and city shift the mix only slightly. Tally 796 held, 851 failed.
 
+## Hundred-and-twenty-third pass (24 Sept 2026): the bare-line closers
+
+Registered first (hundred-and-ninth set, 86fc334b7), tested (`predict_test109.py`). No single closer class: 368 is a
+seal sign that also fills the heading slot (after 817/861), 390 a seal sign counted 3+, 615 the doubled sign, and bare
+400 a different sign-use from post-name 400 (disjoint predecessors). Tally 804 held, 863 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -5185,3 +5185,15 @@ copper (F') for object and site tests, F with copper where stated. 10,000-draw p
 - **BC18** B: BC1 holds.
 - **BC19** B: BC4 holds.
 - **BC20** F': BC12 holds.
+
+## Results of the hundred-and-ninth set (added after the test; `predict_test109.py`, `results/predict_test109.md`)
+
+Eight held, twelve failed. The bare-line closers are not one class; each has its own use. 368 is a seal sign (BC7: 82%
+of its lines) that follows a heading sign in 28% of tokens (BC9; the '817/861 + 368' heading variant of the
+eighty-ninth set) and otherwise takes words 740 does not take (BC8: Jaccard 0.14); it is line-final in only 34% (BC1;
+B 42%, BC18) and not Mohenjo-daran (BC17). 390 is a seal sign (BC11: 81%) counted with 3 or more when counted (BC10: 61
+of 67), though it follows a numeral in only 30% of tokens (BC2). 615 is the doubled sign (BC4: 75% next to another 615;
+BC19 in B: 72%), medial in 61% (BC12; F' 64%, BC20), and not more numerical (BC13). Bare 400 is a different 400 from the
+post-name 400: they follow almost disjoint sets of signs (BC15: Jaccard 0.09); bare 400 follows many signs (BC14: top
+four 156, 90, 158, 400 cover 22%), a name head in 45% (BC5), and is on tablets in only half its lines (BC6). 595 does not
+follow 95 (BC3) and is not a copper word (BC16: 12%). Tally, counting parts: 804 held, 863 failed (1667 registered).
