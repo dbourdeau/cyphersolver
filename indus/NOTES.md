@@ -2444,6 +2444,12 @@ Registered first (f1d05e3e4). No substantial published key beats its shuffles in
 12/100, Yajnadevam 7/100, Parpola and Mahadevan worse than shuffles). Kak 1988's 7-sign key passes only through 740 =
 sa at line ends (without it 254/1000). Counted no progress: streak 1. Tally 1336 held, 1232 failed.
 
+## Two-hundred-and-twenty-first pass (24 Sept 2026): decipherment loop 32, blind key fitting on Linear B
+
+Registered first (6db5d3eab). Fitted freely per language, Linear B fits Sanskrit best (Greek last on seed 1, third on
+seed 2), 0 of 30 Ventris values recovered: free fitting cannot identify a language, so 'fits Dravidian / Sanskrit'
+claims are not evidence. Gate: 2 of 5 methods pass. No progress: streak 2. Tally 1337 held, 1237 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

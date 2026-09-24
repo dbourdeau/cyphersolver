@@ -8636,3 +8636,16 @@ whose signs are shuffled within each line (seed 0). Gain = held-out score on rea
 - **KF4** With a second seed (2), Greek again has the largest gain.
 - **KF5** Every language's gain is positive (real order carries something any model can use).
 - **KF6** Progress rule: KF1 and KF4 hold (blind fitting identifies the known language; a gate for tier 2 and L).
+
+## Results of the two-hundred-and-seventh set (added after the test; `predict_test207.py`, `results/predict_test207.md`, `keyfit.py`)
+
+One held, five failed. Fitted blind, with the same freedom for every language, Linear B fits **Sanskrit** best:
+held-out gain over the shuffled-line control Sanskrit 0.361, Dravidian 0.197, Sumerian 0.195, Greek 0.024 bits/char
+(seed 1; KF1, KF2 fail); seed 2 Sanskrit 0.328, Dravidian 0.247, Greek 0.216, Sumerian 0.157 (KF4 fails). The fitted
+Greek key gives Ventris's value to 0 of the 30 commonest signs (KF3 fails). Every language gains from real order
+(KF5). **Reading:** free key fitting rewards the most accommodating language model (a large lexicon of regular
+consonant-vowel syllables), not the right language, even on a script whose answer is known. This is the trap in
+measured form: a claim that the Indus script 'fits Dravidian' or 'fits Sanskrit' after fitting values freely is not
+evidence for either, since the same procedure makes Mycenaean Greek look like Sanskrit. Prize tier 2: blind fitting
+recorded as failing the gate (2 of 5 methods pass). No progress: streak 2. Tally, counting parts: 1337 held, 1237
+failed (2574 registered).

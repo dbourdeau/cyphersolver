@@ -21,6 +21,8 @@ from famlm import M3, fit3
 GATE = {'character-LM key scorer (set 205, lmkey.py)': "passed: Ventris's Linear B key beats 100 of 100 shuffles on held-out "
                                                       'lines with a Greek model; 9 of 100 shuffles as good with a Sanskrit model',
         'substitution-phonetics test (set 179)': 'passed: recovers Linear B syllable pairs as Greek-phonetic, p = 0.001',
+        'blind key fitting per language (set 207, keyfit.py)': 'failed: fitted freely, Linear B fits Sanskrit best '
+                                                               '(Greek last / third; 0 of 30 Ventris values recovered)',
         'world rebus search (set 181)': 'no Linear B control run',
         'published sign-value keys (key bench, sets 115, 135)': "failed: on Linear B, Ventris's values beat their shuffles in "
                                                                  'only 59-89% (linb_control.md: 11-41 of 100 shuffles as good)'}
