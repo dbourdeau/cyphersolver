@@ -8336,6 +8336,9 @@ and head share while the candidates stay close together; this does not choose be
 typology-matched decoys inside the compatible fifth (Japanese, Turkish) fit the Indus names worse than both South Asian
 candidates. Progress by the registered rule: streak 0. Tally, counting parts: 1308 held, 1207 failed (2515 registered).
 
+**Qualified by set 198**: with genre held to name lists on both sides, the decoy Japanese ranks nearest; the
+candidate advantage above was genre.
+
 # Hundred-and-ninety-eighth set, registered before testing (24 September 2026): decipherment loop 23, the genre control for set 197 (five hypotheses)
 
 Metric after loop 22: S 4.697, R 81.3%, M 16.6% (M+ 41.4%), G margin A 46.2 / B 34.7, P 0, L 4, L world 81.3% / 68.3%;
@@ -8350,3 +8353,15 @@ measures, rarefaction, distances and mean-rank rule as set 197.
 - **GC3** Sanskrit (dictionary) names rank nearer than Japanese (dictionary) names.
 - **GC4** The nearest of the four is the same in both random halves of the Indus names (seed 198).
 - **GC5** Progress rule: GC1 and GC4 hold (the candidate advantage survives the genre control and replicates).
+
+## Results of the hundred-and-ninety-eighth set (added after the test; `predict_test198.py`, `results/predict_test198.md`)
+
+One held, four failed. (The first run stopped on a sampling error, the rarefaction size exceeding one half of the Indus
+names; the size was capped at the smaller half, the same size for every comparison as registered, and rerun: 309.) With
+genre held to name lists on both sides, the order is Japanese (mean rank 1.50), Sanskrit from Monier-Williams (2.00),
+the Sangam poets' names (3.00), Turkish (3.50) (GC1-GC3 fail), the same in both halves (GC4). **This overturns the
+language reading of set 197**: the candidates' advantage there came from genre (inscriptional donor names against
+dictionary lists), not language. Name-structure statistics of this kind do not discriminate between languages inside
+the compatible fifth; the typology-matched decoy Japanese fits as well as or better than the candidates. The progress
+rule fails: streak 1. Set 197 stays recorded as held by its rule, qualified by this control. Tally, counting parts:
+1309 held, 1211 failed (2520 registered).

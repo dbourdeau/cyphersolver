@@ -26,7 +26,8 @@ makes the texts more predictable) and M rising.
 
 The loops continue until 20 consecutive loops make no progress. A loop counts as progress if a metric component
 improves, or if a new (non-replication) finding holds and is replicated on a held-out sample within the same loop.
-The 'streak' column counts consecutive loops without progress.
+The 'streak' column counts consecutive loops without progress. Revised by the owner after loop 23 (24 September
+2026): the loops continue until 10 consecutive loops make zero progress.
 
 ## Log
 
@@ -56,3 +57,4 @@ The 'streak' column counts consecutive loops without progress.
 | 20 | 195 | 4.697 (25.2%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | L bench: the Indus profile excludes 81% of WALS genera, 56% of Grambank families; strict coding drops some candidate languages, so the component is not adopted (no progress; streak 1) |
 | 21 | 196 | 4.697 (25.2%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | L world enters: the Indus profile excludes 81.3% of WALS genera (Grambank 68.3% of families), both candidates kept; fish/520 class signal holds at Mohenjo-daro, Harappa and elsewhere (progress; streak 0) |
 | 22 | 197 | 4.697 (25.2%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | typology-matched decoys (Japanese, Turkish) fit Indus name structure worse than both South Asian candidates; Prakrit nearest, replicated on halves; genre caveat (progress; streak 0) |
+| 23 | 198 | 4.697 (25.2%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | genre control: with name lists on both sides, the Japanese decoy is nearest the Indus names; loop 22's candidate advantage was genre (no progress; streak 1) |

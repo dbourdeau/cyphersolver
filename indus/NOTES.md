@@ -2389,6 +2389,13 @@ Japanese and Turkish and the controls (Linear B, Ur III) rank below both candida
 confound noted (donor inscriptions vs modern given names; Ur III seal names rank fifth). Progress: streak 0. Tally 1308
 held, 1207 failed.
 
+## Two-hundred-and-twelfth pass (24 Sept 2026): decipherment loop 23, the genre control
+
+Registered first (34588e2db). With name lists on both sides, Japanese is nearest the Indus names (Sanskrit MW second,
+Sangam third, Turkish last), same in both halves: set 197's candidate advantage was genre. Name structure does not
+discriminate languages. No progress: streak 1. Stopping rule revised by the owner: 10 consecutive no-progress loops.
+Tally 1309 held, 1211 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
