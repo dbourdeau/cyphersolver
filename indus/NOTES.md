@@ -1403,6 +1403,21 @@ Registered first (sixty-fifth set, 6cd622b18), tested (`predict_test65.py`). Mou
 text and picture go together (same text, same picture); otherwise their texts resemble incised ones. The motif field
 stores 'None' as a string: fixed here; earlier sets reading it need an audit.
 
+## Eightieth pass (24 Sept 2026): replicating loop 3 (loop 3, round 10)
+
+Registered first (sixty-sixth set, 89d874502), tested (`predict_test66.py`). The fish series, the two-sign units and
+text-picture pairing replicate on held-out data; the optional heading, headed seals at the smaller sites and reversed
+count tokens (none in A) do not. Tally 377 held, 450 failed.
+
+Summary of loop 3 (sets 57-66, 100 hypotheses): 51 held. What stands up: (1) the fish series is a stackable,
+context-chosen, often counted set of name qualifiers; (2) names are largely built from about a hundred recurring
+two-sign units, many standing alone as short names; (3) context recovers broad sign classes (fish, numerals, heads,
+look-alikes), not sign-level identities, and rare signs cannot be matched to common ones; (4) 700 is a count sign
+only, values 2-4; (5) on tablets the text goes with the picture, on moulded and incised alike. Withdrawn or weakened:
+the alternative closers of the fifty-fifth set, and the reversed count tokens as an object feature. A motif-field bug
+('None' read as a motif) was found and fixed in the sixty-fifth set; earlier sets need an audit. Still structure
+only; no sound values.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

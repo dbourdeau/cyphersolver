@@ -3267,3 +3267,15 @@ computed within the held-out data; thresholds scaled only where stated. p < 0.05
 - **RX8** (HD5) At other sites, seal lines are headed more often than tablet and other lines, length-stratified.
 - **RX9** (MT7) On incised tablets with a motif, same-text pairs share the motif more than shuffled motifs give.
 - **RX10** (DR1) In A's line order, the '700 + numeral' form is a larger share of count tokens on TAB:B than on TAB:I.
+
+## Results of the sixty-sixth set (added after the test; `predict_test66.py`, `results/predict_test66.md`)
+
+Seven held, three failed. The fish findings replicate in Mahadevan's transcription: different fish stack (RX1: 43
+pairs, p = 0.001), fish are counted more (RX2: 12% against 8%), the preceding sign picks the fish (RX3, p = 0.0001), and
+fish signs share contexts (RX6: 5 signs, p = 0.0001). Two-sign units cover more of B's bodies than shuffles give (RX4:
+0.36, p = 0.001) and half stand alone as names (RX5: 18 of 38). Same text, same picture holds on incised tablets too
+(RX9: 114 pairs, p = 0.0001), so it is not a moulding artefact. Not replicated: the optional heading in B (RX7: 22%
+under 30%); headed seal lines at the smaller sites (RX8: -8.7 points, the other way); and reversed count tokens in A
+(RX10: none of A's 30 count tokens is reversed). A's transcription appears to normalise direction, so the TAB:B
+reversal of the sixty-fourth set may be an ICIT data-entry pattern rather than a feature of the objects. Tally,
+counting parts: 377 held, 450 failed (827 registered).
