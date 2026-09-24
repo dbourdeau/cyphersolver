@@ -216,3 +216,18 @@ def tam_records():
                 if re.search('[ṉṇḷḻṟṭṅñāīūēō]', w) and re.search(r'(aṉ|āṉ|ār|ar|i|ai|aḷ)$', w) and not TAM_PLACE.search(w):
                     out.append((w, rep))
     return out
+
+
+def tb_names():
+    """Tamil-Brahmi personal names (cave-bed donors, c. 2nd century BCE - 4th century CE) from Mahadevan, Early Tamil
+    Epigraphy (2003), Appendix II, transcribed by eye from the scan (lang/ete_personal_names.tsv). Returns (full name,
+    personal name = last word with hyphens and paragogic -y/-i joins removed, fem)."""
+    out = []
+    for ln in open(os.path.join(SP, 'lang', 'ete_personal_names.tsv'), encoding='utf-8'):
+        if ln.startswith('#') or ln.startswith('name\t'):
+            continue
+        p = ln.rstrip('\n').split('\t')
+        if len(p) >= 2 and p[0]:
+            last = p[0].split()[-1].replace('-', '')
+            out.append((p[0], last, p[1] == '1'))
+    return out

@@ -7575,3 +7575,28 @@ carry the suffix; aksharas are not Indus signs; both lists carry extraction nois
 Sumerian-type name structure is excluded; between Indo-Aryan and Dravidian, Indus names share the 'modifier + stock
 head' build of early Prakrit donor names and the length and single dominant suffix of Tamil names; the language is
 not decided by name structure. Tally, counting parts: 1217 held, 1137 failed (2354 registered).
+
+# Hundred-and-seventy-fifth set, registered before testing (24 September 2026): contemporary Tamil-Brahmi donor names (ten hypotheses)
+
+The owner found and supplied the route to a contemporary Dravidian donor list: the page scans of I. Mahadevan, *Early
+Tamil Epigraphy* (2003) at the Internet Archive. Its Appendix II (Index to Personal Names, pp. 656-658) was
+transcribed by eye from the scans (107 full names from the cave-bed donor inscriptions, c. 2nd century BCE - 4th
+century CE; the OCR is unusable). Personal name = the last word of each full name (hyphens and paragogic joins
+removed), as the Prakrit list takes the donor's own name; aksharas as set 174. This is the same period, region and
+genre as the Prakrit donor names of set 173. The list is small, so no capture-recapture; structure tests only, with
+rarefaction to the smallest list. Prakrit = set 173's names; Tamil records = set 174's.
+
+- **TB1** Tamil-Brahmi names close the last element: R < 1.
+- **TB2** On a log scale the Indus R is closer to the Prakrit R than to the Tamil-Brahmi R.
+- **TB3** The Indus body length distribution is closer (JSD) to the Prakrit names than to the Tamil-Brahmi names.
+- **TB4** The ten commonest final two-akshara endings of Tamil-Brahmi names cover a share within 0.15 of the Indus
+  top-ten head share.
+- **TB5** The Indus top-ten head share is closer to the Prakrit share than to the Tamil-Brahmi share.
+- **TB6** The commonest final akshara of Tamil-Brahmi names (expected -ṉ) covers a share closer to 740's share of Indus
+  names than the commonest final of the Prakrit names does.
+- **TB7** The mean Tamil-Brahmi name length (aksharas) is within 1 of the Indus body mean (signs).
+- **TB8** Of TB2, TB3 and TB5, at least two favour the Prakrit names.
+- **TB9** Tamil naming is stable over time: the -ṉ share of Tamil-Brahmi names is within 0.15 of the Tamil record
+  names' share (set 174).
+- **TB10** At the same period the two languages' donor names are distinguishable on the dominant final: the
+  Tamil-Brahmi and Prakrit commonest-final shares differ by more than 0.2.
