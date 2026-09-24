@@ -3429,3 +3429,21 @@ Inside the one-off names
 - **PN18** In one-off names of 3+, the first sign is rare (5 or fewer tokens in F) more often than the head is.
 - **PN19** Harappa heads are less varied than Mohenjo-daro heads (entropy, label permutation).
 - **PN20** A larger share of distinct names repeats (2+ objects) at Harappa than at Mohenjo-daro.
+
+## Results of the seventieth set (added after the test; `predict_test70.py`, `results/predict_test70.md`)
+
+Twelve held, eight failed. The strongest new result is PN11: 74% of 520 names contain a fish sign against 37% of 740
+names (171 of 230 against 452 of 1,228), so the 520 ending goes with fish-series names. Name stocks are local down to
+their parts: one-off names share stock units with one-offs of their own city more than city-shuffles give (PN5: p =
+0.003), and within one site identical seal texts share their picture (PN3: 16 pairs, p = 0.009; across sites the
+sixty-seventh set's TP1 was p = 0.07). Seal names are the individual ones: 86% of names on seals are one-off against
+54% off seals (PN13), seal names are longer than names elsewhere (PN12: 3.7 against 2.8), also at Harappa alone (PN15),
+and Harappa repeats its names more (PN20: 35% against 20%). Inside one-off names, the head is a common head (PN17:
+82% head 5+ names) and the rare part stands first (PN18: rare first sign 14% against rare head 6%): an individual
+element in front of a common head. Counted fish are a little more Mohenjo-daran (PN8: 13% against 10%, p = 0.049).
+PN6 and PN7 (names with a numeral or fish are longer) hold but follow largely from the extra sign. Failures: repeated
+Harappa names do not keep to one period (PN1: 20 of 44), opening pairs travel between cities less than closing pairs
+(PN2: 10% against 19%, the reverse), the commonest names are not mostly Harappan (PN4: 57%), 520 names are not shorter
+at Harappa (PN9), doubles are not Mohenjo-daran (PN10), tablet names are not more often seal names than pot names are
+(PN14), headed names are not more often unique (PN16, p = 0.057), and Harappa heads are not less varied (PN19).
+Tally, counting parts: 411 held, 476 failed (887 registered).

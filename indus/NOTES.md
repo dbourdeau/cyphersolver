@@ -1438,6 +1438,13 @@ site, cited names local to the citing formula. 'A name ending in a name' is not 
 shorter, with fewer numerals and slightly more 520; counted fish are mostly 2; unicorn seals carry pure names more
 often. Tally 399 held, 468 failed.
 
+## Eighty-fourth pass (24 Sept 2026): the local name stocks
+
+Registered first (seventieth set, b6cb4a74f), tested (`predict_test70.py`). 520 names are fish names (74% against 37%
+of 740 names). One-off names pair a rare first element with a common head, draw on their own city's units, and live on
+seals; repeated names are short and off the seals, especially at Harappa. Closing pairs are shared between the cities
+more than opening pairs. Tally 411 held, 476 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
