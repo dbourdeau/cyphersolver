@@ -7235,3 +7235,18 @@ registered). Gujarat openers are not closer to Harappa (CV9); Kalibangan's are m
 **This corrects set 164's reading**: the rise of frequent openers at Mohenjo-daro is a local change in how names
 begin, not convergence on Harappa; 'converge on Harappa's openings' in set 164 should read 'shift towards frequent
 openings, which Harappa also used'. Tally, counting parts: 1171 held, 1097 failed (2268 registered).
+
+## Results of the hundred-and-sixty-sixth set (added after the test; `predict_test166.py`, `results/predict_test166.md`)
+
+Two held, eight failed. Fifteen names occur at three or more sites (RN4 holds), e.g. '590 390 740' at five sites
+(Allahdino, Chanhu-daro, Dholavira, Harappa, Mohenjo-daro), '13 840 740' at four, and the closing formulas '705 / 706
+33 520' at three; but the names shared between the two cities are almost never fish names (RN1: 1 of 20), recurring
+names are 520 names no more often than single ones (RN2: 19% against 18%), and **520 names reach fewer sites than 740
+names on the same number of seals, not more** (RN3 fails the other way: 15 more, 111 fewer). With LM8, the 520 names
+recur beyond combinatorics because they are short and few, not because they travel. Name sharing does not fall with
+distance over the five sites with 10+ names (RN5: Spearman 0.05), shared names are not especially on unicorn seals
+(RN6), and **seals with the same name carry the same motif no more often than random seals** (RN7: 12% against 11%):
+a name is not tied to its seal's animal. Recurring 520 names are not more on tablets (RN8). The controls split: Ur III
+owner names shared by Umma and Girsu are shorter (RN10: 8.1 against 9.2 characters, p = 0.0001), as Indus shared
+names are (CR6), while Linear B shared persons are not (RN9). Tally, counting parts: 1173 held, 1105 failed (2278
+registered).

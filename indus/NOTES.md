@@ -2166,6 +2166,13 @@ move towards Harappa from early to late, and the rising openers are not specific
 slightly. Set 164's 'converges on Harappa' is corrected to a local shift towards frequent openings. Tally 1171 held,
 1097 failed.
 
+## Hundred-and-eightieth pass (24 Sept 2026): the names that recur
+
+Registered first (bfebc0d63). Fifteen names occur at 3+ sites ('590 390 740' at five), but shared names are not fish
+names, 520 names reach fewer sites than matched 740 names, sharing does not fall with distance (five sites), and
+same-name seals do not share a motif beyond chance: the name is independent of the seal's animal. Ur III shared owners
+are shorter, as Indus shared names are; Linear B shared persons are not. Tally 1173 held, 1105 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
