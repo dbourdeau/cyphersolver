@@ -231,3 +231,56 @@ def tb_names():
             last = p[0].split()[-1].replace('-', '')
             out.append((p[0], last, p[1] == '1'))
     return out
+
+
+def _hira(s):
+    return ''.join(chr(ord(c) - 0x60) if 'ァ' <= c <= 'ヶ' else c for c in s)
+
+
+def mora(r):
+    out = []
+    for c in _hira(r):
+        if c in 'ゃゅょぁぃぅぇぉゎ' and out:
+            out[-1] += c
+        elif 'ぁ' <= c <= 'ゖ' or c in 'ー':
+            out.append(c)
+    return tuple(out)
+
+
+def jp_names():
+    """Japanese given names, JMnedict (EDRDG, CC BY-SA 4.0; lang/decoy/JMnedict.xml.gz): entries typed masc / fem,
+    first kana reading, elements = morae. Returns (morae, fem)."""
+    import gzip
+    txt = gzip.open(os.path.join(SP, 'decoy', 'JMnedict.xml.gz'), 'rt', encoding='utf-8').read()
+    out = set()
+    for e in re.findall(r'<entry>(.*?)</entry>', txt, re.S):
+        t = re.findall(r'<name_type>&(\w+);</name_type>', e)
+        if 'masc' in t or 'fem' in t:
+            r = re.search(r'<reb>(.*?)</reb>', e)
+            if r:
+                m = mora(r.group(1))
+                if m:
+                    out.add((m, 'fem' in t))
+    return sorted(out)
+
+
+def tr_syl(w):
+    w = w.lower().replace('i̇', 'i')
+    s = re.findall(r'[^aeıioöuü]*[aeıioöuü]', w)
+    tail = re.sub(r'.*[aeıioöuü]', '', w)
+    if s and tail:
+        s[-1] += tail
+    return tuple(s)
+
+
+def tr_names(minc=100):
+    """Turkish given names with their 2009 counts (github eoner/turkce_isimler; decoy/turkce_isimler), names borne by
+    minc+ people; elements = syllables by vowel. Returns (syllables, fem)."""
+    out = []
+    for fn, fem in (('tr_isim_erkek.csv', False), ('tr_isim_kadin.csv', True)):
+        for r in csv.reader(open(os.path.join(SP, 'decoy', 'turkce_isimler', fn), encoding='utf-8')):
+            if r and r[1].isdigit() and int(r[1]) >= minc and ' ' not in r[0]:
+                s = tr_syl(r[0])
+                if s:
+                    out.append((s, fem))
+    return out

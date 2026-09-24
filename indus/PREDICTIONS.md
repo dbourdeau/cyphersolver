@@ -8302,3 +8302,22 @@ against the rest'. That fits a Dravidian rational/non-rational reading (a tool-h
 person) and equally a Sanskrit-type gender reading (star names are mostly feminine there); it does not separate the
 two. Progress: streak 0; L world enters the metric at 81.3% (WALS) / 68.3% (Grambank). Tally, counting parts: 1303
 held, 1207 failed (2510 registered).
+
+# Hundred-and-ninety-seventh set, registered before testing (24 September 2026): decipherment loop 22, name structure against typology-matched decoys (five hypotheses)
+
+Metric after loop 21: S 4.697, R 81.3%, M 16.6% (M+ 41.4%), G margin A 46.2 / B 34.7, P 0, L 4, L world 81.3% (WALS) /
+68.3% (Grambank); streak 0. The typology leaves about a fifth of the world's genera, including Turkic and Japanese.
+Sets 171-175 compared Indus name structure only with the candidates (Prakrit, Tamil) and excluded languages
+(Sumerian, Linear B Greek). Here two decoys from inside the compatible fifth join: Japanese given names (JMnedict,
+masc/fem entries, morae; 20,081) and Turkish given names (2009 counts, 100+ bearers, syllables; 12,764; many are
+Arabic/Persian loans, a known weakness). Measures as set 175, all rarefied to the same sample size: R (distinct last
+elements / distinct first elements), length distribution (JSD), share of the ten commonest final pairs against the
+Indus ten commonest heads, and dominant final element share against 740's share. Distances: |log ratio| for R, JSD,
+absolute differences for the shares; languages ranked per measure; overall = mean rank. Languages: Tamil-Brahmi,
+Prakrit, Japanese, Turkish, and the controls Ur III Sumerian owners and Linear B persons.
+
+- **DN1** The language nearest the Indus names overall is a candidate (Tamil-Brahmi or Prakrit).
+- **DN2** Both candidates rank nearer than both decoys (Japanese, Turkish).
+- **DN3** Both controls (Sumerian, Linear B) rank below both candidates.
+- **DN4** The nearest language is the same when the Indus names are split at random into two halves (seed 197).
+- **DN5** Progress rule: DN1 and DN4 hold (a nearest language that replicates across halves).
