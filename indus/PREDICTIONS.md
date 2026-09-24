@@ -56,3 +56,15 @@ the fuller ICIT-derived corpus that the ICIT-derived dump lacks (icit_full.py; l
 MI(first) in both samples and the last-sign MI is significant (p < 0.01) while the first-sign excess is smaller;
 Q2 holds if in both samples the non-final-fish rate is under half the fish-final rate and within 10 points of the
 no-fish rate.
+
+## Results of the second set (added after the test; `predict_test2.py`, `results/predict_test2.md`)
+
+- **Q1 holds** in both samples. Mutual information with the ending, excess over permutations: last sign 0.369 bits
+  against first sign 0.113 (discovery), 0.307 against 0.052 (held out). Names sharing their last sign agree in ending
+  88.6% / 95.4% of the time, names sharing their first sign 77.6% / 83.1%.
+- **Q2 holds** in both samples. Taking 520: fish-final names 59.5% / 55.0%; a fish inside the name but not last 9.8% /
+  8.2%; no fish 7.3% / 5.4%.
+- The first correct advance prediction of this project: the class is set by the last element of the name, as in a
+  head-final compound with a class suffix. It counts against head-initial languages (Sumerian, Elamite); it does not
+  separate Dravidian from Indo-Aryan, whose compounds are also head-final. Q1 was partly foreseeable from the known
+  last-sign association; Q2 had not been looked at.
