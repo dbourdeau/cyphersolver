@@ -1466,13 +1466,11 @@ SEARCH_HTML = (
 # "Where" column links to a site page is a write-up (checked against PAGES), any other row is notes only.
 PERIODS = [('1500s', 'to 1599', lambda y: y < 1600), ('1600s', '1600s', lambda y: 1600 <= y < 1700),
            ('1800s', '1700s and 1800s', lambda y: 1700 <= y < 1900), ('1900s', '1900s', lambda y: 1900 <= y < 9000)]
-KINDS = [(M.KEY[m], M.LABEL[m]) for m in M.METHODS] + [('other', 'not yet classified'), ('survey', 'survey')]
+KINDS = [(M.KEY[m], M.LABEL[m]) for m in M.METHODS] + [('active', 'in progress'), ('other', 'not yet classified'), ('survey', 'survey')]
 EXTENTS = [('complete', 'complete'), ('partial', 'partial'), ('none', 'text not obtained')]
 # README section heading, status class, badge text
-README_SECTIONS = [('### Solved', 'solved', 'solved'), ('### Read with', 'solved', 'read'), ('### Explained', 'found', 'explained'),
-                   ('### Partly solved', 'partial', 'partly solved'), ('### Partly read', 'partial', 'partly read'), ('### Found already solved', 'found', 'found solved'),
-                   ('### Attempted and closed', 'stuck', 'attempted'), ('### Offline only', 'offline', 'offline only'),
-                   ('### In progress', 'partial', 'in progress')]
+README_SECTIONS = [(M.SECTION[m], M.status_class(m, 'complete'), M.LABEL[m]) for m in M.METHODS] + \
+                  [('### In progress', 'partial', 'in progress')]
 
 def period_of(y):
     return next((k for k, _, f in PERIODS if f(y)), 'survey')
@@ -1524,10 +1522,12 @@ def readme_notes():
         links = re.findall(r'\]\(([^)\s]+)\)', where)
         if not links: continue
         notes.append(dict(target=md_inline(target), date=html.escape(date, quote=False), y=year_of(date),
-                          result=md_inline(result), url=repo_url(links[0]), st=st[0], stt=st[1], kind='other', extent=''))
+                          result=md_inline(result), url=repo_url(links[0]), st=st[0], stt=st[1], kind='active' if st[1] == 'in progress' else 'other', extent=''))
         folder = links[0].lstrip('./').split('/')[0].lower()
         prof = M.load(PATHS[folder]) if folder in PATHS else None
         out = (prof or {}).get('outcome') or {}
+        if out.get('method') not in M.METHODS and folder in M.PAGE_METHOD:      # famous targets keep no profile
+            out, prof = {'method': M.PAGE_METHOD[folder][0]}, {'outcome': {'method': M.PAGE_METHOD[folder][0]}}
         if out.get('method') in M.METHODS:
             ext = M.extent(prof)
             notes[-1].update(kind=M.KEY[out['method']], extent=ext, st=M.status_class(out['method'], ext),
@@ -2070,3 +2070,6 @@ IMAGES['toulon1803'] = ('toulon1803_lead.jpg', 'R2034, the first five rows of co
 IMAGES['mellon29'] = ('mellon29_lead.jpg', 'Mellon MS 29 f. 2v: the twelve zodiac signs, each followed by &ldquo;se chiama&rdquo; and its name in cipher', 'Beinecke Rare Book and Manuscript Library, Yale University, Mellon MS 29 f. 2v, via Yale Digital Collections')
 IMAGES['mellon136'] = ('mellon136_lead.jpg', 'Mellon MS 136 p. 24: the legend to the plates of the &ldquo;magische Machine&rdquo;, the only page wholly in the secret script', 'Beinecke Rare Book and Manuscript Library, Yale University, Mellon MS 136 p. 24, via Yale Digital Collections')
 IMAGES['moncada1524'] = ('moncada1524_lead.jpg', 'Cipher lines 1&ndash;4; line 2 ends with the passage the 1854 print left as dots: <em>me rogaua que le lleuase a Espa&ntilde;a</em>', 'Biblioteca Nacional de Espa&ntilde;a, MSS/20213/12 f. 1r, via DECODE R1191')
+IMAGES['conti1649'] = ('conti1649_f113r_lines.jpg', 'BnF fr. 3854 f. 113r, the head of no. 41: A Paris ce 26 Mars 1649, and the first lines of the letter cipher mixed with clear words such as Monsieur, choses, comme, Il sera', 'Biblioth&egrave;que nationale de France, fr. 3854 f. 113r, via Gallica (btv1b52520094g)')
+IMAGES['lanssac'] = ('lanssac_f124.jpg', 'BnF fr. 4735 f. 124, the head of Lanssac&rsquo;s letter of 26 April 1573 with three lines of cipher and the decipherer&rsquo;s marginal notes', 'Biblioth&egrave;que nationale de France, fr. 4735 f. 124, via Gallica btv1b9060724s canvas 242')
+IMAGES['vasto1527'] = ('vasto1527_f26r_head.jpg', 'BnF fr. 3022 f. 26r: del Vasto&rsquo;s letter of 27 September 1527 from Ischia, the clear opening and the cipher', 'Biblioth&egrave;que nationale de France, fr. 3022 f. 26r, via Gallica (btv1b90601558, view 51)')

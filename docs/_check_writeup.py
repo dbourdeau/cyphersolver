@@ -294,8 +294,8 @@ def check_slug(slug):
         try: cls = (json.loads(read(ROOT / folder / 'profile.json') or '{}').get('outcome') or {}).get('class')
         except ValueError: cls = None
         if cls == 'read':
-            ok, why = read_bar(folder)
-            item(ok, f'{folder}: "read" meets the read bar (README Conventions)' + ('' if ok else ': ' + '; '.join(why)),
+            meets, why = read_bar(folder)          # not `ok`: that is the result flag item() maintains
+            item(meets, f'{folder}: "read" meets the read bar (README Conventions)' + ('' if meets else ': ' + '; '.join(why)),
                  warn=any(w.startswith('no numeric') for w in why))
     for folder in sorted(folders):
         part, probs, _ = partial_problems(folder)

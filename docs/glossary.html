@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary &mdash; how each cipher was solved, and the terms used</title>
+<meta name="description" content="The outcome categories used on every write-up (how the key or text was obtained, and how much of it) and the cryptologic terms the write-ups use.">
+<link rel="stylesheet" href="style.css?v=20260924a">
+<meta name="date" content="2026-09-24">
+<meta name="last-modified" content="2026-09-24">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp"><h4>Latest</h4><ul><li><a href="potocka1714.html"><span class="st partial">ciphertext-only break &middot; partial</span><b>Potocka and Mniszech to Dunin</b><span class="yr">1714&ndash;16 / undated</span></a></li><li><a href="r4817.html"><span class="st solved">key from external plaintext</span><b>Speculum cipher flyleaf</b><span class="yr">1618 volume; note undated</span></a></li><li><a href="segura1596.html"><span class="st solved">ciphertext-only break</span><b>Segura 1596</b><span class="yr">1596</span></a></li><li><a href="r2276.html"><span class="st partial">known key applied &middot; partial</span><b>Reims 1589</b><span class="yr">1589</span></a></li><li><a href="labbe1582.html"><span class="st stuck">not solved</span><b>L&rsquo;Abb&eacute; to Nevers 1577</b><span class="yr">1577</span></a></li><li><a href="nevers1574.html"><span class="st partial">existing decipherment &middot; partial</span><b>Nevers 1574</b><span class="yr">1574</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><span class="st solved">25</span><b>Ciphertext-only break</b></a></li><li><a href="writeups.html#kind=extpt"><span class="st solved">10</span><b>Key from external plaintext</b></a></li><li><a href="writeups.html#kind=adjpt"><span class="st solved">36</span><b>Key from adjacent plaintext</b></a></li><li><a href="writeups.html#kind=extkey"><span class="st solved">11</span><b>External key matched</b></a></li><li><a href="writeups.html#kind=known"><span class="st solved">72</span><b>Known key applied</b></a></li><li><a href="writeups.html#kind=deciph"><span class="st solved">29</span><b>Existing decipherment</b></a></li><li><a href="writeups.html#kind=notsolved"><span class="st stuck">38</span><b>Not solved</b></a></li><li><a href="writeups.html#kind=na"><span class="st found">13</span><b>Not applicable</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 236 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary class="active">Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html" aria-current="page"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a href="catalogue.html">Catalogue</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <p class="kicker">Reference &middot; outcome methods &middot; terms</p>
+  <h1>Glossary</h1>
+  <p class="sub">Every write-up states two things about its outcome. The <b>method</b> says how the key or the text was obtained. The <b>extent</b> says how much of the text was obtained: complete or partial. The methods follow the categories proposed by George Lasry, with one addition for items that already had a full decipherment.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-24">24 September 2026</time></p>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#methods">Methods</a><a href="#extent-complete-or-partial">Extent</a><a href="#terms">Terms</a></nav>
+<h2 id="methods">Methods</h2>
+<p>The first three are cryptanalysis: the key was recovered here. The next three applied a key or decipherment that already existed; the work was transcription and decipherment. Whether someone had solved an item before, and when that was found, is stated on each write-up.</p>
+<dl class="gloss">
+<dt id="ct"><span class="st solved">ciphertext-only break</span> Key recovered from ciphertext-only</dt>
+<dd>The key was rebuilt from the ciphertext alone: frequencies, solvers, pattern words, the order of the key. No plaintext and no existing key was used. If someone had solved the same text earlier and it was found only afterwards, the write-up says so: an independent re-solution. <a href="writeups.html#kind=ct">25 write-ups &rarr;</a></dd>
+<dt id="extpt"><span class="st solved">key from external plaintext</span> Key recovered based on plaintext from external sources</dt>
+<dd>The key was rebuilt by matching the ciphertext against a plaintext found elsewhere: a printed edition, a calendar of state papers, a copy of the same letter in another archive. <a href="writeups.html#kind=extpt">10 write-ups &rarr;</a></dd>
+<dt id="adjpt"><span class="st solved">key from adjacent plaintext</span> Key recovered based on adjacent plaintext</dt>
+<dd>The key was rebuilt from plaintext next to the ciphertext: a partial decipherment written between the lines or in the margin, clear passages in the same letter, a deciphered copy in the same file. <a href="writeups.html#kind=adjpt">36 write-ups &rarr;</a></dd>
+<dt id="extkey"><span class="st solved">external key matched</span> Read after matching with key from external sources</dt>
+<dd>An existing key that had not been connected with this document (a key for another correspondent or series, a key sheet filed elsewhere) was found to fit, and applied. <a href="writeups.html#kind=extkey">11 write-ups &rarr;</a></dd>
+<dt id="known"><span class="st solved">known key applied</span> Read with known key</dt>
+<dd>The key was already identified for this document or its correspondence (on its archive or DECODE record, published for it, filed with it) and was applied. The work is transcription and decipherment, which is not mechanical when the key is polyphonic or variable-length. <a href="writeups.html#kind=known">72 write-ups &rarr;</a></dd>
+<dt id="deciph"><span class="st solved">existing decipherment</span> Read from existing decipherment</dt>
+<dd>A complete decipherment already existed (between the lines, on a separate copy, or in print). The work was transcribing the cipher and checking the decipherment against it. <a href="writeups.html#kind=deciph">29 write-ups &rarr;</a></dd>
+<dt id="notsolved"><span class="st stuck">not solved</span> Not solved</dt>
+<dd>Attempted; the text was not obtained. What was learned is recorded. <a href="writeups.html#kind=notsolved">38 write-ups &rarr;</a></dd>
+<dt id="na"><span class="st found">not applicable</span> Not applicable</dt>
+<dd>Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached. <a href="writeups.html#kind=na">13 write-ups &rarr;</a></dd>
+</dl>
+
+<h2 id="extent-complete-or-partial">Extent</h2>
+<p><b>Complete</b>: at least 95% of the cipher symbols give sense, every document is covered, and what stays open is scattered code groups or pieces blocked from outside. <b>Partial</b>: anything less; the write-up lists what is open and why.</p>
+
+<h2 id="terms">Terms</h2>
+<dl class="gloss">
+<dt id="cipher">Cipher and code</dt>
+<dd>A cipher replaces letters or syllables with symbols. A code replaces whole words or names with groups taken from a list (a codebook). Most early-modern diplomatic keys mix the two.</dd>
+<dt id="nomenclator">Nomenclator</dt>
+<dd>The usual early-modern key: a cipher alphabet, often homophonic, plus a list of code groups for names, titles and common words, and sometimes nulls.</dd>
+<dt id="substitution">Simple substitution</dt>
+<dd>Each plaintext letter always becomes the same one symbol.</dd>
+<dt id="homophonic">Homophonic</dt>
+<dd>A plaintext letter can be written with any of several symbols (its homophones), to flatten the letter frequencies. Decryption is still unambiguous.</dd>
+<dt id="polyphonic">Polyphonic</dt>
+<dd>One symbol stands for more than one plaintext letter. Decryption is ambiguous: the reader chooses the value that makes sense, so applying even a known key takes judgement.</dd>
+<dt id="variable-length">Variable-length</dt>
+<dd>Cipher units of different lengths (for example one- and two-digit numbers) are written without separators, so the text has to be divided into units before it can be decrypted, and several divisions may be possible.</dd>
+<dt id="null">Null</dt>
+<dd>A symbol that means nothing, added to disturb frequency analysis.</dd>
+<dt id="key">Key</dt>
+<dd>The table that gives the plaintext value of every cipher symbol and code group.</dd>
+<dt id="plaintext">Plaintext, ciphertext, cleartext</dt>
+<dd>Plaintext is the message the cipher hides; ciphertext is the enciphered form. Cleartext is the part of a document that was written openly, not enciphered, often around the ciphered passages.</dd>
+<dt id="decipherment">Decipherment</dt>
+<dd>Plaintext obtained from ciphertext. A contemporary decipherment was made at the time, by the recipient&#x27;s clerk, and is often written between the lines (interlinear) or on a separate sheet.</dd>
+<dt id="cryptanalysis">Cryptanalysis (a break)</dt>
+<dd>Recovering an unknown key from the material. The three routes used here are ciphertext-only, from adjacent plaintext and from external plaintext (see the methods above).</dd>
+<dt id="crib">Crib</dt>
+<dd>A guessed or known piece of plaintext placed against the ciphertext to recover part of the key.</dd>
+<dt id="transcription">Transcription</dt>
+<dd>Copying the cipher symbols from the image into text a program can read. Symbols that are not letters or digits have to be given labels first; misreadings here look like errors in the key.</dd>
+<dt id="extent">Extent: complete or partial</dt>
+<dd>Complete means at least 95% of the cipher symbols give sense, every document is covered, and what stays open is scattered code groups or pieces blocked from outside (illegible, too short). Anything less is partial.</dd>
+<dt id="prior">Prior solution</dt>
+<dd>Whether a decipherment or key existed anywhere before this project worked on the item, and when it was found. It is recorded for every target because a model may have seen it.</dd>
+<dt id="decode">DECODE</dt>
+<dd>The online database of historical cipher documents and keys (Megyesi et al.); record numbers are cited as R1234.</dd>
+</dl>
+
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="site.js?v=20260924a"></script>
+</body>
+</html>

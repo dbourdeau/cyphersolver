@@ -150,6 +150,7 @@ PAGE_METHOD = {
                       'recovered from the telegrams themselves; there is no decode in the file. Some telegrams use a different system and are open.'),
     'reserva12': (DECIPH, 'complete', 'Xavier de Salas printed a full decipherment in 1931 (Estudis Universitaris Catalans 16); '
                   'it was found and checked against the image.'),
+    'beale': (NA, 'n/a', 'Beale Paper no. 1 is judged a fabrication; a book-cipher scan over Project Gutenberg found no key text.'),
     'goldbar': (NA, 'n/a', 'The letters are almost exactly ten of each kind, a sign of a design, not a message.'),
     'voynich': (NOT, 'none', 'Plain or simply enciphered European languages were tested and excluded; no reading.'),
     'indus': (NOT, 'none', 'Published decipherments were tested against the corpus; no reading is established.'),
