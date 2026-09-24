@@ -181,3 +181,19 @@ way.
 
 **W2 Common names.** Sealing names match a seal name more often than seal names match another seal, within name-length
 strata (1, 2, 3, 4+ signs), permutation of the object type within strata, p < 0.05.
+
+## Results of the sixth set (added after the test; `predict_test6.py`, `results/predict_test6.md`)
+
+44 intact sealings with a name and an ending (Lothal 25), 795 seals.
+
+- **W1 fails.** Of 17 sealings whose name is on a seal, none has a same-name seal at its own site (0%, against 15%
+  with sites shuffled; p (away) = 0.001). But 10 of the 17 are one Lothal batch (48+740, TAG:B), almost certainly
+  impressions of one seal. Checked after the test, counting each distinct sealing text once: 7 texts, none at home,
+  against 10% expected from where sealings are found (p = 0.50). The registered 'away' result rests on that batch and
+  is not claimed. What stands is descriptive: the matching seals are mostly at Mohenjo-daro (Lothal sealings 48+740,
+  482+740, 705-33+520; Rupar 17-585+740; Dholavira 220+740), and two Mohenjo-daro sealings match seals found only
+  elsewhere (590-390+740 at Harappa, Allahdino, Chanhu-daro, Dholavira; 32-760+740 at Nausharo).
+- **W2 fails.** Length-matched, sealing names match a seal name no more often than seal names match another seal
+  (+3.9 points, p = 0.27).
+- Tally: 2 held, 10 failed. Not checked against Frenez's work on the Lothal sealings, which should be read before any
+  claim about sealed goods moving between cities.

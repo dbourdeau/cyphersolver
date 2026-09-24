@@ -932,6 +932,14 @@ Mohenjo-daro depth difference 4.7 ft against 5.0 ft (71 pairs, p = 0.37). Names 
 Mohenjo-daro, which fits names or titles handed on. Weak test: coarse periods, datums differ by area, pairs not
 independent. Tally 2 held, 8 failed.
 
+## Twentieth pass (24 Sept 2026): sealings and seal names
+
+Registered first (PREDICTIONS.md, sixth set, bdda56a55), tested (`predict_test6.py`). Hypothesis W: sealings are
+made at home by holders of common names. **W1 fails**: 0 of 17 name-matched sealings have a same-name seal at their
+site; significant 'away' (p = 0.001) only because 10 are one Lothal batch; with distinct texts (7) p = 0.50. **W2
+fails** (+3.9 points, p = 0.27). Lothal, Rupar and Dholavira sealings match Mohenjo-daro seals; check Frenez on
+Lothal. Tally 2 held, 10 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
