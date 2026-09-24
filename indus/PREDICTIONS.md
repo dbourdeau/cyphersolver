@@ -2463,3 +2463,14 @@ under 20 cases in either makes it fail as untestable. 10,000-draw permutations; 
 - **HT9** The left-to-right share differs between the periods (A is undated; F lines reversed carry no direction, so
   direction is taken from A objects matched to F by CISI number; Fisher, two-sided).
 - **HT10** The head of names depends on the period (MI beyond permutation).
+
+## Results of the thirty-ninth set (added after the test; `predict_test39.py`, `results/predict_test39.md`)
+
+Seven held, three failed. Harappa objects with a level: earlier 465, later 346.
+**Stable across time**: HT1 (the last sign decides the ending: p = 0.047 earlier, 0.0001 later), HT2 (long strokes count
+containers: 79% and 64% against 8% and 0%), HT3 (the number depends on the sign: MI 1.01 and 1.16). **What changes**:
+HT5 (receipts are 11.5% of earlier tablets, 5.7% of later), HT6 (earlier count tokens count more, +0.27), HT9 (left-to-
+right writing 7.9% earlier, 3.8% later), HT10 (the head signs of names change, MI 0.31, p = 0.013). HT7 fails (the 520
+share is stable, 16.6% against 15.8%). HT4 and HT8 lack cases per period (12-15 tiered numerals of 5-8; 16-23 short
+threes). At Harappa the grammar and the number system are stable while the administration (receipts, count sizes),
+the writing direction and the particular names change. Tally, counting parts: 224 held, 333 failed (557 registered).

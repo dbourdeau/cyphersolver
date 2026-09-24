@@ -1219,6 +1219,12 @@ Registered first (thirty-eighth set, d09e1ff3d), tested (`predict_test38.py`; LT
 endings more (LT1), numbers more (LT3), recur less (LT7); they are not two attested texts joined (LT6: 0 of 210), not
 more titled, not off the seals. Single longer compositions. Tally 217 held, 330 failed.
 
+## Fifty-third pass (24 Sept 2026): Harappa over time (round 3 of 10)
+
+Registered first (thirty-ninth set, dc9014a5d), tested (`predict_test39.py`). Grammar and numbers stable across
+Harappa's levels (HT1-HT3); receipts, larger counts and left-to-right writing are earlier, and the heads change (HT5,
+HT6, HT9, HT10); the 520 share is stable (HT7). Tally 224 held, 333 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
