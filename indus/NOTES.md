@@ -1670,8 +1670,8 @@ merges 57 of A's signs, a caveat for B replications. Tally 700 held, 787 failed.
 
 ## Hundred-and-fifteenth pass (24 Sept 2026): recent findings on held-out data
 
-Registered first (hundred-and-first set, d8e23cd31), tested (`predict_test101.py`). Fourteen of fourteen F' tests of the
-medial-ending, heading, '1', opener, jar, frozen-count and shape-family findings replicate except 861-formulas (HS4)
+Registered first (hundred-and-first set, d8e23cd31), tested (`predict_test101.py`). Twelve of fourteen F' tests of the
+medial-ending, heading, '1', opener, jar, frozen-count and shape-family findings replicate; not 861-formulas (HS4)
 and openers-on-seals (PZ12), now unconfirmed. B tests are mostly degenerate because B merges or lacks the signs
 involved (no 817, 705 = 706).
 
