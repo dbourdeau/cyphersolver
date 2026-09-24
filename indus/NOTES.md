@@ -1,6 +1,6 @@
 # Indus script: Parpola's 2005 lecture tested against two corpora
 
-Status: in progress (site page unpublished 24 Sept 2026 at the owner's request; the page and the bench were withheld from the repository and kept locally outside it)
+Status: in progress (write-up republished 24 Sept 2026 at the owner's request as docs/indus.html, rewritten to cover sets 1-166; the in-browser bench stays withheld)
 
 Target given: <https://old.harappa.com/script/indusscript.pdf>. It is not an inscription but Asko Parpola,
 "Study of the Indus Script", special lecture at the 50th ICES, Tokyo, 19 May 2005 (Transactions of the
