@@ -4372,3 +4372,17 @@ All media
 - **MM18** The last sign depends on the medium (MI).
 - **MM19** The first sign depends on the medium (MI).
 - **MM20** The 520 share of names differs between seals and all non-seal media (two-sided).
+
+## Results of the ninetieth set (added after the test; `predict_test90.py`, `results/predict_test90.md`)
+
+Twelve held, eight failed. Each medium has its own kind of text (length, first sign and last sign all depend on the
+medium: MM17-MM19, p = 0.0001). Copper tablets are a Mohenjo-daro genre (MM13: 197 of 198) of repeated texts (MM11: 51%
+of distinct texts on 2+ tablets) that are rarely names (MM12: 35% against 49% of seal lines) and almost never seal
+texts (MM14: 2 of 68): copper tablets carry their own fixed labels. Bangles carry very short texts (MM15: 90% of 3
+signs or fewer), mostly formulas (MM16: 65%). Potsherd graffiti are short (MM1: 2.1 against 4.7 signs); count tokens
+are rare there (MM3: 2 of 127, more than on seals but negligible), and graffiti are not more numerical (MM2), do not
+name common heads (MM4), do not use formula-only signs more (MM5) and use fewer stroke numerals (MM6: 33% against 57%).
+Stamped potsherds and tags are not impressions of known seal texts (MM8: 5 of 27; MM10: 3 of 26), and stamped pots copy
+seals no more than graffiti do (MM9), so the stamps that made them are mostly not among the surviving seals. Names on
+seals take 520 twice as often as names on other media (MM20: 18% against 9%, p = 0.0002), so the 520 class is a seal
+feature. Tally, counting parts: 602 held, 685 failed (1287 registered).

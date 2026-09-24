@@ -1586,6 +1586,13 @@ stands in for part of the name. 861 heads formulas more. Tally 590 held, 677 fai
 Summary of sets 87-89: no regional name systems (small sites share the city stock); lines with two endings are long
 single names, not pairs; the three heading signs are variants of one heading slot.
 
+## Hundred-and-fourth pass (24 Sept 2026): the minor media
+
+Registered first (ninetieth set, e629b0fbc), tested (`predict_test90.py`). Each medium has its own text type: copper
+tablets are Mohenjo-daro fixed labels, not names or seal texts; bangles carry short formulas; graffiti are short and
+varied. Stamped pots and tags do not match surviving seals. 520 names are twice as common on seals as on other media.
+Tally 602 held, 685 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
