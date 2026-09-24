@@ -1673,3 +1673,48 @@ tablets, against 4.6% of seal texts): standard labels. L20 fails (not shorter). 
 carry numerals more than tablet names).
 
 Tally, counting parts: 121 held, 191 failed (312 registered).
+
+# Twenty-eighth set, registered before testing (24 September 2026): receipts, the fish split, units, habits
+
+Leads: the Harappa name tablets with 400 ('receipts': TAB:I, a 740 / 520 ending directly followed by 400) are issued in
+identical copies of '[number] [short name]-740 400' (L2, L3, L5, L6); the stroke-pair fish take 520 (L11); each
+long-count unit has its usual value, 700 counted 3 and 740 counted 2 (L12). Conventions as the twenty-seventh set (F read
+with lines reversed; A, B; names; head and attribute classes as K; Fairservis categories; 10,000-draw permutations;
+p < 0.05; A and B both where named).
+
+Receipts and tokens (F)
+- **E1** Receipt copies (same name body) lie closer in depth than random pairs of receipts (median depth difference).
+- **E2** At Harappa, receipts come from earlier levels more often than count tokens (N 700) do.
+- **E3** Receipt name bodies equal the last part of a longer seal name body more often than the same bodies in shuffled
+  order do.
+- **E4** Receipt name bodies are a single sign more often than seal name bodies.
+- **E5** On receipts, the number's value depends on the name's last sign (MI beyond permutation).
+- **E21** 70%+ of the numbers on receipts have the value 1 or 2.
+- **E22** Receipt names have a human-figure head more often than seal names.
+- **E23** The first signs of receipt names are distributed differently from those of seal names (MI beyond permutation).
+- **E6** The pair 'long 2 + 740' (32 740) is on moulded tablets more often than on other objects, per object.
+- **E7** At Harappa, tablets with '32 740' and count tokens differ in level (MI beyond permutation).
+- **E8** Tablets containing '32 740' are 3 signs or fewer more often than other tablets.
+- **E20** At Harappa, the count tokens' value correlates with depth (Spearman, permutation; either sign).
+
+The fish split (pooled A + B unless said)
+- **E9** Fish-headed names with the long pair (32) inside take 520 more often than fish-headed names without a numeral,
+  length-stratified.
+- **E10** Names ending in the plain fish (220) with no numeral in the name take 740 in 60%+ of cases.
+- **E11** The short stroke pair (2) is followed by a fish sign more often than the short three (3). A and B.
+- **E12** Names with the stroke pair before a fish carry the heading more often than other names, length-stratified.
+
+Units
+- **E14** On seals alone, the value of a long-stroke numeral depends on the sign after it (F, MI beyond permutation).
+- **E15** The value of a short-stroke numeral depends on the sign after it. A and B.
+- **E16** The value of a tiered numeral depends on the sign after it (pooled).
+- **E13** Long-stroke numerals on seals stand in lines ending 520 more often than seal lines end in 520 (F).
+
+Direction and labels (A)
+- **E17** Left-to-right pot texts come from outside Mohenjo-daro and Harappa more often than right-to-left pot texts.
+- **E18** Left-to-right lines contain a numeral more often than right-to-left lines, length-stratified.
+- **E19** Copper-tablet lines contain a numeral less often than seal lines, length-stratified.
+
+Two cities' habits (F seals)
+- **E24** Seal names followed by 400 are from Harappa more often than other seal names.
+- **E25** Harappa seal names are followed by 90 less often than Mohenjo-daro seal names.
