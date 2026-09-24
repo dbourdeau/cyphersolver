@@ -74,11 +74,11 @@
   {"date": "2026-09-15", "kind": "solver", "what": "Quadgram hill-climber over the order of rows 2-21 (solve20.py), without the published plaintext, finds the cyclic key; its start is fixed by the text and by the 14 longer columns.", "result": "worked"},
   {"date": "2026-09-15", "kind": "verification", "what": "The 414 plaintext cells equal the token count of the published plaintext and read as it does, apart from transcription slips (c/e, U for ll, 6 for o).", "result": "worked"},
   {"date": "2026-09-24", "kind": "literature search", "what": "Checked Curran's Camden edition of Perwich's despatches (1903), pp. 82-83: it prints this despatch and omits the cipher block without a mark (only deciphered portions printed).", "result": "worked"},
-  {"date": "2026-09-24", "kind": "verification", "what": "Aligned the first 173 plaintext cells in key order with the published text for the site reveal: every difference is a transcription slip (c/e, u/v, U for ll).", "result": "worked"}
+  {"date": "2026-09-24", "kind": "verification", "what": "Aligned the first 173 plaintext cells in key order with the published text for a site reveal (page withdrawn): every difference is a transcription slip (c/e, u/v, U for ll).", "result": "worked"}
  ],
  "outcome": {
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "The 20-column transposition order was found by a quadgram hill-climber over the rows of Tomokiyo's transcription without the plaintext, but only after the TNA blog of 14 Oct 2025 (Brown; Lasry, Biermann and Tomokiyo) gave the system; the project's own earlier substitution attack failed.",
+  "method": "read from existing decipherment",
+  "method_basis": "A complete decipherment already existed: the TNA published the plaintext on 14 Oct 2025 (Matthew Brown; Lasry, Biermann and Tomokiyo). The column order was reproduced here from Tomokiyo's transcription only after that announcement had given the system, and the project's own earlier substitution attack had failed.",
   "contribution": ["none"],
   "class": "already solved",
   "key": "partial",
@@ -88,6 +88,6 @@
   "codes_open": {"open": 5, "total": 5, "tokens_open": 5},
   "grades": "unknown",
   "verification": ["independent clear copy", "key confirms"],
-  "notes": "Solved by others in Oct 2025; this project first argued, wrongly, that it was a substitution, then reproduced the published break. The transposition key is complete; the nomenclator numbers are unread (40 probably a place, 60 96 and 61 persons). TNA context readings of the codes: 97 the Dutch, 60 and 61 the King, 96 Colbert, 40 England. Written up 24 Sept 2026 (docs/perwich.html)."
+  "notes": "Solved by others in Oct 2025; this project first argued, wrongly, that it was a substitution, then reproduced the published break. The transposition key is complete; the nomenclator numbers are unread (40 probably a place, 60 96 and 61 persons). TNA context readings of the codes: 97 the Dutch, 60 and 61 the King, 96 Colbert, 40 England. No write-up: deciphered by others first (a page made 24 Sept 2026 was withdrawn the same day)."
  }
 }

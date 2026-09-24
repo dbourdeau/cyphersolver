@@ -9,8 +9,6 @@ All scores are judgments on a 1–5 scale, not measurements. The composite is a 
 are stated; change them and the order changes. Entries marked * carry an inference that the notes do not
 verify (see the last section).
 
-The **Perwich letter of 9 April 1670** is provisionally p139 at **2.35**: a 20-column transposition already deciphered by others in 2025; its column order was recovered here without the plaintext, after a wrong first diagnosis, and the value is in method only.
-
 The **Mémoire en chiffre of 12 December 1560** (BnF fr. 3157 no. 67) is provisionally p134 at **3.90**: an unknown homophonic system with two-stroke units broken ciphertext-only from the images and read at 98.9%, new content on the Agenais rising, but regional weight and no outside control.
 
 The **Speculum cipher flyleaf** is provisionally p133 at **2.30**: a short substitution completed from acknowledged prior partial work, with one emendation and no independent clear copy.
@@ -38,7 +36,6 @@ The **Reims letter of 19 June 1589** (R2276) is provisionally p138 at **3.00**: 
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
-| p139 | **William Perwich → Lord Arlington**, Paris, TNA SP 78/129 f. 180 | 9 Apr 1670 | 2 | 3 | 1 | 2 | 3 | 4 | **2.35** | Already deciphered by Brown and by Lasry, Biermann and Tomokiyo (2025); column order recovered here blind from the transcription; published plaintext agrees; five codes open. [perwich](https://dbourdeau.github.io/cyphersolver/perwich.html) |
 | p138 | **Unknown writer (probably Jean de Piles) → unnamed patron**, Reims, BnF fr. 20974 pp. 1–3 (DECODE R2276) | 19 June 1589 | 3 | 3 | 4 | 4 | 1 | 2 | **3.00** | Three pages wholly in cipher read to 91.8% by extending a partial published table; catalogue date and addressee corrected; torn edges and ~80 words open. [r2276](https://dbourdeau.github.io/cyphersolver/r2276.html)
 | p137 | **Potocka and Mniszech to Dunin** | 1714–16 / undated | 3 | 3 | 4 | 3 | 1 | 2 | **2.90** | Nine letters share the recovered alphabet; person codes and Mniszech remain open. [potocka1714](https://dbourdeau.github.io/cyphersolver/potocka1714.html) |
 | p136 | **Matheo de Segura → Constable of Castile**, BnF es. 336 no. 99 | 1596 | 4 | 3 | 4 | 4 | 2 | 3 | **3.45** | Unknown sign cipher read; six tentative values, no independent plaintext. [segura1596](https://dbourdeau.github.io/cyphersolver/segura1596.html) |
@@ -364,7 +361,7 @@ Ordered by how much this repo added.
    Schiess in 1925 (italics = deciphered, no key printed); L&P's "not deciphered" corrected. The 14 cipher stretches
    located and translated, L&P shown to print 6 of them, and the 1516 London abstract matched to the ciphered content.
 
-The Feynman ciphers, Ferdinand III, Milroy, the Confederate dictionary code and Mazarin–Bordeaux 1654 were found
+Perwich, the Feynman ciphers, Ferdinand III, Milroy, the Confederate dictionary code and Mazarin–Bordeaux 1654 were found
 solved by others with nothing added here and are no longer listed (removed 17 September 2026).
 
 ## Appendix: the scores worked out
@@ -638,5 +635,3 @@ Potocka and Mniszech provisional score (p137): 0.25×3 + 0.25×3 + 0.20×4 + 0.1
 
 
 Reims letter, 19 June 1589 (R2276) provisional score: 0.25×3 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×1 + 0.10×2 = **3.00** (p138). Novelty means no published reading found; Biermann's 2021 identification is reported as private.
-
-Perwich 1670 provisional score (p139): 0.25×2 + 0.25×3 + 0.20×1 + 0.10×2 + 0.10×3 + 0.10×4 = **2.35**. Novelty 1: the plaintext was published by the TNA in October 2025.

@@ -1,5 +1,7 @@
 # William Perwich to Lord Arlington, Paris, 9 April 1670 — solved in 2025, and reproduced here
 
+Status: no write-up (deciphered by others first, Sept 2025; reproduced here only, nothing added. Outcome method: read from existing decipherment. A site page made 24 Sept 2026 was withdrawn the same day at Daniel's request).
+
 TNA SP 78/129 f.180, published by the National Archives in August 2025 and transcribed by Satoshi
 Tomokiyo. Roughly 500 cipher cells laid out as lines across two manuscript pages, embedded in an
 otherwise plain English despatch.
@@ -72,8 +74,6 @@ M. Beryl Curran (ed.), *The Despatches of William Perwich* (Camden 3rd ser. 5, 1
 this despatch and omits the block without a mark ("Where the original is in cipher, only the deciphered
 portions have been printed", editor's preface). `camden1903.txt` is the Internet Archive text of the edition
 (`despatchesofwill00perwrich`); the earlier file under that name was an archive.org error page.
-
-Written up 24 Sept 2026: `docs/perwich.html`.
 
 ## What is still open
 
