@@ -1311,3 +1311,23 @@ A classification that passes its own check
 - **C3** The chosen clusters are associated with Fairservis picture categories (as Q6).
 - **C4** Human-figure signs share a chosen cluster more often than random categorised pairs (as Q7).
 - **C5** The chosen clusters differ in position in B's names (as Q4).
+
+## Results of the twenty-third set (added after the test; `predict_test23.py`, `results/predict_test23.md`)
+
+One held, twelve failed.
+
+**Ligatures.**
+- **G3 holds**: 555 (Fairservis Q-14, tongs + carpenter's square) behaves as 550 + 482 in sequence (score 0.621
+  against its matched null, p = 0.0009; A only, too rare in B). A ligature written for the sequence of its parts.
+- G1 fails narrowly (154 as 151 + 740: p = 0.068), G2 fails (156 as 151 + 520: p = 0.11, 0.20), G4 fails (742 as 740 +
+  2: p = 0.51). G5 and G6 are not testable (702 and 703 have 6 and 7 tokens in A), and G8 fails (3 tablets carry them).
+- G7 fails on its count: all 4 testable ligatures score higher as a sequence than as a modified base sign, but the bar
+  was 5 testable ligatures. The direction is consistent; the evidence is thin.
+
+**Classification.** **C1 fails**: none of the four registered variants gathers the numerals at 3 times the base rate
+(left only 2.5, right only 1.2, both + positions 2.9, k = 12 2.1). C2-C5 are therefore not tested. The lead of a
+validated classification of the content signs is closed on this corpus: no contextual clustering tried here recovers
+even the numerals as a class. Left contexts carry more class information than right contexts (2.5 against 1.2), which
+fits the head-final structure: a sign's class shows in what precedes it.
+
+Tally, counting parts: 82 held, 143 failed (225 registered).

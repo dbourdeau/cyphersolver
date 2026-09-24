@@ -1079,6 +1079,14 @@ numerals (Q1 fails), so its 8 clusters are not validated word classes. They are 
 tokens (Q13); they are not positional classes (Q4, Q14), human figures scatter (Q7), heads spread (Q15). Tally 81
 held, 131 failed. The site page is withheld (24 Sept); results kept in indus/ only.
 
+## Thirty-seventh pass (24 Sept 2026): ligatures, and a classification that must pass its check
+
+Registered first (PREDICTIONS.md, twenty-third set, 52a1bdcc7), tested (`predict_test23.py`). One held: 555 behaves as
+550 + 482 in sequence (G3, p = 0.0009); 154 as 151 + 740 narrowly misses (p = 0.068); all 4 testable ligatures score
+higher as sequences than as modified bases (G7 fails only on its 5-ligature bar). No clustering variant passes the
+numeral check (C1: left 2.5, right 1.2, both + positions 2.9, k = 12 2.1, bar 3), so the classification lead is
+closed. Tally 82 held, 143 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
