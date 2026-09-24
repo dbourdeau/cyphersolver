@@ -964,6 +964,13 @@ against 5.2 (4,600 pairs, p = 0.0001). The effect is small; the fifth-set seal t
 seen it, so V's failure is uninformative and 'names handed on' is withdrawn. Harappa seals: 3 of 4 same-name pairs
 share a level (unregistered, tiny). Tally 6 held, 12 failed (counting parts).
 
+## Twenty-fourth pass (24 Sept 2026): optional signs
+
+Registered first (PREDICTIONS.md, tenth set, 80cc3a454), tested (`predict_test10.py`). Hypothesis AA: optional signs
+are phonetic complements. **AA1 holds weakly** (added sign freer, +0.061 against +0.009, p = 0.016); **AA2 fails the
+other way**: added signs stand first in 195 of 310 pairs, last in 98 (44% expected last). Names grow at the front
+(attribute + head), which fits the head-final reading, not complements. Tally 7 held, 13 failed (counting parts).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

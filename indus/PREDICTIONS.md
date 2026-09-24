@@ -326,3 +326,19 @@ same name, 10,000 times), p < 0.05. Signs without a freedom score (under 5 home 
 often than a random position of the longer name would be, p < 0.05 (exact, from each pair's 1 / length).
 
 Hypothesis AA holds if both hold.
+
+## Results of the tenth set (added after the test; `predict_test10.py`, `results/predict_test10.md`)
+
+912 distinct names; 310 insertion pairs (one name = another plus one sign, same ending).
+
+- **AA1 holds, weakly.** The added sign is freer than the other signs of the same name: +0.061 against +0.009 (236
+  pairs), paired permutation p = 0.016. A small effect.
+- **AA2 fails, the other way.** The added sign is the last sign of the name in 98 of 310 pairs (32%) against 44%
+  expected from position alone. It is the *first* sign in 195 (63%), inside in 17. (Front position was not registered;
+  it is reported, not claimed as a test.)
+- **Hypothesis AA fails** as registered. Tally, counting parts: 7 held (Q1, Q2, X2, Y2, Z1, Z2, AA1), 13 failed.
+- What it shows: names grow at the front. The commonest added signs are 240, 235 (the roofed fish), 176, 803, the long
+  stroke 31, 220, 233, 760: fish-series signs, numerals and name-initial first elements, i.e. an attribute put before
+  a head, which is the head-final compound the first held predictions (Q1, Q2) describe. That is modification, not a
+  phonetic complement spelling a word's end. The optional signs being slightly freer fits attributes (they attach to
+  many heads) as well as sound signs, so AA1 does not separate the two.
