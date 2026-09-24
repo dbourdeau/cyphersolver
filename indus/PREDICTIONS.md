@@ -2839,3 +2839,24 @@ also an ordinary name sign (CT4: 37 of 42), takes many values (CT3: 14 of 21; 39
 square seals (CT8: 79% against 86%, the other way), the cities do not clearly count different things (CT9, p = 0.095),
 and seals mostly count the same signs tablets count (CT10: 62%). So the same signs are counted on both media; what
 differs (fiftieth set) is the range and the notation. Tally, counting parts: 300 held, 377 failed (677 registered).
+
+# Fifty-second set, registered before testing (24 September 2026): where the order is free (loop 2, round 6)
+
+Ranks as in the forty-third set, computed on A and applied to B's distinct name bodies unless stated; rank terciles over
+ranked signs. 'Reversible pair' = two signs attested adjacent in both orders among distinct bodies (A + B). Fish
+signs from signs.FISH. 10,000-draw permutations; p < 0.05.
+
+- **PO1** In B, adjacent pairs across terciles follow the A rank more often than pairs within a tercile.
+- **PO2** In B, adjacent pairs within the early tercile follow the rank no better than chance (two-sided binomial
+  p >= 0.05).
+- **PO3** 30%+ of reversible pairs include a numeral.
+- **PO4** Reversible pairs are within one Fairservis category more often than non-reversible adjacent pairs.
+- **PO5** For reversible pairs, the two orders take different endings more often than when endings are shuffled among
+  bodies.
+- **PO6** For reversible pairs, the two orders come from different cities more often than when sites are shuffled
+  among the bodies (F names).
+- **PO7** Frequent signs have more variable positions (Spearman between token count and positional SD, permutation).
+- **PO8** Bodies with an inversion (against the rank by 0.2+) are longer than bodies without (rank test, A + B).
+- **PO9** 40%+ of inverted adjacent pairs include a numeral or a fish sign.
+- **PO10** Dominant pairwise orders from A predict B's adjacent pairs better than the scalar A rank on the pairs both
+  cover (sign test on discordant pairs).
