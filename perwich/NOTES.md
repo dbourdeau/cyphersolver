@@ -1,7 +1,5 @@
 # William Perwich to Lord Arlington, Paris, 9 April 1670 — solved in 2025, and reproduced here
 
-Status: no write-up (found solved by others in 2025; reproduced here only, pruned from the site lists 17 Sept 2026).
-
 TNA SP 78/129 f.180, published by the National Archives in August 2025 and transcribed by Satoshi
 Tomokiyo. Roughly 500 cipher cells laid out as lines across two manuscript pages, embedded in an
 otherwise plain English despatch.
@@ -68,10 +66,21 @@ confusion throughout (*eneouragement*, *eomplain*, *peaee*), `U` for `ll` (confi
 own suspicion), `6` for `o` in *boast*, `m m` for *mi* in *mistresses*, and in row 8 a `40` and an
 `f` whose order the transcription has swapped (*…not to op[pose] … going for 40*).
 
+## In print
+
+M. Beryl Curran (ed.), *The Despatches of William Perwich* (Camden 3rd ser. 5, 1903), pp. 82-83, prints
+this despatch and omits the block without a mark ("Where the original is in cipher, only the deciphered
+portions have been printed", editor's preface). `camden1903.txt` is the Internet Archive text of the edition
+(`despatchesofwill00perwrich`); the earlier file under that name was an archive.org error page.
+
+Written up 24 Sept 2026: `docs/perwich.html`.
+
 ## What is still open
 
 Only the nomenclator: 40, 60, 61, 96, 97 (and 910, 192 in the null tails). From context 40 is a place
 Madame is travelling to (Dover, 1670, is the obvious candidate), and 60 96 and 61 are persons.
+The TNA's second blog post (14 Oct 2025) reads them tentatively from context: 97 the Dutch, 60 the
+King, 96 Colbert (starting a new sentence), 61 the King, 40 England; it notes two numbers per entity.
 
 Reproduce: `python solve20.py 10` (the keyless climb over rows 2–21), `python solve20.py report`
 (plaintext, nulls, and the chi-squared with and without nulls). The earlier substitution-era scripts

@@ -61,9 +61,9 @@
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
   "tools": ["quadgram hill-climber over column order (solve20.py)", "chi-squared and digram-repeat tests (grid.py, routes.py)", "substitution solvers (masc.py, stream.py, segclimb.py)"],
   "models": ["claude-opus-5"],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-15"
+  "last_date": "2026-09-24"
  },
  "solution": [
   {"date": "2026-09-15", "kind": "transcription", "what": "Took Tomokiyo's transcription (perwich.txt) of the TNA images as the ciphertext.", "result": "worked"},
@@ -72,7 +72,9 @@
   {"date": "2026-09-15", "kind": "literature search", "what": "Found the TNA announcement of 14 Oct 2025 that the cipher had been broken twice as a 20-column transposition with nulls.", "result": "worked"},
   {"date": "2026-09-15", "kind": "hypothesis", "what": "Rows 2-21 of the transcription are the 20 columns padded with nulls; rows 1 and 22 are null lines. The chi-squared failure is explained by 8 q nulls (106 of 160); on plaintext cells only it is 28.0.", "result": "worked"},
   {"date": "2026-09-15", "kind": "solver", "what": "Quadgram hill-climber over the order of rows 2-21 (solve20.py), without the published plaintext, finds the cyclic key; its start is fixed by the text and by the 14 longer columns.", "result": "worked"},
-  {"date": "2026-09-15", "kind": "verification", "what": "The 414 plaintext cells equal the token count of the published plaintext and read as it does, apart from transcription slips (c/e, U for ll, 6 for o).", "result": "worked"}
+  {"date": "2026-09-15", "kind": "verification", "what": "The 414 plaintext cells equal the token count of the published plaintext and read as it does, apart from transcription slips (c/e, U for ll, 6 for o).", "result": "worked"},
+  {"date": "2026-09-24", "kind": "literature search", "what": "Checked Curran's Camden edition of Perwich's despatches (1903), pp. 82-83: it prints this despatch and omits the cipher block without a mark (only deciphered portions printed).", "result": "worked"},
+  {"date": "2026-09-24", "kind": "verification", "what": "Aligned the first 173 plaintext cells in key order with the published text for the site reveal: every difference is a transcription slip (c/e, u/v, U for ll).", "result": "worked"}
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
@@ -86,6 +88,6 @@
   "codes_open": {"open": 5, "total": 5, "tokens_open": 5},
   "grades": "unknown",
   "verification": ["independent clear copy", "key confirms"],
-  "notes": "Solved by others in Oct 2025; this project first argued, wrongly, that it was a substitution, then reproduced the published break. The transposition key is complete; the nomenclator numbers are unread (40 probably a place, 60 96 and 61 persons). Status in NOTES: no write-up."
+  "notes": "Solved by others in Oct 2025; this project first argued, wrongly, that it was a substitution, then reproduced the published break. The transposition key is complete; the nomenclator numbers are unread (40 probably a place, 60 96 and 61 persons). TNA context readings of the codes: 97 the Dutch, 60 and 61 the King, 96 Colbert, 40 England. Written up 24 Sept 2026 (docs/perwich.html)."
  }
 }
