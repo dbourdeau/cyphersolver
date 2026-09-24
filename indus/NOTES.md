@@ -1546,6 +1546,13 @@ Registered first (eighty-fourth set, 11b0ef33f), tested (`predict_test84.py`). L
 often headed, less often receipts (400), and on seals and moulded tablets rather than incised tablets; the grammar
 (genres, classes, numerals, 520 share) is stable across the periods. Tally 547 held, 620 failed.
 
+## Ninety-ninth pass (24 Sept 2026): one grammar, two cities
+
+Registered first (eighty-fifth set, ec4c83c16), tested within each city (`predict_test85.py`). Every core rule holds
+separately at Mohenjo-daro and at Harappa (classes, right-branching, tiered 5-8, sign-set numeral kind, fish-520, pair
+order). Local style: Mohenjo-daro longer, headed names; Harappa suffixed receipts and more formulas, different counted
+items and some different common heads. Tally 563 held, 624 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

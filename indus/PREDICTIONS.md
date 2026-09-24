@@ -4148,3 +4148,16 @@ Local habits
 - **CS18** The share of lines with a double differs.
 - **CS19** The counted item in numeral formulas depends on the city (MI).
 - **CS20** The two cities' five commonest heads share at most three.
+
+## Results of the eighty-fifth set (added after the test; `predict_test85.py`, `results/predict_test85.md`)
+
+Sixteen held, four failed. One grammar, two local styles. Shared, tested within each city on distinct lines and names:
+head classes (CS1: 29 of 32 heads the same class), right-branching names (CS2 MD: 19 against 9; CS3 H: 12 against 2),
+the tiered form for 5-8 (CS4 MD: 57% against 1%; CS5 H: 61% against 3%), the next sign setting the numeral kind (CS6,
+CS7: 0.71 and 0.75 bits), the fish-520 link (CS8 MD: 76% against 44%; CS9 H: 67% against 34%) and pair order (CS11: 67
+of 75). Local: Mohenjo-daro names are longer (CS13: 3.9 against 3.1) and headed twice as often (CS14: 21% against 10%);
+Harappa suffixes its names nearly three times as often (CS15: 28% against 10%, the 400 receipts) and writes more
+formulas (CS16: 47% against 40%); the cities count different items (CS19, p = 0.002) and share three of their five
+commonest heads (CS20: 100, 220, 760; MD adds 33, 923, H adds 176, 32). Not different: the 520 share (CS12), tiered share
+(CS17) and doubling (CS18). At Mohenjo-daro alone the 90/400 head split is not significant (CS10: 54 lines, p = 0.49).
+Tally, counting parts: 563 held, 624 failed (1187 registered).
