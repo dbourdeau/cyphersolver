@@ -20,10 +20,17 @@ A component moves only when a registered set supports the change. S and R are th
 anchors; P and L need outside evidence, and a real decipherment would show first as P > 0 with S falling (a reading
 makes the texts more predictable) and M rising.
 
+## Stopping rule (owner's goal, 24 September 2026)
+
+The loops continue until 20 consecutive loops make no progress. A loop counts as progress if a metric component
+improves, or if a new (non-replication) finding holds and is replicated on a held-out sample within the same loop.
+The 'streak' column counts consecutive loops without progress.
+
 ## Log
 
 | Loop | Sets | S bits (explained) | R roles | M meanings | P | L open | Note |
 |---|---|---|---|---|---|---|---|
+
 | baseline | 1-175 | 4.712 (24.9%) | 56.2% | 16.6% | 0 | 4 | model tri + pos + end, discounted (set 125) |
 | 1 | 176 | 4.712 (24.9%) | 72.9% | 16.6% | 0 | 4 | role / class / numeral-value components add nothing to S; slot-based modifier role adopted in R |
 | 2 | 177 | 4.712 (24.9%) | 81.1% | 16.6% | 0 | 4 | variable-order model +0.005 only (not adopted); anchors 347/460 untestable on new objects; bare-line roles adopted |

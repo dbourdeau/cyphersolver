@@ -7959,3 +7959,24 @@ replicated on a new sample). Whisker-fish names do not take 520 more than plain-
 head, the marked fish as attributive or derived forms, the caged fish as a closing form; morphology inside the signs.
 Roles already cover these tokens, so the metric does not move. Tally, counting parts: 1258 held, 1180 failed (2438
 registered).
+
+# Hundred-and-eighty-sixth set, registered before testing (24 September 2026): decipherment loop 11, the strokes inside the jar (eight hypotheses)
+
+Standing goal (owner, 24 Sept): loops until 20 in a row make no progress (PROGRESS.md stopping rule). Metric after loop
+10: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; no-progress streak 0. Loops 9-10 found marks that change a sign's
+grammatical job (the cage; the fish marks). Loop 11 asks the same of the jar: 740 (plain), 741 (one stroke inside),
+742 (two), 745 (three), per Parpola's list (P324-P327 via the CISI digitisation). Distinct lines; A and B separately
+where stated. 'Final' = last sign or followed only by 400 / 90.
+
+- **JV1** Stroked jars (741, 742, 745) are final less often than the plain jar (A; Fisher).
+- **JV2** JV1 holds on B.
+- **JV3** Stroked jars are directly followed by 740 or 520 more often than the plain jar is (A + B): a stroked jar can
+  be a head that takes the ending.
+- **JV4** Stroked jars are preceded by a numeral less often than the plain jar (the strokes inside do the counting).
+- **JV5** The inner strokes are graded: across 740, 741, 742, 745, the share final falls (or rises) monotonically with
+  the stroke count (Spearman |rho| = 1 over the four points).
+- **JV6** The stroked jars are relatively more frequent on tablets than on seals, compared with the plain jar (F;
+  Fisher).
+- **JV7** 741 and '740 1' (the jar followed by a single stroke) stand in the same frames more than random sign pairs of
+  similar frequency (the stroke inside = a stroke after).
+- **JV8** Progress rule: at least one of JV1/JV3 holds with a same-direction replication on B.
