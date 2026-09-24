@@ -1616,6 +1616,13 @@ Registered first (ninety-third set, 4cb5c2b4d), tested (`predict_test93.py`). On
 number (236 = 2, 632 = 2, 717 = 2, 923 = 3), all Mohenjo-daro, long-stroke, stable in B; the rest, including 700, are
 real variable counts. Tally 627 held, 720 failed.
 
+## Hundred-and-eighth pass (24 Sept 2026): copper tablets and their pictures
+
+Registered first (ninety-fourth set, 56e46b01d), tested (`predict_test94.py`). Copper tablet texts are labels for their
+pictures: each picture has a dominant text (anthropomorph 10 of 10, hare 12 of 12), and the picture predicts text,
+length and last sign. Copper labels count with long strokes, are never headed and write differently from seals while
+using the same signs. Both fixed labels contain 845 and 407; the hare label contains '705 33'. Tally 640 held, 727 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

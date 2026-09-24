@@ -4543,3 +4543,18 @@ The copper texts
 - **CU18** 5 or fewer copper tablets have two lines.
 - **CU19** Copper text heads (last signs) are shared by tablets of one motif more than when motifs are shuffled.
 - **CU20** Copper texts share fewer adjacent-pair types with seal texts than label-shuffled lines do (1,000).
+
+## Results of the ninety-fourth set (added after the test; `predict_test94.py`, `results/predict_test94.md`)
+
+Thirteen held, seven failed. On copper tablets text and picture are bound: same-text tablets share the picture (CU1:
+545 pairs, p = 0.0001), the picture predicts the text (CU2: 2.6 bits), its length (CU8) and its last sign (CU19), and
+each picture has a dominant text (CU3: mean share 0.65). All 10 anthropomorph tablets carry '806 845 61 407 850 900
+740' (CU5) and all 12 hare tablets '235 705 33 845 407 321 407' (CU6); both labels share 845 and 407, and the hare label
+contains the fixed unit '705 33' of the ninety-second set. A text is not always tied to one picture (CU4: 10 of 15).
+Copper labels count (CU12: 44% of lines hold a numeral), with long strokes more than seals (CU13: 51% against 32%), are
+almost never headed (CU14: 1% against 19%), are one line (CU18: 2 two-line tablets) and share fewer adjacent pairs with
+seal texts than chance (CU20), but they use the seal sign set (CU11: 4% of tokens not on seals). The same animal's
+copper and seal texts share signs slightly more than different animals' do (CU9: +0.010 Jaccard, p = 0.025), a weak
+link across media. Not supported: few distinct labels (CU10: 70 texts for 198 tablets), 740 rare (CU15: 44%), animal
+tablets carrying names (CU16: the other way, 36% against 79% for 'Othr'), 'Othr' being more varied (CU17), repeated
+labels having pictures more (CU7). Tally, counting parts: 640 held, 727 failed (1367 registered).
