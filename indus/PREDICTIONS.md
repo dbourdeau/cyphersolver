@@ -6343,3 +6343,31 @@ so the clustering is of the object type (workshops or deposits), not of texts. R
 across the city independently of their text; a seal text is not tied to a neighbourhood or household in any way these
 records can detect. Limits: sub-areas are excavation units, not social units, and the house labels are the
 excavators'. Tally, counting parts: 1070 held, 1011 failed (2081 registered).
+
+# Hundred-and-forty-first set, registered before testing (24 September 2026): language type from sign order (ten hypotheses)
+
+Second external direction: typology. Head-final names, a suffix-like ending slot and the absence of concord are
+established (Q1, H7, CG). These ten tests take order correlates the earlier sets did not run. The family expectations
+come from standard typology (Dravidian: numeral before noun, genitive before the possessed, rigid agglutinative
+suffix chains, plural suffix optional; Indo-Aryan: the same orders with obligatory number; Sumerian: noun before
+numeral, genitive after the possessed, plural by reduplication) and are stated from general knowledge, not a
+checked source: each result is an order fact first and a family indication second. Markers M = 740, 520, the closers
+CL, 400, 90. Heads = last body signs of names. Distinct lines (A + B), distinct names. p < 0.05.
+
+- **TY1** Numeral before the counted sign: in name bodies, numeral runs with a lexical (non-numeral, non-marker)
+  sign directly after them outnumber runs with a lexical sign directly before and none after, by 2 to 1 or more.
+- **TY2** Preposed genitive: where 740 stands inside a line and a lexical sign follows it, that sign is a head more
+  often than lexical signs in other interior positions are (Fisher), and in 50%+.
+- **TY3** Rigid marker order: of lines with two different markers, 95%+ have them in the majority order for their pair.
+- **TY4** Reduplication exists: 1%+ of distinct lines have a non-numeral, non-marker sign doubled.
+- **TY5** Reduplication marks nouns: the doubled sign's second copy is the name head in 50%+ of doubled cases.
+- **TY6** Agglutinative chains: of lines ending in a marker, 1%+ have three or more markers after the last lexical
+  sign.
+- **TY7** Markers close the whole name, not its parts: 740 or 520 stands inside a name body (not last) in 2% or fewer
+  of distinct names with 3+ body signs.
+- **TY8** Openers are lexical, not a closed prefix class: the ten commonest openers of 3+-sign bodies cover less than
+  50% of those bodies.
+- **TY9** The counted sign is a head: in name bodies where a numeral run is directly followed by a lexical sign, that
+  sign is the body's last sign (the head) in 50%+.
+- **TY10** No number agreement: among names whose head is directly preceded by a numeral run, the ending (740 / 520
+  / closer / none) does not depend on value 1 against 2+ (two-sided Fisher on 740 against the rest, p >= 0.05 holds).
