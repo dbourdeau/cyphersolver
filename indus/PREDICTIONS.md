@@ -6304,3 +6304,27 @@ counting sequences rather than distinct texts, or on other sites, or on a wider 
 M77-to-ICIT half of the sign map was learned by alignment on the whole corpus, which includes these objects, so
 agreement rates are an upper bound; the numeral and fish identities (P122 = 2, P126 = 6, P050 = 220) are not in
 doubt. Tally, counting parts: 1069 held, 1002 failed (2071 registered).
+
+# Hundred-and-fortieth set, registered before testing (24 September 2026): find spots inside Mohenjo-daro (ten hypotheses)
+
+Sixth external direction: archaeological context. Periods and depths were used before (V1, V2, K8, U23, LB6-LB10);
+the find spot inside the city was not. ICIT fields for Mohenjo-daro: 4 = area (DKG. (S), DKG. (N), DKC, HRA, HRB,
+VSA, SD ...), 5 = block and house ('9VI' = block 9, house VI) or street, 6 = room/findspot. Intact F objects at
+Mohenjo-daro (1,416). Major area = DK / HR / VS / SD / L / MN. Sub-area = field 4 with the generic values ('DK-',
+'HR-', 'VS-', 'DKG', '--') left out. House = sub-area + field 5 where field 5 ends in a Roman numeral (618 objects in
+176 houses). Names from R.names_in, genre from predict_test108.genre; one text per object (first line). Pair tests
+compare the share of pairs in the same place against 1,000 permutations of the place labels over the objects in the
+test; MI tests as rtools (1,000 permutations). p < 0.05.
+
+- **FS1** Seals with the same whole text are found in the same sub-area more often than chance.
+- **FS2** Seals whose names share a head (last body sign) are found in the same sub-area more often than chance.
+- **FS3** Seals from the same house share at least one non-numeral sign more often than seals from different houses
+  of the same sub-area (household vocabulary; permutation of house labels within sub-area).
+- **FS4** The genre mix of seals (name / closer / count / bare / other) differs between major areas DK and HR (MI).
+- **FS5** Copper tablets have a different sub-area distribution from seals (MI of type against sub-area).
+- **FS6** Copper tablets with the same text are found in the same sub-area more often than chance.
+- **FS7** Among seal names ending 740 or 520, the ending depends on sub-area (MI).
+- **FS8** The seal motif (unicorn against other) depends on sub-area (MI).
+- **FS9** Long seal texts (5+ signs) depend on sub-area (MI).
+- **FS10** Seals found in streets and lanes (field 5 naming a street or lane) are names less often than seals found
+  in houses (lost in public places versus kept at home; Fisher).
