@@ -6100,3 +6100,24 @@ two-lined (IC7: 97%), and our bare lines are mostly ICIT's SC (IC9: 67%). The cl
 categories (IC8: spread over SS, IT, SP), and ICIT's SS is a mixed bag of our genres (IC10). This validates the genre
 system against an outside classifier and marks the closer inscriptions as this project's addition. Tally, counting
 parts: 1037 held, 984 failed (2021 registered).
+
+# Hundred-and-thirty-fifth set, registered before testing (24 September 2026): does a proposed reading respect the structure? (ten hypotheses)
+
+The ICIT dump used here carries, for 1,727 of 3,681 intact objects, a romanised reading (field 35, e.g. '235 740' ->
+'amam', '590 390 740' -> 'varan') and a gloss (field 36) from a Sanskrit-based decipherment whose source is not
+identified in this project. These tests ask only whether those readings respect structure found here; they say nothing
+about whether the decipherment is right, and they do not endorse or reject its author. Readings are compared as
+lower-case letter strings. 10,000-draw permutations; p < 0.05.
+
+- **RD1** Readings of single-line texts ending in 740 share their final letter more often than readings of texts ending
+  in other non-numeral signs (share of the commonest final letter).
+- **RD2** The reading's final letter depends on whether the text ends in 740 or 520 (MI, permutation).
+- **RD3** Identical texts receive identical readings in 95%+ of pairs.
+- **RD4** Reading length in letters correlates with text length in signs (Spearman 0.5+, significant).
+- **RD5** Texts sharing their first sign share the reading's first letter more often than random text pairs.
+- **RD6** Texts sharing their last sign share the reading's last two letters more often than random text pairs.
+- **RD7** Letters per sign vary little: coefficient of variation under 0.5 over texts of 2+ signs.
+- **RD8** Among 2-sign texts 'X 740', 60%+ of readings end in the same two letters.
+- **RD9** Texts that differ only in the heading sign (817/820/861 before the same rest) get readings that differ only
+  in their first part (the rest of the reading identical) in 50%+ of pairs.
+- **RD10** Count tokens (numeral + 700) with the same numeral get the same reading in 90%+.
