@@ -2258,6 +2258,13 @@ Registered first (dcbc179c7). A variable-order model does not improve S (0.005 i
 picture anchors 347 and 460 cannot be tested on new objects (0 and 2 cases), so M stays; bare lines end in a name head
 70% of the time, and head / modifier roles for them lift R to 81.1%. Tally 1229 held, 1151 failed.
 
+## Hundred-and-ninety-second pass (24 Sept 2026): decipherment loop 3, meanings from depiction checked by use
+
+Registered first (98d1e4201). On B, the depiction of a name's head (Fairservis) predicts its ending (MI 0.20, p =
+0.0001): human, tool and plant heads take 740, fish heads take 520 five times as often. Four classes adopted into a
+new component M+ = 41.4% (M strict 16.6%); the 740 classes are weak evidence one by one because 740 is the default.
+Tally 1235 held, 1152 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

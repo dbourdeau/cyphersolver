@@ -26,6 +26,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL = {'keys': ['tri', 'pos', 'end'], 'kn': True}          # set 125 (BB2-BB4)
 ANCHORS = {'749': 'markhor goat', '341': 'rhinoceros', '753': 'hare', '777': 'markhor goat / horned archer'}  # copper-tablet equations (fourth pass)
 VALUES = {}                                                   # no sound value has passed a registered test
+DEPICT = ('human', 'tool', 'plant', 'fish')                   # set 178 (DC1-DC3, DC5): depiction classes confirmed by use on B
 FAMILIES = {'Dravidian': 'open', 'Indo-Aryan': 'open', 'Burushaski / isolate': 'open', 'unknown (lost) language': 'open',
             'Sumerian': 'excluded (Q1, H7, TY1, LN1)', 'Elamite': 'excluded (head-initial order; Q1)',
             'Munda': 'excluded if the fish names are stars (class split, eleventh pass)'}
@@ -98,24 +99,36 @@ def meanings(DL):
     return n / tot
 
 
+def meanings_plus(DL):
+    from predict_test178 import depiction
+    dep = depiction()
+    tot = sum(len(t) for t in DL)
+    n = sum(1 for t in DL for g in t if g in R.NUMS or g in ANCHORS or dep.get(g) in DEPICT)
+    return n / tot
+
+
 def main(label='measure'):
     DL, tr, te = data()
     bits, h1 = structure(tr, te)
     r, by, tot = roles(DL)
     m = meanings(DL)
+    mp = meanings_plus(DL)
     p = len(VALUES)
     open_f = [f for f, s in FAMILIES.items() if s == 'open']
     print('S  structure: %.3f bits/sign held out (unigram %.3f; %.1f%% explained)' % (bits, h1, 100 * (h1 - bits) / h1))
     print('R  roles: %.1f%% of %d tokens (%s)' % (100 * r, tot, ', '.join('%s %d' % kv for kv in by.most_common())))
-    print('M  meanings: %.1f%% of tokens anchored' % (100 * m))
+    print('M  meanings: %.1f%% of tokens anchored; M+ with depiction classes confirmed by use %.1f%%' % (100 * m, 100 * mp))
     print('P  sound values: %d' % p)
     print('L  language: %d families open (%s)' % (len(open_f), ', '.join(open_f)))
-    row = '\t'.join([label, '%.3f' % bits, '%.1f' % (100 * (h1 - bits) / h1), '%.1f' % (100 * r), '%.1f' % (100 * m), str(p), str(len(open_f))])
+    row = '\t'.join([label, '%.3f' % bits, '%.1f' % (100 * (h1 - bits) / h1), '%.1f' % (100 * r), '%.1f' % (100 * m), str(p),
+                     str(len(open_f)), '%.1f' % (100 * mp)])
     log = os.path.join(HERE, 'results', 'progress_log.tsv')
-    new = not os.path.exists(log)
-    with open(log, 'a', encoding='utf-8') as f:
-        if new:
-            f.write('label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\n')
+    head = 'label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\tMplus_pct'
+    old = open(log, encoding='utf-8').read().splitlines()[1:] if os.path.exists(log) else []
+    with open(log, 'w', encoding='utf-8') as f:
+        f.write(head + '\n')
+        for x in old:
+            f.write((x if x.count('\t') == 7 else x + '\t') + '\n')
         f.write(row + '\n')
     return bits, r, m, p, len(open_f)
 

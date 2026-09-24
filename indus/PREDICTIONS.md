@@ -7711,3 +7711,15 @@ component M+ ('share of tokens whose sign has a depiction-class meaning confirme
 - **DC5** Names in B headed by a plant sign take 740 in 90%+.
 - **DC6** In B, the depiction category of the head predicts the ending beyond permutation (MI).
 - **DC7** At least two classes pass (M+ above 0).
+
+## Results of the hundred-and-seventy-eighth set (added after the test; `predict_test178.py`, `results/predict_test178.md`)
+
+Six held, one failed. On B (Mahadevan's additions, independent of the earlier finding), what a head sign depicts
+predicts the ending (DC6: MI 0.20 bits over 129 names, p = 0.0001): names headed by human figures take 740 in 25 of 25
+(DC1), by weapons or implements 27 of 29 (DC2), by plants 25 of 25 (DC5), and by fish-like signs 520 in 40% against 8%
+(DC3, p < 0.0001). No B name is headed by an animal sign (DC4 fails, untestable). Under the registered rule the four
+classes enter M+, which is 41.4% of tokens (M strict stays 16.6%). Caveat, noted after the test: 740 is the default
+ending (about 88% of names), so 'takes 740' is weak evidence class by class (25 of 25 against an 88% base has p about
+0.04); the clear evidence is the fish class and the overall MI. What M+ says is that the depicted category of a name's
+head is part of how the script works (fish names form their own ending class), not that any word is read. Tally,
+counting parts: 1235 held, 1152 failed (2387 registered).
