@@ -6863,3 +6863,22 @@ BO4 pairs are almost all a numeral + one head ('2 / 3 / 4 / 6 + 220 740 or 520',
 the numbers inside names are small, and a name can vary only in its number, which is compatible with numbered
 persons (birth order, clan or rank) but equally with 'N of X' counts; this set cannot separate the two. Tally,
 counting parts: 1125 held, 1059 failed (2184 registered).
+
+# Hundred-and-fifty-seventh set, registered before testing (24 September 2026): which kinds of text are names, which titles? (seven hypotheses)
+
+The capture-recapture profile separated persons from titles on Linear B (set 152: persons estimate/observed 3.57,
+shared 0.18, on one document 0.71; titles 1.56, 0.50, 0.51). Here each kind of Indus text gets the same three
+measures. Catches: Mohenjo-daro against Harappa (F, objects without copper unless stated). Units: 740 names and 520
+names = whole names (body, ending) on seals; closer texts = whole distinct lines of genre 'closer' on seals; count
+texts = whole distinct lines of genre 'count' on any object; copper texts = whole texts of Mohenjo-daro copper tablets,
+catches DK against the other major areas (copper tablets are almost all from Mohenjo-daro). A kind is person-like when
+it is nearer the Linear B persons than the titles on 2+ of the 3 measures, title-like when nearer the titles on 2+.
+p < 0.05.
+
+- **GC1** 740 names are person-like.
+- **GC2** 520 names are title-like.
+- **GC3** Closer texts are title-like.
+- **GC4** Count texts are title-like.
+- **GC5** Copper-tablet texts are title-like.
+- **GC6** 520 names are shared between the cities more often than 740 names (share of the smaller city's names; Fisher).
+- **GC7** Closer texts are shared between the cities more often than 740 names (Fisher).
