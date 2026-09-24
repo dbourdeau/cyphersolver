@@ -1802,3 +1802,37 @@ Where numbers occur (F unless said)
 - **J22** Names with a human-figure head contain a numeral in under 5% of cases (pooled A + B).
 - **J23** Fish-headed names contain a numeral more often than other names, length-stratified (pooled).
 - **J24** Names containing a tiered numeral take 520 more often than names containing a short-stroke numeral (pooled).
+
+## Results of the twenty-ninth set (added after the test; `predict_test29.py`, `results/predict_test29.md`)
+
+Ten held, fifteen failed. J21 is invalid by construction: the heading itself contains the stroke pair 2, which counts as
+a numeral, so headed lines 'contain a numeral' almost always (248 of 262); it is recorded as failed and not interpreted.
+
+**The receipts name Harappa's own seal-holders, who are persons.**
+- **J1 holds**: of the 51 receipt names that match the end of a seal name, 39 (76%) match a Harappa seal, against
+  Harappa's 17% share of seal names (p < 0.0001).
+- **J3 holds**: the seal names that end in a receipt name take 740 in 53 of 54 (98%), against 81% of other seal names.
+- **J2 holds**: 33 of the 40 single-sign receipt names (82%) are head-class signs.
+- The system at Harappa: a person holds a seal with a full name (person class, 740); receipts made out to that person
+  in several identical copies give the head of the name, a small number and 400.
+- J4 fails (the number does not track the number of copies), J5 fails (the receipt heads are not titled on seals), J6
+  fails (their picture categories are ordinary).
+
+**Numbers are bound idioms.**
+- **J7 holds**: in M77's multi-line texts a numeral and the sign after it are split by a line break 6.1% of the time,
+  other gaps 25.6% (p < 0.0001, both orders).
+- **J8 holds**: for the 42 signs that follow a numeral 10+ times, the commonest value accounts on average for 70% of
+  their numerals.
+- J9 fails (tablet counts are not more varied than seal numerals for the four shared units). **J25 holds**: 'numeral +
+  700' is on 4 of 1,607 seals (0.25%): the measure count is a tablet formula.
+
+**Titled fish names.** **J12 holds** (stroke-pair fish names are rarer on tablets, 7.2% against 10.7%) and **J13 holds**
+(their heading opens with 861 more often: 36 of 68, against 57 of 172 other headed names; p = 0.007). J10 and J11
+fail (not a Mohenjo-daro or unicorn-seal trait).
+
+**Where numbers occur.** **J16 holds**: at Harappa, later count tokens are moulded (64%) where earlier ones were incised
+(35% moulded; p = 0.0002): a shift from writing each token to casting them. **J20 holds**: seals with other animals
+carry numerals more often than unicorn seals (+9.5 points, p = 0.001). J14, J15, J17, J18, J19, J22, J23, J24 fail
+(J22: 34% of human-headed names contain a numeral; J24 the other way: tiered-number names take 520 less).
+
+Tally, counting parts: 145 held, 217 failed (362 registered).

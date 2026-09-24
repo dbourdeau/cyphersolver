@@ -1133,6 +1133,15 @@ The stroke pair belongs with the fish and those names carry the heading (E11, E1
 depends on the following sign: numeral + sign pairs are idioms, not free counts (E14-E16). Copper tablets carry no
 numbers (E19). Tally 135 held, 202 failed.
 
+## Forty-third pass (24 Sept 2026): receipts, number idioms, titled names
+
+Registered first (PREDICTIONS.md, twenty-ninth set, 0c033b95c), tested (`predict_test29.py`). Receipts name Harappa's own
+seal-holders (J1: 76% of matches at Harappa against 17% of seal names) who are persons (J3: 98% 740), by a head sign
+(J2: 82%). Numeral + sign are bound idioms (J7: split by a line 6% against 26%; J8: the commonest value 70% per sign);
+'numeral + 700' is a tablet formula (J25: 4 of 1,607 seals). Stroke-pair fish names are seal names with the 861
+heading (J12, J13). Count tokens shift from incised to moulded over time (J16); other-animal seals carry more numerals
+(J20). J21 invalid (the heading contains the stroke pair). Tally 145 held, 217 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
