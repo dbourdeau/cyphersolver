@@ -4990,3 +4990,31 @@ ninety-first set); 'XC' as the closer template (TP9: 22%; closers take many shap
 reverse: fixed labels are few lines, not few shapes); 'NX' being 2-4 counts (TP13: 65%); E and C excluding each other
 (TP14: 65 lines, 2.4%); templates stable over Harappa periods (TP16: p = 0.0001, they change); and headed names being
 Mohenjo-daran (TP20: 68%, just under). Tally, counting parts: 746 held, 821 failed (1567 registered).
+
+# Hundred-and-fifth set, registered before testing (24 September 2026): closer inscriptions against name inscriptions (twenty hypotheses)
+
+From the hundred-and-third set: 'closer lines' end in one of 151, 154, 156, 161, 226, 241, 426, 527, 565, 621, 679 and
+mostly have no 740/520. 'Closer body' = the signs before the closer (heading unit removed); 'name body' as before.
+Distinct lines and bodies (A + B); F without copper for site, object, motif tests. Units as in the sixty-first set.
+10,000-draw permutations; p < 0.05.
+
+- **CB1** Closer bodies (2+ signs) end in a sign that also heads names in 60%+.
+- **CB2** 20%+ of closer bodies are also attested name bodies.
+- **CB3** Closer bodies are shorter than name bodies (rank test).
+- **CB4** Closer bodies of 2+ signs contain a unit as often as name bodies (two-sided p >= 0.05).
+- **CB5** The last body sign before a closer depends on the closer (MI).
+- **CB6** Heads shared by closer bodies and name bodies take 740 in 90%+ of their names.
+- **CB7** Closer lines carry the heading unit less often than name lines.
+- **CB8** Closer seal lines are on unicorn seals as often as name seal lines (two-sided p >= 0.05).
+- **CB9** Closer lines at Mohenjo-daro are a larger share of seal inscriptions than at Harappa (F seals).
+- **CB10** Closer bodies hold a fish less often than name bodies.
+- **CB11** Closer bodies hold a numeral as often as name bodies (two-sided p >= 0.05).
+- **CB12** The opener of closer bodies depends on the closer (MI).
+- **CB13** Closer bodies share openers with name bodies in 60%+ of closer-body opener types.
+- **CB14** Closer-line texts are on one object only more often than name-line texts (F).
+- **CB15** Closer lines are commoner in the earlier Harappa period (F, Harappa seals and tablets with a period).
+- **CB16** 156 and 527 lines differ in site (two-sided).
+- **CB17** The sign before the closer is a 520-class head less often than the sign before 520 in names.
+- **CB18** In 12%+ of closer lines a 740/520 stands directly before the closer (name + closer).
+- **CB19** B: CB5 holds.
+- **CB20** B: CB1 holds.
