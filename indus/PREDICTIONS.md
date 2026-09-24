@@ -3009,3 +3009,14 @@ name line (name_of). A + B pooled unless F is named. Head class from classes(A).
 - **CL8** 20%+ of 527, 156 and 154 tokens directly follow 740 or 520.
 - **CL9** Closer lines open with a heading less often than regular lines.
 - **CL10** 50%+ of the signs standing before a closer (types with 2+ such tokens) are head-class.
+
+## Results of the fifty-seventh set (added after the test; `predict_test57.py`, `results/predict_test57.md`)
+
+Two held, eight failed, and the set deflates the fifty-fifth. Requiring the remainder to be an attested name body
+leaves only 73 closer lines in A + B, nearly all 151 (29) and 156 (28), and only 3 with 400, so the 'ending left out
+before 400' idea cannot be tested (CL1-CL3). Closer lines are short (CL6: 86% of 2-3 signs) because their 'bodies' are
+mostly one sign (CL4: mean 1.3 against 3.1): 'X 151' and 'X 156' pairs, not names with another ending. The closers are
+not post-name signs (CL8: 527, 156, 154 follow an ending in 1% of tokens), they precede 740/520 in 21% of tokens (CL7),
+the sign before them is usually not a head (CL10: 4 of 18), and they are not a Harappa habit (CL5) or unheaded (CL9).
+The fifty-fifth set's alternative endings should be read as short sign pairs; only 400 and 151 as post-name signs remain
+from before. Tally, counting parts: 328 held, 409 failed (737 registered).

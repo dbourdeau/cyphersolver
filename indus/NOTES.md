@@ -1347,6 +1347,13 @@ pairwise precedences with numerals and fish attributes floating in long names; (
 genre and formulas the open one, with 173 rare formula-only signs; (5) short seal names can close with 400, 151 or a few
 other signs in place of 740/520. Still structure only; no sound values.
 
+## Seventy-first pass (24 Sept 2026): the other closers (loop 3, round 1)
+
+Registered first (fifty-seventh set, 0bf150836), tested (`predict_test57.py`). The alternative closers of the
+fifty-fifth set do not hold up: with an attested body required, closer lines are mostly one-sign 'X 151' and 'X 156'
+pairs, the new closers are not post-name signs, and 400 without an ending is too rare to test. Withdrawn as a finding.
+Tally 328 held, 409 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
