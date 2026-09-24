@@ -2009,6 +2009,13 @@ a 17% token share; NP2 had no registered baseline), and a numeral is the head of
 before 740). Consistent with number words in names or phonetic use, not decisive between them. Tally 1085 held, 1020
 failed.
 
+## Hundred-and-fifty-eighth pass (24 Sept 2026): the ending slot over time
+
+Registered first (hundred-and-forty-fourth set, 4bb652350). All eight failed: the 520 share, closers, 400/90,
+stacking closers and count texts are flat between early and late levels at both cities, with no Harappa trend. Heads
+new in the late level take 740 in 34 of 34 (against 83%): 740 is the productive default, the 520 class closed and old.
+Tally 1085 held, 1028 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

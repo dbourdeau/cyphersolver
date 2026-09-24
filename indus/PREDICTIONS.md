@@ -6483,3 +6483,20 @@ late minus early, with the level labels permuted within site (10,000 draws, two-
   the paradigm is productive).
 - **TM7** At Harappa, the 520 share has a monotone trend over the fine periods (Spearman with period, permutation).
 - **TM8** The share of count-genre texts changes.
+
+## Results of the hundred-and-forty-fourth set (added after the test; `predict_test144.py`, `results/predict_test144.md`)
+
+None held, eight failed. Deviation, fixed before recording: the first run took TM4's 740 texts from name_of, which
+drops texts ending in a stacking closer other than 151; rerun on texts where 740 is followed only by markers (the
+registered sense). Result unchanged (fails).
+
+1,029 distinct (text, site, level) at Mohenjo-daro and Harappa. **The ending slot does not change between early and
+late levels**: the 520 share (TM1: 16.1% against 14.3%), closer texts (TM2: 8.6% against 8.3%), 400/90 after the
+ending (TM3: 21% against 16%, p = 0.16), stacking closers (TM4: 2.8% against 2.4%) and count texts (TM8: 19% against
+18%) are flat, and there is no trend over Harappa's fine periods (TM7: 520 share 4/26, 25/125, 1/5, 0/3). Heads keep
+their majority ending in 17 of 19 (TM5, just under 90%). **TM6 fails the informative way**: heads first seen in the
+late level take 740 in 34 of 34 names, against 83% for heads already attested (p = 0.007). New names are made with 740;
+the 520 class does not grow. This is the diachronic form of the finding that the 520 class is lexical: 740 is the
+productive default, 520 a closed set of old heads. Reading: the ending slot is a stable convention over the period the
+levels cover (generations, not centuries of language change); if it wrote grammatical endings, the grammar did not
+move in that span. Tally, counting parts: 1085 held, 1028 failed (2113 registered).
