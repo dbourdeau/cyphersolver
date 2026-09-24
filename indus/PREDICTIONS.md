@@ -8477,3 +8477,14 @@ Same objects, motifs and split rule as sets 200-201; nulls as there (1,000 shuff
 - **WM4** On seals, phrase matching does beat the majority-class rate (unicorn) on unseen seals.
 - **WM5** On seals, phrase matching beats its null (p < 0.05, 300 shuffles).
 - **WM6** Progress rule: WM1 and WM2 hold (a better picture vault that replicates on a new split).
+
+## Results of the two-hundred-and-second set (added after the test; `predict_test202.py`, `results/predict_test202.md`)
+
+One held, five failed. Weighting shared pairs and triples by rarity does not improve the picture vault (23.6% on split
+200, was 24.5%; 19.5% on split 201, was 18.6%; WM1 fails), though both still beat their nulls (WM3). On a new split
+(seed 202) it does not: 19 of 184 (10.3%), p = 0.16 (WM2 fails). **This weakens set 201**: the phrase-picture effect
+holds on two splits of three and depends on which text groups fall in the vault (chiefly the elephant and tree
+phrases). Phrase matching on seals does worse than always guessing the one-horned bull (72.2% against 78.4%; WM4) and
+does not beat its null (p = 0.11; WM5). No progress: streak 1. Set 201's picture-vault line in the prize tiers is
+marked 'split-dependent' until an estimate over many splits is made. Tally, counting parts: 1323 held, 1221 failed
+(2544 registered).

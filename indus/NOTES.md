@@ -2413,6 +2413,12 @@ Registered first (d4a53964d). Shared sign pairs predict unseen tablets' pictures
 p = 0.03): elephant 706 33 923 740, tree 806 158, gaur 233 520. Graphic decade families beat learned classes for S
 (4.685 vs 4.712+), A -> B too. Progress: streak 0. Tally 1322 held, 1216 failed.
 
+## Two-hundred-and-sixteenth pass (24 Sept 2026): decipherment loop 27, sharper phrase matching
+
+Registered first (5f60855dc). Weighting phrases by rarity does not help; a third split fails its null (10.3%, p =
+0.16): the phrase-picture effect is split-dependent. Seals: phrases no better than guessing the bull. No progress:
+streak 1. Tally 1323 held, 1221 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
