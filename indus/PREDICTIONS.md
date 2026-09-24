@@ -4850,3 +4850,16 @@ B alone
 - **RR18** (MX8) For 50%+ of medial endings, 'sign before + ending' is a whole 1-sign-body name.
 - **RR19** (HS4) 861-headed lines are formulas more often than 817-headed lines.
 - **RR20** (CF11) 705 and 706 are free variants (p >= 0.05).
+
+## Results of the hundred-and-first set (added after the test; `predict_test101.py`, `results/predict_test101.md`)
+
+Fifteen held, five failed. On the fuller corpus without copper (2,217 distinct lines) nearly everything recent
+replicates: medial endings are 740 (RR1: 88%) and close a 1-sign name (RR2: 57%) with a recurring element (RR3: 61%);
+heading signs are interchangeable before the same body (RR4: 15 of 17) and differ in the stroke that follows (RR5, p =
+0.0001); '1' follows an ending where '2' and '3' never do (RR7: 17 against 0) and only 820 takes '1' after a heading (RR8:
+11 of 11); openers precede numerals (RR9: 53% against 16%); numerals after 705/706 are 33 (RR11: 92%) and 705/706 are free
+variants (RR12); the four frozen counts keep their values (RR13: 4 of 4); catalogue neighbours share contexts (RR14, p
+= 0.03). Not replicated in F': 861 heading formulas more than 817 (RR6: 42% against 36%, p = 0.19) and openers being seal
+signs (RR10). In B several tests are degenerate: B has no 817 lines (RR19), writes 705 and 706 as one sign (RR20 holds
+trivially), and has only 1 and 3 cases for RR15 and RR16; openers do not precede numerals in B (RR17) and 'X 740' before a
+medial ending is a name in 48% (RR18, just under 50%). Tally, counting parts: 715 held, 792 failed (1507 registered).

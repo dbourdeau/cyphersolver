@@ -1668,6 +1668,17 @@ contexts in A + B, B and F; candidate same-sign pairs 435/436, 526/527, 336/337,
 city or period, so they are free variants, not regional spellings. Mohenjo-daro has 13 signs unseen at Harappa. B
 merges 57 of A's signs, a caveat for B replications. Tally 700 held, 787 failed.
 
+## Hundred-and-fifteenth pass (24 Sept 2026): recent findings on held-out data
+
+Registered first (hundred-and-first set, d8e23cd31), tested (`predict_test101.py`). Fourteen of fourteen F' tests of the
+medial-ending, heading, '1', opener, jar, frozen-count and shape-family findings replicate except 861-formulas (HS4)
+and openers-on-seals (PZ12), now unconfirmed. B tests are mostly degenerate because B merges or lacks the signs
+involved (no 817, 705 = 706).
+
+Summary of sets 99-101: 7 opener and 14 closer signs hold their places everywhere; catalogue shape families share
+function and give 5 candidate free-variant pairs; the recent findings replicate on the fuller corpus. Tally 715 held,
+792 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
