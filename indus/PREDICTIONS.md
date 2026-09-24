@@ -84,3 +84,13 @@ internal 740 end in 740 / 520 / 90 / 400 more often than texts of the same lengt
 Test design fixed in advance: held-out texts only (M77 additions + the fuller corpus's texts not in the ICIT-derived
 dump, icit_full.py). R1 holds if both thresholds are met. R2 holds if the share of ending-closed texts among texts with
 an internal 740 exceeds that among length-matched texts without one, Fisher p < 0.05.
+
+## Results of the third set (added after the test; `predict_test3.py`, `results/predict_test3.md`; held-out texts)
+
+- **R1 fails.** Of 152 stroke numerals inside names, 40 (26.3%) stand last, right before the ending (units such as
+  long 3 + 520), and 104 (68.4%) are followed by a non-numeral sign; the thresholds were under 10% and 90%+.
+- **R2 fails.** Texts with an internal 740 close with an ending or the man sign in 11% (12 of 107), length-matched
+  texts without one in 34%. The operationalisation was crude (some cases are 740 90 400, a doubled second slot, not a
+  second possessor), but it was the registered one.
+- Tally of the registered predictions: 2 held (Q1, Q2: the head decides the class), 4 failed (P1, P3, R1, R2). The
+  structural reading predicts where the class is set; it has not predicted plurals, numeral placement or stacking.
