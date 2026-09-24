@@ -2921,3 +2921,14 @@ unless stated. 10,000-draw permutations; p < 0.05.
 - **FO8** Of signs formula-only in A that occur in B, 80%+ are absent from B's name bodies.
 - **FO9** Formula-only tokens are preceded by a heading (817, 820, 861) more often than shared tokens.
 - **FO10** Formulas with a formula-only sign carry no numeral more often than other formulas.
+
+## Results of the fifty-fourth set (added after the test; `predict_test54.py`, `results/predict_test54.md`)
+
+Five held, five failed. 173 signs occur in formulas but never in a name body; they are rare (FO3: mean 3.6 tokens
+against 45), hold as a class in the other transcription (FO8: 19 of 23 of A's formula-only signs are absent from B's
+name bodies), close their formula more often (FO1: 43% against 34%), appear in formulas without a numeral (FO10: 50%
+against 37%) and are a little commoner on objects other than seals and tablets (FO7: 12% against 9%). They are not
+counted items (FO2: 20% against 21% after a numeral), not headed (FO9), not local to one site (FO5), and their formulas
+are longer, not shorter (FO6: 4.0 against 3.2). Against expectation they sit on seals more, not less (FO4: -15.3
+points, length-stratified). Reading: a long tail of rare, line-final labels in longer uncounted seal formulas, which
+is what makes the formula genre open. Tally, counting parts: 314 held, 393 failed (707 registered).

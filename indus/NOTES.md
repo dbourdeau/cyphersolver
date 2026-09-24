@@ -1321,6 +1321,12 @@ Registered first (fifty-third set, 67dcbd266), tested (`predict_test53.py`). Rev
 repetitive, closed genre (more repeated pairs, fewer signs, fewer hapaxes); formulas are open and varied. Harappa and
 tablet lines are the most repetitive. Tally 309 held, 388 failed.
 
+## Sixty-eighth pass (24 Sept 2026): signs used only in formulas (loop 2, round 8)
+
+Registered first (fifty-fourth set, f23751354), tested (`predict_test54.py`). 173 rare signs never enter names; they
+close longer, uncounted formulas, more often on seals than tablets, and the class replicates in B. Tally 314 held, 393
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
