@@ -5116,3 +5116,31 @@ head; RH13: 61% start with an opener) and full of formula-only signs (RH14: 20% 
 head (RH15: 66%). At the smaller sites closer inscriptions are a quarter of seal inscriptions (RH16: 42 of 168), and
 bare lines are short (RH17) and name-shaped (RH18: 63%). In B, block 1 heads (RH19: 51% against 33%) and closer bodies
 avoid fish (RH20: 26% against 40%). Tally, counting parts: 789 held, 838 failed (1627 registered).
+
+# Hundred-and-eighth set, registered before testing (24 September 2026): the four genres as systems (twenty hypotheses)
+
+Genre of a distinct line (A + B): 'name' (name_of gives a name), 'closer' (ends in a closer, no 740/520), 'count' (a
+formula with a numeral), 'bare' (template X), else 'other'. F without copper for object, site and period tests.
+'Genre-specific sign' = a non-numeral sign with 10+ tokens, 70%+ of them in one genre. 10,000-draw permutations; p < 0.05.
+
+- **GS1** 30%+ of signs with 10+ tokens are genre-specific.
+- **GS2** Genre-specific signs exist for all four genres.
+- **GS3** Genre depends on object type (MI; seal, TAB:I, TAB:B, potsherd, other).
+- **GS4** Genre depends on the city (MI).
+- **GS5** At Harappa, genre depends on the period (MI).
+- **GS6** Name and closer lines share sign types more than name and count lines do (Jaccard over types).
+- **GS7** Bare and count lines share sign types more than bare and name lines do.
+- **GS8** Line length depends on genre (MI over length strata).
+- **GS9** Genre depends on the first sign (MI over first signs with 5+ lines).
+- **GS10** Genre depends on the last sign more than on the first sign (MI larger, both significant).
+- **GS11** On objects with 2+ lines, the lines' genres agree more often than when genres are shuffled among those lines
+  (F).
+- **GS12** Seals carry names or closers in 70%+ of their lines (F).
+- **GS13** Incised tablets carry counts or bare lines more often than moulded tablets (F).
+- **GS14** Potsherd lines are bare or count lines in 70%+ (F).
+- **GS15** Genre shares at the smaller sites match the two cities' (MI site-group against genre p >= 0.05).
+- **GS16** Genre-specific signs are rarer (fewer tokens) than shared signs (rank test).
+- **GS17** Count-specific signs are block 3 or block 1 more often than other genre-specific signs.
+- **GS18** B: GS1 holds.
+- **GS19** B: GS8 holds.
+- **GS20** F': GS1 holds.
