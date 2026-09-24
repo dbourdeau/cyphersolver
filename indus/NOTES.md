@@ -2181,6 +2181,14 @@ are shorter but not title fields; rising openers are not sealing openers; no in-
 a scribe's hand across pairs is borderline (p = 0.059). AD9 ill-posed; 5 of 16 foreign stroke runs precede signs
 never counted at home. Tally 1177 held, 1111 failed.
 
+## Hundred-and-eighty-second pass (24 Sept 2026): controls on published claims and on the count texts
+
+Registered first (ff42dfa9c). '2 + fish' is commonest with copies counted and in M77 too: three transcriptions agree
+against Parpola's '6 + fish'. Ur III legends avoid repetition as Indus lines do (9.5% against 13.4% at 5-7 units), so
+Farmer-Sproat-Witzel's repetition argument fails on a same-genre control. Linear B counts are about as local between
+palaces (47%) and as open as Indus count texts, so set 150's 'local naming customs' is withdrawn to 'local, as counts
+are'. The copper-tablet picture signs never occur in seal names. Tally 1183 held, 1115 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

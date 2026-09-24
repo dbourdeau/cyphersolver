@@ -7307,3 +7307,24 @@ but is ill-posed, noted after the test: 'never counted at home' was defined from
 rate is 0 by construction; what stands is descriptive: 5 of 16 West Asian stroke runs stand before signs never counted
 anywhere in the Indus homeland, which fits strokes used for sound in foreign names (set 136) but on few cases. West
 Asian stroke runs are not smaller (AD10). Tally, counting parts: 1177 held, 1111 failed (2288 registered).
+
+## Results of the hundred-and-sixty-eighth set (added after the test; `predict_test168.py`, `results/predict_test168.md`)
+
+Six held, four failed. **Parpola's '6 + fish' is not recovered by counting copies or by Mahadevan's transcription**:
+with every object and copy counted the commonest numeral + fish is 2 (CT1: 117, then 3: 31, 6: 9), and in M77's
+full transcription (mapped through the alignment) also 2 (CT2: 123, then 3: 24, 6: 12). With set 139 (Parpola's own
+CISI text), three transcriptions and two ways of counting agree against 'the most frequent sequence'.
+
+**Two controls change how earlier results should be read.** (1) Real texts avoid repetition: Indus seal lines of 5-7
+signs repeat a sign in 9.5% against 28% for shuffled lines (CT6), but Ur III seal legends of 5-7 lemmas do the same,
+13.4% against 34% (CT7 fails the registered direction). Repetition below chance is ordinary for real texts, and the
+Indus rate is close to the Sumerian one (CT5): against Farmer, Sproat and Witzel's claim that Indus texts repeat too
+little to be writing. (2) Linear B commodity counts differ between Knossos and Pylos for 8 of 17 logograms (CT3: 47%,
+just under the bar) and Linear B entries (logogram + quantity) have the open profile (CT4: 3.24, 0.20, 0.63), as
+Indus count texts do. So the locality of Indus numeral compounds (set 150: values differ between the cities for 61%
+of signs) is of the size real counts show, and does not need a local naming custom; set 150's 'local naming customs'
+is withdrawn to 'local, as counts are'.
+
+**The picture signs are copper-tablet words.** 749, 341 and 753 occur only on copper tablets and 777 on one seal
+besides, so they never head a seal name (CT8, CT9: no cases, failed as registered). Copper-tablet texts otherwise
+use the seal vocabulary (CT10: 94% of tokens). Tally, counting parts: 1183 held, 1115 failed (2298 registered).
