@@ -1333,6 +1333,20 @@ Registered first (fifty-fifth set, 3b5cb5cad), tested (`predict_test55.py`). Som
 something other than 740/520: the post-name signs 400 and 151 without the ending, and three new candidate closers
 (527, 156, 154) that follow heads and alternate with the regular endings on 42 bodies. Tally 320 held, 397 failed.
 
+## Seventieth pass (24 Sept 2026): replicating loop 2 (loop 2, round 10)
+
+Registered first (fifty-sixth set, 552c0784d), tested (`predict_test56.py`). Tally formulas, the next-sign rule for
+numeral kinds, pairwise precedence, the closed-name/open-formula contrast and the alternative closers replicate on
+held-out data; the seal/tablet contrasts cannot be tested at the smaller sites (9 tablet numerals) and FO1 does not
+replicate. Tally 326 held, 401 failed.
+
+Summary of loop 2 (sets 47-56, 100 hypotheses): 57 held. What stands up: (1) formulas are tally-like, sharing the
+count-token number grammar and recurring with only the number changed; (2) seal counts are a separate practice
+(larger, tiered, headed, citing names) but count the same ordinary signs as tablets; (3) name order is a set of
+pairwise precedences with numerals and fish attributes floating in long names; (4) names are the closed, repetitive
+genre and formulas the open one, with 173 rare formula-only signs; (5) short seal names can close with 400, 151 or a few
+other signs in place of 740/520. Still structure only; no sound values.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

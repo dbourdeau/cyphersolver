@@ -2982,3 +2982,13 @@ data. 10,000-draw permutations unless the original used 1,000.
 - **RQ9** (FO1) In B, formula-only tokens (signs never in B's name bodies) are last in their formula more often than
   shared tokens.
 - **RQ10** (EH4) In B, 5+ name bodies are attested both before 740/520 and before 400, 151, 527, 156 or 154.
+
+## Results of the fifty-sixth set (added after the test; `predict_test56.py`, `results/predict_test56.md`)
+
+Six held, four failed. Replicated: formulas recur with only the number changed in B (RQ1: 48%); the numeral kind
+depends on the next sign at the smaller sites (RQ2, p = 0.0001); pairwise precedence beats the scalar rank in the
+reverse direction, B to A (RQ6: 82 against 15); names are the repetitive genre and formulas the open one in B (RQ7:
+0.79 against 0.71; RQ8: 1,000 of 1,000 subsamples); and 15 B bodies occur both before 740/520 and before one of the
+other closers (RQ10). Not replicated: the seal/tablet contrasts at the smaller sites (RQ3-RQ5) point the same way but
+rest on 9 tablet numerals, too few to test; and formula-only signs do not close their formula more often in B (RQ9:
+37% against 39%), so FO1 is unconfirmed. Tally, counting parts: 326 held, 401 failed (727 registered).
