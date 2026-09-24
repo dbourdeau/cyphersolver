@@ -3795,3 +3795,34 @@ Yet only 10% of common name signs are absent from formulas (LX9). Not supported:
 difference in the shape (LX18: 59% against 54%). Bug fix before recording: the first LX18 run deduplicated on (site,
 shape) instead of (site, name), leaving 4 items; the recorded run counts distinct (site, name). Tally, counting parts:
 479 held, 548 failed (1027 registered).
+
+# Seventy-eighth set, registered before testing (24 September 2026): the grammar of the formulas (twenty hypotheses)
+
+Distinct formula lines (non-name lines, A + B) unless stated. In a formula with a numeral: 'pre' = the signs before the
+first numeral run (may be empty), 'item' = the sign right after a numeral run, 'value' = that run's sum. Name bodies
+and heads from distinct names. F tests use distinct (site, type, line). 10,000-draw permutations; p < 0.05.
+
+The part before the number
+- **FG1** In 20%+ of formulas with a non-empty pre, the pre is an attested name body.
+- **FG2** The pre's last sign is a name head more often than the item is (sign test over formulas with both).
+- **FG3** The item depends on the pre's last sign (MI).
+- **FG4** 50%+ of pres found in 2+ formulas occur with 2+ different items.
+- **FG5** Pres' last signs are name heads for 60%+ of formulas with a pre.
+- **FG6** Seal formulas have a non-empty pre more often than tablet formulas (F).
+- **FG7** Seal pres are attested name bodies more often than tablet pres (F).
+The counted item
+- **FG8** The value depends on the item (MI).
+- **FG9** Items are formula-only signs more often than pre signs are (tokens).
+- **FG10** Where a sign follows the item, it is 400, 90, 151 or a numeral in 30%+.
+- **FG11** Three items account for 50%+ of items directly before a line-final 400.
+- **FG12** 50%+ of items counted in 3+ formulas take 3+ values.
+- **FG13** (value, item) types at either city are at both in 30%+ (F).
+Lists
+- **FG14** In formulas with two numeral runs, the two items differ in 90%+.
+- **FG15** In such formulas, the first value is larger than the second more often than smaller (sign test).
+- **FG16** Item pairs (first, second) recur in 2+ formulas more often than when second items are shuffled.
+Replication
+- **FG17** B: FG2 holds.
+- **FG18** B: FG3 holds.
+- **FG19** Harappa (F): FG8 holds.
+- **FG20** Mohenjo-daro (F): FG8 holds.
