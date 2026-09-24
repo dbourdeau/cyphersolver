@@ -19,6 +19,7 @@ from collections import Counter
 import rtools as R
 from predict_test103 import CL
 from predict_test125 import M2, fit, xent
+from predict_test108 import genre
 from predict_test161 import heading
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -57,7 +58,10 @@ def roles(DL):
         num_before = False
         nm = R.name_of(list(t))
         # set 176 (LP5): body signs before the head of a parsed name are modifiers (head-final name grammar, H7, DT1-DT4)
-        mods = set()
+        mods, bhead = set(), None
+        # set 177 (VP7-VP8): bare lines (no ending) end in a name head 70% of the time; last sign = head, rest = modifiers
+        if not nm and len(t) >= 2 and genre(t) == 'bare':
+            bhead, mods = len(t) - 1, set(range(len(t) - 1))
         if nm and len(nm[0]) >= 2:
             off = next((j for j in range(len(t) - len(nm[0]) + 1) if tuple(t[j:j + len(nm[0])]) == nm[0]), None)
             if off is not None:
@@ -74,7 +78,7 @@ def roles(DL):
                 role = 'post-ending marker'
             elif i == 0 and heading(t):
                 role = 'heading'
-            elif i + 1 < len(t) and t[i + 1] in R.END:
+            elif (i + 1 < len(t) and t[i + 1] in R.END) or i == bhead:
                 role = 'name head'
             elif num_before:
                 role = 'counted sign'

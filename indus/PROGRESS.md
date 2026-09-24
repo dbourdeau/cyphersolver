@@ -25,3 +25,4 @@ makes the texts more predictable) and M rising.
 |---|---|---|---|---|---|---|---|
 | baseline | 1-175 | 4.712 (24.9%) | 56.2% | 16.6% | 0 | 4 | model tri + pos + end, discounted (set 125) |
 | 1 | 176 | 4.712 (24.9%) | 72.9% | 16.6% | 0 | 4 | role / class / numeral-value components add nothing to S; slot-based modifier role adopted in R |
+| 2 | 177 | 4.712 (24.9%) | 81.1% | 16.6% | 0 | 4 | variable-order model +0.005 only (not adopted); anchors 347/460 untestable on new objects; bare-line roles adopted |
