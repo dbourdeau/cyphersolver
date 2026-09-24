@@ -3343,3 +3343,37 @@ are not less often unicorns (CP7) nor more often 740 (CP10). CP8 (exact copies t
 fails but is uninformative, since short lines are one substitution from many others. This set also qualifies the
 sixty-seventh set's TP5: a shared text keeping its picture rests on few, short texts. Tally, counting parts: 386 held,
 461 failed (847 registered).
+
+# Sixty-ninth set, registered before testing (24 September 2026): twenty hypotheses on names as names
+
+F objects (intact, lines reversed) for site tests; A + B pooled otherwise. Names via name_of / names_in; 'body' = the
+name without ending; 'city' = Mohenjo-daro or Harappa; 'other sites' = neither. Units as in the sixty-first set (pairs
+in 5+ distinct bodies). Site nulls shuffle sites among the name tokens tested. 10,000-draw permutations; p < 0.05.
+
+Where names occur
+- **AM1** Identical name bodies (2+ signs) occur at both cities less often than when sites are shuffled among name
+  tokens (names are local).
+- **AM2** Seals with identical full texts come from one site more often than shuffled.
+- **AM3** When a long body (4+) ends in another attested body, that shorter body is attested at the long one's site
+  more often than shuffled.
+- **AM4** A name body embedded in a formula is attested as a name at the formula's site more often than shuffled.
+- **AM5** Harappa name bodies are shorter than Mohenjo-daro name bodies (rank test, F).
+- **AM6** 80%+ of heads (last body signs) of names at other sites are also heads at Mohenjo-daro or Harappa.
+The two endings
+- **AM7** Bodies attested with both 740 and 520 have both forms at one site more often than shuffled.
+- **AM8** 520 names are off seals more often than 740 names (F).
+- **AM9** Among bodies with both endings, the 520 form is off seals more often than the 740 form (paired sign test).
+- **AM10** 520 names are a larger share of names at Harappa than at Mohenjo-daro (F).
+Counted things inside names
+- **AM11** 80%+ of numerals directly before a fish sign in name bodies have value 1-3.
+- **AM12** The value before a fish depends on which fish (MI, permutation).
+- **AM13** Names with a numeral inside the body are a larger share at Mohenjo-daro than at Harappa (F).
+The stock of names
+- **AM14** 70%+ of distinct name bodies are attested on one object only.
+- **AM15** Bodies on 3+ objects are shorter than bodies on one (rank test).
+- **AM16** 70%+ of one-off bodies of 3+ signs contain a unit.
+- **AM17** The 20 commonest first body signs combine with more distinct heads than frequency-matched signs do at
+  other positions (count of distinct following-heads, permutation over matched signs).
+- **AM18** Unicorn seals (Bull1) are whole-name lines (the line is a name line) more often than other-motif seals.
+- **AM19** A body's ending is predicted by its head better than by its first sign (MI, bodies of 2+).
+- **AM20** Names at other sites are shorter than names at the two cities (rank test, F).
