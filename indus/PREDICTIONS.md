@@ -6900,3 +6900,25 @@ But 'personal names' is one reading of that openness, not the only one; any syst
 descriptions, counts) gives it. What the 520 / closer tests add: 520 names and closer texts are not a small shared
 set of titles or divine names either; they are as varied and as local as 740 names. Tally, counting parts: 1127 held,
 1064 failed (2191 registered).
+
+# Hundred-and-fifty-eighth set, registered before testing (24 September 2026): Ur III seal legends as a read control (seven hypotheses)
+
+A second read control, this time of the same genre: Mesopotamian seal legends. Data: ORACC epsd2/admin/ur3 JSON
+export (CC0; `ur3_seals.py` streams the 562 MB zip and keeps the 'seal N' surfaces: 22,179 texts, 70,367 seal lines,
+lemmas with part of speech, in `data/ur3_seals.tsv`). A legend = the lemma sequence of one seal surface; distinct
+legends stand for distinct seals (one seal rolled on many tablets gives one legend). Catches: Umma against Girsu
+(provenience). Owner = the PN on line 1; title = an N lemma on a later line other than dumu (child), arad (servant),
+lugal (king); father = the PN after dumu. Profiles as set 157 against the Linear B persons and titles.
+Indus side for UR5-UR7: F seals at Mohenjo-daro and Harappa. p < 0.05.
+
+- **UR1** Ur III owner names are person-like.
+- **UR2** Ur III titles are title-like.
+- **UR3** Ur III whole legends are person-like (open, as whole Indus texts were in set 157).
+- **UR4** Ur III fathers are person-like.
+- **UR5** Indus seals with two names (two name units, in one line or two) are at least half as common as Ur III legends
+  with two or more PNs (the filiation format).
+- **UR6** Indus seals with a post-name field (a closer, 400 or 90 after the ending, or a separate non-name line) are
+  within a factor of 2 of the share of Ur III legends with a title.
+- **UR7** Both title stocks are closed: the ten commonest Ur III titles cover 60%+ of titled legends, and the ten
+  commonest Indus post-name signs (closers, 400, 90, or the last sign of a separate non-name line) cover 60%+ of Indus
+  seals with a post-name field.
