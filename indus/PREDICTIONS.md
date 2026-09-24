@@ -8219,3 +8219,30 @@ the decade families beat all 20 draws, FB3), nor do the coarse hundred blocks (-
 weight 0.08 in both runs (FB5). So graphic variants share contexts: the variant marks (cage, strokes, fish marks) sit on
 a base sign whose grammatical environment carries over, which fits the morphographic reading of loops 9-14. S enters the
 metric at 4.697. Progress: streak 0. Tally, counting parts: 1294 held, 1202 failed (2496 registered).
+
+# Hundred-and-ninety-fifth set, registered before testing (24 September 2026): decipherment loop 20, the L bench against the world's languages (six hypotheses)
+
+Metric after loop 19: S 4.697, R 81.3%, M 16.6% (M+ 41.4%), G margin A 46.2 / B 34.7, P 0, L 4; streak 0. The owner
+asked for an L bench that narrows the language explicitly, with typology-matched decoys (Turkish, Japanese, Basque,
+Burushaski ...) rather than only Sanskrit and shuffled keys. L as a count of open families cannot move without a whole
+family falling, so a graded component is added: **L world** = share of the world's language groups whose typology is
+incompatible with the Indus profile. The profile uses only structure established here without sound values:
+suffixing (the ending follows the name; WALS 26A = 2 or 3), possessor/modifier before head (head-final names; 86A = 1,
+87A = 1), numeral before the counted sign (89A = 1), case suffixes (post-ending markers after the ending; 51A = 1 or
+6), and, as a separate weaker variant, a two-way class ending (740 / 520; 30A = 2+). A language is assessed when 3+
+profile features are coded; a genus is compatible if any assessed member is. Data: WALS (CLDF, CC-BY 4.0;
+`data/wals_profile.tsv`) and, as the independent replication, Grambank (CLDF, CC-BY 4.0): GB024 = 1/3 (Num-N), GB065 =
+1/3 (possessor first), GB193 = 1/3 (property word first), class variant = any of GB051/052/053/054/192 present,
+assessed with 2+ coded, grouped by Glottolog family. Disclosed before testing: a design run on WALS gave 80.9% of 444
+genera excluded (core) and 82.0% (with class); some Grambank codes of the South Asian candidates were looked at
+(Tamil/Telugu GB053 = 0; Hindi GB321 = 0, Marathi 1): database codes do not split Dravidian from Indo-Aryan on class
+assignment, so no hypothesis below relies on that.
+
+- **LW1** Grambank replication: the core profile excludes 50% or more of the Glottolog families assessed.
+- **LW2** Every assessed Dravidian and Indo-Aryan language is compatible with the core profile in both databases.
+- **LW3** The core profile does not separate the two candidates: Dravidian and Indo-Aryan compatibility rates are
+  equal in both databases (this test cannot choose between them).
+- **LW4** With the class variant, Turkish, Japanese and Basque are excluded in Grambank, while every assessed Dravidian
+  and Indo-Aryan language is kept.
+- **LW5** Families compatible with core + class in Grambank are 10% or fewer of the families assessed.
+- **LW6** Progress rule: LW1 and LW2 hold (L world enters the metric, replicated in an independent database).
