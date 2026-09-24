@@ -2090,6 +2090,12 @@ Registered first (9f410531e). Name elements come from one pool used in every pos
 fish). DT3 was ill-posed (distinct pairs against shuffles). A shared element pool, not free-order dithematic names.
 Tally 1122 held, 1058 failed.
 
+## Hundred-and-seventieth pass (24 Sept 2026): numerals in names as birth-order or clan numbers
+
+Registered first (9f410531e). Name numerals are small (83% worth 4 or less; slightly more than in count texts) and
+29 name pairs differ only in the number, but these are mostly 'N + one head' (2/3/4/6 + fish), the counting
+construction. Birth-order or rank numbers and counts are not separated. Tally 1125 held, 1059 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

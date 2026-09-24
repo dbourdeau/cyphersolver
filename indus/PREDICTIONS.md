@@ -6852,3 +6852,14 @@ reversibility; sign order is otherwise fixed (H2). Reading: name elements are dr
 every position, which is a feature of dithematic personal-name systems, but the order is fixed except among fish, so
 it is not the Greek/Germanic kind where the two elements swap freely. Tally, counting parts: 1122 held, 1058 failed
 (2180 registered).
+
+## Results of the hundred-and-fifty-sixth set (added after the test; `predict_test156.py`, `results/predict_test156.md`)
+
+Three held, one failed; weak. Name numerals are small slightly more often than count-text numerals (BO1: 83% against
+78%, p = 0.025; 2 dominates, 252 of 594), name-opening runs are worth 4 or less in 83% (BO2), and 29 pairs of names
+differ only in the opening value (BO4). But the opening value does not depend on the city (BO3: p = 0.12), and the
+BO4 pairs are almost all a numeral + one head ('2 / 3 / 4 / 6 + 220 740 or 520', '2 / 3 / 4 + 840 740', '3 / 4 / 5 / 8
++ 900 740'): the count-a-sign construction, which a birth-order name and a counted noun would both produce. Reading:
+the numbers inside names are small, and a name can vary only in its number, which is compatible with numbered
+persons (birth order, clan or rank) but equally with 'N of X' counts; this set cannot separate the two. Tally,
+counting parts: 1125 held, 1059 failed (2184 registered).
