@@ -7151,3 +7151,18 @@ Definitions as sets 161-162; levels as predict_test18.level; seals in F.
 - **TS8** MX10 holds on square seals alone (site-stratified, one-sided p < 0.05).
 - **TS9** Tag (sealing) texts are shorter than seal texts (rank test, per object).
 - **TS10** At Lothal and at Kalibangan separately, 70%+ of tag names of 3+ signs begin with a shared opener.
+
+## Results of the hundred-and-sixty-third set (added after the test; `predict_test163.py`, `results/predict_test163.md`)
+
+Nine held, one failed. **Length-matched, the Indus names still match Linear B persons.** At 3 units the Indus name
+estimate/observed is 3.04 against 3.67 for 3-syllable Linear B persons (LM1, quotient 0.83), at 4 units 2.95 against
+3.38 (LM2, 0.87). Indus head + ending names (2 signs) come out closer to Ur III owner names (LM3: 1.29 against 2.04),
+and 3-unit texts are open in both Indus lines and Ur III legends (LM4: 5.49 and 18.06). Sharing falls with length in
+both scripts (LM10: Spearman -0.87 and -1.00), so length matters, but at equal length the Indus names and Linear B
+person names have the same profile: set 152's comparison survives the length control that set 161 applied to the
+openers. **Real names recur far beyond combinatorics**: 20 Indus names are in both cities against 0.8 when signs are
+shuffled within each city (LM5, excess 25), as Linear B persons recur 33 times beyond syllable shuffles (LM6) and Ur
+III legends 3 times beyond lemma shuffles (LM7). So the shared names are real repeated names, not accidental
+combinations. 520 names recur more beyond combinatorics than 740 names (LM8: excess 50 against 19), fitting the 520
+class as a narrow set of widespread names. LM9 fails by construction (Ur III owner names are single lemmas, so
+shuffling cannot change them; excess 1). Tally, counting parts: 1163 held, 1085 failed (2248 registered).

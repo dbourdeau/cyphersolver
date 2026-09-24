@@ -2145,6 +2145,13 @@ concentration, no size or quarter effect); the head sets the ending (z 22.7). B 
 set 161's length caveat. New: frequent openers begin 90% of long names on sealings (tags) against 57% on seals, and
 become more common in late levels (+0.26): standardised name openings over time. Tally 1154 held, 1084 failed.
 
+## Hundred-and-seventy-seventh pass (24 Sept 2026): length-matched and shuffled baselines
+
+Registered first (sets 163-164 together, 3af4b42ab). At equal length (3 and 4 units) Indus names have the Linear B
+person profile (ratios 3.0 against 3.7 and 3.4); sharing falls with length in both scripts. Real names recur 25 times
+beyond sign shuffles (Linear B persons 33, Ur III legends 3); 520 names recur more than 740 names beyond chance (50
+against 19). Set 152's comparison survives length control. LM9 degenerate. Tally 1163 held, 1085 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
