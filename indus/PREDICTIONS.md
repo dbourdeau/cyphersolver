@@ -6838,3 +6838,17 @@ somewhat more often (SP1: 61% against 41%, p = 0.051), but not from the same sub
 co-located either (SP5 holds, p = 0.10). Reading: with so few repeated long names, same-name seals cannot be tied to
 one owner; that 92% of names are on a single seal (set 147) is itself the main fact, and it fits one seal per
 person. Tally, counting parts: 1118 held, 1058 failed (2176 registered).
+
+## Results of the hundred-and-fifty-fifth set (added after the test; `predict_test155.py`, `results/predict_test155.md`)
+
+Four held, none failed, with two caveats. 242 distinct two-sign bodies, 199 three-sign bodies. Heads also open
+names (DT1: 20 of 31 heads with 3+ two-sign names, 65%); middle signs of three-sign bodies come from the same pool as
+openers and heads (DT4: 66 of 76, 87%); reversed pairs occur (DT2: 6 against a shuffled median of 2). **Caveats noted
+after the test:** (1) DT3 is ill-posed: on distinct bodies every (opener, head) pair is unique, while shuffles create
+repeated pairs and so raise MI; p = 1.0 is that artefact, not evidence of free combination. It is counted as held
+under the registered rule but carries no weight. (2) The six reversed pairs are almost all fish pairs (220 235, 220
+240, 235 240, 233 803, 235 803, 240 806): the known free order of stacked fish (set 67 and after), not a general
+reversibility; sign order is otherwise fixed (H2). Reading: name elements are drawn from one shared pool used in
+every position, which is a feature of dithematic personal-name systems, but the order is fixed except among fish, so
+it is not the Greek/Germanic kind where the two elements swap freely. Tally, counting parts: 1122 held, 1058 failed
+(2180 registered).

@@ -2083,6 +2083,13 @@ Registered first (9f410531e). Underpowered: only 14 long names recur (6 usable M
 share a site somewhat more (61% against 41%, p = 0.051) but not an area, level or motif. Same-name seals cannot be
 tied to one owner; one name per seal (92%) is the fact that fits personal seals. Tally 1118 held, 1058 failed.
 
+## Hundred-and-sixty-ninth pass (24 Sept 2026): names from two interchangeable elements?
+
+Registered first (9f410531e). Name elements come from one pool used in every position (65% of heads also open names;
+87% of middle signs are also openers or heads), but order is fixed except among stacked fish (the 6 reversed pairs are
+fish). DT3 was ill-posed (distinct pairs against shuffles). A shared element pool, not free-order dithematic names.
+Tally 1122 held, 1058 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
