@@ -3939,3 +3939,36 @@ alone: p = 0.021; CG20 in B: p = 0.14). Post-test count on distinct lines: 740 i
 151 (8); 520 by 400 only (10) and never by 90 or 151. So the post-name signs attach to 740: '740 90' and '740 151' are
 collocations, not a case alternation of the head. Names cited in formulas are 740 less often (CG18: 72% against 87%),
 so citation is not neutral. Tally, counting parts: 506 held, 581 failed (1087 registered).
+
+# Eighty-first set, registered before testing (24 September 2026): what the two classes are (twenty hypotheses)
+
+From the eightieth set: each head belongs to a 740 class or a 520 class. 'Class' of a head = its majority ending over
+distinct names (A + B), heads with 3+ distinct names; ties left out. 'Fish' = signs.FISH. '740 90' and '740 151' =
+lines where 90 or 151 follows 740. Distinct names and lines; F distinct (site, type, line). Context vectors and
+categories as in the sixty-second set. 10,000-draw permutations; p < 0.05.
+
+What the 520 class shares
+- **KC1** 520-class names contain a numeral more often than 740-class names, stratified by fish head.
+- **KC2** Non-fish 520-class heads are counted (numeral directly before) more often than non-fish 740-class heads.
+- **KC3** Non-fish 520-class names hold a fish modifier more often than 740-class names with non-fish heads.
+- **KC4** Non-fish 520-class heads are more alike in context to the fish signs (mean cosine) than 740-class heads are
+  (rank test).
+- **KC5** Class depends on shape category (MI over head types).
+- **KC6** 520-class heads have fewer tokens than 740-class heads (rank test over types).
+- **KC7** 520-class heads are also formula items more often than 740-class heads (types).
+- **KC8** In formulas, 520-class heads are counted with larger values than 740-class heads (rank test).
+- **KC9** 520-class heads are preceded by a numeral or fish more often than 740-class heads (distinct names).
+- **KC10** Class assignments from A + B agree with F's majority for 90%+ of heads with 5+ names in both.
+- **KC11** For 740-class heads, names with a fish before the head still take 740 in 90%+.
+- **KC12** 520-class names are a larger share at Harappa than at Mohenjo-daro (F distinct names).
+What 90 and 151 are
+- **KC13** Among 740 lines, whether 90 follows depends on the head (MI).
+- **KC14** Among 740 lines, whether 400 follows depends on the head (MI).
+- **KC15** Heads with a '740 90' line and heads with a '740 400' line overlap less than when the follower labels are
+  shuffled (Jaccard).
+- **KC16** '740 90' lines are on seals more often than other 740 lines (F).
+- **KC17** '740 90' lines are at Mohenjo-daro more often than other 740 lines (F).
+- **KC18** '740 90' bodies are longer than other 740 bodies (rank test).
+Replication
+- **KC19** B: KC13 holds.
+- **KC20** B: KC3 holds.
