@@ -4821,3 +4821,32 @@ Harappa (AL11), and half of them have a nearest context neighbour that is Harapp
 spellings. 57 signs with 5+ tokens in A never occur in B (AL13): Mahadevan's list merges many of ICIT's signs, which
 should be kept in mind for every 'B replication'. AL3 is uninformative (few categorised signs among the pairs).
 Tally, counting parts: 700 held, 787 failed (1487 registered).
+
+# Hundred-and-first set, registered before testing (24 September 2026): recent findings on held-out data (twenty hypotheses)
+
+Findings of the eighty-ninth to hundredth sets, found on A + B distinct lines, re-tested on the fuller corpus without
+copper tablets (F', distinct lines) and on B alone (bearing in mind that B merges some of A's signs). Definitions as in
+the sets cited. 10,000-draw permutations; p < 0.05.
+
+F' (fuller corpus, no copper)
+- **RR1** (MX1) 85%+ of medial endings are 740.
+- **RR2** (MX8) For 50%+ of medial endings, 'sign before + ending' is a whole 1-sign-body name (F' names).
+- **RR3** (MX13) The sign before a medial ending recurs in 30%+ of medial-ending lines.
+- **RR4** (HS9) 20%+ of bodies headed 2+ times follow 2+ different heading signs.
+- **RR5** (HS8) The sign after the heading (2 or other) depends on the heading sign (MI).
+- **RR6** (HS4) 861-headed lines are formulas more often than 817-headed lines.
+- **RR7** (ON3) '1' follows 740/520 more often than '2' and '3' do.
+- **RR8** (ON4) 90%+ of 'heading + 1' are '820 1'.
+- **RR9** (PZ7) Opener specialists are followed by a numeral more often than medial signs.
+- **RR10** (PZ12) Opener specialists are on seals more often than medial signs.
+- **RR11** (CF4) 60%+ of numerals after 705/706 are 33.
+- **RR12** (CF11) 705 and 706 are free variants: the sign before does not choose between them (p >= 0.05).
+- **RR13** (FZ10) 3 or more of the frozen pairs 236 = 2, 632 = 2, 717 = 2, 923 = 3 keep their value as the commonest.
+- **RR14** (AL15) Signs with numbers differing by 1 are more context-similar than random pairs.
+B alone
+- **RR15** (HS9) 20%+ of bodies headed 2+ times follow 2+ different heading signs.
+- **RR16** (ON4) 90%+ of 'heading + 1' are '820 1'.
+- **RR17** (PZ7) Opener specialists are followed by a numeral more often than medial signs.
+- **RR18** (MX8) For 50%+ of medial endings, 'sign before + ending' is a whole 1-sign-body name.
+- **RR19** (HS4) 861-headed lines are formulas more often than 817-headed lines.
+- **RR20** (CF11) 705 and 706 are free variants (p >= 0.05).
