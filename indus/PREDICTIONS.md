@@ -68,3 +68,19 @@ no-fish rate.
   head-final compound with a class suffix. It counts against head-initial languages (Sumerian, Elamite); it does not
   separate Dravidian from Indo-Aryan, whose compounds are also head-final. Q1 was partly foreseeable from the known
   last-sign association; Q2 had not been looked at.
+
+# Third set, registered before testing (23 September 2026)
+
+From the same reading (head-final names with a class suffix; a possessive 'X-740 man'). Neither has been looked at.
+
+**R1 Numerals are attributes that precede what they count, inside names too.** Of stroke numerals inside names (the
+text before the ending, heading removed), under 10% stand last, directly before the ending, and 90%+ are followed by a
+non-numeral sign within the name.
+
+**R2 Possessives can stack.** If 740 + a following noun is 'X's N', an internal 740 (one not in the final ending slot)
+should be followed by further name material that itself closes with an ending (740 / 520) or the man sign: texts with an
+internal 740 end in 740 / 520 / 90 / 400 more often than texts of the same length without one.
+
+Test design fixed in advance: held-out texts only (M77 additions + the fuller corpus's texts not in the ICIT-derived
+dump, icit_full.py). R1 holds if both thresholds are met. R2 holds if the share of ending-closed texts among texts with
+an internal 740 exceeds that among length-matched texts without one, Fisher p < 0.05.
