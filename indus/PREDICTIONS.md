@@ -3645,3 +3645,34 @@ supported: heads taking more varied partners (HR2, p = 0.09), openers being uniq
 counted in formulas more than openers (HR12), role following category (HR13, p = 0.08), tablet heads being seal heads
 more than openers (HR5: 76% against 74%), titled names having their own heads (HR18), 740 names being longer (HR19).
 Tally, counting parts: 453 held, 514 failed (967 registered).
+
+# Seventy-fifth set, registered before testing (24 September 2026): how the name is put together (twenty hypotheses)
+
+Distinct names (A + B) and distinct (site, type, name) in F, as in the seventy-fourth set. In a body of 3 signs:
+opener, middle, head. Motif as in the sixty-seventh set. 10,000-draw permutations; p < 0.05.
+
+Constituents
+- **QS1** In 3-sign bodies the middle sign tells more about the head than about the opener (MI middle-head higher,
+  and significant).
+- **QS2** In 3-sign bodies, (middle, head) is an attested 2-sign body more often than (opener, middle) (sign test).
+- **QS3** In 4-sign bodies, the last two signs are an attested 2-sign body more often than the first two (sign test).
+- **QS4** The middle sign of 3-sign bodies is a numeral or fish in 40%+.
+- **QS5** In bodies of 3+, numerals stand directly before the head more often than first (sign test on counts).
+- **QS6** B alone: QS1 holds.
+- **QS7** B alone: QS3 holds.
+Role or place
+- **QS8** Within Mohenjo-daro seals, the head depends on the motif (MI, distinct names).
+- **QS9** Within Mohenjo-daro seals, the opener depends on the motif.
+- **QS10** At Harappa, the head depends on the object class (seal against tablet; MI).
+- **QS11** Opener types at the smaller sites are also city openers less often than their head types are city heads.
+- **QS12** At Harappa, head types dated to both periods are a larger share than opener types.
+- **QS13** Pairs of names sharing an opener but not a head are from the same site more often than when sites are
+  shuffled (F).
+- **QS14** Pairs sharing a head but not an opener are not from the same site more than shuffled (p >= 0.05).
+What heads are
+- **QS15** Heads that are also counted in formulas have more distinct names than heads never counted (rank test).
+- **QS16** 50%+ of the ten commonest heads are also attested as 1-sign names.
+- **QS17** 80%+ of signs attested as 1-sign names (with 3+ longer names) stand last in most of their longer names.
+- **QS18** Receipt names (ending + 400) end in a top-10 head more often than other names (distinct lines).
+- **QS19** Names cited in formulas end in a top-10 head more often than names in general.
+- **QS20** In 3-sign bodies, fish stand in the middle more often than first or last.
