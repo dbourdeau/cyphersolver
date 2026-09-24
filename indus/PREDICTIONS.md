@@ -8261,3 +8261,27 @@ Dravidian side, the eastern Indo-Aryan languages (Magahi, Maithili, Odia) on the
 families (24.9%; LW5 fails). The progress rule fails: streak 1. Reading: the world typology narrows the field to about
 a fifth of the genera, and within that fifth the Indus profile does not separate Dravidian from Indo-Aryan, as
 expected. Tally, counting parts: 1295 held, 1207 failed (2502 registered).
+
+# Hundred-and-ninety-sixth set, registered before testing (24 September 2026): decipherment loop 21, the L bench repaired and the class signal by place and time (seven hypotheses)
+
+Metric after loop 20: S 4.697, R 81.3%, M 16.6% (M+ 41.4%), G margin A 46.2 / B 34.7, P 0, L 4; streak 1. Set 195's
+profile was coded too strictly (a language with 'no dominant order' was counted against the profile, although the
+Indus order does not contradict it) and required every language to fit, where one outlier (Toda) is enough to fail.
+Fixed here before looking: **tolerant profile** = 86A, 87A, 89A value 3 also compatible, 51A dropped (whether 400 / 90
+are case suffixes or words is not settled); Grambank GB024/065/193 as before; compatibility judged per genus (WALS)
+and per family (Grambank): a group is compatible if most of its assessed languages are. Set 178 found that names
+with human, tool and plant heads take 740 and fish-headed names lean to 520 (DC3). The owner asked whether such
+signals hold across places and periods (a multilingual or layered society would show breaks). Places: Mohenjo-daro,
+Harappa, all other sites. Periods at Harappa (ICIT field 8): early = Period 1-3B (without the ambiguous 3B/C), late =
+Period 3C and after.
+
+- **LT1** Tolerant WALS profile: the Dravidian and Indic genera are both compatible.
+- **LT2** Tolerant Grambank profile: Dravidian and Indo-European (its Indo-Aryan members judged as one group) both
+  compatible, and 50% or more of the families assessed are excluded.
+- **LT3** Tolerant WALS profile excludes 70% or more of the genera assessed.
+- **LT4** Fish-headed names take 520 more often than other identified-head names at Mohenjo-daro.
+- **LT5** The same at Harappa.
+- **LT6** The same at the other sites taken together.
+- **LT7** The same in both early and late Harappa (the direction holds in both; one-sided p < 0.05 in at least one).
+- **LT8** Progress rule: LT1, LT2 and LT3 hold (L world enters the metric), or LT4-LT7 all hold (a new finding that
+  replicates across independent subsets).
