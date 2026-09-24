@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sir Richard Forster, 13 May 1644 — Verified</title>
-<meta name="description" content="The Richard Forster cipher passage of 13 May 1644 (Val-d'Oise 68.H.8): already read by Lasry, Biermann and Pitt; here the key is verified against a 20,000-row permutation control and recovered blind from the 207 tokens, with six matched controls showing why a 5-gram attack fails until the model writes u for v and i for j.">
+<title>Sir Richard Forster, cipher passage of 13 May 1644</title>
+<meta name="description" content="A cipher passage of 13 May 1644 in Sir Richard Forster's papers (Val-d'Oise 68.H.8), a homophonic substitution of 34 symbols. Lasry, Biermann and Pitt had deciphered it; Pitt's published key was checked against a 20,000-row permutation control, then recovered from the 207 tokens alone, with six matched controls showing why a 5-gram attack fails until the model writes u for v and i for j.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-15">
 <meta name="last-modified" content="2026-09-16">
@@ -40,10 +40,10 @@
 
 <section class="hero">
   <div class="cipherstrip">30 c 19 g 4, 4 30 12 30 19, 2 30 f 16 0 8 a 0 2 12 20 30 90 30 80 0<br>a 0 u 4 19 88 30 0 20 4 a 16 0 30</div>
-  <p class="kicker">France · mixed homophonic alphabet · 1644 · read by others, verified here</p>
+  <p class="kicker">France · homophonic substitution, mixed alphabet · 1644</p>
   <h1>Sir Richard Forster, 13 May 1644</h1>
   <p class="sub">Archives départementales du Val-d&rsquo;Oise, 68.H.8, troisième liasse · published by Karen Britland (2013) · transcribed by S. Tomokiyo (2021)</p>
-  <p class="sub">Read by George Lasry, Norbert Biermann and Robert Pitt before this session. Here: a permutation control, a blind recovery of 31 of 34 symbols, and the reason the obvious attack fails</p>
+  <p class="sub">Deciphered by George Lasry, Norbert Biermann and Robert Pitt before this project; Pitt&rsquo;s key was applied. Added: a permutation control, a ciphertext-only recovery of 31 of 34 symbols, and the reason the obvious attack fails</p>
   <p class="meta">Daniel Bourdeau &middot; resolved <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-09-16">16 September 2026</time></p>
 <div class="seal found" aria-hidden="true"><span>resolved</span></div>
 </section>
@@ -51,15 +51,15 @@
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The passage</a><a href="#key">The key (Pitt; Lasry and Biermann earlier)</a><a href="#control">Permutation control</a><a href="#blind">Blind recovery, and what the controls say</a><a href="#open">What stays open</a><a href="#method">Method and files</a><a href="#sources">Sources</a></nav>
 <div class="callout">
-<strong>Summary.</strong> Tomokiyo&rsquo;s page of unsolved ciphers still carries this passage, but it had been read: by Lasry after Britland&rsquo;s article,
-independently by Biermann, and again in September 2026 by Pitt, whose key is public. <strong>Nothing about the text is new here</strong>, and no
-decipherment is claimed. What this page records is a verification and a lesson. The tracker had predicted a regular Stuart key of the Ormonde or Boswell
-type; the passage is instead a mixed homophonic alphabet of 34 symbols, 18 numbers and 16 letters, over 207 tokens in 37 comma-separated words. Pitt&rsquo;s
-key stands 8.8 standard deviations above 20,000 permutations of the letter identities. A homophonic annealer with a French 5-gram model then recovers
-the key blind &mdash; 202 of 207 tokens, 31 of 34 symbols &mdash; but only once the training text writes <em>u</em> for <em>v</em> and <em>i</em> for
-<em>j</em> as a 1644 hand does. Before that change the same solver reads five of six matched controls and still fails the target, with a wrong key
-outscoring the truth: the plaintext, not the cipher, was outside the model.
-<em>Status: verified. Four single slips and two one-occurrence words need the manuscript; priority is Lasry&rsquo;s, Biermann&rsquo;s and Pitt&rsquo;s.</em>
+<strong>Summary.</strong> Tomokiyo still lists this passage among ciphers with no known decipherment, but it had been deciphered: by Lasry after
+Britland&rsquo;s article, independently by Biermann, and again in September 2026 by Pitt, whose key is public. <strong>Nothing about the text is new here</strong>,
+and no decipherment is claimed. This page records a verification and a result about method. The tracker had predicted a regular Stuart key of the Ormonde
+or Boswell type; the passage is a mixed homophonic alphabet of 34 symbols, 18 numbers and 16 letters, over 207 tokens in 37 comma-separated words.
+Pitt&rsquo;s key stands 8.8 standard deviations above 20,000 permutations of the letter identities. A homophonic solver (simulated annealing) with a French
+5-gram model then recovers the key from the ciphertext alone (202 of 207 tokens, 31 of 34 symbols), but only once the training text writes <em>u</em> for
+<em>v</em> and <em>i</em> for <em>j</em> as a 1644 hand does. Before that change the same solver decrypts five of six matched controls and still fails on
+the target, with a wrong key outscoring the correct one: the plaintext spelling was outside the model.
+<em>Extent: complete. Four single slips and two words that occur once need the manuscript; priority is Lasry&rsquo;s, Biermann&rsquo;s and Pitt&rsquo;s.</em>
 </div>
 
 <h2 id="document"><span class="num">01</span> The passage</h2>
@@ -80,7 +80,7 @@ what makes 207 tokens tractable at all.</p>
 <tr><th>numbers</th><td>0 e &middot; 2 e &middot; 4 a &middot; 5 g &middot; 7 d &middot; 8 t &middot; 12 c &middot; 14 z &middot; 16 i &middot; 19 n &middot; 20 r &middot; 30 u &middot; 40 s &middot; 50 t &middot; 70 f &middot; 80 l &middot; 88 q &middot; 90 p</td></tr>
 </table>
 <p>No shift, no block, no odd/even row: a mixed alphabet with a second symbol (for <em>t</em> a third) for the frequent letters <em>e a c d f g i l n p r s t</em>,
-and <em>u</em> single although it is the commonest letter. The family is the Richelieu type of homophonic alphabet, not the regular Stuart type; the unused
+and <em>u</em> single although it is the commonest letter. The family is the Richelieu type of homophonic alphabet; the regular Stuart type does not fit. The unused
 values presumably cover <em>h k m o x</em> and more homophones in the full key.</p>
 <blockquote>
 il ny a aucun subiet descrupule de manquer a dieu | ie vous en responds et mesmes dans | les reigles de perfection prenez s<b>d</b>ulement les uoyes de
@@ -89,9 +89,9 @@ uos freres | et mesurer a cela sil est meilleur d&rsquo;agir, ou de soupir &midd
 </blockquote>
 <p><em>There is no ground for scruple about failing God; I answer for it, even within the rules of perfection. Take only the ways of prudence to preserve
 your life, so as to make God a greater sacrifice of it by multiplying your services for the salvation of your brethren, and measure by that whether it is
-better to act or to suffer.</em> Four tokens (bold) conflict with the reading &mdash; <em>a</em>&rarr;d, 16&rarr;i, <em>q</em>&rarr;c, <em>g</em>&rarr;y, each against
-several agreeing occurrences &mdash; and are single slips of the encipherer or of the typeset transcription; four in 207 is Boswell&rsquo;s rate. Britland&rsquo;s
-correspondents read <em>aucune voie de scrupule</em> and <em>preveu seulement</em> where Pitt reads <em>aucun subiet</em> and <em>prenez</em>; the tokens at
+better to act or to suffer.</em> Four tokens (bold) conflict with the decryption (<em>a</em>&rarr;d, 16&rarr;i, <em>q</em>&rarr;c, <em>g</em>&rarr;y, each against
+several agreeing occurrences) and are single slips of the encipherer or of the typeset transcription; four in 207 is Boswell&rsquo;s rate. Britland&rsquo;s
+correspondents give <em>aucune voie de scrupule</em> and <em>preveu seulement</em> where Pitt has <em>aucun subiet</em> and <em>prenez</em>; the tokens at
 issue (<em>f</em>, 14) occur once each and cannot be settled from the text.</p>
 
 <h2 id="control"><span class="num">03</span> Permutation control</h2>
@@ -103,8 +103,8 @@ issue (<em>f</em>, 14) occur once each and cannot be settled from the text.</p>
 <tr><td>letters + word edges, <em>u</em> for <em>v</em>, <em>i</em> for <em>j</em></td><td>&minus;524.9</td><td>&minus;1768 / 142 / &minus;1230</td><td><b>8.8</b></td><td>0 / 20,000</td></tr>
 </table>
 
-<h2 id="blind"><span class="num">04</span> Blind recovery, and what the controls say</h2>
-<p>A homophonic annealer (34 symbols to 26 letters, 150,000 steps, 8&ndash;12 restarts), first without and then with the word boundaries, on the target
+<h2 id="blind"><span class="num">04</span> Ciphertext-only recovery and the controls</h2>
+<p>A homophonic solver (simulated annealing; 34 symbols to 26 letters, 150,000 steps, 8&ndash;12 restarts), first without and then with the word boundaries, on the target
 and on six matched controls: held-out French of 207 letters enciphered with a random key of exactly Pitt&rsquo;s homophone multiplicities, adjacent words
 merged with probability 0.2 as in the target.</p>
 <table>
@@ -114,21 +114,21 @@ merged with probability 0.2 as in the target.</p>
 <tr><td>3</td><td>same, Roman numerals removed</td><td>5 at 99&ndash;100 %, one at 44 %</td><td>&minus;591.6 found against &minus;602.4 for Pitt: <b>a wrong key outscores the truth</b>, 14.5 % agreement</td></tr>
 <tr><td>4</td><td>same, training text with <b><em>v</em>&rarr;<em>u</em>, <em>j</em>&rarr;<em>i</em></b></td><td><b>6 of 6</b> (98&ndash;100 %)</td><td><b>97.6 % of Pitt&rsquo;s key blind</b>: 202 of 207 tokens</td></tr>
 </table>
-<p>Run 1 is the lesson of the Moray letter at this length: 207 letters over 34 symbols with a plain letter-stream model is below the solver&rsquo;s threshold
-even on controls, so nothing could have been read into a target failure. Run 3 is the more useful one: the controls pass and the target fails, so the
+<p>Run 1 repeats the Moray letter result at this length: 207 letters over 34 symbols with a plain letter-stream model is below the solver&rsquo;s threshold
+even on controls, so a failure on the target would have meant nothing. Run 3 is the more useful one. The controls pass and the target fails, so the
 <em>plaintext</em> was out of the model&rsquo;s distribution. The letter writes <em>uotre, uie, uos, seruices, uoyes, subiet, ie</em>, as every 1644 hand does; a
 model trained on a nineteenth-century edition with <em>v</em> and <em>j</em> scores that spelling some 200 nats worse than modern French of the same length,
-and gibberish wins. Normalising the training text fixes it. The blind key differs from Pitt&rsquo;s at three rare symbols only (<em>g</em>, 14, <em>e</em>),
-whose values n-grams cannot fix and the words do. The two 134-letter controls that were run under the same model (the tracker&rsquo;s wrong length) both read at 97&ndash;99 %, so the length was
+and gibberish wins. Normalising the training text fixes it. The recovered key differs from Pitt&rsquo;s at three rare symbols only (<em>g</em>, 14, <em>e</em>),
+whose values n-grams cannot fix and the words do. The two 134-letter controls that were run under the same model (the tracker&rsquo;s wrong length) both decrypt at 97&ndash;99 %, so the length was
 never the obstacle.</p>
 
 <h2 id="open"><span class="num">05</span> What stays open</h2>
 <ul>
-<li>The manuscript: Val-d&rsquo;Oise 68.H.8, third bundle (the papers of the English Augustinian convent at Pontoise, where a Forster daughter was a nun &mdash;
+<li>The manuscript: Val-d&rsquo;Oise 68.H.8, third bundle (the papers of the English Augustinian convent at Pontoise, where a Forster daughter was a nun,
 an inference from the reference). No image is online; the four slips, the two one-occurrence words, and whether this is a whole letter or an extract,
 depend on it.</li>
 <li>The recipient, and whether the key recurs in other Forster or Henrietta Maria papers of 1644.</li>
-<li>Reporting: Tomokiyo&rsquo;s page still says unsolved. Lasry, Biermann and Pitt have priority and Pitt&rsquo;s repository is the public record.</li>
+<li>Reporting: Tomokiyo&rsquo;s page still lists the passage as having no known decipherment. Lasry, Biermann and Pitt have priority and Pitt&rsquo;s repository is the public record.</li>
 </ul>
 
 <h2 id="method"><span class="num">06</span> Method and files</h2>
@@ -137,7 +137,7 @@ depend on it.</li>
 <li>Letters-only French 5-gram, permutation test, blind annealer, six matched controls (<code>ng5fr.py</code>, <code>solve.py</code>, <code>run1.txt</code>).</li>
 <li>Word-edge model with <em>u/v</em>, <em>i/j</em> normalisation, same tests (<code>solve2.py</code>, <code>run2&ndash;4.txt</code>); the 134-letter repeat (<code>control134.py</code>, <code>run5_134.txt</code>).</li>
 </ol>
-<p class="muted">Checked: Pitt&rsquo;s input against the blog text; the key against 20,000 permutations; blind recovery and six matched controls under four
+<p class="muted">Checked: Pitt&rsquo;s input against the blog text; the key against 20,000 permutations; ciphertext-only recovery and six matched controls under four
 models. Not checked: the manuscript; Britland&rsquo;s article itself beyond its abstract and the readings quoted by Pitt.</p>
 
 <!-- replay:start -->
