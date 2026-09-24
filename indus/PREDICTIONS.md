@@ -8321,3 +8321,17 @@ Prakrit, Japanese, Turkish, and the controls Ur III Sumerian owners and Linear B
 - **DN3** Both controls (Sumerian, Linear B) rank below both candidates.
 - **DN4** The nearest language is the same when the Indus names are split at random into two halves (seed 197).
 - **DN5** Progress rule: DN1 and DN4 hold (a nearest language that replicates across halves).
+
+## Results of the hundred-and-ninety-seventh set (added after the test; `predict_test197.py`, `results/predict_test197.md`)
+
+All five held. Rarefied to 104 names each, the Indus name structure (R 0.83, head share 0.43, dominant ending 0.82) is
+nearest the Prakrit donor names (mean rank 1.00: R 0.90, head share 0.35), then Tamil-Brahmi (2.75), then the decoy
+Japanese (3.25), Linear B (3.75), Ur III Sumerian (4.50) and Turkish (5.75) (DN1-DN3). The order of the first two is
+the same in two random halves of the Indus names (DN4). **Caveats.** (1) Genre: the two candidates are inscriptional
+donor names, the decoys dictionary lists of modern given names, so part of the gap may be genre; against that, the Ur
+III seal-owner names, the closest genre match (seal legends), rank fifth. (2) No language matches the dominant ending:
+740 ends 82% of Indus names, no language's commonest final element exceeds 23%, so 740 is a separate morpheme, not a
+name-final syllable, and that measure mostly ranks noise. (3) As in set 175, the name structure leans Indo-Aryan in R
+and head share while the candidates stay close together; this does not choose between them. What it adds for L: the
+typology-matched decoys inside the compatible fifth (Japanese, Turkish) fit the Indus names worse than both South Asian
+candidates. Progress by the registered rule: streak 0. Tally, counting parts: 1308 held, 1207 failed (2515 registered).

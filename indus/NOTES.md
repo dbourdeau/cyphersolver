@@ -2382,6 +2382,13 @@ candidates kept; new metric component L world. The fish/520 signal holds at Mohe
 early and late: no regional or period break. The class split (fish vs the rest) fits Dravidian and Sanskrit-type gender
 alike. Progress: streak 0. Tally 1303 held, 1207 failed.
 
+## Two-hundred-and-eleventh pass (24 Sept 2026): decipherment loop 22, name structure against typology-matched decoys
+
+Registered first (2775db172). Indus name structure is nearest Prakrit donor names, then Tamil-Brahmi; the decoys
+Japanese and Turkish and the controls (Linear B, Ur III) rank below both candidates; same order in two halves. Genre
+confound noted (donor inscriptions vs modern given names; Ur III seal names rank fifth). Progress: streak 0. Tally 1308
+held, 1207 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
