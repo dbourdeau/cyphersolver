@@ -33,3 +33,18 @@ Details: `reading.md` (1572) and `f1573/reading.md` (1573).
   directly (hand/decode_retry.txt). Control on the 16 July block (not held out): 60.3 % -> 61.1 % with alpha = r,
   56.2 % with the 1573 key; chance 12-15 %. Share of 13 July glyphs in stretches that read as sense: ~8 % lenient,
   ~1 % strict. No gain: the passage stays read only in scattered words.
+
+## Glyph-level XML (24 Sept 2026, pilot for George Lasry)
+
+`python tools/transcription_xml.py mondoucet` writes `xml/1573-09-09.xml` and `xml/1572-07-13.xml` from the
+sign-label files (`f1573/ct/f135r_split.txt`, `f1573/ct/blk2_split.txt`, `hand/ct_f6*_split.txt`). There is one `<g sign=..>`
+per glyph, with the scribe's gaps as `<w gap="scribe">`.
+- **9 Sept 1573** (4,734 glyphs and 70 dots): each glyph carries the Court's letter (`basis="court"`) from the hard-EM
+  alignment. That alignment was regenerated as `f1573/key1573_split2_align.txt` by
+  `OUT=key1573_split2 python align2.py ct/f135r_split.txt:pt/f139r_a.txt ct/blk2_split.txt:pt/blk2.txt`, and the
+  re-run reproduces `key1573_split2.json` exactly. Each glyph also carries `key=`, the sign's spread over the whole
+  alignment. Court letters left without a glyph are `<gap r=..>` (217). Of the 177 glyph→word matches, only the
+  ones that recur (J = que) keep full certainty; the others are marked `cert="low"` as aligner slack.
+- **13 July 1572** (1,082 glyphs): no reading exists. Each glyph gets the 1572 key's alternatives (`key=`, the "ext" key of
+  `hand/decode_retry.py`) and the beam decoder's letter (`basis="decoder"`). The decoder letter is not a reading.
+No coordinates: the transcription was made by eye from line strips, and no bounding boxes were kept.
