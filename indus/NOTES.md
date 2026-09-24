@@ -1633,6 +1633,13 @@ Summary of sets 93-95: counts are real (only 4 frozen number-sign pairs); copper
 their pictures (anthropomorph and hare labels share 845 and 407); '1' has two special slots. Tally 647 held, 740
 failed.
 
+## Hundred-and-tenth pass (24 Sept 2026): how the copper labels are built
+
+Registered first (ninety-sixth set, d72a49420), tested (`predict_test96.py`). Copper labels form their own vocabulary
+(82% of 845 and 61% of 407 are on copper) and almost never appear on seals; labels are copied whole per picture and
+'845 ... 407' marks animal/figure labels. Caveat: F name counts include copper labels, which inflated a few 'common
+names' in earlier sets (503 615 752 740 x28 is copper only). Tally 655 held, 752 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

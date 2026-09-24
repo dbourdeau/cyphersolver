@@ -4625,3 +4625,18 @@ per picture, e.g. anthropomorph '806 845 61 407 850 900 740', hare '235 705 33 8
 - **LB18** Copper texts found on seals are found on Mohenjo-daro seals more often than Harappa seals.
 - **LB19** The anthropomorph label occurs on no seal.
 - **LB20** The one-sign copper labels (777, 782) occur on no seal.
+
+## Results of the ninety-sixth set (added after the test; `predict_test96.py`, `results/predict_test96.md`)
+
+Eight held, twelve failed. Copper labels are a vocabulary of their own: 82% of all 845 tokens (LB8: 40 of 49) and 61% of
+all 407 tokens (LB9: 76 of 124) are on copper tablets; the labels are copied whole within a picture (LB12: mean 0.63);
+'845 ... 407' goes with animal or figure pictures (LB2: 29 of 40); 16% of distinct labels end in 407 (LB15); '3 42x' is a
+fixed unit (LB16: 421-424 follow 3 in 11 of 11). The labels almost never occur on seals: not the anthropomorph label
+(LB19), not the elephant label (LB4), not the 'Othr' label '503 615 752 740' (LB5: 0; its 28 copies are all copper, so
+the seventieth set's 'commonest names' list included copper labels), and only one copper text occurs on any seal (LB6,
+LB18). Not supported: 845 always before 407 (LB1: 6 of 16), '705/706 33' only with animals (LB3: 84%), signs bound to
+one picture (LB7: 12 of 54), one label per picture (LB13: 5 labels under two or more motifs), copper tails after 740
+(LB10, LB11: 24% against 13%, p = 0.06), longer labels (LB14), pictureless tablets repeating pictured labels (LB17: 28%),
+and 777/782 being copper-only (LB20: one seal token). Caveat for earlier sets: name counts over F include copper
+labels, which inflate repeat counts for a few names (503 615 752 740, 806 845 61 407 850 900 740). Tally, counting
+parts: 655 held, 752 failed (1407 registered).
