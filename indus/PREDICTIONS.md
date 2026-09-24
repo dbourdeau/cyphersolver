@@ -7181,3 +7181,44 @@ and 4 recaptures, weak). Sealings are not shorter than seals (TS9); Lothal's 13 
 frequent opener, Kalibangan has one (TS10 fails for lack of data). Reading: over the levels Mohenjo-daro's seal names
 converge on the openings Harappa already used, while the names themselves stay individual: a spreading convention
 for how names begin, not fewer names. Tally, counting parts: 1168 held, 1090 failed (2258 registered).
+
+# Hundred-and-sixty-fifth and hundred-and-sixty-sixth sets, registered together before testing (24 September 2026): twenty hypotheses
+
+Conventions as sets 161-164. JSD = Jensen-Shannon divergence (bits); permutation tests shuffle the level labels
+among Mohenjo-daro seals (1,000 draws). 'Harappa' = all Harappa seals in F unless a level is named. p < 0.05.
+
+## Hundred-and-sixty-fifth set: does Mohenjo-daro converge on Harappa? (ten hypotheses)
+
+- **CV1** The openers that rise at Mohenjo-daro are those common at Harappa early: Spearman of Harappa-early opener
+  frequency against the Mohenjo-daro late-minus-early share change is positive (permutation of MD level labels).
+- **CV2** Heads: JSD(Mohenjo-daro late, Harappa) is below JSD(Mohenjo-daro early, Harappa), beyond permutation.
+- **CV3** All signs on seals: the same.
+- **CV4** Mean name-body length at Mohenjo-daro late is closer to Harappa's than early is, beyond permutation.
+- **CV5** The share of long-stroke numerals (R.NUMS kind) at Mohenjo-daro late is closer to Harappa's than early is,
+  beyond permutation.
+- **CV6** The share of bare lines (genre 'bare', no ending) on Mohenjo-daro seals rises from early to late (one-sided
+  Fisher).
+- **CV7** Harappa does not move towards Mohenjo-daro: JSD(Harappa late, Mohenjo-daro early) is not below
+  JSD(Harappa early, Mohenjo-daro early) beyond permutation of Harappa level labels (p >= 0.05 holds).
+- **CV8** CV3 holds on square seals alone.
+- **CV9** Gujarat seals (Lothal, Dholavira): the opener distribution is closer to Harappa's than to Mohenjo-daro's
+  (JSD).
+- **CV10** Kalibangan seals: the opener distribution is closer to Harappa's than to Mohenjo-daro's (JSD).
+
+## Hundred-and-sixty-sixth set: the names that recur (ten hypotheses)
+
+- **RN1** Of the names found in both cities, 50%+ have a fish head (signs.FISH).
+- **RN2** Names on 2+ seals (anywhere in F) are 520 names more often than names on one seal (Fisher).
+- **RN3** 520 names occur at more sites than 740 names on the same number of seals (each 520 name against the mean of
+  740 names with its seal count; sign test).
+- **RN4** At least 3 names occur at 3 or more sites.
+- **RN5** Name sharing between sites falls with distance: over site pairs among sites with 10+ names and approximate
+  coordinates (in the script, from general sources), Spearman of shared-name share against distance is negative,
+  permutation p < 0.05.
+- **RN6** Names found in both cities are on unicorn seals more often than names found in one (Fisher).
+- **RN7** Two seals with the same name carry the same motif more often than random pairs of seals (Fisher).
+- **RN8** Recurring 520 names also occur on tablets more often than recurring 740 names do (Fisher).
+- **RN9** Linear B persons found at both palaces are shorter (syllables) than persons found at one (rank test), as
+  Indus shared names are (CR6).
+- **RN10** Ur III owner names found in both Umma and Girsu are shorter (characters) than those found in one (rank
+  test).
