@@ -1096,3 +1096,29 @@ listed and reversed, both required; 10,000-draw permutations; p < 0.05).
   ones (TAB:B), length-stratified (F).
 - **Z10 The head fixes the ending on seals alone.** On F seals (one name per object), 80%+ of heads with 5+ names take
   one ending in 90%+ of them.
+
+## Results of the twentieth set (added after the test; `predict_test20.py`, `results/predict_test20.md`; check after the test `robust20.py`, `results/robust20.md`)
+
+Six held, four failed.
+
+- **Z1 fails**: the numbered-fish result (X21) holds in B (11 of 12 take 520 against 12 of 23, p = 0.008) but not in A
+  (49 of 77 against 48 of 85, +10 points, p = 0.14). The one structural result siding with Parpola's star names is
+  not replicated in the larger transcription; it is withdrawn to 'suggestive'.
+- **Z2 holds**: 705 and 706 share 17 frames, nearly all before 33 after a fish or number sign (220_33, 231_33, 233_33,
+  235_33, 240_33, 31_33), p = 0.0001. With M77 not separating them (X14), 705 and 706 are best treated as one sign in
+  the closing formula.
+- **Z3 holds**: categorised heads of 740 names are humans, weapons, implements or measures in 331 of 818 (40.5%),
+  heads of 520 names in 7 of 155 (4.5%). Check without fish heads on either side: 47.4% against 21.9% of 32 (p =
+  0.003). The person class holds people and the tools of trades; the other class does not.
+- **Z6 holds, Z7 holds**: in M77's multi-line texts, 400 begins a line in 1-2 of 105 tokens and 740 in 3-10 of 233,
+  against 19-20% for other signs. Both behave as bound forms that never start a line, as suffixes and clitics do.
+  **Z5 fails** for 90 (1 of 12; too few tokens in M77 to test).
+- **Z8 holds**: moulded and incised count tokens carry different values in both excavations (HARP p = 0.005, Vats
+  p = 0.004), but not in the same way: in HARP the incised tokens are mostly 4, in Vats's mostly 3 and the moulded
+  ones rarely 4. The quantities belong to batches or periods, not fixed to the technique.
+- **Z10 holds**: on seals alone, 35 of 43 heads (81%) take one ending in 90%+ of their names; the exceptions are again
+  the fish series (220, 233, 240, 231, 235), 460, 400 and 920.
+- Z4 fails (identical moulded tokens do not lie closer together than identical incised ones), Z9 fails (incised
+  tablets do not carry endings more often than moulded ones).
+
+Tally, counting parts: 63 held, 109 failed (172 registered).

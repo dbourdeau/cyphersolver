@@ -20,8 +20,8 @@ independent sample and on a fuller corpus of 4,578 objects: the two terminal sig
 name (5 of 881 names take both against 46 by chance), the arrow class is closed (names ending in a fish sign), the
 seal formula is 'X-jar man' with the head last, and foreign names written in Indus signs on Gulf seals leave the
 endings out (11% of lines against 43%), which ties them to the language rather than the script. Combined with a
-class-suffix test, only Dravidian passes both grammar tests outright; and of 162 predictions registered before
-testing, 57 held and 105 failed; the held ones are structural (head-final names, bound pairs kept whole
+class-suffix test, only Dravidian passes both grammar tests outright; and of 172 predictions registered before
+testing, 63 held and 109 failed; the held ones are structural (head-final names, bound pairs kept whole
 across line breaks, free signs in foreign names); a Linear B-calibrated shortlist of candidate sound signs failed
 its three tests. No sound value is established. We describe what the corpus supports and what
 evidence a decipherment would need.
@@ -125,7 +125,7 @@ See `DOSSIER.md` section 7 and `results/lit_check.md`. In short: much of the str
 (Hunter; Mahadevan 1970-1998; Parpola 1994-2015; Wells 2006; Rao et al. 2009; Yadav et al. 2010). New here: the
 per-name fixedness measurement, the closed arrow class, the class-suffix test, the numeral + fish test, the missing
 endings on foreign seals, grammar against numerals over time, restoration scored against intact twins, the shuffle
-bench validated on Linear Elamite, and the registered predictions (57 held, 105 failed). Wells (2006) preferred Munda
+bench validated on Linear Elamite, and the registered predictions (63 held, 109 failed). Wells (2006) preferred Munda
 on word structure: his prefix and insertion arguments do not survive a test on the corpus (the heading is not a
 prefix, there is no prefix set, insertions are attribute + head). Mahadevan (1970) said the openers have the same
 proportions everywhere: he was right, and our earlier site effect is withdrawn.

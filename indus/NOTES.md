@@ -1052,6 +1052,14 @@ siding with Parpola's star names), X22 (90 is a seal sign), X23 (moulded and inc
 Failed: X9 (fish heads 61% 520, against a strict gender suffix), X11 (740 not followed by a possessed noun, 9%), the
 numeral-like tests X2-X6 (test insensitive), X13 (degenerate), X14 (706 absent from M77). Tally 57 held, 105 failed.
 
+## Thirty-fourth pass (24 Sept 2026): ten best hypotheses
+
+Registered first (PREDICTIONS.md, twentieth set, 999bc85e1), tested (`predict_test20.py`), checked (`robust20.py`).
+Held: Z2 (705 and 706 one sign in the closing formula), Z3 (740 heads are people, weapons, implements, measures:
+47% against 22% without fish), Z6 and Z7 (400 and 740 never begin a line: bound forms), Z8 (count values differ by
+technique in both excavations, differently), Z10 (heads fix endings on seals alone, 81%). Failed: Z1 (numbered-fish
+result holds in B only: withdrawn to suggestive), Z4, Z5 (90 too rare in M77), Z9. Tally 63 held, 109 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
