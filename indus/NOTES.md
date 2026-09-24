@@ -914,6 +914,15 @@ Scripts: `wells_test.py`, `predict_test3.py`, `grammar_model.py`, `name_classes.
    keys show that reading rates prove nothing, not that the keys are wrong. Site, bench page, dossier and draft
    corrected.
 
+## Eighteenth pass (24 Sept 2026): are 520 names divine names and 740 names personal names?
+
+Registered first (PREDICTIONS.md, fourth set, commit 8aa138d62), then tested (`predict_test4.py`,
+`results/predict_test4.md`; 795 intact seals of the fuller corpus). Hypothesis T: if fish = star = god (Parpola), 520
+names are shared divine / astral names or titles and should recur on more seals and across more sites than 740 ('X's
+man') personal names, at the same length. **Both parts fail**: length-matched recurrence -2.9 points (p = 0.84); spread
+over 2+ sites 54% against 57%, both at or under a site-shuffled null. Recurrence is set by name length alone. Tally of
+registered predictions: 2 held, 6 failed. Unregistered observation: recurring names of both classes are not local.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

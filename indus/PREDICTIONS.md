@@ -114,3 +114,18 @@ stratification, permutation p < 0.05; and 520 names beat a site-shuffled null (s
 while 740 names do not.
 
 Either failing counts against Hypothesis T. A length effect alone (short names recur more) does not count for it.
+
+## Results of the fourth set (added after the test; `predict_test4.py`, `results/predict_test4.md`)
+
+795 intact seals with a name and an ending (650 with 740, 145 with 520).
+
+- **T1 fails.** Length-matched, 520 names recur on another seal no more than 740 names (pooled difference -2.9 points,
+  p = 0.84). Recurrence is a matter of length: one-sign names recur 65-83%, four-sign names 0-2%, in both classes.
+- **T2 fails.** Of recurring names, 520 names are at 2+ sites in 7 of 13 (54%), 740 names in 29 of 51 (57%); both a
+  little under a site-shuffled null (62%, 63%). Neither class is local.
+- Tally: 2 held (Q1, Q2), 6 failed (P1, P3, R1, R2, T1, T2). The two classes are not distinguishable as 'shared
+  divine/astral names' against 'personal names' by how they recur or spread.
+- Observed after the test, not registered: recurring names of both classes are spread over sites as a random
+  assignment would spread them, not held in one city. A personal name borne by one family would be local; this looks
+  more like a pool of names or titles in use everywhere, or like seals carried between cities. It is an observation
+  for a future registered test, not a finding.
