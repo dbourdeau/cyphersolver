@@ -60,9 +60,10 @@ attempts on guessed variants.
 
 ## Remaining gaps
 
-The site's verdict (above). In the text itself every ciphertext bigram is mapped. 21 of the 223 key entries rest on a single occurrence
-confirmed only by the sense of the text (e.g. MONK, BUSINESSMAN, "A FOCUS ON BEING VERSUS DOING").
+The site's verdict (above). In the text itself every ciphertext bigram is mapped. 84 of the 223 key entries rest on a single ciphertext
+occurrence, confirmed only by the sense of the text (e.g. MONK, BUSINESSMAN, "A FOCUS ON BEING VERSUS DOING", "GOOD OR BAD").
 
 ## Escalation
 
-Not needed.
+Ask the MysteryTwister team (site contact or the challenge's Discord channel) how the reference key was built
+before any second submission.
