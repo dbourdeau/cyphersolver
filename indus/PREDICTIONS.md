@@ -3546,3 +3546,35 @@ time (NA18: 15 of 29). What held: a numeral elsewhere in the body does not predi
 non-fish heads the sign before the head adds a little information about the ending beyond the head (NA17: 0.034 bits,
 p = 0.001); for fish heads it does not (NA16). Lesson recorded: token counts over repeated seals can manufacture
 patterns; distinct-name counts are the check. Tally, counting parts: 425 held, 502 failed (927 registered).
+
+# Seventy-third set, registered before testing (24 September 2026): the findings recounted on distinct texts (twenty hypotheses)
+
+After the seventy-second set showed that repeated seals can manufacture a pattern, twenty earlier findings are
+re-tested with every line, name or text counted once. 'Distinct lines' = the set of line tuples in A + B; 'distinct
+names' = the set of (body, ending); F tests use distinct (site, line) or distinct object texts as stated. Tests and
+thresholds as in the original sets. 10,000-draw permutations (1,000 where the original used 1,000); p < 0.05.
+
+Names
+- **DN1** (core) The head carries information about the ending (MI over distinct names).
+- **DN2** (core) 80%+ of heads with 5+ distinct names take one ending in 80%+ of them.
+- **DN3** (seventy-first) Among fish-headed distinct names, the ending depends on which fish (MI).
+- **DN4** (fifty-eighth FS5) Fish body tokens follow a numeral more often than other body tokens (distinct names).
+- **DN5** (fifty-eighth FS6) Which fish is written depends on the preceding sign (distinct names).
+- **DN6** (forty-first DB6) Distinct bodies of 3+ avoid non-adjacent repeats against within-body shuffles.
+- **DN7** (seventy-first EF17) On distinct lines, 520 is followed by 400 less often than 740.
+Numbers
+- **DN8** (core) On distinct lines, numerals of value 5-8 are tiered more often than numerals of value 1-4.
+- **DN9** (core) On distinct lines, the numeral kind depends on the next sign (MI).
+- **DN10** (core) On distinct lines, long numerals open the line more often than short ones.
+- **DN11** (forty-seventh FI4) On distinct formulas, (value, next sign) pairs are fewer than with shuffled numerals.
+- **DN12** (forty-seventh FI5) 20%+ of distinct numeral formulas share their residue with one of another value.
+Genres
+- **DN13** (forty-fifth EM7) On distinct lines with a numeral, it is first more often in formulas than in name lines.
+- **DN14** (fifty-third EN1, reversed) Distinct name lines repeat their adjacent pairs more than distinct formulas (1,000).
+- **DN15** (forty-first DB1) Distinct lines hold more doubles than within-line shuffles (1,000).
+Seals and tablets (F, distinct (site, line))
+- **DN16** (fiftieth SC1) Seal numeral-formula values are larger than tablet ones (rank test).
+- **DN17** (fiftieth SC2) Seal numerals are tiered more often than tablet numerals.
+- **DN18** (forty-seventh FI7) Harappa formulas open with a numeral more often than Mohenjo-daro ones, length-stratified.
+- **DN19** (sixty-ninth AM18) Over distinct seal texts with a motif, unicorn texts are pure names more often.
+- **DN20** (seventy-first EF19) Over distinct seal name texts with a motif, 520 names are unicorn less often.
