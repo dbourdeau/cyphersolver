@@ -8181,3 +8181,14 @@ margin is 46.2 (designed there, so not a test).
   G2 keeps as BARE (one-object share, A + B; the dropped lines are the idiosyncratic ones).
 - **SP5** The share of B lines parsed by G2 stays 60% or more (the grammar still covers most of the corpus).
 - **SP6** Progress rule: SP1 and SP2 hold (G margin enters the metric and rises on both independent samples).
+
+## Results of the hundred-and-ninety-third set (added after the test; `predict_test193.py`, `results/predict_test193.md`, `grammar.py` parse2)
+
+Four held, two failed. The stricter grammar G2 (base rules + SHORT, ONE, U; BARE only for heads seen 5+ times and
+more often as heads than as modifiers) raises the margin over shuffled lines on B from 30.7 to 34.7 points (SP1) and
+on F's extra lines from 17.0 to 17.3 (SP2, a small rise), and halves the shuffled B lines it accepts (41.6% to 21.4%;
+SP3). The bare lines it drops are not more often single-object lines than those it keeps (SP4 fails: 85% against 91%),
+and it covers only 56.2% of B (SP5 fails: the strictness costs a third of the bare lines). The progress rule holds
+(SP6): the G margin enters the metric at A 46.2, B 34.7 points. Progress: streak 0. The low F margin (17 points) says
+the extra F lines (mostly short, damaged or tablet lines) carry little order the grammar knows. Tally, counting parts:
+1288 held, 1202 failed (2490 registered).

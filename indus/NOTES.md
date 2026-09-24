@@ -2356,6 +2356,12 @@ Registered first (d26ac139b). The five new rules raise G (A 88.5%, B 80.9%, F 66
 readily; the margin over shuffled B lines falls (30.7 to 25.5). SEQ is permissive; SHORT, ONE, U specific. Post-hoc: the
 bare-name rule is barely specific; G should be the margin. No progress: streak 1. Tally 1284 held, 1200 failed.
 
+## Two-hundred-and-seventh pass (24 Sept 2026): decipherment loop 18, a specific grammar
+
+Registered first (fa167cfa6). G is now scored as a margin over shuffled lines. G2 (no SEQ/OPEN, bare lines only for
+frequent heads) raises it on B 30.7 to 34.7 and F 17.0 to 17.3, but covers only 56% of B. Progress: streak 0. Tally
+1288 held, 1202 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
