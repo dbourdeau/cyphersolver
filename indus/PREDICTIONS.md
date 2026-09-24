@@ -1541,3 +1541,46 @@ Other objects, places and time
   set; MI beyond permutation) (F).
 - **S6** At Mohenjo-daro the share of 520 among seal names differs between earlier and later levels (Fisher, two-sided)
   (F).
+
+## Results of the twenty-sixth set (added after the test; `predict_test26.py`, `results/predict_test26.md`)
+
+Fifteen held, ten failed. 167 name tablets (incised, with an ending), 83 of them with 400 after the ending.
+
+**The incised name tablets are a Harappa record of seal-holders.**
+- **T10 holds**: all 83 name tablets with 400 come from Harappa (against 78% of other tablets).
+- **T4 holds**: 53% of the names on incised tablets are also found on seals, against 23% of those on moulded tablets
+  (p < 0.0001): the incised tablets name people who held seals.
+- **T7 holds** (their names end in 740, the person class, 88.6% against 81.8% on seals, p = 0.018) and **T5 holds**
+  (they carry the heading far less than seals: 22 points, p = 0.0001): names without the title formula.
+- **T3 holds**: their numerals are long-stroke (68.5% against 31.9% on seals).
+- T2 fails the other way: on name tablets with 400 and a number, the number stands before the ending in all 19 (none
+  after). T9 fails: their long numerals are never followed by 700 (0 of 37): they count something other than the
+  tokens' measure. T1 fails (400 does not make a number more likely), T6 fails the other way (incised tablets are
+  earlier, not later: 64% of earlier Harappa tablets, 35% of later), T8 fails (a bare 400 does not follow a head).
+
+**Numbers.**
+- **N1 holds**: the value of a long-stroke count depends on what is counted (MI 1.14 and 0.63 bits, p = 0.0001 both):
+  each unit has its usual counts.
+- **N2 holds**: fish take their own numbers, overwhelmingly the pair of strokes (value 2: 211 of 300 in A, 85 of 104 in
+  B), with 6 and 12 next.
+- **N7 holds**: tiered numerals stand directly before the ending 10.6% and 14.6% of the time, short ones under 1%:
+  a tiered number can be the head of a name.
+- **N5 holds**: a long-stroke count with a container or device sign closes its line 86% of the time (short numerals
+  29%).
+- **N6 holds**: tablet numerals are long-stroke 69%, seal numerals 32%.
+
+**Direction.** **D2 holds**: objects written directly (incised tablets, copper tablets, pots, tags) run left to right
+7.0% of the time, carved and moulded ones 3.2% (p = 0.0001). D1 fails (no copper tablet runs left to right: 0 of 149),
+D3 fails.
+
+**Affixed variants.** **V2 holds** (the jar variants end a line only 6% of the time), **V4 holds** (the affixed fish are
+the last sign of a name 19% of the time, the plain fish 35.5%: the affix makes an attribute), **V3 holds** (base and
+affixed variant alternate in otherwise identical names more than random sign pairs: 220 / 231 8 pairs, 740 / 741 2,
+400 / 415 0; p = 0.026, carried by the fish). The affixed forms behave as modified forms of the same sign, used in
+front of a head.
+
+**Other.** **X2 holds** (copper tablets carry endings 12 points less than seals: labels, not names). X1 fails narrowly
+(sealing names 740 in 91% against 82%, p = 0.083). S5 and S6 fail: the 740 / 520 balance does not differ by region or
+change at Mohenjo-daro over time.
+
+Tally, counting parts: 110 held, 177 failed (287 registered).

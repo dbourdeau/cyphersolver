@@ -1105,6 +1105,16 @@ O8, O20); long-stroke numerals count containers and devices (37% against 3%), sh
 400 after a name is an incised-tablet feature (O22, O14). Failed: affixed strokes and carets are not written
 sequences (O1-O5); bar seals later only narrowly (O15: MD p = 0.041, Harappa 0.054). Tally 95 held, 167 failed.
 
+## Fortieth pass (24 Sept 2026): tablet records, numbers, direction, variants
+
+Registered first (PREDICTIONS.md, twenty-sixth set, 2b74eaca1), tested (`predict_test26.py`). Held (15): incised name
+tablets with 400 are a Harappa-only genre (T10, 83 of 83) naming seal-holders (T4, 53% of names also on seals against
+23% on moulded), mostly persons (T7), without the heading (T5), counting in long strokes (T3) but never in 700 (T9
+fails), numbers before the name (T2 reverse), earlier not later (T6 reverse); the long count's value depends on the unit
+(N1); fish take the stroke pair (N2); tiered numerals can head a name (N7); counts close lines (N5); tablets count long
+(N6); direct writing runs left to right more (D2); affixed variants are attributes that alternate with their base (V2,
+V3, V4); copper tablets carry no endings (X2). Tally 110 held, 177 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
