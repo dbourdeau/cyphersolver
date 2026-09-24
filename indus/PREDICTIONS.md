@@ -563,3 +563,35 @@ matched on frequency. F.
 
 **K15 The sign after the ending is a person ('X's man').** Names followed by 90 (Fairservis A-1 'a man') after their
 ending take 740 more often than names followed by any other sign or by nothing; Fisher one-sided. A and B.
+
+## Results of the fourteenth set (added after the test; `predict_test14.py`, `results/predict_test14.md`)
+
+One held, fourteen failed. (K11 first stopped on a sign without a glyph; the filter was corrected to names whose
+signs all have a glyph, as the registered shuffle requires, and the whole set rerun with the same seed.)
+
+- **K1 holds**: names whose head is a human figure take 740 in 81 of 82 (A) and 29 of 29 (B), against 83% and 88%
+  (p < 0.0001, p = 0.031). Narrow: the heads are almost all sign 100 (Fairservis 'a man with horns'; 73 of 82 in A, all
+  29 in B), with 142 ('a man with a staff') 8 times.
+- **K15 fails as registered, but points the same way**: the 'man' sign 90 after an ending follows 740 in 79 of 79 (A,
+  p < 0.0001) and 17 of 17 (B, p = 0.14; too few for B alone). Across both, 96 of 96, never after 520. With K1: the
+  human-figure signs go only with 740. That fits 740 as the class of persons (Mahadevan's reading of the jar as a
+  masculine / rational suffix, Dravidian -an), and it is the only meaning-linked result that has held here. It is
+  consistent with that reading, not proof of it: a jar sign marking 'person' could be a word as well as a suffix.
+- **K2 fails** (natural heads do not take 520: 2% against 5%): the 520 class is the fish class, not 'things of nature'.
+- **K3 fails** (tools as heads: A 45% against 49%; B 67% against 40%, p < 0.0001): contradictory samples.
+- **K4 fails** (attribute-ending dependence given the head: A 0.146 bits, p = 0.0001; B 0.059, p = 0.34): agreement
+  shows in A only. Not evidence for Indo-Aryan agreement; not clean evidence against it.
+- **K5 fails** (foreign lines end in a head-class sign 22% against 24%).
+- **K6 fails** (pots: 2 of 24 lines with a sign after the ending, seals 159 of 897): no genitive on pots.
+- **K7 fails** (heads at 5.4 sites, attributes 5.3).
+- **K8 fails narrowly** (Mohenjo-daro Early + Intermediate against Late: first signs diverge 0.466, last signs 0.260;
+  p = 0.052): heads look steadier than attributes over time, short of the bar.
+- **K9 fails** (grammar-sign drift with distance, 7 sites: rho 0.28, p = 0.12): the H4 lead does not replicate.
+- **K10 fails** (doubling and numerals on F: 19.8% against 17.3%, p = 0.30): the H1 near-miss does not replicate.
+- **K11 fails** (heads not more complex than attributes).
+- **K12 fails narrowly** (free signs simpler: A rho -0.16, p = 0.010; B -0.14, p = 0.061).
+- **K13 fails** (fish-headed names carry a sky sign no more often: 17% against 17%; B 6% against 15%): no support for
+  'fish = star' from the company fish signs keep.
+- **K14 fails** (enclosure / landscape signs are not more site-bound).
+
+Tally, counting parts: 17 held, 35 failed (52 registered).

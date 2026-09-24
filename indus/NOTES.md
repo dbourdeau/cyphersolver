@@ -997,6 +997,14 @@ tablet batches), H10 (heads from a smaller inventory; robust). Failed: H1 (doubl
 rho 0.45, p 0.037, reverse of prediction), H6 (two-ending texts not on tablets), H9 (variants not regional). Tally 16
 held, 21 failed.
 
+## Twenty-eighth pass (24 Sept 2026): fifteen hypotheses toward the language
+
+Registered first (PREDICTIONS.md, fourteenth set, 663a85e87), tested (`predict_test14.py`). **One held (K1)**: human-
+figure heads take 740 (81/82, 29/29; mostly sign 100). K15 fails on B's small n but 90 ('man') follows only 740, 96
+of 96. Both fit 740 as the person class (Mahadevan's -an). Near misses: K8 (heads steadier than attributes over time,
+p = 0.052), K12 (free signs simpler, B p = 0.061). Failed and informative: K13 (fish heads do not keep sky company),
+K9 / K10 (the H4 and H1 leads do not replicate), K4 (agreement in A only). Tally 17 held, 35 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
