@@ -5911,3 +5911,15 @@ p < 0.05.
 - **FA8** B: FA1 holds.
 - **FA9** F without copper: FA5 holds.
 - **FA10** 30%+ of gaps involve a heading sign or a numeral.
+
+## Results of the hundred-and-twenty-eighth set (added after the test; `predict_test128.py`, `results/predict_test128.md`)
+
+Five held, five failed. The script has forbidden pairs: 20 pairs of common signs that chance would put together 5+
+times never occur, 17 times more than in shuffled lines (FA1; B: 2 against 0.1, FA8). Examples: the fish 220, 240 never
+directly before 390, and 233, 235, 240 never directly before 400; 125, 350 and 415 never directly before 740 (415 goes
+before a fish instead). 26% of common non-ending signs never stand before 740 at all (FA3). Shape families have a weak
+grammar of their own (FA5: block MI 0.13 bits, p = 0.001; FA9 in F'), but it is only 5% of the sign-level order
+information (FA6), so order is mostly a matter of particular signs, not families. The strongest pairs are mostly not
+grammatical-role pairs (FA2: 18% involve an ending, suffix or numeral; e.g. 176-100, 140-920, 142-615), the signs before
+740 and after numerals overlap more than predicted (FA4: 0.36), gaps are not especially cross-family (FA7) and do not
+mostly involve headings or numerals (FA10: 15%). Tally, counting parts: 990 held, 965 failed (1955 registered).

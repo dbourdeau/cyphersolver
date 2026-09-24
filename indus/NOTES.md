@@ -1871,6 +1871,12 @@ Registered first (hundred-and-twenty-seventh set, a9efeb530), tested (`predict_t
 of common signs from their own catalogue block and neighbourhood (weak support for family variants or compounds; not
 in B) and sit in longer lines; otherwise they behave like common signs. Tally 985 held, 960 failed.
 
+## Hundred-and-forty-second pass (24 Sept 2026): forbidden pairs and a family grammar
+
+Registered first (hundred-and-twenty-eighth set, 7dc3d2db3), tested (`predict_test128.py`). 20 expected-but-absent pairs
+(17x chance), e.g. fish never directly before 390 or 400, 415 never before 740; a quarter of common signs never precede
+740. Shape families carry only 5% of the order information: sequencing is sign-specific. Tally 990 held, 965 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
