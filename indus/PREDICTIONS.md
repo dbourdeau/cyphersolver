@@ -7693,3 +7693,21 @@ provisional picture anchors cannot be tested on objects that were not used to pr
 347; VP5: two carry 460, neither with a plant). **R moves**: bare lines end in a sign attested as a name head in 70%
 (VP7), which licenses head and modifier roles for them, and R rises from 72.9% to 81.1% (VP8). Tally, counting parts:
 1229 held, 1151 failed (2380 registered).
+
+# Hundred-and-seventy-eighth set, registered before testing (24 September 2026): decipherment loop 3, meanings from depiction checked by use (seven hypotheses)
+
+Metric after loop 2: S 4.712, R 81.1%, M 16.6%, P 0, L 4. S and R are near what internal modelling reaches; loop 3
+aims at meaning. A sign's depiction (Fairservis 1992's identifications, 'sure' or 'likely', keys/fairservis1992_raw.tsv;
+categories A humans, C/D animals, E plants, H weapons, I implements, Q fish-like) becomes a class-level meaning anchor
+only if it predicts how the sign is used, tested on B (Mahadevan's M77 additions, not used in the earlier finding
+that 740 heads are people and trades, set 20). Names in B via R.name_of; a class needs 10+ B names headed by its signs,
+else its test fails as untestable. Adoption rule, registered now: every class whose test holds enters a new metric
+component M+ ('share of tokens whose sign has a depiction-class meaning confirmed by use'); M itself is unchanged.
+
+- **DC1** Names in B headed by a human-figure sign take 740 in 90%+.
+- **DC2** Names in B headed by a weapon or implement take 740 in 90%+.
+- **DC3** Names in B headed by a fish-like sign take 520 more often than other names (Fisher).
+- **DC4** Names in B headed by an animal sign take 740 in 90%+.
+- **DC5** Names in B headed by a plant sign take 740 in 90%+.
+- **DC6** In B, the depiction category of the head predicts the ending beyond permutation (MI).
+- **DC7** At least two classes pass (M+ above 0).
