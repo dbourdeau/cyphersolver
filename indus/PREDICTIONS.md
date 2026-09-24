@@ -8091,3 +8091,31 @@ square inside (810, 812, 814), a diagonal stroke inside (831). Positions: initia
 - **LF4** Leaf + tree stands medially (not initial, not head, not final) more often than leaf + stroke inside (A + B).
 - **LF5** Leaf + diamond (the heading) is line-initial in 60%+ (A + B; a replication check of the known heading).
 - **LF6** Progress rule: LF1 and LF2 both hold, or LF3 holds with the same direction in A and in B separately.
+
+## Results of the hundred-and-ninetieth set (added after the test; `predict_test190.py`, `results/predict_test190.md`)
+
+Four held, two failed. The leaf's attachment predicts the position class in A (LF1: MI 0.22, p = 0.0001) and B (LF2:
+0.20, p = 0.0001), and the diamond-topped leaves (the heading) open the line in 75% (LF5). The stroke-inside leaf is not
+more often a head than the tree leaf (LF3: 13% against 15%), nor the tree leaf more medial (LF4: 49% against 38%, p =
+0.10). **Check after the test**: with the diamond leaves (the already-known heading) left out, the attachment still
+predicts position in A (MI 0.14, p = 0.0006, 161 tokens) but not in B (MI 0.15, p = 0.10, 77 tokens). LF6 holds by its
+registered rule, but on the independent sample the signal is carried by the known heading, so this loop is counted
+conservatively as no progress: streak 1. Tally, counting parts: 1277 held, 1194 failed (2471 registered).
+
+# Hundred-and-ninety-first set, registered before testing (24 September 2026): decipherment loop 16, a parser for the whole grammar (six hypotheses)
+
+Metric after loop 15: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 1. A new component, G = share of distinct
+lines fully parsed by one explicit grammar built from the registered findings: LINE = [HEADING] NAME [POST] | COUNT |
+CLOSER-LINE | FORMULA | BARE | NUMBERS. HEADING = 817 / 820 / 861 + 2 / 60 / 1 (set 45 and after); NAME = BODY
+ENDING, BODY = one or more lexical signs or numerals, ENDING = 740 | 520 | a closer | a caged sign (set 184) | 740 + a
+stacking closer; POST = any of 400, 90 after the ending; COUNT = a numeral run + at most two signs (count tokens, set
+38 and after); CLOSER-LINE = lexical signs + a closer; FORMULA = 705 / 706 + 33 + 520 (set 35); BARE = 2+ lexical
+signs whose last sign is attested as a name head (set 177); NUMBERS = numerals only. Set 35 parsed 53% of lines with
+fewer rules. Grammar fixed on A's knowledge; B is the check.
+
+- **GR1** G on A's distinct lines is 70% or more.
+- **GR2** G on B's distinct lines is within 10 points of G on A (the grammar is not fitted to A).
+- **GR3** G on F's extra lines (not in A or B) is 60% or more.
+- **GR4** Each rule is needed: dropping any single rule costs 1+ point of G on A (the rules with that effect listed).
+- **GR5** Unparsed lines are longer than parsed lines (rank test): what remains is the long texts.
+- **GR6** Progress rule: GR1 and GR2 hold (G enters the metric).
