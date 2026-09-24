@@ -5033,3 +5033,31 @@ Revision of the hundred-and-third set: as a share of seal inscriptions, closers 
 Mohenjo-daro (CB9: 19% and 20%; FX6 compared all lines, where Harappa's many tablets dilute the share). Not supported:
 earlier date (CB15), a site split between 156 and 527 (CB16), and CB1 in B (CB20: 47%). Tally, counting parts: 759
 held, 828 failed (1587 registered).
+
+# Hundred-and-sixth set, registered before testing (24 September 2026): bare lines (twenty hypotheses)
+
+'Bare line' = a distinct line (A + B) whose template (hundred-and-fourth set) is 'X': 2+ signs with no heading in first
+place, no numeral, no 740/520, no closer, no fish. Seen before registering: 344 such lines, mostly 2-3 signs, commonest
+last signs 400 (50), 368 (17), 595 (16), 390 (16), 615 (10). Name lines, bodies, heads and openers as before; roles as
+in the ninety-ninth set; F without copper for object, site and period tests. 10,000-draw permutations; p < 0.05.
+
+- **XL1** Bare lines are shorter than name lines (rank test).
+- **XL2** 10%+ of bare lines end in 400.
+- **XL3** In 30%+ of bare lines ending in 400, the signs before 400 are an attested name body.
+- **XL4** Bare lines are on tablets more often than name lines (F).
+- **XL5** Bare lines are a larger share of lines at Harappa than at Mohenjo-daro (F).
+- **XL6** The last sign of a bare line is a name head in 50%+.
+- **XL7** The first sign of a bare line is a name opener in 50%+.
+- **XL8** 20%+ of 2-sign bare lines are attested 2-sign name bodies.
+- **XL9** Bare texts recur on 2+ objects more often than name texts (F).
+- **XL10** Bare lines are on potsherds more often than name lines (F).
+- **XL11** Bare-line tokens are formula-only signs more often than name-line tokens.
+- **XL12** 30%+ of bare lines end in a final specialist.
+- **XL13** 10%+ of bare lines end in 368 or 595.
+- **XL14** 368 directly follows a name-head sign in 60%+ of its tokens.
+- **XL15** 595 is line-final in 60%+ of its tokens.
+- **XL16** Bare seal texts are one-off more often than name seal texts (F).
+- **XL17** At Harappa, bare lines are commoner in the earlier period (F).
+- **XL18** Bare lines end in 400 more often at Harappa than at Mohenjo-daro (F).
+- **XL19** B: XL1 holds.
+- **XL20** B: XL8 holds.
