@@ -666,3 +666,63 @@ One held, nine failed.
 - **N10 fails** (human-headed 740 names are followed by 90 as often as others: 6.4% against 5.8%).
 
 Tally, counting parts: 18 held, 44 failed (62 registered).
+
+# Sixteenth set, registered before testing (24 September 2026): twenty-five hypotheses on the leads
+
+Leads: rare and foreign names lean on free signs (N4, Y2, RF2); 520 is counted like a noun, 740 rarely (N2, N1);
+scribes keep bound pairs whole across line breaks (X2, RB). Conventions as the thirteenth set (A, B, F; names; head
+and attribute classes as K; freedom as Y2 within the sample; numerals = numerals.NUMS, 'long' = its long-stroke kind;
+10,000-draw permutations; p < 0.05; both A and B where named). 'Once-only' = a name occurring once in its sample. The
+candidate set C = signs in the top quartile of freedom computed from sample A's lines that contain no name (grammar
+signs left out); C is fixed from A and tested elsewhere. M = the M77 multi-line texts of RB; M tests must hold with
+lines as listed and reversed.
+
+Sound-sign lead
+- **P1** Per-sign enrichment in once-only names (log ratio of token share, once-only against recurring) agrees between
+  A and B: Spearman > 0 over signs with 5+ name tokens in both.
+- **P2** C is enriched in B's once-only names against its recurring names, more than random sign sets matched on B
+  token-count quintiles.
+- **P3** C is enriched in West Asian texts against home texts (F), more than matched random sets.
+- **P4** C signs have higher positional entropy in B's names (first / inside / last) than matched random sets.
+- **P5** Once-only names contain a non-adjacent repeated sign (numerals aside) more often than recurring names,
+  length-stratified (3, 4, 5+). A and B.
+- **P22** Once-only names contain a bound pair (seventh set) less often than recurring names, length-stratified. A, B.
+- **P23** Once-only names end in a head-class sign less often than recurring names, length-stratified. A and B.
+- **P24** C signs are graphically simpler (H5 complexity) than matched random sets (A quintiles).
+- **P25 Control: the rare-name effect is not special to the Indus script.** In Linear B (DAMOS; words by the word
+  dividers; freedom from lines with dividers removed, as RC), syllabograms of words occurring once are freer than those
+  of recurring words, length-stratified (2, 3, 4+ syllables). If P25 holds, N4 is a general frequency effect and no
+  evidence of sound spelling.
+
+520 and 740
+- **P6** Numerals directly before 520 are long-stroke more often than numerals before other signs. A and B.
+- **P7** Ending lines on tablets and sealings end in 520 (rather than 740) more often than on seals, length-stratified.
+  F.
+- **P8** 520 is followed by more name material (a sign other than 90 / 400 / 151, not line end) more often than 740 is.
+  A and B.
+- **P9** Names ending 520 contain a numeral away from the ending (not the last body sign) more often than 740 names,
+  length-stratified. A and B.
+- **P10** Human heads (Fairservis A) are preceded by a numeral less often than other head-class signs. Pooled A + B.
+
+Numerals and variants
+- **P11** Pairs of distinct Harappa tablet texts differing at one position differ at a numeral more often than a random
+  position of the pair holds a numeral. F.
+- **P12** Seal name bodies differing at one position differ at a numeral less often than such tablet pairs do (Fisher).
+  F.
+- **P13** At Harappa, name heads are steadier than attributes between earlier and later levels (HARP 3B and Vats
+  Strata IV-VII against HARP 3C and Vats I-III): JSD of first signs minus JSD of last signs > 0, label permutation. F.
+
+Order inside names
+- **P14** In 3-sign name bodies the two attribute slots hold different signs: MI(sign; slot 1 or 2) exceeds its value
+  with the two attributes swapped at random per name. A and B.
+- **P15** A numeral stands before the other attributes: in bodies of 3+ signs with one numeral and at least one other
+  attribute before the head, the numeral is first more often than not (sign test). A and B.
+- **P21** Attribute-class signs are freer than head-class signs (matched on token quintiles). A and B.
+
+Units the scribes kept together (M, Fisher on break rates)
+- **P16** Numeral + fish (signs.FISH) pairs are broken by a line less often than other gaps.
+- **P17** Ending + post-ending sign (740 / 520 followed by 90 / 400 / 151) is broken less often than other gaps.
+- **P18** Head + ending (the gap before 740 / 520 at a name's end) is broken less often than other gaps.
+- **P19** Inside names, the gap before the head is broken more often than the other name-internal gaps (attribute and
+  head are separate words).
+- **P20** The gap after the heading is broken more often than other gaps (the heading is a separate word).
