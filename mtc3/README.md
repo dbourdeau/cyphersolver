@@ -1,6 +1,7 @@
 # MysteryTwister challenges: a harder track
 
-Status: in progress (set up 24 Sept 2026; nothing attempted or submitted yet).
+Status: in progress. 24 Sept 2026: challenge 115 (Bigram Substitution Part 2) solved, answer ready for Daniel to submit;
+180 (Camouflage Part 6) attempted, open; Weakened ElsieFour Parts 1-3 in progress (SAT attack).
 
 George Lasry (24 Sept 2026) suggested it: historical European ciphers are too easy a test for current models, and
 MysteryTwister (formerly MysteryTwister C3, now mysterytwister.org, run by the CrypTool project) accepts LLM solutions
@@ -36,3 +37,13 @@ This folder is not a cipher target: it has no `profile.json` and stays out of th
 | 7 | Monoalphabetic Substitution with Camouflage Part 6 (180) | II | Two human solvers; cheap to try |
 
 Level X items with public solutions (Vatican Part 3, Catherine of Aragon) are only useful as declared controls.
+
+## Results
+
+| # | Challenge | Level | Outcome | Folder |
+|---|---|---|---|---|
+| 115 | Bigram Substitution, Part 2 | II | Solved 24 Sept 2026 (no earlier LLM solve); key verified by re-encryption; answer in `private/` (git-ignored), not yet submitted | `115-bigram2/` |
+| 180 | Monoalphabetic Substitution with Camouflage, Part 6 | II | Attempted, open: the search never reaches the true key | `180-camouflage6/` |
+
+Answers to live challenges are kept in each folder's `private/` directory, which is git-ignored: the repository is public,
+and publishing an answer would spoil the challenge.
