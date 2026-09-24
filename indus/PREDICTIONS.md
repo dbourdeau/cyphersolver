@@ -254,3 +254,19 @@ over home lines, for signs with 5+ home tokens. With 740, 520 and the heading si
 sides, the mean freedom of West Asian sign tokens exceeds the length-matched home draws, p < 0.05.
 
 Hypothesis Y holds if both hold.
+
+## Results of the eighth set (added after the test; `predict_test8.py`, `results/predict_test8.md`)
+
+18 West Asian lines (89 signs), 3,356 home lines.
+
+- **Y1 fails, narrowly.** Bound pairs are 4 of 71 West Asian adjacent pairs (5.6%) against 12.7% in length-matched home
+  draws; p = 0.060 against the registered 0.05. The direction is the predicted one. Two of the four are 590-390 in the
+  two West Asian lines that end in 740 (416 840 60 3 220 590 390 740; 285 2 235 220 125 590 390 740), which read like
+  ordinary Indus names; the other 16 lines have 2 bound pairs among 57.
+- **Y2 holds.** Mean freedom of West Asian sign tokens +0.184 against +0.084 for home draws (5-95%: -0.006 to +0.171),
+  p = 0.029: the foreign texts lean on signs that combine with many different neighbours.
+- **Hypothesis Y fails** as registered (both parts required). Tally: 4 held (Q1, Q2, X2, Y2), 12 failed.
+- What it leaves: a weak, consistent pattern (fewer bound pairs, more free signs) in the texts thought to write foreign
+  names, which is what a script with sound signs spelling foreign words would show. 15 of 87 West Asian tokens are signs
+  with under 5 home tokens, left out of Y2. The sample is small (18 lines), so this is a lead, not a result; it
+  singles out the freest signs as the best candidates for sound values.

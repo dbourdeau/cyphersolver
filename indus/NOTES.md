@@ -949,6 +949,13 @@ without the heading pairs, p = 0.009). **Found while testing:** multi-line line 
 ambiguous (listed order: ending last on 34 of 66; reversed, as data/corpus.tsv: heading first on 12). icit_full.py
 keeps the listed order, with `LINES_REVERSED` to flip; the test holds either way. Tally 3 held, 11 failed.
 
+## Twenty-second pass (24 Sept 2026): foreign names, bound pairs and free signs
+
+Registered first (PREDICTIONS.md, eighth set, 5f2553547), tested (`predict_test8.py`). Hypothesis Y: foreign names on
+West Asian seals are spelled with sound signs. **Y1 fails narrowly** (bound pairs 5.6% against 12.7%, p = 0.06);
+**Y2 holds** (West Asian tokens use freer signs, +0.184 against +0.084, p = 0.03). Y fails as registered. Tally 4
+held, 12 failed. Freedom scores (residual neighbour diversity) are a candidate way to pick out phonetic signs.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
