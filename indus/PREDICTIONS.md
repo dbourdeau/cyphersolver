@@ -2536,3 +2536,27 @@ not avoid doubles (DB8, 5 of 36, p = 0.17); Harappa does not double more (DB9); 
 scatter; a double is its own unit, never a variant spelling of the single sign. Deviations: DB1 and DB6 used 1,000
 shuffles; DB4 was run as a paired sign test (removing a sign of the double against removing a random other sign of the
 same body) rather than a permutation of positions. Tally, counting parts: 236 held, 341 failed (577 registered).
+
+# Forty-second set, registered before testing (24 September 2026): sign order inside the name (round 6 of 10)
+
+Name bodies as before (name_of, pooled A + B unless stated); numerals kept. 'Pair' = two signs in one body, any
+distance, ordered by which comes first; pairs co-occurring in 5+ bodies. 10,000-draw permutations; p < 0.05.
+
+- **OR1** For 70%+ of pairs one order holds in 90%+ of their bodies (pooled).
+- **OR2** The dominant orders are transitive: among triples whose three pairs all qualify, cyclic triples are fewer
+  than the 25% random orientation gives (binomial).
+- **OR3** A sign's relative position in the body (0 first, 1 last) is more fixed than within-body shuffles make it:
+  summed within-sign variance of relative position lower than in 1,000 shuffles.
+- **OR4** Dominant orders agree between A and B for 85%+ of pairs that qualify in both.
+- **OR5** Dominant orders agree between Mohenjo-daro and Harappa (F names) for 80%+ of pairs qualifying in both
+  (3+ bodies each).
+- **OR6** A recurrent prefix (body minus its last sign, 3+ bodies) combines with more distinct last signs than when
+  last signs are shuffled among bodies of the same length.
+- **OR7** Names grow at the front: of 3-sign bodies with exactly one attested 2-sign sub-body (same ending) made by
+  dropping the first or the last sign, the attested one is the tail (first sign dropped) more than half the time.
+- **OR8** In bodies of 4+ signs, an attested shorter body (same ending) is found as the final segment more often than
+  as the initial segment (paired sign test).
+- **OR9** The sign just before the last sign carries more information about the last sign than the first sign does
+  (bodies of 3+; MI of the adjacent sign higher, and significant).
+- **OR10** Pairs occurring in both orders are more common among signs in the first two positions than in the last two
+  (distinct pairs, bodies of 4+; Fisher).
