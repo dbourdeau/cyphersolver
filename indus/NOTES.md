@@ -2173,6 +2173,14 @@ names, 520 names reach fewer sites than matched 740 names, sharing does not fall
 same-name seals do not share a motif beyond chance: the name is independent of the seal's animal. Ur III shared owners
 are shorter, as Indus shared names are; Linear B shared persons are not. Tally 1173 held, 1105 failed.
 
+## Hundred-and-eighty-first pass (24 Sept 2026): administration, survival and scribal hands
+
+Registered first (sets 167-168 together, ff42dfa9c). Most seals are lost: 6 of 42 sealing texts match a known seal
+(estimate about 6 times the known seal texts, inflated by Lothal's thin seal record). Second lines of two-line seals
+are shorter but not title fields; rising openers are not sealing openers; no in-city locality of numeral compounds;
+a scribe's hand across pairs is borderline (p = 0.059). AD9 ill-posed; 5 of 16 foreign stroke runs precede signs
+never counted at home. Tally 1177 held, 1111 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -7292,3 +7292,18 @@ Conventions as sets 161-166. p < 0.05.
 - **CT9** Names headed by one of them take 740 in 90%+.
 - **CT10** 90%+ of copper-tablet sign tokens are signs also used in seal names (one script and vocabulary, not a
   separate label code).
+
+## Results of the hundred-and-sixty-seventh set (added after the test; `predict_test167.py`, `results/predict_test167.md`)
+
+Four held, six failed. **Most seals are lost.** Of 42 distinct sealing texts only 6 are on a surviving seal; with seals
+and sealings as two catches the estimate is about 9,100 seal texts against 1,485 known (AD1, 6.1 times), and at
+Lothal 2 of 12 sealing texts match a known seal (AD2). Caveat: the sealings come mostly from Lothal and Kalibangan,
+whose seals are thinly represented, so the estimate is inflated by geography; the direction (most seals not found)
+is the result. In two-line seal texts the non-name line is shorter than the name line (AD5: 31 against 7) but it is
+not a title field of closers (AD4: 16 of 40 end in a post-name sign, several of them numerals) and does not recur more
+(AD6). The openers that rise at Mohenjo-daro are not the sealing openers (AD3), numeral compounds are not local inside
+the city (AD8), and a scribe's hand across different variant pairs is not shown (AD7: p = 0.059, close). AD9 holds
+but is ill-posed, noted after the test: 'never counted at home' was defined from the home runs themselves, so the home
+rate is 0 by construction; what stands is descriptive: 5 of 16 West Asian stroke runs stand before signs never counted
+anywhere in the Indus homeland, which fits strokes used for sound in foreign names (set 136) but on few cases. West
+Asian stroke runs are not smaller (AD10). Tally, counting parts: 1177 held, 1111 failed (2288 registered).
