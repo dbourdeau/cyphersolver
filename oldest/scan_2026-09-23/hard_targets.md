@@ -105,7 +105,8 @@ catalogue.json, CATALOGUE.md, TARGETS.md, SOLVED_CATALOGUE.md, README.md and fol
 - **Why interesting**: these are Hanover-Celle ministerial ciphers of the Succession years (Hanoverian succession, War of the Spanish Succession), outside
   DECODE and outside the British SP series. Several letters are probably in one Hanoverian system, and Ilten's own key may be elsewhere in the Nachlass.
 - **Images**: **not confirmed online** (GWLB digitises selectively; ask or check the GWLB digital library). **Prior art**: none found.
-- **Score**: 3/3/3 (if images can be had). **Not in repo**.
+- **Score**: 3/3/3 (if images can be had).
+- **Outcome (24 Sept 2026)**: the Kalliope notes read "Dechiffrierter Brief" (deciphered), not "nicht dechiffriert"; the volumes are online in the GWLB digital library and every code run of 1697-1706 carries an interlinear decipherment (`ilten1697/`). The 1743 letters were deciphered with the code table in Ms XXIII 1234:31,1 pp. 386-391 (`ilten1743/`).
 
 ### 9. Staten-Generaal: "diverse briefjes in cijferschrift", Spanish invasion of the Veluwe, 1629 (Nationaal Archief 1.01.02 inv. 12579.26)
 - **Content**: a packet of correspondence with the States-General deputies at Arnhem about the Spanish-Imperial invasion of the Veluwe (1629, the year of the siege of

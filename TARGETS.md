@@ -244,6 +244,8 @@ Powers, and the two compute challenges). Those are listed in `top50/NOTES.md`, n
 
 ## Done elsewhere in this repo
 
+- **Hanover-Celle ministers → Jobst Hermann von Ilten, 1697–1706**, catalogue 346, GWLB Ms XXIII 1245: read at the time (Kalliope's "Dechiffrierter Brief"; interlinear decipherments), transcribed and checked 24 Sept 2026. See [ilten1697/](ilten1697/).
+- **London → Johann Georg von Ilten, Feb–Apr 1743**, GWLB Ms XXIII 1234:29,2: deciphered 24 Sept 2026 with the code table in Ms XXIII 1234:31,1 pp. 386–391. See [ilten1743/](ilten1743/).
 - **Benedict XIII → Francesc Climent, 1399–1416**, Arxiu Capitular de Barcelona (catalogue 334): found already read, 23 Sept 2026. Deciphered and printed by Puig y Puig, *Pedro de Luna* (1920); key never printed by him, rebuilt here from the p. 475 facsimile against his text (20 letters, 91.4% of the plate confirmed; three corrections). [`benedict1399/`](benedict1399/) · [write-up](https://dbourdeau.github.io/cyphersolver/benedict1399.html)
 
 - **Cardinal Matthäus Schiner → Henry VIII, Trent, 14 June 1516**, BL Cotton Vitellius B XIX f. 131 (catalogue 290): found already read, 23 Sept 2026. Deciphered and printed by Büchi and Schiess, *Korrespondenzen und Akten* II (1925) no. 541; L&P's "not deciphered" superseded; leaf not digitised, key never printed. [`schiner1516/`](schiner1516/) · [write-up](https://dbourdeau.github.io/cyphersolver/schiner1516.html)

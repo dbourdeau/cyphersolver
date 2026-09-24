@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "target": "ilten1743",
+ "title": "Two cipher letters to J. G. von Ilten, London, Feb-Mar 1743, GWLB Hannover Ms XXIII 1234:29,2",
+ "documents": [
+  {
+   "id": "feb26",
+   "read": "read",
+   "shelfmark": "GWLB Ms XXIII 1234:29,2 pp. 73-75",
+   "date": "15/26 Feb 1743",
+   "year": 1743,
+   "country": "Germany",
+   "route": "unsigned (London) to J. G. von Ilten",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment on or with the letter",
+    "partial": false
+   },
+   "length": {
+    "tokens": 189,
+    "distinct": 141,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_feb26.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GWLB Kitodo master images (public domain), read in crops",
+    "image_quality": "good",
+    "notes": "German clear opening and close; 25 lines of numeric code with no decipherment; a few end digits in the gutter, read from a full-resolution crop (75? unresolved)."
+   }
+  },
+  {
+   "id": "mar29",
+   "read": "read",
+   "shelfmark": "GWLB Ms XXIII 1234:29,2 pp. 119-121",
+   "date": "29 Mar / 9 Apr 1743",
+   "year": 1743,
+   "country": "Germany",
+   "route": "Ernst von Steinberg (London) to J. G. von Ilten",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "contemporary decipherment in the recipient's office",
+    "partial": false
+   },
+   "length": {
+    "tokens": 34,
+    "distinct": 32,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_mar29.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GWLB Kitodo master images (public domain), read in crops",
+    "image_quality": "good",
+    "notes": "German letter with three French code runs; p. 121 is a contemporary worksheet glossing the groups, partly wrongly."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator",
+   "code"
+  ],
+  "summary": "Hanoverian French syllabic nomenclator of 863 numbered groups (blanks and 864-1000 are nulls), with homophones, officers' and place names, and control groups 'annulle' / 'repete la precedente'.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 863,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "notes": "Two-part code: numbered decoding table (pp. 390-391) and alphabetical encoding table (pp. 386-388) in Ms XXIII 1234:31,1. 172 'Duc' is used for 'du'."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Letter 2 only: a contemporary worksheet (p. 121) glossing its 34 groups, with errors and a skipped pair. Letter 1: none.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Project-level: set up Claude Code with Opus 5.5 and posed the problem with /goal, pasting the catalogue entry. No target-specific intervention recorded.",
+  "tools": [
+   "Kalliope SRU",
+   "GWLB Kitodo METS",
+   "two transcription subagents for the key table",
+   "decode1743.py"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-24",
+  "last_date": "2026-09-24"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "While checking catalogue 346, fetched the two 1743 Ilten letters flagged 'Teilweise dechiffrierter Brief' (Ms XXIII 1234:29,2) from GWLB Kitodo.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed letter 1's 189 code groups (no decipherment on it) and letter 2's 34 groups with the p. 121 worksheet glosses.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Kalliope search 'Ilten Chiffre*': volume 1234:31,1 (1745/46) lists a 'Chiffre-Tabelle', pp. 386-391.",
+   "result": "worked"
+  },
+  {
+   "kind": "key from source",
+   "what": "Fetched pp. 386-391: numbered decoding table 1-863 and alphabetical encoding table; transcribed the decoding side (two agents, 28 checks against the worksheet values).",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Applied the table to letter 1: fluent French on forage and discipline, Du Pontpietin and Sommerfeldt; dateline 866.223 = [null] Londres.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Applied it to letter 2: the worksheet's values agree group for group; the key also restores 278.613 'quoique avec' and corrects 'in-tra-c-tion' to 'instruction'.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Re-read the gutter digits from a full-resolution crop: 51, 407, 59, 95, 70, 705 ('ce dernier point'); 75? stays open.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "read after matching with key from external sources",
+  "method_basis": "The key table sits in a different volume of the Ilten papers (Ms XXIII 1234:31,1, 1745/46); it was found through the catalogue and matched to the 1743 letters by the worksheet values of letter 2.",
+  "contribution": [
+   "transcription",
+   "sender or date identified"
+  ],
+  "class": "read",
+  "fraction_read": 0.987,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "ciphertext_feb26.txt + ciphertext_mar29.txt: 223 code groups; not reading as sense: 283, 75?, 59 in letter 1",
+  "key": "recovered",
+  "codes_open": {
+   "open": 1,
+   "total": 863,
+   "tokens_open": 1
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "letter 1 p. 74: 283.75? before 'me' (last digit in the gutter)",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "letter 1 p. 74: 59 after 'discipline'",
+    "blocker": "too-short"
+   }
+  ],
+  "notes": "Letter 1 had no decipherment at all; letter 2's contemporary worksheet was incomplete and partly wrong."
+ }
+}

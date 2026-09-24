@@ -1,0 +1,258 @@
+{
+ "schema_version": 1,
+ "target": "ilten1697",
+ "title": "Letters to Jobst Hermann von Ilten, 1697-1706, GWLB Hannover Ms XXIII 1245:4 and 1245:7 (catalogue 346)",
+ "documents": [
+  {
+   "id": "A",
+   "read": "read",
+   "shelfmark": "GWLB Ms XXIII 1245:4 ff. 212r-213r",
+   "date": "7 Nov 1697",
+   "year": 1697,
+   "country": "Germany",
+   "route": "J. E. von Hattorf (Hannover) to J. H. von Ilten",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary decipherment in the recipient's office",
+    "partial": false
+   },
+   "length": {
+    "tokens": 74,
+    "distinct": 57,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_A.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GWLB Kitodo master images (public domain), read in crops",
+    "image_quality": "good",
+    "notes": "Clear letter with code runs, every run glossed over the groups; code A."
+   }
+  },
+  {
+   "id": "B",
+   "read": "read",
+   "shelfmark": "GWLB Ms XXIII 1245:7 ff. 201r-204r",
+   "date": "10 Oct 1705",
+   "year": 1705,
+   "country": "Germany",
+   "route": "J. W. von Heusch (Berlin) to J. H. von Ilten",
+   "language": "French",
+   "pages": 7,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary decipherment in the recipient's office",
+    "partial": false
+   },
+   "length": {
+    "tokens": 125,
+    "distinct": 76,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_B.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GWLB Kitodo master images (public domain), read in crops",
+    "image_quality": "good",
+    "notes": "Code B; one group (419) unglossed; several right-margin groups run into the binding."
+   }
+  },
+  {
+   "id": "C",
+   "read": "read",
+   "shelfmark": "GWLB Ms XXIII 1245:7 ff. 288r-289r",
+   "date": "31 Jan 1706",
+   "year": 1706,
+   "country": "Germany",
+   "route": "J. E. von Hattorf (Hannover) to J. H. von Ilten",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary decipherment in the recipient's office",
+    "partial": false
+   },
+   "length": {
+    "tokens": 143,
+    "distinct": 100,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_C.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GWLB Kitodo master images (public domain), read in crops",
+    "image_quality": "good",
+    "notes": "Code B; six groups unglossed; clear postscript."
+   }
+  },
+  {
+   "id": "D",
+   "read": "read",
+   "shelfmark": "GWLB Ms XXIII 1245:7 ff. 329r-330r",
+   "date": "25 May 1706",
+   "year": 1706,
+   "country": "Germany",
+   "route": "Elector Georg Ludwig (Hannover) to J. H. von Ilten at Berlin",
+   "language": "German",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary decipherment in the recipient's office",
+    "partial": false
+   },
+   "length": {
+    "tokens": 150,
+    "distinct": 104,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_D.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "GWLB Kitodo master images (public domain), read in crops",
+    "image_quality": "good",
+    "notes": "Code B used for German; glosses in Kurrent read at word level. Kalliope names the sender Georg Wilhelm; the letter is signed Georg Ludwig."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator",
+   "code"
+  ],
+  "summary": "Two numeric syllabic nomenclators: code A (groups up to about 505, 1697) and code B (groups up to 1010, 1705-06, used for French and German), with homophones and nulls (62 in A, 91 in B).",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "notes": "Groups separated by dots; code runs embedded in clear text. No key for A or B is known; values come from the interlinear glosses."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Interlinear decipherments on the letters themselves (GWLB); Kalliope notes 'Dechiffrierter Brief' on each record.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Project-level: set up Claude Code with Opus 5.5 and posed the problem with /goal, pasting the catalogue entry. No target-specific intervention recorded.",
+  "tools": [
+   "Kalliope SRU",
+   "GWLB Kitodo METS",
+   "group-gloss consistency table (tables.py)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-24",
+  "last_date": "2026-09-24"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Kalliope SRU search 'Ilten dechiffriert': six items; the record notes read 'Dechiffrierter Brief' (deciphered), not 'not deciphered' as the catalogue had it.",
+   "result": "worked"
+  },
+  {
+   "kind": "access",
+   "what": "Found Parts IV and VII of the Receuil de Lettres a J. H. d'Ilten in the GWLB Kitodo library (POST search), mapped folios to physical images through the METS files, fetched the 17 leaves.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Transcribed the four letters: clear text, 492 code groups and the interlinear glosses, from crops of the master images.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Built a table of every group with every gloss it carries (tables.py): no contradictions; code A and code B told apart; 62 (A) and 91 (B) identified as nulls; code B shared by the French and German letters.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Read the four letters from the glosses: Kolbe and Barfus (1697), the Prussian marriage of Sophia Dorothea (1705-06). 7 groups left unglossed by the interliner.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Every code run carries a contemporary interlinear decipherment; the work transcribed it and checked it against the recurrence of each group.",
+  "contribution": [
+   "transcription",
+   "catalogue correction",
+   "sender or date identified"
+  ],
+  "class": "read",
+  "fraction_read": 0.986,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "ciphertext_A-D.txt: 492 code groups; 7 unglossed (B 419; C 709, 276, 78?, 626, 728, 36?) counted unread; 91 in C counted read as a null",
+  "key": "none",
+  "codes_open": {
+   "open": 7,
+   "total": "unknown",
+   "tokens_open": 7
+  },
+  "grades": "unknown",
+  "verification": [
+   "contemporary decipherment",
+   "key confirms"
+  ],
+  "gaps": [
+   {
+    "item": "B group 419 (463 written above)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "C groups 709.276, 78?, 626, 728.36?",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "groups running into the binding at the right margin (glosses legible)",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Catalogue premise corrected: Kalliope's 'Dechiffrierter Brief' means deciphered. No key for codes A or B."
+ }
+}

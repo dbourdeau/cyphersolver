@@ -19,6 +19,8 @@ The **Segura letter of 1596** is provisionally p136 at **3.45**: a short unknown
 
 The **Potocka and Mniszech letters** are provisionally p137 at **2.90**: an independently recovered bilingual alphabet, but one separate cipher remains unread and there is no independent plaintext.
 
+The **London letters to J. G. von Ilten of 1743** are provisionally p139 at **2.95**: a never-deciphered code letter read with the table from another volume of the same papers, checked against the office worksheet of its sibling; military orders of the Pragmatic Army campaign, regional rather than decisive.
+
 The **Reims letter of 19 June 1589** (R2276) is provisionally p138 at **3.00**: a long letter wholly in cipher, read in part by extending Tomokiyo's partial Nevers-Piles table, with new content on the Reims succession of 1589; the identification of the cipher was already known (Biermann 2021, unpublished).
 
 ## Axes and weights
@@ -36,6 +38,7 @@ The **Reims letter of 19 June 1589** (R2276) is provisionally p138 at **3.00**: 
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
+| p139 | **Unsigned (London) and Ernst von Steinberg → Johann Georg von Ilten**, GWLB Hannover Ms XXIII 1234:29,2 pp. 73–75, 119–121 | Feb–Apr 1743 | 2 | 3 | 4 | 4 | 1 | 4 | **2.95** | Key found in a later volume of the Ilten papers and matched by the worksheet of the second letter; the first letter had no decipherment at all. [ilten1743](https://dbourdeau.github.io/cyphersolver/ilten1743.html) |
 | p138 | **Unknown writer (probably Jean de Piles) → unnamed patron**, Reims, BnF fr. 20974 pp. 1–3 (DECODE R2276) | 19 June 1589 | 3 | 3 | 4 | 4 | 1 | 2 | **3.00** | Three pages wholly in cipher read to 91.8% by extending a partial published table; catalogue date and addressee corrected; torn edges and ~80 words open. [r2276](https://dbourdeau.github.io/cyphersolver/r2276.html)
 | p137 | **Potocka and Mniszech to Dunin** | 1714–16 / undated | 3 | 3 | 4 | 3 | 1 | 2 | **2.90** | Nine letters share the recovered alphabet; person codes and Mniszech remain open. [potocka1714](https://dbourdeau.github.io/cyphersolver/potocka1714.html) |
 | p136 | **Matheo de Segura → Constable of Castile**, BnF es. 336 no. 99 | 1596 | 4 | 3 | 4 | 4 | 2 | 3 | **3.45** | Unknown sign cipher read; six tentative values, no independent plaintext. [segura1596](https://dbourdeau.github.io/cyphersolver/segura1596.html) |
@@ -635,3 +638,7 @@ Potocka and Mniszech provisional score (p137): 0.25×3 + 0.25×3 + 0.20×4 + 0.1
 
 
 Reims letter, 19 June 1589 (R2276) provisional score: 0.25×3 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×1 + 0.10×2 = **3.00** (p138). Novelty means no published reading found; Biermann's 2021 identification is reported as private.
+
+London letters to J. G. von Ilten, 1743, provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×1 + 0.10×4 = **2.95** (p139): D 2, a key applied after finding it; H 3, forage orders and Stair's instructions in 1743; N 4, the first letter unread until now; R 4, key traced through the catalogue to another volume; F 1; V 4, read end to end with the worksheet agreeing.
+
+**Hanover-Celle ministers → Jobst Hermann von Ilten (1697–1706; catalogue 346)**: read at the time. Every code run carries its interlinear decipherment; transcribed and checked, 7 of 492 groups unglossed. Ranked as a catalogue correction, not a break.
