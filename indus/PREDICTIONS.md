@@ -7992,3 +7992,22 @@ against 42%). The three stroke counts are not graded (JV5: final 0.86, 0.07, 0.1
 9-10: a third mark that changes a sign's job, here turning the commonest ending into an internal element of the
 name; the script marks grammatical function by strokes and cages drawn onto a base sign. JV8 (progress rule) holds:
 new and replicated on B. Tally, counting parts: 1263 held, 1183 failed (2446 registered).
+
+# Hundred-and-eighty-seventh set, registered before testing (24 September 2026): decipherment loop 12, doubling and brackets (seven hypotheses)
+
+Metric after loop 11: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 0. An automatic sweep of Parpola's list for
+'base + mark' pairs (a marked sign whose description begins with a base sign's description) finds few pairs beyond
+those already tested: cage (8), stroke (the jar, 3), bracket (2: 101-103/100, 905/904-927), hatching (1: 924/923).
+Loop 12 tests the other visible device, doubling (a lexical sign written twice in a row, TY4: 5% of lines, mostly 615),
+and the brackets. Distinct lines; A and B separately.
+
+- **DB1** A lexical sign written doubled (x x) ends the line (or stands before 400 / 90) less often than the same sign
+  written once, pooled over signs doubled 3+ times (A; Fisher).
+- **DB2** DB1 holds on B.
+- **DB3** Doubled pairs are followed by 740 / 520 less often than the single sign is (A + B).
+- **DB4** Doubled pairs stand at the start of the line more often than the single sign (A + B): doubling marks the
+  opening element.
+- **DB5** The doubled 615 has a different set of following signs from the single 615 (JSD above the 95th percentile of
+  random splits of 615 tokens).
+- **DB6** Bracketed signs (101/103, 905) are final more often than their bases (100; 904, 927) (A + B).
+- **DB7** Progress rule: at least one of DB1, DB3, DB4 holds in A with the same direction in B.
