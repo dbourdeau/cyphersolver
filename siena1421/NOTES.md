@@ -155,3 +155,52 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
   1423-24 (Carlo Malatesta commanded for Florence; Z7 = Duke of Milan). Either way the letter is c. 1409-29,
   i.e. at or before Meister's 1421 for no. 1: a candidate for the project's oldest-cipher record, but only if
   the date can be fixed (second reading pass under way).
+
+## No. 25 (R4813): key recovered ciphertext-only (24 Sept)
+
+- Slip, 11 lines, 496 tokens in 65 point-divided words, 22 signs built on a running horizontal stroke (agent E,
+  `transcripts/no25.txt`). Italian, simple substitution (Sienese 'ch' spelling). homsolve2 (words=1, it-cinquecento)
+  gave the key unaided; hand fixes H = h, Y = m (`keys/no25_key.txt`).
+- Reading (first pass): "Noi aviamo chompreso che questo signiore no chavalcharà per lo modo che chostoro di qui
+  voreveno, e dilivera senza altra spesa fare di qui partirsi e d'esare chostà, e crediamo sarà sabato prossimo,
+  e farano la via di Laiaticho, e poi di là si partirano e l'altro dì sarano a Radichondoli e per quello paese e
+  ancho a Chasole ... e però richordiamo a la signoria vostra che ne' detti luoghi faciate provedere di pane,
+  vino, biada ... per fante propio significharemo a la magnificientia vostra." An armed lord's route from the
+  Volterra side (Lajatico) through Radicondoli and Casole into Sienese territory; Siena asked to provision it.
+  Undated. Verification pass (agent E, `transcripts/no25_reading.txt`, transcription rev. 2): Y and X are two glyphs
+  (Y = m, X = r), XB = z, G was S; **477 of 496 cipher signs (96.2%) in words read as Italian**, 18 signs in two
+  unclear words ('s'hadra', 'o chon grediamo'), 1 code sign TH unread. Meets the read bar.
+
+## No. 24 (R4812): same system as no. 6 (probable)
+
+- Text side is P2 (~40 lines, continuous cipher); P1 = dorse with 8 run-over lines and the address "Magnifici et
+  potenti signiori e ... Capitano di popolo della citta di Siena". Opens in clear "Magnifici et potentes domini
+  domini mei singularissimi ... Recomendatione premissa //" like no. 6 ("Magnifici et potentes .d. .d. mei
+  singularissimi doppo humile recomandatione"), and shares no. 6's frequent 'p p' pair and W sign. Together they
+  would give ~4,000 tokens of one system: the way into no. 6.
+
+## No. 4 (R4793): Galgano Borghesi to Leonardo Benvoglienti, Naples 12 May 1456 — key rebuilt from its own fragment
+
+- Clear Italian letter with 15 cipher runs (144 sign tokens) and 9 Latin code words; a second (recipient's) hand
+  wrote interlinear glosses over some runs ("duca", "papa", "per la", "presto", "chercavano", "e cardinali",
+  "pigliasse", "per parte del duca", "al re"): this is the contemporary partial decipherment behind the 1952
+  inventory's "solo parzialmente decifrate".
+- None of the six 1450s keys filed in fasc. 1 (R4750, R4753, R4754, R4756, R4757, R4762; transcribed in `keys/`)
+  gives the letter values, though R4757 shares sign shapes and the code word Calor (there = Florentini) and R4750
+  has 'storps'. A two-row **alphabet fragment written below the letter's text** (i o_tail, l longs, m 2, n a,
+  o T, p M, q S, r g_ring, s y, t L_slant, u C; left part torn) plus the glosses rebuilt the key (`keys/no04_key.txt`):
+  114/144 sign tokens read securely (79%), 11 more from context, 19 unread (1, //, 8, F, x_slash, T_long, 4_hook,
+  +, R, delta, B, b°). Code words: Calor = duca, storps = Lucca (per the gloss), cras = parte, Matto/Maffo = papa,
+  toffe = papa?, vapor = cardinali?, pedesi = ?.
+- Sense (tentative): Borghesi asks Benvoglienti to use the cipher; at his urging King Alfonso wanted the
+  settlement to include the promises made when Lucca was besieged by the Florentines ("al capitano ... a Milano"),
+  the King made light of it ("Tunc rex parvi fecisse"); Antonio d'Arezzo reports the Duke well disposed; the Pope,
+  the Florentine clergy ("chericato de Fiorentini") and the cardinals to contribute "contra lo Turcho"; the Duke's
+  message to be referred "al re". Reading: `transcripts/no04_reading.txt`.
+
+## No. 11 (R4800), Acciaiuoli 1478: no key in reach
+
+- Florentine letter (Donato Acciaiuoli to Lorenzo de' Medici, Rome 13 June 1478), held in Siena (intercepted in the
+  Pazzi war?). 409 cipher tokens / 44 signs: homophonic anneal fails. Gabbrielli's key volume I (Ilardi reel 58,
+  index frames checked 24 Sept) lists Acciaioli keys only for Giovanni 1504 and Roberto 1505-14; no Donato 1478.
+  Florentine keys to Lorenzo (Medici avanti il Principato) are not online. Open.
