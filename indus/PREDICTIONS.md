@@ -5766,3 +5766,21 @@ knowing the ending barely helps predict the head (BM5: 38% to 42%); common heads
 one (BM9, under 0.3). BM4 was ill-posed: a smoothed bigram scores almost identically forwards and backwards, so it cannot
 detect reading direction (6.384 both). Next: combine position, roles and bigrams in one model. Tally, counting parts:
 967 held, 939 failed (1906 registered).
+
+# Hundred-and-twenty-fourth set, registered before testing (24 September 2026): one combined model (ten hypotheses)
+
+Components from the hundred-and-twenty-second and -third sets, fitted on the same 80% training lines: bigram,
+role model, position unigram (first, middle, next-to-last, last), two-sign-context model. The combined model is a
+linear interpolation whose weights are chosen on a held-back slice of the training data only (coarse grid). Scores are
+held-out cross-entropy in bits per sign (previous best single component: position unigram 5.43).
+
+- **CM1** The combined model beats the best single component by 0.3+ bits.
+- **CM2** The combined model scores under 5.0 bits per sign.
+- **CM3** Adding genre-specific bigrams to the combination gains 0.05+ bits.
+- **CM4** Adding a position-bucketed bigram (previous sign and position class) gains 0.05+ bits.
+- **CM5** Trained on A + B, the combined model scores under 5.5 bits on F-without-copper lines absent from A + B.
+- **CM6** On B alone (80/20), the combined model beats B's bigram by 0.5+ bits.
+- **CM7** Dropping the role model from the combination costs 0.1+ bits.
+- **CM8** Dropping the position unigram costs 0.2+ bits.
+- **CM9** Dropping the two-sign-context model costs 0.1+ bits.
+- **CM10** Relative position in five buckets beats the four-way position class by 0.1+ bits (as a unigram).
