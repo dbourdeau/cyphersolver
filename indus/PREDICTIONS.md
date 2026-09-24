@@ -2963,3 +2963,22 @@ followed by an ending), 154 is never final in B (EH9: 5 of 8), and the five comm
 (EH10). Nor are they a Mohenjo-daro habit (EH8). Caveat: 400 and 151 are the known post-name signs, so 'body + 400'
 may be a name with the ending left out rather than a new ending; 527, 156 and 154 are the new candidates. Tally,
 counting parts: 320 held, 397 failed (717 registered).
+
+# Fifty-sixth set, registered before testing (24 September 2026): replicating loop 2 on held-out data (loop 2, round 10)
+
+Each test repeats a finding of the forty-seventh to fifty-fifth sets on B alone (Mahadevan's transcription) or on 'other
+sites' (F objects outside Mohenjo-daro and Harappa). Definitions as in the original sets, computed within the held-out
+data. 10,000-draw permutations unless the original used 1,000.
+
+- **RQ1** (FI5) In B, 20%+ of formulas with a numeral share their residue with a formula of another value.
+- **RQ2** (FI1) At other sites, the numeral kind in formulas depends on the next sign (MI).
+- **RQ3** (FI8) At other sites, tablet formulas open with a numeral more often than seal formulas.
+- **RQ4** (SC2) At other sites, seal numerals are tiered more often than tablet numerals.
+- **RQ5** (SC8) At other sites, seal numeral formulas open with a heading more often than tablet ones.
+- **RQ6** (PO10) Dominant pair orders from B predict A's adjacent pairs better than B's scalar rank.
+- **RQ7** (EN1, reversed) In B, name lines have a higher repeat rate than formulas (1,000 shuffles).
+- **RQ8** (EN2, reversed) In B, formulas use more distinct signs than name lines at equal token counts (95%+ of 1,000
+  subsamples).
+- **RQ9** (FO1) In B, formula-only tokens (signs never in B's name bodies) are last in their formula more often than
+  shared tokens.
+- **RQ10** (EH4) In B, 5+ name bodies are attested both before 740/520 and before 400, 151, 527, 156 or 154.
