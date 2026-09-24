@@ -1754,6 +1754,13 @@ company, units, numeral kind and typical count across names, counts and closer l
 counts are two uses of one sign language, not two codes; the seventy-seventh set's 'two systems' is qualified. Tally 839
 held, 868 failed.
 
+## Hundred-and-twenty-sixth pass (24 Sept 2026): the number system across genres
+
+Registered first (hundred-and-twelfth set, 1c3925f7f), tested (`predict_test112.py`). One number system for all genres:
+tiered 5-8 everywhere, the same signs and notation; values differ slightly (counts larger, seal counts more tiered). 2
+is the commonest value; the value-12 peak is one sign (55). Compound-order tests were confounded by the heading '2'.
+Tally 852 held, 875 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -5314,3 +5314,18 @@ Genres as in the hundred-and-eighth set. Distinct lines (A + B) unless stated; F
 - **NS18** B: NS1 holds.
 - **NS19** B: NS2 holds.
 - **NS20** F': NS10 holds.
+
+## Results of the hundred-and-twelfth set (added after the test; `predict_test112.py`, `results/predict_test112.md`)
+
+Thirteen held, seven failed. One number system serves every genre: the tiered form is for 5-8 in names (NS1: 77%
+against 2%; NS18 in B: 85% against 3%), counts (NS2: 52% against 1%; NS19 in B) and closer lines (NS3: 3 of 5), every
+common numeral sign occurs in 2+ genres (NS11: 13 of 13), and the notation (kind) does not depend on genre (NS5, p =
+0.11). Values do differ a little by genre (NS4, p = 0.0001): counts run larger than names, not smaller (NS8 fails: 22%
+of runs 5+ against 16%), and seal counts are tiered more than tablet counts (NS12: 12% against 4%). The commonest value
+is 2 in every genre (NS7 fails for 3); '2' is the commonest numeral sign (NS14: 668), runs worth 1 are rarer than 2
+(NS15), runs of 9+ are about 5% (NS16), and 12 stands out (NS17: 36 runs against 7 for 10 and 11), but all 36 are the
+single sign 55, so this is one sign, not a counting base. 17% of count runs have 2+ signs (NS9). NS10/NS20 (larger part
+first) fail at 26%, but post-test inspection shows the 'smaller first' pairs are mostly a heading's '2' followed by a
+numeral ('861 2 31', '861 2 4'), not compound numbers, so the order of compound numerals is untested. Also not
+supported: closer-line numbers inside the body (NS6: 58%) and long numerals before the head (NS13: 34% against 40%).
+Tally, counting parts: 852 held, 875 failed (1727 registered).
