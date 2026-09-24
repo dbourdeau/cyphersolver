@@ -2992,3 +2992,20 @@ reverse direction, B to A (RQ6: 82 against 15); names are the repetitive genre a
 other closers (RQ10). Not replicated: the seal/tablet contrasts at the smaller sites (RQ3-RQ5) point the same way but
 rest on 9 tablet numerals, too few to test; and formula-only signs do not close their formula more often in B (RQ9:
 37% against 39%), so FO1 is unconfirmed. Tally, counting parts: 326 held, 401 failed (727 registered).
+
+# Fifty-seventh set, registered before testing (24 September 2026): the other closers (loop 3, round 1)
+
+'Closers' = 400, 151 (post-name signs) and 527, 156, 154 (new candidates, fifty-fifth set). 'Closer line' = a line of
+2+ signs with no 740/520 whose last sign is a closer and whose remainder is an attested name body. 'Regular line' = a
+name line (name_of). A + B pooled unless F is named. Head class from classes(A). 10,000-draw permutations; p < 0.05.
+
+- **CL1** Bodies seen in 400-closer lines are attested as 'body + ending + 400' more often than other name bodies are.
+- **CL2** 400-closer lines are on seals more often than lines with 'ending + 400' (F).
+- **CL3** Bodies of 400-closer lines take 740 in their regular lines more often than name bodies overall.
+- **CL4** Bodies before 527, 156 or 154 are shorter than name bodies before 740/520 (rank test).
+- **CL5** Closer lines ending in 527, 156 or 154 are commoner at Harappa than at Mohenjo-daro (F, share of lines).
+- **CL6** 70%+ of closer lines have 2 or 3 signs.
+- **CL7** Under 10% of closer tokens are directly followed by 740 or 520.
+- **CL8** 20%+ of 527, 156 and 154 tokens directly follow 740 or 520.
+- **CL9** Closer lines open with a heading less often than regular lines.
+- **CL10** 50%+ of the signs standing before a closer (types with 2+ such tokens) are head-class.
