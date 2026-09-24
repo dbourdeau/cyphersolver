@@ -8130,3 +8130,23 @@ learned from A only (GR2). It covers only 56.0% of the 389 extra F lines (GR3 fa
 signs, p = 0.04): names followed by counts ('X 740 900 1 3 423'), '740 1 ...' sequences and 'X 400' pairs. GR6 holds;
 G enters the metric at 80.2% (A lines as progress.py counts them) and 72.3% (B). Progress: streak 0. Tally, counting
 parts: 1281 held, 1196 failed (2477 registered).
+
+# Hundred-and-ninety-second set, registered before testing (24 September 2026): decipherment loop 17, rules for what the grammar leaves (seven hypotheses)
+
+Metric after loop 16: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), G 80.2% (B 72.3%), P 0, L 4; streak 0. Five new rules for
+`grammar.py`, written from the unparsed A lines only (B stays the check): SHORT = a heading (817 / 820 / 861 + 2 / 60 /
+1) alone or with one lexical sign; ONE = a single lexical sign + a post-ending marker (400, 90); U = a body ending in a
+numeral + 700 (set 189: plain 700 is the counted, final U); OPEN = 705 / 706 + a body without the rest of the formula
+(set 189: 705 / 706 heads the closing formula); SEQ = a line that splits into two consecutive units that each parse
+(name, count, bare name, formula, short heading), the first of two or more signs. A grammar can reach any coverage by
+accepting everything, so each line is also scored after shuffling its signs (20 shuffles, fixed seed): the grammar
+should parse real lines far more often than shuffled ones.
+
+- **SQ1** The extended grammar raises G on A by 5 points or more.
+- **SQ2** It raises G on B by 3 points or more.
+- **SQ3** The margin (G on real lines minus G on shuffled lines) rises on B: the gain is structure, not permissiveness.
+- **SQ4** Each new rule, added alone, raises coverage of real B lines more than of shuffled B lines (all five).
+- **SQ5** G on F's extra lines rises by 5 points or more (GR3 was 56.0%).
+- **SQ6** In SEQ lines, the first unit ends with 740 / 520 / a closer / a caged sign more often than the same position
+  in shuffled lines that SEQ parses (the split falls after an ending).
+- **SQ7** Progress rule: SQ2 and SQ3 hold (G rises on the independent sample without losing specificity).
