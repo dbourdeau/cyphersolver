@@ -6661,3 +6661,22 @@ Picture = field 18 ('None' = no picture). Pair tests as the hundred-and-fortieth
 - **CU3** Same-picture copper tablets share a sub-area more often than chance.
 - **CU4** Copper tablets from the same sub-area share a sign more often than tablets from different sub-areas.
 - **CU5** Copper tablets from the same sub-area share a level (early / late) more often than chance.
+
+## Results of the hundred-and-forty-seventh set (added after the test; `predict_test147.py`, `results/predict_test147.md`)
+
+Five held, two failed. 1,279 Mohenjo-daro and Harappa seals; 475 and 130 distinct names, 20 in both cities.
+**Whole names are a large, open population; heads are a small, closed one.** The Lincoln-Petersen estimate of whole
+names is about 2,970 (CR1: 5.1 times the 585 seen) and Chao1 about 5,540 (CR2: 9.5 times; 536 names on one seal, 29
+on two); 92% of names are on exactly one seal (CR4). Heads are nearly all seen: Lincoln-Petersen 147 against 129
+observed (CR3: 1.14 times), Chao1 216 (CR7 fails, 1.68 times, just over 1.5). The 20 names found in both cities are
+short (CR6: mean body 1.75 signs against 4.08), mostly a head alone + ending ('176 740', '388 740', '705 33 520'), and
+are 520 names no more often than others (CR5 fails: 20% against 18%).
+
+Reading: this is the pattern of personal names (or individual holders) built from a finite stock of name elements:
+thousands of distinct combinations, each on one seal, over a closed vocabulary of about 150-220 heads; the names
+shared between cities are the short ones any combinatorial system repeats by chance or convention. It counts against
+the names being a small set of titles or offices, which would recur across seals and cities. Caveats: Lincoln-Petersen
+assumes the two cities sample one population with equal catchability; local name fashions (different heads
+preferred in each city) reduce the overlap and inflate the estimate, so the numbers are upper-side estimates. The
+order of magnitude (thousands against hundreds) is the result. Tally, counting parts: 1099 held, 1038 failed (2137
+registered).

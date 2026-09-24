@@ -2032,6 +2032,13 @@ features (now stored by cisi.py) agree within an object (12 pairs). Some candida
 area and medium effects may be lexical. Writing habit shows at object and maker level only. Tally 1094 held, 1036
 failed.
 
+## Hundred-and-sixty-first pass (24 Sept 2026): how many names existed
+
+Registered first (sets 147-151 together, 2ea4fc25d). Capture-recapture over Mohenjo-daro and Harappa seals: whole
+names estimated at 3,000-5,500 (585 seen, 92% on one seal), heads at 150-220 (129 seen). Shared names are short.
+The pattern of personal names composed from a closed stock of elements, not a small set of titles. Estimates are
+upper-side (local fashions reduce overlap). Tally 1099 held, 1038 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
