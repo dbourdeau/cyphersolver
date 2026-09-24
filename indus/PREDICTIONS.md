@@ -2715,3 +2715,14 @@ Numeral value and kind from numerals.NUMS. 10,000-draw permutations; p < 0.05.
 - **FI8** Tablet formulas open with a numeral more often than seal formulas, length-stratified (F).
 - **FI9** 10%+ of formula tokens (numerals left out) are signs never seen in a name body.
 - **FI10** Formulas found on 2+ objects are shorter than formulas found on one (F, distinct texts, rank test).
+
+## Results of the forty-seventh set (added after the test; `predict_test47.py`, `results/predict_test47.md`)
+
+Nine held, one failed. The formulas have the number grammar of the count tokens: the numeral kind depends on the next
+sign (FI1, MI 0.73 bits), (value, sign) pairs are idioms (FI4: 293 distinct pairs among 1,138, fewer than any shuffle),
+and 39% of formulas with a numeral recur with a different number and the same residue (FI5), the shape of a tally
+entry. Numeral-first formulas are short (FI3: 2.6 against 3.7 signs) and end differently (FI2). Numeral-first is the
+Harappa and tablet habit (FI7: +26.5 points; FI8: +23.2, both length-stratified). 11% of formula tokens are signs never
+seen in a name (FI9), and formulas repeated on several objects are shorter (FI10: 3.0 against 3.9). Only 76% of
+numerals stand directly before a non-numeral sign (FI6 fails); the rest end the line or stand next to another numeral.
+Tally, counting parts: 278 held, 359 failed (637 registered).

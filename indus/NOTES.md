@@ -1279,6 +1279,12 @@ a common name without its ending; (3) adjacent doubling is deliberate and mostly
 spelling; (4) the core name and number grammar survives on Mahadevan's transcription alone and over time at Harappa.
 None of this gives sound values; it is structure, not a reading.
 
+## Sixty-first pass (24 Sept 2026): inside the number-first formulas (loop 2, round 1)
+
+Registered first (forty-seventh set, 74ec8ae5d), tested (`predict_test47.py`). Formulas use the count-token number
+grammar (kind set by the next sign, idiomatic value-sign pairs) and 39% recur with only the number changed: tally
+entries. Numeral-first is a Harappa and tablet habit. Tally 278 held, 359 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
