@@ -2759,3 +2759,20 @@ testable), multi-line formulas do not open with numbers more (ML7), and only 3 m
 Bug fix before recording: the first ML10 run shuffled the partner lines among themselves, which leaves the count
 unchanged (p = 1.0); the recorded test draws each partner from all lines of two-line objects, as registered. Tally,
 counting parts: 282 held, 365 failed (647 registered).
+
+# Forty-ninth set, registered before testing (24 September 2026): the tally entries (loop 2, round 3)
+
+F formula lines with a numeral (non-name lines, intact objects, lines reversed). Residue = the line with its numerals
+removed (non-empty); value = sum of numeral values. 'Tally group' = a residue seen with 2+ different values; 'tally
+formula' = a formula in one. 10,000-draw permutations; p < 0.05.
+
+- **TL1** Values inside a tally group span a narrower range than same-size draws from all formula values.
+- **TL2** A larger share of numeral formulas are tally formulas at Harappa than at Mohenjo-daro.
+- **TL3** 80%+ of tally groups have a residue of 1 or 2 signs.
+- **TL4** Tally residues contain a sign never seen in a name body more often than residues of other numeral formulas.
+- **TL5** Formula values 1-12 grow rarer as they grow larger (Spearman between value and count negative, significant).
+- **TL6** The value depends on the residue (tally groups with 5+ formulas; MI, permutation).
+- **TL7** Tally formulas are on tablets more often than other numeral formulas.
+- **TL8** All members of a tally group come from one site more often than when sites are shuffled among tally formulas.
+- **TL9** In 80%+ of tally groups the numeral stands in the same position (first sign or not) in every member.
+- **TL10** Tally groups contain two consecutive values more often than same-size draws from all formula values.
