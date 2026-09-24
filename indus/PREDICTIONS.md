@@ -5611,3 +5611,15 @@ followed by a closer. Distinct lines (A + B) unless stated; F' = F without coppe
 - **EP13** Closer choice depends on seal against tablet (MI, F').
 - **EP14** B: EP1 holds.
 - **EP15** B: 5+ bodies occur before both 740 and a closer.
+
+## Results of the hundred-and-nineteenth set (added after the test; `predict_test119.py`, `results/predict_test119.md`)
+
+Nine held, six failed. The ending slot behaves as a paradigm. The order is fixed: 740 then closer (EP1: 3 of 40 the other
+way; EP14 in B: 0 of 12), closers stack after 740 and hardly after 520 (EP2: 37 lines against 4), a subset of closers
+stacks (EP3: 151, 161, 527, 565, 621, 679 follow 740; EP10: 6 of 11), and nothing follows '740 + closer' (EP11: no
+'740 + closer + 400'). 26 bodies are attested with three or more different fillers (EP8), and 13 bodies take both 740
+and a closer in B (EP15). The head chooses the filler, the city barely (EP9: 1.06 against 0.02 bits); the city shifts
+closer choice a little (EP12, p = 0.006), the medium not significantly (EP13, p = 0.07). Stacked names are not longer
+(EP4), not headed more (EP5), not more on seals (EP6: 79%, just under 80%) or at Mohenjo-daro (EP7). Model: body +
+{740 | 520 | closer | 740 + stacking closer} + optional 400 (not after a stacked closer) or 90 (after 740 only).
+Tally, counting parts: 941 held, 911 failed (1852 registered).

@@ -1813,6 +1813,12 @@ Harappa tablet form), and 90 never follows them. They either replace 740 or stac
 Revised model: name body + ending, where the ending slot holds 740, 520 or one of 11 closers, optionally followed by 400
 (or, after 740 only, 90). Tally 932 held, 905 failed.
 
+## Hundred-and-thirty-third pass (24 Sept 2026): the ending slot as a paradigm
+
+Registered first (hundred-and-nineteenth set, 66d2af39c), tested (`predict_test119.py`). The ending slot is a paradigm
+chosen by the head: 740, 520, a closer, or 740 + one of six stacking closers (151, 161, 527, 565, 621, 679); fixed
+order, no second suffix after a stack, 26 bodies with 3+ fillers. Tally 941 held, 911 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
