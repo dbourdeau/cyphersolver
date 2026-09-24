@@ -1200,3 +1200,43 @@ attributes are too few classes for most of the vocabulary.
 short strokes more). R20 and R21 fail.
 
 Tally, counting parts: 73 held, 124 failed (197 registered).
+
+# Twenty-second set, registered before testing (24 September 2026): classes of the content signs
+
+57% of sign tokens are content signs known only by position (results/readable.md), and the head / attribute classes
+cover half of B (R14). A classification of the content signs, fixed here before any result is seen:
+
+**Method.** Content signs = signs with 10+ tokens in sample A that are not numerals (numerals.NUMS), grammar signs
+(740, 520, 90, 400, 151, 817, 820, 861, 2) or formula signs (705, 706, 33). Each sign's context = positive PMI of its
+left and right neighbours in A's lines (line start and end as neighbours), the two halves concatenated and each row
+scaled to unit length, reduced by SVD to 20 dimensions and scaled to unit length again; k-means, k = 8, 50 restarts,
+seed 42. The same procedure is used wherever a clustering is named below. Conventions otherwise as the twenty-first
+set (A, B, F; names; Fairservis categories; 10,000-draw permutations; p < 0.05).
+
+Validation of the method (where the answer is known)
+- **Q1** With the numerals (10+ tokens) added to the signs clustered, two numerals share a cluster at 3+ times the rate
+  of two random signs.
+- **Q2** On Linear B (DAMOS lines, dividers removed, signs with 10+ tokens), two signs of the same kind (syllabogram or
+  word sign) share a cluster more often than under permutation of the kinds.
+
+Transfer to the other transcription
+- **Q3** Content-sign pairs in the same A cluster have more similar B contexts (cosine of positive-PMI vectors, as H3)
+  than pairs in different clusters (cluster labels permuted).
+- **Q12** A clustering of B made by the same method agrees with A's more than chance: pairs of signs together in both
+  (among signs clustered in both) exceed permutation of B's labels.
+- **Q4** The clusters differ in where their tokens stand in B's names (first / inside / last): MI beyond permutation of
+  the sign-to-cluster labels.
+- **Q14** At least half of the clusters have 60%+ of their B name tokens in one position.
+- **Q5** The clusters differ in the ending taken by B names whose last sign they hold (MI beyond permutation).
+- **Q13** Numerals, grammar and formula signs plus the A clusters cover 70%+ of B's tokens.
+
+Meaning, objects, places
+- **Q6** Cluster and Fairservis picture category are associated beyond permutation (MI over categorised content signs).
+- **Q7** Human-figure signs (Fairservis A) share a cluster more often than random pairs of categorised signs.
+- **Q15** Head-class signs (K) are concentrated: one cluster holds half or more of them.
+- **Q8** The cluster mix of content tokens differs between seals and tablets (F, MI beyond permutation of object
+  labels).
+- **Q9** The cluster mix of seal content tokens differs between Mohenjo-daro and Harappa (F).
+- **Q10** The clusters differ in graphic complexity (H5 measure; between-cluster variance beyond permutation).
+- **Q11** The cluster mix of West Asian content tokens differs from home (F; permutation of home / foreign labels
+  among lines).
