@@ -3728,3 +3728,20 @@ Replication
 - **NP18** Harappa (F distinct names): NP2 holds.
 - **NP19** Mohenjo-daro (F distinct names): NP2 holds.
 - **NP20** B: NP9 holds.
+
+## Results of the seventy-sixth set (added after the test; `predict_test76.py`, `results/predict_test76.md`)
+
+Eight held, twelve failed. Inside the name, the head governs: the modifier before the head depends on the head's shape
+category (NP1, p = 0.0001), and the number before the head depends on the head (NP2: 1.30 bits, p = 0.0001), which
+replicates in B (NP16, p = 0.02), at Harappa (NP18, p = 0.003) and at Mohenjo-daro (NP19, p = 0.0002). Fish heads are
+counted more than other heads (NP6: 26% against 15%). Modifiers keep one order (NP8: 10% of pairs reversed) and opener
+and middle slots use different signs (NP10, p = 0.0001). But the bridge from names to formulas does not hold: signs
+counted in both take different numeral kinds (NP3: 17 of 37 agree) and different typical values (NP4: 13 of 37); names
+do not count smaller (NP5); formulas do not count name heads more than their other tokens are name heads (NP13: 67%
+against 65%; NP17 in B: 65% against 61%); two-sign formula residues are not head-final (NP14: 86 against 81); and
+number-first names do not favour formula-counted heads (NP15). So the seventy-fifth set's 'common heads are the counted
+things of the formulas' (QS15) is mostly frequency: two thirds of all formula tokens are name-head signs. The number
+comes before a modifier more often than after it (NP9: 'N mod head' 124 against 'mod N head' 100; NP20 in B: 28
+against 14), suggesting [N [mod head]] rather than [mod [N head]]. 7% of names hold two numeral runs (NP11), and
+counted heads do not take more modifiers (NP12); counted heads standing alone is borderline (NP7, p = 0.057). Tally,
+counting parts: 470 held, 537 failed (1007 registered).

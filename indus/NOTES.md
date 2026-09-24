@@ -1484,6 +1484,13 @@ attested names, and numerals stand before the head. The common heads are the cou
 alone as names. Locality does not separate opener from head (both local), and motifs track neither. Tally 462 held,
 525 failed.
 
+## Ninetieth pass (24 Sept 2026): the name as a noun phrase
+
+Registered first (seventy-sixth set, 349d56287), tested on distinct names (`predict_test76.py`). The head selects both
+its modifier (by shape category) and its number (replicated in B, Harappa, Mohenjo-daro); the number tends to stand
+before a modifier ([N [mod head]]). Names and formulas do not share counting conventions, and 'heads are the counted
+things of the formulas' reduces to frequency. Tally 470 held, 537 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
