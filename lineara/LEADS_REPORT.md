@@ -2648,3 +2648,26 @@ Six hypotheses on change over time, with Phaistos (Middle Minoan II, a few kilom
 
 - **No new learning.** Nothing survives. Phaistos vocabulary shows no turnover over time: its words occur at nearby Haghia Triada more often than the words of more distant sites do (12% against 6%). Phaistos may use signs unknown at Haghia Triada more often (5% against 3%, p 0.06) and have shorter words (p 0.09), but neither passes. Phaistos has only 3 single-commodity lists and 5 lists of three or more amounts, too few to date the bookkeeping habits. Clay-vessel words almost never recur in the tablets' name or descriptor slots (2 and 1 of 63 types).
 - **The saturation loop stops here.** This is the third round in a row with no new learning (rounds 65, 66, 67), which meets the stop rule fixed before round 59.
+
+# Sixty-eighth (after the loop) round: the Z row, and Linear A's sound pattern among 104 languages, 24 September 2026
+
+`reading/round68.py`, results in `reading/round68_results.json` and `reading/round68_output.txt`.
+
+Run after the saturation loop stopped, on the two open leads that need no new inscriptions: a scan of every consonant row for the Z signs, and a comparison of Linear A's sound pattern with 104 Eurasian languages (NorthEuraLex 4.0, CC-BY 4.0, in the git-ignored data/ folder), each respelled with Linear B's spelling rules. Benjamini–Hochberg at 5% across the eight. Checks for L1 (sample size, spelling rule, consonant set) were added after the run.
+
+| # | Hypothesis | primary p | BH 5% | verdict |
+|---|---|---|---|---|
+| M1 | Another row is closer to ZA/ZU than chance | 0.3278 (best_row n, affinity 0.0979, null_max 0.0911, z_signs ['za', 'zu']) | no | not supported |
+| L0 | Linear B finds Greek among its nearest languages | 0.0476 (greek_rank 5, of 104) | no | control passed weakly: Modern Greek 5th of 104 for Linear B (p 0.048); the method separates languages only coarsely |
+| L1 | Linear A coronal e/o conditioning is extreme | 0.0095 (LA_cor 1.224, languages_as_high 0) | yes | **new**, narrowed: above all 104 languages on the main measure (0 of 200 size-matched draws reach it; holds with a no-echo spelling rule and without Q), but Lak passes it when only R and T are counted (1.49 against 1.44), and Linear A's bootstrap interval (0.95–1.53) overlaps Lak |
+| L2 | Linear A e/o share is extreme | 0.1143 (LA_eo 0.174, languages_as_low 11) | no | not supported |
+| L3 | Linear A harmony is extreme | 0.2381 (LA_harm 0.634, languages_as_high 24) | no | not supported |
+| L4 | One family dominates Linear A's nearest languages | 0.6542 (max_family_count 4, null 4.02) | no | not supported |
+| L5 | Languages nearer Crete are nearer Linear A | 0.8836 (spearman -0.119, languages 104) | no | not supported |
+| L6 | Linear A and Linear B have different nearest languages | 0.005 (overlap 0, lb_resample_overlap 9.04) | yes | a check (Linear A and Linear B profiles differ), restating the known contrast |
+
+**What the round adds.**
+
+- **Linear A's consonant-conditioned e/o is at the far end of what natural languages do, but it is attested (L1).** Respelled the way Linear B spells Greek, no one of 104 Eurasian languages reaches Linear A's contrast (e/o after T, R, S, N, Q against after K, P, M, J, W; log-odds 1.22). The nearest is Lak (0.99), a Nakh-Daghestanian language of the Caucasus. The result holds on samples cut to Linear A's size and under a second spelling rule. It is narrowed, though. When only R and T are counted, Lak passes Linear A, and Linear A's bootstrap interval overlaps Lak's value. So the pattern is extreme but found in at least one natural language, and it need not be a scribal convention. Linear B's spelling of Greek does not produce it (−0.14).
+- **No family or region.** Linear A's ten nearest profiles are scattered: Lak, Estonian, Mansi, Evenki, Manchu, Sami, Dargwa, Mongolian, Lezgian (L4, p 0.65), and nearness in profile does not follow distance from Crete (L5). Its e/o share (L2) and harmony (L3) are within the range of these languages. The control is weak: Linear B finds Modern Greek only 5th of 104, so the comparison can sort broad profiles but is far too coarse to identify a relative.
+- **The Z row stays open (M1).** Scanning every row, ZA and ZU keep company most with N and R, but no more than random sign pairs do with their best row (p 0.33).

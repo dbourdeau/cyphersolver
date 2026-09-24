@@ -623,6 +623,10 @@ Refuted: I5.
 - Phaistos: no lexical turnover (Y1 reversed, proximity); Y2 p 0.06, Y6 p 0.09; vessels: 0 new.
 - Saturation loop stopped: rounds 65-67 gave no new learning (rule in reading/loop_ledger.json).
 
+## Sixty-eighth (after the loop) round (round68.py), 2026-09-24
+
+- Round 68 (post-loop, new data): Linear A e/o conditioning extreme among 104 NorthEuraLex languages (only Lak near; Lak passes on R/T only); no family/geography; control weak (Greek 5th/104); Z row null.
+
 ## Remaining gaps
 - Salgarella 2025 check for HT 34 - blocker: needs-physical-access; closed-access Cambridge Element, library copy needed
 - the Anetaki sceptre KN Zg 57-58 - blocker: no-key-material; no published transcription, full edition forthcoming

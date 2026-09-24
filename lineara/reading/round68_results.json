@@ -1,0 +1,305 @@
+{
+ "title": "the Z row, and Linear A's sound pattern among 107 languages",
+ "method": "Round 68 (after the saturation loop): the two open leads that need no new inscriptions. BH at 5% across the eight.\n\nPart 1, the Z row. ZA and ZU are the one Linear A row that does not keep together.\nM1 Some other consonant row is closer in context to ZA/ZU than chance: the largest row affinity (mean cosine of\n   ZA/ZU with the row's signs minus with all other signs) exceeds the same maximum for random sign pairs.\n\nPart 2, a sound-pattern comparison across 107 languages (NorthEuraLex 4.0, Dellert et al. 2020, CC-BY 4.0).\nEvery word is respelled as Linear B spells Greek: consonants fold into the Linear A rows (t d k q p m n r s j w z),\nh and glottals are dropped, a consonant before another consonant is dropped if it is r/l, n, m or s and otherwise\nwritten with the next vowel, and word-final consonants are dropped. Six features are computed on the respelled\nsyllables: share of e/o, the coronal e/o log-odds (after t r s n q against after k p m j w), consonant harmony\n(adjacent syllables with the same consonant, over its expectation), hiatus (vowel-only syllables inside the word),\nand the shares of a, i and u. Distance = Euclidean on features standardised across the 107 languages.\n\nL0 Control: the Linear B vocabulary (Greek, in its own spelling) has Modern Greek among its 10 nearest languages.\nL1 Linear A's coronal e/o log-odds is higher than in 95% of the languages (rank p).\nL2 Linear A's e/o share is lower than in 95% of the languages (rank p).\nL3 Linear A's harmony ratio is higher than in 95% of the languages (rank p).\nL4 One family is over-represented among Linear A's 10 nearest languages (largest family count against family\n   labels shuffled among languages).\nL5 Languages nearer Crete are nearer Linear A in sound pattern (Spearman of fingerprint distance against\n   great-circle distance from Crete, predicted positive).\nL6 Linear A's nearest languages differ from Linear B's: the overlap of the two 10-nearest lists is smaller than\n   between Linear B and itself after a 50% resample of its words (a check that the comparison separates the two).",
+ "primary_p": {
+  "M1": 0.3278360819590205,
+  "L0": 0.047619047619047616,
+  "L1": 0.009523809523809525,
+  "L2": 0.11428571428571428,
+  "L3": 0.23809523809523808,
+  "L4": 0.6541729135432284,
+  "L5": 0.8835582208895553,
+  "L6": 0.004975124378109453
+ },
+ "bh_supported": [
+  "L1",
+  "L6"
+ ],
+ "details": {
+  "M1": {
+   "prediction": "Another row is closer to ZA/ZU than chance",
+   "primary": {
+    "best_row": "n",
+    "affinity": 0.0979,
+    "null_max": 0.0911,
+    "p": 0.3278,
+    "z_signs": [
+     "za",
+     "zu"
+    ]
+   },
+   "robustness": {
+    "ranking": [
+     [
+      "n",
+      0.0979
+     ],
+     [
+      "r",
+      0.0958
+     ],
+     [
+      "j",
+      0.081
+     ],
+     [
+      "t",
+      0.0548
+     ],
+     [
+      "m",
+      0.0309
+     ],
+     [
+      "s",
+      0.0307
+     ],
+     [
+      "d",
+      -0.0
+     ],
+     [
+      "p",
+      -0.0005
+     ],
+     [
+      "w",
+      -0.0121
+     ],
+     [
+      "k",
+      -0.0557
+     ],
+     [
+      "q",
+      -0.1614
+     ]
+    ]
+   },
+   "p": 0.3278360819590205
+  },
+  "L0": {
+   "prediction": "Linear B finds Greek among its nearest languages",
+   "primary": {
+    "greek_rank": 5,
+    "of": 104,
+    "p": 0.0476
+   },
+   "robustness": {
+    "nearest10": [
+     "German",
+     "Hungarian",
+     "Breton",
+     "Northern Kurdish",
+     "Modern Greek",
+     "Spanish",
+     "Welsh",
+     "Slovak",
+     "Polish",
+     "Bengali"
+    ],
+    "LB_features": {
+     "eo": 0.495,
+     "cor": -0.136,
+     "harm": 0.402,
+     "hiat": 0.087,
+     "a": 0.266,
+     "i": 0.161,
+     "u": 0.077
+    }
+   },
+   "p": 0.047619047619047616
+  },
+  "L1": {
+   "prediction": "Linear A coronal e/o conditioning is extreme",
+   "primary": {
+    "LA_cor": 1.224,
+    "languages_as_high": 0,
+    "p": 0.0095
+   },
+   "robustness": {
+    "top5": [
+     [
+      0.99,
+      "Lak"
+     ],
+     [
+      0.55,
+      "Estonian"
+     ],
+     [
+      0.52,
+      "French"
+     ],
+     [
+      0.51,
+      "Northern Mansi"
+     ],
+     [
+      0.49,
+      "Chechen"
+     ]
+    ]
+   },
+   "p": 0.009523809523809525
+  },
+  "L2": {
+   "prediction": "Linear A e/o share is extreme",
+   "primary": {
+    "LA_eo": 0.174,
+    "languages_as_low": 11,
+    "p": 0.1143
+   },
+   "robustness": {
+    "lowest5": [
+     [
+      0.0,
+      "Standard Arabic"
+     ],
+     [
+      0.012,
+      "Lak"
+     ],
+     [
+      0.021,
+      "Central Siberian Yupik"
+     ],
+     [
+      0.064,
+      "Malayalam"
+     ],
+     [
+      0.082,
+      "Northern Uzbek"
+     ]
+    ]
+   },
+   "p": 0.11428571428571428
+  },
+  "L3": {
+   "prediction": "Linear A harmony is extreme",
+   "primary": {
+    "LA_harm": 0.634,
+    "languages_as_high": 24,
+    "p": 0.2381
+   },
+   "robustness": {
+    "top5": [
+     [
+      1.34,
+      "Korean"
+     ],
+     [
+      0.96,
+      "Kildin Sami"
+     ],
+     [
+      0.94,
+      "Ossetian"
+     ],
+     [
+      0.94,
+      "Japanese"
+     ],
+     [
+      0.9,
+      "Malayalam"
+     ]
+    ]
+   },
+   "p": 0.23809523809523808
+  },
+  "L4": {
+   "prediction": "One family dominates Linear A's nearest languages",
+   "primary": {
+    "max_family_count": 4,
+    "null": 4.02,
+    "p": 0.6542
+   },
+   "robustness": {
+    "nearest10": [
+     [
+      "Lak",
+      "Nakh-Daghestanian",
+      2.34
+     ],
+     [
+      "Estonian",
+      "Uralic",
+      2.38
+     ],
+     [
+      "Northern Mansi",
+      "Uralic",
+      2.48
+     ],
+     [
+      "Evenki",
+      "Tungusic",
+      2.88
+     ],
+     [
+      "Manchu",
+      "Tungusic",
+      2.89
+     ],
+     [
+      "Northern Sami",
+      "Uralic",
+      3.01
+     ],
+     [
+      "Livonian",
+      "Uralic",
+      3.01
+     ],
+     [
+      "Dargwa",
+      "Nakh-Daghestanian",
+      3.04
+     ],
+     [
+      "Khalkha Mongolian",
+      "Mongolic-Khitan",
+      3.12
+     ],
+     [
+      "Lezgian",
+      "Nakh-Daghestanian",
+      3.18
+     ]
+    ],
+    "LA_features": {
+     "eo": 0.174,
+     "cor": 1.224,
+     "harm": 0.634,
+     "hiat": 0.052,
+     "a": 0.405,
+     "i": 0.254,
+     "u": 0.167
+    }
+   },
+   "p": 0.6541729135432284
+  },
+  "L5": {
+   "prediction": "Languages nearer Crete are nearer Linear A",
+   "primary": {
+    "spearman": -0.119,
+    "p": 0.8836,
+    "languages": 104
+   },
+   "robustness": {},
+   "p": 0.8835582208895553
+  },
+  "L6": {
+   "prediction": "Linear A and Linear B have different nearest languages",
+   "primary": {
+    "overlap": 0,
+    "lb_resample_overlap": 9.04,
+    "p": 0.005
+   },
+   "robustness": {},
+   "p": 0.004975124378109453
+  }
+ }
+}
