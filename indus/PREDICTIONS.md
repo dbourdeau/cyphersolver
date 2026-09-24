@@ -8461,3 +8461,19 @@ learned from contexts (GF1), 5.223 against 5.263-5.271 A -> B (GF2), and pairing
 worse (4.705; GF3). Progress (GF4): streak 0. Prize tiers: V strict unchanged (0.008%); tier 3 gains a
 picture-vault line: phrase-level picture prediction on unseen tablets 24.5% / 18.6% (nulls p = 0.001 / 0.03).
 Tally, counting parts: 1322 held, 1216 failed (2538 registered).
+
+# Two-hundred-and-second set, registered before testing (24 September 2026): decipherment loop 27, sharper phrase matching and phrases on seals (six hypotheses)
+
+Metric after loop 26: S 4.685; prize tiers V 0.008%, C 1 of 3, U 0 (picture vault 24.5% / 18.6%); streak 0. Set 201's
+matcher counted shared adjacent pairs equally. Here (A) a weighted matcher: shared pairs and shared triples between
+an unseen tablet and each design text group, each weighted by log(D / d), D design groups, d groups containing it
+(rare phrases count more; triples also count); prediction = the motif of the best-scoring group (ties: majority).
+Same objects, motifs and split rule as sets 200-201; nulls as there (1,000 shuffles of motifs among design groups).
+(B) Seals (SEAL:S, motif classes as set 200) with set 201's plain pair matcher.
+
+- **WM1** Weighted matching beats set 201's accuracy on split 200 (24.5%) and on split 201 (18.6%).
+- **WM2** Weighted matching beats its null on a new split (seed 202, p < 0.05).
+- **WM3** Weighted matching beats its null on splits 200 and 201 (p < 0.05 each).
+- **WM4** On seals, phrase matching does beat the majority-class rate (unicorn) on unseen seals.
+- **WM5** On seals, phrase matching beats its null (p < 0.05, 300 shuffles).
+- **WM6** Progress rule: WM1 and WM2 hold (a better picture vault that replicates on a new split).
