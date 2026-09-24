@@ -7528,3 +7528,28 @@ language: the Tamil list is literary and of another genre, no Tamil-Brahmi donor
 digital copy of Mahadevan 2003 is unusable OCR), aksharas are not Indus signs, and a Dravidian naming system of the
 same 'modifier + stock head' kind would give the same statistics. Tally, counting parts: 1210 held, 1134 failed (2344
 registered).
+
+# Hundred-and-seventy-fourth set, registered before testing (24 September 2026): the matching Dravidian comparator, Tamil names from donation records (ten hypotheses)
+
+The fair counterpart to set 173: Tamil personal names from records of donations, taken from English scholarly
+translations as the Prakrit names were taken from Lüders's English summaries. Source: the DHARMA Tamil corpora
+(erc-dharma tfa-pallava, tfa-sii, tfa-tamilnadu, tfa-pandya, tfa-cirkali, tfa-kotumpalur, tfa-uttiramerur; CC BY 4.0;
+Pallava to later periods, c. 7th-16th centuries, so further from the Indus period than the Prakrit list), parsed by
+`lang_names.tam_records`: capitalised words with Tamil diacritics ending in a personal suffix, place-name endings
+excluded (1,402 distinct; some titles and places remain). Elements = aksharas (vowels a ā i ī u ū e ē ai o ō au;
+trailing consonants joined to the last). Catches: the SII corpus against the Pallava corpus. Prakrit = set 173's list.
+Methods as set 173.
+
+- **TD1** Tamil record names are person-like (SII against Pallava).
+- **TD2** The Indus estimate/observed ratio is within a factor of 2 of the Tamil record names' (pooled).
+- **TD3** Tamil record names close the last element: R < 1.
+- **TD4** On a log scale the Indus R is closer to the Prakrit R than to the Tamil record R.
+- **TD5** The Indus body length distribution is closer (JSD) to the Prakrit names than to the Tamil record names.
+- **TD6** The ten commonest final two-akshara endings of Tamil record names cover a share within 0.15 of the Indus
+  top-ten head share (43%).
+- **TD7** The Indus top-ten head share is closer to the Prakrit share (41%) than to the Tamil record share.
+- **TD8** The commonest final akshara of Tamil record names (expected -ṉ) covers a share closer to 740's 82% of Indus
+  names than the commonest final akshara of the Prakrit names does.
+- **TD9** Real Tamil record names recur between the catches more than akshara-shuffled names (above 95% of 1,000).
+- **TD10** Of TD4, TD5 and TD7, at least two favour the Prakrit names (name structure nearer Indo-Aryan donor names
+  than Dravidian donor names).

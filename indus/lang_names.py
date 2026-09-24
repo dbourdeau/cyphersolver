@@ -193,3 +193,26 @@ def pra_luders():
             fem = bool(re.search(r'\b(nun|bhichhuni|bhikhuni|wife|daughter|mother|sister|laywoman|lay-woman|queen|lady|princess)\b', m.group(1), re.I))
             out.append((name.lower().replace("'", ''), site, fem))
     return out
+
+
+TAM_PLACE = re.compile(r'(ūr|ūril|kuṭi|nāṭu|nāṭṭu|paḷḷi|puram|mālai|malai|kōṭṭam|vaḷanāṭu|maṅkalam|cēri|pāḍi|pāṭi|kaṇṭam|pērur|'
+                       r'eri|kōyil|kōṭi|paṭṭi|tuṟai|ttuṟai|kūṟṟam|vāyil|ppēṭu|nallūr|mēṭu)$')
+
+
+def tam_records():
+    """Tamil personal names from the English translations of the DHARMA Tamil inscriptions (tfa-* repositories, CC BY
+    4.0; Pallava to Vijayanagara periods): capitalised words with Tamil diacritics ending in a personal suffix (-aṉ,
+    -āṉ, -ār, -ar, -i, -ai, -aḷ), place-name endings excluded. Returns (name, repository) per occurrence."""
+    import glob
+    out = []
+    for f in glob.glob(os.path.join(SP, 'lang', 'tfa-*', '**', '*.xml'), recursive=True):
+        rep = os.path.relpath(f, os.path.join(SP, 'lang')).split(os.sep)[0]
+        s = open(f, encoding='utf-8').read()
+        if not re.search(r'<div type="edition" xml:lang="tam', s):
+            continue
+        for m in re.finditer(r'<div type="translation"[^>]*>(.*?)</div>', s, re.S):
+            t = re.sub(r'<[^>]+>', ' ', m.group(1))
+            for w in re.findall(r"\b[A-ZĀĪŪĒŌ][a-zāīūēōṉṇḷḻṟṭṅñśṣṛ\-]{2,}\b", t):
+                if re.search('[ṉṇḷḻṟṭṅñāīūēō]', w) and re.search(r'(aṉ|āṉ|ār|ar|i|ai|aḷ)$', w) and not TAM_PLACE.search(w):
+                    out.append((w, rep))
+    return out
