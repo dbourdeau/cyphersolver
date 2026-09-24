@@ -1070,3 +1070,29 @@ testable in B, which fails it as registered, and the set was rerun with the same
   are not seal names), X20, X24, X25 fail.
 
 Tally, counting parts: 57 held, 105 failed (162 registered).
+
+# Twentieth set, registered before testing (24 September 2026): ten hypotheses
+
+Conventions as the nineteenth set (A, B, F; names; Fairservis categories; M = the M77 multi-line texts, lines as
+listed and reversed, both required; 10,000-draw permutations; p < 0.05).
+
+- **Z1 Numbered fish are star names, in each transcription.** X21 (fish-headed names with a numeral before the head
+  take 520 more often) holds in A and in B separately, length-stratified.
+- **Z2 705 and 706 are one sign.** In A, 705 and 706 share more (left, right) neighbour frames than random sign pairs
+  matched on the two signs' token-count quintiles (rank among 10,000 draws).
+- **Z3 740 is the class of persons and their occupations.** Categorised heads of 740 names are human figures, weapons,
+  implements or measures (Fairservis A, H, I, K) more often than categorised heads of 520 names (pooled A + B, Fisher).
+- **Z4 Moulded count tokens were made in one episode per mould.** At Harappa, identical moulded count tokens (TAB:B, same
+  text 'N 700') lie closer in depth than identical incised ones (TAB:I): median depth difference of same-text pairs,
+  incised minus moulded > 0, type labels permuted among the tokens (F).
+- **Z5 90 is a clitic.** In M, 90 begins a line less often than other signs do (share of its tokens that are
+  line-initial in non-first lines, Fisher against all other tokens).
+- **Z6 400 is a clitic.** The same for 400.
+- **Z7 740 is a suffix.** The same for 740.
+- **Z8 The value mix of count tokens replicates across excavations.** X23 (moulded and incised tokens carry different
+  values) holds separately in the HARP tokens (field 9 = '3') and in Vats's (field 10 'Stratum ...') (F, MI beyond
+  permutation each).
+- **Z9 Names on tablets are incised.** Incised tablets (TAB:I) carry an ending (740 / 520) more often than moulded
+  ones (TAB:B), length-stratified (F).
+- **Z10 The head fixes the ending on seals alone.** On F seals (one name per object), 80%+ of heads with 5+ names take
+  one ending in 90%+ of them.
