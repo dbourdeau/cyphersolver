@@ -7623,3 +7623,29 @@ small (104), aksharas are not Indus signs (if Indus signs are word signs, length
 Tamil-Brahmi donors bear Prakrit names themselves (Kasapaṉ, Cantirananti, Sapamitā), so South Asian donor naming
 crossed languages, and the Indus texts are some two thousand years older than either list. Tally, counting parts:
 1224 held, 1140 failed (2364 registered).
+
+# Hundred-and-seventy-sixth set, registered before testing (24 September 2026): decipherment loop 1, structure and roles (eight hypotheses)
+
+The owner set a standing goal: loops of registered tests toward decipherment, with a progress metric measured each
+loop (`progress.py`, `PROGRESS.md`). Baseline: S 4.712 bits per sign held out (24.9% of unigram entropy explained),
+R 56.2% of tokens with a tested role, M 16.6% anchored, P 0 sound values, L 4 families open. Loop 1 aims at S and R.
+New model components, each added to the baseline mixture (tri + pos + end, discounted) with weights fitted on a
+development split of the training lines only (as set 125), evaluated on progress.py's fixed test split:
+- role: P(sign | left-context role of the previous token: numeral, ending, closer, marker, heading sign, other);
+- cls: P(sign | distributional class of the previous sign), 30 classes by k-means on next-sign distributions of
+  signs with 10+ training tokens (rarer signs in one class), fitted on training lines only;
+- nval: after a numeral run, P(sign | value bucket of the run: 1, 2, 3, 4, 5-8, 9+); elsewhere the unigram.
+Role extension: 'name modifier' = body signs before the head in lines parsed as names (R.name_of), from the tested
+head-final name grammar (H7, DT1-DT4).
+
+- **LP1** Adding 'role' lowers S by 0.03 bits or more.
+- **LP2** Adding 'cls' lowers S by 0.03 or more.
+- **LP3** Adding 'nval' lowers S by 0.02 or more.
+- **LP4** The best combination of the three lowers S by 0.05 or more (the model in progress.py is then updated).
+- **LP5** Adding the 'name modifier' role raises R above 70%.
+- **LP6** The modifier role is stable: signs that are modifiers in the training lines stand inside name bodies
+  (modifier or head) in 80%+ of their tokens in the test lines.
+- **LP7** Heads are a stable class too: signs that are heads in training stand as heads in 50%+ of their test tokens
+  that sit in name bodies.
+- **LP8** The loop's S gain holds on B alone (M77 additions, own 80/20 split): the best combination beats the baseline
+  mixture there.
