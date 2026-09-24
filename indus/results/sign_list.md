@@ -11,5 +11,5 @@
 | 740-name | 47 | 20.9% |
 | other | 172 | 29.3% |
 
-Signs with a firm meaning (copper-tablet equations): 341 = rhinoceros (copper tablets), 749 = markhor goat (copper tablets), 753 = hare (copper tablets), 777 = goat / archer (copper tablets), 778 = goat (copper tablets). Provisional: 347 = multi-headed animal (moulded tablets, provisional), 460 = tree / plant (moulded tablets, provisional), 645 = cross motif (weak), 318 = gharial (weak).
+Signs once listed with a firm meaning (copper-tablet equations; withdrawn 24 Sept 2026 as text anchors: none of them occurs in the copper-tablet texts of its own picture in data/corpus.tsv, PREDICTIONS.md CT5; they come from Parpola's drawings of the reverse): 341 = rhinoceros (copper tablets), 749 = markhor goat (copper tablets), 753 = hare (copper tablets), 777 = goat / archer (copper tablets), 778 = goat (copper tablets). Provisional: 347 = multi-headed animal (moulded tablets, provisional), 460 = tree / plant (moulded tablets, provisional), 645 = cross motif (weak), 318 = gharial (weak).
 

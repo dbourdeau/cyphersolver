@@ -110,7 +110,9 @@ def main():
              '| role | signs | share of all tokens |', '|---|---|---|']
     for k in ('opener', 'ending', 'numeral', '520-name', '740-name', 'other'):
         lines.append('| %s | %d | %.1f%% |' % (k, roles[k], 100 * cover[k] / total))
-    lines += ['', 'Signs with a firm meaning (copper-tablet equations): %s. Provisional: %s.' % (
+    lines += ['', 'Signs once listed with a firm meaning (copper-tablet equations; withdrawn 24 Sept 2026 as text anchors: none '
+                        'occurs in the copper-tablet texts of its own picture, PREDICTIONS.md CT5; they come from Parpola\'s '
+                        'drawings of the reverse): %s. Provisional: %s.' % (
         ', '.join('%s = %s' % kv for kv in FIRM.items()), ', '.join('%s = %s' % kv for kv in PROV.items())), '']
     with open(os.path.join(HERE, 'results', 'sign_list.md'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines) + '\n')

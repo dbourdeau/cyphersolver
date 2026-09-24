@@ -1159,6 +1159,16 @@ fish (I2): the text names or describes what is pictured.** Moulded name tablets 
 (I8, I9, I12); receipts are 740 persons without fish (I14). Numeral idioms are whole names or heads (I15, I16). The
 heading never changes the ending (I18, 14 of 14); Kalibangan uses it less (I25). Tally 168 held, 244 failed.
 
+## Forty-sixth pass (24 Sept 2026): pictures as outside labels for meaning
+
+Registered first (PREDICTIONS.md, thirty-second set, f084a687c), tested (`predict_test32.py`). **Correction: the
+'firm' copper equations of the sign list (341 rhino, 749 / 778 goat, 753 hare) never occur in the copper labels of their
+own picture in the ICIT texts (CT5: 0); they came from Parpola's reverse drawings and are withdrawn as text anchors.**
+The moulded anchors hold (CT9). Copper labels are picture-specific names (CT1 markers: hare 705 321 235, elephant 923
+706, goat 3 421 176 100 790, anthropomorph 61 806 850 900; CT2 one or two texts per picture; CT3 shared final element;
+CT22 head before 740 in 34 of 36). Moulded: same text, same picture 95% (CT7). No link across object types (CT6, CT10,
+CT14, CT24, CT25 fail). Tally 176 held, 261 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -2062,3 +2062,36 @@ Across object types
   pictures do.
 - **CT25** Where a pictured moulded tablet's text equals a seal name body, the seal shows the same animal more often
   than random seal pairs would.
+
+## Results of the thirty-second set (added after the test; `predict_test32.py`, `results/predict_test32.md`)
+
+Eight held, seventeen failed. 64 copper labels with a picture, 209 moulded labels, 1,181 seals with a picture (A).
+
+**Correction to the sign list.** CT5 fails with a count of zero: the 'firm' copper-tablet equations of
+results/sign_list.md (341 rhinoceros, 749 and 778 goat, 753 hare) never occur in the copper labels of their own
+picture in data/corpus.tsv. They were taken from Parpola's drawings, where the pictorial sign is on the reverse; in the
+ICIT-derived texts the picture is the motif and these signs are not in the text. They are withdrawn as text-based
+anchors (CT6, CT15 fail for the same reason; CT16 holds only because 753 never occurs at all). The moulded-tablet
+anchors, by contrast, hold (**CT9**: 31 anchor-in-own-picture cases, p = 0.0001).
+
+**Copper labels: picture-specific names.**
+- **CT1 holds**: most copper pictures with 4+ labels have marker signs of their own: hare 705, 321, 235; elephant 923,
+  706; goat 3, 421, 176, 100, 790; anthropomorph 61, 806, 850, 900; loop 220, 415 (composite and gaur none).
+- **CT2 holds** (most pictures have one or two distinct texts: hare 1, anthropomorph 1, elephant 2, goat 2, loop 2).
+- **CT3 holds** (the last sign of distinct labels has 1.26 bits less entropy than the first, p = 0.0002: labels share a
+  final element) and **CT22 holds** (in copper labels the sign before 740 is a head-class sign in 34 of 36 cases, on
+  seals in 43%): the labels are built like names, attribute + head + ending, and name something specific to each
+  picture. They are not seal names (I1).
+- CT4 fails the other way (animal labels end in 740 less often than non-animal ones: 26% against 62%), CT20 fails (no
+  copper label ends in 520), CT11, CT12, CT13, CT21, CT23 fail.
+
+**Moulded labels.** **CT7 holds**: moulded tablets with the same text carry the same picture in 95% of 590 pairs
+(p = 0.0001), and **CT8 holds** (same-picture labels share a sign 61.8% against 42.8%). CT17, CT18 (the other way:
+pictured moulded tablets carry an ending more), CT19 fail.
+
+**No link across object types.** CT6, CT10, CT14, CT24, CT25 fail: seals of an animal do not carry that animal's copper
+label signs more than other seals (91 of 157, p = 0.68); pictured moulded names are not the names on seals with the
+same animal; copper labels are not closer to moulded labels than to seals in vocabulary. Each object type pairs its
+own texts with its own pictures.
+
+Tally, counting parts: 176 held, 261 failed (437 registered).
