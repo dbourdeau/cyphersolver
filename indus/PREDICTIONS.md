@@ -1400,3 +1400,54 @@ Five held, seven failed.
   shape 82%, p = 0.078), M11 fails (the heading comes and goes on the same name).
 
 Tally, counting parts: 87 held, 150 failed (237 registered).
+
+# Twenty-fifth set, registered before testing (24 September 2026): affixed signs, direction, numbers, bar seals
+
+Leads from the twenty-third and twenty-fourth sets: one ligature is a sequence of its parts (G3); left-to-right texts
+belong to the smaller places (M2); side-by-side numerals put the smaller first (M5) and the tiered form is for 5-8
+(M6); bar seals carry suffix-less names (M12); the fuller corpus's lines read reversed (M4), so F is read here with
+icit_full.LINES_REVERSED = True. Conventions as before (A with its 'direction', 'type', 'site' and 'motif' fields; B;
+F; names; head class as K; 10,000-draw permutations or draws; p < 0.05; A and B both where named). Regions: Sindh
+(Mohenjo-daro, Chanhu-daro, Allahdino, Amri, Kot Diji, Lakhanjo-daro), Gujarat (Lothal, Dholavira, Surkotada,
+Desalpur, Kanmer, Gola Dhoro, Rangpur), north (Harappa, Kalibangan, Banawali, Rakhigarhi, Farmana, Bhirrana, Rupar);
+others left out.
+
+Affixed signs as sequences (the twenty-third set's sequence score and null; A, and B where all three have 10+ tokens)
+- **O1** 235 (fish under a caret, Fairservis Q-6) behaves as 480 + 220 or 220 + 480.
+- **O2** 231 (fish with a stroke, Q-2) behaves as 220 + 1 (either order).
+- **O3** 415 (comb with a stroke, Q-11) behaves as 400 + 1.
+- **O4** 741 (jar with a stroke, J-6) behaves as 740 + 1.
+- **O5** For all of O1-O4 that are testable, the sequence score exceeds the modified-base score.
+
+Direction (A)
+- **O6** Outside Mohenjo-daro and Harappa, left-to-right texts are a larger share in Gujarat than in the other regions
+  (Fisher).
+- **O7** Left-to-right lines end in an ending less often than right-to-left lines, length-stratified.
+- **O8** Left-to-right seals carry an animal other than the unicorn more often than right-to-left seals.
+- **O9** Left-to-right texts are shorter (rank test).
+- **O23** Moulded tablets (type TAB:B) are left-to-right more often than other objects (a mould reverses the text).
+- **O24** The left-to-right share differs between seals and other objects (Fisher, two-sided).
+
+Numbers (A and B unless said)
+- **O10** Side-by-side numerals mix two notations (short / long / tiered) more often than random pairings of the same
+  numeral tokens would (permutation of the numeral tokens among the pair slots).
+- **O11** In side-by-side pairs with the smaller value first, the second numeral is long-stroke more often than in pairs
+  with the larger first (pooled).
+- **O12** Long-stroke numerals stand before a container or device sign (Fairservis J or K) more often than short-stroke
+  numerals do (pooled).
+- **O13** Numerals before a fish sign are short-stroke more often than numerals before other signs.
+- **O25** Tiered numerals stand inside names (not the name's last sign) more often than short-stroke numerals do.
+
+Bar seals (F, lines reversed)
+- **O15** Bar seals (SEAL:R) are a larger share of seals in later levels, at Mohenjo-daro and at Harappa (Fisher each).
+- **O16** Bar seals come from outside the two cities more often than square seals.
+- **O17** Bar-seal lines carry the heading less often than square-seal lines, length-stratified.
+- **O18** Bar-seal texts are longer than square-seal texts (rank test).
+- **O19** Bar-seal lines end in a head-class sign more often than a random other position of the same line (paired
+  sign test, as R1).
+- **O20** Bar seals are more often left-to-right than square seals (A, types 'SEAL:R' and 'SEAL:S').
+
+Tablets (F)
+- **O21** Distinct moulded-tablet texts recur on 2+ tablets more often than distinct incised-tablet texts.
+- **O22** Tablets with 400 are incised more often than moulded, length-stratified.
+- **O14** Among tablets with a name ending, incised ones carry 400 after it more often than moulded ones.
