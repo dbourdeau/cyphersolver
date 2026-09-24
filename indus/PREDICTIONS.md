@@ -1122,3 +1122,52 @@ Six held, four failed.
   tablets do not carry endings more often than moulded ones).
 
 Tally, counting parts: 63 held, 109 failed (172 registered).
+
+# Twenty-first set, registered before testing (24 September 2026): the lines that fit no template
+
+A descriptive count (results/readable.md) found that 47% of intact lines fit none of the established templates (name +
+ending, count token 'N 700', numbers only, closing formula). 'Bare line' = a line of 2+ signs that is none of these.
+Hypothesis: most bare lines are names written without their suffix. Conventions as the twentieth set (A, B, F; names;
+head and attribute classes as K, from A; 10,000-draw permutations; p < 0.05; A and B both where named).
+
+Bare lines as names without the suffix
+- **R1** The last sign of a bare line is a head-class sign more often than a random other sign of the same line (paired
+  permutation). A and B.
+- **R2** The last sign of a bare line is a sign that ends name bodies elsewhere (last body sign of some name in the
+  sample) more often than a random other sign of the line. A and B.
+- **R3** Bare lines equal an attested name body more often than their own sign-order shuffles. A and B.
+- **R4** The adjacent pairs of bare lines occur inside name bodies more often than the pairs of shuffled bare lines. A
+  and B.
+- **R5** Bare lines contain a numeral more often than name lines, length-stratified (they include records, not only
+  names). A and B.
+- **R6** In lines ending with 400 not after an ending ('body + 400'), the part before 400 is an attested name body more
+  often than when shuffled (pooled A + B).
+- **R19** Bare lines are shorter than name lines with their ending removed (rank test). A and B.
+- **R22** Human-figure signs in bare lines stand last in 70%+ of cases (pooled).
+- **R23** Fish signs (signs.FISH) in bare lines stand last more often than first (pooled, sign test).
+- **R24** Bare lines end in a jar variant (741 / 742 / 745) more often than those signs stand at a random other
+  position of bare lines (pooled): a variant ending.
+
+Bare lines by object, place and time (F)
+- **R7** Bare seal lines end in a head-class sign more often than bare tablet lines.
+- **R8** Bare tablet lines end in an attribute-class sign more often than bare seal lines.
+- **R9** Seal lines are bare more often outside Mohenjo-daro and Harappa.
+- **R10** Seal lines are bare more often in later levels, at both Mohenjo-daro and Harappa.
+- **R11** Bare seal lines are on non-unicorn seals more often than seal names are.
+- **R12** Bare seal lines carry the heading less often than seal names, length-stratified.
+- **R18** Distinct bare tablet texts recur on 2+ tablets more often than distinct tablet name texts.
+- **R25** Bare lines ending in 400 or 90 (a clitic without an ending) are on tablets more often than on seals.
+
+Word classes and coverage
+- **R13** Position classes carry across transcriptions: of signs with 10+ name tokens in both A and B, 80%+ have the
+  same majority position (first / inside / last) in both.
+- **R14** Classes from A (numerals; grammar signs 740, 520, 90, 400, 151, 817, 820, 861, 2; formula signs 705, 706, 33;
+  head and attribute classes) cover 70%+ of B's tokens.
+
+Counts and pots (F)
+- **R15** Numerals on pots are short-stroke more often than numerals on tablets.
+- **R16** The values of numbers-only pot lines differ from the values of tablet numerals (MI beyond permutation).
+- **R17** 80%+ of numbers-only pot lines are a single numeral sign.
+- **R20** On count tokens with other signs, the other signs follow the 'N 700' pair more often than they precede it.
+- **R21** Mohenjo-daro tablets that are not count tokens carry an ending more often than Harappa ones,
+  length-stratified.
