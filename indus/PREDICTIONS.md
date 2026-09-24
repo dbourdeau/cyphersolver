@@ -779,3 +779,59 @@ Thirteen held, twelve failed. The control decides how the sound-sign lead is rea
 
 Tally, counting parts: 31 held, 56 failed (87 registered). Of the thirteen that held here, four (P1, P2, P22, P23)
 are explained by the frequency effect P25 shows, and one (P25) is the control that shows it.
+
+# Seventeenth set, registered before testing (24 September 2026): twenty-five hypotheses on the surviving leads
+
+Leads: tablets vary in their numbers (P11, P12); a head and its ending are one unit (P17, P18); 33-520 is a fixed
+expression (P6); names have fixed slots and stable heads (P13, P14, H10); human heads take 740 (K1). Conventions as
+the thirteenth set (A, B, F; names; head class as K; 10,000-draw permutations; p < 0.05; both A and B where named).
+'Heading' = 817 / 820 / 861 followed by 2 / 60 / 1 at the start of a line. 'Post-ending sign' = 90 / 400 / 151 after
+740 / 520. Numeral values from numerals.NUMS. Object types from F: SEAL, TAB (TAB:I incised, TAB:B moulded), TAG,
+POT. Unicorn = motif field beginning 'Bull1'. Levels as K8 (Mohenjo-daro) and P13 (Harappa). F seal texts are counted
+once per object.
+
+Tablets as records of counts (F)
+- **U1** Numerals on tablets have larger values than numerals on seals (mean stroke value; label permutation).
+- **U2** On tablets a numeral stands at the edge of the text (first or last sign) more often than on seals, within
+  text-length strata (2-3, 4-5, 6+).
+- **U3** The sign after a numeral is drawn from a smaller set on tablets than on seals (entropy of the following sign,
+  seals minus tablets, label permutation).
+- **U4** Incised tablets (TAB:I) carry a numeral more often than moulded ones (TAB:B), length-stratified.
+- **U5** Among post-ending signs, 400 is a larger share on tablets, sealings and pots than on seals.
+
+The fixed expression 33-520 (A and B unless said)
+- **U6** 33-520 ends its text (nothing after it, or only a post-ending sign) more often than 520 not after 33.
+- **U7** The sign before 33-520 is a head-class sign more often than the sign before a 520 not after 33.
+- **U8** Name bodies that occur with the closing 33-520 also occur with 740 more often than bodies that occur with a
+  plain 520 do (pooled A + B).
+- **U9** Among lines ending in 520, 33-520 is commoner on tablets and sealings than on seals (F).
+- **U10** 33 | 520 is split by a line break less often than other gaps (M77 multi-line texts, both line orders).
+
+Heads, attributes and slots
+- **U11** Across space, heads are steadier than attributes: on seals, JSD of first signs between Mohenjo-daro and Harappa
+  exceeds JSD of last signs, beyond site-label permutation (F).
+- **U12** Heads select their attributes: MI(first sign; last sign) of 2+ sign names exceeds its value with heads
+  shuffled among names. A and B.
+- **U13** In three-sign-plus names, slot 2 (next to the head) is steadier over time than slot 1: JSD between earlier
+  and later levels, slot 1 minus slot 2 > 0 (Mohenjo-daro and Harappa pooled, level labels permuted within site) (F).
+- **U14** Human-figure signs (Fairservis A) stand last in names more often than first, compared with other categorised
+  signs (Fisher on last / first counts). A and B.
+- **U15** The ending is predictable from the head across transcriptions: a head-to-ending rule learned on A (majority
+  ending per head with 3+ names in A) predicts B's endings for those heads with 90%+ accuracy and above the majority
+  baseline (binomial p < 0.05).
+
+The heading
+- **U16** Headed names are longer (more signs before the ending) than headless names, rank test. A and B.
+- **U17** Headed names use a different head inventory than headless ones (JSD beyond label permutation). A and B.
+- **U18** Each opener (817, 820, 861) selects its own heads: MI(opener; head) beyond permutation. A and B.
+- **U19** The heading is commoner on sealings (TAG) than on seals (F, lines of 3+ signs).
+- **U20** The heading is rarer on pots than on seals (F, lines of 3+ signs).
+
+Seals and their owners (F)
+- **U21** Unicorn seals carry longer texts than other-animal seals (rank test).
+- **U22** Unicorn seals carry the heading more often than other-animal seals, length-stratified.
+- **U23** Names are longer in later levels, at both Mohenjo-daro and Harappa (rank test each).
+- **U24** Cylinder seals (SEAL:C, SEAL:CY, the Mesopotamian form) omit the endings more often than square seals,
+  length-stratified.
+- **U25** The post-ending sign depends on the site: MI(site; post-ending sign) on seals exceeds site-label
+  permutation (Mohenjo-daro / Harappa / other).
