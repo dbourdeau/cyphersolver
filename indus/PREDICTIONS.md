@@ -363,3 +363,25 @@ tokens (as Y2) against length-matched home draws: higher mean freedom, p < 0.05.
 measure signs as single tokens, numerals as one token 'N'), freedom computed the same way (signs with 5+ tokens):
 syllabograms have higher freedom than word signs (logograms, ideograms, measure signs), Mann-Whitney one-sided p <
 0.05. If RC fails, freedom is not shown to detect sound signs and no shortlist will be drawn from it.
+
+## Results of the eleventh set (added after the test; `predict_test11.py`, `results/predict_test11.md`)
+
+- **RB holds.** On 362 M77 multi-line texts (Mahadevan's own line division), gaps inside the 30 bound pairs are line
+  breaks 1 time in 155 (0.6%), other gaps 386 of 1,621 (23.8%); Fisher p < 0.0001, the same with lines reversed. X2
+  replicates on a larger, independently lined sample. (Some M77 objects may be the seventh set's seals under another
+  transcription; the seventh set had 66 multi-line seals, M77 362.)
+- **RF1 holds.** Freedom from home seals and from home tablets agree: Spearman 0.34 over 100 signs, p = 0.0008. It is
+  a property of the sign, though a noisy one.
+- **RF2 holds.** With freedom computed from the M77 texts alone, West Asian tokens +0.217 against +0.056 for home draws,
+  p = 0.001. Y2 replicates with independent scores.
+- **RC holds.** In Linear B (10,885 lines, dividers removed) syllabograms are freer than word signs: +0.240 against
+  -0.218, AUC 0.77, p = 0.0001. Freedom detects sound signs in a script where the answer is known. Caveat: Linear B's
+  word signs stand mostly in lists before numerals; the Indus texts are not lists, so the contrast may be weaker there.
+- Tally, counting parts: 11 held, 13 failed.
+
+A shortlist was then drawn (`sound_shortlist.py`, `results/sound_shortlist.md`; derived, not a test): signs free (z > 0)
+in every one of the three sources that score them (home seals, home tablets, M77), 2+ sources. On Linear B with
+Knossos and Pylos as the sources the same rule selects 47 signs, 96% of them syllabograms (all of the top 20), and
+misses 36 of 81 syllabograms. On the Indus corpus it selects 46 of 189 signs (numerals, openers, endings left out); 34
+are free on both sides. Top: 741, 742, 745 (the jar with strokes; variants of the 740 ending, i.e. grammatical
+elements, which logo-syllabic scripts usually spell by sound), 455, 365, 140, 315, 440, 125, 717, 111, 368, 480, 892.

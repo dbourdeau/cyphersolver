@@ -971,6 +971,15 @@ are phonetic complements. **AA1 holds weakly** (added sign freer, +0.061 against
 other way**: added signs stand first in 195 of 310 pairs, last in 98 (44% expected last). Names grow at the front
 (attribute + head), which fits the head-final reading, not complements. Tally 7 held, 13 failed (counting parts).
 
+## Twenty-fifth pass (24 Sept 2026): replications and a candidate sound-sign shortlist
+
+Registered first (PREDICTIONS.md, eleventh set, 36d7be384), tested (`predict_test11.py`). **All four hold**: bound
+pairs are not split on 362 M77 multi-line texts (1 of 155 against 24%); freedom agrees between seals and tablets
+(rho 0.34); the West Asian effect holds with M77-only freedom (p = 0.001); in Linear B syllabograms are freer than
+word signs (AUC 0.77). Shortlist (`sound_shortlist.py`): 46 Indus signs free in every source, 34 on both sides; the
+rule's precision on Linear B (Knossos / Pylos) is 96%, recall 55%. Headed by the jar-with-strokes signs 741 / 742 /
+745. Candidates only; no values. Tally 11 held, 13 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
