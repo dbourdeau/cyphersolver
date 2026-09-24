@@ -1955,6 +1955,13 @@ the ending slot, name units and home openers and score 6.5 bits per sign under t
 New: they are full of stroke signs used inside the line (78% against 56%), hinting at phonetic use of strokes when
 spelling foreign names. Tally 1052 held, 989 failed.
 
+## Hundred-and-fifty-first pass (24 Sept 2026): sign shapes
+
+Registered first (hundred-and-thirty-seventh set, e6dab3485), tested (`predict_test137.py`) on font-rendered glyphs.
+Catalogue neighbours look alike (the blocks are shape families); the free-variant pairs, the fish and the closers each
+form shape families. Shape does not predict use in general, and a pixel containment test finds no compound effect.
+Better glyph data (photographs, stroke-level drawings) would be needed for compound analysis. Tally 1057 held, 994 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

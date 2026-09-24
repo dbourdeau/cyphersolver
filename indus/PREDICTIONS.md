@@ -6202,3 +6202,17 @@ frequency-matched where stated; p < 0.05. The font's drawings are one designer's
 - **SH8** The eleven closers are more similar in shape to each other than random matched sets.
 - **SH9** Rare signs have more ink (a complexity proxy) than common signs (rank test).
 - **SH10** A compound stands in its base sign's usual position class (first, middle, last) in 60%+ of its tokens.
+
+## Results of the hundred-and-thirty-seventh set (added after the test; `predict_test137.py`, `results/predict_test137.md`)
+
+Five held, five failed, on glyphs rendered from the ICIT webfont (normalised modern drawings, a limit on all of this).
+The catalogue numbering does group signs by shape: neighbours by number look alike (SH4: IoU 0.37 against 0.19), which
+confirms the reading of blocks as shape families used in earlier sets. The five candidate free variants look alike
+(SH5: IoU 0.57 against 0.30 for the top 5% of random pairs), fish signs look alike (SH6, p = 0.001), and the eleven
+closers look alike too (SH8: p = 0.01), so the endings found here form a shape family, not just a positional class.
+Rare signs have more ink than common ones (SH9). But shape overall does not predict use: shape and context similarity
+do not correlate over 1,500 pairs of common signs (SH3: 0.005), the non-fish 520 heads do not look like fish (SH7), and
+the compound test gives nothing: rare signs contain a common sign no more often than common signs do (SH1: 17% against
+11%, p = 0.13, with many 'bases' being the small sign 90, a sign of a crude method), the base is not among the
+compound's frame-mates (SH2) and compounds do not keep the base's position (SH10). Tally, counting parts: 1057 held,
+994 failed (2051 registered).
