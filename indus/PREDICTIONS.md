@@ -3890,3 +3890,35 @@ with the same values (AR16); the motif does not follow the item (AR13); header s
 numeral-first formulas are a Harappa form (AR17: 49% against 28%), and the cities count different items (AR20, p =
 0.0001). The seventy-eighth set's header-item selection (FG3) stands as a sign-level association, but it is not an
 agent-and-goods record in any testable sense. Tally, counting parts: 495 held, 572 failed (1067 registered).
+
+# Eightieth set, registered before testing (24 September 2026): is the ending a case or a class? (twenty hypotheses)
+
+Two readings of 740/520 make opposite predictions. Case: the same head changes ending with context (object, what
+follows, site). Class (like grammatical gender): each head has a fixed ending and context does not matter. Distinct
+name lines (A + B) or distinct (site, type, line) in F; heads with names under both endings for the within-head tests.
+Stratified permutations by head (two-sided where marked); 10,000 draws; p < 0.05.
+
+Case predictions (each holds if the context effect is significant within heads)
+- **CG1** Seal against off-seal changes the ending within heads (F, two-sided).
+- **CG2** Whether 400 follows the ending changes it within heads (two-sided).
+- **CG3** Whether the line opens with the heading unit changes it within heads (two-sided).
+- **CG4** Mohenjo-daro against Harappa changes it within heads (F, two-sided).
+- **CG5** Whether any sign follows the ending changes it within heads (two-sided).
+- **CG6** Being counted (numeral before the head) changes it within heads (two-sided).
+Class predictions
+- **CG7** 80%+ of heads with 5+ distinct names take one ending in 90%+ of them.
+- **CG8** B alone: CG7 holds.
+- **CG9** Harappa alone (F): CG7 holds.
+- **CG10** Mohenjo-daro alone (F): CG7 holds.
+- **CG11** Under 2% of distinct bodies are attested with both endings.
+- **CG12** 80%+ of heads taking 520 in the majority (3+ names) are fish signs.
+- **CG13** Heads attested with both endings are fish more often than heads with one ending.
+Agreement (a class would show concord)
+- **CG14** The opener's own majority ending as a head matches the name's ending more than when endings are shuffled.
+- **CG15** The same for the sign just before the head.
+- **CG16** Within fish heads, the ending follows the majority ending of the sign before the fish (as a head elsewhere).
+- **CG17** Two names in one line share their ending more often than random pairs of names.
+Controls
+- **CG18** Names cited inside formulas have the same 740 share (in their name lines) as other names (p >= 0.05).
+- **CG19** Seal names and tablet names with the same head have the same ending share (F; stratified, p >= 0.05).
+- **CG20** B alone: CG2 (the 400 context) has no within-head effect (p >= 0.05).
