@@ -214,3 +214,23 @@ with each text's breaks placed at random among its gaps (10,000 times), p < 0.05
 **X2 Bound pairs are not split.** Bound pairs: the 30 commonest ordered sign pairs (count 10+) with the highest PMI,
 counted in single-line intact seal texts. In multi-line texts, gaps inside a bound pair are breaks less often than
 other gaps of the same texts, Fisher p < 0.05.
+
+## Results of the seventh set (added after the test; `predict_test7.py`, `results/predict_test7.md`)
+
+66 intact multi-line seals (69 line breaks, 414 gaps), 1,541 single-line seals.
+
+A problem found while testing: the reading order of *lines* in the fuller corpus is ambiguous. icit_full.py keeps them
+as listed (an ending stands last on 34 of the 66, a heading first on 1); data/corpus.tsv reverses them (ending last on
+12, heading first on 12). Neither order is right for every seal. The test was run both ways; icit_full.py keeps the
+listed order as default, so earlier results are unchanged, with a switch (LINES_REVERSED) for the other.
+
+- **X1 fails** in both orders. Breaks on a heading / ending boundary: 1 of 69 (1.4%, random 9.3%) as listed; 6 of 69
+  (8.7%, random 7.8%) reversed. Most breaks fall inside the name (67 or 51 of 69). Scribes did not break seal lines at
+  our segment boundaries; the line length seems set by the seal's field, not the grammar.
+- **X2 holds** in both orders. Gaps inside the 30 bound pairs are never a line break: 0 of 31, against 69 of 383 other
+  gaps (18%), Fisher p = 0.003. Checked after the test without the heading pairs (817-2, 861-2) and without first and
+  last gaps: 0 of 21 against 55 of 262 (21%), p = 0.009.
+- Tally: **3 held** (Q1, Q2, X2), 11 failed. X2 is the first sign that the high-PMI pairs (705-33, 415-100, 590-390,
+  33-520, 920-60, 235-240, 32-220 ...) are units the scribes kept together, i.e. words or fixed compounds, and not only
+  frequent neighbours. The small numbers (21-31 bound gaps) make it a lead to replicate on tablets and more seals, not a
+  settled result.

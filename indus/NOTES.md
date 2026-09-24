@@ -940,6 +940,15 @@ site; significant 'away' (p = 0.001) only because 10 are one Lothal batch; with 
 fails** (+3.9 points, p = 0.27). Lothal, Rupar and Dholavira sealings match Mohenjo-daro seals; check Frenez on
 Lothal. Tally 2 held, 10 failed.
 
+## Twenty-first pass (24 Sept 2026): where seal texts break lines
+
+Registered first (PREDICTIONS.md, seventh set, 203feed52), tested (`predict_test7.py`). Hypothesis X: breaks fall
+between words. **X1 fails** (breaks on heading/ending boundaries 1-6 of 69, no more than random); **X2 holds**: the 30
+highest-PMI sign pairs are never split across lines (0 of 31 gaps against 18%, p = 0.003; 0 of 21 interior gaps
+without the heading pairs, p = 0.009). **Found while testing:** multi-line line order in the fuller corpus is
+ambiguous (listed order: ending last on 34 of 66; reversed, as data/corpus.tsv: heading first on 12). icit_full.py
+keeps the listed order, with `LINES_REVERSED` to flip; the test holds either way. Tally 3 held, 11 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

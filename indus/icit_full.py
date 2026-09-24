@@ -2,7 +2,7 @@
 locally, not redistributed).
 
 Record fields used: 0 id, 1 CISI number, 3 site, 11 depth ('-3.0 ft', '-125 cm', 'surface', '- -'), 17 condition,
-20 object type, 34 text. Text conventions: signs as 3-digit Wells/ICIT numbers joined by '-', '/' between lines,
+20 object type, 34 text. Text conventions: signs as 3-digit Wells/ICIT numbers joined by '-', '/' between lines (their reading order is ambiguous: see lines_of),
 '000' a missing or illegible sign, ']' at the (visual) left and '[' at the (visual) right mark a broken edge, '+' an
 intact edge. Texts are stored in visual order; reading order is the reverse (as build_corpus.py): the visual left
 edge is the reading end, the visual right edge the reading start.
@@ -11,6 +11,8 @@ import csv
 import re
 
 from signs import SPLIT
+
+LINES_REVERSED = False
 
 
 def records(path):
@@ -40,7 +42,10 @@ def lines_of(text):
             signs.extend(SPLIT.get(g, [g]))
         out.append({'signs': signs, 'broken_start': right_broken, 'broken_end': left_broken,
                     'gap': gap})
-    return out
+    # Line order is ambiguous (checked 24 Sept 2026 on 66 intact multi-line seals): kept as listed, an ending
+    # stands last on 34 and a heading first on 1; reversed (as build_corpus.py does for data/corpus.tsv), an ending
+    # last on 12 and a heading first on 12. The listed order stays the default; LINES_REVERSED flips it.
+    return out[::-1] if LINES_REVERSED else out
 
 
 def depth_ft(s):
