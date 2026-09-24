@@ -7027,3 +7027,49 @@ degenerate (no title word occurs in the D series, so there was nothing to test);
 0.34, 0.69) fall between the profiles and are classed person-like by one measure's margin (shared 0.34, equidistant):
 they are neither a fully closed label set like the copper tablets nor as open as seal names. Tally, counting parts:
 1143 held, 1075 failed (2218 registered).
+
+# Hundred-and-sixty-first and hundred-and-sixty-second sets, registered together before testing (24 September 2026): the office + name reading, twenty hypotheses
+
+Set 159 found openers of 3+-sign names title-like and motif-linked, cores person-like. These twenty tests probe that
+reading from other sides and control for length. Definitions: names as R.name_of; opener = first body sign of a
+3+-sign body; core = (body minus opener, ending); shared opener = an opener attested on seals at both Mohenjo-daro
+and Harappa in F (set 159: 33 signs); heading = a line whose first signs are 817, 820 or 861 followed by 2, 60 or 1
+(the prefix R.name_of strips). Profiles and person-like / title-like as sets 157-159. F objects; seals unless stated.
+p < 0.05.
+
+## Hundred-and-sixty-first set: the opener as an office (ten hypotheses)
+
+- **OF1** Length control: names with a 2-sign body are person-like (openness is not only a matter of length).
+- **OF2** Names with a 1-sign body (head + ending) are title-like.
+- **OF3** Set 159's PL4 holds within 3-sign bodies and within 4+-sign bodies separately (opener z above head z in both).
+- **OF4** Openers with 5+ names on seals with a motif have a majority motif covering a larger share of their names
+  than heads with 5+ such names do (pooled majority counts; Fisher).
+- **OF5** Seals without a picture (motif 'None') carry a 3+-sign name with a shared opener less often than pictured
+  seals do (Fisher).
+- **OF6** Heading and opener exclude each other: names under a heading have a shared opener less often than names
+  without one (3+-sign bodies; Fisher).
+- **OF7** Cores recombine with openers: the number of cores attested with 2+ different openers is at least the median
+  when openers are shuffled among the 3+-sign names (1,000 draws).
+- **OF8** Across levels (early / late, both cities), openers are shared more than cores (share of the smaller level's
+  units also in the other; Fisher).
+- **OF9** West Asian names (as set 136) carry a shared opener less often than home names with 3+-sign bodies (Fisher).
+- **OF10** Copper-tablet texts contain a shared opener as their first sign less often than seal names with 3+-sign
+  bodies do (Fisher).
+
+## Hundred-and-sixty-second set: the office + name reading, further checks (ten hypotheses)
+
+- **MX1** Rare motifs concentrate openers: over motifs other than the unicorn with 10+ names of 3+ signs, the mean share
+  of the commonest opener is above the unicorn's share at the same sample size in 95%+ of 1,000 draws.
+- **MX2** In B (M77 additions), openers are title-like (Mohenjo-daro against Harappa).
+- **MX3** In B, cores are person-like.
+- **MX4** 50%+ of the openers of 3+-sign names on Harappa moulded tablets are shared openers.
+- **MX5** The ending (740 / 520) is better predicted by the head than by the opener (permutation z of MI, head above
+  opener; 3+-sign names).
+- **MX6** Among 3+-sign names on seals, seals with a shared opener are larger (field 31) than seals with another
+  opener (rank test).
+- **MX7** For shared openers with names in both cities, the commonest motif is the same in both cities in 60%+.
+- **MX8** Tags (sealings) carry a shared opener on their 3+-sign names more often than seals do (Fisher).
+- **MX9** At Mohenjo-daro, seals sharing a shared opener share a sub-area more often than chance (pair test as set
+  140).
+- **MX10** The share of 3+-sign names with a shared opener differs between early and late levels (site-stratified
+  permutation as TM, two-sided).
