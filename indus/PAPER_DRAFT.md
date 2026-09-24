@@ -10,10 +10,9 @@ Claims to have deciphered the Indus script appear every year, and a prize announ
 They are hard to assess because a fitted key can make almost any short corpus "read". We built a test that any
 proposed sign key can be run through: the key's reading of the corpus in its claimed language is compared with 100–200
 copies of the same key whose values are shuffled among signs of similar frequency, in six candidate languages, and
-with the sign = image equations of the Mohenjo-daro copper tablets. Before using it on the Indus script we ran it on
-the accepted decipherment of Linear Elamite (Desset et al. 2022): with vowels kept, the real key beats its shuffles
-(4 of 100 as good); with consonants only, the usual way of scoring an Indus key, it does not (80 of 100), so that
-version cannot recognise a correct decipherment. Under the validated version none of five published keys
+with the sign = image equations of the Mohenjo-daro copper tablets. We ran it first on two accepted decipherments. The
+Linear Elamite key beats its shuffles with vowels kept (4 of 100 as good) but not with consonants only; the Linear B
+key beats them in no setting (11-41 of 100). The test cannot reliably recognise a correct decipherment. Under the validated version none of five published keys
 (Yajnadevam 2024, Fairservis 1992, Parpola 1994, and the small keys of Mahadevan and Kak) reads its own language better
 than its shuffles. Blindly fitted keys read about 93% of the corpus in any language and even carry over to unseen
 texts in every language, so reading rates identify nothing. On the structure of the texts, replicated on an
@@ -54,8 +53,10 @@ dictionary words (plus one case-ending consonant), and scored as the share of th
 more segments. The same is done for 100–200 shuffles of the key's values within frequency bands. The key is also
 scored on the copper-tablet anchors and on how it treats the numerals and endings. Controls:
 (a) a planted key on a synthetic corpus beats its shuffles by about ten points; (b) a key fitted to the corpus
-by hill-climbing reads about 93% of it in any language; (c) **the real Linear Elamite key beats its shuffles only when
-vowels are kept**. A consonant-only score, which most published Indus tests implicitly use, fails (c).
+by hill-climbing reads about 93% of it in any language; (c) the real Linear Elamite key beats its shuffles only when
+vowels are kept; (d) **the real Linear B key does not beat its shuffles in any setting** (11-41 of 100 as good), even with
+the Greek list adjusted to Linear B spelling. The test therefore cannot reliably recognise a correct key: its null
+results for the published Indus keys show that their reading rates prove nothing, not that the keys are wrong.
 
 Results for published keys (vowels kept, own language): Yajnadevam 2024, 53.0% against 44.8% (10 of 100 shuffles as
 good; the edge disappears without his values for the two endings); Fairservis 1992, below its shuffles; Parpola 1994,

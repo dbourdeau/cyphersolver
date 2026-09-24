@@ -906,6 +906,14 @@ Scripts: `wells_test.py`, `predict_test3.py`, `grammar_model.py`, `name_classes.
    association survives Bonferroni (700 with the short-horned bull, 3 of 17 texts); no sign goes with the standard or
    the trough. Seal texts do not name their animal; no new anchors.
 
+7. **Linear B as a second known-answer control** (`linb_control.py`, `results/linb_control.md`; DAMOS corpus, 4,988
+   lines of 3+ syllabic signs read without word dividers; Greek LSJ headwords + Homeric forms, 136,872). The real key
+   does not beat its shuffles: consonants only 32.7% against 29.4% (11 of 100 as good), vowels kept 40.7% against 38.9%
+   (27 of 100); with the Greek list adjusted to Linear B spelling 12 and 41 of 100. **The bench cannot reliably
+   recognise a correct decipherment**; its Linear Elamite success does not generalise. Its null results for the Indus
+   keys show that reading rates prove nothing, not that the keys are wrong. Site, bench page, dossier and draft
+   corrected.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

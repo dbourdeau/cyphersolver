@@ -88,14 +88,17 @@ chance to be used alike, but merging every such pair reduces 223 common signs on
 - **Outside evidence is almost nil:** the only probable Meluhhan names in cuneiform are Nanaza and Samar (three
   Irisagrig tablets, Šu-Suen 6); a full CDLI search (223 texts) adds none (`meluhha_oracc.py`).
 
-## 6. The test any decipherment must pass
+## 6. The test any decipherment must pass - and its limits
 
-`bench.py` and the in-browser `docs/indus-bench.html`: a key is scored against its own shuffles in six languages
-(vowel-aware), on the copper-tablet anchors, and on the structure above. **The test was validated on a real
-decipherment**: Desset's accepted Linear Elamite key beats its shuffles (4 of 100 as good); the consonant-only
-version of the test does not, and is not used. Results for published keys: Yajnadevam 2024 (Sanskrit), Fairservis
-1992 and Parpola 1994 (Dravidian) do not beat their shuffles in their own language; Mahadevan and Kak give too few
-signs to test; Mahadevan's reading of the endings as a gender pair is the one claim the structure supports.
+`bench.py` and the in-browser `docs/indus-bench.html`: a key is scored against its own shuffles in six languages, on
+the copper-tablet anchors, and on the structure above. Known-answer controls: the Linear Elamite key beats its
+shuffles with vowels kept (4 of 100 as good), not with consonants only; **the Linear B key (DAMOS corpus, Greek LSJ +
+Homeric forms) does not beat its shuffles in any setting (11-41 of 100)**, even with the Greek list adjusted to Linear
+B spelling (`linb_control.py`). The test therefore cannot be relied on to recognise a correct key. Its firm results
+are negative in a narrower sense: a high reading rate proves nothing (fitted keys read about 93% in any language), and
+the published keys (Yajnadevam 2024, Fairservis 1992, Parpola 1994) show no advantage over their shuffles - which a
+correct key might not show either. Mahadevan's reading of the endings as a gender pair is the one claim the structure
+supports.
 
 ## 7. What is new here, and what was known
 

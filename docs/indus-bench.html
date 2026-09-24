@@ -71,7 +71,7 @@
   <label for="ib-lang">Claimed language</label>
   <select id="ib-lang"><option value="sa">Sanskrit (Monier-Williams)</option><option value="dra">Dravidian (DEDR)</option><option value="sux">Sumerian (ePSD2)</option><option value="mu">Munda (JAMBU)</option><option value="ta">Old Tamil (Sangam-cited)</option><option value="bu">Burushaski</option></select>
   <label for="ib-mode">Scoring</label>
-  <select id="ib-mode"><option value="v">Vowels kept (recommended: it recognises the real Linear Elamite key)</option><option value="c">Consonants only (Sanskrit, Dravidian, Sumerian)</option></select>
+  <select id="ib-mode"><option value="v">Vowels kept (recognises the Linear Elamite key; not the Linear B one)</option><option value="c">Consonants only (Sanskrit, Dravidian, Sumerian)</option></select>
   <div class="ib-btns"><button class="primary" id="ib-run" disabled>Score the key</button></div>
   <p class="ib-msg" id="ib-msg">Loading the corpus and the lexicons&hellip;</p>
   <div class="ib-bar"><i id="ib-prog"></i></div>
@@ -83,7 +83,7 @@
 </div>
 
 <h2 id="how-the-numbers-are-made">How the numbers are made</h2>
-<p>The accepted decipherment of Linear Elamite (Desset and colleagues 2022) was used as a check. On its own corpus, with Hallock&rsquo;s Elamite glossary, its key beats 96 of 100 shuffles with the vowels kept, and does not beat them with the consonants only.</p>
+<p>Two real decipherments were used as checks. The Linear Elamite key (Desset and colleagues 2022), with Hallock&rsquo;s Elamite glossary, beats 96 of 100 shuffles with the vowels kept. The Linear B key (Mycenaean Greek) does not beat its shuffles in any setting, even with the Greek word list adjusted to Linear B spelling. <b>So a key that fails here is not shown to be wrong</b>; what the bench does show is that a high reading rate, on its own, proves nothing.</p>
 <p>The corpus is the 2,088 lines of three or more signs in the ICIT-derived dump of the Indus inscriptions, in reading order, on ICIT (Wells) glyph ids. The lexicons are the headwords of Monier-Williams (Cologne Digital Sanskrit Dictionaries), the forms of the Dravidian Etymological Dictionary (DEDR, all languages), and the nouns of the electronic Pennsylvania Sumerian Dictionary (ePSD2). Only their consonant skeletons are bundled. The shuffles permute the key&rsquo;s values among keyed signs in bands of ten by frequency (three for keys of fewer than sixty signs), so each shuffled key has the same values on signs of about the same frequency. The anchor test counts, for the eight copper-tablet texts written on the back of a picture, how often the reading contains a word for that animal in the claimed language. The code is <code>indus/bench.py</code>; this page is its in-browser version.</p>
 </main>
 <footer><div class="in">
