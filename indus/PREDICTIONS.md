@@ -8192,3 +8192,20 @@ and it covers only 56.2% of B (SP5 fails: the strictness costs a third of the ba
 (SP6): the G margin enters the metric at A 46.2, B 34.7 points. Progress: streak 0. The low F margin (17 points) says
 the extra F lines (mostly short, damaged or tablet lines) carry little order the grammar knows. Tally, counting parts:
 1288 held, 1202 failed (2490 registered).
+
+# Hundred-and-ninety-fourth set, registered before testing (24 September 2026): decipherment loop 19, graphic families as context (six hypotheses)
+
+Metric after loop 18: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), G margin A 46.2 / B 34.7, P 0, L 4; streak 0. Loops 9-14
+found graphic devices (cage, inner strokes, fish marks) that change a sign's job while it keeps its base shape. If
+marked variants share contexts, the S model should gain from seeing the previous two signs by their graphic family.
+Family = ICIT decade block (g // 10: 740-745 jars, 700-706 U's, the fish in 220-240). New component `ftri`: a trigram
+over the families of the two previous signs, predicting the sign (`famlm.py`), mixed with the set-125 model (tri, pos,
+end; weights fitted on the training lines' own dev split). A design run on the training lines only gave 4.740 -> 4.731.
+
+- **FB1** S on the fixed test lines improves by 0.005 bits or more.
+- **FB2** Replication on B: trained on A's distinct lines, tested on the B lines not in A, the family model also gains.
+- **FB3** Random families (the signs regrouped at random into groups of the same sizes, 20 draws, seed 194) gain less
+  than the decade families in at least 19 of 20 draws (fixed test).
+- **FB4** Decade families gain more than the coarser hundred blocks (g // 100) as families.
+- **FB5** The weight fitted to `ftri` is nonzero on both the fixed split and the A->B run.
+- **FB6** Progress rule: FB1 and FB2 hold (S improves and the gain replicates on B).
