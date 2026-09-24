@@ -7830,3 +7830,24 @@ Indus signs sound alike. Either the substitutions are not phonetic (signs altern
 depictions are misidentified, or the language is not represented; a simple rebus reading of the depicted signs is not
 supported. P stays 0; L unchanged (no family excluded, none favoured). Tally, counting parts: 1242 held, 1167 failed
 (2409 registered).
+
+# Hundred-and-eighty-second set, registered before testing (24 September 2026): decipherment loop 7, are substitutions semantic? (eight hypotheses)
+
+Metric after loop 6: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loop 6 found no phonetic signal in substitutions
+under any language's words. Loop 7 asks whether substitutions are semantic instead: signs replacing each other because
+they depict the same kind of thing, as word signs would. Categories: Fairservis letter (A humans, C/D animals, E
+plants, F sky, G structures, H weapons, I implements, J containers, K measures, L cloth/ornaments, M drums, N landscape,
+Q fish-like), with signs.FISH as Q and noun_class.HUMAN as A. Substitution pairs as set 179 (A + B names, lexical signs,
+weighted by frames); chance = categories shuffled among the identified signs (1,000 draws).
+
+- **SE1** Substitution pairs of two identified signs are same-category more often than chance.
+- **SE2** SE1 holds with the fish series left out.
+- **SE3** SE1 holds on B's names alone.
+- **SE4** Human-figure signs' identified substitution partners are human figures in 30%+ of pair weight.
+- **SE5** Same-category pairs are 40%+ of identified-pair weight.
+- **SE6** Leave-one-out: an identified sign's category is the majority category of its identified partners (3+
+  partners) in 50%+ of such signs, above the shuffled rate (95th percentile).
+- **SE7** If SE6 holds, unidentified signs with 3+ identified partners and a 60%+ majority get that category; M+ rises
+  by 2 points or more (adoption rule, registered now).
+- **SE8** Signs that substitute across categories are rarer than within, even among signs of the same position class
+  (heads only): same-category share among head-slot substitutions above chance.
