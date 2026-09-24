@@ -3875,3 +3875,18 @@ Replication
 - **AR18** B: AR2 holds.
 - **AR19** B: AR14 holds.
 - **AR20** The item distribution differs between Harappa and Mohenjo-daro headed formulas (F, MI).
+
+## Results of the seventy-ninth set (added after the test; `predict_test79.py`, `results/predict_test79.md`)
+
+Four held, sixteen failed: the 'formulas are records of named agents' reading does not survive. The name headers are
+almost all single signs that happen also to be 1-sign names (AR5: mean length 1.18 against 3.72), so the
+seventy-eighth set's '23% of headers are names' mostly counts common single signs, not names. Named headers are not
+seal names at their own site (AR1: 7 of 79, p = 0.77), do not select their item (AR2, p = 0.15; AR18 in B, p = 0.74),
+count the same things as other headers (AR3), are not more on seals (AR4) and are not a 740 class (AR6). (header, item)
+entries do not recur beyond chance (AR14, p = 0.085; AR19 in B) and repeated entries change their value in only 47%
+(AR15). Headed and numeral-first formulas count equally varied things (AR11), the same kinds of things (AR10, AR12),
+with the same values (AR16); the motif does not follow the item (AR13); header signs are also items half the time
+(AR9: 65 of 128), and headings alone are 27% of headers (AR7). What holds: headers are short (AR8: 81% of 1-2 signs),
+numeral-first formulas are a Harappa form (AR17: 49% against 28%), and the cities count different items (AR20, p =
+0.0001). The seventy-eighth set's header-item selection (FG3) stands as a sign-level association, but it is not an
+agent-and-goods record in any testable sense. Tally, counting parts: 495 held, 572 failed (1067 registered).

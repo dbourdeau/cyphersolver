@@ -1505,6 +1505,13 @@ Registered first (seventy-eighth set, b445293c9), tested on distinct lines (`pre
 several items, two-count formulas list different items, and headers are commoner on seals. Items are somewhat more
 often formula-only signs. Tally 491 held, 556 failed.
 
+## Ninety-third pass (24 Sept 2026): formulas as records
+
+Registered first (seventy-ninth set, 0871bb2d9), tested on distinct lines (`predict_test79.py`). The record reading
+fails: 'name headers' are single signs that are also 1-sign names, not seal owners, and entries do not recur. Kept:
+headers are short, numeral-first formulas are a Harappa form, and the cities count different items. Tally 495 held,
+572 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
