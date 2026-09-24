@@ -2385,3 +2385,23 @@ MI 1.39 and 1.68). OT1 holds in the earlier levels (p = 0.003) and narrowly miss
 OT16, OT11 lack power in at least one period (4 to 15 human heads, 6 to 8 heads with 5+ names, 60 long numerals).
 
 Tally, counting parts: 212 held, 315 failed (527 registered).
+
+# Thirty-seventh set, registered before testing (24 September 2026): regional name habits (round 1 of 10)
+
+Lead: the head-to-ending rule does not carry from the two cities to the other sites (OS4). Regions: Sindh (Mohenjo-daro,
+Chanhu-daro, Allahdino, Amri, Kot Diji, Lakhanjo-daro, Nausharo), north (Harappa, Kalibangan, Banawali, Rakhigarhi,
+Farmana, Bhirrana, Rupar), Gujarat (Lothal, Dholavira, Surkotada, Desalpur, Kanmer, Gola Dhoro, Rangpur). F, intact
+objects, lines reversed; names as before; seal names are the first name on each seal. 10,000-draw permutations; p < 0.05.
+Helpers in rtools.py.
+
+- **RG1** The head of seal names depends on the region (MI beyond permutation).
+- **RG2** The first sign of seal names depends on the region.
+- **RG3** Gujarat seal names are shorter than Sindh seal names (rank test).
+- **RG4** Gujarat seal lines carry the heading less often than Sindh seal lines, length-stratified.
+- **RG5** 30%+ of Gujarat seal names have a head never seen as a head at Mohenjo-daro or Harappa.
+- **RG6** At least three head signs with 5+ names each occur as heads in one region only.
+- **RG7** The notation of numerals (short / long / tiered) depends on the region.
+- **RG8** Kalibangan seal names end in 520 more often than Harappa seal names.
+- **RG9** Dholavira texts are longer than the texts of the other Gujarat sites (rank test).
+- **RG10** Chanhu-daro seal names share their head with Mohenjo-daro seal names (head seen at Mohenjo-daro) more often
+  than Lothal seal names do (Sindh neighbours against a distant site).
