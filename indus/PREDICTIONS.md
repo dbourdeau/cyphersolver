@@ -7851,3 +7851,16 @@ weighted by frames); chance = categories shuffled among the identified signs (1,
   by 2 points or more (adoption rule, registered now).
 - **SE8** Signs that substitute across categories are rarer than within, even among signs of the same position class
   (heads only): same-category share among head-slot substitutions above chance.
+
+## Results of the hundred-and-eighty-second set (added after the test; `predict_test182.py`, `results/predict_test182.md`)
+
+One held, seven failed. **Substitutions are not semantic either.** Substitutable signs share a depicted category more
+than chance only because the fish signs replace one another (SE1: 0.168 against 0.112, p = 0.024; without the fish
+series 0.095 against 0.109, SE2 fails; B alone p = 0.066, SE3). Human figures almost never replace human figures (SE4:
+1 of 138 pair weight), same-category pairs are a sixth of the total (SE5), a sign's partners do not predict its
+category (SE6: 0.22 leave-one-out against a shuffled 95th percentile of 0.29), so no category could be inferred for
+unidentified signs (SE7), and head-slot substitutions are not category-bound (SE8). Reading, with loop 6: the slots of
+Indus names take signs without regard either to how their depicted words sound (in 503 languages) or to what they
+depict, except that fish signs form a family. Either Fairservis's identifications are largely wrong, or the name
+elements work like arbitrary name parts (as personal-name elements do in many naming systems), or both. M+ and P do
+not move. Tally, counting parts: 1243 held, 1174 failed (2417 registered).
