@@ -2726,3 +2726,23 @@ Harappa and tablet habit (FI7: +26.5 points; FI8: +23.2, both length-stratified)
 seen in a name (FI9), and formulas repeated on several objects are shorter (FI10: 3.0 against 3.9). Only 76% of
 numerals stand directly before a non-numeral sign (FI6 fails); the rest end the line or stand next to another numeral.
 Tally, counting parts: 278 held, 359 failed (637 registered).
+
+# Forty-eighth set, registered before testing (24 September 2026): objects with more than one line (loop 2, round 2)
+
+F objects (intact, lines reversed); 'multi-line' = 2+ lines. Line kinds: name line (name_of), formula (non-name line),
+other. 10,000-draw permutations; p < 0.05. Random-pair baselines draw lines from different objects.
+
+- **ML1** A name line and a formula share an object more often than when line kinds are shuffled among the lines of
+  multi-line objects (keeping each object's line count).
+- **ML2** Formulas sharing an object with a name line carry a numeral more often than formulas on one-line objects.
+- **ML3** Two lines of one object share a sign more often than two lines from different multi-line objects.
+- **ML4** Lines of multi-line objects are shorter than lines of one-line objects (rank test).
+- **ML5** Two name lines on one object share their ending more often than name lines paired across objects.
+- **ML6** Two name lines on one object share their last body sign more often than name lines paired across objects.
+- **ML7** Formulas on multi-line objects open with a numeral more often than formulas on one-line objects,
+  length-stratified.
+- **ML8** A larger share of Mohenjo-daro objects than Harappa objects is multi-line.
+- **ML9** Multi-line objects recur as identical texts on 2+ objects more often than one-line objects of the same type
+  class (tablets only; Fisher).
+- **ML10** Where one line of a two-line object carries a numeral, the other carries one less often than when lines are
+  paired across two-line objects.
