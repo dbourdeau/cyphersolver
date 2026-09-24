@@ -4207,3 +4207,34 @@ confirmed in F: the header selecting the item (HO16, p = 0.13; FG3 rested on A +
 N head' (HO15: 98 against 92). Reading: the two cities share one name grammar and one number system; the smaller sites
 share the number system but write names differently (or too few survive to show the pattern). Tally, counting parts:
 575 held, 632 failed (1207 registered).
+
+# Eighty-seventh set, registered before testing (24 September 2026): regional name systems (twenty hypotheses)
+
+The eighty-sixth set found the name grammar does not show at the smaller sites. Regions from rtools.region: Sindh
+(Mohenjo-daro, Chanhu-daro, ...), north (Harappa, Kalibangan, ...), Gujarat (Lothal, Dholavira, ...). F distinct
+(site, name) and (site, line). 'City top-10 heads' from A + B. Units as in the sixty-first set. 10,000-draw
+permutations; p < 0.05; two-sided where marked.
+
+Gujarat
+- **RS1** Gujarat 520 names hold a fish more often than Gujarat 740 names.
+- **RS2** Gujarat names end in a city top-10 head less often than Mohenjo-daro names.
+- **RS3** Gujarat head types overlap more with Mohenjo-daro's than with Harappa's (Jaccard).
+- **RS4** The Gujarat 520 share differs from the two cities' (two-sided).
+- **RS5** Gujarat names are shorter than Mohenjo-daro names (rank test).
+- **RS6** Gujarat name lines have the heading unit less often than Mohenjo-daro's.
+- **RS7** Formulas are a larger share of lines in Gujarat than at Mohenjo-daro.
+- **RS8** 10%+ of Gujarat sign types occur at neither city.
+- **RS9** In Gujarat, 50%+ of numerals of value 5-8 are tiered.
+- **RS10** Lothal and Dholavira share head types less (Jaccard) than Mohenjo-daro and Harappa do.
+- **RS11** Under 10% of Dholavira names end in 520.
+North and Sindh outside the cities
+- **RS12** Kalibangan head types overlap more with Harappa's than with Mohenjo-daro's.
+- **RS13** Chanhu-daro head types overlap more with Mohenjo-daro's than with Harappa's.
+- **RS14** Chanhu-daro names end in a Mohenjo-daro top-10 head more often than Gujarat names do.
+- **RS15** Kalibangan names are shorter than Harappa names (rank test).
+- **RS16** Kalibangan name lines have the heading unit less often than Harappa's.
+All regions
+- **RS17** The head depends on the region (MI over distinct (region, name)).
+- **RS18** The ending depends on the region (MI).
+- **RS19** The first sign of formulas depends on the region (MI).
+- **RS20** 50%+ of small-site names of 3+ signs contain a unit.
