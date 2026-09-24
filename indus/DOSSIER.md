@@ -36,7 +36,8 @@ chance to be used alike, but merging every such pair reduces 223 common signs on
 ## 3. Rules of combination (all replicated on the held-out M77 texts)
 
 1. **Heading.** 817 / 820 / 861 + a stroke pair (or 60, or one stroke), on 12% of texts; a single formula with
-   regional and genre variants (the choice of opener goes with site and object type, not with the name after it).
+   three variants used in the same proportions at Mohenjo-daro and Harappa (as Mahadevan 1970 said; an apparent site
+   effect came from a few Lothal sealings) and hardly chosen by the name after it (not a prefix).
    An unsupervised segmenter finds it unaided (cuts after it 95% of the time).
 2. **Name + ending.** 740 or 520 closes most names; they never touch; the ending is **fixed per name** (5 of 881
    names take both, against 46 by chance; M77: 4 of 385 against 26). The segmenter binds the ending to the name as a
@@ -108,9 +109,12 @@ Two literature checks (`results/lit_check.md`; the second read Mahadevan 1970/19
   74%); sign-pair frequencies stable over the Mohenjo-daro periods (Rao and Mahadevan 1987); benchmarking decipherment
   algorithms on known decipherments (Snyder et al. 2010; Luo et al. 2019); fitted keys not identifying the language
   (Raghavendra 2026).
-- **Contradicted by earlier work:** Wells (2006: 200-208) compared Indus word structure with Proto-Dravidian and
-  Proto-Munda and preferred Munda, against the class-suffix test here; Mahadevan (1970: 46) found the openers in about
-  the same proportions at every site, against the site effect found here.
+- **Earlier work that disagreed, tested** (`wells_test.py`): Wells (2006: 200-208) preferred (Para-)Munda because Indus
+  words seem to use prefixes and insertions. The heading is not a prefix (its variant hardly depends on what follows:
+  +6 points against +16 for the ending on the name), there is no name-initial prefix set, and the insertions are
+  attribute + head compounds (fish-type signs and numerals), ordinary in Dravidian. Mahadevan (1970: 46) said the
+  openers are used in the same proportions at every site: confirmed for Mohenjo-daro and Harappa (p = 0.66); our
+  earlier site effect came from a few Lothal sealings and is withdrawn.
 - **Not found before:** the per-name fixedness count; the arrow class as closed (non-fish names almost never take it);
   the class-suffix test and the combined two-test argument; the numeral + fish enrichment test; the count of missing
   endings on foreign seals; grammar separated from numerals over the periods; restoration scored against real broken

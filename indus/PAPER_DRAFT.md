@@ -76,7 +76,8 @@ with lexicons matched in size the language ranking is inconclusive (cf. Raghaven
    the class follows the referent, not the last word.
 3. **Order.** The 'man' sign follows the jar 112 times and opens a name-and-ending text once: possessor first, head
    last (Parpola 1994 made this argument against Sumerian and Elamite).
-4. **The heading** (817/820/861 + strokes) is one formula; its variant depends on site and object type, not on the name
+4. **The heading** (817/820/861 + strokes) is one formula in three variants, in the same proportions at the two main
+   sites (Mahadevan 1970; our earlier site effect came from a few Lothal sealings), and hardly chosen by the name
    that follows.
 5. **Numerals.** Short and long strokes precede different signs (Jensen-Shannon 0.61 bits, 0 of 500 permutations), the
    split of Proto-Elamite's counting and capacity systems; the long strokes go with the pot on Harappa tablets. The
@@ -122,8 +123,9 @@ See `DOSSIER.md` section 7 and `results/lit_check.md`. In short: much of the str
 per-name fixedness measurement, the closed arrow class, the class-suffix test, the numeral + fish test, the missing
 endings on foreign seals, grammar against numerals over time, restoration scored against intact twins, the shuffle
 bench validated on Linear Elamite, and the registered predictions (two failed, two held). Wells (2006) preferred Munda
-on word structure, against our class test, and Mahadevan (1970) found no site effect on the openers; both
-disagreements need to be argued in the paper.
+on word structure: his prefix and insertion arguments do not survive a test on the corpus (the heading is not a
+prefix, there is no prefix set, insertions are attribute + head). Mahadevan (1970) said the openers have the same
+proportions everywhere: he was right, and our earlier site effect is withdrawn.
 
 ## 8. Limitations
 
