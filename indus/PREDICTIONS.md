@@ -342,3 +342,24 @@ Hypothesis AA holds if both hold.
   a head, which is the head-final compound the first held predictions (Q1, Q2) describe. That is modification, not a
   phonetic complement spelling a word's end. The optional signs being slightly freer fits attributes (they attach to
   many heads) as well as sound signs, so AA1 does not separate the two.
+
+# Eleventh set, registered before testing (24 September 2026): replications and a known-answer control
+
+The two leads of the last five sets are X2 (the 30 bound pairs are never split by a seal's line break) and Y2 (West
+Asian texts use 'free' signs). Before either is used to shortlist sound signs they must replicate on material they were
+not found on, and freedom must be shown to pick out sound signs in a script where the answer is known.
+
+**RB Bound pairs, M77.** In the M77 texts absent from the ICIT-derived corpus (data/corpus_m77_added.tsv; Mahadevan's
+own line division, signs mapped to ICIT numbers), with 2+ lines: gaps inside the 30 bound pairs of the seventh set are
+line breaks less often than other gaps, Fisher p < 0.05, with lines as listed and with lines reversed (both required).
+
+**RF1 Freedom is a property of the sign.** Freedom (as Y2) computed from home seals alone and from home tablets alone,
+over signs with 5+ tokens in each: Spearman correlation > 0, p < 0.05 (permutation).
+
+**RF2 The West Asian effect with independent freedom.** Freedom computed only from the M77-added texts; West Asian
+tokens (as Y2) against length-matched home draws: higher mean freedom, p < 0.05.
+
+**RC Linear B control.** On Linear B (DAMOS lines; words split into syllabograms, word dividers removed, word signs and
+measure signs as single tokens, numerals as one token 'N'), freedom computed the same way (signs with 5+ tokens):
+syllabograms have higher freedom than word signs (logograms, ideograms, measure signs), Mann-Whitney one-sided p <
+0.05. If RC fails, freedom is not shown to detect sound signs and no shortlist will be drawn from it.
