@@ -2359,3 +2359,29 @@ Over time at Mohenjo-daro (each finding must hold in the earlier and in the late
 - **OT16** (as SR16) the head fixes the ending.
 - **OT11** (as SR11) long strokes count containers and devices.
 - **OT12** (as SR12) the number depends on the following sign.
+
+## Results of the thirty-sixth set (added after the test; `predict_test36.py`, `results/predict_test36.md`)
+
+Nine held, eleven failed. Other sites: 491 objects (Kalibangan 102, Lothal 101, Dholavira 87, Chanhu-daro 53, Nausharo
+29, others); Mohenjo-daro earlier 348, later 258 objects.
+
+**At the other sites (a third sample), seven of the ten core findings hold**: OS1 (the last sign decides the ending,
+p = 0.043), OS8 (affixed fish are attributes, p = 0.027), OS10 (tiered for 5-8, 71% against 19%), OS11 (long strokes
+count containers, 9.1% against 0.7%), OS12 (the number depends on the sign, p = 0.0001), OS20 (long numbers open lines,
+40% against 13%), OS18 (frequent signs simpler, Spearman -0.31). OS2 fails (heads a smaller inventory: +0.13 bits,
+p = 0.22) and OS3, OS16 are not testable (10 human heads; 9 heads with 5+ names).
+
+**The head rule does not transfer to the smaller sites.** OS4 fails clearly: the head-to-ending rule learned at
+Mohenjo-daro and Harappa predicts the other sites' endings at 81.2%, below their majority baseline of 83.3% (p = 0.79).
+That the last sign decides the ending holds at the other sites (OS1), but which ending a given head takes is not the
+same there: the head-ending pairings are local to the two cities, or the names are different ones.
+
+**Harappa habits.** **OS14 holds** at the other sites (unicorn seals carry longer texts, p = 0.0001): it is Mohenjo-daro
+that lacks it, not a Harappa peculiarity. OS9, OS19 fail (the stroke pair + fish and seals avoiding left-to-right are
+Harappa habits), OS13 is not testable (2 tablet variant pairs).
+
+**Over time at Mohenjo-daro.** Only **OT12 holds** in both earlier and later levels (the number depends on the sign:
+MI 1.39 and 1.68). OT1 holds in the earlier levels (p = 0.003) and narrowly misses in the later (p = 0.062); OT3,
+OT16, OT11 lack power in at least one period (4 to 15 human heads, 6 to 8 heads with 5+ names, 60 long numerals).
+
+Tally, counting parts: 212 held, 315 failed (527 registered).

@@ -1198,6 +1198,15 @@ tiered numerals write 5-8 (SR10), long strokes count containers (SR11), the numb
 longer unicorn texts (SR14), seals avoiding left-to-right (SR19). Too few cases per city: SR5, SR6, SR7, SR15, SR17.
 Tally 203 held, 304 failed.
 
+## Fiftieth pass (24 Sept 2026): the core findings beyond the two cities and over time
+
+Registered first (PREDICTIONS.md, thirty-sixth set, b48cd1e3a), tested (`predict_test36.py`). At the other sites
+(491 objects) seven of the ten core findings hold (OS1, OS8, OS10, OS11, OS12, OS20, OS18). **The head-to-ending rule
+of the two cities does not transfer to them (OS4: 81.2% against an 83.3% baseline)**: the last sign decides the ending
+everywhere, but which ending a head takes is local. Unicorn seals carry longer texts at the other sites too (OS14): a
+Mohenjo-daro exception, not a Harappa habit. Over time at Mohenjo-daro only the number-sign dependence holds in both
+periods (OT12); the others lack power in one. Tally 212 held, 315 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
