@@ -1,0 +1,155 @@
+"""Personal-name lists in candidate and control languages, segmented into elements, for comparing name structure
+with the Indus names (sets 171-172). The source data are third-party and stay outside the repository; paths come from
+the LANG_DATA environment variable (default: this session's scratchpad).
+
+Corpora and elements:
+- indus: distinct names on seals in F (R.names_in), elements = signs of body + ending.
+- linb: Linear B persons (DAMOS words classed as anthroponyms by the Tiripode lexicon, predict_test152), elements =
+  syllabograms.
+- skt: Sanskrit names, Monier-Williams entries glossed 'N. of a man' / 'N. of a woman' (Cologne digitisation, SLP1);
+  members = compound members (k2 split at the dash), syllables = vowels.
+- pra: Prakrit donor names, EIAD (DHARMA, CC BY 4.0): the word before dāna / dānaṁ / deyadhama in Prakrit editions
+  (genitive, mostly -sa); syllables by vowel.
+- tam: Old Tamil names, Wikipedia 'List of Sangam poets' (Tamil-script column); words = space-separated, syllables
+  = Tamil grapheme clusters (consonant + vowel sign or pulli).
+- sum: Ur III seal-owner and father names (ORACC epsd2/admin/ur3, CC0): PN forms split at hyphens into signs.
+"""
+import csv
+import json
+import os
+import re
+import unicodedata
+import zipfile
+
+import rtools as R
+
+SP = os.environ.get('LANG_DATA', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
+                    'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad')
+SLP_V = set('aAiIuUfFxXeEoO')
+IAST_V = re.compile(r'(ai|au|[aāiīuūeoṛṝḷ])')
+
+
+def indus(F):
+    return sorted({b + (e,) for r in F if r['type'].startswith('SEAL') for b, e in R.names_in(r) if b})
+
+
+def linb():
+    from predict_test152 import classes
+    per, _ = classes()
+    seen = set()
+    with open(os.path.join(SP, 'linb', 'corpus_damos_words.tsv'), encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            if r['word'] in per and r['status'] == 'complete':
+                seen.add(tuple(r['word'].split('-')))
+    return sorted(seen)
+
+
+def skt():
+    out = []
+    cur = None
+    for ln in open(os.path.join(SP, 'skt', 'mw.txt'), encoding='utf-8'):
+        m = re.match(r'<L>[^<]*<pc>[^<]*<k1>([^<]*)<k2>([^<]*)', ln)
+        if m:
+            cur = m.groups()
+            continue
+        if cur and re.search(r'N\.</ab> of a (man|woman)', ln):
+            k1, k2 = cur
+            mem = tuple(x for x in re.split(r'[—\-]', k2) if x)
+            syl = sum(ch in SLP_V for ch in k1)
+            if mem and syl:
+                out.append((k1, mem, syl))
+            cur = None
+    return sorted(set(out))
+
+
+def pra():
+    import glob
+    out = []
+    for fn in glob.glob(os.path.join(SP, 'lang', 'eiad', 'texts', 'xml', '*.xml')):
+        s = open(fn, encoding='utf-8').read()
+        for m in re.finditer(r'<div type="edition" xml:lang="pra-Latn"[^>]*>(.*?)</div>', s, re.S):
+            t = re.sub(r'<!--.*?-->', '', m.group(1), flags=re.S)
+            t = re.sub(r'<lb[^>]*break="no"[^>]*/>', '', t)
+            t = re.sub(r'<[^>]+>', ' ', t)
+            w = [x for x in re.split(r'\s+', t.lower()) if x]
+            for i in range(1, len(w)):
+                if re.match(r'(dāna|deyadhama)', w[i]) and re.search(r'[a-zāīūṁṅñṇ]', w[i - 1]):
+                    nm = re.sub(r'[^a-zāīūṛṝḷṁṃṅñṇṭḍśṣḥ]', '', w[i - 1])
+                    if len(nm) >= 3:
+                        out.append(nm)
+    return out
+
+
+def iast_syl(w):
+    return len(IAST_V.findall(w))
+
+
+def tam():
+    txt = open(os.path.join(SP, 'lang', 'sangam_poets.wiki'), encoding='utf-8').read()
+    out = []
+    for row in re.findall(r'^\|\d+\s*\|\|([^\n]*)', txt, re.M):
+        cells = [c.strip() for c in row.split('||')]
+        if len(cells) >= 2 and re.search('[\u0B80-\u0BFF]', cells[1]) and 'பெயர் தெரியாத' not in cells[1]:
+            out.append(re.sub(r'\[\[|\]\]|\'\'', '', cells[1]))
+    return out
+
+
+def tam_syl(w):
+    n = 0
+    for ch in w:
+        cat = unicodedata.category(ch)
+        if '\u0B85' <= ch <= '\u0BB9':
+            n += 1
+        if ch == '\u0BCD':
+            n -= 0
+    return n
+
+
+def sum_names():
+    z = zipfile.ZipFile(os.path.join(SP, 'oracc', 'epsd2-admin-ur3.zip'))
+    owners, fathers = [], []
+    for n in z.namelist():
+        if '/corpusjson/P' not in n:
+            continue
+        s = z.read(n).decode('utf-8')
+        if '"seal' not in s:
+            continue
+        seq = []
+        state = {'seal': None, 'line': None}
+
+        def walk(x):
+            if isinstance(x, dict):
+                if x.get('node') == 'd':
+                    if x.get('type') == 'surface':
+                        lab = x.get('label') or ''
+                        state['seal'] = lab if lab.startswith('seal') else None
+                    elif x.get('type') == 'line-start':
+                        state['line'] = x.get('n')
+                if x.get('node') == 'l' and state['seal']:
+                    f = x.get('f', {})
+                    seq.append((state['seal'], state['line'], f.get('pos'), f.get('cf'), (f.get('form') or x.get('frag') or '')))
+                for v in x.get('cdl', []):
+                    walk(v)
+        walk(json.loads(s))
+        for i, (seal, line, pos, cf, form) in enumerate(seq):
+            if pos == 'PN' and form:
+                signs = tuple(x for x in re.split(r'[-.]', re.sub(r'[\[\]⸢⸣#!?*]', '', form)) if x)
+                if line == '1' and (i == 0 or seq[i - 1][0] != seal or seq[i - 1][1] != '1'):
+                    owners.append((cf, signs))
+                elif i > 0 and seq[i - 1][3] == 'dumu':
+                    fathers.append((cf, signs))
+    return sorted(set(owners)), sorted(set(fathers))
+
+
+if __name__ == '__main__':
+    A, B, rowsA, recs, F = R.load_all()
+    print('indus', len(indus(F)))
+    print('linb', len(linb()))
+    s = skt()
+    print('skt', len(s), s[:5])
+    p = pra()
+    print('pra', len(p), len(set(p)), sorted(set(p))[:15])
+    t = tam()
+    print('tam', len(t), t[:8])
+    o, fa = sum_names()
+    print('sum owners', len(o), 'fathers', len(fa), o[:6])

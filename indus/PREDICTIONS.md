@@ -7403,3 +7403,28 @@ Fairservis identification); and C6 fails in a way that settles a point: left-to-
 lines as stored (46) and almost never reversed (2). ICIT stores every text in reading order, so left-to-right texts
 are the same texts written in the other direction, not reversals. Tally, counting parts: 1194 held, 1124 failed (2318
 registered).
+
+# Hundred-and-seventy-first set, registered before testing (24 September 2026): the structure of names across candidate languages (ten hypotheses)
+
+The owner asked for language tests built on the structure rules. Name lists (`lang_names.py`; sources outside the
+repository): Indus = distinct name bodies on seals (F), without the ending, 2+ signs; Ur III = seal-owner names
+(ORACC, CC0), PN forms split into signs; Old Tamil = Sangam poets (Wikipedia list, Tamil script), the last word of
+each name (the personal name, honorific included) split into aksharas; Sanskrit = Monier-Williams entries 'N. of a man
+/ woman', split into syllables (C*V) and into compound members; Linear B = DAMOS persons, syllabograms. A Prakrit
+list could not be built cleanly (EIAD tags names only in its headers; the donor formula gives 13 words); Prakrit is
+left out and Sanskrit stands for Indo-Aryan. Names with 2+ elements only. For each list: T_first and T_last = distinct
+first and last elements, rarefied to 400 names (mean of 500 draws); R = T_last / T_first (R < 1: the last element
+comes from the smaller, closed set). Length = elements per name; JSD over lengths 2-8+. Caveats registered with the
+set: the sources differ by up to two millennia from the Indus texts; Tamil names carry the honorific -ār; Monier-
+Williams gives stems of all periods; aksharas and syllables are not Indus signs.
+
+- **LN1** Ur III owner names close their first element: R > 1 (Ur-, Lu-, Nin-, the divine determinative).
+- **LN2** Indus name bodies close their last element: R < 1.
+- **LN3** Old Tamil names: R < 1.
+- **LN4** Sanskrit names (syllables): R < 1.
+- **LN5** Linear B persons: R < 1.
+- **LN6** On a log scale the Indus R is closer to the Old Tamil R than to the Sanskrit (syllable) R.
+- **LN7** The Indus length distribution is closer (JSD) to Old Tamil akshara lengths than to Sanskrit syllable lengths.
+- **LN8** The Indus length distribution is closer to Old Tamil than to Ur III sign lengths.
+- **LN9** Sanskrit compound names (2+ members) close their last member: member-level R < 1 (-datta, -deva, -mitra ...).
+- **LN10** The Indus R is within a factor of 2 of the Sanskrit member-level R (Indus signs behave like name members).
