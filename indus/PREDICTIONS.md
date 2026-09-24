@@ -5158,3 +5158,30 @@ change between Harappa periods (GS5), lines on one object do not share a genre (
 closers (GS12, under 70%), incised and moulded tablets carry counts and bare lines alike (GS13), potsherds are only 48%
 bare or count (GS14), the smaller sites' mix differs (GS15, p = 0.0001), and genre signs are not rarer (GS16).
 Tally, counting parts: 796 held, 851 failed (1647 registered).
+
+# Hundred-and-ninth set, registered before testing (24 September 2026): the bare-line closers (twenty hypotheses)
+
+Bare lines (hundred-and-sixth set) end most often in 400, 368, 595, 390 and 615. Here each is looked at across all
+distinct lines (A + B) unless stated. 'Bare 400' = 400 not directly after 740/520. Name heads as before; F without
+copper (F') for object and site tests, F with copper where stated. 10,000-draw permutations; p < 0.05.
+
+- **BC1** 50%+ of 368 tokens are line-final.
+- **BC2** 50%+ of 390 tokens directly follow a numeral.
+- **BC3** 30%+ of 595 tokens directly follow 95.
+- **BC4** 30%+ of 615 tokens stand next to another 615.
+- **BC5** 50%+ of bare-400 tokens directly follow a name-head sign.
+- **BC6** 60%+ of bare-400 lines are on tablets (F').
+- **BC7** 70%+ of 368 lines are on seals (F').
+- **BC8** The signs before 368 and before 740 overlap little (Jaccard 0.3 or less).
+- **BC9** 10%+ of 368 tokens directly follow a heading sign.
+- **BC10** 90%+ of the numerals directly before 390 are worth 3 or more.
+- **BC11** 70%+ of 390 lines are on seals (F').
+- **BC12** 70%+ of 615 tokens are medial (neither first nor last).
+- **BC13** Lines with 615 hold a numeral more often than other lines.
+- **BC14** Four signs cover 40%+ of the signs directly before bare 400.
+- **BC15** The signs before bare 400 and before '740 400' overlap little (Jaccard 0.3 or less).
+- **BC16** 30%+ of 595 tokens are on copper tablets (F with copper).
+- **BC17** 368 lines are a larger share of lines at Mohenjo-daro than at Harappa (F').
+- **BC18** B: BC1 holds.
+- **BC19** B: BC4 holds.
+- **BC20** F': BC12 holds.
