@@ -4415,3 +4415,18 @@ unless stated; F distinct (site, type, line) and objects for site, type and repe
 - **MX18** Medial-ending texts are on one object only more often than other name texts (F).
 - **MX19** B: MX1 holds.
 - **MX20** B: MX4 holds.
+
+## Results of the ninety-first set (added after the test; `predict_test91.py`, `results/predict_test91.md`)
+
+Ten held, ten failed. 184 distinct lines have a mid-line ending (187 tokens), 87% of them 740 (MX1; MX19 in B: 88%).
+The eighty-eighth set's 'part of a long compound' reading is revised: the medial ending usually closes a real short
+name and something else follows. The sign plus ending before it is itself a whole 1-sign name in 66% (MX8), the sign
+recurs (MX13: 72%; 176 x22, 220 x15, 233 x8, 100 x7, 240 x6), and it is a head-class sign less often than before a final
+ending (MX3: 27% against 38%). Only 13% of these lines also end in a name (MX9 fails); the tail is short (post-test:
+1-3 signs in 83%) and often a numeral (MX15: 17% of medial endings are followed by one; commonest followers 1, 679,
+621, 32, 90), sometimes a second headed entry ('... 520 32 861 2 ...'). The before and after signs form fixed phrases
+(MX7, p = 0.0001). These lines are seal texts (MX10: 75%), rarely headed (MX11: 7% against 17%), unique (MX18: 91% on one
+object) and spread over both cities (MX2: 62% Mohenjo-daro). Not supported: fish after the ending (MX6), numerals
+before it (MX5), a name after it (MX4, MX20: 6-2 and 2-0), a short first element (MX12: 49%), extra numerals (MX16) and
+fish before medial 520 (MX17: 10 of 24). Reading: 'short name + ending + short tail', a name followed by an
+annotation, mostly on one-off seals. Tally, counting parts: 612 held, 695 failed (1307 registered).

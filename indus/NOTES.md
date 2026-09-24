@@ -1593,6 +1593,13 @@ tablets are Mohenjo-daro fixed labels, not names or seal texts; bangles carry sh
 varied. Stamped pots and tags do not match surviving seals. 520 names are twice as common on seals as on other media.
 Tally 602 held, 685 failed.
 
+## Hundred-and-fifth pass (24 Sept 2026): endings in mid-line
+
+Registered first (ninety-first set, c892aece9), tested (`predict_test91.py`). A mid-line 740 usually closes a short
+real name ('176 740', '220 740'), followed by a 1-3 sign tail that is not a name (often a numeral or a fixed sign),
+mostly on one-off seals. Revises the eighty-eighth set's 'long compound' reading to 'name + annotation'. Tally 612 held,
+695 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
