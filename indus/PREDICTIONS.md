@@ -1920,3 +1920,56 @@ against 20% of seal lines), **HA21 holds** (148 of 149 copper tablets are from M
 bangles and miscellaneous objects carry an ending 27 points less than seals: labels). HA23, HA18, HA19 fail.
 
 Tally, counting parts: 154 held, 233 failed (387 registered).
+
+# Thirty-first set, registered before testing (24 September 2026): labels, moulded names, idioms, the heading
+
+Leads: copper tablets are Mohenjo-daro labels without the heading (HA20, HA21, L21, X2); moulded name tablets are not
+receipts (HA5); the receipt number is part of the name (HA6); other-animal seals carry 520 and shorter names (HA16,
+HA17). Conventions as the thirtieth set (A with 'type', 'site', 'motif', 'direction'; F read with lines reversed;
+names; head and attribute classes as K; 'receipt' as before; 'moulded name tablet' = TAB:B with a 740 / 520 ending;
+10,000-draw permutations; p < 0.05; length strata as before).
+
+Copper tablets (A)
+- **I1** Copper-tablet texts equal a seal name body more often than their own shuffled orders.
+- **I2** Copper-tablet lines contain a fish sign less often than seal lines, length-stratified.
+- **I3** Copper tablets with the same text carry the same picture (motif field) more often than random pairs of copper
+  tablets.
+- **I4** The first signs of copper-tablet lines are distributed differently from those of seal lines (MI beyond
+  permutation).
+
+Other-animal seals (F)
+- **I5** Among non-unicorn seals, the ending depends on the animal (MI beyond permutation).
+- **I6** Other-animal seals are a larger share of seals in later levels, at Mohenjo-daro and at Harappa.
+- **I7** Names on other-animal seals end in a head-class sign less often than names on unicorn seals.
+
+Moulded name tablets (F)
+- **I8** Moulded name tablets end in 520 more often than receipts.
+- **I9** Moulded name tablets carry the heading more often than receipts.
+- **I10** Distinct moulded name-tablet texts recur on 2+ tablets more often than distinct receipt texts.
+- **I11** Moulded name-tablet names contain a fish sign more often than seal names.
+- **I12** At Harappa, moulded name tablets come from later levels more often than receipts.
+- **I23** Moulded name tablets run left to right more often than seals (A, types TAB:B and SEAL).
+
+Receipts (F)
+- **I13** Receipt names contain a numeral more often than seal names.
+- **I14** Receipt names contain a fish sign less often than seal names.
+
+Numeral idioms (pooled A + B)
+- **I15** Two-sign name bodies are 'numeral + sign' more often than the adjacent pairs inside longer name bodies are.
+- **I16** In 'numeral + sign' pairs inside names, the sign is the name's last sign more often than the second sign of
+  other adjacent pairs in names is.
+- **I17** For numerals directly before a fish on seals, the value depends on the site (Mohenjo-daro / Harappa; MI
+  beyond permutation; F).
+
+The heading
+- **I18** For heads with 5+ headed and 5+ unheaded names (pooled), the majority ending is the same with and without the
+  heading in 80%+.
+- **I19** On seals the opener (817 / 820 / 861) depends on the site (Mohenjo-daro / Harappa / other; MI beyond
+  permutation; F).
+- **I20** Headed names are followed by 90 more often than unheaded names ending 740 (pooled).
+- **I21** 861-headed seal names come from Mohenjo-daro more often than 817-headed ones (F).
+- **I25** Kalibangan seal lines carry the heading less often than Mohenjo-daro seal lines, length-stratified (F).
+
+Tokens and pots (F)
+- **I22** Incised count tokens have the value 4 more often than moulded ones.
+- **I24** Pot inscriptions with a name ending come from Harappa more often than seals with a name ending do.
