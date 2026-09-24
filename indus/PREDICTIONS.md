@@ -3152,3 +3152,15 @@ same frequency quintiles (10,000 draws); p < 0.05.
 - **DC8** The nearest neighbour of 70%+ of numerals is a numeral.
 - **DC9** The nearest neighbour of 50%+ of head-class signs is head-class.
 - **DC10** A sign's nearest neighbour in A is its nearest neighbour in B for 30%+ of signs.
+
+## Results of the sixty-second set (added after the test; `predict_test62.py`, `results/predict_test62.md`)
+
+Five held, five failed. Context vectors (neighbour PMI, 115 signs with 20+ tokens) recover the known classes as
+groups: fish signs (DC1: mean cosine 0.16, p = 0.0001), numerals (DC2: p = 0.008) and head-class signs (DC3: p =
+0.0002) are each more alike than frequency-matched random sets, and signs that look alike (same Fairservis category)
+share contexts more than signs that do not (DC6: 0.07 against 0.04, p = 0.0001; the fish series contributes). A fish's
+nearest neighbour is another fish for 6 of 8 (DC7), but not a numeral's (DC8: 5 of 13) or a head's (DC9: 7 of 15).
+Similarities are only moderately stable: A against B Spearman 0.44 (DC4, under 0.5) and Mohenjo-daro against Harappa
+0.39 (DC5, under 0.4), both significant; nearest neighbours rarely agree across transcriptions (DC10: 7 of 63).
+Reading: context supports broad classes (fish, numerals, heads, look-alike families) but not sign-level identities.
+Tally, counting parts: 357 held, 430 failed (787 registered).

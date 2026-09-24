@@ -1379,6 +1379,12 @@ cover 46% of name-body tokens, are shared by both cities, reused across name len
 many are number + item or fish + item. The inventory is transcription-sensitive (29% carry over to B). Tally 352 held,
 425 failed.
 
+## Seventy-sixth pass (24 Sept 2026): sign classes from context (loop 3, round 6)
+
+Registered first (sixty-second set, c647a8825), tested (`predict_test62.py`). Context similarity recovers fish,
+numeral, head and look-alike classes as groups; it does not give stable sign-level neighbours across transcriptions
+(0.44) or cities (0.39). Tally 357 held, 430 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
