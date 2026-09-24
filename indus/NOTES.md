@@ -2039,6 +2039,12 @@ names estimated at 3,000-5,500 (585 seen, 92% on one seal), heads at 150-220 (12
 The pattern of personal names composed from a closed stock of elements, not a small set of titles. Estimates are
 upper-side (local fashions reduce overlap). Tally 1099 held, 1038 failed.
 
+## Hundred-and-sixty-second pass (24 Sept 2026): productivity of the endings
+
+Registered first (2ea4fc25d). 520 names use 26 heads in 163 names; at equal size 740 always has more; one-site heads
+take 740 (93% against 84%) and new 740 heads are rare signs. Baayen's P is underpowered (91 hapax heads) and does not
+separate the endings. 740 is the open ending, 520 a small fixed set. Tally 1102 held, 1042 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

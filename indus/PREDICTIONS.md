@@ -6680,3 +6680,16 @@ assumes the two cities sample one population with equal catchability; local name
 preferred in each city) reduce the overlap and inflate the estimate, so the numbers are upper-side estimates. The
 order of magnitude (thousands against hundreds) is the result. Tally, counting parts: 1099 held, 1038 failed (2137
 registered).
+
+## Results of the hundred-and-forty-eighth set (added after the test; `predict_test148.py`, `results/predict_test148.md`)
+
+Three held, four failed. Names: 740 926, 520 163, closer 226; hapax heads (one distinct name in the whole pool; the
+registered wording, not Baayen's per-ending count) 91. **The 520 class is narrow; 740 takes the rare and local
+heads.** At equal size 740 names always show more distinct heads than the 163 520 names, which use only 26 (PV3:
+1,000 of 1,000); heads found at one site only take 740 in 93% against 84% (PV6, p = 0.006); and 77% of hapax heads of
+740 names are rare signs (PV7). Baayen's P does not separate the endings (PV1: 0.066 against 0.043, p = 0.18; PV2: 90%
+against 85%, p = 0.17): hapax heads are too few (91) for the test to have power. Closer 'heads' (the sign before the
+closer) are more varied than 740 heads (PV4 fails the other way, 0.102), a sign that the sign before a closer is not a
+head in the same sense. 740 and 520 bodies are the same length (PV5). Reading, with TM6 (all new late heads take 740):
+740 is the open ending that new, rare and local heads go to; 520 is a small fixed set of widespread heads. The
+productivity measure itself is underpowered here. Tally, counting parts: 1102 held, 1042 failed (2144 registered).
