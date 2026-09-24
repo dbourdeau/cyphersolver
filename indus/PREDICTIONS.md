@@ -2950,3 +2950,16 @@ permutations; p < 0.05.
 - **EH8** Among seal lines, those ending in a candidate are commoner at Mohenjo-daro than at Harappa.
 - **EH9** 70%+ of candidates stand last in 50%+ of their B tokens.
 - **EH10** Five or fewer candidates cover 50%+ of the last signs of uncounted seal formulas.
+
+## Results of the fifty-fifth set (added after the test; `predict_test55.py`, `results/predict_test55.md`)
+
+Six held, four failed. Eight signs close 10+ uncounted seal formulas: 400, 151, 527, 156, 390, 615, 368, 154. Five of
+them are line-final signs (EH1: 400 91%, 151 85%, 527 83%, 156 80%, 154 78% of their tokens are last), and they behave
+like name endings: the sign before them is a head more often than other positions (EH2: 14% against 4%), the rest of
+the line is an attested name body in 22% (EH3), 42 bodies occur both before 740/520 and before a candidate (EH4), and
+the ending depends on the preceding sign (EH5, p = 0.0001). Their lines are short (EH6: 3.2 against 5.2 signs). The
+candidates are not a closed set: 390, 615 and 368 are ordinary body signs that often precede 740/520 (EH7: 18%
+followed by an ending), 154 is never final in B (EH9: 5 of 8), and the five commonest cover only 33% of these lines
+(EH10). Nor are they a Mohenjo-daro habit (EH8). Caveat: 400 and 151 are the known post-name signs, so 'body + 400'
+may be a name with the ending left out rather than a new ending; 527, 156 and 154 are the new candidates. Tally,
+counting parts: 320 held, 397 failed (717 registered).

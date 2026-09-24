@@ -1327,6 +1327,12 @@ Registered first (fifty-fourth set, f23751354), tested (`predict_test54.py`). 17
 close longer, uncounted formulas, more often on seals than tablets, and the class replicates in B. Tally 314 held, 393
 failed.
 
+## Sixty-ninth pass (24 Sept 2026): other endings on seals (loop 2, round 9)
+
+Registered first (fifty-fifth set, 3b5cb5cad), tested (`predict_test55.py`). Some short seal lines are names closed by
+something other than 740/520: the post-name signs 400 and 151 without the ending, and three new candidate closers
+(527, 156, 154) that follow heads and alternate with the regular endings on 42 bodies. Tally 320 held, 397 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
