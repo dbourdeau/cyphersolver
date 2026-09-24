@@ -2560,3 +2560,17 @@ distance, ordered by which comes first; pairs co-occurring in 5+ bodies. 10,000-
   (bodies of 3+; MI of the adjacent sign higher, and significant).
 - **OR10** Pairs occurring in both orders are more common among signs in the first two positions than in the last two
   (distinct pairs, bodies of 4+; Fisher).
+
+## Results of the forty-second set (added after the test; `predict_test42.py`, `results/predict_test42.md`)
+
+Eight held, two failed. Order inside the name is a ranking, not a set of fixed pairs: only 49% of pairs keep one order
+90%+ of the time (OR1 fails), yet the dominant orders are almost perfectly transitive (OR2: 38 cyclic of 749 triples,
+5% against 25%) and each sign keeps a relative place (OR3, p = 0.001). The ranking is the same in both transcriptions
+(OR4: 25 of 26 pairs) and in both cities (OR5: 67 of 75). Names are built right to left from the head: a recurrent
+prefix combines with more heads than chance (OR6, p = 0.039), a 3-sign body sheds its first sign to give an attested
+name far more often than its last (OR7: 76 against 29), and a long body ends in an attested name far more often than it
+begins with one (OR8: 239 against 29). The adjacent sign predicts the head better than the first sign (OR9: 3.69
+against 3.24 bits). Order is not looser at the front (OR10: 11.6% reversible in both places). Caveat: OR7 and OR8
+partly follow from the head-final rule (a prefix lacks a head, so it is rarely a whole name); the new content is OR2,
+OR3 and OR6. Deviations: OR3 used 1,000 shuffles; OR10 counted adjacent pairs; bodies counted as distinct names.
+Tally, counting parts: 244 held, 343 failed (587 registered).

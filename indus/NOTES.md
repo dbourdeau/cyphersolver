@@ -1238,6 +1238,13 @@ non-adjacent repeats inside a name are avoided (DB1, DB6). A doubled sign is not
 alternation, DB4) and doubling is not tied to genre, site or line length; nearly half the doubles are sign 615. Tally
 236 held, 341 failed.
 
+## Fifty-sixth pass (24 Sept 2026): sign order inside the name (round 6 of 10)
+
+Registered first (forty-second set, df6bc48ae), tested (`predict_test42.py`). Sign order in name bodies behaves as a
+single transitive ranking of slots (5% cyclic triples), identical across transcriptions and cities; names extend to the
+left of the head, and the head is best predicted by its neighbour. Individual pairs still vary in order. Tally 244 held,
+343 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
