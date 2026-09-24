@@ -14,13 +14,26 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | Tier | Component | What it measures | Now |
 |---|---|---|---|
 | 1 | V meaning, checked | share of sign tokens read as sense and checked against archaeological evidence: the object's iconography (copper tablets, seal motifs), its function (weights, tags, pottery), its find context, West Asian texts naming Meluhha. Numerals reported beside it (their sense is the count). | 0.008% (4 copper-tablet signs); numerals 16.6% |
-| 2 | C positive-control gate | a method proposing sound values or readings must first recover a known answer (Linear B -> Greek). Methods that passed / were run | 1 passed (set 179); rebus search and published keys not gated |
+| 2 | C positive-control gate | a method proposing sound values or readings must first recover a known answer (Linear B -> Greek). Methods that passed / were run | 1 passed (set 179); key bench failed (Ventris's Linear B key beaten by 11-41 of 100 shuffles, `linb_control.md`); rebus search not run |
 | 3 | U vault | share of tokens in texts never used to fix the values (B's new lines; later, newly excavated finds) read as sense with values fixed beforehand | 0 (no sound value has passed) |
 | 4 | A archaeological consistency | readings or structure hold across sites, periods, duplicates and sealings of the same seal | supporting: fish/520 signal holds at all sites and periods (set 196) |
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 81.3% / 68.3%; no candidate beats the decoys inside the fifth (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.0% (frequency 0% / 1.3%) |
 | 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 36.2% / 58.4% (frequency 9.6% / 22.4%) |
 | - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.685, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
+
+### The target: what a winning entry needs (estimate, 24 September 2026)
+
+The prize text gives no threshold, so this is the bench's own estimate of what archaeological experts would accept,
+built from what made Linear B, Maya and Ugaritic decipherments accepted.
+
+| Tier | Winning level | Now |
+|---|---|---|
+| 1 V | 80-95% of sign tokens read as sense in one named language with a stated phonology, whole inscriptions as grammatical phrases; sense agrees with several independent kinds of outside evidence (iconography on the same object, copper-tablet pairs, object function, site, West Asian Meluhha records) far above chance | 0.008% |
+| 2 C | the same method, with the same freedom, recovers a known script (Linear B -> Greek) and fails on shuffled keys and decoy languages | 1 of 3 methods |
+| 3 U | values frozen and published before being applied to texts never used to set them (B's new lines; new excavations); sense far more often than decoy keys | 0% |
+| P | values for the ~70 common signs that cover ~80% of tokens, few free parameters relative to the evidence (the key compresses the corpus) | 0 |
+| - | reproduced and accepted by specialists who did not build it; method and data published | - |
 
 Tiers 1-3 are what would win the prize and are near zero: the work so far is structural. The loop's progress rule is
 unchanged (any component), but each loop now reports the tiers, and loops that can move tiers 1-3 come first.

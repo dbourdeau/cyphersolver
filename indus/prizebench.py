@@ -20,7 +20,8 @@ from famlm import M3, fit3
 
 GATE = {'substitution-phonetics test (set 179)': 'passed: recovers Linear B syllable pairs as Greek-phonetic, p = 0.001',
         'world rebus search (set 181)': 'no Linear B control run',
-        'published sign-value keys (key bench, sets 115, 135)': 'not gated; none passes its own structural checks'}
+        'published sign-value keys (key bench, sets 115, 135)': "failed: on Linear B, Ventris's values beat their shuffles in "
+                                                                 'only 59-89% (linb_control.md: 11-41 of 100 shuffles as good)'}
 
 
 def meaning(DL, anchors):
