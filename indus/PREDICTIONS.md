@@ -6429,3 +6429,22 @@ marker twice as often as random segments (LK4: 64 against 32 and 52). Lines are 
 10, few cases) and numeral-only lines are 13% (LK7). This is the first check of the segmentation from outside the
 sign statistics: the scribes' own line breaks fall where the units say word boundaries are. Tally, counting parts:
 1080 held, 1019 failed (2099 registered).
+
+# Hundred-and-forty-third set, registered before testing (24 September 2026): numerals used for their sound (six hypotheses)
+
+The West Asian texts use strokes heavily (set 136), the sign after a numeral is usually not the name head (TY9) and
+'2 + fish' dominates beyond what counting explains (PA1). If numerals also served for their sound (Parpola's
+homophone argument), numerals inside names should behave partly like ordinary signs. Distinct lines (A + B) and
+distinct names; numeral runs as predict_test112.runs, values as R.NUMS; lexical = not a numeral and not a marker (740,
+520, closers, 400, 90). A run 'counts' when a lexical sign follows it in the body; it is a 'head' when it ends the
+body. Frames are (previous, next) signs in the line, '#' at the line edges. MI tests as rtools (permutation).
+p < 0.05.
+
+- **NP1** Numeral tokens in names stand in frames that also host a lexical sign more often than numeral tokens in
+  count texts (genre 'count') do (Fisher).
+- **NP2** Of minimal pairs of distinct equal-length name bodies differing at one position that holds a numeral in at
+  least one of them, 30%+ have a lexical sign in the other.
+- **NP3** The value of a numeral run in a name depends on whether it counts or is the head (MI).
+- **NP4** Before a fish, the value depends on which fish follows (lexicalised numeral + fish words; MI).
+- **NP5** Before other lexical signs with 5+ counted occurrences, the value depends on the sign (MI).
+- **NP6** 5%+ of names that contain a numeral have a numeral run as their head.
