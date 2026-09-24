@@ -1755,3 +1755,50 @@ numerals on seals stand in 520 lines more than 520 lines' share (30% against 18%
 counts). E17, E18 fail narrowly (p = 0.10, 0.08). E24, E25 fail (no Harappa / Mohenjo-daro habit in 400 or 90 on seals).
 
 Tally, counting parts: 135 held, 202 failed (337 registered).
+
+# Twenty-ninth set, registered before testing (24 September 2026): receipts, number idioms, titled names
+
+Leads: receipts name seal-holders by the end of the seal name (E3, E4); numeral + sign pairs are idioms (E14-E16); names
+with the stroke pair + fish are titled 520 names (L11, E12). Conventions as the twenty-eighth set ('receipt' = TAB:I
+with 740 / 520 directly followed by 400; F read with lines reversed; A, B; names; head and attribute classes as K;
+Fairservis categories; 'stroke-pair fish name' = a name containing 2 directly before a signs.FISH sign; 10,000-draw
+permutations; p < 0.05; A and B both where named; length strata 2-3, 4-5, 6+).
+
+Receipts (F)
+- **J1** Receipt names equal the end of a Harappa seal name more often than Harappa's share of seal names predicts
+  (binomial, over receipt names matching the end of some seal name).
+- **J2** Single-sign receipt names are head-class signs in 50%+ of cases.
+- **J3** Seal names ending in a receipt name end in 740 more often than other seal names.
+- **J4** The number on a receipt correlates with how many copies of that receipt exist (Spearman > 0, permutation).
+- **J5** Seal lines whose name ends in a receipt-name head carry the heading more often than other seal name lines,
+  length-stratified.
+- **J6** The Fairservis categories of receipt-name heads differ from those of seal-name heads (MI beyond permutation).
+
+Number idioms
+- **J7** A numeral and the sign after it are split by a line break less often than other gaps (M77 multi-line texts,
+  both line orders).
+- **J8** For signs directly after a numeral 10+ times (pooled A + B), the most common value accounts on average for
+  60%+ of that sign's numerals.
+- **J9** For signs after long-stroke numerals 5+ times on both tablets and seals (F), the values are more varied
+  (entropy) on tablets than on seals for the majority (sign test).
+- **J25** Seals carry 'numeral + 700' in under 1% of cases (F).
+
+Titled names
+- **J10** Stroke-pair fish names on seals come from Mohenjo-daro more often than other seal names (F).
+- **J11** Stroke-pair fish names are on unicorn seals more often than other seal names (F).
+- **J12** Stroke-pair fish names are rarer among tablet names than among seal names (F).
+- **J13** The opener of the heading (817 / 820 / 861) differs between stroke-pair fish names and other headed names (MI
+  beyond permutation, pooled).
+
+Where numbers occur (F unless said)
+- **J14** West Asian lines contain a numeral less often than length-matched home lines (10,000 draws).
+- **J15** Cylinder-seal lines contain a numeral less often than square-seal lines, length-stratified.
+- **J16** At Harappa, later count tokens are moulded more often than earlier ones.
+- **J17** Tiered numerals are a larger share of numerals on Mohenjo-daro seals than on Harappa seals.
+- **J18** Long-stroke numerals are a larger share of numerals on Harappa seals than on Mohenjo-daro seals.
+- **J19** Bar-seal lines contain a numeral more often than square-seal lines, length-stratified.
+- **J20** Unicorn-seal lines contain a numeral less often than other-animal seal lines, length-stratified.
+- **J21** In seal lines the heading and a numeral occur together less often than independence predicts (Fisher).
+- **J22** Names with a human-figure head contain a numeral in under 5% of cases (pooled A + B).
+- **J23** Fish-headed names contain a numeral more often than other names, length-stratified (pooled).
+- **J24** Names containing a tiered numeral take 520 more often than names containing a short-stroke numeral (pooled).
