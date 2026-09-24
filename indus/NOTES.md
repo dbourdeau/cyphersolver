@@ -1865,6 +1865,12 @@ Registered first (hundred-and-twenty-sixth set, d314a7a01), tested (`predict_tes
 (last-position entropy 1.4 bits in names) plus the head-ending pair selecting the modifier; no backward generative
 advantage overall. Nothing new beyond the right-branching name structure. Tally 982 held, 953 failed.
 
+## Hundred-and-forty-first pass (24 Sept 2026): the rare signs
+
+Registered first (hundred-and-twenty-seventh set, a9efeb530), tested (`predict_test127.py`). Rare signs fill the frames
+of common signs from their own catalogue block and neighbourhood (weak support for family variants or compounds; not
+in B) and sit in longer lines; otherwise they behave like common signs. Tally 985 held, 960 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

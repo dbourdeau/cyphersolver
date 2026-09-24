@@ -5881,3 +5881,14 @@ where marked); p < 0.05.
   closer).
 - **RA9** B: RA1 holds.
 - **RA10** F': RA4 holds (1,000).
+
+## Results of the hundred-and-twenty-seventh set (added after the test; `predict_test127.py`, `results/predict_test127.md`)
+
+Three held, seven failed. 304 signs have 1-3 tokens. The common signs found in the same frames as a rare sign belong to
+its catalogue block (RA1: p = 0.003) and to its catalogue neighbourhood of +/-10 (RA2: p = 0.0001) more often than
+random common signs do, so rare signs tend to stand where a sign of the same shape family would stand, weak support for
+'rare sign = variant or compound of a family member' (not replicated in B: RA9, p = 0.07, where many rare signs are
+merged). Lines with a rare sign are longer (RA5: 4.9 against 4.3). Otherwise rare signs behave like common ones: not
+more medial (RA3, the other way), not clustered (RA4; RA10 in F'), not more Mohenjo-daran (RA6: 64% both), not usually
+next to a common sign in the numbering (RA7: 16%), and 14% of their tokens stand in the ending slot as heads before an
+ending or closer (RA8). Tally, counting parts: 985 held, 960 failed (1945 registered).
