@@ -2667,3 +2667,20 @@ alone separates the two kinds (EM8, p = 0.0001). What follows an embedded name i
 embed less (EM5), and 400 in non-name lines never follows a name body (EM10: 0 of 170; it follows 156, 158, 892, 137),
 so 400 there is a different use from the post-name 400 of the receipts. Tally, counting parts: 260 held, 357 failed
 (617 registered).
+
+# Forty-sixth set, registered before testing (24 September 2026): replicating rounds 5-9 on held-out data (round 10 of 10)
+
+Each test repeats a finding of the forty-first to forty-fifth sets on data not used to find it: B alone (Mahadevan's
+transcription), or 'other sites' = F objects from sites other than Mohenjo-daro and Harappa. Definitions and tests as
+in the original sets; head class and ranks from A. 10,000-draw permutations (1,000 where the original used 1,000).
+
+- **RP1** (DB1) Doubles exceed within-line shuffles at other sites.
+- **RP2** (DB6) Name bodies avoid non-adjacent repeats at other sites (bodies of 3+).
+- **RP3** (OR2) Dominant orders are transitive in B alone (pairs in 3+ bodies): cyclic triples under 25%.
+- **RP4** (OR7) Names grow at the front in B alone.
+- **RP5** (OR8) Long bodies end in an attested name more than they begin with one, in B alone.
+- **RP6** (SK7) In B, bodies against the A ranking are more often one-off names.
+- **RP7** (NN1) In B, non-name lines end in a head-class sign less often than name bodies.
+- **RP8** (NN4) At other sites, non-name lines carry a numeral more often than name lines.
+- **RP9** (EM7) At other sites, a numeral is first more often in non-name lines than in name lines (lines with one).
+- **RP10** (EM9) In B, 2-sign non-name lines are numeral + sign more often than 2-sign name bodies.
