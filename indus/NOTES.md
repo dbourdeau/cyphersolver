@@ -1623,6 +1623,16 @@ pictures: each picture has a dominant text (anthropomorph 10 of 10, hare 12 of 1
 length and last sign. Copper labels count with long strokes, are never headed and write differently from seals while
 using the same signs. Both fixed labels contain 845 and 407; the hare label contains '705 33'. Tally 640 held, 727 failed.
 
+## Hundred-and-ninth pass (24 Sept 2026): the single stroke '1'
+
+Registered first (ninety-fifth set, 9e534130c), tested (`predict_test95.py`). '1' is an ordinary count except in two
+places: after an ending, where it opens a short line-final tail (21 cases, never '2' or '3'), and after the heading
+820 (the only heading that takes it). The post-ending use is rare in Mahadevan's transcription.
+
+Summary of sets 93-95: counts are real (only 4 frozen number-sign pairs); copper tablets carry fixed labels matched to
+their pictures (anthropomorph and hare labels share 845 and 407); '1' has two special slots. Tally 647 held, 740
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

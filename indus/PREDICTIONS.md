@@ -4585,3 +4585,15 @@ object and site tests. 10,000-draw permutations; p < 0.05.
 - **ON18** B: ON2 holds.
 - **ON19** B: ON3 holds.
 - **ON20** In formulas, 50%+ of '1' tokens directly precede a non-numeral.
+
+## Results of the ninety-fifth set (added after the test; `predict_test95.py`, `results/predict_test95.md`)
+
+Seven held, thirteen failed: '1' is mostly an ordinary count, with two special uses. Special: '1' directly follows an
+ending 21 times against never for '2' or '3' (ON3: 13% against 0%), and there it opens a short tail that ends the line
+within two signs (ON14: 16 of 21); and after a heading only 820 takes '1' (ON4: 14 of 14). Otherwise '1' behaves like
+the other strokes: it counts in formulas (ON20: 65% before a sign), follows a word (ON5: 82%), sits in fixed phrases
+like any sign (ON15), and counts a different set of things from '2' (ON17: 23% shared types). It is not less often
+before a sign (ON1, p = 0.06), not more line-final (ON2, p = 0.07; ON18 in B), not after heads more (ON6, the other
+way), not a 520 head beyond 3 bodies (ON7), not a seal or Mohenjo-daro sign (ON9, ON10), not a name sign (ON11), and
+not rarer next to numerals (ON13). In B '1' is rare (25 tokens) and the post-ending use is barely present (ON19: 1),
+so the post-ending '1' depends on the ICIT transcription. Tally, counting parts: 647 held, 740 failed (1387 registered).
