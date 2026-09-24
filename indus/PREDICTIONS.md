@@ -6146,3 +6146,23 @@ with no dominant sound (RD1: share 0.35 against 0.80 for other final signs), and
 followed only by suffixes), a reading that gives it a variable sound conflicts with the structure. This is a
 consistency check only; it does not test the decipherment's correctness, and its source is not identified here.
 Tally, counting parts: 1045 held, 986 failed (2031 registered).
+
+# Hundred-and-thirty-sixth set, registered before testing (24 September 2026): the West Asian texts against the later grammar (ten hypotheses)
+
+First of the external directions listed after the loop end. The West Asian texts (gulf.py's sample: F objects from the
+Persian Gulf, Mesopotamia, Central Asia, or Susa / Luristan / Tepe Yahya; about 18 intact lines) were earlier found to
+leave out the endings and use unfamiliar sequences (thought to write non-Indus names: Hunter 1932, Parpola 1994,
+Laursen 2010, as summarised in gulf.py). Here they are tested against grammar found since. 'Home' = F without copper,
+Indus-region sites, lines of 2+ signs, length-matched where stated. Small sample; p < 0.05.
+
+- **WA1** West Asian lines end in the ending slot (740, 520 or a closer) less often than home lines of 2-8 signs.
+- **WA2** No West Asian line ends in a closer.
+- **WA3** 30%+ of West Asian first signs are never openers of home names.
+- **WA4** Under 80% of West Asian last signs are home name heads (against 95% for held-out home names).
+- **WA5** West Asian lines of 3+ signs contain a home name unit less often than home lines of 3+.
+- **WA6** Under the benchmark model trained on home lines (hundred-and-twenty-fifth set), West Asian lines score 6.5+
+  bits per sign (home new lines: about 5.4).
+- **WA7** West Asian lines hold a numeral less often than home lines.
+- **WA8** West Asian lines hold a fish sign as often as home lines (two-sided p >= 0.05).
+- **WA9** The West Asian lines that end in 740 have a 740-class home head before it.
+- **WA10** West Asian lines are longer than home lines (rank test).
