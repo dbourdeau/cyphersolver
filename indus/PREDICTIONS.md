@@ -880,3 +880,53 @@ Twelve held, thirteen failed.
   fails (the post-ending sign does not depend on the site).
 
 Tally, counting parts: 43 held, 69 failed (112 registered).
+
+# Eighteenth set, registered before testing (24 September 2026): twenty-five hypotheses on the two genres
+
+Leads: tablets record 'long-stroke N + 700' (U3); 400 after an ending belongs to tablets and sealings (U5); seals carry
+names with heads, endings, the heading and the closing formula 33-520 (U6-U9, U17, U21, U22). Conventions as the
+seventeenth set (F intact objects; A, B; names; head and attribute classes as K; 10,000-draw permutations; p < 0.05).
+'N700' = a text containing a stroke numeral directly followed by 700. 'Count pair' = a numeral followed by a
+non-numeral sign. Length strata: 2-3, 4-5, 6+ signs. Unicorn = motif 'Bull1'. Levels as U13 and U23.
+
+What the tablets count (F tablets)
+- **W1** The signs of N700 tablets other than numerals and 700 come from a smaller inventory than the signs of other
+  tablets (entropy, other minus N700, object-label permutation).
+- **W2** One unit per text: N700 tablets contain another count pair (numeral + a sign other than 700) less often than
+  other tablets with a numeral (Fisher).
+- **W3** N700 is commoner on moulded (TAB:B) than on incised (TAB:I) tablets, length-stratified.
+- **W4** At Harappa the share of N700 among tablets depends on the level (MI(level; N700) beyond permutation).
+- **W5** On tablets, 700 is preceded by a numeral in 80%+ of its tokens (a measure is always counted).
+- **W6** Tablets with 400 carry a numeral more often than tablets without, length-stratified.
+- **W7** N700 tablets carry an ending (740 / 520) less often than other tablets, length-stratified.
+- **W8** N700 is a Harappa genre: Mohenjo-daro tablets are N700 less often than Harappa tablets (Fisher).
+- **W9** N700 tablets carry a head-class sign (the owner or recipient) more often than other tablets,
+  length-stratified.
+- **W10** N700 texts are issued in batches: among distinct tablet texts, those found on 2+ tablets are N700 more often
+  than those found once.
+
+Where sealings and pots belong (F)
+- **W11** Sealing (TAG) texts are closer to seal texts than to tablet texts (JSD of sign distributions, rarefied to equal
+  counts; the difference beyond 1,000 bootstrap draws of the sealing tokens is > 0 in 95%+).
+- **W12** Sealings carry 400 after the ending as tablets do: 400 share among post-ending signs on sealings exceeds that
+  on seals (Fisher).
+- **W13** Pot lines end in 740 (an owner) more often than tablet lines do, among lines with an ending (Fisher).
+
+Numerals by genre (F)
+- **W14** Long-stroke numerals on seals are mostly the 33 of 33-520: over half of seal long-stroke tokens are 33
+  before 520.
+- **W15** Tiered numerals (two rows) are seal numerals: their share among numerals is higher on seals than on tablets.
+
+The closing formula 33-520 (pooled A + B unless said)
+- **W16** The sign before 33-520 comes from a smaller set than the sign before a plain 520 (entropy, label permutation).
+- **W17** The sign before 33-520 is an attribute-class sign more often than the sign before 740.
+- **W18** Seals ending 33-520 are non-unicorn more often than other seals with an ending (F, Fisher).
+- **W19** Lines ending 33-520 lack the heading more often than other lines with an ending, length-stratified.
+
+Persons, titles and animals
+- **W20** Names with a human head carry the heading more often than other names, length-stratified (pooled A + B).
+- **W21** Seals with a human-headed name are unicorn seals more often than other seals with a name (F, Fisher).
+- **W22** The head inventory differs between unicorn and other-animal seals (JSD beyond permutation) (F).
+- **W23** Unicorn seals end in 740 rather than 520 more often than other-animal seals, length-stratified (F).
+- **W24** Names followed by 90 ('man') are on unicorn seals more often than other seal names (F, Fisher).
+- **W25** The heading is commoner in later levels, at both Mohenjo-daro and Harappa (Fisher each) (F).
