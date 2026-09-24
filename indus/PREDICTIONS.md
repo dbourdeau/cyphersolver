@@ -2008,3 +2008,57 @@ heading less than Mohenjo-daro's (-14.7 points, p = 0.012): a regional habit. I1
 (incised count tokens are 4 in 42%, moulded in 22%). I5, I6, I24 fail.
 
 Tally, counting parts: 168 held, 244 failed (412 registered).
+
+# Thirty-second set, registered before testing (24 September 2026): pictures as outside labels for meaning
+
+Lead: copper-tablet texts go with their picture (I3: same text, same picture in 92% of pairs) and are never seal names
+(I1). The picture is an outside label of what a text refers to. Data: A (data/corpus.tsv), field 'motif', first part
+before ':' = the picture (copper TAB:C: Hare, Elep, Anth, Comp, Gaur, Goat, Loop, Rhin, Bull1, Tigr, Buff, Othr;
+moulded TAB:B: Bull1, Mult, Gavi, Phyt, Scene, Bult, Cros, Gaur, Fish, Zebu ...; seals: Bull1, Gaur, Zebu, Elep, Rhin,
+Buff, Tigr, Goat ...). 'Label' = the full text of a copper or moulded tablet with a picture (not 'Othr' or blank);
+'marker' of a picture = a sign in 75%+ of that picture's labels and in 25% or fewer of the other pictures' labels of
+the same object type. Anchors from the sign list: 341 rhinoceros, 749 and 778 goat, 753 hare (copper); 347
+multi-headed animal, 460 tree / plant, 645 cross, 318 gharial (moulded, provisional). 10,000-draw permutations;
+p < 0.05.
+
+Copper labels
+- **CT1** Half or more of the copper pictures with 4+ labelled tablets have a marker.
+- **CT2** Half or more of those pictures have at most two distinct label texts.
+- **CT3** Across distinct copper label texts, the last sign has lower entropy than the first sign, beyond within-text
+  shuffles (a shared final element).
+- **CT4** Copper labels of animal pictures (Hare, Elep, Gaur, Goat, Rhin, Tigr, Buff, Bull1) end in 740 more often than
+  labels of other pictures (Anth, Comp, Loop).
+- **CT5** The anchor signs occur in the labels of their own picture more often than in other copper labels (pooled
+  over 341 / Rhin, 749 and 778 / Goat, 753 / Hare; permutation of pictures among labels).
+- **CT11** Labels of the anthropomorph picture (Anth) contain a human-figure sign (Fairservis A) more often than other
+  copper labels.
+- **CT12** Two labels of the same picture differ by exactly one sign more often than two labels of different pictures.
+- **CT13** Labels of the same picture share their first sign more often than their last sign.
+- **CT21** Labels of composite pictures (Comp) are longer than other copper labels (rank test).
+- **CT22** In copper labels, 740 is preceded by a head-class sign as often as in seal texts or more (Fisher, one-sided
+  for more).
+
+Moulded labels
+- **CT7** Moulded tablets with the same text carry the same picture more often than random pairs.
+- **CT8** Moulded labels of the same picture share a sign more often than labels of different pictures.
+- **CT9** The provisional moulded anchors occur in the labels of their picture more often than in other moulded labels
+  (pooled over 347 / Mult, 460 / Phyt, 645 / Cros, 318 / Gavi).
+- **CT17** Moulded labels of the fish picture contain a fish sign more often than other moulded labels.
+- **CT18** Moulded tablets with a picture carry an ending less often than moulded tablets without one.
+- **CT19** Distinct moulded texts with a picture recur on 2+ tablets more often than distinct moulded texts without one.
+
+Across object types
+- **CT6** The copper anchor signs occur on seals of their own animal more often than on other seals (pooled over 341 /
+  Rhin, 749 and 778 / Goat; permutation of animals among seals).
+- **CT10** Copper labels and moulded labels share more vocabulary with each other than copper labels with seal texts
+  (JSD of sign distributions, rarefied to the copper token count; 1,000 draws, 95%+).
+- **CT14** Seals of an animal that also has copper labels (Elep, Gaur, Goat, Rhin, Tigr, Buff) carry a sign of that
+  animal's copper labels more often than seals of the other such animals carry it (pooled, permutation).
+- **CT15** Seal texts containing a copper anchor sign are on non-unicorn seals more often than other seal texts.
+- **CT16** The hare anchor 753 occurs on fewer than 2 seals.
+- **CT20** Copper labels of non-animal pictures (Anth, Comp, Loop) end in 520 more often than animal labels.
+- **CT23** Copper labels are shorter than moulded labels (rank test).
+- **CT24** Moulded tablets with the unicorn picture carry a unicorn-seal name more often than moulded tablets with other
+  pictures do.
+- **CT25** Where a pictured moulded tablet's text equals a seal name body, the seal shows the same animal more often
+  than random seal pairs would.
