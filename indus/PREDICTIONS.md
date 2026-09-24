@@ -3497,3 +3497,37 @@ rarer on unicorn seals (EF19: 73% against 80%). Failed: nearer fish (EF4), roof 
 30%), more fish (EF7, p = 0.08), fish removal switching to 740 (EF9: 4 against 9), heading unit (EF18) and repeat rate
 (EF20). EF11 held on only two heads (33, 70) and is not evidence. Tally, counting parts: 423 held, 484 failed (907
 registered).
+
+# Seventy-second set, registered before testing (24 September 2026): does the ending agree with the number? (twenty hypotheses)
+
+Lead from the seventy-first set (post-test, unregistered): stroke 2 + fish -> 520, stroke 3 + fish -> 740. Here all
+counts are over DISTINCT names (body, ending) from A + B unless stated; F tests use distinct names per site. 'Counted
+head' = a body whose last sign is not a numeral and is directly preceded by a numeral run; value = the run's sum.
+Fish = signs.FISH. 10,000-draw permutations; p < 0.05.
+
+The fish case
+- **NA1** Counted fish heads with value 2 take 520 more often than those with value 3 or more.
+- **NA2** Counted fish heads with value 2 take 520 more often than those with value 1.
+- **NA3** Counted fish heads with value 2 take 520 more often than uncounted fish heads.
+- **NA4** NA1 holds in B alone.
+- **NA5** NA1 holds at Harappa (F).
+- **NA6** NA1 holds at Mohenjo-daro (F).
+Beyond fish
+- **NA7** Over all counted heads, value 2 takes 520 more often than other values.
+- **NA8** NA7 holds stratified by head (heads counted with 2 and with another value).
+- **NA9** The ending depends on the value before the head (MI over counted heads; values 1, 2, 3, 4+).
+- **NA10** Control: a numeral inside the body but not before the head does not predict the ending (value 2 against
+  other, p >= 0.05).
+- **NA11** For heads seen both counted with 2 and uncounted, the 2 form takes 520 more often (sign test over heads).
+- **NA12** For heads seen both counted with 3 and uncounted, the 3 form takes 740 more often (sign test over heads).
+- **NA13** The numeral kind before the head (short, long, tiered) predicts the ending (MI).
+Other neighbours
+- **NA14** Fish heads after 415 take 520 more often than fish heads after other signs.
+- **NA15** Fish heads after 235 take 740 more often than fish heads after other signs.
+- **NA16** For fish heads, the sign before the head adds information about the ending beyond the head (conditional MI,
+  shuffling the preceding sign within head groups).
+- **NA17** The same for non-fish heads.
+Checks
+- **NA18** 90%+ of numerals directly before a fish head are of the short kind.
+- **NA19** 2 + fish + 520 occurs in 3+ distinct names at each city (F).
+- **NA20** In formulas, fish after stroke 2 are line-final more often than fish after stroke 3 (tokens).
