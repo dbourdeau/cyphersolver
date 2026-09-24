@@ -2170,3 +2170,44 @@ reverse, not a sign inside the text; the withdrawal in CT5 stands as 'not a text
 Parpola's reverse-side substitutions.
 
 Tally, counting parts: 184 held, 278 failed (462 registered).
+
+# Thirty-fourth set, registered before testing (24 September 2026): labels against names, and the labels' dates
+
+Leads: copper and moulded labels name what is pictured, with picture-specific heads (PL1, PL11), and nothing links them
+to the seals of the same animal (PL15-PL20). Conventions as the thirty-third set (A with 'motif'; 'label', 'label head'
+as there; copper = TAB:C, moulded = TAB:B with a picture; F read with lines reversed, its motif field 18 and levels as
+before; names; head class as K; Fairservis categories; 10,000-draw permutations; p < 0.05).
+
+Labels and names (A)
+- **LB1** Copper label heads, where they occur in seal names, stand first more often than last.
+- **LB2** Moulded label heads, where they occur in seal names, stand first more often than last.
+- **LB3** Copper label heads are rarer on seals than the heads of seal names (mean seal token count, permutation).
+- **LB4** Moulded labels are closer to seal texts in vocabulary than copper labels are (JSD, both rarefied to the copper
+  token count; 1,000 draws, 95%+).
+- **LB18** Seal names containing a copper label head end in 520 more often than other seal names.
+- **LB19** Seal names containing a moulded label head end in 520 more often than other seal names.
+- **LB20** Labels contain the stroke pair before a fish less often than seal texts.
+
+Label grammar (A)
+- **LB5** Copper labels end in 740 more often than moulded labels.
+- **LB11** Moulded labels with the unicorn picture end in 520 more often than other moulded labels.
+- **LB12** Moulded unicorn labels contain the stroke pair before a fish more often than other moulded labels.
+- **LB13** Moulded labels of the multi-headed animal (Mult) contain 347 in half or more.
+- **LB14** Moulded labels of the gharial (Gavi) contain 318 in 30% or more.
+- **LB15** Moulded plant labels (Phyt) end in 740 less often than moulded animal labels.
+- **LB16** Moulded scene labels contain a human-figure sign more often than other moulded labels.
+- **LB17** Copper anthropomorph labels (Anth) end in 740 more often than copper animal labels.
+- **LB21** Where a copper label contains a numeral, it is the first sign in half or more.
+- **LB22** Where a moulded label contains a numeral, it is the first sign in half or more.
+- **LB23** The closing formula 705 / 706 + 33 + 520 occurs in at most one label.
+- **LB24** 2% or fewer of labels have 400 after an ending.
+- **LB25** 2% or fewer of labels have 90 after an ending.
+
+Dates and findspots (F)
+- **LB6** At Mohenjo-daro, copper tablets come from later levels more often than seals.
+- **LB7** At Harappa, the picture mix of pictured moulded tablets differs between earlier and later levels (MI beyond
+  permutation).
+- **LB8** Copper tablets with the same picture share a Mohenjo-daro level more often than random pairs.
+- **LB9** Pictured moulded tablets with the same picture share a Harappa level more often than random pairs.
+- **LB10** Pictured moulded tablets with the same text lie closer in depth than random pairs of pictured moulded
+  tablets (median difference).
