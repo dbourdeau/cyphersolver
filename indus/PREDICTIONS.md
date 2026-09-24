@@ -6817,3 +6817,14 @@ elements or titles. Caveats: the Linear B classes come from one lexicon's defini
 palaces differ in date as well as place, and Indus objects are seals, not administrative documents; the comparison is
 of profiles, not a test of identity. With this control, set 147's reading (Indus names behave as personal names) is
 calibrated rather than only suggestive. Tally, counting parts: 1112 held, 1053 failed (2165 registered).
+
+## Results of the hundred-and-fifty-third set (added after the test; `predict_test153.py`, `results/predict_test153.md`)
+
+Five held, none failed. **Set 147's result does not depend on comparing two cities.** Inside Mohenjo-daro, DK against
+HR areas: 351 and 79 names, 8 shared, estimate 3,128 (WC1: 7.4 times observed); early against late: 136 and 115, 11
+shared, estimate 1,323 (WC2: 5.5 times); at Harappa early against late: 37 and 54, 1 shared, estimate 1,044 (WC5; one
+recapture, so the figure itself is unstable, but the overlap is as low as a large population gives). Heads stay closed
+inside the city: 1.15 times observed between areas (WC3: 35 of 44 HR heads also in DK) and 1.13 times between levels
+(WC4). Caveat: the level splits compare generations, so their overlap also measures turnover of names over time; the
+area split (WC1) is the cleaner check and gives the same answer. Tally, counting parts: 1117 held, 1053 failed (2170
+registered).

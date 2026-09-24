@@ -2071,6 +2071,12 @@ observed, 18% shared, 71% on one document; titles 1.6 times, 50% shared, 51%. In
 persons profile on all three; Indus heads match the titles profile. Set 147's personal-name reading is calibrated.
 Tally 1112 held, 1053 failed.
 
+## Hundred-and-sixty-seventh pass (24 Sept 2026): capture-recapture inside one city
+
+Registered first (9f410531e). Inside Mohenjo-daro (DK against HR: estimate 7.4 times observed; early against late:
+5.5 times) and Harappa (early against late), names are a large population and heads a closed one (1.13-1.15 times).
+Set 147 does not depend on regional fashion. Tally 1117 held, 1053 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
