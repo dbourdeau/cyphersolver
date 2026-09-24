@@ -7913,3 +7913,15 @@ line, or followed only by 400 / 90. Fisher tests pool the tokens of all caged si
 - **CG5** CG1 holds on B alone.
 - **CG6** Caged signs are used as closers: 60%+ of their tokens are line-final with no 740 / 520 anywhere after them.
 - **CG7** If CG1, CG2 and CG6 hold, R gains a 'caged marker' role for caged tokens not already counted (adoption rule).
+
+## Results of the hundred-and-eighty-fourth set (added after the test; `predict_test184.py`, `results/predict_test184.md`)
+
+Five held, one failed (CG7 is the adoption rule). **The cage works like a grammatical affix drawn around a sign.**
+Caged signs (a sign inside four small strokes; 92 tokens) end the line in 73% against 20% for their plain bases (CG1,
+p < 0.0001), are never followed by 740 or 520 (CG2: 0 of 92 against 16%), attach to the same stems as their bases
+(CG4: cosine of preceding signs 0.43 against 0.09 for random partners, p = 0.001), and behave as closers (CG6: 73%
+final with no ending after them). It replicates on B (CG5: 82% against 28%). The cage turns a name's head into a
+closing form that stands in place of the ending: morphology written inside the sign. Limit: outside the fish, caged
+signs are too few (17 tokens) to confirm the rule (CG3: 47% against 35%, n.s.), so it is established for the caged fish
+and suggested for the rest. Under CG7 the caged signs not already among the closers get a 'caged marker' role in R.
+Tally, counting parts: 1253 held, 1178 failed (2431 registered).

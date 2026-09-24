@@ -2299,6 +2299,13 @@ Registered first (abab7d302). Depiction groups are real shape families (human fi
 are used alike (and tools weakly); human figures are used as distinct elements, and shape cohesion does not predict use
 cohesion. The picture is a weak guide to reading beyond the fish class. Metric unchanged. Tally 1248 held, 1177 failed.
 
+## Hundred-and-ninety-eighth pass (24 Sept 2026): decipherment loop 9, the cage as a grammatical affix
+
+Registered first (30a66e155). Caged signs (four small strokes around a sign) end lines 73% against 20% for their bases,
+are never followed by 740 / 520 (0 of 92), share their bases' stems (cosine 0.43 against 0.09) and replicate on B:
+the cage turns a head into a closing form replacing the ending, morphology inside the sign. Established for the caged
+fish, suggested for the rest (17 non-fish tokens). R gains a caged-marker role. Tally 1253 held, 1178 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
