@@ -4078,3 +4078,30 @@ unicorns (SF13), not less counted (SF14), are added to names attested bare in on
 and for 151 the suffix is not a seal form (SF16: 38%; SF17: 4 of 8). Suffix lines stand alone on their object (SF18:
 97%) and 90 and 400 serve different heads (SF19: 11 of 65 types shared). Tally, counting parts: 538 held, 609 failed
 (1147 registered).
+
+# Eighty-fourth set, registered before testing (24 September 2026): how the writing changed at Harappa (twenty hypotheses)
+
+Harappa objects with a period (rtools.level: E earlier, L later). Distinct (period, type, line) unless stated; 'name
+line', 'formula', suffixes, heading unit, fish, tiered as before. Two-sided Fisher where marked '(two-sided)', else one-
+sided in the stated direction; ranks as before. 10,000-draw permutations; p < 0.05.
+
+- **PE1** The share of name lines among lines differs between periods (two-sided).
+- **PE2** Formulas open with a numeral in different shares (two-sided).
+- **PE3** Later name bodies are longer (rank test).
+- **PE4** The 520 share of names differs (two-sided).
+- **PE5** The share of names with a fish differs (two-sided).
+- **PE6** The heading-unit share of name lines differs (two-sided).
+- **PE7** 90 follows the ending more often later.
+- **PE8** 400 follows the ending more often earlier.
+- **PE9** The tiered share of numerals differs (two-sided).
+- **PE10** 20%+ of later sign types are not attested earlier.
+- **PE11** 50%+ of head types are found in both periods.
+- **PE12** 90%+ of heads with 3+ names in each period keep their class (majority ending).
+- **PE13** Dominant adjacent-pair orders in names agree across periods for 85%+ of pairs seen in both.
+- **PE14** Count tokens (numerals + 700) are a larger share of lines earlier.
+- **PE15** The share of lines with a double differs (two-sided).
+- **PE16** Later lines are longer (rank test).
+- **PE17** Seals are a larger share of objects later (objects).
+- **PE18** Moulded tablets are a larger share of tablets later (objects).
+- **PE19** Tablets carry a picture more often later (objects).
+- **PE20** Formulas with a numeral have a header more often later.
