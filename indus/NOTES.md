@@ -2024,6 +2024,14 @@ Registered first (hundred-and-forty-fifth set, 5729984d7), claims read in the te
 bearer closer ('255 435 156') rather than qualifying other heads, and the bearer signs he reads as names are closers
 (1 of 196 as heads). Tally 1089 held, 1032 failed.
 
+## Hundred-and-sixtieth pass (24 Sept 2026): scribal workshops
+
+Registered first (hundred-and-forty-sixth set, f2ebc44ca). Graphic variants agree within an object and across copies
+of one text, depend on medium and (weakly) on Mohenjo-daro sub-area; no Harappa, house or time effect. CISI allograph
+features (now stored by cisi.py) agree within an object (12 pairs). Some candidate pairs are distinct fish, so the
+area and medium effects may be lexical. Writing habit shows at object and maker level only. Tally 1094 held, 1036
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

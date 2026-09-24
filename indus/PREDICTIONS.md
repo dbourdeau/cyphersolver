@@ -6569,3 +6569,20 @@ p < 0.05.
 - **WS8** In CISI, the allograph feature vector of a Parpola sign depends on the Mohenjo-daro sub-area.
 - **WS9** In CISI, two tokens of one Parpola sign on one object share the feature vector more often than two tokens on
   different objects.
+
+## Results of the hundred-and-forty-sixth set (added after the test; `predict_test146.py`, `results/predict_test146.md`)
+
+Five held, four failed. 29 candidate variant pairs, 2,768 tokens in F; `cisi.py` now also stores the CISI allograph
+features (column 'features'; set 139 reproduces unchanged). Held: the variant depends on the Mohenjo-daro sub-area
+(WS1: p = 0.008) and on the medium (WS5: seal / tablet / other, p = 0.0005); tokens on one object agree more than
+chance (WS6: 77 pairs, +0.074, p = 0.049), different objects with the same text agree more (WS7: +0.135, p =
+0.0005), and in CISI two tokens of one Parpola sign on one object share their allograph features far more than tokens
+on different objects (WS9: +0.40, p = 0.0005, but only 12 same-object pairs). Failed: no Harappa unit effect (WS2),
+no house effect (WS3), no change over levels (WS4), no CISI allograph effect by sub-area (WS8).
+
+Caveats, noted after the test: (1) several candidate pairs are different fish (220~233, 235~240, 220~231) whose
+choice may be lexical, so WS1 and WS5 can reflect vocabulary by area and by medium rather than hands; (2) many
+same-text objects are moulded or stamped copies, so WS7 is partly mechanical; (3) WS6 is borderline. What survives
+is consistent with writing habit at the level of the object and the maker (one hand, one form; copies keep the form)
+and a weaker area effect at Mohenjo-daro, with no trace of households and no drift in time. Tally, counting parts:
+1094 held, 1036 failed (2130 registered).
