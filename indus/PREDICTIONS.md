@@ -4119,3 +4119,32 @@ order (PE13: 3 of 3), though both of these rest on very few cases. 38% of later 
 (PE10), but with ~250 lines per period that has no null and is expected from sampling. Head types are less than half
 shared between periods (PE11: 42%), 90 does not grow (PE7) and tablet pictures grow only slightly (PE19, p = 0.09).
 Tally, counting parts: 547 held, 620 failed (1167 registered).
+
+# Eighty-fifth set, registered before testing (24 September 2026): one grammar, two cities? (twenty hypotheses)
+
+F distinct (site, line) and distinct (site, name) for Mohenjo-daro (MD) and Harappa (H). Shared-grammar tests are run
+within each city; difference tests are two-sided Fisher unless a rank test is named. Definitions as in the sets cited.
+10,000-draw permutations; p < 0.05.
+
+Shared grammar
+- **CS1** Heads with 3+ names in both cities have the same class in 90%+.
+- **CS2** MD: in 4-sign bodies the last two signs form an attested 2-sign body more often than the first two.
+- **CS3** H: the same.
+- **CS4** MD: numerals of value 5-8 are tiered more often than those of 1-4.
+- **CS5** H: the same.
+- **CS6** MD: the numeral kind depends on the next sign (MI).
+- **CS7** H: the same.
+- **CS8** MD: distinct 520 names hold a fish more often than distinct 740 names.
+- **CS9** H: the same.
+- **CS10** MD: heads of '740 90' and '740 400' lines overlap less than with shuffled suffixes.
+- **CS11** Dominant pair orders in names agree between the cities for 85%+ of pairs seen in 3+ bodies at each.
+Local habits
+- **CS12** The 520 share of names differs.
+- **CS13** Name body length differs (rank test).
+- **CS14** The heading-unit share of name lines differs.
+- **CS15** The share of name lines with a suffix differs.
+- **CS16** The share of formulas among lines differs.
+- **CS17** The tiered share of numerals differs.
+- **CS18** The share of lines with a double differs.
+- **CS19** The counted item in numeral formulas depends on the city (MI).
+- **CS20** The two cities' five commonest heads share at most three.
