@@ -1859,6 +1859,12 @@ end (distance from the end predicts 0.57 bits better than from the start); shape
 5.69 to 5.44 bits). Better smoothing gives a new benchmark of 4.66 bits per sign. Length, first sign and finer positions
 add nothing. Tally 978 held, 948 failed.
 
+## Hundred-and-fortieth pass (24 Sept 2026): is the line composed from the end?
+
+Registered first (hundred-and-twenty-sixth set, d314a7a01), tested (`predict_test126.py`). The end anchoring is the ending
+(last-position entropy 1.4 bits in names) plus the head-ending pair selecting the modifier; no backward generative
+advantage overall. Nothing new beyond the right-branching name structure. Tally 982 held, 953 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

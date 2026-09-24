@@ -5850,3 +5850,15 @@ position and context terms, weights fitted on a training slice). p < 0.05 where 
 - **RL8** Given the last sign, the second-last is predicted (top-1) better than the second sign given the first, by 5+
   points (lines of 3+).
 - **RL9** B: RL8 holds.
+
+## Results of the hundred-and-twenty-sixth set (added after the test; `predict_test126.py`, `results/predict_test126.md`)
+
+Four held, five failed. The end anchoring is the ending itself plus the head: in names the last position has an entropy
+of 1.41 bits against 5.6-6.2 at every position from the start (RL5), and the last two signs (head + ending) predict the
+third-from-last far better than the first two predict the third (RL2: 36% against 23%; RL3 in B: 42% against 16%; RL4
+in F': 31% against 22%), in line with the right-branching names found earlier. But reading end-to-start does not predict
+better overall (RL1: 4.662 against 4.659), entropy does not keep falling toward the end beyond the last sign (RL6: 4.41,
+6.43, 6.34), count lines are not end-fixed (RL7: last 5.56), and the last sign alone predicts its neighbour worse than
+the first predicts the second (RL8: 25% against 33%; RL9 in B), because the last sign is usually 740, which says little
+about what comes before it. Reading: no new mechanism; the line's end is fixed by its ending and the (head, ending)
+pair selects the modifier. Tally, counting parts: 982 held, 953 failed (1935 registered).
