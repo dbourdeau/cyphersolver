@@ -6061,3 +6061,13 @@ p < 0.05.
 - **PH8** Harappa: moulded tablets with a material are mostly faience (50%+).
 - **PH9** Mohenjo-daro: faience objects carry shorter texts than steatite ones (rank test).
 - **PH10** Harappa: the same.
+
+## Results of the hundred-and-thirty-third set (added after the test; `predict_test133.py`, `results/predict_test133.md`)
+
+Nine held, one failed. Inside each city the physical findings stand: bigger seals carry longer texts at Mohenjo-daro
+(PH1: 0.40), Harappa (PH2: 0.49) and the smaller sites (PH3: 0.37); rectangular seals are pictureless at Mohenjo-daro
+(PH4: 98% against 3%) and Harappa (PH5: 88% against 5%); Harappa's moulded tablets are mostly faience (PH8: 75%); faience
+texts are shorter at both cities (PH9, PH10). The 520-steatite link holds at Mohenjo-daro (PH6: 17% against 3%) but not at
+Harappa (PH7: 14% both), and at Mohenjo-daro the non-steatite names are mostly copper-tablet labels, which are almost all
+740; so the hundred-and-thirtieth set's MS8 mainly reflects copper labels, not a steatite preference. Tally, counting
+parts: 1027 held, 984 failed (2011 registered).

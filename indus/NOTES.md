@@ -1902,6 +1902,12 @@ Registered first (hundred-and-thirty-second set, f7f0f4e15), tested (`predict_te
 pictureless steatite seals with fewer names, fewer 520 names and more formula words, but no different in date, region,
 heading or repetition. Tally 1018 held, 983 failed.
 
+## Hundred-and-forty-seventh pass (24 Sept 2026): the physical findings within each city
+
+Registered first (hundred-and-thirty-third set, 6999d0408), tested (`predict_test133.py`). Size-length, pictureless
+rectangular seals, faience moulds and short faience texts hold in each city; the 520-steatite link is a copper-label
+effect (absent at Harappa). Tally 1027 held, 984 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
