@@ -4640,3 +4640,32 @@ one picture (LB7: 12 of 54), one label per picture (LB13: 5 labels under two or 
 and 777/782 being copper-only (LB20: one seal token). Caveat for earlier sets: name counts over F include copper
 labels, which inflate repeat counts for a few names (503 615 752 740, 806 845 61 407 850 900 740). Tally, counting
 parts: 655 held, 752 failed (1407 registered).
+
+# Ninety-seventh set, registered before testing (24 September 2026): the name findings without copper tablets (twenty hypotheses)
+
+The ninety-sixth set found that name counts over F include copper-tablet labels (e.g. '503 615 752 740' x28, all
+copper). Twenty name findings that used F are re-tested with copper tablets (TAB:C) removed. Definitions, tests and
+thresholds as in the sets cited; object counts where the original used them. 10,000-draw permutations (1,000 where
+the original used 1,000); p < 0.05.
+
+- **XC1** (AM1) Fewer bodies occur at both cities than when sites are shuffled among name tokens.
+- **XC2** (AM14) 70%+ of distinct names are on one object only.
+- **XC3** (AM15) Bodies on 3+ objects are shorter than bodies on one.
+- **XC4** (AM5) Harappa name bodies are shorter than Mohenjo-daro ones.
+- **XC5** (AM10) 520 names are a larger share at Harappa than at Mohenjo-daro.
+- **XC6** (AM13) Bodies with a numeral are a larger share at Mohenjo-daro than at Harappa.
+- **XC7** (PN11) 520 names hold a fish more often than 740 names (name tokens).
+- **XC8** (PN13) Distinct seal names are one-off more often than distinct names off seals.
+- **XC9** (PN17) In 70%+ of one-off names of 2+ signs, the head heads 5+ distinct names.
+- **XC10** (PN18) In one-off names of 3+, the first sign is rare (5 or fewer tokens) more often than the head.
+- **XC11** (PN20) A larger share of distinct names repeats at Harappa than at Mohenjo-daro.
+- **XC12** (PN5) One-off names share units with one-offs of their own city more than when city labels are shuffled
+  (1,000).
+- **XC13** (HR1) Head types are seen at both cities more often than opener types.
+- **XC14** (HR6) The same within one-off names.
+- **XC15** (CS13) Mohenjo-daro distinct names are longer than Harappa's (two-sided rank).
+- **XC16** (CS14) Mohenjo-daro name lines carry the heading unit more often than Harappa's (distinct lines).
+- **XC17** (CS15) Harappa name lines carry a suffix more often than Mohenjo-daro's (distinct lines).
+- **XC18** (MM20) Seal names take 520 more often than names on other objects (distinct).
+- **XC19** (CG10) At Mohenjo-daro, 80%+ of heads with 5+ distinct names take one ending in 90%+.
+- **XC20** (CG9) The same at Harappa.
