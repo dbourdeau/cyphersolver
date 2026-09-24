@@ -6044,3 +6044,20 @@ not smaller (RS8: larger, 29.3 against 26.7 mm), and do not carry more closers (
 mix: names 101, counts 65, other 44, closers 25, bare 21 lines. Reading: a pictureless steatite seal type used a little
 more for counts and formula words, not a separate period or region. Tally, counting parts: 1018 held, 983 failed (2001
 registered).
+
+# Hundred-and-thirty-third set, registered before testing (24 September 2026): the physical findings within each city (ten hypotheses)
+
+Findings of the hundred-and-thirtieth to hundred-and-thirty-second sets (all F) re-tested inside Mohenjo-daro and
+Harappa separately, and at the smaller sites where numbers allow. Size (field 31) and material (field 13) as before.
+p < 0.05.
+
+- **PH1** Mohenjo-daro: seal size correlates with text length (Spearman 0.2+, significant).
+- **PH2** Harappa: the same.
+- **PH3** Smaller sites: the same.
+- **PH4** Mohenjo-daro: rectangular seals have no motif more often than square seals.
+- **PH5** Harappa: the same.
+- **PH6** Mohenjo-daro: names on steatite take 520 more often than names on other materials.
+- **PH7** Harappa: the same.
+- **PH8** Harappa: moulded tablets with a material are mostly faience (50%+).
+- **PH9** Mohenjo-daro: faience objects carry shorter texts than steatite ones (rank test).
+- **PH10** Harappa: the same.
