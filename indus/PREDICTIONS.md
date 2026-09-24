@@ -2211,3 +2211,37 @@ Dates and findspots (F)
 - **LB9** Pictured moulded tablets with the same picture share a Harappa level more often than random pairs.
 - **LB10** Pictured moulded tablets with the same text lie closer in depth than random pairs of pictured moulded
   tablets (median difference).
+
+## Results of the thirty-fourth set (added after the test; `predict_test34.py`, `results/predict_test34.md`)
+
+Nine held, sixteen failed. Deviation: LB10 was run with 1,000 random draws, not 10,000.
+
+**Two held results rest on one text each.**
+- **LB11 and LB12 hold** (moulded unicorn labels end in 520 and carry the stroke pair + fish: 31 of 39 each, against 4%
+  and 2% of other moulded labels). Checked after the test: 29 of the 39 are one Harappa moulded text, '501 405 2 240
+  520', in 29 copies. The result is one text, not a pattern across texts: that batch of unicorn tablets carries a
+  titled fish name of the 520 class. It is suggestive (the titled fish name as the name that goes with the unicorn on
+  these tablets) and no more.
+- **LB17 holds** (copper anthropomorph labels end in 740, 10 of 10, against 26% of animal labels), but all 10 carry the
+  same text, '806 845 61 407 850 900 740'. One text of the person class labelling the human-like figure: consistent
+  with 740 as the person class (K1, Z3), from a single text.
+
+**Labels against names.**
+- **LB4 holds**: moulded labels are closer to seal texts in vocabulary than copper labels are (1,000 of 1,000 draws):
+  the Harappa moulded labels use the name vocabulary, the Mohenjo-daro copper labels their own.
+- LB1 and LB2 fail the other way: label heads, where they occur in seal names, stand last far more often than first
+  (copper 121 against 12; moulded 464 against 239): the label heads are name heads, not attributes. LB3, LB18, LB19
+  fail (LB18 the other way: seal names with a copper label head are rarely 520 names, 4.8%). LB20 fails the other way
+  (labels carry the stroke-pair fish more, 12.5% against 7.6%: the unicorn batch).
+- LB5, LB13 (347 in 23% of multi-headed animal labels), LB15, LB16, LB21, LB22 fail; **LB14 holds** (318 in 35% of
+  gharial labels). **LB23 holds** (the seal closing formula is on one label only). LB24 and LB25 fail: 400 (12%) and
+  90 (7%) do follow endings on labels.
+
+**Dates and findspots.**
+- **LB7 holds**: the pictures on Harappa moulded tablets change between earlier and later levels (MI 0.31, p = 0.0001).
+  **LB9 holds** (same-picture moulded tablets share a level, 58%, p = 0.002) and **LB10 holds** (same-text pictured
+  tablets lie closer in depth, median 3.0 ft, p = 0.001). The moulded label tablets were made picture by picture, in
+  batches, at particular times.
+- LB6 fails (copper tablets are not later than seals at Mohenjo-daro), LB8 fails (4 pairs).
+
+Tally, counting parts: 193 held, 294 failed (487 registered).

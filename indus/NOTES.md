@@ -1178,6 +1178,15 @@ carry 923 / 706 (PL17), goat seals never the goat markers (PL18), seal animals h
 equations are reverse-side substitutions: 8 of his 10 linked groups pair an image reverse with a single-sign reverse
 over the same inscription (PL3). Tally 184 held, 278 failed.
 
+## Forty-eighth pass (24 Sept 2026): labels against names, and the labels' dates
+
+Registered first (PREDICTIONS.md, thirty-fourth set, 5d8261ae3), tested (`predict_test34.py`; LB10 1,000 draws). The
+unicorn moulded labels carry a titled 520 fish name (LB11, LB12), but 29 of 39 are one text, '501 405 2 240 520'; the
+anthropomorph copper labels all end in 740 (LB17), one text '806 845 61 407 850 900 740': both single-text results.
+Label heads are name heads in seal names (LB1, LB2 reverse). Moulded labels share the seal vocabulary, copper labels do
+not (LB4). Harappa moulded pictures change over time and were made in batches (LB7, LB9, LB10). Tally 193 held, 294
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
