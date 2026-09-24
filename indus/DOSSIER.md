@@ -98,21 +98,24 @@ signs to test; Mahadevan's reading of the endings as a gender pair is the one cl
 
 ## 7. What is new here, and what was known
 
-A literature check (`results/lit_check.md`; not exhaustive: Wells 2011/2015, Fuls, Mahadevan 1970/1986/2014 and
-Parpola 2008/2015 were not read in full) found:
-- **Known:** jar and arrow mutually exclusive (Parpola 1994: 94; Mahadevan, arrow essay, as gender suffixes); fish
-  names with the arrow (Parpola 1994 fig. 6.6; Mukhopadhyay 2019), without rates; the head-final order 'X-jar man' as
-  an argument against Sumerian, Elamite and others (Parpola 1994: 86-89, 95-97); the opening phrase (Parpola's
-  'position I'; Yadav et al. 2010); short and long strokes used differently (Parpola 1994: 82), the pot as a measure
-  on tablets (Wells 2015), tablets as tokens (Meadow and Kenoyer 2000; Rao 2018); earlier segmentations (Soviet team,
-  Yadav et al. 2008, Fuls 2015); the copper-tablet equations (Parpola 1994: 107-112); that fitted keys and held-out
-  fit do not identify a language (Raghavendra 2026, arXiv 2608.02999, on synthetic data).
-- **Not found before:** the count showing the endings fixed per name (5 of 881 against 46); the 520 class as closed and
-  defined by what the name-final sign depicts; the class-suffix test that, with word order, leaves only Dravidian; the
-  opener variants tested against site and object type; the two stroke systems set against Proto-Elamite counting and
-  capacity and against the weight system; the numeral + fish enrichment test (6 + fish supported, Parpola's 3 + fish
-  not); the key-against-its-own-shuffles bench validated on Linear Elamite; the late bar seals' loss of 520 names;
-  the provisional anchors 347 and 460.
+Two literature checks (`results/lit_check.md`; the second read Mahadevan 1970/1982/1986/1998, Parpola 2015, the Wells
+2006 thesis, Rao et al. 2009, Yadav et al. 2010 in full; still unread: Wells 2015 beyond a sample, Fuls's papers).
+- **Known:** jar and arrow exclusive (Hunter 1934 via Mahadevan 1970; Parpola 1994: 94); the arrow mostly with fish
+  (Mahadevan 1970: 22); gender reading (Mahadevan 1998); head-final order against Sumerian and Elamite (Mahadevan 1982,
+  1986; Parpola 1994, 2015); separate stroke series, the Proto-Elamite multi-system model, pot + number as volume
+  units, tablets as tokens (Wells 2006: 22, 161-196; Parpola 2008; Kenoyer 2020); West Asian seals following other
+  rules, quantified (Rao et al. 2009); statistical restoration of deleted signs (Rao et al. 2009; Yadav et al. 2010,
+  74%); sign-pair frequencies stable over the Mohenjo-daro periods (Rao and Mahadevan 1987); benchmarking decipherment
+  algorithms on known decipherments (Snyder et al. 2010; Luo et al. 2019); fitted keys not identifying the language
+  (Raghavendra 2026).
+- **Contradicted by earlier work:** Wells (2006: 200-208) compared Indus word structure with Proto-Dravidian and
+  Proto-Munda and preferred Munda, against the class-suffix test here; Mahadevan (1970: 46) found the openers in about
+  the same proportions at every site, against the site effect found here.
+- **Not found before:** the per-name fixedness count; the arrow class as closed (non-fish names almost never take it);
+  the class-suffix test and the combined two-test argument; the numeral + fish enrichment test; the count of missing
+  endings on foreign seals; grammar separated from numerals over the periods; restoration scored against real broken
+  texts with intact twins; a key tested against its own shuffles, with Linear Elamite as the known-answer control; the
+  registered predictions.
 
 ## 8. What would complete it
 

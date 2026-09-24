@@ -871,6 +871,13 @@ right mark broken edges; replaces the rough parse of replicate_full.py), `restor
    `_export_profiles.py`; CLAUDE.md updated. `PAPER_DRAFT.md` is a standalone article, not paper data.
 6. **Site**: new section 'Predictions, restorations and foreign names' on docs/indus.html.
 
+7. **Second literature check** (`results/lit_check.md`, 'Second pass (full texts)'). Earlier than thought:
+   restoration of deleted signs (Rao et al. 2009; Yadav et al. 2010, 74%); West Asian seals quantified as foreign to
+   the Indus model (Rao et al. 2009); stroke series, Proto-Elamite parallel, pot + number, tablets as tokens (Wells 2006);
+   sign-pair stability over Mohenjo-daro periods (Rao and Mahadevan 1987); head-final order (Mahadevan 1982, 1986);
+   exclusivity of the endings (Hunter 1934). Contradictions: Wells 2006: 200-208 prefers Munda on word structure;
+   Mahadevan 1970: 46 finds opener proportions the same at every site. Site, dossier and draft corrected.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -117,12 +117,13 @@ data, that any reading has to account for.
 
 ## 7. What is new
 
-A literature check (`results/lit_check.md`) found earlier observations of jar/arrow exclusivity (Parpola 1994: 94;
-Mahadevan), of the fish–arrow affinity (without rates), of the word-order argument (Parpola), of the opening phrase,
-the stroke series, the tablet tokens and the copper-tablet equations. Not found before: the per-name fixedness
-measurement; the closed arrow class by depicted category; the combined two-test language argument; the Gulf-seal
-control; the period analysis; restoration scored against intact twins; the numeral + fish enrichment test; and a
-decipherment bench validated on Linear Elamite.
+See `DOSSIER.md` section 7 and `results/lit_check.md`. In short: much of the structural ground is earlier work
+(Hunter; Mahadevan 1970-1998; Parpola 1994-2015; Wells 2006; Rao et al. 2009; Yadav et al. 2010). New here: the
+per-name fixedness measurement, the closed arrow class, the class-suffix test, the numeral + fish test, the missing
+endings on foreign seals, grammar against numerals over time, restoration scored against intact twins, the shuffle
+bench validated on Linear Elamite, and the registered predictions (two failed, two held). Wells (2006) preferred Munda
+on word structure, against our class test, and Mahadevan (1970) found no site effect on the openers; both
+disagreements need to be argued in the paper.
 
 ## 8. Limitations
 
