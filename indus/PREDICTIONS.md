@@ -8076,3 +8076,18 @@ counts or ends, the stroked container is a name element or the head of the closi
 knowledge any reading must reproduce (a reading of 700 as a measure or container must give 705 / 706 a related word
 that heads the closing formula). Progress (new, replicated on B): streak 0. Tally, counting parts: 1273 held, 1192
 failed (2465 registered).
+
+# Hundred-and-ninetieth set, registered before testing (24 September 2026): decipherment loop 15, the leaf family (six hypotheses)
+
+Metric after loop 14: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 0. Loops 9-14 found marks and inner
+strokes that change a sign's job. The leaf shape in Parpola's list carries several attachments: a small diamond on top
+(817, 824, 856, 861: the heading signs), a tree at the bottom (803, 838), a stroke inside (808, 809, 830, 832), a hatched
+square inside (810, 812, 814), a diagonal stroke inside (831). Positions: initial, medial, final (last sign or before
+400 / 90) and name head (directly before 740 / 520). Distinct lines; A and B separately.
+
+- **LF1** In A, the attachment predicts the position class (initial / medial / head / final) beyond permutation (MI).
+- **LF2** LF1 holds on B.
+- **LF3** Leaf + stroke inside is a name head more often than leaf + tree (A + B; Fisher).
+- **LF4** Leaf + tree stands medially (not initial, not head, not final) more often than leaf + stroke inside (A + B).
+- **LF5** Leaf + diamond (the heading) is line-initial in 60%+ (A + B; a replication check of the known heading).
+- **LF6** Progress rule: LF1 and LF2 both hold, or LF3 holds with the same direction in A and in B separately.
