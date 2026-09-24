@@ -987,6 +987,16 @@ Registered first (PREDICTIONS.md, twelfth set, fbb83702b), tested (`predict_test
 fails** (object type 61% against 57%, p = 0.18). The shortlist is not supported; its commonest swaps are fish-series
 heads. Freedom itself stands (RF1, RC, Y2, RF2). Tally 11 held, 16 failed.
 
+## Twenty-seventh pass (24 Sept 2026): ten hypotheses at once
+
+Registered first (PREDICTIONS.md, thirteenth set, d28f127a1), tested (`predict_test13.py`), then checked
+(`robust13.py`). Held: H3 (graphic families share contexts; mostly fish), H5 (frequent signs simpler, both samples),
+H7 (names grow at the front from attested names; partly numerals), H8 (first sign more site-informative; not robust:
+tablet batches), H10 (heads from a smaller inventory; robust). Failed: H1 (doubling ~ numerals; p 0.086 / 0.059), H2
+(bound pairs not specially fixed; order is fixed generally), H4 (names do not diverge with distance; grammar signs do,
+rho 0.45, p 0.037, reverse of prediction), H6 (two-ending texts not on tablets), H9 (variants not regional). Tally 16
+held, 21 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

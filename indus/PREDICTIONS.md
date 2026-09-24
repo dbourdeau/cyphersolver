@@ -469,3 +469,37 @@ is written is higher than for random sign pairs matched on token counts (mean ov
 **H10 Heads come from a smaller inventory than attributes.** Among names of 2+ signs before the ending, the entropy
 of the last sign is lower than the entropy of the first sign, by more than in within-name shuffles of sign order
 (p < 0.05). A and B.
+
+## Results of the thirteenth set (added after the test; `predict_test13.py`, `results/predict_test13.md`; robustness checks after the test in `robust13.py`, `results/robust13.md`)
+
+Five held, five failed.
+
+- **H1 fails, narrowly, twice.** Doubled signs are preceded by a numeral more often (A 23.4% against 17.5%, p = 0.086;
+  B 25.7% against 12.9%, p = 0.059). Right direction in both samples, short of the bar in both.
+- **H2 fails.** Bound pairs are reversed rarely (mean ratio 0.027 A, 0.016 B), but so are most frequent pairs once
+  ranked (p = 0.22, 0.41): Indus sign order is fixed generally, not specially inside bound pairs.
+- **H3 holds** (context cosine within graphic families 0.117 A, 0.208 B; p = 0.0001 both). Check: without the fish
+  family, A 0.056 (p = 0.12), B 0.112 (p = 0.04, 3 pairs). The result is mostly the fish series, already known to act
+  as one class (Q2); for jar, fig, crab and eye it is not shown.
+- **H4 fails.** Name-sign divergence vs distance: rho 0.31, p = 0.12 (6 sites, 15 pairs). Grammar signs: rho 0.45,
+  p = 0.037, the reverse of the prediction: endings and numerals vary more with distance than name signs do. Six sites
+  give little power; the grammar result is a lead (regional numeral or ending habits), not a finding.
+- **H5 holds.** Frequent signs are graphically simpler: Spearman -0.13 (A, 221 signs, p = 0.025), -0.21 (B, 128
+  signs, p = 0.010). The Indus script follows the law found in other writing systems (frequency favours simpler forms).
+- **H6 fails.** Texts with two endings are not more common on tablets and sealings (4 of 948) than on seals (23 of
+  1,316); tablets rarely carry endings at all.
+- **H7 holds.** A long name minus its first sign is an attested name more often than minus its last (A 60 against 27,
+  p = 0.0003; B 18 against 8, p = 0.038): names grow at the front from existing names, head-final. Check: without
+  numeral-initial names, A 40 against 19 (p = 0.004), B 14 against 8 (p = 0.14): numerals as attributes carry part of
+  it.
+- **H8 holds as registered but is not robust.** First sign tells more about the site than the last (0.564 against
+  0.384 bits, p = 0.0001). Checks: seals only p = 0.14; one name per site p = 0.12; both p = 0.19. The registered
+  result rests on repeated texts (Harappa tablet batches); not claimed.
+- **H9 fails.** Candidate graphic variants are not more site-dependent than random pairs (V 0.212, p = 0.75): the
+  look-alike pairs are not regional writing habits; either distinct signs or variants used everywhere.
+- **H10 holds, robustly.** The last sign of a name comes from a smaller inventory than the first (A 5.86 against 6.44
+  bits, B 5.24 against 5.72; shuffle p = 0.0001 both; without numeral-initial names p = 0.0005, 0.0035). Heads are a
+  more restricted class than attributes, as nouns of office or kind would be against a freer set of modifiers.
+
+Tally, counting parts: 16 held, 21 failed (37 registered). Of the five that held, H5 and H10 are robust, H7 partly,
+H3 reduces to the fish series, H8 does not survive the checks.
