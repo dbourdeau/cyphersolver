@@ -4772,3 +4772,36 @@ several of which the ninety-first set found in the tails after a mid-line name. 
 Not supported: openers or closers combining more freely (PZ3, PZ4), closers after numbers (PZ8, the other way),
 frequency differences (PZ13, PZ14), shorter closed lines (PZ16), and closers being more final in formulas (PZ17).
 Tally, counting parts: 692 held, 775 failed (1467 registered).
+
+# Hundredth set, registered before testing (24 September 2026): variant forms of one sign (twenty hypotheses)
+
+Candidate variant pairs are looked for three ways: by context (cosine of neighbour PMI vectors, sixty-second set,
+signs with 10+ tokens in A + B), by catalogue number (signs whose numbers differ by 1, a proxy for shape families in
+the ICIT numbering), and known cases (705/706, fish 220/240/233, headings 817/820/861). Site and period from F without
+copper. Random baselines draw frequency-matched pairs (10,000, or 1,000 where marked); p < 0.05.
+
+Context twins
+- **AL1** The 30 most context-similar pairs differ more in Mohenjo-daro share than random matched pairs.
+- **AL2** They co-occur in one line less often than random matched pairs.
+- **AL3** They share a Fairservis category more often than random pairs.
+- **AL4** They differ more in Harappa period share than random matched pairs.
+- **AL5** 5+ of them have one member 80%+ at one city and the other 80%+ at the other.
+Known variants
+- **AL6** 705 and 706 differ in Mohenjo-daro share (two-sided).
+- **AL7** 705 and 706 differ in Harappa period share (two-sided).
+- **AL8** 220 and 240 differ in Mohenjo-daro share (two-sided).
+- **AL9** 220 and 233 differ in Mohenjo-daro share (two-sided).
+- **AL10** 817, 820 and 861 differ by Harappa period (MI).
+City-only signs
+- **AL11** 10+ signs have 5+ tokens at Mohenjo-daro and none at Harappa.
+- **AL12** For such Mohenjo-daro-only signs, the nearest context neighbour is mostly a Harappa sign (50%+ of its F tokens
+  at Harappa) in 30%+.
+- **AL13** 5+ signs have 5+ tokens in A and none in B.
+Neighbouring catalogue numbers
+- **AL14** The 30 most context-similar pairs have catalogue numbers within 5 more often than random pairs.
+- **AL15** Pairs with numbers differing by 1 are more context-similar than random pairs (rank test).
+- **AL16** Pairs with numbers differing by 1 share a line less often than random pairs (1,000).
+- **AL17** Pairs with numbers differing by 1 differ more in Mohenjo-daro share than random pairs (1,000).
+- **AL18** 10+ number-adjacent pairs have context cosine 0.3+.
+- **AL19** B: AL15 holds (contexts from B, signs with 5+ tokens).
+- **AL20** F without copper: AL15 holds.
