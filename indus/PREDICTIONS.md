@@ -2445,3 +2445,21 @@ splits into two lines attested elsewhere (LT6), and after a first ending the res
 as middle lines (LT8), use rare signs no more (LT9) and are not a Mohenjo-daro trait (LT10). Long lines are single,
 longer, more often numbered compositions, a few of them with a second name. Tally, counting parts: 217 held, 330 failed
 (547 registered).
+
+# Thirty-ninth set, registered before testing (24 September 2026): Harappa over time (round 3 of 10)
+
+Harappa objects of F (intact, lines reversed) with a level: earlier = HARP 3B and Vats Strata IV-VII, later = HARP 3C
+and Vats Strata I-III (as before). 'Both periods' = the test holds in the earlier and in the later objects separately;
+under 20 cases in either makes it fail as untestable. 10,000-draw permutations; p < 0.05.
+
+- **HT1** (as SR1, both periods) the last sign carries more information about the ending than the first.
+- **HT2** (as SR11, both periods) long-stroke numerals stand before container and device signs more than short ones.
+- **HT3** (as SR12, both periods) the number depends on the following sign.
+- **HT4** (as SR10, both periods) the tiered form is for 5-8.
+- **HT5** Receipts are a larger share of tablets in the earlier levels than in the later.
+- **HT6** Count-token values (long 2 / 3 / 4 before 700) are larger in the earlier levels (mean, label permutation).
+- **HT7** The share of 520 among names differs between the periods (Fisher, two-sided).
+- **HT8** (as SR9, both periods) the stroke pair is followed by a fish more often than the short three.
+- **HT9** The left-to-right share differs between the periods (A is undated; F lines reversed carry no direction, so
+  direction is taken from A objects matched to F by CISI number; Fisher, two-sided).
+- **HT10** The head of names depends on the period (MI beyond permutation).
