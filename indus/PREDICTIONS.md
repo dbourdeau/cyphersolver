@@ -7504,3 +7504,27 @@ R, JSD and rarefaction (to the smaller list) as sets 171-172; Old Tamil = the ho
   shuffles), as Indus names do (LM5).
 - **PK10** The final two-akshara endings (compound heads) have the title-like profile between Sanchi and Bharhut, as
   Indus heads do.
+
+## Results of the hundred-and-seventy-third set (added after the test; `predict_test173.py`, `results/predict_test173.md`)
+
+Seven held, three failed. 374 Prakrit donor names from Lüders 1912 (Sanchi 260, Bharhut 39 distinct). **Indus names
+are built like early Prakrit donor names.** The Prakrit names are person-like between Sanchi and Bharhut (PK1: 5.91,
+0.13, 0.85) and as open as the Indus names (PK2: 5.07 against 5.91; the per-length check was not possible, Bharhut
+being too small), and they recur between the sites beyond combinatorics (PK9: 5 against 0.2). The Indus closure R and
+length distribution are nearer the Prakrit names than the Old Tamil cores (PK4: log distance 0.39 against 0.89; PK5:
+JSD 0.055 against 0.110). Prakrit names end in a stock of compound heads, -rakhita, -guta, -data, -dina, -mita, -deva,
+-giri, -pālita (PK6: the top ten cover 41%), and the ten commonest Indus heads cover almost exactly the same share of
+Indus names (PK7: 43%): the 'modifier + stock head' build of names like Dhama-rakhita or Naga-dina matches the Indus
+'opener + head' build. Failed: Prakrit names do not close the last akshara (PK3: R 1.05; the heads are two aksharas
+long, so the last akshara alone is not a closed set), shared names are not shorter (PK8: 5 names only) and the
+two-akshara heads are not title-like between the sites (PK10: 2.54, 0.32, 0.69; with 39 Bharhut names the catches are
+small).
+
+**What this does and does not show.** Together with set 172 it turns the dominant-ending argument around: Prakrit donor
+names also carry one near-universal ending (the genitive -sa of the donation formula), so an Indus ending on 82% of
+names fits an Indo-Aryan donor-style formula as well as the Tamil masculine -aṉ. On name structure the Indus names
+resemble early Indo-Aryan donor names more than the literary Old Tamil names available here. It does not decide the
+language: the Tamil list is literary and of another genre, no Tamil-Brahmi donor-name list could be built (the only
+digital copy of Mahadevan 2003 is unusable OCR), aksharas are not Indus signs, and a Dravidian naming system of the
+same 'modifier + stock head' kind would give the same statistics. Tally, counting parts: 1210 held, 1134 failed (2344
+registered).

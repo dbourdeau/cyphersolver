@@ -2219,6 +2219,15 @@ ending is Tamil-like: 740 ends 82% of Indus names, -ṉ (masculine -aṉ) 67% of
 and 13% (Linear B); not decisive, since an inflected Indo-Aryan list (Prakrit genitive -sa) was not obtainable. Dravidian
 against Indo-Aryan stays open. Tally 1203 held, 1131 failed.
 
+## Hundred-and-eighty-seventh pass (24 Sept 2026): early Prakrit donor names as an Indo-Aryan comparator
+
+Registered first (b654be58e). Lüders 1912 (Internet Archive OCR) gives 374 Prakrit donor names (Sanchi, Bharhut).
+They are as open as Indus names, nearer in closure and length than the Old Tamil cores, and end in a stock of compound
+heads (-rakhita, -guta, -dina, -mita ...) whose top ten cover 41% of names, against 43% for the top ten Indus heads.
+The dominant-ending argument cuts both ways (Prakrit genitive -sa). Name structure resembles early Indo-Aryan donor
+names more than the literary Tamil list; the language stays undecided (no comparable Tamil-Brahmi list). Tally 1210
+held, 1134 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
