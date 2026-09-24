@@ -1207,6 +1207,12 @@ everywhere, but which ending a head takes is local. Unicorn seals carry longer t
 Mohenjo-daro exception, not a Harappa habit. Over time at Mohenjo-daro only the number-sign dependence holds in both
 periods (OT12); the others lack power in one. Tally 212 held, 315 failed.
 
+## Fifty-first pass (24 Sept 2026): regional name habits (round 1 of 10)
+
+Registered first (PREDICTIONS.md, thirty-seventh set, f8c01f9fa), tested (`predict_test37.py`, helpers `rtools.py`).
+Names look alike across regions (RG1-RG5, RG8-RG10 fail); four Sindh-only heads (RG6) and regional numeral notation
+(RG7) hold. Tally 214 held, 323 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

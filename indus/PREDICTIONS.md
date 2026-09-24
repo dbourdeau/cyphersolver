@@ -2405,3 +2405,13 @@ Helpers in rtools.py.
 - **RG9** Dholavira texts are longer than the texts of the other Gujarat sites (rank test).
 - **RG10** Chanhu-daro seal names share their head with Mohenjo-daro seal names (head seen at Mohenjo-daro) more often
   than Lothal seal names do (Sindh neighbours against a distant site).
+
+## Results of the thirty-seventh set (added after the test; `predict_test37.py`, `results/predict_test37.md`)
+
+Two held, eight failed. Names look alike across regions: the head (RG1, p = 0.12) and the first sign (RG2, p = 0.34) do
+not depend on the region, Gujarat names are not shorter (RG3), not less headed (RG4), and only 15% have a head unseen in
+the two cities (RG5). Kalibangan is not a 520 site (RG8), Dholavira texts are not longer (RG9), Chanhu-daro does not share
+Mohenjo-daro's heads more than Lothal does (RG10). **RG6 holds**: four heads with 5+ names occur only in Sindh (222, 455,
+927, 255). **RG7 holds**: the numeral notation depends on the region (p = 0.0001), the one regional difference that is
+general. So the OS4 failure is not a different stock of names in the smaller sites; it is the head-ending pairings that
+vary. Tally, counting parts: 214 held, 323 failed (537 registered).
