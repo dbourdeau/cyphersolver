@@ -956,6 +956,14 @@ West Asian seals are spelled with sound signs. **Y1 fails narrowly** (bound pair
 **Y2 holds** (West Asian tokens use freer signs, +0.184 against +0.084, p = 0.03). Y fails as registered. Tally 4
 held, 12 failed. Freedom scores (residual neighbour diversity) are a candidate way to pick out phonetic signs.
 
+## Twenty-third pass (24 Sept 2026): same-text tablets and levels (power check for V)
+
+Registered first (PREDICTIONS.md, ninth set, 3b09eeb34), tested (`predict_test9.py`). Hypothesis Z: identical
+Harappa tablets lie in the same level. **Holds**: same level 25% against 21% (3,470 pairs, p = 0.0003); depth 4.2
+against 5.2 (4,600 pairs, p = 0.0001). The effect is small; the fifth-set seal test (36 / 71 pairs) could not have
+seen it, so V's failure is uninformative and 'names handed on' is withdrawn. Harappa seals: 3 of 4 same-name pairs
+share a level (unregistered, tiny). Tally 5 held, 12 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

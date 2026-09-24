@@ -291,3 +291,18 @@ shuffled (10,000 times), p < 0.05.
 
 Hypothesis Z holds if both hold. For comparison, the same two statistics are reported for Harappa seals with the same
 name (fifth-set unit), without a registered threshold.
+
+## Results of the ninth set (added after the test; `predict_test9.py`, `results/predict_test9.md`)
+
+- **Z1 holds.** 592 Harappa tablets with a level; 3,470 same-text pairs from 67 texts share a level 25% of the time,
+  against 21% with levels shuffled; p = 0.0003.
+- **Z2 holds.** 518 tablets with a depth; 4,600 same-text pairs from 52 texts lie a median 4.2 apart, against 5.2
+  shuffled; p = 0.0001.
+- **Hypothesis Z holds**: identical tablets were made together, or at least deposited together, more than chance.
+  Tally: **5 held** (Q1, Q2, X2, Y2, Z), 12 failed (counting Z as one hypothesis with both parts).
+- **What it does to the fifth set:** the effect is small (4 points in level, 1 unit in depth) and needs thousands of
+  pairs to show. The seal-name test (V) had 36 and 71 pairs and a null band of 33-61%; it could not have seen an
+  effect this size. V's failure is therefore no evidence that names were handed on; the earlier reading ('the names
+  look handed on') is withdrawn to 'not tested with enough power'.
+- Unregistered comparison: at Harappa the few same-name seal pairs do share a level (3 of 4, against 18% shuffled; depth
+  1.5 against 4.3 on 5 pairs). Far too few to claim, but the opposite of the Mohenjo-daro picture.
