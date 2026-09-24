@@ -2438,6 +2438,12 @@ Registered first (4bad1d0c6). Character-LM scorer (lmkey.py): Ventris's key beat
 Linear B lines with a Greek model; with a Sanskrit model 9 of 100 (language-specific). Tier 2: 2 of 4 methods pass.
 Two-direction WORD does not replicate. Progress: streak 0. Tally 1332 held, 1231 failed.
 
+## Two-hundred-and-twentieth pass (24 Sept 2026): decipherment loop 31, published keys through the validated scorer
+
+Registered first (f1d05e3e4). No substantial published key beats its shuffles in its claimed language (Fairservis
+12/100, Yajnadevam 7/100, Parpola and Mahadevan worse than shuffles). Kak 1988's 7-sign key passes only through 740 =
+sa at line ends (without it 254/1000). Counted no progress: streak 1. Tally 1336 held, 1232 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

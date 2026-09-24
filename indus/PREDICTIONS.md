@@ -8604,3 +8604,17 @@ frequency, bench.shuffles, band 10).
   on the same reduced forms, still beats 95 of 100 shuffles on the even lines.
 - **KY5** Progress rule: KY1 and KY2 hold (a published key reads its language as specifically as Ventris's reads
   Greek). If KY1 fails, the folder records that no published key passes a gate-validated test.
+
+## Results of the two-hundred-and-sixth set (added after the test; `predict_test206.py`, `results/predict_test206.md`)
+
+Four held, one failed. Through the gate-validated character-LM scorer (the reduction to plain a-z keeps the Linear B
+gate: Ventris's key 0 of 100 shuffles as good; KY4), the substantial published keys do not read their claimed
+language better than their own shuffles: Fairservis 1992 (97 signs, Dravidian) 12 of 100 shuffles as good;
+Yajnadevam 2024 (681 signs, Sanskrit) 7 of 100; Parpola 1994 (30 signs, Dravidian) and Mahadevan 2014 (5 signs,
+Dravidian) score worse than most of their shuffles (99 of 100). Only Kak 1988 (7 signs, Sanskrit) beats 100 of 100
+(KY1) and not in Dravidian or Sumerian (KY2); the claimed language gives the largest margin for 2 of 5 keys (KY3
+fails). **Check after the test**: with 1,000 shuffles Kak's key gives p = 0.03 in Sanskrit and 0.13 in Sumerian, and
+with its one value 740 = sa removed it gives nothing (254 of 1,000 shuffles as good): the pass rests entirely on
+putting 'sa' on the line-final ending sign, which any suffixing language with a common -sa ending rewards. Counted
+conservatively as no progress: streak 1. For the prize tiers: no published key passes a gate-validated test on the
+strength of its readings. Tally, counting parts: 1336 held, 1232 failed (2568 registered).
