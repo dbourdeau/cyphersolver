@@ -4161,3 +4161,33 @@ formulas (CS16: 47% against 40%); the cities count different items (CS19, p = 0.
 commonest heads (CS20: 100, 220, 760; MD adds 33, 923, H adds 176, 32). Not different: the 520 share (CS12), tiered share
 (CS17) and doubling (CS18). At Mohenjo-daro alone the 90/400 head split is not significant (CS10: 54 lines, p = 0.49).
 Tally, counting parts: 563 held, 624 failed (1187 registered).
+
+# Eighty-sixth set, registered before testing (24 September 2026): recent findings on held-out data (twenty hypotheses)
+
+Findings of the seventy-fourth to eighty-fifth sets re-tested on data they were not found on: the smaller sites (F
+outside Mohenjo-daro and Harappa, 'OS'), Mahadevan's transcription alone (B), or the fuller corpus F as a whole.
+Distinct lines and names throughout; definitions as in the original sets. 10,000-draw permutations; p < 0.05.
+
+Smaller sites
+- **HO1** (QS2) In 3-sign bodies, (middle, head) is an attested A + B body more often than (opener, middle).
+- **HO2** (EF, distinct) 520 names hold a fish more often than 740 names.
+- **HO3** (CG7) 80%+ of heads with 3+ names take one ending in 90%+.
+- **HO4** (KC10) For heads with 2+ OS names and an A + B class, the OS majority ending equals that class in 90%+.
+- **HO5** (core) Numerals of value 5-8 are tiered more often than those of 1-4.
+- **HO6** (core) The numeral kind depends on the next sign (MI).
+- **HO7** (FG3) In numeral formulas with a header, the item depends on the header's last sign (MI).
+- **HO8** (HR20) 50%+ of OS names end in one of the ten commonest A + B heads.
+Mahadevan's transcription
+- **HO9** (NP1) The modifier before the head depends on the head's category (MI).
+- **HO10** (CG11) Under 2% of bodies are attested with both endings.
+- **HO11** (PS9) Among heads with a suffix line, 80%+ take only one of 90 and 400.
+- **HO12** (FG8) In formulas, the value depends on the item (MI).
+- **HO13** (LX11) Names and formulas share fewer (numeral, sign) types than label-shuffled lines (1,000).
+- **HO14** (DN14) Name lines repeat adjacent pairs more than formulas (1,000).
+The fuller corpus
+- **HO15** (NP20, observed direction) 'N mod head' is commoner than 'mod N head'.
+- **HO16** (FG3) The item depends on the header's last sign (MI).
+- **HO17** (KC15) '740 90' heads and '740 400' heads overlap less than with shuffled suffixes.
+- **HO18** (QS1) The middle sign of 3-sign bodies tells more about the head than about the opener.
+- **HO19** (PS2) 80%+ of distinct 'N 520' lines are '705/706 33 520'.
+- **HO20** (CG7) 80%+ of heads with 5+ names take one ending in 90%+.
