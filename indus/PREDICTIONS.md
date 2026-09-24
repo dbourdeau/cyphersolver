@@ -6732,3 +6732,71 @@ not cluster by area (CU4: shared signs -0.04) and the tablets of one area are no
 city (text-only ones in DK-G South, the animal series in VS-A and on the citadel), across levels; their texts vary
 within each set. This adds a place to the copper tablets' picture-set organisation (LB, CT sets) but says nothing new
 about the texts. Tally, counting parts: 1107 held, 1052 failed (2159 registered).
+
+# Hundred-and-fifty-second to hundred-and-fifty-sixth sets, registered together before testing any of them (24 September 2026)
+
+Five sets that check and build on the hundred-and-forty-seventh set (names: a large open population over a closed
+stock of heads). Conventions as sets 147-151. p < 0.05.
+
+## Hundred-and-fifty-second set: the capture-recapture method on Linear B (six hypotheses)
+
+Control on a read script. Data: DAMOS (CC BY-NC-SA; `scratchpad/linb`, collected 23 Sept), Knossos and Pylos
+documents, clean complete word tokens. Word classes from the Tiripode lexicon definitions (exact word forms):
+persons = definition names 'anthroponym' and not 'occupation', 'title', 'anthroponym or', 'or anthroponym',
+'anthroponym?'; titles = definition names 'occupation' or 'title' and not 'anthroponym'. Catches: the distinct words
+of each class at Knossos and at Pylos. Chapman's Lincoln-Petersen as set 147; 'on one document' over both sites.
+
+- **LC1** Persons: the Lincoln-Petersen estimate is at least 3 times the observed number of distinct persons.
+- **LC2** Titles: the estimate is at most 1.5 times the observed number.
+- **LC3** Persons are shared between the sites less than titles are (share of the smaller site's words also at the
+  other site; Fisher).
+- **LC4** 60%+ of persons are on exactly one document.
+- **LC5** Titles are on exactly one document less often than persons are (Fisher).
+- **LC6** On the three measures (estimate / observed, shared share, one-document share) the Indus names of set 147
+  (5.1, 20 of 130 = 15%, 92%) are each closer to Linear B persons than to Linear B titles.
+
+## Hundred-and-fifty-third set: capture-recapture inside one city (five hypotheses)
+
+Set 147's estimate could be inflated by local fashion between cities. Catches inside one city, seals only (F):
+Mohenjo-daro DK against HR areas (major area as set 140), Mohenjo-daro early against late (predict_test18.level),
+Harappa early against late.
+
+- **WC1** Whole names, Mohenjo-daro DK against HR: estimate at least 3 times observed.
+- **WC2** Whole names, Mohenjo-daro early against late: estimate at least 3 times observed.
+- **WC3** Heads, Mohenjo-daro DK against HR: estimate at most 1.5 times observed.
+- **WC4** Heads, Mohenjo-daro early against late: estimate at most 1.5 times observed.
+- **WC5** Whole names, Harappa early against late: estimate at least 3 times observed.
+
+## Hundred-and-fifty-fourth set: same name, same person? (six hypotheses)
+
+Whole names on two or more seals in F (all sites). Long = body of 3+ signs (a name of four or more signs with its
+ending); short = body of one sign. Pairs of seals carrying the same name.
+
+- **SP1** Long-name pairs are from the same site more often than short-name pairs (Fisher).
+- **SP2** Among same-site Mohenjo-daro pairs with sub-areas, long-name pairs share the sub-area more often than
+  short-name pairs (Fisher).
+- **SP3** Long-name pairs share the level (early / late) more often than short-name pairs (Fisher).
+- **SP4** Long-name pairs at Mohenjo-daro share a sub-area more often than chance (pair permutation as set 140).
+- **SP5** Short-name pairs at Mohenjo-daro do not (p >= 0.05 holds).
+- **SP6** Long-name pairs carry the same motif (field 18) more often than short-name pairs (Fisher).
+
+## Hundred-and-fifty-fifth set: names from two interchangeable elements? (four hypotheses)
+
+Dithematic personal-name systems (Greek, Germanic, Sanskrit) compose names from one pool of elements in either order.
+Two-sign name bodies (opener + head), distinct names (A + B).
+
+- **DT1** Of heads with 3+ two-sign names, 50%+ also occur as the opener of a two-sign name.
+- **DT2** Reversed pairs (a b and b a both attested as two-sign bodies) are at least as many as when heads are shuffled
+  among the bodies (1,000 draws; holds if the observed count is at or above the median).
+- **DT3** Opener and head combine freely: their MI is not above shuffles (p >= 0.05 holds).
+- **DT4** 70%+ of middle-sign types of three-sign bodies are also attested as an opener or a head.
+
+## Hundred-and-fifty-sixth set: numerals in names as birth-order or clan numbers (four hypotheses)
+
+Numeral runs as predict_test112.runs; value R.NUMS.
+
+- **BO1** Numeral runs in name bodies are worth 4 or less more often than runs in count texts (Fisher).
+- **BO2** Runs that open a name body are worth 4 or less in 80%+.
+- **BO3** The value of name-opening runs depends on the city (Mohenjo-daro against Harappa, F; MI).
+- **BO4** 5+ pairs of distinct names differ only in the value of a name-opening run (e.g. '2 X Y 740' and
+  '3 X Y 740').
