@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pseudo-letter cipher of 1728 &mdash; Attempted</title>
-<meta name="description" content="BL Add MS 32287 ff. 37-40 (DECODE R7707): one page of 205 invented cursive signs, docketed 4 August 1728, filed with the worksheets of a contemporary codebreaker who got no further than frequency counts. The signs were transcribed and checked against his tally. The text has a flat frequency profile (IoC 1.07), so it is not a simple substitution. Monoalphabetic, Vigenère and Quagmire-type attacks in seven languages failed. It stays unread.">
+<title>A cipher page of 1728 in invented symbols, BL Add MS 32287</title>
+<meta name="description" content="BL Add MS 32287 ff. 37-40 (DECODE R7707): one page of 205 invented cursive signs, docketed 4 August 1728, filed with the worksheets of a contemporary codebreaker who got no further than frequency counts. The signs were transcribed and checked against his tally. The text has a flat frequency profile (IoC 1.07), so it is not a simple substitution. Monoalphabetic, Vigenère and Quagmire-type attacks in seven languages failed. The key was not recovered and the text was not deciphered.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-22">
 <meta name="last-modified" content="2026-09-22">
@@ -38,15 +38,15 @@
   </div>
 </div>
 <section class="hero">
-<p class="kicker">Unknown sender &rarr; unknown recipient &middot; invented sign alphabet &middot; 1728 &middot; attempted, not read</p>
-<h1>A cipher of 1728 that its own codebreaker could not read</h1>
-<p class="sub">British Library, Add MS 32287 ff. 37&ndash;40 (DECODE R7707). One page of 205 cursive signs, filed with a codebreaker&rsquo;s frequency tables and a docket dated 4 August 1728.</p>
+<p class="kicker">Unknown sender &rarr; unknown recipient &middot; alphabet of invented symbols &middot; 1728</p>
+<h1>A cipher page of 1728 in invented symbols, with a codebreaker&rsquo;s worksheets</h1>
+<p class="sub">British Library, Add MS 32287 ff. 37&ndash;40 (DECODE R7707). One page of 205 cursive symbols, filed with a codebreaker&rsquo;s frequency tables and a docket dated 4 August 1728. Neither he nor this attempt recovered the key.</p>
 <p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-22">22 September 2026</time></p>
 <div class="seal stuck" aria-hidden="true"><span>not read</span></div>
 </section>
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-documents">The documents</a><a href="#the-cipher">The cipher</a><a href="#what-was-tried">What was tried</a><a href="#what-would-finish-it">What would finish it</a><a href="#sources">Sources</a></nav>
-<div class="callout"><strong>Summary.</strong> The catalogue listed R7707 as a ciphered letter between unknown correspondents, with DECODE&rsquo;s volume span 1716&ndash;1836 as its date. The eight images show one cipher page, f. 37r: ten lines of invented cursive signs, 205 in all, each followed by a dot. The other leaves are a codebreaker&rsquo;s worksheets. They hold frequency tallies, contact tables, a list of the signs that occur doubled, and the guess &ldquo;l &ndash; vowel &ndash; e&rdquo;. There is also an unrelated household bill, and a docket, &ldquo;4 Aout 1728 / 31 Aout / 5 8bre&rdquo;. The codebreaker never reached a reading. The signs were transcribed here, and the counts agree with his tally on f. 40r. The index of coincidence is 1.07, which is flat. That rules out a simple substitution in any language. Monoalphabetic annealing in seven languages failed. So did Vigenère and Beaufort at periods 5 and 10, and a Quagmire-type search with an unknown sign alphabet. Two hundred signs are too few to break a polyalphabetic system without the key. The letter stays unread.</div>
+<div class="callout"><strong>Summary.</strong> The catalogue listed R7707 as a ciphered letter between unknown correspondents, with DECODE&rsquo;s volume span 1716&ndash;1836 as its date. The eight images show one cipher page, f. 37r: ten lines of invented cursive signs, 205 in all, each followed by a dot. The other leaves are a codebreaker&rsquo;s worksheets. They hold frequency tallies, contact tables, a list of the signs that occur doubled, and the guess &ldquo;l &ndash; vowel &ndash; e&rdquo;. There is also an unrelated household bill, and a docket, &ldquo;4 Aout 1728 / 31 Aout / 5 8bre&rdquo;. The codebreaker did not reach a decipherment. The signs were transcribed here, and the counts agree with his tally on f. 40r. The index of coincidence is 1.07, which is flat. That rules out a simple substitution in any language. Monoalphabetic annealing in seven languages failed. So did Vigenère and Beaufort at periods 5 and 10, and a Quagmire-type search with an unknown symbol alphabet. Two hundred symbols are too few to recover a polyalphabetic key from the ciphertext alone. The text was not deciphered.</div>
 
 <h2 id="the-documents"><span class="num">01</span> The documents</h2>
 <figure data-credit="British Library, Add MS 32287 f. 37r, via DECODE R7707"><img src="r7707_lead.jpg" alt="The first four lines of f. 37r: cursive invented signs, each followed by a dot" loading="lazy"><figcaption>f. 37r, lines 1&ndash;4. On line 4, &ldquo;8 5e 8&rdquo; is written faintly. <span class="credit">Image: British Library, Add MS 32287 f. 37r, via DECODE R7707.</span></figcaption></figure>
@@ -67,11 +67,11 @@
 <h2 id="what-was-tried"><span class="num">03</span> What was tried</h2>
 <ul>
 <li>Simple substitution by simulated annealing with the <code>lang/</code> 4-gram models: English, French, German, Dutch, Italian, Spanish, Latin. The best was about &minus;5.1 log-probability per letter; real text scores about &minus;2.5. There are no words.</li>
-<li>Vigen&egrave;re, Beaufort and variant Beaufort at periods 5 and 10. These took the order of the 1728 tally as the sign alphabet. None reads.</li>
-<li>An unknown sign alphabet combined with periodic shifts (Quagmire type), periods 5 and 10, French and English. None reads.</li>
+<li>Vigen&egrave;re, Beaufort and variant Beaufort at periods 5 and 10. These took the order of the 1728 tally as the symbol alphabet. None gives plaintext.</li>
+<li>An unknown symbol alphabet combined with periodic shifts (Quagmire type), periods 5 and 10, French and English. None gives plaintext.</li>
 </ul>
 
-<h2 id="what-would-finish-it"><span class="num">04</span> What would finish it</h2>
+<h2 id="what-would-finish-it"><span class="num">04</span> What is needed</h2>
 <p>Only outside material. That could be the key, or the other letters on the docket (31 August and 5 October 1728). More text in the same system would make a periodic attack feasible. The other DECODE records from Add MS 32287 (R7746&ndash;R7751) are Swedish keys of the 1830s, not this alphabet.</p>
 
 <!-- replay:start -->
