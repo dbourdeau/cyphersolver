@@ -61,7 +61,10 @@ in this session. Every gap is blocked from outside: the letter needs photographs
 - Siblings, other fonds: Khevenhüller/Riegersburg 4-6 (Ungnad → Archduke Charles, 1574, partly ciphered, German) would give clear context plus cipher in the same hand and years; no scans, private deposit. Blocked.
 - Clear pages: the letter is wholly in cipher (Láng: "teljes"); a covering clear letter or register copy may be
   among ff. 1-304 of 32-3, but the Konvolut has no images.
-- Known keys: found (R392, KEY.md). Nothing else on DECODE, HCPortal or in Láng's two books.
+- Known keys: found (R392, KEY.md). Nothing else on DECODE, HCPortal or in Láng's two books. Added 24 Sept 2026
+  (sinzendorff1578/): DECODE R1384 is Hans Breuner's key for his 1575 embassy to the Porte ("Ciffra pro Dno Joanne
+  Preyner, Prima Maij 1575", German, transcribed in `sinzendorff1578/key_r1384.txt`), a second candidate for the
+  March 1576 despatch; R1380 is an Italian Ottoman-affairs key of c. 1571-74.
 - Print: no edition prints the cipher text; Gerlach's *Tage-Buch* gives context only.
 - Key rebuild / retry: not possible without the ciphertext.
 

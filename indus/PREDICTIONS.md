@@ -7786,3 +7786,99 @@ sense begins with the concept) chose obscure words: 'man' became Monier-Williams
 not the ordinary words (nara, puruṣa; āḷ, maṉ). The keys therefore measure lookup noise as much as language, and no
 language inference is drawn. The next loop repeats the test with a lookup that prefers the basic word. Tally, counting
 parts: 1238 held, 1163 failed (2401 registered).
+
+# Hundred-and-eighty-first set, registered before testing (24 September 2026): decipherment loop 6, a world-wide language search by rebus substitution (eight hypotheses)
+
+Loop 5's depiction keys failed on lookup noise. Loop 6 replaces the lookup with basic vocabulary and replaces the three
+hand-picked languages with every language that can be scored. Depiction map (fixed now, before any language is
+scored): signs.FISH -> FISH; noun_class.HUMAN -> PERSON; signs.CRAB -> CRAB; signs.FIG -> FIG; and each sign Fairservis
+identifies ('sure'/'likely') whose identification (before '=>') contains, first in this order, one of: woman ->
+WOMAN, bow -> BOW, arrow -> ARROW, pot / jar / container -> POT, tree -> TREE, sun -> SUN, moon / crescent -> MOON,
+rain -> RAIN (PRECIPITATION), mountain -> MOUNTAIN, river -> RIVER, drum -> DRUM, comb -> COMB, shield -> SHIELD,
+sickle -> SICKLE, fence -> FENCE, roof / cover -> ROOF, grain -> GRAIN, leaf / pipal -> LEAF, duck -> DUCK, bee ->
+BEE, spear -> SPEAR, axe -> AXE, basket -> BASKET, wheel -> WHEEL, man -> PERSON. Words: CLICS4 (clics4/cldf
+forms, the first form of each language for each concept), compared as IPA segment strings (normalised Levenshtein
+over segments). Substitution pairs as set 179 on A and on B names; pairs whose two signs map to the same concept are
+left out (every language 'matches' them); chance = the language's words shuffled among the concepts (200 draws); z =
+(observed - shuffled mean) / shuffled sd. Languages scored: those with words for 12+ of the mapped concepts and 30+
+usable pairs. Families from CLICS4's Family_Name; Indo-Aryan = Indo-European languages of South Asia (longitude
+66-92, latitude 6-36).
+
+- **LS1** Dravidian languages have a mean percentile rank of 0.75 or more among all scored languages.
+- **LS2** Indo-Aryan languages have a mean percentile rank of 0.75 or more.
+- **LS3** The Dravidian mean z is above the Indo-Aryan mean z.
+- **LS4** Among families with 5+ scored languages, Dravidian has the highest mean z.
+- **LS5** The median z over all languages is below 0.5 (the test does not reward every language).
+- **LS6** Scores are stable: Spearman between per-language z on A-pairs and on B-pairs is 0.3 or more.
+- **LS7** The top-ranked language has z >= 2 on A-pairs and on B-pairs separately (a P candidate).
+- **LS8** Control: with the concepts shuffled among the signs (20 shuffled maps), Dravidian's mean percentile falls
+  below its real value in 19 of 20 (any Dravidian lead depends on the depictions).
+
+## Results of the hundred-and-eighty-first set (added after the test; `predict_test181.py`, `results/predict_test181.md`)
+
+Four held, four failed. 83 signs mapped to 23 depicted concepts; 100 concept pairs among substitutable signs; 503
+CLICS4 languages scored. **No language signal.** Dravidian (Kannada, Malayalam, Tamil, Telugu) and Indo-Aryan
+(Bengali, Hindi; Northern Pashto caught by the region filter) both sit at the 44th percentile (LS1, LS2 fail), Dravidian
+slightly above Indo-Aryan in mean z (LS3: -0.22 against -0.41, both below zero). No family stands out (LS4: best Uralic
+0.33), and the median z is -0.14 (LS5 holds: the test does not reward every language). The top languages (Ao Chungli
+z 3.12, Embera, Lower Sorbian, Dargwa dialects, Hungarian) are what the maximum of 503 draws gives by chance (about 3):
+LS7 'holds' (Ao Chungli A z 2.53, B z 2.08) but is a multiple-comparison artefact, not a P candidate. LS6's high
+stability (0.79) reflects that A and B share most concept pairs, so the two samples are not independent at this level.
+The shuffled-map control (LS8) puts Dravidian at 0 or near it in most shuffles, below its real 0.44 in 15 of 20, short of
+the registered 19. Reading: basic words for what the signs depict, in any of 503 languages, do not make substitutable
+Indus signs sound alike. Either the substitutions are not phonetic (signs alternate as words, not as sounds), or the
+depictions are misidentified, or the language is not represented; a simple rebus reading of the depicted signs is not
+supported. P stays 0; L unchanged (no family excluded, none favoured). Tally, counting parts: 1242 held, 1167 failed
+(2409 registered).
+
+# Hundred-and-eighty-second set, registered before testing (24 September 2026): decipherment loop 7, are substitutions semantic? (eight hypotheses)
+
+Metric after loop 6: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loop 6 found no phonetic signal in substitutions
+under any language's words. Loop 7 asks whether substitutions are semantic instead: signs replacing each other because
+they depict the same kind of thing, as word signs would. Categories: Fairservis letter (A humans, C/D animals, E
+plants, F sky, G structures, H weapons, I implements, J containers, K measures, L cloth/ornaments, M drums, N landscape,
+Q fish-like), with signs.FISH as Q and noun_class.HUMAN as A. Substitution pairs as set 179 (A + B names, lexical signs,
+weighted by frames); chance = categories shuffled among the identified signs (1,000 draws).
+
+- **SE1** Substitution pairs of two identified signs are same-category more often than chance.
+- **SE2** SE1 holds with the fish series left out.
+- **SE3** SE1 holds on B's names alone.
+- **SE4** Human-figure signs' identified substitution partners are human figures in 30%+ of pair weight.
+- **SE5** Same-category pairs are 40%+ of identified-pair weight.
+- **SE6** Leave-one-out: an identified sign's category is the majority category of its identified partners (3+
+  partners) in 50%+ of such signs, above the shuffled rate (95th percentile).
+- **SE7** If SE6 holds, unidentified signs with 3+ identified partners and a 60%+ majority get that category; M+ rises
+  by 2 points or more (adoption rule, registered now).
+- **SE8** Signs that substitute across categories are rarer than within, even among signs of the same position class
+  (heads only): same-category share among head-slot substitutions above chance.
+
+## Results of the hundred-and-eighty-second set (added after the test; `predict_test182.py`, `results/predict_test182.md`)
+
+One held, seven failed. **Substitutions are not semantic either.** Substitutable signs share a depicted category more
+than chance only because the fish signs replace one another (SE1: 0.168 against 0.112, p = 0.024; without the fish
+series 0.095 against 0.109, SE2 fails; B alone p = 0.066, SE3). Human figures almost never replace human figures (SE4:
+1 of 138 pair weight), same-category pairs are a sixth of the total (SE5), a sign's partners do not predict its
+category (SE6: 0.22 leave-one-out against a shuffled 95th percentile of 0.29), so no category could be inferred for
+unidentified signs (SE7), and head-slot substitutions are not category-bound (SE8). Reading, with loop 6: the slots of
+Indus names take signs without regard either to how their depicted words sound (in 503 languages) or to what they
+depict, except that fish signs form a family. Either Fairservis's identifications are largely wrong, or the name
+elements work like arbitrary name parts (as personal-name elements do in many naming systems), or both. M+ and P do
+not move. Tally, counting parts: 1243 held, 1174 failed (2417 registered).
+
+# Hundred-and-eighty-third set, registered before testing (24 September 2026): decipherment loop 8, are the depiction identifications coherent? (eight hypotheses)
+
+Metric after loop 7: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loops 6-7 found that substitutions follow neither
+the sound of the depicted words nor the depicted category (except fish). Loop 8 asks whether the identifications are
+the weak link. If a category is a real depiction class, its signs should look alike (shape) and be used alike
+(context). Shapes: set 137's font renderings and mean pairwise IoU against 1,000 random sign sets of the same size;
+contexts: set 62's context similarity (signs with 20+ tokens) against random pairs. Categories as set 182 (Fairservis
+letters; signs.FISH; noun_class.HUMAN).
+
+- **DI1** Human-figure signs (noun_class.HUMAN) form a shape family (p < 0.05).
+- **DI2** Fairservis's A signs not in HUMAN still look like the HUMAN signs more than random signs do (mean best IoU).
+- **DI3** Weapons and implements (H, I) form a shape family.
+- **DI4** Control: the fish series forms a shape family (as SH6).
+- **DI5** Human-figure signs are used alike: mean context similarity of HUMAN pairs above random pairs (p < 0.05).
+- **DI6** Weapons and implements are used alike.
+- **DI7** Across categories with 3+ signs, shape cohesion and context cohesion correlate (Spearman > 0).
+- **DI8** The fish series is used alike (context), the known positive case.
