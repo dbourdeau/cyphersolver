@@ -3104,3 +3104,20 @@ share the rare sign's position (VR3: 69%) or ending (VR4: 58%), and rarely share
 signs are commoner in formulas (VR6: 57% against 42%) but not off the seals (VR5, the other way) and not line-final
 (VR8: 14% against 26%). With 2-5 tokens per sign, frame matching cannot recover variants; rare signs stay unassigned.
 Tally, counting parts: 345 held, 422 failed (767 registered).
+
+# Sixty-first set, registered before testing (24 September 2026): recurring units inside names (loop 3, round 5)
+
+'Unit' = an adjacent sign pair found in 5+ distinct name bodies (A + B pooled unless stated). 1,000 within-body shuffles
+where a null is needed; p < 0.05.
+
+- **SG1** Units cover more body tokens than the same count of recurring pairs does in within-body shuffles (coverage =
+  share of body tokens inside a pair recurring in 5+ bodies).
+- **SG2** In bodies of 3+, unit tokens end the body more often than they start it (sign test).
+- **SG3** 90%+ of units are never attested adjacent in the reverse order.
+- **SG4** 70%+ of units present in F names at Mohenjo-daro or Harappa are present at both.
+- **SG5** 60%+ of A's units (5+ bodies in A) recur in 3+ of B's bodies.
+- **SG6** The mean share of a unit's first sign followed by its commonest follower (among its body tokens) is 0.5+.
+- **SG7** 30%+ of units contain a numeral.
+- **SG8** 20%+ of units contain a fish sign.
+- **SG9** 60%+ of units found in long bodies (5+) are also found in bodies of 3-4.
+- **SG10** 30%+ of units are also attested as whole 2-sign bodies.
