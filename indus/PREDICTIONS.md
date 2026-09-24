@@ -8488,3 +8488,20 @@ phrases). Phrase matching on seals does worse than always guessing the one-horne
 does not beat its null (p = 0.11; WM5). No progress: streak 1. Set 201's picture-vault line in the prize tiers is
 marked 'split-dependent' until an estimate over many splits is made. Tally, counting parts: 1323 held, 1221 failed
 (2544 registered).
+
+# Two-hundred-and-third set, registered before testing (24 September 2026): decipherment loop 28, the picture vault without split luck (five hypotheses)
+
+Metric after loop 27: S 4.685; prize tiers V 0.008%, C 1 of 3, U 0; streak 1. Set 201's phrase-picture effect held on
+two random splits and failed on a third (set 202). Estimated here without split luck. Same tablets and motifs as
+sets 200-202; set 201's plain pair matcher. Leave-one-out: each text group is predicted from all the other groups
+(its own mould copies left out with it). **Text families**: texts that become identical when numerals are removed
+from both ends are one family, and a family is left out whole. Null: motifs shuffled among text groups (families),
+500 times, leave-one-out recomputed.
+
+- **LO1** Leave-one-out accuracy over text groups beats its null (p < 0.01).
+- **LO2** Leave-one-family-out (near duplicates left out together) beats its null (p < 0.05).
+- **LO3** With every text containing 923 (the elephant phrase) removed, leave-one-family-out still beats its null
+  (p < 0.05).
+- **LO4** Over 50 random half splits by family (seeds 300-349), the matcher's accuracy exceeds its null median in 40
+  or more.
+- **LO5** Progress rule: LO1 and LO2 hold (a picture vault that does not depend on the split or on mould variants).
