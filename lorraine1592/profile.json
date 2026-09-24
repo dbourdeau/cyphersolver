@@ -71,9 +71,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "DECODE R9449 'Non-decrypted'; no key in DECODE, Tomokiyo's Cryptiana, HistoCrypt proceedings, the BnF notices or Lepage 1864.",
-   "found": "not found",
+   "exists": "online",
+   "where": "Tomokiyo, cryptiana unsolved.htm, entry 'Duke of Lorraine (1592)', marked Solved: 'I solved this in 2025', quoting only the opening (\"J'ay este infiniment mal satisfait du peu d'execution ....\"); no key or text published. Present in the 6 Sept 2026 snapshot (napoleon/unsolved.htm), before the 18 Sept attempt. DECODE R9449 still 'Non-decrypted'; no key anywhere.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -201,12 +201,21 @@
    "kind": "verification",
    "what": "measure_reread.py: 790/1,105 cipher tokens in words graded H/C = 0.715 (letters 0.721, figures 21/38); the 18 Sept key+tokens give the same words for 449/1,105 = 0.406; 4 emendations (two omitted v in Chasteau(v)ilain, q(u)e, promesses).",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "literature search",
+   "what": "Review of Tomokiyo's unsolved list against the repo: his entry marks R9449 solved by him in 2025 and quotes the opening; the entry predates this project's attempt (6 Sept snapshot). The opening he quotes matches our reading's first line word for word (ct/no97_reading2.md L00). Prior claim missed by the 18 Sept search, which looked only for a published key.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
   "method_basis": "The reciprocal letter-pair key was recovered by iterated local search on the eye transcription with no key known anywhere (DECODE, Tomokiyo, fr. 3995 key sheets ruled out); the page's clear text (Chasteauvillain) served only as a check, and three figures were read from context.",
-  "contribution": ["transcription", "key recovered"],
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
   "key": "partial",
   "fraction_read_method": "measured",

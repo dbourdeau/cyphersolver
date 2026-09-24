@@ -12,7 +12,8 @@ account (`ct/no97_reading.md`, `ct/no97_solution.txt`) is kept for the record.
 
 The document was catalogued as unsolved: **DECODE record 9449** is this exact piece and gives its
 status as `Non-decrypted` (<https://de-crypt.org/decrypt-web/RecordsView/9449>). No key for it has
-ever been published.
+ever been published. **But it was not unread** (found 24 Sept 2026, see §4a): Tomokiyo's cryptiana
+`unsolved.htm` already marked it "Solved" before this project began, reporting that he broke it in 2025.
 
 ## 1. The verification step, answered
 
@@ -74,6 +75,24 @@ ca. 1620 (Tomokiyo, `lorraine.htm`; DECODE 7952), and Bassompierre to Charles II
 (Tomokiyo, `nevers.htm`, BnF fr. 4715 no. 15). Desenclos and Lasry's HistoCrypt 2024 paper publishes
 the Henri IV–Nevers digit ciphers of fr. 3995 fols. 141 and 67; fr. 3621 is never mentioned. Lepage's
 1864 edition of Charles III's League correspondence stops in 1591 and prints no cipher table.
+
+## 4a. A prior reading existed: Tomokiyo, 2025 (found 24 Sept 2026, after this reading)
+
+The §4 search looked for a published *key* and found none, which still holds. It missed a published
+*claim of reading*. Tomokiyo's *Unsolved Historical Ciphers* (`cryptiana.web.fc2.com/code/unsolved.htm`)
+has an entry "Duke of Lorraine (1592)", marked **Solved**, citing BnF fr. 3621 "f.125" (DECODE R9449),
+Charles II/III to Vaudémont, 18 June 1592: *"I solved this in 2025: 'J'ay este infiniment mal satisfait du
+peu d'execution ....'"*, adding that the alphabet uses letters and other symbols, that historians' help is
+needed for the numerical symbols, and that many low-frequency symbols seem to be nulls. The entry is
+already in the 6 Sept 2026 snapshot saved in this repo (`napoleon/unsolved.htm`), so it predates the
+18 Sept attempt. He published only that opening, no key and no text.
+
+What this changes: the contamination answer (profile `conditions.prior_solution`: exists online, found
+after reading, not used), and any claim that this was a first reading. What it does not change: the key
+was recovered here ciphertext-only without it, and our reading opens with the same words he quotes
+(`ct/no97_reading2.md` L00: "j'ay esté infiniment mal satisfait du peu d'execution"), an independent
+confirmation of the first line. His "f.125" does not match the stamped f. 109 used here; the DECODE
+number, parties and date make it the same piece.
 
 Four 1592 key sheets in fr. 3995 whose DECODE profile matched this cipher were fetched and examined.
 All four are eliminated on documentary grounds:
