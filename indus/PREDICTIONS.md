@@ -2245,3 +2245,46 @@ Nine held, sixteen failed. Deviation: LB10 was run with 1,000 random draws, not 
 - LB6 fails (copper tablets are not later than seals at Mohenjo-daro), LB8 fails (4 pairs).
 
 Tally, counting parts: 193 held, 294 failed (487 registered).
+
+# Thirty-fifth set, registered before testing (24 September 2026): the core findings, city by city
+
+The strongest results so far mostly pool every site. This set asks whether each holds separately at Mohenjo-daro and at
+Harappa, the two cities with enough texts to act as independent replication samples, and whether rules learned in one
+city predict the other. Data: F, intact objects, lines reversed (M4); A for direction (SR19). Each hypothesis holds only
+if it holds at both cities (p < 0.05 each, or the stated threshold each); a city with under 20 cases for a test makes
+the hypothesis fail as untestable there. Names, head class (K, from A), Fairservis categories, numerals and notations
+as before; 10,000-draw permutations.
+
+Grammar of names
+- **SR1** The last sign carries more information about the ending than the first: MI(last; ending) minus MI(first;
+  ending) exceeds its value with endings permuted.
+- **SR2** The last sign of a name comes from a smaller inventory than the first, beyond within-name shuffles.
+- **SR3** Human-figure heads take 740 more often than other heads.
+- **SR4** A head-to-ending rule learned in one city (majority ending per head with 3+ names) predicts the other city's
+  endings for those heads at 90%+ and above the majority baseline (binomial), in both directions.
+- **SR7** A long name minus its first sign is an attested name more often than minus its last (McNemar).
+- **SR8** The affixed fish (231, 233, 235, 240) are a name's last sign less often than the plain fish 220.
+- **SR16** 80%+ of heads with 5+ names take one ending in 90%+ of them.
+- **SR17** Categorised heads of 740 names are humans, weapons, implements or measures (A, H, I, K) more often than
+  categorised heads of 520 names, fish heads left out.
+- **SR15** For heads with 5+ headed and 5+ unheaded names, the majority ending is the same with and without the heading
+  in 80%+.
+
+Units kept whole (multi-line texts of all object types)
+- **SR5** The 30 highest-PMI pairs (count 10+) of the *other* city's single-line texts are split by a line break less
+  often than other gaps.
+- **SR6** A numeral and the sign after it are split by a line break less often than other gaps.
+
+Numbers
+- **SR9** The short stroke pair is followed by a fish more often than the short three.
+- **SR10** Among values 5-8 the tiered form is a larger share than among values 3-4.
+- **SR11** Long-stroke numerals stand before a container or device sign (Fairservis J, K) more often than short ones.
+- **SR12** The value of a numeral depends on the sign after it (MI beyond permutation).
+- **SR20** Long-stroke numerals open their line more often than short ones.
+- **SR13** Tablet texts differing at one position differ at a numeral more often than seal names differing at one
+  position do.
+
+Objects and signs
+- **SR14** Unicorn seals carry longer texts than other-animal seals (rank test).
+- **SR18** Frequent signs are graphically simpler (Spearman of complexity against log token count, negative).
+- **SR19** Left-to-right texts are rarer on seals than on other objects (A).
