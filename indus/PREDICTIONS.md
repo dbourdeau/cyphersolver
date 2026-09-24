@@ -234,3 +234,23 @@ listed order as default, so earlier results are unchanged, with a switch (LINES_
   33-520, 920-60, 235-240, 32-220 ...) are units the scribes kept together, i.e. words or fixed compounds, and not only
   frequent neighbours. The small numbers (21-31 bound gaps) make it a lead to replicate on tablets and more seals, not a
   settled result.
+
+# Eighth set, registered before testing (24 September 2026)
+
+**Hypothesis Y: foreign names are spelled with sound signs, home names use word signs.** The seventh set found sign
+pairs the scribes never split (X2), which behave like words. The West Asian Indus texts leave out the endings and use
+unfamiliar sequences (gulf.py): they are thought to write foreign names. If the script mixes word signs with sound
+signs, a foreign name has to be spelled by sound: it should avoid the bound pairs and use signs that combine freely.
+Not looked at before.
+
+Samples as gulf.py: intact lines of 2+ signs, West Asian (region Persian Gulf / Mesopotamia / Central Asia, or Susa,
+Luristan, Tepe Yahya) against home. Nulls: 10,000 draws of home lines matched one-to-one on length.
+
+**Y1 Bound pairs.** The 30 bound pairs of the seventh set: their share of the adjacent sign pairs in West Asian lines
+is below the length-matched home draws, p < 0.05.
+
+**Y2 Free signs.** Freedom of a sign = the residual of log(distinct left and right neighbours) regressed on log(tokens),
+over home lines, for signs with 5+ home tokens. With 740, 520 and the heading signs (817, 820, 861) left out on both
+sides, the mean freedom of West Asian sign tokens exceeds the length-matched home draws, p < 0.05.
+
+Hypothesis Y holds if both hold.
