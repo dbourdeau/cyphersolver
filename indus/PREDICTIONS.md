@@ -8365,3 +8365,17 @@ dictionary lists), not language. Name-structure statistics of this kind do not d
 the compatible fifth; the typology-matched decoy Japanese fits as well as or better than the candidates. The progress
 rule fails: streak 1. Set 197 stays recorded as held by its rule, qualified by this control. Tally, counting parts:
 1309 held, 1211 failed (2520 registered).
+
+# Hundred-and-ninety-ninth set, registered before testing (24 September 2026): decipherment loop 24, a longer family context for S (five hypotheses)
+
+Metric after loop 23: S 4.697 (model tri + pos + end + ftri), R 81.3%, M 16.6% (M+ 41.4%), G margin A 46.2 / B 34.7,
+P 0, L 4, L world 81.3% / 68.3%; streak 1 (stopping rule now 10 consecutive loops without progress). Set 194's family
+trigram helped; a design run on the training lines' own split shows a family 4-gram (the families of the previous
+three signs, interpolated with the family trigram) doing better (4.732 -> 4.724), and a family-by-distance-from-end
+component adding nothing. New component `f4` in famlm.py; model tri + pos + end + f4.
+
+- **F41** S on the fixed test improves over 4.697 by 0.003 bits or more.
+- **F42** Replication A -> B (trained on A, tested on B's new lines): tri+pos+end+f4 beats tri+pos+end+ftri.
+- **F43** Random families (20 draws of the same sizes, seed 199) used in f4 gain less than the decade families in 19+.
+- **F44** f4 gets a nonzero weight on both runs.
+- **F45** Progress rule: F41 and F42 hold.
