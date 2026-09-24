@@ -5144,3 +5144,17 @@ formula with a numeral), 'bare' (template X), else 'other'. F without copper for
 - **GS18** B: GS1 holds.
 - **GS19** B: GS8 holds.
 - **GS20** F': GS1 holds.
+
+## Results of the hundred-and-eighth set (added after the test; `predict_test108.py`, `results/predict_test108.md`)
+
+Seven held, thirteen failed, and the failures are informative: the genres are frames, not vocabularies. Of 2,722
+distinct lines, 1,233 are names, 605 counts, 344 bare, 228 closer lines, 312 other. Only 15% of signs with 10+ tokens
+keep 70% of their tokens in one genre (GS1; B 9%, GS18; F' 27%, GS20), almost all of them name signs; there is one
+count-specific sign and no bare-specific sign (GS2). Closer lines share fewer sign types with names than counts do
+(GS6: Jaccard 0.32 against 0.43), and bare lines are nearer counts than names (GS7: 0.45 against 0.39). What decides the
+genre is the frame: the last sign carries far more information about it than the first (GS10: 1.34 against 0.39
+bits), length differs by genre (GS8; GS19 in B), and object (GS3) and city (GS4) shift the mix slightly. Genre does not
+change between Harappa periods (GS5), lines on one object do not share a genre (GS11: 15 of 76), seals are 59% names or
+closers (GS12, under 70%), incised and moulded tablets carry counts and bare lines alike (GS13), potsherds are only 48%
+bare or count (GS14), the smaller sites' mix differs (GS15, p = 0.0001), and genre signs are not rarer (GS16).
+Tally, counting parts: 796 held, 851 failed (1647 registered).

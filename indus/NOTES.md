@@ -1725,6 +1725,12 @@ Summary of sets 105-107: seal inscriptions come in two sister types, name + 740/
 side of the head inventory, fewer fish), at every site; bare name-shaped lines without any role sign form a practical
 third genre on tablets and pots. Tally 789 held, 838 failed.
 
+## Hundred-and-twenty-second pass (24 Sept 2026): the four genres as systems
+
+Registered first (hundred-and-eighth set, 9f09dec3f), tested (`predict_test108.py`). The genres share one vocabulary
+(only 15% of common signs are genre-bound, mostly name signs) and are defined by their frames: the last sign predicts
+the genre far better than the first. Object and city shift the mix only slightly. Tally 796 held, 851 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
