@@ -8516,3 +8516,26 @@ for shared phrases to go with the same picture; set 201's p = 0.001 was a favour
 give a picture vault that a panel would accept. No progress: streak 2. Prize tier 3's picture line is corrected to
 'weak: leave-one-out 16.9% (p = 0.05), 13.6% with near duplicates together (p = 0.14)'. Tally, counting parts: 1324
 held, 1225 failed (2549 registered).
+
+# Two-hundred-and-fourth set, registered before testing (24 September 2026): decipherment loop 29, the Tamil Nadu graffiti as writing; a two-direction SIGN model (eight hypotheses)
+
+Metric after loop 28: S 4.685, SIGN top-1 36.2%; prize tiers V 0.008%, C 1 of 3, U 0; streak 2. (A) The prize was
+announced beside the Tamil Nadu Department of Archaeology's claim that ~90% of south Indian graffiti marks have Indus
+parallels (Rajan and Sivanantham 2025; 2026 vol. II, a concordance of composite graffiti signs by sherd, elements in
+prefix / stem / suffix slots). Without a sign mapping, a language-free fingerprint can still be compared: writing
+places co-occurring signs in a consistent order. Data: the vol. II concordance (Table 6.1, extracted by table
+reading; scratchpad, not redistributed), deduplicated by (sherd, composite number); an element's order = its slot
+(prefix-3 ... suffix-3). Order consistency = for element pairs co-occurring in 3+ composites, the share of their
+co-occurrences in the pair's majority order, pooled. Indus: the same measure on distinct lines (A+B), pairs 3+.
+(B) Summing a right-to-left model's line log-probability with the left-to-right one in the SIGN task; a design run
+gave 37.8% -> 38.6% top-1 on the training lines' own split.
+
+- **TG1** Graffiti order consistency is 80% or more.
+- **TG2** Graffiti order consistency is within 10 points of the Indus lines'.
+- **TG3** Elements prefer slots: element x first/last position MI beats 1,000 within-composite shuffles (p < 0.01).
+- **TG4** TG1 holds separately at the two largest sites (KLD, TKP).
+- **TG5** The commonest final element's share in graffiti composites is within 10 points of the commonest final
+  sign's share in Indus lines.
+- **SB1** Two-direction SIGN top-1 on the fixed test beats the forward model by 0.5 points or more.
+- **SB2** The same trained on A and tested on B's new lines (first 300 lines).
+- **SB3** Progress rule: TG1 and TG4 hold (a replicated finding about the graffiti), or SB1 and SB2 hold.
