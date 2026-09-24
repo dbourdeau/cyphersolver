@@ -971,3 +971,62 @@ fail, W23 fails narrowly (unicorn seals end 740 +6.2 points, p = 0.053), W25 fai
 Harappa, 14% against 5%, p = 0.0006, but not at Mohenjo-daro).
 
 Tally, counting parts: 50 held, 87 failed (137 registered).
+
+# Nineteenth set, registered before testing (24 September 2026): published readings as predictions, and the formulas
+
+The published keys make claims about single signs that the structure found here can test without sound values:
+Fairservis 1992 (keys/fairservis1992_wide.tsv), Mahadevan 1998 / 2014 (keys/mahadevan2014.tsv), Parpola 1994
+(keys/parpola1994.tsv; rebus_checks.py READINGS). Conventions as the eighteenth set (A, B, F; pooled A + B where said;
+names; head class as K; Fairservis categories; 10,000-draw permutations; p < 0.05).
+
+'Numeral-like' test: the right-neighbour distribution of a sign (counts of the sign that follows it) is compared by
+cosine with the pooled right-neighbour distribution of the core numerals (NUMS signs with 20+ tokens in the sample,
+the tested sign left out); the sign is numeral-like if its cosine is higher than that of 95% of the non-numeral signs in
+its token-count quintile (p = rank among them). Must hold in A and B.
+
+Readings of single signs
+- **X1** (Fairservis: 700 = aḷa, a measuring container) On tablets, the numerals directly before 700 are long-stroke in
+  90%+ of cases (F).
+- **X2** (Fairservis: 706 = nūṟu 'hundred') 706 is numeral-like.
+- **X3** (Parpola: 32 = 'space', vel, not a numeral) 32 is numeral-like. If X3 holds, it counts against Parpola's
+  reading of 32.
+- **X4** (Fairservis: 840 = 'number 8'; Parpola: 840 = 'rings', muruku) 840 is numeral-like. Holding favours
+  Fairservis.
+- **X5** (Parpola: 13 = 'hearth', cul; here a tiered 3) 13 is numeral-like. Holding counts against Parpola.
+- **X6** (Fairservis: 55 = 'rain, twelve strokes'; here the numeral 12) 55 is numeral-like.
+- **X7** (Fairservis: 400 = a dative 'of a person') Among post-ending signs, 400 is a larger share after 740 than after
+  520 (pooled).
+- **X8** (Mahadevan: 520 = non-masculine suffix) Names with a human head take 520 in under 2% of cases (pooled).
+- **X9** (Mahadevan: fish names are non-masculine) Names with a fish head (signs.FISH) take 520 in 90%+ of cases
+  (pooled).
+- **X10** (Mahadevan: the endings are gender suffixes fixed by the noun) Of heads with 5+ names (pooled), 80%+ take
+  their majority ending in 90%+ of their names.
+- **X11** (Parpola: 740 = the possessive -a) 740 is followed by further name material (a sign other than 90 / 400 /
+  151, not line end) in 20%+ of its tokens (pooled): a possessive is followed by what is possessed.
+- **X12** (Fairservis: 90 = āḷ, 'ruler') Lines ending 740 + 90 carry the heading more often than lines ending 740
+  without 90, length-stratified (pooled).
+- **X13** (Fairservis: 861 = 'settlement', 2 = locative: '861 2' = 'in the town') In the heading, 2 follows 861 more
+  often than it follows 817 (pooled, Fisher).
+- **X14** (705 and 706 alternate in the closing formula) 705 and 706 have more similar contexts (cosine of positive-PMI
+  left + right vectors, as H3) than random pairs matched on token quintiles. A and B.
+
+The formulas and the count tokens
+- **X15** The text before '705 / 706 + 33 + 520' (heading removed) is an attested name body (with 740 or 520 elsewhere)
+  more often than the body minus its last sign of other lines ending in 520 (pooled, Fisher).
+- **X16** Tiered numerals stand before fish signs more often than short-stroke numerals do. A and B.
+- **X17** Mohenjo-daro tablets count with another unit: the commonest sign after a numeral on Mohenjo-daro tablets is not
+  700 and covers 30%+ of those tokens (F).
+- **X18** Harappa count tokens with the same value (2, 3 or 4) lie closer in depth than tokens with different values
+  (median depth difference, value labels permuted) (F).
+- **X19** On count tokens longer than 'N + 700', the signs before the numeral form a seal name body (F seals, any
+  ending) more often than the same signs in shuffled order (F).
+- **X20** The human head 100 is found at more sites (seals) than head-class signs of matched token count (F).
+- **X21** Among fish-headed names, those with a numeral before the head take 520 more often than those without (pooled,
+  length-stratified): numbered fish are the star names.
+- **X22** Among post-ending signs, 90 is a larger share on seals than on tablets (F).
+- **X23** The mix of values (2 / 3 / 4) on count tokens differs between moulded and incised tablets (MI beyond
+  permutation) (F).
+- **X24** Lines closing in '705 / 706 + 33 + 520' come from Mohenjo-daro more often than other seal lines with an
+  ending (F, Fisher).
+- **X25** Fish-headed names ending 740 carry the heading more often than fish-headed names ending 520,
+  length-stratified (pooled).
