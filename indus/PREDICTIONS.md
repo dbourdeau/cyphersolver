@@ -4430,3 +4430,31 @@ object) and spread over both cities (MX2: 62% Mohenjo-daro). Not supported: fish
 before it (MX5), a name after it (MX4, MX20: 6-2 and 2-0), a short first element (MX12: 49%), extra numerals (MX16) and
 fish before medial 520 (MX17: 10 of 24). Reading: 'short name + ending + short tail', a name followed by an
 annotation, mostly on one-off seals. Tally, counting parts: 612 held, 695 failed (1307 registered).
+
+# Ninety-second set, registered before testing (24 September 2026): the jar signs 700, 705, 706 (twenty hypotheses)
+
+700 is the count sign (numeral + 700); 705 and 706 sit in the fixed phrase '705/706 33 520' (eighty-second set).
+Distinct lines (A + B) unless stated; context vectors as in the sixty-second set (signs with 5+ tokens); categories
+from cat_of. 10,000-draw permutations; p < 0.05.
+
+- **CF1** 705 and 706 are more alike in context than frequency-matched random pairs.
+- **CF2** 700 is more alike in context to 705 and 706 than frequency-matched random signs are.
+- **CF3** 50%+ of 705 and 706 tokens are directly followed by a numeral.
+- **CF4** 60%+ of those numerals are 33 (long 3).
+- **CF5** Numerals after 705/706 are of the long kind more often than numerals after other signs.
+- **CF6** Under 10% of 705/706 tokens directly follow a numeral (705/706 are not counted; they are followed by the
+  count, 700 is preceded by it).
+- **CF7** 50%+ of lines with 705 or 706 end in 520.
+- **CF8** 70%+ of 705/706 lines are on seals (F).
+- **CF9** 705/706 lines are a larger share of lines at Mohenjo-daro than at Harappa (F).
+- **CF10** 80%+ of 700 lines are on tablets (F).
+- **CF11** 705 and 706 are free variants: the sign before does not depend on which (MI p >= 0.05).
+- **CF12** After '705/706 + numeral', the next sign is 520 in 50%+.
+- **CF13** In '705/706 + numeral + 520', the value is 3 in 80%+.
+- **CF14** 60%+ of 705/706 lines are name lines.
+- **CF15** Under 5% of 700 tokens stand inside a name body.
+- **CF16** 705/706 account for 30%+ of signs directly before 33.
+- **CF17** B: CF3 holds.
+- **CF18** B: CF4 holds.
+- **CF19** F: CF13 holds.
+- **CF20** 705 and 706 have the same shape category as 700.
