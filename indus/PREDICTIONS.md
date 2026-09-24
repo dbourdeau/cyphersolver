@@ -8702,3 +8702,16 @@ modifiers no more often than frequency-matched signs (RL4). The known-head set (
 common signs belong to it, so the test has little power; closer-line bodies do not show the name-body pattern beyond
 that. No roles adopted; R stays 81.3%. No progress: streak 4. Tally, counting parts: 1340 held, 1244 failed (2584
 registered).
+
+# Two-hundred-and-tenth set, registered before testing (24 September 2026): decipherment loop 35, discounted family context (four hypotheses)
+
+Metric after loop 34: S 4.685 (tri + pos + end + f4), SIGN top-1 37.9%; streak 4. The family components interpolate
+with count/(count + 2) weights. Absolute discounting (Kneser-Ney style: subtract D from each seen count, give the mass
+to the lower order in proportion to the number of distinct followers) usually does better on sparse contexts. New
+component f4k: the family 4-gram discounted onto the discounted family trigram, onto the family bigram; D = 0.5,
+chosen on the training lines' own split (design: 4.7247 -> 4.7187; D 0.75 4.7199, D 0.9 4.7318).
+
+- **DK1** S on the fixed test: tri + pos + end + f4k beats tri + pos + end + f4 by 0.003 bits or more.
+- **DK2** The same A -> B (trained on A, tested on B's new lines).
+- **DK3** SIGN top-1 on the fixed test (two-direction, as prizebench) does not fall with f4k in place of f4.
+- **DK4** Progress rule: DK1 and DK2 hold (f4k enters the model).
