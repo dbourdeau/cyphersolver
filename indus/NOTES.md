@@ -1087,6 +1087,16 @@ higher as sequences than as modified bases (G7 fails only on its 5-ligature bar)
 numeral check (C1: left 2.5, right 1.2, both + positions 2.9, k = 12 2.1, bar 3), so the classification lead is
 closed. Tally 82 held, 143 failed.
 
+## Thirty-eighth pass (24 Sept 2026): reading order, numbers, seals as owned objects
+
+Registered first (PREDICTIONS.md, twenty-fourth set, 545049378), tested (`predict_test24.py`). Held: recorded
+left-to-right directions are right (M1) and come from the smaller places (M2); Mahadevan's line order is supported
+(M3); tiered numerals are for 5-8 (M6); bar seals carry suffix-less names (M12). **M4 settles the fuller corpus's line
+order: reversed (13 against 3), as data/corpus.tsv; icit_full.py's listed order is wrong for most multi-line texts**
+(default kept for reproducibility; use LINES_REVERSED = True from now on). Reverse findings: numerals side by side put
+the smaller first (M5); numbers before fish are smaller (M7); after an ending it is always 90 then 400 (M8). Same-name
+seals do not share animal, shape or heading beyond chance (M9-M11). Tally 87 held, 150 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

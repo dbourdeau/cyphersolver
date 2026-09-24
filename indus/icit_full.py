@@ -45,6 +45,9 @@ def lines_of(text):
     # Line order is ambiguous (checked 24 Sept 2026 on 66 intact multi-line seals): kept as listed, an ending
     # stands last on 34 and a heading first on 1; reversed (as build_corpus.py does for data/corpus.tsv), an ending
     # last on 12 and a heading first on 12. The listed order stays the default; LINES_REVERSED flips it.
+    # Settled 24 Sept 2026 (PREDICTIONS.md M4): the pair across a line junction is attested elsewhere 13 times with
+    # the lines reversed against 3 as listed, so reversed is right. The default stays False only so that earlier
+    # results reproduce; new analyses should set LINES_REVERSED = True.
     return out[::-1] if LINES_REVERSED else out
 
 

@@ -1366,3 +1366,37 @@ Seals as owned objects (F, distinct intact seals)
 - **M11 One name, one heading.** Same-name seals agree in having or lacking the heading more often than random pairs.
 - **M12 Bar seals carry bare names.** Rectangular seals (SEAL:R) carry lines without an ending more often than square
   seals (SEAL:S), length-stratified.
+
+## Results of the twenty-fourth set (added after the test; `predict_test24.py`, `results/predict_test24.md`)
+
+Five held, seven failed.
+
+**Reading order.**
+- **M1 holds**: the 103 texts recorded as left-to-right read more familiarly in the recorded order than reversed (78
+  against 3, p < 0.0001): the direction judgments in the ICIT-derived corpus are right.
+- **M2 holds**: left-to-right texts come from outside Mohenjo-daro and Harappa twice as often (29% against 14%,
+  p = 0.0001): the reversed direction belongs to the smaller places.
+- **M3 holds**: in M77's multi-line texts the junction pair is attested more often with lines as listed (57 against 25,
+  p = 0.0003): Mahadevan's line order is supported.
+- **M4 fails, the other way**: in the fuller corpus the junction pair is attested more often with the lines *reversed*
+  (13 against 3; the reverse direction would give p = 0.011). This settles the ambiguity found in the seventh set: the
+  listed line order of icit_full.py is wrong for most multi-line texts, and the whole-string reversal of
+  data/corpus.tsv is right. The seventh set (X1, X2) was run both ways; the later sets that parsed fuller-corpus names
+  from whole texts used the listed order for the multi-line ones (about 4% of seals), so their fuller-corpus counts
+  carry that small error. icit_full.py keeps its default so that past results reproduce; LINES_REVERSED = True is the
+  setting to use from now on.
+
+**Numbers.**
+- **M6 holds**: the tiered form is used for larger numbers (63.5% and 66.2% of values 5-8, against 5.3% and 5.8% of
+  values 3-4): a second row of strokes to keep large numbers readable.
+- M5 fails the other way: side-by-side numerals put the smaller value first (149 against 55; 33 against 16).
+- M7 fails the other way: numbers before fish are smaller on average (2.5 against 3.0; 2.4 against 3.0).
+- M8 fails the other way, with a fixed order: where both clitics follow an ending it is always 90 then 400 (9 to 0).
+
+**Seals as owned objects.**
+- **M12 holds**: rectangular (bar) seals carry lines without an ending more often than square seals (+13.4 points,
+  p = 0.0002): the bar seals, which have no animal, write names without the suffix.
+- M9 fails (same-name seals do not share their animal more than chance: 68%, p = 0.32), M10 fails narrowly (same seal
+  shape 82%, p = 0.078), M11 fails (the heading comes and goes on the same name).
+
+Tally, counting parts: 87 held, 150 failed (237 registered).
