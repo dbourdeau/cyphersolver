@@ -8091,3 +8091,13 @@ square inside (810, 812, 814), a diagonal stroke inside (831). Positions: initia
 - **LF4** Leaf + tree stands medially (not initial, not head, not final) more often than leaf + stroke inside (A + B).
 - **LF5** Leaf + diamond (the heading) is line-initial in 60%+ (A + B; a replication check of the known heading).
 - **LF6** Progress rule: LF1 and LF2 both hold, or LF3 holds with the same direction in A and in B separately.
+
+## Results of the hundred-and-ninetieth set (added after the test; `predict_test190.py`, `results/predict_test190.md`)
+
+Four held, two failed. The leaf's attachment predicts the position class in A (LF1: MI 0.22, p = 0.0001) and B (LF2:
+0.20, p = 0.0001), and the diamond-topped leaves (the heading) open the line in 75% (LF5). The stroke-inside leaf is not
+more often a head than the tree leaf (LF3: 13% against 15%), nor the tree leaf more medial (LF4: 49% against 38%, p =
+0.10). **Check after the test**: with the diamond leaves (the already-known heading) left out, the attachment still
+predicts position in A (MI 0.14, p = 0.0006, 161 tokens) but not in B (MI 0.15, p = 0.10, 77 tokens). LF6 holds by its
+registered rule, but on the independent sample the signal is carried by the known heading, so this loop is counted
+conservatively as no progress: streak 1. Tally, counting parts: 1277 held, 1194 failed (2471 registered).

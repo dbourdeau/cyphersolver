@@ -2338,6 +2338,12 @@ Registered first (24e5dcd6f). The plain U 700 is a counted, text-final unit (A a
 counted. With the jar (loop 11): strokes inside a container sign make a different word or form, a productive device.
 Progress; streak 0. Tally 1273 held, 1192 failed.
 
+## Two-hundred-and-fourth pass (24 Sept 2026): decipherment loop 15, the leaf family
+
+Registered first (f572c8f4f). The leaf's attachment predicts position in A and B, but on B that comes from the known
+heading (diamond-topped leaf); without it B is n.s. (77 tokens). Counted conservatively as no progress: streak 1.
+Tally 1277 held, 1194 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
