@@ -2415,3 +2415,22 @@ Mohenjo-daro's heads more than Lothal does (RG10). **RG6 holds**: four heads wit
 927, 255). **RG7 holds**: the numeral notation depends on the region (p = 0.0001), the one regional difference that is
 general. So the OS4 failure is not a different stock of names in the smaller sites; it is the head-ending pairings that
 vary. Tally, counting parts: 214 held, 323 failed (537 registered).
+
+# Thirty-eighth set, registered before testing (24 September 2026): the longest texts (round 2 of 10)
+
+Lines of 8+ signs ('long') against lines of 5-7 ('middle'); pooled A + B unless said; F for objects and sites.
+10,000-draw permutations; p < 0.05.
+
+- **LT1** Long lines contain two or more ending tokens (740 / 520) more often than middle lines.
+- **LT2** In long lines with an ending before the end, the material after the first ending itself closes with an ending
+  (740 / 520, optionally + 90 / 400 / 151) in half or more.
+- **LT3** Long lines contain a numeral more often than middle lines.
+- **LT4** Long lines are on objects other than seals more often than middle lines (F).
+- **LT5** Long lines carry the heading more often than middle lines.
+- **LT6** Long lines can be split into two parts each attested as a whole line elsewhere more often than their own
+  sign-order shuffles can.
+- **LT7** Distinct long texts recur on 2+ objects less often than distinct middle texts (F).
+- **LT8** Long lines end in an ending (with or without 90 / 400 / 151) less often than middle lines.
+- **LT9** Signs rare in the corpus (5 or fewer tokens in A + B) make up a larger share of the tokens of long lines than
+  of middle lines.
+- **LT10** Long lines come from Mohenjo-daro more often than middle lines (F).
