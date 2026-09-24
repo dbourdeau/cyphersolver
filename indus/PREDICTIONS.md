@@ -1836,3 +1836,50 @@ carry numerals more often than unicorn seals (+9.5 points, p = 0.001). J14, J15,
 (J22: 34% of human-headed names contain a numeral; J24 the other way: tiered-number names take 520 less).
 
 Tally, counting parts: 145 held, 217 failed (362 registered).
+
+# Thirtieth set, registered before testing (24 September 2026): the Harappa system in detail
+
+Leads: receipts name Harappa's own seal-holders, persons, by the head of the seal name (J1-J3, E3); numeral + sign
+pairs are bound idioms (J7, J8); count tokens move from incised to moulded over time (J16); titled fish names take 861
+(J13). Conventions as the twenty-ninth set ('receipt'; 'matching seal' = a Harappa seal whose name ends in the receipt's
+name; F read with lines reversed; A, B; names; head class as K; 10,000-draw permutations; p < 0.05; length strata as
+before).
+
+Receipts and seals (F)
+- **HA1** A receipt lies closer in depth to its matching seals than to random Harappa seals with a depth (median
+  difference; seal assignments permuted).
+- **HA2** A receipt shares its level with its matching seals more often than with random Harappa seals.
+- **HA3** Half or more of the receipt heads end three or more different seal names.
+- **HA4** Name tablets without 400 match the end of a Harappa seal name less often than receipts do.
+- **HA5** Moulded tablets with a name match the end of a Harappa seal name less often than receipts do.
+- **HA6** On receipts with a number, the number stands directly before the name body in 70%+.
+- **HA10** Receipt heads are the last sign in 80%+ of their occurrences in seal names.
+- **HA24** Bar-seal names at Harappa are matched by a receipt name more often than square-seal names at Harappa.
+- **HA25** Harappa seal names matched by a receipt come from later levels more often than other Harappa seal names.
+
+Number idioms (pooled A + B unless said)
+- **HA7** For signs after a numeral 5+ times on both seals and tablets (F), the commonest value is the same on both for
+  75%+ of them.
+- **HA8** In names with one numeral, the numeral is the first sign of the name more often than a random position of
+  the same name would be (paired sign test).
+- **HA9** 'Numeral + fish' is directly followed by the ending more often than 'numeral + another sign'.
+
+Tokens and time (F, Harappa)
+- **HA11** Moulded count tokens carry smaller values than incised ones (mean value, label permutation).
+- **HA12** Distinct moulded count-token texts come in more copies than distinct incised ones (mean copies, permutation).
+- **HA13** Among incised tablets, receipts are a smaller share in later levels.
+
+Titles (pooled A + B)
+- **HA14** Names headed by 861 end in 520 more often than names headed by 817 or 820.
+- **HA15** Headed stroke-pair fish names take 520 in 80%+ of cases.
+
+Seals, direction, labels
+- **HA16** Names on other-animal seals end in 520 more often than names on unicorn seals (F).
+- **HA17** Names on other-animal seals are shorter than names on unicorn seals (F, rank test).
+- **HA23** Bar-seal names end in 520 more often than square-seal names (F).
+- **HA18** Left-to-right pot texts contain a numeral more often than right-to-left pot texts (A).
+- **HA19** Left-to-right texts are 'numbers only' more often than right-to-left texts (A).
+- **HA20** Copper-tablet lines carry the heading less often than seal lines (A).
+- **HA21** 90%+ of copper tablets come from Mohenjo-daro (A).
+- **HA22** Texts on rods, bangles and miscellaneous objects (ROD, BNGL, MISC) carry an ending less often than seal texts,
+  length-stratified (F).
