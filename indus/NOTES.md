@@ -2293,6 +2293,12 @@ figures almost never replace human figures (1 of 138), and partners do not predi
 inferred. With loop 6: name slots are filled without regard to sound (in 503 languages) or to depicted class, except
 the fish family. Metric unchanged. Tally 1243 held, 1174 failed.
 
+## Hundred-and-ninety-seventh pass (24 Sept 2026): decipherment loop 8, are the depiction identifications coherent?
+
+Registered first (abab7d302). Depiction groups are real shape families (human figures, tools, fish), but only the fish
+are used alike (and tools weakly); human figures are used as distinct elements, and shape cohesion does not predict use
+cohesion. The picture is a weak guide to reading beyond the fish class. Metric unchanged. Tally 1248 held, 1177 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

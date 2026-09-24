@@ -7882,3 +7882,15 @@ letters; signs.FISH; noun_class.HUMAN).
 - **DI6** Weapons and implements are used alike.
 - **DI7** Across categories with 3+ signs, shape cohesion and context cohesion correlate (Spearman > 0).
 - **DI8** The fish series is used alike (context), the known positive case.
+
+## Results of the hundred-and-eighty-third set (added after the test; `predict_test183.py`, `results/predict_test183.md`)
+
+Five held, three failed. **The identification groups are coherent in shape**: human figures (DI1: mean IoU 0.38, p =
+0.001), weapons and implements (DI3: 0.23, p = 0.004) and the fish (DI4: 0.32, p = 0.001) each form a visual family.
+(DI2 had no case: Fairservis's A signs are all in HUMAN.) **But only some groups are used alike**: the fish strongly
+(DI8: context similarity 0.16, p = 0.001), weapons and implements weakly (DI6: 0.06, p = 0.04), human figures not at all
+(DI5: 0.05 over 7 signs, p = 0.27); across categories, looking alike does not go with being used alike (DI7: Spearman
+-0.07). Reading, with loops 6-7: the depictions are not simply wrong (the groups are visually real), but a shared
+picture does not mean a shared use, except for the fish, which behave as one family of variants of a single word or
+class; human-figure signs behave as distinct name elements. What a sign depicts is therefore a weak guide to its
+reading beyond the fish class. Metric unchanged. Tally, counting parts: 1248 held, 1177 failed (2425 registered).
