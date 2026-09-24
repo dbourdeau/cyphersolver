@@ -1534,6 +1534,12 @@ phrase '705/706 33 520' (46 of 55), not counted 520. After the ending: 400 is th
 look-alike 151) is the seal suffix of one-off names; each head takes one of them, chosen by the head's shape category.
 Tally 529 held, 598 failed.
 
+## Ninety-seventh pass (24 Sept 2026): what the suffixes do
+
+Registered first (eighty-third set, e63a28acb), tested (`predict_test83.py`). 400 marks an early Harappa incised-tablet
+entry, usually without a picture, added to names that also occur bare (often on seals), but not linked to local seal
+owners. 90 is not a clear owner mark; its seal bias is a city pattern. Tally 538 held, 609 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

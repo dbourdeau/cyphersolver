@@ -4063,3 +4063,18 @@ Both
 - **SF18** 95%+ of suffix lines are the only line on their object.
 - **SF19** Heads of 90 lines and of 400 lines overlap in at most 20% of their types (F).
 - **SF20** In A's own rows, 400 suffix lines are on tablets more often than 90 suffix lines.
+
+## Results of the eighty-third set (added after the test; `predict_test83.py`, `results/predict_test83.md`)
+
+Nine held, eleven failed. 400 marks a Harappa tablet entry: at Harappa 97% of 400 lines are on tablets (SF10; at
+Mohenjo-daro only 38% of its 21 are on seals, SF11), and in A's own rows 87% against 30% for 90 (SF20). 400 tablets are
+incised more often (SF3: 52% against 21% of other tablet name lines; object counts), belong to the earlier Harappa
+period more often (SF4: 72% against 56%), and carry a picture less often (SF7: 34% against 57%). The suffix is added to
+names that exist without it (SF8: 39% of 400 bodies), and the bare form is a seal name in 58% (SF9). But the entries are
+not tied to seal owners: 400 tablet bodies are no more often seal names than other tablet names (SF1: 24% against
+22%), nor at the same site (SF2, p = 0.098); they do not recur more (SF5) and are spread over many heads (SF6: top three
+32, 176, 817 cover 23%). 90 is not a clear 'owner' mark: 90 seal lines are not less headed (SF12), not more on
+unicorns (SF13), not less counted (SF14), are added to names attested bare in only 21% (SF15), and at the smaller sites
+and for 151 the suffix is not a seal form (SF16: 38%; SF17: 4 of 8). Suffix lines stand alone on their object (SF18:
+97%) and 90 and 400 serve different heads (SF19: 11 of 65 types shared). Tally, counting parts: 538 held, 609 failed
+(1147 registered).
