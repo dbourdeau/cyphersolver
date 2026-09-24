@@ -55,3 +55,20 @@ def world():
     w = groups(rows('wals_profile.tsv'), 'genus', lambda r: wals_ok(r, WALS_CORE))
     g = groups(rows('grambank_profile.tsv'), 'family', gb_ok)
     return share_excluded(w), share_excluded(g)
+
+
+def tolerant_wals(r, minc=3):
+    prof = {'26A': {'2', '3'}, '86A': {'1', '3'}, '87A': {'1', '3'}, '89A': {'1', '3'}}
+    return wals_ok(r, prof, minc)
+
+
+def majority(g):
+    """Groups whose assessed languages are mostly compatible (set 196)."""
+    return {k for k, v in g.items() if sum(v) > len(v) / 2}
+
+
+def world_tolerant():
+    """(WALS genera excluded, Grambank families excluded), tolerant profile and majority rule (set 196)."""
+    w = groups(rows('wals_profile.tsv'), 'genus', tolerant_wals)
+    g = groups(rows('grambank_profile.tsv'), 'family', gb_ok)
+    return 1 - len(majority(w)) / len(w), 1 - len(majority(g)) / len(g)
