@@ -149,3 +149,17 @@ difference than when depths are shuffled among the site's seals (10,000 times), 
 
 Hypothesis V holds if V1 and V2 both hold. If both fail, recurring names persist across levels (names or titles
 handed on); that is the alternative, and it counts for it only if the same-name pairs are also not closer than chance.
+
+## Results of the fifth set (added after the test; `predict_test5.py`, `results/predict_test5.md`)
+
+- **V1 fails.** 266 seals with a name and a known period (all but 8 from Mohenjo-daro); 36 same-name same-site pairs
+  from 14 names. Same period: 47% (17 of 36); periods shuffled within site: 46%; p = 0.49.
+- **V2 fails.** 449 Mohenjo-daro seals with a depth; 71 same-name pairs. Median depth difference 4.7 ft against 5.0 ft
+  shuffled; p = 0.37.
+- Tally: 2 held, 8 failed. Same-name seals are no closer in level or depth than any two seals of the site: the names
+  run across Intermediate and Late Mohenjo-daro (for example 415-100+740 on five seals in both periods, 176+740 on
+  four). This fits names or titles handed on, or a stock of names in use over generations, better than one holder
+  per name.
+- Limits: the test is weak. Mohenjo-daro's periods are coarse (each spans generations), the depths come from different
+  areas of the site with different datums, and the pairs are not independent (one name gives 10 of the 36 pairs). The
+  null band was 33-61%: only strong clustering could have shown.

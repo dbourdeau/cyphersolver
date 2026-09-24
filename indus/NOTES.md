@@ -923,6 +923,15 @@ man') personal names, at the same length. **Both parts fail**: length-matched re
 over 2+ sites 54% against 57%, both at or under a site-shuffled null. Recurrence is set by name length alone. Tally of
 registered predictions: 2 held, 6 failed. Unregistered observation: recurring names of both classes are not local.
 
+## Nineteenth pass (24 Sept 2026): do same-name seals come from the same level?
+
+Registered first (PREDICTIONS.md, fifth set, commit fcfc471e3), then tested (`predict_test5.py`,
+`results/predict_test5.md`). Hypothesis V: a recurring name marks one holder or one generation, so same-name seals
+should share a period (V1) and a depth (V2). **Both fail**: same period 47% against 46% shuffled (36 pairs, p = 0.49);
+Mohenjo-daro depth difference 4.7 ft against 5.0 ft (71 pairs, p = 0.37). Names run across Intermediate and Late
+Mohenjo-daro, which fits names or titles handed on. Weak test: coarse periods, datums differ by area, pairs not
+independent. Tally 2 held, 8 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
