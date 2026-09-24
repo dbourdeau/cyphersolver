@@ -8164,3 +8164,20 @@ grammar's bare-name rule is barely specific either (dropping it costs 26.8 point
 ones): a line of lexical signs ending in one of 177 attested heads is accepted almost regardless of order. G as defined
 overstates what the grammar captures; its real content is the margin (A 43.3, B 30.7 points). Tally, counting parts:
 1284 held, 1200 failed (2484 registered).
+
+# Hundred-and-ninety-third set, registered before testing (24 September 2026): decipherment loop 18, a specific grammar (six hypotheses)
+
+Metric after loop 17: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), G 80.2% (B 72.3%), P 0, L 4; streak 1. Set 192 showed G
+rewards permissive rules; the metric's grammar component becomes **G margin** = share of real lines parsed minus share
+of the same lines parsed after shuffling their signs (20 shuffles, seed 192). Base margins: A 43.3, B 30.7 points.
+Grammar G2, designed on A only: the base rules plus SHORT, ONE and U from set 192 (specific there), no SEQ, no OPEN,
+and BARE limited to heads seen 5+ times as a name head in A and more often as a head than as a modifier. On A its
+margin is 46.2 (designed there, so not a test).
+
+- **SP1** G2's margin on B exceeds the base grammar's by 1.5 points or more.
+- **SP2** G2's margin on F's extra lines exceeds the base grammar's.
+- **SP3** G2 parses fewer shuffled B lines than the base grammar (it is stricter where it matters).
+- **SP4** Lines that G2 drops from BARE (parsed by the base, not by G2) are more often unique to one object than lines
+  G2 keeps as BARE (one-object share, A + B; the dropped lines are the idiosyncratic ones).
+- **SP5** The share of B lines parsed by G2 stays 60% or more (the grammar still covers most of the corpus).
+- **SP6** Progress rule: SP1 and SP2 hold (G margin enters the metric and rises on both independent samples).
