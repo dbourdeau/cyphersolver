@@ -1948,6 +1948,13 @@ with content has now been used; what remains unknown (sound values, meanings, wh
 reached by further internal hypothesis tests and needs outside evidence (a bilingual, a secure cognate language, or
 archaeological context tying texts to contents). Tally 1045 held, 986 failed (2031 registered).
 
+## Hundred-and-fiftieth pass (24 Sept 2026): the West Asian texts against the later grammar
+
+Registered first (hundred-and-thirty-sixth set, 4a48d36ee), tested (`predict_test136.py`). The 18 West Asian lines lack
+the ending slot, name units and home openers and score 6.5 bits per sign under the home model, as foreign names should.
+New: they are full of stroke signs used inside the line (78% against 56%), hinting at phonetic use of strokes when
+spelling foreign names. Tally 1052 held, 989 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

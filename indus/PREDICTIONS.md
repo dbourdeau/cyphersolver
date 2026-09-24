@@ -6166,3 +6166,18 @@ Indus-region sites, lines of 2+ signs, length-matched where stated. Small sample
 - **WA8** West Asian lines hold a fish sign as often as home lines (two-sided p >= 0.05).
 - **WA9** The West Asian lines that end in 740 have a 740-class home head before it.
 - **WA10** West Asian lines are longer than home lines (rank test).
+
+## Results of the hundred-and-thirty-sixth set (added after the test; `predict_test136.py`, `results/predict_test136.md`)
+
+Seven held, three failed (18 West Asian lines, so all effects are rough). The West Asian texts break the home grammar in
+the ways foreign names should: they rarely end in the ending slot (WA1: 17% against 57%), start with signs that never
+open home names in 39% (WA3), end in a home head in only 67% (WA4, against 95% for held-out home names), rarely contain
+a home name unit (WA5: 20% against 50%), and the home benchmark model finds them hard to predict (WA6: 6.52 bits per
+sign against about 5.4 for new home lines). They use fish signs as often as home texts (WA8), and the two lines that
+end in 740 do so after 390, a regular 740-class head (WA9). One line ends in a closer (WA2 fails: '3 426'), and they
+are not significantly longer (WA10). The new observation is WA7, the reverse of the prediction: 14 of 18 West Asian
+lines contain a numeral sign against 56% at home, often inside the line ('924 1 319 31 55 2 150 416', '91 32 1 33',
+'415 803 1 717 354'), so in texts thought to spell foreign names the stroke signs are used heavily, as if for sound
+rather than count. This supports, weakly, the long-standing proposal that some stroke signs had phonetic (rebus)
+values, and it is a lead for the language-type and decipherment tests that follow. Tally, counting parts: 1052 held,
+989 failed (2041 registered).
