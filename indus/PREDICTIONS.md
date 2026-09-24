@@ -6033,3 +6033,14 @@ two-sided where marked.
 - **RS10** Rectangular seal lines are bare lines more often than square seal lines.
 - **RS11** 90%+ of rectangular seals with a material recorded are steatite.
 - **RS12** The first sign depends on seal shape (MI over lines).
+
+## Results of the hundred-and-thirty-second set (added after the test; `predict_test132.py`, `results/predict_test132.md`)
+
+Five held, seven failed. Rectangular seals (256) differ from square ones (1,312) in content but not in circumstances:
+fewer of their lines are names (RS1: 39% against 50%), their names take 520 less (RS4: 11% against 19%), they use
+formula-only signs more (RS7: 27% against 21%), they are steatite (RS11: 93%), and their opening sign differs (RS12, p =
+0.007). They are not later (RS2, p = 0.054), not more provincial (RS3), not less headed (RS5), not more repeated (RS6),
+not smaller (RS8: larger, 29.3 against 26.7 mm), and do not carry more closers (RS9) or bare lines (RS10). Their genre
+mix: names 101, counts 65, other 44, closers 25, bare 21 lines. Reading: a pictureless steatite seal type used a little
+more for counts and formula words, not a separate period or region. Tally, counting parts: 1018 held, 983 failed (2001
+registered).

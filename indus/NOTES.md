@@ -1896,6 +1896,12 @@ Registered first (hundred-and-thirty-first set, 7c59f3fba), tested (`predict_tes
 were text length; later Harappa seals are bigger in their own right (+6.7 mm). Rectangular seals are a separate kind:
 pictureless (96%), more counting, more Harappan. Tally 1013 held, 976 failed.
 
+## Hundred-and-forty-sixth pass (24 Sept 2026): the rectangular seals
+
+Registered first (hundred-and-thirty-second set, f7f0f4e15), tested (`predict_test132.py`). Rectangular seals are
+pictureless steatite seals with fewer names, fewer 520 names and more formula words, but no different in date, region,
+heading or repetition. Tally 1018 held, 983 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
