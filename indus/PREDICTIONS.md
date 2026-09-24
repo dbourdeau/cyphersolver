@@ -3377,3 +3377,20 @@ The stock of names
 - **AM18** Unicorn seals (Bull1) are whole-name lines (the line is a name line) more often than other-motif seals.
 - **AM19** A body's ending is predicted by its head better than by its first sign (MI, bodies of 2+).
 - **AM20** Names at other sites are shorter than names at the two cities (rank test, F).
+
+## Results of the sixty-ninth set (added after the test; `predict_test69.py`, `results/predict_test69.md`)
+
+Thirteen held, seven failed. The name stock looks like personal names. 81% of distinct names are on one object only
+(AM14), the repeated ones are short (AM15: 2.4 against 4.0 signs), and 72% of the one-off names of 3+ signs are built
+with at least one stock unit (AM16). Names are local: fewer bodies occur at both cities than site-shuffles give (AM1: 32,
+p = 0.0001), repeated seal texts stay at one site (AM2: 30 of 76, p = 0.0002), and names cited inside formulas are
+attested as names at the formula's own site (AM4: 99 of 149, p = 0.013). But a long name and the shorter name it ends in
+are not found together (AM3: p = 0.83), so the 'name ending in a name' pattern is not a local family or patronymic
+link. The cities differ: Harappa names are shorter (AM5: 2.9 against 3.6 signs), use 520 a little more (AM10: 18%
+against 14%, p = 0.043) and contain numerals less (AM13: 34% against 41%). Counted fish are small numbers, mostly 2
+(AM11: 82% are 1-3; 121 of 200 are 2), and each fish variant has its own typical count (AM12, p = 0.0001). Unicorn
+seals carry a text that is only a name more often than other seals (AM18: 52% against 41%). The head predicts the
+ending better than the first sign (AM19: 0.45 against 0.22 bits), restating the head-final rule. Failures: the two
+endings rarely alternate on one body (AM7: 10 bodies) and 520 is not an off-seal form (AM8, AM9, the other way); the
+heads of the smaller sites are not all city heads (AM6: 79%); common openers are not especially productive (AM17);
+small-site names are not shorter (AM20). Tally, counting parts: 399 held, 468 failed (867 registered).

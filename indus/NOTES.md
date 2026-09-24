@@ -1430,6 +1430,14 @@ Registered first (sixty-eighth set, 52779dd3d), tested (`predict_test68.py`). Mo
 the count tokens 33 700 and 34 700 and a few short Harappa names; tablets do not in general reproduce seals. Matches
 are local (same site). Tally 386 held, 461 failed.
 
+## Eighty-third pass (24 Sept 2026): twenty hypotheses on names as names
+
+Registered first (sixty-ninth set, 7d77b5ab7), tested (`predict_test69.py`). The names behave like a local stock of
+personal names: 81% one-off, one-offs built from stock units, repeats short, names and repeated seal texts tied to one
+site, cited names local to the citing formula. 'A name ending in a name' is not a local family link. Harappa names are
+shorter, with fewer numerals and slightly more 520; counted fish are mostly 2; unicorn seals carry pure names more
+often. Tally 399 held, 468 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
