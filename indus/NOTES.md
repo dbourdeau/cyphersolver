@@ -2432,6 +2432,12 @@ Registered first (7231cba34). Tamil Nadu graffiti composites (Rajan and Sivanant
 model: top-1 36.2% -> 38.2%, A -> B 29.9% -> 31.8%; adopted (metric 37.9% / 60.0%). Progress: streak 0. Tally 1328
 held, 1229 failed.
 
+## Two-hundred-and-nineteenth pass (24 Sept 2026): decipherment loop 30, a key scorer that passes the Linear B gate
+
+Registered first (4bad1d0c6). Character-LM scorer (lmkey.py): Ventris's key beats 100 of 100 shuffles on held-out
+Linear B lines with a Greek model; with a Sanskrit model 9 of 100 (language-specific). Tier 2: 2 of 4 methods pass.
+Two-direction WORD does not replicate. Progress: streak 0. Tally 1332 held, 1231 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

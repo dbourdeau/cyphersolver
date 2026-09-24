@@ -8572,3 +8572,16 @@ permuted among signs of similar frequency, bench.shuffles). Specificity: the sam
 - **GA4** Two-direction WORD top-10 on the fixed test beats the forward model by 1 point or more.
 - **GA5** The same A -> B (trained on A, B's new lines, first 300).
 - **GA6** Progress rule: GA1 and GA2 hold (a key scorer that passes the gate and is language-specific), or GA4 and GA5.
+
+## Results of the two-hundred-and-fifth set (added after the test; `predict_test205.py`, `results/predict_test205.md`, `lmkey.py`)
+
+Four held, two failed. **A key scorer that passes the Linear B gate.** Decoded lines joined without dividers and scored
+by a character n-gram model of Greek (Linear B spelling) separate Ventris's values from shuffled keys: on the design
+(odd) lines every order from 3 to 5 puts the real key above all 100 shuffles (order 5 chosen); on the held-out even
+lines the real key scores -4.247 bits/char against shuffles -4.730 to -4.473 (median -4.565), 0 of 100 as good (GA1).
+With a Sanskrit model the real key is not distinguished (9 of 100 shuffles as good; GA2) and its margin is a sixth of
+the Greek one (0.054 against 0.318 bits/char; GA3). This is the first key-scoring method in the folder that recovers
+a known answer and is language-specific; the dictionary-parse key bench does not (`linb_control.md`). Prize tier 2:
+C = 2 of 4 methods passed. The two-direction WORD model gains on the fixed test (top-10 3.0% -> 3.9%) but not A -> B
+(2.5% both; GA4, GA5 fail). Progress (GA6): streak 0. Next: the published Indus keys through this scorer. Tally,
+counting parts: 1332 held, 1231 failed (2563 registered).
