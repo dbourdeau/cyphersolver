@@ -3922,3 +3922,20 @@ Controls
 - **CG18** Names cited inside formulas have the same 740 share (in their name lines) as other names (p >= 0.05).
 - **CG19** Seal names and tablet names with the same head have the same ending share (F; stratified, p >= 0.05).
 - **CG20** B alone: CG2 (the 400 context) has no within-head effect (p >= 0.05).
+
+## Results of the eightieth set (added after the test; `predict_test80.py`, `results/predict_test80.md`)
+
+Eleven held, nine failed. The answer is mostly 'class', with one context that forces 740. Class: 43 of 52 heads with
+5+ distinct names take one ending in 90%+ (CG7), and this holds in B (CG8: 19 of 23), at Harappa (CG9: 13 of 16) and at
+Mohenjo-daro (CG10: 28 of 35); only 19 of 1,070 bodies occur with both endings (CG11); the heads that waver are fish
+far more often (CG13: 5 of 15 against 3 of 162). The 520 class is not only fish, though: of 11 heads taking 520 in the
+majority, 5 are fish (220, 233, 235, 231, 240) and the rest are 1, 175, 382, 70, 33, 72 (CG12 fails). There is no
+concord: the opener's or the pre-head sign's own class does not match the name's ending (CG14, CG15), a fish head does
+not take its neighbour's class (CG16), and two names in one line do not agree more than chance (CG17). Context mostly
+does not matter: not the heading (CG3), the city (CG4), counting (CG6), nor seal against tablet (CG19 control, p =
+0.11; CG1 seal against any off-seal object is p = 0.037, borderline). The one strong context is what follows the
+ending: within heads that take both endings, a following sign goes with 740 (CG5: -60 points, p = 0.0002; CG2 for 400
+alone: p = 0.021; CG20 in B: p = 0.14). Post-test count on distinct lines: 740 is followed by 400 (114), 90 (69) and
+151 (8); 520 by 400 only (10) and never by 90 or 151. So the post-name signs attach to 740: '740 90' and '740 151' are
+collocations, not a case alternation of the head. Names cited in formulas are 740 less often (CG18: 72% against 87%),
+so citation is not neutral. Tally, counting parts: 506 held, 581 failed (1087 registered).

@@ -1512,6 +1512,14 @@ fails: 'name headers' are single signs that are also 1-sign names, not seal owne
 headers are short, numeral-first formulas are a Harappa form, and the cities count different items. Tally 495 held,
 572 failed.
 
+## Ninety-fourth pass (24 Sept 2026): case or class?
+
+Registered first (eightieth set, 458c296cd), tested on distinct lines and names (`predict_test80.py`). The ending is a
+class of the head, like grammatical gender: fixed per head in both cities and both transcriptions, with no concord and
+no change by object, city, heading or counting. The 520 class is fish plus a few other heads (1, 175, 382, 70, 33, 72).
+Post-name signs 90 and 151 attach only to 740 (740 90 x69, 520 90 x0). Names cited in formulas lean 520. Tally 506
+held, 581 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
