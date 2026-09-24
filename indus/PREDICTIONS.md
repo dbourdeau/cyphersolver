@@ -7723,3 +7723,24 @@ ending (about 88% of names), so 'takes 740' is weak evidence class by class (25 
 0.04); the clear evidence is the fish class and the overall MI. What M+ says is that the depicted category of a name's
 head is part of how the script works (fish names form their own ending class), not that any word is read. Tally,
 counting parts: 1235 held, 1152 failed (2387 registered).
+
+# Hundred-and-seventy-ninth set, registered before testing (24 September 2026): decipherment loop 4, sound values from substitution (seven hypotheses)
+
+Metric after loop 3: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loop 4 aims at P. Test: in a script that writes
+sound, signs that replace each other in the same slot of otherwise identical words should often sound alike, so a
+correct key gives substitutable sign pairs more similar values than a shuffled key does. Substitution pairs: minimal
+pairs of distinct name bodies (A + B, R.name_of) of equal length differing at one position, both signs lexical (not
+numerals, endings, closers, 400, 90), each sign pair weighted by the number of frames it appears in. Similarity of two
+values = 1 - Levenshtein distance / longer length on the consonant skeleton (bench.skel) plus the vowels. Chance = the
+key's values shuffled among its keyed signs (1,000 draws, one-sided p). Keys: Fairservis 1992 (Dravidian), Parpola 1994
+(Dravidian), Yajnadevam 2024 (Sanskrit, xlits.csv), Mahadevan 2014, Kak 1988. Control with a known answer: Linear B
+(DAMOS lexicon words; syllabograms with their standard values, minimal pairs of distinct words). Rule for P: a key's
+signs count toward P only if it passes on A-names and on B-names separately and the Linear B control passes.
+
+- **SP1** Linear B: substitutable syllabograms have more similar values than shuffled values (the method can see sound).
+- **SP2** Fairservis's key passes (p < 0.05, 10+ keyed pairs).
+- **SP3** Parpola's key passes.
+- **SP4** Yajnadevam's key passes.
+- **SP5** Mahadevan's 2014 key passes.
+- **SP6** Kak's 1988 key passes.
+- **SP7** At least one key passes on both A-names and B-names separately (the P rule).
