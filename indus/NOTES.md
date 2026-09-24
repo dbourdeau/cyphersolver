@@ -1366,6 +1366,12 @@ Registered first (fifty-ninth set, 7b97bf3db), tested (`predict_test59.py`). 'He
 unit, independent of city and ending; the three heading signs also occur inside lines (25% of tokens). HD2/HD3 are
 confounded by the 2 being a numeral. Tally 341 held, 416 failed.
 
+## Seventy-fourth pass (24 Sept 2026): are rare signs variants? (loop 3, round 4)
+
+Registered first (sixtieth set, c3512b34b), tested (`predict_test60.py`). Frame matching does not identify rare signs as
+variants of common ones: the best match is unstable across transcriptions and does not share position or ending. Rare
+signs lean to formulas. Tally 345 held, 422 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

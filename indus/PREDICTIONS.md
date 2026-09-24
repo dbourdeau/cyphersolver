@@ -3093,3 +3093,14 @@ fails), so these signs also occur inside lines. Tally, counting parts: 341 held,
 - **VR8** Rare-sign tokens are line-final more often than common-sign tokens.
 - **VR9** For 10%+ of lines holding one rare sign, replacing it with its best match gives an attested line.
 - **VR10** The best match is among the 20 commonest signs for 50%+ of rare signs with a match.
+
+## Results of the sixtieth set (added after the test; `predict_test60.py`, `results/predict_test60.md`)
+
+Four held, six failed; the variant hypothesis is not supported. The held tests have no null and are expected by
+chance: rare-sign tokens mostly sit in frames also used by a common sign (VR1: 76%), the best match is usually a very
+common sign (VR10: 73% in the top 20), and swapping in the match gives an attested line 13% of the time (VR9). The tests
+that would show a real variant relation fail: the best match differs between A and B (VR2: 3 of 13 agree), does not
+share the rare sign's position (VR3: 69%) or ending (VR4: 58%), and rarely shares its category (VR7: 1 of 4). Rare
+signs are commoner in formulas (VR6: 57% against 42%) but not off the seals (VR5, the other way) and not line-final
+(VR8: 14% against 26%). With 2-5 tokens per sign, frame matching cannot recover variants; rare signs stay unassigned.
+Tally, counting parts: 345 held, 422 failed (767 registered).
