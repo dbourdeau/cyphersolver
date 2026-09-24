@@ -5939,3 +5939,14 @@ Genres as in the hundred-and-eighth set; units as in the sixty-first; F' = F wit
 - **CW8** Under 20% of excess pairs contain 740 or 520.
 - **CW9** 20%+ of excess pairs chain with another (one's right member is another's left member).
 - **CW10** 60%+ of excess pairs occur in F' lines that are absent from A + B.
+
+## Results of the hundred-and-twenty-ninth set (added after the test; `predict_test129.py`, `results/predict_test129.md`)
+
+Six held, four failed. The 105 strong pairs are shared collocations, not fixed compounds. They cross genres (CW3: 70%),
+are shared by the cities (CW4: 76%), recur in B (CW5: 87%), rarely include an ending (CW8: 12%), and nearly all chain
+into longer sequences with other strong pairs (CW9: 91%). But their order is not rigid (CW1: 73% keep one order under 5%
+reversal), the left member does not usually call the right (CW2: 10%), fewer than half are the name units (CW7: 39%), and
+under half turn up again in the F lines that A + B lack (CW10: 41%). CW6 (99% share a frame with a single sign) holds
+but is weak, since short frames such as line boundaries are shared by almost everything. Reading: frequent but loose
+collocations that string together, consistent with the pairwise-precedence picture of earlier sets rather than a
+lexicon of two-sign words. Tally, counting parts: 996 held, 969 failed (1965 registered).

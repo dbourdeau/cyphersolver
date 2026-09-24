@@ -1877,6 +1877,12 @@ Registered first (hundred-and-twenty-eighth set, 7dc3d2db3), tested (`predict_te
 (17x chance), e.g. fish never directly before 390 or 400, 415 never before 740; a quarter of common signs never precede
 740. Shape families carry only 5% of the order information: sequencing is sign-specific. Tally 990 held, 965 failed.
 
+## Hundred-and-forty-third pass (24 Sept 2026): the strong pairs as compounds
+
+Registered first (hundred-and-twenty-ninth set, 48756472d), tested (`predict_test129.py`). The strong pairs are loose,
+chaining collocations shared across genres, cities and transcriptions, not fixed two-sign words (order not rigid, weak
+dependency, under half are units). Tally 996 held, 969 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
