@@ -7813,3 +7813,20 @@ usable pairs. Families from CLICS4's Family_Name; Indo-Aryan = Indo-European lan
 - **LS7** The top-ranked language has z >= 2 on A-pairs and on B-pairs separately (a P candidate).
 - **LS8** Control: with the concepts shuffled among the signs (20 shuffled maps), Dravidian's mean percentile falls
   below its real value in 19 of 20 (any Dravidian lead depends on the depictions).
+
+## Results of the hundred-and-eighty-first set (added after the test; `predict_test181.py`, `results/predict_test181.md`)
+
+Four held, four failed. 83 signs mapped to 23 depicted concepts; 100 concept pairs among substitutable signs; 503
+CLICS4 languages scored. **No language signal.** Dravidian (Kannada, Malayalam, Tamil, Telugu) and Indo-Aryan
+(Bengali, Hindi; Northern Pashto caught by the region filter) both sit at the 44th percentile (LS1, LS2 fail), Dravidian
+slightly above Indo-Aryan in mean z (LS3: -0.22 against -0.41, both below zero). No family stands out (LS4: best Uralic
+0.33), and the median z is -0.14 (LS5 holds: the test does not reward every language). The top languages (Ao Chungli
+z 3.12, Embera, Lower Sorbian, Dargwa dialects, Hungarian) are what the maximum of 503 draws gives by chance (about 3):
+LS7 'holds' (Ao Chungli A z 2.53, B z 2.08) but is a multiple-comparison artefact, not a P candidate. LS6's high
+stability (0.79) reflects that A and B share most concept pairs, so the two samples are not independent at this level.
+The shuffled-map control (LS8) puts Dravidian at 0 or near it in most shuffles, below its real 0.44 in 15 of 20, short of
+the registered 19. Reading: basic words for what the signs depict, in any of 503 languages, do not make substitutable
+Indus signs sound alike. Either the substitutions are not phonetic (signs alternate as words, not as sounds), or the
+depictions are misidentified, or the language is not represented; a simple rebus reading of the depicted signs is not
+supported. P stays 0; L unchanged (no family excluded, none favoured). Tally, counting parts: 1242 held, 1167 failed
+(2409 registered).

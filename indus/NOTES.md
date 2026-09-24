@@ -2279,6 +2279,13 @@ Sanskrit and Sumerian under the substitution test: none passes on both samples. 
 glossary words ('man' = agredadus, anmu·ṛo·n), so no language inference; loop 6 repeats it with a basic-word lookup.
 Tally 1238 held, 1163 failed.
 
+## Hundred-and-ninety-fifth pass (24 Sept 2026): decipherment loop 6, world-wide language search by rebus substitution
+
+Registered first (e9c7583d4). 503 CLICS4 languages scored by how well their basic words for the depicted concepts (83
+signs, 23 concepts) make substitutable Indus signs sound alike. No signal: Dravidian and Indo-Aryan both at the 44th
+percentile, the top languages at chance level for 503 draws. A simple rebus reading of the depicted signs is not
+supported in any language. P 0, L unchanged. Tally 1242 held, 1167 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
