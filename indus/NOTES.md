@@ -1931,6 +1931,23 @@ identified) are a consistent sign-by-sign phonetic substitution (1.8 letters per
 but they give 740 no fixed sound, which conflicts with 740's rigid suffix behaviour. Consistency check only. Tally 1045
 held, 986 failed.
 
+## Loop end (24 Sept 2026): saturation of internal hypothesis testing
+
+Self-directed test-learn-propose loop, sets 117-135 (224 hypotheses). What it added: (1) the 'other' lines are
+extensions of the known genres (3 of 2,722 unassigned); (2) the closers are endings, alternating with 740 on the same
+bodies, taking 400, stacking after 740 in a fixed order, so the ending slot is a head-chosen paradigm; (3) held-out
+benchmarks (heads 95% known, head predicts ending 90% against an 85% base rate, 4.66 bits per sign with position +
+context; roles add nothing once position and context are in; lines anchored at their end; shape blocks help unseen
+signs); (4) forbidden sign pairs at 17x chance, with order sign-specific rather than family-level; (5) physical side:
+seal size tracks text length, later Harappa seals are bigger at equal length, rectangular seals are a pictureless
+steatite type, moulded tablets are faience; (6) our genres agree with ICIT's independent text codes, the closer
+inscriptions being new; (7) the Sanskrit-based readings stored in the dump are a consistent sign-by-sign substitution
+that gives 740 no fixed sound. Why stop: the last rounds on each thread returned nulls or replications (sets 120,
+121, 126, 127, 129, 133); the 520 class is lexical per head with no contextual cue left to test; every record field
+with content has now been used; what remains unknown (sound values, meanings, what the counts record) cannot be
+reached by further internal hypothesis tests and needs outside evidence (a bilingual, a secure cognate language, or
+archaeological context tying texts to contents). Tally 1045 held, 986 failed (2031 registered).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
