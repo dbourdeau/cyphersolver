@@ -2522,3 +2522,17 @@ count them alike). A, B, F (lines reversed); names as before. 10,000-draw permut
 - **DB8** A double is split by a line break less often than other gaps (M77 multi-line texts, both line orders).
 - **DB9** Harappa lines contain a double more often than Mohenjo-daro lines, length-stratified (F).
 - **DB10** The three commonest doubled signs account for 60%+ of all doubles (pooled).
+
+## Results of the forty-first set (added after the test; `predict_test41.py`, `results/predict_test41.md`)
+
+Three held, seven failed. Doubling is deliberate (DB1: 118 doubles in A, 80 in B, both above every shuffle, p = 0.001
+on 1,000 shuffles) and name bodies avoid repeating a sign at a distance (DB6: 13 of 775 bodies in A, 6 of 224 in B,
+p = 0.001 and 0.017), so a repeat is either adjacent or absent. DB3 holds but on one sign only (832, the only sign with
+3+ names of each kind); it is not evidence. The rest fail: doubled tokens are not more often inside the name (DB2, 62%
+against 65%); no body with a double is attested with the single sign instead (DB4, 0 against 4 discordant); tablets
+and seals double alike (DB5); lines with a double are longer, not shorter (DB7, mean 5.5 against 4.6); line breaks do
+not avoid doubles (DB8, 5 of 36, p = 0.17); Harappa does not double more (DB9); doubles are spread over many signs
+(DB10, 615 alone is 90 of 198, the top three 57%). Doubling is one sign's habit (615, the 'jar-pair') plus a thin
+scatter; a double is its own unit, never a variant spelling of the single sign. Deviations: DB1 and DB6 used 1,000
+shuffles; DB4 was run as a paired sign test (removing a sign of the double against removing a random other sign of the
+same body) rather than a permutation of positions. Tally, counting parts: 236 held, 341 failed (577 registered).

@@ -1231,6 +1231,13 @@ Registered first (fortieth set, b28b2cdfb), tested (`predict_test40.py`). Nine o
 alone (number system, affixed fish, head-ending rule, fish variants, number idioms); long lines with two names narrowly
 miss (MB8, p = 0.060). Tally 233 held, 334 failed.
 
+## Fifty-fifth pass (24 Sept 2026): repeated and doubled signs (round 5 of 10)
+
+Registered first (forty-first set, cfaa7469f), tested (`predict_test41.py`). Adjacent doubles are deliberate and
+non-adjacent repeats inside a name are avoided (DB1, DB6). A doubled sign is not a variant of the single sign (no
+alternation, DB4) and doubling is not tied to genre, site or line length; nearly half the doubles are sign 615. Tally
+236 held, 341 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
