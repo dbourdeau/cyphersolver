@@ -7894,3 +7894,22 @@ Five held, three failed. **The identification groups are coherent in shape**: hu
 picture does not mean a shared use, except for the fish, which behave as one family of variants of a single word or
 class; human-figure signs behave as distinct name elements. What a sign depicts is therefore a weak guide to its
 reading beyond the fish class. Metric unchanged. Tally, counting parts: 1248 held, 1177 failed (2425 registered).
+
+# Hundred-and-eighty-fourth set, registered before testing (24 September 2026): decipherment loop 9, is the cage a grammatical affix? (seven hypotheses)
+
+Metric after loop 8: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Two of the closers (226, 241) are fish drawn
+inside a 'cage' of four small strokes. If the cage is a grammatical marker that attaches to many signs, that is a
+compositional rule inside the signs, the kind of structure a decipherment builds on. Caged / base pairs from Parpola's
+sign list (CISI digitisation, cisi.p2icit; 'caged by four small vertical strokes'): 226/220, 232 and 153/231, 236/235,
+241/240, 144/142, 393/tree family (390, 392, 405, 406, 407, 409, 48, 64), 895/892, 466/A family (465, 467, 468, 471,
+472, 474), 804/leaf-tree (803, 838), 878/877, 689/71. Distinct lines of A + B unless stated. 'Final' = last sign of the
+line, or followed only by 400 / 90. Fisher tests pool the tokens of all caged signs against all their bases.
+
+- **CG1** Caged signs are line-final more often than their bases.
+- **CG2** Caged signs are followed by 740 or 520 less often than their bases (the cage takes the place of the ending).
+- **CG3** The effect is not only the fish: CG1 holds for the non-fish pairs pooled.
+- **CG4** Caged and base signs share their preceding signs (cosine of preceding-sign distributions, pooled pairs) more
+  than random sign pairs of similar frequency do (the cage attaches to the same stems).
+- **CG5** CG1 holds on B alone.
+- **CG6** Caged signs are used as closers: 60%+ of their tokens are line-final with no 740 / 520 anywhere after them.
+- **CG7** If CG1, CG2 and CG6 hold, R gains a 'caged marker' role for caged tokens not already counted (adoption rule).
