@@ -1258,6 +1258,13 @@ Registered first (forty-fourth set, 512e3a236), tested (`predict_test44.py`). Li
 and form their own genre: shorter, numeral-rich, off the seals, commoner at Harappa, rarely ending in a head sign; a
 fifth embed an attested name body. Tally 254 held, 353 failed.
 
+## Fifty-ninth pass (24 Sept 2026): names inside the other formulas (round 9 of 10)
+
+Registered first (forty-fifth set, cb47618d7), tested (`predict_test45.py`). Non-name lines are number-first formulas
+(numeral first 47% against 24%; numeral + sign in half the 2-sign lines). The names they embed are the common names and
+are followed by varied signs (often 845, 151, 156). 400 after a name and 400 in these formulas are separate uses: in
+formulas it never follows a name body. Tally 260 held, 357 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

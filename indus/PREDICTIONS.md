@@ -2654,3 +2654,16 @@ that is an attested name body (A + B pooled; ties to the rightmost). 10,000-draw
 - **EM8** The first sign depends on the line kind (non-name against name lines; MI, permutation).
 - **EM9** 2-sign non-name lines are numeral + sign more often than 2-sign name bodies are.
 - **EM10** Non-name lines ending in 400 have an embedded body directly before the 400 in 30%+ of cases.
+
+## Results of the forty-fifth set (added after the test; `predict_test45.py`, `results/predict_test45.md`)
+
+Six held, four failed. 300 of 2,019 non-name lines embed an attested name body. The embedded names are the common ones
+(EM2: 2-sign bodies used as names 3.4 times on average against 1.7 for those never embedded) and combine freely with
+what follows (EM3: 40 of 53 have 2+ different followers). Embedding lines sit off the seals (EM4: +10 points,
+length-stratified). The formula genre is number-first: a numeral opens 47% of non-name lines that have one, against 24%
+of name lines (EM7); half of 2-sign non-name lines are numeral + sign against 17% of 2-sign bodies (EM9); the first sign
+alone separates the two kinds (EM8, p = 0.0001). What follows an embedded name is not a post-name or container sign
+(EM1: 12%; commonest 845, 151, 156), what precedes it is not mostly a number or heading (EM6: 28%), Harappa does not
+embed less (EM5), and 400 in non-name lines never follows a name body (EM10: 0 of 170; it follows 156, 158, 892, 137),
+so 400 there is a different use from the post-name 400 of the receipts. Tally, counting parts: 260 held, 357 failed
+(617 registered).
