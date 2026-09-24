@@ -7744,3 +7744,14 @@ signs count toward P only if it passes on A-names and on B-names separately and 
 - **SP5** Mahadevan's 2014 key passes.
 - **SP6** Kak's 1988 key passes.
 - **SP7** At least one key passes on both A-names and B-names separately (the P rule).
+
+## Results of the hundred-and-seventy-ninth set (added after the test; `predict_test179.py`, `results/predict_test179.md`)
+
+One held, six failed. **The method can see sound**: in Linear B, syllabograms that replace each other in minimal pairs
+of words have more similar standard values than shuffled values (SP1: 2,111 pairs, 0.256 against 0.213, p = 0.001).
+**No published Indus key passes**: Fairservis (SP2: 676 pairs, p = 0.10), Parpola (SP3: 48, p = 0.16), Yajnadevam
+(SP4: 3,570, p = 0.08); Mahadevan's and Kak's keys cover almost no substitution pairs (SP5, SP6). Two keys pass on A's
+names and fail on B's (Fairservis p = 0.04 then 0.54; Yajnadevam p = 0.03 then 0.39): Yajnadevam's key was fitted to the
+indus-website corpus from which A derives, so an A-only pass followed by a B failure is the signature of fitting, not of
+true values. SP7 fails; P stays 0. The test is kept as a tool: any proposed sound key must pass it on both samples.
+Tally, counting parts: 1236 held, 1158 failed (2394 registered).

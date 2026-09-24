@@ -2265,6 +2265,13 @@ Registered first (98d1e4201). On B, the depiction of a name's head (Fairservis) 
 new component M+ = 41.4% (M strict 16.6%); the 740 classes are weak evidence one by one because 740 is the default.
 Tally 1235 held, 1152 failed.
 
+## Hundred-and-ninety-third pass (24 Sept 2026): decipherment loop 4, sound values from substitution
+
+Registered first (e41f01571). Substitutable signs should sound alike under a correct key; the test detects sound in
+Linear B (p = 0.001) but no published Indus key passes on both samples (Fairservis and Yajnadevam pass on A only, the
+mark of fitting). P stays 0; the substitution test becomes a standing filter for any proposed key. Tally 1236 held,
+1158 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
