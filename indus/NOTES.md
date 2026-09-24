@@ -2152,6 +2152,13 @@ person profile (ratios 3.0 against 3.7 and 3.4); sharing falls with length in bo
 beyond sign shuffles (Linear B persons 33, Ur III legends 3); 520 names recur more than 740 names beyond chance (50
 against 19). Set 152's comparison survives length control. LM9 degenerate. Tally 1163 held, 1085 failed.
 
+## Hundred-and-seventy-eighth pass (24 Sept 2026): standardisation over time and seal types
+
+Registered first (3af4b42ab). Mohenjo-daro long names beginning with a frequent opener rise from 39% to 66% (Harappa
+already 75% early); the rise holds on square seals alone, is not numerals, and is spread over several openers.
+Rectangular seals are later and use the frequent openers more. Names stay individual (no more recurrence late).
+Mohenjo-daro converges on Harappa's name openings. Tally 1168 held, 1090 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

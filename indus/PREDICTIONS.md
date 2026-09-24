@@ -7166,3 +7166,18 @@ III legends 3 times beyond lemma shuffles (LM7). So the shared names are real re
 combinations. 520 names recur more beyond combinatorics than 740 names (LM8: excess 50 against 19), fitting the 520
 class as a narrow set of widespread names. LM9 fails by construction (Ur III owner names are single lemmas, so
 shuffling cannot change them; excess 1). Tally, counting parts: 1163 held, 1085 failed (2248 registered).
+
+## Results of the hundred-and-sixty-fourth set (added after the test; `predict_test164.py`, `results/predict_test164.md`)
+
+Five held, five failed. **Name openings standardise over time at Mohenjo-daro.** Long names beginning with one of the
+33 frequent openers go from 39% early to 66% late there (TS1, p = 0.0004); Harappa is already at 75% early and 88% late
+(TS2 fails, n.s.). The rise holds on square seals alone (TS8: +0.23, p = 0.0007), so it is not only the later spread
+of rectangular seals, though rectangular seals are indeed later (TS6: +0.15, p = 0.007) and use the frequent openers
+more (TS7: 77% against 57%). It is not carried by numerals (TS3 fails: numeral openers -0.02; the non-numeral
+frequent openers +0.29), and checked after the test it is spread over several openers (late Mohenjo-daro: 32, 692,
+920, 806, 803, 503, 798, 61; early: 920, 240, 140, 803). Whole names do not recur more in late levels (TS4: 4.8%
+against 5.3%), and the late name population is only slightly less open (TS5: 7.7 against 10.1 times observed, on 2
+and 4 recaptures, weak). Sealings are not shorter than seals (TS9); Lothal's 13 long sealing names all begin with a
+frequent opener, Kalibangan has one (TS10 fails for lack of data). Reading: over the levels Mohenjo-daro's seal names
+converge on the openings Harappa already used, while the names themselves stay individual: a spreading convention
+for how names begin, not fewer names. Tally, counting parts: 1168 held, 1090 failed (2258 registered).
