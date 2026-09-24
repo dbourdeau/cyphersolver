@@ -1331,3 +1331,38 @@ even the numerals as a class. Left contexts carry more class information than ri
 fits the head-final structure: a sign's class shows in what precedes it.
 
 Tally, counting parts: 82 held, 143 failed (225 registered).
+
+# Twenty-fourth set, registered before testing (24 September 2026): reading order, numbers, and seals as owned objects
+
+Twelve hypotheses on questions not yet asked. Conventions as before (A = data/corpus.tsv, which records each text's
+direction; B = M77 additions; F = the fuller corpus, lines as listed; names; head class as K; 10,000-draw
+permutations; p < 0.05; A and B both where named). 'Attested pair' = an adjacent sign pair found in single-line texts
+of the sample other than the text itself.
+
+Reading order
+- **M1 The recorded direction is right.** For A's texts recorded as left-to-right (field 'direction' L/R), the share of
+  their adjacent pairs that are attested pairs is higher read in the recorded order than reversed (paired sign test
+  over texts).
+- **M2 Left-to-right texts come from outside the two big cities** more often than right-to-left texts (A, Fisher).
+- **M3 Line order in M77.** For B's multi-line texts, the pair across each line junction is an attested pair more often
+  with lines as listed than reversed (sign test over junctions that differ).
+- **M4 Line order in the fuller corpus.** The same on F's intact multi-line texts.
+
+Numbers
+- **M5 Compound numbers descend.** Where two stroke numerals stand side by side, the larger value comes first more often
+  than the smaller (sign test). A and B.
+- **M6 The tiered form is for larger numbers.** Among numerals of value 5-8, the tiered form is a larger share than
+  among numerals of value 3-4. A and B.
+- **M7 Numbers before fish are larger.** Numerals directly before a fish sign (signs.FISH) have a higher mean value than
+  numerals directly before other signs (label permutation). A and B.
+- **M8 The clitics have a fixed order.** Where 90 and 400 both follow an ending, 400 comes first more often than not
+  (sign test, pooled A + B).
+
+Seals as owned objects (F, distinct intact seals)
+- **M9 One name, one emblem.** Seals bearing the same name (fourth-set definition) show the same animal (motif field,
+  first word) more often than random pairs of named seals (label permutation over seals).
+- **M10 One name, one seal shape.** Same-name seals share the seal type (SEAL:S square, SEAL:R rectangular, other) more
+  often than random pairs.
+- **M11 One name, one heading.** Same-name seals agree in having or lacking the heading more often than random pairs.
+- **M12 Bar seals carry bare names.** Rectangular seals (SEAL:R) carry lines without an ending more often than square
+  seals (SEAL:S), length-stratified.
