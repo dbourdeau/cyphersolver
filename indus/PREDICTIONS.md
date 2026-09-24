@@ -2904,3 +2904,20 @@ lines repeat less: 0.69 against 0.79) fails on its permutation because the shuff
 counts, so the smaller long-line group is penalised under the null as well; the design was size-confounded. Reading:
 the formula genre is the open, varied one (many signs, many rare ones), the name genre the closed, repetitive one.
 Tally, counting parts: 309 held, 388 failed (697 registered).
+
+# Fifty-fourth set, registered before testing (24 September 2026): signs used only in formulas (loop 2, round 8)
+
+'Formula-only sign' = a non-numeral sign in a formula (non-name line) that never occurs in a name body (A + B pooled).
+'Shared sign' = a non-numeral formula sign that does occur in a name body. Token-level comparisons within formulas
+unless stated. 10,000-draw permutations; p < 0.05.
+
+- **FO1** Formula-only tokens are last in their formula more often than shared tokens.
+- **FO2** Formula-only tokens follow a numeral more often than shared tokens.
+- **FO3** Formula-only signs have fewer tokens in A + B than shared signs (rank test over signs).
+- **FO4** Formulas with a formula-only sign are off seals more often, length-stratified (F).
+- **FO5** Among signs with 2-5 tokens in F, formula-only signs are found at one site only more often than shared signs.
+- **FO6** Formulas with a formula-only sign are shorter than other formulas (rank test).
+- **FO7** Formula-only tokens are on objects other than seals and tablets more often than shared tokens (F).
+- **FO8** Of signs formula-only in A that occur in B, 80%+ are absent from B's name bodies.
+- **FO9** Formula-only tokens are preceded by a heading (817, 820, 861) more often than shared tokens.
+- **FO10** Formulas with a formula-only sign carry no numeral more often than other formulas.
