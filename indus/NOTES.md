@@ -2401,6 +2401,12 @@ Tally 1309 held, 1211 failed.
 Registered first (3a379b31a). Family 4-gram context: S 4.697 -> 4.684, replicated A -> B; random families give at most
 0.002 against 0.030. Progress: streak 0. Tally 1314 held, 1211 failed.
 
+## Two-hundred-and-fourteenth pass (24 Sept 2026): decipherment loop 25, picture anchors on unseen tablets
+
+Registered first (3a05a3ea7). Split by distinct text, sign-level picture anchors from half the tablets predict 1 of 38
+unseen tablets (p = 0.40): text-picture pairing is whole-text (mould copies), not sign-level. Seals null again. No
+progress: streak 1. Tally 1315 held, 1216 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

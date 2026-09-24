@@ -8411,3 +8411,16 @@ picture. Null: motifs shuffled among the design text groups, anchors rebuilt, 1,
 - **PB5** Accuracy on vault objects is 50% or more.
 - **PB6** Progress rule: PB1 holds. Then the anchor signs whose vault predictions are right more often than not enter
   V (checked meaning), and U counts the vault tokens they read.
+
+## Results of the two-hundredth set (added after the test; `predict_test200.py`, `results/predict_test200.md`)
+
+One held, five failed. 474 pictured tablets (218 distinct texts; bas-relief bull, multi-headed animal, gharial, tree,
+fish ...). Anchors fixed on half of the text groups (8 signs: 142, 240, 405, 520 = one-horned bull; 167, 741 =
+multi-headed animal; 440 = gharial; 463 = tree) predict the picture of 1 of 38 unseen tablets (2.6%; permutation p =
+0.40; PB1, PB5 fail); only 17% of unseen tablets carry an anchor (PB2 fails); copper tablets alone have too few
+distinct texts to test (PB3 fails). Seal texts again predict nothing beyond their null (PB4 holds). **Reading:** the
+text-picture pairing on tablets is a property of whole texts repeated with their scene (mould copies of one text with
+one picture), not of signs: no sign carries its picture into a new text. For tier 1 this means the tablets fix
+meanings only at the level of a whole text, and the four copper-tablet anchor signs rest on the drawing of the sign,
+not on a pairing that generalises. No progress: streak 1. Prize tiers unchanged (V 0.008%, C 1 of 3, U 0). Tally,
+counting parts: 1315 held, 1216 failed (2531 registered).
