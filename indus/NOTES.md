@@ -2425,6 +2425,13 @@ Registered first (452a50f8d). Leave-one-out: 16.9% (p = 0.05); families 13.6% (p
 median. A weak tendency only; set 201's p = 0.001 was a favourable split. No progress: streak 2. Tally 1324 held, 1225
 failed.
 
+## Two-hundred-and-eighteenth pass (24 Sept 2026): decipherment loop 29, Tamil Nadu graffiti; two-direction SIGN
+
+Registered first (7231cba34). Tamil Nadu graffiti composites (Rajan and Sivanantham 2026 vol. II): order consistency
+70.5% against Indus 88.0%, the same at Keeladi and Thulukarpatti: less ordered than Indus writing. Two-direction SIGN
+model: top-1 36.2% -> 38.2%, A -> B 29.9% -> 31.8%; adopted (metric 37.9% / 60.0%). Progress: streak 0. Tally 1328
+held, 1229 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

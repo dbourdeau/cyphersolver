@@ -8539,3 +8539,17 @@ gave 37.8% -> 38.6% top-1 on the training lines' own split.
 - **SB1** Two-direction SIGN top-1 on the fixed test beats the forward model by 0.5 points or more.
 - **SB2** The same trained on A and tested on B's new lines (first 300 lines).
 - **SB3** Progress rule: TG1 and TG4 hold (a replicated finding about the graffiti), or SB1 and SB2 hold.
+
+## Results of the two-hundred-and-fourth set (added after the test; `predict_test204.py`, `results/predict_test204.md`, `graffiti.py`)
+
+Four held, four failed. **(A) The Tamil Nadu graffiti.** 1,589 composite graffiti signs on 1,453 sherds (vol. II
+concordance). Co-occurring elements keep a consistent order in 70.5% of 2,012 co-occurrences (TG1 fails), against
+88.0% for Indus lines (TG2 fails), and the same at Keeladi (73.0%) and Thulukarpatti (70.9%) (TG4 fails, but the
+figure replicates across sites). Elements do prefer slots (MI 0.24 bits, p = 0.0001; TG3). The commonest final element
+(39.0, a stroke) ends 14% of composites against 740's 31.7% of Indus lines (TG5 fails). **Reading:** by a
+language-free order fingerprint the graffiti composites are markedly less ordered than Indus texts, at both large
+sites; the slot layout is the authors' analysis, so this bears on their composites as recorded, and says nothing
+about individual shape parallels. It does not support treating the graffiti as a continuation of Indus writing. **(B)
+Two-direction SIGN model.** Summing a right-to-left model's line log-probability lifts SIGN top-1 from 36.2% to 38.2%
+on the fixed test (SB1) and from 29.9% to 31.8% A -> B (SB2). Adopted in prizebench; the metric run gives SIGN top-1
+37.9%, top-5 60.0%. Progress (SB3): streak 0. Tally, counting parts: 1328 held, 1229 failed (2557 registered).

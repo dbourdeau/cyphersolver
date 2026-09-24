@@ -16,10 +16,10 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 1 | V meaning, checked | share of sign tokens read as sense and checked against archaeological evidence: the object's iconography (copper tablets, seal motifs), its function (weights, tags, pottery), its find context, West Asian texts naming Meluhha. Numerals reported beside it (their sense is the count). | 0.008% (4 copper-tablet signs); numerals 16.6% |
 | 2 | C positive-control gate | a method proposing sound values or readings must first recover a known answer (Linear B -> Greek). Methods that passed / were run | 1 passed (set 179); key bench failed (Ventris's Linear B key beaten by 11-41 of 100 shuffles, `linb_control.md`); rebus search not run |
 | 3 | U vault | share of tokens in texts never used to fix the values (B's new lines; later, newly excavated finds) read as sense with values fixed beforehand | 0 (no sound value has passed); picture vault: weak; leave-one-out 16.9% (p = 0.05), 13.6% with near duplicates together (p = 0.14), 49 of 50 splits above the null median (sets 201-203) |
-| 4 | A archaeological consistency | readings or structure hold across sites, periods, duplicates and sealings of the same seal | supporting: fish/520 signal holds at all sites and periods (set 196) |
+| 4 | A archaeological consistency | readings or structure hold across sites, periods, duplicates and sealings of the same seal | supporting: fish/520 signal holds at all sites and periods (set 196); Tamil Nadu graffiti composites are less ordered than Indus lines (70.5% against 88.0% order consistency, set 204) |
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 81.3% / 68.3%; no candidate beats the decoys inside the fifth (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.0% (frequency 0% / 1.3%) |
-| 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 36.2% / 58.4% (frequency 9.6% / 22.4%) |
+| 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 37.9% / 60.0% with the two-direction model (set 204; frequency 9.6% / 22.4%) |
 | - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.685, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
@@ -98,3 +98,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 26 | 201 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | tier 3: shared phrases predict unseen tablets' pictures (24.5%, p = 0.001; 18.6%, p = 0.03): elephant, tree (806 158), gaur; S gain is graphic, not generic classes (progress; streak 0) |
 | 27 | 202 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | weighted phrases no better; a third split fails its null, so the picture vault is split-dependent; seals null (no progress; streak 1) |
 | 28 | 203 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | picture vault by leave-one-out: 16.9% (p = 0.05), families 13.6% (p = 0.14); weak tendency, set 201's result was a favourable split (no progress; streak 2) |
+| 29 | 204 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | SIGN top-1 36.2 to 37.9% (two-direction model, replicated A to B); Tamil Nadu graffiti less ordered than Indus (70.5% vs 88.0%, both big sites) (progress; streak 0) |

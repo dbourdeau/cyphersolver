@@ -10,7 +10,7 @@ judge a decipherment:
 4 WORD task: hide a name body (the signs before the ending) in a held-out line; rank every name body seen in training
      by the model's probability of the whole line; top-1 / top-10 accuracy against a frequency baseline.
 5 SIGN task: hide one sign of a held-out line; rank the 150 commonest training signs by the probability of the whole
-     line; top-1 / top-5 accuracy against a frequency baseline.
+     line (left-to-right plus right-to-left model, set 204); top-1 / top-5 accuracy against a frequency baseline.
 """
 import math
 from collections import Counter
@@ -36,14 +36,18 @@ def _lp(m, t, w):
 
 
 def sign_task(tr, te, keys, ncand=150):
+    # set 204 (SB1-SB2): the line is scored left-to-right and right-to-left, log-probabilities summed
     w, _ = fit3(tr, keys)
     m = M3(tr)
+    rtr = [tuple(reversed(x)) for x in tr]
+    wb, _ = fit3(rtr, keys)
+    mb = M3(rtr)
     freq = Counter(g for t in tr for g in t)
     cands = [g for g, n in freq.most_common(ncand)]
     top1 = top5 = base1 = base5 = n = 0
     for t in te:
         for i, g in enumerate(t):
-            sc = sorted(cands, key=lambda c: -_lp(m, t[:i] + (c,) + t[i + 1:], w))
+            sc = sorted(cands, key=lambda c: -(_lp(m, t[:i] + (c,) + t[i + 1:], w) + _lp(mb, tuple(reversed(t[:i] + (c,) + t[i + 1:])), wb)))
             n += 1
             top1 += sc[0] == g
             top5 += g in sc[:5]
