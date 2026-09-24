@@ -4473,3 +4473,31 @@ counted (CF6: 13% follow a numeral), their lines ending in 520 (CF7: 21%; CF12: 
 (CF14: 52%), and CF3 in B (41%). Reading: '705/706 33' behaves like one lexical unit (a 'three-X' compound written with
 the long 3), often closed by 520 as a name, not like a count of jars. Tally, counting parts: 623 held, 704 failed (1327
 registered).
+
+# Ninety-third set, registered before testing (24 September 2026): frozen numbers and real counts (twenty hypotheses)
+
+The ninety-second set found '705/706 33' to be a fixed unit. Over distinct lines (A + B): for each sign X counted 5+
+times (directly after a numeral run), 'value share' = the share of its counts that take its commonest value. 'Frozen' =
+value share 0.9+; 'variable' = under 0.6. 10,000-draw permutations; p < 0.05.
+
+- **FZ1** 20%+ of signs counted 5+ times are frozen.
+- **FZ2** Frozen pairs are in name lines more often than variable pairs (tokens).
+- **FZ3** Frozen pairs use the long kind more often than variable pairs.
+- **FZ4** Frozen signs are counted more often (share of their tokens after a numeral) than variable signs (rank test).
+- **FZ5** Frozen pairs are followed by an ending more often than variable pairs.
+- **FZ6** Variable pairs are in formulas more often than frozen pairs.
+- **FZ7** Variable pairs are line-final more often than frozen pairs.
+- **FZ8** Frozen pairs are at Mohenjo-daro more often than variable pairs (F).
+- **FZ9** Variable pairs are on tablets more often than frozen pairs (F).
+- **FZ10** A frozen sign's value is the same in A and in B for 90%+ of frozen signs counted 3+ times in B.
+- **FZ11** Frozen signs are counted with value 3 more often than variable signs are.
+- **FZ12** Frozen pairs recur in 2+ distinct lines more often than variable (value, sign) pairs.
+- **FZ13** The sign before a frozen pair is a heading sign less often than the sign before a variable pair.
+- **FZ14** The numeral of a frozen pair is preceded by a non-numeral more often than that of a variable pair.
+- **FZ15** Value share depends on the numeral kind of the sign's commonest count (MI over signs, kind against frozen).
+- **FZ16** Signs counted mostly by long strokes have higher value shares than signs counted mostly by short strokes
+  (rank test).
+- **FZ17** 700 is variable (value share under 0.6).
+- **FZ18** Frozen signs are also name heads more often than variable signs.
+- **FZ19** B: FZ2 holds.
+- **FZ20** F: FZ1 holds.
