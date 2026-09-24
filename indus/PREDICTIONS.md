@@ -4597,3 +4597,31 @@ before a sign (ON1, p = 0.06), not more line-final (ON2, p = 0.07; ON18 in B), n
 way), not a 520 head beyond 3 bodies (ON7), not a seal or Mohenjo-daro sign (ON9, ON10), not a name sign (ON11), and
 not rarer next to numerals (ON13). In B '1' is rare (25 tokens) and the post-ending use is barely present (ON19: 1),
 so the post-ending '1' depends on the ICIT transcription. Tally, counting parts: 647 held, 740 failed (1387 registered).
+
+# Ninety-sixth set, registered before testing (24 September 2026): how the copper labels are built (twenty hypotheses)
+
+Copper tablets (TAB:C) with motif as in the ninety-fourth set. Seen before registering (descriptive listing): labels
+per picture, e.g. anthropomorph '806 845 61 407 850 900 740', hare '235 705 33 845 407 321 407', elephant '706 33 923
+740 (1)', tiger '798 240 845 61 407', 'Loop' '415 220 845 407', 'Othr' '503 615 752 740' x28, buffalo '255 435 690
+740 900 (1) 3 42x'. Distinct texts unless stated; seals and their motifs from F. p < 0.05.
+
+- **LB1** 70%+ of distinct copper texts containing 407 have 845 before it.
+- **LB2** 70%+ of copper tablets with '845 ... 407' have an animal or figure motif (not 'Othr', not none).
+- **LB3** 90%+ of copper tablets with '705/706 33' have an animal or figure motif.
+- **LB4** The elephant label '706 33 923 740' also occurs on a seal.
+- **LB5** The 'Othr' label '503 615 752 740' occurs on 5+ seals.
+- **LB6** Seals bearing a copper label's text carry that copper tablet's motif in 50%+ (seals with a motif).
+- **LB7** 50%+ of signs on 3+ copper tablets have 80%+ of their copper tokens under one motif.
+- **LB8** 30%+ of all 845 tokens are on copper tablets.
+- **LB9** 20%+ of all 407 tokens are on copper tablets.
+- **LB10** Copper lines have '1' directly after 740 more often than seal lines do.
+- **LB11** Copper lines with 740 have signs after it more often than seal name lines with 740.
+- **LB12** For motifs on 3+ tablets, the commonest label is repeated identically in 60%+ of that motif's tablets on average.
+- **LB13** At most two identical labels occur under two or more different motifs.
+- **LB14** Copper lines are longer than seal lines (rank test).
+- **LB15** 15%+ of distinct copper texts end in 407.
+- **LB16** 80%+ of copper tokens of 421, 422, 423, 424 directly follow 3.
+- **LB17** 30%+ of copper tablets with no motif carry a text also found on a copper tablet with a motif.
+- **LB18** Copper texts found on seals are found on Mohenjo-daro seals more often than Harappa seals.
+- **LB19** The anthropomorph label occurs on no seal.
+- **LB20** The one-sign copper labels (777, 782) occur on no seal.
