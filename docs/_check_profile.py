@@ -96,6 +96,8 @@ def check(folder, quiet=False):
     errors, gaps = [], []
     validate(prof, SCHEMA, '', errors, gaps)
     if prof.get('target') not in (folder, UNKNOWN): errors.append(f'target: {prof.get("target")!r} is not the folder name {folder!r}')
+    if isinstance(prof.get('outcome'), dict) and 'method' not in prof['outcome'] and folder.split('/')[-1] not in cw.FAMOUS:
+        errors.append('outcome.method: required (George Lasry\'s outcome categories; python docs/_classify_outcomes.py proposes one)')
     for i, d in enumerate(prof.get('documents', [])):          # a measured count must still match its file
         ln = d.get('length', {}) if isinstance(d, dict) else {}
         if ln.get('measured') is True:

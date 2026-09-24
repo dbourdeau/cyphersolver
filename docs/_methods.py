@@ -58,6 +58,9 @@ DEFINE = {
 def extent(prof):
     """'complete', 'partial', 'none' or 'n/a' from outcome.class."""
     cls = (prof.get('outcome') or {}).get('class')
+    m = (prof.get('outcome') or {}).get('method')
+    if m == NOT: return 'none'              # e.g. "already solved" by someone else, not obtained here
+    if m == NA: return 'n/a'
     return {'read': 'complete', 'already solved': 'complete', 'read in part': 'partial',
             'not read': 'none'}.get(cls, 'n/a')
 
@@ -137,3 +140,19 @@ SECTION_NOTE = {
 def section_of(heading):
     """The method whose README section a '### ' heading opens, or None."""
     return next((m for m, h in SECTION.items() if heading.startswith(h)), None)
+
+# pages whose target keeps no profile of its own (famous targets, sub-results filed inside another folder):
+# slug -> (method, extent, one sentence of evidence)
+PAGE_METHOD = {
+    'huangxing': (ADJ_PT, 'partial', 'The Foreign Ministry filed its decode with the telegram (JACAR frame 0247); aligning '
+                  'it with the cipher identified the three-kana-per-character scheme. The rest of the code book needs a second telegram.'),
+    'sunintercepts': (CT, 'partial', 'The condenser keys of the Swatow family (consonants rotated, vowel order changed) were '
+                      'recovered from the telegrams themselves; there is no decode in the file. Some telegrams use a different system and are open.'),
+    'reserva12': (DECIPH, 'complete', 'Xavier de Salas printed a full decipherment in 1931 (Estudis Universitaris Catalans 16); '
+                  'it was found and checked against the image.'),
+    'goldbar': (NA, 'n/a', 'The letters are almost exactly ten of each kind, a sign of a design, not a message.'),
+    'voynich': (NOT, 'none', 'Plain or simply enciphered European languages were tested and excluded; no reading.'),
+    'indus': (NOT, 'none', 'Published decipherments were tested against the corpus; no reading is established.'),
+}
+# pages that report several targets, each with its own profile (the badge takes the first method in METHODS order)
+PAGE_PROFILES = {'legation': ['jqa', 'erving1807'], 'vatican': ['vatican5']}

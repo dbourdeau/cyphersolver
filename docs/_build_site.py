@@ -1362,17 +1362,28 @@ def attach_methods():
     paths = M.profile_paths()
     by_slug = {PROFILE_SLUG.get(k, k): v for k, v in paths.items()}
     for p in PAGES:
-        p['method'] = p['extent'] = None
+        p['method'] = p['extent'] = p['frac'] = None
+        p['parts'] = []                                  # (label, method, extent) when a page reports several targets
         if p['slug'] in SURVEYS: continue
-        prof = M.load(by_slug[p['slug']]) if p['slug'] in by_slug else None
-        out = (prof or {}).get('outcome') or {}
-        if out.get('method') not in M.METHODS: continue
-        p['method'], p['extent'] = out['method'], M.extent(prof)
-        p['frac'] = out.get('fraction_coherent') if isinstance(out.get('fraction_coherent'), (int, float)) else \
-                    out.get('fraction_read') if isinstance(out.get('fraction_read'), (int, float)) else None
+        cls = None
+        if p['slug'] in M.PAGE_PROFILES:
+            profs = [(f, M.load(paths[f])) for f in M.PAGE_PROFILES[p['slug']] if f in paths]
+            parts = [(f, pr['outcome']['method'], M.extent(pr)) for f, pr in profs if pr and pr.get('outcome', {}).get('method') in M.METHODS]
+            if not parts: continue
+            p['parts'] = parts
+            p['method'], p['extent'] = min(parts, key=lambda t: M.METHODS.index(t[1]))[1:]
+            if any(e == 'partial' for _, _, e in parts): p['extent'] = 'partial'
+        elif p['slug'] in M.PAGE_METHOD:
+            p['method'], p['extent'], _ = M.PAGE_METHOD[p['slug']]
+        else:
+            prof = M.load(by_slug[p['slug']]) if p['slug'] in by_slug else None
+            out = (prof or {}).get('outcome') or {}
+            if out.get('method') not in M.METHODS: continue
+            p['method'], p['extent'], cls = out['method'], M.extent(prof), out.get('class')
+            p['frac'] = out.get('fraction_coherent') if isinstance(out.get('fraction_coherent'), (int, float)) else                         out.get('fraction_read') if isinstance(out.get('fraction_read'), (int, float)) else None
         p['stt_hand'] = p['stt']
         p['st'] = M.status_class(p['method'], p['extent'])
-        p['stt'] = M.badge(p['method'], p['extent'], out.get('class'))
+        p['stt'] = M.badge(p['method'], p['extent'], cls)
 
 def outcome_html(p):
     """The hero's outcome line: method linked to its glossary entry, and extent."""
@@ -1380,6 +1391,9 @@ def outcome_html(p):
     if not m: return ''
     ext = {'complete': 'complete', 'partial': 'partial', 'none': 'text not obtained', 'n/a': ''}[p['extent']]
     if p['extent'] == 'partial' and p.get('frac'): ext += f' ({round(100 * p["frac"])}% of the cipher)'
+    if p.get('parts') and len({x[1] for x in p['parts']}) > 1:      # several targets, several methods
+        bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}">{pm}</a> ({pe})' for f, pm, pe in p['parts']]
+        return '<p class="outcome">Method &middot; ' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'
     bits = [f'Method: <a href="glossary.html#{M.KEY[m]}">{m if m != M.NA else plain(p["stt"])}</a>']
     if ext: bits.append(f'Extent: {ext}')
     return '<p class="outcome">' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'

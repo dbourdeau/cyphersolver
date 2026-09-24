@@ -445,7 +445,7 @@ def audit(brief=False):
         if prof and got != want:
             drift.append(f'{key_words(r["target"])}: README section "{want}" but profile method is {got!r}')
     for s in sorted(pages):
-        if s in SURVEYS: continue
+        if s in SURVEYS or s in FAMOUS: continue
         prof = M.load(paths[s]) if s in paths else None
         if prof and ((prof.get('outcome') or {}).get('method') not in M.METHODS):
             drift.append(f'{s}.html: profile.json has no outcome.method (run docs/_classify_outcomes.py)')
