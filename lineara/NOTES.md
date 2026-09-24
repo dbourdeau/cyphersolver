@@ -76,7 +76,7 @@ Scripts and outputs in `reading/`; summary in [reading/READING.md](reading/READI
   signs) read as sense: numbers, fractions (Corazza values; H and A left open), commodity logograms, KU-RO, PO-TO-KU-RO,
   KI-RO and three validated place names. A further 40.5% read as sound only, with a document function (entry label,
   heading, formula word, sealing mark); 66 entries tagged as probable personal names in VIR lists. Edition in
-  `reading/edition.txt`. Correction applied: HT34.6 KI-RO 30 (not 37).
+  `reading/edition.txt` (kept out of the public repository with `reading/reading.json`: the lineara.xyz texts carry no licence; rebuild with `reading/build_reading.py`). Correction applied: HT34.6 KI-RO 30 (not 37).
 - Totals: 35 KU-RO / PO-TO-KU-RO checked with exact fractions over record, rule, KI-RO, whole-object and same-commodity
   windows; 10 balance (HT123a's olive total only in the same-commodity window). The failures are damage or the known
   scribal slips (HT9a 3/4, HT13 1/2, HT94a 1, HT119 1, HT122 grand total 1). `restorations.py` proposes the missing
