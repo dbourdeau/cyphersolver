@@ -3447,3 +3447,35 @@ Harappa names do not keep to one period (PN1: 20 of 44), opening pairs travel be
 at Harappa (PN9), doubles are not Mohenjo-daran (PN10), tablet names are not more often seal names than pot names are
 (PN14), headed names are not more often unique (PN16, p = 0.057), and Harappa heads are not less varied (PN19).
 Tally, counting parts: 411 held, 476 failed (887 registered).
+
+# Seventy-first set, registered before testing (24 September 2026): why 520 goes with fish (twenty hypotheses)
+
+Names = name_of over A + B lines (tokens) unless stated; head = last body sign; fish = signs.FISH; roof fish = 235,
+236. 'Fish name' = a body with a fish sign. F for site tests. 10,000-draw permutations; p < 0.05.
+
+Is the fish itself the trigger?
+- **EF1** Among names whose head is not a fish, those with a fish elsewhere in the body take 520 more often.
+- **EF2** EF1 holds stratified by head (heads of 5+ names; stratified permutation).
+- **EF3** EF1 holds stratified by body length.
+- **EF4** Among non-fish-headed fish names, the fish stands nearer the end in 520 names than in 740 names (rank test
+  on signs between the last fish and the end).
+- **EF5** Among names with exactly one fish, the 520 share depends on which fish (MI).
+- **EF6** Roof-fish names take 520 more often than other fish names.
+- **EF7** Names with 2+ fish take 520 more often than names with exactly one.
+- **EF8** Fish names where a numeral stands right before the fish take 520 more often than other fish names.
+Does the ending switch with the fish?
+- **EF9** Removing one fish from a 520 body gives an attested 740 name more often than an attested 520 name (sign test
+  over distinct 520 bodies).
+- **EF10** The body before 520 without its fish signs is shorter than the body before 740 without its fish signs.
+- **EF11** 60%+ of non-fish heads taking 520 in half or more of their 5+ names stand next to a fish in some body.
+Replication
+- **EF12** In B alone, fish names are a larger share of 520 names than of 740 names.
+- **EF13** At Harappa alone (F), the same.
+- **EF14** At Mohenjo-daro alone (F), the same.
+- **EF15** At other sites (F), the same.
+- **EF16** EF1 holds in B alone.
+What else goes with 520
+- **EF17** 520 is followed by 400 less often than 740 is (lines).
+- **EF18** 520 names open with the heading unit less often than 740 names.
+- **EF19** Seal 520 names are on unicorn seals less often than seal 740 names (F, motif recorded).
+- **EF20** Distinct 520 fish names are one-off less often than distinct 740 fish names (A + B counts).
