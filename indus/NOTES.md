@@ -1646,6 +1646,15 @@ Registered first (ninety-seventh set, e196b1108), tested (`predict_test97.py`). 
 findings survive removing copper tablets; AM10 (Harappa prefers 520) does not and is withdrawn, and the Mohenjo-daro
 fixed-class share is 79% (just under 80%). Tally 673 held, 754 failed.
 
+## Hundred-and-twelfth pass (24 Sept 2026): picture labels across media
+
+Registered first (ninety-eighth set, 7b88589fd), tested (`predict_test98.py`). The text-picture link is real within
+each medium (copper, moulded, incised) but does not carry across media: the same picture gets different texts on
+copper and on moulded tablets. 845 is essentially a copper word; 407 also ends seal lines.
+
+Summary of sets 96-98: copper labels are a separate vocabulary (845, 407, fixed units like '3 42x'); removing copper
+leaves the name findings intact (AM10 withdrawn); picture labels are medium-specific. Tally 683 held, 764 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

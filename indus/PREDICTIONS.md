@@ -4713,3 +4713,19 @@ The copper words elsewhere
 - **XM18** 30%+ of 407 tokens off copper are line-final.
 - **XM19** 70%+ of 845 tokens off copper are from Mohenjo-daro.
 - **XM20** Off copper, 407 directly follows 845 less often than on copper.
+
+## Results of the ninety-eighth set (added after the test; `predict_test98.py`, `results/predict_test98.md`)
+
+Ten held, ten failed. Picture labels do not carry across media: for the seven pictures found on both copper and moulded
+tablets, the copper label shares no more signs with moulded texts of the same picture than of others (XM1: +0.001,
+p = 0.41; XM2 incised: p = 0.24); no text occurs on both copper and a mould (XM3: 0); the two media share fewer
+adjacent pairs than chance (XM5); and only a quarter of moulded picture types occur on copper (XM4: 7 of 28). Within
+each medium the text still follows the picture (XM8 on incised tablets: 114 pairs, p = 0.0001), though moulded
+pictures are less tied to one text than copper ones (XM6: mean 0.45; XM7: 75%). Moulded picture tablets count less
+than moulded tablets without a picture (XM10: 44% against 57%), and some text-picture pairs span both Harappa periods
+(XM13: 7 of 19). Tablet pictures are rarely unicorns (XM14: 11% against 77% on seals). The copper words: off copper, 845
+is rare (9 tokens, none on tablets: XM15 fails) but when it occurs 407 is in the same line in 5 of 9 (XM17: 56% against
+1%); off-copper 407 is mostly on seals (XM16: 67%) and line-final half the time (XM18); and '845 407' is tighter on copper
+(XM20: 25% against 10%). Not supported: moulded pictures all at Harappa (XM9: 77%), short moulded labels (XM11: 44%),
+longer 'Mult' texts (XM12), 845 off copper at Mohenjo-daro (XM19: 6 of 9). Tally, counting parts: 683 held, 764
+failed (1447 registered).
