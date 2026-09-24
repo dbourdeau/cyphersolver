@@ -1908,6 +1908,12 @@ Registered first (hundred-and-thirty-third set, 6999d0408), tested (`predict_tes
 rectangular seals, faience moulds and short faience texts hold in each city; the 520-steatite link is a copper-label
 effect (absent at Harappa). Tally 1027 held, 984 failed.
 
+## Hundred-and-forty-eighth pass (24 Sept 2026): our genres against ICIT's text codes
+
+Registered first (hundred-and-thirty-fourth set, 19fddf009), tested (`predict_test134.py`). Our genres agree with ICIT's
+independent text codes (VN = counts 95%, LP/IT/SP/MT = names 78%, SC = bare lines); the closer inscriptions are new,
+not an ICIT category. Tally 1037 held, 984 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

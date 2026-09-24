@@ -6090,3 +6090,13 @@ set. Thresholds as stated.
 - **IC8** No single ICIT code holds 50%+ of our closer lines (the closer inscriptions are not an ICIT category).
 - **IC9** 50%+ of our bare lines are coded SC.
 - **IC10** No single genre holds 70%+ of SS lines.
+
+## Results of the hundred-and-thirty-fourth set (added after the test; `predict_test134.py`, `results/predict_test134.md`)
+
+All ten held. Our genres match ICIT's own text codes (field 25), a classification made independently of this project:
+the mutual information is 38% of the genre entropy (IC1); VN lines are our counts (IC2: 95%), LP/IT/SP/MT lines our names
+(IC3: 78%), NU lines numerals only (IC4: 86%), TS lines single signs (IC5: 99%), LC lines counts (IC6: 68%), 2L objects
+two-lined (IC7: 97%), and our bare lines are mostly ICIT's SC (IC9: 67%). The closer inscriptions are not one of ICIT's
+categories (IC8: spread over SS, IT, SP), and ICIT's SS is a mixed bag of our genres (IC10). This validates the genre
+system against an outside classifier and marks the closer inscriptions as this project's addition. Tally, counting
+parts: 1037 held, 984 failed (2021 registered).
