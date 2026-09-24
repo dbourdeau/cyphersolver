@@ -5373,3 +5373,32 @@ Corrected compound test: even with heading-led runs removed, 2-sign numeral runs
 larger first; RO18 in F': 31%), so the prediction fails and the order 'small then large' is the observed pattern; it is
 not yet clear whether the small first element (often '2' or '1') is a numeral or a stroke with another role.
 Tally, counting parts: 869 held, 878 failed (1747 registered).
+
+# Hundred-and-fourteenth set, registered before testing (24 September 2026): small-then-large numeral runs (twenty hypotheses)
+
+Seen before registering (A + B distinct lines): 158 two-sign numeral runs not directly after a heading sign, commonest
+'2 32' (17), '2 3' (11), '31 2' (10), '2 4' (8), '33 33' (8), '1 3', '1 4' (7 each); 28 are line-initial; the sign after
+is often 220, 390, 405. 'Small-first run' = a 2-sign run whose first value is smaller; '2 N run' = a run '2' + numeral.
+Runs as in the hundred-and-twelfth set; heading signs 817, 820, 861. 10,000-draw permutations; p < 0.05.
+
+- **SR1** 70%+ of small-first runs start with '2' or '1'.
+- **SR2** '2 N' runs are line-initial more often than other numeral runs.
+- **SR3** Five signs cover 50%+ of the signs after '2 N' runs.
+- **SR4** For 50%+ of '2 N X' (X a non-numeral), 'N X' is attested elsewhere without the leading '2'.
+- **SR5** The '2' prefix stands before long numerals more often than numerals in general are long.
+- **SR6** 70%+ of lines with a '2 N' run are on seals (F without copper).
+- **SR7** '2 N' lines are a larger share of lines at Mohenjo-daro than at Harappa (F without copper).
+- **SR8** Runs of two identical numerals are 10%+ of 2-sign runs.
+- **SR9** Large-first runs are followed by a non-numeral as often as small-first runs (two-sided p >= 0.05).
+- **SR10** 30%+ of '1 N' runs directly follow 740 or 520.
+- **SR11** Small-first runs are line-initial more often than large-first runs.
+- **SR12** In '2 N' runs, N is worth 3+ in 80%+.
+- **SR13** In '2 N X', X's commonest count elsewhere equals N's value more often than N + 2.
+- **SR14** The signs X after unheaded '2 N' runs overlap with the signs after 'heading 2 N' more than with random signs
+  (Jaccard against frequency-matched random sets).
+- **SR15** Runs of 3+ numeral signs are under 3% of runs.
+- **SR16** B: SR1 holds.
+- **SR17** B: SR2 holds.
+- **SR18** F without copper: SR1 holds.
+- **SR19** F without copper: SR4 holds.
+- **SR20** F without copper: SR14 holds.
