@@ -4340,3 +4340,35 @@ little more (HS16: 80% against 74%, p = 0.045). Against expectation, headed name
 longer (HS12: 3.0 against 4.0 signs, so the heading takes the place of part of the name), hold fish more (HS14: 51%
 against 42%) and repeat more (HS17: 70% one-off against 84%). Tally, counting parts: 590 held, 677 failed (1267
 registered).
+
+# Ninetieth set, registered before testing (24 September 2026): the minor media (twenty hypotheses)
+
+F object types beyond seals and tablets: potsherd graffiti (POT:T:g), stamped potsherds (POT:T:s), copper tablets
+(TAB:C), bangles (BNGL), tags (TAG, TAG:L). 'Seal lines' = lines on SEAL types. Distinct (type, line) unless stated.
+City top-10 heads from A + B; formula-only signs as in the fifty-fourth set. 10,000-draw permutations; p < 0.05.
+
+Graffiti
+- **MM1** Graffiti lines are shorter than seal lines (rank test).
+- **MM2** Graffiti lines hold a numeral more often than seal lines.
+- **MM3** Graffiti lines are count tokens (numerals + 700) more often than seal lines.
+- **MM4** Graffiti names end in a top-10 head more often than seal names.
+- **MM5** Graffiti tokens are formula-only signs more often than seal tokens.
+- **MM6** Graffiti numerals are of the short kind more often than seal numerals.
+- **MM7** At Harappa, graffiti are count tokens more often than graffiti elsewhere.
+Stamped pots and tags
+- **MM8** 30%+ of stamped-pot lines also occur on a seal.
+- **MM9** Stamped-pot lines occur on a seal more often than graffiti lines do.
+- **MM10** 30%+ of tag lines also occur on a seal.
+Copper tablets
+- **MM11** 30%+ of distinct copper-tablet texts are on 2+ copper tablets.
+- **MM12** Copper-tablet lines are name lines less often than seal lines.
+- **MM13** 90%+ of copper tablets are from Mohenjo-daro.
+- **MM14** Under 10% of copper-tablet lines also occur on a seal.
+Bangles
+- **MM15** 80%+ of bangle lines have 3 signs or fewer.
+- **MM16** Bangle lines are formulas more often than seal lines.
+All media
+- **MM17** Line length depends on the medium (MI over length strata; seal, TAB:I, TAB:B, TAB:C, graffiti, bangle).
+- **MM18** The last sign depends on the medium (MI).
+- **MM19** The first sign depends on the medium (MI).
+- **MM20** The 520 share of names differs between seals and all non-seal media (two-sided).
