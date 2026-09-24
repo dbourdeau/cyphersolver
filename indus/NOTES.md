@@ -1709,6 +1709,12 @@ seals, animals, openers and heads (740 side) of name inscriptions, but their bod
 names, less unit-built and less fishy; each closer selects its own heads and openers. They are a seal type at both
 cities (19-20% of seal inscriptions), not a Mohenjo-daro speciality. Tally 759 held, 828 failed.
 
+## Hundred-and-twentieth pass (24 Sept 2026): bare lines
+
+Registered first (hundred-and-sixth set, 656e720a2), tested (`predict_test106.py`). Bare lines (no role signs) are short
+name-shaped sequences (opener ... head) that are not attested names, on tablets and potsherds, somewhat Harappan, and
+rich in formula-only signs: a third, practical genre beside names and counts. Tally 769 held, 838 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

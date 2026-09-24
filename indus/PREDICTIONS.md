@@ -5061,3 +5061,16 @@ in the ninety-ninth set; F without copper for object, site and period tests. 10,
 - **XL18** Bare lines end in 400 more often at Harappa than at Mohenjo-daro (F).
 - **XL19** B: XL1 holds.
 - **XL20** B: XL8 holds.
+
+## Results of the hundred-and-sixth set (added after the test; `predict_test106.py`, `results/predict_test106.md`)
+
+Ten held, ten failed. The 344 bare lines (no heading, numeral, ending, closer or fish) are short (XL1: 2.9 against 5.0
+signs; XL19 in B: 2.7 against 4.4) and built like names without an ending: they start with a name opener in 76% (XL7)
+and end in a name head in 70% (XL6). But they are not the attested names with the ending dropped: only 7% of 2-sign
+bare lines are attested name bodies (XL8; XL20 in B: 7%), and bare '... 400' lines are not 'name + 400' (XL3: 3 of 50).
+They are a practical genre: on tablets (XL4: 32% against 23%) and potsherds (XL10: 9% against 2%) more than names,
+somewhat commoner at Harappa (XL5: 15% against 12%), and they hold formula-only signs (XL11: 11% of tokens against
+0.1% in name lines). 15% end in 400 (XL2), and 368 follows a name-head sign in 68% of its tokens (XL14). Not supported:
+recurring more (XL9), one-off seal texts (XL16), an earlier date (XL17), 400 as a Harappa bare-line ending (XL18), and
+the stricter closer tests (XL12: 15%; XL13: 10%, just under; XL15: 595 line-final in 38%). Tally, counting parts: 769
+held, 838 failed (1607 registered).
