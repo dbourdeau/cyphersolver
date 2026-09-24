@@ -1169,6 +1169,15 @@ The moulded anchors hold (CT9). Copper labels are picture-specific names (CT1 ma
 CT22 head before 740 in 34 of 36). Moulded: same text, same picture 95% (CT7). No link across object types (CT6, CT10,
 CT14, CT24, CT25 fail). Tally 176 held, 261 failed.
 
+## Forty-seventh pass (24 Sept 2026): picture markers across label genres
+
+Registered first (PREDICTIONS.md, thirty-third set, 3a63231fc), tested (`predict_test33.py`; 1,000 permutations for
+PL2, PL12, PL16). The label head depends on the picture on copper (PL1) and moulded tablets (PL11); copper labels of one
+picture have one length (PL6), no marker is an animal sign (PL5). **Nothing crosses to seals**: elephant seals never
+carry 923 / 706 (PL17), goat seals never the goat markers (PL18), seal animals have no markers (PL15). Parpola's
+equations are reverse-side substitutions: 8 of his 10 linked groups pair an image reverse with a single-sign reverse
+over the same inscription (PL3). Tally 184 held, 278 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

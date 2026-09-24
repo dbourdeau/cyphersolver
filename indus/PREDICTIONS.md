@@ -2141,3 +2141,32 @@ Seals
 - **PL19** Seals with a composite or anthropomorphic picture contain an anthropomorph copper marker (61, 806, 850, 900)
   more often than other seals.
 - **PL20** Gaur seals contain a sign of the copper gaur labels more often than other seals.
+
+## Results of the thirty-third set (added after the test; `predict_test33.py`, `results/predict_test33.md`)
+
+Eight held, seventeen failed. Deviation from the registration: PL2, PL12 and PL16 were run with 1,000 permutations,
+not 10,000 (pairwise statistics over up to 30,000 pairs); the smallest possible p is 0.001.
+
+**The picture-text link stays inside the label genres.**
+- **PL1 holds** (the copper label's head depends on its picture: MI 2.25 bits over 64 labels, p = 0.0001) and **PL11
+  holds** (the same for moulded labels: MI 2.78 bits over 207, p = 0.0001). **PL6 holds** (copper labels of one
+  picture have one length: 76% of length variance lies between pictures) and **PL23 holds** (every copper label is one
+  line). **PL25 holds** (same-picture moulded labels differ by one sign more often, 1.6% against 0.7%), **PL12 holds**
+  (moulded animal labels share signs more, p = 0.013), **PL21 holds** (moulded labels carry the heading less than seals,
+  9.8% against 20.3%). **PL5 holds** (no copper marker is an animal-category sign: the labels do not draw the animal).
+- **Nothing crosses to the seals.** PL17 fails (0 of 28 elephant seals carry 923 or 706), PL18 fails (0 of 9 goat seals
+  carry a goat marker), PL19, PL20 fail, PL15 fails (of six seal animals only the rhinoceros has a loose marker, 820),
+  PL16 fails (seal texts of the same animal do not share signs more, p = 0.38). The texts on seals are not about the
+  animal on the seal; the label texts on copper and moulded tablets are.
+- PL2 fails (copper animal labels do not share signs more), PL4 fails (markers are not rare on seals), PL7 fails, PL8
+  fails (only 4 of 11 moulded pictures have a marker: fish 400, unicorn 2 520 240, crs 630, cross 590 235 645 240 90
+  104), PL9, PL10, PL13, PL14 (79% of moulded labels from Harappa), PL22 (the other way), PL24 fail.
+
+**Parpola's equations explained.** PL3 fails as registered (no linked pair shares a reverse image), but it shows how
+the equations were made: of Parpola's 10 linked copper groups, 8 pair a group whose reverse is an image with a group
+whose reverse is a single sign, over the same obverse inscription (hare with 753, markhor with 749, rhinoceros with 341,
+goat with 777 / 778). The sign stands in for the picture on the reverse. That is a real substitution, of reverse for
+reverse, not a sign inside the text; the withdrawal in CT5 stands as 'not a text anchor', and the equations stand as
+Parpola's reverse-side substitutions.
+
+Tally, counting parts: 184 held, 278 failed (462 registered).
