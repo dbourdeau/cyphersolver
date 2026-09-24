@@ -1747,6 +1747,13 @@ Summary of sets 108-110: the four genres are frames on one shared vocabulary, re
 signs that close bare lines each have a distinct job (368 heading-slot and seal sign, 390 a high-count seal sign, 615 the
 doubled sign), and 400 has two unrelated uses. Tally 822 held, 865 failed.
 
+## Hundred-and-twenty-fifth pass (24 Sept 2026): one sign, many genres
+
+Registered first (hundred-and-eleventh set, 63b81bee3), tested (`predict_test111.py`). Signs keep their position,
+company, units, numeral kind and typical count across names, counts and closer lines (replicated in B and F'). Names and
+counts are two uses of one sign language, not two codes; the seventy-seventh set's 'two systems' is qualified. Tally 839
+held, 868 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

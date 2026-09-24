@@ -5272,3 +5272,18 @@ Replication
 - **OG18** B: OG9 holds.
 - **OG19** F without copper: OG1 holds.
 - **OG20** F without copper: OG7 holds.
+
+## Results of the hundred-and-eleventh set (added after the test; `predict_test111.py`, `results/predict_test111.md`)
+
+Seventeen held, three failed: signs keep their function across genres. A sign's position in the line correlates
+between names and counts (OG1: 0.49; OG17 in B: 0.44; OG19 in F': 0.58), names and closer lines (OG2: 0.49), counts and
+bare lines (OG4: 0.34), though only weakly between names and bare lines (OG3: 0.21, p = 0.08). A sign's right and left
+company in counts is closer to its own company in names than to another sign's (OG7: 65 against 9; OG8: 62 against 15;
+OG20 in F': 44 against 12). Name pairs recur in counts beyond chance (OG9; OG18 in B), the recurring name units occur in
+counts (OG10: 343) in their name order (OG11: 91%), a sign's numeral kind (OG12: 52 of 78) and typical count (OG13: 0.52)
+carry over from names to counts, and fish are counted in counts too (OG14: 52%). Name heads end bare lines (OG5: 54%
+against 30%) and closers follow 740-class heads rather than 520-class ones (OG16: 3.8% against 1.6%). Not supported:
+name openers opening counts (OG6, p = 0.057) and the 520 class ending bare lines (OG15: 4 tokens). This qualifies the
+seventy-seventh set's 'two systems' (LX10-LX12): names and counts favour different pairs, but each sign keeps its own
+place, company, notation and count across both, so they are two uses of one language rather than two codes.
+Tally, counting parts: 839 held, 868 failed (1707 registered).
