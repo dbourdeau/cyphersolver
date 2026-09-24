@@ -2456,6 +2456,11 @@ Registered first (b845098b9). Description-based families also improve S (gain 0.
 beat learned classes): the graphic-family effect replicates with an independent definition. No gain beyond decade
 families. No progress: streak 3. Tally 1339 held, 1240 failed.
 
+## Two-hundred-and-twenty-third pass (24 Sept 2026): decipherment loop 34, roles in closer lines
+
+Registered first (4c2700934). The sign before a closer is a known name head no more often than other body signs (A 72%
+vs 77%, B 64% vs 67%); no closer-line roles adopted. No progress: streak 4. Tally 1340 held, 1244 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

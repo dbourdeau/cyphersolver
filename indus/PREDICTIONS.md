@@ -8692,3 +8692,13 @@ or 520 in A's distinct lines.
 - **RL4** Body signs before a closer (not the last) are known name modifiers (seen in A name bodies before their head)
   more often than chance draws of signs matched on frequency (B, p < 0.05).
 - **RL5** Progress rule: RL1 and RL2 hold; then closer-line bodies get the roles name head / name modifier in R.
+
+## Results of the two-hundred-and-ninth set (added after the test; `predict_test209.py`, `results/predict_test209.md`)
+
+One held, four failed. In closer lines the sign directly before the closer is a known name head no more often than
+the other body signs: A 72% against 77% (p = 0.88; RL1), B 64% against 67% (RL2). It is a head less often than the
+sign before 740 / 520 (64% against 87% in B), though more than half as often (RL3). The earlier body signs are known
+modifiers no more often than frequency-matched signs (RL4). The known-head set (183 signs) is large enough that most
+common signs belong to it, so the test has little power; closer-line bodies do not show the name-body pattern beyond
+that. No roles adopted; R stays 81.3%. No progress: streak 4. Tally, counting parts: 1340 held, 1244 failed (2584
+registered).
