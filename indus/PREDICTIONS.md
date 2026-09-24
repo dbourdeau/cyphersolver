@@ -7476,3 +7476,31 @@ Summary of sets 171-172: name structure excludes a Sumerian-type language a seco
 last element closed here); between Dravidian and Indo-Aryan the name lists available do not decide, with lengths and
 closure nearer Sanskrit and the dominant masculine-type ending nearer Tamil. Tally, counting parts: 1203 held, 1131
 failed (2334 registered).
+
+# Hundred-and-seventy-third set, registered before testing (24 September 2026): early Prakrit donor names as an Indo-Aryan comparator (ten hypotheses)
+
+The owner asked for further tests with material that can be obtained. New source: H. Lüders, *A List of Brahmi
+Inscriptions from the Earliest Times to about A.D. 400* (Ep. Ind. X appendix, 1912; OCR at the Internet Archive),
+parsed by `lang_names.pra_luders`: 'Gift of [titles] Name' in entries marked Prakrit, the site taken from the
+references (Bhilsa Topes = Sanchi, Bharhut, Mathura ...) and, where an entry names none, from the last site named
+before it (the list runs site by site): 374 names, Sanchi 310, Bharhut 43; names lower-cased, macrons lost in the
+OCR, some OCR errors kept. Elements = aksharas (split after each vowel a e i o u, trailing consonants joined to the
+last). This is South Asian, Indo-Aryan, personal names on donated objects, c. 200 BCE-400 CE: closer in time, place
+and genre to the Indus seals than Monier-Williams. Profiles as sets 152/157 (Linear B person / title benchmarks);
+R, JSD and rarefaction (to the smaller list) as sets 171-172; Old Tamil = the honorific-removed cores of set 172.
+
+- **PK1** Prakrit donor names, Sanchi against Bharhut, are person-like.
+- **PK2** At 3 and at 4 units, the Indus name estimate/observed ratio is within a factor of 2 of the Prakrit one (both
+  lengths, where both have 20+ names per catch; otherwise at all lengths pooled).
+- **PK3** Prakrit donor names close the last element: R < 1.
+- **PK4** On a log scale the Indus R is closer to the Prakrit R than to the Old Tamil core R.
+- **PK5** The Indus body length distribution is closer (JSD) to Prakrit akshara lengths than to Old Tamil cores.
+- **PK6** Prakrit names end in a closed stock of compound heads: the ten commonest final two-akshara endings (-guta,
+  -mita, -dina, -rakhita ...) cover 30%+ of names.
+- **PK7** The ten commonest Indus heads cover a share of Indus names within 0.15 of PK6's share.
+- **PK8** Names found at both Sanchi and Bharhut are shorter than names found at one (rank test), as Indus shared names
+  are (CR6).
+- **PK9** Real Prakrit names recur between Sanchi and Bharhut more than akshara-shuffled names (above 95% of 1,000
+  shuffles), as Indus names do (LM5).
+- **PK10** The final two-akshara endings (compound heads) have the title-like profile between Sanchi and Bharhut, as
+  Indus heads do.

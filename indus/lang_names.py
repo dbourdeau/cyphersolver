@@ -153,3 +153,43 @@ if __name__ == '__main__':
     print('tam', len(t), t[:8])
     o, fa = sum_names()
     print('sum owners', len(o), 'fathers', len(fa), o[:6])
+
+
+SITES = (('Bhilsa Topes', 'Sanchi'), ('Sanchi', 'Sanchi'), ('Bharhut', 'Bharhut'), ('Mathura', 'Mathura'), ('Amaravati', 'Amaravati'),
+         ('Nasik', 'Nasik'), ('Kanheri', 'Kanheri'), ('Junnar', 'Junnar'), ('Karle', 'Karle'))
+TITLES = re.compile(r"^(the|a|an|of|monk|nun|lay|layman|laywoman|lay-woman|lay-man|merchant|banker|mother|father|son|daughter|wife|"
+                    r"sister|brother|pupil|disciple|venerable|reverend|householder|elder|queen|king|prince|princess|lady|preacher)$", re.I)
+
+
+def pra_luders():
+    """Prakrit donor names from Lueders, List of Brahmi Inscriptions (Ep. Ind. X, 1912; OCR at the Internet Archive):
+    'Gift of [titles] Name ...' in entries marked Prakrit. Returns (name, site, female) with the name lower-cased and
+    macrons dropped by the OCR."""
+    t = open(os.path.join(SP, 'lang', 'luders.txt'), encoding='utf-8').read()
+    ents = re.split(r'\n\s*(\d{1,4})\.\s', t)
+    out = []
+    last = None
+    for i in range(1, len(ents) - 1, 2):
+        body = ents[i + 1]
+        found = next((s for k, s in SITES if k in body), None)
+        # the list is ordered by site: an entry without a site keyword takes the last site named before it
+        last = found or last
+        site = last
+        if not re.search(r'Pr[a-z]krit', body):
+            continue
+        m = re.search(r'Gift of (.{0,160})', body.replace('\n', ' '))
+        if not m:
+            continue
+        seg = re.sub(r'\{[^}]*\}|\([^)]*\)', ' ', m.group(1))
+        words = re.findall(r"[A-Za-zÀ-ɏḀ-ỿ'\-]+", seg)
+        name = None
+        for w in words:
+            if TITLES.match(w):
+                continue
+            if w[:1].isupper():
+                name = w
+            break
+        if name and len(name) >= 3 and not re.search(r'[0-9]', name):
+            fem = bool(re.search(r'\b(nun|bhichhuni|bhikhuni|wife|daughter|mother|sister|laywoman|lay-woman|queen|lady|princess)\b', m.group(1), re.I))
+            out.append((name.lower().replace("'", ''), site, fem))
+    return out
