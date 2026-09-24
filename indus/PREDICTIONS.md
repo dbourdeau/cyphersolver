@@ -7014,6 +7014,10 @@ far less (PL7: 0.3%, sign 2 is bound to what follows), and line breaks do not fa
 unit chaining (PL9: 1.36 signs per word with units from 5+ bodies; the figure depends on the unit threshold).
 Tally, counting parts: 1135 held, 1073 failed (2208 registered).
 
+Withdrawn in part by the hundred-and-sixty-first set (added later the same day): openness grows with unit length
+(1-sign names are title-like), so PL1/PL2 mostly compare single signs with multi-sign units; the shared openers are
+frequent signs and numerals. Only a weak motif link (PL4) remains of the office + name reading.
+
 ## Results of the hundred-and-sixtieth set (added after the test; `predict_test160.py`, `results/predict_test160.md`)
 
 Eight held, two failed. **The new findings replicate on independent samples.** In Mahadevan's M77 additions (B,
