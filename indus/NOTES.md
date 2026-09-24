@@ -1999,7 +1999,8 @@ the first two. Tally 1074 held, 1017 failed.
 Registered first (hundred-and-forty-second set, 474c26fb4). On 77 multi-line texts (both line orders), line breaks
 never split a bound pair and almost never a name unit; each line is a well-formed text and ends in a marker twice as
 often as chance; the second line of a name text is a separate field. The scribes' breaks confirm the statistical
-segmentation from outside. Tally 1080 held, 1019 failed.
+segmentation from outside. Tally 1080 held, 1019 failed. Correction: line breaks were tested before (X2 in
+the seventh set, RB, U10, J7 on M77); LK2 replicates X2, and LK1, LK3, LK4, LK6, LK8 are the new parts.
 
 ## Hundred-and-fifty-seventh pass (24 Sept 2026): numerals used for their sound
 

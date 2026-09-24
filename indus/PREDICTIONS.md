@@ -6430,6 +6430,13 @@ marker twice as often as random segments (LK4: 64 against 32 and 52). Lines are 
 sign statistics: the scribes' own line breaks fall where the units say word boundaries are. Tally, counting parts:
 1080 held, 1019 failed (2099 registered).
 
+Correction (added after recording, same day): the registration said line division 'was never measured here'; that
+came from a stale remark in the seventh set's text. Line breaks were tested before: X1/X2 (seventh set: the 30 bound
+pairs never split, 0 of 31; heading/ending boundaries no more than random), RB, U10 and J7 (M77 multi-line texts).
+LK2 is therefore a replication of X2 on F. New here: LK1 (name units), LK3 (each line a well-formed text), LK4 (lines
+end in markers; X1 measured heading/ending boundaries, not line ends), LK6 and LK8. LK5 fails on F where J7 held on
+M77 (numeral + next sign split 6.1%): the two samples disagree, with few cases in F (7 junctions).
+
 # Hundred-and-forty-third set, registered before testing (24 September 2026): numerals used for their sound (six hypotheses)
 
 The West Asian texts use strokes heavily (set 136), the sign after a numeral is usually not the name head (TY9) and
