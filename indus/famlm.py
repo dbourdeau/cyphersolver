@@ -68,3 +68,30 @@ def score3(train, test, keys, kn=True, cls=M3):
     w, _ = fit3(train, keys, kn, cls=cls)
     m = cls(train)
     return xent([r for t in test for r in m.rows(t, kn)], w), w
+
+
+def learned_classes(train, k, seed=0, iters=30):
+    """k-means classes from left/right neighbour distributions (set 201), a control for the graphic families."""
+    import numpy as np
+    tok = Counter(g for t in train for g in t)
+    V = list(tok)
+    idx = {g: i for i, g in enumerate(V)}
+    ctx = sorted(g for g, n in tok.items() if n >= 5) + ['<s>', '</s>']
+    ci = {g: i for i, g in enumerate(ctx)}
+    X = np.zeros((len(V), 2 * len(ctx)))
+    for t in train:
+        s = ['<s>'] + list(t) + ['</s>']
+        for i in range(1, len(s) - 1):
+            if s[i - 1] in ci:
+                X[idx[s[i]], ci[s[i - 1]]] += 1
+            if s[i + 1] in ci:
+                X[idx[s[i]], len(ctx) + ci[s[i + 1]]] += 1
+    X = X / np.maximum(1, X.sum(1, keepdims=True))
+    rng = np.random.default_rng(seed)
+    C = X[rng.choice(len(V), k, replace=False)]
+    for _ in range(iters):
+        lab = ((X[:, None, :] - C[None]) ** 2).sum(2).argmin(1)
+        for j in range(k):
+            if (lab == j).any():
+                C[j] = X[lab == j].mean(0)
+    return {g: 'c%d' % lab[idx[g]] for g in V}

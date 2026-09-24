@@ -8447,3 +8447,17 @@ split gave 4.725 for decade families against 4.736-4.747 for learned classes.
 - **GF2** Trained on A and tested on B's new lines, decade families beat each learned set too.
 - **GF3** Families that are decade-block and learned-class pairs do no better than decade families alone (fixed test).
 - **GF4** Progress rule for the loop: PH1 and PH2 hold, or GF1 and GF2 hold.
+
+## Results of the two-hundred-and-first set (added after the test; `predict_test201.py`, `results/predict_test201.md`, `famlm.learned_classes`)
+
+All seven held. **(A) Phrases carry pictures where single signs do not.** An unseen tablet matched to the design texts
+with which it shares the most adjacent sign pairs gets its picture right in 26 of 106 cases (24.5%; permutation p =
+0.001; PH1), and 21 of 113 on a second split (18.6%; p = 0.03; PH2); 49% of unseen tablets share a pair (PH3).
+Post hoc, the right predictions come mostly from 706 33 923 740 -> elephant (8 of 8 across both splits; partly
+near-duplicate texts that differ by a final stroke), 806 158 -> tree (6 of 6; 806 is the leaf-in-oval sign), 233 520
+-> gaur (3 of 3), 752 740 and 861 2 -> tree, 840 32 / 32 740 -> scene; 740 400 is ambiguous (gharial 7 of 19, bull 5
+of 8). **(B) The S gain is graphic.** Decade families give 4.6849 on the fixed test against 4.712-4.718 for classes
+learned from contexts (GF1), 5.223 against 5.263-5.271 A -> B (GF2), and pairing them with learned classes makes S
+worse (4.705; GF3). Progress (GF4): streak 0. Prize tiers: V strict unchanged (0.008%); tier 3 gains a
+picture-vault line: phrase-level picture prediction on unseen tablets 24.5% / 18.6% (nulls p = 0.001 / 0.03).
+Tally, counting parts: 1322 held, 1216 failed (2538 registered).

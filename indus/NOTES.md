@@ -2407,6 +2407,12 @@ Registered first (3a05a3ea7). Split by distinct text, sign-level picture anchors
 unseen tablets (p = 0.40): text-picture pairing is whole-text (mould copies), not sign-level. Seals null again. No
 progress: streak 1. Tally 1315 held, 1216 failed.
 
+## Two-hundred-and-fifteenth pass (24 Sept 2026): decipherment loop 26, phrase-level picture anchors; graphic families
+
+Registered first (d4a53964d). Shared sign pairs predict unseen tablets' pictures (24.5%, p = 0.001; second split 18.6%,
+p = 0.03): elephant 706 33 923 740, tree 806 158, gaur 233 520. Graphic decade families beat learned classes for S
+(4.685 vs 4.712+), A -> B too. Progress: streak 0. Tally 1322 held, 1216 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
