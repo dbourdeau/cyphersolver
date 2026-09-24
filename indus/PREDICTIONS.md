@@ -6371,3 +6371,26 @@ CL, 400, 90. Heads = last body signs of names. Distinct lines (A + B), distinct 
   sign is the body's last sign (the head) in 50%+.
 - **TY10** No number agreement: among names whose head is directly preceded by a numeral run, the ending (740 / 520
   / closer / none) does not depend on value 1 against 2+ (two-sided Fisher on 740 against the rest, p >= 0.05 holds).
+
+## Results of the hundred-and-forty-first set (added after the test; `predict_test141.py`, `results/predict_test141.md`)
+
+Four held, six failed. Deviation, fixed before recording: the first run counted numerals among the 'markers' after
+the last lexical sign in TY6 (61 lines); counted as registered (markers only) it is 12 of 1,645 and fails.
+
+What held: **numerals come before the counted sign** (TY1: 472 runs with a lexical sign after them against 106 with
+one only before), the order of Dravidian and Indo-Aryan and against the noun-numeral order of Sumerian; **doubled
+lexical signs exist** (TY4: 125 of 2,722 lines, 5%, but 58 of them are sign 615); **openers are an open class** (TY8:
+the ten commonest cover 37% of 3+-sign bodies), so the front of a name is lexical, not a prefix paradigm; and **no
+number agreement** (TY10: after a counted head the ending is 740 in 88% with value 1 and 87% with 2+).
+
+What failed: no preposed genitive after an inner 740 (TY2: the sign after it is a head less often than other interior
+signs, 62% against 79%); marker order is mostly but not fully rigid (TY3: 87%; 740/90 80:8 and 740 before 400 131:10
+are the loose pairs); doubled signs are not heads (TY5: 11 of 36), so no Sumerian-type plural reduplication; no long
+suffix chains (TY6: two markers at most in all but 12 lines), a fixed slot rather than open agglutination; 740 or 520
+inside a body in 3% of 3+ names (TY7, over 2%); and the counted sign is the head in only 37% (TY9): numeral +
+sign is usually a modifier inside the name, not the name's head.
+
+Typology, as far as order can show it: numeral-first, head-final, no number or class agreement, a short and closed
+ending slot. That fits a Dravidian-like or Indo-Aryan-like order and not Sumerian's, but none of it separates
+Dravidian from Indo-Aryan, and the family expectations were stated from general knowledge. Tally, counting parts:
+1074 held, 1017 failed (2091 registered).

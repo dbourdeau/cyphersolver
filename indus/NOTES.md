@@ -1986,6 +1986,14 @@ vocabulary, no area effect on genre, ending, motif or length. Copper tablets alo
 mounds; none in DK-G North). Seals were lost across the city independently of what they say. Tally 1070 held, 1011
 failed.
 
+## Hundred-and-fifty-fifth pass (24 Sept 2026): language type from sign order
+
+Registered first (hundred-and-forty-first set, 3ff32f82e). Numerals precede the counted sign (472:106), openers are an
+open class, there is no number agreement; there is no preposed genitive, no plural reduplication, no long suffix
+chain, and the counted sign is usually a modifier, not the head. Order typology: numeral-first, head-final, no
+agreement, short closed ending slot: compatible with Dravidian or Indo-Aryan order, against Sumerian, not separating
+the first two. Tally 1074 held, 1017 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
