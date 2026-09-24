@@ -5829,3 +5829,24 @@ held-out A + B lines (BB8) and improves B too (BB10: 4.71 to 4.52). Line length,
 end-distance term add nothing once position and context are in (BB2, BB6, BB7), and new F lines stay at 5.64 (BB9, not
 under 5.5). New benchmark: 4.66 bits per sign held-out, 5.44 on new lines with block backoff. Tally, counting parts: 978
 held, 948 failed (1926 registered).
+
+# Hundred-and-twenty-sixth set, registered before testing (24 September 2026): is the line composed from the end? (nine hypotheses)
+
+From the hundred-and-twenty-fifth set: lines are anchored at their end. Here: does knowledge flow backwards from the
+end? Distinct lines (A + B) unless stated; same 80/20 split; best-model machinery of that set (discounted smoothing,
+position and context terms, weights fitted on a training slice). p < 0.05 where tested.
+
+- **RL1** Modelling lines end-to-start (reversed, with distance-from-start of the reversed line) beats the best
+  start-to-end model by 0.05+ bits per sign.
+- **RL2** The third-from-last sign is predicted from the last two (top-1, training counts) better than the third sign is
+  from the first two, by 5+ points (lines of 4+).
+- **RL3** B: RL2 holds.
+- **RL4** F without copper: RL2 holds.
+- **RL5** In name lines, per-position entropy (over distinct lines of 4+) is lowest at the last position and highest at
+  the first.
+- **RL6** Per-position entropy counted from the end rises over the last three positions (last < second-last <
+  third-last).
+- **RL7** In count lines (formulas with a numeral), the last position also has the lowest entropy.
+- **RL8** Given the last sign, the second-last is predicted (top-1) better than the second sign given the first, by 5+
+  points (lines of 3+).
+- **RL9** B: RL8 holds.
