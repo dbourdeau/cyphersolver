@@ -1097,6 +1097,14 @@ order: reversed (13 against 3), as data/corpus.tsv; icit_full.py's listed order 
 the smaller first (M5); numbers before fish are smaller (M7); after an ending it is always 90 then 400 (M8). Same-name
 seals do not share animal, shape or heading beyond chance (M9-M11). Tally 87 held, 150 failed.
 
+## Thirty-ninth pass (24 Sept 2026): affixed signs, direction, numbers, bar seals
+
+Registered first (PREDICTIONS.md, twenty-fifth set, a68602bb0), tested (`predict_test25.py`, fuller corpus with lines
+reversed). Held: left-to-right writing avoids seals and goes with short texts, other animals and bar seals (O24, O9,
+O8, O20); long-stroke numerals count containers and devices (37% against 3%), short strokes go with fish (O12, O13);
+400 after a name is an incised-tablet feature (O22, O14). Failed: affixed strokes and carets are not written
+sequences (O1-O5); bar seals later only narrowly (O15: MD p = 0.041, Harappa 0.054). Tally 95 held, 167 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

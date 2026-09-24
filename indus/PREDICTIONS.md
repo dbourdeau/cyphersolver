@@ -1451,3 +1451,40 @@ Tablets (F)
 - **O21** Distinct moulded-tablet texts recur on 2+ tablets more often than distinct incised-tablet texts.
 - **O22** Tablets with 400 are incised more often than moulded, length-stratified.
 - **O14** Among tablets with a name ending, incised ones carry 400 after it more often than moulded ones.
+
+## Results of the twenty-fifth set (added after the test; `predict_test25.py`, `results/predict_test25.md`)
+
+Eight held, seventeen failed. The fuller corpus was read with lines reversed (M4).
+
+**Affixed signs are not sequences.** O1-O4 fail: the fish with a caret (235), the fish with a stroke (231), the comb with
+a stroke (415) and the jar with a stroke (741) do not behave as their base followed by the added mark (p = 0.28 to
+0.97); O5 fails (3 of 4 score higher as sequences, the bar was all). Only 555 (G3), a combination of two full signs,
+behaved as a sequence. The added strokes and marks modify a sign inside itself; they are not suffixes written into it.
+
+**Direction.**
+- **O24 holds**: left-to-right texts are rarer on seals (2.5%) than on other objects (6.1%, p < 0.0001). **O9 holds**:
+  they are shorter. **O8 holds**: left-to-right seals carry an animal other than the unicorn 59% of the time against
+  20% (10 of 17, p = 0.0005). **O20 holds**: bar seals run left to right twice as often as square seals (4.3% against
+  2.0%, p = 0.035). A seal is cut in mirror image; the left-to-right seals are the less formal ones, the short texts,
+  the other animals and the bar seals.
+- O6 fails (not a Gujarat habit: 6.2% against 6.6%), O7 fails (left-to-right lines carry endings as often), O23 fails
+  narrowly (moulded tablets 5.3% against 3.8%, p = 0.096).
+
+**Numbers: two systems for two things.**
+- **O12 holds**: long-stroke numerals stand before a container or device sign (Fairservis J, K) in 37% of cases,
+  short-stroke numerals in 3% (p < 0.0001). **O13 holds**: numerals before fish signs are short-stroke (64% and 66%
+  against 50% and 30%). Long strokes count measures and containers (the tablets' 'N 700' is one case of it); short
+  strokes go with the fish names.
+- O10 fails (side-by-side numerals mix notations no more than chance), O11 fails the other way (in smaller-first pairs
+  the second numeral is rarely long: 9% against 52%), O25 fails the other way (tiered numerals stand last in a name
+  more often than short ones: 18% against 2%).
+
+**Bar seals.** O15 fails narrowly: bar seals are a larger share of later seals at Mohenjo-daro (16.4% against 10.8%,
+p = 0.041) and at Harappa (26.8% against 15.6%, p = 0.054), short of the bar at Harappa. O16, O17, O18, O19 fail (not
+from smaller places, not less headed, not longer, their lines not more head-final).
+
+**Tablets.** **O22 holds** (tablets with 400 are incised more often, +12.2 points, p = 0.0002) and **O14 holds** (name
+tablets with an ending carry 400 after it 48.5% of the time when incised, 24.3% when moulded, p < 0.0001): 400 after
+the name is a feature of the written, incised tablets. O21 fails.
+
+Tally, counting parts: 95 held, 167 failed (262 registered).
