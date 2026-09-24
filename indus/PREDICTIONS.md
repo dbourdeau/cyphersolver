@@ -5658,3 +5658,24 @@ are 740-class alike (SK8: 84%; SK9: 90%) and rarely 520-class (SK4), they are co
 (SK5), and do not split by city (SK7, p = 0.07). Only 18% of stacking tokens follow 740 (SK2; SK13 in F'), so stacking is
 an option, not the rule. Reading: one set of closers in the ending slot, six of which may also be added after 740.
 Tally, counting parts: 944 held, 923 failed (1867 registered).
+
+# Hundred-and-twenty-first set, registered before testing (24 September 2026): what else marks the 520 class (twelve hypotheses)
+
+Classes as in the eighty-first set (520 class: fish 220, 231, 233, 235, 240; numerals 1, 33; and 175, 382, 70, 72).
+Distinct names (A + B) unless stated. 'Left neighbours' of a sign = the set of signs seen directly before it in bodies.
+10,000-draw permutations; p < 0.05.
+
+- **C5A** The non-fish 520 heads (175, 382, 70, 72) are directly preceded by a fish more often than 740-class heads are.
+- **C5B** 520 names open with a fish more often than 740 names do.
+- **C5C** The value before the head depends on the head's class (MI over counted heads).
+- **C5D** In F (all objects), 90 directly follows 520 in at most one distinct line.
+- **C5E** The five commonest 520 bodies account for 20%+ of 520 name tokens (A + B tokens).
+- **C5F** The left neighbours of 520-class heads overlap with the left neighbours of fish signs more than those of
+  740-class heads do (mean Jaccard, heads with 3+ neighbours).
+- **C5G** The fish head 222 (always 740) and the fish head 220 (mostly 520) have left-neighbour sets overlapping at
+  Jaccard 0.3 or less.
+- **C5H** Counted fish heads take 520 more often than uncounted fish heads (distinct names).
+- **C5I** 40%+ of distinct 520 lines have a fish directly before 520.
+- **C5J** Within fish heads, the class depends on the sign before the fish (MI, distinct names).
+- **C5K** B: C5B holds.
+- **C5L** B: C5I holds.
