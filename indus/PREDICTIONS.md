@@ -1240,3 +1240,38 @@ Meaning, objects, places
 - **Q10** The clusters differ in graphic complexity (H5 measure; between-cluster variance beyond permutation).
 - **Q11** The cluster mix of West Asian content tokens differs from home (F; permutation of home / foreign labels
   among lines).
+
+## Results of the twenty-second set (added after the test; `predict_test22.py`, `results/predict_test22.md`)
+
+Eight held, seven failed. 115 content signs clustered into 8 classes on A. Deviation from the registration: Q8, Q9 and
+Q11 were run with 1,000 permutations, not 10,000 (the smallest possible p is 0.001); Q8's p = 0.0010 sits at that floor.
+
+**The method passes on Linear B and fails on the Indus numerals.**
+- **Q2 holds**: on Linear B the method separates syllabograms from word signs (95% of same-cluster pairs are of one
+  kind, p = 0.0001).
+- **Q1 fails**: added to the Indus clustering, the numerals do not gather (same-cluster rate 1.3 times that of random
+  pairs; bar 3). On this corpus the method does not recover a class known in advance, so its clusters cannot be taken
+  as word classes.
+
+**What the clusters still do.**
+- **Q3 holds** (A's clusters predict B contexts: cosine +0.028, p = 0.0001) and **Q12 holds** (a clustering of B made
+  independently agrees with A's more than chance, 74 pairs, p = 0.0002): the grouping is reproducible across
+  transcriptions, if weak.
+- **Q5 holds** (clusters differ in the ending their names take in B, MI 0.241 bits, p = 0.004): one cluster (7) holds
+  the fish series with 803, 806, 742, 745, i.e. the 520 side.
+- **Q6 holds** (clusters and Fairservis picture categories are associated, MI 1.335 bits over 50 signs, p = 0.005) and
+  **Q10 holds** (clusters differ in graphic complexity, p = 0.010): the contextual grouping partly follows what the
+  signs depict and how they are drawn.
+- **Q8 holds** (seals and tablets use the clusters differently, p = 0.001 at the floor).
+- **Q13 holds**: numerals, grammar and formula signs plus the clustered signs cover 93.2% of B's tokens (the
+  head / attribute classes alone covered 50%, R14). Coverage by a class is not knowledge of the class, given Q1.
+
+**Failed.** Q4 (clusters do not differ in position in B, p = 0.36), Q14 (only 1 of 8 clusters has 60%+ of its tokens in
+one position), Q7 (the human figures fall in five different clusters), Q15 (the head-class signs are spread, at most
+47% in one cluster), Q9 (no difference between Mohenjo-daro and Harappa), Q11 (foreign texts not different, p = 0.09).
+
+The content signs can be grouped reproducibly, and the groups carry some signal (ending, picture, drawing, object), but
+the method fails its Indus check and the groups are not positional word classes. The 57% of content signs remain
+unread and, in any validated sense, unclassified.
+
+Tally, counting parts: 81 held, 131 failed (212 registered).

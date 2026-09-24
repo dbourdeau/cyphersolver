@@ -1070,6 +1070,15 @@ R3, R4) and on seals are a less formal, regional form (R9, R11, R12), but many a
 than names (R19 reverse); tablets close lines with 400 / 90 without an ending (R25); pot marks are single numbers
 (R16, R17); the head / attribute classes cover only half of B's tokens (R14 fails). Tally 73 held, 124 failed.
 
+## Thirty-sixth pass (24 Sept 2026): classes of the content signs
+
+Registered first (PREDICTIONS.md, twenty-second set, 73d793ccb), tested (`predict_test22.py`; 1,000 rather than 10,000
+permutations for Q8, Q9, Q11). The contextual clustering works on Linear B (Q2) but does not gather the Indus
+numerals (Q1 fails), so its 8 clusters are not validated word classes. They are reproducible across transcriptions
+(Q3, Q12), differ in ending (Q5), picture category (Q6), complexity (Q10) and object (Q8), and cover 93% of B's
+tokens (Q13); they are not positional classes (Q4, Q14), human figures scatter (Q7), heads spread (Q15). Tally 81
+held, 131 failed. The site page is withheld (24 Sept); results kept in indus/ only.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
