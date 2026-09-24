@@ -4253,3 +4253,31 @@ of 3+ signs contain a city unit (RS20). Not confirmed: fish-520 in Gujarat (RS1:
 (RS11: 25%). This revises the eighty-sixth set's reading: the smaller sites use the same name stock and the same
 units; the grammar tests failed there because 160 names are too few, not because the system differs. Tally, counting
 parts: 579 held, 648 failed (1227 registered).
+
+# Eighty-eighth set, registered before testing (24 September 2026): lines with two names (twenty hypotheses)
+
+'Two-name line' = a distinct line (A + B) with exactly two ending tokens (740/520), each with a non-empty segment
+before it. First segment = the signs before the first ending (heading unit removed); second segment = the signs after
+the first ending (and any 400/90/151 right after it) up to the second ending. 'One-name line' = a name line with one
+ending. F for object and site tests. 10,000-draw permutations; p < 0.05.
+
+- **TN1** Two-name lines are 2%+ of distinct lines with an ending.
+- **TN2** Both segments are attested name bodies in 30%+ of two-name lines.
+- **TN3** The second segment is shorter than the first more often than longer (sign test).
+- **TN4** The two segments share their last sign more often than random pairs of name bodies.
+- **TN5** They share their first sign more often than random pairs.
+- **TN6** Two-name lines are on seals less often than one-name lines (F).
+- **TN7** Two-name lines are at Mohenjo-daro more often than one-name lines (F).
+- **TN8** The first ending is 740 in 90%+.
+- **TN9** A 400, 90 or 151 follows the first ending in 20%+.
+- **TN10** Two-name lines open with the heading unit more often than one-name lines.
+- **TN11** The second segment ends in a top-10 head more often than the first (sign test).
+- **TN12** The second segment is one sign in 30%+.
+- **TN13** Second segments recur across two-name lines more often than first segments.
+- **TN14** Second-segment last signs are formula items more often than first-segment last signs.
+- **TN15** Two-name lines contain a numeral more often than one-name lines.
+- **TN16** The numeral stands in the second segment more often than the first (sign test over lines with one).
+- **TN17** 30%+ of second segments are also attested as a whole one-name line's body.
+- **TN18** 30%+ of first segments are.
+- **TN19** B: TN3 holds.
+- **TN20** B: TN12 holds.
