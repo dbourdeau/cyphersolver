@@ -3048,3 +3048,19 @@ and a little on the city (FS8: 0.05 bits, p = 0.0001). Fish-final bodies take ei
 0.38 bits), restating the mixed fish heads of earlier sets. Harappa does not use fewer fish (FS9) and fish do not close
 formulas (FS10). Reading: the fish series behaves like a set of qualifiers in names, chosen by context, often counted,
 and stackable. Tally, counting parts: 335 held, 412 failed (747 registered).
+
+# Fifty-ninth set, registered before testing (24 September 2026): the headings (loop 3, round 3)
+
+'Heading' = 817, 820 or 861 as the first sign of a line; 'headed line' = a line of 2+ signs opening with one. Name lines
+(name_of) and formulas (non-name lines). A + B pooled unless F is named. 10,000-draw permutations; p < 0.05.
+
+- **HD1** The heading sign depends on the genre (name line against formula; MI, permutation).
+- **HD2** Among headed formulas, those opening with 861 carry a numeral more often than those opening with 817.
+- **HD3** Headed name lines are longer than unheaded name lines (rank test).
+- **HD4** 50%+ of headed lines have a numeral as their second sign.
+- **HD5** Seal lines are headed more often than tablet lines, length-stratified (F).
+- **HD6** The heading sign depends on the city (F, Mohenjo-daro against Harappa; MI, permutation).
+- **HD7** 30%+ of name bodies in headed name lines are also attested in unheaded name lines.
+- **HD8** Headed name lines take 740 more often than unheaded name lines.
+- **HD9** 90%+ of 817, 820 and 861 tokens are line-first.
+- **HD10** 80%+ of numerals directly after a heading are of the short kind.
