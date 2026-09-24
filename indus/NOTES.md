@@ -2326,6 +2326,11 @@ Registered first (08a83e65d). Doubled signs stand at the edges of texts (final 4
 same directions on B) and doubled 615 is followed differently from single 615; brackets change nothing. Doubling is a
 distinct form (plural, collective or total?). Progress; streak 0. Tally 1266 held, 1187 failed.
 
+## Two-hundred-and-second pass (24 Sept 2026): decipherment loop 13, more training text for S
+
+Registered first (feb4e72fa). Adding F's 432 extra lines to training makes S slightly worse (4.719); different
+transcription habits. No progress: streak 1. Tally 1266 held, 1192 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

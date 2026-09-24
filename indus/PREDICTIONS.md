@@ -8039,3 +8039,12 @@ progress.py (tri + pos + end, discounted; weights fitted on a development split 
 - **SX4** The gain is not only from copper tablets: adding F's extra lines without copper tablets lowers S by 0.02 or
   more.
 - **SX5** Progress rule: SX1 holds.
+
+## Results of the hundred-and-eighty-eighth set (added after the test; `predict_test188.py`, `results/predict_test188.md`)
+
+None held, five failed. Adding F's 432 extra distinct lines to the 2,177 training lines makes S slightly worse, not
+better (SX1: 4.712 to 4.719; seals only 4.723, SX2; without copper 4.717, SX4), though it cuts the unseen test signs
+from 2.05% to 1.58% (SX3, short of 0.5 points). The extra lines apparently follow different transcription habits (F
+is the fuller export, with fragmentary and variant readings that A's cleaning left out), so more text of that kind
+does not help the benchmark. No progress this loop: streak 1. Tally, counting parts: 1266 held, 1192 failed (2458
+registered).
