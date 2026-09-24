@@ -1883,6 +1883,13 @@ Registered first (hundred-and-twenty-ninth set, 48756472d), tested (`predict_tes
 chaining collocations shared across genres, cities and transcriptions, not fixed two-sign words (order not rigid, weak
 dependency, under half are units). Tally 996 held, 969 failed.
 
+## Hundred-and-forty-fourth pass (24 Sept 2026): material and size
+
+Registered first (hundred-and-thirtieth set, 92f1530f5), tested (`predict_test130.py`). New physical variables: seal
+size tracks text length (0.42), headed seals are bigger and closer seals smaller, later Harappa seals are bigger
+(23 to 30 mm); moulded tablets are faience, faience texts are short, and 520 names are a steatite (seal) feature.
+Field 31 read as size by inference. Tally 1005 held, 972 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

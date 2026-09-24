@@ -5970,3 +5970,16 @@ with the field present; genres, heading unit, motif as before. 10,000-draw permu
 - **MS10** At Harappa, later seals are larger than earlier seals (rank test).
 - **MS11** Among all objects with a size, count lines are on smaller objects than name lines (rank test).
 - **MS12** Seals with a numeral formula are larger than seals with only a name (rank test).
+
+## Results of the hundred-and-thirtieth set (added after the test; `predict_test130.py`, `results/predict_test130.md`)
+
+Nine held, three failed. Two new variables (material, field 13; main dimension, field 31, read as millimetres) open a
+physical side. Bigger seals carry longer texts (MS1: Spearman 0.42 over 1,545 seals), seals with the heading unit are
+bigger (MS2: 28.1 against 26.9 mm), seals with a closer line are smaller than seals with a name line (MS4: medians 24.9
+against 26.7), and Harappa's later seals are much bigger than its earlier ones (MS10: 29.9 against 23.2 mm), matching the
+longer later texts of the eighty-fourth set. Faience objects carry shorter texts than steatite ones (MS5: 3.2 against
+4.2 signs), moulded tablets are mostly faience (MS7: 409 of 590), tablet genre depends on material (MS6, p = 0.0001),
+and names on steatite take 520 twice as often as names on other materials (MS8: 17% against 9%; steatite = seals, as
+in the ninetieth set). Count lines sit on slightly smaller objects than name lines (MS11). Not supported: unicorn seals
+larger (MS3, p = 0.14), different seal sizes between the cities (MS9: both median 26.7 mm), and counting seals being
+larger (MS12, the other way). Tally, counting parts: 1005 held, 972 failed (1977 registered).
