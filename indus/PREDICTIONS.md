@@ -3180,3 +3180,15 @@ Counted signs and kinds as in the fifty-first set. 10,000-draw permutations; p <
 - **CN8** 60%+ of signs counted 5+ times (all objects, A + B) are always counted with one numeral kind.
 - **CN9** 95%+ of values before 700 are 2, 3 or 4.
 - **CN10** 60%+ of Mohenjo-daro 700 tokens stand inside name bodies.
+
+## Results of the sixty-third set (added after the test; `predict_test63.py`, `results/predict_test63.md`)
+
+Three held, seven failed. 700 is almost only a count sign: values before it are 2-4 in 98% (CN9: 94, 147, 123), the
+common count texts (32 700, 33 700, 34 700) are each on around 100 objects (CN3), and the value differs slightly between
+moulded and incised tablets (CN2: 0.03 bits, p = 0.003). Count tokens are commoner on incised than moulded tablets
+(CN1: 30% against 20%, the reverse of the prediction). 700 is not a name sign anywhere: only 5 of 155 uncounted 700s are
+inside a name body (CN5, CN6), 1 of 26 at Mohenjo-daro (CN10). The uncounted 700s are mostly Harappa tablets and potsherd
+graffiti, and 66 of them stand first before a numeral ('700 33', '700 32', '700 34'): the count token written in the
+other direction relative to the F line order, not an uncounted 700. Also: 700 700 is not a Harappa tablet form (CN7:
+4 of 19), and most counted signs take more than one numeral kind (CN8: 15 of 74 take one). Tally, counting parts: 360
+held, 437 failed (797 registered).

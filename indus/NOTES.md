@@ -1385,6 +1385,12 @@ Registered first (sixty-second set, c647a8825), tested (`predict_test62.py`). Co
 numeral, head and look-alike classes as groups; it does not give stable sign-level neighbours across transcriptions
 (0.44) or cities (0.39). Tally 357 held, 430 failed.
 
+## Seventy-seventh pass (24 Sept 2026): sign 700 and counted signs (loop 3, round 7)
+
+Registered first (sixty-third set, f99a63df6), tested (`predict_test63.py`). 700 is a count sign only (values 2-4 in
+98%), never a name sign; most 'uncounted' 700s are count tokens running the other way ('700 33'), a direction signal
+worth using. Most counted signs take several numeral kinds. Tally 360 held, 437 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
