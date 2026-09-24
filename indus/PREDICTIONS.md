@@ -5923,3 +5923,19 @@ information (FA6), so order is mostly a matter of particular signs, not families
 grammatical-role pairs (FA2: 18% involve an ending, suffix or numeral; e.g. 176-100, 140-920, 142-615), the signs before
 740 and after numerals overlap more than predicted (FA4: 0.36), gaps are not especially cross-family (FA7) and do not
 mostly involve headings or numerals (FA10: 15%). Tally, counting parts: 990 held, 965 failed (1955 registered).
+
+# Hundred-and-twenty-ninth set, registered before testing (24 September 2026): the strong pairs as compounds (ten hypotheses)
+
+'Excess pairs' as in the hundred-and-twenty-eighth set (105 pairs, observed 5+ and 5x expected, A + B distinct lines).
+Genres as in the hundred-and-eighth set; units as in the sixty-first; F' = F without copper. p < 0.05.
+
+- **CW1** For 80%+ of excess pairs, the reverse order makes up under 5% of their combined adjacencies.
+- **CW2** For 50%+ of excess pairs, the right member follows the left in 50%+ of the left member's tokens.
+- **CW3** 60%+ of excess pairs occur in two or more genres.
+- **CW4** 60%+ of excess pairs occur at both cities (F').
+- **CW5** 70%+ of excess pairs occur twice or more in B.
+- **CW6** 50%+ of excess pairs share a (previous, next) frame with some single common sign (they fill a one-sign slot).
+- **CW7** 60%+ of excess pairs are units (pairs in 5+ distinct name bodies).
+- **CW8** Under 20% of excess pairs contain 740 or 520.
+- **CW9** 20%+ of excess pairs chain with another (one's right member is another's left member).
+- **CW10** 60%+ of excess pairs occur in F' lines that are absent from A + B.
