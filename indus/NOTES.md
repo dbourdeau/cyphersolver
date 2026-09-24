@@ -2052,6 +2052,12 @@ replace any particular head: a closer's commonest alternative covers 39% (chance
 alternate with 900 / 752 / 760 more than with 690. The set-145 alternation is one case, not a rule. Tally 1103 held,
 1046 failed.
 
+## Hundred-and-sixty-fourth pass (24 Sept 2026): numeral compounds as a shared vocabulary
+
+Registered first (2ea4fc25d). Numeral compounds spread to more sites than matched bigrams, but the value before a
+given sign differs between Mohenjo-daro and Harappa (same commonest value for 39% of 69 signs; the '2 + fish' pairs
+are the shared exception). The compounds are fixed locally, not a common vocabulary. Tally 1104 held, 1050 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

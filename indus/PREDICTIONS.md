@@ -6705,3 +6705,17 @@ against 2.97), i.e. a closer takes the place of head + ending in length, without
 Reading: closers fill the slot of a whole head + ending but are their own words (as the alternative-closer sets had
 them, each with its own heads), not abbreviations of a titled noun; it gives no support to reading the bearer signs
 as 'merchant' or any other specific head. Tally, counting parts: 1103 held, 1046 failed (2149 registered).
+
+## Results of the hundred-and-fiftieth set (added after the test; `predict_test150.py`, `results/predict_test150.md`)
+
+One held, four failed. 112 numeral compounds (3+ distinct lines), each matched to lexical bigrams of the nearest
+frequency. Compounds reach more sites than matched bigrams (NC1: 2.58 against 2.19, 76 higher, 33 lower, p <
+0.0001), but they are not on more object types (NC2), not more often in both cities (NC3: 0.62 against 0.59) and not
+significantly more at the smaller sites (NC4: 0.55 against 0.40; the sign test loses power on fractional matched
+means). **The value before a given sign is not the same in the two cities** (NC5 fails: the commonest value agrees for
+27 of 69 signs counted in both, 39%; for example 390 takes 6 at Mohenjo-daro and 3 at Harappa, 125 takes 2 and 13,
+760 takes 1 and 6; the fish 235 and 240 take 2 in both). Reading, with set 143: numeral + sign pairs are fixed within
+each city but the fixing differs between cities, so they are not a shared vocabulary of number words (star names,
+measures) across the civilisation; the exceptions are the stroke-pair fish '2 235' / '2 240', which are the same
+everywhere. That fits local naming customs (or local counting conventions) more than common words. Tally, counting
+parts: 1104 held, 1050 failed (2154 registered).
