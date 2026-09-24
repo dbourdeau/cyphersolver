@@ -1488,3 +1488,56 @@ tablets with an ending carry 400 after it 48.5% of the time when incised, 24.3% 
 the name is a feature of the written, incised tablets. O21 fails.
 
 Tally, counting parts: 95 held, 167 failed (262 registered).
+
+# Twenty-sixth set, registered before testing (24 September 2026): tablet records, numbers, direction, variants
+
+Leads: 400 after a name belongs to incised tablets (O14, O22); long strokes count containers and devices, short strokes
+go with fish, tiered strokes write 5-8 and often stand last (O12, O13, M6, O25); left-to-right writing avoids seals
+(O24); affixed marks modify a sign rather than add a suffix (O1-O5). Conventions as before (A with 'direction', 'type',
+'site', 'motif'; B; F read with lines reversed; names; head class as K; Fairservis categories; 10,000-draw
+permutations; p < 0.05; A and B both where named). 'Name tablet' = an incised tablet (TAB:I) with a 740 / 520 ending;
+'with 400' = the ending directly followed by 400. Length strata: 2-3, 4-5, 6+.
+
+Tablet records (F)
+- **T1** Name tablets with 400 carry a numeral more often than name tablets without 400, length-stratified.
+- **T2** On name tablets with 400 and a numeral, the numeral stands after the ending more often than before the name.
+- **T3** Numerals on name tablets are long-stroke more often than numerals on seals.
+- **T4** Name bodies on incised tablets are attested as seal name bodies more often than name bodies on moulded tablets.
+- **T5** Name-tablet lines carry the heading less often than seal lines with an ending, length-stratified.
+- **T6** Incised tablets are a larger share of Harappa tablets in later levels (HARP 3C, Vats I-III) than earlier.
+- **T7** Names on name tablets end in 740 more often than names on seals.
+- **T8** On tablets, a 400 not after an ending follows a head-class sign more often than a random other position of the
+  same line (paired sign test).
+- **T9** On name tablets with a long-stroke numeral, 50%+ of those numerals are followed by 700.
+- **T10** Name tablets with 400 come from Harappa more often than other tablets do.
+
+Numbers
+- **N1** Among long-stroke numerals directly before a non-numeral sign, the value depends on the sign (MI beyond
+  permutation of values). A and B.
+- **N2** The values of numerals directly before a fish sign are distributed differently from those before other signs
+  (MI beyond permutation). A and B.
+- **N5** A long-stroke numeral + a Fairservis J or K sign ends its line more often than a short-stroke numeral + any
+  sign (pooled A + B).
+- **N6** Numerals on tablets are long-stroke more often than numerals on seals (F).
+- **N7** Tiered numerals are directly followed by the ending (740 / 520) more often than short-stroke numerals. A and B.
+
+Direction (A)
+- **D1** Copper tablets (type TAB:C) run left to right more often than other objects.
+- **D2** Objects written directly (TAB:I, TAB:C, POT, TAG) run left to right more often than carved or moulded ones
+  (SEAL, TAB:B).
+- **D3** Left-to-right lines carry the heading less often than right-to-left lines, length-stratified.
+
+Affixed variants (pooled A + B)
+- **V2** The jar variants 741, 742, 745 end their line in under 10% of their tokens.
+- **V3** Base and affixed variant alternate in the same names: pairs of distinct names that differ only by 220 / 231,
+  400 / 415 or 740 / 741 at one position are more numerous than such pairs for random sign pairs matched on the two
+  signs' token-count quintiles (10,000 draws of three pairs).
+- **V4** The affixed fish variants (231, 233, 235, 240) are the last sign of a name less often than the plain fish 220.
+
+Other objects, places and time
+- **X1** Names on sealings (TAG) end in 740 more often than names on seals (F).
+- **X2** Copper tablets (TAB:C) carry an ending less often than seals, length-stratified (A).
+- **S5** The balance of 740 and 520 among seal names differs by region (Sindh / Gujarat / north, as the twenty-fifth
+  set; MI beyond permutation) (F).
+- **S6** At Mohenjo-daro the share of 520 among seal names differs between earlier and later levels (Fisher, two-sided)
+  (F).
