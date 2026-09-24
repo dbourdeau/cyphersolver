@@ -7661,3 +7661,24 @@ role is positional, not a fixed property of the sign: training modifiers stay in
 in the test lines (LP6 fails), while training heads stay heads 88% of the time (LP7). The metric's R now includes the
 modifier role, read as 'the job of this token is fixed by its slot'. Tally, counting parts: 1227 held, 1145 failed (2372
 registered).
+
+# Hundred-and-seventy-seventh set, registered before testing (24 September 2026): decipherment loop 2, longer contexts, new picture anchors, bare-line roles (eight hypotheses)
+
+Metric after loop 1: S 4.712, R 72.9%, M 16.6%, P 0, L 4. Loop 2 aims at S with a variable-order model (texts repeat
+long formulas that a trigram cannot see), at M with the two provisional picture anchors of the eleventh pass, tested on
+objects not used to propose them, and at R with the bare lines (names written without the ending, twenty-first set).
+VO model: interpolated Witten-Bell n-gram of order 1-5 over signs with line-start padding, unknown signs uniform;
+evaluated on progress.py's fixed split, alone and as an extra component of the loop-1 EM mixture. 'New objects' = F
+objects whose CISI number is not among A's objects. Motif codes: multi-headed animal 'Mult'; tree / plant 'Phyt',
+'Pipal', 'Plant' (field 18 or 19).
+
+- **VP1** The VO model alone reaches S at least 0.05 bits below the baseline mixture (4.712).
+- **VP2** As an extra mixture component it lowers S by 0.05 or more.
+- **VP3** The same VO model predicts the lines read backwards (right to left in reading order) at least 0.05 bits
+  worse than forwards (the constraint sits on the endings, which forwards the model sees last).
+- **VP4** New objects carrying sign 347 carry the multi-headed animal in 50%+ (anchor 347 = multi-headed animal).
+- **VP5** New objects carrying sign 460 carry a tree / plant picture in 50%+ (anchor 460 = tree).
+- **VP6** At least one of VP4-VP5 holds with 3+ new objects (else M cannot move this loop).
+- **VP7** Bare lines of 2+ signs (genre 'bare') have a last sign attested as a name head in 50%+ (they are names
+  without the ending), which licenses head / modifier roles for them.
+- **VP8** With those bare-line roles R rises by 3 points or more.
