@@ -5513,3 +5513,28 @@ HX11), suffixes after the ending in B (HX13: 2 of 72; F' 9 of 175 = 5.1%, just o
 repeats than chance (HX14 in B; HX15 at the smaller sites), a Zipf-like curve (HX16: -0.92; HX17: -0.83), mostly unique
 pair types (HX18: 70%), predictable next signs in B (HX19: ratio 0.47, with the plug-in caveat), and one-off numeral +
 fish names at the smaller sites (HX20: 21 of 22). Tally, counting parts: 910 held, 897 failed (1807 registered).
+
+# Hundred-and-seventeenth set, registered before testing (24 September 2026): the lines no genre claims (fifteen hypotheses)
+
+Opening a self-directed loop (test, learn, propose) aimed at the gaps left by the hundred-and-sixteenth set. 312 of 2,722
+distinct lines (A + B) are 'other' in the hundred-and-eighth set's genres. Seen before registering: their commonest
+templates are FX (35), XFX (23), XEX (22), XCX (21), XF (21), HX (14). Sub-kinds: 'fish bare' = no H, N, E, C but a
+fish; 'name + tail' = contains E with signs after it that are not only a suffix; 'closer + tail' = contains a closer
+with signs after it; 'heading + word' = template starting H not followed by N. F' = F without copper. p < 0.05.
+
+- **OT1** Fish-bare lines end in a name head in 50%+.
+- **OT2** Fish-bare lines start with a name opener in 50%+.
+- **OT3** Fish-bare lines are on tablets or potsherds more often than name lines (F').
+- **OT4** 80%+ of name + tail lines have a tail of 1-3 signs.
+- **OT5** 80%+ of closer + tail lines have 1-2 signs after the closer.
+- **OT6** The sign right after a mid-line closer is a numeral or 400/90/151 in 40%+.
+- **OT7** 40%+ of heading + word lines have 368 as their second sign.
+- **OT8** Counting fish-bare lines as bare, name + tail as names, closer + tail as closer lines and heading + word as
+  headed names or formulas, under 5% of lines remain unassigned.
+- **OT9** The first tail sign after a mid-line ending is a closer, a numeral or 400/90/151 in 50%+.
+- **OT10** Closers followed by a tail are 151 or 156 more often than line-final closers are.
+- **OT11** Fish-bare lines hold a formula-only sign less often than bare lines.
+- **OT12** 'Other' lines are seal lines more often than bare lines are (F').
+- **OT13** 'Other' texts are one-off more often than name texts (F').
+- **OT14** B: OT8 holds.
+- **OT15** F': OT8 holds.
