@@ -1576,6 +1576,16 @@ Registered first (eighty-eighth set, 2d9dfe0d0), tested (`predict_test88.py`). T
 nearly all Mohenjo-daro) and do not split into two names: the first part is rarely a name, never suffixed or headed.
 A medial 740/520 is read as part of a long compound name. Tally 582 held, 665 failed.
 
+## Hundred-and-third pass (24 Sept 2026): the three heading signs
+
+Registered first (eighty-ninth set, 6b556222f), tested (`predict_test89.py`). 817, 820 and 861 are interchangeable in
+front of the same names and are not chosen by name, city or object; they differ in the stroke sign that follows (817
+and 861: 2 or 368; 820: 2, 60 or 1). Headed names are shorter, repeat more, and are suffixed less; the heading unit
+stands in for part of the name. 861 heads formulas more. Tally 590 held, 677 failed.
+
+Summary of sets 87-89: no regional name systems (small sites share the city stock); lines with two endings are long
+single names, not pairs; the three heading signs are variants of one heading slot.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

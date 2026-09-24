@@ -4324,3 +4324,19 @@ What headed names are
 Replication
 - **HS19** B: HS1 holds.
 - **HS20** B: HS7 holds.
+
+## Results of the eighty-ninth set (added after the test; `predict_test89.py`, `results/predict_test89.md`)
+
+Eight held, twelve failed. 419 distinct headed lines (861 x174, 820 x142, 817 x103). The three heading signs are
+interchangeable in front of names: a body seen headed twice is found after two different heading signs in 20 of 22
+(HS9), and the choice depends on neither the name's head (HS1, p = 0.77; HS19 in B, p = 0.78), the city (HS2) nor
+seal against tablet (HS3). What differs is the sign that follows (HS8, p = 0.0001; post-test counts): 817 and 861 take 2
+(87%, 86%) or 368 (7, 11), while 820 takes 2 (56%), 60 (22) or 1 (14), so 820 goes with a wider set of stroke signs
+(HS5-HS7 fail their 90% threshold; HS20 in B: 84% for 861). 861 heads formulas more than 817 does (HS4: 47% against
+31%). The heading unit stands at the start of a line on its own object (HS18: 97%; HS11: 1% of lines hold two heading
+signs); inside a line these signs are rarely counted (HS10: 10%). Headed names keep their ending class (HS13: 82%
+against 86% 740, p = 0.11), carry a suffix less (HS15 at Mohenjo-daro: 6% against 12%) and sit on unicorn seals a
+little more (HS16: 80% against 74%, p = 0.045). Against expectation, headed names at Mohenjo-daro are shorter, not
+longer (HS12: 3.0 against 4.0 signs, so the heading takes the place of part of the name), hold fish more (HS14: 51%
+against 42%) and repeat more (HS17: 70% one-off against 84%). Tally, counting parts: 590 held, 677 failed (1267
+registered).
