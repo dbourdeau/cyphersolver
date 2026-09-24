@@ -3209,3 +3209,15 @@ neither. A's 'direction' field joined by CISI number where needed. 10,000-draw p
 - **DR8** The value of a count token does not depend on its direction (MI permutation p >= 0.05).
 - **DR9** In A, 'L/R' lines end in 740/520 less often than other lines.
 - **DR10** At most 10% of A seals with a direction entry are 'L/R'.
+
+## Results of the sixty-fourth set (added after the test; `predict_test64.py`, `results/predict_test64.md`)
+
+Six held, four failed. 68 of 401 count tokens run '700 + numeral' against the usual order, 67 of them from Harappa
+(DR6), and they are concentrated on moulded tablets (DR1: 24% of TAB:B count tokens against 9% of TAB:I), which fits a
+mould or impression being recorded in mirror image rather than a scribal choice; potsherd graffiti also carry more
+reversed forms than seals (DR7: 1.6% against 0.1%). The count value does not change with direction (DR8, p = 0.12). The
+catalogue's direction field does not flag these objects (DR2: 9% against 8% 'L/R'), though 'L/R' lines in A end in
+740/520 less often (DR9: 32% against 43%), and 'L/R' is rare on seals (DR10: 37 of 1,469). Names almost never run
+backwards (DR3: 3 of 1,619 lines, none giving an attested body), so the reversal is a count-token and tablet
+phenomenon. Caveat: whether the TAB:B reversal is in the objects or in how impressions were entered in ICIT cannot be
+told from the data. Tally, counting parts: 366 held, 441 failed (807 registered).

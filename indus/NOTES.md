@@ -1391,6 +1391,12 @@ Registered first (sixty-third set, f99a63df6), tested (`predict_test63.py`). 700
 98%), never a name sign; most 'uncounted' 700s are count tokens running the other way ('700 33'), a direction signal
 worth using. Most counted signs take several numeral kinds. Tally 360 held, 437 failed.
 
+## Seventy-eighth pass (24 Sept 2026): lines running the other way (loop 3, round 8)
+
+Registered first (sixty-fourth set, e56bf97dc), tested (`predict_test64.py`). Reversed count tokens ('700 33') are a
+Harappa moulded-tablet feature (24% of TAB:B counts against 9% of TAB:I), possibly mirror images; names essentially
+never run backwards; the catalogue direction field does not mark them. Tally 366 held, 441 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
