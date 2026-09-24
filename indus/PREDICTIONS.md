@@ -163,3 +163,21 @@ handed on); that is the alternative, and it counts for it only if the same-name 
 - Limits: the test is weak. Mohenjo-daro's periods are coarse (each spans generations), the depths come from different
   areas of the site with different datums, and the pairs are not independent (one name gives 10 of the 36 pairs). The
   null band was 33-61%: only strong clustering could have shown.
+
+# Sixth set, registered before testing (24 September 2026)
+
+**Hypothesis W: sealings record local administration by holders of shared names or offices.** The previous two sets
+found that recurring seal names are tied to neither one city nor one period, which fits names or titles held by many.
+If sealings were impressed by such office-holders where they worked, a sealing's name should be found on seals of
+the same site, and sealings should be made disproportionately by the names many seals carry. Not looked at before.
+
+Unit: intact sealings (object type TAG) and intact seals (SEAL) of the fuller ICIT corpus with a name and an ending, as
+in the fourth set.
+
+**W1 Home.** Of sealings whose name occurs on at least one seal, the share with a same-name seal at the sealing's own
+site exceeds the share when sites are shuffled among those sealings (10,000 times), p < 0.05. If instead the share is
+below the shuffled one (p < 0.05 the other way), sealed goods travelled from the seal-holder's city; recorded either
+way.
+
+**W2 Common names.** Sealing names match a seal name more often than seal names match another seal, within name-length
+strata (1, 2, 3, 4+ signs), permutation of the object type within strata, p < 0.05.
