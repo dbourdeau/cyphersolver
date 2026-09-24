@@ -5018,3 +5018,18 @@ Distinct lines and bodies (A + B); F without copper for site, object, motif test
 - **CB18** In 12%+ of closer lines a 740/520 stands directly before the closer (name + closer).
 - **CB19** B: CB5 holds.
 - **CB20** B: CB1 holds.
+
+## Results of the hundred-and-fifth set (added after the test; `predict_test105.py`, `results/predict_test105.md`)
+
+Thirteen held, seven failed. Closer inscriptions are a sister type of the name inscriptions on the same seals. Their
+bodies end in signs that also head names (CB1: 75%), use the name openers (CB13: 71% of opener types), count like names
+(CB11: 46% against 47%), are one-off (CB14: 87% against 81%), are rarely headed (CB7: 12% against 17%) and sit on the
+same animals (CB8: 81% against 80% unicorn). Each closer selects both its heads (CB5: 2.2 bits; CB19 in B, p = 0.0001) and
+its openers (CB12, p = 0.001). But the bodies are not the attested names (CB2: 14%), are shorter (CB3: 3.2 against 3.7),
+use the recurring name units less (CB4: 41% against 61%), hold fish less (CB10: 33% against 44%), and almost never
+follow a 520-class head (CB17: 7% against 85% for 520 names), so closers pair with the 740 side of the head inventory
+(CB6: 32 of 39 shared heads are 740-class, 82%, under 90%). 13% of closer lines are 'name + ending + closer' (CB18).
+Revision of the hundred-and-third set: as a share of seal inscriptions, closers are as common at Harappa as at
+Mohenjo-daro (CB9: 19% and 20%; FX6 compared all lines, where Harappa's many tablets dilute the share). Not supported:
+earlier date (CB15), a site split between 156 and 527 (CB16), and CB1 in B (CB20: 47%). Tally, counting parts: 759
+held, 828 failed (1587 registered).

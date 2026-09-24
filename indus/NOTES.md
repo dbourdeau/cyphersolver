@@ -1702,6 +1702,13 @@ Summary of sets 102-104: shape families weakly predict use (block 1 heads, block
 are a second seal-inscription family at Mohenjo-daro; ten role templates cover half the corpus. Tally 746 held, 821
 failed.
 
+## Hundred-and-nineteenth pass (24 Sept 2026): closer against name inscriptions
+
+Registered first (hundred-and-fifth set, 08a088f8a), tested (`predict_test105.py`). Closer inscriptions share the
+seals, animals, openers and heads (740 side) of name inscriptions, but their bodies are shorter, rarely attested
+names, less unit-built and less fishy; each closer selects its own heads and openers. They are a seal type at both
+cities (19-20% of seal inscriptions), not a Mohenjo-daro speciality. Tally 759 held, 828 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
