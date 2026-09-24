@@ -8649,3 +8649,19 @@ measured form: a claim that the Indus script 'fits Dravidian' or 'fits Sanskrit'
 evidence for either, since the same procedure makes Mycenaean Greek look like Sanskrit. Prize tier 2: blind fitting
 recorded as failing the gate (2 of 5 methods pass). No progress: streak 2. Tally, counting parts: 1337 held, 1237
 failed (2574 registered).
+
+# Two-hundred-and-eighth set, registered before testing (24 September 2026): decipherment loop 33, graphic families from Parpola's descriptions (five hypotheses)
+
+Metric after loop 32: S 4.685, SIGN top-1 37.9%; prize tiers V 0.008%, C 2 of 5, U 0; streak 2. The only S gains came
+from reading context by graphic family (ICIT decade blocks; sets 194, 199, 201), and learned classes do not do it. A
+second, independent definition of graphic family: ICIT -> M77 -> the CISI description (mayig digitisation) -> its
+first shape noun (`descfam.py`: 73 families, 350 signs, 95% of tokens; e.g. stroke, person, leaf, fish, tree, jar).
+Signs without a description keep their own id.
+
+- **DF1** Description families in place of decade families (f4) beat random families of the same sizes (20 draws, seed
+  208) in 19 or more, fixed test.
+- **DF2** Adding the description-family 4-gram as a second family component to the model with decade f4 lowers S on
+  the fixed test by 0.003 bits or more.
+- **DF3** The same A -> B.
+- **DF4** Description families beat learned classes (k = 80, as set 201) on the fixed test.
+- **DF5** Progress rule: DF2 and DF3 hold.
