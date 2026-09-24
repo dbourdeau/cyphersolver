@@ -595,3 +595,43 @@ signs all have a glyph, as the registered shuffle requires, and the whole set re
 - **K14 fails** (enclosure / landscape signs are not more site-bound).
 
 Tally, counting parts: 17 held, 35 failed (52 registered).
+
+# Fifteenth set, registered before testing (24 September 2026): ten hypotheses on morphology and sound signs
+
+Built on what has held: names = attributes + head + ending (Q1, Q2, H7, H10); human heads take 740 and the 'man'
+sign 90 follows only 740 (K1, K15); bound pairs are words (X2, RB); foreign names lean on free signs (Y2, RF2).
+Conventions as the thirteenth set (A, B, F; names; head class as K; freedom as Y2, computed within each sample;
+10,000-draw permutations; p < 0.05; both A and B where named).
+
+**N1 740 is a bound suffix, not a word.** A word can be counted; a suffix cannot. The share of 740 tokens directly
+preceded by a stroke numeral is under one third of the same share for head-class signs. A and B.
+
+**N2 520 is a bound suffix.** The same test for 520. A and B.
+
+**N3 741 is an inflected (oblique / genitive) form of the person class.** Fairservis reads 741 as the jar with the
+genitive stroke. If 'X-741 Y-740' is 'X's Y', the material after a non-final 741 up to the ending is itself an attested
+name body (same ending) more often than the material after a random other non-final position in the same texts
+(paired; exact sign test on discordant texts). A and B.
+
+**N4 Rare names are spelled by sound.** Names occurring once (in the sample) have a higher mean freedom of their
+non-grammar signs than names occurring 2+ times, within name-length strata (label permutation). A and B.
+
+**N5 Bound pairs are word sign + sound complement.** In the 30 bound pairs of the seventh set, the second sign is
+freer than the first more often than not (exact sign test, pairs where both are scored). A and B.
+
+**N6 Tablets carry the names that seals carry.** Distinct tablet texts (F, TAB, 2+ signs) equal a seal name body
+(the name without its ending; F seals) more often than the same tablet texts with their sign order shuffled.
+
+**N7 Titles belong to persons.** Lines with the heading (817 / 820 / 861 + 2 / 60 / 1) end in 740 rather than 520
+more often than headless lines with an ending, within length strata (4-5, 6-7, 8+ signs). Fisher / permutation. A
+and B.
+
+**N8 One set of sound signs.** The signs over-represented in West Asian texts (log ratio of their share there to their
+share at home, F) are the same signs over-represented in rare names (log ratio of their share in once-only names to
+their share in recurring names, sample A): Spearman > 0 over signs with 5+ tokens in both comparisons (permutation).
+
+**N9 400 after the ending marks plural.** Names followed by 400 contain a stroke numeral before the ending more often
+than names with the same ending and no 400. A and B.
+
+**N10 The 'man' sign is a noun, not repeated after a human head.** Names whose head is a human figure (Fairservis A)
+are followed by 90 less often than other 740 names. Pooled A + B (B alone is too small; decided here, before testing).
