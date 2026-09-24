@@ -270,3 +270,24 @@ Hypothesis Y holds if both hold.
   names, which is what a script with sound signs spelling foreign words would show. 15 of 87 West Asian tokens are signs
   with under 5 home tokens, left out of Y2. The sample is small (18 lines), so this is a lead, not a result; it
   singles out the freest signs as the best candidates for sound values.
+
+# Ninth set, registered before testing (24 September 2026)
+
+**Hypothesis Z: tablets with the same text were made as one batch, at one time.** Harappa's miniature tablets repeat
+the same text on many pieces (tablets.py; tokens, as Wells 2006 suggested). If a text was a batch made for one
+occasion, identical tablets should lie in the same level. This is also the power check the fifth set lacked: seals
+with the same name did not cluster by level (V1, V2); if batch tablets do, the method can see clustering and the seal
+names really do span generations. Not looked at before.
+
+Unit: Harappa tablets (TAB) of the fuller ICIT corpus with an intact text; same text = the identical full sign
+sequence (lines joined in the listed order). Pairs are counted within one labelling scheme.
+
+**Z1 Level.** Levels: HARP Period 3 sub-phase B / C (field 10 'B' or 'C'), and Vats's strata (field 10 'Stratum I' to
+'Stratum VI'). Same-text pairs share a level more often than with levels shuffled within the scheme (10,000 times),
+p < 0.05.
+
+**Z2 Depth.** Tablets with a recorded depth: same-text pairs have a smaller median depth difference than with depths
+shuffled (10,000 times), p < 0.05.
+
+Hypothesis Z holds if both hold. For comparison, the same two statistics are reported for Harappa seals with the same
+name (fifth-set unit), without a registered threshold.
