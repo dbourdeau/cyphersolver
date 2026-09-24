@@ -5238,3 +5238,37 @@ is the doubled sign (RG10: 74%; RG20 small sites: 6 of 9), 368 takes other words
 and follows a heading in about 30% (RG12, RG18), 390 is counted 3+ (RG13: 93% in F'; RG17 in B: 83%, under 90%) and is a
 seal sign at the smaller sites (RG19: 78%), and the two uses of 400 have almost disjoint predecessors (RG14: 0.08; RG16
 in B: 0.12). Tally, counting parts: 822 held, 865 failed (1687 registered).
+
+# Hundred-and-eleventh set, registered before testing (24 September 2026): one sign, many genres (twenty hypotheses)
+
+The genres share one vocabulary (hundred-and-eighth set). If a sign keeps its function across genres, its behaviour
+should carry over. Genres as in the hundred-and-eighth set; distinct lines (A + B). For a sign: 'relative position'
+= mean of i/(len-1) over its tokens in lines of 2+; 'right company' = its right-neighbour distribution. Signs with 5+
+tokens in each genre compared. Correlations are Spearman with permutation p; 10,000 draws; p < 0.05.
+
+Position carries over
+- **OG1** Relative positions in names and in counts correlate (Spearman 0.3+, significant).
+- **OG2** Relative positions in names and in closer lines correlate (0.3+).
+- **OG3** Relative positions in names and in bare lines correlate (0.3+).
+- **OG4** Relative positions in counts and in bare lines correlate (0.3+).
+- **OG5** Name heads (last body sign in 50%+ of name tokens) are line-final in bare lines more often than other signs.
+- **OG6** Name openers (first body sign in 50%+ of name tokens) are line-first in counts more often than other signs.
+Company carries over
+- **OG7** A sign's right company in names is closer (Jensen-Shannon) to its right company in counts than to a random
+  other sign's company in counts (sign test over signs).
+- **OG8** The same for left company.
+- **OG9** Adjacent pairs found in names recur in counts more often than pairs made by shuffling names' signs (1,000).
+- **OG10** Units (sixty-first set) occur in counts more often than random pairs of name signs.
+- **OG11** The two members of a unit keep their order in counts in 90%+ of unit occurrences there.
+Numbers carry over
+- **OG12** Signs counted in both names and counts are counted with the same numeral kind in 60%+ (commonest kind).
+- **OG13** The value before a sign in names correlates with its value in counts (Spearman over signs, 0.3+).
+- **OG14** Fish are counted in counts as well as in names (share of fish tokens after a numeral 10%+ in counts).
+Class carries over
+- **OG15** 520-class heads end bare lines more often than 740-class heads do.
+- **OG16** 740-class heads precede closers more often than 520-class heads do (CB17 as a class contrast).
+Replication
+- **OG17** B: OG1 holds.
+- **OG18** B: OG9 holds.
+- **OG19** F without copper: OG1 holds.
+- **OG20** F without copper: OG7 holds.
