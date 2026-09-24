@@ -113,8 +113,8 @@ def audit():
     dirs = cw.target_dirs()
     rows = cw.readme_rows()
     listed = set().union(*(r['dirs'] for r in rows)) if rows else set()
-    want = sorted(({d for d, i in dirs.items() if i['finished']} | {d for d in listed if (ROOT / d).is_dir()}) - cw.NOT_TARGETS)
-    have = sorted(p.parent.name for p in ROOT.glob('*/profile.json'))
+    want = sorted(({d for d, i in dirs.items() if i['finished']} | {d for d in listed if (ROOT / d).is_dir()}) - cw.NOT_TARGETS - cw.FAMOUS)
+    have = sorted(p.parent.name for p in ROOT.glob('*/profile.json') if p.parent.name not in cw.FAMOUS)
     res = {d: check(d, quiet=True) for d in sorted(set(want) | set(have))}
     missing = [d for d in want if res[d][0] == 'missing']
     invalid = [d for d, r in res.items() if r[0] == 'invalid']

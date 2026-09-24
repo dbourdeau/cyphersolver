@@ -45,6 +45,8 @@ The project is being written up with George Lasry as a paper on how LLMs perform
 The analysis runs on `<folder>/profile.json`, a fixed-field record of the cipher system, the ciphertexts, what
 the model was given, the solution steps and the outcome (`profile.schema.json`; the `/profile` skill).
 
+- **Except the famous targets** (the Indus script, Voynich, Beale, Kryptos, Dorabella ...; `FAMOUS` in
+  `docs/_check_writeup.py`): they keep no profile.json and never go into the paper data. The checkers and the export skip them.
 - On the first session with a target, create its profile with what is known. Write `"unknown"`, never a guess.
 - After each move (transcription, hypothesis, solver run, crib, key found, control), append a solution step,
   including the ones that fail. This record cannot be rebuilt accurately afterwards.

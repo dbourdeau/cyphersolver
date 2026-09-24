@@ -27,6 +27,10 @@ ROOT = HERE.parent
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'famous', 'solved', 'highlights'}
 TOOL_PAGES = {'atlas', 'keys', 'secret', 'indus-bench'}   # interactive pages, not write-ups
+# The famous undeciphered targets (Indus script, Voynich, Beale, Kryptos ...) are written up on the site but keep no
+# profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
+FAMOUS = {'indus', 'voynich', 'beale', 'kryptos', 'dorabella', 'zodiac', 'z340', 'z13', 'linear_a', 'lineara',
+          'phaistos', 'rongorongo', 'rohonc', 'goldbar', 'pigeon', 'shugborough', 'tamamshud'}
 NOT_TARGETS = {'docs', 'papers', 'gallica_siblings', 'gallica_sweep', 'top50', 'oldest', 'source_headings.txt'}
 
 def read(p):
@@ -281,6 +285,10 @@ def check_slug(slug):
     item(not cat, 'catalogue.json no longer lists the target (read/resolved entries are removed, see the skill)'
          + (': still there as #' + ', #'.join(str(e.get('id')) for e in cat) if cat else ''), warn=True)
     for folder in sorted(folders):
+        if folder in FAMOUS:
+            item(not (ROOT / folder / 'profile.json').exists(),
+                 f'{folder}: a famous target keeps no profile.json and stays out of the paper data')
+            continue
         prof = ROOT / folder / 'profile.json'
         good = False
         if prof.exists():

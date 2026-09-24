@@ -28,6 +28,7 @@ def rows():
     out, skipped = [], []
     for p in sorted(ROOT.glob('*/profile.json')):
         folder = p.parent.name
+        if folder in cp.cw.FAMOUS: continue                  # famous targets stay out of the paper data
         if cp.check(folder, quiet=True)[0] != 'valid': skipped.append(folder); continue
         prof = json.loads(p.read_text(encoding='utf-8'))
         base = {'target': folder, 'title': prof['title']}
