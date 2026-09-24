@@ -1043,6 +1043,15 @@ the HARP reports). Sealings are seal texts (W11); tiered numerals are seal numer
 '705 / 706 + 33 + 520' (W16). Eighteen failed, including W12 (sealings do not share the tablets' 400) and W25 (heading
 later only at Harappa). Tally 50 held, 87 failed.
 
+## Thirty-third pass (24 Sept 2026): published readings as predictions
+
+Registered first (PREDICTIONS.md, nineteenth set, 1f2362fc4), tested (`predict_test19.py`). Held: X1 (700 counted with
+long strokes, 96%: Fairservis's measure fits), X8 (human heads never 520), X10 (84% of heads fix their ending; the
+fish series is the exception), X18 (same-value count tokens lie together), X21 (numbered fish take 520: the one result
+siding with Parpola's star names), X22 (90 is a seal sign), X23 (moulded and incised tokens count different values).
+Failed: X9 (fish heads 61% 520, against a strict gender suffix), X11 (740 not followed by a possessed noun, 9%), the
+numeral-like tests X2-X6 (test insensitive), X13 (degenerate), X14 (706 absent from M77). Tally 57 held, 105 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

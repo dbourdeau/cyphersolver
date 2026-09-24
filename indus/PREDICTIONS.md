@@ -1030,3 +1030,43 @@ The formulas and the count tokens
   ending (F, Fisher).
 - **X25** Fish-headed names ending 740 carry the heading more often than fish-headed names ending 520,
   length-stratified (pooled).
+
+## Results of the nineteenth set (added after the test; `predict_test19.py`, `results/predict_test19.md`)
+
+Seven held, eighteen failed. (X14 first stopped because 706 has no tokens in B; the script now records it as not
+testable in B, which fails it as registered, and the set was rerun with the same seed.)
+
+**Published readings.**
+- **X1 holds** (Fairservis, 700 a measuring container): numerals before 700 on tablets are long-stroke in 348 of 361
+  (96%). The structure fits his reading of 700 as a counted measure; it does not confirm his Dravidian value aḷa.
+- **X8 holds** (Mahadevan): human heads take 520 in 1 of 111 names. **X9 fails** (fish heads take 520 in only 151 of
+  247, 61%): 520 is not a strict gender suffix that fish names always take. **X10 holds** (53 of 63 heads with 5+ names
+  take one ending 90%+ of the time); the mixed heads are the fish series (220, 240, 233, 231, 235), 33, 400, 460, 920, 31.
+  The endings are fixed by the head for most heads, but not for the fish signs: Mahadevan's gender pair fits the
+  person side (740) and not the fish side.
+- **X11 fails** (Parpola, 740 the possessive -a): 740 is followed by further name material in 162 of 1,822 tokens (8.9%),
+  not 20%. A possessive whose possessed noun is nearly always left out (or is the 90 'man' after it) remains possible;
+  a possessive in the ordinary sense is not supported.
+- X2-X6 fail (706, 32, 840, 13, 55 are not 'numeral-like' by right-neighbour similarity), but the test is not sensitive:
+  it does not recognise 32 as a numeral in A, although 32 is the long 2 of 89 count tokens ('32 700'). These failures
+  say little about Fairservis's or Parpola's readings.
+- X7 fails (400 does not prefer 740: 17 of 17 post-ending signs after 520 are 400). X12 fails. X13 is degenerate: in
+  A and B the opener is followed by 2 in every headed line (179 after 861, 107 after 817).
+- X14 fails as registered (705 and 706 share contexts in A, cosine 0.315, p = 0.003, but 706 does not occur in B at
+  all: Mahadevan's sign list does not separate it from 705, which itself suggests one sign).
+
+**The formulas and count tokens.**
+- **X18 holds**: Harappa count tokens with the same value lie closer in depth (median difference 0.35 ft smaller,
+  p = 0.037).
+- **X23 holds**: moulded and incised tokens count differently (moulded mostly 3, then 2; incised 4 as often as 3; MI
+  p = 0.0001): the two kinds were made for different quantities.
+- **X21 holds**: fish-headed names with a numeral before the head take 520 more often (+16.2 points, p = 0.029): the
+  numbered fish, Parpola's star names ('3 + fish', '6 + fish'), are the 520 side of the fish series. This is the first
+  structural result that sides with Parpola's star-name reading, on the ending rather than on the sound.
+- **X22 holds**: 90 after an ending is a seal sign (54 of 73 post-ending signs on seals, 35 of 207 on tablets).
+- X15 fails (the text before the closing formula is not more often an attested name: 27% against 18%, p = 0.14), X16
+  fails the other way (tiered numerals stand before fish less often than short ones), X17 fails (Mohenjo-daro tablets
+  spread their counts over 585, 845, 407, 923 and others; no one unit), X19 fails (the prefixes on longer count tokens
+  are not seal names), X20, X24, X25 fail.
+
+Tally, counting parts: 57 held, 105 failed (162 registered).
