@@ -6257,3 +6257,31 @@ seals no more than on tablets (PA6: 87% against 91%), prefixed signs are dropped
 after 740 ends the line in only 6 of 18 cases (PA8), and the roof fish heads names far less than the plain fish (PA9:
 7% against 28%; it acts as a modifier, not a separate star word). Tally, counting parts: 1060 held, 1001 failed (2061
 registered).
+
+# Hundred-and-thirty-ninth set, registered before testing (24 September 2026): a second transcription, Parpola's CISI (ten hypotheses)
+
+Fifth external direction: a second corpus edition. The open digitisation of CISI (mayig/indus-valley-script-corpus,
+MIT licence, commit ad2f1e2; `cisi.py` writes `data/cisi_mayig.tsv` and `data/cisi_signs.tsv`) covers Mohenjo-daro
+M-1 to M-184: 179 sides, all joined to ICIT records by CISI number (field 1), 163 to intact F objects. Signs are
+Parpola's numbers, mapped to ICIT glyphs only through the repository's own Mahadevan equivalents and
+`data/icit_m77_map.tsv` (no alignment on these texts; 164 of the 182 Parpola signs used get an ICIT candidate).
+A position 'agrees' when the ICIT glyph is among the Parpola sign's candidates. Sides containing P000 (damage) are
+left out; an object's CISI text is its sides' lines concatenated; position-level tests use objects with one line in
+both editions and equal length. Numeral values: R.NUMS of the mapped glyph. Distinct objects throughout. p < 0.05.
+
+- **CS1** The two editions give the same number of signs for 70%+ of joined objects.
+- **CS2** On equal-length single-line objects, 80%+ of positions agree.
+- **CS3** Where ICIT has a numeral directly before a fish, CISI has a numeral of the same value there in 80%+
+  (the '6 + fish' question of the hundred-and-thirty-eighth set is not one of transcription).
+- **CS4** In CISI's own text of these objects, value 2 is the commonest numeral directly before a fish, as in ICIT.
+- **CS5** The last sign agrees (same ICIT candidate) in 90%+ of joined single-line objects.
+- **CS6** The jar (P324 = 740) is the commonest last sign of CISI lines, as 740 is in ICIT.
+- **CS7** Positions CISI marks uncertain (uncertainty > 0) or damaged disagree more often than clear positions
+  (Fisher).
+- **CS8** Disagreements fall on rare signs: aligned positions whose ICIT glyph has fewer than 20 tokens in A disagree
+  more often than the rest (Fisher).
+- **CS9** CISI uses no more distinct signs over these objects than ICIT does over the same objects (Parpola's
+  inclusive allographs).
+- **CS10** The ending paradigm holds in CISI's text: of CISI lines whose last sign maps to 740 or 520 or a closer,
+  the sign before it maps to a sign attested before that ending in the rest of ICIT (A + B minus these objects) in
+  80%+.
