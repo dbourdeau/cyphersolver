@@ -89,3 +89,11 @@ enciphered of the three, including its final leaf f. 123 (found in the sormano15
 This target and `sormano1529/` cover the same three letters (nos. 63, 65, 66). This profile says class read, fraction
 unknown; `sormano1529/profile.json` says read in part, 0.05. The two records should be reconciled into one outcome
 the next time either is worked; not reclassified in the review, by decision.
+
+## Glyph-level XML (24 Sept 2026, pilot for George Lasry)
+
+`xml/no63.xml`, `xml/no65.xml`, `xml/no66.xml`, made by `python tools/transcription_xml.py sormano` from the
+`n6x_transcription.md` files: one `<g>` per cipher glyph (3,131 / 3,888 / 1,249), in `<page>`, `<line>` and `<w>`,
+with `cert="low"` wherever the Markdown has `{..}` or `(?)`, `type="null"` for (ɦ)/(ﬀ), `type="code"` for ◎ = DUCA,
+and `<gap>` for unread stretches. The Markdown records decoded letters, not sign labels, so the XML has readings and
+certainty but no sign identity. It has no coordinates either: no bounding boxes were stored.
