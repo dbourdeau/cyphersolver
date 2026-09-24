@@ -503,3 +503,63 @@ Five held, five failed.
 
 Tally, counting parts: 16 held, 21 failed (37 registered). Of the five that held, H5 and H10 are robust, H7 partly,
 H3 reduces to the fish series, H8 does not survive the checks.
+
+# Fourteenth set, registered before testing (24 September 2026): fifteen hypotheses toward the language and the sign classes
+
+Samples and conventions as the thirteenth set (A, B, F; names; 10,000-draw permutations; p < 0.05; A and B both where
+named). Picture categories are Fairservis's (results/sign_list.tsv, 'fairservis' column, letter before the dash): A
+humans; C, D animals and animal parts; E plants; F sky and weather; G enclosures and structures; H weapons; I
+implements; J containers; K measures and devices; L cloth and ornaments; M drums; N landscape and settlement; O
+number-like forms; P affix strokes; Q fish-like signs. They are one scholar's identifications, used as an outside label,
+not as readings. Head class: signs with 10+ tokens inside names (sample A) that are the name's last sign in 60%+ of
+those tokens; attribute class: first sign in 60%+.
+
+**K1 A rational class (Dravidian 'high caste' gender).** Names whose head (last sign) is a human figure (A) take 740
+more often than names with any other head; Fisher one-sided. A and B.
+
+**K2 A non-rational class.** Names whose head is a natural thing (C, D, E, F, N; fish Q left out) take 520 more often
+than names whose head is a human or an artefact (A, G, H, I, J, K, L, M); Fisher one-sided. A and B.
+
+**K3 Occupational titles.** Tools and weapons (H, I, K) stand as the head (last) rather than first more often than the
+other categorised signs do: ratio last / first tokens, Fisher one-sided on the 2 x 2 of (tool, other) x (last, first).
+A and B.
+
+**K4 Attributes agree with the class (as in Indo-Aryan gender agreement; Dravidian adjectives do not agree).**
+Conditional mutual information between the first sign and the ending, given the last sign, exceeds its value with
+endings permuted within last-sign groups. A and B. If it fails, that fits Dravidian and counts against Indo-Aryan
+agreement, without proving either.
+
+**K5 Foreign names have no native title.** West Asian lines end in a head-class sign less often than length-matched
+home draws. F.
+
+**K6 A genitive on possessions.** Pot inscriptions (POT) that contain an ending have a further sign after it (the
+740 + 90 / 400 / 151 pattern) more often than seal texts with an ending, within length strata (2-3, 4-5, 6+). F.
+
+**K7 Titles are known everywhere.** On seals (distinct objects), head-class signs are found at more distinct sites than
+attribute-class signs with a matched token count (quintiles; permutation of the class label). F.
+
+**K8 Titles last, attributes change.** Mohenjo-daro seals, Early + Intermediate against Late: divergence (JSD,
+rarefied to equal counts) of the last-sign distribution is smaller than that of the first-sign distribution, beyond
+the period-label permutation. F.
+
+**K9 Grammar signs vary with distance (replication of the H4 lead, more sites).** Home sites with 20+ intact texts and
+known coordinates: Mantel rho between grammar-sign JSD (rarefied) and distance > 0. F.
+
+**K10 Doubling marks plurality (replication of H1 on the fuller corpus).** As H1, on F's intact lines. (F overlaps A
+in objects; it is a different transcription.)
+
+**K11 Heads are drawn more elaborately (word signs).** Mean perimetric complexity (as H5) of name-final tokens exceeds
+that of name-initial tokens, beyond within-name shuffles. A and B.
+
+**K12 Free signs are simpler (sound signs are plain).** Freedom (as Y2, from the sample) correlates negatively with
+complexity, both residualised on log tokens (Spearman, permutation). A and B.
+
+**K13 Fish names are sky names (Parpola's 'fish = star').** Names with a fish head (Q category, or signs.FISH) have a
+sky sign (F category) inside them more often than names with other heads; Fisher one-sided. A and B.
+
+**K14 Places are local.** On seals, the presence of an enclosure / landscape sign (G, N; 861 left out) in a text is
+more site-dependent (Cramér's V, site grouped MD / Harappa / other) than the presence of signs of other categories
+matched on frequency. F.
+
+**K15 The sign after the ending is a person ('X's man').** Names followed by 90 (Fairservis A-1 'a man') after their
+ending take 740 more often than names followed by any other sign or by nothing; Fisher one-sided. A and B.
