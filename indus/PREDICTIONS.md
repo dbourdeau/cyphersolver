@@ -3164,3 +3164,19 @@ Similarities are only moderately stable: A against B Spearman 0.44 (DC4, under 0
 0.39 (DC5, under 0.4), both significant; nearest neighbours rarely agree across transcriptions (DC10: 7 of 63).
 Reading: context supports broad classes (fish, numerals, heads, look-alike families) but not sign-level identities.
 Tally, counting parts: 357 held, 430 failed (787 registered).
+
+# Sixty-third set, registered before testing (24 September 2026): sign 700 and counted signs (loop 3, round 7)
+
+F lines unless stated. 'Count token' = a line of numeral(s) + 700 only. Value = sum of the numerals directly before 700.
+Counted signs and kinds as in the fifty-first set. 10,000-draw permutations; p < 0.05.
+
+- **CN1** Count tokens are on moulded tablets (TAB:B) more often than on incised tablets (TAB:I) (two-sided Fisher).
+- **CN2** The value of a count token depends on the tablet type (TAB:B against TAB:I; MI, permutation).
+- **CN3** 50%+ of distinct count-token texts are found on 2+ objects.
+- **CN4** 80%+ of 700 tokens directly follow a numeral.
+- **CN5** 50%+ of 700 tokens not after a numeral stand inside name bodies.
+- **CN6** Where 700 stands inside a name body, it is the last body sign in 50%+ of cases.
+- **CN7** 80%+ of lines with 700 700 are Harappa tablets.
+- **CN8** 60%+ of signs counted 5+ times (all objects, A + B) are always counted with one numeral kind.
+- **CN9** 95%+ of values before 700 are 2, 3 or 4.
+- **CN10** 60%+ of Mohenjo-daro 700 tokens stand inside name bodies.
