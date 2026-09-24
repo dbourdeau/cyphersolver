@@ -6586,3 +6586,78 @@ same-text objects are moulded or stamped copies, so WS7 is partly mechanical; (3
 is consistent with writing habit at the level of the object and the maker (one hand, one form; copies keep the form)
 and a weaker area effect at Mohenjo-daro, with no trace of households and no drift in time. Tally, counting parts:
 1094 held, 1036 failed (2130 registered).
+
+# Hundred-and-forty-seventh to hundred-and-fifty-first sets, registered together before testing any of them (24 September 2026)
+
+Five sets, registered in one commit and tested one after another. Common conventions: distinct lines (A + B) unless
+stated; F objects without copper tablets unless stated; names = R.name_of (body, ending); head = last body sign;
+closers CL; markers M = 740, 520, CL, 400, 90; lexical = not a numeral and not a marker. p < 0.05.
+
+## Hundred-and-forty-seventh set: how many names existed (capture-recapture; seven hypotheses)
+
+The structure never separated personal names from titles. Two cities are treated as two independent catches of the
+name population: Mohenjo-daro seals and Harappa seals in F (1,279 seals between them). A whole name is (body,
+ending). Chapman's bias-corrected Lincoln-Petersen estimate N = (n1 + 1)(n2 + 1)/(m + 1) - 1 over distinct names per
+city; Chao1 = S + f1^2 / (2 f2) over the number of seals carrying each name.
+
+- **CR1** The Lincoln-Petersen estimate of whole names is at least 3 times the number of distinct names observed in the
+  two cities (a large population, as personal names would give).
+- **CR2** Chao1 over whole names (both cities pooled) is at least 2 times the observed number.
+- **CR3** For heads, the Lincoln-Petersen estimate is at most 1.5 times the observed number of distinct heads (heads are
+  a closed vocabulary, nearly all seen).
+- **CR4** 60%+ of distinct whole names are on exactly one seal.
+- **CR5** Names found in both cities end in 520 more often than names found in one (Fisher).
+- **CR6** Names found in both cities have shorter bodies than names found in one (rank test).
+- **CR7** Chao1 over heads is at most 1.5 times the observed number of distinct heads.
+
+## Hundred-and-forty-eighth set: productivity of the endings (seven hypotheses)
+
+TM6 found that new late heads all take 740. Productivity (Baayen): P = hapax heads / names, where a hapax head is a head
+seen in exactly one distinct name. Closer names: distinct lines ending in a closer (optionally + 400) with 1+ sign
+before it and no 740/520; their 'head' is the sign before the closer. Chance for P differences: ending labels
+permuted over names (10,000 draws, one-sided).
+
+- **PV1** P for 740 names is higher than for 520 names.
+- **PV2** Hapax heads take 740 more often than other heads (Fisher, 740 against 520).
+- **PV3** Rarefied to the number of 520 names, 740 names show more distinct heads than 520 names in 95%+ of 1,000
+  draws.
+- **PV4** P for closer names is lower than for 740 names.
+- **PV5** 740 name bodies are longer than 520 name bodies (rank test).
+- **PV6** Heads seen at one site only (F) take 740 more often than heads seen at two or more sites (Fisher).
+- **PV7** Of hapax heads of 740 names, 50%+ are rare signs (fewer than 10 tokens in A + B).
+
+## Hundred-and-forty-ninth set: a closer as a head and its ending in one sign (five hypotheses)
+
+From set 145: '255 435' takes '690 740' or a bearer closer. A stem is the part of a line before a closer (closer
+lines as PV) or before the head of a 740 or 520 name; stems must be non-empty.
+
+- **CF1** Closer stems are also attested as stem + X + 740 in a larger share than 520-name stems are (Fisher).
+- **CF2** For stems attested both ways, the commonest X of each closer covers 50%+ of that closer's stems (pooled over
+  closers with 3+ such stems).
+- **CF3** That share is higher than when closer labels are permuted among the stems (1,000 draws).
+- **CF4** For the bearer closers (154, 156), X = 690 in 50%+ of their stems attested both ways.
+- **CF5** Closer stems are as long as 740 bodies minus the head (rank test, two-sided p >= 0.05 holds).
+
+## Hundred-and-fiftieth set: numeral compounds as a shared vocabulary (five hypotheses)
+
+From set 143: numeral + sign pairs are fixed. Compound = the last numeral of a run + the lexical sign after it, with
+3+ distinct lines. Controls: lexical + lexical bigrams, each compound matched to the bigram(s) nearest in distinct-line
+frequency (ties: all, averaged). Sites and object types from F (all objects).
+
+- **NC1** Compounds occur at more sites than matched bigrams (paired sign test).
+- **NC2** Compounds occur on more object types (seal / tablet / other) than matched bigrams (paired sign test).
+- **NC3** A larger share of compounds than of matched bigrams occurs at both Mohenjo-daro and Harappa.
+- **NC4** Compounds recur at the smaller sites (outside Mohenjo-daro and Harappa) more often than matched bigrams.
+- **NC5** For lexical signs counted at both Mohenjo-daro and Harappa, the commonest numeral value before them is the
+  same in both cities in 70%+.
+
+## Hundred-and-fifty-first set: copper tablets by area (five hypotheses)
+
+From set 140: copper tablets cluster by area. Mohenjo-daro copper tablets in F with a sub-area (65 of 197; small).
+Picture = field 18 ('None' = no picture). Pair tests as the hundred-and-fortieth set (1,000 permutations).
+
+- **CU1** The picture depends on the sub-area (MI).
+- **CU2** Having a picture depends on the sub-area (MI).
+- **CU3** Same-picture copper tablets share a sub-area more often than chance.
+- **CU4** Copper tablets from the same sub-area share a sign more often than tablets from different sub-areas.
+- **CU5** Copper tablets from the same sub-area share a level (early / late) more often than chance.
