@@ -19,8 +19,8 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 4 | A archaeological consistency | readings or structure hold across sites, periods, duplicates and sealings of the same seal | supporting: fish/520 signal holds at all sites and periods (set 196); Tamil Nadu graffiti composites are less ordered than Indus lines (70.5% against 88.0% order consistency, set 204) |
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 81.3% / 68.3%; no candidate beats the decoys inside the fifth (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.0% (frequency 0% / 1.3%) |
-| 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 37.9% / 60.0% with the two-direction model (set 204; frequency 9.6% / 22.4%) |
-| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.685, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
+| 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 38.3% / 60.6% (two-direction model, set 204; discounted family context, set 210; frequency 9.6% / 22.4%) |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.675, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
 
@@ -104,3 +104,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 32 | 207 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | blind key fitting fails the gate: fitted freely, Linear B fits Sanskrit best, Greek last/third, 0 of 30 Ventris values; free fitting cannot identify a language (no progress; streak 2) |
 | 33 | 208 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | families from Parpola's descriptions also improve S (random none): graphic effect replicates with an independent definition; nothing beyond decade families (no progress; streak 3) |
 | 34 | 209 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | closer-line bodies do not show the name-body pattern (sign before a closer no more often a head); no roles added (no progress; streak 4) |
+| 35 | 210 | 4.675 (25.5%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | discounted family 4-gram: S 4.685 to 4.675, replicated A to B; SIGN top-1 38.3% (progress; streak 0) |

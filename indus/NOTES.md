@@ -2461,6 +2461,11 @@ families. No progress: streak 3. Tally 1339 held, 1240 failed.
 Registered first (4c2700934). The sign before a closer is a known name head no more often than other body signs (A 72%
 vs 77%, B 64% vs 67%); no closer-line roles adopted. No progress: streak 4. Tally 1340 held, 1244 failed.
 
+## Two-hundred-and-twenty-fourth pass (24 Sept 2026): decipherment loop 35, discounted family context
+
+Registered first (d73addcc6). Discounted family 4-gram: S 4.685 -> 4.675, A -> B replicated; SIGN 38.3% / 60.6%.
+Progress: streak 0. Tally 1344 held, 1244 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

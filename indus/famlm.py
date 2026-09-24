@@ -42,6 +42,14 @@ class M3(M2):
             c4 = self.f4[(fam(s[i - 3]) if i >= 3 else '<s>', fam(s[i - 2]), fam(s[i - 1]))]
             l4 = sum(c4.values()) / (sum(c4.values()) + 2)
             r['f4'] = l4 * c4[w] / max(1, sum(c4.values())) + (1 - l4) * r['ftri']  # set 199
+            # set 210: absolute discounting, D = 0.5
+            n3, n4 = sum(c.values()), sum(c4.values())
+            p3 = (max(c[w] - 0.5, 0) / n3 + 0.5 * len(c) / n3 * r['fbi']) if n3 else r['fbi']
+            r['f4k'] = (max(c4[w] - 0.5, 0) / n4 + 0.5 * len(c4) / n4 * p3) if n4 else p3
+            # set 211: the sign trigram absolutely discounted, D = 0.75, onto the Kneser-Ney bigram
+            t3 = self.tri[(s[i - 2], s[i - 1])]
+            nt = sum(t3.values())
+            r['trik'] = (max(t3[w] - 0.75, 0) / nt + 0.75 * len(t3) / nt * r['bi']) if nt else r['bi']
         return out
 
 

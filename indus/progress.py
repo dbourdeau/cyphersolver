@@ -23,7 +23,7 @@ from predict_test108 import genre
 from predict_test161 import heading
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-MODEL = {'keys': ['tri', 'pos', 'end', 'f4'], 'kn': True}  # set 125 (BB2-BB4); family context: ftri set 194, f4 (family 4-gram) set 199
+MODEL = {'keys': ['tri', 'pos', 'end', 'f4k'], 'kn': True}  # set 125 (BB2-BB4); family context: ftri set 194, f4 set 199, f4k (discounted) set 210
 ANCHORS = {'749': 'markhor goat', '341': 'rhinoceros', '753': 'hare', '777': 'markhor goat / horned archer'}  # copper-tablet equations (fourth pass)
 VALUES = {}                                                   # no sound value has passed a registered test
 CAGED = {'226', '232', '153', '236', '241', '144', '393', '895', '466', '804', '878', '689'}  # set 184
