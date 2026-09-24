@@ -4238,3 +4238,18 @@ All regions
 - **RS18** The ending depends on the region (MI).
 - **RS19** The first sign of formulas depends on the region (MI).
 - **RS20** 50%+ of small-site names of 3+ signs contain a unit.
+
+## Results of the eighty-seventh set (added after the test; `predict_test87.py`, `results/predict_test87.md`)
+
+Four held, sixteen failed, and the failures mostly say 'no regional difference'. Gujarat's 64 distinct names end in a
+common city head exactly as often as Mohenjo-daro's (RS2: 41% and 41%), overlap equally with both cities' heads (RS3:
+0.22 and 0.22), and do not differ in 520 share (RS4), length (RS5, p = 0.06) or heading (RS6); only 6% of Gujarat sign
+types are absent from both cities (RS8). Kalibangan and Chanhu-daro do not lean to their nearer city (RS12, RS13, RS14
+the other way), and Kalibangan names are like Harappa's in length (RS15) and heading (RS16). Over all regions the
+head, the ending and the formula opening do not depend on region (RS17-RS19: p = 0.20, 0.21, 0.18). What held: Gujarat
+writes more formulas (RS7: 51% against 40%), uses the tiered form for 5-8 (RS9: 7 of 12), Lothal and Dholavira share
+fewer head types than the two cities (RS10: 0.26 against 0.47, expected with fewer names), and 63% of small-site names
+of 3+ signs contain a city unit (RS20). Not confirmed: fish-520 in Gujarat (RS1: 5 of 15) and Dholavira avoiding 520
+(RS11: 25%). This revises the eighty-sixth set's reading: the smaller sites use the same name stock and the same
+units; the grammar tests failed there because 160 names are too few, not because the system differs. Tally, counting
+parts: 579 held, 648 failed (1227 registered).

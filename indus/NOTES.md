@@ -1563,6 +1563,13 @@ Summary of sets 84-86: Harappa's writing lengthens and moves to seals and moulde
 unchanged; Mohenjo-daro and Harappa share one grammar with different local styles; the smaller sites share the
 numerals but not the name system. Tally 575 held, 632 failed.
 
+## Hundred-and-first pass (24 Sept 2026): regional name systems
+
+Registered first (eighty-seventh set, e720f92c5), tested (`predict_test87.py`). No regional name system: Gujarat,
+Kalibangan and Chanhu-daro use the city heads at city rates, the cities' units, and no region predicts head, ending or
+formula opening. The eighty-sixth set's small-site failures are read as too little data. Gujarat writes more formulas.
+Tally 579 held, 648 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
