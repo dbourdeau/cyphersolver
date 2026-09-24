@@ -4682,3 +4682,34 @@ Two do not survive: Harappa's larger 520 share (XC5: 18% against 16%, p = 0.24; 
 borderline at p = 0.043, and copper labels had added Mohenjo-daro 740 names), and the Mohenjo-daro fixed-class count
 falls just under its threshold (XC19: 27 of 34, 79%; Harappa XC20: 13 of 16). Tally, counting parts: 673 held, 754
 failed (1427 registered).
+
+# Ninety-eighth set, registered before testing (24 September 2026): picture labels across media (twenty hypotheses)
+
+Copper labels (ninety-fourth to ninety-sixth sets) against moulded (TAB:B) and incised (TAB:I) tablets and seals.
+Motif as in the ninety-fourth set ('Othr' kept). Text = an object's lines joined. Dated Harappa objects via
+rtools.level. 10,000-draw permutations (1,000 where marked); p < 0.05.
+
+Across media
+- **XM1** For pictures on both copper and moulded tablets, copper labels share signs with moulded texts of the same
+  picture more than of other pictures (mean Jaccard difference, permutation of moulded motifs, 1,000).
+- **XM2** The same for incised tablets (1,000).
+- **XM3** At most one identical text occurs both on copper and on a moulded tablet.
+- **XM4** 30%+ of moulded-tablet motif types also occur on copper.
+- **XM5** Copper labels and moulded texts share fewer adjacent-pair types than label-shuffled lines (1,000).
+Moulded and incised tablets as picture labels
+- **XM6** For moulded motifs on 5+ tablets, the commonest text covers 50%+ on average.
+- **XM7** 80%+ of repeated moulded texts with a motif have one motif.
+- **XM8** Incised tablets with the same text share the motif more often than when motifs are shuffled.
+- **XM9** 90%+ of moulded tablets with a motif are from Harappa.
+- **XM10** Moulded tablets with a motif carry a numeral less often than moulded tablets without.
+- **XM11** 60%+ of moulded texts with a motif have 1-3 signs.
+- **XM12** 'Mult' moulded tablets have longer texts than other moulded tablets with a motif (rank test).
+- **XM13** A moulded text-picture pair seen on 2+ dated objects spans both periods in 30%+.
+- **XM14** Unicorns are a smaller share of tablet motifs than of seal motifs.
+The copper words elsewhere
+- **XM15** 50%+ of 845 tokens off copper are on tablets.
+- **XM16** 50%+ of 407 tokens off copper are on seals.
+- **XM17** Off copper, 845 and 407 share a line more often than chance.
+- **XM18** 30%+ of 407 tokens off copper are line-final.
+- **XM19** 70%+ of 845 tokens off copper are from Mohenjo-daro.
+- **XM20** Off copper, 407 directly follows 845 less often than on copper.
