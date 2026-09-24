@@ -3972,3 +3972,18 @@ What 90 and 151 are
 Replication
 - **KC19** B: KC13 holds.
 - **KC20** B: KC3 holds.
+
+## Results of the eighty-first set (added after the test; `predict_test81.py`, `results/predict_test81.md`)
+
+Ten held, ten failed. The 520 class has 11 heads: the fish 220, 231, 233, 235, 240, the numerals 1 and 33 (so '... 1
+520' and '... 3 520' put 520 directly after a number, as if 520 were itself counted), and 175, 382, 70, 72. The
+classes are stable: the A + B class of every head with 5+ names agrees with F (KC10: 47 of 47), a fish before a
+740-class head never moves it (KC11: 156 of 156), and class follows shape category a little (KC5, p = 0.049). 520-class
+names take fish modifiers even when the head is not a fish (KC3: 58% against 39%; KC20 in B: 60% against 34%), and
+contain numerals more often, stratified by fish head (KC1: +21.5 points, p = 0.023). But non-fish 520 heads are counted
+less, not more (KC2: 5% against 16%; the numeral heads 1 and 33 cannot themselves be counted), are no closer to the fish
+in context (KC4, p = 0.064), are not rarer (KC6), not formula items more (KC7), not counted higher (KC8: lower, 2.6
+against 3.9), not preceded by numerals or fish more (KC9), and not commoner at Harappa (KC12). 90 and 400 after 740 are
+selected by the head (KC13: p = 0.0001; KC19 in B: p = 0.0002; KC14: p = 0.006) and by different heads (KC15: Jaccard
+0.13, p = 0.0001), so they are two distinct suffix-like signs, each tied to its own set of heads. '740 90' is not a seal,
+Mohenjo-daro or long-name form (KC16-KC18). Tally, counting parts: 516 held, 591 failed (1107 registered).

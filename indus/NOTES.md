@@ -1520,6 +1520,13 @@ no change by object, city, heading or counting. The 520 class is fish plus a few
 Post-name signs 90 and 151 attach only to 740 (740 90 x69, 520 90 x0). Names cited in formulas lean 520. Tally 506
 held, 581 failed.
 
+## Ninety-fifth pass (24 Sept 2026): what the two classes are
+
+Registered first (eighty-first set, 3a3228581), tested on distinct names and lines (`predict_test81.py`). The 520 class
+= fish heads, the numerals 1 and 33 ('N 520', as if 520 were counted) and 175, 382, 70, 72; it takes fish modifiers
+even on non-fish heads (A + B and B). Classes agree 47 of 47 with F. After 740, 90 and 400 are each selected by their
+own set of heads (Jaccard 0.13). Tally 516 held, 591 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
