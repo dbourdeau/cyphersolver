@@ -4105,3 +4105,17 @@ sided in the stated direction; ranks as before. 10,000-draw permutations; p < 0.
 - **PE18** Moulded tablets are a larger share of tablets later (objects).
 - **PE19** Tablets carry a picture more often later (objects).
 - **PE20** Formulas with a numeral have a header more often later.
+
+## Results of the eighty-fourth set (added after the test; `predict_test84.py`, `results/predict_test84.md`)
+
+Nine held, eleven failed. At Harappa (811 dated objects; 253 earlier and 239 later distinct lines) the writing grows
+longer and more formal over time: later name bodies are longer (PE3: 3.4 against 2.7 signs) and lines are longer (PE16:
+4.1 against 3.5), the heading unit becomes commoner in names (PE6: 17% against 6%), and the 400 receipt suffix fades
+(PE8: 28% earlier against 18% later). The media shift: seals are a larger share of objects later (PE17: 29% against
+17%) and moulded tablets replace incised ones (PE18: 65% against 36% of tablets). The grammar does not change: the
+share of names (PE1), numeral-first formulas (PE2), 520 (PE4), fish names (PE5), tiered numerals (PE9), count tokens
+(PE14), doubles (PE15) and headers (PE20) are all stable, and heads keep their class (PE12: 8 of 8) and pairs their
+order (PE13: 3 of 3), though both of these rest on very few cases. 38% of later sign types are not attested earlier
+(PE10), but with ~250 lines per period that has no null and is expected from sampling. Head types are less than half
+shared between periods (PE11: 42%), 90 does not grow (PE7) and tablet pictures grow only slightly (PE19, p = 0.09).
+Tally, counting parts: 547 held, 620 failed (1167 registered).

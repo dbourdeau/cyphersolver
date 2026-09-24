@@ -1540,6 +1540,12 @@ Registered first (eighty-third set, e63a28acb), tested (`predict_test83.py`). 40
 entry, usually without a picture, added to names that also occur bare (often on seals), but not linked to local seal
 owners. 90 is not a clear owner mark; its seal bias is a city pattern. Tally 538 held, 609 failed.
 
+## Ninety-eighth pass (24 Sept 2026): how the writing changed at Harappa
+
+Registered first (eighty-fourth set, 11b0ef33f), tested (`predict_test84.py`). Later Harappa texts are longer, more
+often headed, less often receipts (400), and on seals and moulded tablets rather than incised tablets; the grammar
+(genres, classes, numerals, 520 share) is stable across the periods. Tally 547 held, 620 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
