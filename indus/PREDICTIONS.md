@@ -6242,3 +6242,18 @@ left out (the confound found in the hundred-and-twelfth set). Distinct lines (A 
   p >= 0.05 counts as holding).
 - **PA10** Fish are counted (numeral directly before) with value 6 or 7 in 20%+ of counted fish in F (Parpola's star
   groups as the common readings).
+
+## Results of the hundred-and-thirty-eighth set (added after the test; `predict_test138.py`, `results/predict_test138.md`)
+
+Three held, seven failed. Parpola's fish claims, checked on ICIT's transcription: the commonest numeral before a fish
+is 2 (113 of 195 distinct lines, with heading-led runs already removed), not 6 (8 cases, sign 16 'three over three'),
+so PA1 and PA10 fail (6 or 7 in 5% of counted fish in F); 3 + fish is second (PA2: 28), the sole-text seal '7 + fish'
+exists (PA3: object 1070.1, '17 220'), and doubled fish occur (PA4: 8 lines). The difference with Parpola's 'most
+frequent sequence' may come from sign identification (whether a given six-stroke form is recorded as one numeral sign
+or as strokes of another value) or from his corpus (the 1982 concordance) against ICIT's; this set cannot tell which,
+but in ICIT's data the pattern is 'two fish', not 'six fish'. The numeral stands directly before a later fish in 86% of
+bodies (PA5, under 90%). The claims carried over from the Soviet team fail in their stated form: 740 is line-final on
+seals no more than on tablets (PA6: 87% against 91%), prefixed signs are dropped in only 15% of bodies (PA7), a stroke
+after 740 ends the line in only 6 of 18 cases (PA8), and the roof fish heads names far less than the plain fish (PA9:
+7% against 28%; it acts as a modifier, not a separate star word). Tally, counting parts: 1060 held, 1001 failed (2061
+registered).

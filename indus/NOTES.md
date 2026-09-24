@@ -1962,6 +1962,14 @@ Catalogue neighbours look alike (the blocks are shape families); the free-varian
 form shape families. Shape does not predict use in general, and a pixel containment test finds no compound effect.
 Better glyph data (photographs, stroke-level drawings) would be needed for compound analysis. Tally 1057 held, 994 failed.
 
+## Hundred-and-fifty-second pass (24 Sept 2026): Parpola, Mahadevan, Knorozov structural claims
+
+Registered first (hundred-and-thirty-eighth set, 9ceb0d054), tested (`predict_test138.py`) with claims taken from the
+OCR text of Parpola 1994. In ICIT's transcription '2 + fish' dominates (113) and '6 + fish' is rare (8), against
+Parpola's 'most frequent sequence'; '3 + fish' second and the '7 + fish' seal do hold. The roof fish is a modifier, not
+a head. The Soviet-team inflection claims fail as stated. Possible sign-identification difference with Parpola's corpus
+noted. Tally 1060 held, 1001 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
