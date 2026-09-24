@@ -2138,6 +2138,13 @@ single signs with multi-sign units. The 'shared openers' are frequent signs and 
 and pictureless seals as on seal names; the motif link is weak once length is split. Openers attach freely to cores.
 Set 159's packed-legend support is withdrawn except a weak motif link. Tally 1148 held, 1080 failed.
 
+## Hundred-and-seventy-sixth pass (24 Sept 2026): office + name, further checks
+
+Registered first (e16ba7393). The office-emblem tests fail (no shared emblem per opener across cities, no motif
+concentration, no size or quarter effect); the head sets the ending (z 22.7). B repeats the opener/core contrast with
+set 161's length caveat. New: frequent openers begin 90% of long names on sealings (tags) against 57% on seals, and
+become more common in late levels (+0.26): standardised name openings over time. Tally 1154 held, 1084 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

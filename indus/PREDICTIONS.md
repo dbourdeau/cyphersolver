@@ -7095,3 +7095,17 @@ multi-sign units) and cores recombine with openers at the shuffled maximum (OF7:
 attach freely to cores. Reading: set 159's PL1/PL2 contrast is mostly an artefact of comparing single signs with
 multi-sign units; PL4's motif link survives only weakly. Tally, counting parts: 1148 held, 1080 failed (2228
 registered).
+
+## Results of the hundred-and-sixty-second set (added after the test; `predict_test162.py`, `results/predict_test162.md`)
+
+Six held, four failed. The direct tests of an office-emblem reading fail: a shared opener does not go with the same
+commonest motif in both cities (MX7: 5 of 33, 15%), rare motifs do not concentrate openers (MX1: gaur and zebu, top
+opener share 0.14, beat the unicorn in 32% of draws), shared-opener seals are not larger (MX6: 29.3 against 29.1 mm)
+and do not cluster in one quarter of Mohenjo-daro (MX9). The head, not the opener, sets the ending (MX5: z 22.7
+against 1.1), as the paradigm already had it. In B, openers are again title-like and cores person-like (MX2: 1.54,
+0.47, 0.59; MX3: 10.85, 0.04, 0.86), but set 161 showed that contrast is mostly single sign against multi-sign unit,
+so the replication carries the same caveat. Two new facts, both about the 33 frequent 'shared openers' rather than
+about offices: they begin 90% of the 3+-sign names on tags (sealings, mostly Lothal and Kalibangan) against 57% on
+seals (MX8, p = 0.002), and 53% of those on Harappa moulded tablets (MX4); and names beginning with one become more
+common from early to late levels (MX10: +0.26, p = 0.0003), a drift towards a smaller set of standard name openings
+over time. Tally, counting parts: 1154 held, 1084 failed (2238 registered).
