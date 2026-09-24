@@ -3531,3 +3531,18 @@ Checks
 - **NA18** 90%+ of numerals directly before a fish head are of the short kind.
 - **NA19** 2 + fish + 520 occurs in 3+ distinct names at each city (F).
 - **NA20** In formulas, fish after stroke 2 are line-final more often than fish after stroke 3 (tokens).
+
+## Results of the seventy-second set (added after the test; `predict_test72.py`, `results/predict_test72.md`)
+
+Two held, eighteen failed: the number-agreement lead does not survive counting distinct names. Only 29 distinct names
+have a counted fish head (values 2: 9, 3: 6, 6: 4, others 1-2 each). Value 2 takes 520 in 6 of 9 against 7 of 17 for
+3+ (NA1, p = 0.21), no better than value 1 (NA2) or uncounted fish heads (NA3: 67% against 63%); nothing replicates in
+B (NA4: no value-2 case), at Harappa (NA5) or at Mohenjo-daro (NA6), or in both cities (NA19: 4 and 2 bodies). Over
+all heads the value does not set the ending (NA7: 16% against 11%; NA8 within heads +10 points, p = 0.10; NA9: MI p =
+0.74; NA11, NA12: 3-1 and 2-0 heads) and neither does the notation (NA13). The seventy-first set's '31 of 34' came from
+repeated seals (501 405 2 240 520 x29 and a few others). Withdrawn. The 415/235 + fish leads also fail on distinct names
+(NA14: 10 of 12, p = 0.09; NA15: 6 of 10, p = 0.12), and before a fish head the numeral is short-kind only half the
+time (NA18: 15 of 29). What held: a numeral elsewhere in the body does not predict the ending (NA10, control), and for
+non-fish heads the sign before the head adds a little information about the ending beyond the head (NA17: 0.034 bits,
+p = 0.001); for fish heads it does not (NA16). Lesson recorded: token counts over repeated seals can manufacture
+patterns; distinct-name counts are the check. Tally, counting parts: 425 held, 502 failed (927 registered).

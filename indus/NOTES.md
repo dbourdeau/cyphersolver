@@ -1453,6 +1453,13 @@ takes 740. Unregistered lead: stroke 2 + fish -> 520 (31 of 34) against stroke 3
 on distinct names. The link holds in B, at Harappa and at Mohenjo-daro, not at the small sites. Tally 423 held, 484
 failed.
 
+## Eighty-sixth pass (24 Sept 2026): does the ending agree with the number?
+
+Registered first (seventy-second set, 12f1bda22), tested (`predict_test72.py`). No: over distinct names the 2+fish ->
+520 / 3+fish -> 740 lead disappears (29 counted fish names; 6 of 9 against 7 of 17), and the value before any head does
+not set the ending. The lead was an artefact of repeated seals. The sign before a non-fish head adds a little to the
+ending (0.034 bits). Tally 425 held, 502 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
