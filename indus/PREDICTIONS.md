@@ -3075,3 +3075,21 @@ not on the city (HD6) or the ending (HD8: 740 in 84% against 86%). HD3 (headed n
 holds only because the heading unit adds two signs; the bodies themselves are about as long. HD2 is confounded the same
 way (the 2 after the heading counts as a numeral: 89% against 98%). 25% of 817/820/861 tokens are not line-first (HD9
 fails), so these signs also occur inside lines. Tally, counting parts: 341 held, 416 failed (757 registered).
+
+# Sixtieth set, registered before testing (24 September 2026): are rare signs variants? (loop 3, round 4)
+
+'Rare sign' = a non-numeral sign with 2-5 tokens in the sample; 'common sign' = 20+ tokens. 'Frame' of a token =
+(previous sign, next sign), '#' at line ends. 'Best match' of a rare sign = the common sign sharing most of its frames
+(ties to the commoner), if any. A + B pooled unless stated. p < 0.05.
+
+- **VR1** 60%+ of rare-sign tokens stand in a frame also attested with a common sign.
+- **VR2** For rare signs with a best match in both A and B, the match is the same for 50%+.
+- **VR3** A rare sign's majority position (last in a name body or not) equals its best match's for 80%+ of rare signs
+  in name bodies.
+- **VR4** A rare sign and its best match share their majority ending for 70%+ of pairs where both end names.
+- **VR5** Rare-sign tokens are off seals more often than common-sign tokens (F).
+- **VR6** Rare-sign tokens are in formulas more often than common-sign tokens (among name lines and formulas).
+- **VR7** A rare sign and its best match share a Fairservis category for 30%+ of pairs with both categorised.
+- **VR8** Rare-sign tokens are line-final more often than common-sign tokens.
+- **VR9** For 10%+ of lines holding one rare sign, replacing it with its best match gives an attested line.
+- **VR10** The best match is among the 20 commonest signs for 50%+ of rare signs with a match.
