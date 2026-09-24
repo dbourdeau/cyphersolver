@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>From Warsaw, 24 December 1627 (DECODE R1408) — Solved</title>
-<meta name="description" content="Decipherment of DECODE R1408, an Italian cipher letter dated Warsaw 24 December 1627 (ÖStA HHStA Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176): a homophonic substitution whose alphabet is in plain order, with letter-pair consonants, two-figure syllables, nulls and word codes, read end to end.">
+<title>From Warsaw, 24 December 1627 (DECODE R1408)</title>
+<meta name="description" content="DECODE R1408, an Italian cipher letter dated Warsaw 24 December 1627 (ÖStA HHStA Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176). The key was recovered from the ciphertext alone: a homophonic substitution with at most two symbols per letter and the alphabet in plain order on the figures, plus two-figure syllables, nulls and word codes. It is not a hard cipher; every spelled word is decrypted and the word codes are glossed from context.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-16">
 <meta name="last-modified" content="2026-09-16">
@@ -40,10 +40,10 @@
 
 <section class="hero">
   <div class="cipherstrip">33 29 a m 22 29 17 16 z g l u 16 a 47 m<br>23 22 13 m 31 29 m a 41 l l 22 29 a<br>27 16 f i 16 22 29 m a 47 a 12 o</div>
-  <p class="kicker">Warsaw &rarr; Moravia? · homophonic figure cipher · 1627 · solved</p>
+  <p class="kicker">Warsaw &rarr; Moravia? · homophonic cipher in figures, at most two symbols per letter · 1627</p>
   <h1>&ldquo;Di Varsouia 24 Xbre 1627&rdquo;</h1>
   <p class="sub">24 December 1627 · Österreichisches Staatsarchiv, HHStA, Staatskanzlei Interiora, Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176 · DECODE R1408</p>
-  <p class="sub">Three hundred figure groups and a scatter of letters with only a dateline in clear, listed as non-decrypted, read in full: the alphabet was in order all along</p>
+  <p class="sub">Three hundred figure groups and a scatter of letters, with only the dateline in clear; DECODE lists no decipherment &middot; the key was recovered from the ciphertext alone. It is not a hard cipher: a homophonic substitution with at most two symbols per letter, the alphabet in plain order on the figures &middot; every spelled word decrypted, ten word codes glossed from context</p>
   <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-16">16 September 2026</time></p>
 <div class="seal solved" aria-hidden="true"><span>solved</span></div>
 </section>
@@ -54,17 +54,17 @@
 <strong>Summary.</strong> S. Tomokiyo transcribed this one-page letter in his article on variable-length figure codes in the Austrian archives and noted only
 that the dateline makes the language Italian. The figures and letters are written without breaks; his grouping gives 295 two-figure groups, 13 three-figure
 groups, 108 stray <em>a</em>s and <em>m</em>s and a handful of letter pairs. The two-figure groups between 12 and 33 have the frequency profile of plain
-Italian, the letters <em>a</em> and <em>m</em> carry no text at all, and an annealer scoring a 5-gram model plus dictionary coverage converges from random
-and from seeded starts on one key. That key is an <strong>alphabet in plain order</strong> &mdash; odd figures 13&ndash;33 are <em>a</em> to <em>m</em>, even
-figures 14&ndash;32 are <em>n</em> to <em>z</em> &mdash; which the solver was never told; the letter pairs stand for consonants, the rare groups 01&ndash;09
-and 40&ndash;50 for syllables and particles, the three-figure groups for words. Every spelled word reads. The writer, lately received at Nikolsburg, tells the
+Italian, the letters <em>a</em> and <em>m</em> carry no text at all, and a solver (simulated annealing) scoring a 5-gram language model plus dictionary coverage converges from random
+and from seeded starts on one key. That key is an <strong>alphabet in plain order</strong> (odd figures 13&ndash;33 are <em>a</em> to <em>m</em>, even
+figures 14&ndash;32 are <em>n</em> to <em>z</em>), which the solver was never told; the letter pairs stand for consonants, the rare groups 01&ndash;09
+and 40&ndash;50 for syllables and particles, the three-figure groups for words. Every spelled word is decrypted. The writer, lately received at Nikolsburg, tells the
 addressee that the canonry of Olm&uuml;tz promised for one of the sons of &ldquo;this Most Serene [Queen]&rdquo; has still not been conferred, that
 &ldquo;these Majesties&rdquo; want it, and asks for it to be done or for a prompt answer.
-<em>Status: read. Ten word codes and three small groups are glossed from context; the image and the key fascicle would fix them.</em>
+<em>Status: every spelled word decrypted. Ten word codes and three small groups are glossed from context; the image and the key fascicle would fix them.</em>
 </div>
 
 <h2 id="document"><span class="num">01</span> The document</h2>
-<p>DECODE&rsquo;s public record: one page, cipher, <em>Non-decrypted</em>, cipher type <em>Simple substitution, Homophonic substitution</em>, numerical symbol
+<p data-term-ok>DECODE&rsquo;s public record: one page, cipher, <em>Non-decrypted</em> (no decipherment on file), cipher type <em>Simple substitution, Homophonic substitution</em>, numerical symbol
 set, inline cleartext, a transcription on file, placeholder dates 1600&ndash;1799; images and documents need a login and were not seen. Tomokiyo: &ldquo;The
 only cleartext at the beginning &lsquo;Di Varsouia 24 Xbre 1627&rsquo; indicates the language is Italian &hellip; the numbers and letters are written without
 space in the original manuscript, but I believe my grouping into two- or three-digit groups is fairly straightforward. It is possible that some letters
@@ -89,17 +89,17 @@ a 01 a 19 21 25 14 29 m 45 22 06 m a 24 28 15 29 26 16 m 13 a 33 21 a 15 21 14 2
 27, then 18, 17, 17, 15, 13, 10, 9, 9, 7, 7, 5, 4, 4, 2, 2, 1, 1 &mdash; are the counts of a monoalphabetic Italian text of that length (<em>e a i o</em> near
 thirty each, <em>n l r t s c d</em> from ten to eighteen). The groups 01&ndash;09 and 40&ndash;50 are too rare to be letters and too evenly rare to be
 vowel homophones. And the letters <em>a</em> and <em>m</em>, a quarter of everything, cannot be letters: treated as symbols they both anneal to the same
-vowel, which no Italian text permits, so they are nulls &mdash; and in the decode they fall at word ends, the clerk&rsquo;s habit of dropping one after each word.</p>
+vowel, which no Italian text permits, so they are nulls. In the decryption they fall at word ends, the clerk&rsquo;s habit of dropping one after each word.</p>
 
-<h2 id="solving"><span class="num">02</span> Solving</h2>
+<h2 id="solving"><span class="num">02</span> Recovering the key</h2>
 <ol>
 <li><strong>5-gram annealing on the numbers alone</strong> (nulls dropped, text split at the three-figure codes, the Italian model built for the
 <a href="lucca.html">Lucca letter</a>): six seeds disagree, but one already reads <em>avere, questa, un caricato, aiuto, subito, bene</em>. Forcing distinct letters
 on the nineteen frequent figures does not help; at 253 5-grams the model prefers <em>e t r s</em> soup.</li>
 <li><strong>A unigram word-segmentation scorer</strong> degenerates into <em>di la il di la</em>. Discarded.</li>
-<li><strong>5-gram plus dictionary coverage</strong> &mdash; the LM score plus one nat for every letter covered by a lexicon word of three letters or more, swaps
+<li><strong>5-gram plus dictionary coverage:</strong> the LM score plus one nat for every letter covered by a lexicon word of three letters or more, swaps
 confined to the frequent figures, free letters for the rare groups. From random keys two seeds of six converge on the same key (&minus;371 and &minus;409); seeded from
-step 1, all three seeds land on it. At that stage the text read <em>&hellip; un caricato d olmi. ad uno gli &hellip; suoi figlio hauendo io saputo in corte &hellip; uolonta
+step 1, all three seeds land on it. At that stage the decryption gave <em>&hellip; un caricato d olmi. ad uno gli &hellip; suoi figlio hauendo io saputo in corte &hellip; uolonta
 di re &hellip; stata messa in esecutione &hellip; queste maesta ho stimato oficio &hellip; uoto seruitore io le so non suplicare &hellip; a uoler fare &hellip; prima &hellip;
 subito a me benigna risposta</em>.</li>
 <li><strong>Control.</strong> The same objective on three shufflings of the ciphertext tops out at &minus;843, &minus;865 and &minus;893 against &minus;371 in the true order.</li>
@@ -111,7 +111,7 @@ on 14 16 18 20 22 24 26 28. The annealer had no way to know that. It also settle
 <em>ll</em> = t (<em>al·tri, sta·ta, ques·te, servi·tore</em>), <em>th</em> = l (<em>Nico·lspurg, ta·l</em>), <em>pr</em> = ff (<em>fece, e·ffetuare</em>);
 01 <em>si</em>, 05 <em>non</em> (<em>ca·non·icato</em>, <em>non &egrave;</em>), 06 <em>ne</em>, 09 <em>de</em>, 40 and 46 <em>con</em>, 41 <em>al</em>, 42 <em>la</em>,
 43 <em>di</em>, 44 <em>de</em>, 45 <em>da</em>, 47 <em>che</em>, 50 <em>se</em>. The single <em>o</em>, <em>p</em>, <em>n</em> sit inside otherwise complete words
-and are read as nulls or slips of transcription.</li>
+and are taken as nulls or slips of transcription.</li>
 </ol>
 
 <h2 id="key"><span class="num">03</span> The key</h2>
@@ -125,11 +125,11 @@ and are read as nulls or slips of transcription.</li>
 <tr><td>t</td><td>l</td><td>r</td><td>d</td><td>n</td><td>ff</td><td>si</td><td>non</td><td>ne</td><td>de</td><td>con</td><td>al</td><td>la</td><td>di</td><td>de</td><td>da</td><td>con</td><td>che</td><td>se</td><td>nulls</td></tr>
 <tr class="muted"><td>7</td><td>2</td><td>5</td><td>3</td><td>4</td><td>2</td><td>4</td><td>2</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>3</td><td>3</td><td>108</td></tr>
 </table>
-<p class="muted">Third rows: occurrences. Unread: 12 (an honorific subject, <em>V.S.</em>?), 03 (an adverb), 04 (a conjunction), and the word codes 100 113 120 123 151
+<p class="muted">Third rows: occurrences. Not identified: 12 (an honorific subject, <em>V.S.</em>?), 03 (an adverb), 04 (a conjunction), and the word codes 100 113 120 123 151
 154 157 159 160 223. The doubled <em>ll</em>, <em>zg</em>, <em>th</em> and the rest are not digraphs of the plaintext; they are the key&rsquo;s alternates for
 <em>t r l d n f</em>, the consonants a clerk most wants to vary.</p>
 
-<h2 id="reading"><span class="num">04</span> Reading</h2>
+<h2 id="reading"><span class="num">04</span> Decipherment</h2>
 <figure class="creveal" data-src="reveal/warsaw.json"></figure>
 <blockquote>
 <strong>Mi ricordo che, fra li altri honori che [12] mi fece in Nicolspurg, mi confido d&rsquo;hauer dato intentione a questa Serenissima [100] [113] de uoler
@@ -147,7 +147,7 @@ effect, [or] first to deign to give me at once a kind answer about it.</em>
 <li>Spellings as enciphered: <em>Seerenissima</em> (a doubled 21, or a slip), <em>stmato</em> (no <em>i</em>), <em>ffece</em>, <em>oficio</em>,
 <em>suplicarla</em>, <em>effetuare</em>, <em>essecutione</em>, <em>Olmiz</em>, <em>Nicolspurg</em>. Single consonants and <em>essecutione</em> are ordinary
 in 1627; the first two want the image.</li>
-<li>Glosses, which are inference and not reading: [154], three times, is <em>come</em> (<em>s&igrave; come desiderano</em>, <em>come io le sono</em>, <em>come fo</em>);
+<li>Glosses, which are inferences from context, not decryptions: [154], three times, is <em>come</em> (<em>s&igrave; come desiderano</em>, <em>come io le sono</em>, <em>come fo</em>);
 [160], twice, is <em>questa</em> (<em>in questa corte</em>, <em>effettuare questa &hellip;</em>); [151] is <em>ancora</em>; [120] is the addressee&rsquo;s title;
 [100] [113] the Queen&rsquo;s; [123] <em>Serenissimi</em>. [157], [223] [159], 03 and 04 are open.</li>
 </ul>
@@ -155,7 +155,7 @@ in 1627; the first two want the image.</li>
 <h2 id="context"><span class="num">05</span> Context</h2>
 <p>Nikolsburg (Mikulov) was the seat of Cardinal Franz von Dietrichstein, Bishop of Olm&uuml;tz from 1599 to 1636 and governor of Moravia, in whose gift a canonry
 of Olm&uuml;tz lay. The Queen of Poland in December 1627 was Constance of Austria, Ferdinand II&rsquo;s sister; her younger sons were being provided with
-benefices in exactly these years &mdash; Charles Ferdinand was Bishop of Breslau from 1625, John Albert Bishop of Ermland from 1621. The letter therefore
+benefices in exactly these years: Charles Ferdinand was Bishop of Breslau from 1625, John Albert Bishop of Ermland from 1621. The letter therefore
 reads as an Italian-writing agent&rsquo;s reminder to Dietrichstein, not to the Emperor: he had carried the Cardinal&rsquo;s promise from Nikolsburg to Warsaw,
 the promise has not been kept, King and Queen are waiting, and he would like either the canonry or an answer. That would also explain why the piece sits in
 the <em>Chiffrenschl&uuml;ssel</em> series rather than in a correspondence: it was filed with its key. <strong>None of this is in the cipher.</strong> Neither sender

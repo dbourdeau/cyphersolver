@@ -1,6 +1,6 @@
 # Fra Giovanni di Lucca to the Emperor, 30 May 1644 (DECODE R2159, ÖStA HHStA Staatskanzlei Interiora, Chiffrenschlüssel Kt. 20 Fasc. 27 ff. 18-19) — NOTES
 
-**Verdict: read.** The cipher paragraph is a 24-figure alphabet with one polyphonic figure (19 = t or s), groups
+**Verdict: read.** The cipher paragraph is a 24-figure alphabet with no polyphonic figure (19 = s; three places where t is wanted are the writer's slips, per G. Lasry 21 Sept 2026: apparent polyphony is encipherment or transcription error), groups
 delimited by dots, plaintext Italian. All 231 groups read; one spelling is odd (`ogn modo`). *Corrected 22 Sept 2026
 against the DECODE images (§7): the "17 = n" of the first session was ten transcription errors for 14, so 17 is only
 i, `Bogodania` and `non l'habi` are confirmed, and the clear frame names the speaker as Koniecpolski.* Tomokiyo's unsolved page lists the item under "Variable-length
@@ -55,7 +55,7 @@ produce it. It turned out to be the second.
 
 | figure | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 17 | 18 | 19 | 21 | 22 | 23 | 25 | 26 | 32 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| letter | e | g | a | b | f | c | e | d | a | h | l | m | o | n | i | **i / n** | o | **t / s** | r | t | u | u | p | r |
+| letter | e | g | a | b | f | c | e | d | a | h | l | m | o | n | i | **i / n** | o | **s** | r | t | u | u | p | r |
 | count | 7 | 3 | 16 | 3 | 3 | 13 | 10 | 10 | 12 | 6 | 13 | 6 | 13 | 10 | 18 | 24 | 14 | 9 | 14 | 8 | 4 | 7 | 7 | 1 |
 
 Vowels a, e, o, u have two figures each; i has 15 and shares 17 with n; s exists only through 19. Figures 16, 20, 24
@@ -66,7 +66,7 @@ alphabetical and shows no regularity that I can see.
 (a 4 and a 7 are close in seventeenth-century hands), and "19 = s" could be a misread figure for an *s* number that is
 otherwise unused (16, 20, 24, 27–31). Both would turn this into an ordinary homophonic alphabet. Only the DECODE
 images can settle it; the reading is the same either way. **Settled for 17 (22 Sept 2026, §7): every "17 = n" is a
-14 on the page. 17 = i only (14 occurrences), 14 = n (20). 19 stays t/s.**
+14 on the page. 17 = i only (14 occurrences), 14 = n (20). 19 = s; its three t-contexts (Transiuania twice, rivoltare, humiliato) are encipherment slips.**
 
 ## 4. Reading
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Henry of Navarre to Ségur (1585–86) — Solved</title>
-<meta name="description" content="Decipherment of three figure-cipher letters of Henry of Navarre to his envoy Ségur in Germany, BnF 500 de Colbert 401 ff. 233, 239 and 288v (October 1585 to April 1586), listed as unsolved: an alphabetical homophonic alphabet, a seventy-syllable table in alphabetical order, double-letter signs and word-signs, recovered by a structured annealer with matched controls.">
+<title>Henry of Navarre to Ségur, 1585–86</title>
+<meta name="description" content="Three letters of Henry of Navarre to his envoy Ségur in Germany, BnF 500 de Colbert 401 ff. 233, 239 and 288v (October 1585 to April 1586), partly in a numerical cipher and listed on Tomokiyo's page of unsolved ciphers. The key, a homophonic alphabet and a seventy-syllable table both in alphabetical order, with double-letter signs and word signs, was recovered from the ciphertext alone by a solver (simulated annealing) built on that structure and checked on matched controls.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-16">
 <meta name="last-modified" content="2026-09-22">
@@ -40,11 +40,11 @@
 
 <section class="hero">
   <div class="cipherstrip">110 62 46 39 42 · 80 68 9 59 111 86 38<br>65 12 14 47 48 86 2 15 105 22 41 44 38 15 42<br>83 40 18 104 29 65 80 120 15 101 6 50 43 pi 13 69 22 115</div>
-  <p class="kicker">Béarn · alphabetical syllabary cipher · 1585&ndash;86 · solved</p>
+  <p class="kicker">Béarn · numerical cipher: homophonic alphabet and syllable table in alphabetical order · 1585&ndash;86</p>
   <h1>Henry of Navarre to Ségur</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_henri-iv.jpg" alt="Henry of Navarre" title="Henry of Navarre: Portrait by Frans Pourbus the Younger, 1610. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Henry of Navarre</figcaption></figure></div><!-- /parties -->
   <p class="sub">October 1585, February 1586, 1 April 1586 · Bibliothèque nationale de France, Cinq cents de Colbert 401, ff. 233, 239, 288v</p>
-  <p class="sub">Three letters to the envoy negotiating a German army, catalogued as undeciphered letters of Henry III, read from the Gallica images with a structured annealer</p>
+  <p class="sub" data-term-ok>Three letters to the envoy negotiating a German army, listed by Tomokiyo among his unsolved ciphers as letters of Henry III · the key was recovered from the ciphertext alone on the Gallica images, by a solver built on the alphabetical design of the key and checked on matched controls; no earlier decipherment of these three letters was found · the sibling key Tomokiyo reconstructed from f. 321 has different values and was used only for a fourth leaf, f. 333</p>
   <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
 <div class="seal solved" aria-hidden="true"><span>solved</span></div>
 </section>
@@ -56,13 +56,13 @@
 Colbert 401, in a cipher different from the one he reconstructed from the interlinear decipherment at f. 321. The volume is Ségur-Pardaillan&rsquo;s
 <em>négociation pour le roi de Navarre</em> with the German princes, and the three letters of 1585&ndash;86 are signed <em>Henry</em> at Montauban and speak of
 &ldquo;mon frere Mons.r le Prince&rdquo; and of the duke Casimir&rsquo;s levy: they are <strong>Henry of Navarre&rsquo;s</strong>. Their 461 figures fall into two
-ranges. Taken mod 5, the values from 54 up pile into one slot of every five &mdash; the signature of an alphabetical syllable table, <em>ba be bi bo bu, ca ce
-ci co cu &hellip;</em> An annealer built on that structure, with the letters&rsquo; clear French kept as context for a 5-gram model, converged on a key whose
+ranges. Taken mod 5, the values from 54 up pile into one slot of every five, the pattern of an alphabetical syllable table: <em>ba be bi bo bu, ca ce
+ci co cu &hellip;</em> A solver (simulated annealing) built on that structure, with the letters&rsquo; clear French kept as context for a 5-gram model, converged on a key whose
 letter part came out in alphabetical order by itself (a 4&ndash;6, b 7&ndash;8, c 9&ndash;10 &hellip; u 45&ndash;47, x y z 48&ndash;51), and the same procedure recovers
 97&nbsp;% of a matched control. The letters press Ségur to conclude with Duke John Casimir, raise the largest levy possible and march it at once; name Clervant&rsquo;s
 two thousand reiters and ten thousand écus; ask which road the army will take, the Vivarais or Dauphiné; and, in April 1586, confess &ldquo;extreme anxiety&rdquo;
-at having no news. <em>Status: key and text read; a dozen word-signs written in letters (pi, na, gne, H, L &hellip;) and three nomenclature numbers are glossed
-from context or left open. The 1583 letter at f. 143 is in another key of the same design and is not read.</em>
+at having no news. <em>Status: key recovered and the three letters decrypted; a dozen word-signs written in letters (pi, na, gne, H, L &hellip;) and three nomenclature numbers are glossed
+from context or left open. The 1583 letter at f. 143 is in another key of the same design and is not deciphered.</em>
 </div>
 
 <h2 id="document"><span class="num">01</span> The documents</h2>
@@ -80,7 +80,7 @@ f.288v gne 113 22 40 13 29 14 48 43 105 85 93 23 90 65 89 122 24 38 13 45 65 122
 avez toutes choses tellement dispersées en lettres, syllabes, doubles, nulles et tout le reste qu&rsquo;il est impossible de le descouvrir &hellip; Les noms sont
 en lettres et syllabes.&rdquo;</em> Letters, syllables, doubles, nulls, and names written with letter-signs: that is exactly what the 1585&ndash;86 key proves to be.</p>
 
-<h2 id="solving"><span class="num">02</span> Solving</h2>
+<h2 id="solving"><span class="num">02</span> Recovering the key</h2>
 <ol>
 <li><strong>Two ranges.</strong> Values 1&ndash;53 carry 311 tokens, 54&ndash;123 carry 146, and only three exceed 123. Counting the upper range by residue mod 5
 gives 60 &middot; 30 &middot; 22 &middot; 20 &middot; 14 for one alignment and near-flat counts for the other four: blocks of five with one dominant position,
@@ -90,19 +90,19 @@ consonant with the vowel given by position; letter-glyphs are skipped; and the c
 16th-century French 5-gram model (Catherine de M&eacute;dicis&rsquo; letters, Teulet, Labanoff; 9.4 M letters). Moves reassign or swap letter symbols and block
 consonants. Five of twelve seeds converged on one key.</li>
 <li><strong>Controls.</strong> Passages of Catherine de M&eacute;dicis enciphered with random keys of the same shape, the same token counts and the same
-interleaving of clear text. With the table start guessed at 64 the method read one control at 90&nbsp;% and one at 47&nbsp;%; with the true structure (start
-54, fourteen consonants) it reads a control at <strong>96.6&nbsp;% of letter tokens and 12 of 14 blocks</strong>, missing only <em>x</em> and <em>f</em> at one
+interleaving of clear text. With the table start guessed at 64 the method recovered one control at 90&nbsp;% and one at 47&nbsp;%; with the true structure (start
+54, fourteen consonants) it recovers a control at <strong>96.6&nbsp;% of letter tokens and 12 of 14 blocks</strong>, missing only <em>x</em> and <em>f</em> at one
 token each.</li>
 <li><strong>The blind key was already alphabetical.</strong> Without being told so, the annealer put a at 4&ndash;6, b at 7, c at 9&ndash;10, d at 11&ndash;12, e at
 13&ndash;15, g at 18, h at 20&ndash;21, i at 22&ndash;24, l at 26, m at 27&ndash;28, n at 29&ndash;30, o at 31, p at 34&ndash;35, r at 38&ndash;39, s at 40&ndash;42, t at 43&ndash;44
 and u at 45&ndash;47. Against the final key it had 86&nbsp;% of the letter tokens and 77&nbsp;% of the syllables right even with the table start wrong by two
-blocks. The text read <em>capituler et conclure promptement avec ceux que vous adviserez &hellip; le duc Casimir &hellip; faire la levée &hellip; la faire marcher &hellip;
-deux mille reistres &hellip; dix mil escus &hellip; Vivarès ou Daulphiné</em> at once.</li>
-<li><strong>Reading fixed the rest.</strong> <em>et conclure</em> = <code>52 62 29 9 83 105</code>, <em>secours</em> = <code>110 62 46 39 42</code> and <em>le duc
+blocks. The decryption gave <em>capituler et conclure promptement avec ceux que vous adviserez &hellip; le duc Casimir &hellip; faire la levée &hellip; la faire marcher &hellip;
+deux mille reistres &hellip; dix mil escus &hellip; Vivarès ou Daulphiné</em> directly.</li>
+<li><strong>Context fixed the rest.</strong> <em>et conclure</em> = <code>52 62 29 9 83 105</code>, <em>secours</em> = <code>110 62 46 39 42</code> and <em>le duc
 Casimir</em> = <code>80 68 9 59 111 86 38</code> force 62 = <em>co</em>, 59 = <em>ca</em>, 65 = <em>de</em>; <em>bien</em> = <code>56 14 29</code> gives 56 = <em>bi</em>:
 the table begins at 54 with <em>b c d f g l m n p q r s t v</em>. <em>que vous</em> and <em>qu&rsquo;il</em> fix 99&ndash;103 = <em>qua que qui &hellip;</em>; <em>Clervant</em>
 fixes 119 = <em>va</em>; <em>nece□aire</em> makes the square <em>ss</em>, <em>mi2e</em> makes 2 = <em>ll</em>, <em>lev1</em> makes 1 = <em>ée</em>; 52 = <em>et</em>, 53 a
-null. Every digit the French disputed was re-read at twice the working zoom; two were my errors (90 for 40 in <em>les deux</em>, 63 for 65 in <em>de
+null. Every digit the French disputed was re-examined at twice the working zoom; two were my errors (90 for 40 in <em>les deux</em>, 63 for 65 in <em>de
 Clervant</em>), the others stand as written and are noted below.</li>
 </ol>
 
@@ -123,13 +123,13 @@ Clervant</em>), the others stand as written and are noted below.</li>
 </table>
 <p class="muted">Doubles: 1 = <em>ée</em>, 2 = <em>ll</em>, □ = <em>ss</em>, 3 unused here. Word-signs in letters: <code>pi</code> = <em>est</em>, <code>Ra</code> = <em>faictes</em>,
 <code>qu</code> = <em>vous</em>, <code>na</code> = <em>affaires</em> (or <em>nouvelles</em>), <code>gne</code> = <em>Je</em> at the head of f. 288v; <code>gna</code>, <code>pe</code>, <code>pu</code>,
-<code>e</code>, <code>X</code>, <code>gla</code>, <code>H</code>, <code>L</code>, <code>Ne</code>, <code>qua</code> and the numbers 180, 900 unread. The letter counts (three homophones for a e h i o u, two for
+<code>e</code>, <code>X</code>, <code>gla</code>, <code>H</code>, <code>L</code>, <code>Ne</code>, <code>qua</code> and the numbers 180, 900 not identified. The letter counts (three homophones for a e h i o u, two for
 the other consonants, one for g x z) are the design of the volume&rsquo;s other Navarre key at f. 321 (Tomokiyo: a 12&ndash;14, e 20&ndash;23, i 30&ndash;32, syllables 63&ndash;142,
 nomenclature from 162), re-numbered.</p>
 
-<h2 id="reading"><span class="num">04</span> Reading</h2>
+<h2 id="reading"><span class="num">04</span> Decipherment</h2>
 <figure class="creveal" data-src="reveal/segur.json"></figure>
-<p><strong>f. 233, October 1585.</strong> Clear text in roman, cipher in bold, unread signs in braces; an English rendering follows each letter, cipher passages again in bold.</p>
+<p><strong>f. 233, October 1585.</strong> Clear text in roman, cipher in bold, unidentified signs in braces; an English rendering follows each letter, cipher passages again in bold.</p>
 <blockquote>Seulement je vous prieray, si de ça me l&rsquo;avez fait, <strong>{X} capituler et conclure promptement avec ceux que vous adviserez,</strong> s&rsquo;il est
 possible <strong>avec le duc Casimir ou par son consentement, et faire la levée la plus grande et la faire marcher</strong> le plustost que faire se pourra. Car
 pour que quelque <strong>prompt secours</strong> que <strong>est necessaire</strong>, j&rsquo;escry à Mr de Clervant de faire <strong>la levée de deux mille reistres</strong> selon qu&rsquo;il
@@ -153,8 +153,8 @@ luy. Encores que nos ennemys n&rsquo;ayent faict aucun effort contre nous et qu&
 long temps a nous n&rsquo;avons eu nouvelles.</blockquote>
 <blockquote><em><strong>{I} am in extreme anxiety at having had no [word] of your {affairs} since {e}; I do not know {where} {to you} to write, nor to whom, nor in what state our {affairs} stand.</strong> I pray you send me your news, and <strong>make, if it is possible for you, the greatest levy that was ever made. The two thousand reiters that Monsieur de Clervant is bound to furnish</strong> would be very necessary to us, <strong>and even more so in {H} {L}</strong>. I pray you confer with him about it. Although our enemies have made no effort against us, and there is in them more ill will than execution, yet <strong>assistance and succour {qua} are very necessary. Our places are well fortified. {We}</strong> have sent <strong>&hellip; to Valen[ce?]</strong>, from whom we have long had no news. Make, I pray you, always very sure account of the friendship and good will of your most affectionate master and perfect friend, Henry.</em></blockquote>
 <ul>
-<li><code>4 45 23 20</code> (<em>avec</em>) reads <em>a-v-i-h</em>, and 20 recurs where <em>c</em> is wanted in <em>contra-h-te</em> and <em>Valen-h</em>, while
-<em>marcher</em>, <em>chemin</em> and <em>Daulphiné</em> need 20 = <em>h</em> after 9/10 = <em>c</em>. The digits were re-read and stand; the encipherer&rsquo;s slip of one
+<li><code>4 45 23 20</code> (<em>avec</em>) decrypts as <em>a-v-i-h</em>, and 20 recurs where <em>c</em> is wanted in <em>contra-h-te</em> and <em>Valen-h</em>, while
+<em>marcher</em>, <em>chemin</em> and <em>Daulphiné</em> need 20 = <em>h</em> after 9/10 = <em>c</em>. The digits were re-examined and stand; the encipherer&rsquo;s slip of one
 line in the key table (10 → 20) is the simplest account.</li>
 <li><em>e-v-c-ri-re</em> for <em>escrire</em> (46 for an <em>s</em>), <em>nu-i-ne</em> for <em>peine</em> (93 for 95), <em>e-m-li-se-s</em> for <em>Eglises</em> (28 for 18)
 and <em>pie-be-s</em> for <em>pieces</em> (66 for 60/61) are each one adjacent-value error, mine or the clerk&rsquo;s.</li>
@@ -163,15 +163,15 @@ est obligé</em>.</li>
 </ul>
 
 <h3>The rest of the volume, f. 333 and f. 366 (added later on 16 September 2026)</h3>
-<p>All 440 canvases of the volume were fetched and read on contact sheets. Cipher occurs on six leaves only: the four above, Tomokiyo&rsquo;s
+<p>All 440 canvases of the volume were fetched and examined on contact sheets. Cipher occurs on six leaves only: the four above, Tomokiyo&rsquo;s
 ff. 321 and 333, and one leaf not on his list, <strong>f. 366</strong>, an autograph of Navarre to S&eacute;gur from the autumn of 1586 (<em>on a fait avancer l&rsquo;arm&eacute;e
 et les forces contre moy &hellip; d&rsquo;user de toute la diligence que vous pourrez pour effectuer ce dont je vous ay charg&eacute;</em>) with three short cipher
-lines at its foot. Its low figures and a letter-written sign <em>gu</em> put it in the ff. 233 key; the last line reads <em>escri</em>, the first two
+lines at its foot. Its low figures and a letter-written sign <em>gu</em> put it in the ff. 233 key; the last line decrypts as <em>escri</em>, the first two
 (<em>ri-e-c-h-a-v-f-fe-n</em>, <em>re-de-du-pi-n gu la-que</em>) look like names in the king&rsquo;s own spelling and are left open. There is no further
 secretary letter in this key in the volume, so the word-signs stay unglossed. Nine other letters of Navarre in the volume are in clear.</p>
-<p><strong>f. 333</strong> (La Rochelle, 10 July 1586, a news-sheet in the third person signed <em>Henry</em>) was transcribed and read with Tomokiyo&rsquo;s f. 321
+<p><strong>f. 333</strong> (La Rochelle, 10 July 1586, a news-sheet in the third person signed <em>Henry</em>) was transcribed and decrypted with Tomokiyo&rsquo;s f. 321
 table: <em>aussi tost que les reistres marcheront il montera &agrave; cheval; [&hellip;] et son frere sont de bonne volont&eacute;; il fault avancer la lev&eacute;e et la
-faire marcher le plustost qu&rsquo;on pourra</em>. The reading adds 24 = f, 34 = l, 36 = m and 61 = et to his table, and shows that key to be the ff. 233
+faire marcher le plustost qu&rsquo;on pourra</em>. The decryption adds 24 = f, 34 = l, 36 = m and 61 = et to his table, and shows that key to be the ff. 233
 key shifted by eight in the letters (a 12&ndash;14 &hellip; u 53&ndash;55, et 60&ndash;62) with <em>h</em> and <em>j</em> rows added to the syllabary. The free annealer on
 f. 333 alone (58 letter tokens) did not converge, and neither did it on a matched control of that size; but an annealer that builds in the chancery design itself (homophones in alphabetical order, so the letter key is a vector of homophone counts) re-derives the f. 333 letter key blind, every seed agreeing, with 93&nbsp;% of the letter tokens right against Tomokiyo&rsquo;s table (90&nbsp;% on a matched alphabetical control), the syllable rows being the weak part at that size; the key rests on the f. 321 interlinear decipherment and on the French it yields here. f. 321
 itself has every figure struck through by the decipherer and was not re-transcribed.</p>
@@ -181,7 +181,7 @@ itself has every figure struck through by the decipherer and was not re-transcri
 colleague for the German levy; Duke John Casimir of the Palatinate was the prince through whom Huguenot armies of reiters had been raised since 1567.
 Navarre&rsquo;s October 1585 letter follows the bull of 9 September excommunicating him and the summer campaign that cost him most of his Guyenne places;
 the &ldquo;contract with the Churches&rdquo; and Clervant&rsquo;s two thousand reiters refer to the standing obligation under which the Huguenot assemblies financed
-the German horse, and the ten thousand écus from [180] is most naturally the English subsidy (an inference, not a reading). The February and April 1586 letters
+the German horse, and the ten thousand écus from [180] is most naturally the English subsidy (an inference, not a decryption). The February and April 1586 letters
 belong to the long wait for the army that was finally assembled in 1587 under the baron of Dohna and destroyed at Auneau. The postscript&rsquo;s
 <em>Drak</em> is Drake&rsquo;s West Indies voyage: Santo Domingo fell on 1 January 1586, and the news reached France in February.</p>
 
@@ -195,7 +195,7 @@ belong to the long wait for the army that was finally assembled in 1587 under th
 <li>Sweep of the volume (<code>fetch_sweep.py</code>, <code>mksheets.py</code>); f. 333 and f. 366 transcriptions (<code>ct_333.txt</code>, <code>ct_366.txt</code>); Tomokiyo&rsquo;s table extended (<code>key_321.json</code>); design-constrained annealer and controls (<code>solve_mono.py</code>, <code>control5.txt</code>); word-sign likelihood ranking (<code>gloss_check.py</code>, <code>gloss_check.txt</code>).</li>
 </ol>
 <p class="muted">Checked: transcription, structure test, three controls, convergence over seeds, alphabetical order of the recovered key, word-level French
-of every passage. Not checked: Tomokiyo&rsquo;s f. 321 table figure by figure against the struck-through leaf; the word-signs; the historical glosses; the second S&eacute;gur volume (500 Colbert 402, not digitised); BnF fr. 17820 is an eighteenth-century fair copy in clear. The sender attribution and the readings marked
+of every passage. Not checked: Tomokiyo&rsquo;s f. 321 table figure by figure against the struck-through leaf; the word-signs; the historical glosses; the second S&eacute;gur volume (500 Colbert 402, not digitised); BnF fr. 17820 is an eighteenth-century fair copy in clear. The sender attribution and the decryptions marked
 [?] should be verified before they are repeated.</p>
 
 <!-- replay:start -->
@@ -205,7 +205,7 @@ of every passage. Not checked: Tomokiyo&rsquo;s f. 321 table figure by figure ag
 <ul>
 <li>BnF, Cinq cents de Colbert 401, <em>Négociation de M. de Segur, baron de Pardaillan, pour le roi de Navarre avec les Princes protestans d&rsquo;Allemagne,
 1584&ndash;1588, I</em>, <a href="https://gallica.bnf.fr/ark:/12148/btv1b10035574w">Gallica</a>.</li>
-<li>S. Tomokiyo, &ldquo;Henry III&rsquo;s Figure Ciphers&rdquo; and &ldquo;Different Version&rdquo; in <a href="https://cryptiana.web.fc2.com/code/henryiii.htm">French Ciphers during
+<li data-term-ok>S. Tomokiyo, &ldquo;Henry III&rsquo;s Figure Ciphers&rdquo; and &ldquo;Different Version&rdquo; in <a href="https://cryptiana.web.fc2.com/code/henryiii.htm">French Ciphers during
 the Reign of Henry III</a>; &ldquo;Unsolved Historical Ciphers&rdquo; (<a href="https://cryptiana.web.fc2.com/code/unsolved.htm">cryptiana</a>).</li>
 <li>Paul Destray&rsquo;s and La Ferrière&rsquo;s editions used for the French language model are listed in <code>ducroc/NOTES.md</code>.</li>
 </ul>

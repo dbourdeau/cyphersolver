@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alessandrino to the nuncio in Spain (1568–69) — Read</title>
-<meta name="description" content="Eleven ciphered letters of Cardinal Michele Bonelli (Alessandrino), Pius V&rsquo;s nephew and secretary, to the nuncio at Madrid, 1568&ndash;69 (Archivio Apostolico Vaticano, Segreteria di Stato, Spagna 6/I and 6/II; DECODE R93&ndash;R102, R115). George Lasry&rsquo;s reconstructed polyphonic key, in which every digit stands for two letters, was applied to DECODE&rsquo;s transcriptions with a language-model decoder: all eleven read end to end. They cover a French bride for Philip II, the fight over ecclesiastical jurisdiction, Bolognese exiles, the Turk and the German Protestants, and Borromeo against the Milan senate.">
+<title>Cardinal Alessandrino to the nuncio in Spain, 1568–69</title>
+<meta name="description" content="Eleven ciphered letters of Cardinal Michele Bonelli (Alessandrino), Pius V&rsquo;s nephew and secretary, to the nuncio at Madrid, 1568&ndash;69 (Archivio Apostolico Vaticano, Segreteria di Stato, Spagna 6/I and 6/II; DECODE R93&ndash;R102, R115). George Lasry&rsquo;s reconstructed key is polyphonic: every digit stands for two letters, so decryption is ambiguous. It was applied to DECODE&rsquo;s transcriptions, with the letter for each digit chosen by a search scored with a language model of 16th-century Italian; all eleven were decrypted end to end. They cover a French bride for Philip II, the fight over ecclesiastical jurisdiction, Bolognese exiles, the Turk and the German Protestants, and Borromeo against the Milan senate.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-21">
 <meta name="last-modified" content="2026-09-22">
@@ -40,11 +40,11 @@
 
 <section class="hero">
   <div class="cipherstrip">7 2 8 6 7 8 4 1 5 &middot; 5 0 9 0 &middot; 7 4 4 4 8 1 6 2 &middot; &hellip; &middot; 1 0 5 0<br>ricercato [qui] da alcuni &hellip; [Francia]<br>1 = u|t &middot; 2 = i|m &middot; 4 = a|l &middot; 6 = e|n &middot; 7 = d|r &middot; 8 = b|c &middot; 0 = null &middot; 5090 = qui &middot; 1050 = Francia</div>
-  <p class="kicker">Rome &rarr; Madrid &middot; polyphonic cipher, two letters to a digit &middot; 1568&ndash;69 &middot; read</p>
+  <p class="kicker">Rome &rarr; Madrid &middot; polyphonic cipher, two letters to a digit &middot; 1568&ndash;69</p>
   <h1>Cardinal Alessandrino to the nuncio in Spain, 1568&ndash;69</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-alessandrino.jpg" alt="Cardinal Alessandrino" title="Cardinal Alessandrino: Portrait by Scipione Pulzone, 1586. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Alessandrino</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_g-b-castagna.jpg" alt="G. B. Castagna" title="G. B. Castagna: Portrait as Urban VII, Jacopo del Conte. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>G. B. Castagna</figcaption></figure></div><!-- /parties -->
   <p class="sub">Archivio Apostolico Vaticano, Segreteria di Stato, Spagna 6/I items 1&ndash;10 and 6/II item 13 &middot; DECODE R93&ndash;R102, R115, eleven ciphertexts, fifteen pages &middot; catalogued as partially decrypted</p>
-  <p class="sub">George Lasry&rsquo;s reconstructed key, applied with a decoder that picks one of each digit&rsquo;s two letters &middot; all eleven read end to end</p>
+  <p class="sub">George Lasry&rsquo;s key (2020, on the DECODE records) was applied. Because it is polyphonic, the decryption is ambiguous: for every digit one of two letters has to be chosen, and the work here is making those choices well, with a search scored by a language model of 16th-century Italian &middot; all eleven decrypted end to end &middot; Lasry posted no plaintext with the key</p>
   <p class="meta">Daniel Bourdeau &middot; read <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
 <div class="seal solved" aria-hidden="true"><span>read</span></div>
 </section>
@@ -57,8 +57,8 @@ nuncio at Madrid, Giovan Battista Castagna, sent their sensitive passages in fig
 (6/II) are on DECODE, transcribed digit by digit, with a key George Lasry reconstructed in 2020 but no plaintext; the catalogue here listed
 them as open. The system is polyphonic: every digit from 1 to 9 stands for two letters (1 is <i>u</i> or <i>t</i>, 4 is <i>a</i> or <i>l</i>), 0 is a
 null, and a small nomenclator is written in four-digit groups with zeros in second and fourth place. A digit therefore does not say which
-letter it is; the reader has to choose. A beam search that makes that choice under an Italian model of the period gives running
-Italian at once, on all eleven. <strong>What they say:</strong> an approach, through friends of the French crown, to marry Philip II to one of
+letter it is; the reader has to choose. A search that makes that choice, scored with a language model of 16th-century Italian, gives continuous
+Italian on all eleven. <strong>What they say:</strong> an approach, through friends of the French crown, to marry Philip II to one of
 the French King&rsquo;s daughters; the Pope&rsquo;s complaints about the King&rsquo;s ministers and ecclesiastical jurisdiction; the Bolognese exiles
 sheltered in the King&rsquo;s lands; the Turk at Adrianople courted by the German Protestants; Cardinal Borromeo&rsquo;s quarrel with the senate
 of Milan over the Corpus Domini procession. What stays open is a few dotted groups outside Lasry&rsquo;s list, single-letter choices, and the
@@ -115,9 +115,9 @@ vicar and the Corpus Domini procession; the Pope &ldquo;pensa di procedere&rdquo
 
 <h2 id="method"><span class="num">04</span> Method</h2>
 <p>Each digit 1&ndash;9 gives two letters and 0 nothing, but a group X0Y0 may be a nomenclator word or two letters with their nulls.
-The decoder (<code>alessandrino1568/decrypt.py</code>) runs a beam search over the page, at each digit trying both letters, the null, and
+The decoder (<code>alessandrino1568/decrypt.py</code>) works through the page keeping the best few partial decryptions at each step; at each digit it tries both letters, the null, and
 any nomenclator group that starts there, and scores the resulting Italian with the repository&rsquo;s shared five-gram model (it-cinquecento,
-spaces removed). The same code, with a different key table, read the Morosini ciphers of 1588&ndash;89. Every page decodes at about &minus;1.75
+spaces removed). The same code, with a different key table, decrypted the Morosini ciphers of 1588&ndash;89. Every page decodes at about &minus;1.75
 nats a letter, the level of ordinary text for this model, and ends in a few letters of clerk&rsquo;s padding.</p>
 
 <h2 id="uncertain"><span class="num">05</span> What remains uncertain</h2>

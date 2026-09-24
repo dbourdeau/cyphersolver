@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Richelieu's Cipher to M. de Rancé (July 1629) — Reconstruction and Verification</title>
-<meta name="description" content="Ciphertext-only reconstruction of the homophonic cipher used by Cardinal Richelieu in two letters to Denis Bouthillier de Rancé (BnF Français 3829, ff. 87 & 89), and its verification against Avenel's 1858 edition.">
+<title>Cardinal Richelieu to Denis Bouthillier de Rancé, July 1629</title>
+<meta name="description" content="Two letters from Cardinal Richelieu to Denis Bouthillier de Rancé (BnF Français 3829, ff. 87 and 89) in a homophonic cipher with a small nomenclator. The key was recovered from cribs in the adjacent cleartext; the result agrees with the decipherment Avenel printed in 1858, found afterwards.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-14">
 <meta name="last-modified" content="2026-09-21">
@@ -40,11 +40,11 @@
 
 <section class="hero">
   <div class="cipherstrip">11 16 19 ~25 29 10<br>14 19 24 11 29 ~25 34 20 27<br>40 16 37 24 27</div>
-  <p class="kicker">France · homophonic cipher · 1629 · solved (confirmed by Avenel 1858)</p>
-  <h1>Richelieu's Cipher to Monsieur de Rancé</h1>
+  <p class="kicker">France · homophonic cipher with nomenclator · 1629</p>
+  <h1>Richelieu to Monsieur de Rancé</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_cardinal-richelieu.jpg" alt="Cardinal Richelieu" title="Cardinal Richelieu: Portrait by Philippe de Champaigne, 1633–40. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Cardinal Richelieu</figcaption></figure></div><!-- /parties -->
   <p class="sub">July 1629 · Bibliothèque nationale de France, Français 3829, ff. 87 and 89</p>
-  <p class="sub">A ciphertext-only reconstruction — and its confirmation against a decipherment printed in 1858</p>
+  <p class="sub">Key recovered from cribs beside the clear words of the same letters, then checked against the decipherment Avenel printed in 1858</p>
   <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-14">14 September 2026</time> &middot; updated <time datetime="2026-09-21">21 September 2026</time></p>
 <div class="seal solved" aria-hidden="true"><span>solved</span></div>
 </section>
@@ -53,20 +53,19 @@
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#system">The cipher system</a><a href="#decipherment">Decipherment</a><a href="#method">Method</a><a href="#verification">Verification: Avenel, 1858</a><a href="#try">Try the key</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Two partly enciphered letters from Cardinal Richelieu to Denis Bouthillier de Rancé, written in
-July 1629, are listed as undeciphered in the current reference catalogues of historical ciphers (S. Tomokiyo's
-<em>Unsolved Historical Ciphers</em>; the DECRYPT project's DECODE database, records R9461–R9462).
-Working only from a published transcription, the substitution alphabet, its vowel homophones, a doubling
-mark and two word-codes were recovered by statistical cryptanalysis plus cribs. A literature search made afterwards
-showed that D.-L.-M. Avenel had already printed both letters <em>with</em> their decipherment in 1858, having
-reconstructed the key from other archival documents. The independent reconstruction agrees with Avenel's reading
-in every word. The cipher is therefore <strong>solved, but not newly solved</strong>; this page documents the
-key, the method, and the correction to the catalogues.
+July 1629, are listed without a decipherment in the current reference catalogues (S. Tomokiyo's
+<em>Unsolved Historical Ciphers</em>; the DECODE database, records R9461–R9462). D.-L.-M. Avenel had printed both letters
+with their decipherment in 1858, having rebuilt the key from other archival documents; this edition was found only after the work
+below. Working from Tomokiyo's published transcription, the key (a homophonic alphabet, a doubling mark and two word codes) was
+recovered with a solver (simulated annealing on French quadgrams) and cribs placed beside the clear words of the same letters.
+The result agrees with Avenel's 1858 decipherment in every ciphered word. The text was already known; the interest of this page is the
+method, the key set out as a table (Avenel printed none), and the correction to the catalogues.
 </div>
 
 <h2 id="documents"><span class="num">01</span> The documents</h2>
 <p>BnF Français 3829 (formerly Béthune 9323) is a volume of original letters from 1629–1630, mostly from Louis XIII,
 Richelieu and Gaston d'Orléans to the Queen Mother, Marie de Médicis. Items 37 and 38 are letters from Richelieu
-"à monsieur de Rancé" — Denis Bouthillier, sieur de Rancé, councillor of state and secretary to the Queen Mother,
+"à monsieur de Rancé": Denis Bouthillier, sieur de Rancé, councillor of state and secretary to the Queen Mother,
 and Richelieu's trusted man in her household. Item 37 is dated Saint-Privat, 7 July 1629; item 38 is undated
 (Avenel places it in mid-July). Both were written days after the Peace of Alès ended the Huguenot war, while the
 King and the Cardinal were touring the submitting towns of Languedoc.</p>
@@ -96,7 +95,7 @@ makes the table easy to memorise. 33 does not occur in these two letters but is 
 
 <h3>2.3 The diacritic: a doubling mark</h3>
 <p>A tilde or stroke over a figure doubles the letter: <span class="mono">~14</span> = ll, <span class="mono">~22</span> = nn,
-<span class="mono">~25</span> = ss, <span class="mono">~30</span> = ee — as in d'e<b>ll</b>e, bo<b>nn</b>e, do<b>nn</b>er, Bra<b>ss</b>ac,
+<span class="mono">~25</span> = ss, <span class="mono">~30</span> = ee, as in d'e<b>ll</b>e, bo<b>nn</b>e, do<b>nn</b>er, Bra<b>ss</b>ac,
 amba<b>ss</b>ade, maistre<b>ss</b>e, amen<b>ée</b>.</p>
 
 <h3>2.4 Word codes and nomenclature (40 and above)</h3>
@@ -117,7 +116,7 @@ neighbouring letters in the same cipher.</p>
 <figure class="creveal" data-src="reveal/richelieu.json"></figure>
 <p class="legend"><span><span class="c">Red</span> = was in cipher</span><span><span class="k">Blue</span> = nomenclature code</span><span>Plain = in clear in the original</span></p>
 
-<h3>3.1 Letter of 7 July 1629 (f. 87) — French</h3>
+<h3>3.1 Letter of 7 July 1629 (f. 87), French</h3>
 <blockquote>
 <span class="k">[Le Roi]</span> est fort en colère de l'action <span class="c">de Boneuil</span>. Il remet à <span class="k">[la Reine mère]</span>
 <span class="c">de le chasser</span>, comme elle l'estimera à propos; si l'affaire est certaine, il mériteroit <span class="c">pis</span>.<br><br>
@@ -140,7 +139,7 @@ faict. Et si <span class="k">[l'Espagne]</span> s'en plaint, il faut dire qu'on 
 contre sa parole donnée, il a fait entrer les Allemands en Italie.
 </blockquote>
 
-<h3>3.2 Letter of 7 July 1629 — English</h3>
+<h3>3.2 Letter of 7 July 1629, English</h3>
 <blockquote>
 <span class="k">[The King]</span> is very angry about the action of <span class="c">Boneuil</span>. He leaves it to <span class="k">[the Queen Mother]</span>
 <span class="c">to drive him out</span>, as she sees fit; if the matter is certain, he would deserve <span class="c">worse</span>.<br><br>
@@ -163,7 +162,7 @@ to those gentlemen, and made plain to them, that this is a very particular favou
 word, he had let the Germans into Italy.
 </blockquote>
 
-<h3>3.3 Letter "pour M. de Rancé", mid-July 1629 (f. 89) — French</h3>
+<h3>3.3 Letter "pour M. de Rancé", mid-July 1629 (f. 89), French</h3>
 <blockquote>
 Nous sommes en peine de quoy <span class="c">la paix de</span> <span class="k">[l'Angleterre]</span> ne s'achève point; mandez-nous si l'on n'en a
 point de nouvelles.<br><br>
@@ -191,7 +190,7 @@ que j'ai faite <span class="c">au roy</span> de luy, en ceste occasion, et que s
 <span class="c">des meubles</span> qui luy sont nécessaires pour cet <span class="c">ambassade</span>.
 </blockquote>
 
-<h3>3.4 Letter "pour M. de Rancé" — English</h3>
+<h3>3.4 Letter "pour M. de Rancé", English</h3>
 <blockquote>
 We are troubled that <span class="c">the peace with</span> <span class="k">[England]</span> is not being concluded; let us know whether there is any news of it.<br><br>
 <span class="k">[The King]</span> is of the opinion that <span class="k">[the Queen Mother]</span> should prepare an army for <span class="c">Champagne of ten thousand</span>
@@ -218,13 +217,13 @@ need for this <span class="c">embassy</span>.
 </blockquote>
 
 <h3>3.5 Historical context</h3>
-<p>The ciphered items are exactly the sensitive ones. The Duchesse de Chevreuse — the court's most dangerous intriguer, then in
-Lorraine and in contact with Spain — was to be seized at the border and shut up in the château of Vincennes, out of sight. The
+<p>The ciphered items are the sensitive ones. The Duchesse de Chevreuse, the court's most dangerous intriguer, then in
+Lorraine and in contact with Spain, was to be seized at the border and shut up in the château of Vincennes, out of sight. The
 Anglo-French peace (signed at Susa, 24 April 1629) was stalling over Charles I's treatment of his French queen Henrietta Maria,
-whose Catholic household he had expelled in 1626; Richelieu wants the Queen Mother to reassure her daughter — by a "secret" letter
-or through the queen's maître d'hôtel Vantelet, which he fully expects to leak — that France will not press to reinstall a large
+whose Catholic household he had expelled in 1626; Richelieu wants the Queen Mother to reassure her daughter, by a "secret" letter
+or through the queen's maître d'hôtel Vantelet (which he expects to leak), that France will not press to reinstall a large
 French entourage beyond the agreed bishop and priests. Finally, Jean de Galard de Béarn, comte de Brassac, is proposed for the
-Rome embassy; he did in fact take up the post in 1630, an external check on the reading.</p>
+Rome embassy; he took up the post in 1630, an external check on the decipherment.</p>
 
 <h2 id="method"><span class="num">04</span> Method</h2>
 <ol>
@@ -233,19 +232,19 @@ whole-word codes and used as context breaks; cleartext words adjacent to cipher 
 <li><strong>Language model.</strong> French letter quadgram statistics were built from ~1.8 million characters of Project Gutenberg
 text (Sévigné, Retz, Pascal, Corneille, Dumas), normalised to a 22-letter alphabet with <em>j→i</em>, <em>v→u</em> and accents removed.</li>
 <li><strong>Search.</strong> Simulated annealing over the symbol→letter map, scored by quadgram log-probability plus a unigram-frequency
-penalty (needed because an unconstrained homophonic search collapses onto <em>e/s/r/t</em>). An early, wrong constraint — forcing
-10–31 to be a bijection with the alphabet — nevertheless produced readable fragments (<em>LA</em>{58}, <em>TRES</em>, <em>UNE</em>,
+penalty (needed because an unconstrained homophonic search collapses onto <em>e/s/r/t</em>). An early, wrong constraint (forcing
+10–31 to be a bijection with the alphabet) still produced readable fragments (<em>LA</em>{58}, <em>TRES</em>, <em>UNE</em>,
 <em>FRANC…</em>).</li>
 <li><strong>Cribs.</strong> From those fragments: <em>d'autres</em> (fixing d a u t r e s and exposing 30 as a second <em>e</em>);
 <em>d'elle … elle</em> (revealing the doubling mark); then <em>Brassac</em> and <em>l'ambassade</em> after "Mr de" and "pour".
-With those fixed, every remaining letter fell out of <em>huit cens, la paix, esprits, secrète, se face, Vincennes, frontière, Bonneuil</em>.</li>
+With those fixed, every remaining letter was fixed from <em>huit cens, la paix, esprits, secrète, se face, Vincennes, frontière, Bonneuil</em>.</li>
 <li><strong>Structure.</strong> The recovered values showed 10–28 to be a complete 19-letter alphabet and 29–38 two <em>a-e-i-o-u</em>
 cycles; 33 = <em>u</em> was predicted from the pattern before being confirmed.</li>
 </ol>
 
 <h2 id="verification"><span class="num">05</span> Verification: Avenel, 1858</h2>
-<p>While searching for the meaning of the nomenclature codes, the letters were found already printed — with cipher numbers and
-footnote decipherments — in <em>Lettres, instructions diplomatiques et papiers d'État du cardinal de Richelieu</em>, ed. D.-L.-M. Avenel,
+<p>While searching for the meaning of the nomenclature codes, the letters were found already printed, with cipher numbers and
+footnote decipherments, in <em>Lettres, instructions diplomatiques et papiers d'État du cardinal de Richelieu</em>, ed. D.-L.-M. Avenel,
 vol. III (Paris, 1858): no. CXCIX, pp. 368–369 (f. 87) and no. CCV, pp. 381–383 (f. 89). Avenel writes (p. 262, n. 2) that he did not find
 the key among the Béthune manuscripts "mais nous l'avons recomposé à l'aide de documents que nous avons trouvés aux archives des
 Affaires étrangères".</p>

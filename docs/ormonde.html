@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Maltravers–Ormonde Cipher (1634–35) — Solved</title>
-<meta name="description" content="Recovery of the numerical cipher used by Lord Maltravers in two letters to the Earl of Ormonde, 1634–35 (HMC Ormonde MSS i.28): a regular block alphabet with nulls 91–111 and a small nomenclator; the spelled words read and the nomenclator is confirmed against Wentworth's dispatches in Knowler's Strafforde's Letters (1739).">
+<title>Lord Maltravers to the Earl of Ormonde, 1634–35</title>
+<meta name="description" content="Two letters from Lord Maltravers to the Earl of Ormonde, 1634–35 (HMC Ormonde MSS i.28), with 59 figures of a numerical cipher: a regular alphabet in blocks of three figures, nulls 91–111 and a small nomenclator. The key was recovered from the adjacent cleartext; the nomenclator codes were identified from Wentworth's dispatches in Knowler's Strafforde's Letters (1739).">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-15">
 <meta name="last-modified" content="2026-09-22">
@@ -40,11 +40,11 @@
 
 <section class="hero">
   <div class="cipherstrip">65 · 35 · 21 · 26 · 59<br>28 · 69 · 49 · 50 · 70 · 44<br>11 · 79 · 85 · 35 · 12 · 69 · 28 · 29 · 79 · 44</div>
-  <p class="kicker">Ireland / England · nomenclator · 1634–35 · solved</p>
+  <p class="kicker">Ireland / England · numerical cipher with nomenclator · 1634–35</p>
   <h1>Lord Maltravers to the Earl of Ormonde</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_lord-maltravers.jpg" alt="Lord Maltravers" title="Lord Maltravers: Engraving after Anthony van Dyck. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Lord Maltravers</figcaption></figure><span class="arrow" aria-hidden="true">&rarr;</span><figure class="party recipient"><img src="portrait_earl-of-ormonde.jpg" alt="Earl of Ormonde" title="Earl of Ormonde: Portrait by Willem Wissing, c. 1680–85. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Earl of Ormonde</figcaption></figure></div><!-- /parties -->
   <p class="sub">Dorking, 13 September 1634 and Whitehall, 22 January 1634/5 · HMC, <em>Calendar of the Manuscripts of the Marquess of Ormonde</em>, i (1895), pp. 28–29</p>
-  <p class="sub">The letter alphabet, its nulls and the layout of the key recovered from 59 printed figures; the nomenclator then confirmed clause for clause against Wentworth&rsquo;s own dispatches</p>
+  <p class="sub">The letter alphabet, the nulls and the layout of the key were recovered from 59 printed figures and the cleartext around them; seven nomenclator codes were then identified from Wentworth&rsquo;s own dispatches</p>
   <p class="meta">Daniel Bourdeau &middot; solved <time datetime="2026-09-15">15 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
 <div class="seal solved" aria-hidden="true"><span>solved</span></div>
 </section>
@@ -53,26 +53,29 @@
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#structure">Structure</a><a href="#key">The key</a><a href="#reading">Reading</a><a href="#knowler">The check against Knowler</a><a href="#residuals">What remains uncertain</a><a href="#method">Method</a><a href="#try">Try the key</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Two letters from Henry Frederick Howard, Lord Maltravers, to James Butler, Earl (later Duke) of Ormonde, contain
-59 figures of a numerical cipher, printed undeciphered by the Historical Manuscripts Commission in 1895 and listed as unsolved by
-S. Tomokiyo. The figures divide cleanly into letters (below 91), nulls (91–111) and a small nomenclator (112 and above). The doubled
-letters in <em>letters</em> and <em>councellor</em> are written with <em>consecutive</em> figures, which betrays a regular key: consonants in alphabetical
-order, three figures each from 7, vowels from 64. With it every spelled word reads — <span class="c">angry</span>, <span class="c">letters</span>,
-<span class="c">Crosby</span>, <span class="c">a councellor</span> — and the nomenclator falls into place from the history of the 1634 Irish Parliament:
-Kildare came to England "because he was angry [with] the Lord Deputy, [and the King] refused to see him because he brought no letters
-from the Lord Deputy"; and in January 1635 "the Lord Deputy hath written … much in praise of Ormonde … for his good carriage in
-Parliament, and upon his motion Ormonde is to be a councellor" — Ormonde was sworn of the Irish Privy Council that month. Wentworth&rsquo;s own
-dispatches, printed by Knowler in 1739, describe both events in the same terms: the King &ldquo;refuseth to admit&rdquo; Kildare, and Ormonde is
-moved for the Council &ldquo;in exchange&rdquo; for Sir Piers Crosby, with the warrant to swear him sent back in the margin.
-<em>Status: solved. Seven of the nine nomenclator codes are fixed by the documents; the two parties in one clause about Crosby (185, 149) are not.</em>
+59 figures of a numerical cipher. The Historical Manuscripts Commission printed them without a decipherment in 1895, and S. Tomokiyo lists them
+among ciphers with no known solution; no key or decipherment was found in print. The key was recovered from the cleartext around the figures.
+The cipher is easy for four reasons. The key is regular: consonants in alphabetical order, three figures each from 7, vowels from 64, so the
+homophones of a letter are consecutive figures. The same design is known from other ciphers of Wentworth&rsquo;s circle. The letters are printed
+in full, so the cleartext before and after each ciphered passage gives cribs. And Wentworth&rsquo;s dispatches, printed by Knowler in 1739,
+describe the same events in plaintext. The figures divide into letters (below 91), nulls (91–111) and a small nomenclator (112 and above);
+the doubled letters in <em>letters</em> and <em>councellor</em> are written with consecutive figures, which shows the block layout. Every spelled
+word decrypts (<span class="c">angry</span>, <span class="c">letters</span>, <span class="c">Crosby</span>, <span class="c">a councellor</span>), and the
+nomenclator codes follow from the history of the 1634 Irish Parliament: Kildare came to England "because he was angry [with] the Lord Deputy,
+[and the King] refused to see him because he brought no letters from the Lord Deputy"; and in January 1635 "the Lord Deputy hath written … much
+in praise of Ormonde … for his good carriage in Parliament, and upon his motion Ormonde is to be a councellor". Ormonde was sworn of the Irish
+Privy Council that month. Knowler&rsquo;s text describes both events in the same terms: the King &ldquo;refuseth to admit&rdquo; Kildare, and
+Ormonde is proposed for the Council &ldquo;in exchange&rdquo; for Sir Piers Crosby, with the warrant to swear him sent back in the margin.
+<em>Extent: every spelled word deciphered. Seven of the nine nomenclator codes are identified from the documents; the two parties in one clause about Crosby (185, 149) are not.</em>
 </div>
 
 <h2 id="documents"><span class="num">01</span> The documents</h2>
 <p>Maltravers (1608–1652), heir of the Earl of Arundel, sat in the Irish Parliament of 1634 and was a friend and correspondent of the young
-Earl of Ormonde. His letters from England report court news; the sensitive parts — the quarrel between the Earl of Kildare and the
-Lord Deputy, Wentworth, and what was being written about Ormonde himself — are in figures. The originals are in the Ormonde papers
+Earl of Ormonde. His letters from England report court news; the sensitive parts (the quarrel between the Earl of Kildare and the
+Lord Deputy, Wentworth, and what was being written about Ormonde himself) are in figures. The originals are in the Ormonde papers
 (now National Library of Ireland); the only witness online is the HMC calendar, whose figures were checked against the page scans.</p>
 <figure data-credit="Historical Manuscripts Commission, Calendar of the Manuscripts of the Marquess of Ormonde, old series i (1895), p. 28, via the Internet Archive (calmarqormonde01greauoft)"><img src="ormonde_p28.jpg" alt="HMC Ormonde MSS vol. i p. 28, with the cipher figures of the letter of 13 September 1634">
-<figcaption>HMC Ormonde MSS, old series i (1895), p. 28 — the letter of 13 September 1634. <span class="credit">Image: Historical Manuscripts Commission, Calendar of the Manuscripts of the Marquess of Ormonde, old series i (1895), p. 28, via the Internet Archive (calmarqormonde01greauoft).</span></figcaption></figure>
+<figcaption>HMC Ormonde MSS, old series i (1895), p. 28: the letter of 13 September 1634. <span class="credit">Image: Historical Manuscripts Commission, Calendar of the Manuscripts of the Marquess of Ormonde, old series i (1895), p. 28, via the Internet Archive (calmarqormonde01greauoft).</span></figcaption></figure>
 <pre>13 Sept 1634:   ...he came over because he was 65, 35, 21, 26, 59, 98, 113, 186, 108, 143, refused to see him
                 because he brought no 28, 69, 49, 50, 70, 44, 89, from 186, 99.
 22 Jan 1634/5:  You desire to know what 93, 185, 95, hath written unto 99, 149, concerning 98, 10, 44, 79, 47, 8, 59,
@@ -95,8 +98,8 @@ notes the same "three or six figures to each letter in regular arrangement").</l
 
 <h2 id="key"><span class="num">03</span> The key</h2>
 <p>Three cribs fix the grid. "brought no <code>28 69 49 50 70 44 89</code>" must be <em>letters</em>; "is to be <code>64</code> [null] <code>11 79 85 35 12 69 28 29 79 44</code>"
-gives <em>a councellor</em>; "concerning <code>10 44 79 47 8 59</code>, for whom 270 thus hereafter" — the man whose fortunes were about to "go worser" in
-January 1635 — is <em>Crosby</em> (Sir Piers Crosby, purged from the Irish Council by Wentworth that winter). All three fit one arrangement, and an
+gives <em>a councellor</em>; "concerning <code>10 44 79 47 8 59</code>, for whom 270 thus hereafter", the man whose fortunes were about to "go worser" in
+January 1635, is <em>Crosby</em> (Sir Piers Crosby, purged from the Irish Council by Wentworth that winter). All three fit one arrangement, and an
 exhaustive scan of 42 regular grids (start 1–11, block size 2–4, vowel blocks 2–6) ranks it first by English quadgram score:</p>
 <table>
 <tr><th class="n">b</th><th class="n">c</th><th class="n">d</th><th class="n">f</th><th class="n">g</th><th class="n">h</th><th class="n">k</th><th class="n">l</th><th class="n">m</th><th class="n">n</th><th class="n">p</th><th class="n">q</th><th class="n">r</th><th class="n">s</th><th class="n">t</th><th class="n">w</th><th class="n">x</th><th class="n">y</th><th class="n">z</th></tr>
@@ -109,7 +112,7 @@ exhaustive scan of 42 regular grids (start 1–11, block size 2–4, vowel block
 <p class="muted">Consonants: the nineteen of the 24-letter alphabet (i = j, u = v). Attested figures: b 8 · c 10 11 12 · g 21 · l 28 29 · m 31 · n 35 · r 44 · s 47 · t 49 50 · y 59 · a 64 65 · e 69 70 · o 79 · u 85.
 The vowel block sizes (five each from 64, or a = 3 and the rest 6) cannot be fixed from this text; 1–6 are unattested.</p>
 
-<h2 id="reading"><span class="num">04</span> Reading</h2>
+<h2 id="reading"><span class="num">04</span> Decipherment</h2>
 <figure class="creveal" data-src="reveal/ormonde.json"></figure>
 <p class="legend"><span class="c">Red</span> = spelled in cipher · <span class="k">blue</span> = nomenclator code, value from the documents in §05 · nulls dropped</p>
 <blockquote>
@@ -124,10 +127,10 @@ The vowel block sizes (five each from 64, or a = 3 and the rest 6) cannot be fix
 carriage in <span class="k">[221 = Parliament]</span>, and upon his motion <span class="k">[174 = Ormonde]</span> is to be <span class="c">a councellor</span>, in which courses
 <span class="k">[174 = Ormonde]</span> shall do well to continue.
 </blockquote>
-<p>The history confirms the reading. George FitzGerald, 16th Earl of Kildare, fell out with Wentworth over the Kildare estates during the 1634
+<p>The history agrees with the decipherment. George FitzGerald, 16th Earl of Kildare, fell out with Wentworth over the Kildare estates during the 1634
 Parliament and crossed to England that summer; Sir Piers Crosby, having opposed the Lord Deputy in the same Parliament, was removed from the
-Irish Council early in 1635; and Ormonde, who had backed Wentworth in the Commons debates, was sworn of the Irish Privy Council in January 1635
-— the very month of the second letter. 186 as <em>the Lord Deputy</em> is used three times consistently; 174 as <em>Ormonde</em> ("your lordship") three
+Irish Council early in 1635; and Ormonde, who had backed Wentworth in the Commons debates, was sworn of the Irish Privy Council in January 1635,
+the month of the second letter. 186 as <em>the Lord Deputy</em> is used three times consistently; 174 as <em>Ormonde</em> ("your lordship") three
 times; 221 as <em>Parliament</em> follows "his good carriage in". The next section fixes 143, 218 and 113 from Wentworth&rsquo;s own letters; 185 and 149 remain open.</p>
 
 <h2 id="knowler"><span class="num">05</span> The check against Knowler</h2>
@@ -174,7 +177,7 @@ Lord Deputy), and 149 beside 143 the royal or Council group. Only the key sheet,
 <li>The fourth figure of <em>angry</em> is printed <code>26</code>, which the grid makes <em>k</em>; <em>r</em> is 43–45. The scan confirms the print, so either Maltravers
 slipped or the 1895 transcriber misread 44/45. "Angry" is the only word that fits <code>a n g ? y</code>.</li>
 <li><code>89</code> at the end of <em>letter</em> is either <em>u</em> (a slip for <em>s</em>, if the vowel blocks are six wide) or a null/plural sign (if they are five wide).</li>
-<li><code>31</code> (= <em>m</em>) before 174 in "upon his motion 31 174 is to be" is unexplained — perhaps "m[y lord]" begun and abandoned.</li>
+<li><code>31</code> (= <em>m</em>) before 174 in "upon his motion 31 174 is to be" is unexplained; perhaps "m[y lord]" begun and abandoned.</li>
 <li>A key sheet, if one survives, would be among the Ormonde papers (NLI) or the Arundel papers; neither is online. The Bodleian&rsquo;s online Carte Calendar begins at 1660, so the 1630s Carte letters to Ormonde cannot be checked for more of this cipher from here.</li>
 </ul>
 
@@ -183,8 +186,8 @@ slipped or the 1895 transcriber misread 44/45. "Angry" is the only word that fit
 <li>OCR of the HMC volume from the Internet Archive; both letters extracted and every figure checked against the page images.</li>
 <li>Regex scan of the whole volume (and the New Series volumes) for other figure runs: the only other ciphers (1644, 1650s) use different keys; no key or decipherment is printed.</li>
 <li>Positional test of 91–111 (edge-of-run statistic) → nulls. Consecutive-figure doublets → block alphabet.</li>
-<li>Cribs from the clear frame and the events of 1634–35; exhaustive scan of regular grids scored by English quadgrams; the crib-derived grid wins.</li>
-<li>For comparison, a simulated-annealing homophonic solver on the 28 letter-figures alone returns quadgram-pleasing nonsense — at this length the structure, not the statistics, carries the solution.</li>
+<li>Cribs from the cleartext and the events of 1634–35; exhaustive scan of regular grids scored by English quadgrams; the crib-derived grid wins.</li>
+<li>For comparison, a simulated-annealing homophonic solver on the 28 letter-figures alone returns text with good quadgram scores and no sense. At this length the solution comes from the structure of the key; the statistics are too weak.</li>
 <li>Second session: the OCR of Knowler&rsquo;s <em>Strafforde&rsquo;s Letters</em> vol. I searched for Kildare, Crosby, Ormond, Maltravers and Arundel; each hit placed by letter heading, closing date and running head. The excerpts are in the repository.</li>
 </ol>
 
