@@ -1761,6 +1761,17 @@ tiered 5-8 everywhere, the same signs and notation; values differ slightly (coun
 is the commonest value; the value-12 peak is one sign (55). Compound-order tests were confounded by the heading '2'.
 Tally 852 held, 875 failed.
 
+## Hundred-and-twenty-seventh pass (24 Sept 2026): sets 111-112 on held-out data
+
+Registered first (hundred-and-thirteenth set, 3ac04923f), tested (`predict_test113.py`). Signs keep position and
+company across genres in F', B and the smaller sites; the number system is one across genres; a sign's typical count
+carries over in B but not in F'. Two-sign numeral runs put the smaller value first even without headings (an open
+question whether that first stroke is a numeral).
+
+Summary of sets 111-113: the script is one sign language used in several text frames: each sign keeps its position,
+company, units and numeral notation across names, counts, closer and bare lines, and one number system serves them all.
+Tally 869 held, 878 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

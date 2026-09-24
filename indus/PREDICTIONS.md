@@ -5358,3 +5358,18 @@ permutations (1,000 where the original used 1,000); p < 0.05.
 - **RO18** F': RO17 holds.
 - **RO19** B: '2' is the commonest numeral sign (NS14).
 - **RO20** F': runs worth 12 outnumber runs worth 10 and 11 together (NS17).
+
+## Results of the hundred-and-thirteenth set (added after the test; `predict_test113.py`, `results/predict_test113.md`)
+
+Seventeen held, three failed. 'One sign, many genres' replicates widely: sign positions correlate between names and
+counts at the smaller sites (RO1: 0.55) and between names and closers (RO3: 0.53) and counts and bare lines (RO4: 0.37)
+in F'; a sign keeps its company across genres at the smaller sites (RO2: 18 against 5) and in B (RO11: 27 against 7);
+name heads end bare lines (RO5: 58% against 30%); name pairs and units recur in counts (RO6, RO7); notation carries over
+(RO8: 63%); closers follow the 740 class (RO10). A sign's typical count carries over in B (RO12: 0.93 over 8 signs) but
+not in F' (RO9: 0.04 over 21 signs), so OG13 is only partly confirmed. The number system is the same across genres in
+F' (RO13, RO14: tiered for 5-8; RO15: all 14 common numerals in 2+ genres; RO16: notation independent of genre, p =
+0.25), '2' is the commonest numeral in B (RO19), and 12 (the sign 55) stands out in F' too (RO20: 27 against 6).
+Corrected compound test: even with heading-led runs removed, 2-sign numeral runs put the smaller value first (RO17: 24%
+larger first; RO18 in F': 31%), so the prediction fails and the order 'small then large' is the observed pattern; it is
+not yet clear whether the small first element (often '2' or '1') is a numeral or a stroke with another role.
+Tally, counting parts: 869 held, 878 failed (1747 registered).
