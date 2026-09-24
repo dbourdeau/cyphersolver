@@ -3842,3 +3842,36 @@ headers are not names more than tablet headers (FG7); items are not closed off b
 615, 390, 527, 405); items before a final 400 are few in number (22) and varied (FG11); cities share few (value, item)
 types (FG13: 17%); lists do not run large to small (FG15) and item pairs do not recur (FG16: 1). Tally, counting parts:
 491 held, 556 failed (1047 registered).
+
+# Seventy-ninth set, registered before testing (24 September 2026): formulas as records (twenty hypotheses)
+
+From the seventy-eighth set: formula = [header] [N item] ([N item]). Parse, header ('pre'), item and value as there.
+'Name header' = a header that is an attested name body; 'numeral-first' = empty header; 'heading header' = a header
+that is only 817, 820 or 861. Distinct formula lines (A + B) or distinct (site, type, line) in F. Motif as in the
+sixty-seventh set. 10,000-draw permutations; p < 0.05.
+
+Who
+- **AR1** Name headers are attested as seal names at the formula's own site more often than when formula sites are
+  shuffled (F).
+- **AR2** Under name headers, the item depends on the header's last sign (MI).
+- **AR3** Items under name headers differ from items under other headers (MI with a label).
+- **AR4** Name-header formulas are on seals more often than other formulas (F).
+- **AR5** Name headers are shorter than names in general (rank test).
+- **AR6** Name headers' own ending (in their name lines) is 740 more often than names' in general.
+- **AR7** 30%+ of headers are heading signs only.
+- **AR8** 80%+ of headers have 1 or 2 signs.
+- **AR9** Under 50% of header-final sign types are also used as items.
+What
+- **AR10** Items in headed formulas are formula-only signs more often than items in numeral-first formulas.
+- **AR11** Items in numeral-first formulas are less varied (entropy, label permutation) than items in headed formulas.
+- **AR12** Under heading headers the item is a name head more often than under name headers.
+- **AR13** On seals, the motif depends on the item (distinct seal formulas, MI).
+Entries
+- **AR14** (header, item) pairs recur on 2+ distinct lines more often than when items are shuffled.
+- **AR15** For (header, item) pairs on 2+ lines, the values differ in 70%+.
+- **AR16** Headed formulas carry larger values than numeral-first formulas (rank test).
+- **AR17** Numeral-first formulas are a larger share of formulas at Harappa than at Mohenjo-daro (F).
+Replication
+- **AR18** B: AR2 holds.
+- **AR19** B: AR14 holds.
+- **AR20** The item distribution differs between Harappa and Mohenjo-daro headed formulas (F, MI).
