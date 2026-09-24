@@ -32,3 +32,4 @@ makes the texts more predictable) and M rising.
 | 5 | 180 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | depiction keys per language: none passes both samples; lookup too noisy to compare languages |
 | 6 | 181 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | world-wide rebus search (503 languages): no language signal; simple rebus reading of depicted signs unsupported |
 | 7 | 182 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | substitutions not semantic either (only the fish family); no categories inferable |
+| 8 | 183 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | depiction groups are shape families; only fish (and tools weakly) are used alike |
