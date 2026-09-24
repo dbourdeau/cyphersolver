@@ -6546,3 +6546,26 @@ names (151, 154-158) are almost never name heads (MH6: 1 of 196): they are close
 Reading: Mahadevan's phrase is a real recurring unit across sites, but its internal structure is AB + (CD or closer),
 not attribute + suffixed root, and his bearer readings conflict with how the bearer signs are used. Tally, counting
 parts: 1089 held, 1032 failed (2121 registered).
+
+# Hundred-and-forty-sixth set, registered before testing (24 September 2026): scribal workshops (nine hypotheses)
+
+H9 found the candidate graphic variants no more site-dependent than random pairs. This set asks the same inside
+cities, in time, by medium and inside one object, and uses the CISI allograph feature vectors (set 139). Variant pairs:
+the candidate pairs of results/allographs.md with 5+ tokens on each side in F. Places: Mohenjo-daro sub-area and house
+as the hundred-and-fortieth set; Harappa field 4 (excavation unit, '--' left out). Tokens are sign occurrences on F
+objects. Pooled statistics sum MI (variant against place) over pairs; chance permutes the variant labels within each
+pair (2,000 draws). CISI features: the full feature vector after the three default features, per Parpola sign.
+p < 0.05.
+
+- **WS1** At Mohenjo-daro the variant chosen depends on the sub-area.
+- **WS2** At Harappa the variant chosen depends on the excavation unit.
+- **WS3** At Mohenjo-daro, two tokens of one pair from the same house share the variant more often than two tokens
+  from different houses of the same sub-area.
+- **WS4** The variant depends on the level (early / late, predict_test18.level; permuted within pair and site).
+- **WS5** The variant depends on the object type (seal / tablet / other).
+- **WS6** On one object, two tokens of one pair use the same variant more often than chance.
+- **WS7** Different objects with the same text use the same variant more often than random pairs of objects that
+  both carry that pair.
+- **WS8** In CISI, the allograph feature vector of a Parpola sign depends on the Mohenjo-daro sub-area.
+- **WS9** In CISI, two tokens of one Parpola sign on one object share the feature vector more often than two tokens on
+  different objects.
