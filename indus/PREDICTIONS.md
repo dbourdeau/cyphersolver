@@ -6448,3 +6448,20 @@ p < 0.05.
 - **NP4** Before a fish, the value depends on which fish follows (lexicalised numeral + fish words; MI).
 - **NP5** Before other lexical signs with 5+ counted occurrences, the value depends on the sign (MI).
 - **NP6** 5%+ of names that contain a numeral have a numeral run as their head.
+
+## Results of the hundred-and-forty-third set (added after the test; `predict_test143.py`, `results/predict_test143.md`)
+
+Five held, one failed. **Numerals behave partly like words, not only like counts.** In minimal pairs of name bodies,
+a numeral alternates with a lexical sign in 935 of 1,008 pairs (NP2) and with another numeral in only 63. Caveat, noted
+after the test: NP2 was registered without a chance baseline. Numerals are 16.6% of body tokens, so a pure 'any sign
+can replace any sign' model would give about 17% numeral partners; the observed 6% is lower. The numeral position is
+therefore not a closed count slot where values swap for values, but the alternation may be 'count present / count
+absent' constructions rather than rebus spellings. The value depends on its role (NP3: heads against counting runs,
+MI 0.087, p = 0.0001), on which fish follows (NP4: MI 0.35, p = 0.008) and on which other sign follows (NP5: 19
+signs, MI 1.10, p = 0.0001): numeral + sign pairs are lexicalised, fixed words rather than free counts. Numerals are
+the head of 23% of names that contain one (NP6: 119 of 509, mostly the long pair 32 before 740, e.g. '15 32 740',
+'14 32 740'), a numeral standing where a noun stands. Failed: numeral tokens in names do not share frames with
+lexical signs more than numerals in count texts do (NP1: 47% against 50%). Reading: consistent with numerals as
+words or word parts (number words used in names, or phonetic values) and against a purely arithmetic use inside
+names; it does not yet show a phonetic value, because lexicalised numeral compounds (as in Parpola's star names) give
+the same pattern. Tally, counting parts: 1085 held, 1020 failed (2105 registered).

@@ -2001,6 +2001,14 @@ never split a bound pair and almost never a name unit; each line is a well-forme
 often as chance; the second line of a name text is a separate field. The scribes' breaks confirm the statistical
 segmentation from outside. Tally 1080 held, 1019 failed.
 
+## Hundred-and-fifty-seventh pass (24 Sept 2026): numerals used for their sound
+
+Registered first (hundred-and-forty-third set, b6d0db129). Inside names numerals are lexicalised: the value depends
+on the following sign and on role, numerals alternate with lexical signs far more than with other numerals (6% against
+a 17% token share; NP2 had no registered baseline), and a numeral is the head of 23% of numeral names (long pair 32
+before 740). Consistent with number words in names or phonetic use, not decisive between them. Tally 1085 held, 1020
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
