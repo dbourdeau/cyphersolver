@@ -419,3 +419,53 @@ The shortlist is judged supported if SL2 or SL3 holds as well as SL1.
   did not survive its first tests. Tally, counting parts: 11 held, 16 failed.
 - If the list is revisited: a narrower cut (free on both sides only, fish series and 740-name heads left out) must be
   registered as a new list and tested on material not used to make it, not tuned on these results.
+
+# Thirteenth set, registered before testing (24 September 2026): ten hypotheses
+
+None of these has been looked at. Samples: **A** = the ICIT-derived corpus (data/corpus.tsv), **B** = the M77 texts
+absent from it (data/corpus_m77_added.tsv), each read line by line (lines of 2+ signs); **F** = the fuller ICIT corpus
+(icit_full.py, lines as listed), used where site, object type or findspot is needed. 'Names' as in the fourth set.
+Grammar signs: 740, 520, 817, 820, 861, 90, 400 and the stroke numerals (numerals.NUMS). Every permutation test uses
+10,000 draws; a test holds at p < 0.05, and where A and B are both named it must hold in both.
+
+**H1 Doubling means plurality.** Signs written doubled (X X adjacent 2+ times in the sample; not numerals) mark
+countable nouns, so, like counted nouns, they are preceded by a stroke numeral more often than frequency-matched
+signs never written doubled (signs with 20+ tokens; labels permuted within token-count quintiles). A and B.
+
+**H2 Compounds have a fixed order.** For ordered pairs X Y (X ≠ Y) with count 10+, the reversal ratio count(Y X) /
+count(X Y) is lower for the 30 bound pairs of the seventh set than for the other pairs (difference in mean rank,
+permutation of the bound label). A and B.
+
+**H3 Diacritics modify a base sign without changing its word class.** Pairs within a graphic family (fish 219-244 as
+signs.FISH; jar 740 / 741 / 742 / 745; fig signs.FIG; crab signs.CRAB; eye signs.EYE), both signs 10+ tokens, have
+more similar contexts (cosine of positive-PMI left + right neighbour vectors) than random pairs matched on the two
+signs' token-count quintiles. A and B.
+
+**H4 Name signs vary with distance, grammar does not (dialects or local names).** F, home sites with 40+ intact
+texts, fixed coordinates. Jensen-Shannon divergence between sites' name-sign distributions, rarefied to the smallest
+site's token count (200 rarefactions), correlates with geographic distance (Mantel, Spearman, site-label permutation),
+rho > 0, p < 0.05; and the same correlation for grammar signs is lower than for name signs.
+
+**H5 Frequent signs are simpler (a law of writing systems).** Perimetric complexity (perimeter² / ink area) of each
+glyph rendered from the ICIT font correlates negatively with log token count (Spearman, permutation), signs with a
+glyph and 5+ tokens. A and B.
+
+**H6 Tablets and sealings record transactions between parties.** Texts with two or more ending tokens (740 / 520) are
+more frequent on tablets and sealings (TAB, TAG) than on seals, within text-length strata (3-4, 5-6, 7+ signs),
+object labels permuted within strata. F, intact objects.
+
+**H7 Names are built head-final from shorter names.** For names with 3+ signs before the ending, the name minus its
+first sign (same ending) is an attested name more often than the name minus its last sign is (any ending); McNemar
+one-sided, p < 0.05. A and B.
+
+**H8 Attributes are local, heads are general.** The first sign of a 2+ sign name (attribute) carries more information
+about the site than the last (head): excess mutual information with site (observed minus the mean under site
+permutation among names) is higher for the first sign than for the last, p < 0.05 on the permuted difference. F.
+
+**H9 Graphic variants are local writing habits.** The 30 candidate variant pairs of results/allographs.md, where both
+signs have 10+ tokens with a home site in F: Cramér's V of site (Mohenjo-daro / Harappa / other) against which variant
+is written is higher than for random sign pairs matched on token counts (mean over the set, permutation), p < 0.05.
+
+**H10 Heads come from a smaller inventory than attributes.** Among names of 2+ signs before the ending, the entropy
+of the last sign is lower than the entropy of the first sign, by more than in within-name shuffles of sign order
+(p < 0.05). A and B.
