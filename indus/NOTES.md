@@ -1309,6 +1309,12 @@ Registered first (fifty-first set, 4b79fb709), tested (`predict_test51.py`). Sea
 signs (390, 405, 220, 156, 151) across wide value ranges, with no fixed template and mostly the same signs as tablet
 counts. Tally 300 held, 377 failed.
 
+## Sixty-sixth pass (24 Sept 2026): where the order is free (loop 2, round 6)
+
+Registered first (fifty-second set, e4aa4d94f), tested (`predict_test52.py`). Order is best modelled by pairwise
+precedences (66 against 12 over the scalar rank). Numerals and fish attributes float, mostly inside long names; order
+does not depend on the ending or the city. Tally 307 held, 380 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

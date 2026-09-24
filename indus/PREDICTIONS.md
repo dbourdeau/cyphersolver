@@ -2860,3 +2860,15 @@ signs from signs.FISH. 10,000-draw permutations; p < 0.05.
 - **PO9** 40%+ of inverted adjacent pairs include a numeral or a fish sign.
 - **PO10** Dominant pairwise orders from A predict B's adjacent pairs better than the scalar A rank on the pairs both
   cover (sign test on discordant pairs).
+
+## Results of the fifty-second set (added after the test; `predict_test52.py`, `results/predict_test52.md`)
+
+Seven held, three failed. The ordering is pairwise, not scalar: dominant pair orders from A predict B's adjacent pairs
+far better than the scalar rank where they disagree (PO10: 66 against 12). The rank works between slots and less within
+them (PO1: 74% against 62%), though the early slot is not free (PO2: 25 of 35 follow the rank, p = 0.017). Of 81 pairs
+attested in both orders, 42% involve a numeral (PO3), and they are more often of one Fairservis category (PO4: 11%
+against 2%; categories are known for few signs). Inversions sit in long names (PO8: 5.6 against 3.7 signs) and 47% of
+inverted pairs involve a numeral or fish sign (PO9); frequent signs move more (PO7, borderline p = 0.048). The order is
+not set by the ending (PO5, p = 0.07) or by the city (PO6: 7 of 52). Reading: a fixed skeleton (slots and pair
+precedences), with numerals and fish attributes floating inside long names. Deviation: PO6 used 1,000 shuffles. Tally,
+counting parts: 307 held, 380 failed (687 registered).
