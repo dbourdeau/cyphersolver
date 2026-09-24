@@ -5074,3 +5074,33 @@ somewhat commoner at Harappa (XL5: 15% against 12%), and they hold formula-only 
 recurring more (XL9), one-off seal texts (XL16), an earlier date (XL17), 400 as a Harappa bare-line ending (XL18), and
 the stricter closer tests (XL12: 15%; XL13: 10%, just under; XL15: 595 line-final in 38%). Tally, counting parts: 769
 held, 838 failed (1607 registered).
+
+# Hundred-and-seventh set, registered before testing (24 September 2026): sets 102-106 on held-out data (twenty hypotheses)
+
+Findings of the hundred-and-second to hundred-and-sixth sets, found on A + B distinct lines, re-tested on F without
+copper (F', distinct lines), the smaller sites (OS, F' outside Mohenjo-daro and Harappa) and B. Definitions as in the
+sets cited (closers, bodies, blocks, templates, bare lines). 10,000-draw permutations (1,000 where marked); p < 0.05.
+
+F'
+- **RH1** (SB11) Block-1 body tokens are the last body sign more often than other body tokens.
+- **RH2** (SB18) Block-3 tokens are in formulas more often than other non-numeral tokens.
+- **RH3** (SB12, observed direction) Adjacent signs share a block more often than in within-line shuffles (1,000).
+- **RH4** (FX13) 50%+ of closer tokens follow a name-head sign.
+- **RH5** (FX7) The sign before a closer depends on the closer (MI).
+- **RH6** (FX8) Under 3% of lines hold two different closers.
+- **RH7** (CB10) Closer bodies hold a fish less often than name bodies.
+- **RH8** (CB17) Closers follow a 520-class head less often than 520 does.
+- **RH9** (TP15) Under 10% of lines hold 2+ numeral segments.
+- **RH10** (TP4) F's five commonest templates share 4+ with A + B's.
+- **RH11** (XL1) Bare lines are shorter than name lines.
+- **RH12** (XL6) 50%+ of bare lines end in a name head.
+- **RH13** (XL7) 50%+ of bare lines start with a name opener.
+- **RH14** (XL11) Bare-line tokens are formula-only signs more often than name-line tokens.
+- **RH15** (XL14) 60%+ of 368 tokens follow a name-head sign.
+Smaller sites
+- **RH16** (CB9) Closer lines are 10%+ of seal inscriptions (closer or name lines on seals).
+- **RH17** (XL1) Bare lines are shorter than name lines.
+- **RH18** (XL7) 50%+ of bare lines start with a name opener.
+B
+- **RH19** (SB11) Block-1 body tokens are the last body sign more often than other body tokens.
+- **RH20** (CB10) Closer bodies hold a fish less often than name bodies.
