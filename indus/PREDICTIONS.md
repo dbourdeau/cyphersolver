@@ -4033,3 +4033,33 @@ variant of 90 (PS10: its heads overlap with 90's, Jaccard 0.31, against 0.05 wit
 0.03, p = 0.0001), the head's shape category predicts 90 (PS11, p = 0.0001), and suffixes go with common heads (PS16:
 24% against 3%). Not supported: 90 being only a suffix (PS6: 67%; PS19 in B: 51%), 90 heads being counted less (PS12),
 and '520 400' heads being fish (PS18: 4 of 10). Tally, counting parts: 529 held, 598 failed (1127 registered).
+
+# Eighty-third set, registered before testing (24 September 2026): what the suffixes do (twenty hypotheses)
+
+From the eighty-second set: 400 is the Harappa tablet suffix, 90 (and 151) the seal suffix of one-off names. Suffix
+lines as there. F distinct (site, type, line) unless stated; motif as in the sixty-seventh set; Harappa period via
+rtools.level. 10,000-draw permutations; p < 0.05.
+
+400 on tablets: receipts for seal owners?
+- **SF1** Name bodies in 400 tablet lines are attested on seals more often than bodies in other tablet name lines.
+- **SF2** They are attested on seals at the same site more often than when their sites are shuffled.
+- **SF3** 400 tablet lines are incised (TAB:I) more often than other tablet name lines.
+- **SF4** At Harappa, 400 tablet lines are from the earlier period more often than other tablet name lines.
+- **SF5** 400 tablet texts recur on 2+ objects more often than other tablet name texts.
+- **SF6** Three heads cover 50%+ of distinct 400 lines.
+- **SF7** 400 tablets carry a picture less often than other tablets with a name.
+- **SF8** 30%+ of 400-suffixed bodies are also attested without a suffix.
+- **SF9** Where they are, the unsuffixed form is on a seal in 50%+.
+- **SF10** At Harappa, 90%+ of 400 lines are on tablets.
+- **SF11** At Mohenjo-daro, 50%+ of 400 lines are on seals.
+90 on seals: the owner's name?
+- **SF12** Seal lines with 90 open with the heading unit less often than other seal name lines.
+- **SF13** Seal lines with 90 are on unicorn seals more often than other seal name lines.
+- **SF14** 90 seal names contain a numeral less often than other seal names.
+- **SF15** 30%+ of 90-suffixed bodies are also attested without a suffix.
+- **SF16** At the smaller sites, 70%+ of 90 lines are on seals.
+- **SF17** 70%+ of 151 suffix lines are on seals.
+Both
+- **SF18** 95%+ of suffix lines are the only line on their object.
+- **SF19** Heads of 90 lines and of 400 lines overlap in at most 20% of their types (F).
+- **SF20** In A's own rows, 400 suffix lines are on tablets more often than 90 suffix lines.
