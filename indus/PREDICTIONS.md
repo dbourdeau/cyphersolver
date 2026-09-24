@@ -4891,3 +4891,17 @@ stated. 10,000-draw permutations; p < 0.05.
 - **SB18** Block-3 tokens are in formulas more often than other non-numeral tokens.
 - **SB19** Block-5 tokens are the last body sign more often than block-3 tokens.
 - **SB20** Block-9 signs have fewer tokens than other signs (rank test).
+
+## Results of the hundred-and-second set (added after the test; `predict_test102.py`, `results/predict_test102.md`)
+
+Eleven held, nine failed. The catalogue's hundreds block (a rough shape family) carries information about use: genre
+(SB2: name against formula, p = 0.0001), being counted (SB3), a head's class (SB4: 0.25 bits over 70 heads, p = 0.002),
+the ending (SB14, p = 0.0001), seal against tablet (SB5), and city (SB6), all weak but significant. Block 1 signs are
+name heads (SB11: 63% last in the body against 31%) and block 3 signs are formula signs (SB18: 58% against 38%); fish
+(block 2) are medial (SB8: 8 of 10); the category also predicts counting (SB17). But the block does not fix position
+(SB1, p = 0.06; SB16 by category, p = 0.07), heads are spread over four blocks (SB7: blocks 7, 1, 2, 4 about equal),
+block 7 is counted less, not more (SB9: 11% against 17%), block 8 is not the ends (SB10), block 5 heads less than block
+3 (SB19, reverse), and block 9 is not rarer (SB20). Same-block signs stand next to each other more, not less, than
+shuffles give (SB12: 928 adjacent pairs, the reverse of the prediction; e.g. fish beside fish), and opener and head are
+not from different blocks more than chance (SB13). SB15 (block roles agree in A and B, 7 of 7) holds trivially since
+every block's majority role is 'medial'. Tally, counting parts: 726 held, 801 failed (1527 registered).

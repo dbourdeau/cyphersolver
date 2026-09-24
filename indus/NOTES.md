@@ -1679,6 +1679,12 @@ Summary of sets 99-101: 7 opener and 14 closer signs hold their places everywher
 function and give 5 candidate free-variant pairs; the recent findings replicate on the fuller corpus. Tally 715 held,
 792 failed.
 
+## Hundred-and-sixteenth pass (24 Sept 2026): shape blocks and what they do
+
+Registered first (hundred-and-second set, b0b9de0e7), tested (`predict_test102.py`). Shape families (catalogue blocks)
+weakly predict genre, counting, class, ending, medium and city; block 1 is a head block, block 3 a formula block, and
+same-family signs cluster side by side. Position is not set by family. Tally 726 held, 801 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
