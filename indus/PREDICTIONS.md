@@ -6130,3 +6130,19 @@ lower-case letter strings. 10,000-draw permutations; p < 0.05.
 - **RD9** Texts that differ only in the heading sign (817/820/861 before the same rest) get readings that differ only
   in their first part (the rest of the reading identical) in 50%+ of pairs.
 - **RD10** Count tokens (numeral + 700) with the same numeral get the same reading in 90%+.
+
+## Results of the hundred-and-thirty-fifth set (added after the test; `predict_test135.py`, `results/predict_test135.md`)
+
+Eight held, two failed, after a data fix: most field 35 values are cross-references ('ref:212.1' etc., pointing to
+another object's reading), which the first run wrongly treated as readings (RD1 then showed 'f' as the commonest
+'final letter'); the recorded run keeps only actual readings (1,653 single-line texts). The stored readings behave as
+a sign-by-sign phonetic substitution: reading length tracks text length closely (RD4: Spearman 0.89) at a steady 1.8
+letters per sign (RD7: CV 0.23), texts sharing a first sign share the reading's first letter (RD5: 0.93 against 0.12 by
+chance) and texts sharing a last sign share its last letters (RD6: 0.58 against 0.11), and identical texts, heading
+variants and count tokens read consistently (RD3, RD9, RD10, but on only 2-5 cases each). The two endings are read
+differently (RD2, p = 0.0001). But the reading does not treat 740 as a fixed suffix: texts ending in 740 end in a, m or n
+with no dominant sound (RD1: share 0.35 against 0.80 for other final signs), and 'X 740' readings do not end alike
+(RD8: 47%). Since 740 is the most rigidly positioned sign in the script (almost never line-initial, fixed class per head,
+followed only by suffixes), a reading that gives it a variable sound conflicts with the structure. This is a
+consistency check only; it does not test the decipherment's correctness, and its source is not identified here.
+Tally, counting parts: 1045 held, 986 failed (2031 registered).

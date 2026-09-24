@@ -1923,6 +1923,14 @@ with the same seeds and 'None' mapped to no motif: output identical to the unpat
 recorded results except one unrelated permutation p-value (twenty-seventh set L16, 0.0001 to 0.0002, still holds). No
 verdict changes; the scripts now carry the explicit check. Tally unchanged: 1037 held, 984 failed.
 
+## Hundred-and-forty-ninth pass (24 Sept 2026): does a proposed reading respect the structure?
+
+Registered first (hundred-and-thirty-fifth set, 277f25082), tested (`predict_test135.py`); cross-reference values
+('ref:...') excluded after a first run mistook them for readings. The readings stored in the ICIT dump (source not
+identified) are a consistent sign-by-sign phonetic substitution (1.8 letters per sign; first sign fixes first letter),
+but they give 740 no fixed sound, which conflicts with 740's rigid suffix behaviour. Consistency check only. Tally 1045
+held, 986 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
