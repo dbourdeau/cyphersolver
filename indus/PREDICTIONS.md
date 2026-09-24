@@ -7109,3 +7109,45 @@ about offices: they begin 90% of the 3+-sign names on tags (sealings, mostly Lot
 seals (MX8, p = 0.002), and 53% of those on Harappa moulded tablets (MX4); and names beginning with one become more
 common from early to late levels (MX10: +0.26, p = 0.0003), a drift towards a smaller set of standard name openings
 over time. Tally, counting parts: 1154 held, 1084 failed (2238 registered).
+
+# Hundred-and-sixty-third and hundred-and-sixty-fourth sets, registered together before testing (24 September 2026): twenty hypotheses
+
+## Hundred-and-sixty-third set: length-matched and shuffled baselines for the capture-recapture profiles (ten hypotheses)
+
+Set 161 showed openness grows with unit length, so the comparisons of sets 147, 152, 157 and 158 need length matching
+and a chance baseline. Length: Indus names by total signs (body + ending); Linear B persons by syllables (hyphen
+count + 1); Ur III legends by lemmas. Shuffled baseline: within each catch, the units (signs, syllables, lemmas) are
+shuffled among that catch's items keeping each item's length (1,000 draws); 'excess' = real shared count / mean
+shuffled shared count. Catches as before (Indus Mohenjo-daro / Harappa seals; Linear B Knossos / Pylos; Ur III Umma /
+Girsu). p < 0.05.
+
+- **LM1** At 3 units, the Indus name estimate/observed ratio is within a factor of 2 of the Linear B person ratio.
+- **LM2** The same at 4 units.
+- **LM3** Indus 2-sign names (head + ending) have an estimate/observed ratio within a factor of 2 of Ur III owners.
+- **LM4** Indus 3-sign whole seal lines and Ur III 3-lemma legends are both person-like.
+- **LM5** Real Indus names recur between the cities more than shuffled names (shared count above 95% of shuffles).
+- **LM6** Real Linear B persons recur between the palaces more than syllable-shuffled persons.
+- **LM7** Real Ur III legends recur between the cities more than lemma-shuffled legends.
+- **LM8** The recurrence excess of Indus 520 names is larger than that of 740 names.
+- **LM9** The recurrence excess of Indus names is smaller than that of Ur III owners (Indus names recur less, beyond
+  combinatorics, than Sumerian names).
+- **LM10** The shared share falls with length both for Indus names (lengths 2-6) and for Linear B persons (2-5
+  syllables): Spearman negative in both.
+
+## Hundred-and-sixty-fourth set: standardisation over time and the seal types (ten hypotheses)
+
+From set 162: names beginning with a frequent ('shared') opener rise from early to late (MX10) and dominate sealings.
+Definitions as sets 161-162; levels as predict_test18.level; seals in F.
+
+- **TS1** MX10 holds at Mohenjo-daro alone (late share above early, Fisher).
+- **TS2** MX10 holds at Harappa alone.
+- **TS3** The rise is carried by numeral openers: the share of 3+-sign names opening with a numeral rises (site-
+  stratified, one-sided p < 0.05) while the share opening with a non-numeral shared opener does not (p >= 0.05).
+- **TS4** Late names recur more: the share of distinct names on 2+ seals is higher late than early (Fisher).
+- **TS5** Late names are less open: with the two cities as catches inside each level, the late estimate/observed
+  ratio is below the early one.
+- **TS6** Rectangular seals (SEAL:R) are later than square seals (SEAL:S) (site-stratified share late).
+- **TS7** 3+-sign names on rectangular seals begin with a shared opener more often than those on square seals.
+- **TS8** MX10 holds on square seals alone (site-stratified, one-sided p < 0.05).
+- **TS9** Tag (sealing) texts are shorter than seal texts (rank test, per object).
+- **TS10** At Lothal and at Kalibangan separately, 70%+ of tag names of 3+ signs begin with a shared opener.
