@@ -2104,6 +2104,18 @@ not people, the profile measures openness (free composition), not personhood: se
 open population over closed elements, and 'personal names' is one reading of that, not the only one. 520 names and
 closers are not a small shared title set. Tally 1127 held, 1064 failed.
 
+## Hundred-and-seventy-second pass (24 Sept 2026): Ur III seal legends as a read control
+
+Registered first (b4aade90e). ORACC Ur III (CC0) streamed by `ur3_seals.py` into `data/ur3_seals.tsv`: 6,521 distinct
+seal legends. Ur III owner and father names have the title-like, recurring profile (Sumerian names are a limited
+stock), titles are closed, and only whole legends are open (17.5 times, 3% shared). So the capture-recapture profile
+measures how individual a whole text is, not personhood: Indus seal texts are as individual as whole Ur III legends,
+but the Indus format has no filiation line (1.6% two names against 65%) and rarely a title field (13% against 71%).
+Qualifies sets 147/152/157: 'individual compositions', either a larger name stock or name + office/lineage packed into
+one unit. Fuls's Corpus (2022) and Sign Catalog (2023), previews supplied by the user: the per-sign totals shown
+(e.g. 923 45, 752 53, 906 16) match this project's ICIT export, so the books describe the same data; the previews
+add no texts. Tally 1130 held, 1068 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

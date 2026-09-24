@@ -6818,6 +6818,11 @@ palaces differ in date as well as place, and Indus objects are seals, not admini
 of profiles, not a test of identity. With this control, set 147's reading (Indus names behave as personal names) is
 calibrated rather than only suggestive. Tally, counting parts: 1112 held, 1053 failed (2165 registered).
 
+Qualified by the hundred-and-fifty-eighth set (added later the same day): Ur III personal names have the
+*title-like* profile and only whole Ur III legends are open, so the profile measures how individual a whole text is,
+not personhood. Read LC6 as 'Indus seal texts are individual compositions, like Linear B person names and Ur III
+whole legends'.
+
 ## Results of the hundred-and-fifty-third set (added after the test; `predict_test153.py`, `results/predict_test153.md`)
 
 Five held, none failed. **Set 147's result does not depend on comparing two cities.** Inside Mohenjo-daro, DK against
@@ -6922,3 +6927,24 @@ Indus side for UR5-UR7: F seals at Mohenjo-daro and Harappa. p < 0.05.
 - **UR7** Both title stocks are closed: the ten commonest Ur III titles cover 60%+ of titled legends, and the ten
   commonest Indus post-name signs (closers, 400, 90, or the last sign of a separate non-name line) cover 60%+ of Indus
   seals with a post-name field.
+
+## Results of the hundred-and-fifty-eighth set (added after the test; `predict_test158.py`, `results/predict_test158.md`)
+
+Three held, four failed. 22,402 Ur III seal surfaces, 6,521 distinct legends (Umma 2,307, Girsu 1,612 ...).
+Profiles (estimate/observed, shared, in one legend): owners 2.04, 0.31, 0.57; fathers 1.91, 0.34, 0.56; titles 1.19,
+0.61, 0.38; whole legends 17.51, 0.03, 0.99. **Ur III personal names have the title-like profile** (UR1 and UR4
+fail): Sumerian names are a limited stock borne by many people (the same Lu-Nanna or Ur-Lamma in both cities), so
+owners and fathers recur across Umma and Girsu. Titles are closed (UR2 holds), and only the whole legend (name + title
++ father) is open (UR3 holds). Indus seals almost never carry two names (UR5 fails: 1.6% against 65% of Ur III legends
+with two PNs) or a post-name field (UR6 fails: 13% against 71% with a title); both title stocks are closed (UR7 holds:
+top ten cover 80% and 79%; Indus 90, 400, 842, 790, 151, 60, 621 ...).
+
+**This qualifies sets 147, 152 and 157.** The capture-recapture profile does not detect personal names as such: in
+Linear B, persons are open; in Ur III, persons are closed and only whole legends are open. What the profile measures
+is how individual a whole text is. An Indus seal text (5.1, 15%, 92%) is as individual as a whole Ur III legend,
+though it is one name unit, not name + title + father. Two readings fit: (a) Indus names are drawn from a far larger,
+more compositional stock than Sumerian names (as Greek names are); or (b) an Indus seal text packs into one name unit
+what a Mesopotamian legend spreads over fields (name, office, filiation), the opener and middle elements carrying
+title or lineage. The seal format itself differs from Mesopotamia's: no filiation line, rarely a title field. Set
+152's 'Indus names behave as personal names' should be read as 'Indus seal texts are individual compositions, as
+Linear B person names and Ur III whole legends are'. Tally, counting parts: 1130 held, 1068 failed (2198 registered).
