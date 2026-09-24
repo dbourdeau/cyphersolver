@@ -110,6 +110,15 @@ def meanings_plus(DL):
     return n / tot
 
 
+def grammar_coverage(DL):
+    # set 191: G = share of distinct lines fully parsed by grammar.py (A lines = progress.py's DL; B = M77 additions)
+    from grammar import coverage, heads_from
+    from signs import load
+    heads = heads_from(DL)
+    DB = sorted({tuple(ln) for r in load(only_m77=True) for ln in r['seq'] if ln})
+    return coverage(DL, heads), coverage(DB, heads)
+
+
 def main(label='measure'):
     DL, tr, te = data()
     bits, h1 = structure(tr, te)
@@ -117,21 +126,23 @@ def main(label='measure'):
     m = meanings(DL)
     mp = meanings_plus(DL)
     p = len(VALUES)
+    ga, gb = grammar_coverage(DL)
     open_f = [f for f, s in FAMILIES.items() if s == 'open']
     print('S  structure: %.3f bits/sign held out (unigram %.3f; %.1f%% explained)' % (bits, h1, 100 * (h1 - bits) / h1))
     print('R  roles: %.1f%% of %d tokens (%s)' % (100 * r, tot, ', '.join('%s %d' % kv for kv in by.most_common())))
     print('M  meanings: %.1f%% of tokens anchored; M+ with depiction classes confirmed by use %.1f%%' % (100 * m, 100 * mp))
+    print('G  grammar: %.1f%% of distinct lines parsed (B check %.1f%%)' % (100 * ga, 100 * gb))
     print('P  sound values: %d' % p)
     print('L  language: %d families open (%s)' % (len(open_f), ', '.join(open_f)))
     row = '\t'.join([label, '%.3f' % bits, '%.1f' % (100 * (h1 - bits) / h1), '%.1f' % (100 * r), '%.1f' % (100 * m), str(p),
-                     str(len(open_f)), '%.1f' % (100 * mp)])
+                     str(len(open_f)), '%.1f' % (100 * mp), '%.1f' % (100 * ga), '%.1f' % (100 * gb)])
     log = os.path.join(HERE, 'results', 'progress_log.tsv')
-    head = 'label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\tMplus_pct'
+    head = 'label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\tMplus_pct\tG_pct\tG_B_pct'
     old = open(log, encoding='utf-8').read().splitlines()[1:] if os.path.exists(log) else []
     with open(log, 'w', encoding='utf-8') as f:
         f.write(head + '\n')
         for x in old:
-            f.write((x if x.count('\t') == 7 else x + '\t') + '\n')
+            f.write(x + '\t' * max(0, 9 - x.count('\t')) + '\n')
         f.write(row + '\n')
     return bits, r, m, p, len(open_f)
 

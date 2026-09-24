@@ -2344,6 +2344,12 @@ Registered first (f572c8f4f). The leaf's attachment predicts position in A and B
 heading (diamond-topped leaf); without it B is n.s. (77 tokens). Counted conservatively as no progress: streak 1.
 Tally 1277 held, 1194 failed.
 
+## Two-hundred-and-fifth pass (24 Sept 2026): decipherment loop 16, one parser for the whole grammar
+
+Registered first (45f06436b). `grammar.py` parses 80.5% of A lines and 71.6% of B; new metric component G (80.2% / 72.3%).
+Heading and formula rules add no coverage; bare names, post-ending markers and closers carry it. Unparsed = longer lines
+with counts after names, '740 1' runs, 'X 400'. Progress: streak 0. Tally 1281 held, 1196 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

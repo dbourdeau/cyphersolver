@@ -8119,3 +8119,14 @@ fewer rules. Grammar fixed on A's knowledge; B is the check.
 - **GR4** Each rule is needed: dropping any single rule costs 1+ point of G on A (the rules with that effect listed).
 - **GR5** Unparsed lines are longer than parsed lines (rank test): what remains is the long texts.
 - **GR6** Progress rule: GR1 and GR2 hold (G enters the metric).
+
+## Results of the hundred-and-ninety-first set (added after the test; `predict_test191.py`, `results/predict_test191.md`, `grammar.py`)
+
+Four held, two failed. One explicit grammar (heading, name body + ending/closer/caged sign/stacked closer, post-ending
+marker, count, closing formula, bare name, numerals) parses 80.5% of the distinct A lines (GR1) and 71.6% of B with heads
+learned from A only (GR2). It covers only 56.0% of the 389 extra F lines (GR3 fails). Not every rule pays its way
+(GR4 fails): dropping the heading or the formula costs nothing measurable, while the bare-name (15.7 points), post-ending
+(10.0) and closer (7.2) rules carry most of the coverage. The unparsed lines are the longer ones (GR5: 4.86 against 4.55
+signs, p = 0.04): names followed by counts ('X 740 900 1 3 423'), '740 1 ...' sequences and 'X 400' pairs. GR6 holds;
+G enters the metric at 80.2% (A lines as progress.py counts them) and 72.3% (B). Progress: streak 0. Tally, counting
+parts: 1281 held, 1196 failed (2477 registered).

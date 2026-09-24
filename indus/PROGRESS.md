@@ -13,6 +13,7 @@ Decipherment happens in stages, so the metric is a vector, one component per sta
 | R roles | share of sign tokens whose job is fixed by a tested rule (numeral, ending, closer, marker, heading, name head, counted sign ...) | higher |
 | M meanings | share of sign tokens whose sign has an externally anchored meaning (numeral values, copper-tablet sign = picture equations) | higher |
 | M+ meaning classes | M plus signs whose depicted class (Fairservis) is confirmed by use on held-out data (from loop 3) | higher |
+| G grammar | share of distinct lines (progress.py's A lines; B check on the M77 additions) that `grammar.py` parses in full, heads learned from A only (from loop 16) | higher |
 | P sound values | signs with a sound value that passed a registered held-out test (the prize) | higher |
 | L language | candidate language families not yet excluded by registered tests | lower |
 
@@ -47,3 +48,4 @@ The 'streak' column counts consecutive loops without progress.
 | 13 | 188 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | extra F lines make S slightly worse (4.719); no progress (streak 1) |
 | 14 | 189 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the U: plain 700 counted/final, 705/706 heads the closing formula; inner-stroke device generalises (progress; streak 0) |
 | 15 | 190 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | leaf attachments predict position, but on B only through the known heading; counted no progress (streak 1) |
+| 16 | 191 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | new component G: one explicit grammar parses 80.2% of A lines, 72.3% of B (B from A-learned heads); unparsed lines are the longer ones (progress; streak 0) |
