@@ -4863,3 +4863,31 @@ variants (RR12); the four frozen counts keep their values (RR13: 4 of 4); catalo
 signs (RR10). In B several tests are degenerate: B has no 817 lines (RR19), writes 705 and 706 as one sign (RR20 holds
 trivially), and has only 1 and 3 cases for RR15 and RR16; openers do not precede numerals in B (RR17) and 'X 740' before a
 medial ending is a name in 48% (RR18, just under 50%). Tally, counting parts: 715 held, 792 failed (1507 registered).
+
+# Hundred-and-second set, registered before testing (24 September 2026): shape blocks and what they do (twenty hypotheses)
+
+The hundredth set found that catalogue neighbours behave alike. 'Block' = the catalogue number's hundreds digit
+(0-9; block 0 holds most stroke numerals). Non-numeral signs only unless stated. Roles (opener, closer, medial) as in the
+ninety-ninth set; classes as in the eighty-first; categories from cat_of. Distinct lines and names (A + B) unless
+stated. 10,000-draw permutations; p < 0.05.
+
+- **SB1** Positional role depends on block (MI over signs with 10+ tokens).
+- **SB2** Name-line share of a sign's tokens depends on block (MI over tokens: block against name/formula).
+- **SB3** Being counted (directly after a numeral) depends on block (MI over tokens).
+- **SB4** A head's class depends on block (MI over classed heads).
+- **SB5** Seal against tablet depends on block (F tokens without copper, MI).
+- **SB6** Mohenjo-daro against Harappa depends on block (F tokens, MI).
+- **SB7** Two blocks cover 50%+ of name-head tokens.
+- **SB8** 80%+ of block-2 fish signs with 10+ tokens are medial (not specialists).
+- **SB9** Block-7 tokens are counted more often than other non-numeral tokens.
+- **SB10** Block-8 signs are specialists (opener or closer) more often than other signs.
+- **SB11** Block-1 tokens are the last body sign more often than other body tokens.
+- **SB12** Adjacent signs are from the same block less often than in within-line shuffles (1,000).
+- **SB13** Opener and head of 2+-sign bodies are from different blocks more often than when heads are shuffled.
+- **SB14** The ending depends on the head's block (MI over distinct names).
+- **SB15** A block's majority role (opener, closer, medial) is the same in A and B for 80%+ of blocks.
+- **SB16** Fairservis category predicts positional role (MI over categorised signs).
+- **SB17** Fairservis category predicts being counted (MI over tokens of categorised signs).
+- **SB18** Block-3 tokens are in formulas more often than other non-numeral tokens.
+- **SB19** Block-5 tokens are the last body sign more often than block-3 tokens.
+- **SB20** Block-9 signs have fewer tokens than other signs (rank test).
