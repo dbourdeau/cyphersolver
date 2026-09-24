@@ -1,6 +1,6 @@
 # Indus script: Parpola's 2005 lecture tested against two corpora
 
-Status: in progress
+Status: in progress (site page unpublished 24 Sept 2026 at the owner's request; the page and the bench were withheld from the repository and kept locally outside it)
 
 Target given: <https://old.harappa.com/script/indusscript.pdf>. It is not an inscription but Asko Parpola,
 "Study of the Indus Script", special lecture at the 50th ICES, Tokyo, 19 May 2005 (Transactions of the
@@ -1051,6 +1051,206 @@ fish series is the exception), X18 (same-value count tokens lie together), X21 (
 siding with Parpola's star names), X22 (90 is a seal sign), X23 (moulded and incised tokens count different values).
 Failed: X9 (fish heads 61% 520, against a strict gender suffix), X11 (740 not followed by a possessed noun, 9%), the
 numeral-like tests X2-X6 (test insensitive), X13 (degenerate), X14 (706 absent from M77). Tally 57 held, 105 failed.
+
+## Thirty-fourth pass (24 Sept 2026): ten best hypotheses
+
+Registered first (PREDICTIONS.md, twentieth set, 999bc85e1), tested (`predict_test20.py`), checked (`robust20.py`).
+Held: Z2 (705 and 706 one sign in the closing formula), Z3 (740 heads are people, weapons, implements, measures:
+47% against 22% without fish), Z6 and Z7 (400 and 740 never begin a line: bound forms), Z8 (count values differ by
+technique in both excavations, differently), Z10 (heads fix endings on seals alone, 81%). Failed: Z1 (numbered-fish
+result holds in B only: withdrawn to suggestive), Z4, Z5 (90 too rare in M77), Z9. Tally 63 held, 109 failed.
+
+## Thirty-fifth pass (24 Sept 2026): how much can be read, and the lines that fit no template
+
+`readable.py` (descriptive): 53% of intact lines fit a template (name + ending 38%, count token 9%, numbers only 4%,
+closing formula 1%, count + other 1%); 43% of sign tokens have a known function (numbers 19%, endings 12%, heading,
+clitics, formula and measure signs 10%, human figures 3%); 57% are content signs known only by position. Registered
+(PREDICTIONS.md, twenty-first set, 17f2f40a7), tested (`predict_test21.py`): bare lines keep the head-final order (R1,
+R3, R4) and on seals are a less formal, regional form (R9, R11, R12), but many are records with numerals (R5), longer
+than names (R19 reverse); tablets close lines with 400 / 90 without an ending (R25); pot marks are single numbers
+(R16, R17); the head / attribute classes cover only half of B's tokens (R14 fails). Tally 73 held, 124 failed.
+
+## Thirty-sixth pass (24 Sept 2026): classes of the content signs
+
+Registered first (PREDICTIONS.md, twenty-second set, 73d793ccb), tested (`predict_test22.py`; 1,000 rather than 10,000
+permutations for Q8, Q9, Q11). The contextual clustering works on Linear B (Q2) but does not gather the Indus
+numerals (Q1 fails), so its 8 clusters are not validated word classes. They are reproducible across transcriptions
+(Q3, Q12), differ in ending (Q5), picture category (Q6), complexity (Q10) and object (Q8), and cover 93% of B's
+tokens (Q13); they are not positional classes (Q4, Q14), human figures scatter (Q7), heads spread (Q15). Tally 81
+held, 131 failed. The site page is withheld (24 Sept); results kept in indus/ only.
+
+## Thirty-seventh pass (24 Sept 2026): ligatures, and a classification that must pass its check
+
+Registered first (PREDICTIONS.md, twenty-third set, 52a1bdcc7), tested (`predict_test23.py`). One held: 555 behaves as
+550 + 482 in sequence (G3, p = 0.0009); 154 as 151 + 740 narrowly misses (p = 0.068); all 4 testable ligatures score
+higher as sequences than as modified bases (G7 fails only on its 5-ligature bar). No clustering variant passes the
+numeral check (C1: left 2.5, right 1.2, both + positions 2.9, k = 12 2.1, bar 3), so the classification lead is
+closed. Tally 82 held, 143 failed.
+
+## Thirty-eighth pass (24 Sept 2026): reading order, numbers, seals as owned objects
+
+Registered first (PREDICTIONS.md, twenty-fourth set, 545049378), tested (`predict_test24.py`). Held: recorded
+left-to-right directions are right (M1) and come from the smaller places (M2); Mahadevan's line order is supported
+(M3); tiered numerals are for 5-8 (M6); bar seals carry suffix-less names (M12). **M4 settles the fuller corpus's line
+order: reversed (13 against 3), as data/corpus.tsv; icit_full.py's listed order is wrong for most multi-line texts**
+(default kept for reproducibility; use LINES_REVERSED = True from now on). Reverse findings: numerals side by side put
+the smaller first (M5); numbers before fish are smaller (M7); after an ending it is always 90 then 400 (M8). Same-name
+seals do not share animal, shape or heading beyond chance (M9-M11). Tally 87 held, 150 failed.
+
+## Thirty-ninth pass (24 Sept 2026): affixed signs, direction, numbers, bar seals
+
+Registered first (PREDICTIONS.md, twenty-fifth set, a68602bb0), tested (`predict_test25.py`, fuller corpus with lines
+reversed). Held: left-to-right writing avoids seals and goes with short texts, other animals and bar seals (O24, O9,
+O8, O20); long-stroke numerals count containers and devices (37% against 3%), short strokes go with fish (O12, O13);
+400 after a name is an incised-tablet feature (O22, O14). Failed: affixed strokes and carets are not written
+sequences (O1-O5); bar seals later only narrowly (O15: MD p = 0.041, Harappa 0.054). Tally 95 held, 167 failed.
+
+## Fortieth pass (24 Sept 2026): tablet records, numbers, direction, variants
+
+Registered first (PREDICTIONS.md, twenty-sixth set, 2b74eaca1), tested (`predict_test26.py`). Held (15): incised name
+tablets with 400 are a Harappa-only genre (T10, 83 of 83) naming seal-holders (T4, 53% of names also on seals against
+23% on moulded), mostly persons (T7), without the heading (T5), counting in long strokes (T3) but never in 700 (T9
+fails), numbers before the name (T2 reverse), earlier not later (T6 reverse); the long count's value depends on the unit
+(N1); fish take the stroke pair (N2); tiered numerals can head a name (N7); counts close lines (N5); tablets count long
+(N6); direct writing runs left to right more (D2); affixed variants are attributes that alternate with their base (V2,
+V3, V4); copper tablets carry no endings (X2). Tally 110 held, 177 failed.
+
+## Forty-first pass (24 Sept 2026): the Harappa name records, numbers, labels
+
+Registered first (PREDICTIONS.md, twenty-seventh set, 687e3fdd9), tested (`predict_test27.py`). The name tablets are
+copies: same-name tablets carry the same number in all 25 pairs (L2 fails) and lie in one level (L3, 86%); the format is
+'[number] [short name]-740 400', 400 always last (L5), names shorter than on seals (L6), numbers unlike the tokens'
+(L9). The stroke-pair fish take 520 (L11, +39 points). 700 is counted 3, 740 counted 2 (L12). Long strokes open lines
+(L15) and count containers on seals too (L25). Fish variants alternate with 220 (L16). Pots run left to right 20% (L19);
+copper-tablet texts are recurring labels (L21). Tally 121 held, 191 failed.
+
+## Forty-second pass (24 Sept 2026): receipts, the fish split, units, habits
+
+Registered first (PREDICTIONS.md, twenty-eighth set, 2bef1f5f1), tested (`predict_test28.py`). Receipts name a
+seal-holder by the end of the seal name (E3, 51 of 83; E4, half one sign), copies buried together (E1), numbers 1-2
+(E21), never a human head (E22 reverse). '32 740' is a later formula, tokens earlier, larger counts deeper (E7, E20).
+The stroke pair belongs with the fish and those names carry the heading (E11, E12). In every notation the number
+depends on the following sign: numeral + sign pairs are idioms, not free counts (E14-E16). Copper tablets carry no
+numbers (E19). Tally 135 held, 202 failed.
+
+## Forty-third pass (24 Sept 2026): receipts, number idioms, titled names
+
+Registered first (PREDICTIONS.md, twenty-ninth set, 0c033b95c), tested (`predict_test29.py`). Receipts name Harappa's own
+seal-holders (J1: 76% of matches at Harappa against 17% of seal names) who are persons (J3: 98% 740), by a head sign
+(J2: 82%). Numeral + sign are bound idioms (J7: split by a line 6% against 26%; J8: the commonest value 70% per sign);
+'numeral + 700' is a tablet formula (J25: 4 of 1,607 seals). Stroke-pair fish names are seal names with the 861
+heading (J12, J13). Count tokens shift from incised to moulded over time (J16); other-animal seals carry more numerals
+(J20). J21 invalid (the heading contains the stroke pair). Tally 145 held, 217 failed.
+
+## Forty-fourth pass (24 Sept 2026): the Harappa system in detail
+
+Registered first (PREDICTIONS.md, thirtieth set, 9a7a91f7d), tested (`predict_test30.py`). Receipts lie near the seals
+of the people they name (HA1); moulded name tablets are a different genre (HA5); a receipt head is shared by several
+seal-holders (HA3). **Correction: the receipt number stands inside the name, never directly before it (HA6, 0 of 19):
+it is a name idiom, not a count.** Moulded tokens count less (HA11). Headed stroke-pair fish names are mostly 740
+(HA15 reverse). Other-animal seals: more 520 names, shorter names (HA16, HA17). Copper tablets: never headed, all
+Mohenjo-daro (HA20, HA21); small objects carry labels (HA22). Tally 154 held, 233 failed.
+
+## Forty-fifth pass (24 Sept 2026): labels, moulded names, idioms, the heading
+
+Registered first (PREDICTIONS.md, thirty-first set, a05254f78), tested (`predict_test31.py`). **Copper tablets: same
+text, same picture in 92% of pairs (I3); no copper text is a seal name (I1, 0 of 139); different openers (I4), fewer
+fish (I2): the text names or describes what is pictured.** Moulded name tablets carry 520, the heading, later dates
+(I8, I9, I12); receipts are 740 persons without fish (I14). Numeral idioms are whole names or heads (I15, I16). The
+heading never changes the ending (I18, 14 of 14); Kalibangan uses it less (I25). Tally 168 held, 244 failed.
+
+## Forty-sixth pass (24 Sept 2026): pictures as outside labels for meaning
+
+Registered first (PREDICTIONS.md, thirty-second set, f084a687c), tested (`predict_test32.py`). **Correction: the
+'firm' copper equations of the sign list (341 rhino, 749 / 778 goat, 753 hare) never occur in the copper labels of their
+own picture in the ICIT texts (CT5: 0); they came from Parpola's reverse drawings and are withdrawn as text anchors.**
+The moulded anchors hold (CT9). Copper labels are picture-specific names (CT1 markers: hare 705 321 235, elephant 923
+706, goat 3 421 176 100 790, anthropomorph 61 806 850 900; CT2 one or two texts per picture; CT3 shared final element;
+CT22 head before 740 in 34 of 36). Moulded: same text, same picture 95% (CT7). No link across object types (CT6, CT10,
+CT14, CT24, CT25 fail). Tally 176 held, 261 failed.
+
+## Forty-seventh pass (24 Sept 2026): picture markers across label genres
+
+Registered first (PREDICTIONS.md, thirty-third set, 3a63231fc), tested (`predict_test33.py`; 1,000 permutations for
+PL2, PL12, PL16). The label head depends on the picture on copper (PL1) and moulded tablets (PL11); copper labels of one
+picture have one length (PL6), no marker is an animal sign (PL5). **Nothing crosses to seals**: elephant seals never
+carry 923 / 706 (PL17), goat seals never the goat markers (PL18), seal animals have no markers (PL15). Parpola's
+equations are reverse-side substitutions: 8 of his 10 linked groups pair an image reverse with a single-sign reverse
+over the same inscription (PL3). Tally 184 held, 278 failed.
+
+## Forty-eighth pass (24 Sept 2026): labels against names, and the labels' dates
+
+Registered first (PREDICTIONS.md, thirty-fourth set, 5d8261ae3), tested (`predict_test34.py`; LB10 1,000 draws). The
+unicorn moulded labels carry a titled 520 fish name (LB11, LB12), but 29 of 39 are one text, '501 405 2 240 520'; the
+anthropomorph copper labels all end in 740 (LB17), one text '806 845 61 407 850 900 740': both single-text results.
+Label heads are name heads in seal names (LB1, LB2 reverse). Moulded labels share the seal vocabulary, copper labels do
+not (LB4). Harappa moulded pictures change over time and were made in batches (LB7, LB9, LB10). Tally 193 held, 294
+failed.
+
+## Forty-ninth pass (24 Sept 2026): the core findings, city by city
+
+Registered first (PREDICTIONS.md, thirty-fifth set, 38d6a2fff), tested (`predict_test35.py`). **Robust in both
+Mohenjo-daro and Harappa**: the last sign decides the ending (SR1), heads are a small inventory (SR2), human heads take
+740 without exception (SR3, 53/53 and 26/26), the head fixes the ending (SR16), affixed fish are attributes (SR8),
+tiered numerals write 5-8 (SR10), long strokes count containers (SR11), the number depends on the following sign
+(SR12), long numbers open lines (SR20), frequent signs are simpler (SR18). Rule transfer between cities 88.6% / 93.2%
+(SR4, just under the bar one way). **Harappa-only**: stroke pair + fish (SR9), tablets varying in numbers (SR13),
+longer unicorn texts (SR14), seals avoiding left-to-right (SR19). Too few cases per city: SR5, SR6, SR7, SR15, SR17.
+Tally 203 held, 304 failed.
+
+## Fiftieth pass (24 Sept 2026): the core findings beyond the two cities and over time
+
+Registered first (PREDICTIONS.md, thirty-sixth set, b48cd1e3a), tested (`predict_test36.py`). At the other sites
+(491 objects) seven of the ten core findings hold (OS1, OS8, OS10, OS11, OS12, OS20, OS18). **The head-to-ending rule
+of the two cities does not transfer to them (OS4: 81.2% against an 83.3% baseline)**: the last sign decides the ending
+everywhere, but which ending a head takes is local. Unicorn seals carry longer texts at the other sites too (OS14): a
+Mohenjo-daro exception, not a Harappa habit. Over time at Mohenjo-daro only the number-sign dependence holds in both
+periods (OT12); the others lack power in one. Tally 212 held, 315 failed.
+
+## Fifty-first pass (24 Sept 2026): regional name habits (round 1 of 10)
+
+Registered first (PREDICTIONS.md, thirty-seventh set, f8c01f9fa), tested (`predict_test37.py`, helpers `rtools.py`).
+Names look alike across regions (RG1-RG5, RG8-RG10 fail); four Sindh-only heads (RG6) and regional numeral notation
+(RG7) hold. Tally 214 held, 323 failed.
+
+## Fifty-second pass (24 Sept 2026): the longest texts (round 2 of 10)
+
+Registered first (thirty-eighth set, d09e1ff3d), tested (`predict_test38.py`; LT6 1,000 shuffles). Long lines hold two
+endings more (LT1), numbers more (LT3), recur less (LT7); they are not two attested texts joined (LT6: 0 of 210), not
+more titled, not off the seals. Single longer compositions. Tally 217 held, 330 failed.
+
+## Fifty-third pass (24 Sept 2026): Harappa over time (round 3 of 10)
+
+Registered first (thirty-ninth set, dc9014a5d), tested (`predict_test39.py`). Grammar and numbers stable across
+Harappa's levels (HT1-HT3); receipts, larger counts and left-to-right writing are earlier, and the heads change (HT5,
+HT6, HT9, HT10); the 520 share is stable (HT7). Tally 224 held, 333 failed.
+
+## Fifty-fourth pass (24 Sept 2026): the core in Mahadevan's transcription (round 4 of 10)
+
+Registered first (fortieth set, b28b2cdfb), tested (`predict_test40.py`). Nine of ten core findings replicate on B
+alone (number system, affixed fish, head-ending rule, fish variants, number idioms); long lines with two names narrowly
+miss (MB8, p = 0.060). Tally 233 held, 334 failed.
+
+## Fifty-fifth pass (24 Sept 2026): repeated and doubled signs (round 5 of 10)
+
+Registered first (forty-first set, cfaa7469f), tested (`predict_test41.py`). Adjacent doubles are deliberate and
+non-adjacent repeats inside a name are avoided (DB1, DB6). A doubled sign is not a variant of the single sign (no
+alternation, DB4) and doubling is not tied to genre, site or line length; nearly half the doubles are sign 615. Tally
+236 held, 341 failed.
+
+## Fifty-sixth pass (24 Sept 2026): sign order inside the name (round 6 of 10)
+
+Registered first (forty-second set, df6bc48ae), tested (`predict_test42.py`). Sign order in name bodies behaves as a
+single transitive ranking of slots (5% cyclic triples), identical across transcriptions and cities; names extend to the
+left of the head, and the head is best predicted by its neighbour. Individual pairs still vary in order. Tally 244 held,
+343 failed.
+
+## Fifty-seventh pass (24 Sept 2026): the slot ranking (round 7 of 10)
+
+Registered first (forty-third set, 57cc9703f), tested (`predict_test43.py`). A one-number rank per sign predicts about
+70% of adjacent orders out of sample (A to B, city to city, seals to other objects); the pairwise order is transitive
+but not reducible to a scalar position. Rank is stable over body length; inversions sit in one-off names. Tally 247
+held, 350 failed.
 
 ## Limitations
 

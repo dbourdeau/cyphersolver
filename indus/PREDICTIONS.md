@@ -1070,3 +1070,1555 @@ testable in B, which fails it as registered, and the set was rerun with the same
   are not seal names), X20, X24, X25 fail.
 
 Tally, counting parts: 57 held, 105 failed (162 registered).
+
+# Twentieth set, registered before testing (24 September 2026): ten hypotheses
+
+Conventions as the nineteenth set (A, B, F; names; Fairservis categories; M = the M77 multi-line texts, lines as
+listed and reversed, both required; 10,000-draw permutations; p < 0.05).
+
+- **Z1 Numbered fish are star names, in each transcription.** X21 (fish-headed names with a numeral before the head
+  take 520 more often) holds in A and in B separately, length-stratified.
+- **Z2 705 and 706 are one sign.** In A, 705 and 706 share more (left, right) neighbour frames than random sign pairs
+  matched on the two signs' token-count quintiles (rank among 10,000 draws).
+- **Z3 740 is the class of persons and their occupations.** Categorised heads of 740 names are human figures, weapons,
+  implements or measures (Fairservis A, H, I, K) more often than categorised heads of 520 names (pooled A + B, Fisher).
+- **Z4 Moulded count tokens were made in one episode per mould.** At Harappa, identical moulded count tokens (TAB:B, same
+  text 'N 700') lie closer in depth than identical incised ones (TAB:I): median depth difference of same-text pairs,
+  incised minus moulded > 0, type labels permuted among the tokens (F).
+- **Z5 90 is a clitic.** In M, 90 begins a line less often than other signs do (share of its tokens that are
+  line-initial in non-first lines, Fisher against all other tokens).
+- **Z6 400 is a clitic.** The same for 400.
+- **Z7 740 is a suffix.** The same for 740.
+- **Z8 The value mix of count tokens replicates across excavations.** X23 (moulded and incised tokens carry different
+  values) holds separately in the HARP tokens (field 9 = '3') and in Vats's (field 10 'Stratum ...') (F, MI beyond
+  permutation each).
+- **Z9 Names on tablets are incised.** Incised tablets (TAB:I) carry an ending (740 / 520) more often than moulded
+  ones (TAB:B), length-stratified (F).
+- **Z10 The head fixes the ending on seals alone.** On F seals (one name per object), 80%+ of heads with 5+ names take
+  one ending in 90%+ of them.
+
+## Results of the twentieth set (added after the test; `predict_test20.py`, `results/predict_test20.md`; check after the test `robust20.py`, `results/robust20.md`)
+
+Six held, four failed.
+
+- **Z1 fails**: the numbered-fish result (X21) holds in B (11 of 12 take 520 against 12 of 23, p = 0.008) but not in A
+  (49 of 77 against 48 of 85, +10 points, p = 0.14). The one structural result siding with Parpola's star names is
+  not replicated in the larger transcription; it is withdrawn to 'suggestive'.
+- **Z2 holds**: 705 and 706 share 17 frames, nearly all before 33 after a fish or number sign (220_33, 231_33, 233_33,
+  235_33, 240_33, 31_33), p = 0.0001. With M77 not separating them (X14), 705 and 706 are best treated as one sign in
+  the closing formula.
+- **Z3 holds**: categorised heads of 740 names are humans, weapons, implements or measures in 331 of 818 (40.5%),
+  heads of 520 names in 7 of 155 (4.5%). Check without fish heads on either side: 47.4% against 21.9% of 32 (p =
+  0.003). The person class holds people and the tools of trades; the other class does not.
+- **Z6 holds, Z7 holds**: in M77's multi-line texts, 400 begins a line in 1-2 of 105 tokens and 740 in 3-10 of 233,
+  against 19-20% for other signs. Both behave as bound forms that never start a line, as suffixes and clitics do.
+  **Z5 fails** for 90 (1 of 12; too few tokens in M77 to test).
+- **Z8 holds**: moulded and incised count tokens carry different values in both excavations (HARP p = 0.005, Vats
+  p = 0.004), but not in the same way: in HARP the incised tokens are mostly 4, in Vats's mostly 3 and the moulded
+  ones rarely 4. The quantities belong to batches or periods, not fixed to the technique.
+- **Z10 holds**: on seals alone, 35 of 43 heads (81%) take one ending in 90%+ of their names; the exceptions are again
+  the fish series (220, 233, 240, 231, 235), 460, 400 and 920.
+- Z4 fails (identical moulded tokens do not lie closer together than identical incised ones), Z9 fails (incised
+  tablets do not carry endings more often than moulded ones).
+
+Tally, counting parts: 63 held, 109 failed (172 registered).
+
+# Twenty-first set, registered before testing (24 September 2026): the lines that fit no template
+
+A descriptive count (results/readable.md) found that 47% of intact lines fit none of the established templates (name +
+ending, count token 'N 700', numbers only, closing formula). 'Bare line' = a line of 2+ signs that is none of these.
+Hypothesis: most bare lines are names written without their suffix. Conventions as the twentieth set (A, B, F; names;
+head and attribute classes as K, from A; 10,000-draw permutations; p < 0.05; A and B both where named).
+
+Bare lines as names without the suffix
+- **R1** The last sign of a bare line is a head-class sign more often than a random other sign of the same line (paired
+  permutation). A and B.
+- **R2** The last sign of a bare line is a sign that ends name bodies elsewhere (last body sign of some name in the
+  sample) more often than a random other sign of the line. A and B.
+- **R3** Bare lines equal an attested name body more often than their own sign-order shuffles. A and B.
+- **R4** The adjacent pairs of bare lines occur inside name bodies more often than the pairs of shuffled bare lines. A
+  and B.
+- **R5** Bare lines contain a numeral more often than name lines, length-stratified (they include records, not only
+  names). A and B.
+- **R6** In lines ending with 400 not after an ending ('body + 400'), the part before 400 is an attested name body more
+  often than when shuffled (pooled A + B).
+- **R19** Bare lines are shorter than name lines with their ending removed (rank test). A and B.
+- **R22** Human-figure signs in bare lines stand last in 70%+ of cases (pooled).
+- **R23** Fish signs (signs.FISH) in bare lines stand last more often than first (pooled, sign test).
+- **R24** Bare lines end in a jar variant (741 / 742 / 745) more often than those signs stand at a random other
+  position of bare lines (pooled): a variant ending.
+
+Bare lines by object, place and time (F)
+- **R7** Bare seal lines end in a head-class sign more often than bare tablet lines.
+- **R8** Bare tablet lines end in an attribute-class sign more often than bare seal lines.
+- **R9** Seal lines are bare more often outside Mohenjo-daro and Harappa.
+- **R10** Seal lines are bare more often in later levels, at both Mohenjo-daro and Harappa.
+- **R11** Bare seal lines are on non-unicorn seals more often than seal names are.
+- **R12** Bare seal lines carry the heading less often than seal names, length-stratified.
+- **R18** Distinct bare tablet texts recur on 2+ tablets more often than distinct tablet name texts.
+- **R25** Bare lines ending in 400 or 90 (a clitic without an ending) are on tablets more often than on seals.
+
+Word classes and coverage
+- **R13** Position classes carry across transcriptions: of signs with 10+ name tokens in both A and B, 80%+ have the
+  same majority position (first / inside / last) in both.
+- **R14** Classes from A (numerals; grammar signs 740, 520, 90, 400, 151, 817, 820, 861, 2; formula signs 705, 706, 33;
+  head and attribute classes) cover 70%+ of B's tokens.
+
+Counts and pots (F)
+- **R15** Numerals on pots are short-stroke more often than numerals on tablets.
+- **R16** The values of numbers-only pot lines differ from the values of tablet numerals (MI beyond permutation).
+- **R17** 80%+ of numbers-only pot lines are a single numeral sign.
+- **R20** On count tokens with other signs, the other signs follow the 'N 700' pair more often than they precede it.
+- **R21** Mohenjo-daro tablets that are not count tokens carry an ending more often than Harappa ones,
+  length-stratified.
+
+## Results of the twenty-first set (added after the test; `predict_test21.py`, `results/predict_test21.md`)
+
+Ten held, fifteen failed. Bare lines: 1,148 of 2,562 in A, 807 of 1,554 in B.
+
+**Partly names without the suffix.**
+- **R1 holds**: the last sign of a bare line is a head-class sign far more often than a random other sign (discordant
+  229 / 57 in A, 142 / 43 in B; p < 0.0001 both). **R4 holds**: their adjacent pairs are pairs found inside name
+  bodies (34% and 28%, p = 0.0001). **R3 holds**: a few are exact name bodies (13 of 1,148, 29 of 807; more than
+  shuffled order, p = 0.003, 0.0001). The head-final order of names holds without the suffix.
+- On seals the suffix-less lines have a profile: **R9** commoner outside Mohenjo-daro and Harappa (56% against 47%,
+  p = 0.002), **R11** commoner on seals with other animals (25% against 20%, p = 0.016), **R12** less often headed
+  (+5.9 points for names, p = 0.004). A less formal or regional way of writing names.
+- But not all: **R5 holds** (bare lines carry numerals more often than names, +18 and +21 points) and R19 fails the other
+  way (bare lines are longer than name bodies, 3.99 against 3.28 and 3.39 against 2.74). **R25 holds** (on tablets a
+  line can close with 400 or 90 and no ending: 18% of bare tablet lines against 7% on seals). R2 fails (in A the last
+  sign is no more often a name-final sign than a random sign), R6 fails (the part before a bare 400 is never a name
+  body: 0 of 143), R7 and R8 fail, R10 fails (suffix-less seal lines are not later), R18 fails, R22 fails (human figures
+  are last in only 42% of their bare-line tokens), R23 and R24 fail.
+
+**Word classes do not yet cover the vocabulary.** R13 fails narrowly (35 of 46 signs, 76%, keep their majority
+position between A and B; bar 80%); R14 fails (the classes from A cover 50.3% of B's tokens; bar 70%): 16 heads and 10
+attributes are too few classes for most of the vocabulary.
+
+**Pots.** **R16 holds** (pot values differ from tablet values: mostly 2 and 3, some 1 and 4; p = 0.010) and **R17 holds**
+(112 of 120 numbers-only pot lines are one numeral sign): pot marks are single numbers. R15 fails (pots do not use the
+short strokes more). R20 and R21 fail.
+
+Tally, counting parts: 73 held, 124 failed (197 registered).
+
+# Twenty-second set, registered before testing (24 September 2026): classes of the content signs
+
+57% of sign tokens are content signs known only by position (results/readable.md), and the head / attribute classes
+cover half of B (R14). A classification of the content signs, fixed here before any result is seen:
+
+**Method.** Content signs = signs with 10+ tokens in sample A that are not numerals (numerals.NUMS), grammar signs
+(740, 520, 90, 400, 151, 817, 820, 861, 2) or formula signs (705, 706, 33). Each sign's context = positive PMI of its
+left and right neighbours in A's lines (line start and end as neighbours), the two halves concatenated and each row
+scaled to unit length, reduced by SVD to 20 dimensions and scaled to unit length again; k-means, k = 8, 50 restarts,
+seed 42. The same procedure is used wherever a clustering is named below. Conventions otherwise as the twenty-first
+set (A, B, F; names; Fairservis categories; 10,000-draw permutations; p < 0.05).
+
+Validation of the method (where the answer is known)
+- **Q1** With the numerals (10+ tokens) added to the signs clustered, two numerals share a cluster at 3+ times the rate
+  of two random signs.
+- **Q2** On Linear B (DAMOS lines, dividers removed, signs with 10+ tokens), two signs of the same kind (syllabogram or
+  word sign) share a cluster more often than under permutation of the kinds.
+
+Transfer to the other transcription
+- **Q3** Content-sign pairs in the same A cluster have more similar B contexts (cosine of positive-PMI vectors, as H3)
+  than pairs in different clusters (cluster labels permuted).
+- **Q12** A clustering of B made by the same method agrees with A's more than chance: pairs of signs together in both
+  (among signs clustered in both) exceed permutation of B's labels.
+- **Q4** The clusters differ in where their tokens stand in B's names (first / inside / last): MI beyond permutation of
+  the sign-to-cluster labels.
+- **Q14** At least half of the clusters have 60%+ of their B name tokens in one position.
+- **Q5** The clusters differ in the ending taken by B names whose last sign they hold (MI beyond permutation).
+- **Q13** Numerals, grammar and formula signs plus the A clusters cover 70%+ of B's tokens.
+
+Meaning, objects, places
+- **Q6** Cluster and Fairservis picture category are associated beyond permutation (MI over categorised content signs).
+- **Q7** Human-figure signs (Fairservis A) share a cluster more often than random pairs of categorised signs.
+- **Q15** Head-class signs (K) are concentrated: one cluster holds half or more of them.
+- **Q8** The cluster mix of content tokens differs between seals and tablets (F, MI beyond permutation of object
+  labels).
+- **Q9** The cluster mix of seal content tokens differs between Mohenjo-daro and Harappa (F).
+- **Q10** The clusters differ in graphic complexity (H5 measure; between-cluster variance beyond permutation).
+- **Q11** The cluster mix of West Asian content tokens differs from home (F; permutation of home / foreign labels
+  among lines).
+
+## Results of the twenty-second set (added after the test; `predict_test22.py`, `results/predict_test22.md`)
+
+Eight held, seven failed. 115 content signs clustered into 8 classes on A. Deviation from the registration: Q8, Q9 and
+Q11 were run with 1,000 permutations, not 10,000 (the smallest possible p is 0.001); Q8's p = 0.0010 sits at that floor.
+
+**The method passes on Linear B and fails on the Indus numerals.**
+- **Q2 holds**: on Linear B the method separates syllabograms from word signs (95% of same-cluster pairs are of one
+  kind, p = 0.0001).
+- **Q1 fails**: added to the Indus clustering, the numerals do not gather (same-cluster rate 1.3 times that of random
+  pairs; bar 3). On this corpus the method does not recover a class known in advance, so its clusters cannot be taken
+  as word classes.
+
+**What the clusters still do.**
+- **Q3 holds** (A's clusters predict B contexts: cosine +0.028, p = 0.0001) and **Q12 holds** (a clustering of B made
+  independently agrees with A's more than chance, 74 pairs, p = 0.0002): the grouping is reproducible across
+  transcriptions, if weak.
+- **Q5 holds** (clusters differ in the ending their names take in B, MI 0.241 bits, p = 0.004): one cluster (7) holds
+  the fish series with 803, 806, 742, 745, i.e. the 520 side.
+- **Q6 holds** (clusters and Fairservis picture categories are associated, MI 1.335 bits over 50 signs, p = 0.005) and
+  **Q10 holds** (clusters differ in graphic complexity, p = 0.010): the contextual grouping partly follows what the
+  signs depict and how they are drawn.
+- **Q8 holds** (seals and tablets use the clusters differently, p = 0.001 at the floor).
+- **Q13 holds**: numerals, grammar and formula signs plus the clustered signs cover 93.2% of B's tokens (the
+  head / attribute classes alone covered 50%, R14). Coverage by a class is not knowledge of the class, given Q1.
+
+**Failed.** Q4 (clusters do not differ in position in B, p = 0.36), Q14 (only 1 of 8 clusters has 60%+ of its tokens in
+one position), Q7 (the human figures fall in five different clusters), Q15 (the head-class signs are spread, at most
+47% in one cluster), Q9 (no difference between Mohenjo-daro and Harappa), Q11 (foreign texts not different, p = 0.09).
+
+The content signs can be grouped reproducibly, and the groups carry some signal (ending, picture, drawing, object), but
+the method fails its Indus check and the groups are not positional word classes. The 57% of content signs remain
+unread and, in any validated sense, unclassified.
+
+Tally, counting parts: 81 held, 131 failed (212 registered).
+
+# Twenty-third set, registered before testing (24 September 2026): ligatures, and a validated classification
+
+Two leads. (1) Fairservis 1992 identifies some signs as combinations of two others (keys/fairservis1992_raw.tsv):
+154 = 151 + 740 (A-8 = A-7 + J-5), 156 = 151 + 520 (A-9 = A-7 + H-5), 555 = 550 + 482 (Q-14 = I-11 + K-1), 742 =
+740 + 2 (Q-17 = J-5 + P-2), 702 = 700 + 2 (Q-15 = J-1 + P-2), 703 = 700 + 3 (Q-16 = J-1 + O-3). If a ligature is
+written for the sequence of its parts, its left neighbours should resemble those of one part and its right neighbours
+those of the other. (2) The twenty-second set's clustering failed its Indus check (Q1): a variant must pass that check
+before its classes are used.
+
+Conventions as the twenty-second set (A, B, F; 10,000-draw permutations or random draws; p < 0.05).
+
+Ligatures (one hypothesis each; tested in A, and in B where the ligature and both parts have 10+ tokens, both
+required; a ligature with under 10 tokens in A is not testable and fails)
+- 'Left' and 'right' vectors = counts of the preceding and following sign (line start and end included). Sequence
+  score of ligature L with parts X, Y = mean of cos(left(L), left(X)) and cos(right(L), right(Y)), taking the better of
+  the two orders (X first or Y first). Null: the same score with X and Y replaced by random signs from X's and Y's
+  token-count quintiles (10,000 draws).
+- **G1** 154 behaves as 151 + 740. **G2** 156 as 151 + 520. **G3** 555 as 550 + 482. **G4** 742 as 740 + 2. **G5** 702
+  as 700 + 2. **G6** 703 as 700 + 3.
+- **G7 Sequence, not modification.** Across the six, the sequence score exceeds the 'modified base' score (mean of
+  cos(left(L), left(X)) and cos(right(L), right(X)), X the pictorial base: 151, 151, 550, 740, 700, 700) for at least 5
+  of the testable ligatures.
+- **G8 The pot-with-strokes signs are counts.** Tablets carrying 702 or 703 are 1-2 signs long more often than other
+  tablets without a count token (F, Fisher).
+
+A classification that passes its own check
+- **C1** Of four variants of the twenty-second set's method, tried in this fixed order, at least one passes the numeral
+  check (numeral pairs share a cluster at 3+ times the rate of all pairs) on A: V1 left contexts only; V2 right
+  contexts only; V3 left + right contexts plus each sign's share of first / inside / last positions in A's names (the
+  three shares scaled by 0.5 and appended after the SVD step); V4 left + right as before with k = 12. The first variant
+  to pass is the chosen one; C2-C5 use it and fail if none passes.
+- **C2** The chosen clusters predict B contexts (as Q3).
+- **C3** The chosen clusters are associated with Fairservis picture categories (as Q6).
+- **C4** Human-figure signs share a chosen cluster more often than random categorised pairs (as Q7).
+- **C5** The chosen clusters differ in position in B's names (as Q4).
+
+## Results of the twenty-third set (added after the test; `predict_test23.py`, `results/predict_test23.md`)
+
+One held, twelve failed.
+
+**Ligatures.**
+- **G3 holds**: 555 (Fairservis Q-14, tongs + carpenter's square) behaves as 550 + 482 in sequence (score 0.621
+  against its matched null, p = 0.0009; A only, too rare in B). A ligature written for the sequence of its parts.
+- G1 fails narrowly (154 as 151 + 740: p = 0.068), G2 fails (156 as 151 + 520: p = 0.11, 0.20), G4 fails (742 as 740 +
+  2: p = 0.51). G5 and G6 are not testable (702 and 703 have 6 and 7 tokens in A), and G8 fails (3 tablets carry them).
+- G7 fails on its count: all 4 testable ligatures score higher as a sequence than as a modified base sign, but the bar
+  was 5 testable ligatures. The direction is consistent; the evidence is thin.
+
+**Classification.** **C1 fails**: none of the four registered variants gathers the numerals at 3 times the base rate
+(left only 2.5, right only 1.2, both + positions 2.9, k = 12 2.1). C2-C5 are therefore not tested. The lead of a
+validated classification of the content signs is closed on this corpus: no contextual clustering tried here recovers
+even the numerals as a class. Left contexts carry more class information than right contexts (2.5 against 1.2), which
+fits the head-final structure: a sign's class shows in what precedes it.
+
+Tally, counting parts: 82 held, 143 failed (225 registered).
+
+# Twenty-fourth set, registered before testing (24 September 2026): reading order, numbers, and seals as owned objects
+
+Twelve hypotheses on questions not yet asked. Conventions as before (A = data/corpus.tsv, which records each text's
+direction; B = M77 additions; F = the fuller corpus, lines as listed; names; head class as K; 10,000-draw
+permutations; p < 0.05; A and B both where named). 'Attested pair' = an adjacent sign pair found in single-line texts
+of the sample other than the text itself.
+
+Reading order
+- **M1 The recorded direction is right.** For A's texts recorded as left-to-right (field 'direction' L/R), the share of
+  their adjacent pairs that are attested pairs is higher read in the recorded order than reversed (paired sign test
+  over texts).
+- **M2 Left-to-right texts come from outside the two big cities** more often than right-to-left texts (A, Fisher).
+- **M3 Line order in M77.** For B's multi-line texts, the pair across each line junction is an attested pair more often
+  with lines as listed than reversed (sign test over junctions that differ).
+- **M4 Line order in the fuller corpus.** The same on F's intact multi-line texts.
+
+Numbers
+- **M5 Compound numbers descend.** Where two stroke numerals stand side by side, the larger value comes first more often
+  than the smaller (sign test). A and B.
+- **M6 The tiered form is for larger numbers.** Among numerals of value 5-8, the tiered form is a larger share than
+  among numerals of value 3-4. A and B.
+- **M7 Numbers before fish are larger.** Numerals directly before a fish sign (signs.FISH) have a higher mean value than
+  numerals directly before other signs (label permutation). A and B.
+- **M8 The clitics have a fixed order.** Where 90 and 400 both follow an ending, 400 comes first more often than not
+  (sign test, pooled A + B).
+
+Seals as owned objects (F, distinct intact seals)
+- **M9 One name, one emblem.** Seals bearing the same name (fourth-set definition) show the same animal (motif field,
+  first word) more often than random pairs of named seals (label permutation over seals).
+- **M10 One name, one seal shape.** Same-name seals share the seal type (SEAL:S square, SEAL:R rectangular, other) more
+  often than random pairs.
+- **M11 One name, one heading.** Same-name seals agree in having or lacking the heading more often than random pairs.
+- **M12 Bar seals carry bare names.** Rectangular seals (SEAL:R) carry lines without an ending more often than square
+  seals (SEAL:S), length-stratified.
+
+## Results of the twenty-fourth set (added after the test; `predict_test24.py`, `results/predict_test24.md`)
+
+Five held, seven failed.
+
+**Reading order.**
+- **M1 holds**: the 103 texts recorded as left-to-right read more familiarly in the recorded order than reversed (78
+  against 3, p < 0.0001): the direction judgments in the ICIT-derived corpus are right.
+- **M2 holds**: left-to-right texts come from outside Mohenjo-daro and Harappa twice as often (29% against 14%,
+  p = 0.0001): the reversed direction belongs to the smaller places.
+- **M3 holds**: in M77's multi-line texts the junction pair is attested more often with lines as listed (57 against 25,
+  p = 0.0003): Mahadevan's line order is supported.
+- **M4 fails, the other way**: in the fuller corpus the junction pair is attested more often with the lines *reversed*
+  (13 against 3; the reverse direction would give p = 0.011). This settles the ambiguity found in the seventh set: the
+  listed line order of icit_full.py is wrong for most multi-line texts, and the whole-string reversal of
+  data/corpus.tsv is right. The seventh set (X1, X2) was run both ways; the later sets that parsed fuller-corpus names
+  from whole texts used the listed order for the multi-line ones (about 4% of seals), so their fuller-corpus counts
+  carry that small error. icit_full.py keeps its default so that past results reproduce; LINES_REVERSED = True is the
+  setting to use from now on.
+
+**Numbers.**
+- **M6 holds**: the tiered form is used for larger numbers (63.5% and 66.2% of values 5-8, against 5.3% and 5.8% of
+  values 3-4): a second row of strokes to keep large numbers readable.
+- M5 fails the other way: side-by-side numerals put the smaller value first (149 against 55; 33 against 16).
+- M7 fails the other way: numbers before fish are smaller on average (2.5 against 3.0; 2.4 against 3.0).
+- M8 fails the other way, with a fixed order: where both clitics follow an ending it is always 90 then 400 (9 to 0).
+
+**Seals as owned objects.**
+- **M12 holds**: rectangular (bar) seals carry lines without an ending more often than square seals (+13.4 points,
+  p = 0.0002): the bar seals, which have no animal, write names without the suffix.
+- M9 fails (same-name seals do not share their animal more than chance: 68%, p = 0.32), M10 fails narrowly (same seal
+  shape 82%, p = 0.078), M11 fails (the heading comes and goes on the same name).
+
+Tally, counting parts: 87 held, 150 failed (237 registered).
+
+# Twenty-fifth set, registered before testing (24 September 2026): affixed signs, direction, numbers, bar seals
+
+Leads from the twenty-third and twenty-fourth sets: one ligature is a sequence of its parts (G3); left-to-right texts
+belong to the smaller places (M2); side-by-side numerals put the smaller first (M5) and the tiered form is for 5-8
+(M6); bar seals carry suffix-less names (M12); the fuller corpus's lines read reversed (M4), so F is read here with
+icit_full.LINES_REVERSED = True. Conventions as before (A with its 'direction', 'type', 'site' and 'motif' fields; B;
+F; names; head class as K; 10,000-draw permutations or draws; p < 0.05; A and B both where named). Regions: Sindh
+(Mohenjo-daro, Chanhu-daro, Allahdino, Amri, Kot Diji, Lakhanjo-daro), Gujarat (Lothal, Dholavira, Surkotada,
+Desalpur, Kanmer, Gola Dhoro, Rangpur), north (Harappa, Kalibangan, Banawali, Rakhigarhi, Farmana, Bhirrana, Rupar);
+others left out.
+
+Affixed signs as sequences (the twenty-third set's sequence score and null; A, and B where all three have 10+ tokens)
+- **O1** 235 (fish under a caret, Fairservis Q-6) behaves as 480 + 220 or 220 + 480.
+- **O2** 231 (fish with a stroke, Q-2) behaves as 220 + 1 (either order).
+- **O3** 415 (comb with a stroke, Q-11) behaves as 400 + 1.
+- **O4** 741 (jar with a stroke, J-6) behaves as 740 + 1.
+- **O5** For all of O1-O4 that are testable, the sequence score exceeds the modified-base score.
+
+Direction (A)
+- **O6** Outside Mohenjo-daro and Harappa, left-to-right texts are a larger share in Gujarat than in the other regions
+  (Fisher).
+- **O7** Left-to-right lines end in an ending less often than right-to-left lines, length-stratified.
+- **O8** Left-to-right seals carry an animal other than the unicorn more often than right-to-left seals.
+- **O9** Left-to-right texts are shorter (rank test).
+- **O23** Moulded tablets (type TAB:B) are left-to-right more often than other objects (a mould reverses the text).
+- **O24** The left-to-right share differs between seals and other objects (Fisher, two-sided).
+
+Numbers (A and B unless said)
+- **O10** Side-by-side numerals mix two notations (short / long / tiered) more often than random pairings of the same
+  numeral tokens would (permutation of the numeral tokens among the pair slots).
+- **O11** In side-by-side pairs with the smaller value first, the second numeral is long-stroke more often than in pairs
+  with the larger first (pooled).
+- **O12** Long-stroke numerals stand before a container or device sign (Fairservis J or K) more often than short-stroke
+  numerals do (pooled).
+- **O13** Numerals before a fish sign are short-stroke more often than numerals before other signs.
+- **O25** Tiered numerals stand inside names (not the name's last sign) more often than short-stroke numerals do.
+
+Bar seals (F, lines reversed)
+- **O15** Bar seals (SEAL:R) are a larger share of seals in later levels, at Mohenjo-daro and at Harappa (Fisher each).
+- **O16** Bar seals come from outside the two cities more often than square seals.
+- **O17** Bar-seal lines carry the heading less often than square-seal lines, length-stratified.
+- **O18** Bar-seal texts are longer than square-seal texts (rank test).
+- **O19** Bar-seal lines end in a head-class sign more often than a random other position of the same line (paired
+  sign test, as R1).
+- **O20** Bar seals are more often left-to-right than square seals (A, types 'SEAL:R' and 'SEAL:S').
+
+Tablets (F)
+- **O21** Distinct moulded-tablet texts recur on 2+ tablets more often than distinct incised-tablet texts.
+- **O22** Tablets with 400 are incised more often than moulded, length-stratified.
+- **O14** Among tablets with a name ending, incised ones carry 400 after it more often than moulded ones.
+
+## Results of the twenty-fifth set (added after the test; `predict_test25.py`, `results/predict_test25.md`)
+
+Eight held, seventeen failed. The fuller corpus was read with lines reversed (M4).
+
+**Affixed signs are not sequences.** O1-O4 fail: the fish with a caret (235), the fish with a stroke (231), the comb with
+a stroke (415) and the jar with a stroke (741) do not behave as their base followed by the added mark (p = 0.28 to
+0.97); O5 fails (3 of 4 score higher as sequences, the bar was all). Only 555 (G3), a combination of two full signs,
+behaved as a sequence. The added strokes and marks modify a sign inside itself; they are not suffixes written into it.
+
+**Direction.**
+- **O24 holds**: left-to-right texts are rarer on seals (2.5%) than on other objects (6.1%, p < 0.0001). **O9 holds**:
+  they are shorter. **O8 holds**: left-to-right seals carry an animal other than the unicorn 59% of the time against
+  20% (10 of 17, p = 0.0005). **O20 holds**: bar seals run left to right twice as often as square seals (4.3% against
+  2.0%, p = 0.035). A seal is cut in mirror image; the left-to-right seals are the less formal ones, the short texts,
+  the other animals and the bar seals.
+- O6 fails (not a Gujarat habit: 6.2% against 6.6%), O7 fails (left-to-right lines carry endings as often), O23 fails
+  narrowly (moulded tablets 5.3% against 3.8%, p = 0.096).
+
+**Numbers: two systems for two things.**
+- **O12 holds**: long-stroke numerals stand before a container or device sign (Fairservis J, K) in 37% of cases,
+  short-stroke numerals in 3% (p < 0.0001). **O13 holds**: numerals before fish signs are short-stroke (64% and 66%
+  against 50% and 30%). Long strokes count measures and containers (the tablets' 'N 700' is one case of it); short
+  strokes go with the fish names.
+- O10 fails (side-by-side numerals mix notations no more than chance), O11 fails the other way (in smaller-first pairs
+  the second numeral is rarely long: 9% against 52%), O25 fails the other way (tiered numerals stand last in a name
+  more often than short ones: 18% against 2%).
+
+**Bar seals.** O15 fails narrowly: bar seals are a larger share of later seals at Mohenjo-daro (16.4% against 10.8%,
+p = 0.041) and at Harappa (26.8% against 15.6%, p = 0.054), short of the bar at Harappa. O16, O17, O18, O19 fail (not
+from smaller places, not less headed, not longer, their lines not more head-final).
+
+**Tablets.** **O22 holds** (tablets with 400 are incised more often, +12.2 points, p = 0.0002) and **O14 holds** (name
+tablets with an ending carry 400 after it 48.5% of the time when incised, 24.3% when moulded, p < 0.0001): 400 after
+the name is a feature of the written, incised tablets. O21 fails.
+
+Tally, counting parts: 95 held, 167 failed (262 registered).
+
+# Twenty-sixth set, registered before testing (24 September 2026): tablet records, numbers, direction, variants
+
+Leads: 400 after a name belongs to incised tablets (O14, O22); long strokes count containers and devices, short strokes
+go with fish, tiered strokes write 5-8 and often stand last (O12, O13, M6, O25); left-to-right writing avoids seals
+(O24); affixed marks modify a sign rather than add a suffix (O1-O5). Conventions as before (A with 'direction', 'type',
+'site', 'motif'; B; F read with lines reversed; names; head class as K; Fairservis categories; 10,000-draw
+permutations; p < 0.05; A and B both where named). 'Name tablet' = an incised tablet (TAB:I) with a 740 / 520 ending;
+'with 400' = the ending directly followed by 400. Length strata: 2-3, 4-5, 6+.
+
+Tablet records (F)
+- **T1** Name tablets with 400 carry a numeral more often than name tablets without 400, length-stratified.
+- **T2** On name tablets with 400 and a numeral, the numeral stands after the ending more often than before the name.
+- **T3** Numerals on name tablets are long-stroke more often than numerals on seals.
+- **T4** Name bodies on incised tablets are attested as seal name bodies more often than name bodies on moulded tablets.
+- **T5** Name-tablet lines carry the heading less often than seal lines with an ending, length-stratified.
+- **T6** Incised tablets are a larger share of Harappa tablets in later levels (HARP 3C, Vats I-III) than earlier.
+- **T7** Names on name tablets end in 740 more often than names on seals.
+- **T8** On tablets, a 400 not after an ending follows a head-class sign more often than a random other position of the
+  same line (paired sign test).
+- **T9** On name tablets with a long-stroke numeral, 50%+ of those numerals are followed by 700.
+- **T10** Name tablets with 400 come from Harappa more often than other tablets do.
+
+Numbers
+- **N1** Among long-stroke numerals directly before a non-numeral sign, the value depends on the sign (MI beyond
+  permutation of values). A and B.
+- **N2** The values of numerals directly before a fish sign are distributed differently from those before other signs
+  (MI beyond permutation). A and B.
+- **N5** A long-stroke numeral + a Fairservis J or K sign ends its line more often than a short-stroke numeral + any
+  sign (pooled A + B).
+- **N6** Numerals on tablets are long-stroke more often than numerals on seals (F).
+- **N7** Tiered numerals are directly followed by the ending (740 / 520) more often than short-stroke numerals. A and B.
+
+Direction (A)
+- **D1** Copper tablets (type TAB:C) run left to right more often than other objects.
+- **D2** Objects written directly (TAB:I, TAB:C, POT, TAG) run left to right more often than carved or moulded ones
+  (SEAL, TAB:B).
+- **D3** Left-to-right lines carry the heading less often than right-to-left lines, length-stratified.
+
+Affixed variants (pooled A + B)
+- **V2** The jar variants 741, 742, 745 end their line in under 10% of their tokens.
+- **V3** Base and affixed variant alternate in the same names: pairs of distinct names that differ only by 220 / 231,
+  400 / 415 or 740 / 741 at one position are more numerous than such pairs for random sign pairs matched on the two
+  signs' token-count quintiles (10,000 draws of three pairs).
+- **V4** The affixed fish variants (231, 233, 235, 240) are the last sign of a name less often than the plain fish 220.
+
+Other objects, places and time
+- **X1** Names on sealings (TAG) end in 740 more often than names on seals (F).
+- **X2** Copper tablets (TAB:C) carry an ending less often than seals, length-stratified (A).
+- **S5** The balance of 740 and 520 among seal names differs by region (Sindh / Gujarat / north, as the twenty-fifth
+  set; MI beyond permutation) (F).
+- **S6** At Mohenjo-daro the share of 520 among seal names differs between earlier and later levels (Fisher, two-sided)
+  (F).
+
+## Results of the twenty-sixth set (added after the test; `predict_test26.py`, `results/predict_test26.md`)
+
+Fifteen held, ten failed. 167 name tablets (incised, with an ending), 83 of them with 400 after the ending.
+
+**The incised name tablets are a Harappa record of seal-holders.**
+- **T10 holds**: all 83 name tablets with 400 come from Harappa (against 78% of other tablets).
+- **T4 holds**: 53% of the names on incised tablets are also found on seals, against 23% of those on moulded tablets
+  (p < 0.0001): the incised tablets name people who held seals.
+- **T7 holds** (their names end in 740, the person class, 88.6% against 81.8% on seals, p = 0.018) and **T5 holds**
+  (they carry the heading far less than seals: 22 points, p = 0.0001): names without the title formula.
+- **T3 holds**: their numerals are long-stroke (68.5% against 31.9% on seals).
+- T2 fails the other way: on name tablets with 400 and a number, the number stands before the ending in all 19 (none
+  after). T9 fails: their long numerals are never followed by 700 (0 of 37): they count something other than the
+  tokens' measure. T1 fails (400 does not make a number more likely), T6 fails the other way (incised tablets are
+  earlier, not later: 64% of earlier Harappa tablets, 35% of later), T8 fails (a bare 400 does not follow a head).
+
+**Numbers.**
+- **N1 holds**: the value of a long-stroke count depends on what is counted (MI 1.14 and 0.63 bits, p = 0.0001 both):
+  each unit has its usual counts.
+- **N2 holds**: fish take their own numbers, overwhelmingly the pair of strokes (value 2: 211 of 300 in A, 85 of 104 in
+  B), with 6 and 12 next.
+- **N7 holds**: tiered numerals stand directly before the ending 10.6% and 14.6% of the time, short ones under 1%:
+  a tiered number can be the head of a name.
+- **N5 holds**: a long-stroke count with a container or device sign closes its line 86% of the time (short numerals
+  29%).
+- **N6 holds**: tablet numerals are long-stroke 69%, seal numerals 32%.
+
+**Direction.** **D2 holds**: objects written directly (incised tablets, copper tablets, pots, tags) run left to right
+7.0% of the time, carved and moulded ones 3.2% (p = 0.0001). D1 fails (no copper tablet runs left to right: 0 of 149),
+D3 fails.
+
+**Affixed variants.** **V2 holds** (the jar variants end a line only 6% of the time), **V4 holds** (the affixed fish are
+the last sign of a name 19% of the time, the plain fish 35.5%: the affix makes an attribute), **V3 holds** (base and
+affixed variant alternate in otherwise identical names more than random sign pairs: 220 / 231 8 pairs, 740 / 741 2,
+400 / 415 0; p = 0.026, carried by the fish). The affixed forms behave as modified forms of the same sign, used in
+front of a head.
+
+**Other.** **X2 holds** (copper tablets carry endings 12 points less than seals: labels, not names). X1 fails narrowly
+(sealing names 740 in 91% against 82%, p = 0.083). S5 and S6 fail: the 740 / 520 balance does not differ by region or
+change at Mohenjo-daro over time.
+
+Tally, counting parts: 110 held, 177 failed (287 registered).
+
+# Twenty-seventh set, registered before testing (24 September 2026): the Harappa name records, numbers, labels
+
+Leads: incised name tablets with 400 are a Harappa genre naming seal-holders, with the number before the ending (T2-T10);
+each long-count unit has its usual values (N1); fish take the stroke pair (N2); affixed variants are attributes that
+alternate with their base (V2-V4); direct writing runs left to right more (D2); copper tablets are labels (X2).
+Conventions as the twenty-sixth set (F read with lines reversed; 'name tablet' = TAB:I with a 740 / 520 ending; A, B;
+names; Fairservis categories; 10,000-draw permutations; p < 0.05; A and B both where named).
+
+The Harappa name records (F)
+- **L1** On name tablets with a number, the number is the text's first sign in more than half.
+- **L2** Pairs of name tablets with the same name body and a number each carry different numbers in more than half.
+- **L3** Name tablets with the same name body share a Harappa level more often than random pairs of name tablets
+  (level labels permuted).
+- **L4** Name bodies found both on name tablets and on seals are found on Harappa seals more often than Harappa's share
+  of seal names predicts (binomial).
+- **L5** On name tablets, 400 ends the text in 80%+ of cases.
+- **L6** Name bodies on name tablets are shorter than name bodies on seals (rank test).
+- **L7** The values of numbers on name tablets are distributed differently from those of numbers on seals (MI beyond
+  permutation).
+- **L8** Incised tablets without an ending end in 400 more often than moulded tablets without an ending.
+- **L9** The values of numbers on name tablets are distributed differently from the values of count tokens (N 700).
+- **L23** Harappa seals whose name is also on a name tablet are unicorn seals more often than other Harappa seals.
+- **L24** Seal names also found on name tablets end in 740 more often than other seal names.
+
+Numbers
+- **L10** The stroke pair and a following fish (2 + a signs.FISH sign) are split by a line break less often than other
+  gaps (M77 multi-line texts, both line orders).
+- **L11** Fish-headed names with the stroke pair (2) inside take 520 more often than fish-headed names without a
+  numeral (pooled A + B, length-stratified).
+- **L12** Of long-count units (a J or K sign directly after long-stroke numerals 10+ times, pooled A + B), 80%+ have one
+  value in half or more of their counts.
+- **L13** Names headed by a tiered numeral (tiered numeral directly before the ending) are on seals more often than on
+  tablets, relative to all names with an ending (F).
+- **L14** Names headed by a tiered numeral carry the heading more often than other names, length-stratified (pooled).
+- **L15** Long-stroke numerals open their line more often than short-stroke numerals. A and B.
+- **L25** On seals too, long-stroke numerals stand before J / K signs more often than short-stroke numerals (F).
+
+Affixed variants (pooled A + B)
+- **L16** The fish variants 233, 235 and 240 alternate with 220 in otherwise identical names more than random sign
+  pairs matched on token quintiles.
+- **L17** Names whose last sign is an affixed fish (231, 233, 235, 240) take 520 less often than names ending in 220.
+
+Direction (A)
+- **L18** Incised tablets (TAB:I) run left to right more often than moulded tablets (TAB:B).
+- **L19** Pots run left to right more often than seals.
+
+Labels and other genres
+- **L20** Copper-tablet texts are shorter than seal texts (A, rank test).
+- **L21** Distinct copper-tablet texts recur on 2+ tablets more often than distinct seal texts (A).
+- **L22** Pot texts with an ending carry a numeral less often than tablet texts with an ending, length-stratified (F).
+
+## Results of the twenty-seventh set (added after the test; `predict_test27.py`, `results/predict_test27.md`)
+
+Eleven held, fourteen failed.
+
+**The Harappa name tablets are issued in identical sets.**
+- L2 fails decisively: the 25 pairs of name tablets that name the same person and carry a number carry the *same*
+  number, every one (0 differ). **L3 holds**: same-name tablets lie in the same level 86% of the time (p = 0.001). They
+  are not a running account of deliveries but copies of one record, made together, like the count tokens (Z).
+- **L5 holds**: 400 after the name ends the text in all 83 cases. **L6 holds**: the names on these tablets are shorter
+  than seal names (p = 0.0001). **L9 holds**: their numbers are not the count tokens' numbers (mostly 2 and 1, against
+  the tokens' 3, 4, 2).
+- L1 fails (the number opens the text in 46% only), L4 fails (the named people are not significantly Harappa
+  seal-holders: 7 of 22 against 19%, p = 0.11), L7 fails (the numbers are not unlike seal numbers), L8 fails the other
+  way, L23 and L24 fail.
+- The record: '[number] [short name]-740 400', copied several times in one batch. The format fits a tally or receipt
+  issued to a named person in multiple copies; it does not say what was counted.
+
+**Numbers.**
+- **L11 holds**: fish-headed names with the stroke pair inside take 520 far more often than fish names without a numeral
+  (+38.7 points, p = 0.0004). The stroke-pair fish (Parpola's 'intermediate space + fish') are the 520 side of the fish.
+- **L12 holds**: the two long-count units with 10+ counts each have a usual value: 700 is counted 3 (150 of 249), 740
+  is counted 2 (62 of 82).
+- **L15 holds**: long-stroke numerals open their line more often than short ones (29.5% against 14.8%; 57.2% against
+  20.6%). **L25 holds**: on seals too, long strokes stand before containers and devices (11.5% against 2.5%).
+- L10 fails narrowly (the stroke pair before a fish is split by a line once or twice in 25-26 cases against 22%; p =
+  0.055 as listed, 0.017 reversed). L13, L14 fail.
+
+**Variants.** **L16 holds**: the fish variants 233, 235 and 240 alternate with the plain fish 220 in otherwise identical
+names (31 pairs, p = 0.0001). L17 fails the other way (names ending in an affixed fish take 520 more, 72% against 63%,
+not significant).
+
+**Direction and labels.** **L19 holds**: pots run left to right 20% of the time, seals 2.5%. L18 fails narrowly
+(incised 8.6% against moulded 5.3%, p = 0.053). **L21 holds**: copper-tablet texts recur (51% of distinct texts on 2+
+tablets, against 4.6% of seal texts): standard labels. L20 fails (not shorter). L22 fails the other way (pot names
+carry numerals more than tablet names).
+
+Tally, counting parts: 121 held, 191 failed (312 registered).
+
+# Twenty-eighth set, registered before testing (24 September 2026): receipts, the fish split, units, habits
+
+Leads: the Harappa name tablets with 400 ('receipts': TAB:I, a 740 / 520 ending directly followed by 400) are issued in
+identical copies of '[number] [short name]-740 400' (L2, L3, L5, L6); the stroke-pair fish take 520 (L11); each
+long-count unit has its usual value, 700 counted 3 and 740 counted 2 (L12). Conventions as the twenty-seventh set (F read
+with lines reversed; A, B; names; head and attribute classes as K; Fairservis categories; 10,000-draw permutations;
+p < 0.05; A and B both where named).
+
+Receipts and tokens (F)
+- **E1** Receipt copies (same name body) lie closer in depth than random pairs of receipts (median depth difference).
+- **E2** At Harappa, receipts come from earlier levels more often than count tokens (N 700) do.
+- **E3** Receipt name bodies equal the last part of a longer seal name body more often than the same bodies in shuffled
+  order do.
+- **E4** Receipt name bodies are a single sign more often than seal name bodies.
+- **E5** On receipts, the number's value depends on the name's last sign (MI beyond permutation).
+- **E21** 70%+ of the numbers on receipts have the value 1 or 2.
+- **E22** Receipt names have a human-figure head more often than seal names.
+- **E23** The first signs of receipt names are distributed differently from those of seal names (MI beyond permutation).
+- **E6** The pair 'long 2 + 740' (32 740) is on moulded tablets more often than on other objects, per object.
+- **E7** At Harappa, tablets with '32 740' and count tokens differ in level (MI beyond permutation).
+- **E8** Tablets containing '32 740' are 3 signs or fewer more often than other tablets.
+- **E20** At Harappa, the count tokens' value correlates with depth (Spearman, permutation; either sign).
+
+The fish split (pooled A + B unless said)
+- **E9** Fish-headed names with the long pair (32) inside take 520 more often than fish-headed names without a numeral,
+  length-stratified.
+- **E10** Names ending in the plain fish (220) with no numeral in the name take 740 in 60%+ of cases.
+- **E11** The short stroke pair (2) is followed by a fish sign more often than the short three (3). A and B.
+- **E12** Names with the stroke pair before a fish carry the heading more often than other names, length-stratified.
+
+Units
+- **E14** On seals alone, the value of a long-stroke numeral depends on the sign after it (F, MI beyond permutation).
+- **E15** The value of a short-stroke numeral depends on the sign after it. A and B.
+- **E16** The value of a tiered numeral depends on the sign after it (pooled).
+- **E13** Long-stroke numerals on seals stand in lines ending 520 more often than seal lines end in 520 (F).
+
+Direction and labels (A)
+- **E17** Left-to-right pot texts come from outside Mohenjo-daro and Harappa more often than right-to-left pot texts.
+- **E18** Left-to-right lines contain a numeral more often than right-to-left lines, length-stratified.
+- **E19** Copper-tablet lines contain a numeral less often than seal lines, length-stratified.
+
+Two cities' habits (F seals)
+- **E24** Seal names followed by 400 are from Harappa more often than other seal names.
+- **E25** Harappa seal names are followed by 90 less often than Mohenjo-daro seal names.
+
+## Results of the twenty-eighth set (added after the test; `predict_test28.py`, `results/predict_test28.md`)
+
+Fourteen held, eleven failed. 83 receipts.
+
+**Receipts name seal-holders by the end of their name.**
+- **E3 holds**: 51 of the 83 receipt names equal the final part of a longer seal name (p = 0.0001 against shuffled
+  order). **E4 holds**: 48% of receipt names are one sign, against 13% of seal names. **E23 holds**: they begin with
+  different signs from seal names. A receipt names its person by the head of the seal name (and sometimes the attribute
+  next to it), not by the whole name.
+- **E1 holds**: copies of the same receipt lie closer in depth (median 2.3 ft against 4.3 for random pairs, p = 0.0001).
+- **E21 holds**: 14 of the 19 numbers are 1 or 2. E5 fails narrowly (the number does not clearly depend on the name,
+  p = 0.063). E22 fails the other way: no receipt name has a human-figure head (0 of 83, against 7.4% of seal names).
+- E2 fails narrowly (receipts are earlier than tokens, 79% against 66%, p = 0.054).
+
+**The long-2 + 740 expression is later.** **E7 holds**: at Harappa the '32 740' tablets are from later levels (9 of
+11), the count tokens from earlier ones (113 of 171; p = 0.007). E6 and E8 fail (not a moulded formula, not short).
+**E20 holds**: count-token values correlate with depth (Spearman 0.24, p = 0.002): larger counts lie deeper, i.e.
+earlier.
+
+**The fish.**
+- **E11 holds**: the short stroke pair is followed by a fish 26% and 34% of the time, the short three 13% and 6%: the
+  pair belongs with the fish.
+- **E12 holds**: names containing the stroke pair + fish carry the heading far more often (+28.7 points, p = 0.0001).
+  With L11 (they take 520), the numbered fish names are headed 520 names: a formal, titled class.
+- E9 fails (the long pair before a fish does not raise 520 significantly; 8 cases), E10 fails the other way (plain-fish
+  names without a numeral take 740 only 28% of the time: the plain fish is on the 520 side too).
+
+**Numbers are idioms, not free counts.** **E14, E15, E16 hold**: in every notation (long on seals, short in A and B,
+tiered) the value depends strongly on the sign that follows (MI 1.16-1.64 bits, p = 0.0001). Numeral + sign pairs
+behave as fixed expressions, each sign with its own number, more than as quantities free to vary. **E13 holds**: long
+numerals on seals stand in 520 lines more than 520 lines' share (30% against 18%).
+
+**Other.** **E19 holds** (copper tablets carry numerals less than seals, -11.7 points, p = 0.005: labels without
+counts). E17, E18 fail narrowly (p = 0.10, 0.08). E24, E25 fail (no Harappa / Mohenjo-daro habit in 400 or 90 on seals).
+
+Tally, counting parts: 135 held, 202 failed (337 registered).
+
+# Twenty-ninth set, registered before testing (24 September 2026): receipts, number idioms, titled names
+
+Leads: receipts name seal-holders by the end of the seal name (E3, E4); numeral + sign pairs are idioms (E14-E16); names
+with the stroke pair + fish are titled 520 names (L11, E12). Conventions as the twenty-eighth set ('receipt' = TAB:I
+with 740 / 520 directly followed by 400; F read with lines reversed; A, B; names; head and attribute classes as K;
+Fairservis categories; 'stroke-pair fish name' = a name containing 2 directly before a signs.FISH sign; 10,000-draw
+permutations; p < 0.05; A and B both where named; length strata 2-3, 4-5, 6+).
+
+Receipts (F)
+- **J1** Receipt names equal the end of a Harappa seal name more often than Harappa's share of seal names predicts
+  (binomial, over receipt names matching the end of some seal name).
+- **J2** Single-sign receipt names are head-class signs in 50%+ of cases.
+- **J3** Seal names ending in a receipt name end in 740 more often than other seal names.
+- **J4** The number on a receipt correlates with how many copies of that receipt exist (Spearman > 0, permutation).
+- **J5** Seal lines whose name ends in a receipt-name head carry the heading more often than other seal name lines,
+  length-stratified.
+- **J6** The Fairservis categories of receipt-name heads differ from those of seal-name heads (MI beyond permutation).
+
+Number idioms
+- **J7** A numeral and the sign after it are split by a line break less often than other gaps (M77 multi-line texts,
+  both line orders).
+- **J8** For signs directly after a numeral 10+ times (pooled A + B), the most common value accounts on average for
+  60%+ of that sign's numerals.
+- **J9** For signs after long-stroke numerals 5+ times on both tablets and seals (F), the values are more varied
+  (entropy) on tablets than on seals for the majority (sign test).
+- **J25** Seals carry 'numeral + 700' in under 1% of cases (F).
+
+Titled names
+- **J10** Stroke-pair fish names on seals come from Mohenjo-daro more often than other seal names (F).
+- **J11** Stroke-pair fish names are on unicorn seals more often than other seal names (F).
+- **J12** Stroke-pair fish names are rarer among tablet names than among seal names (F).
+- **J13** The opener of the heading (817 / 820 / 861) differs between stroke-pair fish names and other headed names (MI
+  beyond permutation, pooled).
+
+Where numbers occur (F unless said)
+- **J14** West Asian lines contain a numeral less often than length-matched home lines (10,000 draws).
+- **J15** Cylinder-seal lines contain a numeral less often than square-seal lines, length-stratified.
+- **J16** At Harappa, later count tokens are moulded more often than earlier ones.
+- **J17** Tiered numerals are a larger share of numerals on Mohenjo-daro seals than on Harappa seals.
+- **J18** Long-stroke numerals are a larger share of numerals on Harappa seals than on Mohenjo-daro seals.
+- **J19** Bar-seal lines contain a numeral more often than square-seal lines, length-stratified.
+- **J20** Unicorn-seal lines contain a numeral less often than other-animal seal lines, length-stratified.
+- **J21** In seal lines the heading and a numeral occur together less often than independence predicts (Fisher).
+- **J22** Names with a human-figure head contain a numeral in under 5% of cases (pooled A + B).
+- **J23** Fish-headed names contain a numeral more often than other names, length-stratified (pooled).
+- **J24** Names containing a tiered numeral take 520 more often than names containing a short-stroke numeral (pooled).
+
+## Results of the twenty-ninth set (added after the test; `predict_test29.py`, `results/predict_test29.md`)
+
+Ten held, fifteen failed. J21 is invalid by construction: the heading itself contains the stroke pair 2, which counts as
+a numeral, so headed lines 'contain a numeral' almost always (248 of 262); it is recorded as failed and not interpreted.
+
+**The receipts name Harappa's own seal-holders, who are persons.**
+- **J1 holds**: of the 51 receipt names that match the end of a seal name, 39 (76%) match a Harappa seal, against
+  Harappa's 17% share of seal names (p < 0.0001).
+- **J3 holds**: the seal names that end in a receipt name take 740 in 53 of 54 (98%), against 81% of other seal names.
+- **J2 holds**: 33 of the 40 single-sign receipt names (82%) are head-class signs.
+- The system at Harappa: a person holds a seal with a full name (person class, 740); receipts made out to that person
+  in several identical copies give the head of the name, a small number and 400.
+- J4 fails (the number does not track the number of copies), J5 fails (the receipt heads are not titled on seals), J6
+  fails (their picture categories are ordinary).
+
+**Numbers are bound idioms.**
+- **J7 holds**: in M77's multi-line texts a numeral and the sign after it are split by a line break 6.1% of the time,
+  other gaps 25.6% (p < 0.0001, both orders).
+- **J8 holds**: for the 42 signs that follow a numeral 10+ times, the commonest value accounts on average for 70% of
+  their numerals.
+- J9 fails (tablet counts are not more varied than seal numerals for the four shared units). **J25 holds**: 'numeral +
+  700' is on 4 of 1,607 seals (0.25%): the measure count is a tablet formula.
+
+**Titled fish names.** **J12 holds** (stroke-pair fish names are rarer on tablets, 7.2% against 10.7%) and **J13 holds**
+(their heading opens with 861 more often: 36 of 68, against 57 of 172 other headed names; p = 0.007). J10 and J11
+fail (not a Mohenjo-daro or unicorn-seal trait).
+
+**Where numbers occur.** **J16 holds**: at Harappa, later count tokens are moulded (64%) where earlier ones were incised
+(35% moulded; p = 0.0002): a shift from writing each token to casting them. **J20 holds**: seals with other animals
+carry numerals more often than unicorn seals (+9.5 points, p = 0.001). J14, J15, J17, J18, J19, J22, J23, J24 fail
+(J22: 34% of human-headed names contain a numeral; J24 the other way: tiered-number names take 520 less).
+
+Tally, counting parts: 145 held, 217 failed (362 registered).
+
+# Thirtieth set, registered before testing (24 September 2026): the Harappa system in detail
+
+Leads: receipts name Harappa's own seal-holders, persons, by the head of the seal name (J1-J3, E3); numeral + sign
+pairs are bound idioms (J7, J8); count tokens move from incised to moulded over time (J16); titled fish names take 861
+(J13). Conventions as the twenty-ninth set ('receipt'; 'matching seal' = a Harappa seal whose name ends in the receipt's
+name; F read with lines reversed; A, B; names; head class as K; 10,000-draw permutations; p < 0.05; length strata as
+before).
+
+Receipts and seals (F)
+- **HA1** A receipt lies closer in depth to its matching seals than to random Harappa seals with a depth (median
+  difference; seal assignments permuted).
+- **HA2** A receipt shares its level with its matching seals more often than with random Harappa seals.
+- **HA3** Half or more of the receipt heads end three or more different seal names.
+- **HA4** Name tablets without 400 match the end of a Harappa seal name less often than receipts do.
+- **HA5** Moulded tablets with a name match the end of a Harappa seal name less often than receipts do.
+- **HA6** On receipts with a number, the number stands directly before the name body in 70%+.
+- **HA10** Receipt heads are the last sign in 80%+ of their occurrences in seal names.
+- **HA24** Bar-seal names at Harappa are matched by a receipt name more often than square-seal names at Harappa.
+- **HA25** Harappa seal names matched by a receipt come from later levels more often than other Harappa seal names.
+
+Number idioms (pooled A + B unless said)
+- **HA7** For signs after a numeral 5+ times on both seals and tablets (F), the commonest value is the same on both for
+  75%+ of them.
+- **HA8** In names with one numeral, the numeral is the first sign of the name more often than a random position of
+  the same name would be (paired sign test).
+- **HA9** 'Numeral + fish' is directly followed by the ending more often than 'numeral + another sign'.
+
+Tokens and time (F, Harappa)
+- **HA11** Moulded count tokens carry smaller values than incised ones (mean value, label permutation).
+- **HA12** Distinct moulded count-token texts come in more copies than distinct incised ones (mean copies, permutation).
+- **HA13** Among incised tablets, receipts are a smaller share in later levels.
+
+Titles (pooled A + B)
+- **HA14** Names headed by 861 end in 520 more often than names headed by 817 or 820.
+- **HA15** Headed stroke-pair fish names take 520 in 80%+ of cases.
+
+Seals, direction, labels
+- **HA16** Names on other-animal seals end in 520 more often than names on unicorn seals (F).
+- **HA17** Names on other-animal seals are shorter than names on unicorn seals (F, rank test).
+- **HA23** Bar-seal names end in 520 more often than square-seal names (F).
+- **HA18** Left-to-right pot texts contain a numeral more often than right-to-left pot texts (A).
+- **HA19** Left-to-right texts are 'numbers only' more often than right-to-left texts (A).
+- **HA20** Copper-tablet lines carry the heading less often than seal lines (A).
+- **HA21** 90%+ of copper tablets come from Mohenjo-daro (A).
+- **HA22** Texts on rods, bangles and miscellaneous objects (ROD, BNGL, MISC) carry an ending less often than seal texts,
+  length-stratified (F).
+
+## Results of the thirtieth set (added after the test; `predict_test30.py`, `results/predict_test30.md`)
+
+Nine held, sixteen failed.
+
+**Receipts and seals.**
+- **HA1 holds**: a receipt lies closer in depth to the Harappa seals whose names end in its name (median 5.5 ft) than
+  to random Harappa seals (p = 0.0009): receipts and the seals of the people they name were buried near each other.
+  HA2 fails narrowly (same level 50%, p = 0.056).
+- **HA5 holds**: moulded tablets with a name match a Harappa seal name far less than receipts do (21.5% against 50.6%):
+  the moulded name tablets are another genre. HA4 fails narrowly (incised name tablets without 400 match 36.9%, p =
+  0.052).
+- **HA3 holds** (half of the receipt heads end 3+ different seal names: a head is shared by several seal-holders, so a
+  receipt name alone does not pick out one person). HA10 fails (receipt heads are the last sign in only 48% of their
+  seal-name occurrences).
+- **HA6 fails, and corrects the receipt picture**: on none of the 19 receipts with a number does the number stand
+  directly before the name body; it stands inside it. The receipt's 'number' is part of the name (a numeral idiom, J7,
+  J8), not a separate count. The receipt format is '[name, which may contain a numeral idiom]-740 400'.
+- HA24, HA25, HA13 fail.
+
+**Idioms.** HA7 fails narrowly (the commonest value is the same on seals and tablets for 10 of 14 shared signs, 71%,
+bar 75%), HA8 fails (numerals do not open names more than chance), HA9 fails (numeral + fish is not a whole name more
+than numeral + another sign).
+
+**Tokens.** **HA11 holds**: moulded count tokens carry smaller values than incised ones (by 0.32, p = 0.0003). HA12
+fails (moulded texts do not come in more copies per text).
+
+**Titles.** HA14 fails, HA15 fails the other way: headed stroke-pair fish names take 520 in only 19% (13 of 68). The
+L11 / E12 picture (stroke-pair fish take 520; they carry the heading) holds for each part separately but not for their
+combination: headed stroke-pair fish names are mostly 740 names.
+
+**Seals and labels.** **HA16 holds** (other-animal seals carry 520 names more: 24.4% against 17.3%, p = 0.040) and **HA17
+holds** (their names are shorter, p = 0.0001). **HA20 holds** (no copper-tablet line carries the heading: 0 of 133,
+against 20% of seal lines), **HA21 holds** (148 of 149 copper tablets are from Mohenjo-daro), **HA22 holds** (rods,
+bangles and miscellaneous objects carry an ending 27 points less than seals: labels). HA23, HA18, HA19 fail.
+
+Tally, counting parts: 154 held, 233 failed (387 registered).
+
+# Thirty-first set, registered before testing (24 September 2026): labels, moulded names, idioms, the heading
+
+Leads: copper tablets are Mohenjo-daro labels without the heading (HA20, HA21, L21, X2); moulded name tablets are not
+receipts (HA5); the receipt number is part of the name (HA6); other-animal seals carry 520 and shorter names (HA16,
+HA17). Conventions as the thirtieth set (A with 'type', 'site', 'motif', 'direction'; F read with lines reversed;
+names; head and attribute classes as K; 'receipt' as before; 'moulded name tablet' = TAB:B with a 740 / 520 ending;
+10,000-draw permutations; p < 0.05; length strata as before).
+
+Copper tablets (A)
+- **I1** Copper-tablet texts equal a seal name body more often than their own shuffled orders.
+- **I2** Copper-tablet lines contain a fish sign less often than seal lines, length-stratified.
+- **I3** Copper tablets with the same text carry the same picture (motif field) more often than random pairs of copper
+  tablets.
+- **I4** The first signs of copper-tablet lines are distributed differently from those of seal lines (MI beyond
+  permutation).
+
+Other-animal seals (F)
+- **I5** Among non-unicorn seals, the ending depends on the animal (MI beyond permutation).
+- **I6** Other-animal seals are a larger share of seals in later levels, at Mohenjo-daro and at Harappa.
+- **I7** Names on other-animal seals end in a head-class sign less often than names on unicorn seals.
+
+Moulded name tablets (F)
+- **I8** Moulded name tablets end in 520 more often than receipts.
+- **I9** Moulded name tablets carry the heading more often than receipts.
+- **I10** Distinct moulded name-tablet texts recur on 2+ tablets more often than distinct receipt texts.
+- **I11** Moulded name-tablet names contain a fish sign more often than seal names.
+- **I12** At Harappa, moulded name tablets come from later levels more often than receipts.
+- **I23** Moulded name tablets run left to right more often than seals (A, types TAB:B and SEAL).
+
+Receipts (F)
+- **I13** Receipt names contain a numeral more often than seal names.
+- **I14** Receipt names contain a fish sign less often than seal names.
+
+Numeral idioms (pooled A + B)
+- **I15** Two-sign name bodies are 'numeral + sign' more often than the adjacent pairs inside longer name bodies are.
+- **I16** In 'numeral + sign' pairs inside names, the sign is the name's last sign more often than the second sign of
+  other adjacent pairs in names is.
+- **I17** For numerals directly before a fish on seals, the value depends on the site (Mohenjo-daro / Harappa; MI
+  beyond permutation; F).
+
+The heading
+- **I18** For heads with 5+ headed and 5+ unheaded names (pooled), the majority ending is the same with and without the
+  heading in 80%+.
+- **I19** On seals the opener (817 / 820 / 861) depends on the site (Mohenjo-daro / Harappa / other; MI beyond
+  permutation; F).
+- **I20** Headed names are followed by 90 more often than unheaded names ending 740 (pooled).
+- **I21** 861-headed seal names come from Mohenjo-daro more often than 817-headed ones (F).
+- **I25** Kalibangan seal lines carry the heading less often than Mohenjo-daro seal lines, length-stratified (F).
+
+Tokens and pots (F)
+- **I22** Incised count tokens have the value 4 more often than moulded ones.
+- **I24** Pot inscriptions with a name ending come from Harappa more often than seals with a name ending do.
+
+## Results of the thirty-first set (added after the test; `predict_test31.py`, `results/predict_test31.md`)
+
+Fourteen held, eleven failed. (The first run stopped on a comprehension bug in I1, a filter placed after the unpacking;
+it was fixed and the set rerun with the same seed.)
+
+**Copper tablets: a vocabulary of their own, tied to the picture.**
+- **I3 holds**: copper tablets with the same text carry the same picture in 92% of 586 pairs (p = 0.0001).
+- I1 fails decisively: none of the 139 copper-tablet lines is a seal name body. **I4 holds**: they open with different
+  signs from seal lines (p = 0.0001). **I2 holds**: they use fish signs less (-12 points).
+- The copper-tablet text goes with its picture, not with the names of people: it most likely names or describes what
+  is shown. This is the one place where Indus text and a known referent (the animal or scene) are paired consistently,
+  the 'copper-tablet bilingual' already used as an anchor in the earlier passes (anchors.py); here it is confirmed that
+  the pairing is exclusive and repeatable.
+
+**Moulded name tablets and receipts are different genres.**
+- **I8 holds** (moulded name tablets end in 520 in 18.7%, receipts in 1 of 83), **I9 holds** (they carry the heading
+  7%, receipts never), **I12 holds** (they are later at Harappa: 51% against 21%), **I23 holds** (they run left to right
+  5.4% against 2.5% of seals: moulded, so reversed). I10, I11 fail.
+- **I14 holds**: receipt names contain a fish sign far less often than seal names (15.7% against 46.1%). Receipts name
+  persons (740, no fish); moulded name tablets carry the fuller, titled, fish-bearing names. I13 fails the other way
+  (receipt names hold numerals less often, 22.9% against 47.3%).
+
+**Numeral idioms.** **I15 holds** (a two-sign name is 'numeral + sign' more often than pairs inside longer names: 17.3%
+against 14.2%) and **I16 holds** (the idiom's sign closes the name 45.4% of the time, other pairs' second sign 36.5%):
+a numeral idiom is often a whole name or its head. I17 fails.
+
+**The heading.** **I18 holds**: for all 14 heads with 5+ headed and 5+ unheaded names, the majority ending is the same
+with and without the heading. The heading is outside the name's grammar. **I25 holds**: Kalibangan seal lines carry the
+heading less than Mohenjo-daro's (-14.7 points, p = 0.012): a regional habit. I19, I20, I21 fail.
+
+**Other.** **I7 holds** (names on other-animal seals end in a head-class sign less often: 30% against 40%). **I22 holds**
+(incised count tokens are 4 in 42%, moulded in 22%). I5, I6, I24 fail.
+
+Tally, counting parts: 168 held, 244 failed (412 registered).
+
+# Thirty-second set, registered before testing (24 September 2026): pictures as outside labels for meaning
+
+Lead: copper-tablet texts go with their picture (I3: same text, same picture in 92% of pairs) and are never seal names
+(I1). The picture is an outside label of what a text refers to. Data: A (data/corpus.tsv), field 'motif', first part
+before ':' = the picture (copper TAB:C: Hare, Elep, Anth, Comp, Gaur, Goat, Loop, Rhin, Bull1, Tigr, Buff, Othr;
+moulded TAB:B: Bull1, Mult, Gavi, Phyt, Scene, Bult, Cros, Gaur, Fish, Zebu ...; seals: Bull1, Gaur, Zebu, Elep, Rhin,
+Buff, Tigr, Goat ...). 'Label' = the full text of a copper or moulded tablet with a picture (not 'Othr' or blank);
+'marker' of a picture = a sign in 75%+ of that picture's labels and in 25% or fewer of the other pictures' labels of
+the same object type. Anchors from the sign list: 341 rhinoceros, 749 and 778 goat, 753 hare (copper); 347
+multi-headed animal, 460 tree / plant, 645 cross, 318 gharial (moulded, provisional). 10,000-draw permutations;
+p < 0.05.
+
+Copper labels
+- **CT1** Half or more of the copper pictures with 4+ labelled tablets have a marker.
+- **CT2** Half or more of those pictures have at most two distinct label texts.
+- **CT3** Across distinct copper label texts, the last sign has lower entropy than the first sign, beyond within-text
+  shuffles (a shared final element).
+- **CT4** Copper labels of animal pictures (Hare, Elep, Gaur, Goat, Rhin, Tigr, Buff, Bull1) end in 740 more often than
+  labels of other pictures (Anth, Comp, Loop).
+- **CT5** The anchor signs occur in the labels of their own picture more often than in other copper labels (pooled
+  over 341 / Rhin, 749 and 778 / Goat, 753 / Hare; permutation of pictures among labels).
+- **CT11** Labels of the anthropomorph picture (Anth) contain a human-figure sign (Fairservis A) more often than other
+  copper labels.
+- **CT12** Two labels of the same picture differ by exactly one sign more often than two labels of different pictures.
+- **CT13** Labels of the same picture share their first sign more often than their last sign.
+- **CT21** Labels of composite pictures (Comp) are longer than other copper labels (rank test).
+- **CT22** In copper labels, 740 is preceded by a head-class sign as often as in seal texts or more (Fisher, one-sided
+  for more).
+
+Moulded labels
+- **CT7** Moulded tablets with the same text carry the same picture more often than random pairs.
+- **CT8** Moulded labels of the same picture share a sign more often than labels of different pictures.
+- **CT9** The provisional moulded anchors occur in the labels of their picture more often than in other moulded labels
+  (pooled over 347 / Mult, 460 / Phyt, 645 / Cros, 318 / Gavi).
+- **CT17** Moulded labels of the fish picture contain a fish sign more often than other moulded labels.
+- **CT18** Moulded tablets with a picture carry an ending less often than moulded tablets without one.
+- **CT19** Distinct moulded texts with a picture recur on 2+ tablets more often than distinct moulded texts without one.
+
+Across object types
+- **CT6** The copper anchor signs occur on seals of their own animal more often than on other seals (pooled over 341 /
+  Rhin, 749 and 778 / Goat; permutation of animals among seals).
+- **CT10** Copper labels and moulded labels share more vocabulary with each other than copper labels with seal texts
+  (JSD of sign distributions, rarefied to the copper token count; 1,000 draws, 95%+).
+- **CT14** Seals of an animal that also has copper labels (Elep, Gaur, Goat, Rhin, Tigr, Buff) carry a sign of that
+  animal's copper labels more often than seals of the other such animals carry it (pooled, permutation).
+- **CT15** Seal texts containing a copper anchor sign are on non-unicorn seals more often than other seal texts.
+- **CT16** The hare anchor 753 occurs on fewer than 2 seals.
+- **CT20** Copper labels of non-animal pictures (Anth, Comp, Loop) end in 520 more often than animal labels.
+- **CT23** Copper labels are shorter than moulded labels (rank test).
+- **CT24** Moulded tablets with the unicorn picture carry a unicorn-seal name more often than moulded tablets with other
+  pictures do.
+- **CT25** Where a pictured moulded tablet's text equals a seal name body, the seal shows the same animal more often
+  than random seal pairs would.
+
+## Results of the thirty-second set (added after the test; `predict_test32.py`, `results/predict_test32.md`)
+
+Eight held, seventeen failed. 64 copper labels with a picture, 209 moulded labels, 1,181 seals with a picture (A).
+
+**Correction to the sign list.** CT5 fails with a count of zero: the 'firm' copper-tablet equations of
+results/sign_list.md (341 rhinoceros, 749 and 778 goat, 753 hare) never occur in the copper labels of their own
+picture in data/corpus.tsv. They were taken from Parpola's drawings, where the pictorial sign is on the reverse; in the
+ICIT-derived texts the picture is the motif and these signs are not in the text. They are withdrawn as text-based
+anchors (CT6, CT15 fail for the same reason; CT16 holds only because 753 never occurs at all). The moulded-tablet
+anchors, by contrast, hold (**CT9**: 31 anchor-in-own-picture cases, p = 0.0001).
+
+**Copper labels: picture-specific names.**
+- **CT1 holds**: most copper pictures with 4+ labels have marker signs of their own: hare 705, 321, 235; elephant 923,
+  706; goat 3, 421, 176, 100, 790; anthropomorph 61, 806, 850, 900; loop 220, 415 (composite and gaur none).
+- **CT2 holds** (most pictures have one or two distinct texts: hare 1, anthropomorph 1, elephant 2, goat 2, loop 2).
+- **CT3 holds** (the last sign of distinct labels has 1.26 bits less entropy than the first, p = 0.0002: labels share a
+  final element) and **CT22 holds** (in copper labels the sign before 740 is a head-class sign in 34 of 36 cases, on
+  seals in 43%): the labels are built like names, attribute + head + ending, and name something specific to each
+  picture. They are not seal names (I1).
+- CT4 fails the other way (animal labels end in 740 less often than non-animal ones: 26% against 62%), CT20 fails (no
+  copper label ends in 520), CT11, CT12, CT13, CT21, CT23 fail.
+
+**Moulded labels.** **CT7 holds**: moulded tablets with the same text carry the same picture in 95% of 590 pairs
+(p = 0.0001), and **CT8 holds** (same-picture labels share a sign 61.8% against 42.8%). CT17, CT18 (the other way:
+pictured moulded tablets carry an ending more), CT19 fail.
+
+**No link across object types.** CT6, CT10, CT14, CT24, CT25 fail: seals of an animal do not carry that animal's copper
+label signs more than other seals (91 of 157, p = 0.68); pictured moulded names are not the names on seals with the
+same animal; copper labels are not closer to moulded labels than to seals in vocabulary. Each object type pairs its
+own texts with its own pictures.
+
+Tally, counting parts: 176 held, 261 failed (437 registered).
+
+# Thirty-third set, registered before testing (24 September 2026): picture markers across label genres
+
+Leads: copper labels are picture-specific names with marker signs (CT1: hare 705 321 235, elephant 923 706, goat 3 421
+176 100 790, anthropomorph 61 806 850 900, loop 220 415); moulded tablets pair text and picture (CT7, 95%); nothing
+links object types (CT14). Conventions as the thirty-second set (A with its 'motif' field; 'label', 'marker' as
+there; 'head' of a label = the sign before 740 / 520 if it has one, else its last sign; Fairservis categories; head
+class as K; rebus/copper_tablets.tsv for Parpola's groups; 10,000-draw permutations; p < 0.05).
+
+Copper labels
+- **PL1** The label head depends on the picture (MI beyond permutation of pictures).
+- **PL2** Labels of two animal pictures share a sign more often than an animal label and a non-animal label do (pair
+  counts, pictures permuted).
+- **PL3** In Parpola's copper groups, groups with identical texts (the 'link' column) show the same reverse image in
+  80%+ of linked pairs.
+- **PL4** Copper markers are rarer on seals than the other signs of copper labels (mean seal token count, permutation of
+  the marker label among copper-label signs).
+- **PL5** No copper marker is a Fairservis animal sign (category C or D).
+- **PL6** Label length varies less within pictures than between them (between-picture variance share, permutation).
+- **PL7** Copper markers are head-class signs more often than the other copper-label signs.
+- **PL23** 90%+ of copper labels are one line.
+
+Moulded labels
+- **PL8** Half or more of the moulded pictures with 4+ labels have a marker.
+- **PL9** Plant-picture labels (Phyt) contain a Fairservis plant sign (E) more often than other moulded labels.
+- **PL10** Scene labels are longer than other moulded labels (rank test).
+- **PL11** The moulded label head depends on the picture (MI beyond permutation).
+- **PL12** Moulded labels of two animal pictures share a sign more often than an animal label and a non-animal (plant,
+  scene, cross, multi-headed) label do.
+- **PL13** Copper gaur labels share a sign with moulded gaur labels more often than with other moulded labels.
+- **PL14** 90%+ of moulded labels come from Harappa.
+- **PL22** Pictured moulded tablets contain a numeral less often than moulded tablets without a picture.
+- **PL24** Pictured moulded tablets run left to right more often than moulded tablets without a picture.
+- **PL25** Two moulded labels of the same picture differ by exactly one sign more often than two of different pictures.
+- **PL21** Pictured moulded labels carry the heading less often than seal texts.
+
+Seals
+- **PL15** Half or more of the non-unicorn seal animals with 10+ seals have a loose marker (a sign in 30%+ of their seal
+  texts and 10% or fewer of other animals' seal texts).
+- **PL16** Seal texts of the same animal share a sign more often than seal texts of different animals (non-unicorn
+  seals; animals permuted).
+- **PL17** Elephant seals contain 923 or 706 more often than other seals.
+- **PL18** Goat seals contain a goat copper marker (3, 421, 176, 100, 790) more often than other seals.
+- **PL19** Seals with a composite or anthropomorphic picture contain an anthropomorph copper marker (61, 806, 850, 900)
+  more often than other seals.
+- **PL20** Gaur seals contain a sign of the copper gaur labels more often than other seals.
+
+## Results of the thirty-third set (added after the test; `predict_test33.py`, `results/predict_test33.md`)
+
+Eight held, seventeen failed. Deviation from the registration: PL2, PL12 and PL16 were run with 1,000 permutations,
+not 10,000 (pairwise statistics over up to 30,000 pairs); the smallest possible p is 0.001.
+
+**The picture-text link stays inside the label genres.**
+- **PL1 holds** (the copper label's head depends on its picture: MI 2.25 bits over 64 labels, p = 0.0001) and **PL11
+  holds** (the same for moulded labels: MI 2.78 bits over 207, p = 0.0001). **PL6 holds** (copper labels of one
+  picture have one length: 76% of length variance lies between pictures) and **PL23 holds** (every copper label is one
+  line). **PL25 holds** (same-picture moulded labels differ by one sign more often, 1.6% against 0.7%), **PL12 holds**
+  (moulded animal labels share signs more, p = 0.013), **PL21 holds** (moulded labels carry the heading less than seals,
+  9.8% against 20.3%). **PL5 holds** (no copper marker is an animal-category sign: the labels do not draw the animal).
+- **Nothing crosses to the seals.** PL17 fails (0 of 28 elephant seals carry 923 or 706), PL18 fails (0 of 9 goat seals
+  carry a goat marker), PL19, PL20 fail, PL15 fails (of six seal animals only the rhinoceros has a loose marker, 820),
+  PL16 fails (seal texts of the same animal do not share signs more, p = 0.38). The texts on seals are not about the
+  animal on the seal; the label texts on copper and moulded tablets are.
+- PL2 fails (copper animal labels do not share signs more), PL4 fails (markers are not rare on seals), PL7 fails, PL8
+  fails (only 4 of 11 moulded pictures have a marker: fish 400, unicorn 2 520 240, crs 630, cross 590 235 645 240 90
+  104), PL9, PL10, PL13, PL14 (79% of moulded labels from Harappa), PL22 (the other way), PL24 fail.
+
+**Parpola's equations explained.** PL3 fails as registered (no linked pair shares a reverse image), but it shows how
+the equations were made: of Parpola's 10 linked copper groups, 8 pair a group whose reverse is an image with a group
+whose reverse is a single sign, over the same obverse inscription (hare with 753, markhor with 749, rhinoceros with 341,
+goat with 777 / 778). The sign stands in for the picture on the reverse. That is a real substitution, of reverse for
+reverse, not a sign inside the text; the withdrawal in CT5 stands as 'not a text anchor', and the equations stand as
+Parpola's reverse-side substitutions.
+
+Tally, counting parts: 184 held, 278 failed (462 registered).
+
+# Thirty-fourth set, registered before testing (24 September 2026): labels against names, and the labels' dates
+
+Leads: copper and moulded labels name what is pictured, with picture-specific heads (PL1, PL11), and nothing links them
+to the seals of the same animal (PL15-PL20). Conventions as the thirty-third set (A with 'motif'; 'label', 'label head'
+as there; copper = TAB:C, moulded = TAB:B with a picture; F read with lines reversed, its motif field 18 and levels as
+before; names; head class as K; Fairservis categories; 10,000-draw permutations; p < 0.05).
+
+Labels and names (A)
+- **LB1** Copper label heads, where they occur in seal names, stand first more often than last.
+- **LB2** Moulded label heads, where they occur in seal names, stand first more often than last.
+- **LB3** Copper label heads are rarer on seals than the heads of seal names (mean seal token count, permutation).
+- **LB4** Moulded labels are closer to seal texts in vocabulary than copper labels are (JSD, both rarefied to the copper
+  token count; 1,000 draws, 95%+).
+- **LB18** Seal names containing a copper label head end in 520 more often than other seal names.
+- **LB19** Seal names containing a moulded label head end in 520 more often than other seal names.
+- **LB20** Labels contain the stroke pair before a fish less often than seal texts.
+
+Label grammar (A)
+- **LB5** Copper labels end in 740 more often than moulded labels.
+- **LB11** Moulded labels with the unicorn picture end in 520 more often than other moulded labels.
+- **LB12** Moulded unicorn labels contain the stroke pair before a fish more often than other moulded labels.
+- **LB13** Moulded labels of the multi-headed animal (Mult) contain 347 in half or more.
+- **LB14** Moulded labels of the gharial (Gavi) contain 318 in 30% or more.
+- **LB15** Moulded plant labels (Phyt) end in 740 less often than moulded animal labels.
+- **LB16** Moulded scene labels contain a human-figure sign more often than other moulded labels.
+- **LB17** Copper anthropomorph labels (Anth) end in 740 more often than copper animal labels.
+- **LB21** Where a copper label contains a numeral, it is the first sign in half or more.
+- **LB22** Where a moulded label contains a numeral, it is the first sign in half or more.
+- **LB23** The closing formula 705 / 706 + 33 + 520 occurs in at most one label.
+- **LB24** 2% or fewer of labels have 400 after an ending.
+- **LB25** 2% or fewer of labels have 90 after an ending.
+
+Dates and findspots (F)
+- **LB6** At Mohenjo-daro, copper tablets come from later levels more often than seals.
+- **LB7** At Harappa, the picture mix of pictured moulded tablets differs between earlier and later levels (MI beyond
+  permutation).
+- **LB8** Copper tablets with the same picture share a Mohenjo-daro level more often than random pairs.
+- **LB9** Pictured moulded tablets with the same picture share a Harappa level more often than random pairs.
+- **LB10** Pictured moulded tablets with the same text lie closer in depth than random pairs of pictured moulded
+  tablets (median difference).
+
+## Results of the thirty-fourth set (added after the test; `predict_test34.py`, `results/predict_test34.md`)
+
+Nine held, sixteen failed. Deviation: LB10 was run with 1,000 random draws, not 10,000.
+
+**Two held results rest on one text each.**
+- **LB11 and LB12 hold** (moulded unicorn labels end in 520 and carry the stroke pair + fish: 31 of 39 each, against 4%
+  and 2% of other moulded labels). Checked after the test: 29 of the 39 are one Harappa moulded text, '501 405 2 240
+  520', in 29 copies. The result is one text, not a pattern across texts: that batch of unicorn tablets carries a
+  titled fish name of the 520 class. It is suggestive (the titled fish name as the name that goes with the unicorn on
+  these tablets) and no more.
+- **LB17 holds** (copper anthropomorph labels end in 740, 10 of 10, against 26% of animal labels), but all 10 carry the
+  same text, '806 845 61 407 850 900 740'. One text of the person class labelling the human-like figure: consistent
+  with 740 as the person class (K1, Z3), from a single text.
+
+**Labels against names.**
+- **LB4 holds**: moulded labels are closer to seal texts in vocabulary than copper labels are (1,000 of 1,000 draws):
+  the Harappa moulded labels use the name vocabulary, the Mohenjo-daro copper labels their own.
+- LB1 and LB2 fail the other way: label heads, where they occur in seal names, stand last far more often than first
+  (copper 121 against 12; moulded 464 against 239): the label heads are name heads, not attributes. LB3, LB18, LB19
+  fail (LB18 the other way: seal names with a copper label head are rarely 520 names, 4.8%). LB20 fails the other way
+  (labels carry the stroke-pair fish more, 12.5% against 7.6%: the unicorn batch).
+- LB5, LB13 (347 in 23% of multi-headed animal labels), LB15, LB16, LB21, LB22 fail; **LB14 holds** (318 in 35% of
+  gharial labels). **LB23 holds** (the seal closing formula is on one label only). LB24 and LB25 fail: 400 (12%) and
+  90 (7%) do follow endings on labels.
+
+**Dates and findspots.**
+- **LB7 holds**: the pictures on Harappa moulded tablets change between earlier and later levels (MI 0.31, p = 0.0001).
+  **LB9 holds** (same-picture moulded tablets share a level, 58%, p = 0.002) and **LB10 holds** (same-text pictured
+  tablets lie closer in depth, median 3.0 ft, p = 0.001). The moulded label tablets were made picture by picture, in
+  batches, at particular times.
+- LB6 fails (copper tablets are not later than seals at Mohenjo-daro), LB8 fails (4 pairs).
+
+Tally, counting parts: 193 held, 294 failed (487 registered).
+
+# Thirty-fifth set, registered before testing (24 September 2026): the core findings, city by city
+
+The strongest results so far mostly pool every site. This set asks whether each holds separately at Mohenjo-daro and at
+Harappa, the two cities with enough texts to act as independent replication samples, and whether rules learned in one
+city predict the other. Data: F, intact objects, lines reversed (M4); A for direction (SR19). Each hypothesis holds only
+if it holds at both cities (p < 0.05 each, or the stated threshold each); a city with under 20 cases for a test makes
+the hypothesis fail as untestable there. Names, head class (K, from A), Fairservis categories, numerals and notations
+as before; 10,000-draw permutations.
+
+Grammar of names
+- **SR1** The last sign carries more information about the ending than the first: MI(last; ending) minus MI(first;
+  ending) exceeds its value with endings permuted.
+- **SR2** The last sign of a name comes from a smaller inventory than the first, beyond within-name shuffles.
+- **SR3** Human-figure heads take 740 more often than other heads.
+- **SR4** A head-to-ending rule learned in one city (majority ending per head with 3+ names) predicts the other city's
+  endings for those heads at 90%+ and above the majority baseline (binomial), in both directions.
+- **SR7** A long name minus its first sign is an attested name more often than minus its last (McNemar).
+- **SR8** The affixed fish (231, 233, 235, 240) are a name's last sign less often than the plain fish 220.
+- **SR16** 80%+ of heads with 5+ names take one ending in 90%+ of them.
+- **SR17** Categorised heads of 740 names are humans, weapons, implements or measures (A, H, I, K) more often than
+  categorised heads of 520 names, fish heads left out.
+- **SR15** For heads with 5+ headed and 5+ unheaded names, the majority ending is the same with and without the heading
+  in 80%+.
+
+Units kept whole (multi-line texts of all object types)
+- **SR5** The 30 highest-PMI pairs (count 10+) of the *other* city's single-line texts are split by a line break less
+  often than other gaps.
+- **SR6** A numeral and the sign after it are split by a line break less often than other gaps.
+
+Numbers
+- **SR9** The short stroke pair is followed by a fish more often than the short three.
+- **SR10** Among values 5-8 the tiered form is a larger share than among values 3-4.
+- **SR11** Long-stroke numerals stand before a container or device sign (Fairservis J, K) more often than short ones.
+- **SR12** The value of a numeral depends on the sign after it (MI beyond permutation).
+- **SR20** Long-stroke numerals open their line more often than short ones.
+- **SR13** Tablet texts differing at one position differ at a numeral more often than seal names differing at one
+  position do.
+
+Objects and signs
+- **SR14** Unicorn seals carry longer texts than other-animal seals (rank test).
+- **SR18** Frequent signs are graphically simpler (Spearman of complexity against log token count, negative).
+- **SR19** Left-to-right texts are rarer on seals than on other objects (A).
+
+## Results of the thirty-fifth set (added after the test; `predict_test35.py`, `results/predict_test35.md`)
+
+Ten held, ten failed. This set is the robustness check of the core findings: each had to hold at Mohenjo-daro and at
+Harappa separately.
+
+**Findings that hold in both cities** (the project's most robust results):
+- **SR1** the last sign of a name carries more information about the ending than the first (p = 0.0001 in both);
+- **SR2** name heads come from a smaller inventory than first signs (p = 0.0001, 0.0006);
+- **SR3** human-figure heads take 740 without exception (53 of 53 at Mohenjo-daro, 26 of 26 at Harappa);
+- **SR16** the head fixes the ending (85% and 88% of heads with 5+ names);
+- **SR8** the affixed fish are attributes (last in 14% and 28% of cases, the plain fish 33% and 45%);
+- **SR10** tiered numerals write 5-8 (60% and 64% of those values, against 5% and 3% of 3-4);
+- **SR11** long-stroke numerals count containers and devices (10% against 4%; 75% against 4%);
+- **SR12** the number depends on the sign that follows (MI 1.29 and 0.96 bits);
+- **SR20** long-stroke numerals open their line (20% against 13%; 62% against 31%);
+- **SR18** frequent signs are graphically simpler (Spearman -0.15 and -0.16).
+
+**Near miss.** SR4: the head-to-ending rule learned at Harappa predicts Mohenjo-daro at 93.2% (baseline 83.7%), but the
+rule learned at Mohenjo-daro predicts Harappa at 88.6% (baseline 79.0%), under the registered 90%. The rule transfers
+well above chance in both directions (p < 1e-7) and misses the bar in one.
+
+**Harappa only** (the pooled results were carried by Harappa): SR9 (the stroke pair before fish: 41.5% against 5.3% at
+Harappa, 23.0% against 15.4% at Mohenjo-daro, p = 0.09), SR13 (tablets vary at numerals: 28.7% at Harappa; Mohenjo-daro's
+27 tablet variant pairs never do), SR14 (unicorn seals carry longer texts: p = 0.0007 at Harappa, 0.11 at Mohenjo-daro),
+SR19 (seals avoid left-to-right writing: p = 0.0002 at Harappa, 0.083 at Mohenjo-daro). These are Harappa habits, not
+general rules of the script, until shown elsewhere.
+
+**Not testable per city** (too few cases in at least one city): SR5 and SR6 (multi-line texts are few; the bound-pair
+and numeral-idiom line-break results rest on M77's line division), SR7 (Harappa 16 discordant names, though p = 0.038),
+SR15 (headed names are rare at Harappa), SR17 (non-fish 520 heads are few in each city).
+
+Tally, counting parts: 203 held, 304 failed (507 registered).
+
+# Thirty-sixth set, registered before testing (24 September 2026): the core findings beyond the two cities and over time
+
+The thirty-fifth set found ten findings that hold at Mohenjo-daro and at Harappa separately, and four that hold at
+Harappa only. Here they meet a third sample: all other home sites pooled ('other sites': every site except Mohenjo-daro,
+Harappa and the West Asian finds), and Mohenjo-daro's earlier (Early + Intermediate) and later (Late) levels taken
+separately. Data F, intact objects, lines reversed; A for direction (OS19). Tests, statistics and thresholds are those
+of the thirty-fifth set's hypothesis with the same number; a sample with under 20 cases fails the hypothesis as
+untestable. 10,000-draw permutations; p < 0.05.
+
+The ten core findings at the other sites
+- **OS1** (as SR1) the last sign carries more information about the ending than the first.
+- **OS2** (as SR2) heads come from a smaller inventory than first signs.
+- **OS3** (as SR3) human-figure heads take 740 more often than other heads.
+- **OS16** (as SR16) 80%+ of heads with 5+ names fix their ending.
+- **OS8** (as SR8) affixed fish are a name's last sign less often than the plain fish.
+- **OS10** (as SR10) the tiered form is for 5-8.
+- **OS11** (as SR11) long-stroke numerals stand before container and device signs.
+- **OS12** (as SR12) the number depends on the following sign.
+- **OS20** (as SR20) long-stroke numerals open their line.
+- **OS18** (as SR18) frequent signs are simpler.
+
+Transfer
+- **OS4** The head-to-ending rule learned at Mohenjo-daro and Harappa together predicts the other sites' endings for
+  those heads at 90%+ and above the majority baseline (binomial).
+
+The Harappa habits at the other sites
+- **OS9** (as SR9) the stroke pair is followed by a fish more often than the short three.
+- **OS13** (as SR13) tablet variants differ at a numeral more often than seal-name variants.
+- **OS14** (as SR14) unicorn seals carry longer texts than other-animal seals.
+- **OS19** (as SR19) left-to-right texts are rarer on seals than on other objects (A).
+
+Over time at Mohenjo-daro (each finding must hold in the earlier and in the later levels)
+- **OT1** (as SR1) the last sign decides the ending.
+- **OT3** (as SR3) human-figure heads take 740.
+- **OT16** (as SR16) the head fixes the ending.
+- **OT11** (as SR11) long strokes count containers and devices.
+- **OT12** (as SR12) the number depends on the following sign.
+
+## Results of the thirty-sixth set (added after the test; `predict_test36.py`, `results/predict_test36.md`)
+
+Nine held, eleven failed. Other sites: 491 objects (Kalibangan 102, Lothal 101, Dholavira 87, Chanhu-daro 53, Nausharo
+29, others); Mohenjo-daro earlier 348, later 258 objects.
+
+**At the other sites (a third sample), seven of the ten core findings hold**: OS1 (the last sign decides the ending,
+p = 0.043), OS8 (affixed fish are attributes, p = 0.027), OS10 (tiered for 5-8, 71% against 19%), OS11 (long strokes
+count containers, 9.1% against 0.7%), OS12 (the number depends on the sign, p = 0.0001), OS20 (long numbers open lines,
+40% against 13%), OS18 (frequent signs simpler, Spearman -0.31). OS2 fails (heads a smaller inventory: +0.13 bits,
+p = 0.22) and OS3, OS16 are not testable (10 human heads; 9 heads with 5+ names).
+
+**The head rule does not transfer to the smaller sites.** OS4 fails clearly: the head-to-ending rule learned at
+Mohenjo-daro and Harappa predicts the other sites' endings at 81.2%, below their majority baseline of 83.3% (p = 0.79).
+That the last sign decides the ending holds at the other sites (OS1), but which ending a given head takes is not the
+same there: the head-ending pairings are local to the two cities, or the names are different ones.
+
+**Harappa habits.** **OS14 holds** at the other sites (unicorn seals carry longer texts, p = 0.0001): it is Mohenjo-daro
+that lacks it, not a Harappa peculiarity. OS9, OS19 fail (the stroke pair + fish and seals avoiding left-to-right are
+Harappa habits), OS13 is not testable (2 tablet variant pairs).
+
+**Over time at Mohenjo-daro.** Only **OT12 holds** in both earlier and later levels (the number depends on the sign:
+MI 1.39 and 1.68). OT1 holds in the earlier levels (p = 0.003) and narrowly misses in the later (p = 0.062); OT3,
+OT16, OT11 lack power in at least one period (4 to 15 human heads, 6 to 8 heads with 5+ names, 60 long numerals).
+
+Tally, counting parts: 212 held, 315 failed (527 registered).
+
+# Thirty-seventh set, registered before testing (24 September 2026): regional name habits (round 1 of 10)
+
+Lead: the head-to-ending rule does not carry from the two cities to the other sites (OS4). Regions: Sindh (Mohenjo-daro,
+Chanhu-daro, Allahdino, Amri, Kot Diji, Lakhanjo-daro, Nausharo), north (Harappa, Kalibangan, Banawali, Rakhigarhi,
+Farmana, Bhirrana, Rupar), Gujarat (Lothal, Dholavira, Surkotada, Desalpur, Kanmer, Gola Dhoro, Rangpur). F, intact
+objects, lines reversed; names as before; seal names are the first name on each seal. 10,000-draw permutations; p < 0.05.
+Helpers in rtools.py.
+
+- **RG1** The head of seal names depends on the region (MI beyond permutation).
+- **RG2** The first sign of seal names depends on the region.
+- **RG3** Gujarat seal names are shorter than Sindh seal names (rank test).
+- **RG4** Gujarat seal lines carry the heading less often than Sindh seal lines, length-stratified.
+- **RG5** 30%+ of Gujarat seal names have a head never seen as a head at Mohenjo-daro or Harappa.
+- **RG6** At least three head signs with 5+ names each occur as heads in one region only.
+- **RG7** The notation of numerals (short / long / tiered) depends on the region.
+- **RG8** Kalibangan seal names end in 520 more often than Harappa seal names.
+- **RG9** Dholavira texts are longer than the texts of the other Gujarat sites (rank test).
+- **RG10** Chanhu-daro seal names share their head with Mohenjo-daro seal names (head seen at Mohenjo-daro) more often
+  than Lothal seal names do (Sindh neighbours against a distant site).
+
+## Results of the thirty-seventh set (added after the test; `predict_test37.py`, `results/predict_test37.md`)
+
+Two held, eight failed. Names look alike across regions: the head (RG1, p = 0.12) and the first sign (RG2, p = 0.34) do
+not depend on the region, Gujarat names are not shorter (RG3), not less headed (RG4), and only 15% have a head unseen in
+the two cities (RG5). Kalibangan is not a 520 site (RG8), Dholavira texts are not longer (RG9), Chanhu-daro does not share
+Mohenjo-daro's heads more than Lothal does (RG10). **RG6 holds**: four heads with 5+ names occur only in Sindh (222, 455,
+927, 255). **RG7 holds**: the numeral notation depends on the region (p = 0.0001), the one regional difference that is
+general. So the OS4 failure is not a different stock of names in the smaller sites; it is the head-ending pairings that
+vary. Tally, counting parts: 214 held, 323 failed (537 registered).
+
+# Thirty-eighth set, registered before testing (24 September 2026): the longest texts (round 2 of 10)
+
+Lines of 8+ signs ('long') against lines of 5-7 ('middle'); pooled A + B unless said; F for objects and sites.
+10,000-draw permutations; p < 0.05.
+
+- **LT1** Long lines contain two or more ending tokens (740 / 520) more often than middle lines.
+- **LT2** In long lines with an ending before the end, the material after the first ending itself closes with an ending
+  (740 / 520, optionally + 90 / 400 / 151) in half or more.
+- **LT3** Long lines contain a numeral more often than middle lines.
+- **LT4** Long lines are on objects other than seals more often than middle lines (F).
+- **LT5** Long lines carry the heading more often than middle lines.
+- **LT6** Long lines can be split into two parts each attested as a whole line elsewhere more often than their own
+  sign-order shuffles can.
+- **LT7** Distinct long texts recur on 2+ objects less often than distinct middle texts (F).
+- **LT8** Long lines end in an ending (with or without 90 / 400 / 151) less often than middle lines.
+- **LT9** Signs rare in the corpus (5 or fewer tokens in A + B) make up a larger share of the tokens of long lines than
+  of middle lines.
+- **LT10** Long lines come from Mohenjo-daro more often than middle lines (F).
+
+## Results of the thirty-eighth set (added after the test; `predict_test38.py`, `results/predict_test38.md`)
+
+Three held, seven failed. 210 long lines (8+ signs), 1,215 middle lines (5-7). Deviation: LT6 used 1,000 shuffles.
+**LT1 holds** (two or more endings: 7.1% of long lines against 1.1%), **LT3 holds** (a numeral: 79% against 69%),
+**LT7 holds** (distinct long texts recur less: 2.9% against 6.6%). But long lines are not two texts joined: none of 210
+splits into two lines attested elsewhere (LT6), and after a first ending the rest closes with an ending in only 30%
+(LT2). Long lines are not off the seals (LT4 the other way), not titled (LT5 the other way), end in an ending as often
+as middle lines (LT8), use rare signs no more (LT9) and are not a Mohenjo-daro trait (LT10). Long lines are single,
+longer, more often numbered compositions, a few of them with a second name. Tally, counting parts: 217 held, 330 failed
+(547 registered).
+
+# Thirty-ninth set, registered before testing (24 September 2026): Harappa over time (round 3 of 10)
+
+Harappa objects of F (intact, lines reversed) with a level: earlier = HARP 3B and Vats Strata IV-VII, later = HARP 3C
+and Vats Strata I-III (as before). 'Both periods' = the test holds in the earlier and in the later objects separately;
+under 20 cases in either makes it fail as untestable. 10,000-draw permutations; p < 0.05.
+
+- **HT1** (as SR1, both periods) the last sign carries more information about the ending than the first.
+- **HT2** (as SR11, both periods) long-stroke numerals stand before container and device signs more than short ones.
+- **HT3** (as SR12, both periods) the number depends on the following sign.
+- **HT4** (as SR10, both periods) the tiered form is for 5-8.
+- **HT5** Receipts are a larger share of tablets in the earlier levels than in the later.
+- **HT6** Count-token values (long 2 / 3 / 4 before 700) are larger in the earlier levels (mean, label permutation).
+- **HT7** The share of 520 among names differs between the periods (Fisher, two-sided).
+- **HT8** (as SR9, both periods) the stroke pair is followed by a fish more often than the short three.
+- **HT9** The left-to-right share differs between the periods (A is undated; F lines reversed carry no direction, so
+  direction is taken from A objects matched to F by CISI number; Fisher, two-sided).
+- **HT10** The head of names depends on the period (MI beyond permutation).
+
+## Results of the thirty-ninth set (added after the test; `predict_test39.py`, `results/predict_test39.md`)
+
+Seven held, three failed. Harappa objects with a level: earlier 465, later 346.
+**Stable across time**: HT1 (the last sign decides the ending: p = 0.047 earlier, 0.0001 later), HT2 (long strokes count
+containers: 79% and 64% against 8% and 0%), HT3 (the number depends on the sign: MI 1.01 and 1.16). **What changes**:
+HT5 (receipts are 11.5% of earlier tablets, 5.7% of later), HT6 (earlier count tokens count more, +0.27), HT9 (left-to-
+right writing 7.9% earlier, 3.8% later), HT10 (the head signs of names change, MI 0.31, p = 0.013). HT7 fails (the 520
+share is stable, 16.6% against 15.8%). HT4 and HT8 lack cases per period (12-15 tiered numerals of 5-8; 16-23 short
+threes). At Harappa the grammar and the number system are stable while the administration (receipts, count sizes),
+the writing direction and the particular names change. Tally, counting parts: 224 held, 333 failed (557 registered).
+
+# Fortieth set, registered before testing (24 September 2026): the core findings in Mahadevan's transcription (round 4 of 10)
+
+Findings tested so far on F, A or pooled samples, now on B alone (the M77 texts absent from A; Mahadevan's own
+transcription). Tests and thresholds as the thirty-fifth set's hypothesis named. 10,000-draw permutations; p < 0.05;
+under 20 cases fails as untestable.
+
+- **MB1** (as SR10) the tiered form is for 5-8.
+- **MB2** (as SR11) long-stroke numerals stand before container and device signs more than short ones.
+- **MB3** (as SR20) long-stroke numerals open their line more than short ones.
+- **MB4** (as SR8) the affixed fish are a name's last sign less often than the plain fish.
+- **MB5** (as SR16) 80%+ of heads with 5+ names fix their ending.
+- **MB6** (as SR12) the number depends on the following sign.
+- **MB7** (as SR1) the last sign carries more information about the ending than the first.
+- **MB8** (as LT1) lines of 8+ signs hold two or more endings more often than lines of 5-7.
+- **MB9** (as L16) the fish variants 233, 235, 240 alternate with 220 in otherwise identical names more than matched
+  random sign pairs.
+- **MB10** (as J8) for signs after a numeral 10+ times, the commonest value accounts on average for 60%+ of their
+  numerals.
+
+## Results of the fortieth set (added after the test; `predict_test40.py`, `results/predict_test40.md`)
+
+Nine held, one failed. On Mahadevan's transcription alone (1,554 lines, 544 names) the core findings replicate: MB1
+(tiered for 5-8: 66% against 6%), MB2 (long strokes before containers and devices: 56% against 3%), MB3 (long numbers
+open lines: 57% against 21%), MB4 (affixed fish last 13% against 31%), MB5 (28 of 33 heads fix their ending), MB6 (the
+number depends on the sign, MI 1.05), MB7 (the last sign decides the ending, +0.26 bits), MB9 (fish variants alternate
+with 220, p = 0.001), MB10 (the commonest value covers 67% of a sign's numerals). MB8 fails narrowly (two endings in 3
+of 42 long lines against 5 of 306, p = 0.060). The core of the name grammar and the number system does not depend on
+the transcription. Tally, counting parts: 233 held, 334 failed (567 registered).
+
+# Forty-first set, registered before testing (24 September 2026): repeated and doubled signs (round 5 of 10)
+
+'Double' = two adjacent identical signs, numerals left out (the samples split joined doubles, signs.SPLIT, so A and B
+count them alike). A, B, F (lines reversed); names as before. 10,000-draw permutations; p < 0.05.
+
+- **DB1** Doubles occur more often than within-line shuffles produce. A and B.
+- **DB2** A doubled sign stands inside a name (not as its last sign) more often than single tokens of the same signs do
+  (pooled A + B).
+- **DB3** Names ending in a double take the same ending as names ending in the single sign, for 80%+ of signs with 3+
+  names of each kind (pooled).
+- **DB4** A name body containing a double is also attested with the single sign in its place more often than a random
+  sign replaced by its own double would be (pooled; bodies with a double, permutation of positions).
+- **DB5** Tablet lines contain a double more often than seal lines, length-stratified (F).
+- **DB6** A name body repeats a sign non-adjacently less often than within-name shuffles produce. A and B.
+- **DB7** Lines with a double are shorter than lines without, among lines with a name (rank test, pooled).
+- **DB8** A double is split by a line break less often than other gaps (M77 multi-line texts, both line orders).
+- **DB9** Harappa lines contain a double more often than Mohenjo-daro lines, length-stratified (F).
+- **DB10** The three commonest doubled signs account for 60%+ of all doubles (pooled).
+
+## Results of the forty-first set (added after the test; `predict_test41.py`, `results/predict_test41.md`)
+
+Three held, seven failed. Doubling is deliberate (DB1: 118 doubles in A, 80 in B, both above every shuffle, p = 0.001
+on 1,000 shuffles) and name bodies avoid repeating a sign at a distance (DB6: 13 of 775 bodies in A, 6 of 224 in B,
+p = 0.001 and 0.017), so a repeat is either adjacent or absent. DB3 holds but on one sign only (832, the only sign with
+3+ names of each kind); it is not evidence. The rest fail: doubled tokens are not more often inside the name (DB2, 62%
+against 65%); no body with a double is attested with the single sign instead (DB4, 0 against 4 discordant); tablets
+and seals double alike (DB5); lines with a double are longer, not shorter (DB7, mean 5.5 against 4.6); line breaks do
+not avoid doubles (DB8, 5 of 36, p = 0.17); Harappa does not double more (DB9); doubles are spread over many signs
+(DB10, 615 alone is 90 of 198, the top three 57%). Doubling is one sign's habit (615, the 'jar-pair') plus a thin
+scatter; a double is its own unit, never a variant spelling of the single sign. Deviations: DB1 and DB6 used 1,000
+shuffles; DB4 was run as a paired sign test (removing a sign of the double against removing a random other sign of the
+same body) rather than a permutation of positions. Tally, counting parts: 236 held, 341 failed (577 registered).
+
+# Forty-second set, registered before testing (24 September 2026): sign order inside the name (round 6 of 10)
+
+Name bodies as before (name_of, pooled A + B unless stated); numerals kept. 'Pair' = two signs in one body, any
+distance, ordered by which comes first; pairs co-occurring in 5+ bodies. 10,000-draw permutations; p < 0.05.
+
+- **OR1** For 70%+ of pairs one order holds in 90%+ of their bodies (pooled).
+- **OR2** The dominant orders are transitive: among triples whose three pairs all qualify, cyclic triples are fewer
+  than the 25% random orientation gives (binomial).
+- **OR3** A sign's relative position in the body (0 first, 1 last) is more fixed than within-body shuffles make it:
+  summed within-sign variance of relative position lower than in 1,000 shuffles.
+- **OR4** Dominant orders agree between A and B for 85%+ of pairs that qualify in both.
+- **OR5** Dominant orders agree between Mohenjo-daro and Harappa (F names) for 80%+ of pairs qualifying in both
+  (3+ bodies each).
+- **OR6** A recurrent prefix (body minus its last sign, 3+ bodies) combines with more distinct last signs than when
+  last signs are shuffled among bodies of the same length.
+- **OR7** Names grow at the front: of 3-sign bodies with exactly one attested 2-sign sub-body (same ending) made by
+  dropping the first or the last sign, the attested one is the tail (first sign dropped) more than half the time.
+- **OR8** In bodies of 4+ signs, an attested shorter body (same ending) is found as the final segment more often than
+  as the initial segment (paired sign test).
+- **OR9** The sign just before the last sign carries more information about the last sign than the first sign does
+  (bodies of 3+; MI of the adjacent sign higher, and significant).
+- **OR10** Pairs occurring in both orders are more common among signs in the first two positions than in the last two
+  (distinct pairs, bodies of 4+; Fisher).
+
+## Results of the forty-second set (added after the test; `predict_test42.py`, `results/predict_test42.md`)
+
+Eight held, two failed. Order inside the name is a ranking, not a set of fixed pairs: only 49% of pairs keep one order
+90%+ of the time (OR1 fails), yet the dominant orders are almost perfectly transitive (OR2: 38 cyclic of 749 triples,
+5% against 25%) and each sign keeps a relative place (OR3, p = 0.001). The ranking is the same in both transcriptions
+(OR4: 25 of 26 pairs) and in both cities (OR5: 67 of 75). Names are built right to left from the head: a recurrent
+prefix combines with more heads than chance (OR6, p = 0.039), a 3-sign body sheds its first sign to give an attested
+name far more often than its last (OR7: 76 against 29), and a long body ends in an attested name far more often than it
+begins with one (OR8: 239 against 29). The adjacent sign predicts the head better than the first sign (OR9: 3.69
+against 3.24 bits). Order is not looser at the front (OR10: 11.6% reversible in both places). Caveat: OR7 and OR8
+partly follow from the head-final rule (a prefix lacks a head, so it is rarely a whole name); the new content is OR2,
+OR3 and OR6. Deviations: OR3 used 1,000 shuffles; OR10 counted adjacent pairs; bodies counted as distinct names.
+Tally, counting parts: 244 held, 343 failed (587 registered).
+
+# Forty-third set, registered before testing (24 September 2026): the slot ranking (round 7 of 10)
+
+A sign's rank = its mean relative position (0 first, 1 last) in distinct name bodies of 2+ signs, signs with 5+ such
+tokens. 'Follows the ranking' = an adjacent pair whose earlier sign has the lower rank (pairs with equal-rounded ranks
+left out). 10,000-draw permutations; p < 0.05.
+
+- **SK1** Ranks from A predict the order of 85%+ of adjacent pairs in B's distinct bodies.
+- **SK2** Ranks from Mohenjo-daro names predict 80%+ of adjacent pairs in Harappa names (F).
+- **SK3** Ranks from seal names predict 75%+ of adjacent pairs in names on tablets and other objects (F).
+- **SK4** Rank tercile depends on Fairservis category (MI, permutation over signs).
+- **SK5** Numerals stand earlier in the body than other signs (relative position, bodies of 3+, rank test).
+- **SK6** Frequent signs rank later (Spearman between token count and rank positive, permutation).
+- **SK7** Bodies with an adjacent pair against the ranking by 0.2+ are more often attested once (single object) than
+  bodies without one (pooled A + B; Fisher).
+- **SK8** Ranks from 3-sign bodies correlate with ranks from 4+-sign bodies (Spearman 0.6+, significant).
+- **SK9** Ranks under ending 740 correlate with ranks under 520 (Spearman 0.6+, significant; 5+ tokens under each).
+- **SK10** Seal names follow the ranking more often than names on other objects (adjacent pairs, ranks from all F
+  names; Fisher).
+
+## Results of the forty-third set (added after the test; `predict_test43.py`, `results/predict_test43.md`)
+
+Three held, seven failed. A single scalar rank (mean relative position, 117 signs) predicts only about 70% of adjacent
+pairs out of sample: A to B 70% (SK1), Mohenjo-daro to Harappa 71% (SK2), seals to other objects 74% (SK3), all under
+their thresholds and well above chance. So the transitive ordering found in the forty-second set is not captured by one
+number per sign; order is partly pair-specific. The rank is stable across body length (SK8: Spearman 0.71) but only
+moderately across endings (SK9: 0.49, significant but under 0.6). Bodies that break the rank are mostly one-off names
+(SK7: 92% against 81% attested once), consistent with inversions being rare variants or errors. Frequent signs rank
+slightly later (SK6: 0.16, p = 0.043). Rank does not follow Fairservis category (SK4), numerals are not early (SK5, mean
+0.50 both), and seals keep the rank no better than other objects (SK10, 70% against 76%). Tally, counting parts: 247
+held, 350 failed (597 registered).
+
+# Forty-fourth set, registered before testing (24 September 2026): lines without a name (round 8 of 10)
+
+'Non-name line' = a line of 2+ signs with no 740 or 520 anywhere; 'name line' = a line for which name_of gives a name.
+Head class from classes(A). A, B pooled unless F is named. 10,000-draw permutations; p < 0.05.
+
+- **NN1** Non-name lines end in a head-class sign less often than name bodies do.
+- **NN2** Non-name lines are more often off seals than name lines, length-stratified (F).
+- **NN3** On seals, the motif depends on whether the line is a name line or a non-name line (A, MI, permutation).
+- **NN4** Non-name lines carry a numeral more often than name lines.
+- **NN5** Non-name lines of 3+ signs contain an attested name body (2+ signs) as a contiguous run more often than
+  within-line shuffles do.
+- **NN6** Non-name lines are shorter than name lines (rank test).
+- **NN7** Distinct non-name texts recur on 2+ objects more often than distinct name texts (F; Fisher).
+- **NN8** Non-name lines open with a heading (817, 820, 861) less often than name lines.
+- **NN9** Harappa has a larger share of non-name lines than Mohenjo-daro, length-stratified (F).
+- **NN10** The five commonest last signs of non-name lines cover 50%+ of them.

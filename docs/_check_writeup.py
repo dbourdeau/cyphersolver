@@ -40,9 +40,15 @@ def read(p):
 # ---------------------------------------------------------------------------
 # the surfaces
 
+def uncommented(s):
+    """The build script without its comment lines: commented-out PAGES entries (unpublished pages) do not count."""
+    return '\n'.join(ln for ln in s.split('\n') if not ln.lstrip().startswith('#'))
+
+
 def manifest():
     """slug -> st for every PAGES entry, and the IMAGES keys, from _build_site.py (no import: it has side effects)."""
-    s = read(HERE / '_build_site.py')
+    # commented-out entries (unpublished pages) are not in the manifest
+    s = uncommented(read(HERE / '_build_site.py'))
     pages = {m.group(1): m.group(2) for m in re.finditer(r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)'", s)}
     im = re.search(r'^IMAGES = \{(.*)\}\s*$', s, re.M)
     images = {}
@@ -434,7 +440,7 @@ def audit(brief=False):
     import _methods as M
     paths = M.profile_paths()
     pages = {m.group(1): (m.group(2), m.group(3)) for m in re.finditer(
-        r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)', stt='([^']*)'", read(HERE / '_build_site.py'), re.S)}
+        r"dict\(slug='([a-z0-9]+)'.*?st='([a-z]+)', stt='([^']*)'", uncommented(read(HERE / '_build_site.py')), re.S)}
     drift = []
     for r in readme_rows():
         want = M.section_of(r['section'])
