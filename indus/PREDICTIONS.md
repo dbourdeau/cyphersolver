@@ -7385,3 +7385,21 @@ resemble the Ur III seal legends (top ten 0.49, normalised entropy 0.70, predict
 concentration and repetitiveness of a short formulaic seal genre, not of a script type. Caveat: Linear B is
 administrative text, a different genre from seals; the comparison places the sign inventory, not the language.
 Tally, counting parts: 1190 held, 1118 failed (2308 registered).
+
+## Results of the hundred-and-seventieth set (added after the test; `predict_test170.py`, `results/predict_test170.md`)
+
+Four held, six failed. **'2 + fish' is two things.** Of 113 distinct lines, 60 write the 2 as the short pair (sign 2)
+and 51 as the long pair (sign 32), which Parpola does not read as a number but as 'space' (*vēḷ*), long pair + fish
+being his *vēḷ-mīn*, Venus (C1 fails at 53%). Leaving the long pair out, short 2 + fish (60) is still far commoner than
+6 + fish (8), so sets 138, 139 and 168 stand, but part of the '2 + fish' count is Parpola's Venus compound. '2 + fish'
+is never a whole name body on its own (C2: 0 of 73). The non-name line of two-line seals is not mostly a count (C3:
+38%). **Harappa count tokens vary by excavation unit** (C4: MI 0.29 bits, p = 0.0001; long 3, 4 and 2 + 700), batches
+made and kept locally, as the Linear B counts of set 168 are local. **The heading never opens a copper-tablet text**
+(C9: 0 of 198 against 16% of seal lines): the tablets are labels without the seal's heading. Sealing texts that match a
+known seal are shorter (C7: 3.5 against 4.8 signs), as common short names would be, and foreign lines use signs rare
+at home three times as often (C8: 16% against 5%). Failed: sealing names are 740 names only slightly more (C10: 91%
+against 82%, p = 0.08); C5 had no case (none of the seven copper-only signs, 341, 597, 749, 753, 781, 782, 957, has a
+Fairservis identification); and C6 fails in a way that settles a point: left-to-right lines match right-to-left
+lines as stored (46) and almost never reversed (2). ICIT stores every text in reading order, so left-to-right texts
+are the same texts written in the other direction, not reversals. Tally, counting parts: 1194 held, 1124 failed (2318
+registered).

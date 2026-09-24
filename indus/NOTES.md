@@ -2196,6 +2196,13 @@ signs (198) and Linear B words (2,128), nearer the signs, on types, hapax share,
 predictability: a logo-syllabic inventory. On concentration measures (top ten, normalised entropy, doubling) the Indus
 signs look like Ur III seal legends instead: the formulaic seal genre. Tally 1190 held, 1118 failed.
 
+## Hundred-and-eighty-fourth pass (24 Sept 2026): follow-ups on content
+
+Registered first (359f0528e). '2 + fish' splits into short pair (60) and long pair (51, Parpola's vēḷ-mīn 'Venus');
+short 2 + fish still far exceeds 6 + fish. Harappa count tokens vary by excavation unit; the heading never opens a
+copper-tablet text (0 of 198); matched sealings are shorter; foreign lines use rare signs 3x. Left-to-right texts are
+the same texts in reading order, not reversals. Tally 1194 held, 1124 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
