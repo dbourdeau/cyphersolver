@@ -2503,3 +2503,22 @@ number depends on the sign, MI 1.05), MB7 (the last sign decides the ending, +0.
 with 220, p = 0.001), MB10 (the commonest value covers 67% of a sign's numerals). MB8 fails narrowly (two endings in 3
 of 42 long lines against 5 of 306, p = 0.060). The core of the name grammar and the number system does not depend on
 the transcription. Tally, counting parts: 233 held, 334 failed (567 registered).
+
+# Forty-first set, registered before testing (24 September 2026): repeated and doubled signs (round 5 of 10)
+
+'Double' = two adjacent identical signs, numerals left out (the samples split joined doubles, signs.SPLIT, so A and B
+count them alike). A, B, F (lines reversed); names as before. 10,000-draw permutations; p < 0.05.
+
+- **DB1** Doubles occur more often than within-line shuffles produce. A and B.
+- **DB2** A doubled sign stands inside a name (not as its last sign) more often than single tokens of the same signs do
+  (pooled A + B).
+- **DB3** Names ending in a double take the same ending as names ending in the single sign, for 80%+ of signs with 3+
+  names of each kind (pooled).
+- **DB4** A name body containing a double is also attested with the single sign in its place more often than a random
+  sign replaced by its own double would be (pooled; bodies with a double, permutation of positions).
+- **DB5** Tablet lines contain a double more often than seal lines, length-stratified (F).
+- **DB6** A name body repeats a sign non-adjacently less often than within-name shuffles produce. A and B.
+- **DB7** Lines with a double are shorter than lines without, among lines with a name (rank test, pooled).
+- **DB8** A double is split by a line break less often than other gaps (M77 multi-line texts, both line orders).
+- **DB9** Harappa lines contain a double more often than Mohenjo-daro lines, length-stratified (F).
+- **DB10** The three commonest doubled signs account for 60%+ of all doubles (pooled).
