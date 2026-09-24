@@ -3250,3 +3250,20 @@ not more stereotyped in signs (MT9), and they repeat seal lines less (MT10: 20% 
 the ICIT motif field holds the string 'None' where no motif is recorded; the first run counted it as a motif (MT5 100%
 both, MT6/MT7 over all objects). The recorded run treats 'None' as no motif. Earlier sets that read this field may be
 affected; flagged for an audit. Tally, counting parts: 370 held, 447 failed (817 registered).
+
+# Sixty-sixth set, registered before testing (24 September 2026): replicating loop 3 on held-out data (loop 3, round 10)
+
+Each test repeats a finding of the fifty-seventh to sixty-fifth sets on data not used to find it: B alone, other sites
+(F outside Mohenjo-daro and Harappa), incised tablets (TAB:I), or A's own line order. Definitions as in the originals,
+computed within the held-out data; thresholds scaled only where stated. p < 0.05.
+
+- **RX1** (FS1) In B, different fish stand adjacent more often than within-body shuffles give (1,000 shuffles).
+- **RX2** (FS5) In B, fish body tokens follow a numeral more often than other body tokens.
+- **RX3** (FS6) In B, which fish is used depends on the preceding sign (MI).
+- **RX4** (SG1) In B, units (pairs in 3+ distinct bodies) cover more body tokens than in within-body shuffles (1,000).
+- **RX5** (SG10) In B, 30%+ of units are also whole 2-sign bodies.
+- **RX6** (DC1) In B, fish signs (10+ tokens) are more alike in context than frequency-matched random sets.
+- **RX7** (HD7) In B, 30%+ of headed name bodies are also attested unheaded.
+- **RX8** (HD5) At other sites, seal lines are headed more often than tablet and other lines, length-stratified.
+- **RX9** (MT7) On incised tablets with a motif, same-text pairs share the motif more than shuffled motifs give.
+- **RX10** (DR1) In A's line order, the '700 + numeral' form is a larger share of count tokens on TAB:B than on TAB:I.
