@@ -3745,3 +3745,36 @@ comes before a modifier more often than after it (NP9: 'N mod head' 124 against 
 against 14), suggesting [N [mod head]] rather than [mod [N head]]. 7% of names hold two numeral runs (NP11), and
 counted heads do not take more modifiers (NP12); counted heads standing alone is borderline (NP7, p = 0.057). Tally,
 counting parts: 470 held, 537 failed (1007 registered).
+
+# Seventy-seventh set, registered before testing (24 September 2026): numbers that are part of names, and two systems (twenty hypotheses)
+
+Distinct names and distinct lines (A + B) unless stated. Counted head, value and kind as in the seventy-second set;
+formulas = non-name lines. 'N mod head' = body ending numeral, non-numeral, head; 'mod N head' = non-numeral, numeral,
+head. 10,000-draw permutations (1,000 where stated); p < 0.05.
+
+Fixed numbers in names
+- **LX1** For heads counted in 3+ distinct names, the commonest value's mean share is 0.7+.
+- **LX2** For signs counted 3+ times in both, the commonest-value share is higher in names than in formulas (sign test).
+- **LX3** (value, head) pairs recur across distinct bodies more often than when values are shuffled among counted names.
+- **LX4** The two commonest values cover 70%+ of name numeral runs.
+- **LX5** Name values and formula values differ in distribution (MI with a genre label).
+- **LX6** In 'N mod head' names, the value tells more about the head than about the modifier (MI higher and
+  significant).
+- **LX7** For 30%+ of (value, head) pairs in counted names, 'N head' is also an attested 2-sign body.
+- **LX8** Name numeral runs are value 2 or 3 more often than formula numeral runs.
+Two systems sharing signs
+- **LX9** 20%+ of sign types with 3+ name tokens never occur in formulas.
+- **LX10** Name and formula lines share adjacent-pair types less than when genre labels are shuffled among lines (1,000).
+- **LX11** They share (numeral, sign) pair types less than when labels are shuffled (1,000).
+- **LX12** For signs with 10+ tokens in each genre, left-neighbour distributions differ between genres more than when
+  labels are shuffled (mean Jensen-Shannon divergence, 1,000).
+- **LX13** The sign after a numeral ends the line more often in formulas than in name lines.
+The number before the phrase
+- **LX14** In 'N mod head' names, (mod, head) is an attested 2-sign body in 30%+.
+- **LX15** In 'mod N head' names, (N, head) is an attested 2-sign body in 30%+.
+- **LX16** The modifier in 'N mod head' is a fish more often than in 'mod N head'.
+- **LX17** 'N mod head' names take 520 more often than 'mod N head' names.
+- **LX18** Harappa and Mohenjo-daro differ in the share of 'N mod head' among these two shapes (two-sided, F).
+Replication
+- **LX19** B: LX1 holds.
+- **LX20** B: LX10 holds (1,000).
