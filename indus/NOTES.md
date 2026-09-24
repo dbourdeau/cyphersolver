@@ -2064,6 +2064,13 @@ Registered first (2ea4fc25d). On 65 copper tablets with a sub-area, the picture 
 tablets in DK-G South, the animal series in VS-A, anthropomorphs and composites on the citadel mounds; texts do not
 cluster, and an area's tablets span levels. Picture sets kept in particular quarters. Tally 1107 held, 1052 failed.
 
+## Hundred-and-sixty-sixth pass (24 Sept 2026): capture-recapture calibrated on Linear B
+
+Registered first (sets 152-156 together, 9f410531e). On DAMOS Linear B (Knossos, Pylos), persons give 3.6 times the
+observed, 18% shared, 71% on one document; titles 1.6 times, 50% shared, 51%. Indus names (5.1, 15%, 92%) match the
+persons profile on all three; Indus heads match the titles profile. Set 147's personal-name reading is calibrated.
+Tally 1112 held, 1053 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

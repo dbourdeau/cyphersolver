@@ -6800,3 +6800,20 @@ Numeral runs as predict_test112.runs; value R.NUMS.
 - **BO3** The value of name-opening runs depends on the city (Mohenjo-daro against Harappa, F; MI).
 - **BO4** 5+ pairs of distinct names differ only in the value of a name-opening run (e.g. '2 X Y 740' and
   '3 X Y 740').
+
+## Results of the hundred-and-fifty-second set (added after the test; `predict_test152.py`, `results/predict_test152.md`)
+
+Five held, one failed. **The capture-recapture method separates personal names from titles on a read script, and
+the Indus names fall with the personal names.** Linear B (DAMOS, Knossos and Pylos): 992 attested persons (Knossos 649,
+Pylos 419, both 76) give an estimate of 3,544, 3.6 times the observed (LC1); 43 titles and occupations (Knossos 16,
+Pylos 35, both 8) give 67, 1.56 times (LC2 fails narrowly against 1.5). Persons are shared between the palaces less
+than titles (LC3: 18% against 50%, p = 0.005) and are on one document more often (LC4: 71%; LC5: titles 51%, p =
+0.006). On all three measures the Indus names of set 147 are closer to Linear B persons than to titles (LC6: estimate
+ratio 5.1 against 3.6 / 1.6; shared 15% against 18% / 50%; one object 92% against 71% / 51%).
+
+Noted after the test: the Indus heads of set 147 (estimate 1.14 times observed, 50 of 64 Harappa heads also at
+Mohenjo-daro, 78%) have the profile of Linear B titles, not persons, which fits heads as a closed vocabulary of name
+elements or titles. Caveats: the Linear B classes come from one lexicon's definitions (Tiripode, exact forms), the two
+palaces differ in date as well as place, and Indus objects are seals, not administrative documents; the comparison is
+of profiles, not a test of identity. With this control, set 147's reading (Indus names behave as personal names) is
+calibrated rather than only suggestive. Tally, counting parts: 1112 held, 1053 failed (2165 registered).
