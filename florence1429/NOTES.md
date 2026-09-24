@@ -32,10 +32,10 @@ key, so DECODE's "non-decrypted" means "not printed", not "never read". The lett
 | letter | signs | letter | signs |
 |---|---|---|---|
 | A | :· (two dots over one), H, ℘ (6-like loop) | N | ⟩ (7-shape), E |
-| B | ϙ (9 with straight tail), ⊤ | O | ∂ (8/δ with tail), 4 with bar, ✱ |
+| B | 9, -·- | O | ∂ (8/δ with tail), 4 with bar, ✱ |
 | C | φ, ⊢, E | P | ψ, ♀ |
-| D | ᴗ (u), ⊐, ▽ | Q | -]-, 4o |
-| E | ς (5), ⊔ | R | Γ°, ∧ |
+| D | ᴗ (u), ⊐ | Q | -]-, 4o |
+| E | ς (5), ⊔, ▽ | R | Γ°, ∧ |
 | F | π, o— | S | 8 with strokes, ⊼ |
 | G | ═, ⁝ | T | ⱡ (t on a base), ⋉ (x with tail) |
 | H | ‖ | U | ¨ (two dots over a bar), 99, ♀ (circle over cross) |
@@ -49,6 +49,9 @@ Dieci · M Duca di Milano · 8 Faenza (signore di) · ↑ fanti · ooo fiorini/d
 oT gente d'arme · 4 lance · Ǝ Malatesta · -o- Mantova · ⊟ mille · φ non · oto Pandolfo · ʃʃ per · ✷ tregua.
 Cover-words written in clear: **Giovanni = i Dieci di Balìa; Andrea = Galeotto; trombetta = ambasciatore;
 tagliato = scapito; con = guerra; che = cavalli.**
+
+(Table corrected 24 Sept 2026 from the film at full size: ▽ is under E, not D; B's first sign is a plain 9. The
+signs in the I, S, T, L columns are described in `key_extended.md`.)
 
 ## Reading (working; signs in [ ], key readings in CAPITALS, Gabbrielli's gloss in { })
 
@@ -67,7 +70,7 @@ tagliato = scapito; con = guerra; che = cavalli.**
 13. … ma parmi volesse andasse più segreta. Raccomandomi alla Signoria vostra
 14. Vostro servidore Galeotto de Fibindacci da Ricasoli
 
-## State
+## State (18 Sept 2026, superseded below)
 
 - Identified: sender, year, cipher, and the printed (filmed) key; the glossed words verified against the key
   (*paolo*, *di madonna*, *madonna* twice, *a Lugo* read cleanly by it).
@@ -83,6 +86,9 @@ tagliato = scapito; con = guerra; che = cavalli.**
 - `IMG_R3754_I23011_P.jpg`, `IMG_R3753_I23010_P.jpg` (no. 72, clear letter dated 11 Feb 142[4], used by
   Gabbrielli), `line*.png`, `m*.png`, `g*.png`, `z*.png` (strips and group crops), `TRANSCRIPTION.md`.
 - `keys/58-1..6.pdf`, `keys/58-index*.pdf`, `keys/files.json` (all 54 file ids), `keys/key1_400.png`, `keys/k_*.png`.
+- `key_extended.md` (extended key with grades and the check for existing keys), `cipher171.tsv` (every cipher token of
+  no. 171 with value, source, grade), `measure171.py` (counts it). Sibling crops `strips/X21_*`, `X91_*`, `X92_*`,
+  `W*_*.png`, `Y171_*.png` (main checkout).
 - All images git-ignored (DECODE and Yale film).
 
 ## Siblings fetched (crib source for extending the key)
@@ -140,3 +146,43 @@ Still open: the two heavy word-signs [■ ⊡] before "sia" (not in the nomencla
 SOSPETOSA, and a fresh transcription of the clear text of lines 1-3, 8-9 and 12-13, which above is a first pass.
 The subagent harvest of the siblings (to test the ten new sign values) was cut off twice by usage limits; the
 deskewed pages, line index and zoom tool it built are in `strips/` for the next session.
+
+## Extended key and re-decipherment, 24 Sept 2026
+
+Following George Lasry's suggestion (21 Sept) that the sibling letters could give the full key, and that the key
+should be checked against the rest of the collection before any upload:
+
+- **No fuller key exists.** Checked: Gabbrielli vol. 1 frames 58-3 (key 1), 58-4 (key 2, "Fibindacci (de) Karolus
+  commissarius", a different sender and system), 58-5/58-6 (keys 3-4, Latin syllabic); Meister 1902; Somogyi 2016;
+  DECODE, where Gabbrielli's volume is already uploaded as key records R5687-R5698 (1424 frames R5687-R5690),
+  unlinked to R3754-R3757 and holding nothing beyond key 1. Details in `key_extended.md`.
+- **Sibling glosses transcribed** (TRANSCRIPTION.md, sibling section): 26 runs of no. 21, 8 of no. 91, 6 of no. 92,
+  sign by sign with Gabbrielli's gloss. Eleven runs could not be aligned (faint gloss, blots).
+- **Key extended** (`key_extended.md`): new letter values at grade H: ɤ = A, ʃ = M, 9 = N, +o = O, ʒπ = O, ⊀ = T
+  (six); fourteen more at grade M (including the polyphones ᴗ = C, # = I, π = S); nulls ▼ and ϡ added, ɤ taken out of
+  the nulls; nomenclator ſſſ = pace; β also enciphers the syllable *con* (SALVO[β]DOTTO). Re-reading the film also
+  corrected the NOTES tabulation of key 1 (▽ = E, ⊓̍ = I, 8̊ = S, ô = T are Gabbrielli's own).
+- **No. 171 re-deciphered** token by token (`cipher171.tsv`, `measure171.py`, READING.md last section): 99 cipher
+  tokens, 97 given a value (98.0%), 94 at grade H or M; 72 of the values come from Gabbrielli's table, 16 from the
+  recovered values. Changes: PAVOLO (not "paolo"), CINTADINI, the Count's word sign three times, [Dieci] on line 11,
+  "a lui" withdrawn (A LO…), the line-4 pair is a null plus one word sign.
+
+## State (24 Sept 2026)
+- Text: deciphered to the read bar (98.0% of cipher tokens measured); outcome.method stays "read with known key",
+  since three-quarters of the values are Gabbrielli's.
+- Key: partial. Enough for DECODE as a derived key citing R5687-R5690, with grades; B, H, Q and the signs of the
+  unaligned sibling runs still lack values.
+- Siblings R3755-R3757: glossed runs aligned; the letters themselves not yet deciphered end to end.
+
+## Remaining gaps
+- ⊀ ψ, two signs before SOSPETOSA (no. 171 line 7) - blocker: too-short; one occurrence, no gloss; "e t[ro]p[o]" fits but is not proved
+- ⊡ word sign on line 4, read "il Papa" - blocker: open-codes; not in Gabbrielli's nomenclator, rests on his ṗp̄ mark and context
+- single E before "dicesse" (line 12), read "ella" - blocker: open-codes; word sign from context only
+
+## Escalation
+- [x] siblings: R3753 (clear), R3755, R3756, R3757 opened; 40 glossed runs transcribed and aligned where possible; R3758 (Responsive 7, later) not this cipher
+- [x] clear-pages: none; the decipherments are Gabbrielli's interlinear glosses, all used
+- [x] known-keys: Gabbrielli keys 1-4 (frames 58-3 to 58-6) compared; only key 1 fits; DECODE key records R5687-R5698 checked
+- [x] print: Meister 1902, Somogyi 2016, Guasti's Commissioni: key only, no text
+- [x] key-rebuild: key extended by sign-gloss alignment on the siblings (key_extended.md), 6 H and 14 M values
+- [x] retry: every token of no. 171 re-transcribed and re-deciphered with the extended key and regraded (cipher171.tsv)

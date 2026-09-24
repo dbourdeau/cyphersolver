@@ -18,19 +18,20 @@
           "interlinear",
           "printed edition"
         ],
-        "source": "Interlinear glosses by P. D. Gabbrielli (1863) over several runs (paolo, di madona, cintadini, il conte, sarrem andino, a lugo, madonna, el conte d'Urbino, cavalli, parenti); his key, built from these and sibling letters, printed by Meister 1902 p. 50. The letter itself never printed; the three long runs were not glossed.",
+        "source": "Interlinear glosses by P. D. Gabbrielli (1863) over most runs (paolo, di madona, cintadini, il conte, sarrem andino, a laog, madonna, puro femina e sospettosa, el conte d'Urbino, cavalli, dieci, parenti, cintadini); his key, built from these and sibling letters, printed by Meister 1902 p. 50. The letter itself never printed.",
         "partial": true
       },
       "length": {
-        "tokens": 110,
+        "tokens": 99,
         "unit": "symbols",
-        "measured": false
+        "measured": true,
+        "file": "cipher171.tsv"
       },
       "transcription": {
         "by": "llm from images",
         "source": "DECODE image IMG_R3754_I23011_P.jpg (5512 x 3674), deskewed and cut into line strips (strips/dsk171.png)",
         "image_quality": "good",
-        "notes": "No clean sign-only ciphertext file: TRANSCRIPTION.md and READING.md mix clear words with bracketed signs, so the count (about 110 signs in about twenty runs) is taken from NOTES and not measured. Several clear words remain palaeographic guesses."
+        "notes": "Cipher tokens listed one per row in cipher171.tsv (99 tokens: letters, nulls, word signs; a nomenclator sign counts as one), re-transcribed 24 Sept 2026 from 3x crops. Clear text is a first-pass palaeographic reading; several words remain guesses."
       }
     }
   ],
@@ -81,7 +82,7 @@
         "titles",
         "common words"
       ],
-      "unread_groups": "unknown"
+      "unread_groups": 1
     },
     "nulls": {
       "present": true,
@@ -90,8 +91,8 @@
     "key_order": "random",
     "word_division": "none",
     "doubled_letters": "written twice (MADONNA: two N signs)",
-    "sibling_key": "Gabbrielli's key 1 for Ricasoli (1863, Meister 1902 p. 50), built from nos. 163, 165, 72, 21, 91, 92; used as seeds and for alignment; new values tested on siblings nos. 21 and 91",
-    "notes": "Per-letter counts are from Gabbrielli's table as transcribed in NOTES (NOTES say 17 nulls but list 18 signs); the project added values (ɤ = A, +o = O, 9 = N, ô = T and others on this letter only) and showed ɤ is not a null. Cover-words in clear: Giovanni = the Dieci, trombetta = ambasciatore, che = cavalli, con = guerra."
+    "sibling_key": "Gabbrielli's key 1 for Ricasoli (1863, Meister 1902 p. 50), built from nos. 163, 165, 72, 21, 91, 92; extended 24 Sept 2026 from Gabbrielli's glosses on siblings R3755 (no. 21), R3756 (no. 91), R3757 (no. 92): key_extended.md",
+    "notes": "Per-letter counts are from Gabbrielli's table. Extension (key_extended.md): 6 new letter values at grade H (ɤ = A, ʃ = M, 9 = N, +o = O, ʒπ = O, ⊀ = T), 14 at M, nulls ▼ and ϡ added, ɤ removed from the nulls, nomenclator pace = ſſſ added and β shown to encipher the syllable con. Cover-words in clear: Giovanni = the Dieci, trombetta = ambasciatore, che = cavalli, con = guerra."
   },
   "conditions": {
     "prior_solution": {
@@ -110,15 +111,17 @@
     "human_role": "Supplied the DECODE login (session cookie) for the page images; set the goal of reading the letter using the interlinear glosses as seeds. No other target-specific intervention recorded.",
     "tools": [
       "deskewing and line-strip crops",
-      "zoom tool (strips/)"
+      "zoom tool (strips/)",
+      "token list and counter (cipher171.tsv, measure171.py)"
     ],
     "models": [
       "claude-opus-5",
-      "claude-fable (version unknown)"
+      "claude-fable (version unknown)",
+      "claude-opus-5.5"
     ],
-    "sessions": 1,
+    "sessions": 2,
     "first_date": "2026-09-18",
-    "last_date": "2026-09-21"
+    "last_date": "2026-09-24"
   },
   "solution": [
     {
@@ -192,17 +195,96 @@
       "kind": "literature search",
       "what": "George Lasry noted DECODE R3754 should be marked Decrypted (an interlinear decryption exists) and that siblings such as R3755 could give the full key, to be uploaded only after checking the key is not elsewhere in the collection. Not yet done.",
       "result": "partial"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "literature search",
+      "what": "Checked for a fuller key before extending: Gabbrielli vol. 1 frames 58-3 (key 1), 58-4 (key 2, Carlo Fibindacci commissarius: other values, not this cipher), 58-5/58-6 (keys 3-4, Latin syllabic); Meister 1902 and Somogyi 2016 print only key 1; DECODE holds Gabbrielli's volume as key records R5687-R5698 (1424 frames R5687-R5690), not linked to R3754-R3757, with nothing beyond key 1.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "verification",
+      "what": "Re-read Gabbrielli's key 1 from the film at full size: ▽ is his E (not D), ⊓̍ his second I, 8̊ his S, ô his T, # his second L, plain 9 his B; the NOTES tabulation corrected.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "transcription",
+      "what": "Transcribed the glossed cipher runs of no. 21 (26 runs), no. 91 (8) and no. 92 (6) sign by sign from 2-4x crops, paired with Gabbrielli's glosses (TRANSCRIPTION.md). The rest of no. 92 (about fifteen glossed runs) not reached.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "crib",
+      "what": "Aligned gloss letters to signs (LA NOVELLA, ANDARONO, TANTE E TALI, NON CONTENTERA MAI, VENUTA A IMOLA, MODIGLANA x2, D'ORIUOLO, PROMETTERE, FILIPPO, MANDATO, SALVO[CON]DOTTO, VENNE): 9 = N, +o = O, ⊀ = T, ɤ = A, ʃ = M, ʒπ = O fixed by glosses; 14 more values probable; ▼ a null.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "crib",
+      "what": "Tried to align eleven further glossed runs (21-1, 21-14, 21-28, 91-1b, 91-3, 91-6, 91-7, 92-2/3, 92-4 start, 92-5, 92-6): glosses faint, partly blotted or not matching sign counts.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "reading",
+      "what": "Re-transcribed all 99 cipher tokens of no. 171 and deciphered them with the extended key (cipher171.tsv, READING.md): PAVOLO, CINTADINI, the Conte word sign three times, [Dieci], MADON[null]NA, PURE with a null; 'a lui' withdrawn (A LO…); the heavy pair on line 4 is a null plus one word sign.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "verification",
+      "what": "Measured with florence1429/measure171.py: 97 of 99 tokens given a value (98.0%), 94 at grade H or M; 72 of the values from Gabbrielli's table, 16 from recovered values, 5 nomenclator, 4 context only. ⊀ ψ before SOSPETOSA unread.",
+      "result": "worked"
     }
   ],
   "outcome": {
+    "method": "read with known key",
+    "method_basis": "Gabbrielli's 1863 key for Galeotto da Ricasoli's cipher (ASF key volume, Yale Ilardi reel 58; Meister 1902 p. 50) supplies 72 of the 97 values in no. 171; the other values come from his interlinear glosses on this letter and on siblings R3755-R3757, aligned sign by sign (key_extended.md), a minority, so the method stays known key.",
+    "contribution": [
+      "transcription",
+      "key extended or corrected",
+      "sender or date identified",
+      "catalogue correction"
+    ],
     "class": "read",
-    "fraction_read": "unknown",
-    "grades": "unknown",
+    "fraction_read": 0.98,
+    "grades": {
+      "H": 80,
+      "M": 14,
+      "I": 3
+    },
     "verification": [
       "contemporary decipherment",
       "key confirms",
       "historical consistency"
     ],
-    "notes": "Open: word signs ■⊡ (il Papa?) and E (ella?) from context; π and ʓ in SOSPETOSA conflict with Gabbrielli; five values on this letter only; some clear words uncertain. The glosses are Gabbrielli's 1863, not contemporary."
+    "notes": "The glosses are Gabbrielli's of 1863, not contemporary. Key state partial: B, H, Q and the signs of eleven unaligned sibling runs lack values; polyphones ᴗ (D/C), # (L/I), π (F/S) rest on one letter each. Clear text partly a first-pass reading.",
+    "key": "partial",
+    "fraction_read_method": "measured",
+    "fraction_read_source": "florence1429/cipher171.tsv: 99 cipher tokens (letters, nulls, word signs), rows with value '?' counted unread; counted by florence1429/measure171.py",
+    "codes_open": {
+      "open": 1,
+      "total": 7,
+      "tokens_open": 1
+    },
+    "gaps": [
+      {
+        "item": "⊀ ψ, two signs before SOSPETOSA (line 7)",
+        "blocker": "too-short",
+        "detail": "one occurrence, no gloss over them; ⊀ is T in the siblings, ψ P by the key; 'e t[ro]p[o] sospetosa' fits but is not proved"
+      },
+      {
+        "item": "⊡ after the null on line 4, read 'il Papa'",
+        "blocker": "open-codes",
+        "detail": "not in Gabbrielli's nomenclator; rests on his mark ṗp̄ above it and on context"
+      },
+      {
+        "item": "single E before 'dicesse' (line 12), read 'ella'",
+        "blocker": "open-codes",
+        "detail": "word sign from context only"
+      }
+    ]
   }
 }

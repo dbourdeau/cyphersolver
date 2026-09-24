@@ -2373,9 +2373,9 @@
   "florence1429": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/florence1429.html",
    "key": {
-    "file": null,
+    "file": "florence1429/key_extended.md",
     "lang": "Italian",
-    "how": "Gabbrielli's key (1863, ASF, Chiavi delle cifre ... Dieci di Balia vol. 1), printed by A. Meister, Die Anfaenge der modernen diplomatischen Geheimschrift (1902), pp. 43-50; to be completed from the sibling letters (R3755 etc.) before any upload, after checking the key is not already elsewhere in the collection"
+    "how": "Gabbrielli's key (1863, ASF, Chiavi delle cifre ... Dieci di Balìa vol. 1 no. 1; already on DECODE as key records R5687-R5690, ASFi_SIVol1_1-4), printed by A. Meister 1902 pp. 43-50; extended 24 Sept 2026 from Gabbrielli's interlinear glosses on R3754-R3757 (6 new letter values certain, 14 probable, nulls and one nomenclator entry added; graded H/M/I in the file). Checked first that no fuller key exists in Gabbrielli's volume (keys 1-4), Meister, Somogyi 2016 or DECODE. Upload as a derived key citing R5687-R5690, and link R5687-R5690 to R3754-R3757."
    },
    "cite": "A. Meister 1902, pp. 43-50",
    "fields": {},
@@ -2383,11 +2383,47 @@
     "R3754": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "The letter carries interlinear decipherments (Gabbrielli, 1863), so it is decrypted; the key is Gabbrielli's, printed in Meister 1902 pp. 43-50. The runs he left unread are read on the write-up. Status change and key reference suggested by G. Lasry, 21 Sept 2026.",
+     "note": "The letter carries interlinear decipherments (Gabbrielli, 1863), so it is decrypted; the key is Gabbrielli's, printed in Meister 1902 pp. 43-50 and on DECODE as R5687-R5690 (link them). Language Italian, not Latin; sender Galeotto Fibindacci da Ricasoli, Urbino, early 1425 (1424 Florentine style). Deciphered end to end with the key extended from the siblings: 97 of 99 cipher tokens (write-up and florence1429/cipher171.tsv). Status change and key reference suggested by G. Lasry, 21 Sept 2026.",
      "reading": [
       {
        "file": "docs/florence1429.html",
        "section": "text"
+      }
+     ],
+     "sent": false
+    },
+    "R3755": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "ASF Dieci di Balìa, Responsive 3 no. 21: Galeotto Fibindacci da Ricasoli to the Dieci, [Urbino, Feb. 1425]; glosses 'la novella della rotta', Faenza, Malatesta, Modigliana, Oriuolo, Imola, il Duca, Filippo, Galeotto, Dieci, pace, fiorini. Same cipher as R3754 (Gabbrielli's key 1, DECODE R5687-R5690; extended key florence1429/key_extended.md). Language Italian, not Latin. Carries Gabbrielli's 1863 interlinear glosses over most cipher runs, so it is a decrypted letter; the glossed runs are transcribed sign by sign in florence1429/TRANSCRIPTION.md. Not yet deciphered end to end.",
+     "reading": [
+      {
+       "file": "florence1429/TRANSCRIPTION.md",
+       "section": "no. 21 (Responsive 3 no. 21, DECODE R3755)"
+      }
+     ],
+     "sent": false
+    },
+    "R3756": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "ASF Dieci di Balìa, Responsive 3 no. 91 (DECODE name Responsive_3_096): Galeotto Fibindacci da Ricasoli, Urbino, 17 Feb. [1425]; glosses Carlo, Galeotto, Malatesta, mandato, del duca, guerra. Same cipher as R3754 (Gabbrielli's key 1, DECODE R5687-R5690; extended key florence1429/key_extended.md). Language Italian, not Latin. Carries Gabbrielli's 1863 interlinear glosses over most cipher runs, so it is a decrypted letter; the glossed runs are transcribed sign by sign in florence1429/TRANSCRIPTION.md. Not yet deciphered end to end.",
+     "reading": [
+      {
+       "file": "florence1429/TRANSCRIPTION.md",
+       "section": "no. 91 (Responsive 3 no. 91 [DECODE name Responsive_3_096], DECODE R3756)"
+      }
+     ],
+     "sent": false
+    },
+    "R3757": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "ASF Dieci di Balìa, Responsive 3 no. 92 (DECODE name Responsive_3_097): Galeotto Fibindacci da Ricasoli, Urbino, 28 Feb. [1425], with a postscript; glosses hieri venne, il conte, salvo condotto, Mingardo, Faenza, ambasciatore. Same cipher as R3754 (Gabbrielli's key 1, DECODE R5687-R5690; extended key florence1429/key_extended.md). Language Italian, not Latin. Carries Gabbrielli's 1863 interlinear glosses over most cipher runs, so it is a decrypted letter; the glossed runs are transcribed sign by sign in florence1429/TRANSCRIPTION.md. About fifteen glossed runs not yet transcribed; not deciphered end to end.",
+     "reading": [
+      {
+       "file": "florence1429/TRANSCRIPTION.md",
+       "section": "no. 92 (Responsive 3 no. 92 [DECODE name Responsive_3_097], DECODE R3757)"
       }
      ],
      "sent": false
