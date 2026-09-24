@@ -404,3 +404,18 @@ rarer name's object count (1, 2, 3+), 10,000 times, p < 0.05.
 permutation, p < 0.05.
 
 The shortlist is judged supported if SL2 or SL3 holds as well as SL1.
+
+## Results of the twelfth set (added after the test; `predict_test12.py`, `results/predict_test12.md`)
+
+- **SL1 fails.** Shortlist signs are 18 of 60 West Asian tokens (30%) against 32% in length-matched home draws
+  (p = 0.63). The foreign texts' higher mean freedom (Y2, RF2) does not come from the listed signs; it must come from
+  signs below the cut or from their avoiding the least free ones.
+- **SL2 fails.** 4,050 substitution pairs among 912 names, 194 of them swaps between two listed signs. Candidate pairs
+  share a site 46% of the time, other pairs 49% (p = 0.90).
+- **SL3 fails.** Share an object type: 61% against 57% (+4.8 points, p = 0.18).
+- **The shortlist is not supported.** Its commonest swaps are within the fish series (220 / 233 / 231, 798 / 803):
+  signs free on one side only, which behave as name heads, not sound signs. Freedom stays a real, replicated property
+  of signs (RF1, RC) and the foreign texts do lean on free signs (Y2, RF2), but cutting it into a list of 'sound signs'
+  did not survive its first tests. Tally, counting parts: 11 held, 16 failed.
+- If the list is revisited: a narrower cut (free on both sides only, fish series and 740-name heads left out) must be
+  registered as a new list and tested on material not used to make it, not tuned on these results.

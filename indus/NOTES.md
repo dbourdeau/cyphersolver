@@ -980,6 +980,13 @@ word signs (AUC 0.77). Shortlist (`sound_shortlist.py`): 46 Indus signs free in 
 rule's precision on Linear B (Knossos / Pylos) is 96%, recall 55%. Headed by the jar-with-strokes signs 741 / 742 /
 745. Candidates only; no values. Tally 11 held, 13 failed.
 
+## Twenty-sixth pass (24 Sept 2026): the sound-sign shortlist tested
+
+Registered first (PREDICTIONS.md, twelfth set, fbb83702b), tested (`predict_test12.py`). **SL1 fails** (listed signs
+30% of West Asian tokens against 32% at home); **SL2 fails** (candidate swaps share a site 46% against 49%); **SL3
+fails** (object type 61% against 57%, p = 0.18). The shortlist is not supported; its commonest swaps are fish-series
+heads. Freedom itself stands (RF1, RC, Y2, RF2). Tally 11 held, 16 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
