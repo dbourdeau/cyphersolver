@@ -4513,3 +4513,33 @@ often 3 (FZ11), not heads more (FZ18); variable counts are not more in formulas 
 tablets (FZ9); notation does not predict frozenness (FZ15, FZ16). Note: the '705/706 33' unit of the ninety-second set
 is not in this count because there the numeral follows the sign; the frozen pattern shows up on both sides of a sign
 but only for a handful of Mohenjo-daro signs. Tally, counting parts: 627 held, 720 failed (1347 registered).
+
+# Ninety-fourth set, registered before testing (24 September 2026): copper tablets and their pictures (twenty hypotheses)
+
+F copper tablets (TAB:C, 198, nearly all Mohenjo-daro). Motif = the ICIT field up to ':' ('', 'None', '-', 'Unknown' =
+none; 'Othr' kept as a category). Text = the tablet's lines joined. Seal lines and seal motifs as in the sixty-seventh
+set. 10,000-draw permutations; p < 0.05.
+
+Text and picture
+- **CU1** Copper tablets with the same text share the motif more often than when motifs are shuffled.
+- **CU2** The text depends on the motif (MI over tablets with a motif).
+- **CU3** For motifs on 5+ tablets, the commonest text covers 50%+ of that motif's tablets on average.
+- **CU4** 80%+ of texts on 2+ tablets with a motif have one motif.
+- **CU5** 80%+ of anthropomorph (Anth) tablets carry one text.
+- **CU6** 80%+ of hare tablets carry one text.
+- **CU7** Tablets whose text repeats have a motif more often than tablets with a unique text.
+- **CU8** Text length depends on the motif (MI).
+- **CU9** Copper and seal texts for the same animal share sign types more than texts for different animals
+  (mean Jaccard, animals on both, permutation of copper motifs).
+The copper texts
+- **CU10** 60 or fewer distinct texts among the copper tablets.
+- **CU11** 20%+ of copper tokens are signs never on seals.
+- **CU12** 40%+ of copper lines hold a numeral.
+- **CU13** Copper numerals are long-kind more often than seal numerals.
+- **CU14** Copper lines open with a heading sign less often than seal lines.
+- **CU15** Under 40% of copper lines end in 740.
+- **CU16** Copper tablets with an animal motif are name lines more often than those with 'Othr'.
+- **CU17** 'Othr' tablets have more distinct texts per tablet than animal-motif tablets.
+- **CU18** 5 or fewer copper tablets have two lines.
+- **CU19** Copper text heads (last signs) are shared by tablets of one motif more than when motifs are shuffled.
+- **CU20** Copper texts share fewer adjacent-pair types with seal texts than label-shuffled lines do (1,000).
