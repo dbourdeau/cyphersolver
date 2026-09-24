@@ -1,0 +1,152 @@
+{
+ "title": "Minoan-shaped names across the Linear B archives",
+ "method": "Round 32 (loop round 4 of 10): Minoan-shaped names across the Linear B archives.\n\nScore: a syllable model of Linear A list names against Linear B common words, applied to the stem (final syllable\nremoved; decipher15c.score_common), so that Greek endings cannot drive the result. Each test compares AUCs by\nlabel permutation.\n\nU1  Knossos personal names are more Minoan-shaped than Thebes/Mycenae/Tiryns personal names.\nU2  Knossos names also attested on the mainland are less Minoan-shaped than Knossos-only names.\nU3  Knossos names with a Greek etymology are less Minoan-shaped than those without (a check on the measure).\nU4  Pylos names without a Greek etymology are more Minoan-shaped than Pylos names with one.\nU5  Knossos theonyms are more Minoan-shaped than Pylos theonyms.\nU6  Stems of Knossos ethnics are more Minoan-shaped than stems of Pylos ethnics.\nU7  Knossos names written with undeciphered signs are more Minoan-shaped in their readable signs.\nU8  Pylos names also attested at Knossos are more Minoan-shaped than Pylos-only names.\nU9  Knossos names containing special signs (ra2, pu2, ta2, a2, a3, au, ro2, nwa) are more Minoan-shaped.\nU10 Knossos names attested only in the Room of the Chariot Tablets are more Minoan-shaped than later ones.",
+ "primary_p": {
+  "U1": 0.0024987506246876563,
+  "U2": 0.004497751124437781,
+  "U3": 0.02498750624687656,
+  "U4": 0.08745627186406797,
+  "U5": 0.8975512243878061,
+  "U6": 0.12043978010994502,
+  "U7": 0.8610694652673663,
+  "U8": 0.5592203898050975,
+  "U9": 0.37831084457771114,
+  "U10": 0.9545227386306847
+ },
+ "bh_supported": [
+  "U1",
+  "U2"
+ ],
+ "details": {
+  "U1": {
+   "prediction": "Knossos names are more Minoan-shaped than Thebes/Mycenae/Tiryns names",
+   "primary": {
+    "auc": 0.634,
+    "p": 0.0025,
+    "n": [
+     637,
+     46
+    ]
+   },
+   "robustness": {},
+   "p": 0.0024987506246876563
+  },
+  "U2": {
+   "prediction": "Knossos-only names are more Minoan-shaped than Knossos names shared with the mainland",
+   "primary": {
+    "auc": 0.579,
+    "p": 0.0045,
+    "n": [
+     637,
+     131
+    ]
+   },
+   "robustness": {},
+   "p": 0.004497751124437781
+  },
+  "U3": {
+   "prediction": "Knossos names without a Greek etymology are more Minoan-shaped than Greek ones",
+   "primary": {
+    "auc": 0.555,
+    "p": 0.025,
+    "n": [
+     520,
+     117
+    ]
+   },
+   "robustness": {},
+   "p": 0.02498750624687656
+  },
+  "U4": {
+   "prediction": "Pylos names without a Greek etymology are more Minoan-shaped than Greek ones",
+   "primary": {
+    "auc": 0.544,
+    "p": 0.0875,
+    "n": [
+     224,
+     115
+    ]
+   },
+   "robustness": {},
+   "p": 0.08745627186406797
+  },
+  "U5": {
+   "prediction": "Knossos theonyms are more Minoan-shaped than Pylos theonyms",
+   "primary": {
+    "auc": 0.281,
+    "p": 0.8976,
+    "n": [
+     8,
+     4
+    ]
+   },
+   "robustness": {},
+   "p": 0.8975512243878061
+  },
+  "U6": {
+   "prediction": "Stems of Knossos ethnics are more Minoan-shaped than stems of Pylos ethnics",
+   "primary": {
+    "auc": 0.675,
+    "p": 0.1204,
+    "n": [
+     7,
+     11
+    ]
+   },
+   "robustness": {},
+   "p": 0.12043978010994502
+  },
+  "U7": {
+   "prediction": "Knossos names with undeciphered signs are more Minoan-shaped in their readable signs",
+   "primary": {
+    "auc": 0.445,
+    "p": 0.8611,
+    "n": [
+     31,
+     637
+    ]
+   },
+   "robustness": {},
+   "p": 0.8610694652673663
+  },
+  "U8": {
+   "prediction": "Pylos names also attested at Knossos are more Minoan-shaped than Pylos-only names",
+   "primary": {
+    "auc": 0.496,
+    "p": 0.5592,
+    "n": [
+     104,
+     339
+    ]
+   },
+   "robustness": {},
+   "p": 0.5592203898050975
+  },
+  "U9": {
+   "prediction": "Knossos names with special signs are more Minoan-shaped",
+   "primary": {
+    "auc": 0.516,
+    "p": 0.3783,
+    "n": [
+     36,
+     601
+    ]
+   },
+   "robustness": {},
+   "p": 0.37831084457771114
+  },
+  "U10": {
+   "prediction": "Room of the Chariot Tablets names are more Minoan-shaped (stem-scored) than later Knossos names",
+   "primary": {
+    "auc": 0.438,
+    "p": 0.9545,
+    "n": [
+     70,
+     454
+    ]
+   },
+   "robustness": {},
+   "p": 0.9545227386306847
+  }
+ }
+}

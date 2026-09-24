@@ -1,0 +1,1405 @@
+{
+  "method": "Test published Linear A fraction values against written order and HT 34.\n\nEvidence (sign identities only; editorial glosses in the corpus are not read):\n  * adjacent pairs from fraction_order.py (largest-first writing assumed);\n  * HT 104 total: 45 J + 20 J + 29 = 95, so J + J = 1;\n  * HT 34 back-references (Younger's reading): line .7 PU F settles\n    .4 QA+[?]+PU A, so the remainder F is at most A.\nEach item carries a status so that disputed readings can be switched off.\nRun fraction_order.py first.",
+  "notes_on_pairs": {
+    "E J": {
+      "status": "doubtful",
+      "note": "ZA 8.4; Corazza et al. 2021 n. 3 call it doubtful; SigLA has no fraction signs for ZA 8"
+    },
+    "L E": {
+      "status": "doubtful",
+      "note": "PH 7b.3, damaged; Corazza et al. 2021 n. 2"
+    },
+    "A B": {
+      "status": "disputed",
+      "note": "KH 86.2: GORILA/lineara and SigLA read A B B; Corazza et al. 2021 read A A"
+    },
+    "H K": {
+      "status": "firm",
+      "note": "HT 34.3: lineara and SigLA agree (A706 then A708 on one line); Younger reads 2 H K"
+    },
+    "E B": {
+      "status": "firm",
+      "note": "KH 9, NI E B"
+    }
+  },
+  "published": {
+    "lineara.xyz gloss (Bennett-type)": {
+      "order_ok": [
+        {
+          "pair": "E F",
+          "count": 5,
+          "records": [
+            "HT8b",
+            "HT16",
+            "HT50a",
+            "HT123+124b",
+            "HTZd157+156"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J B",
+          "count": 3,
+          "records": [
+            "HT129",
+            "KH5",
+            "KH6"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "JE B",
+          "count": 1,
+          "records": [
+            "HT27a"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J K",
+          "count": 1,
+          "records": [
+            "HT32"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "H K",
+          "count": 1,
+          "records": [
+            "HT34"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J F",
+          "count": 1,
+          "records": [
+            "HT51b"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J H",
+          "count": 1,
+          "records": [
+            "HT93a"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J A",
+          "count": 1,
+          "records": [
+            "HT120"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "F K",
+          "count": 1,
+          "records": [
+            "PH1b"
+          ],
+          "status": "firm"
+        }
+      ],
+      "order_violated": [
+        {
+          "pair": "E B",
+          "count": 1,
+          "records": [
+            "KH9"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "A B",
+          "count": 1,
+          "records": [
+            "KH86"
+          ],
+          "status": "disputed"
+        },
+        {
+          "pair": "E J",
+          "count": 1,
+          "records": [
+            "ZA8"
+          ],
+          "status": "doubtful"
+        }
+      ],
+      "order_unknown": [
+        {
+          "pair": "K L2",
+          "count": 4,
+          "records": [
+            "KH11",
+            "KH11",
+            "KH11",
+            "KH75"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J L2",
+          "count": 2,
+          "records": [
+            "HT123+124b",
+            "KH91"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L2",
+          "count": 1,
+          "records": [
+            "HT33"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L4",
+          "count": 1,
+          "records": [
+            "KH26"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L6",
+          "count": 1,
+          "records": [
+            "KH76"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "L E",
+          "count": 1,
+          "records": [
+            "PH7b"
+          ],
+          "status": "doubtful"
+        },
+        {
+          "pair": "L L2",
+          "count": 1,
+          "records": [
+            "ZA11a"
+          ],
+          "status": "firm"
+        }
+      ],
+      "arith": {
+        "HT 104 total": {
+          "status": "firm",
+          "holds": true
+        },
+        "HT 34 PU F <= A (Younger back-reference)": {
+          "status": "interpretive",
+          "holds": true
+        }
+      },
+      "cluster_sum_ge_1": [
+        {
+          "pair": "J J",
+          "records": [
+            "PH9b"
+          ]
+        }
+      ]
+    },
+    "Corazza et al. 2021": {
+      "order_ok": [
+        {
+          "pair": "E F",
+          "count": 5,
+          "records": [
+            "HT8b",
+            "HT16",
+            "HT50a",
+            "HT123+124b",
+            "HTZd157+156"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "K L2",
+          "count": 4,
+          "records": [
+            "KH11",
+            "KH11",
+            "KH11",
+            "KH75"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J B",
+          "count": 3,
+          "records": [
+            "HT129",
+            "KH5",
+            "KH6"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J L2",
+          "count": 2,
+          "records": [
+            "HT123+124b",
+            "KH91"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "JE B",
+          "count": 1,
+          "records": [
+            "HT27a"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J K",
+          "count": 1,
+          "records": [
+            "HT32"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L2",
+          "count": 1,
+          "records": [
+            "HT33"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J F",
+          "count": 1,
+          "records": [
+            "HT51b"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J H",
+          "count": 1,
+          "records": [
+            "HT93a"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J A",
+          "count": 1,
+          "records": [
+            "HT120"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E B",
+          "count": 1,
+          "records": [
+            "KH9"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L4",
+          "count": 1,
+          "records": [
+            "KH26"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L6",
+          "count": 1,
+          "records": [
+            "KH76"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "F K",
+          "count": 1,
+          "records": [
+            "PH1b"
+          ],
+          "status": "firm"
+        }
+      ],
+      "order_violated": [
+        {
+          "pair": "H K",
+          "count": 1,
+          "records": [
+            "HT34"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "A B",
+          "count": 1,
+          "records": [
+            "KH86"
+          ],
+          "status": "disputed"
+        },
+        {
+          "pair": "E J",
+          "count": 1,
+          "records": [
+            "ZA8"
+          ],
+          "status": "doubtful"
+        }
+      ],
+      "order_unknown": [
+        {
+          "pair": "L E",
+          "count": 1,
+          "records": [
+            "PH7b"
+          ],
+          "status": "doubtful"
+        },
+        {
+          "pair": "L L2",
+          "count": 1,
+          "records": [
+            "ZA11a"
+          ],
+          "status": "firm"
+        }
+      ],
+      "arith": {
+        "HT 104 total": {
+          "status": "firm",
+          "holds": true
+        },
+        "HT 34 PU F <= A (Younger back-reference)": {
+          "status": "interpretive",
+          "holds": false
+        }
+      },
+      "cluster_sum_ge_1": [
+        {
+          "pair": "J J",
+          "records": [
+            "PH9b"
+          ]
+        }
+      ]
+    },
+    "Corazza et al. 2021, alternative B/D": {
+      "order_ok": [
+        {
+          "pair": "E F",
+          "count": 5,
+          "records": [
+            "HT8b",
+            "HT16",
+            "HT50a",
+            "HT123+124b",
+            "HTZd157+156"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "K L2",
+          "count": 4,
+          "records": [
+            "KH11",
+            "KH11",
+            "KH11",
+            "KH75"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J B",
+          "count": 3,
+          "records": [
+            "HT129",
+            "KH5",
+            "KH6"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J L2",
+          "count": 2,
+          "records": [
+            "HT123+124b",
+            "KH91"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "JE B",
+          "count": 1,
+          "records": [
+            "HT27a"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J K",
+          "count": 1,
+          "records": [
+            "HT32"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L2",
+          "count": 1,
+          "records": [
+            "HT33"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J F",
+          "count": 1,
+          "records": [
+            "HT51b"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J H",
+          "count": 1,
+          "records": [
+            "HT93a"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "J A",
+          "count": 1,
+          "records": [
+            "HT120"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E B",
+          "count": 1,
+          "records": [
+            "KH9"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L4",
+          "count": 1,
+          "records": [
+            "KH26"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "E L6",
+          "count": 1,
+          "records": [
+            "KH76"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "F K",
+          "count": 1,
+          "records": [
+            "PH1b"
+          ],
+          "status": "firm"
+        }
+      ],
+      "order_violated": [
+        {
+          "pair": "H K",
+          "count": 1,
+          "records": [
+            "HT34"
+          ],
+          "status": "firm"
+        },
+        {
+          "pair": "A B",
+          "count": 1,
+          "records": [
+            "KH86"
+          ],
+          "status": "disputed"
+        },
+        {
+          "pair": "E J",
+          "count": 1,
+          "records": [
+            "ZA8"
+          ],
+          "status": "doubtful"
+        }
+      ],
+      "order_unknown": [
+        {
+          "pair": "L E",
+          "count": 1,
+          "records": [
+            "PH7b"
+          ],
+          "status": "doubtful"
+        },
+        {
+          "pair": "L L2",
+          "count": 1,
+          "records": [
+            "ZA11a"
+          ],
+          "status": "firm"
+        }
+      ],
+      "arith": {
+        "HT 104 total": {
+          "status": "firm",
+          "holds": true
+        },
+        "HT 34 PU F <= A (Younger back-reference)": {
+          "status": "interpretive",
+          "holds": false
+        }
+      },
+      "cluster_sum_ge_1": [
+        {
+          "pair": "J J",
+          "records": [
+            "PH9b"
+          ]
+        }
+      ]
+    }
+  },
+  "feasible_A_H": {
+    "free A/H; uniqueness incl. compounds=False; firm order only": {
+      "solutions": 48,
+      "values": {
+        "A": [
+          "1/84",
+          "1/72",
+          "1/64",
+          "1/48",
+          "1/36",
+          "1/32",
+          "1/24",
+          "1/16",
+          "1/12",
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "H": [
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ]
+      },
+      "sample": [
+        [
+          "1/3",
+          "3/20"
+        ],
+        [
+          "1/3",
+          "3/10"
+        ],
+        [
+          "1/3",
+          "2/5"
+        ],
+        [
+          "1/12",
+          "1/3"
+        ],
+        [
+          "1/12",
+          "3/20"
+        ],
+        [
+          "1/12",
+          "3/10"
+        ],
+        [
+          "1/12",
+          "2/5"
+        ],
+        [
+          "1/16",
+          "1/3"
+        ],
+        [
+          "1/16",
+          "3/20"
+        ],
+        [
+          "1/16",
+          "3/10"
+        ],
+        [
+          "1/16",
+          "2/5"
+        ],
+        [
+          "1/24",
+          "1/3"
+        ],
+        [
+          "1/24",
+          "3/20"
+        ],
+        [
+          "1/24",
+          "3/10"
+        ],
+        [
+          "1/24",
+          "2/5"
+        ],
+        [
+          "1/32",
+          "1/3"
+        ],
+        [
+          "1/32",
+          "3/20"
+        ],
+        [
+          "1/32",
+          "3/10"
+        ],
+        [
+          "1/32",
+          "2/5"
+        ],
+        [
+          "1/36",
+          "1/3"
+        ]
+      ]
+    },
+    "free A/H; uniqueness incl. compounds=False; firm + interpretive (HT 34 F<=A)": {
+      "solutions": 12,
+      "values": {
+        "A": [
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "H": [
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ]
+      },
+      "sample": [
+        [
+          "1/3",
+          "3/20"
+        ],
+        [
+          "1/3",
+          "3/10"
+        ],
+        [
+          "1/3",
+          "2/5"
+        ],
+        [
+          "3/20",
+          "1/3"
+        ],
+        [
+          "3/20",
+          "3/10"
+        ],
+        [
+          "3/20",
+          "2/5"
+        ],
+        [
+          "3/10",
+          "1/3"
+        ],
+        [
+          "3/10",
+          "3/20"
+        ],
+        [
+          "3/10",
+          "2/5"
+        ],
+        [
+          "2/5",
+          "1/3"
+        ],
+        [
+          "2/5",
+          "3/20"
+        ],
+        [
+          "2/5",
+          "3/10"
+        ]
+      ]
+    },
+    "free A/H; uniqueness incl. compounds=False; firm + interpretive + disputed (KH 86 A B)": {
+      "solutions": 9,
+      "values": {
+        "A": [
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "H": [
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ]
+      },
+      "sample": [
+        [
+          "1/3",
+          "3/20"
+        ],
+        [
+          "1/3",
+          "3/10"
+        ],
+        [
+          "1/3",
+          "2/5"
+        ],
+        [
+          "3/10",
+          "1/3"
+        ],
+        [
+          "3/10",
+          "3/20"
+        ],
+        [
+          "3/10",
+          "2/5"
+        ],
+        [
+          "2/5",
+          "1/3"
+        ],
+        [
+          "2/5",
+          "3/20"
+        ],
+        [
+          "2/5",
+          "3/10"
+        ]
+      ]
+    },
+    "free A/H; uniqueness incl. compounds=True; firm order only": {
+      "solutions": 0,
+      "values": {
+        "A": [],
+        "H": []
+      },
+      "sample": []
+    },
+    "free A/H; uniqueness incl. compounds=True; firm + interpretive (HT 34 F<=A)": {
+      "solutions": 0,
+      "values": {
+        "A": [],
+        "H": []
+      },
+      "sample": []
+    },
+    "free A/H; uniqueness incl. compounds=True; firm + interpretive + disputed (KH 86 A B)": {
+      "solutions": 0,
+      "values": {
+        "A": [],
+        "H": []
+      },
+      "sample": []
+    },
+    "free A/H/K; uniqueness incl. compounds=False; firm order only": {
+      "solutions": 180,
+      "values": {
+        "A": [
+          "1/84",
+          "1/72",
+          "1/64",
+          "1/48",
+          "1/36",
+          "1/32",
+          "1/24",
+          "1/16",
+          "1/12",
+          "1/10",
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "H": [
+          "1/12",
+          "1/10",
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "K": [
+          "1/16",
+          "1/12",
+          "1/10"
+        ]
+      },
+      "sample": [
+        [
+          "1/3",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/16"
+        ],
+        [
+          "1/10",
+          "1/3",
+          "1/12"
+        ],
+        [
+          "1/10",
+          "1/3",
+          "1/16"
+        ],
+        [
+          "1/10",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "1/10",
+          "3/20",
+          "1/12"
+        ],
+        [
+          "1/10",
+          "3/20",
+          "1/16"
+        ],
+        [
+          "1/10",
+          "3/10",
+          "1/12"
+        ],
+        [
+          "1/10",
+          "3/10",
+          "1/16"
+        ],
+        [
+          "1/10",
+          "2/5",
+          "1/12"
+        ]
+      ]
+    },
+    "free A/H/K; uniqueness incl. compounds=False; firm + interpretive (HT 34 F<=A)": {
+      "solutions": 48,
+      "values": {
+        "A": [
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "H": [
+          "1/12",
+          "1/10",
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "K": [
+          "1/16",
+          "1/12",
+          "1/10"
+        ]
+      },
+      "sample": [
+        [
+          "1/3",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/16"
+        ],
+        [
+          "3/20",
+          "1/3",
+          "1/10"
+        ],
+        [
+          "3/20",
+          "1/3",
+          "1/12"
+        ],
+        [
+          "3/20",
+          "1/3",
+          "1/16"
+        ],
+        [
+          "3/20",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "3/20",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "3/20",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "3/20",
+          "3/10",
+          "1/10"
+        ],
+        [
+          "3/20",
+          "3/10",
+          "1/12"
+        ]
+      ]
+    },
+    "free A/H/K; uniqueness incl. compounds=False; firm + interpretive + disputed (KH 86 A B)": {
+      "solutions": 36,
+      "values": {
+        "A": [
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "H": [
+          "1/12",
+          "1/10",
+          "3/20",
+          "3/10",
+          "1/3",
+          "2/5"
+        ],
+        "K": [
+          "1/16",
+          "1/12",
+          "1/10"
+        ]
+      },
+      "sample": [
+        [
+          "1/3",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "3/20",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "3/10",
+          "1/16"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/10"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/12"
+        ],
+        [
+          "1/3",
+          "2/5",
+          "1/16"
+        ],
+        [
+          "3/10",
+          "1/3",
+          "1/10"
+        ],
+        [
+          "3/10",
+          "1/3",
+          "1/12"
+        ],
+        [
+          "3/10",
+          "1/3",
+          "1/16"
+        ],
+        [
+          "3/10",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "3/10",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "3/10",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "3/10",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "3/10",
+          "3/20",
+          "1/12"
+        ]
+      ]
+    },
+    "free A/H/K; uniqueness incl. compounds=True; firm order only": {
+      "solutions": 54,
+      "values": {
+        "A": [
+          "1/84",
+          "1/72",
+          "1/64",
+          "1/48",
+          "1/36",
+          "1/32",
+          "1/24",
+          "1/16",
+          "1/12",
+          "1/10",
+          "3/20"
+        ],
+        "H": [
+          "1/12",
+          "1/10",
+          "3/20"
+        ],
+        "K": [
+          "1/16",
+          "1/12",
+          "1/10"
+        ]
+      },
+      "sample": [
+        [
+          "1/10",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "1/10",
+          "3/20",
+          "1/12"
+        ],
+        [
+          "1/10",
+          "3/20",
+          "1/16"
+        ],
+        [
+          "1/12",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "1/12",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "1/12",
+          "3/20",
+          "1/16"
+        ],
+        [
+          "1/16",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "1/16",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "1/16",
+          "3/20",
+          "1/12"
+        ],
+        [
+          "1/24",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "1/24",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "1/24",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "1/24",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "1/24",
+          "3/20",
+          "1/12"
+        ],
+        [
+          "1/24",
+          "3/20",
+          "1/16"
+        ],
+        [
+          "1/32",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "1/32",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "1/32",
+          "1/12",
+          "1/16"
+        ],
+        [
+          "1/32",
+          "3/20",
+          "1/10"
+        ],
+        [
+          "1/32",
+          "3/20",
+          "1/12"
+        ]
+      ]
+    },
+    "free A/H/K; uniqueness incl. compounds=True; firm + interpretive (HT 34 F<=A)": {
+      "solutions": 3,
+      "values": {
+        "A": [
+          "3/20"
+        ],
+        "H": [
+          "1/12",
+          "1/10"
+        ],
+        "K": [
+          "1/16",
+          "1/12"
+        ]
+      },
+      "sample": [
+        [
+          "3/20",
+          "1/10",
+          "1/12"
+        ],
+        [
+          "3/20",
+          "1/10",
+          "1/16"
+        ],
+        [
+          "3/20",
+          "1/12",
+          "1/16"
+        ]
+      ]
+    },
+    "free A/H/K; uniqueness incl. compounds=True; firm + interpretive + disputed (KH 86 A B)": {
+      "solutions": 0,
+      "values": {
+        "A": [],
+        "H": [],
+        "K": []
+      },
+      "sample": []
+    }
+  }
+}

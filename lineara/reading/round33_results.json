@@ -1,0 +1,186 @@
+{
+ "title": "amounts, totals and fractions",
+ "method": "Round 33 (loop round 5 of 10): amounts, totals and fractions.\n\nV1  Grain amounts are multiples of 5 more often than other commodities' amounts.\nV3  Entries with the half sign J (1/2) have odd whole numbers more often than entries without fractions.\nV7  Lists that carry a KU-RO total are longer than lists that do not.\nV8  Totals balance less often on longer lists.\nV9  Totals that do not balance fall short of the entries' sum more often than they exceed it.\nV10 Fractions stand on the later half of a list more often than on the earlier half.\nV12 Entries with a fraction have smaller whole-number parts than entries without.\nV15 Oil amounts differ in size by ligature adjunct (OLE+KI, OLE+U, OLE+MI, OLE+DI ...).\nV16 The first entry of a list is its largest more often than chance (order shuffled within the list).\nV17 Equal amounts stand on neighbouring lines more often than chance.",
+ "primary_p": {
+  "V1": 0.0004997501249375312,
+  "V3": 0.504247876061969,
+  "V7": 0.001999000499750125,
+  "V8": 0.8690654672663668,
+  "V9": 0.5927352905273438,
+  "V10": 0.38580709645177413,
+  "V12": 0.04297851074462768,
+  "V15": 0.20889555222388806,
+  "V16": 0.01699150424787606,
+  "V17": 0.0004997501249375312
+ },
+ "bh_supported": [
+  "V1",
+  "V16",
+  "V17",
+  "V7"
+ ],
+ "details": {
+  "V1": {
+   "prediction": "Grain amounts are multiples of 5 more often than other commodities' amounts",
+   "primary": {
+    "GRA": [
+     0.4706,
+     85
+    ],
+    "other": [
+     0.1946,
+     221
+    ],
+    "p": 0.0005
+   },
+   "robustness": {
+    "amounts of 10 or more": {
+     "GRA": [
+      0.5926,
+      54
+     ],
+     "other": [
+      0.4198,
+      81
+     ],
+     "p": 0.038
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "V3": {
+   "prediction": "Entries with J (1/2) have odd whole numbers more often",
+   "primary": {
+    "with_J": [
+     0.5185,
+     54
+    ],
+    "no_fraction": [
+     0.5114,
+     1097
+    ],
+    "p": 0.5042
+   },
+   "robustness": {},
+   "p": 0.504247876061969
+  },
+  "V7": {
+   "prediction": "Lists with a KU-RO total are longer",
+   "primary": {
+    "with_total": [
+     6.6875,
+     32
+    ],
+    "without": [
+     4.819,
+     232
+    ],
+    "p": 0.002
+   },
+   "robustness": {},
+   "p": 0.001999000499750125
+  },
+  "V8": {
+   "prediction": "Totals balance less often on longer lists (6+ entries)",
+   "primary": {
+    "long_ok": [
+     0.3684,
+     19
+    ],
+    "short_ok": [
+     0.2222,
+     9
+    ],
+    "p": 0.8691
+   },
+   "robustness": {},
+   "p": 0.8690654672663668
+  },
+  "V9": {
+   "prediction": "Totals that do not balance fall short of the entries more often than they exceed them",
+   "primary": {
+    "short": "9/18",
+    "sign_test_p": 0.5927
+   },
+   "robustness": {},
+   "p": 0.5927352905273438
+  },
+  "V10": {
+   "prediction": "Fractions stand on the later half of a list more often",
+   "primary": {
+    "later_half": [
+     0.2224,
+     571
+    ],
+    "earlier_half": [
+     0.2141,
+     495
+    ],
+    "p": 0.3858
+   },
+   "robustness": {},
+   "p": 0.38580709645177413
+  },
+  "V12": {
+   "prediction": "Entries with a fraction have smaller whole-number parts",
+   "primary": {
+    "with_fraction_mean_log": [
+     1.453,
+     123
+    ],
+    "without": [
+     1.6831,
+     1097
+    ],
+    "p": 0.043
+   },
+   "robustness": {},
+   "p": 0.04297851074462768
+  },
+  "V15": {
+   "prediction": "Oil amounts differ in size by ligature adjunct",
+   "primary": {
+    "between_SS": 5.86,
+    "null": 4.02,
+    "p": 0.2089,
+    "entries": 63
+   },
+   "robustness": {
+    "geometric means": {
+     "OLE+U": 5.9,
+     "OLE+E": 3.0,
+     "OLE+KI": 4.5,
+     "OLE+DI": 2.9,
+     "OLE+MI": 2.9
+    }
+   },
+   "p": 0.20889555222388806
+  },
+  "V16": {
+   "prediction": "The first entry is the largest more often than chance",
+   "primary": {
+    "first_is_max": "32/137",
+    "null": 22.1,
+    "p": 0.017
+   },
+   "robustness": {},
+   "p": 0.01699150424787606
+  },
+  "V17": {
+   "prediction": "Equal amounts stand on neighbouring lines more often than chance",
+   "primary": {
+    "adjacent_equal": 292,
+    "null": 249.1,
+    "p": 0.0005
+   },
+   "robustness": {
+    "amounts other than 1": {
+     "adjacent_equal_not_1": 160,
+     "null": 132.9,
+     "p": 0.0005
+    }
+   },
+   "p": 0.0004997501249375312
+  }
+ }
+}

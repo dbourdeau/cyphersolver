@@ -1,0 +1,479 @@
+{
+ "method": "Twenty-five further hypotheses, building on decipher25.py: the coronal conditioning of Minoan e/o, persons kept\nby one scribe, recopied lists, and a recheck of earlier per-tablet results with the two sides of each tablet merged\n(the corpus stores HT 9a and HT 9b as separate records).\n\nEach has a prediction stated before the test ran and one primary test with its own null. Benjamini-Hochberg at\n5% runs across all twenty-five. Every per-tablet test here merges sides a and b.\n\nRechecks with sides merged\nE1  Amounts on a tablet share a common divisor above 1 more often than chance (V7).\nE2  Amounts on a tablet are exact doubles of each other more often than chance (L3).\nE3  Tablets by the same scribe share more vocabulary than tablets by different scribes (H-batch).\nE4  KI-RO is rarer on personnel (VIR) tablets than on other tablets with totals (V6).\nThe coronal pattern\nE5  e alone follows coronals more than non-coronals, more so than in Linear B.\nE6  The coronal pattern holds outside Haghia Triada (and at Haghia Triada).\nE7  The coronal pattern holds in Linear A list names.\nE8  The consonant of the same syllable predicts e/o more than the consonant of the next syllable.\nE9  Among e, i, o, u, e/o take a larger share after coronals than in Linear B (e/o stand where i/u stand elsewhere).\nScribes and persons\nE10 Scribes specialise in commodities (scribe-commodity association above chance).\nE11 Scribes specialise in transaction terms (SA-RA2, KA-PA, A-DU, DA-RE, KU-PA).\nE12 Recopied lists (tablet pairs sharing three or more entry words) give the same amounts for the same entries.\nE13 Recurring entry words stay at one site more than chance.\nVowels\nE14 Eteocretan e/o follow coronals more than non-coronals, more so than in Greek.\nE15 Knossos-only place names show the coronal e/o pattern more than Pylos-only ones (ending removed).\nE16 u follows labial and velar consonants (p m w k q) more than other consonants, more so than in Linear B.\nE17 e/o syllables cluster within words (words with two or more e/o syllables exceed chance). Control: Linear B.\nKnossos names (scored on the stem, final syllable removed, to avoid the -a artefact of D13)\nE18 Minoan-shaped Knossos names cluster by Linear B scribe.\nE19 Knossos names on personnel (VIR) tablets are more Minoan-shaped than names on other tablets.\nSigns\nE20 The consonant-row cohesion of decipher10 Y1 holds with left-context features only.\nE21 It holds with right-context features only.\nE22 The Z row keeps company with the J row more than with other rows.\nAccounts\nE23 Fraction use depends on the scribe (scribe-fraction association above chance).\nE24 Entry words in KI-RO sections recur on other tablets more than main-section entry words.\nE25 Recopied lists keep their order (shared entries in the same order, Kendall tau above chance).",
+ "primary_p": {
+  "E1": 0.029970029970029972,
+  "E2": 0.000999000999000999,
+  "E3": 0.003996003996003996,
+  "E4": 0.3906093906093906,
+  "E5": 0.000999000999000999,
+  "E6": 0.000999000999000999,
+  "E7": 0.000999000999000999,
+  "E8": 0.000999000999000999,
+  "E9": 0.000999000999000999,
+  "E10": 0.000999000999000999,
+  "E11": 0.008991008991008992,
+  "E12": 0.5694305694305695,
+  "E13": 0.000999000999000999,
+  "E14": 0.5784215784215784,
+  "E15": 0.7832167832167832,
+  "E16": 0.5864135864135864,
+  "E17": 0.9410589410589411,
+  "E18": 0.02197802197802198,
+  "E19": 0.8461538461538461,
+  "E20": 0.0004997501249375312,
+  "E21": 0.07846076961519241,
+  "E22": 0.11794102948525736,
+  "E23": 0.04595404595404595,
+  "E24": 0.8731268731268731,
+  "E25": 0.22735452909418116
+ },
+ "bh_supported": [
+  "E20",
+  "E10",
+  "E13",
+  "E2",
+  "E5",
+  "E6",
+  "E7",
+  "E8",
+  "E9",
+  "E3",
+  "E11",
+  "E18"
+ ],
+ "details": {
+  "E1 common divisor, sides merged": {
+   "prediction": "Amounts on a whole tablet share a common divisor above 1 more than chance",
+   "primary": {
+    "share": 0.079,
+    "null_mean": 0.044,
+    "p": 0.03,
+    "tablets": 151
+   },
+   "robustness": {
+    "earlier (sides separate)": "10.7% vs 5.1%, p 0.0005"
+   }
+  },
+  "E2 doubled amounts, sides merged": {
+   "prediction": "Amounts on a whole tablet are exact doubles of each other more than chance",
+   "primary": {
+    "double_pairs": 583,
+    "null_mean": 492.24,
+    "p": 0.001
+   },
+   "robustness": {
+    "earlier (sides separate)": "p 0.015"
+   }
+  },
+  "E3 scribe vocabulary, sides merged": {
+   "prediction": "Whole tablets by the same scribe share more vocabulary (transaction terms removed)",
+   "primary": {
+    "jaccard_diff": 0.0108,
+    "null_mean": 0.0,
+    "p": 0.004,
+    "tablets": 84
+   },
+   "robustness": {}
+  },
+  "E4 KI-RO off personnel tablets, sides merged": {
+   "prediction": "KI-RO is rarer on VIR tablets than on other tablets with totals",
+   "primary": {
+    "kiro_with_vir": "3/11",
+    "other_with_vir": "10/26",
+    "p": 0.3906
+   },
+   "robustness": {}
+  },
+  "E5 e alone after coronals": {
+   "prediction": "e alone follows coronals more than non-coronals, more so than in Linear B",
+   "primary": {
+    "logOR_LA_e": 0.808,
+    "logOR_LB_e": -0.045,
+    "p": 0.001
+   },
+   "robustness": {
+    "o alone": {
+     "LA": 0.128,
+     "LB": -0.264,
+     "p": 0.001
+    }
+   }
+  },
+  "E6 coronal pattern by site": {
+   "prediction": "The coronal e/o pattern holds outside Haghia Triada (primary) and at Haghia Triada",
+   "primary": {
+    "logOR_other_sites": 0.846,
+    "logOR_LB": -0.246,
+    "p": 0.001,
+    "words": 450
+   },
+   "robustness": {
+    "Haghia Triada": {
+     "logOR": 0.514,
+     "p": 0.001,
+     "words": 360
+    }
+   }
+  },
+  "E7 coronal pattern in names": {
+   "prediction": "The coronal e/o pattern holds in Linear A list names",
+   "primary": {
+    "logOR_names": 0.668,
+    "logOR_LB": -0.246,
+    "p": 0.001,
+    "names": 358
+   },
+   "robustness": {
+    "non-name words": {
+     "logOR": 0.757,
+     "p": 0.001
+    }
+   }
+  },
+  "E8 same syllable, not the next": {
+   "prediction": "The consonant of the same syllable predicts e/o more than the next syllable's consonant",
+   "primary": {
+    "logOR_same": 0.719,
+    "logOR_next": -0.234,
+    "bootstrap p": 0.001
+   },
+   "robustness": {
+    "Linear B": {
+     "same": -0.246,
+     "next": 0.212
+    }
+   }
+  },
+  "E9 e/o in place of i/u": {
+   "prediction": "Among e, i, o, u, e/o take a larger share after coronals than in Linear B",
+   "primary": {
+    "logOR_LA": 0.546,
+    "logOR_LB": -0.45,
+    "p": 0.001
+   },
+   "robustness": {}
+  },
+  "E10 scribes and commodities": {
+   "prediction": "Scribes specialise in commodities",
+   "primary": {
+    "chi2": 90.56,
+    "null_mean": 48.27,
+    "p": 0.001,
+    "tablets": 61,
+    "scribes": 30
+   },
+   "robustness": {}
+  },
+  "E11 scribes and transaction terms": {
+   "prediction": "Scribes specialise in transaction terms",
+   "primary": {
+    "chi2": 157.35,
+    "null_mean": 99.91,
+    "p": 0.009,
+    "tablets": 110
+   },
+   "robustness": {
+    "terms by scribe": {
+     "ARKH Scribe 1": {},
+     "HT Scribe 1": {
+      "SA-RA2": 3
+     },
+     "HT Scribe 11": {
+      "DA-RE": 1
+     },
+     "HT Scribe 14": {},
+     "HT Scribe 2": {
+      "KA-PA": 1,
+      "SA-RA2": 3,
+      "A-DU": 2
+     },
+     "HT Scribe 21": {},
+     "HT Scribe 23": {
+      "SA-MA": 1
+     },
+     "HT Scribe 3": {},
+     "HT Scribe 5": {
+      "SA-RA2": 2,
+      "KA-PA": 1
+     },
+     "HT Scribe 6": {
+      "A-DU": 1
+     },
+     "HT Scribe 7": {
+      "A-DU": 1,
+      "SA-RA2": 1
+     },
+     "HT Scribe 8": {
+      "KA-PA": 1
+     },
+     "HT Scribe 9": {
+      "A-DU": 1,
+      "DA-RE": 2,
+      "KA-PA": 1,
+      "SA-RA2": 1
+     },
+     "KH Scribe 1": {
+      "KU-PA": 1
+     },
+     "KH Scribe 2": {
+      "A-DU": 2
+     },
+     "ZA Scribe 1": {},
+     "ZA Scribe 2": {
+      "KU-PA": 1
+     },
+     "ZA Scribe 3": {}
+    }
+   }
+  },
+  "E12 recopied lists, same amounts": {
+   "prediction": "Recopied lists give the same amounts for the same entries",
+   "primary": {
+    "identical": "1/8",
+    "null_mean": 0.69,
+    "p": 0.5694
+   },
+   "robustness": {
+    "tablet pairs sharing 3+ entry words": [
+     "HT86/HT95",
+     "ZA15/ZA4"
+    ],
+    "entries": [
+     "HT86/HT95 DA-ME: 20 vs 10",
+     "HT86/HT95 KU-NI-SU: 20 vs 10",
+     "HT86/HT95 MI-NU-TE: 20 vs 10",
+     "HT86/HT95 SA-RU: 20 vs 10",
+     "HT86/HT95 DI-DE-RU: 20 vs 10",
+     "ZA15/ZA4 KA-DI: 3 vs 3",
+     "ZA15/ZA4 SI-PI-KI: 2 vs 5",
+     "ZA15/ZA4 QE-SI-ZU-E: 57 vs 4"
+    ]
+   }
+  },
+  "E13 persons stay at one site": {
+   "prediction": "Recurring entry words stay at one site more than chance",
+   "primary": {
+    "share_same_site": 0.917,
+    "null_mean": 0.715,
+    "p": 0.001,
+    "words": 45
+   },
+   "robustness": {}
+  },
+  "E14 Eteocretan coronal pattern": {
+   "prediction": "Eteocretan e/o follow coronals more than non-coronals, more so than in Greek",
+   "primary": {
+    "logOR_eteocretan": -0.128,
+    "logOR_greek": -0.011,
+    "p": 0.5784,
+    "pieces": [
+     35,
+     119
+    ]
+   },
+   "robustness": {}
+  },
+  "E15 Cretan place names": {
+   "prediction": "Knossos-only place names show the coronal e/o pattern more than Pylos-only ones",
+   "primary": {
+    "logOR_KN": -0.387,
+    "logOR_PY": -0.072,
+    "p": 0.7832,
+    "n": [
+     58,
+     119
+    ]
+   },
+   "robustness": {}
+  },
+  "E16 u after labials and velars": {
+   "prediction": "u follows labial and velar consonants more than others, more so than in Linear B",
+   "primary": {
+    "logOR_LA": -0.35,
+    "logOR_LB": -0.313,
+    "p": 0.5864
+   },
+   "robustness": {}
+  },
+  "E17 e/o cluster in words": {
+   "prediction": "Words with two or more e/o syllables exceed chance",
+   "primary": {
+    "words": 52,
+    "null_mean": 59.6,
+    "p": 0.9411
+   },
+   "robustness": {
+    "Linear B control": {
+     "words": 2476,
+     "null_mean": 2562.2,
+     "p": 1.0
+    }
+   }
+  },
+  "E18 Minoan names by Knossos scribe": {
+   "prediction": "Minoan-shaped Knossos names (stem-scored) cluster by Linear B scribe",
+   "primary": {
+    "between_SS": 31.931,
+    "null_mean": 18.82,
+    "p": 0.022,
+    "names": 534,
+    "scribes": 22
+   },
+   "robustness": {
+    "most Minoan scribes (mean stem score)": [
+     [
+      0.561,
+      "Scribe 133",
+      6
+     ],
+     [
+      0.306,
+      "Scribe 119",
+      11
+     ],
+     [
+      0.302,
+      "Scribe 118",
+      11
+     ],
+     [
+      0.29,
+      "Scribe 115",
+      14
+     ],
+     [
+      0.081,
+      "Scribe 106",
+      7
+     ],
+     [
+      0.06,
+      "Scribe 111",
+      17
+     ]
+    ]
+   }
+  },
+  "E19 names on personnel tablets": {
+   "prediction": "Knossos names on VIR tablets are more Minoan-shaped (stem-scored) than names on other tablets",
+   "primary": {
+    "auc": 0.474,
+    "null_mean": 0.501,
+    "p": 0.8462,
+    "n": [
+     156,
+     481
+    ]
+   },
+   "robustness": {}
+  },
+  "E20 rows by left context": {
+   "prediction": "Consonant-row cohesion holds with left-context features only",
+   "primary": {
+    "diff": 0.0842,
+    "p": 0.0005
+   },
+   "robustness": {
+    "Linear B control": {
+     "diff": 0.0941,
+     "p": 0.0005
+    }
+   }
+  },
+  "E21 rows by right context": {
+   "prediction": "Consonant-row cohesion holds with right-context features only",
+   "primary": {
+    "diff": 0.0199,
+    "p": 0.0785
+   },
+   "robustness": {
+    "Linear B control": {
+     "diff": 0.0003,
+     "p": 0.4778
+    }
+   }
+  },
+  "E22 Z row and J row": {
+   "prediction": "The Z signs keep company with the J row more than other signs do",
+   "primary": {
+    "diff": 0.081,
+    "p": 0.1179,
+    "z_signs": [
+     "za",
+     "zu"
+    ]
+   },
+   "robustness": {
+    "Linear B control": {
+     "diff": -0.0595,
+     "p": 0.1514
+    }
+   }
+  },
+  "E23 fractions by scribe": {
+   "prediction": "Fraction use depends on the scribe",
+   "primary": {
+    "chi2": 25.14,
+    "null_mean": 16.3,
+    "p": 0.046,
+    "tablets": 92
+   },
+   "robustness": {
+    "fraction tablets by scribe": {
+     "HT Scribe 21": "0/3",
+     "HT Scribe 1": "3/4",
+     "HT Scribe 11": "2/3",
+     "HT Scribe 2": "4/8",
+     "HT Scribe 8": "4/6",
+     "HT Scribe 14": "3/5",
+     "HT Scribe 3": "1/3",
+     "HT Scribe 23": "0/3",
+     "HT Scribe 9": "2/10",
+     "HT Scribe 6": "2/3",
+     "HT Scribe 7": "0/3",
+     "HT Scribe 5": "3/4",
+     "KH Scribe 1": "12/19",
+     "KH Scribe 2": "7/7",
+     "ZA Scribe 1": "3/5",
+     "ZA Scribe 2": "2/3",
+     "ARKH Scribe 1": "2/3"
+    }
+   }
+  },
+  "E24 KI-RO persons recur": {
+   "prediction": "Entry words in KI-RO sections recur on other tablets more than main-section words",
+   "primary": {
+    "diff": -0.086,
+    "null_mean": -0.001,
+    "p": 0.8731,
+    "kiro_entries": 26
+   },
+   "robustness": {
+    "KI-RO words recurring elsewhere": [
+     "KU-PA3-NU",
+     "PA-JA-RE",
+     "PA-TA-NE",
+     "SA-RU"
+    ]
+   }
+  },
+  "E25 recopied lists keep order": {
+   "prediction": "Shared entries of recopied lists appear in the same order",
+   "primary": {
+    "mean_tau": 0.3,
+    "p": 0.2274,
+    "pairs": 2
+   },
+   "robustness": {
+    "per pair tau": [
+     -0.4,
+     1.0
+    ],
+    "tablet pairs": [
+     "HT86/HT95",
+     "ZA15/ZA4"
+    ]
+   }
+  }
+ }
+}

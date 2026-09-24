@@ -1,0 +1,457 @@
+{
+ "method": "Fifty hypotheses on Linear A in ten themed batches, each tested against a null on data already in hand.\n\nEvery test returns an effect and a one-sided p-value (permutation or resampling unless stated). Because fifty\ntests will produce false positives by chance, the Benjamini-Hochberg procedure is applied across all fifty at a\nfalse-discovery rate of 5%, and only tests that survive it are called supported. Tests that cannot be run for lack\nof data are marked untestable and left out of the correction.",
+ "tested": 49,
+ "bh_supported": 29,
+ "results": [
+  {
+   "id": "A1",
+   "batch": "A accounting",
+   "hypothesis": "Totals balance more often on single-commodity tablets",
+   "effect": 0.1786,
+   "p": 0.3303,
+   "note": "9/28 vs 1/7",
+   "bh_supported": false
+  },
+  {
+   "id": "A2",
+   "batch": "A accounting",
+   "hypothesis": "Totals are round (multiples of 10) more often than entries",
+   "effect": -0.0715,
+   "p": 0.8231,
+   "note": "12/29 vs 198/408",
+   "bh_supported": false
+  },
+  {
+   "id": "A3",
+   "batch": "A accounting",
+   "hypothesis": "Entries within a list are written in descending order of size",
+   "effect": 0.2,
+   "p": 0.0005,
+   "note": "131 lists",
+   "bh_supported": true
+  },
+  {
+   "id": "A4",
+   "batch": "A accounting",
+   "hypothesis": "Quantities >= 10 follow Benford's law (p here = evidence AGAINST Benford)",
+   "effect": 77.67,
+   "p": 0.0005,
+   "note": "n=437, first digits {1: 201, 2: 91, 3: 42, 4: 35, 5: 21, 6: 21, 7: 11, 8: 5, 9: 10}",
+   "bh_supported": true
+  },
+  {
+   "id": "A5",
+   "batch": "A accounting",
+   "hypothesis": "Larger totals are more often wrong",
+   "effect": 45.5579,
+   "p": 0.3688,
+   "note": "median wrong 65, right 87",
+   "bh_supported": false
+  },
+  {
+   "id": "B1",
+   "batch": "B fractions",
+   "hypothesis": "Persons (VIR) are never counted in fractions, unlike goods",
+   "effect": 0.2766,
+   "p": 0.0005,
+   "note": "VIR 10/148, goods 255/741",
+   "bh_supported": true
+  },
+  {
+   "id": "B2",
+   "batch": "B fractions",
+   "hypothesis": "Larger fraction values (Corazza) are used more often",
+   "effect": 0.933,
+   "p": 0.0015,
+   "note": "{'J': 91, 'E': 40, 'K': 27, 'B': 29, 'L2': 15, 'D': 31, 'F': 3, 'L6': 2, 'L4': 2}",
+   "bh_supported": true
+  },
+  {
+   "id": "B3",
+   "batch": "B fractions",
+   "hypothesis": "Haghia Triada and Khania use different fraction repertoires",
+   "effect": 53.82,
+   "p": 0.0005,
+   "note": "{('Haghia Triada', 'J'): 48, ('Haghia Triada', 'JE'): 17, ('Haghia Triada', 'E'): 17, ('Haghia Triada', 'K'): 14, ('Haghia Triada', 'B'): 10, ('Haghia Triada', 'H'): 11, ('Haghia Triada', 'L2'): 2, ('Haghia Triada', 'D'): 19, ('Haghia Triada', 'DD'): 2, ('Haghia Triada', 'A'): 11, ('Haghia Triada', 'F'): 3, ('Haghia Triada', 'X'): 3, ('Khania', 'J'): 32, ('Khania', 'E'): 17, ('Khania', 'B'): 17, ('Khania', 'A'): 4, ('Khania', 'K'): 13, ('Khania', 'JE'): 3, ('Khania', 'L2'): 11, ('Khania', 'L6'): 2, ('Khania', 'X'): 1, ('Khania', 'D'): 4, ('Khania', 'W'): 5, ('Khania', 'L4'): 2}",
+   "bh_supported": true
+  },
+  {
+   "id": "B4",
+   "batch": "B fractions",
+   "hypothesis": "The combination K L2 belongs to cyperus",
+   "effect": 0.1974,
+   "p": 0.1284,
+   "note": "CYP 4/16, others 1/19",
+   "bh_supported": false
+  },
+  {
+   "id": "B5",
+   "batch": "B fractions",
+   "hypothesis": "Totals carry fractions more often than entries",
+   "effect": -0.1111,
+   "p": 0.956,
+   "note": "4/31 vs 342/1424",
+   "bh_supported": false
+  },
+  {
+   "id": "C1",
+   "batch": "C sign sequences",
+   "hypothesis": "Signs prefer particular positions in the word (initial, medial, final)",
+   "effect": 525.8,
+   "p": 0.0033,
+   "note": "null: signs shuffled within words",
+   "bh_supported": true
+  },
+  {
+   "id": "C2",
+   "batch": "C sign sequences",
+   "hypothesis": "Reduplication (the same sign twice in a row) is more common than chance",
+   "effect": 0.0208,
+   "p": 0.9221,
+   "note": "null mean 0.026",
+   "bh_supported": false
+  },
+  {
+   "id": "C3",
+   "batch": "C sign sequences",
+   "hypothesis": "Neighbouring syllables share a consonant more than chance",
+   "effect": 0.0411,
+   "p": 1.0,
+   "note": "null mean 0.0683",
+   "bh_supported": false
+  },
+  {
+   "id": "C4",
+   "batch": "C sign sequences",
+   "hypothesis": "Word-final syllables have a different vowel mix",
+   "effect": 64.17,
+   "p": 0.0005,
+   "note": "{'e': 0.226, 'a': 0.363, 'o': 0.027, 'u': 0.15, 'i': 0.234}",
+   "bh_supported": true
+  },
+  {
+   "id": "C5",
+   "batch": "C sign sequences",
+   "hypothesis": "The next sign is more predictable than chance (lower conditional entropy)",
+   "effect": 4.081,
+   "p": 0.0033,
+   "note": "null 4.349 bits",
+   "bh_supported": true
+  },
+  {
+   "id": "D1",
+   "batch": "D names",
+   "hypothesis": "Reduplicated names are commoner at Knossos than Pylos",
+   "effect": -0.0081,
+   "p": 0.8986,
+   "note": "LA 0.028, KN 0.013, PY 0.021",
+   "bh_supported": false
+  },
+  {
+   "id": "D2",
+   "batch": "D names",
+   "hypothesis": "Knossos names are closer in length to Linear A names than Pylos names",
+   "effect": 0.146,
+   "p": 0.0005,
+   "note": "mean length LA 2.91, KN 3.42, PY 3.7",
+   "bh_supported": true
+  },
+  {
+   "id": "D3",
+   "batch": "D names",
+   "hypothesis": "Typical Linear A name endings (ti, na, ja, ta, re, ra, ru, te) are commoner at Knossos",
+   "effect": 0.0116,
+   "p": 0.3608,
+   "note": "",
+   "bh_supported": false
+  },
+  {
+   "id": "D4",
+   "batch": "D names",
+   "hypothesis": "Knossos place names are more Linear A-like than Knossos personal names",
+   "effect": 0.1431,
+   "p": 0.0625,
+   "note": "70 place names",
+   "bh_supported": false
+  },
+  {
+   "id": "D5",
+   "batch": "D names",
+   "hypothesis": "Names in the early Room of the Chariot Tablets are more Linear A-like",
+   "effect": -0.0885,
+   "p": 0.8391,
+   "note": "RCT 70, other 545",
+   "bh_supported": false
+  },
+  {
+   "id": "E1",
+   "batch": "E document structure",
+   "hypothesis": "Heading words are longer than entry words",
+   "effect": -0.0457,
+   "p": 0.7311,
+   "note": "174 vs 479",
+   "bh_supported": false
+  },
+  {
+   "id": "E2",
+   "batch": "E document structure",
+   "hypothesis": "Tablets by the same scribe share more vocabulary",
+   "effect": 0.0166,
+   "p": 0.004,
+   "note": "44 attributed tablets",
+   "bh_supported": true
+  },
+  {
+   "id": "E3",
+   "batch": "E document structure",
+   "hypothesis": "Words shared between sites are shorter than site-specific words",
+   "effect": 0.6645,
+   "p": 0.0005,
+   "note": "48 shared, 702 local",
+   "bh_supported": true
+  },
+  {
+   "id": "E4",
+   "batch": "E document structure",
+   "hypothesis": "KU-RO closes its section (no further entries follow)",
+   "effect": 0.1896,
+   "p": 0.014,
+   "note": "KU-RO 28/37, other words 600/1058",
+   "bh_supported": true
+  },
+  {
+   "id": "E5",
+   "batch": "E document structure",
+   "hypothesis": "Single signs on sealings are abbreviations of word beginnings (closer to initial than final signs)",
+   "effect": 0.1255,
+   "p": 0.0005,
+   "note": "631 sealing signs; p = share of bootstrap with no advantage",
+   "bh_supported": true
+  },
+  {
+   "id": "F1",
+   "batch": "F religious register",
+   "hypothesis": "Religious (formula) words are longer than administrative words",
+   "effect": 0.7478,
+   "p": 0.0005,
+   "note": "223 vs 760 tokens",
+   "bh_supported": true
+  },
+  {
+   "id": "F2",
+   "batch": "F religious register",
+   "hypothesis": "The religious vocabulary overlaps the administrative less than chance",
+   "effect": 0.063,
+   "p": 0.0005,
+   "note": "12 of 190 religious types also administrative",
+   "bh_supported": true
+  },
+  {
+   "id": "F3",
+   "batch": "F religious register",
+   "hypothesis": "Words beginning JA- belong to the religious register",
+   "effect": 0.1275,
+   "p": 0.0005,
+   "note": "",
+   "bh_supported": true
+  },
+  {
+   "id": "F4",
+   "batch": "F religious register",
+   "hypothesis": "Words beginning U- belong to the religious register",
+   "effect": 0.0417,
+   "p": 0.003,
+   "note": "",
+   "bh_supported": true
+  },
+  {
+   "id": "F5",
+   "batch": "F religious register",
+   "hypothesis": "Religious and administrative words differ in vowel mix",
+   "effect": 13.06,
+   "p": 0.0125,
+   "note": "",
+   "bh_supported": true
+  },
+  {
+   "id": "G1",
+   "batch": "G script continuity",
+   "hypothesis": "Knossos Linear B uses syllables at rates closer to Linear A than Pylos does",
+   "effect": 0.165,
+   "p": 0.002,
+   "note": "52 shared syllables; p = bootstrap share with no Knossos advantage",
+   "bh_supported": true
+  },
+  {
+   "id": "G2",
+   "batch": "G script continuity",
+   "hypothesis": "Knossos uses the special signs (pa3, ra2, ta2, pu2...) more than Pylos",
+   "effect": -0.0263,
+   "p": 1.0,
+   "note": "102/2053 vs 149/1961",
+   "bh_supported": false
+  },
+  {
+   "id": "G3",
+   "batch": "G script continuity",
+   "hypothesis": "Logograms Linear B kept were commoner in Linear A than numbered ones it did not",
+   "effect": 48.2656,
+   "p": 0.0005,
+   "note": "9 kept, 146 numbered",
+   "bh_supported": true
+  },
+  {
+   "id": "G4",
+   "batch": "G script continuity",
+   "hypothesis": "Undeciphered Linear B signs (*18, *47, *56...) are commoner at Knossos",
+   "effect": 0.0333,
+   "p": 0.0005,
+   "note": "105/2053 vs 35/1961",
+   "bh_supported": true
+  },
+  {
+   "id": "G5",
+   "batch": "G script continuity",
+   "hypothesis": "Knossos names with undeciphered signs are more Linear A-like",
+   "effect": -0.2123,
+   "p": 0.954,
+   "note": "36 names with * signs",
+   "bh_supported": false
+  },
+  {
+   "id": "H1",
+   "batch": "H Knossos-name robustness",
+   "hypothesis": "Knossos names are more Linear A-like than Thebes names",
+   "effect": null,
+   "p": null,
+   "note": "untestable (8 Theban names)",
+   "bh_supported": null
+  },
+  {
+   "id": "H2",
+   "batch": "H Knossos-name robustness",
+   "hypothesis": "Knossos names are more Linear A-like than non-Pylian mainland names",
+   "effect": 0.1323,
+   "p": 0.0085,
+   "note": "50 names",
+   "bh_supported": true
+  },
+  {
+   "id": "H3",
+   "batch": "H Knossos-name robustness",
+   "hypothesis": "Knossos names are closer to Linear A names in syllable pairs too",
+   "effect": 0.095,
+   "p": 0.002,
+   "note": "",
+   "bh_supported": true
+  },
+  {
+   "id": "H4",
+   "batch": "H Knossos-name robustness",
+   "hypothesis": "The Knossos name effect survives matching word lengths",
+   "effect": 0.0502,
+   "p": 0.0005,
+   "note": "335 length-matched Knossos names",
+   "bh_supported": true
+  },
+  {
+   "id": "H5",
+   "batch": "H Knossos-name robustness",
+   "hypothesis": "Linear A religious words also resemble Knossos names more than Pylos names",
+   "effect": 0.0557,
+   "p": 0.0005,
+   "note": "190 religious word types",
+   "bh_supported": true
+  },
+  {
+   "id": "I1",
+   "batch": "I chronology and geography",
+   "hypothesis": "Middle Minoan and Late Minoan texts use syllables differently",
+   "effect": 118.2,
+   "p": 0.01,
+   "note": "{'LM': 1869, 'MM': 64}",
+   "bh_supported": true
+  },
+  {
+   "id": "I2",
+   "batch": "I chronology and geography",
+   "hypothesis": "Words are longer in Late Minoan texts than Middle Minoan",
+   "effect": -0.2244,
+   "p": 0.8796,
+   "note": "21 MM, 662 LM tokens",
+   "bh_supported": false
+  },
+  {
+   "id": "I3",
+   "batch": "I chronology and geography",
+   "hypothesis": "o-syllables were commoner earlier (Middle Minoan) than later",
+   "effect": 0.0082,
+   "p": 0.4508,
+   "note": "MM 0.031, LM 0.023",
+   "bh_supported": false
+  },
+  {
+   "id": "I4",
+   "batch": "I chronology and geography",
+   "hypothesis": "Sites farther apart differ more in syllable use (Mantel test)",
+   "effect": -0.247,
+   "p": 0.7822,
+   "note": "7 sites: ['Haghia Triada', 'Iouktas', 'Khania', 'Knossos', 'Phaistos', 'Palaikastro', 'Zakros']",
+   "bh_supported": false
+  },
+  {
+   "id": "I5",
+   "batch": "I chronology and geography",
+   "hypothesis": "Khania differs more from Haghia Triada than Zakros does",
+   "effect": 0.0522,
+   "p": 0.1249,
+   "note": "194 KH, 334 ZA syllables",
+   "bh_supported": false
+  },
+  {
+   "id": "J1",
+   "batch": "J quantities",
+   "hypothesis": "Amount sizes depend on the commodity",
+   "effect": 63.46,
+   "p": 0.0005,
+   "note": "{'VIR': 43.4, 'GRA': 59.7, 'VIN': 17.7, 'OLE': 7.2, 'CYP': 5.7, 'OLIV': 15.8}",
+   "bh_supported": true
+  },
+  {
+   "id": "J2",
+   "batch": "J quantities",
+   "hypothesis": "In lists of men, each named entry is usually a single person (1)",
+   "effect": -0.1459,
+   "p": 0.997,
+   "note": "13/69 vs 117/350",
+   "bh_supported": false
+  },
+  {
+   "id": "J3",
+   "batch": "J quantities",
+   "hypothesis": "Amounts in KI-RO sections are smaller than elsewhere",
+   "effect": 25.8949,
+   "p": 0.0005,
+   "note": "32 KI-RO entries",
+   "bh_supported": true
+  },
+  {
+   "id": "J4",
+   "batch": "J quantities",
+   "hypothesis": "Amounts entered with SA-RA2 are larger than other grain and cyperus amounts",
+   "effect": 0.222,
+   "p": 0.3183,
+   "note": "14 SA-RA2 entries",
+   "bh_supported": false
+  },
+  {
+   "id": "J5",
+   "batch": "J quantities",
+   "hypothesis": "Even amounts are commoner than odd ones (rationing in pairs)",
+   "effect": 0.648,
+   "p": 0.0005,
+   "note": "623/962",
+   "bh_supported": true
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+== CC1: The rule holds in first syllables
+   primary {'target': 1.481, 'comparison': -0.124, 'p': 0.0005, 'n': [760, 4866]}
+   robustness {}
+== CC2: The rule holds in final syllables
+   primary {'target': 1.243, 'comparison': -0.087, 'p': 0.0005, 'n': [760, 4866]}
+   robustness {}
+== CC4: i/u are depleted after the e/o-taking consonants more than in Linear B
+   primary {'logOR_iu_LA': -0.191, 'logOR_iu_LB': 0.347, 'p': 0.0005}
+   robustness {}
+== CC5: e versus o depends on the consonant more than in Linear B
+   primary {'nmi_LA': 0.33, 'nmi_LB_subsampled': 0.083, 'p': 0.002}
+   robustness {}
+== CC6: Knossos names (ending removed) show the rule more than Pylos names
+   primary {'target': -0.263, 'comparison': -0.211, 'p': 0.5867, 'n': [637, 339]}
+   robustness {}
+== CC7: Cretan place names show the rule more than Pylos place names
+   primary {'target': -0.521, 'comparison': -0.015, 'p': 0.8711, 'n': [58, 119]}
+   robustness {}
+== CC8: Pre-Greek stems show the rule more than Greek stems
+   primary {'target': -0.351, 'comparison': -0.011, 'p': 0.998, 'n': [1143, 1143]}
+   robustness {}
+== CC9: The rule holds on SigLA's transcription
+   primary {'target': 1.437, 'comparison': -0.138, 'p': 0.0005, 'n': [536, 4866]}
+   robustness {}
+== CC10: Eteocretan shows the rule more than Greek
+   primary {'target': -0.217, 'comparison': 0.057, 'p': 0.7061, 'n': [35, 119]}
+   robustness {}
+== CC11: Khania's Linear A shows the rule
+   primary {'target': 0.976, 'comparison': -0.138, 'p': 0.0005, 'n': [68, 4866]}
+   robustness {}
+
+primary p: {'CC1': 0.0005, 'CC2': 0.0005, 'CC4': 0.0005, 'CC5': 0.002, 'CC6': 0.5867, 'CC7': 0.8711, 'CC8': 0.998, 'CC9': 0.0005, 'CC10': 0.7061, 'CC11': 0.0005}
+survive BH at 5%: ['CC1', 'CC11', 'CC2', 'CC4', 'CC5', 'CC9']

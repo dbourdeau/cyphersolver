@@ -1,0 +1,33 @@
+== HC1: Non-adjacent harmony on SigLA vs Linear B
+   primary {'target': 0.0728, 'comparison': 0.0492, 'p': 0.0035, 'n': [536, 4866]}
+   robustness {}
+== HC2: Adjacent harmony (different signs) on SigLA vs Linear B
+   primary {'target': 0.0378, 'comparison': 0.021, 'p': 0.0005, 'n': [536, 4866]}
+   robustness {}
+== HC3: Harmony holds for obstruents and sonorants separately
+   primary {'obstruents': {'LA': 0.0405, 'LB': 0.0282, 'p': 0.0225}, 'sonorants': {'LA': 0.0421, 'LB': 0.0222, 'p': 0.0015}, 'p (larger)': 0.0225}
+   robustness {}
+== HC4: Knossos names show harmony more than Pylos names
+   primary {'target': 0.0182, 'comparison': 0.012, 'p': 0.1234, 'n': [637, 339]}
+   robustness {}
+== HC5: Eteocretan shows harmony more than Greek
+   primary {'target': 0.0625, 'comparison': 0.011, 'p': 0.0145, 'n': [35, 119]}
+   robustness {}
+== HC6: Same consonant preferred over same place more than in Linear B
+   primary {'target': 0.2034, 'comparison': 0.1618, 'p': 0.0795, 'n': [760, 4866]}
+   robustness {}
+== HC7: Harmony holds in 3-sign and 4+-sign words separately
+   primary {'3 signs': {'LA': 0.0338, 'LB': 0.0224, 'p': 0.0715}, '4+ signs': {'LA': 0.0336, 'LB': 0.0185, 'p': 0.0065}, 'p (larger)': 0.0715}
+   robustness {}
+== HC8: Harmony holds in words attested once
+   primary {'target': 0.0352, 'comparison': 0.021, 'p': 0.0015, 'n': [631, 4866]}
+   robustness {}
+== HC9: Two-sign words share their consonant more often than in Linear B
+   primary {'target': 0.0538, 'comparison': 0.0532, 'p': 0.5292, 'n': [279, 827]}
+   robustness {}
+== HC10: Words with harmony are attested at more sites
+   primary {'diff_mean_sites': -0.098, 'p': 1.0, 'harmonic_words': 52}
+   robustness {}
+
+primary p: {'HC1': 0.0035, 'HC2': 0.0005, 'HC3': 0.0225, 'HC4': 0.1234, 'HC5': 0.0145, 'HC6': 0.0795, 'HC7': 0.0715, 'HC8': 0.0015, 'HC9': 0.5292, 'HC10': 1.0}
+survive BH at 5%: ['HC1', 'HC2', 'HC3', 'HC5', 'HC8']

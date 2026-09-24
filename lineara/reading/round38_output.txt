@@ -1,0 +1,33 @@
+== AA1: Q-row signs word-initial (SigLA vs Linear B)
+   primary {'target': 0.5652, 'comparison': 0.277, 'p': 0.0005}
+   robustness {}
+== AA2: Two vowel signs in succession rarer (SigLA vs Linear B)
+   primary {'target': 0.0, 'comparison': 0.0195, 'p': 0.0005}
+   robustness {}
+== AA3: Final pure vowel signs rarer (SigLA vs Linear B)
+   primary {'target': 0.0354, 'comparison': 0.1054, 'p': 0.0005}
+   robustness {}
+== AA4: e/o follow T (SigLA vs Linear B)
+   primary {'target': 0.6954, 'comparison': -0.1313, 'p': 0.0005}
+   robustness {}
+== AA5: e/o follow Q more than K (SigLA vs Linear B)
+   primary {'target': 1.9811, 'comparison': 0.7286, 'p': 0.001}
+   robustness {}
+== AA6: Equal amounts on neighbouring lines outside Haghia Triada (1s excluded)
+   primary {'adjacent_equal': 58, 'null': 51.6, 'p': 0.066, 'lists': 74}
+   robustness {}
+== AA7: The first entry is the unique largest (lists of 4+)
+   primary {'first_is_max': '22/105', 'null': 14.4, 'p': 0.0235}
+   robustness {}
+== AA9: Tablet-mates share first signs (SigLA tablets, unique words, within-site shuffle)
+   primary {'pairs': 116, 'null': 114.1, 'p': 0.4478, 'tablets': 98}
+   robustness {}
+== AA10: Knossos names begin with Q more often than Thebes/Mycenae/Tiryns names
+   primary {'target': 0.0518, 'comparison': 0.0, 'p': 0.0985}
+   robustness {}
+== AA11: Linear A vowel profile closer to Pre-Greek than to an unmatched Greek sample
+   primary {'jsd_PreGreek': 0.0433, 'jsd_Greek_unmatched': 0.1007, 'p': 0.0005}
+   robustness {}
+
+primary p: {'AA1': 0.0005, 'AA2': 0.0005, 'AA3': 0.0005, 'AA4': 0.0005, 'AA5': 0.001, 'AA6': 0.066, 'AA7': 0.0235, 'AA9': 0.4478, 'AA10': 0.0985, 'AA11': 0.0005}
+survive BH at 5%: ['AA1', 'AA11', 'AA2', 'AA3', 'AA4', 'AA5', 'AA7']

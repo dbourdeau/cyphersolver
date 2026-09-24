@@ -1,0 +1,806 @@
+{
+ "method": "Kober's test on Linear A: do word endings (or the initial A-/JA-) track position in the document?\n\nAlice Kober found Linear B's inflection by setting the same stems side by side with different endings in\ndifferent grammatical slots. Here the slot is the word's function in its document, from build_reading.py:\nheading, entry label (a word followed by a quantity in the same entry), in-list without quantity,\nformula/votive word, sealing mark.\n\nFamilies: word tokens grouped by stem = all signs but the last (final alternation), or all signs but the\nfirst where the first is A or JA (initial alternation). Only stems attested with 2+ different endings count.\nStatistic: conditional mutual information I(ending; function | stem), summed over tokens. Null: within each\nstem, function labels are permuted across that stem's tokens (so each stem keeps its own mix of functions)\n5,000 times. If endings carried case or number tied to syntactic slot, the real statistic would exceed the null.\nA second statistic uses the whole vocabulary: for each final sign, its distribution over functions against\nall other finals (chi-square), to see which endings lean to headings or entries.",
+ "word_tokens": 1040,
+ "tests": {
+  "final": {
+   "families": 49,
+   "tokens": 153,
+   "cmi_real": 48.605,
+   "cmi_null_mean": 46.211,
+   "p": 0.1974
+  },
+  "initial": {
+   "families": 12,
+   "tokens": 56,
+   "cmi_real": 9.042,
+   "cmi_null_mean": 6.449,
+   "p": 0.0728
+  }
+ },
+ "families": {
+  "final": {
+   "KU-PA3": {
+    "NU:entry label": 7,
+    "PA3:entry label": 1,
+    "NU:in-list, no quantity": 1
+   },
+   "JA-SA-SA-RA": {
+    "ME:formula/votive": 7,
+    "MA:formula/votive": 1
+   },
+   "DI-NA": {
+    "U:entry label": 4,
+    "U:in-list, no quantity": 1,
+    "RO:entry label": 1,
+    "U:formula/votive": 1
+   },
+   "KU-NI": {
+    "SU:heading": 1,
+    "SU:entry label": 4,
+    "TE:entry label": 1
+   },
+   "TA-NA": {
+    "TI:entry label": 4,
+    "TE:entry label": 1
+   },
+   "MI-NU": {
+    "MI:in-list, no quantity": 1,
+    "TE:entry label": 4
+   },
+   "QE-RA2": {
+    "U:heading": 1,
+    "JA:in-list, no quantity": 1,
+    "U:entry label": 2
+   },
+   "A-KA": {
+    "RU:entry label": 1,
+    "RU:heading": 2,
+    "TA:heading": 1
+   },
+   "PA3-NI": {
+    "NA:entry label": 1,
+    "NA:heading": 1,
+    "NA:in-list, no quantity": 1,
+    "WI:formula/votive": 1
+   },
+   "SI-DA": {
+    "RE:entry label": 2,
+    "TE:heading": 1,
+    "RO:entry label": 1
+   },
+   "MA-RU": {
+    "ME:entry label": 2,
+    "ME:in-list, no quantity": 1,
+    "A:formula/votive": 1
+   },
+   "QA-QA": {
+    "RU:entry label": 3,
+    "DA:entry label": 1
+   },
+   "PA-TA": {
+    "NE:entry label": 2,
+    "NE:sealing mark": 1,
+    "DA:entry label": 1
+   },
+   "KU-ZU": {
+    "NI:entry label": 2,
+    "NA:heading": 1
+   },
+   "SA-RA": {
+    "DI:entry label": 1,
+    "RA:entry label": 1,
+    "ME:formula/votive": 1
+   },
+   "TI-TI": {
+    "KU:heading": 1,
+    "MA:sealing mark": 1,
+    "KU:formula/votive": 1
+   },
+   "KI-DA": {
+    "TA:entry label": 1,
+    "RO:in-list, no quantity": 1,
+    "RO:entry label": 1
+   },
+   "KI-RE": {
+    "TA2:entry label": 2,
+    "ZA:heading": 1
+   },
+   "KI-RI": {
+    "TA2:heading": 1,
+    "TA2:entry label": 1,
+    "SI:entry label": 1
+   },
+   "KU-PA": {
+    "JA:entry label": 1,
+    "ZU:entry label": 1,
+    "RI:entry label": 1
+   },
+   "A-RI": {
+    "SU:entry label": 1,
+    "PA:entry label": 1,
+    "JA:heading": 1
+   },
+   "U-NA": {
+    "A:formula/votive": 1,
+    "NA:entry label": 1,
+    "KA:formula/votive": 1
+   },
+   "JA-SA": {
+    "JA:formula/votive": 1,
+    "SA:formula/votive": 1,
+    "MU:entry label": 1
+   },
+   "I-DA": {
+    "A:formula/votive": 1,
+    "MI:formula/votive": 1,
+    "DA:formula/votive": 1
+   },
+   "MA-KA-I": {
+    "TA:entry label": 2,
+    "SE:entry label": 1
+   },
+   "A-TA": {
+    "RE:heading": 1,
+    "NA:in-list, no quantity": 1,
+    "DE:formula/votive": 1
+   },
+   "DA-TA": {
+    "RA:heading": 1,
+    "RE:entry label": 1
+   },
+   "PI-TA": {
+    "JA:entry label": 1,
+    "RA:entry label": 1
+   },
+   "SI-KI": {
+    "RA:entry label": 1,
+    "NE:entry label": 1
+   },
+   "KU-MA": {
+    "JU:entry label": 1,
+    "RO:in-list, no quantity": 1
+   },
+   "I-KU": {
+    "TA:entry label": 1,
+    "PI:in-list, no quantity": 1
+   },
+   "SA-MA": {
+    "TI:entry label": 1,
+    "RO:entry label": 1
+   },
+   "MI-DA": {
+    "NI:in-list, no quantity": 1,
+    "RA:formula/votive": 1
+   },
+   "KU-RU": {
+    "KU:entry label": 1,
+    "MA:in-list, no quantity": 1
+   },
+   "A-RA": {
+    "JU:entry label": 1,
+    "TU:entry label": 1
+   },
+   "DA-NA": {
+    "SI:heading": 1,
+    "TU:heading": 1
+   },
+   "I-JA": {
+    "PA:formula/votive": 1,
+    "TE:formula/votive": 1
+   },
+   "U-NA-RU-KA-NA": {
+    "SI:formula/votive": 1,
+    "TI:formula/votive": 1
+   },
+   "A-DU": {
+    "RE:heading": 1,
+    "ZA:entry label": 1
+   },
+   "QA-TI": {
+    "KI:entry label": 1,
+    "JU:entry label": 1
+   },
+   "U-TA-I": {
+    "SE:entry label": 1,
+    "SI:entry label": 1
+   },
+   "PA-DA": {
+    "NI:heading": 1,
+    "RU:in-list, no quantity": 1
+   },
+   "KA-I": {
+    "KA:sealing mark": 1,
+    "RO:entry label": 1
+   },
+   "A-DA": {
+    "RA:formula/votive": 1,
+    "RO:entry label": 1
+   },
+   "JA-WA": {
+    "PI:formula/votive": 1,
+    "PA3:formula/votive": 1
+   },
+   "MA-TE": {
+    "RE:heading": 1,
+    "TI:entry label": 1
+   },
+   "A-MI-DA": {
+    "O:in-list, no quantity": 1,
+    "U:entry label": 1
+   },
+   "TU-ME": {
+    "I:formula/votive": 1,
+    "SE:entry label": 1
+   },
+   "A-TA-NA": {
+    "TE:entry label": 1,
+    "JE:formula/votive": 1
+   }
+  },
+  "initial": {
+   "SA-RA2": {
+    "0:entry label": 16,
+    "0:heading": 4,
+    "A:heading": 1
+   },
+   "SA-SA-RA-ME": {
+    "JA:formula/votive": 7,
+    "A:formula/votive": 1,
+    "0:formula/votive": 2
+   },
+   "KA-RU": {
+    "A:entry label": 1,
+    "0:heading": 2,
+    "A:heading": 2
+   },
+   "PA-RA-NE": {
+    "A:heading": 2,
+    "0:entry label": 2
+   },
+   "RA-NA-RE": {
+    "A:entry label": 1,
+    "0:heading": 1
+   },
+   "SI-KI-RA": {
+    "0:entry label": 1,
+    "A:entry label": 1
+   },
+   "RI-JA": {
+    "0:entry label": 1,
+    "A:heading": 1
+   },
+   "MI-TA": {
+    "0:entry label": 1,
+    "A:entry label": 1
+   },
+   "SA-SA-RA": {
+    "JA:formula/votive": 1,
+    "A:formula/votive": 1
+   },
+   "WA-PI": {
+    "A:formula/votive": 1,
+    "JA:formula/votive": 1
+   },
+   "DA-RA": {
+    "A:formula/votive": 1,
+    "0:entry label": 1
+   },
+   "TA-NA-TE": {
+    "0:entry label": 1,
+    "A:entry label": 1
+   }
+  }
+ },
+ "final_sign_lean": {
+  "KA": {
+   "n": 28,
+   "chi2": 128.6,
+   "share": {
+    "heading": 0.21,
+    "entry label": 0.14,
+    "in-list, no quantity": 0.04,
+    "formula/votive": 0.07,
+    "sealing mark": 0.54
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "TE": {
+   "n": 53,
+   "chi2": 23.7,
+   "share": {
+    "heading": 0.17,
+    "entry label": 0.32,
+    "in-list, no quantity": 0.04,
+    "formula/votive": 0.47
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "RI": {
+   "n": 16,
+   "chi2": 20.8,
+   "share": {
+    "heading": 0.38,
+    "entry label": 0.19,
+    "in-list, no quantity": 0.38,
+    "formula/votive": 0.06
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "RA2": {
+   "n": 39,
+   "chi2": 19.4,
+   "share": {
+    "heading": 0.18,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.05,
+    "formula/votive": 0.1,
+    "sealing mark": 0.21
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "ME": {
+   "n": 25,
+   "chi2": 15.8,
+   "share": {
+    "entry label": 0.36,
+    "in-list, no quantity": 0.08,
+    "formula/votive": 0.52,
+    "sealing mark": 0.04
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "RU": {
+   "n": 35,
+   "chi2": 13.9,
+   "share": {
+    "heading": 0.17,
+    "entry label": 0.74,
+    "in-list, no quantity": 0.03,
+    "formula/votive": 0.06
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "DU": {
+   "n": 20,
+   "chi2": 12.3,
+   "share": {
+    "heading": 0.4,
+    "entry label": 0.45,
+    "in-list, no quantity": 0.15
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "SU": {
+   "n": 16,
+   "chi2": 9.0,
+   "share": {
+    "heading": 0.38,
+    "entry label": 0.56,
+    "in-list, no quantity": 0.06
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "PA": {
+   "n": 24,
+   "chi2": 8.9,
+   "share": {
+    "heading": 0.38,
+    "entry label": 0.38,
+    "in-list, no quantity": 0.08,
+    "formula/votive": 0.08,
+    "sealing mark": 0.08
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "TU": {
+   "n": 19,
+   "chi2": 8.7,
+   "share": {
+    "heading": 0.05,
+    "entry label": 0.79,
+    "in-list, no quantity": 0.05,
+    "formula/votive": 0.05,
+    "sealing mark": 0.05
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "SA": {
+   "n": 18,
+   "chi2": 8.2,
+   "share": {
+    "heading": 0.22,
+    "entry label": 0.17,
+    "in-list, no quantity": 0.11,
+    "formula/votive": 0.44,
+    "sealing mark": 0.06
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "TI": {
+   "n": 44,
+   "chi2": 7.6,
+   "share": {
+    "heading": 0.09,
+    "entry label": 0.61,
+    "in-list, no quantity": 0.02,
+    "formula/votive": 0.25,
+    "sealing mark": 0.02
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "RA": {
+   "n": 41,
+   "chi2": 7.4,
+   "share": {
+    "heading": 0.29,
+    "entry label": 0.41,
+    "in-list, no quantity": 0.07,
+    "formula/votive": 0.12,
+    "sealing mark": 0.1
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "TA": {
+   "n": 35,
+   "chi2": 6.4,
+   "share": {
+    "heading": 0.2,
+    "entry label": 0.6,
+    "in-list, no quantity": 0.11,
+    "formula/votive": 0.09
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "JA": {
+   "n": 48,
+   "chi2": 5.9,
+   "share": {
+    "heading": 0.15,
+    "entry label": 0.35,
+    "in-list, no quantity": 0.08,
+    "formula/votive": 0.35,
+    "sealing mark": 0.06
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "SI": {
+   "n": 31,
+   "chi2": 5.8,
+   "share": {
+    "heading": 0.13,
+    "entry label": 0.35,
+    "in-list, no quantity": 0.06,
+    "formula/votive": 0.39,
+    "sealing mark": 0.06
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "RE": {
+   "n": 48,
+   "chi2": 5.6,
+   "share": {
+    "heading": 0.1,
+    "entry label": 0.58,
+    "in-list, no quantity": 0.15,
+    "formula/votive": 0.15,
+    "sealing mark": 0.02
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "MI": {
+   "n": 25,
+   "chi2": 5.3,
+   "share": {
+    "heading": 0.16,
+    "entry label": 0.32,
+    "in-list, no quantity": 0.2,
+    "formula/votive": 0.2,
+    "sealing mark": 0.12
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "KI": {
+   "n": 23,
+   "chi2": 5.1,
+   "share": {
+    "heading": 0.13,
+    "entry label": 0.52,
+    "in-list, no quantity": 0.22,
+    "formula/votive": 0.09,
+    "sealing mark": 0.04
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "MA": {
+   "n": 31,
+   "chi2": 4.4,
+   "share": {
+    "heading": 0.13,
+    "entry label": 0.35,
+    "in-list, no quantity": 0.13,
+    "formula/votive": 0.35,
+    "sealing mark": 0.03
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "DA": {
+   "n": 22,
+   "chi2": 4.3,
+   "share": {
+    "heading": 0.09,
+    "entry label": 0.45,
+    "in-list, no quantity": 0.09,
+    "formula/votive": 0.36
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "ZA": {
+   "n": 17,
+   "chi2": 3.7,
+   "share": {
+    "heading": 0.06,
+    "entry label": 0.59,
+    "in-list, no quantity": 0.18,
+    "formula/votive": 0.18
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "DI": {
+   "n": 26,
+   "chi2": 3.5,
+   "share": {
+    "heading": 0.08,
+    "entry label": 0.62,
+    "in-list, no quantity": 0.08,
+    "formula/votive": 0.15,
+    "sealing mark": 0.08
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "NI": {
+   "n": 20,
+   "chi2": 3.3,
+   "share": {
+    "heading": 0.1,
+    "entry label": 0.55,
+    "in-list, no quantity": 0.15,
+    "formula/votive": 0.1,
+    "sealing mark": 0.1
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "RO": {
+   "n": 19,
+   "chi2": 3.1,
+   "share": {
+    "heading": 0.11,
+    "entry label": 0.53,
+    "in-list, no quantity": 0.16,
+    "formula/votive": 0.11,
+    "sealing mark": 0.11
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "NA": {
+   "n": 47,
+   "chi2": 2.8,
+   "share": {
+    "heading": 0.17,
+    "entry label": 0.55,
+    "in-list, no quantity": 0.11,
+    "formula/votive": 0.15,
+    "sealing mark": 0.02
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "NU": {
+   "n": 21,
+   "chi2": 2.1,
+   "share": {
+    "heading": 0.14,
+    "entry label": 0.43,
+    "in-list, no quantity": 0.14,
+    "formula/votive": 0.29
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "NE": {
+   "n": 30,
+   "chi2": 2.0,
+   "share": {
+    "heading": 0.23,
+    "entry label": 0.4,
+    "in-list, no quantity": 0.07,
+    "formula/votive": 0.27,
+    "sealing mark": 0.03
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  },
+  "SE": {
+   "n": 29,
+   "chi2": 0.7,
+   "share": {
+    "heading": 0.14,
+    "entry label": 0.52,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.17,
+    "sealing mark": 0.07
+   },
+   "overall": {
+    "heading": 0.17,
+    "entry label": 0.46,
+    "in-list, no quantity": 0.1,
+    "formula/votive": 0.21,
+    "sealing mark": 0.05
+   }
+  }
+ }
+}

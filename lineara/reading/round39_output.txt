@@ -1,0 +1,33 @@
+== BB1: Q-initial share counting each initial sign pair once
+   primary {'LA': 0.7241, 'LB': 0.5294, 'p': 0.0055}
+   robustness {}
+== BB2: J-row signs word-initial less often
+   primary {'LA': 0.3582, 'LB': 0.0437, 'p': 1.0}
+   robustness {}
+== BB3: W-row signs word-final less often
+   primary {'LA': 0.3571, 'LB': 0.3341, 'p': 0.7496}
+   robustness {}
+== BB5: Special signs word-internal more often
+   primary {'LA': 0.2857, 'LB': 0.5165, 'p': 0.9775}
+   robustness {}
+== BB6: Neighbouring syllables repeat the consonant more often
+   primary {'LA': 0.054, 'LB': 0.0298, 'p': 0.0005}
+   robustness {}
+== BB7: Initial and final consonant distributions differ more
+   primary {'LA': 0.1234, 'LB': 0.1603, 'p': 0.999}
+   robustness {}
+== BB8: Z-row signs word-final more often
+   primary {'LA': 0.4444, 'LB': 0.3816, 'p': 0.2574}
+   robustness {}
+== BB9: First syllables favour a over later syllables more
+   primary {'LA': 0.0773, 'LB': 0.085, 'p': 0.6422}
+   robustness {}
+== BB10: Q-initial words are entry labels more often
+   primary {'Q_initial': (0.68, 25), 'other': (0.6088, 547), 'p': 0.3108}
+   robustness {}
+== BB11: Final consonants more restricted than initial ones
+   primary {'LA': 0.0454, 'LB': 0.1317, 'p': 0.0075}
+   robustness {}
+
+primary p: {'BB1': 0.0055, 'BB2': 1.0, 'BB3': 0.7496, 'BB5': 0.9775, 'BB6': 0.0005, 'BB7': 0.999, 'BB8': 0.2574, 'BB9': 0.6422, 'BB10': 0.3108, 'BB11': 0.0075}
+survive BH at 5%: ['BB1', 'BB11', 'BB6']

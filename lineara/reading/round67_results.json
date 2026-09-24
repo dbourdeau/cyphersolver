@@ -1,0 +1,103 @@
+{
+ "title": "change over time, and what vessels name",
+ "method": "Round 67 (saturation loop 9): change over time, with Phaistos (Middle Minoan II) against the Late Minoan IB\narchives, and what vessel inscriptions name. BH at 5% across the six.\n\nPhaistos lies a few kilometres from Haghia Triada but its tablets are some two centuries older, so a Phaistos\ndifference that other non-HT sites do not show points to time rather than place.\n\nY1 Phaistos word types occur at Haghia Triada less often than word types of the other non-HT sites.\nY2 Phaistos sign tokens (in words) are signs unattested at Haghia Triada more often than other non-HT sites' tokens.\nY3 Phaistos single-commodity lists write the commodity sign on a larger share of entries than LM IB lists.\nY4 Phaistos lists run largest-first (mean Kendall tau above the within-list shuffle).\nY5 Words on clay vessels are name-slot types more often than descriptor-slot types (share of vessel types found in\n   each slot set, compared with the slot sets' sizes by a label shuffle).\nY6 Phaistos words are shorter (signs per word type) than words of the other non-HT sites.",
+ "primary_p": {
+  "Y1": 0.9740129935032483,
+  "Y2": 0.06196901549225387,
+  "Y3": 0.8610694652673663,
+  "Y4": 0.9025487256371814,
+  "Y5": 0.7636181909045477,
+  "Y6": 0.09045477261369315
+ },
+ "bh_supported": [],
+ "details": {
+  "Y1": {
+   "prediction": "Phaistos words occur at Haghia Triada less often",
+   "primary": {
+    "Phaistos": [
+     0.1154,
+     52
+    ],
+    "other_nonHT": [
+     0.0565,
+     549
+    ],
+    "p": 0.974
+   },
+   "robustness": {},
+   "p": 0.9740129935032483
+  },
+  "Y2": {
+   "prediction": "Phaistos uses signs unattested at Haghia Triada more often",
+   "primary": {
+    "Phaistos": [
+     0.0523,
+     153
+    ],
+    "other_nonHT": [
+     0.0259,
+     1774
+    ],
+    "p": 0.062
+   },
+   "robustness": {},
+   "p": 0.06196901549225387
+  },
+  "Y3": {
+   "prediction": "Phaistos lists repeat the commodity sign more",
+   "primary": {
+    "Phaistos": [
+     0.2254,
+     3
+    ],
+    "LM_IB": [
+     0.3868,
+     53
+    ],
+    "p": 0.8611
+   },
+   "robustness": {},
+   "p": 0.8610694652673663
+  },
+  "Y4": {
+   "prediction": "Phaistos lists run largest-first",
+   "primary": {
+    "mean_tau": -0.275,
+    "null": 0.009,
+    "p": 0.9025,
+    "lists": 5
+   },
+   "robustness": {},
+   "p": 0.9025487256371814
+  },
+  "Y5": {
+   "prediction": "Vessel words are name-slot words more often",
+   "primary": {
+    "diff": -0.0036,
+    "null": -0.0012,
+    "p": 0.7636,
+    "vessel_types": 63,
+    "in_name": 2,
+    "in_desc": 1
+   },
+   "robustness": {},
+   "p": 0.7636181909045477
+  },
+  "Y6": {
+   "prediction": "Phaistos words are shorter",
+   "primary": {
+    "Phaistos": [
+     2.9423,
+     52
+    ],
+    "other_nonHT": [
+     3.2313,
+     549
+    ],
+    "p": 0.0905
+   },
+   "robustness": {},
+   "p": 0.09045477261369315
+  }
+ }
+}

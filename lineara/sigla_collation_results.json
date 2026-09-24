@@ -1,0 +1,71 @@
+{
+  "counts": {
+    "word_groups": 1401,
+    "confident_unmarked_groups": 1135,
+    "multi_sign_groups": 1094,
+    "confident_unmarked_multi_sign_groups": 943,
+    "shared_unique_document_names": 685,
+    "matched_multi_sign_tokens": 824,
+    "matched_confident_clear_tokens": 612
+  },
+  "roles": {
+    "syllabogram": 3448,
+    "logogram": 1196,
+    "fraction": 331,
+    "unknown": 108,
+    "transaction": 61
+  },
+  "rendered_checks": [
+    {
+      "url": "https://sigla.phis.me/document/HT%2013/index-word-0.html",
+      "expected": "ka-u-de-ta",
+      "observed": "xSequence#1ka-u-de-ta(4signs)",
+      "passed": true,
+      "sha256": "45400d1fc8d74747e8b2f3fe52d419fd0babae3f27eb0e91e86b4c500b3024a3"
+    },
+    {
+      "url": "https://sigla.phis.me/document/HT%2013/index-word-7.html",
+      "expected": "ku-ro",
+      "observed": "xSequence#8ku-ro(2signs)",
+      "passed": true,
+      "sha256": "61b632173afaa58cf6e3d201bc3dbcc327d8582c70825f8c1475dc87720510c5"
+    },
+    {
+      "url": "https://sigla.phis.me/document/HT%2013/index-5.html",
+      "expected": "Logogram",
+      "observed": "Logogram",
+      "passed": true,
+      "sha256": "b33c2caaf9427e069338a59d6dbef291b4107ef414fa8a5dfcdc73245b626f70"
+    },
+    {
+      "url": "https://sigla.phis.me/document/HT%2013/index-6.html",
+      "expected": "Transaction sign",
+      "observed": "Transaction sign",
+      "passed": true,
+      "sha256": "aa89b6846a4d41d40b61ed2f7baf5b9cd22f9f680454fc0078c727f4339d717a"
+    },
+    {
+      "url": "https://sigla.phis.me/document/HT%2013/index-9.html",
+      "expected": "Fraction",
+      "observed": "Fraction",
+      "passed": true,
+      "sha256": "0ef30c49f5d25ae72b4f85ad48caa9e90aaea2492ad3e68e1ec6ce738cce7270"
+    },
+    {
+      "url": "https://sigla.phis.me/document/HT%2037/index-17.html",
+      "expected": "unsure-reading",
+      "observed": "na",
+      "passed": true,
+      "sha256": "6384c92fd00ac8e4d15a64c68b03e185e2ee9210ae1a720e6385eccff78a67ed"
+    }
+  ],
+  "field_interpretation": "Nested pair is (zero-based sign position within word, zero-based word index), NOT start/end boundary states. Verified against rendered HT13 word pages and all-group contiguous offsets.",
+  "limitations": [
+    "SigLA sign confidence is not phonetic certainty or word completeness.",
+    "Integer quantity strokes are not included in this SigLA sign inventory; arithmetic still needs numerical source collation.",
+    "Both editions largely derive from GORILA, so their agreement is transcription corroboration, not independent linguistic evidence.",
+    "Exact-name matching omits aliases such as HT123+124a versus HT123a.",
+    "An unmatched sequence is not automatically a source error. Ligatures, variants, function and segmentation can differ."
+  ],
+  "data_license": "SigLA and derivative word records: CC BY-NC-SA 4.0, Salgarella & Castellan; derived datasets are local in ignored data/."
+}

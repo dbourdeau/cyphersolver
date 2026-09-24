@@ -1,0 +1,128 @@
+{
+ "title": "who kept the once-only logogram at Knossos",
+ "method": "Round 65 (saturation loop 7): who kept the once-only logogram at Knossos? BH at 5% across the eight.\n\"Share\" = share of a single-logogram Linear B list's numbered lines that carry the logogram (lower = more economical).\n\nV7  Knossos lists with more Minoan-shaped personal names (stem score) have a lower share (Spearman, negative).\nV8  Knossos scribes with lower mean share have more Minoan-shaped names (Spearman over scribes, negative).\nV9  Knossos lists from the Room of the Chariot Tablets have a lower share than lists from later deposits.\nV10 Knossos lists of women (MUL) have a lower share than lists of men (VIR).\nV13 Knossos lists with a lower share contain words with undeciphered signs more often.\nV14 Share differs by Knossos scribe (scribes with 3+ lists).\nV15 Share differs by Knossos findspot (findspots with 3+ lists).\nV16 At Pylos, personnel lists (VIR, MUL) have a lower share than lists of goods.",
+ "primary_p": {
+  "V7": 0.34293141371725655,
+  "V8": 0.7156568686262748,
+  "V9": 0.8790604697651174,
+  "V10": 0.0004997501249375312,
+  "V13": 0.953023488255872,
+  "V14": 0.0004997501249375312,
+  "V15": 0.02848575712143928,
+  "V16": 0.9975012493753124
+ },
+ "bh_supported": [
+  "V10",
+  "V14"
+ ],
+ "details": {
+  "V7": {
+   "prediction": "Knossos lists with more Minoan names omit the logogram more",
+   "primary": {
+    "spearman": -0.046,
+    "p": 0.3429,
+    "lists": 25
+   },
+   "robustness": {},
+   "p": 0.34293141371725655
+  },
+  "V8": {
+   "prediction": "Scribes who omit the logogram more have more Minoan names",
+   "primary": {
+    "spearman": 0.257,
+    "p": 0.7157,
+    "scribes": 6
+   },
+   "robustness": {},
+   "p": 0.7156568686262748
+  },
+  "V9": {
+   "prediction": "Room of the Chariot Tablets lists omit the logogram more",
+   "primary": {
+    "RCT": [
+     0.9,
+     4
+    ],
+    "later": [
+     0.7,
+     59
+    ],
+    "p": 0.8791
+   },
+   "robustness": {},
+   "p": 0.8790604697651174
+  },
+  "V10": {
+   "prediction": "Knossos lists of women omit the logogram more than lists of men",
+   "primary": {
+    "MUL": [
+     0.4167,
+     18
+    ],
+    "VIR": [
+     0.8158,
+     18
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "V13": {
+   "prediction": "Knossos lists that omit the logogram contain undeciphered-sign words more often",
+   "primary": {
+    "omitting": [
+     0.1579,
+     38
+    ],
+    "full": [
+     0.2857,
+     35
+    ],
+    "p": 0.953
+   },
+   "robustness": {},
+   "p": 0.953023488255872
+  },
+  "V14": {
+   "prediction": "Logogram omission differs by Knossos scribe",
+   "primary": {
+    "between_SS": 1.813,
+    "null": 0.484,
+    "p": 0.0005,
+    "lists": 40,
+    "groups": 6
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "V15": {
+   "prediction": "Logogram omission differs by Knossos findspot",
+   "primary": {
+    "between_SS": 1.394,
+    "null": 0.631,
+    "p": 0.0285,
+    "lists": 43,
+    "groups": 7
+   },
+   "robustness": {},
+   "p": 0.02848575712143928
+  },
+  "V16": {
+   "prediction": "Pylos personnel lists omit the logogram more than goods lists",
+   "primary": {
+    "personnel": [
+     0.9646,
+     33
+    ],
+    "goods": [
+     0.8597,
+     75
+    ],
+    "p": 0.9975
+   },
+   "robustness": {},
+   "p": 0.9975012493753124
+  }
+ }
+}

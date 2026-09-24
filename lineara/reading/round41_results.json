@@ -1,0 +1,160 @@
+{
+ "title": "Linear A list names",
+ "method": "Round 41 (second loop, round 3 of 10): Linear A list names (entry labels).\n\nDD1  Entry labels repeat the consonant of neighbouring syllables more often than other administrative words.\nDD2  Entry labels end on a narrower set of final signs (lower final-sign entropy) than other administrative words.\nDD3  Entry labels ending in -TI stand on personnel (VIR) tablets more often than other entry labels.\nDD4  Entry labels contain unread signs less often than headings.\nDD5  Entry labels on VIR tablets differ in syllable profile from entry labels on tablets of goods.\nDD6  Entry labels with an amount of 1 differ in syllable profile from those with larger amounts.\nDD7  Entry labels recurring on 2+ tablets match Knossos words (exactly or as stem + one syllable) more often than\n     entry labels found once.\nDD8  Entry labels in the same list share syllables more than entry labels from different lists of the same site.\nDD9  Two-sign entry labels stand on VIR tablets more often than longer entry labels.\nDD10 Entry labels matching Knossos words stand on VIR tablets more often than other entry labels.",
+ "primary_p": {
+  "DD1": 0.6636681659170415,
+  "DD2": 0.026486756621689155,
+  "DD3": 0.005497251374312844,
+  "DD4": 0.9865067466266867,
+  "DD5": 0.050474762618690654,
+  "DD6": 0.280359820089955,
+  "DD7": 0.23288355822088955,
+  "DD8": 0.23952095808383234,
+  "DD9": 0.19090454772613694,
+  "DD10": 0.6926536731634183
+ },
+ "bh_supported": [],
+ "details": {
+  "DD1": {
+   "prediction": "Entry labels repeat the consonant of neighbouring syllables more often",
+   "primary": {
+    "entries": 0.0453,
+    "others": 0.0509,
+    "p": 0.6637,
+    "n": [
+     358,
+     222
+    ]
+   },
+   "robustness": {},
+   "p": 0.6636681659170415
+  },
+  "DD2": {
+   "prediction": "Entry labels end on a narrower set of final signs",
+   "primary": {
+    "entries": 3.6653,
+    "others": 3.7318,
+    "p": 0.0265,
+    "n": [
+     358,
+     222
+    ]
+   },
+   "robustness": {},
+   "p": 0.026486756621689155
+  },
+  "DD3": {
+   "prediction": "Entry labels ending in -TI stand on VIR tablets more often",
+   "primary": {
+    "TI_on_VIR": [
+     0.3571,
+     28
+    ],
+    "other_on_VIR": [
+     0.1415,
+     530
+    ],
+    "p": 0.0055
+   },
+   "robustness": {},
+   "p": 0.005497251374312844
+  },
+  "DD4": {
+   "prediction": "Entry labels contain unread signs less often than headings",
+   "primary": {
+    "entries": 0.2025,
+    "headings": 0.1379,
+    "p": 0.9865
+   },
+   "robustness": {},
+   "p": 0.9865067466266867
+  },
+  "DD5": {
+   "prediction": "Entry labels on VIR tablets differ in syllable profile from those on tablets of goods",
+   "primary": {
+    "jsd": 0.1259,
+    "null": 0.0978,
+    "p": 0.0505,
+    "n": [
+     49,
+     297
+    ]
+   },
+   "robustness": {},
+   "p": 0.050474762618690654
+  },
+  "DD6": {
+   "prediction": "Entry labels with amount 1 differ in syllable profile from those with larger amounts",
+   "primary": {
+    "jsd": 0.0684,
+    "null": 0.0623,
+    "p": 0.2804,
+    "n": [
+     89,
+     244
+    ]
+   },
+   "robustness": {},
+   "p": 0.280359820089955
+  },
+  "DD7": {
+   "prediction": "Recurring entry labels match Knossos words more often than one-off labels",
+   "primary": {
+    "recurring": [
+     0.1556,
+     45
+    ],
+    "once": [
+     0.1086,
+     313
+    ],
+    "p": 0.2329
+   },
+   "robustness": {},
+   "p": 0.23288355822088955
+  },
+  "DD8": {
+   "prediction": "Entry labels in the same list share syllables more than labels from other lists of the site",
+   "primary": {
+    "mean_jaccard": 0.0499,
+    "null": 0.0477,
+    "p": 0.2395,
+    "lists": 57
+   },
+   "robustness": {},
+   "p": 0.23952095808383234
+  },
+  "DD9": {
+   "prediction": "Two-sign entry labels stand on VIR tablets more often",
+   "primary": {
+    "two_sign_on_VIR": [
+     0.1722,
+     209
+    ],
+    "longer_on_VIR": [
+     0.1404,
+     349
+    ],
+    "p": 0.1909
+   },
+   "robustness": {},
+   "p": 0.19090454772613694
+  },
+  "DD10": {
+   "prediction": "Entry labels matching Knossos words stand on VIR tablets more often",
+   "primary": {
+    "matched_on_VIR": [
+     0.1273,
+     55
+    ],
+    "other_on_VIR": [
+     0.144,
+     389
+    ],
+    "p": 0.6927
+   },
+   "robustness": {},
+   "p": 0.6926536731634183
+  }
+ }
+}

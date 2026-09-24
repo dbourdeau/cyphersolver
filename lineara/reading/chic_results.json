@@ -1,0 +1,215 @@
+{
+ "method": "Cretan Hieroglyphic sign groups against Linear A words.\n\nCretan Hieroglyphic (CHIC, Olivier and Godart 1996) was written on Crete before and beside Linear A. Its\nsign groups are read here with values carried over from Linear A by *shape*, as tabulated in CHIC p. 19 and\nset out in J. Younger's Hieroglyphic grid 1 (archived pages, 2007): certain and probable identifications only.\nYounger's own grid 2, which partly rests on proposed word matches, is used only as a sensitivity check,\nsince matches found with it would be partly circular.\n\nSign groups: every entry of Younger's Hieroglyphic Lexicon (archived 2012), in CHIC sign numbers. A group is\nreadable if every sign has a value; readable groups of 2+ and 3+ signs are matched exactly against Linear A\nword types. Null: Linear A sign values shuffled within frequency bins (as soundvalues.py), 5,000 runs.",
+ "lexicon_groups": 365,
+ "tests": {
+  "grid 1 certain": {
+   "values": 13,
+   "readable_groups_all": 15,
+   "2+ signs": {
+    "readable_groups": 15,
+    "matches": [
+     "A-JA",
+     "RU-SA",
+     "SA-RO"
+    ],
+    "null_mean": 2.134,
+    "p_ge": 0.3657
+   },
+   "3+ signs": {
+    "readable_groups": 4,
+    "matches": [],
+    "null_mean": 0.022,
+    "p_ge": 1.0
+   },
+   "readable_sample": [
+    "SA-PA3-JA-RE",
+    "SA-RO",
+    "A-SA",
+    "A-SA-RE",
+    "A-TE",
+    "A-JA",
+    "A-RO-JA",
+    "A-RO",
+    "RO-RE-SA",
+    "RO-JA",
+    "RU-SA",
+    "RU-RE",
+    "RU-PU",
+    "RO-PU",
+    "RE-WA"
+   ]
+  },
+  "grid 1 certain + probable": {
+   "values": 21,
+   "readable_groups_all": 20,
+   "2+ signs": {
+    "readable_groups": 20,
+    "matches": [
+     "A-JA",
+     "RU-SA",
+     "SA-RO"
+    ],
+    "null_mean": 2.181,
+    "p_ge": 0.3769
+   },
+   "3+ signs": {
+    "readable_groups": 6,
+    "matches": [],
+    "null_mean": 0.023,
+    "p_ge": 1.0
+   },
+   "readable_sample": [
+    "NWA-WA",
+    "NWA-NA-MU",
+    "NWA-RO",
+    "SA-PA3-JA-RE",
+    "SA-RO",
+    "A-SA",
+    "A-SA-RE",
+    "A-TE",
+    "A-JA",
+    "A-RO-JA",
+    "A-RO",
+    "RO-RE-SA",
+    "RO-JA",
+    "RO-ZE-SA",
+    "RU-SA",
+    "RU-RE",
+    "RU-PU",
+    "RO-PU",
+    "RE-WA",
+    "WA-NWA"
+   ]
+  },
+  "grid 1 all (incl. possible)": {
+   "values": 28,
+   "readable_groups_all": 28,
+   "2+ signs": {
+    "readable_groups": 28,
+    "matches": [
+     "A-JA",
+     "RU-SA",
+     "SA-RO",
+     "TI-SA"
+    ],
+    "null_mean": 2.747,
+    "p_ge": 0.2839
+   },
+   "3+ signs": {
+    "readable_groups": 6,
+    "matches": [],
+    "null_mean": 0.022,
+    "p_ge": 1.0
+   },
+   "readable_sample": [
+    "NWA-WA",
+    "NWA-NA-MU",
+    "NWA-RO",
+    "MU-TI",
+    "AU-PA3",
+    "AU-TI",
+    "SA-PA3-JA-RE",
+    "SA-RO",
+    "NI-TI",
+    "A-AU",
+    "A-SA",
+    "A-SA-RE",
+    "A-TE",
+    "A-JA",
+    "A-RO-JA",
+    "A-RO",
+    "SO-RO",
+    "TI-SA",
+    "RO-RE-SA",
+    "RO-JA",
+    "RO-ZE-SA",
+    "RU-SA",
+    "RU-RE",
+    "RU-PU",
+    "E-JA",
+    "RO-PU",
+    "RE-WA",
+    "WA-NWA"
+   ]
+  },
+  "grid 1 + Younger grid 2 (partly circular)": {
+   "values": 62,
+   "readable_groups_all": 246,
+   "2+ signs": {
+    "readable_groups": 224,
+    "matches": [
+     "A-DE",
+     "A-JA",
+     "A-KI-RO",
+     "A-SA-SA-RA",
+     "I-TI",
+     "KU-RE",
+     "KU-RO",
+     "PA-RE",
+     "RU-JA",
+     "RU-SA",
+     "SA-RA",
+     "SA-RI",
+     "SA-RO",
+     "SA-RU",
+     "SI-RU",
+     "TE-RI",
+     "TI-SA"
+    ],
+    "null_mean": 11.098,
+    "p_ge": 0.0414
+   },
+   "3+ signs": {
+    "readable_groups": 140,
+    "matches": [
+     "A-KI-RO",
+     "A-SA-SA-RA"
+    ],
+    "null_mean": 0.456,
+    "p_ge": 0.0748
+   },
+   "readable_sample": [
+    "KO-RO",
+    "NWA-WA",
+    "NWA-KI-RU",
+    "NWA-NA-MU",
+    "NWA-RO",
+    "MI-RI-NWA-TO",
+    "A-SA-MU",
+    "A-SA-SA",
+    "A-JA-AU",
+    "A-KU-MU",
+    "A-KU-RO",
+    "A-RO",
+    "A-SO",
+    "A-RU-MU-AI",
+    "RI-RE",
+    "RI-RU-KU",
+    "SI-RI",
+    "SI-JA-KI",
+    "SI-JA-MA",
+    "SI-KU",
+    "SI-RU-SI",
+    "SI-RU",
+    "MU-KI-NA-RA",
+    "MU-TI",
+    "MU-TI",
+    "I-TI",
+    "KI-SA-KU",
+    "KI-JA-MI-KI",
+    "KI-DE",
+    "KI-KU",
+    "KI-KI",
+    "AU-PA3",
+    "AU-TI",
+    "RA-SO-RA-SO",
+    "SA-MU-RO",
+    "SA-MU-RO",
+    "SA-SA-RA",
+    "SA-SI",
+    "SA-PA3-JA-RE",
+    "SA-QE-RO"
+   ]
+  }
+ }
+}

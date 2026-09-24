@@ -1,0 +1,38 @@
+== Linear A
+  row q        mean +0.207   qa+0.26* qe+0.16*
+  row (vowel)  mean +0.178   a+0.28* u+0.24* o+0.23* i+0.21* e-0.07
+  row n        mean +0.157   na+0.21* ne+0.17 ni+0.13* nu+0.12*
+  row r        mean +0.117   ra+0.15* ro+0.15* re+0.13 ri+0.08* ru+0.07
+  row w        mean +0.085   wa+0.09* wi+0.08
+  row p        mean +0.066   pa+0.08 pi+0.06 pu+0.06
+  row d        mean +0.060   da+0.09 du+0.09 di+0.05 de+0.01
+  row j        mean +0.049   je+0.11 ju+0.11 ja-0.07
+  row k        mean +0.029   ko+0.09 ku+0.08 ka+0.06 ki+0.01 ke-0.10
+  row m        mean +0.022   mu+0.09 me+0.08 mi-0.02 ma-0.05
+  row t        mean +0.016   te+0.04 ti+0.03 to+0.01 ta+0.01 tu-0.00
+  row s        mean +0.015   su+0.03 se+0.01 si+0.01 sa+0.01
+  row z        mean -0.099   za-0.06 zu-0.14
+  weakest fit to own row: [('zu', -0.135), ('ke', -0.105), ('e', -0.074), ('ja', -0.073), ('za', -0.062), ('ma', -0.049), ('mi', -0.024), ('tu', -0.003)]
+== Linear B
+  row p        mean +0.186   pe+0.25* pu+0.23* pa+0.22* po+0.20* pi+0.02
+  row k        mean +0.145   ku+0.21 ka+0.17* ki+0.16 ke+0.16* ko+0.02
+  row j        mean +0.144   jo+0.21 ja+0.20 je+0.02
+  row (vowel)  mean +0.072   a+0.14 e+0.13 o+0.10 i+0.05 u-0.06
+  row d        mean +0.062   du+0.12 di+0.12 da+0.10 do+0.09 de-0.13
+  row w        mean +0.036   we+0.09 wo+0.07 wa+0.02 wi-0.04
+  row n        mean +0.034   no+0.09 ne+0.04 na+0.03 ni+0.02 nu-0.00
+  row z        mean +0.028   zo+0.09 za+0.05 ze-0.06
+  row t        mean +0.020   ta+0.06 to+0.05 te+0.04 ti+0.01 tu-0.06
+  row q        mean +0.005   qo+0.05 qe-0.01 qa-0.01 qi-0.01
+  row m        mean +0.002   mu+0.08 me+0.04 mi+0.04 ma+0.03 mo-0.17
+  row r        mean -0.009   ri+0.03 re+0.03 ro-0.02 ra-0.03 ru-0.06
+  row s        mean -0.070   se-0.04 si-0.05 sa-0.07 so-0.08 su-0.11
+  weakest fit to own row: [('mo', -0.169), ('de', -0.126), ('su', -0.112), ('so', -0.078), ('sa', -0.075), ('tu', -0.061), ('ru', -0.058), ('ze', -0.057)]
+== nearest consonant rows for the misfits (Linear A, exploratory)
+  zu [('d', 0.77), ('t', 0.756), ('p', 0.753), ('k', 0.749)]
+  za [('n', 0.842), ('j', 0.798), ('r', 0.786), ('m', 0.763)]
+  ke [('n', 0.845), ('j', 0.834), ('r', 0.813), ('t', 0.811)]
+  e [('t', 0.892), ('d', 0.868), ('k', 0.862), ('w', 0.86)]
+  ja [('k', 0.953), ('d', 0.94), ('p', 0.93), ('s', 0.922)]
+  ma [('k', 0.901), ('d', 0.892), ('p', 0.89), ('s', 0.865)]
+  mi [('s', 0.892), ('t', 0.891), ('p', 0.881), ('d', 0.871)]

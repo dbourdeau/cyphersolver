@@ -1,0 +1,48 @@
+== F1 dental i~e, u~o alternations: i~e and u~o alternations occur after dentals more than other vowel alternations do
+   primary {'dental_share_ie_uo': 0.905, 'dental_share_other': 0.658, 'p': 0.022, 'alternations': [21, 114]}
+   robustness {'i~e / u~o by consonant': {'r/ei': 4, 's/ei': 3, 'n/ei': 1, 't/ou': 1, 'd/ei': 3, 'r/ou': 3, 't/ei': 4, 'p/ou': 1, 'k/ei': 1}}
+== F2 matches under the rule: Collapsing dental e/o to i/u gains more Linear A - Knossos name matches than collapsing non-dental ones
+   primary {'gain_dental': 8, 'gain_nondental': 2, 'bootstrap p': 0.041}
+   robustness {'new matches under the dental collapse': ['A-TI-RU ~ a-ti-ro', 'DE-SU ~ di-so', 'DI-DE-RU ~ di-de-ro', 'KA-SA-RU ~ ka-sa-ro', 'QA-QA-RU ~ qa-qa-ro', 'RI-KA-TA ~ re-ka-ta', 'SA-MA-RO ~ sa-ma-ru', 'SI-DU ~ se-do'], 'control, Pylos names': {'dental': 1, 'nondental': 2}}
+== F3 rule over time: The coronal rule is stronger in Late Minoan than Middle Minoan texts
+   primary {'logOR_LM': 0.647, 'logOR_MM': 0.552, 'p': 0.4965, 'words': [462, 20]}
+   robustness {}
+== F4 rule in religious texts: The coronal rule holds in the religious texts
+   primary {'logOR_religious': 0.626, 'logOR_LB': -0.246, 'p': 0.001, 'words': 190}
+   robustness {'formula removed': {'logOR': 0.75, 'p': 0.001}}
+== F5 spelling variants across scribes: Near-identical spellings come from different scribes more than random word pairs do
+   primary {'share_disjoint': 0.944, 'null_mean': 0.928, 'p': 0.5095, 'pairs': 36}
+   robustness {'examples (different scribes)': ['A-DU-RE / A-TA-RE', 'A-KA-RU / A-TI-RU', 'A-MA-JA / A-SE-JA', 'A-MA-JA / A-SU-JA', 'A-MI-TA / SI-MI-TA', 'A-SE-JA / A-SU-JA', 'A-SE-JA / PA-SE-JA', 'A-TA-RE / DA-TA-RE', 'DI-NA-RO / DI-NA-U', 'I-RU-JA / I-TA-JA', 'KI-DA-RO / KI-DA-TA', 'KI-DA-TA / TI-DA-TA', 'KI-DI-NI / WA-DI-NI', 'KI-RE-TA2 / KI-RI-TA2', 'KU-MA-JU / KU-MA-RO']}
+== F6 even amounts by scribe: The preference for even amounts differs by scribe
+   primary {'chi2': 41.83, 'null_mean': 21.19, 'p': 0.003, 'entries': 643}
+   robustness {'even share by scribe': {'HT Scribe 21': 0.5, 'HT Scribe 1': 0.52, 'HT Scribe 11': 0.41, 'HT Scribe 2': 0.51, 'HT Scribe 24': 0.64, 'HT Scribe 8': 0.33, 'HT Scribe 14': 0.64, 'HT Scribe 3': 0.46, 'HT Scribe 13': 0.53, 'HT Scribe 12': 0.93, 'HT Scribe 9': 0.35, 'HT Scribe 6': 0.67, 'HT Scribe 7': 0.42, 'HT Scribe 5': 0.5, 'HT Scribe 4': 0.33, 'KH Scribe 1': 0.5, 'KH Scribe 2': 0.45, 'ZA Scribe 1': 0.62, 'ZA Scribe 2': 0.54, 'ZA Scribe 4': 0.35, 'ZA Scribe 5': 0.45, 'ARKH Scribe 1': 0.67}}
+== F7 Knossos names by series: Minoan-shaped Knossos names cluster by tablet series
+   primary {'between_SS': 39.849, 'null_mean': 27.72, 'p': 0.0519, 'names': 570}
+   robustness {'most Minoan series': [(0.561, 'Nc', 6), (0.493, 'Dg', 9), (0.31, 'Vs', 10), (0.275, 'Dl', 13), (0.19, 'Ln', 9), (0.155, 'Df', 10)], 'least Minoan series': [(-0.439, 'Dv', 24), (-0.784, 'B', 13), (-0.826, 'U', 9), (-0.961, 'Od', 12)]}
+== F8 Pylos names by series: Minoan-shaped Pylos names cluster by tablet series
+   primary {'between_SS': 6.816, 'null_mean': 9.345, 'p': 0.7203, 'names': 298}
+   robustness {'most Minoan series': [(-0.007, 'Ub', 5), (-0.094, 'Eb', 10), (-0.101, 'Qa', 5), (-0.415, 'Vn', 10), (-0.429, 'Ep', 10), (-0.497, 'Jn', 78)], 'least Minoan series': [(-0.67, 'Aq', 6), (-0.675, 'Fn', 12), (-0.875, 'Sa', 5), (-0.883, 'Ea', 11)]}
+== F9 place dissimilation: Neighbouring syllables avoid consonants of the same place of articulation
+   primary {'same_place_share': 0.4717, 'null_mean': 0.5071, 'ratio': 0.93, 'p': 0.004}
+   robustness {'Linear B control': {'share': 0.2977, 'null_mean': 0.415, 'ratio': 0.717, 'p': 0.0033}}
+== F10 vowel predicts next consonant: A syllable's vowel predicts the next consonant row more than in Linear B
+   primary {'nmi_LA': 0.0261, 'nmi_LB_subsampled': 0.0482, 'p': 1.0}
+   robustness {'Linear A with signs shuffled': 0.0071}
+== F11 left context recovers the row: The preceding sign alone recovers a hidden sign's consonant row
+   primary {'accuracy': 0.062, 'null_mean': 0.065, 'p': 0.5615, 'signs': 48}
+   robustness {'Linear B control accuracy': 0.441}
+== F12 doubles on neighbouring lines: Doubled amounts stand on neighbouring lines more than chance
+   primary {'adjacent_doubles': 91, 'null_mean': 95.18, 'p': 0.7532, 'lists': 178}
+   robustness {}
+== F13 Minoan names and undeciphered signs by scribe: Knossos scribes with more Minoan-shaped names use more undeciphered signs
+   primary {'spearman': 0.484, 'p': 0.0098, 'scribes': 23}
+   robustness {}
+== F14 errors of one entry: When a total does not balance, the gap equals an entry amount more than chance
+   primary {'hits': '0/5', 'null_mean': 0.6, 'p': 1.0}
+   robustness {'totals': ['HT9a: gap 3/4', 'HT94a: gap 1', 'HT118: gap 20', 'HT119: gap 1', 'ZA15b: gap 35/2']}
+== F15 Pylos women's-work names: Pylos names on Aa/Ab/Ad tablets are more Minoan-shaped (stem-scored) than other Pylos names
+   primary {'auc': 0.745, 'null_mean': 0.49, 'p': 0.2458, 'n': [1, 337]}
+   robustness {}
+
+primary p: {'F1': 0.022, 'F2': 0.041, 'F3': 0.4965, 'F4': 0.001, 'F5': 0.5095, 'F6': 0.003, 'F7': 0.0519, 'F8': 0.7203, 'F9': 0.004, 'F10': 1.0, 'F11': 0.5615, 'F12': 0.7532, 'F13': 0.0098, 'F14': 1.0, 'F15': 0.2458}
+survive BH at 5%: ['F4', 'F6', 'F9', 'F13']

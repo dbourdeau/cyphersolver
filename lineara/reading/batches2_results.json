@@ -1,0 +1,232 @@
+{
+ "method": "Twenty-five further hypotheses in five batches, following up the strongest leads of batches.py.\n\nSame conventions: a null for each test, one-sided p-values, and Benjamini-Hochberg at a 5% false-discovery rate\nacross the twenty-five. Helpers and data come from batches.py.",
+ "tested": 25,
+ "bh_supported": 13,
+ "results": [
+  {
+   "id": "K1",
+   "batch": "K Knossos trace",
+   "hypothesis": "At Knossos, words with undeciphered signs are more often personal names",
+   "effect": 0.0159,
+   "p": 0.4113,
+   "note": "36/105 vs 637/1948",
+   "bh_supported": false
+  },
+  {
+   "id": "K2",
+   "batch": "K Knossos trace",
+   "hypothesis": "Knossos-only words are more Linear A-like than words shared by Knossos and Pylos",
+   "effect": 0.2165,
+   "p": 0.0005,
+   "note": "1948 vs 365",
+   "bh_supported": true
+  },
+  {
+   "id": "K3",
+   "batch": "K Knossos trace",
+   "hypothesis": "At Knossos, names follow Linear A syllable rates more closely than common words",
+   "effect": 0.259,
+   "p": 0.002,
+   "note": "673 names, 284 common words",
+   "bh_supported": true
+  },
+  {
+   "id": "K4",
+   "batch": "K Knossos trace",
+   "hypothesis": "Cretan place names in Linear B are more Linear A-like than mainland place names",
+   "effect": 0.2611,
+   "p": 0.0055,
+   "note": "70 vs 124",
+   "bh_supported": true
+  },
+  {
+   "id": "K5",
+   "batch": "K Knossos trace",
+   "hypothesis": "Knossos adjectives in -jo/-ja are built on Linear A words (stem + suffix)",
+   "effect": 0.0437,
+   "p": 0.5934,
+   "note": "366 -jo/-ja words",
+   "bh_supported": false
+  },
+  {
+   "id": "L1",
+   "batch": "L bookkeeping",
+   "hypothesis": "Largest-first listing holds outside Haghia Triada too",
+   "effect": 0.052,
+   "p": 0.2369,
+   "note": "39 non-HT lists",
+   "bh_supported": false
+  },
+  {
+   "id": "L2",
+   "batch": "L bookkeeping",
+   "hypothesis": "The even-amount preference is stronger for grain than for men",
+   "effect": -0.0972,
+   "p": 0.8716,
+   "note": "GRA 25/36, VIR 19/24",
+   "bh_supported": false
+  },
+  {
+   "id": "L3",
+   "batch": "L bookkeeping",
+   "hypothesis": "Amounts on the same tablet are doubles of each other more than chance",
+   "effect": 161,
+   "p": 0.0145,
+   "note": "null mean 132.5",
+   "bh_supported": true
+  },
+  {
+   "id": "L4",
+   "batch": "L bookkeeping",
+   "hypothesis": "KI-RO entries are mostly single units (1)",
+   "effect": 0.5564,
+   "p": 0.0005,
+   "note": "25/32 vs 277/1232",
+   "bh_supported": true
+  },
+  {
+   "id": "L5",
+   "batch": "L bookkeeping",
+   "hypothesis": "Liquids (wine, oil) take fractions more often than dry goods",
+   "effect": -0.0212,
+   "p": 0.7446,
+   "note": "liquid 106/302, dry 147/395",
+   "bh_supported": false
+  },
+  {
+   "id": "M1",
+   "batch": "M word structure",
+   "hypothesis": "Words ending -TI are entry labels (names) rather than headings",
+   "effect": 0.0334,
+   "p": 0.0525,
+   "note": "",
+   "bh_supported": false
+  },
+  {
+   "id": "M2",
+   "batch": "M word structure",
+   "hypothesis": "Words beginning A- are headings rather than entry labels",
+   "effect": 0.1093,
+   "p": 0.0005,
+   "note": "35/174 vs 44/479",
+   "bh_supported": true
+  },
+  {
+   "id": "M3",
+   "batch": "M word structure",
+   "hypothesis": "Words ending -JA belong to the religious register",
+   "effect": 0.0394,
+   "p": 0.0125,
+   "note": "",
+   "bh_supported": true
+  },
+  {
+   "id": "M4",
+   "batch": "M word structure",
+   "hypothesis": "The first and last syllables of a word share their vowel more than chance",
+   "effect": 0.256,
+   "p": 0.7666,
+   "note": "",
+   "bh_supported": false
+  },
+  {
+   "id": "M5",
+   "batch": "M word structure",
+   "hypothesis": "Long words are compounds of attested shorter words more than chance",
+   "effect": 0.075,
+   "p": 0.1996,
+   "note": "201 long words",
+   "bh_supported": false
+  },
+  {
+   "id": "N1",
+   "batch": "N sealings and documents",
+   "hypothesis": "Roundels and nodules carry different signs",
+   "effect": 473.18,
+   "p": 0.0005,
+   "note": "27 roundel, 600 nodule signs",
+   "bh_supported": true
+  },
+  {
+   "id": "N2",
+   "batch": "N sealings and documents",
+   "hypothesis": "Sealing signs are the first signs of the commonest administrative words",
+   "effect": 0.512,
+   "p": 0.049,
+   "note": "heads ['a', 'da', 'di', 'je', 'ka', 'ki', 'ku', 'ma', 'mi', 'pa', 'qe', 'sa', 'ta']",
+   "bh_supported": false
+  },
+  {
+   "id": "N3",
+   "batch": "N sealings and documents",
+   "hypothesis": "Religious inscriptions use word dividers more than tablets",
+   "effect": 0.2509,
+   "p": 0.0035,
+   "note": "49 religious, 186 administrative",
+   "bh_supported": true
+  },
+  {
+   "id": "N4",
+   "batch": "N sealings and documents",
+   "hypothesis": "After a KU-RO total, the next line opens with a new commodity",
+   "effect": 0.0031,
+   "p": 0.5622,
+   "note": "5/29 vs 152/898",
+   "bh_supported": false
+  },
+  {
+   "id": "N5",
+   "batch": "N sealings and documents",
+   "hypothesis": "Peak-sanctuary inscriptions share vocabulary with each other more than with other religious objects",
+   "effect": 0.0638,
+   "p": 0.0005,
+   "note": "9 sanctuary sites of 23",
+   "bh_supported": true
+  },
+  {
+   "id": "O1",
+   "batch": "O Minoan stems in Linear B",
+   "hypothesis": "Knossos words are Linear A words plus one final syllable more often than Pylos words",
+   "effect": 0.0436,
+   "p": 0.0005,
+   "note": "KN 0.0775, PY 0.0339",
+   "bh_supported": true
+  },
+  {
+   "id": "O2",
+   "batch": "O Minoan stems in Linear B",
+   "hypothesis": "Knossos names contain Linear A words as stems (plus a Greek ending) beyond chance",
+   "effect": 0.0938,
+   "p": 0.007,
+   "note": "673 names",
+   "bh_supported": true
+  },
+  {
+   "id": "O3",
+   "batch": "O Minoan stems in Linear B",
+   "hypothesis": "Cretan place names in Linear B recur in Linear A (as words or stems) more than mainland ones",
+   "effect": 0.0641,
+   "p": 0.1124,
+   "note": "9/70 vs 8/124",
+   "bh_supported": false
+  },
+  {
+   "id": "O4",
+   "batch": "O Minoan stems in Linear B",
+   "hypothesis": "Linear A and Linear B use their shared syllables at correlated rates",
+   "effect": 0.432,
+   "p": 0.001,
+   "note": "52 shared syllables",
+   "bh_supported": true
+  },
+  {
+   "id": "O5",
+   "batch": "O Minoan stems in Linear B",
+   "hypothesis": "Pylos names end in -o (Greek o-stems) more often than Knossos names",
+   "effect": -0.1127,
+   "p": 1.0,
+   "note": "KN 0.63, PY 0.517",
+   "bh_supported": false
+  }
+ ]
+}

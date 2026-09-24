@@ -1,0 +1,151 @@
+{
+ "title": "the syntax of an entry",
+ "method": "Round 57: the syntax of an entry (the order of word, commodity sign and number). Benjamini-Hochberg at 5% across\nthe nine.\n\nSY1  In entries with both a word and a commodity sign, the word comes first more often than not.\nSY2  Word-first versus commodity-first order differs by site.\nSY3  It differs by scribe.\nSY4  Commodity-first entries are the first entry of their tablet more often than word-first entries.\nSY5  A number follows a commodity sign directly more often than it follows a word directly (per preceding token).\nSY6  Linear A puts the word first less often than Linear B does.\nSY8  Heading words are followed directly by a commodity sign more often than entry labels.\nSY9  Transaction terms (SA-RA2, KU-PA, A-DU, KA-PA, DA-RE) are followed directly by a commodity sign more often\n     than other words.\nSY10 Entry labels are followed directly by a number more often than heading words.",
+ "primary_p": {
+  "SY1": 1.0579803405652369e-43,
+  "SY2": 0.17341329335332334,
+  "SY3": 0.09695152423788106,
+  "SY4": 1.0,
+  "SY5": 0.0004997501249375312,
+  "SY6": 1.0,
+  "SY8": 1.0,
+  "SY9": 0.0004997501249375312,
+  "SY10": 0.0004997501249375312
+ },
+ "bh_supported": [
+  "SY1",
+  "SY10",
+  "SY5",
+  "SY9"
+ ],
+ "details": {
+  "SY1": {
+   "prediction": "The word precedes the commodity sign more often than not",
+   "primary": {
+    "word_first": "149/150",
+    "p": 0.0
+   },
+   "robustness": {},
+   "p": 1.0579803405652369e-43
+  },
+  "SY2": {
+   "prediction": "Entry order differs by site",
+   "primary": {
+    "chi2": 11.1,
+    "null": 4.1,
+    "p": 0.1734
+   },
+   "robustness": {
+    "word-first share by site": {
+     "Haghia Triada": 1.0,
+     "Khania": 1.0,
+     "Tylissos": 1.0,
+     "Zakros": 0.92,
+     "Arkhalkhori": 1.0
+    }
+   },
+   "p": 0.17341329335332334
+  },
+  "SY3": {
+   "prediction": "Entry order differs by scribe",
+   "primary": {
+    "chi2": 9.3,
+    "null": 6.1,
+    "p": 0.097,
+    "entries": 61
+   },
+   "robustness": {},
+   "p": 0.09695152423788106
+  },
+  "SY4": {
+   "prediction": "Commodity-first entries are first entries more often",
+   "primary": {
+    "commodity_first_in_first_entry": [
+     0.0,
+     1
+    ],
+    "word_first_in_first_entry": [
+     0.3624,
+     149
+    ],
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "SY5": {
+   "prediction": "A number follows a commodity sign more often than a word",
+   "primary": {
+    "after_commodity": [
+     0.6916,
+     454
+    ],
+    "after_word": [
+     0.5346,
+     911
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "SY6": {
+   "prediction": "Linear A puts the word first less often than Linear B",
+   "primary": {
+    "LA": "149/150",
+    "LB": "1340/1775",
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "SY8": {
+   "prediction": "Heading words are followed by a commodity sign more often than entry labels",
+   "primary": {
+    "heading": [
+     0.0301,
+     166
+    ],
+    "entry_label": [
+     0.2159,
+     593
+    ],
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "SY9": {
+   "prediction": "Transaction terms are followed by a commodity sign more often than other words",
+   "primary": {
+    "terms": [
+     0.5217,
+     46
+    ],
+    "other_words": [
+     0.1353,
+     865
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "SY10": {
+   "prediction": "Entry labels are followed by a number more often than headings",
+   "primary": {
+    "entry_label": [
+     0.7201,
+     593
+    ],
+    "heading": [
+     0.0663,
+     166
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  }
+ }
+}

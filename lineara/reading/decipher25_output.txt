@@ -1,0 +1,78 @@
+== D1 coronal e/o in Linear A: Linear A e/o prefer coronals more than Linear B e/o do
+   primary {'logOR_target': 0.719, 'logOR_comparison': -0.246, 'p': 0.001, 'null_mean_diff': -0.001}
+   robustness {'comparison': 'Linear B word types'}
+== D2 coronal e/o in Pre-Greek: Pre-Greek stems prefer e/o after coronals more than Greek stems
+   primary {'logOR_target': -0.334, 'logOR_comparison': 0.017, 'p': 0.996, 'null_mean_diff': 0.003}
+   robustness {'comparison': 'length-matched ordinary Greek stems'}
+== D3 coronal e/o in Knossos names: Knossos names prefer e/o after coronals more than Pylos names (ending removed)
+   primary {'logOR_target': -0.399, 'logOR_comparison': -0.334, 'p': 0.6284, 'null_mean_diff': -0.002}
+   robustness {'comparison': 'Pylos names'}
+== D4 same conditioning as Pre-Greek: Linear A e/o share by consonant correlates with Pre-Greek more than with Greek
+   primary {'rho_LA_PreGreek': -0.619, 'rho_LA_Greek': 0.0, 'p': 0.982, 'consonants': ['d', 'k', 'm', 'n', 'p', 'r', 's', 't']}
+   robustness {'by consonant (LA, Pre-Greek, Greek)': {'d': (0.12, 0.37, 0.56), 'k': (0.11, 0.43, 0.5), 'm': (0.14, 0.25, 0.54), 'n': (0.17, 0.38, 0.56), 'p': (0.06, 0.43, 0.56), 'r': (0.37, 0.32, 0.51), 's': (0.19, 0.25, 0.48), 't': (0.28, 0.37, 0.57)}}
+== D5 -TE suffix: -TE is a suffix: X-TE words have an attested bare stem X more often than chance
+   primary {'share_with_stem': 0.176, 'null_mean': 0.227, 'p': 0.8282, 'words': 34}
+   robustness {'pairs (X-TE with X attested)': ['A-DI-KI-TE-TE', 'A-TA-NA-TE', 'DU-RI-TE', 'I-JA-TE', 'KU-NI-TE', 'SI-RU-TE'], '-TE forms in religious register': 3, 'their bare stems in religious register': 3}
+== D6 -JA suffix: -JA is a suffix: X-JA words have an attested bare stem X more often than chance
+   primary {'share_with_stem': 0.259, 'null_mean': 0.228, 'p': 0.4376, 'words': 27}
+   robustness {'pairs (X-JA with X attested)': ['A-MA-JA', 'A-RI-JA', 'A-SE-JA', 'JA-SA-JA', 'KU-PA-JA', 'PA-SE-JA', 'PU2-RE-JA']}
+== D7 -NE suffix: -NE is a suffix: X-NE words have an attested bare stem X more often than chance
+   primary {'share_with_stem': 0.167, 'null_mean': 0.226, 'p': 0.8052, 'words': 18}
+   robustness {'pairs (X-NE with X attested)': ['PA-RA-NE', 'PA-TA-NE', 'QE-TU-NE']}
+== D8 s/t alternation: Words differing in one consonant alternate s/t more than chance
+   primary {'s_t_pairs': 13, 'expected': 3.61, 'p': 0.001, 'consonant_pairs': 402}
+   robustness {'Linear B control': {'pairs': 88, 'expected': 30.27, 'p': 0.001}, 'commonest alternations in Linear A': [('ks', 15), ('kt', 15), ('dr', 14), ('rt', 14), ('st', 13), ('dk', 13), ('dj', 12), ('pt', 12)]}
+== D9 z/s alternation: Words differing in one consonant alternate z/s more than chance
+   primary {'z_s_pairs': 2, 'expected': 0.42, 'p': 0.0699}
+   robustness {'Linear B control': {'pairs': 9, 'expected': 1.61, 'p': 0.001}}
+== D10 sonorant rows cohere: Sonorant consonant rows cohere more than obstruent rows
+   primary {'diff': 0.03, 'p': 0.2877}
+   robustness {'rows': {'d': 0.063, 'k': 0.038, 's': 0.006, 'r': 0.095, 't': 0.002, 'n': 0.133, 'm': 0.002, 'z': -0.121, 'j': 0.029, 'p': 0.057, 'w': 0.087, 'q': 0.229}, 'Linear B control': {'diff': -0.018, 'p': 0.6443}}
+== D11 doublet signs by position: RA/RA2, TA/TA2, PA/PA3, PU/PU2 differ in word position more than chance
+   primary {'chi2_sum': 10.65, 'p': 0.2358}
+   robustness {'positions (I initial, M medial, F final)': {'ra/ra2': {'ra': {'F': 32, 'M': 32, 'I': 11}, 'ra2': {'F': 12, 'M': 5, 'I': 3}}, 'ta/ta2': {'ta': {'M': 37, 'F': 30, 'I': 24}, 'ta2': {'F': 6, 'M': 1, 'I': 2}}, 'pa/pa3': {'pa': {'F': 13, 'M': 18, 'I': 22}, 'pa3': {'F': 9, 'M': 9, 'I': 6}}, 'pu/pu2': {'pu': {'M': 1, 'I': 5, 'F': 5}, 'pu2': {'M': 3, 'F': 4, 'I': 3}}}, 'Linear B control': {'chi2_sum': 34.2, 'p': 0.001}}
+== D12 special signs in names: Special signs are commoner in entry labels than in headings
+   primary {'entry_share': 0.0274, 'heading_share': 0.0334, 'p': 0.7592, 'n': [350, 137]}
+   robustness {}
+== D13 names on women's tablets: Knossos names on MUL tablets are more Minoan-shaped than other Knossos names
+   primary {'auc': 0.624, 'null_mean': 0.501, 'p': 0.002, 'n': [44, 593]}
+   robustness {}
+== D14 names on sheep tablets: Knossos names on OVIS tablets are more Minoan-shaped than other Knossos names
+   primary {'auc': 0.504, 'null_mean': 0.5, 'p': 0.4266, 'n': [254, 383]}
+   robustness {}
+== D15 names beside Cretan place names: Knossos names on tablets with a Knossos-only place name are more Minoan-shaped
+   primary {'auc': 0.521, 'null_mean': 0.5, 'p': 0.1698, 'n': [245, 392]}
+   robustness {}
+== D16 hapax names: Knossos names attested once are more Minoan-shaped than recurring ones
+   primary {'auc': 0.509, 'null_mean': 0.501, 'p': 0.3816, 'n': [478, 159]}
+   robustness {}
+== D17 common divisors by scribe: Common-divisor tablets cluster by scribe
+   primary {'chi2': 14.04, 'p': 0.4256, 'tablets': 76}
+   robustness {'per scribe (divisor tablets / tablets)': {'HT Scribe 11': '0/4', 'HT Scribe 2': '0/8', 'HT Scribe 8': '1/8', 'HT Scribe 14': '2/4', 'HT Scribe 3': '0/4', 'HT Scribe 1': '0/3', 'HT Scribe 9': '1/13', 'HT Scribe 6': '1/4', 'HT Scribe 7': '0/3', 'HT Scribe 5': '0/3', 'KH Scribe 2': '0/5', 'KH Scribe 1': '1/6', 'ZA Scribe 1': '1/5', 'ZA Scribe 2': '0/3', 'ARKH Scribe 1': '0/3'}}
+== D18 shared headings, shared commodities: Tablets sharing a heading word share a commodity more than chance
+   primary {'share': 0.533, 'null_mean': 0.52, 'p': 0.5165, 'pairs': 15}
+   robustness {'shared heading words': [('A-DU', 10), ('A-SI-JA-KA', 1), ('SA-RA2', 1), ('A-KA-RU', 1), ('A-PA-RA-NE', 1), ('KA-PA', 1)]}
+== D19 same person, similar amounts: The same entry word on different tablets carries similar amounts
+   primary {'mean_abs_log_diff': 2.056, 'null_mean': 1.662, 'p': 0.9321, 'pairs': 95}
+   robustness {}
+== D20 recurring persons, same scribe: Recurring entry words stay with the same scribe more than chance
+   primary {'share_same_scribe': 0.178, 'null_mean': 0.062, 'p': 0.002, 'words': 58}
+   robustness {}
+== D21 recurring persons, same commodity: Recurring entry words stay with the same commodity more than chance
+   primary {'share_same_commodity': 0.379, 'null_mean': 0.283, 'p': 0.1229}
+   robustness {}
+== D22 teams: Recurring entry words recur together on two or more tablets more than chance
+   primary {'pairs_on_2plus_tablets': 26, 'null_mean': 3.24, 'p': 0.001}
+   robustness {'pairs': ['KU-PA3-NU/MA-DI', 'DA-RE/TA-NA-TI', 'DI-NA-U/PA-DE', 'DI-NA-U/QE-PU', 'DI-NA-U/TA-I-AROM', 'PA-DE/QE-PU', 'PA-DE/TA-I-AROM', 'QE-PU/TA-I-AROM', 'DA-RE/DA-RI-DA', 'DA-ME/DI-DE-RU', 'DA-ME/KU-NI-SU', 'DA-ME/MI-NU-TE', 'DA-ME/SA-RU', 'DI-DE-RU/KU-NI-SU', 'DI-DE-RU/MI-NU-TE', 'DI-DE-RU/SA-RU', 'KU-NI-SU/MI-NU-TE', 'KU-NI-SU/SA-RU', 'MI-NU-TE/SA-RU', 'DI-RI-NA/SA-RA2']}
+== D23 first consonants: Pre-Greek first-syllable consonants resemble Linear A more than Greek ones do
+   primary {'jsd_LA_PreGreek': 0.1294, 'jsd_LA_Greek': 0.1081, 'p': 1.0}
+   robustness {}
+== D24 word length: Linear A word lengths resemble Pre-Greek stems more than ordinary Greek stems
+   primary {'jsd_LA_PreGreek': 0.0825, 'jsd_LA_Greek': 0.0241, 'p': 1.0}
+   robustness {'mean length (LA, Pre-Greek stems, Greek stems)': (3.05, 2.43, 3.46)}
+== D25 non-Greek common words: Knossos common words without a Greek etymology have fewer e/o syllables
+   primary {'non_greek': 0.4453, 'greek': 0.5282, 'p': 0.027, 'n': [199, 80]}
+   robustness {}
+
+primary p: {'D1': 0.001, 'D2': 0.996, 'D3': 0.6284, 'D4': 0.982, 'D5': 0.8282, 'D6': 0.4376, 'D7': 0.8052, 'D8': 0.001, 'D9': 0.0699, 'D10': 0.2877, 'D11': 0.2358, 'D12': 0.7592, 'D13': 0.002, 'D14': 0.4266, 'D15': 0.1698, 'D16': 0.3816, 'D17': 0.4256, 'D18': 0.5165, 'D19': 0.9321, 'D20': 0.002, 'D21': 0.1229, 'D22': 0.001, 'D23': 1.0, 'D24': 1.0, 'D25': 0.027}
+survive BH at 5%: ['D1', 'D22', 'D8', 'D13', 'D20']

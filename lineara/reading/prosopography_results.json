@@ -1,0 +1,1821 @@
+{
+ "method": "Cross-tablet record linkage: the same entry words (mostly personal names) on different tablets.\n\nEach entry of an administrative record is reduced to: its label word, the section it stands in (the last\nKI-RO / KU-RO / heading word before it), the commodity that governs it (in the entry, or the last commodity\nwritten before it in the record), its quantity, the record, site and scribe.\n\n1. Series: records that share three or more entry words are linked; linked groups are 'series'. For each\n   pair in a series, the quantities of the shared words are compared (equal, constant ratio, or neither).\n2. Sections: for words that stand in a KI-RO section on one record and outside one elsewhere, the two\n   quantities are listed, to see whether the KI-RO figure is a remainder of the other.\n3. A null for series: entry words are permuted across all administrative entries of the same site (1,000 runs)\n   and the number of record pairs sharing 3+ words recounted, so that shared lists are not an artefact of\n   a few common words.",
+ "entries": 479,
+ "entry_words": 364,
+ "recurring_words": 54,
+ "series_pairs": 4,
+ "null_pairs_mean": 0.11,
+ "null_pairs_max": 3,
+ "p_series": 0.001,
+ "series": [
+  {
+   "records": [
+    "HT86a",
+    "HT95a"
+   ],
+   "shared": 5,
+   "constant_ratio": null,
+   "rows": [
+    {
+     "word": "DA-ME",
+     "HT86a": "20",
+     "HT95a": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95a": null,
+     "commodity_HT86a": "GRA",
+     "commodity_HT95a": "GRA"
+    },
+    {
+     "word": "DI-DE-RU",
+     "HT86a": "20",
+     "HT95a": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95a": null,
+     "commodity_HT86a": "GRA",
+     "commodity_HT95a": "GRA"
+    },
+    {
+     "word": "KU-NI-SU",
+     "HT86a": "20",
+     "HT95a": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95a": null,
+     "commodity_HT86a": "GRA",
+     "commodity_HT95a": "GRA"
+    },
+    {
+     "word": "MI-NU-TE",
+     "HT86a": "20",
+     "HT95a": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95a": null,
+     "commodity_HT86a": "GRA",
+     "commodity_HT95a": "GRA"
+    },
+    {
+     "word": "SA-RU",
+     "HT86a": "20",
+     "HT95a": "20",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95a": null,
+     "commodity_HT86a": "GRA",
+     "commodity_HT95a": "GRA"
+    }
+   ]
+  },
+  {
+   "records": [
+    "HT86a",
+    "HT95b"
+   ],
+   "shared": 5,
+   "constant_ratio": "1/2",
+   "rows": [
+    {
+     "word": "DA-ME",
+     "HT86a": "20",
+     "HT95b": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT86a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "DI-DE-RU",
+     "HT86a": "20",
+     "HT95b": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT86a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "KU-NI-SU",
+     "HT86a": "20",
+     "HT95b": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT86a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "MI-NU-TE",
+     "HT86a": "20",
+     "HT95b": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT86a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "SA-RU",
+     "HT86a": "20",
+     "HT95b": "10",
+     "section_HT86a": "heading:A-KA-RU",
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT86a": "GRA",
+     "commodity_HT95b": null
+    }
+   ]
+  },
+  {
+   "records": [
+    "HT95a",
+    "HT95b"
+   ],
+   "shared": 6,
+   "constant_ratio": null,
+   "rows": [
+    {
+     "word": "DA-ME",
+     "HT95a": "10",
+     "HT95b": "10",
+     "section_HT95a": null,
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT95a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "DI-DE-RU",
+     "HT95a": "10",
+     "HT95b": "10",
+     "section_HT95a": null,
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT95a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "KU-NI-SU",
+     "HT95a": "10",
+     "HT95b": "10",
+     "section_HT95a": null,
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT95a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "MI-NU-TE",
+     "HT95a": "10",
+     "HT95b": "10",
+     "section_HT95a": null,
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT95a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "QE-RA2-U",
+     "HT95a": "7",
+     "HT95b": "10",
+     "section_HT95a": null,
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT95a": "GRA",
+     "commodity_HT95b": null
+    },
+    {
+     "word": "SA-RU",
+     "HT95a": "20",
+     "HT95b": "10",
+     "section_HT95a": null,
+     "section_HT95b": "heading:A-DU",
+     "commodity_HT95a": "GRA",
+     "commodity_HT95b": null
+    }
+   ]
+  },
+  {
+   "records": [
+    "HT9a",
+    "HT9b"
+   ],
+   "shared": 4,
+   "constant_ratio": null,
+   "rows": [
+    {
+     "word": "DI-NA-U",
+     "HT9a": "4",
+     "HT9b": "4",
+     "section_HT9a": "heading:SA-RO",
+     "section_HT9b": "heading:WA-JA-PI",
+     "commodity_HT9a": "VIN",
+     "commodity_HT9b": null
+    },
+    {
+     "word": "PA-DE",
+     "HT9a": "23/4",
+     "HT9b": "3",
+     "section_HT9a": "heading:SA-RO",
+     "section_HT9b": "heading:WA-JA-PI",
+     "commodity_HT9a": "VIN",
+     "commodity_HT9b": null
+    },
+    {
+     "word": "QE-PU",
+     "HT9a": "2",
+     "HT9b": "2",
+     "section_HT9a": "heading:SA-RO",
+     "section_HT9b": "heading:WA-JA-PI",
+     "commodity_HT9a": "VIN",
+     "commodity_HT9b": null
+    },
+    {
+     "word": "TA-I-AROM",
+     "HT9a": "5/2",
+     "HT9b": "2",
+     "section_HT9a": "heading:SA-RO",
+     "section_HT9b": "heading:WA-JA-PI",
+     "commodity_HT9a": "VIN",
+     "commodity_HT9b": null
+    }
+   ]
+  }
+ ],
+ "kiro_cross": {
+  "KU-PA3-NU": [
+   {
+    "record": "HT1",
+    "section": "heading:QE-RA2-U",
+    "commodity": null,
+    "quantity": "109",
+    "scribe": "HT Scribe 21"
+   },
+   {
+    "record": "HT3",
+    "section": null,
+    "commodity": null,
+    "quantity": "3",
+    "scribe": ""
+   },
+   {
+    "record": "HT49a",
+    "section": "heading:RA2-DU",
+    "commodity": null,
+    "quantity": "1",
+    "scribe": ""
+   },
+   {
+    "record": "HT88",
+    "section": "KI-RO",
+    "commodity": "VIR",
+    "quantity": "1",
+    "scribe": "HT Scribe 7"
+   },
+   {
+    "record": "HT117a",
+    "section": "KI-RO",
+    "commodity": null,
+    "quantity": "1",
+    "scribe": "HT Scribe 9"
+   },
+   {
+    "record": "HT122a",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1",
+    "scribe": "HT Scribe 9"
+   },
+   {
+    "record": "HT122a",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1",
+    "scribe": "HT Scribe 9"
+   }
+  ],
+  "PA-JA-RE": [
+   {
+    "record": "HT8b",
+    "section": null,
+    "commodity": null,
+    "quantity": "9/8",
+    "scribe": "HT Scribe 2"
+   },
+   {
+    "record": "HT29",
+    "section": null,
+    "commodity": null,
+    "quantity": "2",
+    "scribe": ""
+   },
+   {
+    "record": "HT88",
+    "section": "KI-RO",
+    "commodity": "VIR",
+    "quantity": "1",
+    "scribe": "HT Scribe 7"
+   },
+   {
+    "record": "ZA10b",
+    "section": null,
+    "commodity": null,
+    "quantity": "1",
+    "scribe": "ZA Scribe 4"
+   }
+  ],
+  "SA-RU": [
+   {
+    "record": "HT86a",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20",
+    "scribe": "HT Scribe 6"
+   },
+   {
+    "record": "HT86b",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20",
+    "scribe": "HT Scribe 6"
+   },
+   {
+    "record": "HT94b",
+    "section": "KI-RO",
+    "commodity": null,
+    "quantity": "1",
+    "scribe": "HT Scribe 9"
+   },
+   {
+    "record": "HT95a",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "20",
+    "scribe": ""
+   },
+   {
+    "record": "HT95b",
+    "section": "heading:A-DU",
+    "commodity": null,
+    "quantity": "10",
+    "scribe": ""
+   },
+   {
+    "record": "HT123+124a",
+    "section": null,
+    "commodity": "OLIV",
+    "quantity": "16",
+    "scribe": "HT Scribe 6"
+   }
+  ],
+  "PA-TA-NE": [
+   {
+    "record": "HT94b",
+    "section": "KI-RO",
+    "commodity": null,
+    "quantity": "1",
+    "scribe": "HT Scribe 9"
+   },
+   {
+    "record": "HT122a",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1",
+    "scribe": "HT Scribe 9"
+   }
+  ]
+ },
+ "recurring": {
+  "KU-PA3-NU": [
+   {
+    "record": "HT1",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 21",
+    "section": "heading:QE-RA2-U",
+    "commodity": null,
+    "quantity": "109"
+   },
+   {
+    "record": "HT3",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "3"
+   },
+   {
+    "record": "HT49a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:RA2-DU",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT88",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 7",
+    "section": "KI-RO",
+    "commodity": "VIR",
+    "quantity": "1"
+   },
+   {
+    "record": "HT117a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "KI-RO",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT122a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT122a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "KI-RE-TA-NA": [
+   {
+    "record": "HT2",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "OLE",
+    "quantity": "54"
+   },
+   {
+    "record": "HT8a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": "OLE",
+    "quantity": "1/2"
+   },
+   {
+    "record": "HT108",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "1"
+   },
+   {
+    "record": "HT120",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:DA-QE-RA",
+    "commodity": "GRA",
+    "quantity": "60"
+   }
+  ],
+  "DI-NA": [
+   {
+    "record": "HT3",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "2"
+   },
+   {
+    "record": "KH59",
+    "site": "Khania",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "5"
+   }
+  ],
+  "MU-RU": [
+   {
+    "record": "HT3",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT46a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "MA-DI": [
+   {
+    "record": "HT3",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "2"
+   },
+   {
+    "record": "HT69",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "4"
+   },
+   {
+    "record": "HT85b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:KI-KI-RA-JA",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT97a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 7",
+    "section": "heading:KA-RU",
+    "commodity": "VIR",
+    "quantity": "5"
+   },
+   {
+    "record": "HT118",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 3",
+    "section": null,
+    "commodity": null,
+    "quantity": "15"
+   }
+  ],
+  "WA-DU-NI-MI": [
+   {
+    "record": "HT6b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "3"
+   },
+   {
+    "record": "HT85b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:KI-KI-RA-JA",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "SA-MA": [
+   {
+    "record": "HT6b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "35"
+   },
+   {
+    "record": "HT10a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:KU-NI-SU",
+    "commodity": null,
+    "quantity": "4"
+   },
+   {
+    "record": "ZA10b",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 4",
+    "section": null,
+    "commodity": null,
+    "quantity": "5"
+   }
+  ],
+  "TA-NA-TI": [
+   {
+    "record": "HT7a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 11",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "1"
+   },
+   {
+    "record": "HT10b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "37/4"
+   },
+   {
+    "record": "HT49a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:RA2-DU",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT98a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "3/4"
+   }
+  ],
+  "DA-RE": [
+   {
+    "record": "HT7a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 11",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "1"
+   },
+   {
+    "record": "HT10a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:KU-NI-SU",
+    "commodity": null,
+    "quantity": "33/2"
+   },
+   {
+    "record": "HT10b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "2"
+   },
+   {
+    "record": "HT85a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:A-DU",
+    "commodity": "VIR",
+    "quantity": "4"
+   },
+   {
+    "record": "HT122b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:JE-DI",
+    "commodity": "VIR",
+    "quantity": "2"
+   },
+   {
+    "record": "PK3",
+    "site": "Palaikastro",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "72"
+   },
+   {
+    "record": "KH104",
+    "site": "Khania",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": null
+   }
+  ],
+  "TE-TU": [
+   {
+    "record": "HT7a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 11",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "1"
+   },
+   {
+    "record": "HT13",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "56"
+   },
+   {
+    "record": "HT85b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:KI-KI-RA-JA",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "JE-DI": [
+   {
+    "record": "HT8a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": "OLE",
+    "quantity": "10"
+   },
+   {
+    "record": "HT36",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "129/2"
+   },
+   {
+    "record": "HT140",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": "OLE",
+    "quantity": "3/2"
+   }
+  ],
+  "KA-PA": [
+   {
+    "record": "HT8b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": null,
+    "quantity": "1/2"
+   },
+   {
+    "record": "HT94a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "62"
+   },
+   {
+    "record": "HT140",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": "OLE",
+    "quantity": "1/2"
+   }
+  ],
+  "PA-JA-RE": [
+   {
+    "record": "HT8b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": null,
+    "quantity": "9/8"
+   },
+   {
+    "record": "HT29",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "2"
+   },
+   {
+    "record": "HT88",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 7",
+    "section": "KI-RO",
+    "commodity": "VIR",
+    "quantity": "1"
+   },
+   {
+    "record": "ZA10b",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 4",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "PA-DE": [
+   {
+    "record": "HT9a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:SA-RO",
+    "commodity": "VIN",
+    "quantity": "23/4"
+   },
+   {
+    "record": "HT9b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:WA-JA-PI",
+    "commodity": null,
+    "quantity": "3"
+   },
+   {
+    "record": "HT122a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "DI-NA-U": [
+   {
+    "record": "HT9a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:SA-RO",
+    "commodity": "VIN",
+    "quantity": "4"
+   },
+   {
+    "record": "HT9b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:WA-JA-PI",
+    "commodity": null,
+    "quantity": "4"
+   },
+   {
+    "record": "HT16",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 10",
+    "section": "heading:KA-KU-PA",
+    "commodity": null,
+    "quantity": "1/8"
+   },
+   {
+    "record": "HT25a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "QE-PU": [
+   {
+    "record": "HT9a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:SA-RO",
+    "commodity": "VIN",
+    "quantity": "2"
+   },
+   {
+    "record": "HT9b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:WA-JA-PI",
+    "commodity": null,
+    "quantity": "2"
+   }
+  ],
+  "TA-I-AROM": [
+   {
+    "record": "HT9a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:SA-RO",
+    "commodity": "VIN",
+    "quantity": "5/2"
+   },
+   {
+    "record": "HT9b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:WA-JA-PI",
+    "commodity": null,
+    "quantity": "2"
+   },
+   {
+    "record": "HT39",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 12",
+    "section": null,
+    "commodity": null,
+    "quantity": "10"
+   }
+  ],
+  "A-RU": [
+   {
+    "record": "HT9a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:SA-RO",
+    "commodity": "VIN",
+    "quantity": "17/4"
+   },
+   {
+    "record": "HT49a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:RA2-DU",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "DA-RI-DA": [
+   {
+    "record": "HT10a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:KU-NI-SU",
+    "commodity": null,
+    "quantity": "8"
+   },
+   {
+    "record": "HT85a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:A-DU",
+    "commodity": "VIR",
+    "quantity": "12"
+   },
+   {
+    "record": "HT122a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "ME-ZA": [
+   {
+    "record": "HT10a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:KU-NI-SU",
+    "commodity": null,
+    "quantity": "3"
+   },
+   {
+    "record": "HT85b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:KI-KI-RA-JA",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "RE-ZA": [
+   {
+    "record": "HT13",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "11/2"
+   },
+   {
+    "record": "HT88",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 7",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "6"
+   },
+   {
+    "record": "KH86",
+    "site": "Khania",
+    "scribe": "KH Scribe 2",
+    "section": null,
+    "commodity": "CYP",
+    "quantity": null
+   }
+  ],
+  "TE-KI": [
+   {
+    "record": "HT13",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "55/2"
+   },
+   {
+    "record": "HT122a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "2"
+   }
+  ],
+  "KU-ZU-NI": [
+   {
+    "record": "HT13",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "18"
+   },
+   {
+    "record": "HT85a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:A-DU",
+    "commodity": "VIR",
+    "quantity": "5"
+   }
+  ],
+  "SA-RO": [
+   {
+    "record": "HT17",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 18",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "10"
+   },
+   {
+    "record": "HT19",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 18",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "11/2"
+   },
+   {
+    "record": "HT42+59",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "OLE",
+    "quantity": "8"
+   }
+  ],
+  "SI-DA-RE": [
+   {
+    "record": "HT17",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 18",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "5"
+   },
+   {
+    "record": "HT122a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "PA-SE": [
+   {
+    "record": "HT18",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 20",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT27b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 11",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "4"
+   }
+  ],
+  "SA-RA2": [
+   {
+    "record": "HT18",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 20",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "10"
+   },
+   {
+    "record": "HT28a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 13",
+    "section": "heading:A-SI-JA-KA",
+    "commodity": "OLE",
+    "quantity": "1"
+   },
+   {
+    "record": "HT28b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 13",
+    "section": "heading:A-SI-JA-KA",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT30",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 1",
+    "section": null,
+    "commodity": "CYP",
+    "quantity": null
+   },
+   {
+    "record": "HT90",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": "heading:I-KU-RI-NA",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT93a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 5",
+    "section": "heading:PA3-NI-NA",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT94a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": null,
+    "commodity": "CYP",
+    "quantity": "5"
+   },
+   {
+    "record": "HT99a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": "heading:A-DU",
+    "commodity": "CYP",
+    "quantity": "4"
+   },
+   {
+    "record": "HT100",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "CYP",
+    "quantity": "21/4"
+   },
+   {
+    "record": "HT101",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "41"
+   },
+   {
+    "record": "HT102",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 5",
+    "section": "heading:KA-PA",
+    "commodity": "GRA",
+    "quantity": "976"
+   },
+   {
+    "record": "HT105",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:KA-PA",
+    "commodity": "VIR",
+    "quantity": "235"
+   },
+   {
+    "record": "HT114a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 4",
+    "section": "heading:KI-RI-TA2",
+    "commodity": "GRA",
+    "quantity": "10"
+   },
+   {
+    "record": "HT121",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 4",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "5"
+   },
+   {
+    "record": "HT125a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "2"
+   },
+   {
+    "record": "HT130",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 19",
+    "section": null,
+    "commodity": "CYP",
+    "quantity": null
+   }
+  ],
+  "A-RI-NI-TA": [
+   {
+    "record": "HT25a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "ZA8",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 2",
+    "section": "heading:KI-RA",
+    "commodity": null,
+    "quantity": "7/5"
+   }
+  ],
+  "TA-TI": [
+   {
+    "record": "HT26a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 3",
+    "section": null,
+    "commodity": "VAS",
+    "quantity": "21"
+   },
+   {
+    "record": "HT97a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 7",
+    "section": "heading:KA-RU",
+    "commodity": "VIR",
+    "quantity": "2"
+   }
+  ],
+  "RU-MA-TA": [
+   {
+    "record": "HT29",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "2"
+   },
+   {
+    "record": "HT99b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "KU-RE-JU": [
+   {
+    "record": "HT39",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 12",
+    "section": null,
+    "commodity": null,
+    "quantity": "8"
+   },
+   {
+    "record": "HT117b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "KU-PA3-NA-TU": [
+   {
+    "record": "HT47a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 14",
+    "section": null,
+    "commodity": null,
+    "quantity": "20"
+   },
+   {
+    "record": "HT119",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "7"
+   }
+  ],
+  "ZU-DU": [
+   {
+    "record": "HT51b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "5/8"
+   },
+   {
+    "record": "HT99b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "PA3-NI": [
+   {
+    "record": "HT85a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:A-DU",
+    "commodity": "VIR",
+    "quantity": "12"
+   },
+   {
+    "record": "HT102",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 5",
+    "section": "heading:KA-PA",
+    "commodity": "GRA",
+    "quantity": "33"
+   }
+  ],
+  "KI-RE-TA2": [
+   {
+    "record": "HT85b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:KI-KI-RA-JA",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT129",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 15",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "337/10"
+   }
+  ],
+  "QE-KA": [
+   {
+    "record": "HT85b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:KI-KI-RA-JA",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT111a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "8"
+   }
+  ],
+  "KU-NI-SU": [
+   {
+    "record": "HT86a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT86b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT95a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "10"
+   },
+   {
+    "record": "HT95b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:A-DU",
+    "commodity": null,
+    "quantity": "10"
+   }
+  ],
+  "SA-RU": [
+   {
+    "record": "HT86a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT86b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT94b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "KI-RO",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT95a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT95b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:A-DU",
+    "commodity": null,
+    "quantity": "10"
+   },
+   {
+    "record": "HT123+124a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": null,
+    "commodity": "OLIV",
+    "quantity": "16"
+   }
+  ],
+  "DI-DE-RU": [
+   {
+    "record": "HT86a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT95a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "10"
+   },
+   {
+    "record": "HT95b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:A-DU",
+    "commodity": null,
+    "quantity": "10"
+   }
+  ],
+  "DA-ME": [
+   {
+    "record": "HT86a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT95a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "10"
+   },
+   {
+    "record": "HT95b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:A-DU",
+    "commodity": null,
+    "quantity": "10"
+   },
+   {
+    "record": "HT120",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:DA-QE-RA",
+    "commodity": "GRA",
+    "quantity": "74"
+   }
+  ],
+  "MI-NU-TE": [
+   {
+    "record": "HT86a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 6",
+    "section": "heading:A-KA-RU",
+    "commodity": "GRA",
+    "quantity": "20"
+   },
+   {
+    "record": "HT95a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "10"
+   },
+   {
+    "record": "HT95b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:A-DU",
+    "commodity": null,
+    "quantity": "10"
+   },
+   {
+    "record": "HT106",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 19",
+    "section": null,
+    "commodity": "CYP",
+    "quantity": "6"
+   }
+  ],
+  "DI-KI-SE": [
+   {
+    "record": "HT87",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:MA-KA-RI-TE",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT117b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "A-DU": [
+   {
+    "record": "HT88",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 7",
+    "section": null,
+    "commodity": "VIR",
+    "quantity": "20"
+   },
+   {
+    "record": "HT92",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 2",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "680"
+   },
+   {
+    "record": "TY3a",
+    "site": "Tylissos",
+    "scribe": "",
+    "section": null,
+    "commodity": "OLE",
+    "quantity": "51"
+   }
+  ],
+  "QA-QA-RU": [
+   {
+    "record": "HT93a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 5",
+    "section": "heading:PA3-NI-NA",
+    "commodity": "GRA",
+    "quantity": "5"
+   },
+   {
+    "record": "HT118",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 3",
+    "section": null,
+    "commodity": null,
+    "quantity": "6"
+   },
+   {
+    "record": "HT122b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:JE-DI",
+    "commodity": "VIR",
+    "quantity": "2"
+   }
+  ],
+  "PA-TA-NE": [
+   {
+    "record": "HT94b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "KI-RO",
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "HT122a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 9",
+    "section": "heading:RA-RI",
+    "commodity": null,
+    "quantity": "1"
+   }
+  ],
+  "QE-RA2-U": [
+   {
+    "record": "HT95a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "7"
+   },
+   {
+    "record": "HT95b",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": "heading:A-DU",
+    "commodity": null,
+    "quantity": "10"
+   }
+  ],
+  "KU-PA": [
+   {
+    "record": "HT110a",
+    "site": "Haghia Triada",
+    "scribe": "",
+    "section": null,
+    "commodity": "CYP",
+    "quantity": "1"
+   },
+   {
+    "record": "ZA11a",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 2",
+    "section": "heading:DI-DI-KO-RA-ME-TA2",
+    "commodity": "GRA",
+    "quantity": "1"
+   },
+   {
+    "record": "ZA11b",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 2",
+    "section": "heading:E-TO-RI",
+    "commodity": "GRA",
+    "quantity": "3"
+   }
+  ],
+  "PA-RA-NE": [
+   {
+    "record": "HT115a",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": "GRA",
+    "quantity": "1"
+   },
+   {
+    "record": "HT115b",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 8",
+    "section": null,
+    "commodity": null,
+    "quantity": "1/2"
+   }
+  ],
+  "SI-CYP": [
+   {
+    "record": "HT130",
+    "site": "Haghia Triada",
+    "scribe": "HT Scribe 19",
+    "section": "KU-RO",
+    "commodity": "CYP",
+    "quantity": "8"
+   },
+   {
+    "record": "KH11",
+    "site": "Khania",
+    "scribe": "KH Scribe 2",
+    "section": "heading:A-DU",
+    "commodity": "VIN",
+    "quantity": "3/20"
+   }
+  ],
+  "MA-KA-I-TA": [
+   {
+    "record": "PK1",
+    "site": "Palaikastro",
+    "scribe": "",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   },
+   {
+    "record": "ZA5b",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 1",
+    "section": null,
+    "commodity": null,
+    "quantity": "3"
+   }
+  ],
+  "QE-SI-ZU-E": [
+   {
+    "record": "ZA4a",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 1",
+    "section": null,
+    "commodity": null,
+    "quantity": "4"
+   },
+   {
+    "record": "ZA15a",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 5",
+    "section": "heading:SA-VIN",
+    "commodity": null,
+    "quantity": "57"
+   }
+  ],
+  "SI-PI-KI": [
+   {
+    "record": "ZA4a",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 1",
+    "section": null,
+    "commodity": null,
+    "quantity": "5"
+   },
+   {
+    "record": "ZA5b",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 1",
+    "section": null,
+    "commodity": null,
+    "quantity": "3/2"
+   },
+   {
+    "record": "ZA15a",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 5",
+    "section": "heading:SA-VIN",
+    "commodity": null,
+    "quantity": "5/2"
+   }
+  ],
+  "KA-DI": [
+   {
+    "record": "ZA4a",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 1",
+    "section": null,
+    "commodity": null,
+    "quantity": "3"
+   },
+   {
+    "record": "ZA15b",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 5",
+    "section": null,
+    "commodity": "VIN",
+    "quantity": "3"
+   }
+  ],
+  "DA-I-PI-TA": [
+   {
+    "record": "ZA8",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 2",
+    "section": "heading:KI-RA",
+    "commodity": null,
+    "quantity": "5/2"
+   },
+   {
+    "record": "ZA10a",
+    "site": "Zakros",
+    "scribe": "ZA Scribe 4",
+    "section": null,
+    "commodity": null,
+    "quantity": "1"
+   }
+  ]
+ }
+}

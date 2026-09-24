@@ -1,0 +1,205 @@
+{
+ "title": "the bookkeeping, second pass",
+ "method": "Round 43 (second loop, round 5 of 10): the bookkeeping, second pass.\n\nLists are the entry sequences of round33.RECS (one record = one side of a tablet; entry order kept).\n\nFF1  At Haghia Triada, lists on tablets with a total are more strictly largest-first (Kendall tau) than others.\nFF2  Lists on tablets with a total are single-commodity more often.\nFF3  KI-RO stands on tablets that also have KU-RO more often than chance (tablet sides merged).\nFF4  The first entry is the unique largest more often than chance in lists of goods (no VIR).\nFF5  Tablets with fractions carry a total more often.\nFF6  Lists of men (VIR) are longer than lists of goods.\nFF7  Entries with fractions stand on neighbouring lines more often than chance.\nFF8  Lists that open with a heading word are longer.\nFF9  Multi-commodity tablets list their commodities in a consistent order across tablets.\nFF10 Entries of the same commodity stand in blocks more often than chance.",
+ "primary_p": {
+  "FF1": 0.004997501249375313,
+  "FF2": 0.1889055472263868,
+  "FF3": 1.0,
+  "FF4": 0.05747126436781609,
+  "FF5": 0.993503248375812,
+  "FF6": 0.0009995002498750624,
+  "FF7": 0.00399800099950025,
+  "FF8": 0.19890054972513743,
+  "FF9": 0.0004997501249375312,
+  "FF10": 0.06896551724137931
+ },
+ "bh_supported": [
+  "FF1",
+  "FF6",
+  "FF7",
+  "FF9"
+ ],
+ "details": {
+  "FF1": {
+   "prediction": "At HT, lists with a total are more strictly largest-first",
+   "primary": {
+    "with_total_tau": [
+     0.4389,
+     24
+    ],
+    "without": [
+     0.1113,
+     77
+    ],
+    "p": 0.005
+   },
+   "robustness": {},
+   "p": 0.004997501249375313
+  },
+  "FF2": {
+   "prediction": "Lists with a total are single-commodity more often",
+   "primary": {
+    "with_total": [
+     0.7222,
+     18
+    ],
+    "without": [
+     0.5789,
+     114
+    ],
+    "p": 0.1889
+   },
+   "robustness": {},
+   "p": 0.1889055472263868
+  },
+  "FF3": {
+   "prediction": "KI-RO stands on tablets with KU-RO more often than chance",
+   "primary": {
+    "kiro_tablets_with_kuro": [
+     0.3636,
+     11
+    ],
+    "others_with_kuro": [
+     1.0,
+     26
+    ],
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "FF4": {
+   "prediction": "The first entry is the unique largest in lists of goods",
+   "primary": {
+    "first_is_max": "27/122",
+    "null": 20.3,
+    "p": 0.0575
+   },
+   "robustness": {},
+   "p": 0.05747126436781609
+  },
+  "FF5": {
+   "prediction": "Tablets with fractions carry a total more often",
+   "primary": {
+    "with_fractions": [
+     0.0732,
+     123
+    ],
+    "without": [
+     0.1631,
+     141
+    ],
+    "p": 0.9935
+   },
+   "robustness": {},
+   "p": 0.993503248375812
+  },
+  "FF6": {
+   "prediction": "Lists of men are longer than lists of goods",
+   "primary": {
+    "VIR_lists": [
+     7.1538,
+     26
+    ],
+    "goods_lists": [
+     4.3672,
+     128
+    ],
+    "p": 0.001
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "FF7": {
+   "prediction": "Fraction entries stand on neighbouring lines more often than chance",
+   "primary": {
+    "adjacent": 126,
+    "null": 113.6,
+    "p": 0.004
+   },
+   "robustness": {},
+   "p": 0.00399800099950025
+  },
+  "FF8": {
+   "prediction": "Lists that open with a heading are longer",
+   "primary": {
+    "with_heading": [
+     5.1935,
+     93
+    ],
+    "without": [
+     4.7714,
+     140
+    ],
+    "p": 0.1989
+   },
+   "robustness": {},
+   "p": 0.19890054972513743
+  },
+  "FF9": {
+   "prediction": "Multi-commodity tablets list commodities in a consistent order",
+   "primary": {
+    "order_asymmetry": 59,
+    "null": 27.9,
+    "p": 0.0005,
+    "tablets": 53
+   },
+   "robustness": {
+    "commonest orders": [
+     [
+      "GRA<OLE",
+      16
+     ],
+     [
+      "OLE<OLIV",
+      9
+     ],
+     [
+      "CYP<VIN",
+      8
+     ],
+     [
+      "OLE<VIN",
+      7
+     ],
+     [
+      "GRA<OLIV",
+      6
+     ],
+     [
+      "GRA<VIN",
+      6
+     ],
+     [
+      "GRA<VIR",
+      5
+     ],
+     [
+      "OLE<CYP",
+      4
+     ],
+     [
+      "VIR<CYP",
+      4
+     ],
+     [
+      "CYP<OLE",
+      3
+     ]
+    ]
+   },
+   "p": 0.0004997501249375312
+  },
+  "FF10": {
+   "prediction": "Same-commodity entries stand in blocks more often than chance",
+   "primary": {
+    "adjacent_same": 60,
+    "null": 53.3,
+    "p": 0.069,
+    "lists": 38
+   },
+   "robustness": {},
+   "p": 0.06896551724137931
+  }
+ }
+}

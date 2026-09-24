@@ -1,0 +1,166 @@
+{
+ "title": "this loop's findings in the other records",
+ "method": "Round 47 (second loop, round 9 of 10): this loop's findings in the other records.\n\nKK1  Linear B's commodity order agrees with Linear A's majority order more at Knossos than at Pylos.\nKK2  Pre-Greek words repeat the consonant of neighbouring syllables more often than Greek words (length-matched).\nKK3  Pre-Greek words repeat a whole syllable in succession more often than Greek words.\nKK4  Eteocretan repeats neighbouring consonants more often than Greek.\nKK5  Eteocretan repeats a whole syllable more often than Greek.\nKK6  Pre-Greek words begin with an a-syllable more often than Greek words.\nKK7  Knossos-only place names begin with a Q-row sign more often than Pylos-only ones.\nKK8  Knossos-only common words begin with a Q-row sign more often than Pylos-only ones.\nKK9  Knossos-only common words repeat neighbouring consonants more often than Pylos-only ones.\nKK10 Pre-Greek words contain Z-row syllables more often than Greek words.",
+ "primary_p": {
+  "KK1": 0.21489255372313842,
+  "KK2": 0.0024987506246876563,
+  "KK3": 0.004497751124437781,
+  "KK4": 0.0014992503748125937,
+  "KK5": 0.0029985007496251873,
+  "KK6": 0.0004997501249375312,
+  "KK7": 0.004997501249375313,
+  "KK8": 0.5402298850574713,
+  "KK9": 0.07796101949025487,
+  "KK10": 0.8000999500249875
+ },
+ "bh_supported": [
+  "KK2",
+  "KK3",
+  "KK4",
+  "KK5",
+  "KK6",
+  "KK7"
+ ],
+ "details": {
+  "KK1": {
+   "prediction": "Linear B commodity order agrees with Linear A more at Knossos than at Pylos",
+   "primary": {
+    "KN": 0.75,
+    "PY": 0.667,
+    "p": 0.2149,
+    "n": [
+     27,
+     13
+    ]
+   },
+   "robustness": {},
+   "p": 0.21489255372313842
+  },
+  "KK2": {
+   "prediction": "Pre-Greek words repeat neighbouring consonants more often",
+   "primary": {
+    "target": 0.0482,
+    "comparison": 0.0305,
+    "p": 0.0025,
+    "n": [
+     1143,
+     1143
+    ]
+   },
+   "robustness": {},
+   "p": 0.0024987506246876563
+  },
+  "KK3": {
+   "prediction": "Pre-Greek words repeat a whole syllable more often",
+   "primary": {
+    "target": 0.0236,
+    "comparison": 0.0096,
+    "p": 0.0045,
+    "n": [
+     1143,
+     1143
+    ]
+   },
+   "robustness": {},
+   "p": 0.004497751124437781
+  },
+  "KK4": {
+   "prediction": "Eteocretan repeats neighbouring consonants more often",
+   "primary": {
+    "target": 0.0972,
+    "comparison": 0.0147,
+    "p": 0.0015,
+    "n": [
+     35,
+     119
+    ]
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "KK5": {
+   "prediction": "Eteocretan repeats a whole syllable more often",
+   "primary": {
+    "target": 0.1429,
+    "comparison": 0.0084,
+    "p": 0.003,
+    "n": [
+     35,
+     119
+    ]
+   },
+   "robustness": {},
+   "p": 0.0029985007496251873
+  },
+  "KK6": {
+   "prediction": "Pre-Greek words begin with an a-syllable more often",
+   "primary": {
+    "target": 0.4077,
+    "comparison": 0.3036,
+    "p": 0.0005,
+    "n": [
+     1143,
+     1143
+    ]
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "KK7": {
+   "prediction": "Knossos place names begin with Q more often",
+   "primary": {
+    "target": 0.0822,
+    "comparison": 0.0,
+    "p": 0.005,
+    "n": [
+     73,
+     120
+    ]
+   },
+   "robustness": {},
+   "p": 0.004997501249375313
+  },
+  "KK8": {
+   "prediction": "Knossos common words begin with Q more often",
+   "primary": {
+    "target": 0.0251,
+    "comparison": 0.0232,
+    "p": 0.5402,
+    "n": [
+     279,
+     345
+    ]
+   },
+   "robustness": {},
+   "p": 0.5402298850574713
+  },
+  "KK9": {
+   "prediction": "Knossos common words repeat neighbouring consonants more often",
+   "primary": {
+    "target": 0.0338,
+    "comparison": 0.023,
+    "p": 0.078,
+    "n": [
+     279,
+     345
+    ]
+   },
+   "robustness": {},
+   "p": 0.07796101949025487
+  },
+  "KK10": {
+   "prediction": "Pre-Greek words contain Z-row syllables more often",
+   "primary": {
+    "target": 0.0079,
+    "comparison": 0.0105,
+    "p": 0.8001,
+    "n": [
+     1143,
+     1143
+    ]
+   },
+   "robustness": {},
+   "p": 0.8000999500249875
+  }
+ }
+}

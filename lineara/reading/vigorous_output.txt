@@ -1,0 +1,33 @@
+== V1 held-out prediction: Knossos names score as more Minoan than held-out Pylos names
+   primary {'mean_auc': 0.59, 'auc_95_over_splits': [0.545, 0.638], 'label_permutation_null_mean': 0.501, 'p': 0.0025}
+   robustness {'control common words auc': 0.531, 'control_95': [0.479, 0.584], 'note': 'held-out Pylos names were never in the Pylos model; Knossos names were never in any model'}
+== V2 undeciphered signs: Knossos use of undeciphered signs tracks Linear A frequencies more than Pylos use
+   primary {'rho_KN': 0.618, 'rho_PY': 0.332, 'difference': 0.286, 'p': 0.082, 'signs': 15}
+   robustness {'signs attested in Linear A': '9 of 15', 'share of Knossos * tokens on signs attested in LA': 0.802, 'share of Pylos * tokens on signs attested in LA': 0.714}
+== V3 stems are name stems: Linear A stems of Knossos names are Linear A names more often than same-length Linear A words
+   primary {'share_names': 0.37, 'null_mean': 0.44, 'p': 0.8806, 'stems': 46}
+   robustness {'same share for stems of Pylos names': 0.357, 'pylos stems': 14}
+== V4 stems, strict: The Knossos stem excess holds for 3+-sign stems, and against other mainland sites
+   primary {'KN_rate_3plus': 0.0061, 'PY_rate_3plus': 0.0008, 'difference': 0.0053, 'p': 0.021}
+   robustness {'vs Thebes/Mycenae/Tiryns (2+ stems)': {'KN': 0.0775, 'other': 0.0635, 'p': 0.1704, 'n_other': 465}}
+== V5 paired A-: Within the same stem the A- form is a heading more often than the bare form
+   primary {'pairs': 8, 'A- more often heading': 3, 'bare more often heading': 2, 'sign_test_p': 0.5}
+   robustness {'pairs_detail': [('A-RA-NA-RE', 0.0, 1.0), ('A-KA-RU', 0.67, 1.0), ('A-SA-RA2', 1.0, 0.2), ('A-PA-RA-NE', 1.0, 0.0), ('A-SI-KI-RA', 0.0, 0.0), ('A-RI-JA', 1.0, 0.0), ('A-TA-NA-TE', 0.0, 0.0), ('A-MI-TA', 0.0, 0.0)]}
+== V6 KI-RO and personnel: KI-RO appears on personnel (VIR) tablets more than other tablets with totals
+   primary {'KI-RO tablets with VIR': '1/12', 'other total tablets with VIR': '11/29', 'p': 0.992}
+   robustness {'KI-RO entries equal to 1': '25/32'}
+== V7 common divisor: Amounts on a tablet share a common divisor above 1 more often than chance
+   primary {'share_gcd_ge_2': 0.107, 'null_mean': 0.051, 'p': 0.0005, 'tablets': 178}
+   robustness {'without all-multiples-of-10 tablets': {'share': 0.081, 'null_mean': 0.046, 'p': 0.021, 'tablets': 173}, 'within-site shuffle p': 0.001, 'gcd distribution': {1: 159, 10: 4, 2: 11, 4: 1, 5: 2, 11: 1}}
+== V8 largest first by scribe: The largest-first habit holds scribe by scribe at Haghia Triada
+   primary {'scribes': 8, 'with positive tau': 7, 'sign_test_p': 0.0352}
+   robustness {'per_scribe_tau': {'HT Scribe 11': 0.256, 'HT Scribe 2': 0.418, 'HT Scribe 8': 0.158, 'HT Scribe 14': 0.543, 'HT Scribe 3': 0.173, 'HT Scribe 1': -0.206, 'HT Scribe 9': 0.272, 'HT Scribe 6': 0.333}}
+== V9 religious words without the formula: Non-formula religious words also resemble Knossos names more than Pylos names
+   primary {'words': 154, 'D_all': 0.0564, 'p': 0.0005}
+   robustness {'first syllables': (0.1451, 0.0005)}
+== V10 fraction order convention: Published values break largest-first far less than random reassignments
+   primary {'pairs': 25, 'violations_published': 2, 'violations_random_mean': 12.47, 'p': 0.0217}
+   robustness {'the violations': ['H K', 'A B'], 'P(random assignment has <= 1 violation)': 0.0071, 'circularity': 'Corazza et al. 2021 used the descending-order premise when assigning some of these values, so agreement with it is partly built in; this is not independent support'}
+
+primary p: {'V1': 0.0025, 'V2': 0.082, 'V3': 0.8806, 'V4': 0.021, 'V5': 0.5, 'V6': 0.992, 'V7': 0.0005, 'V8': 0.0352, 'V9': 0.0005, 'V10': 0.0217}
+survive BH at 5%: ['V7', 'V9', 'V1', 'V4', 'V10']

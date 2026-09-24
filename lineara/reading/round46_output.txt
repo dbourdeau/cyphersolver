@@ -1,0 +1,33 @@
+== II1: Words in both registers are entry labels more often
+   primary {'shared_words_entry': (0.4167, 12), 'other_entry': (0.6161, 560), 'p': 0.9605}
+   robustness {'shared words': ['A-JA', 'A-MA', 'A-SE', 'DI-NA-U', 'I-DA', 'I-TI', 'JA-SA', 'RE-TI', 'RU-DI', 'SI-RU', 'SI-TE', 'TI-TI-KU']}
+== II2: Religious words begin with a pure vowel more often
+   primary {'religious': 0.3579, 'admin': 0.1982, 'p': 0.0005, 'n': [190, 560]}
+   robustness {}
+== II3: Religious words repeat neighbouring consonants more often
+   primary {'religious': 0.0626, 'admin': 0.0467, 'p': 0.0965, 'n': [190, 560]}
+   robustness {}
+== II4: Religious words contain Z-row signs more often
+   primary {'religious': 0.0474, 'admin': 0.0589, 'p': 0.7911, 'n': [190, 560]}
+   robustness {}
+== II5: Administrative words also found in religious texts occur at more sites
+   primary {'shared_mean_sites': (1.0833, 12), 'other': (1.0536, 560), 'p': 0.4318}
+   robustness {}
+== II6: Religious words are two-sign words less often
+   primary {'religious': 0.3105, 'admin': 0.3929, 'p': 0.028, 'n': [190, 560]}
+   robustness {}
+== II7: Religious words repeat a whole syllable more often
+   primary {'religious': 0.0842, 'admin': 0.0286, 'p': 0.002, 'n': [190, 560]}
+   robustness {}
+== II8: Inked inscriptions are closer to administrative texts than to stone dedications
+   primary {'jsd_to_stone_minus_admin': 0.0088, 'null': -0.0952, 'p': 0.0075, 'n': [12, 106]}
+   robustness {}
+== II9: Same object type shares words more than different types
+   primary {'diff': 0.031, 'null': 0.0, 'p': 0.0005, 'inscriptions': 153}
+   robustness {}
+== II10: Religious words match Knossos words more often
+   primary {'religious': 0.1105, 'admin': 0.1446, 'p': 0.904, 'n': [190, 560]}
+   robustness {}
+
+primary p: {'II1': 0.9605, 'II2': 0.0005, 'II3': 0.0965, 'II4': 0.7911, 'II5': 0.4318, 'II6': 0.028, 'II7': 0.002, 'II8': 0.0075, 'II9': 0.0005, 'II10': 0.904}
+survive BH at 5%: ['II2', 'II7', 'II8', 'II9']

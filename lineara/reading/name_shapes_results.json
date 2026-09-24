@@ -1,0 +1,211 @@
+{
+ "method": "Do Linear B personal names at Knossos look more like Linear A names than those at Pylos do?\n\nExact matches (names_lb.py) give six shared names. This asks a broader question with hundreds of names:\nwhether the *shape* of Knossos personal names (their syllables, first and last syllables) is closer to\nLinear A's list names than the shape of Pylos personal names is. A Minoan naming substrate at Knossos\nwould show as Knossos names sitting closer to Linear A.\n\nLinear A names: words classed as entry labels in administrative texts (build_reading.py), excluding the\nrecurrent transaction words (SA-RA2, A-DU, KA-PA, DA-RE, KU-PA, SA-MA, KU-RO, KI-RO). Linear B names:\nheadwords the Ventris-Chadwick glossary calls anthroponyms (tiripode lexicon), attested only at Knossos\nor only at Pylos (linearb.xyz corpus). Only words of 2+ signs, one token per type.\n\nStatistic: Jensen-Shannon divergence between syllable distributions (all syllables, first syllables,\nlast syllables) of Linear A names and each Linear B group; D = JSD(LA, Pylos) - JSD(LA, Knossos). Null:\nthe Knossos and Pylos names are pooled and the site labels shuffled, group sizes kept, 5,000 times.\nTwo controls: the same test on Knossos and Pylos *non-name* vocabulary (glossary 'other' words), which\nshould show no Knossos advantage if the effect is about names; and Greek-looking names removed (names\nwith a Greek etymology in the glossary definition) to see whether the effect is carried by non-Greek names.",
+ "linear_a_names": 358,
+ "names": {
+  "knossos": 637,
+  "pylos": 339
+ },
+ "tests": {
+  "personal names": {
+   "all": {
+    "jsd_la_knossos": 0.1931,
+    "jsd_la_pylos": 0.2548,
+    "D": 0.0617,
+    "null_mean": 0.0039,
+    "p_knossos_closer": 0.0002
+   },
+   "first": {
+    "jsd_la_knossos": 0.1373,
+    "jsd_la_pylos": 0.2813,
+    "D": 0.144,
+    "null_mean": 0.0143,
+    "p_knossos_closer": 0.0002
+   },
+   "last": {
+    "jsd_la_knossos": 0.5125,
+    "jsd_la_pylos": 0.663,
+    "D": 0.1505,
+    "null_mean": 0.019,
+    "p_knossos_closer": 0.0002
+   }
+  },
+  "personal names without a Greek etymology": {
+   "all": {
+    "jsd_la_knossos": 0.1896,
+    "jsd_la_pylos": 0.2436,
+    "D": 0.054,
+    "null_mean": 0.0072,
+    "p_knossos_closer": 0.0002
+   },
+   "first": {
+    "jsd_la_knossos": 0.1369,
+    "jsd_la_pylos": 0.2884,
+    "D": 0.1515,
+    "null_mean": 0.0278,
+    "p_knossos_closer": 0.0002
+   },
+   "last": {
+    "jsd_la_knossos": 0.4975,
+    "jsd_la_pylos": 0.6707,
+    "D": 0.1732,
+    "null_mean": 0.0333,
+    "p_knossos_closer": 0.0002
+   }
+  },
+  "control: non-name vocabulary": {
+   "all": {
+    "jsd_la_knossos": 0.2401,
+    "jsd_la_pylos": 0.2449,
+    "D": 0.0049,
+    "null_mean": -0.002,
+    "p_knossos_closer": 0.3203
+   },
+   "first": {
+    "jsd_la_knossos": 0.2951,
+    "jsd_la_pylos": 0.3055,
+    "D": 0.0104,
+    "null_mean": -0.0085,
+    "p_knossos_closer": 0.2673
+   },
+   "last": {
+    "jsd_la_knossos": 0.4651,
+    "jsd_la_pylos": 0.4608,
+    "D": -0.0043,
+    "null_mean": -0.0055,
+    "p_knossos_closer": 0.4841
+   }
+  },
+  "personal names, exact shared names removed": {
+   "all": {
+    "jsd_la_knossos": 0.1949,
+    "jsd_la_pylos": 0.255,
+    "D": 0.0601,
+    "null_mean": 0.0038,
+    "p_knossos_closer": 0.0003
+   },
+   "first": {
+    "jsd_la_knossos": 0.1381,
+    "jsd_la_pylos": 0.2794,
+    "D": 0.1413,
+    "null_mean": 0.0139,
+    "p_knossos_closer": 0.0003
+   },
+   "last": {
+    "jsd_la_knossos": 0.5195,
+    "jsd_la_pylos": 0.6683,
+    "D": 0.1488,
+    "null_mean": 0.0167,
+    "p_knossos_closer": 0.0003
+   }
+  }
+ },
+ "sizes": {
+  "names without Greek etymology": {
+   "knossos": 520,
+   "pylos": 224
+  },
+  "non-name vocabulary": {
+   "knossos": 279,
+   "pylos": 345
+  }
+ },
+ "commonest_last_syllables": {
+  "linear_a": [
+   "ti",
+   "na",
+   "ja",
+   "ta",
+   "re",
+   "ra",
+   "ru",
+   "te"
+  ],
+  "knossos_names": [
+   "jo",
+   "ro",
+   "to",
+   "ta",
+   "so",
+   "no",
+   "wo",
+   "u"
+  ],
+  "pylos_names": [
+   "u",
+   "jo",
+   "ta",
+   "ro",
+   "wo",
+   "no",
+   "ko",
+   "we"
+  ]
+ },
+ "per_linear_a_site": {
+  "Haghia Triada": {
+   "names": 233,
+   "jsd_la_knossos": 0.2187,
+   "jsd_la_pylos": 0.2824,
+   "D": 0.0637,
+   "null_mean": 0.0036,
+   "p_knossos_closer": 0.0005
+  },
+  "Zakros": {
+   "names": 52,
+   "jsd_la_knossos": 0.2466,
+   "jsd_la_pylos": 0.2916,
+   "D": 0.045,
+   "null_mean": 0.0037,
+   "p_knossos_closer": 0.001
+  },
+  "Khania": {
+   "names": 25,
+   "jsd_la_knossos": 0.3265,
+   "jsd_la_pylos": 0.3689,
+   "D": 0.0424,
+   "null_mean": 0.003,
+   "p_knossos_closer": 0.002
+  }
+ },
+ "shared_names_by_linear_a_site": {
+  "names": {
+   "DA-I-PI-TA": [
+    "ZA10a",
+    "ZA8"
+   ],
+   "I-TA-JA": [
+    "HT28a"
+   ],
+   "KI-DA-RO": [
+    "HT117a",
+    "HT47a"
+   ],
+   "PA-I-TO": [
+    "HT120",
+    "HT97a"
+   ],
+   "PA-RA-NE": [
+    "HT115a",
+    "HT115b"
+   ],
+   "SE-TO-I-JA": [
+    "PRZa1"
+   ],
+   "SU-KI-RI-TA": [
+    "PHWa32"
+   ],
+   "TA-NA-TI": [
+    "HT10b",
+    "HT49a",
+    "HT7a",
+    "HT98a"
+   ]
+  },
+  "sites": {
+   "Zakros": 1,
+   "Haghia Triada": 5,
+   "Prassa": 1,
+   "Phaistos": 1
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "title": "more bookkeeping comparisons between Linear A and Linear B",
+ "method": "Round 56: more bookkeeping comparisons between Linear A and Linear B. Benjamini-Hochberg at 5% across the nine.\n\nD1  Pylos amounts of goods (not men, women or livestock) of 2 or more are even more often than odd.\nD2  Linear A: grain amounts exceed wine amounts on tablets with both.\nD3  Linear B: grain amounts exceed wine amounts on tablets with both.\nD4  Linear B: grain comes before olives on tablets with both.\nD5  Linear B: grain comes before men (VIR) on tablets with both.\nD6  Pylos alone: the first entry is the unique largest beyond chance.\nD7  Linear A: cyperus and oil stand on the same tablets beyond chance.\nD8  Linear B: cyperus and oil stand on the same tablets beyond chance.\nD9  Linear B lists of men are ordered largest-first beyond chance.",
+ "primary_p": {
+  "D1": 3.183956674430153e-07,
+  "D2": 0.015625,
+  "D3": 0.5,
+  "D4": 0.1050567626953125,
+  "D5": 0.96875,
+  "D6": 0.2028985507246377,
+  "D7": 0.9880059970014993,
+  "D8": 1.0,
+  "D9": 0.7006496751624188
+ },
+ "bh_supported": [
+  "D1"
+ ],
+ "details": {
+  "D1": {
+   "prediction": "Pylos goods amounts are even more often than odd",
+   "primary": {
+    "even": "133/196",
+    "p": 0.0
+   },
+   "robustness": {},
+   "p": 3.183956674430153e-07
+  },
+  "D2": {
+   "prediction": "Linear A: grain amounts exceed wine amounts",
+   "primary": {
+    "grain_larger": "6/6",
+    "p": 0.0156
+   },
+   "robustness": {},
+   "p": 0.015625
+  },
+  "D3": {
+   "prediction": "Linear B: grain amounts exceed wine amounts",
+   "primary": {
+    "grain_larger": "2/3",
+    "p": 0.5
+   },
+   "robustness": {},
+   "p": 0.5
+  },
+  "D4": {
+   "prediction": "Linear B: grain before olives",
+   "primary": {
+    "grain_first": "11/16",
+    "p": 0.10506
+   },
+   "robustness": {},
+   "p": 0.1050567626953125
+  },
+  "D5": {
+   "prediction": "Linear B: grain before men",
+   "primary": {
+    "grain_first": "1/5",
+    "p": 0.96875
+   },
+   "robustness": {},
+   "p": 0.96875
+  },
+  "D6": {
+   "prediction": "Pylos: the first entry is the unique largest beyond chance",
+   "primary": {
+    "first_is_max": "22/107",
+    "null": 18.4,
+    "p": 0.2029
+   },
+   "robustness": {},
+   "p": 0.2028985507246377
+  },
+  "D7": {
+   "prediction": "Linear A: cyperus and oil on the same tablets beyond chance",
+   "primary": {
+    "together": 7,
+    "null": 11.57,
+    "p": 0.988
+   },
+   "robustness": {},
+   "p": 0.9880059970014993
+  },
+  "D8": {
+   "prediction": "Linear B: cyperus and oil on the same tablets beyond chance",
+   "primary": {
+    "together": 0,
+    "null": 0.25,
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "D9": {
+   "prediction": "Linear B lists of men are largest-first",
+   "primary": {
+    "mean_tau": -0.033,
+    "null": 0.002,
+    "p": 0.7006,
+    "lists": 52
+   },
+   "robustness": {},
+   "p": 0.7006496751624188
+  }
+ }
+}

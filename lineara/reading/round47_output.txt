@@ -1,0 +1,33 @@
+== KK1: Linear B commodity order agrees with Linear A more at Knossos than at Pylos
+   primary {'KN': 0.75, 'PY': 0.667, 'p': 0.2149, 'n': [27, 13]}
+   robustness {}
+== KK2: Pre-Greek words repeat neighbouring consonants more often
+   primary {'target': 0.0482, 'comparison': 0.0305, 'p': 0.0025, 'n': [1143, 1143]}
+   robustness {}
+== KK3: Pre-Greek words repeat a whole syllable more often
+   primary {'target': 0.0236, 'comparison': 0.0096, 'p': 0.0045, 'n': [1143, 1143]}
+   robustness {}
+== KK4: Eteocretan repeats neighbouring consonants more often
+   primary {'target': 0.0972, 'comparison': 0.0147, 'p': 0.0015, 'n': [35, 119]}
+   robustness {}
+== KK5: Eteocretan repeats a whole syllable more often
+   primary {'target': 0.1429, 'comparison': 0.0084, 'p': 0.003, 'n': [35, 119]}
+   robustness {}
+== KK6: Pre-Greek words begin with an a-syllable more often
+   primary {'target': 0.4077, 'comparison': 0.3036, 'p': 0.0005, 'n': [1143, 1143]}
+   robustness {}
+== KK7: Knossos place names begin with Q more often
+   primary {'target': 0.0822, 'comparison': 0.0, 'p': 0.005, 'n': [73, 120]}
+   robustness {}
+== KK8: Knossos common words begin with Q more often
+   primary {'target': 0.0251, 'comparison': 0.0232, 'p': 0.5402, 'n': [279, 345]}
+   robustness {}
+== KK9: Knossos common words repeat neighbouring consonants more often
+   primary {'target': 0.0338, 'comparison': 0.023, 'p': 0.078, 'n': [279, 345]}
+   robustness {}
+== KK10: Pre-Greek words contain Z-row syllables more often
+   primary {'target': 0.0079, 'comparison': 0.0105, 'p': 0.8001, 'n': [1143, 1143]}
+   robustness {}
+
+primary p: {'KK1': 0.2149, 'KK2': 0.0025, 'KK3': 0.0045, 'KK4': 0.0015, 'KK5': 0.003, 'KK6': 0.0005, 'KK7': 0.005, 'KK8': 0.5402, 'KK9': 0.078, 'KK10': 0.8001}
+survive BH at 5%: ['KK2', 'KK3', 'KK4', 'KK5', 'KK6', 'KK7']

@@ -1,0 +1,40 @@
+K1   0.4113  At Knossos, words with undeciphered signs are more often personal names  | effect 0.0159 | 36/105 vs 637/1948
+K2   0.0005  Knossos-only words are more Linear A-like than words shared by Knossos and Pylos  | effect 0.2165 | 1948 vs 365
+K3    0.002  At Knossos, names follow Linear A syllable rates more closely than common words  | effect 0.259 | 673 names, 284 common words
+K4   0.0055  Cretan place names in Linear B are more Linear A-like than mainland place names  | effect 0.2611 | 70 vs 124
+K5   0.5934  Knossos adjectives in -jo/-ja are built on Linear A words (stem + suffix)  | effect 0.0437 | 366 -jo/-ja words
+L1   0.2369  Largest-first listing holds outside Haghia Triada too  | effect 0.052 | 39 non-HT lists
+L2   0.8716  The even-amount preference is stronger for grain than for men  | effect -0.0972 | GRA 25/36, VIR 19/24
+L3   0.0145  Amounts on the same tablet are doubles of each other more than chance  | effect 161 | null mean 132.5
+L4   0.0005  KI-RO entries are mostly single units (1)  | effect 0.5564 | 25/32 vs 277/1232
+L5   0.7446  Liquids (wine, oil) take fractions more often than dry goods  | effect -0.0212 | liquid 106/302, dry 147/395
+M1   0.0525  Words ending -TI are entry labels (names) rather than headings  | effect 0.0334 | 
+M2   0.0005  Words beginning A- are headings rather than entry labels  | effect 0.1093 | 35/174 vs 44/479
+M3   0.0125  Words ending -JA belong to the religious register  | effect 0.0394 | 
+M4   0.7666  The first and last syllables of a word share their vowel more than chance  | effect 0.256 | 
+M5   0.1996  Long words are compounds of attested shorter words more than chance  | effect 0.075 | 201 long words
+N1   0.0005  Roundels and nodules carry different signs  | effect 473.18 | 27 roundel, 600 nodule signs
+N2    0.049  Sealing signs are the first signs of the commonest administrative words  | effect 0.512 | heads ['a', 'da', 'di', 'je', 'ka', 'ki', 'ku', 'ma', 'mi', 'pa', 'qe', 'sa', 'ta']
+N3   0.0035  Religious inscriptions use word dividers more than tablets  | effect 0.2509 | 49 religious, 186 administrative
+N4   0.5622  After a KU-RO total, the next line opens with a new commodity  | effect 0.0031 | 5/29 vs 152/898
+N5   0.0005  Peak-sanctuary inscriptions share vocabulary with each other more than with other religious objects  | effect 0.0638 | 9 sanctuary sites of 23
+O1   0.0005  Knossos words are Linear A words plus one final syllable more often than Pylos words  | effect 0.0436 | KN 0.0775, PY 0.0339
+O2    0.007  Knossos names contain Linear A words as stems (plus a Greek ending) beyond chance  | effect 0.0938 | 673 names
+O3   0.1124  Cretan place names in Linear B recur in Linear A (as words or stems) more than mainland ones  | effect 0.0641 | 9/70 vs 8/124
+O4    0.001  Linear A and Linear B use their shared syllables at correlated rates  | effect 0.432 | 52 shared syllables
+O5      1.0  Pylos names end in -o (Greek o-stems) more often than Knossos names  | effect -0.1127 | KN 0.63, PY 0.517
+
+25 tested; 13 survive Benjamini-Hochberg at 5%:
+  K2 p 0.0005  Knossos-only words are more Linear A-like than words shared by Knossos and Pylos
+  L4 p 0.0005  KI-RO entries are mostly single units (1)
+  M2 p 0.0005  Words beginning A- are headings rather than entry labels
+  N1 p 0.0005  Roundels and nodules carry different signs
+  N5 p 0.0005  Peak-sanctuary inscriptions share vocabulary with each other more than with other religious objects
+  O1 p 0.0005  Knossos words are Linear A words plus one final syllable more often than Pylos words
+  O4 p 0.001  Linear A and Linear B use their shared syllables at correlated rates
+  K3 p 0.002  At Knossos, names follow Linear A syllable rates more closely than common words
+  N3 p 0.0035  Religious inscriptions use word dividers more than tablets
+  K4 p 0.0055  Cretan place names in Linear B are more Linear A-like than mainland place names
+  O2 p 0.007  Knossos names contain Linear A words as stems (plus a Greek ending) beyond chance
+  M3 p 0.0125  Words ending -JA belong to the religious register
+  L3 p 0.0145  Amounts on the same tablet are doubles of each other more than chance

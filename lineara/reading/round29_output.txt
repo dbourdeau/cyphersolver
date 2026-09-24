@@ -1,0 +1,33 @@
+== P1: Linear A words begin with a pure vowel more often than Linear B words
+   primary {'LA': 0.238, 'LB': 0.279, 'p': 0.9925}
+   robustness {}
+== P2: Linear A writes two pure vowel signs in succession more often
+   primary {'LA': 0.003, 'LB': 0.02, 'p': 1.0}
+   robustness {}
+== P3: o-signs are word-initial more than other signs, more so than in Linear B
+   primary {'LA_gap': 0.022, 'LB_gap': -0.113, 'p': 0.0005}
+   robustness {}
+== P4: After an a-syllable, Linear A has I or U more often (diphthongs)
+   primary {'LA': 0.0537, 'LB': 0.039, 'p': 0.062}
+   robustness {}
+== P5: Linear A words begin with a repeated syllable more often
+   primary {'LA': 0.0158, 'LB': 0.0088, 'p': 0.058}
+   robustness {}
+== P6: Q-row signs are word-initial more often in Linear A
+   primary {'LA': 0.62, 'LB': 0.277, 'p': 0.0005}
+   robustness {}
+== P7: R-row signs are word-initial less often in Linear A
+   primary {'LA': 0.174, 'LB': 0.139, 'p': 0.958}
+   robustness {}
+== P8: Final syllables favour a over internal ones more in Linear A
+   primary {'LA_gap': -0.09, 'LB_gap': -0.053, 'p': 0.963}
+   robustness {}
+== P9: Linear A words end in a pure vowel sign more often
+   primary {'LA': 0.039, 'LB': 0.105, 'p': 1.0}
+   robustness {}
+== P10: The next sign is more predictable in Linear A than in size-matched Linear B
+   primary {'LA_H': 2.829, 'LB_H_subsampled': 2.625, 'p': 1.0}
+   robustness {}
+
+primary p: {'P1': 0.9925, 'P2': 1.0, 'P3': 0.0005, 'P4': 0.062, 'P5': 0.058, 'P6': 0.0005, 'P7': 0.958, 'P8': 0.963, 'P9': 1.0, 'P10': 1.0}
+survive BH at 5%: ['P3', 'P6']

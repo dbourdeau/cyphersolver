@@ -1,0 +1,129 @@
+{
+ "title": "the vowel system in detail",
+ "method": "Round 30 (loop round 2 of 10): the vowel system in detail.\n\nQ1  e/o follow T (alone) more than non-coronals, more than in Linear B.\nQ2  e/o follow S and N more than K, P and M, more than in Linear B.\nQ3  e/o follow Q more than K (QE/QO against KE/KO), more than in Linear B.\nQ4  In Linear A, o is word-final more often than e is.\nQ5  a followed by a (a-harmony) exceeds chance within Linear A words (signs shuffled within words), more than in\n    Linear B.\nQ6  High vowels (i, u) co-occur within a word beyond chance, more than in Linear B.\nQ7  e/o are commoner in Linear A words of 3+ signs than in two-sign words.\nQ8  e/o are commoner in entry labels (names) than in headings.\nQ9  e/o are commoner in religious words than in administrative words.\nQ10 Among pure vowel signs, E and O are rarer relative to CV e/o signs in Linear A than in Linear B.",
+ "primary_p": {
+  "Q1": 0.0004997501249375312,
+  "Q2": 0.0004997501249375312,
+  "Q3": 0.0004997501249375312,
+  "Q4": 0.9980009995002499,
+  "Q5": 1.0,
+  "Q6": 0.04950495049504951,
+  "Q7": 0.7401299350324838,
+  "Q8": 0.19490254872563717,
+  "Q9": 0.7101449275362319,
+  "Q10": 0.7136431784107946
+ },
+ "bh_supported": [
+  "Q1",
+  "Q2",
+  "Q3"
+ ],
+ "details": {
+  "Q1": {
+   "prediction": "e/o follow T alone more than non-coronals, more than in Linear B",
+   "primary": {
+    "logOR_LA": 0.991,
+    "logOR_LB": -0.131,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "Q2": {
+   "prediction": "e/o follow S and N more than K, P, M, more than in Linear B",
+   "primary": {
+    "logOR_LA": 0.537,
+    "logOR_LB": -0.126,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "Q3": {
+   "prediction": "e/o follow Q more than K, more than in Linear B",
+   "primary": {
+    "logOR_LA": 2.043,
+    "logOR_LB": 0.729,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "Q4": {
+   "prediction": "In Linear A, o is word-final more often than e",
+   "primary": {
+    "o_final": [
+     0.338,
+     71
+    ],
+    "e_final": [
+     0.5183,
+     328
+    ],
+    "p": 0.998
+   },
+   "robustness": {},
+   "p": 0.9980009995002499
+  },
+  "Q5": {
+   "prediction": "a-a sequences exceed chance within Linear A words more than in Linear B",
+   "primary": {
+    "LA_ratio": 1.017,
+    "LB_ratio": 1.115,
+    "bootstrap p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "Q6": {
+   "prediction": "High vowels co-occur within words beyond chance, more than in Linear B",
+   "primary": {
+    "LA_ratio": 1.006,
+    "LB_ratio": 0.96,
+    "bootstrap p": 0.0495
+   },
+   "robustness": {},
+   "p": 0.04950495049504951
+  },
+  "Q7": {
+   "prediction": "e/o are commoner in Linear A words of 3+ signs than in two-sign words",
+   "primary": {
+    "long": 0.175,
+    "short": 0.186,
+    "p": 0.7401
+   },
+   "robustness": {},
+   "p": 0.7401299350324838
+  },
+  "Q8": {
+   "prediction": "e/o are commoner in entry labels than in headings",
+   "primary": {
+    "entries": 0.178,
+    "headings": 0.159,
+    "p": 0.1949
+   },
+   "robustness": {},
+   "p": 0.19490254872563717
+  },
+  "Q9": {
+   "prediction": "e/o are commoner in religious words than in administrative words",
+   "primary": {
+    "religious": 0.169,
+    "admin": 0.179,
+    "p": 0.7101
+   },
+   "robustness": {},
+   "p": 0.7101449275362319
+  },
+  "Q10": {
+   "prediction": "E/O are rarer among pure vowel signs, relative to CV e/o, in Linear A than in Linear B",
+   "primary": {
+    "LA_gap": -0.087,
+    "LB_gap": -0.104,
+    "p": 0.7136
+   },
+   "robustness": {},
+   "p": 0.7136431784107946
+  }
+ }
+}

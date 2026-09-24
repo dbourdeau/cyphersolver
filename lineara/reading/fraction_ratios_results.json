@@ -1,0 +1,23 @@
+{
+ "method": "Per-person ration proportions as evidence for fraction values (after Montecchi 2013 on KH 7a).\n\nOn KH 7a, E-NA-SI has VIR 10 followed by CYP+D J, and QA-TI-KI VIR 4 followed by CYP+D B. A constant ration\nper man gives J/10 = B/4, so B = 1/5 when J = 1/2. This script looks for the same structure everywhere: a\nquantity of persons (an entry whose commodity is VIR or MUL) followed, in the next entry, by a commodity and an\namount. Pairs are grouped by record and by the commodity that follows.\n\nFor every group with 2+ pairs, the per-person rates are computed with the Corazza et al. 2021 values. Groups\nare reported as consistent (one rate fits all), inconsistent, or informative: one pair contains a sign whose\nvalue is disputed or unknown, and a constant rate with another pair implies a value for it.",
+ "groups": [
+  {
+   "record": "KH7a",
+   "commodity": "CYP",
+   "status": "consistent",
+   "pairs": [
+    {
+     "persons": 10,
+     "amount": "CYP+D ¹⁄2",
+     "rate_per_person": "1/20"
+    },
+    {
+     "persons": 4,
+     "amount": "CYP+D ¹⁄3",
+     "rate_per_person": "1/20"
+    }
+   ],
+   "implied": []
+  }
+ ]
+}

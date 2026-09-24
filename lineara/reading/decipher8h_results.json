@@ -1,0 +1,167 @@
+{
+ "method": "Eight hypotheses: stress tests of the coronal rule from new angles, and three probes of words and archives.\n\nEach has a prediction stated before the test ran and one primary test with its own null. Benjamini-Hochberg at\n5% runs across the eight.\n\nH1  The coronal rule survives dropping whichever single coronal e/o sign supports it most.\nH2  The rule holds in word types attested only once (hapax), not only in frequent words.\nH3  The rule holds in word-initial syllables.\nH4  With consonants as the unit, coronal consonants have higher e/o shares than non-coronals (rank test).\nH5  Reduplicated Linear A words (a sign repeated in succession) are entry labels more often than other words.\nH6  Reduplicated Knossos personal names are more Minoan-shaped (stem-scored) than other Knossos names.\nH7  Tablets of the same commodity share vocabulary more than tablets of different commodities (sides merged,\n    transaction terms removed).\nH8  Single signs on sealings match the first sign of a word attested at the same site more often than chance.",
+ "primary_p": {
+  "H1": 0.000999000999000999,
+  "H2": 0.000999000999000999,
+  "H3": 0.000999000999000999,
+  "H4": 0.16499175041247938,
+  "H5": 0.6893106893106893,
+  "H6": 0.949050949050949,
+  "H7": 0.002997002997002997,
+  "H8": 0.998001998001998
+ },
+ "bh_supported": [
+  "H1",
+  "H2",
+  "H3",
+  "H7"
+ ],
+ "details": {
+  "H1 leave one sign out": {
+   "prediction": "The coronal rule survives dropping its most influential sign",
+   "primary": {
+    "dropped": "RE",
+    "logOR_without": 0.368,
+    "logOR_LB": -0.246,
+    "p": 0.001
+   },
+   "robustness": {
+    "logOR after dropping each sign": {
+     "RE": 0.368,
+     "TE": 0.459,
+     "SE": 0.573,
+     "NE": 0.583,
+     "RO": 0.63,
+     "DE": 0.647,
+     "TO": 0.712
+    }
+   }
+  },
+  "H2 hapax words": {
+   "prediction": "The coronal rule holds in words attested once",
+   "primary": {
+    "logOR_hapax": 0.733,
+    "logOR_LB": -0.246,
+    "p": 0.001,
+    "words": 631
+   },
+   "robustness": {}
+  },
+  "H3 initial syllables": {
+   "prediction": "The coronal rule holds in word-initial syllables",
+   "primary": {
+    "logOR_LA_initial": 0.547,
+    "logOR_LB_initial": -0.23,
+    "p": 0.001
+   },
+   "robustness": {}
+  },
+  "H4 consonants as the unit": {
+   "prediction": "Coronal consonants rank above non-coronals in e/o share",
+   "primary": {
+    "auc": 0.681,
+    "p": 0.165,
+    "consonants": {
+     "q": 0.5,
+     "r": 0.365,
+     "t": 0.276,
+     "s": 0.186,
+     "n": 0.168,
+     "m": 0.14,
+     "d": 0.116,
+     "k": 0.113,
+     "j": 0.067,
+     "p": 0.065,
+     "z": 0.0,
+     "w": 0.0
+    }
+   },
+   "robustness": {
+    "Linear B auc": 0.417
+   }
+  },
+  "H5 reduplicated words are names": {
+   "prediction": "Reduplicated Linear A words are entry labels more often",
+   "primary": {
+    "redup_entry": "10/17",
+    "other_entry": "340/555",
+    "p": 0.6893
+   },
+   "robustness": {
+    "reduplicated words": [
+     "DI-DI",
+     "DI-DI-KO-RA-ME-TA2",
+     "DI-DI-ZA-KE",
+     "I-TI-TI-KU-NI",
+     "KI-KI-NA",
+     "KI-KI-RA-JA",
+     "KU-KU-DA-RA",
+     "KU-PA3-PA3",
+     "QA-QA-DA",
+     "QA-QA-RU",
+     "SA-RA-RA",
+     "SA-SA-ME",
+     "TA-TA",
+     "TE-TE",
+     "TI-TI-KU",
+     "U-NA-NA",
+     "WI-SA-SA-NE"
+    ]
+   }
+  },
+  "H6 reduplicated Knossos names": {
+   "prediction": "Reduplicated Knossos names are more Minoan-shaped (stem-scored)",
+   "primary": {
+    "auc": 0.34,
+    "p": 0.9491,
+    "n": [
+     8,
+     629
+    ]
+   },
+   "robustness": {
+    "examples": [
+     "a-ri-we-we",
+     "da-i-wo-wo",
+     "po-po",
+     "qa-qa-ro",
+     "sa-sa-jo",
+     "ta-ta-ta",
+     "wa-wa-ka",
+     "we-we-ro"
+    ]
+   }
+  },
+  "H7 commodity vocabularies": {
+   "prediction": "Single-commodity tablets of the same commodity share vocabulary",
+   "primary": {
+    "jaccard_diff": 0.0151,
+    "p": 0.003,
+    "tablets": 34
+   },
+   "robustness": {}
+  },
+  "H8 sealing signs are local initials": {
+   "prediction": "Sealing signs match word initials from their own site more than chance",
+   "primary": {
+    "share": 0.895,
+    "null_mean": 0.906,
+    "p": 0.998,
+    "sealing_signs": 631
+   },
+   "robustness": {
+    "sites": {
+     "Haghia Triada": 596,
+     "Khania": 19,
+     "Knossos": 5,
+     "Margiana": 1,
+     "Phaistos": 5,
+     "Pyrgos": 1,
+     "Samothrace": 1,
+     "Tylissos": 1,
+     "Zakros": 2
+    }
+   }
+  }
+ }
+}

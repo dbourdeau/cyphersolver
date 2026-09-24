@@ -1,0 +1,33 @@
+== OP1: TE-opened tablets record a single commodity more often
+   primary {'TE': (1.0, 2), 'other': (0.6566, 166), 'p': 0.4243}
+   robustness {}
+== OP2: TE-opened tablets carry a total more often
+   primary {'TE': (0.0, 6), 'other': (0.0862, 348), 'p': 1.0}
+   robustness {}
+== OP3: Opening with TE is tied to particular scribes
+   primary {'chi2': 12.87, 'null': 17.44, 'p': 0.5747, 'tablets': 110}
+   robustness {'TE tablets by scribe': {'HT Scribe 2': 1}}
+== OP4: TE opens tablets at HT and elsewhere
+   primary {'HT': {'TE_first': (0.8, 20), 'other_first': (0.0884, 181), 'p': 0.0005}, 'other': {'TE_first': (0.1429, 7), 'other_first': (0.1788, 151), 'p': 0.7496}, 'p (larger)': 0.7496}
+   robustness {}
+== OP6: The first word is associated with the main commodity
+   primary {'chi2': 33.4, 'null': 16.8, 'p': 0.004, 'tablets': 22}
+   robustness {'first words (tablets)': {'A-DU': 7, 'SA-RA2': 5, 'SA-RO': 4, 'KA-PA': 3, 'JE-DI': 3}}
+== OP10: TE is followed by a word or logogram more often than other single signs
+   primary {'TE': (0.4815, 27), 'other': (0.1493, 402), 'p': 0.0005}
+   robustness {}
+== OP14: Transaction terms are associated with particular commodities
+   primary {'chi2': 21.7, 'null': 20.3, 'p': 0.3623, 'pairs': 72}
+   robustness {'term + commodity': ['SA-RA2 + GRA x11', 'SA-RA2 + OLE x10', 'SA-RA2 + VIR x7', 'SA-RA2 + VIN x7', 'SA-RA2 + CYP x5', 'A-DU + GRA x5', 'KA-PA + VIR x3', 'DA-RE + VIR x3', 'A-DU + CYP x3', 'KU-PA + CYP x2', 'KU-PA + GRA x2', 'KA-PA + OLE x2']}
+== OP17: Transaction terms are associated with particular sites
+   primary {'chi2': 31.4, 'null': 16.5, 'p': 0.026, 'pairs': 44}
+   robustness {'term @ site': ['SA-RA2 @ Haghia Triada x19', 'A-DU @ Haghia Triada x7', 'KA-PA @ Haghia Triada x6', 'DA-RE @ Haghia Triada x4', 'A-DU @ Khania x2', 'KU-PA @ Haghia Triada x1', 'DA-RE @ Khania x1', 'KU-PA @ Khania x1', 'DA-RE @ Palaikastro x1', 'A-DU @ Tylissos x1', 'KU-PA @ Zakros x1']}
+== OP19: Syllables one apart share a consonant more often than in Linear B
+   primary {'LA': 0.0653, 'LB': 0.0492, 'p': 0.011}
+   robustness {}
+== OP22: The word after TE recurs across TE-opened tablets
+   primary {'repeats': 0, 'null': 0.01, 'p': 1.0, 'TE_tablets': 3}
+   robustness {'after TE': {'RI-JA': 1, 'A-DU': 1, 'SA-PU': 1}}
+
+primary p: {'OP1': 0.4243, 'OP2': 1.0, 'OP3': 0.5747, 'OP4': 0.7496, 'OP6': 0.004, 'OP10': 0.0005, 'OP14': 0.3623, 'OP17': 0.026, 'OP19': 0.011, 'OP22': 1.0}
+survive BH at 5%: ['OP10', 'OP19', 'OP6']

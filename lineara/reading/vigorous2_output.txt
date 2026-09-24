@@ -1,0 +1,33 @@
+== W1 not just Pylos: Knossos names score as more Minoan than Thebes/Mycenae/Tiryns names
+   primary {'auc': 0.565, 'null_mean': 0.502, 'p': 0.0739, 'n_kn': 637, 'n_mainland': 46}
+   robustness {'model without Pylos (LA names vs Linear B common words)': {'auc': 0.58, 'p': 0.033}}
+== W2 not just Haghia Triada: A model from non-HT Linear A names still separates Knossos from Pylos names
+   primary {'names': 130, 'auc': 0.607, 'p': 0.0033}
+   robustness {'HT-only model': {'names': 233, 'auc': 0.589, 'p': 0.0033}, 'without Linear A names from Knossos': {'names': 127, 'auc': 0.607, 'p': 0.0033}, 'sites in non-HT set': ['Arkhalkhori', 'Gournia', 'Khania', 'Knossos', 'Malia', 'Palaikastro', 'Petras', 'Phaistos', 'Pyrgos', 'Tylissos', 'Zakros']}
+== W3 earliest deposit: Room of Chariot Tablets names are more Minoan than later Knossos names
+   primary {'auc': 0.443, 'null_mean': 0.5, 'p': 0.941, 'n_rct': 70, 'n_later': 454}
+   robustness {'RCT-any vs later-only': {'auc': 0.433, 'p': 0.98, 'n': [92, 454]}, 'JSD test (RCT as the "Knossos" side)': {'all': (-0.0464, 0.6287), 'first': (-0.1565, 0.8226), 'last': (-0.0269, 0.063)}}
+== W4 undeciphered-sign words: Knossos words with undeciphered signs are more Linear A-like in their other syllables
+   primary {'auc': 0.578, 'null_mean': 0.5, 'p': 0.0145, 'n_star': 73, 'n_plain': 1948}
+   robustness {'same at Pylos (Pylos plain words were in the reference model, biased upward)': {'auc': 0.57, 'p': 0.1024, 'n_star': 29}, 'neutral reference model (Thebes/Mycenae/Tiryns words)': {'Knossos': {'auc': 0.564, 'p': 0.027}, 'Pylos': {'auc': 0.55, 'p': 0.1724}}}
+== W5 o-deficit vs other mainland: Knossos names have fewer internal o-syllables than Thebes/Mycenae/Tiryns names
+   primary {'KN': 0.1226, 'mainland': 0.1667, 'p': 0.0965}
+   robustness {'vs Pylos (replication)': {'PY': 0.1641, 'p': 0.006}, 'Linear A internal o': 0.0284}
+== W6 religious-word model: A model trained on Linear A religious words picks out Knossos names out of sample
+   primary {'words': 183, 'auc': 0.597, 'p': 0.0033}
+   robustness {'formula removed': {'words': 149, 'auc': 0.613, 'p': 0.0033}}
+== W7 common-divisor tablets: Tablets with a common divisor are single-commodity lists more often
+   primary {'divisor tablets single-commodity': '15/19', 'others': '120/159', 'p': 0.4868}
+   robustness {'without all-tens tablets': {'share': '11/14', 'p': 0.5267}, 'commodities on divisor tablets': {'GRA': 7, 'VIR': 3, 'OLE': 1, 'OLIV': 1, 'CYP': 1, 'VIN': 1}}
+== W8 KI-RO and produce: KI-RO stands on produce tablets more than other tablets with totals
+   primary {'KI-RO tablets with produce': '4/12', 'others': '12/29', 'p': 0.7996}
+   robustness {'Haghia Triada only p': 0.7791, 'commodities on KI-RO tablets': {'GRA': 3, 'CYP': 2, 'VIN': 2, 'OLE': 2, 'VIR': 1, 'OLIV': 5}}
+== W9 largest first without the main scribe: Largest-first holds at Haghia Triada with HT Scribe 9 removed
+   primary {'mean_tau': 0.172, 'p': 0.0135, 'lists': 46, 'removed': 'HT Scribe 9'}
+   robustness {'all scribes': {'mean_tau': 0.192, 'p': 0.001}, 'leave-one-scribe-out p': {'HT Scribe 11': 0.001, 'HT Scribe 2': 0.008, 'HT Scribe 24': 0.002, 'HT Scribe 8': 0.002, 'HT Scribe 14': 0.004, 'HT Scribe 3': 0.004, 'HT Scribe 13': 0.002, 'HT Scribe 1': 0.001, 'HT Scribe 9': 0.021, 'HT Scribe 6': 0.003, 'HT Scribe 7': 0.004, 'HT Scribe 5': 0.005, 'HT Scribe 4': 0.003}}
+== W10 stems are widespread words: Linear A words used as Knossos stems are attested at more Linear A sites
+   primary {'mean_sites': 1.273, 'null_mean': 1.162, 'p': 0.0085, 'stems': 88}
+   robustness {'share at 2+ sites': 0.193, 'Pylos stems share at 2+ sites': 0.204, 'pylos stems': 49, 'Pylos stems mean sites': 1.245, 'Pylos stems p vs null': 0.1299, 'Knossos minus Pylos stems': {'diff': 0.028, 'p': 0.4688}}
+
+primary p: {'W1': 0.0739, 'W2': 0.0033, 'W3': 0.941, 'W4': 0.0145, 'W5': 0.0965, 'W6': 0.0033, 'W7': 0.4868, 'W8': 0.7996, 'W9': 0.0135, 'W10': 0.0085}
+survive BH at 5%: ['W2', 'W6', 'W10', 'W9', 'W4']

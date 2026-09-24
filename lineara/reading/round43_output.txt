@@ -1,0 +1,33 @@
+== FF1: At HT, lists with a total are more strictly largest-first
+   primary {'with_total_tau': (0.4389, 24), 'without': (0.1113, 77), 'p': 0.005}
+   robustness {}
+== FF2: Lists with a total are single-commodity more often
+   primary {'with_total': (0.7222, 18), 'without': (0.5789, 114), 'p': 0.1889}
+   robustness {}
+== FF3: KI-RO stands on tablets with KU-RO more often than chance
+   primary {'kiro_tablets_with_kuro': (0.3636, 11), 'others_with_kuro': (1.0, 26), 'p': 1.0}
+   robustness {}
+== FF4: The first entry is the unique largest in lists of goods
+   primary {'first_is_max': '27/122', 'null': 20.3, 'p': 0.0575}
+   robustness {}
+== FF5: Tablets with fractions carry a total more often
+   primary {'with_fractions': (0.0732, 123), 'without': (0.1631, 141), 'p': 0.9935}
+   robustness {}
+== FF6: Lists of men are longer than lists of goods
+   primary {'VIR_lists': (7.1538, 26), 'goods_lists': (4.3672, 128), 'p': 0.001}
+   robustness {}
+== FF7: Fraction entries stand on neighbouring lines more often than chance
+   primary {'adjacent': 126, 'null': 113.6, 'p': 0.004}
+   robustness {}
+== FF8: Lists that open with a heading are longer
+   primary {'with_heading': (5.1935, 93), 'without': (4.7714, 140), 'p': 0.1989}
+   robustness {}
+== FF9: Multi-commodity tablets list commodities in a consistent order
+   primary {'order_asymmetry': 59, 'null': 27.9, 'p': 0.0005, 'tablets': 53}
+   robustness {'commonest orders': [('GRA<OLE', 16), ('OLE<OLIV', 9), ('CYP<VIN', 8), ('OLE<VIN', 7), ('GRA<OLIV', 6), ('GRA<VIN', 6), ('GRA<VIR', 5), ('OLE<CYP', 4), ('VIR<CYP', 4), ('CYP<OLE', 3)]}
+== FF10: Same-commodity entries stand in blocks more often than chance
+   primary {'adjacent_same': 60, 'null': 53.3, 'p': 0.069, 'lists': 38}
+   robustness {}
+
+primary p: {'FF1': 0.005, 'FF2': 0.1889, 'FF3': 1.0, 'FF4': 0.0575, 'FF5': 0.9935, 'FF6': 0.001, 'FF7': 0.004, 'FF8': 0.1989, 'FF9': 0.0005, 'FF10': 0.069}
+survive BH at 5%: ['FF1', 'FF6', 'FF7', 'FF9']

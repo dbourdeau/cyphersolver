@@ -1,0 +1,27 @@
+== V7: Knossos lists with more Minoan names omit the logogram more
+   primary {'spearman': -0.046, 'p': 0.3429, 'lists': 25}
+   robustness {}
+== V8: Scribes who omit the logogram more have more Minoan names
+   primary {'spearman': 0.257, 'p': 0.7157, 'scribes': 6}
+   robustness {}
+== V9: Room of the Chariot Tablets lists omit the logogram more
+   primary {'RCT': (0.9, 4), 'later': (0.7, 59), 'p': 0.8791}
+   robustness {}
+== V10: Knossos lists of women omit the logogram more than lists of men
+   primary {'MUL': (0.4167, 18), 'VIR': (0.8158, 18), 'p': 0.0005}
+   robustness {}
+== V13: Knossos lists that omit the logogram contain undeciphered-sign words more often
+   primary {'omitting': (0.1579, 38), 'full': (0.2857, 35), 'p': 0.953}
+   robustness {}
+== V14: Logogram omission differs by Knossos scribe
+   primary {'between_SS': 1.813, 'null': 0.484, 'p': 0.0005, 'lists': 40, 'groups': 6}
+   robustness {}
+== V15: Logogram omission differs by Knossos findspot
+   primary {'between_SS': 1.394, 'null': 0.631, 'p': 0.0285, 'lists': 43, 'groups': 7}
+   robustness {}
+== V16: Pylos personnel lists omit the logogram more than goods lists
+   primary {'personnel': (0.9646, 33), 'goods': (0.8597, 75), 'p': 0.9975}
+   robustness {}
+
+primary p: {'V7': 0.3429, 'V8': 0.7157, 'V9': 0.8791, 'V10': 0.0005, 'V13': 0.953, 'V14': 0.0005, 'V15': 0.0285, 'V16': 0.9975}
+survive BH at 5%: ['V10', 'V14']

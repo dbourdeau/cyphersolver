@@ -1,0 +1,143 @@
+{
+ "title": "commodity order, persons and commodities",
+ "method": "Round 44 (second loop, round 6 of 10): the canonical commodity order, and persons and commodities.\n\nGG1  The commodity order of round 43 FF9 holds at Haghia Triada alone.\nGG2  It holds outside Haghia Triada.\nGG3  Linear A's commodity order agrees with Linear B's order for the same commodities more than chance.\nGG4  It holds with the two sides of a tablet read as one sequence (side a, then b).\nGG5  Same-commodity tablets share entry labels beyond chance (sides merged, shuffling within site).\nGG8  On tablets with both grain and oil, grain amounts exceed oil amounts more often than not.\nGG9  The first commodity on a multi-commodity tablet carries the tablet's largest amount more often than chance.\nGG10 Wine stands last among a tablet's commodities more often than chance.\nGG11 Cyperus and wine stand on the same tablets beyond chance.\nGG12 Oil and olives stand on the same tablets beyond chance.",
+ "primary_p": {
+  "GG1": 0.0004997501249375312,
+  "GG2": 0.09395302348825588,
+  "GG3": 0.001999000499750125,
+  "GG4": 0.0004997501249375312,
+  "GG5": 0.03498250874562719,
+  "GG8": 0.0106353759765625,
+  "GG9": 0.0004997501249375312,
+  "GG10": 0.0014992503748125937,
+  "GG11": 0.4682658670664668,
+  "GG12": 0.0004997501249375312
+ },
+ "bh_supported": [
+  "GG1",
+  "GG10",
+  "GG12",
+  "GG3",
+  "GG4",
+  "GG5",
+  "GG8",
+  "GG9"
+ ],
+ "details": {
+  "GG1": {
+   "prediction": "The commodity order holds at Haghia Triada",
+   "primary": {
+    "asymmetry": 50,
+    "null": 20.8,
+    "p": 0.0005,
+    "tablets": 36
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "GG2": {
+   "prediction": "The commodity order holds outside Haghia Triada",
+   "primary": {
+    "asymmetry": 19,
+    "null": 14.6,
+    "p": 0.094,
+    "tablets": 17
+   },
+   "robustness": {},
+   "p": 0.09395302348825588
+  },
+  "GG3": {
+   "prediction": "Linear A commodity order agrees with Linear B order",
+   "primary": {
+    "agreement": 0.704,
+    "null": 0.5,
+    "p": 0.002,
+    "pairs": 54
+   },
+   "robustness": {
+    "Linear B majority orders": [
+     "GRA<CYP",
+     "GRA<OLIV",
+     "GRA<VIN",
+     "OLIV<CYP",
+     "OLIV<VIN",
+     "CYP<VIN",
+     "GRA<OLE",
+     "VIN<OLE"
+    ]
+   },
+   "p": 0.001999000499750125
+  },
+  "GG4": {
+   "prediction": "The commodity order holds with tablet sides merged",
+   "primary": {
+    "asymmetry": 57,
+    "null": 28.5,
+    "p": 0.0005,
+    "tablets": 50
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "GG5": {
+   "prediction": "Same-commodity tablets share entry labels (within-site shuffle)",
+   "primary": {
+    "diff": 0.0465,
+    "null": 0.008,
+    "p": 0.035,
+    "tablets": 43
+   },
+   "robustness": {},
+   "p": 0.03498250874562719
+  },
+  "GG8": {
+   "prediction": "On tablets with both, grain amounts exceed oil amounts",
+   "primary": {
+    "grain_larger": "13/16",
+    "sign_test_p": 0.0106
+   },
+   "robustness": {},
+   "p": 0.0106353759765625
+  },
+  "GG9": {
+   "prediction": "The first commodity carries the largest amount more often than chance",
+   "primary": {
+    "first_has_max": "30/53",
+    "null": 17.8,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "GG10": {
+   "prediction": "Wine stands last more often than chance",
+   "primary": {
+    "VIN_last": "13/17",
+    "null": 6.7,
+    "p": 0.0015
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "GG11": {
+   "prediction": "Cyperus and wine stand on the same tablets beyond chance",
+   "primary": {
+    "together": 8,
+    "null": 7.42,
+    "p": 0.4683
+   },
+   "robustness": {},
+   "p": 0.4682658670664668
+  },
+  "GG12": {
+   "prediction": "Oil and olives stand on the same tablets beyond chance",
+   "primary": {
+    "together": 11,
+    "null": 4.13,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  }
+ }
+}

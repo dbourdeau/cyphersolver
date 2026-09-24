@@ -1,0 +1,33 @@
+== Z1: Knossos names begin with a Q-row sign more often than Pylos names
+   primary {'target': 0.0518, 'comparison': 0.0177, 'p': 0.0085, 'n': [637, 339]}
+   robustness {}
+== Z2: Knossos names have fewer internal vowel signs than Pylos names
+   primary {'target': 0.1413, 'comparison': 0.2655, 'p': 0.0005, 'n': [637, 339]}
+   robustness {}
+== Z3: Knossos names end in a pure vowel sign less often than Pylos names
+   primary {'target': 0.0502, 'comparison': 0.1947, 'p': 0.0005, 'n': [637, 339]}
+   robustness {}
+== Z4: Pre-Greek stems have fewer internal vowel signs than Greek stems
+   primary {'target': 0.2073, 'comparison': 0.2581, 'p': 0.002, 'n': [1143, 1143]}
+   robustness {}
+== Z5: Eteocretan has fewer internal vowel signs than Greek
+   primary {'target': 0.5714, 'comparison': 0.563, 'p': 0.6032, 'n': [35, 119]}
+   robustness {}
+== Z6: Cretan place names have fewer internal vowel signs than Pylos place names
+   primary {'target': 0.0685, 'comparison': 0.2917, 'p': 0.0005, 'n': [73, 120]}
+   robustness {}
+== Z7: Linear A's vowel profile is closer to Pre-Greek than to Greek
+   primary {'jsd_LA_PreGreek': 0.0433, 'jsd_LA_Greek': 0.0951, 'p': 0.0005}
+   robustness {}
+== Z8: Linear A's consonant profile is closer to Pre-Greek than to Greek
+   primary {'jsd_LA_PreGreek': 0.1281, 'jsd_LA_Greek': 0.112, 'p': 0.9995}
+   robustness {}
+== Z9: Knossos common words without a Greek etymology are more Linear A-like
+   primary {'auc': 0.564, 'p': 0.046, 'n': [199, 80]}
+   robustness {}
+== Z10: Knossos tablets with undeciphered-sign words carry more Minoan-shaped names
+   primary {'with_star_words': (-0.2255, 45), 'without': (-0.1711, 557), 'p': 0.6557}
+   robustness {}
+
+primary p: {'Z1': 0.0085, 'Z2': 0.0005, 'Z3': 0.0005, 'Z4': 0.002, 'Z5': 0.6032, 'Z6': 0.0005, 'Z7': 0.0005, 'Z8': 0.9995, 'Z9': 0.046, 'Z10': 0.6557}
+survive BH at 5%: ['Z1', 'Z2', 'Z3', 'Z4', 'Z6', 'Z7']

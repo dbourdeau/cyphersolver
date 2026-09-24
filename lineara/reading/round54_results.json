@@ -1,0 +1,173 @@
+{
+ "title": "Minoan bookkeeping habits in Linear B",
+ "method": "Round 54: did Linear B inherit the Minoan bookkeeping habits? Benjamini-Hochberg at 5% across the ten.\n\nLinear B entries are parsed from linearb.xyz: each logogram followed directly by a whole number gives one entry\n(logogram, amount); sub-units (T, V, Z ...) are ignored. A record's list is its entries in order.\n\nLBC1  Knossos lists are largest-first beyond chance (mean Kendall tau; order shuffled within lists).\nLBC2  Pylos lists are largest-first beyond chance.\nLBC3  Knossos lists are more strictly largest-first than Pylos lists.\nLBC4  The first entry is the unique largest beyond chance (Knossos and Pylos pooled).\nLBC5  Equal amounts (other than 1) stand next to each other beyond chance.\nLBC6  FIC (figs, the NI sign) comes after GRA on tablets with both, more often than not.\nLBC7  FIC comes before VIN on tablets with both, more often than not.\nLBC8  Commodities appear in a consistent order across tablets (order asymmetry).\nLBC9  Amounts of 2 or more are even more often than odd (Knossos).\nLBC10 Lists that carry a total word (to-so, to-sa, to-so-de, to-sa-de) are more strictly largest-first.",
+ "primary_p": {
+  "LBC1": 0.0004997501249375312,
+  "LBC2": 0.022988505747126436,
+  "LBC3": 0.0004997501249375312,
+  "LBC4": 0.0004997501249375312,
+  "LBC5": 0.08495752123938032,
+  "LBC6": 1.0,
+  "LBC7": 1.0,
+  "LBC8": 0.0004997501249375312,
+  "LBC9": 4.508375575215329e-93,
+  "LBC10": 1.0
+ },
+ "bh_supported": [
+  "LBC1",
+  "LBC2",
+  "LBC3",
+  "LBC4",
+  "LBC8",
+  "LBC9"
+ ],
+ "details": {
+  "LBC1": {
+   "prediction": "Knossos lists are largest-first",
+   "primary": {
+    "mean_tau": 0.365,
+    "null": 0.0,
+    "p": 0.0005,
+    "lists": 251
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "LBC2": {
+   "prediction": "Pylos lists are largest-first",
+   "primary": {
+    "mean_tau": 0.097,
+    "null": -0.001,
+    "p": 0.023,
+    "lists": 86
+   },
+   "robustness": {},
+   "p": 0.022988505747126436
+  },
+  "LBC3": {
+   "prediction": "Knossos lists are more strictly largest-first than Pylos lists",
+   "primary": {
+    "KN": 0.365,
+    "PY": 0.097,
+    "p": 0.0005
+   },
+   "robustness": {
+    "within commodity": {
+     "diff": 0.47,
+     "p": 0.2079,
+     "lists": 189
+    },
+    "by commodity": [
+     [
+      "GRA",
+      0.267,
+      0.007,
+      5,
+      11
+     ],
+     [
+      "VIR",
+      -0.19,
+      0.05,
+      16,
+      31
+     ],
+     [
+      "OVIS",
+      0.587,
+      -0.157,
+      121,
+      5
+     ]
+    ]
+   },
+   "p": 0.0004997501249375312
+  },
+  "LBC4": {
+   "prediction": "The first entry is the unique largest",
+   "primary": {
+    "first_is_max": "155/337",
+    "null": 76.6,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "LBC5": {
+   "prediction": "Equal amounts (not 1) stand next to each other beyond chance",
+   "primary": {
+    "adjacent_equal": 71,
+    "null": 63.3,
+    "p": 0.085
+   },
+   "robustness": {},
+   "p": 0.08495752123938032
+  },
+  "LBC6": {
+   "prediction": "Figs come after grain",
+   "primary": {
+    "grain_first": "0/0",
+    "sign_test_p": 1.0
+   },
+   "robustness": {
+    "rerun with NI as the fig logogram": {
+     "grain_first": 37,
+     "n": 37,
+     "p": 7.275957614183426e-12
+    }
+   },
+   "p": 1.0
+  },
+  "LBC7": {
+   "prediction": "Figs come before wine",
+   "primary": {
+    "figs_first": "0/0",
+    "sign_test_p": 1.0
+   },
+   "robustness": {
+    "rerun with NI as the fig logogram": {
+     "figs_first": 2,
+     "n": 3,
+     "p": 0.5
+    }
+   },
+   "p": 1.0
+  },
+  "LBC8": {
+   "prediction": "Commodities appear in a consistent order",
+   "primary": {
+    "asymmetry": 239,
+    "null": 107.5,
+    "p": 0.0005,
+    "tablets": 210
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "LBC9": {
+   "prediction": "Knossos amounts of 2+ are even more often than odd",
+   "primary": {
+    "even": "1472/2037",
+    "p": 0.0
+   },
+   "robustness": {},
+   "p": 4.508375575215329e-93
+  },
+  "LBC10": {
+   "prediction": "Lists with a total word are more strictly largest-first",
+   "primary": {
+    "with_total": [
+     -0.0678,
+     32
+    ],
+    "without": [
+     0.3345,
+     305
+    ],
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "rule": "A new learning is a hypothesis that survives Benjamini-Hochberg at 5% and its post-run checks, and is not a restatement or replication of an earlier result. The loop stops after three consecutive rounds with zero new learnings, or when no untested hypothesis with a plausible mechanism remains.",
+ "started": "2026-09-24, after round 58",
+ "rounds": [
+  {
+   "round": 59,
+   "tested": 10,
+   "bh_survivors": 5,
+   "new_learnings": [
+    "N1",
+    "N3",
+    "N6",
+    "N9",
+    "N10"
+   ],
+   "consecutive_zero": 0
+  },
+  {
+   "round": 60,
+   "tested": 10,
+   "bh_survivors": 3,
+   "new_learnings": [
+    "P3",
+    "P10"
+   ],
+   "consecutive_zero": 0
+  },
+  {
+   "round": 61,
+   "tested": 10,
+   "bh_survivors": 3,
+   "new_learnings": [
+    "Q4"
+   ],
+   "consecutive_zero": 0
+  },
+  {
+   "round": 62,
+   "tested": 7,
+   "bh_survivors": 3,
+   "new_learnings": [
+    "R2",
+    "R4"
+   ],
+   "consecutive_zero": 0
+  },
+  {
+   "round": 63,
+   "tested": 7,
+   "bh_survivors": 4,
+   "new_learnings": [
+    "S1",
+    "S2",
+    "S8"
+   ],
+   "consecutive_zero": 0
+  },
+  {
+   "round": 64,
+   "tested": 7,
+   "bh_survivors": 3,
+   "new_learnings": [
+    "U3",
+    "U4",
+    "U5"
+   ],
+   "consecutive_zero": 0,
+   "narrowed_later": {
+    "U4": "round 65: goods lists KN 82% vs PY 86% (p 0.21); rests on women-and-children format and two name lists"
+   }
+  },
+  {
+   "round": 65,
+   "tested": 8,
+   "bh_survivors": 2,
+   "new_learnings": [],
+   "consecutive_zero": 1
+  },
+  {
+   "round": 66,
+   "tested": 9,
+   "bh_survivors": 4,
+   "new_learnings": [],
+   "consecutive_zero": 2
+  },
+  {
+   "round": 67,
+   "tested": 6,
+   "bh_survivors": 0,
+   "new_learnings": [],
+   "consecutive_zero": 3
+  }
+ ],
+ "stopped": {
+  "after_round": 67,
+  "reason": "three consecutive rounds with no new learning (65, 66, 67)"
+ }
+}

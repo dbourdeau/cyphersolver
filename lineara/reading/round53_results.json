@@ -1,0 +1,169 @@
+{
+ "title": "consonant harmony in depth",
+ "method": "Round 53: consonant harmony in depth. Benjamini-Hochberg at 5% across the ten.\n\n\"Harmony\" = neighbouring syllables with the same consonant and different signs (TA-TI, not SA-SA).\n\nHC1  Non-adjacent harmony (syllables one apart) replicates on SigLA's transcription against Linear B.\nHC2  Adjacent harmony with different signs replicates on SigLA against Linear B.\nHC3  Harmony holds for obstruents (p t k d q s z) and sonorants (n r m w j) separately (larger p is primary).\nHC4  Knossos names show harmony (different signs) more than Pylos names.\nHC5  Eteocretan shows harmony (different signs) more than Greek.\nHC6  The ratio of same-consonant to same-place-different-consonant neighbours is higher in Linear A than Linear B.\nHC7  Harmony holds in three-sign words and in words of four or more signs separately (larger p is primary).\nHC8  Harmony holds in Linear A words attested only once.\nHC9  Two-sign words share a consonant between their syllables more often than in Linear B.\nHC10 Linear A words with harmony are attested at more sites than other words (frequency held within strata).",
+ "primary_p": {
+  "HC1": 0.0034982508745627187,
+  "HC2": 0.0004997501249375312,
+  "HC3": 0.022488755622188907,
+  "HC4": 0.12343828085957022,
+  "HC5": 0.014492753623188406,
+  "HC6": 0.07946026986506746,
+  "HC7": 0.07146426786606697,
+  "HC8": 0.0014992503748125937,
+  "HC9": 0.5292353823088456,
+  "HC10": 1.0
+ },
+ "bh_supported": [
+  "HC1",
+  "HC2",
+  "HC3",
+  "HC5",
+  "HC8"
+ ],
+ "details": {
+  "HC1": {
+   "prediction": "Non-adjacent harmony on SigLA vs Linear B",
+   "primary": {
+    "target": 0.0728,
+    "comparison": 0.0492,
+    "p": 0.0035,
+    "n": [
+     536,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.0034982508745627187
+  },
+  "HC2": {
+   "prediction": "Adjacent harmony (different signs) on SigLA vs Linear B",
+   "primary": {
+    "target": 0.0378,
+    "comparison": 0.021,
+    "p": 0.0005,
+    "n": [
+     536,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "HC3": {
+   "prediction": "Harmony holds for obstruents and sonorants separately",
+   "primary": {
+    "obstruents": {
+     "LA": 0.0405,
+     "LB": 0.0282,
+     "p": 0.0225
+    },
+    "sonorants": {
+     "LA": 0.0421,
+     "LB": 0.0222,
+     "p": 0.0015
+    },
+    "p (larger)": 0.0225
+   },
+   "robustness": {},
+   "p": 0.022488755622188907
+  },
+  "HC4": {
+   "prediction": "Knossos names show harmony more than Pylos names",
+   "primary": {
+    "target": 0.0182,
+    "comparison": 0.012,
+    "p": 0.1234,
+    "n": [
+     637,
+     339
+    ]
+   },
+   "robustness": {},
+   "p": 0.12343828085957022
+  },
+  "HC5": {
+   "prediction": "Eteocretan shows harmony more than Greek",
+   "primary": {
+    "target": 0.0625,
+    "comparison": 0.011,
+    "p": 0.0145,
+    "n": [
+     35,
+     119
+    ]
+   },
+   "robustness": {},
+   "p": 0.014492753623188406
+  },
+  "HC6": {
+   "prediction": "Same consonant preferred over same place more than in Linear B",
+   "primary": {
+    "target": 0.2034,
+    "comparison": 0.1618,
+    "p": 0.0795,
+    "n": [
+     760,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.07946026986506746
+  },
+  "HC7": {
+   "prediction": "Harmony holds in 3-sign and 4+-sign words separately",
+   "primary": {
+    "3 signs": {
+     "LA": 0.0338,
+     "LB": 0.0224,
+     "p": 0.0715
+    },
+    "4+ signs": {
+     "LA": 0.0336,
+     "LB": 0.0185,
+     "p": 0.0065
+    },
+    "p (larger)": 0.0715
+   },
+   "robustness": {},
+   "p": 0.07146426786606697
+  },
+  "HC8": {
+   "prediction": "Harmony holds in words attested once",
+   "primary": {
+    "target": 0.0352,
+    "comparison": 0.021,
+    "p": 0.0015,
+    "n": [
+     631,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "HC9": {
+   "prediction": "Two-sign words share their consonant more often than in Linear B",
+   "primary": {
+    "target": 0.0538,
+    "comparison": 0.0532,
+    "p": 0.5292,
+    "n": [
+     279,
+     827
+    ]
+   },
+   "robustness": {},
+   "p": 0.5292353823088456
+  },
+  "HC10": {
+   "prediction": "Words with harmony are attested at more sites",
+   "primary": {
+    "diff_mean_sites": -0.098,
+    "p": 1.0,
+    "harmonic_words": 52
+   },
+   "robustness": {},
+   "p": 1.0
+  }
+ }
+}

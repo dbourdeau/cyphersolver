@@ -1,0 +1,30 @@
+== SY1: The word precedes the commodity sign more often than not
+   primary {'word_first': '149/150', 'p': 0.0}
+   robustness {}
+== SY2: Entry order differs by site
+   primary {'chi2': 11.1, 'null': 4.1, 'p': 0.1734}
+   robustness {'word-first share by site': {'Haghia Triada': 1.0, 'Khania': 1.0, 'Tylissos': 1.0, 'Zakros': 0.92, 'Arkhalkhori': 1.0}}
+== SY3: Entry order differs by scribe
+   primary {'chi2': 9.3, 'null': 6.1, 'p': 0.097, 'entries': 61}
+   robustness {}
+== SY4: Commodity-first entries are first entries more often
+   primary {'commodity_first_in_first_entry': (0.0, 1), 'word_first_in_first_entry': (0.3624, 149), 'p': 1.0}
+   robustness {}
+== SY5: A number follows a commodity sign more often than a word
+   primary {'after_commodity': (0.6916, 454), 'after_word': (0.5346, 911), 'p': 0.0005}
+   robustness {}
+== SY6: Linear A puts the word first less often than Linear B
+   primary {'LA': '149/150', 'LB': '1340/1775', 'p': 1.0}
+   robustness {}
+== SY8: Heading words are followed by a commodity sign more often than entry labels
+   primary {'heading': (0.0301, 166), 'entry_label': (0.2159, 593), 'p': 1.0}
+   robustness {}
+== SY9: Transaction terms are followed by a commodity sign more often than other words
+   primary {'terms': (0.5217, 46), 'other_words': (0.1353, 865), 'p': 0.0005}
+   robustness {}
+== SY10: Entry labels are followed by a number more often than headings
+   primary {'entry_label': (0.7201, 593), 'heading': (0.0663, 166), 'p': 0.0005}
+   robustness {}
+
+primary p: {'SY1': 0.0, 'SY2': 0.1734, 'SY3': 0.097, 'SY4': 1.0, 'SY5': 0.0005, 'SY6': 1.0, 'SY8': 1.0, 'SY9': 0.0005, 'SY10': 0.0005}
+survive BH at 5%: ['SY1', 'SY10', 'SY5', 'SY9']

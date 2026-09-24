@@ -1,0 +1,36 @@
+== G1 Linear A -u = Knossos -o: Linear A words in -Cu have a Knossos name X-Co more often than words in other vowels
+   primary {'diff': 0.0173, 'p': 0.2624, 'rates (hits, words) by Linear A final vowel': {'a': (8, 242), 'e': (5, 164), 'i': (4, 166), 'o': (1, 22), 'u': (5, 105)}}
+   robustness {'matches': ['A-TI-RU ~ a-ti-ro', 'DI-DE-RU ~ di-de-ro', 'KA-JU ~ ka-jo', 'KA-SA-RU ~ ka-sa-ro', 'QA-QA-RU ~ qa-qa-ro'], 'Pylos control': {'diff': 0.0011, 'p': 0.6322, 'matches': ['A-NU ~ a-no']}}
+== G2 -u = -o without R: G1 holds without the R row
+   primary {'diff': -0.0184, 'p': 0.916, 'rates': {'a': (8, 210), 'e': (3, 128), 'i': (4, 154), 'o': (0, 5), 'u': (1, 85)}}
+   robustness {'matches': ['KA-JU ~ ka-jo']}
+== G3 Linear A -i = Knossos -e: Linear A final -Ci corresponds to Knossos -Ce more than other final vowels do
+   primary {'diff': -0.0038, 'p': 1.0, 'rates': {'a': (1, 242), 'e': (1, 164), 'i': (0, 166), 'o': (0, 22), 'u': (0, 105)}}
+   robustness {'matches': [], 'dental consonants only': {'diff': -0.0058, 'p': 1.0}}
+== G4 Greek -o on Minoan stems: Knossos names built on a Linear A stem end in -o more often than other Knossos names
+   primary {'built_on_LA': '41/56', 'other': '358/581', 'p': 0.0569}
+   robustness {'endings of names built on Linear A stems': {'no': 9, 'ro': 8, 'ko': 7, 'to': 5, 'qo': 3, 'so': 3, 'mo': 2, 'jo': 2, 'ta': 2, 'me': 1}}
+== G18 -a kept, -u changed: Linear A words in -a match Knossos names exactly more often than words in -u
+   primary {'a_exact': '2/247', 'u_exact': '0/110', 'p': 0.4855}
+   robustness {'exact -a matches': ['DA-I-PI-TA', 'I-TA-JA']}
+== G16 -u words are names: Linear A words ending in -u are entry labels more often than words with other finals
+   primary {'u_entry_share': 0.691, 'other_entry_share': 0.604, 'p': 0.0669, 'n': [94, 445]}
+   robustness {}
+== G8 coronal rule in SigLA: The coronal rule holds in SigLA's independent transcription
+   primary {'logOR_SigLA': 0.819, 'logOR_LB': -0.246, 'p': 0.001, 'sigla_words': 536}
+   robustness {'logOR_lineara_xyz': 0.719, 'word types shared with lineara.xyz': 470}
+== G13 consonant rows in SigLA: Consonant-row cohesion holds in SigLA's transcription
+   primary {'diff': 0.0786, 'p': 0.0005, 'signs': 45}
+   robustness {'lineara.xyz value (decipher10 Y1)': 0.0748}
+== G10 coronal rule site by site: Sites with 30+ word types show a positive log odds ratio more often than chance
+   primary {'positive': '6/6', 'sign_test_p': 0.0156}
+   robustness {'sites (name, words, logOR)': [('Haghia Triada', 360, 0.514), ('Khania', 68, 0.997), ('Knossos', 55, 0.168), ('Palaikastro', 52, 0.74), ('Phaistos', 42, 1.171), ('Zakros', 100, 1.196)], 'Linear B logOR': -0.246}
+== G11 Minoan names and special signs by scribe: Knossos scribes with more Minoan-shaped names use more special signs
+   primary {'spearman': -0.247, 'p': 0.8632, 'scribes': 25}
+   robustness {}
+== G14 coronal rule in undeciphered-sign words: Knossos words with undeciphered signs follow the coronal rule more than other Knossos words
+   primary {'logOR_star_words': -0.42, 'logOR_other_KN': -0.272, 'p': 0.7133, 'n': [105, 1948]}
+   robustness {}
+
+primary p: {'G1': 0.2624, 'G2': 0.916, 'G3': 1.0, 'G4': 0.0569, 'G18': 0.4855, 'G16': 0.0669, 'G8': 0.001, 'G13': 0.0005, 'G10': 0.0156, 'G11': 0.8632, 'G14': 0.7133}
+survive BH at 5%: ['G13', 'G8']

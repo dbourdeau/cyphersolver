@@ -1,0 +1,122 @@
+{
+ "title": "spelling and sound patterns",
+ "method": "Round 29 (loop round 1 of 10): spelling and sound patterns of Linear A words, each against Linear B.\n\nP1  Linear A words begin with a pure vowel sign more often than Linear B words.\nP2  Linear A writes two pure vowel signs in succession (hiatus) more often than Linear B.\nP3  o-signs stand word-initially more often than other signs in Linear A, more so than in Linear B.\nP4  After an a-syllable, Linear A has an i or u vowel sign (a diphthong such as A-I, TA-I) more often than Linear B.\nP5  Linear A words begin with a repeated syllable (KI-KI-, QA-QA-) more often than Linear B words.\nP6  Q-row signs stand word-initially more often in Linear A than in Linear B.\nP7  R-row signs stand word-initially less often in Linear A than in Linear B.\nP8  In Linear A the final syllable has vowel a more often than internal syllables do, more so than in Linear B.\nP9  Linear A words end in a pure vowel sign more often than Linear B words.\nP10 The next sign is more predictable from the current one in Linear A than in Linear B (conditional entropy,\n    Linear B subsampled to Linear A's size).",
+ "primary_p": {
+  "P1": 0.992503748125937,
+  "P2": 1.0,
+  "P3": 0.0004997501249375312,
+  "P4": 0.06196901549225387,
+  "P5": 0.057971014492753624,
+  "P6": 0.0004997501249375312,
+  "P7": 0.9580209895052474,
+  "P8": 0.9630184907546226,
+  "P9": 1.0,
+  "P10": 1.0
+ },
+ "bh_supported": [
+  "P3",
+  "P6"
+ ],
+ "details": {
+  "P1": {
+   "prediction": "Linear A words begin with a pure vowel more often than Linear B words",
+   "primary": {
+    "LA": 0.238,
+    "LB": 0.279,
+    "p": 0.9925
+   },
+   "robustness": {},
+   "p": 0.992503748125937
+  },
+  "P2": {
+   "prediction": "Linear A writes two pure vowel signs in succession more often",
+   "primary": {
+    "LA": 0.003,
+    "LB": 0.02,
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "P3": {
+   "prediction": "o-signs are word-initial more than other signs, more so than in Linear B",
+   "primary": {
+    "LA_gap": 0.022,
+    "LB_gap": -0.113,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "P4": {
+   "prediction": "After an a-syllable, Linear A has I or U more often (diphthongs)",
+   "primary": {
+    "LA": 0.0537,
+    "LB": 0.039,
+    "p": 0.062
+   },
+   "robustness": {},
+   "p": 0.06196901549225387
+  },
+  "P5": {
+   "prediction": "Linear A words begin with a repeated syllable more often",
+   "primary": {
+    "LA": 0.0158,
+    "LB": 0.0088,
+    "p": 0.058
+   },
+   "robustness": {},
+   "p": 0.057971014492753624
+  },
+  "P6": {
+   "prediction": "Q-row signs are word-initial more often in Linear A",
+   "primary": {
+    "LA": 0.62,
+    "LB": 0.277,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "P7": {
+   "prediction": "R-row signs are word-initial less often in Linear A",
+   "primary": {
+    "LA": 0.174,
+    "LB": 0.139,
+    "p": 0.958
+   },
+   "robustness": {},
+   "p": 0.9580209895052474
+  },
+  "P8": {
+   "prediction": "Final syllables favour a over internal ones more in Linear A",
+   "primary": {
+    "LA_gap": -0.09,
+    "LB_gap": -0.053,
+    "p": 0.963
+   },
+   "robustness": {},
+   "p": 0.9630184907546226
+  },
+  "P9": {
+   "prediction": "Linear A words end in a pure vowel sign more often",
+   "primary": {
+    "LA": 0.039,
+    "LB": 0.105,
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "P10": {
+   "prediction": "The next sign is more predictable in Linear A than in size-matched Linear B",
+   "primary": {
+    "LA_H": 2.829,
+    "LB_H_subsampled": 2.625,
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  }
+ }
+}

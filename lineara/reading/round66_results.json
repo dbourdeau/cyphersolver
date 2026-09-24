@@ -1,0 +1,159 @@
+{
+ "title": "fixed allocations, fraction signs and final signs",
+ "method": "Round 66 (saturation loop 8): fixed allocations, and what the fraction signs and final signs go with. BH at 5%\nacross the nine.\n\nW1  A name-slot word on 2+ tablets gets similar amounts each time: the mean within-word variance of log amount\n    (one mean per tablet) is lower than when amounts are shuffled among name-slot entries of the same site.\nW2  The same for descriptor-slot words.\nW3  A name-slot word on 2+ tablets gets exactly the same amount on two tablets more often than chance (same shuffle).\nW4  Fraction signs are associated with the commodity of their tablet (single-commodity tablets).\nW5  Fraction signs are associated with site.\nW6  At Haghia Triada, fraction signs are associated with scribe.\nW7  The final sign of name-slot words is associated with the commodity of the tablet.\nW8  The final sign of descriptor-slot words is associated with the commodity they stand before.\nW9  Name-slot words on 2+ tablets stand on tablets of the same commodity more often than chance (commodities of\n    single-commodity tablets shuffled among the word's tablets' site).",
+ "primary_p": {
+  "W1": 0.0024987506246876563,
+  "W2": 0.9710144927536232,
+  "W3": 0.7381309345327336,
+  "W4": 0.11394302848575712,
+  "W5": 0.01899050474762619,
+  "W6": 0.0004997501249375312,
+  "W7": 0.0004997501249375312,
+  "W8": 0.5677161419290355,
+  "W9": 0.041979010494752625
+ },
+ "bh_supported": [
+  "W1",
+  "W5",
+  "W6",
+  "W7"
+ ],
+ "details": {
+  "W1": {
+   "prediction": "A recurring name gets similar amounts",
+   "primary": {
+    "mean_var": 0.782,
+    "null": 1.297,
+    "p": 0.0025,
+    "words": 47
+   },
+   "robustness": {},
+   "p": 0.0024987506246876563
+  },
+  "W2": {
+   "prediction": "A recurring descriptor gets similar amounts",
+   "primary": {
+    "mean_var": 2.391,
+    "null": 1.404,
+    "p": 0.971,
+    "words": 7
+   },
+   "robustness": {},
+   "p": 0.9710144927536232
+  },
+  "W3": {
+   "prediction": "A recurring name gets exactly the same amount on two tablets",
+   "primary": {
+    "words_with_repeat": 10,
+    "null": 11.05,
+    "p": 0.7381
+   },
+   "robustness": {},
+   "p": 0.7381309345327336
+  },
+  "W4": {
+   "prediction": "Fraction signs go with the commodity",
+   "primary": {
+    "chi2": 32.4,
+    "null": 24.5,
+    "p": 0.1139,
+    "n": 98,
+    "groups": {
+     "OLE": 19,
+     "VIN": 19,
+     "GRA": 17,
+     "CYP": 35,
+     "OLIV": 8
+    }
+   },
+   "robustness": {},
+   "p": 0.11394302848575712
+  },
+  "W5": {
+   "prediction": "Fraction signs differ by site",
+   "primary": {
+    "chi2": 53.3,
+    "null": 30.7,
+    "p": 0.019,
+    "n": 261,
+    "groups": {
+     "Haghia Triada": 160,
+     "Khania": 70,
+     "Petras": 8,
+     "Phaistos": 5,
+     "Tylissos": 6,
+     "Zakros": 12
+    }
+   },
+   "robustness": {},
+   "p": 0.01899050474762619
+  },
+  "W6": {
+   "prediction": "Fraction signs differ by Haghia Triada scribe",
+   "primary": {
+    "chi2": 66.6,
+    "null": 36.7,
+    "p": 0.0005,
+    "n": 67,
+    "groups": {
+     "HT Scribe 2": 12,
+     "HT Scribe 8": 13,
+     "HT Scribe 10": 9,
+     "HT Scribe 1": 12,
+     "HT Scribe 14": 5,
+     "HT Scribe 5": 7,
+     "HT Scribe 6": 9
+    }
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "W7": {
+   "prediction": "Final sign of name words goes with the tablet commodity",
+   "primary": {
+    "chi2": 322.2,
+    "null": 201.6,
+    "p": 0.0005,
+    "n": 181,
+    "groups": {
+     "VIR": 90,
+     "OLE": 10,
+     "VIN": 44,
+     "GRA": 29,
+     "OLIV": 8
+    }
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "W8": {
+   "prediction": "Final sign of descriptor words goes with the commodity",
+   "primary": {
+    "chi2": 227.7,
+    "null": 232.0,
+    "p": 0.5677,
+    "n": 138,
+    "groups": {
+     "OLE": 20,
+     "VIR": 15,
+     "VIN": 8,
+     "GRA": 61,
+     "CYP": 26,
+     "OLIV": 8
+    }
+   },
+   "robustness": {},
+   "p": 0.5677161419290355
+  },
+  "W9": {
+   "prediction": "A recurring name stays with one commodity",
+   "primary": {
+    "single_commodity_words": "11/25",
+    "null": 5.41,
+    "p": 0.042
+   },
+   "robustness": {},
+   "p": 0.041979010494752625
+  }
+ }
+}

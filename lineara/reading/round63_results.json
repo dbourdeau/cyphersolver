@@ -1,0 +1,112 @@
+{
+ "title": "the commodity sign written once and understood",
+ "method": "Round 63 (saturation loop 5): the commodity sign written once and understood. BH at 5% across the seven.\n\nS1  On single-commodity tablets the commodity sign stands in the first entry more often than in later entries.\nS2  Linear B single-commodity lists write the logogram on a larger share of entries than Linear A lists do.\nS3  On multi-commodity tablets, an entry without a commodity sign has an amount closer (in log) to the median amount\n    of the preceding commodity on that tablet than to the median of the tablet's other commodities.\nS4  Within commodity blocks on multi-commodity tablets, entries run largest-first beyond chance.\nS5  On single-commodity tablets, entries without the sign are name-slot entries more often than entries with it.\nS7  Entries with a fraction carry the commodity sign more often than entries without a fraction.\nS8  On the same tablet, entries with the commodity sign have larger amounts than entries without it.",
+ "primary_p": {
+  "S1": 0.0009995002498750624,
+  "S2": 0.0004997501249375312,
+  "S3": 0.4598034154610208,
+  "S4": 0.1184407796101949,
+  "S5": 0.0004997501249375312,
+  "S7": 0.0399800099950025,
+  "S8": 4.9059921544502465e-06
+ },
+ "bh_supported": [
+  "S1",
+  "S2",
+  "S5",
+  "S8"
+ ],
+ "details": {
+  "S1": {
+   "prediction": "The commodity sign stands in the first entry more often",
+   "primary": {
+    "first_entry": [
+     0.5455,
+     55
+    ],
+    "later_entries": [
+     0.3125,
+     256
+    ],
+    "p": 0.001
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "S2": {
+   "prediction": "Linear B writes the logogram on more entries than Linear A",
+   "primary": {
+    "LB_share": 0.822,
+    "LA_share": 0.383,
+    "p": 0.0005,
+    "n": [
+     181,
+     55
+    ]
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "S3": {
+   "prediction": "Sign-less entries match the preceding commodity's scale",
+   "primary": {
+    "closer_to_preceding": "50/98",
+    "sign_test_p": 0.4598
+   },
+   "robustness": {},
+   "p": 0.4598034154610208
+  },
+  "S4": {
+   "prediction": "Commodity blocks run largest-first",
+   "primary": {
+    "mean_tau": 0.12,
+    "null": -0.001,
+    "p": 0.1184,
+    "blocks": 33
+   },
+   "robustness": {},
+   "p": 0.1184407796101949
+  },
+  "S5": {
+   "prediction": "Sign-less entries are name entries more often",
+   "primary": {
+    "signless_name": [
+     0.3134,
+     201
+    ],
+    "signed_name": [
+     0.0,
+     110
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "S7": {
+   "prediction": "Fraction entries carry the commodity sign more often",
+   "primary": {
+    "with_fraction": [
+     0.5565,
+     239
+    ],
+    "without": [
+     0.4852,
+     540
+    ],
+    "p": 0.04
+   },
+   "robustness": {},
+   "p": 0.0399800099950025
+  },
+  "S8": {
+   "prediction": "Signed entries are larger than sign-less entries on the same tablet",
+   "primary": {
+    "signed_larger": "63/85",
+    "sign_test_p": 0.0
+   },
+   "robustness": {},
+   "p": 4.9059921544502465e-06
+  }
+ }
+}

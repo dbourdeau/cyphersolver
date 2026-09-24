@@ -1,0 +1,21 @@
+== Y1: Phaistos words occur at Haghia Triada less often
+   primary {'Phaistos': (0.1154, 52), 'other_nonHT': (0.0565, 549), 'p': 0.974}
+   robustness {}
+== Y2: Phaistos uses signs unattested at Haghia Triada more often
+   primary {'Phaistos': (0.0523, 153), 'other_nonHT': (0.0259, 1774), 'p': 0.062}
+   robustness {}
+== Y3: Phaistos lists repeat the commodity sign more
+   primary {'Phaistos': (0.2254, 3), 'LM_IB': (0.3868, 53), 'p': 0.8611}
+   robustness {}
+== Y4: Phaistos lists run largest-first
+   primary {'mean_tau': -0.275, 'null': 0.009, 'p': 0.9025, 'lists': 5}
+   robustness {}
+== Y5: Vessel words are name-slot words more often
+   primary {'diff': -0.0036, 'null': -0.0012, 'p': 0.7636, 'vessel_types': 63, 'in_name': 2, 'in_desc': 1}
+   robustness {}
+== Y6: Phaistos words are shorter
+   primary {'Phaistos': (2.9423, 52), 'other_nonHT': (3.2313, 549), 'p': 0.0905}
+   robustness {}
+
+primary p: {'Y1': 0.974, 'Y2': 0.062, 'Y3': 0.8611, 'Y4': 0.9025, 'Y5': 0.7636, 'Y6': 0.0905}
+survive BH at 5%: []

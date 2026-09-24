@@ -1,0 +1,181 @@
+{
+ "title": "replications of the second loop",
+ "method": "Round 48 (second loop, round 10 of 10): replications of the second loop's results.\n\nLL1  Neighbouring syllables repeat the consonant more than in Linear B (round 39 BB6), on SigLA.\nLL2  Final consonants are more restricted relative to initial ones than in Linear B (BB11), on SigLA.\nLL3  e versus o depends on the consonant more than in Linear B (round 40 CC5), on SigLA.\nLL4  The commodity order (round 43 FF9) holds with grain removed.\nLL5  Agreement with Linear B's commodity order (round 44 GG3) holds on pairs not involving grain.\nLL6  Unread signs are word-initial more often than known signs (round 45 HH1), at Haghia Triada and elsewhere\n     separately (the larger p is the primary).\nLL7  NI is followed directly by a number more often than other single signs (HH11), at HT and elsewhere separately.\nLL8  Religious words begin with a pure vowel more often than administrative ones (round 46 II2), on SigLA.\nLL9  Lists with a total are more strictly largest-first (round 43 FF1), in lists of five or more entries.\nLL10 Pre-Greek words repeat neighbouring consonants more than Greek (round 47 KK2), against an unmatched sample.",
+ "primary_p": {
+  "LL1": 0.0004997501249375312,
+  "LL2": 0.017991004497751123,
+  "LL3": 0.001996007984031936,
+  "LL4": 0.0034982508745627187,
+  "LL5": 0.39980009995002497,
+  "LL6": 0.04397801099450275,
+  "LL7": 0.02148925537231384,
+  "LL8": 0.07246376811594203,
+  "LL9": 0.0009995002498750624,
+  "LL10": 0.0009995002498750624
+ },
+ "bh_supported": [
+  "LL1",
+  "LL10",
+  "LL2",
+  "LL3",
+  "LL4",
+  "LL7",
+  "LL9"
+ ],
+ "details": {
+  "LL1": {
+   "prediction": "Neighbouring consonant repetition (SigLA vs Linear B)",
+   "primary": {
+    "target": 0.0558,
+    "comparison": 0.0298,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "LL2": {
+   "prediction": "Final consonants more restricted (SigLA vs Linear B)",
+   "primary": {
+    "target": 0.0373,
+    "comparison": 0.1317,
+    "p": 0.018
+   },
+   "robustness": {},
+   "p": 0.017991004497751123
+  },
+  "LL3": {
+   "prediction": "e versus o depends on the consonant (SigLA)",
+   "primary": {
+    "nmi_SigLA": 0.325,
+    "nmi_LB": 0.094,
+    "p": 0.002
+   },
+   "robustness": {},
+   "p": 0.001996007984031936
+  },
+  "LL4": {
+   "prediction": "The commodity order holds with grain removed",
+   "primary": {
+    "asymmetry": 30,
+    "null": 16.1,
+    "p": 0.0035,
+    "tablets": 35
+   },
+   "robustness": {},
+   "p": 0.0034982508745627187
+  },
+  "LL5": {
+   "prediction": "Agreement with Linear B order on pairs without grain",
+   "primary": {
+    "agreement": 0.556,
+    "null": 0.497,
+    "p": 0.3998
+   },
+   "robustness": {
+    "Linear B orders used": [
+     "OLIV<CYP",
+     "OLIV<VIN",
+     "CYP<VIN",
+     "VIN<OLE"
+    ]
+   },
+   "p": 0.39980009995002497
+  },
+  "LL6": {
+   "prediction": "Unread signs word-initial more often, at HT and elsewhere",
+   "primary": {
+    "HT": {
+     "flagged": [
+      0.4396,
+      91
+     ],
+     "rest": [
+      0.3484,
+      1151
+     ],
+     "p": 0.044
+    },
+    "other": {
+     "flagged": [
+      0.4259,
+      108
+     ],
+     "rest": [
+      0.3025,
+      1663
+     ],
+     "p": 0.0065
+    },
+    "p (larger)": 0.044
+   },
+   "robustness": {},
+   "p": 0.04397801099450275
+  },
+  "LL7": {
+   "prediction": "NI followed by a number more often, at HT and elsewhere",
+   "primary": {
+    "HT": {
+     "flagged": [
+      0.7805,
+      41
+     ],
+     "rest": [
+      0.5871,
+      201
+     ],
+     "p": 0.0165
+    },
+    "other": {
+     "flagged": [
+      0.6552,
+      29
+     ],
+     "rest": [
+      0.4304,
+      158
+     ],
+     "p": 0.0215
+    },
+    "p (larger)": 0.0215
+   },
+   "robustness": {},
+   "p": 0.02148925537231384
+  },
+  "LL8": {
+   "prediction": "Religious words vowel-initial more often (SigLA)",
+   "primary": {
+    "target": 0.36,
+    "comparison": 0.2115,
+    "p": 0.0725
+   },
+   "robustness": {},
+   "p": 0.07246376811594203
+  },
+  "LL9": {
+   "prediction": "Lists with a total more strictly largest-first (5+ entries)",
+   "primary": {
+    "with_total_tau": [
+     0.4794,
+     21
+    ],
+    "without": [
+     0.1124,
+     62
+    ],
+    "p": 0.001
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "LL10": {
+   "prediction": "Pre-Greek consonant repetition against an unmatched Greek sample",
+   "primary": {
+    "target": 0.0482,
+    "comparison": 0.0305,
+    "p": 0.001
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  }
+ }
+}

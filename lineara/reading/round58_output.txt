@@ -1,0 +1,27 @@
+== DS1: Words before a commodity sign are associated with that commodity
+   primary {'chi2': 32.9, 'null': 24.9, 'p': 0.1254, 'pairs': 29}
+   robustness {'word -> commodity': ['SA-RA2 -> GRA x8', 'SA-RA2 -> CYP x5', 'JE-DI -> OLE x2', 'KI-RE-TA-NA -> OLE x1', 'SA-RA2 -> OLE x1', 'JE-DI -> GRA x1', 'A-DU -> VIR x1', 'A-DU -> GRA x1', 'SA-RA2 -> VIR x1', 'KI-RE-TA-NA -> VIR x1', 'KU-RO -> GRA x1', 'KI-RE-TA-NA -> GRA x1', 'KU-RO -> OLIV x1', 'A-DU -> CYP x1', 'KU-RO -> CAP x1']}
+== DS2: Transaction terms before a commodity sign are associated with that commodity
+   primary {'chi2': 16.4, 'null': 12.8, 'p': 0.2004, 'pairs': 24}
+   robustness {'term -> commodity': ['SA-RA2 -> GRA x8', 'SA-RA2 -> CYP x5', 'KA-PA -> VIR x2', 'KU-PA -> GRA x2', 'SA-RA2 -> OLE x1', 'A-DU -> VIR x1', 'A-DU -> GRA x1', 'SA-RA2 -> VIR x1', 'A-DU -> CYP x1', 'A-DU -> OLE x1']}
+== DS3: Pre-commodity words end in -JA more often
+   primary {'pre_commodity': (0.0455, 110), 'other': (0.0422, 545), 'p': 0.5152}
+   robustness {}
+== DS4: Pre-commodity words recur more than pre-number words
+   primary {'type_token_pre_commodity': 0.78, 'pre_number_same_size': 0.867, 'p': 0.001}
+   robustness {}
+== DS5: Pre-commodity words are attested at more sites
+   primary {'pre_commodity_mean_sites': (1.1909, 110), 'pre_number': (1.0544, 349), 'p': 0.0015}
+   robustness {}
+== DS6: Oil ligature syllable matches the first sign of the preceding word
+   primary {'matches': '0/19', 'null': 1.07, 'p': 1.0}
+   robustness {'pairs': ['A... OLE+U', 'KI... OLE+U', 'JE... OLE+KI', 'QA... OLE+DI', 'SA... OLE+DI', 'I... OLE+DI', 'WI... OLE+DI', 'SA... OLE+KI', 'RE... OLE+KI', 'TE... OLE+MI', 'KU... OLE+U', 'KI... OLE+QE', 'JE... OLE+KI', 'A... OLE+TA', 'ZA... OLE+KI']}
+== DS7: Words before VIR differ in syllable profile from words before goods
+   primary {'jsd': 0.3852, 'null': 0.3076, 'p': 0.0515, 'n': [14, 79]}
+   robustness {}
+== DS8: -JA words stand before VIR more often than before goods
+   primary {'JA_before_VIR': (0.0, 5), 'other_before_VIR': (0.1103, 136), 'p': 1.0}
+   robustness {}
+
+primary p: {'DS1': 0.1254, 'DS2': 0.2004, 'DS3': 0.5152, 'DS4': 0.001, 'DS5': 0.0015, 'DS6': 1.0, 'DS7': 0.0515, 'DS8': 1.0}
+survive BH at 5%: ['DS4', 'DS5']

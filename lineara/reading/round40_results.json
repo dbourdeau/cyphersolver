@@ -1,0 +1,158 @@
+{
+ "title": "the e/o rule with the refined consonant sets",
+ "method": "Round 40 (second loop, round 2 of 10): the e/o rule with the refined consonant sets of round 30.\n\nTAKE = {t, r, s, n, q} (consonants followed by e/o), AVOID = {k, p, m, j, w}. logOR = odds of e/o after TAKE against\nafter AVOID.\n\nCC1  The rule holds in first syllables (Linear A against Linear B).\nCC2  The rule holds in final syllables.\nCC4  i/u are depleted after TAKE relative to AVOID more than in Linear B.\nCC5  Within e/o syllables, the choice of e or o depends on the consonant more than in Linear B (normalised MI).\nCC6  Knossos personal names show the rule more than Pylos personal names.\nCC7  Knossos-only place names show it more than Pylos-only ones.\nCC8  Pre-Greek stems show it more than length-matched Greek stems.\nCC9  The rule replicates on SigLA's transcription (against Linear B).\nCC10 Eteocretan shows it more than Greek.\nCC11 Khania's Linear A shows it (against Linear B).",
+ "primary_p": {
+  "CC1": 0.0004997501249375312,
+  "CC2": 0.0004997501249375312,
+  "CC4": 0.0004997501249375312,
+  "CC5": 0.001996007984031936,
+  "CC6": 0.5867066466766616,
+  "CC7": 0.8710644677661169,
+  "CC8": 0.9980009995002499,
+  "CC9": 0.0004997501249375312,
+  "CC10": 0.7061469265367316,
+  "CC11": 0.0004997501249375312
+ },
+ "bh_supported": [
+  "CC1",
+  "CC11",
+  "CC2",
+  "CC4",
+  "CC5",
+  "CC9"
+ ],
+ "details": {
+  "CC1": {
+   "prediction": "The rule holds in first syllables",
+   "primary": {
+    "target": 1.481,
+    "comparison": -0.124,
+    "p": 0.0005,
+    "n": [
+     760,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "CC2": {
+   "prediction": "The rule holds in final syllables",
+   "primary": {
+    "target": 1.243,
+    "comparison": -0.087,
+    "p": 0.0005,
+    "n": [
+     760,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "CC4": {
+   "prediction": "i/u are depleted after the e/o-taking consonants more than in Linear B",
+   "primary": {
+    "logOR_iu_LA": -0.191,
+    "logOR_iu_LB": 0.347,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "CC5": {
+   "prediction": "e versus o depends on the consonant more than in Linear B",
+   "primary": {
+    "nmi_LA": 0.33,
+    "nmi_LB_subsampled": 0.083,
+    "p": 0.002
+   },
+   "robustness": {},
+   "p": 0.001996007984031936
+  },
+  "CC6": {
+   "prediction": "Knossos names (ending removed) show the rule more than Pylos names",
+   "primary": {
+    "target": -0.263,
+    "comparison": -0.211,
+    "p": 0.5867,
+    "n": [
+     637,
+     339
+    ]
+   },
+   "robustness": {},
+   "p": 0.5867066466766616
+  },
+  "CC7": {
+   "prediction": "Cretan place names show the rule more than Pylos place names",
+   "primary": {
+    "target": -0.521,
+    "comparison": -0.015,
+    "p": 0.8711,
+    "n": [
+     58,
+     119
+    ]
+   },
+   "robustness": {},
+   "p": 0.8710644677661169
+  },
+  "CC8": {
+   "prediction": "Pre-Greek stems show the rule more than Greek stems",
+   "primary": {
+    "target": -0.351,
+    "comparison": -0.011,
+    "p": 0.998,
+    "n": [
+     1143,
+     1143
+    ]
+   },
+   "robustness": {},
+   "p": 0.9980009995002499
+  },
+  "CC9": {
+   "prediction": "The rule holds on SigLA's transcription",
+   "primary": {
+    "target": 1.437,
+    "comparison": -0.138,
+    "p": 0.0005,
+    "n": [
+     536,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "CC10": {
+   "prediction": "Eteocretan shows the rule more than Greek",
+   "primary": {
+    "target": -0.217,
+    "comparison": 0.057,
+    "p": 0.7061,
+    "n": [
+     35,
+     119
+    ]
+   },
+   "robustness": {},
+   "p": 0.7061469265367316
+  },
+  "CC11": {
+   "prediction": "Khania's Linear A shows the rule",
+   "primary": {
+    "target": 0.976,
+    "comparison": -0.138,
+    "p": 0.0005,
+    "n": [
+     68,
+     4866
+    ]
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  }
+ }
+}

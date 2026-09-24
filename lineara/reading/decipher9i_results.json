@@ -1,0 +1,213 @@
+{
+ "method": "Nine hypotheses on questions not yet asked: what drives the shared commodity vocabularies (decipher8h H7), how\nLinear A at Knossos relates to Knossos Linear B, where the signs Linear B dropped cluster, and regional practice.\n\nEach has a prediction stated before the test ran and one primary test with its own null. Benjamini-Hochberg at\n5% runs across the nine. Per-tablet tests merge sides a and b.\n\nI1  Single-commodity tablets of the same commodity share entry labels (persons) more than other tablets.\nI2  Single-commodity tablets of the same commodity share heading words more than other tablets.\nI3  Linear A words from Knossos use syllables more like Knossos Linear B than Linear A words from other sites do.\nI4  The R/T e/o rule (e/o after coronals) is weaker in Linear A from Knossos than from other sites.\nI5  Signs with no Linear B value are commoner in religious words than in administrative words.\nI6  Special signs (PA3, RA2, PU2, TA2) are commoner in religious words than in administrative words.\nI7  Commodity ligatures (OLE+KI, OLE+U, ...) are site-specific: adjunct and site are associated beyond chance.\nI8  Heading words are attested at two or more sites more often than entry labels (terms travel, persons do not).\nI9  Entry-label names at Haghia Triada differ in syllable profile from entry-label names elsewhere.",
+ "primary_p": {
+  "I1": 0.010994502748625687,
+  "I2": 1.0,
+  "I3": 0.3278360819590205,
+  "I4": 0.14042978510744628,
+  "I5": 0.9975012493753124,
+  "I6": 0.6016991504247876,
+  "I7": 0.0004997501249375312,
+  "I8": 0.6341829085457271,
+  "I9": 0.01199400299850075
+ },
+ "bh_supported": [
+  "I7",
+  "I1",
+  "I9"
+ ],
+ "details": {
+  "I1 persons by commodity": {
+   "prediction": "Same-commodity tablets share entry labels more than other tablets",
+   "primary": {
+    "diff_share_pairs_sharing": 0.0465,
+    "null_mean": -0.0001,
+    "p": 0.011,
+    "tablets": 43
+   },
+   "robustness": {}
+  },
+  "I2 headings by commodity": {
+   "prediction": "Same-commodity tablets share heading words more than other tablets",
+   "primary": {
+    "diff_share_pairs_sharing": 0.0,
+    "null_mean": 0.0,
+    "p": 1.0,
+    "tablets": 19
+   },
+   "robustness": {}
+  },
+  "I3 Knossos Linear A and Knossos Linear B": {
+   "prediction": "Linear A words from Knossos are closer to Knossos Linear B than other Linear A words are",
+   "primary": {
+    "jsd_KN_LA_to_KN_LB": 0.2284,
+    "jsd_other_LA_to_KN_LB": 0.1813,
+    "p": 0.3278,
+    "words": [
+     55,
+     730
+    ]
+   },
+   "robustness": {
+    "same comparison against Pylos Linear B": {
+     "diff": -0.0474,
+     "p": 0.4168
+    }
+   }
+  },
+  "I4 rule weaker at Knossos": {
+   "prediction": "The R/T e/o rule is weaker in Linear A from Knossos than elsewhere",
+   "primary": {
+    "logOR_Knossos": 0.168,
+    "logOR_other": 0.72,
+    "p": 0.1404,
+    "words": [
+     55,
+     730
+    ]
+   },
+   "robustness": {}
+  },
+  "I5 dropped signs in religious words": {
+   "prediction": "Signs with no Linear B value are commoner in religious words",
+   "primary": {
+    "religious_share": 0.0434,
+    "admin_share": 0.0762,
+    "p": 0.9975,
+    "n": [
+     212,
+     698
+    ]
+   },
+   "robustness": {
+    "unread signs in religious words": [
+     [
+      "*301",
+      13
+     ],
+     [
+      "*118",
+      2
+     ],
+     [
+      "*47",
+      2
+     ],
+     [
+      "*164",
+      1
+     ],
+     [
+      "*188",
+      1
+     ],
+     [
+      "*306",
+      1
+     ],
+     [
+      "*333",
+      1
+     ],
+     [
+      "*34",
+      1
+     ]
+    ]
+   }
+  },
+  "I6 special signs in religious words": {
+   "prediction": "Special signs are commoner in religious words",
+   "primary": {
+    "religious_share": 0.026,
+    "admin_share": 0.0279,
+    "p": 0.6017
+   },
+   "robustness": {}
+  },
+  "I7 ligatures by site": {
+   "prediction": "Commodity ligature adjuncts are associated with sites",
+   "primary": {
+    "chi2": 194.42,
+    "null_mean": 75.61,
+    "p": 0.0005,
+    "tokens": 158
+   },
+   "robustness": {
+    "by site": {
+     "Haghia Triada": {
+      "OLE+U": 19,
+      "OLE+KI": 17,
+      "OLE+MI": 15,
+      "OLE+DI": 13,
+      "GRA+PA": 10,
+      "GRA+KU": 7
+     },
+     "Khania": {
+      "OLE+TA": 5,
+      "VIR+KA": 5,
+      "VIN+WI": 1,
+      "GRA+PA": 1,
+      "OLE+RI": 1
+     },
+     "Tylissos": {
+      "OLE+KI": 5,
+      "OLE+MI": 5,
+      "OLE+U": 4,
+      "OLE+ME": 1,
+      "OLE+TU": 1,
+      "OLE+NE": 1
+     },
+     "Zakros": {
+      "GRA+PA": 9,
+      "VIN+RA": 2,
+      "VIN+KA": 1,
+      "QE+PA": 1,
+      "OLE+KI": 1
+     }
+    }
+   }
+  },
+  "I8 terms travel, persons stay": {
+   "prediction": "Heading words are attested at two or more sites more often than entry labels",
+   "primary": {
+    "heading_multi_site": "6/135",
+    "entry_multi_site": "16/346",
+    "p": 0.6342
+   },
+   "robustness": {
+    "multi-site headings": [
+     "A-MA",
+     "A-MI",
+     "A-PA",
+     "A-RA",
+     "A-RI",
+     "PA-RA"
+    ]
+   }
+  },
+  "I9 regional names": {
+   "prediction": "Entry-label names at Haghia Triada differ in syllable profile from names elsewhere",
+   "primary": {
+    "jsd": 0.0703,
+    "null_mean": 0.0489,
+    "p": 0.012,
+    "names": [
+     228,
+     125
+    ]
+   },
+   "robustness": {
+    "control: non-entry administrative words": {
+     "jsd": 0.1149,
+     "null_mean": 0.0681,
+     "p": 0.0005,
+     "words": [
+      112,
+      129
+     ]
+    }
+   }
+  }
+ }
+}

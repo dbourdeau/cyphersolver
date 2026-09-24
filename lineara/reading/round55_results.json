@@ -1,0 +1,129 @@
+{
+ "title": "Linear A bookkeeping habits kept in Linear B",
+ "method": "Round 55: which Linear A bookkeeping habits did Linear B keep? Each test repeats a Linear A finding on the Linear B\ntablets of Knossos and Pylos (NI read as the fig logogram FIC). Benjamini-Hochberg at 5% across the ten.\n\nC1  Cyperus comes before figs (Linear A: 19 of 19).\nC2  Oil comes before figs (Linear A: 11 of 16).\nC3  Figs stand on grain tablets beyond chance (Linear A: 19 vs 9).\nC4  Fig entries carry sub-units more often than entries of men.\nC5  Grain amounts exceed oil amounts on tablets with both (Linear A: 13 of 16).\nC6  The first commodity carries the tablet's largest amount beyond chance (Linear A: 30 of 53).\nC7  Wine is the last commodity beyond chance (Linear A: 13 of 17).\nC8  Oil and olives stand on the same tablets beyond chance (Linear A: 11 vs 4).\nC9  Grain is the first commodity on tablets with several commodities beyond chance.\nC10 Lists of goods (not men, not sheep) are largest-first beyond chance.",
+ "primary_p": {
+  "C1": 1.0,
+  "C2": 1.0,
+  "C3": 0.0004997501249375312,
+  "C4": 0.0004997501249375312,
+  "C5": 1.0,
+  "C6": 0.0004997501249375312,
+  "C7": 0.7001499250374813,
+  "C8": 1.0,
+  "C9": 0.0004997501249375312,
+  "C10": 0.01899050474762619
+ },
+ "bh_supported": [
+  "C10",
+  "C3",
+  "C4",
+  "C6",
+  "C9"
+ ],
+ "details": {
+  "C1": {
+   "prediction": "Cyperus before figs",
+   "primary": {
+    "cyperus_first": "0/0",
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "C2": {
+   "prediction": "Oil before figs",
+   "primary": {
+    "oil_first": "0/0",
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "C3": {
+   "prediction": "Figs stand on grain tablets beyond chance",
+   "primary": {
+    "together": 36,
+    "null": 4.1,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "C4": {
+   "prediction": "Fig entries carry sub-units more often than entries of men",
+   "primary": {
+    "FIC": [
+     0.4419,
+     43
+    ],
+    "VIR": [
+     0.0,
+     562
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "C5": {
+   "prediction": "Grain amounts exceed oil amounts on tablets with both",
+   "primary": {
+    "grain_larger": "0/0",
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "C6": {
+   "prediction": "The first commodity carries the largest amount",
+   "primary": {
+    "first_has_max": "152/222",
+    "null": 100.9,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "C7": {
+   "prediction": "Wine is the last commodity",
+   "primary": {
+    "VIN_last": "2/9",
+    "null": 2.2,
+    "p": 0.7001
+   },
+   "robustness": {},
+   "p": 0.7001499250374813
+  },
+  "C8": {
+   "prediction": "Oil and olives stand on the same tablets beyond chance",
+   "primary": {
+    "together": 0,
+    "null": 1.0,
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "C9": {
+   "prediction": "Grain is the first commodity",
+   "primary": {
+    "GRA_first": "46/63",
+    "null": 25.6,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "C10": {
+   "prediction": "Lists of goods (not men, not sheep) are largest-first",
+   "primary": {
+    "mean_tau": 0.122,
+    "null": -0.001,
+    "p": 0.019,
+    "lists": 77
+   },
+   "robustness": {},
+   "p": 0.01899050474762619
+  }
+ }
+}

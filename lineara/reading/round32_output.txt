@@ -1,0 +1,33 @@
+== U1: Knossos names are more Minoan-shaped than Thebes/Mycenae/Tiryns names
+   primary {'auc': 0.634, 'p': 0.0025, 'n': [637, 46]}
+   robustness {}
+== U2: Knossos-only names are more Minoan-shaped than Knossos names shared with the mainland
+   primary {'auc': 0.579, 'p': 0.0045, 'n': [637, 131]}
+   robustness {}
+== U3: Knossos names without a Greek etymology are more Minoan-shaped than Greek ones
+   primary {'auc': 0.555, 'p': 0.025, 'n': [520, 117]}
+   robustness {}
+== U4: Pylos names without a Greek etymology are more Minoan-shaped than Greek ones
+   primary {'auc': 0.544, 'p': 0.0875, 'n': [224, 115]}
+   robustness {}
+== U5: Knossos theonyms are more Minoan-shaped than Pylos theonyms
+   primary {'auc': 0.281, 'p': 0.8976, 'n': [8, 4]}
+   robustness {}
+== U6: Stems of Knossos ethnics are more Minoan-shaped than stems of Pylos ethnics
+   primary {'auc': 0.675, 'p': 0.1204, 'n': [7, 11]}
+   robustness {}
+== U7: Knossos names with undeciphered signs are more Minoan-shaped in their readable signs
+   primary {'auc': 0.445, 'p': 0.8611, 'n': [31, 637]}
+   robustness {}
+== U8: Pylos names also attested at Knossos are more Minoan-shaped than Pylos-only names
+   primary {'auc': 0.496, 'p': 0.5592, 'n': [104, 339]}
+   robustness {}
+== U9: Knossos names with special signs are more Minoan-shaped
+   primary {'auc': 0.516, 'p': 0.3783, 'n': [36, 601]}
+   robustness {}
+== U10: Room of the Chariot Tablets names are more Minoan-shaped (stem-scored) than later Knossos names
+   primary {'auc': 0.438, 'p': 0.9545, 'n': [70, 454]}
+   robustness {}
+
+primary p: {'U1': 0.0025, 'U2': 0.0045, 'U3': 0.025, 'U4': 0.0875, 'U5': 0.8976, 'U6': 0.1204, 'U7': 0.8611, 'U8': 0.5592, 'U9': 0.3783, 'U10': 0.9545}
+survive BH at 5%: ['U1', 'U2']

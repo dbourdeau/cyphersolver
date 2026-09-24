@@ -1,0 +1,33 @@
+== LBC1: Knossos lists are largest-first
+   primary {'mean_tau': 0.365, 'null': 0.0, 'p': 0.0005, 'lists': 251}
+   robustness {}
+== LBC2: Pylos lists are largest-first
+   primary {'mean_tau': 0.097, 'null': -0.001, 'p': 0.023, 'lists': 86}
+   robustness {}
+== LBC3: Knossos lists are more strictly largest-first than Pylos lists
+   primary {'KN': 0.365, 'PY': 0.097, 'p': 0.0005}
+   robustness {}
+== LBC4: The first entry is the unique largest
+   primary {'first_is_max': '155/337', 'null': 76.6, 'p': 0.0005}
+   robustness {}
+== LBC5: Equal amounts (not 1) stand next to each other beyond chance
+   primary {'adjacent_equal': 71, 'null': 63.3, 'p': 0.085}
+   robustness {}
+== LBC6: Figs come after grain
+   primary {'grain_first': '0/0', 'sign_test_p': 1.0}
+   robustness {}
+== LBC7: Figs come before wine
+   primary {'figs_first': '0/0', 'sign_test_p': 1.0}
+   robustness {}
+== LBC8: Commodities appear in a consistent order
+   primary {'asymmetry': 239, 'null': 107.5, 'p': 0.0005, 'tablets': 210}
+   robustness {}
+== LBC9: Knossos amounts of 2+ are even more often than odd
+   primary {'even': '1472/2037', 'p': 0.0}
+   robustness {}
+== LBC10: Lists with a total word are more strictly largest-first
+   primary {'with_total': (-0.0678, 32), 'without': (0.3345, 305), 'p': 1.0}
+   robustness {}
+
+primary p: {'LBC1': 0.0005, 'LBC2': 0.023, 'LBC3': 0.0005, 'LBC4': 0.0005, 'LBC5': 0.085, 'LBC6': 1.0, 'LBC7': 1.0, 'LBC8': 0.0005, 'LBC9': 0.0, 'LBC10': 1.0}
+survive BH at 5%: ['LBC1', 'LBC2', 'LBC3', 'LBC4', 'LBC8', 'LBC9']

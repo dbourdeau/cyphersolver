@@ -1,0 +1,771 @@
+{
+ "method": "Do proposed relatives of Minoan match Linear A better than languages that cannot be related?\n\nEach lexicon's words are spelled by fixed Linear B rules (decided before any result was seen):\n  * letters normalised: s-like -> s; t, th -> t; k, g, q, kh, h-dot, h-breve, x, gh -> k; b, p, ph, f -> p;\n    d, dh -> d; l -> r; y -> j; v -> w; glottal and pharyngeal stops and plain h dropped; long vowels,\n    doubled letters and tones collapsed;\n  * every vowel starts a syllable with the consonant just before it (or none);\n  * a consonant before another consonant is dropped if it is s, r, m or n, otherwise written with the\n    next vowel; a word-final consonant is dropped.\nExact matches with Linear A word types (3+ signs) are counted for each lexicon and compared with the\nmatches its own syllables give when shuffled across its words (word lengths kept, 1,000 runs). Real\nwords beat that null even in unrelated languages, so the test that counts is family against controls:\na proposed relative should exceed its null by more than the controls exceed theirs (binomial split of\nall matches in proportion to the null expectations). Proposed: Luwian (Melchert 1993), Akkadian and\nUgaritic (Semitic), Hurrian (Laroche 1980), Etruscan (Tyrsenian). Not proposed: Greek (60,000 Kaikki entries), Sumerian.\nControls: Hawaiian, Maori, Samoan, Tongan, Yoruba. Egyptian (no vowels) and Hittite (481 mostly\nlogographic entries) are left out; Hurrian has no open lexicon.\nPositive control and power: the same rules and null applied to Greek against the Linear B vocabulary,\nthe one case where the relation is known, and an equal-size Greek sample against 491 random Linear B\ntypes (the size of the Linear A target).\nThe semantic check asks, for the three Linear A words whose sense is known from the arithmetic\n(KU-RO total, KI-RO deficit, PO-TO-KU-RO grand total), whether any language supplies a same-spelled word\nwith a fitting meaning, and how often a control language does the same.",
+ "linear_a_types_3plus": 491,
+ "reps": 1000,
+ "languages": {
+  "Luwian": {
+   "kind": "proposed",
+   "forms_3plus": 540,
+   "matches": 1,
+   "per_1000": 1.85,
+   "shuffle_null_mean": 1.86,
+   "ratio_to_null": 0.54,
+   "p_ge": 0.8372,
+   "matches_list": [
+    {
+     "linear_a": "A-RI-JA",
+     "word": "aliya",
+     "gloss": "?",
+     "la_records": [
+      "PH28a"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Hurrian": {
+   "kind": "proposed",
+   "forms_3plus": 294,
+   "matches": 1,
+   "per_1000": 3.4,
+   "shuffle_null_mean": 0.91,
+   "ratio_to_null": 1.1,
+   "p_ge": 0.6034,
+   "matches_list": [
+    {
+     "linear_a": "A-PA-KI",
+     "word": "abalgi",
+     "gloss": "",
+     "la_records": [
+      "KNZb40"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Akkadian": {
+   "kind": "proposed",
+   "forms_3plus": 336,
+   "matches": 3,
+   "per_1000": 8.93,
+   "shuffle_null_mean": 1.41,
+   "ratio_to_null": 2.13,
+   "p_ge": 0.1718,
+   "matches_list": [
+    {
+     "linear_a": "A-KA-RU",
+     "word": "akālum",
+     "gloss": "to eat, consume; to use, to have usufruct of; to pocket, (to take for oneself)",
+     "la_records": [
+      "HT2",
+      "HT86a",
+      "HT86b"
+     ]
+    },
+    {
+     "linear_a": "A-RA-TU",
+     "word": "arantum",
+     "gloss": "A type of grass (potentially fennel)",
+     "la_records": [
+      "ZA7a"
+     ]
+    },
+    {
+     "linear_a": "E-KU-RU",
+     "word": "eqlum",
+     "gloss": "field, cultivated field; terrain, land, region",
+     "la_records": [
+      "ZA11a"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Ugaritic": {
+   "kind": "proposed",
+   "forms_3plus": 288,
+   "matches": 4,
+   "per_1000": 13.89,
+   "shuffle_null_mean": 1.19,
+   "ratio_to_null": 3.36,
+   "p_ge": 0.035,
+   "matches_list": [
+    {
+     "linear_a": "A-KA-RU",
+     "word": "ảgāru",
+     "gloss": "to hire",
+     "la_records": [
+      "HT2",
+      "HT86a",
+      "HT86b"
+     ]
+    },
+    {
+     "linear_a": "A-RA-TU",
+     "word": "ʿašratu",
+     "gloss": "banquet",
+     "la_records": [
+      "ZA7a"
+     ]
+    },
+    {
+     "linear_a": "A-TA-NA",
+     "word": "ḫatana",
+     "gloss": "to marry (said of a future husband)",
+     "la_records": [
+      "ZA9"
+     ]
+    },
+    {
+     "linear_a": "PA-NA-TU",
+     "word": "banātu",
+     "gloss": "plural of 𐎁𐎚 (bt /⁠bittu⁠/)",
+     "la_records": [
+      "KH7b"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Etruscan": {
+   "kind": "proposed",
+   "forms_3plus": 27,
+   "matches": 0,
+   "per_1000": 0.0,
+   "shuffle_null_mean": 0.09,
+   "ratio_to_null": 0.0,
+   "p_ge": 1.0,
+   "matches_list": [],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Greek": {
+   "kind": "not proposed",
+   "forms_3plus": 28606,
+   "matches": 27,
+   "per_1000": 0.94,
+   "shuffle_null_mean": 11.86,
+   "ratio_to_null": 2.28,
+   "p_ge": 0.001,
+   "matches_list": [
+    {
+     "linear_a": "A-DA-RA",
+     "word": "andra",
+     "gloss": "",
+     "la_records": [
+      "KNZf31"
+     ]
+    },
+    {
+     "linear_a": "A-KA-TA",
+     "word": "akantha",
+     "gloss": "",
+     "la_records": [
+      "KN32a"
+     ]
+    },
+    {
+     "linear_a": "A-KI-RO",
+     "word": "argilos",
+     "gloss": "",
+     "la_records": [
+      "ARKH4b"
+     ]
+    },
+    {
+     "linear_a": "A-PA-KI",
+     "word": "abaki",
+     "gloss": "",
+     "la_records": [
+      "KNZb40"
+     ]
+    },
+    {
+     "linear_a": "A-RI-PA",
+     "word": "alibas",
+     "gloss": "",
+     "la_records": [
+      "PE2"
+     ]
+    },
+    {
+     "linear_a": "A-RO-TE",
+     "word": "aroter",
+     "gloss": "",
+     "la_records": [
+      "CRZg4"
+     ]
+    },
+    {
+     "linear_a": "A-TA-DE",
+     "word": "astandes",
+     "gloss": "",
+     "la_records": [
+      "CR(?)Zf1"
+     ]
+    },
+    {
+     "linear_a": "A-TA-NA",
+     "word": "athana",
+     "gloss": "",
+     "la_records": [
+      "ZA9"
+     ]
+    },
+    {
+     "linear_a": "A-TA-NA-TE",
+     "word": "athanate",
+     "gloss": "",
+     "la_records": [
+      "ZA10a"
+     ]
+    },
+    {
+     "linear_a": "A-TA-RE",
+     "word": "athare",
+     "gloss": "",
+     "la_records": [
+      "ZA8"
+     ]
+    },
+    {
+     "linear_a": "DA-MA-TE",
+     "word": "damater",
+     "gloss": "",
+     "la_records": [
+      "KYZa2"
+     ]
+    },
+    {
+     "linear_a": "DE-ME-TE",
+     "word": "demeter",
+     "gloss": "",
+     "la_records": [
+      "HT94b"
+     ]
+    },
+    {
+     "linear_a": "KA-I-RO",
+     "word": "kairos",
+     "gloss": "",
+     "la_records": [
+      "ZA8"
+     ]
+    },
+    {
+     "linear_a": "KI-DA-RO",
+     "word": "gindaros",
+     "gloss": "",
+     "la_records": [
+      "HT117a",
+      "HT47a"
+     ]
+    },
+    {
+     "linear_a": "KI-RI-SI",
+     "word": "krisis",
+     "gloss": "",
+     "la_records": [
+      "TY3b"
+     ]
+    },
+    {
+     "linear_a": "KU-RU-KU",
+     "word": "glukus",
+     "gloss": "",
+     "la_records": [
+      "HT87"
+     ]
+    },
+    {
+     "linear_a": "KU-RU-MA",
+     "word": "glumma",
+     "gloss": "",
+     "la_records": [
+      "HT115b"
+     ]
+    },
+    {
+     "linear_a": "MA-KA-RI-TE",
+     "word": "margarites",
+     "gloss": "",
+     "la_records": [
+      "HT117a",
+      "HT87"
+     ]
+    },
+    {
+     "linear_a": "PA-I-TO",
+     "word": "phaistos",
+     "gloss": "",
+     "la_records": [
+      "HT120",
+      "HT97a"
+     ]
+    },
+    {
+     "linear_a": "PA-RA-NE",
+     "word": "planes",
+     "gloss": "",
+     "la_records": [
+      "HT115a",
+      "HT115b"
+     ]
+    },
+    {
+     "linear_a": "PA-TA-NE",
+     "word": "patane",
+     "gloss": "",
+     "la_records": [
+      "HT122a",
+      "HT94b",
+      "HTWa1019"
+     ]
+    },
+    {
+     "linear_a": "PI-TA-RA",
+     "word": "philtra",
+     "gloss": "",
+     "la_records": [
+      "HT96a"
+     ]
+    },
+    {
+     "linear_a": "RE-I-KE",
+     "word": "leiger",
+     "gloss": "",
+     "la_records": [
+      "PSZa2"
+     ]
+    },
+    {
+     "linear_a": "RU-MA-TA",
+     "word": "lumata",
+     "gloss": "",
+     "la_records": [
+      "HT29",
+      "HT99b"
+     ]
+    },
+    {
+     "linear_a": "SI-DA-RO",
+     "word": "sidaros",
+     "gloss": "",
+     "la_records": [
+      "GO2r"
+     ]
+    },
+    {
+     "linear_a": "TA-NA-TE",
+     "word": "thanate",
+     "gloss": "",
+     "la_records": [
+      "ZA10a"
+     ]
+    },
+    {
+     "linear_a": "TU-PA-RI",
+     "word": "stumphalis",
+     "gloss": "",
+     "la_records": [
+      "HT79+83"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [
+     {
+      "word": "skulos",
+      "gloss": "",
+      "fits": false
+     }
+    ],
+    "ki-ro": [
+     {
+      "word": "skiron",
+      "gloss": "",
+      "fits": false
+     }
+    ],
+    "po-to-ku-ro": []
+   }
+  },
+  "Sumerian": {
+   "kind": "not proposed",
+   "forms_3plus": 40,
+   "matches": 0,
+   "per_1000": 0.0,
+   "shuffle_null_mean": 0.17,
+   "ratio_to_null": 0.0,
+   "p_ge": 1.0,
+   "matches_list": [],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Hawaiian": {
+   "kind": "control",
+   "forms_3plus": 1106,
+   "matches": 4,
+   "per_1000": 3.62,
+   "shuffle_null_mean": 1.97,
+   "ratio_to_null": 2.03,
+   "p_ge": 0.1379,
+   "matches_list": [
+    {
+     "linear_a": "A-RU-RA",
+     "word": "hālula",
+     "gloss": "A sea urchin with spines longer than those of a wana.",
+     "la_records": [
+      "HT11a"
+     ]
+    },
+    {
+     "linear_a": "KA-RO-NA",
+     "word": "Kālona",
+     "gloss": "Charon (moon of Pluto)",
+     "la_records": [
+      "HT11a"
+     ]
+    },
+    {
+     "linear_a": "MA-RU-A",
+     "word": "mālua",
+     "gloss": "planting hole",
+     "la_records": [
+      "TYZg1"
+     ]
+    },
+    {
+     "linear_a": "PA-I-KI",
+     "word": "paiki",
+     "gloss": "bag, suitcase, purse",
+     "la_records": [
+      "HT62+73"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [
+     {
+      "word": "kilo",
+      "gloss": "to watch, gaze",
+      "fits": false
+     }
+    ],
+    "po-to-ku-ro": []
+   }
+  },
+  "Maori": {
+   "kind": "control",
+   "forms_3plus": 1484,
+   "matches": 4,
+   "per_1000": 2.7,
+   "shuffle_null_mean": 2.9,
+   "ratio_to_null": 1.38,
+   "p_ge": 0.3327,
+   "matches_list": [
+    {
+     "linear_a": "A-TA-NA",
+     "word": "atanga",
+     "gloss": "interface",
+     "la_records": [
+      "ZA9"
+     ]
+    },
+    {
+     "linear_a": "KA-I-KA",
+     "word": "kahika",
+     "gloss": "synonym of kahikatea; Malay apple",
+     "la_records": [
+      "KNWc3"
+     ]
+    },
+    {
+     "linear_a": "TA-RI-NA",
+     "word": "taringa",
+     "gloss": "ear; several types of jelly fungi",
+     "la_records": [
+      "HT10b"
+     ]
+    },
+    {
+     "linear_a": "TU-PA-RI",
+     "word": "tupari",
+     "gloss": "palm-leaf fern",
+     "la_records": [
+      "HT79+83"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Samoan": {
+   "kind": "control",
+   "forms_3plus": 271,
+   "matches": 0,
+   "per_1000": 0.0,
+   "shuffle_null_mean": 0.42,
+   "ratio_to_null": 0.0,
+   "p_ge": 1.0,
+   "matches_list": [],
+   "known_sense_words": {
+    "ku-ro": [],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Tongan": {
+   "kind": "control",
+   "forms_3plus": 146,
+   "matches": 0,
+   "per_1000": 0.0,
+   "shuffle_null_mean": 0.25,
+   "ratio_to_null": 0.0,
+   "p_ge": 1.0,
+   "matches_list": [],
+   "known_sense_words": {
+    "ku-ro": [
+     {
+      "word": "kulo",
+      "gloss": "pot",
+      "fits": false
+     }
+    ],
+    "ki-ro": [],
+    "po-to-ku-ro": []
+   }
+  },
+  "Yoruba": {
+   "kind": "control",
+   "forms_3plus": 2447,
+   "matches": 7,
+   "per_1000": 2.86,
+   "shuffle_null_mean": 3.33,
+   "ratio_to_null": 2.1,
+   "p_ge": 0.047,
+   "matches_list": [
+    {
+     "linear_a": "A-KA-TA",
+     "word": "akata",
+     "gloss": "serval, panther; A term for African-Americans. It was coined by Nigerian student",
+     "la_records": [
+      "KN32a"
+     ]
+    },
+    {
+     "linear_a": "A-RI-JA",
+     "word": "ariya",
+     "gloss": "joy, merriment, party, festival",
+     "la_records": [
+      "PH28a"
+     ]
+    },
+    {
+     "linear_a": "A-RI-SU",
+     "word": "arisun",
+     "gloss": "eve, vigil; the night preceding a traditional festival, consisting of song and d",
+     "la_records": [
+      "HT118"
+     ]
+    },
+    {
+     "linear_a": "A-TA-RE",
+     "word": "atalẹ",
+     "gloss": "ginger",
+     "la_records": [
+      "ZA8"
+     ]
+    },
+    {
+     "linear_a": "E-KU-RU",
+     "word": "eguru",
+     "gloss": "sandstone, a generic name for any type of sedimentary rock",
+     "la_records": [
+      "ZA11a"
+     ]
+    },
+    {
+     "linear_a": "I-JA-PA",
+     "word": "ijapa",
+     "gloss": "tortoise, turtle; Beetle",
+     "la_records": [
+      "IOZa5"
+     ]
+    },
+    {
+     "linear_a": "KI-RI-SI",
+     "word": "Giriisi",
+     "gloss": "Greece (a country in Europe)",
+     "la_records": [
+      "TY3b"
+     ]
+    }
+   ],
+   "known_sense_words": {
+    "ku-ro": [
+     {
+      "word": "kuro",
+      "gloss": "to leave; to go away",
+      "fits": false
+     }
+    ],
+    "ki-ro": [
+     {
+      "word": "kilọ",
+      "gloss": "to warn",
+      "fits": false
+     }
+    ],
+    "po-to-ku-ro": []
+   }
+  }
+ },
+ "positive_control_vs_linear_b": {
+  "Greek (true relative)": {
+   "forms_3plus": 28606,
+   "matches": 376,
+   "per_1000": 13.14,
+   "shuffle_null_mean": 119.01,
+   "ratio_to_null": 3.16,
+   "p_ge": 0.001
+  },
+  "Hawaiian": {
+   "forms_3plus": 1106,
+   "matches": 9,
+   "per_1000": 8.14,
+   "shuffle_null_mean": 8.72,
+   "ratio_to_null": 1.03,
+   "p_ge": 0.4975
+  },
+  "Maori": {
+   "forms_3plus": 1484,
+   "matches": 20,
+   "per_1000": 13.48,
+   "shuffle_null_mean": 12.98,
+   "ratio_to_null": 1.54,
+   "p_ge": 0.034
+  },
+  "Yoruba": {
+   "forms_3plus": 2447,
+   "matches": 53,
+   "per_1000": 21.66,
+   "shuffle_null_mean": 17.67,
+   "ratio_to_null": 3.0,
+   "p_ge": 0.001
+  },
+  "Akkadian": {
+   "forms_3plus": 336,
+   "matches": 2,
+   "per_1000": 5.95,
+   "shuffle_null_mean": 1.75,
+   "ratio_to_null": 1.14,
+   "p_ge": 0.5205
+  },
+  "Ugaritic": {
+   "forms_3plus": 288,
+   "matches": 4,
+   "per_1000": 13.89,
+   "shuffle_null_mean": 1.4,
+   "ratio_to_null": 2.87,
+   "p_ge": 0.047
+  },
+  "Luwian": {
+   "forms_3plus": 540,
+   "matches": 7,
+   "per_1000": 12.96,
+   "shuffle_null_mean": 5.83,
+   "ratio_to_null": 1.2,
+   "p_ge": 0.3686
+  }
+ },
+ "power_like_for_like": {
+  "Akkadian": {
+   "lexicon_size": 336,
+   "greek_vs_lb491_mean": 0.54,
+   "greek_vs_lb491_90ci": [
+    0,
+    2
+   ],
+   "observed_vs_linear_a": 3
+  },
+  "Ugaritic": {
+   "lexicon_size": 288,
+   "greek_vs_lb491_mean": 0.54,
+   "greek_vs_lb491_90ci": [
+    0,
+    2
+   ],
+   "observed_vs_linear_a": 4
+  },
+  "Luwian": {
+   "lexicon_size": 540,
+   "greek_vs_lb491_mean": 0.79,
+   "greek_vs_lb491_90ci": [
+    0,
+    2
+   ],
+   "observed_vs_linear_a": 1
+  }
+ },
+ "group_tests": {
+  "Semitic (Akkadian, Ugaritic)": {
+   "observed": 7,
+   "shuffle_expected": 2.6,
+   "ratio": 2.69,
+   "controls_ratio": 1.69,
+   "p_exceeds_controls": 0.215,
+   "bonferroni_4_groups": 0.859
+  },
+  "Anatolian (Luwian)": {
+   "observed": 1,
+   "shuffle_expected": 1.86,
+   "ratio": 0.54,
+   "controls_ratio": 1.69,
+   "p_exceeds_controls": 0.952,
+   "bonferroni_4_groups": 1
+  },
+  "Hurro-Urartian (Hurrian)": {
+   "observed": 1,
+   "shuffle_expected": 0.91,
+   "ratio": 1.1,
+   "controls_ratio": 1.69,
+   "p_exceeds_controls": 0.79,
+   "bonferroni_4_groups": 1
+  },
+  "Tyrsenian (Etruscan)": {
+   "observed": 0,
+   "shuffle_expected": 0.09,
+   "ratio": 0.0,
+   "controls_ratio": 1.69,
+   "p_exceeds_controls": 1.0,
+   "bonferroni_4_groups": 1
+  }
+ }
+}

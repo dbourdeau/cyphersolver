@@ -1,0 +1,143 @@
+{
+ "method": "Seven hypotheses following decipher6j.py: local signs, regional units, the geography of the Knossos names, and\nreplications of the R/T vowel pattern.\n\nEach has a prediction stated before the test ran and one primary test with its own null. Benjamini-Hochberg at\n5% runs across the seven.\n\nK1  Signs attested at only one site stand in entry labels (names) more often than widespread unread signs do.\nK2  Those local signs stand word-finally more often than widespread unread signs do.\nK3  Grain entries at Haghia Triada carry fractions less often than grain entries elsewhere (a smaller unit there).\nK4  Counts of men (VIR) differ by site too. A unit explanation of J6 predicts they do not.\nK5  Linear A words that match Knossos words (exactly or as a stem plus one syllable) come from sites near Knossos\n    (Knossos, Tylissos, Arkhanes, Iouktas, Malia) more often than chance.\nK6  The richer vowel set after R/T (J3) replicates on SigLA's transcription.\nK7  It holds at Khania and at Zakros separately.",
+ "primary_p": {
+  "K1": 0.9375312343828086,
+  "K2": 1.0,
+  "K3": 0.2683658170914543,
+  "K4": 0.5777111444277861,
+  "K5": 0.3798100949525237,
+  "K6": 0.0004997501249375312,
+  "K7": 0.9970014992503748
+ },
+ "bh_supported": [
+  "K6"
+ ],
+ "details": {
+  "K1 local signs in names": {
+   "prediction": "Single-site unread signs stand in entry labels more than widespread unread signs",
+   "primary": {
+    "local": "15/40",
+    "widespread": "112/229",
+    "p": 0.9375
+   },
+   "robustness": {
+    "local signs": [
+     "*309",
+     "*309B",
+     "*323",
+     "*324",
+     "*408",
+     "*411",
+     "*805",
+     "*815"
+    ]
+   }
+  },
+  "K2 local signs word-final": {
+   "prediction": "Single-site unread signs stand word-finally more than widespread unread signs",
+   "primary": {
+    "local": "0/40",
+    "widespread": "79/229",
+    "p": 1.0
+   },
+   "robustness": {}
+  },
+  "K3 grain fractions by site": {
+   "prediction": "Grain entries at Haghia Triada carry fractions less often than elsewhere",
+   "primary": {
+    "HT": "12/66",
+    "elsewhere": "7/26",
+    "p": 0.2684
+   },
+   "robustness": {
+    "sites elsewhere": {
+     "Khania": 9,
+     "Knossos": 1,
+     "Petras": 2,
+     "Zakros": 10,
+     "Arkhalkhori": 4
+    }
+   }
+  },
+  "K4 counts of men by site": {
+   "prediction": "Counts of men (VIR) differ by site (a unit explanation of J6 predicts not)",
+   "primary": {
+    "between_SS": 0.694,
+    "null_mean": 2.051,
+    "p": 0.5777,
+    "entries": 31
+   },
+   "robustness": {
+    "geometric means": {
+     "Haghia Triada": 19.9,
+     "Khania": 14.1
+    }
+   }
+  },
+  "K5 Knossos matches from nearby sites": {
+   "prediction": "Linear A words matching Knossos words come from sites near Knossos more than chance",
+   "primary": {
+    "near_share_matched": 0.138,
+    "near_share_all": 0.122,
+    "p": 0.3798,
+    "matched_words": 87
+   },
+   "robustness": {
+    "matched words by site": {
+     "Knossos": 8,
+     "Tylissos": 1,
+     "Haghia Triada": 48,
+     "Khania": 9,
+     "Syme": 2,
+     "Malia": 3,
+     "Petras": 3,
+     "Haghios Stehanos": 1,
+     "Zakros": 8,
+     "Thera": 3,
+     "Palaikastro": 2,
+     "Arkhalkhori": 5,
+     "Phaistos": 7,
+     "Nerokurou": 1,
+     "Crete": 1,
+     "Samothrace": 1,
+     "Iouktas": 1,
+     "Kea": 1,
+     "Apodoulou": 1,
+     "Pyrgos": 1,
+     "Vrysinas": 1,
+     "Tel Haror": 1
+    }
+   }
+  },
+  "K6 R/T vowels in SigLA": {
+   "prediction": "The richer vowel set after R/T replicates on SigLA's transcription",
+   "primary": {
+    "SigLA_gap": 0.19,
+    "LB_gap": 0.026,
+    "p": 0.0005
+   },
+   "robustness": {
+    "lineara.xyz gap": 0.198
+   }
+  },
+  "K7 R/T vowels at Khania and Zakros": {
+   "prediction": "The richer vowel set after R/T holds at Khania and at Zakros separately",
+   "primary": {
+    "p (larger of the two)": 0.997,
+    "Khania": {
+     "gap": -0.206,
+     "p": 0.997,
+     "words": 68
+    },
+    "Zakros": {
+     "gap": 0.108,
+     "p": 0.0185,
+     "words": 100
+    }
+   },
+   "robustness": {
+    "Linear B gap": 0.026
+   }
+  }
+ }
+}

@@ -1,0 +1,33 @@
+== Z1 special signs: PA3, RA2, PU2, TA2 sit nearest the row their Linear B value gives them
+   primary {'mean_relative_rank': 0.338, 'chance': 'about 0.54', 'p': 0.0712, 'signs': {'pa3': {'assigned': 'p', 'rank': 9, 'of': 13, 'nearest': ['r', 't', 'z']}, 'ra2': {'assigned': 'r', 'rank': 3, 'of': 13, 'nearest': ['n', 'j', 'r']}, 'pu2': {'assigned': 'p', 'rank': 6, 'of': 13, 'nearest': ['d', 'k', 'j']}, 'ta2': {'assigned': 't', 'rank': 3, 'of': 13, 'nearest': ['j', 'n', 't']}, 'au': {'assigned': 'vowel', 'rank': 1, 'of': 13, 'nearest': ['vowel', 'q', 'k']}}}
+   robustness {'Linear B control': {'mean_relative_rank': 0.301, 'p': 0.0016, 'signs': {'ra2': {'assigned': 'r', 'rank': 3, 'of': 13, 'nearest': ['j', 'n', 'r']}, 'pu2': {'assigned': 'p', 'rank': 1, 'of': 13, 'nearest': ['p', 'k', 'd']}, 'ta2': {'assigned': 't', 'rank': 5, 'of': 13, 'nearest': ['j', 'n', 'w']}, 'a2': {'assigned': 'vowel', 'rank': 4, 'of': 13, 'nearest': ['q', 's', 't']}, 'a3': {'assigned': 'vowel', 'rank': 3, 'of': 13, 'nearest': ['p', 'k', 'vowel']}, 'au': {'assigned': 'vowel', 'rank': 3, 'of': 13, 'nearest': ['p', 'k', 'vowel']}, 'ro2': {'assigned': 'r', 'rank': 4, 'of': 13, 'nearest': ['j', 'n', 'z']}, 'ra3': {'assigned': 'r', 'rank': 2, 'of': 13, 'nearest': ['j', 'r', 'n']}, 'nwa': {'assigned': 'n', 'rank': 3, 'of': 13, 'nearest': ['m', 'q', 'n']}, 'pte': {'assigned': 'p', 'rank': 3, 'of': 13, 'nearest': ['k', 'vowel', 'p']}, 'dwe': {'assigned': 'd', 'rank': 10, 'of': 13, 'nearest': ['n', 'j', 'z']}, 'dwo': {'assigned': 'd', 'rank': 6, 'of': 13, 'nearest': ['w', 't', 's']}}}}
+== Z2 nearest-neighbour recovery: A hidden sign's consonant row is recovered from its nearest neighbours
+   primary {'consonant_accuracy': 0.083, 'null_cons': 0.07, 'p': 0.4352, 'signs': 48}
+   robustness {'vowel_accuracy': 0.333, 'null_vow': 0.202, 'p_vow': 0.0664, 'k=1': {'cons': 0.083, 'vow': 0.312}, 'Linear B control': {'cons': 0.271, 'vow': 0.525}}
+== Z3 Z row and dentals: ZA, ZU keep company with the S, T, D rows more than other signs do
+   primary {'diff': 0.0382, 'p': 0.1939, 'z_signs': ['za', 'zu']}
+   robustness {'Linear B control (ZA, ZE, ZO)': {'diff': 0.025, 'p': 0.5062, 'z_signs': ['ze', 'zo', 'za']}}
+== Z4 place of articulation: Rows sharing a place of articulation have more similar signs
+   primary {'diff': 0.0342, 'p': 0.054}
+   robustness {'Linear B control': {'diff': -0.0102, 'p': 0.6352}}
+== Z5 o and u merged: Within a row the o-sign behaves like the u-sign
+   primary {'diff': 0.064, 'p': 0.1479, 'rows': ['k', 'p', 'r', 't']}
+   robustness {'Linear B control': {'diff': -0.1253, 'p': 0.987}, 'Linear A against Linear B': {'LA minus LB (per-row means)': 0.1893, 'p (row-label permutation)': 0.0136, 'LA rows': {'k': 0.12, 'r': -0.017, 't': 0.127, 'p': 0.027}, 'LB rows': {'d': 0.061, 'm': -0.183, 'r': -0.127, 'k': -0.061, 't': -0.243, 's': -0.35, 'n': -0.146, 'p': 0.046}}}
+== Z6 e and i merged: Within a row the e-sign behaves like the i-sign
+   primary {'diff': 0.0602, 'p': 0.048, 'rows': ['d', 'k', 'm', 'n', 'r', 's', 't']}
+   robustness {'Linear B control': {'diff': -0.1531, 'p': 0.998}, 'Linear A against Linear B': {'LA minus LB (per-row means)': 0.2134, 'p (row-label permutation)': 0.0026, 'LA rows': {'d': 0.07, 'k': 0.163, 's': 0.105, 'r': -0.114, 't': 0.224, 'n': -0.013, 'm': -0.014}, 'LB rows': {'d': -0.149, 'm': -0.037, 'r': -0.113, 'k': -0.035, 't': -0.087, 'w': -0.397, 's': 0.026, 'n': -0.374, 'p': -0.151, 'q': -0.216}}}
+== Z7 internal alternations: Words differing in one internal sign differ by a close sound (same consonant or vowel)
+   primary {'share_close': 0.365, 'null_mean': 0.392, 'p': 0.7291, 'pairs': 74}
+   robustness {'same consonant': 0.054, 'same vowel': 0.311, 'Linear B control': {'share_close': 0.356, 'null_mean': 0.303, 'p': 0.0033, 'pairs': 3832}}
+== Z8 vowel harmony: Neighbouring syllables share their vowel more than chance
+   primary {'share_same_vowel': 0.2729, 'null_mean': 0.2776, 'p': 0.6792}
+   robustness {'Linear B control': {'share': 0.2808, 'null_mean': 0.2267, 'p': 0.002}}
+== Z9 unread signs by nearest neighbours: kNN-predicted values turn unread-sign words into Linear B words more than random values
+   primary {'matches': 2, 'null_mean': 8.609, 'p': 0.999, 'signs': 15}
+   robustness {'predictions': {'*118': {'value': 'nu', 'lb_matches': []}, '*188': {'value': 're', 'lb_matches': []}, '*86': {'value': 'da', 'lb_matches': ['da-ro']}, '*21F': {'value': 'sa', 'lb_matches': []}, '*301': {'value': 'zu', 'lb_matches': []}, '*305': {'value': 'je', 'lb_matches': []}, '*306': {'value': 'na', 'lb_matches': []}, '*309': {'value': 'za', 'lb_matches': []}, '*34': {'value': 'ki', 'lb_matches': []}, '*312': {'value': 'ne', 'lb_matches': []}, '*314': {'value': 'o', 'lb_matches': []}, '*323': {'value': 'no', 'lb_matches': []}, '*47': {'value': 'da', 'lb_matches': []}, '*321': {'value': 'se', 'lb_matches': ['ma-se']}, '*310': {'value': 'tu', 'lb_matches': []}}}
+== Z10 internal vowel signs: Vowel signs stand inside words more often in Linear A than in Linear B
+   primary {'LA_internal_share': 0.301, 'LB_internal_share': 0.435, 'p': 1.0, 'occurrences': [259, 2399]}
+   robustness {'by vowel (LA, LB)': {'a': (0.128, 0.103), 'e': (0.571, 0.268), 'i': (0.447, 0.651), 'o': (0.333, 0.477), 'u': (0.359, 0.859)}, 'signs before internal I/U in Linear A': {'da': 6, 'ma': 6, 'ta': 6, 'ka': 6, 'ja': 3, 'te': 3, 'na': 2, 'sa': 2}}
+
+primary p: {'Z1': 0.0712, 'Z2': 0.4352, 'Z3': 0.1939, 'Z4': 0.054, 'Z5': 0.1479, 'Z6': 0.048, 'Z7': 0.7291, 'Z8': 0.6792, 'Z9': 0.999, 'Z10': 1.0}
+survive BH at 5%: []

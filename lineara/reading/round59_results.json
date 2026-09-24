@@ -1,0 +1,182 @@
+{
+ "title": "the name slot and the descriptor slot",
+ "method": "Round 59 (saturation loop): the name slot (word directly before a number) and the descriptor slot (word directly\nbefore a commodity sign). Benjamini-Hochberg at 5% across the ten.\n\nN1  The two slots are lexically separate: fewer word types occur in both than when slot labels are shuffled\n    among the word tokens.\nN2  Word types in the two slots differ in syllable profile.\nN3  Entries whose word stands in the descriptor slot have larger amounts than name-slot entries.\nN4  Descriptor-slot words contain unread signs less often than name-slot words.\nN5  Heading words recur more (lower type/token ratio) than name-slot words at the same sample size.\nN6  Heading word types overlap with descriptor-slot types more than with name-slot types (share of heading types).\nN7  Descriptor-slot words are shorter than name-slot words.\nN8  Descriptor words used 2+ times go with a single commodity more often than when commodities are shuffled.\nN9  Use of the descriptor slot (share of word-plus-commodity entries) differs by site.\nN10 Descriptor-slot entries carry fractions more often than name-slot entries.",
+ "primary_p": {
+  "N1": 0.0004997501249375312,
+  "N2": 0.25537231384307846,
+  "N3": 0.0004997501249375312,
+  "N4": 0.08895552223888056,
+  "N5": 0.9810094952523738,
+  "N6": 0.001999000499750125,
+  "N7": 0.36231884057971014,
+  "N8": 0.05247376311844078,
+  "N9": 0.0004997501249375312,
+  "N10": 0.0034982508745627187
+ },
+ "bh_supported": [
+  "N1",
+  "N10",
+  "N3",
+  "N6",
+  "N9"
+ ],
+ "details": {
+  "N1": {
+   "prediction": "The two slots are lexically separate",
+   "primary": {
+    "shared_types": 16,
+    "null": 32.7,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "N2": {
+   "prediction": "The slots differ in syllable profile",
+   "primary": {
+    "jsd": 0.0658,
+    "null": 0.0591,
+    "p": 0.2554,
+    "n": [
+     93,
+     271
+    ]
+   },
+   "robustness": {},
+   "p": 0.25537231384307846
+  },
+  "N3": {
+   "prediction": "Descriptor-slot entries have larger amounts",
+   "primary": {
+    "desc_mean_log": [
+     2.5671,
+     102
+    ],
+    "name_mean_log": [
+     1.5511,
+     464
+    ],
+    "p": 0.0005
+   },
+   "robustness": {
+    "goods tablets only": {
+     "desc": [
+      2.5356,
+      81
+     ],
+     "name": [
+      1.4212,
+      380
+     ],
+     "p": 0.0005
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "N4": {
+   "prediction": "Descriptor words contain unread signs less often",
+   "primary": {
+    "desc": [
+     0.1348,
+     141
+    ],
+    "name": [
+     0.1889,
+     487
+    ],
+    "p": 0.089
+   },
+   "robustness": {},
+   "p": 0.08895552223888056
+  },
+  "N5": {
+   "prediction": "Heading words recur more than name-slot words",
+   "primary": {
+    "heading_ttr": 0.877,
+    "name_ttr_same_size": 0.839,
+    "p": 0.981,
+    "n": 203
+   },
+   "robustness": {},
+   "p": 0.9810094952523738
+  },
+  "N6": {
+   "prediction": "Heading types overlap descriptor types more than name types",
+   "primary": {
+    "diff": 0.101,
+    "null": -0.0,
+    "p": 0.002
+   },
+   "robustness": {},
+   "p": 0.001999000499750125
+  },
+  "N7": {
+   "prediction": "Descriptor words are shorter",
+   "primary": {
+    "desc_len": 2.83,
+    "name_len": 2.87,
+    "p": 0.3623
+   },
+   "robustness": {},
+   "p": 0.36231884057971014
+  },
+  "N8": {
+   "prediction": "Descriptor words keep a single commodity",
+   "primary": {
+    "single_commodity_share": 0.417,
+    "null": 0.205,
+    "p": 0.0525,
+    "words": 12
+   },
+   "robustness": {},
+   "p": 0.05247376311844078
+  },
+  "N9": {
+   "prediction": "Use of the descriptor slot differs by site",
+   "primary": {
+    "chi2": 37.9,
+    "null": 5.1,
+    "p": 0.0005
+   },
+   "robustness": {
+    "descriptor share by site": {
+     "Haghia Triada": 0.2,
+     "Khania": 0.579,
+     "Palaikastro": 0.0,
+     "Tylissos": 0.4,
+     "Zakros": 0.171,
+     "Arkhalkhori": 0.333
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "N10": {
+   "prediction": "Descriptor entries carry fractions more often",
+   "primary": {
+    "desc": [
+     0.1844,
+     141
+    ],
+    "name": [
+     0.0903,
+     487
+    ],
+    "p": 0.0035
+   },
+   "robustness": {
+    "goods tablets only": {
+     "desc": [
+      0.2018,
+      114
+     ],
+     "name": [
+      0.1047,
+      401
+     ],
+     "p": 0.0065
+    }
+   },
+   "p": 0.0034982508745627187
+  }
+ }
+}

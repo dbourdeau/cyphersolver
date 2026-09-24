@@ -1,0 +1,33 @@
+== N1: The two slots are lexically separate
+   primary {'shared_types': 16, 'null': 32.7, 'p': 0.0005}
+   robustness {}
+== N2: The slots differ in syllable profile
+   primary {'jsd': 0.0658, 'null': 0.0591, 'p': 0.2554, 'n': [93, 271]}
+   robustness {}
+== N3: Descriptor-slot entries have larger amounts
+   primary {'desc_mean_log': (2.5671, 102), 'name_mean_log': (1.5511, 464), 'p': 0.0005}
+   robustness {}
+== N4: Descriptor words contain unread signs less often
+   primary {'desc': (0.1348, 141), 'name': (0.1889, 487), 'p': 0.089}
+   robustness {}
+== N5: Heading words recur more than name-slot words
+   primary {'heading_ttr': 0.877, 'name_ttr_same_size': 0.839, 'p': 0.981, 'n': 203}
+   robustness {}
+== N6: Heading types overlap descriptor types more than name types
+   primary {'diff': 0.101, 'null': -0.0, 'p': 0.002}
+   robustness {}
+== N7: Descriptor words are shorter
+   primary {'desc_len': 2.83, 'name_len': 2.87, 'p': 0.3623}
+   robustness {}
+== N8: Descriptor words keep a single commodity
+   primary {'single_commodity_share': 0.417, 'null': 0.205, 'p': 0.0525, 'words': 12}
+   robustness {}
+== N9: Use of the descriptor slot differs by site
+   primary {'chi2': 37.9, 'null': 5.1, 'p': 0.0005}
+   robustness {'descriptor share by site': {'Haghia Triada': 0.2, 'Khania': 0.579, 'Palaikastro': 0.0, 'Tylissos': 0.4, 'Zakros': 0.171, 'Arkhalkhori': 0.333}}
+== N10: Descriptor entries carry fractions more often
+   primary {'desc': (0.1844, 141), 'name': (0.0903, 487), 'p': 0.0035}
+   robustness {}
+
+primary p: {'N1': 0.0005, 'N2': 0.2554, 'N3': 0.0005, 'N4': 0.089, 'N5': 0.981, 'N6': 0.002, 'N7': 0.3623, 'N8': 0.0525, 'N9': 0.0005, 'N10': 0.0035}
+survive BH at 5%: ['N1', 'N10', 'N3', 'N6', 'N9']

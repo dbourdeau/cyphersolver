@@ -1,0 +1,33 @@
+== HH1: Unread signs are word-initial more often than known signs
+   primary {'unread_initial': (0.4343, 198), 'known_initial': (0.3179, 2746), 'p': 0.0015}
+   robustness {}
+== HH3: Tablet single signs are the commonest word syllables
+   primary {'spearman': 0.654, 'p': 0.0002, 'signs': 51}
+   robustness {}
+== HH4: Single signs on sealings differ in repertoire from those on tablets
+   primary {'chi2': 633.7, 'null': 31.9, 'p': 0.0005, 'tokens': 1012}
+   robustness {}
+== HH5: *301 is word-internal more often than other signs
+   primary {'301_internal': (0.5217, 23), 'other_internal': (0.3471, 2921), 'p': 0.0625}
+   robustness {}
+== HH6: Unread signs stand next to other unread signs more than chance
+   primary {'adjacent_unread_pairs': 14, 'null': 15.99, 'p': 0.979}
+   robustness {}
+== HH7: Unread signs are confined to fewer word types per occurrence
+   primary {'unread_resid': (-0.1191, 26), 'known_resid': (0.0525, 59), 'p': 0.0395}
+   robustness {}
+== HH8: ZE is followed directly by a number more often than other single signs
+   primary {'ZE': (1.0, 1), 'other': (0.5514, 428), 'p': 0.5397}
+   robustness {}
+== HH11: NI is followed directly by a number more often than other single signs
+   primary {'NI': (0.7286, 70), 'other': (0.5181, 359), 'p': 0.0015}
+   robustness {}
+== HH15: Syllable signs are associated with register
+   primary {'chi2': 135.6, 'null': 49.7, 'p': 0.0005, 'tokens': 2618}
+   robustness {}
+== HH16: Signs Linear B uses word-finally are relatively rarer in Linear A
+   primary {'spearman': -0.272, 'p': 0.0326, 'signs': 50}
+   robustness {}
+
+primary p: {'HH1': 0.0015, 'HH3': 0.0002, 'HH4': 0.0005, 'HH5': 0.0625, 'HH6': 0.979, 'HH7': 0.0395, 'HH8': 0.5397, 'HH11': 0.0015, 'HH15': 0.0005, 'HH16': 0.0326}
+survive BH at 5%: ['HH1', 'HH11', 'HH15', 'HH3', 'HH4']

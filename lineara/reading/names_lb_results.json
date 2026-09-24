@@ -1,0 +1,230 @@
+{
+ "method": "Linear A words in the Linear B record: how many, of what kind, and where.\n\nLinear B vocabulary: every word type in the Linear B corpus of linearb.xyz (R. Hogan, commit 84e0b00),\nwith its sites, and the category of each headword in Chadwick & Ventris 1973 as carried by the tiripode\nlexicon (MIT; commit 0c3c821): anthroponym, toponym, ethnic, theonym, other, or not in the glossary.\nLinear A: distinct syllabic word types of the working corpus (transliteration with Linear B values).\n\nReal exact matches are counted, then the Linear A sign values are shuffled within 10 frequency bins\n(the same null as soundvalues.py) and matches recounted, overall, by category and by where the Linear B\nword is attested: Knossos only (Crete), mainland only (Pylos, Thebes, Mycenae, Tiryns...), or both.\nIf Minoan names lived on in Mycenaean Crete, real matches should exceed the null most at Knossos.",
+ "min_signs": 3,
+ "linear_a_types": 491,
+ "linear_b_types": 4164,
+ "linear_b_types_by_where": {
+  "crete only": 1639,
+  "mainland only": 2260,
+  "both": 265
+ },
+ "reps": 2000,
+ "seed": 20260923,
+ "stats": {
+  "all": {
+   "real": 13,
+   "null_mean": 2.818,
+   "p_ge": 0.0005
+  },
+  "cat:anthroponym": {
+   "real": 3,
+   "null_mean": 0.715,
+   "p_ge": 0.039
+  },
+  "cat:ethnic": {
+   "real": 0,
+   "null_mean": 0.007,
+   "p_ge": 1.0
+  },
+  "cat:not in glossary": {
+   "real": 4,
+   "null_mean": 1.464,
+   "p_ge": 0.0615
+  },
+  "cat:other": {
+   "real": 3,
+   "null_mean": 0.422,
+   "p_ge": 0.011
+  },
+  "cat:theonym": {
+   "real": 0,
+   "null_mean": 0.042,
+   "p_ge": 1.0
+  },
+  "cat:toponym": {
+   "real": 3,
+   "null_mean": 0.169,
+   "p_ge": 0.001
+  },
+  "where:both": {
+   "real": 0,
+   "null_mean": 0.158,
+   "p_ge": 1.0
+  },
+  "where:crete only": {
+   "real": 8,
+   "null_mean": 1.312,
+   "p_ge": 0.0005
+  },
+  "where:mainland only": {
+   "real": 5,
+   "null_mean": 1.349,
+   "p_ge": 0.014
+  }
+ },
+ "crete_vs_mainland": {
+  "crete_only": 8,
+  "mainland_only": 5,
+  "null_share_crete": 0.493,
+  "p_crete_excess": 0.273
+ },
+ "category_by_where": {
+  "anthroponym / crete only": 3,
+  "not in glossary / crete only": 2,
+  "not in glossary / mainland only": 2,
+  "other / mainland only": 3,
+  "toponym / crete only": 3
+ },
+ "matches": [
+  {
+   "linear_a": "A-KA-TA",
+   "linear_a_records": [
+    "KN32a"
+   ],
+   "linear_b_category": "not in glossary",
+   "linear_b_sites": [
+    "Pylos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "A-RO-TE",
+   "linear_a_records": [
+    "CRZg4"
+   ],
+   "linear_b_category": "not in glossary",
+   "linear_b_sites": [
+    "Pylos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "DA-I-PI-TA",
+   "linear_a_records": [
+    "ZA10a",
+    "ZA8"
+   ],
+   "linear_b_category": "anthroponym",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "DA-MA-TE",
+   "linear_a_records": [
+    "KYZa2"
+   ],
+   "linear_b_category": "other",
+   "linear_b_sites": [
+    "Pylos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "I-JA-TE",
+   "linear_a_records": [
+    "PHZb4"
+   ],
+   "linear_b_category": "other",
+   "linear_b_sites": [
+    "Pylos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "I-TA-JA",
+   "linear_a_records": [
+    "HT28a"
+   ],
+   "linear_b_category": "anthroponym",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 2
+  },
+  {
+   "linear_a": "KI-DA-RO",
+   "linear_a_records": [
+    "HT117a",
+    "HT47a"
+   ],
+   "linear_b_category": "anthroponym",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "MA-TE-RE",
+   "linear_a_records": [
+    "PH15a"
+   ],
+   "linear_b_category": "other",
+   "linear_b_sites": [
+    "Pylos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "PA-I-TO",
+   "linear_a_records": [
+    "HT120",
+    "HT97a"
+   ],
+   "linear_b_category": "toponym",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 47
+  },
+  {
+   "linear_a": "PA-RA-NE",
+   "linear_a_records": [
+    "HT115a",
+    "HT115b"
+   ],
+   "linear_b_category": "not in glossary",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 1
+  },
+  {
+   "linear_a": "SE-TO-I-JA",
+   "linear_a_records": [
+    "PRZa1"
+   ],
+   "linear_b_category": "toponym",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 17
+  },
+  {
+   "linear_a": "SU-KI-RI-TA",
+   "linear_a_records": [
+    "PHWa32"
+   ],
+   "linear_b_category": "toponym",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 6
+  },
+  {
+   "linear_a": "TA-NA-TI",
+   "linear_a_records": [
+    "HT10b",
+    "HT49a",
+    "HT7a",
+    "HT98a"
+   ],
+   "linear_b_category": "not in glossary",
+   "linear_b_sites": [
+    "Knossos"
+   ],
+   "linear_b_count": 1
+  }
+ ]
+}

@@ -1,0 +1,359 @@
+{
+ "method": "Which results depend on readings where SigLA and lineara.xyz disagree?\n\nThe Linear A vocabulary is rebuilt with SigLA's reading in place of lineara.xyz's wherever errata.py found a\nword-level disagreement of a definite kind in a document (substitution, one sign added or missing, or word\ndivision). 'Other' and 'no counterpart' cases are left as they are and counted. The word-matching results are\nthen recomputed on both vocabularies: Linear B place and personal names (names_lb.py), the NeuroDecipher Linear B\nlist (soundvalues.py), the Pre-Greek comparison (pregreek.py) and the language-family matches (lang_test.py).\n\nThe fraction-order evidence is checked separately: every document that contributes an adjacent fraction pair is\nlooked up in SigLA, and the two signs' order is read from SigLA's sign positions: left to right on one line (bounding boxes whose vertical ranges\noverlap), or top to bottom in a stack (horizontal ranges overlap), since fractions are also written in columns.",
+ "errata_kinds": {
+  "substitution": 15,
+  "indel": 11,
+  "segmentation": 6,
+  "other": 9,
+  "no counterpart": 3
+ },
+ "substitutions_applied": {
+  "segmentation": 3,
+  "indel": 6,
+  "substitution": 8
+ },
+ "types_only_in_lineara": [
+  "A-KA-NU-ZA-TI",
+  "A-SE-JA",
+  "DI-KA-KI",
+  "KI-MI-RA2",
+  "KI-TA",
+  "NA-TI",
+  "RE-A-JA",
+  "RO-NI",
+  "SU-KI-RI-TA",
+  "TE-JA-RE",
+  "TU-RU-NU-SE-ME"
+ ],
+ "types_only_in_sigla_version": [
+  "A-KA-NU-ZE-TI",
+  "A-RU-KU-RO",
+  "DA-ZA",
+  "DI-DE-RU-QE-RA2-U",
+  "DI-KA-TU",
+  "MI-DA-E",
+  "MI-RA2",
+  "NA-TI-MA-DI",
+  "PA-RI-NE",
+  "PA-RO-NI",
+  "SU-KI-RA-TA",
+  "TE-PA3-RE",
+  "TU-RU-PA3-SE-ME"
+ ],
+ "results": {
+  "lineara.xyz readings": {
+   "matches": [
+    "A-KA-TA",
+    "A-RO-TE",
+    "DA-I-PI-TA",
+    "DA-MA-TE",
+    "I-JA-TE",
+    "I-TA-JA",
+    "KI-DA-RO",
+    "MA-TE-RE",
+    "PA-I-TO",
+    "PA-RA-NE",
+    "SE-TO-I-JA",
+    "SU-KI-RI-TA",
+    "TA-NA-TI"
+   ],
+   "names": [
+    "DA-I-PI-TA",
+    "I-TA-JA",
+    "KI-DA-RO",
+    "PA-I-TO",
+    "SE-TO-I-JA",
+    "SU-KI-RI-TA"
+   ],
+   "names_crete_only": 6,
+   "null_mean": 2.8,
+   "p_ge": 0.001,
+   "neurodecipher_matches": [
+    "A-RU-RA",
+    "DA-MA-TE",
+    "I-JA-TE",
+    "PA-I-TO",
+    "SE-TO-I-JA",
+    "SU-KI-RI-TA"
+   ],
+   "pregreek_matches": [
+    "A-KA-TA",
+    "A-KI-RO",
+    "A-RI-PA",
+    "KI-DA-RO",
+    "PA-I-TO",
+    "PA-TA-NE"
+   ],
+   "language_matches": {
+    "Luwian": [
+     "A-RI-JA"
+    ],
+    "Hurrian": [
+     "A-PA-KI"
+    ],
+    "Akkadian": [
+     "A-KA-RU",
+     "A-RA-TU",
+     "E-KU-RU"
+    ],
+    "Ugaritic": [
+     "A-KA-RU",
+     "A-RA-TU",
+     "A-TA-NA",
+     "PA-NA-TU"
+    ],
+    "Etruscan": [],
+    "Hawaiian": [
+     "A-RU-RA",
+     "KA-RO-NA",
+     "MA-RU-A",
+     "PA-I-KI"
+    ],
+    "Maori": [
+     "A-TA-NA",
+     "KA-I-KA",
+     "TA-RI-NA",
+     "TU-PA-RI"
+    ],
+    "Yoruba": [
+     "A-KA-TA",
+     "A-RI-JA",
+     "A-RI-SU",
+     "A-TA-RE",
+     "E-KU-RU",
+     "I-JA-PA",
+     "KI-RI-SI"
+    ]
+   }
+  },
+  "SigLA readings where they differ": {
+   "matches": [
+    "A-KA-TA",
+    "A-RO-TE",
+    "DA-I-PI-TA",
+    "DA-MA-TE",
+    "I-JA-TE",
+    "I-TA-JA",
+    "KI-DA-RO",
+    "MA-TE-RE",
+    "PA-I-TO",
+    "PA-RA-NE",
+    "SE-TO-I-JA",
+    "TA-NA-TI"
+   ],
+   "names": [
+    "DA-I-PI-TA",
+    "I-TA-JA",
+    "KI-DA-RO",
+    "PA-I-TO",
+    "SE-TO-I-JA"
+   ],
+   "names_crete_only": 5,
+   "null_mean": 2.68,
+   "p_ge": 0.001,
+   "neurodecipher_matches": [
+    "A-RU-RA",
+    "DA-MA-TE",
+    "I-JA-TE",
+    "PA-I-TO",
+    "SE-TO-I-JA"
+   ],
+   "pregreek_matches": [
+    "A-KA-TA",
+    "A-KI-RO",
+    "A-RI-PA",
+    "KI-DA-RO",
+    "PA-I-TO",
+    "PA-TA-NE"
+   ],
+   "language_matches": {
+    "Luwian": [
+     "A-RI-JA"
+    ],
+    "Hurrian": [
+     "A-PA-KI"
+    ],
+    "Akkadian": [
+     "A-KA-RU",
+     "A-RA-TU",
+     "E-KU-RU"
+    ],
+    "Ugaritic": [
+     "A-KA-RU",
+     "A-RA-TU",
+     "A-TA-NA",
+     "PA-NA-TU"
+    ],
+    "Etruscan": [],
+    "Hawaiian": [
+     "A-RU-RA",
+     "KA-RO-NA",
+     "MA-RU-A",
+     "PA-I-KI"
+    ],
+    "Maori": [
+     "A-TA-NA",
+     "KA-I-KA",
+     "TA-RI-NA",
+     "TU-PA-RI"
+    ],
+    "Yoruba": [
+     "A-KA-TA",
+     "A-RI-JA",
+     "A-RI-SU",
+     "A-TA-RE",
+     "E-KU-RU",
+     "I-JA-PA",
+     "KI-RI-SI"
+    ]
+   }
+  }
+ },
+ "fraction_pairs": [
+  {
+   "pair": "E F",
+   "record": "HT8b",
+   "sigla": "same order in SigLA (left to right)"
+  },
+  {
+   "pair": "E F",
+   "record": "HT16",
+   "sigla": "same order in SigLA (left to right)"
+  },
+  {
+   "pair": "E F",
+   "record": "HT50a",
+   "sigla": "same order in SigLA (left to right)"
+  },
+  {
+   "pair": "E F",
+   "record": "HT123+124b",
+   "sigla": "document not in SigLA"
+  },
+  {
+   "pair": "E F",
+   "record": "HTZd157+156",
+   "sigla": "document not in SigLA"
+  },
+  {
+   "pair": "K L2",
+   "record": "KH11",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "K L2",
+   "record": "KH11",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "K L2",
+   "record": "KH11",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "K L2",
+   "record": "KH75",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: ['A702', 'A707', 'A708', 'A709'])"
+  },
+  {
+   "pair": "J B",
+   "record": "HT129",
+   "sigla": "not adjacent in SigLA (different line and column)"
+  },
+  {
+   "pair": "J B",
+   "record": "KH5",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "J B",
+   "record": "KH6",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "J L2",
+   "record": "HT123+124b",
+   "sigla": "document not in SigLA"
+  },
+  {
+   "pair": "J L2",
+   "record": "KH91",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: ['A701', 'A707', 'A708', 'A709'])"
+  },
+  {
+   "pair": "JE B",
+   "record": "HT27a",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: ['A702', 'A704', 'A707'])"
+  },
+  {
+   "pair": "J K",
+   "record": "HT32",
+   "sigla": "not adjacent in SigLA (different line and column)"
+  },
+  {
+   "pair": "E L2",
+   "record": "HT33",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: ['A703', 'A704', 'A709'])"
+  },
+  {
+   "pair": "H K",
+   "record": "HT34",
+   "sigla": "same order in SigLA (left to right)"
+  },
+  {
+   "pair": "J F",
+   "record": "HT51b",
+   "sigla": "same order in SigLA (stacked, larger above)"
+  },
+  {
+   "pair": "J H",
+   "record": "HT93a",
+   "sigla": "same order in SigLA (left to right)"
+  },
+  {
+   "pair": "J A",
+   "record": "HT120",
+   "sigla": "same order in SigLA (stacked, larger above)"
+  },
+  {
+   "pair": "E B",
+   "record": "KH9",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "E L4",
+   "record": "KH26",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "E L6",
+   "record": "KH76",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: ['A704', 'A709'])"
+  },
+  {
+   "pair": "A B",
+   "record": "KH86",
+   "sigla": "same order in SigLA (left to right)"
+  },
+  {
+   "pair": "F K",
+   "record": "PH1b",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "L E",
+   "record": "PH7b",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "E J",
+   "record": "ZA8",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  },
+  {
+   "pair": "L L2",
+   "record": "ZA11a",
+   "sigla": "sign(s) not recorded in SigLA (fraction signs recorded: [])"
+  }
+ ]
+}

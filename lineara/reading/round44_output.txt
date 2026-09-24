@@ -1,0 +1,33 @@
+== GG1: The commodity order holds at Haghia Triada
+   primary {'asymmetry': 50, 'null': 20.8, 'p': 0.0005, 'tablets': 36}
+   robustness {}
+== GG2: The commodity order holds outside Haghia Triada
+   primary {'asymmetry': 19, 'null': 14.6, 'p': 0.094, 'tablets': 17}
+   robustness {}
+== GG3: Linear A commodity order agrees with Linear B order
+   primary {'agreement': 0.704, 'null': 0.5, 'p': 0.002, 'pairs': 54}
+   robustness {'Linear B majority orders': ['GRA<CYP', 'GRA<OLIV', 'GRA<VIN', 'OLIV<CYP', 'OLIV<VIN', 'CYP<VIN', 'GRA<OLE', 'VIN<OLE']}
+== GG4: The commodity order holds with tablet sides merged
+   primary {'asymmetry': 57, 'null': 28.5, 'p': 0.0005, 'tablets': 50}
+   robustness {}
+== GG5: Same-commodity tablets share entry labels (within-site shuffle)
+   primary {'diff': 0.0465, 'null': 0.008, 'p': 0.035, 'tablets': 43}
+   robustness {}
+== GG8: On tablets with both, grain amounts exceed oil amounts
+   primary {'grain_larger': '13/16', 'sign_test_p': 0.0106}
+   robustness {}
+== GG9: The first commodity carries the largest amount more often than chance
+   primary {'first_has_max': '30/53', 'null': 17.8, 'p': 0.0005}
+   robustness {}
+== GG10: Wine stands last more often than chance
+   primary {'VIN_last': '13/17', 'null': 6.7, 'p': 0.0015}
+   robustness {}
+== GG11: Cyperus and wine stand on the same tablets beyond chance
+   primary {'together': 8, 'null': 7.42, 'p': 0.4683}
+   robustness {}
+== GG12: Oil and olives stand on the same tablets beyond chance
+   primary {'together': 11, 'null': 4.13, 'p': 0.0005}
+   robustness {}
+
+primary p: {'GG1': 0.0005, 'GG2': 0.094, 'GG3': 0.002, 'GG4': 0.0005, 'GG5': 0.035, 'GG8': 0.0106, 'GG9': 0.0005, 'GG10': 0.0015, 'GG11': 0.4683, 'GG12': 0.0005}
+survive BH at 5%: ['GG1', 'GG10', 'GG12', 'GG3', 'GG4', 'GG5', 'GG8', 'GG9']

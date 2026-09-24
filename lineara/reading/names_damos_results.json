@@ -1,0 +1,24 @@
+{
+ "method": "Cross-check of reading/names_lb.py against DAMOS (Database of Mycenaean at Oslo, damos.hf.uio.no; CC BY-NC-SA 4.0). The DAMOS word search was queried on 23 Sept 2026 for every common word of three or more signs (regular expression ^[^-]+-[^-]+-[^-]+; 10,198 tokens, 4,162 types, 3,106 items; KN 3,943 tokens, PY 5,268, TH 634, MY 279, KH 18, others 55). The 491 Linear A word types of three or more signs were matched against it exactly. Excerpts below are DAMOS line texts, quoted briefly for attestation.",
+ "damos_types_3plus": 4162,
+ "linearb_xyz_types_3plus": 4164,
+ "matches": 12,
+ "not_found_in_damos": ["A-KA-TA (matched a-ka-ta in the linearb.xyz Pylos list)"],
+ "names_crete_only": {
+  "TA-NA-TI": {"linear_a": ["HT 7a", "HT 10b", "HT 49a", "HT 98a"], "damos": ["KN Uf(1) 311: ]ta-na-ti , DA 1"]},
+  "I-TA-JA": {"linear_a": ["HT 28a"], "damos": ["KN Ap 769: ]wi-ja-na-tu MUL 1 i-ta-ja MUL 1", "KN Od(1) 537: o-pi i-ta-ja["]},
+  "PA-RA-NE": {"linear_a": ["HT 115a", "HT 115b"], "damos": ["KN Vc(5) 7616: pa-ra-ne 1"]},
+  "DA-I-PI-TA": {"linear_a": ["ZA 8", "ZA 10a"], "damos": ["KN Bk 799: da-i-pi-ta , ke-do-si-ja , ["]},
+  "KI-DA-RO": {"linear_a": ["HT 47a", "HT 117a"], "damos": ["KN E 842: ki-da-ro GRA"]},
+  "PA-I-TO": {"linear_a": ["HT 97a", "HT 120"], "damos": ["57 Knossos attestations, mostly the D- sheep series (e.g. KN Dn 1094: pa-i-to OVIS:m 1509)"]},
+  "SE-TO-I-JA": {"linear_a": ["PR Za 1"], "damos": ["22 Knossos attestations (As, Da-Do, Lc, Sd, So...)"]},
+  "SU-KI-RI-TA": {"linear_a": ["PH Wa 32"], "damos": ["6 Knossos attestations, all D- sheep series"]}
+ },
+ "mainland_common_words": {
+  "A-RO-TE": "PY La(1) 622",
+  "DA-MA-TE": "PY En 609",
+  "I-JA-TE": "PY Eq 146",
+  "MA-TE-RE": "PY Fr(1) 1202"
+ },
+ "reading": "DAMOS reproduces the linearb.xyz result: every shared name is a Knossos word, every mainland match a Greek common word at Pylos. The Knossos contexts of the personal names are entries in lists of persons or holdings with small counts (TA-NA-TI DA 1, I-TA-JA MUL 1, PA-RA-NE 1), the same function the words have in Linear A lists (TA-NA-TI 1 on HT 7a, a list of men). The names are used the same way in both scripts."
+}

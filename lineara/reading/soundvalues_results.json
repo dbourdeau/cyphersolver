@@ -1,0 +1,66 @@
+{
+  "method": "Do Linear B sound values carry over to Linear A?  A matching test with a null.\n\nLinear A word types (conventional LB-derived transliteration, as in the working corpus) are\ncompared with 919 Linear B words that have Greek cognates, including place names\n(NeuroDecipher, Luo et al. 2019, commit 480bad2). Real exact matches are counted, then the\nsound values are reassigned at random among Linear A syllabograms of similar frequency\n(10 frequency bins; the word shapes and sign frequencies are unchanged) and matches recounted.\nIf the carried-over values were arbitrary labels, the real count would sit inside the null.\nOnly words of 3+ signs count; 2-sign matches are mostly accidental.",
+  "linear_a_word_types": 783,
+  "linear_a_types_3plus": 491,
+  "linear_b_words": 919,
+  "syllabograms": 61,
+  "real_matches": [
+    {
+      "linear_a": "A-RU-RA",
+      "greek_cognate": "αρουρα",
+      "records": [
+        "HT11a"
+      ]
+    },
+    {
+      "linear_a": "PA-I-TO",
+      "greek_cognate": "φαιστος",
+      "records": [
+        "HT120",
+        "HT97a"
+      ]
+    },
+    {
+      "linear_a": "DA-MA-TE",
+      "greek_cognate": "δαματερ|δαματες|δυματες",
+      "records": [
+        "KYZa2"
+      ]
+    },
+    {
+      "linear_a": "SU-KI-RI-TA",
+      "greek_cognate": "συγριτα",
+      "records": [
+        "PHWa32"
+      ]
+    },
+    {
+      "linear_a": "I-JA-TE",
+      "greek_cognate": "ιατερ|ιατηρ",
+      "records": [
+        "PHZb4"
+      ]
+    },
+    {
+      "linear_a": "SE-TO-I-JA",
+      "greek_cognate": "σητοιαι",
+      "records": [
+        "PRZa1"
+      ]
+    }
+  ],
+  "null_mean": 0.4935,
+  "null_max": 6,
+  "null_distribution": {
+    "0": 1235,
+    "1": 587,
+    "2": 141,
+    "3": 33,
+    "4": 2,
+    "5": 1,
+    "6": 1
+  },
+  "p_value": 0.0009995002498750624,
+  "reps": 2000,
+  "seed": 20260923
+}

@@ -1,0 +1,81 @@
+A1   0.3303  Totals balance more often on single-commodity tablets  | effect 0.1786 | 9/28 vs 1/7
+A2   0.8231  Totals are round (multiples of 10) more often than entries  | effect -0.0715 | 12/29 vs 198/408
+A3   0.0005  Entries within a list are written in descending order of size  | effect 0.2 | 131 lists
+A4   0.0005  Quantities >= 10 follow Benford's law (p here = evidence AGAINST Benford)  | effect 77.67 | n=437, first digits {1: 201, 2: 91, 3: 42, 4: 35, 5: 21, 6: 21, 7: 11, 8: 5, 9: 10}
+A5   0.3688  Larger totals are more often wrong  | effect 45.5579 | median wrong 65, right 87
+B1   0.0005  Persons (VIR) are never counted in fractions, unlike goods  | effect 0.2766 | VIR 10/148, goods 255/741
+B2   0.0015  Larger fraction values (Corazza) are used more often  | effect 0.933 | {'J': 91, 'E': 40, 'K': 27, 'B': 29, 'L2': 15, 'D': 31, 'F': 3, 'L6': 2, 'L4': 2}
+B3   0.0005  Haghia Triada and Khania use different fraction repertoires  | effect 53.82 | {('Haghia Triada', 'J'): 48, ('Haghia Triada', 'JE'): 17, ('Haghia Triada', 'E'): 17, ('Haghia Triada', 'K'): 14, ('Hagh
+B4   0.1284  The combination K L2 belongs to cyperus  | effect 0.1974 | CYP 4/16, others 1/19
+B5    0.956  Totals carry fractions more often than entries  | effect -0.1111 | 4/31 vs 342/1424
+C1   0.0033  Signs prefer particular positions in the word (initial, medial, final)  | effect 525.8 | null: signs shuffled within words
+C2   0.9221  Reduplication (the same sign twice in a row) is more common than chance  | effect 0.0208 | null mean 0.026
+C3      1.0  Neighbouring syllables share a consonant more than chance  | effect 0.0411 | null mean 0.0683
+C4   0.0005  Word-final syllables have a different vowel mix  | effect 64.17 | {'e': 0.226, 'a': 0.363, 'o': 0.027, 'u': 0.15, 'i': 0.234}
+C5   0.0033  The next sign is more predictable than chance (lower conditional entropy)  | effect 4.081 | null 4.349 bits
+D1   0.8986  Reduplicated names are commoner at Knossos than Pylos  | effect -0.0081 | LA 0.028, KN 0.013, PY 0.021
+D2   0.0005  Knossos names are closer in length to Linear A names than Pylos names  | effect 0.146 | mean length LA 2.91, KN 3.42, PY 3.7
+D3   0.3608  Typical Linear A name endings (ti, na, ja, ta, re, ra, ru, te) are commoner at Knossos  | effect 0.0116 | 
+D4   0.0625  Knossos place names are more Linear A-like than Knossos personal names  | effect 0.1431 | 70 place names
+D5   0.8391  Names in the early Room of the Chariot Tablets are more Linear A-like  | effect -0.0885 | RCT 70, other 545
+E1   0.7311  Heading words are longer than entry words  | effect -0.0457 | 174 vs 479
+E2    0.004  Tablets by the same scribe share more vocabulary  | effect 0.0166 | 44 attributed tablets
+E3   0.0005  Words shared between sites are shorter than site-specific words  | effect 0.6645 | 48 shared, 702 local
+E4    0.014  KU-RO closes its section (no further entries follow)  | effect 0.1896 | KU-RO 28/37, other words 600/1058
+E5   0.0005  Single signs on sealings are abbreviations of word beginnings (closer to initial than final signs)  | effect 0.1255 | 631 sealing signs; p = share of bootstrap with no advantage
+F1   0.0005  Religious (formula) words are longer than administrative words  | effect 0.7478 | 223 vs 760 tokens
+F2   0.0005  The religious vocabulary overlaps the administrative less than chance  | effect 0.063 | 12 of 190 religious types also administrative
+F3   0.0005  Words beginning JA- belong to the religious register  | effect 0.1275 | 
+F4    0.003  Words beginning U- belong to the religious register  | effect 0.0417 | 
+F5   0.0125  Religious and administrative words differ in vowel mix  | effect 13.06 | 
+G1    0.002  Knossos Linear B uses syllables at rates closer to Linear A than Pylos does  | effect 0.165 | 52 shared syllables; p = bootstrap share with no Knossos advantage
+G2      1.0  Knossos uses the special signs (pa3, ra2, ta2, pu2...) more than Pylos  | effect -0.0263 | 102/2053 vs 149/1961
+G3   0.0005  Logograms Linear B kept were commoner in Linear A than numbered ones it did not  | effect 48.2656 | 9 kept, 146 numbered
+G4   0.0005  Undeciphered Linear B signs (*18, *47, *56...) are commoner at Knossos  | effect 0.0333 | 105/2053 vs 35/1961
+G5    0.954  Knossos names with undeciphered signs are more Linear A-like  | effect -0.2123 | 36 names with * signs
+H1        -  Knossos names are more Linear A-like than Thebes names  | effect None | untestable (8 Theban names)
+H2   0.0085  Knossos names are more Linear A-like than non-Pylian mainland names  | effect 0.1323 | 50 names
+H3    0.002  Knossos names are closer to Linear A names in syllable pairs too  | effect 0.095 | 
+H4   0.0005  The Knossos name effect survives matching word lengths  | effect 0.0502 | 335 length-matched Knossos names
+H5   0.0005  Linear A religious words also resemble Knossos names more than Pylos names  | effect 0.0557 | 190 religious word types
+I1     0.01  Middle Minoan and Late Minoan texts use syllables differently  | effect 118.2 | {'LM': 1869, 'MM': 64}
+I2   0.8796  Words are longer in Late Minoan texts than Middle Minoan  | effect -0.2244 | 21 MM, 662 LM tokens
+I3   0.4508  o-syllables were commoner earlier (Middle Minoan) than later  | effect 0.0082 | MM 0.031, LM 0.023
+I4   0.7822  Sites farther apart differ more in syllable use (Mantel test)  | effect -0.247 | 7 sites: ['Haghia Triada', 'Iouktas', 'Khania', 'Knossos', 'Phaistos', 'Palaikastro', 'Zakros']
+I5   0.1249  Khania differs more from Haghia Triada than Zakros does  | effect 0.0522 | 194 KH, 334 ZA syllables
+J1   0.0005  Amount sizes depend on the commodity  | effect 63.46 | {'VIR': 43.4, 'GRA': 59.7, 'VIN': 17.7, 'OLE': 7.2, 'CYP': 5.7, 'OLIV': 15.8}
+J2    0.997  In lists of men, each named entry is usually a single person (1)  | effect -0.1459 | 13/69 vs 117/350
+J3   0.0005  Amounts in KI-RO sections are smaller than elsewhere  | effect 25.8949 | 32 KI-RO entries
+J4   0.3183  Amounts entered with SA-RA2 are larger than other grain and cyperus amounts  | effect 0.222 | 14 SA-RA2 entries
+J5   0.0005  Even amounts are commoner than odd ones (rationing in pairs)  | effect 0.648 | 623/962
+
+49 tested; 29 survive Benjamini-Hochberg at 5%:
+  A3 p 0.0005  Entries within a list are written in descending order of size
+  A4 p 0.0005  Quantities >= 10 follow Benford's law (p here = evidence AGAINST Benford)
+  B1 p 0.0005  Persons (VIR) are never counted in fractions, unlike goods
+  B3 p 0.0005  Haghia Triada and Khania use different fraction repertoires
+  C4 p 0.0005  Word-final syllables have a different vowel mix
+  D2 p 0.0005  Knossos names are closer in length to Linear A names than Pylos names
+  E3 p 0.0005  Words shared between sites are shorter than site-specific words
+  E5 p 0.0005  Single signs on sealings are abbreviations of word beginnings (closer to initial than final signs)
+  F1 p 0.0005  Religious (formula) words are longer than administrative words
+  F2 p 0.0005  The religious vocabulary overlaps the administrative less than chance
+  F3 p 0.0005  Words beginning JA- belong to the religious register
+  G3 p 0.0005  Logograms Linear B kept were commoner in Linear A than numbered ones it did not
+  G4 p 0.0005  Undeciphered Linear B signs (*18, *47, *56...) are commoner at Knossos
+  H4 p 0.0005  The Knossos name effect survives matching word lengths
+  H5 p 0.0005  Linear A religious words also resemble Knossos names more than Pylos names
+  J1 p 0.0005  Amount sizes depend on the commodity
+  J3 p 0.0005  Amounts in KI-RO sections are smaller than elsewhere
+  J5 p 0.0005  Even amounts are commoner than odd ones (rationing in pairs)
+  B2 p 0.0015  Larger fraction values (Corazza) are used more often
+  G1 p 0.002  Knossos Linear B uses syllables at rates closer to Linear A than Pylos does
+  H3 p 0.002  Knossos names are closer to Linear A names in syllable pairs too
+  F4 p 0.003  Words beginning U- belong to the religious register
+  C1 p 0.0033  Signs prefer particular positions in the word (initial, medial, final)
+  C5 p 0.0033  The next sign is more predictable than chance (lower conditional entropy)
+  E2 p 0.004  Tablets by the same scribe share more vocabulary
+  H2 p 0.0085  Knossos names are more Linear A-like than non-Pylian mainland names
+  I1 p 0.01  Middle Minoan and Late Minoan texts use syllables differently
+  F5 p 0.0125  Religious and administrative words differ in vowel mix
+  E4 p 0.014  KU-RO closes its section (no further entries follow)

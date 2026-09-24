@@ -1,0 +1,154 @@
+{
+ "method": "Linear A against Eteocretan, the non-Greek language of Praisos and Dreros written in Greek letters.\n\nEteocretan (7th-3rd c. BC) is often suggested as a late descendant of Minoan. Its sounds are known because it\nis written alphabetically, but most of it is written without word division. So both sides are spelled the\nLinear B way (lang_test.spell) and Linear A words are sought inside the Eteocretan syllable stream, one stream\nper unbroken stretch of text (lacunae and word dividers break a stretch).\n\nTexts: R. A. Brown's transcriptions of the five certain inscriptions (Dreros 1 and 2, Eteocretan parts only;\nPraisos 1-3), as published on his Eteocretan pages (archived 2022-2025), which follow autopsy and agree with\nDuhoux 1982 in readings. The disputed Psychro (\"Epioi\") stone is scored separately.\n\nNulls and controls:\n  * Linear A sign values shuffled within frequency bins (as in soundvalues.py), 2,000 runs;\n  * equal-size samples of word shapes from unrelated languages (Hawaiian, Maori, Yoruba), to show how often\n    arbitrary real words turn up inside a stream this short;\n  * positive control: Linear B words (a true relative of the Greek) sought in about 400 letters of Greek\n    (Odyssey 19.172-177 and Strabo 10.475, which name Cretans; and, as a neutral text, Iliad 1.1-7 with\n    Odyssey 1.1-4) under the same rules, with the same shuffle null applied to the\n    Linear B values.",
+ "eteocretan_syllables": 193,
+ "greek_control_syllables": 217,
+ "eteocretan_streams": [
+  "ma",
+  "e",
+  "i-sa-ra-pe-re",
+  "ko",
+  "me",
+  "i-na-i",
+  "i-sa-ru-ri-a",
+  "mo",
+  "tu-pe-me-ri-e-i-a",
+  "ka-mi-te-ke",
+  "o",
+  "pa-ze",
+  "a",
+  "o",
+  "a",
+  "a-ke-se",
+  "me",
+  "a-ko-ko-ke-re",
+  "de",
+  "a-se-ka-da-na-ni",
+  "o-na-de-si-e-me-te-pi-mi-za-pa",
+  "do",
+  "i-a-ra-ra-pa-ra-i-so-i-na-i",
+  "re-to-to-sa-do-pa-sa-no",
+  "sa-to-i-te",
+  "sa-ti-u",
+  "a-ni-me-te-pa-ru-ne-u-ta",
+  "sa-no-mo-se-ro-pa-ra-i-so-na",
+  "za-do-pe-te-na",
+  "ma-pa-ra-i-na-i-re-ri",
+  "i-re-i-re-re-i-e",
+  "ri-ra-no",
+  "a-ke",
+  "i",
+  "nu-mi",
+  "a-ta-ko",
+  "e-de-de-a",
+  "so-pe-i-ra-ri",
+  "e",
+  "ta-se-te-we-se-u",
+  "na-si-ro-u-ke-re",
+  "i-re-me-i-a-ma",
+  "e-i-re-pi-da",
+  "ma-de-di-ka",
+  "ri-ra-i-ra-ri",
+  "ne-i-ka",
+  "ta-ri-do-e-i",
+  "e-pa",
+  "da-na"
+ ],
+ "tests": {
+  "3+ signs": {
+   "linear_a_types": 491,
+   "matches_in_eteocretan": [],
+   "null_mean": 0.39,
+   "p_ge": 1.0,
+   "control_language_samples_mean_hits": {
+    "Hawaiian": 2.67,
+    "Maori": 1.21,
+    "Yoruba": 1.78
+   },
+   "psychro_matches": [],
+   "positive_control_linear_b_in_greek": {
+    "Odyssey 19 + Strabo (names Cretans)": {
+     "syllables": 217,
+     "matches": [
+      "ke-re-te",
+      "ko-to-na",
+      "na-to-de"
+     ],
+     "null_mean": 0.45,
+     "p_ge": 0.012
+    },
+    "Iliad 1.1-7 + Odyssey 1.1-4 (neutral)": {
+     "syllables": 202,
+     "matches": [
+      "a-na-ka",
+      "po-ru-to"
+     ],
+     "null_mean": 0.38,
+     "p_ge": 0.0579
+    }
+   }
+  },
+  "2+ signs": {
+   "linear_a_types": 783,
+   "matches_in_eteocretan": [
+    "A-MA",
+    "A-RA",
+    "A-SE",
+    "A-TA",
+    "DE-DI",
+    "I-KA",
+    "I-NA",
+    "NA-SI",
+    "PA-RA",
+    "RA-RI",
+    "SA-RA",
+    "SA-RU",
+    "TE-KE",
+    "TO-SA"
+   ],
+   "null_mean": 15.22,
+   "p_ge": 0.6967,
+   "control_language_samples_mean_hits": {
+    "Hawaiian": 16.61,
+    "Maori": 14.75,
+    "Yoruba": 12.78
+   },
+   "psychro_matches": [
+    "PI-O"
+   ],
+   "positive_control_linear_b_in_greek": {
+    "Odyssey 19 + Strabo (names Cretans)": {
+     "syllables": 217,
+     "matches": [
+      "i-to",
+      "ka-te",
+      "ke-me",
+      "mi-ko",
+      "na-to",
+      "pi-po-to",
+      "ra-ko",
+      "te-o",
+      "to-re"
+     ],
+     "null_mean": 8.08,
+     "p_ge": 0.4371
+    },
+    "Iliad 1.1-7 + Odyssey 1.1-4 (neutral)": {
+     "syllables": 202,
+     "matches": [
+      "a-ki",
+      "a-pe-re",
+      "a-te",
+      "di-pi",
+      "do-ro",
+      "i-to",
+      "ko-so",
+      "re-u",
+      "u-re"
+     ],
+     "null_mean": 7.9,
+     "p_ge": 0.3892
+    }
+   }
+  }
+ }
+}

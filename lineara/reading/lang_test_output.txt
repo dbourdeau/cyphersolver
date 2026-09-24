@@ -1,0 +1,31 @@
+Group tests (excess over own-syllable null, compared with the controls):
+  Semitic (Akkadian, Ugaritic)   obs 7 exp 2.6 ratio 2.69 vs controls 1.69  p 0.215 (x4: 0.859)
+  Anatolian (Luwian)             obs 1 exp 1.86 ratio 0.54 vs controls 1.69  p 0.952 (x4: 1)
+  Hurro-Urartian (Hurrian)       obs 1 exp 0.91 ratio 1.1 vs controls 1.69  p 0.79 (x4: 1)
+  Tyrsenian (Etruscan)           obs 0 exp 0.09 ratio 0.0 vs controls 1.69  p 1.0 (x4: 1)
+Linear A types (3+ signs): 491
+language   kind          forms3+ hits  /1000   null  ratio       p  known-sense look-alikes
+Luwian     proposed          540    1   1.85   1.86   0.54  0.8372  
+Hurrian    proposed          294    1    3.4   0.91    1.1  0.6034  
+Akkadian   proposed          336    3   8.93   1.41   2.13  0.1718  
+Ugaritic   proposed          288    4  13.89   1.19   3.36   0.035  
+Etruscan   proposed           27    0    0.0   0.09    0.0     1.0  
+Greek      not proposed    28606   27   0.94  11.86   2.28   0.001  ku-ro=skulos(no fit); ki-ro=skiron(no fit)
+Sumerian   not proposed       40    0    0.0   0.17    0.0     1.0  
+Hawaiian   control          1106    4   3.62   1.97   2.03  0.1379  ki-ro=kilo(no fit)
+Maori      control          1484    4    2.7    2.9   1.38  0.3327  
+Samoan     control           271    0    0.0   0.42    0.0     1.0  
+Tongan     control           146    0    0.0   0.25    0.0     1.0  ku-ro=kulo(no fit)
+Yoruba     control          2447    7   2.86   3.33    2.1   0.047  ku-ro=kuro(no fit); ki-ro=kilọ(no fit)
+Power, like for like (Greek sample of the same size vs 491 Linear B types):
+  Akkadian  size 336: a Greek-like relative gives 0.54 [0, 2]; observed with Linear A 3
+  Ugaritic  size 288: a Greek-like relative gives 0.54 [0, 2]; observed with Linear A 4
+  Luwian    size 540: a Greek-like relative gives 0.79 [0, 2]; observed with Linear A 1
+Positive control: each lexicon against Linear B word types (3+ signs): 4164
+  Greek (true relative)    forms 28606 hits  376 /1000   13.14 null 119.01 ratio 3.16 p 0.001
+  Hawaiian                 forms  1106 hits    9 /1000    8.14 null   8.72 ratio 1.03 p 0.4975
+  Maori                    forms  1484 hits   20 /1000   13.48 null  12.98 ratio 1.54 p 0.034
+  Yoruba                   forms  2447 hits   53 /1000   21.66 null  17.67 ratio 3.0 p 0.001
+  Akkadian                 forms   336 hits    2 /1000    5.95 null   1.75 ratio 1.14 p 0.5205
+  Ugaritic                 forms   288 hits    4 /1000   13.89 null    1.4 ratio 2.87 p 0.047
+  Luwian                   forms   540 hits    7 /1000   12.96 null   5.83 ratio 1.2 p 0.3686

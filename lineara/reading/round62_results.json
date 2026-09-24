@@ -1,0 +1,138 @@
+{
+ "title": "the descriptor slot on mixed tablets",
+ "method": "Round 62 (saturation loop 4): does the descriptor slot mark which goods an entry is about? BH at 5% across the\nseven.\n\nR1  On multi-commodity tablets, an entry whose commodity differs from the previous entry's has a descriptor word\n    more often than an entry that continues the same commodity.\nR2  The number of commodities on a tablet correlates with the share of its word entries in the descriptor slot.\nR4  On single-commodity tablets, a smaller share of entries carries a commodity sign than on multi-commodity tablets.\nR5  KU-RO stands directly before a commodity sign more often on multi-commodity tablets than on single-commodity ones.\nR9  Amounts after descriptor words are multiples of 10 more often than amounts after name words.\nR11 Headings of multi-commodity tablets are terms (words also used in the descriptor slot) more often.\nR13 On multi-commodity tablets, descriptor entries open a commodity block (first entry of that commodity) more often\n    than other entries with a commodity sign.",
+ "primary_p": {
+  "R1": 0.6481759120439781,
+  "R2": 0.0007998400319936012,
+  "R4": 0.0004997501249375312,
+  "R5": 0.5787106446776612,
+  "R9": 0.00399800099950025,
+  "R11": 0.7871064467766117,
+  "R13": 0.6046976511744128
+ },
+ "bh_supported": [
+  "R2",
+  "R4",
+  "R9"
+ ],
+ "details": {
+  "R1": {
+   "prediction": "A switch of commodity carries a descriptor word more often",
+   "primary": {
+    "switch": [
+     0.1838,
+     136
+    ],
+    "continue": [
+     0.1972,
+     71
+    ],
+    "p": 0.6482
+   },
+   "robustness": {},
+   "p": 0.6481759120439781
+  },
+  "R2": {
+   "prediction": "More commodities, more descriptor entries",
+   "primary": {
+    "spearman": 0.345,
+    "p": 0.0008,
+    "tablets": 125
+   },
+   "robustness": {},
+   "p": 0.0007998400319936012
+  },
+  "R4": {
+   "prediction": "Single-commodity tablets repeat the commodity sign less",
+   "primary": {
+    "single": [
+     0.3386,
+     79
+    ],
+    "multi": [
+     0.5381,
+     61
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "R5": {
+   "prediction": "KU-RO before a commodity sign on multi-commodity tablets",
+   "primary": {
+    "multi": [
+     0.1429,
+     7
+    ],
+    "single": [
+     0.1,
+     30
+    ],
+    "p": 0.5787
+   },
+   "robustness": {},
+   "p": 0.5787106446776612
+  },
+  "R9": {
+   "prediction": "Amounts after descriptor words are multiples of 10 more often",
+   "primary": {
+    "desc": [
+     0.3039,
+     102
+    ],
+    "name": [
+     0.1746,
+     464
+    ],
+    "p": 0.004
+   },
+   "robustness": {
+    "amounts of 10 or more": {
+     "desc": [
+      0.5082,
+      61
+     ],
+     "name": [
+      0.5586,
+      145
+     ],
+     "p": 0.8026
+    }
+   },
+   "p": 0.00399800099950025
+  },
+  "R11": {
+   "prediction": "Headings of multi-commodity tablets are terms more often",
+   "primary": {
+    "multi": [
+     0.2222,
+     18
+    ],
+    "single": [
+     0.2759,
+     29
+    ],
+    "p": 0.7871
+   },
+   "robustness": {},
+   "p": 0.7871064467766117
+  },
+  "R13": {
+   "prediction": "Descriptor entries open a commodity block more often",
+   "primary": {
+    "desc_opens": [
+     0.5694,
+     72
+    ],
+    "other_opens": [
+     0.5787,
+     197
+    ],
+    "p": 0.6047
+   },
+   "robustness": {},
+   "p": 0.6046976511744128
+  }
+ }
+}

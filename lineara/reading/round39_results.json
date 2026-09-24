@@ -1,0 +1,129 @@
+{
+ "title": "word-shape follow-ups",
+ "method": "Round 39 (second loop, round 1 of 10): word-shape follow-ups, each against Linear B.\n\nBB1  The Q-initial pattern holds counting each word-initial sign pair (first two signs) once.\nBB2  J-row signs are word-initial less often in Linear A than in Linear B.\nBB3  W-row signs are word-final less often in Linear A than in Linear B.\nBB5  Special signs (pa3, ra2, ta2, pu2) are word-internal more often in Linear A than in Linear B.\nBB6  Neighbouring syllables repeat the same consonant more often in Linear A than in Linear B.\nBB7  Initial and final consonant distributions differ more in Linear A than in Linear B (JSD).\nBB8  Z-row signs are word-final more often in Linear A than in Linear B.\nBB9  First syllables favour a over later syllables more in Linear A than in Linear B.\nBB10 Linear A words that begin with a Q-row sign are entry labels more often than other words.\nBB11 Word-final consonants are more restricted (lower entropy relative to initial) in Linear A than in Linear B.",
+ "primary_p": {
+  "BB1": 0.005497251374312844,
+  "BB2": 1.0,
+  "BB3": 0.7496251874062968,
+  "BB5": 0.9775112443778111,
+  "BB6": 0.0004997501249375312,
+  "BB7": 0.999000499750125,
+  "BB8": 0.25737131434282856,
+  "BB9": 0.6421789105447276,
+  "BB10": 0.31084457771114443,
+  "BB11": 0.0074962518740629685
+ },
+ "bh_supported": [
+  "BB1",
+  "BB11",
+  "BB6"
+ ],
+ "details": {
+  "BB1": {
+   "prediction": "Q-initial share counting each initial sign pair once",
+   "primary": {
+    "LA": 0.7241,
+    "LB": 0.5294,
+    "p": 0.0055
+   },
+   "robustness": {},
+   "p": 0.005497251374312844
+  },
+  "BB2": {
+   "prediction": "J-row signs word-initial less often",
+   "primary": {
+    "LA": 0.3582,
+    "LB": 0.0437,
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "BB3": {
+   "prediction": "W-row signs word-final less often",
+   "primary": {
+    "LA": 0.3571,
+    "LB": 0.3341,
+    "p": 0.7496
+   },
+   "robustness": {},
+   "p": 0.7496251874062968
+  },
+  "BB5": {
+   "prediction": "Special signs word-internal more often",
+   "primary": {
+    "LA": 0.2857,
+    "LB": 0.5165,
+    "p": 0.9775
+   },
+   "robustness": {},
+   "p": 0.9775112443778111
+  },
+  "BB6": {
+   "prediction": "Neighbouring syllables repeat the consonant more often",
+   "primary": {
+    "LA": 0.054,
+    "LB": 0.0298,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "BB7": {
+   "prediction": "Initial and final consonant distributions differ more",
+   "primary": {
+    "LA": 0.1234,
+    "LB": 0.1603,
+    "p": 0.999
+   },
+   "robustness": {},
+   "p": 0.999000499750125
+  },
+  "BB8": {
+   "prediction": "Z-row signs word-final more often",
+   "primary": {
+    "LA": 0.4444,
+    "LB": 0.3816,
+    "p": 0.2574
+   },
+   "robustness": {},
+   "p": 0.25737131434282856
+  },
+  "BB9": {
+   "prediction": "First syllables favour a over later syllables more",
+   "primary": {
+    "LA": 0.0773,
+    "LB": 0.085,
+    "p": 0.6422
+   },
+   "robustness": {},
+   "p": 0.6421789105447276
+  },
+  "BB10": {
+   "prediction": "Q-initial words are entry labels more often",
+   "primary": {
+    "Q_initial": [
+     0.68,
+     25
+    ],
+    "other": [
+     0.6088,
+     547
+    ],
+    "p": 0.3108
+   },
+   "robustness": {},
+   "p": 0.31084457771114443
+  },
+  "BB11": {
+   "prediction": "Final consonants more restricted than initial ones",
+   "primary": {
+    "LA": 0.0454,
+    "LB": 0.1317,
+    "p": 0.0075
+   },
+   "robustness": {},
+   "p": 0.0074962518740629685
+  }
+ }
+}

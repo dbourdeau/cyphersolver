@@ -1,0 +1,193 @@
+{
+ "title": "the religious and administrative vocabularies",
+ "method": "Round 46 (second loop, round 8 of 10): the religious and administrative vocabularies.\n\nII1  Words found in both registers are entry labels (names) in the administrative texts more often than other words.\nII2  Religious words begin with a pure vowel sign more often than administrative words.\nII3  Religious words repeat the consonant of neighbouring syllables more often.\nII4  Religious words contain Z-row signs more often.\nII5  Administrative words that also occur in religious texts are attested at more sites.\nII6  Religious words are two-sign words less often.\nII7  Religious words repeat a whole syllable in succession (SA-SA) more often.\nII8  Inked inscriptions are closer in syllable use to administrative texts than to stone-vessel dedications.\nII9  Religious inscriptions on the same object type share words more than inscriptions on different types.\nII10 Religious words match Knossos Linear B words (exactly or as stem + one syllable) more often than\n     administrative words.",
+ "primary_p": {
+  "II1": 0.960519740129935,
+  "II2": 0.0004997501249375312,
+  "II3": 0.09645177411294353,
+  "II4": 0.791104447776112,
+  "II5": 0.431784107946027,
+  "II6": 0.02798600699650175,
+  "II7": 0.001999000499750125,
+  "II8": 0.0074962518740629685,
+  "II9": 0.0004997501249375312,
+  "II10": 0.904047976011994
+ },
+ "bh_supported": [
+  "II2",
+  "II7",
+  "II8",
+  "II9"
+ ],
+ "details": {
+  "II1": {
+   "prediction": "Words in both registers are entry labels more often",
+   "primary": {
+    "shared_words_entry": [
+     0.4167,
+     12
+    ],
+    "other_entry": [
+     0.6161,
+     560
+    ],
+    "p": 0.9605
+   },
+   "robustness": {
+    "shared words": [
+     "A-JA",
+     "A-MA",
+     "A-SE",
+     "DI-NA-U",
+     "I-DA",
+     "I-TI",
+     "JA-SA",
+     "RE-TI",
+     "RU-DI",
+     "SI-RU",
+     "SI-TE",
+     "TI-TI-KU"
+    ]
+   },
+   "p": 0.960519740129935
+  },
+  "II2": {
+   "prediction": "Religious words begin with a pure vowel more often",
+   "primary": {
+    "religious": 0.3579,
+    "admin": 0.1982,
+    "p": 0.0005,
+    "n": [
+     190,
+     560
+    ]
+   },
+   "robustness": {
+    "II2 formula removed": {
+     "religious": 0.3052,
+     "admin": 0.1982,
+     "p": 0.0045,
+     "n": 154
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "II3": {
+   "prediction": "Religious words repeat neighbouring consonants more often",
+   "primary": {
+    "religious": 0.0626,
+    "admin": 0.0467,
+    "p": 0.0965,
+    "n": [
+     190,
+     560
+    ]
+   },
+   "robustness": {},
+   "p": 0.09645177411294353
+  },
+  "II4": {
+   "prediction": "Religious words contain Z-row signs more often",
+   "primary": {
+    "religious": 0.0474,
+    "admin": 0.0589,
+    "p": 0.7911,
+    "n": [
+     190,
+     560
+    ]
+   },
+   "robustness": {},
+   "p": 0.791104447776112
+  },
+  "II5": {
+   "prediction": "Administrative words also found in religious texts occur at more sites",
+   "primary": {
+    "shared_mean_sites": [
+     1.0833,
+     12
+    ],
+    "other": [
+     1.0536,
+     560
+    ],
+    "p": 0.4318
+   },
+   "robustness": {},
+   "p": 0.431784107946027
+  },
+  "II6": {
+   "prediction": "Religious words are two-sign words less often",
+   "primary": {
+    "religious": 0.3105,
+    "admin": 0.3929,
+    "p": 0.028,
+    "n": [
+     190,
+     560
+    ]
+   },
+   "robustness": {},
+   "p": 0.02798600699650175
+  },
+  "II7": {
+   "prediction": "Religious words repeat a whole syllable more often",
+   "primary": {
+    "religious": 0.0842,
+    "admin": 0.0286,
+    "p": 0.002,
+    "n": [
+     190,
+     560
+    ]
+   },
+   "robustness": {
+    "II7 formula removed": {
+     "religious": 0.0455,
+     "admin": 0.0286,
+     "p": 0.2224
+    }
+   },
+   "p": 0.001999000499750125
+  },
+  "II8": {
+   "prediction": "Inked inscriptions are closer to administrative texts than to stone dedications",
+   "primary": {
+    "jsd_to_stone_minus_admin": 0.0088,
+    "null": -0.0952,
+    "p": 0.0075,
+    "n": [
+     12,
+     106
+    ]
+   },
+   "robustness": {},
+   "p": 0.0074962518740629685
+  },
+  "II9": {
+   "prediction": "Same object type shares words more than different types",
+   "primary": {
+    "diff": 0.031,
+    "null": 0.0,
+    "p": 0.0005,
+    "inscriptions": 153
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "II10": {
+   "prediction": "Religious words match Knossos words more often",
+   "primary": {
+    "religious": 0.1105,
+    "admin": 0.1446,
+    "p": 0.904,
+    "n": [
+     190,
+     560
+    ]
+   },
+   "robustness": {},
+   "p": 0.904047976011994
+  }
+ }
+}

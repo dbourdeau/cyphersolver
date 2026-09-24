@@ -1,0 +1,33 @@
+== P1: Khania tablets carry fewer name-slot words than Haghia Triada tablets
+   primary {'Khania': (1.1429, 14), 'HT': (4.2179, 78), 'p': 0.0005}
+   robustness {}
+== P2: Descriptor entries stand earlier in the list
+   primary {'desc_mean_position': (0.3969, 27), 'name_mean_position': (0.5663, 42), 'p': 0.0345}
+   robustness {}
+== P3: Tablets headed by a term contain descriptor entries more often
+   primary {'term_headed': (0.52, 25), 'other': (0.1727, 110), 'p': 0.0015}
+   robustness {}
+== P4: Descriptor words repeat within a tablet more than name words
+   primary {'desc': 0.0, 'name': 0.012, 'p': 0.973}
+   robustness {}
+== P6: Name words show harmony more than descriptor words
+   primary {'name': 0.066, 'desc': 0.022, 'p': 0.0705}
+   robustness {}
+== P8: Q-initial words are name-slot words more often
+   primary {'name': 0.048, 'desc': 0.065, 'p': 0.8091}
+   robustness {}
+== P9: Vowel-initial words are descriptor-slot words more often
+   primary {'desc': 0.247, 'name': 0.177, 'p': 0.1}
+   robustness {}
+== P10: Descriptor words are written by more scribes
+   primary {'desc': (2.5909, 22), 'name': (1.4634, 41), 'p': 0.0035}
+   robustness {}
+== P11: Descriptor words occur in religious texts more often
+   primary {'desc': (0.0364, 110), 'name': (0.0086, 349), 'p': 0.0585}
+   robustness {}
+== P12: Descriptor words (2+ tablets) are attested at more sites
+   primary {'desc': (1.4545, 22), 'name': (1.1707, 41), 'p': 0.0515}
+   robustness {}
+
+primary p: {'P1': 0.0005, 'P2': 0.0345, 'P3': 0.0015, 'P4': 0.973, 'P6': 0.0705, 'P8': 0.8091, 'P9': 0.1, 'P10': 0.0035, 'P11': 0.0585, 'P12': 0.0515}
+survive BH at 5%: ['P1', 'P10', 'P3']

@@ -1,0 +1,157 @@
+{
+ "title": "the signs",
+ "method": "Round 45 (second loop, round 7 of 10): the signs.\n\nHH1  Unread signs are word-initial more often than known signs.\nHH3  The single signs used on tablets are the commonest syllables of Linear A words (Spearman over signs).\nHH4  Single signs on sealings differ in repertoire from single signs on tablets.\nHH5  *301 is word-internal (neither first nor last) more often than other signs.\nHH6  Unread signs stand next to other unread signs more often than chance (signs shuffled within words).\nHH7  Unread signs are confined to fewer word types per occurrence than known signs.\nHH8  The single sign ZE is followed directly by a number more often than other single signs.\nHH11 The single sign NI is followed directly by a number more often than other single signs.\nHH15 Syllable signs are associated with register (religious against administrative), whole inventory.\nHH16 Signs that Linear B uses word-finally are relatively rarer in Linear A (Spearman of Linear B final share\n     against log(LA frequency / LB frequency), predicted negative).",
+ "primary_p": {
+  "HH1": 0.0014992503748125937,
+  "HH3": 0.0001999600079984003,
+  "HH4": 0.0004997501249375312,
+  "HH5": 0.062468765617191405,
+  "HH6": 0.9790104947526237,
+  "HH7": 0.03948025987006497,
+  "HH8": 0.5397301349325337,
+  "HH11": 0.0014992503748125937,
+  "HH15": 0.0004997501249375312,
+  "HH16": 0.03259348130373925
+ },
+ "bh_supported": [
+  "HH1",
+  "HH11",
+  "HH15",
+  "HH3",
+  "HH4"
+ ],
+ "details": {
+  "HH1": {
+   "prediction": "Unread signs are word-initial more often than known signs",
+   "primary": {
+    "unread_initial": [
+     0.4343,
+     198
+    ],
+    "known_initial": [
+     0.3179,
+     2746
+    ],
+    "p": 0.0015
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "HH3": {
+   "prediction": "Tablet single signs are the commonest word syllables",
+   "primary": {
+    "spearman": 0.654,
+    "p": 0.0002,
+    "signs": 51
+   },
+   "robustness": {},
+   "p": 0.0001999600079984003
+  },
+  "HH4": {
+   "prediction": "Single signs on sealings differ in repertoire from those on tablets",
+   "primary": {
+    "chi2": 633.7,
+    "null": 31.9,
+    "p": 0.0005,
+    "tokens": 1012
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "HH5": {
+   "prediction": "*301 is word-internal more often than other signs",
+   "primary": {
+    "301_internal": [
+     0.5217,
+     23
+    ],
+    "other_internal": [
+     0.3471,
+     2921
+    ],
+    "p": 0.0625
+   },
+   "robustness": {},
+   "p": 0.062468765617191405
+  },
+  "HH6": {
+   "prediction": "Unread signs stand next to other unread signs more than chance",
+   "primary": {
+    "adjacent_unread_pairs": 14,
+    "null": 15.99,
+    "p": 0.979
+   },
+   "robustness": {},
+   "p": 0.9790104947526237
+  },
+  "HH7": {
+   "prediction": "Unread signs are confined to fewer word types per occurrence",
+   "primary": {
+    "unread_resid": [
+     -0.1191,
+     26
+    ],
+    "known_resid": [
+     0.0525,
+     59
+    ],
+    "p": 0.0395
+   },
+   "robustness": {},
+   "p": 0.03948025987006497
+  },
+  "HH8": {
+   "prediction": "ZE is followed directly by a number more often than other single signs",
+   "primary": {
+    "ZE": [
+     1.0,
+     1
+    ],
+    "other": [
+     0.5514,
+     428
+    ],
+    "p": 0.5397
+   },
+   "robustness": {},
+   "p": 0.5397301349325337
+  },
+  "HH11": {
+   "prediction": "NI is followed directly by a number more often than other single signs",
+   "primary": {
+    "NI": [
+     0.7286,
+     70
+    ],
+    "other": [
+     0.5181,
+     359
+    ],
+    "p": 0.0015
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "HH15": {
+   "prediction": "Syllable signs are associated with register",
+   "primary": {
+    "chi2": 135.6,
+    "null": 49.7,
+    "p": 0.0005,
+    "tokens": 2618
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "HH16": {
+   "prediction": "Signs Linear B uses word-finally are relatively rarer in Linear A",
+   "primary": {
+    "spearman": -0.272,
+    "p": 0.0326,
+    "signs": 50
+   },
+   "robustness": {},
+   "p": 0.03259348130373925
+  }
+ }
+}

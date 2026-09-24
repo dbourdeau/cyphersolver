@@ -1,0 +1,21 @@
+== M1 twin values on other words: Twin-derived values turn the signs' other words into attested words more than random values
+   primary {'hits': 6, 'null_mean': 6.2, 'p': 0.6172, 'signs': 12}
+   robustness {'candidates (sign: value from twin)': {'*118': 'ne (from *118-MI-NA)', '*164': 'da (from *164-RI-DA)', '*21F': 'qe (from *21F-TU-NE)', '*306': 'ri (from *306-TA-JE)', '*324': 'zu (from *324-DI-RA)', '*333': 'ja (from *333-SA-MU)', '*47': 'da (from *47-KU-NA)', '*325': 'du (from A-*325-ZA)', '*802': 'ra (from A-SA-SA-*802-ME)', '*314': 'ra (from DU-*314-RE)', '*307': 'du (from JA-DI-KI-TE-TE-*307-PU2-RE)', '*301': 'qe (from SA-*301-RI)'}, 'hits': {'*118': ['ne-mi', 'qa-ne'], '*21F': ['qe-tu', 'ja-qe'], '*47': ['i-da'], '*301': ['e-qe']}}
+== M6 R/T vowels in Knossos names: Knossos names show the R/T vowel-entropy gap more than Pylos names
+   primary {'gap_target': -0.052, 'gap_comparison': -0.012, 'p': 0.8746, 'n': [637, 339]}
+   robustness {'Linear A gap': 0.198}
+== M7 R/T vowels in Cretan place names: Knossos-only place names show the gap more than Pylos-only ones
+   primary {'gap_target': 0.099, 'gap_comparison': 0.027, 'p': 0.1164, 'n': [73, 120]}
+   robustness {'Linear A gap': 0.198}
+== M8 R/T vowels in Pre-Greek: Pre-Greek stems show the gap more than ordinary Greek stems
+   primary {'gap_target': 0.019, 'gap_comparison': 0.004, 'p': 0.1914, 'n': [1143, 1143]}
+   robustness {'Linear A gap': 0.198}
+== M9 R/T vowels in Eteocretan: Eteocretan shows the gap more than Greek
+   primary {'gap_target': 0.144, 'gap_comparison': -0.105, 'p': 0.0135, 'n': [35, 119]}
+   robustness {'Linear A gap': 0.198}
+== M10 twin values in Linear B: Linear B words with the same numbered signs become attested words under the candidate values
+   primary {'hits': 2, 'null_mean': 1.75, 'p': 0.5057, 'shared_signs': ['47']}
+   robustness {}
+
+primary p: {'M1': 0.6172, 'M6': 0.8746, 'M7': 0.1164, 'M8': 0.1914, 'M9': 0.0135, 'M10': 0.5057}
+survive BH at 5%: []

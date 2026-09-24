@@ -1,0 +1,267 @@
+{
+ "method": "Are the fraction-order exceptions tied to particular commodities?\n\nEach multi-sign fraction run (from reading.json, same entry, undamaged) is tagged with the commodity that\ngoverns its entry: the logogram in the entry, or else the last commodity written before it in the record.\nAdjacent pairs are then scored against the Corazza et al. 2021 values commodity by commodity. If fraction\nsigns had commodity-specific values (different units for grain, oil, cyperus), violations would cluster in\none commodity and each commodity's own pairs would be consistent.",
+ "pairs": 30,
+ "by_commodity": {
+  "(none)": {
+   "ok": 10,
+   "unvalued": 1,
+   "violated": 1
+  },
+  "CYP": {
+   "ok": 7,
+   "violated": 1
+  },
+  "OLE": {
+   "ok": 1
+  },
+  "GRA": {
+   "violated": 1,
+   "ok": 2
+  },
+  "OLIV": {
+   "ok": 1
+  },
+  "VIR": {
+   "ok": 2
+  },
+  "VIN": {
+   "ok": 2,
+   "unvalued": 1
+  }
+ },
+ "violations": [
+  {
+   "record": "HT34",
+   "site": "Haghia Triada",
+   "commodity": "GRA",
+   "pair": "H K",
+   "ok": false
+  },
+  {
+   "record": "KH86",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "A B",
+   "ok": false
+  },
+  {
+   "record": "ZA8",
+   "site": "Zakros",
+   "commodity": "(none)",
+   "pair": "E J",
+   "ok": false
+  }
+ ],
+ "all_pairs": [
+  {
+   "record": "HT8b",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "E F",
+   "ok": true
+  },
+  {
+   "record": "HT16",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "E F",
+   "ok": true
+  },
+  {
+   "record": "HT27a",
+   "site": "Haghia Triada",
+   "commodity": "CYP",
+   "pair": "JE B",
+   "ok": true
+  },
+  {
+   "record": "HT32",
+   "site": "Haghia Triada",
+   "commodity": "OLE",
+   "pair": "J K",
+   "ok": true
+  },
+  {
+   "record": "HT33",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "E L2",
+   "ok": true
+  },
+  {
+   "record": "HT34",
+   "site": "Haghia Triada",
+   "commodity": "GRA",
+   "pair": "H K",
+   "ok": false
+  },
+  {
+   "record": "HT50a",
+   "site": "Haghia Triada",
+   "commodity": "OLIV",
+   "pair": "E F",
+   "ok": true
+  },
+  {
+   "record": "HT51b",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "J F",
+   "ok": true
+  },
+  {
+   "record": "HT93a",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "J H",
+   "ok": true
+  },
+  {
+   "record": "HT120",
+   "site": "Haghia Triada",
+   "commodity": "GRA",
+   "pair": "J A",
+   "ok": true
+  },
+  {
+   "record": "HT123+124b",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "J L2",
+   "ok": true
+  },
+  {
+   "record": "HT123+124b",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "E F",
+   "ok": true
+  },
+  {
+   "record": "HT129",
+   "site": "Haghia Triada",
+   "commodity": "GRA",
+   "pair": "J B",
+   "ok": true
+  },
+  {
+   "record": "HTZd157+156",
+   "site": "Haghia Triada",
+   "commodity": "(none)",
+   "pair": "E F",
+   "ok": true
+  },
+  {
+   "record": "KH5",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "J B",
+   "ok": true
+  },
+  {
+   "record": "KH6",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "J B",
+   "ok": true
+  },
+  {
+   "record": "KH9",
+   "site": "Khania",
+   "commodity": "VIR",
+   "pair": "E B",
+   "ok": true
+  },
+  {
+   "record": "KH11",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "K L2",
+   "ok": true
+  },
+  {
+   "record": "KH11",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "K L2",
+   "ok": true
+  },
+  {
+   "record": "KH11",
+   "site": "Khania",
+   "commodity": "VIN",
+   "pair": "K L2",
+   "ok": true
+  },
+  {
+   "record": "KH17",
+   "site": "Khania",
+   "commodity": "(none)",
+   "pair": "J B",
+   "ok": true
+  },
+  {
+   "record": "KH26",
+   "site": "Khania",
+   "commodity": "VIR",
+   "pair": "E L4",
+   "ok": true
+  },
+  {
+   "record": "KH75",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "K L2",
+   "ok": true
+  },
+  {
+   "record": "KH76",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "E L6",
+   "ok": true
+  },
+  {
+   "record": "KH86",
+   "site": "Khania",
+   "commodity": "CYP",
+   "pair": "A B",
+   "ok": false
+  },
+  {
+   "record": "KH91",
+   "site": "Khania",
+   "commodity": "VIN",
+   "pair": "J L2",
+   "ok": true
+  },
+  {
+   "record": "PH1b",
+   "site": "Phaistos",
+   "commodity": "(none)",
+   "pair": "F K",
+   "ok": true
+  },
+  {
+   "record": "PH7b",
+   "site": "Phaistos",
+   "commodity": "(none)",
+   "pair": "L E",
+   "ok": null
+  },
+  {
+   "record": "ZA8",
+   "site": "Zakros",
+   "commodity": "(none)",
+   "pair": "E J",
+   "ok": false
+  },
+  {
+   "record": "ZA11a",
+   "site": "Zakros",
+   "commodity": "VIN",
+   "pair": "L L2",
+   "ok": null
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+== N1 place names under the collapse: Under the R/T collapse Linear A words match Knossos place names more than Pylos ones
+   primary {'KN_rate': 0.0, 'PY_rate': 0.0, 'p': 1.0, 'n': [73, 120]}
+   robustness {'new Knossos place-name matches': {}, 'new Pylos place-name matches': {}}
+== N2 name matches under the R/T collapse: The R/T collapse gains more Knossos name matches than a collapse after other consonants
+   primary {'gain_RT': 6, 'gain_other': 2, 'bootstrap p': 0.052}
+   robustness {'new Knossos matches (R/T)': {'A-TI-RU': ['a-ti-ro'], 'DI-DE-RU': ['di-de-ro'], 'KA-SA-RU': ['ka-sa-ro'], 'QA-QA-RU': ['qa-qa-ro'], 'RI-KA-TA': ['re-ka-ta'], 'SA-MA-RO': ['sa-ma-ru']}, 'Pylos control': {'RT': 0, 'other': 2}}
+== N3 dental alternations in SigLA: On SigLA, i~e and u~o alternations fall after dentals more than other vowel alternations
+   primary {'dental_share_ie_uo': 0.75, 'dental_share_other': 0.671, 'p': 0.4313, 'alternations': [12, 73]}
+   robustness {'lineara.xyz (round 20, F1)': '19/21 vs 66%, p 0.022'}
+== N5 headings as place names: Linear A headings match Knossos place names more often than entry labels do
+   primary {'headings': '0/137', 'entries': '1/350', 'p': 1.0}
+   robustness {'heading matches': [], 'entry matches': ['PA-DE']}
+
+primary p: {'N1': 1.0, 'N2': 0.052, 'N3': 0.4313, 'N5': 1.0}
+survive BH at 5%: []

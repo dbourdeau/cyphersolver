@@ -1,0 +1,33 @@
+== V1: Grain amounts are multiples of 5 more often than other commodities' amounts
+   primary {'GRA': (0.4706, 85), 'other': (0.1946, 221), 'p': 0.0005}
+   robustness {}
+== V3: Entries with J (1/2) have odd whole numbers more often
+   primary {'with_J': (0.5185, 54), 'no_fraction': (0.5114, 1097), 'p': 0.5042}
+   robustness {}
+== V7: Lists with a KU-RO total are longer
+   primary {'with_total': (6.6875, 32), 'without': (4.819, 232), 'p': 0.002}
+   robustness {}
+== V8: Totals balance less often on longer lists (6+ entries)
+   primary {'long_ok': (0.3684, 19), 'short_ok': (0.2222, 9), 'p': 0.8691}
+   robustness {}
+== V9: Totals that do not balance fall short of the entries more often than they exceed them
+   primary {'short': '9/18', 'sign_test_p': 0.5927}
+   robustness {}
+== V10: Fractions stand on the later half of a list more often
+   primary {'later_half': (0.2224, 571), 'earlier_half': (0.2141, 495), 'p': 0.3858}
+   robustness {}
+== V12: Entries with a fraction have smaller whole-number parts
+   primary {'with_fraction_mean_log': (1.453, 123), 'without': (1.6831, 1097), 'p': 0.043}
+   robustness {}
+== V15: Oil amounts differ in size by ligature adjunct
+   primary {'between_SS': 5.86, 'null': 4.02, 'p': 0.2089, 'entries': 63}
+   robustness {'geometric means': {'OLE+U': 5.9, 'OLE+E': 3.0, 'OLE+KI': 4.5, 'OLE+DI': 2.9, 'OLE+MI': 2.9}}
+== V16: The first entry is the largest more often than chance
+   primary {'first_is_max': '32/137', 'null': 22.1, 'p': 0.017}
+   robustness {}
+== V17: Equal amounts stand on neighbouring lines more often than chance
+   primary {'adjacent_equal': 292, 'null': 249.1, 'p': 0.0005}
+   robustness {}
+
+primary p: {'V1': 0.0005, 'V3': 0.5042, 'V7': 0.002, 'V8': 0.8691, 'V9': 0.5927, 'V10': 0.3858, 'V12': 0.043, 'V15': 0.2089, 'V16': 0.017, 'V17': 0.0005}
+survive BH at 5%: ['V1', 'V16', 'V17', 'V7']

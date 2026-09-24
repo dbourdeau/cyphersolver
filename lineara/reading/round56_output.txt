@@ -1,0 +1,30 @@
+== D1: Pylos goods amounts are even more often than odd
+   primary {'even': '133/196', 'p': 0.0}
+   robustness {}
+== D2: Linear A: grain amounts exceed wine amounts
+   primary {'grain_larger': '6/6', 'p': 0.0156}
+   robustness {}
+== D3: Linear B: grain amounts exceed wine amounts
+   primary {'grain_larger': '2/3', 'p': 0.5}
+   robustness {}
+== D4: Linear B: grain before olives
+   primary {'grain_first': '11/16', 'p': 0.10506}
+   robustness {}
+== D5: Linear B: grain before men
+   primary {'grain_first': '1/5', 'p': 0.96875}
+   robustness {}
+== D6: Pylos: the first entry is the unique largest beyond chance
+   primary {'first_is_max': '22/107', 'null': 18.4, 'p': 0.2029}
+   robustness {}
+== D7: Linear A: cyperus and oil on the same tablets beyond chance
+   primary {'together': 7, 'null': 11.57, 'p': 0.988}
+   robustness {}
+== D8: Linear B: cyperus and oil on the same tablets beyond chance
+   primary {'together': 0, 'null': 0.25, 'p': 1.0}
+   robustness {}
+== D9: Linear B lists of men are largest-first
+   primary {'mean_tau': -0.033, 'null': 0.002, 'p': 0.7006, 'lists': 52}
+   robustness {}
+
+primary p: {'D1': 0.0, 'D2': 0.0156, 'D3': 0.5, 'D4': 0.1051, 'D5': 0.9688, 'D6': 0.2029, 'D7': 0.988, 'D8': 1.0, 'D9': 0.7006}
+survive BH at 5%: ['D1']

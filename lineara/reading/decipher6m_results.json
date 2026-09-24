@@ -1,0 +1,127 @@
+{
+ "method": "Six hypotheses: a check of the twin-derived candidate values of decipher6l.py L4 on independent words, and whether\nthe richer vowel set after R/T (decipher6j J3) appears in the other Minoan-related records.\n\nEach has a prediction stated before the test ran and one primary test with its own null. Benjamini-Hochberg at\n5% runs across the six.\n\nM1  Candidate values from L4 (an unread sign's value taken from a 3+-sign twin word with one known sign in that\n    slot), substituted into the sign's *other* words, turn them into attested Linear A or Linear B words more often\n    than random values do.\nM6  Knossos personal names show the R/T vowel-entropy gap more than Pylos personal names.\nM7  Knossos-only place names and ethnics show it more than Pylos-only ones.\nM8  Pre-Greek stems show it more than length-matched ordinary Greek stems.\nM9  Eteocretan shows it more than Greek.\nM10 Linear B words containing the same numbered signs become attested Linear B words under the candidate values\n    more often than under random values.",
+ "primary_p": {
+  "M1": 0.617191404297851,
+  "M6": 0.8745627186406797,
+  "M7": 0.11644177911044477,
+  "M8": 0.19140429785107446,
+  "M9": 0.013493253373313344,
+  "M10": 0.5057471264367817
+ },
+ "bh_supported": [],
+ "details": {
+  "M1 twin values on other words": {
+   "prediction": "Twin-derived values turn the signs' other words into attested words more than random values",
+   "primary": {
+    "hits": 6,
+    "null_mean": 6.2,
+    "p": 0.6172,
+    "signs": 12
+   },
+   "robustness": {
+    "candidates (sign: value from twin)": {
+     "*118": "ne (from *118-MI-NA)",
+     "*164": "da (from *164-RI-DA)",
+     "*21F": "qe (from *21F-TU-NE)",
+     "*306": "ri (from *306-TA-JE)",
+     "*324": "zu (from *324-DI-RA)",
+     "*333": "ja (from *333-SA-MU)",
+     "*47": "da (from *47-KU-NA)",
+     "*325": "du (from A-*325-ZA)",
+     "*802": "ra (from A-SA-SA-*802-ME)",
+     "*314": "ra (from DU-*314-RE)",
+     "*307": "du (from JA-DI-KI-TE-TE-*307-PU2-RE)",
+     "*301": "qe (from SA-*301-RI)"
+    },
+    "hits": {
+     "*118": [
+      "ne-mi",
+      "qa-ne"
+     ],
+     "*21F": [
+      "qe-tu",
+      "ja-qe"
+     ],
+     "*47": [
+      "i-da"
+     ],
+     "*301": [
+      "e-qe"
+     ]
+    }
+   }
+  },
+  "M6 R/T vowels in Knossos names": {
+   "prediction": "Knossos names show the R/T vowel-entropy gap more than Pylos names",
+   "primary": {
+    "gap_target": -0.052,
+    "gap_comparison": -0.012,
+    "p": 0.8746,
+    "n": [
+     637,
+     339
+    ]
+   },
+   "robustness": {
+    "Linear A gap": 0.198
+   }
+  },
+  "M7 R/T vowels in Cretan place names": {
+   "prediction": "Knossos-only place names show the gap more than Pylos-only ones",
+   "primary": {
+    "gap_target": 0.099,
+    "gap_comparison": 0.027,
+    "p": 0.1164,
+    "n": [
+     73,
+     120
+    ]
+   },
+   "robustness": {
+    "Linear A gap": 0.198
+   }
+  },
+  "M8 R/T vowels in Pre-Greek": {
+   "prediction": "Pre-Greek stems show the gap more than ordinary Greek stems",
+   "primary": {
+    "gap_target": 0.019,
+    "gap_comparison": 0.004,
+    "p": 0.1914,
+    "n": [
+     1143,
+     1143
+    ]
+   },
+   "robustness": {
+    "Linear A gap": 0.198
+   }
+  },
+  "M9 R/T vowels in Eteocretan": {
+   "prediction": "Eteocretan shows the gap more than Greek",
+   "primary": {
+    "gap_target": 0.144,
+    "gap_comparison": -0.105,
+    "p": 0.0135,
+    "n": [
+     35,
+     119
+    ]
+   },
+   "robustness": {
+    "Linear A gap": 0.198
+   }
+  },
+  "M10 twin values in Linear B": {
+   "prediction": "Linear B words with the same numbered signs become attested words under the candidate values",
+   "primary": {
+    "hits": 2,
+    "null_mean": 1.75,
+    "p": 0.5057,
+    "shared_signs": [
+     "47"
+    ]
+   },
+   "robustness": {}
+  }
+ }
+}

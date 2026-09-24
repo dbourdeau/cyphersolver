@@ -1,0 +1,33 @@
+== LL1: Neighbouring consonant repetition (SigLA vs Linear B)
+   primary {'target': 0.0558, 'comparison': 0.0298, 'p': 0.0005}
+   robustness {}
+== LL2: Final consonants more restricted (SigLA vs Linear B)
+   primary {'target': 0.0373, 'comparison': 0.1317, 'p': 0.018}
+   robustness {}
+== LL3: e versus o depends on the consonant (SigLA)
+   primary {'nmi_SigLA': 0.325, 'nmi_LB': 0.094, 'p': 0.002}
+   robustness {}
+== LL4: The commodity order holds with grain removed
+   primary {'asymmetry': 30, 'null': 16.1, 'p': 0.0035, 'tablets': 35}
+   robustness {}
+== LL5: Agreement with Linear B order on pairs without grain
+   primary {'agreement': 0.556, 'null': 0.497, 'p': 0.3998}
+   robustness {'Linear B orders used': ['OLIV<CYP', 'OLIV<VIN', 'CYP<VIN', 'VIN<OLE']}
+== LL6: Unread signs word-initial more often, at HT and elsewhere
+   primary {'HT': {'flagged': (0.4396, 91), 'rest': (0.3484, 1151), 'p': 0.044}, 'other': {'flagged': (0.4259, 108), 'rest': (0.3025, 1663), 'p': 0.0065}, 'p (larger)': 0.044}
+   robustness {}
+== LL7: NI followed by a number more often, at HT and elsewhere
+   primary {'HT': {'flagged': (0.7805, 41), 'rest': (0.5871, 201), 'p': 0.0165}, 'other': {'flagged': (0.6552, 29), 'rest': (0.4304, 158), 'p': 0.0215}, 'p (larger)': 0.0215}
+   robustness {}
+== LL8: Religious words vowel-initial more often (SigLA)
+   primary {'target': 0.36, 'comparison': 0.2115, 'p': 0.0725}
+   robustness {}
+== LL9: Lists with a total more strictly largest-first (5+ entries)
+   primary {'with_total_tau': (0.4794, 21), 'without': (0.1124, 62), 'p': 0.001}
+   robustness {}
+== LL10: Pre-Greek consonant repetition against an unmatched Greek sample
+   primary {'target': 0.0482, 'comparison': 0.0305, 'p': 0.001}
+   robustness {}
+
+primary p: {'LL1': 0.0005, 'LL2': 0.018, 'LL3': 0.002, 'LL4': 0.0035, 'LL5': 0.3998, 'LL6': 0.044, 'LL7': 0.0215, 'LL8': 0.0725, 'LL9': 0.001, 'LL10': 0.001}
+survive BH at 5%: ['LL1', 'LL10', 'LL2', 'LL3', 'LL4', 'LL7', 'LL9']

@@ -1,0 +1,129 @@
+{
+ "title": "replications of the loop results",
+ "method": "Round 38 (loop round 10 of 10): replications of this loop's surviving results on other data or definitions.\n\nAA1  Q-row signs are word-initial more often than in Linear B (round 29 P6), on SigLA's transcription.\nAA2  Two pure vowel signs in succession are rarer than in Linear B (P2, reversed there), on SigLA.\nAA3  Words end in a pure vowel sign less often than in Linear B (P9, reversed there), on SigLA.\nAA4  e/o follow T more than non-coronals, more than in Linear B (round 30 Q1), on SigLA.\nAA5  e/o follow Q more than K, more than in Linear B (Q3), on SigLA.\nAA6  Equal amounts stand on neighbouring lines beyond chance (round 33 V17), in lists outside Haghia Triada.\nAA7  The first entry is the unique largest beyond chance (V16), in lists of four or more entries.\nAA9  Words on the same tablet share first signs beyond chance (round 31 S6), on SigLA's tablets (unique words,\n     within-site shuffle).\nAA10 Knossos names begin with a Q-row sign more often than Thebes/Mycenae/Tiryns names (round 37 Z1).\nAA11 Linear A's vowel profile is closer to Pre-Greek stems than to a random (not length-matched) Greek sample (Z7).",
+ "primary_p": {
+  "AA1": 0.0004997501249375312,
+  "AA2": 0.0004997501249375312,
+  "AA3": 0.0004997501249375312,
+  "AA4": 0.0004997501249375312,
+  "AA5": 0.0009995002498750624,
+  "AA6": 0.06596701649175413,
+  "AA7": 0.02348825587206397,
+  "AA9": 0.447776111944028,
+  "AA10": 0.09845077461269365,
+  "AA11": 0.0004997501249375312
+ },
+ "bh_supported": [
+  "AA1",
+  "AA11",
+  "AA2",
+  "AA3",
+  "AA4",
+  "AA5",
+  "AA7"
+ ],
+ "details": {
+  "AA1": {
+   "prediction": "Q-row signs word-initial (SigLA vs Linear B)",
+   "primary": {
+    "target": 0.5652,
+    "comparison": 0.277,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "AA2": {
+   "prediction": "Two vowel signs in succession rarer (SigLA vs Linear B)",
+   "primary": {
+    "target": 0.0,
+    "comparison": 0.0195,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "AA3": {
+   "prediction": "Final pure vowel signs rarer (SigLA vs Linear B)",
+   "primary": {
+    "target": 0.0354,
+    "comparison": 0.1054,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "AA4": {
+   "prediction": "e/o follow T (SigLA vs Linear B)",
+   "primary": {
+    "target": 0.6954,
+    "comparison": -0.1313,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "AA5": {
+   "prediction": "e/o follow Q more than K (SigLA vs Linear B)",
+   "primary": {
+    "target": 1.9811,
+    "comparison": 0.7286,
+    "p": 0.001
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "AA6": {
+   "prediction": "Equal amounts on neighbouring lines outside Haghia Triada (1s excluded)",
+   "primary": {
+    "adjacent_equal": 58,
+    "null": 51.6,
+    "p": 0.066,
+    "lists": 74
+   },
+   "robustness": {},
+   "p": 0.06596701649175413
+  },
+  "AA7": {
+   "prediction": "The first entry is the unique largest (lists of 4+)",
+   "primary": {
+    "first_is_max": "22/105",
+    "null": 14.4,
+    "p": 0.0235
+   },
+   "robustness": {},
+   "p": 0.02348825587206397
+  },
+  "AA9": {
+   "prediction": "Tablet-mates share first signs (SigLA tablets, unique words, within-site shuffle)",
+   "primary": {
+    "pairs": 116,
+    "null": 114.1,
+    "p": 0.4478,
+    "tablets": 98
+   },
+   "robustness": {},
+   "p": 0.447776111944028
+  },
+  "AA10": {
+   "prediction": "Knossos names begin with Q more often than Thebes/Mycenae/Tiryns names",
+   "primary": {
+    "target": 0.0518,
+    "comparison": 0.0,
+    "p": 0.0985
+   },
+   "robustness": {},
+   "p": 0.09845077461269365
+  },
+  "AA11": {
+   "prediction": "Linear A vowel profile closer to Pre-Greek than to an unmatched Greek sample",
+   "primary": {
+    "jsd_PreGreek": 0.0433,
+    "jsd_Greek_unmatched": 0.1007,
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  }
+ }
+}

@@ -1,0 +1,30 @@
+== W1: A recurring name gets similar amounts
+   primary {'mean_var': 0.782, 'null': 1.297, 'p': 0.0025, 'words': 47}
+   robustness {}
+== W2: A recurring descriptor gets similar amounts
+   primary {'mean_var': 2.391, 'null': 1.404, 'p': 0.971, 'words': 7}
+   robustness {}
+== W3: A recurring name gets exactly the same amount on two tablets
+   primary {'words_with_repeat': 10, 'null': 11.05, 'p': 0.7381}
+   robustness {}
+== W4: Fraction signs go with the commodity
+   primary {'chi2': 32.4, 'null': 24.5, 'p': 0.1139, 'n': 98, 'groups': {'OLE': 19, 'VIN': 19, 'GRA': 17, 'CYP': 35, 'OLIV': 8}}
+   robustness {}
+== W5: Fraction signs differ by site
+   primary {'chi2': 53.3, 'null': 30.7, 'p': 0.019, 'n': 261, 'groups': {'Haghia Triada': 160, 'Khania': 70, 'Petras': 8, 'Phaistos': 5, 'Tylissos': 6, 'Zakros': 12}}
+   robustness {}
+== W6: Fraction signs differ by Haghia Triada scribe
+   primary {'chi2': 66.6, 'null': 36.7, 'p': 0.0005, 'n': 67, 'groups': {'HT Scribe 2': 12, 'HT Scribe 8': 13, 'HT Scribe 10': 9, 'HT Scribe 1': 12, 'HT Scribe 14': 5, 'HT Scribe 5': 7, 'HT Scribe 6': 9}}
+   robustness {}
+== W7: Final sign of name words goes with the tablet commodity
+   primary {'chi2': 322.2, 'null': 201.6, 'p': 0.0005, 'n': 181, 'groups': {'VIR': 90, 'OLE': 10, 'VIN': 44, 'GRA': 29, 'OLIV': 8}}
+   robustness {}
+== W8: Final sign of descriptor words goes with the commodity
+   primary {'chi2': 227.7, 'null': 232.0, 'p': 0.5677, 'n': 138, 'groups': {'OLE': 20, 'VIR': 15, 'VIN': 8, 'GRA': 61, 'CYP': 26, 'OLIV': 8}}
+   robustness {}
+== W9: A recurring name stays with one commodity
+   primary {'single_commodity_words': '11/25', 'null': 5.41, 'p': 0.042}
+   robustness {}
+
+primary p: {'W1': 0.0025, 'W2': 0.971, 'W3': 0.7381, 'W4': 0.1139, 'W5': 0.019, 'W6': 0.0005, 'W7': 0.0005, 'W8': 0.5677, 'W9': 0.042}
+survive BH at 5%: ['W1', 'W5', 'W6', 'W7']

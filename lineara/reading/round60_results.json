@@ -1,0 +1,159 @@
+{
+ "title": "consequences of the two word classes",
+ "method": "Round 60 (saturation loop 2): consequences of the two word classes of round 59. BH at 5% across the ten.\n\nP1  Khania tablets carry fewer distinct name-slot words per tablet than Haghia Triada tablets.\nP2  On goods tablets, descriptor entries stand earlier in their list (relative position) than name entries.\nP3  Tablets whose heading word is a term (also used in the descriptor slot) contain descriptor entries more often.\nP4  Descriptor words repeat within a tablet more often than name words.\nP6  Name-slot words show consonant harmony (different signs) more often than descriptor words.\nP8  Q-initial words stand in the name slot more often than in the descriptor slot.\nP9  Vowel-initial words stand in the descriptor slot more often than in the name slot.\nP10 Descriptor words (2+ tablets) are written by more distinct scribes than name words (2+ tablets).\nP11 Descriptor words also occur in religious texts more often than name words.\nP12 Descriptor words (2+ tablets) are attested at more sites than name words (2+ tablets).",
+ "primary_p": {
+  "P1": 0.0004997501249375312,
+  "P2": 0.034482758620689655,
+  "P3": 0.0014992503748125937,
+  "P4": 0.9730134932533733,
+  "P6": 0.0704647676161919,
+  "P8": 0.809095452273863,
+  "P9": 0.09995002498750624,
+  "P10": 0.0034982508745627187,
+  "P11": 0.05847076461769116,
+  "P12": 0.05147426286856572
+ },
+ "bh_supported": [
+  "P1",
+  "P10",
+  "P3"
+ ],
+ "details": {
+  "P1": {
+   "prediction": "Khania tablets carry fewer name-slot words than Haghia Triada tablets",
+   "primary": {
+    "Khania": [
+     1.1429,
+     14
+    ],
+    "HT": [
+     4.2179,
+     78
+    ],
+    "p": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "P2": {
+   "prediction": "Descriptor entries stand earlier in the list",
+   "primary": {
+    "desc_mean_position": [
+     0.3969,
+     27
+    ],
+    "name_mean_position": [
+     0.5663,
+     42
+    ],
+    "p": 0.0345
+   },
+   "robustness": {},
+   "p": 0.034482758620689655
+  },
+  "P3": {
+   "prediction": "Tablets headed by a term contain descriptor entries more often",
+   "primary": {
+    "term_headed": [
+     0.52,
+     25
+    ],
+    "other": [
+     0.1727,
+     110
+    ],
+    "p": 0.0015
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "P4": {
+   "prediction": "Descriptor words repeat within a tablet more than name words",
+   "primary": {
+    "desc": 0.0,
+    "name": 0.012,
+    "p": 0.973
+   },
+   "robustness": {},
+   "p": 0.9730134932533733
+  },
+  "P6": {
+   "prediction": "Name words show harmony more than descriptor words",
+   "primary": {
+    "name": 0.066,
+    "desc": 0.022,
+    "p": 0.0705
+   },
+   "robustness": {},
+   "p": 0.0704647676161919
+  },
+  "P8": {
+   "prediction": "Q-initial words are name-slot words more often",
+   "primary": {
+    "name": 0.048,
+    "desc": 0.065,
+    "p": 0.8091
+   },
+   "robustness": {},
+   "p": 0.809095452273863
+  },
+  "P9": {
+   "prediction": "Vowel-initial words are descriptor-slot words more often",
+   "primary": {
+    "desc": 0.247,
+    "name": 0.177,
+    "p": 0.1
+   },
+   "robustness": {},
+   "p": 0.09995002498750624
+  },
+  "P10": {
+   "prediction": "Descriptor words are written by more scribes",
+   "primary": {
+    "desc": [
+     2.5909,
+     22
+    ],
+    "name": [
+     1.4634,
+     41
+    ],
+    "p": 0.0035
+   },
+   "robustness": {},
+   "p": 0.0034982508745627187
+  },
+  "P11": {
+   "prediction": "Descriptor words occur in religious texts more often",
+   "primary": {
+    "desc": [
+     0.0364,
+     110
+    ],
+    "name": [
+     0.0086,
+     349
+    ],
+    "p": 0.0585
+   },
+   "robustness": {},
+   "p": 0.05847076461769116
+  },
+  "P12": {
+   "prediction": "Descriptor words (2+ tablets) are attested at more sites",
+   "primary": {
+    "desc": [
+     1.4545,
+     22
+    ],
+    "name": [
+     1.1707,
+     41
+    ],
+    "p": 0.0515
+   },
+   "robustness": {},
+   "p": 0.05147426286856572
+  }
+ }
+}

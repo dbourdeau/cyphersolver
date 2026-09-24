@@ -1,0 +1,2296 @@
+{
+  "seed": 20260923,
+  "replicates": 5000,
+  "design": "Exploratory. The candidate word families were inspected before these tests. No semantic labels enter scoring.",
+  "interpretation_limits": [
+    "Relations can reflect morphology, related proper names, compound formation, spelling variation or segmentation.",
+    "Sign confidence does not prove the word is complete.",
+    "Same-object faces and same scribes are not independent observations; distinct types, not token frequencies, are scored.",
+    "All 48 p-values (3 subsets x 2 nulls x 8 statistics) are reported; no isolated unadjusted p-value is a discovery."
+  ],
+  "scenarios": {
+    "all_collated": {
+      "tokens": 612,
+      "types": 420,
+      "position_by_length": {
+        "statistics": {
+          "suffix_base_ge_2": {
+            "observed": 24,
+            "null_mean": 14.5102,
+            "null_sd": 3.53110407096704,
+            "p_monte_carlo": 0.009198160367926415,
+            "tail": "upper",
+            "null_min": 4,
+            "null_max": 30,
+            "p_bonferroni_all_tests": 0.44151169766046794
+          },
+          "prefix_base_ge_2": {
+            "observed": 18,
+            "null_mean": 8.6044,
+            "null_sd": 2.749818292178594,
+            "p_monte_carlo": 0.0023995200959808036,
+            "tail": "upper",
+            "null_min": 1,
+            "null_max": 20,
+            "p_bonferroni_all_tests": 0.11517696460707857
+          },
+          "either_base_ge_2": {
+            "observed": 42,
+            "null_mean": 23.1146,
+            "null_sd": 4.4404804740027854,
+            "p_monte_carlo": 0.0001999600079984003,
+            "tail": "upper",
+            "null_min": 10,
+            "null_max": 41,
+            "p_bonferroni_all_tests": 0.009598080383923215
+          },
+          "suffix_minus_prefix_base_ge_2": {
+            "observed": 6,
+            "null_mean": 5.9058,
+            "null_sd": 4.510268989761032,
+            "p_monte_carlo": 1.0,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -12,
+            "null_max": 23,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_base_ge_3": {
+            "observed": 2,
+            "null_mean": 0.3688,
+            "null_sd": 0.6009879865687833,
+            "p_monte_carlo": 0.051989602079584085,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 4,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_3": {
+            "observed": 3,
+            "null_mean": 0.3102,
+            "null_sd": 0.5556761286936843,
+            "p_monte_carlo": 0.003599280143971206,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 4,
+            "p_bonferroni_all_tests": 0.17276544691061788
+          },
+          "either_base_ge_3": {
+            "observed": 5,
+            "null_mean": 0.679,
+            "null_sd": 0.8167980166479348,
+            "p_monte_carlo": 0.0005998800239952009,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 7,
+            "p_bonferroni_all_tests": 0.028794241151769644
+          },
+          "suffix_minus_prefix_base_ge_3": {
+            "observed": -1,
+            "null_mean": 0.0586,
+            "null_sd": 0.8202231647545685,
+            "p_monte_carlo": 0.23355328934213157,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -4,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          }
+        },
+        "unique_types_after_shuffle": {
+          "min": 420,
+          "max": 420,
+          "mean": 420
+        },
+        "length_stratum_draw_attempts": {
+          "mean": 67.0436,
+          "max": 593
+        },
+        "uniqueness_control": "Reject collisions separately within each length class. All surrogates have the observed number of distinct types at every length."
+      },
+      "within_word": {
+        "statistics": {
+          "suffix_base_ge_2": {
+            "observed": 24,
+            "null_mean": 12.953,
+            "null_sd": 3.106958480572278,
+            "p_monte_carlo": 0.0007998400319936012,
+            "tail": "upper",
+            "null_min": 3,
+            "null_max": 25,
+            "p_bonferroni_all_tests": 0.03839232153569286
+          },
+          "prefix_base_ge_2": {
+            "observed": 18,
+            "null_mean": 12.9742,
+            "null_sd": 3.0753754827662916,
+            "p_monte_carlo": 0.07438512297540492,
+            "tail": "upper",
+            "null_min": 3,
+            "null_max": 26,
+            "p_bonferroni_all_tests": 1
+          },
+          "either_base_ge_2": {
+            "observed": 42,
+            "null_mean": 25.9272,
+            "null_sd": 3.934907897270278,
+            "p_monte_carlo": 0.0001999600079984003,
+            "tail": "upper",
+            "null_min": 14,
+            "null_max": 41,
+            "p_bonferroni_all_tests": 0.009598080383923215
+          },
+          "suffix_minus_prefix_base_ge_2": {
+            "observed": 6,
+            "null_mean": -0.0212,
+            "null_sd": 4.7685165995307175,
+            "p_monte_carlo": 0.20915816836632672,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -16,
+            "null_max": 18,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_base_ge_3": {
+            "observed": 2,
+            "null_mean": 0.2746,
+            "null_sd": 0.5134148809685983,
+            "p_monte_carlo": 0.02959408118376325,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_3": {
+            "observed": 3,
+            "null_mean": 0.2732,
+            "null_sd": 0.5096682842790985,
+            "p_monte_carlo": 0.0011997600479904018,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 0.05758848230353929
+          },
+          "either_base_ge_3": {
+            "observed": 5,
+            "null_mean": 0.5478,
+            "null_sd": 0.7131024891276148,
+            "p_monte_carlo": 0.0001999600079984003,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 4,
+            "p_bonferroni_all_tests": 0.009598080383923215
+          },
+          "suffix_minus_prefix_base_ge_3": {
+            "observed": -1,
+            "null_mean": 0.0014,
+            "null_sd": 0.7336198197976933,
+            "p_monte_carlo": 0.21635672865426914,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -3,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          }
+        },
+        "unique_types_after_shuffle": {
+          "min": 420,
+          "max": 420,
+          "mean": 420
+        },
+        "length_stratum_draw_attempts": {
+          "mean": 20.7254,
+          "max": 144
+        },
+        "uniqueness_control": "Reject collisions separately within each length class. All surrogates have the observed number of distinct types at every length."
+      }
+    },
+    "haghia_triada_tablets": {
+      "tokens": 428,
+      "types": 272,
+      "position_by_length": {
+        "statistics": {
+          "suffix_base_ge_2": {
+            "observed": 10,
+            "null_mean": 6.9194,
+            "null_sd": 2.4606713799286566,
+            "p_monte_carlo": 0.14557088582283542,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 17,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_2": {
+            "observed": 11,
+            "null_mean": 5.1316,
+            "null_sd": 2.145758942658751,
+            "p_monte_carlo": 0.011397720455908818,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 15,
+            "p_bonferroni_all_tests": 0.5470905818836233
+          },
+          "either_base_ge_2": {
+            "observed": 21,
+            "null_mean": 12.051,
+            "null_sd": 3.256378202850523,
+            "p_monte_carlo": 0.0061987602479504095,
+            "tail": "upper",
+            "null_min": 2,
+            "null_max": 25,
+            "p_bonferroni_all_tests": 0.2975404919016197
+          },
+          "suffix_minus_prefix_base_ge_2": {
+            "observed": -1,
+            "null_mean": 1.7878,
+            "null_sd": 3.2732814055623143,
+            "p_monte_carlo": 0.43951209758048393,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -9,
+            "null_max": 13,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_base_ge_3": {
+            "observed": 1,
+            "null_mean": 0.158,
+            "null_sd": 0.39017432001606667,
+            "p_monte_carlo": 0.14877024595080984,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_3": {
+            "observed": 1,
+            "null_mean": 0.1912,
+            "null_sd": 0.42970054689283327,
+            "p_monte_carlo": 0.1767646470705859,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          },
+          "either_base_ge_3": {
+            "observed": 2,
+            "null_mean": 0.3492,
+            "null_sd": 0.5800511701565647,
+            "p_monte_carlo": 0.04519096180763847,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_minus_prefix_base_ge_3": {
+            "observed": 0,
+            "null_mean": -0.0332,
+            "null_sd": 0.5807734153695397,
+            "p_monte_carlo": 1.0,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -3,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          }
+        },
+        "unique_types_after_shuffle": {
+          "min": 272,
+          "max": 272,
+          "mean": 272
+        },
+        "length_stratum_draw_attempts": {
+          "mean": 12.2286,
+          "max": 100
+        },
+        "uniqueness_control": "Reject collisions separately within each length class. All surrogates have the observed number of distinct types at every length."
+      },
+      "within_word": {
+        "statistics": {
+          "suffix_base_ge_2": {
+            "observed": 10,
+            "null_mean": 7.6374,
+            "null_sd": 2.4486570278419966,
+            "p_monte_carlo": 0.21675664867026595,
+            "tail": "upper",
+            "null_min": 1,
+            "null_max": 18,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_2": {
+            "observed": 11,
+            "null_mean": 7.6858,
+            "null_sd": 2.4461967132673528,
+            "p_monte_carlo": 0.1241751649670066,
+            "tail": "upper",
+            "null_min": 1,
+            "null_max": 18,
+            "p_bonferroni_all_tests": 1
+          },
+          "either_base_ge_2": {
+            "observed": 21,
+            "null_mean": 15.3232,
+            "null_sd": 3.0730346174425045,
+            "p_monte_carlo": 0.047590481903619274,
+            "tail": "upper",
+            "null_min": 5,
+            "null_max": 26,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_minus_prefix_base_ge_2": {
+            "observed": -1,
+            "null_mean": -0.0484,
+            "null_sd": 3.809994414694069,
+            "p_monte_carlo": 0.8884223155368927,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -14,
+            "null_max": 13,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_base_ge_3": {
+            "observed": 1,
+            "null_mean": 0.1458,
+            "null_sd": 0.37860581083760453,
+            "p_monte_carlo": 0.1365726854629074,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 2,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_3": {
+            "observed": 1,
+            "null_mean": 0.1444,
+            "null_sd": 0.37887813344134813,
+            "p_monte_carlo": 0.1349730053989202,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          },
+          "either_base_ge_3": {
+            "observed": 2,
+            "null_mean": 0.2902,
+            "null_sd": 0.5249609128306602,
+            "p_monte_carlo": 0.03139372125574885,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_minus_prefix_base_ge_3": {
+            "observed": 0,
+            "null_mean": 0.0014,
+            "null_sd": 0.5460751230371147,
+            "p_monte_carlo": 1.0,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -3,
+            "null_max": 2,
+            "p_bonferroni_all_tests": 1
+          }
+        },
+        "unique_types_after_shuffle": {
+          "min": 272,
+          "max": 272,
+          "mean": 272
+        },
+        "length_stratum_draw_attempts": {
+          "mean": 6.9488,
+          "max": 33
+        },
+        "uniqueness_control": "Reject collisions separately within each length class. All surrogates have the observed number of distinct types at every length."
+      }
+    },
+    "without_HT104": {
+      "tokens": 607,
+      "types": 416,
+      "position_by_length": {
+        "statistics": {
+          "suffix_base_ge_2": {
+            "observed": 23,
+            "null_mean": 14.1994,
+            "null_sd": 3.4681464271278974,
+            "p_monte_carlo": 0.010797840431913617,
+            "tail": "upper",
+            "null_min": 3,
+            "null_max": 27,
+            "p_bonferroni_all_tests": 0.5182963407318536
+          },
+          "prefix_base_ge_2": {
+            "observed": 18,
+            "null_mean": 8.3176,
+            "null_sd": 2.7327514047201587,
+            "p_monte_carlo": 0.001799640071985603,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 19,
+            "p_bonferroni_all_tests": 0.08638272345530894
+          },
+          "either_base_ge_2": {
+            "observed": 41,
+            "null_mean": 22.517,
+            "null_sd": 4.452113093801639,
+            "p_monte_carlo": 0.0003999200159968006,
+            "tail": "upper",
+            "null_min": 8,
+            "null_max": 41,
+            "p_bonferroni_all_tests": 0.01919616076784643
+          },
+          "suffix_minus_prefix_base_ge_2": {
+            "observed": 5,
+            "null_mean": 5.8818,
+            "null_sd": 4.378427658418031,
+            "p_monte_carlo": 0.911617676464707,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -8,
+            "null_max": 22,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_base_ge_3": {
+            "observed": 1,
+            "null_mean": 0.3364,
+            "null_sd": 0.5716948836573579,
+            "p_monte_carlo": 0.2897420515896821,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 4,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_3": {
+            "observed": 3,
+            "null_mean": 0.3046,
+            "null_sd": 0.5442599011501766,
+            "p_monte_carlo": 0.003199360127974405,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 0.15356928614277143
+          },
+          "either_base_ge_3": {
+            "observed": 4,
+            "null_mean": 0.641,
+            "null_sd": 0.787222332000306,
+            "p_monte_carlo": 0.003999200159968006,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 5,
+            "p_bonferroni_all_tests": 0.19196160767846432
+          },
+          "suffix_minus_prefix_base_ge_3": {
+            "observed": -2,
+            "null_mean": 0.0318,
+            "null_sd": 0.791447256612846,
+            "p_monte_carlo": 0.03139372125574885,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -3,
+            "null_max": 4,
+            "p_bonferroni_all_tests": 1
+          }
+        },
+        "unique_types_after_shuffle": {
+          "min": 416,
+          "max": 416,
+          "mean": 416
+        },
+        "length_stratum_draw_attempts": {
+          "mean": 63.9206,
+          "max": 547
+        },
+        "uniqueness_control": "Reject collisions separately within each length class. All surrogates have the observed number of distinct types at every length."
+      },
+      "within_word": {
+        "statistics": {
+          "suffix_base_ge_2": {
+            "observed": 23,
+            "null_mean": 12.59,
+            "null_sd": 3.1021766551890626,
+            "p_monte_carlo": 0.0011997600479904018,
+            "tail": "upper",
+            "null_min": 1,
+            "null_max": 26,
+            "p_bonferroni_all_tests": 0.05758848230353929
+          },
+          "prefix_base_ge_2": {
+            "observed": 18,
+            "null_mean": 12.5986,
+            "null_sd": 3.019383718575696,
+            "p_monte_carlo": 0.05358928214357129,
+            "tail": "upper",
+            "null_min": 2,
+            "null_max": 24,
+            "p_bonferroni_all_tests": 1
+          },
+          "either_base_ge_2": {
+            "observed": 41,
+            "null_mean": 25.1886,
+            "null_sd": 3.849289550033876,
+            "p_monte_carlo": 0.0001999600079984003,
+            "tail": "upper",
+            "null_min": 11,
+            "null_max": 38,
+            "p_bonferroni_all_tests": 0.009598080383923215
+          },
+          "suffix_minus_prefix_base_ge_2": {
+            "observed": 5,
+            "null_mean": -0.0086,
+            "null_sd": 4.760601436793465,
+            "p_monte_carlo": 0.2965406918616277,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -17,
+            "null_max": 18,
+            "p_bonferroni_all_tests": 1
+          },
+          "suffix_base_ge_3": {
+            "observed": 1,
+            "null_mean": 0.2554,
+            "null_sd": 0.49292072384918045,
+            "p_monte_carlo": 0.22995400919816036,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          },
+          "prefix_base_ge_3": {
+            "observed": 3,
+            "null_mean": 0.2574,
+            "null_sd": 0.4930975968304855,
+            "p_monte_carlo": 0.0011997600479904018,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 0.05758848230353929
+          },
+          "either_base_ge_3": {
+            "observed": 4,
+            "null_mean": 0.5128,
+            "null_sd": 0.6877762426836216,
+            "p_monte_carlo": 0.0009998000399920016,
+            "tail": "upper",
+            "null_min": 0,
+            "null_max": 4,
+            "p_bonferroni_all_tests": 0.04799040191961608
+          },
+          "suffix_minus_prefix_base_ge_3": {
+            "observed": -2,
+            "null_mean": -0.002,
+            "null_sd": 0.7065380386079719,
+            "p_monte_carlo": 0.03979204159168166,
+            "tail": "two-sided, absolute deviation from simulated mean",
+            "null_min": -3,
+            "null_max": 3,
+            "p_bonferroni_all_tests": 1
+          }
+        },
+        "unique_types_after_shuffle": {
+          "min": 416,
+          "max": 416,
+          "mean": 416
+        },
+        "length_stratum_draw_attempts": {
+          "mean": 21.2428,
+          "max": 165
+        },
+        "uniqueness_control": "Reject collisions separately within each length class. All surrogates have the observed number of distinct types at every length."
+      }
+    }
+  },
+  "families": [
+    {
+      "direction": "suffix",
+      "base": [
+        "A306",
+        "AB069"
+      ],
+      "extended": [
+        "A306",
+        "AB069",
+        "AB057"
+      ],
+      "extra_sign": "AB057",
+      "base_witnesses": [
+        {
+          "document": "HT 119",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 4
+        },
+        {
+          "document": "HT 122a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 13
+        },
+        {
+          "document": "HT 9a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 2
+        },
+        {
+          "document": "HT 9b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 4
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 115b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 6
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB010",
+        "AB049"
+      ],
+      "extended": [
+        "AB001",
+        "AB010",
+        "AB049"
+      ],
+      "extra_sign": "AB001",
+      "base_witnesses": [
+        {
+          "document": "ZA 10b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 4",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 120",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 6",
+          "word_index": 2
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB059",
+        "AB060"
+      ],
+      "extended": [
+        "AB001",
+        "AB059",
+        "AB060"
+      ],
+      "extra_sign": "AB001",
+      "base_witnesses": [
+        {
+          "document": "HT 89",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 6a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB001",
+        "AB081",
+        "AB009",
+        "AB024"
+      ],
+      "extended": [
+        "AB001",
+        "AB081",
+        "AB009",
+        "AB024",
+        "AB037"
+      ],
+      "extra_sign": "AB037",
+      "base_witnesses": [
+        {
+          "document": "HT 103",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 3",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 104",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 5",
+          "word_index": 1
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB003",
+        "AB009"
+      ],
+      "extended": [
+        "AB003",
+        "AB009",
+        "AB057"
+      ],
+      "extra_sign": "AB057",
+      "base_witnesses": [
+        {
+          "document": "HT 18",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 20",
+          "word_index": 0
+        },
+        {
+          "document": "HT 27b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 11",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT Wc 3001",
+          "site": "Haghia Triada",
+          "scribe": "HT Wa Scribe 10",
+          "word_index": 0
+        },
+        {
+          "document": "HT Wc 3002",
+          "site": "Haghia Triada",
+          "scribe": "HT Wa Scribe 10",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB003",
+        "AB057"
+      ],
+      "extended": [
+        "AB003",
+        "AB057",
+        "AB027"
+      ],
+      "extra_sign": "AB027",
+      "base_witnesses": [
+        {
+          "document": "HT 41a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 14",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 29",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "HT 88",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 7",
+          "word_index": 7
+        },
+        {
+          "document": "HT 8b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 4
+        },
+        {
+          "document": "ZA 10b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 4",
+          "word_index": 9
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB003",
+        "AB060"
+      ],
+      "extended": [
+        "AB003",
+        "AB060",
+        "AB024"
+      ],
+      "extra_sign": "AB024",
+      "base_witnesses": [
+        {
+          "document": "HT 128a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 0
+        },
+        {
+          "document": "PH 3a",
+          "site": "Phaistos",
+          "scribe": "",
+          "word_index": 1
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 115a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 4
+        },
+        {
+          "document": "HT 115b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 1
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB001",
+        "AB027"
+      ],
+      "extended": [
+        "AB006",
+        "AB001",
+        "AB027"
+      ],
+      "extra_sign": "AB006",
+      "base_witnesses": [
+        {
+          "document": "HT 10a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 2
+        },
+        {
+          "document": "HT 10b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "HT 122b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 5
+        },
+        {
+          "document": "HT 7a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 11",
+          "word_index": 4
+        },
+        {
+          "document": "HT 85a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 7
+        },
+        {
+          "document": "KH 104",
+          "site": "Khania",
+          "scribe": "",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 117a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 12
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB007",
+        "AB045"
+      ],
+      "extended": [
+        "AB007",
+        "AB045",
+        "AB026"
+      ],
+      "extra_sign": "AB026",
+      "base_witnesses": [
+        {
+          "document": "HT 86b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 6",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 86a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 6",
+          "word_index": 3
+        },
+        {
+          "document": "HT 95b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 5
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB008",
+        "AB001"
+      ],
+      "extended": [
+        "AB008",
+        "AB001",
+        "AB002"
+      ],
+      "extra_sign": "AB002",
+      "base_witnesses": [
+        {
+          "document": "TY 3a",
+          "site": "Tylissos",
+          "scribe": "",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ARKH 5",
+          "site": "Arkhanes",
+          "scribe": "",
+          "word_index": 1
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB003",
+        "AB060",
+        "AB024"
+      ],
+      "extended": [
+        "AB008",
+        "AB003",
+        "AB060",
+        "AB024"
+      ],
+      "extra_sign": "AB008",
+      "base_witnesses": [
+        {
+          "document": "HT 115a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 4
+        },
+        {
+          "document": "HT 115b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 1
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 96a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 1
+        },
+        {
+          "document": "HT 96b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB031",
+        "AB076"
+      ],
+      "extended": [
+        "AB008",
+        "AB031",
+        "AB076"
+      ],
+      "extra_sign": "AB008",
+      "base_witnesses": [
+        {
+          "document": "HT 100",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "HT 101",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 1
+        },
+        {
+          "document": "HT 102",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 5",
+          "word_index": 1
+        },
+        {
+          "document": "HT 114a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 4",
+          "word_index": 1
+        },
+        {
+          "document": "HT 121",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 4",
+          "word_index": 1
+        },
+        {
+          "document": "HT 130",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 19",
+          "word_index": 0
+        },
+        {
+          "document": "HT 18",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 20",
+          "word_index": 1
+        },
+        {
+          "document": "HT 28b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 13",
+          "word_index": 2
+        },
+        {
+          "document": "HT 30",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 1",
+          "word_index": 0
+        },
+        {
+          "document": "HT 32",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 1",
+          "word_index": 0
+        },
+        {
+          "document": "HT 33",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 1",
+          "word_index": 1
+        },
+        {
+          "document": "HT 34",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 2
+        },
+        {
+          "document": "HT 90",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 1
+        },
+        {
+          "document": "HT 93a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 5",
+          "word_index": 4
+        },
+        {
+          "document": "HT 94a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 2
+        },
+        {
+          "document": "HT 97b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 7",
+          "word_index": 0
+        },
+        {
+          "document": "HT 99a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 1
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 89",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB041",
+        "AB067",
+        "AB060"
+      ],
+      "extended": [
+        "AB008",
+        "AB041",
+        "AB067",
+        "AB060"
+      ],
+      "extra_sign": "AB008",
+      "base_witnesses": [
+        {
+          "document": "HT 8a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 4
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "KH 20",
+          "site": "Khania",
+          "scribe": "KH Scribe 3",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB008",
+        "AB053"
+      ],
+      "extended": [
+        "AB008",
+        "AB053",
+        "AB003"
+      ],
+      "extra_sign": "AB003",
+      "base_witnesses": [
+        {
+          "document": "PH 6",
+          "site": "Phaistos",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "PH 6",
+          "site": "Phaistos",
+          "scribe": "",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "PE 2",
+          "site": "Petras",
+          "scribe": "",
+          "word_index": 4
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB008",
+        "AB053"
+      ],
+      "extended": [
+        "AB008",
+        "AB053",
+        "AB058"
+      ],
+      "extra_sign": "AB058",
+      "base_witnesses": [
+        {
+          "document": "PH 6",
+          "site": "Phaistos",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "PH 6",
+          "site": "Phaistos",
+          "scribe": "",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 118",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 3",
+          "word_index": 2
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB059",
+        "AB006",
+        "AB004"
+      ],
+      "extended": [
+        "AB008",
+        "AB059",
+        "AB006",
+        "AB004"
+      ],
+      "extra_sign": "AB008",
+      "base_witnesses": [
+        {
+          "document": "ZA 10a",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 4",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ZA 10a",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 4",
+          "word_index": 2
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB067",
+        "AB002"
+      ],
+      "extended": [
+        "AB008",
+        "AB067",
+        "AB002"
+      ],
+      "extra_sign": "AB008",
+      "base_witnesses": [
+        {
+          "document": "HT 1",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 21",
+          "word_index": 1
+        },
+        {
+          "document": "HT 117a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 1
+        },
+        {
+          "document": "HT 15",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 2
+        },
+        {
+          "document": "HT 30",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 1",
+          "word_index": 2
+        },
+        {
+          "document": "HT 34",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 3
+        },
+        {
+          "document": "HT 37",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 4
+        },
+        {
+          "document": "HT 88",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 7",
+          "word_index": 3
+        },
+        {
+          "document": "HT 94b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ARKH 4b",
+          "site": "Arkhanes",
+          "scribe": "",
+          "word_index": 4
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB008",
+        "AB073"
+      ],
+      "extended": [
+        "AB008",
+        "AB073",
+        "AB059"
+      ],
+      "extra_sign": "AB059",
+      "base_witnesses": [
+        {
+          "document": "KH 102",
+          "site": "Khania",
+          "scribe": "",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ZA 10b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 4",
+          "word_index": 7
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB077",
+        "AB026"
+      ],
+      "extended": [
+        "AB008",
+        "AB077",
+        "AB026"
+      ],
+      "extra_sign": "AB008",
+      "base_witnesses": [
+        {
+          "document": "HT 97a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 7",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 2",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 0
+        },
+        {
+          "document": "HT 86a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 6",
+          "word_index": 0
+        },
+        {
+          "document": "HT 86b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 6",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB008",
+        "AB080"
+      ],
+      "extended": [
+        "AB008",
+        "AB080",
+        "AB057"
+      ],
+      "extra_sign": "AB057",
+      "base_witnesses": [
+        {
+          "document": "HS Zg 1",
+          "site": "Haghios Stephanos",
+          "scribe": "",
+          "word_index": 0
+        },
+        {
+          "document": "MA 1b",
+          "site": "Mallia",
+          "scribe": "",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "KH 14",
+          "site": "Khania",
+          "scribe": "KH Scribe 1",
+          "word_index": 1
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB026",
+        "AB080",
+        "AB059"
+      ],
+      "extended": [
+        "AB026",
+        "AB080",
+        "AB059",
+        "AB009"
+      ],
+      "extra_sign": "AB009",
+      "base_witnesses": [
+        {
+          "document": "HT 29",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 0
+        },
+        {
+          "document": "HT 99b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ZA 20",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 3",
+          "word_index": 6
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB016",
+        "AB118"
+      ],
+      "extended": [
+        "AB028",
+        "AB016",
+        "AB118"
+      ],
+      "extra_sign": "AB028",
+      "base_witnesses": [
+        {
+          "document": "KH 10",
+          "site": "Khania",
+          "scribe": "KH Scribe 5",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 131a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "HT 44a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB031",
+        "AB080"
+      ],
+      "extended": [
+        "AB031",
+        "AB080",
+        "AB002"
+      ],
+      "extra_sign": "AB002",
+      "base_witnesses": [
+        {
+          "document": "HT 10a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "HT 52a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 23",
+          "word_index": 0
+        },
+        {
+          "document": "HT 6b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 5
+        },
+        {
+          "document": "ZA 10b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 4",
+          "word_index": 5
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 88",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 7",
+          "word_index": 8
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB059",
+        "AB060"
+      ],
+      "extended": [
+        "AB039",
+        "AB059",
+        "AB060"
+      ],
+      "extra_sign": "AB039",
+      "base_witnesses": [
+        {
+          "document": "HT 89",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 96a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 5
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB001",
+        "AB027"
+      ],
+      "extended": [
+        "AB041",
+        "AB001",
+        "AB027"
+      ],
+      "extra_sign": "AB041",
+      "base_witnesses": [
+        {
+          "document": "HT 10a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 2
+        },
+        {
+          "document": "HT 10b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "HT 122b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 5
+        },
+        {
+          "document": "HT 7a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 11",
+          "word_index": 4
+        },
+        {
+          "document": "HT 85a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 7
+        },
+        {
+          "document": "KH 104",
+          "site": "Khania",
+          "scribe": "",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 122a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 8
+        },
+        {
+          "document": "HT 17",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 18",
+          "word_index": 2
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB041",
+        "AB004"
+      ],
+      "extended": [
+        "AB041",
+        "AB004",
+        "AB069"
+      ],
+      "extra_sign": "AB069",
+      "base_witnesses": [
+        {
+          "document": "ZA 26a",
+          "site": "Zakros",
+          "scribe": "",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ZA 20",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 3",
+          "word_index": 3
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB004",
+        "AB069"
+      ],
+      "extended": [
+        "AB041",
+        "AB004",
+        "AB069"
+      ],
+      "extra_sign": "AB041",
+      "base_witnesses": [
+        {
+          "document": "HT 13",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 2
+        },
+        {
+          "document": "HT 7a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 11",
+          "word_index": 5
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ZA 20",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 3",
+          "word_index": 3
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB067",
+        "AB060"
+      ],
+      "extended": [
+        "AB041",
+        "AB067",
+        "AB060"
+      ],
+      "extra_sign": "AB041",
+      "base_witnesses": [
+        {
+          "document": "HT 103",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 3",
+          "word_index": 4
+        },
+        {
+          "document": "ZA 8",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 8a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 4
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB056",
+        "AB030"
+      ],
+      "extended": [
+        "AB056",
+        "AB030",
+        "AB006"
+      ],
+      "extra_sign": "AB006",
+      "base_witnesses": [
+        {
+          "document": "HT 102",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 5",
+          "word_index": 2
+        },
+        {
+          "document": "HT 85a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 6b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 6
+        },
+        {
+          "document": "HT 93a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 5",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB056",
+        "AB030"
+      ],
+      "extended": [
+        "AB056",
+        "AB030",
+        "AB040"
+      ],
+      "extra_sign": "AB040",
+      "base_witnesses": [
+        {
+          "document": "HT 102",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 5",
+          "word_index": 2
+        },
+        {
+          "document": "HT 85a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "SY Za 4",
+          "site": "Syme",
+          "scribe": "",
+          "word_index": 2
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB057",
+        "AB041"
+      ],
+      "extended": [
+        "AB057",
+        "AB041",
+        "AB038"
+      ],
+      "extra_sign": "AB038",
+      "base_witnesses": [
+        {
+          "document": "KN Zb 4",
+          "site": "Knossos",
+          "scribe": "",
+          "word_index": 1
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "KE Zb 4",
+          "site": "Kea",
+          "scribe": "",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB057",
+        "AB081"
+      ],
+      "extended": [
+        "AB057",
+        "AB081",
+        "AB037"
+      ],
+      "extra_sign": "AB037",
+      "base_witnesses": [
+        {
+          "document": "MA 2b",
+          "site": "Mallia",
+          "scribe": "",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "KN 1a",
+          "site": "Knossos",
+          "scribe": "",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB027",
+        "AB017"
+      ],
+      "extended": [
+        "AB067",
+        "AB027",
+        "AB017"
+      ],
+      "extra_sign": "AB067",
+      "base_witnesses": [
+        {
+          "document": "HT 13",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 1
+        },
+        {
+          "document": "HT 88",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 7",
+          "word_index": 1
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "ZA 1a",
+          "site": "Zakros",
+          "scribe": "",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB077",
+        "AB003"
+      ],
+      "extended": [
+        "AB077",
+        "AB003",
+        "AB078"
+      ],
+      "extra_sign": "AB078",
+      "base_witnesses": [
+        {
+          "document": "HT 102",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 5",
+          "word_index": 0
+        },
+        {
+          "document": "HT 140",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 8",
+          "word_index": 6
+        },
+        {
+          "document": "HT 6a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 0
+        },
+        {
+          "document": "HT 8b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 2",
+          "word_index": 3
+        },
+        {
+          "document": "HT 94a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 0
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 6a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 6
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB031",
+        "AB026"
+      ],
+      "extended": [
+        "AB077",
+        "AB031",
+        "AB026"
+      ],
+      "extra_sign": "AB077",
+      "base_witnesses": [
+        {
+          "document": "HT 86a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 6",
+          "word_index": 2
+        },
+        {
+          "document": "HT 86b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 6",
+          "word_index": 2
+        },
+        {
+          "document": "HT 94b",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 5
+        },
+        {
+          "document": "HT 95a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 3
+        },
+        {
+          "document": "HT 95b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 10b",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 4
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB077",
+        "AB081"
+      ],
+      "extended": [
+        "AB077",
+        "AB081",
+        "AB003"
+      ],
+      "extra_sign": "AB003",
+      "base_witnesses": [
+        {
+          "document": "HT 62+73",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 16",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 10",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB081",
+        "AB003"
+      ],
+      "extended": [
+        "AB077",
+        "AB081",
+        "AB003"
+      ],
+      "extra_sign": "AB077",
+      "base_witnesses": [
+        {
+          "document": "HT 110a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "ZA 11a",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        },
+        {
+          "document": "ZA 11b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 16",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 10",
+          "word_index": 0
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB081",
+        "AB003"
+      ],
+      "extended": [
+        "AB081",
+        "AB003",
+        "AB053"
+      ],
+      "extra_sign": "AB053",
+      "base_witnesses": [
+        {
+          "document": "HT 110a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "ZA 11a",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        },
+        {
+          "document": "ZA 11b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "PE 1",
+          "site": "Petras",
+          "scribe": "",
+          "word_index": 2
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB081",
+        "AB003"
+      ],
+      "extended": [
+        "AB081",
+        "AB003",
+        "AB057"
+      ],
+      "extra_sign": "AB057",
+      "base_witnesses": [
+        {
+          "document": "HT 110a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "ZA 11a",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        },
+        {
+          "document": "ZA 11b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 116a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        }
+      ]
+    },
+    {
+      "direction": "prefix",
+      "base": [
+        "AB003",
+        "AB057"
+      ],
+      "extended": [
+        "AB081",
+        "AB003",
+        "AB057"
+      ],
+      "extra_sign": "AB081",
+      "base_witnesses": [
+        {
+          "document": "HT 41a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 14",
+          "word_index": 2
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 116a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB081",
+        "AB003"
+      ],
+      "extended": [
+        "AB081",
+        "AB003",
+        "AB079"
+      ],
+      "extra_sign": "AB079",
+      "base_witnesses": [
+        {
+          "document": "HT 110a",
+          "site": "Haghia Triada",
+          "scribe": "",
+          "word_index": 1
+        },
+        {
+          "document": "ZA 11a",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        },
+        {
+          "document": "ZA 11b",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 2",
+          "word_index": 3
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "KH 5",
+          "site": "Khania",
+          "scribe": "KH Scribe 2",
+          "word_index": 5
+        }
+      ]
+    },
+    {
+      "direction": "suffix",
+      "base": [
+        "AB081",
+        "AB060"
+      ],
+      "extended": [
+        "AB081",
+        "AB060",
+        "AB023"
+      ],
+      "extra_sign": "AB023",
+      "base_witnesses": [
+        {
+          "document": "ZA 20",
+          "site": "Zakros",
+          "scribe": "ZA Scribe 3",
+          "word_index": 7
+        }
+      ],
+      "extended_witnesses": [
+        {
+          "document": "HT 117a",
+          "site": "Haghia Triada",
+          "scribe": "HT Scribe 9",
+          "word_index": 5
+        }
+      ]
+    }
+  ],
+  "input_sha256": "cec78508645bba54c0a1e252139349c9daa19b5525f7b2dffa08c1b00921b917"
+}

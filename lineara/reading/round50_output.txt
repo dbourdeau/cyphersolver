@@ -1,0 +1,27 @@
+== HV1: NI and FIC avoid the same tablet
+   primary {'together': 0, 'null': 0.0, 'p': 1.0, 'NI_tablets': 55, 'FIC_tablets': 0}
+   robustness {}
+== HV2: Single signs and the terms they would abbreviate avoid the same tablet
+   primary {'together': 4, 'null': 3.65, 'p': 0.7286, 'single_tokens': 60}
+   robustness {'by sign (tablets with both / with the single)': {'KU': '3/15', 'KI': '0/13', 'KA': '1/11', 'SA': '0/2', 'DA': '0/4', 'A': '0/15'}}
+== HV3: Single KU stands in the last entry more often than other single signs
+   primary {'KU_last': (0.1333, 15), 'other_last': (0.1281, 359), 'p': 0.5927}
+   robustness {}
+== HV4: Single signs on oil tablets are oil-ligature syllables more often
+   primary {'on_oil_tablets': (0.2241, 58), 'elsewhere': (0.283, 371), 'p': 0.8786}
+   robustness {}
+== HV5: NI entries carry fractions more often than VIR entries
+   primary {'NI': (0.4464, 56), 'VIR': (0.0556, 36), 'p': 0.0005}
+   robustness {}
+== HV6: NI has a consistent place among the commodities
+   primary {'asymmetry': 53, 'null': 17.9, 'p': 0.0005, 'tablets': 43}
+   robustness {'counts': {'CYP before NI': 19, 'GRA before NI': 16, 'VIN after NI': 16, 'OLE before NI': 11, 'VIR before NI': 7, 'OLE after NI': 5, 'GRA after NI': 4, 'VIR after NI': 3, 'VIN before NI': 3, 'OLIV before NI': 2}}
+== HV7: NI stands on grain tablets more often than chance
+   primary {'together': 19, 'null': 9.09, 'p': 0.0005, 'NI_tablets': 55, 'GRA_tablets': 61}
+   robustness {}
+== HV8: NI amounts are listed largest-first beyond chance
+   primary {'mean_tau': -1.0, 'null': -0.006, 'p': 1.0, 'lists': 1}
+   robustness {}
+
+primary p: {'HV1': 1.0, 'HV2': 0.7286, 'HV3': 0.5927, 'HV4': 0.8786, 'HV5': 0.0005, 'HV6': 0.0005, 'HV7': 0.0005, 'HV8': 1.0}
+survive BH at 5%: ['HV5', 'HV6', 'HV7']

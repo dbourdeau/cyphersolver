@@ -1,0 +1,146 @@
+{
+ "title": "word endings, beginnings and possible grammar",
+ "method": "Round 31 (loop round 3 of 10): word endings, beginnings and possible grammar.\n\nS1  Final signs are associated with function (entry label vs heading).\nS2  Final signs are associated with register (religious vs administrative).\nS3  Initial signs are associated with function.\nS4  Initial signs are associated with register.\nS5  Words on the same tablet share final signs beyond chance (signs shuffled across tablets, tablet sizes kept).\nS6  Words on the same tablet share initial signs beyond chance.\nS7  Linear A entry-label finals resemble the stem-final syllables of Knossos names more than those of Pylos names.\nS8  Two-sign endings attach to more distinct stems than chance (endings shuffled across words). Control: Linear B.\nS9  Neighbouring words on a tablet share their final sign more than chance (order shuffled within the tablet).\nS10 A heading and the next word share their final sign more than chance.",
+ "primary_p": {
+  "S1": 0.1729135432283858,
+  "S2": 0.004497751124437781,
+  "S3": 0.5317341329335332,
+  "S4": 0.0004997501249375312,
+  "S5": 0.0004997501249375312,
+  "S6": 0.0004997501249375312,
+  "S7": 0.1344327836081959,
+  "S8": 0.9700598802395209,
+  "S9": 0.8325837081459271,
+  "S10": 0.8660669665167416
+ },
+ "bh_supported": [
+  "S2",
+  "S4",
+  "S5",
+  "S6"
+ ],
+ "details": {
+  "S1": {
+   "prediction": "Final signs are associated with function (entry vs heading)",
+   "primary": {
+    "chi2": 23.6,
+    "null": 18.1,
+    "p": 0.1729,
+    "words": 319
+   },
+   "robustness": {},
+   "p": 0.1729135432283858
+  },
+  "S2": {
+   "prediction": "Final signs are associated with register",
+   "primary": {
+    "chi2": 59.7,
+    "null": 33.9,
+    "p": 0.0045,
+    "words": 649
+   },
+   "robustness": {},
+   "p": 0.004497751124437781
+  },
+  "S3": {
+   "prediction": "Initial signs are associated with function",
+   "primary": {
+    "chi2": 18.4,
+    "null": 19.3,
+    "p": 0.5317,
+    "words": 359
+   },
+   "robustness": {},
+   "p": 0.5317341329335332
+  },
+  "S4": {
+   "prediction": "Initial signs are associated with register",
+   "primary": {
+    "chi2": 84.8,
+    "null": 24.7,
+    "p": 0.0005,
+    "words": 620
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "S5": {
+   "prediction": "Words on the same tablet share final signs beyond chance",
+   "primary": {
+    "same_final_pairs": 202,
+    "null": 103.9,
+    "p": 0.0005
+   },
+   "robustness": {
+    "unique words, within-site shuffle": {
+     "pairs": 124,
+     "null": 103.1,
+     "p": 0.0849
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "S6": {
+   "prediction": "Words on the same tablet share initial signs beyond chance",
+   "primary": {
+    "same_initial_pairs": 242,
+    "null": 141.7,
+    "p": 0.0005
+   },
+   "robustness": {
+    "unique words, within-site shuffle": {
+     "pairs": 172,
+     "null": 131.3,
+     "p": 0.011
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "S7": {
+   "prediction": "Linear A name finals resemble Knossos stem-final syllables more than Pylos ones",
+   "primary": {
+    "jsd_KN": 0.2073,
+    "jsd_PY": 0.2501,
+    "p": 0.1344
+   },
+   "robustness": {},
+   "p": 0.1344327836081959
+  },
+  "S8": {
+   "prediction": "Two-sign endings attach to 3+ distinct stems more than chance",
+   "primary": {
+    "LA_endings": 8,
+    "null": 8.0,
+    "p": 0.9701
+   },
+   "robustness": {
+    "Linear B": {
+     "endings": 233,
+     "null": 232.8,
+     "p": 0.8317
+    }
+   },
+   "p": 0.9700598802395209
+  },
+  "S9": {
+   "prediction": "Neighbouring words share their final sign more than chance",
+   "primary": {
+    "pairs": 21,
+    "null": 24.18,
+    "p": 0.8326
+   },
+   "robustness": {},
+   "p": 0.8325837081459271
+  },
+  "S10": {
+   "prediction": "A heading and the next word share their final sign more than chance",
+   "primary": {
+    "pairs": 4,
+    "null": 5.38,
+    "p": 0.8661
+   },
+   "robustness": {},
+   "p": 0.8660669665167416
+  }
+ }
+}

@@ -1,0 +1,27 @@
+== CM1: Spice-abbreviation signs are followed by numbers more often
+   primary {'set': (0.5763, 59), 'other': (0.5067, 300), 'p': 0.2039}
+   robustness {}
+== CM2: Spice-abbreviation sign entries carry fractions more often
+   primary {'set': (0.0847, 59), 'other': (0.0933, 300), 'p': 0.6697}
+   robustness {}
+== CM3: Spice-abbreviation signs stand on goods tablets more often
+   primary {'set': (0.4068, 59), 'other': (0.3433, 300), 'p': 0.2299}
+   robustness {}
+== CM4: Number-following and fraction rates correlate across single signs
+   primary {'spearman': -0.19, 'p': 0.8212, 'signs': 27}
+   robustness {'number-following rate by sign': {'SA': 1.0, 'DI': 0.87, 'SU': 0.86, 'E': 0.8, 'RE': 0.71, 'TI': 0.7, 'SE': 0.6, 'ZU': 0.6, 'KA': 0.59, 'KI': 0.59, 'QE': 0.57, 'SI': 0.57}}
+== CM5: Single TE stands in the first entry more often
+   primary {'TE_first': (0.6296, 27), 'other_first': (0.1295, 332), 'p': 0.0005}
+   robustness {}
+== CM6: Number-following single signs hold consistent places among commodities
+   primary {'asymmetry': 96, 'null': 94.8, 'p': 0.4793, 'tablets': 55}
+   robustness {'signs': ['A', 'DI', 'DU', 'E', 'I', 'KA', 'KI', 'KU', 'MA', 'NA', 'NE', 'PA', 'QE', 'RE', 'SA', 'SE', 'SI', 'SU', 'TA', 'TE', 'TI', 'TU', 'ZU']}
+== CM7: Spice-abbreviation signs co-occur on the same tablets
+   primary {'tablets_with_2plus': 5, 'null': 6.5, 'p': 0.8406}
+   robustness {}
+== CM8: Number-following single signs stand in the first entry less often
+   primary {'num_first': (0.0699, 186), 'other_first': (0.2717, 173), 'p': 0.0005}
+   robustness {}
+
+primary p: {'CM1': 0.2039, 'CM2': 0.6697, 'CM3': 0.2299, 'CM4': 0.8212, 'CM5': 0.0005, 'CM6': 0.4793, 'CM7': 0.8406, 'CM8': 0.0005}
+survive BH at 5%: ['CM5', 'CM8']

@@ -1,0 +1,33 @@
+== S1: Final signs are associated with function (entry vs heading)
+   primary {'chi2': 23.6, 'null': 18.1, 'p': 0.1729, 'words': 319}
+   robustness {}
+== S2: Final signs are associated with register
+   primary {'chi2': 59.7, 'null': 33.9, 'p': 0.0045, 'words': 649}
+   robustness {}
+== S3: Initial signs are associated with function
+   primary {'chi2': 18.4, 'null': 19.3, 'p': 0.5317, 'words': 359}
+   robustness {}
+== S4: Initial signs are associated with register
+   primary {'chi2': 84.8, 'null': 24.7, 'p': 0.0005, 'words': 620}
+   robustness {}
+== S5: Words on the same tablet share final signs beyond chance
+   primary {'same_final_pairs': 202, 'null': 103.9, 'p': 0.0005}
+   robustness {}
+== S6: Words on the same tablet share initial signs beyond chance
+   primary {'same_initial_pairs': 242, 'null': 141.7, 'p': 0.0005}
+   robustness {}
+== S7: Linear A name finals resemble Knossos stem-final syllables more than Pylos ones
+   primary {'jsd_KN': 0.2073, 'jsd_PY': 0.2501, 'p': 0.1344}
+   robustness {}
+== S8: Two-sign endings attach to 3+ distinct stems more than chance
+   primary {'LA_endings': 8, 'null': 8.0, 'p': 0.9701}
+   robustness {'Linear B': {'endings': 233, 'null': 232.8, 'p': 0.8317}}
+== S9: Neighbouring words share their final sign more than chance
+   primary {'pairs': 21, 'null': 24.18, 'p': 0.8326}
+   robustness {}
+== S10: A heading and the next word share their final sign more than chance
+   primary {'pairs': 4, 'null': 5.38, 'p': 0.8661}
+   robustness {}
+
+primary p: {'S1': 0.1729, 'S2': 0.0045, 'S3': 0.5317, 'S4': 0.0005, 'S5': 0.0005, 'S6': 0.0005, 'S7': 0.1344, 'S8': 0.9701, 'S9': 0.8326, 'S10': 0.8661}
+survive BH at 5%: ['S2', 'S4', 'S5', 'S6']

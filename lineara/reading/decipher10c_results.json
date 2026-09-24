@@ -1,0 +1,313 @@
+{
+ "method": "Ten hypotheses following the vowel lead of decipher10b.py and the name results, aimed at reading Linear A.\n\nThe fourteenth round found, exploratorily, that Linear A's e/i and o/u sign pairs behave more alike than Linear\nB's. If Minoan had marginal e and o, several independent predictions follow; A1-A6 test them on data the\nexploratory comparison did not use. A7-A10 use vowel-free matching (consonant skeletons), which such a vowel\nsystem would favour, to look for Linear A words in the Linear B record.\n\nEach has a prediction stated before the test ran, one primary test with its own null, and a Linear B control\nwhere the method can run on the deciphered script. Benjamini-Hochberg at 5% runs across the ten.\n\nA1  Variant spellings of Knossos names (Linear B, one vowel different, same consonant) alternate e/i or o/u more\n    often than variant spellings of Pylos names.\nA2  Linear A words that match a Linear B word but for one vowel (same consonant) differ by e/i or o/u more often\n    than vowel frequencies predict.\nA3  Linear A words that differ in one internal vowel (same consonant) differ by e/i or o/u more often than vowel\n    frequencies predict. Control: Linear B.\nA4  Across consonant rows, e-signs resemble i-signs and o-signs resemble u-signs in context more than other\n    vowel pairs do (the within-row comparison of Z5/Z6 excluded). Control: Linear B.\nA5  Knossos personal names have fewer e-syllables inside the word than Pylos names (an e-deficit, like the\n    o-deficit).\nA6  Linear A words on the same stem whose final signs differ only in vowel differ by e/i or o/u more often than\n    vowel frequencies predict. Control: Linear B.\nA7  Consonant-skeleton matches (same length and consonants, vowels ignored) between Linear A words and Linear B\n    personal names are commoner for Knossos names than Pylos names, beyond the exact matches.\nA8  Linear A religious words skeleton-match Linear B religious words and theonyms more often than Linear A\n    administrative words do.\nA9  Linear A heading words skeleton-match Linear B place names more often than Linear A entry words do.\nA10 Linear A entry words skeleton-match Linear B personal names more often than Linear A heading words do.",
+ "primary_p": {
+  "A1": 0.11144427786106946,
+  "A2": 0.6256871564217891,
+  "A3": 0.18640679660169915,
+  "A4": 0.2593703148425787,
+  "A5": 0.0004997501249375312,
+  "A6": 0.017491254372813594,
+  "A7": 0.004997501249375313,
+  "A8": 0.4267866066966517,
+  "A9": 0.2098950524737631,
+  "A10": 0.8125937031484258
+ },
+ "bh_supported": [
+  "A5",
+  "A7"
+ ],
+ "details": {
+  "A1 Knossos name variants": {
+   "prediction": "Knossos name variants alternate e/i or o/u more than Pylos name variants",
+   "primary": {
+    "KN_share": 0.242,
+    "PY_share": 0.0,
+    "p": 0.1114,
+    "pairs": [
+     33,
+     9
+    ]
+   },
+   "robustness": {
+    "KN alternations": {
+     "ou": 5,
+     "io": 4,
+     "ai": 5,
+     "ao": 7,
+     "au": 5,
+     "ei": 3,
+     "ae": 3,
+     "eo": 1
+    },
+    "PY alternations": {
+     "eo": 2,
+     "ae": 2,
+     "eu": 1,
+     "io": 1,
+     "ao": 1,
+     "ai": 1,
+     "au": 1
+    }
+   }
+  },
+  "A2 Linear A-Linear B near matches": {
+   "prediction": "One-vowel near matches between Linear A and Linear B words are e/i or o/u more than expected",
+   "primary": {
+    "share": 0.167,
+    "expected": 0.171,
+    "p": 0.6257,
+    "pairs": 634
+   },
+   "robustness": {
+    "against Knossos names": {
+     "share": 0.118,
+     "pairs": 68
+    },
+    "against Pylos names": {
+     "share": 0.125,
+     "pairs": 16
+    },
+    "alternations": {
+     "au": 71,
+     "ae": 87,
+     "eu": 40,
+     "ai": 93,
+     "ao": 86,
+     "ei": 66,
+     "io": 68,
+     "iu": 43,
+     "eo": 40,
+     "ou": 40
+    }
+   }
+  },
+  "A3 internal vowel alternations": {
+   "prediction": "Linear A words differing in one internal vowel differ by e/i or o/u more than expected",
+   "primary": {
+    "share": 0.136,
+    "expected": 0.099,
+    "p": 0.1864,
+    "pairs": 66
+   },
+   "robustness": {
+    "Linear B control": {
+     "share": 0.172,
+     "expected": 0.105,
+     "p": 0.0005,
+     "pairs": 977
+    },
+    "alternations": {
+     "ai": 15,
+     "ao": 3,
+     "au": 10,
+     "ae": 10,
+     "eu": 4,
+     "ei": 6,
+     "eo": 1,
+     "io": 5,
+     "iu": 9,
+     "ou": 3
+    }
+   }
+  },
+  "A4 cross-row vowel affinity": {
+   "prediction": "Across rows, e-signs resemble i-signs and o-signs u-signs more than other vowel pairs",
+   "primary": {
+    "diff": 0.0109,
+    "p": 0.2594
+   },
+   "robustness": {
+    "Linear B control": {
+     "diff": -0.0667,
+     "p": 1.0
+    }
+   }
+  },
+  "A5 e-deficit in Knossos names": {
+   "prediction": "Knossos names have fewer internal e-syllables than Pylos names",
+   "primary": {
+    "KN": 0.1636,
+    "PY": 0.2551,
+    "p": 0.0005
+   },
+   "robustness": {
+    "Linear A internal e": 0.104,
+    "Linear B all words internal e": 0.2432,
+    "i for comparison (KN, PY)": [
+     0.2099,
+     0.1576
+    ],
+    "names ending -e-u removed": {
+     "KN": 0.1636,
+     "PY": 0.2514,
+     "p": 0.001,
+     "removed": [
+      0,
+      3
+     ]
+    },
+    "first syllable only (-e-u names removed)": {
+     "KN": 0.1397,
+     "PY": 0.1964,
+     "p": 0.0105
+    },
+    "control common words": {
+     "KN": 0.2634,
+     "PY": 0.2882,
+     "p": 0.1519
+    }
+   }
+  },
+  "A6 final vowel alternations": {
+   "prediction": "Linear A final-sign vowel alternations are e/i or o/u more than expected",
+   "primary": {
+    "share": 0.169,
+    "expected": 0.102,
+    "p": 0.0175,
+    "pairs": 89
+   },
+   "robustness": {
+    "Linear B control": {
+     "share": 0.108,
+     "expected": 0.094,
+     "p": 0.076,
+     "pairs": 785
+    },
+    "alternations": {
+     "ae": 14,
+     "au": 14,
+     "ao": 4,
+     "eu": 8,
+     "ai": 21,
+     "ou": 4,
+     "ei": 11,
+     "iu": 10,
+     "eo": 2,
+     "io": 1
+    }
+   }
+  },
+  "A7 skeleton matches by site": {
+   "prediction": "Knossos names skeleton-match Linear A words more than Pylos names, beyond exact matches",
+   "primary": {
+    "KN_rate": 0.1664,
+    "PY_rate": 0.0985,
+    "p": 0.005,
+    "n": [
+     565,
+     325
+    ]
+   },
+   "robustness": {
+    "control common words": {
+     "KN": 0.1057,
+     "PY": 0.1356,
+     "p": 0.8871
+    },
+    "by length": {
+     "three signs": {
+      "KN": 0.3139,
+      "PY": 0.2283,
+      "p": 0.051,
+      "n": [
+       274,
+       127
+      ]
+     },
+     "four or more signs": {
+      "KN": 0.0275,
+      "PY": 0.0152,
+      "p": 0.2804,
+      "n": [
+       291,
+       198
+      ]
+     }
+    },
+    "Pylos -e-u names removed": {
+     "PY": 0.0994,
+     "p": 0.0045
+    },
+    "mean length (KN, PY)": [
+     3.6,
+     3.77
+    ]
+   }
+  },
+  "A8 religious skeleton matches": {
+   "prediction": "Linear A religious words skeleton-match Linear B religious words more than administrative words do",
+   "primary": {
+    "rel_rate": 0.0155,
+    "adm_rate": 0.009,
+    "p": 0.4268,
+    "n": [
+     129,
+     335
+    ],
+    "lb_religious_words": 56
+   },
+   "robustness": {
+    "matches": {
+     "DA-MA-TE": [
+      "da-ma-te"
+     ],
+     "U-TI-NU": [
+      "a-ta-na"
+     ]
+    }
+   }
+  },
+  "A9 headings and place names": {
+   "prediction": "Linear A headings skeleton-match Linear B place names more than entry words do",
+   "primary": {
+    "heading_rate": 0.0833,
+    "entry_rate": 0.0493,
+    "p": 0.2099,
+    "n": [
+     72,
+     223
+    ],
+    "lb_toponyms": 171
+   },
+   "robustness": {
+    "heading matches": {
+     "A-KA-RU": [
+      "a2-ki-ra"
+     ],
+     "DA-RE-KU": [
+      "da-ra-ko"
+     ],
+     "I-KU-RI-NA": [
+      "e-ke-ra-ne"
+     ],
+     "I-NA-WA": [
+      "a-nu-wa"
+     ],
+     "KI-RI-TA2": [
+      "ka-ru-to",
+      "ko-ri-to"
+     ],
+     "MA-SU-MI": [
+      "ma-so-mo"
+     ]
+    }
+   }
+  },
+  "A10 entries and personal names": {
+   "prediction": "Linear A entry words skeleton-match Linear B personal names more than headings do",
+   "primary": {
+    "entry_rate": 0.287,
+    "heading_rate": 0.3333,
+    "p": 0.8126,
+    "n": [
+     223,
+     72
+    ],
+    "lb_names": 1053
+   },
+   "robustness": {
+    "number of entry words with a match": 64
+   }
+  }
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "method": "Six hypotheses following decipher7k.py: Khania's vowel spelling, values for the local signs, and whether the\nR/T vowel rule is language or scribal habit.\n\nEach has a prediction stated before the test ran and one primary test with its own null. Benjamini-Hochberg at\n5% runs across the six.\n\nL1  Khania uses e/o after R and T more than Haghia Triada does.\nL2  Khania uses e/o more than Haghia Triada overall.\nL3  Khania's Linear A is closer to Linear B in syllable use than Haghia Triada's is.\nL4  Words with a local (single-site) unread sign have a twin elsewhere in Linear A, identical except for a known\n    syllable in that slot, more often than words with widespread unread signs.\nL7  Words with e/o after consonants other than R and T are attested outside Haghia Triada more often than other words.\nL10 Haghia Triada scribes differ in how often they write e/o after R and T (if they do not, the rule is language).",
+ "primary_p": {
+  "L1": 0.12043978010994502,
+  "L2": 0.46276861569215394,
+  "L3": 0.40929535232383807,
+  "L4": 0.9960019990004998,
+  "L7": 0.7996001999000499,
+  "L10": 0.3003498250874563
+ },
+ "bh_supported": [],
+ "details": {
+  "L1 Khania e/o after R/T": {
+   "prediction": "Khania uses e/o after R and T more than Haghia Triada",
+   "primary": {
+    "KH": 0.351,
+    "HT": 0.267,
+    "p": 0.1204,
+    "words": [
+     68,
+     360
+    ]
+   },
+   "robustness": {}
+  },
+  "L2 Khania e/o overall": {
+   "prediction": "Khania uses e/o more than Haghia Triada overall",
+   "primary": {
+    "KH": 0.168,
+    "HT": 0.165,
+    "p": 0.4628
+   },
+   "robustness": {}
+  },
+  "L3 Khania closer to Linear B": {
+   "prediction": "Khania Linear A is closer to Linear B in syllable use than Haghia Triada",
+   "primary": {
+    "jsd_KH_LB": 0.2744,
+    "jsd_HT_LB": 0.2371,
+    "p": 0.4093
+   },
+   "robustness": {}
+  },
+  "L4 twins for local signs": {
+   "prediction": "Words with a local unread sign have a twin with a known sign more often",
+   "primary": {
+    "local_with_twin": "2/16",
+    "widespread_with_twin": "61/145",
+    "p": 0.996
+   },
+   "robustness": {
+    "all twins (word ~ known signs in that slot)": [
+     "*118-MI ~ A, DE, E, NE, NI, O, RU, TA",
+     "*118-MI-NA ~ NE",
+     "*164-RI-DA ~ DA",
+     "*188-DU ~ A, RA2, SI, SU, WI, ZU",
+     "*21F-TU ~ A, DA, MI, QE, RE, SI, TE",
+     "*21F-TU-NE ~ QE",
+     "*28B-TI ~ I, KA, MI, NA, NE, NU, O, QE, RA2, RE, TA, U",
+     "*301-NA ~ A, DI, I, KA, MI, RU, SI, TI",
+     "*301-SI ~ A, DI, I, JA, KA, MA, NA, SE",
+     "*301-WA ~ DA, JA",
+     "*305-RU ~ A, KA, KI, KO, MA, MU, QA, SA, SI",
+     "*306-TA-JE ~ RI",
+     "*306-TU ~ A, DA, MI, QE, RE, SI, TE",
+     "*312-TA ~ A, KI, KU, MI, NI, PA, SA, TA",
+     "*312-TA2 ~ RE, U",
+     "*322-RI ~ A, DU, MA, RA, SA, TE",
+     "*324-DI-RA ~ ZU",
+     "*327-JU ~ A, DU, KA, MA, U",
+     "*328-E ~ KO, PA3, RO",
+     "*333-SA-MU ~ JA",
+     "*358-NI ~ KU, PA3, RO, RU, SI, TE, TI",
+     "*47-KU-NA ~ DA",
+     "*47-TE ~ NU, RA, SI, TE, U, WA",
+     "*560-RE ~ A, DA, JA, KU, MA, MI, PA, PU2, SU",
+     "*805-MI ~ A, DE, E, NE, NI, O, RU, TA",
+     "*86-KA ~ DA, DU, E, I, KU, MI, QE, SI",
+     "*86-RO ~ KI, KU, NU, RE, SA",
+     "A-*301 ~ DA, DE, DU, I, JA, JE, JU, MA, MI, NA, NE, NU, PA, PA3, PI, RA, RE, RI, RU, SE, SI, TA, TU",
+     "A-*325-ZA ~ DU",
+     "A-SA-SA-*802-ME ~ RA",
+     "A-TA-*350 ~ DE, NA, RE",
+     "DA-*118 ~ DA, I, KA, KI, KU, ME, PA3, RA, RE, TU, WA",
+     "DI-*306 ~ DE, DI, KI, NA, SI",
+     "DU-*314-RE ~ RA",
+     "E-*301 ~ KA, MI",
+     "E-*82 ~ KA, MI",
+     "I-*308 ~ DA, DE, DI, JA, KA, KI, MA, NA, PI, RA2, SE, SI, TI, ZA",
+     "I-*331 ~ DA, DE, DI, JA, KA, KI, MA, NA, PI, RA2, SE, SI, TI, ZA",
+     "I-*47 ~ DA, DE, DI, JA, KA, KI, MA, NA, PI, RA2, SE, SI, TI, ZA",
+     "JA-*21F ~ DI, JA, KI, KU, PA, PI, QE, RA, RE, SA, SI, SU, WA, WI",
+     "JA-*304 ~ DI, JA, KI, KU, PA, PI, QE, RA, RE, SA, SI, SU, WA, WI",
+     "JA-*345 ~ DI, JA, KI, KU, PA, PI, QE, RA, RE, SA, SI, SU, WA, WI",
+     "JA-DI-KI-TE-TE-*307-PU2-RE ~ DU",
+     "KA-*305 ~ DI, JE, JU, KI, KU, NA, NE, PA, QA, RA2, RU, SA, SI, TI",
+     "KI-*310 ~ DA, NU, RA, RO, RU, TA",
+     "KU-*305 ~ DA, KA, NI, PA, PA3, PI, RA, RE, RO, TA",
+     "KU-*321 ~ DA, KA, NI, PA, PA3, PI, RA, RE, RO, TA",
+     "MA-*321 ~ DI, I, JU, RE, RI, RU, SI, ZA, ZU",
+     "MU-*312 ~ RU",
+     "NE-*22M ~ KI, MI, TI",
+     "PA3-*188 ~ E, NI, PU2",
+     "PI-*314 ~ MU, NU, O, SA",
+     "QA-*118 ~ KI, NE, PU, RU, SA",
+     "QA-*305 ~ KI, NE, PU, RU, SA",
+     "RE-*86 ~ JA, RO, SA, SU, TA2, TI, TU, ZA",
+     "RI-*305 ~ JA",
+     "SA-*301-RI ~ QE",
+     "SE-*305 ~ I, JE, SI",
+     "SI-*516 ~ DU, KA, MA, NA, NI, PU, RA, RU, TE, TU",
+     "TE-*301 ~ JA, KE, KI, NI, RI, TE, TU, ZU",
+     "U-*325-ZA ~ DE",
+     "U-*49 ~ JU, KI, SU, TA2, TE, TI",
+     "WA-*362 ~ TE"
+    ]
+   }
+  },
+  "L7 non-R/T e/o words are regional": {
+   "prediction": "Words with e/o after other consonants are attested outside HT more often",
+   "primary": {
+    "with": "93/167",
+    "without": "309/525",
+    "p": 0.7996
+   },
+   "robustness": {}
+  },
+  "L10 scribes and the R/T rule": {
+   "prediction": "Haghia Triada scribes differ in how often they write e/o after R/T",
+   "primary": {
+    "chi2": 3.61,
+    "null_mean": 2.95,
+    "p": 0.3003,
+    "syllables": 125
+   },
+   "robustness": {
+    "e/o share after R/T by scribe": {
+     "HT Scribe 2": 0.22,
+     "HT Scribe 8": 0.24,
+     "HT Scribe 9": 0.35,
+     "HT Scribe 6": 0.13
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "title": "scribes and archives",
+ "method": "Round 34 (loop round 6 of 10): scribes and archives (Haghia Triada hands; tablet sides merged).\n\nEach test asks whether a recording habit depends on the scribe beyond chance (scribe labels shuffled among tablets,\nor among entries/tokens where stated). Only scribes with at least three tablets are used.\n\nW1  List length (entries per tablet) differs by scribe.\nW2  Use of a KU-RO total differs by scribe.\nW3  Use of word dividers (per word) differs by scribe.\nW4  The fraction values used differ by scribe.\nW5  Syllable use differs by scribe (transaction terms removed).\nW6  Scribes with more tablets balance their totals more often (Spearman over scribes).\nW7  Amount size differs by scribe within the same commodity.\nW8  Strictness of largest-first order (Kendall tau per list) differs by scribe.\nW9  Oil ligature adjuncts differ by scribe.\nW11 Use of single signs (per token) differs by scribe.",
+ "primary_p": {
+  "W1": 0.006496751624187906,
+  "W2": 0.012993503248375811,
+  "W3": 0.8235882058970515,
+  "W4": 0.0004997501249375312,
+  "W5": 0.012993503248375811,
+  "W6": 1.0,
+  "W7": 0.0009995002498750624,
+  "W8": 0.8855572213893054,
+  "W9": 0.0009995002498750624,
+  "W11": 0.08295852073963018
+ },
+ "bh_supported": [
+  "W1",
+  "W2",
+  "W4",
+  "W5",
+  "W7",
+  "W9"
+ ],
+ "details": {
+  "W1": {
+   "prediction": "List length differs by scribe",
+   "primary": {
+    "between_SS": 12.18,
+    "null": 6.305,
+    "p": 0.0065,
+    "tablets": 110
+   },
+   "robustness": {},
+   "p": 0.006496751624187906
+  },
+  "W2": {
+   "prediction": "Use of KU-RO totals differs by scribe",
+   "primary": {
+    "between_SS": 4.223,
+    "null": 2.138,
+    "p": 0.013,
+    "tablets": 110
+   },
+   "robustness": {},
+   "p": 0.012993503248375811
+  },
+  "W3": {
+   "prediction": "Use of word dividers differs by scribe",
+   "primary": {
+    "between_SS": 4.282,
+    "null": 5.942,
+    "p": 0.8236,
+    "tablets": 84
+   },
+   "robustness": {},
+   "p": 0.8235882058970515
+  },
+  "W4": {
+   "prediction": "The fraction values used differ by scribe",
+   "primary": {
+    "chi2": 239.2,
+    "null": 144.4,
+    "p": 0.0005,
+    "tokens": 155
+   },
+   "robustness": {
+    "single-commodity tablets, scribes shuffled within commodity": {
+     "chi2": 51.3,
+     "null": 44.0,
+     "p": 0.2159,
+     "tokens": 58,
+     "tablets": 20
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "W5": {
+   "prediction": "Syllable use differs by scribe (transaction terms removed)",
+   "primary": {
+    "chi2": 975.4,
+    "null": 867.1,
+    "p": 0.013,
+    "tokens": 926
+   },
+   "robustness": {},
+   "p": 0.012993503248375811
+  },
+  "W6": {
+   "prediction": "Scribes with more tablets balance their totals more often",
+   "primary": {
+    "rho": -0.4,
+    "p": 1.0,
+    "scribes": 4
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "W7": {
+   "prediction": "Amount size differs by scribe within the same commodity",
+   "primary": {
+    "between_SS": 124.22,
+    "null": 69.28,
+    "p": 0.001,
+    "entries": 144
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "W8": {
+   "prediction": "Strictness of largest-first order differs by scribe",
+   "primary": {
+    "between_SS": 1.196,
+    "null": 2.52,
+    "p": 0.8856,
+    "lists": 43
+   },
+   "robustness": {},
+   "p": 0.8855572213893054
+  },
+  "W9": {
+   "prediction": "Oil ligature adjuncts differ by scribe",
+   "primary": {
+    "chi2": 52.1,
+    "null": 24.8,
+    "p": 0.001,
+    "tokens": 27
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "W11": {
+   "prediction": "Use of single signs differs by scribe",
+   "primary": {
+    "between_SS": 0.316,
+    "null": 0.214,
+    "p": 0.083,
+    "tablets": 110
+   },
+   "robustness": {},
+   "p": 0.08295852073963018
+  }
+ }
+}

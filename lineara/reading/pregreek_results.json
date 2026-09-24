@@ -1,0 +1,160 @@
+{
+ "method": "Pre-Greek substrate words against Linear A.\n\nIf Minoan is one of the sources of the Pre-Greek substrate, Greek words of Pre-Greek origin should match\nLinear A word shapes more often than ordinary Greek words do. Comparing the two within Greek holds Greek\nphonology and word-building constant, which unrelated control languages cannot.\n\nPre-Greek list: Ancient Greek entries whose Wiktionary etymology derives or borrows them from Pre-Greek\n(template source code qsb-grc; mostly following Beekes and Furnee), streamed from the Kaikki extract: 1,600\nentries. Ordinary Greek: Ancient Greek nouns, adjectives, names and verbs in the same extract not so marked.\nSpelling: lang_test.spell, the same fixed Linear B rules. Two forms per word: the lemma, and the lemma minus\nits last syllable (Greek endings such as -os, -a, -e would not appear in a Minoan original).\nStatistic: exact matches with the Linear A word types of 3+ signs, per 1,000 forms; the ordinary-Greek rate\nis estimated from 2,000 random samples matched to the Pre-Greek list's word-length distribution (Pre-Greek\nlemmas are shorter, and length alone changes the chance of an exact match), giving a p-value for the excess.",
+ "pregreek_entries": 1600,
+ "ordinary_entries": 55250,
+ "modes": {
+  "lemma": {
+   "pregreek_forms": 1054,
+   "pregreek_matches": 6,
+   "pregreek_per_1000": 5.69,
+   "ordinary_forms": 27992,
+   "ordinary_expected_at_same_size": 2.62,
+   "ordinary_per_1000": 2.49,
+   "p_excess": 0.039,
+   "matches": [
+    {
+     "linear_a": "A-KA-TA",
+     "greek": "ἄκανθα",
+     "gloss": "thorny plant"
+    },
+    {
+     "linear_a": "A-KI-RO",
+     "greek": "ἀγχίλωψ",
+     "gloss": "a swelling which obstructs the lachrymal duct"
+    },
+    {
+     "linear_a": "A-RI-PA",
+     "greek": "ἀλίβας",
+     "gloss": "corpse, dead body"
+    },
+    {
+     "linear_a": "KI-DA-RO",
+     "greek": "κίδαλον",
+     "gloss": "onion (Allium cepa)"
+    },
+    {
+     "linear_a": "PA-I-TO",
+     "greek": "Φαιστός",
+     "gloss": "Phaestum (a town in Crete, Greece)"
+    },
+    {
+     "linear_a": "PA-TA-NE",
+     "greek": "πατάνη",
+     "gloss": "kind of flat dish"
+    }
+   ]
+  },
+  "stem": {
+   "pregreek_forms": 366,
+   "pregreek_matches": 1,
+   "pregreek_per_1000": 2.73,
+   "ordinary_forms": 14510,
+   "ordinary_expected_at_same_size": 1.17,
+   "ordinary_per_1000": 3.18,
+   "p_excess": 0.6987,
+   "matches": [
+    {
+     "linear_a": "KU-PA-RI",
+     "greek": "κυπάρισσος",
+     "gloss": "cypress (Cupressus sempervirens)"
+    }
+   ]
+  }
+ },
+ "phonotactic_distance": {
+  "Pre-Greek (Wiktionary)": {
+   "forms": 1579,
+   "jsd_mean": 0.2621,
+   "jsd_90ci": [
+    0.2445,
+    0.2777
+   ],
+   "mean_len": 3.04
+  },
+  "Greek, ordinary": {
+   "forms": 54845,
+   "jsd_mean": 0.2676,
+   "jsd_90ci": [
+    0.2535,
+    0.283
+   ],
+   "mean_len": 4.23
+  },
+  "Luwian": {
+   "forms": 867,
+   "jsd_mean": 0.2087,
+   "jsd_90ci": [
+    0.1993,
+    0.2199
+   ],
+   "mean_len": 3.01
+  },
+  "Hurrian": {
+   "forms": 564,
+   "jsd_mean": 0.1743,
+   "jsd_90ci": [
+    0.1639,
+    0.1848
+   ],
+   "mean_len": 2.7
+  },
+  "Akkadian": {
+   "forms": 771,
+   "jsd_mean": 0.1958,
+   "jsd_90ci": [
+    0.1816,
+    0.21
+   ],
+   "mean_len": 2.62
+  },
+  "Ugaritic": {
+   "forms": 484,
+   "jsd_mean": 0.2079,
+   "jsd_90ci": [
+    0.1985,
+    0.2174
+   ],
+   "mean_len": 2.83
+  },
+  "Hawaiian": {
+   "forms": 2313,
+   "jsd_mean": 0.2867,
+   "jsd_90ci": [
+    0.2706,
+    0.3021
+   ],
+   "mean_len": 3.06
+  },
+  "Maori": {
+   "forms": 3079,
+   "jsd_mean": 0.2622,
+   "jsd_90ci": [
+    0.2509,
+    0.272
+   ],
+   "mean_len": 3.15
+  },
+  "Yoruba": {
+   "forms": 4838,
+   "jsd_mean": 0.2344,
+   "jsd_90ci": [
+    0.218,
+    0.2541
+   ],
+   "mean_len": 2.95
+  },
+  "Samoan": {
+   "forms": 569,
+   "jsd_mean": 0.2327,
+   "jsd_90ci": [
+    0.2234,
+    0.2442
+   ],
+   "mean_len": 2.9
+  },
+  "Linear A vs itself (split halves)": {
+   "jsd_mean": 0.0257,
+   "mean_len": 3.04
+  }
+ }
+}

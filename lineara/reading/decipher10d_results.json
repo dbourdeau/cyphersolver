@@ -1,0 +1,296 @@
+{
+ "method": "Ten hypotheses building on the vowel deficits (decipher10c.py), the Knossos names, and the accounting signs.\n\nEach has a prediction stated before the test ran, one primary test with its own null, and a Linear B control\nwhere the method can run on the deciphered script. Benjamini-Hochberg at 5% runs across the ten.\n\nB1  Rare vowels are lexically confined: e- and o-signs occur in fewer distinct Linear A words per occurrence than\n    a-, i- and u-signs of similar frequency. Control: Linear B.\nB2  e- and o-signs stand word-finally more often than a-, i- and u-signs (rare vowels live in endings).\nB3  Linear A words containing e- or o-signs are attested at fewer sites than other words of the same frequency.\nB4  A model trained on Knossos personal names against Knossos common words scores Linear A entry labels as more\n    name-like than Linear A headings (an independent check that entry labels are personal names).\nB5  The same model scores Linear A religious words as more name-like than administrative words that are not\n    entry labels (deity or personal names in the religious texts).\nB6  Single syllabic signs on tablets abbreviate words on the same tablet: they match a word's first sign more\n    often than chance.\nB7  Single syllabic signs on tablets are bound to particular commodities (mutual information above chance).\nB8  Commodity ligatures continue from Linear A to Linear B: the two scripts share more (commodity, syllable)\n    ligature pairs than chance.\nB9  Knossos personal names begin with a pure vowel sign more often than Pylos names.\nB10 Cretan place names in Linear B (attested only at Knossos) have fewer e- and o-syllables than place names\n    attested only at Pylos.",
+ "primary_p": {
+  "B1": 0.21889055472263869,
+  "B2": 0.0014992503748125937,
+  "B3": 0.1664167916041979,
+  "B4": 0.026986506746626688,
+  "B5": 0.5377311344327836,
+  "B6": 0.3683158420789605,
+  "B7": 0.06696651674162919,
+  "B8": 0.5097451274362819,
+  "B9": 0.8725637181409296,
+  "B10": 0.0004997501249375312
+ },
+ "bh_supported": [
+  "B10",
+  "B2"
+ ],
+ "details": {
+  "B1 rare vowels lexically confined": {
+   "prediction": "e/o-signs occur in fewer distinct words per occurrence than a/i/u-signs",
+   "primary": {
+    "residual_diff (e/o minus a/i/u, negative = confined)": -0.029,
+    "p": 0.2189
+   },
+   "robustness": {
+    "Linear B control": {
+     "diff": -0.096,
+     "p_lower": 0.044
+    },
+    "most confined Linear A signs": [
+     [
+      -0.3,
+      "sa"
+     ],
+     [
+      -0.22,
+      "me"
+     ],
+     [
+      -0.2,
+      "je"
+     ],
+     [
+      -0.12,
+      "di"
+     ],
+     [
+      -0.11,
+      "qe"
+     ],
+     [
+      -0.1,
+      "pa"
+     ],
+     [
+      -0.08,
+      "ka"
+     ],
+     [
+      -0.08,
+      "nu"
+     ]
+    ]
+   }
+  },
+  "B2 rare vowels in endings": {
+   "prediction": "e/o-signs stand word-finally more often than a/i/u-signs",
+   "primary": {
+    "final_share e/o": 0.5,
+    "final_share a/i/u": 0.34,
+    "p": 0.0015
+   },
+   "robustness": {
+    "Linear B control": {
+     "e/o": 0.364,
+     "a/i/u": 0.183,
+     "p": 0.0015
+    },
+    "five commonest words removed p": 0.0025,
+    "word types (each once) p": 0.0025,
+    "final share per e/o sign": {
+     "ne": 0.73,
+     "me": 0.68,
+     "ro": 0.61,
+     "te": 0.61,
+     "se": 0.56,
+     "ke": 0.54,
+     "je": 0.5,
+     "re": 0.49,
+     "de": 0.4,
+     "qe": 0.24,
+     "ko": 0.14
+    }
+   }
+  },
+  "B3 rare-vowel words are local": {
+   "prediction": "Words with e/o-signs are attested at fewer sites (frequency held fixed)",
+   "primary": {
+    "diff_in_mean_sites": -0.047,
+    "p": 0.1664,
+    "words_with_e_o": 327,
+    "words": 757
+   },
+   "robustness": {
+    "mean sites with e/o": 1.064,
+    "mean sites without": 1.112
+   }
+  },
+  "B4 entry labels are name-like": {
+   "prediction": "A Knossos name model scores Linear A entry labels above headings",
+   "primary": {
+    "auc": 0.557,
+    "null_mean": 0.501,
+    "p": 0.027,
+    "n": [
+     350,
+     137
+    ]
+   },
+   "robustness": {
+    "Pylos-trained model auc": 0.481
+   }
+  },
+  "B5 religious words are name-like": {
+   "prediction": "A Knossos name model scores Linear A religious words above non-label administrative words",
+   "primary": {
+    "auc": 0.498,
+    "null_mean": 0.501,
+    "p": 0.5377,
+    "n": [
+     178,
+     210
+    ]
+   },
+   "robustness": {
+    "formula words removed": {
+     "auc": 0.466,
+     "p": 0.8721
+    }
+   }
+  },
+  "B6 single signs as abbreviations": {
+   "prediction": "Single signs on tablets match the first sign of a word on the same tablet",
+   "primary": {
+    "matches": "25/429",
+    "null_mean": 23.25,
+    "p": 0.3683
+   },
+   "robustness": {
+    "non-initial position": {
+     "real": 47,
+     "null_mean": 31.93,
+     "p": 0.0015
+    },
+    "examples": [
+     "KU: KU-RO x4",
+     "KA: KA-PA x4",
+     "DI: DI-NA x2",
+     "I: I-SE x2",
+     "SI: SI-DA-RO x2",
+     "MA: MA-DI x1",
+     "TE: TE-TU x1",
+     "TE: TE-KI x1",
+     "KU: KU-RE-JU x1",
+     "KU: KU-RE x1",
+     "TU: TU-SU-PU2 x1",
+     "KA: KA-KU x1"
+    ]
+   }
+  },
+  "B7 single signs bound to commodities": {
+   "prediction": "Single signs co-occur with particular commodities beyond chance",
+   "primary": {
+    "mi": 0.4147,
+    "null_mean": 0.361,
+    "p": 0.067,
+    "tokens": 193,
+    "tablets": 108
+   },
+   "robustness": {
+    "commonest pairs": [
+     "NI+CYP x26",
+     "NI+GRA x23",
+     "NI+VIN x21",
+     "NI+OLE x19",
+     "NI+VIR x13",
+     "TE+GRA x8",
+     "SI+CYP x8",
+     "E+OLE x6",
+     "TE+VIN x5",
+     "KU+GRA x5",
+     "E+CYP x4",
+     "TE+OLIV x4",
+     "TE+OLE x4",
+     "E+VIN x4",
+     "RE+VIN x4"
+    ]
+   }
+  },
+  "B8 ligature continuity": {
+   "prediction": "Linear A and Linear B share more (commodity, syllable) ligatures than chance",
+   "primary": {
+    "shared": 2,
+    "null_mean": 1.59,
+    "p": 0.5097,
+    "LA_pairs": 29,
+    "LB_pairs": 45
+   },
+   "robustness": {
+    "shared pairs": [
+     "OLE+RA",
+     "TELA+KU"
+    ],
+    "LA pairs": [
+     "304+PA",
+     "406VAS+KE",
+     "CAP+KU",
+     "GRA+DA",
+     "GRA+KU",
+     "GRA+PA",
+     "GRA+QE",
+     "HIDE+SA",
+     "OLE+DI",
+     "OLE+KI",
+     "OLE+ME",
+     "OLE+MI",
+     "OLE+NE",
+     "OLE+QE",
+     "OLE+RA",
+     "OLE+RI",
+     "OLE+TA",
+     "OLE+TU",
+     "OLE+U",
+     "OLIV+TU",
+     "QE+PA",
+     "TELA+KU",
+     "VIN+KA",
+     "VIN+RA",
+     "VIN+SA",
+     "VIN+TE",
+     "VIN+WA",
+     "VIN+WI",
+     "VIR+KA"
+    ]
+   }
+  },
+  "B9 vowel-initial names": {
+   "prediction": "Knossos names begin with a pure vowel more often than Pylos names",
+   "primary": {
+    "KN": 0.2794,
+    "PY": 0.3127,
+    "p": 0.8726
+   },
+   "robustness": {
+    "Linear A words": 0.2381,
+    "Linear A names": 0.1927,
+    "control common words": {
+     "KN": 0.3728,
+     "PY": 0.3739,
+     "p": 0.5252
+    }
+   }
+  },
+  "B10 Cretan place names": {
+   "prediction": "Knossos-only place names and ethnics have fewer e/o-syllables (ending removed) than Pylos-only ones",
+   "primary": {
+    "KN": 0.2138,
+    "PY": 0.4246,
+    "p": 0.0005,
+    "n": [
+     73,
+     120
+    ]
+   },
+   "robustness": {
+    "whole words": {
+     "KN": 0.3519,
+     "PY": 0.4519,
+     "p": 0.0075
+    },
+    "Linear A all words": 0.1758,
+    "control common words (ending removed)": {
+     "KN": 0.4647,
+     "PY": 0.5026,
+     "p": 0.075
+    },
+    "against Thebes/Mycenae/Tiryns place names": {
+     "other": 0.4828,
+     "p": 0.013,
+     "n": 11
+    }
+   }
+  }
+ }
+}

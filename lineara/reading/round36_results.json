@@ -1,0 +1,156 @@
+{
+ "title": "the religious texts",
+ "method": "Round 36 (loop round 8 of 10): the religious texts (supports that are neither tablets nor sealings).\n\nY1  The formula words keep a fixed order across inscriptions (known, Davis 2014; replicated here).\nY2  Religious word types are attested at two or more sites more often than administrative word types.\nY3  Religious vocabulary repeats more (lower type/token ratio) than administrative vocabulary of the same size.\nY4  The word-initial preference of Q-row signs holds in religious words (against Linear B).\nY5  Inscriptions differ in length (words per inscription) by object type.\nY6  Non-formula religious words are more name-shaped than formula words (model: Linear A entry labels against\n    headings).\nY7  Inscriptions from the same site share non-formula words more than inscriptions from different sites.\nY8  Religious words ending in -TE are attested at a single site more often than other religious words.\nY9  Religious texts repeat word pairs (bigrams) more than administrative texts of the same size.\nY10 *301 is concentrated in religious words relative to other unread signs.",
+ "primary_p": {
+  "Y1": 0.0004997501249375312,
+  "Y2": 0.1504247876061969,
+  "Y3": 0.7886056971514243,
+  "Y4": 0.3098450774612694,
+  "Y5": 0.0029985007496251873,
+  "Y6": 0.239880059970015,
+  "Y7": 1.0,
+  "Y8": 0.6256871564217891,
+  "Y9": 0.8261738261738262,
+  "Y10": 0.2128935532233883
+ },
+ "bh_supported": [
+  "Y1",
+  "Y5"
+ ],
+ "details": {
+  "Y1": {
+   "prediction": "The formula words keep a fixed order across inscriptions",
+   "primary": {
+    "in_order_pairs": "36/36",
+    "null": 17.9,
+    "p": 0.0005,
+    "inscriptions": 11
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "Y2": {
+   "prediction": "Religious word types are attested at 2+ sites more often than administrative ones",
+   "primary": {
+    "religious": [
+     0.0613,
+     212
+    ],
+    "admin": [
+     0.0406,
+     689
+    ],
+    "p": 0.1504
+   },
+   "robustness": {},
+   "p": 0.1504247876061969
+  },
+  "Y3": {
+   "prediction": "Religious vocabulary repeats more than administrative vocabulary of the same size",
+   "primary": {
+    "type_token_religious": 0.836,
+    "admin_same_size": 0.822,
+    "p": 0.7886,
+    "tokens": 268
+   },
+   "robustness": {},
+   "p": 0.7886056971514243
+  },
+  "Y4": {
+   "prediction": "Q-row signs are word-initial in religious words more than in Linear B",
+   "primary": {
+    "religious": 0.333,
+    "LB": 0.277,
+    "p": 0.3098
+   },
+   "robustness": {},
+   "p": 0.3098450774612694
+  },
+  "Y5": {
+   "prediction": "Inscription length differs by object type",
+   "primary": {
+    "between_SS": 51.66,
+    "null": 12.52,
+    "p": 0.003
+   },
+   "robustness": {
+    "mean words": {
+     "Clay vessel": 1.19,
+     "Stone vessel": 2.41,
+     "Metal object": 2.31,
+     "Inked inscription": 1.89,
+     "Architecture": 1.0,
+     "Stone object": 1.18
+    }
+   },
+   "p": 0.0029985007496251873
+  },
+  "Y6": {
+   "prediction": "Non-formula religious words are more name-shaped than formula words",
+   "primary": {
+    "nonformula_mean": 0.015,
+    "formula_mean": -0.021,
+    "p": 0.2399,
+    "n": [
+     154,
+     36
+    ]
+   },
+   "robustness": {},
+   "p": 0.239880059970015
+  },
+  "Y7": {
+   "prediction": "Same-site inscriptions share non-formula words more than cross-site ones",
+   "primary": {
+    "diff": -0.0012,
+    "null": -0.0,
+    "p": 1.0,
+    "inscriptions": 129
+   },
+   "robustness": {},
+   "p": 1.0
+  },
+  "Y8": {
+   "prediction": "Religious words in -TE are attested at a single site more often",
+   "primary": {
+    "TE_single_site": [
+     0.9444,
+     18
+    ],
+    "other": [
+     0.9272,
+     206
+    ],
+    "p": 0.6257
+   },
+   "robustness": {},
+   "p": 0.6256871564217891
+  },
+  "Y9": {
+   "prediction": "Religious texts repeat word pairs more than administrative texts of the same size",
+   "primary": {
+    "religious": 0.087,
+    "admin_same_size": 0.197,
+    "p": 0.8262
+   },
+   "robustness": {},
+   "p": 0.8261738261738262
+  },
+  "Y10": {
+   "prediction": "*301 is concentrated in religious words relative to other unread signs",
+   "primary": {
+    "301_religious": [
+     0.0828,
+     290
+    ],
+    "other_unread_religious": [
+     0.0651,
+     584
+    ],
+    "p": 0.2129
+   },
+   "robustness": {},
+   "p": 0.2128935532233883
+  }
+ }
+}

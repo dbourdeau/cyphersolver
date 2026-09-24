@@ -1,0 +1,199 @@
+{
+ "title": "variation between sites",
+ "method": "Round 35 (loop round 7 of 10): variation between sites (tablet sides merged; sites with five or more tablets\nunless stated).\n\nX1  List length differs by site.\nX2  Use of KU-RO totals differs by site.\nX3  Use of word dividers (per word) differs by site.\nX5  Fractions per entry differ by site within the same commodity (site labels shuffled within commodity).\nX6  The share of entries equal to 1 differs by site within the same commodity.\nX9  Word length (signs per word type) differs by site.\nX10 Use of single signs (per token) differs by site.\nX11 The word-initial preference of Q-row signs (round 29 P6) holds both at Haghia Triada and outside it.\nX12 Khania uses the consonant rows in different proportions from Haghia Triada.\nX14 Tablets that open with a heading word are commoner at some sites than others.",
+ "primary_p": {
+  "X1": 0.0004997501249375312,
+  "X2": 0.0004997501249375312,
+  "X3": 0.45527236381809094,
+  "X5": 0.0239880059970015,
+  "X6": 0.1744127936031984,
+  "X9": 0.0004997501249375312,
+  "X10": 0.872063968015992,
+  "X11": 0.0004997501249375312,
+  "X12": 0.0014992503748125937,
+  "X14": 0.7026486756621689
+ },
+ "bh_supported": [
+  "X1",
+  "X11",
+  "X12",
+  "X2",
+  "X5",
+  "X9"
+ ],
+ "details": {
+  "X1": {
+   "prediction": "List length differs by site",
+   "primary": {
+    "between_SS": 49.938,
+    "null": 4.454,
+    "p": 0.0005,
+    "tablets": 349
+   },
+   "robustness": {
+    "means": {
+     "Arkhalkhori": 2.102,
+     "Haghia Triada": 1.979,
+     "Khania": 1.47,
+     "Knossos": 1.256,
+     "Malia": 0.962,
+     "Phaistos": 1.103,
+     "Thera": 0.231,
+     "Zakros": 1.812
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "X2": {
+   "prediction": "Use of KU-RO totals differs by site",
+   "primary": {
+    "between_SS": 2.651,
+    "null": 0.541,
+    "p": 0.0005,
+    "tablets": 350
+   },
+   "robustness": {
+    "means": {
+     "Arkhalkhori": 0.0,
+     "Haghia Triada": 0.184,
+     "Khania": 0.0,
+     "Knossos": 0.0,
+     "Malia": 0.0,
+     "Phaistos": 0.033,
+     "Thera": 0.0,
+     "Zakros": 0.031
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "X3": {
+   "prediction": "Use of word dividers differs by site",
+   "primary": {
+    "between_SS": 2.349,
+    "null": 2.544,
+    "p": 0.4553,
+    "tablets": 212
+   },
+   "robustness": {
+    "means": {
+     "Arkhalkhori": 0.233,
+     "Haghia Triada": 0.519,
+     "Khania": 0.385,
+     "Knossos": 0.333,
+     "Malia": 0.533,
+     "Phaistos": 0.248,
+     "Thera": 1.0,
+     "Zakros": 0.339
+    }
+   },
+   "p": 0.45527236381809094
+  },
+  "X5": {
+   "prediction": "Fractions per entry differ by site within commodity",
+   "primary": {
+    "between_SS": 3.88,
+    "null": 1.974,
+    "p": 0.024,
+    "entries": 356
+   },
+   "robustness": {},
+   "p": 0.0239880059970015
+  },
+  "X6": {
+   "prediction": "The share of entries equal to 1 differs by site within commodity",
+   "primary": {
+    "between_SS": 1.771,
+    "null": 1.228,
+    "p": 0.1744,
+    "entries": 356
+   },
+   "robustness": {},
+   "p": 0.1744127936031984
+  },
+  "X9": {
+   "prediction": "Word length differs by site",
+   "primary": {
+    "between_SS": 26.12,
+    "null": 5.27,
+    "p": 0.0005,
+    "words": 672
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "X10": {
+   "prediction": "Use of single signs differs by site",
+   "primary": {
+    "between_SS": 0.059,
+    "null": 0.136,
+    "p": 0.8721,
+    "tablets": 349
+   },
+   "robustness": {
+    "means": {
+     "Arkhalkhori": 0.118,
+     "Haghia Triada": 0.089,
+     "Khania": 0.109,
+     "Knossos": 0.095,
+     "Malia": 0.106,
+     "Phaistos": 0.093,
+     "Thera": 0.167,
+     "Zakros": 0.095
+    }
+   },
+   "p": 0.872063968015992
+  },
+  "X11": {
+   "prediction": "Q-row signs are word-initial at HT and outside HT, each more than in Linear B",
+   "primary": {
+    "HT": {
+     "share": 0.731,
+     "n": 26,
+     "p": 0.0005
+    },
+    "other": {
+     "share": 0.52,
+     "n": 25,
+     "p": 0.0005
+    },
+    "LB": 0.277,
+    "p (larger)": 0.0005
+   },
+   "robustness": {},
+   "p": 0.0004997501249375312
+  },
+  "X12": {
+   "prediction": "Khania uses the consonant rows in different proportions from Haghia Triada",
+   "primary": {
+    "chi2": 36.4,
+    "null": 12.0,
+    "p": 0.0015,
+    "syllables": 1152
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "X14": {
+   "prediction": "Tablets opening with a heading word differ by site",
+   "primary": {
+    "between_SS": 1.226,
+    "null": 1.765,
+    "p": 0.7026,
+    "tablets": 212
+   },
+   "robustness": {
+    "means": {
+     "Arkhalkhori": 0.667,
+     "Haghia Triada": 0.487,
+     "Khania": 0.541,
+     "Knossos": 0.667,
+     "Malia": 0.4,
+     "Phaistos": 0.688,
+     "Thera": 1.0,
+     "Zakros": 0.591
+    }
+   },
+   "p": 0.7026486756621689
+  }
+ }
+}

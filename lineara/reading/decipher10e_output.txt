@@ -1,0 +1,33 @@
+== C1 Pre-Greek words: Pre-Greek substrate words use fewer e/o vowels than length-matched ordinary Greek words
+   primary {'pre_greek_eo': 0.4684, 'greek_eo': 0.5205, 'p': 0.0005, 'n': [1579, 1579]}
+   robustness {'final syllable removed': {'pre': 0.3379, 'greek': 0.4874, 'p': 0.0005}, 'stem profiles (final syllable removed)': {'pre-Greek': {'a': 0.344, 'e': 0.175, 'i': 0.18, 'o': 0.163, 'u': 0.138}, 'Greek': {'a': 0.231, 'e': 0.281, 'i': 0.186, 'o': 0.206, 'u': 0.096}}, 'e alone, stems': 0.0004997501249375312, 'o alone, stems': 0.0004997501249375312, 'profiles': {'pre-Greek': {'a': 0.273, 'e': 0.165, 'i': 0.151, 'o': 0.303, 'u': 0.108}, 'Greek': {'a': 0.214, 'e': 0.266, 'i': 0.187, 'o': 0.254, 'u': 0.078}, 'Linear A': {'a': 0.4, 'e': 0.146, 'i': 0.254, 'o': 0.032, 'u': 0.168}}}
+== C2 Eteocretan: Eteocretan uses fewer e/o vowels than Greek
+   primary {'eteocretan_eo': 0.3799, 'greek_eo': 0.5255, 'p': 0.0045, 'pieces': [35, 119]}
+   robustness {'profiles': {'Eteocretan': {'a': 0.341, 'e': 0.274, 'i': 0.235, 'o': 0.106, 'u': 0.045}, 'Greek text': {'a': 0.194, 'e': 0.258, 'i': 0.199, 'o': 0.268, 'u': 0.082}}, 'caution': 'Eteocretan is known from five short inscriptions; spelling rules add copy vowels to clusters'}
+== C3 Cretan Hieroglyphic: Hieroglyphic sign groups read with Linear A values have a lower e/o share than Linear B
+   primary {'chic_eo': 0.3571, 'lb_eo': 0.4944, 'p': 0.0125, 'groups': 20}
+   robustness {'against Linear A (two-sided)': {'la_eo': 0.1775, 'p': 0.0005}, 'e/o share of the value inventory itself': 0.263, 'caution': 'only signs with an accepted Linear A equivalent can be read, which limits the vowels available'}
+== C4 Luwian against Hittite: Linear A's vowel profile is closer to Luwian than to Hittite
+   primary {'jsd_LA_Luwian': 0.1095, 'jsd_LA_Hittite': 0.0208, 'bootstrap p (Luwian not closer)': 1.0}
+   robustness {'JSD to Linear A by language (lower = closer)': {'Hittite': 0.0208, 'Hawaiian': 0.0268, 'Maori': 0.0274, 'Etruscan': 0.028, 'Samoan': 0.0323, 'Tongan': 0.0354, 'Hurrian': 0.0381, 'Sumerian': 0.0398, 'Yoruba': 0.0803, 'Akkadian': 0.0897, 'Luwian': 0.1095, 'Greek': 0.1096, 'Ugaritic': 0.1134}, 'profiles': {'Linear A': {'a': 0.4, 'e': 0.146, 'i': 0.254, 'o': 0.032, 'u': 0.168}, 'Luwian': {'a': 0.648, 'e': 0.001, 'i': 0.218, 'o': 0.0, 'u': 0.134}, 'Hittite': {'a': 0.47, 'e': 0.102, 'i': 0.265, 'o': 0.0, 'u': 0.163}}, 'caution': 'cuneiform and hieroglyphic Luwian cannot write e or o distinctly, so its profile is partly orthographic'}
+== C5 non-Greek names at Knossos: Knossos names without a Greek etymology have fewer e/o syllables
+   primary {'non_greek': 0.2764, 'greek': 0.3393, 'p': 0.031, 'n': [520, 117]}
+   robustness {'Linear A': 0.1775}
+== C6 non-Greek names at Pylos: Pylos names without a Greek etymology have fewer e/o syllables
+   primary {'non_greek': 0.401, 'greek': 0.4718, 'p': 0.0445, 'n': [224, 115]}
+   robustness {}
+== C7 undeciphered-sign words: Linear B words with undeciphered signs have fewer e/o syllables among their readable signs
+   primary {'star_words_eo': 0.4437, 'other_words_eo': 0.4922, 'p': 0.0205, 'n': [145, 4387]}
+   robustness {}
+== C8 e-final words are religious: Linear A words ending in an e-sign lean to the religious register
+   primary {'religious_e_final': 0.284, 'admin_e_final': 0.202, 'p': 0.016, 'n': [190, 560]}
+   robustness {'formula words removed': {'share': 0.292, 'p': 0.0115, 'n': 154}, '-TE final alone': {'religious': 0.095, 'admin': 0.041, 'p': 0.0085}, 'religious e-final words': ['A-DI-KI-TE', 'A-DI-KI-TE-TE', 'A-JE', 'A-KO-A-NE', 'A-MA-RA-NE', 'A-NA-NU-SI-JA-SE', 'A-NE', 'A-RE', 'A-RO-TE', 'A-SA-MU-NE', 'A-SA-SA-RA-ME', 'A-SE', 'A-TA-DE', 'A-TA-NA-JE', 'DA-DU-MI-NE', 'DA-MA-TE', 'DA-SE-RA-TE', 'DI-DI-KA-SE', 'DU-RA-RE', 'I-DA-MA-TE']}
+== C9 i and u against a: Within consonant rows Linear A gives i and u a larger share against a than Linear B
+   primary {'rows_LA_higher': '8/12', 'sign_test_p': 0.1938}
+   robustness {'per row (LA, LB)': {'d': (0.563, 0.459), 'j': (0.16, 0.0), 'k': (0.667, 0.518), 'm': (0.493, 0.416), 'n': (0.457, 0.52), 'p': (0.475, 0.607), 'q': (0.0, 0.333), 'r': (0.581, 0.507), 's': (0.587, 0.667), 't': (0.556, 0.41), 'w': (0.452, 0.424), 'z': (0.467, 0.0)}}
+== C10 consonant-conditioned e/o: Linear A e/o depend on the consonant more than Linear B e/o do (normalised MI)
+   primary {'la_nmi': 0.0903, 'lb_nmi_subsampled_mean': 0.0198, 'p': 0.001}
+   robustness {'internal positions only': {'la': 0.0922, 'lb_mean': 0.0196, 'p': 0.002}, 'Q row removed': {'la': 0.0809, 'lb_mean': 0.0162, 'p': 0.002}, 'only rows where Linear A uses an e/o sign': {'la': 0.0724, 'lb_mean': 0.0166, 'p': 0.002}, 'e/o share by consonant in Linear A': {'q': 0.5, 'r': 0.365, 't': 0.276, 's': 0.186, 'n': 0.168, 'm': 0.14, 'd': 0.116, 'k': 0.113, 'j': 0.067, 'p': 0.065, 'w': 0.0, 'z': 0.0}}
+
+primary p: {'C1': 0.0005, 'C2': 0.0045, 'C3': 0.0125, 'C4': 1.0, 'C5': 0.031, 'C6': 0.0445, 'C7': 0.0205, 'C8': 0.016, 'C9': 0.1938, 'C10': 0.001}
+survive BH at 5%: ['C1', 'C10', 'C2', 'C3', 'C8', 'C7', 'C5']

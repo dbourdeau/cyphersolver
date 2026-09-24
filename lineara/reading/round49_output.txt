@@ -1,0 +1,63 @@
+== TT1: Same consonant, different sign, in neighbouring syllables: Linear A vs Linear B
+   primary {'target': 0.0341, 'comparison': 0.021, 'p': 0.0005, 'n': [760, 4866]}
+   robustness {}
+== TT2: Consonant repetition in Linear A entry labels vs Linear B
+   primary {'target': 0.0453, 'comparison': 0.0298, 'p': 0.0105, 'n': [358, 4866]}
+   robustness {}
+== TT3: Consonant repetition at HT and elsewhere, each vs Linear B
+   primary {'HT': {'rate': 0.0538, 'p': 0.0005}, 'other': {'rate': 0.0513, 'p': 0.0005}, 'LB': 0.0298, 'p (larger)': 0.0005}
+   robustness {}
+== TT4: Pre-Greek: same consonant, different sign, vs Greek
+   primary {'target': 0.0317, 'comparison': 0.0238, 'p': 0.087, 'n': [1143, 1143]}
+   robustness {}
+== TT11: Repetition rates by consonant: Linear A correlates with Pre-Greek more than with Greek
+   primary {'rho_diff': -0.071, 'null': 0.019, 'p': 0.5808}
+   robustness {}
+== TT12: Repetition concentrated in the first two syllables, more than in Linear B
+   primary {'target': 0.0034, 'comparison': 0.0083, 'p': 0.6772, 'n': [760, 4866]}
+   robustness {}
+== TT13: When the consonant repeats, the vowel changes more often than in Linear B
+   primary {'target': 0.631, 'comparison': 0.7052, 'p': 0.8746, 'n': [760, 4866]}
+   robustness {}
+== TT5: o prefers R/Q and e prefers T/N/S, more than in Linear B
+   primary {'target': 0.1616, 'comparison': -0.035, 'p': 0.0005, 'n': [760, 4866]}
+   robustness {}
+== TT19: Pre-Greek e/o choice depends on the consonant more than Greek's
+   primary {'nmi_pre': 0.032, 'nmi_greek': 0.029, 'p': 0.3653}
+   robustness {}
+== TT16: Eteocretan begins with a-syllables more often than Greek
+   primary {'target': 0.5143, 'comparison': 0.2941, 'p': 0.0155, 'n': [35, 119]}
+   robustness {}
+== TT17: Pre-Greek stems end on more restricted consonants
+   primary {'target': 0.1357, 'comparison': 0.1833, 'p': 0.1169, 'n': [1143, 1143]}
+   robustness {}
+== TT18: Pre-Greek words begin with a pure vowel less often
+   primary {'target': 0.2616, 'comparison': 0.336, 'p': 0.0005, 'n': [1143, 1143]}
+   robustness {}
+== TT6: Different scribes order commodity pairs the same way
+   primary {'agreement': 0.717, 'null': 0.501, 'p': 0.003, 'scribe_pairs': 120}
+   robustness {}
+== TT21: HT and the other sites order commodity pairs the same way
+   primary {'agreement': 0.667, 'null': 0.489, 'p': 0.2434, 'pairs': 9}
+   robustness {}
+== TT14: Oil comes before wine more often than not
+   primary {'oil_first': '7/9', 'sign_test_p': 0.0898}
+   robustness {}
+== TT7: The last entry is the unique smallest more often than chance
+   primary {'last_is_min': '22/137', 'null': 19.4, 'p': 0.2954}
+   robustness {}
+== TT22: Lists of men are ordered largest-first beyond chance
+   primary {'mean_tau': 0.289, 'null': 0.002, 'p': 0.0005, 'lists': 19}
+   robustness {}
+== TT15: Scribes who total more also order more strictly largest-first
+   primary {'spearman': 0.507, 'p': 0.026, 'scribes': 15}
+   robustness {}
+== TT20: Totalled lists record larger summed amounts
+   primary {'with_total_mean_log_sum': (4.0686, 32), 'without': (3.1733, 222), 'p': 0.002}
+   robustness {}
+== TT8: Vowel-initial religious words are vowel + attested word more often than administrative ones
+   primary {'target': 0.1176, 'comparison': 0.2, 'p': 0.9315, 'n': [51, 80]}
+   robustness {}
+
+primary p: {'TT1': 0.0005, 'TT2': 0.0105, 'TT3': 0.0005, 'TT4': 0.087, 'TT11': 0.5808, 'TT12': 0.6772, 'TT13': 0.8746, 'TT5': 0.0005, 'TT19': 0.3653, 'TT16': 0.0155, 'TT17': 0.1169, 'TT18': 0.0005, 'TT6': 0.003, 'TT21': 0.2434, 'TT14': 0.0898, 'TT7': 0.2954, 'TT22': 0.0005, 'TT15': 0.026, 'TT20': 0.002, 'TT8': 0.9315}
+survive BH at 5%: ['TT1', 'TT16', 'TT18', 'TT2', 'TT20', 'TT22', 'TT3', 'TT5', 'TT6']

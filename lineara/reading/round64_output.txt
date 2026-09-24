@@ -1,0 +1,24 @@
+== U1: Khania lists repeat the commodity sign more
+   primary {'Khania': (0.4191, 15), 'HT': (0.3314, 29), 'p': 0.1244}
+   robustness {}
+== U2: Sign share differs by scribe
+   primary {'between_SS': 0.227, 'null': 0.191, 'p': 0.3303, 'lists': 16}
+   robustness {}
+== U3: Longer lists write the sign on a smaller share of entries
+   primary {'spearman': -0.328, 'p': 0.0108, 'lists': 56}
+   robustness {}
+== U4: Knossos writes the logogram on fewer lines than Pylos
+   primary {'KN': 0.718, 'PY': 0.892, 'p': 0.0005, 'n': [73, 108]}
+   robustness {}
+== U5: Lists of men write the sign on a smaller share
+   primary {'VIR': (0.1328, 7), 'goods': (0.4132, 49), 'p': 0.001}
+   robustness {}
+== U6: KU-RO entries carry the commodity sign more often than later entries
+   primary {'kuro_signed': (0.2, 10), 'later_signed': (0.3068, 264), 'p': 0.8611}
+   robustness {}
+== U7: Lists that write the sign less often are more strictly largest-first
+   primary {'spearman': -0.225, 'p': 0.1012, 'lists': 32}
+   robustness {}
+
+primary p: {'U1': 0.1244, 'U2': 0.3303, 'U3': 0.0108, 'U4': 0.0005, 'U5': 0.001, 'U6': 0.8611, 'U7': 0.1012}
+survive BH at 5%: ['U3', 'U4', 'U5']

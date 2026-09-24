@@ -153,6 +153,8 @@ PAGE_METHOD = {
     'beale': (NA, 'n/a', 'Beale Paper no. 1 is judged a fabrication; a book-cipher scan over Project Gutenberg found no key text.'),
     'goldbar': (NA, 'n/a', 'The letters are almost exactly ten of each kind, a sign of a design, not a message.'),
     'voynich': (NOT, 'none', 'Plain or simply enciphered European languages were tested and excluded; no reading.'),
+    'lineara': (NOT, 'none', 'The Linear B sound values carry over and the accounts (numbers, fractions, commodities, totals, three place '
+                'names; 41.8% of tokens) give sense, but the language is unknown and no word is translated.'),
     'indus': (NOT, 'none', 'Published decipherments were tested against the corpus; no reading is established.'),
 }
 # pages that report several targets, each with its own profile (the badge takes the first method in METHODS order)

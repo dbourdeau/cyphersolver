@@ -1,0 +1,33 @@
+== DD1: Entry labels repeat the consonant of neighbouring syllables more often
+   primary {'entries': 0.0453, 'others': 0.0509, 'p': 0.6637, 'n': [358, 222]}
+   robustness {}
+== DD2: Entry labels end on a narrower set of final signs
+   primary {'entries': 3.6653, 'others': 3.7318, 'p': 0.0265, 'n': [358, 222]}
+   robustness {}
+== DD3: Entry labels ending in -TI stand on VIR tablets more often
+   primary {'TI_on_VIR': (0.3571, 28), 'other_on_VIR': (0.1415, 530), 'p': 0.0055}
+   robustness {}
+== DD4: Entry labels contain unread signs less often than headings
+   primary {'entries': 0.2025, 'headings': 0.1379, 'p': 0.9865}
+   robustness {}
+== DD5: Entry labels on VIR tablets differ in syllable profile from those on tablets of goods
+   primary {'jsd': 0.1259, 'null': 0.0978, 'p': 0.0505, 'n': [49, 297]}
+   robustness {}
+== DD6: Entry labels with amount 1 differ in syllable profile from those with larger amounts
+   primary {'jsd': 0.0684, 'null': 0.0623, 'p': 0.2804, 'n': [89, 244]}
+   robustness {}
+== DD7: Recurring entry labels match Knossos words more often than one-off labels
+   primary {'recurring': (0.1556, 45), 'once': (0.1086, 313), 'p': 0.2329}
+   robustness {}
+== DD8: Entry labels in the same list share syllables more than labels from other lists of the site
+   primary {'mean_jaccard': 0.0499, 'null': 0.0477, 'p': 0.2395, 'lists': 57}
+   robustness {}
+== DD9: Two-sign entry labels stand on VIR tablets more often
+   primary {'two_sign_on_VIR': (0.1722, 209), 'longer_on_VIR': (0.1404, 349), 'p': 0.1909}
+   robustness {}
+== DD10: Entry labels matching Knossos words stand on VIR tablets more often
+   primary {'matched_on_VIR': (0.1273, 55), 'other_on_VIR': (0.144, 389), 'p': 0.6927}
+   robustness {}
+
+primary p: {'DD1': 0.6637, 'DD2': 0.0265, 'DD3': 0.0055, 'DD4': 0.9865, 'DD5': 0.0505, 'DD6': 0.2804, 'DD7': 0.2329, 'DD8': 0.2395, 'DD9': 0.1909, 'DD10': 0.6927}
+survive BH at 5%: []

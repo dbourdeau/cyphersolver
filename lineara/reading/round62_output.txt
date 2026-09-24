@@ -1,0 +1,24 @@
+== R1: A switch of commodity carries a descriptor word more often
+   primary {'switch': (0.1838, 136), 'continue': (0.1972, 71), 'p': 0.6482}
+   robustness {}
+== R2: More commodities, more descriptor entries
+   primary {'spearman': 0.345, 'p': 0.0008, 'tablets': 125}
+   robustness {}
+== R4: Single-commodity tablets repeat the commodity sign less
+   primary {'single': (0.3386, 79), 'multi': (0.5381, 61), 'p': 0.0005}
+   robustness {}
+== R5: KU-RO before a commodity sign on multi-commodity tablets
+   primary {'multi': (0.1429, 7), 'single': (0.1, 30), 'p': 0.5787}
+   robustness {}
+== R9: Amounts after descriptor words are multiples of 10 more often
+   primary {'desc': (0.3039, 102), 'name': (0.1746, 464), 'p': 0.004}
+   robustness {}
+== R11: Headings of multi-commodity tablets are terms more often
+   primary {'multi': (0.2222, 18), 'single': (0.2759, 29), 'p': 0.7871}
+   robustness {}
+== R13: Descriptor entries open a commodity block more often
+   primary {'desc_opens': (0.5694, 72), 'other_opens': (0.5787, 197), 'p': 0.6047}
+   robustness {}
+
+primary p: {'R1': 0.6482, 'R2': 0.0008, 'R4': 0.0005, 'R5': 0.5787, 'R9': 0.004, 'R11': 0.7871, 'R13': 0.6047}
+survive BH at 5%: ['R2', 'R4', 'R9']

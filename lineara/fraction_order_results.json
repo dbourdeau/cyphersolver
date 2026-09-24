@@ -1,0 +1,295 @@
+{
+  "method": "Relative size of Linear A fraction signs from their written order.\n\nUses sign identities only. The transliteratedWords field of the working corpus\nalready carries editorial fraction values (e.g. 1/2, 1/4); it is never read here.\nA cluster is the run of fraction signs written after one entry's integer, inside\none editorial entry (newline = entry boundary); clusters with damage are dropped.\n\nAssumption under test: compound fractions are written largest first, as in the\nLinear B and later Aegean metrological tradition. The script finds the ranking\nof signs that violates the fewest observed adjacent pairs (exact, by DP over\nsubsets), then asks how firmly each pairwise order is fixed.",
+  "clusters": 296,
+  "multi_sign_clusters": 42,
+  "sign_frequency_in_clusters": {
+    "J": 103,
+    "E": 55,
+    "D": 32,
+    "B": 28,
+    "JE": 24,
+    "K": 24,
+    "F": 16,
+    "H": 13,
+    "A": 13,
+    "L2": 12,
+    "DD": 6,
+    "W": 4,
+    "L": 4,
+    "X": 3,
+    "L4": 2,
+    "L6": 1,
+    "Y": 1
+  },
+  "adjacent_pairs": {
+    "E F": {
+      "count": 5,
+      "records": [
+        "HT8b",
+        "HT16",
+        "HT50a",
+        "HT123+124b",
+        "HTZd157+156"
+      ]
+    },
+    "K L2": {
+      "count": 4,
+      "records": [
+        "KH11",
+        "KH11",
+        "KH11",
+        "KH75"
+      ]
+    },
+    "J B": {
+      "count": 3,
+      "records": [
+        "HT129",
+        "KH5",
+        "KH6"
+      ]
+    },
+    "J L2": {
+      "count": 2,
+      "records": [
+        "HT123+124b",
+        "KH91"
+      ]
+    },
+    "JE B": {
+      "count": 1,
+      "records": [
+        "HT27a"
+      ]
+    },
+    "J K": {
+      "count": 1,
+      "records": [
+        "HT32"
+      ]
+    },
+    "E L2": {
+      "count": 1,
+      "records": [
+        "HT33"
+      ]
+    },
+    "H K": {
+      "count": 1,
+      "records": [
+        "HT34"
+      ]
+    },
+    "J F": {
+      "count": 1,
+      "records": [
+        "HT51b"
+      ]
+    },
+    "J H": {
+      "count": 1,
+      "records": [
+        "HT93a"
+      ]
+    },
+    "J A": {
+      "count": 1,
+      "records": [
+        "HT120"
+      ]
+    },
+    "E B": {
+      "count": 1,
+      "records": [
+        "KH9"
+      ]
+    },
+    "E L4": {
+      "count": 1,
+      "records": [
+        "KH26"
+      ]
+    },
+    "E L6": {
+      "count": 1,
+      "records": [
+        "KH76"
+      ]
+    },
+    "A B": {
+      "count": 1,
+      "records": [
+        "KH86"
+      ]
+    },
+    "F K": {
+      "count": 1,
+      "records": [
+        "PH1b"
+      ]
+    },
+    "L E": {
+      "count": 1,
+      "records": [
+        "PH7b"
+      ]
+    },
+    "E J": {
+      "count": 1,
+      "records": [
+        "ZA8"
+      ]
+    },
+    "L L2": {
+      "count": 1,
+      "records": [
+        "ZA11a"
+      ]
+    }
+  },
+  "repeated_sign_pairs": {
+    "D D": {
+      "count": 10,
+      "records": [
+        "HT41a",
+        "HT94a",
+        "HT94a",
+        "HT100",
+        "HT115a",
+        "HT115a",
+        "HT115a",
+        "ZA8",
+        "ZA18a",
+        "ZA18a"
+      ]
+    },
+    "B B": {
+      "count": 4,
+      "records": [
+        "KEWc2",
+        "KH86",
+        "ZA8",
+        "ZA18a"
+      ]
+    },
+    "J J": {
+      "count": 1,
+      "records": [
+        "PH9b"
+      ]
+    },
+    "L L": {
+      "count": 1,
+      "records": [
+        "PH10"
+      ]
+    }
+  },
+  "pairs_attested_both_ways": {},
+  "unopposed_precedences": [
+    "A>B (1)",
+    "E>B (1)",
+    "E>F (5)",
+    "E>J (1)",
+    "E>L2 (1)",
+    "E>L4 (1)",
+    "E>L6 (1)",
+    "F>K (1)",
+    "H>K (1)",
+    "J>A (1)",
+    "J>B (3)",
+    "J>F (1)",
+    "J>H (1)",
+    "J>K (1)",
+    "J>L2 (2)",
+    "JE>B (1)",
+    "K>L2 (4)",
+    "L>E (1)",
+    "L>L2 (1)"
+  ],
+  "min_violations": 0,
+  "total_pair_tokens": 29,
+  "optimal_orders_count": 5001,
+  "optimal_orders_sample": [
+    "JE > L > E > J > A > B > F > H > K > L2 > L4 > L6",
+    "JE > L > E > J > A > B > F > H > K > L2 > L6 > L4",
+    "JE > L > E > J > A > B > F > H > K > L4 > L2 > L6",
+    "JE > L > E > J > A > B > F > H > K > L4 > L6 > L2",
+    "JE > L > E > J > A > B > F > H > K > L6 > L2 > L4",
+    "JE > L > E > J > A > B > F > H > K > L6 > L4 > L2",
+    "JE > L > E > J > A > B > F > H > L4 > K > L2 > L6",
+    "JE > L > E > J > A > B > F > H > L4 > K > L6 > L2",
+    "JE > L > E > J > A > B > F > H > L4 > L6 > K > L2",
+    "JE > L > E > J > A > B > F > H > L6 > K > L2 > L4",
+    "JE > L > E > J > A > B > F > H > L6 > K > L4 > L2",
+    "JE > L > E > J > A > B > F > H > L6 > L4 > K > L2"
+  ],
+  "pairwise_share_of_optimal_orders": {
+    "A>B": 1.0,
+    "A>E": 0.0,
+    "A>F": 0.537,
+    "A>H": 0.621,
+    "A>J": 0.0,
+    "A>JE": 0.496,
+    "A>K": 0.834,
+    "A>L": 0.0,
+    "A>L2": 0.942,
+    "A>L4": 0.766,
+    "A>L6": 0.777,
+    "B>E": 0.0,
+    "B>F": 0.102,
+    "B>H": 0.111,
+    "B>J": 0.0,
+    "B>JE": 0.0,
+    "B>K": 0.348,
+    "B>L": 0.0,
+    "B>L2": 0.622,
+    "B>L4": 0.304,
+    "B>L6": 0.308,
+    "E>F": 1.0,
+    "E>H": 1.0,
+    "E>J": 1.0,
+    "E>JE": 0.568,
+    "E>K": 1.0,
+    "E>L": 0.0,
+    "E>L2": 1.0,
+    "E>L4": 1.0,
+    "E>L6": 1.0,
+    "F>H": 0.616,
+    "F>J": 0.0,
+    "F>JE": 0.411,
+    "F>K": 1.0,
+    "F>L": 0.0,
+    "F>L2": 1.0,
+    "F>L4": 0.732,
+    "F>L6": 0.732,
+    "H>J": 0.0,
+    "H>JE": 0.378,
+    "H>K": 1.0,
+    "H>L": 0.0,
+    "H>L2": 1.0,
+    "H>L4": 0.711,
+    "H>L6": 0.711,
+    "J>JE": 0.568,
+    "J>K": 1.0,
+    "J>L": 0.0,
+    "J>L2": 1.0,
+    "J>L4": 0.946,
+    "J>L6": 0.946,
+    "JE>K": 0.827,
+    "JE>L": 0.432,
+    "JE>L2": 0.94,
+    "JE>L4": 0.806,
+    "JE>L6": 0.817,
+    "K>L": 0.0,
+    "K>L2": 1.0,
+    "K>L4": 0.427,
+    "K>L6": 0.44,
+    "L>L2": 1.0,
+    "L>L4": 1.0,
+    "L>L6": 1.0,
+    "L2>L4": 0.214,
+    "L2>L6": 0.22,
+    "L4>L6": 0.51
+  }
+}

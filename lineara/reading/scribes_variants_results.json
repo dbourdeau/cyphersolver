@@ -1,0 +1,118 @@
+{
+ "method": "Do SigLA's sign variants go with the scribal hands assigned in the editions?\n\nSigLA records, for each attested sign, a variant code (e.g. AB 60 drawn two ways). The working corpus carries\nthe traditional scribe attributions (e.g. \"HT Scribe 9\"). If the attributions are sound and the variant codes\ncapture handwriting, a sign's variant should depend on the scribe. For each sign with 2+ variants and 2+\nattributed scribes, the association is measured by chi-square, and its significance by permuting scribe labels\namong that sign's attestations (5,000 runs), which keeps each sign's variant mix and each scribe's share.\n\nNote: SigLA's variant field is empty ('0') for about 90% of attestations; the coded variants are mostly\neditorial sub-types (VIN a/b/c, animal f/m, numbered L-series fractions), not handwriting allographs, so the\ntest can only reach the few signs that carry them.\n\nA second use: tablets with no attributed scribe (such as HT 34) are compared with each scribe's variant\npreferences (a simple naive-Bayes score over signs shared with that scribe) to suggest candidate hands. This is\na pointer for palaeographers, not an attribution.",
+ "signs_tested": 3,
+ "overall_chi2": 95.3,
+ "overall_null_mean": 88.1,
+ "overall_p": 0.3189,
+ "signs_p_below_0.05": 1,
+ "per_sign": {
+  "AB131": {
+   "attestations": 35,
+   "scribes": 17,
+   "variants": 4,
+   "chi2": 68.95,
+   "p": 0.0408
+  },
+  "AB028": {
+   "attestations": 66,
+   "scribes": 26,
+   "variants": 2,
+   "chi2": 18.9,
+   "p": 0.6911
+  },
+  "AB120": {
+   "attestations": 33,
+   "scribes": 14,
+   "variants": 2,
+   "chi2": 7.48,
+   "p": 0.7866
+  }
+ },
+ "candidate_hands_for_unattributed": {
+  "HT 34": [
+   [
+    -0.065,
+    "HT Scribe 9",
+    8
+   ],
+   [
+    -0.121,
+    "HT Scribe 2",
+    11
+   ],
+   [
+    -0.122,
+    "HT Scribe 7",
+    5
+   ]
+  ],
+  "HT 9a": [
+   [
+    -0.089,
+    "HT Scribe 8",
+    18
+   ],
+   [
+    -0.091,
+    "HT Scribe 9",
+    23
+   ],
+   [
+    -0.108,
+    "HT Scribe 5",
+    13
+   ]
+  ],
+  "HT 9b": [
+   [
+    -0.076,
+    "HT Scribe 9",
+    20
+   ],
+   [
+    -0.099,
+    "HT Scribe 8",
+    14
+   ],
+   [
+    -0.1,
+    "KH Scribe 1",
+    7
+   ]
+  ],
+  "HT 95a": [
+   [
+    -0.075,
+    "HT Scribe 9",
+    18
+   ],
+   [
+    -0.113,
+    "KH Scribe 1",
+    5
+   ],
+   [
+    -0.121,
+    "HT Scribe 8",
+    15
+   ]
+  ],
+  "HT 95b": [
+   [
+    -0.085,
+    "HT Scribe 9",
+    17
+   ],
+   [
+    -0.112,
+    "KH Scribe 1",
+    5
+   ],
+   [
+    -0.122,
+    "HT Scribe 8",
+    13
+   ]
+  ]
+ }
+}

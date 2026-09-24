@@ -1,0 +1,422 @@
+{
+ "method": "Disagreements between the two digital editions of Linear A, for reporting upstream.\n\nlineara.xyz (R. Hogan, after GORILA via G. Douros) and SigLA (E. Salgarella and S. Castellan) are compared\nword by word within each document that has one unique name in both (collate_sigla.py). For every SigLA\nmulti-sign word whose signs SigLA marks as confident and unerased, and which has no identical word in the\nsame lineara.xyz document, the closest lineara.xyz word (by sign-sequence similarity) is found and the\ndifference classified:\n\n  substitution   same length, one sign differs\n  indel          one sign more or less, the rest identical\n  segmentation   the SigLA word equals two adjacent lineara.xyz words joined, or the reverse\n  other          anything else (listed with the nearest candidate)\n  no counterpart no lineara.xyz word shares half its signs\n\nA disagreement is not an error in either edition: readings, ligatures and word division are editorial\nchoices. The list is a checklist for the editors, sorted with the most specific cases first. Corpus-level\nproblems found in earlier passes are appended.",
+ "counts": {
+  "substitution": 15,
+  "indel": 11,
+  "segmentation": 6,
+  "other": 9,
+  "no counterpart": 3
+ },
+ "word_disagreements": [
+  {
+   "document": "HT 115a",
+   "kind": "substitution",
+   "sigla_word_index": 0,
+   "sigla": "*47-NU-RA-PA3",
+   "lineara_xyz": "*47-NU-RA-JA",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/HT%20115a/"
+  },
+  {
+   "document": "HT 117a",
+   "kind": "substitution",
+   "sigla_word_index": 11,
+   "sigla": "TE-PA3-RE",
+   "lineara_xyz": "TE-JA-RE",
+   "lineara_xyz_word_position": 31,
+   "sigla_url": "https://sigla.phis.me/document/HT%20117a/"
+  },
+  {
+   "document": "HT 122a",
+   "kind": "substitution",
+   "sigla_word_index": 12,
+   "sigla": "PA-RI-NE",
+   "lineara_xyz": "PA-TA-NE",
+   "lineara_xyz_word_position": 37,
+   "sigla_url": "https://sigla.phis.me/document/HT%20122a/"
+  },
+  {
+   "document": "HT 128a",
+   "kind": "substitution",
+   "sigla_word_index": 1,
+   "sigla": "TU-RU-PA3-SE-ME",
+   "lineara_xyz": "TU-RU-NU-SE-ME",
+   "lineara_xyz_word_position": 5,
+   "sigla_url": "https://sigla.phis.me/document/HT%20128a/"
+  },
+  {
+   "document": "HT 28a",
+   "kind": "substitution",
+   "sigla_word_index": 2,
+   "sigla": "SA-AB072",
+   "lineara_xyz": "SA-RA2",
+   "lineara_xyz_word_position": 20,
+   "sigla_url": "https://sigla.phis.me/document/HT%2028a/"
+  },
+  {
+   "document": "HT 52a",
+   "kind": "substitution",
+   "sigla_word_index": 1,
+   "sigla": "DI-KA-TU",
+   "lineara_xyz": "DI-KA-KI",
+   "lineara_xyz_word_position": 7,
+   "sigla_url": "https://sigla.phis.me/document/HT%2052a/"
+  },
+  {
+   "document": "HT 95b",
+   "kind": "substitution",
+   "sigla_word_index": 2,
+   "sigla": "DA-ZA",
+   "lineara_xyz": "DA-ME",
+   "lineara_xyz_word_position": 10,
+   "sigla_url": "https://sigla.phis.me/document/HT%2095b/"
+  },
+  {
+   "document": "KN Zc 7",
+   "kind": "substitution",
+   "sigla_word_index": 0,
+   "sigla": "A-KA-NU-ZE-TI",
+   "lineara_xyz": "A-KA-NU-ZA-TI",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/KN%20Zc%207/"
+  },
+  {
+   "document": "PH Wa 32",
+   "kind": "substitution",
+   "sigla_word_index": 0,
+   "sigla": "SU-KI-RA-TA",
+   "lineara_xyz": "SU-KI-RI-TA",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/PH%20Wa%2032/"
+  },
+  {
+   "document": "TY 3b",
+   "kind": "substitution",
+   "sigla_word_index": 2,
+   "sigla": "PA-MI",
+   "lineara_xyz": "PA-OLE+MI",
+   "lineara_xyz_word_position": 18,
+   "sigla_url": "https://sigla.phis.me/document/TY%203b/"
+  },
+  {
+   "document": "ZA 15a",
+   "kind": "substitution",
+   "sigla_word_index": 4,
+   "sigla": "I-NU-MA-RE",
+   "lineara_xyz": "*28B-NU-MA-RE",
+   "lineara_xyz_word_position": 14,
+   "sigla_url": "https://sigla.phis.me/document/ZA%2015a/"
+  },
+  {
+   "document": "ZA 15a",
+   "kind": "substitution",
+   "sigla_word_index": 8,
+   "sigla": "A364-KE-MA-SE",
+   "lineara_xyz": "*363-KE-MA-SE",
+   "lineara_xyz_word_position": 27,
+   "sigla_url": "https://sigla.phis.me/document/ZA%2015a/"
+  },
+  {
+   "document": "ZA 4a",
+   "kind": "substitution",
+   "sigla_word_index": 6,
+   "sigla": "I-NU-MA-RE",
+   "lineara_xyz": "*28B-NU-MA-RE",
+   "lineara_xyz_word_position": 27,
+   "sigla_url": "https://sigla.phis.me/document/ZA%204a/"
+  },
+  {
+   "document": "ZA 5b",
+   "kind": "substitution",
+   "sigla_word_index": 0,
+   "sigla": "I-NU-MA-RE",
+   "lineara_xyz": "*28B-NU-MA-RE",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/ZA%205b/"
+  },
+  {
+   "document": "ZA 6b",
+   "kind": "substitution",
+   "sigla_word_index": 0,
+   "sigla": "I-KU-JU-TI-I",
+   "lineara_xyz": "I-KU-JU-TI-*28B",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/ZA%206b/"
+  },
+  {
+   "document": "HT 115a",
+   "kind": "indel",
+   "sigla_word_index": 5,
+   "sigla": "A-SE-JA-A718",
+   "lineara_xyz": "A-SE-JA",
+   "lineara_xyz_word_position": 20,
+   "sigla_url": "https://sigla.phis.me/document/HT%20115a/"
+  },
+  {
+   "document": "HT 11a",
+   "kind": "indel",
+   "sigla_word_index": 5,
+   "sigla": "AB100-I",
+   "lineara_xyz": "I",
+   "lineara_xyz_word_position": 16,
+   "sigla_url": "https://sigla.phis.me/document/HT%2011a/"
+  },
+  {
+   "document": "HT 128b",
+   "kind": "indel",
+   "sigla_word_index": 0,
+   "sigla": "AB100-*329",
+   "lineara_xyz": "*329",
+   "lineara_xyz_word_position": 3,
+   "sigla_url": "https://sigla.phis.me/document/HT%20128b/"
+  },
+  {
+   "document": "HT 17",
+   "kind": "indel",
+   "sigla_word_index": 0,
+   "sigla": "RA-*164-TI",
+   "lineara_xyz": "RA-TI",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/HT%2017/"
+  },
+  {
+   "document": "HT 26b",
+   "kind": "indel",
+   "sigla_word_index": 1,
+   "sigla": "PA-RO-NI",
+   "lineara_xyz": "RO-NI",
+   "lineara_xyz_word_position": 6,
+   "sigla_url": "https://sigla.phis.me/document/HT%2026b/"
+  },
+  {
+   "document": "HT 29",
+   "kind": "indel",
+   "sigla_word_index": 4,
+   "sigla": "A340-KI-TA",
+   "lineara_xyz": "KI-TA",
+   "lineara_xyz_word_position": 16,
+   "sigla_url": "https://sigla.phis.me/document/HT%2029/"
+  },
+  {
+   "document": "HT 54a",
+   "kind": "indel",
+   "sigla_word_index": 3,
+   "sigla": "MI-RA2",
+   "lineara_xyz": "KI-MI-RA2",
+   "lineara_xyz_word_position": 6,
+   "sigla_url": "https://sigla.phis.me/document/HT%2054a/"
+  },
+  {
+   "document": "HT 93a",
+   "kind": "indel",
+   "sigla_word_index": 6,
+   "sigla": "AB100-I",
+   "lineara_xyz": "I",
+   "lineara_xyz_word_position": 31,
+   "sigla_url": "https://sigla.phis.me/document/HT%2093a/"
+  },
+  {
+   "document": "KH 97a",
+   "kind": "indel",
+   "sigla_word_index": 1,
+   "sigla": "A-JA",
+   "lineara_xyz": "RE-A-JA",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/KH%2097a/"
+  },
+  {
+   "document": "KH Wc 2100",
+   "kind": "indel",
+   "sigla_word_index": 0,
+   "sigla": "AB100-A352-JA",
+   "lineara_xyz": "A352-JA",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/KH%20Wc%202100/"
+  },
+  {
+   "document": "ZA 15a",
+   "kind": "indel",
+   "sigla_word_index": 7,
+   "sigla": "MI-DA-E",
+   "lineara_xyz": "SA-MI-DA-E",
+   "lineara_xyz_word_position": 24,
+   "sigla_url": "https://sigla.phis.me/document/ZA%2015a/"
+  },
+  {
+   "document": "ARKH 2",
+   "kind": "segmentation",
+   "sigla_word_index": 1,
+   "sigla": "KU-RA-VIN",
+   "lineara_xyz": "KU-RA-VIN",
+   "lineara_xyz_word_position": 2,
+   "sigla_url": "https://sigla.phis.me/document/ARKH%202/"
+  },
+  {
+   "document": "HT 103",
+   "kind": "segmentation",
+   "sigla_word_index": 1,
+   "sigla": "PA3-DA-KU-SE-NE",
+   "lineara_xyz": "PA3-DA-KU-SE-NE",
+   "lineara_xyz_word_position": 5,
+   "sigla_url": "https://sigla.phis.me/document/HT%20103/"
+  },
+  {
+   "document": "HT 140",
+   "kind": "segmentation",
+   "sigla_word_index": 5,
+   "sigla": "KA-MA",
+   "lineara_xyz": "KA-MA",
+   "lineara_xyz_word_position": 21,
+   "sigla_url": "https://sigla.phis.me/document/HT%20140/"
+  },
+  {
+   "document": "HT 95a",
+   "kind": "segmentation",
+   "sigla_word_index": 5,
+   "sigla": "DI-DE-RU-QE-RA2-U",
+   "lineara_xyz": "DI-DE-RU-QE-RA2-U",
+   "lineara_xyz_word_position": 16,
+   "sigla_url": "https://sigla.phis.me/document/HT%2095a/"
+  },
+  {
+   "document": "HT 97a",
+   "kind": "segmentation",
+   "sigla_word_index": 3,
+   "sigla": "NA-TI-MA-DI",
+   "lineara_xyz": "NA-TI-MA-DI",
+   "lineara_xyz_word_position": 19,
+   "sigla_url": "https://sigla.phis.me/document/HT%2097a/"
+  },
+  {
+   "document": "HT 9a",
+   "kind": "segmentation",
+   "sigla_word_index": 7,
+   "sigla": "A-RU-KU-RO",
+   "lineara_xyz": "A-RU-KU-RO",
+   "lineara_xyz_word_position": 29,
+   "sigla_url": "https://sigla.phis.me/document/HT%209a/"
+  },
+  {
+   "document": "HT Zb 160",
+   "kind": "other",
+   "sigla_word_index": 0,
+   "sigla": "PA-TA-DA",
+   "lineara_xyz": "PA-TA-DA-DU-PU2-RE",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/HT%20Zb%20160/"
+  },
+  {
+   "document": "HT Zb 160",
+   "kind": "other",
+   "sigla_word_index": 1,
+   "sigla": "DU-PU2-RE",
+   "lineara_xyz": "PA-TA-DA-DU-PU2-RE",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/HT%20Zb%20160/"
+  },
+  {
+   "document": "KN Zc 6",
+   "kind": "other",
+   "sigla_word_index": 1,
+   "sigla": "A-DI-DA-KI-TI-PA-KU",
+   "lineara_xyz": "*34-TI-RI-A-DI-DA-KI-TI-PA-KU",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/KN%20Zc%206/"
+  },
+  {
+   "document": "PE 1",
+   "kind": "other",
+   "sigla_word_index": 0,
+   "sigla": "U-KA-RE",
+   "lineara_xyz": "U-KA-RE-A-SE-SI-NA",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/PE%201/"
+  },
+  {
+   "document": "PE 1",
+   "kind": "other",
+   "sigla_word_index": 1,
+   "sigla": "A-SE-SI-NA",
+   "lineara_xyz": "U-KA-RE-A-SE-SI-NA",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/PE%201/"
+  },
+  {
+   "document": "PE 2",
+   "kind": "other",
+   "sigla_word_index": 2,
+   "sigla": "SA-*305-MI",
+   "lineara_xyz": "RU-PI-*305-MI",
+   "lineara_xyz_word_position": 5,
+   "sigla_url": "https://sigla.phis.me/document/PE%202/"
+  },
+  {
+   "document": "PS Za 2",
+   "kind": "other",
+   "sigla_word_index": 4,
+   "sigla": "RE-I-KE",
+   "lineara_xyz": "RE-I-KE",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/PS%20Za%202/"
+  },
+  {
+   "document": "ZA Wc 2",
+   "kind": "other",
+   "sigla_word_index": 0,
+   "sigla": "A-TI-KA",
+   "lineara_xyz": "A-TI-KA-A-DU-KO-MI",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/ZA%20Wc%202/"
+  },
+  {
+   "document": "ZA Wc 2",
+   "kind": "other",
+   "sigla_word_index": 1,
+   "sigla": "A-DU-KO-MI",
+   "lineara_xyz": "A-TI-KA-A-DU-KO-MI",
+   "lineara_xyz_word_position": 0,
+   "sigla_url": "https://sigla.phis.me/document/ZA%20Wc%202/"
+  },
+  {
+   "document": "HT 129",
+   "kind": "no counterpart",
+   "sigla_word_index": 0,
+   "sigla": "TU-RU-TA2",
+   "lineara_xyz": null,
+   "lineara_xyz_word_position": null,
+   "sigla_url": "https://sigla.phis.me/document/HT%20129/"
+  },
+  {
+   "document": "KH 104",
+   "kind": "no counterpart",
+   "sigla_word_index": 1,
+   "sigla": "PA-*47",
+   "lineara_xyz": null,
+   "lineara_xyz_word_position": null,
+   "sigla_url": "https://sigla.phis.me/document/KH%20104/"
+  },
+  {
+   "document": "KN Zc 6",
+   "kind": "no counterpart",
+   "sigla_word_index": 0,
+   "sigla": "*34-TI-RI",
+   "lineara_xyz": null,
+   "lineara_xyz_word_position": null,
+   "sigla_url": "https://sigla.phis.me/document/KN%20Zc%206/"
+  }
+ ],
+ "corpus_level": [
+  {
+   "document": "HT34",
+   "issue": "KI-RO quantity given as 37; GORILA and Younger read 30 with a 7 erased (30 [[7]]). On the tablet 100 - 70 = 30 (SA+MU+KU 100, PA3 70, KI-RO 30)."
+  },
+  {
+   "document": "KH101",
+   "issue": "Two records share the name KH101; one has an empty transcription."
+  },
+  {
+   "document": "KNZg57b",
+   "issue": "Glyph array present but no transliteration array; KNZg58 is an empty record. Both are faces of the Anetaki ivory sceptre (Kanta et al., Ariadne 2025)."
+  }
+ ]
+}

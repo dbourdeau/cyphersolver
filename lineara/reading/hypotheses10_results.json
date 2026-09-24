@@ -1,0 +1,209 @@
+{
+ "method": "Ten further hypotheses on Linear A, each tested on data already in the repository against a null.\n\nH1  Vowel harmony: adjacent syllables within a Linear A word share their vowel more often than chance.\nH2  Initial a-: Linear A words begin with the bare vowel A more often than Linear B words do; and Knossos\n    personal names more often than Pylos personal names.\nH3  O deficit: Linear A uses o-syllables less than Linear B; Knossos names sit between Linear A and Pylos names.\nH4  Script adaptation: Linear A syllabograms that Linear B did not keep were rarer in Linear A words than the\n    ones it kept.\nH5  Which syllables make Knossos names look Minoan: final and first syllables over-represented in Knossos names\n    relative to Pylos names, and also frequent in Linear A names (per-syllable tests, Benjamini-Hochberg).\nH6  Where the Minoan-looking names are at Knossos: a Linear A-likeness score per Knossos name (log-likelihood\n    ratio of Linear A name syllables against Pylos name syllables) differs between Linear B tablet series.\nH7  The libation formula's prefix (JA-, A-, none) depends on the site.\nH8  Commodity specialisation: names recurring on several tablets keep the same commodity more than chance.\nH9  Transaction words (SA-RA2, A-DU, KA-PA, KI-RO, KU-RO) go with particular commodities more than chance.\nH10 Endings and commodities: a word's final sign depends on the commodity of its entry, within the same stem\n    family, beyond chance (agreement-like morphology).\n\nEvery test is a permutation test unless stated; the null is named in each result.",
+ "H1 vowel harmony": {
+  "Linear A": {
+   "same_vowel_rate": 0.2752,
+   "null_mean": 0.2816,
+   "p_ge": 0.7153
+  },
+  "Linear B": {
+   "same_vowel_rate": 0.2777,
+   "null_mean": 0.2266,
+   "p_ge": 0.001
+  }
+ },
+ "H2 initial a-": {
+  "Linear A vs Linear B": {
+   "share_la": 0.125,
+   "share_lb": 0.113,
+   "diff": 0.0122,
+   "p": 0.1804
+  },
+  "Knossos vs Pylos names": {
+   "share_kn": 0.162,
+   "share_py": 0.18,
+   "diff": -0.0182,
+   "p": 0.7836
+  }
+ },
+ "H3 o deficit": {
+  "o_share": {
+   "Linear A": 0.028,
+   "Knossos names": 0.27,
+   "Pylos names": 0.261,
+   "Linear B all": 0.264
+  },
+  "Linear B exceeds Linear A": {
+   "diff": 0.2361,
+   "p": 0.0005
+  },
+  "Pylos names exceed Knossos names": {
+   "diff": -0.0095,
+   "p": 0.7331
+  }
+ },
+ "H4 dropped signs rarer": {
+  "kept_signs": 62,
+  "dropped_signs": 40,
+  "median_freq_kept": 49,
+  "median_freq_dropped": 2,
+  "mean_diff": 55.41,
+  "p": 0.0002
+ },
+ "H5 syllables driving Knossos likeness": {
+  "last": [
+   {
+    "syllable": "so",
+    "kn_share": 0.068,
+    "py_share": 0.015,
+    "la_share": 0.0,
+    "p": 0.0005,
+    "bh_significant": true
+   },
+   {
+    "syllable": "zo",
+    "kn_share": 0.019,
+    "py_share": 0.0,
+    "la_share": 0.0,
+    "p": 0.0055,
+    "bh_significant": true
+   }
+  ],
+  "first": [
+   {
+    "syllable": "wi",
+    "kn_share": 0.028,
+    "py_share": 0.003,
+    "la_share": 0.008,
+    "p": 0.0025,
+    "bh_significant": false
+   },
+   {
+    "syllable": "qa",
+    "kn_share": 0.027,
+    "py_share": 0.003,
+    "la_share": 0.022,
+    "p": 0.0035,
+    "bh_significant": false
+   },
+   {
+    "syllable": "ku",
+    "kn_share": 0.049,
+    "py_share": 0.018,
+    "la_share": 0.056,
+    "p": 0.012,
+    "bh_significant": false
+   },
+   {
+    "syllable": "su",
+    "kn_share": 0.016,
+    "py_share": 0.0,
+    "la_share": 0.006,
+    "p": 0.014,
+    "bh_significant": false
+   },
+   {
+    "syllable": "i",
+    "kn_share": 0.031,
+    "py_share": 0.009,
+    "la_share": 0.036,
+    "p": 0.0165,
+    "bh_significant": false
+   }
+  ]
+ },
+ "H6 Knossos series": {
+  "names_scored": 637,
+  "series_mean_score (higher = more Linear A-like)": {
+   "A": -0.372,
+   "L": -0.379,
+   "F": -0.459,
+   "V": -0.506,
+   "S": -0.512,
+   "D": -0.514,
+   "X": -0.542,
+   "C": -0.543,
+   "B": -0.61,
+   "U": -0.654
+  },
+  "series_sizes": {
+   "D": 217,
+   "V": 74,
+   "L": 19,
+   "A": 113,
+   "S": 19,
+   "U": 20,
+   "C": 38,
+   "B": 48,
+   "F": 17,
+   "X": 24
+  },
+  "p_series_differ": 0.7171
+ },
+ "H7 formula prefix by site": {
+  "observations": {
+   "Iouktas:JA": 5,
+   "Iouktas:none": 3,
+   "Kophinas:none": 1,
+   "Palaikastro:JA": 2,
+   "Palaikastro:A": 2,
+   "Palaikastro:none": 4,
+   "Syme:none": 1,
+   "Troullos:JA": 1,
+   "Troullos:none": 1
+  },
+  "chi2": 6.56,
+  "p": 0.6353
+ },
+ "H8 commodity specialisation": {
+  "recurring_names": 22,
+  "same_commodity_every_time": 5,
+  "null_mean": 2.91,
+  "p": 0.1476
+ },
+ "H9 transaction words and commodities": {
+  "occurrences": 64,
+  "table": {
+   "A-DU": {
+    "VIR": 2,
+    "GRA": 3,
+    "CYP": 3,
+    "OLE": 1
+   },
+   "KA-PA": {
+    "VIR": 2,
+    "GRA": 1,
+    "OLE": 1
+   },
+   "KI-RO": {
+    "GRA": 2,
+    "CYP": 1,
+    "VIR": 1,
+    "OLIV": 5
+   },
+   "KU-RO": {
+    "VIN": 3,
+    "VIR": 13,
+    "GRA": 3,
+    "CYP": 2,
+    "OLIV": 2,
+    "CAP": 1
+   },
+   "SA-RA2": {
+    "GRA": 10,
+    "OLE": 2,
+    "CYP": 5,
+    "VIR": 1
+   }
+  },
+  "chi2": 53.27,
+  "p": 0.0036
+ },
+ "H10 endings and commodities": {
+  "families": 4,
+  "tokens": 9,
+  "cmi": 7.455,
+  "null_mean": 7.455,
+  "p": 1.0
+ }
+}

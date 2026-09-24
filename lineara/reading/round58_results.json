@@ -1,0 +1,173 @@
+{
+ "title": "words in the descriptor slot before a commodity sign",
+ "method": "Round 58: words standing directly before a commodity sign (the descriptor slot). Benjamini-Hochberg at 5% across\nthe eight.\n\nDS1 Words directly before a commodity sign are associated with that commodity (word x commodity, words 3+ times).\nDS2 Transaction terms directly before a commodity sign are associated with the commodity.\nDS3 Words directly before a commodity sign end in -JA more often than other words.\nDS4 Words before a commodity sign recur more (lower type/token ratio) than words before a number.\nDS5 Words before a commodity sign are attested at more sites than words before a number.\nDS6 The syllable of an oil ligature (OLE+X) matches the first sign of the word directly before it more than chance.\nDS7 Words directly before VIR differ in syllable profile from words directly before goods.\nDS8 Words ending in -JA stand before VIR more often than before goods.",
+ "primary_p": {
+  "DS1": 0.12543728135932034,
+  "DS2": 0.20039980009995004,
+  "DS3": 0.5152423788105946,
+  "DS4": 0.0009995002498750624,
+  "DS5": 0.0014992503748125937,
+  "DS6": 1.0,
+  "DS7": 0.05147426286856572,
+  "DS8": 1.0
+ },
+ "bh_supported": [
+  "DS4",
+  "DS5"
+ ],
+ "details": {
+  "DS1": {
+   "prediction": "Words before a commodity sign are associated with that commodity",
+   "primary": {
+    "chi2": 32.9,
+    "null": 24.9,
+    "p": 0.1254,
+    "pairs": 29
+   },
+   "robustness": {
+    "word -> commodity": [
+     "SA-RA2 -> GRA x8",
+     "SA-RA2 -> CYP x5",
+     "JE-DI -> OLE x2",
+     "KI-RE-TA-NA -> OLE x1",
+     "SA-RA2 -> OLE x1",
+     "JE-DI -> GRA x1",
+     "A-DU -> VIR x1",
+     "A-DU -> GRA x1",
+     "SA-RA2 -> VIR x1",
+     "KI-RE-TA-NA -> VIR x1",
+     "KU-RO -> GRA x1",
+     "KI-RE-TA-NA -> GRA x1",
+     "KU-RO -> OLIV x1",
+     "A-DU -> CYP x1",
+     "KU-RO -> CAP x1"
+    ]
+   },
+   "p": 0.12543728135932034
+  },
+  "DS2": {
+   "prediction": "Transaction terms before a commodity sign are associated with that commodity",
+   "primary": {
+    "chi2": 16.4,
+    "null": 12.8,
+    "p": 0.2004,
+    "pairs": 24
+   },
+   "robustness": {
+    "term -> commodity": [
+     "SA-RA2 -> GRA x8",
+     "SA-RA2 -> CYP x5",
+     "KA-PA -> VIR x2",
+     "KU-PA -> GRA x2",
+     "SA-RA2 -> OLE x1",
+     "A-DU -> VIR x1",
+     "A-DU -> GRA x1",
+     "SA-RA2 -> VIR x1",
+     "A-DU -> CYP x1",
+     "A-DU -> OLE x1"
+    ]
+   },
+   "p": 0.20039980009995004
+  },
+  "DS3": {
+   "prediction": "Pre-commodity words end in -JA more often",
+   "primary": {
+    "pre_commodity": [
+     0.0455,
+     110
+    ],
+    "other": [
+     0.0422,
+     545
+    ],
+    "p": 0.5152
+   },
+   "robustness": {},
+   "p": 0.5152423788105946
+  },
+  "DS4": {
+   "prediction": "Pre-commodity words recur more than pre-number words",
+   "primary": {
+    "type_token_pre_commodity": 0.78,
+    "pre_number_same_size": 0.867,
+    "p": 0.001
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "DS5": {
+   "prediction": "Pre-commodity words are attested at more sites",
+   "primary": {
+    "pre_commodity_mean_sites": [
+     1.1909,
+     110
+    ],
+    "pre_number": [
+     1.0544,
+     349
+    ],
+    "p": 0.0015
+   },
+   "robustness": {},
+   "p": 0.0014992503748125937
+  },
+  "DS6": {
+   "prediction": "Oil ligature syllable matches the first sign of the preceding word",
+   "primary": {
+    "matches": "0/19",
+    "null": 1.07,
+    "p": 1.0
+   },
+   "robustness": {
+    "pairs": [
+     "A... OLE+U",
+     "KI... OLE+U",
+     "JE... OLE+KI",
+     "QA... OLE+DI",
+     "SA... OLE+DI",
+     "I... OLE+DI",
+     "WI... OLE+DI",
+     "SA... OLE+KI",
+     "RE... OLE+KI",
+     "TE... OLE+MI",
+     "KU... OLE+U",
+     "KI... OLE+QE",
+     "JE... OLE+KI",
+     "A... OLE+TA",
+     "ZA... OLE+KI"
+    ]
+   },
+   "p": 1.0
+  },
+  "DS7": {
+   "prediction": "Words before VIR differ in syllable profile from words before goods",
+   "primary": {
+    "jsd": 0.3852,
+    "null": 0.3076,
+    "p": 0.0515,
+    "n": [
+     14,
+     79
+    ]
+   },
+   "robustness": {},
+   "p": 0.05147426286856572
+  },
+  "DS8": {
+   "prediction": "-JA words stand before VIR more often than before goods",
+   "primary": {
+    "JA_before_VIR": [
+     0.0,
+     5
+    ],
+    "other_before_VIR": [
+     0.1103,
+     136
+    ],
+    "p": 1.0
+   },
+   "robustness": {},
+   "p": 1.0
+  }
+ }
+}

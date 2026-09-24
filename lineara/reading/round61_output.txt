@@ -1,0 +1,33 @@
+== Q1: Term-headed tablets record larger amounts
+   primary {'term_headed': (1.9653, 22), 'other': (1.8682, 72), 'p': 0.3733}
+   robustness {}
+== Q2: Term-headed tablets carry fractions more often
+   primary {'term_headed': (0.4, 25), 'other': (0.3545, 110), 'p': 0.4198}
+   robustness {}
+== Q4: Sealing signs differ by site
+   primary {'chi2': 345.3, 'null': 13.3, 'p': 0.0005, 'sites': {'Haghia Triada': 596, 'Khania': 19}}
+   robustness {}
+== Q5: Sealing signs are oil-ligature syllables more often than tablet single signs
+   primary {'seal': (0.0254, 631), 'tablet': (0.2751, 429), 'p': 1.0}
+   robustness {}
+== Q7: Khania descriptor words occur at HT more often than Khania names
+   primary {'desc_at_HT': (0.1818, 22), 'name_at_HT': (0.1875, 16), 'p': 0.6932}
+   robustness {}
+== Q8: Tablets with a total carry name entries more often
+   primary {'with_total_name_share': (0.8184, 27), 'without': (0.6755, 85), 'p': 0.0435}
+   robustness {}
+== Q10: Descriptor entries have an amount of 1 less often
+   primary {'desc': (0.0882, 102), 'name': (0.3254, 464), 'p': 0.0005}
+   robustness {}
+== Q11: At HT, sealing signs are the common word-initial signs more often than tablet single signs
+   primary {'seal': (0.7299, 596), 'tablet': (0.4298, 242), 'p': 0.0005}
+   robustness {'top initials': ['A', 'DA', 'DI', 'I', 'KA', 'KI', 'KU', 'MA', 'PA', 'QA', 'QE', 'SA', 'SI', 'TA', 'U']}
+== Q12: At HT, roundels and nodules use different signs
+   primary {'chi2': 14.0, 'null': 14.5, 'p': 0.3963}
+   robustness {'supports': {'Nodule': 583, 'Sealing': 2, 'Roundel': 1}}
+== Q13: Tablets with descriptor entries are single-commodity more often
+   primary {'with_desc': (0.4615, 78), 'without': (0.8333, 90), 'p': 1.0}
+   robustness {}
+
+primary p: {'Q1': 0.3733, 'Q2': 0.4198, 'Q4': 0.0005, 'Q5': 1.0, 'Q7': 0.6932, 'Q8': 0.0435, 'Q10': 0.0005, 'Q11': 0.0005, 'Q12': 0.3963, 'Q13': 1.0}
+survive BH at 5%: ['Q10', 'Q11', 'Q4']

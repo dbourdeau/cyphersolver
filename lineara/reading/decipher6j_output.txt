@@ -1,0 +1,21 @@
+== J1 shared vocabulary and distance: Closer sites share more word types (Mantel, Spearman)
+   primary {'rho': -0.057, 'p': 0.3543, 'sites': ['Haghia Triada', 'Iouktas', 'Khania', 'Knossos', 'Malia', 'Petras', 'Phaistos', 'Palaikastro', 'Tylissos', 'Zakros']}
+   robustness {'pairs (km, jaccard)': [('Iouktas-Palaikastro', 104, 0.039), ('Malia-Petras', 58, 0.033), ('Iouktas-Malia', 34, 0.025), ('Haghia Triada-Zakros', 134, 0.018), ('Malia-Phaistos', 67, 0.015), ('Haghia Triada-Khania', 87, 0.013), ('Iouktas-Phaistos', 36, 0.013), ('Knossos-Petras', 88, 0.013), ('Palaikastro-Zakros', 11, 0.012), ('Haghia Triada-Phaistos', 2, 0.01)]}
+== J2 Tylissos and Haghia Triada: Tylissos shares more of its vocabulary with Haghia Triada than other sites do
+   primary {'tylissos_share_with_HT': 0.0, 'null_mean': 0.051, 'p': 1.0, 'tylissos_words': 19}
+   robustness {'share with HT by site': {'Phaistos': 0.098, 'Zakros': 0.088, 'Khania': 0.08, 'Arkhalkhori': 0.061, 'Iouktas': 0.038, 'Palaikastro': 0.019, 'Knossos': 0.017, 'Malia': 0.0, 'Petras': 0.0, 'Syme': 0.0, 'Thera': 0.0, 'Tylissos': 0.0}, 'shared words': []}
+== J3 richer vowels after R and T: Vowel entropy after R/T exceeds that after other consonants more than in Linear B
+   primary {'LA_rt_minus_other': 0.198, 'LB_rt_minus_other': 0.026, 'p': 0.0005}
+   robustness {'LA entropies (R/T, other)': (1.524, 1.327), 'LB entropies (R/T, other)': (1.525, 1.499)}
+== J4 regional unread signs: Unread signs are associated with sites beyond chance
+   primary {'chi2': 1454.0, 'null_mean': 224.2, 'p': 0.0005, 'tokens': 649, 'signs': 33}
+   robustness {'signs attested at one site only': {'*325': {'Haghia Triada': 3}, '*323': {'Haghia Triada': 5}, '*904': {'Haghia Triada': 6}, '*411': {'Khania': 15}, '*409': {'Khania': 4}, '*311': {'Khania': 9}, '*309': {'Tylissos': 6}}}
+== J5 regional formula variants: Formula word variants cluster by site
+   primary {'chi2_sum': 65.47, 'null_mean': 57.0, 'p': 0.1814, 'tokens': 50}
+   robustness {'variants by site': {'a-ta-i-*301': {'A-TA-I-*301-WA-JA @ Iouktas': 3, 'A-TA-I-*301-WA-JA @ Kophinas': 1, 'A-TA-I-*301-WA-E @ Palaikastro': 1, 'A-TA-I-*301-WA-JA @ Palaikastro': 1, 'A-TA-I-*301-WA-JA @ Syme': 5, 'A-TA-I-*301-WA-JA @ Troullos': 1, 'A-TA-I-*301-DE-KA @ Zakros': 1}, 'ja-sa-sa-ra': {'JA-SA-SA-RA-ME @ Iouktas': 3, 'A-SA-SA-RA-ME @ Iouktas': 1, 'JA-SA-SA-RA @ Iouktas': 1, 'JA-SA-SA-RA-MA @ Knossos': 1, 'A-SA-SA-RA @ Palaikastro': 1, 'JA-SA-SA-RA-ME @ Platanos': 1, 'JA-SA-SA-RA-ME @ Psykhro': 1, 'JA-SA-SA-RA-ME @ Troullos': 1, 'JA-SA-SA-RA-ME @ Palaikastro': 1}, 'u-na-ka-na': {'U-NA-KA-NA-SI @ Iouktas': 2, 'U-NA-RU-KA-NA-SI @ Iouktas': 1, 'U-NA-KA-NA-SI @ Kophinas': 1, 'U-NA-RU-KA-NA-TI @ Palaikastro': 1, 'U-NA-KA-NA-SI-OLE @ Syme': 1, 'U-NA-KA-NA @ Troullos': 1, 'U-NA-KA-NA-SI @ Palaikastro': 1}, 'i-pi-na-ma': {'I-PI-NA-MA @ Iouktas': 2, 'I-PI-NA-MA @ Kophinas': 1, 'I-PI-NA-MI-NA @ Palaikastro': 2, 'I-PI-NA-MA @ Troullos': 1, 'I-PI-NA-MA @ Vrysinas': 1, 'I-PI-NA-MA @ Apodoulou': 1}, 'si-ru-te': {'SI-RU-TE @ Iouktas': 3, 'SI-RU-TE @ Kophinas': 1, 'SI-RU-TE @ Syme': 1, 'SI-RU-TE @ Troullos': 1, 'SI-RU-TE @ Vrysinas': 1}, 'ta-na-ra': {'TA-NA-RA-TE-U-TI-NU @ Iouktas': 1}, 'a-di-ki-te': {'A-DI-KI-TE-TE @ Palaikastro': 1, 'A-DI-KI-TE @ Palaikastro': 1}}}
+== J6 amounts by site within commodity: Amounts differ by site within the same commodity
+   primary {'between_SS': 45.53, 'null_mean': 11.25, 'p': 0.0015, 'entries': 274}
+   robustness {'median-ish (geometric mean) by commodity and site': {'CYP @ Haghia Triada': 4.8, 'CYP @ Khania': 2.8, 'GRA @ Haghia Triada': 23.3, 'GRA @ Khania': 5.9, 'GRA @ Zakros': 4.6, 'HIDE @ Malia': 83.6, 'OLE @ Haghia Triada': 3.9, 'OLE @ Tylissos': 5.3, 'OLIV @ Haghia Triada': 6.3, 'VIN @ Haghia Triada': 5.1, 'VIN @ Zakros': 23.4, 'VIR @ Haghia Triada': 19.9, 'VIR @ Khania': 14.1}}
+
+primary p: {'J1': 0.3543, 'J2': 1.0, 'J3': 0.0005, 'J4': 0.0005, 'J5': 0.1814, 'J6': 0.0015}
+survive BH at 5%: ['J3', 'J4', 'J6']

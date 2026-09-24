@@ -1,0 +1,175 @@
+{
+ "title": "who wrote the commodity sign once, and where",
+ "method": "Round 64 (saturation loop 6): who wrote the commodity sign once, and where. BH at 5% across the seven.\n\"Sign share\" = share of a list's entries that carry a commodity sign (single-commodity lists of 3+ entries).\n\nU1 Khania lists have a higher sign share than Haghia Triada lists.\nU2 Sign share differs by scribe (Haghia Triada hands with 3+ lists).\nU3 Longer lists have a lower sign share (Spearman, predicted negative).\nU4 Knossos Linear B single-logogram lists write the logogram on fewer lines than Pylos lists.\nU5 Lists of men (VIR) have a lower sign share than lists of goods.\nU6 KU-RO total entries carry the commodity sign more often than ordinary later entries.\nU7 Lists with a lower sign share are more strictly largest-first (Spearman of sign share against tau, predicted\n   negative).",
+ "primary_p": {
+  "U1": 0.12443778110944528,
+  "U2": 0.33033483258370816,
+  "U3": 0.010797840431913617,
+  "U4": 0.0004997501249375312,
+  "U5": 0.0009995002498750624,
+  "U6": 0.8610694652673663,
+  "U7": 0.10117976404719056
+ },
+ "bh_supported": [
+  "U3",
+  "U4",
+  "U5"
+ ],
+ "details": {
+  "U1": {
+   "prediction": "Khania lists repeat the commodity sign more",
+   "primary": {
+    "Khania": [
+     0.4191,
+     15
+    ],
+    "HT": [
+     0.3314,
+     29
+    ],
+    "p": 0.1244
+   },
+   "robustness": {},
+   "p": 0.12443778110944528
+  },
+  "U2": {
+   "prediction": "Sign share differs by scribe",
+   "primary": {
+    "between_SS": 0.227,
+    "null": 0.191,
+    "p": 0.3303,
+    "lists": 16
+   },
+   "robustness": {},
+   "p": 0.33033483258370816
+  },
+  "U3": {
+   "prediction": "Longer lists write the sign on a smaller share of entries",
+   "primary": {
+    "spearman": -0.328,
+    "p": 0.0108,
+    "lists": 56
+   },
+   "robustness": {},
+   "p": 0.010797840431913617
+  },
+  "U4": {
+   "prediction": "Knossos writes the logogram on fewer lines than Pylos",
+   "primary": {
+    "KN": 0.718,
+    "PY": 0.892,
+    "p": 0.0005,
+    "n": [
+     73,
+     108
+    ]
+   },
+   "robustness": {
+    "within logogram": {
+     "PY_minus_KN": 0.169,
+     "p": 0.007,
+     "lists": 157,
+     "by logogram": {
+      "GRA": [
+       0.92,
+       0.96,
+       4,
+       37
+      ],
+      "VIR": [
+       0.82,
+       0.96,
+       18,
+       31
+      ],
+      "MUL": [
+       0.42,
+       1.0,
+       18,
+       2
+      ],
+      "OVIS": [
+       0.78,
+       0.84,
+       3,
+       7
+      ],
+      "AES": [
+       0.5,
+       0.66,
+       1,
+       19
+      ],
+      "TELA": [
+       1.0,
+       0.33,
+       5,
+       1
+      ],
+      "HORD": [
+       1.0,
+       0.98,
+       2,
+       3
+      ],
+      "BOS": [
+       1.0,
+       1.0,
+       3,
+       1
+      ],
+      "VIN": [
+       1.0,
+       0.75,
+       1,
+       1
+      ]
+     }
+    }
+   },
+   "p": 0.0004997501249375312
+  },
+  "U5": {
+   "prediction": "Lists of men write the sign on a smaller share",
+   "primary": {
+    "VIR": [
+     0.1328,
+     7
+    ],
+    "goods": [
+     0.4132,
+     49
+    ],
+    "p": 0.001
+   },
+   "robustness": {},
+   "p": 0.0009995002498750624
+  },
+  "U6": {
+   "prediction": "KU-RO entries carry the commodity sign more often than later entries",
+   "primary": {
+    "kuro_signed": [
+     0.2,
+     10
+    ],
+    "later_signed": [
+     0.3068,
+     264
+    ],
+    "p": 0.8611
+   },
+   "robustness": {},
+   "p": 0.8610694652673663
+  },
+  "U7": {
+   "prediction": "Lists that write the sign less often are more strictly largest-first",
+   "primary": {
+    "spearman": -0.225,
+    "p": 0.1012,
+    "lists": 32
+   },
+   "robustness": {},
+   "p": 0.10117976404719056
+  }
+ }
+}

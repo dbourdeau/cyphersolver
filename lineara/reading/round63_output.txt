@@ -1,0 +1,24 @@
+== S1: The commodity sign stands in the first entry more often
+   primary {'first_entry': (0.5455, 55), 'later_entries': (0.3125, 256), 'p': 0.001}
+   robustness {}
+== S2: Linear B writes the logogram on more entries than Linear A
+   primary {'LB_share': 0.822, 'LA_share': 0.383, 'p': 0.0005, 'n': [181, 55]}
+   robustness {}
+== S3: Sign-less entries match the preceding commodity's scale
+   primary {'closer_to_preceding': '50/98', 'sign_test_p': 0.4598}
+   robustness {}
+== S4: Commodity blocks run largest-first
+   primary {'mean_tau': 0.12, 'null': -0.001, 'p': 0.1184, 'blocks': 33}
+   robustness {}
+== S5: Sign-less entries are name entries more often
+   primary {'signless_name': (0.3134, 201), 'signed_name': (0.0, 110), 'p': 0.0005}
+   robustness {}
+== S7: Fraction entries carry the commodity sign more often
+   primary {'with_fraction': (0.5565, 239), 'without': (0.4852, 540), 'p': 0.04}
+   robustness {}
+== S8: Signed entries are larger than sign-less entries on the same tablet
+   primary {'signed_larger': '63/85', 'sign_test_p': 0.0}
+   robustness {}
+
+primary p: {'S1': 0.001, 'S2': 0.0005, 'S3': 0.4598, 'S4': 0.1184, 'S5': 0.0005, 'S7': 0.04, 'S8': 0.0}
+survive BH at 5%: ['S1', 'S2', 'S5', 'S8']

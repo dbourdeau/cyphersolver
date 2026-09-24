@@ -1,0 +1,33 @@
+== C1: Cyperus before figs
+   primary {'cyperus_first': '0/0', 'p': 1.0}
+   robustness {}
+== C2: Oil before figs
+   primary {'oil_first': '0/0', 'p': 1.0}
+   robustness {}
+== C3: Figs stand on grain tablets beyond chance
+   primary {'together': 36, 'null': 4.1, 'p': 0.0005}
+   robustness {}
+== C4: Fig entries carry sub-units more often than entries of men
+   primary {'FIC': (0.4419, 43), 'VIR': (0.0, 562), 'p': 0.0005}
+   robustness {}
+== C5: Grain amounts exceed oil amounts on tablets with both
+   primary {'grain_larger': '0/0', 'p': 1.0}
+   robustness {}
+== C6: The first commodity carries the largest amount
+   primary {'first_has_max': '152/222', 'null': 100.9, 'p': 0.0005}
+   robustness {}
+== C7: Wine is the last commodity
+   primary {'VIN_last': '2/9', 'null': 2.2, 'p': 0.7001}
+   robustness {}
+== C8: Oil and olives stand on the same tablets beyond chance
+   primary {'together': 0, 'null': 1.0, 'p': 1.0}
+   robustness {}
+== C9: Grain is the first commodity
+   primary {'GRA_first': '46/63', 'null': 25.6, 'p': 0.0005}
+   robustness {}
+== C10: Lists of goods (not men, not sheep) are largest-first
+   primary {'mean_tau': 0.122, 'null': -0.001, 'p': 0.019, 'lists': 77}
+   robustness {}
+
+primary p: {'C1': 1.0, 'C2': 1.0, 'C3': 0.0005, 'C4': 0.0005, 'C5': 1.0, 'C6': 0.0005, 'C7': 0.7001, 'C8': 1.0, 'C9': 0.0005, 'C10': 0.019}
+survive BH at 5%: ['C10', 'C3', 'C4', 'C6', 'C9']
