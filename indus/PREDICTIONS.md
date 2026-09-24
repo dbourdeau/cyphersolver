@@ -1171,3 +1171,32 @@ Counts and pots (F)
 - **R20** On count tokens with other signs, the other signs follow the 'N 700' pair more often than they precede it.
 - **R21** Mohenjo-daro tablets that are not count tokens carry an ending more often than Harappa ones,
   length-stratified.
+
+## Results of the twenty-first set (added after the test; `predict_test21.py`, `results/predict_test21.md`)
+
+Ten held, fifteen failed. Bare lines: 1,148 of 2,562 in A, 807 of 1,554 in B.
+
+**Partly names without the suffix.**
+- **R1 holds**: the last sign of a bare line is a head-class sign far more often than a random other sign (discordant
+  229 / 57 in A, 142 / 43 in B; p < 0.0001 both). **R4 holds**: their adjacent pairs are pairs found inside name
+  bodies (34% and 28%, p = 0.0001). **R3 holds**: a few are exact name bodies (13 of 1,148, 29 of 807; more than
+  shuffled order, p = 0.003, 0.0001). The head-final order of names holds without the suffix.
+- On seals the suffix-less lines have a profile: **R9** commoner outside Mohenjo-daro and Harappa (56% against 47%,
+  p = 0.002), **R11** commoner on seals with other animals (25% against 20%, p = 0.016), **R12** less often headed
+  (+5.9 points for names, p = 0.004). A less formal or regional way of writing names.
+- But not all: **R5 holds** (bare lines carry numerals more often than names, +18 and +21 points) and R19 fails the other
+  way (bare lines are longer than name bodies, 3.99 against 3.28 and 3.39 against 2.74). **R25 holds** (on tablets a
+  line can close with 400 or 90 and no ending: 18% of bare tablet lines against 7% on seals). R2 fails (in A the last
+  sign is no more often a name-final sign than a random sign), R6 fails (the part before a bare 400 is never a name
+  body: 0 of 143), R7 and R8 fail, R10 fails (suffix-less seal lines are not later), R18 fails, R22 fails (human figures
+  are last in only 42% of their bare-line tokens), R23 and R24 fail.
+
+**Word classes do not yet cover the vocabulary.** R13 fails narrowly (35 of 46 signs, 76%, keep their majority
+position between A and B; bar 80%); R14 fails (the classes from A cover 50.3% of B's tokens; bar 70%): 16 heads and 10
+attributes are too few classes for most of the vocabulary.
+
+**Pots.** **R16 holds** (pot values differ from tablet values: mostly 2 and 3, some 1 and 4; p = 0.010) and **R17 holds**
+(112 of 120 numbers-only pot lines are one numeral sign): pot marks are single numbers. R15 fails (pots do not use the
+short strokes more). R20 and R21 fail.
+
+Tally, counting parts: 73 held, 124 failed (197 registered).

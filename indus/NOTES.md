@@ -1060,6 +1060,16 @@ Held: Z2 (705 and 706 one sign in the closing formula), Z3 (740 heads are people
 technique in both excavations, differently), Z10 (heads fix endings on seals alone, 81%). Failed: Z1 (numbered-fish
 result holds in B only: withdrawn to suggestive), Z4, Z5 (90 too rare in M77), Z9. Tally 63 held, 109 failed.
 
+## Thirty-fifth pass (24 Sept 2026): how much can be read, and the lines that fit no template
+
+`readable.py` (descriptive): 53% of intact lines fit a template (name + ending 38%, count token 9%, numbers only 4%,
+closing formula 1%, count + other 1%); 43% of sign tokens have a known function (numbers 19%, endings 12%, heading,
+clitics, formula and measure signs 10%, human figures 3%); 57% are content signs known only by position. Registered
+(PREDICTIONS.md, twenty-first set, 17f2f40a7), tested (`predict_test21.py`): bare lines keep the head-final order (R1,
+R3, R4) and on seals are a less formal, regional form (R9, R11, R12), but many are records with numerals (R5), longer
+than names (R19 reverse); tablets close lines with 400 / 90 without an ending (R25); pot marks are single numbers
+(R16, R17); the head / attribute classes cover only half of B's tokens (R14 fails). Tally 73 held, 124 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
