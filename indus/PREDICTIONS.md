@@ -8424,3 +8424,26 @@ one picture), not of signs: no sign carries its picture into a new text. For tie
 meanings only at the level of a whole text, and the four copper-tablet anchor signs rest on the drawing of the sign,
 not on a pairing that generalises. No progress: streak 1. Prize tiers unchanged (V 0.008%, C 1 of 3, U 0). Tally,
 counting parts: 1315 held, 1216 failed (2531 registered).
+
+# Two-hundred-and-first set, registered before testing (24 September 2026): decipherment loop 26, phrase-level picture anchors; graphic against learned families (seven hypotheses)
+
+Metric after loop 25: S 4.685; prize tiers V 0.008%, C 1 of 3, U 0; streak 1. Set 200: single signs do not carry a
+tablet's picture into a new text. Two independent questions, tested together.
+
+(A) Phrases. Same tablets, motifs and text-group split as set 200. An unseen tablet is matched to the design text
+groups with which it shares the most adjacent sign pairs (at least one); its predicted picture is the majority motif
+of those groups. Null: motifs shuffled among design text groups, 1,000 times.
+
+- **PH1** Vault accuracy beats the null (p < 0.05), split seed 200.
+- **PH2** The same with a second split (seed 201).
+- **PH3** 30% or more of unseen tablets share a pair with some design text.
+
+(B) Graphic families. Set 194/199's family context helps S and random families do not. Is the gain graphic, or would
+any sensible sign classes do? Classes learned from contexts (k-means on left/right neighbour distributions of the
+training lines, k = 40, 80, 150, seed 0) replace the decade families in f4. A design run on the training lines' own
+split gave 4.725 for decade families against 4.736-4.747 for learned classes.
+
+- **GF1** On the fixed test, decade families give lower S than each of the three learned class sets.
+- **GF2** Trained on A and tested on B's new lines, decade families beat each learned set too.
+- **GF3** Families that are decade-block and learned-class pairs do no better than decade families alone (fixed test).
+- **GF4** Progress rule for the loop: PH1 and PH2 hold, or GF1 and GF2 hold.
