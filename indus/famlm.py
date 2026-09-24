@@ -95,3 +95,37 @@ def learned_classes(train, k, seed=0, iters=30):
             if (lab == j).any():
                 C[j] = X[lab == j].mean(0)
     return {g: 'c%d' % lab[idx[g]] for g in V}
+
+
+class M4(M3):
+    """M3 plus a second family component 'f4d' over another family map (set 208: Parpola-description families)."""
+    fam2 = staticmethod(lambda g: g)
+
+    def __init__(self, train):
+        super().__init__(train)
+        f2 = self.fam2
+        self.d4 = defaultdict(Counter)
+        self.d3 = defaultdict(Counter)
+        for t in train:
+            s = ['<s>', '<s>', '<s>'] + list(t) + ['</s>']
+            for i in range(3, len(s)):
+                self.d4[(f2(s[i - 3]), f2(s[i - 2]), f2(s[i - 1]))][s[i]] += 1
+                self.d3[(f2(s[i - 2]), f2(s[i - 1]))][s[i]] += 1
+
+    def rows(self, t, kn=False):
+        f2 = self.fam2
+        out = super().rows(t, kn)
+        s = ['<s>', '<s>', '<s>'] + [g if g in self.vocab else '<unk>' for g in t] + ['</s>']
+        for r, i in zip(out, range(3, len(s))):
+            w = s[i]
+            c3 = self.d3[(f2(s[i - 2]), f2(s[i - 1]))]
+            l3 = sum(c3.values()) / (sum(c3.values()) + 2)
+            p3 = l3 * c3[w] / max(1, sum(c3.values())) + (1 - l3) * r['fbi']
+            c4 = self.d4[(f2(s[i - 3]), f2(s[i - 2]), f2(s[i - 1]))]
+            l4 = sum(c4.values()) / (sum(c4.values()) + 2)
+            r['f4d'] = l4 * c4[w] / max(1, sum(c4.values())) + (1 - l4) * p3
+        return out
+
+
+def with_fam2(fn):
+    return type('M4f', (M4,), {'fam2': staticmethod(fn)})

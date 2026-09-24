@@ -8665,3 +8665,13 @@ Signs without a description keep their own id.
 - **DF3** The same A -> B.
 - **DF4** Description families beat learned classes (k = 80, as set 201) on the fixed test.
 - **DF5** Progress rule: DF2 and DF3 hold.
+
+## Results of the two-hundred-and-eighth set (added after the test; `predict_test208.py`, `results/predict_test208.md`, `descfam.py`, `famlm.M4`)
+
+Two held, three failed. Families defined independently, from the first shape noun of Parpola's CISI descriptions
+(stroke, person, leaf, fish, tree, jar ...), also improve S over the set-125 model (4.7124 -> 4.6966, gain 0.016),
+while random families of the same sizes gain at most 0.0004 (20 of 20; DF1), and they beat classes learned from
+contexts (4.6966 against 4.7141; DF4). So the graphic-family effect replicates with a definition not made here. They
+carry nothing beyond the decade families: added as a second component, S is unchanged (4.6842 -> 4.6845; DF2 fails)
+and A -> B worse (DF3 fails); the decade blocks already capture the variants (ICIT numbers variants next to their
+base sign). No progress by the rule: streak 3. Tally, counting parts: 1339 held, 1240 failed (2579 registered).

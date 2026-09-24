@@ -2450,6 +2450,12 @@ Registered first (6db5d3eab). Fitted freely per language, Linear B fits Sanskrit
 seed 2), 0 of 30 Ventris values recovered: free fitting cannot identify a language, so 'fits Dravidian / Sanskrit'
 claims are not evidence. Gate: 2 of 5 methods pass. No progress: streak 2. Tally 1337 held, 1237 failed.
 
+## Two-hundred-and-twenty-second pass (24 Sept 2026): decipherment loop 33, graphic families from Parpola's descriptions
+
+Registered first (b845098b9). Description-based families also improve S (gain 0.016; random families none, 20 of 20;
+beat learned classes): the graphic-family effect replicates with an independent definition. No gain beyond decade
+families. No progress: streak 3. Tally 1339 held, 1240 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
