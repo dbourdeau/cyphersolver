@@ -828,6 +828,31 @@ results `results/tamil_brahmi.md`, `results/predict_test.md`.
    the man sign after 740 106 times, text-initial 16. On the 1,203 objects the indus-website dump lacks (mostly short
    texts): same directions (fixed endings 1 of 162 against 4; fish 520 62% against 7%; 6 + fish ratio 3.8, p = 0.02).
 
+## Fifteenth pass (23 Sept 2026): restoration, periods, Gulf control, substrate words, paper draft
+
+Scripts: `icit_full.py` (reader for the fuller corpus: '/' separates lines, '000' is a missing sign, ']' left / '['
+right mark broken edges; replaces the rough parse of replicate_full.py), `restore.py`, `periods.py`, `gulf.py`,
+`substrate.py`; results `results/restore.md`, `periods.md`, `gulf.md`, `substrate.md`; `PAPER_DRAFT.md`.
+
+1. **Restoration against intact twins.** 157 broken single-line texts have an intact copy that fixes the lost sign
+   (93 broken at the reading start, 64 at the end; twins disagree in 105). Grammar-only prediction, with every text
+   containing the legible part withheld: commonest sign at the edge 6% top-1 (15% top-5); commonest neighbour 24% (55%);
+   neighbour at the line edge 27% (41%). Lost endings (740/520) restored in 10 of 13; lost heading signs 0 of 9.
+2. **Periods.** The records carry Mackay's periods (Mohenjo-daro: Early 48, Intermediate 425, Late 328) and HARP's (Harappa
+   3B 186, 3C 169, B/C 402). Earlier against later: headings and endings do not change (Jensen-Shannon z 0.0 at
+   Mohenjo-daro, 0.2 at Harappa); stroke numerals do (z 3.7, 3.2; short 3 falls from 14% to 4% of numerals at
+   Mohenjo-daro, long 4 from 29% to 11% at Harappa); name signs change at Harappa (z 1.9, p 0.04), not at Mohenjo-daro.
+   520 share of name lines 16% / 12% and 19% / 17%: stable. The grammar holds; counting practice moves.
+3. **The Gulf and West Asian texts as a foreign-language control** (20 intact objects). Indus signs (84% of tokens are
+   signs common at home), but endings on 11% of lines against 43% at home (Fisher p = 0.007), no heading (0 of 20), and
+   45% of sign pairs attested at home against 70% for home texts (22% if shuffled). The two West Asian texts that end in
+   740 are square seals (Kish, Gonur), the Indus type. The endings belong to the Indus language, not the script.
+4. **Witzel's substrate words.** No test possible: the sound-pattern model fails its positive control (Witzel's Dravidian
+   loans score -0.02, no more Dravidian-like than ordinary Sanskrit words) and his 'Meluhhan' is seven reconstructed
+   forms (-0.08). Recorded as the main alternative position (Para-Munda north, Meluhhan south).
+5. **Paper draft** for Lasry: `PAPER_DRAFT.md` (bench validated on Linear Elamite, structure, language, negative results,
+   what is new, limitations).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
