@@ -6465,3 +6465,21 @@ lexical signs more than numerals in count texts do (NP1: 47% against 50%). Readi
 words or word parts (number words used in names, or phonetic values) and against a purely arithmetic use inside
 names; it does not yet show a phonetic value, because lexicalised numeral compounds (as in Parpola's star names) give
 the same pattern. Tally, counting parts: 1085 held, 1020 failed (2105 registered).
+
+# Hundred-and-forty-fourth set, registered before testing (24 September 2026): does the ending slot change over time? (eight hypotheses)
+
+Name length and first/last-sign drift were tested across levels (K8, U23), the ending paradigm never. Levels: early /
+late as predict_test18.level (Mohenjo-daro Early + Intermediate against Late, field 9; Harappa 3B against 3C and Vats
+strata), F objects without copper tablets, one text per object and level (distinct (text, site, level)). Harappa fine
+periods from field 8 (3A = 1, 3B = 2, 3C and 3C-n = 3, 4 = 4, 5 = 5; 'Period 3', '3B/C' left out). Differences are
+late minus early, with the level labels permuted within site (10,000 draws, two-sided). p < 0.05.
+
+- **TM1** The share of 520 among names ending 740 or 520 changes between early and late.
+- **TM2** The share of closer-genre texts changes.
+- **TM3** The share of names with 400 or 90 after the ending changes.
+- **TM4** The share of 740 names followed by a stacking closer changes.
+- **TM5** Heads with 3+ names in both levels keep their majority ending (740 or 520) in 90%+ (a stable lexical class).
+- **TM6** Heads first seen in the late level take 740 at the same rate as older heads (two-sided p >= 0.05 holds:
+  the paradigm is productive).
+- **TM7** At Harappa, the 520 share has a monotone trend over the fine periods (Spearman with period, permutation).
+- **TM8** The share of count-genre texts changes.
