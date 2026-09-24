@@ -2203,6 +2203,14 @@ short 2 + fish still far exceeds 6 + fish. Harappa count tokens vary by excavati
 copper-tablet text (0 of 198); matched sealings are shorter; foreign lines use rare signs 3x. Left-to-right texts are
 the same texts in reading order, not reversals. Tally 1194 held, 1124 failed.
 
+## Hundred-and-eighty-fifth pass (24 Sept 2026): name structure across candidate languages
+
+Registered first (7e627464b). New name lists (`lang_names.py`): Ur III owners (ORACC forms), Old Tamil (Sangam poets),
+Sanskrit (Monier-Williams 'N. of a man'), Linear B persons; Prakrit not obtainable cleanly (EIAD tags names only in
+headers). Sumerian names close the first element (R 1.41), Indus the last (0.71): Sumerian excluded again on name
+structure. Tamil and Sanskrit not separated: the Sangam list's honorific -ār and long names make it a poor comparator.
+Tally 1200 held, 1128 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

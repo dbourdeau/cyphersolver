@@ -7428,3 +7428,20 @@ Williams gives stems of all periods; aksharas and syllables are not Indus signs.
 - **LN8** The Indus length distribution is closer to Old Tamil than to Ur III sign lengths.
 - **LN9** Sanskrit compound names (2+ members) close their last member: member-level R < 1 (-datta, -deva, -mitra ...).
 - **LN10** The Indus R is within a factor of 2 of the Sanskrit member-level R (Indus signs behave like name members).
+
+## Results of the hundred-and-seventy-first set (added after the test; `predict_test171.py`, `results/predict_test171.md`)
+
+Six held, four failed. **Sumerian names close their first element, Indus names their last** (LN1: Ur III R 1.41, 107
+first types against 151 last at 400 names; LN2: Indus R 0.71, 146 against 103): a second, independent exclusion of a
+Sumerian-type name structure, measured on name lists rather than on word order. Linear B persons close the last
+element too (LN5: 0.84), and Sanskrit compound names are close to even at the member level (LN9: 0.97); the Indus R
+is within a factor of 2 of the Sanskrit member R (LN10: 0.73), consistent with Indus signs behaving like name
+members. **Dravidian and Indo-Aryan are not separated.** The Old Tamil list (Sangam poets) closes its last element
+far more (LN3: R 0.20) because nearly every name ends in the honorific -ār, and its names are long (6.2 aksharas),
+so the Indus R is nearer the Sanskrit syllable R (LN6 fails: 0.43 against 1.27 on a log scale), and the Indus length
+distribution is nearer Sanskrit syllables (LN7 fails: JSD 0.08 against 0.25) and even Ur III signs (LN8 fails) than
+Old Tamil. Sanskrit names at the syllable level do not close their last syllable (LN4: 1.09), because Monier-Williams
+gives stems without case endings. Reading: the name lists confirm the head-final, closed-last name structure that
+separates Indus from Sumerian, but the available Dravidian list (literary names with an honorific) is not comparable
+enough to rank Dravidian against Indo-Aryan; see the follow-up set. Tally, counting parts: 1200 held, 1128 failed
+(2328 registered).
