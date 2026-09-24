@@ -5197,3 +5197,32 @@ BC19 in B: 72%), medial in 61% (BC12; F' 64%, BC20), and not more numerical (BC1
 post-name 400: they follow almost disjoint sets of signs (BC15: Jaccard 0.09); bare 400 follows many signs (BC14: top
 four 156, 90, 158, 400 cover 22%), a name head in 45% (BC5), and is on tablets in only half its lines (BC6). 595 does not
 follow 95 (BC3) and is not a copper word (BC16: 12%). Tally, counting parts: 804 held, 863 failed (1667 registered).
+
+# Hundred-and-tenth set, registered before testing (24 September 2026): sets 108-109 on held-out data (twenty hypotheses)
+
+Findings of the hundred-and-eighth and hundred-and-ninth sets (found on A + B distinct lines) re-tested on F without
+copper (F', distinct lines), the smaller sites (OS) and B. Genres and definitions as in those sets. 10,000-draw
+permutations; p < 0.05.
+
+Genres as frames
+- **RG1** F': bare lines share more sign types with counts than with names (GS7).
+- **RG2** F': the last sign tells the genre more than the first (GS10).
+- **RG3** F': the first sign tells the genre (GS9).
+- **RG4** B: GS10 holds.
+- **RG5** B: GS7 holds.
+- **RG6** OS: GS10 holds.
+- **RG7** OS: under 30% of signs with 5+ tokens are genre-specific (shared vocabulary).
+- **RG8** F': the genre sets the length (GS8).
+- **RG9** OS: GS8 holds.
+The closers
+- **RG10** F': 30%+ of 615 tokens stand next to 615 (BC4).
+- **RG11** F': the signs before 368 and before 740 overlap at Jaccard 0.3 or less (BC8).
+- **RG12** F': 10%+ of 368 tokens follow a heading sign (BC9).
+- **RG13** F': 90%+ of numerals before 390 are worth 3+ (BC10).
+- **RG14** F': the signs before bare 400 and before '740 400' overlap at 0.3 or less (BC15).
+- **RG15** B: BC8 holds.
+- **RG16** B: BC15 holds.
+- **RG17** B: BC10 holds.
+- **RG18** B: BC9 holds.
+- **RG19** OS: 70%+ of 390 lines are on seals (BC11).
+- **RG20** OS: 30%+ of 615 tokens stand next to 615 (BC4).
