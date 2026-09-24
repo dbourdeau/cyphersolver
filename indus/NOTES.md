@@ -1845,6 +1845,13 @@ Registered first (hundred-and-twenty-third set, 35326462e), tested (`predict_tes
 cross-entropy by 0.5 bits per sign, genre by 0.2, and position alone beats the bigram (5.43 against 6.38). The cities'
 sequences differ only slightly (0.14 bits). BM4 (direction) was ill-posed for a bigram. Tally 967 held, 939 failed.
 
+## Hundred-and-thirty-eighth pass (24 Sept 2026): one combined model
+
+Registered first (hundred-and-twenty-fourth set, 2b9d6a5b8), tested (`predict_test124.py`). Benchmark model: position
+in the line + two-sign context = 4.92 bits per sign held-out (5.69 on new F lines; unigram 8.21, bigram 6.38). Role
+classes and genre add nothing once position and context are included: the structural rules are largely positional and
+local. Tally 972 held, 944 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

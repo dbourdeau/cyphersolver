@@ -5784,3 +5784,16 @@ held-out cross-entropy in bits per sign (previous best single component: positio
 - **CM8** Dropping the position unigram costs 0.2+ bits.
 - **CM9** Dropping the two-sign-context model costs 0.1+ bits.
 - **CM10** Relative position in five buckets beats the four-way position class by 0.1+ bits (as a unigram).
+
+## Results of the hundred-and-twenty-fourth set (added after the test; `predict_test124.py`, `results/predict_test124.md`)
+
+Five held, five failed. The best held-out model of the sign sequence is simple: position in the line (first, middle,
+next-to-last, last) plus two signs of context, weighted 0.62 and 0.37, gives 4.92 bits per sign (CM1: 0.51 better than
+the best single part; CM2: under 5), against 8.21 for the unigram and 6.38 for the bigram. Both parts matter (CM8:
+dropping position costs 0.34; CM9: dropping context costs 0.50), and the same model gains 1.2 bits over the bigram on B
+(CM6: 5.90 to 4.73). Once position and context are in, the role classes, genre and a position-aware bigram add nothing
+(CM7: 0.00; CM3: 0.004; CM4: 0.000): what the structural rules capture is mostly where a sign stands and what stands
+next to it. Finer position buckets do worse (CM10), and the model is 5.69 bits, not under 5.5, on the 413 F lines that
+A + B lack (CM5), about 0.8 bits worse than on its own held-out lines. Benchmark: 4.9 bits per sign in-sample held-out,
+5.7 on new lines; any model claiming more structure should beat these. Tally, counting parts: 972 held, 944 failed
+(1916 registered).
