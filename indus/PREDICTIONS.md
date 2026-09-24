@@ -3064,3 +3064,14 @@ and stackable. Tally, counting parts: 335 held, 412 failed (747 registered).
 - **HD8** Headed name lines take 740 more often than unheaded name lines.
 - **HD9** 90%+ of 817, 820 and 861 tokens are line-first.
 - **HD10** 80%+ of numerals directly after a heading are of the short kind.
+
+## Results of the fifty-ninth set (added after the test; `predict_test59.py`, `results/predict_test59.md`)
+
+Six held, four failed. 515 headed lines (861 229, 820 158, 817 128). The heading is nearly always followed by a stroke
+numeral, almost always 2 (HD4: 83% have a numeral second; HD10: 98% of those short, 402 of 429 are 2), so 'heading + 2'
+is one unit. It is a seal feature (HD5: +14.4 points over tablets, length-stratified) and optional: 31% of headed name
+bodies are also attested without it (HD7). The heading sign depends weakly on genre (HD1: 0.015 bits, p = 0.004) but
+not on the city (HD6) or the ending (HD8: 740 in 84% against 86%). HD3 (headed name lines longer: 5.6 against 4.4)
+holds only because the heading unit adds two signs; the bodies themselves are about as long. HD2 is confounded the same
+way (the 2 after the heading counts as a numeral: 89% against 98%). 25% of 817/820/861 tokens are not line-first (HD9
+fails), so these signs also occur inside lines. Tally, counting parts: 341 held, 416 failed (757 registered).

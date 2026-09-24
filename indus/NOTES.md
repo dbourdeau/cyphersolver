@@ -1360,6 +1360,12 @@ Registered first (fifty-eighth set, d51359e6a), tested (`predict_test58.py`). Th
 stackable (different fish adjacent, no fixed order), often counted, chosen by both neighbours and slightly by city;
 fish-final bodies take either ending. Tally 335 held, 412 failed.
 
+## Seventy-third pass (24 Sept 2026): the headings (loop 3, round 3)
+
+Registered first (fifty-ninth set, 7b97bf3db), tested (`predict_test59.py`). 'Heading + 2' is one optional seal-line
+unit, independent of city and ending; the three heading signs also occur inside lines (25% of tokens). HD2/HD3 are
+confounded by the 2 being a numeral. Tally 341 held, 416 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
