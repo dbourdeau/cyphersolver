@@ -45,3 +45,4 @@ The 'streak' column counts consecutive loops without progress.
 | 11 | 186 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the jar turn the ending into a name element, B replicates (progress; streak 0) |
 | 12 | 187 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | doubled signs stand at text edges (A and B); brackets change nothing (progress; streak 0) |
 | 13 | 188 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | extra F lines make S slightly worse (4.719); no progress (streak 1) |
+| 14 | 189 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the U: plain 700 counted/final, 705/706 heads the closing formula; inner-stroke device generalises (progress; streak 0) |
