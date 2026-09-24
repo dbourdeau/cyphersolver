@@ -1014,6 +1014,16 @@ more than heads; 740 only 6-7%, N1): the two endings differ, 520 looks like a co
 reverse); N3 (741 as oblique form: A yes, B no); N6 (tablets do not carry seal names); N7, N8, N5, N10. Tally 18
 held, 44 failed.
 
+## Thirtieth pass (24 Sept 2026): twenty-five hypotheses on the leads
+
+Registered first (PREDICTIONS.md, sixteenth set, fb621fc96), tested (`predict_test16.py`), checked (`robust16.py`).
+**The Linear B control (P25) holds: the rare-word freedom effect is general, so N4 is withdrawn as evidence of sound
+spelling** (with P1, P2, P22, P23). **520 is preceded almost only by the long 3 (33-520), a fixed unit; N2 corrected.**
+New structure: tablet variants differ at numerals (29%) far more than seal-name variants (13%) (P11, P12); heads
+steadier than attributes over time at Harappa (P13); fixed attribute slots (P14); human heads rarely counted (P10);
+head + ending and ending + 90/400/151 are never split by a line break (P17, P18: 1-3% against 23-25%). Tally 31 held,
+56 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

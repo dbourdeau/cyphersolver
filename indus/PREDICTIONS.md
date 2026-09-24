@@ -726,3 +726,56 @@ Units the scribes kept together (M, Fisher on break rates)
 - **P19** Inside names, the gap before the head is broken more often than the other name-internal gaps (attribute and
   head are separate words).
 - **P20** The gap after the heading is broken more often than other gaps (the heading is a separate word).
+
+## Results of the sixteenth set (added after the test; `predict_test16.py`, `results/predict_test16.md`; checks after the test `robust16.py`, `results/robust16.md`)
+
+Thirteen held, twelve failed. The control decides how the sound-sign lead is read.
+
+**Sound-sign lead: withdrawn.**
+- **P25 holds (control).** In Linear B, whose signs are all syllabic, syllabograms of words found once are freer than
+  those of recurring words (+0.023, p = 0.0001; 2,440 and 1,305 word types). As registered, the rare-name effect (N4)
+  is a general frequency effect of any corpus and no evidence of sound spelling. N4's phonetic reading is withdrawn.
+- P1 (rare-name enrichment of individual signs agrees between A and B, rho 0.58), P2 (the candidate set C is enriched
+  in B's once-only names, p = 0.036), P22 (once-only names contain fewer bound pairs, +12 points both samples) and P23
+  (fewer end in a head-class sign, +12 and +15 points) hold; all four are what a frequency effect predicts (a name used
+  once is built from less common pieces), so none is claimed as phonetic evidence.
+- P3 fails (C is not enriched in West Asian texts, 0.030, p = 0.27), P4 fails (C not position-free), P5 fails (once-only
+  names do not repeat signs more), P24 fails (C not simpler). The free-sign idea has no support left beyond the
+  foreign-text effect (Y2, RF2), which P3 does not reproduce with C.
+
+**520: counted, but in one fixed way.**
+- **P6 holds**: numerals before 520 are long-stroke 92% (A) and 94% (B), against 33% and 51% before other signs. Check:
+  they are almost all the long 3 (sign 33: 45 of 52 in A, 12 of 16 in B). 33-520 is one fixed expression (a bound pair
+  of the seventh set). The fifteenth set's 'N2: 520 is counted like a noun' is corrected to: 520 is preceded by one
+  numeral form, the long three, as a fixed unit; it is not freely counted.
+- P7 fails (520 lines not commoner on tablets and sealings, the reverse), P8 fails (A 8% against 9%; B 18% against 9%),
+  P9 fails (A +2.9, B +12.2 points).
+
+**Numerals and variation.**
+- **P11 holds**: distinct Harappa tablet texts that differ at one position differ at a numeral in 29% of 467 pairs,
+  more than a random position (p = 0.0001).
+- **P12 holds**: seal names that differ at one position differ at a numeral in 13% of 1,994 pairs, against 29% for
+  tablets (p < 0.0001). Tablets vary in their numbers, seal names in their words: tablets look like records of counts.
+- **P10 holds**: human heads are preceded by a numeral less often than other heads (13.0% against 18.8%, p = 0.001).
+- P15 fails (a numeral stands first among the attributes in only 68 of 281 and 15 of 60; the reverse of the
+  prediction: numerals stand next to the head, as R1 found).
+
+**Order and stability inside names.**
+- **P13 holds**: at Harappa the heads are steadier than the attributes between earlier and later levels (JSD first
+  minus last +0.125, p = 0.032). With K8 at Mohenjo-daro (+0.206, p = 0.052), heads are the stable part of names.
+- **P14 holds**: in three-sign names the two attribute slots hold different signs (MI 0.520 and 0.556 bits, p = 0.0001
+  both): names have fixed slots, not free strings of modifiers.
+- P21 fails (attributes are not freer than heads).
+
+**Units kept together across line breaks (M77 multi-line texts, both line orders).**
+- **P17 holds**: an ending and the sign after it (740 / 520 + 90 / 400 / 151) are split 1 of 87 and 0 of 86 times
+  against 23% of other gaps.
+- **P18 holds**: a head and its ending are split 1.2% and 3.9% against 25%. Check: without numeral + ending gaps,
+  1.3% and 2.5%; 740 alone 1.4% and 2.8% (p < 0.0001). Scribes treated the name and its ending as one unit, as they
+  would a word and its suffix; with N1 (740 counted far less than heads) it leans toward 740 being bound.
+- P16 fails (numeral + fish: 12.2% as listed, p = 0.09; 2.7% reversed): short of the bar in one order.
+- P19 fails (the gap between attributes and head is not a preferred break) and P20 fails (nor is the gap after the
+  heading): the scribes did not break lines at word boundaries inside names, only avoided breaking the bound units.
+
+Tally, counting parts: 31 held, 56 failed (87 registered). Of the thirteen that held here, four (P1, P2, P22, P23)
+are explained by the frequency effect P25 shows, and one (P25) is the control that shows it.
