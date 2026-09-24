@@ -1,6 +1,8 @@
 # MTC3 115: Bigram Substitution, Part 2 (Modi and Esslinger, October 2025)
 
-Status: solved 24 Sept 2026 (answer ready, not yet submitted; Daniel submits).
+Status: in progress. Key recovered 24 Sept 2026, but the site REJECTED it on the first submission (24 Sept, 1 of 15
+attempts used). The pasted text matched `private/ANSWER_key_676.txt` token for token. Cause not yet known; see
+"Submission" below.
 
 Level II. Before this: 10 human solvers, no LLM solve.
 
@@ -44,9 +46,21 @@ Model: Claude Opus 5.5 (Claude Code), with the tools in `src/`.
 
 The plaintext ends "...EMERGE AND EXERT E" plus the tool's X pad (odd length), so the text is cut mid-sentence.
 
+## Submission
+
+24 Sept 2026: Daniel pasted the 676-token key (space-separated, AA..ZZ order, identical to the tool's
+`kpa --outkey` output); the site said the solution was incorrect. Checks made afterwards:
+- the submitted text equals the key file (676/676 tokens);
+- the key equals what `2-gram-subst.py kpa --outkey` derives from the recovered plaintext;
+- all 84 single-occurrence ciphertext bigrams reread: none admits another same-length reading;
+- the last ciphertext bigram (XB) also decodes as EX in "EXIST", "CONTEXT" and "EXPLAINING".
+Open suspicion: the plaintext stops mid-word ("...EMERGE AND EXERT EX"), so the reference key may come from a longer
+plaintext than the one encrypted here. Next step: ask the MysteryTwister team how the reference was built. Do not spend
+attempts on guessed variants.
+
 ## Remaining gaps
 
-None for the challenge: every ciphertext bigram is mapped. 21 of the 223 key entries rest on a single occurrence
+The site's verdict (above). In the text itself every ciphertext bigram is mapped. 21 of the 223 key entries rest on a single occurrence
 confirmed only by the sense of the text (e.g. MONK, BUSINESSMAN, "A FOCUS ON BEING VERSUS DOING").
 
 ## Escalation
