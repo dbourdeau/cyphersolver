@@ -2375,6 +2375,13 @@ but its strict coding drops a few candidate languages (89A 'no dominant order', 
 progress rule fails: streak 1. Within the compatible fifth, Dravidian and Indo-Aryan are not separated. Tally 1295 held,
 1207 failed.
 
+## Two-hundred-and-tenth pass (24 Sept 2026): decipherment loop 21, the L bench repaired; the class signal by place and time
+
+Registered first (6dfecbcf1). Tolerant profile: 81.3% of WALS genera and 68.3% of Grambank families excluded, both
+candidates kept; new metric component L world. The fish/520 signal holds at Mohenjo-daro, Harappa and the other sites,
+early and late: no regional or period break. The class split (fish vs the rest) fits Dravidian and Sanskrit-type gender
+alike. Progress: streak 0. Tally 1303 held, 1207 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

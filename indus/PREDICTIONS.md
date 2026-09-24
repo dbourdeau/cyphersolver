@@ -8285,3 +8285,20 @@ Period 3C and after.
 - **LT7** The same in both early and late Harappa (the direction holds in both; one-sided p < 0.05 in at least one).
 - **LT8** Progress rule: LT1, LT2 and LT3 hold (L world enters the metric), or LT4-LT7 all hold (a new finding that
   replicates across independent subsets).
+
+## Results of the hundred-and-ninety-sixth set (added after the test; `predict_test196.py`, `results/predict_test196.md`, `lbench.py`)
+
+All eight held (the heading says seven; there are eight). With the tolerant profile fixed before looking (86A/87A/89A
+'no dominant order' compatible, 51A dropped, majority rule per group), the Dravidian and Indic genera are compatible in
+WALS (LT1), Dravidian and Indo-European (all 16 Indo-Aryan languages) in Grambank, where 68.3% of families are excluded
+(LT2), and 81.3% of 422 WALS genera are excluded (LT3). Among the compatible genera are Turkic, Mongolic, Tungusic,
+Japanese, Korean, Burushaski, Munda, Kartvelian, Uralic branches and Quechuan: the typology narrows the field to a
+fifth of the world but cannot choose inside it. The fish-name / 520 signal holds separately at Mohenjo-daro (52%
+against 2%), Harappa (48% against 2%) and the other sites together (36% against 7%; LT4-LT6), and in both early and
+late Harappa in direction (LT7; early has only 9 identified-head names, late p < 0.0001). No break by place or time:
+one grammatical system across the Indus world, as far as this signal can show. Note for L: human-, tool- and
+plant-headed names all take 740 and only fish heads lean to 520 (set 178), so the class split is 'fish/star names
+against the rest'. That fits a Dravidian rational/non-rational reading (a tool-headed name such as 'bowman' names a
+person) and equally a Sanskrit-type gender reading (star names are mostly feminine there); it does not separate the
+two. Progress: streak 0; L world enters the metric at 81.3% (WALS) / 68.3% (Grambank). Tally, counting parts: 1303
+held, 1207 failed (2510 registered).

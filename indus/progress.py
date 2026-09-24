@@ -138,22 +138,24 @@ def main(label='measure'):
     p = len(VALUES)
     ga, gb = grammar_coverage(DL)
     ma, mb = grammar_margin(DL)
+    from lbench import world_tolerant
+    lw, lg = world_tolerant()  # set 196 (LT1-LT3): world language groups whose typology the Indus profile excludes
     open_f = [f for f, s in FAMILIES.items() if s == 'open']
     print('S  structure: %.3f bits/sign held out (unigram %.3f; %.1f%% explained)' % (bits, h1, 100 * (h1 - bits) / h1))
     print('R  roles: %.1f%% of %d tokens (%s)' % (100 * r, tot, ', '.join('%s %d' % kv for kv in by.most_common())))
     print('M  meanings: %.1f%% of tokens anchored; M+ with depiction classes confirmed by use %.1f%%' % (100 * m, 100 * mp))
     print('G  grammar: %.1f%% of distinct lines parsed (B check %.1f%%); G margin over shuffled lines %.1f points (B %.1f)' % (100 * ga, 100 * gb, 100 * ma, 100 * mb))
     print('P  sound values: %d' % p)
-    print('L  language: %d families open (%s)' % (len(open_f), ', '.join(open_f)))
+    print('L  language: %d families open (%s); L world: %.1f%% of WALS genera excluded (Grambank %.1f%% of families)' % (len(open_f), ', '.join(open_f), 100 * lw, 100 * lg))
     row = '\t'.join([label, '%.3f' % bits, '%.1f' % (100 * (h1 - bits) / h1), '%.1f' % (100 * r), '%.1f' % (100 * m), str(p),
-                     str(len(open_f)), '%.1f' % (100 * mp), '%.1f' % (100 * ga), '%.1f' % (100 * gb), '%.1f' % (100 * ma), '%.1f' % (100 * mb)])
+                     str(len(open_f)), '%.1f' % (100 * mp), '%.1f' % (100 * ga), '%.1f' % (100 * gb), '%.1f' % (100 * ma), '%.1f' % (100 * mb), '%.1f' % (100 * lw), '%.1f' % (100 * lg)])
     log = os.path.join(HERE, 'results', 'progress_log.tsv')
-    head = 'label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\tMplus_pct\tG_pct\tG_B_pct\tGmargin_A\tGmargin_B'
+    head = 'label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\tMplus_pct\tG_pct\tG_B_pct\tGmargin_A\tGmargin_B\tLworld_WALS\tLworld_GB'
     old = open(log, encoding='utf-8').read().splitlines()[1:] if os.path.exists(log) else []
     with open(log, 'w', encoding='utf-8') as f:
         f.write(head + '\n')
         for x in old:
-            f.write(x + '\t' * max(0, 11 - x.count('\t')) + '\n')
+            f.write(x + '\t' * max(0, 13 - x.count('\t')) + '\n')
         f.write(row + '\n')
     return bits, r, m, p, len(open_f)
 

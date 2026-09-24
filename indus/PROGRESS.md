@@ -16,6 +16,7 @@ Decipherment happens in stages, so the metric is a vector, one component per sta
 | G grammar | share of distinct lines (progress.py's A lines; B check on the M77 additions) that `grammar.py` parses in full, heads learned from A only (from loop 16). From loop 18 the component is the **G margin**: share of real lines parsed by the stricter grammar G2 minus share of the same lines parsed after shuffling their signs (A; B check) | higher |
 | P sound values | signs with a sound value that passed a registered held-out test (the prize) | higher |
 | L language | candidate language families not yet excluded by registered tests | lower |
+| L world | share of the world's language groups whose typology the Indus profile excludes (tolerant profile, majority rule; WALS genera, Grambank families as check; from loop 21, `lbench.py`) | higher |
 
 A component moves only when a registered set supports the change. S and R are the tractable parts; M needs outside
 anchors; P and L need outside evidence, and a real decipherment would show first as P > 0 with S falling (a reading
@@ -53,3 +54,4 @@ The 'streak' column counts consecutive loops without progress.
 | 18 | 193 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | G becomes a margin over shuffled lines; stricter grammar G2 raises it A 43.3 to 46.2, B 30.7 to 34.7 (F 17.0 to 17.3) (progress; streak 0) |
 | 19 | 194 | 4.697 (25.2%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | first S gain: context seen by graphic family (decade block) 4.712 to 4.697, replicates A to B; random families give nothing (progress; streak 0) |
 | 20 | 195 | 4.697 (25.2%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | L bench: the Indus profile excludes 81% of WALS genera, 56% of Grambank families; strict coding drops some candidate languages, so the component is not adopted (no progress; streak 1) |
+| 21 | 196 | 4.697 (25.2%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | L world enters: the Indus profile excludes 81.3% of WALS genera (Grambank 68.3% of families), both candidates kept; fish/520 class signal holds at Mohenjo-daro, Harappa and elsewhere (progress; streak 0) |
