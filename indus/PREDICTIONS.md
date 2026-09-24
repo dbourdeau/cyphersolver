@@ -4948,3 +4948,31 @@ Reading: a second family of seal inscriptions at Mohenjo-daro, 'name-like body +
 with each closer taking its own heads. This partly restores the fifty-fifth set's alternative-closer idea (withdrawn in
 the fifty-seventh set, which required the remainder to be an attested name body): the bodies before closers are
 name-like in their heads but mostly not attested names. Tally, counting parts: 737 held, 810 failed (1547 registered).
+
+# Hundred-and-fourth set, registered before testing (24 September 2026): line templates (twenty hypotheses)
+
+Each distinct line becomes a role string: H = heading sign (817, 820, 861) in first place; N = a numeral run; E = 740
+or 520; S = 400, 90 or 151 directly after E; C = a closer (hundred-and-third set); F = a fish sign; X = any other sign,
+with runs of X merged into one X. 'Template' = that string. Distinct lines (A + B) unless stated; F without copper for
+object, site and period tests. 10,000-draw permutations; p < 0.05.
+
+- **TP1** The ten commonest templates cover 50%+ of distinct lines.
+- **TP2** The template depends on seal against tablet (MI, F).
+- **TP3** The template depends on the city (MI, F).
+- **TP4** A's and B's five commonest templates share 4+.
+- **TP5** 'XE' is the commonest template on seals (F).
+- **TP6** 'NX' is the commonest template on tablets (F).
+- **TP7** 90%+ of templates starting with H continue with N.
+- **TP8** In 90%+ of lines containing E, E is followed only by S or the line end.
+- **TP9** 50%+ of lines with C have the template 'XC'.
+- **TP10** Template entropy is higher at Mohenjo-daro than at Harappa (label permutation).
+- **TP11** Template entropy is higher on seals than on tablets.
+- **TP12** Copper lines use fewer distinct templates per line than seal lines.
+- **TP13** In 'NX' lines the numeral value is 2-4 in 70%+.
+- **TP14** Under 2% of lines hold both E and C.
+- **TP15** Under 10% of lines hold two or more N segments.
+- **TP16** At Harappa the template does not depend on the period (MI p >= 0.05).
+- **TP17** 80%+ of graffiti lines have no E.
+- **TP18** F without copper: TP1 holds.
+- **TP19** B: TP1 holds.
+- **TP20** 70%+ of F lines with a template starting 'HN' and containing E are from Mohenjo-daro.
