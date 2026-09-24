@@ -7755,3 +7755,23 @@ names and fail on B's (Fairservis p = 0.04 then 0.54; Yajnadevam p = 0.03 then 0
 indus-website corpus from which A derives, so an A-only pass followed by a B failure is the signature of fitting, not of
 true values. SP7 fails; P stays 0. The test is kept as a tool: any proposed sound key must pass it on both samples.
 Tally, counting parts: 1236 held, 1158 failed (2394 registered).
+
+# Hundred-and-eightieth set, registered before testing (24 September 2026): decipherment loop 5, which language's words for the pictures make substitutes sound alike? (seven hypotheses)
+
+Metric after loop 4: S 4.712, R 81.1%, M 16.6% (M+ 41.4%), P 0, L 4. Loop 4 validated a sound test on Linear B
+(substitutable signs sound alike under the true values). Loop 5 applies the rebus principle: in a logo-syllabic script
+a sign's value is the word for what it depicts, in the true language. Depiction keys: for each sign Fairservis
+identifies ('sure'/'likely'), the concept is the first word of his identification after articles and number words
+(automatic, no hand fixes; 'combination' entries skipped); each language's value is the first glossary entry whose
+sense begins with that concept: Dravidian = DEDR entry meanings (dedr_entry_v11), Sanskrit = Monier-Williams
+(bench.lexicon_mw), Sumerian = ePSD2 (sux_gloss.tsv, guide word and senses). Substitution pairs, similarity and
+shuffle test as set 179, run on A-names and B-names separately.
+
+- **DK1** The Dravidian depiction key passes on A and on B (p < 0.05 each, 10+ keyed pairs each).
+- **DK2** The Sanskrit depiction key passes on A and on B.
+- **DK3** The Sumerian depiction key passes on A and on B.
+- **DK4** On all pairs pooled, the Dravidian key's excess similarity (observed minus shuffled mean) is larger than the
+  Sanskrit key's.
+- **DK5** The Dravidian key's excess is larger than the Sumerian key's.
+- **DK6** At least one language passes on both samples (a P candidate; P itself needs a second, independent test).
+- **DK7** The three keys cover 10+ substitution pairs each (the test has power).
