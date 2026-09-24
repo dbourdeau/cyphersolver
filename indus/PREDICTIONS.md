@@ -3987,3 +3987,33 @@ against 3.9), not preceded by numerals or fish more (KC9), and not commoner at H
 selected by the head (KC13: p = 0.0001; KC19 in B: p = 0.0002; KC14: p = 0.006) and by different heads (KC15: Jaccard
 0.13, p = 0.0001), so they are two distinct suffix-like signs, each tied to its own set of heads. '740 90' is not a seal,
 Mohenjo-daro or long-name form (KC16-KC18). Tally, counting parts: 516 held, 591 failed (1107 registered).
+
+# Eighty-second set, registered before testing (24 September 2026): counted 520 and the suffixes 90, 400, 151 (twenty hypotheses)
+
+Distinct lines (A + B) and distinct (site, type, line) in F unless stated. 'N 520' = 520 directly after a numeral.
+'Suffix line' = a name line whose ending is followed by 90, 400 or 151; heads from name_of. Categories from cat_of.
+10,000-draw permutations; p < 0.05.
+
+520 after a number
+- **PS1** 'N 520' is line-final in 80%+ of its tokens.
+- **PS2** Two values cover 80%+ of the numbers before 520.
+- **PS3** Lines with 'N 520' are on tablets more often than other lines with 520 (F).
+- **PS4** The sign before the numeral in 'N 520' is a fish in 30%+.
+- **PS5** 520 tokens follow a numeral more often than 740 tokens do.
+The suffixes
+- **PS6** 90 follows 740 or 520 in 90%+ of its tokens.
+- **PS7** 400 follows 740 or 520 in under 50% of its tokens.
+- **PS8** 151 follows 740 or 520 in under 50% of its tokens.
+- **PS9** Among heads with a suffix line, 80%+ take only one of 90 and 400.
+- **PS10** '740 151' heads overlap with '740 90' heads more than with '740 400' heads (Jaccard).
+- **PS11** Among 740 lines, whether 90 follows depends on the head's category (MI).
+- **PS12** 90-line heads are counted less often than 400-line heads (distinct names).
+- **PS13** 400 suffix lines are on tablets more often than 90 suffix lines (F).
+- **PS14** 400 suffix lines are at Harappa more often than 90 suffix lines (F).
+- **PS15** 90-line bodies hold a fish less often than 400-line bodies.
+- **PS16** Heads with a suffix line are among the 20 commonest heads more often than other heads.
+- **PS17** 90-suffix names are one-off (one object) more often than 400-suffix names (F).
+- **PS18** '520 400' heads are fish in 50%+.
+Replication
+- **PS19** B: PS6 holds.
+- **PS20** B: 90 heads and 400 heads overlap less than when suffixes are shuffled (Jaccard).
