@@ -8734,3 +8734,15 @@ All four held. Absolute discounting of the family 4-gram (D = 0.5) lowers S on t
 (gain 0.0096; DK1) and A -> B from 5.2226 to 5.2162 (DK2); SIGN top-1 does not fall (37.8% -> 38.2%; DK3). f4k
 enters the model; the metric run gives S 4.675, SIGN top-1 38.3%, top-5 60.6%. Progress: streak 0. Tally, counting
 parts: 1344 held, 1244 failed (2588 registered).
+
+# Two-hundred-and-twelfth set, registered before testing (24 September 2026): decipherment loop 37, lighter smoothing of the count components (four hypotheses)
+
+Metric after loop 36: S 4.635 (trik + pos + end + f4k), SIGN top-1 39.6% (test run); streak 0. The position, end
+and family-bigram components are add-one smoothed over the whole sign vocabulary (~560), heavy for contexts seen a few
+dozen times. Add-k with k = 0.3 (chosen on the training lines' own split: 4.6772 -> 4.6643; k 0.1 4.6697, 0.03
+4.6846, 0.01 4.6948) replaces add-one in those components (M2.sm).
+
+- **SM1** S on the fixed test improves by 0.005 bits or more.
+- **SM2** The same A -> B.
+- **SM3** SIGN top-1 on the fixed test does not fall.
+- **SM4** Progress rule: SM1 and SM2 hold (k = 0.3 adopted).
