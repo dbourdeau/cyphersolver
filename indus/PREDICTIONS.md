@@ -1275,3 +1275,39 @@ the method fails its Indus check and the groups are not positional word classes.
 unread and, in any validated sense, unclassified.
 
 Tally, counting parts: 81 held, 131 failed (212 registered).
+
+# Twenty-third set, registered before testing (24 September 2026): ligatures, and a validated classification
+
+Two leads. (1) Fairservis 1992 identifies some signs as combinations of two others (keys/fairservis1992_raw.tsv):
+154 = 151 + 740 (A-8 = A-7 + J-5), 156 = 151 + 520 (A-9 = A-7 + H-5), 555 = 550 + 482 (Q-14 = I-11 + K-1), 742 =
+740 + 2 (Q-17 = J-5 + P-2), 702 = 700 + 2 (Q-15 = J-1 + P-2), 703 = 700 + 3 (Q-16 = J-1 + O-3). If a ligature is
+written for the sequence of its parts, its left neighbours should resemble those of one part and its right neighbours
+those of the other. (2) The twenty-second set's clustering failed its Indus check (Q1): a variant must pass that check
+before its classes are used.
+
+Conventions as the twenty-second set (A, B, F; 10,000-draw permutations or random draws; p < 0.05).
+
+Ligatures (one hypothesis each; tested in A, and in B where the ligature and both parts have 10+ tokens, both
+required; a ligature with under 10 tokens in A is not testable and fails)
+- 'Left' and 'right' vectors = counts of the preceding and following sign (line start and end included). Sequence
+  score of ligature L with parts X, Y = mean of cos(left(L), left(X)) and cos(right(L), right(Y)), taking the better of
+  the two orders (X first or Y first). Null: the same score with X and Y replaced by random signs from X's and Y's
+  token-count quintiles (10,000 draws).
+- **G1** 154 behaves as 151 + 740. **G2** 156 as 151 + 520. **G3** 555 as 550 + 482. **G4** 742 as 740 + 2. **G5** 702
+  as 700 + 2. **G6** 703 as 700 + 3.
+- **G7 Sequence, not modification.** Across the six, the sequence score exceeds the 'modified base' score (mean of
+  cos(left(L), left(X)) and cos(right(L), right(X)), X the pictorial base: 151, 151, 550, 740, 700, 700) for at least 5
+  of the testable ligatures.
+- **G8 The pot-with-strokes signs are counts.** Tablets carrying 702 or 703 are 1-2 signs long more often than other
+  tablets without a count token (F, Fisher).
+
+A classification that passes its own check
+- **C1** Of four variants of the twenty-second set's method, tried in this fixed order, at least one passes the numeral
+  check (numeral pairs share a cluster at 3+ times the rate of all pairs) on A: V1 left contexts only; V2 right
+  contexts only; V3 left + right contexts plus each sign's share of first / inside / last positions in A's names (the
+  three shares scaled by 0.5 and appended after the SVD step); V4 left + right as before with k = 12. The first variant
+  to pass is the chosen one; C2-C5 use it and fail if none passes.
+- **C2** The chosen clusters predict B contexts (as Q3).
+- **C3** The chosen clusters are associated with Fairservis picture categories (as Q6).
+- **C4** Human-figure signs share a chosen cluster more often than random categorised pairs (as Q7).
+- **C5** The chosen clusters differ in position in B's names (as Q4).
