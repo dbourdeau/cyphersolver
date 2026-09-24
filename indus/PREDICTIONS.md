@@ -4729,3 +4729,31 @@ is rare (9 tokens, none on tablets: XM15 fails) but when it occurs 407 is in the
 (XM20: 25% against 10%). Not supported: moulded pictures all at Harappa (XM9: 77%), short moulded labels (XM11: 44%),
 longer 'Mult' texts (XM12), 845 off copper at Mohenjo-daro (XM19: 6 of 9). Tally, counting parts: 683 held, 764
 failed (1447 registered).
+
+# Ninety-ninth set, registered before testing (24 September 2026): position specialists (twenty hypotheses)
+
+Distinct lines (A + B) of 2+ signs, copper lines excluded where F is used. For each sign with 10+ tokens: 'initial
+share' = share of its tokens that are line-first, 'final share' = line-last. 'Initial specialist' = initial share
+0.7+; 'final specialist' = final share 0.7+; 'medial' otherwise. Numerals excluded from the specialist sets.
+10,000-draw permutations; p < 0.05.
+
+- **PZ1** Specialists (initial or final) are 20%+ of signs with 10+ tokens.
+- **PZ2** Final specialists outnumber initial specialists.
+- **PZ3** Initial specialists have more distinct right neighbours per token than medial signs (rank test).
+- **PZ4** Final specialists have more distinct left neighbours per token than medial signs (rank test).
+- **PZ5** Final specialists are name heads or endings in 70%+.
+- **PZ6** Initial specialists include the three heading signs.
+- **PZ7** Initial specialists are followed by a numeral more often than medial signs are (tokens).
+- **PZ8** Final specialists are preceded by a numeral more often than medial signs are.
+- **PZ9** Specialist status agrees between A and B for 80%+ of signs with 10+ tokens in each.
+- **PZ10** Specialist status agrees between Mohenjo-daro and Harappa (F) for 70%+ of signs with 10+ tokens at each.
+- **PZ11** Final specialists are on tablets more often than medial signs (F tokens).
+- **PZ12** Initial specialists are on seals more often than medial signs (F tokens).
+- **PZ13** Final specialists are commoner signs than medial signs (rank test on tokens).
+- **PZ14** Initial specialists are rarer than medial signs (rank test).
+- **PZ15** Lines with an initial specialist are longer than lines without (rank test).
+- **PZ16** Lines ending in a final specialist are shorter than lines ending otherwise (rank test).
+- **PZ17** The final specialists' final share is higher in formulas than in name lines (pooled tokens).
+- **PZ18** 50%+ of final specialists are in the 520 class or are post-name signs (400, 90, 151) or the endings.
+- **PZ19** Medial signs are the fish and numeral-adjacent signs: fish are medial in 80%+ of fish types with 10+ tokens.
+- **PZ20** B: PZ2 holds.
