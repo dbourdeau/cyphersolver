@@ -2350,6 +2350,12 @@ Registered first (45f06436b). `grammar.py` parses 80.5% of A lines and 71.6% of 
 Heading and formula rules add no coverage; bare names, post-ending markers and closers carry it. Unparsed = longer lines
 with counts after names, '740 1' runs, 'X 400'. Progress: streak 0. Tally 1281 held, 1196 failed.
 
+## Two-hundred-and-sixth pass (24 Sept 2026): decipherment loop 17, rules for what the grammar leaves
+
+Registered first (d26ac139b). The five new rules raise G (A 88.5%, B 80.9%, F 66.3%) but parse shuffled lines even more
+readily; the margin over shuffled B lines falls (30.7 to 25.5). SEQ is permissive; SHORT, ONE, U specific. Post-hoc: the
+bare-name rule is barely specific; G should be the margin. No progress: streak 1. Tally 1284 held, 1200 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

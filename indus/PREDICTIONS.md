@@ -8150,3 +8150,17 @@ should parse real lines far more often than shuffled ones.
 - **SQ6** In SEQ lines, the first unit ends with 740 / 520 / a closer / a caged sign more often than the same position
   in shuffled lines that SEQ parses (the split falls after an ending).
 - **SQ7** Progress rule: SQ2 and SQ3 hold (G rises on the independent sample without losing specificity).
+
+## Results of the hundred-and-ninety-second set (added after the test; `predict_test192.py`, `results/predict_test192.md`, `grammar.py` EXT_RULES)
+
+Three held, four failed. (A bug that stopped the ONE rule from firing, the post-ending marker being stripped first, was
+fixed before the result was recorded; it changes no verdict.) The extension raises G on A from 80.2% to 88.5% (SQ1), on B
+from 72.3% to 80.9% (SQ2) and on F's extra lines from 57.1% to 66.3% (SQ5), but it parses shuffled B lines even more
+readily (41.6% to 55.5%), so the margin over shuffled lines falls from 30.7 to 25.5 points (SQ3 fails). SEQ is the
+permissive rule (real +5.5, shuffled +11.8; SQ4 fails), and its split does not fall after an ending more often than in
+shuffled lines (SQ6 fails, 66% against 75%). SHORT, ONE and U are specific (real +1.4/+0.6/+0.4 against shuffled
++0.3/+0.3/+0.1); OPEN is not. The progress rule fails: no progress, streak 1. **Check after the test**: the base
+grammar's bare-name rule is barely specific either (dropping it costs 26.8 points on real B lines and 25.3 on shuffled
+ones): a line of lexical signs ending in one of 177 attested heads is accepted almost regardless of order. G as defined
+overstates what the grammar captures; its real content is the margin (A 43.3, B 30.7 points). Tally, counting parts:
+1284 held, 1200 failed (2484 registered).

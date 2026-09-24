@@ -49,3 +49,4 @@ The 'streak' column counts consecutive loops without progress.
 | 14 | 189 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the U: plain 700 counted/final, 705/706 heads the closing formula; inner-stroke device generalises (progress; streak 0) |
 | 15 | 190 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | leaf attachments predict position, but on B only through the known heading; counted no progress (streak 1) |
 | 16 | 191 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | new component G: one explicit grammar parses 80.2% of A lines, 72.3% of B (B from A-learned heads); unparsed lines are the longer ones (progress; streak 0) |
+| 17 | 192 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | five rules for unparsed lines raise G (B 80.9%) but parse shuffled lines more readily; margin falls 30.7 to 25.5; bare-name rule barely specific (no progress; streak 1) |

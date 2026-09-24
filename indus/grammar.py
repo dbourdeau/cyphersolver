@@ -9,6 +9,8 @@ LINE = [HEADING] NAME [POST] | COUNT | FORMULA | BARE | NUMBERS
   FORMULA  705 / 706 + 33 + 520, alone or after a name body or name
   BARE     2+ lexical signs (numerals allowed) whose last sign is attested as a name head
   NUMBERS  numerals only
+Set 192 adds (EXT_RULES): SHORT heading alone or + one sign; ONE one lexical sign + 400 / 90; U body + numeral + 700;
+OPEN 705 / 706 + body; SEQ two consecutive units that each parse, the first of 2+ signs.
 """
 import rtools as R
 from predict_test103 import CL
@@ -16,6 +18,8 @@ from predict_test103 import CL
 CAGED = {'226', '232', '153', '236', '241', '144', '393', '895', '466', '804', '878', '689'}
 STACK = {'151', '161', '527', '565', '621', '679'}
 ALL_RULES = ('heading', 'post', 'closer', 'caged', 'stack', 'count', 'formula', 'bare', 'numbers')
+NEW_RULES = ('short', 'one', 'u', 'open', 'seq')
+EXT_RULES = ALL_RULES + NEW_RULES
 
 
 def lexical(g):
@@ -34,17 +38,49 @@ def parse(t, heads, rules=ALL_RULES):
     t = tuple(t)
     if not t:
         return None
+    lab = _parse(t, heads, rules)
+    if lab is None and 'seq' in rules:
+        sub = tuple(r for r in rules if r != 'seq')
+        for k in range(2, len(t)):
+            if _parse(t[:k], heads, sub) is not None and _parse(t[k:], heads, sub) is not None:
+                return 'seq'
+    return lab
+
+
+def split_seq(t, heads, rules=EXT_RULES):
+    """First split point k of a SEQ line, or None."""
+    t = tuple(t)
+    sub = tuple(r for r in rules if r != 'seq')
+    if _parse(t, heads, sub) is not None:
+        return None
+    for k in range(2, len(t)):
+        if _parse(t[:k], heads, sub) is not None and _parse(t[k:], heads, sub) is not None:
+            return k
+    return None
+
+
+def _parse(t, heads, rules):
+    if not t:
+        return None
     if 'numbers' in rules and all(g in R.NUMS for g in t):
         return 'numbers'
+    if 'one' in rules and len(t) >= 2 and lexical(t[0]) and all(g in ('400', '90') for g in t[1:]):
+        return 'one'
     if 'post' in rules:
         while len(t) >= 2 and t[-1] in ('400', '90'):
             t = t[:-1]
+    if 'short' in rules and t[0] in ('817', '820', '861') and len(t) >= 2 and t[1] in ('2', '60', '1') and (len(t) == 2 or (len(t) == 3 and lexical(t[2]))):
+        return 'short'
     if 'heading' in rules and len(t) >= 3 and t[0] in ('817', '820', '861') and t[1] in ('2', '60', '1'):
         t = t[2:]
     if 'formula' in rules and len(t) >= 3 and t[-3] in ('705', '706') and t[-2] == '33' and t[-1] == '520':
         rest = t[:-3]
-        if not rest or body_ok(rest) or parse(rest, heads, rules) in ('name', 'bare'):
+        if not rest or body_ok(rest) or _parse(rest, heads, rules) in ('name', 'bare'):
             return 'formula'
+    if 'open' in rules and len(t) >= 2 and t[0] in ('705', '706') and body_ok(t[1:]):
+        return 'open'
+    if 'u' in rules and len(t) >= 3 and t[-1] == '700' and t[-2] in R.NUMS and body_ok(t[:-2]):
+        return 'u'
     end = t[-1]
     if len(t) >= 2:
         if end in R.END and body_ok(t[:-1]):
