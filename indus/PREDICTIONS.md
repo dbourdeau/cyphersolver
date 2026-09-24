@@ -3279,3 +3279,21 @@ under 30%); headed seal lines at the smaller sites (RX8: -8.7 points, the other 
 (RX10: none of A's 30 count tokens is reversed). A's transcription appears to normalise direction, so the TAB:B
 reversal of the sixty-fourth set may be an ICIT data-entry pattern rather than a feature of the objects. Tally,
 counting parts: 377 held, 450 failed (827 registered).
+
+# Sixty-seventh set, registered before testing (24 September 2026): seal text and seal picture
+
+F seals (SEAL types) with a motif recorded (ICIT field 18; '' and 'None' = no motif). 'Motif' = the field up to its
+first ':' (Bull1:I -> Bull1); same-text tests use the full field. Names via names_in. 10,000-draw permutations
+(shuffling motifs among the objects tested); p < 0.05.
+
+- **TP1** Seals with identical texts share the motif more often than when motifs are shuffled.
+- **TP2** The name's last body sign depends on the motif (MI).
+- **TP3** The name ending depends on the motif (MI).
+- **TP4** Line-length stratum depends on the motif (MI).
+- **TP5** Texts found on both a seal and a tablet carry the same motif on both more often than when tablet motifs are
+  shuffled.
+- **TP6** Seals with a motif other than the commonest one carry a numeral more often than seals with the commonest.
+- **TP7** 20%+ of signs with 10+ seal tokens have half or more of those tokens on one motif other than the commonest.
+- **TP8** TP2 holds within Mohenjo-daro alone.
+- **TP9** TP2 holds within Harappa alone.
+- **TP10** The first sign of the seal line depends on the motif (MI).
