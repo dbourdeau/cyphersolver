@@ -8715,3 +8715,15 @@ chosen on the training lines' own split (design: 4.7247 -> 4.7187; D 0.75 4.7199
 - **DK2** The same A -> B (trained on A, tested on B's new lines).
 - **DK3** SIGN top-1 on the fixed test (two-direction, as prizebench) does not fall with f4k in place of f4.
 - **DK4** Progress rule: DK1 and DK2 hold (f4k enters the model).
+
+# Two-hundred-and-eleventh set, registered before testing (24 September 2026): decipherment loop 36, a discounted sign trigram (four hypotheses)
+
+Metric after loop 35: S 4.675 (tri + pos + end + f4k); streak 0 (loop 35 counted as progress). The sign trigram of
+the set-125 model interpolates with count/(count + 2) weights onto the Kneser-Ney bigram. New component trik: the
+trigram absolutely discounted (D = 0.75, chosen on the training lines' own split: 4.7169 -> 4.6763; D 0.5 4.6923,
+D 0.9 4.6895) onto the same bigram; model trik + pos + end + f4k.
+
+- **TK1** S on the fixed test beats tri + pos + end + f4k by 0.01 bits or more.
+- **TK2** The same A -> B.
+- **TK3** SIGN top-1 on the fixed test (two-direction) does not fall.
+- **TK4** Progress rule: TK1 and TK2 hold (trik replaces tri).
