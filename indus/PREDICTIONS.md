@@ -5402,3 +5402,17 @@ Runs as in the hundred-and-twelfth set; heading signs 817, 820, 861. 10,000-draw
 - **SR18** F without copper: SR1 holds.
 - **SR19** F without copper: SR4 holds.
 - **SR20** F without copper: SR14 holds.
+
+## Results of the hundred-and-fourteenth set (added after the test; `predict_test114.py`, `results/predict_test114.md`)
+
+Eleven held, nine failed. The small first stroke in 'small-then-large' runs is not part of the number. In '2 N X', the
+'N X' is attested without the '2' in 85% (SR4; SR19 in F': 83%), and X's usual count elsewhere equals N in 27 cases and
+N + 2 in none (SR13): the '2' is a prefix, not an addend. The signs counted after '2 N' overlap with those counted after
+'heading + 2 + N' more than random signs do (SR14: p = 0.018; SR20 in F': p = 0.045), so an unheaded '2 N' behaves like
+the heading unit's '2' without its heading sign. '2 N' lines are seal lines (SR6: 40 of 45) and a little commoner at
+Mohenjo-daro (SR7: 2.4% against 1.2%); they count a few items, mainly 220 and 390 (SR3: top five 58%). Most small-first
+runs start with '2' or '1' (SR1: 71%; just under 70% in B, SR16: 65%, and F', SR18: 69%). Numeral runs are short (SR15:
+1% of 3+ signs). Not supported: '2 N' opening lines (SR2, SR17: they are mostly mid-line), '2' preferring long numerals
+(SR5), doubled numerals being common (SR8: 9%), '1 N' after an ending (SR10: 26%), small-first runs opening lines (SR11),
+and N being 3+ (SR12: 61%). Large-first and small-first runs are both followed by a counted sign (SR9). Tally, counting
+parts: 880 held, 887 failed (1767 registered).

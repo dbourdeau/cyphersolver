@@ -1772,6 +1772,13 @@ Summary of sets 111-113: the script is one sign language used in several text fr
 company, units and numeral notation across names, counts, closer and bare lines, and one number system serves them all.
 Tally 869 held, 878 failed.
 
+## Hundred-and-twenty-eighth pass (24 Sept 2026): small-then-large numeral runs
+
+Registered first (hundred-and-fourteenth set, d2dd55e39), tested (`predict_test114.py`). The '2' in '2 N X' is a prefix,
+not an addend (X's usual count equals N 27 times, N + 2 never); it acts like the heading unit's '2' without the heading
+sign, on seals, counting 220 and 390 mostly. So 'small-then-large' runs are not compound numbers. Tally 880 held, 887
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
