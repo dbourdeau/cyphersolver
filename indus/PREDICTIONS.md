@@ -6181,3 +6181,24 @@ lines contain a numeral sign against 56% at home, often inside the line ('924 1 
 rather than count. This supports, weakly, the long-standing proposal that some stroke signs had phonetic (rebus)
 values, and it is a lead for the language-type and decipherment tests that follow. Tally, counting parts: 1052 held,
 989 failed (2041 registered).
+
+# Hundred-and-thirty-seventh set, registered before testing (24 September 2026): sign shapes (ten hypotheses)
+
+Second external direction: the glyphs themselves. Each sign is rendered from the ICIT webfont (sk_indus_script, the
+codepoints in data/glyphs.tsv) at a fixed size and binarised. 'Shape similarity' of two signs = the best intersection-
+over-union over shifts (cross-correlation); 'containment' of sign C in sign R = the best share of C's ink covered by
+R's ink over shifts. 'Compound' = a rare sign (1-3 tokens in A + B distinct lines) that contains a common sign (20+
+tokens) at 0.8+ with at least 20% more ink. Context similarity as in the sixty-second set. Random baselines are
+frequency-matched where stated; p < 0.05. The font's drawings are one designer's normalised forms, not the originals.
+
+- **SH1** Rare signs are compounds of a common sign more often than common signs contain another common sign.
+- **SH2** A compound's base sign appears among its frame-mates (hundred-and-twenty-seventh set) more often than chance.
+- **SH3** Shape similarity correlates with context similarity over pairs of common signs (Spearman, permutation).
+- **SH4** Signs whose catalogue numbers differ by 1 are more similar in shape than random pairs (rank test).
+- **SH5** The five candidate free variants (435/436, 526/527, 336/337, 554/555, 705/706) are more similar in shape than
+  95% of random common-sign pairs, on average.
+- **SH6** Fish signs are more similar in shape to each other than random matched sets.
+- **SH7** Non-fish 520-class heads are more similar in shape to the fish than 740-class heads are (rank test).
+- **SH8** The eleven closers are more similar in shape to each other than random matched sets.
+- **SH9** Rare signs have more ink (a complexity proxy) than common signs (rank test).
+- **SH10** A compound stands in its base sign's usual position class (first, middle, last) in 60%+ of its tokens.
