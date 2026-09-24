@@ -8553,3 +8553,22 @@ about individual shape parallels. It does not support treating the graffiti as a
 Two-direction SIGN model.** Summing a right-to-left model's line log-probability lifts SIGN top-1 from 36.2% to 38.2%
 on the fixed test (SB1) and from 29.9% to 31.8% A -> B (SB2). Adopted in prizebench; the metric run gives SIGN top-1
 37.9%, top-5 60.0%. Progress (SB3): streak 0. Tally, counting parts: 1328 held, 1229 failed (2557 registered).
+
+# Two-hundred-and-fifth set, registered before testing (24 September 2026): decipherment loop 30, a key scorer that passes the Linear B gate; two-direction WORD (six hypotheses)
+
+Metric after loop 29: S 4.685, SIGN top-1 37.9%, WORD top-10 3.0%; prize tiers V 0.008%, C 1 of 3 (the key bench's
+dictionary-parse score fails the Linear B gate: `linb_control.md`), U 0; streak 0. (A) A different scorer: decode a
+line with the key, join the values without word dividers (as the Indus script has none), and score the string by a
+character n-gram language model of the claimed language (per-character log-probability, add-0.5 smoothed, trained on
+the language's word list with word boundaries). Linear B data as `linb_control.py` (DAMOS lines of 3+ syllabic signs,
+standard values; Greek forms adjusted to Linear B spelling: l > r, final s/n/r dropped). The n-gram order (2-5) is
+chosen on the odd-numbered lines; the gate is judged on the even-numbered lines against 100 shuffled keys (values
+permuted among signs of similar frequency, bench.shuffles). Specificity: the same scorer with a Sanskrit model
+(Monier-Williams headwords, SLP1 lowercased). (B) The WORD task with the two-direction model of set 204.
+
+- **GA1** With the Greek model, Ventris's key beats 95 or more of 100 shuffles on the even lines.
+- **GA2** With the Sanskrit model, Ventris's key does not beat 95 of 100 shuffles (the scorer is language-specific).
+- **GA3** Ventris's key's margin over the shuffle median is larger with the Greek model than with the Sanskrit one.
+- **GA4** Two-direction WORD top-10 on the fixed test beats the forward model by 1 point or more.
+- **GA5** The same A -> B (trained on A, B's new lines, first 300).
+- **GA6** Progress rule: GA1 and GA2 hold (a key scorer that passes the gate and is language-specific), or GA4 and GA5.
