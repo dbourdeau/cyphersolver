@@ -4458,3 +4458,18 @@ from cat_of. 10,000-draw permutations; p < 0.05.
 - **CF18** B: CF4 holds.
 - **CF19** F: CF13 holds.
 - **CF20** 705 and 706 have the same shape category as 700.
+
+## Results of the ninety-second set (added after the test; `predict_test92.py`, `results/predict_test92.md`)
+
+Eleven held, nine failed. '705/706 33' is a fixed pair: 95% of numerals after 705/706 are 33 (CF4; CF18 in B: 36 of
+36), 97% of them are long-kind against 25% after other signs (CF5), and 75% of the signs directly before 33 are 705 or
+706 (CF16: 705 x88, 706 x29). The 520 that sometimes follows always comes with value 3 (CF13: 46 of 46; CF19 in F: 37
+of 37). 705 and 706 are free variants: they share context far more than chance (CF1: cosine 0.40, p = 0.0006) and the
+sign before them does not choose between them (CF11, p = 0.81). Their lines are seal texts (CF8: 73%) and commoner at
+Mohenjo-daro (CF9: 8.6% against 5.4% of lines). They are not a family with the count sign 700: 700 does not share their
+context (CF2, p = 0.87), 700 lines are not mostly tablets (CF10: 59%), 700 is inside a name body in 11% of distinct cases
+(CF15), and the shapes are catalogued differently (CF20: 700 J, 706 I, 705 none). Also not supported: 705/706 never
+counted (CF6: 13% follow a numeral), their lines ending in 520 (CF7: 21%; CF12: 38% after the count) or being names
+(CF14: 52%), and CF3 in B (41%). Reading: '705/706 33' behaves like one lexical unit (a 'three-X' compound written with
+the long 3), often closed by 520 as a name, not like a count of jars. Tally, counting parts: 623 held, 704 failed (1327
+registered).

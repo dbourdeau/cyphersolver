@@ -1600,6 +1600,16 @@ real name ('176 740', '220 740'), followed by a 1-3 sign tail that is not a name
 mostly on one-off seals. Revises the eighty-eighth set's 'long compound' reading to 'name + annotation'. Tally 612 held,
 695 failed.
 
+## Hundred-and-sixth pass (24 Sept 2026): the jar signs 700, 705, 706
+
+Registered first (ninety-second set, 352a3ee87), tested (`predict_test92.py`). 705 and 706 are free variants of one
+sign, bound to a following long 33 (95%; 75% of 33s follow them): '705/706 33' is a fixed unit, with 520 only after
+value 3. It is not related to the count sign 700. Seal texts, commoner at Mohenjo-daro.
+
+Summary of sets 90-92: each medium has its own text type (copper tablets fixed labels; 520 a seal-name feature); a
+mid-line 740 closes a short name followed by an annotation; '705/706 33' is a fixed unit, not a jar count. Tally 623
+held, 704 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
