@@ -2396,6 +2396,11 @@ Sangam third, Turkish last), same in both halves: set 197's candidate advantage 
 discriminate languages. No progress: streak 1. Stopping rule revised by the owner: 10 consecutive no-progress loops.
 Tally 1309 held, 1211 failed.
 
+## Two-hundred-and-thirteenth pass (24 Sept 2026): decipherment loop 24, a longer family context
+
+Registered first (3a379b31a). Family 4-gram context: S 4.697 -> 4.684, replicated A -> B; random families give at most
+0.002 against 0.030. Progress: streak 0. Tally 1314 held, 1211 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

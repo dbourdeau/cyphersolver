@@ -8379,3 +8379,12 @@ component adding nothing. New component `f4` in famlm.py; model tri + pos + end 
 - **F43** Random families (20 draws of the same sizes, seed 199) used in f4 gain less than the decade families in 19+.
 - **F44** f4 gets a nonzero weight on both runs.
 - **F45** Progress rule: F41 and F42 hold.
+
+## Results of the hundred-and-ninety-ninth set (added after the test; `predict_test199.py`, `results/predict_test199.md`, `famlm.py` f4)
+
+All five held. The family 4-gram context lowers S on the fixed test from 4.6973 to 4.6842 (F41, gain 0.013), and the
+gain replicates trained on A and tested on B's new lines (5.2349 -> 5.2249; F42). Over the set-125 model the decade
+families now gain 0.030 bits, random families of the same sizes at most 0.002 (20 of 20; F43); f4 gets weight 0.09 and
+0.08 (F44). (The A->B figure for the ftri model, 5.2349, differs from set 194's 5.2372 because famlm.py now also counts
+the 4-gram table while fitting; the comparison here is within one run.) S enters the metric at 4.684. Progress: streak
+0. Tally, counting parts: 1314 held, 1211 failed (2525 registered).

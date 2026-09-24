@@ -20,12 +20,14 @@ class M3(M2):
         self.fb = defaultdict(Counter)
         self.ft = defaultdict(Counter)
         self.fw = defaultdict(Counter)
+        self.f4 = defaultdict(Counter)
         for t in train:
             s = ['<s>', '<s>'] + list(t) + ['</s>']
             for i in range(2, len(s)):
                 self.fb[fam(s[i - 1])][s[i]] += 1
                 self.ft[(fam(s[i - 2]), fam(s[i - 1]))][s[i]] += 1
                 self.fw[fam(s[i - 1])][fam(s[i])] += 1
+                self.f4[(fam(s[i - 3]) if i >= 3 else '<s>', fam(s[i - 2]), fam(s[i - 1]))][s[i]] += 1
 
     def rows(self, t, kn=False):
         fam = self.famfn
@@ -37,6 +39,9 @@ class M3(M2):
             c = self.ft[(fam(s[i - 2]), fam(s[i - 1]))]
             lam = sum(c.values()) / (sum(c.values()) + 2)
             r['ftri'] = lam * c[w] / max(1, sum(c.values())) + (1 - lam) * r['fbi']
+            c4 = self.f4[(fam(s[i - 3]) if i >= 3 else '<s>', fam(s[i - 2]), fam(s[i - 1]))]
+            l4 = sum(c4.values()) / (sum(c4.values()) + 2)
+            r['f4'] = l4 * c4[w] / max(1, sum(c4.values())) + (1 - l4) * r['ftri']  # set 199
         return out
 
 
