@@ -2272,6 +2272,13 @@ Linear B (p = 0.001) but no published Indus key passes on both samples (Fairserv
 mark of fitting). P stays 0; the substitution test becomes a standing filter for any proposed key. Tally 1236 held,
 1158 failed.
 
+## Hundred-and-ninety-fourth pass (24 Sept 2026): decipherment loop 5, depiction keys by language
+
+Registered first (f7246bcb5). Depiction keys (the word for the depicted object, per Fairservis) in Dravidian,
+Sanskrit and Sumerian under the substitution test: none passes on both samples. The automatic lookup picked obscure
+glossary words ('man' = agredadus, anmu·ṛo·n), so no language inference; loop 6 repeats it with a basic-word lookup.
+Tally 1238 held, 1163 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

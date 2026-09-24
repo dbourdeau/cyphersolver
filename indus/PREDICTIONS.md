@@ -7775,3 +7775,14 @@ shuffle test as set 179, run on A-names and B-names separately.
 - **DK5** The Dravidian key's excess is larger than the Sumerian key's.
 - **DK6** At least one language passes on both samples (a P candidate; P itself needs a second, independent test).
 - **DK7** The three keys cover 10+ substitution pairs each (the test has power).
+
+## Results of the hundred-and-eightieth set (added after the test; `predict_test180.py`, `results/predict_test180.md`)
+
+Two held, five failed. No depiction key passes on both samples (DK6): Dravidian passes on A only (DK1: p = 0.046, then
+0.62 on B), Sumerian on A only (DK3: p = 0.004, then 0.054), Sanskrit on neither (DK2). The Dravidian excess is above
+the Sanskrit one (DK4: 0.017 against -0.008) and below the Sumerian one (DK5: 0.019); the test had power (DK7: 283-504
+pairs). **Caveat that empties the comparison, noted after the test:** the registered lookup (first glossary entry whose
+sense begins with the concept) chose obscure words: 'man' became Monier-Williams agredadus and a DEDR form anmu·ṛo·n,
+not the ordinary words (nara, puruṣa; āḷ, maṉ). The keys therefore measure lookup noise as much as language, and no
+language inference is drawn. The next loop repeats the test with a lookup that prefers the basic word. Tally, counting
+parts: 1238 held, 1163 failed (2401 registered).
