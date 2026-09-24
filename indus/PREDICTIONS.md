@@ -3694,3 +3694,37 @@ QS9); Harappa seals and tablets name the same heads (QS10); small-site openers a
 borderline local (QS13, p = 0.058) and pairs sharing a head are local too (QS14 fails, p = 0.021), so opener and head
 cannot be told apart as person against place; receipts do not favour common heads (QS18); and most 1-sign names are
 not mainly heads in longer names (QS17: 25 of 69). Tally, counting parts: 462 held, 525 failed (987 registered).
+
+# Seventy-sixth set, registered before testing (24 September 2026): the name as a noun phrase (twenty hypotheses)
+
+From the seventy-fifth set: name = [opener [middle head]], the numeral stands before the head, and common heads are
+the counted things of the formulas. Distinct names and distinct lines (A + B) unless stated. 'Modifier' = a non-head,
+non-numeral body sign; 'counted head' = head directly after a numeral run (value, kind as before); 'formula-counted
+sign' = sign directly after a numeral in a distinct formula. Categories from cat_of. 10,000-draw permutations; p < 0.05.
+
+Heads select
+- **NP1** The modifier directly before the head depends on the head's category (MI over distinct names).
+- **NP2** The value before a counted head depends on the head (MI).
+- **NP3** For signs counted in both names and formulas, the commonest numeral kind is the same in both for 70%+.
+- **NP4** For signs counted in both, the commonest value is the same in both for 50%+.
+- **NP5** Numeral values before heads in names are smaller than before signs in formulas (rank test).
+- **NP6** Fish heads are counted more often than non-fish heads.
+- **NP7** Counted heads are also 1-sign names more often than uncounted heads (types).
+Modifiers
+- **NP8** Adjacent modifier pairs keep one order: under 20% of such pairs are attested reversed.
+- **NP9** Modifiers stand before the numeral rather than between numeral and head: 'mod N head' is commoner than
+  'N mod head' (counts over bodies).
+- **NP10** Slot (opener against middle in 3-sign bodies) depends on the sign (MI).
+- **NP11** Under 5% of bodies hold two separate numeral runs.
+- **NP12** Counted heads have more distinct modifiers per name than uncounted heads (rank test, heads with 3+ names).
+Formulas share the grammar
+- **NP13** In formulas, a numeral is followed by a sign that heads names more often than a random formula token is a
+  name head (tokens).
+- **NP14** Formula residues of two signs end in a name head more often than they begin with one.
+- **NP15** Numeral-first names have a formula-counted head more often than other names.
+Replication
+- **NP16** B: NP2 holds.
+- **NP17** B: NP13 holds.
+- **NP18** Harappa (F distinct names): NP2 holds.
+- **NP19** Mohenjo-daro (F distinct names): NP2 holds.
+- **NP20** B: NP9 holds.
