@@ -7369,3 +7369,19 @@ B sign value and the Linear B word value. p not used; point comparisons of the m
 - **C9** The heading (817, 820 or 861 followed by 2, 60 or 1) opens copper-tablet texts less often than seal lines
   (Fisher).
 - **C10** Names on sealings end in 740 more often than names on seals (Fisher).
+
+## Results of the hundred-and-sixty-ninth set (added after the test; `predict_test169.py`, `results/predict_test169.md`)
+
+Seven held, three failed. At 5,000 tokens (means of 100 samples): Indus signs 495 types, hapax share 0.41, H(next|prev)
+3.12 bits; Linear B signs 198, 0.26, 3.96; Linear B words 2,128, 0.71, 1.11; Ur III lemmas 1,057, 0.67, 2.92.
+**The Indus signs sit between a syllabary-with-logograms and a vocabulary of words, nearer the signs**: types, hapax
+share and conditional entropy fall between Linear B signs and words (WR1-WR3), the type count is closer to the signs
+on a log scale (WR6: 0.92 against 1.46), and far below Ur III words (WR7), as a logo-syllabic script with a few hundred
+signs would be (Fuls 2023 reaches the same class from entropic redundancy). Predictability relative to entropy is
+between too (WR9: 0.45 against 0.63 and 0.11), and one sign (740) dominates more than any Linear B sign (WR10: 10%
+against 4%). Failed: top-ten coverage (WR4: 0.32, above both), normalised entropy (WR5: 0.78, below both) and doubling
+(WR8: 0.014, above both) are not between; on those three, and on WR9 and the commonest-unit share, the Indus signs
+resemble the Ur III seal legends (top ten 0.49, normalised entropy 0.70, predictability 0.42, commonest 16%): the
+concentration and repetitiveness of a short formulaic seal genre, not of a script type. Caveat: Linear B is
+administrative text, a different genre from seals; the comparison places the sign inventory, not the language.
+Tally, counting parts: 1190 held, 1118 failed (2308 registered).

@@ -2189,6 +2189,13 @@ Farmer-Sproat-Witzel's repetition argument fails on a same-genre control. Linear
 palaces (47%) and as open as Indus count texts, so set 150's 'local naming customs' is withdrawn to 'local, as counts
 are'. The copper-tablet picture signs never occur in seal names. Tally 1183 held, 1115 failed.
 
+## Hundred-and-eighty-third pass (24 Sept 2026): writing-system statistics against two read scripts
+
+Registered first (sets 169-170 together, 359f0528e). At 5,000 tokens the Indus signs (495 types) fall between Linear B
+signs (198) and Linear B words (2,128), nearer the signs, on types, hapax share, conditional entropy and relative
+predictability: a logo-syllabic inventory. On concentration measures (top ten, normalised entropy, doubling) the Indus
+signs look like Ur III seal legends instead: the formulaic seal genre. Tally 1190 held, 1118 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
