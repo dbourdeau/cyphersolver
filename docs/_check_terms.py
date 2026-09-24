@@ -48,7 +48,7 @@ STRIP = [r'<header class="nav">.*?</header>', r'<div class="search".*?</div>\n</
          r'<nav class="toc".*?</nav>', r'<!-- replay:start -->.*?<!-- replay:end -->', r'<figure class="creveal".*?</figure>',
          r'<p class="outcome">.*?</p>', r'<p class="meta">.*?</p>', r'<script.*?</script>', r'<style.*?</style>',
          r'<(q|blockquote|code|pre)\b[^>]*>.*?</\1>', r'<i lang="[^"]*">.*?</i>', r'<(\w+)[^>]*data-term-ok[^>]*>.*?</\1>',
-         r'<figure class="sreplay".*?</figure>', r'<head>.*?</head>']
+         r'<figure class="sreplay".*?</figure>', r'<head>.*?</head>', r'<div class="seal [a-z]+"[^>]*>.*?</div>']
 
 def prose(s):
     """Page text as lines, generated and quoted parts blanked out (line numbers kept)."""
