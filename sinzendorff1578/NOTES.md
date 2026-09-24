@@ -33,6 +33,7 @@ Sinzendorff's reports again for 1583-84, but never the September 1578 despatch.
 | source | result |
 |---|---|
 | ÖStA Archivinformationssystem | Türkei I 37 = ID 967789 (Turcica 07-11.1578, former Turcica 27). Three files: **37-1** ID 3855632 (07-08.1578, fol. 1-253), **37-2** ID 3855633 (09-10.1578, fol. 1-313), **37-3** ID 3855634 (09-10.1578, fol. 1-189). All "Öffentlich", none with item records or scans. |
+| ÖStA full-text search (all fonds), for duplicates (Láng: Porte envoys often sent 3-6 copies) | "Sinzendorf 1578", "Sinzendorf Konstantinopel", "chiffriert Türkei 1578", "Ziffer Konstantinopel": only Hofkammer financial files (FHKA SUS RA 315.1 his despatch with the Verehrung 1577-78; 315.3 and 276.29 his claim for pay, 1581), no despatches, no scans. |
 | DECODE (list dump, 10,106 records; API views) | No Türkei I ciphertext, nothing for Sinzendorff, Breuner 1581 or Constantinople 1578. |
 | HCPortal (index checked for 342) | Nothing for Türkei or Constantinople. |
 | Láng 2015 PDF (real-d.mtak.hu/922) | Repertory rows only (above); the ELTE-library Constantinople letters he mentions are Kuefstein's of 1628-29, not ours. |
