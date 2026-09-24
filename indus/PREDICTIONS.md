@@ -8388,3 +8388,26 @@ families now gain 0.030 bits, random families of the same sizes at most 0.002 (2
 0.08 (F44). (The A->B figure for the ftri model, 5.2349, differs from set 194's 5.2372 because famlm.py now also counts
 the 4-gram table while fitting; the comparison here is within one run.) S enters the metric at 4.684. Progress: streak
 0. Tally, counting parts: 1314 held, 1211 failed (2525 registered).
+
+# Two-hundredth set, registered before testing (24 September 2026): decipherment loop 25, picture anchors frozen and tested on unseen tablets (six hypotheses)
+
+Metric after loop 24: S 4.685, SIGN top-1 36.2%, WORD top-10 3.0%; prize tiers V (checked meaning) 0.008%, C gate 1 of
+3 methods, U (vault) 0; streak 0. The only language-free bilingual evidence is text + picture on the same tablet (NOTES
+second and third passes: copper-tablet texts go with their images; seal texts do not). Tier 1 asks for meanings
+checked against outside evidence, tier 3 for values frozen before being tried on unseen texts. Here: all tablets
+(ICIT TAB:C copper, TAB:B moulded, TAB:I incised) with a specific motif (ICIT field 18; 'Othr', 'Unknown', 'None'
+left out; motif classes = the code before ':'). Objects are grouped by their full text, and whole text groups are
+split at random into a design half and a vault half (seed 200), so no mould copy crosses the split. On the design
+half a sign becomes a **picture anchor** if it occurs on 3+ objects in 2+ distinct texts and 80%+ of those objects
+carry one motif. On the vault half each object carrying an anchor gets the anchors' majority motif as its predicted
+picture. Null: motifs shuffled among the design text groups, anchors rebuilt, 1,000 times.
+
+- **PB1** Vault accuracy exceeds the permutation null (p < 0.01).
+- **PB2** 20% or more of vault objects carry at least one anchor.
+- **PB3** On copper tablets alone (anchors from design copper tablets, tested on vault copper tablets), accuracy also
+  beats its null (p < 0.05).
+- **PB4** On seals (SEAL:S) the same procedure does not beat its null (replicating the second pass: seal texts do not
+  name the animal).
+- **PB5** Accuracy on vault objects is 50% or more.
+- **PB6** Progress rule: PB1 holds. Then the anchor signs whose vault predictions are right more often than not enter
+  V (checked meaning), and U counts the vault tokens they read.
