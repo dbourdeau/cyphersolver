@@ -2787,3 +2787,19 @@ Harappa tablets, 3), 390 (24, seals, 3-8), 405 (10), 817 390 (10). What is new: 
 89, 307, 369, 195, 69, 50, 31, 18, 9, 1, 1, 8 for 1-12). Failures: tallied items are ordinary signs, not formula-only
 ones (TL4: 3% against 42%); groups span sites rather than staying at one (TL8: 4 of 34); the numeral moves (TL9: 68%);
 groups do not favour consecutive values (TL10). Tally, counting parts: 288 held, 369 failed (657 registered).
+
+# Fiftieth set, registered before testing (24 September 2026): numbers on seals against numbers on tablets (loop 2, round 4)
+
+F formula lines with a numeral on seals (SEAL types) and on tablets (TAB types). Value = sum of numeral values in the
+line; kind from numerals. Embedded body as in the forty-fifth set. 10,000-draw permutations; p < 0.05.
+
+- **SC1** Seal values are larger than tablet values (rank test).
+- **SC2** Seal numerals are tiered more often than tablet numerals.
+- **SC3** The sign after a numeral depends on seal against tablet (MI, permutation).
+- **SC4** Seal numeral formulas are longer than tablet numeral formulas (rank test).
+- **SC5** On seals (A), the motif depends on whether the line carries a numeral (MI, permutation).
+- **SC6** Among seals, numeral formulas are commoner at Mohenjo-daro than at Harappa.
+- **SC7** Where 390 follows a numeral, the value is 3 or more in 90%+ of cases (F, all objects).
+- **SC8** Seal numeral formulas open with a heading (817, 820, 861) more often than tablet numeral formulas.
+- **SC9** Seal numeral formulas embed an attested name body more often than tablet numeral formulas.
+- **SC10** Seal values are more varied than tablet values (entropy difference, permutation of the seal/tablet label).
