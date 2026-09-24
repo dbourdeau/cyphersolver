@@ -86,7 +86,25 @@ version of the test does not, and is not used. Results for published keys: Yajna
 1992 and Parpola 1994 (Dravidian) do not beat their shuffles in their own language; Mahadevan and Kak give too few
 signs to test; Mahadevan's reading of the endings as a gender pair is the one claim the structure supports.
 
-## 7. What would complete it
+## 7. What is new here, and what was known
+
+A literature check (`results/lit_check.md`; not exhaustive: Wells 2011/2015, Fuls, Mahadevan 1970/1986/2014 and
+Parpola 2008/2015 were not read in full) found:
+- **Known:** jar and arrow mutually exclusive (Parpola 1994: 94; Mahadevan, arrow essay, as gender suffixes); fish
+  names with the arrow (Parpola 1994 fig. 6.6; Mukhopadhyay 2019), without rates; the head-final order 'X-jar man' as
+  an argument against Sumerian, Elamite and others (Parpola 1994: 86-89, 95-97); the opening phrase (Parpola's
+  'position I'; Yadav et al. 2010); short and long strokes used differently (Parpola 1994: 82), the pot as a measure
+  on tablets (Wells 2015), tablets as tokens (Meadow and Kenoyer 2000; Rao 2018); earlier segmentations (Soviet team,
+  Yadav et al. 2008, Fuls 2015); the copper-tablet equations (Parpola 1994: 107-112); that fitted keys and held-out
+  fit do not identify a language (Raghavendra 2026, arXiv 2608.02999, on synthetic data).
+- **Not found before:** the count showing the endings fixed per name (5 of 881 against 46); the 520 class as closed and
+  defined by what the name-final sign depicts; the class-suffix test that, with word order, leaves only Dravidian; the
+  opener variants tested against site and object type; the two stroke systems set against Proto-Elamite counting and
+  capacity and against the weight system; the numeral + fish enrichment test (6 + fish supported, Parpola's 3 + fish
+  not); the key-against-its-own-shuffles bench validated on Linear Elamite; the late bar seals' loss of 520 names;
+  the provisional anchors 347 and 460.
+
+## 8. What would complete it
 
 A phonetic decipherment needs evidence that ties sounds to signs, which this material does not contain: a bilingual
 (an Indus text with a cuneiform version), a long text, or many more recorded Meluhhan names. Short of that, the

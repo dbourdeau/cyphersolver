@@ -800,6 +800,19 @@ results `results/tamil_brahmi.md`, `results/predict_test.md`.
    names): none; the candidates replace 740 less often than chance. P3 (520 stems alternate no more than 740 stems):
    10.9% against 8.0%, fails narrowly. The model makes no correct prediction beyond the data it was built on.
 
+3. **Literature check** (`results/lit_check.md`, background agent; Parpola 1994 read in a clean archive.org OCR). Known
+   before: jar/arrow exclusivity (Parpola 1994: 94; Mahadevan's arrow essay as gender suffixes); fish + arrow (Parpola
+   1994 fig. 6.6, Mukhopadhyay 2019), without rates; the head-final 'X-jar man' order against Sumerian, Elamite and
+   others (Parpola 1994: 86-89, 95-97, 125, 130) - so the word-order half of the twelfth-pass argument is Parpola's;
+   the opening phrase (Parpola's position I; Yadav et al. 2010); short vs long strokes (Parpola 1994: 82), the pot as a
+   measure on tablets (Wells 2015), tablets as tokens (Meadow and Kenoyer 2000, Rao 2018); earlier segmentations
+   (Soviet team, Yadav 2008, Fuls 2015); the copper-tablet equations (Parpola 1994: 107-112, 2008); fitted keys not
+   identifying the language (Raghavendra 2026, arXiv 2608.02999, synthetic corpus). Not found before: the per-name
+   fixedness count, the closed 520 class by depicted category, the class-suffix test and the combined two-test
+   argument, the opener-variant test, the numeral systems against Proto-Elamite and the weights, the numeral + fish
+   enrichment test (against Parpola's 3 + fish), the shuffle bench validated on Linear Elamite, the late bar seals,
+   anchors 347/460. Not read in full: Wells 2011/2015, Fuls 2013-2020, Mahadevan 1970/1986/2014, Parpola 2008/2015.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
