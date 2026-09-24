@@ -6394,3 +6394,24 @@ Typology, as far as order can show it: numeral-first, head-final, no number or c
 ending slot. That fits a Dravidian-like or Indo-Aryan-like order and not Sumerian's, but none of it separates
 Dravidian from Indo-Aryan, and the family expectations were stated from general knowledge. Tally, counting parts:
 1074 held, 1017 failed (2091 registered).
+
+# Hundred-and-forty-second set, registered before testing (24 September 2026): line breaks as word boundaries (eight hypotheses)
+
+Parpola used line division as evidence for segmentation; it was never measured here. Sample: distinct intact F texts
+with two or more non-empty lines (77). The order of lines is not reliable (the pair '31 32' stands first on some
+objects and last on others), so every hypothesis is tested twice, with the lines as listed and reversed, and holds
+only if it holds both ways. Chance: each junction is moved to a uniformly drawn interior position of the same
+concatenated text (10,000 draws; one-sided p). Units U = predict_test61.units of name bodies (pairs in 5+ bodies);
+bound pairs = predict_test8.bound_pairs (30 highest-PMI pairs). Markers M = 740, 520, closers CL, 400, 90. Genre as
+predict_test108. p < 0.05.
+
+- **LK1** Junctions split a unit pair less often than chance.
+- **LK2** Junctions split a bound pair less often than chance.
+- **LK3** Lines are well-formed texts on their own (genre name, closer, count or bare) more often than the segments
+  of random cuts.
+- **LK4** Lines end in a marker more often than random segments do.
+- **LK5** Junctions separate a numeral from the sign after it less often than chance.
+- **LK6** Two-line texts of 4+ signs are unbalanced (lines differ by 2+ signs) in 50%+ (syntax over layout).
+- **LK7** 20%+ of multi-line texts have a line made only of numerals (a separate count line).
+- **LK8** Where one line of a two-line text is a name (ends 740/520), the other line is not a name in 70%+ (the lines
+  are separate fields, not one name wrapped).
