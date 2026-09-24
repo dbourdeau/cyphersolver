@@ -7600,3 +7600,26 @@ rarefaction to the smallest list. Prakrit = set 173's names; Tamil records = set
   names' share (set 174).
 - **TB10** At the same period the two languages' donor names are distinguishable on the dominant final: the
   Tamil-Brahmi and Prakrit commonest-final shares differ by more than 0.2.
+
+## Results of the hundred-and-seventy-fifth set (added after the test; `predict_test175.py`, `results/predict_test175.md`)
+
+Seven held, three failed. 104 Tamil-Brahmi donor names (the owner located the page scans; the index was transcribed by
+eye and checked against a second copy the owner supplied), 305 Prakrit, 628 Indus, rarefied to 104. **At the same
+period and in the same genre, the structure statistics of Indus names sit with the Prakrit names.** Closure: Indus R
+0.83, Prakrit 0.90, Tamil-Brahmi 1.45 (TB2: log distance 0.08 against 0.56; Tamil-Brahmi names do not close their last
+akshara, TB1 fails); length: JSD 0.056 against 0.153 (TB3; Tamil-Brahmi names are short, 3.0 aksharas against 4.3
+Indus signs, TB7 fails); stock of heads: Indus 43%, Prakrit 35%, Tamil-Brahmi 30% (TB5; TB4 holds, Tamil-Brahmi within
+0.15 too). TB8 holds, three of three. **The one Tamil-like feature is the dominant ending** (TB6: 740 on 82% of Indus
+names, -ṉ on 73% of Tamil-Brahmi names, the commonest Prakrit stem ending on 23%), and the two languages differ clearly
+on it (TB10: 0.73 against 0.23). But that contrast is partly made by the sources: the Tamil-Brahmi names are given with
+their personal suffix -aṉ, while Lüders's summaries give Prakrit names as stems without the case ending (-o, -sa)
+that every Prakrit donor name carries in the inscriptions. Tamil naming is not stable in this measure between the
+Tamil-Brahmi and the later records (TB9 fails: 0.73 against 0.47).
+
+Reading, with caveats: on name structure (closure, length, stock heads) the Indus names resemble early Prakrit donor
+names more than contemporary Tamil-Brahmi donor names; on the dominant suffix they resemble Tamil, but the source
+format makes that comparison unfair to Prakrit. This is not a language identification. The Tamil-Brahmi list is
+small (104), aksharas are not Indus signs (if Indus signs are word signs, lengths are not comparable at all), several
+Tamil-Brahmi donors bear Prakrit names themselves (Kasapaṉ, Cantirananti, Sapamitā), so South Asian donor naming
+crossed languages, and the Indus texts are some two thousand years older than either list. Tally, counting parts:
+1224 held, 1140 failed (2364 registered).

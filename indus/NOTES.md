@@ -2236,6 +2236,15 @@ Indus names. Indus names are nearer Prakrit on closure and on the stock of compo
 nearer Tamil on length (JSD 0.009 against 0.056) and on the single dominant suffix (82% against 47% and 23%). A split,
 not a verdict: name structure does not decide Dravidian against Indo-Aryan. Tally 1217 held, 1137 failed.
 
+## Hundred-and-eighty-ninth pass (24 Sept 2026): contemporary Tamil-Brahmi donor names
+
+Registered first (1b4285c97). The owner located the page scans of Mahadevan's Early Tamil Epigraphy (Internet Archive)
+and a second copy; Appendix II's 107 full names were transcribed by eye (`scratchpad/lang/ete_personal_names.tsv`,
+`lang_names.tb_names`). At the same period and genre, Indus names sit with Prakrit donor names on closure (0.83 against
+0.90 and 1.45), length and stock heads (three of three), with Tamil-Brahmi on the dominant suffix (82% against 73% and
+23%), a contrast partly made by the sources (Prakrit given as stems). Not a language identification: small list,
+aksharas are not signs, donor naming crossed languages. Tally 1224 held, 1140 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
