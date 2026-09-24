@@ -2574,3 +2574,22 @@ against 3.24 bits). Order is not looser at the front (OR10: 11.6% reversible in 
 partly follow from the head-final rule (a prefix lacks a head, so it is rarely a whole name); the new content is OR2,
 OR3 and OR6. Deviations: OR3 used 1,000 shuffles; OR10 counted adjacent pairs; bodies counted as distinct names.
 Tally, counting parts: 244 held, 343 failed (587 registered).
+
+# Forty-third set, registered before testing (24 September 2026): the slot ranking (round 7 of 10)
+
+A sign's rank = its mean relative position (0 first, 1 last) in distinct name bodies of 2+ signs, signs with 5+ such
+tokens. 'Follows the ranking' = an adjacent pair whose earlier sign has the lower rank (pairs with equal-rounded ranks
+left out). 10,000-draw permutations; p < 0.05.
+
+- **SK1** Ranks from A predict the order of 85%+ of adjacent pairs in B's distinct bodies.
+- **SK2** Ranks from Mohenjo-daro names predict 80%+ of adjacent pairs in Harappa names (F).
+- **SK3** Ranks from seal names predict 75%+ of adjacent pairs in names on tablets and other objects (F).
+- **SK4** Rank tercile depends on Fairservis category (MI, permutation over signs).
+- **SK5** Numerals stand earlier in the body than other signs (relative position, bodies of 3+, rank test).
+- **SK6** Frequent signs rank later (Spearman between token count and rank positive, permutation).
+- **SK7** Bodies with an adjacent pair against the ranking by 0.2+ are more often attested once (single object) than
+  bodies without one (pooled A + B; Fisher).
+- **SK8** Ranks from 3-sign bodies correlate with ranks from 4+-sign bodies (Spearman 0.6+, significant).
+- **SK9** Ranks under ending 740 correlate with ranks under 520 (Spearman 0.6+, significant; 5+ tokens under each).
+- **SK10** Seal names follow the ranking more often than names on other objects (adjacent pairs, ranks from all F
+  names; Fisher).
