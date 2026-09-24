@@ -5329,3 +5329,32 @@ first) fail at 26%, but post-test inspection shows the 'smaller first' pairs are
 numeral ('861 2 31', '861 2 4'), not compound numbers, so the order of compound numerals is untested. Also not
 supported: closer-line numbers inside the body (NS6: 58%) and long numerals before the head (NS13: 34% against 40%).
 Tally, counting parts: 852 held, 875 failed (1727 registered).
+
+# Hundred-and-thirteenth set, registered before testing (24 September 2026): sets 111-112 on held-out data (twenty hypotheses)
+
+Findings of the hundred-and-eleventh and hundred-and-twelfth sets re-tested on F without copper (F'), the smaller sites
+(OS, F' outside the two cities) and B, plus a corrected compound-numeral test that leaves out runs directly after a
+heading sign (the confound found in the hundred-and-twelfth set). Definitions as in those sets. 10,000-draw
+permutations (1,000 where the original used 1,000); p < 0.05.
+
+- **RO1** OS: positions in names and counts correlate (OG1; Spearman 0.3+, significant; signs with 3+ tokens in each).
+- **RO2** OS: a sign's right company in counts is closer to its own name company than to another sign's (OG7).
+- **RO3** F': positions in names and closer lines correlate (OG2).
+- **RO4** F': positions in counts and bare lines correlate (OG4).
+- **RO5** F': name heads end bare lines more often than other signs (OG5).
+- **RO6** F': name pairs recur in counts beyond name-shuffled pairs (OG9, 1,000).
+- **RO7** F': recurring name units occur in counts beyond random name-sign pairs (OG10).
+- **RO8** F': 60%+ of signs counted in names and counts keep their commonest numeral kind (OG12).
+- **RO9** F': a sign's mean count in names and counts correlates (OG13; 0.3+).
+- **RO10** F': closers follow 740-class heads more than 520-class heads (OG16).
+- **RO11** B: OG7 holds.
+- **RO12** B: OG13 holds.
+- **RO13** F': in names, 5-8 is tiered more than 1-4 (NS1).
+- **RO14** F': in counts, the same (NS2).
+- **RO15** F': every numeral sign with 10+ tokens occurs in 2+ genres (NS11).
+- **RO16** F': the numeral kind does not depend on genre (MI p >= 0.05; NS5).
+- **RO17** A + B: in 2-sign runs of unequal value not directly after a heading sign, the larger value comes first in
+  70%+.
+- **RO18** F': RO17 holds.
+- **RO19** B: '2' is the commonest numeral sign (NS14).
+- **RO20** F': runs worth 12 outnumber runs worth 10 and 11 together (NS17).
