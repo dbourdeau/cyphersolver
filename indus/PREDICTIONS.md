@@ -2605,3 +2605,20 @@ moderately across endings (SK9: 0.49, significant but under 0.6). Bodies that br
 slightly later (SK6: 0.16, p = 0.043). Rank does not follow Fairservis category (SK4), numerals are not early (SK5, mean
 0.50 both), and seals keep the rank no better than other objects (SK10, 70% against 76%). Tally, counting parts: 247
 held, 350 failed (597 registered).
+
+# Forty-fourth set, registered before testing (24 September 2026): lines without a name (round 8 of 10)
+
+'Non-name line' = a line of 2+ signs with no 740 or 520 anywhere; 'name line' = a line for which name_of gives a name.
+Head class from classes(A). A, B pooled unless F is named. 10,000-draw permutations; p < 0.05.
+
+- **NN1** Non-name lines end in a head-class sign less often than name bodies do.
+- **NN2** Non-name lines are more often off seals than name lines, length-stratified (F).
+- **NN3** On seals, the motif depends on whether the line is a name line or a non-name line (A, MI, permutation).
+- **NN4** Non-name lines carry a numeral more often than name lines.
+- **NN5** Non-name lines of 3+ signs contain an attested name body (2+ signs) as a contiguous run more often than
+  within-line shuffles do.
+- **NN6** Non-name lines are shorter than name lines (rank test).
+- **NN7** Distinct non-name texts recur on 2+ objects more often than distinct name texts (F; Fisher).
+- **NN8** Non-name lines open with a heading (817, 820, 861) less often than name lines.
+- **NN9** Harappa has a larger share of non-name lines than Mohenjo-daro, length-stratified (F).
+- **NN10** The five commonest last signs of non-name lines cover 50%+ of them.
