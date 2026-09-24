@@ -3479,3 +3479,21 @@ What else goes with 520
 - **EF18** 520 names open with the heading unit less often than 740 names.
 - **EF19** Seal 520 names are on unicorn seals less often than seal 740 names (F, motif recorded).
 - **EF20** Distinct 520 fish names are one-off less often than distinct 740 fish names (A + B counts).
+
+## Results of the seventy-first set (added after the test; `predict_test71.py`, `results/predict_test71.md`)
+
+Twelve held, eight failed. The fish-520 link replicates everywhere it can be tested with numbers: B alone (EF12: 73%
+against 30%), Harappa (EF13: 82% against 34%), Mohenjo-daro (EF14: 76% against 38%); at the smaller sites it does not
+(EF15: 45% against 40%, 33 names). But it runs through the head: 151 of the 273 520 names are fish-headed, and the fish
+effect does not survive stratifying by head (EF2: +0.7 points, p = 0.16), although a fish elsewhere in the body raises
+520 slightly overall (EF1: 9.6% against 6.4%; EF3 by length: +3.6 points; EF16 in B: 9% against 5%). So 520 is chiefly
+the ending of fish-headed names, and the fish heads divide: 220 (62 of 99 take 520), 240 (44 of 65), 233 (28 of 32) lean
+520, while 222 takes 740 in all 21 (post-test breakdown; EF5: fish variant and ending, p = 0.009). The sign before the
+fish matters too, descriptively: stroke 2 + fish ends in 520 in 31 of 34 names and 415 + fish in 26 of 33, while stroke 3
++ fish ends in 740 in 9 of 11 and 235 + fish in 22 of 26. These counts include repeats (501 405 2 240 520 x29) and were
+not registered; they are leads for the next set. Also: counted fish raise 520 (EF8: 34% against 24%); 520 bodies are
+shorter once fish are removed (EF10: 2.2 against 2.7); 520 is followed by 400 less often (EF17: 35% against 50%) and is
+rarer on unicorn seals (EF19: 73% against 80%). Failed: nearer fish (EF4), roof fish (EF6, the other way: 14% against
+30%), more fish (EF7, p = 0.08), fish removal switching to 740 (EF9: 4 against 9), heading unit (EF18) and repeat rate
+(EF20). EF11 held on only two heads (33, 70) and is not evidence. Tally, counting parts: 423 held, 484 failed (907
+registered).

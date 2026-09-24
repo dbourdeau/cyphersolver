@@ -1445,6 +1445,14 @@ of 740 names). One-off names pair a rare first element with a common head, draw 
 seals; repeated names are short and off the seals, especially at Harappa. Closing pairs are shared between the cities
 more than opening pairs. Tally 411 held, 476 failed.
 
+## Eighty-fifth pass (24 Sept 2026): why 520 goes with fish
+
+Registered first (seventy-first set, 00fe0d73d), tested (`predict_test71.py`). 520 is mainly the ending of fish-headed
+names (the effect does not survive stratifying by head); among fish heads 220, 240 and 233 lean 520 and 222 always
+takes 740. Unregistered lead: stroke 2 + fish -> 520 (31 of 34) against stroke 3 + fish -> 740 (9 of 11), to be tested
+on distinct names. The link holds in B, at Harappa and at Mohenjo-daro, not at the small sites. Tally 423 held, 484
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
