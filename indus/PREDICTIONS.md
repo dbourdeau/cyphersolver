@@ -3297,3 +3297,16 @@ first ':' (Bull1:I -> Bull1); same-text tests use the full field. Names via name
 - **TP8** TP2 holds within Mohenjo-daro alone.
 - **TP9** TP2 holds within Harappa alone.
 - **TP10** The first sign of the seal line depends on the motif (MI).
+
+## Results of the sixty-seventh set (added after the test; `predict_test67.py`, `results/predict_test67.md`)
+
+Four held, six failed; on seals the text-picture link is weak, unlike on tablets. 1,303 seals have a motif, 981 of them
+the 'unicorn' (Bull1). Identical seal texts do not clearly share the picture (TP1: 24 pairs, p = 0.07), no frequent
+sign belongs to a non-unicorn picture (TP7: 0 of 96), the ending is independent of the picture (TP3), and non-unicorn
+seals do not count more (TP6). The name's head depends on the picture over all seals (TP2: p = 0.02) but not within
+Mohenjo-daro (TP8: p = 0.15) or Harappa (TP9: p = 0.35), so TP2 is likely a site mix effect. Line length (TP4, p =
+0.0001) and first sign (TP10, p = 0.016) depend weakly on the picture. Texts found on both a seal and a tablet carry
+the same picture on both more often than chance (TP5: 46 matches over 74 tablets, p = 0.006), so a shared text brings
+its picture with it across media. Reading: seal pictures are largely independent of the name; the tablet pairing
+(sixty-fifth set) is a tablet practice that reuses seal text-picture combinations. Tally, counting parts: 381 held,
+456 failed (837 registered).

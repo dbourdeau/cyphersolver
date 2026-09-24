@@ -1418,6 +1418,12 @@ the alternative closers of the fifty-fifth set, and the reversed count tokens as
 ('None' read as a motif) was found and fixed in the sixty-fifth set; earlier sets need an audit. Still structure
 only; no sound values.
 
+## Eighty-first pass (24 Sept 2026): seal text and seal picture
+
+Registered first (sixty-seventh set, 3a3c0532e), tested (`predict_test67.py`). On seals the picture is nearly
+independent of the name (no motif-specific signs, no within-city head effect), but a text shared by a seal and a tablet
+keeps the same picture on both (p = 0.006). Tally 381 held, 456 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
