@@ -43,3 +43,4 @@ The 'streak' column counts consecutive loops without progress.
 | 9 | 184 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | the cage (four small strokes) is a grammatical affix: caged signs replace the ending (0 of 92 followed by 740/520), B replicates |
 | 10 | 185 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | fish marks change the grammatical job (roof hat = attribute); with the cage, morphology inside the fish signs |
 | 11 | 186 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the jar turn the ending into a name element, B replicates (progress; streak 0) |
+| 12 | 187 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | doubled signs stand at text edges (A and B); brackets change nothing (progress; streak 0) |
