@@ -2123,6 +2123,13 @@ between cities) and carry more information about the seal motif than heads do (z
 are strongly person-like (8.9 times observed): 'office / lineage + personal name' packed into one unit. Fuls 2024
 supported: signs 1 and 2 are not word dividers (Wells rejected). PL5 degenerate. Tally 1135 held, 1073 failed.
 
+## Hundred-and-seventy-fourth pass (24 Sept 2026): the new findings on independent samples
+
+Registered first (210b1fe5b). In the M77 additions: 520 narrow, numeral values local, names open (6.0 times), heads
+closed (1.2). Gujarat seals: names open. Controls replicate on new splits (Linear B persons inside Knossos; Ur III
+Umma against Nippur). RP7 degenerate (no titles in series D); Harappa moulded tablets intermediate. Tally 1143 held,
+1075 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -7013,3 +7013,17 @@ far less (PL7: 0.3%, sign 2 is bound to what follows), and line breaks do not fa
 10 and 9). Wells's partial divider reading fails. Fuls's word length of about 1.7 is not matched by this project's
 unit chaining (PL9: 1.36 signs per word with units from 5+ bodies; the figure depends on the unit threshold).
 Tally, counting parts: 1135 held, 1073 failed (2208 registered).
+
+## Results of the hundred-and-sixtieth set (added after the test; `predict_test160.py`, `results/predict_test160.md`)
+
+Eight held, two failed. **The new findings replicate on independent samples.** In Mahadevan's M77 additions (B,
+Mohenjo-daro against Harappa), the 520 class is narrow (RP1: 9 heads in 29 names; 740 always more at equal size),
+numeral values before a given sign are local (RP2: same commonest value for 18 of 35 signs, 51%), whole names are open
+(RP3: 5.98 times observed) and heads closed (RP4: 1.21 times). Gujarat seals against Mohenjo-daro give the same open
+profile (RP10: 4.62). The controls hold on new splits: Linear B persons are person-like inside Knossos too (RP6: D
+series against the rest, 3.01, 0.22, 0.80), and in Ur III owners are title-like (recurring) and whole legends open
+between Umma and Nippur as between Umma and Girsu (RP8: 2.09, 0.31, 0.61; RP9: 37.1, 0.02, 0.99). Failed: RP7 is
+degenerate (no title word occurs in the D series, so there was nothing to test); Harappa moulded tablets (RP5: 1.99,
+0.34, 0.69) fall between the profiles and are classed person-like by one measure's margin (shared 0.34, equidistant):
+they are neither a fully closed label set like the copper tablets nor as open as seal names. Tally, counting parts:
+1143 held, 1075 failed (2218 registered).
