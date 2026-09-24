@@ -813,6 +813,21 @@ results `results/tamil_brahmi.md`, `results/predict_test.md`.
    enrichment test (against Parpola's 3 + fish), the shuffle bench validated on Linear Elamite, the late bar seals,
    anchors 347/460. Not read in full: Wells 2011/2015, Fuls 2013-2020, Mahadevan 1970/1986/2014, Parpola 2008/2015.
 
+4. **Outside evidence** (background agent; files in the scratchpad `outside/`, not committed). No partial
+   bilingual exists: no object carries both Indus signs and a readable text (Ur U.7683 has cuneiform and no Indus
+   signs; Šu-ilišu's seal is Akkadian). Laursen 2010 lists 29 Indus-inscribed Gulf-type seals; only three carry
+   sequences known in the Indus Valley, and the 'twins' sign begins 4 Bahrain texts: non-Indus names in Indus signs,
+   a test bed rather than a key. Witzel 1999 (EJVS, free) gives the Vedic substrate words (Para-Munda, 'Language X',
+   Meluhhan loans), extracted to CSV but not hand-checked. The Dholavira signboard is already in both corpora;
+   4MSR/Binjor, Kotada Bhadli, Sanauli and newer Rakhigarhi seals are in neither.
+5. **A fuller ICIT-derived corpus** (4,578 objects, 5,559 texts, same sign numbers) turned out to be built into the
+   JavaScript of indusscript.net. The data are ICIT's (Wells, Fuls); used here only locally, not redistributed
+   (`replicate_full.py`, `results/replicate_full.md`, aggregate numbers only). Every structural finding holds on it:
+   endings fixed per name 9 of 1,014 (shuffled 69); fish-final names take 520 in 62% of lines (other names 8%); 740
+   and 520 never adjacent; 6 + fish ratio 4.7 (p = 9e-6), 7 + fish once; short vs long strokes 0.61 bits (0 of 500);
+   the man sign after 740 106 times, text-initial 16. On the 1,203 objects the indus-website dump lacks (mostly short
+   texts): same directions (fixed endings 1 of 162 against 4; fish 520 62% against 7%; 6 + fish ratio 3.8, p = 0.02).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
