@@ -2803,3 +2803,13 @@ line; kind from numerals. Embedded body as in the forty-fifth set. 10,000-draw p
 - **SC8** Seal numeral formulas open with a heading (817, 820, 861) more often than tablet numeral formulas.
 - **SC9** Seal numeral formulas embed an attested name body more often than tablet numeral formulas.
 - **SC10** Seal values are more varied than tablet values (entropy difference, permutation of the seal/tablet label).
+
+## Results of the fiftieth set (added after the test; `predict_test50.py`, `results/predict_test50.md`)
+
+Eight held, two failed. Numbers on seals and on tablets are two practices. Seal counts are larger (SC1: mean 4.0
+against 3.1), use the tiered form (SC2: 12% against 1%), vary more (SC10: 3.1 against 1.9 bits), count different signs
+(SC3, MI 0.68 bits), sit in longer formulas (SC4: 4.3 against 2.7 signs), open with a heading (SC8: 24% against 5%) and
+cite a name more often (SC9: 14% against 8%). 390 after a numeral takes 3 or more in 95% of cases, commonly 5-6 (SC7).
+Seal counts are not tied to the animal motif (SC5) and are as common on Mohenjo-daro seals as on Harappa seals (SC6:
+24% and 25%). Caveat: tablet numerals are dominated by the 700 count tokens (values 2-4), which drives SC1, SC2 and
+SC10. Tally, counting parts: 296 held, 371 failed (667 registered).

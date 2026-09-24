@@ -1297,6 +1297,12 @@ Registered first (forty-ninth set, 8afb1c4f6), tested (`predict_test49.py`). Two
 700 count tokens; the rest (156, 861, 390, 405, 817 390) are single items with their own typical count, spread over
 sites. Counts above 4 are rare. Tally 288 held, 369 failed.
 
+## Sixty-fourth pass (24 Sept 2026): numbers on seals against tablets (loop 2, round 4)
+
+Registered first (fiftieth set, b2d090112), tested (`predict_test50.py`). Seal counts are a separate practice: larger,
+tiered, headed, in longer formulas that sometimes cite a name, counting other signs (390 with 3-9). Not tied to the
+motif and not site-specific among seals. Tally 296 held, 371 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
