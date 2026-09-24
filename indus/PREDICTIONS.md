@@ -2434,3 +2434,14 @@ Lines of 8+ signs ('long') against lines of 5-7 ('middle'); pooled A + B unless 
 - **LT9** Signs rare in the corpus (5 or fewer tokens in A + B) make up a larger share of the tokens of long lines than
   of middle lines.
 - **LT10** Long lines come from Mohenjo-daro more often than middle lines (F).
+
+## Results of the thirty-eighth set (added after the test; `predict_test38.py`, `results/predict_test38.md`)
+
+Three held, seven failed. 210 long lines (8+ signs), 1,215 middle lines (5-7). Deviation: LT6 used 1,000 shuffles.
+**LT1 holds** (two or more endings: 7.1% of long lines against 1.1%), **LT3 holds** (a numeral: 79% against 69%),
+**LT7 holds** (distinct long texts recur less: 2.9% against 6.6%). But long lines are not two texts joined: none of 210
+splits into two lines attested elsewhere (LT6), and after a first ending the rest closes with an ending in only 30%
+(LT2). Long lines are not off the seals (LT4 the other way), not titled (LT5 the other way), end in an ending as often
+as middle lines (LT8), use rare signs no more (LT9) and are not a Mohenjo-daro trait (LT10). Long lines are single,
+longer, more often numbered compositions, a few of them with a second name. Tally, counting parts: 217 held, 330 failed
+(547 registered).

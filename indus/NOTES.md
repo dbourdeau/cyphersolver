@@ -1213,6 +1213,12 @@ Registered first (PREDICTIONS.md, thirty-seventh set, f8c01f9fa), tested (`predi
 Names look alike across regions (RG1-RG5, RG8-RG10 fail); four Sindh-only heads (RG6) and regional numeral notation
 (RG7) hold. Tally 214 held, 323 failed.
 
+## Fifty-second pass (24 Sept 2026): the longest texts (round 2 of 10)
+
+Registered first (thirty-eighth set, d09e1ff3d), tested (`predict_test38.py`; LT6 1,000 shuffles). Long lines hold two
+endings more (LT1), numbers more (LT3), recur less (LT7); they are not two attested texts joined (LT6: 0 of 210), not
+more titled, not off the seals. Single longer compositions. Tally 217 held, 330 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
