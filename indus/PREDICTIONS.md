@@ -835,3 +835,48 @@ Seals and their owners (F)
   length-stratified.
 - **U25** The post-ending sign depends on the site: MI(site; post-ending sign) on seals exceeds site-label
   permutation (Mohenjo-daro / Harappa / other).
+
+## Results of the seventeenth set (added after the test; `predict_test17.py`, `results/predict_test17.md`; checks after the test `robust17.py`, `results/robust17.md`)
+
+Twelve held, thirteen failed.
+
+**Tablets record counts of a measured commodity.**
+- **U1 holds** (tablet numerals slightly larger: +0.13 strokes, p = 0.043), **U2 holds** (a numeral at the edge of a
+  tablet text 11 points more often than on seals, p = 0.0001), **U3 holds** (the sign after a numeral comes from a far
+  smaller set on tablets: entropy 2.70 bits lower, p = 0.0001). Check: on tablets 48% of numerals are followed by 700
+  (Fairservis J-1 'container used to measure'), nearly all long-stroke (long 3 x140, long 4 x110, long 2 x94); on seals
+  numeral + 700 occurs 4 times. The Harappa tablets carry 'N containers' in the long-stroke system; the seal names do
+  not. (Numeral + 'pot' as a unit was noted in the earlier Parpola checks; the tablet / seal split is new here.)
+- **U5 holds**: after an ending, 400 is the usual following sign off the seals (167 of 220) and rare on seals (15 of 73);
+  counting each distinct text once, 78 of 101 against 14 of 71 (p < 0.0001). 400 belongs to tablets and sealings.
+- U4 fails (incised and moulded tablets carry numerals alike).
+
+**33-520 is not what was expected.**
+- U6 fails narrowly (33-520 ends its text 44 of 45 and 12 of 12, against 90% and 79%; p = 0.083, 0.076), U7 fails (no
+  head stands before it: 0 of 57), U8 fails (its stems do not also take 740), U9 fails (it is a seal expression, 27% of
+  seal lines ending 520 against 9% on tablets and sealings), U10 untestable (2 cases in M77). 33-520 closes seal texts
+  and follows non-head signs: it looks like a closing formula of its own, not a name's ending.
+
+**Heads, attributes, prediction.**
+- **U12 holds** (heads select their attributes: MI 3.38 bits in both samples, p = 0.0001 against shuffled heads).
+- **U14 holds** (human signs stand last 88% and 93%, other categorised signs 45% and 42%): humans are heads.
+- **U15 holds**: a head-to-ending rule learned on A predicts the ending of 483 B names at 95.0% against a majority
+  baseline of 88.2% (p = 2e-7). The class rule carries across transcriptions.
+- U11 fails (heads not steadier than attributes across space, p = 0.30), U13 fails (slot 2 not steadier than slot 1).
+
+**The heading.**
+- **U17 holds** (headed names use other heads: JSD 0.230, p = 0.0004; 0.346, p = 0.031).
+- **U20 holds** (pots almost never carry the heading: 3 of 56 lines against 19.6% on seals, p = 0.003).
+- U16 fails (headed names are shorter, not longer), U18 fails in B (openers select heads in A only), U19 fails narrowly
+  (sealings 29% against 19.6%, p = 0.053).
+
+**Seals.**
+- **U21 holds** (unicorn seals carry longer texts: 4.85 against 4.25 signs, p = 0.0002) and **U22 holds** (and the
+  heading more often, +5 points, p = 0.042): the unicorn seal goes with fuller, more formal texts.
+- **U24 holds**: cylinder seals, the Mesopotamian form, omit the endings (18 of 19 lines). Check: the 8 cylinder seals
+  found at Indus sites also all lack an ending, so it is the seal form, not only the find-place, that goes with the
+  foreign kind of text.
+- U23 fails (names longer in later levels at Harappa, 3.64 against 2.37, p = 0.0001, but not at Mohenjo-daro), U25
+  fails (the post-ending sign does not depend on the site).
+
+Tally, counting parts: 43 held, 69 failed (112 registered).

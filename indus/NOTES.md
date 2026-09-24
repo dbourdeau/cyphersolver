@@ -1024,6 +1024,16 @@ steadier than attributes over time at Harappa (P13); fixed attribute slots (P14)
 head + ending and ending + 90/400/151 are never split by a line break (P17, P18: 1-3% against 23-25%). Tally 31 held,
 56 failed.
 
+## Thirty-first pass (24 Sept 2026): twenty-five hypotheses on the surviving leads
+
+Registered first (PREDICTIONS.md, seventeenth set, bc91e75ff), tested (`predict_test17.py`), checked (`robust17.py`).
+Held: tablets record 'long-stroke N + 700 (measuring container)' (U1-U3; 48% of tablet numerals precede 700, seals 4
+cases), 400 after an ending is a tablet / sealing sign (U5, distinct texts 78/101 against 14/71), heads select
+attributes (U12), humans are heads (U14), head-to-ending rule transfers A to B at 95% against 88% (U15), headed names
+use other heads (U17), pots lack the heading (U20), unicorn seals carry longer, more often headed texts (U21, U22),
+cylinder seals lack endings even at Indus sites (U24). 33-520 is a seal-closing formula, not an ending (U6-U10 fail).
+Tally 43 held, 69 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
