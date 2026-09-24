@@ -7682,3 +7682,14 @@ objects whose CISI number is not among A's objects. Motif codes: multi-headed an
 - **VP7** Bare lines of 2+ signs (genre 'bare') have a last sign attested as a name head in 50%+ (they are names
   without the ending), which licenses head / modifier roles for them.
 - **VP8** With those bare-line roles R rises by 3 points or more.
+
+## Results of the hundred-and-seventy-seventh set (added after the test; `predict_test177.py`, `results/predict_test177.md`)
+
+Two held, six failed. **S does not move.** A variable-order (Witten-Bell, order 5) model is worse alone (VP1: 5.595
+bits) and adds only 0.005 inside the mixture (VP2: 4.707, weight 0.13), short of the registered 0.05, so the metric's
+model is unchanged: the repeated formulas are already captured by the trigram with position and end distance. Reading
+the lines backwards costs no more than forwards (VP3: 5.586 against 5.595). **M cannot move by this route**: the
+provisional picture anchors cannot be tested on objects that were not used to propose them (VP4: no new object carries
+347; VP5: two carry 460, neither with a plant). **R moves**: bare lines end in a sign attested as a name head in 70%
+(VP7), which licenses head and modifier roles for them, and R rises from 72.9% to 81.1% (VP8). Tally, counting parts:
+1229 held, 1151 failed (2380 registered).

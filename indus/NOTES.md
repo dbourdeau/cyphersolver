@@ -2252,6 +2252,12 @@ Standing goal set by the owner: loops toward decipherment with a progress metric
 New components (role, class, numeral value) add nothing to S; the slot-based modifier role lifts R to 72.9%; heads are
 a stable class (88%), modifiers are not (57%). Tally 1227 held, 1145 failed.
 
+## Hundred-and-ninety-first pass (24 Sept 2026): decipherment loop 2
+
+Registered first (dcbc179c7). A variable-order model does not improve S (0.005 inside the mixture); the provisional
+picture anchors 347 and 460 cannot be tested on new objects (0 and 2 cases), so M stays; bare lines end in a name head
+70% of the time, and head / modifier roles for them lift R to 81.1%. Tally 1229 held, 1151 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
