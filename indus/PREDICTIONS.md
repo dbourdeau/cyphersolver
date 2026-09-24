@@ -4805,3 +4805,19 @@ Neighbouring catalogue numbers
 - **AL18** 10+ number-adjacent pairs have context cosine 0.3+.
 - **AL19** B: AL15 holds (contexts from B, signs with 5+ tokens).
 - **AL20** F without copper: AL15 holds.
+
+## Results of the hundredth set (added after the test; `predict_test100.py`, `results/predict_test100.md`)
+
+Eight held, twelve failed. Signs next to each other in the catalogue numbering behave alike: pairs whose numbers differ
+by 1 are far more context-similar than random pairs (AL15: 0.17 against 0.04; AL19 in B, p = 0.0006; AL20 in F, p =
+0.0002), and 12 of the 30 most context-similar pairs have numbers within 5 (AL14, p = 0.001). Since the catalogue
+groups signs by shape, shape families share function. The strongest candidates for variant forms of one sign are
+435/436 (cosine 0.73), 526/527 (0.61), 336/337 (0.57), 554/555 and 705/706 (AL18: 5 pairs at 0.3+, under the
+threshold of 10). But these twins are not regional or period variants: they are not split by city (AL1, AL5: only 347/95
+and 636/773) or period (AL4), they co-occur in lines like random pairs (AL2, AL16), and 705/706 are spread alike over
+cities and periods (AL6, AL7), as are 220/240 (AL8) and the headings over periods (AL10). The one city split is 233,
+commoner at Mohenjo-daro than 220 (AL9: 67% against 53%). Mohenjo-daro has 13 signs with 5+ tokens never seen at
+Harappa (AL11), and half of them have a nearest context neighbour that is Harappan (AL12: 6 of 12), a weak sign of local
+spellings. 57 signs with 5+ tokens in A never occur in B (AL13): Mahadevan's list merges many of ICIT's signs, which
+should be kept in mind for every 'B replication'. AL3 is uninformative (few categorised signs among the pairs).
+Tally, counting parts: 700 held, 787 failed (1487 registered).

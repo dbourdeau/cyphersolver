@@ -1661,6 +1661,13 @@ Registered first (ninety-ninth set, 1fea03ca4), tested (`predict_test99.py`). 7 
 by numerals, on seals) and 14 closer signs (740, 520, 400 and a set of formula/tail closers 151, 154, 156, 527, 565,
 621, 679) hold their positions in both transcriptions and both cities (93%, 90%). Tally 692 held, 775 failed.
 
+## Hundred-and-fourteenth pass (24 Sept 2026): variant forms of one sign
+
+Registered first (hundredth set, 48a85973a), tested (`predict_test100.py`). Catalogue neighbours (shape families) share
+contexts in A + B, B and F; candidate same-sign pairs 435/436, 526/527, 336/337, 554/555, 705/706. They are not split by
+city or period, so they are free variants, not regional spellings. Mohenjo-daro has 13 signs unseen at Harappa. B
+merges 57 of A's signs, a caveat for B replications. Tally 700 held, 787 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
