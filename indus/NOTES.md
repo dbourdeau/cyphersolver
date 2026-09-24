@@ -2306,6 +2306,13 @@ are never followed by 740 / 520 (0 of 92), share their bases' stems (cosine 0.43
 the cage turns a head into a closing form replacing the ending, morphology inside the sign. Established for the caged
 fish, suggested for the rest (17 non-fish tokens). R gains a caged-marker role. Tally 1253 held, 1178 failed.
 
+## Hundred-and-ninety-ninth pass (24 Sept 2026): decipherment loop 10, the other fish marks
+
+Registered first (c0c14f8de). The marks on the fish change its job in A and B: the roof hat marks an attribute (before
+another fish 40% against 15%), bar / roof / whisker fish are less often heads than the plain fish, and the variant
+agrees with the preceding sign and the counted value. With the cage (loop 9): one fish word written with marks for
+head, attribute and closing forms. Metric unchanged. Tally 1258 held, 1180 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

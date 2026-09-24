@@ -7944,3 +7944,18 @@ too rare to test (1-18 tokens). Names via R.name_of on distinct lines; A and B (
 - **MF6** On B, the value of a numeral run before a fish depends on the variant (MI; NP4's result on a new sample).
 - **MF7** The variant depends on the preceding sign beyond permutation (MI), in A and in B (the mark agrees with its
   context, as inflection would).
+
+## Results of the hundred-and-eighty-fifth set (added after the test; `predict_test185.py`, `results/predict_test185.md`)
+
+Five held, two failed. **The marks added to the fish change its job.** The variant predicts whether the fish is a
+name's head or a modifier, in A (MF1: MI 0.036, p = 0.0001) and B (MF2: 0.074, p = 0.0007). The roof-hat fish 235
+stands directly before another fish in 40% against 15% for the plain fish (MF3, p < 0.0001): the hat marks an
+attribute. The bar (233), roof (235) and whisker (240) fish are less often heads than the plain fish 220 in both
+samples (A -0.11 / -0.21 / -0.18; B -0.21 / -0.29 / -0.24); MF5 fails only on the stroke fish 231, whose difference is
+near zero with opposite signs (-0.03, +0.01). The variant agrees with its context: it depends on the preceding sign in
+both samples (MF7: MI 0.79 and 1.02, p = 0.0001) and, on B, on the counted value before it (MF6: p = 0.012, NP4
+replicated on a new sample). Whisker-fish names do not take 520 more than plain-fish names (MF4). Reading, with loop
+9: the fish family is one word written with a small set of marks that change its grammatical job, the plain fish as
+head, the marked fish as attributive or derived forms, the caged fish as a closing form; morphology inside the signs.
+Roles already cover these tokens, so the metric does not move. Tally, counting parts: 1258 held, 1180 failed (2438
+registered).
