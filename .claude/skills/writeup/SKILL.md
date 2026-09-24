@@ -22,15 +22,15 @@ not from memory. The slug is the folder name unless a page already exists under 
 - `git fetch origin` and read `origin/main:docs/_build_site.py`, not the branch copy, if they differ: main's is newer.
 - Read one recent page for tone and structure: `docs/gramont1529.html` (solved), `docs/lorraine1592.html`
   (partly read), `docs/orpo1942.html` (attempted, not solved).
-- Decide the outcome class. `st` in the manifest is one of `solved` (meets the read bar), `partial`
-  (partly read), `found` (explained, or found already solved by others), `stuck` (attempted, not solved). The README
-  section, solved.html and SOLVED_* rows follow from it.
-- Solved or read (README Conventions): for `st='solved'`, the badge `stt` starts with `solved` when the key was broken
-  here (profile `conditions.attack` ciphertext-only, crib or known plaintext) and is `read` when an existing key or
-  decipherment was used. The README row goes in "Solved: key broken here" or "Read with an existing key or
-  decipherment" to match. Below the read bar (`st='partial'`) the same split: badge `solved in part` and table
-  "Partly solved: key broken here, read in part", or badge `read in part` (or a detail such as `2 of 7 read`) and
-  table "Partly read with an existing key or decipherment". `--audit` section G checks all four.
+- Decide the outcome method (George Lasry's categories, `docs/_methods.py`, `docs/glossary.html`) and write it
+  into the profile: `outcome.method`, `outcome.method_basis` (one sentence of evidence), `outcome.contribution`.
+  `python docs/_classify_outcomes.py` proposes one from the profile's fields; decide from NOTES. The extent
+  (complete / partial) comes from `outcome.class` and the read bar. The build derives the badge, colour, seal and the
+  hero outcome line from the method, so the `st`/`stt` typed in PAGES only matter for pages without a profile.
+  The README row goes in the section of its method (`M.SECTION`); `--audit` section G checks it.
+- Words (README Conventions, `python docs/_check_terms.py <slug>`): say what happened ("deciphered with Lasry's
+  key", "key recovered from the clear passages", "transcribed the contemporary decipherment"); do not use "read" or
+  "solved" alone as an outcome word, and do not call an item unsolved because a catalogue says "undeciphered".
 - Dates: "Date" is the document's date. The work date is the day the finding first landed in the repository
   (`git log --diff-filter=A --format=%ad --date=short -- <folder>/ | tail -1` if it was not today).
 
@@ -107,8 +107,8 @@ and version stamps; you write everything else. Required parts, in order:
    </dl>
    </div>
    ```
-   The badge carries the outcome as the title gives it (Read / Read in part / Attempted / Not a cipher…) and the
-   measure. Relabel rows that do not fit ("The document", "How it was tried", "Why it resists"), drop an empty
+   The badge carries the method and extent in the glossary's words (known key applied, partial; key recovered from
+   the ciphertext alone; not solved; not a cipher…) and the measure. Relabel rows that do not fit ("The document", "How it was tried", "Why it resists"), drop an empty
    one, and add a "Credit" row for prior work or a contributor. Examples: `docs/toledo1565.html`,
    `docs/wesselenyi1664.html`.
 5. Numbered `<h2><span class="num">01</span> …</h2>` sections: the documents and keys; the reading (one section
@@ -197,10 +197,12 @@ three are data files you edit by hand; each is a few lines, and skipping one lea
 
 ## 3. The ledgers in the repository root
 
-- `README.md`: one row in the matching `## Results` table (Solved: key broken here / Read with an existing key or decipherment / Explained / Partly solved: key broken here, read in part / Partly read with an existing key or decipherment /
-  Found already solved by others / Attempted and closed). Five columns: Target (name, place, dates, shelfmark,
-  catalogue item and class), Date (of the document), work date, Result (bold outcome, then what was read and
-  what is open), Where: `` [`<folder>/`](<folder>/) · [write-up](https://dbourdeau.github.io/cyphersolver/<slug>.html) ``.
+- `README.md`: one row in the `## Results` table of the target's outcome method (`docs/_methods.py` SECTION: Key
+  recovered from ciphertext-only / ... based on plaintext from external sources / ... based on adjacent plaintext /
+  Read after matching with key from external sources / Read with known key / Read from existing decipherment / Not
+  solved / Not applicable). Six columns: Target (name, place, dates, shelfmark, catalogue item and class), Date (of
+  the document), Landed (work date), Extent (complete / partial / &mdash;), Result (what was deciphered and what is
+  open), Where: `` [`<folder>/`](<folder>/) · [write-up](https://dbourdeau.github.io/cyphersolver/<slug>.html) ``.
   The Where link is what marks the row as written up; without it the row lists as "notes only".
 - `SOLVED_CATALOGUE.md` (solved and partly read only): next number, same columns as the rows above it.
 - `SOLVED_RANKING.md` (solved and partly read only): a `pN` provisional row with the six axis scores and the

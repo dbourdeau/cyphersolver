@@ -182,6 +182,9 @@
   }
  ],
  "outcome": {
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The homophonic key (70 values) was rebuilt from cribs taken from the clear German around the cipher passages ('durch' after 'mich aber von zeit zu zeit', then 'und'), which let the constrained annealer produce 'nach der Oberpfaltz und gegen die [442]'; the key was then extended word by word from context. The Swedish Banér keys on DECODE (R4122, R4123/R4325, R4266) were tried and did not fit.",
+  "contribution": ["transcription", "key recovered"],
   "class": "read in part",
   "key": "partial",
   "fraction_read": 0.898,

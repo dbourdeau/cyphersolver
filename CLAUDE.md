@@ -39,6 +39,15 @@ reading. The checker and the Stop hook enforce the `## Remaining gaps` and `## E
 If a target is genuinely not finished, or deliberately not written up (found solved by others with nothing added
 here), put `Status: in progress` or `Status: no write-up` in the first forty lines of its `NOTES.md`.
 
+## Outcome method and priorities
+
+Every profile carries `outcome.method`, George Lasry's categories (`docs/_methods.py`, `docs/glossary.html`): key
+recovered from ciphertext-only / from external plaintext / from adjacent plaintext; read after matching with an
+external key; read with known key; read from existing decipherment; not solved; not applicable. The site badge, the
+README section and the scoreboard follow it. Say what happened ("deciphered with Lasry's key", "key recovered from the
+clear passages"); do not use "read" or "solved" alone as an outcome word (`python docs/_check_terms.py <slug>`).
+Priorities (TARGETS.md): original ciphertext-only attempts first, external-material matches second.
+
 ## Every target keeps a profile.json
 
 The project is being written up with George Lasry as a paper on how LLMs perform against historical ciphers.

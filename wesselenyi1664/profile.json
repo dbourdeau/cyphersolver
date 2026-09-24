@@ -77,6 +77,9 @@
   {"date": "2026-09-22", "kind": "verification", "what": "Re-decoded every run with the final key; all Latin in context. Codes 60, 64 left unread.", "result": "worked"}
  ],
  "outcome": {
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The reversed-alphabet key was recovered by Latin annealing with at most two numbers per letter and fixed by hand from probable words; DECODE key R672 (Teleki collection), found afterwards, has the same alphabet but different codes.",
+  "contribution": ["key recovered", "sender or date identified"],
   "class": "read",
   "key": "recovered",
   "fraction_read": 0.988,

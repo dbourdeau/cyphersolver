@@ -1,5 +1,15 @@
 # Target tracker — unsolved ciphers from cryptiana's list
 
+**Priorities from 24 Sept 2026** (George Lasry's advice). Put the time on:
+1. **Original solutions**: attempts to recover a key from the ciphertext alone, using the strongest model available.
+2. **External material**: solutions that match the ciphertext with a key or plaintext found elsewhere (a printed
+   edition, a calendar, a key filed in another collection).
+
+Targets whose work would only be transcribing and applying a key already identified for the document, or
+transcribing an existing decipherment, come last. They still get a DECODE correction when one is due. For harder
+problems outside the historical corpus, see `mtc3/` (MysteryTwister challenges). Outcome categories:
+`docs/glossary.html` and `profile.schema.json` (outcome.method).
+
 Source list: https://cryptiana.web.fc2.com/code/unsolved.htm (S. Tomokiyo), re-checked 2026-09-15 against the
 source as last modified 6 September 2026. Ranked 2026-09-14 by feasibility for
 model-driven work (multilingual reading, historical cribs, cross-referencing digitised editions, fast solver

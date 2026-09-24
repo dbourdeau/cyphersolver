@@ -61,6 +61,9 @@
   {"date": "2026-09-14", "kind": "reading", "what": "Independent decryption from the ciphertexts with the published alphabets and dictionary Viterbi segmentation (decrypt.py) recovers both plaintexts, garbling only at the encoder's slips.", "result": "worked"}
  ],
  "outcome": {
+  "method": "read with known key",
+  "method_basis": "Solved by David Vierra (May 2023, published online before the attempt); his two alternating alphabets were re-applied here to the ciphertexts and the claimed plaintexts re-encrypted to confirm them.",
+  "contribution": ["none"],
   "class": "already solved",
   "key": "recovered",
   "verification": ["key confirms", "independent clear copy"],

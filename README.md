@@ -478,26 +478,33 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   design that the same solver does recover.
 - Before treating a catalogue item as unsolved, check the 19th-century printed editions (Avenel, Camden Society,
   Nuntiaturberichte) and the comment threads of the list posts. Six items so far were already solved in the open.
-- **The read bar.** A target is *read* when (1) at least 95% of its cipher tokens read as sense (`fraction_coherent`
+- **Extent: complete or partial.** A target's text is *complete* when (1) at least 95% of its cipher tokens give sense (`fraction_coherent`
   where set, else `fraction_read`, measured from a reading file, not estimated); (2) no gap is left untried; (3) every
-  document in it is read (judged per letter: a group with one unread letter is *read in part*); and (4) what stays open is
-  scattered code groups or names, or pieces blocked from outside (no key material, too short, illegible, needs the archive).
-  Otherwise it is *read in part*. The state of the key is recorded separately (`outcome.key`: recovered / partial / none),
+  document in it is covered (judged per letter: a group with one letter left open is *partial*); and (4) what stays open
+  is scattered code groups or names, or pieces blocked from outside (no key material, too short, illegible, needs the
+  archive). Otherwise it is *partial*. (In `profile.json` the extent is `outcome.class`: read / read in part.) The state of the key is recorded separately (`outcome.key`: recovered / partial / none),
   and open nomenclator codes are counted apart (`outcome.codes_open`), because historians call a letter deciphered with
   scattered code gaps. There is no field standard to borrow: DECODE's status labels are assigned by each record's owner
   (Megyesi et al., HistoCrypt 2019), and computational work calls ~95–98% token accuracy "solved" without fixing a
   cut-off (Ravi & Knight 2011: Zodiac-408 at 97.8%). The bar, and the no-untried-gap condition, are this project's own.
-- **Solved and read.** A text that meets the read bar is *solved* when the key was recovered here by cryptanalysis
-  (profile `conditions.attack` = ciphertext-only, crib or known plaintext), and *read* when it was read with a key or
-  decipherment that already existed (a key record, a published key, a sibling letter's key, the contemporary
-  decipherment). A crib taken from a partial gloss still counts as solved; a complete decipherment or key in hand does
-  not. The README tables "Solved: key broken here" and "Read with an existing key or decipherment", the site badges
-  (`solved` / `read`) and the scoreboard follow the profile; `python docs/_check_writeup.py --audit` section G lists
-  any disagreement. A target read here and later found solved by others keeps *solved* only when the earlier reading
-  was found after this one and not used (`prior_solution.found` = after reading, `used` = false). The same split runs
-  below the read bar: *solved in part* (key broken here, text read in part) and *read in part* (existing key or
-  decipherment), in the tables "Partly solved" and "Partly read with an existing key or decipherment". A target
-  examined and adjudicated but not read goes under "Attempted and closed".
+- **Outcome method.** Every target is classed by how its text was obtained, in George Lasry's categories (email of
+  21 Sept 2026) plus one for complete existing decipherments: *key recovered from ciphertext-only*; *key recovered
+  based on plaintext from external sources* (an edition, a calendar, a copy elsewhere); *key recovered based on adjacent
+  plaintext* (a partial interlinear or marginal decipherment, clear passages, a deciphered copy in the same file);
+  *read after matching with key from external sources* (an existing key not tied to the document, found here to fit);
+  *read with known key* (a key already identified for the document or its correspondence); *read from existing
+  decipherment*; *not solved*; *not applicable* (not a cipher, or not reachable). The first three are cryptanalysis done
+  here. The method is `outcome.method` in `profile.json`, with a sentence of evidence (`method_basis`) and what the work
+  added (`contribution`: transcription, decipherment with an ambiguous key, key recovered, key extended or corrected,
+  sender or date identified, catalogue correction). Definitions: `docs/_methods.py` and
+  [the glossary](https://dbourdeau.github.io/cyphersolver/glossary.html). The Results tables, the site badges, the
+  write-up filters and the scoreboard follow the profile; `python docs/_check_writeup.py --audit` section G lists any
+  disagreement. Whether and when an earlier solution was found is recorded apart (`prior_solution`): a target whose key
+  was recovered here before an earlier solution came to light is an independent re-solution and is marked as such.
+- **Words.** "Read" and "solved" are not used alone as outcome words, because they mix method and extent. The pages
+  say what happened (deciphered with a known key, key recovered from the clear passages, the contemporary
+  decipherment transcribed). A catalogue's "undeciphered" (Tomokiyo) means no contemporary decipherment is known, not
+  unsolved. `python docs/_check_terms.py <slug>` lints a page for these and for the style tells.
 - Dates in notes are absolute. Sessions are dated so that "since" claims can be checked against the source lists' last-modified dates.
 
 ## Publication drafts

@@ -1380,7 +1380,7 @@ def outcome_html(p):
     if not m: return ''
     ext = {'complete': 'complete', 'partial': 'partial', 'none': 'text not obtained', 'n/a': ''}[p['extent']]
     if p['extent'] == 'partial' and p.get('frac'): ext += f' ({round(100 * p["frac"])}% of the cipher)'
-    bits = [f'Method: <a href="glossary.html#{M.KEY[m]}">{M.LABEL[m] if m != M.NA else plain(p["stt"])}</a>']
+    bits = [f'Method: <a href="glossary.html#{M.KEY[m]}">{m if m != M.NA else plain(p["stt"])}</a>']
     if ext: bits.append(f'Extent: {ext}')
     return '<p class="outcome">' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'
 

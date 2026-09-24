@@ -75,6 +75,9 @@
   {"date": "2026-09-15", "kind": "verification", "what": "The 414 plaintext cells equal the token count of the published plaintext and read as it does, apart from transcription slips (c/e, U for ll, 6 for o).", "result": "worked"}
  ],
  "outcome": {
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The 20-column transposition order was found by a quadgram hill-climber over the rows of Tomokiyo's transcription without the plaintext, but only after the TNA blog of 14 Oct 2025 (Brown; Lasry, Biermann and Tomokiyo) gave the system; the project's own earlier substitution attack failed.",
+  "contribution": ["none"],
   "class": "already solved",
   "key": "partial",
   "fraction_read": 0.988,
