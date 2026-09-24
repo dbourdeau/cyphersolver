@@ -5983,3 +5983,22 @@ and names on steatite take 520 twice as often as names on other materials (MS8: 
 in the ninetieth set). Count lines sit on slightly smaller objects than name lines (MS11). Not supported: unicorn seals
 larger (MS3, p = 0.14), different seal sizes between the cities (MS9: both median 26.7 mm), and counting seals being
 larger (MS12, the other way). Tally, counting parts: 1005 held, 972 failed (1977 registered).
+
+# Hundred-and-thirty-first set, registered before testing (24 September 2026): size beyond text length, and seal shapes (twelve hypotheses)
+
+Size and material as in the hundred-and-thirtieth set. Length-controlled tests permute labels within strata of total
+text length (2, 3, 4, 5, 6+ signs) and compare mean size; 10,000 draws; p < 0.05. SEAL:S (square) and SEAL:R
+(rectangular) are ICIT's seal types.
+
+- **SZ1** Headed seals are bigger than unheaded ones at equal text length.
+- **SZ2** Closer seals are smaller than name seals at equal text length.
+- **SZ3** At Harappa, later seals are bigger than earlier ones at equal text length.
+- **SZ4** Text density (signs per mm) falls as seal size grows (Spearman between size and density negative, significant).
+- **SZ5** Seals with a 520 name are smaller than seals with a 740 name at equal text length.
+- **SZ6** Seals from the smaller sites are smaller than seals from the two cities (rank test).
+- **SZ7** Lines on rectangular seals are longer than lines on square seals (rank test).
+- **SZ8** Rectangular seals have no motif more often than square seals.
+- **SZ9** Rectangular seals carry count formulas more often than square seals (lines).
+- **SZ10** Rectangular seals are a larger share of seals at Harappa than at Mohenjo-daro.
+- **SZ11** Moulded tablets are smaller than incised tablets (rank test).
+- **SZ12** Copper tablets are larger than moulded tablets (rank test).
