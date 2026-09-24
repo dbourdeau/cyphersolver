@@ -7222,3 +7222,16 @@ among Mohenjo-daro seals (1,000 draws). 'Harappa' = all Harappa seals in F unles
   Indus shared names are (CR6).
 - **RN10** Ur III owner names found in both Umma and Girsu are shorter (characters) than those found in one (rank
   test).
+
+## Results of the hundred-and-sixty-fifth set (added after the test; `predict_test165.py`, `results/predict_test165.md`)
+
+Three held, seven failed. **Mohenjo-daro does not converge on Harappa in general.** Over 512 Mohenjo-daro seals with a
+level (287 early, 225 late) against 279 Harappa seals, the heads (CV2: JSD 0.282 early, 0.286 late), the whole sign
+distribution (CV3: 0.143 and 0.143; CV8 on square seals: 0.148 and 0.153) and the numeral notation (CV5) do not move
+towards Harappa; the openers that rise at Mohenjo-daro are not specifically those common at early Harappa (CV1:
+Spearman 0.16, p = 0.13); bare lines do not rise (CV6). Only the mean name length moves slightly towards Harappa's
+(CV4: 3.63 to 3.76 against 3.73, p = 0.048), and Harappa does not move towards early Mohenjo-daro (CV7 holds, as
+registered). Gujarat openers are not closer to Harappa (CV9); Kalibangan's are marginally (CV10, only 11 openers).
+**This corrects set 164's reading**: the rise of frequent openers at Mohenjo-daro is a local change in how names
+begin, not convergence on Harappa; 'converge on Harappa's openings' in set 164 should read 'shift towards frequent
+openings, which Harappa also used'. Tally, counting parts: 1171 held, 1097 failed (2268 registered).

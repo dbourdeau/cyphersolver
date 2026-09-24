@@ -2159,6 +2159,13 @@ already 75% early); the rise holds on square seals alone, is not numerals, and i
 Rectangular seals are later and use the frequent openers more. Names stay individual (no more recurrence late).
 Mohenjo-daro converges on Harappa's name openings. Tally 1168 held, 1090 failed.
 
+## Hundred-and-seventy-ninth pass (24 Sept 2026): does Mohenjo-daro converge on Harappa?
+
+Registered first (sets 165-166 together, bfebc0d63). No: heads, all signs and numeral notation at Mohenjo-daro do not
+move towards Harappa from early to late, and the rising openers are not specifically Harappa's. Only name length moves
+slightly. Set 164's 'converges on Harappa' is corrected to a local shift towards frequent openings. Tally 1171 held,
+1097 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
