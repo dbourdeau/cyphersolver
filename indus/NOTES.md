@@ -1890,6 +1890,12 @@ size tracks text length (0.42), headed seals are bigger and closer seals smaller
 (23 to 30 mm); moulded tablets are faience, faience texts are short, and 520 names are a steatite (seal) feature.
 Field 31 read as size by inference. Tally 1005 held, 972 failed.
 
+## Hundred-and-forty-fifth pass (24 Sept 2026): size beyond text length, and seal shapes
+
+Registered first (hundred-and-thirty-first set, 7c59f3fba), tested (`predict_test131.py`). Headed/closer size effects
+were text length; later Harappa seals are bigger in their own right (+6.7 mm). Rectangular seals are a separate kind:
+pictureless (96%), more counting, more Harappan. Tally 1013 held, 976 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

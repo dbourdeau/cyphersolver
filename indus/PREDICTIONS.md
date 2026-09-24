@@ -6002,3 +6002,15 @@ text length (2, 3, 4, 5, 6+ signs) and compare mean size; 10,000 draws; p < 0.05
 - **SZ10** Rectangular seals are a larger share of seals at Harappa than at Mohenjo-daro.
 - **SZ11** Moulded tablets are smaller than incised tablets (rank test).
 - **SZ12** Copper tablets are larger than moulded tablets (rank test).
+
+## Results of the hundred-and-thirty-first set (added after the test; `predict_test131.py`, `results/predict_test131.md`)
+
+Eight held, four failed. The size differences between headed and unheaded seals and between closer and name seals are
+due to text length: at equal length they vanish (SZ1: p = 0.74; SZ2: p = 0.15), and 520 seals are not smaller (SZ5).
+Later Harappa seals are bigger even at equal length (SZ3: +6.7 mm, p = 0.0002), so seal size grew over time in its own
+right; small seals pack signs tighter (SZ4), and seals from the smaller sites are smaller (SZ6: 24.8 against 27.7 mm).
+Rectangular seals (SEAL:R) are a distinct kind: 96% have no picture against 5% of square seals (SZ8), their lines are a
+little longer (SZ7: 4.8 against 4.4), they carry counts more (SZ9: 25% against 18%), and they are commoner at Harappa
+(SZ10: 25% against 14% of seals). Copper tablets are the largest tablets (SZ12: 31.6 against 22.9 mm); moulded tablets
+are larger than incised ones, not smaller (SZ11: 22.9 against 14.7). Tally, counting parts: 1013 held, 976 failed (1989
+registered).
