@@ -1584,3 +1584,54 @@ front of a head.
 change at Mohenjo-daro over time.
 
 Tally, counting parts: 110 held, 177 failed (287 registered).
+
+# Twenty-seventh set, registered before testing (24 September 2026): the Harappa name records, numbers, labels
+
+Leads: incised name tablets with 400 are a Harappa genre naming seal-holders, with the number before the ending (T2-T10);
+each long-count unit has its usual values (N1); fish take the stroke pair (N2); affixed variants are attributes that
+alternate with their base (V2-V4); direct writing runs left to right more (D2); copper tablets are labels (X2).
+Conventions as the twenty-sixth set (F read with lines reversed; 'name tablet' = TAB:I with a 740 / 520 ending; A, B;
+names; Fairservis categories; 10,000-draw permutations; p < 0.05; A and B both where named).
+
+The Harappa name records (F)
+- **L1** On name tablets with a number, the number is the text's first sign in more than half.
+- **L2** Pairs of name tablets with the same name body and a number each carry different numbers in more than half.
+- **L3** Name tablets with the same name body share a Harappa level more often than random pairs of name tablets
+  (level labels permuted).
+- **L4** Name bodies found both on name tablets and on seals are found on Harappa seals more often than Harappa's share
+  of seal names predicts (binomial).
+- **L5** On name tablets, 400 ends the text in 80%+ of cases.
+- **L6** Name bodies on name tablets are shorter than name bodies on seals (rank test).
+- **L7** The values of numbers on name tablets are distributed differently from those of numbers on seals (MI beyond
+  permutation).
+- **L8** Incised tablets without an ending end in 400 more often than moulded tablets without an ending.
+- **L9** The values of numbers on name tablets are distributed differently from the values of count tokens (N 700).
+- **L23** Harappa seals whose name is also on a name tablet are unicorn seals more often than other Harappa seals.
+- **L24** Seal names also found on name tablets end in 740 more often than other seal names.
+
+Numbers
+- **L10** The stroke pair and a following fish (2 + a signs.FISH sign) are split by a line break less often than other
+  gaps (M77 multi-line texts, both line orders).
+- **L11** Fish-headed names with the stroke pair (2) inside take 520 more often than fish-headed names without a
+  numeral (pooled A + B, length-stratified).
+- **L12** Of long-count units (a J or K sign directly after long-stroke numerals 10+ times, pooled A + B), 80%+ have one
+  value in half or more of their counts.
+- **L13** Names headed by a tiered numeral (tiered numeral directly before the ending) are on seals more often than on
+  tablets, relative to all names with an ending (F).
+- **L14** Names headed by a tiered numeral carry the heading more often than other names, length-stratified (pooled).
+- **L15** Long-stroke numerals open their line more often than short-stroke numerals. A and B.
+- **L25** On seals too, long-stroke numerals stand before J / K signs more often than short-stroke numerals (F).
+
+Affixed variants (pooled A + B)
+- **L16** The fish variants 233, 235 and 240 alternate with 220 in otherwise identical names more than random sign
+  pairs matched on token quintiles.
+- **L17** Names whose last sign is an affixed fish (231, 233, 235, 240) take 520 less often than names ending in 220.
+
+Direction (A)
+- **L18** Incised tablets (TAB:I) run left to right more often than moulded tablets (TAB:B).
+- **L19** Pots run left to right more often than seals.
+
+Labels and other genres
+- **L20** Copper-tablet texts are shorter than seal texts (A, rank test).
+- **L21** Distinct copper-tablet texts recur on 2+ tablets more often than distinct seal texts (A).
+- **L22** Pot texts with an ending carry a numeral less often than tablet texts with an ending, length-stratified (F).
