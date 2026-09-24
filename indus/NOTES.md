@@ -1819,6 +1819,13 @@ Registered first (hundred-and-nineteenth set, 66d2af39c), tested (`predict_test1
 chosen by the head: 740, 520, a closer, or 740 + one of six stacking closers (151, 161, 527, 565, 621, 679); fixed
 order, no second suffix after a stack, 26 bodies with 3+ fillers. Tally 941 held, 911 failed.
 
+## Hundred-and-thirty-fourth pass (24 Sept 2026): two kinds of closer
+
+Registered first (hundred-and-twentieth set, f7ec29b80), tested (`predict_test120.py`). No second class: stacking and
+plain closers differ only in whether they may follow 740 (and plain ones take 400 slightly more). The ending-slot thread
+is close to exhausted; next targets: what separates the 740 and 520 classes beyond fish, and sign choice inside slots.
+Tally 944 held, 923 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -5647,3 +5647,14 @@ F' = F without copper. p < 0.05.
 - **SK14** F': SK11 holds.
 - **SK15** The first sign of name tails (after a mid-line ending) is a stacking closer at least three times as often as a
   plain closer.
+
+## Results of the hundred-and-twentieth set (added after the test; `predict_test120.py`, `results/predict_test120.md`)
+
+Three held, twelve failed: the split into stacking and plain closers is real only in the property that defined it.
+Plain closers never follow 740 in F' either (SK3: 0 lines), every closer that begins a tail after a mid-line ending is a
+stacking one (SK15: 41 against 0), and plain closers take 400 a little more often (SK6: 13% against 6%). Otherwise the two
+kinds are alike: their bodies are attested 740 names equally often (SK1, SK11, SK12, SK14: about 20% both), their heads
+are 740-class alike (SK8: 84%; SK9: 90%) and rarely 520-class (SK4), they are counted alike (SK10), sit on tablets alike
+(SK5), and do not split by city (SK7, p = 0.07). Only 18% of stacking tokens follow 740 (SK2; SK13 in F'), so stacking is
+an option, not the rule. Reading: one set of closers in the ending slot, six of which may also be added after 740.
+Tally, counting parts: 944 held, 923 failed (1867 registered).
