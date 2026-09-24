@@ -1832,6 +1832,13 @@ Registered first (hundred-and-twenty-first set, 2e6dc3370), tested (`predict_tes
 head predicts the 520 class; class is lexical, per head. 90 never follows 520 anywhere; 520 names are dominated by a few
 repeated names. This line of questioning is exhausted on internal evidence. Tally 948 held, 931 failed.
 
+## Hundred-and-thirty-sixth pass (24 Sept 2026): the model as a predictor
+
+Registered first (hundred-and-twenty-second set, be1ccb443), tested (`predict_test122.py`). On held-out lines: heads
+and openers are a nearly closed inventory (95%, 88% seen), the head predicts the ending 90% (but the 740 base rate is
+~85%), the last sign predicts the genre 77%, bigrams save 1.8 bits per sign and trigrams a further 0.6. These are the
+benchmark numbers for any future model. Tally 960 held, 934 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

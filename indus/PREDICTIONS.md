@@ -5716,3 +5716,15 @@ vocabulary plus one unknown. Thresholds as stated.
 - **GM13** Trained on A's names, the head predicts B's endings with 85%+ accuracy.
 - **GM14** B (80/20 split): GM4 holds.
 - **GM15** F without copper (80/20 split): GM7 holds.
+
+## Results of the hundred-and-twenty-second set (added after the test; `predict_test122.py`, `results/predict_test122.md`)
+
+Twelve held, three failed. As predictors on held-out lines (80/20 split): the sign before the head predicts the head
+38% of the time against 7% for the commonest head (GM1); the head predicts the ending 90% of the time (GM2), across
+cities (GM12: Mohenjo-daro to Harappa 92%) and transcriptions (GM13: A to B 93%), but the opener alone gets 82% (GM3
+fails) because 740 is the ending of about 85% of names, so the head adds only about 5-8 points over always guessing
+740. The last sign predicts genre far better than the first (GM5: 77% against 44%) but under 80% (GM4; B 69%, GM14).
+Order carries real information: a bigram model saves 1.8 bits per sign over unigrams (GM7: 8.21 to 6.38; GM15 in F':
+8.23 to 6.75), and two signs of context save a further 0.6 (GM8: 5.80). The inventories generalise: 48% of test lines
+fall in the training top-10 templates (GM6), 65% of test bodies contain a training unit (GM9), 95% of test heads (GM10)
+and 88% of openers (GM11) were already seen. Tally, counting parts: 960 held, 934 failed (1894 registered).
