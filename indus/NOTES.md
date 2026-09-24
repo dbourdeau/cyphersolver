@@ -1397,6 +1397,12 @@ Registered first (sixty-fourth set, e56bf97dc), tested (`predict_test64.py`). Re
 Harappa moulded-tablet feature (24% of TAB:B counts against 9% of TAB:I), possibly mirror images; names essentially
 never run backwards; the catalogue direction field does not mark them. Tally 366 held, 441 failed.
 
+## Seventy-ninth pass (24 Sept 2026): moulded against incised tablets (loop 3, round 9)
+
+Registered first (sixty-fifth set, 6cd622b18), tested (`predict_test65.py`). Moulded tablets are Harappa objects whose
+text and picture go together (same text, same picture); otherwise their texts resemble incised ones. The motif field
+stores 'None' as a string: fixed here; earlier sets reading it need an audit.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

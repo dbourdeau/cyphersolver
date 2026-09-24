@@ -3238,3 +3238,15 @@ F objects of type TAB:B (moulded) and TAB:I (incised); 'text' = the object's lin
 - **MT8** TAB:B lines carry a numeral more often than TAB:I lines, length-stratified.
 - **MT9** TAB:B texts contain a formula-only sign less often than TAB:I texts.
 - **MT10** TAB:B lines repeat a line found on a seal more often than TAB:I lines.
+
+## Results of the sixty-fifth set (added after the test; `predict_test65.py`, `results/predict_test65.md`)
+
+Four held, six failed. Moulded tablets (TAB:B, 780) are a Harappa product (MT4: 86%) and carry a picture far more often
+than incised tablets (MT5: 42% against 17%). Their text goes with the picture (MT6: MI 3.6 bits over 328 objects,
+p = 0.0001) and objects with the same text share the picture (MT7: 531 same-text pairs with the same motif, p = 0.0001):
+text and image were designed together on the mould. Otherwise moulded texts are not more repetitive (MT1: 33% against
+36%), not shorter (MT2: 3.5 against 2.7 signs, the other way), not poorer in names (MT3), not richer in numerals (MT8),
+not more stereotyped in signs (MT9), and they repeat seal lines less (MT10: 20% against 41%). Bug fix before recording:
+the ICIT motif field holds the string 'None' where no motif is recorded; the first run counted it as a motif (MT5 100%
+both, MT6/MT7 over all objects). The recorded run treats 'None' as no motif. Earlier sets that read this field may be
+affected; flagged for an audit. Tally, counting parts: 370 held, 447 failed (817 registered).
