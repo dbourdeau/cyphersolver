@@ -6216,3 +6216,29 @@ the compound test gives nothing: rare signs contain a common sign no more often 
 11%, p = 0.13, with many 'bases' being the small sign 90, a sign of a crude method), the base is not among the
 compound's frame-mates (SH2) and compounds do not keep the base's position (SH10). Tally, counting parts: 1057 held,
 994 failed (2051 registered).
+
+# Hundred-and-thirty-eighth set, registered before testing (24 September 2026): Parpola's, Mahadevan's and Knorozov's structural claims (ten hypotheses)
+
+Third external direction: published decipherment claims, taken from the OCR text of Parpola 1994 (Deciphering the
+Indus script, pp. ~180-200 and ch. 6; checked in the text, not from memory). Claims used: (a) Parpola: numeral + fish
+sequences read as Dravidian star names; '6 + fish' (aru-min, Pleiades) is 'the most frequent sequence', '3 + fish'
+(mu-m-min) 'next in frequency', and a large seal carries the sole text '7 + fish' (elu-min, Ursa Major); fish + fish
+is an intensifying repetition; the sequences Num + fish 'belong together syntactically'. (b) Parpola, discussing the
+Soviet team (Knorozov et al.): the frequent final sign ('jar', here 740) behaves as a case marker with a general
+possessive function ('the possession of X' on seals), attributes precede the noun, and some prefixed signs are
+optional. (c) Knorozov et al. as reported by Parpola: a stroke after the 'jar' marks the dative. Mapped onto ICIT
+signs: fish = signs.FISH, 740 = the 'jar'; numeral values from numerals.NUMS. Runs directly after a heading sign are
+left out (the confound found in the hundred-and-twelfth set). Distinct lines (A + B) unless stated. p < 0.05.
+
+- **PA1** Value 6 is the commonest value of a numeral run directly before a fish.
+- **PA2** Value 3 is the second commonest.
+- **PA3** At least one object in F has as its whole text a numeral worth 7 followed by a fish.
+- **PA4** Identical fish signs stand doubled (fish x + fish x) in 5+ distinct lines.
+- **PA5** In name bodies holding both a numeral and a later fish, the numeral stands directly before a fish in 90%+.
+- **PA6** 740 is line-final (allowing a following 400/90/151) more often on seals than on tablets (possession labels).
+- **PA7** In 30%+ of 3+-sign bodies, dropping the opener leaves an attested body (optional prefixed signs).
+- **PA8** Where a stroke '1' follows 740, the line ends within one more sign in 50%+ (a final case marker).
+- **PA9** The roof fish (235, 236) is a name head (last body sign) at least as often as the plain fish 220 (two-sided
+  p >= 0.05 counts as holding).
+- **PA10** Fish are counted (numeral directly before) with value 6 or 7 in 20%+ of counted fish in F (Parpola's star
+  groups as the common readings).
