@@ -8023,3 +8023,19 @@ change position (DB6, 23 tokens). Reading: doubling is a distinct form, not just
 stand as a text's first or last element (short texts made of a doubled sign and little else), consistent with a
 plural, collective or total. DB7 holds (DB4 new and replicated in direction on B): progress, streak 0. Tally, counting
 parts: 1266 held, 1187 failed (2453 registered).
+
+# Hundred-and-eighty-eighth set, registered before testing (24 September 2026): decipherment loop 13, more training text for S (five hypotheses)
+
+Metric after loop 12: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 0. S has not moved in twelve loops:
+richer model components added nothing. Loop 13 adds data instead. The fuller ICIT export (F) holds distinct lines that
+are not among progress.py's lines (A + B); adding them to the training lines (never to the fixed test lines, and
+excluding any F line identical to a test line) is a legitimate improvement of the same benchmark. Model as
+progress.py (tri + pos + end, discounted; weights fitted on a development split of the training lines).
+
+- **SX1** Training on progress.py's training lines plus F's extra distinct lines lowers S by 0.03 bits or more (the
+  metric's training data is then extended).
+- **SX2** Adding only F's extra seal lines lowers S by 0.01 or more.
+- **SX3** With the extra lines, the share of test tokens unseen in training falls by 0.5 points or more.
+- **SX4** The gain is not only from copper tablets: adding F's extra lines without copper tablets lowers S by 0.02 or
+  more.
+- **SX5** Progress rule: SX1 holds.
