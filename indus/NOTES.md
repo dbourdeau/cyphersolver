@@ -1685,6 +1685,13 @@ Registered first (hundred-and-second set, b0b9de0e7), tested (`predict_test102.p
 weakly predict genre, counting, class, ending, medium and city; block 1 is a head block, block 3 a formula block, and
 same-family signs cluster side by side. Position is not set by family. Tally 726 held, 801 failed.
 
+## Hundred-and-seventeenth pass (24 Sept 2026): the formula closers
+
+Registered first (hundred-and-third set, 64c4a157f), tested (`predict_test103.py`). Lines ending in one of 11 closer
+signs are a second family of seal inscriptions, mostly Mohenjo-daro: no 740/520, longer than formulas, a name-head
+sign before the closer in two thirds, each closer with its own heads, one closer per line. Partly restores the
+alternative-closer idea of the fifty-fifth set. Tally 737 held, 810 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

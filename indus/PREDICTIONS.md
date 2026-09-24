@@ -4933,3 +4933,18 @@ permutations; p < 0.05.
 - **FX18** B: FX1 holds.
 - **FX19** F without copper: FX1 holds.
 - **FX20** 80%+ of closer lines have 2-4 signs.
+
+## Results of the hundred-and-third set (added after the test; `predict_test103.py`, `results/predict_test103.md`)
+
+Eleven held, nine failed. 284 distinct lines end in one of the 11 closers (151, 154, 156, 161, 226, 241, 426, 527, 565,
+621, 679). 80% of them have no 740/520 (FX1; FX18 in B: 81%; FX19 in F: 82%), yet they are not short counting formulas:
+they are seal texts (FX5: 80% of closer tokens on seals), commoner at Mohenjo-daro (FX6: 12% against 7% of lines),
+longer than other formulas (FX4 fails: 4.3 against 3.7 signs; FX20: only 58% have 2-4 signs), and the sign before the
+closer is a name-head sign in 67% (FX13). Each closer has its own set of preceding signs (FX7: 2.2 bits, p = 0.0001;
+FX14: mean Jaccard 0.07 between closers), and a line never holds two (FX8: 3 of 2,722). 12% of closer tokens follow
+740/520 directly (FX3). They do not differ from other formulas in citing names (FX9), heading (FX10), numerals (FX11)
+or recurrence (FX15, the other way), 156 is counted in only 33% (FX12), and they are not less often on unicorns (FX16).
+Reading: a second family of seal inscriptions at Mohenjo-daro, 'name-like body + closer' in place of 'body + 740/520',
+with each closer taking its own heads. This partly restores the fifty-fifth set's alternative-closer idea (withdrawn in
+the fifty-seventh set, which required the remainder to be an attested name body): the bodies before closers are
+name-like in their heads but mostly not attested names. Tally, counting parts: 737 held, 810 failed (1547 registered).
