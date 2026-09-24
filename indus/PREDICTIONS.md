@@ -7250,3 +7250,45 @@ a name is not tied to its seal's animal. Recurring 520 names are not more on tab
 owner names shared by Umma and Girsu are shorter (RN10: 8.1 against 9.2 characters, p = 0.0001), as Indus shared
 names are (CR6), while Linear B shared persons are not (RN9). Tally, counting parts: 1173 held, 1105 failed (2278
 registered).
+
+# Hundred-and-sixty-seventh and hundred-and-sixty-eighth sets, registered together before testing (24 September 2026): twenty hypotheses building on the write-up
+
+Conventions as sets 161-166. p < 0.05.
+
+## Hundred-and-sixty-seventh set: administration, survival and scribal hands (ten hypotheses)
+
+- **AD1** How many seal texts existed: Lincoln-Petersen (Chapman) over distinct texts, seals (SEAL) against sealings
+  (TAG) as two catches in F, is at least 3 times the number of distinct seal texts observed.
+- **AD2** At Lothal, 50% or fewer of the distinct sealing texts are found on any seal in F (most sealing seals lost).
+- **AD3** The openers that rise at Mohenjo-daro (late minus early share) are those common on sealings: Spearman of
+  sealing opener frequency against the change is positive (permutation of MD level labels, 1,000 draws).
+- **AD4** In two-line seal texts with a name line, the other line ends in a closer, 400, 90 or another post-name sign
+  of set 158's list in 50%+.
+- **AD5** In those texts the non-name line is shorter than the name line (paired sign test).
+- **AD6** Non-name lines recur on more seals than name lines do (share of distinct line texts on 2+ seals; Fisher).
+- **AD7** A scribe's hand: on objects carrying tokens of two different variant pairs (set 146), the two variant choices
+  are correlated beyond chance (pooled agreement against permutation of choices within pair, 1,000 draws).
+- **AD8** Numeral compounds (set 150) on Mohenjo-daro seals share a sub-area more often than chance when two seals
+  carry the same compound (pair test as set 140).
+- **AD9** In West Asian lines, stroke signs stand before signs never counted at home more often than home strokes
+  do (Fisher): strokes used for sound, not number.
+- **AD10** West Asian stroke runs are worth 1 or 2 more often than home stroke runs (Fisher).
+
+## Hundred-and-sixty-eighth set: controls on published claims and on the count texts (ten hypotheses)
+
+- **CT1** Counting every object (copies included, F), the commonest numeral + fish value is still 2, not 6.
+- **CT2** In M77 (all its texts, Mahadevan's transcription), the commonest numeral + fish value is 2.
+- **CT3** Linear B (DAMOS): for commodity logograms entered with a number at both Knossos and Pylos (5+ entries each),
+  the commonest quantity differs between the palaces for 50%+ (real counts are local too, the control for NC5).
+- **CT4** Linear B commodity entries (logogram + quantity, as units) have the person-like (open) profile between
+  Knossos and Pylos, as Indus count texts do.
+- **CT5** Indus seal lines of 5-7 signs contain a repeated sign at least half as often as Ur III legends of 5-7
+  lemmas contain a repeated lemma (against Farmer, Sproat and Witzel's 'too little repetition').
+- **CT6** Indus lines of 5-7 signs repeat a sign less often than shuffled lines of the same lengths drawn from the
+  corpus sign frequencies (repetition avoidance; 1,000 draws).
+- **CT7** Ur III legends of 5-7 lemmas repeat a lemma more often than lemma-shuffled legends (1,000 draws).
+- **CT8** The copper-tablet picture signs (749, 341, 753, 777) are name heads (directly before 740 or 520) in 50%+ of
+  their occurrences in names.
+- **CT9** Names headed by one of them take 740 in 90%+.
+- **CT10** 90%+ of copper-tablet sign tokens are signs also used in seal names (one script and vocabulary, not a
+  separate label code).
