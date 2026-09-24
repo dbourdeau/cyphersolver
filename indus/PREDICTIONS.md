@@ -6997,8 +6997,8 @@ Harappa 409). Linear B and Ur III as sets 152 and 158.
 ## Results of the hundred-and-fifty-ninth set (added after the test; `predict_test159.py`, `results/predict_test159.md`)
 
 Five held, five failed. **The packed-legend reading gains support.** Openers of 3+-sign names have the title-like
-profile (PL1: estimate/observed 1.37, shared 0.63, on one seal 0.57; 33 of Mohenjo-daro... of the smaller city's 52
-openers also in the other, PL3: 63%), while the name cores (body minus opener + ending) are strongly person-like (PL2:
+profile (PL1: estimate/observed 1.37, shared 0.63, on one seal 0.57), and 33 of the smaller city's 52 openers
+also occur in the other (PL3: 63%), while the name cores (body minus opener + ending) are strongly person-like (PL2:
 8.86, 0.08, 0.95). On seals with a motif, the opener carries more information about the picture than the head does
 (PL4: permutation z 2.53 against 0.95; MI 1.73 against 1.29 bits, 508 names). So an Indus name of three or more signs
 looks like a shared, closed first element that goes with the seal's emblem, plus an individual core: the shape of
