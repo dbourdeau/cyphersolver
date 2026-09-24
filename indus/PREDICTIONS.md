@@ -6014,3 +6014,22 @@ little longer (SZ7: 4.8 against 4.4), they carry counts more (SZ9: 25% against 1
 (SZ10: 25% against 14% of seals). Copper tablets are the largest tablets (SZ12: 31.6 against 22.9 mm); moulded tablets
 are larger than incised ones, not smaller (SZ11: 22.9 against 14.7). Tally, counting parts: 1013 held, 976 failed (1989
 registered).
+
+# Hundred-and-thirty-second set, registered before testing (24 September 2026): the rectangular seals (twelve hypotheses)
+
+From the hundred-and-thirty-first set: rectangular seals (SEAL:R) are nearly always without a picture. F objects;
+genres, heading unit, formula-only signs, size and material as before; lines distinct per object type. p < 0.05;
+two-sided where marked.
+
+- **RS1** Rectangular seal lines are name lines less often than square seal lines.
+- **RS2** At Harappa, rectangular seals are later more often than square seals.
+- **RS3** Rectangular seals are a larger share of seals at the smaller sites than at the two cities.
+- **RS4** Names on rectangular seals take 520 less often than names on square seals.
+- **RS5** Rectangular seal lines carry the heading unit less often than square seal lines.
+- **RS6** Rectangular seal texts are one-off (one object) less often than square seal texts.
+- **RS7** Rectangular seal lines hold a formula-only sign more often than square seal lines.
+- **RS8** Rectangular seals are smaller than square seals (rank test).
+- **RS9** Rectangular seal lines are closer lines more often than square seal lines.
+- **RS10** Rectangular seal lines are bare lines more often than square seal lines.
+- **RS11** 90%+ of rectangular seals with a material recorded are steatite.
+- **RS12** The first sign depends on seal shape (MI over lines).
