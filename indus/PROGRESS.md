@@ -3,6 +3,28 @@
 Started 24 September 2026 at the owner's request: loops of registered hypothesis tests aimed at deciphering the texts,
 with a progress metric measured the same way every loop (`progress.py`, log in `results/progress_log.tsv`).
 
+## Indus-prize tiers (owner's review, 24 September 2026)
+
+The Tamil Nadu government's $1 million prize (announced 5 January 2025) goes to whoever deciphers the script "to the
+satisfaction of archaeological experts"; no further rules are published. It was announced beside a study linking Indus
+signs to Tamil Nadu graffiti marks and a research chair in Iravatham Mahadevan's name. The judges are therefore
+archaeologists and epigraphists, and a Dravidian or Tamil reading will draw the closest scrutiny. The bench is ranked
+by what such a panel would accept (`prizebench.py`); the structural components below are diagnostics.
+
+| Tier | Component | What it measures | Now |
+|---|---|---|---|
+| 1 | V meaning, checked | share of sign tokens read as sense and checked against archaeological evidence: the object's iconography (copper tablets, seal motifs), its function (weights, tags, pottery), its find context, West Asian texts naming Meluhha. Numerals reported beside it (their sense is the count). | 0.008% (4 copper-tablet signs); numerals 16.6% |
+| 2 | C positive-control gate | a method proposing sound values or readings must first recover a known answer (Linear B -> Greek). Methods that passed / were run | 1 passed (set 179); rebus search and published keys not gated |
+| 3 | U vault | share of tokens in texts never used to fix the values (B's new lines; later, newly excavated finds) read as sense with values fixed beforehand | 0 (no sound value has passed) |
+| 4 | A archaeological consistency | readings or structure hold across sites, periods, duplicates and sealings of the same seal | supporting: fish/520 signal holds at all sites and periods (set 196) |
+| 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 81.3% / 68.3%; no candidate beats the decoys inside the fifth (set 198) |
+| 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.0% (frequency 0% / 1.3%) |
+| 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 36.2% / 58.4% (frequency 9.6% / 22.4%) |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.685, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
+
+Tiers 1-3 are what would win the prize and are near zero: the work so far is structural. The loop's progress rule is
+unchanged (any component), but each loop now reports the tiers, and loops that can move tiers 1-3 come first.
+
 ## The metric
 
 Decipherment happens in stages, so the metric is a vector, one component per stage:
