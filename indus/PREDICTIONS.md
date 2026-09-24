@@ -4281,3 +4281,15 @@ ending. F for object and site tests. 10,000-draw permutations; p < 0.05.
 - **TN18** 30%+ of first segments are.
 - **TN19** B: TN3 holds.
 - **TN20** B: TN12 holds.
+
+## Results of the eighty-eighth set (added after the test; `predict_test88.py`, `results/predict_test88.md`)
+
+Three held, seventeen failed; the 'two names in a line' reading is not supported. Only 23 distinct lines have two
+endings with a segment before each (TN1: 1.6%, under 2%), 16 of 18 located ones at Mohenjo-daro (TN7: 89% against
+53%). Their parts do not look like two names: both segments are attested bodies in only 2 of 23 (TN2), the first
+segment stands alone as a name in only 4 (TN18), the two never share a head (TN4: 0), the first ending is not always
+740 (TN8: 78%), no suffix ever separates them (TN9: 0), and none is headed (TN10: 0 against 17%). Only the second
+segment is sometimes a known name (TN17: 10 of 23; TN20 in B: 3 of 7 are one sign). The other tests fail on 23 cases.
+Reading: a medial 740 or 520 is mostly not the end of a first name but part of a longer compound (an inner '... 740 ...'
+element), with the true name at the end; the long lines that looked like two names (thirty-eighth set, LT1) are better
+read as long single names at Mohenjo-daro. Tally, counting parts: 582 held, 665 failed (1247 registered).

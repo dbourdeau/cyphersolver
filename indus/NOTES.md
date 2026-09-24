@@ -1570,6 +1570,12 @@ Kalibangan and Chanhu-daro use the city heads at city rates, the cities' units, 
 formula opening. The eighty-sixth set's small-site failures are read as too little data. Gujarat writes more formulas.
 Tally 579 held, 648 failed.
 
+## Hundred-and-second pass (24 Sept 2026): lines with two names
+
+Registered first (eighty-eighth set, 2d9dfe0d0), tested (`predict_test88.py`). Two-ending lines are rare (23 distinct,
+nearly all Mohenjo-daro) and do not split into two names: the first part is rarely a name, never suffixed or headed.
+A medial 740/520 is read as part of a long compound name. Tally 582 held, 665 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
