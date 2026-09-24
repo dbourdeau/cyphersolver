@@ -8246,3 +8246,18 @@ assignment, so no hypothesis below relies on that.
   and Indo-Aryan language is kept.
 - **LW5** Families compatible with core + class in Grambank are 10% or fewer of the families assessed.
 - **LW6** Progress rule: LW1 and LW2 hold (L world enters the metric, replicated in an independent database).
+
+## Results of the hundred-and-ninety-fifth set (added after the test; `predict_test195.py`, `results/predict_test195.md`, `lbench.py`)
+
+One held, five failed. The narrowing replicates in the independent database: the core profile (suffixing, modifier
+and possessor before the head, numeral before the counted sign, case suffixes) excludes 80.9% of 444 WALS genera and
+56.0% of 300 Grambank (Glottolog) families (LW1). But the profile as coded is too strict to keep every candidate
+language (LW2 fails): Assamese, Oriya and Sinhala are coded 'no dominant order' of numeral and noun (89A = 3), Urdu
+'no case affixes' (51A = 9, its case markers counted as words), and Toda has the numeral after the noun (GB024 = 2).
+The candidates' rates therefore differ slightly (LW3 fails: WALS Dravidian 1.00, Indic 0.81; Grambank 0.97 against
+1.00), from coding and outliers, not from a family-level difference. The class variant removes Turkish, Japanese and
+Basque but also genderless members of both candidate families (LW4 fails): Brahui, Toda, Kodava and others on the
+Dravidian side, the eastern Indo-Aryan languages (Magahi, Maithili, Odia) on the other. Core + class leaves 72 of 289
+families (24.9%; LW5 fails). The progress rule fails: streak 1. Reading: the world typology narrows the field to about
+a fifth of the genera, and within that fifth the Indus profile does not separate Dravidian from Indo-Aryan, as
+expected. Tally, counting parts: 1295 held, 1207 failed (2502 registered).

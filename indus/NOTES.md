@@ -2368,6 +2368,13 @@ Registered first (24f8dffc4). A family-trigram component (famlm.py) improves S f
 gain replicates A -> B (0.022) and random families of the same sizes give none (20 of 20). Progress: streak 0. Tally
 1294 held, 1202 failed.
 
+## Two-hundred-and-ninth pass (24 Sept 2026): decipherment loop 20, the L bench against WALS and Grambank
+
+Registered first (4deb0b410). The Indus profile excludes 81% of WALS genera and 56% of Grambank families (replicates),
+but its strict coding drops a few candidate languages (89A 'no dominant order', Urdu 51A = 9, Toda N-Num), so the
+progress rule fails: streak 1. Within the compatible fifth, Dravidian and Indo-Aryan are not separated. Tally 1295 held,
+1207 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
