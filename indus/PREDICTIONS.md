@@ -5691,3 +5691,28 @@ with fish more (C5B, C5K), the non-fish 520 heads are not preceded by fish more 
 the other way), and the sign before a fish head does not choose its class (C5J, p = 0.15). Reading: class membership
 is a property of each head, learned per word, not derived from its neighbours; the internal evidence on this question
 is exhausted. Tally, counting parts: 948 held, 931 failed (1879 registered).
+
+# Hundred-and-twenty-second set, registered before testing (24 September 2026): the model as a predictor (fifteen hypotheses)
+
+The structural findings are turned into predictions on held-out data. Distinct lines (A + B) are split 80/20 at random
+(seed fixed in the script); models are fitted on the 80% and scored on the 20%. Genres as in the hundred-and-eighth set;
+classes, units and templates as before. Cross-entropy in bits per sign with add-one smoothing over the training
+vocabulary plus one unknown. Thresholds as stated.
+
+- **GM1** From the preceding sign, the head of a held-out name is predicted (top-1) 10+ points better than by the
+  commonest head.
+- **GM2** The ending of a held-out name is predicted from its head (the head's training majority) with 85%+ accuracy,
+  over names whose head was seen in training.
+- **GM3** The ending is predicted from the head 10+ points better than from the opener.
+- **GM4** The genre of a held-out line is predicted from its last sign with 80%+ accuracy (last signs seen in training).
+- **GM5** The last sign predicts genre 20+ points better than the first sign.
+- **GM6** 45%+ of held-out lines fall in the training set's ten commonest templates.
+- **GM7** A bigram model has at least 1 bit per sign lower cross-entropy than a unigram model on held-out lines.
+- **GM8** A two-sign-context model (with backoff to bigram) beats the bigram model by 0.2+ bits per sign.
+- **GM9** 60%+ of held-out name bodies of 3+ signs contain a unit found in training.
+- **GM10** 90%+ of held-out name heads were seen as heads in training.
+- **GM11** 70%+ of held-out openers (bodies of 2+) were seen as openers in training.
+- **GM12** Trained on Mohenjo-daro names (F without copper), the head predicts Harappa endings with 85%+ accuracy.
+- **GM13** Trained on A's names, the head predicts B's endings with 85%+ accuracy.
+- **GM14** B (80/20 split): GM4 holds.
+- **GM15** F without copper (80/20 split): GM7 holds.
