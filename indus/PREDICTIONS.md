@@ -3778,3 +3778,20 @@ The number before the phrase
 Replication
 - **LX19** B: LX1 holds.
 - **LX20** B: LX10 holds (1,000).
+
+## Results of the seventy-seventh set (added after the test; `predict_test77.py`, `results/predict_test77.md`)
+
+Nine held, eleven failed. Numbers in names are not fixed parts of the name: a head's commonest value covers only 60% of
+its counted names (LX1; B: 49%, LX19), names are not more fixed than formulas (LX2: 6 against 4), (value, head) pairs
+do not recur across bodies more than chance (LX3), and name values are spread (LX4: 2 x49, 3 x36, 1 x26, 7 x20; LX8
+values 2-3 less common in names than in formulas: 49% against 58%). The number goes with the modifier as much as the
+head (LX6: 0.91 against 0.88 bits). But the phrase shape is supported: in 'N mod head' the (mod, head) part is itself an
+attested name in 49% (LX14), more than (N, head) is in 'mod N head' (LX15: 28%), and the modifier inside the number is
+a fish more often (LX16: 38% against 23%), so 'N [fish head]' is a common build. Names and formulas are two systems
+sharing a sign set: they share fewer adjacent-pair types (LX10: 447; B, LX20: 146) and (numeral, sign) types (LX11: 96)
+than label-shuffled lines give, the same sign keeps different company in each (LX12: mean JSD 0.40 over 66 signs), the
+counted item closes formulas but not names (LX13: 47% against 14%), and value distributions differ (LX5, p = 0.002).
+Yet only 10% of common name signs are absent from formulas (LX9). Not supported: 520 in 'N mod head' (LX17) and a city
+difference in the shape (LX18: 59% against 54%). Bug fix before recording: the first LX18 run deduplicated on (site,
+shape) instead of (site, name), leaving 4 items; the recorded run counts distinct (site, name). Tally, counting parts:
+479 held, 548 failed (1027 registered).

@@ -1491,6 +1491,13 @@ its modifier (by shape category) and its number (replicated in B, Harappa, Mohen
 before a modifier ([N [mod head]]). Names and formulas do not share counting conventions, and 'heads are the counted
 things of the formulas' reduces to frequency. Tally 470 held, 537 failed.
 
+## Ninety-first pass (24 Sept 2026): numbers in names, and two systems
+
+Registered first (seventy-seventh set, 83f3a4f89), tested on distinct names and lines (`predict_test77.py`). Numbers in
+names are real, varied counts, not fixed name parts. 'N [mod head]' with an attested [mod head] name is common, often
+'N [fish head]'. Names and formulas are two systems over one sign set: fewer shared pairs than chance, different
+neighbours for the same sign, the counted item closes formulas only. Tally 479 held, 548 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
