@@ -962,7 +962,7 @@ Registered first (PREDICTIONS.md, ninth set, 3b09eeb34), tested (`predict_test9.
 Harappa tablets lie in the same level. **Holds**: same level 25% against 21% (3,470 pairs, p = 0.0003); depth 4.2
 against 5.2 (4,600 pairs, p = 0.0001). The effect is small; the fifth-set seal test (36 / 71 pairs) could not have
 seen it, so V's failure is uninformative and 'names handed on' is withdrawn. Harappa seals: 3 of 4 same-name pairs
-share a level (unregistered, tiny). Tally 5 held, 12 failed.
+share a level (unregistered, tiny). Tally 6 held, 12 failed (counting parts).
 
 ## Limitations
 

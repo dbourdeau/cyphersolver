@@ -299,10 +299,30 @@ name (fifth-set unit), without a registered threshold.
 - **Z2 holds.** 518 tablets with a depth; 4,600 same-text pairs from 52 texts lie a median 4.2 apart, against 5.2
   shuffled; p = 0.0001.
 - **Hypothesis Z holds**: identical tablets were made together, or at least deposited together, more than chance.
-  Tally: **5 held** (Q1, Q2, X2, Y2, Z), 12 failed (counting Z as one hypothesis with both parts).
+  Tally, counting parts: **6 held** (Q1, Q2, X2, Y2, Z1, Z2), 12 failed.
 - **What it does to the fifth set:** the effect is small (4 points in level, 1 unit in depth) and needs thousands of
   pairs to show. The seal-name test (V) had 36 and 71 pairs and a null band of 33-61%; it could not have seen an
   effect this size. V's failure is therefore no evidence that names were handed on; the earlier reading ('the names
   look handed on') is withdrawn to 'not tested with enough power'.
 - Unregistered comparison: at Harappa the few same-name seal pairs do share a level (3 of 4, against 18% shuffled; depth
   1.5 against 4.3 on 5 pairs). Far too few to claim, but the opposite of the Mohenjo-daro picture.
+
+# Tenth set, registered before testing (24 September 2026)
+
+**Hypothesis AA: free signs are sound signs that can be added or left out (phonetic complements).** The eighth set
+found that the texts thought to write foreign names lean on 'free' signs, those that combine with many different
+neighbours for their frequency (Y2). In logo-syllabic scripts a sound sign added to a word sign to show its
+pronunciation is optional, and it usually spells the end of the word. Not looked at before.
+
+Names as in the fourth set (heading removed, ending 740 / 520 kept as the class), from every intact object of the
+fuller ICIT corpus, distinct names only. Freedom as in Y2 (residual of log distinct neighbours on log tokens, home
+lines). An insertion pair: two names with the same ending, one equal to the other with exactly one sign added.
+
+**AA1 The optional sign is free.** Over insertion pairs, the added sign's freedom exceeds that of a sign drawn at random
+from the other positions of the longer name (paired permutation: swap the added sign with a random other sign of the
+same name, 10,000 times), p < 0.05. Signs without a freedom score (under 5 home tokens) and numerals are left out.
+
+**AA2 It stands at the end of the word.** The added sign is the last sign of the name (directly before the ending) more
+often than a random position of the longer name would be, p < 0.05 (exact, from each pair's 1 / length).
+
+Hypothesis AA holds if both hold.
