@@ -7925,3 +7925,22 @@ closing form that stands in place of the ending: morphology written inside the s
 signs are too few (17 tokens) to confirm the rule (CG3: 47% against 35%, n.s.), so it is established for the caged fish
 and suggested for the rest. Under CG7 the caged signs not already among the closers get a 'caged marker' role in R.
 Tally, counting parts: 1253 held, 1178 failed (2431 registered).
+
+# Hundred-and-eighty-fifth set, registered before testing (24 September 2026): decipherment loop 10, do the other fish marks work as affixes? (seven hypotheses)
+
+Metric after loop 9: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4. Loop 9 found the cage works as a grammatical affix.
+Loop 10 asks the same of the other marks added to the fish: plain 220; stroke in the body 231; horizontal bar 233;
+caret-shaped 'roof' hat 235; whiskers 240 (Parpola's list via the CISI digitisation). Outside the fish these marks are
+too rare to test (1-18 tokens). Names via R.name_of on distinct lines; A and B (M77 additions) separately.
+
+- **MF1** In A, the variant predicts its slot in the name (head against modifier) beyond permutation (MI).
+- **MF2** MF1 holds on B.
+- **MF3** The roof fish 235 stands directly before another fish sign more often than the plain fish does (Fisher,
+  A + B): the hat marks an attribute.
+- **MF4** Names headed by the whisker fish 240 take 520 more often than names headed by the plain fish 220 (Fisher,
+  A + B).
+- **MF5** The direction of each variant's head-slot difference from the plain fish is the same in A and in B for all
+  four marked variants.
+- **MF6** On B, the value of a numeral run before a fish depends on the variant (MI; NP4's result on a new sample).
+- **MF7** The variant depends on the preceding sign beyond permutation (MI), in A and in B (the mark agrees with its
+  context, as inflection would).
