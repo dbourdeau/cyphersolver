@@ -6882,3 +6882,21 @@ p < 0.05.
 - **GC5** Copper-tablet texts are title-like.
 - **GC6** 520 names are shared between the cities more often than 740 names (share of the smaller city's names; Fisher).
 - **GC7** Closer texts are shared between the cities more often than 740 names (Fisher).
+
+## Results of the hundred-and-fifty-seventh set (added after the test; `predict_test157.py`, `results/predict_test157.md`)
+
+Two held, five failed. Profiles (estimate/observed, shared, on one object): 740 names 5.13, 0.15, 0.92; 520 names
+4.08, 0.17, 0.91; closer texts 5.25, 0.12, 0.93; count texts 8.75, 0.06, 0.87; copper-tablet texts 1.47, 0.54, 0.51
+(Linear B persons 3.57, 0.18, 0.71; titles 1.56, 0.50, 0.51). Held: 740 names are person-like (GC1) and copper texts
+title-like (GC5: a closed set of labels, repeated across areas, as the tablet sets of sets 33-34 showed). Failed:
+520 names (GC2), closer texts (GC3) and count texts (GC4) are all person-like too, and 520 names and closers are
+shared between the cities no more than 740 names (GC6: 17% against 15%; GC7: 12.5%).
+
+**What this changes.** Every seal genre, and the count texts, has the open profile. Count texts are combinations of
+numbers and commodity signs, not people, so the profile measures an open, combinatorial set of texts, not persons as
+such. Set 147 and 152 still stand as far as they go: seal names are an open population of combinations over a closed
+stock of elements, and in that respect they differ from titles and from the fixed label sets of the copper tablets.
+But 'personal names' is one reading of that openness, not the only one; any system that composes texts freely (names,
+descriptions, counts) gives it. What the 520 / closer tests add: 520 names and closer texts are not a small shared
+set of titles or divine names either; they are as varied and as local as 740 names. Tally, counting parts: 1127 held,
+1064 failed (2191 registered).

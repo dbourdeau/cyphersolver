@@ -2096,6 +2096,14 @@ Registered first (9f410531e). Name numerals are small (83% worth 4 or less; slig
 29 name pairs differ only in the number, but these are mostly 'N + one head' (2/3/4/6 + fish), the counting
 construction. Birth-order or rank numbers and counts are not separated. Tally 1125 held, 1059 failed.
 
+## Hundred-and-seventy-first pass (24 Sept 2026): which kinds of text are names, which titles?
+
+Registered first (fe60adf86). All seal genres (740, 520, closer) and the count texts have the open, person-like
+capture-recapture profile; only the copper-tablet texts have the closed, title-like one. Because count texts are
+not people, the profile measures openness (free composition), not personhood: sets 147/152 show seal names are an
+open population over closed elements, and 'personal names' is one reading of that, not the only one. 520 names and
+closers are not a small shared title set. Tally 1127 held, 1064 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
