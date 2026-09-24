@@ -8048,3 +8048,18 @@ from 2.05% to 1.58% (SX3, short of 0.5 points). The extra lines apparently follo
 is the fuller export, with fragmentary and variant readings that A's cleaning left out), so more text of that kind
 does not help the benchmark. No progress this loop: streak 1. Tally, counting parts: 1266 held, 1192 failed (2458
 registered).
+
+# Hundred-and-eighty-ninth set, registered before testing (24 September 2026): decipherment loop 14, strokes inside the U (seven hypotheses)
+
+Metric after loop 13: S 4.712, R 81.3%, M 16.6% (M+ 41.4%), P 0, L 4; streak 1. Loop 11 found that strokes inside the
+jar change its job. Parpola's list has the same device on the U: plain U 700 (P310, the measure container of the count
+tokens); U with a long vertical stroke inside 704 / 705 / 706 (P316; 705 / 706 are the signs of the closing formula
+'705 33 520'); U with two or three short strokes inside 702 / 703 (P311, P312). Distinct lines; A and B separately.
+
+- **UI1** The plain U 700 is directly preceded by a numeral more often than the stroked U 705 / 706 (A; Fisher).
+- **UI2** UI1 holds on B.
+- **UI3** 705 / 706 are directly followed by the long 3 (33) more often than 700 is (A + B).
+- **UI4** 700 ends the line (or stands before 400 / 90) more often than 705 / 706 (A).
+- **UI5** UI4 holds on B.
+- **UI6** The short-stroked U 702 / 703 are preceded by a numeral less often than 700 (A + B; 17 tokens, weak).
+- **UI7** Progress rule: UI1 with UI2, or UI4 with UI5 (the inner-stroke device generalises from the jar to the U).
