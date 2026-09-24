@@ -3578,3 +3578,19 @@ Seals and tablets (F, distinct (site, line))
 - **DN18** (forty-seventh FI7) Harappa formulas open with a numeral more often than Mohenjo-daro ones, length-stratified.
 - **DN19** (sixty-ninth AM18) Over distinct seal texts with a motif, unicorn texts are pure names more often.
 - **DN20** (seventy-first EF19) Over distinct seal name texts with a motif, 520 names are unicorn less often.
+
+## Results of the seventy-third set (added after the test; `predict_test73.py`, `results/predict_test73.md`)
+
+Sixteen held, four failed. Counting each line once (2,722 distinct of 4,116) and each name once (1,089 of 1,895), the
+core stands: the head sets the ending (DN1: 0.45 bits) and 46 of 52 heads fix theirs (DN2); the tiered form is for 5-8
+(DN8: 64% against 1%); the next sign sets the numeral kind (DN9); long numerals open lines (DN10: 28% against 11%);
+(value, sign) pairs are idioms (DN11). The newer findings also survive: which fish head decides the ending (DN3, p =
+0.002), fish are counted more (DN4: 23% against 12%) and chosen by their neighbour (DN5), names avoid distant repeats
+(DN6) and doubling is deliberate (DN15); formulas are number-first (DN13: 31% against 22%) and names the repetitive
+genre (DN14: 0.78 against 0.59); seal numerals are tiered more (DN17: 11% against 3%); Harappa formulas open with a
+number more (DN18: +5.9 points, down from +26.5, so most of that effect was repeated tablets); unicorn seals carry
+pure names (DN19: 53% against 40%). Weakened to non-significance: 520 not followed by 400 (DN7: 29% against 34%),
+formulas recurring with only the number changed (DN12: 16%, under 20%, was 39%, carried by the count tokens), seal
+values larger than tablet values (DN16: p = 0.056), and 520 less often unicorn (DN20: p = 0.07). These four earlier
+findings (EF17, FI5, SC1, EF19) should be treated as repeat-inflated. Tally, counting parts: 441 held, 506 failed (947
+registered).

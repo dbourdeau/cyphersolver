@@ -1462,6 +1462,13 @@ ending (0.034 bits). Tally 425 held, 502 failed.
 
 Post-test check (not registered): on distinct names the fish-520 link stands, 115 of 163 distinct 520 names contain a fish against 371 of 926 distinct 740 names (71% against 40%, p < 1e-12), and 67 of 163 are fish-headed against 45 of 926.
 
+## Eighty-seventh pass (24 Sept 2026): the findings recounted on distinct texts
+
+Registered first (seventy-third set, 509839418), tested (`predict_test73.py`). Sixteen of twenty findings survive
+counting each line and name once, including the whole core and the fish-head/ending rule. Repeat-inflated and now
+unconfirmed: 520 avoiding 400 (EF17), tally recurrence (FI5), larger seal values (SC1), 520 on fewer unicorns (EF19);
+the Harappa numeral-first effect shrinks from +26.5 to +5.9 points. Tally 441 held, 506 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
