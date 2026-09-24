@@ -1124,6 +1124,15 @@ copies: same-name tablets carry the same number in all 25 pairs (L2 fails) and l
 (L15) and count containers on seals too (L25). Fish variants alternate with 220 (L16). Pots run left to right 20% (L19);
 copper-tablet texts are recurring labels (L21). Tally 121 held, 191 failed.
 
+## Forty-second pass (24 Sept 2026): receipts, the fish split, units, habits
+
+Registered first (PREDICTIONS.md, twenty-eighth set, 2bef1f5f1), tested (`predict_test28.py`). Receipts name a
+seal-holder by the end of the seal name (E3, 51 of 83; E4, half one sign), copies buried together (E1), numbers 1-2
+(E21), never a human head (E22 reverse). '32 740' is a later formula, tokens earlier, larger counts deeper (E7, E20).
+The stroke pair belongs with the fish and those names carry the heading (E11, E12). In every notation the number
+depends on the following sign: numeral + sign pairs are idioms, not free counts (E14-E16). Copper tablets carry no
+numbers (E19). Tally 135 held, 202 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

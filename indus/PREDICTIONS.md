@@ -1718,3 +1718,40 @@ Direction and labels (A)
 Two cities' habits (F seals)
 - **E24** Seal names followed by 400 are from Harappa more often than other seal names.
 - **E25** Harappa seal names are followed by 90 less often than Mohenjo-daro seal names.
+
+## Results of the twenty-eighth set (added after the test; `predict_test28.py`, `results/predict_test28.md`)
+
+Fourteen held, eleven failed. 83 receipts.
+
+**Receipts name seal-holders by the end of their name.**
+- **E3 holds**: 51 of the 83 receipt names equal the final part of a longer seal name (p = 0.0001 against shuffled
+  order). **E4 holds**: 48% of receipt names are one sign, against 13% of seal names. **E23 holds**: they begin with
+  different signs from seal names. A receipt names its person by the head of the seal name (and sometimes the attribute
+  next to it), not by the whole name.
+- **E1 holds**: copies of the same receipt lie closer in depth (median 2.3 ft against 4.3 for random pairs, p = 0.0001).
+- **E21 holds**: 14 of the 19 numbers are 1 or 2. E5 fails narrowly (the number does not clearly depend on the name,
+  p = 0.063). E22 fails the other way: no receipt name has a human-figure head (0 of 83, against 7.4% of seal names).
+- E2 fails narrowly (receipts are earlier than tokens, 79% against 66%, p = 0.054).
+
+**The long-2 + 740 expression is later.** **E7 holds**: at Harappa the '32 740' tablets are from later levels (9 of
+11), the count tokens from earlier ones (113 of 171; p = 0.007). E6 and E8 fail (not a moulded formula, not short).
+**E20 holds**: count-token values correlate with depth (Spearman 0.24, p = 0.002): larger counts lie deeper, i.e.
+earlier.
+
+**The fish.**
+- **E11 holds**: the short stroke pair is followed by a fish 26% and 34% of the time, the short three 13% and 6%: the
+  pair belongs with the fish.
+- **E12 holds**: names containing the stroke pair + fish carry the heading far more often (+28.7 points, p = 0.0001).
+  With L11 (they take 520), the numbered fish names are headed 520 names: a formal, titled class.
+- E9 fails (the long pair before a fish does not raise 520 significantly; 8 cases), E10 fails the other way (plain-fish
+  names without a numeral take 740 only 28% of the time: the plain fish is on the 520 side too).
+
+**Numbers are idioms, not free counts.** **E14, E15, E16 hold**: in every notation (long on seals, short in A and B,
+tiered) the value depends strongly on the sign that follows (MI 1.16-1.64 bits, p = 0.0001). Numeral + sign pairs
+behave as fixed expressions, each sign with its own number, more than as quantities free to vary. **E13 holds**: long
+numerals on seals stand in 520 lines more than 520 lines' share (30% against 18%).
+
+**Other.** **E19 holds** (copper tablets carry numerals less than seals, -11.7 points, p = 0.005: labels without
+counts). E17, E18 fail narrowly (p = 0.10, 0.08). E24, E25 fail (no Harappa / Mohenjo-daro habit in 400 or 90 on seals).
+
+Tally, counting parts: 135 held, 202 failed (337 registered).
