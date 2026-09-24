@@ -5104,3 +5104,15 @@ Smaller sites
 B
 - **RH19** (SB11) Block-1 body tokens are the last body sign more often than other body tokens.
 - **RH20** (CB10) Closer bodies hold a fish less often than name bodies.
+
+## Results of the hundred-and-seventh set (added after the test; `predict_test107.py`, `results/predict_test107.md`)
+
+All twenty held. On the fuller corpus without copper (2,116 distinct lines): block 1 is a head block (RH1: 49% against
+27%) and block 3 a formula block (RH2: 61% against 39%); same-family signs cluster (RH3, p = 0.001); closers follow
+name-head signs (RH4: 66%), each with its own partners (RH5, p = 0.0001), one per line (RH6: 2 lines), with fewer fish
+(RH7: 35% against 44%) and almost never after a 520-class head (RH8: 7% against 83%); lines rarely hold two numbers (RH9:
+8%); four of the top five templates are the same (RH10); bare lines are short (RH11), name-shaped (RH12: 57% end in a
+head; RH13: 61% start with an opener) and full of formula-only signs (RH14: 20% of tokens against 0.1%); 368 follows a
+head (RH15: 66%). At the smaller sites closer inscriptions are a quarter of seal inscriptions (RH16: 42 of 168), and
+bare lines are short (RH17) and name-shaped (RH18: 63%). In B, block 1 heads (RH19: 51% against 33%) and closer bodies
+avoid fish (RH20: 26% against 40%). Tally, counting parts: 789 held, 838 failed (1627 registered).

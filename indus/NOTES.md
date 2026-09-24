@@ -1715,6 +1715,16 @@ Registered first (hundred-and-sixth set, 656e720a2), tested (`predict_test106.py
 name-shaped sequences (opener ... head) that are not attested names, on tablets and potsherds, somewhat Harappan, and
 rich in formula-only signs: a third, practical genre beside names and counts. Tally 769 held, 838 failed.
 
+## Hundred-and-twenty-first pass (24 Sept 2026): sets 102-106 on held-out data
+
+Registered first (hundred-and-seventh set, dea9bde3b), tested (`predict_test107.py`). All twenty replications held on
+the fuller corpus without copper, the smaller sites and B: shape blocks (1 heads, 3 formulas, clustering), the closer
+inscriptions (a quarter of small-site seal inscriptions too), line templates, and bare name-shaped lines.
+
+Summary of sets 105-107: seal inscriptions come in two sister types, name + 740/520 and name-like body + closer (740
+side of the head inventory, fewer fish), at every site; bare name-shaped lines without any role sign form a practical
+third genre on tablets and pots. Tally 789 held, 838 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
