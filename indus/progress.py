@@ -55,6 +55,13 @@ def roles(DL):
     by = Counter()
     for t in DL:
         num_before = False
+        nm = R.name_of(list(t))
+        # set 176 (LP5): body signs before the head of a parsed name are modifiers (head-final name grammar, H7, DT1-DT4)
+        mods = set()
+        if nm and len(nm[0]) >= 2:
+            off = next((j for j in range(len(t) - len(nm[0]) + 1) if tuple(t[j:j + len(nm[0])]) == nm[0]), None)
+            if off is not None:
+                mods = set(range(off, off + len(nm[0]) - 1))
         for i, g in enumerate(t):
             role = None
             if g in R.NUMS:
@@ -71,6 +78,8 @@ def roles(DL):
                 role = 'name head'
             elif num_before:
                 role = 'counted sign'
+            elif i in mods:
+                role = 'name modifier'
             num_before = g in R.NUMS
             tot += 1
             if role:

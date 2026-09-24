@@ -24,3 +24,4 @@ makes the texts more predictable) and M rising.
 | Loop | Sets | S bits (explained) | R roles | M meanings | P | L open | Note |
 |---|---|---|---|---|---|---|---|
 | baseline | 1-175 | 4.712 (24.9%) | 56.2% | 16.6% | 0 | 4 | model tri + pos + end, discounted (set 125) |
+| 1 | 176 | 4.712 (24.9%) | 72.9% | 16.6% | 0 | 4 | role / class / numeral-value components add nothing to S; slot-based modifier role adopted in R |
