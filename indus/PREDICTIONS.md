@@ -4669,3 +4669,16 @@ the original used 1,000); p < 0.05.
 - **XC18** (MM20) Seal names take 520 more often than names on other objects (distinct).
 - **XC19** (CG10) At Mohenjo-daro, 80%+ of heads with 5+ distinct names take one ending in 90%+.
 - **XC20** (CG9) The same at Harappa.
+
+## Results of the ninety-seventh set (added after the test; `predict_test97.py`, `results/predict_test97.md`)
+
+Eighteen held, two failed: the name findings survive removing the copper tablets (198 objects). Names stay local (XC1:
+31 bodies at both cities, p = 0.0001), 82% one-off (XC2), repeated names short (XC3), Harappa names shorter (XC4: 2.9
+against 3.6) and less often counted (XC6: 34% against 44%), 520 names fish names (XC7: 74% against 38%), seal names
+one-off (XC8: 86% against 56%), one-off names = rare opener + common head (XC9: 82%; XC10: 14% against 6%), Harappa
+repeating names (XC11: 35% against 18%), city-local units (XC12), heads shared and openers local (XC13, XC14), the city
+styles (XC15-XC17: Mohenjo-daro longer and headed, Harappa suffixed), and 520 as a seal class (XC18: 18% against 9%).
+Two do not survive: Harappa's larger 520 share (XC5: 18% against 16%, p = 0.24; the sixty-ninth set's AM10 was already
+borderline at p = 0.043, and copper labels had added Mohenjo-daro 740 names), and the Mohenjo-daro fixed-class count
+falls just under its threshold (XC19: 27 of 34, 79%; Harappa XC20: 13 of 16). Tally, counting parts: 673 held, 754
+failed (1427 registered).

@@ -1640,6 +1640,12 @@ Registered first (ninety-sixth set, d72a49420), tested (`predict_test96.py`). Co
 '845 ... 407' marks animal/figure labels. Caveat: F name counts include copper labels, which inflated a few 'common
 names' in earlier sets (503 615 752 740 x28 is copper only). Tally 655 held, 752 failed.
 
+## Hundred-and-eleventh pass (24 Sept 2026): the name findings without copper tablets
+
+Registered first (ninety-seventh set, e196b1108), tested (`predict_test97.py`). Eighteen of twenty F-based name
+findings survive removing copper tablets; AM10 (Harappa prefers 520) does not and is withdrawn, and the Mohenjo-daro
+fixed-class share is 79% (just under 80%). Tally 673 held, 754 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
