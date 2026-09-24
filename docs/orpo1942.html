@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>German police double-box radiograms, 1942 &mdash; one key, not broken</title>
-<meta name="description" content="Six Ordnungspolizei radio messages of 1942 in the Doppelkastenschl&uuml;ssel, published by Frode Weierud and posted by Klaus Schmeh in August 2020 as unsolved. Attempted September 2026, not solved: the five messages of 27 February 1942 share one key (970 letters); every ciphertext-only attack fails, including on synthetic text of the same size with a known key, and the reasons are measured; a known-plaintext solver recovers the boxes from about 80 pairs; and Bletchley's decrypt of the 16 June message about Borki does not align with its ciphertext.">
+<title>German police double-box radiograms, 1942</title>
+<meta name="description" content="Six Ordnungspolizei radio messages of 1942 in the Doppelkastenschl&uuml;ssel, published by Frode Weierud and posted by Klaus Schmeh in August 2020 as a challenge. No key was recovered. The five messages of 27 February 1942 share one key (970 letters); every ciphertext-only attack tried fails, as it does on synthetic text of the same size with a known key, and the reasons were measured. A known-plaintext solver recovers the boxes from about 80 pairs, but Bletchley's decrypt of the 16 June message about Borki could not be aligned with its ciphertext.">
 <link rel="stylesheet" href="style.css?v=20260922b">
 <meta name="date" content="2026-09-18">
 <meta name="last-modified" content="2026-09-22">
@@ -39,10 +39,10 @@
 </div>
 <section class="hero">
   <div class="cipherstrip">PXSXH IHVGD OLIXA DYZZT<br>RFBLQ XPLPN MSLSB ZZSFP<br>&hellip; Rovno to Berlin, 27 February 1942</div>
-  <p class="kicker">Mogilev, Rovno, Proskurov &rarr; Berlin &middot; Doppelkastenschl&uuml;ssel, two boxes, two passes &middot; February and June 1942 &middot; not solved</p>
+  <p class="kicker">Mogilev, Rovno, Proskurov &rarr; Berlin &middot; Doppelkastenschl&uuml;ssel, two boxes, two passes &middot; February and June 1942</p>
   <h1>German police double-box radiograms, 1942</h1>
-  <p class="sub">Six radio messages of the Ordnungspolizei on the Eastern Front, intercepted at Beaumanor, kept in NSA&rsquo;s Historic Cryptographic Collection at NARA, and published by Frode Weierud (CryptoCellar, 5 August 2020); Klaus Schmeh posted them as unsolved on 30 August 2020. One of them has a Bletchley decrypt; the other five do not.</p>
-  <p class="sub">The five messages of 27 February 1942 are one key, 970 letters. No ciphertext-only attack tried here breaks them, and none breaks synthetic text of the same size either. A known-plaintext solver would, from about 80 pairs.</p>
+  <p class="sub">Six radio messages of the Ordnungspolizei on the Eastern Front, intercepted at Beaumanor, kept in NSA&rsquo;s Historic Cryptographic Collection at NARA, and published by Frode Weierud (CryptoCellar, 5 August 2020); Klaus Schmeh posted them as a challenge on 30 August 2020. One of them has a Bletchley decrypt; for the other five no decrypt is known.</p>
+  <p class="sub">No key was recovered. The five messages of 27 February 1942 are in one key, 970 letters. No ciphertext-only attack tried here recovers it, and none recovers the key of synthetic text of the same size either. A known-plaintext solver does, from about 80 pairs; the one decrypt, of the June message, could not be aligned with its ciphertext to supply them.</p>
   <p class="meta">Daniel Bourdeau &middot; attempted <time datetime="2026-09-18">18 September 2026</time> &middot; updated <time datetime="2026-09-22">22 September 2026</time></p>
 <div class="seal stuck" aria-hidden="true"><span>attempted</span></div>
 </section>
@@ -50,8 +50,8 @@
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#messages">The messages</a><a href="#a115">A115 and its Bletchley decrypt</a><a href="#onekey">One key for 27 February</a><a href="#system">The system</a><a href="#tried">What was tried</a><a href="#secondpass">Why the second pass defeats local search</a><a href="#finish">What would finish it</a><a href="#sources">Sources</a></nav>
 <div class="callout">
-<strong>Summary.</strong> In 1942 the German Order Police enciphered their radio traffic in the Army&rsquo;s double-box system: two 5&times;5 boxes, each letter pair enciphered twice through the same boxes. Weierud published six intercepts. The message of 16 June 1942 from Mogilev has a plaintext, the Bletchley decrypt reproduced by Hanyok in <em>Eavesdropping on Hell</em>: sixteen men of Police Battalion 51 killed on the Bobruisk&ndash;Mogilev road, and the village of Borki razed and its inhabitants &ldquo;liquidated&rdquo;. The five messages of 27 February 1942 have none. Their discriminator groups show that all five, seven parts and 970 letters, are enciphered in one daily key. Every ciphertext-only attack tried here fails on them: single encipherment is excluded outright, and for the double encipherment annealing, staged scoring, tempering, relaxation and EM all fail on a synthetic 970-letter text with a known key as well, so the failure on the real text says nothing about the plaintext. The failure is measured: the true key sits in a basin eight to ten swaps wide, and the second pass leaves the search nothing to climb outside it. A known-plaintext solver recovers the boxes from about 80 plaintext&ndash;ciphertext pairs. The obvious source of pairs, Bletchley&rsquo;s text of the June message, does not align with its ciphertext under any spelling, layout or length tried, so the words enciphered were not the words in the decrypt.
-<em>Status: not solved. What would finish it is about 80 known pairs for one key: Bletchley&rsquo;s decrypts of the 27 February traffic (TNA HW 16/17, not online), or the exact German wording of the June message.</em>
+<strong>Summary.</strong> In 1942 the German Order Police enciphered their radio traffic in the Army&rsquo;s double-box system: two 5&times;5 boxes, each letter pair enciphered twice through the same boxes. Weierud published six intercepts. The message of 16 June 1942 from Mogilev has a plaintext, the Bletchley decrypt reproduced by Hanyok in <em>Eavesdropping on Hell</em>: sixteen men of Police Battalion 51 killed on the Bobruisk&ndash;Mogilev road, and the village of Borki razed and its inhabitants &ldquo;liquidated&rdquo;. The five messages of 27 February 1942 have none. Their discriminator groups show that all five, seven parts and 970 letters, are enciphered in one daily key. Every ciphertext-only attack tried here fails on them: single encipherment is excluded outright, and for the double encipherment annealing, staged scoring, tempering, relaxation and EM all fail on a synthetic 970-letter text with a known key as well, so the failure on the real text says nothing about the plaintext. The cause was measured. The true key sits in a basin eight to ten swaps wide, and the second pass leaves the search nothing to climb outside it. A known-plaintext solver recovers the boxes from about 80 plaintext&ndash;ciphertext pairs. The obvious source of pairs, Bletchley&rsquo;s text of the June message, does not align with its ciphertext under any spelling, layout or length tried, so the words enciphered were not the words in the decrypt.
+<em>No key has been recovered. What is needed is about 80 known pairs for one key: Bletchley&rsquo;s decrypts of the 27 February traffic (TNA HW 16/17, not online), or the exact German wording of the June message.</em>
 </div>
 
 <h2 id="messages"><span class="num">01</span> The messages</h2>
@@ -82,7 +82,7 @@
 
 <blockquote><em>An Rf SS und Chef Orpo. An Strasse BOBRUISK&ndash;MOGILEW, Partisanenkampf: 16 Mann von Pol. Batl. 51 gefallen. Das Dorf BORKI, in dem Waffen und Munition gefunden wurden, wurde dem Erdboden gleichgemacht. Die Einwohnerschaft liquidiert. Von H&ouml;heren SS und Pol.f&uuml;hrer Russland Mitte.</em></blockquote>
 
-<p>To the Reichsf&uuml;hrer SS and the Chief of the Order Police: in a fight with partisans on the Bobruisk&ndash;Mogilev road, sixteen men of Police Battalion 51 were killed; the village of Borki, where weapons and ammunition had been found, was levelled; the inhabitants were liquidated. From the Higher SS and Police Leader Russia Centre. Hanyok notes that several villages named Borki exist in present-day Belarus and does not locate this one, but the place is well known: it is Borki in the Kirovsk district of Mogilev region, destroyed on 15 June 1942 together with the settlements around it (Zakrinichye, Krasny Pakhar, Dzerzhinsky, Proletary, Dolgoe Pole, Khvatovka). The operation was carried out by the Dirlewanger SS special battalion with Einsatzkommando 8 and police units after partisan attacks on the Mogilev&ndash;Bobruisk road; Dirlewanger&rsquo;s own report counts 2,027 dead, and a memorial now stands on the site. Zhukov&rsquo;s history of the Dirlewanger unit cites the same sixteen dead of Police Battalion 51 as the decrypt, so the message of 16 June is the Higher SS and Police Leader&rsquo;s report of the Borki massacre. (Identification by Ilya, a reader, September 2026: <a href="https://military.wikireading.ru/62640">Zhukov</a>, <a href="https://mogilev-region.gov.by/news/v-kirovskom-rayone-karateli-v-iyune-1942-goda-unichtozhili-bolee-dvuh-tysyach-chelovek">Mogilev regional executive committee</a>, <a href="https://partizany.by/battles/tak-pogibla-derevnya">partizany.by</a>.) The decrypt is what makes this group of messages &ldquo;partially solved&rdquo; in Schmeh&rsquo;s 2021 list of unsolved Second World War ciphers.</p>
+<p>To the Reichsf&uuml;hrer SS and the Chief of the Order Police: in a fight with partisans on the Bobruisk&ndash;Mogilev road, sixteen men of Police Battalion 51 were killed; the village of Borki, where weapons and ammunition had been found, was levelled; the inhabitants were liquidated. From the Higher SS and Police Leader Russia Centre. Hanyok notes that several villages named Borki exist in present-day Belarus and does not locate this one, but the place is well known: it is Borki in the Kirovsk district of Mogilev region, destroyed on 15 June 1942 together with the settlements around it (Zakrinichye, Krasny Pakhar, Dzerzhinsky, Proletary, Dolgoe Pole, Khvatovka). The operation was carried out by the Dirlewanger SS special battalion with Einsatzkommando 8 and police units after partisan attacks on the Mogilev&ndash;Bobruisk road; Dirlewanger&rsquo;s own report counts 2,027 dead, and a memorial now stands on the site. Zhukov&rsquo;s history of the Dirlewanger unit cites the same sixteen dead of Police Battalion 51 as the decrypt, so the message of 16 June is the Higher SS and Police Leader&rsquo;s report of the Borki massacre. (Identification by Ilya, a reader, September 2026: <a href="https://military.wikireading.ru/62640">Zhukov</a>, <a href="https://mogilev-region.gov.by/news/v-kirovskom-rayone-karateli-v-iyune-1942-goda-unichtozhili-bolee-dvuh-tysyach-chelovek">Mogilev regional executive committee</a>, <a href="https://partizany.by/battles/tak-pogibla-derevnya">partizany.by</a>.) Because of this decrypt, Schmeh&rsquo;s 2021 list of Second World War ciphers marks the group of messages &ldquo;partially solved&rdquo;.</p>
 
 <h3>An odd count</h3>
 
@@ -90,7 +90,7 @@
 
 <h2 id="onekey"><span class="num">03</span> One key for 27 February</h2>
 
-<p>Weierud reads the discriminator as the last three letters of the group, in any order, and cites the Bletchley note that four discriminators were issued with each daily key. Read that way, with the O/Q confusion allowed for in one group, the seven parts of 27 February use exactly four:</p>
+<p>Weierud reads the discriminator as the last three letters of the group, in any order, and cites the Bletchley note that four discriminators were issued with each daily key. Taken that way, with the O/Q confusion allowed for in one group, the seven parts of 27 February use exactly four:</p>
 
 <table>
 <tr><th>discriminator</th><th>parts</th></tr>
@@ -104,9 +104,9 @@
 
 <h2 id="system"><span class="num">04</span> The system</h2>
 
-<p>Two manuals survive and both were read here: the OKH draft <em>Schl&uuml;sselanleitung zum Doppelkastenschl&uuml;ssel</em> of 2 December 1940 and the OKW issue of December 1941. They agree. There are two 5&times;5 boxes. The plaintext is written in double lines of <b>17</b> letters, and the pairs are the letters that stand one under the other; a remainder too short for a double line is split in half. Each pair is enciphered <b>twice</b> with the same boxes. When the two letters of a pair fall in the same row, each cipher letter is taken from the right. The spelling rules are CH &rarr; Q, &szlig; &rarr; SZ, and the hyphen written STRIQ. The reference implementation, <code>dk.py</code>, enciphers both manuals&rsquo; worked examples letter for letter (the 1941 manual prints <span class="c">tylhu</span> on p. 5 for the <span class="c">tvlhu</span> it has correctly on p. 6).</p>
+<p>Two manuals survive and both were consulted here: the OKH draft <em>Schl&uuml;sselanleitung zum Doppelkastenschl&uuml;ssel</em> of 2 December 1940 and the OKW issue of December 1941. They agree. There are two 5&times;5 boxes. The plaintext is written in double lines of <b>17</b> letters, and the pairs are the letters that stand one under the other; a remainder too short for a double line is split in half. Each pair is enciphered <b>twice</b> with the same boxes. When the two letters of a pair fall in the same row, each cipher letter is taken from the right. The spelling rules are CH &rarr; Q, &szlig; &rarr; SZ, and the hyphen written STRIQ. The reference implementation, <code>dk.py</code>, enciphers both manuals&rsquo; worked examples letter for letter (the 1941 manual prints <span class="c">tylhu</span> on p. 5 for the <span class="c">tvlhu</span> it has correctly on p. 6).</p>
 
-<p>The Army&rsquo;s &ldquo;NI&rdquo; field cipher, as NSA&rsquo;s <em>Cryptologic Quarterly</em> describes it, is the same scheme with <b>21</b>-letter lines and the <b>left</b> neighbour for same-row pairs; its worked examples (EU &rarr; VR &rarr; QZ, en &rarr; FL &rarr; NC, ea &rarr; HK &rarr; TT) also reproduce exactly. Which variant the police used is not documented, so every attack here was run under both. That February 1942 is the double-box period at all rests on Hanyok: the police changed from double transposition to double Playfair between September and early November 1941, and Bletchley found the new system easier to read.</p>
+<p>The Army&rsquo;s &ldquo;NI&rdquo; field cipher, as NSA&rsquo;s <em>Cryptologic Quarterly</em> describes it, is the same scheme with <b>21</b>-letter lines and the <b>left</b> neighbour for same-row pairs; its worked examples (EU &rarr; VR &rarr; QZ, en &rarr; FL &rarr; NC, ea &rarr; HK &rarr; TT) also reproduce exactly. Which variant the police used is not documented, so every attack here was run under both. That February 1942 is the double-box period at all rests on Hanyok: the police changed from double transposition to double Playfair between September and early November 1941, and Bletchley found the new system easier to decrypt.</p>
 
 <h3>The cross-row identity</h3>
 
@@ -118,7 +118,7 @@
 
 <pre>p1 = A[ B-row of v1 ][ A-col of v2 ]      p2 = B[ A-row of v2 ][ B-col of v1 ]</pre>
 
-<p>Every step mixes an A-coordinate with a B-coordinate. Between the two passes sits the map from each letter&rsquo;s cell in box A to its cell in box B, a random permutation of the 25 cells. Section 06 shows why that permutation, rather than the size of the key, is what stops the attacks.</p>
+<p>Every step mixes an A-coordinate with a B-coordinate. Between the two passes sits the map from each letter&rsquo;s cell in box A to its cell in box B, a random permutation of the 25 cells. Section 06 shows that this permutation stops the attacks; the size of the key does not.</p>
 
 <h2 id="tried"><span class="num">05</span> What was tried</h2>
 
@@ -136,9 +136,9 @@
 <tr><td>Key-free alignment of Bletchley&rsquo;s A115 text to its ciphertext (<code>align115c.py</code>, <code>align115h.py</code>): repeated cipher pairs must match repeated plaintext pairs; exact backtracking over spellings, X separators, numbers written out, address and signature placement, Borki / Mohilew / Bobruiisk variants, 222 or 224 letters, line lengths 1&ndash;24</td><td>no consistent alignment. The same search recovers a synthetic spelling in 35 seconds</td><td><span class="st stuck">no alignment</span></td></tr>
 </table>
 
-<p>The single-encipherment results exclude that hypothesis: the pooled text is 970 letters, far more than a single-pass double box needs, and the best key found is nowhere near German. The double-encipherment results exclude nothing about the plaintext, because the same methods fail on text where the answer is known. They measure the attacks, not the messages.</p>
+<p>The single-encipherment results exclude that hypothesis: the pooled text is 970 letters, far more than a single-pass double box needs, and the best key found is nowhere near German. The double-encipherment results exclude nothing about the plaintext, because the same methods fail on text where the answer is known. They measure the attacks only.</p>
 
-<p>The alignment result does say something. A115&rsquo;s repeated cipher pairs are real (section 02), and the aligner, given a synthetic text spelled in one of the ways it tries, finds it. On A115 no combination of spellings, separators, numbers, layout and length makes every repeated cipher pair fall on a repeated plaintext pair. Either the words enciphered differ from Bletchley&rsquo;s rendering, through abbreviation, order or extra matter such as a longer address, or the police layout differs from both manuals.</p>
+<p>The alignment result is informative. A115&rsquo;s repeated cipher pairs are real (section 02), and the aligner, given a synthetic text spelled in one of the ways it tries, finds it. On A115 no combination of spellings, separators, numbers, layout and length makes every repeated cipher pair fall on a repeated plaintext pair. Either the words enciphered differ from Bletchley&rsquo;s rendering, through abbreviation, order or extra matter such as a longer address, or the police layout differs from both manuals.</p>
 
 <h2 id="secondpass"><span class="num">06</span> Why the second pass defeats local search</h2>
 
@@ -154,7 +154,7 @@
 
 <h2 id="finish"><span class="num">07</span> What would finish it</h2>
 
-<p><span class="st stuck">not solved</span> &nbsp;Closed on the ciphertext alone. Two routes would reopen it.</p>
+<p><span class="st stuck">not solved</span> &nbsp;Closed; the ciphertext-only attacks failed. Two routes would reopen it.</p>
 
 <table>
 <tr><th>what</th><th>why it would work</th></tr>
