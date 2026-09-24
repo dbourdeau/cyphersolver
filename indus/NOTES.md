@@ -1852,6 +1852,13 @@ in the line + two-sign context = 4.92 bits per sign held-out (5.69 on new F line
 classes and genre add nothing once position and context are included: the structural rules are largely positional and
 local. Tally 972 held, 944 failed.
 
+## Hundred-and-thirty-ninth pass (24 Sept 2026): beating the benchmark
+
+Registered first (hundred-and-twenty-fifth set, bb3eaea13), tested (`predict_test125.py`). Lines are anchored at their
+end (distance from the end predicts 0.57 bits better than from the start); shape blocks predict unseen signs (new lines
+5.69 to 5.44 bits). Better smoothing gives a new benchmark of 4.66 bits per sign. Length, first sign and finer positions
+add nothing. Tally 978 held, 948 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

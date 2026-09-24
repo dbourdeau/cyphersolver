@@ -5817,3 +5817,15 @@ predictive test.
 - **BB8** The best of these models scores under 4.8 bits per sign on held-out A + B lines.
 - **BB9** The best model scores under 5.5 bits on new F lines.
 - **BB10** The best model's gain over the benchmark on B (80/20) is positive.
+
+## Results of the hundred-and-twenty-fifth set (added after the test; `predict_test125.py`, `results/predict_test125.md`)
+
+Six held, four failed. Two structural facts and a better benchmark. Lines are anchored at their end: knowing how far a
+sign is from the end predicts it 0.57 bits better than knowing how far it is from the start (BB1: 5.46 against 6.02).
+Shape families carry over to unseen signs: backing off rare and unknown signs to their catalogue block improves new F
+lines from 5.69 to 5.44 bits (BB5). Better smoothing (absolute discounting) lowers the bigram from 6.38 to 4.99 (BB3) and
+the benchmark from 4.92 to 4.68 (BB4); with an extra end-distance term the best model reaches 4.66 bits per sign on
+held-out A + B lines (BB8) and improves B too (BB10: 4.71 to 4.52). Line length, the first sign and a finer
+end-distance term add nothing once position and context are in (BB2, BB6, BB7), and new F lines stay at 5.64 (BB9, not
+under 5.5). New benchmark: 4.66 bits per sign held-out, 5.44 on new lines with block backoff. Tally, counting parts: 978
+held, 948 failed (1926 registered).
