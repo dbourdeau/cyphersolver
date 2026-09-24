@@ -3594,3 +3594,37 @@ formulas recurring with only the number changed (DN12: 16%, under 20%, was 39%, 
 values larger than tablet values (DN16: p = 0.056), and 520 less often unicorn (DN20: p = 0.07). These four earlier
 findings (EF17, FI5, SC1, EF19) should be treated as repeat-inflated. Tally, counting parts: 441 held, 506 failed (947
 registered).
+
+# Seventy-fourth set, registered before testing (24 September 2026): heads as roles, openers as persons (twenty hypotheses)
+
+Idea from the sixty-ninth and seventieth sets: a name = an individual first element + a common head, like 'X the
+potter'. All counts over DISTINCT names (A + B) or distinct (site, name) in F. Head = last body sign; opener = first
+body sign of bodies of 2+. Fairservis categories from cat_of. 10,000-draw permutations; p < 0.05.
+
+Heads are shared, openers are particular
+- **HR1** Head types seen at either city are seen at both more often than opener types (F).
+- **HR2** Per sign with 5+ distinct names in the role, distinct partners per name is higher for heads (openers per
+  head) than for openers (heads per opener) (rank test).
+- **HR3** The ten commonest heads cover a larger share of distinct names than the ten commonest openers.
+- **HR4** In B alone, HR3 holds.
+- **HR5** 80%+ of heads of tablet names are also heads of seal names; openers of tablet names are seal openers less
+  often than that (F; Fisher over types).
+- **HR6** In one-off names, head types are shared by the two cities more often than opener types (F).
+- **HR7** 20%+ of openers of one-off names occur in that one name only.
+Heads and openers combine freely
+- **HR8** In 2-sign bodies, opener and head are independent (MI permutation p >= 0.05).
+- **HR9** In bodies of 3+, first and last signs are independent (p >= 0.05).
+- **HR10** Given the head, the opener adds no information about the ending (conditional MI, p >= 0.05).
+- **HR11** Long bodies (4+) share their head with a 2-sign body more often than they share their opener with one
+  (paired sign test).
+What heads are
+- **HR12** Head types are counted in formulas (directly after a numeral) more often than opener types (types used
+  mainly in one role; Fisher).
+- **HR13** Role (head against opener) depends on Fairservis category (MI over types).
+- **HR14** The ending depends on the head's category (MI over names with a categorised head).
+- **HR15** 40%+ of distinct 520 names have a fish head.
+- **HR16** At most 10% of non-fish heads with 5+ names take 520 in the majority.
+- **HR17** Fish are openers more often than heads (share of fish among opener tokens against head tokens).
+- **HR18** Headed names (heading unit) have a different head distribution from unheaded names (MI).
+- **HR19** Distinct 740 names are longer than distinct 520 names (rank test).
+- **HR20** The ten commonest heads are all at both cities (F).
