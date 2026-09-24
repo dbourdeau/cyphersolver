@@ -5728,3 +5728,26 @@ Order carries real information: a bigram model saves 1.8 bits per sign over unig
 8.23 to 6.75), and two signs of context save a further 0.6 (GM8: 5.80). The inventories generalise: 48% of test lines
 fall in the training top-10 templates (GM6), 65% of test bodies contain a training unit (GM9), 95% of test heads (GM10)
 and 88% of openers (GM11) were already seen. Tally, counting parts: 960 held, 934 failed (1894 registered).
+
+# Hundred-and-twenty-third set, registered before testing (24 September 2026): does structure improve prediction? (twelve hypotheses)
+
+Same 80/20 split and cross-entropy (bits per sign) as the hundred-and-twenty-second set (its baseline bigram 6.38 bits).
+'Role' of a sign: numeral kind, heading (first-position 817/820/861), ending (740/520), suffix (400/90/151 after an
+ending), closer, fish, or other. Interpolation weights are fitted on a slice of the training data only. Thresholds as
+stated.
+
+- **BM1** Interpolating the sign bigram with a role-bigram model (P(role|previous role) x P(sign|role)) lowers held-out
+  cross-entropy by 0.1+ bits.
+- **BM2** Genre-specific bigrams (genre read from the line's last sign) lower it by 0.1+ bits.
+- **BM3** A position-aware unigram (first, middle, last) beats the plain unigram by 0.5+ bits.
+- **BM4** The bigram read in the recorded direction beats the same model read in reverse by 0.05+ bits.
+- **BM5** Knowing the ending raises head prediction from the preceding sign by 5+ points (names).
+- **BM6** For heads with 5+ training names, the ending is predicted with 95%+ accuracy.
+- **BM7** A 'no-repeat' adjustment (halving the probability of a sign already used two or more places back in the
+  line) lowers cross-entropy by 0.02+ bits.
+- **BM8** The trigram gain over bigram is larger for name lines than for count lines.
+- **BM9** A bigram trained on Mohenjo-daro lines is 0.3+ bits worse on Harappa lines than one trained on other
+  Harappa lines (F without copper, same training size).
+- **BM10** A bigram trained on names is 1+ bit worse on count lines than on held-out names.
+- **BM11** A bigram trained on A is within 1 bit of B-trained on held-out B lines (same training size).
+- **BM12** Adding the role model (BM1) helps more on the smaller sites' lines than on the cities' held-out lines.
