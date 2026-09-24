@@ -7649,3 +7649,15 @@ head-final name grammar (H7, DT1-DT4).
   that sit in name bodies.
 - **LP8** The loop's S gain holds on B alone (M77 additions, own 80/20 split): the best combination beats the baseline
   mixture there.
+
+## Results of the hundred-and-seventy-sixth set (added after the test; `predict_test176.py`, `results/predict_test176.md`)
+
+Three held, five failed. **Structure (S) does not move**: the role, class and numeral-value components each get zero
+weight in the fitted mixture (LP1-LP4: 4.712 bits with or without them); the trigram with position and distance from
+the end already carries what they encode. LP8 holds only on a tie (B: 4.562 both ways) and adds nothing. **Roles (R)
+move**: counting body signs before the head of a parsed name as modifiers, from the tested head-final name grammar,
+lifts R from 56.2% to 72.9% as measured by progress.py (LP5's quick count, 76.9%, counted some tokens twice). The
+role is positional, not a fixed property of the sign: training modifiers stay inside name bodies only 57% of the time
+in the test lines (LP6 fails), while training heads stay heads 88% of the time (LP7). The metric's R now includes the
+modifier role, read as 'the job of this token is fixed by its slot'. Tally, counting parts: 1227 held, 1145 failed (2372
+registered).

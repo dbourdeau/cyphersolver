@@ -2245,6 +2245,13 @@ and a second copy; Appendix II's 107 full names were transcribed by eye (`scratc
 23%), a contrast partly made by the sources (Prakrit given as stems). Not a language identification: small list,
 aksharas are not signs, donor naming crossed languages. Tally 1224 held, 1140 failed.
 
+## Hundred-and-ninetieth pass (24 Sept 2026): decipherment loop 1 (structure and roles)
+
+Standing goal set by the owner: loops toward decipherment with a progress metric (`progress.py`, `PROGRESS.md`,
+`results/progress_log.tsv`). Baseline S 4.712 bits, R 56.2%, M 16.6%, P 0, L 4. Registered first (set 176, 41e34a208).
+New components (role, class, numeral value) add nothing to S; the slot-based modifier role lifts R to 72.9%; heads are
+a stable class (88%), modifiers are not (57%). Tally 1227 held, 1145 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
