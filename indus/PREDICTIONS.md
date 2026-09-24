@@ -6948,3 +6948,48 @@ what a Mesopotamian legend spreads over fields (name, office, filiation), the op
 title or lineage. The seal format itself differs from Mesopotamia's: no filiation line, rarely a title field. Set
 152's 'Indus names behave as personal names' should be read as 'Indus seal texts are individual compositions, as
 Linear B person names and Ur III whole legends are'. Tally, counting parts: 1130 held, 1068 failed (2198 registered).
+
+# Hundred-and-fifty-ninth and hundred-and-sixtieth sets, registered together before testing (24 September 2026): twenty hypotheses from the controls and the literature
+
+Built from this project's results (sets 142-158) and from others' claims: Fuls 2024 (IJAS 14(1): 3-16; sign 1 not a
+word divider against Wells 2011's partial divider for signs 1 and 2; mean word length about 1.7 signs; Indus as
+scripta continua), Fuls 2022/2023 (text classes), and the Ur III and Linear B controls. Profiles, catches and
+person-like / title-like as sets 152, 157 and 158. Conventions as sets 147-151. p < 0.05.
+
+## Hundred-and-fifty-ninth set: the packed-legend reading and the word-divider question (ten hypotheses)
+
+Set 158 left two readings: Indus names come from a large stock, or one Indus name packs name + office / lineage.
+If the second, the opener (first sign of a 3+-sign body) would carry office or lineage.
+
+- **PL1** Openers of 3+-sign name bodies on seals have the title-like profile (Mohenjo-daro against Harappa).
+- **PL2** The name core (body minus opener) of the same names has the person-like profile.
+- **PL3** 50%+ of the smaller city's openers also occur in the other city.
+- **PL4** On seals with a motif, the opener tells more about the motif than the head does: permutation z of
+  MI(opener, motif) above that of MI(head, motif) (1,000 permutations each; names with 3+-sign bodies).
+- **PL5** The post-name signs of set 158 (closers, 400, 90 after an ending) have the title-like profile.
+- **PL6** Wells's divider, sign 1: for inner tokens of sign 1, both the part before and the part after are attested as
+  complete distinct lines elsewhere more often than for inner tokens of other signs with 20+ inner tokens (Fisher).
+- **PL7** The same for sign 2.
+- **PL8** Line junctions (set 142's 77 multi-line texts) stand next to sign 1 or 2 more often than random cut points
+  (10,000 draws; both line orders).
+- **PL9** Fuls's word length: chaining adjacent unit pairs (predict_test61.units) into words, with unlinked signs as
+  one-sign words, the mean word length in name bodies lies between 1.5 and 2.0 signs.
+- **PL10** Seal pairs sharing an opener are in the same city (Mohenjo-daro / Harappa) more often than seal pairs
+  sharing a head (Fisher).
+
+## Hundred-and-sixtieth set: the new findings on independent samples (ten hypotheses)
+
+B = Mahadevan's M77 texts absent from ICIT (signs.load(only_m77=True); sites by M77 block: Mohenjo-daro 465 lines,
+Harappa 409). Linear B and Ur III as sets 152 and 158.
+
+- **RP1** In B, at the size of the 520 names, 740 names show more distinct heads in 95%+ of 1,000 draws (PV3).
+- **RP2** In B, for signs counted in both cities, the commonest value before them agrees in under 70% (NC5's locality).
+- **RP3** In B, whole names, Mohenjo-daro against Harappa: estimate at least 3 times observed (set 147).
+- **RP4** In B, heads: estimate at most 1.5 times observed.
+- **RP5** Harappa moulded tablets (TAB:B, TAB:I; F), whole texts, early against late: title-like (closed sets, as
+  copper tablets in GC5).
+- **RP6** Linear B inside Knossos, persons, series D (the sheep tablets) against all other series: person-like.
+- **RP7** The same split, titles: title-like.
+- **RP8** Ur III owners, Umma against Nippur: title-like (UR1 with a third city).
+- **RP9** Ur III whole legends, Umma against Nippur: person-like (UR3).
+- **RP10** Indus names on seals, Gujarat (Lothal, Dholavira) against Mohenjo-daro: estimate at least 3 times observed.

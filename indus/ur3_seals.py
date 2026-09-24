@@ -5,7 +5,10 @@ build(zip) streams the ORACC JSON export (epsd2-admin-ur3.zip, 562 MB, not unpac
 noun, V verb ...). Writes data/ur3_seals.tsv: text, provenience, seal, line, tokens ('cf|pos' separated by spaces).
 load() returns {(text, seal): {'site', 'lines': [[(cf, pos), ...], ...]}}.
 
-Usage: python ur3_seals.py path/to/epsd2-admin-ur3.zip
+Also runs on other ORACC epsd2 admin exports with an output path (the Old Akkadian export has seals on only 26
+texts, too few to use).
+
+Usage: python ur3_seals.py path/to/epsd2-admin-ur3.zip [out.tsv]
 """
 import json
 import os
@@ -17,9 +20,9 @@ TSV = os.path.join(HERE, 'data', 'ur3_seals.tsv')
 HEADER = '# Source: ORACC epsd2/admin/ur3 JSON export (CC0), seal surfaces only; tokens are citation form|POS.\n'
 
 
-def build(path):
+def build(path, out_path=TSV):
     z = zipfile.ZipFile(path)
-    cat = json.loads(z.read('epsd2/admin/ur3/catalogue.json'))['members']
+    cat = json.loads(z.read([n for n in z.namelist() if n.endswith('/catalogue.json')][0]))['members']
     rows = []
     for n in z.namelist():
         if '/corpusjson/P' not in n:
@@ -50,7 +53,7 @@ def build(path):
         prov = (cat.get(pid, {}).get('provenience') or '').replace('\t', ' ')
         for (seal, line), toks in lines.items():
             rows.append((pid, prov, seal, line, ' '.join(toks)))
-    with open(TSV, 'w', encoding='utf-8', newline='\n') as out:
+    with open(out_path, 'w', encoding='utf-8', newline='\n') as out:
         out.write(HEADER)
         out.write('text\tprovenience\tseal\tline\ttokens\n')
         for r in rows:
@@ -58,9 +61,9 @@ def build(path):
     print('seal lines %d, texts %d' % (len(rows), len({r[0] for r in rows})))
 
 
-def load():
+def load(path=TSV):
     out = {}
-    with open(TSV, encoding='utf-8') as f:
+    with open(path, encoding='utf-8') as f:
         hdr = None
         for ln in f:
             if ln.startswith('#'):
@@ -78,4 +81,4 @@ def load():
 
 
 if __name__ == '__main__':
-    build(sys.argv[1])
+    build(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else TSV)
