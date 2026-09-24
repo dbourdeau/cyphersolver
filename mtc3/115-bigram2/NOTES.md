@@ -1,8 +1,7 @@
 # MTC3 115: Bigram Substitution, Part 2 (Modi and Esslinger, October 2025)
 
-Status: in progress. Key recovered 24 Sept 2026, but the site REJECTED it on the first submission (24 Sept, 1 of 15
-attempts used). The pasted text matched `private/ANSWER_key_676.txt` token for token. Cause not yet known; see
-"Submission" below.
+Status: solved. Accepted by the site on 24 Sept 2026, 2nd of 15 attempts (the first was rejected: misread ending,
+see "Submission"). Submitted by Daniel as an LLM solve (Claude Opus 5.5).
 
 Level II. Before this: 10 human solvers, no LLM solve.
 
@@ -17,8 +16,8 @@ Level II. Before this: 10 human solvers, no LLM solve.
 ## Answer (kept out of git)
 
 The answer and the full plaintext are in `private/` (git-ignored, because this is a live challenge and the repository is
-public): `private/ANSWER_key_676.txt` (one line, 676 space-separated tokens, 223 known, 453 `??`) and
-`private/plaintext.txt`. Before submitting, check the format against the challenge page (separator: space, tab or
+public): `private/ANSWER_key_676_v2.txt` (the accepted key: one line, 676 space-separated tokens, 223 known, 453 `??`)
+and `private/plaintext_v2.txt`. The first files (`ANSWER_key_676.txt`, `plaintext.txt`) hold the rejected "EXERT EX" reading. Before submitting, check the format against the challenge page (separator: space, tab or
 comma are all accepted). The submission form asks whether an LLM was used: yes, Claude Opus 5.5 did the work.
 
 ## How it was solved
@@ -44,7 +43,7 @@ Model: Claude Opus 5.5 (Claude Code), with the tools in `src/`.
 6. Verified with the challenge's own tool: `2-gram-subst.py encrypt --allow_unknown -k private/ANSWER_key_676.txt
    --infile private/plaintext.txt` reproduces `bgs_ciphertext.txt` exactly (1608/1608 letters).
 
-The plaintext ends "...EMERGE AND EXERT E" plus the tool's X pad (odd length), so the text is cut mid-sentence.
+The plaintext ends "...INSTITUTIONS EMERGE AND EVOLVE" plus the tool's X pad (1607 letters padded to 1608).
 
 ## Submission
 
@@ -64,10 +63,15 @@ attempts on guessed variants.
 
 ## Remaining gaps
 
-The site's verdict (above). In the text itself every ciphertext bigram is mapped. 84 of the 223 key entries rest on a single ciphertext
+None: the site accepted the key. Every ciphertext bigram is mapped. 84 of the 223 key entries rest on a single ciphertext
 occurrence, confirmed only by the sense of the text (e.g. MONK, BUSINESSMAN, "A FOCUS ON BEING VERSUS DOING", "GOOD OR BAD").
 
 ## Escalation
 
-Ask the MysteryTwister team (site contact or the challenge's Discord channel) how the reference key was built
-before any second submission.
+Not needed.
+
+## Lesson
+
+The self-check (re-encrypting our own plaintext with our own key) is circular and proves nothing about single-occurrence
+bigrams. The misreading sat in the one place where the text read unnaturally (a word cut off mid-way at the end). Before
+submitting, reread every stretch that reads oddly, and check whether padding explains an odd ending.
