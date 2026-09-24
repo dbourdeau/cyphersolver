@@ -28,7 +28,7 @@ The 'streak' column counts consecutive loops without progress.
 
 ## Log
 
-| Loop | Sets | S bits (explained) | R roles | M meanings | P | L open | Note |
+| Loop | Sets | S bits (explained) | R roles | M meanings | P | L open | Note (streak) |
 |---|---|---|---|---|---|---|---|
 
 | baseline | 1-175 | 4.712 (24.9%) | 56.2% | 16.6% | 0 | 4 | model tri + pos + end, discounted (set 125) |
@@ -42,3 +42,4 @@ The 'streak' column counts consecutive loops without progress.
 | 8 | 183 | 4.712 (24.9%) | 81.1% | 16.6% (M+ 41.4%) | 0 | 4 | depiction groups are shape families; only fish (and tools weakly) are used alike |
 | 9 | 184 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | the cage (four small strokes) is a grammatical affix: caged signs replace the ending (0 of 92 followed by 740/520), B replicates |
 | 10 | 185 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | fish marks change the grammatical job (roof hat = attribute); with the cage, morphology inside the fish signs |
+| 11 | 186 | 4.712 (24.9%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 | strokes inside the jar turn the ending into a name element, B replicates (progress; streak 0) |
