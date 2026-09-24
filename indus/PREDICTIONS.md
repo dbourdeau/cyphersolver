@@ -3134,3 +3134,21 @@ recur 3+ times in B (SG5), which is smaller and splits some compounds differentl
 transcription. Reading: names are largely assembled from a stock of about a hundred two-sign units, many of them
 number + item or fish + item, that also serve as short names on their own. Tally, counting parts: 352 held, 425 failed
 (777 registered).
+
+# Sixty-second set, registered before testing (24 September 2026): sign classes from context (loop 3, round 6)
+
+Context vector of a sign = positive PMI of its left and right neighbours (predict_test13.contexts, line ends marked);
+similarity = cosine. Signs with 20+ tokens in the sample (A + B pooled unless stated). Classes: fish (signs.FISH),
+numerals (numerals.NUMS), head class (classes(A)). Class-cohesion nulls draw random sign sets of the same size from the
+same frequency quintiles (10,000 draws); p < 0.05.
+
+- **DC1** Fish signs are more similar to each other (mean pairwise cosine) than random matched sets.
+- **DC2** Numerals are more similar to each other than random matched sets.
+- **DC3** Head-class signs are more similar to each other than random matched sets.
+- **DC4** Pairwise similarities in A and in B correlate (Spearman 0.5+, signs with 20+ tokens in each).
+- **DC5** Pairwise similarities at Mohenjo-daro and at Harappa correlate (Spearman 0.4+, F lines, 20+ tokens at each).
+- **DC6** Pairs of signs in one Fairservis category are more similar than pairs across categories (rank test).
+- **DC7** The nearest neighbour of 50%+ of fish signs is a fish sign.
+- **DC8** The nearest neighbour of 70%+ of numerals is a numeral.
+- **DC9** The nearest neighbour of 50%+ of head-class signs is head-class.
+- **DC10** A sign's nearest neighbour in A is its nearest neighbour in B for 30%+ of signs.
