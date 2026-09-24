@@ -1424,6 +1424,12 @@ Registered first (sixty-seventh set, 3a3c0532e), tested (`predict_test67.py`). O
 independent of the name (no motif-specific signs, no within-city head effect), but a text shared by a seal and a tablet
 keeps the same picture on both (p = 0.006). Tally 381 held, 456 failed.
 
+## Eighty-second pass (24 Sept 2026): tablets that copy seal texts
+
+Registered first (sixty-eighth set, 52779dd3d), tested (`predict_test68.py`). Most tablet lines matching seal lines are
+the count tokens 33 700 and 34 700 and a few short Harappa names; tablets do not in general reproduce seals. Matches
+are local (same site). Tally 386 held, 461 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

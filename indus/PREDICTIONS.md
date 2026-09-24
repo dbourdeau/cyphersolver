@@ -3329,3 +3329,17 @@ with a line that some tablet copies. Motifs as in the sixty-seventh set ('None' 
   line and not identical to any).
 - **CP9** Copied tablet lines carry a numeral less often than other tablet lines.
 - **CP10** Copied seal name lines end in 740 more often than uncopied seal name lines.
+
+## Results of the sixty-eighth set (added after the test; `predict_test68.py`, `results/predict_test68.md`)
+
+Five held, four failed, one uninformative. 388 of 1,494 tablet lines match a seal line exactly, but 229 of them are the
+count tokens 33 700 and 34 700, each of which also occurs on 1-3 seals; the rest are a few short Harappa names (176
+740 400 x36, 3 156 x22, 415 220 520 x16, 840 32 740 x9). So 'copying' is mostly shared short formulas, not tablets
+reproducing seals. With that in mind: copied lines are Harappa lines (CP3: 94%) from the same site as a seal bearing
+them (CP4: 322 of 388, p = 0.0001), copied seal texts are short (CP6: 2.6 against 4.8 signs) and recur on more seals
+(CP2), and copied tablet lines are names more often, length-stratified (CP1: +9.4 points). Tablets with a copied line
+have a picture less often (CP5: 20% against 41%), carry numerals more (CP9: 73%, the count tokens), and copied seals
+are not less often unicorns (CP7) nor more often 740 (CP10). CP8 (exact copies twice near copies: 388 against 433)
+fails but is uninformative, since short lines are one substitution from many others. This set also qualifies the
+sixty-seventh set's TP5: a shared text keeping its picture rests on few, short texts. Tally, counting parts: 386 held,
+461 failed (847 registered).
