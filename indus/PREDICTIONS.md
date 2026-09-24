@@ -35,3 +35,24 @@ stems seen with more than one final sign is not above that of 740 stems.
 - A seal names one holder, so no plural need appear on seals; but that is an explanation found after the result and
   is recorded as such. As registered, the Dravidian rational / non-rational model made two predictions beyond the
   data it was built on, and neither came out.
+
+# Second set, registered before testing (23 September 2026)
+
+From reading the Indus name as a head-final compound with a class suffix (Dravidian, and Indo-Aryan compounds too;
+the head-initial alternatives, Sumerian and Elamite, predict the reverse). The last-sign association (G1, sixth
+pass) was already known; the comparison with the first sign (Q1) and the non-final fish (Q2) have not been looked at.
+
+**Q1 The head decides the class.** The ending (740 / 520) should depend more on the name's last sign than on its
+first sign: mutual information between ending and last sign above that between ending and first sign, for names of
+2+ signs before the ending, each against 500 permutations of the endings; and names that share their last sign should
+agree in ending more often than names that share their first sign.
+
+**Q2 A fish that is not the head does not make the class.** Names with a fish sign somewhere but not in last position
+should take 520 far less often than fish-final names, and no more often than names without a fish sign, beyond a
+small margin (difference to non-fish names under 10 percentage points).
+
+Test design fixed in advance: discovery sample = the ICIT-derived corpus; held-out = the M77 additions and the texts of
+the fuller ICIT-derived corpus that the ICIT-derived dump lacks (icit_full.py; local use). Q1 holds if MI(last) >
+MI(first) in both samples and the last-sign MI is significant (p < 0.01) while the first-sign excess is smaller;
+Q2 holds if in both samples the non-final-fish rate is under half the fish-final rate and within 10 points of the
+no-fish rate.

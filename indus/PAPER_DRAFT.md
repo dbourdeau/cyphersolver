@@ -1,6 +1,7 @@
 # Testing decipherments of the Indus script: a validated bench, the structure of the texts, and what they say about the language
 
-*Draft for discussion with George Lasry. Daniel Bourdeau, with Claude (Anthropic). September 2026.*
+*Draft article. Daniel Bourdeau, with Claude (Anthropic). September 2026. A standalone study, not part of the
+LLM-performance paper data.*
 *Every number is produced by a script in `indus/`; the working record is `indus/NOTES.md`.*
 
 ## Abstract
@@ -128,4 +129,4 @@ decipherment bench validated on Linear Elamite.
 The corpus is small and the texts short; sign identifications follow the ICIT list; the fuller corpus's provenance must
 be cleared before publication; Tamil-Brahmi names were taken from a scanned copy of Mahadevan 2003 whose status is
 unclear; several relevant works (Wells 2011/2015, Fuls, Mahadevan 1986, Parpola 2015) were not read in full; the
-analysis was done with an LLM, whose role is described in `profile.json`-style records elsewhere in this project.
+analysis was done with an LLM (Claude), and every step is recorded in `indus/NOTES.md`.
