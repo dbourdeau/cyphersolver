@@ -1805,6 +1805,14 @@ test-learn-propose loop. The 'other' lines are names with tails, bare lines with
 headed words; only 3 lines of 2,722 remain unassigned. Lead: closers take the 400 suffix like 740 (25 of 31 closer
 tails), so closers may be endings. Tally 919 held, 903 failed.
 
+## Hundred-and-thirty-second pass (24 Sept 2026): are the closers endings?
+
+Registered first (hundred-and-eighteenth set, dcd7ea8af), tested (`predict_test118.py`). Yes: closers alternate with
+740 on the same bodies (40), heads split between 740 and closers (Spearman 0.79), closers take 400 at 740's rate (as a
+Harappa tablet form), and 90 never follows them. They either replace 740 or stack after it ('740 + closer', 34 lines).
+Revised model: name body + ending, where the ending slot holds 740, 520 or one of 11 closers, optionally followed by 400
+(or, after 740 only, 90). Tally 932 held, 905 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

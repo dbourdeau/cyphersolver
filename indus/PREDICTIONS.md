@@ -5576,3 +5576,16 @@ before the closer or ending (heading unit removed). p < 0.05; two-sided where ma
 - **CE13** 20%+ of bodies before 'closer 400' are attested before '740 400' or 740.
 - **CE14** At the smaller sites, 3+ distinct lines have 'closer 400'.
 - **CE15** Where a closer's tail is not 400, its first sign is a numeral in 50%+.
+
+## Results of the hundred-and-eighteenth set (added after the test; `predict_test118.py`, `results/predict_test118.md`)
+
+Thirteen held, two failed: the closers behave as endings. The same body takes either 740 or a closer (CE7: 40 bodies),
+and over 74 heads a head's closer share and its 740 share replace each other (CE6: Spearman 0.79 against the 740
+share); a closer's head is counted as often as 740's (CE9: 14% against 16%). Closers take the 400 suffix at the same rate
+as 740 (CE10: 9.1% against 10.1% of lines), line-final (CE1: 31 of 32; CE11 in B: 14 of 15), and 'closer 400' is, like
+'740 400', a Harappa tablet form (CE2: 76% on tablets against 9%; CE3: 90% Harappa against 27%); 25% of 'closer 400'
+bodies also occur before 740 (CE13). 90 never follows a closer (CE4: 0), so 90 belongs to 740 alone. A closer can also
+stand after 740 ('740 + closer', CE8: 34 lines; CE5: in 54% of lines with both, 740 directly precedes the closer), so the
+closers are a set of endings that either replace 740 or stack after it. Not supported: 'closer 400' at the smaller sites
+(CE14: 1 line) and non-400 closer tails being counts (CE15: 32%). CE12 repeats CE2 on the same data (registered in error
+as a separate F' test) and is not independent evidence. Tally, counting parts: 932 held, 905 failed (1837 registered).
