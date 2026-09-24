@@ -8618,3 +8618,21 @@ with its one value 740 = sa removed it gives nothing (254 of 1,000 shuffles as g
 putting 'sa' on the line-final ending sign, which any suffixing language with a common -sa ending rewards. Counted
 conservatively as no progress: streak 1. For the prize tiers: no published key passes a gate-validated test on the
 strength of its readings. Tally, counting parts: 1336 held, 1232 failed (2568 registered).
+
+# Two-hundred-and-seventh set, registered before testing (24 September 2026): decipherment loop 32, blind key fitting on Linear B as a language-identification gate (six hypotheses)
+
+Metric after loop 31: prize tiers V 0.008%, C 2 of 4, U 0; streak 1. No published key reads its language through the
+validated scorer (set 206). The defensible comparison (owner's note) gives every candidate language the same freedom:
+fit sign values to each language and see which fits unseen text best. It must first work on a known script. Linear B
+lines as set 205; for each language (Greek in Linear B spelling, Sanskrit MW, Dravidian DEDR, Sumerian ePSD2; plain
+a-z), the value inventory = its 90 commonest consonant(s)+vowel units; every sign gets one value (many signs may share
+one); values fitted by annealing (30,000 steps, order-3 character model of the language, `keyfit.py`) on the odd
+lines, then the fitted key scored on the even lines by the order-5 model. Control: the same fit and scoring on lines
+whose signs are shuffled within each line (seed 0). Gain = held-out score on real lines minus on shuffled lines.
+
+- **KF1** Greek has the largest gain of the four languages (seed 1).
+- **KF2** Greek's gain exceeds the next language's by 0.05 bits/char or more.
+- **KF3** The fitted Greek key gives Ventris's value (plain a-z) to 20% or more of the 30 commonest signs.
+- **KF4** With a second seed (2), Greek again has the largest gain.
+- **KF5** Every language's gain is positive (real order carries something any model can use).
+- **KF6** Progress rule: KF1 and KF4 hold (blind fitting identifies the known language; a gate for tier 2 and L).
