@@ -7328,3 +7328,44 @@ is withdrawn to 'local, as counts are'.
 **The picture signs are copper-tablet words.** 749, 341 and 753 occur only on copper tablets and 777 on one seal
 besides, so they never head a seal name (CT8, CT9: no cases, failed as registered). Copper-tablet texts otherwise
 use the seal vocabulary (CT10: 94% of tokens). Tally, counting parts: 1183 held, 1115 failed (2298 registered).
+
+# Hundred-and-sixty-ninth and hundred-and-seventieth sets, registered together before testing (24 September 2026): twenty hypotheses
+
+## Hundred-and-sixty-ninth set: writing-system statistics against two read scripts (ten hypotheses)
+
+Set 168 showed same-genre controls can settle claims about 'what kind of writing' (Farmer, Sproat and Witzel; Rao et
+al. 2009; Fuls 2023/2024 on entropic redundancy). Here the Indus signs are placed between known levels at a matched
+sample size. Units: Indus signs (distinct lines of F); Linear B signs (syllabograms of words plus logograms, DAMOS
+clean lines); Linear B words (whole syllabic words); Ur III lemmas (distinct seal legends). Each statistic is the mean
+over 100 random samples of whole lines/legends accumulated to 5,000 tokens. 'Between' means strictly between the Linear
+B sign value and the Linear B word value. p not used; point comparisons of the means.
+
+- **WR1** Distinct types at 5,000 tokens: Indus lies between Linear B signs and Linear B words.
+- **WR2** Share of types seen once (hapax share): Indus between.
+- **WR3** Bigram conditional entropy H(next | previous), within lines: Indus between.
+- **WR4** Share of tokens covered by the ten commonest types: Indus between.
+- **WR5** Unigram entropy divided by log2 of the number of types: Indus between.
+- **WR6** On a log scale, Indus types lie closer to Linear B signs than to Linear B words (more sign-like).
+- **WR7** Indus types at 5,000 tokens are fewer than Ur III lemma types.
+- **WR8** Adjacent doubled units (x x) per token: Indus between Linear B signs and Linear B words.
+- **WR9** H(next | previous) / H(unit): Indus between Linear B signs and Linear B words.
+- **WR10** The single commonest Indus sign (740) covers a larger share of tokens than the commonest Linear B sign does.
+
+## Hundred-and-seventieth set: follow-ups on content (ten hypotheses)
+
+- **C1** In '2 + fish' (set 138's counting), the numeral is the short pair (sign 2) in 80%+ of distinct lines.
+- **C2** '2 + fish' makes up the whole name body before an ending (2 fish + 740/520) in 50%+ of its occurrences in
+  names.
+- **C3** The non-name line of two-line seals (set 167) contains a numeral in 50%+.
+- **C4** Harappa count texts (a long-stroke numeral + 700 as the whole text) take values that depend on the excavation
+  unit (field 4; MI, permutation).
+- **C5** Signs found only on copper tablets (2+ tokens) are Fairservis animal or human pictures more often than other
+  signs with a Fairservis identification (Fisher).
+- **C6** Left-to-right texts of 2+ signs are attested, reversed, among right-to-left texts more often than as written
+  (count of texts with a reversed match against those with a direct match).
+- **C7** Sealing texts that match a seal are shorter than sealing texts that do not (rank test).
+- **C8** West Asian lines use signs rare at home (fewer than 5 home tokens) more often than home lines do (tokens;
+  Fisher).
+- **C9** The heading (817, 820 or 861 followed by 2, 60 or 1) opens copper-tablet texts less often than seal lines
+  (Fisher).
+- **C10** Names on sealings end in 740 more often than names on seals (Fisher).
