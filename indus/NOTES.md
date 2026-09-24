@@ -1460,6 +1460,8 @@ Registered first (seventy-second set, 12f1bda22), tested (`predict_test72.py`). 
 not set the ending. The lead was an artefact of repeated seals. The sign before a non-fish head adds a little to the
 ending (0.034 bits). Tally 425 held, 502 failed.
 
+Post-test check (not registered): on distinct names the fish-520 link stands, 115 of 163 distinct 520 names contain a fish against 371 of 926 distinct 740 names (71% against 40%, p < 1e-12), and 67 of 163 are fish-headed against 45 of 926.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
