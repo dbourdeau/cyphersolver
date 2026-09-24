@@ -1635,3 +1635,41 @@ Labels and other genres
 - **L20** Copper-tablet texts are shorter than seal texts (A, rank test).
 - **L21** Distinct copper-tablet texts recur on 2+ tablets more often than distinct seal texts (A).
 - **L22** Pot texts with an ending carry a numeral less often than tablet texts with an ending, length-stratified (F).
+
+## Results of the twenty-seventh set (added after the test; `predict_test27.py`, `results/predict_test27.md`)
+
+Eleven held, fourteen failed.
+
+**The Harappa name tablets are issued in identical sets.**
+- L2 fails decisively: the 25 pairs of name tablets that name the same person and carry a number carry the *same*
+  number, every one (0 differ). **L3 holds**: same-name tablets lie in the same level 86% of the time (p = 0.001). They
+  are not a running account of deliveries but copies of one record, made together, like the count tokens (Z).
+- **L5 holds**: 400 after the name ends the text in all 83 cases. **L6 holds**: the names on these tablets are shorter
+  than seal names (p = 0.0001). **L9 holds**: their numbers are not the count tokens' numbers (mostly 2 and 1, against
+  the tokens' 3, 4, 2).
+- L1 fails (the number opens the text in 46% only), L4 fails (the named people are not significantly Harappa
+  seal-holders: 7 of 22 against 19%, p = 0.11), L7 fails (the numbers are not unlike seal numbers), L8 fails the other
+  way, L23 and L24 fail.
+- The record: '[number] [short name]-740 400', copied several times in one batch. The format fits a tally or receipt
+  issued to a named person in multiple copies; it does not say what was counted.
+
+**Numbers.**
+- **L11 holds**: fish-headed names with the stroke pair inside take 520 far more often than fish names without a numeral
+  (+38.7 points, p = 0.0004). The stroke-pair fish (Parpola's 'intermediate space + fish') are the 520 side of the fish.
+- **L12 holds**: the two long-count units with 10+ counts each have a usual value: 700 is counted 3 (150 of 249), 740
+  is counted 2 (62 of 82).
+- **L15 holds**: long-stroke numerals open their line more often than short ones (29.5% against 14.8%; 57.2% against
+  20.6%). **L25 holds**: on seals too, long strokes stand before containers and devices (11.5% against 2.5%).
+- L10 fails narrowly (the stroke pair before a fish is split by a line once or twice in 25-26 cases against 22%; p =
+  0.055 as listed, 0.017 reversed). L13, L14 fail.
+
+**Variants.** **L16 holds**: the fish variants 233, 235 and 240 alternate with the plain fish 220 in otherwise identical
+names (31 pairs, p = 0.0001). L17 fails the other way (names ending in an affixed fish take 520 more, 72% against 63%,
+not significant).
+
+**Direction and labels.** **L19 holds**: pots run left to right 20% of the time, seals 2.5%. L18 fails narrowly
+(incised 8.6% against moulded 5.3%, p = 0.053). **L21 holds**: copper-tablet texts recur (51% of distinct texts on 2+
+tablets, against 4.6% of seal texts): standard labels. L20 fails (not shorter). L22 fails the other way (pot names
+carry numerals more than tablet names).
+
+Tally, counting parts: 121 held, 191 failed (312 registered).

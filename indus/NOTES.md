@@ -1115,6 +1115,15 @@ fails), numbers before the name (T2 reverse), earlier not later (T6 reverse); th
 (N6); direct writing runs left to right more (D2); affixed variants are attributes that alternate with their base (V2,
 V3, V4); copper tablets carry no endings (X2). Tally 110 held, 177 failed.
 
+## Forty-first pass (24 Sept 2026): the Harappa name records, numbers, labels
+
+Registered first (PREDICTIONS.md, twenty-seventh set, 687e3fdd9), tested (`predict_test27.py`). The name tablets are
+copies: same-name tablets carry the same number in all 25 pairs (L2 fails) and lie in one level (L3, 86%); the format is
+'[number] [short name]-740 400', 400 always last (L5), names shorter than on seals (L6), numbers unlike the tokens'
+(L9). The stroke-pair fish take 520 (L11, +39 points). 700 is counted 3, 740 counted 2 (L12). Long strokes open lines
+(L15) and count containers on seals too (L25). Fish variants alternate with 220 (L16). Pots run left to right 20% (L19);
+copper-tablet texts are recurring labels (L21). Tally 121 held, 191 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
