@@ -4386,3 +4386,32 @@ Stamped potsherds and tags are not impressions of known seal texts (MM8: 5 of 27
 seals no more than graffiti do (MM9), so the stamps that made them are mostly not among the surviving seals. Names on
 seals take 520 twice as often as names on other media (MM20: 18% against 9%, p = 0.0002), so the 520 class is a seal
 feature. Tally, counting parts: 602 held, 685 failed (1287 registered).
+
+# Ninety-first set, registered before testing (24 September 2026): endings in mid-line (twenty hypotheses)
+
+From the eighty-eighth set: a 740 or 520 inside a line is mostly not the end of a first name. 'Medial ending' = a 740/520
+token that is neither the last sign nor directly followed only by 400, 90 or 151 at line end. Distinct lines (A + B)
+unless stated; F distinct (site, type, line) and objects for site, type and repeat tests. Head class from classes(A).
+10,000-draw permutations; p < 0.05.
+
+- **MX1** 85%+ of medial endings are 740.
+- **MX2** 70%+ of lines with a medial ending are from Mohenjo-daro (F).
+- **MX3** The sign before a medial ending is head-class less often than the sign before a final ending.
+- **MX4** In lines that also end in a name, the segment after the medial ending is an attested body more often than
+  the segment before it (sign test).
+- **MX5** Medial endings follow a numeral more often than final endings do.
+- **MX6** The sign after a medial ending is a fish in 20%+.
+- **MX7** The sign after a medial ending depends on the sign before it (MI).
+- **MX8** For 50%+ of medial endings, 'sign before + ending' is also a whole 1-sign-body name.
+- **MX9** 70%+ of lines with a medial ending also end in a name.
+- **MX10** 70%+ of lines with a medial ending are on seals (F).
+- **MX11** Lines with a medial ending open with the heading unit less often than name lines without one.
+- **MX12** 80%+ of segments before the first medial ending have 1 or 2 signs.
+- **MX13** The sign before a medial ending recurs (2+ lines) in 30%+ of medial-ending lines.
+- **MX14** The final ending of medial-ending lines is 740 at the name-line rate (two-sided p >= 0.05).
+- **MX15** Under 10% of medial endings are directly followed by a numeral.
+- **MX16** Lines with a medial ending hold a numeral more often than other name lines.
+- **MX17** Medial 520s follow a fish in 50%+.
+- **MX18** Medial-ending texts are on one object only more often than other name texts (F).
+- **MX19** B: MX1 holds.
+- **MX20** B: MX4 holds.
