@@ -5287,3 +5287,30 @@ name openers opening counts (OG6, p = 0.057) and the 520 class ending bare lines
 seventy-seventh set's 'two systems' (LX10-LX12): names and counts favour different pairs, but each sign keeps its own
 place, company, notation and count across both, so they are two uses of one language rather than two codes.
 Tally, counting parts: 839 held, 868 failed (1707 registered).
+
+# Hundred-and-twelfth set, registered before testing (24 September 2026): the number system across genres (twenty hypotheses)
+
+Numeral signs and their (value, kind) from numerals.NUMS; a 'run' = consecutive numeral signs, its value their sum.
+Genres as in the hundred-and-eighth set. Distinct lines (A + B) unless stated; F without copper (F') for object tests.
+10,000-draw permutations; p < 0.05.
+
+- **NS1** In names, numerals of value 5-8 are tiered more often than those of 1-4.
+- **NS2** The same in counts.
+- **NS3** The same in closer lines.
+- **NS4** Run value depends on genre (MI; values capped at 8).
+- **NS5** Numeral kind depends on genre (MI).
+- **NS6** In closer lines, 70%+ of numeral runs stand inside the body (not directly before the closer).
+- **NS7** Value 3 is the commonest run value in names, in counts and in closer lines.
+- **NS8** Runs of value 5+ are rarer in counts than in names.
+- **NS9** 5%+ of runs in counts have 2+ numeral signs.
+- **NS10** In 2-sign runs, the larger value comes first in 70%+.
+- **NS11** Every numeral sign with 10+ tokens occurs in 2+ genres.
+- **NS12** In counts, tiered numerals are on seals more often than on tablets (F').
+- **NS13** In names, long numerals stand directly before the head more often than short numerals do.
+- **NS14** The short stroke '2' is the commonest numeral sign.
+- **NS15** Runs worth 1 are rarer than runs worth 2.
+- **NS16** Runs worth 9 or more are under 5% of runs.
+- **NS17** Runs worth 12 outnumber runs worth 10 and 11 together.
+- **NS18** B: NS1 holds.
+- **NS19** B: NS2 holds.
+- **NS20** F': NS10 holds.
