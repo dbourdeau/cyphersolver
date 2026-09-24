@@ -2593,3 +2593,15 @@ left out). 10,000-draw permutations; p < 0.05.
 - **SK9** Ranks under ending 740 correlate with ranks under 520 (Spearman 0.6+, significant; 5+ tokens under each).
 - **SK10** Seal names follow the ranking more often than names on other objects (adjacent pairs, ranks from all F
   names; Fisher).
+
+## Results of the forty-third set (added after the test; `predict_test43.py`, `results/predict_test43.md`)
+
+Three held, seven failed. A single scalar rank (mean relative position, 117 signs) predicts only about 70% of adjacent
+pairs out of sample: A to B 70% (SK1), Mohenjo-daro to Harappa 71% (SK2), seals to other objects 74% (SK3), all under
+their thresholds and well above chance. So the transitive ordering found in the forty-second set is not captured by one
+number per sign; order is partly pair-specific. The rank is stable across body length (SK8: Spearman 0.71) but only
+moderately across endings (SK9: 0.49, significant but under 0.6). Bodies that break the rank are mostly one-off names
+(SK7: 92% against 81% attested once), consistent with inversions being rare variants or errors. Frequent signs rank
+slightly later (SK6: 0.16, p = 0.043). Rank does not follow Fairservis category (SK4), numerals are not early (SK5, mean
+0.50 both), and seals keep the rank no better than other objects (SK10, 70% against 76%). Tally, counting parts: 247
+held, 350 failed (597 registered).

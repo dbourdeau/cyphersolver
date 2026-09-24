@@ -1245,6 +1245,13 @@ single transitive ranking of slots (5% cyclic triples), identical across transcr
 left of the head, and the head is best predicted by its neighbour. Individual pairs still vary in order. Tally 244 held,
 343 failed.
 
+## Fifty-seventh pass (24 Sept 2026): the slot ranking (round 7 of 10)
+
+Registered first (forty-third set, 57cc9703f), tested (`predict_test43.py`). A one-number rank per sign predicts about
+70% of adjacent orders out of sample (A to B, city to city, seals to other objects); the pairwise order is transitive
+but not reducible to a scalar position. Rank is stable over body length; inversions sit in one-off names. Tally 247
+held, 350 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
