@@ -2095,3 +2095,49 @@ same animal; copper labels are not closer to moulded labels than to seals in voc
 own texts with its own pictures.
 
 Tally, counting parts: 176 held, 261 failed (437 registered).
+
+# Thirty-third set, registered before testing (24 September 2026): picture markers across label genres
+
+Leads: copper labels are picture-specific names with marker signs (CT1: hare 705 321 235, elephant 923 706, goat 3 421
+176 100 790, anthropomorph 61 806 850 900, loop 220 415); moulded tablets pair text and picture (CT7, 95%); nothing
+links object types (CT14). Conventions as the thirty-second set (A with its 'motif' field; 'label', 'marker' as
+there; 'head' of a label = the sign before 740 / 520 if it has one, else its last sign; Fairservis categories; head
+class as K; rebus/copper_tablets.tsv for Parpola's groups; 10,000-draw permutations; p < 0.05).
+
+Copper labels
+- **PL1** The label head depends on the picture (MI beyond permutation of pictures).
+- **PL2** Labels of two animal pictures share a sign more often than an animal label and a non-animal label do (pair
+  counts, pictures permuted).
+- **PL3** In Parpola's copper groups, groups with identical texts (the 'link' column) show the same reverse image in
+  80%+ of linked pairs.
+- **PL4** Copper markers are rarer on seals than the other signs of copper labels (mean seal token count, permutation of
+  the marker label among copper-label signs).
+- **PL5** No copper marker is a Fairservis animal sign (category C or D).
+- **PL6** Label length varies less within pictures than between them (between-picture variance share, permutation).
+- **PL7** Copper markers are head-class signs more often than the other copper-label signs.
+- **PL23** 90%+ of copper labels are one line.
+
+Moulded labels
+- **PL8** Half or more of the moulded pictures with 4+ labels have a marker.
+- **PL9** Plant-picture labels (Phyt) contain a Fairservis plant sign (E) more often than other moulded labels.
+- **PL10** Scene labels are longer than other moulded labels (rank test).
+- **PL11** The moulded label head depends on the picture (MI beyond permutation).
+- **PL12** Moulded labels of two animal pictures share a sign more often than an animal label and a non-animal (plant,
+  scene, cross, multi-headed) label do.
+- **PL13** Copper gaur labels share a sign with moulded gaur labels more often than with other moulded labels.
+- **PL14** 90%+ of moulded labels come from Harappa.
+- **PL22** Pictured moulded tablets contain a numeral less often than moulded tablets without a picture.
+- **PL24** Pictured moulded tablets run left to right more often than moulded tablets without a picture.
+- **PL25** Two moulded labels of the same picture differ by exactly one sign more often than two of different pictures.
+- **PL21** Pictured moulded labels carry the heading less often than seal texts.
+
+Seals
+- **PL15** Half or more of the non-unicorn seal animals with 10+ seals have a loose marker (a sign in 30%+ of their seal
+  texts and 10% or fewer of other animals' seal texts).
+- **PL16** Seal texts of the same animal share a sign more often than seal texts of different animals (non-unicorn
+  seals; animals permuted).
+- **PL17** Elephant seals contain 923 or 706 more often than other seals.
+- **PL18** Goat seals contain a goat copper marker (3, 421, 176, 100, 790) more often than other seals.
+- **PL19** Seals with a composite or anthropomorphic picture contain an anthropomorph copper marker (61, 806, 850, 900)
+  more often than other seals.
+- **PL20** Gaur seals contain a sign of the copper gaur labels more often than other seals.
