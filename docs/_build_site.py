@@ -18,7 +18,7 @@ import re, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20260924a'
+VERSION ='20260924b'
 SITE = 'Unsolved Historical Ciphers'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -1448,7 +1448,7 @@ def nav_html(current):
                      f'<b>{name}</b></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
     in_explore = any(slug == current for slug, _, _ in EXPLORE)
     on = ' class="active"' if not in_explore and (current == 'writeups' or any(p['slug'] == current for p in PAGES)) else ''
-    panel = (f'<div class="grp"><h4>Latest</h4><ul>{lis}</ul></div>'
+    panel = (f'<div class="grp latest"><h4>Latest</h4><ul>{lis}</ul></div>'
              f'<div class="grp"><h4>By outcome</h4><ul>{groups}</ul></div>'
              f'<div class="foot"><a href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
