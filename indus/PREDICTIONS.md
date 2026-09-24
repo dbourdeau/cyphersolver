@@ -5552,3 +5552,27 @@ than formula words (to be tested next). Name tails start with 1, 679, 621, 565, 
 counts, closers or suffixes (OT9: 47%). Not supported: 151/156 as the tail-taking closers (OT10), fish-bare lines using
 fewer formula-only signs (OT11), 'other' lines on seals more than bare lines (OT12), and 'other' texts being one-off
 (OT13, the other way). Tally, counting parts: 919 held, 903 failed (1822 registered).
+
+# Hundred-and-eighteenth set, registered before testing (24 September 2026): are the closers endings? (fifteen hypotheses)
+
+Lead from the hundred-and-seventeenth set: 25 of 31 closer lines with a tail add 400 after the closer, as '740 400'.
+Closers as in the hundred-and-third set. Distinct lines (A + B) unless stated; F' = F without copper; 'body' = signs
+before the closer or ending (heading unit removed). p < 0.05; two-sided where marked.
+
+- **CE1** 80%+ of 400s directly after a closer are line-final.
+- **CE2** 'Closer 400' lines are on tablets more often than closer lines without 400 (F').
+- **CE3** 'Closer 400' lines are at Harappa more often than closer lines without 400 (F').
+- **CE4** 90 directly follows a closer in under 3 distinct lines (90 belongs to 740).
+- **CE5** In lines with both 740 and a closer, 740 directly precedes the closer in 50%+.
+- **CE6** Over heads with 5+ distinct lines, a head's closer share and its 740 share correlate negatively (Spearman
+  -0.3 or lower).
+- **CE7** 5+ bodies are attested both before 740 and before a closer.
+- **CE8** 10+ distinct lines end '740 + closer'.
+- **CE9** The body's last sign is counted (numeral before it) as often before closers as before 740 (two-sided p >= 0.05).
+- **CE10** The share of closer lines with 400 after the closer is within a factor of 2 of the share of 740 lines with
+  400 after 740.
+- **CE11** B: CE1 holds.
+- **CE12** F': CE2 holds.
+- **CE13** 20%+ of bodies before 'closer 400' are attested before '740 400' or 740.
+- **CE14** At the smaller sites, 3+ distinct lines have 'closer 400'.
+- **CE15** Where a closer's tail is not 400, its first sign is a numeral in 50%+.
