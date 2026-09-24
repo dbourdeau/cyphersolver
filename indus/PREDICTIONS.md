@@ -2813,3 +2813,19 @@ cite a name more often (SC9: 14% against 8%). 390 after a numeral takes 3 or mor
 Seal counts are not tied to the animal motif (SC5) and are as common on Mohenjo-daro seals as on Harappa seals (SC6:
 24% and 25%). Caveat: tablet numerals are dominated by the 700 count tokens (values 2-4), which drives SC1, SC2 and
 SC10. Tally, counting parts: 296 held, 371 failed (667 registered).
+
+# Fifty-first set, registered before testing (24 September 2026): the seal count formulas (loop 2, round 5)
+
+'Seal count' = an F seal formula (non-name line) with a numeral; 'counted sign' = the non-numeral sign right after a
+numeral; value = the run of numerals before it. Head class from classes(A). 10,000-draw permutations; p < 0.05.
+
+- **CT1** 30%+ of seal counts are exactly heading (817, 820, 861) + numeral(s) + one sign.
+- **CT2** Counted signs on seals are head-class signs less often than name bodies' last signs are.
+- **CT3** 60%+ of signs counted 5+ times on seals take 3+ different values.
+- **CT4** 70%+ of signs counted 3+ times on seals also occur in name bodies.
+- **CT5** Longer seal counts carry larger values (Spearman, permutation).
+- **CT6** Headed seal counts carry larger values than unheaded ones (rank test).
+- **CT7** The counted sign ends the line in 40%+ of seal counts.
+- **CT8** Seal counts are on square seals (SEAL:S) more often than seal name lines are.
+- **CT9** The counted sign depends on Mohenjo-daro against Harappa (seal counts; MI, permutation).
+- **CT10** Under 50% of counted-sign tokens on seals are of signs also counted on tablets.
