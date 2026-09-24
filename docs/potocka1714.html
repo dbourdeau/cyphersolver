@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Potocka and Mniszech to Dunin — Read in part</title>
-<meta name="description" content="A Polish postscript unlocks Barbara Potocka's French cipher passages: a recovered numerical alphabet, nine letters, and a separate unread Mniszech cipher.">
+<title>Barbara Potocka and Józef Mniszech to Jakub Dunin, 1714–1716</title>
+<meta name="description" content="Ten cipher letters to Jakub Dunin in the Sanguszko archive (DECODE R7524–R7536). The homophonic numerical alphabet of Barbara Potocka's nine letters was recovered from the ciphertext alone, starting from a Polish postscript; Józef Mniszech's letter uses another system and is not decrypted.">
 <link rel="stylesheet" href="style.css?v=20260922b"><meta name="date" content="2026-09-23">
 <meta name="last-modified" content="2026-09-23">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -32,14 +32,14 @@
   </div>
 </div>
 <section class="hero"><div class="cipherstrip">39 27 34 · 36 19 27 37 35 36 19 27<br>p a n · s t a r o s t a</div>
-<p class="kicker">Archiwum Sanguszków · French and Polish · 1714–1716 and undated · read in part</p>
-<h1>A Polish postscript unlocks Potocka’s French cipher</h1>
-<p class="sub">Barbara Potocka and Józef Mniszech to Jakub Dunin, Crown regent. DECODE R7524–7530 and R7534–7536. Nine letters share a recoverable alphabet; the tenth uses another system.</p>
+<p class="kicker">Archiwum Sanguszków · homophonic numerical cipher, French and Polish · 1714–1716 and undated</p>
+<h1>Barbara Potocka and Józef Mniszech to Jakub Dunin, 1714–1716</h1>
+<p class="sub">Ten letters to Jakub Dunin, Crown regent: DECODE R7524–7530 and R7534–7536. Barbara Potocka’s nine letters share one numerical alphabet, recovered here from the ciphertext alone; the tenth, from Józef Mniszech, uses another system and is not decrypted.</p>
 <p class="meta">Daniel Bourdeau &middot; solved in part <time datetime="2026-09-23">23 September 2026</time></p></section><main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents and the evidence</a><a href="#key">The recovered alphabet</a><a href="#r7524">R7524</a><a href="#r7525">R7525</a><a href="#r7526">R7526</a><a href="#r7527">R7527</a><a href="#r7528">R7528</a><a href="#r7529">R7529</a><a href="#r7530">R7530</a><a href="#r7534">R7534</a><a href="#r7535">R7535</a><a href="#r7536">R7536</a><a href="#method">Method and limits</a><a href="#gaps">What remains uncertain</a><a href="#sources">Sources and reproducibility</a></nav>
-<div class="callout"><strong>Summary.</strong> French-language searches did not read the postscript in R7526: it is Polish. A Polish substitution search recovered the alphabet, which then read short French passages in eight other Potocka letters. Doubled figures supply additional letter values. The reading concerns property, court influence, a political accusation, and the safety of correspondence. Of 887 Potocka cipher tokens, 863 have a letter value (97.3%); this is key coverage, not a claim of equally complete verified prose. Four person codes and one exceptional figure remain open, alongside uncertain spellings and names. Mniszech’s 232-token cipher is still unread, so the ten-letter group is <strong>read in part</strong>. There is no independent clear copy or original key to validate the editorial readings.</div>
+<div class="callout"><strong>Summary.</strong> The postscript of R7526 is in Polish, which is why solver runs with a French language model failed on it. A simple-substitution solver (simulated annealing) with a Polish language model recovered its alphabet from the ciphertext alone, and the same alphabet decrypts short French passages in eight other Potocka letters. Many homophones are the basic figure doubled (25 and 50 = e). The passages concern property, court influence, a political accusation and the safety of correspondence. Of 887 Potocka cipher tokens, 863 have a letter value (97.3%); that measures key coverage, and some decrypted passages remain doubtful as prose. Four person codes and one isolated figure are open, and some spellings and names are uncertain. Mniszech’s 232-token cipher is not decrypted, so the extent for the ten letters is partial. No independent clear copy or original key exists to check the decryptions, and no earlier decipherment was found.</div>
 <h2 id="documents"><span class="num">01</span>The documents and the evidence</h2>
-<p>All 29 source images were inspected, including backs, addresses and spreads. These are chiefly clear letters with brief cipher inserts; the tables below transcribe those inserts and their immediate clear anchors, not all the unencrypted prose. Image numbers are DECODE image suffixes. Some letters have no year: placeholder catalogue dates have not been adopted as historical dates.</p>
+<p>All 29 source images were inspected, including backs, addresses and spreads. These are chiefly clear letters with brief cipher inserts; the tables below transcribe those inserts and the clear words just before them (the &ldquo;clear anchor&rdquo; column); the rest of the cleartext is not transcribed. Image numbers are DECODE image suffixes. Some letters have no year: placeholder catalogue dates have not been adopted as historical dates.</p>
 <p>Potocka calls Dunin “mon fils,” but the university <a href="https://womenscourt.uken.krakow.pl/womencourt/potocka-barbara-z-duninow-zm-v-1719-r-1-v-uniechowska/">Women’s Court biography</a> identifies her as his aunt. That source was found after the key recovery and supplied no cipher values.</p>
 <table><thead><tr><th>Record</th><th>Shelfmark</th><th>Tokens valued / transcribed</th></tr></thead><tbody>
 <tr><td><a href="https://de-crypt.org/decrypt-web/RecordsView/7524">R7524</a></td><td>ASang_teka_290/6</td><td>0 / 232</td></tr>
@@ -53,7 +53,7 @@
 <tr><td><a href="https://de-crypt.org/decrypt-web/RecordsView/7535">R7535</a></td><td>ASang_teka_422/6</td><td>96 / 100</td></tr>
 <tr><td><a href="https://de-crypt.org/decrypt-web/RecordsView/7536">R7536</a></td><td>ASang_teka_422/7</td><td>102 / 102</td></tr>
 </tbody></table><h2 id="key"><span class="num">02</span>The recovered alphabet</h2>
-<p>The basic sequence runs backwards from 25=e through 14=x, and forwards from 26=a through 39=p, with a break before l. The Polish postscript uses 27 for a and distinguishes 31/32 in positions for l/ł; the exact diacritic rule remains uncertain. Attested higher homophones include 50=e, 52=a, 58=c, 68=n and 74=r. Doubling is a useful pattern, not permission to invent values: 14=x does not make 28=x, since 28=b.</p><table><thead><tr><th>Figure</th><th>Letter</th></tr></thead><tbody>
+<p>The basic sequence runs backwards from 25=e through 14=x, and forwards from 26=a through 39=p, with a break before l. The Polish postscript uses 27 for a and distinguishes 31/32 in positions for l/ł; the exact diacritic rule remains uncertain. Attested higher homophones include 50=e, 52=a, 58=c, 68=n and 74=r. Doubling suggests values without fixing them: 14=x does not make 28=x, since 28=b.</p><table><thead><tr><th>Figure</th><th>Letter</th></tr></thead><tbody>
 <tr><td>14</td><td>x</td></tr>
 <tr><td>15</td><td>y</td></tr>
 <tr><td>16</td><td>z</td></tr>
@@ -102,7 +102,7 @@
 <tr><td>78</td><td>p</td></tr>
 </tbody></table><p>Every letter value is inferred here (grade I), with doubtful readings marked M. None has grade H (original key) or C (independent known plaintext). The standalone figures 87, 94, 100 and 270 are unvalued person codes. A possible identification of 100 as the king is contextual only.</p>
 <h2 id="r7524"><span class="num">03</span>R7524</h2>
-<p>Mniszech’s letter, 1714: all 232 numerical tokens remain unread. The clear Polish and Latin words do not constitute a decipherment. The tentative <em>hetmanow</em> crib and proposed nulls were unsuccessful hypotheses, not recovered values.</p>
+<p>Mniszech’s letter, 1714: none of its 232 numerical tokens is decrypted. The clear Polish and Latin words on the page give no decipherment. A tentative crib (<em>hetmanow</em>) and proposed nulls were tried and failed.</p>
 <h2 id="r7525"><span class="num">04</span>R7525</h2>
 <p>Horyhorki and court influence: code 94 wants to be alone in the credit of 100; a house causes the writer harm; justice and enemies.</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
@@ -116,10 +116,10 @@
 </tbody></table>
 <h2 id="r7526"><span class="num">05</span>R7526</h2>
 <figure class="creveal" data-src="reveal/potocka1714.json"></figure>
-<p>the starosta is present; she asked whether he had arranged anything, and he has nothing; a journey to Lublin; a report involving the Dominicans and his staying with a woman. The office/place name reads *serecki* and the reporting name *Tabrowski* in the numerical text; neither is securely identified. Do not silently replace them with Merecki or Dąbrowski.</p>
+<p>The starosta is present; she asked whether he had arranged anything, and he has nothing; a journey to Lublin; a report involving the Dominicans and his staying with a woman. The office/place name reads <em>serecki</em> and the reporting name <em>Tabrowski</em> in the numerical text; neither is securely identified. They are not emended to Merecki or Dąbrowski.</p>
 <p>A cautiously word-divided reading, retaining the source’s irregular forms:</p><blockquote>Pan starosta serecki? iest tu. Pytałam się ieżeli ma co postanowionego. Ni ma nic. Iedzie dzie? do Lublina. To tesz prawda że był u dominikanow wtenczas iak estancował z nią w polu. Powiedał mi p. Tabrowski?</blockquote><p>The starosta is present; she asked whether he had arranged anything, but he has nothing. The postscript mentions Lublin, the Dominicans and his staying with a woman. The two names are uncertain. The repeated <em>dzie</em> and other irregularities are not silently repaired.</p><details><summary>Literal unspaced output</summary><p>panstarostasereckiiesttupytalamsieiezelimacopostanowionegonimaniciedziedziedolublinatoteszprawdazebyludominikanowwtenczasiakestancowalzniawpolupowiedalmiptabrowski</p></details>
 <h2 id="r7527"><span class="num">06</span>R7527</h2>
-<p>the palatine of Vilna&#x27;s obligation for *sant mil fran* on Bychow; measures to take and distrust of 94&#x27;s help. The reverse concerns an accusation against the marshal of Lithuania, Biegański&#x27;s confession to his father, a letter to 100, a letter through the grand chancellor, and an oath. The allegation is the correspondent&#x27;s account, not an independently verified event.</p>
+<p>The palatine of Vilna&#x27;s obligation for <em>sant mil fran</em> on Bychow; measures to take and distrust of 94&#x27;s help. The reverse concerns an accusation against the marshal of Lithuania, Biegański&#x27;s confession to his father, a letter to 100, a letter through the grand chancellor, and an oath. The allegation is the correspondent&#x27;s account, not an independently verified event.</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
 <tr><td>2: ce que le</td><td>palatin</td><td>palatin</td></tr>
 <tr><td>2: de</td><td>wilna</td><td>Wilna</td></tr>
@@ -159,7 +159,7 @@
 <tr><td>3-right: sur</td><td>moy</td><td>moy</td></tr>
 </tbody></table>
 <h2 id="r7528"><span class="num">07</span>R7528</h2>
-<p>Rakiszki, the palatine of Mścisław, and property/reformation involving the first husband, Kroszyński. The second surname spelling is irregular (*Krodyznski*).</p>
+<p>Rakiszki, the palatine of Mścisław, and property/reformation involving the first husband, Kroszyński. The second surname spelling is irregular (<em>Krodyznski</em>).</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
 <tr><td>1: la poste passee sur</td><td>rakiszki</td><td>Rakiszki</td></tr>
 <tr><td>1: Mr le</td><td>palatine</td><td>palatine</td></tr>
@@ -169,7 +169,7 @@
 <tr><td>3-left: je les voy parler a</td><td>krodyznski</td><td>Krodyznski: irregular surname spelling, cf Kroszynski in the same letter</td></tr>
 </tbody></table>
 <h2 id="r7529"><span class="num">08</span>R7529</h2>
-<p>clear French says that since 10 May the *clef* is *rompue* and there is no way to *loubrire*. Another passage says someone has the *clef* in *ceur*. These report trouble using the cipher; they do not establish interception or cryptanalytic compromise. Later cipher words are *rayne* and *maitresse*.</p>
+<p>Clear French says that since 10 May the <em>clef</em> is <em>rompue</em> and there is no way to <em>loubrire</em>. Another passage says someone has the <em>clef</em> in <em>ceur</em>. These report trouble using the cipher; they do not establish interception or cryptanalytic compromise. Later cipher words are <em>rayne</em> and <em>maitresse</em>.</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
 <tr><td>2: depuis [10] may que cete ... est rompue</td><td>clef</td><td>clef</td></tr>
 <tr><td>2: na plus moyen de</td><td>loubrire</td><td>loubrire (l ouvrir); overwritten sign excluded</td></tr>
@@ -179,7 +179,7 @@
 <tr><td>6-right: et point de</td><td>maitresse</td><td>maitresse</td></tr>
 </tbody></table>
 <h2 id="r7530"><span class="num">09</span>R7530</h2>
-<p>the grand treasurer, a confederation, the surrender of an army, and evidence concerning the arrival of a *morcowide* (probably Moscovite). Some number sequences yield corrupt spellings; the letter is not treated as a fluent verified transcript.</p>
+<p>The grand treasurer, a confederation, the surrender of an army, and evidence concerning the arrival of a <em>morcowide</em> (probably Moscovite). Some number sequences yield corrupt spellings; the letter is not treated as a fluent verified transcript.</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
 <tr><td>1: avec</td><td>grande</td><td>grande</td></tr>
 <tr><td>1: title continued</td><td>tresrorier</td><td>tresrorier; overwritten sign needs note</td></tr>
@@ -191,7 +191,7 @@
 <tr><td>2: et on a le</td><td>document</td><td>document</td></tr>
 </tbody></table>
 <h2 id="r7534"><span class="num">10</span>R7534</h2>
-<p>deputies, *libertation*, a doubtful *zaia[73]d* (possibly Polish *zajazd*), Bychowa, Białystok, Tykocin and Rybiński. Codes 87, 94 and 270 remain open.</p>
+<p>Deputies, <em>libertation</em>, a doubtful <em>zaia[73]d</em> (possibly Polish <em>zajazd</em>), Bychowa, Białystok, Tykocin and Rybiński. Codes 87, 94 and 270 remain open.</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
 <tr><td>1: plusieurs</td><td>depute</td><td>depute</td></tr>
 <tr><td>1: avoir par luy</td><td>libertation</td><td>libertation</td></tr>
@@ -202,7 +202,7 @@
 <tr><td>3-left: avec</td><td>rybinski</td><td>Rybinski</td></tr>
 </tbody></table>
 <h2 id="r7535"><span class="num">11</span>R7535</h2>
-<p>children and a brother, being Saxon, Dunin&#x27;s house, Chomiński and an ensign; court correspondence, the marshal and his father, *Menzykw* (possibly Menshikov), the queen and the prince of Courland.</p>
+<p>Children and a brother, being Saxon, Dunin&#x27;s house, Chomiński and an ensign; court correspondence, the marshal and his father, <em>Menzykw</em> (possibly Menshikov), the queen and the prince of Courland.</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
 <tr><td>2: jusque a leur</td><td>fils</td><td>fils</td></tr>
 <tr><td>2: destre</td><td>saxon</td><td>saxon</td></tr>
@@ -221,7 +221,7 @@
 <tr><td>3-right: prince de</td><td>courlande</td><td>Courlande</td></tr>
 </tbody></table>
 <h2 id="r7536"><span class="num">12</span>R7536</h2>
-<p>a disturbed seal and concern over correspondence; instructions to route letters via a name resembling Königsberg, followed by an unidentified *Kinnik*. The writer expects delay but greater safety. The reverse considers her security, lodging in case of war, keeping Dunin&#x27;s wife company and a safeguard.</p>
+<p>A disturbed seal and concern over correspondence; instructions to route letters via a name resembling Königsberg, followed by an unidentified <em>Kinnik</em>. The writer expects delay but greater safety. The reverse considers her security, lodging in case of war, keeping Dunin&#x27;s wife company and a safeguard.</p>
 <table><thead><tr><th>Image / clear anchor</th><th>Literal cipher output</th><th>Editorial interpretation or uncertainty</th></tr></thead><tbody>
 <tr><td>1: que vous</td><td>adressieuosleritre</td><td>adressie vos leritre: address your letters; some surplus letters or digit misreadings</td></tr>
 <tr><td>1: par</td><td>keinisberkakinnik</td><td>Keinisberk a Kinnik: Konigsberg to Kinnig? verify name</td></tr>
@@ -236,15 +236,15 @@
 <tr><td>3-left: et pour le</td><td>sauwegarde</td><td>sauwegarde</td></tr>
 </tbody></table>
 <h2 id="method"><span class="num">13</span>Method and limits</h2>
-<p>The initial French searches failed. Polish monoalphabetic annealing recovered the R7526 alphabet, and the key was tested on eight other letters before the remaining figures were assigned. Repeated words and names verified the higher homophones. Full-resolution crops and a final all-page audit corrected numerical readings, added the cipher on R7527’s reverse, and counted the standalone codes.</p>
-<p>Mniszech’s different system was tried with Polish homophonic searches, a tentative crib, null and digraph hypotheses, and a frequency penalty. None produced coherent text. Crucially, a synthetic 232-token homophonic control recovered only 49 positions. The failed historical searches are therefore inconclusive: the current solver cannot establish impossibility. The letter is left open.</p>
-<p>Three Sanguszko key records (R7515, R7460, R7461) were inspected and ruled out by their signs or numerical values. Searches for editions, these correspondents and the shelfmarks found contextual references but no matching key or plaintext. Further correspondence is catalogued without online images located here. No prior reading was found; its nonexistence is not asserted.</p>
+<p>Solver runs with a French language model failed. A simple-substitution solver with a Polish language model recovered the R7526 alphabet, and the key was tested on eight other letters before the remaining figures were assigned. Repeated words and names confirmed the higher homophones. Full-resolution crops and a final check of every page corrected transcribed figures, added the cipher on R7527’s reverse, and counted the standalone codes.</p>
+<p>Mniszech’s different system was tried with Polish homophonic searches, a tentative crib, null and digraph hypotheses, and a frequency penalty. None produced coherent text. In a control, the same solver recovered only 49 positions of a synthetic homophonic ciphertext of the same length, 232 tokens. The failures on the letter therefore show nothing about whether it can be decrypted. It is left open.</p>
+<p>Three Sanguszko key records (R7515, R7460, R7461) were inspected and ruled out by their signs or numerical values. Searches for editions, these correspondents and the shelfmarks found contextual references but no matching key or plaintext. Further correspondence is catalogued without online images located here. No earlier decipherment was found; that does not prove none exists.</p>
 <h2 id="gaps"><span class="num">14</span>What remains uncertain</h2><ul>
-<li>R7524, all 232 cipher tokens. separate system, no matching key or plaintext located, current solver also fails its control; not declared impossible.</li>
-<li>Potocka codes 87, 94, 100, 270, 23 occurrences. context suggests roles but does not identify exact entries; no matching nomenclator.</li>
-<li>R7534 exceptional figure 73 in zaia[73]d. one occurrence, no independent key, proposed zajazd does not justify assigning a value.</li>
-<li>M-grade names and anomalous sequences in reading.md, especially serecki/Tabrowski, Krodyznski, connedere/morcowide, Keinisberk a Kinnik, tegn and tombap. image ambiguities or possible original enciphering/spelling errors, no parallel witness. Literal readings and editorial suggestions remain separate.</li>
-</ul><p>The full request has 863/1,119 valued tokens (77.1%). The conservative coherence count is 745/1,119 (66.6%): it excludes entire doubtful segments, so it is a lower bound, not an error-rate estimate. Raw output, editorial interpretation and confidence are kept distinct in the <a href="https://github.com/dbourdeau/cyphersolver/blob/main/potocka1714/reading.md">complete segment reading</a>.</p>
+<li>R7524, all 232 cipher tokens: a separate system, no matching key or plaintext located, current solver also fails its control; not declared impossible.</li>
+<li>Potocka codes 87, 94, 100, 270, 23 occurrences: context suggests roles but does not identify exact entries; no matching nomenclator.</li>
+<li>R7534 exceptional figure 73 in zaia[73]d: one occurrence, no independent key, proposed zajazd does not justify assigning a value.</li>
+<li>M-grade names and anomalous sequences in reading.md, especially serecki/Tabrowski, Krodyznski, connedere/morcowide, Keinisberk a Kinnik, tegn and tombap: image ambiguities or possible original enciphering/spelling errors, no parallel witness. Literal decryptions and editorial suggestions are kept apart.</li>
+</ul><p>Across all ten letters, 863/1,119 cipher tokens have a value (77.1%). The conservative coherence count is 745/1,119 (66.6%): it excludes entire doubtful segments, so it is a lower bound, not an error-rate estimate. Raw output, editorial interpretation and confidence are kept distinct in the <a href="https://github.com/dbourdeau/cyphersolver/blob/main/potocka1714/reading.md">complete segment reading</a>.</p>
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/potocka1714.json"></figure>
 <!-- replay:end -->
