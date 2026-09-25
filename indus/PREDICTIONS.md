@@ -10339,3 +10339,16 @@ right in 34% of the lexical cases (CB3). The tier 3 line stands, but most of wha
 rule restores too: the Indus texts are formulaic enough that the sign between two known neighbours is often the one
 seen there before. The PROGRESS tier 3 cell now gives both baselines. Progress: none (validation; streak 1). Tally,
 counting parts: 1477 held, 1398 failed (2875 registered).
+
+# Two-hundred-and-eighty-sixth set, registered before testing (25 September 2026): decipherment loop 111, damaged-text runs as extra training text (four hypotheses)
+
+Streak 1. Sample D (damaged.py, set 253) holds 435 legible runs of damaged texts, 1,501 signs not in any clean line. Set
+188's extra clean lines did not lower S by its 0.03 threshold; D is new text and was left out because its runs have
+cut edges. Here a cut start is marked with the pseudo-sign '<cut>' and a cut end with '<cutend>', so the runs add
+interior contexts without false line starts or ends; the test lines are unchanged (`predict_test286.py`). Not measured
+before registering.
+
+- **DX1** S on the fixed test falls by 0.005 bits or more.
+- **DX2** The same A -> B (any fall).
+- **DX3** SIGN top-1 does not fall.
+- **DX4** Progress rule: DX1, DX2 and DX3 hold (training then includes the marked runs).
