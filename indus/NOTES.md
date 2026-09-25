@@ -2884,6 +2884,12 @@ Registered first (361ea1bd2). 26 of 74 held-out pictures right (35.1%, was 16.9%
 predict little is noisy (p = 0.19). Statistic to be replaced by the count of correct predictions in a new set. No
 progress (streak 1). Tally 1487 held, 1404 failed.
 
+## Three-hundred-and-fourth pass (25 Sept 2026): decipherment loop 115, picture vault by correct predictions
+
+Registered first (9775e8a66). Held-out tablets' pictures predicted from other texts' referent units: 26 right against a
+shuffle median of 1 (p = 0.005); Linear B control 710 of 1,716 against max 22. Tier 3 gains a referent-level vault line.
+Progress (streak 0). Tally 1490 held, 1404 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

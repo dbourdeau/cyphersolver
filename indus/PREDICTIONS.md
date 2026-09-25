@@ -10445,3 +10445,13 @@ criterion), against 20 shuffles of the ideograms (`predict_test290.py`).
 - **VH1** Indus: the number of correct predictions is above the 95th percentile of 200 shuffles.
 - **VH2** Linear B control: the number of correct predictions is above all 20 shuffles.
 - **VH3** Progress rule: VH1 and VH2 hold (tier 3 gains a picture-vault line for referents).
+
+## Results of the two-hundred-and-ninetieth set (added after the test; `predict_test290.py`, `results/predict_test290.md`)
+
+All three held. Scored by correct predictions, the picture vault is well above chance: 26 held-out tablets get the
+right picture from referent units learned on other texts (copies excluded), against a shuffle median of 1 and a 95th
+percentile of 7 (p = 0.005, the floor for 200 shuffles; VH1). The same procedure on Linear B gets 710 of 1,716 DAMOS
+lines' ideograms right against a shuffle maximum of 22 (VH2): the vault works as a positive control. Scope: 74 of 556
+pictured tablets get a prediction; the units are local to their pool (set 243); the check is referent-level (the text
+names what the picture shows), not a reading. Tier 3's picture-vault cell is updated. Progress: streak 0. Tally,
+counting parts: 1490 held, 1404 failed (2894 registered).
