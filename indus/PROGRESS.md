@@ -106,3 +106,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 34 | 209 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | closer-line bodies do not show the name-body pattern (sign before a closer no more often a head); no roles added (no progress; streak 4) |
 | 35 | 210 | 4.675 (25.5%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | discounted family 4-gram: S 4.685 to 4.675, replicated A to B; SIGN top-1 38.3% (progress; streak 0) |
 | 36 | 211 | 4.635 (26.1%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | discounted sign trigram: S 4.675 to 4.635 (largest single gain), replicated A to B; SIGN 39.7% / 61.8%, WORD top-10 3.4% (progress; streak 0) |
+| 37 | 212 | 4.635 (26.1%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | lighter (add-0.3) smoothing helps the fixed test, hurts A to B and SIGN: overfits, not adopted (no progress; streak 1) |

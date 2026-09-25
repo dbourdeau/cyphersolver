@@ -2471,6 +2471,11 @@ Progress: streak 0. Tally 1344 held, 1244 failed.
 Registered first (107ae0f35). Discounted sign trigram: S 4.675 -> 4.635, A -> B replicated; SIGN 39.7% / 61.8%, WORD
 top-10 3.4%. Progress: streak 0. Tally 1348 held, 1244 failed.
 
+## Two-hundred-and-twenty-sixth pass (24 Sept 2026): decipherment loop 37, lighter smoothing
+
+Registered first (dbaeea9e7). Add-0.3 smoothing helps the fixed test but hurts A -> B and SIGN: overfits. Not adopted.
+No progress: streak 1. Tally 1349 held, 1247 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

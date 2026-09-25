@@ -8767,3 +8767,10 @@ for the rest of the line.
 - **FS2** The same A -> B.
 - **FS3** SIGN top-1 on the fixed test does not fall.
 - **FS4** Progress rule: FS1 and FS2 hold (first enters the model).
+
+## Results of the two-hundred-and-twelfth set (added after the test; `predict_test212.py`, `results/predict_test212.md`)
+
+One held, three failed. Add-0.3 smoothing of the count components lowers S on the fixed test (4.6354 -> 4.6284; SM1)
+but raises it A -> B (5.1927 -> 5.2177; SM2 fails) and lowers SIGN top-1 (39.7% -> 39.2%; SM3 fails): lighter
+smoothing overfits the contexts of one sample, and B's new lines have more unseen ones. Not adopted (famlm.M3.K
+stays 1). No progress: streak 1. Tally, counting parts: 1349 held, 1247 failed (2596 registered).
