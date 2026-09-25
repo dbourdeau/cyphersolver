@@ -2777,6 +2777,11 @@ Registered first (59ba4f3a2). The grammar prior adds nothing at the top rank (SI
 Registered first (df0c56fd5). NUM-INFIX, OPEN-NUM and MULTI-COUNT fail on A or B. No progress (streak 2). Tally 1456
 held, 1357 failed.
 
+## Two-hundred-and-eighty-fourth pass (25 Sept 2026): decipherment loop 95, head roles inside the new frames
+
+Registered first (559143fbe). OPEN-PRONE last signs are heads on B only; the sign before 400 is never a head (0 of 16),
+agreeing with LOW-POST. No new role. No progress (streak 3). Tally 1457 held, 1361 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

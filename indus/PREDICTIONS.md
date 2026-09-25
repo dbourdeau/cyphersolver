@@ -10010,3 +10010,11 @@ closer-line version held on A and failed on B; B decides (`predict_test270.py`).
 - **RH3** A BODY-400: the sign before 400 is head-class more often than the earlier signs.
 - **RH4** B BODY-400: the same.
 - **RH5** Progress rule: a frame that holds on A and B gives that sign the 'name head' role in `progress.roles`.
+
+## Results of the two-hundred-and-seventieth set (added after the test; `predict_test270.py`, `results/predict_test270.md`)
+
+One held, four failed. OPEN-PRONE lines of 3+ signs are few (A 16, B 21): the last sign is head-class on B (8 of 21
+against 2 of 39 earlier signs, p = 0.002; RH2) but not on A (2 of 16 against 2 of 29, p = 0.45; RH1 fails). In
+BODY-400 lines the sign before 400 is never head-class (A 0 of 12, B 0 of 4; RH3, RH4 fail): as LOW-POST (set 250)
+found for short lines, 400 follows signs that are not name heads, so a lexical body + 400 is not a name. No new role.
+Progress: none (streak 3). Tally, counting parts: 1457 held, 1361 failed (2818 registered).
