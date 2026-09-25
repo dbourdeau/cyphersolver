@@ -10580,3 +10580,10 @@ the excess over the shuffle median (`predict_test297.py`). Not measured before r
 - **VS1** The excess over the shuffle median is above +60, with p < 0.05 against 200 shuffles.
 - **VS2** Accuracy on the predicted objects is above 33.5%.
 - **VS3** Progress rule: VS1 holds (the tier 3 vault line rises).
+
+## Results of the two-hundred-and-ninety-seventh set (added after the test; `predict_test297.py`, `results/predict_test297.md`)
+
+All three failed. Weighting votes by specificity (1 / n) gets 62 of 191 held-out pictures right (32.5%), excess +57
+over the shuffle median of 5, against set 294's +60 (VS1, VS2 fail). Neither support (set 296, +56) nor specificity
+weighting beats one vote per unit: the vault's limit is which tablets carry a known unit, not how the votes are
+weighed. Progress: none (streak 3). Tally, counting parts: 1497 held, 1419 failed (2916 registered).

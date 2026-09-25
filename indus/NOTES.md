@@ -2921,6 +2921,11 @@ failed.
 Registered first (ee262273a; quoting fix 2d4bd2c15). Weighted votes: excess +56 against +60. No progress (streak 2).
 Tally 1497 held, 1416 failed.
 
+## Three-hundred-and-eleventh pass (25 Sept 2026): decipherment loop 122, picture vault with specificity-weighted votes
+
+Registered first (73e40744f). Excess +57 against +60; weighting does not help. No progress (streak 3). Tally 1497 held,
+1419 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
