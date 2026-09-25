@@ -10702,3 +10702,14 @@ The single signs: on individually made tablets 171, 226, 636, 797, 824, 840 (bul
 (elephant); on moulded tablets 17, 318, 440, 503 (gharial), 463, 752 (plant), 405 (Bull1), 167 (Mult). They stay local
 to their pool. `prizebench.referent_fixed` adds them. Progress: referent line rises (streak 0). Tally, counting parts:
 1507 held, 1427 failed (2934 registered).
+
+# Three-hundred-and-fourth set, registered before testing (25 September 2026): decipherment loop 129, skip-pairs and family units under the stricter criterion (three hypotheses)
+
+Streak 0. Skip-pairs (set 292, FDR 10.2%) and family units (set 300, FDR 11.5%) failed narrowly at the loose criterion;
+single signs passed at the stricter one (set 303). Each is added, under the stricter criterion (3+ objects in 2+ texts,
+80%+ one picture), to set 303's units; combined FDR against 100 picture shuffles; coverage on the real tokens
+(`predict_test304.py`). Not measured before registering.
+
+- **SF1** Strict skip-pairs: FDR at or below 10% and coverage above set 303's.
+- **SF2** Strict family units (pairs and 3-sign runs over description families): the same.
+- **SF3** Progress rule: SF1 or SF2 holds (the passing kind joins the referent units; if both, the larger coverage).
