@@ -11381,3 +11381,14 @@ stratified binomial at alpha 0.005 finds 121 units (11 Bull1), coverage 3.43% (3
 but FDR 18.7% (MC1 fails): as registered, set 337's 1.09% stands. The bull units drop from 27 to 11 once mould copies
 count once. A stricter alpha on this principled pool is the next test. Progress: none (streak 3). Tally, counting
 parts: 1559 held, 1479 failed (3038 registered).
+
+# Three-hundred-and-thirty-ninth set, registered before testing (25 September 2026): decipherment loop 164, the true-duplicate pool at stricter alphas (four hypotheses)
+
+Streak 3. Set 338's pool (mould copies and impressions counted once, hand-made objects separately) failed the FDR at
+alpha 0.005. Stricter alphas (0.0001, 0.0005, 0.001, 0.002): the alpha with FDR <= 10% and the largest coverage is
+chosen, with the Linear B control (`predict_test339.py`). Not measured before registering.
+
+- **MA1** An alpha with FDR <= 10% gives coverage above 1.09% (set 337).
+- **MA2** Without Bull1 units, above 0.99%.
+- **MA3** Linear B with it recovers 2+ of the 4 control words, none wrong.
+- **MA4** Progress rule: MA1 and MA3 hold (the referent line uses the true-duplicate pool at that alpha).
