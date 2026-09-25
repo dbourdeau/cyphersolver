@@ -9040,3 +9040,17 @@ None held. F's extra lines give only 20 tails after a mid-line ending; their las
 not lower than frequency-matched draws (p = 0.38; TL1), nor are the tail signs overall (TL2). Set 223's A result
 does not replicate on B (weak) or F (too few, no effect); it is left as an A-only observation, and no role is added.
 No progress: streak 3. Tally, counting parts: 1380 held, 1268 failed (2648 registered).
+
+# Two-hundred-and-twenty-sixth set, registered before testing (24 September 2026): decipherment loop 51, Parpola's description families used alike? (four hypotheses)
+
+Metric: M+ 41.4% (numerals, copper-tablet anchors, and Fairservis depiction classes human / tool / plant / fish
+confirmed by use, set 178); streak 3. Set 183 found that of Fairservis's depiction groups only fish (and tools weakly)
+are used alike. Parpola's CISI descriptions give independent, larger depiction families (descfam.py: person 36 signs,
+leaf, fish, tree, jar ...). Use coherence as set 183 (predict_test62.sims context similarity, signs seen 20+ times;
+mean pairwise similarity within the family against 1,000 random groups of the same size), computed on A's lines and
+on B's lines separately, for every description family with 3+ qualifying members in each.
+
+- **UA1** At least one description family other than fish is used alike in both A and B (p < 0.05 each).
+- **UA2** The 'person' family is used alike in both.
+- **UA3** The fish family is used alike in both (replicating set 183 with Parpola's family).
+- **UA4** Progress rule: UA1 holds; the families that pass both enter M+ (their tokens counted as meaning classes).
