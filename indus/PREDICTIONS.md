@@ -10885,3 +10885,14 @@ All three failed. Referent units are followed by 740 / 520 in 10% of occurrences
 24% for other recurring units (p = 0.12), and in 26% against 16% on moulded tablets (p = 0.38): opposite directions,
 neither significant. The referent units hold no fixed grammatical slot relative to the endings, as they hold no fixed
 position (set 293). Progress: none (streak 1). Tally, counting parts: 1524 held, 1436 failed (2960 registered).
+
+# Three-hundred-and-fourteenth set, registered before testing (25 September 2026): decipherment loop 139, restoration of lines with two illegible signs (three hypotheses)
+
+Streak 1. Tier 3's restoration line (sets 283-285) uses single gaps. Lines with two illegible signs that M77 reads
+(13 lines, 26 signs; counted before registering, no prediction made) are new cases: for each, the two-direction model
+is retrained without copies of the line and the pair is chosen jointly over the 60 commonest signs; each gap sign is
+compared with M77, and with set 285's context baseline applied to each gap (`predict_test314.py`).
+
+- **MT1** The model is right on 25% or more of the gap signs (10+ signs).
+- **MT2** The model beats the context baseline.
+- **MT3** Progress rule: MT1 and MT2 hold (the tier 3 restoration line gains these cases).
