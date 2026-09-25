@@ -2966,6 +2966,11 @@ Registered first (be6c78ed7). Both pass under the stricter criterion; family uni
 Registered first (30f5fa6ee). 119 units, FDR 8.3%; referent line 1.80% -> 1.87%. Progress (streak 0). Tally 1512 held,
 1427 failed.
 
+## Three-hundred-and-twentieth pass (25 Sept 2026): decipherment loop 131, strict family single signs and skip-pairs
+
+Registered first (b0487107c). 136 units, FDR 6.7%; referent line 1.87% -> 1.89%. Progress, small (streak 0). Tally 1514
+held, 1427 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

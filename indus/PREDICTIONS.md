@@ -10745,3 +10745,10 @@ combined FDR against 100 picture shuffles (`predict_test306.py`). Not measured b
 
 - **FS1** The combined FDR is at or below 10% and coverage rises above 1.87%.
 - **FS2** Progress rule: FS1 holds (they join the referent units).
+
+## Results of the three-hundred-and-sixth set (added after the test; `predict_test306.py`, `results/predict_test306.md`)
+
+Both held. Strict family single signs and family skip-pairs added to set 305's units give 136 units, FDR 6.7%, coverage
+1.87% -> 1.89% (FS1): a small step, the unit grid under the strict criterion is now complete. `prizebench.referent_fixed`
+uses them. Progress: referent line rises, small (streak 0). Tally, counting parts: 1514 held, 1427 failed (2941
+registered).
