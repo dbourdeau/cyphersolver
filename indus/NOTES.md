@@ -2718,6 +2718,12 @@ Registered first (e5a7e4184), readings looked up before, predictions opened afte
 = 700, M-61 = 81/82/958 uncertain); both miss the frozen top 5. Two cases only; consistency evidence against, not a
 verdict. No progress (streak 4). Tally 1439 held, 1330 failed.
 
+## Two-hundred-and-seventy-third pass (25 Sept 2026): decipherment loop 84, anti-cache for non-adjacent repeats
+
+Registered first (c37164f1e). The design-split gain does not survive: S 4.6354 -> 4.6369, A -> B 5.1927 -> 5.2104,
+SIGN 39.7% -> 39.6%. Lesson: small S gains on the training split's own design run do not predict the fixed test. No
+progress (streak 5). Tally 1439 held, 1334 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

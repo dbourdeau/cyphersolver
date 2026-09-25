@@ -9774,3 +9774,12 @@ fixed at 0.5 (`predict_test259.py`). For SIGN, a candidate written elsewhere in 
 - **AC2** The same A -> B (any fall).
 - **AC3** SIGN top-1 does not fall.
 - **AC4** Progress rule: AC1, AC2 and AC3 hold.
+
+## Results of the two-hundred-and-fifty-ninth set (added after the test; `predict_test259.py`, `results/predict_test259.md`)
+
+All four failed. The anti-cache that helped on the design split (0.0036 bits) raises S on the fixed test (4.6354 ->
+4.6369), raises it more A -> B (5.1927 -> 5.2104) and lowers SIGN top-1 (39.7% -> 39.6%). The avoidance of
+non-adjacent repeats is real as a corpus statistic (DB6, DN6, HX14) but too weak and uneven to predict with: repeated
+signs that do occur (numerals, doubled heads, 740 in stacked endings) are penalised with the rest. Second design-split
+gain that did not survive (after f5k, set 239): design runs on the training split overstate small S gains. Progress:
+none (streak 5). Tally, counting parts: 1439 held, 1334 failed (2773 registered).
