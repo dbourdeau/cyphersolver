@@ -9020,3 +9020,16 @@ weight); streak 1. A design run on 300 lines of the training lines' own split: f
 None held. Weighting the forward model 0.7 lowers SIGN top-1 on the fixed test (39.8% -> 39.2%; WD1) and A -> B
 (33.0% -> 31.9%; WD2): the design-run difference (0.2 points on 300 lines) was noise, and equal weights stay. No
 progress: streak 2. Tally, counting parts: 1380 held, 1265 failed (2645 registered).
+
+# Two-hundred-and-twenty-fifth set, registered before testing (24 September 2026): decipherment loop 50, the post-name tail replicated on F (three hypotheses)
+
+Metric: S 4.635, R 84.2%; streak 2. Set 223 found, against its registered direction, that in A the last sign of a
+tail after a mid-line 740 / 520 has lower head propensity than any of 1,000 frequency-matched draws (0.073); in B the
+direction was the same but weak (0.126). F's extra lines (not in A or B) were not looked at. Registered now in the
+observed direction: tails after a finished name are not name-like.
+
+- **TL1** In F's extra lines, the tail's last sign has lower head propensity (from A) than frequency-matched draws
+  (one-sided p < 0.05, 1,000 draws).
+- **TL2** In F, the tail signs overall (all positions) have lower head propensity than frequency-matched draws.
+- **TL3** Progress rule: TL1 holds (A's finding replicates on unseen lines); then the tail signs after a mid-line
+  ending get the role 'post-name element' in R.
