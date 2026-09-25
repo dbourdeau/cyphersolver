@@ -2707,6 +2707,11 @@ predictions could not be checked; the test waits on better images (vol. 2/3 plat
 Registered first (85fe4ab70). Composed head-final names never enter the top 10; WORD top-10 unchanged at 3.4% and equal
 to the head-first control. No progress (streak 2). Tally 1437 held, 1325 failed.
 
+## Two-hundred-and-seventy-first pass (25 Sept 2026): decipherment loop 82, infill component for the SIGN task
+
+Registered first (96dc72106). The infill frame p(sign | left, right) adds nothing beyond the two-direction model: top-1
+39.9% -> 39.4%, top-5 61.8% -> 62.2%. No progress (streak 3). Tally 1439 held, 1327 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

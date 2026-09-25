@@ -9730,3 +9730,12 @@ development split of the training lines only (alpha in 0-3), then applied once t
 - **IF2** SIGN top-5 does not fall.
 - **IF3** The development split gives the infill a positive weight (alpha > 0).
 - **IF4** Progress rule: IF1 and IF2 hold (the SIGN task then uses the infill scorer).
+
+## Results of the two-hundred-and-fifty-seventh set (added after the test; `predict_test257.py`, `results/predict_test257.md`)
+
+Two held, two failed. The development split gives the infill a small weight (alpha 0.25: top-1 40.7% -> 40.9%; larger
+weights hurt), IF3 holds. On the 2,340 test signs top-1 falls 39.9% -> 39.4% (IF1 fails) and top-5 rises 61.8% ->
+62.2% (IF2 holds). The two-direction model (set 204) already carries what the immediate neighbours say; counting the
+exact left-right frame adds noise on 3,000 lines. (The two-direction baseline here, 39.9%, differs from the bench's
+39.7% only by tie order among equal scores.) Progress: none (streak 3). Tally, counting parts: 1439 held, 1327 failed
+(2766 registered).
