@@ -3028,6 +3028,11 @@ p = 0.12. Withdrawn. Lesson: exclude nested units in unit-pair statistics. No pr
 Registered first (4db1febfb). The prior takes no weight; WORD stays 4.3% (two-direction). No progress (streak 3).
 Tally 1531 held, 1441 failed.
 
+## Three-hundred-and-thirty-second pass (25 Sept 2026): decipherment loop 143, BODY-90 and SHORT-90
+
+Registered first (761c45a7e). 90 is not a body-closing marker as 400 is. No progress (streak 4). Tally 1531 held, 1444
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

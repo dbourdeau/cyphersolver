@@ -10975,3 +10975,9 @@ by the G margin on A and B. Not measured before registering.
 - **G91** BODY-90 raises the margin on A by 0.3 point or more and raises it on B.
 - **G92** SHORT-90, the same.
 - **G93** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the three-hundred-and-eighteenth set (added after the test; `predict_test318.py`, `results/predict_test318.md`)
+
+All three failed. BODY-90 (A 49.65, B 37.36) and SHORT-90 (49.62, 37.36) leave the margins practically unchanged: 90
+closes lexical bodies too rarely to form a frame; unlike 400 (sets 250, 263), it is a post-ending marker only.
+Progress: none (streak 4). Tally, counting parts: 1531 held, 1444 failed (2975 registered).
