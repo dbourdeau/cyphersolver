@@ -2819,6 +2819,11 @@ stopping rule is met. Loops 80-102 in sum: G margin 47.6 / 36.3 -> 49.6 / 37.4 (
 HEADING-BODY, OPEN-PRONE; grammar.parse11), R 84.2% -> 86.1% (edge roles), referent line 0.79%; S, SIGN, WORD and tiers
 1-3 unchanged; the restoration check on the CISI photographs was not feasible. Tally 1458 held, 1385 failed.
 
+## Two-hundred-and-ninety-second pass (25 Sept 2026): decipherment loop 103, SIGN ensemble over two family maps
+
+New run of the loop (owner's goal: stop after 10 consecutive loops without progress). Registered first (87c22030a).
+The ensemble lowers SIGN (39.8% -> 39.5%). No progress (streak 1). Tally 1458 held, 1388 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

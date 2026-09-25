@@ -10164,3 +10164,10 @@ tuning (`predict_test278.py`). Not measured before registering.
 - **SE1** SIGN top-1 rises by 0.5 point or more.
 - **SE2** SIGN top-5 does not fall.
 - **SE3** Progress rule: SE1 and SE2 hold (the SIGN task then uses the ensemble).
+
+## Results of the two-hundred-and-seventy-eighth set (added after the test; `predict_test278.py`, `results/predict_test278.md`)
+
+All three failed. Averaging the two-direction SIGN scores of the decade-family and description-family models lowers
+top-1 (39.8% -> 39.5%) and top-5 (61.9% -> 61.7%): the two family maps carry the same information (as for S, set 208),
+and the description families are the weaker of the two. Progress: none (streak 1 of the new run). Tally, counting
+parts: 1458 held, 1388 failed (2846 registered).
