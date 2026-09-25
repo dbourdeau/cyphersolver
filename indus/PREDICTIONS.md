@@ -10422,3 +10422,14 @@ within each pool (`predict_test289.py`). Not measured before registering.
 - **PV2** Pooled accuracy is 30% or more.
 - **PV3** Each pool (individually made, moulded) is above its shuffle median.
 - **PV4** Progress rule: PV1 and PV2 hold (tier 3 gains a picture-vault line for referents).
+
+## Results of the two-hundred-and-eighty-ninth set (added after the test; `predict_test289.py`, `results/predict_test289.md`)
+
+Two held, two failed. Held out one text at a time, the referent units predict the picture of 74 of the 556 pictured
+tablets and are right on 26 (35.1%; PV2; the sign-level vault of sets 201-203 reached 16.9%): individually made 11 of
+39 (28.2%, shuffle median 21.4%), moulded 15 of 35 (42.9%, shuffle median 0%) (PV3). But the pooled accuracy is not
+above the shuffles' 95th percentile (53.8%; p = 0.19; PV1 fails): with shuffled pictures few units qualify, so the
+shuffles make only a few predictions and their accuracy swings widely. The registered statistic was poorly chosen
+(accuracy on a varying number of predictions); the number of correct predictions is the stable one. Not rescored here;
+a new registered set will test it. Progress: none (streak 1). Tally, counting parts: 1487 held, 1404 failed (2891
+registered).

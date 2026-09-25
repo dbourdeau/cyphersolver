@@ -2878,6 +2878,12 @@ FDR to 10.8% and stay out; their labels are pool-local (806 human on made tablet
 Registered first (d57dc2f29). S rises (4.6354 -> 4.6712), A -> B worse; no progress (streak 2 at the time; loops
 112-113 then made progress). Tally 1485 held, 1402 failed.
 
+## Three-hundred-and-third pass (25 Sept 2026): decipherment loop 114, picture vault with referent units
+
+Registered first (361ea1bd2). 26 of 74 held-out pictures right (35.1%, was 16.9%), but accuracy against shuffles that
+predict little is noisy (p = 0.19). Statistic to be replaced by the count of correct predictions in a new set. No
+progress (streak 1). Tally 1487 held, 1404 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
