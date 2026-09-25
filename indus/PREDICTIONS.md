@@ -11451,3 +11451,10 @@ observations only if a binomial test against that picture's share in the pool gi
 
 - **VB1** The excess over the shuffle median is above +41 (set 341), with p < 0.05 against 200 shuffles.
 - **VB2** Progress rule: VB1 holds (the tier 3 vault line rises).
+
+## Results of the three-hundred-and-forty-second set (added after the test; `predict_test342.py`, `results/predict_test342.md`)
+
+Both failed. With base-rate votes the corrected vault predicts 259 held-out observations and gets 39 right (15.1%)
+against a shuffle median of 1: excess +38, below set 341's +41 (VB1 fails). The base-rate votes reach more targets
+(rare pictures qualify on little evidence) but are right less often. Progress: none (streak 3). Tally, counting parts:
+1565 held, 1485 failed (3050 registered).
