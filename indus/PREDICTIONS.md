@@ -10903,3 +10903,17 @@ All three held. On 13 lines with two illegible signs read by M77 (26 signs), the
 jointly and matches M77 on 8 (31%; MT1): K-43 60, M-1077 415, M-1386 760 and 740, M-1498 100, H-1103 892, H-779 400, and
 740 in the last line; the context baseline matches 4 (MT2). The tier 3 restoration line now counts 29 of 75 signs (39%)
 against a context baseline of 23. Progress: streak 0. Tally, counting parts: 1527 held, 1436 failed (2963 registered).
+
+# Three-hundred-and-fifteenth set, registered before testing (25 September 2026): decipherment loop 140, pictographic referent signs (three hypotheses)
+
+Streak 0. Tier 1's strict line counts four copper-tablet signs whose shape is the animal pictured on the same tablet.
+The referent method now finds single signs tied to a picture (set 303: e.g. 923 with the elephant, 17 / 318 / 440 / 503
+with the gharial). Where Parpola's CISI description of such a sign names the thing in its picture, the sign is a
+pictograph checked against iconography, like the copper anchors. Loop 77 found sign shapes generally unrelated to the
+pictures, so this is a hard test. Single-sign referents at 3+ objects, 67%+ (both pools); keyword lists per picture
+code fixed in the script; matches against 1,000 shuffles of the pictures among these signs (`predict_test315.py`). No
+description was looked at before registering.
+
+- **PA1** Two or more single-sign referents are described as the thing in their picture, above the shuffles' 95th percentile.
+- **PA2** The matches include a sign not already an anchor (749, 341, 753, 777).
+- **PA3** Progress rule: PA1 and PA2 hold (the matching signs join ANCHORS; V strict rises).
