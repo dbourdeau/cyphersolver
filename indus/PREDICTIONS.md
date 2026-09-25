@@ -9829,3 +9829,16 @@ line before a name (226 31 740, 232 48 740, 466 705 760 740) is a real frame, no
 B 35.9) and NAME-NAME (A 47.3, B 36.9) lower the A margin: splitting rules parse shuffled lines as readily as real ones
 (as SEQ did in set 192). The grammar becomes parse8 = parse6 + CAGE-OPEN; `progress.grammar_margin` uses it. Progress:
 G margin rises (streak 0). Tally, counting parts: 1443 held, 1338 failed (2781 registered).
+
+# Two-hundred-and-sixty-second set, registered before testing (25 September 2026): decipherment loop 87, three more grammar rules for unparsed lines (four hypotheses)
+
+Streak 0. Same method as set 261, on the lines parse8 leaves unparsed (their last signs include 400, 368, 31, 407, 2,
+220, 615, 595; many are two-sign lines whose last sign heads names too rarely for G2's bare rule). Rules, each scored by
+the G margin on A and B (`predict_test262.py`): END-PRONE (lexical body + a sign ending 50%+ of its 5+ A occurrences),
+CLOSER-740 (lexical body + closer + 740), TWO-BARE (two lexical signs, the second a name head at least once in A).
+Margins not measured before registering.
+
+- **GE1** END-PRONE raises the margin on A by 0.3 point or more and raises it on B.
+- **GE2** CLOSER-740, the same.
+- **GE3** TWO-BARE, the same.
+- **GE4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
