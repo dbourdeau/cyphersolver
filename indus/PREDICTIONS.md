@@ -10770,3 +10770,15 @@ unchanged), the method finds 185 units, FDR 7.8%, coverage 1.89% -> 2.28% (MI1).
 criteria step by step against the same kind of FDR estimate; each step passed its own test, but the sequence as a whole
 needs an independent check (next set). Progress: referent line rises (streak 0). Tally, counting parts: 1516 held, 1427
 failed (2943 registered).
+
+# Three-hundred-and-eighth set, registered before testing (25 September 2026): decipherment loop 133, a split-half check of the tuned referent configuration (three hypotheses)
+
+Streak 0. Sets 287-307 tuned the referent criteria step by step against the same FDR estimate. Independent check: each
+pool's distinct texts are split at random into halves (seed 308); set 307's configuration learns units on one half and
+the other half is scored: the share of (unit, held-out object) matches whose picture is the unit's label, against 1,000
+shuffles of the held-out pictures; both directions (`predict_test308.py`). A validation: a failure downgrades the tuned
+line; no progress either way. Not measured before registering.
+
+- **SH1** Half 1 -> half 2: matches above the shuffles (p < 0.05).
+- **SH2** Half 2 -> half 1: the same.
+- **SH3** Progress rule: none (validation; recorded as failing).
