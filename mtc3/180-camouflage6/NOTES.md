@@ -1,6 +1,6 @@
 # MTC3 180: Monoalphabetic Substitution with Camouflage, Part 6 (Veselovsky, 2012)
 
-Status: in progress (attempted 24 Sept 2026; not solved, nothing submitted).
+Status: in progress (24 Sept 2026). Breakthrough: pieces are being recovered one at a time (3 of 9 so far); see "Method that works".
 
 Level II. Solvers: Peter Mustermann (2012), George Lasry (2023); no LLM solve.
 
@@ -36,6 +36,28 @@ Tested on the worked example and on synthetic ciphertexts of the challenge's siz
    article-weighted model did not make random starts converge even on the example.
 7. Restricting to the 11 commonest letters (oracle-filtered synthetic): the true key scores only slightly above the
    annealer's optimum; too close to the unicity limit.
+
+## Method that works (24 Sept 2026, `src/camograd.cs`)
+
+Grow ONE piece at a time, letter by letter, and score each partial alphabet with a 5-gram model of English in which
+all letters not yet chosen are deleted (`BuildLM(k)`: Gutenberg text filtered to the first k letters of the growth
+order). A group that is correct for its first k letters then reads as "English restricted to those letters" and scores
+well, while mixtures score like noise; this gives the gradient the joint annealer never had.
+
+- Growth order THEANDOISRLCUMWFGYPBVKJXQZ: starting with T, H, E ("THE") separates true pieces from noise several
+  stages earlier than the frequency order ETAOIN... (measured on clean synthetics built from prose).
+- Beam over stages (100k-150k hypotheses), score = log-likelihood ratio against the restricted unigram model; from
+  stage 13 a letter may be absent (rare letters may not occur in a piece).
+- Synthetic check (`cs1`, 9 pieces, 1522 letters): the stage-12 top group had 11/12 letters right; hill-climbing then
+  recovered the whole piece (22/22 letters) as readable English.
+- Real ciphertext: peel the best piece (beam to stage 20), exclude its symbols, repeat (`src/peel3.sh`). A round whose
+  best score is low is a mixture of pieces: a larger beam fixed round 2 (score 29 -> 63). Pieces 1-3 read as clean
+  English (scores 56, 63, 80).
+- `src/assemble.cs`: once pieces are separated, places the leftover rare-letter symbols and polishes each piece with the
+  full 26-letter model.
+
+The plaintext is a sequence of copyrighted song lyrics; it is kept only in the session scratchpad, not in the
+repository (and the answer, a single non-lyric sentence, will go in `private/`).
 
 ## Remaining gaps
 
