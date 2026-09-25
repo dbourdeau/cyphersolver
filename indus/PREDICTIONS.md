@@ -8903,3 +8903,11 @@ in A. Null: frequency-matched draws (the 20 nearest signs in frequency rank), 1,
 - **AF2** The same in B's new count lines (heads from A).
 - **AF3** The tail's other signs are known name modifiers more often than frequency-matched draws (B).
 - **AF4** Progress rule: AF1 and AF2 hold; then the tail's last sign gets 'name head' and the rest 'name modifier' in R.
+
+## Results of the two-hundred-and-nineteenth set (added after the test; `predict_test219.py`, `results/predict_test219.md`)
+
+None held. The tail after a count's counted sign (100 tails in A, 62 in B) ends in a known name head no more often
+than frequency-matched signs (A 70%, p = 0.32; B 76%, p = 0.67; AF1, AF2), and its other signs are known modifiers no
+more often than chance (AF3). As with the closer lines (set 209), the known-head and known-modifier sets are so large
+that the commonest signs belong to them; no name structure is shown in count tails. No roles added. No progress:
+streak 3. Tally, counting parts: 1368 held, 1257 failed (2625 registered).

@@ -2506,6 +2506,11 @@ adopted. No progress: streak 1. Tally 1366 held, 1251 failed.
 Registered first (43be9f0a8). posk / endk lower S (4.610 -> 4.571, A -> B too) but SIGN falls (39.8% -> 39.5%): not
 adopted. No progress: streak 2. Tally 1368 held, 1253 failed.
 
+## Two-hundred-and-thirty-third pass (24 Sept 2026): decipherment loop 44, what follows a count
+
+Registered first (5c627cfb8). Count tails show no name structure beyond frequency-matched chance. No progress: streak
+3. Tally 1368 held, 1257 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
