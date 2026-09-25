@@ -165,7 +165,7 @@ def grammar_margin(DL):
 def main(label='measure'):
     DL, tr, te = data()
     bits, h1 = structure(tr, te)
-    r, by, tot = roles(DL, edges=True)  # set 267 (RL1-RL4): edge roles
+    r, by, tot = roles(DL, edges=True, head2=True)  # sets 267 (RL1-RL4): edge roles; 279 (HU1, HU4): the heading unit's second sign
     m = meanings(DL)
     mp = meanings_plus(DL)
     p = len(VALUES)

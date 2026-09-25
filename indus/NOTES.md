@@ -2824,6 +2824,11 @@ HEADING-BODY, OPEN-PRONE; grammar.parse11), R 84.2% -> 86.1% (edge roles), refer
 New run of the loop (owner's goal: stop after 10 consecutive loops without progress). Registered first (87c22030a).
 The ensemble lowers SIGN (39.8% -> 39.5%). No progress (streak 1). Tally 1458 held, 1388 failed.
 
+## Two-hundred-and-ninety-third pass (25 Sept 2026): decipherment loop 104, the heading unit
+
+Registered first (433414a1b). The heading's second sign gets the role (B: 83% of openings take 2 / 60 / 1); R 86.1% ->
+86.3%. Heading-body lines do not end in heads. Progress (streak 0). Tally 1460 held, 1391 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

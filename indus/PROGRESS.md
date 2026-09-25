@@ -20,7 +20,7 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 85.1% / 77.0% (no-prefix profile, set 220); no candidate beats the decoys inside the remaining groups (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.4% (frequency 0% / 1.3%) |
 | 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 39.7% / 61.8% (two-direction model, set 204; discounted contexts, sets 210-211; frequency 9.6% / 22.4%) |
-| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 86.1%, G 49.6 / 37.4, M+ 41.4% |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 86.3%, G 49.6 / 37.4, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
 
@@ -174,3 +174,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 101 | 276 | 4.635 (26.1%) | 86.1% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | R: the slot after the counted sign is not restricted (entropy 5.82 vs 5.95 on A, p = 0.16; 5.26 vs 5.39 on B, p = 0.20); no count-complement role (no progress; streak 9) |
 | 102 | 277 | 4.635 (26.1%) | 86.1% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: closers, 400 / 90 and 740 / 520 do not open lines before names (all lower both margins); the cage alone does (no progress; streak 10: **stopping rule met**, 25 Sept 2026) |
 | 103 | 278 | 4.635 (26.1%) | 86.1% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | new run (owner's goal, 25 Sept). tier 7: SIGN ensemble over decade and description families 39.8% to 39.5% top-1, 61.9% to 61.7% top-5 (no progress; streak 1) |
+| 104 | 279 | 4.635 (26.1%) | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | R: the heading is a two-sign unit on B too (83% of 817 / 820 / 861 openings take 2 / 60 / 1); its second sign gets the role, R 86.1% to 86.3% (small); heading-body last signs are not heads (A p = 0.45, B p = 0.56) (progress; streak 0) |

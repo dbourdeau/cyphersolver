@@ -10185,3 +10185,12 @@ role applies.) Not measured before registering.
 - **HU3** B: the same.
 - **HU4** Progress rule (unit): HU1 holds and R rises with the second heading sign given its role.
 - **HU5** Progress rule (head): HU2 and HU3 hold; the last sign then gets the role 'name head'.
+
+## Results of the two-hundred-and-seventy-ninth set (added after the test; `predict_test279.py`, `results/predict_test279.md`, `progress.roles(head2=True)`)
+
+Two held, three failed. On B, 88 of the 106 lines of 3+ signs that open with 817 / 820 / 861 continue with 2 / 60 / 1
+(83%; HU1): the heading is a two-sign unit there too, and giving its second sign the role raises R 86.11% -> 86.27%
+(HU4; a small, bookkeeping-sized gain: the tokens were mostly 60, which had no role). In HEADING-BODY lines the last
+sign is not a name head (A 5 of 29 against 7 of 51 earlier signs, p = 0.45; B 1 of 11 against 1 of 22, p = 0.56; HU2,
+HU3, HU5 fail): a heading + body without an ending is not a name. Progress: R rises (streak 0). Tally, counting parts:
+1460 held, 1391 failed (2851 registered).
