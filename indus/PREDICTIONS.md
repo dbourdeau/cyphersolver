@@ -10852,3 +10852,11 @@ One held, two failed. Tags (94 objects with fragments) and SEAL:C / SEAL:CY (28)
 3.28% (TP2), but the combined FDR rises to 33.7% (TP1 fails): in a pool dominated by one picture (Bull1 on tags, gaur on
 SEAL:C) almost any recurring unit meets the share criterion by chance, as seals showed (sets 238, 291). Not adopted.
 Progress: none (streak 4). Tally, counting parts: 1522 held, 1433 failed (2955 registered).
+
+# Three-hundred-and-twelfth set, registered before testing (25 September 2026): decipherment loop 137, 4-sign runs as referent units (two hypotheses)
+
+Streak 4. 4-sign runs (3+ objects in 2+ texts, 67%+ one picture) are added to set 307's units; combined FDR against 100
+picture shuffles (`predict_test312.py`). Not measured before registering.
+
+- **F41** The combined FDR is at or below 10% and coverage rises above 2.28%.
+- **F42** Progress rule: F41 holds (4-sign runs join).
