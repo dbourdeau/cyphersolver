@@ -10330,3 +10330,12 @@ if CB1 fails the tier 3 line is downgraded.
 - **CB2** The same on the lexical cases.
 - **CB3** The model's top-1 is right in 20% or more of the lexical cases.
 - **CB4** Progress rule: none (validation; recorded as failing).
+
+## Results of the two-hundred-and-eighty-fifth set (added after the test; `predict_test285.py`, `results/predict_test285.md`)
+
+Three held; CB4 is the non-progress rule. Against a context baseline built on the same copy-free training lines, the
+model's top-1 wins narrowly: 21 against 19 of the 49 cases (CB1), 10 against 7 of the 29 lexical cases (CB2), and it is
+right in 34% of the lexical cases (CB3). The tier 3 line stands, but most of what the model restores a plain neighbour
+rule restores too: the Indus texts are formulaic enough that the sign between two known neighbours is often the one
+seen there before. The PROGRESS tier 3 cell now gives both baselines. Progress: none (validation; streak 1). Tally,
+counting parts: 1477 held, 1398 failed (2875 registered).

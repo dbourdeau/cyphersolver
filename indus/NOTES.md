@@ -2856,6 +2856,11 @@ Mahadevan's readings, baseline 3. Meets the registered rule narrowly; tier 3's f
 Registered first (4d0bf5df9). 34 new M77-read gaps: top-1 17 (50%), top-5 23, baseline 3; 10 of the 17 hits are
 heading or ending slots. Tier 3 line: 21 of 49 top-1. Progress (streak 0). Tally 1474 held, 1397 failed.
 
+## Two-hundred-and-ninety-ninth pass (25 Sept 2026): decipherment loop 110, tier 3 restorations against a context baseline
+
+Registered first (7d205a01d). The model beats a neighbour rule only narrowly (21 against 19 of 49; lexical 10 against
+7 of 29). The tier 3 line stands with that caveat. No progress (streak 1). Tally 1477 held, 1398 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
