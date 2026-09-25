@@ -27,6 +27,11 @@ class M3(M2):
         self.f4 = defaultdict(Counter)
         self.fpos = defaultdict(Counter)  # set 214: opening sign x position class
         self.f2s = defaultdict(Counter)  # set 217: the line's first two signs
+        self.f5 = defaultdict(Counter)  # set 239: family 5-gram
+        for t in train:
+            s5 = ['<s>'] * 4 + list(t) + ['</s>']
+            for i in range(4, len(s5)):
+                self.f5[tuple(fam(x) for x in s5[i - 4:i])][s5[i]] += 1
         for t in train:
             for w in list(t[1:]) + ['</s>']:
                 self.f2s[tuple(t[:2])][w] += 1
@@ -57,6 +62,10 @@ class M3(M2):
             p3 = (max(c[w] - 0.5, 0) / n3 + 0.5 * len(c) / n3 * r['fbi']) if n3 else r['fbi']
             r['f4k'] = (max(c4[w] - 0.5, 0) / n4 + 0.5 * len(c4) / n4 * p3) if n4 else p3
             r['firstpos'] = self.sm(self.fpos[(s[2], pcls(i - 2, len(t) + 1))], w)
+            ctx5 = tuple(fam(x) for x in (['<s>', '<s>'] + s)[i - 2:i + 2])
+            c5 = self.f5[ctx5]
+            n5 = sum(c5.values())
+            r['f5k'] = (max(c5[w] - 0.5, 0) / n5 + 0.5 * len(c5) / n5 * r['f4k']) if n5 else r['f4k']
             # set 218: position and distance-from-end absolutely discounted (D = 0.5) onto the add-0.5 unigram
             U = self.c['uni']
             pu = (U[w] + 0.5) / (sum(U.values()) + 0.5 * self.V)

@@ -9336,3 +9336,10 @@ gave 4.6772 -> 4.6722 in a design run on the training lines' own split. Model tr
 - **F52** The same A -> B.
 - **F53** SIGN top-1 on the fixed test does not fall.
 - **F54** Progress rule: F51, F52 and F53 hold.
+
+## Results of the two-hundred-and-thirty-ninth set (added after the test; `predict_test239.py`, `results/predict_test239.md`, `famlm.py` f5k)
+
+One held, three failed. The family 5-gram lowers S on the fixed test slightly (4.6354 -> 4.6312; F51) but raises it
+A -> B (5.1927 -> 5.2014; F52 fails), and SIGN top-1 falls by less than 0.05 points (both 39.7% rounded; F53 fails):
+the longer family context overfits. Not adopted. No progress: streak 2. Tally, counting parts: 1415 held, 1288 failed
+(2702 registered).

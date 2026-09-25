@@ -2611,6 +2611,11 @@ streak 0. Tally 1413 held, 1283 failed.
 Registered first (c7c354ef2). Seal phrases qualify only with the one-horned bull (189 vs 176 null 95th); none for other
 animals: seal texts do not name the animal. No progress: streak 1. Tally 1414 held, 1285 failed.
 
+## Two-hundred-and-fifty-third pass (25 Sept 2026): decipherment loop 64, a longer family context
+
+Registered first (d360349aa). Family 5-gram overfits (A -> B worse). Not adopted. No progress: streak 2. Tally 1415
+held, 1288 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
