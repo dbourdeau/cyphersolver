@@ -90,7 +90,7 @@ def word_task(tr, te, keys):
     return top1 / n, top10 / n, base1 / n, base10 / n, n
 
 
-def referent_fixed(DL, k=2, s=0.67, ns=(2, 3)):
+def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8)):
     """Set 233 (RF1-RF2): share of sign tokens in texts whose referent the picture fixes, plus qualifying sign pairs
     (sets 237, 243, 254; part-texts merged). Criteria k objects, share s: set 287 (RX1-RX4) chose k 2, s 0.67 (FDR 9.4%
     against picture shuffles; Linear B control passes); set 288 (RN1-RN4) added 3-sign runs (ns (2, 3), FDR 9.8%;
@@ -100,4 +100,7 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3)):
     A, B, rowsA, recs, F = R.load_all()
     P = X.pools(F, recs)
     u = X.units(P, k, s, ns)
+    if singles:  # set 303 (SS1-SS3): single signs under the stricter criterion (3+ objects, 80%+); combined FDR 9.1%
+        for lab, (clean, both) in P.items():
+            u[(lab, 1)] = X.q_pairs(both, singles[0], singles[1], 1)
     return X.coverage(DL, P, u), X.count(u)

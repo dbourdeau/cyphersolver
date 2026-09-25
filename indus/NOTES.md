@@ -2951,6 +2951,11 @@ Tally 1504 held, 1424 failed.
 
 Registered first (ea450f4ac). Excess +63 against +64. No progress (streak 4). Tally 1504 held, 1427 failed.
 
+## Three-hundred-and-seventeenth pass (25 Sept 2026): decipherment loop 128, single-sign referents under a stricter criterion
+
+Registered first (6046eba06). 17 single signs join (923 elephant, 790 goat, 4 pipal, 17 / 318 / 440 / 503 gharial ...),
+FDR 9.1%; referent line 1.46% -> 1.62%. Progress (streak 0). Tally 1507 held, 1427 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

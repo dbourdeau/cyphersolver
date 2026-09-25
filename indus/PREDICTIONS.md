@@ -10693,3 +10693,12 @@ registering.
 - **SS1** The combined FDR is at or below 10%.
 - **SS2** Coverage rises above 1.46%.
 - **SS3** Progress rule: SS1 and SS2 hold (strict single signs join the referent units).
+
+## Results of the three-hundred-and-third set (added after the test; `predict_test303.py`, `results/predict_test303.md`)
+
+All three held. Single signs under the stricter criterion (3+ objects in 2+ texts, 80%+ one picture) add 17 units
+beside the pairs and 3-sign runs: combined 85 units, shuffle mean 7.8, FDR 9.1% (SS1); coverage 1.46% -> 1.62% (SS2).
+The single signs: on individually made tablets 171, 226, 636, 797, 824, 840 (bull, Bult), 4 (pipal), 790 (goat), 923
+(elephant); on moulded tablets 17, 318, 440, 503 (gharial), 463, 752 (plant), 405 (Bull1), 167 (Mult). They stay local
+to their pool. `prizebench.referent_fixed` adds them. Progress: referent line rises (streak 0). Tally, counting parts:
+1507 held, 1427 failed (2934 registered).
