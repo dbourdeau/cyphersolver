@@ -11018,3 +11018,14 @@ One held, two failed. With 250 candidates SIGN top-1 falls 39.79% -> 39.62% (SC1
 62.35% (SC2): the rare signs it can now reach are won back less often than they displace the right common sign at the
 top. The 150-candidate task stands. Progress: none (streak 6). Tally, counting parts: 1533 held, 1448 failed (2981
 registered).
+
+# Three-hundred-and-twenty-first set, registered before testing (25 September 2026): decipherment loop 146, referent units over picture classes (two hypotheses)
+
+Streak 6. The ICIT picture codes split one referent across codes (Bult, Bull1, Bull, Bull2 are all bulls), which can
+keep a word's evidence below the share criterion. Codes are merged into classes fixed now (bovine: Bult Bull1 Bull Bull2
+Zebu Gaur Buff; plant: Phyt Pipal; others unchanged) and set 312's configuration is re-run with them; combined FDR
+against 100 shuffles of the classes (`predict_test321.py`). Coarser classes also make chance matches easier, which the
+FDR measures. Not measured before registering.
+
+- **PC1** The combined FDR is at or below 10% and coverage rises above 2.29%.
+- **PC2** Progress rule: PC1 holds (the referent line uses the picture classes).
