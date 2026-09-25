@@ -2782,6 +2782,11 @@ held, 1357 failed.
 Registered first (559143fbe). OPEN-PRONE last signs are heads on B only; the sign before 400 is never a head (0 of 16),
 agreeing with LOW-POST. No new role. No progress (streak 3). Tally 1457 held, 1361 failed.
 
+## Two-hundred-and-eighty-fifth pass (25 Sept 2026): decipherment loop 96, two-sign lines
+
+Registered first (e527216d6). Strict-head two-sign frames are already parsed; H-LOW lowers the margins. No progress
+(streak 4). Tally 1457 held, 1365 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

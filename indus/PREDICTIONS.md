@@ -10031,3 +10031,10 @@ registering.
 - **GY2** OPEN-H, the same.
 - **GY3** H-LOW, the same.
 - **GY4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-seventy-first set (added after the test; `predict_test271.py`, `results/predict_test271.md`)
+
+All four failed. HH-STRICT and OPEN-H parse no line the grammar does not already parse: a two-sign line ending in a
+strict head is already a bare name (G2), so the unparsed 'h h' lines end in signs that head names only occasionally.
+H-LOW lowers both margins (A 49.56, B 37.32). The two-sign lines left over have no frame shuffles lack. Progress: none
+(streak 4). Tally, counting parts: 1457 held, 1365 failed (2822 registered).
