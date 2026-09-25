@@ -10230,3 +10230,10 @@ than the edge's share of pair positions (2 of n - 1 per line), on A and on B (`p
 - **ED2** B: the same.
 - **ED3** R rises with the edge-double role.
 - **ED4** Progress rule: ED1-ED3 hold.
+
+## Results of the two-hundred-and-eighty-first set (added after the test; `predict_test281.py`, `results/predict_test281.md`)
+
+Two held, two failed. On A, 51 of 82 doubled non-numeral pairs stand at a line edge (62%) against 43% expected
+(p = 0.0004; ED1); on B, 40 of 72 (56%) against 46% (p = 0.061; ED2 fails). The role would raise R 86.27% -> 86.89%
+(ED3), but without B's replication it is not adopted. The edge preference of doubling is weaker on the M77 additions
+than on A. Progress: none (streak 2). Tally, counting parts: 1462 held, 1397 failed (2859 registered).

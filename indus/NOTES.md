@@ -2834,6 +2834,11 @@ Registered first (433414a1b). The heading's second sign gets the role (B: 83% of
 Registered first (53b0b487f). The class prefix fragments start contexts: S 4.6354 -> 4.6748, A -> B worse, SIGN down.
 No progress (streak 1). Tally 1460 held, 1395 failed.
 
+## Two-hundred-and-ninety-fifth pass (25 Sept 2026): decipherment loop 106, edge doubles as a role
+
+Registered first (28faeee6e). Doubles prefer edges on A (p = 0.0004), not significantly on B (p = 0.061); role not
+adopted. No progress (streak 2). Tally 1462 held, 1397 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
