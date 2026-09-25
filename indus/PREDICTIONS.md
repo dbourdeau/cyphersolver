@@ -11001,3 +11001,13 @@ One held, two failed. 35 tablet referent units carry an animal also shown on sea
 shuffle median of 310 (p = 0.78; SM1 fails). Tablet referents do not travel to seals, in keeping with sets 238, 243,
 291 and 299: the referent labels are local to the tablets that carry them. Progress: none (streak 5). Tally, counting
 parts: 1532 held, 1446 failed (2978 registered).
+
+# Three-hundred-and-twentieth set, registered before testing (25 September 2026): decipherment loop 145, SIGN with 250 candidates (three hypotheses)
+
+Streak 5. The SIGN task ranks the 150 commonest training signs, so a hidden rarer sign can never be ranked first. With
+250 candidates the model can reach them, at the cost of more competitors (`predict_test320.py`). Not measured before
+registering.
+
+- **SC1** SIGN top-1 rises by 0.1 point or more.
+- **SC2** SIGN top-5 does not fall.
+- **SC3** Progress rule: SC1 and SC2 hold (the SIGN task uses 250 candidates).
