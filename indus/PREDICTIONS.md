@@ -11308,3 +11308,15 @@ All four held. Under the site-and-class strata: alpha 0.005 296 units, FDR 8.1%,
 units); 0.01 333, 14.6%; 0.02 398, 22.9%. The rule chooses 0.005 (SL1, SL2); the Linear B control passes (SL3). The
 stratified line rises 12.69% -> 13.64%. `prizebench.referent_fixed` uses alpha 0.005 with the strata. Progress:
 streak 0. Tally, counting parts: 1557 held, 1470 failed (3027 registered).
+
+# Three-hundred-and-thirty-sixth set, registered before testing (25 September 2026): decipherment loop 161, are the seal bull units words for the bull? (three hypotheses)
+
+Streak 0. Most of the referent line is units for the one-horned bull on seals, which may be words for the bull or marks
+of a seal type (a workshop, a class of owner). The two predict differently off the seals: a word for the bull should
+come with bulls on tablets too; a seal-type mark should not. Units are learned on the pictured seals alone (set 334's
+stratified method, alpha 0.005); pictured tablets carrying a Bull1 unit are checked for a bull picture (Bull1, Bult,
+Bull, Bull2) against 1,000 shuffles of the tablet pictures (`predict_test336.py`). Not measured before registering.
+
+- **BW1** Tablets carrying a seal bull unit show a bull more often than chance (p < 0.05).
+- **BW2** At least 10 tablets carry one (enough to test).
+- **BW3** Progress rule: BW1 and BW2 hold (a new finding: the seal bull units behave as words for the bull).
