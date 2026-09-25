@@ -9929,3 +9929,10 @@ before registering.
 - **GW2** HEAD-COUNT, the same.
 - **GW3** CAGE-MID, the same.
 - **GW4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-sixty-sixth set (added after the test; `predict_test266.py`, `results/predict_test266.md`)
+
+All four failed. COUNT-3 lowers both margins (A 49.41, B 37.04): a count takes at most two signs after it, as COUNT
+already says. HEAD-COUNT parses no line the grammar does not already parse (the heading before a count is covered).
+CAGE-MID raises A by 0.10 and B by 0.01 point, below the threshold: the cage opens lines, and rarely stands inside them.
+Progress: none (streak 2). Tally, counting parts: 1450 held, 1351 failed (2801 registered).

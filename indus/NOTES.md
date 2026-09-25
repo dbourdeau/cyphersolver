@@ -2757,6 +2757,11 @@ Registered first (fa7a1a105). Read backwards, real lines almost never parse whil
 32.04 under REVERSED): the grammar is directional and the reading order stands. BARE-2 and ENDP-POST add nothing. No
 progress (streak 1). Tally 1450 held, 1347 failed.
 
+## Two-hundred-and-eightieth pass (25 Sept 2026): decipherment loop 91, three more grammar rules
+
+Registered first (9ac91f604). COUNT-3, HEAD-COUNT and CAGE-MID add nothing (COUNT's two-sign limit stands; the cage
+opens lines). No progress (streak 2). Tally 1450 held, 1351 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
