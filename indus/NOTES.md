@@ -2700,3 +2700,11 @@ pairs fixed on individually made tablets predict 1 of 37 moulded tablets (e.g. 1
 multi-headed animal on moulded ones). The tier-1 referent line (0.84%) therefore counts local labels, text to picture
 within one kind of object, not portable sign meanings; it must not be extended to other objects. Consistent with set
 200 (single signs do not carry pictures to new texts).
+
+## Note (25 Sept 2026): no sign-by-sign graffiti-Indus mapping is published
+
+Rajan and Sivanantham, *Inscribed Potsherds of Tamil Nadu* vol. I (2026, 740 pp., Tamil Digital Library) has the
+graffiti catalogue as photographic plates and a discussion; neither volume nor the 2025 brochure gives a text table
+mapping the 42 base graffiti signs to Indus sign numbers (the brochure shows a dozen illustrative pairs). Testing the
+graffiti against the Indus grammar with mapped signs would need that mapping built by eye, which would be this
+project's guess, so it was not attempted; set 204's order fingerprint stays the only test.
