@@ -9917,3 +9917,15 @@ All four failed. REVERSED (accept a line if it parses read backwards) lowers the
 in reverse. The grammar is strongly directional, which confirms the corpus's reading order, and no direction slips are
 recoverable this way. BARE-2 lowers both margins slightly (49.52, 37.32); ENDP-POST parses no new line (49.64, 37.39).
 Progress: none (streak 1). Tally, counting parts: 1450 held, 1347 failed (2797 registered).
+
+# Two-hundred-and-sixty-sixth set, registered before testing (25 September 2026): decipherment loop 91, three more grammar rules for unparsed lines (four hypotheses)
+
+Streak 1. Same method (sets 261-265), on the lines parse11 leaves unparsed (`predict_test266.py`): COUNT-3 (a numeral
+run, then exactly 3 lexical signs; COUNT allows at most 2), HEAD-COUNT (the heading unit, then a count), CAGE-MID (1+
+lexical signs, a caged sign, then a name: CAGE-OPEN, set 261, with material before the cage). Margins not measured
+before registering.
+
+- **GW1** COUNT-3 raises the margin on A by 0.3 point or more and raises it on B.
+- **GW2** HEAD-COUNT, the same.
+- **GW3** CAGE-MID, the same.
+- **GW4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
