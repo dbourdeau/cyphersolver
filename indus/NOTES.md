@@ -3161,6 +3161,11 @@ Registered first (ce9df0320). Excess +38 against +41. No progress (streak 3). Ta
 Registered first (d4ffb1b9b). Both variants miss the 10% FDR rule narrowly (10.1%, 11.6%). No progress (streak 4).
 Tally 1566 held, 1488 failed.
 
+## Three-hundred-and-fifty-eighth pass (25 Sept 2026): decipherment loop 169, sign units only in the true-duplicate pool
+
+Registered first (e206d70e4). Sign units alone: FDR 10.3% / 19.3%, less coverage. No progress (streak 5). Tally 1567
+held, 1491 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

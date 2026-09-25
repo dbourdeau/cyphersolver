@@ -11491,3 +11491,10 @@ Linear B control (`predict_test344.py`). Not measured before registering.
 - **SO2** Linear B with that alpha recovers 2+ of the 4 control words, none wrong.
 - **SO3** Alpha 0.005 keeps FDR <= 10% without the family units.
 - **SO4** Progress rule: SO1 and SO2 hold (the referent line uses sign units only at that alpha).
+
+## Results of the three-hundred-and-forty-fourth set (added after the test; `predict_test344.py`, `results/predict_test344.md`)
+
+One held, three failed. Without the family units: alpha 0.003 69 units, FDR 10.3%, coverage 2.10%; 0.005 76 units, FDR
+19.3%, coverage 2.41% (SO1, SO3 fail); the Linear B control passes (SO2). The family units are not the noisy part: the
+sign units alone are no cleaner and cover less. The line stays at 2.80%. Progress: none (streak 5). Tally, counting
+parts: 1567 held, 1491 failed (3058 registered).
