@@ -9708,3 +9708,12 @@ head first. Same model (MODEL), same split, scored on the whole line as in `priz
 - **WR2** At least 3 test names never seen whole in training reach the top 10.
 - **WR3** Head-final composition beats the head-first control, both in top-10 hits and in never-seen hits.
 - **WR4** Progress rule: WR1 and WR3 hold (the WORD component then uses composed candidates).
+
+## Results of the two-hundred-and-fifty-sixth set (added after the test; `predict_test256.py`, `results/predict_test256.md`)
+
+All four failed. 2,657 names composed from 39 modifier sequences and 73 heads (each seen 3+ times) join the 895 seen
+bodies; the same 8 of 232 held-out names reach the top 10 with or without them, and with the head-first control (2,762
+candidates) as well. No composed name reaches any top 10 (WR2), so the grammar's head-final shape, which holds as
+structure (sets 176-177), gives the model no purchase on which unseen names occur: the scorer's context around the body
+(heading, ending) is too weak to prefer a rare new body over frequent seen ones. The WORD task stays bounded by
+seen bodies. Progress: none (streak 2). Tally, counting parts: 1437 held, 1325 failed (2762 registered).

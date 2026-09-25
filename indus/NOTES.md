@@ -2702,6 +2702,11 @@ Registered first (002427952). The 14 examined gap signs in CISI vol. 1 are illeg
 predictions could not be checked; the test waits on better images (vol. 2/3 plates or museum photographs). No progress
 (streak 1). Tally 1437 held, 1321 failed.
 
+## Two-hundred-and-seventieth pass (25 Sept 2026): decipherment loop 81, WORD task with composed names
+
+Registered first (85fe4ab70). Composed head-final names never enter the top 10; WORD top-10 unchanged at 3.4% and equal
+to the head-first control. No progress (streak 2). Tally 1437 held, 1325 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
