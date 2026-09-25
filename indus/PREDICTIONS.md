@@ -11420,3 +11420,15 @@ is confirmed. Held-out precision is 5% (TV2 fails): about 2.5 times chance, far 
 mould copies count once, what remains of the referent line is real but weak. (A first run failed on an empty stratum in
 a half-split; a guard was added to predict_test334.units, c81ea3536, with no effect on earlier runs.) Progress: none
 (streak 1). Tally, counting parts: 1564 held, 1481 failed (3045 registered).
+
+# Three-hundred-and-forty-first set, registered before testing (25 September 2026): decipherment loop 166, the picture vault with mould copies counted once (three hypotheses)
+
+Streak 1. Set 336 found mould copies counted as independent objects. The vault (sets 290-298) excluded copies of the
+held-out text from training, but counted each held-out copy as a separate correct prediction and each training copy as
+separate support. Here the moulded tablets with one text become one observation (majority picture), as target and as
+support; hand-made tablets stay separate; set 298's vault otherwise (`predict_test341.py`). A correction: the lower
+excess replaces the vault line; no progress either way. Not measured before registering.
+
+- **VD1** The vault stays above chance with mould copies counted once (p < 0.05).
+- **VD2** Its excess over the shuffle median is at least set 298's +64.
+- **VD3** Progress rule: none (a correction; recorded as failing).
