@@ -10237,3 +10237,19 @@ Two held, two failed. On A, 51 of 82 doubled non-numeral pairs stand at a line e
 (p = 0.0004; ED1); on B, 40 of 72 (56%) against 46% (p = 0.061; ED2 fails). The role would raise R 86.27% -> 86.89%
 (ED3), but without B's replication it is not adopted. The edge preference of doubling is weaker on the M77 additions
 than on A. Progress: none (streak 2). Tally, counting parts: 1462 held, 1397 failed (2859 registered).
+
+# Two-hundred-and-eighty-second set, registered before testing (25 September 2026): decipherment loop 107, the frozen restorations against Mahadevan 1977 (four hypotheses)
+
+Streak 2. Set 255's photographic check was not feasible and set 258 found only two gaps read by Parpola. Mahadevan's
+1977 concordance (M77, in the outside-data folder, mapped to ICIT through data/icit_m77_map.tsv) is a transcription of
+its own: `m77_gaps.py` aligns each of the 79 gap lines with the M77 lines of the same length whose other signs agree (at
+most one mismatch in lines of 5+) and takes M77's sign at the gap when all aligned lines give the same legible sign
+(`results/restoration_m77.tsv`: 23 read, 12 conflicting, 3 illegible in M77 too, 41 unmatched). Short lines can match
+another object with the same frame, so only gap lines of 4+ signs count (about 15). The M77 readings were looked at
+before registering; the frozen predictions (002427952) are still unread. Caveats: ICIT and M77 are not wholly
+independent transcriptions, and two worklist objects share one text. Criteria as set 255 (`predict_test282.py`).
+
+- **MR1** Top-1 predictions match the M77 reading in 25% or more of the cases (at least 10 cases).
+- **MR2** Top-5 predictions contain it in 50% or more.
+- **MR3** Top-1 beats the frequency baseline (the commonest sign) on the same cases.
+- **MR4** Progress rule: MR1 and MR3 hold (tier 3 gains its first line, 'blind restorations confirmed against M77').
