@@ -9487,3 +9487,15 @@ shuffle median of 0 (95th percentile 1; OF1): four on tags / sealings (2 48, 705
 (32 999); only one for pottery (OF2 fails). Caveat: tags carry seal impressions, so tag-only phrases may be the texts
 of seals not recovered rather than words for the tag's function. Reported beside the tier-1 V line, not added to it.
 Progress by the registered rule: streak 0. Tally, counting parts: 1423 held, 1301 failed (2724 registered).
+
+# Two-hundred-and-forty-seventh set, registered before testing (25 September 2026): decipherment loop 72, phrases tied to a site: toponym candidates (three hypotheses)
+
+Streak 0. A place name or local title would recur at one site. The picture-referent method (validated on Linear B)
+with the find site as the 'picture': units = adjacent sign pairs on 3+ objects in 2+ distinct texts (F, all inscribed
+objects); a pair qualifies for a site if 80%+ of its objects come from it. Mohenjo-daro and Harappa are the default
+sites; the question is the others (Dholavira, Lothal, Kalibangan, Chanhu-daro, ...). Null: sites shuffled among
+objects, 1,000 times.
+
+- **TS1** More pairs qualify for sites other than Mohenjo-daro and Harappa than in 95% of shuffles.
+- **TS2** Qualifying pairs are found for at least two different minority sites.
+- **TS3** Progress rule: TS1 holds (site-bound phrases: toponym or local-title candidates, checkable by find site).
