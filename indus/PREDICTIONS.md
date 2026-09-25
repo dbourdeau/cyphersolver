@@ -10993,3 +10993,11 @@ the seal animals) (`predict_test319.py`). Not measured before registering.
 - **SM1** Seals carrying a tablet referent unit show its animal more often than chance (p < 0.05).
 - **SM2** At least one matched unit names an animal other than the default bull.
 - **SM3** Progress rule: SM1 holds (a new finding: referents travel from tablets to seals).
+
+## Results of the three-hundred-and-nineteenth set (added after the test; `predict_test319.py`, `results/predict_test319.md`)
+
+One held, two failed. 35 tablet referent units carry an animal also shown on seals (bull, elephant, gaur, goat, rhino;
+11 not the bull; SM2); they occur 491 times in seal texts, and 304 of those seals show the unit's animal, against a
+shuffle median of 310 (p = 0.78; SM1 fails). Tablet referents do not travel to seals, in keeping with sets 238, 243,
+291 and 299: the referent labels are local to the tablets that carry them. Progress: none (streak 5). Tally, counting
+parts: 1532 held, 1446 failed (2978 registered).

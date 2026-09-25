@@ -3033,6 +3033,11 @@ Tally 1531 held, 1441 failed.
 Registered first (761c45a7e). 90 is not a body-closing marker as 400 is. No progress (streak 4). Tally 1531 held, 1444
 failed.
 
+## Three-hundred-and-thirty-third pass (25 Sept 2026): decipherment loop 144, tablet referents on seals
+
+Registered first (1ce5d9dcb). No transfer to seals (304 vs 310 expected, p = 0.78). No progress (streak 5). Tally 1532
+held, 1446 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
