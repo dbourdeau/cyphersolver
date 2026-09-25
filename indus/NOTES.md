@@ -2712,6 +2712,12 @@ to the head-first control. No progress (streak 2). Tally 1437 held, 1325 failed.
 Registered first (96dc72106). The infill frame p(sign | left, right) adds nothing beyond the two-direction model: top-1
 39.9% -> 39.4%, top-5 61.8% -> 62.2%. No progress (streak 3). Tally 1439 held, 1327 failed.
 
+## Two-hundred-and-seventy-second pass (25 Sept 2026): decipherment loop 83, frozen restorations against Parpola's transcription
+
+Registered first (e5a7e4184), readings looked up before, predictions opened after. Parpola reads 2 of the 79 gaps (M-62
+= 700, M-61 = 81/82/958 uncertain); both miss the frozen top 5. Two cases only; consistency evidence against, not a
+verdict. No progress (streak 4). Tally 1439 held, 1330 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

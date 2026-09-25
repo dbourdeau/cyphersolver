@@ -9752,3 +9752,12 @@ in 002427952) are still unread (`predict_test258.py`).
 - **RC1** M-62: ICIT 700 is in the top 5.
 - **RC2** M-61: one of ICIT 81 / 82 / 958 is in the top 5.
 - **RC3** Progress rule: not applicable; two cases are consistency evidence only (set 255 required 10). Recorded as failing.
+
+## Results of the two-hundred-and-fifty-eighth set (added after the test; `predict_test258.py`, `results/predict_test258.md`)
+
+All three failed. Opened for the first time, the frozen predictions miss both of Parpola's readings: M-62's gap is 700
+in CISI (certain), predicted 840 60 2 233 3; M-61's is 81 / 82 / 958 (uncertain), predicted 585 923 740 798 176. Two
+cases prove little either way (at the SIGN task's 62% top-5, missing both happens about 1 time in 7), but the only outside
+check the restoration predictions have met is a miss. The M-62 line also shows how the transcriptions differ elsewhere
+(ICIT 551 ... 32, Parpola 550 ... 2): gap filling inherits transcription noise. Progress: none (streak 4). Tally,
+counting parts: 1439 held, 1330 failed (2769 registered).
