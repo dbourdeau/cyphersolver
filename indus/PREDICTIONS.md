@@ -10896,3 +10896,10 @@ compared with M77, and with set 285's context baseline applied to each gap (`pre
 - **MT1** The model is right on 25% or more of the gap signs (10+ signs).
 - **MT2** The model beats the context baseline.
 - **MT3** Progress rule: MT1 and MT2 hold (the tier 3 restoration line gains these cases).
+
+## Results of the three-hundred-and-fourteenth set (added after the test; `predict_test314.py`, `results/predict_test314.md`)
+
+All three held. On 13 lines with two illegible signs read by M77 (26 signs), the copy-free model chooses both signs
+jointly and matches M77 on 8 (31%; MT1): K-43 60, M-1077 415, M-1386 760 and 740, M-1498 100, H-1103 892, H-779 400, and
+740 in the last line; the context baseline matches 4 (MT2). The tier 3 restoration line now counts 29 of 75 signs (39%)
+against a context baseline of 23. Progress: streak 0. Tally, counting parts: 1527 held, 1436 failed (2963 registered).

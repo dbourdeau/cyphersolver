@@ -3007,6 +3007,11 @@ held, 1433 failed.
 Registered first (5b35684e0). No link to the pre-ending slot (p = 0.12, 0.38; opposite directions). No progress
 (streak 1). Tally 1524 held, 1436 failed.
 
+## Three-hundred-and-twenty-eighth pass (25 Sept 2026): decipherment loop 139, restoration of two-gap lines
+
+Registered first (73b6d0a64). 8 of 26 gap signs right against a context baseline of 4; restoration line 29 of 75
+against 23. Progress (streak 0). Tally 1527 held, 1436 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
