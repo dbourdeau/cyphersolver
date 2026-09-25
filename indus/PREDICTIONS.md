@@ -8956,3 +8956,15 @@ All four held. EDGE-DOUBLE (a doubled non-numeral sign at either edge, the rest 
 shuffled lines on B from 35.13 to 35.92 points (ED1), real B coverage more than shuffled (+1.04 against +0.25; ED2),
 and the margin on F's extra lines from 17.92 to 18.43 (ED3). Adopted in the metric's G margin. Progress: streak 0.
 Tally, counting parts: 1376 held, 1258 failed (2634 registered).
+
+# Two-hundred-and-twenty-second set, registered before testing (24 September 2026): decipherment loop 47, a caged sign with its marker (four hypotheses)
+
+Metric after loop 46: G margin A 47.2 / B 35.9; streak 0. Set 184 found caged signs replace the ending; a caged (or
+closer) sign followed only by 400 / 90 is then an ending with its post-ending marker, a line the grammar still
+rejects ('226 400', '236 400'). Rule CAGED-POST. Design on A: margin 51.16 -> 51.28 (a sign + final long stroke
+rule was also tried in design and lowered the margin; not registered).
+
+- **CP1** The rule raises the B margin (any rise).
+- **CP2** It raises real B coverage more than shuffled.
+- **CP3** It raises the F margin.
+- **CP4** Progress rule: CP1 and CP2 hold.
