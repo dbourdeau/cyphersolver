@@ -11358,3 +11358,18 @@ per-text binomial at alpha 0.005 may be underpowered; (2) collapsing every copy 
 (seals carved separately, copper tablets written one by one); only mould copies and seal impressions are true
 duplicates. Next set: collapse only those. Progress: none (streak 2). Tally, counting parts: 1557 held, 1477 failed
 (3034 registered).
+
+# Three-hundred-and-thirty-eighth set, registered before testing (25 September 2026): decipherment loop 163, the referent pool with true duplicates collapsed (four hypotheses)
+
+Streak 2. Set 337 collapsed every copy of a text, which also merges independent evidence: seals carved one by one and
+tablets written by hand with the same text. Only objects from the same mould (moulded tablets, TAB:B) and seal
+impressions (tags) are true duplicates. Here those are collapsed by text; seals, copper and incised tablets count as
+separate objects; set 334's stratified binomial at alpha 0.005, FDR over the collapsed observations
+(`predict_test338.py`). Registered now: the figure replaces set 337's 1.09% if its FDR is at or below 10% (otherwise
+1.09% stands); not counted as progress, since the counting unit is re-decided after set 337. Not measured before
+registering.
+
+- **MC1** The FDR is at or below 10%.
+- **MC2** Coverage is above 1.09%.
+- **MC3** Without Bull1 units, above 0.99%.
+- **MC4** Progress rule: none (recorded as failing).
