@@ -26,6 +26,10 @@ class M3(M2):
         self.fw = defaultdict(Counter)
         self.f4 = defaultdict(Counter)
         self.fpos = defaultdict(Counter)  # set 214: opening sign x position class
+        self.f2s = defaultdict(Counter)  # set 217: the line's first two signs
+        for t in train:
+            for w in list(t[1:]) + ['</s>']:
+                self.f2s[tuple(t[:2])][w] += 1
         for t in train:
             s = ['<s>', '<s>'] + list(t) + ['</s>']
             for i in range(2, len(s)):
@@ -53,6 +57,13 @@ class M3(M2):
             p3 = (max(c[w] - 0.5, 0) / n3 + 0.5 * len(c) / n3 * r['fbi']) if n3 else r['fbi']
             r['f4k'] = (max(c4[w] - 0.5, 0) / n4 + 0.5 * len(c4) / n4 * p3) if n4 else p3
             r['firstpos'] = self.sm(self.fpos[(s[2], pcls(i - 2, len(t) + 1))], w)
+            if i == 2:
+                r['first2'] = r['first']
+            else:
+                c2 = self.f2s[tuple(t[:2])]
+                n2 = sum(c2.values())
+                l2 = n2 / (n2 + 3)
+                r['first2'] = l2 * c2[w] / max(1, n2) + (1 - l2) * r['first']
             # set 211: the sign trigram absolutely discounted, D = 0.75, onto the Kneser-Ney bigram
             t3 = self.tri[(s[i - 2], s[i - 1])]
             nt = sum(t3.values())

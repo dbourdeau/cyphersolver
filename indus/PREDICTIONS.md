@@ -8860,3 +8860,11 @@ All four held. The LABEL-COUNT rule (one of A's ten commonest pre-count signs + 
 shuffled lines on B from 34.75 to 35.13 points (GL1), real B coverage more than shuffled (+0.75 against +0.37; GL2),
 and the margin on F's extra lines from 17.34 to 17.92 (GL3). Adopted in the metric's G margin. Progress: streak 0.
 Tally, counting parts: 1364 held, 1249 failed (2613 registered).
+
+## Results of the two-hundred-and-seventeenth set (added after the test; `predict_test217.py`, `results/predict_test217.md`, `famlm.py` first2)
+
+Two held, two failed. Conditioning on the line's first two signs lowers S on the fixed test from 4.6097 to 4.5725
+(F21) and A -> B from 5.1544 to 5.1338 (F22), but SIGN top-1 falls from 39.8% to 38.5% (F23 fails): when the hidden
+sign is one of the first two, the component conditions on the candidate itself and rewards candidates that make
+familiar openings rather than the right sign. By the rule registered for this loop (SIGN must not fall) it is not
+adopted: no progress, streak 1. Tally, counting parts: 1366 held, 1251 failed (2617 registered).

@@ -2496,6 +2496,11 @@ Registered first (533d75f83). The pre-count slot is restricted in A and B (p = 0
 Registered first (38a3af4fe). LABEL-COUNT raises the G margin on B (34.75 -> 35.13) and F (17.34 -> 17.92), real more
 than shuffled. Progress: streak 0. Tally 1364 held, 1249 failed.
 
+## Two-hundred-and-thirty-first pass (24 Sept 2026): decipherment loop 42, the first two signs as context
+
+Registered first (7c1d0115b). first2 lowers S (4.610 -> 4.573, A -> B too) but SIGN falls (39.8% -> 38.5%): not
+adopted. No progress: streak 1. Tally 1366 held, 1251 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
