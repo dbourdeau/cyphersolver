@@ -10125,3 +10125,11 @@ tokens of the same count lines (`predict_test276.py`). Not measured before regis
 - **CC1** A: the slot's entropy is below 95% of the random samples.
 - **CC2** B: the same.
 - **CC3** Progress rule: CC1 and CC2 hold; `roles` then gives X the role 'count complement'.
+
+## Results of the two-hundred-and-seventy-sixth set (added after the test; `predict_test276.py`, `results/predict_test276.md`)
+
+All three failed. The sign after the counted sign has an entropy of 5.82 bits on A (149 tokens) against a null median of
+5.95 (p = 0.16) and 5.26 on B (112 tokens) against 5.39 (p = 0.20): slightly below chance in both, not significantly.
+Unlike the slot before a count (set 215), the slot after the counted sign is open: whatever follows a count is the start
+of the next unit, not a qualifier of the count. No new role. Progress: none (streak 9). Tally, counting parts: 1458
+held, 1381 failed (2839 registered).
