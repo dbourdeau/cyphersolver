@@ -10171,3 +10171,17 @@ All three failed. Averaging the two-direction SIGN scores of the decade-family a
 top-1 (39.8% -> 39.5%) and top-5 (61.9% -> 61.7%): the two family maps carry the same information (as for S, set 208),
 and the description families are the weaker of the two. Progress: none (streak 1 of the new run). Tally, counting
 parts: 1458 held, 1388 failed (2846 registered).
+
+# Two-hundred-and-seventy-ninth set, registered before testing (25 September 2026): decipherment loop 104, the heading unit (five hypotheses)
+
+Streak 1. The heading (817 / 820 / 861 + 2 / 60 / 1, set 161) is a two-sign unit, but `progress.roles` gives the role
+only to its first sign (the second is counted as a numeral when it is 2 or 1, and gets nothing when it is 60). And in
+HEADING-BODY lines (heading + lexical body without an ending, set 263) the last sign may be a name head, as in names.
+(`predict_test279.py`; `progress.roles(head2=True)` gives the second heading sign the role 'heading' where no earlier
+role applies.) Not measured before registering.
+
+- **HU1** B: 817 / 820 / 861 opening a line of 3+ signs are followed by 2 / 60 / 1 in 80%+.
+- **HU2** A HEADING-BODY lines: the last sign is head-class more often than the earlier body signs (Fisher one-sided, p < 0.05).
+- **HU3** B: the same.
+- **HU4** Progress rule (unit): HU1 holds and R rises with the second heading sign given its role.
+- **HU5** Progress rule (head): HU2 and HU3 hold; the last sign then gets the role 'name head'.
