@@ -11230,3 +11230,13 @@ matches are bull units on bull seals, right about as often as the bull's base ra
 pictures match 958 of 8,946 (11%) against a median of 242 (p = 0.005; CV2): four times chance, but below set 326's 14%
 (CV3 fails). Both figures of the line stand, confirmed; their precision is low. Progress: none (streak 1). Tally,
 counting parts: 1547 held, 1464 failed (3011 registered).
+
+# Three-hundred-and-thirty-second set, registered before testing (25 September 2026): decipherment loop 157, the combined pool at intermediate alphas (four hypotheses)
+
+Streak 1. Set 330 chose alpha 0.002 (FDR 7.3%); 0.005 gave 14.3%. Intermediate alphas 0.0025, 0.003 and 0.004 under the
+same rule (FDR <= 10%, largest coverage) and Linear B check (`predict_test332.py`). Not measured before registering.
+
+- **SF1** An intermediate alpha with FDR <= 10% gives coverage above 23.52%.
+- **SF2** Without Bull1 units it covers more than 7.53%.
+- **SF3** Linear B with it recovers 2+ of the 4 control words, none wrong.
+- **SF4** Progress rule: SF1 and SF3 hold (the referent line uses that alpha).
