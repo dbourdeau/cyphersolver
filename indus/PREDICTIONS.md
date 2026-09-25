@@ -10926,3 +10926,14 @@ picture: 752, "u with decorated branching at top", with plants (Phyt) on moulded
 triangles and a tree (407), the goat sign 790 a leaf or diamond. As loop 77 found for pictures and sign shapes in
 general, the referent signs do not depict their referents: the tablets write a word for the pictured thing, not its
 drawing. No new anchor. Progress: none (streak 1). Tally, counting parts: 1528 held, 1438 failed (2966 registered).
+
+# Three-hundred-and-sixteenth set, registered before testing (25 September 2026): decipherment loop 141, one word per referent (three hypotheses)
+
+Streak 1. The referent signs are not drawings of their pictures (loop 77, set 315); if they write a word for the
+pictured thing, the several units tied to one picture are overlapping pieces of that word and share signs. Within each
+pool, the share of unit pairs sharing a sign among same-picture pairs minus that among different-picture pairs, against
+1,000 shuffles of the unit labels (`predict_test316.py`). Not measured before registering.
+
+- **OW1** Individually made tablets: same-picture units share signs more than chance (p < 0.05).
+- **OW2** Moulded tablets: the same.
+- **OW3** Progress rule: OW1 and OW2 hold (a new finding, replicated across pools).
