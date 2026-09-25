@@ -9667,3 +9667,20 @@ across a gap) leaves the referent pairs far above their shuffle nulls in both po
 (0.88% -> 0.96%) marked pairs on any tablet line; computed as the bench does it (each pool's pairs on its own tablets,
 'as before' in RD3), the tier-1 referent line rises from 0.76% to 0.79% (27 texts and pairs). Progress: streak 0.
 Tally, counting parts: 1437 held, 1317 failed (2754 registered).
+
+# Two-hundred-and-fifty-fifth set, registered before testing (25 September 2026): decipherment loop 80, blind restoration of illegible signs checked on the CISI photographs (four hypotheses)
+
+Streak 0. A check against outside evidence that needs no language: the SIGN model predicts each illegible sign (ICIT
+000) that stands alone inside a line with intact edges and legible neighbours (79 cases), and the predictions are
+checked on Parpola's photographs (CISI vol. 1, Collections in India, 1987; the owner's scan). Protocol: (1) the
+predictions (top 5 of the 150 commonest clean signs, two-direction model, trained on all clean distinct lines) are
+written to `results/restoration_predictions.tsv` by `restore.py` without being displayed, and committed, so their hash
+fixes them before any photograph is read; (2) the photographs are read for the gap sign and recorded in
+`results/restoration_readings.tsv` (ICIT number, or 'illegible') without the predictions in view; (3) a script compares
+them. Only objects whose photograph is in CISI vol. 1 and whose gap sign is legible on it count.
+
+- **RS1** Top-1 predictions match the photo reading in 25% or more of the readable cases (at least 10 readable).
+- **RS2** Top-5 predictions contain the photo reading in 50% or more.
+- **RS3** Top-1 beats the frequency baseline (the commonest clean sign) on the same cases.
+- **RS4** Progress rule: RS1 and RS3 hold (frozen predictions confirmed by outside evidence; tier 3 gains its first
+  line, 'blind restorations confirmed').
