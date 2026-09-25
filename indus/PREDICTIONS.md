@@ -10721,3 +10721,12 @@ All three held. Under the stricter criterion, skip-pairs added to set 303's unit
 (SF2). The registered rule takes the larger coverage: family units join (`prizebench.referent_fixed`), and the referent
 line rises 1.62% -> 1.80%. Skip-pairs and family units together were not tested. Progress: streak 0. Tally, counting
 parts: 1510 held, 1427 failed (2937 registered).
+
+# Three-hundred-and-fifth set, registered before testing (25 September 2026): decipherment loop 130, strict skip-pairs with the family units (two hypotheses)
+
+Streak 0. Set 304 found strict skip-pairs and strict family units each passing and adopted the family units. Here the
+strict skip-pairs are added to them; combined FDR against 100 picture shuffles (`predict_test305.py`). Not measured
+before registering.
+
+- **SB1** The combined FDR is at or below 10% and coverage rises above 1.80%.
+- **SB2** Progress rule: SB1 holds (strict skip-pairs join the referent units).
