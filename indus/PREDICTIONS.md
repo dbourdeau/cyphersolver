@@ -10133,3 +10133,15 @@ All three failed. The sign after the counted sign has an entropy of 5.82 bits on
 Unlike the slot before a count (set 215), the slot after the counted sign is open: whatever follows a count is the start
 of the next unit, not a qualifier of the count. No new role. Progress: none (streak 9). Tally, counting parts: 1458
 held, 1381 failed (2839 registered).
+
+# Two-hundred-and-seventy-seventh set, registered before testing (25 September 2026): decipherment loop 102, final markers opening a line (four hypotheses)
+
+Streak 9. CAGE-OPEN (set 261: a caged sign opens a line before a name) is the one opening frame that raised the margin.
+If other final markers can likewise stand as a unit before a name, lines open with them too (`predict_test277.py`):
+CLOSER-OPEN (a closer sign, then a name), POST-OPEN (400 / 90, then a name), ENDING-OPEN (740 / 520, then a name).
+Margins not measured before registering.
+
+- **GO1** CLOSER-OPEN raises the margin on A by 0.3 point or more and raises it on B.
+- **GO2** POST-OPEN, the same.
+- **GO3** ENDING-OPEN, the same.
+- **GO4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
