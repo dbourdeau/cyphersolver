@@ -2845,6 +2845,12 @@ Registered first (8988bb035). M77 reads 23 of the 79 gaps; on 15 lines of 4+ sig
 completed lines were already training lines (circular). Clean: 4 of 7 top-1, below the 10-case minimum. Withdrawn; no
 progress (streak 3). Lesson: exclude gaps whose completion is a training line.
 
+## Two-hundred-and-ninety-seventh pass (25 Sept 2026): decipherment loop 108, M77 restoration check without copies
+
+Registered first (1a3c2bbfd). Model retrained without copies of each text: top-1 4 of 15 (27%), top-5 9 of 15 against
+Mahadevan's readings, baseline 3. Meets the registered rule narrowly; tier 3's first (sign-level) line. Progress
+(streak 0). Tally 1470 held, 1397 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

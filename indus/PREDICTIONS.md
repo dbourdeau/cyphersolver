@@ -10280,3 +10280,14 @@ known; these new predictions are not. Criteria as set 255.
 - **MC2** Top-5 contains it in 50% or more.
 - **MC3** Top-1 beats the frequency baseline (the commonest sign).
 - **MC4** Progress rule: MC1 and MC3 hold (tier 3 gains its first line, 'blind restorations confirmed against M77, copies excluded').
+
+## Results of the two-hundred-and-eighty-third set (added after the test; `predict_test283.py`, `results/predict_test283.md`)
+
+All four held, narrowly. With every copy of the gap line removed from training (0-17 lines per case), the model's top-1
+restoration equals Mahadevan's 1977 reading in 4 of 15 cases (27%; MC1: H-1816 717, M-168 741, M-636 861, H-1035 255),
+its top 5 contain it in 9 (60%; MC2), and the frequency baseline (740) gets 3 (MC3). Caveats: the margin over the
+baseline is one case; M-2109 and M-2111 carry one text (14 distinct texts: 4 against 2); ICIT and M77 are not wholly
+independent transcriptions; and M77's reading is of this object only as far as the alignment identifies it (lines of
+4+ signs). What it shows: a model that never saw the text restores an illegible sign as another scholar read it in a
+quarter of cases, from context alone. Tier 3 gets a sign-level line (not meaning). Progress: streak 0. Tally, counting
+parts: 1470 held, 1397 failed (2867 registered).
