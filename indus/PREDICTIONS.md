@@ -9213,3 +9213,20 @@ with one picture on 80%+ of them; no shuffle of the pictures gives as many (p = 
 shared (the elephant variants, three bull texts; RF3 fails). Their referent is fixed by the picture, which is outside
 evidence, though they are not read. Tier 1 gains a line beside the strict V: referent fixed by the picture, 0.38% of
 sign tokens (11 texts). Progress: streak 0. Tally, counting parts: 1405 held, 1276 failed (2681 registered).
+
+# Two-hundred-and-thirty-fourth set, registered before testing (25 September 2026): decipherment loop 59, a Linear B control for the picture-referent method (four hypotheses)
+
+Streak 0. Set 233's method (a unit written with the same picture on 80%+ of its 3+ occurrences has its referent fixed
+by the picture) needs a positive control (tier 2). In Linear B the pictures are the ideograms and the known answers are
+the commodity words. Units = syllabic word types; picture of a line = its first non-measure ideogram (measure and
+fraction signs T, M, Z, S, N, L, P, O, X, V, Q and syllabic adjuncts of one or two letters left out); a word qualifies
+if it occurs in 3+ lines with an ideogram and 80%+ of them carry one ideogram. Known pairs, fixed here and not looked
+at before (a few others, ka-ko / AES, ti-ri-po / *201VAS, si-to / GRA, e-ra-wo / OLE, ku-ru-so / AUR, ku-pa-ro, me-ri,
+were glanced at in an earlier design check and are excluded): a-mo / ROTA (wheels), i-qo / EQU (horse), pa-ka-na /
+*233 (swords), e-ke-a / *254 (spears), sa-sa-ma / SA (sesame), ko-ri-ja-do-no / KO (coriander), i-qi-ja / BIG
+(chariot).
+
+- **LR1** The method recovers 3 or more of the 7 known pairs (the word qualifies with its known ideogram).
+- **LR2** It qualifies more word types than with ideograms shuffled among lines (95% of 1,000 shuffles).
+- **LR3** No known word qualifies with a wrong ideogram.
+- **LR4** Progress rule: LR1 and LR2 hold (the method passes a known-answer control: gate 3 of 6).
