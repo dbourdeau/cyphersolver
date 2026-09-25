@@ -2767,6 +2767,11 @@ opens lines). No progress (streak 2). Tally 1450 held, 1351 failed.
 Registered first (e4dc07beb). End-prone closers, openers and line-final 400 replicate on B (53%, 61%, 89%); R 84.2% ->
 86.1%. Progress (streak 0). Tally 1454 held, 1351 failed.
 
+## Two-hundred-and-eighty-second pass (25 Sept 2026): decipherment loop 93, grammar prior for the SIGN task
+
+Registered first (59ba4f3a2). The grammar prior adds nothing at the top rank (SIGN top-1 39.9% -> 39.8%, top-5 61.8% ->
+62.1%). No progress (streak 1). Tally 1456 held, 1353 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

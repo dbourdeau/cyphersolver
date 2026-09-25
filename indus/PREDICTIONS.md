@@ -9969,3 +9969,12 @@ the fixed test lines (`predict_test268.py`). Not measured before registering.
 - **GP2** SIGN top-5 does not fall.
 - **GP3** The development split gives the grammar prior a positive weight (alpha > 0).
 - **GP4** Progress rule: GP1 and GP2 hold (the SIGN task then uses the grammar prior).
+
+## Results of the two-hundred-and-sixty-eighth set (added after the test; `predict_test268.py`, `results/predict_test268.md`)
+
+Two held, two failed. The development split takes the largest grammar-prior weight offered (alpha 3: top-1 40.7% ->
+41.0%; GP3), but on the 2,340 test signs top-1 moves 39.9% -> 39.8% (GP1 fails) and top-5 61.8% -> 62.1% (GP2 holds).
+The grammar's frames are edge and ending constraints the two-direction model already encodes (its position and end
+components); knowing that a line parses adds nothing at the top rank. Third SIGN component in a row to fail (sets 257,
+259, 268): the SIGN task is near what these data give a local model. (A first run ended without writing its report;
+rerun unchanged.) Progress: none (streak 1). Tally, counting parts: 1456 held, 1353 failed (2809 registered).

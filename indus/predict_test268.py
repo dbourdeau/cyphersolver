@@ -75,7 +75,7 @@ def main():
     rd.rec('GP1', 'SIGN top-1 rises by 0.5 point or more', '%.1f%% -> %.1f%%' % (100 * b1, 100 * n1), n1 - b1 >= 0.005)
     rd.rec('GP2', 'SIGN top-5 does not fall', '%.1f%% -> %.1f%%' % (100 * b5, 100 * n5), n5 >= b5)
     rd.rec('GP3', 'the development split gives the grammar prior weight (alpha > 0)', 'alpha %.2f' % best, best > 0)
-    rd.rec('GP4', 'progress rule: IF1 and IF2', 'SIGN %.1f%% / %.1f%%' % (100 * n1, 100 * n5), n1 - b1 >= 0.005 and n5 >= b5)
+    rd.rec('GP4', 'progress rule: GP1 and GP2', 'SIGN %.1f%% / %.1f%%' % (100 * n1, 100 * n5), n1 - b1 >= 0.005 and n5 >= b5)
     rd.finish()
 
 
