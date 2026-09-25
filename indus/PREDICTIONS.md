@@ -10815,3 +10815,14 @@ Set 308's single split was an unlucky draw. The 2.28% referent line (C7) is rest
 precision: about a quarter of held-out matches carry the unit's picture, against the 67%+ purity required in sample.
 The units are real associations, not reliable word meanings. Progress: none (correction; streak 2). Tally, counting
 parts: 1519 held, 1430 failed (2949 registered).
+
+# Three-hundred-and-tenth set, registered before testing (25 September 2026): decipherment loop 135, split-half precision of the referent method on Linear B (three hypotheses)
+
+Streak 2. Set 309 found the Indus referent units' held-out precision low (C0 44%, C1 28%, C7 23%). Is that low for the
+method? The same split-half check on Linear B (DAMOS lines, words and ideograms; five half-splits of the distinct word
+lists, both directions) at C0-like (3+ lines, 80%+) and C1-like (2+, 67%+) criteria gives the yardstick
+(`predict_test310.py`). No progress either way. Not measured before registering.
+
+- **LP1** Linear B's C0-like held-out precision is above the Indus C0 figure (44%).
+- **LP2** Linear B's C1-like precision is above the Indus C1 figure (28%).
+- **LP3** Progress rule: none (a yardstick; recorded as failing).
