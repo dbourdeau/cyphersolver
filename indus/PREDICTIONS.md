@@ -9140,3 +9140,10 @@ one-sided Fisher):
 - **FT1** On seals, fish-headed names take 520 more often than other identified-head names (p < 0.05).
 - **FT2** On tablets, the same (p < 0.05).
 - **FT3** Progress rule: FT1 and FT2 hold (the class signal is shared by both object types: tier 4).
+
+## Results of the two-hundred-and-thirtieth set (added after the test; `predict_test230.py`, `results/predict_test230.md`)
+
+All three held. Fish-headed names take 520 far more often than other identified-head names on seals (60 of 120
+against 4 of 156; FT1) and on tablets (14 of 33 against 1 of 47; FT2). With set 196 (sites, periods): the class
+signal holds across places, periods and object types. Progress: streak 0. Tally, counting parts: 1399 held, 1271
+failed (2670 registered).

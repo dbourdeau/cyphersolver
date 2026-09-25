@@ -2563,6 +2563,11 @@ failed.
 Registered first (071b2b5ad). Cage and inner strokes behave identically at Mohenjo-daro and Harappa (caged 0/52, 0/16
 before 740/520; stroked jars final 2/118, 4/43 vs plain 87-89%). Progress: streak 0. Tally 1396 held, 1271 failed.
 
+## Two-hundred-and-forty-fourth pass (24 Sept 2026): decipherment loop 55, the class signal on seals and tablets
+
+Registered first (d75f0a9ed). Fish names take 520 on seals (60/120 vs 4/156) and tablets (14/33 vs 1/47). Progress:
+streak 0. Tally 1399 held, 1271 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
