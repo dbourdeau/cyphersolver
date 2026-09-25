@@ -55,7 +55,7 @@ def units(clean, both):
     sm = defaultdict(Counter)
     for t, m, s in both:
         sm[s][m] += 1
-    rate = lambda m, s: sm[s][m] / sites[s]
+    rate = lambda m, s: sm[s][m] / sites[s] if sites[s] else 0.0  # guard added in set 340 (empty stratum in a half-split); no effect on earlier runs
     u = {'texts': {}}
     g = defaultdict(list)
     for t, m, s in clean:
