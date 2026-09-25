@@ -10304,3 +10304,15 @@ Same procedure as set 283: model retrained without copies of each gap line, top 
 - **MN2** Top-5 contains it in 50% or more.
 - **MN3** Top-1 beats the frequency baseline.
 - **MN4** Progress rule: MN1 and MN3 hold on the new cases (the tier 3 line then counts both samples).
+
+## Results of the two-hundred-and-eighty-fourth set (added after the test; `predict_test284.py`, `results/predict_test284.md`, `results/restoration_m77_new.tsv`)
+
+All four held. On 34 new gaps (33 distinct texts) read by M77 and not used in set 283, the copy-free model's top-1
+equals M77's sign in 17 (50%; MN1), its top 5 contain it in 23 (68%; MN2), the frequency baseline (740) in 3 (MN3).
+Most models lost one copy (the other transcription of the same object); common short texts lost up to 48. Caveat on
+difficulty: this sample allows gaps at line edges, and 10 of the 17 hits fill structural slots the grammar predicts
+(861 / 817 before 2 at a line start: C-7, H-383, M-1832, M-454, M-1300, K-419; 740 or 527 at a line end: M-55, M-220,
+M-845, M-1971); the frequency baseline, 740 everywhere, does not model the heading slot, so it understates the easy
+cases. The 7 lexical hits (590 twice, 13 twice on one text, 803, 3, 741) are the harder part. Tier 3's sign-level line
+now reads top-1 21 of 49 (43%), top-5 32 of 49. Progress: the tier 3 line replicates on new cases (streak 0). Tally,
+counting parts: 1474 held, 1397 failed (2871 registered).

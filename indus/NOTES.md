@@ -2851,6 +2851,11 @@ Registered first (1a3c2bbfd). Model retrained without copies of each text: top-1
 Mahadevan's readings, baseline 3. Meets the registered rule narrowly; tier 3's first (sign-level) line. Progress
 (streak 0). Tally 1470 held, 1397 failed.
 
+## Two-hundred-and-ninety-eighth pass (25 Sept 2026): decipherment loop 109, copy-free restoration check on new cases
+
+Registered first (4d0bf5df9). 34 new M77-read gaps: top-1 17 (50%), top-5 23, baseline 3; 10 of the 17 hits are
+heading or ending slots. Tier 3 line: 21 of 49 top-1. Progress (streak 0). Tally 1474 held, 1397 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
