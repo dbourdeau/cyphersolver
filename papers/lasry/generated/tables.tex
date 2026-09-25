@@ -5,9 +5,9 @@
 outcome method & $n$ & complete & partial \\
 \midrule
 key from ciphertext only & 23 & 14 & 9 \\
-key from external plaintext & 9 & 6 & 3 \\
+key from external plaintext & 10 & 6 & 4 \\
 key from adjacent plaintext & 34 & 16 & 18 \\
-\quad\emph{key recovered, all routes} & \emph{66} & \emph{36} & \emph{30} \\
+\quad\emph{key recovered, all routes} & \emph{67} & \emph{36} & \emph{31} \\
 external key matched & 12 & 7 & 5 \\
 known key applied & 78 & 50 & 28 \\
 existing decipherment & 54 & 51 & 3 \\
@@ -16,10 +16,10 @@ not solved & 62 & -- & -- \\
 \midrule
 not applicable & 23 & -- & -- \\
 \midrule
-all targets & 295 & 144 & 66 \\
+all targets & 296 & 144 & 67 \\
 \bottomrule
 \end{tabular}
-\caption{\label{tab:methods} Outcome method and extent for the 295 targets. The first three methods recover the key here; the next two apply a key that already existed; the sixth transcribes and checks a decipherment that already existed. Complete means the read bar of Section~\ref{sec:schema} is met.}
+\caption{\label{tab:methods} Outcome method and extent for the 296 targets. The first three methods recover the key here; the next two apply a key that already existed; the sixth transcribes and checks a decipherment that already existed. Complete means the read bar of Section~\ref{sec:schema} is met.}
 \end{table}
 
 \begin{table}[t]
@@ -29,11 +29,11 @@ all targets & 295 & 144 & 66 \\
 century & $n$ & plaintext language & $n$ \\
 \midrule
 14th c. & 1 & French & 93 \\
-15th c. & 12 & English & 53 \\
-16th c. & 146 & Italian & 51 \\
+15th c. & 13 & English & 53 \\
+16th c. & 146 & Italian & 52 \\
 17th c. & 59 & Spanish & 33 \\
 18th c. & 45 & German & 26 \\
-19th c. & 13 & Latin & 16 \\
+19th c. & 13 & Latin & 17 \\
 20th c. & 7 & Dutch & 11 \\
 undated & 12 & Hungarian & 4 \\
 \bottomrule
@@ -48,13 +48,13 @@ undated & 12 & Hungarian & 4 \\
 \toprule
 starting point & $n$ & recovered & applied & existed & not solved \\
 \midrule
-ciphertext only & 64 & 18 & 0 & 4 & 42 \\
+ciphertext only & 65 & 19 & 0 & 4 & 42 \\
 crib from clear text & 26 & 19 & 2 & 1 & 4 \\
 decipherment or known plaintext & 42 & 16 & 5 & 20 & 1 \\
-a key (archive, print, sibling) & 103 & 11 & 81 & 5 & 6 \\
-none recorded & 37 & 2 & 2 & 24 & 9 \\
+a key (archive, print, sibling) & 104 & 12 & 81 & 5 & 6 \\
+none recorded & 36 & 1 & 2 & 24 & 9 \\
 \midrule
-all & 272 & 66 & 90 & 54 & 62 \\
+all & 273 & 67 & 90 & 54 & 62 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:attack} Outcome by what the attack started from (profile field conditions.attack). Columns: key recovered here (from ciphertext only, adjacent or external plaintext); key applied (a known key, or an external key matched to the document); a decipherment already existed; not solved. Targets classed not applicable are left out.}
@@ -67,14 +67,14 @@ all & 272 & 66 & 90 & 54 & 62 \\
 \toprule
 cipher family & $n$ & recovered & applied & existed & not solved \\
 \midrule
-homophonic or simple + nomenclator & 132 & 34 & 54 & 28 & 16 \\
+homophonic or simple + nomenclator & 133 & 35 & 54 & 28 & 16 \\
 substitution, no nomenclator & 38 & 19 & 10 & 6 & 3 \\
 undetermined & 33 & 1 & 2 & 6 & 24 \\
 code or codebook & 32 & 5 & 9 & 7 & 11 \\
 syllabic nomenclator & 30 & 7 & 13 & 5 & 5 \\
 transposition, polygraphic, polyalphabetic & 7 & 0 & 2 & 2 & 3 \\
 \midrule
-all & 272 & 66 & 90 & 54 & 62 \\
+all & 273 & 67 & 90 & 54 & 62 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:family} Outcome by cipher family, from the system types in the profile. Columns as in Table~\ref{tab:attack}.}
@@ -87,14 +87,14 @@ all & 272 & 66 & 90 & 54 & 62 \\
 \toprule
 prior reading & $n$ & recovered & applied & existed & not solved \\
 \midrule
-none known & 79 & 27 & 14 & 0 & 38 \\
-existed, known before the attempt & 92 & 15 & 49 & 25 & 3 \\
+none known & 76 & 24 & 14 & 0 & 38 \\
+existed, known before the attempt & 93 & 16 & 49 & 25 & 3 \\
 existed, found during the attempt & 70 & 15 & 22 & 27 & 6 \\
-existed, found after or not at all & 9 & 6 & 3 & 0 & 0 \\
+existed, found after or not at all & 12 & 9 & 3 & 0 & 0 \\
 existed, when found unknown & 3 & 0 & 1 & 2 & 0 \\
 unknown & 19 & 3 & 1 & 0 & 15 \\
 \midrule
-all & 272 & 66 & 90 & 54 & 62 \\
+all & 273 & 67 & 90 & 54 & 62 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:prior} Outcome by whether a reading of the text existed anywhere before this project, and when it was found (the contamination question). Columns as in Table~\ref{tab:attack}.}
@@ -110,10 +110,10 @@ ciphertext tokens & $n$ & recovered & applied & existed & not solved \\
 $<$ 250 & 69 & 13 & 15 & 12 & 29 \\
 250--999 & 68 & 18 & 21 & 11 & 18 \\
 1,000--4,999 & 55 & 15 & 26 & 6 & 8 \\
-$\geq$ 5,000 & 22 & 7 & 14 & 0 & 1 \\
+$\geq$ 5,000 & 23 & 8 & 14 & 0 & 1 \\
 unknown & 58 & 13 & 14 & 25 & 6 \\
 \midrule
-all & 272 & 66 & 90 & 54 & 62 \\
+all & 273 & 67 & 90 & 54 & 62 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:length} Outcome by ciphertext length (enciphered tokens summed over the documents of a target). Columns as in Table~\ref{tab:attack}.}
@@ -126,8 +126,8 @@ all & 272 & 66 & 90 & 54 & 62 \\
 \toprule
 target & year & language & system & tokens & key order & extent \\
 \midrule
+siena1421 & 1420 & Italian, Latin & homophonic or simple + nomenclator & 13237 & random & partial \\
 r1854 & 1428 & Italian, Latin & homophonic or simple + nomenclator & 4694 & not applicable & partial \\
-soria1523 & 1523 & Spanish & homophonic or simple + nomenclator & -- & unknown & partial \\
 rangone1530 & 1529 & Italian & substitution, no nomenclator & 264 & unknown & partial \\
 joachim1530 & 1530 & Italian & homophonic or simple + nomenclator & 402 & unknown & complete \\
 guiche1551 & 1551 & French & substitution, no nomenclator & 406 & unknown & partial \\
