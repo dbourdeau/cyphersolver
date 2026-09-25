@@ -8868,3 +8868,16 @@ Two held, two failed. Conditioning on the line's first two signs lowers S on the
 sign is one of the first two, the component conditions on the candidate itself and rewards candidates that make
 familiar openings rather than the right sign. By the rule registered for this loop (SIGN must not fall) it is not
 adopted: no progress, streak 1. Tally, counting parts: 1366 held, 1251 failed (2617 registered).
+
+# Two-hundred-and-eighteenth set, registered before testing (24 September 2026): decipherment loop 43, discounted position and end components (four hypotheses)
+
+Metric after loop 42: S 4.610 (trik + pos + end + f4k + first), SIGN top-1 39.8%; streak 1. The position and
+distance-from-end components are add-one smoothed over the vocabulary; lighter add-k overfit (set 212). Absolute
+discounting onto the unigram (D = 0.5; the unigram add-0.5) is the principled alternative: posk, endk. Design on the
+training lines' own split: 4.6690 -> 4.6163 (D 0.75 the same). (An LSTM component was also tried in design and made
+things worse at this data size; not registered.)
+
+- **PK1** S on the fixed test with posk + endk in place of pos + end beats the current model by 0.01 bits or more.
+- **PK2** The same A -> B.
+- **PK3** SIGN top-1 on the fixed test does not fall.
+- **PK4** Progress rule: PK1, PK2 and PK3 hold.
