@@ -3070,6 +3070,11 @@ Owner's goal: another run of loops until 10 without progress, on the referent li
 binomial test against each picture's base rate (alpha 0.01) replaces the fixed 67% share: 388 units, FDR 5.7%, Linear B
 passes; referent line 2.29% -> 4.79%. Progress (streak 0). Tally 1537 held, 1456 failed.
 
+## Three-hundred-and-fortieth pass (25 Sept 2026): decipherment loop 151, split-half check of the base-rate configuration
+
+Registered first (e31915e9b). Confirmed (1,275 against 631, p = 0.005) but held-out precision 14%. The line stands with
+the caveat. No progress (streak 1). Tally 1538 held, 1458 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

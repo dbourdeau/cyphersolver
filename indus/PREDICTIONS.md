@@ -11121,3 +11121,12 @@ downgrades the line; no progress either way. Not measured before registering.
 - **BV1** The base-rate configuration is confirmed on the five split-halves (p < 0.05).
 - **BV2** Its held-out precision is at least 23%.
 - **BV3** Progress rule: none (validation; recorded as failing).
+
+## Results of the three-hundred-and-twenty-sixth set (added after the test; `predict_test326.py`, `results/predict_test326.md`)
+
+One held, two failed (BV3 is the non-progress rule). On five split-halves both ways the base-rate configuration's
+units match 1,275 of 9,406 held-out objects' pictures, against a shuffle median of 631 (p = 0.005; BV1): the line is
+confirmed. Held-out precision is 14%, below C7's 23% (BV2 fails): the base-rate criterion reaches far more text, but a
+unit's picture holds on a new tablet about twice as often as chance, not reliably. The 4.79% line stands with that
+precision stated in the tier 1 cell. Progress: none (streak 1). Tally, counting parts: 1538 held, 1458 failed (2996
+registered).
