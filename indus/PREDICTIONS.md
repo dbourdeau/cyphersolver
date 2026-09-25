@@ -11130,3 +11130,13 @@ confirmed. Held-out precision is 14%, below C7's 23% (BV2 fails): the base-rate 
 unit's picture holds on a new tablet about twice as often as chance, not reliably. The 4.79% line stands with that
 precision stated in the tier 1 cell. Progress: none (streak 1). Tally, counting parts: 1538 held, 1458 failed (2996
 registered).
+
+# Three-hundred-and-twenty-seventh set, registered before testing (25 September 2026): decipherment loop 152, referent pools by tablet type (two hypotheses)
+
+Streak 1. Referents do not travel between tablet types (set 243), and copper and incised tablets carry different
+pictures, yet they share one 'individually made' pool whose base rates mix them. The base-rate configuration (set 325,
+alpha 0.01) is run with copper (TAB:C) and incised (TAB:I) as separate pools beside the moulded pool; combined FDR
+against 100 picture shuffles (`predict_test327.py`). Not measured before registering.
+
+- **TY1** The combined FDR is at or below 10% and coverage rises above 4.79%.
+- **TY2** Progress rule: TY1 holds (the referent pools are split by tablet type).
