@@ -10106,3 +10106,11 @@ head-class). Lexical bodies only (`predict_test275.py`). Not measured before reg
 - **EP1** A: bodies before an end-prone sign are attested name bodies more often than bodies before 400 (Fisher one-sided, p < 0.05).
 - **EP2** B: the same, name bodies from A.
 - **EP3** Progress rule: EP1 and EP2 hold (a new finding, replicated: the end-prone signs close name bodies).
+
+## Results of the two-hundred-and-seventy-fifth set (added after the test; `predict_test275.py`, `results/predict_test275.md`)
+
+All three failed. Distinct lines of a lexical body + an end-prone sign are few (A 15, B 21), and their bodies are almost
+never attested name bodies (A 1 of 15, B 0 of 21), no more often than the bodies before 400 (A 1 of 40, B 1 of 18). The
+end-prone signs close lines of their own kind; they are not a further ending slot in the name paradigm (740 / 520 /
+closers). Their role stays 'end-prone closer' (set 267). Progress: none (streak 8). Tally, counting parts: 1458 held,
+1378 failed (2836 registered).

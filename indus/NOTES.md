@@ -2802,6 +2802,11 @@ No progress (streak 6). Tally 1457 held, 1373 failed.
 Registered first (9f59944e9). Top-10 8 -> 10 of 232 (3.4% -> 4.3%), below the 1-point threshold. No progress (streak
 7). Tally 1458 held, 1375 failed.
 
+## Two-hundred-and-eighty-ninth pass (25 Sept 2026): decipherment loop 100, end-prone signs as endings
+
+Registered first (ae55f5326). Bodies before end-prone signs are not name bodies (A 1 of 15, B 0 of 21). No progress
+(streak 8). Tally 1458 held, 1378 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
