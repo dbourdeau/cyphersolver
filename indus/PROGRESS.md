@@ -44,7 +44,7 @@ Decipherment happens in stages, so the metric is a vector, one component per sta
 
 | Component | What it measures | Direction |
 |---|---|---|
-| S structure | held-out bits per sign on a fixed 80/20 split (seed 2026) of the distinct lines, best registered model | lower |
+| S structure | held-out bits per sign on a fixed 80/20 split (seed 2026) of the distinct lines, best registered model. Note (audit after set 223): the position and end components (set 125) are given the line's length, so S is bits per sign *given the length* and the end-of-line token is nearly free; constant since the baseline, so loop-to-loop comparisons hold, but the absolute value is optimistic | lower |
 | R roles | share of sign tokens whose job is fixed by a tested rule (numeral, ending, closer, marker, heading, name head, counted sign ...) | higher |
 | M meanings | share of sign tokens whose sign has an externally anchored meaning (numeral values, copper-tablet sign = picture equations) | higher |
 | M+ meaning classes | M plus signs whose depicted class (Fairservis) is confirmed by use on held-out data (from loop 3) | higher |
