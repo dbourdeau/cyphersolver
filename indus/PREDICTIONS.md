@@ -11550,3 +11550,14 @@ shuffles; Linear B control (`predict_test347.py`). Not measured before registeri
 All three held. Family wide skip-pairs add 7 units (5-sign runs none): 111 units, FDR 7.2%, coverage 2.86% -> 3.04%
 (WF1); Linear B passes (WF2). `prizebench.referent_fixed` includes them. Progress: streak 0. Tally, counting parts:
 1576 held, 1491 failed (3067 registered).
+
+# Three-hundred-and-forty-eighth set, registered before testing (25 September 2026): decipherment loop 173, decade-family referent units (three hypotheses)
+
+Streak 0. The family units use Parpola's description families; ICIT's decade blocks are a second, independent grouping
+of graphic variants that helped the S model (set 194). Units over decade families (single, pair, 3-sign run,
+skip-pair, wide skip-pair) are added to set 347's units, tagged apart; combined FDR against 100 within-stratum
+shuffles; Linear B control (`predict_test348.py`). Not measured before registering.
+
+- **DF1** FDR at or below 10% and coverage above 3.04%.
+- **DF2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
+- **DF3** Progress rule: DF1 and DF2 hold (decade-family units join).

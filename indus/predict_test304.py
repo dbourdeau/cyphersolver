@@ -67,10 +67,11 @@ def coverage(DL, P, u):
                 continue
             lab, n = key
             fl = lab.startswith('F')
-            pool = lab[1:] if fl else lab
+            dl = lab.startswith('D')  # set 348: decade-family units
+            pool = lab[1:] if (fl or dl) else lab
             if t not in used[pool]:
                 continue
-            tt = fam(t) if fl else t
+            tt = fam(t) if fl else tuple(g if g == '|' else ('f%d' % (int(g) // 10) if g.isdigit() else g) for g in t) if dl else t
             if n == -2:
                 mark |= {j for i in range(len(tt) - 2) if (tt[i], '_', tt[i + 2]) in qq for j in (i, i + 2)}
             elif n == -3:
