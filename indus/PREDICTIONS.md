@@ -10570,3 +10570,13 @@ excess +56 over the shuffle median of 5, below set 294's +60 with one vote per u
 supported units are the common signs and pairs, which are the least specific; up-weighting them pulls votes toward the
 frequent pictures. (The registered script had a string-quoting error, fixed in 2d4bd2c15 before the run; the test
 itself is unchanged.) Progress: none (streak 2). Tally, counting parts: 1497 held, 1416 failed (2913 registered).
+
+# Two-hundred-and-ninety-seventh set, registered before testing (25 September 2026): decipherment loop 122, the picture vault with specificity-weighted votes (three hypotheses)
+
+Streak 2. Set 296's support weighting favoured common, unspecific units and did worse. Here each qualifying unit votes
+with weight 1 / n (n = other objects carrying it), so rare, specific units count more; otherwise as set 294, scored by
+the excess over the shuffle median (`predict_test297.py`). Not measured before registering.
+
+- **VS1** The excess over the shuffle median is above +60, with p < 0.05 against 200 shuffles.
+- **VS2** Accuracy on the predicted objects is above 33.5%.
+- **VS3** Progress rule: VS1 holds (the tier 3 vault line rises).
