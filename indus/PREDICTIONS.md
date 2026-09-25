@@ -8804,3 +8804,19 @@ FP3 fails). The metric run with firstpos gives S 4.594 but SIGN 39.7% / 61.7% an
 39.8% / 62.1% / 3.9%. The prize bench ranks the prediction tasks above S, so firstpos is **not adopted** (the model
 stays with first) and the loop is counted conservatively as no progress: streak 1. Tally, counting parts: 1356 held,
 1248 failed (2604 registered).
+
+# Two-hundred-and-fifteenth set, registered before testing (24 September 2026): decipherment loop 40, the sign before a count (five hypotheses)
+
+Metric after loop 39: R 81.3% (1,034 unroled tokens in count lines); streak 1. Count lines (genre 'count') often put
+signs before the numeral run: '104 4 390', '125 861 2 4 390', 'x N x' is the second commonest shape (59 lines). If
+the slot before a count is a label for what or whose the count is, it should be filled from a restricted set. Unit:
+the sign directly before the first numeral run of a count line (not at position 0 excluded; numerals not counted).
+Null: the same lines with their non-numeral signs shuffled among the non-numeral positions (numerals stay), 1,000
+times; statistic = share of pre-count tokens taken by the ten commonest pre-count signs.
+
+- **CT1** In A's distinct count lines the pre-count slot is more concentrated than in its shuffles (p < 0.01).
+- **CT2** The same in B's new count lines (p < 0.05).
+- **CT3** The ten commonest pre-count signs of A cover 40% or more of B's pre-count tokens.
+- **CT4** Pre-count signs are name heads (seen before 740 / 520 in A) less often than the counted sign after the
+  numerals (B): the label slot is not the counted-thing slot.
+- **CT5** Progress rule: CT1 and CT2 hold; then the sign directly before a count gets the role 'count label' in R.
