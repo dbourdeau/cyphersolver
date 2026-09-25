@@ -2719,3 +2719,10 @@ graffiti catalogue as photographic plates and a discussion; neither volume nor t
 mapping the 42 base graffiti signs to Indus sign numbers (the brochure shows a dozen illustrative pairs). Testing the
 graffiti against the Indus grammar with mapped signs would need that mapping built by eye, which would be this
 project's guess, so it was not attempted; set 204's order fingerprint stays the only test.
+
+## Audit (25 Sept 2026): part-transcriptions in the referent phrases
+
+Set 247 showed that the '2+ distinct texts' rule can be met by partial transcriptions of one text. Re-run of sets 237
+and 243 with part-texts merged into the longer text they belong to (predict_test237.merged): individually made tablets
+8 of 11 pairs still qualify (lost 176 740, 706 33, 240 740), moulded tablets 7 of 8 (lost 440 740); shuffle nulls stay
+near zero, so the tests hold. The tier-1 referent line, recomputed with merging, is 0.76% (was 0.84%).

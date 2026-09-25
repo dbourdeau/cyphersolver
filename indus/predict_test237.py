@@ -49,3 +49,17 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+def merged(objs):
+    """Audit after set 247: a text that is a contiguous part of a longer text among the objects is the same text read in
+    part; map it to the longer one before counting distinct texts."""
+    def sub(a, b):
+        n = len(a)
+        return any(b[i:i + n] == a for i in range(len(b) - n + 1))
+    texts = sorted({t for t, m in objs}, key=len, reverse=True)
+    rep = {}
+    for t in texts:
+        r = next((u for u in texts if len(u) > len(t) and sub(t, u) and rep.get(u) == u), None)
+        rep[t] = r if r else t
+    return [(rep[t], m) for t, m in objs]

@@ -100,12 +100,12 @@ def referent_fixed(DL):
     objs = objects(F, recs, ('TAB:C', 'TAB:I'))
     q = qualifying(objs)
     # set 237 (PL1-PL2): + tokens of qualifying sign pairs on the individually made tablets used
-    from predict_test237 import qual
-    qp = qual(objs)
+    from predict_test237 import merged, qual
+    qp = qual(merged(objs))  # audit after set 247: part-texts merged
     used = {t for t, m in objs}
     # set 243 (MR1-MR2): + qualifying pairs on moulded tablets (distinct texts = independent designs)
     mo = objects(F, recs, ('TAB:B',))
-    qm = qual(mo)
+    qm = qual(merged(mo))
     usedm = {t for t, m in mo}
     cov = 0
     for t in DL:
