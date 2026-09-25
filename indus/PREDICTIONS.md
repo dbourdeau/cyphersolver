@@ -11441,3 +11441,13 @@ designs), the vault predicts 165 held-out observations and gets 46 right (27.9%)
 cell). The vault survives the correction well: text predicts picture on held-out designs far above chance, in contrast
 with the tier 1 list whose held-out precision is 5% (set 340); the vault votes with many loose units, which is what
 reaches held-out designs. Progress: none (streak 2). Tally, counting parts: 1565 held, 1483 failed (3048 registered).
+
+# Three-hundred-and-forty-second set, registered before testing (25 September 2026): decipherment loop 167, the corrected vault with base-rate votes (two hypotheses)
+
+Streak 2. The base-rate criterion (set 325) treats rare and common pictures fairly where a fixed share does not. In the
+corrected vault (set 341: mould copies counted once), a unit votes for its commonest picture among the other
+observations only if a binomial test against that picture's share in the pool gives P < 0.01; otherwise as set 341
+(`predict_test342.py`). Not measured before registering.
+
+- **VB1** The excess over the shuffle median is above +41 (set 341), with p < 0.05 against 200 shuffles.
+- **VB2** Progress rule: VB1 holds (the tier 3 vault line rises).
