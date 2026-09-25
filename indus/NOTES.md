@@ -2521,6 +2521,11 @@ Burushaski out in WALS only, stays open. Progress: streak 0. Tally 1372 held, 12
 Registered first (e423a3b97). EDGE-DOUBLE raises the G margin on B (35.1 -> 35.9) and F (17.9 -> 18.4), real more
 than shuffled. Progress: streak 0. Tally 1376 held, 1258 failed.
 
+## Two-hundred-and-thirty-sixth pass (24 Sept 2026): decipherment loop 47, a caged sign with its marker
+
+Registered first (2f17ec7fb). CAGED-POST: B margin 35.9 -> 36.0 (small), F unchanged. Progress: streak 0. Tally 1379
+held, 1259 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

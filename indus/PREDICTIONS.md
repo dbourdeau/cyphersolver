@@ -8968,3 +8968,10 @@ rule was also tried in design and lowered the margin; not registered).
 - **CP2** It raises real B coverage more than shuffled.
 - **CP3** It raises the F margin.
 - **CP4** Progress rule: CP1 and CP2 hold.
+
+## Results of the two-hundred-and-twenty-second set (added after the test; `predict_test222.py`, `results/predict_test222.md`, `grammar.parse5`)
+
+Three held, one failed. CAGED-POST (a caged or closer sign followed only by 400 / 90) raises the B margin slightly,
+35.92 -> 36.02 points (CP1), real B coverage more than shuffled (+0.22 against +0.12; CP2); the F margin is unchanged
+(CP3 fails). A small gain, adopted in the metric's G margin. Progress: streak 0. Tally, counting parts: 1379 held,
+1259 failed (2638 registered).

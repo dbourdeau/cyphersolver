@@ -168,3 +168,15 @@ def parse4(t, heads, hc, mc, labels):
     if len(t) >= 4 and t[-1] == t[-2] and t[-1] not in R.NUMS and parse3(t[:-2], heads, hc, mc, labels) is not None:
         return 'edge-double'
     return None
+
+
+def parse5(t, heads, hc, mc, labels):
+    """parse4 plus CAGED-POST (set 222): a caged or closer sign followed only by 400 / 90."""
+    from predict_test103 import CL
+    lab = parse4(t, heads, hc, mc, labels)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) >= 2 and (t[0] in CAGED or t[0] in CL) and all(g in ('400', '90') for g in t[1:]):
+        return 'caged-post'
+    return None
