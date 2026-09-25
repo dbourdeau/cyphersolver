@@ -6,7 +6,7 @@ Items, their primary and secondary sources and summaries are hand-kept in ct_sou
 the prior-solution note come from each target's profile.json, so a reclassification there shows up here. The PDF
 is printed with headless Chrome or Edge.
 """
-import html, json, pathlib, subprocess, sys
+import html, json, pathlib, re, subprocess, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / 'docs'))
 import _methods as M
 
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
+DECODE = 'https://de-crypt.org/decrypt-web/RecordsView/'
 BROWSERS = [r'C:\Program Files\Google\Chrome\Application\chrome.exe',
             r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe']
 e = html.escape
@@ -25,9 +26,20 @@ def prior_note(prof):
         where = ps.get('where', '')
         yr = next((w for w in ('2021', '2023', '2024') if f'in {w}' in where), '?')
         extra = ' (improved in February 2026)' if 'Feb 2026' in where else ''
-        return (f'In private communications, Lasry wrote that he independently solved it in {yr}{extra} '
+        return (f'<b>Solved independently by the LLMs</b>, from the ciphertext alone and without knowledge of any '
+                f'earlier solution. In private communications, Lasry wrote that he had also solved it in {yr}{extra}, '
                 'but his solution has not been published.')
     return ''
+
+
+def sources(text, links, decode=False):
+    """The source text, DECODE record numbers linked, then any [label, url] links."""
+    s = e(text)
+    if decode:
+        s = re.sub(r'\bR(\d{2,5})\b', lambda m: f'<a href="{DECODE}{m[1]}">R{m[1]}</a>', s)
+    if links:
+        s += ' &middot; ' + ' &middot; '.join(f'<a href="{e(u)}">{e(l)}</a>' for l, u in links)
+    return s
 
 
 def item(it, n):
@@ -40,10 +52,10 @@ def item(it, n):
     note = prior_note(prof)
     url = SITE + it['slug'] + '.html'
     rows = [('Method', f'{e(M.LABEL.get(method, method))} &middot; {e(ext)}'),
-            ('Primary source', e(it['primary'])),
-            ('Secondary source', e(it['secondary']))]
+            ('Primary source', sources(it['primary'], it.get('primary_links'))),
+            ('Secondary source', sources(it['secondary'], it.get('secondary_links'), decode=True))]
     if note:
-        rows.append(('Earlier solution', e(note)))
+        rows.append(('Independent solution', note))
     if it.get('cipherbrain') and it['section'] == 'ct':
         rows.append(('Cipherbrain', 'also a Cipherbrain challenge'))
     rows.append(('Write-up', f'<a href="{url}">{e(url)}</a>'))
@@ -60,8 +72,8 @@ def main():
     parts = []
     for head, intro, items in [
         ('Key recovered from ciphertext only', 'First breaks: the key was rebuilt from the ciphertext alone, with no '
-         'plaintext and no existing key. Items that someone had solved earlier but never published are included and '
-         'marked.', ct),
+         'plaintext and no existing key. Three items had also been solved earlier by '
+         'George Lasry but never published; the LLMs solved them independently, and his unpublished solution is noted.', ct),
         ('Other Cipherbrain challenges (any method)', 'Challenges posted on Klaus Schmeh\'s Cipherbrain that this '
          'project read by other routes. The Soglia dispatch above is also a Cipherbrain challenge.', cb)]:
         parts.append(f'<h2>{e(head)}</h2><p class="intro">{e(intro)}</p>')

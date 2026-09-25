@@ -1,162 +1,467 @@
 {
- "_about": "Hand-checked data for the ciphertext-only list sent to Klaus Schmeh (Lasry, 25 Sept 2026). One entry per item; _ct_list.py renders it with fields from each profile.json. primary = the archive or printed original; secondary = where the target was found (DECODE, cryptiana, Cipherbrain, catalogue harvest). section: ct = key recovered from ciphertext only, first breaks (unpublished earlier solutions noted); cipherbrain = a Cipherbrain challenge, any method. Items that are independent re-solutions of published work (egmond, lorraine1592, sp106r927) are left out on purpose; soria1523 was reclassed to external plaintext.",
+ "_about": "Hand-checked data for the ciphertext-only list sent to Klaus Schmeh (Lasry, 25 Sept 2026). One entry per item; _ct_list.py renders it with fields from each profile.json. primary = the archive or printed original; secondary = where the target was found (DECODE, cryptiana, Cipherbrain, catalogue harvest). section: ct = key recovered from ciphertext only, first breaks (unpublished earlier solutions noted); cipherbrain = a Cipherbrain challenge, any method. Items that are independent re-solutions of published work (egmond, lorraine1592, sp106r927) are left out on purpose; soria1523 was reclassed to external plaintext. primary_links / secondary_links are [label, url]; DECODE R-numbers in 'secondary' are linked automatically.",
  "items": [
-  {"slug": "siena1421", "profile": "siena1421", "section": "ct",
+  {
+   "slug": "siena1421",
+   "profile": "siena1421",
+   "section": "ct",
    "title": "Sienese envoys and others to the government of Siena",
    "date": "before 1429 to 1547",
    "primary": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\"",
    "secondary": "DECODE R4790-R4814 (no status); the archive's 1952 inventory calls the letters 'solo parzialmente decifrate'",
-   "summary": "Keys recovered from the ciphertext alone for three letters (nos. 25, 18, 14) and from an alphabet fragment for a fourth; none of the 43 keys filed with the letters fits. No. 25 reads 96.2%, no. 18 (Latin treaty articles with the Emperor) 87.1%. Several other letters in the file remain open."},
-  {"slug": "segura1596", "profile": "segura1596", "section": "ct",
+   "summary": "Keys recovered from the ciphertext alone for three letters (nos. 25, 18, 14) and from an alphabet fragment for a fourth; none of the 43 keys filed with the letters fits. No. 25 reads 96.2%, no. 18 (Latin treaty articles with the Emperor) 87.1%. Several other letters in the file remain open.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "segura1596",
+   "profile": "segura1596",
+   "section": "ct",
    "title": "Matheo de Segura to the Constable of Castile",
    "date": "Madrid, 8 Aug 1596",
    "primary": "BnF, espagnol 336 no. 99, ff. 196r-198r",
    "secondary": "Tomokiyo, cryptiana (spanish3.htm, unsolved.htm): the last es. 336 item listed as undeciphered",
-   "summary": "Two short passages in a homophonic cipher; the key was rebuilt by annealing and resegmenting the image. 119 of 125 cipher tokens read (95.2%). The passages concern predictions of the world ending or the king dying by September."},
-  {"slug": "joachim1530", "profile": "joachim1530", "section": "ct",
+   "summary": "Two short passages in a homophonic cipher; the key was rebuilt by annealing and resegmenting the image. 119 of 125 cipher tokens read (95.2%). The passages concern predictions of the world ending or the king dying by September.",
+   "primary_links": [
+    [
+     "Gallica",
+     "https://gallica.bnf.fr/ark:/12148/btv1b100325613/f336.item"
+    ]
+   ],
+   "secondary_links": [
+    [
+     "spanish3.htm",
+     "https://cryptiana.web.fc2.com/code/spanish3.htm"
+    ],
+    [
+     "unsolved.htm",
+     "https://cryptiana.web.fc2.com/code/unsolved.htm"
+    ]
+   ]
+  },
+  {
+   "slug": "joachim1530",
+   "profile": "joachim1530",
+   "section": "ct",
    "title": "Giovan Gioacchino da Passano (attributed), London, to Francis I",
    "date": "15 Mar 1530 (copy heading)",
    "primary": "BnF, Clairambault 331, ff. 156-157",
    "secondary": "Tomokiyo, cryptiana (francis.htm), listed as undeciphered",
-   "summary": "An account of Wolsey's wealth: cash, credits, revenues, jewels and plate, Winchester, St Albans and York. A dotted re-transcription made the break possible. 386 of 402 signs read coherently (96.0%)."},
-  {"slug": "memoire1560", "profile": "memoire1560", "section": "ct",
+   "summary": "An account of Wolsey's wealth: cash, credits, revenues, jewels and plate, Winchester, St Albans and York. A dotted re-transcription made the break possible. 386 of 402 signs read coherently (96.0%).",
+   "primary_links": [
+    [
+     "Gallica",
+     "https://gallica.bnf.fr/ark:/12148/btv1b9000761d/f148.item"
+    ]
+   ],
+   "secondary_links": [
+    [
+     "francis.htm",
+     "https://cryptiana.web.fc2.com/code/francis.htm"
+    ]
+   ]
+  },
+  {
+   "slug": "memoire1560",
+   "profile": "memoire1560",
+   "section": "ct",
    "title": "Mémoire en chiffre to the connétable de Montmorency",
    "date": "12 Dec 1560",
    "primary": "BnF, français 3157 no. 67, ff. 152r-156v",
    "secondary": "BnF catalogue (Gallica harvest); no DECODE record",
-   "summary": "Ten pages in a cursive pseudo-script: a homophonic substitution with two-stroke units and four word codes, broken from the images alone. It reports on the Protestant rising in the Agenais a week after François II's death. 98.9% of 1,715 cipher words read."},
-  {"slug": "harley1582r8505", "profile": "harley1582r8505", "section": "ct",
+   "summary": "Ten pages in a cursive pseudo-script: a homophonic substitution with two-stroke units and four word codes, broken from the images alone. It reports on the Protestant rising in the Agenais a week after François II's death. 98.9% of 1,715 cipher words read.",
+   "primary_links": [
+    [
+     "Gallica",
+     "https://gallica.bnf.fr/ark:/12148/btv1b90598645/f153.item"
+    ],
+    [
+     "BnF catalogue",
+     "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc496207"
+    ]
+   ],
+   "secondary_links": []
+  },
+  {
+   "slug": "harley1582r8505",
+   "profile": "harley1582r8505",
+   "section": "ct",
    "title": "\"L'Estat du Roy de Navarre et de son party en France\"",
    "date": "after 1580",
    "primary": "British Library, Harley MS 1582, ff. 263-264",
    "secondary": "DECODE R8505 (Non-decrypted, \"unknown sender\")",
-   "summary": "A French memoir on Navarre's party in a homophonic alphabet of about 50 graphic signs. The letter m is written as a group of dots, which earlier passes took for punctuation. 95.1% read."},
-  {"slug": "wesselenyi1664", "profile": "wesselenyi1664", "section": "ct",
+   "summary": "A French memoir on Navarre's party in a homophonic alphabet of about 50 graphic signs. The letter m is written as a group of dots, which earlier passes took for punctuation. 95.1% read.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "wesselenyi1664",
+   "profile": "wesselenyi1664",
+   "section": "ct",
    "title": "Ferenc Wesselényi, Palatine of Hungary, to Leopold I",
    "date": "c. 1663-64",
    "primary": "MNL OL E 199 (Wesselényi family archive), 8. pallium 1. 01",
    "secondary": "DECODE R674 (non-decrypted)",
-   "summary": "A reversed-alphabet cipher with vowel homophones in a Latin draft, broken by annealing and then corrected by hand. A general is to take His Majesty's garrison by force if need be. 98.8% of cipher tokens read; two codes are open."},
-  {"slug": "harley286", "profile": "harley286", "section": "ct",
+   "summary": "A reversed-alphabet cipher with vowel homophones in a Latin draft, broken by annealing and then corrected by hand. A general is to take His Majesty's garrison by force if need be. 98.8% of cipher tokens read; two codes are open.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "harley286",
+   "profile": "harley286",
+   "section": "ct",
    "title": "Sir Simonds D'Ewes, cipher log of his son's convulsion fits",
    "date": "3 Apr 1635 - Jan 1636",
    "primary": "British Library, Harley MS 286, f. 61",
    "secondary": "DECODE R7759 (\"unknown sender to unknown recipient, 1635\")",
-   "summary": "D'Ewes's private alphabet over Latin, rebuilt from cribs (convulsio, plena luna); the weekdays and moon phases check out against his Autobiography. 96.5% of 287 words read."},
-  {"slug": "marburg1635", "profile": "marburg1635", "section": "ct",
+   "summary": "D'Ewes's private alphabet over Latin, rebuilt from cribs (convulsio, plena luna); the weekdays and moon phases check out against his Autobiography. 96.5% of 287 words read.",
+   "primary_links": [
+    [
+     "BL catalogue",
+     "https://searcharchives.bl.uk/catalog/040-002046117"
+    ]
+   ],
+   "secondary_links": []
+  },
+  {
+   "slug": "marburg1635",
+   "profile": "marburg1635",
+   "section": "ct",
    "title": "Unknown writer to Hesse-Kassel",
    "date": "undated (volume 1635-52)",
    "primary": "Hessisches Staatsarchiv Marburg, HStAM 4 d Nr. 1218, no. 49",
    "secondary": "DECODE R4500 (partially decrypted)",
-   "summary": "A digit-and-sign letter substitution. None of the volume's ~120 key sheets fits; the key was annealed on German of the period and confirmed by the contemporary gloss on lines 1-4. About 97% read."},
-  {"slug": "ferdinand1619", "profile": "ferdinand1619", "section": "ct",
+   "summary": "A digit-and-sign letter substitution. None of the volume's ~120 key sheets fits; the key was annealed on German of the period and confirmed by the contemporary gloss on lines 1-4. About 97% read.",
+   "primary_links": [
+    [
+     "Arcinsys",
+     "https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=v1923393"
+    ]
+   ],
+   "secondary_links": []
+  },
+  {
+   "slug": "ferdinand1619",
+   "profile": "ferdinand1619",
+   "section": "ct",
    "title": "Ferdinand of Bavaria, Elector of Cologne, to Duke Maximilian I of Bavaria",
    "date": "Bonn, 22 Dec 1619",
    "primary": "Bayerisches Hauptstaatsarchiv, Kurbayern Äußeres Archiv 4591, ff. 281-286",
    "secondary": "DECODE R9426 (non-decrypted, no author or recipient)",
-   "summary": "Ten pages in a homophonic substitution on two-digit figures with a nomenclator, broken by annealing 2,482 letters; the key reads the sibling R9425 unchanged. The letter covers quartering and troops six weeks after Frederick V's coronation. 95.8% read."},
-  {"slug": "sunyatsen", "profile": "sunyatsen", "section": "ct",
+   "summary": "Ten pages in a homophonic substitution on two-digit figures with a nomenclator, broken by annealing 2,482 letters; the key reads the sibling R9425 unchanged. The letter covers quartering and troops six weeks after Frederick V's coronation. 95.8% read.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "sunyatsen",
+   "profile": "sunyatsen",
+   "section": "ct",
    "title": "Swatow telegram to Sun Yat-sen",
    "date": "3 Apr 1916",
    "primary": "JACAR (Japan Center for Asian Historical Records) B03050738800",
    "secondary": "Tomokiyo, cryptiana list and blog (12 Dec 2021), unsolved since 2021",
-   "summary": "Standard Chinese telegraph code passed through a systematic code condenser, recovered by brute force. 41 of about 44 characters read."},
-  {"slug": "sunintercepts", "profile": "sunyatsen", "section": "ct",
+   "summary": "Standard Chinese telegraph code passed through a systematic code condenser, recovered by brute force. 41 of about 44 characters read.",
+   "primary_links": [
+    [
+     "JACAR",
+     "https://www.jacar.archives.go.jp/das/meta/B03050738800"
+    ]
+   ],
+   "secondary_links": [
+    [
+     "chinesecrypto_e.htm",
+     "https://cryptiana.web.fc2.com/code/chinesecrypto_e.htm"
+    ],
+    [
+     "blog, 12 Dec 2021",
+     "https://cryptiana.blogspot.com/2021/12/sun-yat-sens-coded-telegram-1916.html"
+    ]
+   ]
+  },
+  {
+   "slug": "sunintercepts",
+   "profile": "sunyatsen",
+   "section": "ct",
    "title": "Sun Yat-sen's intercepted telegrams",
    "date": "Mar 1916 - Mar 1917",
    "primary": "JACAR, 特定人ノ発受郵便物取調 (Ministry of Communications intercepts)",
    "secondary": "Follow-on from the Swatow telegram (cryptiana)",
-   "summary": "About 60 condenser telegrams read under seven keys of the Swatow family, plus the Hankow +111 digit code, including Chen Qimei's assassination as reported to Tokyo. Sun's six-vowel 文密 code is still open."},
-  {"slug": "warsaw", "profile": "warsaw", "section": "ct",
+   "summary": "About 60 condenser telegrams read under seven keys of the Swatow family, plus the Hankow +111 digit code, including Chen Qimei's assassination as reported to Tokyo. Sun's six-vowel 文密 code is still open.",
+   "primary_links": [
+    [
+     "JACAR (first file)",
+     "https://www.jacar.archives.go.jp/das/meta/B03050088300"
+    ]
+   ],
+   "secondary_links": [
+    [
+     "chinesecrypto_e.htm",
+     "https://cryptiana.web.fc2.com/code/chinesecrypto_e.htm"
+    ]
+   ]
+  },
+  {
+   "slug": "warsaw",
+   "profile": "warsaw",
+   "section": "ct",
    "title": "Warsaw letter to the Bishop of Olmütz (?)",
    "date": "24 Dec 1627",
    "primary": "ÖStA HHStA, Staatskanzlei Interiora, Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176",
    "secondary": "DECODE R1408 (non-decrypted); transcription by Tomokiyo, cryptiana (variable2.htm, unsolved.htm)",
-   "summary": "A homophonic substitution whose alphabet is in plain order, with syllables, nulls and thirteen word codes, recovered by annealing. The writer presses for a canonry of Olmütz for a son of the Queen of Poland. Read in full; the word codes are glossed from context."},
-  {"slug": "segur", "profile": "segur", "section": "ct",
+   "summary": "A homophonic substitution whose alphabet is in plain order, with syllables, nulls and thirteen word codes, recovered by annealing. The writer presses for a canonry of Olmütz for a son of the Queen of Poland. Read in full; the word codes are glossed from context.",
+   "primary_links": [],
+   "secondary_links": [
+    [
+     "variable2.htm",
+     "https://cryptiana.web.fc2.com/code/variable2.htm"
+    ],
+    [
+     "unsolved.htm",
+     "https://cryptiana.web.fc2.com/code/unsolved.htm"
+    ]
+   ]
+  },
+  {
+   "slug": "segur",
+   "profile": "segur",
+   "section": "ct",
    "title": "Henry of Navarre to Ségur",
    "date": "1585-86",
    "primary": "BnF, 500 de Colbert 401, ff. 233, 239, 288v",
    "secondary": "Tomokiyo, cryptiana unsolved list (as letters of Henry III)",
-   "summary": "Three figure-cipher letters to the envoy raising a German army. The key, an alphabetical syllabary, was rebuilt by a structured annealer and checked on matched controls. The letters cover Duke Casimir, Clervant's reiters and the road through the Vivarais."},
-  {"slug": "soglia1848", "profile": "soglia1848", "section": "ct",
+   "summary": "Three figure-cipher letters to the envoy raising a German army. The key, an alphabetical syllabary, was rebuilt by a structured annealer and checked on matched controls. The letters cover Duke Casimir, Clervant's reiters and the road through the Vivarais.",
+   "primary_links": [
+    [
+     "Gallica",
+     "https://gallica.bnf.fr/ark:/12148/btv1b10035574w"
+    ]
+   ],
+   "secondary_links": [
+    [
+     "unsolved.htm",
+     "https://cryptiana.web.fc2.com/code/unsolved.htm"
+    ],
+    [
+     "henryiii.htm",
+     "https://cryptiana.web.fc2.com/code/henryiii.htm"
+    ]
+   ]
+  },
+  {
+   "slug": "soglia1848",
+   "profile": "soglia1848",
+   "section": "ct",
    "title": "Cardinal Soglia to nuncio Viale Prelà at Innsbruck",
    "date": "Rome, 15 June 1848",
    "primary": "L'Italia del Popolo no. 40 (Milan, 30 June 1848), Roman broadsheet reprint",
    "secondary": "Cipherbrain challenge (Klaus Schmeh, 13 Dec 2014)",
    "cipherbrain": true,
-   "summary": "A 64-cell two-digit table with homophones and syllables, 5 as word separator, and an alphabetical one-part code. It is a counter-order: stay with the Emperor and suspend the request for passports. Ten code words read from context; 11 code groups open."},
-  {"slug": "swieten1757", "profile": "swieten1757", "section": "ct",
+   "summary": "A 64-cell two-digit table with homophones and syllables, 5 as word separator, and an alphabetical one-part code. It is a counter-order: stay with the Emperor and suspend the request for passports. Ten code words read from context; 11 code groups open.",
+   "primary_links": [],
+   "secondary_links": [
+    [
+     "Cipherbrain, 13 Dec 2014",
+     "https://scienceblogs.de/klausis-krypto-kolumne/2014/12/13/wer-knackt-die-verschluesselte-nachricht-von-kardinal-soglia/"
+    ]
+   ]
+  },
+  {
+   "slug": "swieten1757",
+   "profile": "swieten1757",
+   "section": "ct",
    "title": "Gottfried van Swieten to Count Cobenzl",
    "date": "Bonn, 1757-59",
    "primary": "Archives générales du Royaume, Brussels, Secrétairerie d'État et de Guerre 1236",
    "secondary": "DECODE R955-R957 (non-decrypted)",
-   "summary": "The 1759 table (groups 100-442) was rebuilt ciphertext-only by monotone annealing against French, then corrected by hand. The despatches cover the Gueldre convention and Soubise's army. 96% of 553 groups read."},
-  {"slug": "kauderbach1754", "profile": "kauderbach1754", "section": "ct",
+   "summary": "The 1759 table (groups 100-442) was rebuilt ciphertext-only by monotone annealing against French, then corrected by hand. The despatches cover the Gueldre convention and Soubise's army. 96% of 553 groups read.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "kauderbach1754",
+   "profile": "kauderbach1754",
+   "section": "ct",
    "title": "Johann Heinrich Kauderbach (The Hague) to Brühl / Friedrich August II",
    "date": "1754-56",
    "primary": "Koninklijk Huisarchief, The Hague, Prins Willem V inv. 201",
    "secondary": "DECODE R1043, R1044, R1954, R1958, R1959, R2078-R2082 (\"never solved\" by the Hague cabinet)",
-   "summary": "Unseparated figures in which 5 and 8 are nulls; one key serves all ten despatches. It was found by one-to-one annealing onto the vocabulary of his 1761 key. All ten despatches read at 65-97%, covering the Dutch augmentation debate and the Treaty of Versailles."},
-  {"slug": "potocka1714", "profile": "potocka1714", "section": "ct",
+   "summary": "Unseparated figures in which 5 and 8 are nulls; one key serves all ten despatches. It was found by one-to-one annealing onto the vocabulary of his 1761 key. All ten despatches read at 65-97%, covering the Dutch augmentation debate and the Treaty of Versailles.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "potocka1714",
+   "profile": "potocka1714",
+   "section": "ct",
    "title": "Potocka and Mniszech to Jakub Dunin",
    "date": "1714-16",
    "primary": "Archiwum Narodowe w Krakowie, Archiwum Sanguszków",
    "secondary": "DECODE R7524-R7530, R7534-R7536",
-   "summary": "Potocka's alphabet was broken from a Polish postscript and carried over to eight French letters; 97.3% of Potocka tokens valued. Mniszech's letter is still unread."},
-  {"slug": "r1854", "profile": "r1854", "section": "ct",
+   "summary": "Potocka's alphabet was broken from a Polish postscript and carried over to eight French letters; 97.3% of Potocka tokens valued. Mniszech's letter is still unread.",
+   "primary_links": [
+    [
+     "szukajwarchiwach",
+     "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/41995540/obiekty/1601530"
+    ]
+   ],
+   "secondary_links": []
+  },
+  {
+   "slug": "r1854",
+   "profile": "r1854",
+   "section": "ct",
    "title": "Four cipher letters to Gianfrancesco Gonzaga, lord of Mantua",
    "date": "1428-1430",
    "primary": "Archivio di Stato di Mantova, Archivio Gonzaga",
    "secondary": "DECODE R1854 (partially decrypted; catalogued as one letter)",
-   "summary": "Two keys rebuilt ciphertext-only: Rome, 9 Aug 1428 (96.6%) and Cattanei, Feb 1430 (96.7%). A third letter was re-deciphered from its interlinear gloss. Pandolfo Malatesta's own runs remain open. 91.5% of all signs read."},
-  {"slug": "rangone1530", "profile": "rangone1530", "section": "ct",
+   "summary": "Two keys rebuilt ciphertext-only: Rome, 9 Aug 1428 (96.6%) and Cattanei, Feb 1430 (96.7%). A third letter was re-deciphered from its interlinear gloss. Pandolfo Malatesta's own runs remain open. 91.5% of all signs read.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "rangone1530",
+   "profile": "rangone1530",
+   "section": "ct",
    "title": "Guido Rangone (Venice) to Anne de Montmorency",
    "date": "24 Dec 1529 and 10 Jan 1530",
    "primary": "BnF, français 3070 f. 81 no. 40 and français 3082 f. 42 no. 19",
    "secondary": "DECODE R4249; Tomokiyo, cryptiana (francis.htm) lists both as undeciphered",
-   "summary": "A homophonic substitution of about 50 signs for Italian, broken by annealing. Both passages concern Cesare Fregoso. 87.9% of signs read; four short runs are too short to resolve."},
-  {"slug": "stowe166", "profile": "stowe166", "section": "ct",
+   "summary": "A homophonic substitution of about 50 signs for Italian, broken by annealing. Both passages concern Cesare Fregoso. 87.9% of signs read; four short runs are too short to resolve.",
+   "primary_links": [
+    [
+     "Gallica fr. 3082",
+     "https://gallica.bnf.fr/ark:/12148/btv1b9060318p/f65.item"
+    ],
+    [
+     "Gallica Clair. 331 copy",
+     "https://gallica.bnf.fr/ark:/12148/btv1b9000761d/f15.item"
+    ]
+   ],
+   "secondary_links": [
+    [
+     "francis.htm",
+     "https://cryptiana.web.fc2.com/code/francis.htm"
+    ]
+   ]
+  },
+  {
+   "slug": "stowe166",
+   "profile": "stowe166",
+   "section": "ct",
    "title": "Thomas Edmondes (at Henri IV's court) to Lord Treasurer Burghley",
    "date": "Jan 1592 - Jul 1594",
    "primary": "British Library, Stowe MS 166, ff. 50-61, 109-112",
    "secondary": "DECODE R7770-R7775 (\"Lord Threr? to unknown recipient\")",
-   "summary": "Six letters from the King's camp with lines in invented signs: a simple substitution of English with homophones and person signs, broken from the clear context. Everything reads except four lines on f. 59."},
-  {"slug": "guiche1551", "profile": "guiche1551", "section": "ct",
+   "summary": "Six letters from the King's camp with lines in invented signs: a simple substitution of English with homophones and person signs, broken from the clear context. Everything reads except four lines on f. 59.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "guiche1551",
+   "profile": "guiche1551",
+   "section": "ct",
    "title": "Claude de La Guiche, bishop of Mirepoix (Rome), to Montmorency",
    "date": "22 Nov 1551",
    "primary": "BnF, français 3138 no. 22, f. 60v",
    "secondary": "BnF catalogue (Gallica harvest)",
-   "summary": "A 406-sign passage in 22 invented signs, broken by permutation annealing. It covers the Count of Santa Fiora, 'mal satisfaict' and ready to serve the king on conditions. Seure's Lisbon letters in the same file are left open."},
-  {"slug": "r1892", "profile": "r1892", "section": "ct",
+   "summary": "A 406-sign passage in 22 invented signs, broken by permutation annealing. It covers the Count of Santa Fiora, 'mal satisfaict' and ready to serve the king on conditions. Seure's Lisbon letters in the same file are left open.",
+   "primary_links": [
+    [
+     "Gallica",
+     "https://gallica.bnf.fr/ark:/12148/btv1b90601662/f65.item"
+    ]
+   ],
+   "secondary_links": []
+  },
+  {
+   "slug": "r1892",
+   "profile": "r1892",
+   "section": "ct",
    "title": "An Orange prince to an officer of the Dutch émigré troops",
    "date": "c. 1795",
    "primary": "Koninklijk Huisarchief, The Hague, Prins Willem V inv. 339",
    "secondary": "DECODE R1892 (non-decrypted)",
-   "summary": "Vertical digit pairs from a 6x6 square, recovered by quadgram annealing on the Dutch postscript; the square then read the French page unchanged. The letter concerns General Dundas, pay and embarkation. 94% of cipher tokens read; about thirty word signs open."},
-  {"slug": "baner1640", "profile": "baner1640", "section": "cipherbrain",
+   "summary": "Vertical digit pairs from a 6x6 square, recovered by quadgram annealing on the Dutch postscript; the square then read the French page unchanged. The letter concerns General Dundas, pay and embarkation. 94% of cipher tokens read; about thirty word signs open.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "baner1640",
+   "profile": "baner1640",
+   "section": "cipherbrain",
    "title": "Johan Banér to Torsten Stålhandske (intercepted copy)",
    "date": "Hof, 29 Dec 1640",
    "primary": "Archivio della Pontificia Università Gregoriana, APUG 568 f. 239 (Kircher correspondence)",
    "secondary": "Cipherbrain challenge (Klaus Schmeh, 2 June 2019)",
-   "summary": "A homophonic two-digit alphabet with 14 code words; none of the Swedish keys on DECODE fits. The key was rebuilt from context cribs (durch, und): the letter orders a march toward the Upper Palatinate. 89.8% of tokens read; the code words are open."},
-  {"slug": "mellon136", "profile": "mellon136", "section": "cipherbrain",
+   "summary": "A homophonic two-digit alphabet with 14 code words; none of the Swedish keys on DECODE fits. The key was rebuilt from context cribs (durch, und): the letter orders a march toward the Upper Palatinate. 89.8% of tokens read; the code words are open.",
+   "primary_links": [],
+   "secondary_links": [
+    [
+     "Cipherbrain, 2 June 2019",
+     "https://scienceblogs.de/klausis-krypto-kolumne/2019/06/02/an-unsolved-encrypted-letter-from-the-17th-century/"
+    ]
+   ]
+  },
+  {
+   "slug": "mellon136",
+   "profile": "mellon136",
+   "section": "cipherbrain",
    "title": "Pseudo-Arndt, \"Das zweyte Silentium Dei\"",
    "date": "Glücksbrunn, 1798",
    "primary": "Beinecke Library, Mellon MS 136, pp. 24-76",
    "secondary": "Cipherbrain (Klaus Schmeh, 4 March 2022); DECODE R2873",
-   "summary": "Read with the key drawn in the book itself (p. 83), so no key was recovered. All 31 cipher passages (1,545 signs) were transcribed and read. Page 24 had already been read by Lasry and Kopal (Cipherbrain 2022); five short passages are read here for the first time and earlier readings corrected."},
-  {"slug": "urquhart", "profile": "urquhart", "section": "cipherbrain",
+   "summary": "Read with the key drawn in the book itself (p. 83), so no key was recovered. All 31 cipher passages (1,545 signs) were transcribed and read. Page 24 had already been read by Lasry and Kopal (Cipherbrain 2022); five short passages are read here for the first time and earlier readings corrected.",
+   "primary_links": [
+    [
+     "Yale digital collections",
+     "https://collections.library.yale.edu/catalog/10187248"
+    ]
+   ],
+   "secondary_links": [
+    [
+     "Cipherbrain, 4 March 2022",
+     "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/"
+    ]
+   ]
+  },
+  {
+   "slug": "urquhart",
+   "profile": "urquhart",
+   "section": "cipherbrain",
    "title": "Thomas Urquhart's Cyphral Octastich",
    "date": "1652",
    "primary": "Last leaf of Ekskybalauron / The Jewel (London, 1652); Jack and Lyall edition (1983), p. 212",
    "secondary": "Schmeh's Top 50 no. 28 (Cipherbrain, 2015); HCPortal transcription",
-   "summary": "A book cipher on the book itself, verified independently: 238 of 284 hits against shuffled controls, reading a royalist prayer for Charles II. The same rule and plaintext had been published by Vals AI in Aug 2026, so this is a verification, not a first break. The distich claim was not reproduced."}
+   "summary": "A book cipher on the book itself, verified independently: 238 of 284 hits against shuffled controls, reading a royalist prayer for Charles II. The same rule and plaintext had been published by Vals AI in Aug 2026, so this is a verification, not a first break. The distich claim was not reproduced.",
+   "primary_links": [],
+   "secondary_links": [
+    [
+     "Top 50 list",
+     "https://scienceblogs.de/klausis-krypto-kolumne/the-top-50-unsolved-encrypted-messages/"
+    ],
+    [
+     "HCPortal",
+     "https://crypto.hcportal.eu"
+    ]
+   ]
+  }
  ],
  "excluded": [
-  {"slug": "egmond", "why": "independent re-solution; Lasry solved it in 2023 (key on cryptiana GL.htm)"},
-  {"slug": "lorraine1592", "why": "independent re-solution; Tomokiyo solved it in 2025 (cryptiana unsolved list)"},
-  {"slug": "sp106r927", "why": "independent re-solution; decoded by Sheila Richards, Secret Writings (1973), per Lasry"},
-  {"slug": "soria1523", "why": "reclassed: key B was recovered from an external plaintext (the R9844 decipherment)"}
+  {
+   "slug": "egmond",
+   "why": "independent re-solution; Lasry solved it in 2023 (key on cryptiana GL.htm)"
+  },
+  {
+   "slug": "lorraine1592",
+   "why": "independent re-solution; Tomokiyo solved it in 2025 (cryptiana unsolved list)"
+  },
+  {
+   "slug": "sp106r927",
+   "why": "independent re-solution; decoded by Sheila Richards, Secret Writings (1973), per Lasry"
+  },
+  {
+   "slug": "soria1523",
+   "why": "reclassed: key B was recovered from an external plaintext (the R9844 decipherment)"
+  }
  ]
 }
