@@ -10782,3 +10782,13 @@ line; no progress either way. Not measured before registering.
 - **SH1** Half 1 -> half 2: matches above the shuffles (p < 0.05).
 - **SH2** Half 2 -> half 1: the same.
 - **SH3** Progress rule: none (validation; recorded as failing).
+
+## Results of the three-hundred-and-eighth set (added after the test; `predict_test308.py`, `results/predict_test308.md`)
+
+One held, two failed. Learned on half the texts, set 307's configuration finds 91 units, and 80 of their 384 matches on
+the other half carry the unit's picture (21%, p = 0.002; SH1); the other way, 70 units, 62 of 246 (25%, p = 0.058;
+SH2 fails). The tuned line is not confirmed independently in both directions, and its held-out precision is low: the
+2.28% is downgraded, as registered, to an unconfirmed upper figure (PROGRESS tier 1 cell). The step-by-step tuning of
+sets 287-307 found real signal (one direction clearly significant) but its precision is far below the in-sample
+purity (67%+). Next: the same split-half check on the earlier configurations, to find the largest one confirmed both
+ways. Progress: none (streak 1). Tally, counting parts: 1517 held, 1429 failed (2946 registered).

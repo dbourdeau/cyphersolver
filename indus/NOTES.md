@@ -2976,6 +2976,11 @@ held, 1427 failed.
 Registered first (6c990acde). 185 units, FDR 7.8%; referent line 1.89% -> 2.28%. The step-by-step tuning since set 287
 needs an independent check before any further loosening. Progress (streak 0). Tally 1516 held, 1427 failed.
 
+## Three-hundred-and-twenty-second pass (25 Sept 2026): decipherment loop 133, split-half check of the tuned referents
+
+Registered first (42f765d9d). Mixed: p = 0.002 one way, 0.058 the other; held-out precision 21-25%. The 2.28% referent
+line is an unconfirmed upper figure. No progress (streak 1). Tally 1517 held, 1429 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
