@@ -2653,6 +2653,12 @@ failed.
 Registered first (4c057acf2). 5 pairs tied to a minority object class (4 tags, 1 pottery; null median 0); tags may be
 unrecovered seals' texts. Reported beside V. Progress: streak 0. Tally 1423 held, 1301 failed.
 
+## Two-hundred-and-sixty-first pass (25 Sept 2026): decipherment loop 72, site-bound phrases
+
+Registered first (85fd6d1cd). The four 'Lothal' pairs are repeated impressions of two seals on the Lothal sealings,
+counted as distinct texts through partial transcriptions. Set 246's tag result is the same artefact; progress for
+loops 71 and 72 withdrawn (streak 4). Tally 1425 held, 1302 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

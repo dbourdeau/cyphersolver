@@ -141,4 +141,5 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 68 | 243 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 1: 8 referent pairs across distinct moulded designs (gharial, tree 806 158, bull); referent line 0.61% to 0.84% (progress; streak 0) |
 | 69 | 244 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish pairs more picture-diverse in both samples but not significant (small n) (no progress; streak 1) |
 | 70 | 245 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish pairs not more animal-diverse on seals; tablet direction does not replicate (no progress; streak 2) |
-| 71 | 246 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | phrases tied to object class: 5 pairs (4 tags, 1 pottery; null 0), reported beside V; tags may be unrecovered seals (progress; streak 0) |
+| 71 | 246 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | phrases tied to object class: 5 pairs (4 tags, 1 pottery); **withdrawn after set 247**: the tag pairs are repeated Lothal sealings of two seals (no progress; streak 3) |
+| 72 | 247 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | site-bound pairs all from Lothal sealings (two seals, partial transcriptions counted as distinct texts); artefact (no progress; streak 4) |

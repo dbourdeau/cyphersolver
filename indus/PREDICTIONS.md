@@ -9488,6 +9488,9 @@ shuffle median of 0 (95th percentile 1; OF1): four on tags / sealings (2 48, 705
 of seals not recovered rather than words for the tag's function. Reported beside the tier-1 V line, not added to it.
 Progress by the registered rule: streak 0. Tally, counting parts: 1423 held, 1301 failed (2724 registered).
 
+**Withdrawn after set 247**: the four tag pairs are repeated impressions of two Lothal seals, counted as distinct
+texts through partial transcriptions; only the pottery pair 32 999 remains, which does not meet the rule. No progress.
+
 # Two-hundred-and-forty-seventh set, registered before testing (25 September 2026): decipherment loop 72, phrases tied to a site: toponym candidates (three hypotheses)
 
 Streak 0. A place name or local title would recur at one site. The picture-referent method (validated on Linear B)
@@ -9499,3 +9502,15 @@ objects, 1,000 times.
 - **TS1** More pairs qualify for sites other than Mohenjo-daro and Harappa than in 95% of shuffles.
 - **TS2** Qualifying pairs are found for at least two different minority sites.
 - **TS3** Progress rule: TS1 holds (site-bound phrases: toponym or local-title candidates, checkable by find site).
+
+## Results of the two-hundred-and-forty-seventh set (added after the test; `predict_test247.py`, `results/predict_test247.md`)
+
+Two held, one failed. Four pairs are bound to a minority site, all Lothal (TS1 holds by its rule; TS2 fails, one
+site): 2 48, 55 220, 705 500, 1 55. **Check after the test**: all four come from the Lothal sealings, many impressions
+of two seals, 817 2 48 740 and 705 500 741 1 55 220 740 90, and the '2+ distinct texts' requirement was met only by
+partial transcriptions of the same impressions (817 2 48 against 817 2 48 740). They are repeated impressions, not
+toponyms or local titles. The same four pairs made set 246's 'tag' result. **Both sets' progress is withdrawn**:
+set 246 (loop 71) keeps only its single pottery pair (32 999), which does not meet its rule, and set 247 (loop 72)
+shows nothing. No progress: loop 71 streak 3, loop 72 streak 4. Lesson: distinct-text requirements must merge
+transcriptions that are sub-strings of one another (the same object text read in part). Tally, counting parts: 1425
+held, 1302 failed (2727 registered).
