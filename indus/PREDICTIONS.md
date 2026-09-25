@@ -10664,3 +10664,14 @@ All three failed. With family units the vault reaches 386 held-out tablets and g
 rises to 9: excess +63 against set 298's +64 (VF1), accuracy 18.7% (VF2). The family units reach more tablets without
 adding referent knowledge: variant-spelling does not explain the tablets the sign units miss. Progress: none (streak 3).
 Tally, counting parts: 1504 held, 1424 failed (2928 registered).
+
+# Three-hundred-and-second set, registered before testing (25 September 2026): decipherment loop 127, the picture vault without catch-all votes (three hypotheses)
+
+Streak 3. Set 299's audit found that the codes Mult, Scene and Comp (several pictures, a scene, a composite) name a
+genre of tablet, not a thing. Here a unit whose qualifying picture is one of them does not vote, so the vote falls to
+units naming one thing; set 298's vault otherwise, all tablets remain targets (`predict_test302.py`). Not measured
+before registering.
+
+- **VG1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
+- **VG2** Accuracy on the predicted objects is at least 23.7%.
+- **VG3** Progress rule: VG1 holds (the tier 3 vault line rises).
