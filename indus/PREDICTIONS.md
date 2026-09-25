@@ -11240,3 +11240,10 @@ same rule (FDR <= 10%, largest coverage) and Linear B check (`predict_test332.py
 - **SF2** Without Bull1 units it covers more than 7.53%.
 - **SF3** Linear B with it recovers 2+ of the 4 control words, none wrong.
 - **SF4** Progress rule: SF1 and SF3 hold (the referent line uses that alpha).
+
+## Results of the three-hundred-and-thirty-second set (added after the test; `predict_test332.py`, `results/predict_test332.md`)
+
+All four held. Alpha 0.0025: 412 units, FDR 8.5%, coverage 23.77% (7.85% without Bull1 units); 0.003 FDR 11.1%; 0.004
+11.8%. The rule chooses 0.0025 (SF1, SF2); the Linear B control passes (SF3). A small step. (Two labels in the script
+read SA1 / SA3 and its docstring named the wrong results file; corrected in text only.) `prizebench.referent_fixed`
+uses alpha 0.0025. Progress: streak 0. Tally, counting parts: 1551 held, 1464 failed (3015 registered).

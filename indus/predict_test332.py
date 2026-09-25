@@ -2,7 +2,7 @@
 combined pool of set 330 at intermediate alphas (0.0025, 0.003, 0.004; set 330 chose 0.002, FDR 7.3%; 0.005 gave 14.3%): the alpha with FDR <=
 10% (100 picture shuffles) and the largest coverage is chosen, the Linear B control re-run with it; coverage without
 units labelled Bull1 (the default seal animal, possibly a seal type rather than a word) is reported beside it.
-Writes results/predict_test330.md."""
+Writes results/predict_test332.md."""
 import rtools as R
 import referents as X
 from predict_test200 import objects
@@ -43,7 +43,7 @@ def main():
     rd.rec('SF1', 'an alpha with FDR <= 10% gives coverage above 23.52%', 'alpha %s: %.2f%%' % (best, 100 * res[best][2] if best else 0), ok1)
     rd.rec('SF2', 'without Bull1 units that alpha covers more than 7.53%', '%.2f%%' % (100 * res[best][3] if best else 0), best is not None and res[best][3] > 0.0753)
     rd.rec('SF3', 'Linear B with that alpha: 2+ of 4 control words, none wrong', 'recovered %d, wrong %d' % (len(rec), len(wrong)), len(rec) >= 2 and not wrong)
-    rd.rec('SF4', 'progress rule: SA1 and SA3 (the referent line uses the combined pool at that alpha)', 'SF1 %s, SA3 %s' % (ok1, len(rec) >= 2 and not wrong), ok1 and len(rec) >= 2 and not wrong)
+    rd.rec('SF4', 'progress rule: SF1 and SF3 (the referent line uses the combined pool at that alpha)', 'SF1 %s, SF3 %s' % (ok1, len(rec) >= 2 and not wrong), ok1 and len(rec) >= 2 and not wrong)
     rd.finish()
 
 
