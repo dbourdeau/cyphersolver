@@ -9806,3 +9806,17 @@ the strict head class (5+ heads, more often head than modifier) only a quarter o
 FX13's 67% (any sign that ever heads a name): closers take mostly their own preceding signs (FX7), not the 740 heads.
 The name frame does not transfer to closer lines on the evidence of B; `roles` unchanged. Progress: none (streak 6).
 Tally, counting parts: 1441 held, 1336 failed (2777 registered).
+
+# Two-hundred-and-sixty-first set, registered before testing (25 September 2026): decipherment loop 86, three grammar rules for unparsed lines (four hypotheses)
+
+Streak 6. LOW-POST's grammar (parse6) leaves 831 of 2,722 A lines unparsed; 53 of them end in 740, blocked by a caged
+sign, a 400 / 90 or a second ending inside the line (looked at before registering; margins not measured). Three rules,
+each scored by the G margin over within-line shuffles (`predict_test261.py`): CAGE-OPEN (a caged sign opens the line and
+the rest parses as a name), MID-POST (1-3 lexical signs, 400 / 90, then a rest that parses), NAME-NAME (a name followed
+by a second name). SEQ (set 192) showed that splitting rules can parse shuffles as well as real lines; the margin
+decides.
+
+- **GR1** CAGE-OPEN raises the margin on A by 0.3 point or more and raises it on B.
+- **GR2** MID-POST, the same.
+- **GR3** NAME-NAME, the same.
+- **GR4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
