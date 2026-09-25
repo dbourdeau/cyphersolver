@@ -9242,3 +9242,13 @@ convention (Bennett numbers *233, *254 and the adjunct KO, where DAMOS names the
 (no progress: streak 1); a fresh registration with the key in DAMOS naming is the proper next step. a-mo, i-qo,
 e-ke-a and sa-sa-ma do not qualify (too few lines, or mixed pictures). Tally, counting parts: 1406 held, 1279 failed
 (2685 registered).
+
+# Two-hundred-and-thirty-fifth set, registered before testing (25 September 2026): decipherment loop 60, the Linear B referent control with a key in DAMOS naming (three hypotheses)
+
+Streak 1. Set 234's answer key used the wrong ideogram convention. A fresh key, in DAMOS's own ideogram names, of word
+types not looked at before: a-mo-ta / ROTA (wheels), e-ra-wa / OLIV (olives), ko-wa / MUL (girls, counted with the
+women), pa-we-a / *146 (cloths). Method and line picture exactly as set 234 (predict_test234.qualify).
+
+- **LD1** The method recovers 2 or more of the 4 pairs.
+- **LD2** None of the 4 qualifies with another ideogram.
+- **LD3** Progress rule: LD1 holds (with set 234's LR2, the method passes a known-answer control: gate 3 of 6).
