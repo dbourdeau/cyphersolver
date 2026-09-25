@@ -8783,3 +8783,15 @@ first sign carries information about the whole line, as the heading and name-ope
 component's weight falls to zero beside it). first enters the model; the metric run gives S 4.610 (26.5% explained),
 SIGN 39.8% / 62.1%, WORD top-10 3.9%. Progress: streak 0. Tally, counting parts: 1353 held, 1247 failed (2600
 registered).
+
+# Two-hundred-and-fourteenth set, registered before testing (24 September 2026): decipherment loop 39, opening sign by position (four hypotheses)
+
+Metric after loop 38: S 4.610 (trik + pos + end + f4k + first); streak 0. A design run on the training lines' own
+split: conditioning on the opening sign and the position class together (firstpos: first sign x first / middle /
+last-but-one / last) in place of first gives 4.6690 -> 4.6513; the opening sign's graphic family adds nothing
+(4.6695).
+
+- **FP1** S on the fixed test with firstpos in place of first beats the current model by 0.005 bits or more.
+- **FP2** The same A -> B.
+- **FP3** SIGN top-1 on the fixed test does not fall.
+- **FP4** Progress rule: FP1 and FP2 hold (firstpos replaces first).
