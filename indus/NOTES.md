@@ -2787,6 +2787,11 @@ agreeing with LOW-POST. No new role. No progress (streak 3). Tally 1457 held, 13
 Registered first (e527216d6). Strict-head two-sign frames are already parsed; H-LOW lowers the margins. No progress
 (streak 4). Tally 1457 held, 1365 failed.
 
+## Two-hundred-and-eighty-sixth pass (25 Sept 2026): decipherment loop 97, modified Kneser-Ney discounts
+
+Registered first (56556cc74). Three discounts (0.79, 1.22, 1.22) do no better than one (S 4.6354 -> 4.6357; A -> B and
+SIGN worse). No progress (streak 5). Tally 1457 held, 1369 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

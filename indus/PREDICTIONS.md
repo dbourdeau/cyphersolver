@@ -10049,3 +10049,10 @@ the standard improvement on small data. Component trimk replaces trik (`predict_
 - **MK2** The same A -> B (any fall).
 - **MK3** SIGN top-1 does not fall.
 - **MK4** Progress rule: MK1, MK2 and MK3 hold (trimk then replaces trik in MODEL).
+
+## Results of the two-hundred-and-seventy-second set (added after the test; `predict_test272.py`, `results/predict_test272.md`)
+
+All four failed. The count-of-counts estimates are D1 0.786, D2 1.225, D3+ 1.224, close to the single D = 0.75 for the
+singletons that dominate; with them S on the fixed test is 4.6357 against 4.6354 (MK1), A -> B worsens (5.1927 ->
+5.2145; MK2) and SIGN top-1 falls 39.7% -> 39.6% (MK3). The trigram's smoothing is not where S can be gained. Progress:
+none (streak 5). Tally, counting parts: 1457 held, 1369 failed (2826 registered).
