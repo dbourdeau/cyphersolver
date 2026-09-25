@@ -10647,3 +10647,13 @@ One held, two failed. Over description families the method finds 74 units (sign 
 tokens (FV2), but the shuffles give 8.5 on average, FDR 11.5%, over the registered 10% (FV1, FV3 fail): a family unit
 matches more texts, by chance as well as by variant spelling. Not adopted. Progress: none (streak 2). Tally, counting
 parts: 1504 held, 1421 failed (2925 registered).
+
+# Three-hundred-and-first set, registered before testing (25 September 2026): decipherment loop 126, the picture vault with sign-family units (three hypotheses)
+
+Streak 2. Family units failed the 10% FDR rule as a list (set 300) but, as with single signs (set 294), the vault checks
+units on held-out tablets. Here set 298's vault (all unit kinds, cross-pool fallback) also votes with every unit kind
+formed over Parpola's description families (`predict_test301.py`). Not measured before registering.
+
+- **VF1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
+- **VF2** Accuracy on the predicted objects is at least set 298's 23.7%.
+- **VF3** Progress rule: VF1 holds (the tier 3 vault line rises).
