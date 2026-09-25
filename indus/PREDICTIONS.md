@@ -10598,3 +10598,11 @@ pool's units (set 294's units and criterion otherwise), scored by the excess ove
 - **VC1** The excess over the shuffle median is above +60, with p < 0.05 against 200 shuffles.
 - **VC2** More than 191 held-out tablets get a prediction.
 - **VC3** Progress rule: VC1 holds (the tier 3 vault line rises).
+
+## Results of the two-hundred-and-ninety-eighth set (added after the test; `predict_test298.py`, `results/predict_test298.md`)
+
+All three held. With the other pool's units as a fallback, the vault predicts 295 held-out tablets (VC2) and gets 70
+right (23.7%) against a shuffle median of 6: excess +64, above set 294's +60 (p = 0.005; VC1). The gain is small: the
+104 tablets reached only through the other pool add about 4 correct predictions beyond chance, so the labels mostly do
+not travel between pools (as set 243 found), though a few do. Tier 3's vault cell now includes this line. Progress:
+the vault excess rises (streak 0). Tally, counting parts: 1500 held, 1419 failed (2919 registered).

@@ -2926,6 +2926,11 @@ Tally 1497 held, 1416 failed.
 Registered first (73e40744f). Excess +57 against +60; weighting does not help. No progress (streak 3). Tally 1497 held,
 1419 failed.
 
+## Three-hundred-and-twelfth pass (25 Sept 2026): decipherment loop 123, picture vault with a cross-pool fallback
+
+Registered first (60b1c1ae6). 70 of 295 right, excess +64 against +60; fallback adds about 4 beyond chance. Progress,
+small (streak 0). Tally 1500 held, 1419 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
