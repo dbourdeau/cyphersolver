@@ -9873,3 +9873,16 @@ opens lines without a name ending too. Together A 49.21, B 36.92 (GN4). NUM-END 
 lowers both margins (46.68, 34.75): numerals do not close lines after a label; the order is count then label (set 215).
 The grammar becomes parse10; `progress.grammar_margin` uses it. Progress: G margin rises (streak 0). Tally, counting
 parts: 1448 held, 1341 failed (2789 registered).
+
+# Two-hundred-and-sixty-fourth set, registered before testing (25 September 2026): decipherment loop 89, three more grammar rules for unparsed lines (four hypotheses)
+
+Streak 0. Same method (sets 261-263), on the 774 A lines parse10 leaves unparsed, mostly all-lexical lines of 2-4 signs
+and short count-like lines (`predict_test264.py`): LABEL-ANY (any lexical sign + numeral run + 0-2 lexical signs; the
+LABEL-COUNT rule allows only A's ten commonest labels), NAME-TAIL (a name + exactly one lexical sign), OPEN-PRONE (2+
+lexical signs, the first opening 50%+ of its 5+ A occurrences, the last heading an A name at least once). Margins not
+measured before registering.
+
+- **GL1** LABEL-ANY raises the margin on A by 0.3 point or more and raises it on B.
+- **GL2** NAME-TAIL, the same.
+- **GL3** OPEN-PRONE, the same.
+- **GL4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
