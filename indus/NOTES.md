@@ -2861,6 +2861,12 @@ heading or ending slots. Tier 3 line: 21 of 49 top-1. Progress (streak 0). Tally
 Registered first (7d205a01d). The model beats a neighbour rule only narrowly (21 against 19 of 49; lexical 10 against
 7 of 29). The tier 3 line stands with that caveat. No progress (streak 1). Tally 1477 held, 1398 failed.
 
+## Three-hundredth pass (25 Sept 2026): decipherment loop 112, referent criteria calibrated by false-discovery rate
+
+Registered first (0e42fcb25). The owner asked to expand the referent method. Calibrated against picture shuffles, the
+looser criterion (2+ objects, 67%+ one picture) keeps FDR at 9.4% and the Linear B control passing: 55 units, referent
+line 0.79% -> 1.38%. Progress (streak 0). Tally 1481 held, 1398 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

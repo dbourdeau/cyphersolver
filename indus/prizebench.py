@@ -90,35 +90,13 @@ def word_task(tr, te, keys):
     return top1 / n, top10 / n, base1 / n, base10 / n, n
 
 
-def referent_fixed(DL):
-    """Set 233 (RF1-RF2): share of sign tokens in texts written on 3+ individually made pictured objects (copper,
-    incised tablets) with one picture on 80%+ of them: the referent is fixed by the picture (not a reading)."""
+def referent_fixed(DL, k=2, s=0.67):
+    """Set 233 (RF1-RF2): share of sign tokens in texts whose referent the picture fixes, plus qualifying sign pairs
+    (sets 237, 243, 254; part-texts merged). Criteria k objects, share s: set 287 (RX1-RX4) chose k 2, s 0.67 (FDR 9.4%
+    against picture shuffles; Linear B control passes); k 3, s 0.8 gives the earlier line (0.79%)."""
     import rtools as R
-    from predict_test200 import objects
-    from predict_test233 import qualifying
+    import referents as X
     A, B, rowsA, recs, F = R.load_all()
-    objs = objects(F, recs, ('TAB:C', 'TAB:I'))
-    q = qualifying(objs)
-    # set 237 (PL1-PL2): + tokens of qualifying sign pairs on the individually made tablets used
-    from predict_test237 import merged, qual
-    from predict_test254 import frag_objects
-    # audit after set 247: part-texts merged; set 254: pictured damaged tablets' legible runs added (no pair across a gap)
-    qp = {p: m for p, m in qual(merged(objs + frag_objects(('TAB:C', 'TAB:I')))).items() if '|' not in p}
-    used = {t for t, m in objs}
-    # set 243 (MR1-MR2): + qualifying pairs on moulded tablets (distinct texts = independent designs)
-    mo = objects(F, recs, ('TAB:B',))
-    qm = {p: m for p, m in qual(merged(mo + frag_objects(('TAB:B',)))).items() if '|' not in p}
-    usedm = {t for t, m in mo}
-    cov = 0
-    for t in DL:
-        if t in q:
-            cov += len(t)
-            continue
-        mark = set()
-        for pool, qq in ((used, qp), (usedm, qm)):
-            if t in pool:
-                for i in range(len(t) - 1):
-                    if t[i:i + 2] in qq:
-                        mark |= {i, i + 1}
-        cov += len(mark)
-    return cov / sum(len(t) for t in DL), len(q) + len(qp) + len(qm)
+    P = X.pools(F, recs)
+    u = X.units(P, k, s)
+    return X.coverage(DL, P, u), X.count(u)

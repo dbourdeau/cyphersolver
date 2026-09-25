@@ -10367,3 +10367,13 @@ it (`predict_test287.py`). Not measured before registering.
 - **RX2** A looser criterion with FDR <= 10% raises the coverage.
 - **RX3** Linear B with the chosen criterion recovers 2+ of the 4 control words, none with a wrong ideogram.
 - **RX4** Progress rule: RX2 and RX3 hold (`prizebench.referent_fixed` then uses the chosen criterion).
+
+## Results of the two-hundred-and-eighty-seventh set (added after the test; `predict_test287.py`, `results/predict_test287.md`, `referents.py`, `prizebench.referent_fixed`)
+
+All four held. False-discovery rates against 100 picture shuffles: k 3, s 0.8 (the old criterion) 27 units, shuffled
+mean 0.7, FDR 2.5% (RX1); k 3, s 0.67 38 units, FDR 5.5%; k 2, s 1.0 30 units, FDR 11.4%; k 2, s 0.67 55 units, shuffled
+mean 5.2, FDR 9.4%, coverage 1.38% (chosen by the registered rule; RX2). With the chosen criterion the Linear B control
+still recovers a-mo-ta (ROTA, wheel) and ko-wa (MUL, woman), none with a wrong ideogram (RX3). About 5 of the 55 units
+are expected to be chance; the old 27 are almost all real. `prizebench.referent_fixed` now uses k 2, s 0.67 (the old
+line is referent_fixed(DL, 3, 0.8)). Progress: the tier 1 referent line rises 0.79% -> 1.38% (streak 0). Tally,
+counting parts: 1481 held, 1398 failed (2879 registered).
