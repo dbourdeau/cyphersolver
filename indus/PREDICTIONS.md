@@ -11011,3 +11011,10 @@ registering.
 - **SC1** SIGN top-1 rises by 0.1 point or more.
 - **SC2** SIGN top-5 does not fall.
 - **SC3** Progress rule: SC1 and SC2 hold (the SIGN task uses 250 candidates).
+
+## Results of the three-hundred-and-twentieth set (added after the test; `predict_test320.py`, `results/predict_test320.md`)
+
+One held, two failed. With 250 candidates SIGN top-1 falls 39.79% -> 39.62% (SC1 fails) and top-5 rises 61.92% ->
+62.35% (SC2): the rare signs it can now reach are won back less often than they displace the right common sign at the
+top. The 150-candidate task stands. Progress: none (streak 6). Tally, counting parts: 1533 held, 1448 failed (2981
+registered).

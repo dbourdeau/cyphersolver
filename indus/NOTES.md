@@ -3038,6 +3038,11 @@ failed.
 Registered first (1ce5d9dcb). No transfer to seals (304 vs 310 expected, p = 0.78). No progress (streak 5). Tally 1532
 held, 1446 failed.
 
+## Three-hundred-and-thirty-fourth pass (25 Sept 2026): decipherment loop 145, SIGN with 250 candidates
+
+Registered first (63b3d438f). Top-1 falls (39.79% -> 39.62%), top-5 rises. No progress (streak 6). Tally 1533 held,
+1448 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
