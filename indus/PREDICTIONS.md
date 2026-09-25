@@ -9157,3 +9157,11 @@ lines):
 - **CC1** At Mohenjo-daro the pre-count slot is more concentrated than in shuffled lines (p < 0.05).
 - **CC2** The same at Harappa.
 - **CC3** Progress rule: CC1 and CC2 hold (the count label is shared by both cities: tier 4).
+
+## Results of the two-hundred-and-thirty-first set (added after the test; `predict_test231.py`, `results/predict_test231.md`)
+
+All three held. The slot before a count is restricted in each city: Mohenjo-daro top-ten share 51.0% of 151
+pre-count tokens (p = 0.001; CC1), Harappa 58.8% of 102 (p = 0.002; CC2). Counted as progress like sets 229-230; from
+the next loop on, per-subset replications of findings already made no longer count as progress under the stopping
+rule (they are consistency evidence, not new findings). Streak 0. Tally, counting parts: 1402 held, 1271 failed (2673
+registered).

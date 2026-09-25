@@ -2568,6 +2568,11 @@ before 740/520; stroked jars final 2/118, 4/43 vs plain 87-89%). Progress: strea
 Registered first (d75f0a9ed). Fish names take 520 on seals (60/120 vs 4/156) and tablets (14/33 vs 1/47). Progress:
 streak 0. Tally 1399 held, 1271 failed.
 
+## Two-hundred-and-forty-fifth pass (24 Sept 2026): decipherment loop 56, the count-label slot in each city
+
+Registered first (f06df8cb6). Pre-count slot restricted at Mohenjo-daro (p = 0.001) and Harappa (p = 0.002). Policy:
+per-subset replications no longer count as progress. Streak 0. Tally 1402 held, 1271 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
