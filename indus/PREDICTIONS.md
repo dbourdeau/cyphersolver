@@ -10194,3 +10194,17 @@ Two held, three failed. On B, 88 of the 106 lines of 3+ signs that open with 817
 sign is not a name head (A 5 of 29 against 7 of 51 earlier signs, p = 0.45; B 1 of 11 against 1 of 22, p = 0.56; HU2,
 HU3, HU5 fail): a heading + body without an ending is not a name. Progress: R rises (streak 0). Tally, counting parts:
 1460 held, 1391 failed (2851 registered).
+
+# Two-hundred-and-eightieth set, registered before testing (25 September 2026): decipherment loop 105, the object type as context (four hypotheses)
+
+Streak 0. Line length and genre depend on the medium (MM17, set 106), and copper tablets carry their own labels; the
+model never sees the medium. Each line is prefixed with a pseudo-sign for its object class from the full ICIT records
+(seal, tablet, tag, pot, other; 'unk' for the 32% of lines the records do not give, mostly M77 additions; commonest
+class for a line on several), so the contexts at the line start include it; the pseudo-sign is not scored
+(`predict_test280.py`). This uses what a reader of any inscription knows: the object it is on. Not measured before
+registering.
+
+- **TY1** S on the fixed test falls by 0.005 bits or more.
+- **TY2** The same A -> B (any fall).
+- **TY3** SIGN top-1 (with the prefix) does not fall.
+- **TY4** Progress rule: TY1, TY2 and TY3 hold (S and SIGN then condition on the object class).
