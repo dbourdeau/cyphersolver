@@ -9978,3 +9978,15 @@ The grammar's frames are edge and ending constraints the two-direction model alr
 components); knowing that a line parses adds nothing at the top rank. Third SIGN component in a row to fail (sets 257,
 259, 268): the SIGN task is near what these data give a local model. (A first run ended without writing its report;
 rerun unchanged.) Progress: none (streak 1). Tally, counting parts: 1456 held, 1353 failed (2809 registered).
+
+# Two-hundred-and-sixty-ninth set, registered before testing (25 September 2026): decipherment loop 94, three numeral rules for unparsed lines (four hypotheses)
+
+Streak 1. Same method (sets 261-266), on the 734 A lines parse11 leaves unparsed, many with a numeral inside
+(`predict_test269.py`): NUM-INFIX (1 lexical sign, a numeral run, then a sign that heads an A name), OPEN-NUM (an
+opening-prone sign, a numeral run, 0-1 lexical signs), MULTI-COUNT (2+ consecutive count units, each a numeral run + 1
+lexical sign). Margins not measured before registering.
+
+- **GX1** NUM-INFIX raises the margin on A by 0.3 point or more and raises it on B.
+- **GX2** OPEN-NUM, the same.
+- **GX3** MULTI-COUNT, the same.
+- **GX4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
