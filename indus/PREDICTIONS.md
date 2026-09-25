@@ -11036,3 +11036,12 @@ Both failed. With picture classes (bovine, plant merged) the configuration finds
 FDR rises to 12.4% (PC1 fails): the merged bovine class covers most individually made tablets, so a unit reaches the
 share criterion by chance as easily as on a seal pool dominated by the bull (sets 291, 311). The fine codes stay.
 Progress: none (streak 7). Tally, counting parts: 1533 held, 1450 failed (2983 registered).
+
+# Three-hundred-and-twenty-second set, registered before testing (25 September 2026): decipherment loop 147, the referent pools without catch-all objects (two hypotheses)
+
+Streak 7. Tablets coded Mult, Scene or Comp (several pictures, a scene, a composite) name no single thing (set 299) and
+dilute the share of every unit they carry. They are removed from both pools before set 312's configuration is run;
+combined FDR against 100 picture shuffles (`predict_test322.py`). Not measured before registering.
+
+- **PX1** The combined FDR is at or below 10% and coverage rises above 2.29%.
+- **PX2** Progress rule: PX1 holds (the referent pools drop the catch-all objects).
