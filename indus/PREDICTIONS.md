@@ -10958,3 +10958,10 @@ registering.
 - **WP1** WORD top-10 is 1 point or more above 3.4%.
 - **WP2** The prior takes weight on the development split (beta > 0).
 - **WP3** Progress rule: WP1 holds (the WORD task then uses this scorer).
+
+## Results of the three-hundred-and-seventeenth set (added after the test; `predict_test317.py`, `results/predict_test317.md`)
+
+All three failed. On the development split every beta gives 4 of 218 names in the top 10, so the rule keeps beta 0
+(WP2 fails); on the test lines the two-direction scorer stays at 10 of 232 (4.3%; WP1 fails). The model's line
+probability already carries the body's frequency. The WORD task is capped by the 54 test names seen whole in training.
+Progress: none (streak 3). Tally, counting parts: 1531 held, 1441 failed (2972 registered).

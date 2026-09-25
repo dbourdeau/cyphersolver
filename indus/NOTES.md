@@ -3023,6 +3023,11 @@ Registered first (268179f52). Held as registered, but inflated by nested units; 
 p = 0.12. Withdrawn. Lesson: exclude nested units in unit-pair statistics. No progress (streak 2). Tally 1531 held,
 1438 failed.
 
+## Three-hundred-and-thirty-first pass (25 Sept 2026): decipherment loop 142, WORD with a body-frequency prior
+
+Registered first (4db1febfb). The prior takes no weight; WORD stays 4.3% (two-direction). No progress (streak 3).
+Tally 1531 held, 1441 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
