@@ -11197,3 +11197,15 @@ Not measured before registering.
 - **SA2** Without Bull1 units that alpha still covers more than 5.43%.
 - **SA3** Linear B with that alpha recovers 2+ of the 4 control words, none wrong.
 - **SA4** Progress rule: SA1 and SA3 hold (the referent line uses the combined pool at that alpha; SA2 reported as the caveat).
+
+## Results of the three-hundred-and-thirtieth set (added after the test; `predict_test330.py`, `results/predict_test330.md`)
+
+All four held. With tablets, seals and tags in one pool: alpha 0.0001 258 units, FDR 0.8%, coverage 18.48% (6.02%
+without Bull1 units); 0.0005 321, 2.0%, 20.01% (6.81%); 0.001 347, 4.7%, 20.97% (7.24%); 0.002 390, 7.3%, 23.52% (7.53%);
+0.005 483, 14.3%, 29.31%. The rule chooses alpha 0.002 (SA1); the Linear B control passes (SA3); without Bull1 units
+the line is 7.53%, still above 5.43% (SA2). Most of the gain is units whose picture is the one-horned bull on seals:
+a phrase far commoner on bull seals than their 77% share predicts. That association is real (FDR 7.3%), but it may
+mark a type of seal (a workshop, a class of owner) rather than a word for the bull; set 238 saw the same slight excess.
+The PROGRESS tier 1 cell gives both figures. `prizebench.referent_fixed` builds the pool as the test does (a first
+version merged part-texts twice and gave 27.0%; fixed before recording). Progress: streak 0. Tally, counting parts:
+1545 held, 1462 failed (3007 registered).

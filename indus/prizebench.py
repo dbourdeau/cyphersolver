@@ -90,7 +90,7 @@ def word_task(tr, te, keys):
     return top1 / n, top10 / n, base1 / n, base10 / n, n
 
 
-def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, alpha=0.01):
+def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, alpha=0.002, seals=True, no_bull=False):
     """Set 233 (RF1-RF2): share of sign tokens in texts whose referent the picture fixes, plus qualifying sign pairs
     (sets 237, 243, 254; part-texts merged). Criteria k objects, share s: set 287 (RX1-RX4) chose k 2, s 0.67 (FDR 9.4%
     against picture shuffles; Linear B control passes); set 288 (RN1-RN4) added 3-sign runs (ns (2, 3), FDR 9.8%;
@@ -107,8 +107,17 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
         from predict_test304 import coverage
         from predict_test325 import build
         from predict_test237 import merged as _merged
-        P = {'made': (P['made'][0] + P['moulded'][0], _merged(P['made'][1] + P['moulded'][1]))}  # set 328: one pool, FDR 7.0%
+        if seals:  # set 330 (SA1-SA4): one pool of tablets, pictured seals and tags, alpha 0.002, FDR 7.3% (built as the test)
+            from predict_test200 import objects
+            from predict_test254 import frag_objects
+            T = ('SEAL:S', 'SEAL:R', 'SEAL', 'SEAL:C', 'SEAL:CY', 'TAG')
+            sc = objects(F, recs, T)
+            P = {'made': (P['made'][0] + P['moulded'][0] + sc, _merged(P['made'][1] + P['moulded'][1] + sc + frag_objects(T)))}
+        else:
+            P = {'made': (P['made'][0] + P['moulded'][0], _merged(P['made'][1] + P['moulded'][1]))}  # set 328: one pool, FDR 7.0%
         u = build(alpha)(P)
+        if no_bull:  # set 330 caveat: without units labelled Bull1 (the default seal animal)
+            u = {k: {g: m for g, m in v.items() if m != 'Bull1'} for k, v in u.items()}
         return coverage(DL, P, u), X.count(u)
     if families:  # set 304 (SF1-SF3): pairs and 3-sign runs over description families, 3+ objects, 80%+; FDR 9.6%
         from predict_test304 import coverage
