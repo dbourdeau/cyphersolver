@@ -11062,3 +11062,10 @@ registering.
 
 - **VT1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
 - **VT2** Progress rule: VT1 holds (the tier 3 vault line rises).
+
+## Results of the three-hundred-and-twenty-third set (added after the test; `predict_test323.py`, `results/predict_test323.md`)
+
+Both failed. Voting with the calibrated tier 1 configuration (64 correct of 373 predicted (17.2%); shuffles median 8, 95th percentile 20; p = 0.005), the vault's
+excess over the shuffle median is +56, below set 298's +64 with the loose unit kinds (VT1 fails): the stricter units
+reach fewer held-out tablets, and the vault gains from reach. Progress: none (streak 9). Tally, counting parts: 1533
+held, 1454 failed (2987 registered).

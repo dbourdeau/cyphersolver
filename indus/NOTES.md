@@ -3052,6 +3052,10 @@ Registered first (5056bb13e). Classes reach 2.84% but FDR 12.4%; not adopted. No
 
 Registered first (e27529dcd). Coverage 2.28%, FDR 10.2%; no gain. No progress (streak 8). Tally 1533 held, 1452 failed.
 
+## Three-hundred-and-thirty-seventh pass (25 Sept 2026): decipherment loop 148, picture vault with the tier 1 configuration
+
+Registered first (6dc8f2280). Excess +56 against +64. No progress (streak 9). Tally 1533 held, 1454 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
