@@ -9063,3 +9063,17 @@ independent grouping. Strokes (A p = 0.02, B 0.07), leaves (A 0.03, B 0.09) and 
 sample; the person family in neither (UA2). No new class enters M+ (UA1, UA4 fail). The fish remain the one depiction
 family whose members behave as one class. No progress: streak 4. Tally, counting parts: 1381 held, 1271 failed (2652
 registered).
+
+# Two-hundred-and-twenty-seventh set, registered before testing (24 September 2026): decipherment loop 52, one grammar across sites (five hypotheses)
+
+Metric: G margin A 47.3 / B 36.0; tier 4 (archaeological consistency) has the fish / 520 signal holding at every site
+and period (set 196); streak 4. A stronger consistency test: the grammar (grammar.parse5: G2 + LABEL-COUNT +
+EDGE-DOUBLE + CAGED-POST) with its learned parts (name heads, head statistics, count labels) taken from one site's
+distinct lines only, scored on another site's distinct lines as a margin over shuffled lines (grammar.margin). Sites
+from F (ICIT field 3): Mohenjo-daro, Harappa, other sites together.
+
+- **CS1** Learned on Mohenjo-daro, the margin on Harappa lines is 25 points or more.
+- **CS2** Learned on Harappa, the margin on Mohenjo-daro lines is 25 points or more.
+- **CS3** Learned on Mohenjo-daro + Harappa, the margin on the other sites is 20 points or more.
+- **CS4** The cross-site margins are within 10 points of the within-site margins (the learned site's own lines).
+- **CS5** Progress rule: CS1, CS2 and CS3 hold (one grammar serves every site: a tier-4 finding).
