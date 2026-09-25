@@ -3075,6 +3075,10 @@ passes; referent line 2.29% -> 4.79%. Progress (streak 0). Tally 1537 held, 1456
 Registered first (e31915e9b). Confirmed (1,275 against 631, p = 0.005) but held-out precision 14%. The line stands with
 the caveat. No progress (streak 1). Tally 1538 held, 1458 failed.
 
+## Three-hundred-and-forty-first pass (25 Sept 2026): decipherment loop 152, referent pools by tablet type
+
+Registered first (b002751e8). Coverage falls to 4.37%. No progress (streak 2). Tally 1538 held, 1460 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

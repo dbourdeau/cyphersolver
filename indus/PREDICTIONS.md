@@ -11140,3 +11140,10 @@ against 100 picture shuffles (`predict_test327.py`). Not measured before registe
 
 - **TY1** The combined FDR is at or below 10% and coverage rises above 4.79%.
 - **TY2** Progress rule: TY1 holds (the referent pools are split by tablet type).
+
+## Results of the three-hundred-and-twenty-seventh set (added after the test; `predict_test327.py`, `results/predict_test327.md`)
+
+Both failed. With copper (76 objects), incised (121) and moulded (359) as separate pools, the base-rate configuration
+finds 328 units (against 388), FDR 5.3%, coverage 4.37% against 4.79% (TY1 fails): a unit shared by copper and incised
+tablets loses its support when the pools are split, and the purer base rates do not make up for it. Progress: none
+(streak 2). Tally, counting parts: 1538 held, 1460 failed (2998 registered).
