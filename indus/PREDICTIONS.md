@@ -11544,3 +11544,9 @@ shuffles; Linear B control (`predict_test347.py`). Not measured before registeri
 - **WF1** FDR at or below 10% and coverage above 2.86%.
 - **WF2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
 - **WF3** Progress rule: WF1 and WF2 hold (the two kinds join the referent units).
+
+## Results of the three-hundred-and-forty-seventh set (added after the test; `predict_test347.py`, `results/predict_test347.md`)
+
+All three held. Family wide skip-pairs add 7 units (5-sign runs none): 111 units, FDR 7.2%, coverage 2.86% -> 3.04%
+(WF1); Linear B passes (WF2). `prizebench.referent_fixed` includes them. Progress: streak 0. Tally, counting parts:
+1576 held, 1491 failed (3067 registered).

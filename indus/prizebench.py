@@ -113,7 +113,9 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
         P = {'made': ([(o[0], o[1]) for o in clean], [(o[0], o[1]) for o in both])}
         _S.ALPHA = 0.002  # set 339 (MA1-MA4): FDR 6.8%, Linear B passes
         if -3 not in _S.SIGN:
-            _S.SIGN = tuple(_S.SIGN) + (-3,)  # set 346 (WS1-WS3): + wide skip-pairs; FDR 7.8%
+            _S.SIGN = tuple(_S.SIGN) + (-3, 5)  # sets 346-347: + wide skip-pairs, 5-sign runs
+        if -3 not in _S.FAM:
+            _S.FAM = tuple(_S.FAM) + (-3,)  # set 347 (WF1-WF3): + family wide skip-pairs; FDR 7.2%
         u = su(collapse(clean), collapse(both))
         if no_bull:
             u = {k: {g: m for g, m in v.items() if m != 'Bull1'} for k, v in u.items()}

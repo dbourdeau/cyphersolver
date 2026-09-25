@@ -3176,6 +3176,11 @@ line stays at 2.80%. No progress (streak 6). Tally 1570 held, 1491 failed.
 Registered first (43daf01c0). 6 units, FDR 7.8%: referent line 2.80% -> 2.86%. Progress, small (streak 0). Tally 1573
 held, 1491 failed.
 
+## Three-hundred-and-sixty-first pass (25 Sept 2026): decipherment loop 172, family wide skip-pairs and 5-sign runs
+
+Registered first (7f1db1f67). 7 family wide skip-pairs join (FDR 7.2%): referent line 2.86% -> 3.04%. Progress, small
+(streak 0). Tally 1576 held, 1491 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
