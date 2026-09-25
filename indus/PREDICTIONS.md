@@ -11587,3 +11587,14 @@ Two held; TW3 is the non-progress rule. On five split-halves both ways, set 348'
 held-out observations' pictures against a shuffle median of 91 (p = 0.005; TW1): the 4.57% line is confirmed; held-out
 precision 5% (TW2), about twice chance, as for set 340. (The match counter needed the decade-family keys, 9a64fd51c.)
 Progress: none (streak 1). Tally, counting parts: 1581 held, 1492 failed (3073 registered).
+
+# Three-hundred-and-fiftieth set, registered before testing (25 September 2026): decipherment loop 175, learned-class referent units (three hypotheses)
+
+Streak 1. Two groupings of signs gave referent units (description families, set 304; decade families, set 348). A third:
+50 distributional classes learned from the signs' neighbours in the distinct lines (famlm.learned_classes, seed 0; set
+201). Units over them (single, pair, 3-sign run, skip-pair, wide skip-pair) are added to set 348's units; combined FDR
+against 100 within-stratum shuffles; Linear B control (`predict_test350.py`). Not measured before registering.
+
+- **LC1** FDR at or below 10% and coverage above 4.57%.
+- **LC2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
+- **LC3** Progress rule: LC1 and LC2 hold (learned-class units join).

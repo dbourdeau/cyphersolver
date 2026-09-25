@@ -54,6 +54,9 @@ def fdr(P, build, seed):
     return tot / 100 / max(1, X.count(build(P)))
 
 
+LMAP = {}
+
+
 def coverage(DL, P, u):
     used = {lab: {t for t, m in P[lab][0]} for lab in P}
     cov = 0
@@ -68,10 +71,11 @@ def coverage(DL, P, u):
             lab, n = key
             fl = lab.startswith('F')
             dl = lab.startswith('D')  # set 348: decade-family units
-            pool = lab[1:] if (fl or dl) else lab
+            ll = lab.startswith('L')  # set 350: learned-class units (LMAP set at run time)
+            pool = lab[1:] if (fl or dl or ll) else lab
             if t not in used[pool]:
                 continue
-            tt = fam(t) if fl else tuple(g if g == '|' else ('f%d' % (int(g) // 10) if g.isdigit() else g) for g in t) if dl else t
+            tt = fam(t) if fl else tuple(g if g == '|' else ('f%d' % (int(g) // 10) if g.isdigit() else g) for g in t) if dl else tuple(LMAP.get(g, g) for g in t) if ll else t
             if n == -2:
                 mark |= {j for i in range(len(tt) - 2) if (tt[i], '_', tt[i + 2]) in qq for j in (i, i + 2)}
             elif n == -3:
