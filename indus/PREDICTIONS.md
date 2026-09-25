@@ -9532,3 +9532,15 @@ One held, two failed. A 2-bit bonus for candidates that leave the line parseable
 40.0% on the fixed test (below the registered 0.3 points; GP1 fails) and from 33.0% to 33.1% A -> B (GP2). The
 grammar and the n-gram model largely know the same things. Not adopted. No progress: streak 5. Tally, counting parts:
 1426 held, 1304 failed (2730 registered).
+
+# Two-hundred-and-forty-ninth set, registered before testing (25 September 2026): decipherment loop 74, the marker 400 without an ending (three hypotheses)
+
+Streak 5. 400 gets the role 'post-ending marker' only after an ending or closer. It also follows lexical signs
+directly ('131 400', '137 400', '226 400', 'x x 400'). If such lines are names with the ending left out, the sign
+before 400 should be head-like. Statistic as sets 223 / 236: mean head propensity of the sign directly before a 400
+that follows a lexical sign (not an ending, closer, caged sign or numeral), against frequency-matched draws, 1,000
+times.
+
+- **ZF1** In A the sign before such a 400 is more head-like than frequency-matched draws (p < 0.05).
+- **ZF2** The same in B's new lines.
+- **ZF3** Progress rule: ZF1 and ZF2 hold; then that sign gets 'name head' and the 400 'post-ending marker' in R.
