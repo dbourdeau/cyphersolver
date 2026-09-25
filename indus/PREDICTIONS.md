@@ -9936,3 +9936,16 @@ All four failed. COUNT-3 lowers both margins (A 49.41, B 37.04): a count takes a
 already says. HEAD-COUNT parses no line the grammar does not already parse (the heading before a count is covered).
 CAGE-MID raises A by 0.10 and B by 0.01 point, below the threshold: the cage opens lines, and rarely stands inside them.
 Progress: none (streak 2). Tally, counting parts: 1450 held, 1351 failed (2801 registered).
+
+# Two-hundred-and-sixty-seventh set, registered before testing (25 September 2026): decipherment loop 92, roles from the new grammar rules (four hypotheses)
+
+Streak 2. Sets 262-264 added frames whose edge signs have a fixed job the roles component does not count: end-prone
+signs close lines (END-PRONE), opening-prone signs open them (OPEN-PRONE), 400 closes a lexical body (BODY-400). The
+sign sets were learned from A; the roles are adopted only if the behaviour replicates on B's new lines
+(`predict_test267.py`; `progress.roles(edges=True)`: line-final end-prone sign = 'end-prone closer', line-initial
+opening-prone sign = 'opener', line-final 400 = 'line-final 400', each only where no earlier role applies).
+
+- **RL1** B: the end-prone signs end 50%+ of their occurrences.
+- **RL2** B: the opening-prone signs open 50%+ of their occurrences.
+- **RL3** B: 400 is line-final in 80%+ of its occurrences.
+- **RL4** Progress rule: RL1-RL3 hold and R rises; `roles` then uses the edge roles.

@@ -52,9 +52,21 @@ def structure(tr, te):
     return bits, h1
 
 
-def roles(DL):
+def edge_sets():
+    # sets 262 (END-PRONE), 264 (OPEN-PRONE): signs that end / open 50%+ of their 5+ A occurrences
+    from grammar import lexical
+    DA = sorted({tuple(t) for t in R.load_all()[0]})
+    occ = Counter(g for t in DA for g in t)
+    last, first = Counter(t[-1] for t in DA), Counter(t[0] for t in DA)
+    endp = {g for g in occ if occ[g] >= 5 and last[g] / occ[g] >= 0.5 and lexical(g)}
+    openp = {g for g in occ if occ[g] >= 5 and first[g] / occ[g] >= 0.5 and lexical(g)}
+    return endp, openp
+
+
+def roles(DL, edges=False):
     tot = got = 0
     by = Counter()
+    endp, openp = edge_sets() if edges else (set(), set())
     for t in DL:
         num_before = False
         nm = R.name_of(list(t))
@@ -89,6 +101,12 @@ def roles(DL):
                 role = 'name modifier'
             elif i + 1 < len(t) and t[i + 1] in R.NUMS and (i == 0 or t[i - 1] not in R.NUMS) and genre(t) == 'count':
                 role = 'count label'  # set 215 (CT1-CT3): the slot before a count is restricted (A, B; also without the heading)
+            elif i == len(t) - 1 and g in endp:
+                role = 'end-prone closer'  # set 267
+            elif i == 0 and g in openp:
+                role = 'opener'  # set 267
+            elif i == len(t) - 1 and g == '400':
+                role = 'line-final 400'  # set 267 (BODY-400, set 263)
             num_before = g in R.NUMS
             tot += 1
             if role:
