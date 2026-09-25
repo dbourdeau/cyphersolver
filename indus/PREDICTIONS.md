@@ -9645,3 +9645,16 @@ of 24; DM4); the slot before a count is concentrated (43.3% against a shuffle 95
 findings replicate on a third independent sample. Consistency evidence only (DM6): no bench component moves, streak
 3. Of the damaged texts' 1,177 legible runs, 742 are copies of clean texts, which is why D is small. Tally, counting
 parts: 1434 held, 1317 failed (2751 registered).
+
+# Two-hundred-and-fifty-fourth set, registered before testing (25 September 2026): decipherment loop 79, the referent method with the pictured fragments (three hypotheses)
+
+Streak 3. The tier-1 referent line (0.76%) counts texts and sign pairs whose picture is fixed on individually made
+tablets (TAB:C, TAB:I) and across distinct moulded designs (TAB:B), clean texts only. The damaged tablets with a
+picture add their legible runs: each damaged object contributes its runs joined by a separator, so no pair crosses a
+gap. Qualification exactly as sets 237 / 243 with part-texts merged (predict_test237.merged, qual); nulls: pictures
+shuffled among objects, 1,000 times, per pool.
+
+- **RD1** With the fragments added, more pairs qualify in each pool than in 95% of its shuffles.
+- **RD2** At least three pairs qualify that did not qualify with clean texts alone (both pools together).
+- **RD3** Progress rule: RD1 and RD2 hold and the tier-1 referent line (computed as before on the clean distinct lines,
+  now with the enlarged pair lists) rises.
