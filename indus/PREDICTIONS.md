@@ -10477,3 +10477,14 @@ other than the one-horned bull (2 233 235, 415 803, 415 803 1, 550 1, 803 1, all
 criterion: seal texts do not name their animal. The referent method's reach is the tablets, where the text and the
 picture were made for each other. Progress: none (streak 1). Tally, counting parts: 1491 held, 1407 failed (2898
 registered).
+
+# Two-hundred-and-ninety-second set, registered before testing (25 September 2026): decipherment loop 117, skip-pairs as referent units (three hypotheses)
+
+Streak 1. A referent word written with a variable inner sign (an inflection, a numeral, a variant) escapes contiguous
+pairs and runs. Skip-pairs (A _ B: two signs one position apart, any sign between) are added to the pairs and 3-sign
+runs (set 288) under set 287's criterion; FDR against 100 picture shuffles (`predict_test292.py`; `referents.grams_of`).
+Not measured before registering.
+
+- **SK1** With skip-pairs the FDR stays at or below 10%.
+- **SK2** The coverage rises.
+- **SK3** Progress rule: SK1 and SK2 hold (skip-pairs join the referent units).

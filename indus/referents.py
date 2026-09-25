@@ -30,10 +30,17 @@ def q_texts(objs, k, s):
     return {t: m for t, ms in g.items() for m in [ok(ms, k, s)] if m}
 
 
+def grams_of(t, n):
+    """n >= 1: contiguous n-sign runs; n = -2: skip-pairs (t[i], '_', t[i + 2]) (set 292)."""
+    if n == -2:
+        return {(t[i], '_', t[i + 2]) for i in range(len(t) - 2) if '|' not in (t[i], t[i + 1], t[i + 2])}
+    return {t[i:i + n] for i in range(len(t) - n + 1)}
+
+
 def q_pairs(objs, k, s, n=2):
     occ, texts = defaultdict(list), defaultdict(set)
     for t, m in objs:
-        for p in {t[i:i + n] for i in range(len(t) - n + 1)}:
+        for p in grams_of(t, n):
             if '|' in p:
                 continue
             occ[p].append(m)
@@ -75,6 +82,11 @@ def coverage(DL, P, u):
             if key == 'texts' or t not in used[key[0]]:
                 continue
             n = key[1]
+            if n == -2:
+                for i in range(len(t) - 2):
+                    if (t[i], '_', t[i + 2]) in qq:
+                        mark |= {i, i + 2}
+                continue
             for i in range(len(t) - n + 1):
                 if t[i:i + n] in qq:
                     mark |= set(range(i, i + n))
