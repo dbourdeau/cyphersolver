@@ -9461,3 +9461,9 @@ significantly. Seals are a larger, unseen sample for this question (field animal
 - **FS1** On seals, pairs with a fish sign (no grammatical sign) are more animal-diverse than other lexical pairs
   (one-sided rank test, p < 0.05).
 - **FS2** Progress rule: FS1 holds (fish-headed names float free of the picture, replicated on an unseen sample).
+
+## Results of the two-hundred-and-forty-fifth set (added after the test; `predict_test245.py`, `results/predict_test245.md`)
+
+None held. On seals: - 67 against 64 pairs; means 0.39 and 0.40; rank difference +0.1; p = 0.4943. (FS1 fails). Seal animals are dominated by the one-horned bull, so pair diversity there is low
+for fish and non-fish pairs alike; the tablet direction of set 244 does not replicate on seals. No progress: streak 2.
+Tally, counting parts: 1421 held, 1300 failed (2721 registered).

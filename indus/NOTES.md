@@ -2643,6 +2643,11 @@ line 0.61% -> 0.84%. Progress: streak 0. Tally 1421 held, 1295 failed.
 Registered first (4d36088fd). Fish pairs more picture-diverse in both samples but not significant (p = 0.16, 0.11;
 small n). No progress: streak 1. Tally 1421 held, 1298 failed.
 
+## Two-hundred-and-fifty-ninth pass (25 Sept 2026): decipherment loop 70, fish names and seal animals
+
+Registered first (a394f302f). Fish pairs not more animal-diverse on seals. No progress: streak 2. Tally 1421 held, 1300
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
