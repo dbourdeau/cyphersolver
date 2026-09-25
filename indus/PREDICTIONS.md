@@ -9109,3 +9109,16 @@ All five held. The grammar learned on seals parses tablet lines with a margin of
 27.0 (83 lines; OT3). Tablets sit 5.2 points below seals under the seal grammar (48.8 against 43.6; OT4), in line
 with their being a different genre. With set 227: one grammatical system across sites, object types and periods, the
 early Harappa lines included. Progress: streak 0. Tally, counting parts: 1391 held, 1271 failed (2662 registered).
+
+# Two-hundred-and-twenty-ninth set, registered before testing (24 September 2026): decipherment loop 54, the graphic devices in each city (five hypotheses)
+
+Metric: streak 0; tier 4 has one grammar across sites, object types and periods (sets 227-228). The graphic devices
+were found on pooled data. Per city (F, distinct lines of Mohenjo-daro and of Harappa, separately):
+
+- **GD1** Caged signs (set 184) are followed by 740 / 520 in 5% of cases or fewer at Mohenjo-daro, and less often
+  than their uncaged base signs are (the ten signs of CAGED against all other lexical signs).
+- **GD2** The same at Harappa.
+- **GD3** Stroked jars (741, 742, 745) end the line (only 400 / 90 after them) less often than the plain jar 740, at
+  Mohenjo-daro (one-sided Fisher p < 0.05).
+- **GD4** The same at Harappa.
+- **GD5** Progress rule: GD1-GD4 all hold (the device system is shared by both cities: a tier-4 finding).
