@@ -10845,3 +10845,10 @@ against 100 picture shuffles; coverage on the real tokens (`predict_test311.py`)
 - **TP1** The combined FDR is at or below 10%.
 - **TP2** Coverage rises above 2.28%.
 - **TP3** Progress rule: TP1 and TP2 hold (the new pools join).
+
+## Results of the three-hundred-and-eleventh set (added after the test; `predict_test311.py`, `results/predict_test311.md`)
+
+One held, two failed. Tags (94 objects with fragments) and SEAL:C / SEAL:CY (28) add 89 units and would raise coverage to
+3.28% (TP2), but the combined FDR rises to 33.7% (TP1 fails): in a pool dominated by one picture (Bull1 on tags, gaur on
+SEAL:C) almost any recurring unit meets the share criterion by chance, as seals showed (sets 238, 291). Not adopted.
+Progress: none (streak 4). Tally, counting parts: 1522 held, 1433 failed (2955 registered).
