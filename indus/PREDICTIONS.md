@@ -11029,3 +11029,10 @@ FDR measures. Not measured before registering.
 
 - **PC1** The combined FDR is at or below 10% and coverage rises above 2.29%.
 - **PC2** Progress rule: PC1 holds (the referent line uses the picture classes).
+
+## Results of the three-hundred-and-twenty-first set (added after the test; `predict_test321.py`, `results/predict_test321.md`)
+
+Both failed. With picture classes (bovine, plant merged) the configuration finds 239 units and would mark 2.84%, but the
+FDR rises to 12.4% (PC1 fails): the merged bovine class covers most individually made tablets, so a unit reaches the
+share criterion by chance as easily as on a seal pool dominated by the bull (sets 291, 311). The fine codes stay.
+Progress: none (streak 7). Tally, counting parts: 1533 held, 1450 failed (2983 registered).
