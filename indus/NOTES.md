@@ -2772,6 +2772,11 @@ Registered first (e4dc07beb). End-prone closers, openers and line-final 400 repl
 Registered first (59ba4f3a2). The grammar prior adds nothing at the top rank (SIGN top-1 39.9% -> 39.8%, top-5 61.8% ->
 62.1%). No progress (streak 1). Tally 1456 held, 1353 failed.
 
+## Two-hundred-and-eighty-third pass (25 Sept 2026): decipherment loop 94, three numeral rules
+
+Registered first (df0c56fd5). NUM-INFIX, OPEN-NUM and MULTI-COUNT fail on A or B. No progress (streak 2). Tally 1456
+held, 1357 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

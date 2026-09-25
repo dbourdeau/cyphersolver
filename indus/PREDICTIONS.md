@@ -9990,3 +9990,10 @@ lexical sign). Margins not measured before registering.
 - **GX2** OPEN-NUM, the same.
 - **GX3** MULTI-COUNT, the same.
 - **GX4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-sixty-ninth set (added after the test; `predict_test269.py`, `results/predict_test269.md`)
+
+All four failed. NUM-INFIX lowers both margins (A 49.48, B 37.09); OPEN-NUM raises A by 0.15 but lowers B (37.34);
+MULTI-COUNT lowers A (49.54) though it raises B (37.53). None meets both conditions. The numerals inside the remaining
+short lines do not follow a frame that shuffled lines lack. Progress: none (streak 2). Tally, counting parts: 1456
+held, 1357 failed (2813 registered).
