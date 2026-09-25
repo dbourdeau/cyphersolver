@@ -9004,3 +9004,13 @@ fails with p = 1.0); in B 0.126, p = 0.67 (SU2 fails); the other tail signs are 
 (SU3). **Reading:** what follows a finished name is not a second name; its signs avoid the head slot, as epithets,
 titles or closers would. Not turned into a role (the registered direction failed). No progress: streak 1. Tally,
 counting parts: 1380 held, 1262 failed (2642 registered).
+
+# Two-hundred-and-twenty-fourth set, registered before testing (24 September 2026): decipherment loop 49, weighting the two directions in SIGN (three hypotheses)
+
+Metric after the correction: S 4.635, SIGN top-1 39.7% / top-5 61.8% (forward + backward log-probabilities, equal
+weight); streak 1. A design run on 300 lines of the training lines' own split: forward weight 0.3 / 0.4 / 0.5 / 0.6 /
+0.7 gives 39.8 / 40.1 / 40.2 / 40.3 / 40.4% top-1. Registered: weight 0.7 on the forward model.
+
+- **WD1** SIGN top-1 on the fixed test with weight 0.7 beats equal weights by 0.3 points or more.
+- **WD2** The same A -> B (first 300 B lines).
+- **WD3** Progress rule: WD1 and WD2 hold (the SIGN tier rises and the gain replicates).
