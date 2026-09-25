@@ -101,11 +101,13 @@ def referent_fixed(DL):
     q = qualifying(objs)
     # set 237 (PL1-PL2): + tokens of qualifying sign pairs on the individually made tablets used
     from predict_test237 import merged, qual
-    qp = qual(merged(objs))  # audit after set 247: part-texts merged
+    from predict_test254 import frag_objects
+    # audit after set 247: part-texts merged; set 254: pictured damaged tablets' legible runs added (no pair across a gap)
+    qp = {p: m for p, m in qual(merged(objs + frag_objects(('TAB:C', 'TAB:I')))).items() if '|' not in p}
     used = {t for t, m in objs}
     # set 243 (MR1-MR2): + qualifying pairs on moulded tablets (distinct texts = independent designs)
     mo = objects(F, recs, ('TAB:B',))
-    qm = qual(merged(mo))
+    qm = {p: m for p, m in qual(merged(mo + frag_objects(('TAB:B',)))).items() if '|' not in p}
     usedm = {t for t, m in mo}
     cov = 0
     for t in DL:

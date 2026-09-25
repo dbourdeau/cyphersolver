@@ -2691,6 +2691,11 @@ Registered first (ae1b26fc8). Sample D (damaged texts' independent runs, 1,501 s
 fish/520, count-label slot all replicate (cage: 3 cases). Consistency evidence, no progress: streak 3. Tally 1434 held,
 1317 failed.
 
+## Two-hundred-and-sixty-eighth pass (25 Sept 2026): decipherment loop 79, referent method with pictured fragments
+
+Registered first (adeb366ca). 82 pictured damaged tablets add 4 referent pairs (bull, goat, gharial); referent line
+0.76% -> 0.79%. Progress: streak 0. Tally 1437 held, 1317 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

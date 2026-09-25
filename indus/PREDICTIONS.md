@@ -9658,3 +9658,12 @@ shuffled among objects, 1,000 times, per pool.
 - **RD2** At least three pairs qualify that did not qualify with clean texts alone (both pools together).
 - **RD3** Progress rule: RD1 and RD2 hold and the tier-1 referent line (computed as before on the clean distinct lines,
   now with the enlarged pair lists) rises.
+
+## Results of the two-hundred-and-fifty-fourth set (added after the test; `predict_test254.py`, `results/predict_test254.md`, `prizebench.referent_fixed`)
+
+All three held. Adding the pictured damaged tablets (31 individually made, 51 moulded; legible runs only, no pair
+across a gap) leaves the referent pairs far above their shuffle nulls in both pools (RD1) and adds 4 pairs (RD2): 636
+740 and 240 636 = bull, 740 790 = goat (individually made), 318 920 = gharial (moulded). The script's own line
+(0.88% -> 0.96%) marked pairs on any tablet line; computed as the bench does it (each pool's pairs on its own tablets,
+'as before' in RD3), the tier-1 referent line rises from 0.76% to 0.79% (27 texts and pairs). Progress: streak 0.
+Tally, counting parts: 1437 held, 1317 failed (2754 registered).
