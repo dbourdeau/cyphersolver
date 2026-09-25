@@ -10455,3 +10455,16 @@ lines' ideograms right against a shuffle maximum of 22 (VH2): the vault works as
 pictured tablets get a prediction; the units are local to their pool (set 243); the check is referent-level (the text
 names what the picture shows), not a reading. Tier 3's picture-vault cell is updated. Progress: streak 0. Tally,
 counting parts: 1490 held, 1404 failed (2894 registered).
+
+# Two-hundred-and-ninety-first set, registered before testing (25 September 2026): decipherment loop 116, the referent method on seals, non-default animals (four hypotheses)
+
+Streak 0. Set 238 (strict criterion) found seal phrases only for the one-horned bull, the default animal on 77% of
+seals. With the calibrated criterion (set 287: 2+ seals in 2+ distinct texts, 67%+ one animal; pairs and 3-sign runs,
+set 288), units labelled with any other animal are counted, and their FDR estimated from 100 shuffles of the animals
+among the 1,274 pictured seals (`predict_test291.py`). Tags (59, 44 bull) and SEAL:C (16) are too small to test apart.
+Not measured before registering.
+
+- **SN1** Non-default seal units exist with FDR <= 10%.
+- **SN2** There are more of them than the shuffles' 95th percentile.
+- **SN3** They mark seal tokens (coverage beyond the tablets).
+- **SN4** Progress rule: SN1 and SN2 hold (seal units join the referent line).
