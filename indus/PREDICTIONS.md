@@ -9431,3 +9431,15 @@ designs) with one picture on 80%+, against a shuffle median of 0 (95th percentil
 255 436, 436 690, 440 740 = gharial; 806 158, 752 740, 798 740 = tree; 2 240 = one-horned bull. The tree phrase 806
 158 contains the leaf sign 806, as the earlier notes proposed. The tier-1 referent line rises from 0.61% to 0.84% of
 sign tokens. Progress: streak 0. Tally, counting parts: 1421 held, 1295 failed (2716 registered).
+
+# Two-hundred-and-forty-fourth set, registered before testing (25 September 2026): decipherment loop 69, do fish names float free of the pictures? (three hypotheses)
+
+Streak 0. Set 240: grammatical pairs go with many pictures, lexical pairs with one. Fish-headed names take the 520
+class (sets 178, 196, 230) and are read by Parpola as star / deity names. If they name beings rather than depict the
+scene, pairs containing a fish sign (FISH, signs.py) should be more picture-diverse than other lexical pairs. Measure
+as set 240 (pairs on 3+ objects; distinct pictures per occurrence); comparison: pairs of two non-fish lexical signs.
+
+- **FF1** On moulded tablets (TAB:B), fish pairs (no grammatical sign) are more picture-diverse than other lexical pairs
+  (one-sided rank test, p < 0.05).
+- **FF2** On the individually made tablets (TAB:C, TAB:I), the same direction.
+- **FF3** Progress rule: FF1 holds with FF2 in the same direction.
