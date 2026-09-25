@@ -72,3 +72,11 @@ def world_tolerant():
     w = groups(rows('wals_profile.tsv'), 'genus', tolerant_wals)
     g = groups(rows('grambank_profile.tsv'), 'family', gb_ok)
     return 1 - len(majority(w)) / len(w), 1 - len(majority(g)) / len(g)
+
+
+def world_strict():
+    """(WALS genera excluded, Grambank families excluded), no-prefix profile (set 220: 26A = 2; GB431 = 0)."""
+    from predict_test220 import gb_strict, strict_wals
+    w = groups(rows('wals_profile.tsv'), 'genus', strict_wals)
+    g = groups(rows('grambank_profile.tsv'), 'family', gb_strict)
+    return 1 - len(majority(w)) / len(w), 1 - len(majority(g)) / len(g)

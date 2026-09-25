@@ -8928,3 +8928,13 @@ on inalienable nouns) is the open candidate family most affected.
 - **LS4** Munda is kept by the strict WALS profile (26A = 2 for Mundari), so the change is not aimed at one family.
 - **LS5** Progress rule: LS1 and LS2 hold (L world rises in both databases); if LS3 also holds, Burushaski leaves the
   open families (L 4 -> 3) with the caveat that the evidence is the absence of a prefix class in names.
+
+## Results of the two-hundred-and-twentieth set (added after the test; `predict_test220.py`, `results/predict_test220.md`, `lbench.world_strict`)
+
+Four held, one failed. Requiring the strongly suffixing type (no productive prefixes), as the Indus names show no
+prefix class, raises the share of WALS genera excluded from 81.3% to 85.1% (LS1) and, with no possessor prefix on the
+possessed noun, the share of Grambank families excluded from 68.3% to 77.0% (LS2); the Dravidian, Indic /
+Indo-European and Munda groups are kept (LS4). Burushaski is excluded by WALS (26A weakly suffixing) but not by
+Grambank (GB431 coded absent), so it stays open (LS3 fails; L stays 4). L world enters the metric at 85.1% / 77.0%.
+Caveat: the evidence is the absence of a prefix class in short name texts. Progress: streak 0. Tally, counting parts:
+1372 held, 1258 failed (2630 registered).

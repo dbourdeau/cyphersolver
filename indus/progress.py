@@ -144,8 +144,8 @@ def main(label='measure'):
     p = len(VALUES)
     ga, gb = grammar_coverage(DL)
     ma, mb = grammar_margin(DL)
-    from lbench import world_tolerant
-    lw, lg = world_tolerant()  # set 196 (LT1-LT3): world language groups whose typology the Indus profile excludes
+    from lbench import world_strict
+    lw, lg = world_strict()  # sets 196 (LT1-LT3), 220 (LS1-LS2, no prefixes): world language groups the Indus profile excludes
     open_f = [f for f, s in FAMILIES.items() if s == 'open']
     # Indus-prize tiers (PROGRESS.md; prizebench.py)
     from prizebench import GATE, meaning, sign_task, word_task

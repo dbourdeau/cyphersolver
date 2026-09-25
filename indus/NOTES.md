@@ -2511,6 +2511,11 @@ adopted. No progress: streak 2. Tally 1368 held, 1253 failed.
 Registered first (5c627cfb8). Count tails show no name structure beyond frequency-matched chance. No progress: streak
 3. Tally 1368 held, 1257 failed.
 
+## Two-hundred-and-thirty-fourth pass (24 Sept 2026): decipherment loop 45, no prefixes in the L profile
+
+Registered first (705fc6646). Strict suffixing profile: L world 81.3% -> 85.1% (WALS), 68.3% -> 77.0% (Grambank);
+Burushaski out in WALS only, stays open. Progress: streak 0. Tally 1372 held, 1258 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
