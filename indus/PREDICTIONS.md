@@ -9326,3 +9326,13 @@ other animals no pair qualifies, as in the shuffles (SR2 fails). Seal phrases do
 texts do not name their animal, as the sign-level tests found. The slight excess with the one-horned bull fits the
 one-horned-bull seals' texts differing somewhat from the others. No progress: streak 1. Tally, counting parts: 1414
 held, 1285 failed (2699 registered).
+
+# Two-hundred-and-thirty-ninth set, registered before testing (25 September 2026): decipherment loop 64, a longer family context (four hypotheses)
+
+Streak 1. The discounted family 4-gram (f4k, set 210) helps S; a family 5-gram discounted onto it (f5k, D = 0.5)
+gave 4.6772 -> 4.6722 in a design run on the training lines' own split. Model trik + pos + end + f5k.
+
+- **F51** S on the fixed test beats the current model by 0.003 bits or more.
+- **F52** The same A -> B.
+- **F53** SIGN top-1 on the fixed test does not fall.
+- **F54** Progress rule: F51, F52 and F53 hold.
