@@ -11479,3 +11479,15 @@ units, FDR 11.6%, coverage 13.60%: both just over the 10% rule (VS1, VS3 fail); 
 large coverage of the site-only variant shows that the object-class strata still remove much: phrases proper to seals
 or to tablets pass as referents when seals and tablets share a stratum. The line stays at 2.80%. Progress: none
 (streak 4). Tally, counting parts: 1566 held, 1488 failed (3054 registered).
+
+# Three-hundred-and-forty-fourth set, registered before testing (25 September 2026): decipherment loop 169, sign units only in the true-duplicate pool (four hypotheses)
+
+Streak 4. The description-family units are coarser than sign units and may carry most chance matches, holding the whole
+configuration to a strict alpha. Set 339's pool with sign units only (no family units; `predict_test334.FAMILIES`
+switch, default on) at alpha 0.003 and 0.005: the alpha with FDR <= 10% and the larger coverage is chosen, with the
+Linear B control (`predict_test344.py`). Not measured before registering.
+
+- **SO1** With sign units only, an alpha with FDR <= 10% covers more than 2.80%.
+- **SO2** Linear B with that alpha recovers 2+ of the 4 control words, none wrong.
+- **SO3** Alpha 0.005 keeps FDR <= 10% without the family units.
+- **SO4** Progress rule: SO1 and SO2 hold (the referent line uses sign units only at that alpha).

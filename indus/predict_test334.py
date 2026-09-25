@@ -22,6 +22,7 @@ from progress import data
 TABS = ('TAB:C', 'TAB:I', 'TAB:B')
 SEALS = ('SEAL:S', 'SEAL:R', 'SEAL', 'SEAL:C', 'SEAL:CY', 'TAG')
 ALPHA = 0.0025
+FAMILIES = True  # set 344 switches the family units off to test sign units alone
 
 
 def cls(ty):
@@ -66,7 +67,7 @@ def units(clean, both):
             p = sum(rate(m, s) for x, s in ms) / len(ms)
             if binom.sf(v - 1, len(ms), p) < ALPHA:
                 u['texts'][t] = m
-    for isf in (False, True):
+    for isf in ((False, True) if FAMILIES else (False,)):
         for n in (FAM if isf else SIGN):
             occ, texts = defaultdict(list), defaultdict(set)
             for t, m, s in both:
