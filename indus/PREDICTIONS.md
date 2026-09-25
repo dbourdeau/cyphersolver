@@ -10752,3 +10752,13 @@ Both held. Strict family single signs and family skip-pairs added to set 305's u
 1.87% -> 1.89% (FS1): a small step, the unit grid under the strict criterion is now complete. `prizebench.referent_fixed`
 uses them. Progress: referent line rises, small (streak 0). Tally, counting parts: 1514 held, 1427 failed (2941
 registered).
+
+# Three-hundred-and-seventh set, registered before testing (25 September 2026): decipherment loop 132, the strict-tier units at an intermediate criterion (two hypotheses)
+
+Streak 0. After set 306 the combined FDR is 6.7%, below the 10% rule. The unit kinds admitted under the stricter
+criterion (single signs, skip-pairs and the four family kinds) are tried at an intermediate one (3+ objects in 2+ texts,
+67%+ one picture); pairs and 3-sign runs keep 2+ / 67%+. Combined FDR against 100 picture shuffles
+(`predict_test307.py`). Not measured before registering.
+
+- **MI1** The combined FDR is at or below 10% and coverage rises above 1.89%.
+- **MI2** Progress rule: MI1 holds (the intermediate criterion replaces 80%+ for these kinds).
