@@ -2900,6 +2900,11 @@ progress (streak 1). Tally 1491 held, 1407 failed.
 Registered first (857095879). Coverage would rise to 1.65% but FDR reaches 10.2%; not adopted. No progress (streak 2).
 Tally 1492 held, 1409 failed.
 
+## Three-hundred-and-seventh pass (25 Sept 2026): decipherment loop 118, where referent units sit in a text
+
+Registered first (affcb94fd). No positional difference (p = 0.49, 0.46; opposite directions). No progress (streak 3).
+Tally 1492 held, 1412 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -10506,3 +10506,10 @@ direction not predicted (`predict_test293.py`). Not measured before registering.
 - **RP1** Individually made tablets: the positions differ (p < 0.05).
 - **RP2** Moulded tablets: they differ in the same direction.
 - **RP3** Progress rule: RP1 and RP2 hold (a new finding, replicated across the two pools).
+
+## Results of the two-hundred-and-ninety-third set (added after the test; `predict_test293.py`, `results/predict_test293.md`)
+
+All three failed. Referent units sit at about the same relative position as other recurring units: individually made
+0.62 against 0.57 (p = 0.49), moulded 0.55 against 0.58 (p = 0.46), in opposite directions. The word for the pictured
+thing has no fixed slot in the tablet texts; it is part of the text wherever the text's grammar puts it. Progress: none
+(streak 3). Tally, counting parts: 1492 held, 1412 failed (2904 registered).
