@@ -2981,6 +2981,12 @@ needs an independent check before any further loosening. Progress (streak 0). Ta
 Registered first (42f765d9d). Mixed: p = 0.002 one way, 0.058 the other; held-out precision 21-25%. The 2.28% referent
 line is an unconfirmed upper figure. No progress (streak 1). Tally 1517 held, 1429 failed.
 
+## Three-hundred-and-twenty-third pass (25 Sept 2026): decipherment loop 134, split-half check across referent configurations
+
+Registered first (fc8071a00). All configurations C0-C7 are confirmed on five split-halves (C7 p = 0.005, held-out
+precision 23%); the 2.28% line is restored as confirmed, with low precision. No progress (streak 2). Tally 1519 held,
+1430 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

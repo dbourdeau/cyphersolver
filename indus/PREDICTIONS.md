@@ -10805,3 +10805,13 @@ before registering.
 - **SL1** C0, the original criterion, is confirmed.
 - **SL2** C7, the tuned configuration, is confirmed.
 - **SL3** Progress rule: none (a correction; the referent line is set to the largest confirmed configuration).
+
+## Results of the three-hundred-and-ninth set (added after the test; `predict_test309.py`, `results/predict_test309.md`)
+
+Two held; SL3 is the non-progress rule. Pooled over five random half-splits in both directions, every configuration is
+confirmed (SL1, SL2): C1 62 of 222 held-out matches right (28%, p = 0.010), C2 70 of 241 (29%, p = 0.020), C3 136 of 576
+(24%), C4 223 of 851 (26%), C5 252 of 908 (28%), C6 314 of 1,184 (27%), C7 578 of 2,539 (23%) (p = 0.005 from C3 on).
+Set 308's single split was an unlucky draw. The 2.28% referent line (C7) is restored as confirmed; the caveat is its
+precision: about a quarter of held-out matches carry the unit's picture, against the 67%+ purity required in sample.
+The units are real associations, not reliable word meanings. Progress: none (correction; streak 2). Tally, counting
+parts: 1519 held, 1430 failed (2949 registered).
