@@ -90,13 +90,14 @@ def word_task(tr, te, keys):
     return top1 / n, top10 / n, base1 / n, base10 / n, n
 
 
-def referent_fixed(DL, k=2, s=0.67):
+def referent_fixed(DL, k=2, s=0.67, ns=(2, 3)):
     """Set 233 (RF1-RF2): share of sign tokens in texts whose referent the picture fixes, plus qualifying sign pairs
     (sets 237, 243, 254; part-texts merged). Criteria k objects, share s: set 287 (RX1-RX4) chose k 2, s 0.67 (FDR 9.4%
-    against picture shuffles; Linear B control passes); k 3, s 0.8 gives the earlier line (0.79%)."""
+    against picture shuffles; Linear B control passes); set 288 (RN1-RN4) added 3-sign runs (ns (2, 3), FDR 9.8%;
+    single signs raise FDR to 10.8%). k 3, s 0.8, ns (2,) gives the earlier line (0.79%)."""
     import rtools as R
     import referents as X
     A, B, rowsA, recs, F = R.load_all()
     P = X.pools(F, recs)
-    u = X.units(P, k, s)
+    u = X.units(P, k, s, ns)
     return X.coverage(DL, P, u), X.count(u)

@@ -10390,3 +10390,13 @@ measured before registering.
 - **RN2** Adding 3-sign runs keeps FDR <= 10% and raises the coverage.
 - **RN3** The unit set with FDR <= 10% and the largest coverage beats pairs alone.
 - **RN4** Progress rule: RN3 holds (the referent line then uses the chosen unit set).
+
+## Results of the two-hundred-and-eighty-eighth set (added after the test; `predict_test288.py`, `results/predict_test288.md`)
+
+Three held, one failed. With set 287's criterion: pairs alone 55 units (FDR 9.4%, 1.38%); + single signs 88 (FDR 10.8%,
+1.65%; RN1 fails the 10% rule); + 3-sign runs 68 (FDR 9.8%, 1.46%; RN2); all three 101 (FDR 10.8%). The registered rule
+chooses pairs + 3-sign runs (RN3): the referent line rises 1.38% -> 1.46%. The 33 single-sign candidates, though over
+the FDR line as a set, show the locality found in set 243: 806 goes with the human figure on individually made tablets
+and with plants on moulded ones; the gharial (Gavi) and plant (Phyt) signs are all on moulded tablets, the bull (Bult)
+signs on individually made ones. `prizebench.referent_fixed` now uses ns (2, 3). Progress: tier 1 referent line rises
+(streak 0). Tally, counting parts: 1484 held, 1399 failed (2883 registered).

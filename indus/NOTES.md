@@ -2867,6 +2867,12 @@ Registered first (0e42fcb25). The owner asked to expand the referent method. Cal
 looser criterion (2+ objects, 67%+ one picture) keeps FDR at 9.4% and the Linear B control passing: 55 units, referent
 line 0.79% -> 1.38%. Progress (streak 0). Tally 1481 held, 1398 failed.
 
+## Three-hundred-and-first pass (25 Sept 2026): decipherment loop 113, single signs and 3-sign runs as referent units
+
+Registered first (eada0283e). 3-sign runs join the pairs (FDR 9.8%): referent line 1.38% -> 1.46%. Single signs push
+FDR to 10.8% and stay out; their labels are pool-local (806 human on made tablets, plant on moulded). Progress (streak
+0). Tally 1484 held, 1399 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
