@@ -10736,3 +10736,12 @@ before registering.
 Both held. Strict skip-pairs added to set 304's units give 119 units, FDR 8.3% (below either kind's alone: the
 stricter units are cleaner), coverage 1.80% -> 1.87%. `prizebench.referent_fixed` now uses them. Progress: referent
 line rises (streak 0). Tally, counting parts: 1512 held, 1427 failed (2939 registered).
+
+# Three-hundred-and-sixth set, registered before testing (25 September 2026): decipherment loop 131, family single signs and skip-pairs under the stricter criterion (two hypotheses)
+
+Streak 0. Sets 303-305 admitted single signs, family pairs / 3-sign runs and skip-pairs under the stricter criterion.
+The two remaining family kinds, single family signs and family skip-pairs, are added (3+ objects in 2+ texts, 80%+);
+combined FDR against 100 picture shuffles (`predict_test306.py`). Not measured before registering.
+
+- **FS1** The combined FDR is at or below 10% and coverage rises above 1.87%.
+- **FS2** Progress rule: FS1 holds (they join the referent units).
