@@ -127,3 +127,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 54 | 229 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 4: cage and inner-stroke devices identical at Mohenjo-daro and Harappa (progress; streak 0) |
 | 55 | 230 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 4: fish/520 class signal on seals (60/120 vs 4/156) and tablets (14/33 vs 1/47) (progress; streak 0) |
 | 56 | 231 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 4: count-label slot restricted in both cities; policy: subset replications no longer count as progress (progress; streak 0) |
+| 57 | 232 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | endings not more alike within graphic families than random (low power: 740 dominates) (no progress; streak 1) |

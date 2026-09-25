@@ -9178,3 +9178,11 @@ times. Names from distinct lines (R.name_of), ending = the name's ending sign cl
 - **FE2** The same in B (families and heads as in B's names).
 - **FE3** With the fish block (heads 219-240) left out, FE1 and FE2 still hold (p < 0.05 each).
 - **FE4** Progress rule: FE3 holds (a new finding beyond the fish, replicated on B).
+
+## Results of the two-hundred-and-thirty-second set (added after the test; `predict_test232.py`, `results/predict_test232.md`)
+
+None held. Heads of one graphic family do not choose endings more alike than random groupings of heads: A modal-ending
+share 0.877 (49 heads, 10 families with 2+ heads), p = 0.94 (FE1); B 0.925, p = 0.80 (FE2); without the fish block
+p = 0.97 and 0.93 (FE3). With 740 ending most names the statistic sits near its ceiling, so the test has little power;
+beyond the fish, no family-level ending class is shown. No progress: streak 1. Tally, counting parts: 1402 held, 1275
+failed (2677 registered).

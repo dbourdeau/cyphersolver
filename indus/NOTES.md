@@ -2573,6 +2573,11 @@ streak 0. Tally 1399 held, 1271 failed.
 Registered first (f06df8cb6). Pre-count slot restricted at Mohenjo-daro (p = 0.001) and Harappa (p = 0.002). Policy:
 per-subset replications no longer count as progress. Streak 0. Tally 1402 held, 1271 failed.
 
+## Two-hundred-and-forty-sixth pass (24 Sept 2026): decipherment loop 57, does the ending follow the graphic family?
+
+Registered first (86a433c6d). No family-level ending homogeneity beyond chance (A p = 0.94, B p = 0.80); low power. No
+progress: streak 1. Tally 1402 held, 1275 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
