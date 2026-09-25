@@ -10056,3 +10056,16 @@ All four failed. The count-of-counts estimates are D1 0.786, D2 1.225, D3+ 1.224
 singletons that dominate; with them S on the fixed test is 4.6357 against 4.6354 (MK1), A -> B worsens (5.1927 ->
 5.2145; MK2) and SIGN top-1 falls 39.7% -> 39.6% (MK3). The trigram's smoothing is not where S can be gained. Progress:
 none (streak 5). Tally, counting parts: 1457 held, 1369 failed (2826 registered).
+
+# Two-hundred-and-seventy-third set, registered before testing (25 September 2026): decipherment loop 98, names with material around them (four hypotheses)
+
+Streak 5. Among the lines parse11 leaves unparsed, 266 contain an ending, closer, cage or 400 / 90 inside; several are
+a name followed by a count (176 740 1 832, 121 740 1 31 240 520) or a short unit + 90 before a name (17 585 90 680 740).
+NAME-NAME, NAME-TAIL and MID-POST (sets 261, 264) failed as broad splits; narrower frames (`predict_test273.py`):
+NAME-COUNT (a name, then a count: numeral run + 0-2 lexical signs), PRE-NAME (1-2 lexical signs, 400 / 90, then a name),
+TWO-400 (two lexical signs + 400; LOW-POST requires a low-head-propensity sign). Margins not measured before registering.
+
+- **GZ1** NAME-COUNT raises the margin on A by 0.3 point or more and raises it on B.
+- **GZ2** PRE-NAME, the same.
+- **GZ3** TWO-400, the same.
+- **GZ4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
