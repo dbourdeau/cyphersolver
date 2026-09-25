@@ -10947,3 +10947,14 @@ picture by construction. Without nested pairs: individually made 17 of 110 again
 112 against 4 of 308 (p = 0.12). Some support for one word per referent on the individually made tablets, none on the
 moulded ones. The registration should have excluded nested units. Progress: none (streak 2). Tally, counting parts:
 1531 held, 1438 failed (2969 registered; this set's three 'held' are withdrawn in the text).
+
+# Three-hundred-and-seventeenth set, registered before testing (25 September 2026): decipherment loop 142, WORD with a body-frequency prior (three hypotheses)
+
+Streak 2. The two-direction WORD scorer (set 274) reached 4.3% top-10, below the 1-point threshold over the bench's
+3.4%. Here the score adds beta * log(1 + training count of the body), with beta chosen on a development split of the
+training lines (0, 0.5, 1, 2) and applied once to the fixed test lines (`predict_test317.py`). Not measured before
+registering.
+
+- **WP1** WORD top-10 is 1 point or more above 3.4%.
+- **WP2** The prior takes weight on the development split (beta > 0).
+- **WP3** Progress rule: WP1 holds (the WORD task then uses this scorer).
