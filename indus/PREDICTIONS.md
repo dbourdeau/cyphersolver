@@ -10038,3 +10038,14 @@ All four failed. HH-STRICT and OPEN-H parse no line the grammar does not already
 strict head is already a bare name (G2), so the unparsed 'h h' lines end in signs that head names only occasionally.
 H-LOW lowers both margins (A 49.56, B 37.32). The two-sign lines left over have no frame shuffles lack. Progress: none
 (streak 4). Tally, counting parts: 1457 held, 1365 failed (2822 registered).
+
+# Two-hundred-and-seventy-second set, registered before testing (25 September 2026): decipherment loop 97, modified Kneser-Ney discounts for the sign trigram (four hypotheses)
+
+Streak 4. The sign trigram (trik, set 211) uses one absolute discount, D = 0.75. Modified Kneser-Ney (Chen & Goodman
+1998) uses three, D1, D2 and D3+ for counts 1, 2 and 3+, estimated from the training trigrams' count-of-counts; it is
+the standard improvement on small data. Component trimk replaces trik (`predict_test272.py`). No design run.
+
+- **MK1** S on the fixed test falls by 0.002 bits or more.
+- **MK2** The same A -> B (any fall).
+- **MK3** SIGN top-1 does not fall.
+- **MK4** Progress rule: MK1, MK2 and MK3 hold (trimk then replaces trik in MODEL).
