@@ -10562,3 +10562,11 @@ criterion as set 294. Scored by the excess of correct predictions over the shuff
 - **VW1** The excess over the shuffle median is above +60, with p < 0.05 against 200 shuffles.
 - **VW2** Accuracy on the predicted objects is above 33.5%.
 - **VW3** Progress rule: VW1 holds (the tier 3 vault line rises).
+
+## Results of the two-hundred-and-ninety-sixth set (added after the test; `predict_test296.py`, `results/predict_test296.md`)
+
+All three failed. Weighting each unit's vote by its purity and support gets 61 of 191 held-out pictures right (31.9%),
+excess +56 over the shuffle median of 5, below set 294's +60 with one vote per unit (VW1, VW2 fail). The widely
+supported units are the common signs and pairs, which are the least specific; up-weighting them pulls votes toward the
+frequent pictures. (The registered script had a string-quoting error, fixed in 2d4bd2c15 before the run; the test
+itself is unchanged.) Progress: none (streak 2). Tally, counting parts: 1497 held, 1416 failed (2913 registered).

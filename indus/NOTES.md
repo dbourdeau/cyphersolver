@@ -2916,6 +2916,11 @@ Registered first (b33011353). 81 correct but chance rises to 28 (excess +53 agai
 line unchanged. Lesson: score vaults by excess over the shuffle median. No progress (streak 1). Tally 1497 held, 1413
 failed.
 
+## Three-hundred-and-tenth pass (25 Sept 2026): decipherment loop 121, picture vault with weighted votes
+
+Registered first (ee262273a; quoting fix 2d4bd2c15). Weighted votes: excess +56 against +60. No progress (streak 2).
+Tally 1497 held, 1416 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
