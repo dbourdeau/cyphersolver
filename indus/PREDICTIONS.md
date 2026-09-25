@@ -9014,3 +9014,9 @@ weight); streak 1. A design run on 300 lines of the training lines' own split: f
 - **WD1** SIGN top-1 on the fixed test with weight 0.7 beats equal weights by 0.3 points or more.
 - **WD2** The same A -> B (first 300 B lines).
 - **WD3** Progress rule: WD1 and WD2 hold (the SIGN tier rises and the gain replicates).
+
+## Results of the two-hundred-and-twenty-fourth set (added after the test; `predict_test224.py`, `results/predict_test224.md`)
+
+None held. Weighting the forward model 0.7 lowers SIGN top-1 on the fixed test (39.8% -> 39.2%; WD1) and A -> B
+(33.0% -> 31.9%; WD2): the design-run difference (0.2 points on 300 lines) was noise, and equal weights stay. No
+progress: streak 2. Tally, counting parts: 1380 held, 1265 failed (2645 registered).

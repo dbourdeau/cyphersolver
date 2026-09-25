@@ -119,3 +119,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 47 | 222 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | CAGED-POST grammar rule: G margin 47.3 / 36.0 (small; F unchanged) (progress; streak 0) |
 | 48 | 223 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tails after a mid-line ending are not second names (last signs avoid the head slot in A) (no progress; streak 1) |
 | correction | 213 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | loop 38's opening-sign gain was a leak (position 0 conditioned on itself): withdrawn; S 4.635, SIGN 39.7% / 61.8%, WORD 3.4% (streak unchanged, 1) |
+| 49 | 224 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | forward weight 0.7 lowers SIGN on both samples; design gain was noise (no progress; streak 2) |

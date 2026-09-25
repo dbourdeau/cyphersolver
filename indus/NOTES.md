@@ -2531,6 +2531,11 @@ held, 1259 failed.
 Registered first (cd1ad71a9). Tails after a mid-line ending are not second names: in A their last signs are less
 head-like than any frequency-matched draw. No progress: streak 1. Tally 1380 held, 1262 failed.
 
+## Two-hundred-and-thirty-eighth pass (24 Sept 2026): decipherment loop 49, direction weights in SIGN
+
+Registered first. Forward weight 0.7 lowers SIGN on both samples; equal weights stay. No progress: streak 2. Tally 1380
+held, 1265 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
