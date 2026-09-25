@@ -9252,3 +9252,12 @@ women), pa-we-a / *146 (cloths). Method and line picture exactly as set 234 (pre
 - **LD1** The method recovers 2 or more of the 4 pairs.
 - **LD2** None of the 4 qualifies with another ideogram.
 - **LD3** Progress rule: LD1 holds (with set 234's LR2, the method passes a known-answer control: gate 3 of 6).
+
+## Results of the two-hundred-and-thirty-fifth set (added after the test; `predict_test235.py`, `results/predict_test235.md`)
+
+All three held. With the key in DAMOS's ideogram naming, the picture-referent method recovers a-mo-ta -> ROTA (wheels)
+and ko-wa -> MUL (girls, counted with the women) (LD1); e-ra-wa and pa-we-a do not qualify, and no key word qualifies
+with a wrong ideogram (LD2). With set 234 (143 qualifying words against 2 by chance, and three further correct
+referents under DAMOS naming), the method passes a known-answer control: prize tier 2 rises to 3 of 6 methods, and the
+tier-1 line 'referent fixed by the picture' (set 233) now rests on a gated method. Progress: streak 0. Tally, counting
+parts: 1409 held, 1279 failed (2688 registered).

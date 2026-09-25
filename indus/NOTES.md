@@ -2590,6 +2590,11 @@ Registered first (b27af6a3d). 143 words qualify against a shuffle median of 2; t
 recovered none, but three 'wrong' results are right in DAMOS naming (pa-ka-na PUG, i-qi-ja CAPS, ko-ri-ja-do-no AROM).
 Verdict stands; no progress, streak 1. Tally 1406 held, 1279 failed.
 
+## Two-hundred-and-forty-ninth pass (25 Sept 2026): decipherment loop 60, the Linear B referent control in DAMOS naming
+
+Registered first (0c90c95a1). The referent method recovers a-mo-ta ROTA and ko-wa MUL, no wrong ideograms: it passes
+the Linear B gate (tier 2: 3 of 6). Progress: streak 0. Tally 1409 held, 1279 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
