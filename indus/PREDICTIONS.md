@@ -11290,3 +11290,14 @@ fails against 6.70%). Seals are mostly bull and tablets rarely: part of the site
 seals than on tablets. As registered, these figures replace the current ones (`prizebench.referent_fixed` now
 stratifies by site and class). The line is still far above the tablets-only 5.43% of set 328, and the non-bull figure
 above it too. Progress: none (streak 2). Tally, counting parts: 1553 held, 1470 failed (3023 registered).
+
+# Three-hundred-and-thirty-fifth set, registered before testing (25 September 2026): decipherment loop 160, the stratified referent pool at looser alphas (four hypotheses)
+
+Streak 2. Stratifying by site and object class (set 334) lowered the FDR to 4.6% at alpha 0.0025. Looser alphas (0.005,
+0.01, 0.02) under the same strata: the alpha with FDR <= 10% (100 within-stratum shuffles) and the largest coverage is
+chosen, with the Linear B control (`predict_test335.py`). Not measured before registering.
+
+- **SL1** An alpha with FDR <= 10% gives coverage above 12.69%.
+- **SL2** Without Bull1 units it covers more than 5.75%.
+- **SL3** Linear B with it recovers 2+ of the 4 control words, none wrong.
+- **SL4** Progress rule: SL1 and SL3 hold (the stratified referent line uses that alpha).
