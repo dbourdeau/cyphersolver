@@ -11580,3 +11580,10 @@ Not measured before registering.
 - **TW1** The configuration is confirmed on the five split-halves (p < 0.05).
 - **TW2** Its held-out precision is at least 5%.
 - **TW3** Progress rule: none (validation; recorded as failing).
+
+## Results of the three-hundred-and-forty-ninth set (added after the test; `predict_test349.py`, `results/predict_test349.md`)
+
+Two held; TW3 is the non-progress rule. On five split-halves both ways, set 348's configuration matches 199 of 3,948
+held-out observations' pictures against a shuffle median of 91 (p = 0.005; TW1): the 4.57% line is confirmed; held-out
+precision 5% (TW2), about twice chance, as for set 340. (The match counter needed the decade-family keys, 9a64fd51c.)
+Progress: none (streak 1). Tally, counting parts: 1581 held, 1492 failed (3073 registered).
