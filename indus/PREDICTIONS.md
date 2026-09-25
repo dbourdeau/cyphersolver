@@ -9306,3 +9306,14 @@ elephant text and its variant with a final stroke), so the gain is thinner than 
 other lines (PL3; reported, not counted). Counting their tokens on the tablets used raises the tier-1 referent line
 from 0.38% to 0.61% of sign tokens. Progress: streak 0. Tally, counting parts: 1413 held, 1283 failed (2696
 registered).
+
+# Two-hundred-and-thirty-eighth set, registered before testing (25 September 2026): decipherment loop 63, the referent method on seals (three hypotheses)
+
+Streak 0. Seals are carved one by one and carry a field animal; sign-level tests found seal texts independent of the
+animal (second pass, set 200 PB4). The phrase-level referent method (set 237) applied to seals (SEAL:S, SEAL:R;
+motif classes as set 200): pairs on 3+ seals in 2+ distinct texts with one animal on 80%+; the one-horned bull's base
+rate is absorbed by the shuffle null (animals shuffled among seals, 1,000 times).
+
+- **SR1** More pairs qualify than in 95% of shuffles.
+- **SR2** Excluding the one-horned bull (Bull1), more pairs qualify for the other animals than in 95% of shuffles.
+- **SR3** Progress rule: SR2 holds (a seal phrase fixes a non-default animal; tier 1).
