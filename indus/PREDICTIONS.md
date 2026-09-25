@@ -8911,3 +8911,20 @@ than frequency-matched signs (A 70%, p = 0.32; B 76%, p = 0.67; AF1, AF2), and i
 more often than chance (AF3). As with the closer lines (set 209), the known-head and known-modifier sets are so large
 that the commonest signs belong to them; no name structure is shown in count tails. No roles added. No progress:
 streak 3. Tally, counting parts: 1368 held, 1257 failed (2625 registered).
+
+# Two-hundred-and-twentieth set, registered before testing (24 September 2026): decipherment loop 45, no prefixes in the L profile (five hypotheses)
+
+Metric after loop 44: L world 81.3% of WALS genera / 68.3% of Grambank families excluded (tolerant profile, set 196);
+streak 3. The profile allowed WALS 26A 'weakly suffixing' (3), which admits languages with productive prefixes. The
+Indus names show no closed set of prefixes: what stands before a head comes from an open set (sets 141, 176; section
+11 of the write-up), and no sign class sits obligatorily before heads the way possessor prefixes do. Strict profile:
+WALS 26A = 2 only (strongly suffixing), other tolerant features as set 196; Grambank: tolerant profile plus GB431 = 0
+(no prefix marking the possessed noun). Majority rule per group as set 196. Burushaski (26A = 3; possessor prefixes
+on inalienable nouns) is the open candidate family most affected.
+
+- **LS1** Strict WALS profile excludes more genera than 81.3% and keeps the Dravidian and Indic genera.
+- **LS2** Grambank with GB431 = 0 excludes more families than 68.3% and keeps Dravidian and Indo-European.
+- **LS3** Burushaski is excluded by both.
+- **LS4** Munda is kept by the strict WALS profile (26A = 2 for Mundari), so the change is not aimed at one family.
+- **LS5** Progress rule: LS1 and LS2 hold (L world rises in both databases); if LS3 also holds, Burushaski leaves the
+  open families (L 4 -> 3) with the caveat that the evidence is the absence of a prefix class in names.
