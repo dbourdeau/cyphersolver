@@ -10076,3 +10076,14 @@ All four failed. NAME-COUNT lowers both margins (A 47.19, B 36.07): a count afte
 frame. PRE-NAME lowers both (49.29, 37.09). TWO-400 raises A by 0.27 point (49.91) and B by 0.19 (37.58): real, small,
 and below the registered 0.3 threshold, so not adopted; it extends LOW-POST (set 250) and BODY-400 (set 263) to any
 two-sign body. Progress: none (streak 6). Tally, counting parts: 1457 held, 1373 failed (2830 registered).
+
+# Two-hundred-and-seventy-fourth set, registered before testing (25 September 2026): decipherment loop 99, a two-direction scorer for the WORD task (three hypotheses)
+
+Streak 6. The SIGN task gained from scoring both reading directions (set 204); the WORD task (tier 6) still scores a
+candidate body with the left-to-right model only. Here each candidate is scored by the sum of the left-to-right model
+and the right-to-left model on the reversed line; candidates, split and model unchanged (`predict_test274.py`). Not
+measured before registering.
+
+- **WB1** WORD top-10 rises by 1 point or more.
+- **WB2** WORD top-1 does not fall.
+- **WB3** Progress rule: WB1 and WB2 hold (the WORD task then uses the two-direction scorer).
