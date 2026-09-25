@@ -11165,3 +11165,14 @@ Both held. With all 556 pictured tablets in one pool, the base-rate configuratio
 not bring in more chance units than the rule allows. `prizebench.referent_fixed` now uses one pool. The held-out
 precision of this configuration has not been measured (set 326's 14% was for two pools). Progress: streak 0. Tally,
 counting parts: 1540 held, 1460 failed (3000 registered).
+
+# Three-hundred-and-twenty-ninth set, registered before testing (25 September 2026): decipherment loop 154, seals and tags in the one pool (three hypotheses)
+
+Streak 0. Seals and tags failed as referent pools under the fixed share because one animal dominates them (sets 238,
+291, 311). The base-rate test (set 325) corrects exactly that: a unit for the one-horned bull needs a share well above
+the bull's 77%. Pictured seals (SEAL:S, SEAL:R, SEAL, SEAL:C, SEAL:CY) and tags join set 328's single pool; combined FDR
+against 100 picture shuffles; coverage on the real tokens (`predict_test329.py`). Not measured before registering.
+
+- **SP1** The combined FDR is at or below 10%.
+- **SP2** Coverage rises above 5.43%.
+- **SP3** Progress rule: SP1 and SP2 hold (seals and tags join the referent pool).
