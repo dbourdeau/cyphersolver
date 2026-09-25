@@ -9577,3 +9577,9 @@ Streak 0. From the A lines the grammar still misses: SINGLE-DOUBLE, one lexical 
 - **TR1** parse6 + both rules raises the B margin (any rise) and real B coverage more than shuffled.
 - **TR2** It raises the F margin.
 - **TR3** Progress rule: TR1 holds.
+
+## Results of the two-hundred-and-fifty-first set (added after the test; `predict_test251.py`, `results/predict_test251.md`, `grammar.parse7`)
+
+None held. SINGLE-DOUBLE and 550-END do not generalise: B - margin 36.27 -> 36.08; real +0.15, shuffled +0.34 points. (TR1 fails); F margin 18.52 -> 18.37 (TR2 fails). The A
+gains were fitted to A's lines. Not adopted. No progress: streak 1. Tally, counting parts: 1429 held, 1310 failed
+(2739 registered).

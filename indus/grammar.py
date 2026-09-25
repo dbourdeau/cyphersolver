@@ -191,3 +191,16 @@ def parse6(t, heads, hc, mc, labels, low):
     if 2 <= len(t) <= 3 and t[-1] == '400' and t[-2] in low and all(lexical(g) for g in t[:-1]):
         return 'low-post'
     return None
+
+
+def parse7(t, heads, hc, mc, labels, low):
+    """parse6 plus SINGLE-DOUBLE and 550-END (set 251)."""
+    lab = parse6(t, heads, hc, mc, labels, low)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) == 3 and t[1] == t[2] and lexical(t[0]) and lexical(t[1]):
+        return 'single-double'
+    if len(t) >= 3 and t[-2] == '550' and t[-1] in ('525', '526') and all(lexical(g) for g in t[:-2]):
+        return '550-end'
+    return None

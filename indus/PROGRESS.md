@@ -146,3 +146,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 73 | 248 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | grammar prior in SIGN: +0.2 / +0.1 points, below threshold (no progress; streak 5) |
 | 74 | 249 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the sign before a bare 400 is not head-like (A, B) (no progress; streak 6) |
 | 75 | 250 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | LOW-POST grammar rule (400 after a non-head): G margin 47.6 / 36.3, F up (progress; streak 0) |
+| 76 | 251 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | SINGLE-DOUBLE and 550-END do not generalise to B or F (no progress; streak 1) |

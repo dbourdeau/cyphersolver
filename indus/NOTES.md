@@ -2674,6 +2674,11 @@ held, 1307 failed.
 Registered first (01345b4a3). LOW-POST raises the G margin slightly (B 36.0 -> 36.3, F up). Progress: streak 0. Tally
 1429 held, 1307 failed.
 
+## Two-hundred-and-sixty-fifth pass (25 Sept 2026): decipherment loop 76, two small rules
+
+Registered first (2eae7b468). SINGLE-DOUBLE and 550-END do not generalise to B or F. Not adopted. No progress: streak
+1. Tally 1429 held, 1310 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
