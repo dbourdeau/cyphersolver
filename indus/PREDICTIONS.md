@@ -9230,3 +9230,15 @@ were glanced at in an earlier design check and are excluded): a-mo / ROTA (wheel
 - **LR2** It qualifies more word types than with ideograms shuffled among lines (95% of 1,000 shuffles).
 - **LR3** No known word qualifies with a wrong ideogram.
 - **LR4** Progress rule: LR1 and LR2 hold (the method passes a known-answer control: gate 3 of 6).
+
+## Results of the two-hundred-and-thirty-fourth set (added after the test; `predict_test234.py`, `results/predict_test234.md`)
+
+One held, three failed. On Linear B the picture-referent method qualifies 143 word types, against a shuffle median of
+2 (95th percentile 6; LR2), so co-occurrence with a single picture is far from chance. By the registered answer key it
+recovers none of the 7 known pairs (LR1 fails) and gives 'wrong' ideograms for three (LR3 fails): pa-ka-na -> PUG,
+ko-ri-ja-do-no -> AROM, i-qi-ja -> CAPS. **Check after the test**: the key was written in the wrong ideogram
+convention (Bennett numbers *233, *254 and the adjunct KO, where DAMOS names the ideograms PUG 'dagger / sword', AROM
+'aromatic', CAPS 'chariot box'); by DAMOS's own names those three are correct referents. The registered verdict stands
+(no progress: streak 1); a fresh registration with the key in DAMOS naming is the proper next step. a-mo, i-qo,
+e-ke-a and sa-sa-ma do not qualify (too few lines, or mixed pictures). Tally, counting parts: 1406 held, 1279 failed
+(2685 registered).

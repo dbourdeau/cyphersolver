@@ -2584,6 +2584,12 @@ Registered first (d7cca6eef). 11 texts on 3+ individually made pictured tablets 
 = 0.001): hare, archer, elephant, goat, loop, gharial, fish, bull texts. New tier-1 line: referent fixed by the
 picture (not read) 0.38% of tokens. Progress: streak 0. Tally 1405 held, 1276 failed.
 
+## Two-hundred-and-forty-eighth pass (25 Sept 2026): decipherment loop 59, a Linear B control for the referent method
+
+Registered first (b27af6a3d). 143 words qualify against a shuffle median of 2; the registered key (Bennett numbers)
+recovered none, but three 'wrong' results are right in DAMOS naming (pa-ka-na PUG, i-qi-ja CAPS, ko-ri-ja-do-no AROM).
+Verdict stands; no progress, streak 1. Tally 1406 held, 1279 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

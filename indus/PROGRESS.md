@@ -129,3 +129,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 56 | 231 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 4: count-label slot restricted in both cities; policy: subset replications no longer count as progress (progress; streak 0) |
 | 57 | 232 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | endings not more alike within graphic families than random (low power: 740 dominates) (no progress; streak 1) |
 | 58 | 233 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 1: 11 texts on individually made tablets have their referent fixed by the picture (p = 0.001); new V line 0.38% (progress; streak 0) |
+| 59 | 234 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Linear B control of the referent method: 143 words qualify (null 2), but the key was in the wrong ideogram convention; registered verdict stands (no progress; streak 1) |
