@@ -235,32 +235,6 @@ Catalan, Spanish; f-groups merged; 'p p' merged or dropped; crossed or superscri
 homsolve3). So these two systems are not plain homophonic letter substitution as transcribed: expect syllabic or
 code signs (nomenclator), polyphony, or look-alike signs merged/split by the transcribers.
 
-## Remaining gaps
-
-| piece | tokens | blocker / state |
-|---|---|---|
-| no. 1 (1421), nos. 2, 26, 27, 28 | - | not photographed on DECODE (needs-physical-access: ASSi) |
-| nos. 6 + 24 (one system) | ~4,300 | workable: not plain homophonic; needs sign-inventory audit + syllable/code model |
-| nos. 20 + 23 (one system) | ~4,900 | workable: same; 'f' + o^n / a / o groups behave as units |
-| no. 14 doubtful/unread words | ~530 of 1,291 | partly illegible at DECODE resolution; rest workable (rarer signs) |
-| no. 4 unread signs | 19 of 144 | rare signs, too few occurrences |
-| no. 7 | 363 | gloss key partial (9 values); workable with better transcription |
-| no. 11 (Florentine 1478) | 409 | no key in reach (Gabbrielli vol. I has no Donato Acciaiuoli key) |
-| no. 17 (1528, Balìa cipher) | 282 | too short ciphertext-only; the Balìa key not identified in fasc. 1 |
-| nos. 9, 19, 21, R4794 | 46-170 | too short ciphertext-only; no matching filed key found |
-| no. 18 residue | ~175 of 1,459 | doubtful words (W m/tt/n?), five unread words; workable |
-| no. 15 (Bandini 1546-47) | 229 | candidate key R4764 transcribed; sign-to-key mapping not yet done by eye |
-
-## Escalation
-
-- Siblings: nos. 6/24 and 20/23 pooled; no. 7 vs R4750 (no); no. 4 vs six 1450s keys (no; own fragment used).
-- Clear pages: no. 16 = decipherment of no. 13; no. 8 decipherment on the sheet; glosses on nos. 4, 7, 10 used.
-- Known keys: all alphabet keys of fasc. 1 compared by eye with the letters' sign sets; R4750, R4753, R4754,
-  R4756, R4757, R4762 transcribed and tested on no. 4 and no. 7; R4760, R4768, R4778 on nos. 17 and 20.
-- Print: Senatore 2009 (no. 4 identified); Meister 1902 (numbering); no printed decipherment found.
-- Next: (1) re-transcribe nos. 6/24 and 20/23 with one transcriber and a fixed sign inventory, then test a
-  syllable/nomenclator model; (2) transcribe nos. 15, 18, 22, 29; (3) ask ASSi for photos of no. 1 (1421) and
-  nos. 2, 26-28.
 
 ## Nos. 15, 18, 22, 29 (agent K, 24 Sept; nos. 15/18 under re-verification)
 
@@ -295,3 +269,26 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
   months; B. protects Siena; Siena opens war on X. near Ponte a Valiano at the King's and Emperor's request, gives
   passage and victuals against the Florentines, 100 men-at-arms and 60 light horse; castles taken within five miles
   of the border go to Siena; Siena's claims against Florence judged by the Emperor; last article breaks off.
+
+## Remaining gaps
+
+- no. 1 (1421), nos. 2, 26, 27, 28 - blocker: needs-physical-access; not among the DECODE photographs of the busta (R4790-R4814); only ASSi can supply them.
+- nos. 6 + 24 (one system, ~4,300 tokens) - blocker: no-key-material; no filed key matches; ciphertext-only homophonic, null-aware and bigram solvers all fail (solver validated on a synthetic cipher of the same size); next step is a single-hand re-transcription with a fixed sign inventory.
+- nos. 20 + 23 (one system, ~4,900 tokens) - blocker: no-key-material; same situation; 'f' + o^n / a / o groups behave as units, probably a syllabic or nomenclator element.
+- no. 11 (Acciaiuoli 1478, 409 tokens) - blocker: no-key-material; Florentine cipher; Gabbrielli's key index has no key for Donato Acciaiuoli.
+- no. 17 (1528, 282 tokens) - blocker: too-short; 'cifra di Balia' not identified among the filed keys; ciphertext-only fails at this length.
+- no. 7 (363 tokens) - blocker: too-short; R4750 ruled out; nine gloss values only.
+- no. 15 (Bandini 1546-47, 229 tokens) - blocker: too-short; candidate key R4764 transcribed, sign mapping inconclusive.
+- nos. 9, 19, 21, R4794 (46-170 tokens each) - blocker: too-short; no filed key fits.
+- no. 14 doubtful and unread words (~40% of 1,291 tokens) - blocker: illegible; small signs at the DECODE resolution; the key itself is recovered.
+- no. 18 doubtful words (~12% of 1,459 tokens) - blocker: illegible; W/m/tt and dotted-null distinctions at the DECODE resolution.
+- no. 4 unread signs (19 of 144) - blocker: too-short; rare signs occurring once or twice.
+
+## Escalation
+
+- [x] siblings: every record of the busta opened (keys R4746-R4789, letters R4790-R4814, R1858); systems pooled (nos. 6+24, 20+23); no. 13/16 pair found.
+- [x] clear-pages: no. 16 = decipherment of no. 13; decipherment on no. 8's sheet; glosses on nos. 4, 7, 10 used; no. 22 clear drafts paired with numbered drafts; no. 24 P1 = dorse, not decipherment.
+- [x] known-keys: fasc. 1 alphabets compared by eye with every letter; R4750, R4753, R4754, R4756, R4757, R4762 transcribed and tested on nos. 4 and 7; R4760, R4768, R4778 on nos. 17 and 20; R4764 on no. 15; Gabbrielli vol. I index (Ilardi reel 58) for no. 11.
+- [x] print: Senatore 2009 (identifies no. 4), Meister 1902, Cecchini 1952 inventory, Treccani DBI (Borghese, Benvoglienti); no printed decipherment of any piece found. (CSP, Bain, Forbes, Fraknoi, Nuntiaturberichte, Politische Correspondenz, Parke, Lasry GL.htm, Tomokiyo do not cover Sienese chancery letters.)
+- [x] key-rebuild: nos. 14, 18, 25 keys rebuilt by staged annealing + hand pinning on the images; no. 4 from its fragment and glosses; homsolve2/homsolve3 (nulls)/sylsolve (bigrams) on the open systems.
+- [x] retry: nos. 14 and 18 re-read sign by sign on the images with the extended keys (two passes each); no. 25 re-checked word by word; doubtful words regraded in the reading files.
