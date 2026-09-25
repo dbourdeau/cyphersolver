@@ -10114,3 +10114,14 @@ never attested name bodies (A 1 of 15, B 0 of 21), no more often than the bodies
 end-prone signs close lines of their own kind; they are not a further ending slot in the name paradigm (740 / 520 /
 closers). Their role stays 'end-prone closer' (set 267). Progress: none (streak 8). Tally, counting parts: 1458 held,
 1378 failed (2836 registered).
+
+# Two-hundred-and-seventy-sixth set, registered before testing (25 September 2026): decipherment loop 101, the slot after the counted sign (three hypotheses)
+
+Streak 8. 597 tokens in count lines have no role; many stand right after the counted sign (numeral run + counted sign
++ X). The slot before a count is restricted (count label, set 215); if the slot after the counted sign is restricted
+too it has a job (a unit or qualifier of the count). Entropy of X against 1,000 random same-size samples of the lexical
+tokens of the same count lines (`predict_test276.py`). Not measured before registering.
+
+- **CC1** A: the slot's entropy is below 95% of the random samples.
+- **CC2** B: the same.
+- **CC3** Progress rule: CC1 and CC2 hold; `roles` then gives X the role 'count complement'.
