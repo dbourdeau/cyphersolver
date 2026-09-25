@@ -57,7 +57,7 @@ def merged(objs):
     def sub(a, b):
         n = len(a)
         return any(b[i:i + n] == a for i in range(len(b) - n + 1))
-    texts = sorted({t for t, m in objs}, key=len, reverse=True)
+    texts = sorted({t for t, m in objs}, key=lambda t: (-len(t), t))  # deterministic tie order
     rep = {}
     for t in texts:
         r = next((u for u in texts if len(u) > len(t) and sub(t, u) and rep.get(u) == u), None)
