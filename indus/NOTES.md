@@ -2987,6 +2987,11 @@ Registered first (fc8071a00). All configurations C0-C7 are confirmed on five spl
 precision 23%); the 2.28% line is restored as confirmed, with low precision. No progress (streak 2). Tally 1519 held,
 1430 failed.
 
+## Three-hundred-and-twenty-fourth pass (25 Sept 2026): decipherment loop 135, Linear B yardstick for referent precision
+
+Registered first (5b702d53f). Linear B held-out precision 95-96% against Indus 28-44%: the Indus referents are real but
+loose. No progress (streak 3). Tally 1521 held, 1431 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

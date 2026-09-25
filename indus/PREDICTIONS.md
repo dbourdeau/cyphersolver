@@ -10826,3 +10826,12 @@ lists, both directions) at C0-like (3+ lines, 80%+) and C1-like (2+, 67%+) crite
 - **LP1** Linear B's C0-like held-out precision is above the Indus C0 figure (44%).
 - **LP2** Linear B's C1-like precision is above the Indus C1 figure (28%).
 - **LP3** Progress rule: none (a yardstick; recorded as failing).
+
+## Results of the three-hundred-and-tenth set (added after the test; `predict_test310.py`, `results/predict_test310.md`)
+
+Two held; LP3 is the non-progress rule. On Linear B the same split-half check gives held-out precision of 96% (8,661 of
+8,993 matches, C0-like) and 95% (9,673 of 10,175, C1-like), against the Indus 44% (C0) and 28% (C1). Linear B is the
+easy case the method was built for: an administrative line names its commodity next to the ideogram. The Indus
+tablets' texts are tied to their pictures far more loosely: the referent units are real (sets 290, 309) but a unit
+predicts its picture on a new tablet only a quarter to under half of the time. Stated in the PROGRESS tier 1 cell.
+Progress: none (streak 3). Tally, counting parts: 1521 held, 1431 failed (2952 registered).
