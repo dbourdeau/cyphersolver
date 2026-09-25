@@ -10657,3 +10657,10 @@ formed over Parpola's description families (`predict_test301.py`). Not measured 
 - **VF1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
 - **VF2** Accuracy on the predicted objects is at least set 298's 23.7%.
 - **VF3** Progress rule: VF1 holds (the tier 3 vault line rises).
+
+## Results of the three-hundred-and-first set (added after the test; `predict_test301.py`, `results/predict_test301.md`)
+
+All three failed. With family units the vault reaches 386 held-out tablets and gets 72 right, but the shuffle median
+rises to 9: excess +63 against set 298's +64 (VF1), accuracy 18.7% (VF2). The family units reach more tablets without
+adding referent knowledge: variant-spelling does not explain the tablets the sign units miss. Progress: none (streak 3).
+Tally, counting parts: 1504 held, 1424 failed (2928 registered).

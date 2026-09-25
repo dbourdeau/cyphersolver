@@ -2942,6 +2942,11 @@ catch-all picture codes and part-texts from vault targets. Tally 1503 held, 1419
 Registered first (5adcf1724). Family units reach 2.87% but FDR 11.5%; not adopted. No progress (streak 2). Tally 1504
 held, 1421 failed.
 
+## Three-hundred-and-fifteenth pass (25 Sept 2026): decipherment loop 126, picture vault with sign-family units
+
+Registered first (f50702003). Excess +63 against +64; family units add reach, not signal. No progress (streak 3).
+Tally 1504 held, 1424 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
