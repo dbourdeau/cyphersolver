@@ -10878,3 +10878,10 @@ texts; Fisher two-sided; direction not predicted (`predict_test313.py`). Not mea
 - **RE1** Individually made tablets: the shares differ (p < 0.05).
 - **RE2** Moulded tablets: they differ in the same direction.
 - **RE3** Progress rule: RE1 and RE2 hold (a new finding, replicated across pools).
+
+## Results of the three-hundred-and-thirteenth set (added after the test; `predict_test313.py`, `results/predict_test313.md`)
+
+All three failed. Referent units are followed by 740 / 520 in 10% of occurrences on individually made tablets against
+24% for other recurring units (p = 0.12), and in 26% against 16% on moulded tablets (p = 0.38): opposite directions,
+neither significant. The referent units hold no fixed grammatical slot relative to the endings, as they hold no fixed
+position (set 293). Progress: none (streak 1). Tally, counting parts: 1524 held, 1436 failed (2960 registered).

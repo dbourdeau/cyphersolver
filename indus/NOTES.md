@@ -3002,6 +3002,11 @@ Tally 1522 held, 1433 failed.
 Registered first (668948a60). 4 units, FDR 7.2%, referent line 2.28% -> 2.29%. Progress, minimal (streak 0). Tally 1524
 held, 1433 failed.
 
+## Three-hundred-and-twenty-seventh pass (25 Sept 2026): decipherment loop 138, referent units before an ending
+
+Registered first (5b35684e0). No link to the pre-ending slot (p = 0.12, 0.38; opposite directions). No progress
+(streak 1). Tally 1524 held, 1436 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
