@@ -11221,3 +11221,12 @@ the matching figure; no progress either way. Not measured before registering.
 - **CV2** The units not labelled Bull1 are confirmed (p < 0.05).
 - **CV3** The non-Bull1 units' held-out precision is at least 14% (set 326).
 - **CV4** Progress rule: none (validation; recorded as failing).
+
+## Results of the three-hundred-and-thirty-first set (added after the test; `predict_test331.py`, `results/predict_test331.md`)
+
+Two held, two failed (CV4 is the non-progress rule). On five split-halves both ways, all units of the combined pool
+match 14,867 of 29,790 held-out objects' pictures (50%) against a shuffle median of 12,869 (p = 0.005; CV1): most
+matches are bull units on bull seals, right about as often as the bull's base rate plus a margin. The units for other
+pictures match 958 of 8,946 (11%) against a median of 242 (p = 0.005; CV2): four times chance, but below set 326's 14%
+(CV3 fails). Both figures of the line stand, confirmed; their precision is low. Progress: none (streak 1). Tally,
+counting parts: 1547 held, 1464 failed (3011 registered).

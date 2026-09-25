@@ -3094,6 +3094,11 @@ held, 1462 failed.
 Registered first (c01e71763). Alpha 0.002, FDR 7.3%, Linear B passes: referent line 5.43% -> 23.5%, of which most is
 units for the default seal bull; 7.5% without them. Progress (streak 0). Tally 1545 held, 1462 failed.
 
+## Three-hundred-and-forty-fifth pass (25 Sept 2026): decipherment loop 156, split-half check of the combined referent pool
+
+Registered first (9b593e413). Confirmed for all units and for the non-bull units (958 against 242, four times chance;
+precision 11%). No progress (streak 1). Tally 1547 held, 1464 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
