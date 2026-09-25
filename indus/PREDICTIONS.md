@@ -9281,3 +9281,17 @@ None held. In the short all-lexical lines of no genre, the last sign is not more
 signs in A (24 lines, mean propensity 0.100, p = 0.81; OB1); in B it nearly is (45 lines, 0.186, p = 0.051; OB2), and
 the first sign is not less head-like than the last (OB3). These lines do not behave as bare names; no roles added. No
 progress: streak 1. Tally, counting parts: 1409 held, 1283 failed (2692 registered).
+
+# Two-hundred-and-thirty-seventh set, registered before testing (25 September 2026): decipherment loop 62, the referent method at phrase level (four hypotheses)
+
+Streak 1. The picture-referent method passed its Linear B control at word level (sets 234-235: word types recurring
+across lines with one ideogram). Set 233 applied it to whole Indus texts. At the level where it was validated: units =
+adjacent sign pairs (numerals included), counted once per object, on individually made pictured tablets (TAB:C,
+TAB:I); a pair qualifies if it is on 3+ such objects, in 2+ distinct texts, with one picture on 80%+ of them. Null:
+pictures shuffled among objects, 1,000 times.
+
+- **PL1** More pairs qualify than in 95% of shuffles.
+- **PL2** At least three qualifying pairs occur in 2+ distinct texts (not one text's copies).
+- **PL3** The qualifying pairs occur on seals or other objects not used to find them (reported: how many tokens).
+- **PL4** Progress rule: PL1 and PL2 hold; the tokens of qualifying pairs on the tablets used are added to the tier-1
+  referent line (their occurrences elsewhere are reported, not counted).
