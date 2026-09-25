@@ -10069,3 +10069,10 @@ TWO-400 (two lexical signs + 400; LOW-POST requires a low-head-propensity sign).
 - **GZ2** PRE-NAME, the same.
 - **GZ3** TWO-400, the same.
 - **GZ4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-seventy-third set (added after the test; `predict_test273.py`, `results/predict_test273.md`)
+
+All four failed. NAME-COUNT lowers both margins (A 47.19, B 36.07): a count after a name is a shuffle pattern, not a
+frame. PRE-NAME lowers both (49.29, 37.09). TWO-400 raises A by 0.27 point (49.91) and B by 0.19 (37.58): real, small,
+and below the registered 0.3 threshold, so not adopted; it extends LOW-POST (set 250) and BODY-400 (set 263) to any
+two-sign body. Progress: none (streak 6). Tally, counting parts: 1457 held, 1373 failed (2830 registered).

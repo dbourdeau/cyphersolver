@@ -2792,6 +2792,11 @@ Registered first (e527216d6). Strict-head two-sign frames are already parsed; H-
 Registered first (56556cc74). Three discounts (0.79, 1.22, 1.22) do no better than one (S 4.6354 -> 4.6357; A -> B and
 SIGN worse). No progress (streak 5). Tally 1457 held, 1369 failed.
 
+## Two-hundred-and-eighty-seventh pass (25 Sept 2026): decipherment loop 98, names with material around them
+
+Registered first (dbff60678). NAME-COUNT and PRE-NAME lower the margins; TWO-400 rises 0.27 on A, below the threshold.
+No progress (streak 6). Tally 1457 held, 1373 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
