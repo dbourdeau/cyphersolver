@@ -11569,3 +11569,14 @@ passes (DF2). The decade blocks group sign variants that the description familie
 variant signs gather enough observations. A jump this size needs the split-half check (next set).
 `prizebench.referent_fixed` includes them. Progress: streak 0. Tally, counting parts: 1579 held, 1491 failed (3070
 registered).
+
+# Three-hundred-and-forty-ninth set, registered before testing (25 September 2026): decipherment loop 174, split-half check of the set 348 configuration (three hypotheses)
+
+Streak 0. Set 348 raised the referent line to 4.57% with decade-family units. Independent check as set 340: five random
+half-splits of the distinct texts, both directions, held-out matches against 200 joint shuffles; held-out precision
+against set 340's 5% (`predict_test349.py`). A validation: a failure of TW1 downgrades the line; no progress either way.
+Not measured before registering.
+
+- **TW1** The configuration is confirmed on the five split-halves (p < 0.05).
+- **TW2** Its held-out precision is at least 5%.
+- **TW3** Progress rule: none (validation; recorded as failing).
