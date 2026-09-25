@@ -61,8 +61,8 @@ def main():
     rd.say('- %d correct of %d predicted (%.1f%%); shuffles median %d, 95th percentile %d; p = %.3f (set 294: 64 of 191, excess +60).' % (h, n, 100 * h / max(1, n), sorted(null)[100], sorted(null)[189], p))
     rd.say()
     ex = h - sorted(null)[100]
-    rd.rec('VW1', 'excess of correct predictions over the shuffle median above set 294's +60, p < 0.05', 'excess %+d, p = %.3f' % (ex, p), ex > 60 and p < 0.05)
-    rd.rec('VW2', 'accuracy on predicted objects above set 294's 33.5%', '%.1f%%' % (100 * h / max(1, n)), h / max(1, n) > 0.335)
+    rd.rec('VW1', 'excess of correct predictions over the shuffle median above +60 (set 294), p < 0.05', 'excess %+d, p = %.3f' % (ex, p), ex > 60 and p < 0.05)
+    rd.rec('VW2', 'accuracy on predicted objects above 33.5% (set 294)', '%.1f%%' % (100 * h / max(1, n)), h / max(1, n) > 0.335)
     rd.rec('VW3', 'progress rule: VW1 (the tier 3 vault line rises)', 'VW1 %s' % (ex > 60 and p < 0.05), ex > 60 and p < 0.05)
     rd.finish()
 
