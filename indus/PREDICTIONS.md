@@ -10682,3 +10682,14 @@ All three failed. Without catch-all votes the vault gets 68 of 292 held-out pict
 excess +63 against set 298's +64. Removing the Mult / Scene / Comp votes costs as many right predictions as it saves;
 the vault line is unchanged, and it can be stated without the catch-all codes at almost no cost. Progress: none
 (streak 4). Tally, counting parts: 1504 held, 1427 failed (2931 registered).
+
+# Three-hundred-and-third set, registered before testing (25 September 2026): decipherment loop 128, single signs as referent units under a stricter criterion (three hypotheses)
+
+Streak 4. Single signs failed at set 287's loose criterion (set 288: FDR 10.8%) because common signs pick up chance
+associations. Here single signs must meet the stricter criterion (3+ objects in 2+ texts, 80%+ one picture), while pairs
+and 3-sign runs keep 2+ / 67%+; combined FDR against 100 picture shuffles (`predict_test303.py`). Not measured before
+registering.
+
+- **SS1** The combined FDR is at or below 10%.
+- **SS2** Coverage rises above 1.46%.
+- **SS3** Progress rule: SS1 and SS2 hold (strict single signs join the referent units).
