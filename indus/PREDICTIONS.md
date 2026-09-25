@@ -9186,3 +9186,19 @@ share 0.877 (49 heads, 10 families with 2+ heads), p = 0.94 (FE1); B 0.925, p = 
 p = 0.97 and 0.93 (FE3). With 740 ending most names the statistic sits near its ceiling, so the test has little power;
 beyond the fish, no family-level ending class is shown. No progress: streak 1. Tally, counting parts: 1402 held, 1275
 failed (2677 registered).
+
+# Two-hundred-and-thirty-third set, registered before testing (24 September 2026): decipherment loop 58, texts whose referent the picture fixes (four hypotheses)
+
+Streak 1. Tier 1 (V) counts sign tokens read as sense and checked against outside evidence; it is 0.008% (four
+copper-tablet picture signs). Sets 200-203: on tablets the picture goes with the whole text, not with single signs.
+Mould copies are one design repeated and prove nothing, but copper tablets (TAB:C) and incised tablets (TAB:I) are
+made one by one. Criterion: a text written on 3+ individually made pictured objects (TAB:C, TAB:I; motif as set 200)
+whose modal picture is on 80%+ of them has its **referent fixed by the picture** (not a reading). Null: pictures
+shuffled among all those objects, 1,000 times.
+
+- **RF1** More text groups meet the criterion than in 95% of shuffles.
+- **RF2** At least three distinct texts meet it.
+- **RF3** Every text meeting it pairs with a picture no other qualifying text pairs with, or the shared pictures are
+  listed (a label is specific to its scene).
+- **RF4** Progress rule: RF1 and RF2 hold; then V gains a line 'referent fixed by the picture': the share of sign
+  tokens (distinct lines) in qualifying texts, reported beside the strict V.
