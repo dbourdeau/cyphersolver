@@ -103,14 +103,20 @@ def referent_fixed(DL):
     from predict_test237 import qual
     qp = qual(objs)
     used = {t for t, m in objs}
+    # set 243 (MR1-MR2): + qualifying pairs on moulded tablets (distinct texts = independent designs)
+    mo = objects(F, recs, ('TAB:B',))
+    qm = qual(mo)
+    usedm = {t for t, m in mo}
     cov = 0
     for t in DL:
         if t in q:
             cov += len(t)
-        elif t in used:
-            mark = set()
-            for i in range(len(t) - 1):
-                if t[i:i + 2] in qp:
-                    mark |= {i, i + 1}
-            cov += len(mark)
-    return cov / sum(len(t) for t in DL), len(q) + len(qp)
+            continue
+        mark = set()
+        for pool, qq in ((used, qp), (usedm, qm)):
+            if t in pool:
+                for i in range(len(t) - 1):
+                    if t[i:i + 2] in qq:
+                        mark |= {i, i + 1}
+        cov += len(mark)
+    return cov / sum(len(t) for t in DL), len(q) + len(qp) + len(qm)

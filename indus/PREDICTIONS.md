@@ -9423,3 +9423,11 @@ objects, 1,000 times.
 - **MR2** At least three qualifying pairs are not already qualifying on the individually made tablets (set 237).
 - **MR3** Progress rule: MR1 and MR2 hold; the new pairs' tokens on the moulded tablets used are added to the tier-1
   referent line.
+
+## Results of the two-hundred-and-forty-third set (added after the test; `predict_test243.py`, `results/predict_test243.md`, `prizebench.referent_fixed`)
+
+All three held. On the moulded tablets (308 pictured objects), 8 sign pairs recur in 2+ distinct texts (independent
+designs) with one picture on 80%+, against a shuffle median of 0 (95th percentile 1; MR1), all new (MR2): 590 407,
+255 436, 436 690, 440 740 = gharial; 806 158, 752 740, 798 740 = tree; 2 240 = one-horned bull. The tree phrase 806
+158 contains the leaf sign 806, as the earlier notes proposed. The tier-1 referent line rises from 0.61% to 0.84% of
+sign tokens. Progress: streak 0. Tally, counting parts: 1421 held, 1295 failed (2716 registered).

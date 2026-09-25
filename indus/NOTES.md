@@ -2633,6 +2633,11 @@ streak 1. Tally 1418 held, 1292 failed.
 Registered first (3287d35a5). Not replicated (3 pairs on tablets; seals alike). No progress: streak 2. Tally 1418 held,
 1295 failed.
 
+## Two-hundred-and-fifty-seventh pass (25 Sept 2026): decipherment loop 68, referent phrases on moulded tablets
+
+Registered first (aed5e1a52). 8 new referent pairs on moulded tablets (gharial, tree incl. 806 158, bull); referent
+line 0.61% -> 0.84%. Progress: streak 0. Tally 1421 held, 1295 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
