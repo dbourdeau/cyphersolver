@@ -18,8 +18,7 @@ from predict_test103 import CL
 from signs import FISH
 
 random.seed(157)
-FONT = os.environ.get('INDUS_FONT', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
-                      'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad/indus-website/src/assets/fonts/sk_indus_script-webfont.ttf')
+FONT = os.environ.get('INDUS_FONT', 'C:/Users/dbour/indus_data/indus-website/src/assets/fonts/sk_indus_script-webfont.ttf')
 N = 64
 
 

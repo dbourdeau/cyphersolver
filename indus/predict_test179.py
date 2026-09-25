@@ -14,8 +14,7 @@ from predict_test152 import LINB
 from signs import load
 
 random.seed(199)
-YAJ = os.environ.get('YAJ', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
-                     'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad/yaj/xlits.csv')
+YAJ = os.environ.get('YAJ', 'C:/Users/dbour/indus_data/yaj/xlits.csv')
 M = set(R.END) | set(CL) | {'400', '90'}
 
 

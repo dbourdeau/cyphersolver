@@ -21,8 +21,7 @@ from predict_test18 import level, lstrat, n700
 from signs import FISH, load
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FPATH = os.environ.get('ICIT_FULL', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-'
-                       'florence-1414-cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad/outside/'
+FPATH = os.environ.get('ICIT_FULL', 'C:/Users/dbour/indus_data/outside/'
                        'icit_full_records_indusscript_net.csv')
 N = 10000
 END = ('740', '520')

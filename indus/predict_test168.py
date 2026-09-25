@@ -15,8 +15,7 @@ from predict_test152 import LINB
 from predict_test157 import kind, profile
 
 random.seed(188)
-M77 = os.environ.get('M77', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
-                     'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad/indus_decipher/data/m77_indusscript_real_corpus.csv')
+M77 = os.environ.get('M77', 'C:/Users/dbour/indus_data/indus_decipher/data/m77_indusscript_real_corpus.csv')
 PICT = ('749', '341', '753', '777')
 
 

@@ -1,6 +1,6 @@
 """Personal-name lists in candidate and control languages, segmented into elements, for comparing name structure
 with the Indus names (sets 171-172). The source data are third-party and stay outside the repository; paths come from
-the LANG_DATA environment variable (default: this session's scratchpad).
+the LANG_DATA environment variable (default: C:/Users/dbour/indus_data, outside the repository).
 
 Corpora and elements:
 - indus: distinct names on seals in F (R.names_in), elements = signs of body + ending.
@@ -23,8 +23,7 @@ import zipfile
 
 import rtools as R
 
-SP = os.environ.get('LANG_DATA', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
-                    'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad')
+SP = os.environ.get('LANG_DATA', 'C:/Users/dbour/indus_data')
 SLP_V = set('aAiIuUfFxXeEoO')
 IAST_V = re.compile(r'(ai|au|[aāiīuūeoṛṝḷ])')
 

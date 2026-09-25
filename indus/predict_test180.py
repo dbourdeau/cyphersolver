@@ -11,8 +11,7 @@ from equation_rebus import lexicon_mw
 from predict_test179 import M, subst_pairs, test
 from signs import load
 
-SP = os.environ.get('LANG_DATA', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
-                    'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad')
+SP = os.environ.get('LANG_DATA', 'C:/Users/dbour/indus_data')
 SKIP = {'a', 'an', 'the', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'one', 'pair', 'of'}
 
 

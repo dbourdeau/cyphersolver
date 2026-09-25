@@ -9,8 +9,7 @@ from collections import defaultdict
 import rtools as R
 from predict_test147 import chapman
 
-LINB = os.environ.get('LINB', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
-                      'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad/linb')
+LINB = os.environ.get('LINB', 'C:/Users/dbour/indus_data/linb')
 INDUS = {'ratio': 2968 / 585, 'shared': 20 / 130, 'one': 536 / 585}
 
 

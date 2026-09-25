@@ -17,8 +17,7 @@ from predict_test179 import M, subst_pairs
 from signs import CRAB, FIG, FISH, load
 
 random.seed(221)
-CL4 = os.environ.get('CLICS4', 'C:/Users/dbour/AppData/Local/Temp/claude/C--Users-dbour-cypher--claude-worktrees-florence-1414-'
-                     'cipher-160632/03a95ee0-e290-45c7-bab7-1e38cbd68d34/scratchpad/clics4/cldf')
+CL4 = os.environ.get('CLICS4', 'C:/Users/dbour/indus_data/clics4/cldf')
 RULES = [('woman', 'woman'), ('bow', 'bow'), ('arrow', 'arrow'), ('pot', 'pot'), ('jar', 'pot'), ('container', 'pot'),
          ('tree', 'tree'), ('sun', 'sun'), ('moon', 'moon'), ('crescent', 'moon'), ('rain', 'rainprecipitation'),
          ('mountain', 'mountain'), ('river', 'river'), ('drum', 'drum'), ('comb', 'comb'), ('shield', 'shield'),
