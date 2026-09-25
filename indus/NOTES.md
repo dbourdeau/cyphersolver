@@ -2956,6 +2956,11 @@ Registered first (ea450f4ac). Excess +63 against +64. No progress (streak 4). Ta
 Registered first (6046eba06). 17 single signs join (923 elephant, 790 goat, 4 pipal, 17 / 318 / 440 / 503 gharial ...),
 FDR 9.1%; referent line 1.46% -> 1.62%. Progress (streak 0). Tally 1507 held, 1427 failed.
 
+## Three-hundred-and-eighteenth pass (25 Sept 2026): decipherment loop 129, strict skip-pairs and family units as referents
+
+Registered first (be6c78ed7). Both pass under the stricter criterion; family units adopted (FDR 9.6%): referent line
+1.62% -> 1.80%. Progress (streak 0). Tally 1510 held, 1427 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

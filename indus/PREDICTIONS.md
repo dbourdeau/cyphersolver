@@ -10713,3 +10713,11 @@ single signs passed at the stricter one (set 303). Each is added, under the stri
 - **SF1** Strict skip-pairs: FDR at or below 10% and coverage above set 303's.
 - **SF2** Strict family units (pairs and 3-sign runs over description families): the same.
 - **SF3** Progress rule: SF1 or SF2 holds (the passing kind joins the referent units; if both, the larger coverage).
+
+## Results of the three-hundred-and-fourth set (added after the test; `predict_test304.py`, `results/predict_test304.md`)
+
+All three held. Under the stricter criterion, skip-pairs added to set 303's units give 96 units, FDR 7.6%, coverage
+1.70% (SF1); family units (pairs and 3-sign runs over description families) give 108 units, FDR 9.6%, coverage 1.80%
+(SF2). The registered rule takes the larger coverage: family units join (`prizebench.referent_fixed`), and the referent
+line rises 1.62% -> 1.80%. Skip-pairs and family units together were not tested. Progress: streak 0. Tally, counting
+parts: 1510 held, 1427 failed (2937 registered).
