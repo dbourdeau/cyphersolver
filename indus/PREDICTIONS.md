@@ -9443,3 +9443,11 @@ as set 240 (pairs on 3+ objects; distinct pictures per occurrence); comparison: 
   (one-sided rank test, p < 0.05).
 - **FF2** On the individually made tablets (TAB:C, TAB:I), the same direction.
 - **FF3** Progress rule: FF1 holds with FF2 in the same direction.
+
+## Results of the two-hundred-and-forty-fourth set (added after the test; `predict_test244.py`, `results/predict_test244.md`)
+
+None held. Pairs with a fish sign are more picture-diverse than other lexical pairs in both samples, moulded tablets
+(0.35 against 0.26; 8 and 24 pairs; p = 0.16; FF1) and individually made tablets (0.43 against 0.30; 6 and 17; p =
+0.11; FF2), but neither is significant: the direction fits fish-headed names naming beings rather than the scene, the
+samples are too small to show it. No progress: streak 1. Tally, counting parts: 1421 held, 1298 failed (2719
+registered).

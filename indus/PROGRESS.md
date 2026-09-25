@@ -139,3 +139,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 66 | 241 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pictures: closers untestable on moulded tablets; count-label pairs picture-specific (4 pairs); endings picture-diverse (p = 0.011) (no progress; streak 1) |
 | 67 | 242 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | count labels as content words not replicated (3 pairs on tablets; seals alike) (no progress; streak 2) |
 | 68 | 243 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 1: 8 referent pairs across distinct moulded designs (gharial, tree 806 158, bull); referent line 0.61% to 0.84% (progress; streak 0) |
+| 69 | 244 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish pairs more picture-diverse in both samples but not significant (small n) (no progress; streak 1) |
