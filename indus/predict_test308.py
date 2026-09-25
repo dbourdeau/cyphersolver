@@ -34,9 +34,10 @@ def matches(u, H):
             continue
         lab, n = key
         fl = lab.startswith('F')
-        pool = lab[1:] if fl else lab
+        dl = lab.startswith('D')  # decade-family units (set 349); no effect on earlier runs
+        pool = lab[1:] if (fl or dl) else lab
         for t, m in H[pool][1]:
-            tt = fam(t) if fl else t
+            tt = fam(t) if fl else tuple(g if g == '|' else ('f%d' % (int(g) // 10) if g.isdigit() else g) for g in t) if dl else t
             for g in X.grams_of(tt, n):
                 if g in qq:
                     out.append((qq[g], m, t))
