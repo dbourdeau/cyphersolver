@@ -9949,3 +9949,11 @@ opening-prone sign = 'opener', line-final 400 = 'line-final 400', each only wher
 - **RL2** B: the opening-prone signs open 50%+ of their occurrences.
 - **RL3** B: 400 is line-final in 80%+ of its occurrences.
 - **RL4** Progress rule: RL1-RL3 hold and R rises; `roles` then uses the edge roles.
+
+## Results of the two-hundred-and-sixty-seventh set (added after the test; `predict_test267.py`, `results/predict_test267.md`, `progress.roles(edges=True)`)
+
+All four held. The edge behaviours learned from A replicate on B's new lines: the 10 end-prone signs end 53% of their
+122 B occurrences (RL1), the 36 opening-prone signs open 61% of their 344 (RL2), and 400 is line-final in 89% of its
+92 (RL3). Given roles where no earlier role applies (end-prone closer 56 tokens, opener 135, line-final 400 40), R rises
+84.2% -> 86.1%. (A first run read the baseline as 84.5% because the 400 role was not switched off with the option;
+fixed before recording.) Progress: R rises (streak 0). Tally, counting parts: 1454 held, 1351 failed (2805 registered).

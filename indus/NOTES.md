@@ -2762,6 +2762,11 @@ progress (streak 1). Tally 1450 held, 1347 failed.
 Registered first (9ac91f604). COUNT-3, HEAD-COUNT and CAGE-MID add nothing (COUNT's two-sign limit stands; the cage
 opens lines). No progress (streak 2). Tally 1450 held, 1351 failed.
 
+## Two-hundred-and-eighty-first pass (25 Sept 2026): decipherment loop 92, roles from the new grammar rules
+
+Registered first (e4dc07beb). End-prone closers, openers and line-final 400 replicate on B (53%, 61%, 89%); R 84.2% ->
+86.1%. Progress (streak 0). Tally 1454 held, 1351 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

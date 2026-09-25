@@ -20,7 +20,7 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 85.1% / 77.0% (no-prefix profile, set 220); no candidate beats the decoys inside the remaining groups (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.4% (frequency 0% / 1.3%) |
 | 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 39.7% / 61.8% (two-direction model, set 204; discounted contexts, sets 210-211; frequency 9.6% / 22.4%) |
-| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 84.2%, G 49.6 / 37.4, M+ 41.4% |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 86.1%, G 49.6 / 37.4, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
 
@@ -162,3 +162,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 89 | 264 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: OPEN-PRONE (lexical line opened by an opening-prone sign, closed by a name head) raises the margin A 49.21 to 49.64, B 36.92 to 37.39; LABEL-ANY and NAME-TAIL parse shuffles, rejected (progress; streak 0) |
 | 90 | 265 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: REVERSED lowers the margin A 49.64 to 32.04 (shuffles parse backwards far more often than real lines: the reading direction is confirmed, no slips recovered); BARE-2 and ENDP-POST add nothing (no progress; streak 1) |
 | 91 | 266 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: COUNT-3 lowers the margin, HEAD-COUNT parses no new line, CAGE-MID adds 0.1 on A (below 0.3) (no progress; streak 2) |
+| 92 | 267 | 4.635 (26.1%) | 86.1% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | R: edge roles from the new frames replicate on B (end-prone signs end 53% of their B occurrences, openers open 61%, 400 line-final 89%); R 84.2% to 86.1% (progress; streak 0) |

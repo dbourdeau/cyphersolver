@@ -105,7 +105,7 @@ def roles(DL, edges=False):
                 role = 'end-prone closer'  # set 267
             elif i == 0 and g in openp:
                 role = 'opener'  # set 267
-            elif i == len(t) - 1 and g == '400':
+            elif edges and i == len(t) - 1 and g == '400':
                 role = 'line-final 400'  # set 267 (BODY-400, set 263)
             num_before = g in R.NUMS
             tot += 1
@@ -163,7 +163,7 @@ def grammar_margin(DL):
 def main(label='measure'):
     DL, tr, te = data()
     bits, h1 = structure(tr, te)
-    r, by, tot = roles(DL)
+    r, by, tot = roles(DL, edges=True)  # set 267 (RL1-RL4): edge roles
     m = meanings(DL)
     mp = meanings_plus(DL)
     p = len(VALUES)
