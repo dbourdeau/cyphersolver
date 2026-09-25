@@ -10468,3 +10468,12 @@ Not measured before registering.
 - **SN2** There are more of them than the shuffles' 95th percentile.
 - **SN3** They mark seal tokens (coverage beyond the tablets).
 - **SN4** Progress rule: SN1 and SN2 hold (seal units join the referent line).
+
+## Results of the two-hundred-and-ninety-first set (added after the test; `predict_test291.py`, `results/predict_test291.md`)
+
+One held, three failed. With the calibrated criterion the 1,274 pictured seals give 5 units labelled with an animal
+other than the one-horned bull (2 233 235, 415 803, 415 803 1, 550 1, 803 1, all gaur), against 2.2 in shuffles (FDR
+43%, SN1 fails; 95th percentile 7, SN2 fails); they would mark 11 tokens (SN3). Set 238's result stands with the looser
+criterion: seal texts do not name their animal. The referent method's reach is the tablets, where the text and the
+picture were made for each other. Progress: none (streak 1). Tally, counting parts: 1491 held, 1407 failed (2898
+registered).
