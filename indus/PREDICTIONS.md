@@ -9343,3 +9343,17 @@ One held, three failed. The family 5-gram lowers S on the fixed test slightly (4
 A -> B (5.1927 -> 5.2014; F52 fails), and SIGN top-1 falls by less than 0.05 points (both 39.7% rounded; F53 fails):
 the longer family context overfits. Not adopted. No progress: streak 2. Tally, counting parts: 1415 held, 1288 failed
 (2702 registered).
+
+# Two-hundred-and-fortieth set, registered before testing (25 September 2026): decipherment loop 65, the pictures check the grammar (three hypotheses)
+
+Streak 2. If the grammatical analysis is right, grammatical signs (the endings 740 / 520, the post-ending markers 400
+/ 90, closers, caged signs, numerals) carry no referent of their own, while lexical signs do. On pictured tablets, sign
+pairs containing a grammatical sign should then go with more different pictures than pairs of two lexical signs.
+Statistic: per pair recurring on 3+ objects, distinct pictures / occurrences; one-sided Mann-Whitney (rank test),
+grammatical against lexical pairs. Disclosed: a design look at the individually made tablets (TAB:C, TAB:I) showed the
+most picture-diverse pairs are ending / marker pairs (740 400, 740 90, 690 740, 100 740); the registered test there is
+not independent of that look. The moulded tablets (TAB:B) were not looked at and are the test.
+
+- **GV1** On the individually made tablets, grammatical pairs have higher picture diversity than lexical pairs (p < 0.05).
+- **GV2** On the moulded tablets (TAB:B), the same (p < 0.05).
+- **GV3** Progress rule: GV2 holds (the pictures independently confirm the grammar / lexicon split: tier 1 / 4).
