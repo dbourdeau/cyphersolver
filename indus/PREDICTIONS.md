@@ -11079,3 +11079,10 @@ vote takes the tier 1 configuration's votes (own pool, then the other). Excess o
 
 - **VB1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
 - **VB2** Progress rule: VB1 holds (the tier 3 vault line rises).
+
+## Results of the three-hundred-and-twenty-fourth set (added after the test; `predict_test324.py`, `results/predict_test324.md`)
+
+Both failed. The back-off vault gets 72 of 385 held-out pictures right (18.7%), shuffle median 9: excess +63 against
+set 298's +64 (VB1 fails). The tier 1 configuration's extra reach adds predictions right about as often as by chance.
+Progress: none (streak 10). The owner's stopping rule (10 consecutive loops without progress) is met with this loop,
+ending the run begun at loop 103. Tally, counting parts: 1533 held, 1456 failed (2989 registered).

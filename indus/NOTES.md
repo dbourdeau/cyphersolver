@@ -3056,6 +3056,14 @@ Registered first (e27529dcd). Coverage 2.28%, FDR 10.2%; no gain. No progress (s
 
 Registered first (6dc8f2280). Excess +56 against +64. No progress (streak 9). Tally 1533 held, 1454 failed.
 
+## Three-hundred-and-thirty-eighth pass (25 Sept 2026): decipherment loop 149, back-off picture vault; stopping rule met
+
+Registered first (660e09a3b). Excess +63 against +64. Streak 10: the owner's stopping rule is met. The run of loops
+103-149: tier 1 referent line 0.79% -> 2.29% (FDR-calibrated units, confirmed on split-halves, held-out precision ~23%
+against Linear B's 95%); tier 3 gains a picture vault (70 held-out tablets right against a shuffle median of 6) and a
+restoration line against Mahadevan 1977 (29 of 75 signs against a neighbour baseline of 23); R 86.3%, G 49.6 / 37.4.
+Tally 1533 held, 1456 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
