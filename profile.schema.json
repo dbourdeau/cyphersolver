@@ -125,7 +125,7 @@
      "required": ["exists"],
      "description": "Whether a reading existed anywhere before this project read it. This is the contamination question.",
      "properties": {
-      "exists": {"type": "string", "enum": ["no", "in archive", "in print", "online", "partial"]},
+      "exists": {"type": "string", "enum": ["no", "in archive", "in print", "online", "partial", "unpublished"]},
       "where": {"type": "string"},
       "found": {"type": "string", "enum": ["before attempt", "during attempt", "after reading", "not found"]},
       "used": {"type": "boolean", "description": "True if the reading drew on it."}
@@ -169,6 +169,8 @@
      "key recovered from ciphertext-only", "key recovered based on plaintext from external sources", "key recovered based on adjacent plaintext",
      "read after matching with key from external sources", "read with known key", "read from existing decipherment", "not solved", "not applicable"],
      "description": "HOW the text was obtained, George Lasry's outcome categories (email 21 Sept 2026) plus one. ciphertext-only = key recovered here from the ciphertext alone (an independent re-solution of something solved elsewhere still counts; prior_solution says so). plaintext from external sources = key recovered by matching the ciphertext to a plaintext found elsewhere (printed edition, calendar, a copy in another collection). adjacent plaintext = key recovered from plaintext next to the ciphertext (interlinear or marginal decipherment, clear passages around the cipher, a decipherment on a neighbouring folio of the same file). matching with key from external sources = an existing key not previously tied to this document (a sibling letter's key, a key filed elsewhere) was found to fit and applied. known key = the key was already identified for this document (on the DECODE record, published for it, filed with it) and applied. existing decipherment = a full contemporary or modern decipherment existed and the work was transcribing and checking it, with no key applied. not solved = attempted, text not obtained. not applicable = not a cipher, or the item could not be reached (offline only)."},
+    "first_break": {"enum": [true, false, "unpublished prior"],
+     "description": "Whether this project's reading is the first break: false = a reading was published before (independent re-solution, left out of first-break lists); 'unpublished prior' = someone solved it earlier but never published (Lasry's review, 25 Sept 2026). Omitted = no prior known."},
     "method_basis": {"type": "string", "description": "One sentence naming the evidence for method, e.g. 'key rebuilt from the interlinear decipherment of f. 12'."},
     "contribution": {"type": "array", "items": {"type": "string", "enum": [
      "transcription", "decipherment with ambiguous key", "key recovered", "key extended or corrected", "sender or date identified", "catalogue correction", "none"]},

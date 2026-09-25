@@ -1,5 +1,7 @@
 # TNA SP 106/10 ff. 241-243 — undeciphered letter in the "masonic alphabet" (DECODE R927)
 
+Lasry review (25 Sept 2026): the letter was decoded by Sheila Richards in *Secret Writings* (1973). The book was not seen here and a web search found no record of it; it was not used. This reading is an independent re-solution (outcome.first_break = false), left out of the ciphertext-only list for Klaus Schmeh.
+
 Outcome: read in part (2026-09-19). Cipher broken: French, homophonic pigpen. Last page (f.243) read almost in full; first page (f.241) read in fragments.
 
 ## Source

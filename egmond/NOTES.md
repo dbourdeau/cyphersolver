@@ -2,6 +2,8 @@
 
 Status: read, with minor uncertainties retained. Already solved by George Lasry in 2023 (key on cryptiana GL.htm §2; he pointed this out on 21 Sept 2026): this reading is an independent re-solution, not a first reading.
 
+Lasry review (25 Sept 2026): not a first break, so left out of the ciphertext-only list sent to Klaus Schmeh (profile outcome.first_break = false).
+
 ## 20 September 2026: source location
 
 The active goal is to solve the letter, including the ciphered address. A provisional French reading and inferred key now exist; see the checkpoint below. The preceding turn concerned a

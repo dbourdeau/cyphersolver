@@ -67,9 +67,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "No DECODE record, not on Tomokiyo or Lasry (GL.htm) lists, no edition found by web search. Brunet 2019 on Clairac not reachable.",
-   "found": "not found",
+   "exists": "unpublished",
+   "where": "G. Lasry solved it independently in 2023 (improved Feb 2026), unpublished (private communication, 25 Sept 2026). No DECODE record, not on Tomokiyo or Lasry (GL.htm) lists, no edition found by web search. Brunet 2019 on Clairac not reachable.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -166,12 +166,22 @@
    "what": "Merged with a parallel project pass on the same item (main 13e0f27b2): its margin (153r.14, 'assemblez en la chambre du conseil') and dorse ('Advertissemens') readings decoded with key.txt and confirmed; added to the reading.",
    "result": "worked",
    "date": "2026-09-23"
+  },
+  {
+   "date": "2026-09-25",
+   "kind": "literature search",
+   "what": "Lasry review (email 25 Sept 2026): Lasry wrote that he had independently solved it in 2023 (improved Feb 2026) but never published it; kept in the ciphertext-only list with that note.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
   "method_basis": "The homophonic cipher with two-stroke units of BnF fr. 3157 item 67 (ff. 152r-156v) was broken from the images alone: 'zo' taken as one unit from statistics, probable short words (que, le, les, de) seeded into an annealer, then words aligned against the French they had to be; no decipherment, key or edition exists.",
-  "contribution": ["transcription", "key recovered", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
   "class": "read",
   "fraction_read": 0.989,
   "fraction_read_method": "measured",
@@ -185,6 +195,7 @@
    "total": 9,
    "tokens_open": 0
   },
-  "notes": "Key broken here ciphertext-only. Content fits the Agenais in Dec 1560: Clairac assembly, Caumont, Biron at Bergerac, Navarre at Nérac, the États of Orléans deputies. Writer unnamed."
+  "notes": "Key broken here ciphertext-only. Content fits the Agenais in Dec 1560: Clairac assembly, Caumont, Biron at Bergerac, Navarre at Nérac, the États of Orléans deputies. Writer unnamed.",
+  "first_break": "unpublished prior"
  }
 }

@@ -62,15 +62,15 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "Web search Sept 2026: none",
-   "found": "unknown",
+   "exists": "in print",
+   "where": "Sheila Richards, Secret Writings (1973), as reported by G. Lasry (email 25 Sept 2026); the book was not seen here and a web search found no bibliographic record.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
    "images"
   ],
-  "attack": "unknown",
+  "attack": "ciphertext-only",
   "human_role": "unknown",
   "tools": [
    "unknown"
@@ -106,12 +106,21 @@
    "kind": "reading",
    "what": "f. 243 read almost in full, f. 241 in fragments",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-25",
+   "kind": "literature search",
+   "what": "Lasry review (email 25 Sept 2026): the letter was decoded by Sheila Richards in Secret Writings (1973). Not found by the Sept 2026 web search; not seen, not used. Independent re-solution, dropped from the ciphertext-only list for Klaus Schmeh.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The homophonic pigpen key was built by annealing (hc3.py) on a hand transcription of f. 243 until French emerged, then fixed with guessed anchors ('monsieur', 'vous supplie'); the pencil key on the flap was tested and rejected, and no prior solution was found.",
-  "contribution": ["transcription", "key recovered"],
+  "method_basis": "The homophonic pigpen key was built by annealing (hc3.py) on a hand transcription of f. 243 until French emerged, then fixed with guessed anchors ('monsieur', 'vous supplie'); the pencil key on the flap was tested and rejected, and no prior solution was found at the time; Lasry later reported it decoded by Sheila Richards in Secret Writings (1973), so this is an independent re-solution.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
   "fraction_read": 0.5,
   "verification": [
@@ -146,6 +155,7 @@
   "codes_open": {
    "open": 2,
    "total": "unknown"
-  }
+  },
+  "first_break": false
  }
 }

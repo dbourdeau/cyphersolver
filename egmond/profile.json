@@ -253,17 +253,27 @@
       "kind": "verification",
       "result": "failed",
       "what": "Prior solution found after reading: G. Lasry pointed out that he solved this cipher in 2023 (key on cryptiana GL.htm section 2). The prior-work search had missed it. The reading here is an independent re-solution; not yet compared sign by sign with his key."
+    },
+    {
+      "date": "2026-09-25",
+      "kind": "control",
+      "what": "Lasry review (email 25 Sept 2026): not a first break (Lasry 2023, key on cryptiana GL.htm), so it is dropped from the ciphertext-only list sent to Klaus Schmeh; method unchanged, marked independent re-solution on the site.",
+      "result": "worked"
     }
   ],
   "outcome": {
     "method": "key recovered from ciphertext-only",
     "method_basis": "The graphic substitution of BnF fr. 3015 no. 8 was broken from a new transcription of the Gallica images by language-model annealing with compound-stroke and null variants, then audited line by line; independent re-solution: Lasry had solved it in 2023 (cryptiana GL.htm section 2), found only afterwards.",
-    "contribution": ["transcription", "key recovered"],
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
     "class": "read",
     "fraction_read": 1.0,
     "verification": [
       "none"
     ],
-    "notes": "Every transcribed sign has a proposed letter or null value; this is coverage, not 100% confidence. Left-bar x and blotted date u remain M; anomalous literal spellings retained. Internal body/address consistency only, no independent key or clear copy."
+    "notes": "Every transcribed sign has a proposed letter or null value; this is coverage, not 100% confidence. Left-bar x and blotted date u remain M; anomalous literal spellings retained. Internal body/address consistency only, no independent key or clear copy.",
+    "first_break": false
   }
 }

@@ -1,5 +1,7 @@
 # Charles III of Lorraine to the comte de Vaudémont, Nancy, 18 June 1592 (BnF fr. 3621 no. 97)
 
+Lasry review (25 Sept 2026): Tomokiyo had already solved it (2025, see 4a). Independent re-solution, not a first break; left out of the ciphertext-only list for Klaus Schmeh (outcome.first_break = false).
+
 **Status: read in part — 71.5% of cipher tokens read as sense, measured (22 Sept 2026).** The
 system is broken: a reciprocal letter-pair substitution (a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x),
 dots for doubled letters, a null, a few special signs and syllable/word figures (31 = ma, 139 = vous,

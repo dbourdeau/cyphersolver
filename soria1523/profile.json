@@ -376,8 +376,9 @@
    "used": false
   },
   "inputs": [
-   "images",
    "cleartext context",
+   "images",
+   "known plaintext",
    "sibling key"
   ],
   "attack": "sibling key",
@@ -492,12 +493,22 @@
    "kind": "reading",
    "what": "Key-B passages of R9491 (Siena), R9492 f.448, R9494 and R9497 read in substance; Beaurain identified.",
    "result": "partial"
+  },
+  {
+   "date": "2026-09-25",
+   "kind": "control",
+   "what": "Lasry review (email 25 Sept 2026): key B used plaintext from outside the target (R9844 decipherment), so the target is not 100% ciphertext-only. Method changed from 'key recovered from ciphertext-only' to 'key recovered based on plaintext from external sources'; key A remains a ciphertext-only break.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "Key A, which carries the June and July letters (R9488-R9492) read nearly throughout, was broken by simulated annealing with a Castilian 4-gram model plus hand fixes; key B was rebuilt from the court's decipherment of Soria's 30 Dec 1523 letter R9844 (Salazar 9/30) and gives the key-B passages in substance.",
-  "contribution": ["transcription", "key recovered", "sender or date identified"],
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Key B was rebuilt from an external plaintext, the court's decipherment of Soria's 30 Dec 1523 letter R9844 (Salazar 9/30), and gives the key-B passages in substance; key A, which carries the June and July letters (R9488-R9492), was broken from the ciphertext alone by simulated annealing with a Castilian 4-gram model plus hand fixes. Classed by the key-B route, as Lasry advised (25 Sept 2026): the target as a whole is not ciphertext-only.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
   "class": "read in part",
   "fraction_read": 0.85,
   "grades": "unknown",

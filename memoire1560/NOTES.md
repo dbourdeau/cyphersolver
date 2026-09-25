@@ -2,6 +2,8 @@
 
 Status: read (98.9% of cipher words; key broken here, ciphertext only)
 
+Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2023 (improved Feb 2026) but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
+
 Catalogue 276. BnF fr. 3157 ("Recueil de lettres et de pièces originales", Montmorency papers), item 67,
 "Mémoire en chiffre du XIIe decembre 1560". Gallica btv1b90598645. Worked 22-23 Sept 2026.
 

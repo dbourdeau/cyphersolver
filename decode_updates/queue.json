@@ -6765,7 +6765,7 @@
     "R9449": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Read in part, 71.5% of cipher tokens measured (790/1,105). Reciprocal letter-pair cipher with doubling dots, a null, special signs and 14 syllable/word figures (31 ma, 139 vous, 145 me); no key survives. Broken ciphertext-only 18 Sept 2026 by a contributor (aryasn2026, PR #4), re-read from the page with the key in hand 22 Sept 2026. Open: most special signs, 11 of 14 figures, four garbled runs (L12, L13, L18, L20). No. 22 of the same volume (R9444) is an unrelated plaintext decipherment of January 1592 letters, not a crib for this one.",
+     "note": "Read in part, 71.5% of cipher tokens measured (790/1,105). Reciprocal letter-pair cipher with doubling dots, a null, special signs and 14 syllable/word figures (31 ma, 139 vous, 145 me); no key survives. Broken ciphertext-only 18 Sept 2026 by a contributor (aryasn2026, PR #4), re-read from the page with the key in hand 22 Sept 2026. Open: most special signs, 11 of 14 figures, four garbled runs (L12, L13, L18, L20). No. 22 of the same volume (R9444) is an unrelated plaintext decipherment of January 1592 letters, not a crib for this one. Satoshi Tomokiyo reports solving it in 2025 (cryptiana unsolved.htm, opening line quoted); this reading is independent of his.",
      "reading": [
       {
        "file": "decode_updates/decryptions/R9449.txt"
@@ -7585,6 +7585,32 @@
      "note": "No. 29: torn scrap of a nomenclator/word list ('Ungaria - 187?', 'Giovan[ni]', 'Lodyo'), not a letter; record type should be key fragment.",
      "reading": null,
      "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "sp106r927": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r927.html",
+   "key": {
+    "file": "sp106r927/key.json",
+    "lang": "FR",
+    "how": "ciphertext-only: homophonic pigpen, key annealed (hc3.py) on a hand transcription of f. 243, fixed with anchors; the pencil key on the flap does not fit"
+   },
+   "cite": "Sheila Richards, Secret Writings (1973), reported by G. Lasry as an earlier decoding (not seen here)",
+   "fields": {
+    "plaintext_lang": "French",
+    "cipher_types": "homophonic substitution (pigpen / masonic signs)"
+   },
+   "records": {
+    "R927": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "French letter to 'Monsieur'. f. 243 (last page) read almost in full, f. 241 in fragments, f. 242 not transcribed. Homophonic pigpen; the pencil key on the flap is not the key. Earlier decoded by Sheila Richards, Secret Writings (1973), per G. Lasry; this reading is independent.",
+     "reading": [
+      {
+       "file": "sp106r927/p3_plain.txt"
+      }
+     ],
      "sent": false
     }
    }

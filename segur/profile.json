@@ -189,7 +189,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Tomokiyo's reconstructed f. 321 key (sibling); no plaintext of ff. 233, 239, 288v",
+   "where": "Tomokiyo's reconstructed f. 321 key (sibling); no plaintext of ff. 233, 239, 288v; G. Lasry solved it independently in 2024, unpublished (private communication, 25 Sept 2026)",
    "found": "before attempt",
    "used": true
   },
@@ -280,12 +280,23 @@
    "kind": "reading",
    "what": "f. 366 (24 tokens) tried with both keys; two of three lines do not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-09-25",
+   "kind": "literature search",
+   "what": "Lasry review (email 25 Sept 2026): Lasry wrote that he had independently solved it in 2024 but never published it; kept in the ciphertext-only list with that note.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
   "method_basis": "A syllabary residue test and a structured annealer with the letters' clear French as language-model context rebuilt the ff. 233/239/288v key, confirmed on matched controls; Tomokiyo's sibling f. 321 key (on cryptiana before the attempt) has different offsets and was used only for f. 333.",
-  "contribution": ["transcription", "key recovered", "key extended or corrected", "sender or date identified"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "key extended or corrected",
+   "sender or date identified"
+  ],
   "class": "read",
   "fraction_read": "unknown",
   "grades": "unknown",
@@ -294,6 +305,7 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "ff. 233, 239, 288v read in substance; f. 333 read with the sibling key; f. 366 left open; f. 143 (1583) another key, not read."
+  "notes": "ff. 233, 239, 288v read in substance; f. 333 read with the sibling key; f. 366 left open; f. 143 (1583) another key, not read.",
+  "first_break": "unpublished prior"
  }
 }

@@ -1,5 +1,7 @@
 # Henry of Navarre to Ségur, BnF 500 de Colbert 401 ff. 233, 239, 288v (1585–86) — SOLVED 2026-09-16
 
+Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2024 but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
+
 **Status: the key is recovered and the three ciphered letters of 1585–86 are read in substance.** The alphabet, the
 syllabary and the double-letter signs are fixed; a dozen word-signs written in letters (*pi*, *na*, *gne*, *H*, *L* …) and
 three nomenclature numbers (180, 215?, 900) are glossed from context or left open. The 1583 letter at f. 143 is in a different
