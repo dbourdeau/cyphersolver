@@ -9514,3 +9514,14 @@ set 246 (loop 71) keeps only its single pottery pair (32 999), which does not me
 shows nothing. No progress: loop 71 streak 3, loop 72 streak 4. Lesson: distinct-text requirements must merge
 transcriptions that are sub-strings of one another (the same object text read in part). Tally, counting parts: 1425
 held, 1302 failed (2727 registered).
+
+# Two-hundred-and-forty-eighth set, registered before testing (25 September 2026): decipherment loop 73, the grammar as a prior in the SIGN task (three hypotheses)
+
+Streak 4. The grammar (grammar.parse5, learned parts from the training lines) parses real lines far more often than
+shuffled ones. In the SIGN task each candidate's two-direction log-probability gets a bonus of lambda bits if the line
+with the candidate parses. Design run on 300 lines of the training lines' own split: lambda 0 / 1 / 2 / 4 gives 40.1 /
+40.4 / 40.7 / 40.6% top-1. Registered: lambda = 2.
+
+- **GP1** SIGN top-1 on the fixed test with the grammar prior beats the task without it by 0.3 points or more.
+- **GP2** The same A -> B (first 300 B lines; grammar learned from A).
+- **GP3** Progress rule: GP1 and GP2 hold (the grammar prior enters the SIGN task; tier 7).
