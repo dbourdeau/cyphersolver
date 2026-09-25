@@ -8889,3 +8889,17 @@ fixed test from 4.6097 to 4.5706 (PK1) and A -> B from 5.1544 to 5.1224 (PK2), b
 39.5% (PK3 fails), so by the registered rule it is not adopted: no progress, streak 2. As in sets 214 and 217, S keeps
 improving while the SIGN task stays near 39-40%: better calibrated probabilities do not change which candidate ranks
 first. Tally, counting parts: 1368 held, 1253 failed (2621 registered).
+
+# Two-hundred-and-nineteenth set, registered before testing (24 September 2026): decipherment loop 44, what follows a count (four hypotheses)
+
+Metric after loop 43: R 84.2% (unroled: count lines 690 tokens, 'other' lines 790); streak 2. In count lines the
+signs after the counted sign (the first sign after the numeral run) have no role: 'N x x x' (11 lines in A), 'x N x x
+x' (14). If a count is followed by the name of its owner or place, the last sign of that tail should be a known name
+head. Tail = the signs after the counted sign, when there are 2+. Known heads = signs seen directly before 740 / 520
+in A. Null: frequency-matched draws (the 20 nearest signs in frequency rank), 1,000 times.
+
+- **AF1** In A's count lines, the last sign of the tail is a known name head more often than frequency-matched draws
+  (p < 0.05).
+- **AF2** The same in B's new count lines (heads from A).
+- **AF3** The tail's other signs are known name modifiers more often than frequency-matched draws (B).
+- **AF4** Progress rule: AF1 and AF2 hold; then the tail's last sign gets 'name head' and the rest 'name modifier' in R.
