@@ -9567,3 +9567,13 @@ All three held. LOW-POST (1-2 lexical signs + 400, the sign before 400 of low he
 from 36.02 to 36.27 points, real B coverage more than shuffled (+0.37 against +0.13; LP1), and the F margin from 18.43
 to 18.52 (LP2). A small gain, adopted in the metric's G margin: lines like '131 400' are a construction of their own,
 a non-head sign with the marker. Progress: streak 0. Tally, counting parts: 1429 held, 1307 failed (2736 registered).
+
+# Two-hundred-and-fifty-first set, registered before testing (25 September 2026): decipherment loop 76, two small rules (three hypotheses)
+
+Streak 0. From the A lines the grammar still misses: SINGLE-DOUBLE, one lexical sign + a doubled lexical sign ('117
+615 615', '142 615 615'; set 187's edge doubling when the rest is a single sign); 550-END, lexical signs + 550 + 525 /
+526 ('220 550 525', '233 550 526'). Design on A: margin 51.51 -> 51.62 and 51.68.
+
+- **TR1** parse6 + both rules raises the B margin (any rise) and real B coverage more than shuffled.
+- **TR2** It raises the F margin.
+- **TR3** Progress rule: TR1 holds.
