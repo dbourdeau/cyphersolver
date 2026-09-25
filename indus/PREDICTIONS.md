@@ -10208,3 +10208,12 @@ registering.
 - **TY2** The same A -> B (any fall).
 - **TY3** SIGN top-1 (with the prefix) does not fall.
 - **TY4** Progress rule: TY1, TY2 and TY3 hold (S and SIGN then condition on the object class).
+
+## Results of the two-hundred-and-eightieth set (added after the test; `predict_test280.py`, `results/predict_test280.md`)
+
+All four failed. The object-class prefix raises S on the fixed test (4.6354 -> 4.6748), raises it much more A -> B
+(5.1927 -> 5.3304) and lowers SIGN top-1 (39.7% -> 39.5%). The prefix takes a context slot: the start contexts of the
+trigram and family components are split six ways, and each class sees too few lines; A -> B suffers most because most
+B lines have no class in the records ('unk'), a start context the A lines rarely give. What the medium changes (length,
+genre) the position and end components already see. Progress: none (streak 1). Tally, counting parts: 1460 held, 1395
+failed (2855 registered).

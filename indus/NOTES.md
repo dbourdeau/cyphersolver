@@ -2829,6 +2829,11 @@ The ensemble lowers SIGN (39.8% -> 39.5%). No progress (streak 1). Tally 1458 he
 Registered first (433414a1b). The heading's second sign gets the role (B: 83% of openings take 2 / 60 / 1); R 86.1% ->
 86.3%. Heading-body lines do not end in heads. Progress (streak 0). Tally 1460 held, 1391 failed.
 
+## Two-hundred-and-ninety-fourth pass (25 Sept 2026): decipherment loop 105, object type as context
+
+Registered first (53b0b487f). The class prefix fragments start contexts: S 4.6354 -> 4.6748, A -> B worse, SIGN down.
+No progress (streak 1). Tally 1460 held, 1395 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
