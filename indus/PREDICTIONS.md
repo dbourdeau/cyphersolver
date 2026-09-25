@@ -9550,3 +9550,13 @@ times.
 None held. The sign directly before a 400 that follows no ending is not head-like: A - 77 tokens; mean propensity 0.084; p = 1.0000. (ZF1); B 27 tokens, mean
 propensity 0.098, p = 0.92 (ZF2). Lines like '131 400' are not names with the ending left out; 400 after a lexical
 sign stays unexplained. No progress: streak 6. Tally, counting parts: 1426 held, 1307 failed (2733 registered).
+
+# Two-hundred-and-fiftieth set, registered before testing (25 September 2026): decipherment loop 75, a rule for 400 after a non-head (three hypotheses)
+
+Streak 6. Set 249 found (in A, against its registered direction) that the sign before a 400 that follows no ending is
+less head-like than chance. Grammar rule LOW-POST: a line of 1-2 lexical signs + 400 whose sign before 400 has head
+propensity (A) below 0.05 (3+ occurrences). Design on A: margin 51.28 -> 51.51.
+
+- **LP1** parse5 + LOW-POST raises the B margin (any rise) and real B coverage more than shuffled.
+- **LP2** It raises the F margin.
+- **LP3** Progress rule: LP1 holds.
