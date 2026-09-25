@@ -2812,6 +2812,13 @@ Registered first (ae55f5326). Bodies before end-prone signs are not name bodies 
 Registered first (a75793810). The slot is open (A p = 0.16, B p = 0.20). No progress (streak 9). Tally 1458 held, 1381
 failed.
 
+## Two-hundred-and-ninety-first pass (25 Sept 2026): decipherment loop 102, final markers opening a line; stopping rule met
+
+Registered first (d0332aedc). Only the cage opens lines; closers, 400 / 90 and 740 / 520 do not. Streak 10: the owner's
+stopping rule is met. Loops 80-102 in sum: G margin 47.6 / 36.3 -> 49.6 / 37.4 (CAGE-OPEN, END-PRONE, BODY-400,
+HEADING-BODY, OPEN-PRONE; grammar.parse11), R 84.2% -> 86.1% (edge roles), referent line 0.79%; S, SIGN, WORD and tiers
+1-3 unchanged; the restoration check on the CISI photographs was not feasible. Tally 1458 held, 1385 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -10145,3 +10145,11 @@ Margins not measured before registering.
 - **GO2** POST-OPEN, the same.
 - **GO3** ENDING-OPEN, the same.
 - **GO4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-seventy-seventh set (added after the test; `predict_test277.py`, `results/predict_test277.md`)
+
+All four failed. A closer (A 49.53, B 37.20), 400 / 90 (48.91, 36.82) or 740 / 520 (48.32, 36.23) opening a line before
+a name lowers both margins: of the final markers only the caged sign also opens lines (CAGE-OPEN, set 261), which fits
+the cage being a unit of its own (set 184) rather than a line-final marker. Progress: none (streak 10). The stopping
+rule (10 consecutive loops without progress) is met with this loop. Tally, counting parts: 1458 held, 1385 failed
+(2843 registered).
