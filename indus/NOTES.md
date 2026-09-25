@@ -2696,6 +2696,12 @@ fish/520, count-label slot all replicate (cage: 3 cases). Consistency evidence, 
 Registered first (adeb366ca). 82 pictured damaged tablets add 4 referent pairs (bull, goat, gharial); referent line
 0.76% -> 0.79%. Progress: streak 0. Tally 1437 held, 1317 failed.
 
+## Two-hundred-and-sixty-ninth pass (25 Sept 2026): decipherment loop 80, blind restoration vs CISI photographs
+
+Registered first (002427952). The 14 examined gap signs in CISI vol. 1 are illegible on the scan as well, so the frozen
+predictions could not be checked; the test waits on better images (vol. 2/3 plates or museum photographs). No progress
+(streak 1). Tally 1437 held, 1321 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

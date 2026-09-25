@@ -9684,3 +9684,14 @@ them. Only objects whose photograph is in CISI vol. 1 and whose gap sign is legi
 - **RS3** Top-1 beats the frequency baseline (the commonest clean sign) on the same cases.
 - **RS4** Progress rule: RS1 and RS3 hold (frozen predictions confirmed by outside evidence; tier 3 gains its first
   line, 'blind restorations confirmed').
+
+## Results of the two-hundred-and-fifty-fifth set (added after the test; `predict_test255.py`, `results/predict_test255.md`, `results/restoration_readings.tsv`)
+
+All four failed, for lack of evidence rather than by a wrong prediction. Of the 79 gaps, 15 are on objects in CISI
+vol. 1; 14 were examined on the owner's scan (H-28's page was not located), including 400-dpi crops of M-61 and M-62.
+None of the gap signs can be identified: the objects are broken across the text (M-167, M-168), worn (K-31, L-78,
+M-477, C-33), corroded (C-40), overlapped (K-88) or too small in the photograph (H-246, H-291), which is why ICIT
+marks them illegible from the same plates. With no readable case the frozen predictions were never compared with
+anything (RS1-RS3 need 10 readable), and they stay unread and committed for a later check on better photographs or
+the objects. The scan's resolution, not the model, is the blocker. Progress: none (streak 1). Tally, counting parts:
+1437 held, 1321 failed (2758 registered).
