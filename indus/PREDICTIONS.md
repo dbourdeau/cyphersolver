@@ -9895,3 +9895,17 @@ even without an ending. LABEL-ANY lowers both margins (47.73, 35.27): only the f
 set 215 found), and NAME-TAIL lowers them sharply (43.90, 33.16): nothing but 400 / 90 follows a name. The grammar
 becomes parse11; `progress.grammar_margin` uses it. Progress: G margin rises (streak 0). Tally, counting parts: 1450
 held, 1343 failed (2793 registered).
+
+# Two-hundred-and-sixty-fifth set, registered before testing (25 September 2026): decipherment loop 90, three more grammar rules for unparsed lines (four hypotheses)
+
+Streak 0. Same method (sets 261-264), on the lines parse11 leaves unparsed; some end in heading signs (820, 861), as if
+read the wrong way (`predict_test265.py`): REVERSED (the line read backwards parses: a direction slip in writing or in
+the transcription; shuffles are as likely to parse backwards as forwards, so only real reversed lines raise the
+margin), BARE-2 (2+ lexical signs, the last heading 2+ A names and heading more often than modifying; G2's bare rule
+needs 5+ and TWO-BARE, 1+, failed in set 262), ENDP-POST (lexical body + an end-prone sign + 400 / 90). Margins not
+measured before registering.
+
+- **GV1** REVERSED raises the margin on A by 0.3 point or more and raises it on B.
+- **GV2** BARE-2, the same.
+- **GV3** ENDP-POST, the same.
+- **GV4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
