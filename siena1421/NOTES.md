@@ -1,6 +1,6 @@
 # Siena, Concistoro 2308: "Lettere in cifra" (catalogue 336)
 
-Status: in progress
+Status: read in part (key recovered from the ciphertext alone for nos. 14, 18, 25; no. 4 from its own fragment; no. 1 of 1421 not photographed, needs ASSi)
 
 Session of 24 September 2026. Goal set by Daniel: decipher the 29 cipher letters of ASSi Concistoro 2308, fasc. 2
 ("Lettere in cifra"), oldest dated 1421 per Meister 1902 pp. 50-51, "solo parzialmente decifrate" per the 1952

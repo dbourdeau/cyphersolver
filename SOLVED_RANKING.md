@@ -21,6 +21,8 @@ The **Potocka and Mniszech letters** are provisionally p137 at **2.90**: an inde
 
 The **London letters to J. G. von Ilten of 1743** are provisionally p139 at **2.95**: a never-deciphered code letter read with the table from another volume of the same papers, checked against the office worksheet of its sibling; military orders of the Pragmatic Army campaign, regional rather than decisive.
 
+The **Siena Concistoro cipher letters** are provisionally p140 at **3.90**: three unknown systems recovered from the ciphertext alone and a fourth key rebuilt from its own fragment, a never-studied corpus, but only one letter above the read bar and the 1421 piece never photographed.
+
 The **Reims letter of 19 June 1589** (R2276) is provisionally p138 at **3.00**: a long letter wholly in cipher, read in part by extending Tomokiyo's partial Nevers-Piles table, with new content on the Reims succession of 1589; the identification of the cipher was already known (Biermann 2021, unpublished).
 
 ## Axes and weights
@@ -38,6 +40,7 @@ The **Reims letter of 19 June 1589** (R2276) is provisionally p138 at **3.00**: 
 
 | # | Target | Date | D | H | N | R | F | V | Score | Why it sits here |
 |---|---|---|---|---|---|---|---|---|---|---|
+| p140 | **Sienese envoys and others → the government of Siena**, Concistoro 2308 fasc. 2 (DECODE R4790–R4814; catalogue 336) | before 1429–1547 | 5 | 3 | 5 | 5 | 2 | 2 | **3.90** | D 5: three unknown systems recovered ciphertext-only from images (no. 14 first with a hand crib, then unaided); H 3: a Siena–Empire treaty against Florence, envoys' reports, the 1456 Naples embassy; N 5: no reading anywhere; R 5: bundle found on DECODE, eleven pieces transcribed, 43 keys tested; F 2: catalogue only; V 2: partial, one letter above the read bar, the 1421 piece unphotographed |
 | p139 | **Unsigned (London) and Ernst von Steinberg → Johann Georg von Ilten**, GWLB Hannover Ms XXIII 1234:29,2 pp. 73–75, 119–121 | Feb–Apr 1743 | 2 | 3 | 4 | 4 | 1 | 4 | **2.95** | Key found in a later volume of the Ilten papers and matched by the worksheet of the second letter; the first letter had no decipherment at all. [ilten1743](https://dbourdeau.github.io/cyphersolver/ilten1743.html) |
 | p138 | **Unknown writer (probably Jean de Piles) → unnamed patron**, Reims, BnF fr. 20974 pp. 1–3 (DECODE R2276) | 19 June 1589 | 3 | 3 | 4 | 4 | 1 | 2 | **3.00** | Three pages wholly in cipher read to 91.8% by extending a partial published table; catalogue date and addressee corrected; torn edges and ~80 words open. [r2276](https://dbourdeau.github.io/cyphersolver/r2276.html)
 | p137 | **Potocka and Mniszech to Dunin** | 1714–16 / undated | 3 | 3 | 4 | 3 | 1 | 2 | **2.90** | Nine letters share the recovered alphabet; person codes and Mniszech remain open. [potocka1714](https://dbourdeau.github.io/cyphersolver/potocka1714.html) |
@@ -642,3 +645,5 @@ Reims letter, 19 June 1589 (R2276) provisional score: 0.25×3 + 0.25×3 + 0.20×
 London letters to J. G. von Ilten, 1743, provisional score: 0.25×2 + 0.25×3 + 0.20×4 + 0.10×4 + 0.10×1 + 0.10×4 = **2.95** (p139): D 2, a key applied after finding it; H 3, forage orders and Stair's instructions in 1743; N 4, the first letter unread until now; R 4, key traced through the catalogue to another volume; F 1; V 4, read end to end with the worksheet agreeing.
 
 **Hanover-Celle ministers → Jobst Hermann von Ilten (1697–1706; catalogue 346)**: read at the time. Every code run carries its interlinear decipherment; transcribed and checked, 7 of 492 groups unglossed. Ranked as a catalogue correction, not a break.
+
+Siena Concistoro cipher letters (catalogue 336) provisional score: 0.25×5 + 0.25×3 + 0.20×5 + 0.10×5 + 0.10×2 + 0.10×2 = **3.90** (p140).
