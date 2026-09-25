@@ -9088,3 +9088,16 @@ within 10 points of the within-site ones (CS4). **Reading:** one grammatical sys
 count labels and devices, serves the two cities and the smaller sites: a tier-4 (archaeological consistency) finding
 that any reading must respect. Progress (a new finding that replicates across independent samples): streak 0. Tally,
 counting parts: 1386 held, 1271 failed (2657 registered).
+
+# Two-hundred-and-twenty-eighth set, registered before testing (24 September 2026): decipherment loop 53, one grammar across object types and periods (five hypotheses)
+
+Metric: G margin A 47.3 / B 36.0; set 227 found one grammar across sites; streak 0. The same test across object types
+(F: seals 1,530 distinct lines, tablets 578) and across time at Harappa (ICIT period, as set 196: early 83 lines, late
+282). Grammar and learned parts as set 227.
+
+- **OT1** Learned on seals, the margin on tablet lines is 20 points or more.
+- **OT2** Learned on tablets, the margin on seal lines is 20 points or more.
+- **OT3** Learned on late Harappa, the margin on early Harappa lines is 20 points or more.
+- **OT4** The seal -> tablet margin is lower than the seal -> seal (within) margin by 5 points or more (tablets are a
+  different genre, sets 69, 157).
+- **OT5** Progress rule: OT1 and OT3 hold (the grammar holds across object type and time).
