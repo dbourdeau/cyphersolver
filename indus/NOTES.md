@@ -2628,6 +2628,11 @@ Registered first (7b10b72ec). Closers untestable (no recurring pairs on moulded 
 specific (0.16 vs 0.30, 4 pairs; opposite of registered); endings alone picture-diverse (p = 0.011). No progress:
 streak 1. Tally 1418 held, 1292 failed.
 
+## Two-hundred-and-fifty-sixth pass (25 Sept 2026): decipherment loop 67, are the count labels content words?
+
+Registered first (3287d35a5). Not replicated (3 pairs on tablets; seals alike). No progress: streak 2. Tally 1418 held,
+1295 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

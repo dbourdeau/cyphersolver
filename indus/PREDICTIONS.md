@@ -9404,3 +9404,10 @@ Pairs containing one of A's ten commonest pre-count signs and no other grammatic
   rank test, p < 0.05).
 - **CL2** On seals, the same.
 - **CL3** Progress rule: CL1 or CL2 holds with the other in the same direction (the count label is a content slot).
+
+## Results of the two-hundred-and-forty-second set (added after the test; `predict_test242.py`, `results/predict_test242.md`)
+
+None held. On the individually made tablets only 3 count-label pairs recur (mean diversity 0.25 against 0.40 for
+ending pairs, not significant; CL1); on seals count-label and ending pairs are alike (0.39 against 0.37; CL2). Set
+241's hint that the label slot holds content words does not replicate; the question stays open. No progress: streak
+2. Tally, counting parts: 1418 held, 1295 failed (2713 registered).
