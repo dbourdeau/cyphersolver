@@ -204,3 +204,14 @@ def parse7(t, heads, hc, mc, labels, low):
     if len(t) >= 3 and t[-2] == '550' and t[-1] in ('525', '526') and all(lexical(g) for g in t[:-2]):
         return '550-end'
     return None
+
+
+def parse8(t, heads, hc, mc, labels, low):
+    """parse6 plus CAGE-OPEN (set 261): a caged sign opens the line and the rest (2+ signs) parses as a name."""
+    lab = parse6(t, heads, hc, mc, labels, low)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) >= 3 and t[0] in CAGED and parse6(t[1:], heads, hc, mc, labels, low) in ('name', 'formula', 'bare'):
+        return 'cage-open'
+    return None

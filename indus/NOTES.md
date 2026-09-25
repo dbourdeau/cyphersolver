@@ -2729,6 +2729,12 @@ progress (streak 5). Tally 1439 held, 1334 failed.
 Registered first (6d3c4baba). A: pre-closer signs head-class 26% against 10% (p = 0.0004); B: 15% against 13% (p = 0.5).
 Not replicated, so the closer-line tokens stay without a role. No progress (streak 6). Tally 1441 held, 1336 failed.
 
+## Two-hundred-and-seventy-fifth pass (25 Sept 2026): decipherment loop 86, three grammar rules for unparsed lines
+
+Registered first (e22280d07). CAGE-OPEN (caged sign + name) raises the G margin A 47.6 -> 47.9, B 36.3 -> 36.5 and joins
+the grammar (parse8). MID-POST and NAME-NAME parse shuffles as well as real lines and are rejected. Progress (streak 0).
+Tally 1443 held, 1338 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

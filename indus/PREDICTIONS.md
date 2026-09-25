@@ -9820,3 +9820,12 @@ decides.
 - **GR2** MID-POST, the same.
 - **GR3** NAME-NAME, the same.
 - **GR4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-sixty-first set (added after the test; `predict_test261.py`, `results/predict_test261.md`, `grammar.parse8`)
+
+Two held, two failed. CAGE-OPEN raises the G margin on A (47.6 -> 47.9) and on B (36.3 -> 36.5): a caged sign opening a
+line before a name (226 31 740, 232 48 740, 466 705 760 740) is a real frame, not a shuffle artefact, and fits set 184
+(the cage marks a unit in place of the ending): a caged unit can stand before a name as well as alone. MID-POST (A 47.2,
+B 35.9) and NAME-NAME (A 47.3, B 36.9) lower the A margin: splitting rules parse shuffled lines as readily as real ones
+(as SEQ did in set 192). The grammar becomes parse8 = parse6 + CAGE-OPEN; `progress.grammar_margin` uses it. Progress:
+G margin rises (streak 0). Tally, counting parts: 1443 held, 1338 failed (2781 registered).
