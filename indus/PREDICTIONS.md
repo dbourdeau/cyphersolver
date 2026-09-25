@@ -10095,3 +10095,14 @@ One held, two failed. Scoring both reading directions puts 10 of the 232 held-ou
 the gain matches the SIGN task's (set 204), but two names are too few to adopt the scorer: the WORD task is bounded by
 the 54 test names seen whole in training (set 256). Progress: none (streak 7). Tally, counting parts: 1458 held, 1375
 failed (2833 registered).
+
+# Two-hundred-and-seventy-fifth set, registered before testing (25 September 2026): decipherment loop 100, end-prone signs as alternative name endings (three hypotheses)
+
+Streak 7. Ten lexical signs end half or more of their lines (set 262: 405 407 526 298 215 423 64 137 136 155), and they
+replicate on B (set 267). If they are endings like 740 / 520, the body before them is a name body: an attested body
+before 740 / 520 in A lines. The contrast is the body before a line-final 400, which is not a name (set 270: never
+head-class). Lexical bodies only (`predict_test275.py`). Not measured before registering.
+
+- **EP1** A: bodies before an end-prone sign are attested name bodies more often than bodies before 400 (Fisher one-sided, p < 0.05).
+- **EP2** B: the same, name bodies from A.
+- **EP3** Progress rule: EP1 and EP2 hold (a new finding, replicated: the end-prone signs close name bodies).
