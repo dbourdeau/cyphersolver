@@ -9783,3 +9783,16 @@ non-adjacent repeats is real as a corpus statistic (DB6, DN6, HX14) but too weak
 signs that do occur (numerals, doubled heads, 740 in stacked endings) are penalised with the rest. Second design-split
 gain that did not survive (after f5k, set 239): design runs on the training split overstate small S gains. Progress:
 none (streak 5). Tally, counting parts: 1439 held, 1334 failed (2773 registered).
+
+# Two-hundred-and-sixtieth set, registered before testing (25 September 2026): decipherment loop 85, a head + modifier frame before closers (four hypotheses)
+
+Streak 5. The roles component leaves 1,901 tokens unassigned; 408 are in closer lines, where the sign before the closer
+was found to be a name head (FX13 67%, CB1), but `progress.roles` never gave it a role. If closer lines share the name's
+head-final frame, the pre-closer sign is head-class and the signs before it behave as modifiers. Head class H = signs
+heading 5+ A names more often than they modify (as parse2). Closer lines: genre 'closer', 3+ signs, heading unit set
+aside; lexical signs only (`predict_test260.py`). Not measured before registering.
+
+- **CH1** A: the pre-closer sign is head-class more often than the earlier body signs (Fisher one-sided, p < 0.05).
+- **CH2** B (M77 additions, heads from A): the same.
+- **CH3** A: earlier body signs are head-class no more than name modifiers are, plus 10 points.
+- **CH4** Progress rule: CH1-CH3 hold; `roles` then gives pre-closer signs 'name head' and earlier body signs 'name modifier'.
