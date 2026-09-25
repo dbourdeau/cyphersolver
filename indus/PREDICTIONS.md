@@ -11331,3 +11331,17 @@ counts each copy as an independent object, so one design weighs as 29 pieces of 
 the copies' shared picture and so do not correct it. The seal bull units are not shown to be words; they are largely
 an artefact of mould copies. Next set: count each distinct text once. Progress: none (streak 1). Tally, counting parts:
 1557 held, 1473 failed (3030 registered).
+
+# Three-hundred-and-thirty-seventh set, registered before testing (25 September 2026): decipherment loop 162, the referent pool counted by distinct text (four hypotheses)
+
+Streak 1. Set 336 found that the binomial criterion (sets 325-335) counts mould copies as independent objects, so one
+design weighs as many observations. Correction: each distinct text (part-texts merged) is one observation, with the
+majority picture and stratum of its objects; base rates, units (set 334's kinds, site-and-class strata, alpha 0.005)
+and the FDR's within-stratum shuffles all over distinct texts; coverage on the real tokens as before
+(`predict_test337.py`). A correction: lower figures replace the current ones (13.64%; 6.84% without Bull1 units); no
+progress either way. Not measured before registering.
+
+- **DT1** The FDR over distinct texts is at or below 10%.
+- **DT2** Coverage is at least 13.64%.
+- **DT3** Without Bull1 units, at least 6.84%.
+- **DT4** Progress rule: none (a correction; recorded as failing).
