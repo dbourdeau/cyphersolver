@@ -63,7 +63,7 @@ def edge_sets():
     return endp, openp
 
 
-def roles(DL, edges=False, head2=False):
+def roles(DL, edges=False, head2=False, dbl=False):
     tot = got = 0
     by = Counter()
     endp, openp = edge_sets() if edges else (set(), set())
@@ -95,6 +95,8 @@ def roles(DL, edges=False, head2=False):
                 role = 'heading'
             elif head2 and i == 1 and heading(t):
                 role = 'heading'  # set 279: the heading unit's second sign
+            elif dbl and len(t) >= 4 and g not in R.NUMS and ((i <= 1 and t[0] == t[1]) or (i >= len(t) - 2 and t[-1] == t[-2])):
+                role = 'edge double'  # set 281 (EDGE-DOUBLE, set 221)
             elif (i + 1 < len(t) and t[i + 1] in R.END) or i == bhead:
                 role = 'name head'
             elif num_before:

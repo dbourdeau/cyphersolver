@@ -10217,3 +10217,16 @@ trigram and family components are split six ways, and each class sees too few li
 B lines have no class in the records ('unk'), a start context the A lines rarely give. What the medium changes (length,
 genre) the position and end components already see. Progress: none (streak 1). Tally, counting parts: 1460 held, 1395
 failed (2855 registered).
+
+# Two-hundred-and-eighty-first set, registered before testing (25 September 2026): decipherment loop 106, edge doubles as a role (four hypotheses)
+
+Streak 1. EDGE-DOUBLE (set 221) put a doubled non-numeral sign at either edge into the grammar, and doubling at text
+edges was found in loop 14 (sets 186-189), but the doubled signs have no role: 74 such tokens are unassigned (58 are
+615, looked up before registering). If doubling is an edge device, adjacent doubled pairs stand at an edge more often
+than the edge's share of pair positions (2 of n - 1 per line), on A and on B (`predict_test281.py`;
+`progress.roles(dbl=True)`: role 'edge double' where no earlier role applies).
+
+- **ED1** A: doubled non-numeral pairs (lines of 4+) stand at a line edge more often than chance (binomial, p < 0.05).
+- **ED2** B: the same.
+- **ED3** R rises with the edge-double role.
+- **ED4** Progress rule: ED1-ED3 hold.
