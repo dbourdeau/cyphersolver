@@ -11528,3 +11528,9 @@ Not measured before registering.
 - **WS1** FDR at or below 10% and coverage above 2.80%.
 - **WS2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
 - **WS3** Progress rule: WS1 and WS2 hold (wide skip-pairs join the referent units).
+
+## Results of the three-hundred-and-forty-sixth set (added after the test; `predict_test346.py`, `results/predict_test346.md`)
+
+All three held. Wide skip-pairs add 6 units to set 339's pool (104), FDR 7.8% (well inside the rule), coverage 2.80% ->
+2.86% (WS1); the Linear B control passes (WS2). A small step. `prizebench.referent_fixed` includes them. Progress:
+streak 0. Tally, counting parts: 1573 held, 1491 failed (3064 registered).

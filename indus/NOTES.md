@@ -3171,6 +3171,11 @@ held, 1491 failed.
 Registered first (8b9d72e62). One unit gained at the edge of the FDR rule, within the estimate's noise: withdrawn; the
 line stays at 2.80%. No progress (streak 6). Tally 1570 held, 1491 failed.
 
+## Three-hundred-and-sixtieth pass (25 Sept 2026): decipherment loop 171, wide skip-pairs as referent units
+
+Registered first (43daf01c0). 6 units, FDR 7.8%: referent line 2.80% -> 2.86%. Progress, small (streak 0). Tally 1573
+held, 1491 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
