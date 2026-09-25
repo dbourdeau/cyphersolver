@@ -116,7 +116,8 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
             _S.SIGN = tuple(_S.SIGN) + (-3, 5)  # sets 346-347: + wide skip-pairs, 5-sign runs
         if -3 not in _S.FAM:
             _S.FAM = tuple(_S.FAM) + (-3,)  # set 347 (WF1-WF3): + family wide skip-pairs; FDR 7.2%
-        u = su(collapse(clean), collapse(both))
+        from predict_test348 import build as _b348  # set 348 (DF1-DF3): + decade-family units; FDR 7.5%
+        u = _b348(collapse(clean), collapse(both))
         if no_bull:
             u = {k: {g: m for g, m in v.items() if m != 'Bull1'} for k, v in u.items()}
         return coverage(DL, P, u), X.count(u)

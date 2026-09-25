@@ -11561,3 +11561,11 @@ shuffles; Linear B control (`predict_test348.py`). Not measured before registeri
 - **DF1** FDR at or below 10% and coverage above 3.04%.
 - **DF2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
 - **DF3** Progress rule: DF1 and DF2 hold (decade-family units join).
+
+## Results of the three-hundred-and-forty-eighth set (added after the test; `predict_test348.py`, `results/predict_test348.md`)
+
+All three held. Units over ICIT decade families add 65 (176 in all), FDR 7.5%, coverage 3.04% -> 4.57% (DF1); Linear B
+passes (DF2). The decade blocks group sign variants that the description families keep apart, so words written with
+variant signs gather enough observations. A jump this size needs the split-half check (next set).
+`prizebench.referent_fixed` includes them. Progress: streak 0. Tally, counting parts: 1579 held, 1491 failed (3070
+registered).
