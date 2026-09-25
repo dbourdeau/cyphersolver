@@ -8938,3 +8938,14 @@ Indo-European and Munda groups are kept (LS4). Burushaski is excluded by WALS (2
 Grambank (GB431 coded absent), so it stays open (LS3 fails; L stays 4). L world enters the metric at 85.1% / 77.0%.
 Caveat: the evidence is the absence of a prefix class in short name texts. Progress: streak 0. Tally, counting parts:
 1372 held, 1258 failed (2630 registered).
+
+# Two-hundred-and-twenty-first set, registered before testing (24 September 2026): decipherment loop 46, doubling at the edges in the grammar (four hypotheses)
+
+Metric after loop 45: G margin A 46.6 / B 35.1; streak 0. Set 187: doubled signs stand at text edges. Rule EDGE-DOUBLE:
+a line whose first two (or last two) signs are one non-numeral sign doubled is accepted if the rest parses (G2 +
+LABEL-COUNT). Design on A: margin 50.53 -> 51.16 (15 more lines).
+
+- **ED1** The rule raises the B margin over shuffled lines (any rise).
+- **ED2** It raises coverage of real B lines more than of shuffled B lines.
+- **ED3** It raises the margin on F's extra lines.
+- **ED4** Progress rule: ED1 and ED2 hold.
