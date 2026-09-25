@@ -3012,6 +3012,11 @@ Registered first (5b35684e0). No link to the pre-ending slot (p = 0.12, 0.38; op
 Registered first (73b6d0a64). 8 of 26 gap signs right against a context baseline of 4; restoration line 29 of 75
 against 23. Progress (streak 0). Tally 1527 held, 1436 failed.
 
+## Three-hundred-and-twenty-ninth pass (25 Sept 2026): decipherment loop 140, pictographic referent signs
+
+Registered first (e44938d25). 1 of 24 described referent signs names its picture (chance, p = 0.70): referent signs
+are words, not drawings (as loop 77). No progress (streak 1). Tally 1528 held, 1438 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -10917,3 +10917,12 @@ description was looked at before registering.
 - **PA1** Two or more single-sign referents are described as the thing in their picture, above the shuffles' 95th percentile.
 - **PA2** The matches include a sign not already an anchor (749, 341, 753, 777).
 - **PA3** Progress rule: PA1 and PA2 hold (the matching signs join ANCHORS; V strict rises).
+
+## Results of the three-hundred-and-fifteenth set (added after the test; `predict_test315.py`, `results/predict_test315.md`)
+
+One held, two failed. Of 29 single-sign referents (24 with a CISI description), one is described as the thing in its
+picture: 752, "u with decorated branching at top", with plants (Phyt) on moulded tablets; the shuffles give up to 2 (p
+= 0.70; PA1 fails). The elephant sign 923 is "right parenthesis drawn in outline", the gharial signs are strokes,
+triangles and a tree (407), the goat sign 790 a leaf or diamond. As loop 77 found for pictures and sign shapes in
+general, the referent signs do not depict their referents: the tablets write a word for the pictured thing, not its
+drawing. No new anchor. Progress: none (streak 1). Tally, counting parts: 1528 held, 1438 failed (2966 registered).
