@@ -8975,3 +8975,17 @@ Three held, one failed. CAGED-POST (a caged or closer sign followed only by 400 
 35.92 -> 36.02 points (CP1), real B coverage more than shuffled (+0.22 against +0.12; CP2); the F margin is unchanged
 (CP3 fails). A small gain, adopted in the metric's G margin. Progress: streak 0. Tally, counting parts: 1379 held,
 1259 failed (2638 registered).
+
+# Two-hundred-and-twenty-third set, registered before testing (24 September 2026): decipherment loop 48, a second unit after a mid-line ending (four hypotheses)
+
+Metric after loop 47: R 84.2%; streak 0. Many lines of no genre continue after a name's ending: '176 740 220', '176
+740 590 892 352 297 400'. Sets 209 and 219 tested 'is the last sign a known head' and lacked power (most common signs
+are known heads). Sharper statistic: a sign's head propensity = the share of its A occurrences directly before 740 /
+520. Unit: the tail after a mid-line 740 or 520 (the ending not last, not followed only by 400 / 90 or a closer), with
+400 / 90 dropped, of 1+ lexical signs. Null: frequency-matched draws (20 nearest in rank), 1,000 times; statistic =
+mean head propensity of the tail's last signs.
+
+- **SU1** In A the tail's last sign has higher head propensity than frequency-matched draws (p < 0.05).
+- **SU2** The same in B's new lines (propensities from A).
+- **SU3** In B the tail's other signs have lower head propensity than its last sign.
+- **SU4** Progress rule: SU1 and SU2 hold; then tail last sign = 'name head', other tail signs = 'name modifier' in R.
