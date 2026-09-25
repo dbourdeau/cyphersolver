@@ -10513,3 +10513,13 @@ All three failed. Referent units sit at about the same relative position as othe
 0.62 against 0.57 (p = 0.49), moulded 0.55 against 0.58 (p = 0.46), in opposite directions. The word for the pictured
 thing has no fixed slot in the tablet texts; it is part of the text wherever the text's grammar puts it. Progress: none
 (streak 3). Tally, counting parts: 1492 held, 1412 failed (2904 registered).
+
+# Two-hundred-and-ninety-fourth set, registered before testing (25 September 2026): decipherment loop 119, the picture vault with all unit kinds (three hypotheses)
+
+Streak 3. Single signs (set 288) and skip-pairs (set 292) failed the 10% FDR rule as referent units, but the vault
+(set 290) checks units on held-out tablets against shuffles, which controls false units by itself. Here the vault votes
+with single signs, pairs, 3-sign runs and skip-pairs (`predict_test294.py`). Not measured before registering.
+
+- **VX1** More than set 290's 26 correct predictions, with p < 0.05 against 200 shuffles.
+- **VX2** Accuracy on the predicted objects is 30% or more.
+- **VX3** Progress rule: VX1 holds (the tier 3 vault line counts more held-out tablets).
