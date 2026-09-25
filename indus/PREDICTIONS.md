@@ -10792,3 +10792,16 @@ SH2 fails). The tuned line is not confirmed independently in both directions, an
 sets 287-307 found real signal (one direction clearly significant) but its precision is far below the in-sample
 purity (67%+). Next: the same split-half check on the earlier configurations, to find the largest one confirmed both
 ways. Progress: none (streak 1). Tally, counting parts: 1517 held, 1429 failed (2946 registered).
+
+# Three-hundred-and-ninth set, registered before testing (25 September 2026): decipherment loop 134, which referent configuration survives a split-half check (three hypotheses)
+
+Streak 1. Set 308's single split was mixed for the tuned configuration. Each configuration adopted since set 233 (C0
+original, C1 set 287, C2 set 288, C3 set 303, C4 set 304, C5 set 305, C6 set 306, C7 set 307) is checked on five random
+half-splits (seeds 3091-3095), both directions, the real held-out matches summed over the ten split-directions against
+200 joint shuffles of the held-out pictures; confirmed if p < 0.05 (`predict_test309.py`). Rule fixed now: the referent
+line is set to the largest confirmed configuration (it can only stay or fall; no progress either way). Not measured
+before registering.
+
+- **SL1** C0, the original criterion, is confirmed.
+- **SL2** C7, the tuned configuration, is confirmed.
+- **SL3** Progress rule: none (a correction; the referent line is set to the largest confirmed configuration).
