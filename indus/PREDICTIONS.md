@@ -10587,3 +10587,14 @@ All three failed. Weighting votes by specificity (1 / n) gets 62 of 191 held-out
 over the shuffle median of 5, against set 294's +60 (VS1, VS2 fail). Neither support (set 296, +56) nor specificity
 weighting beats one vote per unit: the vault's limit is which tablets carry a known unit, not how the votes are
 weighed. Progress: none (streak 3). Tally, counting parts: 1497 held, 1419 failed (2916 registered).
+
+# Two-hundred-and-ninety-eighth set, registered before testing (25 September 2026): decipherment loop 123, the picture vault with a cross-pool fallback (three hypotheses)
+
+Streak 3. The vault's limit is reach: a held-out tablet needs a unit known in its own pool. Referent labels are mostly
+local to a pool (set 243), but some may travel. Here a tablet whose own pool gives no vote takes the votes of the other
+pool's units (set 294's units and criterion otherwise), scored by the excess over the shuffle median
+(`predict_test298.py`). Not measured before registering.
+
+- **VC1** The excess over the shuffle median is above +60, with p < 0.05 against 200 shuffles.
+- **VC2** More than 191 held-out tablets get a prediction.
+- **VC3** Progress rule: VC1 holds (the tier 3 vault line rises).
