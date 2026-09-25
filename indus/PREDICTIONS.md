@@ -10541,3 +10541,13 @@ guard against noise (`predict_test295.py`). Not measured before registering.
 - **VK1** More than set 294's 64 correct predictions, with p < 0.05 against 200 shuffles.
 - **VK2** Accuracy on the predicted objects is 25% or more.
 - **VK3** Progress rule: VK1 holds.
+
+## Results of the two-hundred-and-ninety-fifth set (added after the test; `predict_test295.py`, `results/predict_test295.md`)
+
+Two held as registered, one failed; progress withdrawn on audit. Letting a unit vote from a single other object, the
+vault predicts 325 held-out tablets and gets 81 right (VK1 holds: more than 64, p = 0.005), but accuracy falls to 24.9%
+(VK2 fails) and the shuffle median rises from 4 to 28: the excess over chance falls from +60 (set 294) to +53. The
+added predictions are right by chance about as often as by referent. The rule compared raw counts; it should have
+compared the excess over the shuffle median. The tier 3 line stays at set 294's (64 of 191). Lesson: score a vault by
+correct predictions minus the shuffle median. Progress: none (streak 1). Tally, counting parts: 1497 held, 1413 failed
+(2910 registered).
