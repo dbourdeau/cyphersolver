@@ -10253,3 +10253,15 @@ independent transcriptions, and two worklist objects share one text. Criteria as
 - **MR2** Top-5 predictions contain it in 50% or more.
 - **MR3** Top-1 beats the frequency baseline (the commonest sign) on the same cases.
 - **MR4** Progress rule: MR1 and MR3 hold (tier 3 gains its first line, 'blind restorations confirmed against M77').
+
+## Results of the two-hundred-and-eighty-second set (added after the test; `predict_test282.py`, `results/predict_test282.md`, `m77_gaps.py`, `results/restoration_m77.tsv`)
+
+All four held as registered, and the set is withdrawn on audit. The frozen top-1 prediction equals Mahadevan's 1977
+reading in 12 of the 15 gaps (top-5 13; the frequency baseline 740 3). But 8 of the 15 completed lines are distinct
+lines of the training data (copies of the same text, or the M77 text itself as an addition): the model had seen them,
+and M77's 'reading' may be the copy's, so these cases are circular. The registration should have excluded them; tier
+3 counts only texts never used to fix the model. On the 7 clean cases the top-1 prediction matches 4 (H-1042 231,
+H-1816 717, M-168 741, 255 13 744 [892] 740) and top-5 5, against 0 for the baseline; 7 cases are below the registered
+minimum of 10. Encouraging, not evidence: no progress (streak 3). Lesson: any restoration check must drop gap lines
+whose completion is a training line. Tally, counting parts: 1466 held, 1397 failed (2863 registered; this set's four
+'held' are withdrawn in the text).

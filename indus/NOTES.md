@@ -2839,6 +2839,12 @@ No progress (streak 1). Tally 1460 held, 1395 failed.
 Registered first (28faeee6e). Doubles prefer edges on A (p = 0.0004), not significantly on B (p = 0.061); role not
 adopted. No progress (streak 2). Tally 1462 held, 1397 failed.
 
+## Two-hundred-and-ninety-sixth pass (25 Sept 2026): decipherment loop 107, frozen restorations against Mahadevan 1977
+
+Registered first (8988bb035). M77 reads 23 of the 79 gaps; on 15 lines of 4+ signs the frozen top-1 matched 12, but 8
+completed lines were already training lines (circular). Clean: 4 of 7 top-1, below the 10-case minimum. Withdrawn; no
+progress (streak 3). Lesson: exclude gaps whose completion is a training line.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
