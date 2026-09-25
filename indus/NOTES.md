@@ -2895,6 +2895,11 @@ Progress (streak 0). Tally 1490 held, 1404 failed.
 Registered first (0c632d461). 5 gaur units against 2.2 in shuffles (FDR 43%): seal texts do not name their animal. No
 progress (streak 1). Tally 1491 held, 1407 failed.
 
+## Three-hundred-and-sixth pass (25 Sept 2026): decipherment loop 117, skip-pairs as referent units
+
+Registered first (857095879). Coverage would rise to 1.65% but FDR reaches 10.2%; not adopted. No progress (streak 2).
+Tally 1492 held, 1409 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

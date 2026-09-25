@@ -10488,3 +10488,10 @@ Not measured before registering.
 - **SK1** With skip-pairs the FDR stays at or below 10%.
 - **SK2** The coverage rises.
 - **SK3** Progress rule: SK1 and SK2 hold (skip-pairs join the referent units).
+
+## Results of the two-hundred-and-ninety-second set (added after the test; `predict_test292.py`, `results/predict_test292.md`)
+
+One held, two failed. Skip-pairs add 22 units (90 against 68) and raise coverage 1.46% -> 1.65% (SK2), but the shuffles
+give 9.2 on average, FDR 10.2%, just over the registered 10% (SK1, SK3 fail): the extra units are about as noisy as the
+single signs of set 288. Not adopted. Progress: none (streak 2). Tally, counting parts: 1492 held, 1409 failed (2901
+registered).
