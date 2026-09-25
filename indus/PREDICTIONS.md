@@ -10618,3 +10618,14 @@ are copper and its Harappa tablets incised, which set 243 found do not share lab
 - **XS1** Harappa -> Mohenjo-daro: correct predictions above the shuffles (p < 0.05).
 - **XS2** Mohenjo-daro -> Harappa: the same.
 - **XS3** Progress rule: XS1 and XS2 hold (referents travel between cities; tier 3 gains a cross-site line).
+
+## Results of the two-hundred-and-ninety-ninth set (added after the test; `predict_test299.py`, `results/predict_test299.md`)
+
+All three held as registered; withdrawn on audit. Harappa -> Mohenjo-daro gives 1 correct prediction of 25 (shuffle
+median 0, p = 0.025) and Mohenjo-daro -> Harappa 22 of 215 (median 5, p = 0.005). But 17 of the 22 predict 'Mult', the
+code for a tablet with several pictures (a genre, not a referent), and 3 test texts are part or whole of a Mohenjo-daro
+text, a leak the identical-text exclusion misses; 2 clean referent hits remain. Referents do not travel between the
+cities. The registration should have excluded the catch-all codes (Mult, Scene, Comp) and part-texts. The audit of the
+in-pool vault (set 294) shows its hits are referents (bull 30, plant 20, fish 7; Mult 2), so that line stands, resting
+on three pictures. Progress: none (streak 1). Tally, counting parts: 1503 held, 1419 failed (2922 registered; this
+set's three 'held' are withdrawn in the text).

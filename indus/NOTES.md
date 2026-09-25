@@ -2931,6 +2931,12 @@ Registered first (73e40744f). Excess +57 against +60; weighting does not help. N
 Registered first (60b1c1ae6). 70 of 295 right, excess +64 against +60; fallback adds about 4 beyond chance. Progress,
 small (streak 0). Tally 1500 held, 1419 failed.
 
+## Three-hundred-and-thirteenth pass (25 Sept 2026): decipherment loop 124, referents across sites
+
+Registered first (41eb0c1a5). Held numerically, withdrawn on audit: the cross-city hits are the 'Mult' genre code and
+part-text leaks. In-pool vault hits audited as referents (bull, plant, fish). No progress (streak 1). Lesson: exclude
+catch-all picture codes and part-texts from vault targets. Tally 1503 held, 1419 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
