@@ -11045,3 +11045,9 @@ combined FDR against 100 picture shuffles (`predict_test322.py`). Not measured b
 
 - **PX1** The combined FDR is at or below 10% and coverage rises above 2.29%.
 - **PX2** Progress rule: PX1 holds (the referent pools drop the catch-all objects).
+
+## Results of the three-hundred-and-twenty-second set (added after the test; `predict_test322.py`, `results/predict_test322.md`)
+
+Both failed. Without the 104 catch-all tablets the configuration finds 182 units, FDR 10.2%, coverage 2.28% against
+2.29% (PX1 fails): the units the catch-all objects diluted are balanced by those they supported. The pools stay as
+they are. Progress: none (streak 8). Tally, counting parts: 1533 held, 1452 failed (2985 registered).
