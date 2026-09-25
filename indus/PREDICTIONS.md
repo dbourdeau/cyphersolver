@@ -8795,3 +8795,12 @@ last-but-one / last) in place of first gives 4.6690 -> 4.6513; the opening sign'
 - **FP2** The same A -> B.
 - **FP3** SIGN top-1 on the fixed test does not fall.
 - **FP4** Progress rule: FP1 and FP2 hold (firstpos replaces first).
+
+## Results of the two-hundred-and-fourteenth set (added after the test; `predict_test214.py`, `results/predict_test214.md`, `famlm.py` firstpos)
+
+Three held, one failed. Conditioning on the opening sign and the position class together lowers S on the fixed test
+from 4.6097 to 4.5915 (FP1) and A -> B from 5.1544 to 5.1471 (FP2), but SIGN top-1 does not rise (39.8% -> 39.7%;
+FP3 fails). The metric run with firstpos gives S 4.594 but SIGN 39.7% / 61.7% and WORD top-10 3.4%, below loop 38's
+39.8% / 62.1% / 3.9%. The prize bench ranks the prediction tasks above S, so firstpos is **not adopted** (the model
+stays with first) and the loop is counted conservatively as no progress: streak 1. Tally, counting parts: 1356 held,
+1248 failed (2604 registered).

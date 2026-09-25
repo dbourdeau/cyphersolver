@@ -4,7 +4,7 @@ import itertools
 from collections import Counter, defaultdict
 
 from predict_test122 import split
-from predict_test125 import M2, xent
+from predict_test125 import M2, pcls, xent
 
 
 def fam(g):
@@ -25,6 +25,7 @@ class M3(M2):
         self.ft = defaultdict(Counter)
         self.fw = defaultdict(Counter)
         self.f4 = defaultdict(Counter)
+        self.fpos = defaultdict(Counter)  # set 214: opening sign x position class
         for t in train:
             s = ['<s>', '<s>'] + list(t) + ['</s>']
             for i in range(2, len(s)):
@@ -32,6 +33,7 @@ class M3(M2):
                 self.ft[(fam(s[i - 2]), fam(s[i - 1]))][s[i]] += 1
                 self.fw[fam(s[i - 1])][fam(s[i])] += 1
                 self.f4[(fam(s[i - 3]) if i >= 3 else '<s>', fam(s[i - 2]), fam(s[i - 1]))][s[i]] += 1
+                self.fpos[(s[2], pcls(i - 2, len(t) + 1))][s[i]] += 1
 
     def rows(self, t, kn=False):
         fam = self.famfn
@@ -50,6 +52,7 @@ class M3(M2):
             n3, n4 = sum(c.values()), sum(c4.values())
             p3 = (max(c[w] - 0.5, 0) / n3 + 0.5 * len(c) / n3 * r['fbi']) if n3 else r['fbi']
             r['f4k'] = (max(c4[w] - 0.5, 0) / n4 + 0.5 * len(c4) / n4 * p3) if n4 else p3
+            r['firstpos'] = self.sm(self.fpos[(s[2], pcls(i - 2, len(t) + 1))], w)
             # set 211: the sign trigram absolutely discounted, D = 0.75, onto the Kneser-Ney bigram
             t3 = self.tri[(s[i - 2], s[i - 1])]
             nt = sum(t3.values())

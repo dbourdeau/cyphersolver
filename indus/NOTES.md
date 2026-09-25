@@ -2481,6 +2481,11 @@ No progress: streak 1. Tally 1349 held, 1247 failed.
 Registered first (8c602dcd2). Opening-sign component: S 4.635 -> 4.610, A -> B 5.193 -> 5.156; SIGN 39.8% / 62.1%,
 WORD top-10 3.9%. Progress: streak 0. Tally 1353 held, 1247 failed.
 
+## Two-hundred-and-twenty-eighth pass (24 Sept 2026): decipherment loop 39, opening sign by position
+
+Registered first (c1ecb258d). firstpos lowers S (4.610 -> 4.594) but not SIGN / WORD; not adopted, counted no
+progress (streak 1). Tally 1356 held, 1248 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

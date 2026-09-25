@@ -108,3 +108,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 36 | 211 | 4.635 (26.1%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | discounted sign trigram: S 4.675 to 4.635 (largest single gain), replicated A to B; SIGN 39.7% / 61.8%, WORD top-10 3.4% (progress; streak 0) |
 | 37 | 212 | 4.635 (26.1%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | lighter (add-0.3) smoothing helps the fixed test, hurts A to B and SIGN: overfits, not adopted (no progress; streak 1) |
 | 38 | 213 | 4.610 (26.5%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | the line's opening sign as context: S 4.635 to 4.610, A to B -0.037; SIGN 39.8% / 62.1%, WORD top-10 3.9% (progress; streak 0) |
+| 39 | 214 | 4.610 (26.5%; 4.594 with firstpos, not adopted) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | opening sign x position lowers S but SIGN / WORD slip (39.7% / 3.4%); prize tasks outrank S, not adopted (no progress; streak 1) |
