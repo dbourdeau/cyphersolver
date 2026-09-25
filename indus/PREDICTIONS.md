@@ -9525,3 +9525,10 @@ with the candidate parses. Design run on 300 lines of the training lines' own sp
 - **GP1** SIGN top-1 on the fixed test with the grammar prior beats the task without it by 0.3 points or more.
 - **GP2** The same A -> B (first 300 B lines; grammar learned from A).
 - **GP3** Progress rule: GP1 and GP2 hold (the grammar prior enters the SIGN task; tier 7).
+
+## Results of the two-hundred-and-forty-eighth set (added after the test; `predict_test248.py`, `results/predict_test248.md`)
+
+One held, two failed. A 2-bit bonus for candidates that leave the line parseable raises SIGN top-1 only from 39.8% to
+40.0% on the fixed test (below the registered 0.3 points; GP1 fails) and from 33.0% to 33.1% A -> B (GP2). The
+grammar and the n-gram model largely know the same things. Not adopted. No progress: streak 5. Tally, counting parts:
+1426 held, 1304 failed (2730 registered).

@@ -2659,6 +2659,11 @@ Registered first (85fd6d1cd). The four 'Lothal' pairs are repeated impressions o
 counted as distinct texts through partial transcriptions. Set 246's tag result is the same artefact; progress for
 loops 71 and 72 withdrawn (streak 4). Tally 1425 held, 1302 failed.
 
+## Two-hundred-and-sixty-second pass (25 Sept 2026): decipherment loop 73, the grammar as a prior in SIGN
+
+Registered first. Grammar prior: SIGN +0.2 (fixed), +0.1 (A -> B); below threshold. No progress: streak 5. Tally 1426
+held, 1304 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
