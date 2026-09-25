@@ -2622,6 +2622,12 @@ Registered first (9994c94eb). On unseen moulded tablets, grammatical pairs go wi
 (0.45 vs 0.28, p = 0.001): pictures confirm the grammar / lexicon split. Progress: streak 0. Tally 1417 held, 1289
 failed.
 
+## Two-hundred-and-fifty-fifth pass (25 Sept 2026): decipherment loop 66, the pictures judge closers and count labels
+
+Registered first (7b10b72ec). Closers untestable (no recurring pairs on moulded tablets); count-label pairs picture-
+specific (0.16 vs 0.30, 4 pairs; opposite of registered); endings alone picture-diverse (p = 0.011). No progress:
+streak 1. Tally 1418 held, 1292 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -136,3 +136,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 63 | 238 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal phrases qualify only with the default one-horned bull; none fixes another animal (no progress; streak 1) |
 | 64 | 239 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | family 5-gram overfits (A to B worse); not adopted (no progress; streak 2) |
 | 65 | 240 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pictures confirm the grammar: grammatical pairs picture-diverse, lexical pairs picture-specific on unseen moulded tablets (p = 0.001) (progress; streak 0) |
+| 66 | 241 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pictures: closers untestable on moulded tablets; count-label pairs picture-specific (4 pairs); endings picture-diverse (p = 0.011) (no progress; streak 1) |

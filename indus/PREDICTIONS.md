@@ -9382,3 +9382,12 @@ signs (set 215: A's ten commonest pre-count signs). Comparison group: pairs of t
 - **JC3** Pairs containing 740 or 520 are more picture-diverse than lexical pairs (replicating set 240 for the endings
   alone).
 - **JC4** Progress rule: JC1 holds (outside evidence confirms the closers are grammatical, a claim so far internal).
+
+## Results of the two-hundred-and-forty-first set (added after the test; `predict_test241.py`, `results/predict_test241.md`)
+
+One held, three failed. (The first run stopped on an empty group; a guard reporting 'too few to test' was added.) No
+closer pair recurs on 3+ moulded tablets, so the closers cannot be judged this way (JC1 fails). Count-label pairs are
+less picture-diverse than lexical pairs, not more (0.16 against 0.30, 4 pairs; JC2 fails): if anything the label slot
+holds content words, not grammar (not registered in that direction; noted). Pairs with 740 / 520 alone are more
+picture-diverse (0.45 against 0.30, p = 0.011; JC3), replicating set 240 for the endings. No progress: streak 1. Tally,
+counting parts: 1418 held, 1292 failed (2710 registered).
