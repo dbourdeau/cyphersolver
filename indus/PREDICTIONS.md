@@ -10551,3 +10551,14 @@ added predictions are right by chance about as often as by referent. The rule co
 compared the excess over the shuffle median. The tier 3 line stays at set 294's (64 of 191). Lesson: score a vault by
 correct predictions minus the shuffle median. Progress: none (streak 1). Tally, counting parts: 1497 held, 1413 failed
 (2910 registered).
+
+# Two-hundred-and-ninety-sixth set, registered before testing (25 September 2026): decipherment loop 121, the picture vault with weighted votes (three hypotheses)
+
+Streak 1. Set 294's vault gives every qualifying unit one vote. Here a unit votes with weight share * log2(1 + n), its
+picture's share among the n other objects that carry it, so well-supported, pure units outweigh weak ones. Units and
+criterion as set 294. Scored by the excess of correct predictions over the shuffle median (set 295's lesson; set 294:
++60) (`predict_test296.py`). Not measured before registering.
+
+- **VW1** The excess over the shuffle median is above +60, with p < 0.05 against 200 shuffles.
+- **VW2** Accuracy on the predicted objects is above 33.5%.
+- **VW3** Progress rule: VW1 holds (the tier 3 vault line rises).
