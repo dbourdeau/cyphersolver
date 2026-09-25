@@ -9261,3 +9261,16 @@ with a wrong ideogram (LD2). With set 234 (143 qualifying words against 2 by cha
 referents under DAMOS naming), the method passes a known-answer control: prize tier 2 rises to 3 of 6 methods, and the
 tier-1 line 'referent fixed by the picture' (set 233) now rests on a gated method. Progress: streak 0. Tally, counting
 parts: 1409 held, 1279 failed (2688 registered).
+
+# Two-hundred-and-thirty-sixth set, registered before testing (25 September 2026): decipherment loop 61, the short lines of no genre (four hypotheses)
+
+Streak 0. Lines that predict_test108.genre calls 'other' hold 790 unroled tokens; the commonest shapes are two and
+three lexical signs ('x x' 37 lines, 'x x x' 25 in A + B). If they are bare names, their last sign should be head-like.
+Statistic as set 223: mean head propensity (share of a sign's A occurrences directly before 740 / 520) of the last
+sign, against frequency-matched draws (20 nearest in rank), 1,000 times. Lines: 'other'-genre lines of 2-3 signs, all
+lexical (no numerals, endings, closers, 400 / 90).
+
+- **OB1** In A the last sign is more head-like than frequency-matched draws (p < 0.05).
+- **OB2** The same in B's new lines (propensities from A).
+- **OB3** The first sign of these lines is less head-like than the last (A and B).
+- **OB4** Progress rule: OB1 and OB2 hold; then these lines' last sign = 'name head', the rest 'name modifier' in R.
