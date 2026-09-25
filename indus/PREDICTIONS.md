@@ -10531,3 +10531,13 @@ All three held. Voting with single signs, pairs, 3-sign runs and skip-pairs, the
 (p = 0.005, the floor for 200 shuffles). The unit kinds that failed the 10% FDR rule as a list still predict held-out
 pictures far above chance: the held-out check is the stronger test. The tier 3 vault cell now reads 64 tablets.
 Progress: streak 0. Tally, counting parts: 1495 held, 1412 failed (2907 registered).
+
+# Two-hundred-and-ninety-fifth set, registered before testing (25 September 2026): decipherment loop 120, the picture vault with single-object units (three hypotheses)
+
+Streak 0. Set 294's vault lets a unit vote when it stands on 2+ other objects in 2+ texts with 67%+ one picture. Here a
+unit seen on a single other object (a different text) may also vote, with that object's picture; the shuffles still
+guard against noise (`predict_test295.py`). Not measured before registering.
+
+- **VK1** More than set 294's 64 correct predictions, with p < 0.05 against 200 shuffles.
+- **VK2** Accuracy on the predicted objects is 25% or more.
+- **VK3** Progress rule: VK1 holds.
