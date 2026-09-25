@@ -9411,3 +9411,15 @@ None held. On the individually made tablets only 3 count-label pairs recur (mean
 ending pairs, not significant; CL1); on seals count-label and ending pairs are alike (0.39 against 0.37; CL2). Set
 241's hint that the label slot holds content words does not replicate; the question stays open. No progress: streak
 2. Tally, counting parts: 1418 held, 1295 failed (2713 registered).
+
+# Two-hundred-and-forty-third set, registered before testing (25 September 2026): decipherment loop 68, referent phrases on moulded tablets (three hypotheses)
+
+Streak 2. The phrase-level referent method (set 237) requires 2+ distinct texts per qualifying pair; on moulded
+tablets (TAB:B) copies of one mould are one text, so distinct texts are independent designs and the requirement makes
+them usable. Pairs on 3+ moulded tablets in 2+ distinct texts with one picture on 80%+; null: pictures shuffled among
+objects, 1,000 times.
+
+- **MR1** More pairs qualify than in 95% of shuffles.
+- **MR2** At least three qualifying pairs are not already qualifying on the individually made tablets (set 237).
+- **MR3** Progress rule: MR1 and MR2 hold; the new pairs' tokens on the moulded tablets used are added to the tier-1
+  referent line.
