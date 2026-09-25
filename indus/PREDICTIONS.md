@@ -11069,3 +11069,13 @@ Both failed. Voting with the calibrated tier 1 configuration (64 correct of 373 
 excess over the shuffle median is +56, below set 298's +64 with the loose unit kinds (VT1 fails): the configuration's
 family and 4-sign units reach more held-out tablets (373) but less accurately (17.2%). Progress: none (streak 9). Tally, counting parts: 1533
 held, 1454 failed (2987 registered).
+
+# Three-hundred-and-twenty-fourth set, registered before testing (25 September 2026): decipherment loop 149, a back-off picture vault (two hypotheses)
+
+Streak 9. The loose vault (set 298) is more accurate where it votes; the tier 1 configuration (set 323) reaches more
+tablets less accurately. Back-off: the loose units vote first (own pool, then the other pool); a tablet left without a
+vote takes the tier 1 configuration's votes (own pool, then the other). Excess over the shuffle median
+(`predict_test324.py`). Not measured before registering.
+
+- **VB1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
+- **VB2** Progress rule: VB1 holds (the tier 3 vault line rises).
