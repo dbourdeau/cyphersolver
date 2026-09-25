@@ -86,3 +86,14 @@ def word_task(tr, te, keys):
         base1 += cands[0] == b
         base10 += b in cands[:10]
     return top1 / n, top10 / n, base1 / n, base10 / n, n
+
+
+def referent_fixed(DL):
+    """Set 233 (RF1-RF2): share of sign tokens in texts written on 3+ individually made pictured objects (copper,
+    incised tablets) with one picture on 80%+ of them: the referent is fixed by the picture (not a reading)."""
+    import rtools as R
+    from predict_test200 import objects
+    from predict_test233 import qualifying
+    A, B, rowsA, recs, F = R.load_all()
+    q = qualifying(objects(F, recs, ('TAB:C', 'TAB:I')))
+    return sum(len(t) for t in DL if t in q) / sum(len(t) for t in DL), len(q)

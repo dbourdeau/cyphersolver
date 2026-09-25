@@ -150,11 +150,13 @@ def main(label='measure'):
     # Indus-prize tiers (PROGRESS.md; prizebench.py)
     from prizebench import GATE, meaning, sign_task, word_task
     vs, vn = meaning(DL, ANCHORS)
+    from prizebench import referent_fixed
+    vr, nq = referent_fixed(DL)
     gate = sum(v.startswith('passed') for v in GATE.values())
     u = 0.0 if not VALUES else float('nan')
     w1, w10, wb1, wb10, wn = word_task(tr, te, MODEL['keys'])
     s1, s5, sb1, sb5, sn = sign_task(tr, te, MODEL['keys'])
-    print('Tier 1 V  checked meaning: %.3f%% of tokens (numerals %.1f%%)' % (100 * vs, 100 * vn))
+    print('Tier 1 V  checked meaning: %.3f%% of tokens (numerals %.1f%%); referent fixed by the picture (not read) %.2f%% (%d texts, set 233)' % (100 * vs, 100 * vn, 100 * vr, nq))
     print('Tier 2 C  positive-control gate: %d of %d methods passed' % (gate, len(GATE)))
     print('Tier 3 U  vault: %.1f%%' % (100 * u))
     print('Tier 6 WORD top-1 %.1f%% top-10 %.1f%% (frequency %.1f%% / %.1f%%; %d names)' % (100 * w1, 100 * w10, 100 * wb1, 100 * wb10, wn))
@@ -167,14 +169,14 @@ def main(label='measure'):
     print('L  language: %d families open (%s); L world: %.1f%% of WALS genera excluded (Grambank %.1f%% of families)' % (len(open_f), ', '.join(open_f), 100 * lw, 100 * lg))
     row = '\t'.join([label, '%.3f' % bits, '%.1f' % (100 * (h1 - bits) / h1), '%.1f' % (100 * r), '%.1f' % (100 * m), str(p),
                      str(len(open_f)), '%.1f' % (100 * mp), '%.1f' % (100 * ga), '%.1f' % (100 * gb), '%.1f' % (100 * ma), '%.1f' % (100 * mb), '%.1f' % (100 * lw), '%.1f' % (100 * lg),
-                     '%.3f' % (100 * vs), str(gate), '%.1f' % (100 * u), '%.1f' % (100 * w10), '%.1f' % (100 * s1), '%.1f' % (100 * s5)])
+                     '%.3f' % (100 * vs), str(gate), '%.1f' % (100 * u), '%.1f' % (100 * w10), '%.1f' % (100 * s1), '%.1f' % (100 * s5), '%.2f' % (100 * vr)])
     log = os.path.join(HERE, 'results', 'progress_log.tsv')
-    head = 'label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\tMplus_pct\tG_pct\tG_B_pct\tGmargin_A\tGmargin_B\tLworld_WALS\tLworld_GB\tV_checked_pct\tC_gate\tU_vault_pct\tWORD_top10_pct\tSIGN_top1_pct\tSIGN_top5_pct'
+    head = 'label\tS_bits\tS_explained_pct\tR_roles_pct\tM_meanings_pct\tP_values\tL_open\tMplus_pct\tG_pct\tG_B_pct\tGmargin_A\tGmargin_B\tLworld_WALS\tLworld_GB\tV_checked_pct\tC_gate\tU_vault_pct\tWORD_top10_pct\tSIGN_top1_pct\tSIGN_top5_pct\tV_referent_pct'
     old = open(log, encoding='utf-8').read().splitlines()[1:] if os.path.exists(log) else []
     with open(log, 'w', encoding='utf-8') as f:
         f.write(head + '\n')
         for x in old:
-            f.write(x + '\t' * max(0, 19 - x.count('\t')) + '\n')
+            f.write(x + '\t' * max(0, 20 - x.count('\t')) + '\n')
         f.write(row + '\n')
     return bits, r, m, p, len(open_f)
 

@@ -2578,6 +2578,12 @@ per-subset replications no longer count as progress. Streak 0. Tally 1402 held, 
 Registered first (86a433c6d). No family-level ending homogeneity beyond chance (A p = 0.94, B p = 0.80); low power. No
 progress: streak 1. Tally 1402 held, 1275 failed.
 
+## Two-hundred-and-forty-seventh pass (24 Sept 2026): decipherment loop 58, texts whose referent the picture fixes
+
+Registered first (d7cca6eef). 11 texts on 3+ individually made pictured tablets carry one picture 80%+ of the time (p
+= 0.001): hare, archer, elephant, goat, loop, gharial, fish, bull texts. New tier-1 line: referent fixed by the
+picture (not read) 0.38% of tokens. Progress: streak 0. Tally 1405 held, 1276 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

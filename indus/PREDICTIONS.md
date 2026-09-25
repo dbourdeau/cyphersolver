@@ -9202,3 +9202,14 @@ shuffled among all those objects, 1,000 times.
   listed (a label is specific to its scene).
 - **RF4** Progress rule: RF1 and RF2 hold; then V gains a line 'referent fixed by the picture': the share of sign
   tokens (distinct lines) in qualifying texts, reported beside the strict V.
+
+## Results of the two-hundred-and-thirty-third set (added after the test; `predict_test233.py`, `results/predict_test233.md`, `prizebench.referent_fixed`)
+
+Three held, one failed. Eleven texts are written on 3+ individually made pictured objects (copper and incised tablets)
+with one picture on 80%+ of them; no shuffle of the pictures gives as many (p = 0.001; RF1, RF2): the hare text 235
+705 33 845 407 321 407, the archer (anthropomorph) text 806 845 61 407 850 900 740, the elephant text 706 33 923 740
+(+/- a final stroke), the goat text 3 421 176 100 740 790, the loop text 415 220 845 407, a gharial text 605 760 740
+400, a fish text 27 32 740 400, and three texts with the bull (415 578 32 824; 33 700; 176 740 400). Two pictures are
+shared (the elephant variants, three bull texts; RF3 fails). Their referent is fixed by the picture, which is outside
+evidence, though they are not read. Tier 1 gains a line beside the strict V: referent fixed by the picture, 0.38% of
+sign tokens (11 texts). Progress: streak 0. Tally, counting parts: 1405 held, 1276 failed (2681 registered).
