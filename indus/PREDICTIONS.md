@@ -9054,3 +9054,12 @@ on B's lines separately, for every description family with 3+ qualifying members
 - **UA2** The 'person' family is used alike in both.
 - **UA3** The fish family is used alike in both (replicating set 183 with Parpola's family).
 - **UA4** Progress rule: UA1 holds; the families that pass both enter M+ (their tokens counted as meaning classes).
+
+## Results of the two-hundred-and-twenty-sixth set (added after the test; `predict_test226.py`, `results/predict_test226.md`)
+
+One held, three failed. Of Parpola's description families with enough frequent members, only the fish family is used
+alike in both samples (A mean similarity 0.203, p = 0.001; B 0.254, p = 0.001; UA3), replicating set 183 with an
+independent grouping. Strokes (A p = 0.02, B 0.07), leaves (A 0.03, B 0.09) and the jar (B 0.03 only) reach it in one
+sample; the person family in neither (UA2). No new class enters M+ (UA1, UA4 fail). The fish remain the one depiction
+family whose members behave as one class. No progress: streak 4. Tally, counting parts: 1381 held, 1271 failed (2652
+registered).

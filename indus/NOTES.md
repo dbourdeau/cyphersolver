@@ -2541,6 +2541,11 @@ held, 1265 failed.
 Registered first (6158a129d). F has 20 tails, no head avoidance (p = 0.38): set 223's A result does not replicate. No
 progress: streak 3. Tally 1380 held, 1268 failed.
 
+## Two-hundred-and-fortieth pass (24 Sept 2026): decipherment loop 51, description families used alike?
+
+Registered first (fc2498e7e). Only Parpola's fish family is used alike in A and B (replicates set 183); person, leaf,
+stroke, jar at most in one sample. M+ unchanged. No progress: streak 4. Tally 1381 held, 1271 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

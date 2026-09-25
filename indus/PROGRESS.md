@@ -121,3 +121,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | correction | 213 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | loop 38's opening-sign gain was a leak (position 0 conditioned on itself): withdrawn; S 4.635, SIGN 39.7% / 61.8%, WORD 3.4% (streak unchanged, 1) |
 | 49 | 224 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | forward weight 0.7 lowers SIGN on both samples; design gain was noise (no progress; streak 2) |
 | 50 | 225 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the post-name tail's head avoidance (A) does not replicate on F (20 tails, p = 0.38) (no progress; streak 3) |
+| 51 | 226 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | of Parpola's description families only fish are used alike in A and B (replicates set 183); M+ unchanged (no progress; streak 4) |
