@@ -3084,6 +3084,11 @@ Registered first (b002751e8). Coverage falls to 4.37%. No progress (streak 2). T
 Registered first (4d65a6718). 431 units, FDR 7.0%; referent line 4.79% -> 5.43%. Progress (streak 0). Tally 1540 held,
 1460 failed (3,000 registered).
 
+## Three-hundred-and-forty-third pass (25 Sept 2026): decipherment loop 154, seals and tags in the one pool
+
+Registered first (d42954bf8). Coverage would be 30.5% but FDR 19.3%; not adopted. No progress (streak 1). Tally 1541
+held, 1462 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

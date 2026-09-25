@@ -11176,3 +11176,11 @@ against 100 picture shuffles; coverage on the real tokens (`predict_test329.py`)
 - **SP1** The combined FDR is at or below 10%.
 - **SP2** Coverage rises above 5.43%.
 - **SP3** Progress rule: SP1 and SP2 hold (seals and tags join the referent pool).
+
+## Results of the three-hundred-and-twenty-ninth set (added after the test; `predict_test329.py`, `results/predict_test329.md`)
+
+One held, two failed. With 1,669 pictured seals and tags added (2,225 objects), the base-rate configuration at alpha
+0.01 finds 540 units and would mark 30.47% of tokens (SP2), but the FDR is 19.3% (SP1 fails): with so many seal texts,
+chance associations pass alpha 0.01 too often. The seal units cover common phrases, which is why coverage leaps. A
+stricter alpha for the combined pool is the next test. Progress: none (streak 1). Tally, counting parts: 1541 held,
+1462 failed (3003 registered).
