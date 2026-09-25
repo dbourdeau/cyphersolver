@@ -9583,3 +9583,23 @@ Streak 0. From the A lines the grammar still misses: SINGLE-DOUBLE, one lexical 
 None held. SINGLE-DOUBLE and 550-END do not generalise: B - margin 36.27 -> 36.08; real +0.15, shuffled +0.34 points. (TR1 fails); F margin 18.52 -> 18.37 (TR2 fails). The A
 gains were fitted to A's lines. Not adopted. No progress: streak 1. Tally, counting parts: 1429 held, 1310 failed
 (2739 registered).
+
+# Two-hundred-and-fifty-second set, registered before testing (25 September 2026): decipherment loop 77, does a sign's drawing match the object's picture? (six hypotheses)
+
+Streak 1. Owner's question: can checked meaning (tier 1, strict V) grow? A sign-level check: a sign that depicts X on
+an object that shows X. Drawing classes fixed now from the descriptions, before any sign-picture count: PLANT = Parpola
+description families leaf, leave, half-leave, tree, plant, branching, plus Fairservis 'plant'; FISH = signs.FISH;
+PERSON = families person, people, plus Fairservis 'human'; ANIMAL = families deer, animal, cow', cat', plus Fairservis
+'animal'. Matching pictures: PLANT - Phyt, Pipal; FISH - Fish; PERSON - Anth; ANIMAL - any quadruped motif (Bult,
+Bull, Bull1, Bull2, Gaur, Goat, Elep, Rhin, Hare, Buff, Zebu, Tigr, Mult). Unit: distinct text (part-texts merged as
+predict_test237.merged) with its modal picture; statistic: share of matching-picture texts that contain a class sign
+against the share among other pictured texts (one-sided Fisher). Two independent samples: individually made tablets
+(TAB:C, TAB:I) and moulded tablets (TAB:B).
+
+- **PC1** PLANT signs are more frequent in tree / pipal texts, in both samples (p < 0.05 each).
+- **PC2** FISH signs in fish texts, both samples.
+- **PC3** PERSON signs in anthropomorph texts, both samples.
+- **PC4** ANIMAL signs in quadruped texts, both samples.
+- **PC5** At least one class holds in one sample and in the other at p < 0.10 (reported).
+- **PC6** Progress rule: any of PC1-PC4 holds; the signs of that class enter strict V as depiction-checked meanings
+  (their tokens counted, as the copper-tablet anchors are).
