@@ -3137,6 +3137,11 @@ impressions. No progress (streak 2). Tally 1557 held, 1477 failed.
 Registered first (708d22a7a). 121 units, 3.43%, FDR 18.7%: 1.09% stands. No progress (streak 3). Tally 1559 held, 1479
 failed.
 
+## Three-hundred-and-fifty-third pass (25 Sept 2026): decipherment loop 164, the true-duplicate pool at stricter alphas
+
+Registered first (cae12c662). Alpha 0.002, FDR 6.8%, Linear B passes: referent line 1.09% -> 2.80% (2.75% without bull
+units). Progress (streak 0). Tally 1563 held, 1479 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

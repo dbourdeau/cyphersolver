@@ -11392,3 +11392,11 @@ chosen, with the Linear B control (`predict_test339.py`). Not measured before re
 - **MA2** Without Bull1 units, above 0.99%.
 - **MA3** Linear B with it recovers 2+ of the 4 control words, none wrong.
 - **MA4** Progress rule: MA1 and MA3 hold (the referent line uses the true-duplicate pool at that alpha).
+
+## Results of the three-hundred-and-thirty-ninth set (added after the test; `predict_test339.py`, `results/predict_test339.md`)
+
+All four held. On the true-duplicate pool: alpha 0.0001 62 units, FDR 0.5%, 1.49%; 0.0005 82, 2.1%, 2.28%; 0.001 93,
+3.7%, 2.55%; 0.002 98, 6.8%, 2.80% (2.75% without Bull1 units). The rule chooses 0.002 (MA1, MA2); Linear B passes
+(MA3). The referent line becomes 2.80%, nearly all of it for pictures other than the default bull: counting mould
+copies once removes the bull question. `prizebench.referent_fixed` uses this pool. Progress: streak 0. Tally, counting
+parts: 1563 held, 1479 failed (3042 registered).

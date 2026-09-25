@@ -108,10 +108,11 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
         import predict_test334 as _S
         from predict_test334 import site_objects, units as su
         _S.ALPHA = 0.005  # set 335 (SL1-SL4): FDR 8.1%, Linear B passes
-        clean, both = site_objects(F, recs)
-        P = {'made': ([(t, m) for t, m, s in clean], [(t, m) for t, m, s in both])}
-        from predict_test337 import distinct  # set 337: counted by distinct text (mould copies were counted as independent)
-        u = su(distinct(clean), distinct(both))
+        from predict_test338 import collapse, objects_typed  # sets 336-339: mould copies and impressions count once
+        clean, both = objects_typed(F, recs)
+        P = {'made': ([(o[0], o[1]) for o in clean], [(o[0], o[1]) for o in both])}
+        _S.ALPHA = 0.002  # set 339 (MA1-MA4): FDR 6.8%, Linear B passes
+        u = su(collapse(clean), collapse(both))
         if no_bull:
             u = {k: {g: m for g, m in v.items() if m != 'Bull1'} for k, v in u.items()}
         return coverage(DL, P, u), X.count(u)
