@@ -11086,3 +11086,17 @@ Both failed. The back-off vault gets 72 of 385 held-out pictures right (18.7%), 
 set 298's +64 (VB1 fails). The tier 1 configuration's extra reach adds predictions right about as often as by chance.
 Progress: none (streak 10). The owner's stopping rule (10 consecutive loops without progress) is met with this loop,
 ending the run begun at loop 103. Tally, counting parts: 1533 held, 1456 failed (2989 registered).
+
+# Three-hundred-and-twenty-fifth set, registered before testing (25 September 2026): decipherment loop 150, a base-rate criterion for referent units (four hypotheses)
+
+Owner's goal (25 Sept): continue until another 10 loops without progress, focused on the referent line; streak 0.
+The fixed share criterion (67%+) treats every picture alike, although 2 of 3 is weak for the commonest picture (bull)
+and strong for a rare one (gharial). Base-rate criterion: a unit on 2+ objects in 2+ distinct texts takes its most
+common picture m when a binomial test against m's share in the pool gives P < alpha; all unit kinds of set 312, whole
+texts as before; alpha from 0.001-0.05 chosen by the FDR rule (<= 10%, 100 picture shuffles, largest coverage); the
+Linear B control re-run with it (`predict_test325.py`). Not measured before registering.
+
+- **RB1** An alpha with FDR <= 10% gives coverage above 2.29% (set 312).
+- **RB2** Linear B with that alpha recovers 2+ of the 4 control words, none wrong.
+- **RB3** The chosen alpha keeps FDR <= 10%.
+- **RB4** Progress rule: RB1, RB2 and RB3 hold (the referent line uses the base-rate criterion).
