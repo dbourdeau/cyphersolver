@@ -9544,3 +9544,9 @@ times.
 - **ZF1** In A the sign before such a 400 is more head-like than frequency-matched draws (p < 0.05).
 - **ZF2** The same in B's new lines.
 - **ZF3** Progress rule: ZF1 and ZF2 hold; then that sign gets 'name head' and the 400 'post-ending marker' in R.
+
+## Results of the two-hundred-and-forty-ninth set (added after the test; `predict_test249.py`, `results/predict_test249.md`)
+
+None held. The sign directly before a 400 that follows no ending is not head-like: A - 77 tokens; mean propensity 0.084; p = 1.0000. (ZF1); B 27 tokens, mean
+propensity 0.098, p = 0.92 (ZF2). Lines like '131 400' are not names with the ending left out; 400 after a lexical
+sign stays unexplained. No progress: streak 6. Tally, counting parts: 1426 held, 1307 failed (2733 registered).

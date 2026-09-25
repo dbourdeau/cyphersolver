@@ -2664,6 +2664,11 @@ loops 71 and 72 withdrawn (streak 4). Tally 1425 held, 1302 failed.
 Registered first. Grammar prior: SIGN +0.2 (fixed), +0.1 (A -> B); below threshold. No progress: streak 5. Tally 1426
 held, 1304 failed.
 
+## Two-hundred-and-sixty-third pass (25 Sept 2026): decipherment loop 74, 400 without an ending
+
+Registered first (c6ff8644b). The sign before a bare 400 is not head-like (A, B). No progress: streak 6. Tally 1426
+held, 1307 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

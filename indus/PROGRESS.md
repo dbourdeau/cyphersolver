@@ -144,3 +144,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 71 | 246 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | phrases tied to object class: 5 pairs (4 tags, 1 pottery); **withdrawn after set 247**: the tag pairs are repeated Lothal sealings of two seals (no progress; streak 3) |
 | 72 | 247 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | site-bound pairs all from Lothal sealings (two seals, partial transcriptions counted as distinct texts); artefact (no progress; streak 4) |
 | 73 | 248 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | grammar prior in SIGN: +0.2 / +0.1 points, below threshold (no progress; streak 5) |
+| 74 | 249 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the sign before a bare 400 is not head-like (A, B) (no progress; streak 6) |
