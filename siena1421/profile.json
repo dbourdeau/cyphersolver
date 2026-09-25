@@ -313,6 +313,34 @@
       },
       "read": "not read",
       "route": "? -> ?"
+    },
+    {
+      "id": "no18",
+      "shelfmark": "ASSi, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 18 (DECODE R4806)",
+      "year": 1515,
+      "country": "Siena",
+      "route": "Siena <-> imperial court (articles)",
+      "language": "Latin",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "",
+        "partial": false
+      },
+      "length": {
+        "tokens": 1456,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "corrections": 14,
+        "notes": "year unknown, 1510s-20s (Ziegler, Ponte a Valiano); 1515 placeholder; token count from the prep script"
+      },
+      "read": "read in part"
     }
   ],
   "system": {
@@ -528,11 +556,35 @@
       "kind": "solver",
       "what": "No. 20 + no. 23 (4,900 tokens): homsolve2 Italian/Latin/Catalan/Spanish, order 3-4-5, with f-groups (f o^n, f a, f o) merged as units, with superscripted signs as nulls, with o as null: no convergence.",
       "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "solver",
+      "what": "Bigram-capable solver (sylsolve.py: a sign may stand for a letter or one of 40 Italian bigrams), validated on a synthetic cipher, run on nos. 6, 24 and 23: no convergence.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "transcription",
+      "what": "Nos. 15, 18, 22, 29 transcribed (agent K); nos. 15 and 18 re-verified on the images (agent L: 14/1,450 and 8/230 tokens changed). No. 22 = drafts with their own clear versions (code numbers recovered); no. 29 = nomenclator scrap.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "solver",
+      "what": "No. 18 (1,456 tokens, 211 point-divided Latin cipher words, 30 signs): homsolve2 words=1 with the Latin LM recovers the key unaided (Siena-Empire treaty articles, Ponte a Valiano, Florentines).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "sibling key",
+      "what": "No. 15 (Bandini 1546-47, 229 tokens): key R4764 (Buoninsegni, orator to His Majesty) transcribed (keys/R4764.txt); partial shape mapping + solver: inconclusive (too short to fill the unmapped signs).",
+      "result": "partial"
     }
   ],
   "outcome": {
     "method": "key recovered from ciphertext-only",
-    "method_basis": "No. 14 and no. 25: keys recovered ciphertext-only (homsolve2, no crib needed); no. 4: key rebuilt from an alphabet fragment and glosses on the letter; nos. 8, 10, 13 read at the time; no. 12 decrypted per DECODE R1858.",
+    "method_basis": "No. 14 and no. 25: keys recovered ciphertext-only (homsolve2, no crib needed); no. 4: key rebuilt from an alphabet fragment and glosses on the letter; nos. 8, 10, 13 read at the time; no. 12 decrypted per DECODE R1858. No. 18: key recovered ciphertext-only (Latin).",
     "contribution": [
       "key recovered",
       "transcription",
@@ -541,9 +593,9 @@
     ],
     "class": "read in part",
     "key": "partial",
-    "fraction_read": 0.12,
+    "fraction_read": 0.22,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "tokens in words read as sense: no. 25 477/496, no. 14 ~757/1291, no. 4 114/144, over ~11,900 cipher tokens transcribed in the 11 documents",
+    "fraction_read_source": "tokens in words read as sense: no. 25 477/496, no. 18 1,271/1,459, no. 14 ~757/1,291, no. 4 114/144, over ~13,400 cipher tokens transcribed",
     "verification": [
       "historical consistency"
     ],

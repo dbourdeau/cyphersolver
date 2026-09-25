@@ -248,7 +248,8 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
 | no. 11 (Florentine 1478) | 409 | no key in reach (Gabbrielli vol. I has no Donato Acciaiuoli key) |
 | no. 17 (1528, Balìa cipher) | 282 | too short ciphertext-only; the Balìa key not identified in fasc. 1 |
 | nos. 9, 19, 21, R4794 | 46-170 | too short ciphertext-only; no matching filed key found |
-| nos. 15, 18, 22, 29 | - | not yet transcribed |
+| no. 18 residue | ~175 of 1,459 | doubtful words (W m/tt/n?), five unread words; workable |
+| no. 15 (Bandini 1546-47) | 229 | candidate key R4764 transcribed; sign-to-key mapping not yet done by eye |
 
 ## Escalation
 
@@ -260,3 +261,37 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
 - Next: (1) re-transcribe nos. 6/24 and 20/23 with one transcriber and a fixed sign inventory, then test a
   syllable/nomenclator model; (2) transcribe nos. 15, 18, 22, 29; (3) ask ASSi for photos of no. 1 (1421) and
   nos. 2, 26-28.
+
+## Nos. 15, 18, 22, 29 (agent K, 24 Sept; nos. 15/18 under re-verification)
+
+- **No. 15 (R4803)**: Mario Bandini, Sienese orator at Charles V's court, "Di Hellsprunth(?) alli 29 di X.bre MDXLVI"
+  (+ PS 3 Jan) and 4 Jan 1546 s.s. = 1547; cipher only on pp. 2 and 6 (~230 signs). Key candidate by sign style:
+  R4764 "Cifra con m. Bernardino Buoninsegni oratore a S. M.tà" (nulls row includes the ÷ run-opener). Transcript
+  unverified (images failed to display for the transcriber) -> re-verification under way.
+- **No. 18 (R4806)**: Latin articles negotiated by Sienese orators with a king/emperor, subscribed "Niccolo Zieg[le]r
+  Regis Secretarius" (c. 1515-20?), ~185 point-separated cipher words (~1,100 signs) inside the Latin. Transcript
+  unverified -> re-verification under way.
+- **No. 22 (R4810)**: four drafts of a conspirators' letter (signal fires and smoke "alle pietre", spingarde, "la
+  lettera di Calisto" = Calixtus III, 1455-58); clear draft A pairs with numbered draft B, C with slip D: the drafts
+  are their own key (4 = .L., 7 = denari, 15 = parti, 16 = accordo, 17 = speranza; 5 = fanti?, 12 = romore?;
+  2, 3, 8, 19 unknown). Read at the time in effect (the clear drafts).
+- **No. 29 (R4814)**: torn scrap of a word list/nomenclator ("Ungaria — 1&7", "Giovan[ni]", "Lodyo"), not a letter.
+
+## No. 18 (R4806): key recovered ciphertext-only (24 Sept)
+
+- Transcripts verified against the images (agent L: 14 tokens changed in ~1,450; `transcripts/no18v.txt`).
+- 211 point-divided cipher words, 1,456 tokens, 30 signs, inside running Latin. homsolve2 (words=1, Latin) gave the
+  key unaided (`keys/no18_key.txt`): Latin articles of a treaty between Siena and the Emperor's side (subscribed
+  "Niccolo Zieg[le]r Regis Secretarius"): "... tormenta ... lapides seu globos ... milia ducatorum pro quibus se
+  obligabit de restituendo eosdem in termino duorum mensium ... civitatem presentem statum cum omni eius
+  iurisdictione tueri et defendere teneatur ... bellum ... in partibus Pontis Valiani ... bellum Florentinis ...
+  transitum, victualia, instrumenta ad bellum necessaria, passum, foedus, intelligentia ... suis expensis centum
+  homines armigeros, sexaginta equos leves ... castella existentia infra ... miliaria prope fines Senenses que
+  caperentur ... Florentinorum ... bombarda". Ponte a Valiano = the Montepulciano war (1495-1511); Ziegler =
+  Maximilian I's secretary (d. 1526): 1510s-1520s, year not fixed. Reading (agent L, `transcripts/no18_reading.txt`):
+  **87.1% of 1,459 cipher tokens read as sense**, 10.6% doubtful, 1.4% unread, 0.9% struck. Glyph splits found on
+  the image: hooked n = q vs plain n = e; o = g vs lead-in o = o; open OO = i vs closed pair = ll; dotted signs =
+  nulls; 2 = h, PHI = pp, HX = rr. Content: Siena to ready artillery and lend the King 5,000 ducats repayable in two
+  months; B. protects Siena; Siena opens war on X. near Ponte a Valiano at the King's and Emperor's request, gives
+  passage and victuals against the Florentines, 100 men-at-arms and 60 light horse; castles taken within five miles
+  of the border go to Siena; Siena's claims against Florence judged by the Emperor; last article breaks off.
