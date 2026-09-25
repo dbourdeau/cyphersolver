@@ -10153,3 +10153,14 @@ a name lowers both margins: of the final markers only the caged sign also opens 
 the cage being a unit of its own (set 184) rather than a line-final marker. Progress: none (streak 10). The stopping
 rule (10 consecutive loops without progress) is met with this loop. Tally, counting parts: 1458 held, 1385 failed
 (2843 registered).
+
+# Two-hundred-and-seventy-eighth set, registered before testing (25 September 2026): decipherment loop 103, a SIGN ensemble over two family maps (three hypotheses)
+
+New run of the loop (owner's goal of 25 Sept, stop after 10 consecutive loops without progress); streak 0. The family
+components can use the ICIT decade blocks or Parpola's description families (set 208: both work for S, no gain from
+using both in one model). Here the two-direction SIGN scores of the two models are averaged with equal weight, no
+tuning (`predict_test278.py`). Not measured before registering.
+
+- **SE1** SIGN top-1 rises by 0.5 point or more.
+- **SE2** SIGN top-5 does not fall.
+- **SE3** Progress rule: SE1 and SE2 hold (the SIGN task then uses the ensemble).
