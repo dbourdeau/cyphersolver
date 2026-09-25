@@ -1,5 +1,5 @@
 {
- "_about": "Hand-checked data for the ciphertext-only list sent to Klaus Schmeh (Lasry, 25 Sept 2026). One entry per item; _ct_list.py renders it with fields from each profile.json. primary = the archive or printed original; secondary = where the target was found (DECODE, cryptiana, Cipherbrain, catalogue harvest). section: ct = key recovered from ciphertext only, first breaks (unpublished earlier solutions noted); cipherbrain = a Cipherbrain challenge, any method. Items that are independent re-solutions of published work (egmond, lorraine1592, sp106r927) are left out on purpose; soria1523 was reclassed to external plaintext. primary_links / secondary_links are [label, url]; DECODE R-numbers in 'secondary' are linked automatically.",
+ "_about": "Hand-checked data for the ciphertext-only list sent to Klaus Schmeh (Lasry, 25 Sept 2026). One entry per item; _ct_list.py renders it with fields from each profile.json. primary = the archive or printed original; secondary = where the target was found (DECODE, cryptiana, Cipherbrain, catalogue harvest). section: ct = key recovered from ciphertext only, first breaks (unpublished earlier solutions noted); cipherbrain = a Cipherbrain challenge, any method. Items that are independent re-solutions of published work (egmond, lorraine1592, sp106r927) are left out on purpose; soria1523 was reclassed to external plaintext. primary_links / secondary_links are [label, url]; DECODE R-numbers in 'secondary' are linked automatically. part = the label of the outcome.parts entry for split targets; only that part is listed.",
  "items": [
   {
    "slug": "siena1421",
@@ -386,6 +386,32 @@
    "secondary_links": []
   },
   {
+   "slug": "soria1523",
+   "profile": "soria1523",
+   "section": "ct",
+   "part": "key A (June and July letters)",
+   "title": "Lope de Soria to Charles V: the key-A letters",
+   "date": "Genoa, June-July 1523",
+   "primary": "Real Academia de la Historia, Madrid, Colección Salazar y Castro A-28 (9/28)",
+   "secondary": "DECODE R9488-R9498 (Non-decrypted)",
+   "summary": "Split entry. Soria used two ciphers in 1523. Key A (the June letter in three copies and the body of the July letter) had no key and no crib; it was broken by simulated annealing on a Castilian model of the 1520s and read nearly throughout: the Venetian league bought with Milanese money, the French king's expected descent on Italy. The later key-B letters were read from a key rebuilt from an external decipherment (R9844) and are not counted here.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "kaa4591",
+   "profile": "kaa4591",
+   "section": "ct",
+   "part": "R9416 pp. 3-4 (f. 263)",
+   "title": "A Bavarian agent to the Dukes of Bavaria: the Pressburg talks",
+   "date": "c. 1533-34",
+   "primary": "Bayerisches Hauptstaatsarchiv, Kurbayern Äußeres Archiv 4591, f. 263",
+   "secondary": "DECODE R9416",
+   "summary": "Split entry. 3,150 signs in a homophonic substitution, broken by constrained annealing against German of 1472-1609 on the first run; a faint gloss on the first lines agrees word for word. It reports the Pressburg negotiations between Ferdinand and John Zápolya, a Turkish embassy and Alvise Gritti. Running German with local errors; person codes open. The rest of this key volume was read from contemporary glosses and is not counted here.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
    "slug": "baner1640",
    "profile": "baner1640",
    "section": "cipherbrain",
@@ -458,10 +484,6 @@
   {
    "slug": "sp106r927",
    "why": "independent re-solution; decoded by Sheila Richards, Secret Writings (1973), per Lasry"
-  },
-  {
-   "slug": "soria1523",
-   "why": "reclassed: key B was recovered from an external plaintext (the R9844 decipherment)"
   }
  ]
 }

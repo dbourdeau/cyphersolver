@@ -2,6 +2,8 @@
 
 Status: read in part (written up as docs/soria1523.html)
 
+Split entry (Lasry, 25 Sept 2026, 'split the entry into two cases if the achievements are of mixed types'): key-A letters = key recovered from ciphertext-only (primary, outcome.method), key-B letters = key from external plaintext; outcome.parts, one README row each.
+
 Lasry review (25 Sept 2026): key B was rebuilt from an external plaintext (the court's decipherment of R9844), so the target is not 100% ciphertext-only. Method reclassed to 'key recovered based on plaintext from external sources'; key A alone remains a ciphertext-only break.
 
 Catalogue entry 149 ("Lope de Soria to Charles V, 11 ciphertexts", scored by rule). Worked 2026-09-19.

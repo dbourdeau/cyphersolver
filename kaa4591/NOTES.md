@@ -2,6 +2,8 @@
 
 Status: in progress
 
+Split entry (Lasry, 25 Sept 2026): primary method stays key from adjacent plaintext; R9416 f. 263, broken ciphertext-only, is a second part (outcome.parts) with its own README row under ciphertext-only.
+
 Catalogue entry 161 ("Unknown sender to unknown recipient, 14 ciphertexts"). DECODE R9291, R9319, R9322, R9323,
 R9325, R9367, R9408, R9409, R9410, R9413, R9416, R9417, R9424, R9427. Images: DECODE, login (cookie in
 `bordeaux/decode/cookie.txt`); not public domain, kept in `img/` (git-ignored).

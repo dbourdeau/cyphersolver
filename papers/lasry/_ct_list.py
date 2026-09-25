@@ -44,14 +44,17 @@ def sources(text, links, decode=False):
 
 def item(it, n):
     prof = json.loads((ROOT / it['profile'] / 'profile.json').read_text(encoding='utf-8'))
-    method = prof['outcome'].get('method', 'unknown')
+    method, ext = prof['outcome'].get('method', 'unknown'), M.extent(prof)
+    if it.get('part'):                                   # a split entry: list only the named part
+        part = next(x for x in prof['outcome']['parts'] if x['label'] == it['part'])
+        method, ext = part['method'], part['extent']
     if it['section'] == 'ct':
         assert method == M.CT, (it['slug'], method)
         assert prof['outcome'].get('first_break') is not False, it['slug']
-    ext = M.extent(prof)
     note = prior_note(prof)
     url = SITE + it['slug'] + '.html'
-    rows = [('Method', f'{e(M.LABEL.get(method, method))} &middot; {e(ext)}'),
+    split = f' &middot; split entry: {e(it["part"])} only' if it.get('part') else ''
+    rows = [('Method', f'{e(M.LABEL.get(method, method))} &middot; {e(ext)}{split}'),
             ('Primary source', sources(it['primary'], it.get('primary_links'))),
             ('Secondary source', sources(it['secondary'], it.get('secondary_links'), decode=True))]
     if note:

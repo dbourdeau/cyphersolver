@@ -447,8 +447,9 @@ def audit(brief=False):
         if not want or len(r['dirs']) != 1: continue
         folder = next(iter(r['dirs'])).split('/')[-1].lower()
         prof = M.load(paths[folder]) if folder in paths else None
-        got = ((prof or {}).get('outcome') or {}).get('method')
-        if prof and got != want:
+        out = (prof or {}).get('outcome') or {}
+        got = out.get('method')
+        if prof and want != got and want not in {x.get('method') for x in out.get('parts') or []}:
             drift.append(f'{key_words(r["target"])}: README section "{want}" but profile method is {got!r}')
     for s in sorted(pages):
         if s in SURVEYS or s in FAMOUS: continue

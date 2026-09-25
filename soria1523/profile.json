@@ -499,11 +499,17 @@
    "kind": "control",
    "what": "Lasry review (email 25 Sept 2026): key B used plaintext from outside the target (R9844 decipherment), so the target is not 100% ciphertext-only. Method changed from 'key recovered from ciphertext-only' to 'key recovered based on plaintext from external sources'; key A remains a ciphertext-only break.",
    "result": "worked"
+  },
+  {
+   "date": "2026-09-25",
+   "kind": "control",
+   "result": "worked",
+   "what": "Lasry (25 Sept 2026): classify by the primary achievement and split mixed cases. Entry split: key A letters = key recovered from ciphertext-only (primary), key B letters = key from external plaintext; one Results row each."
   }
  ],
  "outcome": {
-  "method": "key recovered based on plaintext from external sources",
-  "method_basis": "Key B was rebuilt from an external plaintext, the court's decipherment of Soria's 30 Dec 1523 letter R9844 (Salazar 9/30), and gives the key-B passages in substance; key A, which carries the June and July letters (R9488-R9492), was broken from the ciphertext alone by simulated annealing with a Castilian 4-gram model plus hand fixes. Classed by the key-B route, as Lasry advised (25 Sept 2026): the target as a whole is not ciphertext-only.",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Split entry (Lasry, 25 Sept 2026: classify by the primary achievement, split mixed cases). Primary: key A, which carries the June letter and the body of the July letter (R9488-R9490, R9492-R9493), was broken from the ciphertext alone by simulated annealing with a Castilian 4-gram model plus hand fixes, with no key or crib. Second part: key B (from late July: R9491, the R9492 post data, R9494-R9498) was rebuilt from an external plaintext, the court's decipherment of Soria's 30 Dec 1523 letter R9844 (Salazar 9/30).",
   "contribution": [
    "transcription",
    "key recovered",
@@ -545,6 +551,22 @@
   "codes_open": {
    "open": 23,
    "total": "unknown"
-  }
+  },
+  "parts": [
+   {
+    "label": "key A (June and July letters)",
+    "records": "R9488-R9490, R9492-R9493 (body)",
+    "method": "key recovered from ciphertext-only",
+    "extent": "partial",
+    "basis": "annealing with a Castilian 4-gram model, no key or crib; read nearly throughout, code words rip, pur, qed, mul open"
+   },
+   {
+    "label": "key B (from late July)",
+    "records": "R9491, R9492-R9493 (post data), R9494-R9498",
+    "method": "key recovered based on plaintext from external sources",
+    "extent": "partial",
+    "basis": "key rebuilt by aligning R9844 with the court's decipherment; read in substance, about a dozen groups open"
+   }
+  ]
  }
 }

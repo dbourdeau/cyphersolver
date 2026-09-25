@@ -1403,6 +1403,8 @@ def attach_methods():
             out = (prof or {}).get('outcome') or {}
             if out.get('method') not in M.METHODS: continue
             p['method'], p['extent'], cls = out['method'], M.extent(prof), out.get('class')
+            if len(out.get('parts') or []) > 1:           # a split entry: each part has its own method (README Conventions)
+                p['parts'] = [(x['label'], x['method'], x['extent']) for x in out['parts']]
             p['frac'] = out.get('fraction_coherent') if isinstance(out.get('fraction_coherent'), (int, float)) else                         out.get('fraction_read') if isinstance(out.get('fraction_read'), (int, float)) else None
         p['stt_hand'] = p['stt']
         p['st'] = M.status_class(p['method'], p['extent'])
