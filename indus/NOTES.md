@@ -2947,6 +2947,10 @@ held, 1421 failed.
 Registered first (f50702003). Excess +63 against +64; family units add reach, not signal. No progress (streak 3).
 Tally 1504 held, 1424 failed.
 
+## Three-hundred-and-sixteenth pass (25 Sept 2026): decipherment loop 127, picture vault without catch-all votes
+
+Registered first (ea450f4ac). Excess +63 against +64. No progress (streak 4). Tally 1504 held, 1427 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

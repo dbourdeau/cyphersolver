@@ -10675,3 +10675,10 @@ before registering.
 - **VG1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
 - **VG2** Accuracy on the predicted objects is at least 23.7%.
 - **VG3** Progress rule: VG1 holds (the tier 3 vault line rises).
+
+## Results of the three-hundred-and-second set (added after the test; `predict_test302.py`, `results/predict_test302.md`)
+
+All three failed. Without catch-all votes the vault gets 68 of 292 held-out pictures right (23.3%), shuffle median 5:
+excess +63 against set 298's +64. Removing the Mult / Scene / Comp votes costs as many right predictions as it saves;
+the vault line is unchanged, and it can be stated without the catch-all codes at almost no cost. Progress: none
+(streak 4). Tally, counting parts: 1504 held, 1427 failed (2931 registered).
