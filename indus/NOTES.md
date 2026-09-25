@@ -2752,3 +2752,12 @@ Set 247 showed that the '2+ distinct texts' rule can be met by partial transcrip
 and 243 with part-texts merged into the longer text they belong to (predict_test237.merged): individually made tablets
 8 of 11 pairs still qualify (lost 176 740, 706 33, 240 740), moulded tablets 7 of 8 (lost 440 740); shuffle nulls stay
 near zero, so the tests hold. The tier-1 referent line, recomputed with merging, is 0.76% (was 0.84%).
+
+## Correction (25 Sept 2026): we already hold the full ICIT
+
+The fuller indus-website export used as F (5,680 records, 19,946 sign slots, 18,067 legible) matches or exceeds Fuls,
+*Corpus of Indus Inscriptions* (2022: 5,644 texts, 19,831 signs, 17,957 legible); all 177 IDs on 20 sample pages of the
+book are present. The apparent gap (3,681 objects, 13,909 signs in the analysis sample) is rtools.load_all's own filter,
+which keeps clean texts and drops 1,999 damaged ones (1,435 fragments; texts with 000 or broken edges). Earlier notes
+(sections 5 and the open-questions list) saying the full ICIT needs an account from Andreas Fuls are withdrawn. The
+damaged texts' unbroken legible stretches (about 4,000 signs) are unused data.
