@@ -9101,3 +9101,11 @@ Metric: G margin A 47.3 / B 36.0; set 227 found one grammar across sites; streak
 - **OT4** The seal -> tablet margin is lower than the seal -> seal (within) margin by 5 points or more (tablets are a
   different genre, sets 69, 157).
 - **OT5** Progress rule: OT1 and OT3 hold (the grammar holds across object type and time).
+
+## Results of the two-hundred-and-twenty-eighth set (added after the test; `predict_test228.py`, `results/predict_test228.md`)
+
+All five held. The grammar learned on seals parses tablet lines with a margin of 43.6 points over shuffled lines
+(OT1), learned on tablets it parses seals at 48.1 (OT2), and learned on late Harappa it parses the early levels at
+27.0 (83 lines; OT3). Tablets sit 5.2 points below seals under the seal grammar (48.8 against 43.6; OT4), in line
+with their being a different genre. With set 227: one grammatical system across sites, object types and periods, the
+early Harappa lines included. Progress: streak 0. Tally, counting parts: 1391 held, 1271 failed (2662 registered).

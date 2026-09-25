@@ -2552,6 +2552,12 @@ Registered first (67e359105). Grammar learned at Mohenjo-daro parses Harappa (ma
 reverse too (46.1 vs 44.6), both cities' grammar the other sites (36.1): one system across sites. Progress: streak 0.
 Tally 1386 held, 1271 failed.
 
+## Two-hundred-and-forty-second pass (24 Sept 2026): decipherment loop 53, one grammar across object types and periods
+
+Registered first (29e134061). Seal grammar parses tablets (43.6), tablet grammar seals (48.1), late Harappa grammar
+the early levels (27.0). One system across place, object type and time. Progress: streak 0. Tally 1391 held, 1271
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
