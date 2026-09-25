@@ -2905,6 +2905,11 @@ Tally 1492 held, 1409 failed.
 Registered first (affcb94fd). No positional difference (p = 0.49, 0.46; opposite directions). No progress (streak 3).
 Tally 1492 held, 1412 failed.
 
+## Three-hundred-and-eighth pass (25 Sept 2026): decipherment loop 119, picture vault with all unit kinds
+
+Registered first (d1cbf70ec). 64 of 191 held-out pictures right against a shuffle median of 4 (p = 0.005). Progress
+(streak 0). Tally 1495 held, 1412 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

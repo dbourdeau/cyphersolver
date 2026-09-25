@@ -10523,3 +10523,11 @@ with single signs, pairs, 3-sign runs and skip-pairs (`predict_test294.py`). Not
 - **VX1** More than set 290's 26 correct predictions, with p < 0.05 against 200 shuffles.
 - **VX2** Accuracy on the predicted objects is 30% or more.
 - **VX3** Progress rule: VX1 holds (the tier 3 vault line counts more held-out tablets).
+
+## Results of the two-hundred-and-ninety-fourth set (added after the test; `predict_test294.py`, `results/predict_test294.md`)
+
+All three held. Voting with single signs, pairs, 3-sign runs and skip-pairs, the vault reaches 191 held-out tablets
+(against 74) and gets 64 pictures right (33.5%; VX1, VX2), against a shuffle median of 4 and a 95th percentile of 14
+(p = 0.005, the floor for 200 shuffles). The unit kinds that failed the 10% FDR rule as a list still predict held-out
+pictures far above chance: the held-out check is the stronger test. The tier 3 vault cell now reads 64 tablets.
+Progress: streak 0. Tally, counting parts: 1495 held, 1412 failed (2907 registered).
