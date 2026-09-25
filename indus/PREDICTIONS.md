@@ -9367,3 +9367,18 @@ made tablets the direction is the same but weak (0.37 against 0.33, p = 0.29; GV
 evidence, the pictures, confirms the grammatical analysis from the other side: the signs the grammar calls endings,
 markers and numerals carry no referent of their own, while pairs of content signs stay with one picture. Progress (a
 new finding on an unseen sample): streak 0. Tally, counting parts: 1417 held, 1289 failed (2705 registered).
+
+# Two-hundred-and-forty-first set, registered before testing (25 September 2026): decipherment loop 66, the pictures judge the closers and the count labels (four hypotheses)
+
+Streak 0. Set 240: on moulded tablets grammatical pairs go with more pictures than lexical pairs. The same measure
+(distinct pictures per occurrence of sign pairs recurring on 3+ moulded tablets, TAB:B) judges two grammatical claims
+not checked from outside: the closers (predict_test103.CL) as alternative endings (sets 118-120), and the count-label
+signs (set 215: A's ten commonest pre-count signs). Comparison group: pairs of two lexical signs (as set 240).
+
+- **JC1** Pairs containing a closer (and no other grammatical sign) are more picture-diverse than lexical pairs
+  (one-sided rank test, p < 0.05): the closers are grammatical.
+- **JC2** Pairs containing a count-label sign (and no other grammatical sign) are more picture-diverse than lexical
+  pairs (p < 0.05).
+- **JC3** Pairs containing 740 or 520 are more picture-diverse than lexical pairs (replicating set 240 for the endings
+  alone).
+- **JC4** Progress rule: JC1 holds (outside evidence confirms the closers are grammatical, a claim so far internal).
