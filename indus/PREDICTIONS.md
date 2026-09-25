@@ -10352,3 +10352,18 @@ before registering.
 - **DX2** The same A -> B (any fall).
 - **DX3** SIGN top-1 does not fall.
 - **DX4** Progress rule: DX1, DX2 and DX3 hold (training then includes the marked runs).
+
+# Two-hundred-and-eighty-seventh set, registered before testing (25 September 2026): decipherment loop 112, the referent method's criteria calibrated by false-discovery rate (four hypotheses)
+
+Owner's request (25 Sept): expand the picture-referent method (tier 1's only line with a positive control) over the
+next loops. Its criteria (3+ objects, 80%+ one picture, 2+ distinct texts for pairs) were fixed in set 233 and never
+calibrated. `referents.py` makes them parameters (k objects, share s) and reproduces the current line (k 3, s 0.8: 27
+units, 0.79%). For each of four criteria, (3, 0.8), (3, 0.67), (2, 1.0) and (2, 0.67), qualifying units are counted on
+the real pictures and on 100 shuffles within each pool; FDR = mean shuffled count / real count. Rule fixed now: the
+criterion with FDR <= 10% and the largest coverage is chosen; the Linear B control (set 235's four words) is re-run with
+it (`predict_test287.py`). Not measured before registering.
+
+- **RX1** The current criterion has FDR <= 10%.
+- **RX2** A looser criterion with FDR <= 10% raises the coverage.
+- **RX3** Linear B with the chosen criterion recovers 2+ of the 4 control words, none with a wrong ideogram.
+- **RX4** Progress rule: RX2 and RX3 hold (`prizebench.referent_fixed` then uses the chosen criterion).
