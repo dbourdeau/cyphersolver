@@ -2682,3 +2682,11 @@ The 'first' component adopted in loop 38 (set 213) conditioned position 0 on its
 unchanged by it. Loop 38's gain is withdrawn and 'first' removed from the model (S back to 4.635); the S gains of
 firstpos (set 214) and first2 (set 217) were the same artefact (neither was adopted). Lesson: any context feature must
 be computed from signs before the predicted one only.
+
+## Observation after set 243 (25 Sept 2026, not registered): the referents do not travel between tablet types
+
+Referent pairs fixed on moulded tablets predict the picture of 0 of 3 individually made tablets carrying them, and
+pairs fixed on individually made tablets predict 1 of 37 moulded tablets (e.g. 176 740: bull on incised tablets,
+multi-headed animal on moulded ones). The tier-1 referent line (0.84%) therefore counts local labels, text to picture
+within one kind of object, not portable sign meanings; it must not be extended to other objects. Consistent with set
+200 (single signs do not carry pictures to new texts).
