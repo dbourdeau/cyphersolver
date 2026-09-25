@@ -10866,3 +10866,15 @@ picture shuffles (`predict_test312.py`). Not measured before registering.
 Both held. 4-sign runs add 4 units (189), FDR 7.2%, coverage 2.28% -> 2.29%: progress by the registered rule, minimal in
 size; longer runs recur too rarely to add much. `prizebench.referent_fixed` includes them. Progress: streak 0. Tally,
 counting parts: 1524 held, 1433 failed (2957 registered).
+
+# Three-hundred-and-thirteenth set, registered before testing (25 September 2026): decipherment loop 138, referent units before an ending (three hypotheses)
+
+Streak 0. Referent units have no fixed position in the text (set 293), but they may have a fixed grammatical slot: if
+they name the pictured thing as a name body does, they stand directly before an ending (740 / 520) more often than other
+recurring units; or less, if they are labels outside the name. Per pool, the share of occurrences directly followed by
+740 / 520 (units containing an ending excluded), referent units against other units recurring on 2+ objects in 2+
+texts; Fisher two-sided; direction not predicted (`predict_test313.py`). Not measured before registering.
+
+- **RE1** Individually made tablets: the shares differ (p < 0.05).
+- **RE2** Moulded tablets: they differ in the same direction.
+- **RE3** Progress rule: RE1 and RE2 hold (a new finding, replicated across pools).
