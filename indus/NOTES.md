@@ -3142,6 +3142,11 @@ failed.
 Registered first (cae12c662). Alpha 0.002, FDR 6.8%, Linear B passes: referent line 1.09% -> 2.80% (2.75% without bull
 units). Progress (streak 0). Tally 1563 held, 1479 failed.
 
+## Three-hundred-and-fifty-fourth pass (25 Sept 2026): decipherment loop 165, split-half check of the true-duplicate configuration
+
+Registered first (d686846bb). Confirmed (114 against 45, p = 0.015) but held-out precision 5%. No progress (streak 1).
+Tally 1564 held, 1481 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

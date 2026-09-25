@@ -11411,3 +11411,12 @@ a failure of TV1 downgrades the line; no progress either way. Not measured befor
 - **TV1** The configuration is confirmed on the five split-halves (p < 0.05).
 - **TV2** Its held-out precision is at least 14% (set 326).
 - **TV3** Progress rule: none (validation; recorded as failing).
+
+## Results of the three-hundred-and-fortieth set (added after the test; `predict_test340.py`, `results/predict_test340.md`)
+
+One held, two failed (TV3 is the non-progress rule). On five split-halves both ways, the true-duplicate configuration's
+units match 114 of 2,317 held-out observations' pictures against a shuffle median of 45 (p = 0.015; TV1): the 2.80% line
+is confirmed. Held-out precision is 5% (TV2 fails): about 2.5 times chance, far below Linear B's 95% (set 310). Once
+mould copies count once, what remains of the referent line is real but weak. (A first run failed on an empty stratum in
+a half-split; a guard was added to predict_test334.units, c81ea3536, with no effect on earlier runs.) Progress: none
+(streak 1). Tally, counting parts: 1564 held, 1481 failed (3045 registered).
