@@ -11051,3 +11051,14 @@ combined FDR against 100 picture shuffles (`predict_test322.py`). Not measured b
 Both failed. Without the 104 catch-all tablets the configuration finds 182 units, FDR 10.2%, coverage 2.28% against
 2.29% (PX1 fails): the units the catch-all objects diluted are balanced by those they supported. The pools stay as
 they are. Progress: none (streak 8). Tally, counting parts: 1533 held, 1452 failed (2985 registered).
+
+# Three-hundred-and-twenty-third set, registered before testing (25 September 2026): decipherment loop 148, the picture vault with the tier 1 configuration (two hypotheses)
+
+Streak 8. The vault (sets 290-298) votes with loosely chosen unit kinds; tier 1 now uses a calibrated configuration
+(set 312: pairs and 3-sign runs at 2+ / 67%+; single signs, skip-pairs, 4-sign runs and the family kinds at 3+ / 67%+).
+Here the vault votes with exactly that configuration, learned without copies of the held-out text, with set 298's
+cross-pool fallback; scored by the excess over the shuffle median (`predict_test323.py`). Not measured before
+registering.
+
+- **VT1** The excess over the shuffle median is above +64 (set 298), with p < 0.05 against 200 shuffles.
+- **VT2** Progress rule: VT1 holds (the tier 3 vault line rises).
