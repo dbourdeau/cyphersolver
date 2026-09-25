@@ -34,6 +34,8 @@ def grams_of(t, n):
     """n >= 1: contiguous n-sign runs; n = -2: skip-pairs (t[i], '_', t[i + 2]) (set 292)."""
     if n == -2:
         return {(t[i], '_', t[i + 2]) for i in range(len(t) - 2) if '|' not in (t[i], t[i + 1], t[i + 2])}
+    if n == -3:  # set 346: wide skip-pairs A _ _ B
+        return {(t[i], '_', '_', t[i + 3]) for i in range(len(t) - 3) if '|' not in t[i:i + 4]}
     return {t[i:i + n] for i in range(len(t) - n + 1)}
 
 

@@ -11517,3 +11517,14 @@ with 100 units and coverage 2.82% against 2.80%; Linear B passes. The gain is on
 estimate's noise. The line stays at 2.80%. Lesson: an alpha step must clear the FDR rule by more than the estimate's
 noise. Progress: none (streak 6). Tally, counting parts: 1570 held, 1491 failed (3061 registered; this set's three
 'held' are withdrawn in the text).
+
+# Three-hundred-and-forty-sixth set, registered before testing (25 September 2026): decipherment loop 171, wide skip-pairs as referent units (three hypotheses)
+
+Streak 6. Skip-pairs one position apart (A _ B) are among the unit kinds; a referent written around a two-sign insert
+(a numeral and a sign, a doubled sign) needs A _ _ B. Wide skip-pairs join the sign unit kinds of set 339's pool (alpha
+0.002); FDR against 100 within-stratum shuffles; Linear B control (`predict_test346.py`; `referents.grams_of(t, -3)`).
+Not measured before registering.
+
+- **WS1** FDR at or below 10% and coverage above 2.80%.
+- **WS2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
+- **WS3** Progress rule: WS1 and WS2 hold (wide skip-pairs join the referent units).

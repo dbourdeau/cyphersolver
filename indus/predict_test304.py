@@ -73,7 +73,9 @@ def coverage(DL, P, u):
             tt = fam(t) if fl else t
             if n == -2:
                 mark |= {j for i in range(len(tt) - 2) if (tt[i], '_', tt[i + 2]) in qq for j in (i, i + 2)}
-            else:
+            elif n == -3:
+                mark |= {j for i in range(len(tt) - 3) if (tt[i], '_', '_', tt[i + 3]) in qq for j in (i, i + 3)}
+            if n > 0:
                 mark |= {j for i in range(len(tt) - n + 1) if tt[i:i + n] in qq for j in range(i, i + n)}
         cov += len(mark)
     return cov / sum(len(t) for t in DL)
