@@ -9863,3 +9863,13 @@ covers only 1-2), HEADING-BODY (the heading unit, then any lexical body). Margin
 - **GN2** BODY-400, the same.
 - **GN3** HEADING-BODY, the same.
 - **GN4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-sixty-third set (added after the test; `predict_test263.py`, `results/predict_test263.md`, `grammar.parse10`)
+
+Three held, one failed. BODY-400 (3+ lexical signs + 400) raises the margin A 48.31 -> 48.66, B 36.48 -> 36.65: 400
+closes a longer body as it closes one or two signs (LOW-POST, set 250), so 400 is a line-final marker in its own right
+and not only a post-ending sign. HEADING-BODY (heading unit + lexical body) raises A to 48.85, B to 36.75: the heading
+opens lines without a name ending too. Together A 49.21, B 36.92 (GN4). NUM-END (a label written after its count)
+lowers both margins (46.68, 34.75): numerals do not close lines after a label; the order is count then label (set 215).
+The grammar becomes parse10; `progress.grammar_margin` uses it. Progress: G margin rises (streak 0). Tally, counting
+parts: 1448 held, 1341 failed (2789 registered).

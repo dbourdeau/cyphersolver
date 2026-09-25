@@ -226,3 +226,16 @@ def parse9(t, heads, hc, mc, labels, low, endp):
     if len(t) >= 2 and t[-1] in endp and all(lexical(g) for g in t[:-1]):
         return 'end-prone'
     return None
+
+
+def parse10(t, heads, hc, mc, labels, low, endp):
+    """parse9 plus BODY-400 (3+ lexical signs + 400) and HEADING-BODY (heading unit + lexical body) (set 263)."""
+    lab = parse9(t, heads, hc, mc, labels, low, endp)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) >= 4 and t[-1] == '400' and all(lexical(g) for g in t[:-1]):
+        return 'body-400'
+    if len(t) >= 3 and t[0] in ('817', '820', '861') and t[1] in ('2', '60', '1') and all(lexical(g) for g in t[2:]):
+        return 'heading-body'
+    return None

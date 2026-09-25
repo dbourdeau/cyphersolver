@@ -2740,6 +2740,11 @@ Tally 1443 held, 1338 failed.
 Registered first (b2e79ff27). END-PRONE joins the grammar (parse9): A margin 47.94 -> 48.31, B 36.47 -> 36.48 (weak
 replication, recorded as such). CLOSER-740 and TWO-BARE rejected. Progress (streak 0). Tally 1445 held, 1340 failed.
 
+## Two-hundred-and-seventy-seventh pass (25 Sept 2026): decipherment loop 88, three more grammar rules
+
+Registered first (7180b8a3a). BODY-400 and HEADING-BODY join the grammar (parse10): margin A 48.31 -> 49.21, B 36.48 ->
+36.92. NUM-END lowers both and is rejected. Progress (streak 0). Tally 1448 held, 1341 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
