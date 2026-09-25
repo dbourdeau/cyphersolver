@@ -2937,6 +2937,11 @@ Registered first (41eb0c1a5). Held numerically, withdrawn on audit: the cross-ci
 part-text leaks. In-pool vault hits audited as referents (bull, plant, fish). No progress (streak 1). Lesson: exclude
 catch-all picture codes and part-texts from vault targets. Tally 1503 held, 1419 failed.
 
+## Three-hundred-and-fourteenth pass (25 Sept 2026): decipherment loop 125, referent units over sign families
+
+Registered first (5adcf1724). Family units reach 2.87% but FDR 11.5%; not adopted. No progress (streak 2). Tally 1504
+held, 1421 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

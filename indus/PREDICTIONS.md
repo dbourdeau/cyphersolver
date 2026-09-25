@@ -10640,3 +10640,10 @@ id) before the units (pairs, 3-sign runs) are formed; set 287's criterion and FD
 - **FV1** Family units keep FDR at or below 10%.
 - **FV2** Coverage rises above the sign units' 1.46%.
 - **FV3** Progress rule: FV1 and FV2 hold (the referent line uses family units).
+
+## Results of the three-hundredth set (added after the test; `predict_test300.py`, `results/predict_test300.md`)
+
+One held, two failed. Over description families the method finds 74 units (sign units 68) and they would mark 2.87% of
+tokens (FV2), but the shuffles give 8.5 on average, FDR 11.5%, over the registered 10% (FV1, FV3 fail): a family unit
+matches more texts, by chance as well as by variant spelling. Not adopted. Progress: none (streak 2). Tally, counting
+parts: 1504 held, 1421 failed (2925 registered).
