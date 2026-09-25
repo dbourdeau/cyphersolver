@@ -3079,6 +3079,11 @@ the caveat. No progress (streak 1). Tally 1538 held, 1458 failed.
 
 Registered first (b002751e8). Coverage falls to 4.37%. No progress (streak 2). Tally 1538 held, 1460 failed.
 
+## Three-hundred-and-forty-second pass (25 Sept 2026): decipherment loop 153, one pool for all pictured tablets
+
+Registered first (4d65a6718). 431 units, FDR 7.0%; referent line 4.79% -> 5.43%. Progress (streak 0). Tally 1540 held,
+1460 failed (3,000 registered).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

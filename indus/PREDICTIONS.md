@@ -11157,3 +11157,11 @@ the FDR decides. Not measured before registering.
 
 - **MP1** The combined FDR is at or below 10% and coverage rises above 4.79%.
 - **MP2** Progress rule: MP1 holds (one pool for all pictured tablets).
+
+## Results of the three-hundred-and-twenty-eighth set (added after the test; `predict_test328.py`, `results/predict_test328.md`)
+
+Both held. With all 556 pictured tablets in one pool, the base-rate configuration finds 431 units, FDR 7.0%, coverage
+4.79% -> 5.43% (MP1): pooling gives shared words the support they lacked in each pool, and the shuffles show it does
+not bring in more chance units than the rule allows. `prizebench.referent_fixed` now uses one pool. The held-out
+precision of this configuration has not been measured (set 326's 14% was for two pools). Progress: streak 0. Tally,
+counting parts: 1540 held, 1460 failed (3000 registered).

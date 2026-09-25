@@ -106,6 +106,8 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
     if alpha:  # set 325 (RB1-RB4): base-rate binomial criterion, all unit kinds, alpha 0.01; FDR 5.7%
         from predict_test304 import coverage
         from predict_test325 import build
+        from predict_test237 import merged as _merged
+        P = {'made': (P['made'][0] + P['moulded'][0], _merged(P['made'][1] + P['moulded'][1]))}  # set 328: one pool, FDR 7.0%
         u = build(alpha)(P)
         return coverage(DL, P, u), X.count(u)
     if families:  # set 304 (SF1-SF3): pairs and 3-sign runs over description families, 3+ objects, 80%+; FDR 9.6%
