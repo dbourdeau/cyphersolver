@@ -11534,3 +11534,13 @@ Not measured before registering.
 All three held. Wide skip-pairs add 6 units to set 339's pool (104), FDR 7.8% (well inside the rule), coverage 2.80% ->
 2.86% (WS1); the Linear B control passes (WS2). A small step. `prizebench.referent_fixed` includes them. Progress:
 streak 0. Tally, counting parts: 1573 held, 1491 failed (3064 registered).
+
+# Three-hundred-and-forty-seventh set, registered before testing (25 September 2026): decipherment loop 172, family wide skip-pairs and 5-sign runs (three hypotheses)
+
+Streak 0. Set 346 added sign wide skip-pairs. The remaining kinds, wide skip-pairs over description families and
+5-sign runs, are added together to set 346's units (true-duplicate pool, alpha 0.002); FDR against 100 within-stratum
+shuffles; Linear B control (`predict_test347.py`). Not measured before registering.
+
+- **WF1** FDR at or below 10% and coverage above 2.86%.
+- **WF2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
+- **WF3** Progress rule: WF1 and WF2 hold (the two kinds join the referent units).
