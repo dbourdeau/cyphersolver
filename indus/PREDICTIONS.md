@@ -9997,3 +9997,16 @@ All four failed. NUM-INFIX lowers both margins (A 49.48, B 37.09); OPEN-NUM rais
 MULTI-COUNT lowers A (49.54) though it raises B (37.53). None meets both conditions. The numerals inside the remaining
 short lines do not follow a frame that shuffled lines lack. Progress: none (streak 2). Tally, counting parts: 1456
 held, 1357 failed (2813 registered).
+
+# Two-hundred-and-seventieth set, registered before testing (25 September 2026): decipherment loop 95, head roles inside the new frames (five hypotheses)
+
+Streak 2. Two frames adopted today end in a lexical sign whose job is not yet a role: the last sign of an OPEN-PRONE
+line (set 264) and the sign before 400 in a BODY-400 line (set 263). If each is a name head, it is head-class (H:
+heads 5+ A names, more often head than modifier) more often than the signs before it (opener excluded). Set 260's
+closer-line version held on A and failed on B; B decides (`predict_test270.py`). Not measured before registering.
+
+- **RH1** A OPEN-PRONE: the last sign is head-class more often than the earlier signs (Fisher one-sided, p < 0.05).
+- **RH2** B OPEN-PRONE: the same.
+- **RH3** A BODY-400: the sign before 400 is head-class more often than the earlier signs.
+- **RH4** B BODY-400: the same.
+- **RH5** Progress rule: a frame that holds on A and B gives that sign the 'name head' role in `progress.roles`.
