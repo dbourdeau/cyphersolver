@@ -2669,6 +2669,11 @@ held, 1304 failed.
 Registered first (c6ff8644b). The sign before a bare 400 is not head-like (A, B). No progress: streak 6. Tally 1426
 held, 1307 failed.
 
+## Two-hundred-and-sixty-fourth pass (25 Sept 2026): decipherment loop 75, 400 after a non-head
+
+Registered first (01345b4a3). LOW-POST raises the G margin slightly (B 36.0 -> 36.3, F up). Progress: streak 0. Tally
+1429 held, 1307 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

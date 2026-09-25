@@ -20,7 +20,7 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 85.1% / 77.0% (no-prefix profile, set 220); no candidate beats the decoys inside the remaining groups (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.4% (frequency 0% / 1.3%) |
 | 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 39.7% / 61.8% (two-direction model, set 204; discounted contexts, sets 210-211; frequency 9.6% / 22.4%) |
-| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 84.2%, G 47.3 / 36.0, M+ 41.4% |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 84.2%, G 47.6 / 36.3, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
 
@@ -145,3 +145,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 72 | 247 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | site-bound pairs all from Lothal sealings (two seals, partial transcriptions counted as distinct texts); artefact (no progress; streak 4) |
 | 73 | 248 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | grammar prior in SIGN: +0.2 / +0.1 points, below threshold (no progress; streak 5) |
 | 74 | 249 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the sign before a bare 400 is not head-like (A, B) (no progress; streak 6) |
+| 75 | 250 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | LOW-POST grammar rule (400 after a non-head): G margin 47.6 / 36.3, F up (progress; streak 0) |

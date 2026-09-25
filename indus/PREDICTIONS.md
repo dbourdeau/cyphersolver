@@ -9560,3 +9560,10 @@ propensity (A) below 0.05 (3+ occurrences). Design on A: margin 51.28 -> 51.51.
 - **LP1** parse5 + LOW-POST raises the B margin (any rise) and real B coverage more than shuffled.
 - **LP2** It raises the F margin.
 - **LP3** Progress rule: LP1 holds.
+
+## Results of the two-hundred-and-fiftieth set (added after the test; `predict_test250.py`, `results/predict_test250.md`, `grammar.parse6`)
+
+All three held. LOW-POST (1-2 lexical signs + 400, the sign before 400 of low head propensity) raises the B margin
+from 36.02 to 36.27 points, real B coverage more than shuffled (+0.37 against +0.13; LP1), and the F margin from 18.43
+to 18.52 (LP2). A small gain, adopted in the metric's G margin: lines like '131 400' are a construction of their own,
+a non-head sign with the marker. Progress: streak 0. Tally, counting parts: 1429 held, 1307 failed (2736 registered).

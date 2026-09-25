@@ -180,3 +180,14 @@ def parse5(t, heads, hc, mc, labels):
     if len(t) >= 2 and (t[0] in CAGED or t[0] in CL) and all(g in ('400', '90') for g in t[1:]):
         return 'caged-post'
     return None
+
+
+def parse6(t, heads, hc, mc, labels, low):
+    """parse5 plus LOW-POST (set 250): 1-2 lexical signs + 400, the sign before 400 of low head propensity (`low`)."""
+    lab = parse5(t, heads, hc, mc, labels)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if 2 <= len(t) <= 3 and t[-1] == '400' and t[-2] in low and all(lexical(g) for g in t[:-1]):
+        return 'low-post'
+    return None
