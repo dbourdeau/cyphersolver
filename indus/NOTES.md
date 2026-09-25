@@ -2648,6 +2648,11 @@ small n). No progress: streak 1. Tally 1421 held, 1298 failed.
 Registered first (a394f302f). Fish pairs not more animal-diverse on seals. No progress: streak 2. Tally 1421 held, 1300
 failed.
 
+## Two-hundred-and-sixtieth pass (25 Sept 2026): decipherment loop 71, phrases tied to object function
+
+Registered first (4c057acf2). 5 pairs tied to a minority object class (4 tags, 1 pottery; null median 0); tags may be
+unrecovered seals' texts. Reported beside V. Progress: streak 0. Tally 1423 held, 1301 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

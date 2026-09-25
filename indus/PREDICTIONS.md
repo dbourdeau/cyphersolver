@@ -9479,3 +9479,11 @@ Seals and tablets are the default classes; the question is the minority classes.
 - **OF1** More pairs qualify for pottery, tags or other objects together than in 95% of shuffles.
 - **OF2** At least two pairs qualify for pottery.
 - **OF3** Progress rule: OF1 holds (phrases tied to an object's function; tier 1 evidence, reported beside V).
+
+## Results of the two-hundred-and-forty-sixth set (added after the test; `predict_test246.py`, `results/predict_test246.md`)
+
+Two held, one failed. Five sign pairs recur in 2+ distinct texts on 3+ objects of one minority class, against a
+shuffle median of 0 (95th percentile 1; OF1): four on tags / sealings (2 48, 705 500, 55 220, 1 55) and one on pottery
+(32 999); only one for pottery (OF2 fails). Caveat: tags carry seal impressions, so tag-only phrases may be the texts
+of seals not recovered rather than words for the tag's function. Reported beside the tier-1 V line, not added to it.
+Progress by the registered rule: streak 0. Tally, counting parts: 1423 held, 1301 failed (2724 registered).
