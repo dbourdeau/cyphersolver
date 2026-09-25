@@ -209,9 +209,10 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
 
 - **No. 7 (R4796)**: despatch to the "Officiales Balie" from an orator at Milan ("Servitor ... Orator Ant..."; Lionardo
   Benvoglienti named; the Duke of Milan), 363 cipher tokens / 45 signs in ~11 lines, faint interlinear letter glosses.
-  Mapping R4750's values (key "a messer Lionardo e messer Antonio ambasciatori a Milano 1454") onto the
-  transcriber's sign names already yields "milano" inside the cipher: R4750 is the likely key; re-reading in R4750's
-  own sign inventory under way (`transcripts/no07_reading.txt`).
+  Key R4750 (Milan ambassadors 1454) tested sign by sign on the image (agent G): does NOT fit (gloss contradicts it,
+  20% of the signs are not in it, its only e-sign is 2.5% of the text); an earlier "milano" was a solver artefact from
+  free signs, withdrawn. R4753/R4754/R4756/R4757/R4762 also fail. The L08 gloss gives a partial key: 7=l, q=a, 6=n,
+  +=o, B3=t, 2=e, x=r, 8o=i, c=o (`transcripts/no07_reading.txt`).
 - **No. 9 (R4798)**: undated slip, quelli da Coreggio, Carpi, Rimini, "re di Ragona" (c. 1495-1516?); 46 cipher tokens
   in two runs + a cipher signature group. Too short for ciphertext-only.
 - **No. 19 (R4807)**: Sienese envoys waiting on the "S. Capitano", 9 March (no year); 118 cipher tokens / 37 signs,
@@ -225,3 +226,37 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
   "p p" ~66x, point-framed single signs (CIRC, RX+, BIGX, PHI, x) = probable name codes. With no. 6: 3,689 tokens
   (`transcripts/no06_24all.tok`). Homophonic anneal (homsolve2, Italian, order 3-4-5, 4 x 6 restarts): no
   convergence (-2.93/token); null-aware solver (homsolve3) running.
+
+## Solver calibration (24 Sept)
+
+homsolve2.py breaks a synthetic Italian homophonic cipher of the same size (2,673 tokens, 58 signs, 3% nulls)
+perfectly (-1.74/token). The real nos. 6/24 and 20/23 stay at -2.9/token under every variant tried (Italian, Latin,
+Catalan, Spanish; f-groups merged; 'p p' merged or dropped; crossed or superscripted signs as nulls; null-aware
+homsolve3). So these two systems are not plain homophonic letter substitution as transcribed: expect syllabic or
+code signs (nomenclator), polyphony, or look-alike signs merged/split by the transcribers.
+
+## Remaining gaps
+
+| piece | tokens | blocker / state |
+|---|---|---|
+| no. 1 (1421), nos. 2, 26, 27, 28 | - | not photographed on DECODE (needs-physical-access: ASSi) |
+| nos. 6 + 24 (one system) | ~4,300 | workable: not plain homophonic; needs sign-inventory audit + syllable/code model |
+| nos. 20 + 23 (one system) | ~4,900 | workable: same; 'f' + o^n / a / o groups behave as units |
+| no. 14 doubtful/unread words | ~530 of 1,291 | partly illegible at DECODE resolution; rest workable (rarer signs) |
+| no. 4 unread signs | 19 of 144 | rare signs, too few occurrences |
+| no. 7 | 363 | gloss key partial (9 values); workable with better transcription |
+| no. 11 (Florentine 1478) | 409 | no key in reach (Gabbrielli vol. I has no Donato Acciaiuoli key) |
+| no. 17 (1528, Balìa cipher) | 282 | too short ciphertext-only; the Balìa key not identified in fasc. 1 |
+| nos. 9, 19, 21, R4794 | 46-170 | too short ciphertext-only; no matching filed key found |
+| nos. 15, 18, 22, 29 | - | not yet transcribed |
+
+## Escalation
+
+- Siblings: nos. 6/24 and 20/23 pooled; no. 7 vs R4750 (no); no. 4 vs six 1450s keys (no; own fragment used).
+- Clear pages: no. 16 = decipherment of no. 13; no. 8 decipherment on the sheet; glosses on nos. 4, 7, 10 used.
+- Known keys: all alphabet keys of fasc. 1 compared by eye with the letters' sign sets; R4750, R4753, R4754,
+  R4756, R4757, R4762 transcribed and tested on no. 4 and no. 7; R4760, R4768, R4778 on nos. 17 and 20.
+- Print: Senatore 2009 (no. 4 identified); Meister 1902 (numbering); no printed decipherment found.
+- Next: (1) re-transcribe nos. 6/24 and 20/23 with one transcriber and a fixed sign inventory, then test a
+  syllable/nomenclator model; (2) transcribe nos. 15, 18, 22, 29; (3) ask ASSi for photos of no. 1 (1421) and
+  nos. 2, 26-28.
