@@ -9614,3 +9614,23 @@ name what the object shows by drawing it; the text-picture link found in sets 23
 phrase goes with a picture), not pictographic. This closes the most direct route to sign-level checked meaning with
 the material at hand: strict V stays 0.008%. No progress: streak 2. Tally, counting parts: 1429 held, 1316 failed
 (2745 registered).
+
+# Two-hundred-and-fifty-third set, registered before testing (25 September 2026): decipherment loop 78, the main findings on the damaged texts (six hypotheses)
+
+Streak 2. The full ICIT export was in use all along (correction of 25 Sept); the analyses used only its clean texts.
+Sample D (`damaged.py`): the legible runs of 2+ signs in the 1,999 damaged texts, cut at gaps, runs found intact inside
+any clean text dropped as copies: 435 runs, 1,501 signs, 427 objects, never used by any test so far. Only relations
+inside a run are used (an open end means the neighbour is unknown). Re-tests:
+
+- **DM1** Order is predictable: bits per interior sign under the clean-data model (famlm, MODEL, trained on all clean
+  distinct lines) are lower for D runs than for the same runs shuffled within themselves (20 shuffles, paired sign test
+  over runs, p < 0.05).
+- **DM2** The cage: caged signs with a following sign inside the run are followed by 740 / 520 in 5% of cases or fewer.
+- **DM3** Stroked jars (741, 742, 745) are followed by another sign inside the run more often than the plain jar 740
+  (one-sided Fisher p < 0.05).
+- **DM4** Fish heads take 520 more often than other identified heads (sign directly before 740 / 520 inside a run;
+  set 178 depiction classes; one-sided Fisher p < 0.05).
+- **DM5** Signs directly before a numeral run inside a run are concentrated like the count label (top-ten share above
+  95% of 1,000 within-run shuffles).
+- **DM6** Progress rule: none of these moves a bench component; all holding is consistency evidence on a new sample,
+  recorded as such (no progress unless a component moves).
