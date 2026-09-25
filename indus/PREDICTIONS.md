@@ -10835,3 +10835,13 @@ easy case the method was built for: an administrative line names its commodity n
 tablets' texts are tied to their pictures far more loosely: the referent units are real (sets 290, 309) but a unit
 predicts its picture on a new tablet only a quarter to under half of the time. Stated in the PROGRESS tier 1 cell.
 Progress: none (streak 3). Tally, counting parts: 1521 held, 1431 failed (2952 registered).
+
+# Three-hundred-and-eleventh set, registered before testing (25 September 2026): decipherment loop 136, tags and SEAL:C as referent pools (three hypotheses)
+
+Streak 3. The referent method uses two tablet pools. Two small pictured pools are added with set 307's configuration:
+tags (TAG and subtypes, 59 clean objects, mostly Bull1 and elephant) and SEAL:C / SEAL:CY (16, 13 gaur). Combined FDR
+against 100 picture shuffles; coverage on the real tokens (`predict_test311.py`). Not measured before registering.
+
+- **TP1** The combined FDR is at or below 10%.
+- **TP2** Coverage rises above 2.28%.
+- **TP3** Progress rule: TP1 and TP2 hold (the new pools join).
