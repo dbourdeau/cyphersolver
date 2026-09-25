@@ -239,3 +239,15 @@ def parse10(t, heads, hc, mc, labels, low, endp):
     if len(t) >= 3 and t[0] in ('817', '820', '861') and t[1] in ('2', '60', '1') and all(lexical(g) for g in t[2:]):
         return 'heading-body'
     return None
+
+
+def parse11(t, heads, hc, mc, labels, low, endp, openp):
+    """parse10 plus OPEN-PRONE (set 264): 2+ lexical signs, the first opening 50%+ of its 5+ A occurrences (`openp`), the
+    last heading a name at least once."""
+    lab = parse10(t, heads, hc, mc, labels, low, endp)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) >= 2 and all(lexical(g) for g in t) and t[0] in openp and t[-1] in heads:
+        return 'open-prone'
+    return None

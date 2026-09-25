@@ -123,7 +123,7 @@ def grammar_coverage(DL):
 def grammar_margin(DL):
     # set 193: G margin = share of real lines parsed by G2 minus share of the same lines parsed after shuffling
     # set 216 (GL1-GL3): + LABEL-COUNT, labels = A's ten commonest pre-count signs
-    from grammar import head_stats, heads_from, lexical, margin, parse10
+    from grammar import head_stats, heads_from, lexical, margin, parse11
     from predict_test215 import slots
     from signs import load
     heads = heads_from(DL)
@@ -136,7 +136,9 @@ def grammar_margin(DL):
     low = {g for g in occ if occ[g] >= 3 and hd[g] / occ[g] < 0.05 and lexical(g)}
     last = Counter(t[-1] for t in DA)
     endp = {g for g in occ if occ[g] >= 5 and last[g] / occ[g] >= 0.5 and lexical(g)}
-    f = lambda t: parse10(t, heads, hc, mc, labels, low, endp) is not None  # sets 221 (EDGE-DOUBLE), 222 (CAGED-POST), 250 (LOW-POST), 261 (CAGE-OPEN), 262 (END-PRONE), 263 (BODY-400, HEADING-BODY)
+    first = Counter(t[0] for t in DA)
+    openp = {g for g in occ if occ[g] >= 5 and first[g] / occ[g] >= 0.5 and lexical(g)}
+    f = lambda t: parse11(t, heads, hc, mc, labels, low, endp, openp) is not None  # sets 221 (EDGE-DOUBLE), 222 (CAGED-POST), 250 (LOW-POST), 261 (CAGE-OPEN), 262 (END-PRONE), 263 (BODY-400, HEADING-BODY), 264 (OPEN-PRONE)
     return margin(DL, f), margin(DB, f)
 
 

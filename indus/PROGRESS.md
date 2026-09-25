@@ -20,7 +20,7 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 85.1% / 77.0% (no-prefix profile, set 220); no candidate beats the decoys inside the remaining groups (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.4% (frequency 0% / 1.3%) |
 | 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 39.7% / 61.8% (two-direction model, set 204; discounted contexts, sets 210-211; frequency 9.6% / 22.4%) |
-| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 84.2%, G 49.2 / 36.9, M+ 41.4% |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 84.2%, G 49.6 / 37.4, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
 
@@ -159,3 +159,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 86 | 261 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: CAGE-OPEN (a caged sign opens the line, a name follows) raises the margin A 47.6 to 47.9, B 36.3 to 36.5; MID-POST and NAME-NAME parse shuffles as well as real lines, rejected (progress; streak 0) |
 | 87 | 262 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: END-PRONE (body + a sign that ends most of its lines: 405 407 526 298 215 423 64 137 136 155) raises the margin A 47.94 to 48.31, B only 36.47 to 36.48 (marginal replication); CLOSER-740 and TWO-BARE rejected (progress; streak 0) |
 | 88 | 263 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: BODY-400 (3+ lexical signs + 400) and HEADING-BODY (heading unit + lexical body) raise the margin A 48.31 to 49.21, B 36.48 to 36.92; NUM-END lowers both (a count is not written after its label) (progress; streak 0) |
+| 89 | 264 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | G: OPEN-PRONE (lexical line opened by an opening-prone sign, closed by a name head) raises the margin A 49.21 to 49.64, B 36.92 to 37.39; LABEL-ANY and NAME-TAIL parse shuffles, rejected (progress; streak 0) |

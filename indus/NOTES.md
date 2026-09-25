@@ -2745,6 +2745,12 @@ replication, recorded as such). CLOSER-740 and TWO-BARE rejected. Progress (stre
 Registered first (7180b8a3a). BODY-400 and HEADING-BODY join the grammar (parse10): margin A 48.31 -> 49.21, B 36.48 ->
 36.92. NUM-END lowers both and is rejected. Progress (streak 0). Tally 1448 held, 1341 failed.
 
+## Two-hundred-and-seventy-eighth pass (25 Sept 2026): decipherment loop 89, three more grammar rules
+
+Registered first (1e8286fac). OPEN-PRONE joins the grammar (parse11): margin A 49.21 -> 49.64, B 36.92 -> 37.39.
+LABEL-ANY and NAME-TAIL rejected (both confirm earlier limits: frequent labels only; nothing but 400 / 90 after a name).
+Progress (streak 0). Tally 1450 held, 1343 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

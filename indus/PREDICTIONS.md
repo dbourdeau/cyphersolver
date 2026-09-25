@@ -9886,3 +9886,12 @@ measured before registering.
 - **GL2** NAME-TAIL, the same.
 - **GL3** OPEN-PRONE, the same.
 - **GL4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-sixty-fourth set (added after the test; `predict_test264.py`, `results/predict_test264.md`, `grammar.parse11`)
+
+Two held, two failed. OPEN-PRONE (2+ lexical signs, the first an opening-prone sign, the last a name head) raises the
+margin A 49.21 -> 49.64, B 36.92 -> 37.39: short lexical lines are framed at both edges, an opening sign and a head,
+even without an ending. LABEL-ANY lowers both margins (47.73, 35.27): only the frequent labels stand before counts (as
+set 215 found), and NAME-TAIL lowers them sharply (43.90, 33.16): nothing but 400 / 90 follows a name. The grammar
+becomes parse11; `progress.grammar_margin` uses it. Progress: G margin rises (streak 0). Tally, counting parts: 1450
+held, 1343 failed (2793 registered).
