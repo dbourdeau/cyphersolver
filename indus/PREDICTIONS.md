@@ -11432,3 +11432,12 @@ excess replaces the vault line; no progress either way. Not measured before regi
 - **VD1** The vault stays above chance with mould copies counted once (p < 0.05).
 - **VD2** Its excess over the shuffle median is at least set 298's +64.
 - **VD3** Progress rule: none (a correction; recorded as failing).
+
+## Results of the three-hundred-and-forty-first set (added after the test; `predict_test341.py`, `results/predict_test341.md`)
+
+One held, two failed (VD3 is the non-progress rule). Counting the moulded tablets' copies once (359 objects -> 152
+designs), the vault predicts 165 held-out observations and gets 46 right (27.9%) against a shuffle median of 5 (p =
+0.005; VD1); the excess falls from +64 to +41 (VD2 fails). As registered, +41 replaces the vault line (PROGRESS tier 3
+cell). The vault survives the correction well: text predicts picture on held-out designs far above chance, in contrast
+with the tier 1 list whose held-out precision is 5% (set 340); the vault votes with many loose units, which is what
+reaches held-out designs. Progress: none (streak 2). Tally, counting parts: 1565 held, 1483 failed (3048 registered).

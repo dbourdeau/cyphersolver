@@ -3147,6 +3147,11 @@ units). Progress (streak 0). Tally 1563 held, 1479 failed.
 Registered first (d686846bb). Confirmed (114 against 45, p = 0.015) but held-out precision 5%. No progress (streak 1).
 Tally 1564 held, 1481 failed.
 
+## Three-hundred-and-fifty-fifth pass (25 Sept 2026): decipherment loop 166, the picture vault with mould copies counted once
+
+Registered first (9528042f7). 46 of 165 held-out designs right against a median of 5 (p = 0.005); excess +41 replaces
++64. No progress (streak 2). Tally 1565 held, 1483 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
