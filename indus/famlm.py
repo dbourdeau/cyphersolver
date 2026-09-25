@@ -4,7 +4,7 @@ import itertools
 from collections import Counter, defaultdict
 
 from predict_test122 import split
-from predict_test125 import M2, pcls, xent
+from predict_test125 import M2, dend, pcls, xent
 
 
 def fam(g):
@@ -57,6 +57,13 @@ class M3(M2):
             p3 = (max(c[w] - 0.5, 0) / n3 + 0.5 * len(c) / n3 * r['fbi']) if n3 else r['fbi']
             r['f4k'] = (max(c4[w] - 0.5, 0) / n4 + 0.5 * len(c4) / n4 * p3) if n4 else p3
             r['firstpos'] = self.sm(self.fpos[(s[2], pcls(i - 2, len(t) + 1))], w)
+            # set 218: position and distance-from-end absolutely discounted (D = 0.5) onto the add-0.5 unigram
+            U = self.c['uni']
+            pu = (U[w] + 0.5) / (sum(U.values()) + 0.5 * self.V)
+            for key, ctx in (('endk', ('end', dend(i - 2, len(t) + 1))), ('posk', ('pos', pcls(i - 2, len(t) + 1)))):
+                cc = self.c[ctx]
+                mm = sum(cc.values())
+                r[key] = (max(cc[w] - 0.5, 0) / mm + 0.5 * len(cc) / mm * pu) if mm else pu
             if i == 2:
                 r['first2'] = r['first']
             else:

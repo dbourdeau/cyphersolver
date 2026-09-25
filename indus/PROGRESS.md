@@ -112,3 +112,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 40 | 215 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | the slot before a count is restricted in A and B (also without heading lines): new role 'count label', R 81.3% to 84.2% (progress; streak 0) |
 | 41 | 216 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | LABEL-COUNT grammar rule: G margin A 46.2 to 46.6, B 34.7 to 35.1, F up; real more than shuffled (progress; streak 0) |
 | 42 | 217 | 4.610 (26.5%; 4.573 with first2, not adopted) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | first two signs as context lowers S but SIGN falls (39.8% to 38.5%): not adopted (no progress; streak 1) |
+| 43 | 218 | 4.610 (26.5%; 4.571 with posk/endk, not adopted) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | discounted position/end lower S but SIGN slips (39.8% to 39.5%): not adopted; S and SIGN now diverge (no progress; streak 2) |

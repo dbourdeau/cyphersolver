@@ -8881,3 +8881,11 @@ things worse at this data size; not registered.)
 - **PK2** The same A -> B.
 - **PK3** SIGN top-1 on the fixed test does not fall.
 - **PK4** Progress rule: PK1, PK2 and PK3 hold.
+
+## Results of the two-hundred-and-eighteenth set (added after the test; `predict_test218.py`, `results/predict_test218.md`, `famlm.py` posk / endk)
+
+Two held, two failed. Discounting the position and distance-from-end components onto the unigram lowers S on the
+fixed test from 4.6097 to 4.5706 (PK1) and A -> B from 5.1544 to 5.1224 (PK2), but SIGN top-1 falls from 39.8% to
+39.5% (PK3 fails), so by the registered rule it is not adopted: no progress, streak 2. As in sets 214 and 217, S keeps
+improving while the SIGN task stays near 39-40%: better calibrated probabilities do not change which candidate ranks
+first. Tally, counting parts: 1368 held, 1253 failed (2621 registered).
