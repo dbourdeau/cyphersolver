@@ -8831,3 +8831,13 @@ element 2 is read as a numeral; with those lines left out the slot is still rest
 0.013). Heading tokens already have a role; the new role 'count label' adds the other pre-count signs: R rises from
 81.3% to 84.2% (344 tokens). Progress (CT5): streak 0. Tally, counting parts: 1360 held, 1249 failed (2609
 registered).
+
+# Two-hundred-and-sixteenth set, registered before testing (24 September 2026): decipherment loop 41, the count label in the grammar (four hypotheses)
+
+Metric after loop 40: R 84.2%, G margin A 46.2 / B 34.7; streak 0. A grammar rule for set 215's finding: LABEL-COUNT
+= one of A's ten commonest pre-count signs + a line that G2 parses as a count. Design on A: margin 46.2 -> 46.6.
+
+- **GL1** G2 + LABEL-COUNT raises the margin over shuffled lines on B (any rise).
+- **GL2** It raises coverage of real B lines more than of shuffled B lines.
+- **GL3** It raises the margin on F's extra lines (any rise).
+- **GL4** Progress rule: GL1 and GL2 hold (the G margin component rises on the independent sample).
