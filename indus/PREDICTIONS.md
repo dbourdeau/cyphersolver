@@ -11247,3 +11247,16 @@ All four held. Alpha 0.0025: 412 units, FDR 8.5%, coverage 23.77% (7.85% without
 11.8%. The rule chooses 0.0025 (SF1, SF2); the Linear B control passes (SF3). A small step. (Two labels in the script
 read SA1 / SA3 and its docstring named the wrong results file; corrected in text only.) `prizebench.referent_fixed`
 uses alpha 0.0025. Progress: streak 0. Tally, counting parts: 1551 held, 1464 failed (3015 registered).
+
+# Three-hundred-and-thirty-third set, registered before testing (25 September 2026): decipherment loop 158, site-stratified base rates for the referent pool (four hypotheses)
+
+Streak 0. The combined pool's units, most of them for the default seal bull, are tested against the pool-wide share of
+each picture. If picture shares differ between sites, a phrase common at a bull-heavy site passes as a bull referent.
+Here a unit's expected share is the mean of its objects' own-site shares (binomial with that mean), and the FDR comes
+from shuffles of the pictures within each site (`predict_test333.py`). A validation: the stratified figures replace the
+current ones (23.77% / 7.85% without Bull1 units) if lower; no progress either way. Not measured before registering.
+
+- **ST1** The site-stratified FDR is at or below 10%.
+- **ST2** The stratified coverage is at least 23.77%.
+- **ST3** The stratified coverage without Bull1 units is at least 7.85%.
+- **ST4** Progress rule: none (validation; recorded as failing).
