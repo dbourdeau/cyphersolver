@@ -10762,3 +10762,11 @@ criterion (single signs, skip-pairs and the four family kinds) are tried at an i
 
 - **MI1** The combined FDR is at or below 10% and coverage rises above 1.89%.
 - **MI2** Progress rule: MI1 holds (the intermediate criterion replaces 80%+ for these kinds).
+
+## Results of the three-hundred-and-seventh set (added after the test; `predict_test307.py`, `results/predict_test307.md`)
+
+Both held. With single signs, skip-pairs and the four family kinds at 3+ objects and 67%+ (pairs and 3-sign runs
+unchanged), the method finds 185 units, FDR 7.8%, coverage 1.89% -> 2.28% (MI1). Caution: sets 287-307 tuned the
+criteria step by step against the same kind of FDR estimate; each step passed its own test, but the sequence as a whole
+needs an independent check (next set). Progress: referent line rises (streak 0). Tally, counting parts: 1516 held, 1427
+failed (2943 registered).

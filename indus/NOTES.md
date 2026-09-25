@@ -2971,6 +2971,11 @@ Registered first (30f5fa6ee). 119 units, FDR 8.3%; referent line 1.80% -> 1.87%.
 Registered first (b0487107c). 136 units, FDR 6.7%; referent line 1.87% -> 1.89%. Progress, small (streak 0). Tally 1514
 held, 1427 failed.
 
+## Three-hundred-and-twenty-first pass (25 Sept 2026): decipherment loop 132, strict-tier referent units at an intermediate criterion
+
+Registered first (6c990acde). 185 units, FDR 7.8%; referent line 1.89% -> 2.28%. The step-by-step tuning since set 287
+needs an independent check before any further loosening. Progress (streak 0). Tally 1516 held, 1427 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

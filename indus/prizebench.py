@@ -105,7 +105,7 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True):
             u[(lab, 1)] = X.q_pairs(both, singles[0], singles[1], 1)
     if families:  # set 304 (SF1-SF3): pairs and 3-sign runs over description families, 3+ objects, 80%+; FDR 9.6%
         from predict_test304 import coverage
-        from predict_test306 import more  # sets 305-306: + strict skip-pairs, family single signs and skip-pairs; FDR 6.7%
-        u = more(P)
+        from predict_test307 import mid  # sets 305-307: + skip-pairs and all family kinds; set 307: these kinds at 3+ objects, 67%+; FDR 7.8%
+        u = mid(P)
         return coverage(DL, P, u), X.count(u)
     return X.coverage(DL, P, u), X.count(u)
