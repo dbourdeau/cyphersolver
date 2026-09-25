@@ -9603,3 +9603,14 @@ against the share among other pictured texts (one-sided Fisher). Two independent
 - **PC5** At least one class holds in one sample and in the other at p < 0.10 (reported).
 - **PC6** Progress rule: any of PC1-PC4 holds; the signs of that class enter strict V as depiction-checked meanings
   (their tokens counted, as the copper-tablet anchors are).
+
+## Results of the two-hundred-and-fifty-second set (added after the test; `predict_test252.py`, `results/predict_test252.md`)
+
+None held. A sign's drawing does not match the picture on its object. Fish signs are, if anything, rarer on texts with
+a fish picture (individually made 1 of 12 against 21 of 61; moulded 1 of 6 against 28 of 121; PC2); human-figure and
+animal signs show no match either (PC3, PC4); plant signs come closest, on moulded tablets only (10 of 19 tree texts
+against 34 of 108, p = 0.066; the individually made tablets have 2 tree texts; PC1). **Reading:** the texts do not
+name what the object shows by drawing it; the text-picture link found in sets 233-243 is lexical (a whole text or
+phrase goes with a picture), not pictographic. This closes the most direct route to sign-level checked meaning with
+the material at hand: strict V stays 0.008%. No progress: streak 2. Tally, counting parts: 1429 held, 1316 failed
+(2745 registered).

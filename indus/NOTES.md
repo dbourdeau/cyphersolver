@@ -2679,6 +2679,12 @@ Registered first (01345b4a3). LOW-POST raises the G margin slightly (B 36.0 -> 3
 Registered first (2eae7b468). SINGLE-DOUBLE and 550-END do not generalise to B or F. Not adopted. No progress: streak
 1. Tally 1429 held, 1310 failed.
 
+## Two-hundred-and-sixty-sixth pass (25 Sept 2026): decipherment loop 77, sign drawing vs object picture
+
+Registered first (a8f2c21ae). Owner asked whether checked meaning can grow. Signs do not depict the object's picture
+(fish signs even avoid fish pictures); plant signs near only on moulded tablets (p = 0.066). The text-picture link is
+lexical, not pictographic. No progress: streak 2. Tally 1429 held, 1316 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
