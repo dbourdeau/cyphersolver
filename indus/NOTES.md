@@ -2961,6 +2961,11 @@ FDR 9.1%; referent line 1.46% -> 1.62%. Progress (streak 0). Tally 1507 held, 14
 Registered first (be6c78ed7). Both pass under the stricter criterion; family units adopted (FDR 9.6%): referent line
 1.62% -> 1.80%. Progress (streak 0). Tally 1510 held, 1427 failed.
 
+## Three-hundred-and-nineteenth pass (25 Sept 2026): decipherment loop 130, strict skip-pairs with the family units
+
+Registered first (30f5fa6ee). 119 units, FDR 8.3%; referent line 1.80% -> 1.87%. Progress (streak 0). Tally 1512 held,
+1427 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

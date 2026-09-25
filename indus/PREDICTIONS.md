@@ -10730,3 +10730,9 @@ before registering.
 
 - **SB1** The combined FDR is at or below 10% and coverage rises above 1.80%.
 - **SB2** Progress rule: SB1 holds (strict skip-pairs join the referent units).
+
+## Results of the three-hundred-and-fifth set (added after the test; `predict_test305.py`, `results/predict_test305.md`)
+
+Both held. Strict skip-pairs added to set 304's units give 119 units, FDR 8.3% (below either kind's alone: the
+stricter units are cleaner), coverage 1.80% -> 1.87%. `prizebench.referent_fixed` now uses them. Progress: referent
+line rises (streak 0). Tally, counting parts: 1512 held, 1427 failed (2939 registered).
