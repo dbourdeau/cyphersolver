@@ -9147,3 +9147,13 @@ All three held. Fish-headed names take 520 far more often than other identified-
 against 4 of 156; FT1) and on tablets (14 of 33 against 1 of 47; FT2). With set 196 (sites, periods): the class
 signal holds across places, periods and object types. Progress: streak 0. Tally, counting parts: 1399 held, 1271
 failed (2670 registered).
+
+# Two-hundred-and-thirty-first set, registered before testing (24 September 2026): decipherment loop 56, the count-label slot in each city (three hypotheses)
+
+Streak 0. Set 215 found the slot before a count restricted in A and in B. Per city (F distinct count lines of
+Mohenjo-daro and of Harappa), with set 215's statistic and shuffle null (1,000 shuffles of non-numeral signs within
+lines):
+
+- **CC1** At Mohenjo-daro the pre-count slot is more concentrated than in shuffled lines (p < 0.05).
+- **CC2** The same at Harappa.
+- **CC3** Progress rule: CC1 and CC2 hold (the count label is shared by both cities: tier 4).
