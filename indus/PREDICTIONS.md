@@ -9842,3 +9842,13 @@ Margins not measured before registering.
 - **GE2** CLOSER-740, the same.
 - **GE3** TWO-BARE, the same.
 - **GE4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-sixty-second set (added after the test; `predict_test262.py`, `results/predict_test262.md`, `grammar.parse9`)
+
+Two held, two failed. Ten signs end half or more of their 5+ A occurrences without being endings or closers (405 407
+526 298 215 423 64 137 136 155). END-PRONE (lexical body + one of them) raises the A margin 47.94 -> 48.31 and the B
+margin 36.47 -> 36.48: GE1 holds as registered, but the B replication is 0.01 point, so the rule is adopted as weak (on
+B the end-prone signs close as many shuffled lines as real ones). CLOSER-740 lowers both margins (47.83, 36.37) and
+TWO-BARE raises B (36.59) but A only 0.02 point: both rejected. The grammar becomes parse9 = parse8 + END-PRONE (the
+end-prone set learned from A); `progress.grammar_margin` uses it. Progress: G margin A rises (streak 0). Tally, counting
+parts: 1445 held, 1340 failed (2785 registered).

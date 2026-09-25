@@ -215,3 +215,14 @@ def parse8(t, heads, hc, mc, labels, low):
     if len(t) >= 3 and t[0] in CAGED and parse6(t[1:], heads, hc, mc, labels, low) in ('name', 'formula', 'bare'):
         return 'cage-open'
     return None
+
+
+def parse9(t, heads, hc, mc, labels, low, endp):
+    """parse8 plus END-PRONE (set 262): lexical body + a sign that ends 50%+ of its 5+ A occurrences (`endp`)."""
+    lab = parse8(t, heads, hc, mc, labels, low)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) >= 2 and t[-1] in endp and all(lexical(g) for g in t[:-1]):
+        return 'end-prone'
+    return None

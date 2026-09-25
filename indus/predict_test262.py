@@ -44,12 +44,12 @@ def main():
         g = lambda t, f=f: base(t) or f(tuple(t))
         a, b = margin(DL, g), margin(DB, g)
         ok = a - mA >= 0.003 and b > mB
-        rd.rec('GE%d' % (k + 1), '%s raises the margin on A by 0.3 point or more and on B' % name, 'A %.1f -> %.1f; B %.1f -> %.1f' % (100 * mA, 100 * a, 100 * mB, 100 * b), ok)
+        rd.rec('GE%d' % (k + 1), '%s raises the margin on A by 0.3 point or more and on B' % name, 'A %.2f -> %.2f; B %.2f -> %.2f' % (100 * mA, 100 * a, 100 * mB, 100 * b), ok)
         if ok:
             keep.append(f)
     g = lambda t: base(t) or any(f(tuple(t)) for f in keep)
     a, b = margin(DL, g), margin(DB, g)
-    rd.rec('GE4', 'progress rule: the held rules together raise the margin on A (0.3+) and B', 'A %.1f -> %.1f; B %.1f -> %.1f (%d rules)' % (100 * mA, 100 * a, 100 * mB, 100 * b, len(keep)), bool(keep) and a - mA >= 0.003 and b > mB)
+    rd.rec('GE4', 'progress rule: the held rules together raise the margin on A (0.3+) and B', 'A %.2f -> %.2f; B %.2f -> %.2f (%d rules)' % (100 * mA, 100 * a, 100 * mB, 100 * b, len(keep)), bool(keep) and a - mA >= 0.003 and b > mB)
     rd.finish()
 
 

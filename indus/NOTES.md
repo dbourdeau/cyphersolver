@@ -2735,6 +2735,11 @@ Registered first (e22280d07). CAGE-OPEN (caged sign + name) raises the G margin 
 the grammar (parse8). MID-POST and NAME-NAME parse shuffles as well as real lines and are rejected. Progress (streak 0).
 Tally 1443 held, 1338 failed.
 
+## Two-hundred-and-seventy-sixth pass (25 Sept 2026): decipherment loop 87, three more grammar rules
+
+Registered first (b2e79ff27). END-PRONE joins the grammar (parse9): A margin 47.94 -> 48.31, B 36.47 -> 36.48 (weak
+replication, recorded as such). CLOSER-740 and TWO-BARE rejected. Progress (streak 0). Tally 1445 held, 1340 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
