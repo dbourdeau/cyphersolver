@@ -11209,3 +11209,15 @@ mark a type of seal (a workshop, a class of owner) rather than a word for the bu
 The PROGRESS tier 1 cell gives both figures. `prizebench.referent_fixed` builds the pool as the test does (a first
 version merged part-texts twice and gave 27.0%; fixed before recording). Progress: streak 0. Tally, counting parts:
 1545 held, 1462 failed (3007 registered).
+
+# Three-hundred-and-thirty-first set, registered before testing (25 September 2026): decipherment loop 156, split-half check of the combined referent pool (four hypotheses)
+
+Streak 0. Set 330 raised the referent line to 23.5% (7.5% without the default-bull units). Independent check as sets
+309 and 326: five random half-splits of the distinct texts, both directions, held-out matches against 200 joint
+shuffles, for all units and for the non-Bull1 units separately (`predict_test331.py`). A validation: a failure downgrades
+the matching figure; no progress either way. Not measured before registering.
+
+- **CV1** All units are confirmed on the five split-halves (p < 0.05).
+- **CV2** The units not labelled Bull1 are confirmed (p < 0.05).
+- **CV3** The non-Bull1 units' held-out precision is at least 14% (set 326).
+- **CV4** Progress rule: none (validation; recorded as failing).
