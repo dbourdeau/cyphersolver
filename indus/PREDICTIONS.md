@@ -9033,3 +9033,10 @@ observed direction: tails after a finished name are not name-like.
 - **TL2** In F, the tail signs overall (all positions) have lower head propensity than frequency-matched draws.
 - **TL3** Progress rule: TL1 holds (A's finding replicates on unseen lines); then the tail signs after a mid-line
   ending get the role 'post-name element' in R.
+
+## Results of the two-hundred-and-twenty-fifth set (added after the test; `predict_test225.py`, `results/predict_test225.md`)
+
+None held. F's extra lines give only 20 tails after a mid-line ending; their last signs' head propensity (0.119) is
+not lower than frequency-matched draws (p = 0.38; TL1), nor are the tail signs overall (TL2). Set 223's A result
+does not replicate on B (weak) or F (too few, no effect); it is left as an A-only observation, and no role is added.
+No progress: streak 3. Tally, counting parts: 1380 held, 1268 failed (2648 registered).

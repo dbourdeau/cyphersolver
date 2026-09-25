@@ -2536,6 +2536,11 @@ head-like than any frequency-matched draw. No progress: streak 1. Tally 1380 hel
 Registered first. Forward weight 0.7 lowers SIGN on both samples; equal weights stay. No progress: streak 2. Tally 1380
 held, 1265 failed.
 
+## Two-hundred-and-thirty-ninth pass (24 Sept 2026): decipherment loop 50, the post-name tail on F
+
+Registered first (6158a129d). F has 20 tails, no head avoidance (p = 0.38): set 223's A result does not replicate. No
+progress: streak 3. Tally 1380 held, 1268 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
