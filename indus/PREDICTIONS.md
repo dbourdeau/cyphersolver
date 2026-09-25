@@ -9467,3 +9467,15 @@ significantly. Seals are a larger, unseen sample for this question (field animal
 None held. On seals: - 67 against 64 pairs; means 0.39 and 0.40; rank difference +0.1; p = 0.4943. (FS1 fails). Seal animals are dominated by the one-horned bull, so pair diversity there is low
 for fish and non-fish pairs alike; the tablet direction of set 244 does not replicate on seals. No progress: streak 2.
 Tally, counting parts: 1421 held, 1300 failed (2721 registered).
+
+# Two-hundred-and-forty-sixth set, registered before testing (25 September 2026): decipherment loop 71, phrases tied to what the object was for (three hypotheses)
+
+Streak 2. Tier 1 names the object's function as outside evidence. The picture-referent method (validated on Linear B,
+sets 234-235) with the object's class as the 'picture': seal, tablet, pottery (POT*), tag / sealing (TAG*), other.
+Units: adjacent sign pairs on 3+ objects in 2+ distinct texts; a pair qualifies for a class if 80%+ of its objects
+are of that class. Null: object classes shuffled among objects (F, all inscribed objects with text), 1,000 times.
+Seals and tablets are the default classes; the question is the minority classes.
+
+- **OF1** More pairs qualify for pottery, tags or other objects together than in 95% of shuffles.
+- **OF2** At least two pairs qualify for pottery.
+- **OF3** Progress rule: OF1 holds (phrases tied to an object's function; tier 1 evidence, reported beside V).
