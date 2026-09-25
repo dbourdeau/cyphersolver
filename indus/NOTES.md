@@ -3126,6 +3126,12 @@ copies counted as independent objects. The counting flaw affects sets 325-335; c
 distinct texts (designs), not objects, when mould copies share a picture. No progress (streak 1). Tally 1557 held,
 1473 failed.
 
+## Three-hundred-and-fifty-first pass (25 Sept 2026): decipherment loop 162, the referent pool counted by distinct text
+
+Registered first (66692f976). Counted by distinct text: 39 units, FDR 50.3%, line 1.09% (replacing 13.64% as
+registered). The binomial growth rested on copies counted as independent objects. Next: collapse only mould copies and
+impressions. No progress (streak 2). Tally 1557 held, 1477 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -110,7 +110,8 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
         _S.ALPHA = 0.005  # set 335 (SL1-SL4): FDR 8.1%, Linear B passes
         clean, both = site_objects(F, recs)
         P = {'made': ([(t, m) for t, m, s in clean], [(t, m) for t, m, s in both])}
-        u = su(clean, both)
+        from predict_test337 import distinct  # set 337: counted by distinct text (mould copies were counted as independent)
+        u = su(distinct(clean), distinct(both))
         if no_bull:
             u = {k: {g: m for g, m in v.items() if m != 'Bull1'} for k, v in u.items()}
         return coverage(DL, P, u), X.count(u)

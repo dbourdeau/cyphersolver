@@ -11345,3 +11345,16 @@ progress either way. Not measured before registering.
 - **DT2** Coverage is at least 13.64%.
 - **DT3** Without Bull1 units, at least 6.84%.
 - **DT4** Progress rule: none (a correction; recorded as failing).
+
+## Results of the three-hundred-and-thirty-seventh set (added after the test; `predict_test337.py`, `results/predict_test337.md`)
+
+All four failed. Counting each distinct text once (2,225 objects -> 1,438 distinct texts), the stratified binomial
+configuration at alpha 0.005 finds 39 units (2 Bull1) and the shuffles about half as many: FDR 50.3% (DT1 fails);
+coverage 1.09% (0.99% without Bull1 units). The growth of the line in sets 325-335 rested on copies counted as
+independent objects. As registered, the lower figures replace the current ones: the tier 1 referent line is 1.09%,
+with an FDR that no longer supports it. Two cautions: (1) signal across distinct texts exists (the split-halves of
+sets 309, 326, 331 split by distinct text, and the vault excludes copies, all far above chance), so the strict
+per-text binomial at alpha 0.005 may be underpowered; (2) collapsing every copy also merges independent evidence
+(seals carved separately, copper tablets written one by one); only mould copies and seal impressions are true
+duplicates. Next set: collapse only those. Progress: none (streak 2). Tally, counting parts: 1557 held, 1477 failed
+(3034 registered).
