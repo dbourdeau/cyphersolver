@@ -10629,3 +10629,14 @@ cities. The registration should have excluded the catch-all codes (Mult, Scene, 
 in-pool vault (set 294) shows its hits are referents (bull 30, plant 20, fish 7; Mult 2), so that line stands, resting
 on three pictures. Progress: none (streak 1). Tally, counting parts: 1503 held, 1419 failed (2922 registered; this
 set's three 'held' are withdrawn in the text).
+
+# Three-hundredth set, registered before testing (25 September 2026): decipherment loop 125, referent units over sign families (three hypotheses)
+
+Streak 1. If one word is written with graphic variants of a sign, exact-sign units split it and each part may fall
+short of the criterion. Texts are mapped to Parpola's description families (descfam, set 208; unmapped signs keep their
+id) before the units (pairs, 3-sign runs) are formed; set 287's criterion and FDR rule; coverage on the real tokens
+(`predict_test300.py`). Not measured before registering.
+
+- **FV1** Family units keep FDR at or below 10%.
+- **FV2** Coverage rises above the sign units' 1.46%.
+- **FV3** Progress rule: FV1 and FV2 hold (the referent line uses family units).
