@@ -10965,3 +10965,13 @@ All three failed. On the development split every beta gives 4 of 218 names in th
 (WP2 fails); on the test lines the two-direction scorer stays at 10 of 232 (4.3%; WP1 fails). The model's line
 probability already carries the body's frequency. The WORD task is capped by the 54 test names seen whole in training.
 Progress: none (streak 3). Tally, counting parts: 1531 held, 1441 failed (2972 registered).
+
+# Three-hundred-and-eighteenth set, registered before testing (25 September 2026): decipherment loop 143, BODY-90 and SHORT-90 (three hypotheses)
+
+Streak 3. BODY-400 (set 263) found 400 closing a longer lexical body; 90 stands where 400 does after endings. Rules
+(`predict_test318.py`, on top of parse11): BODY-90 (3+ lexical signs + 90), SHORT-90 (1-2 lexical signs + 90). Scored
+by the G margin on A and B. Not measured before registering.
+
+- **G91** BODY-90 raises the margin on A by 0.3 point or more and raises it on B.
+- **G92** SHORT-90, the same.
+- **G93** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
