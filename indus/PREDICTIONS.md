@@ -8774,3 +8774,12 @@ One held, three failed. Add-0.3 smoothing of the count components lowers S on th
 but raises it A -> B (5.1927 -> 5.2177; SM2 fails) and lowers SIGN top-1 (39.7% -> 39.2%; SM3 fails): lighter
 smoothing overfits the contexts of one sample, and B's new lines have more unseen ones. Not adopted (famlm.M3.K
 stays 1). No progress: streak 1. Tally, counting parts: 1349 held, 1247 failed (2596 registered).
+
+## Results of the two-hundred-and-thirteenth set (added after the test; `predict_test213.py`, `results/predict_test213.md`)
+
+All four held. A component conditioned on the line's opening sign lowers S on the fixed test from 4.6354 to 4.6097
+(gain 0.026; FS1) and A -> B from 5.1927 to 5.1557 (gain 0.037; FS2); SIGN top-1 holds (39.7% -> 39.8%; FS3). The
+first sign carries information about the whole line, as the heading and name-opener findings imply (the position
+component's weight falls to zero beside it). first enters the model; the metric run gives S 4.610 (26.5% explained),
+SIGN 39.8% / 62.1%, WORD top-10 3.9%. Progress: streak 0. Tally, counting parts: 1353 held, 1247 failed (2600
+registered).

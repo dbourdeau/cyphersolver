@@ -2476,6 +2476,11 @@ top-10 3.4%. Progress: streak 0. Tally 1348 held, 1244 failed.
 Registered first (dbaeea9e7). Add-0.3 smoothing helps the fixed test but hurts A -> B and SIGN: overfits. Not adopted.
 No progress: streak 1. Tally 1349 held, 1247 failed.
 
+## Two-hundred-and-twenty-seventh pass (24 Sept 2026): decipherment loop 38, the opening sign as context
+
+Registered first (8c602dcd2). Opening-sign component: S 4.635 -> 4.610, A -> B 5.193 -> 5.156; SIGN 39.8% / 62.1%,
+WORD top-10 3.9%. Progress: streak 0. Tally 1353 held, 1247 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
