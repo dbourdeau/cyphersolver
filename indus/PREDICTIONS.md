@@ -9357,3 +9357,13 @@ not independent of that look. The moulded tablets (TAB:B) were not looked at and
 - **GV1** On the individually made tablets, grammatical pairs have higher picture diversity than lexical pairs (p < 0.05).
 - **GV2** On the moulded tablets (TAB:B), the same (p < 0.05).
 - **GV3** Progress rule: GV2 holds (the pictures independently confirm the grammar / lexicon split: tier 1 / 4).
+
+## Results of the two-hundred-and-fortieth set (added after the test; `predict_test240.py`, `results/predict_test240.md`)
+
+Two held, one failed. On the moulded tablets (TAB:B), not looked at before, sign pairs containing a grammatical sign
+(ending, post-ending marker, closer, caged sign, numeral) go with more different pictures than pairs of two lexical
+signs: 0.45 against 0.28 distinct pictures per occurrence (44 and 32 pairs; p = 0.001; GV2). On the individually
+made tablets the direction is the same but weak (0.37 against 0.33, p = 0.29; GV1 fails). **Reading:** outside
+evidence, the pictures, confirms the grammatical analysis from the other side: the signs the grammar calls endings,
+markers and numerals carry no referent of their own, while pairs of content signs stay with one picture. Progress (a
+new finding on an unseen sample): streak 0. Tally, counting parts: 1417 held, 1289 failed (2705 registered).

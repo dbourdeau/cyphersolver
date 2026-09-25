@@ -2616,6 +2616,12 @@ animals: seal texts do not name the animal. No progress: streak 1. Tally 1414 he
 Registered first (d360349aa). Family 5-gram overfits (A -> B worse). Not adopted. No progress: streak 2. Tally 1415
 held, 1288 failed.
 
+## Two-hundred-and-fifty-fourth pass (25 Sept 2026): decipherment loop 65, the pictures check the grammar
+
+Registered first (9994c94eb). On unseen moulded tablets, grammatical pairs go with more pictures than lexical pairs
+(0.45 vs 0.28, p = 0.001): pictures confirm the grammar / lexicon split. Progress: streak 0. Tally 1417 held, 1289
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
