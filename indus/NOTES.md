@@ -3114,6 +3114,11 @@ Registered first (aa8de724d). Stratified by site: 18.99% (6.70% without default-
 Registered first (a620e1067). 12.69% (5.75% without default-bull units), FDR 4.6%; these replace 18.99% / 6.70%. No
 progress (streak 2). Tally 1553 held, 1470 failed.
 
+## Three-hundred-and-forty-ninth pass (25 Sept 2026): decipherment loop 160, the stratified referent pool at looser alphas
+
+Registered first (388a43a65). Alpha 0.005, FDR 8.1%: referent line 12.69% -> 13.64% (5.75% -> 6.84% without
+default-bull units). Progress (streak 0). Tally 1557 held, 1470 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

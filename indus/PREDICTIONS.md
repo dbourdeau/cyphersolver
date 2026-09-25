@@ -11301,3 +11301,10 @@ chosen, with the Linear B control (`predict_test335.py`). Not measured before re
 - **SL2** Without Bull1 units it covers more than 5.75%.
 - **SL3** Linear B with it recovers 2+ of the 4 control words, none wrong.
 - **SL4** Progress rule: SL1 and SL3 hold (the stratified referent line uses that alpha).
+
+## Results of the three-hundred-and-thirty-fifth set (added after the test; `predict_test335.py`, `results/predict_test335.md`)
+
+All four held. Under the site-and-class strata: alpha 0.005 296 units, FDR 8.1%, coverage 13.64% (6.84% without Bull1
+units); 0.01 333, 14.6%; 0.02 398, 22.9%. The rule chooses 0.005 (SL1, SL2); the Linear B control passes (SL3). The
+stratified line rises 12.69% -> 13.64%. `prizebench.referent_fixed` uses alpha 0.005 with the strata. Progress:
+streak 0. Tally, counting parts: 1557 held, 1470 failed (3027 registered).
