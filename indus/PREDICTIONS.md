@@ -9317,3 +9317,12 @@ rate is absorbed by the shuffle null (animals shuffled among seals, 1,000 times)
 - **SR1** More pairs qualify than in 95% of shuffles.
 - **SR2** Excluding the one-horned bull (Bull1), more pairs qualify for the other animals than in 95% of shuffles.
 - **SR3** Progress rule: SR2 holds (a seal phrase fixes a non-default animal; tier 1).
+
+## Results of the two-hundred-and-thirty-eighth set (added after the test; `predict_test238.py`, `results/predict_test238.md`)
+
+One held, two failed. On seals, 189 sign pairs recur on 3+ seals in 2+ texts with one animal on 80%+ of them, above
+the shuffle 95th percentile of 176 (SR1), but every one goes with the one-horned bull, the default animal; for the
+other animals no pair qualifies, as in the shuffles (SR2 fails). Seal phrases do not fix a non-default animal: seal
+texts do not name their animal, as the sign-level tests found. The slight excess with the one-horned bull fits the
+one-horned-bull seals' texts differing somewhat from the others. No progress: streak 1. Tally, counting parts: 1414
+held, 1285 failed (2699 registered).

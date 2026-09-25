@@ -133,3 +133,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 60 | 235 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 2: the picture-referent method passes a Linear B known-answer control (a-mo-ta ROTA, ko-wa MUL): C 3 of 6 (progress; streak 0) |
 | 61 | 236 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | short lines of no genre are not bare names (A p = 0.81, B p = 0.051) (no progress; streak 1) |
 | 62 | 237 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 1: referent method at phrase level (validated level): 11 sign pairs qualify (null 0); referent line 0.38% to 0.61% (progress; streak 0) |
+| 63 | 238 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal phrases qualify only with the default one-horned bull; none fixes another animal (no progress; streak 1) |

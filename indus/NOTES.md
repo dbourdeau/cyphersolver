@@ -2606,6 +2606,11 @@ Registered first (dcc09eb9c). 11 sign pairs have their referent fixed on individ
 elephant, bull, fish, hare, S590 phrases (partly near-duplicate texts). Tier-1 referent line 0.38% -> 0.61%. Progress:
 streak 0. Tally 1413 held, 1283 failed.
 
+## Two-hundred-and-fifty-second pass (25 Sept 2026): decipherment loop 63, the referent method on seals
+
+Registered first (c7c354ef2). Seal phrases qualify only with the one-horned bull (189 vs 176 null 95th); none for other
+animals: seal texts do not name the animal. No progress: streak 1. Tally 1414 held, 1285 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
