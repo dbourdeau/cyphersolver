@@ -10408,3 +10408,17 @@ One held, three failed. The 435 marked runs (1,501 signs) raise S on the fixed t
 split contexts, and short runs add more edge contexts than interior ones; damaged texts do not help the model, as clean
 extra lines did not (set 188). (Recorded after loops 112-113, which ran meanwhile; the streak after loop 111 was 2.)
 Tally, counting parts: 1485 held, 1402 failed (2887 registered).
+
+# Two-hundred-and-eighty-ninth set, registered before testing (25 September 2026): decipherment loop 114, the picture vault with referent units (four hypotheses)
+
+Streak 0. Tier 3 needs meaning checked on texts not used to fix it. The picture vault of sets 201-203 (sign-level
+anchors, leave-one-out) reached 16.9% (p = 0.05). Here, with the calibrated referent units (sets 287-288: sign pairs and
+3-sign runs, 2+ objects in 2+ distinct texts, 67%+ one picture): each pictured tablet is held out, units are learned
+from the other objects of its pool excluding every object with the same text (merged part-texts), and the units in the
+held-out text vote for its picture. Accuracy on the objects that get a prediction, against 200 shuffles of the pictures
+within each pool (`predict_test289.py`). Not measured before registering.
+
+- **PV1** Pooled accuracy is above the 95th percentile of the shuffles.
+- **PV2** Pooled accuracy is 30% or more.
+- **PV3** Each pool (individually made, moulded) is above its shuffle median.
+- **PV4** Progress rule: PV1 and PV2 hold (tier 3 gains a picture-vault line for referents).
