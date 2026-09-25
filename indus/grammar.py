@@ -144,3 +144,14 @@ def margin(lines, f):
     ls = list(lines)
     sh = shuffled(ls)
     return sum(f(t) for t in ls) / max(1, len(ls)) - sum(f(t) for t in sh) / max(1, len(sh))
+
+
+def parse3(t, heads, hc, mc, labels):
+    """G2 plus LABEL-COUNT (set 216): a pre-count label from `labels` followed by a G2 count."""
+    lab = parse2(t, heads, hc, mc)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) >= 3 and t[0] in labels and t[1] in R.NUMS and _parse(t[1:], heads, G2_RULES) == 'count':
+        return 'label-count'
+    return None

@@ -122,12 +122,16 @@ def grammar_coverage(DL):
 
 def grammar_margin(DL):
     # set 193: G margin = share of real lines parsed by G2 minus share of the same lines parsed after shuffling
-    from grammar import head_stats, heads_from, margin, parse2
+    # set 216 (GL1-GL3): + LABEL-COUNT, labels = A's ten commonest pre-count signs
+    from grammar import head_stats, heads_from, margin, parse3
+    from predict_test215 import slots
     from signs import load
     heads = heads_from(DL)
     hc, mc = head_stats(DL)
     DB = sorted({tuple(ln) for r in load(only_m77=True) for ln in r['seq'] if ln})
-    f = lambda t: parse2(t, heads, hc, mc) is not None
+    DA = sorted({tuple(t) for t in R.load_all()[0]})
+    labels = {g for g, v in Counter(sl[0] for sl in (slots(t) for t in DA if genre(t) == 'count') if sl).most_common(10)}
+    f = lambda t: parse3(t, heads, hc, mc, labels) is not None
     return margin(DL, f), margin(DB, f)
 
 

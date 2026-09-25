@@ -2491,6 +2491,11 @@ progress (streak 1). Tally 1356 held, 1248 failed.
 Registered first (533d75f83). The pre-count slot is restricted in A and B (p = 0.001 each; without heading lines p =
 0.036 / 0.013); new role 'count label': R 81.3% -> 84.2%. Progress: streak 0. Tally 1360 held, 1249 failed.
 
+## Two-hundred-and-thirtieth pass (24 Sept 2026): decipherment loop 41, the count label in the grammar
+
+Registered first (38a3af4fe). LABEL-COUNT raises the G margin on B (34.75 -> 35.13) and F (17.34 -> 17.92), real more
+than shuffled. Progress: streak 0. Tally 1364 held, 1249 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -8853,3 +8853,10 @@ the prize tasks slip, so the progress rule now also requires SIGN not to fall.
 - **F22** The same A -> B.
 - **F23** SIGN top-1 on the fixed test does not fall.
 - **F24** Progress rule: F21, F22 and F23 hold (first2 replaces first).
+
+## Results of the two-hundred-and-sixteenth set (added after the test; `predict_test216.py`, `results/predict_test216.md`, `grammar.parse3`)
+
+All four held. The LABEL-COUNT rule (one of A's ten commonest pre-count signs + a count) raises the margin over
+shuffled lines on B from 34.75 to 35.13 points (GL1), real B coverage more than shuffled (+0.75 against +0.37; GL2),
+and the margin on F's extra lines from 17.34 to 17.92 (GL3). Adopted in the metric's G margin. Progress: streak 0.
+Tally, counting parts: 1364 held, 1249 failed (2613 registered).
