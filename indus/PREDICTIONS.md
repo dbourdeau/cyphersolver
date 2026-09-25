@@ -11373,3 +11373,11 @@ registering.
 - **MC2** Coverage is above 1.09%.
 - **MC3** Without Bull1 units, above 0.99%.
 - **MC4** Progress rule: none (recorded as failing).
+
+## Results of the three-hundred-and-thirty-eighth set (added after the test; `predict_test338.py`, `results/predict_test338.md`)
+
+Two held, two failed. With only mould copies and seal impressions collapsed (2,225 objects -> 2,002 observations), the
+stratified binomial at alpha 0.005 finds 121 units (11 Bull1), coverage 3.43% (3.28% without Bull1 units; MC2, MC3),
+but FDR 18.7% (MC1 fails): as registered, set 337's 1.09% stands. The bull units drop from 27 to 11 once mould copies
+count once. A stricter alpha on this principled pool is the next test. Progress: none (streak 3). Tally, counting
+parts: 1559 held, 1479 failed (3038 registered).

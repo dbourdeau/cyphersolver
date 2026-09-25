@@ -3132,6 +3132,11 @@ Registered first (66692f976). Counted by distinct text: 39 units, FDR 50.3%, lin
 registered). The binomial growth rested on copies counted as independent objects. Next: collapse only mould copies and
 impressions. No progress (streak 2). Tally 1557 held, 1477 failed.
 
+## Three-hundred-and-fifty-second pass (25 Sept 2026): decipherment loop 163, referent pool with true duplicates collapsed
+
+Registered first (708d22a7a). 121 units, 3.43%, FDR 18.7%: 1.09% stands. No progress (streak 3). Tally 1559 held, 1479
+failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
