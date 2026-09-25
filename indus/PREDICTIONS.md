@@ -11498,3 +11498,13 @@ One held, three failed. Without the family units: alpha 0.003 69 units, FDR 10.3
 19.3%, coverage 2.41% (SO1, SO3 fail); the Linear B control passes (SO2). The family units are not the noisy part: the
 sign units alone are no cleaner and cover less. The line stays at 2.80%. Progress: none (streak 5). Tally, counting
 parts: 1567 held, 1491 failed (3058 registered).
+
+# Three-hundred-and-forty-fifth set, registered before testing (25 September 2026): decipherment loop 170, an adaptive alpha for the true-duplicate referent pool (three hypotheses)
+
+Streak 5. The alpha grid is coarse: 0.002 gives FDR 6.8%, 0.003 gives 10.1%. Bisection between them (five steps, FDR from
+100 within-stratum shuffles each) takes the largest alpha with FDR <= 10%, with the Linear B control
+(`predict_test345.py`). A small expected gain; the FDR rule still governs. Not measured before registering.
+
+- **AB1** The adaptive alpha covers more than 2.80% with FDR <= 10%.
+- **AB2** Linear B with it recovers 2+ of the 4 control words, none wrong.
+- **AB3** Progress rule: AB1 and AB2 hold (the referent line uses the adaptive alpha).
