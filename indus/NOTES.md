@@ -3156,6 +3156,11 @@ Registered first (9528042f7). 46 of 165 held-out designs right against a median 
 
 Registered first (ce9df0320). Excess +38 against +41. No progress (streak 3). Tally 1565 held, 1485 failed.
 
+## Three-hundred-and-fifty-seventh pass (25 Sept 2026): decipherment loop 168, variants of the true-duplicate referent pool
+
+Registered first (d4ffb1b9b). Both variants miss the 10% FDR rule narrowly (10.1%, 11.6%). No progress (streak 4).
+Tally 1566 held, 1488 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

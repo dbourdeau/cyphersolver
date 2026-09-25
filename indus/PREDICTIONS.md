@@ -11471,3 +11471,11 @@ within-stratum shuffles; the variant with FDR <= 10% and the larger coverage is 
 - **VS2** Linear B with its alpha recovers 2+ of the 4 control words, none wrong.
 - **VS3** Both variants keep FDR <= 10%.
 - **VS4** Progress rule: VS1 and VS2 hold (the referent line uses the chosen variant).
+
+## Results of the three-hundred-and-forty-third set (added after the test; `predict_test343.py`, `results/predict_test343.md`)
+
+One held, three failed. Alpha 0.003 gives 111 units, FDR 10.1%, coverage 3.03%; site-only strata at 0.002 give 141
+units, FDR 11.6%, coverage 13.60%: both just over the 10% rule (VS1, VS3 fail); the Linear B control passes (VS2). The
+large coverage of the site-only variant shows that the object-class strata still remove much: phrases proper to seals
+or to tablets pass as referents when seals and tablets share a stratum. The line stays at 2.80%. Progress: none
+(streak 4). Tally, counting parts: 1566 held, 1488 failed (3054 registered).
