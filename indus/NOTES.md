@@ -2873,6 +2873,11 @@ Registered first (eada0283e). 3-sign runs join the pairs (FDR 9.8%): referent li
 FDR to 10.8% and stay out; their labels are pool-local (806 human on made tablets, plant on moulded). Progress (streak
 0). Tally 1484 held, 1399 failed.
 
+## Three-hundred-and-second pass (25 Sept 2026): decipherment loop 111, damaged-text runs as extra training text
+
+Registered first (d57dc2f29). S rises (4.6354 -> 4.6712), A -> B worse; no progress (streak 2 at the time; loops
+112-113 then made progress). Tally 1485 held, 1402 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

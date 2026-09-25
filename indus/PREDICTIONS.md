@@ -10400,3 +10400,11 @@ the FDR line as a set, show the locality found in set 243: 806 goes with the hum
 and with plants on moulded ones; the gharial (Gavi) and plant (Phyt) signs are all on moulded tablets, the bull (Bult)
 signs on individually made ones. `prizebench.referent_fixed` now uses ns (2, 3). Progress: tier 1 referent line rises
 (streak 0). Tally, counting parts: 1484 held, 1399 failed (2883 registered).
+
+## Results of the two-hundred-and-eighty-sixth set (added after the test; `predict_test286.py`, `results/predict_test286.md`)
+
+One held, three failed. The 435 marked runs (1,501 signs) raise S on the fixed test (4.6354 -> 4.6712; DX1) and A -> B
+(5.1938 -> 5.2105; DX2); SIGN top-1 rises slightly (39.6% -> 39.8%; DX3). The cut markers take probability mass and
+split contexts, and short runs add more edge contexts than interior ones; damaged texts do not help the model, as clean
+extra lines did not (set 188). (Recorded after loops 112-113, which ran meanwhile; the streak after loop 111 was 2.)
+Tally, counting parts: 1485 held, 1402 failed (2887 registered).
