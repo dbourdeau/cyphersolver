@@ -148,3 +148,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 75 | 250 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | LOW-POST grammar rule (400 after a non-head): G margin 47.6 / 36.3, F up (progress; streak 0) |
 | 76 | 251 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | SINGLE-DOUBLE and 550-END do not generalise to B or F (no progress; streak 1) |
 | 77 | 252 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 1: sign drawings do not match the object's picture (fish signs even avoid fish pictures); link is lexical, not pictographic (no progress; streak 2) |
+| 78 | 253 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | sample D (damaged texts, 1,501 new signs): order, stroked jars, fish/520, count label replicate; consistency only (no progress; streak 3) |

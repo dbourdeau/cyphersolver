@@ -9634,3 +9634,14 @@ inside a run are used (an open end means the neighbour is unknown). Re-tests:
   95% of 1,000 within-run shuffles).
 - **DM6** Progress rule: none of these moves a bench component; all holding is consistency evidence on a new sample,
   recorded as such (no progress unless a component moves).
+
+## Results of the two-hundred-and-fifty-third set (added after the test; `predict_test253.py`, `results/predict_test253.md`, `damaged.py`)
+
+Five held, one failed (by design). On sample D (435 independent legible runs of the damaged texts, 1,501 signs, never
+used before): order is predictable, real runs beating their shuffles under the clean-data model in 219 of 299 runs (p
+= 2e-16; DM1); caged signs are not followed by 740 / 520 (0 of 3, too few to weigh; DM2); stroked jars are followed by
+another sign far more often than the plain jar (32 of 39 against 29 of 90; DM3); fish heads take 520 (5 of 9 against 0
+of 24; DM4); the slot before a count is concentrated (43.3% against a shuffle 95th percentile of 38.0%; DM5). The main
+findings replicate on a third independent sample. Consistency evidence only (DM6): no bench component moves, streak
+3. Of the damaged texts' 1,177 legible runs, 742 are copies of clean texts, which is why D is small. Tally, counting
+parts: 1434 held, 1317 failed (2751 registered).

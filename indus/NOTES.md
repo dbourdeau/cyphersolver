@@ -2685,6 +2685,12 @@ Registered first (a8f2c21ae). Owner asked whether checked meaning can grow. Sign
 (fish signs even avoid fish pictures); plant signs near only on moulded tablets (p = 0.066). The text-picture link is
 lexical, not pictographic. No progress: streak 2. Tally 1429 held, 1316 failed.
 
+## Two-hundred-and-sixty-seventh pass (25 Sept 2026): decipherment loop 78, the main findings on the damaged texts
+
+Registered first (ae1b26fc8). Sample D (damaged texts' independent runs, 1,501 signs): predictable order, stroked jars,
+fish/520, count-label slot all replicate (cage: 3 cases). Consistency evidence, no progress: streak 3. Tally 1434 held,
+1317 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
