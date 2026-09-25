@@ -9130,3 +9130,13 @@ Harappa 0 of 16, against 16.1% and 16.8% for other lexical signs; GD1, GD2), and
 line where the plain jar usually does (Mohenjo-daro 2 of 118 against 487 of 558; Harappa 4 of 43 against 289 of 323;
 GD3, GD4). The two cities share the device system as well as the grammar (sets 227-228). Progress: streak 0. Tally,
 counting parts: 1396 held, 1271 failed (2667 registered).
+
+# Two-hundred-and-thirtieth set, registered before testing (24 September 2026): decipherment loop 55, the class signal on seals and tablets (three hypotheses)
+
+Streak 0. Set 196 found fish-headed names take 520 more often than other identified-head names at every site and
+period. Across object types (F: SEAL* against TAB*), separately, with set 196's test (depiction classes of set 178,
+one-sided Fisher):
+
+- **FT1** On seals, fish-headed names take 520 more often than other identified-head names (p < 0.05).
+- **FT2** On tablets, the same (p < 0.05).
+- **FT3** Progress rule: FT1 and FT2 hold (the class signal is shared by both object types: tier 4).
