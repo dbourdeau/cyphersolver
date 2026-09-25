@@ -9451,3 +9451,13 @@ None held. Pairs with a fish sign are more picture-diverse than other lexical pa
 0.11; FF2), but neither is significant: the direction fits fish-headed names naming beings rather than the scene, the
 samples are too small to show it. No progress: streak 1. Tally, counting parts: 1421 held, 1298 failed (2719
 registered).
+
+# Two-hundred-and-forty-fifth set, registered before testing (25 September 2026): decipherment loop 70, fish names and seal animals (two hypotheses)
+
+Streak 1. Set 244 found fish pairs more picture-diverse than other lexical pairs on both tablet samples, not
+significantly. Seals are a larger, unseen sample for this question (field animal as picture; SEAL:S, SEAL:R), with set
+244's measure and comparison.
+
+- **FS1** On seals, pairs with a fish sign (no grammatical sign) are more animal-diverse than other lexical pairs
+  (one-sided rank test, p < 0.05).
+- **FS2** Progress rule: FS1 holds (fish-headed names float free of the picture, replicated on an unseen sample).
