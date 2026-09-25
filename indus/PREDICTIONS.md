@@ -10018,3 +10018,16 @@ against 2 of 39 earlier signs, p = 0.002; RH2) but not on A (2 of 16 against 2 o
 BODY-400 lines the sign before 400 is never head-class (A 0 of 12, B 0 of 4; RH3, RH4 fail): as LOW-POST (set 250)
 found for short lines, 400 follows signs that are not name heads, so a lexical body + 400 is not a name. No new role.
 Progress: none (streak 3). Tally, counting parts: 1457 held, 1361 failed (2818 registered).
+
+# Two-hundred-and-seventy-first set, registered before testing (25 September 2026): decipherment loop 96, two-sign lines (four hypotheses)
+
+Streak 3. The largest group of lines parse11 leaves unparsed is two-sign lexical lines whose signs have headed names (54
+'h h' in A); BARE-2 and TWO-BARE (sets 262, 265) failed with loose head tests. Stricter frames (`predict_test271.py`;
+strict head H = heads 5+ A names, more often head than modifier): HH-STRICT (two strict heads), OPEN-H (opening-prone
+sign + strict head), H-LOW (strict head + a low-head-propensity sign, LOW-POST's set). Margins not measured before
+registering.
+
+- **GY1** HH-STRICT raises the margin on A by 0.3 point or more and raises it on B.
+- **GY2** OPEN-H, the same.
+- **GY3** H-LOW, the same.
+- **GY4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
