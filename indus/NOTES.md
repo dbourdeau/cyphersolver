@@ -3017,6 +3017,12 @@ against 23. Progress (streak 0). Tally 1527 held, 1436 failed.
 Registered first (e44938d25). 1 of 24 described referent signs names its picture (chance, p = 0.70): referent signs
 are words, not drawings (as loop 77). No progress (streak 1). Tally 1528 held, 1438 failed.
 
+## Three-hundred-and-thirtieth pass (25 Sept 2026): decipherment loop 141, one word per referent
+
+Registered first (268179f52). Held as registered, but inflated by nested units; without them made p = 0.035, moulded
+p = 0.12. Withdrawn. Lesson: exclude nested units in unit-pair statistics. No progress (streak 2). Tally 1531 held,
+1438 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

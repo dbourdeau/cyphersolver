@@ -10937,3 +10937,13 @@ pool, the share of unit pairs sharing a sign among same-picture pairs minus that
 - **OW1** Individually made tablets: same-picture units share signs more than chance (p < 0.05).
 - **OW2** Moulded tablets: the same.
 - **OW3** Progress rule: OW1 and OW2 hold (a new finding, replicated across pools).
+
+## Results of the three-hundred-and-sixteenth set (added after the test; `predict_test316.py`, `results/predict_test316.md`)
+
+All three held as registered; withdrawn on audit. Same-picture unit pairs share a sign far more often than
+different-picture pairs in both pools (individually made 54 of 147 against 71 of 843, moulded 16 of 125 against 6 of
+310; p = 0.001 each). But a unit nested in another (a pair inside a 3-sign run of the same phrase) shares signs and
+picture by construction. Without nested pairs: individually made 17 of 110 against 71 of 843 (p = 0.035), moulded 3 of
+112 against 4 of 308 (p = 0.12). Some support for one word per referent on the individually made tablets, none on the
+moulded ones. The registration should have excluded nested units. Progress: none (streak 2). Tally, counting parts:
+1531 held, 1438 failed (2969 registered; this set's three 'held' are withdrawn in the text).
