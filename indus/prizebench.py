@@ -103,9 +103,9 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
     if singles:  # set 303 (SS1-SS3): single signs under the stricter criterion (3+ objects, 80%+); combined FDR 9.1%
         for lab, (clean, both) in P.items():
             u[(lab, 1)] = X.q_pairs(both, singles[0], singles[1], 1)
-    if stratified:  # set 333 (ST1-ST4): site-stratified base rates, one pool of tablets, seals and tags, alpha 0.0025; FDR 5.8%
+    if stratified:  # sets 333-334: base rates stratified by site and object class, one pool of tablets, seals and tags, alpha 0.0025; FDR 4.6%
         from predict_test304 import coverage
-        from predict_test333 import site_objects, units as su
+        from predict_test334 import site_objects, units as su
         clean, both = site_objects(F, recs)
         P = {'made': ([(t, m) for t, m, s in clean], [(t, m) for t, m, s in both])}
         u = su(clean, both)

@@ -3109,6 +3109,11 @@ default-bull units). Progress, small (streak 0). Tally 1551 held, 1464 failed.
 Registered first (aa8de724d). Stratified by site: 18.99% (6.70% without default-bull units), FDR 5.8%; these replace
 23.77% / 7.85%: part of the line was site composition. No progress (streak 1). Tally 1552 held, 1467 failed.
 
+## Three-hundred-and-forty-eighth pass (25 Sept 2026): decipherment loop 159, base rates stratified by site and object class
+
+Registered first (a620e1067). 12.69% (5.75% without default-bull units), FDR 4.6%; these replace 18.99% / 6.70%. No
+progress (streak 2). Tally 1553 held, 1470 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -11281,3 +11281,12 @@ shuffles within strata as there (`predict_test334.py`). A validation: lower figu
 - **SX2** The stratified coverage is at least 18.99%.
 - **SX3** Without Bull1 units, at least 6.70%.
 - **SX4** Progress rule: none (validation; recorded as failing).
+
+## Results of the three-hundred-and-thirty-fourth set (added after the test; `predict_test334.py`, `results/predict_test334.md`)
+
+One held, three failed (SX4 is the non-progress rule). With strata of site and object class (71 strata), the combined
+pool gives 224 units, FDR 4.6% (SX1), coverage 12.69% (SX2 fails against 18.99%) and 5.75% without Bull1 units (SX3
+fails against 6.70%). Seals are mostly bull and tablets rarely: part of the site-stratified line was phrases commoner on
+seals than on tablets. As registered, these figures replace the current ones (`prizebench.referent_fixed` now
+stratifies by site and class). The line is still far above the tablets-only 5.43% of set 328, and the non-bull figure
+above it too. Progress: none (streak 2). Tally, counting parts: 1553 held, 1470 failed (3023 registered).
