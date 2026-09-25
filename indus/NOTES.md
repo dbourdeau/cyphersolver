@@ -3119,6 +3119,13 @@ progress (streak 2). Tally 1553 held, 1470 failed.
 Registered first (388a43a65). Alpha 0.005, FDR 8.1%: referent line 12.69% -> 13.64% (5.75% -> 6.84% without
 default-bull units). Progress (streak 0). Tally 1557 held, 1470 failed.
 
+## Three-hundred-and-fiftieth pass (25 Sept 2026): decipherment loop 161, are the seal bull units words for the bull?
+
+Registered first (ce53873de). No bull unit on seals alone; the combined pool's bull units rest on about 29 moulded
+copies counted as independent objects. The counting flaw affects sets 325-335; correction next. Lesson: count
+distinct texts (designs), not objects, when mould copies share a picture. No progress (streak 1). Tally 1557 held,
+1473 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

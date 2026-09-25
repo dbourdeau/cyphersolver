@@ -11320,3 +11320,14 @@ Bull, Bull2) against 1,000 shuffles of the tablet pictures (`predict_test336.py`
 - **BW1** Tablets carrying a seal bull unit show a bull more often than chance (p < 0.05).
 - **BW2** At least 10 tablets carry one (enough to test).
 - **BW3** Progress rule: BW1 and BW2 hold (a new finding: the seal bull units behave as words for the bull).
+
+## Results of the three-hundred-and-thirty-sixth set (added after the test; `predict_test336.py`, `results/predict_test336.md`)
+
+All three failed, and the test found a flaw. Learned on the pictured seals alone (site-stratified), no unit qualifies
+for the one-horned bull, so none can be carried to the tablets (BW2 fails). Inspection after the test: of the combined
+pool's 27 Bull1 units, most occur on about 29 moulded tablets with the bull picture (for example 405, 501, 405 2, 240
+520 and 2 _ 520 each on 29), which are probably copies of one mould design. The binomial criterion (sets 325-335)
+counts each copy as an independent object, so one design weighs as 29 pieces of evidence; the picture shuffles break
+the copies' shared picture and so do not correct it. The seal bull units are not shown to be words; they are largely
+an artefact of mould copies. Next set: count each distinct text once. Progress: none (streak 1). Tally, counting parts:
+1557 held, 1473 failed (3030 registered).
