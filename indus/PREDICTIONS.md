@@ -8841,3 +8841,15 @@ Metric after loop 40: R 84.2%, G margin A 46.2 / B 34.7; streak 0. A grammar rul
 - **GL2** It raises coverage of real B lines more than of shuffled B lines.
 - **GL3** It raises the margin on F's extra lines (any rise).
 - **GL4** Progress rule: GL1 and GL2 hold (the G margin component rises on the independent sample).
+
+# Two-hundred-and-seventeenth set, registered before testing (24 September 2026): decipherment loop 42, the line's first two signs as context (four hypotheses)
+
+Metric after loop 41 (pending measurement): S 4.610 (trik + pos + end + f4k + first), SIGN top-1 39.8%. Component
+first2: every sign after the first conditioned on the line's first two signs, interpolated (count/(count + 3)) onto
+first; replaces first. Design on the training lines' own split: 4.6690 -> 4.6334. Loop 39 showed S can improve while
+the prize tasks slip, so the progress rule now also requires SIGN not to fall.
+
+- **F21** S on the fixed test beats the current model by 0.01 bits or more.
+- **F22** The same A -> B.
+- **F23** SIGN top-1 on the fixed test does not fall.
+- **F24** Progress rule: F21, F22 and F23 hold (first2 replaces first).
