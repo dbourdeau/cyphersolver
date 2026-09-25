@@ -9077,3 +9077,14 @@ from F (ICIT field 3): Mohenjo-daro, Harappa, other sites together.
 - **CS3** Learned on Mohenjo-daro + Harappa, the margin on the other sites is 20 points or more.
 - **CS4** The cross-site margins are within 10 points of the within-site margins (the learned site's own lines).
 - **CS5** Progress rule: CS1, CS2 and CS3 hold (one grammar serves every site: a tier-4 finding).
+
+## Results of the two-hundred-and-twenty-seventh set (added after the test; `predict_test227.py`, `results/predict_test227.md`)
+
+All five held. The grammar with its learned parts taken from one site parses another site's lines far better than
+shuffled lines, and nearly as well as its own: learned on Mohenjo-daro (1,186 distinct lines), the margin on Harappa
+is 43.8 points against 44.8 at home (CS1); learned on Harappa (777), 46.1 on Mohenjo-daro against 44.6 at home (CS2);
+learned on both cities, 36.1 on the other sites together (457 lines; 46.0 at home; CS3). All cross-site margins are
+within 10 points of the within-site ones (CS4). **Reading:** one grammatical system, with the same heads, endings,
+count labels and devices, serves the two cities and the smaller sites: a tier-4 (archaeological consistency) finding
+that any reading must respect. Progress (a new finding that replicates across independent samples): streak 0. Tally,
+counting parts: 1386 held, 1271 failed (2657 registered).

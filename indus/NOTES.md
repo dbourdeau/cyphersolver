@@ -2546,6 +2546,12 @@ progress: streak 3. Tally 1380 held, 1268 failed.
 Registered first (fc2498e7e). Only Parpola's fish family is used alike in A and B (replicates set 183); person, leaf,
 stroke, jar at most in one sample. M+ unchanged. No progress: streak 4. Tally 1381 held, 1271 failed.
 
+## Two-hundred-and-forty-first pass (24 Sept 2026): decipherment loop 52, one grammar across sites
+
+Registered first (67e359105). Grammar learned at Mohenjo-daro parses Harappa (margin 43.8 vs 44.8 at home), the
+reverse too (46.1 vs 44.6), both cities' grammar the other sites (36.1): one system across sites. Progress: streak 0.
+Tally 1386 held, 1271 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
