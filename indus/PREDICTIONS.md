@@ -9695,3 +9695,16 @@ marks them illegible from the same plates. With no readable case the frozen pred
 anything (RS1-RS3 need 10 readable), and they stay unread and committed for a later check on better photographs or
 the objects. The scan's resolution, not the model, is the blocker. Progress: none (streak 1). Tally, counting parts:
 1437 held, 1321 failed (2758 registered).
+
+# Two-hundred-and-fifty-sixth set, registered before testing (25 September 2026): decipherment loop 81, WORD task with names composed by the head-final grammar (four hypotheses)
+
+Streak 1. The WORD task (tier 6) ranks only name bodies seen whole in training, so at most 54 of the 232 held-out
+names can be found (measured before registering; composing modifier sequences and heads seen 3+ times raises that
+ceiling to 82, also measured). The ranking itself has not been run. Candidates: the training bodies plus every
+modifier sequence (a body minus its head, seen 3+ times) joined to every head seen 3+ times; control: the same parts
+head first. Same model (MODEL), same split, scored on the whole line as in `prizebench.word_task` (`predict_test256.py`).
+
+- **WR1** WORD top-10 rises by 1 point or more with the composed names (from the seen-only ranking in the same run).
+- **WR2** At least 3 test names never seen whole in training reach the top 10.
+- **WR3** Head-final composition beats the head-first control, both in top-10 hits and in never-seen hits.
+- **WR4** Progress rule: WR1 and WR3 hold (the WORD component then uses composed candidates).
