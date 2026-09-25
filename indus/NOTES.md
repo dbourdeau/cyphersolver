@@ -3064,6 +3064,12 @@ against Linear B's 95%); tier 3 gains a picture vault (70 held-out tablets right
 restoration line against Mahadevan 1977 (29 of 75 signs against a neighbour baseline of 23); R 86.3%, G 49.6 / 37.4.
 Tally 1533 held, 1456 failed.
 
+## Three-hundred-and-thirty-ninth pass (25 Sept 2026): decipherment loop 150, base-rate criterion for referent units
+
+Owner's goal: another run of loops until 10 without progress, on the referent line. Registered first (45ad90a2a). A
+binomial test against each picture's base rate (alpha 0.01) replaces the fixed 67% share: 388 units, FDR 5.7%, Linear B
+passes; referent line 2.29% -> 4.79%. Progress (streak 0). Tally 1537 held, 1456 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

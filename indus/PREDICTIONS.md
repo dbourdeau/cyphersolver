@@ -11100,3 +11100,13 @@ Linear B control re-run with it (`predict_test325.py`). Not measured before regi
 - **RB2** Linear B with that alpha recovers 2+ of the 4 control words, none wrong.
 - **RB3** The chosen alpha keeps FDR <= 10%.
 - **RB4** Progress rule: RB1, RB2 and RB3 hold (the referent line uses the base-rate criterion).
+
+## Results of the three-hundred-and-twenty-fifth set (added after the test; `predict_test325.py`, `results/predict_test325.md`)
+
+All four held. With the base-rate criterion: alpha 0.001 286 units, FDR 0.6%, coverage 3.91%; 0.005 368, 3.1%, 4.66%;
+0.01 388, 5.7%, 4.79%; 0.02 434, 10.5%, 5.04%; 0.05 493, 24.2%, 5.33%. The rule chooses alpha 0.01 (RB1, RB3): the
+referent line rises 2.29% -> 4.79%; the Linear B control recovers a-mo-ta and ko-wa, none wrong (RB2). The fixed 67%
+share discarded strong evidence for rare pictures (two gharial objects of two is P = 0.0025 at a 5% base rate) and
+admitted weak evidence for the commonest. Even alpha 0.001 (FDR 0.6%) reaches 3.91%. A jump this size needs the
+split-half check of set 309 (next set). `prizebench.referent_fixed` uses alpha 0.01. Progress: streak 0. Tally,
+counting parts: 1537 held, 1456 failed (2993 registered).
