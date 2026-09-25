@@ -12,7 +12,7 @@ class CamoGrad {
     static int[] C; static int N; static int[] syms; static int[] cnt = new int[256];
     static byte[] corpus; // letters 0..25
     static float[][] LM; static float[][] UNI; // per stage k: LM over k-letter alphabet (order 5), unigram
-    static int[] Pow;
+    static int[] Pow; static int FixFirst = int.Parse(Environment.GetEnvironmentVariable("FIXFIRST") ?? "-1");
 
     static void BuildLM(int k) {
         // map letters: ORDER[i] -> i for i<k, else deleted
@@ -86,7 +86,11 @@ class CamoGrad {
         }
         return h;
     }
+    static int[] LMin = new int[26], LMax = Enumerable.Repeat(9999, 26).ToArray();
     static void Main(string[] a) {
+        // per-letter count bounds, e.g. BOUNDS=T9-24,H5-24,E12-30
+        var bd = Environment.GetEnvironmentVariable("BOUNDS");
+        if (bd != null) foreach (var t in bd.Split(',')) { var q = t.Substring(1).Split('-'); LMin[t[0] - 'A'] = int.Parse(q[0]); LMax[t[0] - 'A'] = int.Parse(q[1]); }
         C = File.ReadAllBytes(a[0]).Select(x => (int)x).ToArray();
         string corpusPath = a[1]; int B = int.Parse(a[2]); int kmax = int.Parse(a[3]);
         byte[] tk = a.Length > 4 && a[4] != "-" ? File.ReadAllBytes(a[4]) : null;
@@ -116,6 +120,21 @@ class CamoGrad {
             }
             return;
         }
+        string sg = Environment.GetEnvironmentVariable("SCOREGROUPS");
+        if (sg != null) {
+            foreach (var line in File.ReadAllLines(sg)) {
+                var toks = line.Trim().Split(','); var map = new Dictionary<char, int>();
+                foreach (var t in toks) { var p = t.Split(':'); int y = int.Parse(p[0]); if (y >= 0) map[p[1][0]] = y; }
+                var sbq = new System.Text.StringBuilder();
+                for (int k = 2; k <= kmax; k++) {
+                    var lt = new int[256]; for (int q = 0; q < 256; q++) lt[q] = -1;
+                    for (int q = 0; q < k; q++) if (map.ContainsKey(ORDER[q])) lt[map[ORDER[q]]] = q;
+                    sbq.Append(string.Format(" {0:F1}", Score(lt, k)));
+                }
+                Console.WriteLine("GROUP" + sbq);
+            }
+            return;
+        }
         string seed = Environment.GetEnvironmentVariable("SEED");
         if (seed != null) {
             var h = seed.Split(',').Select(t => int.Parse(t.Split(':')[0])).ToArray();
@@ -130,7 +149,7 @@ class CamoGrad {
         for (int k = 1; k <= kmax; k++) {
             int kk = Math.Max(k, 2);
             var cand = new System.Collections.Concurrent.ConcurrentBag<Tuple<double, int[]>>();
-            int minCnt = k <= 6 ? 4 : 1; // frequent letters need at least a few occurrences
+            int minCnt = int.Parse(Environment.GetEnvironmentVariable("MINCNT") ?? "4"); if (k > 6) minCnt = 1; // frequent letters need at least a few occurrences
             Parallel.ForEach(beam, h => {
                 var lt = new int[256]; for (int q = 0; q < 256; q++) lt[q] = -1;
                 for (int q = 0; q < h.Length; q++) if (h[q] >= 0) lt[h[q]] = q;
@@ -138,6 +157,8 @@ class CamoGrad {
                 if (k >= 13) { var nh0 = new int[k]; Array.Copy(h, nh0, h.Length); nh0[k - 1] = -1; local.Add(Tuple.Create(Score(lt, k), nh0)); }
                 foreach (int y in syms) {
                     if (lt[y] >= 0 || cnt[y] < minCnt) continue;
+                    if (cnt[y] < LMin[ORDER[k - 1] - 'A'] || cnt[y] > LMax[ORDER[k - 1] - 'A']) continue;
+                    if (k == 1 && FixFirst >= 0 && y != FixFirst) continue;
                     if (h.Length > 0 && ORDER.IndexOf(ORDER[k - 1]) >= 0 && k >= 2 && cnt[y] > cnt[h[0]] * 1.6 + 3) continue; // no letter far more frequent than E
                     lt[y] = k - 1;
                     double sc = k >= 2 ? Score(lt, k) : cnt[y];

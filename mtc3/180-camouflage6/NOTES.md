@@ -1,6 +1,7 @@
 # MTC3 180: Monoalphabetic Substitution with Camouflage, Part 6 (Veselovsky, 2012)
 
-Status: in progress (24 Sept 2026). Breakthrough: pieces are being recovered one at a time (3 of 9 so far); see "Method that works".
+Status: in progress (25 Sept 2026): all 9 pieces recovered and ordered, the odd sentence identified; awaiting the site's
+verdict on the submitted answer (kept in `private/`).
 
 Level II. Solvers: Peter Mustermann (2012), George Lasry (2023); no LLM solve.
 
@@ -56,15 +57,38 @@ well, while mixtures score like noise; this gives the gradient the joint anneale
 - `src/assemble.cs`: once pieces are separated, places the leftover rare-letter symbols and polishes each piece with the
   full 26-letter model.
 
+### Last four pieces: joint annealing (25 Sept 2026, `src/jointcore.cs`, `src/jointfull.cs`)
+
+Peeling stalled after five pieces: in the 97-symbol leftover pool no single-piece beam rose above noise (~22), even with
+per-letter count bounds, E anchors, other growth orders and a domain model. What worked was solving the leftover pieces
+jointly:
+
+1. `jointcore.cs`: the top 48 symbols by count are annealed onto 4 pieces x 11 letters (THEANDOISRL), score = sum of the
+   11-letter restricted 5-gram LLRs. Validated first on the ciphertext cut down to recovered groups 1-4 (known answer):
+   one piece exact, two nearly, in 40M-step runs. On the real pool two pieces recurred across restarts (28.3, 20.1).
+2. The clearer one was finished with CamoGrad's stepwise refine (score 76 at 22 letters) and removed; the joint core on
+   the last 3 pieces converged identically in all 32 restarts.
+3. `jointfull.cs`: 26-letter joint polish of those 3 pieces (every symbol in a slot or unassigned at NULLC=-3 log10 per
+   letter): 166-173 letters each, -0.81 to -0.99 log10 per letter, readable English.
+4. `assemble.cs` on all 9 groups placed the last 9 rare symbols: 9 pieces of 166-172 letters (1522 in all), -0.72 to
+   -0.99 per letter. The pieces chain end-to-start into one continuous text (every cut falls mid-word and joins).
+
+`diag.cs` scores each assigned symbol's keep-vs-pool LLR and the best placement of each pool symbol; it showed the five
+peeled groups were clean (no stolen frequent symbols), which pointed at the search, not the exclusions, as the blocker.
+
+## Result
+
+The plaintext is two song lyrics run together; one piece carries a two-line sentence from a third, unrelated song,
+inserted in the middle of a verse. That sentence (69 letters) is the answer. Key, piece order and the answer's position
+are in `private/` (git-ignored); the plaintext is not reproduced here because it is copyrighted lyrics.
+
 The plaintext is a sequence of copyrighted song lyrics; it is kept only in the session scratchpad, not in the
 repository (and the answer, a single non-lyric sentence, will go in `private/`).
 
 ## Remaining gaps
 
-The whole plaintext. The blocker is search, not identifiability: at the true key every model used scores far above
-what the annealer finds.
+None in the plaintext (all 1522 letters placed and read). Open only: the site's confirmation of the answer.
 
 ## Escalation
 
-Ideas not yet tried: a solver that builds one piece at a time with a model trained on English with letters deleted
-(scoring partial alphabets correctly); population annealing with crossover of whole alphabets; a word-level model.
+Done: single-piece growth (5 pieces), then joint core + full polish for the last 4 (see above).
