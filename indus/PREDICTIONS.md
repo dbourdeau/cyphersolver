@@ -9274,3 +9274,10 @@ lexical (no numerals, endings, closers, 400 / 90).
 - **OB2** The same in B's new lines (propensities from A).
 - **OB3** The first sign of these lines is less head-like than the last (A and B).
 - **OB4** Progress rule: OB1 and OB2 hold; then these lines' last sign = 'name head', the rest 'name modifier' in R.
+
+## Results of the two-hundred-and-thirty-sixth set (added after the test; `predict_test236.py`, `results/predict_test236.md`)
+
+None held. In the short all-lexical lines of no genre, the last sign is not more head-like than frequency-matched
+signs in A (24 lines, mean propensity 0.100, p = 0.81; OB1); in B it nearly is (45 lines, 0.186, p = 0.051; OB2), and
+the first sign is not less head-like than the last (OB3). These lines do not behave as bare names; no roles added. No
+progress: streak 1. Tally, counting parts: 1409 held, 1283 failed (2692 registered).

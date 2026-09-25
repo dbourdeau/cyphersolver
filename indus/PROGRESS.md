@@ -131,3 +131,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 58 | 233 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 1: 11 texts on individually made tablets have their referent fixed by the picture (p = 0.001); new V line 0.38% (progress; streak 0) |
 | 59 | 234 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Linear B control of the referent method: 143 words qualify (null 2), but the key was in the wrong ideogram convention; registered verdict stands (no progress; streak 1) |
 | 60 | 235 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tier 2: the picture-referent method passes a Linear B known-answer control (a-mo-ta ROTA, ko-wa MUL): C 3 of 6 (progress; streak 0) |
+| 61 | 236 | 4.635 (26.1%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | short lines of no genre are not bare names (A p = 0.81, B p = 0.051) (no progress; streak 1) |

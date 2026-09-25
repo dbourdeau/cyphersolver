@@ -2595,6 +2595,11 @@ Verdict stands; no progress, streak 1. Tally 1406 held, 1279 failed.
 Registered first (0c90c95a1). The referent method recovers a-mo-ta ROTA and ko-wa MUL, no wrong ideograms: it passes
 the Linear B gate (tier 2: 3 of 6). Progress: streak 0. Tally 1409 held, 1279 failed.
 
+## Two-hundred-and-fiftieth pass (25 Sept 2026): decipherment loop 61, the short lines of no genre
+
+Registered first (b1cbfb9b6). Short 'other' lines are not bare names (A p = 0.81, B p = 0.051). No progress: streak 1.
+Tally 1409 held, 1283 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
