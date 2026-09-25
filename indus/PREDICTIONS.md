@@ -11508,3 +11508,12 @@ Streak 5. The alpha grid is coarse: 0.002 gives FDR 6.8%, 0.003 gives 10.1%. Bis
 - **AB1** The adaptive alpha covers more than 2.80% with FDR <= 10%.
 - **AB2** Linear B with it recovers 2+ of the 4 control words, none wrong.
 - **AB3** Progress rule: AB1 and AB2 hold (the referent line uses the adaptive alpha).
+
+## Results of the three-hundred-and-forty-fifth set (added after the test; `predict_test345.py`, `results/predict_test345.md`)
+
+All three held as registered; withdrawn on audit. Bisection between alpha 0.002 and 0.003 settles at 0.00241 (FDR 9.8%)
+with 100 units and coverage 2.82% against 2.80%; Linear B passes. The gain is one unit, chosen where FDR estimates from
+100 shuffles (different seeds per step) scatter by about a point around 10% (0.00244 gave 10.2%): selecting on the
+estimate's noise. The line stays at 2.80%. Lesson: an alpha step must clear the FDR rule by more than the estimate's
+noise. Progress: none (streak 6). Tally, counting parts: 1570 held, 1491 failed (3061 registered; this set's three
+'held' are withdrawn in the text).

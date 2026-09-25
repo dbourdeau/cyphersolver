@@ -3166,6 +3166,11 @@ Tally 1566 held, 1488 failed.
 Registered first (e206d70e4). Sign units alone: FDR 10.3% / 19.3%, less coverage. No progress (streak 5). Tally 1567
 held, 1491 failed.
 
+## Three-hundred-and-fifty-ninth pass (25 Sept 2026): decipherment loop 170, an adaptive alpha
+
+Registered first (8b9d72e62). One unit gained at the edge of the FDR rule, within the estimate's noise: withdrawn; the
+line stays at 2.80%. No progress (streak 6). Tally 1570 held, 1491 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
