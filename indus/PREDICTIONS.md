@@ -9739,3 +9739,16 @@ weights hurt), IF3 holds. On the 2,340 test signs top-1 falls 39.9% -> 39.4% (IF
 exact left-right frame adds noise on 3,000 lines. (The two-direction baseline here, 39.9%, differs from the bench's
 39.7% only by tie order among equal scores.) Progress: none (streak 3). Tally, counting parts: 1439 held, 1327 failed
 (2766 registered).
+
+# Two-hundred-and-fifty-eighth set, registered before testing (25 September 2026): decipherment loop 83, the frozen restorations against Parpola's own transcription (three hypotheses)
+
+Streak 3. Set 255 could not read the gap signs on the CISI vol. 1 photographs. Parpola's own transcription (the CISI
+digitisation, `cisi.py`, M-1 to M-184) covers 4 of the 79 gaps: M-167 is illegible there too (P000), M-168 is absent,
+and two carry a reading: M-62 position 2 = P310 = ICIT 700 (no uncertainty marked; ICIT reads the line 551 ??? 550 741
+32 226, Parpola 550 700 550 741 2 226) and M-61 position 6 = P251 = ICIT 81 / 82 / 958 (90% uncertainty). These
+readings were looked up before registering; the frozen predictions (`results/restoration_predictions.tsv`, committed
+in 002427952) are still unread (`predict_test258.py`).
+
+- **RC1** M-62: ICIT 700 is in the top 5.
+- **RC2** M-61: one of ICIT 81 / 82 / 958 is in the top 5.
+- **RC3** Progress rule: not applicable; two cases are consistency evidence only (set 255 required 10). Recorded as failing.
