@@ -10316,3 +10316,17 @@ M-845, M-1971); the frequency baseline, 740 everywhere, does not model the headi
 cases. The 7 lexical hits (590 twice, 13 twice on one text, 803, 3, 741) are the harder part. Tier 3's sign-level line
 now reads top-1 21 of 49 (43%), top-5 32 of 49. Progress: the tier 3 line replicates on new cases (streak 0). Tally,
 counting parts: 1474 held, 1397 failed (2871 registered).
+
+# Two-hundred-and-eighty-fifth set, registered before testing (25 September 2026): decipherment loop 110, the tier 3 restorations against a context baseline (four hypotheses)
+
+Streak 0. Sets 283-284 beat the frequency baseline (740 everywhere), which cannot see structural slots: 10 of set 284's
+17 hits are heading or ending slots. A stricter baseline, per case on the same copy-free training lines: the commonest
+sign seen between the gap's two neighbours (line edges as neighbours), else after the left neighbour, else before the
+right neighbour, else the commonest sign. Lexical cases: M77's sign is not a heading sign, 740 / 520 / 400 / 90 or a
+closer (`predict_test285.py`, the 49 cases with the predictions already recorded). A validation, not a progress test:
+if CB1 fails the tier 3 line is downgraded.
+
+- **CB1** The model's top-1 beats the context baseline's on the 49 cases.
+- **CB2** The same on the lexical cases.
+- **CB3** The model's top-1 is right in 20% or more of the lexical cases.
+- **CB4** Progress rule: none (validation; recorded as failing).
