@@ -11458,3 +11458,16 @@ Both failed. With base-rate votes the corrected vault predicts 259 held-out obse
 against a shuffle median of 1: excess +38, below set 341's +41 (VB1 fails). The base-rate votes reach more targets
 (rare pictures qualify on little evidence) but are right less often. Progress: none (streak 3). Tally, counting parts:
 1565 held, 1485 failed (3050 registered).
+
+# Three-hundred-and-forty-third set, registered before testing (25 September 2026): decipherment loop 168, two variants of the true-duplicate referent pool (four hypotheses)
+
+Streak 3. Set 339's pool (mould copies and impressions once, site-and-class strata, alpha 0.002) set the line at 2.80%.
+Variants: (a) alpha 0.003 (0.002 gave FDR 6.8%, 0.005 18.7%); (b) site-only strata at alpha 0.002, since the class
+strata were for the seal-bull phrases, mostly gone once mould copies count once. Each with FDR against 100
+within-stratum shuffles; the variant with FDR <= 10% and the larger coverage is chosen, with the Linear B control
+(`predict_test343.py`). Not measured before registering.
+
+- **VS1** A variant with FDR <= 10% covers more than 2.80%.
+- **VS2** Linear B with its alpha recovers 2+ of the 4 control words, none wrong.
+- **VS3** Both variants keep FDR <= 10%.
+- **VS4** Progress rule: VS1 and VS2 hold (the referent line uses the chosen variant).
