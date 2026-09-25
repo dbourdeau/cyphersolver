@@ -10606,3 +10606,15 @@ right (23.7%) against a shuffle median of 6: excess +64, above set 294's +60 (p 
 104 tablets reached only through the other pool add about 4 correct predictions beyond chance, so the labels mostly do
 not travel between pools (as set 243 found), though a few do. Tier 3's vault cell now includes this line. Progress:
 the vault excess rises (streak 0). Tally, counting parts: 1500 held, 1419 failed (2919 registered).
+
+# Two-hundred-and-ninety-ninth set, registered before testing (25 September 2026): decipherment loop 124, referents across sites (three hypotheses)
+
+Streak 0. The vault holds out one text at a time inside a pool. A stronger test, closer to new excavations: learn the
+referent units on one city's moulded tablets and predict the pictures on the other city's (Harappa 235 moulded tablets,
+Mohenjo-daro 61; fragment runs included; copies of a text excluded), both directions, against 200 shuffles of the
+pictures in the learning city (`predict_test299.py`). The individually made pool is not used: its Mohenjo-daro tablets
+are copper and its Harappa tablets incised, which set 243 found do not share labels. Not measured before registering.
+
+- **XS1** Harappa -> Mohenjo-daro: correct predictions above the shuffles (p < 0.05).
+- **XS2** Mohenjo-daro -> Harappa: the same.
+- **XS3** Progress rule: XS1 and XS2 hold (referents travel between cities; tier 3 gains a cross-site line).
