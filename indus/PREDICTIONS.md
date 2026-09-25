@@ -10433,3 +10433,15 @@ shuffles make only a few predictions and their accuracy swings widely. The regis
 (accuracy on a varying number of predictions); the number of correct predictions is the stable one. Not rescored here;
 a new registered set will test it. Progress: none (streak 1). Tally, counting parts: 1487 held, 1404 failed (2891
 registered).
+
+# Two-hundred-and-ninetieth set, registered before testing (25 September 2026): decipherment loop 115, the picture vault by correct predictions, with a Linear B control (three hypotheses)
+
+Streak 1. Set 289's accuracy statistic was unstable (shuffles make few predictions). The stable statistic is the number
+of correct predictions, which counts both how many held-out objects the units reach and how often they are right. The
+real count (26) is known from set 289; its shuffle distribution is not. Control: the same leave-one-out vault on Linear
+B (each DAMOS line's ideogram from its words, units from the other lines without copies of the same word list, same
+criterion), against 20 shuffles of the ideograms (`predict_test290.py`).
+
+- **VH1** Indus: the number of correct predictions is above the 95th percentile of 200 shuffles.
+- **VH2** Linear B control: the number of correct predictions is above all 20 shuffles.
+- **VH3** Progress rule: VH1 and VH2 hold (tier 3 gains a picture-vault line for referents).
