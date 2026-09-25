@@ -10495,3 +10495,14 @@ One held, two failed. Skip-pairs add 22 units (90 against 68) and raise coverage
 give 9.2 on average, FDR 10.2%, just over the registered 10% (SK1, SK3 fail): the extra units are about as noisy as the
 single signs of set 288. Not adopted. Progress: none (streak 2). Tally, counting parts: 1492 held, 1409 failed (2901
 registered).
+
+# Two-hundred-and-ninety-third set, registered before testing (25 September 2026): decipherment loop 118, where referent units sit in a text (three hypotheses)
+
+Streak 2. If the referent units are words for the pictured thing, they may hold a fixed place in the text (leading it,
+or in the name head's place at the end). Relative start position (0 first, 1 last) of each occurrence of a qualifying
+referent unit (set 288) against other units recurring on 2+ objects in 2+ texts, per pool; Mann-Whitney two-sided;
+direction not predicted (`predict_test293.py`). Not measured before registering.
+
+- **RP1** Individually made tablets: the positions differ (p < 0.05).
+- **RP2** Moulded tablets: they differ in the same direction.
+- **RP3** Progress rule: RP1 and RP2 hold (a new finding, replicated across the two pools).
