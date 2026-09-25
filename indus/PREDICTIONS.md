@@ -9717,3 +9717,16 @@ candidates) as well. No composed name reaches any top 10 (WR2), so the grammar's
 structure (sets 176-177), gives the model no purchase on which unseen names occur: the scorer's context around the body
 (heading, ending) is too weak to prefer a rare new body over frequent seen ones. The WORD task stays bounded by
 seen bodies. Progress: none (streak 2). Tally, counting parts: 1437 held, 1325 failed (2762 registered).
+
+# Two-hundred-and-fifty-seventh set, registered before testing (25 September 2026): decipherment loop 82, an infill component for the SIGN task (four hypotheses)
+
+Streak 2. The SIGN task (tier 7) scores a hidden sign as a product of a left-to-right and a right-to-left model (set
+204); neither sees both neighbours at once. The infill probability p(c | left, right), counted on the training lines
+with line edges as neighbours and smoothed toward the sign's frequency, is added with weight alpha, chosen on a
+development split of the training lines only (alpha in 0-3), then applied once to the fixed test lines
+(`predict_test257.py`). Not measured before registering.
+
+- **IF1** SIGN top-1 rises by 0.5 point or more on the test lines.
+- **IF2** SIGN top-5 does not fall.
+- **IF3** The development split gives the infill a positive weight (alpha > 0).
+- **IF4** Progress rule: IF1 and IF2 hold (the SIGN task then uses the infill scorer).
