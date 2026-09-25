@@ -9165,3 +9165,16 @@ pre-count tokens (p = 0.001; CC1), Harappa 58.8% of 102 (p = 0.002; CC2). Counte
 the next loop on, per-subset replications of findings already made no longer count as progress under the stopping
 rule (they are consistency evidence, not new findings). Streak 0. Tally, counting parts: 1402 held, 1271 failed (2673
 registered).
+
+# Two-hundred-and-thirty-second set, registered before testing (24 September 2026): decipherment loop 57, does the ending follow the graphic family? (four hypotheses)
+
+Streak 0. A name's ending (740 / 520 / closer / caged / other) is chosen by its head (sets 103-120), and fish-family
+heads lean to 520 (sets 178, 196). New question: do heads of the same graphic family (ICIT decade block, famlm.fam)
+choose endings alike beyond the fish? Statistic: over heads with 5+ names, the mean within-family share of the
+family's modal ending, weighted by names; null: heads regrouped at random into groups of the same sizes, 1,000
+times. Names from distinct lines (R.name_of), ending = the name's ending sign class.
+
+- **FE1** In A, heads' endings are more homogeneous within graphic families than in random groupings (p < 0.05).
+- **FE2** The same in B (families and heads as in B's names).
+- **FE3** With the fish block (heads 219-240) left out, FE1 and FE2 still hold (p < 0.05 each).
+- **FE4** Progress rule: FE3 holds (a new finding beyond the fish, replicated on B).
