@@ -11110,3 +11110,14 @@ share discarded strong evidence for rare pictures (two gharial objects of two is
 admitted weak evidence for the commonest. Even alpha 0.001 (FDR 0.6%) reaches 3.91%. A jump this size needs the
 split-half check of set 309 (next set). `prizebench.referent_fixed` uses alpha 0.01. Progress: streak 0. Tally,
 counting parts: 1537 held, 1456 failed (2993 registered).
+
+# Three-hundred-and-twenty-sixth set, registered before testing (25 September 2026): decipherment loop 151, split-half check of the base-rate configuration (three hypotheses)
+
+Streak 0. Set 325 doubled the referent line with a base-rate criterion. Independent check as set 309: five random
+half-splits, both directions, the real held-out matches (held-out objects carrying the unit's picture) against 200 joint
+shuffles; held-out precision compared with set 309's C7, 23% (`predict_test326.py`). A validation: a failure of BV1
+downgrades the line; no progress either way. Not measured before registering.
+
+- **BV1** The base-rate configuration is confirmed on the five split-halves (p < 0.05).
+- **BV2** Its held-out precision is at least 23%.
+- **BV3** Progress rule: none (validation; recorded as failing).
