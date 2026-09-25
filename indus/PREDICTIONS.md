@@ -8754,3 +8754,16 @@ All four held. Discounting the sign trigram (D = 0.75) onto the Kneser-Ney bigra
 SIGN top-1 rises from 38.2% to 39.6% (TK3). trik replaces tri; the metric run gives S 4.635 (26.1% of the unigram
 entropy explained), SIGN 39.7% / 61.8%, WORD top-10 3.4%. Progress: streak 0. Tally, counting parts: 1348 held,
 1244 failed (2592 registered).
+
+# Two-hundred-and-thirteenth set, registered before testing (24 September 2026): decipherment loop 38, the line's opening sign as context (four hypotheses)
+
+Metric after loop 36: S 4.635 (trik + pos + end + f4k); streak 0; loop 37 (smoothing) pending. Set 125 tried a
+component conditioned on the line's first sign and did not keep it; with the new model a design run on the training
+lines' own split gives trik + pos + end + f4k 4.6772 -> + first 4.6621 (a discounted sign 4-gram 4.6845, + start
+4.6763, + len 4.6835: not kept). The heading and the name openers (sets 45, 161) make the first sign a plausible cue
+for the rest of the line.
+
+- **FS1** S on the fixed test with + first beats the model without it by 0.005 bits or more.
+- **FS2** The same A -> B.
+- **FS3** SIGN top-1 on the fixed test does not fall.
+- **FS4** Progress rule: FS1 and FS2 hold (first enters the model).
