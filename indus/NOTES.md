@@ -2526,6 +2526,11 @@ than shuffled. Progress: streak 0. Tally 1376 held, 1258 failed.
 Registered first (2f17ec7fb). CAGED-POST: B margin 35.9 -> 36.0 (small), F unchanged. Progress: streak 0. Tally 1379
 held, 1259 failed.
 
+## Two-hundred-and-thirty-seventh pass (24 Sept 2026): decipherment loop 48, a second unit after a mid-line ending
+
+Registered first (cd1ad71a9). Tails after a mid-line ending are not second names: in A their last signs are less
+head-like than any frequency-matched draw. No progress: streak 1. Tally 1380 held, 1262 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

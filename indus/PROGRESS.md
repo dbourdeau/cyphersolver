@@ -117,3 +117,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 45 | 220 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | no-prefix L profile: L world 81.3% to 85.1% (WALS), 68.3% to 77.0% (Grambank); Burushaski out in WALS only (progress; streak 0) |
 | 46 | 221 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | EDGE-DOUBLE grammar rule (set 187's doubling): G margin 47.2 / 35.9, F up; real more than shuffled (progress; streak 0) |
 | 47 | 222 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | CAGED-POST grammar rule: G margin 47.3 / 36.0 (small; F unchanged) (progress; streak 0) |
+| 48 | 223 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tails after a mid-line ending are not second names (last signs avoid the head slot in A) (no progress; streak 1) |

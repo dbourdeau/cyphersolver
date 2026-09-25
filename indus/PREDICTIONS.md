@@ -8989,3 +8989,12 @@ mean head propensity of the tail's last signs.
 - **SU2** The same in B's new lines (propensities from A).
 - **SU3** In B the tail's other signs have lower head propensity than its last sign.
 - **SU4** Progress rule: SU1 and SU2 hold; then tail last sign = 'name head', other tail signs = 'name modifier' in R.
+
+## Results of the two-hundred-and-twenty-third set (added after the test; `predict_test223.py`, `results/predict_test223.md`)
+
+One held, three failed. The tail after a mid-line 740 / 520 does not end like a name: in A the last tail sign's
+mean head propensity is 0.073, below every one of 1,000 frequency-matched draws (so SU1, which predicted higher,
+fails with p = 1.0); in B 0.126, p = 0.67 (SU2 fails); the other tail signs are slightly less head-like than the last
+(SU3). **Reading:** what follows a finished name is not a second name; its signs avoid the head slot, as epithets,
+titles or closers would. Not turned into a role (the registered direction failed). No progress: streak 1. Tally,
+counting parts: 1380 held, 1262 failed (2642 registered).
