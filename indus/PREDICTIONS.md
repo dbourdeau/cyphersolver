@@ -9957,3 +9957,15 @@ All four held. The edge behaviours learned from A replicate on B's new lines: th
 92 (RL3). Given roles where no earlier role applies (end-prone closer 56 tokens, opener 135, line-final 400 40), R rises
 84.2% -> 86.1%. (A first run read the baseline as 84.5% because the 400 role was not switched off with the option;
 fixed before recording.) Progress: R rises (streak 0). Tally, counting parts: 1454 held, 1351 failed (2805 registered).
+
+# Two-hundred-and-sixty-eighth set, registered before testing (25 September 2026): decipherment loop 93, a grammar prior for the SIGN task (four hypotheses)
+
+Streak 0. The grammar (parse11, sets 250-264) and the SIGN model (set 204) have been built separately. Here each SIGN
+candidate gains alpha (in log-probability) if the line it completes parses; the grammar's frames and sign sets are
+learned from the training lines only, and alpha (0-3) is chosen on a development split of them, then applied once to
+the fixed test lines (`predict_test268.py`). Not measured before registering.
+
+- **GP1** SIGN top-1 rises by 0.5 point or more on the test lines.
+- **GP2** SIGN top-5 does not fall.
+- **GP3** The development split gives the grammar prior a positive weight (alpha > 0).
+- **GP4** Progress rule: GP1 and GP2 hold (the SIGN task then uses the grammar prior).
