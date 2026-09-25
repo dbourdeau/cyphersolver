@@ -2558,6 +2558,11 @@ Registered first (29e134061). Seal grammar parses tablets (43.6), tablet grammar
 the early levels (27.0). One system across place, object type and time. Progress: streak 0. Tally 1391 held, 1271
 failed.
 
+## Two-hundred-and-forty-third pass (24 Sept 2026): decipherment loop 54, the graphic devices in each city
+
+Registered first (071b2b5ad). Cage and inner strokes behave identically at Mohenjo-daro and Harappa (caged 0/52, 0/16
+before 740/520; stroked jars final 2/118, 4/43 vs plain 87-89%). Progress: streak 0. Tally 1396 held, 1271 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

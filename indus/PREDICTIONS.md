@@ -9122,3 +9122,11 @@ were found on pooled data. Per city (F, distinct lines of Mohenjo-daro and of Ha
   Mohenjo-daro (one-sided Fisher p < 0.05).
 - **GD4** The same at Harappa.
 - **GD5** Progress rule: GD1-GD4 all hold (the device system is shared by both cities: a tier-4 finding).
+
+## Results of the two-hundred-and-twenty-ninth set (added after the test; `predict_test229.py`, `results/predict_test229.md`)
+
+All five held. In each city separately, caged signs are never followed by 740 / 520 (Mohenjo-daro 0 of 52,
+Harappa 0 of 16, against 16.1% and 16.8% for other lexical signs; GD1, GD2), and the stroked jars almost never end a
+line where the plain jar usually does (Mohenjo-daro 2 of 118 against 487 of 558; Harappa 4 of 43 against 289 of 323;
+GD3, GD4). The two cities share the device system as well as the grammar (sets 227-228). Progress: streak 0. Tally,
+counting parts: 1396 held, 1271 failed (2667 registered).
