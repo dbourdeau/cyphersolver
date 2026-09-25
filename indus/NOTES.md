@@ -2997,6 +2997,11 @@ loose. No progress (streak 3). Tally 1521 held, 1431 failed.
 Registered first (36910d979). FDR 33.7%; dominant-picture pools match by chance. Not adopted. No progress (streak 4).
 Tally 1522 held, 1433 failed.
 
+## Three-hundred-and-twenty-sixth pass (25 Sept 2026): decipherment loop 137, 4-sign runs as referent units
+
+Registered first (668948a60). 4 units, FDR 7.2%, referent line 2.28% -> 2.29%. Progress, minimal (streak 0). Tally 1524
+held, 1433 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

@@ -10860,3 +10860,9 @@ picture shuffles (`predict_test312.py`). Not measured before registering.
 
 - **F41** The combined FDR is at or below 10% and coverage rises above 2.28%.
 - **F42** Progress rule: F41 holds (4-sign runs join).
+
+## Results of the three-hundred-and-twelfth set (added after the test; `predict_test312.py`, `results/predict_test312.md`)
+
+Both held. 4-sign runs add 4 units (189), FDR 7.2%, coverage 2.28% -> 2.29%: progress by the registered rule, minimal in
+size; longer runs recur too rarely to add much. `prizebench.referent_fixed` includes them. Progress: streak 0. Tally,
+counting parts: 1524 held, 1433 failed (2957 registered).
