@@ -90,7 +90,7 @@ def word_task(tr, te, keys):
     return top1 / n, top10 / n, base1 / n, base10 / n, n
 
 
-def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, alpha=0.0025, seals=True, no_bull=False):
+def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, alpha=0.0025, seals=True, no_bull=False, stratified=True):
     """Set 233 (RF1-RF2): share of sign tokens in texts whose referent the picture fixes, plus qualifying sign pairs
     (sets 237, 243, 254; part-texts merged). Criteria k objects, share s: set 287 (RX1-RX4) chose k 2, s 0.67 (FDR 9.4%
     against picture shuffles; Linear B control passes); set 288 (RN1-RN4) added 3-sign runs (ns (2, 3), FDR 9.8%;
@@ -103,6 +103,15 @@ def referent_fixed(DL, k=2, s=0.67, ns=(2, 3), singles=(3, 0.8), families=True, 
     if singles:  # set 303 (SS1-SS3): single signs under the stricter criterion (3+ objects, 80%+); combined FDR 9.1%
         for lab, (clean, both) in P.items():
             u[(lab, 1)] = X.q_pairs(both, singles[0], singles[1], 1)
+    if stratified:  # set 333 (ST1-ST4): site-stratified base rates, one pool of tablets, seals and tags, alpha 0.0025; FDR 5.8%
+        from predict_test304 import coverage
+        from predict_test333 import site_objects, units as su
+        clean, both = site_objects(F, recs)
+        P = {'made': ([(t, m) for t, m, s in clean], [(t, m) for t, m, s in both])}
+        u = su(clean, both)
+        if no_bull:
+            u = {k: {g: m for g, m in v.items() if m != 'Bull1'} for k, v in u.items()}
+        return coverage(DL, P, u), X.count(u)
     if alpha:  # set 325 (RB1-RB4): base-rate binomial criterion, all unit kinds, alpha 0.01; FDR 5.7%
         from predict_test304 import coverage
         from predict_test325 import build

@@ -3104,6 +3104,11 @@ precision 11%). No progress (streak 1). Tally 1547 held, 1464 failed.
 Registered first (e87d6df17). Alpha 0.0025, FDR 8.5%: referent line 23.52% -> 23.77% (7.53% -> 7.85% without the
 default-bull units). Progress, small (streak 0). Tally 1551 held, 1464 failed.
 
+## Three-hundred-and-forty-seventh pass (25 Sept 2026): decipherment loop 158, site-stratified base rates
+
+Registered first (aa8de724d). Stratified by site: 18.99% (6.70% without default-bull units), FDR 5.8%; these replace
+23.77% / 7.85%: part of the line was site composition. No progress (streak 1). Tally 1552 held, 1467 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

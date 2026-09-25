@@ -11260,3 +11260,12 @@ current ones (23.77% / 7.85% without Bull1 units) if lower; no progress either w
 - **ST2** The stratified coverage is at least 23.77%.
 - **ST3** The stratified coverage without Bull1 units is at least 7.85%.
 - **ST4** Progress rule: none (validation; recorded as failing).
+
+## Results of the three-hundred-and-thirty-third set (added after the test; `predict_test333.py`, `results/predict_test333.md`)
+
+One held, three failed (ST4 is the non-progress rule). With each object's expected picture share taken from its own
+site (50 sites) and the pictures shuffled within sites, the combined pool gives 305 units, FDR 5.8% (ST1), coverage
+18.99% (ST2 fails against 23.77%) and 6.70% without Bull1 units (ST3 fails against 7.85%). Part of the unstratified
+line was site composition: phrases common at a site where one animal dominates passed as referents for it. As
+registered, the stratified figures replace the current ones (PROGRESS tier 1 cell; `prizebench.referent_fixed`
+stratified by default). Progress: none (streak 1). Tally, counting parts: 1552 held, 1467 failed (3019 registered).
