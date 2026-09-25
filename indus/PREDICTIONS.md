@@ -11269,3 +11269,15 @@ site (50 sites) and the pictures shuffled within sites, the combined pool gives 
 line was site composition: phrases common at a site where one animal dominates passed as referents for it. As
 registered, the stratified figures replace the current ones (PROGRESS tier 1 cell; `prizebench.referent_fixed`
 stratified by default). Progress: none (streak 1). Tally, counting parts: 1552 held, 1467 failed (3019 registered).
+
+# Three-hundred-and-thirty-fourth set, registered before testing (25 September 2026): decipherment loop 159, base rates stratified by site and object class (four hypotheses)
+
+Streak 1. In the one pool, seals are mostly bull and tablets rarely: a phrase commoner on seals than on tablets passes
+as a bull referent. Set 333's site strata become (site, object class: seal, tablet, tag); expected shares and the
+shuffles within strata as there (`predict_test334.py`). A validation: lower figures replace the current ones (18.99% /
+6.70% without Bull1 units); no progress either way. Not measured before registering.
+
+- **SX1** The stratified FDR is at or below 10%.
+- **SX2** The stratified coverage is at least 18.99%.
+- **SX3** Without Bull1 units, at least 6.70%.
+- **SX4** Progress rule: none (validation; recorded as failing).
