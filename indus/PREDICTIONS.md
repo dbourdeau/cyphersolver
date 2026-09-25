@@ -10291,3 +10291,16 @@ independent transcriptions; and M77's reading is of this object only as far as t
 4+ signs). What it shows: a model that never saw the text restores an illegible sign as another scholar read it in a
 quarter of cases, from context alone. Tier 3 gets a sign-level line (not meaning). Progress: streak 0. Tally, counting
 parts: 1470 held, 1397 failed (2867 registered).
+
+# Two-hundred-and-eighty-fourth set, registered before testing (25 September 2026): decipherment loop 109, the copy-free restoration check on new cases (four hypotheses)
+
+Streak 0. Set 283 met its rule narrowly on 15 cases. Replication on cases it did not use: ICIT lines of 4+ signs with
+exactly one illegible sign at any position (broken edges allowed), outside set 255's worklist, whose aligned M77 lines
+agree on one legible sign. The count (34 cases) was looked up before registering; no prediction has been made for them.
+Same procedure as set 283: model retrained without copies of each gap line, top 5 of the 150 commonest signs
+(`predict_test284.py`).
+
+- **MN1** Top-1 matches the M77 reading in 25% or more of the new cases (10+).
+- **MN2** Top-5 contains it in 50% or more.
+- **MN3** Top-1 beats the frequency baseline.
+- **MN4** Progress rule: MN1 and MN3 hold on the new cases (the tier 3 line then counts both samples).
