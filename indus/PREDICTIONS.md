@@ -11147,3 +11147,13 @@ Both failed. With copper (76 objects), incised (121) and moulded (359) as separa
 finds 328 units (against 388), FDR 5.3%, coverage 4.37% against 4.79% (TY1 fails): a unit shared by copper and incised
 tablets loses its support when the pools are split, and the purer base rates do not make up for it. Progress: none
 (streak 2). Tally, counting parts: 1538 held, 1460 failed (2998 registered).
+
+# Three-hundred-and-twenty-eighth set, registered before testing (25 September 2026): decipherment loop 153, one pool for all pictured tablets (two hypotheses)
+
+Streak 2. Splitting pools lost support (set 327). The reverse: individually made and moulded tablets in one pool (base
+rates over all; part-texts merged across the pool), base-rate configuration of set 325; combined FDR against 100
+picture shuffles (`predict_test328.py`). Referent labels are mostly pool-local (set 243), so mixing may only add noise;
+the FDR decides. Not measured before registering.
+
+- **MP1** The combined FDR is at or below 10% and coverage rises above 4.79%.
+- **MP2** Progress rule: MP1 holds (one pool for all pictured tablets).
