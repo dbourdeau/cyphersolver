@@ -13,6 +13,10 @@ def fam(g):
 
 class M3(M2):
     famfn = staticmethod(fam)
+    K = 1.0  # add-K smoothing of the count components (set 212 tests K = 0.3)
+
+    def sm(self, c, w):
+        return (c[w] + self.K) / (sum(c.values()) + self.K * self.V)
 
     def __init__(self, train):
         super().__init__(train)
@@ -137,3 +141,7 @@ class M4(M3):
 
 def with_fam2(fn):
     return type('M4f', (M4,), {'fam2': staticmethod(fn)})
+
+
+def with_k(k, base=None):
+    return type('M3k', (base or M3,), {'K': k})

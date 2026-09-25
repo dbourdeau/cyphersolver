@@ -18,9 +18,9 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 3 | U vault | share of tokens in texts never used to fix the values (B's new lines; later, newly excavated finds) read as sense with values fixed beforehand | 0 (no sound value has passed); picture vault: weak; leave-one-out 16.9% (p = 0.05), 13.6% with near duplicates together (p = 0.14), 49 of 50 splits above the null median (sets 201-203) |
 | 4 | A archaeological consistency | readings or structure hold across sites, periods, duplicates and sealings of the same seal | supporting: fish/520 signal holds at all sites and periods (set 196); Tamil Nadu graffiti composites are less ordered than Indus lines (70.5% against 88.0% order consistency, set 204) |
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 81.3% / 68.3%; no candidate beats the decoys inside the fifth (set 198) |
-| 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.0% (frequency 0% / 1.3%) |
-| 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 38.3% / 60.6% (two-direction model, set 204; discounted family context, set 210; frequency 9.6% / 22.4%) |
-| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.675, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
+| 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.4% (frequency 0% / 1.3%) |
+| 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 39.7% / 61.8% (two-direction model, set 204; discounted contexts, sets 210-211; frequency 9.6% / 22.4%) |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.635, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
 
@@ -105,3 +105,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 33 | 208 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | families from Parpola's descriptions also improve S (random none): graphic effect replicates with an independent definition; nothing beyond decade families (no progress; streak 3) |
 | 34 | 209 | 4.685 (25.3%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | closer-line bodies do not show the name-body pattern (sign before a closer no more often a head); no roles added (no progress; streak 4) |
 | 35 | 210 | 4.675 (25.5%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | discounted family 4-gram: S 4.685 to 4.675, replicated A to B; SIGN top-1 38.3% (progress; streak 0) |
+| 36 | 211 | 4.635 (26.1%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | discounted sign trigram: S 4.675 to 4.635 (largest single gain), replicated A to B; SIGN 39.7% / 61.8%, WORD top-10 3.4% (progress; streak 0) |

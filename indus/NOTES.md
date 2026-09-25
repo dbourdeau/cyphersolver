@@ -2466,6 +2466,11 @@ vs 77%, B 64% vs 67%); no closer-line roles adopted. No progress: streak 4. Tall
 Registered first (d73addcc6). Discounted family 4-gram: S 4.685 -> 4.675, A -> B replicated; SIGN 38.3% / 60.6%.
 Progress: streak 0. Tally 1344 held, 1244 failed.
 
+## Two-hundred-and-twenty-fifth pass (24 Sept 2026): decipherment loop 36, discounted sign trigram
+
+Registered first (107ae0f35). Discounted sign trigram: S 4.675 -> 4.635, A -> B replicated; SIGN 39.7% / 61.8%, WORD
+top-10 3.4%. Progress: streak 0. Tally 1348 held, 1244 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

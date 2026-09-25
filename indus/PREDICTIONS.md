@@ -8746,3 +8746,11 @@ dozen times. Add-k with k = 0.3 (chosen on the training lines' own split: 4.6772
 - **SM2** The same A -> B.
 - **SM3** SIGN top-1 on the fixed test does not fall.
 - **SM4** Progress rule: SM1 and SM2 hold (k = 0.3 adopted).
+
+## Results of the two-hundred-and-eleventh set (added after the test; `predict_test211.py`, `results/predict_test211.md`, `famlm.py` trik)
+
+All four held. Discounting the sign trigram (D = 0.75) onto the Kneser-Ney bigram lowers S on the fixed test from
+4.6753 to 4.6354 (gain 0.040, the largest single gain of the loops; TK1) and A -> B from 5.2146 to 5.2070 (TK2);
+SIGN top-1 rises from 38.2% to 39.6% (TK3). trik replaces tri; the metric run gives S 4.635 (26.1% of the unigram
+entropy explained), SIGN 39.7% / 61.8%, WORD top-10 3.4%. Progress: streak 0. Tally, counting parts: 1348 held,
+1244 failed (2592 registered).
