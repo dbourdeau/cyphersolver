@@ -8949,3 +8949,10 @@ LABEL-COUNT). Design on A: margin 50.53 -> 51.16 (15 more lines).
 - **ED2** It raises coverage of real B lines more than of shuffled B lines.
 - **ED3** It raises the margin on F's extra lines.
 - **ED4** Progress rule: ED1 and ED2 hold.
+
+## Results of the two-hundred-and-twenty-first set (added after the test; `predict_test221.py`, `results/predict_test221.md`, `grammar.parse4`)
+
+All four held. EDGE-DOUBLE (a doubled non-numeral sign at either edge, the rest parsing) raises the margin over
+shuffled lines on B from 35.13 to 35.92 points (ED1), real B coverage more than shuffled (+1.04 against +0.25; ED2),
+and the margin on F's extra lines from 17.92 to 18.43 (ED3). Adopted in the metric's G margin. Progress: streak 0.
+Tally, counting parts: 1376 held, 1258 failed (2634 registered).

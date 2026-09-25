@@ -2516,6 +2516,11 @@ Registered first (5c627cfb8). Count tails show no name structure beyond frequenc
 Registered first (705fc6646). Strict suffixing profile: L world 81.3% -> 85.1% (WALS), 68.3% -> 77.0% (Grambank);
 Burushaski out in WALS only, stays open. Progress: streak 0. Tally 1372 held, 1258 failed.
 
+## Two-hundred-and-thirty-fifth pass (24 Sept 2026): decipherment loop 46, edge doubling in the grammar
+
+Registered first (e423a3b97). EDGE-DOUBLE raises the G margin on B (35.1 -> 35.9) and F (17.9 -> 18.4), real more
+than shuffled. Progress: streak 0. Tally 1376 held, 1258 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

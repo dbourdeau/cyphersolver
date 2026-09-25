@@ -155,3 +155,16 @@ def parse3(t, heads, hc, mc, labels):
     if len(t) >= 3 and t[0] in labels and t[1] in R.NUMS and _parse(t[1:], heads, G2_RULES) == 'count':
         return 'label-count'
     return None
+
+
+def parse4(t, heads, hc, mc, labels):
+    """parse3 plus EDGE-DOUBLE (set 221): a doubled non-numeral sign at either edge, the rest parsing."""
+    lab = parse3(t, heads, hc, mc, labels)
+    if lab is not None:
+        return lab
+    t = tuple(t)
+    if len(t) >= 4 and t[0] == t[1] and t[0] not in R.NUMS and parse3(t[2:], heads, hc, mc, labels) is not None:
+        return 'edge-double'
+    if len(t) >= 4 and t[-1] == t[-2] and t[-1] not in R.NUMS and parse3(t[:-2], heads, hc, mc, labels) is not None:
+        return 'edge-double'
+    return None
