@@ -2797,6 +2797,11 @@ SIGN worse). No progress (streak 5). Tally 1457 held, 1369 failed.
 Registered first (dbff60678). NAME-COUNT and PRE-NAME lower the margins; TWO-400 rises 0.27 on A, below the threshold.
 No progress (streak 6). Tally 1457 held, 1373 failed.
 
+## Two-hundred-and-eighty-eighth pass (25 Sept 2026): decipherment loop 99, two-direction WORD scorer
+
+Registered first (9f59944e9). Top-10 8 -> 10 of 232 (3.4% -> 4.3%), below the 1-point threshold. No progress (streak
+7). Tally 1458 held, 1375 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

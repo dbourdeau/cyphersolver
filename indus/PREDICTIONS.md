@@ -10087,3 +10087,11 @@ measured before registering.
 - **WB1** WORD top-10 rises by 1 point or more.
 - **WB2** WORD top-1 does not fall.
 - **WB3** Progress rule: WB1 and WB2 hold (the WORD task then uses the two-direction scorer).
+
+## Results of the two-hundred-and-seventy-fourth set (added after the test; `predict_test274.py`, `results/predict_test274.md`)
+
+One held, two failed. Scoring both reading directions puts 10 of the 232 held-out names in the top 10 instead of 8
+(3.4% -> 4.3%), 0.86 point, below the registered 1-point rise (WB1 fails); top-1 stays 0 (WB2 holds). The direction of
+the gain matches the SIGN task's (set 204), but two names are too few to adopt the scorer: the WORD task is bounded by
+the 54 test names seen whole in training (set 256). Progress: none (streak 7). Tally, counting parts: 1458 held, 1375
+failed (2833 registered).
