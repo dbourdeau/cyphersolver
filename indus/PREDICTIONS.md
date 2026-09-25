@@ -9796,3 +9796,13 @@ aside; lexical signs only (`predict_test260.py`). Not measured before registerin
 - **CH2** B (M77 additions, heads from A): the same.
 - **CH3** A: earlier body signs are head-class no more than name modifiers are, plus 10 points.
 - **CH4** Progress rule: CH1-CH3 hold; `roles` then gives pre-closer signs 'name head' and earlier body signs 'name modifier'.
+
+## Results of the two-hundred-and-sixtieth set (added after the test; `predict_test260.py`, `results/predict_test260.md`)
+
+Two held, two failed. On A the sign before a closer is head-class more often than the earlier body signs (25 of 96,
+26%, against 24 of 233, 10%; p = 0.0004; CH1), and the earlier signs are head-class about as rarely as name modifiers
+(10% against 7%; CH3). On B the difference is gone (7 of 48, 15%, against 16 of 121, 13%; p = 0.5; CH2 fails). With
+the strict head class (5+ heads, more often head than modifier) only a quarter of pre-closer signs qualify, far below
+FX13's 67% (any sign that ever heads a name): closers take mostly their own preceding signs (FX7), not the 740 heads.
+The name frame does not transfer to closer lines on the evidence of B; `roles` unchanged. Progress: none (streak 6).
+Tally, counting parts: 1441 held, 1336 failed (2777 registered).

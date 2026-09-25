@@ -2724,6 +2724,11 @@ Registered first (c37164f1e). The design-split gain does not survive: S 4.6354 -
 SIGN 39.7% -> 39.6%. Lesson: small S gains on the training split's own design run do not predict the fixed test. No
 progress (streak 5). Tally 1439 held, 1334 failed.
 
+## Two-hundred-and-seventy-fourth pass (25 Sept 2026): decipherment loop 85, head + modifier frame before closers
+
+Registered first (6d3c4baba). A: pre-closer signs head-class 26% against 10% (p = 0.0004); B: 15% against 13% (p = 0.5).
+Not replicated, so the closer-line tokens stay without a role. No progress (streak 6). Tally 1441 held, 1336 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
