@@ -10377,3 +10377,16 @@ still recovers a-mo-ta (ROTA, wheel) and ko-wa (MUL, woman), none with a wrong i
 are expected to be chance; the old 27 are almost all real. `prizebench.referent_fixed` now uses k 2, s 0.67 (the old
 line is referent_fixed(DL, 3, 0.8)). Progress: the tier 1 referent line rises 0.79% -> 1.38% (streak 0). Tally,
 counting parts: 1481 held, 1398 failed (2879 registered).
+
+# Two-hundred-and-eighty-eighth set, registered before testing (25 September 2026): decipherment loop 113, single signs and 3-sign runs as referent units (four hypotheses)
+
+Streak 0. The referent method counts whole texts and adjacent sign pairs (sets 233-287). A referent may sit in one sign
+(a noun written with one sign) or need three. With set 287's criterion (2+ objects in 2+ distinct texts, 67%+ one
+picture) and its false-discovery rule (FDR against 100 picture shuffles <= 10%), unit sets (2), (1, 2), (2, 3) and
+(1, 2, 3) are compared (`predict_test288.py`; `referents.units(ns=...)`). The single-sign units are listed. Not
+measured before registering.
+
+- **RN1** Adding single signs keeps FDR <= 10% and raises the coverage.
+- **RN2** Adding 3-sign runs keeps FDR <= 10% and raises the coverage.
+- **RN3** The unit set with FDR <= 10% and the largest coverage beats pairs alone.
+- **RN4** Progress rule: RN3 holds (the referent line then uses the chosen unit set).

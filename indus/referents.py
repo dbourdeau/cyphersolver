@@ -49,11 +49,13 @@ def pools(F, recs):
     return out
 
 
-def units(P, k, s):
-    """{'texts': qualifying whole texts of the individually made pool, lab: qualifying pairs per pool}."""
+def units(P, k, s, ns=(2,)):
+    """{'texts': qualifying whole texts of the individually made pool, (lab, n): qualifying n-sign runs per pool}.
+    ns = (2,) is the pair method of sets 237-287; set 288 tests adding 1 and 3."""
     out = {'texts': q_texts(P['made'][0], k, s)}
     for lab, (clean, both) in P.items():
-        out[lab] = q_pairs(both, k, s)
+        for n in ns:
+            out[(lab, n)] = q_pairs(both, k, s, n)
     return out
 
 
@@ -69,16 +71,18 @@ def coverage(DL, P, u):
             cov += len(t)
             continue
         mark = set()
-        for lab in P:
-            if t in used[lab]:
-                for i in range(len(t) - 1):
-                    if t[i:i + 2] in u[lab]:
-                        mark |= {i, i + 1}
+        for key, qq in u.items():
+            if key == 'texts' or t not in used[key[0]]:
+                continue
+            n = key[1]
+            for i in range(len(t) - n + 1):
+                if t[i:i + n] in qq:
+                    mark |= set(range(i, i + n))
         cov += len(mark)
     return cov / sum(len(t) for t in DL)
 
 
-def null_count(P, k, s, n=100, seed=287):
+def null_count(P, k, s, n=100, seed=287, ns=(2,)):
     """Mean number of qualifying units with pictures shuffled among the objects of each pool."""
     rnd = random.Random(seed)
     tot = 0
@@ -91,5 +95,5 @@ def null_count(P, k, s, n=100, seed=287):
             cp = [m for t, m in clean]
             rnd.shuffle(cp)
             Q[lab] = (list(zip([t for t, m in clean], cp)), sh)
-        tot += count(units(Q, k, s))
+        tot += count(units(Q, k, s, ns))
     return tot / n
