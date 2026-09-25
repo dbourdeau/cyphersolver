@@ -2751,6 +2751,12 @@ Registered first (1e8286fac). OPEN-PRONE joins the grammar (parse11): margin A 4
 LABEL-ANY and NAME-TAIL rejected (both confirm earlier limits: frequent labels only; nothing but 400 / 90 after a name).
 Progress (streak 0). Tally 1450 held, 1343 failed.
 
+## Two-hundred-and-seventy-ninth pass (25 Sept 2026): decipherment loop 90, three more grammar rules
+
+Registered first (fa7a1a105). Read backwards, real lines almost never parse while shuffles often do (margin A 49.64 ->
+32.04 under REVERSED): the grammar is directional and the reading order stands. BARE-2 and ENDP-POST add nothing. No
+progress (streak 1). Tally 1450 held, 1347 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

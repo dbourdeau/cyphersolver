@@ -9909,3 +9909,11 @@ measured before registering.
 - **GV2** BARE-2, the same.
 - **GV3** ENDP-POST, the same.
 - **GV4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
+
+## Results of the two-hundred-and-sixty-fifth set (added after the test; `predict_test265.py`, `results/predict_test265.md`)
+
+All four failed. REVERSED (accept a line if it parses read backwards) lowers the margin sharply (A 49.64 -> 32.04, B
+37.39 -> 21.07): read backwards, shuffled lines parse far more often than real ones, so real lines almost never parse
+in reverse. The grammar is strongly directional, which confirms the corpus's reading order, and no direction slips are
+recoverable this way. BARE-2 lowers both margins slightly (49.52, 37.32); ENDP-POST parses no new line (49.64, 37.39).
+Progress: none (streak 1). Tally, counting parts: 1450 held, 1347 failed (2797 registered).
