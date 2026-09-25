@@ -204,3 +204,24 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
   Pazzi war?). 409 cipher tokens / 44 signs: homophonic anneal fails. Gabbrielli's key volume I (Ilardi reel 58,
   index frames checked 24 Sept) lists Acciaioli keys only for Giovanni 1504 and Roberto 1505-14; no Donato 1478.
   Florentine keys to Lorenzo (Medici avanti il Principato) are not online. Open.
+
+## Nos. 7, 9, 19, 21 transcribed (agent J, 24 Sept)
+
+- **No. 7 (R4796)**: despatch to the "Officiales Balie" from an orator at Milan ("Servitor ... Orator Ant..."; Lionardo
+  Benvoglienti named; the Duke of Milan), 363 cipher tokens / 45 signs in ~11 lines, faint interlinear letter glosses.
+  Mapping R4750's values (key "a messer Lionardo e messer Antonio ambasciatori a Milano 1454") onto the
+  transcriber's sign names already yields "milano" inside the cipher: R4750 is the likely key; re-reading in R4750's
+  own sign inventory under way (`transcripts/no07_reading.txt`).
+- **No. 9 (R4798)**: undated slip, quelli da Coreggio, Carpi, Rimini, "re di Ragona" (c. 1495-1516?); 46 cipher tokens
+  in two runs + a cipher signature group. Too short for ciphertext-only.
+- **No. 19 (R4807)**: Sienese envoys waiting on the "S. Capitano", 9 March (no year); 118 cipher tokens / 37 signs,
+  clear cribs between runs. Too short alone.
+- **No. 21 (R4809)**: informal letter "Karissimo come padre"; 107 cipher tokens / 35 signs (crosses, squares, Λ);
+  signature group in cipher + "vostro". Too short alone.
+
+## No. 24 P2 transcribed (agents H, I): same system as no. 6
+
+- P2 = 38 lines, 2,720 tokens (m.01-20: 1,414; m.21-38: 1,306), every sign in the no. 6 legend; "a PAREN" 25x,
+  "p p" ~66x, point-framed single signs (CIRC, RX+, BIGX, PHI, x) = probable name codes. With no. 6: 3,689 tokens
+  (`transcripts/no06_24all.tok`). Homophonic anneal (homsolve2, Italian, order 3-4-5, 4 x 6 restarts): no
+  convergence (-2.93/token); null-aware solver (homsolve3) running.
