@@ -9852,3 +9852,14 @@ B the end-prone signs close as many shuffled lines as real ones). CLOSER-740 low
 TWO-BARE raises B (36.59) but A only 0.02 point: both rejected. The grammar becomes parse9 = parse8 + END-PRONE (the
 end-prone set learned from A); `progress.grammar_margin` uses it. Progress: G margin A rises (streak 0). Tally, counting
 parts: 1445 held, 1340 failed (2785 registered).
+
+# Two-hundred-and-sixty-third set, registered before testing (25 September 2026): decipherment loop 88, three more grammar rules for unparsed lines (four hypotheses)
+
+Streak 0. Same method as sets 261-262, on the lines parse9 leaves unparsed (`predict_test263.py`): NUM-END (1-2 lexical
+signs, then a numeral run ending the line: a label written after its count), BODY-400 (3+ lexical signs + 400; LOW-POST
+covers only 1-2), HEADING-BODY (the heading unit, then any lexical body). Margins not measured before registering.
+
+- **GN1** NUM-END raises the margin on A by 0.3 point or more and raises it on B.
+- **GN2** BODY-400, the same.
+- **GN3** HEADING-BODY, the same.
+- **GN4** Progress rule: the rules that hold, together, raise the margin on A (0.3+) and on B; they then join the grammar.
