@@ -10265,3 +10265,18 @@ H-1816 717, M-168 741, 255 13 744 [892] 740) and top-5 5, against 0 for the base
 minimum of 10. Encouraging, not evidence: no progress (streak 3). Lesson: any restoration check must drop gap lines
 whose completion is a training line. Tally, counting parts: 1466 held, 1397 failed (2863 registered; this set's four
 'held' are withdrawn in the text).
+
+# Two-hundred-and-eighty-third set, registered before testing (25 September 2026): decipherment loop 108, the M77 restoration check without copies (four hypotheses)
+
+Streak 3. Set 282 was withdrawn because 8 of its 15 completed gap lines were training lines. Here the same 15 cases
+(gap lines of 4+ signs with an agreed legible M77 reading, `results/restoration_m77.tsv`) are predicted afresh, each by
+the two-direction SIGN model retrained on the distinct lines minus every copy of the gap line: a line of the same length
+agreeing on all other positions but at most one (the alignment's own criterion), or a line containing the whole gap line
+with any sign in the gap as a contiguous run (`predict_test283.py`). What remains is what the model learned from other
+texts. The predictions are made and compared inside the script. The M77 readings and set 282's (leaky) predictions are
+known; these new predictions are not. Criteria as set 255.
+
+- **MC1** Top-1 matches the M77 reading in 25% or more of the 15 cases.
+- **MC2** Top-5 contains it in 50% or more.
+- **MC3** Top-1 beats the frequency baseline (the commonest sign).
+- **MC4** Progress rule: MC1 and MC3 hold (tier 3 gains its first line, 'blind restorations confirmed against M77, copies excluded').
