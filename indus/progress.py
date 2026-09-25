@@ -23,7 +23,7 @@ from predict_test108 import genre
 from predict_test161 import heading
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-MODEL = {'keys': ['trik', 'pos', 'end', 'f4k', 'first'], 'kn': True}  # set 125; ftri 194, f4 199, f4k 210; trik 211; first 213 (firstpos, set 214, lowers S but not the prize tasks: not adopted)
+MODEL = {'keys': ['trik', 'pos', 'end', 'f4k'], 'kn': True}  # set 125; ftri 194, f4 199, f4k 210; trik 211. 'first' (213) withdrawn: it conditioned position 0 on itself, a leak (correction after set 223)
 ANCHORS = {'749': 'markhor goat', '341': 'rhinoceros', '753': 'hare', '777': 'markhor goat / horned archer'}  # copper-tablet equations (fourth pass)
 VALUES = {}                                                   # no sound value has passed a registered test
 CAGED = {'226', '232', '153', '236', '241', '144', '393', '895', '466', '804', '878', '689'}  # set 184

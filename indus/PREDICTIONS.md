@@ -8784,6 +8784,12 @@ component's weight falls to zero beside it). first enters the model; the metric 
 SIGN 39.8% / 62.1%, WORD top-10 3.9%. Progress: streak 0. Tally, counting parts: 1353 held, 1247 failed (2600
 registered).
 
+**Withdrawn after set 223 (leak).** The 'first' component (set 125's) counts, for every position, the signs of lines
+that open with the line's first sign, including position 0 itself: the first sign is predicted from a context that is
+the first sign. With position 0 given no such conditioning, 'first' gets weight 0 and S is exactly the model without
+it (4.6354). The S gain here, and those of firstpos (set 214) and first2 (set 217, which conditions position 1 on
+itself), were artefacts of the leak. 'first' is removed from the model; S returns to 4.635 (set 211).
+
 # Two-hundred-and-fourteenth set, registered before testing (24 September 2026): decipherment loop 39, opening sign by position (four hypotheses)
 
 Metric after loop 38: S 4.610 (trik + pos + end + f4k + first); streak 0. A design run on the training lines' own

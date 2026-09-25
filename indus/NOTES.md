@@ -2568,3 +2568,10 @@ chance rate of his Tamil-compound control as done here; the counts and tables in
 computed in these two sessions.
 
 Draft write-up page: `unpublished/indus.html` (not on the site; see `unpublished/README.md` for publishing).
+
+## Correction (24 Sept 2026): the opening-sign component was a leak
+
+The 'first' component adopted in loop 38 (set 213) conditioned position 0 on itself; fixed, it gets weight 0 and S is
+unchanged by it. Loop 38's gain is withdrawn and 'first' removed from the model (S back to 4.635); the S gains of
+firstpos (set 214) and first2 (set 217) were the same artefact (neither was adopted). Lesson: any context feature must
+be computed from signs before the predicted one only.
