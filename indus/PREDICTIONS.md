@@ -8820,3 +8820,14 @@ times; statistic = share of pre-count tokens taken by the ten commonest pre-coun
 - **CT4** Pre-count signs are name heads (seen before 740 / 520 in A) less often than the counted sign after the
   numerals (B): the label slot is not the counted-thing slot.
 - **CT5** Progress rule: CT1 and CT2 hold; then the sign directly before a count gets the role 'count label' in R.
+
+## Results of the two-hundred-and-fifteenth set (added after the test; `predict_test215.py`, `results/predict_test215.md`)
+
+Four held, one failed. The slot directly before a count is filled from a restricted set: the ten commonest pre-count
+signs take 51.9% of 270 tokens in A (shuffles p = 0.001; CT1) and 58.3% of 199 in B (p = 0.001; CT2), and A's ten
+cover 42.7% of B's (CT3). Pre-count signs are name heads about as often as counted signs (69% against 73%; CT4 fails).
+**Check after the test**: the commonest pre-count signs are the heading signs 861, 820, 817 (and 60), whose second
+element 2 is read as a numeral; with those lines left out the slot is still restricted, but less (A p = 0.036, B p =
+0.013). Heading tokens already have a role; the new role 'count label' adds the other pre-count signs: R rises from
+81.3% to 84.2% (344 tokens). Progress (CT5): streak 0. Tally, counting parts: 1360 held, 1249 failed (2609
+registered).

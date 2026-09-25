@@ -2486,6 +2486,11 @@ WORD top-10 3.9%. Progress: streak 0. Tally 1353 held, 1247 failed.
 Registered first (c1ecb258d). firstpos lowers S (4.610 -> 4.594) but not SIGN / WORD; not adopted, counted no
 progress (streak 1). Tally 1356 held, 1248 failed.
 
+## Two-hundred-and-twenty-ninth pass (24 Sept 2026): decipherment loop 40, the sign before a count
+
+Registered first (533d75f83). The pre-count slot is restricted in A and B (p = 0.001 each; without heading lines p =
+0.036 / 0.013); new role 'count label': R 81.3% -> 84.2%. Progress: streak 0. Tally 1360 held, 1249 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

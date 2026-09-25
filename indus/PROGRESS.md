@@ -20,7 +20,7 @@ by what such a panel would accept (`prizebench.py`); the structural components b
 | 5 | L language, against genre-matched decoys | the typology narrows the field (L world); a language claim must beat typology-matched decoys of the same genre | L world 81.3% / 68.3%; no candidate beats the decoys inside the fifth (set 198) |
 | 6 | WORD task | hide a name body in a held-out line; rank all training bodies; top-1 / top-10 against frequency | 0% / 3.9% (frequency 0% / 1.3%) |
 | 7 | SIGN task | hide one sign; rank the 150 commonest signs; top-1 / top-5 against frequency | 39.8% / 62.1% (two-direction model, set 204; discounted contexts, sets 210-211; opening sign, set 213; frequency 9.6% / 22.4%) |
-| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.610, R 81.3%, G 46.2 / 34.7, M+ 41.4% |
+| - | diagnostics | S bits/sign, R roles, G margin, M+ | S 4.610, R 84.2%, G 46.2 / 34.7, M+ 41.4% |
 
 ### The target: what a winning entry needs (estimate, 24 September 2026)
 
@@ -109,3 +109,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | 37 | 212 | 4.635 (26.1%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | lighter (add-0.3) smoothing helps the fixed test, hurts A to B and SIGN: overfits, not adopted (no progress; streak 1) |
 | 38 | 213 | 4.610 (26.5%) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | the line's opening sign as context: S 4.635 to 4.610, A to B -0.037; SIGN 39.8% / 62.1%, WORD top-10 3.9% (progress; streak 0) |
 | 39 | 214 | 4.610 (26.5%; 4.594 with firstpos, not adopted) | 81.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | opening sign x position lowers S but SIGN / WORD slip (39.7% / 3.4%); prize tasks outrank S, not adopted (no progress; streak 1) |
+| 40 | 215 | 4.610 (26.5%) | 84.2% | 16.6% (M+ 41.4%) | 0 | 4 (L world 81.3%) | the slot before a count is restricted in A and B (also without heading lines): new role 'count label', R 81.3% to 84.2% (progress; streak 0) |

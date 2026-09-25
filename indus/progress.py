@@ -87,6 +87,8 @@ def roles(DL):
                 role = 'counted sign'
             elif i in mods:
                 role = 'name modifier'
+            elif i + 1 < len(t) and t[i + 1] in R.NUMS and (i == 0 or t[i - 1] not in R.NUMS) and genre(t) == 'count':
+                role = 'count label'  # set 215 (CT1-CT3): the slot before a count is restricted (A, B; also without the heading)
             num_before = g in R.NUMS
             tot += 1
             if role:
