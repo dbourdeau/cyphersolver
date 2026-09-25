@@ -11400,3 +11400,14 @@ All four held. On the true-duplicate pool: alpha 0.0001 62 units, FDR 0.5%, 1.49
 (MA3). The referent line becomes 2.80%, nearly all of it for pictures other than the default bull: counting mould
 copies once removes the bull question. `prizebench.referent_fixed` uses this pool. Progress: streak 0. Tally, counting
 parts: 1563 held, 1479 failed (3042 registered).
+
+# Three-hundred-and-fortieth set, registered before testing (25 September 2026): decipherment loop 165, split-half check of the true-duplicate configuration (three hypotheses)
+
+Streak 0. Set 339's configuration (mould copies and impressions once, hand-made objects separately, site-and-class
+strata, alpha 0.002) set the referent line at 2.80%. Independent check: five random half-splits of the distinct texts,
+both directions, held-out matches against 200 joint shuffles; held-out precision (`predict_test340.py`). A validation:
+a failure of TV1 downgrades the line; no progress either way. Not measured before registering.
+
+- **TV1** The configuration is confirmed on the five split-halves (p < 0.05).
+- **TV2** Its held-out precision is at least 14% (set 326).
+- **TV3** Progress rule: none (validation; recorded as failing).
