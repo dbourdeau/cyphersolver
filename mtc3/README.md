@@ -1,7 +1,7 @@
 # MysteryTwister challenges: a harder track
 
 Status: in progress. 24 Sept 2026: challenge 115 (Bigram Substitution Part 2) solved and accepted (2nd attempt; Bigram Part 1 also accepted as a format test);
-180 (Camouflage Part 6) attempted, open; Weakened ElsieFour Parts 1-3 in progress (SAT attack).
+25 Sept 2026: 180 (Camouflage Part 6) solved and accepted on the 1st attempt; Weakened ElsieFour Parts 1-3 in progress (SAT attack).
 
 George Lasry (24 Sept 2026) suggested it: historical European ciphers are too easy a test for current models, and
 MysteryTwister (formerly MysteryTwister C3, now mysterytwister.org, run by the CrypTool project) accepts LLM solutions
@@ -44,7 +44,7 @@ Level X items with public solutions (Vatican Part 3, Catherine of Aragon) are on
 |---|---|---|---|---|
 | 115 | Bigram Substitution, Part 2 | II | Solved; accepted 24 Sept 2026 on the 2nd attempt (first key misread the ending); first LLM solve |  `115-bigram2/` |
 | Bigram 1 | Bigram Substitution, Part 1 | I | Key computed with the official tool from the given plaintext/ciphertext; accepted 24 Sept 2026 (used as a format test) | `bigram1/private/` |
-| 180 | Monoalphabetic Substitution with Camouflage, Part 6 | II | Attempted, open: the search never reaches the true key | `180-camouflage6/` |
+| 180 | Monoalphabetic Substitution with Camouflage, Part 6 | II | Solved; accepted 25 Sept 2026 on the 1st attempt (piece-growth beam for 5 pieces, joint annealing for the last 4); first LLM solve | `180-camouflage6/` |
 | 272-274, 292 | Weakened ElsieFour 1-3, ElsieFour 1 | II / III | In progress: SAT model recovers keys with 12 known cells; full known-plaintext recovery not yet finished | `272-274-weakened-elsiefour/` |
 
 Answers to live challenges are kept in each folder's `private/` directory, which is git-ignored: the repository is public,

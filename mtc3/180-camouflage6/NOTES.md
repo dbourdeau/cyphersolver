@@ -1,7 +1,7 @@
 # MTC3 180: Monoalphabetic Substitution with Camouflage, Part 6 (Veselovsky, 2012)
 
-Status: in progress (25 Sept 2026): all 9 pieces recovered and ordered, the odd sentence identified; awaiting the site's
-verdict on the submitted answer (kept in `private/`).
+Status: no write-up (MTC3 challenge, not a cipher target). Solved: the site accepted the answer on 25 Sept 2026, 1st attempt
+(answer kept in `private/`). First LLM solve of this challenge.
 
 Level II. Solvers: Peter Mustermann (2012), George Lasry (2023); no LLM solve.
 
@@ -87,7 +87,7 @@ repository (and the answer, a single non-lyric sentence, will go in `private/`).
 
 ## Remaining gaps
 
-None in the plaintext (all 1522 letters placed and read). Open only: the site's confirmation of the answer.
+None: all 1522 letters placed and read; answer accepted by the site on 25 Sept 2026.
 
 ## Escalation
 
