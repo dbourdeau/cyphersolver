@@ -9761,3 +9761,16 @@ cases prove little either way (at the SIGN task's 62% top-5, missing both happen
 check the restoration predictions have met is a miss. The M-62 line also shows how the transcriptions differ elsewhere
 (ICIT 551 ... 32, Parpola 550 ... 2): gap filling inherits transcription noise. Progress: none (streak 4). Tally,
 counting parts: 1439 held, 1330 failed (2769 registered).
+
+# Two-hundred-and-fifty-ninth set, registered before testing (25 September 2026): decipherment loop 84, an anti-cache for non-adjacent repeats (four hypotheses)
+
+Streak 4. Signs repeat non-adjacently inside a line less often than shuffles produce (DB6, DN6, HX14), which the
+n-gram model cannot see beyond its window. At each sign position the probability of a sign already written earlier in
+the line (other than the immediately preceding sign) is multiplied by gamma and the distribution renormalised. A
+design run on the training lines' own split gave 4.6772 -> 4.6736 at gamma 0.5 (0.4: 4.6737, 0.3: 4.6745); gamma is
+fixed at 0.5 (`predict_test259.py`). For SIGN, a candidate written elsewhere in the line, not adjacent, takes log gamma.
+
+- **AC1** S on the fixed test falls by 0.002 bits or more.
+- **AC2** The same A -> B (any fall).
+- **AC3** SIGN top-1 does not fall.
+- **AC4** Progress rule: AC1, AC2 and AC3 hold.
