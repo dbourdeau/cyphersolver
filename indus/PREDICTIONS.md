@@ -10981,3 +10981,15 @@ by the G margin on A and B. Not measured before registering.
 All three failed. BODY-90 (A 49.65, B 37.36) and SHORT-90 (49.62, 37.36) leave the margins practically unchanged: 90
 closes lexical bodies too rarely to form a frame; unlike 400 (sets 250, 263), it is a post-ending marker only.
 Progress: none (streak 4). Tally, counting parts: 1531 held, 1444 failed (2975 registered).
+
+# Three-hundred-and-nineteenth set, registered before testing (25 September 2026): decipherment loop 144, tablet referents on seals (three hypotheses)
+
+Streak 4. Referents do not travel between tablet types or cities (sets 243, 299), and seal texts do not name their
+animal (sets 238, 291). A direct cross-medium check: tablet referent units whose picture is an animal also shown on
+seals (elephant, rhinoceros, goat, bull, gaur, zebu, buffalo, tiger; the tablet code Bult counted as the bull) are
+looked for in seal texts; the seals carrying them should show that animal more often than chance (1,000 shuffles of
+the seal animals) (`predict_test319.py`). Not measured before registering.
+
+- **SM1** Seals carrying a tablet referent unit show its animal more often than chance (p < 0.05).
+- **SM2** At least one matched unit names an animal other than the default bull.
+- **SM3** Progress rule: SM1 holds (a new finding: referents travel from tablets to seals).
