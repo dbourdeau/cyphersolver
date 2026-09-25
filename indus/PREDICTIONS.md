@@ -9295,3 +9295,14 @@ pictures shuffled among objects, 1,000 times.
 - **PL3** The qualifying pairs occur on seals or other objects not used to find them (reported: how many tokens).
 - **PL4** Progress rule: PL1 and PL2 hold; the tokens of qualifying pairs on the tablets used are added to the tier-1
   referent line (their occurrences elsewhere are reported, not counted).
+
+## Results of the two-hundred-and-thirty-seventh set (added after the test; `predict_test237.py`, `results/predict_test237.md`, `prizebench.referent_fixed`)
+
+All four held. At the level where the method passed its Linear B control, 11 adjacent sign pairs recur on 3+
+individually made pictured tablets in 2+ distinct texts with one picture on 80%+ of them, against a shuffle median of
+0 (95th percentile 3; PL1, PL2): 95 595, 595 1, 1 142 = one-horned bull; 176 740 = bull; 706 33, 33 923, 923 740, 740 1
+= elephant; 32 740 = fish; 705 33 = hare; 240 740 = the S590 motif. Several come from near-duplicate texts (the
+elephant text and its variant with a final stroke), so the gain is thinner than the count. The pairs occur 275 times on
+other lines (PL3; reported, not counted). Counting their tokens on the tablets used raises the tier-1 referent line
+from 0.38% to 0.61% of sign tokens. Progress: streak 0. Tally, counting parts: 1413 held, 1283 failed (2696
+registered).

@@ -2600,6 +2600,12 @@ the Linear B gate (tier 2: 3 of 6). Progress: streak 0. Tally 1409 held, 1279 fa
 Registered first (b1cbfb9b6). Short 'other' lines are not bare names (A p = 0.81, B p = 0.051). No progress: streak 1.
 Tally 1409 held, 1283 failed.
 
+## Two-hundred-and-fifty-first pass (25 Sept 2026): decipherment loop 62, the referent method at phrase level
+
+Registered first (dcc09eb9c). 11 sign pairs have their referent fixed on individually made tablets (null median 0):
+elephant, bull, fish, hare, S590 phrases (partly near-duplicate texts). Tier-1 referent line 0.38% -> 0.61%. Progress:
+streak 0. Tally 1413 held, 1283 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but

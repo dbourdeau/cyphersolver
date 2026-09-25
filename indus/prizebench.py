@@ -97,5 +97,20 @@ def referent_fixed(DL):
     from predict_test200 import objects
     from predict_test233 import qualifying
     A, B, rowsA, recs, F = R.load_all()
-    q = qualifying(objects(F, recs, ('TAB:C', 'TAB:I')))
-    return sum(len(t) for t in DL if t in q) / sum(len(t) for t in DL), len(q)
+    objs = objects(F, recs, ('TAB:C', 'TAB:I'))
+    q = qualifying(objs)
+    # set 237 (PL1-PL2): + tokens of qualifying sign pairs on the individually made tablets used
+    from predict_test237 import qual
+    qp = qual(objs)
+    used = {t for t, m in objs}
+    cov = 0
+    for t in DL:
+        if t in q:
+            cov += len(t)
+        elif t in used:
+            mark = set()
+            for i in range(len(t) - 1):
+                if t[i:i + 2] in qp:
+                    mark |= {i, i + 1}
+            cov += len(mark)
+    return cov / sum(len(t) for t in DL), len(q) + len(qp)
