@@ -9391,3 +9391,16 @@ less picture-diverse than lexical pairs, not more (0.16 against 0.30, 4 pairs; J
 holds content words, not grammar (not registered in that direction; noted). Pairs with 740 / 520 alone are more
 picture-diverse (0.45 against 0.30, p = 0.011; JC3), replicating set 240 for the endings. No progress: streak 1. Tally,
 counting parts: 1418 held, 1292 failed (2710 registered).
+
+# Two-hundred-and-forty-second set, registered before testing (25 September 2026): decipherment loop 67, are the count labels content words? (three hypotheses)
+
+Streak 1. Set 241 saw (4 pairs, not in the registered direction) count-label pairs on moulded tablets less
+picture-diverse than lexical pairs. Registered now in that direction, on the samples not used there: the individually
+made pictured tablets (TAB:C, TAB:I) and, as a second sample, seals (SEAL:S, SEAL:R, their field animal as picture).
+Pairs containing one of A's ten commonest pre-count signs and no other grammatical sign, against pairs containing
+740 / 520; picture diversity as set 240 (pairs on 3+ objects).
+
+- **CL1** On the individually made tablets, count-label pairs are less picture-diverse than ending pairs (one-sided
+  rank test, p < 0.05).
+- **CL2** On seals, the same.
+- **CL3** Progress rule: CL1 or CL2 holds with the other in the same direction (the count label is a content slot).
