@@ -1,0 +1,2996 @@
+{
+ "title": "Historical ciphers solved with LLMs",
+ "subtitle": "24 keys recovered from ciphertext only; 17 keys or plaintexts found outside the collection; 6 borderline cases. List of 26 September 2026.",
+ "intro": "The ciphers below were worked by large language models (Claude) in the cyphersolver project (Daniel Bourdeau, with George Lasry). Each entry gives a short summary, the primary source (the original document), the secondary source (where the item was found: DECODE, Tomokiyo's cryptiana, Cipherbrain, a library catalogue), and a link to the full write-up with transcription, key and reading. Cases where the key or a decipherment sat next to the ciphertext in the same file are not listed.",
+ "site": "https://dbourdeau.github.io/cyphersolver/",
+ "sections": [
+  {
+   "head": "Keys recovered from ciphertext only",
+   "intro": "The key was rebuilt from the ciphertext alone, with no plaintext and no existing key. Three items had also been solved earlier by George Lasry but never published; the LLMs solved them independently, and his unpublished solution is noted.",
+   "items": [
+    {
+     "title": "Four cipher letters to Gianfrancesco Gonzaga, lord of Mantua",
+     "date": "1428-1430",
+     "summary": "Two keys rebuilt ciphertext-only: Rome, 9 Aug 1428 (96.6%) and Cattanei, Feb 1430 (96.7%). A third letter was re-deciphered from its interlinear gloss. Pandolfo Malatesta's own runs remain open. 91.5% of all signs read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Archivio di Stato di Mantova, Archivio Gonzaga"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1854",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1854"
+        },
+        {
+         "t": " (partially decrypted; catalogued as one letter)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/r1854.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/r1854.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Sienese envoys and others to the government of Siena",
+     "date": "before 1429 to 1547",
+     "summary": "Keys recovered from the ciphertext alone for three letters (nos. 25, 18, 14) and from an alphabet fragment for a fourth; none of the 43 keys filed with the letters fits. No. 25 reads 96.2%, no. 18 (Latin treaty articles with the Emperor) 87.1%. Several other letters in the file remain open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\""
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R4790",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4790"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R4814",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4814"
+        },
+        {
+         "t": " (no status); the archive's 1952 inventory calls the letters 'solo parzialmente decifrate'"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/siena1421.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/siena1421.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Lope de Soria to Charles V: the key-A letters",
+     "date": "Genoa, June-July 1523",
+     "summary": "Split entry. Soria used two ciphers in 1523. Key A (the June letter in three copies and the body of the July letter) had no key and no crib; it was broken by simulated annealing on a Castilian model of the 1520s and read nearly throughout: the Venetian league bought with Milanese money, the French king's expected descent on Italy. The later key-B letters were read from a key rebuilt from an external decipherment (R9844) and are not counted here.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial · split entry: key A (June and July letters) only"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Real Academia de la Historia, Madrid, Colección Salazar y Castro A-28 (9/28)"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R9488",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9488"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R9498",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9498"
+        },
+        {
+         "t": " (Non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/soria1523.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/soria1523.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Guido Rangone (Venice) to Anne de Montmorency",
+     "date": "24 Dec 1529 and 10 Jan 1530",
+     "summary": "A homophonic substitution of about 50 signs for Italian, broken by annealing. Both passages concern Cesare Fregoso. 87.9% of signs read; four short runs are too short to resolve.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "BnF, français 3070 f. 81 no. 40 and français 3082 f. 42 no. 19"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica fr. 3082",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b9060318p/f65.item"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica Clair. 331 copy",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b9000761d/f15.item"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R4249",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4249"
+        },
+        {
+         "t": "; Tomokiyo, cryptiana (francis.htm) lists both as undeciphered"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "francis.htm",
+         "url": "https://cryptiana.web.fc2.com/code/francis.htm"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/rangone1530.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/rangone1530.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Giovan Gioacchino da Passano (attributed), London, to Francis I",
+     "date": "15 Mar 1530 (copy heading)",
+     "summary": "An account of Wolsey's wealth: cash, credits, revenues, jewels and plate, Winchester, St Albans and York. A dotted re-transcription made the break possible. 386 of 402 signs read coherently (96.0%).",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "BnF, Clairambault 331, ff. 156-157"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b9000761d/f148.item"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Tomokiyo, cryptiana (francis.htm), listed as undeciphered"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "francis.htm",
+         "url": "https://cryptiana.web.fc2.com/code/francis.htm"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/joachim1530.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/joachim1530.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "A Bavarian agent to the Dukes of Bavaria: the Pressburg talks",
+     "date": "c. 1533-34",
+     "summary": "Split entry. 3,150 signs in a homophonic substitution, broken by constrained annealing against German of 1472-1609 on the first run; a faint gloss on the first lines agrees word for word. It reports the Pressburg negotiations between Ferdinand and John Zápolya, a Turkish embassy and Alvise Gritti. Running German with local errors; person codes open. The rest of this key volume was read from contemporary glosses and is not counted here.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial · split entry: R9416 pp. 3-4 (f. 263) only"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Bayerisches Hauptstaatsarchiv, Kurbayern Äußeres Archiv 4591, f. 263"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R9416",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9416"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/kaa4591.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/kaa4591.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Claude de La Guiche, bishop of Mirepoix (Rome), to Montmorency",
+     "date": "22 Nov 1551",
+     "summary": "A 406-sign passage in 22 invented signs, broken by permutation annealing. It covers the Count of Santa Fiora, 'mal satisfaict' and ready to serve the king on conditions. Seure's Lisbon letters in the same file are left open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "BnF, français 3138 no. 22, f. 60v"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b90601662/f65.item"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "BnF catalogue (Gallica harvest)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/guiche1551.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/guiche1551.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Mémoire en chiffre to the connétable de Montmorency",
+     "date": "12 Dec 1560",
+     "summary": "Ten pages in a cursive pseudo-script: a homophonic substitution with two-stroke units and four word codes, broken from the images alone. It reports on the Protestant rising in the Agenais a week after François II's death. 98.9% of 1,715 cipher words read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "BnF, français 3157 no. 67, ff. 152r-156v"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b90598645/f153.item"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "BnF catalogue",
+         "url": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc496207"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "BnF catalogue (Gallica harvest); no DECODE record"
+        }
+       ]
+      ],
+      [
+       "Independent solution",
+       [
+        {
+         "t": "Solved independently by the LLMs",
+         "b": true
+        },
+        {
+         "t": ", from the ciphertext alone and without knowledge of any earlier solution. In private communications, Lasry wrote that he had also solved it in 2023 (improved in February 2026), but his solution has not been published."
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/memoire1560.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/memoire1560.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "\"L'Estat du Roy de Navarre et de son party en France\"",
+     "date": "after 1580",
+     "summary": "A French memoir on Navarre's party in a homophonic alphabet of about 50 graphic signs. The letter m is written as a group of dots, which earlier passes took for punctuation. 95.1% read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Harley MS 1582, ff. 263-264"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R8505",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/8505"
+        },
+        {
+         "t": " (Non-decrypted, \"unknown sender\")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/harley1582r8505.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/harley1582r8505.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Henry of Navarre to Ségur",
+     "date": "1585-86",
+     "summary": "Three figure-cipher letters to the envoy raising a German army. The key, an alphabetical syllabary, was rebuilt by a structured annealer and checked on matched controls. The letters cover Duke Casimir, Clervant's reiters and the road through the Vivarais.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "BnF, 500 de Colbert 401, ff. 233, 239, 288v"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b10035574w"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Tomokiyo, cryptiana unsolved list (as letters of Henry III)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "unsolved.htm",
+         "url": "https://cryptiana.web.fc2.com/code/unsolved.htm"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "henryiii.htm",
+         "url": "https://cryptiana.web.fc2.com/code/henryiii.htm"
+        }
+       ]
+      ],
+      [
+       "Independent solution",
+       [
+        {
+         "t": "Solved independently by the LLMs",
+         "b": true
+        },
+        {
+         "t": ", from the ciphertext alone and without knowledge of any earlier solution. In private communications, Lasry wrote that he had also solved it in 2024, but his solution has not been published."
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/segur.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/segur.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Thomas Edmondes (at Henri IV's court) to Lord Treasurer Burghley",
+     "date": "Jan 1592 - Jul 1594",
+     "summary": "Six letters from the King's camp with lines in invented signs: a simple substitution of English with homophones and person signs, broken from the clear context. Everything reads except four lines on f. 59.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Stowe MS 166, ff. 50-61, 109-112"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R7770",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7770"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R7775",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7775"
+        },
+        {
+         "t": " (\"Lord Threr? to unknown recipient\")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/stowe166.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/stowe166.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Matheo de Segura to the Constable of Castile",
+     "date": "Madrid, 8 Aug 1596",
+     "summary": "Two short passages in a homophonic cipher; the key was rebuilt by annealing and resegmenting the image. 119 of 125 cipher tokens read (95.2%). The passages concern predictions of the world ending or the king dying by September.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "BnF, espagnol 336 no. 99, ff. 196r-198r"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b100325613/f336.item"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Tomokiyo, cryptiana (spanish3.htm, unsolved.htm): the last es. 336 item listed as undeciphered"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "spanish3.htm",
+         "url": "https://cryptiana.web.fc2.com/code/spanish3.htm"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "unsolved.htm",
+         "url": "https://cryptiana.web.fc2.com/code/unsolved.htm"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/segura1596.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/segura1596.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Ferdinand of Bavaria, Elector of Cologne, to Duke Maximilian I of Bavaria",
+     "date": "Bonn, 22 Dec 1619",
+     "summary": "Ten pages in a homophonic substitution on two-digit figures with a nomenclator, broken by annealing 2,482 letters; the key reads the sibling R9425 unchanged. The letter covers quartering and troops six weeks after Frederick V's coronation. 95.8% read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Bayerisches Hauptstaatsarchiv, Kurbayern Äußeres Archiv 4591, ff. 281-286"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R9426",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9426"
+        },
+        {
+         "t": " (non-decrypted, no author or recipient)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/ferdinand1619.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/ferdinand1619.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Warsaw letter to the Bishop of Olmütz (?)",
+     "date": "24 Dec 1627",
+     "summary": "A homophonic substitution whose alphabet is in plain order, with syllables, nulls and thirteen word codes, recovered by annealing. The writer presses for a canonry of Olmütz for a son of the Queen of Poland. Read in full; the word codes are glossed from context.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "ÖStA HHStA, Staatskanzlei Interiora, Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1408",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1408"
+        },
+        {
+         "t": " (non-decrypted); transcription by Tomokiyo, cryptiana (variable2.htm, unsolved.htm)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "variable2.htm",
+         "url": "https://cryptiana.web.fc2.com/code/variable2.htm"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "unsolved.htm",
+         "url": "https://cryptiana.web.fc2.com/code/unsolved.htm"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/warsaw.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/warsaw.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Sir Simonds D'Ewes, cipher log of his son's convulsion fits",
+     "date": "3 Apr 1635 - Jan 1636",
+     "summary": "D'Ewes's private alphabet over Latin, rebuilt from cribs (convulsio, plena luna); the weekdays and moon phases check out against his Autobiography. 96.5% of 287 words read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Harley MS 286, f. 61"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "BL catalogue",
+         "url": "https://searcharchives.bl.uk/catalog/040-002046117"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R7759",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7759"
+        },
+        {
+         "t": " (\"unknown sender to unknown recipient, 1635\")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/harley286.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/harley286.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Unknown writer to Hesse-Kassel",
+     "date": "undated (volume 1635-52)",
+     "summary": "A digit-and-sign letter substitution. None of the volume's ~120 key sheets fits; the key was annealed on German of the period and confirmed by the contemporary gloss on lines 1-4. About 97% read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Hessisches Staatsarchiv Marburg, HStAM 4 d Nr. 1218, no. 49"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Arcinsys",
+         "url": "https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=v1923393"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R4500",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4500"
+        },
+        {
+         "t": " (partially decrypted)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/marburg1635.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/marburg1635.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Ferenc Wesselényi, Palatine of Hungary, to Leopold I",
+     "date": "c. 1663-64",
+     "summary": "A reversed-alphabet cipher with vowel homophones in a Latin draft, broken by annealing and then corrected by hand. A general is to take His Majesty's garrison by force if need be. 98.8% of cipher tokens read; two codes are open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "MNL OL E 199 (Wesselényi family archive), 8. pallium 1. 01"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R674",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/674"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/wesselenyi1664.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/wesselenyi1664.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Potocka and Mniszech to Jakub Dunin",
+     "date": "1714-16",
+     "summary": "Potocka's alphabet was broken from a Polish postscript and carried over to eight French letters; 97.3% of Potocka tokens valued. Mniszech's letter is still unread.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Archiwum Narodowe w Krakowie, Archiwum Sanguszków"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "szukajwarchiwach",
+         "url": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/41995540/obiekty/1601530"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R7524",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7524"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R7530",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7530"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R7534",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7534"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R7536",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7536"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/potocka1714.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/potocka1714.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Johann Heinrich Kauderbach (The Hague) to Brühl / Friedrich August II",
+     "date": "1754-56",
+     "summary": "Unseparated figures in which 5 and 8 are nulls; one key serves all ten despatches. It was found by one-to-one annealing onto the vocabulary of his 1761 key. All ten despatches read at 65-97%, covering the Dutch augmentation debate and the Treaty of Versailles.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Koninklijk Huisarchief, The Hague, Prins Willem V inv. 201"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1043",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1043"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R1044",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1044"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R1954",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1954"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R1958",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1958"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R1959",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1959"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R2078",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/2078"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R2082",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/2082"
+        },
+        {
+         "t": " (\"never solved\" by the Hague cabinet)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/kauderbach1754.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/kauderbach1754.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Gottfried van Swieten to Count Cobenzl",
+     "date": "Bonn, 1757-59",
+     "summary": "The 1759 table (groups 100-442) was rebuilt ciphertext-only by monotone annealing against French, then corrected by hand. The despatches cover the Gueldre convention and Soubise's army. 96% of 553 groups read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Archives générales du Royaume, Brussels, Secrétairerie d'État et de Guerre 1236"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R955",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/955"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R957",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/957"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/swieten1757.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/swieten1757.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "An Orange prince to an officer of the Dutch émigré troops",
+     "date": "c. 1795",
+     "summary": "Vertical digit pairs from a 6x6 square, recovered by quadgram annealing on the Dutch postscript; the square then read the French page unchanged. The letter concerns General Dundas, pay and embarkation. 94% of cipher tokens read; about thirty word signs open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Koninklijk Huisarchief, The Hague, Prins Willem V inv. 339"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1892",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1892"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Independent solution",
+       [
+        {
+         "t": "Solved independently by the LLMs",
+         "b": true
+        },
+        {
+         "t": ", from the ciphertext alone and without knowledge of any earlier solution. In private communications, Lasry wrote that he had also solved it in 2021, but his solution has not been published."
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/r1892.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/r1892.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Cardinal Soglia to nuncio Viale Prelà at Innsbruck",
+     "date": "Rome, 15 June 1848",
+     "summary": "A 64-cell two-digit table with homophones and syllables, 5 as word separator, and an alphabetical one-part code. It is a counter-order: stay with the Emperor and suspend the request for passports. Ten code words read from context; 11 code groups open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "L'Italia del Popolo no. 40 (Milan, 30 June 1848), Roman broadsheet reprint"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Cipherbrain challenge (Klaus Schmeh, 13 Dec 2014)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Cipherbrain, 13 Dec 2014",
+         "url": "https://scienceblogs.de/klausis-krypto-kolumne/2014/12/13/wer-knackt-die-verschluesselte-nachricht-von-kardinal-soglia/"
+        }
+       ]
+      ],
+      [
+       "Note",
+       [
+        {
+         "t": "also a Cipherbrain challenge (Klaus Schmeh)"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/soglia1848.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/soglia1848.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Swatow telegram to Sun Yat-sen",
+     "date": "3 Apr 1916",
+     "summary": "Standard Chinese telegraph code passed through a systematic code condenser, recovered by brute force. 41 of about 44 characters read.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "JACAR (Japan Center for Asian Historical Records) B03050738800"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "JACAR",
+         "url": "https://www.jacar.archives.go.jp/das/meta/B03050738800"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Tomokiyo, cryptiana list and blog (12 Dec 2021), unsolved since 2021"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "chinesecrypto_e.htm",
+         "url": "https://cryptiana.web.fc2.com/code/chinesecrypto_e.htm"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "blog, 12 Dec 2021",
+         "url": "https://cryptiana.blogspot.com/2021/12/sun-yat-sens-coded-telegram-1916.html"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/sunyatsen.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/sunyatsen.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Sun Yat-sen's intercepted telegrams",
+     "date": "Mar 1916 - Mar 1917",
+     "summary": "About 60 condenser telegrams read under seven keys of the Swatow family, plus the Hankow +111 digit code, including Chen Qimei's assassination as reported to Tokyo. Sun's six-vowel 文密 code is still open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "ciphertext-only break · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "JACAR, 特定人ノ発受郵便物取調 (Ministry of Communications intercepts)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "JACAR (first file)",
+         "url": "https://www.jacar.archives.go.jp/das/meta/B03050088300"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Follow-on from the Swatow telegram (cryptiana)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "chinesecrypto_e.htm",
+         "url": "https://cryptiana.web.fc2.com/code/chinesecrypto_e.htm"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/sunintercepts.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/sunintercepts.html"
+        }
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "head": "Keys rebuilt from a plaintext found outside the collection",
+   "intro": "The key was rebuilt by aligning the ciphertext with a plaintext found elsewhere: another archive, a printed edition or calendar, a website or article, or the decipherment of an unrelated record.",
+   "items": [
+    {
+     "title": "Giuliano Caprile and Alfonso Cistarelli (Eger, Buda) to the Este",
+     "date": "1519-21",
+     "summary": "Somogyi's two plaintexts were used as a crib to rebuild the 1520-21 homophonic sign cipher by EM alignment. The key then read in part two letters with no decipherment anywhere (R1139, R1136): the custode and governor of Eger, the late bishop's money.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Archivio di Stato di Modena, Ambasciatori, Ungheria b. 4"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "inventory (PDF)",
+         "url": "https://asmo.cultura.gov.it/fileadmin/risorse/strumenti_di_corredo/ASE_Cancelleria_ambasciatori_ungheria.pdf"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1128",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1128"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R1139",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1139"
+        },
+        {
+         "t": "; Vestigia"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Vestigia",
+         "url": "https://www.vestigia.hu"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "W. Somogyi's printed decipherments of two letters, Scriptorium VI (2025)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "REAL",
+         "url": "https://real.mtak.hu/226599/"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/caprile1519.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/caprile1519.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Adrian of Utrecht, the Admiral and the Constable of Castile to Charles V",
+     "date": "Vitoria, 30 Dec 1521",
+     "summary": "The ciphertext was transcribed from the images and aligned with the printed decipherment, rebuilding a mixed nomenclator. The rebuilt key read or corrected about 17 of the ~25 groups the print left blank, and showed that the dead king is Manuel I of Portugal, not the print's \"Rey de Inglaterra\".",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Archivo General de Simancas, Estado leg. 8 no. 150"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "PARES",
+         "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/13002542"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "PARES (\"cifrada prácticamente en su totalidad\")"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "Gredilla's 19th-century decipherment printed by Danvila, Memorial Histórico Español 38 (1899), pp. 703-705, found by OCR search of the archive.org scan"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "archive.org",
+         "url": "https://archive.org/details/memorialhistri38realuoft"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/adrian1521.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/adrian1521.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Hugo de Moncada to Charles V",
+     "date": "Monaco, 6 Oct 1524",
+     "summary": "442 cipher signs were transcribed and aligned with the print by EM, rebuilding a homophonic key with code groups. The key reads the print's gap: Bourbon asked to be carried to Spain in the galleys.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Biblioteca Nacional de España, MSS/20213/12"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "BNE Digital",
+         "url": "https://bnedigital.bne.es/bd/es/viewer?id=8b55d967-e74e-4bad-bec4-bdfd44c43886&page=1"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1191",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1191"
+        },
+        {
+         "t": " (filed without author)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The decipherment printed in Colección de documentos inéditos XXIV (1854), pp. 417-419, to which a pencil note on the leaf points"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "archive.org",
+         "url": "https://archive.org/details/bub_gb_VGwxkA0412wC"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/moncada1524.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/moncada1524.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Burghley to Walsingham, letter-book copy",
+     "date": "early 1573",
+     "summary": "A six-sign place name that recurs in four letters printed undeciphered in Digges's Compleat Ambassador (1655) reads VALERY. Only this place name is read (6 of 26 cipher tokens); the rest waits on a key not online.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Harley MS 260 f. 419"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R8364",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/8364"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "A French letter in Walsingham's file asking for a ship to be kept waiting at St Valery (BL Cotton Vespasian F VI), identified from the BL catalogue"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/r8364.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/r8364.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Sir Francis Walsingham to Edward Wotton, ambassador in Scotland",
+     "date": "Jul-Sep 1585",
+     "summary": "Signed letters in clear English with a two-digit name code; the calendar's glosses fix 19 Arran, 39 Gray, 40 Justice Clerk, 24 Farnihurst and 20 Morton. Two uncalendared letters transcribed here. About fourteen sign-alphabet words on 10 Sept remain open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Add MS 32657 ff. 125-195"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R4838",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4838"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R4840",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4840"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R4844",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4844"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The bracketed glosses in the Calendar of State Papers, Scotland viii (1914), nos. 40, 41, 65, 106"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "HathiTrust",
+         "url": "https://babel.hathitrust.org/cgi/pt?id=miun.abe1726.0008.001"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/walsingham1585.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/walsingham1585.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Alchemical cipher note on a flyleaf (Speculum volume)",
+     "date": "undated (volume 1618)",
+     "summary": "Rous's partial reading was used as a crib and the substitution completed from the original image: PRIMA MATERIA, VOM WIDDER, OFFEN. All 79 signs assigned; 78 coherent without correction.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Zentralbibliothek Zürich, SCH R 201"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "e-manuscripta",
+         "url": "https://www.e-manuscripta.ch/zuzneb/content/pageview/1033442"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R4817",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4817"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "Anne-Simone Rous's partial reading, published in U. M. Korn, Bilderfahrzeug (2023), p. 178 n. 41"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "doi",
+         "url": "https://doi.org/10.1515/9783111242699-007"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/r4817.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/r4817.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "The Venetian ambassador at Rome to the Doge and Senate",
+     "date": "29 Apr 1628",
+     "summary": "R1874's decipherment (~4,800 letters) was aligned with its cipher by EM to give a syllabary grid, which reads this Rome despatch unchanged. 1,280 groups transcribed; 99.1% have a value. Cardinal Barberini asks whether Palmanova is fortified and the Pontebba pass secured.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Archivio di Stato di Venezia, IT ASVe 0045 010, Busta 27 f. 354"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1862",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1862"
+        },
+        {
+         "t": " (Non-decrypted, no transcription)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The contemporary decipherment of a different despatch in the same cipher, Mocenigo from Madrid (Busta 30, DECODE "
+        },
+        {
+         "t": "R1874",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1874"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/r1862.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/r1862.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Fra Giovanni di Lucca to Ferdinand III",
+     "date": "30 May 1644",
+     "summary": "Eight crib letters fixed from Tomokiyo's opening seeded an annealer that found a 24-figure Italian alphabet (all seeds agreeing, shuffled controls failing). Read in full: Grand Hetman Koniecpolski offers to keep the Turk off Rákóczi and supply 2,000 Cossacks.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "ÖStA HHStA, Staatskanzlei Interiora, Chiffrenschlüssel Kt. 20 Fasc. 27 ff. 18-19"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R2159",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/2159"
+        },
+        {
+         "t": "; Tomokiyo, cryptiana unsolved list"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "unsolved.htm",
+         "url": "https://cryptiana.web.fc2.com/code/unsolved.htm"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "Tomokiyo's published partial decipherment of the opening, \"Al principe di trenti...\" (cryptiana variable2.htm)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "variable2.htm",
+         "url": "https://cryptiana.web.fc2.com/code/variable2.htm"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/lucca.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/lucca.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Feuquières to Catinat",
+     "date": "Pignerol, 1691",
+     "summary": "The 418-group two-part \"petit chiffre\" of the Pignerol governors was rebuilt by aligning the Louvois letter with its translation and carrying the 72 shared groups over. 586 of 601 tokens read: Feuquières sets out the surprise of Veillane (Avigliana).",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Service historique de la Défense (dépôt de la guerre); printed in Mémoires et correspondance du maréchal de Catinat (1819), t. II pp. 283-284"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Tomokiyo, cryptiana (louisxiv.htm)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "louisxiv.htm",
+         "url": "https://cryptiana.web.fc2.com/code/louisxiv.htm"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "Another letter in the same code, Louvois to d'Herleville of 6 Sept 1690, printed with its contemporary translation in the same Mémoires, t. I pp. 140-142"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Mémoires (BSB scan)",
+         "url": "https://www.digitale-sammlungen.de/view/bsb10720286"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Mémoires (BSB scan)",
+         "url": "https://www.digitale-sammlungen.de/view/bsb10720287"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/feuquieres.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/feuquieres.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "John Armstrong to James Madison, coded postscript",
+     "date": "1808",
+     "summary": "A 580-group code table (the \"THE = 972\" code) was rebuilt from the clerk's decodes in another archive, with the remaining groups inferred from their alphabetical slot. It reads 48 of the postscript's 49 groups; the 49th is a probable slip for \"man\".",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Library of Congress, Madison Papers, reel 10 frame 0521"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "LoC",
+         "url": "https://www.loc.gov/item/mjm015002/"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Tomokiyo, cryptiana unsolved list; Founders Online (postscript undeciphered)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "unsolved.htm",
+         "url": "https://cryptiana.web.fc2.com/code/unsolved.htm"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "A State Department clerk's pencil decodes over Armstrong's 1806-07 despatches (NARA microfilm M34, roll 13), merged with Tomokiyo's partial table from a known-plaintext letter"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "NARA",
+         "url": "https://catalog.archives.gov/id/188671172"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "decode20.htm",
+         "url": "https://cryptiana.web.fc2.com/code/decode20.htm"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/armstrong.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/armstrong.html"
+        }
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "head": "Existing keys found outside the collection",
+   "intro": "A key already existed but had not been connected with the document; it was found in another archive, volume, database record or publication and matched to the ciphertext.",
+   "items": [
+    {
+     "title": "Dr Nicholas Wotton (Soissons) to Queen Mary I",
+     "date": "13 June 1554",
+     "summary": "The key (homophonic sign alphabet, nulls, ~140-entry nomenclator) was matched to the letter and corrected over eight passes: 75% of 2,801 signs firm, 89% with tentative values. Carew and the rebels at Compiègne with the French king and the Constable.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Harley MS 1582 ff. 8-10"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R8499",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/8499"
+        },
+        {
+         "t": " (\"N. Wottoy ? to unknown recipient\")"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "A key filed in another archive and series, not tied to the letter: TNA SP 106/2 f. 162, \"France 1554\" (DECODE "
+        },
+        {
+         "t": "R354",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/354"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/harley1582r8499.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/harley1582r8499.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "A correspondent at Randan to Louis de Gonzague, duc de Nevers",
+     "date": "27 Mar - 4 Apr 1587",
+     "summary": "The key book entry fits unchanged once the writer's glyph forms were learnt from a glossed sibling letter (BnF fr. 3413 f. 102). 26 of 27 cipher units read: Épernon passing near Lyon; the first letter is dated in cipher \"De Randan\", not Rome.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "BnF, français 3975 ff. 28, 30"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "Gallica",
+         "url": "https://gallica.bnf.fr/ark:/12148/btv1b90605473/f52.item"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R4285",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4285"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R4286",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4286"
+        },
+        {
+         "t": " (\"Unknown sender (Rome)\")"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "Key no. 11 of the Nevers key book, BnF français 3995 f. 23, not tied to these letters by DECODE, the BnF or Tomokiyo"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/nevers1587.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/nevers1587.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Robert Reade (Paris) to his cousin [Thomas Windebank?]",
+     "date": "19 Apr 1641",
+     "summary": "The Windebank key was found to read the letter; 11 values were rebuilt here. 94% read: Windebank's return under a summons, St Ravy and Mr Forster. The writer is identified from signature and endorsement as Windebank's nephew and secretary.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Harley MS 7001 ff. 148-149"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R7766",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7766"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The Deciphering Branch reconstruction of the Windebank family cipher, in another volume, BL Add MS 32256 f. 4 (DECODE "
+        },
+        {
+         "t": "R9115",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9115"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/harley7001.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/harley7001.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Charles I to Prince Rupert",
+     "date": "Oxford, 29 Apr 1645",
+     "summary": "Lasry's key reads the holograph unchanged: the King cannot convoy his artillery train and asks Rupert to march and fetch it. Groups beyond the key read from context; about fifteen code groups open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Add MS 18983 f. 14"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R4921",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/4921"
+        },
+        {
+         "t": " (Non-decrypted; no decipherment in print)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "George Lasry's reconstruction of the King-Queen cipher from other letters, TNA SP 106/10 (DECODE "
+        },
+        {
+         "t": "R929",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/929"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/rupert1645.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/rupert1645.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Bordeaux to Brienne (Thurloe intercept)",
+     "date": "London, 30 May 1653",
+     "summary": "After a ciphertext-only solver failed on a faulty transcription, the key sheet was found and fitted: alphabetical syllabaries in three marked series. With 21 transcription corrections the despatch reads: the Council hears the Bordeaux (Ormée) deputies before Cromwell receives the envoy.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "British Library, Add MS 4200 ff. 88-90"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R8390",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/8390"
+        },
+        {
+         "t": " (duplicates "
+        },
+        {
+         "t": "R8391",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/8391"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R8393",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/8393"
+        },
+        {
+         "t": "); Tomokiyo, cryptiana (louisxiv0.htm)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "louisxiv0.htm",
+         "url": "https://cryptiana.web.fc2.com/code/louisxiv0.htm"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The English Deciphering Branch's key sheet \"To Mr. Bordeaux French M.r at London 1653\" in a separate key volume, BL Add MS 32263 f. 1 (DECODE "
+        },
+        {
+         "t": "R7537",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/7537"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/bordeaux1653.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/bordeaux1653.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Johan Isaac de Swart (St Petersburg) to Pieter van Bleiswijk",
+     "date": "8 Mar 1782",
+     "summary": "The 1765 codebook, parsed to 5,961 entries, was found to fit and read 84% as transcribed; 34 values from context and 41 entries read from the key scans raised it to 96.7% of 1,719 groups. The French and Spanish answers to the Austro-Russian mediation, Catherine II's Greek project.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Nationaal Archief, 3.01.25 (Van Bleiswijk) inv. 610"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R1036",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1036"
+        },
+        {
+         "t": " (codebook \"could not be identified\")"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "Croiset's 1765 codebook for the Russia legation, a separate key record (DECODE "
+        },
+        {
+         "t": "R1038",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1038"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/deswart1782.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/deswart1782.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Prince Frederick of Orange (London) to the Hereditary Prince",
+     "date": "7 May 1795",
+     "summary": "The R1892 key reads this letter unchanged; the clear Dutch under page 1 confirms it and fixes twelve word signs. Pages 3-4: scattered émigré troops, the Basel ratification, ambassadors to Paris. About twenty word signs open.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Koninklijk Huisarchief, The Hague, Koning Willem I inv. XVIII-3"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R2242",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/2242"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The 6x6 digit-square key recovered ciphertext-only in this project for a letter in another fonds, Prins Willem V inv. 339 (DECODE "
+        },
+        {
+         "t": "R1892",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/1892"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/r2242.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/r2242.html"
+        }
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "head": "Borderline: key or plaintext found elsewhere in the same collection",
+   "intro": "The key or plaintext came from the same collection (another volume or fonds, no link recorded before), not from a neighbouring record of the same file. Listed for a decision on whether they belong above.",
+   "items": [
+    {
+     "title": "Lope de Soria to Charles V: the key-B letters",
+     "date": "Genoa, Jul-Aug 1523",
+     "summary": "Key B was rebuilt by aligning R9844 with its decipherment; the key-B letters read in substance (Siena, Beaurain, money for Swiss to descend on France, Andrea Doria). The earlier key-A letters were broken ciphertext-only and are listed in section 1.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "key from external plaintext · partial · split entry: key B (from late July) only"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Real Academia de la Historia, Colección Salazar y Castro A-28 (9/28)"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R9491",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9491"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R9498",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9498"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The court's decipherment of another Soria letter (30 Dec 1523) in a different volume of the same collection, Salazar A-30 (DECODE "
+        },
+        {
+         "t": "R9844",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9844"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Why borderline",
+       [
+        {
+         "t": "same collection and correspondent, different volume"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/soria1523.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/soria1523.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Duke of Sessa to Charles V",
+     "date": "Feb-Apr 1523",
+     "summary": "The key was recognised by recurring code groups and applied unchanged. Mostly already in print; the two uncalendared despatches (R9660, R9665) read in part.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "Real Academia de la Historia, Colección Salazar y Castro A-27 (9/27)"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R9660",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9660"
+        },
+        {
+         "t": "-"
+        },
+        {
+         "t": "R9666",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/9666"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The Sessa key this project rebuilt from the court's decipherments in another volume of the same collection (Salazar A-31); four of the letters are calendared in CSP Spain ii (1866)"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "BHO",
+         "url": "https://www.british-history.ac.uk/cal-state-papers/spain/vol2/pp531-537"
+        }
+       ]
+      ],
+      [
+       "Why borderline",
+       [
+        {
+         "t": "same collection and correspondent, different volume"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/sessa1523.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/sessa1523.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "András Bay to Ferenc Rákóczi II",
+     "date": "Iaşi, 8 Mar 1706",
+     "summary": "The key reads the letter unchanged (97.6% as sense) after seven transcription corrections: Muscovite and Polish envoys at the Moldavian court, the Tsar suing Charles XII for peace.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "MNL OL, G15 Caps. D. Fasc. 81. 5"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R478",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/478"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "Rákóczi's syllabic key, G15 Caps. C. Fasc. 43. 56 (DECODE "
+        },
+        {
+         "t": "R609",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/609"
+        },
+        {
+         "t": "), picked by scoring all 94 G15 key transcriptions against the letter"
+        }
+       ]
+      ],
+      [
+       "Why borderline",
+       [
+        {
+         "t": "same fonds (G15), different capsa; no link recorded before"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/bay1706.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/bay1706.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Philippe Groffey (?) to Ferenc Rákóczi II (alias Pompeio Cesoni)",
+     "date": "15 Oct 1707",
+     "summary": "The key identifies 1,020 of 1,108 groups (92.1%), validated on two interlined siblings; the catalogue's direction is reversed (Rákóczi is the recipient). Ráday's letters to Rehnskiöld, Polish liberty oppressed in favour of King Stanisław.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · partial"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "MNL OL, G15 Caps. C. Fasc. 39 pp. 277-279"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R902",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/902"
+        },
+        {
+         "t": " (non-decrypted)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The key \"De Monsieur de Bonac et Graffei\", G15 Caps. C. Fasc. 44/08 (DECODE "
+        },
+        {
+         "t": "R639",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/639"
+        },
+        {
+         "t": "), found by scoring the G15 keys"
+        }
+       ]
+      ],
+      [
+       "Why borderline",
+       [
+        {
+         "t": "same fonds (G15), different fascicle; no link recorded before"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/rakoczi1707.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/rakoczi1707.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "Letters to Ferenc Rákóczi II (Poland and Danzig)",
+     "date": "Oct-Nov 1707",
+     "summary": "R912 and R922 keyed at 97.4% of 2,352 groups: Stanisław, Charles XII, the Tsar, Rehnskiöld. The other two letters of the group were read from their own clear copy and interlinear decipherment and are not counted here.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "MNL OL, G15 Caps. C. Fasc. 39"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "DECODE "
+        },
+        {
+         "t": "R912",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/912"
+        },
+        {
+         "t": ", "
+        },
+        {
+         "t": "R922",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/922"
+        },
+        {
+         "t": " (catalogued as Rákóczi to unknown recipient)"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The same Bonac-Groffey key, G15 Caps. C. Fasc. 44/08 (DECODE "
+        },
+        {
+         "t": "R639",
+         "url": "https://de-crypt.org/decrypt-web/RecordsView/639"
+        },
+        {
+         "t": ")"
+        }
+       ]
+      ],
+      [
+       "Why borderline",
+       [
+        {
+         "t": "same fonds (G15), different fascicle"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/rakoczi1704.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/rakoczi1704.html"
+        }
+       ]
+      ]
+     ]
+    },
+    {
+     "title": "London to Johann Georg von Ilten",
+     "date": "Feb-Apr 1743",
+     "summary": "The code table was matched to the letters through the worksheet values of one of them and reads both: 220 of 223 groups. The King approves the forage instructions so the French find none; an extract of Lord Stair's instructions.",
+     "rows": [
+      [
+       "Method",
+       [
+        {
+         "t": "external key matched · complete"
+        }
+       ]
+      ],
+      [
+       "Primary source",
+       [
+        {
+         "t": "GWLB Hannover, Ms XXIII 1234:29,2 pp. 73-75, 119-121"
+        },
+        {
+         "t": " · "
+        },
+        {
+         "t": "GWLB",
+         "url": "https://digitale-sammlungen.gwlb.de/"
+        }
+       ]
+      ],
+      [
+       "Secondary source",
+       [
+        {
+         "t": "Catalogue search of the Ilten papers"
+        }
+       ]
+      ],
+      [
+       "Key or plaintext from",
+       [
+        {
+         "t": "The \"Chiffre-Tabelle\" in another volume of the same papers, Ms XXIII 1234:31,1 pp. 386-391 (1745/46)"
+        }
+       ]
+      ],
+      [
+       "Why borderline",
+       [
+        {
+         "t": "same collection, different volume"
+        }
+       ]
+      ],
+      [
+       "Write-up",
+       [
+        {
+         "t": "https://dbourdeau.github.io/cyphersolver/ilten1743.html",
+         "url": "https://dbourdeau.github.io/cyphersolver/ilten1743.html"
+        }
+       ]
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "excluded": [
+  {
+   "slug": "egmond",
+   "why": "independent re-solution; Lasry solved it in 2023 (key on cryptiana GL.htm)"
+  },
+  {
+   "slug": "lorraine1592",
+   "why": "independent re-solution; Tomokiyo solved it in 2025 (cryptiana unsolved list)"
+  },
+  {
+   "slug": "sp106r927",
+   "why": "independent re-solution; decoded by Sheila Richards, Secret Writings (1973), per Lasry"
+  }
+ ]
+}
