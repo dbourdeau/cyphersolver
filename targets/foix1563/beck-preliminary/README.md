@@ -17,11 +17,27 @@ The proposed key produces connected French, including:
 
 This spans D1:13-D4:12: 75 source units, 90 emitted letters. It does not identify a person, bribe, demand or completed transaction. Its source distinctions and word-code values remain proposed. No exact independent plaintext, authenticated original key, historical priority or verified solved-word percentage is claimed.
 
+## Post-submission update
+
+Substantial research continued after this review package was frozen.
+
+The most important development was obtaining and applying **Satoshi Tomokiyo's reconstructed 1565 Paul de Foix cipher table**. Its alphabet and numerical vocabulary substantially overlap the independently reconstructed 1563 working key. The comparison both confirms several earlier assignments and corrects others.
+
+A later native-image review also reclassified one sign near the end of extract A as another occurrence of the existing **faire** word sign, giving:
+
+> ... il esperoit faire sortir promptement la reconciliation necesaire entre ces deux ...
+
+A detailed, source-qualified account of everything found since the original submission is in:
+
+**[POST_SUBMISSION_UPDATE.md](POST_SUBMISSION_UPDATE.md)**
+
+The original files below remain unchanged as the frozen PR #18 baseline.
+
 ## Read the evidence
 
 Start with [the consolidated report](REPORT.md), then [the full French and English reading](FRENCH_AND_ENGLISH.txt), [open questions](OPEN_QUESTIONS.md) and [sources and access limits](SOURCES.md).
 
-The complete key is in `data/key.json`, with additional entry-specific qualifications in `data/key_notes.json`. `data/source.seed.xz` preserves the full source transcription losslessly, including the source IDs and earlier origin mappings. No observations or key values have changed from the frozen research result.
+The complete key is in `data/key.json`, with additional entry-specific qualifications in `data/key_notes.json`. `data/source.seed.xz` preserves the full source transcription losslessly, including the source IDs and earlier origin mappings. No observations or key values have changed from the frozen research result represented by those baseline files.
 
 ## Reproduce
 
@@ -48,9 +64,9 @@ These derived files make all occurrences, qualifications and proposed expansions
 
 ## Remaining problems
 
-RX=mm is preferred provisionally but conflicts at A4; the complete RX=l rival is retained. Codes 26, 34, 70 and 10 and the M/N monograms remain unassigned. Some null families, singletons, numerical boundaries and already-assigned malformed words remain disputed. Do not silently replace those gaps with credit, profit, offered or a historical name.
+RX=mm is preferred provisionally but conflicts at A4; the complete RX=l rival is retained. Codes 26, 34, 70 and 10 and the M/N monograms remain unassigned in the frozen baseline. Some null families, singletons, numerical boundaries and already-assigned malformed words remain disputed. Do not silently replace those gaps with credit, profit, offered or a historical name.
 
-The last two research audits added tests and source leads, not plaintext. This upload consolidates the existing result and does not announce a further decipherment.
+For the latest post-submission status, including reference-table transfers and later source checks, see [POST_SUBMISSION_UPDATE.md](POST_SUBMISSION_UPDATE.md).
 
 ## Public-package boundary and integration
 
