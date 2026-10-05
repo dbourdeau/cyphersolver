@@ -1,7 +1,8 @@
 # R1892 — an Orange prince on the émigré "rassemblement", c. 1795 (KHA, Prins Willem V, inv. 339)
 
-Status: read in part (3 Oct 2026: 1,860/1,954 = 95.2% read as sense, strict measure; kept partial because the Dutch
-postscript, p2, is 90.7% on its own and its recurring word signs, ⊣H 9, hook 7, slash 5, are still workable from context)
+Status: read (reclassed 5 Oct 2026 under the project rule that 95%+ read as sense is a full reading: 1,860/1,954 =
+95.2% read as sense, strict measure, 3 Oct 2026. Was read in part because the Dutch postscript, p2, is 90.7% on its own;
+its recurring word signs, ⊣H 9, hook 7, slash 5, stay open and are listed under Remaining gaps)
 
 Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2021 but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
 
