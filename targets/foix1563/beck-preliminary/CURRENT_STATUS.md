@@ -232,19 +232,20 @@ The second measure is intentionally severe. A substantial amount of the remainin
 
 ## 9. Priority and attribution
 
-This update does **not** claim discovery of an otherwise unknown de Foix cipher family. Tomokiyo and Potter independently reconstructed related de Foix material before this work.
+This update does **not** claim discovery of an otherwise unknown de Foix cipher family or the first decipherment of this letter. **David Potter had already published substantial reconstructed plaintext for the cipher passages of this exact Catherine de' Medici to Paul de Foix letter in his edition of the de Foix correspondence.** Satoshi Tomokiyo had also independently reconstructed a later de Foix cipher table.
 
 The contribution claimed here is narrower and reproducible:
 
-1. a substantial reading of the specific BL Add MS 4136 ff.148v-149 / DECODE R9241 extracts was developed before the later comparative keys were applied;
+1. substantial portions of the specific BL Add MS 4136 ff.148v-149 / DECODE R9241 witness were reconstructed independently before Potter's treatment of the exact letter was identified;
 2. the target reconstruction was then tested and corrected against Tomokiyo's independent 1565 reconstruction;
 3. dated 1562 manuscript cipher/plaintext pairings were used to establish or correct specific sign values rather than relying only on a composite table;
 4. those dated forms were compared back to the January source photographs, producing the `70=tout` and N=`ff` target corrections and stronger support for several existing values;
-5. Potter no.65 was identified as the same letter and TNA SP 70/67 ff.82-84 as the exact next source witness.
+5. Potter no.65 was identified as the same letter and TNA SP 70/67 ff.82-84 as the exact next source witness;
+6. the remaining work is focused on reproducible sign-level analysis, source genealogy, and determining which of Potter's editorial reconstructions can be demonstrated directly from the surviving cipher witnesses.
 
 The cautious description at this stage is:
 
-> **Substantial decipherment of the 15 January 1563/4 Catherine de' Medici to Paul de Foix cipher extracts, initially partially reconstructed independently and subsequently extended, corrected and validated using de Foix key evidence reconstructed by Satoshi Tomokiyo and David Potter and dated primary-source cipher/plaintext pairings from BnF Français 6612.**
+> **Independent reconstruction and source-level validation of substantial portions of the 15 January 1563/4 Catherine de' Medici to Paul de Foix cipher extracts. David Potter had previously published substantial reconstructed plaintext for this exact letter; the present work independently recovered substantial portions of the BL witness before that exact-letter identification, then extended, corrected and tested the reading using Satoshi Tomokiyo's reconstructed Foix table, Potter's Foix research, and dated primary-source cipher/plaintext pairings from BnF Français 6612.**
 
 Daniel Bourdeau supplied the manuscript photographs, source identification, prior transcriptions and public target framework that made the work possible. Satoshi Tomokiyo's reconstructed Foix table and David Potter's cipher reconstruction/correspondence edition are independent prior work and are credited accordingly.
 
