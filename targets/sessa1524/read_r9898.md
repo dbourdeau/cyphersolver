@@ -1,6 +1,6 @@
 # R9898: Duke of Sessa to Charles V, Rome, 24 February 1525 (RAH Salazar A-34 ff. 150-156)
 
-Status: read in part (2 Oct 2026). Transcription and reading line by line: [r9898_cipher.txt](r9898_cipher.txt).
+Status: read in part (2 Oct 2026; pass 17 3 Oct 2026). Transcription and reading line by line: [r9898_cipher.txt](r9898_cipher.txt).
 Key: [key_working.md](key_working.md), passes 1-16. Measured with `python measure_read.py r9898_cipher.txt`.
 
 ## The document
@@ -24,7 +24,8 @@ tomado en su protecion*). They were used as cribs (key_working.md pass 16); the 
 | | tokens |
 |---|---|
 | cipher tokens in the (b) reading | 3,059 |
-| read as sense (assembled word ≥ -4.5/char on `es-golden-age`) | 2,361 (**77.2%**) |
+| read as sense, pass 16 | 2,361 (77.2%) |
+| read as sense, pass 17 (pooled tentative values) | 2,441 (**79.8%**); strict 77.9% |
 | in open code groups | 300 |
 | spelled letters that do not make a word | 398 |
 | tentative values counted as read | 98 groups |

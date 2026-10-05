@@ -214,7 +214,8 @@ relabelled from open-codes to no-key-material: each occurs once or twice, none o
 no key sheet and the letter is not in print, so no material exists to value them.
 
 ## Remaining gaps
-- 20 single-occurrence word signs on p3-p4 (T-bar, S-stroke, square bracket, H with P, dagger, V-with-cross, C-hook, % twice, crossed o, plain Δ twice, vertical bracket, x mark, Δ with tail, H with loop, ψ, P.S. S / crossed ø / ⊖), plus four signs with context-only values counted unread (X weinig, & Engeland, + mogelyk, crossed diamond voor) - blocker: no-key-material; each occurs once or twice, none in R1892 with a value, no key sheet, the letter is not in print; all retried 2 and 3 Oct 2026
+- signs that occur twice (plain Δ: p3 l11 and p4 l1; %: p3 l10 and p4 l4; crossed diamond, value voor at I only) - blocker: open-codes; no value fits both occurrences, retried 2 and 3 Oct 2026
+- nineteen signs that occur once (T-bar, S-stroke, square bracket, H with P, dagger, V-with-cross, C-hook, crossed o, vertical bracket, x mark, Δ with tail, H with loop, ψ, P.S. S / crossed ø / ⊖, and X, &, + whose context-only values weinig / Engeland / mogelyk are counted unread) - blocker: no-key-material; a single context cannot fix a word sign, none occurs in R1892, no key sheet, not in print
 - two tokens under ink blots (p3 l12 crossed circle, P.S. sign after "landig") - blocker: illegible; the photocopy is blotted at both places
 - P.S. "Dankaert" unidentified - blocker: no-key-material; the name is spelled out in the square, only its identity is unknown
 

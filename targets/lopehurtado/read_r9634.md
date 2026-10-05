@@ -99,3 +99,7 @@ Every unread group was retried against the values won on R9645's glosses and the
 `xug xu` = *la gente* (14v23; `xu` = gente is confirmed on R9645's gloss *la gente de v. mgd*) and `yɩ ɣ̊` = `yiL` + r =
 *hazer* (15r20, probable; R9645 r16 *no puede yiL*). **846 / 1191 = 71%.** The rest (about 45 codes and the spelled words
 listed above) occur once and recur in no sibling with a crib.
+
+## 2026-10-03
+
+**872 / 1191 = 73.2%** (from 71.0%). Gained: *sostener* (15v12), *tenia* (15r14), *ser* (15r25), *vio* (14r10), and 14v22 *si el gran ~capitan ~fue(ra) ~vivo* (zif, yin pooled; ɸα∠& by `wordmatch.py`). No better image (DECODE has none; RAH behind a bot check), no crib in Sanuto XXXIII or CSP ii; see NOTES "Push toward a full reading".

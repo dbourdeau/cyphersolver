@@ -1,6 +1,6 @@
 # R9873: Duke of Sessa to Charles V, Rome, 14 April 1524 (RAH Salazar A-31 ff. 79-86)
 
-Status: read in part (2 Oct 2026). Transcription and reading line by line: [r9873_cipher.txt](r9873_cipher.txt).
+Status: read in part (2 Oct 2026; pass 17 3 Oct 2026). Transcription and reading line by line: [r9873_cipher.txt](r9873_cipher.txt).
 Key: [key_working.md](key_working.md), passes 1-16. Measured with `python measure_read.py r9873_cipher.txt`.
 
 ## The document
@@ -20,7 +20,8 @@ so no group value was taken from them without a second Spanish context.
 | | tokens |
 |---|---|
 | cipher tokens in the (b) reading | 2,473 |
-| read as sense (word assembled from the values scores ≥ -4.5/char on `es-golden-age`) | 2,165 (**87.5%**) |
+| read as sense, pass 16 | 2,165 (87.5%) |
+| read as sense, pass 17 (pooled tentative values; key_working.md) | 2,295 of 2,474 (**92.8%**); strict, pass-17 values open: 87.8% |
 | in open code groups | 256 |
 | spelled letters that do not make a word (a sign value or a transcription slip) | 52 |
 | tentative values counted as read | 69 groups |

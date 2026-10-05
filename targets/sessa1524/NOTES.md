@@ -135,14 +135,30 @@ measured by [measure_read.py](measure_read.py) (each assembled word scored on `l
   the name *Micer Agostino Foyeta* (Foglietta). For f. 128 this closes two of the four residue groups:
   *de lo suso[rus] [hay] no* = **de lo susodicho, aunque no, me parece que concuerda mucho con lo primero**.
 
+
+**Pass 17 (3 Oct 2026, target 95%).** Open groups pooled across R9873, R9898 and R9660 (key_working.md pass 17),
+R9873's non-words re-checked at 1.5-1.6x, CSP 636 used phrase by phrase, the RAH Biblioteca Digital checked for a
+better image of R9898 (its search sits behind a bot wall; web search finds no digitised Salazar A-34; DECODE's scans
+remain the only images). measure_read.py now joins words broken across lines and accepts period spellings found in
+the es corpora. Result, before -> after (strict = pass-17 tentative values counted as open):
+
+| letter | pass 16 | pass 17 | pass 17 strict |
+|---|---|---|---|
+| R9873 | 87.5% | 92.8% | 87.8% |
+| R9898 | 77.2% | 79.8% | 77.9% |
+| f. 128 (transcription_f128.txt) | 88% (102/116) | 90% (104/116), not re-measured with measure_read.py (mixed file) | |
+
+95% was not reached. What stands between: about 100 R9873 groups and 140 R9898 groups seen only once (no
+deciphered occurrence anywhere), and R9898's bleed-through pages, which do not resolve at higher zoom.
+
 ## Remaining gaps
 - group `vo` (noun after *las dichas*, f. 128r) - blocker: open-codes; absent from R9873 and R9898 as well (pass 16) and from every other downloaded page (pass 14)
 - group `per` - blocker: open-codes; absent from R9873 and R9898 (pass 16) and every other downloaded page (pass 14)
 - `hay` = aunque is tentative (four contexts in R9873, none deciphered) - blocker: open-codes; no deciphered occurrence
 - clause *los m-re que r-ido los que no m-r-e-van* - blocker: open-codes; one sign value (probably `v`) still wrong after 16 passes
-- R9873: about 120 code groups (256 tokens) and 52 spelled letters without sense - blocker: open-codes; single contexts (read_r9873.md)
-- R9898: about 140 code groups (300 tokens) - blocker: open-codes; single contexts, not in the six marginal decipherments (read_r9898.md)
-- R9898: 398 letter tokens on the bleed-through pages ff. 150v-151r, 155v - blocker: illegible; the DECODE images do not separate the cursive r/u/n signs
+- R9873: about 100 code groups (145 tokens) and 34 spelled letters without sense - blocker: open-codes; single contexts after pooling with R9898 and R9660 (pass 17); the non-words were re-checked at full zoom and stand as written
+- R9898: about 140 code groups (237 tokens) - blocker: open-codes; single contexts after pooling (pass 17), not in the six marginal decipherments
+- R9898: 381 letter tokens on the bleed-through pages ff. 150v-151r, 155v - blocker: illegible; re-cut at 1.5x without gain; no other image route (RAH Biblioteca Digital has no digitised A-34 that could be found)
 
 ## Escalation
 - [x] siblings: R9878 duplicate collated; R9881, R9883/4, R9890, R9893, R9834, R9897, R9898 read against their clears (passes 1-14); R9873 and R9898 transcribed in full (pass 16)
@@ -150,4 +166,4 @@ measured by [measure_read.py](measure_read.py) (each assembled word scored on `l
 - [x] known-keys: one cipher throughout 1523-25; the key was built from its own siblings, no other key of the series is known
 - [x] print: Bergenroth CSP Spain vol. 2 checked (f. 128 not calendared; R9873 = nos. 636-638, used as a topic crib); CSP iii.1 checked for R9898 (not calendared)
 - [x] key-rebuild: key_working.md extended over 16 passes by crib alignment, template matching (tmatch.py) and the R9898 margins
-- [x] retry: rerun 21 Sept 2026 with the pass-15 key over R9660 (no change); rerun 2 Oct 2026 with the pass-16 key over f. 128: `rus` = dicho and `hay` = aunque fill the residue *de lo susodicho, aunque no*; `vo`, `per` and the m-re clause still open
+- [x] retry: rerun 3 Oct 2026 with the pass-17 pooled values (R9873 92.8%, R9898 79.8%); rerun 21 Sept 2026 with the pass-15 key over R9660 (no change); rerun 2 Oct 2026 with the pass-16 key over f. 128: `rus` = dicho and `hay` = aunque fill the residue *de lo susodicho, aunque no*; `vo`, `per` and the m-re clause still open
