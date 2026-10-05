@@ -220,19 +220,57 @@ The splits were applied from the reading (`sysA2/applysplit.py` -> `r9408s.tok`,
 decrypts 0.875 -> 0.870 and 0.840 -> 0.842. No change: the readers had already used the values the shapes carry,
 so the splits confirm the readings but do not open the unread words.
 
-**State: read in part.** 83.9% of the six letters' words read as sense by count.py (R9408 88.9%, R9413 86.0%,
+**Push toward the bar, 3-5 Oct 2026.** Tools: `sysA2/fill.py` (each {?} located on the signs by a wildcard alignment,
+then a beam that allows only lexicon words and only sign values attested in the six hand readings plus R9407,
+pooled with per-hand weighting; other occurrences of the same sign string listed for verification);
+`measure_pooled.py`; image re-transcription of every line holding an unread word (R9408 98 lines ->
+`r9408/transcription_v4.txt`, 143 sign edits, merged as `sysA2/r9408m.tok`; R9413 99 lines -> v3, then a close-zoom
+second pass on 67 -> `r9413/transcription_v4.txt`; R9409 181 lines -> `r9409/transcription_v3.txt`, ~356 edits),
+each followed by a reading round under fixed rules (real word, fits sense, every sign value attested, other
+occurrences agree). R9410 ff.246-247 retried by hand on my own crops. New readings of note: the 4#o ligature =
+"auch" (R9410, R9413); Ferenc and Imre Bebek, Zangiacen, Z[i]back (R9413); "die ienitschern", Sigmund, Sibenburgen
+(R9408); Schongau, holtz (R9409); Debreczen, Kesmarckt (R9427); in Latin "id eciam iam constare", "[r]esponsio",
+"re[sp]onderimus" (z read as sp, doubtful). **K word sign = King Ferdinand** (grade B): it sends Hieronymus of Zara and
+his son Vespasian to the Turk (R9408; Ferdinand's 1533 envoys), the Hungarian lords "so mit dem [K] halten" hold the
+Pressburg diet (R9413), the Württemberg war is "wider [K]" (R9413, R9427). Not counted as words.
+
+| letter | words read 2 Oct | words read 5 Oct | strict measure2 |
+|---|---|---|---|
+| R9413 | 86.0% | **94.3%** (1553/1647) | 0.81 |
+| R9408 | 88.9% | **91.8%** (1405/1530) | 0.84 (on r9408m.tok) |
+| R9410 ff.246-247 (Latin) | 82.9% | **88.9%** (375/422) | |
+| R9409 | 80.9% | **87.2%** (2077/2381) | 0.80 |
+| R9410 f.244r | 83.9% | **85.8%** (260/303) | |
+| R9427 | 77.3% | **82.6%** (450/545) | 0.70 |
+| all six | 83.9% | **89.0%** (6120/6828) | |
+
+None reaches 95%: the target stays read in part. A third reading round on R9413 (v4 signs) and the second image pass on
+R9408 (20 of 72 lines done, `r9408/retranscribe_v5.txt`, not yet applied) were cut off by the API usage limit on
+3 Oct; R9427 and R9410 f.244r have had no image re-transcription yet. Next: finish those three, then reading rounds.
+
+**5 Oct 2026, last pass.** R9413 third reading round: nothing further passes the rules (94.3%). R9408 second image
+pass finished (72 lines; 6 corrected -> `r9408/transcription_v5.txt`; the pass was coarse on P2.02-13 and P2.26,
+flagged in `retranscribe_v5.txt`). R9427 (44 lines, ~95 sign edits: m?j = M, many 4 = open ч, a+ = c+) and R9410
+f.244r (23 lines, 16 edits) re-transcribed at the image (`transcription_v3.txt` in each folder), then a reading round:
+R9427 84.3% (458/543; "Franczen Bebeck" again, "furstenthumb zu erobern"), R9410 f.244r 86.1% (261/303), R9408 92.0%
+(1408/1531; "all welt" in P1.04 is doubtful). Final per letter: R9413 94.3, R9408 92.0, R9410 ff.246-247 88.9,
+R9409 87.2, R9410 f.244r 86.1, R9427 84.3; all six 89.3% (6132/6827). Nothing further moves under the rules: the
+remaining unread words are legible signs whose values no reading settles (rare signs, name groups, the arch-with-dot
+and a# marks). No letter reaches the 95% bar; the target stays read in part.
+
+**State: read in part** (5 Oct: 89.0%, see the table above; the figures that follow are of 2 Oct). 83.9% of the six letters' words read as sense by count.py (R9408 88.9%, R9413 86.0%,
 R9410 f.244r 83.9%, R9410 ff.246-247 82.9%, R9409 80.9%, R9427 77.3%; 5,724 of 6,820), below the 95% bar; no letter meets it. The unread words are legible signs whose
 values the letters do not settle (merged look-alikes, rare signs, names), not missing key material.
 
 ## Remaining gaps
 
-- R9408: 170 of 1,528 words unread ({?} in `r9408/reading.txt`: P1.01-06 and P1.20-26, the P2.01 greeting, the ratschlag clauses P2.06/25-30, P3.10-16, P4.16-28, P5.01-08, P6.04-07/28-30, the signature forename) - blocker: open-codes (workable); the signs are legible but take no value the letter settles; the y (ÿ/γ) and 4 (4/ч) look-alikes were split at the image 2 Oct 2026 without opening further words; next: a second reading round.
-- R9413: 232 of 1,663 words unread (P1 opening and P1.19-26, P2.05-12, P3.04-12 the ore description, the 4o group on P5, P6-P7 short lines, P8 address) - blocker: open-codes (workable); next: image check of the noisy P1 opening lines and of the 4o group, second reading round.
-- R9409: 450 of 2,361 words unread (P1.01-03 salutation and date, P7 about half, names at P3.05-30 and P6.18/31, runs at P2.11, P3.04/07/34, P4.03/05/22, P5.18-19, P6.05/09; the F.G.-like sign read as a letter at P1.18, P5.23/26, P6.24) - blocker: open-codes (workable); c+ checked at the image (one shape for da/ch/f; sch a separate sign); next: second reading round of P7.
-- R9410 f.244r: 49 of 304 words unread (P1.03-05, the a# group, P1.29-32, the place in the date line) - blocker: open-codes (workable).
-- R9410 ff.246-247 (the Latin letter, Buda 30 June 1534): 72 of 422 words unread (the P3.01-02 opening, P3.13 and P4.09-11 clauses, the name groups e9vn8/e9v9q4 at P4.12 and P4.20, the a# group, P6.04-05) - blocker: open-codes (workable); transcribed from the images and read 2 Oct 2026.
-- R9427: 123 of 542 words unread (ends of P1.01-03, P1.09-14, names P2.03-23, the signature) - blocker: open-codes (workable).
-- The K word sign in all five letters (R9413 context suggests King Ferdinand) - blocker: open-codes (workable); no key of the volume gives it.
+- R9408 (5 Oct: 125 of 1,530 unread; second image pass 20/72 lines done): 170 of 1,528 words unread ({?} in `r9408/reading.txt`: P1.01-06 and P1.20-26, the P2.01 greeting, the ratschlag clauses P2.06/25-30, P3.10-16, P4.16-28, P5.01-08, P6.04-07/28-30, the signature forename) - blocker: open-codes (workable); the signs are legible but take no value the letter settles; the y (ÿ/γ) and 4 (4/ч) look-alikes were split at the image 2 Oct 2026 without opening further words; next: a second reading round.
+- R9413 (5 Oct: 94 of 1,647 unread): 232 of 1,663 words unread (P1 opening and P1.19-26, P2.05-12, P3.04-12 the ore description, the 4o group on P5, P6-P7 short lines, P8 address) - blocker: open-codes (workable); next: image check of the noisy P1 opening lines and of the 4o group, second reading round.
+- R9409 (5 Oct: 304 of 2,381 unread, after image re-transcription of 181 lines): 450 of 2,361 words unread (P1.01-03 salutation and date, P7 about half, names at P3.05-30 and P6.18/31, runs at P2.11, P3.04/07/34, P4.03/05/22, P5.18-19, P6.05/09; the F.G.-like sign read as a letter at P1.18, P5.23/26, P6.24) - blocker: open-codes (workable); c+ checked at the image (one shape for da/ch/f; sch a separate sign); next: second reading round of P7.
+- R9410 f.244r (5 Oct: 43 of 303 unread): 49 of 304 words unread (P1.03-05, the a# group, P1.29-32, the place in the date line) - blocker: open-codes (workable).
+- R9410 ff.246-247 (the Latin letter, Buda 30 June 1534; 5 Oct: 47 unread): 72 of 422 words unread (the P3.01-02 opening, P3.13 and P4.09-11 clauses, the name groups e9vn8/e9v9q4 at P4.12 and P4.20, the a# group, P6.04-05) - blocker: open-codes (workable); transcribed from the images and read 2 Oct 2026.
+- R9427 (5 Oct: 95 of 545 unread; image re-transcription not yet done): 123 of 542 words unread (ends of P1.01-03, P1.09-14, names P2.03-23, the signature) - blocker: open-codes (workable).
+- The K word sign: resolved 5 Oct 2026 by context as King Ferdinand (grade B); no key of the volume gives it.
 - R9416 f.263 clean reading - blocker: open-codes; paused 21 Sept 2026 (workable): v2 re-keyed (Pressburg talks read throughout); one sign serves ch but the annealer gives it s ("auss"=auch) — needs a digraph value set by hand. 30 Sept 2026: recto lines 11-16 read clean by hand (`r9416/reading_p3_11-16.txt`; z split into e and a two-bar s, b into d and l); the rest still to do the same way.
 - R9323 lines 4, 8-10 - blocker: illegible; faint signs, several '?' in transcription.
 - R9424 - blocker: no-key-material; R9422 alphabet cut at a/b and does not read as transcribed; R9420 (1531 keys, shift alphabet) and R9421 (tabula recta) checked; IoC 0.068 flat over periods 1–8 = monoalphabetic, yet annealing fails in German (de-1500s, with/without '/' and nulls), Latin and Italian — likely code groups (gloss names sit over single groups) plus transcription noise; gloss cribs too few.
@@ -260,12 +298,14 @@ T ♉, V ‡‡, X o-o, Y ε, Z π; und 9, auch Z, ch t, das T, ll 9, rr m); the
 - [x] retry: R9424/R9367 re-annealed with de-1500s, homophone caps and nulls (failed). System A′ letters re-decoded with the extended key and each E resolved as d or ch by de-1500s context (`sysA_decode.py`); decrypts in `r9408/decrypt.txt`, `r9409/decrypt.txt`, `sysA/r9410_decrypt.txt`, `r9413/decrypt.txt`. Remaining noise is transcription-level (merged look-alikes, doubtful signs), not key-level.
 - [x] key-rebuild/retry (2 Oct 2026, System A′): the improved R9407 key (augurelio1535 pass 2) carried to R9408, R9409, R9410, R9413, R9427 by sign shape, re-learned per letter by EM and word-beam re-estimation (`sysA2/`), R9408 look-alike split finished at the image (`r9408/split_p6p7.md`), hand reading rounds over every line of all five letters (`r94xx/reading.txt`), a supervised re-key from the readings (no gain). Readings 77-89% of words, 84.0% overall.
 - [x] retry (2 Oct 2026, second pass): R9410 ff.246-247 transcribed from the images and read (82.9%); the look-alikes R9408 y/4 and R9409 c+ checked at the images, split, re-decoded and regraded (no gain).
+- [x] retry (3-5 Oct 2026): every unread line re-transcribed at the image (R9408, R9413 twice, R9409), sign-constrained pooled-key candidates (fill.py) with second-occurrence checks, reading rounds; 83.9% -> 89.0% of words; R9427/R9410a image passes and an R9408 second pass still to do.
 
 ## Steps
 
 - 2026-09-21: record list from the DECODE dump (141 records in KAA 4591: 102 keys, 39 ciphertexts); images of the
   14 targets and 30 neighbouring keys fetched with the cookie.
 - Matched R9325 to key R9324 by the null signs (identical set); applied key, all words Latin; read.
+- 2026-10-03/05: push toward 95%: image re-transcription of unread lines, pooled-key candidates, reading rounds; 89.0% overall (see the 3-5 Oct paragraph); K = Ferdinand.
 - 2026-10-02: R9410 ff.246-247 transcribed from images P3, P4, P6 (`r9410/transcription_p3p6.txt`, 2,342 signs, 65 lines; P5 = P4); Latin; decoded with the R9410 key re-learned on the `la` model (`sysA2/r9410b_g_dec.txt`) and read (`r9410/reading_p3p6.txt`, 82.9%).
 - 2026-10-02: System A′ revisited (see the 2 Oct section): R9408 P6 l.24-31, P7 and six flagged signs split at the
   image (`r9408/transcription_v3.txt`); the R9407 pass-2 key carried to R9408/R9409/R9410/R9413/R9427 and re-learned
