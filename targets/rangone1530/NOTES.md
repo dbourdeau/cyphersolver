@@ -7,7 +7,7 @@ Catalogue item 181 (class C, "Guido Ramgone (Venise)"). DECODE R4249, "Non-decry
 
 Outcome: the cipher is a homophonic substitution with about 50 signs for Italian. The key was rebuilt
 ciphertext-only from this letter and a sibling found in the same series (Rangone, 24 Dec 1529, fr. 3082 f. 42).
-232 of 264 cipher signs (87.9%) read as sense. Both passages are about Cesare Fregoso, Rangone's new
+245 of 264 cipher signs (92.8%) read as sense, measured by `measure.py` (5 Oct 2026; the earlier 87.9% was a phrase-level hand count). Both passages are about Cesare Fregoso, Rangone's new
 brother-in-law: A says that Venice sent word to "Signor Cesare" and made him great offers while Rangone was
 slighted; B names "il Fregoso" and the business he took on "con spada et cappa". The unread signs occur once
 each and the two letters are all the ciphertext there is. Reading and translation: `reading.md`.
@@ -101,11 +101,32 @@ sign is left unread. The encipherer's slips stay bracketed on the page as in `re
 for i), al [s]ignore (t sign for s). The quotation therefore keeps one cut, over "o[?] le mie". Counts unchanged
 (the A1 signs remain counted unread; the conjecture is not a key value).
 
+## 5 Oct 2026: re-transcription of the open stretches and a sense measure
+
+Images re-fetched from Gallica natives (fr. 3070 = btv1b9059934c **view 127** for f. 81r; fr. 3082 view 65) and the
+open runs cropped at full resolution (`img/`, git-ignored).
+
+- B3 `d` is a cursive theta, the i sign. "volse r[c d 9]a" becomes r?i?a; in the it-cinquecento corpora the only
+  common word of that shape is "ruina" (123 hits, next "raina" 14), and "volse ruina[r] le cose ben disposte in casa"
+  reads. c = u, 9 = n are set by that word (each occurs once); key.json has d = i, c and 9 stay `?`.
+- B3 "mai piu volse": one u sign serves "piu" and "volse".
+- A1 and A2 `y` are the same sign; the A2 open place is that one sign, not 7 (q is the last o of "loro").
+- A6: the sign transcribed `x` (c) is a straight-stroked X, unlike the cursive x of A2 ("servicio"); "?icon" is
+  therefore doubtful as well as `xo`. No corpus string matches "la?icon?uorano" for any value. Open.
+- B4: the sign after xi ("il f[?] da") has a back-loop that the tailed f of A4 ("oferte") lacks. Open.
+
+**Measure.** The old count was by hand and by phrase (A2 counted 7 signs for one open sign; "r???a" counted whole).
+`measure.py` aligns a word-segmented reading with the key decrypt sign by sign; a sign counts as read only inside a
+word with no open sign that occurs at least 3 times in the it-cinquecento corpora, or is one of four listed
+spellings (esendo, oferte, atenderui: the writer's single consonants; rouiare/olse: a sign not enciphered).
+Writer's slips set against the key are listed in its output. Result: A 134/149 (89.9%), B 111/115 (96.5%),
+overall 245/264 = **92.8%**. Not 95%: A6's 12 signs are the block.
+
 ## Remaining gaps
-- A1 "a [y S] de venire" and A2 "[q y] le mie" (sign y, 2 places, plus the phrase around it: 9 signs) - blocker: too-short; y occurs twice, "me" fits A1 and fails A2, "b" fails A1, no third occurrence
-- A6 "la [xo]icon[✳]uorano" (12 signs) - blocker: too-short; xo occurs once, the run has no parallel in either letter
-- B3 "de [a]en" and "volse r[c d 9]a" (9 signs) - blocker: too-short; signs a, c, d, 9 occur once each and several words fit
-- B4 "il f[?] da rovi[n]are" (2 signs) - blocker: too-short; the tailed sign reads f in A, makes no word here
+- A1 "instantia [y S] de ven[i]re" and A2 "loro [y] le mie" (3 signs) - blocker: too-short; y occurs twice (same sign, checked at full resolution), "me" fits A1, no letter fits A2; S occurs once
+- A6 "la [xo]icon puorano" (12 signs) - blocker: too-short; xo occurs once, the X is not the cursive c of A2, no corpus match for any value
+- B3 "de [a]en" (3 signs) - blocker: too-short; sign a occurs once, "ben" and "Gen(ova)" both fit
+- B4 "il f[?] da" (1 sign) - blocker: too-short; sign with a back-loop, occurs once, not the f of A4
 
 ## Escalation
 - [x] siblings: B (fr. 3082 f. 42) found via Clair. 330 f. 206 and read; four other Rangone letters of 1529-30 and the Joachin cipher of 1529 checked, not this cipher
@@ -114,9 +135,10 @@ for i), al [s]ignore (t sign for s). The quotation therefore keeps one cut, over
 - [x] print: Tomokiyo francis.htm (lists both copies as undeciphered), DECODE, DBI Fregoso and Rangoni lives, web search: no decipherment or edition
 - [x] key-rebuild: annealing from random starts found the key; sensitivity, hand corrections and word-aware coordinate ascent extended it
 - [x] retry: every open sign brute-forced singly and in pairs with the spaced model; no reading beats the others
+- [x] re-transcription (5 Oct 2026): open runs re-read at full resolution from Gallica natives; B3 d = i gives "ruina"; A6 X, B4 sign doubts recorded; corpus pattern search over every open run
 
 ## Files
 
 `cipher.txt`, `tokens.txt`, `key.json` (final; `?` = unread), `key_fregoso.json` (the annealer's key before hand
-corrections), `reading.md`, `solve.py`, `solve2.py`, `sens.py`, `spaced.py`, `show.py`. Images git-ignored: `img/`
+corrections), `reading.md`, `measure.py` (sense measure), `solve.py`, `solve2.py`, `sens.py`, `spaced.py`, `show.py`. Images git-ignored: `img/`
 (DECODE R4249), `full3082/`, `full330/`, `full331/` (Gallica natives).

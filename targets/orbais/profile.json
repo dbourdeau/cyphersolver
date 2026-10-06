@@ -90,9 +90,9 @@
   "models": [
    "claude-opus-5"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-18",
-  "last_date": "2026-09-22"
+  "last_date": "2026-10-05"
  },
  "solution": [
   {
@@ -178,17 +178,38 @@
    "kind": "control",
    "what": "Old guesses tested against the extended key: V2 gives et-f-e-g-n-e, so 'regne'/'Champaigne' fail; C gives v-o-p-a-e-?-s, no sense.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Re-checked C, V2 and the code signs at native resolution: V2 fifth sign is dotted ⊡ (r), not ◻; C sixth sign is the small ʃ = y of fr. 4715; C last sign = ÷.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "control",
+   "what": "Added an LM sense test (fr-1600-letters, per-char threshold -4.0) to decode62.py; it agrees with all hand flags. C = v-o-p-a-e-y-s and V2 = et-f-e-g-r-e fail; 'vos pays' and '… gré' are context guesses, not counted.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "solver",
+   "what": "Lexicon search for patterns ??egre, ???gre, vo?pa??s, ?o?a??s; nothing fits both the values and the context.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "Tomokiyo's partial Nevers-Piles table (cryptiana nevers.htm), which already identified BnF fr. 3413 no. 62 as in this cipher and read 'Cassin', was extended from the interlinear decipherment of BnF fr. 4715 f. 2 (same cipher, another letter) and from cribs in the letter's clear context.",
-  "contribution": ["transcription", "key extended or corrected"],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
   "class": "read in part",
   "key": "partial",
   "fraction_read": 0.824,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode62.py over no62_cipher.txt: 91 cipher signs, 75 in runs that read as sense (code signs Ƃ, ʃ, τ and runs C, V2 counted unread). Same count over the 18 Sept readings: 47/91 = 0.516.",
+  "fraction_read_source": "decode62.py over no62_cipher.txt: 91 cipher signs, 75 in runs that read as sense (code signs Ƃ, ʃ, τ and runs C, V2 counted unread). Same count over the 18 Sept readings: 47/91 = 0.516. 5 Oct 2026: re-measured after re-transcription with an added LM sense test (fr-1600-letters); unchanged 75/91.",
   "codes_open": {
    "open": 3,
    "total": "unknown",
@@ -223,12 +244,12 @@
    {
     "item": "Run C φ tt o V æ ʃ° ÷",
     "blocker": "no-key-material",
-    "detail": "known values give v-o-p-a-e-?-s, not sense; fr. 3612 not digitised"
+    "detail": "known values give v-o-p-a-e-y-s, not sense; fr. 3612 not digitised"
    },
    {
-    "item": "Run V2 n a æ η ◻ θ",
+    "item": "Run V2 n a æ η ⊡ θ",
     "blocker": "no-key-material",
-    "detail": "known values give et-f-e-g-n-e, not sense; fr. 3612 not digitised"
+    "detail": "re-transcribed 5 Oct (⊡ = r): et-f-e-g-r-e, not sense; fr. 3612 not digitised"
    }
   ],
   "notes": "Letter substance is in clear. Cipher runs: depeschera … le doien; la protection; Cassin; vostre […]; Mr le [τ] mon maistre; j'ay veu ung advis qui confirme; Baron. Grades count cipher runs (decode62.py READ): H = protection (2 runs), Cassin, vostre, stre, Baron; C = de-pes, chera, le doien, Mr le … mon mai, j'ay veu ung advis, confirme."

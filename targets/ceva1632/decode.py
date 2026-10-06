@@ -19,6 +19,7 @@ DEAD = {'%02d' % i for i in range(100)} - set(KEY) - NULLS
 
 P_NOMEN_KNOWN = -1.5
 P_NOMEN_NEW = -5.0
+P_NOMEN_UNVALUED = None   # if set: penalty for a known code that has no value yet (Oct 2026)
 P_NULL = -0.4
 P_NOISE = -12.0
 
@@ -76,7 +77,8 @@ def decode(stream, model, nomen, beam=250, w_lm=1.0):
                 three = stream[i:i + 3]
                 if len(three) == 3 and '6' not in three and (three[1:] in KEY or three[1:] in NULLS):
                     moves.append((3, NOMEN.get(three, ' '), '#' + three,
-                                  P_NOMEN_KNOWN if three in nomen else P_NOMEN_NEW))
+                                  (P_NOMEN_KNOWN if (three in NOMEN or P_NOMEN_UNVALUED is None)
+                                   else P_NOMEN_UNVALUED) if three in nomen else P_NOMEN_NEW))
                 if not moves:
                     moves = [(1, '', '?' + stream[i], P_NOISE)]
             for adv, emit, tok, pen in moves:

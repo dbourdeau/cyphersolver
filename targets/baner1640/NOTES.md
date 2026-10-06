@@ -1,7 +1,7 @@
 # Banér to Stålhandske, Hof, 29 December 1640 (intercepted copy, Kircher correspondence APUG 568 f. 239) — NOTES
 
-**Status: read in part — 246 of 274 cipher tokens (89.8%) read as sense, measured (`python decode.py`), 22 Sept
-2026.** First reading of the letter; key rebuilt here (`key.json`, 70 values) from context cribs. It reads: Banér
+**Status: read in part — 246 of 275 cipher tokens (89.5%) inside words read as sense, measured (`python measure_sense.py`),
+5 Oct 2026** (was 246/274 by `decode.py`, which also counted a stray 'n' after code 513). First reading of the letter; key rebuilt here (`key.json`, 70 values) from context cribs. It reads: Banér
 means "nach der Oberpfaltz und gegen die [442]" to march; the enemy will gather against him "und etwa auch die in
 Schlesien agirende [361] dazu ziehen"; Stålhandske is to "gute acht geben" and, when the enemy moves, follow "mit
 einer guten Fürsichtigkeit"; report "durch Espionen"; and tell Banér "wohin er seine Marche zu richten". Open: the
@@ -103,9 +103,24 @@ mö[g]en" in S6 (770 = m, 60 = m, 783 = g), which fits the clear "wie seine und 
 berichten". 778 = f (darauf). Treating all three-digit numbers as letters does not read (361-568 stay word codes).
 Re-measured: 246 of 274 (89.8%); codes read as letters 5 of 14.
 
+## Push to 95% (5 Oct 2026)
+
+- Image re-transcription: every unread stretch re-read from `img/239r.jpg` (Museo Galileo, 1469x2304) at 2x zoom
+  (S2 line 2, S5 lines 6-8, S6). All figures confirm `ct_neal.txt` except S6, where the manuscript has "13. 12. 32":
+  Neal dropped the 12. "E-s-p-ionen" is now complete and **12 = p** (key.json). In S2 the name reads "ohrs p acbuet"
+  with every value fixed: still no name, so the copy is corrupt there.
+- S5 "[766]eise n o u i r e c h t e zu": tried "auf solche Weise movirte/moviret", "nachrichte", "noch richte" in
+  context with de-1640s; none fits the confirmed figures and none scores clearly best. "o 2 ein guten" = "mit einer
+  guten" needs two figures changed. Not counted.
+- Measure check: `decode.py` counts every token outside hand-marked unread spans; the lone "n" after [513] in S2 was
+  counted though it makes no word. New `measure_sense.py` splits the decrypt into the reading's words (asserting the
+  split equals the decrypt) and counts tokens inside sense words only: **246 of 275 (89.5%)**; de-1640s -1.49/char on
+  the sense words. The target stays below 95%: the 29 open tokens are the corrupt name (11+1), the S5 stretch (14+2)
+  and the stray e (1), all with confirmed figures and fixed values.
+
 ## Remaining gaps
 
-- S2 name after "Johann" (11 tokens, read "ohrs?acbuet") - blocker: needs-physical-access; the figures are confirmed on the manuscript and every value but 12 is fixed by other words, so the only known copy is corrupt; the sent original or a register copy in Banér's papers (Riksarkivet) is needed and is not digitised.
+- S2 name after "Johann" (11 tokens, read "ohrspacbuet", plus the lone n after [513]) - blocker: needs-physical-access; the figures are confirmed on the manuscript and every value is fixed by other words (12 = p since 5 Oct), so the only known copy is corrupt; the sent original or a register copy in Banér's papers (Riksarkivet) is needed and is not digitised.
 - S5 "eisen o vi rechte" (14 tokens), "o ?" before "ein guten" (2), the stray e in "sobaldt e ich" (1) - blocker: needs-physical-access; figures confirmed on the manuscript, values fixed elsewhere, so the copy is corrupt; only another witness would settle them.
 - Code words 361, 442, 464, 508, 513, 568, 767, 773, 775 (766, 770, 772, 778, 783 read as letters) - blocker: no-key-material; no key survives (none of the Banér keys on DECODE is this one), each occurs once, and context gives only the sense.
 
@@ -120,6 +135,8 @@ Re-measured: 246 of 274 (89.8%); codes read as letters 5 of 14.
 - [x] print: web search for the letter, Cipherbrain comments, EMLO, Oxenstierna's printed letters (only Banér to
   Oxenstierna): no reading.
 - [x] key-rebuild: key rebuilt from cribs by multiset annealing and word-by-word extension (above).
+- [x] retry (5 Oct 2026): unread stretches re-transcribed at 2x from the scan; S6 12 restored (12 = p); S5 candidate
+  readings scored in context, none fits; sense measure written (`measure_sense.py`).
 - [x] retry: manuscript scans fetched (Museo Galileo) and every line re-read; four figures corrected; every unread
   stretch re-run with the full key and with digit-confusion emendation (`emend.py`); S1 read (Jobs[t]), S7 completed.
 

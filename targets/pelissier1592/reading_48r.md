@@ -12,7 +12,7 @@ The decoder skips the `b` rows (C6b, C38b), so those two runs were decoded by ha
 conseilz pour faire {election de troisiesme moyen qui, selon la qualite du mal, a[y] (?) est empire} [et] penetre Jusques a
 ce (?) arracher la racine, attendu que {des succes des precedens [precedens] (?) il n'est resulte que diminution de sa
 reputation a l'endroict de toutes nations, lesquelles s[e]roient que sa puissance ne s'estend} plus auant que ce que lon
-voit des {[?] de ses armes et les grandz moyens que le [?] employe en d[?]ans (?) a ceux que le monstre vouloir
+voit des effortz {de ses armes et les grandz moyens que le [?] employe, rendans a ceux que le monstre vouloir
 fauoriser (?), [n']en (?) de fruict; qu'ilz se treuuent plus proches de leur ruine que le premier iour qu'elle a eue (?) a
 commence; les vns (?) en prendrent (?) peu de bienueuillance (?)}, estant chose coustumiere de ne faire Jugement de toutes
 entreprinses si non par ce en quoy elles se terminent. Que si lon a doubte {par le passe de tenir les Estatz generaux
@@ -20,28 +20,28 @@ pour la nomination d'un Roy catholique, iusques a ce que l'on [?] peust authoris
 maintenant moins apropos {de les assembler que iamais, par ce que toutes sortes de gens [sont (?)] decheus de
 courage pour auoir veu ceste derniere armee, de laquelle l'on esperoit tant de soulagement, tourner a rien sans en auoir
 receu aucun aduantage (?), en estant [?] (reduicte?), laquelle a (?) la mesme foiblesse de par auant. Il est certain
-que les peuples las de [?] se veoir (?) [?], les ecclesiastiques intimidez et epuisez de moyens, la noblesse qui n'a gueres
+que les peuples las de tant souffrir, les ecclesiastiques intimidez et epuisez de moyens, la noblesse qui n'a gueres
 plus d'affection a la cause} que ce que ses Interestz particuliers sy retiennent, tendront plustost a {un accord qui
 creera (?) un Roy pour l'opposer a celuy qui se pretend[,] et estre cog[n]eu tel non seulement dedans son party mais} en
-plusieurs endroits hors du royaulme de france. Bien que de la c[r]ise se peult attendre {[?], qui ne prendra fin que par
+plusieurs endroits hors du royaulme de france. Bien que de la c[r]ise se peult attendre {qu'une (?) guerre, qui ne prendra fin que par
 l'extermination de la race de l'un desditz deux Roys ainsy opposez l'un a l'autre, si sanglante pour la haine qui croist
 a[u] (?) desespoir d'entrer en aucun appointement, que ne pardonnant a aage ni sexe}, le mieulx quoy en puisse coniecturer
 est la ruine commune des vns et des aultres, quil semble estre necessaire, auant que passer plus auant, a ce qui a este
 quelques fois {propose a Sa Maieste de tenir deux armees en pied, l'une pour estre a la teste de l'ennemy, le reculer de la
-riuiere de Seine, le ranger sur celle de Loyre et porter la guerre sur ce qu'il possede, pais (?) [?] les [?] qui l[e]ur (?)
+riuiere de Seine, le ranger sur celle de Loyre et porter la guerre sur ce qu'il possede, pais (?) [?] le (?) l'eslongnant (?) [?]rs qui l[e]ur (?)
 viennent d'Alemaigne et Angleterre; l'autre pour prendre} la ville de la riuiere de seine, rendre Paris et Rouen libres,
 {et consecutiuement essayer d'en[?] les prouinces l'une apres l'autre. Et pour autant que l'on pourroit obiecter que
 l'entretenement desdites deux armees reuiendroit a pres de trois cens mil escus par mois, despence qui a la longue se
-rendroit trop fascheuse, [neant]moins pourtant (?) il se pourroit respondre que s'il [?] a continuer, qu'il seroit [?]
-finalement fascheux et difficile}. Mais cest effort ayant dure peu de moys, pendant lesquelz il fauldroit que {l'ennemy [?]
-a [?] compte auec inegalite de forces (?) et des aduantages, qu'il reculast et se mist sur la defensiue}, en lun ou
+rendroit trop fascheuse, [neant]moins pourtant (?) il se pourroit respondre que si elle a[u]oit (?) a continuer, qu'il seroit
+ueritablement fascheux et difficile}. Mais cest effort ayant dure peu de moys, pendant lesquelz il fauldroit que {l'ennemy [?]
+au compte auec inegalite de forces (?) et des aduantages, qu'il reculast et se mist sur la defensiue}, en lun ou
 laultre cas, auec lheureux succes qui en aduiendroit, on pourroit {diminuer lesdites armees et soulager ceste despence si
-excessiue; qu'il n'est a si (?) loin[g] (?) doubter que [?] qui desire la [fin] (?)} de la guerre et cognoist quelle ne se
+excessiue; qu'il n'est a si (?) loin[g] (?) doubter que [315] (le Bearnois) qui desire la [fin] (?)} de la guerre et cognoist quelle ne se
 peult terminer que {par batailles rechercheroit les occasions d'y venir, lesquelles succe[dant] (?) a l'aduantage, qui se
 pourroit [?] seroient a negliger, que n[?] remonstrer a Sa Maieste} auec beaucoup de prudence et meure consideration quil
 est perilleux {de hazarder un combat auec une armee composee de nations qui [?] sont subiectes ou nourries es [g]uerres des
 Pais bas}, du salut desquelles depend la manutention d[e] [?] ("Jcombe"?), qui courroient fortune sil en mesadvenoit. Pour
-euiter ce doubte {qu'il luy pleust faire composer [?] celle qui seroit opposee a} ...
+euiter ce doubte {qu'il luy pleust faire composer celle qui seroit opposee a} ...
 
 ## Summary
 
@@ -88,10 +88,21 @@ that His Majesty have a force made up to oppose [the enemy] (the sentence runs o
 
 ## Rows still unresolved (wholly or in part)
 
-C1 (the verb after "commencement"), C3 ("a[y] est empire"), C4 (the doubled "precedens"), C6b (the opening word), C7 (the
-middle: "que le [?] employe en d[?]ans"), C9 (the end: "les vns en prendrent peu de ..."), C11 (the word before "peust"),
-C15 ("en estant [?]"), C16 ("las de [?] se veoir"), C21 (all: `HH X x #o 4 t s L g ... S e3`), C28 (the end, round the
-blot: "pais [?] les [?]"), C30/31 (the verb "d'en..."), C34 (the word before "a continuer"), C35 (before "finalement"),
-C36 (the middle: "[?] a [?] compte"), C37 ("forces" is a guess), C40 (the middle and the object of "desire la"), C42-43 (the
-run between "pourroit" and "seroient", and "que n[?]"), C45 (the word after "qui"), C46 (the word after "composer").
-"manutention d[e] Jcombe" in the clear text is also unread.
+Pass 4 (every [?] cropped and re-read; crops/p4_48r_*.jpg; notes as `# p4:` in t48r.txt). Read in pass 4: C6b "effortz" is
+clear text (its z had been taken for a cipher sign); C7 "employe, rendans"; C16 "las de tant souffrir"; C21 "qu'une (?)
+guerre"; C34 "si elle a[u]oit (?)"; C35 "seroit ueritablement"; C36 "au compte"; C40 code group 315 (the Bearnois); C46
+"composer celle" (two spurious tokens removed). Still open:
+- C1 `dz S 4 I pi 4y` (s e n/m l i t): the verb after "commencement"; the gloss "semblent" does not fit the signs.
+- C3 "a i est empire": "ia" (already) needs a transposition; left (?).
+- C7 the double-barred dagger after "que le": stands where a noun is needed (a code sign? not in cands.txt).
+- C9 the end ("les vns en prendrent peu de bienueuillance"), all (?).
+- C11 `8 T t k` before "peust": no word fits.
+- C15 after "en estant": `h xi g tt z4 X xi n pi` (t r e s t u r d i), then "celle qu'elle a la mesme foiblesse": unread.
+- C28 after the blot: "pais [?] le l'eslongnant [?]rs"; the blotted sign and `dz D # | r 80` unread.
+- C30/31 `n D 4 h t 5 6 t D` after "essayer": no verb found.
+- C36 `33 #o 8 z4` before "au compte".
+- C40 "la [fin]": `4 q 8 X` does not give "fin"; left (?).
+- C42 `8 d x 30 r g D` between "pourroit" and "ne seroient".
+- C43 `4 T o S t 33 4y` before "remonstrer" (S = rr).
+- C45 `I X 4 4` between "qui" and "sont".
+- Clear text "manutention d[e] Jcoube" (crops/p4_48r_jcombe.jpg): the word is plainly written but not understood.

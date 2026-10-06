@@ -134,15 +134,68 @@ crib or a sibling. Its clear text: docket "a 26 de octubre 1515", opening "videl
   decipherments; no snippet or citation names 4 Apr 1511, 5 June 1512 or 1 Sept 1512. Unresolved: assume it
   may print them until the book is seen.
 
+## 5 Oct 2026: siblings N.41, N.39, N.12 aligned
+
+- **N.41** (22 May 1510): cipher transcribed (`n41_transcription.txt`, 2,758 tokens) and its clerk decipherment
+  (`n41_clear.txt`); alignment in `n41_align.tsv`.
+- **8714 N.39** (13 May 1510): pp. 5-6 cipher (1,365 tokens), pp. 1-4 the clerk decipherment; `n39_*`.
+- **8714 N.12** (30 Sep 1508): p. 3 cipher (720 tokens), p. 1 its decipherment; `n12_*`.
+- **8714 N.26**: PARES serves one image, a clear letter; no cipher online.
+- All three use the 1511-12 key unchanged (no sign or group contradicts decode.py). Added ~85 groups (poi rey de
+  francia, pum Roma, plirt ni, sol todos, gue alla, mox principes, pep remedio, fil ellos, sul tambien, oto qu ...)
+  and signs `q1` a (single-barred q, distinct from barred `q` m: this is the "barred q = a" puzzle),
+  `11h` l, `6h` u, `qto` l, `B8` b, `pi` m; `N`, `/`, `9to` are sentence marks. Doubtful values left out
+  (flort, dux, hiz/nos, rof/pero, fub/fuerças).
+- Measured (`measure.py` token coverage, `measure_sense.py` attested-word share):
+
+| letter | tokens covered before | after | sense words |
+|---|---|---|---|
+| N.45 | 0.974 | 0.983 | 0.855 |
+| N.57 | 0.965 | 0.974 | 0.860 |
+| N.60 | 0.925 | 0.940 | 0.802 |
+| N.41 / N.39 / N.12 | - | 0.971 / 0.948 / 0.992 | 0.871 / 0.821 / 0.831 |
+| all incl. N.73 | 0.83 | 0.862 | |
+
+  The sense measure undercounts letter-spelled words (the clean N.12 decode scores 0.83), so it is a floor.
+- What did not move: N.60's open groups (`2` x101, `flort` 56, `gz` 37, `phi` 36, `reg`, `fiy`, `mat`, `goi`)
+  occur in none of the deciphered siblings. `flort` conflicts (N.12: pro-flort-tido = me, and "aquella flort delos
+  quatro" = confe[deración]); in N.60 "por la [flort] es [mat]" reads naturally as "por la liga es obligado", but
+  that is a context guess and is not counted. N.60 also has letter-level garbles (ma[flort]nte, nauallbt) that
+  need a re-transcription against the images, with q1 separated from q.
+- N.73 (3,177 tokens, other key) alone caps the target at ~0.90 even with every 1511-12 token read.
+
+## 5 Oct 2026 (second pass): N.60 re-transcribed, q/q1 split in N.45 and N.57
+
+- **N.60 v2** (`n60_transcription_v2.txt`, 433 lines, 11,592 tokens, 97 doubtful): a new reading from the images.
+  Pages 3-6 were read at 4-5x, pages 7-15 only at 2x. About 52 B labels were carried over from the old file.
+  It has 108 q1 and 77 q.
+  - Old `2` is the y-sign `&` (179 in all).
+  - The old `&` is a different sign, `ang`, a clause mark (not given a value).
+  - `&2` = x (ma-x-imiliano, about 12 times).
+  - Values forced by context and added to decode.py: flort liga, fiy favor, fuy exercito, mat obligado.
+  - Still open: gz (77 tokens, clause-final, perhaps a mark), phi (68), reg, goi (aquel? medium), sid (son? medium).
+  - Several old garbles survive unchanged (nauallbt, brantbt; some "por la [flart] me" where flort/liga is meant).
+    A 4-5x pass over pp. 7-15, and over the flart/flort spots, is still owed.
+- **q/q1 split** (`n45_pp*_v2.txt`, `n57_transcription_v2.txt`, `qwork/q_decisions.tsv`): all 151 q checked on the
+  images, 69 relabelled q1. Image and sense never disagreed. There are 8 no-bar cases, and 2 q1 are missing from the
+  transcription (L0426, L0429).
+
+| letter | tokens covered, start of day | after both passes | sense words, first pass | after |
+|---|---|---|---|---|
+| N.45 | 0.974 | 0.984 | 0.855 | 0.858 |
+| N.57 | 0.965 | 0.976 | 0.860 | 0.865 |
+| N.60 | 0.925 | 0.948 (v2) | 0.802 | 0.824 |
+| all incl. N.73 | 0.83 | 0.865 | | |
+
 ## Remaining gaps
 - N.73 (26 Oct 1515, 3,177 tokens) - blocker: no-key-material; different system, no deciphered sibling (N.74 is a third system); annealing with Spanish 5-grams failed
-- unread groups in N.45, N.57, N.60 (~1,168 bracketed tokens) - blocker: not-attempted; the decipherments of N.41 and 8714 N.12/N.26/N.39 would close most, and were never aligned
-- barred-q m/a split and plart/plort/flart/flort - blocker: not-attempted; NOTES ask for a careful re-reading against the images; not done
+- N.60 open groups gz, phi, reg, goi, sid and surviving garbles - blocker: not-attempted; groups absent from every deciphered sibling; v2 pp. 7-15 read at 2x only, a 4-5x pass is owed
+- 8 no-bar q tokens in N.45, 2 q1 missing from the transcription - blocker: illegible; q/q1 split otherwise done (qwork/q_decisions.tsv)
 
 ## Escalation
-- [ ] siblings: not done — N.46 and N.52BIS used, but the decipherments of N.41 and AHN 8714 N.12, N.26, N.39 never aligned
+- [x] siblings: N.46, N.52BIS, N.41, 8714 N.39 and N.12 aligned with their decipherments (5 Oct 2026); N.26 has no cipher online
 - [x] clear-pages: the clerk's decipherments on the leaves after N.46 and N.52BIS aligned word by word
 - [x] known-keys: N.74 (1519) system and the N.79 table compared; neither fits N.73
 - [ ] print: not done — Terrateig, Politica en Italia del Rey Catolico (1963) vol. II not seen
 - [x] key-rebuild: 153 groups recovered from the sibling crib and context readings
-- [ ] retry: not done — rerun all bracketed groups after adding the N.41/8714 groups
+- [x] retry: N.45/N.57/N.60 re-decoded with the extended key (5 Oct 2026); token coverage 0.983/0.974/0.940

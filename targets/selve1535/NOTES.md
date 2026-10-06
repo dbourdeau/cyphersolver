@@ -1,6 +1,6 @@
 # Georges de Selve (Venice) to Francis I, 1535–1536 — catalogue 178
 
-Status: read in part (R4232 read 99.1%; R3697 read in part, unstruck cipher 94.9%, struck runs blocked by the image)
+Status: read in part (R4232 98.5% read as sense; R3697 78.2% as sense, struck runs blocked by the image; both 89.9%, `sense.py`, 5 Oct 2026)
 
 - DECODE R3697 = BnF fr. **3091** f. 25r–v (Gallica btv1b9060253s views 27R, 28L), Selve to the King, Venice,
   14 Sept 1535 (catalogue card wrongly puts both records in fr. 3045).
@@ -46,6 +46,16 @@ dots, and **a null between doubled letters** (Suis·ses, ambas·sadeur, ar·riv�
 al·ler, mar·chant, Empe·reur). One name code (6 signs, "/ X ʒ X / X") glossed "Rang…" (Guido Rangone); a crossed
 sign before "de la Forest" read as an abbreviation for sieur (probable).
 
+## Measure (5 Oct 2026)
+
+`stats.py` counts every sign that has a key value, whether or not it makes a word (struck-run letters like
+"sesamisetgran" count, and so would a misread). `sense.py` counts only signs inside French words: best-coverage
+segmentation of each letter run against the fr-1520s-diplomatic vocabulary (words seen twice or more, `early`
+norm) plus a short name list; `?` breaks runs; runs under 4 letters are not counted; nulls are left out.
+Result: R4232 1408/1430 = **98.5%**, R3697 822/1051 = **78.2%**, both 2230/2481 = **89.9%** (stats.py: 90.6%).
+95% overall needs about 127 more signs; the unstruck R3697 gaps hold about 50, so it cannot be reached without the
+struck runs.
+
 ## Remaining gaps
 
 - R3697 struck runs on f. 25r (A, B, C1-C3) and f. 25v (T1-T3), 182 signs - blocker: illegible; the decipherer's
@@ -81,3 +91,9 @@ sign before "de la Forest" read as an abbreviation for sieur (probable).
 - [x] retry: three passes on R3697 (first, second with the extended table, third gap-by-gap with the glosses as
   cribs); every open group retried and regraded; R4232 open spots re-read on native crops ("ceste annee",
   "guerre").
+- [x] retry (5 Oct 2026, push to 95%): Gallica re-checked for a colour digitisation of fr. 3091 (none: only the film
+  scan, 105 views); native views 27/28 re-fetched into `img/`; f. 25v T1 and f. 25r C2 re-transcribed on native
+  crops at 1.6-2x: only the shapes already read separate from the strike; strike removal by a fitted line plus
+  vertical interpolation (`img/destrike.py`) erases the sign bodies with the stroke; C2 middle sign string tested
+  against gloss-led candidates ("de ses maistres", "grand credit", "du Turc") and r8 "a pr[...]" against a paie /
+  a prevenu / a prié with ∂ = a and ∂ɜ = r: no fit. Nothing moved; the 95% bar is not reachable on these images.

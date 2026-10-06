@@ -54,8 +54,8 @@
     "partial": false
    },
    "length": {
-    "tokens": 478,
-    "distinct": 78,
+    "tokens": 475,
+    "distinct": 79,
     "unit": "symbols",
     "measured": true,
     "file": "c390_p357.txt"
@@ -86,11 +86,11 @@
     "partial": false
    },
    "length": {
-    "tokens": 436,
-    "distinct": 66,
+    "tokens": 438,
+    "distinct": 71,
     "unit": "symbols",
     "measured": true,
-    "file": "c390_p139_v3.txt"
+    "file": "c390_p139_v4.txt"
    },
    "transcription": {
     "by": "llm from images",
@@ -351,44 +351,90 @@
    "kind": "literature search",
    "what": "Surveyed sister volumes 500 Colbert 391, 394, 395 (Bochetel correspondence series) for deciphered Rennes-cipher passages: none; only a Tournon 1557 cipher and a Boistaillé 1561 figure cipher, both undeciphered. Colbert 396, 393 and fr. 3180/3182 not surveyed.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "control",
+   "what": "Checked how the 0.87 figure was made: it was a hand estimate of secure+probable shares per letter, not a count, and 'probable' included words forced by one unsupported sign value or filled from context. Wrote measure.py: every token is aligned to an explicit word-by-word reading (aligned/*.txt) using only the token's candidate values; a reading the signs do not give fails to align; probable words ({n} with ~) and unread runs are counted separately; sense words are checked against a 16th-c. French vocabulary (fr-1520s-diplomatic + fr-henri4). Strict sense share before this pass: 0.72 (f.55 0.80, pp.357 0.79, p.358 0.76, c392 0.73, p.139 0.53).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "p.139 re-checked sign by sign on fresh native IIIF crops (hi2/p139w.jpg): l.9 'ẟar' is a struck-out word, not a code word; l.8 '€' before cousin is ℒ (null) followed by the m-like c (ℒ m ſſ µ ¢ m aı = cousin); l.7 opens ᵐ C Ꝫ x1 = c o m e (Ꝫ = Tomokiyo's d3 = m); l.9 end is x1 not mJ; l.11 has a 9 the v3 transcription missed. Tokens saved as c390_p139_v4.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "p.139 new readings from v4 and ÿ = d (Tomokiyo's script-v-dot): 'pour vous en dormir bien' (l.3, ÿ ſſ ʓ ℊ m ʓ = d o r m i r), 'come totes ... passeront en ce' (l.7, ƀ = p as in the key), 'mon cousin' secure, 'encores que je n'en visse aucunement a doubter' (l.9-10), 'de vostre' before the ẟao code word (l.13). p.139 strict sense 0.53 -> 0.70.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Colbert 390 p.357 re-checked on native crops (hi2/p357w.jpg): l.14 '9 la' and l.15 'Vb' had been doubled at the half-line crop join; l.14 yy is the gamma-loop d. 'de deniers ... envoye querir' now aligns. p.357 0.79 -> 0.82.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Colbert 392 p.231 re-checked on native crops (hi2/c392a.jpg, c392b.jpg): l.1 opens ℒ ꝺ k xy = (nulls) ie; l.5 'ſ W xy u ʒ d ℌ' = asseurer and 'G C u eτ d' = toute; l.6 the sign in pro_re is the 6-shaped b = p; l.9 '€' = ẽ = ff (difficulte); l.10 'ıō xy' = ie, not w; raised small z = a in s[a]ns (l.13), y [a]voit (l.14), [a]u repos (l.25); dʒ = mm in femme and commun; l.22 the ff-ligature a in aliance. c392 0.73 -> 0.83.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Tried and failed on p.139: l.4 run 'ſ mJ z ʓ G k ẓ ƀ' (no word with a/m/p/r/t/i/e), l.8 'ſ λ ſſ ♯ z k ß', l.12 'ẟao ſ 9' and l.13-14 ẟao + 'ʓ k 9 ẓ m io ʓ η ſ ß x1' (princi[pal]e needs ʓ = p and an r the signs lack), 'choses' (needs € = h, which the € in afin and cousin contradict), 'donner'/'de me' (‡‡ and ℊ values unsupported). f.55 l.1-2 openings and l.4/8/9 runs re-viewed on native crops (hi2/f55w.jpg): no new value.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "literature search",
+   "what": "Surveyed every view of 500 Colbert 393 (198 views), 500 Colbert 396 (135), BnF fr. 3180 (120) and fr. 3182 (144) on Gallica by 12-view contact sheets, candidates opened: no cipher in the Rennes key or any other, no gloss, decipherment or key sheet (sister_volumes.md). The whole Bochetel series (Colbert 390-396) and fr. 3180-3182 are now negative; no crib, measurement unchanged at 0.79.",
+   "result": "failed"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "Tomokiyo's published reconstruction of the Bishop of Rennes' cipher (cryptiana henryiii.htm) was applied, with per-hand letter forms taken from the glossed sibling letters (fr. 3181 ff. 57-58, Colbert 390) and an LM lattice to resolve homophones and word-like nulls.",
-  "contribution": ["transcription", "key extended or corrected", "decipherment with ambiguous key"],
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "decipherment with ambiguous key"
+  ],
   "class": "read in part",
   "gaps": [
    {
-    "item": "fr. 3181 f. 55, about 9% of signs (lines 1, 2, 4, 8, 9, 11, 12: ꝥ, ɼ, εʃ, ɾ, 'h Ə', and runs '10 ᑲ ɗ xy ee z r', 'ß La ᑲ ᑲ z 10 9 z', '‡ G̃ ꜧ ᑲ ᑲ ɗ ᑲ ᑲ')",
+    "item": "fr. 3181 f. 55, 20% (7% unread, 13% probable): l.2 ꝥ, ɼ ᑲ; l.4 '10 ᑲ ɗ xy ee z r'; l.8 'ß La ᑲ ᑲ z 10 9 z'; l.9 '‡ G̃ ꜧ ᑲ ᑲ ɗ ᑲ ᑲ'; l.12 'h Ə'; slips in ayt tenu, deliberay, monstrrer, sessions",
     "blocker": "no-key-material",
     "detail": "signs occur in no glossed passage in this hand (f.57-58 aligned in full; Colbert 390 glosses are in the other hand)"
    },
    {
-    "item": "500 Colbert 390 p. 358, six signs and one word head",
+    "item": "500 Colbert 390 pp. 357-358, 20% (2% unread, 18% probable): p.357 l.3-4 'lennuieux ce me pleste', l.5, l.8 avoir/l'effect, p.358 s'offrira, esperer, gouvernement, lumiere, remects, de disposer",
     "blocker": "no-key-material",
-    "detail": "p.358 continues p.357's cipher; 99% of 753 signs read, the rest unglossed"
+    "detail": "each needs one sign value no gloss gives (∿ = n, sh = r, ‡ value) or rests on a doubled/missing letter"
    },
    {
-    "item": "500 Colbert 392 p. 231, about 15% (runs in lines 4, 5, 7, 8-9, 11-17, 22)",
+    "item": "500 Colbert 392 p. 231, 17% (5% unread, 12% probable): maue, ſ λ ², ‡‡ ~, πꝫ (twice), ꞁꞁ ℌ z 9 ‡‡, La ƀ ſſ z, fc 7, conseil, comme en, leurs",
     "blocker": "no-key-material",
     "detail": "W, ss, tt, πꝫ, t7, ꝛ-variant, 'maue' occur once or twice and in no glossed passage of Colbert 390 pp.189-231"
    },
    {
-    "item": "500 Colbert 390 p. 139, about 35% (lines 3-4, 7, 8-10, 12-14)",
+    "item": "500 Colbert 390 p. 139, 30% of tokens (14% unread, 16% probable): l.2 ā, l.4 run after 'qui est', l.5 'io ƀ η', l.8 head and end, l.12 ẟao + 'aʓ' run, l.13-14 ẟao and the 'rinci' run; code words ẟ, ẟao",
     "blocker": "illegible",
-    "detail": "faint ink; ẟ, ẟao, ẟar, ℛ, ℞, aʓ, Ꝫ, ſſʓ unglossed anywhere found; heavy nulls"
+    "detail": "ẟ+superscript are code words (p.117 gloss); ẟao, aʓ, ℛ, ā unglossed anywhere found; faint ink"
    }
   ],
-  "fraction_read": 0.87,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "token-weighted mean of per-letter secure+probable shares: f55_v2_reading.md 0.91 of 402; c390_p357_reading.md 0.99 of 753 (pp.357-358); c392_p231_reading.md 0.85 of 719; c390_p139_v3_reading.md 0.65 of 436",
+  "fraction_read": 0.79,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "measure.py over aligned/f55.txt, p357.txt, p358.txt, c392.txt, p139.txt: cipher tokens aligned to the word-by-word reading by their candidate values; only non-probable words counted (nulls go with the following word). 2308 tokens: sense 0.79, probable 0.15, unread 0.06. Per letter: f.55 0.80, p.357 0.82, p.358 0.76, c392 0.83, p.139 0.70.",
   "key": "recovered",
-  "fraction_coherent": 0.87,
+  "fraction_coherent": 0.79,
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Four letters in the Bishop of Rennes' cipher, each in its own secretary's hand; values were calibrated per hand on contemporary glossed siblings (f.57-58 for f.55, p.138 and Colbert 390 pp.189-231 for p.139 and c392). Per letter (secure+probable): f.55 0.91, pp.357-358 0.99, c392 p.231 0.85, p.139 0.65. What remains are signs that occur in no glossed passage, not a key problem."
+  "notes": "Four letters in the Bishop of Rennes' cipher, each in its own secretary's hand; values calibrated per hand on contemporary glossed siblings. The earlier 0.87 was an estimate of secure+probable; measured strictly (5 Oct 2026, measure.py) the share of tokens read as sense is 0.79 after a native-resolution re-transcription pass (0.72 before it). Probable readings (15%) need a sign value no gloss or key attests; unread (6%) are code words and runs no value closes."
  }
 }

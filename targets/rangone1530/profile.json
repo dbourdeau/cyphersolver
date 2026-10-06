@@ -205,14 +205,30 @@
    "kind": "hypothesis",
    "what": "A1 'instantia [y S] de ven[i]re': the cipher has no separate 'a' after instantia; y S conjectured 'me' (grade I, from the clear lead-in 'caso acaduto mi'), printed '[a m]e'. A2 'o[y] le mie': every single-letter value for y tried by hand, none gives Italian; left open. Counts unchanged.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Re-transcription of the open stretches from Gallica natives (fr. 3070 = btv1b9059934c view 127; fr. 3082 view 65) at full resolution. B3 sign d is a cursive theta (i), so 'volse r[c d 9]a' = 'r?i?a', which the corpus fills only as 'ruina' (123 vs next 14): c=u, 9=n by the word. A1/A2 y confirmed one sign; A6 X found straight-stroked, unlike A2's cursive x; B4 sign after xi has a back-loop. 'piu volse' has one u sign for both words.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "control",
+   "what": "The old 87.9% was a hand count by phrase (e.g. 7 signs for A2's one open sign y). New measure.py counts per sign, a sign read only inside a corpus word (it-cinquecento corpora, >=3 hits) or a listed spelling: 245/264 = 92.8% (A 134/149 = 89.9%, B 111/115 = 96.5%). Below 95%: A6 (12 signs) is the block.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
   "method_basis": "The homophonic key was rebuilt ciphertext-only from this letter (fr. 3070 f. 81) and a same-cipher sibling found here (fr. 3082 f. 42, via Tomokiyo's Clairambault references); no prior reading exists (Tomokiyo lists both as undeciphered).",
-  "contribution": ["transcription", "key recovered", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
   "class": "read in part",
-  "fraction_read": 0.879,
+  "fraction_read": 0.928,
   "grades": "unknown",
   "verification": [
    "historical consistency"
@@ -226,27 +242,27 @@
   },
   "gaps": [
    {
-    "item": "A1 'a [y S] de venire' and A2 '[q y] le mie' (9 signs)",
+    "item": "A1 'instantia [y S] de ven[i]re' and A2 'loro [y] le mie' (3 signs)",
     "blocker": "too-short",
-    "detail": "y occurs twice; 'me' fits A1 and fails A2, 'b' fails A1"
+    "detail": "y occurs twice; re-inspected at full resolution, same sign both places; 'me' fits A1, no letter fits A2; S occurs once"
    },
    {
-    "item": "A6 'la [xo]icon[p]uorano' (12 signs)",
+    "item": "A6 'la [xo]icon puorano' (12 signs)",
     "blocker": "too-short",
-    "detail": "xo occurs once; no parallel run"
+    "detail": "xo occurs once; the X of A6 is straight-stroked, not the cursive x (c) of A2, so 'icon' is itself doubtful; no corpus match for any value"
    },
    {
-    "item": "B3 'de [a]en' and 'volse r[c d 9]a' (9 signs)",
+    "item": "B3 'de [a]en' (3 signs)",
     "blocker": "too-short",
-    "detail": "signs a, c, d, 9 occur once each; several words fit"
+    "detail": "sign a occurs once; 'ben', 'Gen(ova)' both fit"
    },
    {
-    "item": "B4 'il f[?] da rovi[n]are' (2 signs)",
+    "item": "B4 'il f[?] da' (1 sign)",
     "blocker": "too-short",
-    "detail": "tailed sign reads f in A, makes no word here"
+    "detail": "the B4 sign has a back-loop unlike A4's tailed f; occurs once"
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "targets/rangone1530/reading.md 'Measure': cipher tokens per run, open runs counted unread (32 of 264)"
+  "fraction_read_source": "targets/rangone1530/measure.py: word-segmented reading aligned sign by sign with the key decrypt; a sign counts only inside a word with no open sign that occurs >=3 times in the it-cinquecento corpora or is a listed single-consonant/missing-sign spelling (245 of 264)"
  }
 }

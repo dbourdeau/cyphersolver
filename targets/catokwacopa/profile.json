@@ -75,15 +75,17 @@
    "mech.py (pairing test, exact costs)",
    "search.py (open-vocabulary exact-interleaving search)",
    "names.py (name-frame test)",
-   "latin.py (Latin vocabulary search)"
+   "latin.py (Latin vocabulary search)",
+   "beam.py (phrase-level 5-gram search, lang en-modern)",
+   "measure.py (sense measure)"
   ],
   "models": [
    "claude-opus-5",
    "claude-fable-5-1"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-15"
+  "last_date": "2026-10-05"
  },
  "solution": [
   {
@@ -121,43 +123,78 @@
    "kind": "solver",
    "what": "Latin vocabulary search on line 29 (control: line 17 returns QUI FIT first).",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Looked for images to re-transcribe: the klausschmeh.net images (img/) are re-typeset from the pre-2018 text (Hfsclam, 139, Eftdorshpxn ...), not scans; the BNA originals are paywalled, so no re-transcription was possible.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "solver",
+   "what": "Phrase-level search (beam.py): letter-by-letter plaintext under the lang en-modern 5-gram, vocabulary-constrained, on lines 5, 6, 9, 12, 14, 19, 21, 23, 26, 29. Controls (7, 18, 3) come out on top; every open line gives junk.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "verification",
+   "what": "Sense measure (measure.py): a character counts only if a misprint-free, forced reading consumes it and the words score as English. The 0.747 figure had counted lines 5, 6, 13, 19, 20 and 21 on proposals with misprints or no reading. Result 257/470 = 0.547 (8 May 0.563, 20 May 0.530).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "The lines counted read are the published readings (Bosbach's DYING DECLARATION, the Estes/'Dave' Oxford vocabulary, Krajcovic's QUI FIT, Ernst's transcription on klausschmeh.net and Cipherbrain); the project costed each exactly, confirmed the forced lines with an open-vocabulary search, and found exact alternatives for lines 14, 18 and 21.",
-  "contribution": ["none"],
+  "contribution": [
+   "none"
+  ],
   "class": "read in part",
-  "fraction_read": 0.747,
+  "fraction_read": 0.547,
   "fraction_read_method": "measured",
-  "fraction_read_source": "targets/catokwacopa/ads.py PAIRS (Ernst's 29 lines): characters (letters and figures) of both ads, 470; lines 9, 12, 23, 26, 29 (119 characters) counted unread, every other line counted read.",
+  "fraction_read_source": "targets/catokwacopa/measure.py: alphanumeric characters of both ads (470); a character counts only when a misprint-free reading forced by the letters (top of search.py or beam.py, or a one-name frame) consumes it and the words score as English under lang en-modern; 257 read (8 May 134/238, 20 May 123/232).",
   "key": "not applicable",
   "grades": "unknown",
   "verification": [
    "matched control",
    "historical consistency"
   ],
-  "notes": "Oxford reading right in outline; lines 9/26, 12, 23 and 29 undetermined. fraction_read estimated as 24 of 29 lines (lines 9, 12, 23, 26, 29 undetermined), not letter-measured. Measured 21 Sept 2026 by characters per line (0.747; was 0.83 by lines). key 'not applicable': omission scheme, no key.",
+  "notes": "Oxford reading right in outline. Measured 5 Oct 2026 by sense (0.547); the 21 Sept 0.747 counted every line with any proposal, including readings needing 1-11 misprints and two lines with no reading. key 'not applicable': omission scheme, no key.",
   "gaps": [
    {
-    "item": "lines 9 and 26 (mistrl / otenpu, oatvpu)",
+    "item": "lines 9 and 26",
     "blocker": "too-short",
-    "detail": "open-vocabulary search: many unrelated exact fits within a nat or two"
+    "detail": "unigram and 5-gram searches: many unrelated exact fits"
    },
    {
     "item": "line 12",
     "blocker": "too-short",
-    "detail": "not decided by the letters: many exact fits"
+    "detail": "5-gram search gives junk"
    },
    {
     "item": "line 23 (48 letters)",
-    "blocker": "not-attempted",
-    "detail": "notes: needs a phrase-level language model, not unigrams; not run"
+    "blocker": "too-short",
+    "detail": "5-gram phrase search run 5 Oct 2026: junk"
    },
    {
-    "item": "line 29 (ereflodbr / rileohmae)",
+    "item": "line 29",
     "blocker": "too-short",
-    "detail": "exhaustive English and Latin searches give only junk; undetermined in both"
+    "detail": "English and Latin searches give only junk"
+   },
+   {
+    "item": "lines 5, 6 tail, 14 tail, 19, 21",
+    "blocker": "too-short",
+    "detail": "several exact fits, none forced; published readings need misprints"
+   },
+   {
+    "item": "lines 13 and 20 (figures)",
+    "blocker": "too-short",
+    "detail": "1.6.9/cotegr and A.P. 138 have no reading"
+   },
+   {
+    "item": "re-transcription",
+    "blocker": "needs-physical-access",
+    "detail": "originals only on the paywalled British Newspaper Archive; blog images re-typeset from the old text"
    }
   ]
  }

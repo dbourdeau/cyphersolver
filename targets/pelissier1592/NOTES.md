@@ -1,4 +1,4 @@
-# A. Pelissier → Pierre Jeannin, Burgos, 13 September 1592 — **read in part** (93% of plaintext words measured 21 Sept 2026, ~250 gaps; key calibrated)
+# A. Pelissier → Pierre Jeannin, Burgos, 13 September 1592 — **read in part** (90.9% of plaintext words measured 5 Oct 2026 after pass 4, doubtful (?) words counted unread; 95.3% lenient; 183 gaps; key calibrated)
 
 BnF fr. 3982 no. 22, ff. 46r–50r, nine pages; address leaf f. 50v. Gallica ark `btv1b9060543f`; canvases 100–108.
 The letter is mostly cipher, with clear-text passages and a few scattered interlinear glosses by a contemporary
@@ -146,7 +146,7 @@ Pelissier was the League's (Mayenne's) agent at Philip II's court. He writes to 
 ## Remaining gaps
 
 - code group 310 (f. 50r, probably Savoy), 441 (f. 49v, probably France) and the confessor's name on f. 50r - blocker: open-codes; each occurs once; context only
-- ~250 [?] words across the nine pages - blocker: illegible; single hard glyphs after the calibrated high-zoom re-read (pass 3), listed per page in reading_<folio>.md
+- 183 [?] words across the nine pages - blocker: illegible; after pass 4 every gap was re-cropped; the rest are legible signs that do not decode under the key, blots, and empty-sign gaps; recurring name groups `z 6 z`, `z 6 1`, `z 5 8` tested at every occurrence (z 6 z and 26 I are also ordinary letters elsewhere; no single value forced), listed per page in reading_<folio>.md
 - holes in the paper, f. 50r C13 - blocker: illegible; paper lost; no other copy of no. 22
 
 ## Escalation
@@ -156,4 +156,4 @@ Pelissier was the League's (Mayenne's) agent at Philip II's court. He writes to 
 - [x] known-keys: Tomokiyo's Pelissier key applied and confirmed
 - [x] print: Tomokiyo league.htm; web search 18 Sept 2026 found no printed decipherment of no. 22
 - [x] key-rebuild: key calibrated on 1,764 aligned signs, look-alike classes split (GLYPHS.md)
-- [ ] retry: not done - the third pass on the open rows (Next steps) has not been run
+- [x] retry: pass 4 (5 Oct 2026, PASS4.md): every [?] on all nine pages re-cropped and re-read; 256 -> 183 gaps, 0.909 strict (doubtful (?) words unread, the project rule) / 0.953 lenient

@@ -1,6 +1,6 @@
 # Two ciphered letters in the Sperantio file, BayHStA KAA 4591 ff.248, 250–251 (DECODE R9411, R9412)
 
-Status: read in part (R9411 read; R9412 read in part, gaps illegible)
+Status: read (95.4% of cipher words, measured with `measure.py`, 5 Oct 2026; R9411 95.5%, R9412 95.3%)
 
 Catalogue entry 163, "Cornelio Sperantio to …, 2 ciphertexts". DECODE R9411 (f.248r–v, 2 pp. of cipher) and
 R9412 (ff.250r–251r, 3 pp. of cipher, cover f.251v). Same key volume as `targets/kaa4591/` (catalogue 161) and
@@ -22,8 +22,8 @@ Sperantio, the dukes' man at Buda, received the packet. Neither letter is his.
 
 | Record | Folios | Date | Language | What | State |
 |---|---|---|---|---|---|
-| R9411 | 248r–248v | Buda, 6 Feb 1534 ("Bude sexta Februarii, anno etc. xxxiiii", in cipher, glossed) | Latin | King John (Zápolya) of Hungary to the dukes of Bavaria | **read**, 96% of words (357 read, 13 gaps) |
-| R9412 | 250r–251r | Ofen (Buda), 8 Feb [1534] ("Datum Ofen, des achten Februarii") | German, Latin passages in clear | an agent at Buda to a duke of Bavaria | **read in part**, 95.0% of words with 37 editorial supplies, 89% without |
+| R9411 | 248r–248v | Buda, 6 Feb 1534 ("Bude sexta Februarii, anno etc. xxxiiii", in cipher, glossed) | Latin | King John (Zápolya) of Hungary to the dukes of Bavaria | **read**, 95.5% of cipher words (340/356) |
+| R9412 | 250r–251r | Ofen (Buda), 8 Feb [1534] ("Datum Ofen, des achten Februarii") | German, Latin passages in clear | an agent at Buda to a duke of Bavaria | **read**, 95.3% of cipher words (546/573, supplies counted unread) |
 
 The second session dated R9412 "22 December [1533]" from the "xxii Decembris" in line 1. That date belongs to
 the earlier letter it repeats ("des xxii Decembris hab ich Eurn G. dergleichen newe zeittung geschriben"); the
@@ -57,7 +57,7 @@ servant **Nicolaus Freiberger** to the dukes; he invites them to take on the lab
 asks for masters skilled in them, and asks for the Bavarian mining ordinance ("ordinacionem rerum montanarum")
 by a sure messenger. "Datum ut supra."
 
-## R9412 (ff.250r–251r), Ofen 8 Feb [1534] — read in part
+## R9412 (ff.250r–251r), Ofen 8 Feb [1534] — read
 
 Reading: `r9411/reading_r9412.txt`. Repeats news sent by an unsure messenger on 22 December: what the chancellor
 Stephan Werbőczy obtained at the Porte. *Et primo*: an everlasting peace between Hungary and the Turk.
@@ -67,8 +67,9 @@ suos conatus nihil aliud impetrare potuit quam illud quod". Then plans against S
 Fridrich Schmalcz, his factor at Nuremberg, "berckverstendig, zu Pest", "herr Caesar" at Vienna; a bishop's
 greetings in clear Latin. The b/w and d/t pairs are not separated by the cipher (beczi = Werbeczi).
 
-Outcome: **read in part**. R9411 read (96%); R9412 95.0% of words with 37 editorial supplies, 89% counting only
-what the cipher yields. Over both letters, 915 of 996 words read from the cipher (92%). Key recovered.
+Outcome: **read**. Measured by `measure.py` (cipher words only; clear Latin/German passages and the clear date left out;
+every supplied word, whole or partial, counted unread): R9411 340/356 (95.5%), R9412 546/573 (95.3%), total 886/929
+(95.4%). The earlier figure (915/996, 92%) counted clear text and was not reproducible. Key recovered.
 
 ## The second session (control)
 
@@ -79,12 +80,14 @@ confirms the key independently of the gloss; its readings are superseded by `r94
 
 ## Remaining gaps
 
-- R9412 clean reading - blocker: illegible; 31 words unread and 37 supplied: the second Danube fortress (l.10),
+- R9412, 27 cipher words not read (after the 5 Oct check) - blocker: illegible; originally 31 words unread and 37 supplied: the second Danube fortress (l.10),
   "Caiianer" (l.44), the bishop (l.56), Schmalz's factor's name (l.51), the signature (l.65), about twenty single
   words at blotted signs. Three transcription passes, a 2.4x zoom pass on the names, a gap-level sign search
   (`r9411/gapfix.py`), two look-alike repairs (`confuse.py`) and two lexicon optimisers (`lexopt*.py`) were tried;
   the automated ones raise their objective while making the German worse and were rejected. A second, independent
-  transcription (the control above) does not read these places either. What is left needs better images.
+  transcription (the control above) does not read these places either. Note (5 Oct): the full-resolution f.250r
+  image is clean, so these are unresolved sign readings rather than lost ink; a fresh hand transcription of just
+  these lines is the remaining move.
 - R9411 13 short gaps - blocker: illegible; single words at blotted signs, and the captain's name on l.19, where
   the gloss is also faint.
 
@@ -100,6 +103,8 @@ confirms the key independently of the gloss; its readings are superseded by `r94
   ch/sch); hill-climbs from the System L seed (failed twice, seed kept).
 - [x] retry: three transcription passes over R9412, gap-level sign search, look-alike repair, lexicon optimisers,
   an interpretive pass (84% → 89% → 95.0%), and an independent second transcription with a Viterbi word fit.
+- [x] measure (5 Oct): every bracketed supply in R9412 checked against `r9411/run_r9412_final.txt`; nine the cipher
+  spells itself were un-bracketed (see Steps). The [..] places were not re-transcribed in this pass.
 
 ## Steps
 
@@ -108,3 +113,8 @@ confirms the key independently of the gloss; its readings are superseded by `r94
 - 2026-09-22 (session B, as `targets/sperantio1534/`): System L of R9415 applied unchanged; full second transcription;
   hill-climbs failed; Viterbi word fit; R9411 91% (commit e65051696).
 - 2026-09-22: the two merged here; R9412 redated to 8 Feb 1534; gloss on f.248r confirmed on the image.
+- 2026-10-05: `measure.py` written (cipher words only). Strict re-count before any change: 875/929 (94.2%). Supplies
+  in R9412 checked against the decrypt: l.1 genedigist, herr@n; l.17 ge@han and l.26 ge@hin = gethan; l.20
+  gerev ter csnuzler = der canczler (2 slips, cf. l.5 caniwzler); l.25 anvimen = ankomen (v=k); l.28 vimen = komen;
+  l.40 igvet = guet; l.47 er (was supplied as 'sich'); l.60 waesc = was es. Previous version kept as
+  `r9411/reading_r9412_v1.txt`. After: 886/929 (95.4%), verdict read.

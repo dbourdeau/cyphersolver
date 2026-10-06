@@ -279,9 +279,33 @@ f. 8r p1.13-p1.16 re-read on `img/p1.jpg` (lines at y ~5100-5700) against the R3
 Quotation for the Lasry list (30 Sept 2026): "… the Constable comenid with him how the ysle of Wight might be taken
 […] most, and how it might be kept. The rebels finallye, Carew [also] advertisith me, they have concludid that …"
 
+## Sense measure and push to 95% (5 Oct 2026)
+
+- The old measure (`measure_v3.py` family, figures v3-v8) counts every sign that is not `[?n]` or `{w:n}` as read. It
+  does not test sense: firm-counted stretches such as "Carew the [?] changes the French king it" (p1.17), "was of the
+  use of ... to fair the rebels" (p1.10), "I Carew for Carew, I shall that he" (p3.14) were counted as read.
+- New `measure_sense.py` + `sense_judgement.tsv`: per line, the signs whose letter-for-letter reading is not sense are
+  judged and subtracted (160 signs on 52 lines). Measured on v8: old measure 74.3% of 2,727 non-null signs, **sense
+  68.4%** (p1 56.5, p2 71.5, p3 75.5, p6 71.0).
+- Image re-transcription (img/p1.jpg, img/p2.jpg at full resolution) of the unread stretches:
+  - p2.25 name (16 signs): `Dx +. d+ J P : Y_ S ^ #` = b r i m s t a n e, `xh Y+ E ll XX a.` = a s c o t:
+    "the lord Brimstane, a Scot" (Crichton of Brunstane). Every letter but b (Dx, p on the key) and i (d+, a null on
+    the key) is a key value. 13 signs read, 2 (`pt mu`) unread. `final_v9.txt`.
+  - p1.24 [?9]: `CURL_D_BAR .. F L_ [9] XUND ll OMEGA ss XUND Z= d` reads "(fy)ve hundrid" before "crownes"; tentative
+    (barred hooked d is a null on the key; one sign too many). Kept as tentative, not counted.
+  - p1.13 [?9] after "will": signs s i t ? i s/u ? y/u e d i re-checked on the image (tokens confirmed); LM brute force
+    over all key alternatives (en-1640s) gives only "sitissuedi"-type strings. Unread.
+  - p1.14-15: already done 30 Sept; unchanged.
+- Sibling Stafford key (targets/harley1582r8500, 1586): a different system (e.g. oo = m there, ꝏ = and here; 6 = e
+  there, 8 = e here); it gives no values for R354 signs. Not usable.
+- Measured v9 (`python measure_sense.py final_v9.txt`): old measure 74.7%, **sense 68.9%** (p1 56.5, p2 73.3, p3 75.5,
+  p6 71.0). 95% is not reachable from the images and R354: the remaining stretches are tokens confirmed on the image
+  whose key values give no English, i.e. key-sheet gaps (signs not on R354, rare codes) and probable cipher-clerk
+  slips that only the contemporary decipherment (ff. 5r-7v) can settle.
+
 ## Remaining gaps
 
-- Unread and tentative stretches, about 25% of non-null signs (names p2.25 and p6.27, the code Ie, runs p1.13-15, 1.18, 1.24) - blocker: needs-physical-access; the contemporary decipherment Harley MS 1582 ff. 5r-7v is not digitised by the BL or DECODE and needs a BL imaging order
+- Unread, tentative and nonsense stretches, about 31% of non-null signs measured for sense (5 Oct 2026; p1.13 run, p1.24 "(fy)ve hundrid", p2.25 tail, p6.13-14, p3.14) (names p2.25 and p6.27, the code Ie, runs p1.13-15, 1.18, 1.24) - blocker: needs-physical-access; the contemporary decipherment Harley MS 1582 ff. 5r-7v is not digitised by the BL or DECODE and needs a BL imaging order
 - Rare code signs, about 40 (.I, .p, .d, .M, N., R., C_CEDILLA, Q_TAIL, TALL_F_LOOP, CIRC_BIG) - blocker: no-key-material; no entry on R354, the only surviving copy of the key, and no other copy on DECODE
 
 ## Escalation
@@ -291,4 +315,5 @@ Quotation for the Lasry list (30 Sept 2026): "… the Constable comenid with him
 - [x] known-keys: R354 applied (nulls, codes, alphabet)
 - [x] print: CSP Foreign Mary June/July 1554 (not calendared), Tytler ii, CSP Scotland i, Harleian catalogue 1808; Tomokiyo has only the 1548 Wotton cipher
 - [x] key-rebuild: unified key v6 from all pages; full nomenclator transcribed; constrained re-annealing tried
+- [x] sense measure + image re-transcription (5 Oct 2026): p2.25 name read, p1.24 tentative, p1.13 tokens confirmed unread; Stafford 1586 key not related
 - [x] retry: every line re-read at full resolution; every unread/tentative stretch retried with key v6 and the full nomenclator (v7)

@@ -1,6 +1,7 @@
 # d'Affry (The Hague) to Rouillé / Bernis, 1757-58: intercepted code letters
 
-Status: read in part (0.86 of groups measured 21 Sept 2026; R1071 unread, R1072 weak; write-up affry1757.html, 19 Sept 2026)
+Status: read in part (5 Oct 2026: 0.82 of all code groups read as sense by measure_sense.py, 0.89 without R1071; the
+21 Sept figure 0.86 counted groups that merely had a value; R1071 unread; write-up affry1757.html, 19 Sept 2026)
 
 KHA The Hague, Prins Willem V, inv.nr. 192. DECODE R1052-R1076, R2067 (catalogue: d'Affry, 11 unsolved records).
 Images (git-ignored, `img/`) and DECODE digit transcriptions (`decode/DOC_*.txt`) fetched 19 Sept 2026 with the
@@ -84,11 +85,72 @@ R1067: 056=856, 099=899 ...); groups run together (58291 = 582 91) or dropped; s
 
 **Open:** ~5-12% of groups per letter (listed as [n] in each reading), the weak stretches of R1072, R1071 entirely.
 
+## Push towards 95% (5 Oct 2026): image re-transcription and a sense measure
+
+**The old measure did not count sense.** The 0.86 of 21 Sept counted a group as read when it had any key or inferred
+value, '?' values included, whatever the text around it said; by that rule the undeciphered letters now stand at 0.96.
+It also ran on `cipher_U.txt`, the DECODE digits parsed by `parse.py`, which (a) keeps DECODE's 8-read-as-0 slips
+(the reading agents corrected them only in their prose readings), and (b) drops every DECODE line that starts with a
+paragraph tag (`<CLEARTEXT FR B:3.> 676 . 996 ...`): 7 lines of R1064 and 12 of R1065 were missing from the counts.
+
+**New measure, `measure_sense.py`.** A group counts as read only if it has a value (key_M, H/M rows of read/*_new.tsv,
+or `key_X.tsv`; '?' rows do not count) and the 9-group window round it scores as French under
+`lang` model `fr-modern` (no spaces, per-char log-prob > -3.0) with at most one valueless group in the window. Proper
+names spelt in syllables (Maham/Mahom, Baltimore, Macdonald) cannot pass an LM, so the ranges in `sense_names.tsv`
+count when every group has a value. Image re-transcriptions in `transcr/R*.txt` replace the DECODE parse.
+Calibration: the same test applied to the eight Lyonet letters, along their aligned (known-sense) group sequences,
+passes 0.876 of groups, so the measure under-counts real sense by roughly an eighth; the figures below are the raw
+measured ones. The Lyonet letters count as read (contemporary decipherment); R1071 counts as unread.
+
+**Image re-transcription** (all from the DECODE images in img/, rotated -90, read strip by strip at full resolution):
+- R1072: re-transcribed here (`transcr/R1072.txt`, 555 groups); the copyist's two looped forms of 8 were read as 0 by
+  DECODE nearly everywhere (849, 898, 984, 878, 1018, 1088, 868, 885, 828 ...). Text now reads as a whole
+  (comptoit, gratification de cent louis, d'Écosse et d'Irlande, Baltimore, remplit ses engagements, assez tôt).
+- R1074: re-transcribed here (`transcr/R1074.txt`, 537 groups; DECODE's 564 included split/merged junk [1] [0] [21]).
+- R1067: re-transcribed by an image sub-agent (`transcr/R1067.txt`, 1,481 groups; ~133 positions differ from DECODE:
+  ~20 run-together groups, ~6 dropped, 3 added, one struck group kept by DECODE, the rest mostly the 8 trap; three
+  copyist hands; paragraph numbers No 2-13 spread over the pages).
+- R1064: converted with `doc2tr.py` (keeps the tagged lines) and then checked line by line on the images by a
+  sub-agent (`transcr/R1064.txt`, 1,243 groups; ~48 8/0 fixes, one whole line DECODE dropped on p. 5, 2 splits,
+  ~10 other digits; a second hand on pp. 3-4 writes 8 as a w-shaped double loop and 3 as a reversed c).
+- R2067: the 19 Sept hand transcription reformatted (`transcr/R2067.txt`); R1065 converted with doc2tr.py for the
+  denominator only.
+
+**Pooled open codes** (`pool.py` lists every occurrence across all letters; only values that every occurrence forces
+went into `key_X.tsv`, with evidence): 1096 ir, 823 gra, 630 lui, 990 dit, 336 facil, 520 faire (H); 1102 Écosse,
+597 et, 459 to, 363 conven, 240 tôt, 686 pli, 458 en, 212 plus, 840 cli, 514 ld, 303 la Gouvernante (name code),
+485 vous (M). Left open because more than one word fits: 970 (projets/desseins/plans, 6 occurrences), 869
+(opérations/plans), 109/651 (two days: "avant [109] ou [651]"), 731/708, 1191 (le/du [1191] Macdonald), 1020, 1082,
+890, 431, 373, 724, 993, 426, 427.
+
+**Result, sense measure (threshold -3.0), before -> after:**
+
+| Letter | groups | 5 Oct before | 5 Oct after | what moved it |
+|---|---|---|---|---|
+| R1072 | 555 | 0.661 | 0.888 | image re-transcription; 8 pooled values |
+| R1067 | 1,481 (was 1,471) | 0.661 | 0.791 | image re-transcription; lui, dit, facil, faire, la Gouvernante |
+| R1074 | 537 (was 564) | 0.702 | 0.747 | re-transcription; faire, Écosse, ld; names |
+| R1064 | 1,243 (was 1,108) | 0.766 | 0.808 | 135 groups DECODE/parse.py had lost; image check |
+| R2067 | 457 | 0.761 (not in cipher_U; counted from transcr) | 0.792 | lui, dit |
+| R1054 / R1070 / R1073 / R1076 / R1068 | 372/400/312/403/60 | 0.925/0.885/0.885/0.819/0.667 | 0.949/0.905/0.885/0.819/0.750 | pooled values |
+| undeciphered letters | 5,820 | 0.749 (of 5,245) | 0.824 | |
+| all groups (Lyonet letters read, R1071 unread) | 10,067 | 0.778 (of 9,363) | 0.823 | |
+| without R1071 | 9,306 | 0.847 | 0.890 | |
+
+At threshold -3.4 the totals are 0.848 overall, 0.917 without R1071; at -2.6, 0.773 / 0.837.
+
+**Why 95% is out of reach here.** R1071 is 761 of 10,067 groups (7.6%) in another code with no key material, so the
+target cannot pass 0.924 even if every other group read. Within the readable letters the remaining failures are
+(i) open codes where several words fit (listed above), (ii) key values that make nonsense in place (homophone
+clashes the 651-group vote did not settle, e.g. 1080 pêche in the date of R1074, 307 forc/pen), and (iii) the
+measure's own under-count of about an eighth.
+
 ## Remaining gaps
 
 - R1071 (to Stainville/Choiseul, 4/7 Aug 1757), 761 groups - blocker: no-key-material; a different code; no decipherment among the images and the Nationaal Archief 1.01.50 inv. 221/223 decipherments are not digitised
-- R1072 weak stretches (~65-78% in sense) - blocker: open-codes; groups not in key_M and unresolved by context; listed as [n] in read/R1072.md
-- ~5-12% of groups per undeciphered letter - blocker: open-codes; single groups with no Lyonet alignment and no context value, listed as [n] in each reading
+- open code groups where more than one word fits (970, 869, 109/651, 731/708, 1191, 1020, 1082, 890, 431, 373, 724, 993, 426, 427 and single groups listed as [n] in read/) - blocker: open-codes; pooled over all letters 5 Oct 2026 (pool.py), no occurrence forces one value; the decipherments NA 1.01.50 inv. 221/223 would settle them (not digitised)
+- key values that read as nonsense in place (homophone clashes in key_M, e.g. 307, 1080), most in R1074 (0.75) and R1067 (0.79) - blocker: open-codes; would need the Lyonet key sheet or NA inv. 223 decipherments
+- R1054, R1068, R1070, R1073, R1076 not re-transcribed from the images (DECODE parse with view.fix splits) - blocker: none external; lower yield, they already measure 0.75-0.95
 
 ## Escalation
 
@@ -96,5 +158,5 @@ R1067: 056=856, 099=899 ...); groups run together (58291 = 582 91) or dropped; s
 - [x] clear-pages: the "clear" pages are Lyonet's decipherments, transcribed into plain/
 - [ ] known-keys: other d'Affry codes (1755-56, and to Choiseul from Dec 1758) not sought for R1071
 - [x] print: De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked
-- [x] key-rebuild: key_M.json voted from the alignments, inferred values in read/R*_new.tsv
-- [ ] retry: not recorded - no second pass over the [n] groups with the extended key
+- [x] key-rebuild: key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values
+- [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)

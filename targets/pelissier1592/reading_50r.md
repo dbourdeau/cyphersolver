@@ -9,17 +9,17 @@ garbled, they are given in brackets, e.g. [e i a n t]. Row labels (C1…) refer 
 {[?]tions (?) toutes contraires, et si vous considerez comme peu a peu ilz vont minant l'authorité de celuy (?),
 ayant premierement osté la disposition des finances, le commandement aux armes, et que par pratiques et aultres voyes
 ilz luy diminuent le credit, tant qu'il [e n p e u u e n t u u u s i o n e r e s], que leur intention est de
-l'abaisser le plus qu'ilz pourront. Dieu veulle que je me trompe, et ne scay s'ilz [?] parvenoient a leurs [?], ains
-s'il y auroit plus de seurté parmy eux qu'a leurs siens, [?] a l'endroit de [p]ceulx qui [luy] nuisent (?) [d e c r s t
-e a] [?] n'estant bien certain que [p a] peu de satisfaction d'eux, et quant [?] a commencé du traicté avec l'un,
+l'abaisser le plus qu'ilz pourront. Dieu veulle que je me trompe, et ne scay s'ilz [?] parvenoient a leurs fins,
+s'il y auroit plus de seurté parmy eux qu'a leurs siens, est (?) a l'endroit de [p]ceulx qui [luy] nuisent (?) de c[e]ste
+façon (?), estant bien certain que [p a] peu de satisfaction d'eux, et quant [?] a commencé du traicté avec l'un,
 comme de valet a maistre.} Il a la pulce en l'oreille et ne dict pas ce qu'il en pense. Je l'ay recogneu {d'un
 Jacobin, son confesseur, nommé Cornent[e] (?)} & lequel est a la suite de ceste court pour ses affaires, quoy qu'ilz
 ayent supply[é] {le davantage (?) [?] ... [?] des estatz (?) [?] que} les [~~estatz~~] ne correspondront pas a ce que
 pretend {[310 = le duc de Savoie (?)] et l'ambassadeur [e r ... n u]} a esté renvoyé sans aultre esclaircissement sur
-ses demandes, lesquelles je ne scay que par conjecture {[?] gouverneur de Milan et don [f o n e e a d c g a n a]
+ses demandes, lesquelles je ne scay que par conjecture {au gouverneur de Milan et don [f o n e e a d c g a n a]
 ambassadeur pres [?]}, lequel vous cognoisses, dont il ne se sent contenté, ayant envoyé la despeche qui luy a esté
 donnee, et attend commandement de ce qu'il aura a faire sur icelle a Madrid. {Puisque le traictement est si egal
-partout} que l'un ne doibt estre jaloux des aultres, {[p a e] d'o[n] [e s m o n t] si [i m] advance, de tant que [?]
+partout} que l'un ne doibt estre jaloux des aultres, {[p a e] d'o[n] [e s m o n t] si [i m] advance, de tant que
 de dire qu'ilz se debvroient mieux recognoistre, et} que le plus sage en fist la premiere ouverture, affin que chascun
 relaschant quelque chose de ses affections particulieres {[i u n a n t] [?] s'unissent en une union si [estroicte (?)]
 que l'on conneust partout que l'offence de l'un} [se devoit] ressentir egalement des aultres, qui seroit le vray moyen
@@ -109,24 +109,34 @@ it is used. Crops: crops/p3_50r_name1.jpg, crops/p3_50r_name2.jpg.
 | "al(.)entia a" | C36 `T f II # e3 8 4y ph q x` | yes, with T = p: "Palentia" |
 | "que l.. ss.." / "en sa part" | C40 `Z8 A t II # g dz` / C40–41 | yes: "que les siens", and T = p in "particulieres" |
 
-## Rows still unresolved (wholly or in part)
+## Rows still unresolved (wholly or in part), after pass 4
 
-- C1: start, "[?]tions".
-- C4: middle, `II 18 z 6 t f g s 4y A Lo 36 dz 6^ Lo 4 e3 r S tt`.
-- C6: start, "scay s'ilz [?] parvenoient".
-- C7: tail, `d e c r s t e a`.
-- C8: "[p a] peu"; "[a]rdon" before "commencé".
-- C10–C11: the confessor's name, see above.
-- C12–C13: the paper is holed in C13.
-- C14–C15: after "l'ambassadeur".
+Pass 4 (crops crops/p4_50r_*.jpg) closed: C6 "a leurs fins" (q = f, 33 = i, s = n, dz = s; the old [?] had no signs);
+C7 "est (?) a l'endroit" (9 = e, k = s, 4y = t); C7-C8 "de c[e]ste façon (?), estant" (v 9 s6 Q Tr 4y L 9 | x s6 z+4 # 8;
+Q written for e is a slip; the "..." is three null strokes); C16 "au gouverneur" (q X; "..." = null strokes); C19 "de tant
+que de dire" (no sign stands between; the [?] was removed).
+
+- C1: start, "[?]tions": the word began on f. 49v (h ... pi Lo 8 dz = t|ions after a struck-through run).
+- C6: "s'ilz [?] parvenoient": signs Tr ȝ 3 looped-L ph 8 (s ? ? e/u i n); the ȝ and 3 do not give a word.
+- C8: "quant [?] a commencé": T 30 6 Lo 8 = a/p r d o n, glossed "ordon"; no "a" sign before "commencé"; unresolved (name?).
+- C8: "que [p a] peu": 26 3 q, unresolved.
+- C10-C11: the confessor's name.
+- C12-C13: "le davantage (?) [?] ... [?] des estatz (?) [?] que": paper holes in C13 and faint glosses; C12 reads d a v [ȝ] a n
+  + null strokes + 5-g 7 S; not enough for the missing words.
+- C14-C15: after "l'ambassadeur": 6 | t 30 A ### L = d e r u/n e (dern[ier]?); "..." = null strokes.
+- C16: "pres [?]": E Q 9 Tr | z+6 o(60?) barred-x ###; unresolved.
 - C16: "don [f o n e e a d c g a n a]".
-- C19: most of the row.
-- C21: start of C22.
+- C19: start "[p a e] d'o[n] [e s m o n t] si [i m]".
+- C21-C22: "[i u n a n t] [?] s'unissent": hole/blot in C21 (pi barred-x ... | 8 9 4 4y), C22 3 ph J L 8 z4.
 - C24: "[m d a i r e]".
-- C26: start.
+- C25: "[?] pour attendre": only a looped L (null or 'et'?) stands there. "commandemens de [?]": no signs between "de" and
+  "puisqu" (z+6 z+4 x C ph Tz z8 L; glossed "d p o a i s u"): an omitted word.
+- C26: "puisqu[e] [e i a n t]"; "et que [?]": only null strokes and a looped L follow "que" before the clear "Je".
 - C28: "[e r i n s p r e e a s]".
-- C30: start, `8 s6 7 o D`.
+- C30: "s'il [?] la volonté": signs ... H o pi | A p | q A o II X 8 4y g: "pourquoy [u l] la volonté" (veu?), unresolved.
 - C32: "[a m e n d i e r u e]".
-- C33–C35: the tail.
+- C33-C34: "et si r[?] ... sans [?] a vostre [?]": C33 ends "et si oo", C34 begins "oo o ph Tr dz q 4 dz" (m o i s s a n s;
+  the oo is probably repeated at the line start); then 3 S s6 o E X o pi D = r e c o e v o i r? (recevoir with an extra o,
+  not firm); A D z4 30 t k 8 o 9 D T dz before "suffisant" not read. "[u o r m i t h u e s]" before "inutile" open.
 - C37: "[o n c o n c t o r] … [i t a d]".
-- C39–C40: "don Fran[cisco]" is doubtful.
+- C39-C40: "don Fran[cisco]" is doubtful.

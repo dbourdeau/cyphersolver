@@ -206,6 +206,78 @@ larger labelled set out of the clear/cipher pairs elsewhere in the volume would 
 less than it first appears; better images, or a sliding-window recogniser that does not commit to
 a connected-component segmentation, or simply reading the lines by hand, are what would move it.
 
+## Session 3 (5 Oct 2026): full re-transcription pass, sense measured
+
+**The old measure did not count sense.** `fraction_read` 0.66 counted every resolved character on
+an H line, whether or not it formed a word ("eav", "tcduesn" all counted). `measure_sense.py`
+now counts a letter only when its whole word is a period-French word (lexicon from the
+`fr-1530-despatches` corpus sources, u/v i/j y/i folded, plus a hand-checked list of period forms
+and names in the script), and words broken at a line end are credited when the join is a word.
+`?`, `(?)`, bracketed word signs and M lines count unread. Denominator = the line's non-null
+machine token count. On the old `trans/reading.txt` it gives **0.476**, not 0.66.
+
+**Re-transcription.** Page images re-fetched from Gallica (views 16, 17, 54); `img/idx/` rebuilt
+for all 106 lines; `show.py PAGE LINE` prints the machine label per numbered token. Every line
+was then read off its image and written to `trans/reading_v3.txt` (marked R) with `setline.py`.
+All 20 former machine-only lines are now hand-read. New content, e.g.: p. 29 "fai[cte] entre eulx
+mais qu il luy fera tant de guerre ... les aragonoys, bourguignoms, haynoyers et fla[mens] contre
+ceulx de castile ... les castiliens disent au contraire que les dessusdictz sont veillacos et
+borachos"; "ledict Herrera doit partir dans deux ou troys iours ... et Lopes Hortado"; p. 31 "donne
+aduis au conte de Sainct Severin et conseil ... par la poste et ont despesche ung courier a toute
+diligence"; "l ambassadeur dudict a faict entendre de semblable au duc de Sesse"; "ie ne scay pas
+ou ilz les forgent"; p. 105 (Clement VII after the Colonna raid) "abandonner Rome et s enfuir ...
+desirant la mort et parlant de sorte en souspirant si profondement qu il n y a si dur cueur qui ne
+n eust eu la plus gran compasion du monde, et m a dict en la presence du ... que j escripvise le tout
+au roy".
+
+| page | old reading.txt (sense) | v3 (sense) |
+|---|---|---|
+| p. 29 | 0.538 | 0.923 |
+| p. 30 | 0.606 | 0.857 |
+| p. 31 | 0.363 | 0.845 |
+| p. 105 | 0.313 | 0.748 |
+| **all** | **0.476** | **0.850** |
+
+What still fails: single glyphs inside words that will not resolve on the B/W film at any zoom
+(the e/r/n, t/l/d, s/u/a sets), clustered on p. 105 ll. 15-17, 20-21, p. 30 ll. 30, 32-34 and
+p. 31 ll. 1-2, 17, 23-24; and two non-key signs: the bold two-crossbar stem ([X], ~4 places,
+clause boundaries, probably a name sign) and a circled four-armed cross ([X2], 4 places). Word
+signs ([roy], [pape], [l empereur]) are read but counted unread by the measure, so 0.850 is a
+floor.
+
+### Session 3b (5 Oct 2026): enhanced zoom pass and printed cribs
+
+`zoomx.py PAGE LINE F0 F1 [Z]` crops half a line at 2.5x with autocontrast, unsharp mask and a
+soft threshold, with the token numbers ticked. Every worst line was re-read this way (p. 105 ll.
+15-17, 20-21; p. 30 ll. 30, 32-34; p. 31 ll. 1-2, 17, 23-24). The enhancement resolved most of the
+faint strokes. What it gave:
+* **⊕ (circled cross, formerly [X2]) is a homophone of i.** It fits "bien" on p. 105 l. 20 ("θ ⊕ ψ f" =
+  b-i-e-n) and "il avoit" on p. 31 l. 24, so it is no longer an open code.
+* **The -| sign is o** ("du coste de dela" p. 105 l. 15, "mon seigneur" p. 30 l. 32), and the
+  C-with-a-circle sign is the l homophone ("seulement" p. 105 l. 15).
+* **ℓ° (a cursive ell with a small circle, [Y]) is a word sign** that is not in the key. It stands
+  where a name or title fits: "contre [Y] comme l on devoit", "ledict [Y] il auroit tousiours le
+  moyen" (p. 105), "de [Y] icy" (p. 30 l. 33) and "les dictz de [Y]" (p. 31 l. 2). It is open: 4 occurrences.
+* The two-crossbar stem [X] follows "son maistre" on p. 31 l. 23, and so is a person's sign.
+* New readings: p. 105 "ouoit procedoit seulement de ce que du coste de dela", "ne s estoit
+  rompo(?) contre [Y] comme l on devoit"; p. 30 l. 32 "[X] mon seigneur, i ay sceu hyer soir de bon
+  lieu que de Mantoue"; p. 31 l. 1 "traicte entre [le pape] ... et [l empereur]"; l. 2 "c est ceste
+  nuyt passee les dictz de [Y] en ont donne aduis"; l. 23 "tout le mal de son maistre [X] et que
+  deux ou troys foys"; l. 24 "il avoit este en voye d estre destruict pour luy".
+
+**Printed cribs.** *Grethen 1887* is not on archive.org, HathiTrust or Google Books under any
+search tried, so it is still not seen. Grethen pp. 108-131 quotes the reports of 9, 11 and 17
+June, 20 Aug and 30 Nov 1526. Pastor cites none for 13 May or 20 Nov. *Pastor IX* (English, archive.org
+`historyofpopesfr09past`) has been checked. Its appendix no. 38 prints **Raince to Montmorency, 26
+Nov 1526, fr. 2984 f. 109**, six days after the p. 105 letter, and not the same text. It is a
+strong parallel: "de tout habandonner et s'enfuyr", "ne voyant mesmement venir du coste de dela",
+"n'a moyen d'obvyer". These are the phrases read independently on p. 105 ("abandonner rome et
+s enfuir", "du coste de dela", "le moyen"), so it supports the reading but supplies no letter
+values. The "1522 despatches" Pastor cites (9-10 Jan 1522, Béthune) are other letters, outside this target.
+
+Sense measure after 3b: p. 29 0.923, p. 30 0.877, p. 31 0.872, p. 105 0.781; **all 0.870**
+(0.850 before 3b).
+
 ## What would finish it
 
 1. **Better images.** The Gallica item is a black-and-white microfilm; a reader's photographs
@@ -255,14 +327,12 @@ not tracked; re-fetch with
 `https://gallica.bnf.fr/iiif/ark:/12148/btv1b90598430/f<n>/full/full/0/native.jpg`.
 
 ## Remaining gaps
-- 13 May 1526 letter, pp. 29-31 (96 lines): residual letter errors and ~20 machine-only lines - blocker: illegible; B/W Gallica microfilm; LOO classifier accuracy saturates at 0.868 as hand labels are added, the e/r, t/l/d, s/u/a confusions are resolution-bound; better photographs of pp. 29-31 needed
-- 20 Nov 1526 letter, lower 21-28 lines of p. 105 - blocker: illegible; same microfilm limit; only line 4 verified glyph by glyph
-- one-glyph word sign, bold stem with two crossbars, p. 30 line 1 - blocker: open-codes; matches nothing in Tomokiyo's table; single occurrence
-
+- residual unresolved glyphs, ~13 % of letters, worst on p. 105 ll. 15-17, 20-21, p. 30 ll. 30, 32-34, p. 31 ll. 1-2, 17, 23-24 - blocker: illegible; every line was re-read from the image in session 3 (trans/reading_v3.txt); the remaining glyphs do not resolve on the B/W Gallica microfilm; colour photographs of pp. 29-31 and 105 needed
+- two word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (name or title), ~4 occurrences each - blocker: open-codes; too few occurrences, no clear copy; the circled cross is now identified as i
 ## Escalation
 - [x] siblings: clear duplicate of the 9 June letter (p. 17 ff.) and glossed leaves pp. 25, 41, 121-123 checked; no clear copy of 13 May or 20 Nov found
 - [x] clear-pages: clear close of the 13 May letter on p. 31 transcribed (trans/p31_clear_close.txt); glosses on p. 29 ll. 1-13 and p. 105 top used
 - [x] known-keys: Tomokiyo 1526 key re-measured (CALIBRATION.md); 1529 key noted as a different system
-- [ ] print: not done — partly: Mignet 1886, Bourrilly 1901, Tomokiyo, DECODE checked; Grethen 1887 pp. 108-115 and Pastor IX appendix XXXVIII not seen
+- [x] print: Mignet 1886, Bourrilly 1901, Tomokiyo, DECODE, Pastor IX (app. 38 = 26 Nov 1526 f.109, parallel wording, not this text) checked; Grethen 1887 not digitised anywhere found
 - [x] key-rebuild: shape-constrained hill climb (solve140.py), per-token classifier htr2.py, 6-gram LM beam decode2.py
-- [ ] retry: not done — the numbered-token hand pass (bandsi.py) has 6 verified lines; about 100 lines remain to be read that way
+- [x] retry: session 3 re-read all 106 lines off the images (trans/reading_v3.txt); sense measure 0.476 -> 0.850

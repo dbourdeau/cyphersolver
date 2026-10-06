@@ -20,7 +20,7 @@ Great Lord, mantaine that regal familie
 Whereof King Charls the second is the head,
 And grant that he may beare the supreme sweigh
 Where English, Scots and Irsh are borne and bred;
-And [conerthto?] this usurp'd authoritie
+And [?] overthrow his usurp'd authoritie
 Reigne in his royal predecessors stead:
 Let him be our sole Cesar, Artur, Hector,
 Our Emperour, King, Monarch and Protector.
@@ -28,7 +28,7 @@ Our Emperour, King, Monarch and Protector.
 ```
 
 A royalist prayer for Charles II in ottava rima, written in London in March 1652 by a prisoner of Worcester, hidden
-in a book written to vindicate Scotland. Ten letters of line 5 (positions 151–160) do not read; see §5. The rule was
+in a book written to vindicate Scotland. Line 5 was re-read on 5 Oct 2026 (§5): "And [?] overthrow his usurp'd authoritie"; one letter (position 149) stays open. Measured as sense (§8): octastich 274/285 = 0.961 (read); with the unread distich, 274/349 = 0.785. The rule was
 published by Vals AI on 31 Aug 2026 as a Claude Fable 5.1 result with the same plaintext; it is verified here from the
 text and the numbers alone, without using their plaintext, and their two caveats (a page offset from position 159, a
 missing line-5 stretch) are traced to the TCP transcription and to the page itself. The **distich** claim (i-th number
@@ -93,7 +93,7 @@ wREATLORDMApTAInETHATREGtaFAMILIE          Great Lord, mantaine that regal famil
 WtEREOFKINGCHARLStHaStCONtISTaEHiAD        Whereof King Charls the second is the head
 ANDGRAnTTHatHEDAYBEARETHEFUPaEMESgEIGS     And grant that he may beare the supreme sweigh
 WHERDENGLIsHSCoTSANDIOSoAREBORNEANDBRED    Where English, Scots and Irsh are borne and bred
-AaDCOnERTHTO_aIttSUaPDApTHORIEIE           And [conerthto?] this usurp'd authoritie
+AaDCOnERTHTO_aIttSUaPDApTHORIEIE           And [?] overthrow his usurp'd authoritie
 REIGtEINMISnOtALPREDECESSORSSifAt          Reigne in his royal predecessors stead
 SETHpLBEOURSOLtCESAtAmtaRHECBOR            Let him be our sole Cesar, Artur, Hector
 OeREMPoRPUwJINGMONARCHANDPROTECTOR         Our Emperour, King, Monarch and Protector
@@ -107,12 +107,26 @@ expects if Urquhart's page and the TCP page differ by a word or two.
 
 ## 5. Line 5
 
-Positions 149–160 decode A-N-D then C-O-N-E-R-T-H-T-O, then the unreadable page 158, then T-H-I-S. Eight of the nine
-letters CONERTHTO are exact first-occurrence hits, so this is what the TCP text yields, and it is not English. Vals
-report the same nine letters and no reading. Candidates for a ten-letter word or phrase there ("And [..........] this
-usurp'd authoritie") were not found. Either the numbers of this stretch were misprinted in 1652, or Urquhart counted
-from the wrong page for a line, or the TCP pages 149–158 differ from the print more than elsewhere (the near-empty
-page 158 says the copy filmed had a problem just here). Needs the 1652 leaves.
+*16 Sept reading (superseded):* positions 149–160 decoded A-N-D, C-O-N-E-R-T-H-T-O, page 158 unreadable, then
+"this"; no ten-letter word was found.
+
+*5 Oct 2026 re-reading.* The numbers of line 5 were re-checked on `src/octastich_part1.jpg` at full resolution
+(crop 200–3700 × 1580–1720): `3.58.15.2.1.4.5.56.5.5.2.4.12.20.19.14.80.37.45.34.3.95.6.38.1.18.11.27.4.13 / 7.24`,
+32 numbers, identical to `ct.py`; the 1983 print is not the problem. What was wrong was the segmentation. The tail
+163–177 decodes S-U-a-P-D-A-p-T-H-O-R-I-E-I-E = (u)surpd authoritie at offset 0, so 162 is U (n = 80, first U on the
+page at 79). That leaves 149–161 (13 slots) for the words between "And" and "usurp'd". Decoded on its own page,
+150–157 give O-n-E-R-T-H-T-O: O, E, R, T, H, O are exact first-occurrence hits for OVERTHRO, and the V (151, n = 4)
+and second R (156, n = 2, first R at 1) are the two misses. 158 is the TCP slot with no text (W). 159 n = 20 → H
+(first H "hand" at 19), 160 n = 19 → I (exact), 161 n = 14 → S: the TCP splits "Leopoldo's" into "Leopoldo s",
+and with that phantom token removed word 14 is "said", the first S. So: **And [?] overthrow his usurp'd
+authoritie**, 3 + 1 + 9 + 3 + 6 + 10 = 32 numbers, and the old "this" was a misreading of the same slots. The
+en-1640s model scores the line −4.43/char against −4.77 for the old CONERTHTO string.
+
+Position 149 (n = 2) gives C ("Colonel") and the line needs a one-letter word there, or a slip; "O" (vocative)
+fits the prayer but O is word 35 on that page, so it is not read. The TCP page 158 is a duplicate-image gap in the
+TCP XML although the text runs on ("to let him / know that many ward"); Urquhart's count nevertheless needs a page
+there (163 onward aligns at offset 0), so his copy had a leaf the TCP filming does not carry; its letter (W) is
+supplied by the word and not counted as read.
 
 ## 6. The distich
 
@@ -125,6 +139,17 @@ first-occurrence test on Reticuli's tokenised Proquiritations gives 34 of 64 hit
 (k → page k or k+1…3 of *The Jewel* or of *Logopandecteision*, printed or physical, lines restarting at page 1) sit
 inside the shuffled control (mean 0.50, max 0.62 of 64). The distich is another construction, or this one on a text
 not tried (the six-line verse under it, the *Parva peto* couplet, the 1653 sheets), and it stays open.
+
+## 8. Measuring sense (`measure_sense.py`, `measure_sense.txt`; 5 Oct 2026)
+
+The 16 Sept figure (275/349 = 0.788) counted every position that produced a letter, right or wrong, so it did not
+measure sense. `measure_sense.py` compares, for each of the 285 positions, the letter of the final reading with
+word n of physical page k: *exact* (the word begins with that letter), *near* (it does not, but the first word with
+that letter is within ±2 of n, the tokenisation difference seen across the book), otherwise a gap. Per line:
+1.000, 0.943, 0.974, 1.000, 0.906, 0.970, 0.935, 0.971, 0.900; octastich **274/285 = 0.961** (233 exact, 41 near).
+The 11 gaps: 55, 66, 106, 149, 151, 158, 207, 232, 239, 250, 283; each was re-checked on the photographs and the
+1983 numbers stand, so they are Urquhart's or the 1652 compositor's slips (or 1652/TCP page differences) where the
+context fixes the letter. With the distich (64 numbers, unread) the target is 274/349 = **0.785**.
 
 ## 7. Files
 
@@ -142,7 +167,8 @@ numbers (272, 82 distinct, IC 0.021) and called a book cipher by shape, "not att
 text was the book it is printed in, and the poem said so.
 
 ## Remaining gaps
-- octastich line 5, positions 151-160 (CONERTHTO + page 158) - blocker: needs-physical-access; TCP text of pp. 149-158 differs from the print (near-empty p. 158); needs the 1652 leaves
+- octastich position 149 (one letter of line 5) and position 158 (TCP gap page) - blocker: needs-physical-access; the 1652 leaves (EEBO images of the filmed copy, or another copy) to check p. 149's word 2 and the text of the leaf counted as p. 158
+- octastich 9 other positions (55, 66, 106, 151, 207, 232, 239, 250, 283) - blocker: illegible (writer's/compositor's slips; numbers re-checked on the 1983 photographs, letter fixed by context only)
 - distich, 64 numbers - blocker: no-key-material; claimed Proquiritation rule gives 34/64, chance; page-index variants on The Jewel and Logopandecteision at chance; key text not identified
 
 ## Escalation
@@ -150,5 +176,5 @@ text was the book it is printed in, and the poem said so.
 - [x] clear-pages: the key verse printed under the octastich read and used (it names the key text)
 - [x] known-keys: Proquiritation rule and page-index variants on both books tested for the distich
 - [x] print: 1652 TCP, 1653 edition, 1834 Works, Wilcock 1899 and the 1983 edition checked
-- [ ] key-rebuild: not done — try the six-line verse under the distich, the Parva peto couplet and the 1653 sheets as key texts
-- [ ] retry: not done — re-decode positions 149-160 against page images of the 1652 Jewel (EEBO/ESTC copy), not the TCP
+- [x] key-rebuild: 5 Oct 2026, 1834 Works fetched (archive.org worksofsirthomas00mait -> src/maitland1834.txt; p. 417 distich, six-line verse, Parva peto couplet and its English). `distich_verse_keys.py` (output `distich_verse_keys.txt`): the six-line verse, the Latin couplet, its English, the octastich reading and its Decagram verse, alone and concatenated in both orders, as word-index and letter-index keys, with and without wrap-around: 76 decodes, best -6.76/char (Parva peto, letter index) against -5.09 for English; none reads. Distich stays unread
+- [x] retry: 5 Oct 2026, line 5 re-transcribed from the 1983 photograph at full resolution (numbers confirmed) and re-segmented: overthrow his usurp'd; the 1652 page images are still not reachable

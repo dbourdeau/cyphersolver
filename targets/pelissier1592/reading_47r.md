@@ -1,4 +1,4 @@
-# f. 47r (canvas 102): Pelissier to Jeannin, Burgos, 13 Sept 1592, page 3 (pass 3)
+# f. 47r (canvas 102): Pelissier to Jeannin, Burgos, 13 Sept 1592, page 3 (pass 4)
 
 Deciphered stretches are in {braces}; everything else is the clear text of the letter. [?] marks a word or run that could not be
 recovered, (?) follows a doubtful word, and [..] marks letters I supplied. Spelling is left as the cipher gives it.
@@ -16,12 +16,12 @@ doulceur, amitié et bienfaicts, {a quoy Sa Maiesté se conformant, elle en remp
 avec beaucoup d'honneur et reputation envers toutes nations, aus[si] que [?] elle fera cognoistre [q]u'elle(?) peult ce}
 qu'elle voult, qui pour cest occasion la respecteroient davantaige. Et pour veoir {ceste avisa[?] [?] couronne obli[g]a(?)
 [?] [?] semblera, elle [s'a]cr[oistr]a(?) [?] enfin a l'endroit des François} pour leur avoir tesmoigné par avoir oy la
-volunté conforme a son pouvoir {a la ruine et confusion des meschans, [et] Roy(?) cognoissance de quoy ilz rechercheroient les
-occasions d'employer leurs [?] a son service, et les moyens de restituer ce que l'auroit f[?] [?], les tirer de miseres, et
-pour conclusion s'orneroit(?) d'un [?], rendroit sa memoire a [?] immortelle aux siecles a advenir. Il escouta tout cela [?]
+volunté conforme a son pouvoir {a la ruine et confusion des meschans, en Roy(?) cognoissance de quoy ilz rechercheroient les
+occasions d'employer leurs vies(?) [a] son service, et les moyens de restituer ce que l'auroit f[?] [?], les tirer de miseres, et
+pour conclusion s'orneroit(?) d'un [?], rendroit sa memoire glorie[u]se(?) et immortelle aux siecles a advenir. Il escouta tout cela [?]
 sans m'interrompre, et me dict que} avant que me respondre il me vouloit faire quelques interrogats sur ce subiect; luy ayant
 satisfaict, il me declareroit son intention sur ce que je luy avois discouru, {d'assavoir si je le faisois par commandement,
-que je n'eusse de [?] conclu(?) de moy mesme, et si j'adioustis(?) [?] a ce qui [n']estoit contenu}. Je luy repliquay luy
+que je n'eusse de [?] conclu(?) de moy mesme, et si j'adioustis(?) foy a ce qui [n']estoit contenu}. Je luy repliquay luy
 avoir desia dict que je n'avois aucun advis de Monseigneur depuis que les armées estoient proches l'une de l'aultre auprés de
 Caudebec, que je l'avois adverty lors de ce qu'il me mandoit et mesmement du jugement qu'il faisoit {[e]stre [n]ecessaire(?)
 que l'on mist sus deux armées, n'[ayan]s(?) que quelques personnes de [?] et affections a la cause, et mes amis sçachans que
@@ -31,7 +31,7 @@ les occurrances; que voyant plusieurs doubtes se rendre concurrans en mesme opin
 du debvoir de ma charge et necessaire pour l'acquit de ma conscience de luy representer a la verité sans rien desguiser, afin
 que Sa Maiesté en estant comme je le desirois {[a]verti(?), il luy pleust y ordonner qu'il fust pourveu a ce que les
 inconvenients que j'avois proposé n'eussent [leurs] effects, [?] l'ayant [?] que j'aurois pensé [?] [?]ement est[oit](?)
-necessaire [?] pour [?] ceste satisfaction [the cipher repeats "atis"], [?] n'a[v]oit(?) [?] autre(?) chose que l'une des
+necessaire [?] pour [?] ceste satisfaction [the cipher repeats "atis"], [?] n'arrivoit autre(?) chose que l'une des
 [?], j'eusse au moins ceste satisfaction de ne m'estre oubli[é](?) en ce que j'ay deu, [?] remarquer les succés passés,
 lesquelz les ennemis fondoient leurs calumnies et les peuples la perte des esperances qu'ilz n'o[nt](?) [?] de se veoir
 relevez de leurs miseres par les aydes de Sa Maiesté,} et fortifie chacun point des raisons qui s'alleguent ou de celles qui
@@ -96,16 +96,29 @@ runs over onto f. 47v.
 
 The glosses in C16 ("piu"), C19 ("gaig.ss"), C21 and C26 are too faint to check.
 
+## New readings in pass 4
+
+- C15 end "employer leurs vies(?) [a] son service": `d ph t tt` (the cross is x-height, `t` = e, not tall `f`); the writer left out "a"; faint gloss under it.
+- C18 "rendroit sa memoire glorie[u]se(?) et immortelle": `f I o 30 … pi t dz ? dz q9 oo` (f = g, cands alternative; an ink blot covers one sign, read u; `q9` = e at word end, `oo` = et).
+- C21/22 "si j'adioustis(?) foy a ce qui": last sign of C21 `q` read f (cands alternative), C22 `z 4 56` = o y.
+- C30 "n'arrivoit autre(?) chose": the two signs transcribed `n` are flat-topped box-pi (`pi` = i), not the cursive n (= d); `8 T S 6^ 36 Lo pi h` = n a rr i u o i t.
+- C14 "en Roy(?)" for "[et] Roy(?)": `S 4` = e n (no sign for "et").
+
+Looked at again and left open: C1 head (`g dz q 80 + 8 T I r z4 6^ h`, no French); C6 `4 4` before "de sa mort"; C19 `I q 4 T T pi 6^ D`
+before "sans m'interrompre" (the first T has a tau curl, so g: "l a n g ? i i e", not "patiemment"); C21 `S z 6 z I X` before "de moy mesme";
+C24 `4 x q k` ("mais" would need q = i); C33 `S E D` after "n'o[nt]"; C36 `I 6^ A D` before "fortifier" ("pour" would need 6^ = o and
+D = r) and "la cro`pi 6^ ph tt`".
+
 ## Rows still unresolved
 
 - **C1 start** (`g dz q 80 + 8 T I r z4 6^ h`), and the key word `+ q r x 8 ? s6 Lo pi 80` ("harançois" for François).
 - **C5/6**: `x` in "esle[a]ué", and "[?]sion" plus `4 4` before "de sa mort".
 - **C6 end and C7**: "precipiter a `c 7 i s e q u a a u s t`" and `oo # II q s T d + 36 Q`.
 - **C10–C12**: C10 `x A tt` "aus[si]" and `A X t m S`; all of C11; C12 from "obli-" to "semblera" and its end.
-- **C14 end** "[et] Roy"; **C15/16** the word before "a son service"; **C16 end** `19 + 36 D 4 x 56 D ? X 56 I d A 30`.
-- **C17 end/C18**: "d'un `h 6 T E 7 II z`", "a `f I o 30 … pi t o ? dz`".
-- **C19** `lam I q 4 T T pi 6^ D dz`; **C21** `S z 6 z` before "conclu"; **C22 start** `z 4 56 #`.
+- **C16 end** `19 + 36 D 4 x 56 D ? X 56 I d A 30`.
+- **C17 end**: "d'un `h 6 T E 7 II z`" (gloss "tr.o"; "trophée" would need 6 = r, T = o: not supported).
+- **C19** `lam I q 4 T T pi 6^ D dz`; **C21** `S z 6 z I X` before "de moy mesme".
 - **C24–C26**: `4 x q k` (n'ayans?); C25 `8 Lo x p 33 4 S x 6 + 6 o. t X r`; C26 `T p f q lam 8 4y x 33 ... 8 e3 o X` and `I A HH ?`.
 - **C28** `v H II x 60 q s 4 33 lam s 80 pi 8 tt 4y S 4 q 8 4y S 4 q 8` (repeated `S 4 q 8`).
-- **C29** first half, and the dittography "satis atis"; **C30** `8 T S 6^ lam` and `n t 80 n r g D`.
+- **C29** first half, and the dittography "satis atis"; **C30** `n t 80 n r g D z 4 ph 4 33` ("des [?]").
 - **C31** `36 X # 36 t 33 q #x Lo n dz`; **C33** `z 4 # ... 8 z4 S E D n t`; **C35 start**; **C36** `I 6^ A D` and "la cro[?]".

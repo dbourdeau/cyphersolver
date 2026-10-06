@@ -1,4 +1,4 @@
-# f. 48v (canvas 105): reading after the third pass
+# f. 48v (canvas 105): reading after the fourth pass
 
 Pelissier to Jeannin, Burgos, 13 Sept 1592, page 6. Clear text is in plain type and deciphered cipher is in {braces}.
 [?] marks a word that could not be recovered, and (?) follows a doubtful word. Where the cipher letters are garbled,
@@ -18,16 +18,16 @@ changement. {Si aussy par disgrace le contraire advenoit, l'armée qui resteroit
 subjectes a sa dite majesté, seroit preste pour recueillir les reliques de ceste deffaicte, avec lesquelles on
 demeureroit assez puissant pour [arr]ester le cours de la victoire audit ennemi, [q]ue s'a[?] (?) les dites deux
 armées. S'il le veult (?) continuer les secours que le [?] donne en [?] et les estendre en encores (?) autres
-provinces, [c']est d'autant plus incommoder [315]; mais si elle ne vouloit porter tant de despence a la fois, [?]
+provinces, [c']est d'autant plus incommoder [315]; mais si elle ne vouloit porter tant de despence a la fois, qu'(?)
 il lu[y] est [a] considerer que pour} le bien general des affaires. Il est cependant que {ses secours cessent,
 lesquelz, regardant a ce qui} s'est passé, apportant peu d'advancement pour le so[blot]ire (?) d'Iceulx, et
-plustost causent la ruine {des dites provinces que leur soulagement; n'y e[?] (?) que les forces estant debiles et
+plustost causent la ruine {des dites provinces que leur soulagement; n'y ha (?) que les forces estant debiles et
 quasy} egales de part et d'aultre, elles n'entreprennent rien de grand, se contentant de prendre quelques petites
 villes de peu d'importance, dont l'ennemy se rend puis apres maistre a son tour, ou en attaque d'aultres a mesme
 temps desquelles il se prenant (?). Estant a croyre qu'il serviroit plus a leur repos {de se resouldre a tenir
 [d e u n e s a c m l s] (?) ensemble, moiennant qu'on [n] (?) lesditz ennemis. Suivront la guerre dedans les
-provinces, seroient contrains d'acquerir (?) a l'e[?] ... [?] veoiant (?) presser, que commencent ainsi [?] ...
-[?] leroit les esperances, [?]eroit oublier les miseres passées et esleveroit les courages des catholiques a}
+provinces, seroient contrains d'acquerir (?) a leur (?) [?] le veoiant presser, que commencent ainsy [?]
+renouveleroit (?) les esperances, [?]eroit oublier les miseres passées et esleveroit les courages des catholiques a}
 prendre des resolutions formes et solides tendentes a un establissement certain {pour eux, a la ruine et confusion
 de leurs contraires. Et si lors sa dite majesté declaroit quelque affection particuliere en la nomination du roy}
 il ne falloit doubter que chascun ne s'accordat a luy complaire et obeir, les uns guidés d'une pure franche et
@@ -41,7 +41,7 @@ monar[que] (?), [ce] (?) s[e]mble, est [d']e[?] (?) aux meurs, conditions et aff
 nourries (?) et eslevées les nations qui luy sont subjectes, et} celles desquelles il se veult servir, et scavoir
 discerner la differance qui est en chascune d'Icelles, affin que {les regissant avec ce qu'il cognoistra}, les
 rendre plus flexibles et leur estre plus tolerable. {Ils (?) [a p o n l e] (?) d'eux (?), estant bien plus aisé que
-par sa prudence il se command[e] ... employe ses [?] ... [?] de penser changer tant de milliers d'hommes ...}
+par sa prudence il se command[e] e[m]ploye ses comple[x]ions (?) [u n e] de penser changer tant de milliers d'hommes ...}
 [continues on f. 49r]
 
 ## Summary
@@ -112,22 +112,36 @@ about the difficulty of changing "so many thousands of men".
   - C29: `F` in "puissant" is J (ss).
   - C32: `s 6` in "roy" is one compact 56.
 
+## What pass 4 changed (5 Oct 2026, crops/p4_48v_*.jpg)
+
+- C14: "a la fois, qu'(?) il lu[y] est [a] considerer": the unbarred 8 before A is q, as in C19 where an unbarred
+  8 must be q in "que les forces"; the sign before "nsider" is a baseline-bar ⊥ (o), not T, so the "a" is editorial.
+- C19: "n'y ha (?) que les forces": the third sign is a compact + (h), not the small cross; 8 56 + x = n y h a on
+  primary values. Context would prefer "veu que"; kept doubtful.
+- C22 end: "a leur (?) [?] le veoiant": the delta after x is the big open-loop Q (r); x = u is a listed alternative.
+  `z H D 19` (c q/o e/r f) stays open; `p t` = le.
+- C23: "ainsy [?] renouveleroit (?) les esperances": `D t 4 o f g I e3 Q z+4 ph z4` = r e n o uu e l e r o i t,
+  using two listed alternatives (D = r, f = uu). 60 = y gives "ainsy".
+- C40/C41: "il se command[e] e[m]ploye ses comple[x]ions (?)": a blot covers the sign after e; `pi n o s` was a
+  misread for `pi o s` (one tall-ascender delta). The word is c o [Z] m p l e s i o n s: one extra Z and k for x.
+  `A A D` (u n e) before "de penser" stays unread.
+
 ## Rows still unresolved (wholly or in part)
 
 - C1: middle, "lesquelz [s e t r e h]eroient".
 - C2: end, `pi v # +` before 315.
 - C3: "huit" is doubtful. The cipher reads `+ ? A X pi s D 4y`, with an ink blot.
-- C6: `S k t n` after "la c[?]e".
-- C11: end, "que s'a[?]".
-- C12: "donne en [4 56 X oo 4 4 6]". A province name is expected here, possibly Norm[andie]?
-- C14: "[8 A] il lu[y] est".
-- C19: start, "n'y e[?]".
-- C21: start, `n e3 A o. S tt x dc HH p k`.
-- C22: end, after "d'acquerir".
-- C23: middle, `n o. D t 4 o f g`.
-- C32: end, "prend [..] cueurs".
+- C5/C6: "la c[?]e [d e s e]": `I f dc e3 n | S k t`; the final `n` before "refuser" sits after the slash and is
+  in the clear hand. No reading of `dc e3 n S k t` found.
+- C11: "que s'a[?]": `q o X I z4 D g` = a o u l t e e; no word found.
+- C12: "que le [?] donne": there is no sign between `m S` (le) and `n o o. t` (done); the scribe left the subject
+  out. "en [?]": `4 56 X oo 4 4 6` (a province expected; Normandie does not fit the signs).
+- C22: end, `z H D 19` between "a leur" and "le veoiant".
+- C23: `n o.` between "ainsy" and "renouveleroit" ("on" expected; n = d).
+- C24: "[?]eroit oublier": the first sign is a plain 4 (n/m/t); "feroit" is expected but not supported.
+- C32: end, "[?] prend [?] ... [?] cueurs": `Q z6 r e3 s / n dc z+4 pi S 8 z4 Lo p x z D q X X`.
 - C34: "monar[que] ... s[e]mble".
-- C35: "est [d']e[?] aux".
-- C40: start.
-- C41: middle.
+- C35: "est [d']e[?] aux": `D S q X oH`.
+- C40: start, "[a p o n l e]".
+- C41: `A A D` before "de penser".
 - A reads **n** in "en[c]ores", "d'autant", "despence" and "cessent", against GLYPHS.md.

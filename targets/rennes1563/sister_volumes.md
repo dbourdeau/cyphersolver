@@ -52,3 +52,19 @@ Limitation: at 800 px per view, a one-word cipher group or a faint margin gloss 
 listed above were checked at full resolution.
 
 Downloads are in scratchpad/sv/<ark>/NNN.jpg (1000 px) and the contact sheets in sv/cs_<ark>/.
+
+## Second survey (5 Oct 2026): Colbert 393, 396, fr. 3180, fr. 3182
+
+Every view fetched at 700 px (`sv2/<vol>/`), contact sheets of 12 views (`sv2/<vol>_sheets/`), every sheet looked at;
+candidates opened at full thumbnail size.
+
+| Vol. | Ark | Views | Contents seen | Cipher |
+|---|---|---|---|---|
+| 500 Colbert 393 (vol. IV) | btv1b10033960h | 198 | 1554-59 letters: French secretary hands, Italian letters from Ferrara (signed "Il duca di Ferrara"), Venice newsletters, v148 a troop table (Coronelli, Archibugieri...) | none |
+| 500 Colbert 396 (vol. VIII) | btv1b100339488 | 135 | Bourdin 1557-61 (signed "Bourdin"), La Bourdaisière, Morvillier; v075-076 heavy ink bleed-through, clear text | none |
+| BnF fr. 3180 | btv1b9060271q | 120 | Italian and French letters of the 1550s-60s to a "Mons. l'Evesque de Rennes"-type addressee, Spanish hands | none |
+| BnF fr. 3182 | btv1b9060260x | 144 | Charles IX / Henri III period letters, a "De par le Roy" ordonnance, registers and lists (v035, v106-107), long memoranda | none |
+
+**Result: no ciphered passage, no gloss, no decipherment and no key sheet in the Bishop of Rennes' cipher (or any other
+cipher) in these four volumes.** With 391, 394, 395 surveyed on 21 Sept, the whole Bochetel series and both fr. 3181
+neighbours are now negative. No crib comes from them.

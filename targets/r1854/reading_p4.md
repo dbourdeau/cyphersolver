@@ -23,9 +23,9 @@ Homophonic substitution in graphic signs, Latin. Key rebuilt ciphertext-only (`k
 17. -us est perdere quam Uenetis tradere, quia una uice recuperabit-
 18. -ur; set si Ueneti haberent, recuperare nunquam esset possibile. cance-
 19. -larius Nicolai de Tolentino hinc recessit bene expedictus; unde
-20. creditur Nicolaus cito debert(?) onorio(?) debeat recedere. Bonifacius
+20. creditur Nicolaus cito de Bertonorio debeat recedere. Bonifacius
 21. de Meana(?) becaris(?) uenit huc pro negociis domini abbatis eius fratris
-22. sui; domicus(?) noster restitu(i)t abbaciam et ab omnibus dictum abbatem
+22. sui; dominus [domicus] noster restitu(i)t abbaciam et ab omnibus dictum abbatem
 23. totaliter liberauit eumque ab excomunicacione liberauit. dic-
 24. -tus autem Bonifacius hinc cum magna frequencia reccessit in salu-
 25. -tato ospite; presumitur esse debeat quia orta sit aliqua diferenc-   (revised in second look)
@@ -42,3 +42,5 @@ Reading:
 ## Measure
 
 Image 4: 1,566 signs (`_check_profile.py --measure p4v2.txt`). Not in sense: L04 re[?]bs and leonebi (~10), L05 aisignata pure(?)st (~10), L11 uniei ... cille (~9), L14 a-mhi (3, expected a[rchi]episcopus), L20 debert(?) onorio(?) (~12), L22 domicus (~7) — about 51 signs. Read as sense ≈ 1,515/1,566 = 0.967. Image 5: 202 signs, all in sense (one com sign by context). Names read letter by letter but unidentified: Trrusius(?), Berardelus, Bonifacius de Meana(?), Canedulum(?).
+
+5 Oct 2026: L20 "de Bertonorio" (Bertinoro, letters as keyed) and L22 dominus (c for n) read: 1,505 / 1,537.

@@ -24,7 +24,7 @@ place at the top and a stamped number (23, 24, 26 …). Tokens measured with `do
 | P5 (I8415) | Rome, 21 Feb 1430 (verso, image upside down) | Francesco de' Cattanei | Latin | same as P4 | 202 (`p5v2.txt`) | read, 1.0 |
 
 Readings: `reading_p2.md`, `reading_p3.md`, `reading_p4.md` (P4 + P5). Total 4,737 cipher signs; read as sense
-about 4,337 (P2 1,740 + P3 880 + P4 1,515 + P5 202) = 0.916; P1's 262 signs all unread.
+about 4,337 (P2 1,740 + P3 880 + P4 1,515 + P5 202) = 0.916 (0.922 after 5 Oct 2026); P1's 262 signs all unread.
 
 ## Method
 
@@ -66,11 +66,27 @@ as a doubtful word; the phrase now reads without a gap: "dominus a[rchi]episcopu
 nostri dare volebat temporale dominium dominio Venetorum". Corrected in `reading_p4.md`, `p4v2_notes.md` and
 docs/r1854.html. No count changes (the two signs were already counted as read).
 
+## 5 Oct 2026: push towards 95% (stops at 0.922)
+
+Images re-fetched from DECODE with the saved cookie (PNG; P1 1121x697 px) into `img/` (git-ignored by
+`img/.gitignore`). Ceiling first: with every P2-P5 gap closed the target reaches 4,431/4,694 = 0.944, so 95% needs
+P1 read, which has no key material (see Remaining gaps).
+
+- P1: run lines cropped at 3x; L05 matches `p1v2.txt` sign for sign. New hypothesis: the separators (`//`, `:`,
+  `...`, `.`, `|`) are hidden cipher signs, not punctuation (`p1_withsep.txt`). Annealed in Latin and Italian,
+  10 restarts each: -2.76 / -2.63 per char, no words (`run_withsep_*.txt`). Failed.
+- P2 L28 (image checked: `= 14 j 14 P w 7 &` = l e u e n d e r): "persuaserat matri et filie u[t] vel(l)e(nt)
+  vendere ter(r)as ipsas" (17 signs newly read; replaces "vellent venire(?) [?] ipsas").
+- P4 L20 "debert onorio" re-divided with every letter as keyed: "creditur Nicolaus cito de Bertonorio debeat
+  recedere" (Bertinoro; 12 signs). P4 L22 "domicus noster" = dominus noster (c for n, 7 signs).
+- P4 L04 "leonebi": the image shows `t +` (e b) clearly, so "Leonelli" (Leonello d'Este) is not forced; left open.
+- Re-count: P2 1757/1802, P3 869/894, P4 1505/1537, P5 199/199, P1 0/262 = 4,330/4,694 = 0.922.
+
 ## Remaining gaps
 - P1 (Pandolfo Malatesta, Rome 22 Apr 1428), 262 signs in 3 runs - blocker: no-key-material; not a monoalphabetic or homophonic substitution in Latin or Italian (solver controls pass on synthetic text with 12% noise); none of the register's Malatesta keys fits; the likely key material is Pandolfo's own ciphered letter of 1 Mar 1438 with its contemporary translation (ASMn AG b. 1081 c. 159-160 and b. 840 c. 95, Falcioni 2015), whose ciphertext is not online and not printed
-- P2 code ARO (1×, "in filium [ARO]") and ~60 signs in doubtful spans - blocker: too-short; single occurrence, no sibling letter in this cipher
+- P2 code ARO (1×, "in filium [ARO]") and ~45 signs in doubtful spans (L15 "habet m num b de ue ad", L27, L31-32) - blocker: too-short; single occurrence, no sibling letter in this cipher
 - P3 signs Z (2×) and fk (1×) - blocker: too-short; no gloss over them, two and one occurrences
-- P4 L04 "leonebi … re[∂]bs", L14 "a-mhi", L20 "debert onorio" - blocker: illegible; signs re-read at 10-13x, 786-px scan, values not fixable from single occurrences
+- P4 L04 "leonebi … re[∂]bs", L05 "aisignata pure st", L11 "uniei … cille", L14 "a-mhi" (~32 signs) - blocker: illegible; signs re-read at 10-13x, 786-px scan, values not fixable from single occurrences
 
 ## Escalation
 - [x] siblings: R1853 (register, 14 images) read for keys; all other Mantova records on DECODE opened (R7858-R7888 = Archivio Gonzaga E.I.2 b. 423, 16th-17th c. keys; R7888-R7890 = 1395 Armanini); none for 1428-30
@@ -80,4 +96,5 @@ docs/r1854.html. No count changes (the two signs were already counted as read).
 - [x] print: web search (Pandolfo Malatesta, Gonzaga, cifra, 1428); Treccani DBI; Falcioni 2015 (Pandolfo and the council of Ferrara) found: prints the 1438 plaintext only
 - [x] key-rebuild: P2 and P4 keys rebuilt ciphertext-only and extended by per-sign and per-occurrence rescoring; P3 key completed from context; P1 annealed under 12 hypotheses (Latin, Italian, modern Italian, costed nulls, vowel classes, separators as spaces, word/line/global reversal, split and merged digraphs)
 - [x] retry (2): P1 tested for digraphic (pair IC 0.005), periodic/polyalphabetic (flat column IC, periods 2-8) and transposed text (vowel alternation 0.713 > 200 shuffles: linear substituted text); annealed in Spanish, Catalan, French, German, Portuguese and order-3 Latin/Italian with 150 restarts; syllable-aware anneal (signs as letters, 27 syllables/word signs or nulls, solve_syl.py): no reading
+- [x] retry (3, 5 Oct 2026): images re-fetched, P1/P2/P4 open spots re-cropped at 3-4x; P1 separators tested as hidden signs (failed); P2 L28 and P4 L20/L22 read
 - [x] retry: P1 re-transcribed sign by sign by a second pass (`p1v2.txt`, 262 signs, 3 runs) and re-solved: no reading; P4 open spots re-read at 10-13x

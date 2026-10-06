@@ -48,3 +48,25 @@ NOMEN = {
     '854': 'guerra',   # R75 interlinear, twice
     '149': 'piazza',   # R75 interlinear, "acquisto d'una ~"
 }
+
+# Second pass, Oct 2026: read off the R75 interlinear at full image resolution
+# (I589/I590), or fixed by pooling every context in Lasry's four letters + R75/R84.
+NOMEN.update({
+    '315': 's.e.',      # Sua Eminenza (Richelieu): R75 interlinear 'S.E.' (l.12 'che S.E. cominci'), l.27 'gia S.E. e arrivata', l.32 'alla gloria di S.E.'
+    '411': 'v.s.',      # 'ricordando a ~', 'risposto ~ adequatamente', 'di ~ de ventitre', 'non so dir a ~ d'avantaggio'
+    '481': 'pero',      # R75 interlinear 'pero' (l.25); 'non si poteva ~ negare', 'non lascierà ~ di andar'
+    '470': 'hor',       # R75 interlinear 'hor mai' (l.14)
+    '439': 'ancora',    # R75 interlinear 'consideri ancora' (l.19), 'ancora che' (l.21)
+    '493': 'questa',    # R75 interlinear 'questa sola parte' (l.32); 'entrar in ~ cose' (R84)
+    '938': 'monsieur',  # R75 margin 'Monsieur S.A.' (l.21/22); 'la fuga di ~', 'accomodamento di ~ col fratello'
+    '988': 'negotio',   # 'il principal ~ commesso a V.S.', 'il ~ dell'accomodamento', 'quel ~ et indrizzato'
+    '338': 'stato',     # 'la Francia in ~ di dar legge', 'non so quanto sia ~ a proposito', 'e ~ supposto'
+    '441': 'bene',      # 'se ~ si agiustano' (interlinear 'bin'), 'al publico ~ et alla quiete', 'stimarà ~ e gradirà'
+    '857': 'germania',  # R75 interlinear 'Germa' (l.21): 'alla Francia quanto alla ~'
+    '334': 'sueco',     # R75 interlinear 'del Sueco' (l.20): 'la vittoria del ~'
+    '104': 'svedesi',   # R75 interlinear (l.13): 'la potenza de' ~ che cominciano'
+    '129': 'regno',     # R75 interlinear 'del Regno' (l.23)
+    '454': 'grandi',    # R75 interlinear 'cose grandi' (l.14)
+    '488': 'quale',     # R75 interlinear 'alla quale' (l.18); 'le cose sue, le quali in tempo di guerra'
+    '127': 'imperiali', # R75 interlinear 'a gli Imperiali' (l.15)
+})
