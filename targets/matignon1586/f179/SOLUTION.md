@@ -4,7 +4,7 @@ Catalogue item 12, the second Cipher-3 leaf. `../NOTES.md` listed it as "not-att
 contribution is dated 6 Oct 2026.
 
 **Result.** Method: read from an existing decipherment (Tomokiyo's interlinear), checked independently with his key.
-Read in part: **468 of 511 signs (91.6%), measured**, against a shuffled-key floor of 3.7%.
+Read in part: **466 of 509 signs (91.6%), measured**, against a shuffled-key floor of 3.7%.
 
 **Leaf.** Gallica `btv1b90618802`, canvas 187, left page. The page is bound upside down and must be rotated 180°. It
 has 21 cipher lines, all in cipher. Folio "179" is written at the top right; "191" (old foliation) is at the foot.
@@ -28,7 +28,7 @@ carries an interlinear decipherment in magenta and margin notes on sign values: 
 - **Two reads:** 472 of 516 signs agree (91.5%).
 - **Coverage** (`python ../f276/scripts/measure.py read_final.txt 20 --lex ../f276/data/xivrey_words.tsv --mincount 20`,
   the target's rule with the fr-henri4 lexicon):
-  - reconciled reading after three passes: **468 of 511 signs (91.6%)** (first pass 86.9%, second 90.4%);
+  - reconciled reading after three passes: **466 of 509 signs (91.6%)** (first pass 86.9%, second 90.4%);
   - read A: 85.7%; read B: 87.5%;
   - shuffled keys: median 3.7%, max 16.8%.
 
@@ -51,6 +51,7 @@ carries an interlinear decipherment in magenta and margin notes on sign values: 
   - **Line 13:** *[ce]spendant que [code] ne*: the a-sign = t; the ω with an overbar is a code sign, unread.
   - **Line 18:** *employer **Lansac** en [blot] l'armée de mer*. Read B independently has *l a n s a c*. Guy de
     Saint-Gelais, seigneur de Lansac, was vice-admiral of Guyenne and governor of Brouage.
+  - **Line 12:** *premier que remectre*. Read A's extra *e s* is not on the image; read B agrees.
 
 ## Clear text (16th-c. spelling; word division ours; […] unread, [?] doubtful)
 
