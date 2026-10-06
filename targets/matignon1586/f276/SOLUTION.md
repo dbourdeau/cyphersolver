@@ -3,40 +3,44 @@
 Catalogue item 12, the Cipher-3 leaf. `../NOTES.md` listed it as "blocker: not-attempted; not transcribed" (coverage
 table: 0 / ~27 lines). This contribution is dated 6 Oct 2026.
 
-**Result: f. 276 read.**
-- **Two independent reads agree.** Two sign-by-sign readings, made separately, agree on 693 of 739 signs (93.8%,
+**Result: f. 276 deciphered with Tomokiyo's key (method: read with known key), read in part: 694 of 734 signs
+(94.6%), measured.** That is just under the 95% bar.
+- **Measurement.** `scripts/measure.py` follows the `../measure.py` rule: lines are joined; a sign counts as read only
+  inside a run of at least 3 lexicon words totalling at least 10 letters; a word is lexical if it occurs at least 20
+  times in the repo's period corpus `fr-henri4` (Berger de Xivrey, *Lettres missives de Henri IV*, t. I–V, 1.5M
+  words; `scripts/build_lexicon.py`).
+- **Control.** The scrambled-key floor is 7.1% (median of 20 shuffles; maximum 21.1%). Chance-corrected, that is 94.2%.
+- **Agreement.** Two sign-by-sign readings, made independently, agree on 693 of 739 signs (93.8%,
   `scripts/compare_reads.py`).
-- **Coverage.** 473 of 737 signs (64.2%) are read under this target's coverage rule (`scripts/measure.py`). The
-  scrambled-key floor is ≤ 3.1%.
-- **The rule is strict here.** The lexicon is modern French, while the letter uses 16th-century spellings
-  (*doibuent, preiudice, escriuent, neaulmoins*). Read the 64% as a lower bound. The open spans are listed at the end.
+- **The measured text.** `read_final.txt` is read 1 with the image-checked corrections listed under Method.
+- **What stays open** is listed at the end: a blot, two signs not in the table, the closing, and a few short spans.
 
 The leaf is Gallica `btv1b9061879d`, canvas 285 (right page). It is a small slip of **22** cipher lines. The
 coverage table's "~27" was an estimate. Images are not included.
 
 ## Clear text (16th-c. spelling; word division and punctuation ours; […] unread, [?] doubtful)
 
-> La Guiolle est en doubte du Puy pour les amis de La Roussiere, [qui] sont en grand nombre avec luy, dont il y en a
-> qui veullent mal a Polidor. La Saussaie a soing de qu[…] a secouru de ce qu'il a peu vos amis de la Madeleyne. [Ils]
-> font courir le bruit que la Chambre et frere de la Mare ont aussi bonne intelligence qu'ils l'eurent iamais, et se
+> La Guiolle est en doubte du Puy pour les amis de La Rousiere, [qui] sont en grand nombre avec luy, dont il y en a
+> qui veullent mal a Polidor. La Saussaie a soing de lui […] a secouru de ce qu'il a peu vos amis de la Madeleyne.
+> [Ils] font courir le bruit que la Chambre et frere de la Mare ont ausi bone intelligence qu'ils l'eurent iamais, et se
 > doibuent bientost assembler au preiudice de Front[enay?]. Le procureur et son fils ont promis Aubois le remettre en
 > possession du prieuré, ce que La Saussaie ne peult croire, encor qu'ils se escriuent, s'en asseurant que les sieurs
 > de la Fontaine, la Chaie et Mirebeau et son procureur, ausquels il se fie, ne voudroient permettre mesmes en temps
-> de […] qu'il feust depossedé du prieuré; et surtout il supplie que le Bois et l[…] aient que de se mesler ensemble
-> […]. Le Puy est ennuyé de la guerre, et neaulmoins redoute la […]; quelque chose qu'il se face, il est besoing de
+> de […] qu'il feust deposedé du prieuré; et surtout il supplie que le Bois et lui n'[…]aient que de se mesler
+> ensemble […]. Le Pui est ennuyé de la guerre, et neaulmoins redoute la […]; quelque chose qu'il se face, il est besoing de
 > le bien de maistre Iehan Durant, soit paix ou guerre, que l'on esloigne la Mar[e?], car c'est le logis que desirent
-> les amis de la Mare et de la Roussiere.
+> les amis de la Mare et de la Rousiere […].
 
 **English, loosely.**
 - **Factions.** La Guiolle is unsure of Le Puy because of La Roussière's friends, who are many, and some of whom wish
   Polidor harm.
-- **La Saussaie.** He has taken care of […], and has helped your friends at la Madeleine as far as he could.
+- **La Saussaie.** He has taken care of him […], and has helped your friends at la Madeleine as far as he could.
 - **Rumour.** They are spreading word that la Chambre and la Mare's brother are as thick as ever, and will soon gather
   to the prejudice of Frontenay[?].
 - **The priory.** The procureur and his son have promised Aubois to restore him to the priory. La Saussaie cannot
   believe it, even though they write to each other. He trusts that the sieurs de la Fontaine, la Chaie, Mirebeau and
   his procureur would not allow him to be dispossessed, even in time of […].
-- **A request.** Above all he begs that le Bois and l[…] have nothing to do with each other […].
+- **A request.** Above all he begs that le Bois and he […] mingle together […] (the sense of this line is unsure).
 - **Le Puy.** He is tired of the war, yet fears […]. Whatever he does, for maistre Iehan Durant's good, in peace or
   war, la Mare should be kept away: "car c'est le logis que desirent les amis de la Mare et de la Roussiere".
 
@@ -82,6 +86,10 @@ python scripts/align_em.py --cipher crib/f277r_all.txt --plain crib/plain_all.tx
 - **Split columns:** ζ (z-topped hook) = i but ɤ (reversed hook) = o; ꝫ (9 with a bar) = u but ʒ (closed 9) = t.
 - **Other signs:** a small o with a diagonal tail = y; the crossed-A / ※ sign = i (L04, L16).
 - **The f column's ∂ is f**, not o: *de Front…* in L08, against δ = o elsewhere.
+- **ϱ with a hook below = i**, in five places: *il i en a* (L03), *de lui* (L04), *ausi bone* (L06), *lui n'…*
+  (L16), *le Pui* (L17; *du pu* in L01).
+- **The dotted v = u** (*vos amis*, L04), although plain v is Tomokiyo's null.
+- **Two-stroke # = i** (*Rous|iere*, L22), as against three-stroke `###` = *et*.
 
 ## Method
 
@@ -99,12 +107,20 @@ python scripts/align_em.py --cipher crib/f277r_all.txt --plain crib/plain_all.tx
    - *sont en grand nombre* (y = n), not *et grand*;
    - L03–04 *a soing de* (hook = o, ※ = i, y = n, 23 = g);
    - L08 *Front…* (∂ f, ⊥ r, hooked o, y n, a t, then null v and *que*).
+4. **A second image pass** made `read_final.txt`. Every change has a shape reason, not only a dictionary one:
+   - **Hooked ϱ = i:** L03, L04, L06, L16, L17.
+   - **L02:** *Rousiere* has one s (C-shaped u, ξ s, ζ i).
+   - **L03:** read 1's *ll | ll* was one sign copied at a crop overlap.
+   - **L04:** the dotted v is *vos*, and ζ ʃ is *amis*; *la Ma|deleyne* continues into L05, whose y-tailed o = y.
+   - **L09 and L14:** ∇ = t (*remetre*, *permetre*), which read 2 has too.
+   - **L14–15:** *de p|osedé* (ϱ δ, then ξ = s), as read 2 has.
 
 ## Checks (`scripts/`, standalone, Python 3)
 
 | check | real key | shuffled keys |
 |---|---|---|
-| `measure.py read1.txt 20`: signs read (the `../measure.py` rule: run of ≥ 3 lexicon words, ≥ 10 letters) | **64.2%** (read 2: 51.7%) | median 0.7%, max 3.1% |
+| `measure.py read_final.txt 20 --lex data/xivrey_words.tsv --mincount 20` (the `../measure.py` rule, period lexicon) | **94.6%** (read 1 raw: 89.0%; read 2: 85.3%) | median 7.1%, max 21.1% |
+| same, modern lexicon `data/fr_words.tsv` | 75.8% (read 1 raw: 73.5%) | median 1.1%, max 5.7% |
 | `control_shuffle.py read1.txt 50`: letters inside lexicon words of ≥ 3 letters | **62.9%** (read 2: 53.7%) | median 7.3%, max 17.2% |
 | `compare_reads.py read1.txt read2.txt`: two independent reads | **93.8%** of signs agree | – |
 
@@ -123,13 +139,15 @@ The shuffles permute the letter values among the signs. The word signs stay as t
 
 ## Open
 
-- **Lines with doubtful spans:**
-  - L04: a blot after *qu*;
-  - L14: *en temps de* [one sign not in the table: a C with o inside; context wants *paix* or *guerre*];
-  - L16: *et l[…] aient*, and the end of the line;
-  - L18: *redoute la ?euel*;
-  - L20: *la Mar[e?]*, or Mareuil;
-  - L22: the closing flourish.
+- **The 40 unread signs:**
+  - L04: a blot after *de lui*;
+  - L14: *en temps de* [one sign not in the table: a C with o inside, probably a code for *paix* or *guerre*];
+  - L18: *redoute la* [a large K, not in the table] *euel*;
+  - L16: the last three signs;
+  - L22: the closing, with one or two signs, then plaintext *ou…* and a flourish;
+  - L08: one sign of *Front[…]*.
+  - The rest are words the period lexicon holds fewer than 20 times: *veullent, prieure, escriuent*.
+- **L20:** *la Mar[e?]*, or Mareuil.
 - **Next target:** fr. 15571 f. 179, the other Cipher-3 leaf. The same table and conventions should read it, and
   Tomokiyo's image carries an interlinear decipherment to check against.
 
@@ -137,6 +155,7 @@ The shuffles permute the letter values among the signs. The word signs stay as t
 
 - **Root:**
   - `read1.txt`, `read2.txt`: the two sign-by-sign readings, one letter per sign.
+  - `read_final.txt`: read 1 with the image-checked corrections; this is the measured text.
   - `BRIEF_reader.md`: the brief both reads used.
 - **`crib/`:**
   - `f277r_all.txt`: value-blind transcription of f. 277r.
@@ -147,4 +166,6 @@ The shuffles permute the letter values among the signs. The word signs stay as t
 - **`scripts/`:**
   - `align_em.py`, `compare_reads.py`, `measure.py`, `control_shuffle.py`;
   - `segment.py`: lexicon Viterbi, shared with the `dinteville1592` contribution.
-- **`data/`:** `fr_words.tsv`, the lexicon.
+- **`data/`:**
+  - `fr_words.tsv`: a modern lexicon.
+  - `xivrey_words.tsv`: period word counts from `fr-henri4`, built by `scripts/build_lexicon.py`.
