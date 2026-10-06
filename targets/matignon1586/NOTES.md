@@ -323,7 +323,7 @@ Control: the same decoder and rule with the key's single-letter values shuffled 
 | f. 196 | 26 / 31 | 840 (+162 est.) | 376 | 0.45 | 0.07 | 0.41 |
 | f. 201 | 30 / 30 | 987 | 455 | 0.46 | 0.07 | 0.42 |
 | fr. 15571 f. 177 | 24 / 29 | 696 (+145 est.) | 167 | 0.24 | 0.14 | 0.12 |
-| f. 276 (Cipher-3) | 0 / ~27 | (+810 est.) | 0 | – | – | – |
+| f. 276 (Cipher-3) | 22 / 22 | 737 | 473 | 0.64 | 0.03 max | see `f276/SOLUTION.md` (6 Oct 2026; not in the total) |
 | fr. 15571 f. 179 (Cipher-3) | 0 / ~25 | (+750 est.) | 0 | – | – | – |
 | **total** | | **12,994 (+2,648 est.)** | **4,325** | **0.33** | | **0.26** |
 
@@ -342,7 +342,7 @@ three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transc
 - unread share of ff. 143r (41%), 143v (45%), 150 (58%), 154 (53%), 173 (72%), 201 (54%) - blocker: not-attempted; single-figure slips on confusable shapes; the higher-magnification second pass that closed f. 143r l. 7 has not been run on these lines
 - f. 196: 5 of 31 lines untranscribed, 55% of transcribed tokens unread - blocker: not-attempted; part-line after *auquel*, full lines 1-3 and 13 never transcribed; f. 201 is the same despatch and a figure-by-figure crib
 - fr. 15571 f. 177: 5 of 29 lines untranscribed, 76% of transcribed tokens unread - blocker: not-attempted; smaller hand, noisy transcription, no second pass
-- Cipher-3, fr. 15572 f. 276 (canvas 285 right, ~27 lines) - blocker: not-attempted; not transcribed; key material exists (deciphered siblings f. 189/190, ff. 277-278/279-280, f. 282 margin; Tomokiyo's partial table)
+- Cipher-3, fr. 15572 f. 276 (canvas 285 right, 22 lines): read 6 Oct 2026, see `f276/SOLUTION.md` (two independent reads agree on 93.8% of signs; open spans in L04, L14, L16, L18, L20, L22)
 - Cipher-3, fr. 15571 f. 179 (canvas 187 left, upside down, ~25 lines) - blocker: not-attempted; not transcribed; `img/BnFfr15571f179.jpg` (cryptiana) already carries an interlinear decipherment in magenta, not yet transcribed or checked
 - names in ff. 196/201 (Sainct M-, la Bar-/la Garde, Montb-, la B-ault) - blocker: not-attempted; joint figure-by-figure reading of the two encipherments not done
 - code 49 (frequent) and the other codes valued `+` in `key.json`; name codes 82, 84, 98 - blocker: open-codes; no context fixes them yet, and the siblings ff. 14/15, 18/19, 78-79, 91-92 have not been searched for each
@@ -351,7 +351,7 @@ three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transc
 
 - [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures); f. 125r clear letter read for context. Not yet: ff. 91-92, and the Cipher-3 siblings ff. 189/190, 277-280, 282
 - [x] clear-pages: f. 144 checked (a separate letter, not a clear copy of f. 143); f. 19 found to be the decipherment of f. 18; f. 125r is a clear letter, not a decipherment
-- [ ] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); Cipher-3's key (Tomokiyo's partial table, deciphered siblings) not yet tried on ff. 276 / fr. 15571 f. 179
+- [ ] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); Cipher-3's key (Tomokiyo's partial table) checked on ff. 277r/279-280 and used to read f. 276 (`f276/`); not yet tried on fr. 15571 f. 179
 - [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks. His f. 179 image with interlinear decipherment was saved but not transcribed
 - [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; cold and seeded solves on f. 110
 - [ ] retry: done on f. 143r (three passes) and f. 110 (3 and 5 columns); not done on ff. 123-124, 143v, 150, 154, 173, 196, 201, 177, whose unread lines have had one transcription pass only
