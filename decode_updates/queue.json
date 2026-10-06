@@ -292,18 +292,17 @@
    },
    "cite": null,
    "fields": {
-    "plaintext_lang": "French"
+    "plaintext_lang": "French",
+    "author": "Philippe Groffey (probable; unsigned)",
+    "receiver": "Ferenc Rákóczi II (as Pompeio Cesoni)",
+    "city": "Słupca (Slupce)"
    },
    "records": {
     "R902": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "Cipher solved; transcript noisy, 72% clean.",
-     "reading": [
-      {
-       "file": "targets/rakoczi1707/R902_key08_read.txt"
-      }
-     ],
+     "note": "Deciphered with the archive key DECODE R639 ('De Monsieur de Bonac et Graffei'), checked on the interlinear siblings R852 and R912. Both cipher pages transcribed afresh from the images, group by group (30 Sept and 5 Oct 2026): 982 of 1,017 groups (96.6%) read as sense; twelve one-figure corrections forced by context; 89 = Et, 212 = Fa, 93 = st added to the table. Correction: Pompeio Cesoni (Rakoczi) is the RECIPIENT (clear address 'A Monsieur / Monsieur Pompeio Cesoni'); the unsigned writer is very probably Philippe Groffey. Dated 'A Slupce, le 15 Octobre' [1707]. Open: ten groups ending the first paragraph and about 25 scattered single groups.",
+     "reading": "decode_updates/decryptions/R902.txt",
      "sent": false
     }
    }
@@ -2609,15 +2608,16 @@
   "malvezzi1548": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/malvezzi1548.html",
    "key": {
-    "decode": "R367"
+    "decode": "R367",
+    "lang": "LA"
    },
    "cite": null,
    "fields": {},
    "records": {
     "R366": {
      "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Read in part against the key filed at the same shelfmark (DECODE R367; second copy R386). All five ciphered runs read in substance; pp. 5-6 almost continuously. Two lines on p. 1, four at the foot of p. 6 and five on p. 7 remain unread. Nulls are whole Latin words (etiam, idcirco, atque, cum, Porro, Dar, Der, spo, spu) and the loose letters b, d, n, z and a Greek pi.",
+     "proposed": "Decrypted",
+     "note": "Deciphered with the key filed at the same shelfmark (DECODE R367; second copy R386). All five ciphered runs (pp. 1, 4-7) read; every open stretch re-read from the full-resolution images on 5 Oct 2026 with five variant sign forms of this hand: 509 of 514 cipher words (99.0%) read as Latin sense. Content: the French working to break the Habsburg-Ottoman peace; the envoy's 4,300 ducats by Justus de Argento and a 3,000-ducat credit; what to answer Rustem Pasha about troops on the border; the captives. Open: the banker's surname after 'Gulielmo' (signs give Semaslia), one two-sign group before 'nominatione', two lone v signs (probably 'uel'). Nulls are whole Latin words (etiam, idcirco, atque, cum, Porro, Dar, Der, spo, spu) and the loose letters b, d, n, z and a Greek pi.",
      "reading": "decode_updates/decryptions/R366.txt",
      "sent": false
     }
@@ -5275,8 +5275,8 @@
    "records": {
     "R116": {
      "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Both cipher passages (f. 303r A, f. 304r B) read in Italian with the Spain nunciature's cifra ordinaria (key sent by A. Devadas, 1 Oct 2026; word end = cross-stroke on 2/4/5, undotted 0 closes the digit before it). A: the King on joining the Pope's new league with the Emperor; B: the affairs of Pitigliano. About 15 code groups open or guessed ({...}). The earlier 'Non-decrypted' status and the '7 Jan 1573' date (volume heading) stay as in the 21 Sept note.",
+     "proposed": "Decrypted",
+     "note": "Both cipher passages (f. 303r A, f. 304r B) deciphered in Italian with the Spain nunciature's cifra ordinaria (key sent by A. Devadas, 1 Oct 2026; word end = cross-stroke on 2/4/5, undotted 0 closes the digit before it), checked against the full-resolution scans on 5 Oct 2026: 1,298 of 1,324 cipher tokens (98.0%) read as sense. A: the King on joining the Pope's new league with the Emperor; B: the affairs of Pitigliano. Six single-context code groups open (32, 288, 84, 42, 53, and 322 where 'per' is wanted). The '7 Jan 1573' date is the volume heading; the letter is spring 1573, docketed 17 June.",
      "reading": "decryptions/R116.txt",
      "reading_not_needed": false,
      "sent": false
@@ -6789,14 +6789,14 @@
     "R9411": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Not a letter by Cornelio Sperantio. King John (Zápolya) of Hungary to the dukes of Bavaria, 'Bude sexta Februarii anno etc. xxxiiii' (6 Feb 1534), Latin: their request must go to the governor (Gritti); his servant Nicolaus Freiberger is sent about the Hungarian gold and silver mines; asks for mining masters and the Bavarian mining ordinance. A contemporary interlinear decipherment is on the page; key rebuilt from it; read 96% of words (13 short gaps at blotted signs). The record's 1475/1625 is the volume span.",
+     "note": "Not a letter by Cornelio Sperantio. King John (Zápolya) of Hungary to the dukes of Bavaria, 'Bude sexta Februarii anno etc. xxxiiii' (6 Feb 1534), Latin: their request must go to the governor (Gritti); his servant Nicolaus Freiberger is sent about the Hungarian gold and silver mines; asks for mining masters and the Bavarian mining ordinance. A contemporary interlinear decipherment is on the page; key rebuilt from it. 340 of 356 cipher words (95.5%) read, measured 5 Oct 2026 (16 words at blotted signs open, the captain's name among them). The record's 1475/1625 is the volume span.",
      "reading": "decode_updates/decryptions/R9411.txt",
      "sent": false
     },
     "R9412": {
      "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Cornelio Sperantio is the addressee on the cover (f.251v 'Cornelio Sperantio etc. domino observandissimo'), not the sender. German newsletter from an agent at Buda to a duke of Bavaria, 'Datum Ofen des achten Februarii' [1534] (the 'xxii Decembris' in line 1 dates an earlier letter it repeats). Same key as R9411: Werbőczy's embassy to the Porte and the everlasting peace with the Turk, Peterwardein, Titel, Salankamen, plans against Transylvania, the mines (Fridrich Schmalcz, his factor at Nuremberg). Read 95.0% of words with 37 editorial supplies in braces; 89% from the cipher alone.",
+     "proposed": "Decrypted",
+     "note": "Cornelio Sperantio is the addressee on the cover (f.251v 'Cornelio Sperantio etc. domino observandissimo'), not the sender. German newsletter from an agent at Buda to a duke of Bavaria, 'Datum Ofen des achten Februarii' [1534] (the 'xxii Decembris' in line 1 dates an earlier letter it repeats). Same key as R9411: Werbőczy's embassy to the Porte and the everlasting peace with the Turk, Peterwardein, Titel, Salankamen, plans against Transylvania, the mines (Fridrich Schmalcz, his factor at Nuremberg). 546 of 573 cipher words (95.3%) read, measured 5 Oct 2026 with every word supplied from sense counted unread; supplies in braces. Open: 27 words at blotted signs, among them the second fortress, the bishop, the factor's name and the signature.",
      "reading": "decode_updates/decryptions/R9412.txt",
      "sent": false
     }
