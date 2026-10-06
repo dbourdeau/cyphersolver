@@ -1,6 +1,7 @@
 """Coverage of the f.276 reading, after the rule in targets/matignon1586/measure.py: a cipher sign counts as READ only if
 it has a value (not '?') and its letters fall inside a run of at least three consecutive lexicon words totalling at
-least ten letters. Word signs (=de, =que ...) are words. Lines are segmented with the lexicon Viterbi (segment.py).
+least ten letters. Word signs (=de, =que ...) are words. An unkeyed sign ('?') inside a run does not break it but is not
+counted read (the target rule's CONTEXT tokens). Lines are segmented with the lexicon Viterbi (segment.py).
 Control: the same rule with the letter values permuted (shuffled key).
     python scripts/measure.py read_final.txt [n_shuffles] [--lex data/xivrey_words.tsv --mincount 20]
 """
@@ -44,20 +45,22 @@ def read_line(toks, tr=None):
     while i < len(toks):
         k, v = toks[i]
         if k == 'w': words.append((True, len(v), [i])); i += 1; continue
-        if k == '?': words.append((False, 0, [i])); i += 1; continue
+        if k == '?': words.append(('ctx', 0, [i])); i += 1; continue     # unkeyed: CONTEXT, does not break a run
         j = i
         while j < len(toks) and toks[j][0] == 'l': j += 1
         s = ''.join(toks[x][1] for x in range(i, j))
+        owner = [x for x in range(i, j) for _ in toks[x][1]]     # letter position -> its sign (a sign may give 2 letters)
         if tr: s = s.translate(tr)
-        _, ws = seg(s); pos = i
+        _, ws = seg(s); pos = 0
         for w in ws:
-            n = len(w.strip('[]')); idx = list(range(pos, pos + n)); pos += n
+            n = len(w.strip('[]')); idx = sorted(set(owner[pos:pos + n])); pos += n
             words.append((not w.startswith('[') and (n >= 2 or w in 'ay'), n, idx))
         i = j
     read = [False] * len(toks); run = []
     def flush():
-        if len(run) >= 3 and sum(w[1] for w in run) >= 10:
-            for w in run:
+        lex = [w for w in run if w[0] is True]
+        if len(lex) >= 3 and sum(w[1] for w in lex) >= 10:
+            for w in lex:                                   # unkeyed tokens inside the run are never counted read
                 for x in w[2]: read[x] = True
     for w in words + [(False, 0, [])]:
         if w[0]: run.append(w)

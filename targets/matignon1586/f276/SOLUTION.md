@@ -3,17 +3,20 @@
 Catalogue item 12, the Cipher-3 leaf. `../NOTES.md` listed it as "blocker: not-attempted; not transcribed" (coverage
 table: 0 / ~27 lines). This contribution is dated 6 Oct 2026.
 
-**Result: f. 276 deciphered with Tomokiyo's key (method: read with known key), read in part: 694 of 734 signs
-(94.6%), measured.** That is just under the 95% bar.
+**Result: f. 276 deciphered with Tomokiyo's key (method: read with known key): 698 of 734 signs (95.1%), measured.**
 - **Measurement.** `scripts/measure.py` follows the `../measure.py` rule: lines are joined; a sign counts as read only
   inside a run of at least 3 lexicon words totalling at least 10 letters; a word is lexical if it occurs at least 20
   times in the repo's period corpus `fr-henri4` (Berger de Xivrey, *Lettres missives de Henri IV*, t. I–V, 1.5M
   words; `scripts/build_lexicon.py`).
-- **Control.** The scrambled-key floor is 7.1% (median of 20 shuffles; maximum 21.1%). Chance-corrected, that is 94.2%.
+- **Unkeyed signs.** An unkeyed sign (`?`) inside a run is the rule's CONTEXT token: it doesn't break the run and is
+  never counted read. `../measure.py` lets the language model supply its letter; here it simply passes through,
+  which is an approximation.
+- **Control.** The scrambled-key floor is 7.4% (median of 20 shuffles; maximum 21.5%). Chance-corrected, that is 94.7%.
 - **Agreement.** Two sign-by-sign readings, made independently, agree on 693 of 739 signs (93.8%,
   `scripts/compare_reads.py`).
 - **The measured text.** `read_final.txt` is read 1 with the image-checked corrections listed under Method.
 - **What stays open** is listed at the end: a blot, two signs not in the table, the closing, and a few short spans.
+- **Sibling leaf.** fr. 15571 f. 179 is in the same cipher and names the same people; see `../f179/SOLUTION.md`.
 
 The leaf is Gallica `btv1b9061879d`, canvas 285 (right page). It is a small slip of **22** cipher lines. The
 coverage table's "~27" was an estimate. Images are not included.
@@ -119,8 +122,8 @@ python scripts/align_em.py --cipher crib/f277r_all.txt --plain crib/plain_all.tx
 
 | check | real key | shuffled keys |
 |---|---|---|
-| `measure.py read_final.txt 20 --lex data/xivrey_words.tsv --mincount 20` (the `../measure.py` rule, period lexicon) | **94.6%** (read 1 raw: 89.0%; read 2: 85.3%) | median 7.1%, max 21.1% |
-| same, modern lexicon `data/fr_words.tsv` | 75.8% (read 1 raw: 73.5%) | median 1.1%, max 5.7% |
+| `measure.py read_final.txt 20 --lex data/xivrey_words.tsv --mincount 20` (the `../measure.py` rule, period lexicon) | **95.1%** (read 1 raw: 89.6%; read 2: 88.9%) | median 7.4%, max 21.5% |
+| same, modern lexicon `data/fr_words.tsv` | 78.3% | median 1.8%, max 6.1% |
 | `control_shuffle.py read1.txt 50`: letters inside lexicon words of ≥ 3 letters | **62.9%** (read 2: 53.7%) | median 7.3%, max 17.2% |
 | `compare_reads.py read1.txt read2.txt`: two independent reads | **93.8%** of signs agree | – |
 
@@ -139,7 +142,7 @@ The shuffles permute the letter values among the signs. The word signs stay as t
 
 ## Open
 
-- **The 40 unread signs:**
+- **The 36 unread signs:**
   - L04: a blot after *de lui*;
   - L14: *en temps de* [one sign not in the table: a C with o inside, probably a code for *paix* or *guerre*];
   - L18: *redoute la* [a large K, not in the table] *euel*;
