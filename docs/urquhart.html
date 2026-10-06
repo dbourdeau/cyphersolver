@@ -7,7 +7,7 @@
 <meta name="description" content="Thomas Urquhart's Cyphral Octastich of 1652 is a book cipher on his own Jewel: the k-th number indexes the first word of the needed initial on page k. The rule, published by Vals AI in August 2026, was applied to a fresh transcription and tested without the plaintext (238 of 284 first-occurrence hits against 0.43 for controls); all but ten letters are decrypted. The rule claimed for the companion distich does not reproduce.">
 <link rel="stylesheet" href="style.css?v=20260924b">
 <meta name="date" content="2026-09-16">
-<meta name="last-modified" content="2026-09-24">
+<meta name="last-modified" content="2026-10-05">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -45,7 +45,7 @@
 <div class="parties"><figure class="party sender"><img src="portrait_thomas-urquhart.jpg" alt="Thomas Urquhart" title="Thomas Urquhart: Engraving by George Glover, 1641. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Thomas Urquhart</figcaption></figure></div><!-- /parties -->
   <p class="sub"><em>The Jewel</em> (1652), final leaf · eight lines and a “Decagram”, 285 numbers to 201 · <em>Logopandecteision</em> (1653), “The Cyphral Distich”, 64 numbers to 70 · Schmeh’s Top 50, no. 28</p>
   <p class="sub">The rule Vals AI published on 31 August 2026 was applied to the EEBO-TCP text of <em>The Jewel</em> and a fresh transcription of the octastich&rsquo;s 285 numbers from the 1983 edition, without using their plaintext; 238 of 284 numbers are first-occurrence hits against 0.43 for both controls, and all but ten letters are decrypted. The rule claimed for the distich does not reproduce.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-09-24">24 September 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-10-05">5 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: partial (78% of the cipher)</p><!-- /outcome -->
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
 </section>
@@ -129,6 +129,7 @@ infeasible positions stand. The distich is a different construction, or the same
 
 <h2 id="remaining"><span class="num">05</span> What remains</h2>
 <ul>
+<li><b>Re-measured 5 October 2026.</b> Measured as sense (<code>measure_sense.py</code>), the octastich reads 274 of its 285 numbers (96.1%): 233 exact and 41 near, where the context fixes the letter. Line 5 was re-read: <i>And [?] overthrow his usurp&rsquo;d authoritie</i>; one letter (position 149) stays open, and position 158 falls on the near-empty TCP page, which needs the 1652 leaves. Nine other letters are compositor&rsquo;s slips fixed by context. With the unread distich (64 numbers) the target is 274 of 349 (78.5%).</li>
 <li>Ten letters of line 5 (positions 151–160): nine decode as <em>conerthto</em> from the TCP text and one falls on a page the TCP does not carry. A misprint of the 1652
 numbers, a miscount by Urquhart, or a divergence between the filmed copy and the print at pages 149–158; the 1652 leaves would settle it.</li>
 <li>The 46 positions where the TCP word is not the first of its initial are one to a few words off, tokenisation differences; they do not change the decryption.</li>

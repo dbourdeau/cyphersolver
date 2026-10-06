@@ -7,7 +7,7 @@
 <meta name="description" content="BnF fr. 20974 pp. 1-3 (DECODE R2276) was catalogued as an unknown sender's letter to the duc de Guise, 1 January 1556. It is a three-page letter wholly in cipher, written from Reims on 19 June 1589 in the Nevers-Piles cipher. Tomokiyo's partial table of that cipher was applied, extended from the letter and from a deciphered sibling; Biermann had matched the cipher to the letter in 2021 without publishing a text. The letter reports how the Reims chapter postulated the grand archdeacon Brulart and the dean Frison for the archbishopric left vacant by the murdered Cardinal de Guise. The 1556 date came from another correspondence's key pasted on the letter's blank verso. The decryption is partial: 91.8% of the 3,920 signs give sense (measured).">
 <link rel="stylesheet" href="style.css?v=20260924b">
 <meta name="date" content="2026-09-23">
-<meta name="last-modified" content="2026-09-24">
+<meta name="last-modified" content="2026-10-05">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -43,8 +43,8 @@
   <p class="kicker">Reims &rarr; a patron in Rome &middot; homophonic cipher of graphic signs with codes, three pages &middot; 19 June 1589</p>
   <h1>A letter from Reims on the chapter&rsquo;s postulation, 19 June 1589</h1>
   <p class="sub">BnF fr. 20974 pp. 1&ndash;3 &middot; DECODE R2276 &middot; catalogued as &ldquo;unknown sender to the duc de Guise, 1 January 1556&rdquo; &middot; three pages of continuous cipher, the third bound upside down</p>
-  <p class="sub">The cipher is the Nevers&ndash;Piles alphabet &middot; Tomokiyo&rsquo;s table was applied and extended from the letter itself and from a deciphered sibling of 1586 &middot; partial: 3,598 of 3,920 signs give sense (91.8%, measured); torn and stained edges and about 80 words stay open</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-23">23 September 2026</time> &middot; updated <time datetime="2026-09-24">24 September 2026</time></p>
+  <p class="sub">The cipher is the Nevers&ndash;Piles alphabet &middot; Tomokiyo&rsquo;s table was applied and extended from the letter itself and from a deciphered sibling of 1586 &middot; partial: 3,600 of 3,920 signs give sense (91.8%, measured); torn and stained edges and about 80 words stay open</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-23">23 September 2026</time> &middot; updated <time datetime="2026-10-05">5 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: partial (92% of the cipher)</p><!-- /outcome -->
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
 </section>
@@ -58,7 +58,7 @@ Satoshi Tomokiyo reported that <strong>Norbert Biermann found in 2021</strong> t
 All three pages were transcribed here, about 3,900 signs, and decrypted with Tomokiyo&rsquo;s partial table. The table was extended with code signs found in the letter itself (<em>cardinal, leur, pour, faire, je, vous, lettre, le, du</em>) and with a full alignment of <strong>BnF fr. 4715 f.&nbsp;2</strong>, a deciphered letter of 1586 in the same cipher.
 The letter is written <strong>from Reims on 19 June 1589</strong>. It reports how, after the murder of Cardinal Louis de Guise, the Reims chapter <em>&ldquo;praticqua &hellip; une election ou postulation de deux personages&rdquo;</em>. One was the grand archdeacon <strong>Brulart</strong>, who consented <em>en plourant</em>. The other was the dean <strong>Frison</strong>, now in Rome with the act of postulation.
 It also covers the Pope, the Cardinals of Lorraine, Pellev&eacute; and Allen, Mayenne&rsquo;s delays, eighteen thousand lansquenets meant to stop the Duke of Parma, and a postscript on the <strong>duc d&rsquo;Elbeuf&rsquo;s ransom of 50,000 &eacute;cus</strong>.
-<em>Extent: partial, 3,598 of 3,920 signs give sense (91.8%, measured; 88.9% in strict agreement with the key). Open: the torn right edge of page 1 and left margin of page 2, a stain on page 3, about 25 single signs, one code sign, and about 80 words that no candidate fits.</em>
+<em>Extent: partial, 3,600 of 3,920 signs give sense (91.8%, measured; 88.9% in strict agreement with the key). Open: the torn right edge of page 1 and left margin of page 2, a stain on page 3, about 25 single signs, one code sign, and about 80 words that no candidate fits.</em>
 </div>
 
 <h2 id="document"><span class="num">01</span> The document and where the 1556 date came from</h2>
@@ -119,10 +119,11 @@ The dean Frison is &ldquo;maintenant a Rome&rdquo; with the act of postulation. 
 <p>The three pages were fetched from DECODE and transcribed sign by sign into ASCII labels, 93 lines. Page 1 was done by hand at twice the scan size. Pages 2 and 3 were done by two agents at 1.5&ndash;3&times;, and page 3 was transcribed turned upright.
 A free homophonic annealing under a French 5-gram model failed: the text collapsed into <em>e</em> and <em>s</em>. A decoder that allowed each sign a small set of values, then a word-level decoder with a 30,000-word lexicon of sixteenth-century letters that re-estimated those sets, brought out the content: <em>chapitre, chanoines, archidiacre Brulart, postulation, lansquenetz, Parme, Elbeuf</em>.
 The decryption itself was done line by line against the images in six rounds. Each word was checked against the signs by an aligner, which measures the fraction of signs that agree with the key (<code>measure.py</code>).
-Two figures are reported. <em>Sense</em> counts every sign inside a real word or a declared null: 3,598 of 3,920, 91.8%. <em>Strict</em> counts only signs that agree with the key: 3,484, 88.9%. The difference is the writer&rsquo;s slips and doubtful glyphs, accepted from context.</p>
+Two figures are reported. <em>Sense</em> counts every sign inside a real word or a declared null: 3,600 of 3,920, 91.8%. <em>Strict</em> counts only signs that agree with the key: 3,484, 88.9%. The difference is the writer&rsquo;s slips and doubtful glyphs, accepted from context.</p>
 
 <h2 id="residuals"><span class="num">06</span> What remains uncertain</h2>
 <ul>
+<li><b>Re-measured 5 October 2026.</b> 3,600 of 3,920 signs give sense (91.8%) with key version 8, which applies the boxed cross &#8862; = <i>parle</i> at page 1 line 21 (<i>ouy parler</i>). The Gallica microfilm (btv1b9062131g) was fetched at full resolution and every unread line re-cut at native size: its rare-sign strokes are no clearer than DECODE&rsquo;s, and none of the candidate corrections on t1.16, t1.39 and t2.2 turns an unread word into French. The remaining open words of two or more signs (about 80) need the manuscript itself.</li>
 <li><strong>Lost paper (illegible):</strong> the right edge of page 1 from line 1 to 4 and 16 to 31, and the left margin of page 2 on lines 1&ndash;2, 15&ndash;28 and 39&ndash;40 (about a fifth of the line). These signs are not counted in the 3,920. An ink blot on page 3, line 2, hides one word, perhaps <em>armees</em>.</li>
 <li><strong>Single signs (too short):</strong> about 25 isolated signs in running text that the sentence does not need, for example page 1 line 18 (&#658;), line 35, line 38, and page 3 line 4 (the barred Z).</li>
 <li><strong>Codes:</strong> the boxed cross &#8862; before <em>Bardin</em> (p. 1 l. 36), probably a title. A barred Z and an 8 with a raised <em>t</em> on page 3 have no attested value.</li>

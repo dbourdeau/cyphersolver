@@ -7,7 +7,7 @@
 <meta name="description" content="Intercepted code letters of Louis-Auguste d&rsquo;Affry, French ambassador at The Hague, to Rouill&eacute; and Bernis, January 1757 &ndash; January 1758 (Koninklijk Huisarchief, Prins Willem V inv. 192; DECODE R1052&ndash;R1076, R2067). DECODE lists eleven as not decrypted. The Dutch codebreaker Lyonet&rsquo;s decipherments of eight sibling letters are among the images; aligned group by group with their cipher, they give 651 groups of a code numbered up to about 1,200, and that key decrypts nine of the letters with no decipherment on DECODE, 86% of the groups overall. Bussemaker&rsquo;s 1906 extracts and Coquelle&rsquo;s 1904 quotations recur word for word in the decryption.">
 <link rel="stylesheet" href="style.css?v=20260924b">
 <meta name="date" content="2026-09-19">
-<meta name="last-modified" content="2026-09-24">
+<meta name="last-modified" content="2026-10-05">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -45,7 +45,7 @@
 <div class="parties"><figure class="party recipient"><img src="portrait_cardinal-de-bernis.jpg" alt="Cardinal de Bernis" title="Cardinal de Bernis: Portrait, Château de Versailles (MV 2986). Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Cardinal de Bernis</figcaption></figure></div><!-- /parties -->
   <p class="sub">Koninklijk Huisarchief, The Hague, Prins Willem V, inv. 192: code letters of the French ambassador to the foreign secretaries Rouill&eacute; and Bernis, opened by the Dutch post and copied for the stadholder&rsquo;s cabinet. DECODE lists eleven of them as not decrypted: no decipherment was imaged with them.</p>
   <p class="sub">The Dutch codebreaker Pierre Lyonet&rsquo;s decipherments of eight sibling letters are among the images, filed as ordinary clear pages. The key was recovered by aligning them group by group with their cipher, and applied to the letters with no decipherment on DECODE; 86% of the groups decrypt.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-19">19 September 2026</time> &middot; updated <time datetime="2026-09-24">24 September 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-19">19 September 2026</time> &middot; updated <time datetime="2026-10-05">5 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#adjpt">key recovered based on adjacent plaintext</a> &middot; Extent: partial (82% of the cipher)</p><!-- /outcome -->
 <div class="seal partial" aria-hidden="true"><span>adjacent text</span></div>
 </section>
@@ -120,6 +120,7 @@
 
 <h2 id="open"><span class="num">05</span> What remains open</h2>
 <ul>
+<li><b>Re-measured 5 October 2026.</b> The 21 September figure (86%) counted every group that had a value. A sense measure (<code>measure_sense.py</code>) now counts a group only if its nine-group window reads as French: all groups <strong>82.3%</strong> (R1071 unread, Lyonet&rsquo;s eight letters read), 89.0% without R1071. Four letters were re-transcribed from the images, which recovered the copyist&rsquo;s looped 8 that DECODE reads as 0 and 135 groups the earlier parse had lost: R1072 0.66 &rarr; 0.89, R1067 0.66 &rarr; 0.79, R1074 0.70 &rarr; 0.75, R1064 0.77 &rarr; 0.81. Pooling every occurrence fixed eighteen more code values (<i>lui</i>, <i>dit</i>, <i>faire</i>, <i>&Eacute;cosse</i>, <i>la Gouvernante</i> &hellip;). R1071 (7.6% of the groups) is in another code with no key material, so 95% cannot be reached.</li>
 <li>R1071 (4 August 1757, to Stainville in Vienna) is in a different code and is not decrypted.</li>
 <li>Per letter, 5&ndash;12% of groups stay open (listed as [n] in each decryption file). R1072 gives only about two thirds in sense: its copy is the worst transcribed.</li>
 <li>Grades: values forced by a decipherment are H; values inferred from context in the letters without a decipherment are M or ? and listed with their evidence in <code>read/R*_new.tsv</code>. 56 groups of the key are ambiguous between two values (<code>amb_M.json</code>).</li>
