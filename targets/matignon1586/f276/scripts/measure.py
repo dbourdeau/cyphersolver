@@ -2,11 +2,23 @@
 it has a value (not '?') and its letters fall inside a run of at least three consecutive lexicon words totalling at
 least ten letters. Word signs (=de, =que ...) are words. Lines are segmented with the lexicon Viterbi (segment.py).
 Control: the same rule with the letter values permuted (shuffled key).
-    python measure.py f276/read1.txt [n_shuffles]
+    python scripts/measure.py read_final.txt [n_shuffles] [--lex data/xivrey_words.tsv --mincount 20]
 """
 import sys, re, os, random
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import segment, math, argparse
 from segment import seg
+def use_lexicon(path, mincount, union=False):
+    """replace segment.LEX by a corpus word list (word<TAB>count); a word is lexical if count >= mincount"""
+    cnt = {}
+    for l in open(path):
+        if l.startswith('#') or not l.strip(): continue
+        w, c = l.rstrip('\n').split('\t'); w = segment.norm(w); cnt[w] = cnt.get(w, 0) + int(c)
+    tot = sum(cnt.values())
+    lex = {w: math.log(c / tot) for w, c in cnt.items() if c >= mincount and (len(w) >= 2 or w in ('a', 'i'))}
+    if union:
+        for w, v in segment.LEX.items(): lex[w] = max(lex.get(w, -99), v)
+    segment.LEX.clear(); segment.LEX.update(lex)
 A = 'abcdefghilmnopqrstuxz'
 def load(p):
     """per line: list of tokens; a token is ('w', word) for a word sign, ('l', letter) or ('?', '')"""
@@ -52,11 +64,16 @@ def read_line(toks, tr=None):
         else: flush(); run = []
     return read
 def measure(lines, tr=None):
-    r = n = 0
-    for toks in lines:
-        f = read_line(toks, tr); r += sum(f); n += len(f)
-    return r, n
-lines = load(sys.argv[1]); ns = int(sys.argv[2]) if len(sys.argv) > 2 else 20
+    """the lines are joined before segmentation, as in the target's measure.py (words run across line ends)"""
+    toks = [t for l in lines for t in l]
+    f = read_line(toks, tr)
+    return sum(f), len(f)
+ap = argparse.ArgumentParser(); ap.add_argument('file'); ap.add_argument('n', nargs='?', type=int, default=20)
+ap.add_argument('--lex', help='corpus word list (word<TAB>count) replacing the default lexicon')
+ap.add_argument('--mincount', type=int, default=20); ap.add_argument('--union', action='store_true')
+a = ap.parse_args()
+if a.lex: use_lexicon(a.lex, a.mincount, a.union)
+lines = load(a.file); ns = a.n
 r, n = measure(lines); print(f'read {r}/{n} signs = {r/n:.1%}')
 random.seed(2); sh = []
 for _ in range(ns):
