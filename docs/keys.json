@@ -1,5 +1,6 @@
 {
  "keys": [
+  {"id": "k-battier1686", "label": "Battier key — NA 1.10.29 inv. 1209", "kind": "archive key", "by": "Contemporary chancery", "year": 1686, "note": "Named Battier key, DECODE R2794; inventory citation 5345 corrected to 1209. Letter table and fifteen marked Dutch codebook blocks."},
   {
    "id": "k-balbases",
    "label": "Balbases key (SEG 2559)",
@@ -1836,9 +1837,50 @@
    "by": "Alex Zarco (PR #24), from NoAutopilot's partial key",
    "year": 1592,
    "note": "Homophonic sign key with diacritic variants, rebuilt from the f. 128 interlinear decipherment by an outside contributor; verified here."
+  },
+  {
+   "id": "k-labbe1577",
+   "label": "L'Abbé–Nevers numerical key, 1577 (recovered by AngusRobinson)",
+   "kind": "scholar's key",
+   "by": "AngusRobinson",
+   "year": 1577,
+   "found": 2026,
+   "note": "Homophonic figures with 6 as word space, recovered from the ciphertext with the probable word l'empereur (GitHub PR #20, Oct 2026); checked against the images and a shuffle control."
+  },
+  {
+   "id": "k-aerssen1601",
+   "label": "Aerssen 1601 sibling-gloss key",
+   "kind": "rebuilt here",
+   "by": "Feyseel Nur (with Claude and Codex)",
+   "year": 1601,
+   "note": "Rebuilt from 11 and 28 May interlinear glosses and 30 April list A; qF distinct from qT."
+  },
+  {
+   "id": "k-beuningen1676",
+   "label": "Van Beuningen’s Dutch nomenclator, 1675–1677",
+   "kind": "rebuilt here",
+   "by": "Feyseel Nur with Claude and Codex",
+   "year": 1676,
+   "note": "Rebuilt from sibling interlinear glosses in NA 3.01.18 inv. 248–250; later hands and contextual values distinguished."
+  },
+  {
+   "id": "k-pinckney-legation",
+   "label": "Pinckney's legation code, Madrid (\"the Cypher of the Legation\"), 414 rows",
+   "kind": "scholar's key",
+   "by": "Feyseel Nur (PR #21)",
+   "year": 1803,
+   "found": 2026,
+   "note": "Numerical word-and-syllable code of the American legation at Madrid, used by Charles Pinckney and by George W. Erving. Rebuilt in 2026 by aligning the 1,145 groups of Erving's 10 Aug 1807 duplicate (NARA M31 reel 12) with the decoded text in Founders Online; 45 of the 47 groups it shares with Jacob Wagner's 1803 decode of Pinckney's despatch agree, two undecided. Partly alphabetical.",
+   "image": {
+    "src": "erving1807aug_wagner.jpg",
+    "credit": "National Archives and Records Administration, RG 59, Despatches from US Ministers to Spain, vol. 6, microfilm M31 reel 7, frame 0348 (right page), via catalog.archives.gov NAID 188604008",
+    "caption": "Pinckney to Madison, 22 February 1803: Jacob Wagner's decode written over the code, \"some propositions\" over 1218. 1640. 1147. 248, \"would give them the most\" over 217. 301. 871. 1651. 718. Image: National Archives and Records Administration, RG 59, Despatches from US Ministers to Spain, vol. 6, microfilm M31 reel 7, frame 0348 (right page), via catalog.archives.gov NAID 188604008.",
+    "page": "erving1807aug"
+   }
   }
  ],
  "links": [
+  {"key": "k-battier1686", "target": "battier1686", "how": "partial", "note": "Named key applied; two focus letters pass strict sense, volume partial; mark choices and contextual repairs remain uncertain."},
   {
    "key": "k-balbases",
    "target": "balbases1677",
@@ -2816,6 +2858,36 @@
    "target": "dinteville1592",
    "how": "rebuilt from",
    "note": "interlinear decipherment of f. 128"
+  },
+  {
+   "key": "k-labbe1577",
+   "target": "labbe1582",
+   "how": "rebuilt from",
+   "note": "all 31 cipher runs of fr. 3198 nos. 30, 37, 38; 534 of 536 tokens"
+  },
+  {
+   "key": "k-aerssen1601",
+   "target": "aerssen1601",
+   "how": "rebuilt from",
+   "note": "Applied to 25 May and 2 June; 59/61 and 9/11 attested tokens."
+  },
+  {
+   "key": "k-beuningen1676",
+   "target": "beuningen1676",
+   "how": "rebuilt from",
+   "note": "Partial reading of 23 May/2 June 1676; strict 264/278 (94.96%), with gemelte retained."
+  },
+  {
+   "key": "k-pinckney-legation",
+   "target": "erving1807aug",
+   "how": "rebuilt from",
+   "note": "1,145 groups of the NARA duplicate aligned with the Founders text (99-01-02-1993); checked against Wagner's 1803 decode, 45 of 47 shared groups agree"
+  },
+  {
+   "key": "k-pinckney-legation",
+   "target": "legation",
+   "how": "partial",
+   "note": "Erving's 24 Mar 1807 letter (targets/erving1807): holes in Madison's printed decode closed with pairs from Pinckney's decoded despatches in the same code (Wagner's decode, reel 7 frame 0348)"
   }
  ],
  "sources": [
@@ -3240,6 +3312,14 @@
   {
    "source": "s-bourdeau",
    "key": "k-r9407-sysA2"
+  },
+  {
+   "source": "s-bourdeau",
+   "key": "k-aerssen1601"
+  },
+  {
+   "source": "s-bourdeau",
+   "key": "k-beuningen1676"
   }
  ],
  "unlinked": {
@@ -3266,7 +3346,6 @@
   "nevers1595": "not read: key not identified; fr. 3995 no. 76 shares the sign family but not the values",
   "bagno1652": "not read; no key found. Lasry's Francia 346 key was tested and structurally excluded because it reserves 6 as a separator while R5622 contains repeated 66 and 666.",
   "nevers1574": "read from the target manuscript's own interlinear decipherment and clear copies; the related Nevers no. 2 key of 1584 is not identical and did not read it",
-  "labbe1582": "Not read; no validated key. The March letter reports a February cipher dispatch, but its enclosure has not been located.",
   "schiner1516": "Read by Büchi and Schiess (1925) with keys they rebuilt for Schiner's correspondence and never printed; no key sheet is known, and the leaf is not digitised.",
   "indus": "undeciphered script: no key read it; published sign values (Parpola, Fairservis, Yajnadevam) tested against their own shuffles, not used",
   "ilten1697": "read from the contemporary interlinear decipherments; no key sheet for codes A or B is known",
