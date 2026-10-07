@@ -2,7 +2,8 @@
 
 Status: in progress. Read in part, measured 22 Sept 2026: 28% of the target's cipher tokens read as
 sense (4,325 of 12,994 transcribed figures, 33%; 22% after a scrambled-key control), key for Cipher-1
-recovered, Cipher-3 leaves untouched. Most gaps are workable (see "Remaining gaps"), so the target is
+recovered. Cipher-3 leaves f. 276 (95.1%) and fr. 15571 f. 179 (91.6%) added 6 Oct 2026 by
+alejandrozarco (PR #25), measured separately (`f276/`, `f179/`), not yet in the total. Most gaps are workable (see "Remaining gaps"), so the target is
 not closed. Per leaf: "Coverage, measured" below; `measure.py`, `measure.json`.
 
 Catalogue item 12 (`CATALOGUE.md`), class B, solvability 5. Ten leaves that S. Tomokiyo
@@ -349,9 +350,9 @@ three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transc
 
 ## Escalation
 
-- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures); f. 125r clear letter read for context. Not yet: ff. 91-92, and the Cipher-3 siblings ff. 189/190, 277-280, 282
+- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures); f. 125r clear letter read for context. Cipher-3 ff. 277r/279-280 used to check the key (alejandrozarco, PR #25). Not yet: ff. 91-92, and the Cipher-3 siblings ff. 189/190, 282
 - [x] clear-pages: f. 144 checked (a separate letter, not a clear copy of f. 143); f. 19 found to be the decipherment of f. 18; f. 125r is a clear letter, not a decipherment
-- [ ] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); Cipher-3's key (Tomokiyo's partial table) checked on ff. 277r/279-280 and used to read f. 276 (`f276/`) and fr. 15571 f. 179 (`f179/`)
+- [ ] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); Cipher-3's key (Tomokiyo's partial table) checked on ff. 277r/279-280 and used to read f. 276 (`f276/`) and fr. 15571 f. 179 (`f179/`) by alejandrozarco (PR #25); reviewed 7 Oct 2026 (re-measured, 50-shuffle control median 6.3%/3.1%)
 - [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks. His f. 179 image with interlinear decipherment was saved but not transcribed
 - [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; cold and seeded solves on f. 110
 - [ ] retry: done on f. 143r (three passes) and f. 110 (3 and 5 columns); not done on ff. 123-124, 143v, 150, 154, 173, 196, 201, 177, whose unread lines have had one transcription pass only
