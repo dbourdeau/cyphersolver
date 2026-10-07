@@ -46,15 +46,70 @@ the ciphered passages, numbered, with the letter named in the margin.
   at −0.26/char, so an annealer on it collapses to runs of one letter. `anneal.py` shows that failure; use a
   joint-count table as in `anneal3.py`.
 
+## R9241: the key identified (4 Oct 2026, contributed by Feyseel Nur, PR #21)
+
+Lawrence Beck's PR #18 (with ChatGPT, 3 Oct 2026, `beck-preliminary/`) proposed a partial decipherment from the images
+first; the work below was done independently and complements it.
+
+The sign set is Paul de Foix's own cipher, as reconstructed by S. Tomokiyo (cryptiana `henryiii.htm#Foix0`) from de
+Foix's letters of 11 Oct 1565, BnF fr. 15971 ff. 21-22 (contemporary decipherment on f. 25r, marginal one on f. 26r;
+Gallica ark btv1b105094409, view 2N+9 for f. Nr). Not on DECODE, hence missed by the known-key search above. Values
+confirmed on the 1565 decipherments: 50 = que (the transcription's "so" = 50; "so f so" = quelque), 82 ceulx, 51 qui,
+37 me/car, ny n/z, g s, f s/l/u (several signs two-valued); word signs also serve as syllables (83 30 = Le-c-est-re).
+
+Evidence: the unfitted published key scores −1.517 against −1.759 ± 0.031 for 200 token-order shuffles (7.8 SD); an
+independent Montaigne LM (OpenAI Codex, `r9241_foix1565key/codex_review/`) gives 10.7 SD (token shuffle) and 4.3 SD
+(sign-identity shuffle). Coverage with a pre-specified measure (share of the 1,026 tokens in dictionary words of 4-14
+letters; 200 shuffles): frozen key (independent of R9241) grade A 14.0% (shuffled 7.0%, max 10.2%), A+B 25.6% (12.7%,
+max 17.1%); with values fitted on R9241 that recur in ≥2 passages 58.5% (20.7%); all fitted 69.6% (24.3%). No full
+sentence is forced by the frozen key alone; phrases needing only recurring fitted values: "pour le moins estre de la
+partie", "la negotiation prend quelque traict", "dexterité de son esperit", "quelque deboursement de deniers".
+The two readings converge: Beck *Et en ceste uisitation passerent entre eulx quelques …* / here *Et en ceste
+visitation p[..]erent d'entre eulx quelque[s] …*; Beck *que son but seroit de nous faire entrer en quelque debourssement
+de deniers, dont nous n'avons nule intention* / here *… son but … faire, car entrer en quelque deboursement de deniers
+… nulle intention*. Files: `r9241_foix1565key/` (graded reading.md, key_k0.json frozen, key_k1.json fitted layer,
+v5_coverage.txt, v5_phrases.json, v5_rendering.txt, codex_review/).
+
+## Proposed reading, Beck (PR #18)
+
+Lawrence Beck, with ChatGPT, submitted a proposed partial decipherment of R9241 (`beck-preliminary/`, start with
+`REPORT.md`). He made a new transcription (1,038 tokens, 96 sign types; 1,013 tokens carry a key value) and a 78-entry
+key: letters, homophones, word signs (30 est, 31 pour, 50 que, 51 qui, 84 la ...) and 9 nulls. The decrypt
+(`beck-preliminary/results/literal.txt`) is continuous period French over long stretches, e.g. passage (1) "... sortir
+promptement la reconciliation necessaire entre ces deux royaumes" and passage (4) "... faire entrer en quelque
+deboursement de deniers dont nous n'avons nulle intention".
+
+Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
+
+| measure | Beck key, real order | controls |
+|---|---|---|
+| LM per char | -2.02 | 500 value-shuffled keys -4.28 ± 0.39 (max -3.28), z = 5.8 |
+| LM per char | -2.02 | key fitted (swap annealing over Beck's own 78 values) on token-shuffled ciphertext: -1.93 to -2.00 |
+| letters in corpus words of 5+ letters | 50.6% | same fitted keys on shuffled ciphertext: 26.1%, 33.4%, 34.2%; Beck key on shuffled order: 4-7% |
+
+- The per-char LM score alone does not separate the reading from overfitting: 78 free values (some whole words) can
+  make shuffled ciphertext score as well, as word salad ("fairepourfaire..."). The long-word measure separates them
+  (50.6% against at most 34%), and it underestimates the real text, whose 1563 spelling is not in the 1600 corpus.
+- Independent confirmation: Feyseel's frozen key from de Foix's own 1565 cipher (PR #21, `r9241_foix1565key/key_k0.json`,
+  from Tomokiyo's chart and BnF fr. 15971 ff. 21-26, not fitted on R9241) gives the same value as Beck for 19 of the 25
+  sign names both use (a, b = e; 4, 7 = c; m = n; n, d = o; p = r; 30, 31, 32, 50, 51, 83, 84 ...), and 6 = ie/je agrees
+  in effect. Differences: D, 3, 2, r, z (sign naming or homophony still to settle).
+- Assessment: a real partial break, in de Foix's cipher, not overfitting. It is not at the read bar: 14 of the 78 key
+  entries rest on a single occurrence, a dozen signs (RX, monograms, numbers 10, 20, 26, 34, 37, 40, 70, 82) are open,
+  and no fraction of tokens read as sense has been measured against the images. Outcome left unchanged here.
+- Package: `scripts/verify.py` fails on a Windows checkout (core.autocrlf rewrites the hashed files; a
+  `.gitattributes` with `-text` is added to the folder) and on `README.md`, which was edited after `manifest.json` was
+  written. With LF files and README excluded it passes (17 files, 1,038 tokens replayed).
+
 ## Remaining gaps
 
-- R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4), ~950 tokens - blocker: no-key-material; no key among the Forbes key records R9260-R9262, no decipherment or clear copy in Forbes, CSP Foreign vi or La Ferrière, and ciphertext-only annealing (5 languages, nulls, pairs, syllables) finds no language
+- R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4): key identified (de Foix 1565, see above) but the reading is partial; conflicts between the 1565 chart and values fitted on R9241 (r m/d, z p/i, Yb l/u, 3/Z3) and the unvalued 80 and 93 need a glyph audit on the images and a de Foix letter of 1563-64 - blocker: open-codes
 
 ## Escalation
 
 - [x] siblings: R9237/R9239/R9240 (catalogue 93) viewed in part; they are Coligny letters in a different sign set, no Queen Mother material
 - [x] clear-pages: no clear or deciphered page for the Queen Mother letter among the R9238/R9241 images
-- [x] known-keys: Throckmorton first/second/third ciphers and Croft's (R9260-R9262) compared; then every DECODE key record dated 1550-1580 with French plaintext: R335 (Condé 1562, fits R9238 not R9241), R355, R331, R3818, R3820 (Fontenay 1583); none fits R9241
+- [x] known-keys (4 Oct 2026): Tomokiyo's de Foix key (BnF fr. 15971, 1565) fits R9241, see above. Earlier: Throckmorton first/second/third ciphers and Croft's (R9260-R9262) compared; then every DECODE key record dated 1550-1580 with French plaintext: R335 (Condé 1562, fits R9238 not R9241), R355, R331, R3818, R3820 (Fontenay 1583); none fits R9241
 - [x] print: Forbes ii, CSP Foreign vi (whole volume), La Ferrière i-ii searched; not found
 - [x] key-rebuild: no crib or sibling key exists; ciphertext-only swap annealing (one letter per sign, with nulls, pairs, syllables; 5 languages) on both transcriptions, all negative
 - [x] retry: sign-by-sign re-transcription of both pages (qm2_f148.txt, qm2_f149.txt, merged qm2_tokens.txt: 1007 tokens, 92 types, IoC 0.031); anneal3.py French, English and French-with-nulls on it: no language (r6_*.txt)

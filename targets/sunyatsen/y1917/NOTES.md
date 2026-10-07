@@ -112,6 +112,25 @@ contracts" before he can wire Peking; he presses Dai in Tokyo for word, and Dai 
 something, and asks after "the company matter". The texts do not name the contracts or the company. Identifying them
 needs the Chinese-side record (孫中山全集 / 年譜長編 for March 1917) — not found online in this session.
 
+### Wang Lu's proposals (issue 23, 5 Oct 2026), checked here 7 Oct
+
+Wang Lu (wanglu2016) proposed the following. The code arithmetic below was re-run here with `show17.T` + `family.code2ch`; every value matches.
+
+* **公司 / 前約 / 各約 = the Shanghai exchange project** (hypothesis, not proved). Dai signed an agreement on 5 Dec 1916 with
+  中島行一 for 三上豊夷: Japanese half-capital, 80% of profits, Japanese advisers. The Jan 1917 petition to Peking omitted the
+  Japanese side, and Chinese exchange law barred foreign shareholders and staff (Yang Tianshi; Bryna Goodman, "Questions of
+  Colonialism, Nationalism, and the Early Shanghai Stockmarket", *Provincial China* 1.1, 2009, doi:10.5130/pc.v1i1.986).
+  That would explain "the former contract must first be cancelled before we can wire Peking". No record of the cancellation in
+  late March 1917 has been found. Lead: Aichi University, Tōa Dōbun Shoin Memorial Center, Sun Wen–Yamada Junzaburō papers,
+  item 「上海交易所案」（秘）(catalogue entry not seen).
+* *bija* = 9420, not in either telegraph-code field. *baja* = 1420 小 is one of 32 valid one-letter variants, so it is
+  contextual, not mechanical. *veso* = 3068 江 reads cleanly, so **小江** costs one edit; 小池 (*veto* 3069) costs two.
+  **中島** would be *jile bafi* (0022 1497), which differs in 7 of 8 letters: ruled out.
+* *xaki* = 1181 妙. One-letter candidates are *xapi* 1185 **妥** (妥定; 妥 occurs cleanly in the 23 March telegram) and
+  *qaki* 0681 同.
+* What would settle it: the frame 0506 letterforms (*i/a* in *bija*, *s/t* in *veso*, *k/p* in *xaki*), and any Gaimushō
+  surveillance report on Dai's movements on 26 March 1917.
+
 ## June 1917 telegrams: a different system
 
 Frames 0509 (24 June, Sunwen → "Taitenkiu", 8 words) and 0511 (29 June, Tai → Sun, two sheets, ~30 words) use *y* as
