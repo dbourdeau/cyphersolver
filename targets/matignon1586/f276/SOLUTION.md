@@ -3,15 +3,15 @@
 Catalogue item 12, the Cipher-3 leaf. `../NOTES.md` listed it as "blocker: not-attempted; not transcribed" (coverage
 table: 0 / ~27 lines). This contribution is dated 6 Oct 2026.
 
-**Result: f. 276 deciphered with Tomokiyo's key (method: read with known key): 698 of 734 signs (95.1%), measured.**
+**Result: f. 276 deciphered with Tomokiyo's key (method: read with known key): 706 of 734 signs (96.2%), measured.**
 - **Measurement.** `scripts/measure.py` follows the `../measure.py` rule: lines are joined; a sign counts as read only
   inside a run of at least 3 lexicon words totalling at least 10 letters; a word is lexical if it occurs at least 20
-  times in the repo's period corpus `fr-henri4` (Berger de Xivrey, *Lettres missives de Henri IV*, t. I–V, 1.5M
-  words; `scripts/build_lexicon.py`).
+  times in the corpus of the shared `lang/` model `fr-1600-letters` (source `fr-henri4`, Berger de Xivrey, *Lettres
+  missives de Henri IV*, t. I–V), normalised with the model's `early` scheme, fetched through `lang.corpora`.
 - **Unkeyed signs.** An unkeyed sign (`?`) inside a run is the rule's CONTEXT token: it doesn't break the run and is
   never counted read. `../measure.py` lets the language model supply its letter; here it simply passes through,
   which is an approximation.
-- **Control.** The scrambled-key floor is 7.4% (median of 20 shuffles; maximum 21.5%). Chance-corrected, that is 94.7%.
+- **Control.** The scrambled-key floor is 6.9% (median of 50 shuffles; maximum 29.3%). Chance-corrected, that is 95.9%.
 - **Agreement.** Two sign-by-sign readings, made independently, agree on 693 of 739 signs (93.8%,
   `scripts/compare_reads.py`).
 - **The measured text.** `read_final.txt` is read 1 with the image-checked corrections listed under Method.
@@ -122,9 +122,8 @@ python scripts/align_em.py --cipher crib/f277r_all.txt --plain crib/plain_all.tx
 
 | check | real key | shuffled keys |
 |---|---|---|
-| `measure.py read_final.txt 20 --lex data/xivrey_words.tsv --mincount 20` (the `../measure.py` rule, period lexicon) | **95.1%** (read 1 raw: 89.6%; read 2: 88.9%) | median 7.4%, max 21.5% |
-| same, modern lexicon `data/fr_words.tsv` | 78.3% | median 1.8%, max 6.1% |
-| `control_shuffle.py read1.txt 50`: letters inside lexicon words of ≥ 3 letters | **62.9%** (read 2: 53.7%) | median 7.3%, max 17.2% |
+| `measure.py read_final.txt 50` (the `../measure.py` rule, `lang` model `fr-1600-letters`) | **96.2%** (read 1 raw: 89.7%; read 2: 90.2%) | median 6.9%, max 29.3% |
+| `control_shuffle.py read_final.txt 50`: letters inside lexicon words of ≥ 3 letters | **68.3%** | median 6.6%, max 18.3% |
 | `compare_reads.py read1.txt read2.txt`: two independent reads | **93.8%** of signs agree | – |
 
 The shuffles permute the letter values among the signs. The word signs stay as they are, which is conservative.
@@ -142,17 +141,36 @@ The shuffles permute the letter values among the signs. The word signs stay as t
 
 ## Open
 
-- **The 36 unread signs:**
+- **The 28 unread signs:**
   - L04: a blot after *de lui*;
-  - L14: *en temps de* [one sign not in the table: a C with o inside, probably a code for *paix* or *guerre*];
-  - L18: *redoute la* [a large K, not in the table] *euel*;
+  - L14: *en temps de* [one sign not in the table: a C with o inside];
+  - L18: *redoute la* [a large K, not in the table];
   - L16: the last three signs;
   - L22: the closing, with one or two signs, then plaintext *ou…* and a flourish;
   - L08: one sign of *Front[…]*.
-  - The rest are words the period lexicon holds fewer than 20 times: *veullent, prieure, escriuent*.
+  - The rest are words the period lexicon holds fewer than 20 times: *prieure, escriuent*.
 - **L20:** *la Mar[e?]*, or Mareuil.
 - **Next target:** fr. 15571 f. 179, the other Cipher-3 leaf. The same table and conventions should read it, and
   Tomokiyo's image carries an interlinear decipherment to check against.
+
+## The two signs not in the table (7 Oct 2026)
+
+- **L18, the K.** The signs after *la* are K, then a C with ε inside, then 87 ʞ +, then a C with a small u inside,
+  then 2 19 ϱ b ʞ.
+  - This reads *[K] | q u e l | que | c h o s e*: "redoute la [K]; quelque chose qu'il se face…".
+  - So the C with ε inside is **q**, a new value. The readers had split it into *e e/c u e l*, and it is corrected
+    in `read_final.txt`.
+  - The K stands alone between *la* and *quel*: a one-sign code word, feminine after *la*.
+  - Candidates: *paix* ("Le Puy est ennuyé de la guerre, et neaulmoins redoute la paix"), *Ligue*, or *Royne*.
+    Catherine de Médicis was negotiating with Navarre near Cognac (Saint-Brice) from October 1586.
+  - *paix* and *guerre* are also spelled out in letters in L17 and L20, so a code for one of them would be a variant,
+    not the only form.
+- **L14, the C with o inside.** "ne voudroient permettre mesmes en temps de [C-o] qu'il feust deposedé du prieuré".
+  - It belongs to the same C-family as the C with u (= u), the C with n (= *que*) and the C with ε (= q). That
+    suggests the C marks a group of related signs rather than one letter.
+  - Context wants *paix*, *guerre* or *trouble(s)*. If K is *paix*, the C-o would be another word.
+  - Neither sign recurs on f. 276 or f. 179, so neither can be fixed from these two leaves. The Cipher-3 siblings
+    with contemporary decipherments (f. 189/190, f. 282 margin, fr. 15570 ff. 271–273) are where to look.
 
 ## Files
 
@@ -167,8 +185,6 @@ The shuffles permute the letter values among the signs. The word signs stay as t
   - `chart_values.tsv`: the chart-id → value map, which the transcriber never saw.
   - `BRIEF_transcriber.md`.
 - **`scripts/`:**
-  - `align_em.py`, `compare_reads.py`, `measure.py`, `control_shuffle.py`;
-  - `segment.py`: lexicon Viterbi, shared with the `dinteville1592` contribution.
-- **`data/`:**
-  - `fr_words.tsv`: a modern lexicon.
-  - `xivrey_words.tsv`: period word counts from `fr-henri4`, built by `scripts/build_lexicon.py`.
+  - `align_em.py`, `compare_reads.py`;
+  - `measure.py`, `control_shuffle.py`: they use `lang` (`lm.registry`, `lm.norm`, `corpora.text`). No word list is
+    bundled.

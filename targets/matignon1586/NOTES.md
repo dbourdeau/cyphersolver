@@ -2,7 +2,7 @@
 
 Status: in progress. Read in part, measured 22 Sept 2026: 28% of the target's cipher tokens read as
 sense (4,325 of 12,994 transcribed figures, 33%; 22% after a scrambled-key control), key for Cipher-1
-recovered. Cipher-3 leaves f. 276 (95.1%) and fr. 15571 f. 179 (91.6%) added 6 Oct 2026 by
+recovered. Cipher-3 leaves f. 276 (96.2%) and fr. 15571 f. 179 (92.9%) added 6 Oct 2026 by
 alejandrozarco (PR #25), measured separately (`f276/`, `f179/`), not yet in the total. Most gaps are workable (see "Remaining gaps"), so the target is
 not closed. Per leaf: "Coverage, measured" below; `measure.py`, `measure.json`.
 
@@ -324,8 +324,8 @@ Control: the same decoder and rule with the key's single-letter values shuffled 
 | f. 196 | 26 / 31 | 840 (+162 est.) | 376 | 0.45 | 0.07 | 0.41 |
 | f. 201 | 30 / 30 | 987 | 455 | 0.46 | 0.07 | 0.42 |
 | fr. 15571 f. 177 | 24 / 29 | 696 (+145 est.) | 167 | 0.24 | 0.14 | 0.12 |
-| f. 276 (Cipher-3) | 22 / 22 | 734 | 698 | 0.951 | 0.07 | see `f276/SOLUTION.md` (6 Oct 2026; fr-henri4 lexicon; not in the total) |
-| fr. 15571 f. 179 (Cipher-3) | 21 / 21 | 509 | 466 | 0.916 | 0.04 | see `f179/SOLUTION.md` (6 Oct 2026; fr-henri4 lexicon; not in the total) |
+| f. 276 (Cipher-3) | 22 / 22 | 734 | 706 | 0.962 | 0.07 | see `f276/SOLUTION.md` (6–7 Oct 2026; lang fr-1600-letters lexicon; not in the total) |
+| fr. 15571 f. 179 (Cipher-3) | 21 / 21 | 509 | 473 | 0.929 | 0.04 | see `f179/SOLUTION.md` (6–7 Oct 2026; lang fr-1600-letters lexicon; not in the total) |
 | **total** | | **12,994 (+2,648 est.)** | **4,325** | **0.33** | | **0.26** |
 
 Of the whole target (~15,642 tokens) **0.28 is read (0.22 chance-corrected)**. 90% of transcribed
@@ -343,8 +343,8 @@ three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transc
 - unread share of ff. 143r (41%), 143v (45%), 150 (58%), 154 (53%), 173 (72%), 201 (54%) - blocker: not-attempted; single-figure slips on confusable shapes; the higher-magnification second pass that closed f. 143r l. 7 has not been run on these lines
 - f. 196: 5 of 31 lines untranscribed, 55% of transcribed tokens unread - blocker: not-attempted; part-line after *auquel*, full lines 1-3 and 13 never transcribed; f. 201 is the same despatch and a figure-by-figure crib
 - fr. 15571 f. 177: 5 of 29 lines untranscribed, 76% of transcribed tokens unread - blocker: not-attempted; smaller hand, noisy transcription, no second pass
-- Cipher-3, fr. 15572 f. 276 (canvas 285 right, 22 lines): read 6 Oct 2026, 698/734 signs (95.1%) measured, see `f276/SOLUTION.md`; open: a blot (L04), two signs not in Tomokiyo's table (L14, L18), the closing (L22) and a few short spans
-- Cipher-3, fr. 15571 f. 179 (canvas 187 left, upside down, 21 lines): transcribed and checked against Tomokiyo's magenta decipherment 6 Oct 2026, 466/509 signs (91.6%) measured, see `f179/SOLUTION.md`; open: one code sign (L13), a blot (L18), a struck sign and *la D…use* (L20), and short spans
+- Cipher-3, fr. 15572 f. 276 (canvas 285 right, 22 lines): read 6 Oct 2026, 706/734 signs (96.2%) measured, see `f276/SOLUTION.md`; open: a blot (L04), two signs not in Tomokiyo's table (L14, L18), the closing (L22) and a few short spans
+- Cipher-3, fr. 15571 f. 179 (canvas 187 left, upside down, 21 lines): transcribed and checked against Tomokiyo's magenta decipherment 6 Oct 2026, 473/509 signs (92.9%) measured, see `f179/SOLUTION.md`; open: one code sign (L13), a blot (L18), a struck sign and *la D…use* (L20), and short spans
 - names in ff. 196/201 (Sainct M-, la Bar-/la Garde, Montb-, la B-ault) - blocker: not-attempted; joint figure-by-figure reading of the two encipherments not done
 - code 49 (frequent) and the other codes valued `+` in `key.json`; name codes 82, 84, 98 - blocker: open-codes; no context fixes them yet, and the siblings ff. 14/15, 18/19, 78-79, 91-92 have not been searched for each
 

@@ -620,6 +620,12 @@
    "kind": "control",
    "what": "Review of PR #25: measure.py re-run reproduces 698/734 and 466/509; 50 shuffled keys give median 6.3% / 3.1% (max 21.5% / 21.0%); line structure of f. 276 L01, L21, L22 and f. 179 L18 (blot), L21 checked on the Gallica natives.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-07",
+   "kind": "control",
+   "what": "alejandrozarco, after the PR #25 review: measure.py and control_shuffle.py now take their lexicon from the shared lang/ model fr-1600-letters (corpora.text + lm.norm 'early', words >= 20 occurrences) instead of bundled word lists, which are removed. f. 276 706/734 (96.2%; 50 shuffled keys median 6.9%), f. 179 473/509 (92.9%; median 3.5%); the difference from the word list is mainly 'veullent' reaching 20 occurrences under lang normalisation. f. 276 L18 read as 'redoute la [K]; quelque chose', making the C-with-epsilon sign q and K a one-sign code word (paix? Ligue? Royne?).",
+   "result": "worked"
   }
  ],
  "outcome": {

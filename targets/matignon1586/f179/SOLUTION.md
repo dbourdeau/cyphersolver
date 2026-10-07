@@ -4,7 +4,7 @@ Catalogue item 12, the second Cipher-3 leaf. `../NOTES.md` listed it as "not-att
 contribution is dated 6 Oct 2026.
 
 **Result.** Method: read from an existing decipherment (Tomokiyo's interlinear), checked independently with his key.
-Read in part: **466 of 509 signs (91.6%), measured**, against a shuffled-key floor of 3.7%.
+Read in part: **473 of 509 signs (92.9%), measured**, against a shuffled-key floor of 3.5%.
 
 **Leaf.** Gallica `btv1b90618802`, canvas 187, left page. The page is bound upside down and must be rotated 180°. It
 has 21 cipher lines, all in cipher. Folio "179" is written at the top right; "191" (old foliation) is at the foot.
@@ -26,11 +26,11 @@ carries an interlinear decipherment in magenta and margin notes on sign values: 
 
 **Agreement and coverage.**
 - **Two reads:** 472 of 516 signs agree (91.5%).
-- **Coverage** (`python ../f276/scripts/measure.py read_final.txt 20 --lex ../f276/data/xivrey_words.tsv --mincount 20`,
-  the target's rule with the fr-henri4 lexicon):
-  - reconciled reading after three passes: **466 of 509 signs (91.6%)** (first pass 86.9%, second 90.4%);
-  - read A: 85.7%; read B: 87.5%;
-  - shuffled keys: median 3.7%, max 16.8%.
+- **Coverage** (`python ../f276/scripts/measure.py read_final.txt 50`, the target's rule with the lexicon of the
+  shared `lang` model `fr-1600-letters`):
+  - reconciled reading after three passes: **473 of 509 signs (92.9%)** (earlier passes, with the bundled word list: 86.9%, 90.4%);
+  - read A: 87.3%; read B: 89.1%;
+  - shuffled keys (50): median 3.5%, max 23.8%.
 
 **Reconciliation changes (read A → final):**
 - **Line 2:** *la chose* (B; the o-shape is o here).
