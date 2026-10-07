@@ -7902,6 +7902,32 @@
   },
   "mercy1648": {
    "skip": "not a DECODE record: BnF Espagnol 144 f. 22, from GitHub issue 16; no DECODE metadata to correct and nothing to send"
+  },
+  "dinteville1592": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/dinteville1592.html",
+   "key": {
+    "file": "targets/dinteville1592/key.tsv",
+    "lang": "FR",
+    "how": "Homophonic sign key rebuilt from the interlinear decipherment of the sibling letter BnF fr. 3621 f. 128 by Alex Zarco (cyphersolver PR #24), completing NoAutopilot's partial key; diacritic variants are separate signs."
+   },
+   "cite": "Revue de Champagne et de Brie XII (1882) pp. 340-341 (f. 128 printed; f. 130 clear text summarised)",
+   "fields": {
+    "date": "4 Jul 1592 (the leaf reads 'iiije Juillet'; DECODE has 3 Jul)",
+    "cipher_type": "homophonic substitution with diacritic variants and nulls"
+   },
+   "records": {
+    "R9451": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "No decipherment on the leaf despite the record's description; both cipher passages read with a key rebuilt from the f. 128 interlinear, 514 of 522 tokens, 8 unclear signs open. Key source: sibling f. 128 (no. 114, 1 Jul 1592), same signs, interlinear decipherment.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R9451.txt"
+      }
+     ],
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {

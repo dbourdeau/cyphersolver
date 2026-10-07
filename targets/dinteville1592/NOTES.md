@@ -1,6 +1,57 @@
-# Dinteville (Langres) to the Duke of Nevers, 3 July 1592 (BnF Français 3621 no. 116, f. 130; DECODE R9451)
+# Dinteville (Langres) to the Duke of Nevers, 4 July 1592 (BnF Français 3621 no. 116, f. 130; DECODE R9451)
 
-Status: attempted, open. Catalogue item 183. Session 2026-09-21. Not read.
+Status: read. Key recovered from adjacent plaintext (the interlinear decipherment of f. 128) by an outside contributor,
+Alex Zarco (GitHub alejandrozarco, PR #24, 6 Oct 2026), completing a partial key published by NoAutopilot
+(github.com/noautopilot/cipher-lab, `ciphers/fr3621-dinteville-1592/`). Verified and written up here 7 Oct 2026.
+Catalogue item 183. First session 2026-09-21 (attempted, not read; kept below).
+
+## Result (PR #24, verified 7 Oct 2026)
+
+- f. 130: 514 of 522 cipher tokens read as sense (98.5%), measured by `scripts/measure.py` against `reading_f130.tsv`;
+  0 emended, 8 open. f. 128 (no. 114, 1 July 1592) reads in full with the same key. Full account in `SOLUTION.md`.
+- System: homophonic substitution of letters, digits and signs with diacritic variants (∇ a / ∇ with stroke t;
+  Δ with tail a / Δ f; ð with cross s / ð with ascender p; ψ o / ψ+ null) and nulls (‖, ψ+, #|, aP). `#` = c or d,
+  `1` = e or i by context. No nomenclator seen. Key in `key.tsv`; the subset fixed on f. 128 alone in `key_f128.tsv`.
+- Why 21 Sept failed: the crosses and strokes were taken as the decipherer's marks and merged into the base signs, and
+  the gloss was read "Geneve"/"d'ascendre"; it is "Gennes" and the cipher spells "dessendre". `scripts/bourdeau_test.py`
+  re-runs the old `align.py` test: unique key once the marks are kept and the gloss corrected, 0 keys otherwise.
+- Date: the leaf is dated "iiij^e Juillet" (4 July), as the 1882 print gives it; "3 July" (DECODE, catalogue) is a misreading.
+
+### Checks made here (7 Oct 2026)
+
+- Fix: `f128_signs.txt` wrote plain D where the image has the tailed delta (a) in four places (auoir, Besançon,
+  quarante, n'ayans), and `key_f128.tsv` had D = a; with the final key (D = f, D+ = a) f. 128 decoded f for a four
+  times. Both files now use D+; f. 128 decodes cleanly with `key.tsv`, and the f. 128-only key scores −2.11, 71% on f. 130
+  (was −2.19, 68%). SOLUTION.md keeps the contributor's original figures.
+
+- Re-ran every script: measure 514/522 (98.5%); verify real key −2.00 log-p/letter, 74% in words; f. 128-only key −2.19,
+  68%; 30 shuffled keys best −4.54; re-run with 200 shuffled keys: best −4.29, median −5.37, best in-word 38%.
+  blind_score 219/225 (97.3%); bourdeau_test 1 key only for the corrected gloss with diacritics kept.
+- Images (Gallica btv1b52524472n, IIIF native): f. 128r view 265 gloss reads "auoir veu dassender a gennes"; the cipher
+  under it begins ‖ Δ α ψ ꝑ ϖ mʒ o α # 1· □ … as transcribed. f. 130r view 269: L05 (#| ꝑ aP o # 1 2 o α c 1 □ o mʒ …
+  "je demeure seu-"), L06 opening (aP o ∇ʹ #| ϖ 1 mʒ "et retou-") and L14 opening (4 ∇ mʒ ⊥ 4 + 1· 4 o ϖ ψ ⊥ "la ville le roi")
+  agree with `f130_signs.txt` sign for sign.
+- Print: Revue de Champagne et de Brie t. XII (1889 reprint on archive.org, `revuedechampagne12pariuoft`), p. 340:
+  "m'a dit avoir vu descendre à Gène 2 millions d'or d'Espaigne. Il en a laissé à Besançon 45 mulets chargés qui
+  doivent partir dans trois jours et prendre le chemin de Vesoul, n'ayant que cent chevaux d'escorte" (letter of
+  1 July 1592, footnote "Lettre en chiffres"). Agrees with the decode of f. 128. The 4 July letter (f. 130) is only
+  summarised there from its clear text (footnote "En chiffres"); its cipher passages are not printed, so the f. 130
+  reading is new.
+
+## Remaining gaps
+- l. 4, four signs after "l'emporter" (decode "? i u s", perhaps "ou s'il"/"puis") - blocker: illegible; first sign unclear on the image
+- l. 7, one sign in "qu'[?]elle y est" - blocker: illegible; sign unclear
+- l. 14, last sign of "pass[e]" and the sign after "que" - blocker: illegible; key value does not fit, sign shape doubtful
+
+## Escalation
+- [x] siblings: f. 128 (no. 114) is the key source; ff. 127-131 viewed
+- [x] clear-pages: f. 130 postscript and verso are clear, not a decipherment
+- [x] known-keys: Tomokiyo's Nevers catalogue has no Dinteville key; NoAutopilot's partial key compared, agrees
+- [x] print: Revue de Champagne XII (1882) pp. 340-341 prints f. 128 and summarises f. 130's clear text only
+- [x] key-rebuild: key rebuilt from the f. 128 gloss (PR #24); f. 130-only signs valued from context
+- [x] retry: open signs re-read against the key by the contributor and here; still unclear
+
+## First session, 21 Sept 2026 (superseded)
 
 ## What the leaf is
 
