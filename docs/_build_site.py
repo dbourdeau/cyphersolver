@@ -1317,10 +1317,10 @@ PAGES = [
          blurb='A letter of 8 October 1637 from Prinkipo to the French ambassador at Constantinople, with eight lines in a homophonic symbol cipher. The project listed it as untranscribed. Satoru transcribed it, recovered the key ciphertext-only with Claude and read it: 4,000 scudi promised for Monsignor Beria, who is close to the Patriarchate and hopes the Patriarch will be replaced in two months. Checked here against the image and shuffled keys; six name codes are open.',
          quote='&ldquo;vicino all&rsquo;ottenere il patiarchato per s&eacute;&rdquo; &middot; &minus;1.8 per letter against &minus;4.3 for shuffled keys',
          rights='Images: Biblioth&egrave;que nationale de France, via Gallica'),
-    dict(slug='labbe1582', label='L&rsquo;Abb&eacute; to Nevers 1577', year='1577', y=1577.2, place='Prague, Breslau &rarr; France', st='stuck', stt='cipher unread',
+    dict(slug='labbe1582', label='L&rsquo;Abb&eacute; to Nevers 1577', year='1577', y=1577.2, place='Prague, Breslau &rarr; France', st='solved', stt='read',
          title='Desiderio l&rsquo;Abb&eacute; to the Duke of Nevers, 1577',
-         blurb='Letters from Prague and Breslau in clear French with numerical insertions. The insertions were transcribed in draft and tested with substitution solvers under several hypotheses about units and nulls; no key was recovered. The March letter mentions a copy of the cipher sent on 24 February, the best lead to the key.',
-         quote='Clear prose reports a copy of the cipher sent on 24 February; no cipher plaintext recovered.',
+         blurb='Two intelligence letters from Rudolf II&rsquo;s court, in clear French with short runs of figures. AngusRobinson recovered the key from the ciphertext with the probable word <i>l&rsquo;empereur</i>: a homophonic figure substitution with 6 as the word space. Checked here against the images and a shuffle control, all 31 runs read, 534 of 536 tokens.',
+         quote='&ldquo;mais plusieurs ne pleureroient s&rsquo;il n&rsquo;y retournoit jamais&rdquo;',
          rights='Biblioth&egrave;que nationale de France, via Gallica'),
     dict(slug='bl32305', label='Paris 1719 / Carr&eacute;', year='1719&ndash;45', y=1719, place='Paris, London', st='stuck', stt='two-part codes, too short',
          title='Paris 1719 and Carr&eacute; 1742&ndash;45 code letters, BL Add MS 32305',
@@ -1367,7 +1367,7 @@ IMAGES['indus'] = ('indus_m414.jpg', 'M-414, a bar seal from Mohenjo-daro, as im
 IMAGES['joachim1530'] = ('joachim1530_lead.jpg', 'The dotted cipher account on Clairambault 331 f. 157r', 'Biblioth&egrave;que nationale de France / Gallica')
 IMAGES['rohan1636'] = ('rohan1636_lead.jpg', 'BnF Français 3758, manuscript p. 124: an encrypted passage in Châtillon’s letter followed by his clear account of the army after the fall of Schenkenschans', 'Biblioth&egrave;que nationale de France, via Gallica btv1b9058223v, view 136')
 IMAGES['andreae1616'] = ('andreae1616_lead.jpg', 'P. 97: the tablet behind Venus&rsquo;s bed, in the novel&rsquo;s invented alphabet: WAN DIE FRUCHT MEINES BAUMS WIRT VOLLENDS VERSCHMELZEN &hellip;', 'Embassy of the Free Mind (Ritman Library), via DECODE R4502')
-IMAGES['labbe1582'] = ('labbe1582_lead.jpg', 'Numerical passage in the May letter, BnF fr. 3198 no. 37; draft figures remain unread', 'Biblioth&egrave;que nationale de France, via Gallica btv1b9060073v view 77')
+IMAGES['labbe1582'] = ('labbe1582_lead.jpg', 'The May cipher: <i>mais</i> plusieurs <i>ne pleureroient</i>, BnF fr. 3198 no. 37', 'Biblioth&egrave;que nationale de France, via Gallica btv1b9060073v view 77')
 IMAGES['nevers1574'] = ('nevers1574_lead.jpg', 'BnF fr. 3315 f. 21r: Birago\'s cipher flap with an Italian interlinear decipherment; the clear fair copy lies beneath it', 'Biblioth&egrave;que nationale de France, fr. 3315 f. 21r, via Gallica view 23')
 IMAGES['r688'] = ('r688_lead.jpg', 'HHStA Fasc. 327 Konv. D f. 30r, lines 2&ndash;10: the greetings to aghas and knezes and the names of Stojan&rsquo;s Vlachs, in Cyrillic', '&Ouml;sterreichisches Staatsarchiv, HHStA, via DECODE R688')
 IMAGES['visconti1529'] = ('visconti1529_lead.jpg', 'BnF fr. 3096 f. 91r, lines 1-5: Syre: Sapendo, then the cipher, il timore hano Venetiani di la pace; the code rr in line 3', 'Biblioth&egrave;que nationale de France, fr. 3096 f. 91r, via Gallica')
