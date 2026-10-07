@@ -234,21 +234,40 @@ headers).
 
 ## Remaining gaps
 
-- 22 Feb 1808, 15 groups not read as sense: 1244 1387 (the man "of Hamburg" in the antechamber), 406 and 1440 ("for
-  ever the [?]an [?]oses of Europe"), "the dress ac[count?] of his government", 337 ta in "driven her [out] of her
-  old ...", 1245 cou in "himself [as] succeeding". Each occurs once and the body of the 22 Feb despatch carries no
-  pencil decode. Blocker: too-short.
-- 15 Feb 1808, 7 groups: "man-ner den, s ag-gressions", 1 circumstance where commerce is expected, and the two slips
-  below. Blocker: too-short.
-- 5 Mar 1808: 1338 1001 ("people [?]d who"), 1369 ("to put [our?] ships"). Single occurrences, pencil illegible over
-  them. Blocker: too-short.
+- 22 Feb 1808, still open after the frame collation of 4 Oct 2026 (section below), each group seen once and confirmed on frame 0034: 1354 968 1494 1244 1387 (the man "of Hamburg" in the antechamber; *cou-rier* for 1244 1387 is a candidate only), 406 1216 1440 418 ("for ever the [?]-an-[?]-ose-s of Europe"; 418 *ose* is really written), 337 in "driven her [out] of her old and wise course" (the MS writes 337; a slip for 537 *out* is not supported) - blocker: too-short.
+- 15 Feb 1808: the MS writes 484 and 1 where the sense needs 1484 *it* (+1116 s = *its* aggressions) and 4 *commerce*; read as Armstrong's or the copyist's slips (dropped leading 1, as 555 for 1555 in the PS), grade I - blocker: too-short.
+- 15 Feb 1808: 962 inside de-x-[ter]-it-y and 1177 purp in im-pu-d-ence, both written so on frame 0024 (with 1005 *de* added above the line) - writer's slips, meanings certain.
+- 5 Mar 1808: 1338 = *name* ("there are people name-d who", slot 1337 na < 1338 < 1340 native; Lafayette has named Cretet, Fouché, Champagny, Talleyrand) and 1369 = *our* ("to put our ships in requisition", adjacent homophone of 1367 or a 7/9 slip), both grade I, proposed 4 Oct 2026 - blocker: too-short.
 - 26 Mar 1808: the 720/750 digit. Blocker: illegible.
-- 15 Feb 1808: 962 inside de-x-[ter]-it-y and 1177 purp in im-pu-d-ence read as Armstrong's slips; the line on frame
-  0024 was not re-checked for them. Left open.
 - 1804-07 despatches: printed decoded in the Secretary of State Series. The group lists are on roll 13 (inventory) but
   were not transcribed in this session; they would confirm, not extend, readings for the groups above only if those
   groups occur there. Left open.
 - Nothing needs physical access.
+
+## Frame collation of 15 and 22 Feb 1808 (4 Oct 2026, contributed by Feyseel Nur, PR #21)
+
+Frames fetched from `catalog.archives.gov/medialz/dc-metro/rg-059/603720/M34/M34-014/M34-014-00NN.jpg` (0024 = 15 Feb,
+0033-0034 = 22 Feb; fair copies in a clerk's hand). Readings now attested on the frame:
+
+| Founders | MS | reading |
+|---|---|---|
+| 769 **803** | 769 **805** (0034) | "stating the **dread** of his government and the means taken by it to avert the introduction into Denmark of a general army" (769 = dre, slot 765 does < dre < 771 du; 805 = ad) - closes "the dress ac[count?]" |
+| 1245 | **1225** (0034; probable, the clerk loops his 2) | "consider himself **as** succeeding to dominion of her colonies" |
+| 1357 755 | **1337 255** (0034; 255 probable) | **Bo-na-part-e** |
+| 946 | **914** (0033) | Gu-sta-v-us (confirms the earlier correction) |
+| 916 | **910** (0033) | "Denmark cannot **go** very willingly" |
+| 631 (com-…-t-s) | **651** (0034) | com-**plain**-t-s; the earlier 631 in "her old and 631 course" is 631 = *wise* as written |
+
+## 20 Feb 1808: known codes under private transforms (4 Oct 2026, contributed)
+
+Search by OpenAI Codex, files in `feb20_known_code_search/` (REPORT.md, METHODS.md, results.json, scripts). WE028
+(THE=1385; Tomokiyo's transcription) and the THE=972 table, each under direct and modular shifts, digit reversal, the
+24 digit permutations, per-digit offsets, separate shifts for groups <100 and ≥100, and invertible affine maps
+(19.6 M settings), scored with a character LM against 200 shuffled ciphertexts: best real z = 1.83, family-corrected
+p = 0.40; no transform maps the five frequent groups (17, 18, 38, 1, 14) to the/of/and/to/a. Not the code with a
+simple private transform. Digit note: groups ≥100 end in 0 (39%) and 1 (20%), 2/3/5/9 almost never (THE=972 is
+uniform); a "decade-family" (inflection-digit) reading does not beat a shuffle control (45 multi-member decades
+against 42.1 expected, 95% bound 47).
 
 ## Escalation
 

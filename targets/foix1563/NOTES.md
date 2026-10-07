@@ -46,15 +46,39 @@ the ciphered passages, numbered, with the letter named in the margin.
   at −0.26/char, so an annealer on it collapses to runs of one letter. `anneal.py` shows that failure; use a
   joint-count table as in `anneal3.py`.
 
+## R9241: the key identified (4 Oct 2026, contributed by Feyseel Nur, PR #21)
+
+Lawrence Beck's PR #18 (with ChatGPT, 3 Oct 2026, `beck-preliminary/`) proposed a partial decipherment from the images
+first; the work below was done independently and complements it.
+
+The sign set is Paul de Foix's own cipher, as reconstructed by S. Tomokiyo (cryptiana `henryiii.htm#Foix0`) from de
+Foix's letters of 11 Oct 1565, BnF fr. 15971 ff. 21-22 (contemporary decipherment on f. 25r, marginal one on f. 26r;
+Gallica ark btv1b105094409, view 2N+9 for f. Nr). Not on DECODE, hence missed by the known-key search above. Values
+confirmed on the 1565 decipherments: 50 = que (the transcription's "so" = 50; "so f so" = quelque), 82 ceulx, 51 qui,
+37 me/car, ny n/z, g s, f s/l/u (several signs two-valued); word signs also serve as syllables (83 30 = Le-c-est-re).
+
+Evidence: the unfitted published key scores −1.517 against −1.759 ± 0.031 for 200 token-order shuffles (7.8 SD); an
+independent Montaigne LM (OpenAI Codex, `r9241_foix1565key/codex_review/`) gives 10.7 SD (token shuffle) and 4.3 SD
+(sign-identity shuffle). Coverage with a pre-specified measure (share of the 1,026 tokens in dictionary words of 4-14
+letters; 200 shuffles): frozen key (independent of R9241) grade A 14.0% (shuffled 7.0%, max 10.2%), A+B 25.6% (12.7%,
+max 17.1%); with values fitted on R9241 that recur in ≥2 passages 58.5% (20.7%); all fitted 69.6% (24.3%). No full
+sentence is forced by the frozen key alone; phrases needing only recurring fitted values: "pour le moins estre de la
+partie", "la negotiation prend quelque traict", "dexterité de son esperit", "quelque deboursement de deniers".
+The two readings converge: Beck *Et en ceste uisitation passerent entre eulx quelques …* / here *Et en ceste
+visitation p[..]erent d'entre eulx quelque[s] …*; Beck *que son but seroit de nous faire entrer en quelque debourssement
+de deniers, dont nous n'avons nule intention* / here *… son but … faire, car entrer en quelque deboursement de deniers
+… nulle intention*. Files: `r9241_foix1565key/` (graded reading.md, key_k0.json frozen, key_k1.json fitted layer,
+v5_coverage.txt, v5_phrases.json, v5_rendering.txt, codex_review/).
+
 ## Remaining gaps
 
-- R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4), ~950 tokens - blocker: no-key-material; no key among the Forbes key records R9260-R9262, no decipherment or clear copy in Forbes, CSP Foreign vi or La Ferrière, and ciphertext-only annealing (5 languages, nulls, pairs, syllables) finds no language
+- R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4): key identified (de Foix 1565, see above) but the reading is partial; conflicts between the 1565 chart and values fitted on R9241 (r m/d, z p/i, Yb l/u, 3/Z3) and the unvalued 80 and 93 need a glyph audit on the images and a de Foix letter of 1563-64 - blocker: open-codes
 
 ## Escalation
 
 - [x] siblings: R9237/R9239/R9240 (catalogue 93) viewed in part; they are Coligny letters in a different sign set, no Queen Mother material
 - [x] clear-pages: no clear or deciphered page for the Queen Mother letter among the R9238/R9241 images
-- [x] known-keys: Throckmorton first/second/third ciphers and Croft's (R9260-R9262) compared; then every DECODE key record dated 1550-1580 with French plaintext: R335 (Condé 1562, fits R9238 not R9241), R355, R331, R3818, R3820 (Fontenay 1583); none fits R9241
+- [x] known-keys (4 Oct 2026): Tomokiyo's de Foix key (BnF fr. 15971, 1565) fits R9241, see above. Earlier: Throckmorton first/second/third ciphers and Croft's (R9260-R9262) compared; then every DECODE key record dated 1550-1580 with French plaintext: R335 (Condé 1562, fits R9238 not R9241), R355, R331, R3818, R3820 (Fontenay 1583); none fits R9241
 - [x] print: Forbes ii, CSP Foreign vi (whole volume), La Ferrière i-ii searched; not found
 - [x] key-rebuild: no crib or sibling key exists; ciphertext-only swap annealing (one letter per sign, with nulls, pairs, syllables; 5 languages) on both transcriptions, all negative
 - [x] retry: sign-by-sign re-transcription of both pages (qm2_f148.txt, qm2_f149.txt, merged qm2_tokens.txt: 1007 tokens, 92 types, IoC 0.031); anneal3.py French, English and French-with-nulls on it: no language (r6_*.txt)
