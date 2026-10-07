@@ -212,12 +212,28 @@
    "kind": "sibling key",
    "what": "Swept DECODE key records 1550-1580 with French plaintext (R335, R355, R331, R3818, R3820). R335 (Condé's cipher, 2 Dec 1562) matches R9238's signs: & and 14 nulls, ω = la Royne d'Angleterre in the heading line. None fits R9241.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-07",
+   "kind": "reading",
+   "what": "Outside contribution, Lawrence Beck with ChatGPT (PR #18, folder beck-preliminary/): a 78-entry proposed key on a new 1,038-token transcription of R9241 (96 types; 1,013 tokens keyed). Decrypt is continuous period French in long stretches (la reconciliation necessaire entre ces deux royaumes; quelque deboursement de deniers dont nous n'avons nulle intention).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-07",
+   "kind": "control",
+   "what": "beck_control.py with lang fr-1600-letters (no spaces). Beck key -2.02/char vs 500 value-shuffled keys -4.28 +/- 0.39 (z 5.8). Overfitting control: swap-annealing a permutation of Beck's own 78 values on token-shuffled ciphertext reaches -1.93 to -2.00/char (per-char score is gameable by word-valued signs), but only 26-34% of letters in corpus words of 5+ letters against 50.6% for Beck's key on the real order (Beck's key on shuffled order: 4-7%). Independent check: 19 of 25 sign names shared with Feyseel's frozen key from de Foix's 1565 cipher (PR #21, Tomokiyo chart) give the same value, a 20th (6 = ie/je) agrees in effect. Real partial break, not at the read bar; 14 key entries rest on one occurrence each.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "The only part counted as read is R9238, identified from the copyist's margin glosses as Coligny's 12 Jan 1563 letter to Elizabeth, deciphered at the time (CSP Foreign vi no. 76) and printed in clear by Forbes, Full View ii 272-274; R9241 (Catherine de' Medici to de Foix) resisted ciphertext-only annealing and remains unread.",
-  "contribution": ["transcription", "sender or date identified", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "sender or date identified",
+   "catalogue correction"
+  ],
   "class": "read in part",
   "key": "none",
   "fraction_read": 0.0,

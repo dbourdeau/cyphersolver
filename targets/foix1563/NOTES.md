@@ -46,9 +46,40 @@ the ciphered passages, numbered, with the letter named in the margin.
   at −0.26/char, so an annealer on it collapses to runs of one letter. `anneal.py` shows that failure; use a
   joint-count table as in `anneal3.py`.
 
+## Proposed reading, Beck (PR #18)
+
+Lawrence Beck, with ChatGPT, submitted a proposed partial decipherment of R9241 (`beck-preliminary/`, start with
+`REPORT.md`). He made a new transcription (1,038 tokens, 96 sign types; 1,013 tokens carry a key value) and a 78-entry
+key: letters, homophones, word signs (30 est, 31 pour, 50 que, 51 qui, 84 la ...) and 9 nulls. The decrypt
+(`beck-preliminary/results/literal.txt`) is continuous period French over long stretches, e.g. passage (1) "... sortir
+promptement la reconciliation necessaire entre ces deux royaumes" and passage (4) "... faire entrer en quelque
+deboursement de deniers dont nous n'avons nulle intention".
+
+Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
+
+| measure | Beck key, real order | controls |
+|---|---|---|
+| LM per char | -2.02 | 500 value-shuffled keys -4.28 ± 0.39 (max -3.28), z = 5.8 |
+| LM per char | -2.02 | key fitted (swap annealing over Beck's own 78 values) on token-shuffled ciphertext: -1.93 to -2.00 |
+| letters in corpus words of 5+ letters | 50.6% | same fitted keys on shuffled ciphertext: 26.1%, 33.4%, 34.2%; Beck key on shuffled order: 4-7% |
+
+- The per-char LM score alone does not separate the reading from overfitting: 78 free values (some whole words) can
+  make shuffled ciphertext score as well, as word salad ("fairepourfaire..."). The long-word measure separates them
+  (50.6% against at most 34%), and it underestimates the real text, whose 1563 spelling is not in the 1600 corpus.
+- Independent confirmation: Feyseel's frozen key from de Foix's own 1565 cipher (PR #21, `r9241_foix1565key/key_k0.json`,
+  from Tomokiyo's chart and BnF fr. 15971 ff. 21-26, not fitted on R9241) gives the same value as Beck for 19 of the 25
+  sign names both use (a, b = e; 4, 7 = c; m = n; n, d = o; p = r; 30, 31, 32, 50, 51, 83, 84 ...), and 6 = ie/je agrees
+  in effect. Differences: D, 3, 2, r, z (sign naming or homophony still to settle).
+- Assessment: a real partial break, in de Foix's cipher, not overfitting. It is not at the read bar: 14 of the 78 key
+  entries rest on a single occurrence, a dozen signs (RX, monograms, numbers 10, 20, 26, 34, 37, 40, 70, 82) are open,
+  and no fraction of tokens read as sense has been measured against the images. Outcome left unchanged here.
+- Package: `scripts/verify.py` fails on a Windows checkout (core.autocrlf rewrites the hashed files; a
+  `.gitattributes` with `-text` is added to the folder) and on `README.md`, which was edited after `manifest.json` was
+  written. With LF files and README excluded it passes (17 files, 1,038 tokens replayed).
+
 ## Remaining gaps
 
-- R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4), ~950 tokens - blocker: no-key-material; no key among the Forbes key records R9260-R9262, no decipherment or clear copy in Forbes, CSP Foreign vi or La Ferrière, and ciphertext-only annealing (5 languages, nulls, pairs, syllables) finds no language
+- R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4), ~950 tokens - blocker: no-key-material; no key among the Forbes key records R9260-R9262, no decipherment or clear copy in Forbes, CSP Foreign vi or La Ferrière, and ciphertext-only annealing (5 languages, nulls, pairs, syllables) finds no language. A proposed partial key now exists (Beck, PR #18; see above), checked against de Foix's 1565 cipher; the reading has not been measured to the read bar
 
 ## Escalation
 
