@@ -46,3 +46,17 @@ does not include these letters.
 - A clear copy of the letter, or Palm's Imperial key: Vienna HHStA, England Berichte 1727, or a Willes decipher in
   BL Add MS 32xxx or SP 107.
 - The rest of Add MS 32270 on DECODE: R7929 is marked "Decrypted" but has no images.
+
+## Word-level solver test (4 Oct 2026, contributed by Feyseel Nur, PR #21)
+
+A word-level annealer on a 30M-character German corpus of 1724-1767 (Deutsches Textarchiv) recovers synthetic German
+homophonic texts of the same size (164-177 tokens, ~44 numbers, 6 commonest values given) at 99-100%, 99.4% with 9
+syllable code groups mixed in, and 90% with 5% of the numbers corrupted. So 162 tokens is not too short for a word-level
+model. On R7927 about 70 runs over 14 settings (gloss values; Latin readings 23=u, 33=n, 40=r, matching R7928; nulls,
+syllable or word values for small numbers; code groups as letters) give no German and score like shuffled ciphertext
+(real −901 to −961, shuffled −916 to −1006), while IoC (0.024) and 13 repeated pairs look like a real cipher. The block
+is the input: the glosses or more than ~5% transcription error (internal contradictions: "d n" twice and "?dt" in P17
+if 10=d; 8=ch cannot follow the clear "über" in P6). The clear text matches Palm's reports of Dec 1726 in Coxe, *Walpole*
+II 504-510 ("my last P.S." on the King, the ministry and the nation). Next: re-transcribe ff. 16v-17r digits and every
+gloss from the DECODE images; the full R7928 table.
+

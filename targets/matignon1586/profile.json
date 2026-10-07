@@ -596,12 +596,40 @@
    "kind": "control",
    "what": "Coverage measured instead of estimated: measure.py decodes every transcription with key.json and the 6-gram model, counts a token read only if keyed and inside a >=3-word, >=10-letter lexical run, and runs a 3-seed scrambled-key control per leaf. Result 4,325/12,994 transcribed tokens (0.33), 0.28 of the whole target with untranscribed lines counted (0.22 chance-corrected); f. 110 scores at its scrambled floor. Also found: f. 196 has 31 cipher lines (26 transcribed), f. 177 has 29 (24 transcribed), and the 'f. 178v fourth hand' page is the f. 179 Cipher-3 slip bound upside down.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-06",
+   "kind": "verification",
+   "what": "alejandrozarco (PR #25): Tomokiyo's partial Cipher-3 table checked by hard-EM alignment of a blind transcription of sibling f. 277r against its contemporary decipherment on ff. 279-280; values added (### = et, two-stroke # = i, dotted v = u, S-shape = q and others).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-06",
+   "kind": "transcription",
+   "what": "alejandrozarco (PR #25): f. 276 (22 lines) and fr. 15571 f. 179 (21 lines) transcribed sign by sign twice, independently; reads agree on 93.8% (f. 276) and 91.5% (f. 179) of signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-06",
+   "kind": "reading",
+   "what": "alejandrozarco (PR #25): f. 276 deciphered with the Cipher-3 key, 698/734 signs (95.1%) in lexical runs (fr-henri4 word list); f. 179 transcribed and checked against Tomokiyo's unpublished magenta interlinear decipherment, 466/509 (91.6%). Poitou faction report naming La Rousiere, la Mare, Iehan Durant, Lansac.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-07",
+   "kind": "control",
+   "what": "Review of PR #25: measure.py re-run reproduces 698/734 and 466/509; 50 shuffled keys give median 6.3% / 3.1% (max 21.5% / 21.0%); line structure of f. 276 L01, L21, L22 and f. 179 L18 (blot), L21 checked on the Gallica natives.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "The Cipher-1 leaves were read with Tomokiyo's published partial table for the Mayenne-Forget cipher (cryptiana), verified and completed against same-volume decipherments (f. 14v with f. 15r, f. 18 with f. 19) and read through a beam decoder because several figures are indistinguishable.",
-  "contribution": ["transcription", "decipherment with ambiguous key", "key extended or corrected"],
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key",
+   "key extended or corrected"
+  ],
   "class": "read in part",
   "key": "partial",
   "fraction_read": 0.28,
