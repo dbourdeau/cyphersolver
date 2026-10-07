@@ -1,0 +1,17 @@
+Independent validation of the key decoding against the two contemporary decipherments found in inv. 401
+(key decode done first from NA 1.10.29 inv. 1209; decipherment compared afterwards)
+
+letter                     cipher tokens  agree(A)  key-choice confirmed by decipherer(N)  disagree(X)  gap/unclear
+1686-12-05 (30R+31L; dec. 28R)    369        354              9                              6            0
+1687-01-30 (41R+42L+44R; 42R-43R) 781        718             32                             13           18
+total                            1150       1072             41                             19           18
+agreement where comparable (A+N)/(A+N+X) = 1113/1132 = 98.3 %
+key alone without any help of the decipherment A/(A+N+X) = 1072/1132 = 94.7 %
+The 19 disagreements: 2 encipherment slips by Battier, ~6 trivial word-form differences (de/den, der/dier, so als/soowel als),
+the rest misread or blotted tokens (listed in validation_1686-12-05.txt and validation_1687-01-16.txt).
+Third partial check: 101R (26 Feb 1688) interlinear decipherment, legible parts agree ("met den Grand maistre", "Heydelbergh",
+"hem in de wegh ... staen", "hadde, soo geeft").
+
+Shuffled-key control (control.py, spelled layer = runs of >=3 cipher-letter tokens, 171 runs / 1211 letters):
+real letter table 123/171 = 72 % of runs segment completely into Dutch words / names (strict lexicon; failures are mostly Battier's
+81-for-e habit and names); 300 random permutations of the 97-number table: mean 1.2 %, max 4.1 %.

@@ -1,5 +1,6 @@
 {
  "keys": [
+  {"id": "k-battier1686", "label": "Battier key — NA 1.10.29 inv. 1209", "kind": "archive key", "by": "Contemporary chancery", "year": 1686, "note": "Named Battier key, DECODE R2794; inventory citation 5345 corrected to 1209. Letter table and fifteen marked Dutch codebook blocks."},
   {
    "id": "k-balbases",
    "label": "Balbases key (SEG 2559)",
@@ -1828,9 +1829,26 @@
    "by": "Daniel Bourdeau",
    "year": 1533,
    "note": "The R9427 gloss key carried to R9407 by sign shape and extended there by EM, a word-aware decoder and readings aligned back to the signs (augurelio1535 pass 2); carried back to the five sibling letters of 1534-35 on 2 Oct 2026."
+  },
+  {
+   "id": "k-aerssen1601",
+   "label": "Aerssen 1601 sibling-gloss key",
+   "kind": "rebuilt here",
+   "by": "Feyseel Nur (with Claude and Codex)",
+   "year": 1601,
+   "note": "Rebuilt from 11 and 28 May interlinear glosses and 30 April list A; qF distinct from qT."
+  },
+  {
+   "id": "k-beuningen1676",
+   "label": "Van Beuningen’s Dutch nomenclator, 1675–1677",
+   "kind": "rebuilt here",
+   "by": "Feyseel Nur with Claude and Codex",
+   "year": 1676,
+   "note": "Rebuilt from sibling interlinear glosses in NA 3.01.18 inv. 248–250; later hands and contextual values distinguished."
   }
  ],
  "links": [
+  {"key": "k-battier1686", "target": "battier1686", "how": "partial", "note": "Named key applied; two focus letters pass strict sense, volume partial; mark choices and contextual repairs remain uncertain."},
   {
    "key": "k-balbases",
    "target": "balbases1677",
@@ -2802,6 +2820,18 @@
    "target": "kaa4591",
    "how": "adapted",
    "note": "carried by sign shape to R9408, R9409, R9410 (German and the Latin letter), R9413 and R9427 and re-learned per letter; 83.9% of 6,820 words"
+  },
+  {
+   "key": "k-aerssen1601",
+   "target": "aerssen1601",
+   "how": "rebuilt from",
+   "note": "Applied to 25 May and 2 June; 59/61 and 9/11 attested tokens."
+  },
+  {
+   "key": "k-beuningen1676",
+   "target": "beuningen1676",
+   "how": "rebuilt from",
+   "note": "Partial reading of 23 May/2 June 1676; strict 264/278 (94.96%), with gemelte retained."
   }
  ],
  "sources": [
@@ -3226,6 +3256,14 @@
   {
    "source": "s-bourdeau",
    "key": "k-r9407-sysA2"
+  },
+  {
+   "source": "s-bourdeau",
+   "key": "k-aerssen1601"
+  },
+  {
+   "source": "s-bourdeau",
+   "key": "k-beuningen1676"
   }
  ],
  "unlinked": {
