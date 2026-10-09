@@ -1,0 +1,198 @@
+{
+ "schema_version": 1,
+ "target": "hesse1672",
+ "title": "Hamburg despatch to the Hessian chancellor, 4/14 May 1672 (HStAM 4 f Dänemark Nr. 125 ff. 2-4; HCPortal 494)",
+ "documents": [
+  {
+   "id": "HCPortal 494",
+   "read": "read in part",
+   "shelfmark": "Hessisches Staatsarchiv Marburg, HStAM 4 f Dänemark Nr. 125, ff. 2-4 (HCPortal record 494)",
+   "date": "4/14 May 1672 (dated at the foot, Hamburg)",
+   "year": 1672,
+   "country": "Germany",
+   "route": "unidentified writer at Hamburg -> the Hessian chancellor (Herr Canzler), Kassel",
+   "language": "German",
+   "pages": 3,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "margin"
+    ],
+    "source": "A second hand glossed nearly every code number and wrote partial readings of both letter-cipher passages (margin 'disgustirt und ertarin holstein'; letters over passage 2).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 40,
+    "distinct": 36,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ct.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "HCPortal media 1385-1387 (about 2600 x 3950), full-resolution crops",
+    "corrections": 2,
+    "image_quality": "good",
+    "notes": "Code 630 first read 650/680 (long-tailed 3); 'bb' in passage 1 is 66 (6 written like b). Only the cipher parts and their context are transcribed, not the whole clear text. ct.txt measures 40 tokens (38 letter-cipher signs + the codes 634 and 768 inside the passages); codes.txt lists all 26 code numbers, 24 of them outside ct.txt, so the letter has 64 cipher tokens in all."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Hessian chancery nomenclator: five two-digit homophones per letter (20-166), doubled capitals as further homophones, signs for syllables, nulls 1-19, and three-digit code numbers 300-830 for names.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "places",
+    "titles",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "enciphered as single letters (doubled capitals are homophones, not doubling marks)",
+  "sibling_key": "HCPortal key 255 (HStAM 4 d Nr. 1234 ff. 13-16, Lincker 1666/1676): same letter table, different nomenclature",
+  "notes": "Letter table: A-K take 20-69 in columns of ten (A 20 30 40 50 60, F 21 31 ...), L-U 70-119, W-Z 120-166; CC=a ... BB=z. The 1672 word list (codes 300-830) is not on HCPortal."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Glosses on the leaf (codes, margin reading of passage 1 with one word wrong, partial letters over passage 2); HCPortal 'Partially solved' without transcription. No published reading found.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "key from archive",
+   "crib"
+  ],
+  "attack": "key from archive",
+  "human_role": "Task posed from the catalogue entry by a coordinating agent; no target-specific intervention.",
+  "tools": [
+   "HCPortal API",
+   "PIL crops and contact sheets",
+   "python decoder",
+   "lang de-1640s n-gram model"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-09",
+  "last_date": "2026-10-09"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched HCPortal record 494 and its three full-resolution images.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "Read the leaf: clear German despatch, 26 glossed code numbers, two letter-cipher passages on f. 4r (38 signs).",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "literature search",
+   "what": "Web and HCPortal search for prior readings (letter, Blumenthal, Plön, Dano-Brunswick alliance, Antal & Mírka, Klausis Krypto Kolumne): only the glosses on the leaf.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "crib",
+   "what": "Margin gloss 'disgustirt und ertarin holstein' tried against passage 1 with doubled capitals as nulls and as letters.",
+   "result": "failed",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "key from source",
+   "what": "HCPortal key 255 (Marburg 4 d Nr. 1234, 1666): same type of table (homophones 20-166, doubled capitals); its nomenclature (Alliance 311) does not match the letter's codes.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "key from source",
+   "what": "Fetched all 319 HCPortal key records and screened the 106 Marburg 4 d / 4 f keys in contact sheets for a table of this type with codes 300-830.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "verification",
+   "what": "Key 255's letter table (with its Scala, key 254) gives the glossed letters of passage 2 unchanged (63 g, 38 e, 22 b, FF d, 20 a, 75 s, 96 o, NN l, 50 a, 32 b, 110 l).",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "reading",
+   "what": "Syllable signs st and tt identified; passage 1 'disgustirt und ... in Holstein', passage 2 'Gott geb das all wol ablauff' (55 a slip for 53).",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "reading",
+   "what": "26 code numbers recorded with their glosses; 602 = Braunschweig from the struck gloss and 'Foedus Dano-Brunsvicense' in clear.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "solver",
+   "what": "de-1640s LM search over the five open signs (e r t a d) allowing up to two copy slips.",
+   "result": "failed",
+   "date": "2026-10-09"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "The letter-cipher passages were deciphered with the letter table of HCPortal key 255 (Marburg 4 d Nr. 1234, Lincker 1666/1676), a key not tied to this letter and found here to fit; the code numbers come from the glosses on the leaf.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "catalogue correction"
+  ],
+  "fraction_read": 1.0,
+  "fraction_coherent": 0.922,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.txt over ct.txt (38 letter-cipher signs) and codes.txt (26 code numbers): 64 tokens, all given a value, 59 read as sense",
+  "codes_open": {
+   "open": 0,
+   "total": 20,
+   "tokens_open": 0
+  },
+  "first_break": false,
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "passage 1, signs 28 83 117 20 66 (e r t a d) before 'in Holstein'",
+    "blocker": "too-short",
+    "detail": "The key reads them unambiguously but they make no word; the contemporary glosser failed at the same place ('ertarin'); an LM search with up to two copy slips found nothing; no second copy is online."
+   }
+  ],
+  "notes": "59 of 64 cipher tokens read as sense (92.2%). Letter table from HCPortal key 255; the nomenclature is a different, lost word list whose values come from the glosses. 625 (Statthalter Ahlefeldt?) and 653 (... von Brandenburg) glosses only partly legible. Writer not identified."
+ }
+}

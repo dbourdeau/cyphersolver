@@ -370,6 +370,11 @@ PAGES = [
          title='Fra Giovanni di Lucca to Ferdinand III, 1644',
          blurb='A 231-figure Italian cipher paragraph in a friar&rsquo;s letter to the Emperor (DECODE R2159), a substitution with two figures for each vowel. The key was recovered using the opening words Tomokiyo had published as a crib, and every figure was decrypted; checked against the manuscript, the apparent polyphony turned out to be ten misread 4s and three encipherment slips. The Grand Hetman Koniecpolski offers to keep the Turk from R&aacute;k&oacute;czi, raise Moldavia against him and give two thousand Cossacks.',
          quote='&ldquo;il principe di Bogdania, et li dar&ograve; dumilia Cosachi &hellip; che non faccia pace fin che non l&rsquo;habbi humiliato o vinto&rdquo;'),
+    dict(slug='hesse1672', label='Hamburg despatch to Kassel 1672', year='1672', y=1672.4, place='Hamburg &rarr; Kassel', st='partial', stt='key matched, partial',
+         title='A Hamburg despatch to the Hessian chancellor, 4/14 May 1672',
+         blurb='A German despatch from Hamburg to the chancellor at Kassel (HStAM 4 f D&auml;nemark Nr. 125; HCPortal 494, &ldquo;partially solved&rdquo;), with 26 code numbers glossed by a second hand and two short letter-cipher passages. The letter table of a Hessian key of 1666 filed elsewhere in Marburg (HCPortal key 255) reads both passages; one five-sign word stays without sense. Denmark, Brandenburg and Brunswick in the spring of the Dutch War.',
+         quote='&ldquo;Totaliter disgustirt und &hellip; in Holstein&rdquo; &middot; &ldquo;Gott geb das all wol ablauff&rdquo;',
+         rights='Hessisches Staatsarchiv Marburg, via HCPortal'),
     dict(slug='hernannunez1674', label='Hern&aacute;n N&uacute;&ntilde;ez 1674', year='1674', y=1674.9, place='Stockholm &rarr; Copenhagen', st='solved', stt='read',
          title='The Conde de Hern&aacute;n N&uacute;&ntilde;ez to Baltasar de Fuenmayor, December 1674',
          blurb='Four despatches from the Spanish envoy at Stockholm, each cipher passage with a contemporary decipherment in the margin (Brussels SEG 2559, DECODE R1012&ndash;R1015). The syllabic nomenclator key rebuilt earlier for the Balbases letters in the same volume was applied unchanged; it confirms the margins and supplies their illegible words, giving values to all but one of 1,716 groups. Sweden on the eve of the Scanian War.',
@@ -1435,6 +1440,7 @@ IMAGES['hereditary1796'] = ('hereditary1796_lead.jpg', 'R2239, head of the lette
 IMAGES['r1892'] = ('r1892_lead.jpg', 'Page 2, the head of the Dutch postscript: in het hollandsch met cijffer, then digit pairs written top over bottom', 'Koninklijk Huisarchief, The Hague, via DECODE R1892')
 IMAGES['r2242'] = ('r2242_lead.jpg', 'Page 1: four cipher lines, the clear Dutch written beneath', 'Koninklijk Huisarchief, The Hague, via DECODE R2242')
 IMAGES['malsburg1637'] = ('malsburg1637_lead.jpg', 'The first cipher lines of the letter of 5/15 January 1637: 27.39.13.95.N.F.D.44.89.N = das ich auch noch nit weiss', 'Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411 f. 3, via HCPortal record 496')
+IMAGES['hesse1672'] = ('hesse1672_lead.jpg', 'The two letter-cipher passages on f. 4r, with the second hand&rsquo;s glosses above them and in the margin', 'Hessisches Staatsarchiv Marburg, HStAM 4 f D&auml;nemark Nr. 125 f. 4r, via HCPortal record 494')
 IMAGES['hesse1824'] = ('hesse1824_lead.jpg', 'The heading &ldquo;Snell an A?ud&rdquo; and the six cipher lines; the digits 4, 1 and 3 are cipher signs', 'Hessisches Staatsarchiv Marburg, HStAM 9 a Nr. 259 f. 249, via HCPortal record 513')
 IMAGES['r2234'] = ('r2234_lead.jpg', 'The head of the letter: section capital D, the date in clear, then one line per alphabet', 'Koninklijk Huisarchief, The Hague, via DECODE R2234')
 IMAGES['marburg1635'] = ('marburg1635_lead.jpg', 'The cipher lines with the contemporary gloss over the first four', 'Hessisches Staatsarchiv Marburg, via DECODE R4500')
