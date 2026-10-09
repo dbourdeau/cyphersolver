@@ -1,5 +1,9 @@
 {
  "keys": [
+  {"id": "k-worcester1527", "label": "Ghinucci (Bishop of Worcester) superscript syllabic key, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1527, "note": "Consonant-row signs with superscript syllable digits, code words and nulls; rebuilt from R8589 (L&P iv 5282), R8590 (interlinear) and R8476 (State Papers VI 552-556), extended in R8613. targets/superscript/key.tsv."},
+  {"id": "k-tomokiyo-worcester", "label": "Tomokiyo's partial table for the Bishop of Worcester", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1529, "note": "Cryptiana henryviii.htm; partial syllable table, merged into the rebuilt key."},
+  {"id": "k-r5258", "label": "DECODE R5258 Sforza key 'Cum equite Bilie'", "kind": "DECODE key record", "by": "Sforza chancery (ASMi Carteggio Sforzesco cart. 1591 no. 24)", "year": 1527, "note": "Barred G/B/D/o signs with two-digit syllable numbers, letters, words and nulls; filed under the Cavaliere Bilia, used by Gilino in 1527."},
+  {"id": "k-r5256", "label": "DECODE R5256 Sforza key (cart. 1591 no. 22)", "kind": "DECODE key record", "by": "Sforza chancery", "year": 1525, "note": "Same family as R5258 (barred B/D with numbers for names), different syllable table."},
   {"id": "k-r8766-torcy-petkum1709", "label": "DECODE R8766 Torcy-Petkum code 1709", "kind": "DECODE key record", "by": "French Foreign Office (Torcy)", "year": 1709, "note": "Two-part code, 1-774, deciphering grid ruled to 850; BL Add MS 61575. Reads the Petkum letters R8748-R8752."},
   {"id": "k-r8767", "label": "DECODE R8767 one-part code c. 1712-14", "kind": "DECODE key record", "by": "unknown", "year": 1713, "note": "One-part code 1-996, de = 215, English names (Dartmouth, Devonshire); BL Add MS 61575."},
   {"id": "k-r8768-rose", "label": "DECODE R8768 marquis de Rose code", "kind": "DECODE key record", "by": "unknown", "year": 1716, "note": "Code 1-578, de = 12, Jacobite names of 1715-18; BL Add MS 61575."},
@@ -1924,6 +1928,9 @@
   {"id": "k-brancoveanu-polish", "label": "Brancoveanu chancellery key for Polish letters (a=19, b=60 ...)", "kind": "scholar's key", "by": "A. Mares 1987; M. W. Kaczka 2012", "year": 1709, "found": 1987, "note": "Simple numerical substitution with a few word codes (900 = August, 800 = Turcy), used by Constantin Brancoveanu's and Constantin Cantacuzino's chancellery for letters to Sieniawski, 1709-1714; printed by Kaczka, Danubius XXX (2012), n. 21."}
  ],
  "links": [
+  {"key": "k-worcester1527", "target": "superscript", "how": "rebuilt from", "note": "R8613 (22 July 1527) deciphered 797/814 signs with the key rebuilt from the three sibling decipherments"},
+  {"key": "k-tomokiyo-worcester", "target": "superscript", "how": "partial", "note": "first syllables; merged into the rebuilt key"},
+  {"key": "k-r5258", "target": "superscript", "how": "adapted", "note": "Gilino R8572 deciphered 96.1% with R5258 plus a few context values"},
   {
    "key": "k-battier1686",
    "target": "battier1686",
@@ -2975,6 +2982,9 @@
   }
  ],
  "source_links": [
+  {"source": "s-bourdeau", "key": "k-worcester1527"},
+  {"source": "s-decode", "key": "k-r5258"},
+  {"source": "s-decode", "key": "k-r5256"},
   {
    "source": "s-decode",
    "key": "k-r1024"
@@ -3413,6 +3423,7 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-r5256", "target": "superscript", "note": "Gilino R8572: same barred-letter family, but the syllable rows do not match"},
   {"key": "k-r8766-torcy-petkum1709", "target": "geertruidenberg", "note": "Torcy 3 Apr 1710: de = 43/140 in R8766, the letter has 43 once and 140 never; 42 (second commonest) = correspondance. Not the same assignment"},
   {"key": "k-r8767", "target": "geertruidenberg", "note": "de = 215 absent from Torcy's letter; English-court nomenclature; one-part design does not fit"},
   {"key": "k-r8768-rose", "target": "geertruidenberg", "note": "Villars 1 Jun 1710 has no 12 (de); names post-1714. Ruled out"},

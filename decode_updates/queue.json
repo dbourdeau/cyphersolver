@@ -8564,6 +8564,125 @@
      ]
     }
    }
+  },
+  "superscript": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/superscript.html",
+   "key": {
+    "file": "targets/superscript/key.tsv",
+    "lang": "LA",
+    "how": "rebuilt from the contemporary decipherments of R8589 (printed in L&P iv 5282), R8590 (interlinear) and R8476 (printed in State Papers VI 552-556), extended by context in R8613"
+   },
+   "cite": "Letters and Papers, Foreign and Domestic, Henry VIII, vol. IV, nos. 2727, 3291, 5282, 5300; State Papers of Henry VIII, vol. VI (1849), pp. 552-556; S. Tomokiyo, Cryptiana, henryviii.htm",
+   "fields": {},
+   "records": {
+    "R8613": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Ghinucci (Bishop of Worcester) to Wolsey, duplicate of 22 July 1527 ('Dupplicata sub die xxii Julii 1527'; the '1529' is the binder's heading); L&P iv 3291 no. 2 calls it 'undeciphered'; the original is Cotton Vitellius B IX f. 127 (damaged). Deciphered with the Worcester key rebuilt from the sibling letters R8589, R8590, R8476: 797 of 814 cipher signs (97.9%); 17 single signs open. Old foliation f. 332.",
+     "reading": [
+      {
+       "file": "targets/superscript/r8613_reading.txt"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/superscript/r8613_tokens.txt"
+     ],
+     "fields": {
+      "author": "Girolamo Ghinucci, Bishop of Worcester",
+      "receiver": "Cardinal Thomas Wolsey",
+      "start_year": "1527",
+      "start_month": "7",
+      "start_day": "22",
+      "origin_city": "Valladolid (imperial court)",
+      "cleartext_lang": "Latin",
+      "plaintext_lang": "Latin",
+      "cipher_type": "syllabic substitution: consonant-row signs with superscript syllable digits, single letters, code words, nulls"
+     }
+    },
+    "R8589": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Ghinucci to Wolsey, Valladolid, 12 Feb 1529 (old f. 291). Deciphered at the time: L&P iv 5282 prints the Latin decipherment of the whole cipher passage, and Vesp. C VII f. 40 is a translation 'e cifris'; the decipherer struck the nulls through on the MS. Aligned sign by sign here (transcription attached) as key material for R8613.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/superscript/r8589_tokens.txt"
+     ],
+     "fields": {
+      "author": "Girolamo Ghinucci, Bishop of Worcester",
+      "receiver": "Cardinal Thomas Wolsey",
+      "cleartext_lang": "Latin",
+      "plaintext_lang": "Latin",
+      "start_year": "1529",
+      "start_month": "2",
+      "start_day": "12"
+     }
+    },
+    "R8590": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "Ghinucci to Wolsey, Valladolid, 15 Feb 1529 (L&P iv 5300); interlinear decipherment on the page. Language is Latin, not English. Same cipher as R8589, R8476, R8613.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "author": "Girolamo Ghinucci, Bishop of Worcester",
+      "receiver": "Cardinal Thomas Wolsey",
+      "cleartext_lang": "Latin",
+      "plaintext_lang": "Latin"
+     }
+    },
+    "R8476": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Ghinucci to Wolsey, Poissy, 24 Dec 1526 (L&P iv 2727; old f. 303). The letter with its deciphered passages is printed in State Papers of Henry VIII vol. VI (1849) pp. 552-556 from the contemporary decipher in the Record Office. Language Latin, not English. Transcription and alignment attached (845 cipher signs, 42 struck nulls).",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/superscript/r8476_tokens.txt"
+     ],
+     "fields": {
+      "receiver": "Cardinal Thomas Wolsey",
+      "start_year": "1526",
+      "start_month": "12",
+      "start_day": "24",
+      "origin_city": "Poissy",
+      "cleartext_lang": "Latin",
+      "plaintext_lang": "Latin"
+     }
+    },
+    "R8572": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "'El Gilino' to Francesco II Sforza, Duke of Milan, at Cremona (address leaf), Paredes de Nava, 15 Sept 1527. Deciphered with the Sforza key R5258 plus a few context values: 2,872 of 2,989 significant signs (96.1%); 9 signs and 45 doubtful words open. Folio order 214r-218r = images P1, P2, P7, P3, P5, P4, P6, P8, P9. No decipherment on the MS or in L&P.",
+     "reading": [
+      {
+       "file": "targets/superscript/gilino/reading_r8572.txt"
+      }
+     ],
+     "sent": false,
+     "key": {
+      "decode": "R5258 (ASMi Carteggio Sforzesco cart. 1591 no. 24, 'Cum equite Bilie / extracta ex cifris')",
+      "lang": "IT"
+     },
+     "transcription": [
+      "targets/superscript/r8572_tokens.txt"
+     ],
+     "fields": {
+      "author": "Gilino (signs 'Servo el Gilino'), Sforza agent at the imperial court",
+      "receiver": "Francesco II Sforza, Duke of Milan",
+      "origin_city": "Paredes de Nava",
+      "start_day": "15",
+      "start_month": "9",
+      "cleartext_lang": "Italian",
+      "plaintext_lang": "Italian",
+      "cipher_type": "syllabic nomenclator: barred letters with two-digit syllable numbers, letters, words, nulls"
+     }
+    }
+   }
   }
  },
  "rechteren1785": {
