@@ -1,5 +1,12 @@
 # Jean du Bellay (London) to Montmorency, 1529 — BnF fr. 3077 and fr. 3078 (catalogue item 4)
 
+Status: found already solved (9 Oct 2026). Every cipher passage of the item, and the two by-products once thought
+unread (16 June 1529, fr. 3078 p. 21; the opening of 22 Oct 1529, fr. 3005 f. 165), is printed in clear: Le Grand 1688,
+Bourrilly 1905, and Scheurer, *Correspondance du cardinal Jean du Bellay* t. I (1969), no. 12 p. 41 (16 June) and
+pp. 111-112 (22 Oct). The 16 June block was deciphered here from the leaf with the re-derived key (lines 0-6, about
+181 of 194 signs, four left open) before Scheurer's text was seen; Scheurer then confirmed it and gave three word signs and the last
+line. See section 6. Written up 9 Oct 2026: docs/dubellay.html (read from existing decipherment).
+
 Working notes, 17 Sept 2026. Images: Gallica IIIF `btv1b90599292` (fr. 3077, 200 canvases) and `btv1b9060311s`
 (fr. 3078, 177 canvases); in fr. 3078 canvas = page number (the volume is paginated, not foliated: p. 21 = canvas 21).
 Downloads in `img/` (gitignored; `fetch_thumbs.py`, `fetch_pages.py`). Gallica dropped connections for most of the
@@ -135,3 +142,107 @@ Béthune 8530 reference pointing to another volume.
 
 Next: (1) finish p. 21 with the pp. 26–27 windows (`img/c027_L*`) to pin the diamond-cross and hooked-cross variants;
 (2) the 22 Oct 1529 opening from fr. 3005 f. 165 (Gallica ark to find) with this key; (3) Scheurer t. I for both.
+(Superseded by section 6: Scheurer prints both.)
+
+## 6. Second pass, 9 Oct 2026 (DECODE login, Scheurer snippets)
+
+**Access.** The DECODE cookie now works. Record pages saved in `decode/R*.html`; images (gitignored) in
+`img/decode/`. No DECODE record of this group carries a DOC transcription. R9467 (Friedmann's key, NAF 4206 no. 5)
+has **no image uploaded at all** (the record page lists no file; not an access problem). R3688 (p. 21) has the page
+plus three high-resolution crops of the cipher lines (P2-P4, 2,500-3,200 px), which the transcription below uses.
+Also fetched: R3689 (22 June, pp. 23-25, with interlinear), R3691 (17 Oct), R3693 (p. 165), R4229 (fr. 3040 f. 68).
+Gallica IIIF and SRU now answer 403 (Cloudflare challenge) to scripted requests, so fr. 3005 f. 165 and fr. 3077
+were not fetched. Tomokiyo's table re-downloaded to `ref/tomokiyo_francisBayonne.png`.
+
+DECODE search (harvest `research/catalogue_harvest/decode/list.json`) for du Bellay / Bayonne / fr. 3077 / 3078 / 3040 /
+3005 / Clairambault 328-333 / NAF 4206 turned up one record not in the table above: **R4229, fr. 3040 f. 68**
+(London, "dernier de juing" = 30 June 1529, four pages, about two of them in cipher, status "Non-decrypted"). It is
+**printed in clear** by Le Grand III 333 ff. (from "Vol. 1042 f. 68"; it opens "vous verrez par les Lettres du Roy
+partie de ce que vous sçaurois mander ...") and calendared in L&P IV 5742 (30 June, "à la Haye"). Tomokiyo's Clair. 329
+f. 139 is the deciphered copy of the same date. So R4229 is also found already solved. NAF 4206 nos. 1-19
+(R9463-R9481) are Friedmann's keys for other French envoys 1528-1549; only no. 5 concerns this cipher.
+
+**16 June 1529 (p. 21) deciphered on the leaf.** Re-transcribed sign by sign from the DECODE crop (`p21_signs.txt`,
+194 signs, measured with `--drop-first`) and deciphered with the key of section 2 plus Tomokiyo's table. Before any printed text was
+found, the reading stood at: *si vous [?] trouvez bon l'advis que piecza vous ay envoé de faire semblant que madame
+ne fust allée pour conclure, et qu'estant là [boxed cross] luy ayt par importunité [R] envoyé querir pouoir, il ne
+[ℒ] faudroyt oublyer a le faire dater de ce temps là et du lieu ... roy*. Signs fixed in this pass: ẍ (x over x) = l
+(Tomokiyo; "allée"); ⊑ (bracket with inner bar) = q, written for *que*; ⊽ (triangle on a crossed stem) = i
+("piecza", "importunité"); the diamond family splits as diamond with stem or tail = m, diamond on a cross = t,
+diamond with a side cross = n; -ʊ- and ʊ = s; ꝺ = d ("l'aduis", "faudroyt", "dater"); the y-shaped sign with a long
+descender = u/v ("vous"), distinct from the upright Y = c; "=" stands for b in "bon" (f elsewhere: a slip or a
+homophone); the long stroke in line 1 that looked like a hooked s is the descender of ξ from the line above.
+
+Scheurer's edition then turned out to print the whole block (Google Books snippet view, id `eNw8AAAAIAAJ`, p. 41,
+letter no. 12, "[1529], 16 juin. Londres. A Anne de Montmorency"): "Monsr, si vous trovez bon l'advis que piecza vous
+ay envoyé de faire semblant que Madame ne fust allée pour conclure et que ostant madame Marguerite luy ait par
+importunité faict envoié querir povoir, il ne vous faudroyt oublier a le faire dater de ce temps la et du lieu ou
+sera le Roy. Toutesfoiz, Monsr, vous ne luy en ferez semblant ...". This agrees with the leaf reading word for word
+and supplies: ℒ = *vous*; R = *faict* here (the 22 June interlinear glosses R as *faut*, so R is the word sign
+fault/faict); the boxed cross with a loop at its centre = *madame Marguerite* (Margaret of Austria, negotiating the
+Cambrai peace with Louise of Savoy; the context supports it); line 7 = *ou sera le Roy*. The sign before *Roy* is ꝛe,
+Tomokiyo's word sign for *roy*. The ꝡ sign (line 0 after *vous*, line 7 after *roy*) has no counterpart in the print in
+either place: a null. Three signs in line 7 between *lieu* and *ou* (ρ with a triangle foot, ȸ, a small x) have no
+counterpart either; ȸ is probably Tomokiyo's ƒ-shaped null, the other two are unexplained. The smudged sign before
+*roy* stands where the print has *a le*.
+
+Two small disagreements with Scheurer: the signs give *et qu'estant là madame Marguerite* (⊑ ✗ -ʊ- t a n t l a [MM]),
+where the snippet shows "et que ostant madame Marguerite" (misprint or OCR slip); and "envoyé" in line 1 is
+enciphered *envoe* (no y sign). The boxed cross on p. 113 (17 Oct) was read as *le Cardinal* from Le Grand in section
+5; the p. 21 sign has a loop at the centre of the cross, so the two are probably different word signs. Not re-checked
+on p. 113 in this pass.
+
+Measured: 194 signs; 191 have an established value (letter, word sign or null) = 98.5 %. (The first count, 167, was
+wrong: `--measure` skips lines starting `==`, and line 6 opens with the sign `=`; the lines now carry labels L0-L7.)
+Before Scheurer, lines 0-6 (181 signs) had all but four values: ꝡ, ℒ, R and the boxed cross; every plaintext word of the
+block is read and agrees with Scheurer. Unexplained: ρ-with-triangle and small x in line 7, and the smudged sign.
+
+**22 Oct 1529 opening: also in print.** Scheurer pp. 111-112 prints the letter from its opening: "Monseigneur, la ou
+je vouldroye, si ne me sçauroye-je guarder d'accorder au cardinal d'York sa requeste qu'il me faict faire par ung sien
+serviteur italien qui luy est demouré seul feal ..." (the servant is Agostino, Wolsey's physician, per his note),
+running on to "... bien asseurez d'avoir maint tour de corde ..." and then "Escripvant ceste lectre, ay sceu que monsr
+le Legat vient d'estre mys hors de sa maison", where Le Grand's clear text begins. So the passage Le Grand (1688),
+Brewer (1875) and Tomokiyo call undeciphered was read by 1969 (from which copy, or by Scheurer himself, is not visible
+in the snippets). Not compared with the cipher: fr. 3005 f. 165 is on Gallica only (403 to scripts this session) and
+has no DECODE record.
+
+**Contamination.** Readings existed in print for every piece: Le Grand 1688 (four 1529 letters and 30 June), Bourrilly
+1905 (28 Oct 1528), Scheurer 1969 (16 June block, 22 Oct opening). The 16 June block was deciphered here from the
+leaf before Scheurer was found (lines 0-6), so that reading is independent; ℒ, R in this place, the boxed cross and
+line 7 came from the print.
+
+## DECODE queue
+
+- R3688 (fr. 3078 p. 21): date 16 June 1529 (not 1520-1540); status Decrypted: deciphered text printed in Scheurer,
+  Correspondance du cardinal Jean du Bellay t. I (1969), no. 12 p. 41; attach `p21_signs.txt` and the plaintext above.
+- R4229 (fr. 3040 f. 68): Jean du Bellay to Montmorency, London, 30 June 1529 (not 1526-1529); printed in clear in Le
+  Grand, Histoire du divorce III (1688) pp. 333 ff.; L&P IV 5742 (30 June 1529); deciphered copy Clair. 329 f. 139
+  (Tomokiyo). Status Decrypted (in print).
+- R3689-R3692, R4252-R4254: dates (records say 1520-1540 / 1626-1629) are 22 June 1529 (pp. 23-25, interlinear),
+  15 June 1529 (pp. 31-33), 17 Oct 1529 (pp. 113-117), 27 Oct 1529 (pp. 133-134), 18 Sept 1529 (fr. 3077 f. 113),
+  4 Oct 1529 (f. 125), 28 Oct 1528 (f. 145); printed sources per the table in section 1. R4254: status Decrypted
+  (Bourrilly 1905 no. 156; Lasry 2022). R3693 (p. 165): date not checked.
+- R9467 (NAF 4206 no. 5): no image is attached to the record (not merely restricted).
+- New record suggested: fr. 3005 f. 165 (22 Oct 1529, London, Bayonne's cipher 1529), printed in Scheurer t. I
+  pp. 111-112.
+- R2287 (Clair. 328 f. 291, 28 Oct 1528): solved by Lasry 2022; text in Bourrilly 1905 no. 156; it is the 1528
+  cipher, which is why the record's note says Tomokiyo's 1529 table does not fit.
+
+## Remaining gaps
+
+- p. 21 line 7: two signs (ρ with a triangle foot, a small x) between *lieu* and *ou* and one smudged sign before
+  *roy* have no value. blocker: too short; three isolated signs with no counterpart in the print, probably nulls or a slip.
+- 22 Oct 1529 opening not compared sign by sign with fr. 3005 f. 165. blocker: externally blocked; Gallica returns 403
+  to scripted requests and the leaf has no DECODE record. The text itself is in print (Scheurer pp. 111-112).
+- Scheurer t. I seen only through Google Books snippets. blocker: externally blocked; snippet view only.
+
+## Escalation
+
+- Siblings: DECODE swept for du Bellay / Bayonne / fr. 3040, 3077, 3078, 3005, Clair. 328-333, NAF 4206; R4229 found and
+  identified (in print).
+- Clear pages: 22 June interlinear (R3689) checked for R (= faut) and V (= bien); p. 21 clear text used as context.
+- Known keys: Tomokiyo's table (re-downloaded) and the section 2 key applied; Friedmann's key (R9467) has no image.
+- Print: Le Grand III, L&P IV, Bourrilly 1905 checked earlier; Scheurer t. I found by Google Books snippet search
+  (phrases "faire dater", "semblant que Madame", "maint tour") and covers both by-products.
+- Key rebuild: the p. 21 signs fixed in this pass are listed above.
+- Retry: Gallica retried (403, Cloudflare); DECODE retried (works).

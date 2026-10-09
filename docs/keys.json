@@ -1,5 +1,7 @@
 {
  "keys": [
+  {"id": "k-bayonne1529", "label": "Bayonne's cipher of 1529 (Jean du Bellay), re-derived here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1529, "note": "Homophonic symbol alphabet with word signs (roy, madame, bien, fault/faict, paix, vous); re-derived from the 22 June 1529 interlinear decipherment (BnF fr. 3078 pp. 23-27, DECODE R3689) and Le Grand 1688, extending Tomokiyo's table. targets/dubellay/NOTES.md section 2."},
+  {"id": "k-tomokiyo-bayonne1529", "label": "Tomokiyo's table of Bayonne's cipher (1529)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1529, "note": "Cryptiana francis.htm, reconstructed from Clair. 333 ff. 24, 27 (June 1530)."},
   {"id": "k-worcester1527", "label": "Ghinucci (Bishop of Worcester) superscript syllabic key, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1527, "note": "Consonant-row signs with superscript syllable digits, code words and nulls; rebuilt from R8589 (L&P iv 5282), R8590 (interlinear) and R8476 (State Papers VI 552-556), extended in R8613. targets/superscript/key.tsv."},
   {"id": "k-tomokiyo-worcester", "label": "Tomokiyo's partial table for the Bishop of Worcester", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1529, "note": "Cryptiana henryviii.htm; partial syllable table, merged into the rebuilt key."},
   {"id": "k-r5258", "label": "DECODE R5258 Sforza key 'Cum equite Bilie'", "kind": "DECODE key record", "by": "Sforza chancery (ASMi Carteggio Sforzesco cart. 1591 no. 24)", "year": 1527, "note": "Barred G/B/D/o signs with two-digit syllable numbers, letters, words and nulls; filed under the Cavaliere Bilia, used by Gilino in 1527."},
@@ -1928,6 +1930,8 @@
   {"id": "k-brancoveanu-polish", "label": "Brancoveanu chancellery key for Polish letters (a=19, b=60 ...)", "kind": "scholar's key", "by": "A. Mares 1987; M. W. Kaczka 2012", "year": 1709, "found": 1987, "note": "Simple numerical substitution with a few word codes (900 = August, 800 = Turcy), used by Constantin Brancoveanu's and Constantin Cantacuzino's chancellery for letters to Sieniawski, 1709-1714; printed by Kaczka, Danubius XXX (2012), n. 21."}
  ],
  "links": [
+  {"key": "k-bayonne1529", "target": "dubellay", "how": "rebuilt from", "note": "key re-derived from the 22 June 1529 interlinear; deciphered lines 0-6 of the 16 June 1529 block (fr. 3078 p. 21) before Scheurer's printed text was found, and checked on the 17 Oct letter"},
+  {"key": "k-tomokiyo-bayonne1529", "target": "dubellay", "how": "partial", "note": "starting table; extended with B = o, word signs bien, fault, paix"},
   {"key": "k-worcester1527", "target": "superscript", "how": "rebuilt from", "note": "R8613 (22 July 1527) deciphered 797/814 signs with the key rebuilt from the three sibling decipherments"},
   {"key": "k-tomokiyo-worcester", "target": "superscript", "how": "partial", "note": "first syllables; merged into the rebuilt key"},
   {"key": "k-r5258", "target": "superscript", "how": "adapted", "note": "Gilino R8572 deciphered 96.1% with R5258 plus a few context values"},
@@ -2982,6 +2986,8 @@
   }
  ],
  "source_links": [
+  {"source": "s-bourdeau", "key": "k-bayonne1529"},
+  {"source": "s-tomokiyo", "key": "k-tomokiyo-bayonne1529"},
   {"source": "s-bourdeau", "key": "k-worcester1527"},
   {"source": "s-decode", "key": "k-r5258"},
   {"source": "s-decode", "key": "k-r5256"},

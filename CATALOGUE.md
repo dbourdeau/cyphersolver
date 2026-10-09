@@ -91,7 +91,8 @@ Items that a held or printed key reads were left out: the Marburg key-volume sam
 on Cipherbrain).
 
 Failure mode first: "avec chiffre" in Omont's inventories means the letter contains cipher, not that it was never
-read. The Court's decipherment may sit in another volume, a modern edition (Scheurer's du Bellay, Mousset's Longlée,
+read. The Court's decipherment may sit in another volume, a modern edition (Scheurer's du Bellay, which prints in clear the 16 June 1529 block of item 4 that DECODE R3688 lists as
+not decrypted (checked 9 Oct 2026), Mousset's Longlée,
 Savasse's Maisse) may print a clear text, and Tomokiyo may already have a key that reads the leaf even where he wrote
 "undeciphered". Each entry therefore lists what would confirm it is genuinely open. Coverage checks were made against
 Tomokiyo's unsolved list and his French pages for Henri III, Henri IV, Nevers, Mayenne, the League and fr. 4715 (copies

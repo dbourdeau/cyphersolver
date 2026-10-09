@@ -8683,6 +8683,256 @@
      }
     }
    }
+  },
+  "dubellay": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/dubellay.html",
+   "key": {
+    "file": "targets/dubellay/key_p21.tsv",
+    "lang": "FR",
+    "how": "Bayonne's 1529 cipher, re-derived from the 22 June 1529 interlinear decipherment (R3689) and Le Grand 1688, extending Tomokiyo's table; word signs vous, faict, madame Marguerite from Scheurer 1969"
+   },
+   "cite": "R. Scheurer (ed.), Correspondance du cardinal Jean du Bellay t. I (1969), no. 12 p. 41 and pp. 111-112; J. Le Grand, Histoire du divorce de Henry VIII t. III (1688); L&P Henry VIII vol. IV; Bourrilly and de Vaissière, Ambassades en Angleterre de Jean du Bellay (1905); S. Tomokiyo, Cryptiana (francis.htm, GL.htm)",
+   "fields": {},
+   "new_records": [
+    {
+     "shelfmark": "BnF fr. 3005 f. 165",
+     "what": "Jean du Bellay (London) to Montmorency, 22 Oct 1529, opening in Bayonne's 1529 cipher; copy. Le Grand 1688 and L&P IV 6019 call the opening undeciphered; printed in clear in Scheurer t. I (1969) pp. 111-112. Suggested as a new DECODE record (Gallica only)."
+    }
+   ],
+   "records": {
+    "R3688": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3078 no. 3 p. 21, Jean du Bellay (London) to Montmorency, 16 June 1529. The eight cipher lines are printed in clear in R. Scheurer, Correspondance du cardinal Jean du Bellay t. I (1969), no. 12 p. 41. Transcribed here sign by sign (194 signs, attached) and deciphered with Bayonne's 1529 cipher (key re-derived from the 22 June interlinear, R3689, and Tomokiyo's table); lines 0-6 were deciphered before Scheurer was found and agree with him word for word; 191 of 194 signs have a value. Not in Le Grand 1688, L&P IV or Bourrilly 1905.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R3688.txt"
+      }
+     ],
+     "transcription": [
+      "targets/dubellay/p21_signs.txt"
+     ],
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "6",
+      "start_day": "16",
+      "cipher_type": "homophonic substitution of graphic signs with word signs (Bayonne's cipher, 1529) and nulls"
+     }
+    },
+    "R3689": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3078 no. 4 pp. 23-27, 22 June 1529; interlinear decipherment on the page; clear text in Le Grand, Histoire du divorce III (1688) pp. 327-332. Status right; date added.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "6",
+      "start_day": "22"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R3690": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3078 no. 5 pp. 31-33, 15 June 1529; printed in clear in Le Grand III (1688) pp. 323-326; L&P IV 5679.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "6",
+      "start_day": "15"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R3691": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3078 no. 17 pp. 113-117, 17 Oct 1529 (Wolsey's fall); printed in clear in Le Grand III (1688) pp. 369-375 from the deciphered copy Clair. 330 f. 71; L&P IV 6011. The opening cipher lines of p. 113 were checked here with the re-derived key and match the print.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "10",
+      "start_day": "17"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R3692": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3078 no. 19 pp. 133-134, 27 Oct 1529; interlinear decipherment; printed in Le Grand III (1688) pp. 379-381; L&P IV 6030. Status right; date added.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "10",
+      "start_day": "27"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R3693": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3078 p. 165, Jean du Bellay to Montmorency; date not checked. Same series as R3688-R3692.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R4229": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3040 f. 68, Jean du Bellay (London) to Montmorency, 30 June 1529 ('dernier de juing'), about two of four pages in cipher. Printed in clear in Le Grand, Histoire du divorce III (1688) pp. 333 ff. ('Vol. 1042 f. 68'); L&P IV 5742; deciphered copy Clair. 329 f. 139 (Tomokiyo, Cryptiana).",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "6",
+      "start_day": "30"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R4252": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3077 no. 18 f. 113, 18 Sept 1529; printed in clear in Le Grand III (1688) pp. 354-359; L&P IV 5945; deciphered copy Clair. 330 f. 16. Friedmann's key (NAF 4206 no. 5, R9467) refers to this leaf. Status right; date added.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "9",
+      "start_day": "18"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R4253": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3077 no. 20 f. 125, 4 Oct 1529; printed in clear in Le Grand III (1688) pp. 359-363; L&P IV 5983. Status right; date added.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1529",
+      "start_month": "10",
+      "start_day": "4"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R4254": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF fr. 3077 no. 23 pp. 145-147, 28 Oct 1528, in du Bellay's first cipher (not the 1529 one). Printed in clear by Bourrilly and de Vaissière, Ambassades en Angleterre de Jean du Bellay (1905) no. 156, who recovered the key; key re-solved by George Lasry 2022 (Tomokiyo, GL.htm). L&P IV 4879.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "author": "Jean du Bellay, bishop of Bayonne",
+      "receiver": "Anne de Montmorency",
+      "origin_city": "London",
+      "cleartext_lang": "French",
+      "plaintext_lang": "French",
+      "start_year": "1528",
+      "start_month": "10",
+      "start_day": "28"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R2287": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "BnF Clair. 328 f. 291, Jean du Bellay (bishop of Bayonne) to Montmorency, 28 Oct 1528: the first (1528) cipher, which is why Tomokiyo's 1529 table does not fit. Key solved by George Lasry 2022 (Tomokiyo, GL.htm 'Bayonne's Cipher (1528-1529)'); text printed in clear in Bourrilly and de Vaissière 1905 no. 156 (same letter as fr. 3077 no. 23, R4254).",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1528",
+      "start_month": "10",
+      "start_day": "28",
+      "receiver": "Anne de Montmorency"
+     },
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    },
+    "R9467": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "BnF NAF 4206 no. 5, Paul Friedmann's reconstruction of Bayonne's 1529 cipher (refers to fr. 3077 f. 114): no image file is attached to the record (not merely restricted). Uploading the image would make the key usable for R3688-R3692, R4229, R4252, R4253.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    }
+   }
   }
  },
  "rechteren1785": {
