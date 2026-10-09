@@ -1,6 +1,13 @@
 {
  "keys": [
-  {"id": "k-battier1686", "label": "Battier key — NA 1.10.29 inv. 1209", "kind": "archive key", "by": "Contemporary chancery", "year": 1686, "note": "Named Battier key, DECODE R2794; inventory citation 5345 corrected to 1209. Letter table and fifteen marked Dutch codebook blocks."},
+  {
+   "id": "k-battier1686",
+   "label": "Battier key — NA 1.10.29 inv. 1209",
+   "kind": "archive key",
+   "by": "Contemporary chancery",
+   "year": 1686,
+   "note": "Named Battier key, DECODE R2794; inventory citation 5345 corrected to 1209. Letter table and fifteen marked Dutch codebook blocks."
+  },
   {
    "id": "k-balbases",
    "label": "Balbases key (SEG 2559)",
@@ -1877,10 +1884,23 @@
     "caption": "Pinckney to Madison, 22 February 1803: Jacob Wagner's decode written over the code, \"some propositions\" over 1218. 1640. 1147. 248, \"would give them the most\" over 217. 301. 871. 1651. 718. Image: National Archives and Records Administration, RG 59, Despatches from US Ministers to Spain, vol. 6, microfilm M31 reel 7, frame 0348 (right page), via catalog.archives.gov NAID 188604008.",
     "page": "erving1807aug"
    }
+  },
+  {
+   "id": "k-hhsta-circular-1745",
+   "label": "Vienna French and German circular ciphers of 1745 (DECODE R1594-R1598)",
+   "kind": "DECODE key record",
+   "by": "Österreichisches Staatsarchiv",
+   "year": 1745,
+   "note": "HHStA Staatskanzlei Interiora, Chiffrenschlüssel Kt. 15 Fasc. 21 ff. 88-120: the German (R1594) and French (R1597 encipher, R1596 decipher) circular ciphers of 1745 issued to Rosenberg, Wasner, Esterházy, Colloredo and other envoys, a further circular decipher table (R1595, values 101-1499) and the instruction sheet (R1598). Values run to about 1500."
   }
  ],
  "links": [
-  {"key": "k-battier1686", "target": "battier1686", "how": "partial", "note": "Named key applied; two focus letters pass strict sense, volume partial; mark choices and contextual repairs remain uncertain."},
+  {
+   "key": "k-battier1686",
+   "target": "battier1686",
+   "how": "partial",
+   "note": "Named key applied; two focus letters pass strict sense, volume partial; mark choices and contextual repairs remain uncertain."
+  },
   {
    "key": "k-balbases",
    "target": "balbases1677",
@@ -3349,7 +3369,8 @@
   "schiner1516": "Read by Büchi and Schiess (1925) with keys they rebuilt for Schiner's correspondence and never printed; no key sheet is known, and the leaf is not digitised.",
   "indus": "undeciphered script: no key read it; published sign values (Parpola, Fairservis, Yajnadevam) tested against their own shuffles, not used",
   "ilten1697": "read from the contemporary interlinear decipherments; no key sheet for codes A or B is known",
-  "waldeck1744": "not deciphered: no key known; a two-part nomenclator not rebuildable from one letter"
+  "waldeck1744": "not deciphered: no key known; a two-part nomenclator not rebuildable from one letter",
+  "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
   {
@@ -3981,6 +4002,11 @@
    "key": "k-hhsta-kt14-keys",
    "target": "warsaw",
    "note": "R1392-R1406 checked 2 Oct 2026: none has an ordered numeric alphabet on 13-33 with letter nulls and codes 100-223"
+  },
+  {
+   "key": "k-hhsta-circular-1745",
+   "target": "esterhazy1744",
+   "note": "Checked 9 Oct 2026: values stop at 1355 (French) and 1500 (German); the 1744 Moscow page uses 1500-1737 and 3018-3297. Ruled out on value range. R1562, R1574, R1593, R1601, R1644 and R1691 were ruled out the same way."
   }
  ]
 }
