@@ -8933,6 +8933,94 @@
      }
     }
    }
+  },
+  "ferdinand3": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/ferdinand3.html",
+   "key": {
+    "file": "targets/ferdinand3/work/key1889.json",
+    "lang": "LA",
+    "how": "1635 Latin alphabet recovered here by aligning R1889 with the Cardinal-Infante's draft R954 (same shelfmark and date)"
+   },
+   "cite": "A. Aymeloglu, github.com/aaymeloglu/unsolved-ciphers, ferdinand-1635-1640 (18 Sept 2026) and ferdinand-1634 (23 Sept 2026): earlier readings of the same letters; this work independent of his key and text",
+   "fields": {},
+   "records": {
+    "R1887": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Ferdinand, King of Hungary (Stuttgart) to the Cardinal-Infante Ferdinand, 28 Oct 1634. New transcription attached (no DECODE transcription existed): 474 tokens. Cipher type is a nomenclator of vowel-series letter groups (xar-xur = ta-tu, ob-ub = mo-mu ...), numbers and graphic signs, not 'Homophonic substitution'. 88.4% of tokens read as sense; one 6-token word and a 16-token span unread. The record note 'same as the one used in the draft, dated 1634-11-16' is wrong twice: the draft R954 is dated 1635-11-16 and uses the 1635 alphabet, not this repertoire.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R1887.txt"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/ferdinand3/transcription/R1887.txt"
+     ],
+     "key": {
+      "file": "targets/ferdinand3/work/key1887.json",
+      "lang": "LA",
+      "how": "vowel-series nomenclator rebuilt here from the crib 'promovere haud dedignetur' (the last cipher passage repeats the clear words after it), crib-seeded annealing and context; partial"
+     },
+     "fields": {
+      "cipher_type": "nomenclator: vowel-series letter groups, numbers and graphic signs",
+      "plaintext_lang": "Latin",
+      "cleartext_lang": "Latin",
+      "origin_city": "Stuttgart"
+     }
+    },
+    "R1889": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Cardinal-Infante Ferdinand (Brussels) to Ferdinand, King of Hungary, 16 Nov 1635. Key recovered by aligning the cipher with the Cardinal-Infante's draft DECODE R954 (same date, enciphered passages underlined): a Latin alphabet of numbers and letters, a 0 n t z, b 8 9, c 7 x, d 3 4, e 6 m p, f 2 5, g 16 17, h 1 10, i 11 12 15 24 h, l 18 19, m d e, n 22 32, o a f l, p 20 g, q 30 33, r c i q, s 25 26 31, t 34 37, u 23 35 38 y, x 39. 450 of 463 tokens give the draft's letter, the rest copy slips. Corrections to D3605: '04 10' = 0 4 | 10; '2000m' = 20 c 0 m; '37731' = 37 7 31; 'i u' (p. 2, hiberna) = 1 11. Plaintext of the enciphered passages = the draft's underlined text.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R1889.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "cipher_type": "homophonic substitution (numbers and letters, 2-5 homophones per letter)",
+      "plaintext_lang": "Latin",
+      "cleartext_lang": "Latin"
+     }
+    },
+    "R1890": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Emperor Ferdinand III (Vienna) to the Cardinal-Infante Ferdinand, 22 Feb 1640. Same alphabet as R1889 plus an AEIOU-ordered syllabary, recovered from the ciphertext; all 782 tokens assigned (copy slips igitua, materi, expredse; last sign of p. 1 line 1 hidden by the dark edge). Corrections to D3604: every 'l/z?' = z; 'c/1? o/0?' = the group co; 'pla/u?' = plu; 'g^. a' = ga.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R1890.txt"
+      }
+     ],
+     "sent": false,
+     "key": {
+      "file": "targets/ferdinand3/work/key1890_extra.json",
+      "lang": "LA",
+      "how": "the 1635 alphabet (R1889, key1889.json) plus a syllabary in AEIOU order recovered here from the ciphertext: 40-44 la-lu, 45-49 na-nu, 50-54 ra-ru, pla-plu ta-tu, ap-up ca-cu, ca-cu ma-mu, ha-hu da-du, tas-tus ba-bu, an-un sa-su, au/eu/ou/uu pa-pu, me-mu fe-fu, ga/gi ha/hi, at/et/it/ot ga/ge/gi/go; 21 o, 36 x, b m, o a; ko do, fu mu, lx oc, li xi, 14 tz"
+     },
+     "fields": {
+      "cipher_type": "homophonic substitution with syllabary (numbers, letters and letter groups)",
+      "plaintext_lang": "Latin",
+      "cleartext_lang": "Latin"
+     }
+    },
+    "R954": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "Draft by the Cardinal-Infante Ferdinand, 16 Nov 1635, of the letter DECODE R1889. The receiver is Ferdinand, King of Hungary and Bohemia (later Ferdinand III; the letter addresses 'Serenissime Rex'), not Emperor Ferdinand II. Its underlined text is the plaintext of R1889.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "key": {
+      "none": "draft in clear; the encipherment in its margin uses the R1889 alphabet"
+     },
+     "fields": {
+      "receiver": "Ferdinand, King of Hungary and Bohemia (later Emperor Ferdinand III)"
+     }
+    }
+   }
   }
  },
  "rechteren1785": {

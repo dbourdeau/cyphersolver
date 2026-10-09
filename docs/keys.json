@@ -1,5 +1,9 @@
 {
  "keys": [
+  {"id": "k-brussels1635", "label": "Cardinal-Infante's Latin alphabet of 1635, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1635, "note": "Homophonic Latin alphabet of numbers 0-39 and letters, two to five signs per letter; recovered by aligning DECODE R1889 with the Cardinal-Infante's draft R954 (Brussels SEA 540). targets/ferdinand3/work/key1889.json."},
+  {"id": "k-vienna1640", "label": "Ferdinand III's syllabary of 1640, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1640, "note": "The 1635 alphabet plus syllables in AEIOU order (40-54 = l/n/r + vowel, letter groups showing the vowel: pla-plu = ta-tu, ap-up = ca-cu ...); recovered from the ciphertext of DECODE R1890 by a family anneal. targets/ferdinand3/work/key1890_extra.json."},
+  {"id": "k-stuttgart1634", "label": "King of Hungary's vowel-series nomenclator of 1634, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1634, "note": "Letter groups in vowel series (xar-xur = ta-tu, ob-ub = mo-mu ...), numbers and drawn signs; rebuilt from the crib 'promovere haud dedignetur' repeated in DECODE R1887, crib-seeded anneal and context; partial. targets/ferdinand3/work/key1887.json."},
+  {"id": "k-ernst-piccolomini", "label": "Zifra Piccolominea (Ferdinand III to Leopold Wilhelm), Thomas Ernst", "kind": "scholar's key", "by": "Thomas Ernst", "year": 1640, "found": 2017, "note": "Number pairs on the AEIOU motto, non-numeric signs = their stroke counts; Ernst's 2017 solution of Schmeh's Top 50 no. 27, letters of 1640/41 to Archduke Leopold Wilhelm."},
   {"id": "k-bayonne1529", "label": "Bayonne's cipher of 1529 (Jean du Bellay), re-derived here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1529, "note": "Homophonic symbol alphabet with word signs (roy, madame, bien, fault/faict, paix, vous); re-derived from the 22 June 1529 interlinear decipherment (BnF fr. 3078 pp. 23-27, DECODE R3689) and Le Grand 1688, extending Tomokiyo's table. targets/dubellay/NOTES.md section 2."},
   {"id": "k-tomokiyo-bayonne1529", "label": "Tomokiyo's table of Bayonne's cipher (1529)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1529, "note": "Cryptiana francis.htm, reconstructed from Clair. 333 ff. 24, 27 (June 1530)."},
   {"id": "k-worcester1527", "label": "Ghinucci (Bishop of Worcester) superscript syllabic key, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1527, "note": "Consonant-row signs with superscript syllable digits, code words and nulls; rebuilt from R8589 (L&P iv 5282), R8590 (interlinear) and R8476 (State Papers VI 552-556), extended in R8613. targets/superscript/key.tsv."},
@@ -1930,6 +1934,10 @@
   {"id": "k-brancoveanu-polish", "label": "Brancoveanu chancellery key for Polish letters (a=19, b=60 ...)", "kind": "scholar's key", "by": "A. Mares 1987; M. W. Kaczka 2012", "year": 1709, "found": 1987, "note": "Simple numerical substitution with a few word codes (900 = August, 800 = Turcy), used by Constantin Brancoveanu's and Constantin Cantacuzino's chancellery for letters to Sieniawski, 1709-1714; printed by Kaczka, Danubius XXX (2012), n. 21."}
  ],
  "links": [
+  {"key": "k-brussels1635", "target": "ferdinand3", "how": "rebuilt from", "note": "recovered from the draft R954 aligned with R1889; 450 of 463 tokens give the draft's letter"},
+  {"key": "k-brussels1635", "target": "ferdinand3", "how": "read unchanged", "note": "the 1635 alphabet applied unchanged to R1890 covers 424 of 784 tokens; the 1640 syllabary was built on it"},
+  {"key": "k-vienna1640", "target": "ferdinand3", "how": "rebuilt from", "note": "syllabary recovered from R1890's ciphertext on top of the 1635 alphabet; all 782 tokens assigned"},
+  {"key": "k-stuttgart1634", "target": "ferdinand3", "how": "rebuilt from", "note": "rebuilt from R1887's repeated clear phrase as crib; 88.4% of tokens read as sense"},
   {"key": "k-bayonne1529", "target": "dubellay", "how": "rebuilt from", "note": "key re-derived from the 22 June 1529 interlinear; deciphered lines 0-6 of the 16 June 1529 block (fr. 3078 p. 21) before Scheurer's printed text was found, and checked on the 17 Oct letter"},
   {"key": "k-tomokiyo-bayonne1529", "target": "dubellay", "how": "partial", "note": "starting table; extended with B = o, word signs bien, fault, paix"},
   {"key": "k-worcester1527", "target": "superscript", "how": "rebuilt from", "note": "R8613 (22 July 1527) deciphered 797/814 signs with the key rebuilt from the three sibling decipherments"},
@@ -2986,6 +2994,9 @@
   }
  ],
  "source_links": [
+  {"source": "s-bourdeau", "key": "k-brussels1635"},
+  {"source": "s-bourdeau", "key": "k-vienna1640"},
+  {"source": "s-bourdeau", "key": "k-stuttgart1634"},
   {"source": "s-bourdeau", "key": "k-bayonne1529"},
   {"source": "s-tomokiyo", "key": "k-tomokiyo-bayonne1529"},
   {"source": "s-bourdeau", "key": "k-worcester1527"},
@@ -3429,6 +3440,7 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-ernst-piccolomini", "target": "ferdinand3", "note": "does not fit R1889/R1890: their numbers run 0-54 with single letters and letter groups, a different system"},
   {"key": "k-r5256", "target": "superscript", "note": "Gilino R8572: same barred-letter family, but the syllable rows do not match"},
   {"key": "k-r8766-torcy-petkum1709", "target": "geertruidenberg", "note": "Torcy 3 Apr 1710: de = 43/140 in R8766, the letter has 43 once and 140 never; 42 (second commonest) = correspondance. Not the same assignment"},
   {"key": "k-r8767", "target": "geertruidenberg", "note": "de = 215 absent from Torcy's letter; English-court nomenclature; one-part design does not fit"},

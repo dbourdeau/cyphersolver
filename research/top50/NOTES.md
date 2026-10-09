@@ -26,7 +26,7 @@ entry that has sat unmarked for nine years.
 | 42 | Bonus 22 (M-209) | **Solved 20 January 2018 by George Lasry**, confirmed by the challenge author Jean-François Bouchaudy. It was the last open one of his forty M-209 problems; all forty are now solved |
 | 35 | Cryptograms from the crypt | **Solved August 2019 by Richard Bean.** A book cipher on Francis Thompson's *The Hound of Heaven*, found by sweeping ~37,000 Gutenberg texts. Plaintext: "A number of successful experiments of this kind would give strong evidence for survival." Self-verifying, uncontested |
 | 32 | The silk dress cryptogram | **Solved 2023 by Wayne Chan** (*Cryptologia* 48(5), 2024). Not a personal cipher at all: US Army Signal Service telegraphic weather code, pinned to a single date, **27 May 1888**, with stations including Bismarck, Winnipeg and Calgary. Why the sheets were in the dress is still unknown |
-| 27 | Ferdinand III's letters | **Solved October 2017 by Thomas Ernst**, in the comment thread of the Top 50 post itself. A digit-pair code on the Habsburg **AEIOU** motto, with each non-numeric sign encoding its count of strokes or semicircles |
+| 27 | Ferdinand III's letters | **Solved October 2017 by Thomas Ernst**, in the comment thread of the Top 50 post itself. A digit-pair code on the Habsburg **AEIOU** motto, with each non-numeric sign encoding its count of strokes or semicircles. These are the letters to Archduke Leopold Wilhelm (1640/41), not the Brussels letters of `targets/ferdinand3/` (see section 2) |
 | 15 | The Rilke cryptogram | **Explained February 2021** (Tobias Schrödel and Schmeh; Floe Foxon, *Cryptologia* 2022): not a cipher. The four-letter groups are adjacent keys on a German QWERTZ typewriter — Morse practice material |
 | 14 | Codex Seraphinianus | **Not a cipher, on the author's own statement** (Serafini, Oxford, 11 May 2009): the script is asemic. Only the base-21 page numbering was ever decoded |
 | 21 | The YOG'TZE case | **Closed as a case, April 2025.** Hagen police and prosecutors closed the death as a single-vehicle accident; investigators doubt the slip of paper ever existed. Seven characters, never a cipher |
@@ -34,11 +34,16 @@ entry that has sat unmarked for nine years.
 
 ## 2. Corrections this forces on our own tracker
 
-**Ferdinand III is stale and wrong.** `TARGETS.md` item 16 carries it as *"skipped (DECODE login)"*
-with a `targets/ferdinand3/` directory. It was solved by Thomas Ernst in **October 2017**, nine years ago,
-and the mechanism is published. It should be marked found-solved, not skipped. This is the second
-time a target has turned out to be already solved in the open literature, after the Barney dictionary
-code, and it is an argument for checking the solver community before the archive.
+**Ferdinand III: the Top 50 letters are not our target (corrected 9 Oct 2026).** This paragraph used to say
+that `targets/ferdinand3/` (then `TARGETS.md` item 16, *"skipped (DECODE login)"*; TARGETS.md was retired on
+2 Oct 2026) had been solved by Thomas Ernst in October 2017. That was wrong. Ernst's solution ("Zifra
+Piccolominea", Klausis Krypto Kolumne, 7 Oct 2017) concerns the Top 50 letters: Ferdinand III to his brother
+Archduke Leopold Wilhelm, 20 July 1640, and a 1641 letter from Hildegard Ernst's 1996 chapter. Our target is a
+different correspondence, Ferdinand (King of Hungary, then Emperor) and the Cardinal-Infante Ferdinand,
+Brussels SEA 540 (DECODE R1887, R1889, R1890, 1634-1640), and Ernst's key does not fit it. Those letters were
+first read by Andrew Aymeloglu (github.com/aaymeloglu/unsolved-ciphers, Sept 2026) and independently here; see
+`targets/ferdinand3/NOTES.md` and the write-up `docs/ferdinand3.html`. The lesson stands in a narrower form:
+check the solver community before the archive, and check that a published solution is for the same documents.
 
 **The gold bars get independent corroboration.** Our `targets/goldbar/` result was statistical: 21 of 26
 letters occur exactly ten times, chi-squared 1.251 on 25 degrees of freedom, P = 9.3 × 10⁻¹³, so the

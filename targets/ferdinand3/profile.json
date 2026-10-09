@@ -1,0 +1,374 @@
+{
+ "schema_version": 1,
+ "target": "ferdinand3",
+ "title": "Ferdinand, King of Hungary (Ferdinand III) <-> Cardinal-Infante Ferdinand, 1634, 1635, 1640 (DECODE R1887, R1889, R1890; draft R954)",
+ "documents": [
+  {
+   "id": "R1887",
+   "shelfmark": "Brussels, Archives générales du Royaume, Secrétairerie d'État allemande, inv. 540; DECODE R1887",
+   "date": "28 Oct 1634",
+   "year": 1634,
+   "country": "Holy Roman Empire / Spanish Netherlands",
+   "route": "Stuttgart -> Brussels (Ferdinand, King of Hungary, to the Cardinal-Infante)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment or draft. The last cipher passage repeats the clear words that follow it (promovere haud dedignetur), used as crib. Reading published by others: aaymeloglu/unsolved-ciphers ferdinand-1634 (23 Sept 2026, partial).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 474,
+    "distinct": 119,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/R1887_tokens.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE PNGs I9345-I9347 (5472x3648, page rotated 90 deg), per-line crops; transcription/R1887.txt",
+    "image_quality": "good",
+    "notes": "graphic signs labelled ad hoc (header of R1887.txt); superscript marks kept; some sign identities uncertain (his/lis, ltu, #, o/)."
+   },
+   "read": "read in part",
+   "pages": 3
+  },
+  {
+   "id": "R1889",
+   "shelfmark": "Brussels, Archives générales du Royaume, Secrétairerie d'État allemande, inv. 540; DECODE R1889",
+   "date": "16 Nov 1635",
+   "year": 1635,
+   "country": "Holy Roman Empire / Spanish Netherlands",
+   "route": "Brussels -> Ferdinand, King of Hungary (Cardinal-Infante to his cousin)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The draft DECODE R954 (same shelfmark, same date): full Latin text with the enciphered passages underlined and a margin encipherment with glosses.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 463,
+    "distinct": 50,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/R1889_tokens.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DOC_R1889_D3605 (XZ, Jan 2021), re-split against the image",
+    "corrections": 4,
+    "image_quality": "good",
+    "notes": "04 10 = 0 4|10; 2000m = 20 c 0 m; 37731 = 37 7 31; i u = 1 11"
+   },
+   "read": "read",
+   "pages": 2
+  },
+  {
+   "id": "R1890",
+   "shelfmark": "Brussels, Archives générales du Royaume, Secrétairerie d'État allemande, inv. 540; DECODE R1890",
+   "date": "22 Feb 1640",
+   "year": 1640,
+   "country": "Holy Roman Empire / Spanish Netherlands",
+   "route": "Vienna -> Brussels (Ferdinand III to the Cardinal-Infante)",
+   "language": "Latin",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No plaintext witness. Reading published by others: aaymeloglu/unsolved-ciphers ferdinand-1635-1640 (18 Sept 2026).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 782,
+    "distinct": 108,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/R1890_tokens.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DOC_R1890_D3604 (XZ, Jan 2021), amended against the image",
+    "corrections": 4,
+    "image_quality": "good",
+    "notes": "l/z? = z (7x), c/1? o/0? = co, pla/u? = plu, g^.a = ga"
+   },
+   "read": "read",
+   "pages": 2
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "1635/1640: homophonic Latin alphabet of two-digit numbers and single letters (2-5 homophones per letter, R1889); 1640 adds a syllabary in AEIOU series: numbers 40-54 (l/n/r + vowel) and letter groups that show the vowel openly (pla..plu = ta..tu, ap..up = ca..cu, ...). 1634: a different repertoire of vowel-series letter groups (xar..xur = ta..tu, ob..ub = mo..mu, ...), numbers and graphic signs.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 250,
+  "diacritics": {
+   "used": true,
+   "note": "1634: superscript marks (9, v, x, o) change or double a sign (13^9 = ll)"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 5,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": 7
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial",
+  "doubled_letters": "written double (1635); superscript 9 doubles (1634)",
+  "sibling_key": "R1889's alphabet (from the draft R954) is the base of R1890; R1887 shares only the vowel-series principle.",
+  "notes": "DECODE gives R1887 as homophonic; it is a syllabic nomenclator."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Andrew Aymeloglu, github.com/aaymeloglu/unsolved-ciphers: ferdinand-1635-1640 (R1889, R1890 read, 18 Sept 2026) and ferdinand-1634 (R1887 partial, 23 Sept 2026); Tomokiyo's Unsolved list marks them Two of Three Solved. Schmeh Top 50 #27 / Thomas Ernst 2017 concern other letters (Ferdinand III to Leopold Wilhelm). Exposure: Found 30 Sept 2026, not opened. On 9 Oct, after the failed ciphertext-only R1890 run, his README and SOURCES.md were read: the README says the 1640 additions to the 1635 alphabet are mostly syllables; SOURCES.md points to the draft R954 (already on our saved DECODE record of R1889). No key value or reading came from him: KEY.md, the READING files and ferdinand-1634/ were opened only after our recovery, for comparison. The R1890 syllabary recovery was therefore made knowing that the extra symbols are mostly syllables.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Project-level: DECODE login cookie supplied; target posed by the orchestrating session. No target-specific intervention.",
+  "tools": [
+   "targets/ferdinand3/work/align1889.py",
+   "targets/ferdinand3/work/fam1890.py",
+   "targets/ferdinand3/work/fam1887.py",
+   "targets/ferdinand3/work/hsolve.py",
+   "lang la",
+   "targets/ferdinand3/work/gap1887.py"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 3,
+  "first_date": "2026-09-15",
+  "last_date": "2026-10-09"
+ },
+ "solution": [
+  {
+   "date": "2026-09-15",
+   "kind": "access",
+   "what": "DECODE R1887/R1889/R1890 images and transcriptions need authentication; Brussels archive not online. Skipped.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-30",
+   "kind": "literature search",
+   "what": "Found https://github.com/aaymeloglu/unsolved-ciphers with readings of all three letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "access",
+   "what": "DECODE login cookie: fetched all 8 images of R1887/R1889/R1890, DECODE transcriptions D3605 (R1889) and D3604 (R1890), record pages R953-R955, R1885-R1892.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "literature search",
+   "what": "Schmeh Top 50 #27 / Thomas Ernst 2017 'Zifra Piccolominea' checked: concerns Ferdinand III to Archduke Leopold Wilhelm (20 July 1640 and 1641), not these Brussels letters; Ernst's key does not fit R1889/R1890. research/top50 claim is wrong for this target.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "solver",
+   "what": "R1890 ciphertext-only homophonic anneal (symbol->letter, la 5-gram + frequency term), 16x4M and 60x10M restarts; control on synthetic 786-token Latin homophonic recovered 99.7%.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "hypothesis",
+   "what": "R1890 letter groups = their own vowel (pli=i, op=o ...).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "sibling key",
+   "what": "Draft R954 (pointed to on the R1889 record): underlined plaintext aligned word by word with R1889's cipher; 74 words, 463 tokens; letter key with 2-5 homophones per letter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "solver",
+   "what": "R1890 with R1889 key fixed: free-value anneal of unknown symbols over letters/bigrams/trigrams suggested numbers in vowel series (48=no, 51=re, 53=ro ...).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "solver",
+   "what": "R1890 family anneal: each letter-group/number family = one consonant + AEIOU vowel; all top restarts converge on the same syllabary (40s=l/n/r+v, pl?=t+v, ?p=c+v, c?=m+v, h?=d+v, t?s=b+v, ?n=s+v, ?u=p+v, m?=f+v, ?t=g+v, g?=h+v).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "reading",
+   "what": "R1890 completed by context (ko=do, fu=mu, lx=oc, li=xi, 14=tz) and image checks of DECODE's uncertain signs (l/z?=z, c/1?o/0?=co, pla/u?=plu); all 782 tokens assigned; Latin text read in full.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "verification",
+   "what": "After our recovery, compared with aaymeloglu/unsolved-ciphers KEY.md and READING-1640.md (18 Sept 2026): same syllabary, same singleton values, same Latin.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "transcription",
+   "what": "R1887 transcribed from the images (no DECODE transcription): 30 lines, 474 tokens, graphic signs labelled.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "solver",
+   "what": "R1887 family anneal (consonant + shown vowel per letter-group family, rest free): collapsed to bare vowels; with consonants forced, Latin-like but not converged.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "crib",
+   "what": "R1887 last cipher passage = the following clear words promovere haud dedignetur; fixes 5 families and 11 signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "solver",
+   "what": "R1887 anneal with the crib fixed converges on the remaining families (f?r=c+v, ?c=v+s, p?n=l+v, s?l=b+v, t?s=s+v, l?s=g+v, ?r=f+v) and most signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "reading",
+   "what": "R1887 read word by word with image re-checks (align1887.txt): 88.4% of tokens as sense, 93.9% with conjectures; a 6-token word and a 16-token span before negotium open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "solver",
+   "what": "LM span search over value options for the open 16-token R1887 span (span1887.py): fragments only.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "verification",
+   "what": "R1887 reading compared after the fact with aaymeloglu ferdinand-1634: same families, same open spans; we add suorum and the conjectures ausus quos, eventus, quam ea.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "literature search",
+   "what": "Tomokiyo cryptiana unsolved list: Two of Three Solved (Aymeloglu, 19 Sept 2026). Hildegard Ernst MIOG 100 (1992) on these ciphers not reachable online.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "solver",
+   "what": "Last attempt on the two open R1887 pieces (crisdus, 16-token span before negotium): every attested value per sign, group vowels fixed, pruned to la-gutenberg word segmentations and ranked by the la LM in context (gap1887.py); crops re-viewed. 571 and 1,704 candidates, none fits the sentence.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "literature search",
+   "what": "research/top50/NOTES.md and README corrected: Ernst 2017 (Top 50 #27) concerns Ferdinand III to Leopold Wilhelm 1640/41, not the Brussels letters.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "R1889's alphabet was recovered by aligning it with the draft R954; R1890's syllabary was then recovered from its own ciphertext (family anneal on top of the R1889 alphabet); R1887's repertoire was rebuilt from an in-letter crib (the cipher repeats the following clear words) plus annealing and context.",
+  "parts": [
+   {
+    "label": "1635 letter",
+    "records": "R1889",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "complete",
+    "basis": "draft R954 aligned word by word; 450/463 tokens (97.2%) give the draft letter, the 13 others copy slips in words the draft fixes"
+   },
+   {
+    "label": "1640 letter",
+    "records": "R1890",
+    "method": "key recovered from ciphertext-only",
+    "extent": "complete",
+    "basis": "R1889 alphabet fixed, AEIOU-family syllabary annealed with the la model; 782/782 tokens assigned"
+   },
+   {
+    "label": "1634 letter",
+    "records": "R1887",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "crib from the repeated clear phrase promovere haud dedignetur, crib-seeded family anneal, context; 88.4% of tokens read as sense (93.9% with conjectures); a 6-token word and a 16-token span open after a last dictionary + LM pass"
+   }
+  ],
+  "first_break": false,
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "work/measure1889.py, R1890 token count, work/measure1887.py: (450+779+419)/(463+782+474)",
+  "fraction_read": 0.959,
+  "codes_open": {
+   "open": 9,
+   "total": 250,
+   "tokens_open": 22
+  },
+  "verification": [
+   "independent clear copy",
+   "key confirms",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "R1887 P2.02 crisdus (6 tokens)",
+    "blocker": "open-codes",
+    "detail": "every sign has a value (45 = s) but the word does not resolve; dictionary + LM pass (gap1887.py) finds no fitting word"
+   },
+   {
+    "item": "R1887 P2.14-15 span before negotium (16 tokens)",
+    "blocker": "open-codes",
+    "detail": "singletons 4) h^ga e~, 4 = m/n/s; LM span search and dictionary + LM pass (span1887.py, gap1887.py) give fragments only"
+   },
+   {
+    "item": "R1887 conjectures ausus quos, eventus, partibus, quam ea",
+    "blocker": "open-codes",
+    "detail": "singleton signs ltu, #, v/, 146, X, c/"
+   },
+   {
+    "item": "R1887 trailing signs",
+    "blocker": "too-short",
+    "detail": "terminal fillers"
+   },
+   {
+    "item": "R1890 obscured last sign of p.1 line 1",
+    "blocker": "illegible",
+    "detail": "dark right edge; orato[r]"
+   }
+  ],
+  "notes": "R1889 and R1890 complete (copy slips igitua, materi, expredse in R1890); R1887 partial. Independent of the Aymeloglu reading except that his README (1640 additions mostly syllables) and SOURCES.md (pointer to R954) were read before the R1889/R1890 work; see conditions.prior_solution.notes. The research/top50 claim that Ernst 2017 solved these letters was wrong and is corrected."
+ }
+}
