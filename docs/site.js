@@ -308,5 +308,14 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     const on=[...legend.querySelectorAll('.lg[aria-pressed=true]')].map(x=>x.dataset.cat);
     legend.classList.toggle('filtering',on.length>0);
     pts.forEach(p=>p.classList.toggle('off', on.length>0 && !on.includes(p.dataset.cat)));
+    // the kept dots fall to the axis: re-stack them in the lowest free lanes (same greedy rule as _build_stats.py)
+    const lanes=[];
+    pts.map(p=>{ const c=p.querySelector('.core'); return {p, x:+c.getAttribute('cx'), y:+c.getAttribute('cy'), base:+c.getAttribute('cy')+parseFloat(p.style.getPropertyValue('--dy'))}; })
+      .sort((a,b)=>a.x-b.x).forEach(d=>{
+        d.p.style.setProperty('--wave',(d.x/1000*260|0)+'ms');
+        if(!on.length || d.p.classList.contains('off')){ d.p.style.removeProperty('--fall'); return; }
+        let li=lanes.findIndex(last=>d.x-last>=11); if(li<0){ li=lanes.length; lanes.push(0); } lanes[li]=d.x;
+        d.p.style.setProperty('--fall',(d.base-9-li*13-d.y)+'px');
+      });
   });
 })();

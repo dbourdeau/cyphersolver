@@ -25,6 +25,7 @@ SECTIONS = [(M.KEY[m], M.SECTION[m]) for m in M.METHODS] + [('active', '### In p
 # Rows whose date carries no year but can be bracketed: counted at the latest possible year, so the
 # years-of-silence sum is never overstated. Egmond: to the grand maître (Montmorency, from 1526); Charles died June 1538.
 YEAR_BRACKET = {'Charles of Egmond': 1537}
+OFF_TIMELINE = ('Kaliningrad bottle post',)  # counted in the ledger, not drawn on the timeline (BC/BCE rows are left off by parse_year)
 OVERRIDE = {}  # README row text -> category, for rows filed in a table that does not match their outcome
 LABEL = {M.KEY[m]: M.LABEL[m] for m in M.METHODS}
 LABEL.update(na='not a cipher or not reachable', active='in progress')
@@ -36,6 +37,8 @@ COLOR = {  # CSS variables from style.css
 
 def parse_year(s):
     s = s.strip()
+    if re.search(r'\bBC(E)?\b', s):
+        return None                                       # Linear A, Indus: off the 1400-2000 timeline
     m = re.search(r'(\d{4})', s)
     if m:
         y = int(m.group(1))
@@ -86,7 +89,7 @@ def load():
     return items
 
 def timeline_svg(items):
-    dated = [it for it in items if it['year']]
+    dated = [it for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
     x0, x1 = min(1480, min(it['year'] for it in dated) // 50 * 50 - 10), 2000
     c0 = (x0 // 100 + 1) * 100          # first century line on the axis
     W, top, lane_h, r = 1000, 34, 13, 4.6
@@ -151,7 +154,7 @@ def build(items):
     read = [it for it in got if it['ext'] == 'complete' and it['year']]
     silence = sum(YEAR_NOW - it['year'] for it in read)
     oldest = min(read, key=lambda d: d['year'])
-    span = [it['year'] for it in items if it['year']]
+    span = [it['year'] for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
     order = ['ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph', 'active', 'notsolved', 'na']
     bar = ''.join(
         f'<span class="seg {c}" style="flex:{n[c]};background:{COLOR[c]}" title="{n[c]} {LABEL[c]}"></span>'
