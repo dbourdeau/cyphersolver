@@ -5311,21 +5311,23 @@
   "desmarets1710": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/desmarets1710.html",
    "key": {
-    "none": "no key found on DECODE (French keys 1700-1715 checked) or in print"
+    "file": "targets/desmarets1710/tomokiyo_decode.py",
+    "lang": "French",
+    "how": "Tomokiyo's 1710 code table (cryptiana.web.fc2.com/code/louisxiv.htm, 11B), transcribed from its image; applied to the 471 groups read as one stream"
    },
-   "cite": null,
+   "cite": "S. Tomokiyo, Cryptiana, Cipher Used in Louis XIV's Reign, section 11B (table built from Alexandre Pillon's alignment); L'Intermediaire des curieux 50 (1904); GitHub issue dbourdeau/cyphersolver#28 (yuanyi-350)",
    "fields": {
-    "cipher_types": "nomenclator (numerical code, ~570 values), interleaved line by line with clear French",
-    "cleartext_lang": "French"
+    "cipher_types": "nomenclator (numerical code of ~570 values: letters with homophones, syllables, a few words), read as one continuous stream",
+    "cleartext_lang": "French",
+    "plaintext_lang": "French"
    },
    "records": {
     "R10198": {
      "decode_status": "Partially decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not read. The French lines between the figure lines are clear text (the letter's unencrypted part, on the Geertruidenberg talks), not a decipherment of the figures: no consistent group-to-text mapping under four alignment models. The code part (471 groups, 1-568) is unread. Transcription attached.",
-     "reading": null,
+     "proposed": "Decrypted",
+     "note": "Read with Tomokiyo's table (Cryptiana 11B, from Alexandre Pillon's alignment): 456 of 471 groups (96.8%) attested, 12 group types not in the table. The figure lines must be concatenated; the clear text is written out of sync with them and the last 22 figure lines carry the decipherment with no French above (printed in L'Intermediaire des curieux 50, 1904). Pointed out by yuanyi-350 in issue #28 of dbourdeau/cyphersolver. Reading attached.",
+     "reading": "decode_updates/decryptions/R10198.txt",
      "sent": false,
-     "reading_not_needed": true,
      "transcription": [
       "targets/desmarets1710/transcription.txt"
      ]
