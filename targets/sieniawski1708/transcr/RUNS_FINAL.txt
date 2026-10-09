@@ -1,0 +1,110 @@
+# RUNS_FINAL: every 2-digit run of R7486-R7500 re-read from the full-resolution images against the key
+# key: a=7-9 b=10-12 c=13-15 d=16-18 e=19-21 f=22-24 g=25-27 h=28-30 i=31-33 k=34-36 l=37-39 m=40-42 n=43-45
+#      o=46-48 p=49-51 q=52-54 r=55-57 s=58-60 t=61-63 u=64-66 w(=v/w)=67-70 79=z
+# format: record page:line | numbers | decoding | word-divided reading in context | ok / doubtful: why
+R7486 P1:3 | 34 20 32 43 25 64 61 62 21 59 46 40 19 43 | keinguttesomen | "dieser glaubet sey kein guttes omen" | ok (was 30, 40 40)
+R7486 P1:4 | 58 19 32 44 21 | seine | "alhier durch o 190 g. seine 502" | ok
+R7486 P1:5 | 25 66 61 58 67 47 55 | gutswor | "oj gut s(?) wor ... 181 L 187" | doubtful: digits as written; no clean word ("gutes wort"? letters missing)
+R7486 P1:5-6 | 37 7 10 48 56 32 56 19 43 | laboriren | "187 laboriren" (run continues into l.6) | ok
+R7486 P1:6-7 | 28 19 55 56 58 21 45 23 24 61 28 9 62 25 9 57 | herrsenffthatgar | "o. herr Senfft hat gar 3. 181 abgesezt" | ok (28 9 62 / 25 9 57 at line ends belong to the run)
+R7486 P1:7 | 9 12 27 21 60 21 79 61 | abgesezt | "181 abgesezt" (abgesetzt) | ok
+R7486 P1:7-8 | 58 31 15 28 25 19 58 14 28 37 8 26 19 43 | sichgeschlagen | "L e 190 sich geschlagen" | ok (was 20; recipient's superscripts s a k l a over the run)
+R7486 P1:23 | 58 46 37 78 28 31 19 55 67 31 19 37 13 8 10 9 | sol?hierwielcaba | "es soll hier viel caba-" | doubtful: 78 clearly written where soll needs 38/39; 28 (hier) uncertain, was 25 21; 21->31 twice
+R7486 P1:24 | 38 21 45 | len | "-len" (cabalen, continues l.23 after .9.) | ok
+R7486 P1:24 | 70 32 20 17 19 55 | wieder | "wieder 181" (70=w) | ok
+R7486 P1:24-25 | 67 48 55 25 19 30 7 10 61 29 7 11 20 45 60 48 | worgehabthabenso | "vorgehabt haben, so" | ok
+R7486 P1:25-26 | 18 21 58 59 32 51 32 55 19 62 | dessipiret | "187 dessipiret" (dissipirt) | ok (was 51; recipient's p r e t over 51 55 19 62)
+R7486 P1:26-27 | 60 46 38 37 69 32 27 38 9 64 22 20 19 43 18 20 45 | sollwiglaufeenden | "3. soll wig lauf-enden"? | doubtful: digits checked twice; superscripts a u f over 9 64 22; perhaps "zuwiderlauffenden" with letters dropped
+R7486 P1:27 | 70 31 19 17 20 56 | wieder | "f. 101. wieder" | ok (was 21)
+R7486 P1:28 | 25 44 7 16 20 | gnade | "c. gnade" | ok
+R7486 P1:28-P3a:1 | 34 46 41 42 19 45 8 12 21 57 46 28 43 19 | kommenaberohne | "e. kommen. aber ohne 516" | ok (P3a starts 46 not 40)
+R7486 P3a:1 | 31 60 | is | "183 is[t]? f. 83" | doubtful: only two letters, 183 is a code
+R7486 P3a:12-14 | 55 19 31 13 28 58 67 32 14 20 15 7 43 61 79 37 19 55 | reichswicecantzler | "o. Reichsvicecantzler" | ok (was 21, 39)
+R7486 P3a:14 | 59 47 | so | "so ~~1?5~~ 134 zu notificiren" | ok
+R7486 P3b:3 | 18 19 43 | den | "a bel agio 3. den 508" | ok
+R7486 P3b:23 | 59 47 | so | "damit oj so 181" | ok
+R7486 P3b:24 | 15 48 45 62 7 31 55 | contair | "181 contair erhollen" (contrair?) | doubtful: digits clear (62 delta-6), an r seems omitted
+R7486 P3 margin | 7 22 24 7 32 55 19 43 | affairen | "monopolium 3. affairen" | ok (not re-imaged; decodes cleanly)
+R7487 P1:5 | 37 15 19 61 28 | lceth | "wegen des lceth [Graf?] gemeldet" | doubtful: digits clear on re-read (raw 3715196128); no word; perhaps a name, or letters transposed
+R7487 P1:16 | 32 43 64 9 59 32 4[hole]4 | inuasi(o)(n) | "wegen der Invasion d. 314" | ok (u for v; the hole takes the second digit of o and the first of n: 4?=o 46-48, ?4=n 44)
+R7488 P1:10 | 16 19 31 | die | "Es sey 181 die präsumption" | ok (was 21)
+R7488 P1:12 | 13 46 55 57 20 59 49 46 45 18 21 45 79 | correspondenz | "o. correspondenz so no 526" | ok
+R7488 P3a:2-3 | 40 46 55 25 19 43 | morgen | "auf morgen," | ok
+R7488 P3a:3 | 46 17 56 | odr | "oder" | ok (was 15; e left out by the writer)
+R7488 P3a:3-4 | 64 10 21 57 42 46 27 21 45 | ubermogen | "übermo[r]gen festgestellet" | ok (writer omitted the second r; was 64?|67)
+R7488 P3a:6 | 49 37 20 58 59 21 44 | plessen | "Plessen aber eine 521" (name) | ok
+R7488 P3a:8 | 20 32 44 20 15 46 45 67 48 77 | eineconwoy | "150 Ihm eine Convoy" | ok (77=y; 3 of 32 overwritten but legible)
+R7489 P3a:5 | 60 00 | (not a run) | "ben 6000 [Mann?] gegen 25 [m]" is the number 6000 | ok: not cipher
+R7490 P5b:25 | 19 31 43 20 44 | einen | "207. m einen 509" | ok (not re-imaged)
+R7490 P2:1 | [9?] 38 39 19 59 | (a)lles | "alles 1. e 181 502 zu differiren" | doubtful: first sign y-like, probably a 9 (a); 59 not 50
+R7490 P2:6 | 46 25 31 37 67 76 | ogilwy | "wie o. Ogilvy so 452" | ok (76=y; name of the Russian general)
+R7490 P2:8-9 | 16 19 [~~40~~] 10 7 55 46 45 34 37 20 31 43 10 64 55 25 7 37 29 32 19 57 | debaronkleinburgalhier | "de Baron Kleinburg alhier. o. aber alles" | ok (40 struck by the writer)
+R7490 P2:16-17 | 40 7 37 19 67 46 37 31 | malewoli | "wie b. malevoli sehr" | ok (was 57?|67)
+R7490 P3:2 | 10 19 | be | "3. 289 be ooo gestöret"? | doubtful: two letters only, may belong to 289 or be a separate sign
+R7490 P3:2-3 | 16 7 61 40 58 20 76 31 29 42 | datmseyihm | "allein i. dat m. seÿ ihm" | doubtful: digits clear (40 with a tick, 76 dotted = ÿ); "da[s] m[an] seÿ ihm"? abbreviation or slip
+R7490 P3:3 | 8 [oo] 59 42 64 59 14 9 66 | a[oo]smuscau | "oj a. [oo] s Muscau geschrieben" = "aus Moscau geschrieben" | doubtful: the u of aus is written oo (two plain o, cf. ooo sign), not 64-66
+R7490 P3:4-5 | 59 31 13 28 17 21 60 29 9 37 11 21 55 12 18 42 64 29 20 45 | sichdeshalberbdmuhen | "Er glaubte aber ooo 206 sich deshalber be[m]ühen möchte" | doubtful: 18 clearly written where bemühen needs 19 (writer's slip); "ll" above 64 = umlaut/gloss
+R7490 P3:18 | 13 47 45 22 31 18 19 45 15 21 | confidence | "bey Ihm oo confidence so" | ok
+R7490 P3:20 | 31 67 79 46 | iwzo | "gehallten 3. 1. iwzo 187" | doubtful: digits as written (small "oi"/"bi" above 67); no word
+R7490 P3:22 | 61 | t | "28. o 61. 3." isolated numbers, not a run | doubtful: isolated
+R7490 P3:23 | 7 67 31 59 20 45 | awisen | "mit Avisen 3. ihm sehr" | ok (was 64?|67, 19)
+R7490 P3:23 | 31 28 41 | ihm | "3. ihm sehr" | ok
+R7491 P3a:28-P3b:1 | 58 19 31 43 10 | seinb | "will aber sein 10. ~~[?]~~ 515 f e. 349 auf seinem Versicheren" | doubtful: run crosses the page; "sein" clear, the trailing 10. (b) may start a word replaced by the struck group / 515
+R7491 P3b:4 | 11 8 45 | ban | "o. Ban 3. 231 233 dürffte" (the Ban, of Croatia?) | ok (two dots over 11 are a mark, not a digit)
+R7491 P3b:16-17 | 60 21 33 45 19 55 49 56 46 50 47 58 31 61 32 48 44 | seinerproposition | "134. c. seiner proposition all" | ok (not re-imaged; decodes cleanly)
+R7491 P2:7 | 25 19 16 20 45 14 34 20 | gedencke | "81. fol. gedencke. das" | ok (not re-imaged)
+R7492 P1:23 | 58 19 31 45 20 55 | seiner | "seiner 519. 3. 355" | ok (not re-imaged)
+R7493 P1:4 | 16 19 43 | den | "dass der 0. 208. den 258" | ok (not re-imaged)
+R7493 P1:5 | 58 19 31 45 | sein | "vor 2. Monaten 5 83. sein" | ok (5 and 83 stand outside the run)
+R7493 P1:7 | 25 19 37 17 20 55 | gelder | "Commendirung gelder entschuldiget" | ok
+R7493 P1:15 | 61 31 61 62 64 37 | tittul | "das 166. Tittul" | ok
+R7493 P1:22 | 7 64 58 | aus | "mutante 526. (aus) so" | ok (not re-imaged)
+R7493 P1:24-25 | 17 32 20 44 21 55 | diener | "ein [?] diener 258" | ok (3?2 is 32; 55 at the head of l.25 ends the run)
+R7493 P6a:16 | 40 31 59 62 56 8 64 19 45 | mistrauen | "alles mistrauen" (Misstrauen) | ok (was 58 8?|5)
+R7493 P6b:2 | (74 86 in RUNS_CHECK) | - | "204. q[sign] 150" | not a run: no 74/86 in the line; 204 code + q-sign
+R7494 P2a:5-6 | 55 64 40 46 56 | rumor | "gesagt. also rumor [blot, d.] 150" | ok (decodes cleanly; not re-imaged)
+R7494 P2a:8-9 | 22 55 19 64 43 16 | freund | "Kein Freund b. 166" | ok (not re-imaged)
+R7495 P2:3-4 | 19 31 45 55 19 58 13 56 32 [~~4?~~] 49 61 59 46 | einrescriptso | "b. 150 ein rescript so b. 154" | ok (struck sign is the writer's)
+R7495 P2:4-6 | 79 64 25 37 19 33 14 29 64 44 62 19 55 59 14 30 57 32 20 12 19 45 | zugleichunterschrieben | "L. 166 zugleich unterschrieben erhalten" | ok
+R7495 P2:8 | 13 46 42 12 32 45 8 62 31 46 43 | combination | "ob vielleicht ein combination o 517" | ok
+R7495 P2:11-12 | [~~16 6?~~] 16 64 14 9 12 31 44 19 61 | ducabinet | "dass dardurch bo 513 du cabinet gar cessiren werde" (the "du" split off and 149 = 14 9) | ok
+R7495 P5a:2 | 56 20 37 32 26 33 47 45 31 58 | religionis | "in puncto diversatis religionis" | ok
+R7496 P2:17 | 19 31 43 37 19 10 20 44 | einleben | "resolviret, ein leben e. führen" | ok
+R7496 P2:18-19 | 22 64 28 55 21 45 59 46 67 47 45 67 8 44 32 62 9 63 20 44 | fuhrensowonwanitaten | "führen so von Vanitäten entfernet" | ok (629 split 62 9; runs over the line ends; 67 = v)
+R7496 P3a:3 | 809^z | - | "so 150 f. a. 809 [zu]" | not a run: 3-digit code (8?09), superscript z = "zu"
+R7496 P3b:18 | 17 06 | - | "Wien d. 16 Jun 1706" | not a run: the year
+R7497 P2:12 | 17 06 | - | "Wien d. 19 Jun 1706" | not a run: the year
+R7498 P1:4-5 | 58 19 13 55 19 61 7 57 78 | secretary | "wegen des Secretarÿ (so neulich 529)" | ok (78 = y/ÿ; cf. 76 Ogilvy, 77 convoy)
+R7498 P1:6 | 29 8 63 | hat | "L. ~~[?]~~ hat o. 181" | ok (not re-imaged)
+R7498 P1:11 | 17 20 59 | des | "oo. 527. des 157." | ok (not re-imaged)
+R7498 P3a:15 | 16 21 42 | dem | "83. dem 150." | ok (83 code stands outside)
+R7498 P3a:21 | 16 21 42 33 62 63 [~~3?~~] 55 62 20 | demitt[i]rte | "193 demittirte" (dimittirte) | ok (the blotted pair is the i; not re-imaged)
+R7498 P3a:22-23 | 17 46 14 29 | doch | "wolle 3. doch e oj e" | ok (blotted digit taken as 14; was 4?)
+R7498 P3a:22-23 | 10 57 8 66 13 28 21 45 | brauchen | "brauchen. L. wolle" | ok
+R7498 P3a:24 | 70 19 26 21 44 | wegen | "150. wegen o" | ok (70 = w)
+R7498 P3a:24-25 | 32 45 62 55 46 17 66 13 67 32 47 43 | introducwion | "wegen o introduction 237. c." | doubtful: 67 clearly written (delta-6 + 7) where t (61-63) is needed; writer's slip
+R7498 P3a:26-27 | 16 42 32 60 58 33 47 44 | dmission | "207 d[i]mission c. 220" | doubtful: i after d omitted by the writer (44 at head of l.27 ends the run); not re-imaged at full zoom
+R7498 P3a margin | 49 22 64 43 16 61 [137] 42 40 21 55 | pfundt[137]mmer | "f. o. Pfundt Cammer"? (137 = 13 7 = ca) | doubtful: margin not re-imaged; 137 may be a code
+R7498 P3b:10 | 67 46 55 | wor | "nicht und vor" | ok (67 = v)
+R7498 P3b:14 | 59 19 31 43 20 | seine | "alle seine 527" | ok (was 21)
+R7498 P3b:15-16 | 70 21 27 19 44 45 20 39 37 21 44 10 64 26 | wegennellenbug | "insonderheit wegen Nellenbu[r]g auf einmahl" | ok (digits clear; r omitted by the writer)
+R7498 P3b:20 | 49 46 59 62 67 46 55 | postwor | "eine Post vor o. 513" | ok (not re-imaged)
+R7498 P3b:29 | 16 19 40 | dem | "1?1 dem" | ok
+R7498 P2:2 | 18 21 45 | den | "f. 83 den 181 dienen" | ok
+R7498 P2:11 | 16 19 58 | des | "in pto des 509" | ok
+R7498 P2:18 | 17 06 | - | "W. d. 23. Jun. 1706" | not a run: the year
+R7499 P1:11 | 1?66 | - | "an 166. vor dieses mahl" | not a run: code 166 (first digit looped)
+R7499 P2a:8 | 16 01 / 16 04 | - | "von ann. 1601 biss 1604" | not a run: years (siege of Ostend)
+R7499 P2a:10 | 16 58 | - | "an 1658." | not a run: year or code
+R7499 P2b:15 | 17 06 | - | "W. d. 3. Jul 1706" | not a run: the year
+R7500 P1:11-12 | [16.] 17 31 61 37 9 45 | ditlan | "gute besserung. o. 16. ditlan hält dorfür" | doubtful: digits confirmed (16 stands apart with its own dot); no word, perhaps a name
+R7500 P3b:5 | 16 19 59 | des | "des 509. c. 311" | ok (not re-imaged)
+R7500 P3b:7 | 17 20 60 | des | "17. des 508. intelmessiren" -> "des" | ok (not re-imaged)
+R7500 P3b:8-9 | 8 15 14 46 57 18 32 55 62 19 44 49 65 43 13 67 20 44 | accordirtenpuncwen | "schon accordirten puncten" | doubtful: the sign read 67 (6 + 7-shaped, dot above) stands where t (61) is needed; probably 61 with a long-tailed 1 (cf. R7498 introduction)
+R7500 P3b:9-10 | 56 20 59 31 39 33 56 21 45 | resiliren | "wieder resiliren wolle" | ok
+R7500 P3b:12 | 40 7 37 15 47 43 61 19 45 63 21 45 | malcontenten | "oo. Malcontenten auffs neue" | ok (raw 4073715474361 re-split; was 40 73 71 54 7 43 61)
+R7500 P3b:13 | 9 29 37 8 57 42 33 57 21 45 | ahlarmiren | "auffs neue allarmiren dürfften" | ok
+R7500 P3b:30 | 64 45 61 19 55 | unter | "sich 258. unter 181" | ok
+R7500 P2:1 | 18 32 23 22 33 18 21 45 14 20 | diffidence | "a. diffidence so künfftig" | ok
+R7500 P2:5 | 18 32 41 32 59 60 32 40 43 | dimissimn | "208. oo dimission" | doubtful: penultimate group looks like 40 (m) where o (46-48) is needed; 0/6 confusion likely
+R7500 P2:30 | 17 06 | - | "W. d. 14 Jul 1706" | not a run: the year

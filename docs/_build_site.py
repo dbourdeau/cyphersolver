@@ -822,6 +822,11 @@ PAGES = [
          blurb='A despatch from the Moldavian court, listed on DECODE with no decryption and no key. Decrypting it with each of the 94 R&aacute;k&oacute;czi chancery keys on DECODE and scoring the output as Hungarian picked the syllabic key R609, which was applied unchanged. 97.6% of the groups decipher as sense: Muscovite and Polish envoys, the Tsar seeking peace with Charles XII, and the Swedes at Vilna.',
          quote='&ldquo;tudv&aacute;n az bar&aacute;t az Port&aacute;nak szem&eacute;nek &eacute;s f&uuml;l&eacute;nek lenni&rdquo;',
          rights='MNL OL, via DECODE; lead crop only'),
+    dict(slug='sieniawski1708', label='Vienna to Schenck 1706; Sieniawski letters', year='1706&ndash;1714', y=1706.5, place='Vienna &rarr; Cracow; Wallachia, Bender, Adrianople &rarr; Sieniawski', st='partial', stt='read in part',
+         title='A Vienna agent to Baron Schenck (1706) and the Sieniawski cipher letters (1707&ndash;1714)',
+         blurb='Thirty-three DECODE records of the Archiwum Narodowe w Krakowie with no decipherment. Fifteen are German letters from an agent in Vienna to Baron Schenck, chamberlain of Augustus II, March&ndash;July 1706, not from Dresden as catalogued: their letter table, numbers 7&ndash;79 in alphabetical blocks of three, was recovered here from the ciphertext alone and reads 93% of its numbers, but 72 of 77 code numbers stay open. The letters to Hetman Sieniawski were mostly printed by Kaczka in 2012; the six he left out carry contemporary decipherments between the lines, transcribed here.',
+         quote='&ldquo;dieser glaubet sey kein guttes omen&rdquo;',
+         rights='Archiwum Narodowe w Krakowie, via DECODE'),
     dict(slug='papai1706', label='P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10', year='1706&ndash;10', y=1706.5, place='Constantinople &rarr; R&aacute;k&oacute;czi', st='partial', stt='read in part',
          title='J&aacute;nos P&aacute;pai to Ferenc R&aacute;k&oacute;czi II, 1706&ndash;1710',
          blurb='Eleven numeric despatches of R&aacute;k&oacute;czi&rsquo;s envoy at the Porte, five of them filed under other senders, decrypted with the Hungarian syllabic nomenclator issued to him (DECODE R580), which DECODE had not linked to them: 99.7% of 16,698 groups. A twelfth letter hides six passages in graphic signs, which are not deciphered.',
@@ -1416,6 +1421,7 @@ IMAGES['rakoczi1707'] = None
 IMAGES['rakoczi1704'] = None
 IMAGES['papai1706'] = None
 IMAGES['bay1706'] = ('bay1706_lead.jpg', 'The opening of the letter, clear salutation then cipher', 'MNL OL G15 D 81/5, via DECODE R478')
+IMAGES['sieniawski1708'] = ('sieniawski1708_lead.jpg', 'The head of N. 18, 7 March 1706: clear German with runs of the letter table and code numbers', 'Archiwum Narodowe w Krakowie, AKM 21 plik 30/1, letter N. 18 p. 1, via DECODE R7486')
 IMAGES['charlesixducroc'] = ('charlesixducroc_lead.jpg', 'Charles IX to Philibert du Croc: the main letter in graphic cipher, with the signature and postscript lower on the leaf', 'Archives d&eacute;partementales de la Ni&egrave;vre, reproduced by Destray (1924), via Gallica and DECODE R2789')
 IMAGES['vanreede1792'] = ('vanreede1792_lead.jpg', 'Van Reede to William V, 4 February 1792: the figures with the contemporary pencil gloss &mdash; ci tro n sur le(s) &hellip; demi', 'Koninklijk Huisarchief, The Hague, via DECODE R1057')
 IMAGES['vanreede1787'] = ('vanreede1787_lead.jpg', 'Van Reede&rsquo;s despatch of 29 December 1787, first page: the gloss dites &hellip; avant hier over the first groups, 2750 &hellip; 2578 3350', 'Nationaal Archief, The Hague, via DECODE R1026')

@@ -1906,7 +1906,9 @@
     "caption": "The letter table of the 1666 key: homophone numbers, doubled capitals and syllable signs.",
     "page": "hesse1672"
    }
-  }
+  },
+  {"id": "k-schenck1706", "label": "Vienna agent's letter table, 1706 (7-79 in alphabetical blocks of three)", "kind": "rebuilt here", "by": "this project", "year": 1706, "note": "Homophonic letter table of the Vienna letters to Baron Schenck: a = 7 8 9, b = 10 11 12 ... alphabetical, no j or v, 70 = w, 76-78 = y, 79 = z. Recovered from the ciphertext alone by annealing the block boundaries; the 3-digit nomenclator is not rebuilt."},
+  {"id": "k-brancoveanu-polish", "label": "Brancoveanu chancellery key for Polish letters (a=19, b=60 ...)", "kind": "scholar's key", "by": "A. Mares 1987; M. W. Kaczka 2012", "year": 1709, "found": 1987, "note": "Simple numerical substitution with a few word codes (900 = August, 800 = Turcy), used by Constantin Brancoveanu's and Constantin Cantacuzino's chancellery for letters to Sieniawski, 1709-1714; printed by Kaczka, Danubius XXX (2012), n. 21."}
  ],
  "links": [
   {
@@ -2928,7 +2930,9 @@
    "target": "hesse1672",
    "how": "partial",
    "note": "letter table read both passages unchanged; the nomenclature differs"
-  }
+  },
+  {"key": "k-schenck1706", "target": "sieniawski1708", "how": "rebuilt from", "note": "recovered from the 106 runs of DECODE R7486-R7500; reads 93% of the letter-cipher numbers"},
+  {"key": "k-brancoveanu-polish", "target": "sieniawski1708", "how": "partial", "note": "checked on ten lines of R7473 against the interlinear decipherment and Kaczka's printed text"}
  ],
  "sources": [
   {
@@ -3360,7 +3364,8 @@
   {
    "source": "s-bourdeau",
    "key": "k-beuningen1676"
-  }
+  },
+  {"source": "s-bourdeau", "key": "k-schenck1706"}
  ],
  "unlinked": {
   "burgo1527": "not a cipher: the record is a clear minute, no key involved",
@@ -4027,6 +4032,7 @@
    "key": "k-hhsta-circular-1745",
    "target": "esterhazy1744",
    "note": "Checked 9 Oct 2026: values stop at 1355 (French) and 1500 (German); the 1744 Moscow page uses 1500-1737 and 3018-3297. Ruled out on value range. R1562, R1574, R1593, R1601, R1644 and R1691 were ruled out the same way."
-  }
+  },
+  {"key": "k-brancoveanu-polish", "target": "sieniawski1708", "note": "scored on the Vienna-Schenck runs: no sense"}
  ]
 }

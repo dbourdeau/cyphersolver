@@ -1,0 +1,403 @@
+{
+ "schema_version": 1,
+ "target": "sieniawski1708",
+ "title": "Vienna letters to Baron Schenck (1706) and ciphered letters to Hetman Sieniawski (1707-1714), Archiwum Narodowe w Krakowie (DECODE R7468-R7500)",
+ "documents": [
+  {
+   "id": "R7486-R7500",
+   "read": "read in part",
+   "shelfmark": "Archiwum Narodowe w Krakowie, AKM 21 plik 30/1, items 1-15; DECODE R7486-R7500",
+   "date": "1706-03-07/1706-07-14",
+   "year": 1706,
+   "country": "Austria",
+   "route": "an agent signing 'Sidon' in Vienna -> Baron Schenck, chamberlain of Augustus II, at Cracow/Lublin",
+   "language": "German",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A few superscript letters by the recipient over three runs of R7486 (s a k l a; p r e t; a u f) and one clear word pair ('der', 'Kayser') near code 208 in R7493; no decipherment otherwise.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1181,
+    "distinct": 143,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ciphertext_schenck.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE IMG_R7486-R7500 full-resolution images, cut into strips; two subagents, then a second pass on every run against the key",
+    "image_quality": "fair",
+    "notes": "Measured with --drop-first: 682 letter-cipher numbers in 106 runs (transcr/RUNS_FINAL.txt) plus 499 code numbers; about 37 small codes (83, '3.', '2.') and the dotted letter signs are not in the file. Clear text read only in part ([?] where water damage or the hand defeats the transcription)."
+   }
+  },
+  {
+   "id": "nr 13 and nr 5, Brancoveanu/Cantacuzino letters",
+   "read": "read",
+   "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 26/32 nr 13 pp. 1-28, 35-49 and nr 5 pp. 9-10; DECODE R7468-R7474, R7477-R7480, R7483",
+   "date": "1709-06-15/1714-09-08",
+   "year": 1709,
+   "country": "Romania",
+   "route": "Constantin Brâncoveanu and Constantin Cantacuzino (Wallachia) -> Hetman Adam Mikołaj Sieniawski",
+   "language": "Polish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Kaczka, Danubius XXX (2012), nos. IV, V, VIII, XIII, XVII, XIX, XX, XXI, XXIII, XXV, XXVI, printed from these originals with key A (fn. 21); interlinear glosses on the 1709 letters and on R7473",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "only R7473 p. 17, ten lines, checked against key A, the gloss and Kaczka's text (sien/R7473_check.txt); the page map is sien/map.md",
+    "image_quality": "good"
+   }
+  },
+  {
+   "id": "R7475",
+   "read": "read",
+   "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 26/32 nr 13 pp. 29-30; DECODE R7475",
+   "date": "1707 (by content)",
+   "year": 1707,
+   "country": "Poland",
+   "route": "an adviser in Sieniawski's camp (unsigned) -> Hetman Adam Mikołaj Sieniawski",
+   "language": "Polish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "full letter-by-letter interlinear decipherment in a second hand",
+    "partial": false
+   },
+   "length": {
+    "tokens": 2434,
+    "distinct": 54,
+    "unit": "symbols",
+    "measured": true,
+    "file": "sien/R7475_key.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE IMG_R7475 P1-P2, native-resolution crops",
+    "image_quality": "good",
+    "notes": "Count is the sum of the per-number counts in R7475_key.tsv (gloss alignment). Homophonic letter table in alphabetical blocks (a=17-18 ... z=56-57) plus code 600 = król szwedzki."
+   }
+  },
+  {
+   "id": "R7476",
+   "read": "read in part",
+   "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 26/32 nr 13 pp. 31-34; DECODE R7476",
+   "date": "c. 1712-1713 (by content)",
+   "year": 1713,
+   "country": "Turkey",
+   "route": "probably Stanisław Chomentowski, Polish envoy at the Porte -> Hetman Sieniawski",
+   "language": "Polish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "syllable-by-syllable interlinear decipherment in a second hand over 99.6% of the numbers; 91.2% of glosses read and aligned here",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1622,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE IMG_R7476 P1-P3, native-resolution strips",
+    "image_quality": "fair",
+    "notes": "Count from the transcriber's tally in sien/R7476.txt; _check_profile --measure counts line labels too."
+   }
+  },
+  {
+   "id": "R7481-R7482",
+   "read": "read",
+   "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 26/32 nr 5 pp. 1-3 and 5-6; DECODE R7481, R7482",
+   "date": "1709",
+   "year": 1709,
+   "country": "Moldova",
+   "route": "Constantin Turculeț(?) -> Hetman Sieniawski(?)",
+   "language": "Polish",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate folio"
+    ],
+    "source": "full interlinear decipherment; p. 3 is a fair copy of the decipherment of pp. 1-2; key B printed by Kaczka 2012 fn. 22, plaintext unpublished",
+    "partial": false
+   },
+   "length": {
+    "tokens": 877,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE IMG_R7481, IMG_R7482",
+    "image_quality": "good",
+    "notes": "R7481 522 tokens (Polish), R7482 355 tokens (Latin), transcriber's tallies; comma-separated numbers defeat --measure."
+   }
+  },
+  {
+   "id": "R7484-R7485",
+   "read": "read",
+   "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 24/11 no. 116 (DECODE 'Krakow_UNK_3/4'); DECODE R7484, R7485",
+   "date": "1713-05-09",
+   "year": 1713,
+   "country": "Turkey",
+   "route": "Stanisław Chomentowski, voivode of Mazovia, envoy at Adrianople -> Hetman Sieniawski",
+   "language": "Polish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate paragraph"
+    ],
+    "source": "interlinear syllable glosses over ~99% of the numbers; R7485 also has its cipher passage written out in clear at the head of the page",
+    "partial": false
+   },
+   "length": {
+    "tokens": 625,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE IMG_R7484, IMG_R7485",
+    "image_quality": "good",
+    "notes": "R7484 ~526, R7485 99 tokens (transcriber's tallies)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Schenck letters: German clear text with a 2-digit homophonic letter cipher in alphabetical blocks of three (a=7-9, b=10-12 ... no j, v) and 3-digit codes for persons and things; the Sieniawski letters use four other systems (keys A and B, an alphabetical homophonic table, a 3-digit syllabary).",
+  "symbol_kind": "digits",
+  "distinct_symbols": 143,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "titles",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "partial",
+  "doubled_letters": "written out",
+  "sibling_key": "none",
+  "notes": "Schenck letters: 79 = z, 70 = w, 76-78 = y; 67-69 serve for v and w. Dotted letter signs (o., b., L., d., e., f., g., c., m., p., oo, ooo) stand before codes and runs, probably nulls or particles. 'Distinct symbols' is the measured count over the Schenck file (letter numbers and codes)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Sieniawski group: Kaczka, Danubius XXX (2012) printed the Brâncoveanu/Cantacuzino letters and keys A and B; interlinear contemporary decipherments on R7475, R7476, R7481-R7485. Schenck letters: none found (no key, edition or DECODE reading).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "published reading"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: DECODE login cookie supplied and the target assigned in a brief (catalogue entry 333). No target-specific intervention.",
+  "tools": [
+   "DECODE JSON API and filesrv download",
+   "PIL strips at native resolution",
+   "homophonic annealing with lang/ de-1740s (solve.py)",
+   "monotone block-boundary annealing (monotone.py)",
+   "subagent transcription and run re-check"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-09",
+  "last_date": "2026-10-09"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "DECODE metadata for R7460-R7507 by API; 130 images of R7462-R7507 with the session cookie; no key or decryption file on any record.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Neighbouring records R7460-R7467 (ASang 85/3 keys, Krakow_UNK_1/2) and R7501-R7507 (Wąsowicz-Lubomirski, key R7501) checked as keys for the group.",
+   "result": "ruled out",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "literature search",
+   "what": "Kaczka, Danubius XXX (2012) prints the Brâncoveanu/Cantacuzino letters of nr 13 and nr 5 from these originals with keys A and B; nothing on the Schenck letters, R7475, R7476, R7481-R7482, R7484-R7485.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "Two subagents transcribed the 15 Schenck letters (52 images) with cipher runs, codes, superscripts and dockets; letters are dated Vienna, not Dresden.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "solver",
+   "what": "Free many-to-one homophonic annealing (de-1740s, order 5, unigram prior) on the 642 run tokens then available.",
+   "result": "failed",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "statistics",
+   "what": "Run endings 19 43, 21 45, 20 44, 19 55 and the clustering of frequent numbers suggest homophones on consecutive numbers in alphabetical order.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "solver",
+   "what": "Annealing only the 23 block boundaries of an alphabetical key over 1-84 (monotone.py): best restart gives blocks of three from a=7-9; 'der Baron Kleinburg alhier', 'correspondenz', 'seiner proposition'.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "verification",
+   "what": "The recipient's superscripts over three runs of R7486 (s a k l a, p r e t, a u f) agree with the block key.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "Second pass over every run against the key at full resolution: 24 lines corrected (scribe's 31 written like 21, delta-shaped 6); 79=z, 70=w, 76-78=y confirmed; 9 runs (48 numbers) still give no sense.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "sibling key",
+   "what": "Kaczka's key A and the R7475 table scored on the Schenck runs with de-1740s: -5.6 and -7.0 per character against -2.8 for the block key.",
+   "result": "ruled out",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Code values from context: 189 = Baron Schenck, 190 = King of Sweden, 150 = King Augustus, 100 = the Imperial court; 208 = 'der Kayser' from the recipient's gloss. The other 72 codes left open.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "verification",
+   "what": "R7473 p. 17, ten lines decoded with Kaczka's key A agree with the interlinear gloss and his printed text.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "Subagents transcribed the unprinted Sieniawski pieces with their interlinear decipherments: R7475 (alphabetical homophonic table rebuilt from the gloss), R7476 and R7484-R7485 (Chomentowski's 3-digit syllabary, syllabary.tsv), R7481-R7482 (key B).",
+   "result": "worked",
+   "date": "2026-10-09"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The Schenck letters' 2-digit letter table (alphabetical blocks of three) was recovered here by annealing the block boundaries on a German n-gram model, with no crib; the recipient's few superscripts agree with it.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "first_break": true,
+  "fraction_read": 0.624,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "measure.py over transcr/RUNS_FINAL.txt and codes.json: Schenck letters, cipher tokens = 682 letter-cipher numbers + 499 codes + 37 small codes; read = 634 numbers in runs giving sense + 126 code tokens with a value",
+  "fraction_coherent": 0.93,
+  "codes_open": {
+   "open": 72,
+   "total": 77,
+   "tokens_open": 373
+  },
+  "grades": {
+   "C": 6,
+   "I": 120
+  },
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "parts": [
+   {
+    "label": "Vienna to Baron Schenck, 1706",
+    "records": "R7486-R7500",
+    "method": "key recovered from ciphertext-only",
+    "extent": "partial",
+    "basis": "letter table recovered by monotone annealing; 93% of the letter-cipher numbers read in sense; 72 of 77 codes open"
+   },
+   {
+    "label": "Brâncoveanu and Cantacuzino to Sieniawski, 1709-1714",
+    "records": "R7468-R7474, R7477-R7480, R7483",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "printed by Kaczka 2012 from these originals with key A; sample checked here"
+   },
+   {
+    "label": "unprinted Sieniawski letters (R7475, Turculeț 1709, Chomentowski 1713)",
+    "records": "R7475, R7476, R7481, R7482, R7484, R7485",
+    "method": "read from existing decipherment",
+    "extent": "partial",
+    "basis": "contemporary interlinear decipherments transcribed; R7476's faint glosses read at 91%"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Schenck letters: 72 of 77 code numbers (373 tokens), among them 187, 181, 166, 254, 132, 193",
+    "blocker": "open-codes",
+    "detail": "persons and things in Vienna and at the Saxon-Polish court; context narrows roles, not names; no key in DECODE, the neighbouring records or print"
+   },
+   {
+    "item": "Schenck letters: 9 runs (48 numbers) without sense",
+    "blocker": "open-codes",
+    "detail": "digits confirmed twice on the images; probably names or the writer's slips (lceth, ditlan, gutswor)"
+   },
+   {
+    "item": "Schenck letters: dotted letter signs and small codes 83, 3., 2.",
+    "blocker": "open-codes",
+    "detail": "stand before codes and runs; nulls or particles, not settled"
+   },
+   {
+    "item": "R7476: 136 glosses unread (8.8%)",
+    "blocker": "illegible",
+    "detail": "faint brown interlinear hand; values mostly recoverable from syllabary.tsv"
+   }
+  ],
+  "notes": "R7468-R7500 are four collections: the Schenck letters (AKM 21), Zbiór Dzieduszyckich 26/32 nr 13 and nr 5, and 24/11 no. 116 (R7484-R7485, misnamed Krakow_UNK on DECODE)."
+ }
+}
