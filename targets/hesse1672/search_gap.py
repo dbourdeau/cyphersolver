@@ -1,4 +1,4 @@
-"""LM search for the unread word in passage 1 (tokens 28 83 117 20 66 = e r t a d before 'in Holstein'):
+"""LM search for the unread word in passage 1 (tokens 28 83 117 20 BB = e r t a z before 'in Holstein'):
 allow up to two of the five letter tokens to take any value (copy slips), score with de-1640s."""
 import os, sys, itertools
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))

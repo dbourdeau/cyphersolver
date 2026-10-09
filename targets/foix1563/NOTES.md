@@ -97,6 +97,12 @@ Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
 - Assessment: a real partial break, in de Foix's cipher, not overfitting. It is not at the read bar: 14 of the 78 key
   entries rest on a single occurrence, a dozen signs (RX, monograms, numbers 10, 20, 26, 34, 37, 40, 70, 82) are open,
   and no fraction of tokens read as sense has been measured against the images. Outcome left unchanged here.
+- Five-sign audit (Beck, PR #27, 8 Oct 2026; `beck-preliminary/FIVE_SIGN_AUDIT.md`): the D, 3, 2, r, z "conflicts" were partly a
+  naming collision. Beck's private labels are not qm2's: his `D` is qm2 `th` and his `r` is qm2 `c`, and the 1565 key agrees on both
+  (th = t, c = u). Real conflicts remain on plain `3` (Beck s, 1565 e/t; his descended form = qm2 `Z3` = s in both), `2` (l against i)
+  and `z` (i against p; Beck cites the 6 June 1562 marginal decipherment, BnF fr. 6612 f. 54, for z = i, before the early-1564 key change).
+  Checked here 9 Oct: pairing 31 equal-length rows of the two transcriptions gives D->th 10, r->c 13, z->z, 2->2, 3->3, THREE_CURL->3/Z3;
+  `verify.py` passes with the regenerated manifest. No reading changes.
 - Package: `scripts/verify.py` fails on a Windows checkout (core.autocrlf rewrites the hashed files; a
   `.gitattributes` with `-text` is added to the folder) and on `README.md`, which was edited after `manifest.json` was
   written. With LF files and README excluded it passes (17 files, 1,038 tokens replayed).

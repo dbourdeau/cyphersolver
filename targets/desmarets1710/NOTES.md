@@ -1,69 +1,53 @@
 # Desmarets, Marly, 4 June 1710 (DECODE R10198)
 
-Status: attempted, open
+Status: read with an existing decipherment (Tomokiyo's table); 96.8 % of the groups attested, 12 group types open
 
-Outcome: attempted, open. The French text written between the figure lines is not a decipherment of those figures,
-and the 471-group numerical code under it has no key on DECODE or in print that I could find.
+Outcome: read from Tomokiyo's published reconstruction of the 1710 code (Cryptiana 11B), applied to the 471 groups
+read as one continuous stream. The key is Tomokiyo's, built from this very letter with Alexandre Pillon's alignment;
+it was not broken here. Credit for the pointer goes to the author of issue #28 (yuanyi-350, 9 Oct 2026).
+
+## Correction to the first attempt (21 Sept 2026)
+
+The first version of this note said the French between the figure lines was not the decipherment and that no key
+existed. Both were wrong. I had aligned each French line to the figure line under it, and the four models
+(`em.py`, `em2.py`, `em3.py`, `emw.py`) could not converge, because the French and the figures are not in step:
+the secretary deciphered on a separate sheet and wrote the clean text on the original, so the text drifts against the
+numbers, and the last 22 figure lines carry the decipherment of the whole tail with no French at all. Tomokiyo says
+so on Cryptiana (11B) and notes that the letter was printed in *L'Intermédiaire des curieux* 50 (1904). The fix is to
+concatenate all 471 groups and apply a variable-length table (letters with homophones, syllables, a few short words).
 
 ## The document
 
-- DECODE R10198 "Desmaretz_1", contributed by Alexander Pillon. Nicolas Desmarets, Controller General of Finances,
-  Marly, 4 June 1710, to an unnamed "Monsieur". Three pages (images `IMG_R10198_I46716_P1..3.png`, fetched with the
-  shared cookie, only 590 px wide; git-ignored in `decode/`, not public domain). DECODE status: "Partially decrypted".
-- Layout: pages 1 and 2 (top) alternate a line of French prose with a line of numbers, 34 pairs. Then 22 lines of
-  numbers with nothing between them (p. 2 bottom, p. 3), drawn with ruled lines as if for a decipherment that never
-  came. The last figure line runs straight into the clear closing "Je suis tres parfaitement Monsieur Votre tres
-  humble et tres obeissant serviteur", signed Desmaretz.
-- Transcription: `transcription.txt` (G = French line, C = figures under it, U = figures with no French). 471 groups,
-  183 distinct, range 1–568.
+DECODE R10198 "Desmaretz_1", contributed by Alexander Pillon. Nicolas Desmarets, Controller General of Finances,
+Marly, 4 June 1710, to an unnamed "Monsieur". Three pages (590 px images, not public domain). 34 pairs of French line
+over figure line, then 22 figure lines alone, then the clear closing formula and signature.
+`transcription.txt`: 471 groups, 183 distinct, range 1–568.
 
-## What the French says
+## The reading
 
-The French lines read as continuous prose about the Geertruidenberg peace talks (March–July 1710). They say an
-attempt ("evenement") has failed. The powers now being sent are wide enough, but will not be pressed all the way.
-The correspondent should secure guarantees and explanations about the Allies' "demandes ulterieures". The King wants
-peace, but a safe peace that keeps "l'honneur de son gouvernement". Provided the further demands stop short of
-"demembrements entiers" and are held to little beyond the preliminaries, he will agree. The talks will not end
-without explanations and conferences, but this is "un relachement qui peut produire la paix", which would not have
-happened "si l'on estoit demeure fermes dans les premieres resolutions." The prose stops there, and the last 22 lines
-are figures alone.
+`tomokiyo_decode.py` holds the table as transcribed from Tomokiyo's image and decodes the transcription as one stream.
+`reading.txt` is the stream with words divided by hand. 456 of 471 groups (96.8 %) are in the table and the whole
+letter reads as sense, glossed lines and tail alike: the tail runs from "pouvoir qu'on vous envoie est assez estendu"
+to "si l'on estoit demeure fermes dans les premieres resolutions". The sense is the one already read in the
+interlinear French: the King wants peace, a safe peace, but means to protect "l'honneur du gouvernement"; further
+demands must not reach "demembrements entiers"; the powers sent are wide enough; explanations and conferences are
+needed, but this is "un relachement qui peut produire la paix".
 
-## Why the French is not the decipherment of the figures
+Limits: Tomokiyo derived his table from this letter, so the check is against the sheet's own decipherment and
+not independent of it. A few table cells are queried in his own table (e.g. 463 "temps?", 25 "S?"), and the table
+shows some glosses as hand variants.
 
-I ran four alignments of the 34 glossed lines against the figures under them:
+## Remaining gaps
+- groups 23, 65, 94, 133, 147, 179, 189, 229, 534, 539, 559, 565 (15 tokens) - blocker: open-codes; not in Tomokiyo's table. 94 = ce (three places), 539 = l'esper and 565 = oit are clear from the context. 179+534 (differer), 133 (aplanir), 65 and 147 (renvoyer vostre courier), 189 and 229 are plausible only; 559 occurs twice and may be a null
 
-1. Per-line letter EM (`em.py`): each group emits 0–9 letters. Degenerate.
-2. Global letter alignment with a length prior (`em2.py`). Drifts out of sync.
-3. Per-line soft EM with word-boundary bonuses (`em3.py`).
-4. Word-level EM, where a group emits 0–2 whole words (`emw.py`).
+## Escalation
+- [x] siblings: no sibling record on DECODE; the Cryptiana note is the only parallel source
+- [x] clear-pages: the interlinear French and the out-of-sync clear text on the sheet are the decipherment, as Tomokiyo says
+- [x] known-keys: Tomokiyo's 1710 table applied
+- [x] print: L'Intermédiaire des curieux 50 (1904) cited by Tomokiyo, not seen here; Boislisle III not searched
+- [x] key-rebuild: the 12 missing types filled from the French glosses where the context fixes them
+- [n/a] retry: no further groups can be fixed without a better image or another copy
 
-None of them gives a consistent key. The frequent groups fall under unrelated words: 111 under "paix", "seure",
-"selon", "on", "apparence"; 231 under "toutes", "fermes", "la"; 209 92 85 under both "vostre courier" and
-"inevitable, peu". Repeated French phrases do not repeat in the figures: "demandes ulterieures" sits over
-128 78 65 343 147 and over 209 64 321 161 27, and "qu'on vous envoye" shares only 64. The line-offset test
-(`offset_test.py`) finds only a weak group overlap between lines that share French words (0.77 at offset 0,
-against 0.49 for any two lines; 22 pairs).
-
-The figures are a real code, not decoration. There are 183 types in 471 tokens (a uniform random fill would give
-about 320), a Zipf-like head (111 ×13, 224 ×11, 347 ×10, 56 ×10) and repeated n-grams, among them the 6-gram
-119 101 402 49 197 424. It first occurs under "dans les premieres resolutions" and again in the unglossed tail.
-
-Reading: this is the "partially encrypted" letter DECODE describes. The prose lines are the clear part, in the same
-hand as the closing formula. The figure lines carry a separate secret text in a numerical code of about 570 values,
-probably a syllabic nomenclator with homophones, of the kind the Paris ministries used. The one shared 6-gram hints
-that the secret part may deal with the same resolutions, but that is not a reading.
-
-## Checks
-
-- Web search for a printed text of the 4 June 1710 letter: nothing. Not checked: Boislisle, *Correspondance des
-  contrôleurs généraux* III (1897), and the AE Hollande volumes for 1710 (Torcy–Huxelles–Polignac). Either could hold
-  a copy in clear, and they are the best leads.
-- DECODE keys dated 1700–1715: none French-ministerial (Saxon Flemming keys, Florentine, ACA Genoa). No sibling
-  "Desmaretz_2".
-- Ciphertext-only on a ~570-value homophonic code from 471 groups is not realistic (compare hellen1752, spaen1808).
-
-## To move it
-
-A clear copy or minute in AE Correspondance politique Hollande 222–224 (1710), or in Desmarets's papers
-(AN G7 / BnF), or the key from the recipient's side. The recipient is probably one of the Geertruidenberg
-negotiators (Huxelles or Polignac) or a banker go-between. Images at 590 px are also marginal for some digits.
+## Files
+`transcription.txt`, `tomokiyo_decode.py`, `reading.txt`, the superseded alignment scripts (`em*.py`, `offset_test.py`),
+`profile.json`.

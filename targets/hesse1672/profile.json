@@ -19,7 +19,7 @@
      "interlinear",
      "margin"
     ],
-    "source": "A second hand glossed nearly every code number and wrote partial readings of both letter-cipher passages (margin 'disgustirt und ertarin holstein'; letters over passage 2).",
+    "source": "A second hand glossed nearly every code number and wrote partial readings of both letter-cipher passages (margin 'disgustirt und erta?in holstein'; letters over passage 2).",
     "partial": true
    },
    "length": {
@@ -120,7 +120,7 @@
   },
   {
    "kind": "crib",
-   "what": "Margin gloss 'disgustirt und ertarin holstein' tried against passage 1 with doubled capitals as nulls and as letters.",
+   "what": "Margin gloss 'disgustirt und erta?in holstein' tried against passage 1 with doubled capitals as nulls and as letters.",
    "result": "failed",
    "date": "2026-10-09"
   },
@@ -159,6 +159,42 @@
    "what": "de-1640s LM search over the five open signs (e r t a d) allowing up to two copy slips.",
    "result": "failed",
    "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "Re-cropped the five open signs at 3x from the native image: the 'bb' sign is two looped b-shapes, unlike the closed 6 of '26' in the same line; re-read as the doubled capital BB (z). The glosser's margin, re-read at 3x, is 'und erta?in' (fifth letter r or z).",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "solver",
+   "what": "Glyph look-alike search (search_glyph.py): each of the five signs replaced by digit look-alikes (1/7, 2/7, 3/5/8, 6/0/8, 4/9) or the key's stem-and-loop syllable signs, up to two changes, scored with de-1640s in context 'Totaliter disgustirt und ___ in Holstein'.",
+   "result": "failed",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "solver",
+   "what": "Free-cell search (search_free2.py): 117 and BB free over letters and syllables, since the 1672 table differs from 1666 at 55; no convincing word.",
+   "result": "failed",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "solver",
+   "what": "Corpus alignment (search_vocab.py): every er-/ver-/ir-/ex-/ent- word of the DTA 1470-1770 corpora aligned to the signs with column-slip and look-alike costs; best candidates need two or more changes.",
+   "result": "failed",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "Glosses of 625 and 653 re-read at 3x: 653 'Cur Brandenb.' (Elector of Brandenburg); 625 still only partly legible.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "literature search",
+   "what": "Contemporary context: the defensive alliance of Denmark, Brandenburg, Brunswick, Hessen-Kassel and the Emperor concluded at Braunschweig 12/22 Sept 1672, matching the letter's plan; no edition of the letter or name for 625 found. HCPortal cryptogram list re-checked: no sibling of Nr. 125.",
+   "result": "partial",
+   "date": "2026-10-09"
   }
  ],
  "outcome": {
@@ -188,11 +224,11 @@
   ],
   "gaps": [
    {
-    "item": "passage 1, signs 28 83 117 20 66 (e r t a d) before 'in Holstein'",
-    "blocker": "too-short",
-    "detail": "The key reads them unambiguously but they make no word; the contemporary glosser failed at the same place ('ertarin'); an LM search with up to two copy slips found nothing; no second copy is online."
+    "item": "passage 1, signs 28 83 117 20 BB (e r t a z) before 'in Holstein'",
+    "blocker": "no-key-material",
+    "detail": "The 1672 letter table differs from key 255 in at least one cell (55 = g here, h in 1666), and the glosser, with the 1672 key, got the same letters ('erta?in'); whether the table differs in these cells or the encipherer slipped cannot be settled without the 1672 key or another copy, neither online. Glyph, free-cell and corpus searches found no word."
    }
   ],
-  "notes": "59 of 64 cipher tokens read as sense (92.2%). Letter table from HCPortal key 255; the nomenclature is a different, lost word list whose values come from the glosses. 625 (Statthalter Ahlefeldt?) and 653 (... von Brandenburg) glosses only partly legible. Writer not identified."
+  "notes": "59 of 64 cipher tokens read as sense (92.2%), unchanged after escalation. Letter table from HCPortal key 255 (one cell differs in 1672); the nomenclature is a different, lost word list whose values come from the glosses. 625 gloss only partly legible. Writer not identified."
  }
 }

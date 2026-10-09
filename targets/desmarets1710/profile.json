@@ -14,9 +14,10 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "interlinear",
+    "printed edition"
     ],
-    "source": "The French prose lines between the figure lines do not decipher the figures (four alignment models); no decipherment found."
+    "source": "Tomokiyo's table (cryptiana.web.fc2.com/code/louisxiv.htm, 11B), built from the interlinear French and the out-of-sync clear text on the sheet, with Alexandre Pillon's alignment; the clear text was also printed in L'Intermediaire des curieux 50 (1904)."
    },
    "length": {
     "tokens": 471,
@@ -37,50 +38,56 @@
   "types": [
    "nomenclator"
   ],
-  "summary": "Numerical code of about 570 values (groups 1-568), probably a homophonic syllabic nomenclator, interleaved line by line with clear French prose.",
+  "summary": "Numerical code of about 570 values (1-568): single letters with homophones plus syllables and a few short words; read as one continuous stream, line breaks are layout. Clear French lines sit between the figure lines, and the clear text of the last 22 figure lines is written out of sync.",
   "symbol_kind": "digits",
   "distinct_symbols": 183,
   "diacritics": {
    "used": false
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
-   "present": "unknown"
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words"
+   ]
   },
   "nulls": {
    "present": "unknown"
   },
-  "key_order": "unknown",
+  "key_order": "random",
   "word_division": "none",
-  "doubled_letters": "unknown",
+  "doubled_letters": "no special sign",
   "sibling_key": "none",
-  "notes": "Groups separated by dots; 6-gram 119 101 402 49 197 424 repeats."
+  "notes": "Groups separated by dots; the figure lines must be concatenated before the table is applied."
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unknown",
-   "where": "DECODE marks it 'Partially decrypted', apparently counting the clear prose lines; no printed text found",
-   "found": "unknown",
-   "used": false
+   "exists": "online",
+   "where": "Tomokiyo's reconstruction table (Cryptiana 11B, with Alexandre Pillon's alignment); clear text printed in L'Intermediaire des curieux 50 (1904); the interlinear French on the sheet itself",
+   "found": "during attempt",
+   "used": true
   },
   "inputs": [
    "images",
-   "cleartext context"
+   "cleartext context",
+   "key from archive"
   ],
-  "attack": "ciphertext-only",
-  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "attack": "key from archive",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded. Issue #28 (yuanyi-350, 9 Oct 2026) pointed to Tomokiyo's 1710 table and to the continuous-stream reading; this was checked and written up here.",
   "tools": [
    "EM aligners em.py, em2.py, em3.py, emw.py",
-   "offset_test.py"
+   "offset_test.py",
+   "tomokiyo_decode.py"
   ],
   "models": [
    "claude-opus-5"
   ],
   "sessions": 1,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-09"
  },
  "solution": [
   {
@@ -112,17 +119,62 @@
    "what": "Web search for a printed text; DECODE key records 1700-1715 for a French ministerial key.",
    "result": "failed",
    "date": "2026-09-21"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Issue #28 (yuanyi-350) reported that Tomokiyo's published 1710 table reads the letter if the 471 groups are concatenated instead of read line by line.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "literature search",
+   "what": "Fetched Cryptiana 11B (louisxiv.htm): the table (built from Pillon's alignment) and the note that the unglossed tail is the decipherment written out of sync (printed in L'Intermediaire des curieux 50, 1904).",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "reading",
+   "what": "Transcribed the table from its image (tomokiyo_decode.py) and decoded the transcription as one stream: 456 of 471 groups (96.8%) in the table, the whole letter including the 22 figure-only lines reads as sense; 12 group types (15 tokens) not in the table, values inferred from context and marked.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "verification",
+   "what": "Compared the stream with the 34 interlinear French lines and the closing clear formula; the earlier conclusion that the French is not the decipherment was an artefact of per-line alignment.",
+   "result": "worked",
+   "date": "2026-10-09"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "The French lines between the figure lines were shown not to decipher the 471-group numerical code (four alignment models); no key on DECODE or in print was found.",
-  "contribution": ["transcription", "catalogue correction"],
-  "class": "not read",
-  "fraction_read": 0,
-  "verification": [
-   "unknown"
+  "class": "read",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "Tomokiyo's published reconstruction of the 1710 code, derived from this letter, applied to the 471 groups read as one stream.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
   ],
-  "notes": "Leads: Boislisle, Correspondance des controleurs generaux III; AE CP Hollande 1710."
+  "fraction_read": 0.968,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "tomokiyo_decode.py: 456 of 471 code-group tokens have a value in Tomokiyo's table and read as sense; reading.txt",
+  "codes_open": {
+   "open": 12,
+   "total": 183,
+   "tokens_open": 15
+  },
+  "first_break": false,
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "groups 23, 65, 94, 133, 147, 179, 189, 229, 534, 539, 559, 565 (15 tokens)",
+    "blocker": "open-codes",
+    "detail": "Not in Tomokiyo's table; 94 (ce), 539 (l'esper) and 565 (oit) are clear from the context, the others are plausible readings only (559 may be a null)."
+   }
+  ],
+  "notes": "Earlier attempt (21 Sept 2026) closed as 'not decoded' after four per-line alignment models; Issue #28 corrected it. Tomokiyo's table is itself a reconstruction from this letter, so the reading is checked against the sheet's own decipherment, not independent of it."
  }
 }
