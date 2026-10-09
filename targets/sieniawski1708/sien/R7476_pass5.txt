@@ -291,3 +291,58 @@ p.32 L26-27  (crops r76e_p32_L26r, r76e_p32_L27g)
   p.34   4 unread -> 155/159 = 97.5%
   total  90 unread -> 1531/1621 = 94.4% (pass 5: 92.9%). Below the 95% bar by 9 tokens.
   Residue by blocker: G 74; name? 8; N 5; I 3 (see sien/R7476_unresolved.txt).
+
+======================================================================================================================
+PASS 7 (9 Oct 2026) - language pass on the 74 "G" tokens only; one digit checked (crops img/crop/r76f_p31_L26_215,
+r76f_p31_L26_215b). Method per run: syllable alignment of candidates (Polish c.1714 incl. old spellings, Latin,
+Ottoman/Tatar terms, embassy names) against the code values inside their bands, at most one encipherer slip per word;
+sentence scored with lang pl-modern (mean log-prob per char, modern norm; higher is better; the model knows no Latin or
+old spelling, so a score only ranks candidates that the code allows); band values checked against R7484/R7485 via
+sien/syllabary.tsv. A candidate that needs letters the code does not give is rejected however well it scores.
+
+ACCEPTED
+p.31 L26  180 46 215 = "od Porty": "komisarzów nie widzieć traktatu od Porty, który ma bydź w ręku poselskich".
+          Digit check at 3.5x: the middle digit is a single upright under the gloss's long ſ (215, not 245); the gloss
+          itself reads "Porty" (P with a long descender, "orty", the t crossed). 215 = Porta, as on L28/L33.
+          LM: "od porty" -2.00 vs "ods" -2.07, "odta" -2.04.  READ 1.
+p.32 L21  234 175 60 17 240 = re-nu-e-ba-t = Latin "renuebat": "nie odrzucałem jej dać się z certa assecuratione, którą
+          on renuebat. Teraz zaś po skończonych interesach, gdy się upierał i obiecał dać asekuracyą ..." (he refused the
+          assurance at first, then insisted on it). The 4/7 digits are read 175 (nu, glossed nu in R7476) and 17 (ba,
+          glossed ba in R7484 x2 and R7476 x4); the gloss over them "u(?) e ba t" fits. No other value pair in the bands
+          (145/175, 14/17) gives a word. LM: "renuebat" -2.19 vs "renuebt" -2.27, "reieebt" -2.46.  READ 5.
+p.33 L28  240 330 32 331 = "rzeczy"(?), with one slip (240 s/t for 230 r; or a 3/4 misread, the 4 being clear in r76e_p33_L28):
+          "dosyć, że mało wszytkich rzeczy królewskich nie [s-zu-ci-ł]". The glosser struck his own gloss over 240.
+          LM: "rzeczy" -1.38 vs "szeczy" -1.62, "tzeczy" -1.80.  READ 1 (?).
+
+REJECTED (candidates tried; none both fits the code and is unambiguous)
+p.31 L21  284 (struck u): a cancelled sign, no word possible.
+p.31 L29-30  149 160 331 180 "o n zi o" (or o o zi o): ochoczo (-2.48, needs cho), onzio (-2.81); omnino, ochotnie,
+          o mnie: letters do not fit.
+p.31 L31-32  248 235 294 244 "se ri wa s": "się rwą" (-1.59, but needs rwą not ri-wa-s), seriwas (-2.13); seraskier (code
+          260 exists), Serwas (name?): rejected.
+p.31 L32  270 114 245 294 (after "Ut penitius informati"): sitis, simus, estis, stąd, tak, zostawać: no alignment.
+p.32 L2   249 96 "si hospodar": "się hospodar", sic, sam: none fits "że [..] on stąd nie ruszy".
+p.32 L13  141 234 [30/80] (Han) 244 168 60: "na ręce hańskie" (-1.66, needs na/ce/ki), "rega hansne" (-2.58),
+          z Hanem, Gałga: rejected.
+p.32 L17  141 "li" before 299: "a list(y)", "ali": 299 has no value, so nothing can be confirmed.
+p.32 L19  18 174 6 "be no a" after "plenipotent jego [2]": Benoa (-3.07), Bonacki, Poniatowski, Potocki, Grudziński, Tarło,
+          Fabrice, Grothusen: no match; probably a name with code 2 (reclassified would be name?, left G).
+p.32 L24-25  52 180 47 244 154 85 234 ? 240 37 60 101 196: dość mego, do ośmego, respectu, rescript, odesłania: none aligns.
+p.32 L27  140 150 85 "le m go": zwlokłem go (-2.58, needs the preceding signs re-divided and an extra vowel), lemgo
+          (-2.72): rejected.
+p.32 L29  244 320 33 324 61 245 32 "s z c z e s c": szczęść (-1.76), Szczęsny (-1.71, needs ny), Szczecin: rejected.
+p.32 L31-32  114 142 88 "k to/ło ca": kto, kałga (code 82 ga elsewhere), Kozacy, kłóci: rejected.
+p.33 L4   296 133 110 171 294 142 "wie lu ka na w (y) ne": wielu kanonami (-2.56, needs mi), kalyon/kalionami, wielkich naw:
+          rejected (-3.15 as written).
+p.33 L8   295 142 32 118 154 156 "we re c ki me mo" (154/156 struck): reszta, wołoski, wenecki, większa część: rejected.
+p.33 L30  136 "ł" in "nie s-zu-ci-ł": stracił, spuścił, zrzucił: letters do not fit.
+p.34 L11  244 270 233 33 "s t ra c": straży (-1.89, needs ży), strachu (-2.00, needs hu), ścisłej: rejected.
+
+== Pass 7 totals ==
+  resolved: 7 tokens (p.31 1, p.32 5, p.33 1).
+  p.31  14 unread -> 523/537 = 97.4%
+  p.32  51 unread -> 492/543 = 90.6%
+  p.33  14 unread -> 368/382 = 96.3%
+  p.34   4 unread -> 155/159 = 97.5%
+  total  83 unread -> 1538/1621 = 94.9% (pass 6: 94.4%). Still 2 tokens short of the 95% bar (1540): read in part.
+  Residue by blocker: G 67; name? 8; N 5; I 3.

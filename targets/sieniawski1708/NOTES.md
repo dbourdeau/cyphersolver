@@ -192,7 +192,11 @@ Page map, systems and transcriptions by a subagent (`sien/map.md`, `sien/R74xx.t
   "trzysta lwowych na drogę", "z listu przejętego", "sołtan gałga uciekł do Czerkies", "a wekslowe kupcy nie chcą
   płacić", "donieść Jmci Panu Kanclerzowi Koronnemu"; codes 135 = Kanclerz, 215 = Porta (beside 213), 280 = u,
   310 = x added to syllabary.tsv. **1,531 of 1,621 = 94.4%** (p. 31 97.2%, p. 32 89.7%, p. 33 96.1%, p. 34 97.5%).
-  Residue 90 tokens: 74 whose letters are known (gloss or key) but form no word after band alternatives, digit
+  Pass 7 (language only: Ottoman/Tatar terms, Latin, old spellings, one encipherer slip per word, pl-modern scoring;
+  sien/R7476_pass5.txt): "traktatu od Porty" (215, not 245), Latin "którą on renuebat", "rzeczy(?) królewskich"
+  (240 for 230): **1,538 of 1,621 = 94.9%**, 2 tokens short of the bar; nothing forced (ochoczo, Szczęsny, straży,
+  na ręce hańskie, Benoa/Poniatowski/Fabrice/Grothusen rejected: they need letters the code does not give).
+  Residue after pass 6 was 90 tokens: 74 whose letters are known (gloss or key) but form no word after band alternatives, digit
   look-alikes and re-division; 8 in names not identifiable (a seven-sign name on p. 32 L9-10, code 216 glossed
   "Pułta"); 5 one-off codes with no gloss (2, 224, 266, 299 x2); 3 illegible after zoom.
 
@@ -200,7 +204,7 @@ Page map, systems and transcriptions by a subagent (`sien/map.md`, `sien/R74xx.t
 - Schenck letters: 65 of 77 three-digit codes (394 tokens), mostly persons (187, 181, 166, 190, 254, 258, 132, 193, 186 ...) - blocker: no-key-material; roles fixed from context, names not; no key with the letters, on DECODE or in print; the 100s-200s are not alphabetical, so position gives no bound; the Saxon keys would be in the Hauptstaatsarchiv Dresden and the Wiener Diarium 1706 (dated cribs) is behind a bot check the session may not pass
 - Schenck letters: dotted signs d., e., g., c., m., p., oo, ooo, oj and small codes 3., 2. (about 90 tokens) - blocker: no-key-material; articles or pronouns, no value fits every occurrence and none is glossed
 - Schenck letters: 8 letter-cipher runs, 44 numbers, without sense (lceth, ditlan, gutswor ...) - blocker: too-short; digits confirmed twice on the images, single short runs with no second occurrence
-- R7476: 74 of 1,621 tokens - blocker: open-codes; letters known from gloss or key but no word, after six passes (digit re-transcription at 3x, band alternatives, LM scoring)
+- R7476: 67 of 1,621 tokens - blocker: open-codes; letters known from gloss or key but no word, after seven passes (digit re-transcription at 3x, band alternatives, Ottoman/Latin/old-spelling candidates, LM scoring)
 - R7476: 8 tokens in names (p. 32 L9-10, code 216) - blocker: no-key-material; glossed syllables, no matching name in the embassy literature
 - R7476: 5 one-off codes 2, 224, 266, 299 x2 - blocker: no-key-material; no gloss, no band value
 - R7476: 3 tokens - blocker: illegible; margin number p. 31 L32, stroke p. 32 L13, gloss over code 112 at 3x
