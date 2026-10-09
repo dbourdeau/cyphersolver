@@ -6,6 +6,7 @@
 # value column: gloss values with counts; R7476 values from sien/R7476_values.tsv (another reader; aligned glosses).
 # conflict = different syllables glossed for one code (many are glosser slips or one-position misplacements).
 # "minor" = differs only in ł/l, ą/a, ę/e, y/i, ż/z; CONFLICT = different syllables (mostly single glosser slips).
+# pass 5/6 (9 Oct 2026): 135 Kanclerz, 215 Porta, 310 x, 280 u added; 44 Chocim also on p.32 L28 (read 14 before); see sien/R7476_pass5.txt.
 code	value	count	where seen	conflict
 2	?	1	R7476 x1	
 6	a (9); e[?] (1); R7476: a (23)	35	R7484 p.111 x3; R7484 p.112 x4; R7484 p.113 x1; R7485 p.115 x2; R7476 x25	CONFLICT: a / e
@@ -83,7 +84,7 @@ code	value	count	where seen	conflict
 130	l (2); R7476: ł (1) / o (1)	4	R7484 p.112 x1; R7484 p.113 x1; R7476 x2	CONFLICT: l / o / ł
 133	lu (1); R7476: lu (1)	2	R7484 p.111 x1; R7476 x1	
 134	R7476: no (1)	1	R7476 x1	
-135	?	1	R7476 x1	
+135	Kanclerz (R7476 pass 5: glossed "Kanclerz", p.33 L21 "Panu Kanclerzowi Koronnemu")	1	R7476 x1	
 136	ł (6); l (1); R7476: ł (18) / l (1) / ła (1)	28	R7484 p.111 x2; R7484 p.112 x2; R7484 p.113 x1; R7485 p.115 x2; R7476 x21	CONFLICT: l / ł / ła
 137	ł (1); R7476: ł (2)	3	R7484 p.111 x1; R7476 x2	
 139	la (2); ła (1); R7476: ła (9) / la (6) / o (1) / ł (1)	20	R7484 p.111 x1; R7484 p.113 x1; R7485 p.115 x1; R7476 x17	CONFLICT: la / o / ł / ła
@@ -132,7 +133,7 @@ code	value	count	where seen	conflict
 206	u (1)	1	R7484 p.112 x1	
 213	R7476: per (1)	1	R7476 x1	
 214	b (1)	1	R7484 p.112 x1	
-215	?	2	R7476 x2	
+215	Porta (R7476 pass 5: glossed "Porta" p.31 L28, "Por" p.31 L33; second Porta code beside 213)	2	R7476 x2	
 216	R7476: Pułta (1)	1	R7476 x1	
 224	?	1	R7476 x1	
 226	ż (1)	1	R7484 p.113 x1	
@@ -171,6 +172,7 @@ code	value	count	where seen	conflict
 275	to (5); tą (1); R7476: to (4) / t (1)	11	R7484 p.111 x1; R7484 p.112 x3; R7484 p.113 x1; R7485 p.115 x1; R7476 x5	CONFLICT: t / to / tą
 276	tu (2); R7476: tu (8)	10	R7484 p.111 x1; R7484 p.112 x1; R7476 x8	
 278	?	1	R7476 x1	
+280	u (R7476 pass 6: glossed "u", p.32 L33 "uciekł"; u band before 284)	1	R7476 x1	
 283	R7476: ta (1) / ra (1)	2	R7476 x2	CONFLICT: ra / ta
 284	u (2); Han (1); R7476: u (10)	13	R7484 p.111 x1; R7484 p.112 x1; R7485 p.115 x1; R7476 x10	CONFLICT: han / u
 291	wi (2); two (1); kwa[?] (1); R7476: w (16)	20	R7484 p.111 x2; R7484 p.112 x1; R7484 p.113 x1; R7476 x16	CONFLICT: kwa / two / w / wi
@@ -184,7 +186,7 @@ code	value	count	where seen	conflict
 300	wezyr (1); R7476: wezyra (2) / wezyr (1)	4	R7484 p.111 x1; R7476 x3	CONFLICT: wezyr / wezyra
 303	weden[?] (1)	1	R7484 p.111 x1	
 309	wezyr (1)	1	R7484 p.113 x1	
-310	?	1	R7476 x1	
+310	x (R7476 pass 6: glossed "x", p.33 L16 "wekslowe"; x band 310-315)	1	R7476 x1	
 311	woysko[?] (1)	1	R7484 p.113 x1	
 314	R7476: wozy (1)	1	R7476 x1	
 315	R7476: x (2)	4	R7476 x4	

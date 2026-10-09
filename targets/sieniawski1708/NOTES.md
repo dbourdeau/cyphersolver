@@ -179,12 +179,33 @@ Page map, systems and transcriptions by a subagent (`sien/map.md`, `sien/R74xx.t
 - Part measures: printed letters complete (Kaczka); unprinted pieces R7475 ~99.6% (glossed), R7481 99.6%, R7482
   100%, R7484 95.9%, R7485 100%, R7476 88.5%.
 
+## Pass 3 on R7476 and R7484 (9 Oct 2026, the user approved finishing them)
+
+- R7484: code 76 = ferman (glosses "F[e]rmana", "farman"; f band 70-78; R7476 "dano ferman"), "co im ferman i
+  wbijają", "stambulscy" (37 = cy): **495 of 513 = 96.5%**. Open, 18 tokens: "umowi-ia t-r-ze-y s-za psuje" (7)
+  and "ta ... s-fi-d-no" (5) whose syllables are certain but form no word found; code 112 (gloss a flourish,
+  illegible at 3.5x; k band, "kajmakam" unproven); "c-wo-ko-wa-ni" (5).
+- R7476, passes 4-6 (sien/R7476_pass5.txt, sien/R7476_unresolved.txt): the bad stretches re-transcribed at
+  2.5-3x digit by digit (the closed 7 read as 4 six times, 51/61, 107/47, 245/243, 249/240, 163/168, 236 = 280), the
+  glosses re-read, Polish words scored with lang/ pl-modern, names checked against Perłakowski 2020 on the embassy
+  (Jan Spiegel = "Pan Szpigieł", Franciszek Goltz). New: "on z tąd nie ruszy, póki mu Porta nie da takiego konwoju",
+  "trzysta lwowych na drogę", "z listu przejętego", "sołtan gałga uciekł do Czerkies", "a wekslowe kupcy nie chcą
+  płacić", "donieść Jmci Panu Kanclerzowi Koronnemu"; codes 135 = Kanclerz, 215 = Porta (beside 213), 280 = u,
+  310 = x added to syllabary.tsv. **1,531 of 1,621 = 94.4%** (p. 31 97.2%, p. 32 89.7%, p. 33 96.1%, p. 34 97.5%).
+  Residue 90 tokens: 74 whose letters are known (gloss or key) but form no word after band alternatives, digit
+  look-alikes and re-division; 8 in names not identifiable (a seven-sign name on p. 32 L9-10, code 216 glossed
+  "Pułta"); 5 one-off codes with no gloss (2, 224, 266, 299 x2); 3 illegible after zoom.
+
 ## Remaining gaps
 - Schenck letters: 65 of 77 three-digit codes (394 tokens), mostly persons (187, 181, 166, 190, 254, 258, 132, 193, 186 ...) - blocker: no-key-material; roles fixed from context, names not; no key with the letters, on DECODE or in print; the 100s-200s are not alphabetical, so position gives no bound; the Saxon keys would be in the Hauptstaatsarchiv Dresden and the Wiener Diarium 1706 (dated cribs) is behind a bot check the session may not pass
 - Schenck letters: dotted signs d., e., g., c., m., p., oo, ooo, oj and small codes 3., 2. (about 90 tokens) - blocker: no-key-material; articles or pronouns, no value fits every occurrence and none is glossed
 - Schenck letters: 8 letter-cipher runs, 44 numbers, without sense (lceth, ditlan, gutswor ...) - blocker: too-short; digits confirmed twice on the images, single short runs with no second occurrence
-- R7476: 187 of 1,622 tokens - blocker: open-codes; glossed or keyed syllables that form no word (probably names), 8 one-off codes with no gloss, 3 illegible numbers
-- R7484: 21 of 513 tokens - blocker: open-codes; code 76 glossed two ways, two passages whose syllables are certain but whose words are not recovered
+- R7476: 74 of 1,621 tokens - blocker: open-codes; letters known from gloss or key but no word, after six passes (digit re-transcription at 3x, band alternatives, LM scoring)
+- R7476: 8 tokens in names (p. 32 L9-10, code 216) - blocker: no-key-material; glossed syllables, no matching name in the embassy literature
+- R7476: 5 one-off codes 2, 224, 266, 299 x2 - blocker: no-key-material; no gloss, no band value
+- R7476: 3 tokens - blocker: illegible; margin number p. 31 L32, stroke p. 32 L13, gloss over code 112 at 3x
+- R7484: 17 of 513 tokens - blocker: open-codes; three short passages whose syllables are certain but whose words are not recovered
+- R7484: code 112 (1 token) - blocker: illegible; its gloss is a flourish unreadable at 3.5x, and its only other occurrence (R7476) is also illegibly glossed
 
 ## Escalation
 - [x] siblings: R7460-R7467 and R7501-R7507 opened (other collections and correspondents); DECODE holds only AKM 21 plik 30/1 of the Schenck file; R7484/R7485 used for R7476's vocabulary
@@ -192,4 +213,4 @@ Page map, systems and transcriptions by a subagent (`sien/map.md`, `sien/R74xx.t
 - [x] known-keys: Kaczka's keys A and B, the R7475 table and the Chomentowski syllabary scored on the Schenck runs: none fits
 - [x] print: Kaczka 2012, Mareș 1987 (cited), web searches for Schenck, "Sidon", "Seligman", Saxon envoys at Vienna 1706 (Wackerbarth, Vesnich) and printed Saxon-Vienna correspondence: no key, no edition; the Wiener Diarium on ANNO is behind a Cloudflare Turnstile check
 - [x] key-rebuild: letter table complete; second context pass over every code (transcr/CTX_*); alphabetical order tested: holds in the 500s (509 Friede, 513 Ordre, 515 Progressen, 519 Reise, 524 Urlaub, bounding 502, 518, 521), fails for the persons; R7476 syllabary bands used to bound values
-- [x] retry: every run and every code sentence re-read at full resolution; R7476 glosses re-read at high contrast, R7481-R7485 token by token
+- [x] retry: every run and every code sentence re-read at full resolution; R7476 glosses re-read at high contrast and its unread stretches re-transcribed digit by digit at 3x (passes 4-6), R7481-R7485 token by token, R7484 pass 3 at 3.5x; Polish candidates scored with lang/ pl-modern; Perłakowski 2020 on the Chomentowski embassy used for names

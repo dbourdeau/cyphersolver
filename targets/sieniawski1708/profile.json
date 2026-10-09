@@ -108,11 +108,11 @@
     "location": [
      "interlinear"
     ],
-    "source": "syllable-by-syllable interlinear decipherment over 99.6% of the numbers; faint glosses re-read at high contrast; 1,435 of 1,622 tokens (88.5%) read as sense (sien/R7476_reading.txt)",
+    "source": "syllable-by-syllable interlinear decipherment over 99.6% of the numbers; glosses re-read at high contrast and unread stretches re-transcribed at 3x: 1,531 of 1,621 tokens (94.4%) read as sense (sien/R7476_reading.txt)",
     "partial": true
    },
    "length": {
-    "tokens": 1622,
+    "tokens": 1621,
     "unit": "code groups",
     "measured": false
    },
@@ -180,7 +180,7 @@
     "by": "llm from images",
     "source": "DECODE IMG_R7484, IMG_R7485",
     "image_quality": "good",
-    "notes": "R7484 513 tokens (three clear date figures removed), R7485 96; second pass sien/R7484_pass2.txt, R7485_pass2.txt: 95.9% and 100% read as sense."
+    "notes": "R7484 513 tokens (three clear date figures removed), R7485 96; passes in sien/R7484_pass2.txt, R7485_pass2.txt: 96.5% and 100% read as sense."
    }
   }
  ],
@@ -369,6 +369,24 @@
    "what": "R7481, R7482, R7484, R7485 checked token by token against gloss and key (encipherment slips settled): 99.6%, 100%, 95.9%, 100% read as sense.",
    "result": "worked",
    "date": "2026-10-09"
+  },
+  {
+   "kind": "crib",
+   "what": "R7484 pass 3: code 76 = ferman from two glosses, the f band and R7476; 'stambulscy'; LM scoring and the embassy literature (Perłakowski 2020) gave nothing for the rest: 96.5%.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "R7476 passes 4-6: unread stretches re-transcribed digit by digit at 2.5-3x (closed 7 read as 4 six times, other look-alikes), glosses re-read, Polish words scored with lang/ pl-modern, names checked against Perłakowski 2020: 88.5% -> 88.9% -> 92.9% -> 94.4% (1,531 of 1,621); codes 135 Kanclerz, 215 Porta, 280 u, 310 x added.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "literature search",
+   "what": "Chomentowski embassy 1712-14 for names as cribs: Perłakowski 2020 names Jan Spiegel ('Pan Szpigieł') and Franciszek Goltz; no other name matched the unread syllables (Poniatowski, Kapudan, kajmakam, Bender, Białogród, Gdańsk, Pułtawa tried).",
+   "result": "partial",
+   "date": "2026-10-09"
   }
  ],
  "outcome": {
@@ -422,7 +440,7 @@
     "records": "R7475, R7476, R7481, R7482, R7484, R7485",
     "method": "read from existing decipherment",
     "extent": "partial",
-    "basis": "contemporary interlinear decipherments transcribed and checked: R7475 ~99.6%, R7481 99.6%, R7482 100%, R7484 95.9%, R7485 100%; R7476 88.5% (faint glosses, unparsed names)"
+    "basis": "contemporary interlinear decipherments transcribed and checked: R7475 ~99.6%, R7481 99.6%, R7482 100%, R7484 96.5%, R7485 100%; R7476 94.4% after six passes (74 tokens of known letters form no word)"
    }
   ],
   "gaps": [
@@ -442,14 +460,34 @@
     "detail": "digits confirmed twice on the images; single short runs, probably names or slips, no second occurrence"
    },
    {
-    "item": "R7476: 187 of 1,622 tokens (11.5%)",
+    "item": "R7476: 74 of 1,621 tokens",
     "blocker": "open-codes",
-    "detail": "glossed or keyed syllables that form no word (probably names), 8 one-off codes with no gloss, 3 illegible numbers"
+    "detail": "letters known from gloss or key but no word, after digit re-transcription at 3x, band alternatives and LM scoring"
    },
    {
-    "item": "R7484: 21 of 513 tokens",
+    "item": "R7476: 8 tokens in names (p. 32 L9-10, code 216)",
+    "blocker": "no-key-material",
+    "detail": "glossed syllables; no matching name in the embassy literature"
+   },
+   {
+    "item": "R7476: codes 2, 224, 266, 299 x2",
+    "blocker": "no-key-material",
+    "detail": "one-off codes, no gloss, no band value"
+   },
+   {
+    "item": "R7476: 3 tokens",
+    "blocker": "illegible",
+    "detail": "margin number p. 31 L32, stroke p. 32 L13, gloss over 112 at 3x"
+   },
+   {
+    "item": "R7484: 17 of 513 tokens",
     "blocker": "open-codes",
-    "detail": "code 76 glossed two ways; two short passages whose syllables are certain but words not recovered"
+    "detail": "three short passages whose syllables are certain but whose words are not recovered"
+   },
+   {
+    "item": "R7484: code 112",
+    "blocker": "illegible",
+    "detail": "gloss a flourish unreadable at 3.5x; R7476's only 112 also illegibly glossed"
    }
   ],
   "notes": "R7468-R7500 are four collections: the Schenck letters (AKM 21), Zbiór Dzieduszyckich 26/32 nr 13 and nr 5, and 24/11 no. 116 (R7484-R7485, misnamed Krakow_UNK on DECODE). Pass 2 (coordinator's request for a full reading): 62.4% -> 63.6% on the Schenck letters with the dotted signs now counted as tokens."

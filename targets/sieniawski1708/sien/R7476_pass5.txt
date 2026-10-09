@@ -1,0 +1,293 @@
+R7476 - pass 5: re-transcription of the numbers in every unresolved stretch (9 Oct 2026)
+Method: full-resolution DECODE images, grayscale + autocontrast(cutoff=1), enlarged 1.6-3x (img/crop/r76d_*.jpg);
+each digit checked against the same digit in well-read words on the same line; then decoded with sien/syllabary.tsv,
+band-checked, gloss re-read, and the Polish word sought. Format per stretch:
+  old = numbers as in sien/R7476.txt; new = numbers as re-read; gloss = interlinear gloss as re-read; reading; verdict.
+  Verdict: READ (tokens now in a real word that fits), PART, OPEN (blocker).
+
+p.31 L1  (crop r76d_p31_L1)
+  old: 173 59 156 33 326 "rorum" 101 59 32 46 139
+  new: 173 59 156 33 326 "rozum" 101 59 32 46 139   (numbers confirmed; the clear word is "rozum": the third letter is
+       the hand's z (3-shaped, as in "zostanie" L18), not r)
+  gloss: ni e mo H z | i e c d o
+  reading: "Nie mo[gę/gą] z-rozum-i-e-ć, do czego nas bawią" = zrozumieć: 326 z, 101 i, 59 e, 32 ć.
+  verdict: READ (4 tokens: 326 101 59 32)
+
+p.31 L19  (crops r76d_p31_L19a/b/c)
+  old: 329 244 141 244 330
+  new: 329 244 171 244 330   (the middle number is 1-7-1 as in 171 "na" elsewhere: the 7 is the hand's closed 7 that
+       looks like 4; the gloss above it is clearly "na")
+  gloss: za ſ na ſ ze
+  reading: "Zatrzymanie zaś nas, że boją się, żeby nie z tego pochodziło" (the detention of us is because they fear...)
+  verdict: READ (2 tokens: 171 244)
+
+p.31 L20-21  (crops r76d_p31_L20, r76d_p31_L20end, r76d_p31_L21, r76d_p31_L21start)
+  old: ... 33 93 34 180 "nie" | "wi" 273 163 242 234 284 "Waszeci Mości Pana"
+  new: ... 33 93 34 180 "nie" | "wi"/"in" 273 168 242 234 284   (163 is 168: the last digit is a closed 8, as in 180 on L20;
+       both are n, so no change in value; 273 = 2-7-3, the 7 has the hand's crossbar)
+  gloss: c h c o | te n ta re u (the "u" over 284 is struck out by the glosser with a heavy stroke)
+  reading: "że chcą ... [in]tentare Waszeci Mości Pana przejście króla szwedzkiego": 273 168 242 234 = te-n-ta-re, Latin
+       (in)tentare; the clear word before it, written "wi." with three minims and a dot, can be read "in", giving
+       "intentare" (to press, to bring on). 284 u is cancelled by the glosser (surplus sign).
+  verdict: PART-READ (?) - 273 168 242 234 counted as "(in)tentare(?)"; 284 left (struck surplus, no word).
+
+p.31 L24  (crops r76d_p31_L24, r76d_p31_L24z)
+  old: 141 330 ? "nie może"
+  new: 141 330 2[4]9 "nie może"   (first digit 2 and last digit 9 clear; the middle digit is under a blot and the
+       descender of the gloss; 249 si is the only s-band value that gives a word)
+  gloss: ze | blotted: a tall long-s with a heavy blot, consistent with the glosser's "ſi"/"ſię"
+  reading: "Turcy przysłali, że się nie może poznać, czym komisarzów nie widzieć traktatu" (that it cannot be known
+       without the commissioners seeing the treaty)
+  verdict: READ(?) (1 token, middle digit inferred)
+
+p.31 L26  (crop r76d_p31_L26)
+  old: 180 46 245 114 275 232 153 19 46 326 291 234 120 197
+  new: 180 46 2[4]5 114 275 232 153 19 46 326 291 234 120 197  (2-?-5: the middle digit is crossed by the gloss's long
+       ſ; 215 or 245)
+  gloss: o d [ſ, doubled stroke] kto ry ma ...
+  reading: "19 46 326" = by-d-ź = "bydź", the ordinary c.1700 spelling of "być": 326 is the ź, not a stray "z".
+       "traktatu, od[?], który ma bydź w ręku poselskich". "o d s" before "który": no word (odpis needs pi; odesłany
+       needs more signs).
+  verdict: 326 READ; 245 OPEN (G: letters o-d-s known, no word)
+
+p.31 L28 and L33  (crops r76d_p31_L28, r76d_p31_L28g, r76d_p31_L33, r76d_p31_L33g)
+  old: 294 7 215 "poniewasz" ; 144 330 215 194 249
+  new: 294 7 215 ; 144 330 215 194 249  (2-1-5 confirmed both times: the 1 is a plain stroke, not 7 or 4)
+  gloss: over 215 on L28 "Porta" (written in full, the "t" crossed; pass 2 read it "posta"); on L33 "Por" + flourish
+  reading: 215 is a second code for Porta (213 is glossed "Por" on p.32 L3; 199-216 is the Porta/Pułtawa name region).
+       L28: "nie będąc secura de amicitia Portae, ponieważ cum hoc documenta ..."; L33: "że Porta posyła(?) do króla
+       szwedzkiego".
+  verdict: READ (2 tokens)
+
+p.31 L29-30  (crops r76d_p31_L29a/b, r76d_p31_L29z, r76d_p31_L30a/b, r76d_p31_L30z)
+  old: ... "ataky" 150 173 51 "W Mości" 52 49 37 60 149 | 180 331 180 197 234 46 245 330 86 52 284 244 143 80 ...
+  new: ... "ataky" 150 173 61 "WMM P[ana]" (52) 49 37 60 149 | 1[6/8]0 331 180 197 234 46 245 330 86 52 284 244 143 80 ...
+       (the third number is 61, not 51: its first digit is under the glosser's long ſ and the gloss is plainly "e";
+       173 confirmed: the 7 is the crossed, 4-like 7; the first number of L30 has a faint middle digit, 160 or 180)
+  gloss: m ni e | o da ci e o | [m?] [zi] [o] - re d ...
+  reading: 150 173 61 = m-ni-e = "mnie": "a taki(?) mnie W Mość dodacie ...". 197 234 46 245 330 86 = po-re-d-s-ze-go =
+       "prędszego" (197 po for p, the encipherer's habitual slip, cf. 194 "by"; 234 re for rę; 245+330 s-ze = sze):
+       "dodacie [...] prędszego do usług ich pośpiechu" (you will grant me quicker dispatch for their service; partitive
+       genitive after dodać). 149 1[6/8]0 331 180 = "o n zy o" / "o mo zy o": no word.
+  verdict: READ 9 (150 173 61; 197 234 46 245 330 86 as "prędszego(?)"); OPEN 4 (149 160 331 180, G)
+
+p.31 L31-32  (crops r76d_p31_L31b, r76d_p31_L32a/b, r76d_p31_L32z)
+  old: 173 119 85 248 235 | 294 244 "y smieli. Ue penitius informati" 270 253 114 245 294 ?
+  new: 173 119 85 248 235 | 294 244 ... 270 253 114 245 294 3[4?]  (all digits confirmed; the last group is squeezed
+       into the right margin, "3" and a 4-like digit, glossed "e"?)
+  gloss: ni ko go ſe ri | wa ſ ... t sta k ſ wa e(?)
+  reading: "nikogo se-ri-wa-s i śmieli": no word ("się rwą"? needs rwą; "serio" leaves -was). "informati t-sta-k-s-wa-?":
+       no Latin or Polish word.
+  verdict: OPEN 9 (G; last number I)
+
+p.31 L36 / p.32 L1  (crop r76d_p31_L36)
+  old: "ale ten zły" 191 170 [119 struck] "y" 141 | 249 60 19 61 "y" 171 244 294 ...
+  new: 191 170 [119 struck] "y" 171 | 249 60 19 61 ...   (the last number is 1-7-1, the closed 7; glossed "na" (struck
+       and rewritten) as in L19)
+  reading: "ale ten zły pan i na siebie, i na swe państwo miał(o) odpowiedzieć": 249 60 19 61 = si-e-bi-e = "siebie"
+       (pass 4 had "się bić(?)").
+  verdict: READ (1 token; and "siebie" replaces "się bić(?)")
+
+p.31 totals: 24 of the 39 pass-4 residue tokens now read; 15 open (L21 284; L26 245; L29-30 149 160 331 180;
+  L31-32 248 235 294 244 270 114 245 294 3?).
+
+p.32 L2  (crop r76d_p32_L2)
+  old/new: 330 249 96 180 170  (confirmed: 2-4-9, 9-6)
+  gloss: ze | over 249 96 a struck word (pass 4: "si hospodar"), illegible under the strike
+  reading: "że [si-hospodar] on z tąd nie ruszy": no word; the glosser himself cancelled his reading.
+  verdict: OPEN 2 (G)
+
+p.32 L9-10  (crop r76d_p32_L9-10)
+  old: 170 244 14? 114 235 244 | 320 190 174 196
+  new: 170 244 14[3] 114 235 244 | 320 190 174 196  (the third number is "1" + a 4 with no third digit visible; gloss
+       "łu" = 143, so the 3 is lost or never written)
+  gloss: n ſ łu k ra ſ | za pu no pi
+  reading: "dano ordynans [łu-k-ra-s-za-pu-no-pi], że po[z]stąd pojechał": a name (dative?) not identified.
+  verdict: OPEN 7 (name?)
+
+p.32 L12  (crops r76d_p32_L12, r76d_p32_L12z, r76d_p32_L12-13a)
+  old: 119 200 32 92 141 107 236 83 149 174
+  new: 119 200 32 92 1[7]1 47 236 83 149 174  (141 is 171, the closed 7 again; "107" is 47: the "1" is the tail of the
+       gloss stroke, the digits are 4-7)
+  gloss: lw wy ch | na d ro ge | da no  (the glosser wrote "lw" over 119: "trzysta lwowych", lion-thalers, not "nowych")
+  reading: "za pracę jego dawszy mu trzysta lwowych na drogę, dano ferman": 171 47 236 83 = na d-ro-gę.
+  verdict: READ 4
+
+p.32 L12-13  (crops r76d_p32_L12-13a/b, r76d_p32_L13z)
+  old: 330 19 266 | "y" ? 299 "także" ... 329 136 141 234 33 95 244 168 60
+  new: 330 19 266 | "y" 1(?) 299 ... 329 136 141 234 [30/80] 95 244 168 60  (266 confirmed, its gloss struck; the "?" is a
+       single upright stroke with a dot, perhaps "1" or a struck sign; the number after 234 is 30 or 80, not 33)
+  gloss: ze by [struck] | big C-flourish + "ſwk"(?) over ? 299 | ł na/li re a Han ſ n e
+  reading: "żeby [266] i [? 299] także wyjeżdżali, [re ? Han s n e]": no word. 266 sits between Seraskier (260) and the
+       t-band: a name in Sz-/Su- ("Szwedzi"? "Sułtan"?) but no gloss to confirm.
+  verdict: OPEN 9 (N 266, 299; I the stroke; G re ? s n e)
+
+p.32 L16  (crop r76d_p32_L16)
+  old: 141 244 276 108 230 330 105 243 85 330 256
+  new: 141 244 276 1[9]1 230 330 105 243 85 330 256  (the number after "listu" is blotted: 1-?-1 / 1-0-?; read 191 p)
+  gloss: li ſ tu | [blot] r ze ie te go | ze Stanisław
+  reading: "Mamy wiadomość z listu przejętego, że Stanisław do swoich się przebierać będzie": 191 230 330 105 243 85 =
+       p-r-ze-ie-te-go = przejętego (an intercepted letter; ie for ję, te for tę as usual in this code).
+  verdict: READ 6 (?) - the first digit group is blotted, the word is certain from the rest.
+
+p.32 L17-19  (crops r76d_p32_L17-19r, r76d_p32_L18-19l)
+  old: ... 59 6 141 | 299 52 "WMM Pan" 191 230 330 46 "kilko niedziel" 191 170 173 194 | 245 170 240 105 85 2 18 174 6 250
+  new: ... 59 6 141 | 299 52 ... 191 140 173 194 | 243 170 240 105 85 2 18 174 6 250
+       (after "niedziel": 140, not 170 - the second digit is a 4, gloss "le"; first number of L19 is 243, gloss "te",
+       not 245)
+  gloss: e a li | w?(struck) do | p le ni po | te n t ie go [-] be no a so li ...
+  reading: "przed kilko niedziel plenipotent jego [? be no a] solicitował mię o amnistią": 191 140 173 194 243 170 240 =
+       p-le-ni-po-te-n-t, 105 85 = ie-go (jego): Stanisław's plenipotentiary asked the envoy for an amnesty.
+       "a li 299 do WMM Pana" and "2 18 174 6" (?-be-no-a) stay without a word.
+  verdict: READ 9; OPEN 6 (141 299: G/N; 2 18 174 6: N/G)
+
+p.32 L21  (crop r76d_p32_L21)
+  old: "z certa assecuratione" 114 245 236 179 170 237 145 60 14 240
+  new: 114 245 236 179 170 234 1[4/7]5 60 1[4/7] 240  (the sixth number is 234, not 237: gloss "re"; the next two have
+       the 4/7 ambiguity: 145/175, 14/17)
+  gloss: k to ro o n re u(?) e ba(?) t   (245 glossed "to", as twice elsewhere in R7476)
+  reading: "z certa assecuratione, k-to-ro on ..." = "którą on" (o for ą, the usual slip: cf. "chco" for chcą p.31 L20);
+       "re ? e b t" after it: no word (175 nu + 17 ba would give "re-nu-e-ba-t", no word either).
+  verdict: READ 5 (114 245 236 179 170); OPEN 5 (G)
+
+p.32 L24-25  (crops r76d_p32_L24 (missed the line), r76d_p32_L25)
+  old: 52 180 47 244 154 | 85 234 224 249 37 60 101 196
+  new: ... 85 234 224 240 37 60 101 ...  (the number after 224 is 240, not 249: its last digit is a closed 0)
+  gloss: go re [ſui?] ſ cy(?) e i
+  reading: "lecz nie mają [do o d s me go re 224 s ci e i pi] do tego": no word.
+  verdict: OPEN 13 (N 224; G)
+
+p.32 L27-30  (crops r76d_p32_L27-30, r76d_p32_L29, r76d_p32_L30g)
+  old: 291 142 114 170 150 85 | 93 52 14 104 173 60 | ... 150 191 249 136 244 326 33 324 61 245 32 | 112 105 46 171 114
+  new: 291 142 114 140 150 85 | 93 52 44 104 173 60 | ... 150 191 244 136 244 320 33 324 61 245 32 | 112 105 46 171 114
+       (L27: 140 le, not 170; L28: 44, not 14 - both digits are the 4 with the open top; L29: 244 and 320, not 249/326)
+  gloss: w ło k [-] m go | do Chom/Choc. a ni e | m pi sa ł ſ z c z e ſ c | [gloss over 112 illegible: "ſmozas"?] ie d na k
+  reading: L28 "nie dano mi wozów żadnych do Chocimia (44 = Chocim, the name code; 104 ia = the case ending), nie poszło
+       i nie pójdzie" (Chocim, which the Porte was refortifying). L27 "z-w-ło-k le m go": no word ("zwlokłem go"? one sign
+       short); L29 "s z c z e s c" after "pisał": no word; L30 112 = a k-band name code, gloss unreadable.
+  verdict: READ 3 (52 44 104); OPEN 11 (L27 3 G, L29 7 G, L30 112 I)
+
+p.32 L31-33  (crop r76d_p32_L31-33)
+  old/new: ... 60 114 | 142 88 50 292 140 270 84 59 234 104 95 6 249 170 6 191 230 | 330 245 326 141 ... 82 236 34 60 114 139
+       (numbers confirmed at 0.95x on the whole line; no digit changed)
+  gloss: e k | to ca de w le t ge e re ia Han a ſ n a p r | ze ſ z li ... ga ro c e k la
+  reading: "Dewlet Girej Hana syna przeszli": 6 = the -a of Hana, 249 170 6 = si-n-a = syna (si for sy). The khan's son
+       (Devlet Giray's sons led the Kuban/Circassian raids). "k-to/ło-ca" before Dewlet and "ro-c-e-k-la" after "gałga":
+       no word.
+  verdict: READ 4 (6 249 170 6); OPEN 8 (G)
+
+p.32 L35-36  not re-cropped (crop budget); numbers as in pass 4: OPEN 9 (G).
+
+p.33 L21  (crop r76d_p33_L21)
+  old: ? 135 180 296 119 237 140 142 152 32 92 37 61 141 244
+  new: 2[?] 135 180 296 119 23[7] 140 142 152 ...  (the first number is a 2 with a lost tail; 135 confirmed)
+  gloss: "Pu" over the first number, "Kanclerz" over 135, "wi" over 296, "ko" and "ro/w" over 119 237
+  reading: "Proszę tego wszystkiego raz WMM donieść Jmci Panu Kanclerzowi Koronnemu; chcieli ...": ? = Pu(=Panu, a code
+       glossed with the usual abbreviation), 135 = Kanclerz (name code), 180 296 = o-wi, 119 237 140 142 152 =
+       ko-ro-n-ne-mu (140 glossed n twice elsewhere, 142 glossed ne four times).
+  verdict: READ 8 (Jan Szembek, vice-chancellor, or the grand chancellor; the office is enough)
+
+p.33 L11-12  (language only, no crop): 330 150 19 180 244 240 230 332 | 284 104 155 171 107 32 = ze-m-by o-s-t-r-zo
+  u-ia-mi-na-ią-c: "bo na nich Turcy zemby ostrzą, upominając się za jakieś towary" (zemby = zęby, the common c.1700
+  spelling; zo for zą; 104 ia for po is a one-sign slip). READ 2 (150 104).
+
+p.33 L4, L8, L16, L24-26, L28-29, p.34 L11: not re-cropped (budget); language pass only, no new word: OPEN as in pass 4.
+
+== Pass 5 totals ==
+  resolved this pass: p.31 24, p.32 31, p.33 10, p.34 0 = 65 tokens.
+  p.31  15 unread -> 522/537 = 97.2%
+  p.32  70 unread -> 473/543 = 87.1%
+  p.33  26 unread -> 357/383 = 93.2%
+  p.34   4 unread -> 155/159 = 97.5%
+  total 115 unread -> 1507/1622 = 92.9% (pass 4: 88.9%). Still below the 95% bar.
+  Digit corrections found (old -> new): 141->171 (x3: p.31 L19, p.31 L36, p.32 L12), 51->61, 107->47, 108->191(blotted),
+  170->140 (x2), 245->243, 14->44, 249->240, 249->244, 326->320, 237->234, 163->168; i.e. 7/4 (6 cases), 5/6, 9/4,
+  1/4, 0/9 confusions as predicted.
+
+======================================================================================================================
+PASS 6 (9 Oct 2026; crops img/crop/r76e_*, 23 crops) - the lines that had no image pass in pass 5, then gloss zooms on
+the remaining "letters known, no word" stretches. Same method. Corrected numbers and the new code values (135 Kanclerz,
+215 Porta, 310 x) are now also in sien/R7476.txt ("P5:" note under each changed line; C: numbers corrected, G/K left as
+first read) and sien/syllabary.tsv.
+
+p.33 L16  (crops r76e_p33_L16, r76e_p33_L16b)
+  old/new: 295 310 142 291 11 120 193 34  (confirmed)
+  gloss: we x lo w e ku p cy  (the glosser wrote "x" over 310)
+  reading: "a wekslowe kupcy nie chcą płacić" (bill-of-exchange merchants). 310 = x: the x codes run 310-315 (315 is
+       glossed x twice in "expedycja"), after wezyr 309 and before woysko 311 by the w/x order of the code.
+  verdict: READ 1
+
+p.33 L24-25  (crops r76e_p33_L24, r76e_p33_L25, r76e_p33_L25g)
+  old: "kiedy" 191 150 180 | 326 171* 7 136 294 136 "ale wszystko"
+  new: "kiedy" 191 150 180 | 326 171 "y" 156 294 136   (the "7" is the clear letter y, written without a point, like the
+       "y" before it on L26; 136 -> 156: the middle digit is a 5, gloss "mo")
+  gloss: p m o | z na a mo wa ł
+  reading: "nie miałbym sam z czym przyjechać, kiedy bym oznaymował" = 180 326 171 y 156 294 136 = o-z-na-y-mo-wa-ł.
+  verdict: READ 6 (and the token base drops by 1: the "7" was not a cipher token)
+
+p.33 L26  (crops r76e_p33_L26, r76e_p33_L26g)
+  old/new: "y" 244 154 86 216 17 296 32  (confirmed)
+  gloss: ſe me go Pułta(?) ba wi ć  (the gloss over 216 can also be read "Pota")
+  reading: "rozumiem, że i s(a)mego [216] bawić nie będzie" = 244 154 86 "samego" (244 s for sa, cf. 249 si for sy in
+       "syna"): they will not detain even [216] himself. 216 a name code in the P-region (213/215 Porta, 216 Pułta/Pota
+       ...): not identified.
+  verdict: READ 3 (?); 216 OPEN (name?)
+
+p.33 L28-29  (crops r76e_p33_L28, r76e_p33_L29)
+  old/new: "wszytkich" 240 [struck gloss] | 330 32 331 121 ...  (240 confirmed: closed 0)
+  gloss over 240 struck through; L29 "że c zy krol [struck] w s ki ch ni e s zu ci" + p.33 L30 136 ł
+  reading: "mało wszytkich [240]-że-czy królewskich ..." would give "rzeczy" if 240 were r (230); 240 is t/s, so not
+       counted. "nie s-zu-ci-ł" (L29-30): no word ("nie stracił" needs tra).
+  verdict: OPEN 2 (240 now G, legible; 136 G)
+
+p.33 L4  (crops r76e_p33_L4, r76e_p33_L4b)
+  old/new: "niedość" 296 133 110 171 294 "y" 142 "composita"  (141 -> 171 confirmed by gloss "na"; 133 confirmed)
+  gloss: wie lu(?) ka na w y(b?) ne
+  reading: "wie-lu-ka-na-w-y-ne": no word.  verdict: OPEN 6 (G)
+
+p.33 L8  (crops r76e_p33_L8, r76e_p33_L8b, r76e_p33_L8g)
+  old/new: 294 295 142 32 118 154 156 194 243 136  (confirmed; 154 and 156 are underlined/struck in the cipher line)
+  gloss: wa we re(?) c i [struck] [struck] po [struck] ła
+  reading: "do Azowa, [we re c ki me mo] poszła": no word.  verdict: OPEN 6 (G)
+
+p.34 L11  (crops r76e_p34_L11 (missed, L10), r76e_p34_L11b)
+  old/new: 143 245 326 172 "y" 244 270 233 33  (confirmed)
+  gloss: łu ſ z ney | ſ t ra cy(?)
+  reading: "żeby był w słuszney i [s t ra c] przywio[...]": "straży" would need ży; no word.  verdict: OPEN 4 (G)
+
+p.32 L24-25  (crops r76e_p32_L24, r76e_p32_L25r)
+  old/new: "lecz nie maią" 52 180 47 244 154 | 85 234 224 240 37 60 101 196 52 243 85  (confirmed; 240 as in pass 5)
+  reading: no word ("do-o-d-s-me-go-re-?-s-ci-e-i-pi").  verdict: OPEN 13
+
+p.32 L35-36  (crops r76e_p32_L35r, r76e_p32_L36l)
+  old/new: ... 52 175 324 151 142 170 | 46 236 294 139 "y" 173 60 "wolni" 119 46 294 ...  (confirmed)
+  gloss: do nu z m lo n | d ro wa ła ... ni e | ko d wa
+  reading: "tam z Nahajami i Czerkiesami koło Donu zplondrowała(?), i niewolników dwa okręty przywieziono":
+       324 151 142 170 46 236 294 139 = z-[m]-lo-n-d-ro-wa-ła = "zplondrowała" (splądrowała, old spelling with z- and
+       -lon-); 151 is glossed m, an encipherer slip for p (191). 119 ko: "niewolniko[w]" + 46 294 "dwa".
+  verdict: READ 9 (8 with (?))
+
+p.32 L33  (crop r76e_p32_L33g)
+  old: 82 236 34 60 114 139
+  new: 82 280 34 60 114 13[9]  (the second number is 2-8-0, not 236: an 8 with a closed top loop; 280 sits in the u band,
+       before 284 u)
+  gloss: ga | u c ie k ł
+  reading: "sołtan gałga uciekł do Czerkies": 280 34 60 114 139 = u-ci-e-k-ł.
+  verdict: READ 5
+
+p.32 L31-32  (crop r76e_p32_L31-32g)
+  numbers confirmed; gloss over 114 | 142 88 = "k | to ca"; "jeszcze [k to ca] Dewlet": no word.  OPEN 3.
+
+p.32 L26-27  (crops r76e_p32_L26r, r76e_p32_L27g)
+  numbers confirmed (L27 140, as in pass 5); gloss "ka mu ie a ſ t z | w ło k - m go". The pass-3 "jest(?) zwłoka(?)" stays;
+  "le m go" no word.  OPEN 3.
+
+== Pass 6 totals ==
+  resolved this pass: p.32 14 (uciekł 5, zplondrowała + niewolników 9), p.33 10 (wekslowe 1, oznaymował 6, samego 3)
+  = 24 cipher tokens; the "7" on p.33 L25 is a clear y, so the base is 1621 (p.33 382).
+  p.31  15 unread -> 522/537 = 97.2%
+  p.32  56 unread -> 487/543 = 89.7%
+  p.33  15 unread -> 367/382 = 96.1%
+  p.34   4 unread -> 155/159 = 97.5%
+  total  90 unread -> 1531/1621 = 94.4% (pass 5: 92.9%). Below the 95% bar by 9 tokens.
+  Residue by blocker: G 74; name? 8; N 5; I 3 (see sien/R7476_unresolved.txt).
