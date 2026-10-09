@@ -49,6 +49,11 @@
   "it-cinquecento": {"language": "it", "period": "1490-1620", "norm": "early", "order": 5, "spaces": true,
     "sources": ["it-renaissance", "it-nunziature"], "language_id": false,
     "use_for": "Renaissance diplomatic Italian (nuncios, Este, Lucca, Milan)", "replaces": ["targets/lucca/lm.py", "targets/vatican5/build_it_lm.py"]},
+  "it-venezia": {"language": "it", "period": "1520-1620", "norm": "early", "order": 5, "spaces": true,
+    "sources": ["it-renaissance", "it-nunziature", "it-relazioni", "it-relazioni"], "language_id": false,
+    "use_for": "Venetian chancery and diplomatic Italian (Senate letters, ambassadors' despatches); the Relazioni at double weight",
+    "replaces": ["targets/ottobon/build_venlm.py (corpus/venlm.o5.sp)"]},
+
 
   "la": {"language": "la", "period": "classical-1600", "norm": "latin", "order": 5, "spaces": true,
     "sources": ["la-gutenberg"], "use_for": "Latin (papal, imperial and humanist correspondence)", "replaces": ["targets/soglia1848/lm5sp_la.bin"]},

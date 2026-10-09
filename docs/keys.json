@@ -1,5 +1,7 @@
 {
  "keys": [
+  {"id": "k-zifra-prima-1578", "label": "Zifra Prima of the Council of Ten, per scriver / per trazer (DECODE R1789)", "kind": "DECODE key record", "by": "Council of Ten, Venice (Franceschi's register)", "year": 1578, "note": "ASVe CX Cifre b. 4 reg. 16 ff. 64-65: one-part nomenclator on base letters a c d f g h with figures 1-99, single letters, syllables, words, numerals and nulls mixed; 527 codes transcribed from the per trazer table (targets/ottobon/keys/zifra_prima_R1789.tsv).", "image": {"src": "ottobon_key.jpg", "credit": "Archivio di Stato di Venezia, Consiglio dei Dieci, Cifre, chiavi e scontri di cifra, b. 4 reg. 16 ff. 64-65, via DECODE R1789", "caption": "The head of the Zifra prima per trazer: a1 Baylo, a2 Barbaria ..., a51 ce, c71-c79 lu lo li le la ma me mi mo, d7 pa ...", "page": "ottobon"}},
+  {"id": "k-r1790-golfo", "label": "Council of Ten cipher for the Gulf and Zara (DECODE R1790)", "kind": "DECODE key record", "by": "Council of Ten, Venice", "year": null, "note": "ASVe CX Cifre b. 4 reg. 16 f. 79: small cipher on bases c f m r (1-20), a dozen words on h; for the Captain in the Gulf, the Guardia against the Uskoks and the Rettori of Zara."},
   {"id": "k-brussels1635", "label": "Cardinal-Infante's Latin alphabet of 1635, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1635, "note": "Homophonic Latin alphabet of numbers 0-39 and letters, two to five signs per letter; recovered by aligning DECODE R1889 with the Cardinal-Infante's draft R954 (Brussels SEA 540). targets/ferdinand3/work/key1889.json."},
   {"id": "k-vienna1640", "label": "Ferdinand III's syllabary of 1640, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1640, "note": "The 1635 alphabet plus syllables in AEIOU order (40-54 = l/n/r + vowel, letter groups showing the vowel: pla-plu = ta-tu, ap-up = ca-cu ...); recovered from the ciphertext of DECODE R1890 by a family anneal. targets/ferdinand3/work/key1890_extra.json."},
   {"id": "k-stuttgart1634", "label": "King of Hungary's vowel-series nomenclator of 1634, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1634, "note": "Letter groups in vowel series (xar-xur = ta-tu, ob-ub = mo-mu ...), numbers and drawn signs; rebuilt from the crib 'promovere haud dedignetur' repeated in DECODE R1887, crib-seeded anneal and context; partial. targets/ferdinand3/work/key1887.json."},
@@ -1934,6 +1936,7 @@
   {"id": "k-brancoveanu-polish", "label": "Brancoveanu chancellery key for Polish letters (a=19, b=60 ...)", "kind": "scholar's key", "by": "A. Mares 1987; M. W. Kaczka 2012", "year": 1709, "found": 1987, "note": "Simple numerical substitution with a few word codes (900 = August, 800 = Turcy), used by Constantin Brancoveanu's and Constantin Cantacuzino's chancellery for letters to Sieniawski, 1709-1714; printed by Kaczka, Danubius XXX (2012), n. 21."}
  ],
  "links": [
+  {"key": "k-zifra-prima-1578", "target": "ottobon", "how": "adapted", "note": "applied to the corrected transcription with two homophones the sheet lacks (d83 = a, c86 = o); 981 of 1,565 groups deciphered"},
   {"key": "k-brussels1635", "target": "ferdinand3", "how": "rebuilt from", "note": "recovered from the draft R954 aligned with R1889; 450 of 463 tokens give the draft's letter"},
   {"key": "k-brussels1635", "target": "ferdinand3", "how": "read unchanged", "note": "the 1635 alphabet applied unchanged to R1890 covers 424 of 784 tokens; the 1640 syllabary was built on it"},
   {"key": "k-vienna1640", "target": "ferdinand3", "how": "rebuilt from", "note": "syllabary recovered from R1890's ciphertext on top of the 1635 alphabet; all 782 tokens assigned"},
@@ -3440,6 +3443,7 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-r1790-golfo", "target": "ottobon", "note": "different base letters (c f m r) and range; not the key of the 1589 letter"},
   {"key": "k-ernst-piccolomini", "target": "ferdinand3", "note": "does not fit R1889/R1890: their numbers run 0-54 with single letters and letter groups, a different system"},
   {"key": "k-r5256", "target": "superscript", "note": "Gilino R8572: same barred-letter family, but the syllable rows do not match"},
   {"key": "k-r8766-torcy-petkum1709", "target": "geertruidenberg", "note": "Torcy 3 Apr 1710: de = 43/140 in R8766, the letter has 43 once and 140 never; 42 (second commonest) = correspondance. Not the same assignment"},

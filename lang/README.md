@@ -62,6 +62,7 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 | `ca-modern` | Catalan | Gutenberg + Tirant lo Blanc | Crown of Aragon |
 | `it-modern` | Italian 1800–1920 | Gutenberg, 9.4 M | default Italian |
 | `it-cinquecento` | Italian 1490–1620 | Guicciardini/Machiavelli + Nuntiaturberichte, 31 M | Renaissance diplomatic Italian |
+| `it-venezia` | Italian 1520–1620 | it-cinquecento + Albèri's *Relazioni degli ambasciatori veneti* (9 vols, double weight), 47 M | Venetian Senate letters and despatches (ottobon) |
 | `la` | Latin | 27 Gutenberg texts, 6.8 M | papal, imperial, humanist |
 | `pt-`, `da-`, `sv-`, `pl-`, `hu-`, `cy-modern` | | ~1–6 M each | language ID, northern/eastern targets |
 
@@ -80,7 +81,8 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 ## Adding a corpus or a model
 
 1. Add the source to `sources.json`, with a remote recipe if one exists (so it rebuilds on a fresh clone) and a
-   `local` glob if a target already holds the file.
+   `local` glob if a target already holds the file. Raw OCR (Internet Archive djvu text) can take `"dehyphenate": true`, which joins words split at line ends.
 2. Add the model to `models.json`: `language`, `period`, `norm`, `order`, `spaces`, `sources`, `use_for`, `replaces`.
    Set `"language_id": false` for period- or genre-specific models so `best_language()` compares one model per language.
+   A source listed twice counts at double weight (`it-venezia` does this with the Relazioni).
 3. `python -m lang.lm <id> "a sentence you expect to score well"` and a line of gibberish as the control.

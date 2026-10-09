@@ -67,6 +67,15 @@
     "local": ["targets/vatican5/corpus_it.txt"],
     "note": "The raw volumes mix German and Latin; targets/vatican5/build_it_lm.py keeps the Italian paragraphs. Prefer the local file.",
     "first_used": "vatican5"},
+  "it-relazioni": {"language": "it", "period": "1520-1620", "genre": "Venetian ambassadors' reports to the Senate",
+    "title": "Albèri, Relazioni degli ambasciatori veneti al Senato (9 vols, Internet Archive OCR)",
+    "ia": ["relazionideglia00albgoog", "relazionideglia01albgoog", "relazionideglia07albgoog", "relazionideglia15albgoog",
+           "relazionidegliser2v1albe", "s1relazionidegli03albuoft", "s1relazionidegli06albuoft", "s3relazionidegli02albuoft",
+           "s3relazionidegli03albuoft"],
+    "local": ["targets/ottobon/corpus/*alb*.txt"], "dehyphenate": true,
+    "note": "Raw djvu OCR with Google front matter; hyphenated line breaks are joined. Built for the Ottobon 1589 Senate letter.",
+    "first_used": "ottobon"},
+
 
   "la-gutenberg": {"language": "la", "period": "classical-1600", "genre": "literature",
     "title": "Latin Gutenberg texts (Caesar, Cicero, Vulgate, humanist Latin)",

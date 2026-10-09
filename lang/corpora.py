@@ -6,6 +6,7 @@ Each source is resolved to lang/corpora/<id>.txt (git-ignored). A recipe may giv
     url        [urls]     any plain-text URL
     dta        [ids]      Deutsches Textarchiv plain text (book/download_txt/<id>), cookie gate passed, markup cleaned
     local      [globs]    files a target already downloaded, relative to the repository root
+    dehyphenate true      join words hyphenated across line breaks (raw OCR)
 'local' is tried first, so nothing is downloaded twice. Because corpora are git-ignored they exist only in the
 checkout that fetched them: set CYPHER_CORPUS_ROOTS (os.pathsep-separated) to search other checkouts too.
     python -m lang.corpora                 # status of every source
@@ -80,6 +81,8 @@ def fetch(sid, force=False):
             parts.append(_get(u))
         for i in src.get('dta', []):
             parts.append(_get_dta(i))
+    if src.get('dehyphenate'):
+        parts = [re.sub(r'-\s*\n\s*', '', p) for p in parts]   # OCR text: join words split at line ends
     if not parts:
         raise RuntimeError(f"source {sid}: no local copy found and no remote recipe; see its 'note' in sources.json")
     os.makedirs(STORE, exist_ok=True)

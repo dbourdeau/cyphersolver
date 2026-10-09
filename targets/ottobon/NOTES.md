@@ -1,5 +1,16 @@
 # Marco Ottobon to Giovanni Mocenigo, 27 April 1589 (BNE Mss/994 ff. 34–38) — NOTES
 
+Status: read in part — key identified (Council of Ten's Zifra Prima, DECODE R1789 + two homophones); letter
+deciphered in part, 62.7 % of tokens measured (981/1,565, measure_rd.py, 9 Oct 2026, after the dec.py/fit.py
+re-reading; 46 % before). Open: ff.35v-36v and gaps of ff.37r-38r, blocked by the image resolution / register copy.
+See §9-§11, Remaining gaps, Escalation.
+
+**Verdict (2026-10-09, fourth session): the letter is enciphered in the Zifra Prima of 1577-78 (ASVe CX, Cifre, b.4
+reg.16 ff.64-65 = DECODE R1789), with two extra homophones (d83 = a, c86 = o). The first-pass transcription's digit
+errors are systematic (7 read as 2, 8 as 0, 3/5/8 confused); corrected against the key and the DECODE images, 721 of
+1,566 tokens read as Italian (46 %), the second piece (ff.37r-38r) best (56-72 %), ff.35v-36v worst (12-17 %). It is the
+Senate's answer to a French request for help to Henry III: Venice will intercede with Sixtus V on the King's behalf.**
+
 **Verdict (updated 2026-09-16, third session): all seven cipher pages transcribed at first pass (1,528 tokens, 196 distinct) from the BNE images, which are the same ~130 dpi as the PDF; the design is a Venetian letter-plus-figure nomenclator of the 1577-78 *Zifra Prima* type (base letters a c d f g h, figures 1-99, letters, syllables and words mixed), not N.11; ciphertext-only solving in progress, see §8. Two archival keys are the short route: DECODE R1789 (b. 4 r. 16 f. 64) and R1790 (f. 79).** Earlier verdicts follow.
 
 **Verdict (first session): blocked at the images, not attempted cryptanalytically.** The manuscript is digitised in full by the
@@ -334,3 +345,292 @@ statistics; both solvers against matched controls before the target. Not checked
 second reading; the DECODE key sheets; the ASVe registers. User must verify: the transcription is a first pass at
 about 70 % reliability; nothing has been decoded; the Zifra-Prima identification rests on Tomokiyo's description of
 f. 64, not on the sheet itself.
+
+
+## 9. Fourth session, 2026-10-09: DECODE images, the Zifra Prima key, and key trials
+
+With the DECODE login cookie working, the full-size files were fetched into `img/decode/` (git-ignored):
+R2252 (nine openings, 2,930-3,270 px wide, i.e. the same BNE scans, watermarked "© Biblioteca Nacional de España",
+about 1.4x the pixels of the BNE viewer images, still JPEG-softened and with heavy bleed-through), and the candidate
+keys and siblings R1788, R1789, R1790, R1843, R1870 (3,500-4,450 px). No record has a DOC transcription file.
+
+### What the candidate keys are
+
+| record | what it is | fit to this letter |
+|---|---|---|
+| R1789, b.4 r.16 ff.64-65 | **Zifra Prima** per scriver (2 pp.) and per trazer (2 pp.): six bases a c d f g h, figures 1-99, words, syllables (in runs of five, often in reversed vowel order), single letters (homophones), doubled letters, numerals, nulls, all mixed | same design and same code space; **transcribed in full from the per trazer pages** into [keys/zifra_prima_R1789.tsv](keys/zifra_prima_R1789.tsv) (527 codes) |
+| R1790, b.4 r.16 f.79 | small cipher on bases c/f/m/r (1-20), a dozen words on h; note at foot: *serve la sopradetta ziffra col capitano in Golfo, à quello della Guardia contra Uscocchi, et con li Rettori de Zara* | different bases; not this letter's key |
+| R1788, b.4 r.8 | "N.° 8 Germania per trazer": a cardboard grille (caselle) | not relevant |
+| R1870, Busta 30 ff.177-181 | Piero Duodo, ambassador in France, 2 Aug 1595, cipher passages with their decipherments | bases o (polywog), a, f, r, c, h: the zifra-granda family, not this one |
+| R1843, Busta 6 ff.105-106 | Hieronimo Lippomano, bailo, Pera 20 July 1590 | bases r, a, f, u ...: zifra-granda family |
+
+### Trial of the Zifra Prima on the existing transcription (`trykey.py`)
+
+1,448 of the 1,528 tokens (94.8 %) are codes defined in the Zifra Prima, but the decode is not Italian
+(*vestre Illustr a Capi di X va Cardinal tt ... Maone ... Capi di X ...*): a20 = *Capi di X* would occur 39 times and
+c86 = *Maone* 35 times. Undefined in it: d83 (66, the commonest token here), g90 (7), g95 (3), d86 (2), g83, f82.
+So **the 1589 key is a sibling with the same code space but a different allocation**, as the third session
+predicted from Tomokiyo's description.
+
+Usage by code (the counts per base 1-99 are in the session log): this letter concentrates on c20-c29 (all ten
+used, 15-33 each), h1-h4, h50-h52, d10-d15, d20-d23, a49-a52, a80-a85, f61-f66, g14-g16, g20-g22, and the high
+singletons d83, c86, c99, g99, a64. These are runs, i.e. the 1589 key, like the Zifra Prima, assigns its frequent
+units (letters and syllables) in contiguous runs.
+
+`shift_test.py`: the Zifra Prima with base letters permuted and a constant offset per base (6! x 99^6 space, coordinate
+ascent on the it-cinquecento 5-gram per character) reaches -2.91/char only by stringing long nomenclator words
+(*Sua Serenità, Re d'Inghilterra ...*), not text. **Not a shifted or re-lettered copy of the Zifra Prima.**
+
+### Print / crib
+
+CSP Venice viii (BHO) has nothing for 27 April 1589: the April 1589 section holds only nos. 825-827 (Mocenigo 6 April;
+Lippomano and Contarini 29 April), and Brown calendared Senate letters only when they touched England. No crib in print.
+
+### Correction, same session: the Zifra Prima IS the key; the first-pass transcription misreads digits systematically
+
+The Zifra Prima decode looked like nonsense because of the transcription, not the key. Digit statistics of the
+first pass: no tens digit 7 at all and only 27 tens 3s, against 427 tens 2s; no units 7, only 8 units 8, against 311
+units 0. In this hand the **7 is a z-shape read as 2, the 8 a small closed loop read as 0, and 3/5/8 are confused**.
+With those re-readings the frequent tokens fall onto the commonest units of the Zifra Prima: d83 -> d53 *a* (66),
+a20 -> a28 *che* (39), c20-c29 -> c70-c79 *lla lu lo li le la ma me mi mo*, g20 -> g70 *da*, d20 -> d70 *Del*, f10
+-> f18 *ne*, h52 -> h32 *ti*; the unchanged ones already were (g99 *di*, c99 *r*, a64 *et*, g15 *re*, f20 *no*, f61 *e*,
+d10 *po*, d15 *pro*, h4 *so*, h1 *sa*, h20 *Sua Santità*, h22 *Sua M.tà Christianissima*, g22 *Re di Francia*).
+Passages then read as Italian, e.g. f.35r ll.16-17 *alcun soccorso per proveder ... al pericolo di quella corona et*
+(f6 h4 a4[9] c99 h4 d23 d15 h51 g[7]2 c99 ... d15 h51 d8 g16 a49 ... g99 g10 c[7]5 a49 g[1]7 f1[7] a64), and the
+statistical test agrees (Spearman of usage against corpus frequency for the 183 syllable/short-word codes 0.286,
+structured null 99th percentile 0.231, p = 0.0008). `beam.py` (per-token Viterbi over digit-confusion variants with
+the it-cinquecento 5-gram) gives a first machine draft (`beam_all.txt`); it still prefers long nomenclator words, so
+the reading is being done by hand, line by line, from the candidates (`cands.py`) and the DECODE images (line crops
+by `cut_decode.py` into `img/dl/`).
+
+**So: the letter is enciphered in the Council of Ten's Zifra Prima of 1577-78 (ASVe CX, Cifre, b.4 reg.16 f.64,
+DECODE R1789), unchanged as far as tested.** Valle de la Cerda's "lost" solution is reproducible from the key.
+
+### Machine draft (beam v1)
+
+`beam.py` with optional word spaces between units (it-cinquecento 5-gram with spaces), length credit 1.45/char,
+penalty 5 per nomenclator word, digit-confusion costs re-estimated twice by EM (`em_conf.py` -> `conf_em.json`)
+re-reads 758 of 1,528 tokens and gives a draft that is Italian in long stretches (`draft_beam_v1.txt`), e.g.
+*... sua Cesarea Maestà di sovenir Sua Maestà Christianissima in tanta necessità et soministrarle alcun soccorso per
+proveder ... quella corona et assicurar ...*, *... copia che vi mandar ...*, *... informato [di] qualche mutatione ...*,
+*... accioche possiate ...*, *... darci lume ...*, *... che facemo della particolar persona [di] Sua Maestà
+Christianissima ...*, *... di quel Regno et delli travagli della Maestà Sua ...*. It still over-uses some nomenclator
+entries (*Sua Santità* for h30 *ta*, *questa Maestà* for g15 *re*); the hand-checked reading follows.
+
+Print search, same session: no edition of the Senate's letters to Mocenigo or of his 1589 despatches was found
+(web search; CSP Venice viii and ix calendar only English-relevant despatches). The register copy (ASVe, Senato,
+Deliberazioni Secreta, 1589) is not online. So no crib: the reading rests on the key.
+
+### Hand reading (in progress)
+
+`READING_GUIDE.md` is the working guide; readings go into `rd_<page>.txt` (codes as corrected, unit values, Italian,
+confidence per line); `measure_rd.py` measures them. f.35r first pass by hand: the Senate reports a request (by the
+French ambassador in Venice, presumably) *... che quel Serenissimo Re porta alla Republica Nostra, et quanto
+confid[a] nella cordiale corrispond[enza] ... ne ricercò che [questa Republica] ... con Sua Cesarea Maestà di sovenir
+Sua Maestà Christianissima in tanta necessità et soministrarle alcun soccorso per proveder al iminente pericolo di
+quella corona et ...*. f.37r (helper agent): *... la molta affettione che in tutti li tempi passati è [stata] da [noi]
+portata, et tuttavia porta la Republica Nostra alla Serenissima corona di Francia, e come ben nota ad ogniuno ...
+che portamo et la grande stima che facemo della particolar persona di S.M.C.*
+
+
+## 10. Fourth session, results of the hand reading (2026-10-09)
+
+Three readers worked line by line from `READING_GUIDE.md` (this session on f.35r; two helper agents on ff.35v-36v and
+ff.37r-38r), choosing for each token the Zifra Prima code that is compatible with the image and the confusion classes
+and makes Italian with its neighbours. Files: `rd_f35r.txt` ... `rd_f38r.txt` (corrected codes, unit values, Italian,
+confidence per line), `reading.txt` (the Italian, one paragraph per page), `measure_rd.py` -> `measure_rd.out`.
+
+| page | tokens | high | medium | low | read (high+medium lines, no '?') |
+|---|---|---|---|---|---|
+| f.35r | 212 | 66 | 85 | 61 | 134 (63 %) |
+| f.35v | 249 | 0 | 34 | 215 | 29 (12 %) |
+| f.36r | 224 | 0 | 42 | 182 | 33 (15 %) |
+| f.36v | 58 | 0 | 11 | 47 | 10 (17 %) |
+| f.37r | 342 | 73 | 160 | 109 | 193 (56 %) |
+| f.37v | 364 | 57 | 252 | 55 | 238 (65 %) |
+| f.38r | 117 | 57 | 50 | 10 | 84 (72 %) |
+| **all** | **1,566** | 253 | 634 | 679 | **721 (46 %)** |
+
+(Token counts are those of the corrected lines, slightly above the 1,528 of `ct_all.txt` where tokens were split.)
+
+### What the letter says (as far as read)
+
+**First piece (ff.35r-36v), the Senate to Mocenigo.** [The French ambassador in Venice] *esposti delli travagli et
+bisogni ... di Sua Maestà Christianissima ... nella sua prima audientia ... l'amor et afetione grande che quel
+Serenissimo Re porta alla Republica Nostra, et quanto confidi[a]mo nella cordiale corrispondenza ... ne ricercò che
+[questa Republica] ... con Sua Cesarea Maestà di sovenir Sua Maestà Christianissima in tanta necessità et
+soministrarle alcun soccorso per proveder al iminente pericolo di quella corona et assicurarsi dalli nemici ...*;
+f.35v, mostly unread, ends *... risposto quello che vederete della copia che vi mandamo col ... et perche informato di
+qualche mutatione* (f.36r) *et poi lascia[ta] ... da alcun degli ministri possiate sa[pere] ... et alla ottima
+dispositione ...*; f.36v *notitia, accioche possiate con[...] ... lettere et darci lume delle cose*. Then the clear
+passage about the intercepted letters of 28 March and the dateline.
+
+**Second piece (ff.37r-38r), the text of the Senate's answer (the "copia" sent with the letter).** *... la molta
+afetione che in tutti li tempi passati è [stata] da [noi] portata, et tuttavia porta la Republica Nostra alla
+Serenissima corona di Francia, è come ben nota ad ogniuno ... che portamo et la grande stima che facemo della
+particolar persona di Sua Maestà Christianissima, per[ciò] sentimo quel dispiacere molto delle [...]tione di quel
+Regno et delli travagli della Maestà Sua ... l'ottima dispositione et osservanza ... verso di lei ... con la nostra
+pronta volontà verso il servitio di lei ... per dare a Sua Maestà Christianissima quel maggior [...] che per noi si
+può al presente ... desiderare et procurare il bene, la grandezza di quella Serenissima corona et particolar commodo
+et servitio della sua persona ... habbiamo deliberato ... interponer al presente ... presso lo Sommo Pontifice la
+intercessione della Republica Nostra, perche Sua Santità si mova a dovere con la sua somma autorità favorire, ove farà
+bisogno, la causa giustissima della Maestà Sua nell'acquetare le sollevationi di quel Regno et ammorzar l'incendio di
+guerra, il qual vedemo con gravissimo danno et maggiori pericoli di tutta la Christianità si va accendendo ... per
+prudentia et pietà della Santità Sua veder partorir alcun frutto ... potrà Sua Maestà Christianissima conoscere ...
+dell'animo nostro verso la grandezza et ogni prosperità di lei, et verso lo beneficio et la quiete della
+Christianità ... [na]sce da una pronta et disposta volontà ...*
+
+So the Senate answered the request for help (or for an approach to the Emperor) with an intercession at Rome, in the
+weeks before Sixtus V's monitorium against Henry III (24 May 1589). This is the content Valle de la Cerda would have
+extracted for Philip II at Turin.
+
+### Key notes from the reading
+
+- The 1589 key is the R1789 sheet plus at least two homophones the sheet lacks: **d83 = a** (66 tokens) and **c86 = o**
+  (35 tokens; some c86 tokens of the first pass are c56 *in*, e.g. *in-fo-r-ma-to*). R1789 has c86 = *Maone* and no
+  d83. `keys/ottobon_overrides.tsv`.
+- Recurrent misreadings besides the digit classes: d15/d11 for d55 *n*; h1 for h4 *so*; g20 for g38 *sta*; h51 for f61
+  *e* (f.35r l.9); c64 for f64 *l* (f.35r l.8); h2x for h3x.
+- No nomenclator word seen so far falls outside the R1789 vocabulary.
+
+## 11. Fifth session (2026-10-09, later): constrained decoder `dec.py`
+
+A proper noisy-channel decoder replaces `beam.py`: for every first-pass token, P(read | true code) from a base-letter and
+per-position digit confusion model **estimated from the 721 hand-read tokens** (first-pass token aligned to the hand
+code by DP, `dec.page_pairs`), a code prior from the same tokens (smoothed by unit class), and a 5-gram character LM
+with spaces built with the shared `lang` engine on the it-cinquecento sources plus Albèri's *Relazioni degli
+ambasciatori veneti* (9 vols, archive.org djvu text, double weight; `build_venlm.py`, corpus in `corpus/`,
+git-ignored; 47 M chars). Vectorised Viterbi beam (400 states) over whole pieces, optional word space before every
+unit, a "skip" option for garbage tokens; per-token margin = score lost when the token's value is forbidden and a
+±6-token window re-decoded (`dec.margins`).
+
+Calibration (`python -I dec.py calib`, leave-one-page-out: channel + prior trained on the other six pages, the page
+decoded blind, compared with the hand codes of its high/medium lines, by value):
+- identity baseline (first-pass token = hand token): 475/721 = 65.9 %;
+- old weights (ALPHA 1, CLEN 1.3, as beam.py): 73.8 %; tuned (ALPHA 0.4, BETA 0.4, CLEN 0.3): **644/721 = 89.3 %**
+  (f.37r 92 %, f.37v 91 %, f.35r 87 %, f.38r 86 %).
+- synthetic test (`dec.py sim`: the hand-read runs re-corrupted by sampling the channel; 627 tokens): at 55 %
+  identity the decoder recovers 82.6 %; at 40 % identity only 61 %. Venetian LM vs it-cinquecento: 82.6 vs 82.0 %.
+- word-level lexicon bonus/OOV penalty (corpus word list): no gain (75-82 %); self-training EM of channel/prior on
+  the decoder's own output: no gain (89.2 / 88.8 %). Both left off.
+- margin calibration on hand-read tokens (`mcal.py`): margin < 1: 56 % agree, 1-2: 78 %, 2-3: 98 %, >= 3: 97-100 %.
+
+The decoder changes 40-48 % of first-pass tokens on every page, the hard pages ff.35v-36v included, so their
+first-pass transcription is not obviously noisier than the read pages'; what the hand readers lacked there was
+anchoring sense. Output: `dec_out/<page>.txt` (codes, values, Italian, margins, alternatives), `view.py <page>` prints
+it with low-margin units in brackets.
+
+### Crib-fit re-reading (`fit.py`, `refit.py`, `texts_reread.txt`)
+
+The decoder alone does not give sense on ff.35v-36v (`view.py f35v`), so the reading is done the other way round:
+an Italian text is proposed for a line (from the hand reading, the decoder's draft and the context; `lineview.py`
+shows both and each token's candidates), and `fit.py` finds the best code sequence of the line's first-pass tokens
+whose values spell it exactly (gaps '...' allowed; channel + prior cost per token). A token counts as read only
+when it lies outside a gap and its channel log-prob is >= -8 (the hand readers' own accepted tokens: 98.2 % >= -6,
+99.2 % >= -8, none below -10). `refit.py --texts texts_reread.txt --write` rewrites the rd blocks of the lines in
+the texts file and keeps the earlier block wherever the fit reads fewer tokens than the hand pass (hand pass kept in
+`rd_hand1/`). Parallel print found by a search agent (Hübner, *Sixte-Quint* iii no. 36, Doge to Badoer 13 May 1589:
+"la grandezza del pericolo iminente", "questo incendio universale"; ii p. 236, Doge to Badoer 29 April 1589,
+French paraphrase) confirms the subject but gives no verbatim crib for the letter.
+
+New readings this pass (first round, 9 Oct): f.35v ll.7-9 *... [giudi]cassimo bene a collegarsi et stringersi
+maggiormente in qualche unione di lega, assicu[rar] ...*; l.13 *... iscusandosi*; l.14 *[peri]coli ai movimenti et
+per noi*; l.16 *sodisfare come vole[...]*; f.36r l.1 *mutatione, et poi lascia[ta] intentione*; l.2 *evento che ve
+ne sia ... da Sua Maestà Christianissima*; f.37r ll.15-16 *quanto alle richieste fateci da Vostra [...] in nome di
+quel Serenissimo Re, le dicemo che* (so the second piece is addressed to the French ambassador: it is the Senate's
+answer to him); l.2 *[co]pia della risposta fata al Signor ...* (heading of the second piece; kept as low, see the control
+below); f.37v l.6 *et
+continuata volontà*; f.37v l.20 *incendio di guera*; f.38r l.6 *faciamo ... nasce da un[a]*.
+
+### Control of the crib fit and the result (`fitcontrol.py`)
+
+A crib fit can always place some letters, so each line's text was also fitted onto 15 wrong lines (shifts of 3-59
+lines through the letter). Share of tokens "read" by chance: 22 % at channel threshold -8, **10 % at -5**, 5 % at -3;
+on the true lines 82 / 80 / 70 %. The re-reading uses **-5**; the five lines whose true fit did not beat the best
+wrong-line fit by 3 tokens (f.37r l.2, f.35r l.3, f.36r ll.8, 12, 14) stay low (f.36r l.12 keeps its earlier medium
+hand block). Re-measured with `measure_rd.py` (`measure_rd.out`):
+
+| page | tokens | read before | read now |
+|---|---|---|---|
+| f.35r | 212 | 134 (63 %) | 143 (67 %) |
+| f.35v | 249 | 29 (12 %) | 120 (48 %) |
+| f.36r | 224 | 33 (15 %) | 78 (35 %) |
+| f.36v | 58 | 10 (17 %) | 17 (29 %) |
+| f.37r | 342 | 193 (56 %) | 240 (70 %) |
+| f.37v | 363 | 238 (65 %) | 285 (79 %) |
+| f.38r | 117 | 84 (72 %) | 98 (84 %) |
+| **all** | **1,565** | **721 (46.0 %)** | **981 (62.7 %)** |
+
+The read bar (95 %) is not reached. What blocks the rest is the first-pass transcription of the digits on lines
+without an anchoring phrase: neither the decoder nor a proposed text can be confirmed there at chance level 10 %.
+
+## 12. Write-up and shared language model (2026-10-09, sixth session)
+
+- **Language model registered in `lang/`.** Source `it-relazioni` (Albèri's *Relazioni*, the nine Internet Archive ids
+  of `corpus/`, local glob `targets/ottobon/corpus/*alb*.txt`, new recipe flag `"dehyphenate": true` in
+  `lang/corpora.py`) and model `it-venezia` (it-renaissance + it-nunziature + it-relazioni twice = double weight,
+  `early` norm, order 5, spaces). Same 47,007,119 characters as the local `corpus/venlm.o5.sp`; 1.3 % of 5-gram cells
+  differ (rare ones; file order and separators). `dec.py` now loads `it-venezia` (`LOCAL_VENLM=1` for the old table);
+  `build_venlm.py` builds the registered model and writes `corpus/venwords.json`. Check: `dec.py calib` at the tuned
+  weights (ALPHA 0.4, BETA 0.4, CLEN 0.3) against the current rd files gives **870/981 = 88.7 % with both models**,
+  identical per page. (That reference set includes the crib-fit re-reading, so it is not independent of the decoder's
+  channel model; the independent figure stays 644/721 = 89.3 % against the hand reading.) beam.py, confuse.py,
+  shift_test.py and zp_repair.py keep it-cinquecento so their recorded results reproduce.
+- **Write-up**: docs/ottobon.html (method: read after matching with key from external sources; extent partial,
+  981/1,565 = 62.7 %). Crops from the DECODE R2252 images (f. 35r head and foot, f. 38r) and the R1789 per trazer
+  sheet. Portraits skipped (nothing trustworthy on Commons/Wikidata for Marco Ottobon or the ambassador Giovanni
+  Mocenigo; recorded in docs/_explore_skip.json). DECODE queue: R2252 (Partially decrypted, Italian, sender/receiver/
+  date, reading decode_updates/decryptions/R2252.txt with low lines as gaps), R1789 (dates 1577-78, transcription
+  offered), R1790 (dates, sheet note).
+
+## Remaining gaps
+
+Measured 9 Oct 2026 (measure_rd.py): 981 of 1,565 tokens read (62.7 %); f.35r 68 %, f.35v 48 %, f.36r 35 %, f.36v
+29 %, f.37r 70 %, f.37v 79 %, f.38r 84 %. The unread tokens are where the first-pass digits are too corrupt for the
+calibrated decoder (dec.py) or a crib fit (fit.py) to fix them and no anchoring sense exists; an image pass at 2x on
+the DECODE scans (previous pass) did not resolve them.
+- ff.35v-36v, 316 tokens (f.35v ll.3-6, 10-11, 15, 20; f.36r ll.4, 6, 8-11, 14-16; f.36v ll.2-3, 5-6, and gaps in the read lines) - blocker: needs-physical-access; the only images (BNE scan, ~130 dpi in the PDF, ~1.4x on DECODE) do not separate 2/7, 3/5/8, 0/8 and the bleed-through is heavy; a 400-dpi BNE reproduction of ff.35-38 or the register copy (ASVe, Senato Secreta, Deliberazioni Francia 1589, 27 April) is needed.
+- f.35r, 69 tokens (ll.1-3 and 12, about 50, plus gaps in read lines) - blocker: illegible; ll.1-3 under the stain at the head of f.35r, l.12 too faint; no better image than the BNE scan exists online.
+- ff.37r-38r, 199 tokens (f.37r ll.1-2, 7, 10, 22, 24; f.37v ll.1, 3; gaps in read lines) - blocker: needs-physical-access; unresolved digits and gutter losses; the text of this second piece (the Senate's answer to the French ambassador) should be in de Maisse's letter-book "avec les responses", BL Add MS 30635 (not digitised), and in the ASVe register.
+- f.37r top-right header (four small groups) - blocker: illegible; too small to transcribe at this resolution.
+
+## Escalation
+
+Section 0a of the writeup skill:
+- [x] siblings: DECODE R2248-R2262 (Mss/994 items 1-15) opened 9 Oct 2026: the other items are Spanish, French and
+  graphic-sign ciphers (Alençon, Rogers, Longlée, Sertori, Philip III ...), none Venetian, no decipherment of this
+  letter; ff.38v-63v inside R2252 are the address leaf and blanks. Venetian siblings R1790 (Gulf/Zara cipher), R1788
+  (grille), R1870 (Duodo 1595), R1843 (Lippomano 1590): different systems.
+- [x] clear-pages: Valle's clear heading on f.34r, the clear passage of ff.36r-36v (postmaster of Lyon, intercepted
+  letters of 28 March), the protocol and the address on f.38v read; none is a decipherment. No clear copy of the
+  letter in the volume or on DECODE.
+- [x] known-keys: R1789 (Zifra Prima, CX b.4 reg.16) is the key, adopted with d83 = a and c86 = o (fourth
+  session; 89 % decoder agreement shows no second key is mixed in); R1790 (same register) and R1788 checked and not
+  this system; the 1590/1595 Venetian ciphers R1843/R1870 are of the zifra-granda family.
+- [x] print: CSP Venice viii (Mar-June 1589), Hübner *Sixte-Quint* ii-iii (Doge to Badoer 29 April and 13 May 1589:
+  parallel wording only), Desjardins *Négociations* v, A. Morosini *Historia Veneta* XIII, De Thou XCV: no text of the
+  letter or of the answer to de Maisse. Manuscript copies: ASVe Senato Secreta register; BL Add MS 30635-30637.
+- [n/a] key-rebuild: the key is the archival sheet R1789 and covers every code read; the two homophones the sheet
+  lacks were found from context; no code among the 981 tokens read needs a value the sheet does not give.
+- [x] retry: 9 Oct 2026, every unread line retried computationally: calibrated noisy-channel decoder (dec.py, 89 %
+  agreement with the hand reading on held-out pages) and crib fits of proposed texts (fit.py, chance level 10 % per
+  token vs 80 % on the true lines, fitcontrol.py); 260 tokens gained (46.0 -> 62.7 %). The rest needs a better image
+  or a register copy (above).
+
+## DECODE queue
+
+- R2252 (9 Oct 2026 addition): offer the re-read rd_*.txt (62.7 % of tokens) and the decoder; correct the item: the
+  second piece (ff.37r-38r) is the Senate's answer to the French ambassador in Venice (de Maisse), headed *[co]pia
+  della risposta fata al Signor ...*; f.35v reports his proposal of a closer union (*collegarsi et stringersi
+  maggiormente in qualche unione di lega*).
+
+- R2252: cleartext language Italian (record says Latin); plaintext Italian; a ducal letter (Pasquale Cicogna, Doge,
+  and Senate) to Giovanni Mocenigo, ambassador in France, 27 April 1589, subscribed Marco Ottobon, secretary of the
+  Senate; key = R1789 (Zifra Prima) with d83 = a and c86 = o added; status partially deciphered; two pieces (ff.35r-36v
+  letter, ff.37r-38r copy of the Senate's answer to the French request). Offer the corrected transcription and
+  reading (`rd_*.txt`, `reading.txt`).
+- R1789: date 1577-1578 (Franceschi's register b.4 reg.16; Bonavoglia), not 1500-1799; name "Zifra prima per scriver /
+  per trazer"; used Venice -> France (Mocenigo) in 1589 (R2252). Offer the transcription of the per trazer table
+  (`keys/zifra_prima_R1789.tsv`, 527 codes).
+- R1790: date 1577-1587 (same register); the sheet's note: serves for the Captain in the Gulf, the Guardia against the
+  Uskoks and the Rettori of Zara.
