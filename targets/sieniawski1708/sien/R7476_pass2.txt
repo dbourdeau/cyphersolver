@@ -1,0 +1,191 @@
+R7476 second pass on the unread glosses (9 Oct 2026)
+Method: native-resolution crops of the DECODE images, grayscale + PIL ImageOps.autocontrast(cutoff=1), enlarged 1.35-2x
+(img/crop/r76b_*.jpg, one crop per half-width band of 4-7 lines). Each "[?]" gloss in sien/R7476.txt and each "?" in K was re-read.
+Columns: page line | position (0-based index among the numbers of the line) | number | gloss now read | value used
+"gloss unread -> K" = the gloss stays unreadable and the syllabary value is used; "ctx" = value settled by the sense of the sentence.
+Alphabetical-order checks are in the last column where they decide a value (see section at the end).
+
+== p. 31 ==  (crops r76b_p31_L4-7_a, r76b_p31_L4-9_b, r76b_p31_L6-9_a, r76b_p31_L10-15_a/b, r76b_p31_L18-24_a/b, r76b_p31_L24-29_a/b, r76b_p31_L30-35_a/b)
+31 L4  | 11 | 249 | s (gloss "ſ") | s  -> "Lubo posłałem"
+31 L5  |  9 | 300 | wezyra (gloss spans 300+6) | wezyr; 6 = a. K "brzeg[?]" was wrong: 300 lies in the w-z band (296 wi .. 309 wezyr), wezyr fits
+31 L6  |  5 | 300 | wezyr | wezyr
+31 L7  | 13 | 61  | e | e  ("będzie, [że] nie zabawimy": 330 = zie of będzie, the "że" was not enciphered)
+31 L8  |  6 | 32  | ć | ć  ("wizytować")
+31 L8  |  7 | 315 | none visible | x (K; glossed x in L2/L7 "expedycja"); here the sense wants "się" -> read "się(?)"
+31 L9  |  2 | 82  | ge (as before) | ga -> "na Galacie" (Galata); 104 = ią, 84 = ce: "rezydującemi" (84 sits in the g band, gi; encipherer's c/g slip, gloss ce followed)
+31 L10 |  3 | 197 | gloss struck through (a struck word above 197/326) | po (K)
+31 L12 |  6 | 233 | rze | rze (ctx "dwóch rzeczy"; 233 sits before re 234, so "rza/rze" is the only r-syllable that fits)
+31 L12 |  7 | 37  | cy | c(z)y
+31 L12 |  8 | 101 | (gloss "y" merged with "cy") | y
+31 L14 | 12 | ?   | re (number blotted, "?34") | re -> "dyferencję" (51 di, 60 e glossed "ffe", ? re, L15 170 n 37 cy)
+31 L14 |  4 | 194 | by | by (gloss; 194 is po in the syllabary - glosser/encipherer slip, "i tak by bez tego mogli")
+31 L19 |  1 | 200 | t (faint) | t ctx "zatrzymanie"; 200 sits in the p band (197 po .. 204), so t is out of order - doubtful
+31 L19 | 10 | 244 | s (faint) | s (K)
+31 L19 | 14 | 315 | none visible | x (K); sense "boją się(?)"
+31 L22 | 10 | 104 | ia | ia ("jako")
+31 L22 | 13 | 245 | struck gloss ("sta"?) | s ("zastawę")
+31 L22 | 14 | 242 | ta | ta
+31 L22 | 15 | 295 | we | we -> "a nas tu jako zastawę mieć" (L23 59 32 = e ć)
+31 L23 |  9 | 80  | g (blot) | g -> "gdyby" (80 g, 51 dy, 191 by)
+31 L23 | 12 | 82  | gloss unread (blotted) | K ga; no sense found -> [...]
+31 L24 | 11 | ?   | number unreadable, gloss unread | [...]
+31 L25 |  5 | 249 | d? (blotted) | si (K) -> "ko mi si r zu" = "komisarzu(?)"
+31 L25 | 15 | 240 | t | t
+31 L25 | 16 | 233 | ra | ra -> "tra[ktatu]" with L26 114 242 276 "k ta tu"
+31 L26 |  5 | 245 | ſ (s) | s -> "od s[...] który" doubtful
+31 L26 | 10 | 19  | by | by ("ma być")
+31 L26 | 11 | 46  | d (gloss "d a"?) | d; 326 z, 291 w, 234 re, 120 ku: "w ręku" -> "ma być d(?) z w ręku poselskich" (L27 248 136 245 118 34 94 = se ł s ki c h)
+31 L27 |  0 | 248 | se | se ("poselskich")
+31 L27 |  7 | 248 | se | se
+31 L27 |  9 | 233 | ra | ra -> "secura"
+31 L27 | 11 | 6   | a | a
+31 L27 | 12 | 155 | mi | mi -> "de amici-" (50 de, 6 a, 155 mi, 34 ci)
+31 L28 |  0 | 294 | ti | ti: the number is 274 (ti), not 294 (7/9 confusion in this hand) -> "amicitia"
+31 L28 |  2 | 215 | "posta"? struck | [...] (215 has no value; p-r band)
+31 L29 | 13 | 149 | o | o (glossed o twice elsewhere; 149 sits after ma 153? no - 149 is before m 150: l/ł band ends 143, so 149 = "ło/łu"? doubtful; gloss o followed)
+31 L30 |  0 | 160 | (number is 160, not 180) "n"/"im" | n
+31 L30 |  1 | 331 | gloss unread | zy (K)
+31 L30 |  2 | 180 | o | o
+31 L30 |  6 | 245 | gloss unread | s (K)
+31 L30 |  7 | 330 | gloss unread | że (K)
+31 L30 | 13 | 80  | g | g ("usług")
+31 L31 | 12 | 248 | se | se
+31 L32 |  0 | 294 | wa | wa
+31 L32 |  1 | 244 | s | s
+31 L32 |  2 | 270 | t | t
+31 L32 |  5 | 245 | gloss unread ("t"?) | s (K)
+31 L32 |  7 | ?   | number "3A"? unreadable | [...]
+31 L33 |  8 | 42  | o | o (gloss; 42 = Cesarz elsewhere and sits in the d band - doubtful, but "informacy-" needs "fo")
+31 L33 |  9 | 230 | r | r
+31 L33 | 12 | 144 | ą / y | ą -> "informacyą(?)"
+31 L33 | 14 | 215 | gloss "pon"? unread | [...]
+31 L33 | 15 | 194 | po | po
+31 L34 | 12 | 154 | me | me
+31 L36 | 11 | 141 | li | li
+
+== p. 32 ==  (crops r76b_p32_L1-3_a/b, r76b_p32_L8-14_a/b, r76b_p32_L18-25_a/b, r76b_p32_L28-32_a/b)
+32 L1  | 16 | 149 | o | o -> "miało" (6 a, 136 ł, 149 o); 149 sits before m 150, in the l/ł band end -> really "ło"/"o" homophone, order breaks
+32 L2  |  9 | 249 | gloss struck ("się" + "hospodar" written over 249/96) | si(ę)
+32 L2  | 10 | 96  | hospodar (struck, rewritten) | hospodar
+32 L2  | 16 | 143 | łu | łu (K) -> "z to d łu e re s zy pu ki mo per" stays unread
+32 L3  |  4 | 190 | gloss unread | pu (K)
+32 L7  | 10 | 230 | gloss unread | r (K); surplus letter in "do naszych [r] sollicitacyj"
+32 L9  |  8 | 14  | "łu"/"b" (faint) | b (K) -> "b k ra s za pu no wi" unread
+32 L11 |  0 | 233 | ra | ra ("za pracę jego")
+32 L11 |  8 | 154 | mu (the number may be 157 mu) | mu -> "dawszy mu"
+32 L12 |  0 | 119 | "w"? | ko (K)
+32 L12 |  1 | 200 | "wy"? | unread
+32 L12 |  4 | 141 | gloss unread | li (K)
+32 L12 |  8 | 149 | da | da? (gloss) -> "[da]no"
+32 L12 |  9 | 40  | number reads 70 on the crop (gloss "no"/none) | fe -> "dano ferman" (70 sits at the head of the f band 71-78; R7484 76 = "-rmana", the same word)
+32 L12 | 16 | 266 | struck gloss | unread (266 between Seraskier 260 and t 269: "s/sz" syllable)
+32 L13 |  0 | ?   | "Gdańsk"? (faint, may be a gloss over ?+299) | unread
+32 L13 |  1 | 299 | as above | unread
+32 L13 | 13 | 168 | gloss unread | n (K)
+32 L14 |  6 | 52  | de | do -> "dociec"
+32 L14 |  8 | 60  | e | e
+32 L18 |  0 | 299 | gloss unread | unread
+32 L18 |  6 | 191 | gloss unread | p (K)
+32 L19 |  5 | 2   | gloss unread | unread (code 2 has no value anywhere)
+32 L19 |  9 | 250 | so | so -> "solicitował"
+32 L20 | 12 | 251 | "sko"? | su (K) - no sense, unread
+32 L21 |  3 | 179 | gloss unread | o (K)
+32 L21 |  6 | 145 | "u"? | unread
+32 L23 |  0 | 92  | gloss unread | h (K) -> "interesach"
+32 L23 |  6 | 34  | co | co -> "obiecował" (179 o, 19 bi, 59 e, 34 co, 249 wa, 139 ł)
+32 L23 | 12 | 249 | wa | wa (gloss; 249 = si in the syllabary, so the gloss is followed against the key)
+32 L23 | 14 | 249 | da | da
+32 L24 |  2 | 246 | ſ | s ("asekuracyą": 6 a, 246 s, 248 se, 120 ku, 233 ra, 84 cy, 149 ą)
+32 L24 |  3 | 248 | se | se
+32 L24 |  4 | 120 | ku | ku
+32 L24 |  6 | 84  | cy | cy
+32 L24 |  7 | 149 | o | ą
+32 L25 |  2 | 224 | gloss unread | unread (224 has no value)
+32 L25 |  5 | 60  | gloss unread | e (K)
+32 L25 |  6 | 101 | gloss unread | i (K)
+32 L25 |  7 | 196 | gloss unread | pi (K)
+32 L25 | 11 | 80  | g | g ("gdy")
+32 L25 | 13 | 319 | Tatarowie | Tatarowie
+32 L28 |  0 | 93  | gloss unread | h (K) -> "żadnych"
+32 L28 |  2 | 14  | "Bia"/"Rom"? | b (K) -> "do B(i)a[...]" doubtful
+32 L28 |  6 | 197 | gloss unread | po (K) -> "poszło"
+32 L28 |  7 | 244 | gloss unread | s (K)
+32 L29 |  5-11 | 244 326 33 324 61 245 32 | z / e glimpsed only | K s z c z e s c ("szczęść"?) - not counted as read
+32 L30 |  0 | 112 | "samoczwart"/"w morzu"? | unread
+32 L31 |  1 | 244 | s | s
+32 L31 |  2 | 320 | z | z -> "poszło"
+32 L31 |  3 | 142 | ło | ło
+32 L31 |  4 | 278 | "no"? | unread (278 lies between tu 276 and u 284: "ty-", perhaps "tysiąc")
+32 L31 |  6 | 120 | ku | ku -> "ku Moskwie"
+32 L31 |  9 | 82  | c | c ("jeszcze")
+32 L35 | 12 | 324 | gloss unread | z (K) - "z m ło n d ro wa ła" unread
+
+== p. 33 ==  (crops r76b_p33_L5-10_a/b, r76b_p33_L13-17_a/b, r76b_p33_L21-29_a/b)
+33 L5  | 15 | 86  | none visible | go (K); sense wants "f" of "fregat" -> "[f]regat(?)"
+33 L8  | 10 | 154 | struck gloss | me (K) - unread
+33 L8  | 11 | 156 | struck gloss | mo (K) - unread
+33 L10 |  2 | 189 | a | a -> "audiencyą" (L9 8 a, 294 u?, 51 di, 60 e, L10 170 n, 37 cy, 189 a)
+33 L10 |  4 | 300 | wezyra | wezyr
+33 L13 |  0 | 233 | ry | ry ("towary")
+33 L13 |  5 | 253 | gloss unread | Stambu(ł) (K)
+33 L13 |  9 | 326 | gloss unread | z (K) "szwedzkiego"
+33 L15 |  0 | 191 | p | p
+33 L15 |  5 | 150 | m | m -> "prywetnym(?)"
+33 L15 |  6 | 296 | wi | wi
+33 L15 |  9 | 140 | gloss unread | le (K) - unread
+33 L16 |  1 | 310 | "z"? | unread ("we[ks]lowe kupcy"?)
+33 L21 |  0 | ?   | gloss unread | unread
+33 L21 |  1 | 135 | gloss unread | unread (135 has no value)
+33 L21 |  2 | 180 | gloss unread | o (K)
+33 L21 |  5 | 237 | gloss unread | ru (K)
+33 L21 | 14 | 244 | gloss unread | s (K)
+33 L22 |  4 | 33  | gloss unread | c (K) - unread
+33 L23 |  6 | 140 | "ć"? | le (K) -> "odpowiedziełem" = powiedziałem
+33 L23 |  8 | 191 | by | by -> "nie miał by m sam" = "nie miałbym sam"
+33 L23 |  9 | 150 | m | m
+33 L24 | 11 | 191 | by | by -> "kiedy bym"
+33 L24 | 12 | 150 | m | m
+33 L27 |  1 | 160 | n | n -> "Pan Szpigieł" (194 pa, 160 n, 244 s, 326 z, 196 pi, 84 gi, 59 e, 136 ł)
+33 L28 |  6 | 240 | struck | unread
+33 L29 |  0 | 330 | "że"/"re" | że
+33 L29 |  4 | 36  | gloss struck ("Szwedz"?) | ce/e -> "królewskich" (121 Krol, 36 e, 291 w, 244 s, 118 ki, 32 c, 93 h)
+
+== p. 34 ==  (crops r76b_p34_L1-12_a, r76b_p34_L5-10_b)
+34 L1  |  0 | XVIII | Hospodar Multański | Hospodar Multański (= the hospodar of Wallachia; "Multany" = Wallachia)
+34 L3  |  2 | 160 | Moskwie | Moskwa (160 glossed Moskwa/Moskwy/Moskwie: a name code in the n band)
+34 L6  | 10 | 326 | gloss is a flourish, unread | z (K) -> "a jego z ciężkiego więzienia"
+34 L7  | 10 | 7   | none visible | a (K) -> "wydobyli, a jest nadzieja"
+34 L11 | 0-2 | 143 245 326 | gloss unread | łu s z (K) -> "w słusznej(?)" doubtful
+34 L11 |  4 | 244 | gloss unread | s (K)
+34 L11 |  6 | 233 | gloss unread | ra (K)
+34 L11 |  7 | 33  | gloss unread | c (K) - "i stra[c]" unread
+
+== Alphabetical-order check (task 2) ==
+Bands from the well-attested codes: a 6-8, b 14-21, c 32-38, d 40-53, e 59-61, f 70-78, g 79-89, h 92-96, i/j 101-110,
+k 112-121, l/ł 128-149, m 150-157, n 160-178, o 179-189, p 190-197 (+ 199-216, see below), r 230-237, s 239-266, t 269-278,
+u 284, w 291-311, x/y 315, z/ż 320-333.  A single scan (first value per code against its neighbour) breaks at 28 places;
+all but the ones below are single glosser slips or one-position misalignments, and each is settled by the band:
+  6  e[?] -> a          8  la/d -> a            30  ą -> co            32 o -> c            40 no -> d (and see 70)
+  48 a? -> d-band (d/da), the R7476 gloss is a misalignment     53 de -> du      61 d -> e/le    84 ce/c -> gi (the encipherer
+  used 84 for "ce" in "rezydującemi", p.31 L9 - followed by the gloss, flagged)    103 re -> i (between y 102 and ia 104)
+  119 zy/ki -> ko       130 o -> l          134 no -> l/ł band (ło?)    139 o -> la/ła     140 n -> le    142 ne/to -> lo/ło
+  144 ka -> ł-band (gloss "ą" in "informacyą" fits no better; doubtful)  157 no -> mu     169 ko/Mos -> n    174 z/da -> no
+  191 by/pi -> p (by is glossed 3x: the encipherer used 191 for "by" as in "miałbym" p.33 L23 - followed, flagged)
+  194 by/ią -> po/pa    235 ra -> ri/ry     240 s/se -> t    241 w -> t (241 sits in s/t boundary; "t" kept)
+  245 to/u/z -> s/sta   246 ci -> s (s band; "asekuracyą" p.32 L24 confirms s)     247 a -> sa     271 k -> t-band
+  283 ra -> ta          294 ti -> wa (the p.31 L28 "ti" was the number 274 misread as 294)   295 to/wi -> we
+  326 d/zi -> z         331 na/d -> zy/zi     332 to -> zo/zu
+Codes where the order bounds the value and settles a doubt:
+  70  (p.32 L12, read 40 in pass 1): f band -> "fe", "dano ferman". R7484's 76 "-rmana" is the same word.
+  149 (glossed o 6x): sits before m 150, so it cannot be the plain vowel o (179-181); read "ło/o" homophone. In "miało"
+      (p.32 L1) "ł o" reads either way; in "asekuracyą" (p.32 L24) it ends the word: ą/o.
+  189 (glossed ta, a): o band end (181-189) - neither "ta" nor "a" fits; "audiencyą" (p.33 L10) takes the gloss "a".
+  233 (glossed ra, re, ry; K "ra[za?]"): between r 232 and re 234 -> ra/rą/"rz-": "rzeczy" (p.31 L12), "pracę" (p.32 L11),
+      "towary" (p.33 L13). Read by context each time.
+  278 (unglossed): between tu 276 and u 284 -> "ty-/tw-": "tysiąc"? (p.32 L31 "poszło [278] Tatarowie ku Moskwie").
+  315 (glossed x): after woysko 311 / wozy 314 and before z 320 -> x/y: "expedyują", "expedycja"; in p.31 L8/L19 the sense
+      wants "się" which the band excludes - those two stay "x(?)".
+  271 (Turcy twice): sits between t 270 and ta 272; a name code placed in the t band, as Cesarz 42 sits in the d band and
+      Moskwa 160 in the n band: proper names are put at the head of a letter band, not in strict order.
+Not bounded (the region is irregular): 199-216 (ę 202, u 204/206, per 213, b 214, Pułta 216) - 200 ("t" in "zatrzymanie",
+  p.31 L19, gloss followed), 215, 224 have no usable bound; 296-311 (wi 296, wo 297, wezyr 300/309) - 299, 310 unbounded.

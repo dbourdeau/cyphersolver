@@ -1,0 +1,30 @@
+R7481 pass 2 (9 Oct 2026) -- token-level check of every gloss gap / gloss-key disagreement against the image.
+Key B (a=37 b=51 c=71 d=100 e=1 f=10 g=9 h=13 i=4 k=88 l=62 m=30 n=14 o=91 p=2 q=11 r=48 s=12 t=65 u=8 w/y=6 x=7 z=27).
+Crops: img/crop/chk2_R7481_*.jpg (native resolution, enlarged 2-2.5x).
+
+Tokens checked
+1. L4 last group, glossed "t" (tam). Crop chk2_R7481_L4.jpg. Written: the hand's flagged 6 followed by a closed
+   figure that looks more like 8 than 5 ("68"). 68 is outside key B; gloss t, and "tam" needs t (=65).
+   SETTLED: encipherment/graphic slip for 65; read t. Gives sense.
+2. L15 "48,37,88,91,71,1,9,91" (rakocego). Crop chk2_R7481_L15.jpg. The token after 71 is a "1" with an overline
+   (a π-like form), gloss "e"; no 27 (z) written. SETTLED: 1 = e as key; the encipherer dropped the z of "cz"
+   (Rakoczego spelt rakocego). Gives sense.
+3. L17 "91,27,14,37,4,30,4,71" (oznaymic). Crop chk2_R7481_L17.jpg. The fifth token is a 4 written heavily over
+   another figure (the underlying stroke is not recoverable; it is not a clean 6). Gloss "y". Key 4 = i.
+   SETTLED: key (i); the encipherer spelt "oznaimić", the glossator normalised to y. Either spelling gives
+   "oznajmić". No key variant.
+4. L25 "Wmm 309, 2, 407, 37, 700, 14, 14,91,6,4,14,6." Crop chk2_R7481_L25.jpg.
+   Gloss letter positions: "m" stands over the 30 of 309, "p" over 2, "a" over 37, "n" over 14; NOTHING over
+   the 9 of 309, over 407 or over 700.
+   - 309 = 30,9 written as one group (as in L18 "30 9,37" = m g a, "M[iłościwe]go"): here m g = the same
+     abbreviation "M[iłościwy]" (fair copy p. 3: "WMM Pan"). SETTLED: key (m, g); abbreviation, gives sense.
+   - 407 and 700: outside key B (key B has no value above 100), no gloss letter, and the word reads "pan" without
+     them (2-37-14 = p-a-n, as in L18 "2,37,14"). SETTLED: nulls inserted inside "Pan" (two "0"-numbers as
+     dummies). They carry no letter; counted as tokens without sense.
+5. L7 "27,14,4,71,13" (z nich): the 4 is overwritten/struck; gloss "i"; "znich" needs i. Key. Gives sense.
+
+No other gloss gaps: every remaining token has a gloss letter that agrees with key B.
+
+Counts (tokens = number groups between commas, "309" counted as 2 tokens 30,9 as in the generated count; the two
+clear "Wmm" are not cipher tokens):
+  total cipher tokens 522; giving sense 520 (99.6%); open 2 = the nulls 407, 700 (no value by design).

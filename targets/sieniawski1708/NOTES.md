@@ -111,7 +111,7 @@ Page map, systems and transcriptions by a subagent (`sien/map.md`, `sien/R74xx.t
   Bishop of Chełmno (Teodor Potocki) and Stanisław's treaty offers; full interlinear decipherment; letter table rebuilt
   from the gloss (`sien/R7475_key.tsv`): alphabetical homophonic blocks a=17-18, b=20-21, c=22-23 ... z=56-57, e=11-14,
   y=3-4, o=7-8, u=5-6, code 600 = król szwedzki.
-- **R7476** (nr 13 pp. 31-34), not printed: probably Stanisław Chomentowski at the Porte, c. 1712-13; 3-digit
+- **R7476** (nr 13 pp. 31-34), not printed: probably Stanisław Chomentowski at the Porte, c. 1712-13 (re-dated May-Aug 1714 in pass 2, below); 3-digit
   syllabary; 99.6% of 1622 numbers glossed, 91.2% of the glosses read here; 98.9% decodable with `sien/syllabary.tsv`
   plus values from this letter.
 - **R7481, R7482** (nr 5 pp. 1-3, 5-6), not printed: Turculeț(?) 1709, Polish news from Bender (700 Swedes with
@@ -121,16 +121,75 @@ Page map, systems and transcriptions by a subagent (`sien/map.md`, `sien/R74xx.t
   Sieniawski, Adrianople 9 May 1713, and an undated second letter; same syllabary; ~99% glossed; R7485's cipher
   passage also written out in clear at the head of the page.
 
+## Pass 2 on the Schenck codes (9 Oct 2026, after the coordinator asked for a full reading)
+
+- **Context pass.** Two subagents re-read at full resolution every sentence holding a code or a dotted sign
+  (`transcr/CTX_R74xx.txt`, about 90 crops; corrections written back into `transcr/R74xx.txt` as "(ctx: was ...)").
+  Index of every code with its sentences: `code_ctx2.txt`.
+- **The recipient's gloss in R7493 P1:4-5, re-read:** "der" stands over the dotted sign "o." and "von Kayser" over
+  "5 83". So **o. = der, 5 = von, 83 = der Kayser** (grade C). The first pass had put "der Kayser" on 208: wrong,
+  208 is the subject of that sentence and stays open.
+- **The dotted signs and small numbers are a word code, not nulls**: o. = der (C), L. = und (M: "b. 154 L. 166
+  zugleich unterschrieben"), f. = bey (M: "f. 83 gar sehr wohl angesehen", "ob 189 f. 254 reussire"), b. = von dem
+  (I: "b. 187 bin ersuchet worden"). d., e., g., c., m., p., oo, ooo, oj, "3." and "2." stay open: their contexts
+  give articles or pronouns but no single value fits all occurrences.
+- **The 500s are an alphabetical word list.** 509 = Friede ("seine Gedancken in pto des 509, worauf nunmehro
+  gedacht werden will", the peace advice of R7495), 513 = Ordre ("die 513 du cabinet", "vor der 513 ausgebung"),
+  515 = Progressen ("weiter glückliche 515", news of Ramillies), 519 = Reise ("seine 519 auf morgen oder
+  übermorgen festgestellet"), 524 = Urlaub ("beÿ 100 524 nehmen"): F < O < P < R < U rises with the number. Inside
+  those bounds 502 = Abreise ("181 502 zu differiren"), 518 = Recommendation, 521 = Resolution ("eine 521 woraus
+  ... von 150 Ihm eine convoy") fit the sentences (grade I). The other 500s (504, 508, 510, 516, 517, 520, 525-530)
+  occur once or twice in sentences too damaged or too general to choose a word.
+- **The 100s-200s are persons, courts and states, not in one alphabetical run.** Anchors: 100 = the imperial court
+  (M), 150 = King Augustus (M), 189 = Baron Schenck (M: "einem diplomate vor 189", "das diploma des 189", "der
+  Schenckisch-Nideggischen familie" in R7495), 204 = Schweden (M: "83 ist wegen 204 also zu timide ... dessen
+  erschöpften Kräfften", "Resolutionen, so etwann 204 eine jalousie verursachen könnten"). 83 Kayser < 100 Hof <
+  150 König < 189 Schenck is alphabetical, but 204 Schweden is not (an alphabetical 200s would want France there;
+  France does not fit "jalousie"), so no person was valued from position.
+- **190 is not Charles XII.** "König von Schweden" is in clear in the same letter; 190 delays a report to the
+  Emperor, wants "ein monopolium der affairen", has cabals made against 181 in Vienna: an imperial minister. Value
+  withdrawn; open.
+- **Persons with roles but no name:** 187 (the writer's principal in Vienna, in the King's service, paid by bill of
+  exchange, R7500), 181 (the King's man at the imperial court: sends couriers to 150, has a secretary, rheumatism
+  in the arm, "affairs, insonderheit wegen Nellenburg"), 166 (a minister at the King's side, recovered in May, new
+  title), 154 (co-signs a royal rescript with 166), 186 ("Mons. 186" arrived in Cracow about 20 May with a new
+  function), 132 and 193 (rivals for one post; 132 "ein guter Jurist, guter publicist, guter Linguist"), 131 (sends
+  Schenck a genealogy for his diploma), 254, 258, 529, 157, 101, 103, 183, 134, 158 (the King's banker who refuses
+  187's bill). The Saxon envoy at Vienna until 1706 was Wackerbarth and from 1706 Vesnich (Wikipedia list of Saxon
+  envoys), but Wackerbarth is named in clear in two letters, and no source ties either to a code.
+- **Outside material tried:** the Wiener Diarium 1706 on ANNO (dated cribs for the news) is behind a Cloudflare
+  Turnstile check and cannot be fetched by the session; searches for a Schenck chamberlain, a "Sidon" or
+  "Seligman" agent and a printed 1706 Saxon-Vienna correspondence found nothing; the Hausmann *Repertorium der
+  diplomatischen Vertreter* is not online.
+- **Measure after pass 2** (`measure.py`, now counting the dotted signs and the small word codes as cipher tokens):
+  letter cipher 638 of 682 (93.5%; "iwzo" is "ijzo" = itzo); code tokens 545, 151 with a value; dotted signs 134, 76
+  with a value; **all cipher tokens 1,361, read 865 = 63.6%**.
+
+## Pass 2 on the Sieniawski pieces (9 Oct 2026)
+
+- R7481, R7482, R7484, R7485 checked token by token against gloss and key (`sien/R74xx_pass2.txt`, readings
+  `sien/R74xx_reading.txt`): R7481 520/522 (99.6%; 407 and 700 unglossed nulls), R7482 355/355, R7484 492/513
+  (95.9%; three clear date figures taken out of the count), R7485 96/96. Encipherment slips settled (62 for 65 in
+  "ivit", 191 for 181 in "Hanowi", 160 = Moskwa not 169).
+- R7476: faint glosses re-read at high contrast (34 crops, `sien/R7476_pass2.txt`), then a language pass with the
+  syllabary's alphabetical bands (a 6-8, b 14-21 ... z 320-333; names such as Cesarz 42, Moskwa 160, Turcy 271 head
+  their band): 84.8% then **1,435 of 1,622 = 88.5%** (p. 31 92.7%, p. 32 80.1%, p. 33 90.6%, p. 34 97.5%). Code
+  XVIII is glossed "Hospodar Multański": Brâncoveanu, in Yedikule from April 1714, so the letter is **May-August 1714,
+  Constantinople**, not 1712-13.
+- Part measures: printed letters complete (Kaczka); unprinted pieces R7475 ~99.6% (glossed), R7481 99.6%, R7482
+  100%, R7484 95.9%, R7485 100%, R7476 88.5%.
+
 ## Remaining gaps
-- Schenck letters: 72 of 77 code numbers (373 tokens: 187, 181, 166, 186, 254, 132, 193, 258, 349, 513, 526 ...) - blocker: open-codes; context gives roles, not names; no key on DECODE, the neighbours or in print
-- Schenck letters: 9 runs, 48 numbers, without sense (lceth, ditlan, gutswor ...) - blocker: open-codes; digits confirmed twice on the images, probably names or slips
-- Schenck letters: dotted letter signs and small codes 83, 3., 2. - blocker: open-codes; before codes and runs, nulls or particles not settled
-- R7476: 136 glosses (8.8%) unread - blocker: illegible; faint brown interlinear hand, values mostly given by syllabary.tsv
+- Schenck letters: 65 of 77 three-digit codes (394 tokens), mostly persons (187, 181, 166, 190, 254, 258, 132, 193, 186 ...) - blocker: no-key-material; roles fixed from context, names not; no key with the letters, on DECODE or in print; the 100s-200s are not alphabetical, so position gives no bound; the Saxon keys would be in the Hauptstaatsarchiv Dresden and the Wiener Diarium 1706 (dated cribs) is behind a bot check the session may not pass
+- Schenck letters: dotted signs d., e., g., c., m., p., oo, ooo, oj and small codes 3., 2. (about 90 tokens) - blocker: no-key-material; articles or pronouns, no value fits every occurrence and none is glossed
+- Schenck letters: 8 letter-cipher runs, 44 numbers, without sense (lceth, ditlan, gutswor ...) - blocker: too-short; digits confirmed twice on the images, single short runs with no second occurrence
+- R7476: 187 of 1,622 tokens - blocker: open-codes; glossed or keyed syllables that form no word (probably names), 8 one-off codes with no gloss, 3 illegible numbers
+- R7484: 21 of 513 tokens - blocker: open-codes; code 76 glossed two ways, two passages whose syllables are certain but whose words are not recovered
 
 ## Escalation
-- [x] siblings: R7460-R7467 and R7501-R7507 opened (other collections, keys for other correspondents); DECODE has only AKM 21 plik 30/1 of the Schenck file
-- [x] clear-pages: address leaves and dockets read (Baron de Schenck at Cracow, "Seligman", receipt dates); no decipherment sheet; the recipient's superscripts used as a check
-- [x] known-keys: keys A and B and the R7475 table and Chomentowski syllabary tried on the Schenck letters: none fits (different number ranges)
-- [x] print: Kaczka 2012, Mareș 1987 (cited), web search for Schenck and a Saxon Vienna agent 1706: no edition or key
-- [x] key-rebuild: letter table rebuilt complete; codes assigned by context where a role is unambiguous (5); an alphabetical nomenclator (189 Schenck, 190 Schweden) was considered but 150/208 do not fit one series, so no values were inferred from position
-- [x] retry: every run re-read at full resolution against the key (24 corrections); unread runs re-imaged twice
+- [x] siblings: R7460-R7467 and R7501-R7507 opened (other collections and correspondents); DECODE holds only AKM 21 plik 30/1 of the Schenck file; R7484/R7485 used for R7476's vocabulary
+- [x] clear-pages: address leaves and dockets read (Baron de Schenck at Cracow, "Seligman", receipt dates); the recipient's own glosses used: o. = der, 5 = von, 83 = der Kayser
+- [x] known-keys: Kaczka's keys A and B, the R7475 table and the Chomentowski syllabary scored on the Schenck runs: none fits
+- [x] print: Kaczka 2012, Mareș 1987 (cited), web searches for Schenck, "Sidon", "Seligman", Saxon envoys at Vienna 1706 (Wackerbarth, Vesnich) and printed Saxon-Vienna correspondence: no key, no edition; the Wiener Diarium on ANNO is behind a Cloudflare Turnstile check
+- [x] key-rebuild: letter table complete; second context pass over every code (transcr/CTX_*); alphabetical order tested: holds in the 500s (509 Friede, 513 Ordre, 515 Progressen, 519 Reise, 524 Urlaub, bounding 502, 518, 521), fails for the persons; R7476 syllabary bands used to bound values
+- [x] retry: every run and every code sentence re-read at full resolution; R7476 glosses re-read at high contrast, R7481-R7485 token by token

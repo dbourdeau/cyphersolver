@@ -31,7 +31,7 @@
     "by": "llm from images",
     "source": "DECODE IMG_R7486-R7500 full-resolution images, cut into strips; two subagents, then a second pass on every run against the key",
     "image_quality": "fair",
-    "notes": "Measured with --drop-first: 682 letter-cipher numbers in 106 runs (transcr/RUNS_FINAL.txt) plus 499 code numbers; about 37 small codes (83, '3.', '2.') and the dotted letter signs are not in the file. Clear text read only in part ([?] where water damage or the hand defeats the transcription)."
+    "notes": "Measured with --drop-first: letter-cipher numbers (106 runs, transcr/RUNS_FINAL.txt) plus 3-digit codes. measure.py also counts the small word codes and the dotted signs: 1,361 cipher tokens in all. Clear text re-read around every code in a second pass (transcr/CTX_R74xx.txt)."
    }
   },
   {
@@ -98,8 +98,8 @@
    "id": "R7476",
    "read": "read in part",
    "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 26/32 nr 13 pp. 31-34; DECODE R7476",
-   "date": "c. 1712-1713 (by content)",
-   "year": 1713,
+   "date": "1714-05/1714-08 (by content)",
+   "year": 1714,
    "country": "Turkey",
    "route": "probably Stanisław Chomentowski, Polish envoy at the Porte -> Hetman Sieniawski",
    "language": "Polish",
@@ -108,7 +108,7 @@
     "location": [
      "interlinear"
     ],
-    "source": "syllable-by-syllable interlinear decipherment in a second hand over 99.6% of the numbers; 91.2% of glosses read and aligned here",
+    "source": "syllable-by-syllable interlinear decipherment over 99.6% of the numbers; faint glosses re-read at high contrast; 1,435 of 1,622 tokens (88.5%) read as sense (sien/R7476_reading.txt)",
     "partial": true
    },
    "length": {
@@ -150,7 +150,7 @@
     "by": "llm from images",
     "source": "DECODE IMG_R7481, IMG_R7482",
     "image_quality": "good",
-    "notes": "R7481 522 tokens (Polish), R7482 355 tokens (Latin), transcriber's tallies; comma-separated numbers defeat --measure."
+    "notes": "R7481 522 tokens (520 read; 407 and 700 unglossed nulls), R7482 355 (all read); second pass sien/R7481_pass2.txt, R7482_pass2.txt."
    }
   },
   {
@@ -180,7 +180,7 @@
     "by": "llm from images",
     "source": "DECODE IMG_R7484, IMG_R7485",
     "image_quality": "good",
-    "notes": "R7484 ~526, R7485 99 tokens (transcriber's tallies)."
+    "notes": "R7484 513 tokens (three clear date figures removed), R7485 96; second pass sien/R7484_pass2.txt, R7485_pass2.txt: 95.9% and 100% read as sense."
    }
   }
  ],
@@ -321,13 +321,61 @@
    "what": "Subagents transcribed the unprinted Sieniawski pieces with their interlinear decipherments: R7475 (alphabetical homophonic table rebuilt from the gloss), R7476 and R7484-R7485 (Chomentowski's 3-digit syllabary, syllabary.tsv), R7481-R7482 (key B).",
    "result": "worked",
    "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "Second context pass: two subagents re-read at full resolution every sentence with a code or a dotted sign in the 15 letters (transcr/CTX_R74xx.txt, ~90 crops); corrections written back.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "crib",
+   "what": "The recipient's gloss in R7493 re-read: 'der' over the sign o. and 'von Kayser' over '5 83': o. = der, 5 = von, 83 = der Kayser; the earlier 208 = der Kayser withdrawn.",
+   "result": "worked",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "190 = Charles XII withdrawn (the King of Sweden is named in clear in the same letter; 190 is an imperial minister); 204 = Schweden from 'zu timide wegen 204' and 'jalousie'.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Alphabetical order of the nomenclator: the 500s rise with the alphabet (509 Friede < 513 Ordre < 515 Progressen < 519 Reise < 524 Urlaub), bounding 502 Abreise, 518 Recommendation, 521 Resolution; the 100s-200s are not one alphabetical run (204 Schweden breaks it), so no person was valued from position.",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Dotted signs as a word code: o. = der (gloss), L. = und, f. = bey, b. = von dem; d., e., g., c., m., p., oo, ooo, oj, 3., 2. left open (no single value fits their contexts).",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "literature search",
+   "what": "Wiener Diarium 1706 on ANNO for dated cribs: blocked by a Cloudflare Turnstile check; searches for Schenck, 'Sidon', 'Seligman', Saxon-Vienna correspondence 1706 and the Repertorium der diplomatischen Vertreter: nothing usable (Saxon envoys at Vienna: Wackerbarth to 1706, Vesnich 1706-08, not tied to any code).",
+   "result": "failed",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "transcription",
+   "what": "R7476: faint glosses re-read at high contrast (34 crops), then a language pass using the alphabetical bands of the syllabary: 84.8% then 88.5% of 1,622 tokens read; letter re-dated to May-Aug 1714 (code XVIII glossed 'Hospodar Multański', Brâncoveanu in Yedikule).",
+   "result": "partial",
+   "date": "2026-10-09"
+  },
+  {
+   "kind": "verification",
+   "what": "R7481, R7482, R7484, R7485 checked token by token against gloss and key (encipherment slips settled): 99.6%, 100%, 95.9%, 100% read as sense.",
+   "result": "worked",
+   "date": "2026-10-09"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The Schenck letters' 2-digit letter table (alphabetical blocks of three) was recovered here by annealing the block boundaries on a German n-gram model, with no crib; the recipient's few superscripts agree with it.",
+  "method_basis": "The Schenck letters' 2-digit letter table (alphabetical blocks of three) was recovered here by annealing the block boundaries on a German n-gram model, with no crib; the recipient's few superscripts and glosses agree with it and give o. = der, 5 = von, 83 = der Kayser.",
   "contribution": [
    "transcription",
    "key recovered",
@@ -335,18 +383,19 @@
    "catalogue correction"
   ],
   "first_break": true,
-  "fraction_read": 0.624,
+  "fraction_read": 0.636,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over transcr/RUNS_FINAL.txt and codes.json: Schenck letters, cipher tokens = 682 letter-cipher numbers + 499 codes + 37 small codes; read = 634 numbers in runs giving sense + 126 code tokens with a value",
-  "fraction_coherent": 0.93,
+  "fraction_read_source": "measure.py: Schenck letters, 1,361 cipher tokens = 682 letter-cipher numbers + 545 code numbers (3-digit and small word codes) + 134 dotted signs; read = 638 numbers in runs giving sense + 151 code tokens + 76 signs with a value",
+  "fraction_coherent": 0.935,
   "codes_open": {
-   "open": 72,
+   "open": 65,
    "total": 77,
-   "tokens_open": 373
+   "tokens_open": 394
   },
   "grades": {
-   "C": 6,
-   "I": 120
+   "M": 154,
+   "C": 46,
+   "I": 27
   },
   "verification": [
    "contemporary decipherment",
@@ -359,7 +408,7 @@
     "records": "R7486-R7500",
     "method": "key recovered from ciphertext-only",
     "extent": "partial",
-    "basis": "letter table recovered by monotone annealing; 93% of the letter-cipher numbers read in sense; 72 of 77 codes open"
+    "basis": "letter table recovered by monotone annealing; 93.5% of the letter-cipher numbers read in sense; 63.6% of all 1,361 tokens; 65 of 77 three-digit codes (persons) open"
    },
    {
     "label": "Brâncoveanu and Cantacuzino to Sieniawski, 1709-1714",
@@ -373,31 +422,36 @@
     "records": "R7475, R7476, R7481, R7482, R7484, R7485",
     "method": "read from existing decipherment",
     "extent": "partial",
-    "basis": "contemporary interlinear decipherments transcribed; R7476's faint glosses read at 91%"
+    "basis": "contemporary interlinear decipherments transcribed and checked: R7475 ~99.6%, R7481 99.6%, R7482 100%, R7484 95.9%, R7485 100%; R7476 88.5% (faint glosses, unparsed names)"
    }
   ],
   "gaps": [
    {
-    "item": "Schenck letters: 72 of 77 code numbers (373 tokens), among them 187, 181, 166, 254, 132, 193",
-    "blocker": "open-codes",
-    "detail": "persons and things in Vienna and at the Saxon-Polish court; context narrows roles, not names; no key in DECODE, the neighbouring records or print"
+    "item": "Schenck letters: 65 of 77 three-digit codes (394 tokens), mostly persons: 187, 181, 166, 190, 254, 258, 132, 193, 186 ...",
+    "blocker": "no-key-material",
+    "detail": "roles fixed from context (transcr/CTX_*), names not: no key with the letters, on DECODE, in print; the 100s-200s are not in alphabetical order; the Saxon cipher keys would be in Dresden (HStA), the Wiener Diarium is behind a bot check"
    },
    {
-    "item": "Schenck letters: 9 runs (48 numbers) without sense",
-    "blocker": "open-codes",
-    "detail": "digits confirmed twice on the images; probably names or the writer's slips (lceth, ditlan, gutswor)"
+    "item": "Schenck letters: dotted signs d., e., g., c., m., p., oo, ooo, oj and small codes 3., 2. (about 90 tokens)",
+    "blocker": "no-key-material",
+    "detail": "articles or pronouns; no single value fits every occurrence, no gloss"
    },
    {
-    "item": "Schenck letters: dotted letter signs and small codes 83, 3., 2.",
-    "blocker": "open-codes",
-    "detail": "stand before codes and runs; nulls or particles, not settled"
+    "item": "Schenck letters: 8 letter-cipher runs (44 numbers) without sense (lceth, ditlan, gutswor ...)",
+    "blocker": "too-short",
+    "detail": "digits confirmed twice on the images; single short runs, probably names or slips, no second occurrence"
    },
    {
-    "item": "R7476: 136 glosses unread (8.8%)",
-    "blocker": "illegible",
-    "detail": "faint brown interlinear hand; values mostly recoverable from syllabary.tsv"
+    "item": "R7476: 187 of 1,622 tokens (11.5%)",
+    "blocker": "open-codes",
+    "detail": "glossed or keyed syllables that form no word (probably names), 8 one-off codes with no gloss, 3 illegible numbers"
+   },
+   {
+    "item": "R7484: 21 of 513 tokens",
+    "blocker": "open-codes",
+    "detail": "code 76 glossed two ways; two short passages whose syllables are certain but words not recovered"
    }
   ],
-  "notes": "R7468-R7500 are four collections: the Schenck letters (AKM 21), Zbiór Dzieduszyckich 26/32 nr 13 and nr 5, and 24/11 no. 116 (R7484-R7485, misnamed Krakow_UNK on DECODE)."
+  "notes": "R7468-R7500 are four collections: the Schenck letters (AKM 21), Zbiór Dzieduszyckich 26/32 nr 13 and nr 5, and 24/11 no. 116 (R7484-R7485, misnamed Krakow_UNK on DECODE). Pass 2 (coordinator's request for a full reading): 62.4% -> 63.6% on the Schenck letters with the dotted signs now counted as tokens."
  }
 }

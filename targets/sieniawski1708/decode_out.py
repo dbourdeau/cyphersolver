@@ -12,7 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 OUT = os.path.join(ROOT, 'decode_updates', 'decryptions')
 codes = json.load(open(os.path.join(HERE, 'codes_key.json'), encoding='utf-8'))
-CODEVAL = {'189': 'Baron Schenck', '190': 'King of Sweden', '150': 'King Augustus', '208': 'der Kayser', '100': 'kaiserlicher Hof'}
+CODEVAL = {k: v.split(' (')[0] for k, v in json.load(open(os.path.join(HERE, 'codes_key.json'), encoding='utf-8')).items()}
 
 def key_table():
     t = {}
@@ -49,7 +49,7 @@ def schenck(rec, runs_unused):
             v = mm.group(1)
             return '{%s}' % CODEVAL[v] if v in CODEVAL else '<%s>' % v
         ctx = re.sub(r'(?<![\w<{])(\d{1,3})\.?(?![\w>}])', code, ctx)
-        ctx = re.sub(r'(?<=\s)(oo+|[obLdefgcmp])\.(?=\s)', r'<\1>', ' ' + ctx + ' ').strip()
+        ctx = re.sub(r'(?<=\s)(oo+|[obLdefgcmp])\.(?=\s)', lambda mm: '{%s}' % CODEVAL[mm.group(1)] if mm.group(1) in CODEVAL else '<%s>' % mm.group(1), ' ' + ctx + ' ').strip()
         out.append('[%s] %s' % (where, ctx))
     return '\n'.join(out) + '\n'
 
@@ -81,3 +81,23 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+def sien_reading(rec):
+    """Body from sien/<rec>_reading.txt: the reading paragraphs, without the header and the notes."""
+    lines = open(os.path.join(HERE, 'sien', rec + '_reading.txt'), encoding='utf-8').read().splitlines()
+    out, started = [], False
+    for l in lines:
+        if not started:
+            if not l.strip(): started = True
+            continue
+        if l.startswith(('==', 'Notes', 'Open', '[Clear postscript')): break
+        out.append(l)
+    body = '\n'.join(out).strip()
+    return '[Reading from the contemporary interlinear decipherment, checked against the key; [...] = not read.]\n' + body + '\n'
+
+
+if __name__ == '__main__':
+    for rec in ('R7476', 'R7481', 'R7482', 'R7484', 'R7485'):
+        open(os.path.join(OUT, rec + '.txt'), 'w', encoding='utf-8').write(sien_reading(rec))
+    print('sien readings written')
