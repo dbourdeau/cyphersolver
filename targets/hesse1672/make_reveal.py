@@ -22,7 +22,7 @@ for line in open(os.path.join(here, 'ct.txt'), encoding='utf-8'):
         toks.append({'g': t, 'p': v, 'cls': cls})
         if i in SPACE[str(p)]: toks.append({'g': '', 'p': ' ', 'cls': 'plain'})
 out = {'slug': 'hesse1672', 'anchor': 'the-passages', 'title': 'The two letter-cipher passages of f. 4r',
-       'caption': 'Each sign deciphered with the letter table of HCPortal key 255; codes from the glosses on the leaf. Uncertain values marked; the five signs e r t a d make no word.',
+       'caption': 'Each sign deciphered with the letter table of HCPortal key 255; codes from the glosses on the leaf. Uncertain values marked; the five signs e r t a z make no word.',
        'unit': 'sign', 'key_note': 'HCPortal key 255 (HStAM 4 d Nr. 1234), letter table; st and tt are syllable signs', 'tokens': toks}
 json.dump(out, open(os.path.join(here, '..', '..', 'docs', 'reveal', 'hesse1672.json'), 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 print(' '.join(f"{x['g']}={x['p']}" for x in toks))

@@ -1,7 +1,7 @@
 # Hamburg letter to the Hessian chancellor, 4/14 May 1672 (HStAM 4 f Dänemark Nr. 125, ff. 2-4; HCPortal 494)
 
 Catalogue item 341. Opened and worked 9 Oct 2026 (one session, claude-opus-5-5). Outcome: read in part (92.2% of
-cipher tokens as sense, measured); one five-sign word open.
+cipher tokens as sense, measured); one five-sign word open, blocked by the missing 1672 letter table.
 
 ## The document
 
@@ -22,7 +22,7 @@ cipher tokens as sense, measured); one five-sign word open.
 - **Glosses on the leaf.** A second hand (black ink, Latin script) wrote the meaning over almost every code number
   ("K. Dennemarck", "Curbrandenburg", "Berlin", "Hollandt", "Gen. Staden", "Franckreich", "Sueco", "alliance",
   "Herzog von Ploen", "Rey Danae", "Blumenthal"), noted "Schweden 768", "625", "Holstein" in the margins, wrote
-  "disgustirt und ertarin holstein" in the margin beside passage 1, and put partial letter glosses over passage 2
+  "disgustirt und erta?in holstein" (fifth letter r or z) in the margin beside passage 1, and put partial letter glosses over passage 2
   ("Sueco", "g ott", "ge b", "d a s", "amm", "wo", "a b l aut"). This is what HCPortal's "Partially solved" refers
   to. The hand is not dated; it could be the recipient's chancery or a later archivist.
 
@@ -57,9 +57,11 @@ cipher tokens as sense, measured); one five-sign word open.
 ## Transcription
 
 - `ct.txt`: the two letter-cipher passages (38 signs + the codes 634 and 768 they contain), from full-resolution
-  crops. In this hand 6 looks like b and 2 like r: "b7" = 67, "ro" = 20, "bb" = 66. The sign after XX in passage 1
+  crops. In this hand 6 looks like b and 2 like r: "b7" = 67, "ro" = 20. The sign before 37 in passage 1,
+  first read "bb" = 66, is two tall looped b-shapes, unlike the closed 6 of "26" in the same line: it is the doubled
+  capital **BB** (z in key 255); re-checked at 3x zoom. The sign after XX in passage 1
   ("6∂") is the key's syllable sign for **st**; the sign after 76 in passage 2 ("e∂") is its sign for **tt**.
-  `[I]` in passage 2 is an unclear sign read as the **ll** sign (M).
+  `[I]` in passage 2 is read as the **ll** sign (a looped stem, like the key's ♀) (M).
 - `codes.txt`: the 26 code numbers with their glosses. 630 was first read 650/680; the middle digit is the
   hand's long-tailed 3. 576 has a stroke over the 7 ("57ˣ6"); read 576 with the gloss "Franckreich".
 - `decrypt.py` applies key 255's letter table to `ct.txt`.
@@ -68,18 +70,18 @@ cipher tokens as sense, measured); one five-sign word open.
 
 `reading.txt`. Passage 1 (after clear "Totaliter"):
 
-> Totaliter disgustirt und ?? [e r t a d] in Holstein, nun sowohl als in Dennemarck Adell, Bürger und Bauern nun
+> Totaliter disgustirt und ?? [e r t a z] in Holstein, nun sowohl als in Dennemarck Adell, Bürger und Bauern nun
 > aller orten in plainten combiniret
 
 FF d, 67 i, 85 s, 33 g, XX u, [st], LL i, 113 r, WW t = "disgustirt"; 119 74 26 = "und"; 37 104 = "in"; 634 =
-Holstein. The five signs 28 83 117 20 66 decipher as e r t a d and make no German word; the glosser read the same
-place as "ertarin".
+Holstein. The five signs 28 83 117 20 BB decipher as e r t a z and make no German word. The glosser's margin, re-read at 3x,
+is "und erta?in" with the fifth letter r or z: he got the same letters.
 
 Passage 2 (after clear "insidiosus hostis"):
 
 > Sueco: Gott geb das all wol ablauff
 
-768 = Sueco; 55 76 [tt] = "Gott" (55 is h in the table, a slip for 53 g; the gloss reads g); 63 38 22 = "geb";
+768 = Sueco; 55 76 [tt] = "Gott" (55 is h in the 1666 table; the gloss reads g, so either the 1672 table differs here or 55 is a slip for 53); 63 38 22 = "geb";
 FF 20 75 = "das"; 20 [I] = "all" (M); YY 96 NN = "wol"; 50 32 110 8 XX = "ablauff" if 8 is the key's **au** sign
 and XX here its **ff** sign (both look-alikes; by the key a plain 8 is a null and XX is u) (M).
 
@@ -91,21 +93,21 @@ Measure: 64 cipher tokens (38 letter signs + 26 codes). All 64 have a value; 59 
 the 95% read bar, so read in part.
 
 ## Remaining gaps
-- passage 1, five signs 28 83 117 20 66 (decipher e r t a d) before "in Holstein" - blocker: too-short; the key reads them unambiguously, they make no word, the contemporary glosser failed at the same place ("ertarin"); an LM search allowing up to two copy slips (`search_gap.py`, de-1640s) gives nothing convincing, and no second copy of the letter is online
+- passage 1, five signs 28 83 117 20 BB (e r t a z) before "in Holstein" - blocker: no-key-material; the 1672 letter table is not the 1666 one cell for cell (55 is g in this letter, as the glosser read, but h in key 255), and the glosser, who evidently had the 1672 key, got the same letters ("erta?in"); either the 1672 table differs in these cells or the encipherer slipped, and neither can be settled without the 1672 key or another copy of the letter; neither is online (the rest of Nr. 125 is not digitised)
 
 ## Escalation
-- [x] siblings: HCPortal has no other leaf of 4 f Dänemark Nr. 125; the rest of the file (other despatches of the same writer) is not digitised
-- [x] clear-pages: the glosses on the leaf are the only decipherment; used for codes and passage 2
-- [x] known-keys: all 106 Marburg 4 d / 4 f keys on HCPortal screened; key 255 (Lincker 1666/1676) letter table fits; its nomenclature does not
-- [x] print: web search for the letter, Blumenthal 1672, the Dano-Brunswick alliance and Plön; nothing printed found
-- [x] key-rebuild: code values taken from the glosses; 602 inferred from the struck gloss and the clear "Foedus Dano-Brunsvicense"
-- [x] retry: the five open signs re-read at full resolution and run through `search_gap.py` (single and double slips); no word
+- [x] siblings: HCPortal has no other leaf of 4 f Dänemark Nr. 125 (all 1,875 cryptogram records listed; only 494); no other 1672 Hessian item; the rest of the file is not digitised
+- [x] clear-pages: the glosses on the leaf are the only decipherment; used for codes and passage 2; margin gloss re-read at 3x: "disgustirt und erta?in", fifth letter r or z
+- [x] known-keys: all 106 Marburg 4 d / 4 f keys on HCPortal screened; key 255 (Lincker 1666/1676) letter table fits with one cell differing (55); its nomenclature does not; key 254 (its Scala) checked
+- [x] print: web search for the letter, Blumenthal 1672, the Dano-Brunswick alliance (concluded at Braunschweig 12/22 Sept 1672 with the Emperor, Brandenburg and Hessen-Kassel, which fits the letter's plan), Plön, Ahlefeldt; no edition of the letter found
+- [x] key-rebuild: code values from the glosses; 653 re-read at 3x as "Cur Brandenb." (H); 625 gloss still only partly legible (M); 602 inferred from the struck gloss and "Foedus Dano-Brunsvicense" (I)
+- [x] retry: the five signs re-cropped at 3x from the native image, 'bb' corrected to BB (z); four searches: `search_gap.py` (any letter at up to two places), `search_glyph.py` (digit look-alikes 1/7, 2/7, 3/5/8, 6/0/8, 4/9 and the key's stem-and-loop syllable signs au, mm, ch, st, tt; up to two changes), `search_free2.py` (117 and BB free over letters and syllables, since the 1672 table differs from 1666) and `search_vocab.py` (alignment against every er-/ver-/ir-/ex-/ent- word of the DTA 1470-1770 corpora, with column-slip and look-alike costs); the best candidates (ermatt, erstatt, ersach, erbar, ertapt) need two or more changes and none fits the sentence well enough to adopt
 
 ## Steps (9 Oct 2026)
 1. Fetched HCPortal record 494 and the three images.
 2. Read the leaf: clear German despatch, code numbers with interlinear glosses, two letter-cipher passages on f. 4r.
 3. Web and HCPortal search for prior readings: none beyond the glosses.
-4. Read the passage glosses: margin "disgustirt und ertarin holstein"; passage 2 "Sueco / g ott / ge b / d a s ...".
+4. Read the passage glosses: margin "disgustirt und erta?in holstein"; passage 2 "Sueco / g ott / ge b / d a s ...".
 5. Tried reading passage 1 against the margin gloss with doubled letters as nulls and as letters: inconsistent.
 6. Screened key 255 (1666): letter table and doubled capitals of the same type; nomenclature different.
 7. Fetched all HCPortal key records; screened the 106 Marburg 4 d / 4 f keys in contact sheets; only the 253/254/255/266
@@ -114,3 +116,4 @@ the 95% read bar, so read in part.
    all wol ablauff".
 9. Transcribed all code numbers with glosses (`codes.txt`); 602 from the struck gloss and context.
 10. LM search (de-1640s) for the five open signs with up to two slips: no convincing word.
+11. Escalation (same day): 3x re-crops; 'bb' is BB (z) and the glosser's margin "erta?in" agrees; glyph look-alike, free-cell and corpus-alignment searches (`search_glyph.py`, `search_free2.py`, `search_vocab.py`): no word; 653 gloss re-read as "Cur Brandenb."; 625 gloss still partly legible; no HCPortal siblings. Extent unchanged, 59/64 (92.2%).
