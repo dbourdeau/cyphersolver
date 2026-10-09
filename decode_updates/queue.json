@@ -8517,6 +8517,53 @@
      }
     }
    }
+  },
+  "geertruidenberg": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/geertruidenberg.html",
+   "key": {
+    "none": "no key found: R8766 (Torcy-Petkum 1709), R8767, R8768, DECODE R587, Tomokiyo's 1710 Desmarets table (11B) and the BnF fr. 6204 keys were tried and do not fit"
+   },
+   "cite": "A. Legrelle, La diplomatie française et la succession d'Espagne, 1st ed., vol. 4, p. 546 and n. 2 (cites 'Torcy aux plénipotentiaires, 3 avril 1710', AE CP Hollande t. 223); S. Tomokiyo, Cryptiana, blencowe2.htm",
+   "fields": {},
+   "records": {
+    "R8755": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. Torcy to the French plenipotentiaries at Geertruidenberg (maréchal d'Huxelles, abbé de Polignac), Versailles, 3 April 1710; intercepted, endorsed 'Mr Blencowe cannot decypher them'. The dorse date '3 April 1709' is a slip for 1710 (f. 38r is dated 1710; Legrelle iv 546 n. 2 cites the letter under 3 April 1710 with the French copy in AE CP Hollande t. 223, not digitised). The letter opens in clear on f. 38r-38v (Vanderdussen's plea for the R.P.R. ministers); the DOC transcription omits it ('...'), so a transcription of the clear text is attached. Notation in the DOC: '11^0' = 110, '31^6' = 316, '311^' = 311, '7*29' = 729 (confirmed by the repeat '288 729'); otherwise the DOC agrees with the images. 690 cipher groups (285 distinct, values 1-823), a two-part code of 800+ values; no key fits (R8766, R8767, R8768, R587, Tomokiyo 11B, BnF fr. 6204 keys). R8756 is a different code.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "sender": "Jean-Baptiste Colbert, marquis de Torcy",
+      "receiver": "the French plenipotentiaries at Geertruidenberg, the maréchal d'Huxelles and the abbé Melchior de Polignac",
+      "origin_city": "Versailles",
+      "date": "1710-04-03 (the endorsement '3 April 1709' is a slip; the letter is dated 1710)",
+      "cleartext_language": "French"
+     },
+     "transcription": [
+      "targets/geertruidenberg/torcy_clear.txt",
+      "targets/geertruidenberg/torcy_groups.txt"
+     ]
+    },
+    "R8756": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. A copy of a letter from the maréchal de Villars (signed 'Le Mar Duc de Villars') to the abbé Melchior de Polignac at Geertruidenberg, written at the camp of Arleux, 1 June 1710. DECODE lists Villars as the receiver: he is the sender. DOC corrections: '575' is 515 (range 3-560); the '_' after 524 is an underline, not a gap. 173 groups, 106 distinct; a different code from R8755, no key found; not in Villars' Mémoires (ed. Vogüé) iii, which print his letters to Polignac of 24 May and 28 June 1710.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "sender": "Claude-Louis-Hector, maréchal duc de Villars (the record has him as receiver)",
+      "receiver": "abbé Melchior de Polignac, French plenipotentiary at Geertruidenberg",
+      "origin_city": "camp of Arleux",
+      "date": "1710-06-01",
+      "cleartext_language": "French"
+     },
+     "transcription": [
+      "targets/geertruidenberg/villars_groups.txt"
+     ]
+    }
+   }
   }
  },
  "rechteren1785": {

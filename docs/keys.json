@@ -1,5 +1,10 @@
 {
  "keys": [
+  {"id": "k-r8766-torcy-petkum1709", "label": "DECODE R8766 Torcy-Petkum code 1709", "kind": "DECODE key record", "by": "French Foreign Office (Torcy)", "year": 1709, "note": "Two-part code, 1-774, deciphering grid ruled to 850; BL Add MS 61575. Reads the Petkum letters R8748-R8752."},
+  {"id": "k-r8767", "label": "DECODE R8767 one-part code c. 1712-14", "kind": "DECODE key record", "by": "unknown", "year": 1713, "note": "One-part code 1-996, de = 215, English names (Dartmouth, Devonshire); BL Add MS 61575."},
+  {"id": "k-r8768-rose", "label": "DECODE R8768 marquis de Rose code", "kind": "DECODE key record", "by": "unknown", "year": 1716, "note": "Code 1-578, de = 12, Jacobite names of 1715-18; BL Add MS 61575."},
+  {"id": "k-r587-sp106", "label": "DECODE R587 French two-part code (SP 106/7)", "kind": "DECODE key record", "by": "unknown", "year": 1710, "note": "TNA SP 106/7, a French two-part code of slightly more than 800 groups with Northern names (Livonia, Prussia, Keyserlingk); date approximate."},
+  {"id": "k-bnf6204-sixieme", "label": "BnF fr. 6204 Sixieme Clef a Chiffrer", "kind": "archive key", "by": "French War ministry", "year": 1700, "note": "BnF fr. 6204 ff. 31-32; de = 400/411/423, 720-999 nulls (Tomokiyo). Date approximate."},
   {
    "id": "k-battier1686",
    "label": "Battier key — NA 1.10.29 inv. 1209",
@@ -3377,6 +3382,7 @@
   {"source": "s-bourdeau", "key": "k-schenck1706"}
  ],
  "unlinked": {
+  "geertruidenberg": "not deciphered: no key fits either code; nothing read, no values rebuilt",
   "burgo1527": "not a cipher: the record is a clear minute, no key involved",
   "randolph1570": "read from the contemporary decipherment (f. 278, R4932); no key",
   "walsingham1585": "key not identified; name numbers from context only",
@@ -3407,6 +3413,12 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-r8766-torcy-petkum1709", "target": "geertruidenberg", "note": "Torcy 3 Apr 1710: de = 43/140 in R8766, the letter has 43 once and 140 never; 42 (second commonest) = correspondance. Not the same assignment"},
+  {"key": "k-r8767", "target": "geertruidenberg", "note": "de = 215 absent from Torcy's letter; English-court nomenclature; one-part design does not fit"},
+  {"key": "k-r8768-rose", "target": "geertruidenberg", "note": "Villars 1 Jun 1710 has no 12 (de); names post-1714. Ruled out"},
+  {"key": "k-r587-sp106", "target": "geertruidenberg", "note": "applied to Torcy: 483/690 groups covered, word salad of Northern names. Ruled out"},
+  {"key": "k-tomokiyo-desmarets1710", "target": "geertruidenberg", "note": "about 190 values from Tomokiyo's 11B table: Torcy nonsense; Villars 41/173 covered, nonsense, top group 340 absent"},
+  {"key": "k-bnf6204-sixieme", "target": "geertruidenberg", "note": "Torcy has 423 411 twice = 'de de'; ruled out on the de homophones (the other fr. 6204 keys have 0-7 de hits in 690 groups)"},
   {
    "key": "k-barwick",
    "target": "hyde",
