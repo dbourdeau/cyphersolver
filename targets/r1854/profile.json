@@ -388,16 +388,51 @@
    "kind": "reading",
    "what": "P4 L14: the two signs after 'Patras' (I = i, bo = o, both well attested) are the word's ending: 'archiepiscopus de Patrasio' (Latin form of Italian Patrasso); the doubtful separate word 'io(?)' withdrawn. Letters from the rebuilt key, word division inferred.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Push to 95%: the five DECODE images re-fetched with the saved cookie (PNG, P1 1121x697 px) into img/ (git-ignored); P1 run lines, P2 L15/L28 and P4 L04/L20 cropped at 3-4x and compared with p1v2/p2v3/p4v2. P1 L05 confirms the second-pass signs; P4 L04 'leonebi' (t + = e b) cannot be read as 'Leonelli' from the image; P2 L28 confirms '= 14 j 14 P w 7 &' (l e u e n d e r).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "solver",
+   "what": "P1 annealed with the separators kept as cipher signs (// : ... . | as five extra signs, p1_withsep.txt), Latin and Italian, 10 restarts each: best -2.76 (la) and -2.63 (it-cinquecento) per char, no words; separators are not hidden letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "P2 L28 read from the existing key: 'persuaserat matri et filie u[t] vel(l)e(nt) vendere ter(r)as ipsas' (17 signs; was 'vellent venire(?) [?] ipsas').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "P4 L20 'debert onorio' re-divided: 'Nicolaus cito de Bertonorio debeat recedere' (Bertinoro), every letter as keyed (12 signs); P4 L22 'domicus noster' = dominus noster (one c/n slip, 7 signs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "verification",
+   "what": "Re-count: P2 1757/1802, P3 869/894, P4 1505/1537, P5 199/199, P1 0/262 = 4330/4694 = 0.922. Even with every non-P1 gap closed the target tops out at 0.944: 95% needs P1, which has no key material.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "key recovered from ciphertext-only",
   "method_basis": "P2 and P4/P5 (about 3,400 of 4,300 signs read) were broken ciphertext-only by homophonic annealing on the Latin model; P3 (about 870 signs) was read from a key taken from its own contemporary interlinear gloss; P1 is unread.",
-  "contribution": ["transcription", "key recovered", "sender or date identified", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified",
+   "catalogue correction"
+  ],
   "class": "read in part",
-  "fraction_read": 0.915,
+  "fraction_read": 0.922,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Cipher signs read as sense per letter: P2 1740/1802, P3 869/894, P4 1486/1537, P5 199/199, P1 0/262 -> 4294/4694 = 0.915 (tokens measured with _check_profile.py on ct_p*.txt; doubtful spans hand-counted in reading_p2/p3/p4.md).",
+  "fraction_read_source": "Cipher signs read as sense per letter: P2 1757/1802, P3 869/894, P4 1505/1537, P5 199/199, P1 0/262 -> 4330/4694 = 0.922 (tokens measured with _check_profile.py on ct_p*.txt; doubtful spans hand-counted in reading_p2/p3/p4.md, re-counted 5 Oct 2026).",
   "verification": [
    "contemporary decipherment",
    "historical consistency",

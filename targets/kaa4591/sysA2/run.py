@@ -27,7 +27,7 @@ IT = int(opt('--it', '30')); BEAM = int(opt('--beam', '1200')); LAM = float(opt(
 OUT = opt('--out', REC)
 LANG = opt('--lang', 'de')                          # 'la' for the Latin letter on R9410 ff.246-247
 MODEL = 'de-1500s' if LANG == 'de' else 'la'
-FIXED = {'ʀ': 'und', 'ꝁ': 'ck', 'ẽ': 'eur'} if LANG == 'de' else {}
+FIXED = {'ʀ': 'und', 'ꝁ': 'ck', 'ẽ': 'eur', 'Ä': 'auch'} if LANG == 'de' else {}
 BREAK = {'ʀ'} if LANG == 'de' else set()                                     # word signs: run boundaries
 
 def read_tok(rec):

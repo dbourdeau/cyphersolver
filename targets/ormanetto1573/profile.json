@@ -29,9 +29,9 @@
     "by": "DECODE",
     "source": "DECODE DOC_R116_D2580 (KL, 2020), spot-checked against images IMG_R116_I863/I864",
     "image_quality": "good",
-    "notes": "Digits with dots and underlines; the cross-stroke 't' after 2/4/5 is transcribed as a digit 1. The cross-stroke after 2/4/5 (written 1) is the word-end mark; undotted 0 closes the digit before it, dotted 0 opens the next."
+    "notes": "Digits with dots and underlines; the cross-stroke 't' after 2/4/5 is transcribed as a digit 1. The cross-stroke after 2/4/5 (written 1) is the word-end mark; undotted 0 closes the digit before it, dotted 0 opens the next. Five signs corrected from the full-resolution scans on 5 Oct 2026 (r116_cipher_v2.txt): a dotted superscript 7 (col), a stroke-4 without dot, a dotted 0 lost in a paper hole (desidera), and two writer's dot slips (entri, particular)."
    },
-   "read": "read in part"
+   "read": "read"
   }
  ],
  "system": {
@@ -83,15 +83,17 @@
    "lang/ n-gram models (it-cinquecento, es-golden-age)",
    "dec_aj.py (decoder rebuilt from the emailed key description)",
    "test_aj.py (shuffled-key control)",
-   "make_reveal.py / dec118.py"
+   "make_reveal.py / dec118.py",
+   "measure.py (token-level sense measure with an attested-word lexicon from lang/ corpora; measure_control.py shuffled-key control)"
   ],
   "models": [
    "claude-opus-5",
+   "claude-opus-5-5",
    "claude-sonnet-5-5"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-21",
-  "last_date": "2026-10-01"
+  "last_date": "2026-10-05"
  },
  "solution": [
   {
@@ -213,6 +215,36 @@
    "what": "Code values graded by AJ kept as he graded them; the guessed and open groups (about a dozen) were not adopted without a second context.",
    "result": "partial",
    "date": "2026-10-01"
+  },
+  {
+   "kind": "access",
+   "what": "Fetched the two full-resolution scans (IMG_R116_I863_P1, I864_P2, 2136x3075) with the DECODE session cookie.",
+   "result": "worked",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "statistics",
+   "what": "Checked how the 0.90 was measured: it was AJ's count of words (112 of 139 non-code words ordinary Italian), code groups left out and nothing measured per token or for sense. Wrote measure.py: every cipher token (digits and word-end strokes) counted, a word read only if its letter runs split into words attested in the it-renaissance + it-nunziature corpora (cipher spelling) or its code value is adopted; on DECODE's unchanged transcription: 1,248/1,324 = 94.3%.",
+   "result": "worked",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "transcription",
+   "what": "Re-transcribed every unread stretch on the full-resolution scans. f.303r: the 'dol' sign is a struck sign with a dotted 7 written above (col); the 4 before 'si oferisce' is a stroke-4, its dot is not there (che si oferisce); 'oftri' is written 6 0̇ 6 0̇ 7 (a dot slipped one place from 6 0 6̇ 0̇ 7, entri); 'pbrticular' has an undotted 4 (writer's slip for 4̇, particular). f.304r: the sign in 'desi?bera' is a dotted round sign lost in a paper hole, 0̇ by shape, giving 0̇4 = d (desidera, echoed by 'io desidero'). Corrected file r116_cipher_v2.txt.",
+   "result": "worked",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Open codes pooled across R116 and R118: 32, 2̇88, 84, 42, 53 occur once each in R116 and not at all in R118's reading; 3̇22 is Italia twice (after 47/93 tutta) but stands where 'per' is wanted in 'che sia [3̇22] alterarla'. No second context; left open.",
+   "result": "failed",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "control",
+   "what": "measure.py on r116_cipher_v2.txt: A 739/756, B 559/568, 1,298/1,324 = 98.0% read as sense; strictest variant (single-context codes 62, 48, 4̇22, 47/93, 3̇22 also counted unread) 1,258/1,324 = 95.0%. Shuffled letter keys with the codes kept: mean 23.0%, max 32.9% (measure_control.py).",
+   "result": "worked",
+   "date": "2026-10-05"
   }
  ],
  "outcome": {
@@ -221,23 +253,28 @@
   "contribution": [
    "catalogue correction"
   ],
-  "class": "read in part",
+  "class": "read",
   "key": "partial",
   "codes_open": {
-   "open": 3,
-   "total": 27
+   "open": 6,
+   "total": 30
   },
-  "fraction_read": 0.9,
+  "fraction_read": 0.98,
   "gaps": [
    {
-    "item": "about fifteen code groups in A and B (32, 288, 53, 422 ... )",
+    "item": "code groups 32 and 2̇88 in 'l'ho [32] de la buona [2̇88] havuta' (f.303r)",
     "blocker": "open-codes",
-    "detail": "one or two contexts each; AJ's guesses not adopted without a second source"
+    "detail": "one context each, not in R118, no key sheet; 9 tokens"
    },
    {
-    "item": "five suspect signs (ofrti, pbrticular, desi?bera, dol, a stray 1)",
+    "item": "code groups 84 and 42 in 'sara [84] che S.S.ta [42] dalla parte sua' (f.303r)",
     "blocker": "open-codes",
-    "detail": "local slips by the encipherer or the transcriber, to check on ff. 303r-304r"
+    "detail": "context suggests bene / ancora, but other words fit; counted unread; 8 tokens"
+   },
+   {
+    "item": "3̇22 in 'che sia [3̇22] alterarla' and 53 before 'finora' (f.304r)",
+    "blocker": "open-codes",
+    "detail": "3̇22 is Italia twice, 'per' wanted here; 53 reads 'fi' as letters (dittography?) or a code; 9 tokens"
    }
   ],
   "verification": [
@@ -245,6 +282,6 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Estimate from AJ's count (112 of 139 non-code words ordinary Italian), not re-measured here. Italian, not Spanish: passage A is Philip II on the league and the Emperor, B on Pitigliano. Pitigliano not checked against 1573 sources."
+  "notes": "Measured 5 Oct 2026 with measure.py: 1,298 of 1,324 cipher tokens (98.0%) belong to words read as sense, A 97.8%, B 98.4%; strictest variant 95.0%; shuffled-key control 23% mean. Five signs re-read on the scans. The earlier 0.90 was AJ's word estimate (non-code words only), not a token measure. Italian: passage A is Philip II on the league and the Emperor, B on Pitigliano. Pitigliano not checked against 1573 sources."
  }
 }

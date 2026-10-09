@@ -32,7 +32,7 @@
     "image_quality": "good",
     "notes": "Count from NOTES (numbers held in ct.py, not a plain file). Schmeh's public transcription had 272: two run-over lines omitted, one '2' dropped, one 6/16 misread."
    },
-   "read": "read in part"
+   "read": "read"
   },
   {
    "id": "distich",
@@ -110,15 +110,16 @@
   "tools": [
    "pages.py (EEBO-TCP A95749 page parser)",
    "align.py (DP alignment)",
-   "first-occurrence test with shuffled and random-page controls"
+   "first-occurrence test with shuffled and random-page controls",
+   "measure_sense.py (per-position sense measure, exact/near/gap)"
   ],
   "models": [
    "claude-opus-5",
    "claude-fable-5-1"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-16"
+  "last_date": "2026-10-05"
  },
  "solution": [
   {
@@ -168,33 +169,71 @@
    "kind": "control",
    "what": "Distich Proquiritation rule: 34/64 hits, chance, no English; page-index variants also at chance.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Line 5 numbers re-checked on the 1983 photograph at full resolution, and the other gap positions on both photographs. Numbers identical to ct.py; the residual misses are not transcription errors.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Line 5 re-segmented: tail 163-177 fixes (u)surpd authoritie, 150-157 give OVERTHRO, 158 W on the TCP gap page, 159-161 HIS (TCP 'Leopoldo s' phantom token explains 161). 'And [?] overthrow his usurp'd authoritie'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "statistics",
+   "what": "Old 0.788 counted any decoded letter; new measure_sense.py counts exact or within-2 first-occurrence support for the reading's letter: octastich 274/285 = 0.961, overall with distich 274/349 = 0.785.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "hypothesis",
+   "what": "Distich as word indices into the octastich reading and the Decagram verse (alone and concatenated).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "hypothesis",
+   "what": "Fetched the 1834 Works text; distich as word- and letter-index keys into the six-line verse, Parva peto couplet (Latin and English), octastich reading and Decagram verse, alone and concatenated both orders: 76 decodes, best -6.76/char vs -5.09 English.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "The octastich is a book cipher on The Jewel (1652) itself: word n on physical page k, first word with the needed initial. Vals AI published this rule and plaintext on 31 Aug 2026, before this attempt, and the project verified it against the EEBO-TCP text using a fresh transcription of the numbers.",
-  "contribution": ["transcription", "key extended or corrected"],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
   "class": "read in part",
   "gaps": [
    {
-    "item": "octastich line 5, positions 151-160 (CONERTHTO + page 158)",
+    "item": "octastich positions 149 and 158",
     "blocker": "needs-physical-access",
-    "detail": "TCP text of pp. 149-158 differs from the print (near-empty p. 158); needs the 1652 leaves"
+    "detail": "1652 leaves needed: p. 149 word 2 gives C where a one-letter word is required; the leaf counted as p. 158 is a gap in the TCP"
+   },
+   {
+    "item": "octastich positions 55, 66, 106, 151, 207, 232, 239, 250, 283",
+    "blocker": "illegible",
+    "detail": "numbers confirmed on the 1983 photographs; writer's or compositor's slips, letter fixed by context only"
    },
    {
     "item": "distich, 64 numbers",
     "blocker": "no-key-material",
-    "detail": "claimed Proquiritation rule gives 34/64, chance; page-index variants on The Jewel and Logopandecteision at chance; key text not identified"
+    "detail": "claimed Proquiritation rule gives 34/64, chance; page-index variants on The Jewel and Logopandecteision at chance; key text not identified; verse, Parva peto couplet and octastich texts as word/letter-index keys also at noise (5 Oct 2026)"
    }
   ],
-  "fraction_read": 0.788,
+  "fraction_read": 0.785,
   "verification": [
    "matched control",
    "historical consistency"
   ],
-  "notes": "Octastich read except ten letters of line 5 (TCP defect at pp. 149-158); distich (64 numbers) unread. Fraction = 275 of 349 numbers across both.",
+  "notes": "Octastich read (0.961 measured as sense): line 5 re-read 5 Oct 2026 as 'And [?] overthrow his usurp'd authoritie'; 11 positions are slips or TCP gaps. Distich (64 numbers) unread, so the target stays read in part.",
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_octastich.txt + distich: numbers (letters) decoded; octastich 285 positions, 10 of line 5 unread ('_' and TCP-defect run); distich 64 numbers unread; 275/349",
+  "fraction_read_source": "measure_sense.py / measure_sense.txt: octastich 274 of 285 positions read as sense (233 exact, 41 within 2 words of the first occurrence); distich 64 unread; 274/349",
   "key": "partial"
  }
 }

@@ -60,7 +60,7 @@
     "image_quality": "fair",
     "notes": "f.250v is photographed at a slant; look-alike signs merged in places."
    },
-   "read": "read in part"
+   "read": "read"
   }
  ],
  "system": {
@@ -328,16 +328,27 @@
    "kind": "control",
    "what": "Merge of the two sessions: session B's System L key (R9415) agrees sign for sign with session A's gloss key; session B's \"no decipherment on the images\" checked against f.248r and found wrong (interlinear gloss over every line); R9412 redated from 22 Dec 1533 to 8 Feb 1534 (the December date is the earlier letter it repeats).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "control",
+   "what": "Push to 95%: wrote measure.py (cipher words only, clear text excluded, supplies unread). Checked every bracketed supply in reading_r9412.txt against run_r9412_final.txt: nine places the cipher itself spells (l.1 genedigist/herrn, l.17 and l.26 gethan, l.20 der canczler with 2 slips, l.25 ankomen v=k, l.28 komen, l.40 guet, l.47 er, l.60 was es) were un-bracketed. R9412 93.4% -> 95.3%, overall 94.2% -> 95.4% on the new measure. No new key values; the remaining [..] places were not re-transcribed.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was fixed from the contemporary interlinear decipherment over every line of R9411 (f. 248r-v) and applied to R9412 (ff. 250r-251r, same file, no decipherment), which makes up most of the text read; an independent session found the same key as System L, rebuilt earlier for R9415.",
-  "contribution": ["transcription", "key recovered", "decipherment with ambiguous key", "sender or date identified"],
-  "class": "read in part",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "decipherment with ambiguous key",
+   "sender or date identified"
+  ],
+  "class": "read",
   "key": "recovered",
   "fraction_read_method": "measured",
-  "fraction_read_source": "r9411/reading_r9411.txt (357 of 370 words) + r9411/reading_r9412.txt (558 of 626 words from the cipher, 37 more supplied): 915/996",
+  "fraction_read_source": "measure.py over r9411/reading_r9411.txt + r9411/reading_r9412.txt, cipher words only (clear Latin/German passages left out, every supplied word counted unread): R9411 340/356, R9412 546/573, total 886/929 = 95.4% (5 Oct 2026; the old 915/996 counted clear text).",
   "codes_open": {
    "open": 0,
    "total": 5
@@ -349,17 +360,17 @@
   ],
   "gaps": [
    {
-    "item": "R9412 31 unread words and 37 supplied (fortress l.10, Caiianer l.44, bishop l.56, factor l.51, signature l.65, ~20 blotted words)",
+    "item": "R9412 27 cipher words unread (fortress l.10, Caiianer l.44, bishop l.56, factor l.51, signature l.65, scattered single words) plus remaining supplies",
     "blocker": "illegible",
-    "detail": "Three transcription passes, zoom pass, gap search, repairs and optimisers tried; an independent second transcription does not read them either."
+    "detail": "Three transcription passes, zoom pass, gap search, repairs, optimisers and an independent second transcription do not read them. The full-resolution f.250r image is clean, so the blocker is unresolved sign readings rather than ink; better images or a second hand-transcription of these lines is the next step."
    },
    {
-    "item": "R9411 13 short gaps incl. the captain's name l.19",
+    "item": "R9411 16 words: 13 short gaps incl. the captain's name l.19, and supplies",
     "blocker": "illegible",
     "detail": "Blotted signs; the gloss is faint at the same places."
    }
   ],
   "notes": "DECODE has the direction wrong: Sperantio is the addressee on the cover, not the sender. R9411 is King John to the dukes, R9412 an agent's newsletter. The key is System L of R9415 in the same volume: one correspondence.",
-  "fraction_read": 0.92
+  "fraction_read": 0.954
  }
 }

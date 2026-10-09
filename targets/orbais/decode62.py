@@ -11,6 +11,8 @@ the tail of V) and code signs with no value are counted unread.
 python decode62.py          -> reading + measured fraction
 """
 import pathlib, sys
+sys.stdout.reconfigure(encoding='utf-8')
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2]))
 
 HERE = pathlib.Path(__file__).parent
 # sign -> (value, source)
@@ -25,6 +27,8 @@ KEY = {
     'Ⱥ': ('f', 'T (f)'), '⋕': ('o', 'K (mon, confirme)'), '2': ('b', 'T'), 'Ħ': ('n', 'S (H = n)'),
     'a': ('f', 'S (ferons)'), 'n': ('et', 'T (code et), S (et a mon avis, responces et)'),
     '⌘': ('Mr', 'T (code Mr)'), 'Ƒ': ('le', 'S (ʃ-with-bar = le: pour le bien, le monde); K le doyen'),
+    'o': ('p', 'S (passé, suppl[ie], paix)'),
+    'ʃ°': ('y', 'S (small ʃ in "+ v ʃ" = l-ay)'),
     'ʃ': ('jay', 'S (line 1: ʃ receu = Jay receu); K jay veu'),
 }
 PER_GROUP = {('P1', 'ꝥ'): ('l', 'T (l row 2), K la protection')}
@@ -36,6 +40,11 @@ READ = {
     'H': ("j'ay veu ung advis", 'C'), 'I': ('confirme', 'C'), 'Sig': ('Baron', 'H'),
 }
 UNREAD = {('S1a', 'Ƃ'), ('S1b', 'ʃ'), ('G1', 'τ')}   # code signs with no value (the ʃ at the end of S1 is not 'jay')
+
+
+from lang import lm
+LM = lm.load('fr-1600-letters')
+SENSE = -4.0   # per-char score: sense readings -0.03..-3.3, random 6-letter strings about -11 (5 Oct 2026 calibration)
 
 
 def main():
@@ -53,6 +62,9 @@ def main():
         reading, grade = READ[g]
         n_read = 0 if reading is None else sum(1 for t in toks if (g, t) not in UNREAD)
         total += len(toks); read += n_read
+        txt = reading if reading else ''.join(vals)
+        sc = LM.per_char(lm.norm(txt.replace('[', '').replace(']', '').replace('?', '')))
+        print(f'LM {sc:6.2f} {"sense" if sc > SENSE else "NO"}  ', end='')
         print(f'{g:4} {" ".join(toks):28} -> {"".join(vals):22} | {reading or "(no sense)":22} {grade or "-"}  {n_read}/{len(toks)}')
     print(f'\ncipher tokens {total}, read as sense {read}, fraction {read/total:.3f}')
 

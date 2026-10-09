@@ -35,7 +35,7 @@
   },
   {
    "id": "R1892 p2",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "Koninklijk Huisarchief, The Hague, Prins Willem V, inv. 339; DECODE R1892",
    "date": "1795-11/1795-12",
    "year": 1795,
@@ -106,7 +106,8 @@
    "PIL rotation and strips",
    "quadgram simulated annealing (python)",
    "Huygens retroboeken full-text search (Gedenkstukken)",
-   "lang/ fr-1750-nospace and nl-modern sense measure"
+   "lang/ fr-1750-nospace and nl-modern sense measure",
+   "joint sign scoring (solve_signs.py)"
   ],
   "models": [
    "claude-opus-5"
@@ -235,6 +236,12 @@
    "kind": "transcription",
    "what": "p2 line 24 re-examined again: only the end ('gesteld is geweest') aligns; the middle stays illegible.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "solver",
+   "what": "Joint LM scoring of the recurring p2 signs (solve_signs.py: each of ~400 candidate words put into every occurrence at once, nl-modern, 20-letter windows), checked against Gedenkstukken phrasing: H, hook, slash, cf, Y-cross, S, Y, 8, psi, phi, 7, cross. No candidate fits every occurrence (e.g. 'zouden' fits the three H-before-willen places but not the rest, nor the French occurrence on p1); none accepted.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -246,7 +253,7 @@
    "sender or date identified",
    "key extended or corrected"
   ],
-  "class": "read in part",
+  "class": "read",
   "fraction_read": 0.967,
   "fraction_read_method": "measured",
   "fraction_read_source": "transcription_p1.txt + transcription_p2.txt with STRICT=1 apply.py --measure (3 Oct 2026): 1,889 of 1,954 cipher tokens given an H or M value (I-grade sign values counted unread); emended slips counted at their read value. p1 1049/1054, p2 840/900.",
@@ -257,17 +264,17 @@
   "verification": [
    "historical consistency"
   ],
-  "notes": "All digit pairs map. Read as sense, strict (I values unread): 1,860/1,954 = 95.2% (p1 99.1%, p2 90.7%); 91.8% for the 21 Sept state under the same measure. 11 writer slips emended (listed in NOTES). Passes 95% as a whole by 11 tokens, but the Dutch postscript (p2) is 90.7% and its recurring word signs are still workable: kept read in part at the write-up update of 3 Oct 2026. Writer Prince Frederick, late Nov - early Dec 1795.",
+  "notes": "All digit pairs map. Read as sense, strict (I values unread): 1,860/1,954 = 95.2% (p1 99.1%, p2 90.7%); 91.8% for the 21 Sept state under the same measure. 11 writer slips emended (listed in NOTES). Passes 95% as a whole by 11 tokens, but the Dutch postscript (p2) is 90.7% and its recurring word signs are still workable: kept read in part at the write-up update of 3 Oct 2026; reclassed read on 5 Oct 2026 (5 Oct 2026, project rule: a target measured at 95%+ read as sense counts as read in full, open code signs notwithstanding). Writer Prince Frederick, late Nov - early Dec 1795.",
   "gaps": [
    {
-    "item": "recurring word signs on p2 (⊣H 9, hook 7, slash 5, cf 4, Y-cross 4, S 3, Y 3, psi 2, 7 2)",
+    "item": "recurring word signs on p2 (H 9, hook 7, slash 5, cf 4, Y-cross 4, 8 4, S 3, Y 3, psi 2, phi 2, 7 2, cross 2, bar 2)",
     "blocker": "open-codes",
-    "detail": "retried 2 Oct with R2242 values (five adopted, six ruled out) and 3 Oct (P = voor); no forcing context yet, but each recurs and is still workable from context"
+    "detail": "jointly scored over all occurrences 3 Oct 2026, no candidate fits every one"
    },
    {
-    "item": "single-occurrence word signs on p2 (about ten)",
+    "item": "eleven signs that occur once (3, 8-cross, 9, A, I, Z, check, circle-cross, delta, x; dash on p1)",
     "blocker": "no-key-material",
-    "detail": "seen once each; no key sheet, not in print, no value in R2242"
+    "detail": "a single context cannot fix a word sign; no key sheet, sibling occurrence or print"
    },
    {
     "item": "page 2 line 24 middle; page 1 line 1",

@@ -2,7 +2,7 @@
 
 Catalogue no. 19 (priority 5.0, class B). Opened 19 Sept 2026.
 
-Status: in progress (2 Oct 2026: the full f. 97 nomenclature was added and the unresolved groups rerun, `retry_f97.md`; lines not yet transcribed remain). Read in part (see section 8). Both keys recovered - including the office's own key at BnF fr. 3995
+Status: in progress (5 Oct 2026: every cipher line of all four letters re-transcribed and scored for sense in `sense.tsv`: 92.5% of nos. 45/79/47, 37.5% of no. 68, 75.3% overall; sections 9-10). Read in part (see section 8). Both keys recovered - including the office's own key at BnF fr. 3995
 f. 97 - all four leaves located on the images, and all four read line by line, with a scatter of groups and
 the Feria-Mansfeld nomenclature still open. Written up as `docs/sessa1593.html`.
 
@@ -249,17 +249,91 @@ candidate was checked and excluded: **fr. 3995 f. 101 (canvas 194) is an Italian
 Spanish one (*Austria, Ambasciatore, Assemblea, Battaglia, Bisogno, Borbone, Cardinale di, Castello,
 Cattolici, Concilio generale, Corte di*). It belongs to another correspondence.
 
+## 9. Sense measure and re-transcription (5 Oct 2026)
+
+**The 0.70 was not a measure of sense.** It counted every group not marked `·` as read, so syllables that
+make no word (*mi · mitido*, *las tima ten*) counted, and it under-counted the leaves: no. 79 has **22** cipher
+lines, not 14 (the 19 Sept note that "every cipher line is read" was wrong; ll. 15-22 were never transcribed),
+and no. 47 has 21, of which 13 had been read.
+
+**Re-transcription.** All cipher lines of nos. 45, 79 and 47 re-read from Gallica crops at 3200-3600 px
+(`img3983/r0178_*`, `r0286_*`, `img3984/r0198_*`), line by line, and each line scored in `sense.tsv`:
+a group is read only when it is part of a Spanish word that makes sense in context; `?` readings and code
+groups without a value are unread. `measure_sense.py` sums it and runs `lm.best_language` (es-modern first for
+all three).
+
+**Key sheet f. 97 re-checked** (canvas 188 at 3600 px) for the open groups:
+- three-dot **94** and **95** = *de* (listed under D) -> *confidente de S.M.*, *a costa de la bolsa de S.M.*, *ser de mucho provecho*;
+- three-dot **49** = *Su Santidad* -> *mostrarla a Su Santidad*, *abriesse mucho los ojos Su Santidad*, *a Su Santidad, si no me hablasse*;
+- three-dot **88** = *V.M.*; three-dot **5, 8, 9, 0, 25** = nulls (the *Nulles* row); two dots = doubled consonant (*fuesse*, *passar*);
+- **ʃo = assi** (*aunque* is ʒo) -> *assi fuesse a costa*, *assi pensava contar*, *assi devia agradecimiento*.
+
+**Forced by context:** 9 = *y*; *xor* = *para* (variant of *xur*, three times); *pal* = *duque* (variant of *pol*:
+*duque de Feria*, *duque de Mantua*); 86 = *vo*; *de por tes* = **Desportes**; 67 90 62 = **Pisani**; *Gondi*.
+
+**New text** (no. 79 ll. 13-22): *cuan embarcado ha quedado el duque por la carta de Desportes ... le avia mostrado
+unas cartas del duque en que le escrivia que assi devia agradecimiento ... todavia le avia pesado que uviesse tratado
+de sus personas con Su Santidad, porque sabia que el no tenia ambicion ninguna, sino que su fin era desear que se
+hiziesse election de un Rey ... para la conservacion de la religion ... poderoso para defenderle ... porque negocios en
+que convenia que abriesse mucho los ojos Su Santidad e no le engañassen.* (no. 47 ll. 12-21): *el dicho dia de recibir
+esta carta tuve a la tarde audiencia de Su Santidad, e antes de ir a ella me envio el [hum] del duque de Mantua ...
+copia va con esta ... resolvi de no dezir nada a Su Santidad si no me hablasse en ello ... lo que V.M. me escrive de
+Gondi y de Pisani ... a echado de ver que adrede se me devia de aver dado antes de la audiencia, e sabiendolo Su
+Santidad le respondio ...*
+
+| letter | before (2 Oct, not sense) | after (5 Oct, sense) |
+|---|---|---|
+| no. 45 | ~0.84 | **230/254 = 0.906** |
+| no. 79 | ~0.84 of 14 lines | **504/546 = 0.923** |
+| no. 47 | ~0.8 of 13 lines | **478/510 = 0.937** |
+| three letters | | **1212/1310 = 0.925** |
+| no. 68 | ~0.3 | **~12/620 = 0.02** (estimate) |
+| all four | 0.70 | **1224/1930 = 0.634** |
+
+**no. 68 tested again:** line 11 transcribed and decoded with `keyM.tsv`: *va le ri a no la vi o xur que le de di as
+se ri as ...* - syllables, no Spanish, as on ll. 7-10. Tomokiyo's table does not give continuous text on the body;
+ll. 12-31 not transcribed. Token count estimated (28 lines x ~22).
+
+## 10. no. 68 transcribed in full and the Feria-Mansfeld key tested ciphertext-only (5 Oct 2026)
+
+All cipher lines of f. 145 transcribed from the 3600-px crop to `ct68.txt`: **20 cipher lines (ll. 4-23; ll. 1-3 are
+clear), 598 groups**, counted (the 620 of section 9 was an estimate from a wrong line count). Diacritics dropped.
+`dec68.py` decodes with `keyM.tsv`.
+
+**The earlier verdict was wrong.** On a full transcription Tomokiyo's table *does* give Spanish: *a mi no me parece que
+puede*, *se [ha] de poner todo lo que se puede*, *lo que podemos*, *aliento, y si ella apareciera, y palabra*, *no
+estamos desesperados*, *peligro*, *espero*, *de acudir a lo que esta*, *supuesto e numero*, *pareceria que venia a
+ayudar ... y la cavalleria*, *no seria fuera de*, *a lo menos no parece sino*. Lines 7-10 had read badly in the
+19 Sept pass because their transcription was truncated.
+
+**Control** (`anneal68.py`, es-golden-age 5-gram, no spaces): keyM scores **-2.500** per character; 200 keys with
+keyM's values shuffled among the numbers score at most **-3.378** (mean -3.805). The key is real.
+
+**Rebuild:** an unconstrained hill-climb over all numbers collapses onto *que* (homophone collapse, score -1.59 but
+nonsense) and was rejected. Constrained fill of the numbers missing from keyM (`fill68.py`): **57 = li** is top of
+all candidates with a gain far above the median (3 occurrences: *peligro*, *aliento*) and is accepted (`fill68.json`).
+64 (9 occurrences; *ha* by context: *se ha de poner*, *ha de acudir*) is not separated by the LM (na -2.549, ha
+-2.569) and stays unread. 31, 77, 81, 95, 200T, 800T: no candidate stands out. Cribs: *Paris* and *Su Magestad* are
+in clear on the leaf; *Feria*, *Mansfeld*, *Liga* fit no syllable run, so they would sit in the open three-letter
+codes (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...), which no crib fixes.
+
+**Retry of nos. 45/79/47:** 57 = li belongs to the Mansfeld cipher, not to the 1592-93 office key, so it gives nothing
+there; no new office-key value came out, and the ~75 doubtful groups stand.
+
+| | before | after |
+|---|---|---|
+| no. 68 | ~12/620 = 0.02 (estimate) | **224/598 = 0.375** (measured) |
+| all four | 1224/1930 = 0.634 | **1436/1908 = 0.753** |
+
 ## Remaining gaps
-- no. 68, f. 145 (Ibarra, 10 July 1593): the Feria-Mansfeld nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil) - blocker: no-key-material; Tomokiyo tabulates none, and fr. 3995 f. 101 was checked and is an Italian nomenclature of another correspondence
-- no. 47, f. 108: the unglossed and faint later lines (line 14 on) - blocker: not-attempted; the office key applies, only lines 2-13 were read, and the glosses fade (marginal contrast)
-- no. 45, f. 98: lines 16-17 not transcribed, and about 40 unresolved groups (the 2 Oct rerun resolved 4) - blocker: not-attempted; key complete (fr. 3995 f. 97)
-- no. 79, f. 162: two lines not transcribed, and about 50 unresolved groups (the rerun resolved 8) - blocker: not-attempted; as for no. 45
-- symbol-alphabet variants still unresolved in nos. 45/47/79 - blocker: open-codes; forms not yet matched to the office key's alphabet
+- no. 68, f. 145: 374 of 598 groups unread - blocker: no-key-material; the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere, fr. 3995 f. 101 is Italian and no crib fixes it; the numbers 64, 31, 77, 81, 95 are not separated by the LM control; the diacritic finals dropped in ct68.txt are still to be added from the image
+- nos. 45, 79, 47: 22 code groups not on the f. 97 sheet (Val, ral, ʃep, ner, ʒe, pir, mil, is, xom, mal, rili, mos, ʃer, hir, hum, us, ho, yos, ∂ir, lir, xox, ru) - blocker: no-key-material; sheet re-read 5 Oct for them, each occurs once or twice
+- nos. 45, 79, 47: about 75 syllable groups of doubtful reading (slips, ambiguous hooks), listed per line in sense.tsv - blocker: open-codes
 
 ## Escalation
-- [x] siblings: fr. 3995 ff. 94, 96, 98, 101 opened next to the key; no. 47 used as the crib for the others
-- [x] clear-pages: no. 47's interlinear decipherment used as control; no. 68's clear opening read
+- [x] siblings: fr. 3995 ff. 94, 96, 98, 101 opened next to the key; no. 47 used as the crib for the others; open codes pooled across the three letters (xor, pal, ʃo, 4̈9 solved jointly)
+- [x] clear-pages: no. 47's interlinear decipherment used for ll. 1-4; no. 68's clear opening read
 - [x] known-keys: Tomokiyo 1592-93, Feria-Mansfeld, Ibarra-Doria, Ibarra-Zuniga keys; DECODE R4076/R4077 = fr. 3995 ff. 94-97
 - [x] print: Tomokiyo spanish3.htm; BnF notices for fr. 3983/3984
-- [x] key-rebuild: the office key's nomenclature re-read from f. 97 (61 entries added and 8 numeric ones listed as comments, one revised, the rule sheet read; `retry_f97.md`); the Feria-Mansfeld nomenclature of no. 68 is still not rebuilt (no key material, above)
-- [x] retry: every unresolved group of the transcribed rows rerun against the extended key92.tsv: 13 resolved, 1 corrected, 1 reassigned (`retry_f97.md`); the lines never transcribed (no. 45 L16-17, no. 79 two lines, no. 47 L14 on) are not yet read
+- [x] key-rebuild: f. 97 re-read 2 Oct and again 5 Oct (de, Su Santidad, V.M., nulls, assi); the Feria-Mansfeld key of no. 68 tested ciphertext-only against a shuffled control and filled where the LM separates a value (57 = li); section 10
+- [x] retry: every line of nos. 45, 79, 47 re-transcribed from the images and re-read with the extended key (5 Oct, sense.tsv); no. 68 transcribed in full (ct68.txt) and decoded with keyM + 57 = li

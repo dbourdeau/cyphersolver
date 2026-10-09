@@ -899,11 +899,11 @@ Interpretation: adressie vos leritre: address your letters; some surplus letters
 ### Image 1, segment 70
 Clear anchor: par
 
-Cipher: `20 25 21 34 42 36 28 25 37 20 52 40 21 34 68 42 20`
+Cipher: `20 21 34 42 36 28 25 37 20 52 40 21 34 68 42 20`
 
-Literal (M): **keinisberkakinnik**
+Literal (M): **kinisberkakinnik**
 
-Interpretation: Keinisberk a Kinnik: Konigsberg to Kinnig? verify name
+Interpretation: Kinisberk a Kinnik: Konigsberg (re-read 5 Oct 2026 at full resolution: no 25 after the first 20); Kinnik unidentified, verify name
 
 ### Image 1, segment 71
 Clear anchor: quoy que

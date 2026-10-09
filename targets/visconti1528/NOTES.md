@@ -1,6 +1,6 @@
 # Galeazzo Visconti to Anne de Montmorency, Campo a Landriano, 30 Aug 1528 (catalogue 177)
 
-Read in part (1247 of 1337 cipher glyphs read as sense, 93.3%, measured by count_tokens.py over tokens.txt, third
+Read in part (1248 of 1337 cipher glyphs read as sense, 93.3%, measured by count_tokens.py over tokens.txt, re-read 5 Oct 2026; third
 pass 22 Sept 2026). Key: partial
 (the letters are recovered; the numbered nomenclator is not). Written up 22 Sept 2026 as
 https://dbourdeau.github.io/cyphersolver/visconti1528.html.
@@ -115,3 +115,20 @@ Counts: 1337 glyphs; 1247 read as sense (93.3%); 53 sense open; 21 unread; 16 co
 - [x] retry: second pass over every open spot and the whole verso glyph by glyph (final.md)
 - [x] retry (third pass, 22 Sept 2026): sibling rules from visconti1529 re-applied to every open stretch (doubling Λ, far = NTO, ρ = F, fuo = fu); r09 qq and r21 rr identified as codes; 1240 (by eye) / 1235 (token file) -> 1247 of 1337
 - [x] enhancement: autocontrast, unsharp mask, threshold and 2x zoom on the Gallica native crops of r21, v01, v03, v06, v07, v09: r21 rr overbarred; v03 signs legible and the ǂ-r pair is code 4r; only the v01 blot stays illegible
+- [x] retry (push to 95%, 5 Oct 2026): every open stretch rechecked; r10-12 pair tested as RO (soro/loro/doro: only loro fits) and as I (soi/loi/doi: loi not secure), left open; r07, r09, v03 still give no word with at most one slip; the 16 code glyphs stay unkeyed. No change, 1247/1337 = 93.3%. 95% needs 24 more glyphs; 16 of the 90 unread are codes with no key, the rest one-offs and blotted spots.
+- [x] full push (5 Oct 2026, coordinator request): the natives in full/ (c243 4153x6087, Gallica full/max) were already on disk; the deskewed page desk243.png was re-cut at full resolution on measured line centres (push/r*.png, zoom push/z07.png). Tested with Lasry's own table, which this letter's key had diverged from:
+  - Lasry gives an L-shaped sign as a third A, and the siblings use L=A 32 times (fr. 3045). Here the footed L reads C in 26 secure words (duca, scrito, capitanei), so it is a different sign. Taken as A it gives r07 "asaiilati" and r09 "as|aiasai pui": no word either way.
+  - r07 at 4x: the second sign of the ψψ pair carries a long thin stroke running left under the L. That is a later word divider, so the pair is not the crossed N of Lasry's table. "asciilati" stays.
+  - Lasry gives the m-shaped sign as L. That yields v03 "...dlcuspaeonlit...", v07 "o sfulo" and r16 "il che lur e[ω] parsa" (Lombard lur = loro?). Only r16 reads, and only with an unknown ω, so nothing is counted.
+  - 48 = Saint-Pol and peu = the King, against every sibling occurrence: [48] occurs twice, both in fr. 3096 ("cum l'andata di [48]", "[48] ne crede"); [ep]/[peu] once in fr. 3045 ("servicio di [ep]"). Every context fits, but none forces the value, and no clear text names the person. Not counted.
+  Result: no change, 1247/1337 = 93.3%.
+- [x] sign-by-sign re-read on the new crops (5 Oct 2026; verso cut on measured centres, push/v*.png). Signs as seen:
+  - r03 end `me 7 p̶ ψ 7 | a s a n`: the stroke through p is a divider. "la mia" stands, sense open.
+  - r16 `rex ψ me l q d Λ m u r · d ω 7 k ne`: a bare Λ (the doubling mark) stands before "mur". The ω may be one sign with the following 7. Unresolved.
+  - r30 start `ne a ψ n y d | ψ n s Λ ∂ n 7 ne`: the [v b] pair looks like Λ∂. Unresolved.
+  - v01 end `... o n k ψ ▮ d θ 7 ſt`: the blot is solid. Unchanged.
+  - v03 middle `Λ m l s ne ρ 7 d n m ı t ǂ ı̈ r`: the sign read as o (P) is a ρ with a long left tail (F by the sibling rule). The token file now has ρ=F?. Sense still open. The line ends "...[4r] cel|aro" (celarò, v04), already read.
+  - v06 `em far q 7 s d p w ne ψ y d ψ ∂ ψ`: w = O gives "che havemo" (that we have). Counted (+1). The following "si ne[?]di" stays open.
+  - v07 `o d k + ne ρ s m n 7 a k 7 s d`: the "neρ" of v03 recurs, possibly one sign. "a per o sfu[m]o" stays open.
+  - Recto 10-12, 21 and 27 and verso 2, 8 and 9 were rechecked on the crops; no sign differs from tokens.txt.
+  Re-measured with count_tokens.py: 1247 -> 1248 of 1337 (93.3%).

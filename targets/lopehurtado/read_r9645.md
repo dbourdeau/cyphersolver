@@ -107,3 +107,7 @@ What changed:
 Still unread: `ze` (3x), `tec`, `xiɣ̊7 #ʇʇHoε97` (r14), `∂&ε8m`, `ɣß∂7`, `zωα7` (r05), `ɣωɭb8`, `⊃84&ɣ̊α7` (r08),
 `ɣ7∠8ϑ8ɋHo` (v01), `xod yzα`, `x8∂ α#ɣ̊8ϑα` (v07), `ϑωε7ϙ` (v10), `ʃen` and the r17 tail. No crib for f. 243r or
 upper f. 243v; codes seen once (no-key-material) and spelled words with one sign at the scan's limit (illegible).
+
+## 2026-10-03
+
+**368 / 489 = 75.3%** (from 73.2%). `ze` = el pooled from four contexts (R9645 r15-r17, 1524 R9683); r15 *no vienen el ~real*, r16 *que el no puede ~hazer*, r14 *que no ~hara*. See NOTES "Push toward a full reading".

@@ -8,39 +8,39 @@ change is noted with a `# p3:` line in t49r.txt.
 
 ## Reading
 
-{[s]e trouuoit lors a Rheims malade, qu'en eschauffement(?) de dispositions [?] faict reprendre(?) courage au [315], et
+{[s]e trouuoit lors a Rheims malade, qu'en eschauffement(?) de dispositions auoit(?) faict reprendre(?) courage au [315], et
 rassemblant ses forces s'estoit allé mettre le siege deuant Chartres, qu'il auoit prins, et quelques autres villes, par le
 moyen desquelles il estoit demeuré maistre de toute la Beauce(?) contre des meilleures et plus fertiles [prouinces] de la
-[France(?)], qui rendroit(?) [?] tellement [?] que ceux qui y habitent n'ont les choses necessaires a la vie que les armes
+[France(?)], qui rendra(?) Orleans(?) tellement debilitée que ceux qui y habitent n'ont les choses necessaires a la vie que les armes
 a la main; qu'il auoit faict le semblable a Noyon a la veue de [?], lequel [?] ses forces [restantes(?)] pour le secourir,
 resolu de l'executer, en auoit esté empesché pour auoir esté contrarié, et son dessein [?], [par] le prince d'Ascoly,
-lequel auoit la conduite du secours enuoyé [?], qui auoit donné occasion de [?] partout et dire hault [?] ... estoit(?)
+lequel auoit la conduite du secours enuoyé e(?) Flandres, qui auoit donné occasion de murmurer partout et dire hault [?] ... estoit(?)
 plaisir de laisser conquerir [?] a l'heretique pied a pied(?), qu'il vaudroit mieux la luy donner, en asseurant la
-religion, que les persuasions desquelles on auoit usé a l'endroict des peuples; que [?] retourneroit en brief [?] plus
-puissante que la precedente, [et] n'auoient [peu] empescher que [?] les forces d'Allemaigne et Angleterre [ne fussent]
-iointes au [315] long temps auant qu'il parust, et que partant il y estoit loisible d'entreprendre [?]; [il] sembleroit(?)
+religion, que les persuasions desquelles on auoit usé a l'endroict des peuples; que [`z 6 1`, Parma?] retourneroit en brief auec une(?) armée plus
+puissante que la precedente, [et] n'auoient [peu] empescher que ueoyans(?) les forces d'Allemaigne et Angleterre [ne fussent]
+iointes au [315] long temps auant qu'il parust, et que partant il y estoit loisible d'entreprendre un bon(?); luy sembleroit
 [que] les villes qui n'auoient receu garnison ne les eussent receues, voulant demeurer libres, de traicter auec l'ennemy
-s'il [?] la teste de leur cor[?] [?] place forte et d'importance; en auoit une de ceste façon mesmes, suiuie de deux autres,
+s'il tournoit la teste de leur costé. Mouson, place forte et d'importance; en auoit une de ceste façon mesmes, suiuie de deux autres,
 sans la resolution qu'il auoit prinse d'aler sans perdre temps droict a [?] (a place name, `q A s 7 Z8 L t`); apres auoir
 recueilli tant des forces de [?] iusques a quinze mil hommes de pied et de trois a quatre mil cheuaux, auoit desiré
 entreprendre quelque chose en Picardie(?) en attendant Son Altesse, mais que l'on auoit refusé de le faire soubz sa
 conduite, uiuant cependant si dissolument que tout le monde en exclamoit. [?] auoit ce secours [?]; l'on disoit porter
 enuie a ce que [?] auoit laissé entier, et le uouloir ruiner, que [?] estant entré en [?] n'auoit esté [?] l'on pas
 secourir [?], qui faisoit iuger qu'on n'auoit de la foiblesse, et encores qu'on l'ait secouru d'hommes auec quelques
-heureux succés. Et depuis, s'estant [?] l'occasion [?] eust leué le siege [?] tout, et prit Caudebec; [?] ce que le [315]
+heureux succés. Et depuis, essaiant(?) l'occasion [?] eust leué le siege [?] tout, et prit Caudebec; si est ce que [315]
 ayant incontinant apres(?) tourné la teste et s'estant campé pres l'armée catholique, monstrant tous les iours un tres
-grand desir de uenir au combat, contraint a la fin par le deffault de uiures de passer [la] riuiere, [?] se retirer en
-grande [?] iusques aupres de Chasteau Thierry, ou les [ennemis(?)] [?] apres auoir reprins Caudebec [?] a Chalons en
+grand desir de uenir au combat, contraint a la fin par le deffault de uiures de passer [la] riuiere et se retirer en
+grandes iournées iusques aupres de Chasteau Thierry, ou elle s'estoit(?) dissipée(?) [?] apres auoir reprins Caudebec, uenu a Chalons en
 Champaigne, s'estans separez d'auec luy ses Allemands et Suisses pour la plus part, [il] demeuroit neantmoins maistre de
 la campaigne; faisoit croire, apres auoir eu deux si puissantes armées tournées a rien, qu'il n'y a plus d'espoir de ueoir
 les affaires redressées par} la guerre principalement, pour auoir ceste remarque quoy a laissé passer plusieurs occasions
 sans uouloir combatre, quoy qu'au iugement de plusieurs auec aduantaige; qui faisoit qu'en plusieurs endroicts {on
 prestoit l'oreille aux bruits que meschamment sement les ennemis et autres peu affectionnés a la cause, lesquelz
-pens[oient] obscurcir l'honneur de Sa Maiesté et diminuer sa reputation, disent que [?] en feut reprinse la deffence non
-pour [?] l'heresie(?)} mais poulsé de ses propres interestz, ayant iugé n'y auoir meilleur moyen de {ranger ses subiectz
+pens(a)ns(?) obscurcir l'honneur de Sa Maiesté et diminuer sa reputation, disent que le(?) en feut reprinse la deffence non
+pour l'heresie(?)} mais poulsé de ses propres interestz, ayant iugé n'y auoir meilleur moyen de {ranger ses subiectz
 rebelles des Pais Bas a la raison que nourrissant la guerre parmy} les François, lesquelz par icelle seroient diuertis de
-leur donner ayde. Cependant pour le bien et repos de {[?] ses [?] que [?] la paix(?) et meure(ment?) [?] ceste façon(?) [?]
-fomenter [l'un] des partis} auec aussy [?].
+leur donner ayde. Cependant pour le bien et repos de {[?] ses [?] que [?] la paix(?) et meure(ment?) [?] ceste façon(?) elle(?)
+fomente l'un des partis} auec aussy [?].
 
 ## Summary
 
@@ -80,8 +80,14 @@ The other glosses (C5, C6, C8, C12, C16 "Joint", C50) are faint or truncated and
 
 ## Rows still unresolved (wholly or in part)
 
-C1-C2 (who "se trouuoit lors a Rheims malade"; "faict reprendre"), C5 (after "de la"), C7-C8 (the name after "a la veue
-de"), C9 ("son dessein [?]"), C11 (the middle), C14-C15 (the subject of "retourneroit"), C18-C19 ("traicter ... la teste de
-leur cor[?]"), C22 (the place name `q A s 7 Z8 L t`), C23 (the start), C27-C29 (the middle of each), C31 (between "l'occasion"
-and "leué le siege"), C35-C36 (around "les ennemis"), C38 (the ɤ sign in "campaigne"), C41 (the A in "aux"), C43 ("pens[oient]"),
-C44 (the word before "l'heresie"), C49-C50 (only partly legible).
+Pass 4 (`# p4:` lines in t49r.txt) read: C1 auoit(?), C5 Orleans(?)/debilitée, C10 Flandres, C11 murmurer, C14 auec une(?)
+armée, C15 ueoyans(?), C17 un bon(?)/luy, C19 tournoit/costé/Mouson, C31 si est ce que, C35 et/grandes iournées, C43 pens(a)ns(?),
+C44 le(?), C50 elle(?)/fomente l'un.
+
+Still open: C7-C8 (the name `Z 6 z` after "a la veue de"; `x 4 4 8 z4 pi Z ? g` before "ses forces"), C9 (`T I q r` before
+"le prince"), C11 (the middle `w dz p x pi 30 8 f Lo s I r S 4 o ph z4`), C12 and C28 (`4 56` / `4 s 6^`, recurring where
+"France" is expected, also f. 46v C43/C44 and f. 48v C12; a code group by context only, not read), C14/C28 (`z 6 1`, probably a
+code for Parma), C22 (place name `q A s 7 Z8 L t` and `z 6 z` before "apres"), C23 (start `z s 8 H ? X g`, with the struck
+`z s g`), C27 (worked by the other pass-4 agent), C29 (`4 s 7` after "secourir"), C31 (middle), C35-C36 (`x 44 x`), C38 (the ɤ
+sign in "campaigne"), C49-C50 (`q h Z8 H X g ? II q 44` "at que ... la(?)", and `q X D 4 t T 4 n g` before "ceste").
+The [?] after "n'auoit esté" (C28/29) has no signs (C28 ends `\ e3 k z4`, C29 starts "e l'on"); it marks a missing word only.

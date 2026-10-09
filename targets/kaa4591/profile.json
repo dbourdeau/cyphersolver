@@ -634,6 +634,42 @@
    "kind": "solver",
    "what": "Splits applied from the readings (sysA2/applysplit.py: R9408 380 signs, R9409 9) and regraded: strict measure R9408 0.814 -> 0.812, R9409 0.721 -> 0.724; machine decrypts 0.875 -> 0.870, 0.840 -> 0.842. No unread words opened.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Image re-transcription of every line holding an unread word: R9408 98 lines (143 sign edits, transcription_v4), R9413 99 lines then a close-zoom pass on 67 (v3, v4), R9409 181 lines (~356 edits, v3). An R9408 second pass stopped at 20/72 lines (usage limit).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "solver",
+   "what": "sysA2/fill.py: unread spans located by wildcard alignment, decoded by a lexicon-only beam over sign values attested in the pooled hand readings (per-hand weighted), with second-occurrence checks.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Reading rounds on the new signs (words read): R9413 86.0->94.3%, R9408 88.9->91.8%, R9410 ff.246-247 82.9->88.9%, R9409 80.9->87.2%, R9410 f.244r 83.9->85.8%, R9427 77.3->82.6%; all six 89.0%. None at 95%.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "hypothesis",
+   "what": "K word sign = King Ferdinand from context (Hieronymus of Zara sent to the Turk; Hungarian lords holding with K at Pressburg; the Württemberg war against K). 4#o ligature = auch.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Image re-transcription: R9408 second pass finished (6 lines corrected), R9427 44 lines (~95 edits), R9410 f.244r 23 lines (16 edits).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Final reading rounds: R9413 no further gain (94.3%); R9427 84.3%, R9410 f.244r 86.1%, R9408 92.0%; overall 89.3% (6132/6827). Stopped: nothing further passes the acceptance rules; no letter at 95%.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -646,8 +682,8 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": "unknown",
-  "notes": "Read: R9325, R9322, R9417; mostly R9323; R9416 f.262 at the time; R9416 f.263 broken (working decrypt). System A′ letters read in part with the R9407 key re-learned per letter (2 Oct 2026): R9408 88.9%, R9409 80.9%, R9410 f.244r 83.9% and ff.246-247 (Latin, King John, Buda 30 June 1534) 82.9%, R9413 86.0%, R9427 77.3% of words. Open: R9424, R9367; R9319 blocked (cover letters not imaged); R9291 is a key fragment.",
+  "fraction_read": 0.893,
+  "notes": "Read: R9325, R9322, R9417; mostly R9323; R9416 f.262 at the time; R9416 f.263 broken (working decrypt). System A′ letters read in part with the R9407 key re-learned per letter (2 Oct 2026): R9408 88.9%, R9409 80.9%, R9410 f.244r 83.9% and ff.246-247 (Latin, King John, Buda 30 June 1534) 82.9%, R9413 86.0%, R9427 77.3% of words. Open: R9424, R9367; R9319 blocked (cover letters not imaged); R9291 is a key fragment. 5 Oct 2026: System A′ letters at R9413 94.3%, R9408 91.8%, R9410 ff.246-247 88.9%, R9409 87.2%, R9410 f.244r 85.8%, R9427 82.6% of words (89.0% overall); K = Ferdinand.",
   "verification": [
    "contemporary decipherment",
    "key confirms",
@@ -684,11 +720,6 @@
     "item": "R9427 unread words (123 of 542)",
     "blocker": "open-codes",
     "detail": "line ends P1.01-03, names on P2"
-   },
-   {
-    "item": "K word sign (System A′)",
-    "blocker": "open-codes",
-    "detail": "probably King Ferdinand in R9413; no key gives it"
    },
    {
     "item": "R9416 f.263 clean reading",

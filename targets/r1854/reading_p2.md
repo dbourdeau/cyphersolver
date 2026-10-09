@@ -23,7 +23,7 @@ voluntatem suam et aliorum ut fiat deliberatio, ad quod eos Victorius inclinasse
 dicere, sicut alias per eum misit, quod quantum in ea est ipsa contentatur de deliberatione, sed quod subditi non
 videbantur bene contenti, quia dominatio vestra nimium distat, si ibi contingeret aliquod sinis[t]r[u]m; et quod
 [C]arolus est nimis iuvenis ad talia; item et puella non bene contentabatur. Nam dicit [?] Victorius quod
-persuaserat matri et filie [?] vellent venire(?) [?] ipsas, et quia non scripsit hac ultima vice nisi puelle; que
+persuaserat matri et filie u[t] vel(l)e(nt) vendere ter(r)as ipsas, et quia non scripsit hac ultima vice nisi puelle; que
 dumtaxat scripsit propter matris [?], in hunc modum quod ipse vult ut matrimonium de ea in filium [ARO] quod [?], sed
 ad quem [?] deficere respectat ex testamento sui patris, deliberavit debere fieri omnino. Fiat. Ipsa autem mater,
 dubitans ne Victorius [?] dixerit, amiti(?) se iterum excusare(?); ex quibus et multis aliis que satis superflue dixit,
@@ -46,4 +46,4 @@ girl was not content either … The mother, doubting …, (will) do what (you) o
 ## Measure
 
 1,802 cipher signs. Unread or not in sense: about 60 signs in the spans marked `[?]` (lines 15, 19, 26, 28, 31–35),
-plus the two code signs (ARW read from context as cardinalis). Read as sense: ≈ 1,740 / 1,802 = 0.966.
+plus the two code signs (ARW read from context as cardinalis). Read as sense: ≈ 1,740 / 1,802 = 0.966. 5 Oct 2026: L28 "vendere terras ipsas" read (17 signs): 1,757 / 1,802 = 0.975.

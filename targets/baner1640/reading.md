@@ -57,11 +57,11 @@ a dropped or misread figure. The phrase "eisen o vi rechte zu" (14 tokens) is no
 
 ## S6 (after "mich aber von zeit zu zeit")
 
-    40 16 23 28 29 27 13 32 24 64 19 92 36 77 62 31 24 [770] 27 64 15 18 36 83 77 75 60 88 [783] 86 64
-    d  u  r  c  h  e  s  i  o  n  e  n  s  i  e  k  o        e  n  d  a  s  s  i  e  ?  o        e  n
-    durch E(sp)ionen sie ko[770]en, dass sie ?o[783]en   ("wie sein undt des feindes gelegenheit sey ... berichten")
+    40 16 23 28 29 27 13 12 32 24 64 19 92 36 77 62 31 24 [770] 27 64 15 18 36 83 77 75 60 88 [783] 86 64
+    d  u  r  c  h  e  s  p  i  o  n  e  n  s  i  e  k  o        e  n  d  a  s  s  i  e  ?  o        e  n
+    durch Espionen sie ko[770]en, dass sie ?o[783]en   ("wie sein undt des feindes gelegenheit sey ... berichten")
 
-"durch" and "dass sie" read; "Espionen" lacks its p; "ko[770]en" is "kommen" or "können" if [770] is a syllable code.
+"durch" and "dass sie" read; "Espionen" complete (the manuscript has 12 = p, dropped by Neal; restored 5 Oct 2026); "ko[770]en" is "kommen" or "können" if [770] is a syllable code.
 
 ## S7 (after "damit ich ihm inmittelst mit seiner andeutung")
 

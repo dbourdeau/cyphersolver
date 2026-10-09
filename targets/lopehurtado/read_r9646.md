@@ -120,3 +120,7 @@ run 5 `zob` (1), `δ8ǝtoo` (5), `ʃof` (1), `ʙ∠47` (4), `ɣ?8δHo` (6). Run 
 `zip`, `zob`, `ʃof`, and three spelled words
 (`ʙ∠89&Ho`, `δ8ǝtoo`, `ɣ?8δHo`) — no crib; the spelled words contain one sign each whose value is not
 settled (`ʙ`, `ǝ`, `?`), and the codes occur once.
+
+## 2026-10-03
+
+No change (80%). `wordmatch.py` finds no Spanish word for `ʙ∠89&Ho`, `δ8ǝtoo`, `ʙ∠47`, `ɣ?8δHo` under any reading of their signs, so each holds a misread sign; `zip`, `zob`, `ʃof` occur in no other letter of the 21.

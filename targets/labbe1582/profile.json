@@ -18,18 +18,17 @@
         ]
       },
       "length": {
-        "tokens": 834,
-        "distinct": 10,
+        "tokens": 491,
         "unit": "symbols",
         "measured": true,
-        "file": "prague_draft_digits.txt"
+        "file": "reading_pr20.txt"
       },
       "transcription": {
         "by": "llm from images",
         "image_quality": "good",
-        "notes": "Counts are draft written digits, not deciphered letters or established cipher units. 29 inventoried runs; one obscured locus plus glyph/join uncertainties."
+        "notes": "Token streams from KEY_AND_DECRYPTION.txt (PR #20), checked against the 23 Sept draft (98.1% of figures agree) and the images."
       },
-      "read": "not read"
+      "read": "read"
     },
     {
       "id": "no37",
@@ -46,18 +45,17 @@
         ]
       },
       "length": {
-        "tokens": 77,
-        "distinct": 8,
+        "tokens": 45,
         "unit": "symbols",
         "measured": true,
-        "file": "breslau_draft_digits.txt"
+        "file": "reading_pr20.txt"
       },
       "transcription": {
         "by": "llm from images",
         "image_quality": "good",
-        "notes": "Count is draft written digits, not established cipher units. Two spans around clear plusieurs; alternate witness differences unresolved."
+        "notes": "Token streams from KEY_AND_DECRYPTION.txt (PR #20), checked against the 23 Sept draft (98.1% of figures agree) and the images."
       },
-      "read": "not read"
+      "read": "read"
     },
     {
       "id": "no38",
@@ -74,47 +72,49 @@
         ]
       },
       "length": {
-        "tokens": "unknown",
-        "unit": "mixed",
-        "measured": false
+        "tokens": 40,
+        "unit": "symbols",
+        "measured": true,
+        "file": "reading_pr20.txt"
       },
       "transcription": {
         "by": "llm from images",
         "image_quality": "good",
-        "notes": "Substantially repeats no. 37; not counted as independent data. See breslau_cipher_draft.md; no independent plaintext."
+        "notes": "Second witness of the May cipher; the PR deciphered its second span (f79), which corrects the f77 53/35 slip."
       },
-      "read": "not read"
+      "read": "read"
     }
   ],
   "system": {
     "types": [
-      "undetermined"
+      "homophonic"
     ],
-    "summary": "Numerical insertions in clear French, with token boundaries under investigation.",
+    "summary": "Numerical homophonic substitution inserted in clear French: one-digit and two-figure units (vowels 1,3,5,9 and their teen forms, consonants two-figure groups), 6 = word space; no nomenclator.",
     "symbol_kind": "digits",
-    "distinct_symbols": "unknown",
+    "distinct_symbols": 29,
     "diacritics": {
-      "used": "unknown"
+      "used": false
     },
     "homophones": {
-      "used": "unknown"
+      "used": true
     },
     "nomenclator": {
-      "present": "unknown"
+      "present": false
     },
     "nulls": {
-      "present": "unknown"
+      "present": false
     },
     "key_order": "unknown",
     "digit_groups": {
-      "width": "unknown",
+      "width": "mixed",
       "separation": "mixed"
     },
-    "notes": "Numerical stream has explicit points; role of pointed six, nulls and unit boundaries unproved. Rejected crib mappings must not be treated as recovered values."
+    "notes": "Key recovered by AngusRobinson (PR #20). Points follow the space sign 6. i/j/y and u/v merged; uu for w."
   },
   "conditions": {
     "prior_solution": {
-      "exists": "unknown",
+      "exists": "no",
+      "where": "Cryptiana, DECODE and web searched 23 Sept and 7 Oct 2026; nothing found.",
       "found": "not found",
       "used": false
     },
@@ -125,11 +125,13 @@
       "crib"
     ],
     "attack": "crib",
-    "human_role": "Identified manuscript and requested solving to completion.",
+    "human_role": "Identified manuscript and requested solving to completion. 7 Oct 2026: outside contributor AngusRobinson (GitHub PR #20) recovered the key and decipherment; Bourdeau asked Claude to review and verify the PR. Tools and model of the contributor unknown.",
     "models": [
-      "GPT-6"
+      "GPT-6",
+      "unknown (contributor)",
+      "Claude Opus 5.5 (review)"
     ],
-    "last_date": "2026-09-23",
+    "last_date": "2026-10-07",
     "tools": [
       "PIL crops",
       "shared lang.lm fr-1600-letters, orders 4 and 5",
@@ -204,42 +206,67 @@
       "kind": "access",
       "what": "New Gallica image/manifest requests failed by connection reset or timeout via Python, curl and browser; earlier-letter/enclosure trail remains externally blocked.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "crib",
+      "what": "AngusRobinson (PR #20): guessed three similar figure strings as l'empereur / empereur, giving one- and two-figure units with homophones and 6 = word space.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "reading",
+      "what": "AngusRobinson (PR #20): extended the key by decoding further passages; deciphered all 31 runs of nos. 30 and 37/38 (KEY_AND_DECRYPTION.txt).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "verification",
+      "what": "Review: every token line decodes to the stated text (0 mismatches); PR figure streams agree with the independent 23 Sept draft in 897/914 figures (98.1%); five lines rechecked on the f65, f77 and f79 images; f77 53/35 is a copying slip, f79 reads retournoit.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "control",
+      "what": "Shuffle control, fr-1530-despatches LM: key -2.500 per char vs 1000 shuffled keys mean -8.137 (sd 0.469, best -6.738), z = 12.0.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "literature search",
+      "what": "Web search for a prior reading (Cryptiana, Nevers/l'Abbé 1577): none found.",
+      "result": "failed"
     }
   ],
   "outcome": {
-    "method": "not solved",
-    "method_basis": "The numeric insertions in l'Abbé's Prague and Breslau letters (BnF fr. 3198 nos. 30, 37, 38) were transcribed in draft and attacked with segmentation sweeps, constrained pair solvers and cribs; nothing was validated, and the 1580 Nevers key in fr. 3995 does not match.",
-    "contribution": ["transcription"],
-    "class": "not read",
-    "key": "none",
-    "fraction_read": 0,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "All cipher insertions remain unvalidated; clear prose and imposed cribs excluded. Cipher-token boundaries remain unknown.",
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "AngusRobinson (PR #20) recovered the numerical homophonic key from the ciphertext with a probable word (l'empereur) suggested by context; no external plaintext or existing key was used. Checked here against the images and with a shuffle control.",
+    "contribution": [
+      "key recovered",
+      "transcription"
+    ],
+    "class": "read",
+    "key": "recovered",
+    "fraction_read": 0.996,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "reading_pr20.txt via decode_pr20.py: 534 of 536 cipher tokens (word spaces included) read; 2 blotted figures restored from context.",
     "verification": [
-      "none"
+      "matched control",
+      "historical consistency",
+      "key confirms"
     ],
     "gaps": [
       {
-        "item": "Prague cipher, all inventoried insertions",
-        "blocker": "no-key-material",
-        "detail": "No validated values or segmentation; draft only."
-      },
-      {
-        "item": "May cipher, nos. 37 and 38",
-        "blocker": "no-key-material",
-        "detail": "Duplicate witnesses without plaintext."
-      },
-      {
-        "item": "Overwritten/uncertain cipher figures",
+        "item": "f64r03, f64r08: one figure each under a blot",
         "blocker": "illegible",
-        "detail": "f64r08 obscured locus and unresolved glyph variants."
-      },
-      {
-        "item": "Earlier letter/enclosure trail in fr. 4695 no. 51",
-        "blocker": "needs-physical-access",
-        "detail": "Digital access currently fails; restored images or another copy needed, not necessarily an in-person visit."
+        "detail": "Restored from context as orgueil and reaulme, grade C."
       }
     ],
-    "notes": "Attempt closed for now; research target remains open. No claim of cryptographic impossibility and no partial-solve percentage based on clear prose. See REASSESSMENT.md."
+    "notes": "Key and decipherment by AngusRobinson (GitHub PR #20, Oct 2026); verified by Claude for Daniel Bourdeau on 7 Oct 2026. Earlier 23 Sept attempt (not solved) superseded.",
+    "codes_open": {
+      "open": 0,
+      "total": 0,
+      "tokens_open": 0
+    }
   }
 }

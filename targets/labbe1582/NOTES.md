@@ -1,8 +1,66 @@
 # Desiderio l'Abbé to Nevers, Prague and Breslau, 1577 — research result
 
-Status: attempted, open — cipher not read. Write-up: https://dbourdeau.github.io/cyphersolver/labbe1582.html. Renewed attempt completed 23 September 2026; move on pending better evidence.
+Status: read (7 Oct 2026). Key recovered by AngusRobinson (outside contributor, GitHub PR #20), checked here.
+Write-up: https://dbourdeau.github.io/cyphersolver/labbe1582.html
 
-**Current result:** see [REASSESSMENT.md](REASSESSMENT.md) for the expanded inventory, failed cryptanalytic tests, successful synthetic control, corrections to the clear-text outline and the new February cipher-dispatch lead. No cipher plaintext or key has been validated. This is not a finding of intrinsic impossibility.
+## Result (PR #20, checked 7 Oct 2026)
+
+AngusRobinson recovered the key and deciphered every numerical insertion of nos. 30 and 37/38
+(`KEY_AND_DECRYPTION.txt`, `SOLUTION.txt`). His route: three similar figure strings guessed as *l'empereur* /
+*empereur* (the word is frequent in the surrounding clear text), which fixed one- and two-figure units with
+homophones; the rest of the key followed from decoding other passages. Ciphertext-only (a probable word, no
+external plaintext).
+
+**Key.** a=02/04 b=08 c=01 d=03 e=1/11 f=21 g=31 h=09 i(j,y)=3/13 l=23 m=33 n=43 o=5/15 p=25 q=07 r=35 s=45
+t=55 u(v)=9/19 x=8/18 z=29; **6 = word space** (the "conspicuous marks after figures ending in 6" noted on
+23 Sept are the points that follow the space sign). Pattern: one-digit odd figures and their teen forms are the
+vowels; consonants are two-figure groups ending in 1, 3, 5 (or 8/9 for b, h, q, z, with a leading 0).
+
+**Check here (`decode_pr20.py`, output `reading_pr20.txt`).**
+- Every one of the 31 token lines decodes with the stated key to the stated plaintext (0 mismatches).
+- Transcription: the PR's figure streams agree with this project's independent draft of 23 Sept
+  (`runs_dots.txt`, made before the key was known) in 897 of 914 figures (98.1%); the differences are the PR's
+  corrections, and the corrected ones make sense.
+- Images re-checked here at native size: May, f77 line 1 (`33 02 13 45 6.` = *mais*; `43 1 6. 25 23 11 9 35 1 35
+  15 3 11 43 55 6.` = *ne pleureroient*), f77/f79 line 2, and f65 *Les Polonois* `45 15 43 55 6. 03 13 19 13 45 1 45`
+  = *sont divises*, *estoient, et iacoit quilz* `33 15 43 45 55 35 1 43 55 6.` = *monstrent*, `11 08 1 35 6. 11 55 6.
+  23 11` = *(uue)ber et le*. All match the PR. f77 writes `53 15` where f79 has `35 15` (the 53/35 difference noted
+  on 23 Sept): f79 gives *retournoit*, so f77 is a copying slip.
+- Shuffle control: fr-1530-despatches LM, per character: key −2.500; 1000 shuffled keys (same tokenisation) mean
+  −8.137, sd 0.469, best −6.738; z = 12.0.
+- Measured fraction: 536 cipher tokens (spaces included), 2 obscured figures (f64r03 *or[g]ueil*, f64r08
+  *reau[l]me*) restored from context, 534 read = 99.6%. Every word is French sense or a name that the clear text
+  confirms (*Wastauicio* is written in clear near the cipher *uuarsauicio*).
+- Historical consistency: *mondeui* = Vincenzo Lauro, bishop of Mondovì, nuncio in Poland (clear context *Monsieur
+  le Nonce*); *sboroschi* = Zborowski; *uuarsauicio* = probably Krzysztof Warszewicki (identification not checked); *dansqui* = Danzig; *batori* =
+  Báthory; *uueber*, *trautzen* = Weber and Trautson, both named in clear in the May letter.
+- Prior reading: none found. Cryptiana, DECODE and web searches on 23 Sept found nothing; a web search on
+  7 Oct found nothing either. No DECODE record is known for BnF fr. 3198 nos. 30/37/38.
+
+**What it says (selection).** Prague, 2 March: *puisse prendre femme en hongrie* ...
+*si lempereur* ... *titre de roi* ... *ami de ceste maison* ... *du turc* ... *auoir paix* ... *les Polonois sont
+diuises, monstrent bon uisage au batori, aux coeurs est le contraire* ... *de nouuelle election*. Breslau,
+2 May, after Weber "suivra encore la Court le temps de deux ans pour estre receu aux affaires d'icelle": *mais
+plusieurs ne pleureroient s'il n'y retournoit jamais*.
+
+## Remaining gaps
+- f64r03 and f64r08, one figure each under a blot - blocker: illegible; restored from context as *orgueil* and *reaulme*, grade C
+- f64r06 *trouer* for *trouver* - blocker: illegible; a writing slip in the cipher, not an unread token (no figure is unread)
+
+## Escalation
+- [x] siblings: no. 38 (f79) is the second witness of May and fixes f77's 53/35 slip
+- [x] clear-pages: no decipherment on the leaves; the clear text names the people the cipher names
+- [x] known-keys: the 1580 Nevers key (fr. 3995) tried 23 Sept, does not fit; the PR key is new
+- [x] print: Cryptiana, DECODE, web: nothing (23 Sept and 7 Oct)
+- [x] key-rebuild: key complete for every figure that occurs (PR #20)
+- [x] retry: all 31 lines decoded with the final key; 0 tokens unread apart from the two blotted figures
+
+---
+
+## Earlier record (23 September 2026, superseded)
+
+
+**Superseded 23 Sept result:** see [REASSESSMENT.md](REASSESSMENT.md) for the expanded inventory, failed cryptanalytic tests, successful synthetic control, corrections to the clear-text outline and the new February cipher-dispatch lead. No cipher plaintext or key has been validated. This is not a finding of intrinsic impossibility.
 
 The material below is the earlier research record. Its claims of a completed clear reading and absence of the writeup skill are superseded by the reassessment; the clear-text files remain provisional.
 

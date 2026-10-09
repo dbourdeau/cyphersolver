@@ -16,9 +16,9 @@ Majesté se rendroit dans cinq ou six Jours a Palencia a huict lieues de la, ou 
 particulierement. La Je luy renouuelay ce que Je luy auois parauant escript {[du](?) peu de moyens que J'auois de
 seiourner dauantage par deça si Je n'estois assisté de sadite Maiesté, veu que le credit m'estoit [?] pour n'auoir
 satisfaict au payement des sommes qui m'ont esté prestées a Madrid, e[t]} Que le long temps quil y auoit que Je le luy
-auois faict entendre sans quil meust faict responce me faisoit cognoistre que {ma demande ne [?] [rais]onable(?), et
+auois faict entendre sans quil meust faict responce me faisoit cognoistre que {ma demande n'estoit r[ais]onable(?), et
 que lon auoit peu de satisfaction de tant d'importunités que J'ay données. A ceste ocasion J'estois(?) venu prendre
-congé de sadite Maiesté et de luy, et me retirer en France; que Je le suppliois de me procurer ce bien auec [?], par
+congé de sadite Maiesté et de luy, et me retirer en France; que Je le suppliois de me procurer ce bien auec briefueté(?), par
 ce que chacun iour de retardement me rendoit mon voiage dificile, et la longueur m'ostoit les moyens du t[ou]t(?). Il
 me respondit que [?] auoit ses ministres par dela} qui luy rendoient compte de tout ce qui y passe et quil leur
 adressoit aussy ses commandements pour les choses quelle cognoissoit estre necessaires, de sorte quil despendoit de mon
@@ -44,14 +44,14 @@ lettres quil auoit escript en plusieurs endroicts du royaulme sur ce subject, et
 esté donné pour composer … quoy ny ad(?) Jonstat(?) foy(?), et changeant de propos me fist entendre que sa Maiesté
 auoit trouué bon {que J'attendisse encores quelque temps des nouuelles de [?], et que pour m'en donner le moyen elle
 m'auoit ordonné cinq cens ducats, qui valent enuiron quatre cens cinquante escus, ou plus(?)} si Je voulois,
-lesquelles me seroient p{[?] a Madrid, ou Je me pouuois retirer auec les ambassadeurs et aultres estans par deça de
+lesquelles me seroient {liur[ée]s(?) a Madrid, ou Je me pouuois retirer auec les ambassadeurs et aultres estans par deça de
 la part de princes estrangiers}, qu'a lheure mesme Il alloit escrire vn mot au seigneur Francisco de Idiaquez pour
 {me faire fournir ceste somme. Apres l'auoir remercié [de] la bonne volunté de sadite Maiesté et} la peine quil
 auoit voulu prendre de se souuenir de moy, Je luy dis que Je desirois auant que retourner a Madrid auoir la commodité
 de discourir auec luy sur lestat auquel se retrouuoient les affaires en France {et des inconueniens qui pourroient
 succeder s'il n'y estoit remedié, encores que sadite Maiesté eust de bons aduis par ses ministres, beaucoup de
-choses ne venoient a leur cognoissance qu'il estoit necessaire que [el]le eust(?) [?]. Il me respondit comme
-n'estant(?) [?] durant la suite de la court et} me dict que la Il estoit malaisé, par ce que lon se preparoit pour
+choses ne venoient a leur cognoissance qu'il estoit necessaire qu'el[l]e sceust; il [?]. Il me respondit comme
+n'estant(?) [?] seiour a la suite de la court et} me dict que la Il estoit malaisé, par ce que lon se preparoit pour
 venir a Burgos, ou le Roy tarderoit sept Jours a arriuer; que si Je me voulois donner ce loisir Il seroit bon que Je
 my acheminasse. Je vis aussi le seigneur Don Martin de Idiaquez, auec lequel estant entré en propos {des estatz
 generaux, et puis ayant dict qu'a cause de la foiblesse en laquelle se retrouuoit le parti catholic il ne se m…}
@@ -93,20 +93,26 @@ Pelissier began on the Estates-General and the weakness of the Catholic party.
 
 ## Rows still unresolved
 
-- C3: "le credit m'estoit `q T 33 m s 6`" ("a s i l n d") does not give "failly". A misread sign is likely.
-- C6: the opening "ma demande ne `tt # z4 z 4 pi 4y r o o. f y I t`" reads "s…toit …onable". "N'estoit [rais]onable"
-  is likely, but the letters do not fully fit.
-- C8 end / C9 start: "ce bien auec `r pi e3 | lam q L t 4y`" ("…rie aue te").
-- C10: `z s 8` before "auoit ses ministres" (the subject, "sa Maiesté"?).
-- C17: "`q o` que s'il estoit reussy": one word before "que".
-- C19: `6 g p 36 lam` (between "aduis que J'auois" and "entendre").
-- C22: "celle du `3 w`": `3` is b, so perhaps "celle du B[earnois]", with w = et following.
-- C25: "des nouuelles de `z 6 z w`".
-- C27b: `33 L 30 # 4 80` after the clear "p" ("p[ayée]s"?).
-- C32: the small hooked T in "pourroient" is read as p only from context (crops/p3_46r_z_c32q.jpg). The `+` in
-  "encores" is unexplained.
-- C34 end: `s il a u t Ib #o 8 z ph` before "il me respo-", and "que [el]le eust" is uncertain.
-- C35: `#o dz S ph 6 d r T` between "n'estant" and "la suite" ("…se i dura…" – "durant"?).
+Pass 4 (every [?] cropped and re-read; crops/p4_46r_*.jpg). Closed this pass: C6 "n'estoit" (tt # z4 z 4 pi 4y after
+"ne"; the next word r o o. f 7 I t = "r[ais]onable" with "ais" omitted by the writer); C8/C9 "briefueté(?)" (3 r ph #o D |
+lam q L t 4y g = b r i _ e _ ? u e t e; the ring-on-stem q must be f, cands alternative only); C27b "liur[ée]s(?)" (the "p"
+is the cipher p-sign Ⱡ = l, then a three-stroke null, 33 L 30 # 4 80 = i u r _ ? s; the 4 is unexplained); C34 "qu'el[l]e
+sceust" (the delta is dc, hooked ascender, not Q; no dz between h and 33; gloss "...ceust" above); C35 "seiour a la suite"
+(the 6 after ph is a straight-ascender o: s e i o u r a), replacing "durant".
+
+Still open:
+- C3: "le credit m'estoit `q T 33 m s 6`" = a a/s i l n d. "failly" would need two signs read differently; the signs are
+  clear in the crop (crops/p4_46r_C3b.jpg). Sign value unknown or a slip; left open.
+- C10: `z s 8` (subject of "auoit ses ministres", c n n). Clear signs; no French word. Possibly an abbreviation for
+  "sa Maiesté"; not sign-supported.
+- C17: `Z8 o` before "que s'il estoit" (q o); the preceding "doner(?)" run `n o o. t r g` is itself shaky. Gloss above
+  is too faint.
+- C19: `C 44 I` (de _ y l) between "J'auois de" and "et entendre"; signs clear (crops/p4_46r_C19b.jpg), no word.
+- C22: "celle du `3 w`": `3w` may be one joined sign (code?); "B[éarnois]" is context only.
+- C25: "des nouuelles de `z 6 z`" (c d c), then w = et; clear signs, probably a code/abbreviation (Monseigneur?).
+- C34 end: `q L 4y Ib #o 8 z ph` (a u t o _ n c i) between "il" and "me respondit"; no word found.
+- C35: `4 e3 f z4 X tt h q s z4 4` ("n'estant(?) [?]") before "seiour"; does not decode cleanly.
+- C32: the + in "encores" is still unexplained (not a gap).
 
 ## Notes on the key (pass 3)
 

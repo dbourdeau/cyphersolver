@@ -15,7 +15,7 @@ CLAIMS = {
   'L05': ["li teneva per ferma e andata in vero il che vedendo io", "li go fato"],
   'L06': ["moto deli danari del suo debito come mi dise messer alfonso"],
   'L07': ["lui m'ha resposto dice te voler andar in Italia quando al dare"],
-  'L08': ["Milan", "andiate parlaremo a longo sopra ciò"],
+  'L08': ["mi per Milan", "andiate parlaremo a longo sopra ciò"],
   'L09': ["danari in [p]resto per andar", "ve ne daro vedro quel mi dara e il tuo repo"],
   'L10': ["rtaro a v[ostra] ex"],
  },

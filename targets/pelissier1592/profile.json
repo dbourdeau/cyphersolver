@@ -148,16 +148,37 @@
    "kind": "reading",
    "what": "Pass 3 re-read all nine pages with the split tokens: 94% of cipher words.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Pass 4 (PASS4.md): gap-by-gap high-zoom re-read of ff. 46v, 47r, 47v, 49r. 18 [?] closed from the signs (46v 40->30, 47r 38->34, 47v 42->40, 49r 42->39; one empty gap withdrawn), one unsupported reading withdrawn. (first round).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Pass 4 completed: every [?] on all nine pages re-cropped and re-read, one image agent at a time (46r 11->8, 46v 40->30, 47r 38->34, 47v 42->36, 48r 21->11, 48v 17->11, 49r 42->21, 49v 27->17, 50r 20->15). New readings include une guerre, las de tant souffrir, seroit ueritablement fascheux, uenu a Chalons, Mouson place forte, grandes iournees, debiliter egalement, brider par le traicte, n'estoit, sceust; several empty gaps (no signs) withdrawn. Measured 3,934 words, 183 [?] = 0.953 (177 (?) words counted read; 0.909 if those are counted unread).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "control",
+   "what": "Recurring groups z 6 z, 26 I, z 5 8, z 6 1 tested at every occurrence: z 6 z and 26 I also occur as ordinary letters (z+6 = p: \"pour l'opposer\", \"se pourroit\", \"importunites\"); at the name-like places the context allows Mayenne or the King, so no single value is forced. None counted.",
+   "result": "failed"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "Tomokiyo's key for Pelissier's letters (cryptiana league.htm, rebuilt from nos. 45/46 and their f. 115 decipherment) was applied to a sign-by-sign transcription of no. 22 by beam search; the sign shapes were calibrated by aligning nos. 45/46 with f. 115, and the scattered interlinear glosses agree.",
-  "contribution": ["transcription", "key extended or corrected"],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
   "class": "read in part",
-  "fraction_read": 0.93,
+  "fraction_read": 0.909,
   "fraction_read_method": "measured",
-  "fraction_read_source": "READING.md: words inside deciphered {..} stretches (plaintext words, not cipher signs): 3,936 tokens, 256 [?] gaps counted unread = 0.935; the 158 (?) doubtful words counted read (0.89 if unread)",
+  "fraction_read_source": "READING.md: words inside deciphered {..} stretches: 3,934 tokens; 183 [?] gaps and 177 (?) doubtful words counted unread = 0.909 (pass 4, 5 Oct 2026). Lenient figure counting doubtful words as read: 0.953. '...' runs not counted",
   "key": "recovered",
   "codes_open": {
    "open": 2,
@@ -168,7 +189,7 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Read in part under the read bar: 0.93 of plaintext words measured (below 0.95); about 250 words of no. 22 stay unread.",
+  "notes": "Read in part under the read bar: 0.909 of plaintext words measured with doubtful (?) words counted unread (0.953 lenient); 183 [?] and 177 doubtful words.",
   "gaps": [
    {
     "item": "code group 310 (f. 50r, probably Savoy), 441 (f. 49v, probably France) and the confessor's name on f. 50r",
@@ -176,9 +197,9 @@
     "detail": "each occurs once; context only"
    },
    {
-    "item": "~250 [?] words across the nine pages",
+    "item": "183 [?] words across the nine pages",
     "blocker": "illegible",
-    "detail": "single hard glyphs after the calibrated high-zoom re-read (pass 3), listed per page in reading_<folio>.md"
+    "detail": "after pass 4 (every gap re-cropped): legible signs that do not decode under the key, blots; recurring name groups z 6 z / z 6 1 / z 5 8 not forced to one value"
    },
    {
     "item": "holes in the paper, f. 50r C13",

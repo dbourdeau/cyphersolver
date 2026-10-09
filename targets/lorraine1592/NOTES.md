@@ -2,12 +2,12 @@
 
 Lasry review (25 Sept 2026): Tomokiyo had already solved it (2025, see 4a). Independent re-solution, not a first break; left out of the ciphertext-only list for Klaus Schmeh (outcome.first_break = false).
 
-**Status: read in part — 71.5% of cipher tokens read as sense, measured (22 Sept 2026).** The
+**Status: read in part — 76.6% of cipher tokens read as sense, measured (5 Oct 2026; 71.5% on 22 Sept).** The
 system is broken: a reciprocal letter-pair substitution (a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x),
-dots for doubled letters, a null, a few special signs and syllable/word figures (31 = ma, 139 = vous,
-145 = me). 790 of 1,105 cipher tokens read (`python measure_reread.py`); the 18 Sept key and
-transcription gave the same words for 40.6%. Open: most special signs, 11 of 14 figures, four garbled
-runs. See §9 (the re-read), `## Remaining gaps`, `## Escalation`. The 18 Sept head read "SOLVED"; that
+dots for doubled letters, nulls (looped æ, and since 5 Oct λ, γ, U, π, m̄), a few special signs and
+syllable/word figures (31 = ma, 139 = vous, 145 = me, 141 = qu'il). 844 of 1,102 cipher tokens read
+(`python measure_reread.py`); 787/1,102 = 0.714 also pass a lexicon check (`measure_sense.py`, §10). Open:
+ŧ, ⊙, α, ꝗ, E and figure-4 in most places, 10 of 14 figures, three garbled runs. See §9, §10, `## Remaining gaps`, `## Escalation`. The 18 Sept head read "SOLVED"; that
 overstated it — the key was a 44-symbol fit that hid the pair system, and the reading was an estimate.
 Catalogue item 15. Reading of record: `ct/no97_reading2.md` and `ct/no97_reread.txt`; the 18 Sept
 account (`ct/no97_reading.md`, `ct/no97_solution.txt`) is kept for the record.
@@ -233,11 +233,60 @@ sheared page). Full account in `ct/no97_reading2.md`.
 * Siblings: the fr. 3621 notice lists no other Lorraine or Vaudémont piece in cipher (the ciphered
   pieces are Birago nos. 31/36, Potier no. 79, Dinteville nos. 114/116 — Nevers's own correspondents).
 
+## 10. Push toward 95% (5 Oct 2026)
+
+Full-resolution IIIF f227 re-fetched, sheared −0.031, every line re-cropped and the unread stretches re-read at
+2× (`img/r/`, git-ignored). The 22 Sept file is kept as `ct/no97_reread_22sept.txt`.
+
+**Does the measure count sense?** `measure_reread.py` counts a token as read when its word is graded H/C
+by hand, and checks only that the word equals the key decode (emendations listed). New `measure_sense.py`
+adds a check the grader does not choose: every H/C word must be an attested French word in the shared
+corpora (fr-henri4, fr-1520s-diplomatic, fr-gutenberg; single/double consonants folded), a null, a figure,
+or a line-split fragment whose join is attested. Result before the downgrade below: 789/1,102 = 0.716 pass, against 0.781 graded.
+The 72-token difference is spelling variants (*mescontantement*, *delaisent*, *induiront*, *preadverti*,
+*audits*, the place name *Faulche*) plus three fragments that are weak and should be treated as doubtful
+(*quelq*, *auld*+*is*, *promes*, 15 tokens). LM check: the read words in order score −1.60/char under
+fr-1600-letters, shuffled −1.76. So the hand grade does track sense; the three doubtful fragments (15 tokens) were
+downgraded to M, giving the final **0.766 graded / 0.714 lexicon-attested**; the remaining 57-token gap is
+spelling variants only.
+
+What moved it (0.715 → 0.781, then 0.766 after the downgrade):
+* **141 = qu'il**, pooled over all three occurrences: 141+m (glyph m = z) *qu'ilz avoient fait* (L01),
+  141+J (= s) *qu'ils connoissent* (L04), *affin qu'ils ne me delaissent* (L06). One value fits all three.
+* **λ, γ, U, π, m̄ are nulls**, from their distribution: of 37 occurrences, all but two (m̄ in L13
+  *m̄ien*, U in L05 *issent*) stand between complete words, and the sentence runs on without them
+  (*faire U passer*, *faire γ æ passer*, *il fauldra λ π le remettre*, *satisfait m̄ du peu*). Same
+  evidence as for the looped æ. Whole-word occurrences graded C.
+* **Image corrections**: L18 *pour [?] l'effect du dict Chasteau(v)ilain* (was 13 unread tokens);
+  L12–13 *ne me induiront et resolument* (the *u* glyph is n → s, *reso-lument*); L04 *à me [γ ⊙] le
+  mander* (the reread had forced *demander*); L01 final glyph γ, not y; L02 *pioniers* without the c the
+  reread had inserted.
+
+Tried and failed:
+* **Joint LM solve of the special signs** (coordinate ascent over ŧ, ⊙, m̄, π, U, E, γ, figure-4, Z, α,
+  ꝭ, C, G as single letters, nulls or common words, scored by fr-1600-letters on the whole text): the
+  optimum changes with the length penalty (1.6/2.0/2.4 per char give unrelated keys, mostly *pour* and
+  *de* everywhere). No signal; nothing taken from it.
+* **Lexicon test per sign** (`scratchpad` sig test): every short candidate (en, le, se, qu) fits the same
+  number of words. Non-discriminating.
+* **ŧ / m̄ / α + *ien*** (L03, L05, L13, L17): *bien*, *rien*, *combien* each fit some occurrences and not
+  others; no single value fits all, so not counted.
+* **E = la** fits L04 (*deputés de la 98*) and L08 (*me la demande*) but not L01 (*de la 98 E c ont*);
+  **98 = ville** fits both occurrences but *cité*, *place* fit as well. Context guesses; not counted.
+* L12 *passer [a e u l x u o l t o r] les* and L13 *des [m a i t] [...] dira* re-read at 2×: the glyphs are
+  clear and still do not decode under the pair key.
+
+Why 95% is out of reach from this copy: the 241 unread tokens are 14 single-occurrence figures, ~70
+tokens of ŧ/⊙/α/ꝗ/E/figure-4 that occur 1–12 times with inconsistent context, and ~3 garbled runs whose
+glyphs read cleanly but do not decode. All need a key (none survives) or a second ciphertext in the
+same system (none in fr. 3621).
+
 ## Remaining gaps
 
-- Special signs λ, m̄, U, E, π, γ, ꝗ, low-barred t, figure-4 (about 60 tokens, and the words they sit in) - blocker: open-codes; no key survives and each sign occurs 1-11 times, too few for context to fix most of them.
-- Figures 57, 98, 141, 122, 123, 13, 137, 88, 146, 121, 103 (17 tokens) - blocker: open-codes; one letter, no key, no sibling in the same cipher.
-- Garbled runs L12 (after *passer*), L13 (*des … apres*), L18 (*pour … Chasteauvilain*), L20 (*m'a d…te*) (about 45 tokens) - blocker: illegible; at IIIF 1:1 the glyph sequence does not decode under the pair key; needs the original or a higher-resolution scan to tell e/c, b/h and dotted forms apart.
+- Special signs ŧ (crossed t, 12 tokens, incl. the *ŧien* words), ⊙ (where not s), α, ꝗ, E, figure-4, π-less Z, V (about 60 tokens with the words they sit in) - blocker: open-codes; no key survives; each occurs 1-12 times and no single value fits all its occurrences (§10). λ, γ, U, π, m̄ settled as nulls 5 Oct.
+- Figures 57, 98, 122, 123, 13, 137, 88, 146, 121, 103 (14 tokens) - blocker: open-codes; one letter, no key, no sibling in the same cipher; 98 = *ville* fits but so do other nouns.
+- Garbled runs L12 (*passer … les*), L13 (*des … dira*), L20 (*[?surte]*, *z i q a s c t t*) (about 35 tokens) - blocker: open-codes; re-read at full IIIF resolution 5 Oct, glyphs legible, the sequence does not decode under the pair key, so it hides special values or a second system; L18's run was resolved (*l'effect du dict*).
+- Weak fragments *quelq*, *auld*+*is*, *promes* (15 tokens, downgraded C -> M on 5 Oct because they fail the lexicon check) - blocker: open-codes; the key decode is not a whole word, so an abbreviation or special value is hidden in each.
 
 ## Escalation
 
@@ -246,4 +295,4 @@ sheared page). Full account in `ct/no97_reading2.md`.
 - [x] known-keys: fr. 3995 ff. 32, 83-84, 98, 103 eliminated (§4); Tomokiyo's Lorraine keys (Bréval c. 1620, Bassompierre 1593) are other systems.
 - [x] print: Lepage 1864 stops in 1591; no print of this letter found (§4).
 - [x] key-rebuild: 18 Sept search key re-derived as the eleven-pair reciprocal key with doubling dots and a null (§9).
-- [x] retry: every line re-read from the page with the key in hand (§9, `ct/no97_reread.txt`); the Archives de Meurthe-et-Moselle (possible duplicate or key) not consulted — needs physical access or their catalogue.
+- [x] retry: every line re-read from the page with the key in hand (§9, `ct/no97_reread.txt`); 5 Oct: unread stretches re-read at full IIIF resolution, 141 solved by pooling its three occurrences, λ γ U π m̄ shown null by distribution, joint LM solve of the special signs tried and failed (§10); the Archives de Meurthe-et-Moselle (possible duplicate or key) not consulted — needs physical access or their catalogue.

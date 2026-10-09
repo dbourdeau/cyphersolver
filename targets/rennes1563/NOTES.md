@@ -59,7 +59,7 @@ secure + probable French:
 | 500 Colbert 392 p. 231, Bourdin | Dec 1562 | `c392_p231_reading.md` | ~85% |
 | 500 Colbert 390 p. 139, "Deschiffrez vous mesmes" | 1562-63 | `c390_p139_v3_reading.md` | ~65% (37 secure, 28 probable) |
 
-Token-weighted, about 87% of the 2,310 transcribed signs.
+Token-weighted, about 87% of the 2,310 transcribed signs (estimate, secure + probable). **Measured strictly on 5 Oct 2026 (`measure.py`, see "Push to 95%" below): 79% of 2,308 tokens read as sense, 15% probable, 6% unread.**
 
 - **f. 55**: Council of Trent and the Habsburg marriage; "avancer le concile", "pour le bien
   de la Chrestienté", "ce qui se promect des sessions de Decembre, desquelz vous avez oy
@@ -93,10 +93,11 @@ This is setup and key calibration, not a completed decipherment. No continuous r
 - f. 55 = fr3181 v36: 17 lines of cipher then clear text (Havre de Grace / Queen of England passage in clear).
 
 ## Remaining gaps
-- fr. 3181 f. 55, about 9% of signs (ꝥ, ɼ, εʃ, ɾ, 'h Ə'; runs on lines 4, 8, 9) - blocker: no-key-material; the signs occur in no glossed passage in this hand (f. 57-58 aligned in full; the Colbert 390 glosses are in another hand)
-- 500 Colbert 390 p. 358, six signs (line 4-5) and the head of '[ajour/gouver]nement' - blocker: no-key-material; p. 358 continues p. 357's cipher (found 21 Sept, not previously transcribed)
-- 500 Colbert 392 p. 231, about 15% (runs on lines 4, 5, 7, 8-9, 11-17, 22) - blocker: no-key-material; W, ss, tt, πꝫ, t7 and "maue" occur once or twice and in no glossed passage of Colbert 390 pp. 189-231
-- 500 Colbert 390 p. 139, about 35% (incl. three code words ẟ+superscript for persons/places) (lines 3-4, 7, 8-10, 12-14) - blocker: illegible; faint ink and heavy nulls; ẟ, ẟao, ẟar, ℛ, ℞, aʓ, Ꝫ unglossed anywhere found
+Measured 5 Oct 2026 with `measure.py` (strict: only words the signs give at attested values count; 2308 tokens): sense 0.79, probable 0.15, unread 0.06.
+- fr. 3181 f. 55 (0.80 sense): l.2 ꝥ, ɼ ᑲ; l.4 "10 ᑲ ɗ xy ee z r"; l.8 "ß La ᑲ ᑲ z 10 9 z"; l.9 "‡ G̃ ꜧ ᑲ ᑲ ɗ ᑲ ᑲ"; l.12 "h Ə"; slips (ayt tenu, deliberay, monstrrer, sessions) - blocker: no-key-material; the signs occur in no glossed passage in this hand (f.57-58 aligned in full); re-viewed on native crops 5 Oct, no new value
+- 500 Colbert 390 pp. 357-358 (0.82 / 0.76 sense): p.357 l.3-4 "6 d 9 ∿ io ꭓ | d λ ʒ ‡ ϑ d Z ℒ d ¢ ⊤̸ d", l.5 head, l.8 avoir / l'effect, l.13 afairres; p.358 s'offrira, esperer, [ajour/gouver]nement, lumiere, remects - blocker: no-key-material; each needs a value no gloss gives (∿ = n, sh = r)
+- 500 Colbert 392 p. 231 (0.83 sense): maue, ſ λ ², ‡‡ ~, πꝫ (twice), "ꞁꞁ ℌ z 9 ‡‡", "La ƀ ſſ z", fc 7, conseil, comme en, leurs - blocker: no-key-material; these shapes occur once or twice and in no glossed passage of Colbert 390 pp.189-231
+- 500 Colbert 390 p. 139 (0.70 sense): l.2 ā; l.4 "ſ mJ z ʓ G k ẓ ƀ"; l.5 "io ƀ η"; l.8 "ſ λ ſſ ♯ z k ß" and end; l.10-11 "de me donner" (ℊ, ‡‡ unsupported); l.12 ẟao + "ſ σ aʓ 9 ẓ La ſ ƀ"; l.13-14 ẟao + "ʓ k 9 ẓ m io ʓ η ſ ß x1"; code words ẟ, ẟao - blocker: no-key-material; ẟ+superscript are code words and ẟao, aʓ, ā occur in no gloss or key found
 
 ## Escalation
 - [x] siblings: sister volumes Colbert 391, 394, 395 surveyed (sister_volumes.md): no deciphered passage in this cipher; fr. 3181 f. 52, f. 57, f. 58 and Colbert 390 pp. 138, 189/199, 221-231, 241 opened; f. 57-58 and p. 138 give the hands' values; Colbert 392 p. 232 is the clear end of the Bourdin letter
@@ -105,3 +106,35 @@ This is setup and key calibration, not a completed decipherment. No continuous r
 - [x] print: La Ferrière I-II (cribs.md): none of the four passages printed; Bourdin's enclosure is Catherine 15 Dec 1562; Tomokiyo lists all four as undeciphered
 - [x] key-rebuild: per-hand values from glossed siblings, LM lattice decoding
 - [x] retry: every letter re-run after each new value set; p. 139 control re-run withdrew four readings
+- [x] retry (5 Oct 2026): every letter re-transcribed against fresh native IIIF crops (hi2/) and re-measured strictly with measure.py; corrections in the token files' headers (c390_p139_v4.txt, c390_p357.txt, c392_p231n.txt). Strict sense 0.72 -> 0.79. 95% not reached.
+- [x] siblings (5 Oct 2026, second survey): every view of Colbert 393, 396 and fr. 3180, 3182 contact-sheeted: no cipher, gloss, decipherment or key sheet (sister_volumes.md). With 391/394/395 the whole Bochetel series is negative; re-measured, unchanged at 0.79. Remaining outside leads: Tomokiyo's source for the key table, other Bochetel/Rennes correspondence outside Colbert 390-396 (e.g. Vienna HHStA), Lasry.
+
+## Push to 95% (5 Oct 2026)
+**The old 0.87 did not measure sense.** It was a hand estimate of secure + probable per letter, and "probable"
+included words that need a sign value nothing attests, or that were filled from context. `measure.py` now
+counts: each letter has a word-by-word reading in `aligned/` (`{n}` unread, `~{n}word` probable); every cipher
+token must align to the reading through its own candidate values (glyphs.G, the token's `=a|b`, the per-letter
+EXTRA table with the evidence for each value), so a reading the signs do not give fails. Sense words are
+checked against a 16th-c. French vocabulary. Run `PYTHONUTF8=1 python measure.py`.
+
+| letter | tokens | before (strict) | after | probable | unread |
+|---|---|---|---|---|---|
+| fr. 3181 f. 55 | 401 | 0.80 | 0.80 | 0.13 | 0.07 |
+| Colbert 390 p. 357 | 475 | 0.79 | 0.82 | 0.16 | 0.02 |
+| Colbert 390 p. 358 | 275 | 0.76 | 0.76 | 0.22 | 0.03 |
+| Colbert 392 p. 231 | 719 | 0.73 | 0.83 | 0.12 | 0.05 |
+| Colbert 390 p. 139 | 438 | 0.53 | 0.70 | 0.16 | 0.14 |
+| **all** | 2308 | **0.72** | **0.79** | 0.15 | 0.06 |
+
+What moved it (all from re-looking at the signs, not from context):
+- **p.139**: "ẟar" in l.9 is a struck-out word; ÿ = d (Tomokiyo's script-v-dot) gives *pour vous en dormir bien*
+  (l.3) and *de me* (l.10, still probable); ᵐ C Ꝫ x1 = *come* (ᵐ = the m-like c, Ꝫ = d3 = m) and *totes … passeront
+  en ce* (ƀ = p, the key value); the "€" before *cousin* is ℒ (null) + the m-like c, so *mon cousin* is secure;
+  *encores que je n'en visse aucunement a doubter*; *beau frère … de vostre [ẟao]*.
+- **p.357**: l.14 and l.15 had signs doubled where two half-line crops overlapped; with the doubles removed
+  *de deniers … envoyé querir* aligns (ɥ = gamma-loop d).
+- **Colbert 392**: *Je vous envoye* (l.1 opens with two nulls); *ne l'asseurer qu'elle la toute tel[l]e* (l.5);
+  *propre* (6-shaped b = p); *difficulté* (ẽ = ff); *je vous advis* (ıō, not w); raised small z = a in *s[a]ns*,
+  *y [a]voit*, *[a]u repos*; dʒ = mm in *femme* and *commun*; ff-ligature a in *aliance*.
+Tried and failed: the p.139 runs listed above, "choses" (needs € = h against the € of afin), f.55 l.1-2 openings.
+

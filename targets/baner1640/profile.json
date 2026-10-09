@@ -85,9 +85,9 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-22",
-  "last_date": "2026-09-22"
+  "last_date": "2026-10-05"
  },
  "solution": [
   {
@@ -179,17 +179,38 @@
    "what": "Freed every value in the unread stretches and treated the 7xx codes as letters: the annealer returned 'auf solche Weise' (772 f, 766 W) and 'dass sie mögen' (783 g, 60 m) unprompted; 246 of 274 (89.8%). All three-digit numbers as letters does not read.",
    "result": "worked",
    "date": "2026-09-22"
+  },
+  {
+   "kind": "transcription",
+   "what": "Re-transcribed every unread stretch (S2 name, S5 'eisen o vi rechte' and 'o 2 ein', S6) from the Museo Galileo scan of 239r at 2x zoom. All figures confirm the transcription except S6, where the manuscript has '13. 12. 32' and Neal dropped the 12: 'Espionen' is complete and 12 = p (also used in the S2 name, 'ohrs p acbuet', still no name).",
+   "result": "worked",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "S5 stretch '[766]eise n o u i r e c h t e zu' tried as 'auf solche Weise movirte/moviret/nachrichte/noch richte' with de-1640s in context: no candidate both fits the confirmed figures and scores clearly better; 'o 2 ein guten' as 'mit einer guten' needs two figures changed. Not counted.",
+   "result": "failed",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "control",
+   "what": "Checked the measure: decode.py counts every token outside hand-marked unread spans, so the 'n' after code 513 in S2 was counted though it makes no word. New measure_sense.py splits the decrypt into the reading's words, counts only tokens inside sense words and asserts the split matches the decrypt: 246 of 275 (89.5%).",
+   "result": "worked",
+   "date": "2026-10-05"
   }
  ],
  "outcome": {
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The homophonic key (70 values) was rebuilt from cribs taken from the clear German around the cipher passages ('durch' after 'mich aber von zeit zu zeit', then 'und'), which let the constrained annealer produce 'nach der Oberpfaltz und gegen die [442]'; the key was then extended word by word from context. The Swedish Banér keys on DECODE (R4122, R4123/R4325, R4266) were tried and did not fit.",
-  "contribution": ["transcription", "key recovered"],
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.898,
+  "fraction_read": 0.895,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode.py over ct_neal.txt (corrected against the APUG 568 scans): two-digit cipher tokens in words read as sense, 246/274; code words excluded",
+  "fraction_read_source": "measure_sense.py over ct_neal.txt (corrected against the APUG 568 scans, 12 restored in S6): two-digit cipher tokens inside words read as sense, 246/275; code words excluded",
   "fraction_coherent": 0.898,
   "codes_open": {
    "open": 9,

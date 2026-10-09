@@ -32,7 +32,7 @@ def key(t):
 
 def main():
     wit = witness(os.path.join(HERE, 'decode', 'DOC_R75_D2532_2532.txt'))
-    mine = open(os.path.join(HERE, 'r75.read.txt'), encoding='utf-8').read().split('\n')
+    mine = open(os.path.join(HERE, sys.argv[1] if len(sys.argv) > 1 else 'r75.read.txt'), encoding='utf-8').read().split('\n')
     n = min(len(wit), len(mine))
     tot = agree = 0
     for i in range(n):

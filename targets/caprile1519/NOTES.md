@@ -1,9 +1,10 @@
 # Giuliano Caprile (catalogue 157) and Alfonso Cistarelli (catalogue 158), Ferrarese agents in Hungary 1519–1521 — NOTES
 
-Status: in progress (written up in docs/caprile1519.html; V1921 read 97.0 %; R1139 88.7 %, R1136 66.9 % after pass 4, 2 Oct 2026)
-Left to do: (1) R1139: the numeral-like groups "4 8 1 7" (L01) and "1 7" (L02) and small stretches of L02, L04-L05, L08;
+Status: in progress (written up in docs/caprile1519.html; V1921 read 97.0 %; R1139 89.7 %, R1136 66.9 % after pass 5, 3 Oct 2026)
+Left to do: (1) R1139: "4 8 1 7" (L01) and "1 7" (L02) are code-like (no letter or numeral fits, pass 5) and short stretches of L02, L04-L05, L08 remain;
 (2) R1136: L01 end, L02 start, L06, L10-L11 starts, limited by the doubtful sign separations (c/CE/e, QB/8, AMP/EL,
-x/xp), next step a sign-by-sign table of those pairs over all five 1520-21 letters; (3) R1128: transcribe R1132
+x/xp); the pass-5 table over all five letters (`lookalike21.py`) settles only CE = o and xp = q, and the pen-shape study (pass 6, `shapes21.py`) found no shape class with a
+consistent value, so these stretches need either hand-placed crops of every occurrence or more text in the same key; (3) R1128: transcribe R1132
 (8 pp.) against 6b and refit the 1519 table (the factorised rebuild from R1130/R1133 failed, `syl_fact.py`); (4) R1137:
 see its gap line.
 
@@ -158,6 +159,10 @@ codebook, then R1128.
   L08-L09 "parlaremo a longo sopra ciò … vedrò quel mi dirà, e il tuto reportarò a V. Ex." (M/I). L01-L03 still
   read only in phrases. Page §03 updated.
 
+- 2026-10-03 (pass 6): pen-shape step for QB/8, c/e/CE, AMP/EL (`shapes21.py`, sheets in `shapes21/`): automatic crops reliable for about half of QB only; QB's two forms do not follow the LM values; c is a distinct form without a consistent value; failed, stopped, percentages unchanged.
+
+- 2026-10-03 (pass 5): look-alike tabulation (`lookalike21.py`: CE = o, xp = q accepted; QB/8, c/e, AMP/EL not separable), numeral test of R1139's "4 8 1 7"/"1 7" (no fit), name and Somogyi-phrase cribs (`namecrib21.py`, nothing new); R1139 89.7 %, R1136 66.9 %. Vestigia records have no summaries.
+
 - 2026-10-02 (pass 4): R1136 second transcription (`r1136_pass4.txt`) 66.9 %; R1139 second pass (`r1139_pass4.txt`) 88.7 %; R1128 factorised syllabary from R1130/R1133 (`syl_fact.py`) fails against a permuted control; R1137 spot-check of L04-L07 (13/92 groups disagree) and crib test (`r1137_crib.py`: cribs no better than controls).
 
 - 2026-10-02 (later): retry and known-keys steps (see Escalation); `beam21.py`, `regrade21.py`, `knownkeys.py`, `pass3_r1136_r1139.md`. The xp ligature (= q) found in R1136 L10 also reads V1921's "quantunque" (161/166).
@@ -173,7 +178,8 @@ Blocker "left-open" is not one of the checker's outside blockers on purpose: the
 no outside blocker (no key material, too short, illegible, physical access) honestly applies to them.
 
 - R1136 L01-L02 stain and blot (about 6 signs, "# #" in the transcription) and R1139 L10 end - blocker: illegible; the stain covers the signs on the only image
-- R1139 (6 Apr 1521), unread stretches (11 % of decoded letters) - blocker: left-open; pass 4 (`r1139_pass4.txt`, `pass3_r1136_r1139.md`): 88.7 % inside claimed phrases; L01 and L03 now read; open: numeral-like "4 8 1 7" and "1 7" (no key value) and short stretches of L02, L04-L05, L08
+- R1139 (6 Apr 1521), "4 8 1 7" (L01) and "1 7" (L02) - blocker: open-codes; tested as letters and as numerals (3 Oct 2026), nothing fits; likely nomenclator codes with no list
+- R1139 (6 Apr 1521), other unread stretches (10 % of decoded letters) - blocker: left-open; pass 5 89.7 % (L08 "mi per Milan" added); pass 4 (`r1139_pass4.txt`, `pass3_r1136_r1139.md`): 88.7 % inside claimed phrases; L01 and L03 now read; open: numeral-like "4 8 1 7" and "1 7" (no key value) and short stretches of L02, L04-L05, L08
 - R1136 (8 Mar 1520), unread stretches (33 % of decoded letters) - blocker: left-open; pass 4: second transcription at native resolution (`r1136_pass4.txt`, 11 of 12 lines changed), 66.9 % inside claimed phrases (was 59.4 %); what still stops L06, L10-L11 and the line starts is the doubtful sign separations (c/CE/e, QB/8, AMP/EL, x/xp), which a sign table over all five letters could settle; not an outside blocker
 - V1921 (25 Feb 1521), 5 of 166 signs - blocker: illegible; notes: "K PHI" at the torn page edge after "in reg" (illegible); two minims "1 1" after "persuaso" have no key value (no-key-material); one QB before "Agria" probably a slip; "dicixe" and "revelta" grade M
 - R1137 Cistarelli, 584 two-digit groups - blocker: needs-physical-access; the only image (DECODE, whole spread at 3240 px, digits about 25 px, faded) does not settle the digit readings: a second reading of P2 L04-L07 against the image disagrees with `r1137_transcription.txt` on 13 of 92 groups (14 %: 8/9 as in 85/95, 4/9, 0/5/6, 80/86, and where a group starts), and the single "0"/"5" groups may be halves of groups; no key exists anywhere (series, archive, correspondent, decade; DECODE has no Este/ASMo key 1490-1550); ciphertext-only anneal (order 5, 20 restarts) and crib placement (`r1137_crib.py`, `r1137_crib_out.txt`: custode, Agria, Alfonso, debito, Buda, episcopato against six control words, with a word-level rerank) do not separate cribs from controls (mean gain -169 vs -172, word scores -3.00 to -3.25 for both); my judgement, not proven, is that transcription noise is what stops the solve, so a better photograph from ASMo (b. 4/26 no. 3) is the next step

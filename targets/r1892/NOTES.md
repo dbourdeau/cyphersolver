@@ -1,7 +1,8 @@
 # R1892 — an Orange prince on the émigré "rassemblement", c. 1795 (KHA, Prins Willem V, inv. 339)
 
-Status: read in part (3 Oct 2026: 1,860/1,954 = 95.2% read as sense, strict measure; kept partial because the Dutch
-postscript, p2, is 90.7% on its own and its recurring word signs, ⊣H 9, hook 7, slash 5, are still workable from context)
+Status: read (reclassed 5 Oct 2026 under the project rule that 95%+ read as sense is a full reading: 1,860/1,954 =
+95.2% read as sense, strict measure, 3 Oct 2026. Was read in part because the Dutch postscript, p2, is 90.7% on its own;
+its recurring word signs, ⊣H 9, hook 7, slash 5, stay open and are listed under Remaining gaps)
 
 Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2021 but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
 
@@ -189,15 +190,28 @@ French closing scored in French: +22). The margin is thin (11 tokens), and p2 al
 (⊣H 9, hook 7, slash 5, cf 4, Y-cross 4 …) and line 24 are what remains. `outcome.class` is left "read in part"
 here (see R2242's note on the class change).
 
-Extent decision at the write-up update (3 Oct 2026): **read in part**. The letter passes 95% as a whole, but by 11
-tokens, and p2 (the Dutch postscript, a third of the cipher) is 90.7% on its own. Its open signs are not all
-singletons: ⊣H (9), hook (7), slash (5), cf (4), Y-cross (4), S (3), Y (3), psi (2), 7 (2) recur and could still be
-valued from context if a forcing sentence is found, so they stay open-codes (workable). The singletons were relabelled
-no-key-material (no key sheet, not in print, no R2242 value).
+## Recurring signs, joint scoring (3 Oct 2026)
+
+`solve_signs.py` puts each candidate (the 400 commonest words of the nl corpus and Gedenkstukken I-II, plus
+hand-picked ones) into every occurrence of a sign at once and scores up to 20 read letters each side with nl-modern;
+a value is accepted only if it fits every occurrence. Result: **none accepted.**
+
+| sign | n | best joint candidates (rank in each occurrence) | why rejected |
+|---|---|---|---|
+| ⊣H | 9 | zijn [5,10,27,10,46,1,15,6], en, den | no word fits all: "zouden" fits the three "[H] willen" places (and "zouden willen" occurs 15 times in Gedenkstukken) but not "gebeuren [H] kun ik", "myn iets [H] u de", "antwoord te laten [H]", nor the French "pour l[H] la dépense" (p1); a null/word-divider would fit more, but cannot be shown |
+| hook | 7 | en [4,7,14,2,27,26,4], u, de | always before ik, zich, myn or another sign; "en", "dat", "als" each fail one or more places |
+| slash | 5 | de, en, er | ranks scatter (en: 1, 45, 14, 1, 50) |
+| cf | 4 | en, al, in | two occurrences have no read letters on one side |
+| Y-cross | 4 | ze, ne, ge (short fragments only) | "toen zoude [Y-cross] my" wants ik, but "[hook] [Y-cross] ik myn eerste brief" rules out ik |
+| S, Y, 8, psi, phi, 7, cross | 2-4 | de / den / en (n-gram bias towards short words) | none fits every place; Y = de would duplicate ⊙ (27 × de) |
+
+The LM ranks short function words first wherever context is thin; with neighbouring signs unread, most windows hold
+only a few letters, so the scores do not separate candidates. No value was adopted, and p2 stays 816/900 = 90.7%
+(letter 1,860/1,954 = 95.2%, strict).
 
 ## Remaining gaps
-- recurring word signs on p2 (⊣H 9, hook 7, slash 5, cf 4, Y-cross 4, S 3, Y 3, psi 2, 7 2) - blocker: open-codes; retried 2 Oct with R2242's values and 3 Oct with P = voor found; no forcing context yet, but each recurs and is still workable from context (⊣H before willen three times)
-- single-occurrence word signs on p2 (about ten) - blocker: no-key-material; seen once each, no key sheet, not in print, no value in R2242
+- recurring word signs on p2 (⊣H 9, hook 7, slash 5, cf 4, Y-cross 4, 8 4, S 3, Y 3, psi 2, phi 2, 7 2, cross 2, bar 2) - blocker: open-codes; jointly scored across all occurrences 3 Oct 2026 (solve_signs.py), no candidate fits every occurrence; 8 = zijn kept at I
+- eleven signs that occur once (3, 8-cross, 9, A, I, Z, check, circle-cross, delta, x on p2; dash on p1) - blocker: no-key-material; a single context cannot fix a word sign, and there is no key sheet, sibling occurrence or printed text
 - page 2 line 24 middle; page 1 line 1 - blocker: illegible; photocopy; the two digit rows drift and several pairs are ambiguous (re-examined 21 Sept and 3 Oct at full resolution: "…gesteld is geweest" fixes only the end of l24)
 
 ## Escalation
@@ -205,5 +219,5 @@ no-key-material (no key sheet, not in print, no R2242 value).
 - [x] clear-pages: no clear decipherment on the record; page 2 clear words used
 - [x] known-keys: R2240 and R2233 tried, no fit
 - [x] print: searched 2 Oct 2026 - Colenbrander, Gedenkstukken I-II full text (resources.huygens.knaw.nl retroboeken) for Dundas, Osnabrück, rassemblement, Nienburg/Nienbourg, Bentinck, gratification, Banquier, and GS II pp. 886-894 read: not printed; nos. 724, 733, 734 give the writer (Prince Frederick) and the date (late Nov - early Dec 1795)
-- [x] key-rebuild: digit square rebuilt by quadgram annealing; sign values from context (de, zich, te, ik), then from R2242 (zoo, als, dat, brief/lettre, zijn) and f = aan, 2 Oct 2026
+- [x] key-rebuild: digit square rebuilt by quadgram annealing; sign values from context (de, zich, te, ik), then from R2242 (zoo, als, dat, brief/lettre, zijn) and f = aan, 2 Oct 2026; P = voor and a joint LM scoring of every recurring sign, 3 Oct 2026 (none accepted)
 - [x] retry: 2 Oct 2026 - every sign occurrence rerun with R2242's values and regraded (table above); 3 Oct 2026 - every token failing the sense test re-checked on the image (measure_sense.py --show), 6 lines re-transcribed, 11 writer's slips emended, P = voor; page 2 line 24 and page 1 line 1 stay illegible

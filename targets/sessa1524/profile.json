@@ -62,7 +62,7 @@
     "by": "llm from images",
     "source": "DECODE images in img/ (git-ignored), read in strips with a crop script",
     "image_quality": "unknown",
-    "notes": "Cipher runs on ff. 80v-84r and the postscript f. 86r; ff. 79r-80r, 84v-85v clear. Token count = the (a) lines of r9873_cipher.txt (--skip non-(a)/(c) lines --drop-first), so it includes f~ switches, v db openers and the few clear words quoted inside cipher lines."
+    "notes": "Cipher runs on ff. 80v-84r and the postscript f. 86r; ff. 79r-80r, 84v-85v clear. Token count = the (a) lines of r9873_cipher.txt (--skip non-(a)/(c) lines --drop-first), so it includes f~ switches, v db openers and the few clear words quoted inside cipher lines. Read as sense (measure_read.py): 92.8% with pass-17 tentative values, 87.8% strict."
    }
   },
   {
@@ -93,7 +93,7 @@
     "by": "llm from images",
     "source": "DECODE images in img/ (git-ignored), read in strips with a crop script",
     "image_quality": "unknown",
-    "notes": "Clear and cipher interleaved throughout; heavy bleed-through on ff. 150v-151r and 155v. Token count as for r9873 (includes f~ and quoted clear words)."
+    "notes": "Clear and cipher interleaved throughout; heavy bleed-through on ff. 150v-151r and 155v. Token count as for r9873 (includes f~ and quoted clear words). Read as sense (measure_read.py): 79.8% with pass-17 tentative values, 77.9% strict."
    }
   }
  ],
@@ -157,7 +157,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-09-18",
-  "last_date": "2026-10-02"
+  "last_date": "2026-10-03"
  },
  "solution": [
   {
@@ -255,6 +255,36 @@
    "kind": "reading",
    "what": "About 260 code groups across the two letters (most attested once) and 398 letter tokens on the bleed-through pages of R9898 stay unread.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "hypothesis",
+   "what": "Pass 17: pooled the open groups of R9873, R9898 and R9660 into one concordance (84 groups in two or more letters) and took values that read in every occurrence (cas tiene, var agora, rac dize, pam/Jir paga, xoc socorr-, leg mucho, sur/luc parte, len/lon buen-, 3ar aca, yer Florencia, gig quisie-, nuf gente and ~15 single-context ones); all tentative.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "control",
+   "what": "Tested alphabetical bracketing of the code: attested values do not follow code order (cad sobre, cas tiene, cap tem-, cot todo), so no bracketing.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "transcription",
+   "what": "Re-cut R9873's non-word spellings and R9898 ff. 150v-151r at 1.5-1.6x: one correction (f. 83r p-u-e-r-e = pudiesse); the rest stand as written; bleed-through on R9898 does not resolve.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "access",
+   "what": "Looked for a better image of R9898 on the RAH Biblioteca Digital (search behind a bot wall; web search finds no digitised Salazar A-34).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "reading",
+   "what": "Re-measured: R9873 92.8% (strict 87.8%), R9898 79.8% (strict 77.9%); the 95% target was not reached.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -278,7 +308,7 @@
   "verification": [
    "historical consistency"
   ],
-  "notes": "Residue of f. 128 after pass 16: vo, per, the clause 'los m-re que r-ido'; hay = aunque tentative. R9873 (14 Apr 1524) and R9898 (24 Feb 1525) transcribed and read in part in the same key (pass 16); R9898's marginal decipherments (missed in pass 12) supplied about 15 values.",
+  "notes": "Residue of f. 128 after pass 16: vo, per, the clause 'los m-re que r-ido'; hay = aunque tentative. R9873 (14 Apr 1524) and R9898 (24 Feb 1525) transcribed and read in part in the same key (pass 16); R9898's marginal decipherments (missed in pass 12) supplied about 15 values. Pass 17 (3 Oct): pooled open groups across R9873/R9898/R9660; R9873 92.8% (strict 87.8%), R9898 79.8% (strict 77.9%); 95% not reached.",
   "gaps": [
    {
     "item": "group `vo` (noun after *las dichas*, f. 128r)",
@@ -301,19 +331,19 @@
     "detail": "one sign value (probably `v`) still wrong after 16 passes"
    },
    {
-    "item": "R9873: about 120 code groups and 52 letters without sense",
+    "item": "R9873: about 100 code groups and 34 letters without sense",
     "blocker": "open-codes",
-    "detail": "single contexts (read_r9873.md)"
+    "detail": "single contexts after pooling (pass 17)"
    },
    {
     "item": "R9898: about 140 code groups",
     "blocker": "open-codes",
-    "detail": "single contexts, not in the six marginal decipherments (read_r9898.md)"
+    "detail": "single contexts after pooling (pass 17), not in the six marginal decipherments"
    },
    {
-    "item": "R9898: 398 letter tokens on ff. 150v-151r, 155v",
+    "item": "R9898: 381 letter tokens on ff. 150v-151r, 155v",
     "blocker": "illegible",
-    "detail": "bleed-through; the DECODE images do not separate the cursive r/u/n signs"
+    "detail": "bleed-through; no gain at 1.5x; no other image route found"
    }
   ]
  }

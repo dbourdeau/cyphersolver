@@ -160,18 +160,58 @@ vocabulary produces a two-word reading without omissions. Ernst's RELIGIONEM CON
 conjecture; **line 29 is undetermined in both languages.** The English corpus for `search.py` was rebuilt from 24
 Gutenberg novels (`../beale/lmcorpus/`), so `vocab.tsv` differs slightly from the first session's.
 
+## 7. Push to 95% and a sense measure (2026-10-05, third session)
+
+**Re-transcription: externally blocked.** The only images of the ads outside the British Newspaper Archive are the
+two on klausschmeh.net (now in `img/`, `Catokwacopa.png`, `Catokwacopa-2.png`). They are re-typeset illustrations of
+the *old* circulating text, not scans: they show Hfsclam, 139, Eftdorshpxn, Tavlysdinlge, Dmlurpinrtrcamur,
+iolapstedtioc and Wtubrfftrs, every one of which Ernst corrected against the BNA originals in 2018 (#24-#25). So they
+cannot correct Ernst; they are older and worse. The originals (The Standard p. 1 col. 2, 8 and 20 May 1875) are on
+the paywalled BNA; nothing here can be re-read at higher resolution without a subscription. Ernst reported no
+doubtful letters in the May ads (his doubtful m/nr and o/b are in the March ad, a different text).
+
+**Phrase-level search (`beam.py`, `beam_open.txt`).** The gap list said line 23 needed a phrase-level model. `beam.py`
+generates the plaintext letter by letter under the shared `lang` en-modern 5-gram, each word in the vocabulary,
+every cipher letter consumed in its stream, 2.3 nats per omitted letter. Controls: line 7 REPEATED, line 18 CHANGE
+ADOPTED, line 3/4 come out on top. On the open lines it gives junk: 23 *with you but portion frog fit first me and
+in she chairs of seven mr nor*; 29 *terrible flowed to him bare*; 9 *mist often purely*; 26 *moist relative put*;
+12 *case land clutch so find size as more to*; 6 tail *... short is trick arm nor*; 19 *bit of all man postponed
+to seems to cover*; 21 *how days examine* against *hold say mixing* (HOLIDAYS EXAMINE no longer first); 5
+*conviction me me garden*. The phrase model decides nothing the unigram search left open.
+
+**The old measure did not count sense.** 0.747 counted every character of a line as read whenever any proposal
+existed: line 6 (SAID SIMPLY YOUR CAP IS HONESTY IN CHARACTER, 7 misprints), 19 (BALLIOL MAN POSTED, 11 misprints),
+21 (HAD EXAMINATION, 3), 5 (1 misprint, not the top fit), 13 (`1.6.9 / cotegr`, no reading at all) and 20 (A.P. 138,
+meaning unknown) were all counted read. `measure.py` counts a character only when a misprint-free reading the
+letters force consumes it (top of `search.py` or `beam.py`, or a name frame that admits one name in 1,645), and the
+credited words score as English under en-modern (> -2.5/char, names and W.'s spellings normalised for the test).
+Line 6 is credited for USED SIMPLY YOUR CAP only, line 14 for MONTHS PREVIOUSLY/PRIVATELY DISCLOSED only.
+
+| | old (lines with any proposal) | sense measure |
+|---|---|---|
+| 8 May ad | 178/238 = 0.748 | 134/238 = 0.563 |
+| 20 May ad | 173/232 = 0.746 | 123/232 = 0.530 |
+| both | 351/470 = 0.747 | **257/470 = 0.547** |
+
+The honest figure goes down, not up. 95% is not reachable from these letters: the unread lines are open because many
+readings fit, and no image, sibling or key can choose between them.
+
 ## Remaining gaps
 
-- lines 9 and 26 (mistrl / otenpu, oatvpu) - blocker: too-short; open-vocabulary search: many unrelated exact fits within a nat or two
-- line 12 - blocker: too-short; not decided by the letters: many exact fits
-- line 23 (48 letters) - blocker: not-attempted; notes: needs a phrase-level language model, not unigrams; not run
-- line 29 (ereflodbr / rileohmae) - blocker: too-short; exhaustive English and Latin searches give only junk; undetermined in both
+- lines 9 and 26 (mistrl / otenpu, oatvpu) - blocker: too-short; unigram and phrase-level searches give many unrelated exact fits
+- line 12 - blocker: too-short; phrase-level search gives junk
+- line 23 (48 letters) - blocker: too-short; phrase-level 5-gram search run 5 Oct 2026 (beam.py): junk, no forced reading
+- line 29 (ereflodbr / rileohmae) - blocker: too-short; English (unigram + 5-gram) and Latin searches give only junk
+- line 5 - blocker: too-short; CONINGTON MET ME IN GARDEN needs one misprint and is not the top fit
+- line 6 tail, line 14 tail, line 19, line 21 - blocker: too-short; several exact fits, none forced
+- line 13 (1.6.9 / cotegr), line 20 (A.P. 138) - blocker: too-short; no reading of the figures
+- re-transcription - blocker: needs-physical-access; originals only on the paywalled British Newspaper Archive; the blog images are re-typeset from the old text
 
 ## Escalation
 
-- [n/a] siblings: two newspaper advertisements, both used; no sibling records exist
+- [n/a] siblings: two newspaper advertisements, both used; the March 1875 ad and the 1879 Fact or Fiction ads are a different system
 - [x] clear-pages: the clear closing sentence of the 20 May ad used to pair the ads
 - [n/a] known-keys: no key: the mechanism is interleaving with omissions, not substitution
 - [x] print: Schmeh blog thread, Bosbach, Estes, Ernst BNA text, Krajcovic audits reviewed
 - [x] key-rebuild: open-vocabulary exact-fit search (English 30k, Latin 19k) and name-frame tests
-- [ ] retry: not done - phrase-level LM search for line 23; identity check (Jex-Blake vs Ernst candidate) to constrain 9/26
+- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked

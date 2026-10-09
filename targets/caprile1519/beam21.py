@@ -40,6 +40,14 @@ def priors():
     P['Z'] = {'x': math.log(0.6), 'q': math.log(0.4)}
     P['8'] = {'e': math.log(0.8), '': math.log(0.2)}
     P['SL'] = {'': 0.0}
+    if os.environ.get('LOOK'):                           # look-alike tabulation (lookalike21.py, 3 Oct 2026)
+        P['EL'] = {'p': math.log(0.45), 'd': math.log(0.4), 'f': math.log(0.15)}
+        P['AMP'] = {'p': math.log(0.7), 'd': math.log(0.15), 'f': math.log(0.15)}
+        P['c'] = {'o': math.log(0.45), 'e': math.log(0.35), 'c': math.log(0.2)}
+        P['x'] = {'r': math.log(0.8), 'q': math.log(0.2)}
+        P['8'] = {'e': math.log(0.4), 'o': math.log(0.3), 't': math.log(0.3)}
+    if os.environ.get('FREE'):                           # test signs as letters with no prior (numeral question)
+        for t in os.environ['FREE'].split(','): P[t] = {c: math.log(1 / 22) for c in 'abcdefghilmnopqrstuxz'}; P[t][''] = math.log(1 / 22)
     P['OP'] = {'s': 0.0}                                   # o+ (R1136 pass 4: presia, esser)
     P['D'] = {'b': math.log(0.5), 'x': math.log(0.5)}      # Bachiensis; Excelentia, excludera
     P['c'] = {'o': math.log(0.7), 'c': math.log(0.3)}      # plain c: inteso, ho

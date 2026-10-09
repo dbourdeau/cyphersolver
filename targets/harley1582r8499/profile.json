@@ -197,6 +197,18 @@
    "what": "Isle of Wight sentence (f. 8r p1.13-16) re-read on the image against the R354 key: 'concludid' confirmed; the Ie sign given as 'also' (I); the 13 signs after 'taken' tried with every key alternative and an en-1640s brute force ('...privates' best, not adopted) and left unread.",
    "result": "partial",
    "date": "2026-09-30"
+  },
+  {
+   "kind": "verification",
+   "what": "Sense measure written (measure_sense.py, sense_judgement.tsv): the old measure counted letter-for-letter readings without sense; v8 is 74.3% by the old measure but 68.4% read as sense.",
+   "result": "worked",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "reading",
+   "what": "Full-resolution image re-transcription of unread stretches: p2.25 name read as 'Brimstane, a Scot' (13 of 15 signs); p1.24 '(fy)ve hundrid' tentative; p1.13 run confirmed on the image and still unread after an LM brute force; Stafford 1586 key (harley1582r8500) found to be a different system. Sense 68.9% (final_v9.txt).",
+   "result": "partial",
+   "date": "2026-10-05"
   }
  ],
  "outcome": {
@@ -208,7 +220,7 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.75,
+  "fraction_read": 0.689,
   "key": "partial",
   "codes_open": {
    "open": "unknown",
@@ -220,7 +232,7 @@
   ],
   "gaps": [
    {
-    "item": "~25% of non-null signs (names, Ie, rare codes, p1 runs)",
+    "item": "~31% of non-null signs unread, tentative or not sense (p1.13, p1.24, p6.13-14, p3.14, rare codes, Ie)",
     "blocker": "needs-physical-access",
     "detail": "contemporary decipherment ff. 5r-7v not digitised; order BL images"
    },
@@ -230,6 +242,6 @@
     "detail": "no entry on the only surviving key copy R354"
    }
   ],
-  "notes": "Read in part with key R354 after eight transcription/key passes: 75.0% of 2,801 non-null signs firm, 89.4% incl. tentative (final_v8.txt). The contemporary decipherment (Harley 1582 ff. 5r-7v) is not digitised; ~40 rare codes are not on R354."
+  "notes": "Read in part with key R354: 68.9% of 2,727 non-null signs read as sense (measure_sense.py on final_v9.txt; the old non-[?] measure gave 74.7%). The contemporary decipherment (Harley 1582 ff. 5r-7v) is not digitised; ~40 rare codes are not on R354."
  }
 }

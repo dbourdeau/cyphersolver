@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Vienna agent to Baron Schenck (1706) and the Sieniawski cipher letters (1707&ndash;1714) &mdash; Read in part</title>
+<meta name="description" content="DECODE R7468&ndash;R7500, catalogued as letters to Hetman Sieniawski and fifteen letters &ldquo;from Dresden&rdquo; to Schenck, chamberlain of Augustus II, with no decipherment. The fifteen are from an agent in Vienna, March&ndash;July 1706; their letter cipher, numbers 7&ndash;79 in alphabetical blocks of three, was recovered here from the ciphertext alone and 93% of its numbers read as sense, but 72 of 77 code numbers stay open (62.4% of all cipher tokens). The Sieniawski letters were mostly printed by Kaczka in 2012; the unprinted ones carry contemporary interlinear decipherments, transcribed here.">
+<link rel="stylesheet" href="style.css?v=20260924b">
+<meta name="date" content="2026-10-09">
+<meta name="last-modified" content="2026-10-09">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head><body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="esterhazy1744.html"><span class="st stuck">not solved</span><b>Esterh&aacute;zy box 636, 1744</b><span class="yr">1744</span></a></li><li><a href="sieniawski1708.html" aria-current="page"><span class="st partial">ciphertext-only break &middot; partial</span><b>Vienna to Schenck 1706; Sieniawski letters</b><span class="yr">1706&ndash;1714</span></a></li><li><a href="hesse1672.html"><span class="st partial">external key matched &middot; partial</span><b>Hamburg despatch to Kassel 1672</b><span class="yr">1672</span></a></li><li><a href="erving1807aug.html"><span class="st solved">key from external plaintext</span><b>Erving to Madison, Aug 1807</b><span class="yr">1807</span></a></li><li><a href="battier1686.html"><span class="st partial">known key applied &middot; partial</span><b>Battier to Fagel</b><span class="yr">1686&ndash;1688</span></a></li><li><a href="beuningen1676.html"><span class="st partial">key from adjacent plaintext &middot; partial</span><b>Van Beuningen to Fagel</b><span class="yr">1676</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><span class="st solved">30</span><b>Ciphertext-only break</b></a></li><li><a href="writeups.html#kind=extpt"><span class="st solved">11</span><b>Key from external plaintext</b></a></li><li><a href="writeups.html#kind=adjpt"><span class="st solved">40</span><b>Key from adjacent plaintext</b></a></li><li><a href="writeups.html#kind=extkey"><span class="st solved">16</span><b>External key matched</b></a></li><li><a href="writeups.html#kind=known"><span class="st solved">73</span><b>Known key applied</b></a></li><li><a href="writeups.html#kind=deciph"><span class="st solved">31</span><b>Existing decipherment</b></a></li><li><a href="writeups.html#kind=notsolved"><span class="st stuck">38</span><b>Not solved</b></a></li><li><a href="writeups.html#kind=na"><span class="st found">14</span><b>Not applicable</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 255 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a href="catalogue.html">Catalogue</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+  <div class="cipherstrip">34 20 32 43 &middot; 25 64 61 62 21 59 &middot; 46 40 19 43<br>k e i n &middot; g u t t e s &middot; o m e n<br>a = 7 8 9 &middot; e = 19 20 21 &middot; n = 43 44 45 &middot; t = 61 62 63</div>
+  <p class="kicker">Vienna &rarr; Baron Schenck at Cracow &middot; alphabetical homophonic table with a code &middot; March&ndash;July 1706 &middot; with the Wallachian and Polish letters to Hetman Sieniawski, 1707&ndash;1714</p>
+  <h1>A Vienna agent to Baron Schenck (1706) and the Sieniawski cipher letters</h1>
+  <p class="sub">Fifteen German letters from Vienna to a chamberlain of Augustus II, catalogued as &ldquo;from Dresden&rdquo;: their letter cipher was recovered from the ciphertext alone, but most of their code numbers for people stay open.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-09">9 October 2026</time></p>
+<p class="outcome">Method &middot; Vienna to Baron Schenck, 1706: <a href="glossary.html#ct">key recovered from ciphertext-only</a> (partial) &middot; Brâncoveanu and Cantacuzino to Sieniawski, 1709-1714: <a href="glossary.html#deciph">read from existing decipherment</a> (complete) &middot; unprinted Sieniawski letters (R7475, Turculeț 1709, Chomentowski 1713): <a href="glossary.html#deciph">read from existing decipherment</a> (partial)</p><!-- /outcome -->
+<div class="seal partial" aria-hidden="true"><span>ciphertext-only</span></div>
+</section>
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-records">The records</a><a href="#the-vienna-letters">The Vienna letters to Schenck</a><a href="#the-table">The letter table</a><a href="#the-reading">The decipherment</a><a href="#the-codes">The codes</a><a href="#the-sieniawski-letters">The Sieniawski letters</a><a href="#method">Method</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from the ciphertext alone &middot; partial &middot; 760 of 1,218 cipher tokens (62.4%); the letter cipher 634 of 682 (93.0%)</span></p>
+<dl>
+  <dt>The letters</dt><dd>Fifteen letters, 7 March to 14 July 1706, from an agent in Vienna who signs with a cover name read &ldquo;Sidon&rdquo;, to the Baron de Schenck, chamberlain of King Augustus II, at Cracow and Lublin. With them on DECODE: eighteen ciphered letters to Hetman Adam Miko&#322;aj Sieniawski, 1707&ndash;1714.</dd>
+  <dt>Where</dt><dd>Archiwum Narodowe w Krakowie: AKM 21 plik 30/1 (the Schenck letters, DECODE R7486&ndash;R7500); Zbi&oacute;r Dzieduszyckich 26/32 nr 13 and nr 5, and 24/11 no. 116 (the Sieniawski letters, R7468&ndash;R7485). All catalogued on DECODE with no decipherment.</dd>
+  <dt>The cipher</dt><dd>Clear German with single words and phrases in a homophonic letter table (a = 7, 8, 9; b = 10, 11, 12; &hellip; three numbers to a letter in alphabetical order), three-digit code numbers for people and things, and dotted letter signs.</dd>
+  <dt>How it was deciphered</dt><dd>A free solver gave nothing; a search that kept the table in alphabetical blocks and moved only the block boundaries found it from the ciphertext alone. Every run was then read again on the images against the key. The recipient's own pencilled letters over three runs agree with it.</dd>
+  <dt>What it says</dt><dd>Court news from Vienna in the year of Ramillies and Turin, the Saxon king's affairs at the imperial court, rivalries for a post, the Malcontents in Hungary: &ldquo;dieser glaubet sey kein guttes omen&rdquo;.</dd>
+  <dt>Still open</dt><dd>72 of the 77 code numbers (187, 181, 166 and the rest), nine short runs, the dotted signs. The Sieniawski letters were mostly printed by Kaczka in 2012; the six he left out carry contemporary decipherments between the lines, transcribed here.</dd>
+</dl>
+</div>
+
+<h2 id="the-records"><span class="num">01</span> The records</h2>
+<p>DECODE groups thirty-three records of the Archiwum Narodowe w Krakowie, all uploaded in September 2023 with status N/A, cipher type &ldquo;unknown&rdquo; and no key or decryption file. They come from four collections:</p>
+<table>
+<tr><th>Records</th><th>Collection</th><th>What they are</th></tr>
+<tr><td>R7486&ndash;R7500</td><td>AKM 21 plik 30/1</td><td>Fifteen German letters, Vienna, 7 March &ndash; 14 July 1706, to the Baron de Schenck. DECODE: &ldquo;NN z Drezna (jezuita?)&rdquo; to &ldquo;Schenck (Szench) szambelan Augusta II&rdquo;.</td></tr>
+<tr><td>R7468&ndash;R7480</td><td>Zbi&oacute;r Dzieduszyckich 26/32 nr 13</td><td>&ldquo;Listy multa&#324;skie i inne do Adama Miko&#322;aja Sieniawskiego pisane szyfrem&rdquo;: Br&acirc;ncoveanu and Cantacuzino, 1709&ndash;1714, and two other letters (pp. 29&ndash;34).</td></tr>
+<tr><td>R7481&ndash;R7483</td><td>Zbi&oacute;r Dzieduszyckich 26/32 nr 5</td><td>Letters &ldquo;from Wallachia&rdquo; with news from Bender, 1709, and a Br&acirc;ncoveanu postscript.</td></tr>
+<tr><td>R7484&ndash;R7485</td><td>Zbi&oacute;r Dzieduszyckich 24/11 no. 116</td><td>DECODE &ldquo;Krakow_UNK_3/4&rdquo;: Stanis&#322;aw Chomentowski, envoy at the Porte, to Sieniawski, Adrianople, 9 May 1713, and an undated second letter. The archive wrapper gives the shelfmark.</td></tr>
+</table>
+<p>The neighbouring records R7460&ndash;R7467 and R7501&ndash;R7507 belong to other collections and correspondents and give no key for these.</p>
+
+<h2 id="the-vienna-letters"><span class="num">02</span> The Vienna letters to Schenck</h2>
+<p>The address leaf of the letter of 27 March reads <em>A Monsieur / Mons.r Le Baron de Schenck / Chambell. de Sa Majest&eacute; / Le Roy de Pologne / &agrave; Cracovie</em>. Every letter is dated from Vienna (&ldquo;W. d. 12. Maj 1706&rdquo;), not Dresden; the writer numbers them (N.&nbsp;15 on 27 March, N.&nbsp;47 on 14 July, so more than one a week), closes &ldquo;Votre tres humble et tres obeiss. Serviteur&rdquo; and signs with a name read &ldquo;Sidon&rdquo; or &ldquo;Sadon&rdquo;, probably a cover name. The receipt dockets say &ldquo;Recept. d. 18 May 1706 in Cracau&rdquo;, &ldquo;d. 7. Jun&yuml; 1706 in Lublin&rdquo;; a later archive hand wrote &ldquo;Seligman&rdquo; and &ldquo;Lehman&rdquo; on two address leaves.</p>
+<table>
+<tr><th>DECODE</th><th>No.</th><th>Date</th><th>DECODE</th><th>No.</th><th>Date</th></tr>
+<tr><td>R7486</td><td>18</td><td>7 March 1706</td><td>R7494</td><td>35</td><td>5 June</td></tr>
+<tr><td>R7487</td><td>&ndash;</td><td>13 March</td><td>R7495</td><td>38</td><td>15 June</td></tr>
+<tr><td>R7488</td><td>15</td><td>27 March</td><td>R7496</td><td>39</td><td>16 June</td></tr>
+<tr><td>R7489</td><td>27</td><td>8 May</td><td>R7497</td><td>40</td><td>19 June</td></tr>
+<tr><td>R7490</td><td>28</td><td>12 May</td><td>R7498</td><td>41</td><td>23 June</td></tr>
+<tr><td>R7491</td><td>31</td><td>22 May</td><td>R7499</td><td>44</td><td>3 July</td></tr>
+<tr><td>R7492</td><td>&ndash;</td><td>26 May</td><td>R7500</td><td>47</td><td>14 July</td></tr>
+<tr><td>R7493</td><td>32</td><td>29 May</td><td></td><td></td><td></td></tr>
+</table>
+<p>Most of each letter is in clear German, mixed with French and Latin: the siege of Landau and the fall of Hagenau, Barcelona relieved, Ramillies and the coming peace congress (who might mediate, Denmark or Sweden), the relief of Turin, the Malcontents in Hungary. The cipher covers names and the delicate words.</p>
+<figure data-credit="Archiwum Narodowe w Krakowie, AKM 21 plik 30/1, letter N. 18 (7 March 1706), p. 1, via DECODE R7486"><img src="sieniawski1708_lead.jpg" alt="Kurrent German lines with runs of two-digit numbers and three-digit codes" loading="lazy"><figcaption>The head of N. 18: &ldquo;Mit dieser Post habe von 189 der 187 altmahl nichts erhallten. dieser glaubet sey 34 20 32 43 25 64 61 62 21 59 46 40 19 43&rdquo; (<em>kein guttes omen</em>), then &ldquo;o. 190. g. 58 19 32 44 21 (<em>seine</em>) 502 f. 150&rdquo;. <span class="credit">Image: Archiwum Narodowe w Krakowie, AKM 21 plik 30/1, letter N. 18 (7 March 1706), p. 1, via DECODE R7486.</span></figcaption></figure>
+
+<h2 id="the-table"><span class="num">03</span> The letter table</h2>
+<p>Three numbers to each letter, in alphabetical order, with no <em>j</em> and no <em>v</em>:</p>
+<table>
+<tr><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th><th>f</th><th>g</th><th>h</th><th>i</th><th>k</th><th>l</th><th>m</th></tr>
+<tr><td>7 8 9</td><td>10 11 12</td><td>13 14 15</td><td>16 17 18</td><td>19 20 21</td><td>22 23 24</td><td>25 26 27</td><td>28 29 30</td><td>31 32 33</td><td>34 35 36</td><td>37 38 39</td><td>40 41 42</td></tr>
+<tr><th>n</th><th>o</th><th>p</th><th>q</th><th>r</th><th>s</th><th>t</th><th>u</th><th>w, v</th><th>y</th><th>z</th><th></th></tr>
+<tr><td>43 44 45</td><td>46 47 48</td><td>49 50 51</td><td>52 53 54</td><td>55 56 57</td><td>58 59 60</td><td>61 62 63</td><td>64 65 66</td><td>67 68 69 70</td><td>76 77 78</td><td>79</td><td></td></tr>
+</table>
+<p>The end of the table is irregular: 70 is <em>w</em> (<em>wieder</em>, <em>wegen</em>), 76&ndash;78 are <em>y</em> (<em>Ogilvy</em>, <em>Convoy</em>, <em>Secretar&yuml;</em>), 79 is <em>z</em> (<em>zugleich</em>, <em>correspondenz</em>, <em>Reichsvicecantzler</em>); 67&ndash;69 serve for both <em>v</em> and <em>w</em> (<em>von</em>, <em>Vanit&auml;ten</em>, <em>Avisen</em>). The single digits 7, 8 and 9 inside runs are therefore <em>a</em>. No key sheet survives with the letters.</p>
+<p>The recipient worked some runs out himself. Over &ldquo;58 31 15 28 25 19 58 14 28 37 8 26 19 43&rdquo; (<em>sich geschlagen</em>) in N.&nbsp;18 he wrote small letters s, a, k, l, a, and over &ldquo;&hellip; 51 32 55 19 62&rdquo; (<em>dessipiret</em>) p, r, e, t: they agree with the table.</p>
+
+<h2 id="the-reading"><span class="num">04</span> The decipherment</h2>
+<figure class="creveal" data-src="reveal/sieniawski1708.json"></figure>
+<p>106 runs of the letter table, 682 numbers. Read in their sentences (word division and spelling are the writer's):</p>
+<ul>
+<li>&ldquo;dieser glaubet sey <em>kein guttes omen</em>&rdquo;; &ldquo;o. <em>Herr Senfft hat gar</em> 3. 181 <em>abgesezt</em>, L e 190 <em>sich geschlagen</em>&rdquo;; &ldquo;es <em>soll hier viel Cabalen</em> &hellip; <em>wieder</em> 181 <em>vorgehabt haben</em>&rdquo; (N.&nbsp;18, 7 March).</li>
+<li>&ldquo;o. <em>Reichsvicecantzler</em>&rdquo; (N.&nbsp;18); &ldquo;wegen der <em>Invasion</em>&rdquo; (13 March); &ldquo;eine <em>Convoy</em>&rdquo;, &ldquo;<em>Plessen</em>&rdquo;, &ldquo;<em>correspondenz</em>&rdquo; (N.&nbsp;15).</li>
+<li>&ldquo;<em>de Baron Kleinburg alhier</em>&rdquo;, &ldquo;<em>Ogilvy</em>&rdquo;, &ldquo;<em>aus Muscau geschrieben</em>&rdquo;, &ldquo;<em>confidence</em>&rdquo;, &ldquo;<em>malevoli</em>&rdquo; (N.&nbsp;28, 12 May).</li>
+<li>&ldquo;wie auch beygleich b. 150 <em>ein rescript, so</em> b. 154 L. 166 <em>zugleich unterschrieben</em>, erhalten&rdquo;; &ldquo;<em>combination</em>&rdquo;, &ldquo;<em>du cabinet</em>&rdquo;, &ldquo;in puncto diversatis <em>religionis</em>&rdquo; (N.&nbsp;38, 15 June).</li>
+<li>&ldquo;<em>Secretar&yuml;</em>&rdquo;, &ldquo;wegen o <em>introduction</em>&rdquo;, &ldquo;<em>dimission</em>&rdquo;, &ldquo;<em>wegen Nellenburg</em>&rdquo; (N.&nbsp;41, 23 June).</li>
+<li>&ldquo;oo. <em>Malcontenten</em> auffs neue <em>allarmiren</em> d&uuml;rfften&rdquo;, &ldquo;die schon <em>accordirten puncten</em> wieder <em>resiliren</em>&rdquo;, &ldquo;<em>diffidence</em>&rdquo; (N.&nbsp;47, 14 July).</li>
+</ul>
+<figure data-credit="Archiwum Narodowe w Krakowie, AKM 21 plik 30/1, letter N. 18 (7 March 1706), p. 1, via DECODE R7486"><img src="sieniawski1708_runs.jpg" alt="Lines of two-digit numbers with small letters written above some of them" loading="lazy"><figcaption>Lower half of the same page: &ldquo;es soll hier viel Cabalen &hellip;&rdquo;, &ldquo;wieder 181 vorgehabt haben&rdquo;, and the recipient's small letters p r e t over <em>dessipiret</em>. <span class="credit">Image: Archiwum Narodowe w Krakowie, AKM 21 plik 30/1, letter N. 18 (7 March 1706), p. 1, via DECODE R7486.</span></figcaption></figure>
+<p>634 of the 682 numbers (93.0%) read as sense. Seven runs that a single slip spoils still read (<em>introduc[t]ion</em>, <em>punc[t]en</em>, <em>d[i]mission</em>, <em>be[m]&uuml;hen</em>); nine do not: &ldquo;gutswor&rdquo;, &ldquo;sollwiglaufeenden&rdquo; (perhaps <em>zuwiderlauffenden</em>, with the recipient's a u f over it), &ldquo;lceth&rdquo;, &ldquo;ditlan&rdquo;, &ldquo;datmseyihm&rdquo;, &ldquo;iwzo&rdquo; and three of one or two letters. Their digits were checked twice on the images.</p>
+
+<h2 id="the-codes"><span class="num">05</span> The codes</h2>
+<p>The three-digit numbers are a nomenclator of people, courts and things: 77 distinct codes, 499 occurrences, plus about 37 small codes (83, &ldquo;3.&rdquo;, &ldquo;2.&rdquo;). Dotted letters stand before many codes and runs (&ldquo;o. 190&rdquo;, &ldquo;b. 150 &hellip; L. 166&rdquo;, &ldquo;oo&rdquo;, &ldquo;ooo&rdquo;); they may be nulls or particles. Only five codes have a value, all from context:</p>
+<table>
+<tr><th>Code</th><th>n</th><th>Value</th><th>Grade</th><th>Evidence</th></tr>
+<tr><td>189</td><td>56</td><td>Baron Schenck, the addressee</td><td>I</td><td>&ldquo;Das schreiben des 189 unterm 9. curr.&rdquo;; &ldquo;des 189 zugestossenen Unp&auml;&szlig;lichkeit&rdquo;; &ldquo;189 sich des hungarischen Weines enthalten&rdquo;</td></tr>
+<tr><td>190</td><td>13</td><td>Charles XII of Sweden</td><td>I</td><td>&ldquo;dass 190 nec superiorem, nec parem aut inferiorem vertragen&rdquo;; &ldquo;150 kein besondere confidence mehr gegen 190&rdquo;</td></tr>
+<tr><td>150</td><td>42</td><td>King Augustus II</td><td>I</td><td>&ldquo;in favorem 150&rdquo;; &ldquo;dass 150 nichts von Schweden zu erwarten habe&rdquo;</td></tr>
+<tr><td>100</td><td>9</td><td>the imperial court</td><td>M</td><td>&ldquo;das interieur von 100&rdquo;; &ldquo;bei 100 m&auml;chtige grosse desordre&rdquo;</td></tr>
+<tr><td>208</td><td>6</td><td>der Kayser</td><td>C</td><td>the recipient wrote &ldquo;der&rdquo; and &ldquo;Kayser&rdquo; by it (N.&nbsp;32)</td></tr>
+</table>
+<p>The others have roles, not names. 187 (104 times) is the writer's principal in Vienna (&ldquo;der 187 hat mir gesagt&rdquo;); 181 (67) a great man there, &ldquo;an seinem Arm nicht v&ouml;llig restituiret&rdquo;, at odds with 190; 166 was ill in May; &ldquo;Mons. 186&rdquo; arrived in Cracow; 132 and 193 compete for one post (&ldquo;132 ist ein guter Jurist, guter publicist, guter Linguist&rdquo;). An alphabetical code list would put 189 Schenck next to 190 Schweden, but 150 and 208 do not fit one series, so no value was inferred from position.</p>
+
+<h2 id="the-sieniawski-letters"><span class="num">06</span> The Sieniawski letters</h2>
+<p>Mariusz Kaczka printed the Polish letters of Constantin Br&acirc;ncoveanu and Constantin Cantacuzino to Sieniawski from these originals in 2012, with the Wallachian chancellery's key (a = 19, b = 60, c = 66, &hellip;; 900 = August). They are R7468&ndash;R7474, R7477&ndash;R7480 and R7483 (his nos. IV, V, VIII, XIII, XVII, XIX, XX, XXI, XXIII, XXV, XXVI). Ten lines of R7473, decoded with that key, agree with the decipherment written between the lines and with his text. Kaczka left out six pieces, which carry contemporary decipherments between the lines:</p>
+<ul>
+<li><strong>R7475</strong> (nr 13 pp. 29&ndash;30): an unsigned adviser in Sieniawski's camp, probably 1707, distrusting the mediation of the Bishop of Che&#322;mno and Stanis&#322;aw's offers, &ldquo;lubo nie wierzam gazetom warszawskim&rdquo;. A homophonic letter table, again in alphabetical blocks (a = 17&ndash;18, b = 20&ndash;21, c = 22&ndash;23 &hellip; z = 56&ndash;57), rebuilt here from the gloss; 600 = kr&oacute;l szwedzki.</li>
+<li><strong>R7481, R7482</strong> (nr 5 pp. 1&ndash;3, 5&ndash;6): news from Bender in 1709, in Polish and in Latin, in the key Kaczka gives for Constantin Turcule&#539;: &ldquo;Z&#261;d to occurrit, siedmset Szwed&oacute;w bez or&#281;&#380;nych z pu&#322;kownikiem Gilenkrukiem przesz&#322;o do Soczawy&rdquo;. 99.4% of the numbers carry a gloss; page 3 is a fair copy of the decipherment.</li>
+<li><strong>R7484, R7485</strong> (24/11 no. 116) and <strong>R7476</strong> (nr 13 pp. 31&ndash;34): Stanis&#322;aw Chomentowski at the Porte, Adrianople 9 May 1713 and around then, in a three-digit syllabary glossed syllable by syllable. R7485 also has its cipher written out in clear at the head of the page. R7476's faint glosses were transcribed at 91%.</li>
+</ul>
+<figure data-credit="Archiwum Narodowe w Krakowie, Zbi&oacute;r Dzieduszyckich 26/32 nr 13 p. 29, via DECODE R7475"><img src="sieniawski1708_r7475.jpg" alt="Dot-separated numbers with a letter-by-letter decipherment written above them" loading="lazy"><figcaption>R7475: &ldquo;lubo nie wierzam gazetom warszawskim, nec respektem acceptowania mediacyi biskupa che&#322;mi&#324;skiego&rdquo;, deciphered letter by letter above the line. <span class="credit">Image: Archiwum Narodowe w Krakowie, Zbi&oacute;r Dzieduszyckich 26/32 nr 13 p. 29, via DECODE R7475.</span></figcaption></figure>
+<figure data-credit="Archiwum Narodowe w Krakowie, Zbi&oacute;r Dzieduszyckich 24/11 no. 116, p. 115, via DECODE R7485"><img src="sieniawski1708_r7485.jpg" alt="Three-digit numbers with syllables written above them" loading="lazy"><figcaption>R7485, Chomentowski: the syllabary, glossed &ldquo;Seraskier o wi Turcy &hellip;&rdquo;. <span class="credit">Image: Archiwum Narodowe w Krakowie, Zbi&oacute;r Dzieduszyckich 24/11 no. 116, p. 115, via DECODE R7485.</span></figcaption></figure>
+
+<h2 id="method"><span class="num">07</span> Method</h2>
+<ol>
+<li>Pulled the metadata of R7460&ndash;R7507 through the DECODE API and the 130 images with a logged-in session; no record carries a key or decipherment.</li>
+<li>Two transcription passes over the 52 images of the Schenck letters: clear text as far as legible, every cipher number, superscript and docket.</li>
+<li>A free homophonic solver (any number to any letter, German n-grams of the 1720s&ndash;60s) gave no sense on the 642 numbers then in hand.</li>
+<li>The runs end in 19 43, 21 45, 20 44, 19 55, and the frequent numbers cluster. If the homophones are consecutive numbers in alphabetical order, the key is only 23 boundaries. Annealing those boundaries alone against the same model gave blocks of three from a = 7&ndash;9 in the best restart (&minus;913 against &minus;1,212 to &minus;1,496 for the others) and, at once, <em>de Baron Kleinburg alhier</em> and <em>correspondenz</em>.</li>
+<li>Every run was transcribed again at full resolution against the key: 24 lines corrected, most of them the writer's 31 taken for 21 and his delta-shaped 6 for 0 or 8.</li>
+<li>Code values were assigned only where a context fixes the role; the Wallachian key, the R7475 table and the Chomentowski syllabary were scored on the Schenck runs and do not fit.</li>
+</ol>
+
+<h2 id="what-remains-uncertain"><span class="num">08</span> What remains uncertain</h2>
+<ul>
+<li>72 of 77 code numbers, 373 occurrences, among them 187, 181, 166, 186, 254, 258, 132, 193, 349, 513, 526 and 527. No key is filed with the letters, on DECODE or in print, and the clear text gives roles, not names.</li>
+<li>Nine runs (48 numbers) with no sense, listed above; probably names or the writer's slips.</li>
+<li>The dotted letter signs and the small codes 83, &ldquo;3.&rdquo; and &ldquo;2.&rdquo;.</li>
+<li>Grades: 208 = der Kayser C (the recipient's note); 100 M; 189, 190, 150 I. The clear text is transcribed only in part ([?] where water damage or the hand defeat it).</li>
+<li>Who &ldquo;Sidon&rdquo; was, and which Schenck: neither is identified. DECODE's &ldquo;NN z Drezna (jezuita?)&rdquo; does not fit letters dated from Vienna.</li>
+<li>R7476: 136 of its glosses (8.8%) are too faint to read on the images.</li>
+</ul>
+
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/sieniawski1708.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">09</span> Sources</h2>
+<ul>
+<li>DECODE records <a href="https://de-crypt.org/decrypt-web/RecordsView/7486">R7486</a>&ndash;<a href="https://de-crypt.org/decrypt-web/RecordsView/7500">R7500</a> (Schenck letters) and <a href="https://de-crypt.org/decrypt-web/RecordsView/7468">R7468</a>&ndash;<a href="https://de-crypt.org/decrypt-web/RecordsView/7485">R7485</a> (Sieniawski letters), Archiwum Narodowe w Krakowie.</li>
+<li>M. W. Kaczka, &ldquo;Unpublished Letters of Constantin Br&acirc;ncoveanu and Constantin Stolnicul Cantacuzino, from the Polish Archives&rdquo;, <em>Danubius</em> XXX (Gala&#539;i, 2012), pp. 101&ndash;140, <a href="https://revistadanubius.ro/wp-content/uploads/2023/07/xxx_05_KACZKA_format_a.pdf" rel="noopener">PDF</a>: keys in notes 21 and 22.</li>
+<li>A. Mare&#537;, &ldquo;Din istoria criptografiei rom&acirc;ne&#537;ti: cifrul cancelariei br&icirc;ncovene&#537;ti pentru coresponden&#539;a &icirc;n limba polon&#259;&rdquo;, <em>Anuarul Institutului de Istorie &#537;i Arheologie &ldquo;A. D. Xenopol&rdquo;</em> XXIV/1 (1987), pp. 335&ndash;341 (cited by Kaczka, not seen).</li>
+</ul>
+<p class="muted">Transcriptions, the runs file, solvers and notes: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sieniawski1708">targets/sieniawski1708/</a> in the repository.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Archiwum Narodowe w Krakowie, via DECODE</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="bay1706.html" rel="prev">&larr; Bay to R&aacute;k&oacute;czi 1706 1706</a><a href="papai1706.html" rel="next">P&aacute;pai to R&aacute;k&oacute;czi 1706&ndash;10 1706&ndash;10 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=f00596e5" defer></script>
+<script src="solve-replay.js?v=20260924b" defer></script>
+<script src="zoom.js?v=20260924b" defer></script>
+<script src="site.js?v=20260924b"></script>
+</body></html>

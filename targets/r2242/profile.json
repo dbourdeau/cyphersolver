@@ -259,6 +259,12 @@
    "kind": "statistics",
    "what": "Read as sense, strict: 941/1,037 = 90.7% (HEAD transcription, 30 Sept signs) -> 940 (2 Oct, LM only) -> 953 (+word check) -> 979 (+forced upgrades) -> 994/1,037 = 95.9% (+y as ij). With I values: 1,000/1,037 = 96.4%.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "hypothesis",
+   "what": "Gaps re-sorted: signs occurring twice (Delta, %, crossed diamond) stay open-codes; the nineteen true singletons are blocked by no-key-material (one context cannot fix a word sign).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -283,12 +289,17 @@
   "notes": "All digit pairs map with the R1892 key. Read as sense (STRICT=1 measure_sense.py, nl-modern, LM window or attested word, y as ij): 994/1,037 = 95.9% (p1 100%, p3 95.7%, p4 94.5%); 90.7% for the 30 Sept state under the same measure. Meets the read bar; classed read on 3 Oct 2026 (the letter as a whole; p3 95.7%, p4 94.5% on their own). Twenty single word signs and four I-grade signs open; letter not in Colenbrander, Gedenkstukken I-II.",
   "gaps": [
    {
-    "item": "20 single-occurrence word signs on p3-p4, plus four signs with context-only values counted unread (X weinig, & Engeland, + mogelyk, crossed diamond voor)",
-    "blocker": "no-key-material",
-    "detail": "one or two occurrences each, none in R1892 with a value, no key sheet, not in print, so no material to value them; all retried 2 and 3 Oct 2026"
+    "item": "signs occurring twice: plain Delta, %, crossed diamond (voor, I)",
+    "blocker": "open-codes",
+    "detail": "no value fits both occurrences; retried 2-3 Oct 2026"
    },
    {
-    "item": "two tokens under ink blots (p3 l12 crossed circle, P.S. sign after 'landig')",
+    "item": "nineteen signs occurring once (incl. X, &, + whose context-only values are counted unread)",
+    "blocker": "no-key-material",
+    "detail": "a single context cannot fix a word sign; none in R1892, no key sheet, not in print"
+   },
+   {
+    "item": "two tokens under ink blots (p3 l12, P.S.)",
     "blocker": "illegible",
     "detail": "the photocopy is blotted at both places"
    },

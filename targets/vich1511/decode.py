@@ -8,7 +8,7 @@ LET = {  # single symbols -> letters (homophones)
     '40': 'r', '4h': 'e', '3': 'e', 'ah': 'o', 'T': 'o', 'to': 'a', 'q': 'm', '7': 'a', 'b': 'a',
     'ch': 'c', 'c': 'l', 'oo': 'd', '11': 'n', 'X': 't', 'g': 't', 'P': 'p', 'SS': 'p', 'e': 'i',
     'Z': 'i', '8': 'y', 'B': 'b', 'd': 's', 'eh': 's', 'V': 'v', '3t': 'u', 'gh': 'f', '7o': 'll',
-    '9': 't', 'p': 'z', 'W': 'n', 'mt': 'p', 'tt': 'r', 'o': 'g', 'O': 'h', 'E': 'r',
+    '9': 't', 'p': 'z', 'q1': 'a', '11h': 'l', '6h': 'u', 'xt': 'e', 'A': 'd', 'bh': 'a', 'qto': 'l', 'B8': 'b', 'pi': 'm', 'W': 'n', 'mt': 'p', 'tt': 'r', 'o': 'g', 'O': 'h', 'E': 'r',
 }
 CODE = {  # code groups -> words / syllables
     'pef': 'que', 'diz': 'de', 'dih': 'con', 'fak': 'el', 'fem': 'es', 'fan': 'en', 'has': 'lo',
@@ -37,6 +37,22 @@ CODE = {  # code groups -> words / syllables
     'heg': 'haveys', 'hes': 'lugar', 'pic': 'potencia', 'gno': 'bien', 'mye': 'papa', 'dox': 'duque',
     'dux': 'duque', 'dur': 'duque', 'fax': 'franceses', 'fuq': 'francia', 'gub': 'armas', 'sat': 'uno',
     'set': 'una', 'ged': 'amistad', 'di': 'cardenal', 'plu': 'ni', 'far': 'dar',
+    # from N.41 (22 May 1510), aligned with its clerk decipherment (n41_align.tsv)
+    'poi': 'rey de francia', 'pum': 'roma', 'feo': 'florentines', 'hey': 'mantua', 'fof': 'embaxador',
+    'sno': 'venecianos', 'med': 'moros', 'gux': 'capitanes', 'hoh': 'hombre', 'haj': 'hombres de armas',
+    'may': 'mayo', 'pep': 'remedio', 'poy': 'secreto', 'fil': 'ellos', 'hio': 'junto', 'sim': 'tratado',
+    'seq': 'conviene', 'maf': 'mucha', 'sul': 'tambien', 'guy': 'aquellos', 'gil': 'algun', 'pif': 'quando',
+    'fon': 'estas', 'hol': 'justa', 'goo': 'brevemente', 'gug': 'autoridad', 'io': 'prudencia',
+    'man': 'necessidad', 'myr': 'mayor', 'sne': 'saber', 'oto': 'qu', 'Vh': 'ss', 'muk': 'no',
+    # from 8714 N.39 (13 May 1510) and N.12 (30 Sep 1508), aligned with their clerk decipherments
+    'plirt': 'ni', 'sol': 'todos', 'feb': 'hasta', 'mox': 'principes', 'gue': 'alla', 'gey': 'christianos',
+    'gem': 'avisad', 'mym': 'nuestra', 'gip': 'buena', 'gep': 'buen', 'pey': 'secreto', 'mom': 'ningun',
+    'rig': 'persona', 'sug': 'verdadero', 'sax': 'verdadera', 'moh': 'mandamiento', 'my': 'mal',
+    'mup': 'officio', 'pare': 'su', 'dof': 'creo', 'hin': 'infieles', 'hue': 'general', 'fns': 'fines',
+    'pyy': 'secretario', 'pak': 'aquella', 'mon': 'nuestro', 'dub': 'cardenal santa cruz', 'syg': 'suya',
+    'gu': 'assimismo', 'N': '.', '/': '.', '9to': '.',
+    # from the N.60 v2 re-transcription (5 Oct 2026), context forced over many occurrences (n60_v2_groups.tsv)
+    '&2': 'x', 'flort': 'liga', 'fiy': 'favor', 'fuy': 'exercito', 'mat': 'obligado',
     # from N.60 (1 Sep 1512)
     'mar': 'mil', 'das': 'ducado', 'gib': 'franceses', 'maq': 'otro', 'pio': 'rey', 'fer': 'dio',
     'sok': 'fiar', 'sum': 'tierra', 'hiz': 'mar', 'gih': 'dexar', 'fex': 'fe', 'mac': 'mil',

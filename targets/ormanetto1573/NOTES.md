@@ -1,9 +1,11 @@
-# Ormanetto 1573: copy of Philip II's letter to the nuncio, with two cipher passages. READ IN PART (key from outside, 1 Oct 2026)
+# Ormanetto 1573: copy of Philip II's letter to the nuncio, with two cipher passages. READ (key from outside, 1 Oct 2026; measured 98.0%, 5 Oct 2026)
 
 Catalogue item 259 (class C). ASV (AAV), Segreteria di Stato, Spagna 7 (DECODE "i. 1025, doss. 7"), ff. 303r–304r,
 address leaf f. 320v. DECODE R116 (Non-decrypted, 2 images + address leaf, transcription by KL, 18 Aug 2020).
 
-**Result (1 Oct 2026): read in part, about 90% (AJ's count of words, not re-measured here).** The two passages are Italian, in the Spain
+**Result (5 Oct 2026): read. 1,298 of 1,324 cipher tokens (98.0%) belong to words read as sense, measured with `measure.py` on the
+image-corrected `r116_cipher_v2.txt` (A 97.8%, B 98.4%; strictest variant 95.0%).** Six single-context code groups stay open. The
+1 Oct figure (about 90%) was AJ's count of words, not a measure; see "Image re-transcription and measure" below. The two passages are Italian, in the Spain
 nunciature's "cifra ordinaria", a key reconstructed by Ajaydas Devadas (AJ) with Claude and sent by email on 1 Oct 2026. The 21 Sept result
 (not read, no key, five keys ruled out) is kept below as the history; the reason it failed is in the next section.
 
@@ -48,10 +50,43 @@ be done on my part. I so desire the peace and quiet of all Italy and the service
 learned so far, nor has the Emperor informed me of the state of ..." (the passage ends). Context: Gregory XIII's league against the Turks, which collapsed when Venice made peace in 1573.
 Pitigliano (the Orsini county) has not been checked against 1573 sources.
 
+## Image re-transcription and measure (5 Oct 2026)
+
+**How the 0.90 was measured.** It was not: it was AJ's own count of words (112 of 139 non-code words ordinary Italian). Code groups
+were left out, nothing was counted per cipher token, and "ordinary Italian" was not checked for sense. `measure.py` now counts every
+cipher token (digits and the word-end strokes, 1,324) and credits a stroke-delimited word only if every piece is (a) a letter run that
+splits into words attested in Renaissance Italian (`lang/corpora` it-renaissance + it-nunziature, written as the cipher writes: no h, no
+doubled letters, u = v; one- and two-letter words from a closed list, three-letter words only if frequent), or (b) a code group with an
+adopted value, or (c) the final nulls. Words that a context guess would fill but other words would also fit count as unread. On DECODE's
+transcription unchanged it gives 1,248/1,324 (94.3%). Control (`measure_control.py`): 20 shuffled letter keys with the codes kept,
+mean 23.0%, max 32.9%.
+
+**Re-transcription.** The two scans were fetched at full resolution (2136x3075, `decode/`, git-ignored) and every unread stretch was
+re-read at 3-4x. Changes, in `r116_cipher_v2.txt`:
+
+| place | DECODE | scan | reading |
+|---|---|---|---|
+| f.303r l.1-2 | 6 0̇ 6 0̇ 7 0̇5 3 | same (dots over both zeros, checked) | writer's slip: one dot moved from 6 0 6̇ to 6 0̇ 6; *entri* ("perche entri nella nuova lega") |
+| f.303r l.4-5 | 30 4 0̇5 9 3 7̇ | 4 undotted (a later hand pencilled marks above) | writer's slip 4 for 4̇; *particular* |
+| f.303r l.8 | 7 0̇3 2̇ (dol) | a struck sign with a **dotted 7 written above** | 7̇ = c, *col Imperatore* |
+| f.303r l.14 | 6 6 4̇ 1 9̇ | the 4 is the stroke-4, no dot over it | *che si oferisce* |
+| f.304r l.3 | 3 ?̇ 4 60 | a dotted round sign lost in a paper hole | 0̇ by shape, 0̇4 = d: *desidera* (echoed by *io desidero* two lines on) |
+
+`particolari` + dotted 7 before *tutto quello* (f.304r) is read *particolar[mente]*: Meister p. 265 says a dot marks the nomenclator
+sign for *mente*.
+
+**Measure after the re-transcription:** A 739/756 (97.8%), B 559/568 (98.4%), **1,298/1,324 (98.0%)**. Strictest variant, with the
+single-context codes 62 *canto*, 48 *essere*, 4̇22 *perche*, 47/93 *tutta* and 3̇22 *Italia* also counted unread: 1,258/1,324 (95.0%).
+
+**Pooling the open codes.** 32, 2̇88, 84, 42 and 53 occur once each in R116 and not in R118's reading (`../ormanetto1576/`); no other
+text in this key is known. 3̇22 is *Italia* twice (after 47 and 93, *tutta*), but in *ogni occasione che sia [3̇22] alterarla* the sense
+wants *per*; left open.
+
 ## Remaining gaps
 
-- about fifteen code groups in A and B (32, 2̇88, 53, 4̇22, 62, 48, 84, 422, 47/93, 3̇22 and a few more) - blocker: open-codes; each occurs once or twice, with one context
-- five suspect signs (ofrti, pbrticular, desi?bera, dol, a stray 1 near the end of A) - blocker: open-codes; local slips by the encipherer or the transcriber, to check on ff. 303r-304r
+- 32 and 2̇88 in *se ben dal canto mio l'ho [32] de la buona [2̇88] havuta* (f.303r, 9 tokens) - blocker: open-codes; one context each, not in R118, no key sheet
+- 84 and 42 in *sara [84] che S.S.ta [42] dalla parte sua facia il medesimo* (f.303r, 8 tokens) - blocker: open-codes; *bene*/*ancora* fit, but so do other words, so counted unread
+- 3̇22 in *che sia [3̇22] alterarla* and 53 before *finora* (f.304r, 9 tokens) - blocker: open-codes; 3̇22 = *Italia* elsewhere, *per* wanted here; 53 reads *fi* as letters (a dittography before *finora*?) or a code
 
 ## Escalation
 
@@ -60,7 +95,8 @@ Pitigliano (the Orsini county) has not been checked against 1573 sources.
 - [x] known-keys: Lasry 1568, Meister V.8 and VI.1-3 all fail (21 Sept); the "cifra ordinaria" key now fits
 - [x] print: Olarra-Larramendi and Carini 1894 are not online; nothing found
 - [x] key-rebuild: AJ's key reproduced here; the open codes have no second context
-- [n/a] retry: no new key material; groups graded p/g stay as AJ graded them
+- [x] retry (5 Oct 2026): every unread stretch re-read on the full-resolution scans, five signs corrected (table above); 4̇22, 62, 48, 47/93, 3̇22 adopted from context and recurrence, 84, 42, 32, 2̇88, 53 left open; R118 pooled, none of the open codes occurs there
+- [x] measure (5 Oct 2026): `measure.py` per cipher token, attested-word lexicon, shuffled-key control; 98.0% (strictest 95.0%)
 
 ## History: 21 Sept 2026 (before the key)
 
@@ -174,4 +210,5 @@ Every step open from here was checked, and each is blocked by something outside 
 - `r116_cipher.txt` the ciphertext; `tok.py` reads DECODE's transcription, `units.py` builds the sign sets.
 - `key1.py` + `decrypt.py` Meister VI.1 test; `poly.py` Crivelli test; `polyanneal.py`, `pa3.py` polyphonic
   annealer; `fa.py` homophonic annealer with its control (`CTL=1`).
-- `decode/` (git-ignored): DECODE images, transcription, statistics, the Meister page scans.
+- `decode/` (git-ignored): DECODE images (`f303r.jpg`, `f304r.jpg` at full resolution, 5 Oct 2026), transcription, statistics, the Meister page scans.
+- `r116_cipher_v2.txt` the image-corrected ciphertext; `words.py` splits it at the strokes; `measure.py` the sense measure; `measure_control.py` its shuffled-key control.

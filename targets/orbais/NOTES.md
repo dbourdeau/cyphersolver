@@ -126,6 +126,25 @@ New values and what they give:
 Measured (`python decode62.py`): 91 cipher signs, **75 read as sense = 0.824** (before this session, the same count over
 the readings then in NOTES gave 47/91 = 0.516).
 
+## Session 5 Oct 2026: push toward 95%, image re-check and sense measure
+
+- **Measure check.** The old `decode62.py` counted a group as read from a hand-set flag (`READ`); it did not test sense.
+  It now also scores every group's reading (or, for unread groups, its letter-value decode) with `lang` model
+  `fr-1600-letters` (per-char score; threshold -4.0: sense readings score -0.03 to -3.3, random strings about -11).
+  The LM agrees with every hand flag: the 12 read groups pass, C (-6.8) and V2 (-4.5) fail. Fraction unchanged, **75/91 = 0.824**.
+  (The script also crashed on the cp1252 console; fixed with a utf-8 stdout.)
+- **Re-transcription at native resolution** (canvases 260/261, `img/c26x_full.jpg`, 2-4x crops):
+  - V2: the fifth sign has an inner mark like V1's dotted ⊡ (Cassin's ◻ is clean) -> **⊡ = r**. V2 now decodes
+    et-f-e-g-r-e. The ending "…gre" suggests "[à vostre] … gré", but n a æ give no sense ("et fe"); not counted.
+  - C: the sixth sign is the small hooked ʃ that fr. 4715 uses for y/ay ("+ v ʃ" = l'ay), not the jay code; the last sign
+    is the same ÷ as in V1 and Cassin; o = p (fr. 4715). C decodes v-o-p-a-e-y-s. "vos pays"/"vo[stre] païs" is close but
+    needs a missing s and e->i; a context guess, not counted.
+  - S1 Ƃ, S1 ʃ, G τ: viewed again; single code signs with no attested value anywhere available.
+- Lexicon search (lang/corpora) on ??egre, ???gre, vo?pa??s, ?o?a??s: nothing that fits both values and context.
+- Result: 95% is not reachable from the available material. Unread 16 signs = 3 code signs + C (7) + V2 (6); reaching
+  95% would need C and V2 both read, which needs the missing values of n, a, æ (in V2) and the C homophones from
+  fr. 3612 f. 9 (not digitised).
+
 ## Status
 
 **Read in part, 82% measured.** The letter's substance is in clear; the cipher runs now read:
@@ -137,8 +156,8 @@ depeschera … dedans deux jours **le doien**; **la protection**; Mons. **Cassin
 - S1 first sign `Ƃ` (subject of "depeschera": Sa Sainteté? il?) - blocker: open-codes; a single code sign, no entry in Tomokiyo's table and not on the aligned part of fr. 4715 f. 2
 - S1 last sign `ʃ` after "depeschera" - blocker: open-codes; the jay value does not fit here, one sign
 - G `τ` (after "Mr le") - blocker: open-codes; one code sign, sense probably "Cardinal", no key entry
-- C `φ tt o V æ ʃ° ÷` ("ce qui touche …") - blocker: no-key-material; known values give v-o-p-a-e-?-s, not sense; the missing values would come from fr. 3612 (not digitised)
-- V2 `n a æ η ◻ θ` ("à vostre …") - blocker: no-key-material; known values give et-f-e-g-n-e, not sense; same source missing
+- C `φ tt o V æ ʃ° ÷` ("ce qui touche …") - blocker: no-key-material; known values give v-o-p-a-e-y-s (5 Oct: ʃ° = y), not sense; the missing values would come from fr. 3612 (not digitised)
+- V2 `n a æ η ⊡ θ` ("à vostre …") - blocker: no-key-material; re-transcribed 5 Oct (⊡ not ◻), known values give et-f-e-g-r-e, not sense; same source missing
 
 ## Escalation
 
@@ -147,6 +166,7 @@ depeschera … dedans deux jours **le doien**; **la protection**; Mons. **Cassin
 - [x] known-keys: the three keys bound in fr. 3413 (nos. 53, 61, 69) tested, none fits; Tomokiyo's Nevers-Piles table used; Nevers-Pellevé and Nevers-Guise tables do not fit
 - [x] print: no edition of no. 62 found; Tomokiyo's cryptiana nevers.htm is the only discussion
 - [x] key-rebuild: key extended from fr. 4715 f. 2 and Tomokiyo; constrained word search (fr-gutenberg lexicon) over C, I, V2
+- [x] retry (5 Oct 2026): C and V2 re-transcribed at native resolution, LM sense measure added; still unread
 - [x] retry: every unread run (S1 ends, S2, C, G, H, I, V2) re-decoded with the extended key and regraded; S2, G, H and I now read. Still possible: a full sign-by-sign transcription of fr. 4715 f. 2 (lines 7, 9-11, 13, 16, 18, 21-29) might give τ, ʃ°, Ƃ or the n/a pair; fr. 3612 (not digitised) is the real key source
 
 Images: `img/` (git-ignored). Full-resolution pages `btv1b52510705j_f259-261_full.jpg`, `btv1b52509819x_f17/18_full.jpg`,

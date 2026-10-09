@@ -28,9 +28,9 @@
     "by": "llm from images",
     "source": "DECODE images IMG_R366_I3424-I3431, fetched with a saved DECODE session cookie",
     "image_quality": "good",
-    "notes": "Read directly from the images against the key; no separate symbol transcription file was produced. Cipher runs on pp. 1, 4, 5, 6, 7, about three pages in all."
+    "notes": "Read directly from the images against the key. First pass 21 Sept (read_A.md, read_B.md); second pass 5 Oct 2026 re-transcribed every open stretch from full-resolution crops; reading_full.txt holds the full plaintext of the ciphered passages (514 plaintext words, nulls removed). No separate symbol transcription file. Cipher runs on pp. 1, 4, 5, 6, 7."
    },
-   "read": "read in part"
+   "read": "read"
   }
  ],
  "system": {
@@ -79,9 +79,9 @@
    "claude-opus-5[1m]",
    "subagents for page-by-page reading"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-05"
  },
  "solution": [
   {
@@ -119,39 +119,71 @@
    "kind": "literature search",
    "what": "Looked for the letter in Austro-Turcica 1541-1552 via web search, the H-Net review and footnotes in Tracy, 'The Logic of Kleinkrieg' (AHY 2021) and Gürkan/Levantine Heritage papers. The edition is not online (no Google Books/HathiTrust full view found). Established only its neighbours: instructions for Malvezzi 24 Jan 1548 (reportedly no. 62), Ferdinand to Justus de Argento 13 Feb 1548 = no. 68, pp. 213-15. The 23 Jan letter's own number and text could not be seen, so the reading is neither confirmed nor corrected.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "statistics",
+   "what": "Checked the old 0.83 measure: a mark count over read_A/read_B (word counted read unless marked [?]); it did not test Latin sense and left out p. 1 cipher lines 1-8. Wrote reading_full.txt and measure_sense.py (shared 'la' model: word-form test plus 9-word window above the 2nd percentile of corpus windows; shuffled-letter control).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Re-transcribed from full-resolution crops all of p. 1's cipher (ll. 1-10), p. 4 l. 1, the sese/ulciscantur lines and the last line, p. 5 open words, p. 6 l. 14 and ll. 15-26, and all of p. 7.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Added the hand's variant sign values from the read pages: looped g-sign = d, stemmed circle with looped foot = q (before u) / r, footed Pi = g, P with small circle below = o, pointed cap = l. With them p. 7 and the p. 6 foot read straight through (magistrum horologiorum; de gentibus nostris in confiniis; captives freed by the Sultan).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Corrected 9 writer's slips forced by context (pacr->pacis, Turcrum, uiciscantur->ulciscantur, comutum->computum, factorum->facturum, expona->exponas, manutenea->manutenendam, faciam->faciamus, ordinaria). Left unread: the banker's surname after Gulielmo (signs give Semaslia, person not identified), one two-sign group before nominatione on p. 6, two lone v signs (probably uel).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "statistics",
+   "what": "measure_sense.py: p1 41/41, p4 114/114, p5 156/158, p6 134/136, p7 64/65; overall 509/514 = 0.990 (0.973 without the 9 slip-corrected words). Control with letters shuffled within words: 19/514 = 0.037 (code words only).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "The key is DECODE R367, a reconstruction filed at the same shelfmark (Military History Archive 1548/3), with a second copy R386; its sign values were calibrated on p. 1 and the cipher runs read from zoomed crops of R366.",
-  "contribution": ["transcription"],
-  "class": "read in part",
-  "fraction_read": 0.83,
+  "contribution": [
+   "transcription"
+  ],
+  "class": "read",
+  "fraction_read": 0.99,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "The substance is recovered: the French are working to break the Habsburg-Ottoman peace because they dare not attack Charles V directly; the Sultan and Ruestem Pasha are not to doubt Habsburg sincerity; and Malvezzi is granted 1,500 ducats a year, to be brought by a secretary. Short stretches on pp. 1 and 7 are unread. fraction_read 0.9 is an estimate: about 22 of 150 reading lines in read_A.md/read_B.md still carry [?] or [...] marks, concentrated on pp. 1, 6 foot and 7.",
+  "notes": "The substance is recovered in full: Ruestem Pasha's standing after the treaty; the French work to break the Habsburg-Ottoman peace because they dare not attack Charles V directly; Malvezzi's pay (2,800 + 1,500 ducats by Justus de Argento, a 3,000-ducat credit repayable at Venice); a master clockmaker to be brought by the secretary; what to answer about the frontier garrisons; and reciprocity for captives freed by the Sultan. Open: a banker's surname, one two-sign group, two lone v signs.",
   "gaps": [
    {
-    "item": "p. 1 ciphered passage, lines 1-4 (Rustanus conversation)",
-    "blocker": "not-attempted",
-    "detail": "read_A.md p1 l3-l4 still carry [?] and [...] groups; glyphs transcribed, no second pass with the R367 key recorded"
+    "item": "p. 5 l. 18, the banker's surname after Gulielmo",
+    "blocker": "no-key-material",
+    "detail": "every sign read (Semaslia); the person is not identified; Austro-Turcica 1541-1552 would name him"
    },
    {
-    "item": "p. 6 foot, last lines (what to say if Ruestem Pasha asks about the border)",
-    "blocker": "not-attempted",
-    "detail": "NOTES: \"partly unread\"; no further attempt recorded"
+    "item": "p. 6 l. 3, a two-sign group before nominatione",
+    "blocker": "illegible",
+    "detail": "e-sign + 8 fits no key value as written"
    },
    {
-    "item": "p. 7 ciphered passage on the captives, partly unread",
-    "blocker": "not-attempted",
-    "detail": "NOTES: \"partly read\"; read_A.md p7 lines still carry [?] groups"
+    "item": "p. 6 l. 24 and p. 7 l. 1, lone v signs between words",
+    "blocker": "no-key-material",
+    "detail": "v = f in the key; probably the clerk's mark for uel; not counted as read"
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "read_A.md + read_B.md (pp. 1, 4-7): per reading line, units = max(cipher word groups excluding declared nulls, plaintext words); words carrying [?], [..], [...] or ? counted unread: 442/530 = 0.83 (plain word count 443/521 = 0.85). Script measure_B_malvezzi.py (session scratchpad).",
+  "fraction_read_source": "measure_sense.py on reading_full.txt (5 Oct 2026): a plaintext word of the ciphered passages counts as read when it is marked read and, for non-code words, is a Latin word form under lang 'la' and its 9-word window scores above the 2nd percentile of corpus windows: 509/514 = 0.990 (p1 1.000, p4 1.000, p5 0.987, p6 0.985, p7 0.985); 0.973 without the 9 slip-corrected words. The earlier 0.83 was a [?]-mark count over read_A/read_B that omitted p. 1 ll. 1-8.",
   "key": "partial"
  }
 }

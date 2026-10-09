@@ -39,3 +39,5 @@ holes are his slips, not missing key entries.
 - **Erving to Madison, 10 Aug 1807**, M31 reel 12 frames 0362-0366: several pages of this code with no decode on the
   NARA copy. Erving wrote on 22 June 1807 that the department could not read some of his letters. This is the next target
   for a rebuilt Pinckney key; check first whether Founders prints a decode (99-01-02 series).
+  Done 4 Oct 2026 (outside contribution, PR #21): Founders prints it decoded (99-01-02-1993); the code was aligned
+  with that text and the key rebuilt, see [`../erving1807aug/`](../erving1807aug/).

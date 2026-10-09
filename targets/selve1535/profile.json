@@ -195,21 +195,55 @@
    "what": "fr. 3019 f. 97r (Rodez and Selve, 16 Nov 1536) opened: three short glossed runs in the same cipher; no occurrence of the open r8 name.",
    "result": "failed",
    "date": "2026-09-22"
+  },
+  {
+   "kind": "access",
+   "what": "5 Oct 2026: Gallica checked again for a newer (colour) digitisation of fr. 3091: only the film scan btv1b9060253s (105 views). Native views 27/28 re-fetched (8699x5866, 9037x5865 grey).",
+   "result": "failed",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "transcription",
+   "what": "5 Oct 2026: struck runs re-transcribed at native resolution, 1.6-2x crops: f. 25v T1 (x 2350-4150, y 1080-1230) and f. 25r C2 middle (x 5250-7900, y 4740-4900). The strike sits on the x-height of every sign; only the shapes already recorded (ses amis, et gran, avoit, amiablement, luy) separate; the rest are joined blobs. No new sign secured.",
+   "result": "failed",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "transcription",
+   "what": "5 Oct 2026: strike removal by a fitted strike line with vertical interpolation (img/destrike.py) on f. 25r C2: the fitted band also removes the sign bodies (they share the x-height); nothing new legible.",
+   "result": "failed",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "5 Oct 2026: C2 middle signs (W ɦ ‡ ot ω ot x z q ꝏ ot ‡ / ꝏ ʒ 7 ‡ ot ꝏ L 4 p / / ω ot) tested against gloss-led candidates (de ses maistres, grand credit, du Turc); none fits the recorded shapes; r8 'a pr[...]' retested with ∂ = a and ∂ɜ = r (a paie / a prevenu / a prié): no fit.",
+   "result": "failed",
+   "date": "2026-10-05"
+  },
+  {
+   "kind": "control",
+   "what": "5 Oct 2026: the old measure (stats.py) counts every sign with a key value, sense or not. New sense.py counts only signs inside French words (fr-1520s-diplomatic vocabulary + named persons/places) by best-coverage segmentation, runs under 4 letters not counted: R4232 98.5%, R3697 78.2%, both 89.9% (2230/2481), against 90.6% by signs.",
+   "result": "worked",
+   "date": "2026-10-05"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "Tomokiyo's key table for Selve's cipher (cryptiana francis.htm, rebuilt from fr. 3045 ff. 42-49, naming fr. 3091 f. 25 as the same cipher) was applied and extended with further homophones, the doubling nulls and a glossed name code; the decipherer's glosses served as cribs on the struck runs.",
-  "contribution": ["transcription", "key extended or corrected", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "catalogue correction"
+  ],
   "class": "read in part",
-  "fraction_read": 0.906,
+  "fraction_read": 0.899,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
    "key confirms",
    "historical consistency"
   ],
-  "notes": "R4232 read (99.1% of non-null signs); R3697 read in part (79.1%; 94.9% of the cipher not under the decipherer's strike). Both together 2248 of 2481 non-null signs.",
+  "notes": "R4232 read (98.5% of non-null signs as sense); R3697 read in part (78.2% as sense; the struck runs are blocked by the film scan). Both together 2230 of 2481 non-null signs read as sense.",
   "key": "recovered",
   "codes_open": {
    "open": 0,
@@ -249,6 +283,6 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "R3697_signs.txt and R4232_signs.txt counted by stats.py: 2248 of 2481 non-null cipher signs read (letters, the glossed name code and one numeral); ? counted as unread"
+  "fraction_read_source": "sense.py over R3697_signs.txt and R4232_signs.txt (5 Oct 2026): 2230 of 2481 non-null cipher signs sit in words read as French sense (R4232 1408/1430 = 98.5%, R3697 822/1051 = 78.2%). stats.py, which counts any sign with a key value, gives 90.6%."
  }
 }

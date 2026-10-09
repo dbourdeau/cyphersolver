@@ -4,7 +4,7 @@ ASV, i. 1025, Segretario di Stato, Francia, doss. 346.
 DECODE R74–R84 (eleven ciphertexts); the catalogue entry named five of them:
 R75, R77, R78, R82, R84.
 
-Status: read in part.
+Status: read (second pass 5 Oct 2026: 95.8% of cipher tokens measured, R75 96.2%, R84 95.3%; was 91.4%).
 
 ## What the catalogue expected, and what was actually there
 
@@ -188,16 +188,80 @@ That last clause is the point of the despatch, and it is new: the Roman reading
 of Lützen is that the danger is now a France held disunited and unable to help
 her allies.
 
+## Second pass, 5 Oct 2026: from 91.4% to 95.8%
+
+Measured with `measure.py` (tokens excluding separator `6` and `2x` nulls; unread =
+three-digit elements with no value in `cipher.NOMEN`, plus `?` noise digits that fit no
+code). Before: R75 0.914, R84 0.915, overall 0.914 (2 095 tokens, 180 unread). After:
+**R75 0.962, R84 0.953, overall 0.958** (2 085 tokens, 87 unread: 56 open elements, 31
+noise digits). The decoder's letters at a missed element still count as read here, as
+before; the independent check is the interlinear: letter agreement on the 24 controlled
+lines of R75 rose from **0.775 to 0.828**.
+
+What moved it, in order:
+
+1. **Images.** R75 I589/I590 and R84 I639/I640 fetched at full resolution (2809 x 3706,
+   `img/`, git-ignored). Both letters re-transcribed digit by digit against the DECODE
+   transcription (`r75.retrans.txt`, `r84.retrans.txt`, diffs in `*.retrans_diff.txt`).
+   DECODE's copy proved good: R75 3 lines / 5 digits changed, R84 7 lines / 7 digits. Gain
+   small (R84 +0.005), but four blotted or dropped digits in R84 l.5, 8, 10, 17 now read
+   ("pensieri torbidi", "di dividerla", "se vorà ridur").
+2. **One stream per letter** (`run2.py`). `run.py` decoded line by line, but codes run
+   across line ends (R75 l.28/29 `5|1` = f of "fortuna"; l.25/26 "biso|gna"), so each
+   wrap made `?` noise and spurious elements. 0.914 -> 0.931 with no new value.
+3. **Seventeen element values** (`cipher.py`, second `NOMEN.update`). The interlinear of
+   R75 was re-read at full resolution (`r75.interlinear.txt`), and every occurrence of each
+   code was pooled across Lasry's four letters and R75/R84 (`ctx.py <code>`):
+
+| code | value | evidence |
+|---|---|---|
+| `315` | **S.E.** (Richelieu) | interlinear 'S.E.' (l.12 'è tempo che S.E. cominci a conoscere'); 'già S.E. è arrivata a tal grado di gloria', 'manca alla gloria di S.E.', 'consideri ancora S.E. che la vittoria del Sueco…' |
+| `411` | **V.S.** | 'ricordando a ~', 'pure risposto ~ adequatamente', 'di ~ de ventitre', 'non so dir a ~ d'avantaggio', 'più deve ~ pensar' |
+| `938` | **Monsieur** (Gaston) | margin gloss 'Monsieur S.A.' at R75 l.21/22; 'la fuga di ~', 'accomodamento di ~ col fratello', 'torbidi di ~' |
+| `988` | **negotio** | 'il principal ~ commesso a V.S.', 'il ~ dell'accomodamento', 'quel ~ et indrizzato' |
+| `338` | **stato** | 'la Francia in ~ di dar legge', 'non so quanto sia ~ a proposito', 'lo ~ del negotio' |
+| `441` | **bene** | interlinear 'bin' ('se ~ si agiustano'); 'al publico ~ et alla quiete', 'stimarà ~ e gradirà' |
+| `481` | **però** | interlinear 'piro' (l.25); 'non si poteva ~ negare', 'non lascierà ~ di andar' |
+| `493` | **questa/o** | interlinear 'questa sola parte' (l.32); 'entrar in ~ cose', 'da ~ debolezza' |
+| `439` | **ancora** | interlinear (l.19, l.21 'ancora che') |
+| `470` | **hor** | interlinear 'hor mai' (l.14) |
+| `488` | **quale/i** | interlinear 'alla quale' (l.18); 'le cose sue, le quali in tempo di guerra' |
+| `857` | **Germania** | interlinear 'Germa' (l.21): 'alla Francia quanto alla ~' |
+| `334` | **Sueco** | interlinear 'del Sueco' (l.20) |
+| `104` | **Svedesi** | interlinear l.13, ending '…desi', first letters blotted (the image agent read 'Spagn.li'); Swedish context: 'Goto natione… sino al Mediterraneo' |
+| `129` | **Regno** | interlinear 'del Regno' (l.23) |
+| `454` | **grandi** | interlinear 'cose grandi' (l.14) |
+| `127` | **Imperiali** | interlinear 'a gli Imperiali' (l.15) |
+
+   0.931 -> 0.954. Then the decoder penalty for a code known from Lasry's letters but still
+   without a value was raised (`--unvalued=-5`): an unvalued element emitted a cheap space
+   and beat real letters, e.g. R75 l.7 `13 24 38 95 71 49 70 38 59` 'per assicurar' had
+   been read 'pera<957>mi<970>ar'. 0.954 -> 0.958 with the re-transcriptions.
+
+Content gained: the "S.E." of R75 is Richelieu. The letter tells Ceva to make the
+Cardinal see that the Swedish victory is "altrettanto formidabile alla Francia quanto
+alla Germania", that S.E. has reached such glory that he must fear fortune turning, and
+that the one glory he lacks is a war against the infidel. Monsieur "sarà sempre al
+medesimo, darà sempre orecchie a' torbidi".
+
+Failures and limits of this pass:
+
+* `491` (5 tokens): the interlinear plainly writes 'Goto' over it at l.16, but 'Goto'
+  fails 'animi a ~ unione', 'in ~ piazza', 'considerate ~ quel fratello' in Lasry's letters;
+  left open. `497` (3, often before 491), `998` (3, always before a stray `3` in R84),
+  `328` (3: 'per ~ interessi', 'a ~ hanno', 'compor ~ esterni') tried, no single value fits.
+* 31 noise digits remain, mostly at ink blots (R75 l.30, 31) and in R75 ll.15, 22, 23 where
+  the parse is still unsure; the image check did not change those digits.
+* The fraction counts letters emitted at an element the decoder missed as read, as the
+  first pass did; the 0.828 interlinear agreement is the honest bound on sense for R75.
+
 ## What is open
 
-* **The nomenclator.** 89 of the 95 elements Lasry met remain unread, plus 28 more
-  that appear only in R75 and R84 (21 and 7). The people and places of both
-  letters are inside them. A key for this dossier, if one survives in the ASV,
-  would close it at a stroke.
-* **The transcriptions are DECODE's, not re-checked against the images.** R75's
-  transcriber flagged doubtful digits throughout. Several stretches that read
-  badly here (`quzper cavsevc`, `l v osts sevom`) are more likely transcription
-  than decipherment. The images are R75 I589/I590 and R84 I639/I640.
+* **The nomenclator.** After the second pass 23 elements carry a value; 56 element
+  tokens of R75/R84 are still open (see Remaining gaps). A key for this dossier, if one
+  survives in the ASV, would close them at a stroke.
+* **Transcriptions** were re-checked against the images on 5 Oct 2026 (see Second pass);
+  the residual noise sits at ink blots.
 * **R74, R76, R79, R80, R81, R83** — the other six of the eleven — were read by
   Lasry and are not touched here.
 
@@ -214,19 +278,25 @@ her allies.
 | `eval.py` | leave-one-out calibration |
 | `control.py` | check against the 1632 interlinear |
 | `resolve.py` | nomenclator proposals from the interlinear |
-| `run.py` → `r75.read.txt`, `r84.read.txt` | the readings |
+| `run.py` → `r75.read.txt`, `r84.read.txt` | the first-pass readings (line by line) |
+| `img/` | full-resolution DECODE images (git-ignored) |
+| `r75.retrans.txt`, `r84.retrans.txt` (+ `_diff`) | re-transcription from the images, 5 Oct 2026 |
+| `r75.interlinear.txt` | the 1632 interlinear re-read at full resolution |
+| `ctx.py <code>` | every context of an element across the six letters |
+| `run2.py --unvalued=-5` → `r75/r84.read2.txt`, `.tokens2.json` | the second-pass readings, one stream per letter |
+| `measure.py` | fraction_read |
 
 ## Remaining gaps
 
-- 117 nomenclator elements of R75/R84 (89 of Lasry's 95 plus 28 new) - blocker: open-codes; people and places sit inside them; interlinear on R75 fixed 6; 491 contradicts its contexts
-- R75/R84 doubtful stretches - blocker: not-attempted; transcriptions are DECODE's and were not re-checked against images R75 I589/I590, R84 I639/I640
+- 56 nomenclator tokens of R75/R84 (491 x5, 497/998/328 x3, 494/128/450/110 x2, ~40 singletons) - blocker: open-codes; pooled across all six letters, no single value fits; interlinear only on R75 and illegible at most of them
+- 31 noise digits at ink blots (R75 l.30, 31) and unsure parses - blocker: illegible; checked against the full-resolution images 5 Oct 2026
 - dossier key with nomenclator - blocker: needs-physical-access; none on DECODE; would need the ASV
 
 ## Escalation
 
-- [x] siblings: all eleven records R74-R84 opened; Lasry key and four readings on them
-- [x] clear-pages: R75 interlinear 1632 decipherment used as control and to resolve 6 elements
-- [ ] known-keys: not done - other Barberini-period ASV nunciature keys on DECODE (e.g. Pallotto 1629 R215, Paris nunciature) not tried for the nomenclator
+- [x] siblings: all eleven records R74-R84 opened; Lasry key and four readings on them; every code pooled across the four letters + R75/R84 (ctx.py)
+- [x] clear-pages: R75 interlinear 1632 decipherment re-read at full resolution (r75.interlinear.txt); margin gloss 'Monsieur S.A.'; 17 elements fixed from it and from pooled contexts
+- [ ] known-keys: not done - other Barberini-period ASV nunciature keys on DECODE (e.g. Pallotto 1629 R215) not tried for the nomenclator
 - [ ] print: not done - Nuntiaturberichte / Acta Nuntiaturae Gallicae for Ceva 1632-34 not searched
-- [x] key-rebuild: LM beam decoder, interpolated in-domain model; alphabetical proposals (nomen_proposals.json)
-- [ ] retry: not done - re-check the transcriptions against the images and rerun with the six new elements
+- [x] key-rebuild: LM beam decoder, interpolated in-domain model; whole-letter streams (run2.py); unvalued-code penalty
+- [x] retry: both letters re-transcribed from the images (r75/r84.retrans.txt) and decoded again with the 23 values: 0.914 -> 0.958

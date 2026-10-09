@@ -14,7 +14,7 @@ B1 **il Fre[·]goso** (the fifth sign, `vt`, is a null)
 
 Clear: "li giorni passati con spada et cappa"
 
-B2-B5 **tolse fare la cosa de [? ·] en mai piu volse r [? ? ?] a le cose ben disposte in casa, e hara il f[?] da
+B2-B5 **tolse fare la cosa de [? ·] en mai piu volse ruina[r] le cose ben disposte in casa, e hara il f[?] da
 rovi[n]are, e ho una pratica di lei mi dispiacera.**
 
 - "de [?]en": the sign `a` occurs once (Fregoso's Genoa enterprise, "la cosa de Gen[ova]", would give `a` = g, but
@@ -72,4 +72,7 @@ dismissed Rangone over his complaints about a reduced pension (condottieridivent
 
 ## Measure
 
-264 cipher signs in the two letters. Unread: A1 2, A2 7, A6 12, B3 9, B4 2 = 32 signs; 232/264 = 87.9% read as sense.
+`python measure.py` (5 Oct 2026): 264 cipher signs; a sign is counted read only inside a corpus word. Unread: A1 2
+(y S), A2 1 (y), A6 12 ("?icon puorano"), B3 3 ("?en"), B4 1 ("f") = 19. A 134/149 = 89.9%, B 111/115 = 96.5%,
+overall 245/264 = 92.8%. B3 "r[c d 9]a" is now "ruina": d is the cursive theta (i), and ruina is the only corpus word
+of that shape; c = u and 9 = n are set by the word. The earlier 87.9% was a phrase-level hand count.

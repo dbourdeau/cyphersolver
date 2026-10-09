@@ -250,17 +250,39 @@
    "kind": "literature search",
    "what": "Web search for Łaski 1531, Zápolya letters to the Bavarian dukes, Augurelio, Acta Tomiciana",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Push-to-95% pass: every unread R9414/R9415 word set beside its raw decrypt (decrypt_v2, cp12/dec_*_new) and resolved only where the decrypt itself spells the word: R9414 'Lunden' (P1.34, the Archbishop of Lund, Charles V's negotiator with King John), 'feind' (P3.04), 'befelch' (P2.17), 'handstain' (P4.34, mining term); R9415 're', 'ea'. Remaining gaps not supported by the decrypt left unread.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Full-resolution re-transcription of every non-code R9414 gap (r9414/pass4.txt); accepted 'ist', 'auch er', 'wut', 'sag wan', 'seiner', 'red'; withdrew 'handstain'; found an unkeyed barred-d sign at five gaps and the Psi code at P1.18/P1.25",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "hypothesis",
+   "what": "Joint LM scoring (de-1500s) of the unkeyed barred-d sign over its five R9414 places, all letters and 23 digraphs/short words, plus the large Psi word sign (proposed 'Mt.'); siblings R9403, R9415, System B key and sperantio1534 checked for both signs",
+   "result": "failed"
   }
  ],
  "outcome": {
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "For R9415 and R9414 (the larger part of the text) the keys of two new homophonic systems were seeded from the contemporary interlinear glosses on each letter ('incrementum' on R9415 P1 l.3; R9414 P1 l.6-8) and completed by annealing and beam search; R9403 was read with the System B key rebuilt from glosses elsewhere in the same volume (kaa4591).",
-  "contribution": ["transcription", "key recovered", "sender or date identified"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
   "class": "read in part",
   "key": "recovered",
-  "fraction_read": 0.94,
+  "fraction_read": 0.946,
   "fraction_read_method": "measured",
-  "fraction_read_source": "words of the ciphered runs: r9403/decoded.txt 414/416, r9415/count.txt 386/405, r9414 count_v2.py reading_v3.txt 947/1037; [..]/? counted unread",
+  "fraction_read_source": "words of the ciphered runs: r9403/decoded.txt 414/416, r9415/count.py reading.txt 388/405, r9414 count_v2.py reading_v5.txt 958/1039 (1760/1860); [..]/? counted unread",
   "codes_open": {
    "open": 3,
    "total": 4,
@@ -270,7 +292,7 @@
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "R9403 and R9415 pass the read bar; R9414 is at 91.3%. Keys rebuilt for all three (G has ambiguous homophones).",
+  "notes": "R9403 and R9415 pass the read bar; R9414 is at 92.2%; overall 94.6%. Keys rebuilt for all three (G has ambiguous homophones).",
   "gaps": [
    {
     "item": "R9414 code signs Ψ, swash X, K (~10 words)",
@@ -282,12 +304,12 @@
     "blocker": "illegible"
    },
    {
-    "item": "R9414 legible unresolved words (~65)",
+    "item": "R9414 legible unresolved words (~55)",
     "blocker": "open-codes",
     "detail": "after three passes and gapfill.py"
    },
    {
-    "item": "R9415 19 unread or doubtful words",
+    "item": "R9415 17 unread or doubtful words",
     "blocker": "open-codes"
    },
    {

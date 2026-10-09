@@ -95,3 +95,22 @@ NOTES on confirmed values only). Valued by the key: 67% confirmed, 93% with prob
 venida*, at l. 12 and before *sobre lo de* on f. 334v are now read as nulls; the rest of l. 13-18 still fails on
 spelled words in an uncertain notation. A re-transcription from the image in the R9634 notation, and a better image of
 the faded copy on f. 335r, are the remaining moves.
+
+## 2026-10-03
+
+No change (61%). Its unread words return no lexicon match; the next move is a re-transcription from the image in the R9634 notation, and a better image of the f. 335r copy.
+
+## Re-transcription, 2026-10-03
+
+Re-transcribed f. 334r and the f. 334v runs from the images in the R9634 notation (`r9656_cipher.txt`; the old 1524-notation
+file is `r9656_cipher_1524notation.txt`), reading in `r9656_reading.tsv`. **177 of 225 tokens read as sense = 78.7%**
+(was 61.2%). Key coverage: 84% confirmed, 99% with probable.
+
+What the new notation fixed: the old `ʒ` was mostly `ɣ̊` (r); the `ω` closing l. 1 is a line-break hyphen, so `∠8 / ti zun`
+= ve-/ni-da; `∂6` is the opener `Ꮒ`. New readings: *no ~quiere el papa* (l. 4), *si vienen [..] que hara el papa* (l. 6),
+*me ha dicho* (l. 10), *~cree que lo ha [..] de perder* (l. 14), *que son la cosa del mundo que mas [..]* (l. 16), *de lo
+que ~truxiere* (l. 18), and on f. 334v, against the faded copy, *que esta muy sospechoso* (`z&∂⊃8ɣ3&∂m`, 10 for 10) *el
+papa que de alla* (`zub`) *se le haya mandado* (`ϯ74xHo9&`, 7 for 7) *lo que ha fecho*.
+
+Still unread: `ɲ4∠&ɣ̊ϑ` (l. 6), `∂ɡ∂∂8` (l. 9), `teɡ ∂ ϑ∠8ɣ̊oo` (l. 13), `ϙ8`, `8x&` (l. 14), `ϯ7∂∂` (l. 15), `ßϑ7`
+(l. 16), `30`, the tail of v. l. 1 (`8&ϑßɣ̊Ho4`, after *con-se-*), `∂∂8∂7` (*sobre lo de ...*). No lexicon match for any.

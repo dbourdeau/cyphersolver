@@ -25,15 +25,15 @@ decipherment of his cipher returns nothing. **This key has not been published.**
 
 | DECODE | 9/26 ff. | date 1522 | pp | DECODE status |
 |---|---|---|---|---|
-| R9634 | 14–16 | 13 Sept (Genoa) | 6 | Non-decrypted; **read in part 71%** (`read_r9634.md`, 2026-10-02) |
+| R9634 | 14–16 | 13 Sept (Genoa) | 6 | Non-decrypted; **read in part 73%** (`read_r9634.md`, 2026-10-02) |
 | R9644 | 237–243 | 1 Nov | 14 | **Decrypted** |
-| R9645 | 243–244 | Nov | 4 | Non-decrypted; **read in part 73%** (`read_r9645.md`, 2026-10-02) |
+| R9645 | 243–244 | Nov | 4 | Non-decrypted; **read in part 75%** (`read_r9645.md`, 2026-10-03) |
 | R9646 | 252 | [Nov] | 2 | Non-decrypted; **read in part 80%** (`read_r9646.md`) |
 | R9648 | 260–265 | 9 Nov | 12 | Non-decrypted |
 | R9649 | 266–268 | 9 Nov | 6 | Non-decrypted; **read 100%** from its own clear f. 268 (`read_r9649.md`) |
 | R9650 | 269–272 | — | 10 | **Decrypted** |
 | R9652 | 295–296 | Nov | 2 | Partially decrypted |
-| R9656 | 334–335 | 23 Nov | 4 | Non-decrypted; **read in part 61%** (`read_r9656.md`, regraded 2026-10-02) |
+| R9656 | 334–335 | 23 Nov | 4 | Non-decrypted; **read in part 79%** (`read_r9656.md`, re-transcribed 2026-10-03) |
 
 Images in `img/` (git-ignored; RAH material, fetched from DECODE 2026-09-20).
 
@@ -687,12 +687,54 @@ two of them: `read_r9646.md` and `read_r9649.md` already existed, from a session
 - The R9634 retry gained only two words (`xu` gente in 14v23, `yiL` hazer in 15r20): its remaining unread groups occur
   once and none of them recurs in R9645 or R9656 with a crib.
 
+## Push toward a full reading, 2026-10-03
+
+| letter | before (2026-10-02) | after (2026-10-03) |
+|---|---|---|
+| R9634 | 846/1191 = 71.0% | **872/1191 = 73.2%** |
+| R9645 | 358/489 = 73.2% | **368/489 = 75.3%** |
+| R9646 | 97/121 = 80% | **80%** (no change) |
+| R9649 | 89/89 = 100% | 100% |
+| R9656 | 131/214 = 61.2% | **177/225 = 78.7%** (re-transcribed from the image, below) |
+| all five, token-weighted | 1521/2104 = 72% | **1603/2115 = 76%** |
+
+What was tried, in order:
+- **Better images: blocked.** DECODE re-checked with the logged-in cookie on 2026-10-03: the full-size `IMG_R9634_I45360_P1.jpg`
+  (1,427,572 B, 3256 x 2365 for a two-page opening) is byte-identical to `img/`; `.png`, `.tif`, `ORIG_` and the
+  page-less name return the 5,244-byte not-found placeholder. The RAH Biblioteca Digital now sits behind an Anubis
+  proof-of-work bot check (`/.within.website/?redir=...`), which an automated session must not get past; a web search
+  finds Salazar genealogy records there but no hit for 9/26 or A-26. **Daniel has to look in a browser**: search *Salazar
+  y Castro A-26* or *9/26* and, if the volume is there, save ff. 14-16, 243-244, 252, 334-335 at full size into `img/`.
+- **Codes pooled** across R9634, R9645, R9646, R9656 and the 1523-24 letters (`../lopehurtado1523/decode_merged.py --kwic`).
+  Of the about 60 codes seen once, only `ze` (= el, four contexts), `zer` (= hazer), `yin` (= fue) and, weakly, `xer`
+  (mucho?) and `zif` (capitan?) recur anywhere. The rest occur nowhere else in 21 letters.
+- **Print cribs.** CSP Spain ii has no Hurtado letter for Sept-Nov 1522 (2026-09-21 search). Sanuto, *Diarii* t. XXXIII
+  (archive.org `idiariidimarinos33sanu`, full text grepped for Provenza, Lion, Adorno, Urtado): no report of an
+  Adorno/imperial plan to invade Provence in Sept 1522, so no crib for R9634. Not a word-level crib source.
+- **Spelled words by lexicon** (`wordmatch.py`, new): each sign is expanded to every letter it has been read as in this
+  hand (the 8/ϑ, ∂, ε, ɣ, 9 confusions included) and each expansion is looked up in a Spanish word list (Quijote,
+  Vasto memorias, Gutenberg Spanish). Hits are accepted only when the sentence also takes them: *sostener*, *tenia*,
+  *ser*, *vio*, *vivo* (R9634), *real*, *hara* (R9645). Nothing for R9646's or R9656's unread words.
+
+**Why 95% is out of reach from here.** Of the 319 R9634 tokens still unread, about 60 are codes that occur once in the
+whole corpus (no second context, no crib), and the rest are spelled words for which no expansion of the sign sets is a
+Spanish word, i.e. at least one sign is misread at DECODE's resolution. Both need an outside input: the RAH images
+(for the signs) or a clear copy / summary of these letters (for the codes). R9645 (f. 243r) and R9656 (ll. 13-18) are in
+the same position; R9656 also needs re-transcribing from the image in the R9634 notation.
+
+### R9656 re-transcribed (2026-10-03)
+
+f. 334r and the f. 334v runs re-read from the images in the R9634 notation (`r9656_cipher.txt`): **78.7%** read as sense
+(was 61.2%). The old `ʒ` was mostly `ɣ̊` = r, a "sign" closing l. 1 was a hyphen, and the f. 334v run now reads in full
+against the faded copy: *que esta muy sospechoso el papa que de alla* (`zub`) *se le haya mandado lo que ha fecho*.
+New values: `zub` = alla, `3` = h confirmed, `ʒ` = y and `⊤` = x probable. Details in `read_r9656.md`.
+
 ## Remaining gaps
 
-- R9645 (73% read): ze (3x), tec, ʃen, the spelled words of f.243r ll. 5, 8, 14, 17 and f.243v ll. 1, 7, 10 - blocker: no-key-material; f. 243r and upper f. 243v have no gloss, codes seen once
-- R9656 (61% read): ll. 13-18 of f. 334r and f. 334v l. 1, spelled words in the 1524-notation transcription - blocker: illegible; the f. 335r clear copy is legible only in its right half at DECODE resolution, and the spelled signs are at the scan's limit; RAH Biblioteca Digital blocked to automated requests
-- R9634 (71% read, retried 2026-10-02 against the R9645 values): about 45 code groups seen once (ʃe, xer, zud, zac, ʃum, ʇudd, yat, zub, ʃof, zif yin, xen, zer, car ʒa, xas zɣ, yul ...) and yel (4x), ɣ̊e (4x), ʃun, ʃud - blocker: no-key-material; no clear version in the record and none in CSP Spain ii; one context each
-- R9634 spelled words with every letter valued that give no word (14r12, 14v03 place names, 14v16, 15r11, 15v05, 15v12) and the force numerals of 15r05/15r09/15r10 - blocker: illegible; 8/ϑ (e/t), ∂ (s/p/t) and ε (l/g) not separable at DECODE resolution
+- R9645 (75% read): tec, ʃen, the spelled words of f.243r ll. 5, 8, 14, 17 and f.243v ll. 1, 7, 10 - blocker: no-key-material; f. 243r and upper f. 243v have no gloss, codes seen once
+- R9656 (79% read, re-transcribed 2026-10-03): ɲ4∠&ɣ̊ϑ (l. 6), ∂ɡ∂∂8 (l. 9), teɡ ∂ ϑ∠8ɣ̊oo (l. 13), ϙ8, 8x& (l. 14), ϯ7∂∂, ßϑ7, 30, f. 334v l. 1 tail, ∂∂8∂7 - blocker: illegible; no lexicon match under any reading of the signs; the f. 335r clear copy is legible only in its right half at DECODE resolution, and the spelled signs are at the scan's limit; RAH Biblioteca Digital blocked to automated requests
+- R9634 (73% read, retried 2026-10-02 and 2026-10-03; codes pooled over 21 letters, Sanuto XXXIII and CSP ii searched): about 40 code groups seen once (ʃe, xer, zud, zac, ʃum, ʇudd, yat, zub, ʃof, zif yin, xen, zer, car ʒa, xas zɣ, yul ...) and yel (4x), ɣ̊e (4x), ʃun, ʃud - blocker: no-key-material; no clear version in the record and none in CSP Spain ii; one context each
+- R9634 spelled words with every letter valued that give no word (14r12, 14v03 place names, 14v16, 15r11, 15v05, 15v12) and the force numerals of 15r05/15r09/15r10 - blocker: illegible; 8/ϑ (e/t), ∂ (s/p/t) and ε (l/g) not separable at DECODE resolution; no expansion of the sign sets is a Spanish word (wordmatch.py); DECODE has no larger file and the RAH Biblioteca Digital is behind a bot check (needs Daniel in a browser)
 - R9646 (80% read): ʙ∠89&Ho, zip (run 4); zob, δ8ǝtoo, ʃof, ʙ∠47 ɣ?8δHo (run 5) - blocker: no-key-material; no crib, codes seen once; one misvalued sign in each spelled word
 - Spelled runs in the ciphered leaves of R9644, R9648, R9650 (word-perfect edition) - blocker: illegible; same per-glyph limit; ten alphabet signs downgraded to probable
 - Nomenclator codes not yet met in the uncribbed letters - blocker: no-key-material; no clear version for them; roughly half the tokens resolve
@@ -701,7 +743,7 @@ two of them: `read_r9646.md` and `read_r9649.md` already existed, from a session
 
 - [x] siblings: all nine records opened; R9648 is R9644's duplicate; R9652 is wholly clear; R9649 carries its own clear (f. 268), R9656 a faded one (f. 335)
 - [x] clear-pages: R9644's clear (ff. 241-242, lettered sections), R9650 f. 272 and R9649 f. 268 aligned
-- [x] known-keys: the 1524 alphabet (targets/lopehurtado1523/key_1524.tsv, key_merged.tsv) applied back to R9656 f. 334 (2026-09-21) and to R9634, R9646, R9649 (2026-10-02); Juan Manuel's table (Tomokiyo 2025) still untested
-- [x] print: Bergenroth CSP Spain ii (archive.org bub_gb_ZoY9AAAAcAAJ, full text) searched 2026-09-21: Hurtado letters calendared for 1522 are nos. 416, 422 (6 June), 454, 455 (26-27 July) only; nothing from Sept-Nov 1522 (Salazar A. 26 appears once, for Sánchez no. 488). The nine records here are not in print, so there is no CSP crib for R9634 (13 Sept, Genoa) or R9646. Sessa's 20 Nov despatch (no. 502) is the nearest contemporary context
+- [x] known-keys (codes pooled over R9634, R9645, R9646, R9656 and the 21 letters of lopehurtado1523, 2026-10-03): the 1524 alphabet (targets/lopehurtado1523/key_1524.tsv, key_merged.tsv) applied back to R9656 f. 334 (2026-09-21) and to R9634, R9646, R9649 (2026-10-02); Juan Manuel's table (Tomokiyo 2025) still untested
+- [x] print: Bergenroth CSP Spain ii (archive.org bub_gb_ZoY9AAAAcAAJ, full text) searched 2026-09-21: Hurtado letters calendared for 1522 are nos. 416, 422 (6 June), 454, 455 (26-27 July) only; nothing from Sept-Nov 1522 (Salazar A. 26 appears once, for Sánchez no. 488). The nine records here are not in print, so there is no CSP crib for R9634 (13 Sept, Genoa) or R9646. Sessa's 20 Nov despatch (no. 502) is the nearest contemporary context. 2026-10-03: Sanuto, Diarii t. XXXIII (archive.org idiariidimarinos33sanu) grepped for Provenza/Lion/Adorno/Urtado: no report of the Sept 1522 Provence plan, no crib
 - [x] key-rebuild: crib alignment gave 49 confirmed code values and probable alphabet signs (key_codes.tsv), audited for conflicts; R9634 line-by-line reading added ɋ = r, plural z, yob/xep/xu and the null groups after Ꮒ (key_1522_r9634.tsv)
 - [x] retry: R9656 f. 334 re-read in 1524 notation (2026-09-21) and regraded with the nulls and R9634 values (61%, 2026-10-02); R9634 transcribed and read, its unread groups retried against the R9645 values (71%); R9646 retried (nulls, oviese; 80%); R9649 measured (100%); R9645 re-transcribed in the R9634 notation and regraded (73%), all 2026-10-02

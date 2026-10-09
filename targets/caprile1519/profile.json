@@ -427,6 +427,36 @@
    "kind": "crib",
    "what": "R1137 crib test (r1137_crib.py, ORDER 5, 20 restarts base, 4 windows x 3 restarts x 80k per word, word-level segmentation rerank): cribs custode, agria, alfonso, debito, buda, episcopato give anneal gains -57 to -348 (mean -169), six control words -49 to -363 (mean -172); best word score is a control. No crib lands.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "hypothesis",
+   "what": "R1139 '4 8 1 7' and '1 7' tested as letters with no prior (beam drops them) and as numerals ('gubernator de 4817', '17'): no date, sum or word fits; graded as code groups with no code list.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "statistics",
+   "what": "Look-alike sign tabulation over R1136, R1139, V1920, R1138, V1921 (lookalike21.py): CE = o (55/72), xp = q (6/6) accepted; c (o5 e4 c3), QB vs 8, AMP vs EL (EL p8 d7) show no consistent split; R1136 re-decoded with the union priors: no new phrase.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "crib",
+   "what": "Name and phrase cribs (namecrib21.py): Vestigia people (Dragfi, Batthyany, Montelini, Perenyi), offices, places and all of Somogyi's R1138/V1920 phrases against R1136/R1139 windows; only already-read words fit; no new placement.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "reading",
+   "what": "R1139 L08 'mi per Milan'; R1139 measured 89.7 % (453/505), R1136 66.9 % (378/565) of decoded letters inside claimed phrases (regrade21.py).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-03",
+   "kind": "statistics",
+   "what": "Pen-shape step (shapes21.py): blob segmentation aligned to tokens crops QB correctly in 13/31 cases, EL 1/8, 8 0/3; QB has two forms (figure-8, stem with cross-bar) but the LM value per occurrence does not follow the form; plain c is a distinct form with no consistent value; no shape class carries a value, so no re-decode; R1139 89.7 %, R1136 66.9 % unchanged.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -441,7 +471,7 @@
   "verification": [
    "historical consistency"
   ],
-  "notes": "Key verified by reproducing Somogyi's plaintext (90% of aligned signs). R1139 and R1136 read in part; R1128 and R1137 open. fraction_read estimated from the notes (R1139 and R1136 phrases only, R1137 fragments, R1128 unread; R1129-R1135, R1138 read by others), not measured. key partial: the 1520-21 sign key is rebuilt (89.6% on Somogyi's cribs) but R1128's two-tier system and R1137's numeric key are not. R1138 marked read (Somogyi 2025). V1921 (no. 12, not on DECODE) read 2 Oct 2026: 161/166 signs (97.0 %), read_v1921.md; lone o = h/u, oo = b, z+/x+ = q added to the key. Pass 3 (2 Oct 2026, pass3_r1136_r1139.md): R1139 83.8 %, R1136 59.4 % of decoded letters inside claimed phrases. Pass 4 (2 Oct 2026): R1136 66.9 %, R1139 88.7 %; R1128 factorised rebuild failed; R1137 crib test negative, transcription noise 14 %.",
+  "notes": "Key verified by reproducing Somogyi's plaintext (90% of aligned signs). R1139 and R1136 read in part; R1128 and R1137 open. fraction_read estimated from the notes (R1139 and R1136 phrases only, R1137 fragments, R1128 unread; R1129-R1135, R1138 read by others), not measured. key partial: the 1520-21 sign key is rebuilt (89.6% on Somogyi's cribs) but R1128's two-tier system and R1137's numeric key are not. R1138 marked read (Somogyi 2025). V1921 (no. 12, not on DECODE) read 2 Oct 2026: 161/166 signs (97.0 %), read_v1921.md; lone o = h/u, oo = b, z+/x+ = q added to the key. Pass 3 (2 Oct 2026, pass3_r1136_r1139.md): R1139 83.8 %, R1136 59.4 % of decoded letters inside claimed phrases. Pass 4 (2 Oct 2026): R1136 66.9 %, R1139 88.7 %; R1128 factorised rebuild failed; R1137 crib test negative, transcription noise 14 %. Pass 5 (3 Oct 2026): R1139 89.7 %, R1136 66.9 %; look-alike tabulation and crib tests in pass3_r1136_r1139.md.",
   "gaps": [
    {
     "item": "R1136 L01-L02 stain/blot (about 6 signs) and R1139 L10 end",
@@ -449,14 +479,19 @@
     "detail": "stain over the signs on the only image"
    },
    {
-    "item": "R1139 unread stretches (11 % of decoded letters)",
+    "item": "R1139 '4 8 1 7' (L01) and '1 7' (L02)",
+    "blocker": "open-codes",
+    "detail": "tested as letters and as numerals 3 Oct 2026; nothing fits; likely nomenclator codes, no code list"
+   },
+   {
+    "item": "R1139 unread stretches (10 % of decoded letters)",
     "blocker": "not-attempted",
-    "detail": "schema has no 'workable, left open' value: attempted 2 Oct 2026 but still workable here, no outside blocker applies; pass 4 88.7 %; open: numeral-like '4 8 1 7', '1 7' and short stretches"
+    "detail": "schema has no 'workable, left open' value: attempted 2 Oct 2026 but still workable here, no outside blocker applies; pass 4 88.7 %; open: numeral-like '4 8 1 7', '1 7' and short stretches; pass 5 89.7 %; '4 8 1 7' and '1 7' are code-like (no letter or numeral reading fits)"
    },
    {
     "item": "R1136 unread stretches (33 % of decoded letters)",
     "blocker": "not-attempted",
-    "detail": "schema has no 'workable, left open' value: attempted 2 Oct 2026 but still workable here, no outside blocker applies; pass 4 (second transcription) 66.9 %; limited by doubtful sign separations (c/CE/e, QB/8, AMP/EL, x/xp)"
+    "detail": "schema has no 'workable, left open' value: attempted 2 Oct 2026 but still workable here, no outside blocker applies; pass 4 (second transcription) 66.9 %; limited by doubtful sign separations (c/CE/e, QB/8, AMP/EL, x/xp); pass 5: look-alike tabulation accepts only CE = o and xp = q, c/QB/8/AMP/EL do not separate; name and Somogyi-phrase cribs add nothing"
    },
    {
     "item": "V1921, 5 of 166 signs",

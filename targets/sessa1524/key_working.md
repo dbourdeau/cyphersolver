@@ -355,3 +355,33 @@ reading and the triplicate (CSP Spain ii 636-638, csp/csp2_636_638.txt), which g
 | **nah** | **govierno** (tentative) | R9898 f.150r margin "el govierno de aqui adelante"; R9873 "assistir al nah de" Florence |
 Still open (single contexts, listed in read_r9873.md / read_r9898.md): about 120 groups in R9873 and 140 in R9898,
 most attested once (`xoc`, `qat`, `var`, `cas`, `bup`, `kal`, `pam`, `sur` the commonest).
+
+## Pass 17 (3 Oct 2026: open groups pooled across R9873, R9898 and R9660; apply_pass17.py)
+Concordance of every open group in r9873_cipher.txt, r9898_cipher.txt and ../sessa1523/reading_r9660.txt (read
+only): 84 groups occur in two or more letters. A value was taken only when it reads in every occurrence; all are
+**tentative** (no deciphered occurrence), and measure_read.py counts them as read, so both figures are reported.
+| cipher | value | occurrences that support it |
+|---|---|---|
+| cas | tiene (tien-) | 14: "y se cas por poner", "cas-n de tiempo no ... mill", "no cas-u el mas", "V.Md. cas al papa"; not checked in R9660's garbled lines |
+| boz | -io (also -cion) | 11: confirms pass 15 (*su-boz* = suyo) |
+| var | agora | 11: "var V.Md. lo ha llamado", "y var el datario lo aprueva", "var lo ha començado" |
+| rac | dize | 7: "el rap rac que dara", "rac-n que sabe" |
+| pam / Jir | paga | "a pam-do a", "no pam-s", "y pam-n-do", "de la Jir-s que se deven a los unos y a los otros" |
+| xoc | socorr- | "se xoc" (end of the postscript), "xoc-o ninguna para el sostenimiento" |
+| leg | mucho | "he bez con leg", "el papa ha sentido leg" |
+| sur / luc | parte | "por la sur francesa", "por esas luc-s ni por las de Inglaterra" (= *partes*, as on f. 86r in clear) |
+| len / lon | buen- | "es len-o assi para la conservacion", "seria mas lon-o", "de ningun-a natura de len-o" |
+| 3ar | aca | "de 3ar por traido", "todo lo de 3ar" |
+| yer | Florencia | "assistir al govierno de yer" (CSP 636 "Florence"), "con color de la platica" |
+| gig | quisie- | "si Su Sd. gig-se enderecar", "si mas se gig-re" |
+| nuf | gente | "disolver la nuf", "hiziesen nuf" |
+| Jam | llam- | confirms pass 15 |
+| lep (inside spelled words) | ni | "t-e-r-[lep]-a" (?), "a-[lep]-m-a" |
+| others, one context each | yeg antes, cer ten, fe fue, pus florentines, sir supli-, gal embia, kif Lombardia, gob ello, gul si, cox cobra, hut primer, ⅄r obligas-, ꝑan ex- | |
+Re-transcription at 1.5-1.6x: R9873 f.83r l.11 *p-u-e-r-e* is `nf b Ɉ 3 x dim` = *pudiesse* (the second sign is the
+hooked d). The other R9873 non-words (*b-r-i-l-i-a* f.82r l.2, *a-t-a-r-a-r*, *a-b-a-s-a-r-a-r*, *de-s-c-a-y-miento*)
+are transcribed as the image shows; they are clerk spellings or one wrong sign value, not misreadings. R9898 ff.
+150v-151r re-cut at 1.5x (crops y150v_*): the bleed-through does not resolve further; the sign shapes are as transcribed.
+Alphabetical bracketing tested: the attested values do not follow the code order (`cad` sobre, `cas` tiene, `cap` tem-,
+`cot` todo; `gap` que, `gat` esto, `gal` embia), so the code is not ordered and no bracketing applies.
+Strict figure (pass-17 values treated as open): R9873 87.8%, R9898 77.9%.

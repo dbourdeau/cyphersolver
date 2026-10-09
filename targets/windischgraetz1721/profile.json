@@ -117,24 +117,64 @@
    "kind": "hypothesis",
    "what": "Tried to fix open nomenclator codes (78, 103, 182, 205...) from context; none secure.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "access",
+   "what": "Fetched sibling records R5025-R5028 (16 images) with the project cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "sibling key",
+   "what": "Scanned all sibling cipher passages for interlinear glosses: 78=Compagnie, 103=Eugen (P.E./Eug.), 99=Engländer, 167=Graf Miosch confirmed; no gloss for the other 19 open codes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Re-transcribed every cipher line of P2-P5 at full resolution; 4 vs 5 told apart by the c-hook on 5; p5 '9 45 18' corrected to '9 24 18' (GETHAN). All else confirmed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "hypothesis",
+   "what": "Bracketed the 19 open codes in the alphabetical nomenclator against every context (182 nicht, 131 haben, 172 mit, 205 Rialp ...); proposals only, not counted as read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "control",
+   "what": "New measure.py: letter runs checked word by word and LM-scored (de-1740s); codes counted only with listed or glossed values. 155/181 = 0.856.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "Jakub Mirka's reconstructed key (2023) was attached as an xlsx to DECODE R5029 itself and was applied unchanged; every letter-spelled passage reads German at once.",
-  "contribution": ["transcription"],
+  "contribution": [
+   "transcription"
+  ],
   "class": "read in part",
   "gaps": [
-   {"item": "23 nomenclator codes (33 groups): 78, 99, 101, 102, 103, 111, 130, 131, 139, 146, 149, 151, 164, 167, 168, 172, 181, 182, 204, 205, 206, 209, 225", "blocker": "open-codes", "detail": "not in Mirka's key list or only guessed; no bracketing or context pass done"}
+   {
+    "item": "19 nomenclator codes (26 groups): 101, 102, 111, 130, 131, 139, 146, 149, 151, 164, 168, 172, 181, 182, 204, 205, 206, 209, 225",
+    "blocker": "open-codes",
+    "detail": "no gloss in siblings R5025-R5028; alphabetical bracketing gives proposals only; other brothers' letters in karton 202 not on DECODE"
+   }
   ],
-  "fraction_read": 0.82,
+  "fraction_read": 0.856,
   "fraction_read_method": "measured",
-  "fraction_read_source": "ct.txt vs key.tsv/dec.py codes: 181 cipher groups (122 letter, 59 code); 148 with a value, 33 code groups open (incl. 6 tokens of Mirka's guessed codes 99/103/151/167, counted unread)",
+  "fraction_read_source": "measure.py: 181 groups; 122 letter groups all read as German words; 33 of 59 code groups have a value (Mirka's list + sibling glosses 78/99/103/167); 26 code groups (19 codes) open. Tier-B bracket proposals would give 0.961 but are not counted.",
   "key": "partial",
-  "codes_open": {"open": 23, "total": 31, "tokens_open": 33},
+  "codes_open": {
+   "open": 19,
+   "total": 31,
+   "tokens_open": 26
+  },
   "grades": {
-   "H": 148,
-   "I": 33
+   "H": 155,
+   "I": 26
   },
   "verification": [
    "key confirms",
