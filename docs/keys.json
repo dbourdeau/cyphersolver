@@ -1,5 +1,11 @@
 {
  "keys": [
+  {"id": "k-r8727-f106", "label": "Add MS 72438 f. 106 lower graphic alphabet (DECODE R8727)", "kind": "DECODE key record", "by": "Contemporary royalist key sheet", "year": 1645, "note": "Filed among the keys taken in Digby's coach (Oct 1645); its lower alphabet is the key of f. 107 (R8728). Year approximate.", "image": {"src": "rupert_f106.jpg", "credit": "British Library, Add MS 72438 f. 106r, via DECODE R8727", "caption": "The two graphic alphabets of f. 106; the lower one deciphers f. 107", "page": "rupert.html#f107"}},
+  {"id": "k-r8655-118", "label": "Key 118, Ormond and Prince Rupert (DECODE R8655, Add MS 72438 ff. 59-60)", "kind": "DECODE key record", "by": "Royalist (Digby's coach)", "year": 1645, "note": "Letters 1-80, nulls 81-90, one-part words 91-434, letter+digit small words."},
+  {"id": "k-r8687-123", "label": "Key 123, the King with the Queen (DECODE R8687, Add MS 72438 ff. 67-68)", "kind": "DECODE key record", "by": "Royalist (Digby's coach)", "year": 1645, "note": "Letters 1-79, words to 575; R8723 is a decipherer's worksheet of it."},
+  {"id": "k-r8744-speedily", "label": "'To decypher speedily' key (DECODE R8743-R8745, Add MS 72438)", "kind": "DECODE key record", "by": "Parliament", "year": null, "note": "Words 200-487 reversed."},
+  {"id": "k-r8741-parliament", "label": "Parliament key (DECODE R8741, Add MS 72438)", "kind": "DECODE key record", "by": "Parliament", "year": null, "note": "Letters 10-72, nulls 1-9, 73-75, 776-779."},
+  {"id": "k-tomokiyo-royalist-1645", "label": "Tomokiyo, royalist keys 1644-45 (Charles I-Rupert-Digby-Ormond; Nicholas-Rupert)", "kind": "scholar's key", "by": "Satoshi Tomokiyo (Cryptiana)", "year": 1645, "note": "Ranges and partial tables from Cryptiana and his DECODE notes on R8430/R8432."},
   {"id": "k-zifra-prima-1578", "label": "Zifra Prima of the Council of Ten, per scriver / per trazer (DECODE R1789)", "kind": "DECODE key record", "by": "Council of Ten, Venice (Franceschi's register)", "year": 1578, "note": "ASVe CX Cifre b. 4 reg. 16 ff. 64-65: one-part nomenclator on base letters a c d f g h with figures 1-99, single letters, syllables, words, numerals and nulls mixed; 527 codes transcribed from the per trazer table (targets/ottobon/keys/zifra_prima_R1789.tsv).", "image": {"src": "ottobon_key.jpg", "credit": "Archivio di Stato di Venezia, Consiglio dei Dieci, Cifre, chiavi e scontri di cifra, b. 4 reg. 16 ff. 64-65, via DECODE R1789", "caption": "The head of the Zifra prima per trazer: a1 Baylo, a2 Barbaria ..., a51 ce, c71-c79 lu lo li le la ma me mi mo, d7 pa ...", "page": "ottobon"}},
   {"id": "k-r1790-golfo", "label": "Council of Ten cipher for the Gulf and Zara (DECODE R1790)", "kind": "DECODE key record", "by": "Council of Ten, Venice", "year": null, "note": "ASVe CX Cifre b. 4 reg. 16 f. 79: small cipher on bases c f m r (1-20), a dozen words on h; for the Captain in the Gulf, the Guardia against the Uskoks and the Rettori of Zara."},
   {"id": "k-brussels1635", "label": "Cardinal-Infante's Latin alphabet of 1635, rebuilt here", "kind": "rebuilt here", "by": "Daniel Bourdeau", "year": 1635, "note": "Homophonic Latin alphabet of numbers 0-39 and letters, two to five signs per letter; recovered by aligning DECODE R1889 with the Cardinal-Infante's draft R954 (Brussels SEA 540). targets/ferdinand3/work/key1889.json."},
@@ -1936,6 +1942,7 @@
   {"id": "k-brancoveanu-polish", "label": "Brancoveanu chancellery key for Polish letters (a=19, b=60 ...)", "kind": "scholar's key", "by": "A. Mares 1987; M. W. Kaczka 2012", "year": 1709, "found": 1987, "note": "Simple numerical substitution with a few word codes (900 = August, 800 = Turcy), used by Constantin Brancoveanu's and Constantin Cantacuzino's chancellery for letters to Sieniawski, 1709-1714; printed by Kaczka, Danubius XXX (2012), n. 21."}
  ],
  "links": [
+  {"key": "k-r8727-f106", "target": "rupert", "how": "adapted", "note": "f. 107 (R8728): lower alphabet unchanged, five unlisted homophones added; 122 of 128 words"},
   {"key": "k-zifra-prima-1578", "target": "ottobon", "how": "adapted", "note": "applied to the corrected transcription with two homophones the sheet lacks (d83 = a, c86 = o); 981 of 1,565 groups deciphered"},
   {"key": "k-brussels1635", "target": "ferdinand3", "how": "rebuilt from", "note": "recovered from the draft R954 aligned with R1889; 450 of 463 tokens give the draft's letter"},
   {"key": "k-brussels1635", "target": "ferdinand3", "how": "read unchanged", "note": "the 1635 alphabet applied unchanged to R1890 covers 424 of 784 tokens; the 1640 syllabary was built on it"},
@@ -3443,6 +3450,13 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-r8655-118", "target": "rupert", "note": "Letter table applied to f. 9 and Maurice 1645: no sense"},
+  {"key": "k-r8687-123", "target": "rupert", "note": "Applied to f. 9, f. 10 and f. 104: gibberish"},
+  {"key": "k-r8694", "target": "rupert", "note": "Mr Browne key: ranges fit f. 10, applied gives gibberish"},
+  {"key": "k-r8724-digby", "target": "rupert", "note": "Digby-Walsingham key applied to f. 9 and f. 10: gibberish"},
+  {"key": "k-r8744-speedily", "target": "rupert", "note": "Letter table applied to f. 9, f. 10, f. 104 and R8433: gibberish"},
+  {"key": "k-r8741-parliament", "target": "rupert", "note": "Applied to f. 104: nonsense"},
+  {"key": "k-tomokiyo-royalist-1645", "target": "rupert", "note": "Ranges do not fit Maurice 1645; the Nicholas-Rupert May 1645 fragment gives no sense on Maurice or f. 9"},
   {"key": "k-r1790-golfo", "target": "ottobon", "note": "different base letters (c f m r) and range; not the key of the 1589 letter"},
   {"key": "k-ernst-piccolomini", "target": "ferdinand3", "note": "does not fit R1889/R1890: their numbers run 0-54 with single letters and letter groups, a different system"},
   {"key": "k-r5256", "target": "superscript", "note": "Gilino R8572: same barred-letter family, but the syllable rows do not match"},
