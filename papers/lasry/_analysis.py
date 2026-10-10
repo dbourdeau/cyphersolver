@@ -77,7 +77,7 @@ def load():
         docs = [x for x in d['documents'] if isinstance(x, dict)]
         years = [x.get('year') for x in docs if isinstance(x.get('year'), int)]
         if years and not (YEAR_MIN <= min(years) <= YEAR_MAX): skipped.append(folder); continue
-        if cp.check(p.parent.relative_to(ROOT).as_posix(), quiet=True)[0] != 'valid': skipped.append(folder); continue
+        if cp.check(p.parent.relative_to(ROOT / 'targets').as_posix() if (ROOT / 'targets') in p.parents else p.parent.relative_to(ROOT).as_posix(), quiet=True)[0] != 'valid': skipped.append(folder); continue
         toks = [as_dict(x.get('length')).get('tokens') for x in docs]
         known = [t for t in toks if isinstance(t, int)]
         s, c, o = d['system'], d['conditions'], d['outcome']
