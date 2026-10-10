@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "target": "walsingham1581",
+ "title": "Walsingham's cipher enclosure to John Somer, 21 July 1581",
+ "documents": [
+  {
+   "id": "no50I",
+   "shelfmark": "TNA SP 53/11 no. 50I, folio 138 (DECODE R3839; R3840 is the neighbouring extracts)",
+   "date": "no later than 1581-07-21",
+   "language": "English",
+   "route": "intercepted in a letter of Mary, Queen of Scots; sent by Walsingham to John Somer(s) 21 July 1581",
+   "length": {
+    "tokens": 562,
+    "distinct": 78,
+    "unit": "symbols",
+    "measured": true,
+    "file": "SP53_11_50b.txt"
+   },
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Biermann and Lasry's 2023 solution, published by Tomokiyo on 16 Sept 2026 (cryptiana mary3.htm): opening and glyph key only; some symbols unidentified"
+   },
+   "year": 1581,
+   "country": "England",
+   "cleartext_in_document": "none",
+   "transcription": {
+    "by": "published",
+    "source": "Tomokiyo's glyph-label transcription SP53_11_50b.txt (cryptiana), checked against DECODE R3839 image 3 (f. 138)",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Solved by Norbert Biermann and George Lasry (2023); published by Satoshi Tomokiyo, cryptiana mary3.htm, 16 Sept 2026",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "published key",
+   "published reading",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "tools": [
+   "image inspection and segmentation",
+   "homophonic annealing diagnostic passes",
+   "source and calendar comparison"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-09-23",
+  "human_role": "Selected the target; supplied the DECODE login.",
+  "models": "unknown"
+ },
+ "solution": [
+  {
+   "date": "2026-09-23",
+   "kind": "literature search",
+   "what": "Located Tomokiyo's 16 September 2026 publication of Biermann and Lasry's 2023 solution and verified its opening and key against the manuscript.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "solver",
+   "what": "Compared key to manuscript and attempted numeric-label alignment and language-model solving. French 5-gram homophonic annealing (48 restarts x 10M) and English passes gave nonsense; no label-to-glyph concordance could be fixed from the short published opening.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "none",
+  "method": "read from existing decipherment",
+  "method_basis": "Biermann and Lasry solved the cipher in 2023 (published by Tomokiyo 16 Sept 2026); this work only located and checked the published opening and key against the manuscript.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "fraction_read": 0.09,
+  "verification": [
+   "key confirms"
+  ],
+  "notes": "Not a new solve. Published glyph key lacks a numeric-label concordance and leaves some signs unknown. Tracker should be corrected to remove Portugal/French attribution from the distinct L'Abbadia worksheet. Verified opening: \"The beirar is domestik servand to the erle of shrevisbvry\". fraction_read ~0.09 = share represented by the published ten-word opening (approximate). Identified the enclosure (R3839 f. 138) and separated it from the L'Abbadia material; checked the published opening; no extension.",
+  "first_break": false
+ },
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Graphic-sign cipher with letter signs, whole-word signs and nulls (Biermann-Lasry key as published by Tomokiyo).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 78,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown"
+ }
+}
