@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "rome1536",
- "title": "Charles Hémard de Denonville, cardinal de Mâcon, Rome and Orvieto to Anne de Montmorency, 1536-37 (BnF fr. 3053; DECODE R4233-R4248)",
+ "title": "Charles Hémard de Denonville, cardinal de Mâcon, Rome and Orvieto to Anne de Montmorency, 1536-37, in Mascon's cipher (BnF fr. 3053, DECODE R4233-R4247; BnF fr. 3071 no. 4)",
  "documents": [
   {
    "id": "R4233",
@@ -218,35 +218,33 @@
    }
   },
   {
-   "id": "R4248",
-   "read": "read",
-   "shelfmark": "BnF, Français 3053 f. 85 (decipherment f. 86)",
-   "date": "1536, no date on the crops",
-   "year": 1536,
+   "id": "macon1537",
+   "shelfmark": "BnF fr. 3071 no. 4, ff. 9-10 and slip f. 9bis (Gallica btv1b9060315f, views 16-19)",
+   "date": "11 Apr 1537",
+   "year": 1537,
    "country": "France",
-   "route": "Rome -> the French court",
+   "route": "Rome -> French court",
    "language": "French",
-   "pages": 3,
-   "cleartext_in_document": "mostly clear",
+   "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
      "separate folio"
     ],
-    "source": "contemporary clear decipherment on f. 86",
-    "partial": false
+    "source": "Slip f. 9bis: a contemporary decipherment of the f. 9v passage, found after the reading and matching it. Lasry also decoded the letter in 2023, unpublished.",
+    "partial": true
    },
    "length": {
-    "tokens": 20,
-    "unit": "symbols",
-    "measured": false,
-    "file": "R4248.md"
+    "tokens": "unknown",
+    "unit": "mixed",
+    "measured": false
    },
    "transcription": {
     "by": "llm from images",
-    "source": "DECODE page-crops",
-    "image_quality": "fair",
-    "notes": "A second, different fr. 3053 cipher; not Mâcon's key."
-   }
+    "source": "Gallica canvases 16-19; aliases in fr3071_no4/aliases/macon_9r_3-25.txt, macon_9r_26-34.txt, macon_9v.txt",
+    "image_quality": "good",
+    "notes": "About 45 lines mixed with clear text; roughly 840 cipher signs by the readers' counts (f. 9r ll. 3-25 ~190, ll. 26-34 ~190 with ~175 read, f. 9v ll. 1-16 ~463 all decoded). The alias files mix line labels, clear-text brackets and {code} groups, so no clean count was measured. Moved here from targets/gramont1529/ on 14 Oct 2026 (same key)."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -280,13 +278,13 @@
   "key_order": "random",
   "word_division": "none",
   "doubled_letters": "special sign",
-  "sibling_key": "'Mascon's cipher' as reconstructed by S. Tomokiyo from this volume and tabulated by G. Lasry (2023) for BnF fr. 3071 f. 9; used here, with corrections.",
-  "notes": "Code groups 20 = l'Empereur, 30 = pape, 40 = roy, and no others in any of the eight records. The barred-cross family of signs reads F, P, O, U, V and D in the same hand and is separable only by context; the big curly X is Q/U, not N, contrary to the working table. The f. 85 record (R4248) uses a second, unrelated fr. 3053 cipher."
+  "sibling_key": "'Mascon's cipher' as reconstructed by S. Tomokiyo from fr. 3053 and tabulated by G. Lasry (2023) for BnF fr. 3071 f. 9; working table macon_key.md (moved here from targets/gramont1529/), used with corrections.",
+  "notes": "Code groups 20 = l'Empereur, 30 = pape, 40 = roy, and no others in the seven fr. 3053 records or the fr. 3071 letter. The barred-cross family of signs reads F, P, O, U, V and D in the same hand and is separable only by context; the big curly X is Q/U, not N, contrary to the working table. distinct_symbols counts the fr. 3053 records. The f. 85 record (R4248) is in a second, unrelated fr. 3053 cipher and is its own entry since 14 Oct 2026 (targets/r4248/)."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Contemporary marginal and interlinear decipherments of some passages in the volume itself, and a full clear decipherment of the f. 85 cipher on f. 86. No printed or online plaintext: Tomokiyo and Lasry publish the key only.",
+   "where": "Contemporary marginal and interlinear decipherments of some fr. 3053 passages in the volume itself, and the slip f. 9bis deciphering the f. 9v passage of fr. 3071 no. 4. No printed or online plaintext: Tomokiyo and Lasry publish the key only. Lasry also decoded fr. 3071 no. 4 in 2023, unpublished (Lasry, 21 Sept 2026); no Lasry decipherment of the fr. 3053 letters is recorded.",
    "found": "during attempt",
    "used": true
   },
@@ -300,16 +298,47 @@
   "human_role": "nothing beyond setting the target; the DECODE session cookie already in the repository served the images",
   "tools": [
    "macon_decode.py (alias decoder)",
-   "PIL crops"
+   "PIL crops",
+   "pass5/shapedec.py"
   ],
   "models": [
    "claude-opus-5[1m]"
   ],
-  "sessions": 1,
-  "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "sessions": 3,
+  "first_date": "2026-09-18",
+  "last_date": "2026-10-14"
  },
  "solution": [
+  {
+   "date": "2026-09-18",
+   "kind": "transcription",
+   "what": "fr. 3071 no. 4: transcribed the Mâcon letter's cipher (f. 9r ll. 3-34, f. 9v) at glyph level into aliases, in parallel parts (fr3071_no4/aliases/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "key from source",
+   "what": "fr. 3071 no. 4: built macon_key.md from Lasry's table for fr. 3071 f. 9 and Tomokiyo's fr. 3053 tables, and applied it with macon_decode.py.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "reading",
+   "what": "fr. 3071 no. 4: read the cipher apart from short spots on f. 9r (about 90 % then; f. 9r ll. 26-34 ~175 of ~190 signs, f. 9v ll. 1-16 in full); identified the code numbers 20/30/40 = Empereur/pape/roy, absent from the published tables.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "verification",
+   "what": "fr. 3071 no. 4: the slip f. 9bis is a contemporary decipherment of the f. 9v passage and matches the reading made first almost word for word.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Correction from George Lasry: he decoded the fr. 3071 no. 4 letter (with the other three of catalogue item 6) in 2023 when reconstructing the key, unpublished; learned of after the reading and not used.",
+   "result": "worked"
+  },
   {
    "date": "2026-09-21",
    "kind": "literature search",
@@ -318,7 +347,11 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key matching", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
    "what": "Identified the catalogue's 'unknown sender' as the cardinal de Mâcon from Tomokiyo's description of the volume and from the clear signatures on R4239, R4240 and R4247",
    "result": "worked"
   },
@@ -360,12 +393,6 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
-   "what": "Found that the f. 85 cipher (R4248) is not Mâcon's but a second fr. 3053 cipher, deciphered in clear at the time on f. 86, and read the passage from that",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
    "kind": "reading",
    "what": "Third pass, two reading agents at a time: R4234 P8-P12 (~58 lines) and P16-P20 (~30 lines, P15 a clear copy of P16 used as crib), with the corrected glyph values",
    "result": "worked"
@@ -402,7 +429,11 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "statistics", "technique": ["beam/DP decoding", "language-model scoring"],
+   "kind": "statistics",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
    "what": "Segmented and clustered 1,262 glyphs by shape: the readers' single alias for the barred crosses is four or five distinct key signs (O, U/V, P, F, M); LM lattice decoding over old aliases cut CER 14.4% -> 9.2% on ground-truth lines",
    "result": "worked"
   },
@@ -414,7 +445,10 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "crib", "technique": ["crib testing"],
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
    "what": "Dupuy 44 companion letter transcribed as a content crib; confirmed 'Vitelle' at the end of R4235 passage D; its proposed 'que luy a fait faire' rejected by the signs",
    "result": "partial"
   },
@@ -435,12 +469,22 @@
    "kind": "reading",
    "what": "Pass-5 coverage: R4233 ~95%, R4234 ~94%, R4235 ~96.5%, R4238 ~94%, R4239 ~94%, R4240 ~98.5%, R4247 ~98%; R4247's 'faded' tail sharp on the Gallica scan; 'Lodes' = Lodi, not Rodez",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): R4248 (fr. 3053 f. 85, a second, unrelated cipher read from its contemporary decipherment on f. 86) moved to its own entry targets/r4248/; the cardinal's letter of 11 Apr 1537 (fr. 3071 no. 4, Mascon's cipher, read 18 Sept 2026 under gramont1529) moved here with its key files, so this entry holds every document read in Mascon's cipher."
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "'Mascon's cipher' was reconstructed from this very volume (fr. 3053) by Tomokiyo and tabulated by Lasry (2023, GL.htm); the project applied it (via targets/gramont1529/macon_key.md), corrected values from glossed lines in the volume, and read R4248 from the contemporary decipherment on f. 86.",
-  "contribution": ["transcription", "key extended or corrected", "sender or date identified"],
+  "method_basis": "'Mascon's cipher' was reconstructed from fr. 3053 by Tomokiyo and tabulated by Lasry (2023, GL.htm, for fr. 3071 f. 9); the project applied it through macon_key.md to the seven fr. 3053 records and the fr. 3071 no. 4 letter, and corrected values from glossed lines in the volume.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "sender or date identified"
+  ],
   "class": "read in part",
   "gaps": [
    {
@@ -462,11 +506,16 @@
     "item": "R4239 f38r L06-L07",
     "blocker": "illegible",
     "detail": "doubtful in the contemporary clear copy itself"
+   },
+   {
+    "item": "fr. 3071 no. 4: seven signs on f. 9r ll. 27-28, the word before 'puissance', the name group on f. 9r l. 8; clear text read loosely",
+    "blocker": "illegible",
+    "detail": "blot and odd signs on the Gallica scan; no gloss for f. 9r (the slip covers f. 9v only)"
    }
   ],
   "fraction_read": 0.95,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Letter-weighted after pass 5: R4233 1,904/2,006; R4234 ~0.94 of 5,369; R4235 2,035/2,108; R4238 767/812; R4239 ~0.94 of 4,925; R4240 829/842; R4247 3,098/3,140; R4248 via f. 86. Confident letters counted per line on the LM output; CER against contemporary clear copies 3-8% (mostly spelling variants).",
+  "fraction_read_source": "Letter-weighted after pass 5 on the fr. 3053 records: R4233 1,904/2,006; R4234 ~0.94 of 5,369; R4235 2,035/2,108; R4238 767/812; R4239 ~0.94 of 4,925; R4240 829/842; R4247 3,098/3,140. fr. 3071 no. 4 (about 840 signs, ~820 decoded by the readers' counts) does not move the figure. Confident letters counted per line on the LM output; CER against contemporary clear copies 3-8% (mostly spelling variants).",
   "key": "recovered",
   "codes_open": {
    "open": 1
@@ -475,11 +524,33 @@
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "About 95% of the cipher letters read after a shape-true re-transcription from the Gallica native scans (pass 5, 22 Sept 2026), checked against every contemporary clear text (CER 3-8%). Nothing is physically unreadable; the residue is ambiguous sign runs and names. R4248 resolved by the contemporary decipherment on f. 86. Key recovered (Tomokiyo/Lasry Mascon's cipher, corrected and split by sign shape).",
+  "notes": "About 95% of the cipher letters of the seven fr. 3053 records read after a shape-true re-transcription from the Gallica native scans (pass 5, 22 Sept 2026), checked against every contemporary clear text (CER 3-8%); the fr. 3071 no. 4 letter of 11 Apr 1537 read apart from short spots, its f. 9v passage confirmed by the contemporary slip f. 9bis. Nothing is physically unreadable in fr. 3053; the residue is ambiguous sign runs and names. Key recovered (Tomokiyo/Lasry Mascon's cipher, corrected and split by sign shape). R4248, in another cipher, is targets/r4248/.",
   "credits": [
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "reconstructed 'Mascon's cipher' from fr. 3053 and the second fr. 3053 table (cryptiana francis.htm)", "source": "cryptiana francis.htm"},
-    {"who": "lasry", "role": "key or decipherment used", "note": "re-tabulation of Mascon's cipher, table dated 05/11/2023 for BnF fr. 3071 f. 9, on Tomokiyo's GL.htm", "date": "2023-11-05", "source": "cryptiana GL.htm"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "f. 86 clear decipherment of f. 85 (R4248); clear copies and marginal/interlinear decipherments in the volume used as anchors"}
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "reconstructed 'Mascon's cipher' from fr. 3053 (cryptiana francis.htm)",
+    "source": "cryptiana francis.htm"
+   },
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "re-tabulation of Mascon's cipher, table dated 05/11/2023 for BnF fr. 3071 f. 9, on Tomokiyo's GL.htm",
+    "date": "2023-11-05",
+    "source": "cryptiana GL.htm"
+   },
+   {
+    "who": "lasry",
+    "role": "prior solution",
+    "note": "decoded the fr. 3071 no. 4 letter in 2023, never published (his correction of 21 Sept 2026); not the fr. 3053 records",
+    "date": "2023",
+    "published": false
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "clear copies and marginal/interlinear decipherments in fr. 3053 used as anchors; slip f. 9bis of fr. 3071 deciphers the f. 9v passage"
+   }
   ]
  }
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "target": "rakoczi1704",
-  "title": "Letters to and from Ferenc Rákóczi II, 1707–1711 (DECODE R483, R852, R912, R922; catalogue 44)",
+  "title": "Three French letters to Ferenc Rákóczi II, Danzig and Poland, 1706–1707 (DECODE R852, R912, R922; catalogue 44)",
   "documents": [
     {
       "id": "R922",
@@ -30,7 +30,8 @@
         "source": "DECODE images, MNL OL",
         "image_quality": "good",
         "notes": "Re-transcribed 21 Sept 2026; DECODE text transcription used as a cross-check only."
-      }
+      },
+      "read": "read"
     },
     {
       "id": "R852",
@@ -59,7 +60,8 @@
         "source": "DECODE images, MNL OL",
         "image_quality": "good",
         "notes": "Re-transcribed 21 Sept 2026; DECODE text transcription used as a cross-check only."
-      }
+      },
+      "read": "read"
     },
     {
       "id": "R912",
@@ -88,36 +90,8 @@
         "source": "DECODE images, MNL OL",
         "image_quality": "good",
         "notes": "Re-transcribed 21 Sept 2026; DECODE text transcription used as a cross-check only."
-      }
-    },
-    {
-      "id": "R483",
-      "shelfmark": "MNL OL P237 Festetics 10. d. 2. 42-44 (DECODE R483)",
-      "date": "27 June 1711",
-      "year": 1711,
-      "country": "Poland",
-      "route": "Ferenc Rakoczi II, Lwow -> unknown",
-      "language": "Latin",
-      "cleartext_in_document": "separate passages",
-      "plaintext": {
-        "location": [
-          "interlinear"
-        ],
-        "source": "Full contemporary interlinear decipherment; key rebuilt from it here."
       },
-      "length": {
-        "tokens": 2531,
-        "distinct": "unknown",
-        "unit": "code groups",
-        "measured": true,
-        "file": "tr/R483_p1.txt"
-      },
-      "transcription": {
-        "by": "llm from images",
-        "source": "DECODE images, MNL OL",
-        "image_quality": "good",
-        "notes": "Re-transcribed 21 Sept 2026; DECODE text transcription used as a cross-check only."
-      }
+      "read": "read"
     }
   ],
   "system": {
@@ -151,7 +125,7 @@
     "key_order": "partly alphabetical",
     "word_division": "partial",
     "sibling_key": "DECODE R639 / Fasc. 44/08",
-    "notes": "R852/R912/R922: key DECODE R639 headed De Monsieur de Bonac et Graffei. R483 uses a different, unrebuilt Latin key (values to ~800)."
+    "notes": "R852/R912/R922: key DECODE R639 headed De Monsieur de Bonac et Graffei; R852 uses an earlier issue of the table (same letters and syllables, different word codes). The Latin letter R483, once filed here, is in another key and is now rakoczi1711."
   },
   "conditions": {
     "prior_solution": {
@@ -208,13 +182,10 @@
     },
     {
       "date": "2026-09-21",
-      "kind": "reading",
-      "what": "R483 found fully deciphered interlinearly at the time (Lwow, 27 June 1711, siege of Munkacs); key not rebuilt.",
-      "result": "partial"
-    },
-    {
-      "date": "2026-09-21",
-      "kind": "hypothesis", "technique": ["contextual inference"],
+      "kind": "hypothesis",
+      "technique": [
+        "contextual inference"
+      ],
       "what": "Direction reversed for R852/R912/R922: Rakoczi is the recipient; R852 names Groffey in the third person.",
       "result": "worked"
     },
@@ -243,12 +214,6 @@
       "result": "worked"
     },
     {
-      "date": "2026-09-21",
-      "kind": "solver", "technique": ["EM alignment", "key matching", "plaintext matching"],
-      "what": "Rebuilt the R483 syllabic key by hard-EM alignment of 168 cipher lines with the interlinear: 224 codes; key reproduces 70% of the clerk letters.",
-      "result": "partial"
-    },
-    {
       "date": "2026-09-30",
       "kind": "verification",
       "what": "Extent of the contemporary interlinear decipherment established from DECODE's transcriptions (PLAINTEXT lines: 29 on R912 p. 1, 5 on p. 2, 2 on p. 3; 2 on R922 p. 1) and the images: R912 about 780 of 1,630 groups (page 1 all but 54 groups), R922 37 of 722. About 820 of the 2,352 groups keyed with R639 were therefore deciphered at the time; the rest of R912 pp. 2-3, three lines of p. 1 and R922 after line 2 were read only here. The earlier write-up had mentioned an interlinear only for R483.",
@@ -259,14 +224,25 @@
       "kind": "reading",
       "what": "The three uninterlined lines of R912 p. 1 read with R639 after checking every group on the image and the key sheet: 'ni perdre de veue les affaires generales de l'Europe. Aussy publie-t-on comme une chose presque certaine qu'il n'entrera en Moschovie que la campagne qui vient'. Transcription corrected from the image (327? for 329 = pu, 87? for 57 = U, 589 for 509); M readings: veue (426 as ue), presque (343 as pres-), campagne (58 ns for 88 M), vient (534 Vienne + T). R912 keyed 1,585/1,630 (was 1,586).",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): the Latin letter R483, in Rakoczi's own syllabary with its interlinear decipherment, moved to rakoczi1711. This entry keeps R852, R912 and R922 in the R639 table; grades and fraction recomputed on R912+R922.",
+      "result": "worked"
     }
   ],
   "outcome": {
     "method": "read after matching with key from external sources",
-    "method_basis": "R912 and R922 were read with the Bonac-Groffey key DECODE R639 (G15 Fasc. 44/08), which the project had matched to this correspondence by scoring the NAH G15 keys in rakoczi1707 and corrected here from the key image; R852 was read from its own clear copy, and R483 carries a full contemporary interlinear decipherment from which a 224-code key was rebuilt.",
-    "contribution": ["transcription", "key extended or corrected", "key recovered", "sender or date identified", "catalogue correction"],
+    "method_basis": "R912 and R922 were read with the Bonac-Groffey key DECODE R639 (G15 Fasc. 44/08), which the project had matched to this correspondence by scoring the NAH G15 keys in rakoczi1707 and corrected here from the key image; R852, in an earlier issue of the same table, was read from its own clear copy.",
+    "contribution": [
+      "transcription",
+      "key extended or corrected",
+      "sender or date identified",
+      "catalogue correction"
+    ],
     "class": "read",
-    "fraction_read": 0.95,
+    "fraction_read": 0.974,
     "grades": {
       "H": 2290,
       "C": 0,
@@ -279,9 +255,16 @@
       "contemporary decipherment",
       "historical consistency"
     ],
-    "notes": "French: R912/R922 97% of groups keyed from image transcriptions (R639 corrected), R852 read from its clear copy. R483: read at the time (interlinear); key rebuilt from it here (224 codes, 70% letter agreement). Grades count R912+R922 groups.",
+    "notes": "R912/R922 97.4% of groups keyed from image transcriptions (R639 corrected); about 820 of them were already deciphered between the lines at the time. R852 read from its clear copy. Grades count R912+R922 groups. The Latin letter R483 (another key) was split off to rakoczi1711 on 14 Oct 2026.",
     "credits": [
-      {"who": "contemporary", "role": "key or decipherment used", "note": "Bonac-Groffey key sheet (DECODE R639, G15 Fasc. 44/08); R852's clear copy; R483 interlinear decipherment (key rebuilt from it); R912/R922 partial interlinears"}
-    ]
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "Bonac-Groffey key sheet (DECODE R639, G15 Fasc. 44/08); R852's clear copy; R912/R922 partial interlinears"
+      }
+    ],
+    "key": "recovered",
+    "fraction_read_method": "measured",
+    "fraction_read_source": "targets/rakoczi1704/R912_image_read.txt and R922_image_read.txt (decode_tr.py on tr/): 2,290 of 2,352 code groups keyed; R852 read from its clear copy (R852_clear.txt), not counted."
   }
 }

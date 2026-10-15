@@ -2,9 +2,17 @@
 
 Catalogue no. 19 (priority 5.0, class B). Opened 19 Sept 2026.
 
-Status: in progress (5 Oct 2026: every cipher line of all four letters re-transcribed and scored for sense in `sense.tsv`: 92.5% of nos. 45/79/47, 37.5% of no. 68, 75.3% overall; sections 9-10). Read in part (see section 8). Both keys recovered - including the office's own key at BnF fr. 3995
-f. 97 - all four leaves located on the images, and all four read line by line, with a scatter of groups and
-the Feria-Mansfeld nomenclature still open. Written up as `docs/sessa1593.html`.
+Status: read in part (5 Oct 2026, rerun 14 Oct 2026: every cipher line of the three letters re-transcribed and scored for
+sense in `sense.tsv`: 1212 of 1310 groups, 92.5% of nos. 45/79/47; sections 9). The office's own key (BnF fr. 3995
+f. 97) recovered, all three leaves located on the images and read line by line, with a scatter of code groups still
+open. Written up as `docs/sessa1593.html`.
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): the fourth letter of catalogue item 19,
+fr. 3984 no. 68 (Diego de Ibarra, Paris, 10 Jul 1593), is in the Feria-Mansfeld cipher, not the office cipher, and
+is now [`targets/ibarra1593/`](../ibarra1593/NOTES.md) (a different cipher, with its own page). Its files (`ct68.txt`,
+`keyM.tsv`, `dec68.py`, `decodeM.py`, `anneal68.py`, `fill68.py`, `fill68.json`, `reading68.md`) and its rows of
+`sense.tsv` (now `../ibarra1593/sense68.tsv`) moved there; the sections below keep their history, and section 10 is a
+pointer. The earlier pooled figures (75.3% of all four) are superseded.
 
 ## 1. The keys were already published — as images
 
@@ -294,46 +302,20 @@ Santidad le respondio ...*
 se ri as ...* - syllables, no Spanish, as on ll. 7-10. Tomokiyo's table does not give continuous text on the body;
 ll. 12-31 not transcribed. Token count estimated (28 lines x ~22).
 
-## 10. no. 68 transcribed in full and the Feria-Mansfeld key tested ciphertext-only (5 Oct 2026)
+## 10. no. 68: moved to ibarra1593
 
-All cipher lines of f. 145 transcribed from the 3600-px crop to `ct68.txt`: **20 cipher lines (ll. 4-23; ll. 1-3 are
-clear), 598 groups**, counted (the 620 of section 9 was an estimate from a wrong line count). Diacritics dropped.
-`dec68.py` decodes with `keyM.tsv`.
-
-**The earlier verdict was wrong.** On a full transcription Tomokiyo's table *does* give Spanish: *a mi no me parece que
-puede*, *se [ha] de poner todo lo que se puede*, *lo que podemos*, *aliento, y si ella apareciera, y palabra*, *no
-estamos desesperados*, *peligro*, *espero*, *de acudir a lo que esta*, *supuesto e numero*, *pareceria que venia a
-ayudar ... y la cavalleria*, *no seria fuera de*, *a lo menos no parece sino*. Lines 7-10 had read badly in the
-19 Sept pass because their transcription was truncated.
-
-**Control** (`anneal68.py`, es-golden-age 5-gram, no spaces): keyM scores **-2.500** per character; 200 keys with
-keyM's values shuffled among the numbers score at most **-3.378** (mean -3.805). The key is real.
-
-**Rebuild:** an unconstrained hill-climb over all numbers collapses onto *que* (homophone collapse, score -1.59 but
-nonsense) and was rejected. Constrained fill of the numbers missing from keyM (`fill68.py`): **57 = li** is top of
-all candidates with a gain far above the median (3 occurrences: *peligro*, *aliento*) and is accepted (`fill68.json`).
-64 (9 occurrences; *ha* by context: *se ha de poner*, *ha de acudir*) is not separated by the LM (na -2.549, ha
--2.569) and stays unread. 31, 77, 81, 95, 200T, 800T: no candidate stands out. Cribs: *Paris* and *Su Magestad* are
-in clear on the leaf; *Feria*, *Mansfeld*, *Liga* fit no syllable run, so they would sit in the open three-letter
-codes (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...), which no crib fixes.
-
-**Retry of nos. 45/79/47:** 57 = li belongs to the Mansfeld cipher, not to the 1592-93 office key, so it gives nothing
-there; no new office-key value came out, and the ~75 doubtful groups stand.
-
-| | before | after |
-|---|---|---|
-| no. 68 | ~12/620 = 0.02 (estimate) | **224/598 = 0.375** (measured) |
-| all four | 1224/1930 = 0.634 | **1436/1908 = 0.753** |
+The full transcription of no. 68, the shuffled-key control of Tomokiyo's Feria-Mansfeld table, the constrained fill
+(57 = li) and the sense count (224/598) are in `../ibarra1593/NOTES.md`. The retry of nos. 45/79/47 with that value
+gave nothing: 57 = li belongs to the Mansfeld cipher, not to the 1592-93 office key, and the ~75 doubtful groups stand.
 
 ## Remaining gaps
-- no. 68, f. 145: 374 of 598 groups unread - blocker: no-key-material; the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere, fr. 3995 f. 101 is Italian and no crib fixes it; the numbers 64, 31, 77, 81, 95 are not separated by the LM control; the diacritic finals dropped in ct68.txt are still to be added from the image
 - nos. 45, 79, 47: 22 code groups not on the f. 97 sheet (Val, ral, ʃep, ner, ʒe, pir, mil, is, xom, mal, rili, mos, ʃer, hir, hum, us, ho, yos, ∂ir, lir, xox, ru) - blocker: no-key-material; sheet re-read 5 Oct for them, each occurs once or twice
 - nos. 45, 79, 47: about 75 syllable groups of doubtful reading (slips, ambiguous hooks), listed per line in sense.tsv - blocker: open-codes
 
 ## Escalation
 - [x] siblings: fr. 3995 ff. 94, 96, 98, 101 opened next to the key; no. 47 used as the crib for the others; open codes pooled across the three letters (xor, pal, ʃo, 4̈9 solved jointly)
-- [x] clear-pages: no. 47's interlinear decipherment used for ll. 1-4; no. 68's clear opening read
+- [x] clear-pages: no. 47's interlinear decipherment used for ll. 1-4
 - [x] known-keys: Tomokiyo 1592-93, Feria-Mansfeld, Ibarra-Doria, Ibarra-Zuniga keys; DECODE R4076/R4077 = fr. 3995 ff. 94-97
 - [x] print: Tomokiyo spanish3.htm; BnF notices for fr. 3983/3984
-- [x] key-rebuild: f. 97 re-read 2 Oct and again 5 Oct (de, Su Santidad, V.M., nulls, assi); the Feria-Mansfeld key of no. 68 tested ciphertext-only against a shuffled control and filled where the LM separates a value (57 = li); section 10
-- [x] retry: every line of nos. 45, 79, 47 re-transcribed from the images and re-read with the extended key (5 Oct, sense.tsv); no. 68 transcribed in full (ct68.txt) and decoded with keyM + 57 = li
+- [x] key-rebuild: f. 97 re-read 2 Oct and again 5 Oct (de, Su Santidad, V.M., nulls, assi); open codes pooled across the three letters
+- [x] retry: every line of nos. 45, 79, 47 re-transcribed from the images and re-read with the extended key (5 Oct, sense.tsv); rerun 14 Oct 2026 without no. 68: 1212/1310

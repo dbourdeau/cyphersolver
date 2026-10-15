@@ -1,0 +1,159 @@
+{
+ "schema_version": 1,
+ "target": "waddall1656",
+ "title": "Jo. Waddall (London) to 'Vanyeare' at Bruges, 22 Aug 1656 (Thurloe State Papers v.337)",
+ "documents": [
+  {
+   "id": "d-waddall-1656",
+   "read": "not read",
+   "shelfmark": "Bodleian Rawlinson A vol. xli p. 642; printed TSP v.337",
+   "date": "22 Aug 1656",
+   "year": 1656,
+   "country": "unknown",
+   "route": "London -> Bruges (Jo. Waddall to 'Vanyeare')",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 50,
+    "distinct": 29,
+    "unit": "code groups",
+    "measured": true,
+    "file": "d_waddall_1656.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Birch, Thurloe State Papers (1742) via British History Online",
+    "image_quality": "no images",
+    "notes": "Measured with --digits, skipping all but the four cipher lines. Letters 7-86 plus codes 226 243."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic figures 7-86 for letters with two code groups (243 226), 50 groups in a clear English letter.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "spaces"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 2,
+   "kinds": "unknown",
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Every 1653-60 royalist and Commonwealth key on cryptiana (Marshall, Barwick-Hyde, Stamford, Butler, Charles II intercepted, Kingston, Westrope, Hague agent/Blake) tried; none fits.",
+  "notes": "NOTES read (d) as homophonic letters plus codes 226 243: 29 distinct symbols in 50 groups. Split on 14 Oct 2026 from the four-piece thurloe entry."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Listed as undeciphered by Tomokiyo (cryptiana item #9); Birch's transcriptions are the only online witness and carry no decipherment.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "cleartext context",
+   "published key"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "unknown",
+  "tools": [
+   "apply_keys.py (period keys scored by quadgram LM)"
+  ],
+  "models": "unknown",
+  "sessions": 1,
+  "first_date": "2026-09-15",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-15",
+   "kind": "transcription",
+   "what": "Extracted piece (d) from Birch's Thurloe State Papers on British History Online.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Frequencies and repeats of piece (d) (analyze.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "sibling key",
+   "what": "Applied every 1653-60 royalist and Commonwealth key from cryptiana (Marshall, Barwick-Hyde, Stamford, Butler, Charles II intercepted 1655, Kingston, Westrope, Hague agent/Blake) to piece (d) with apply_keys.py, scored by quadgram models: nothing readable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "(d) cribs like 'horse' and 'hang' in the rich clear frame fit many assignments equally well.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule from thurloe (four unrelated pieces of the Thurloe State Papers): piece (d) gets its own entry; ciphertext file moved here (apply_keys.py and solve_a2.py in targets/thurloe/ now read it from this folder).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Fifty groups over 29 homophonic symbols that no 1653-60 key on cryptiana reads; cribs from the clear frame fit many assignments equally well.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Original in Bodleian Rawlinson A vol. xli, not digitised; Birch's print is the only witness; the key would be among the Bruges court's agents' ciphers (Clarendon MSS), not online. Split on 14 Oct 2026 from thurloe.",
+  "gaps": [
+   {
+    "item": "(d) Waddall 1656, 50 groups",
+    "blocker": "too-short",
+    "detail": "29 distinct homophonic symbols in 50 groups; key in the Clarendon MSS, not online."
+   }
+  ],
+  "credits": [
+   {
+    "who": "birch",
+    "role": "transcription",
+    "note": "Thurloe State Papers (1742): the only witness of the four intercepts",
+    "date": "1742"
+   }
+  ]
+ }
+}

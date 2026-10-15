@@ -4,34 +4,34 @@
  "title": "Ranzo's code, 1528: the letter to 'Garbino' (BnF fr. 3022 no. 20, Madrid 11 April 1528) and Hieronimo Ranzo's letters (fr. 2988 ff. 2, 9-10; DECODE R1894, R4450)",
  "documents": [
   {
-   "id": "no20",
+   "id": "fr2988f2",
    "read": "read in part",
-   "shelfmark": "BnF fr. 3022 no. 20, ff. 44r-46v (views 86-91); 18th-c. copy Clair. 327 ff. 279-280",
-   "date": "11 Apr 1528",
+   "shelfmark": "BnF fr. 2988 ff. 2r-v (signed Hieronimo Ranzo; f. 2v marked 'dup.a'); duplicate fr. 3019 no. 27 ff. 73r-74r",
+   "date": "27 Mar 1528 (Madrid, from the fr. 3019 duplicate as Rosson reads it)",
    "year": 1528,
    "country": "Spain (Charles V)",
-   "route": "Madrid -> Garbino",
+   "route": "Madrid -> unknown",
    "language": "Italian",
-   "pages": 6,
-   "cleartext_in_document": "interspersed",
+   "cleartext_in_document": "none",
    "plaintext": {
     "location": [
      "unrelated source"
     ],
-    "source": "Paolo Rosson, with Claude, 'The Venetian? cipher with superscript digits of 1528' (https://pangoleen.github.io/cipher-readings/centurione-1528.html, listed 6 Oct 2026; Cryptoole IT1520-1 marks it solved, Rosson and Lasry): key table of 779 values, found 14 Oct 2026. Applied to this project's transcription of f. 44r-46v it values 1,230 of 1,311 parsed groups (93.8%: sure, probable or null), 37 are guesses and 44 have no value; 1,046 (79.8%) lie in runs of six or more sure/probable values. Their own estimate: 86% of the cipher text in connected stretches, about 85% of tokens right, f. 46v weakest (66%). Not checked by a palaeographer."
+    "source": "George Lasry's contributed decipherment (lasry/decode.txt, with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 1 of his five: 764 of 790 non-null occurrences given a proposed value, tentative ones included (assignment coverage, not plaintext accuracy).",
+    "partial": true
    },
    "length": {
-    "tokens": 1321,
+    "tokens": 818,
     "distinct": "unknown",
     "unit": "code groups",
     "measured": true,
-    "file": "n20"
+    "file": "lasry/transcription.json"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Full-resolution Gallica scans of ff. 44r-46v; plus ~2,600 groups of Ranzo's signed letters in BnF fr. 2988 (n20/ranzo_c0*.txt) transcribed by subagents",
+    "by": "published",
+    "source": "Norbert Biermann, Ranzo transcript.docx (2021), supplied by George Lasry (lasry/transcription.json)",
     "image_quality": "unknown",
-    "notes": "Sum of --measure over n20/f44r, f44v, f45r, f45v, f46r, f46v.txt with --skip '^\\|' (155+73+316+171+366+240); includes one '·' separator and bracketed doubt marks. NOTES give 1,315 groups (546 types) after load.py drops those. 14 Oct 2026: Rosson's image check corrected 84 tokens by hypothesis, of which the images confirmed 76, and found that in fr. 2988 57 'g' are s and 63 't' are r (two hands); the corrections are applied in measure_rosson.py."
+    "notes": "Token count from Lasry's counts.json (Biermann's transcription). This project's own transcription of ff. 2r-v is n20/ranzo_c006.txt and c007.txt (824 tokens with separators by --measure; 816 groups parsed); Rosson's key values 724 (88.7%) of those in runs of six or more sure/probable values (measure_rosson.py)."
    }
   },
   {
@@ -63,6 +63,99 @@
     "source": "Full-resolution Gallica scans of fr. 2988 ff. 9r-10v (views 17-20), transcribed by subagents (n20/ranzo_c017-c020.txt)",
     "image_quality": "unknown",
     "notes": "Sum of --measure over ranzo_c017 to c020 (499+510+514+266 tokens, counting '/' separators and doubt marks). Rosson's check of the images corrected some g/t tokens (see no20)."
+   }
+  },
+  {
+   "id": "no20",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 3022 no. 20, ff. 44r-46v (views 86-91); 18th-c. copy Clair. 327 ff. 279-280",
+   "date": "11 Apr 1528",
+   "year": 1528,
+   "country": "Spain (Charles V)",
+   "route": "Madrid -> Garbino",
+   "language": "Italian",
+   "pages": 6,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Paolo Rosson, with Claude, 'The Venetian? cipher with superscript digits of 1528' (https://pangoleen.github.io/cipher-readings/centurione-1528.html, listed 6 Oct 2026; Cryptoole IT1520-1 marks it solved, Rosson and Lasry): key table of 779 values, found 14 Oct 2026. Applied to this project's transcription of f. 44r-46v it values 1,230 of 1,311 parsed groups (93.8%: sure, probable or null), 37 are guesses and 44 have no value; 1,046 (79.8%) lie in runs of six or more sure/probable values. Their own estimate: 86% of the cipher text in connected stretches, about 85% of tokens right, f. 46v weakest (66%). Not checked by a palaeographer."
+   },
+   "length": {
+    "tokens": 1321,
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": true,
+    "file": "n20"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Full-resolution Gallica scans of ff. 44r-46v; plus ~2,600 groups of Ranzo's signed letters in BnF fr. 2988 (n20/ranzo_c0*.txt) transcribed by subagents",
+    "image_quality": "unknown",
+    "notes": "Sum of --measure over n20/f44r, f44v, f45r, f45v, f46r, f46v.txt with --skip '^\\|' (155+73+316+171+366+240); includes one '·' separator and bracketed doubt marks. NOTES give 1,315 groups (546 types) after load.py drops those. 14 Oct 2026: Rosson's image check corrected 84 tokens by hypothesis, of which the images confirmed 76, and found that in fr. 2988 57 'g' are s and 63 't' are r (two hands); the corrections are applied in measure_rosson.py."
+   }
+  },
+  {
+   "id": "fr4050",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 4050 ff. 79-81",
+   "date": "unknown",
+   "year": 1528,
+   "country": "Spain (Charles V)",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "George Lasry's contributed decipherment (lasry/decode.txt, with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 4 of his five: 1440 of 1530 non-null occurrences given a proposed value, tentative ones included (assignment coverage, not plaintext accuracy).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1559,
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": true,
+    "file": "lasry/transcription.json"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Norbert Biermann, Ranzo transcript.docx (2021), supplied by George Lasry (lasry/transcription.json)",
+    "image_quality": "unknown",
+    "notes": "Token count from Lasry's counts.json. Not transcribed or seen by this project; no Gallica link in the transcription. Included in Lasry's five-letter scope; that it is in this code rests on his key reading it. cleartext_in_document 'none' is not checked against an image: Biermann's transcription of it carries no clear words."
+   }
+  },
+  {
+   "id": "fr6638",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 6638 pp. 67-70",
+   "date": "unknown",
+   "year": 1528,
+   "country": "Spain (Charles V)",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "George Lasry's contributed decipherment (lasry/decode.txt, with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 5 of his five: 875 of 906 non-null occurrences given a proposed value, tentative ones included (assignment coverage, not plaintext accuracy).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 956,
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": true,
+    "file": "lasry/transcription.json"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Norbert Biermann, Ranzo transcript.docx (2021), supplied by George Lasry (lasry/transcription.json)",
+    "image_quality": "unknown",
+    "notes": "Token count from Lasry's counts.json. Not transcribed or seen by this project; no Gallica link in the transcription. Included in Lasry's five-letter scope; one of his two published excerpts (p. 69) is from it. cleartext_in_document 'none' is not checked against an image: Biermann's transcription of it carries no clear words."
    }
   }
  ],
@@ -229,6 +322,12 @@
     "repeat/pattern analysis"
    ],
    "what": "Tested George Lasry's correction that the addition sheet (fr. 3022 f. 50, additione.json) is not this code's key: of its 113 groups only g217 occurs (once) in the 3,912 transcribed groups of no. 20 and Ranzo's letters, and its numbers overlap the letters' own (b from 157 vs b up to 215 in the letters). The 18 Sept claim that it continues the base lists is withdrawn; page and NOTES corrected.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "profile.documents extended to the five letters of George Lasry's package (fr. 2988 f. 2, fr. 2988 ff. 9-10 = R1894, fr. 3022 no. 20, fr. 4050 ff. 79-81, fr. 6638 pp. 67-70), counts from his counts.json; fr. 4050 and fr. 6638 not seen here.",
    "result": "worked"
   }
  ],

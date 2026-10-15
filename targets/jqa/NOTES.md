@@ -1,6 +1,11 @@
 # JQA at St Petersburg: the despatches are NOT in the Armstrong code; his own code rebuilt, and Ford's
 # "not decyphered" passage of No. 88 (25 June 1812) read
 
+Page split, 14 Oct 2026 (one key, one entry): this entry was shown on the combined page `legation.html` with Erving's
+24 March 1807 letter, which is in a different code (Pinckney's legation code, the = 1651). The two now have their own
+pages: this one is `docs/jqa.html`; Erving's letter, a different cipher with its own page, is `docs/erving1807.html`
+(folder `../erving1807/`). `legation.html` is a stub pointing to both.
+
 Status: read (22 Sept 2026, third pass). No. 88, measured with `measure.py`: **380 of 390 code groups read as sense
 (0.974)**; the nine lines Ford left out 133/133 (1.000), the remainder 247/257 (0.961). 382/390 groups have a value;
 362/390 (0.928) without the grade-I values. Still open: 7 groups cut by the microfilm gutter (needs the original)

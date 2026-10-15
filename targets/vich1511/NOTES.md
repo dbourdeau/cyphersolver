@@ -1,5 +1,10 @@
 # Ferdinand the Catholic → Jerónimo de Vich (Rome), AHN Estado 8714/8715
 
+Split on 14 Oct 2026 under the one-key rule (George Lasry): this entry is the 1511-12 nomenclator and the three
+letters read in it, N.45, N.57, N.60. N.73 of 1515 is in another system and is now `targets/vich1515/`. Measured on
+the three letters alone (`measure.py`, 14 Oct 2026, N.60 v3): 21,750 of 22,538 tokens have a value (0.965); N.45
+0.984, N.57 0.976, N.60 0.948.
+
 PARES search "Vich cifrada" lists the ciphered letters in the Vich family archive (AHN, Archivos privados):
 
 | Signature | Date | PARES id | State |
@@ -13,7 +18,7 @@ PARES search "Vich cifrada" lists the ciphered letters in the Vich family archiv
 | 8715 N.52BIS | 1512-03-01 | 12760824 | cipher + decipherment (key source) |
 | **8715 N.57** | **1512-06-05** | 12751402 | cipher only — **read here** (Burgos) |
 | **8715 N.60** | **1512-09-01** | 12751405 | cipher only — **read here** (Logroño) |
-| 8715 N.73 | 1515-10-26 | 12751418 | cipher only — **different key, not read** (Pedrezuela) |
+| 8715 N.73 | 1515-10-26 | 12751418 | cipher only — **different key, not read**; own entry `targets/vich1515/` (Pedrezuela) |
 | 8715 N.74 | 1519-01-30 | 12751419 | Charles I, cipher + decipherment, another system |
 | 8715 N.79 | "1500" | 12751424 | "Clave de cifra": a plain letter→sign table, not the key to any of these |
 
@@ -101,18 +106,11 @@ promotion, Ravenna, the Navarre bulls. In N.57 the proverb *echar la soga tras e
 spelled out letter by letter (it does use `fak` el and `plort` al in c-al-dero, which supports `plort` = al
 against the N.60 transcriber's mi).
 
-## N.73 (1515) — not read
+## N.73 (1515): split off
 
-`n73_transcription.txt` (124 lines, 3,177 tokens, 197 distinct) and `n73_freq.txt`. It is a different
-system: mostly three-letter code groups (`sin` 151, `sud` 97, `no` 93, `zre` 89, `xed` 68) with a
-smaller set of signs (`X` 171, `TH` 170, `PHI` 163, `RH` 151). No deciphered sibling exists for it:
-the nearest, N.74 of 1519, is Charles I's and is a third system (its `sex` = papa, `mod` = tiene,
-`sin` = de). Attacks tried and failed (`solve73.py`, `solve73g.py`): annealing against the repo's
-Spanish 5-gram model with the lowercase groups split into letters, as whole units, and as context
-breaks around symbol runs. All gave ~-2.7 to -3.5 per character with seeds disagreeing — no solution.
-Symbol runs are short (median 3), so there is little for an n-gram model to hold onto; this one needs a
-crib or a sibling. Its clear text: docket "a 26 de octubre 1515", opening "videlicet iterum", ending
-"en Pedrezuela a xxvj de otubre de dxv".
+N.73 (Pedrezuela, 26 Oct 1515) is in a different system and was split on 14 Oct 2026 into its own entry,
+[`targets/vich1515/`](../vich1515/) (a different cipher, with its own page, vich1515.html), with its transcription,
+frequency count and the two solver scripts. This entry is the 1511-12 key only: N.45, N.57, N.60.
 
 ## Files
 
@@ -128,7 +126,7 @@ crib or a sibling. Its clear text: docket "a 26 de octubre 1515", opening "videl
 - ~5–15% of groups per letter still unread; the untouched decipherments (N.41 and the three in 8714)
   would close most of them.
 - The q = m/a sign split, and `plart`/`plort`, want a careful re-reading against the images.
-- N.73 (1515) needs a different approach.
+- N.73 (1515) needs a different approach (now `targets/vich1515/`).
 - Whether Terrateig 1963 already printed any of this. Search of 18 Sept 2026 (snippets only): vol. II prints
   Ferdinand's letters to Vich from AHN Estado as numbered documents, with plates of ciphered letters and their
   decipherments; no snippet or citation names 4 Apr 1511, 5 June 1512 or 1 Sept 1512. Unresolved: assume it
@@ -162,7 +160,7 @@ crib or a sibling. Its clear text: docket "a 26 de octubre 1515", opening "videl
   quatro" = confe[deración]); in N.60 "por la [flort] es [mat]" reads naturally as "por la liga es obligado", but
   that is a context guess and is not counted. N.60 also has letter-level garbles (ma[flort]nte, nauallbt) that
   need a re-transcription against the images, with q1 separated from q.
-- N.73 (3,177 tokens, other key) alone caps the target at ~0.90 even with every 1511-12 token read.
+- N.73 (3,177 tokens, other key) alone capped the old combined target at ~0.90 even with every 1511-12 token read; it is a separate entry since 14 Oct 2026.
 
 ## 5 Oct 2026 (second pass): N.60 re-transcribed, q/q1 split in N.45 and N.57
 
@@ -187,15 +185,32 @@ crib or a sibling. Its clear text: docket "a 26 de octubre 1515", opening "videl
 | N.60 | 0.925 | 0.948 (v2) | 0.802 | 0.824 |
 | all incl. N.73 | 0.83 | 0.865 | | |
 
+## 5 Oct 2026 (third pass): N.60 pp. 7-15 proofread, print search
+
+- **N.60 v3** (`n60_transcription_v3.txt`, `n60work2/changes.tsv`): pages 7-15 re-viewed in 4x strips.
+  - 35 corrections: 13 B/8/d, 7 q/q1, 4 X→4h, 3 new or relabelled signs, 8 other. The 52 B labels carried from
+    the old file mostly held.
+  - Coverage moved 0.948 → 0.948; the sense measure is unchanged at 0.824.
+  - Not done: L1522-L1530 were not viewed, and pp. 12-15 were not checked token by token.
+  - gz (ǵ, a clause-final mark?), phi (φ), reg, goi (aquel?) and sid (son?) are still open. The proposals are medium
+    or low confidence (`n60work2/groups.tsv`), so they are not counted.
+- **Print.**
+  - Zurita, *Historia del rey don Fernando* lib. X (IFC edition PDF): searched. It narrates the outcome of N.60's
+    demands (interdict on France, Guyenne and Normandy absolved from fealty, Maximiliano Sforza in Milan) but
+    prints no letter text and does not name these letters.
+  - Terrateig, *Política en Italia del Rey Católico* (1963): not online, still unseen. Its vol. II prints the Vich
+    correspondence and may hold the decipherments of N.45/N.57/N.60.
+  - Doussinague, *La política internacional de Fernando el Católico* (1944): not online, not seen.
+  - Web searches (5 Oct 2026) found no transcription online.
+
 ## Remaining gaps
-- N.73 (26 Oct 1515, 3,177 tokens) - blocker: no-key-material; different system, no deciphered sibling (N.74 is a third system); annealing with Spanish 5-grams failed
-- N.60 open groups gz, phi, reg, goi, sid and surviving garbles - blocker: not-attempted; groups absent from every deciphered sibling; v2 pp. 7-15 read at 2x only, a 4-5x pass is owed
+- N.60 open groups gz, phi, reg, goi, sid (~250 tokens) - blocker: no-key-material; absent from all five deciphered siblings. Re-transcribed twice (v2, v3), and context gives only medium or low proposals. Terrateig 1963 (unseen, not online) may print the decipherment. Owed: L1522-L1530 and a token-by-token check of pp. 12-15
 - 8 no-bar q tokens in N.45, 2 q1 missing from the transcription - blocker: illegible; q/q1 split otherwise done (qwork/q_decisions.tsv)
 
 ## Escalation
 - [x] siblings: N.46, N.52BIS, N.41, 8714 N.39 and N.12 aligned with their decipherments (5 Oct 2026); N.26 has no cipher online
 - [x] clear-pages: the clerk's decipherments on the leaves after N.46 and N.52BIS aligned word by word
-- [x] known-keys: N.74 (1519) system and the N.79 table compared; neither fits N.73
-- [ ] print: not done — Terrateig, Politica en Italia del Rey Catolico (1963) vol. II not seen
+- [x] known-keys: the 1511-12 key rebuilt from N.46/N.52BIS fits all six letters in it; the N.74 (1519) system and the N.79 table are other systems
+- [x] print: Zurita lib. X searched (narrates N.60's content, no letter text); Terrateig 1963 and Doussinague 1944 not online, unseen (5 Oct 2026)
 - [x] key-rebuild: 153 groups recovered from the sibling crib and context readings
 - [x] retry: N.45/N.57/N.60 re-decoded with the extended key (5 Oct 2026); token coverage 0.983/0.974/0.940

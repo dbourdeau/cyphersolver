@@ -100,7 +100,10 @@
   },
   {
    "date": "2026-09-18",
-   "kind": "statistics", "technique": ["repeat/pattern analysis"],
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
    "what": "Survey of all 85 leaves (three agents) locating every cipher run: f. 1r, ff. 5v-6r, 6v, 7r-22r, 9r, 44v, 46r-v, 54r-61r, 79ar, 91v, 93r.",
    "result": "worked"
   },
@@ -118,21 +121,37 @@
   },
   {
    "date": "2026-09-18",
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
    "what": "Key B: f. 6v aligned glyph by glyph (seg.py) against Wattenbach's printed invocation; 19 values; f. 91v found to be the same set in abc order.",
    "result": "worked"
   },
   {
    "date": "2026-09-18",
-   "kind": "crib", "technique": ["crib testing"],
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
    "what": "Set C: 11 letters fixed from the catalogue's f. 93r reading 'in dem caichen' and Wattenbach's f. 1r l. 1 'Das ist ein abc'; s and t from one word each.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key review (Lasry's rule, 14 Oct 2026): the notebook uses three independent sign alphabets, so the outcome is given per part: key A and key B read from Wattenbach's 1869 decipherment (key A partial, the recipe cipher untranscribed; key B complete), set C key recovered from the 2014 catalogue's reading of f. 93r (external plaintext), partial. Credits scoped per alphabet.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "Wattenbach broke the ciphers in 1869 and printed plaintexts of ff. 1r, 5v, 6v, and the 2014 Heidelberg catalogue reads f. 93r; the project recovered the sign alphabets from the images by aligning them with those printed readings (external plaintext) and the compiler's own f. 1r alphabet.",
-  "contribution": ["key extended or corrected", "catalogue correction"],
+  "contribution": [
+   "key extended or corrected",
+   "catalogue correction"
+  ],
   "class": "already solved",
   "key": "partial",
   "fraction_read": "unknown",
@@ -140,10 +159,45 @@
    "independent clear copy",
    "key confirms"
   ],
-  "notes": "Read by Wattenbach 1869; added here: the alphabets recovered from the images and checked, set C partly fixed, the survey, the folio correction. Open: no continuous transcription of the recipe cipher (ff. 7r-22r, 46r-v, 54r-61r), f. 9r ll. 7-12, the f. 6r glossary or f. 44v; key A m-ch unchecked on running text. NOTES has no '## Remaining gaps' section.",
+  "notes": "Read by Wattenbach 1869; added here: the alphabets recovered from the images and checked, set C partly fixed, the survey, the folio correction. Open: no continuous transcription of the recipe cipher (ff. 7r-22r, 46r-v, 54r-61r), f. 9r ll. 7-12, the f. 6r glossary or f. 44v; key A m-ch unchecked on running text. Three sign alphabets, results per part in outcome.parts (one-key review, 14 Oct 2026): set C's values come from the 2014 catalogue crib, not from Wattenbach.",
   "credits": [
-    {"who": "wattenbach", "role": "key or decipherment used", "note": "broke the ciphers; plaintexts of ff. 1r, 5v, 6v used to align the sign alphabets", "date": "1869", "source": "Wattenbach, Anzeiger für Kunde der deutschen Vorzeit NF 16 (1869), cols. 264-268"},
-    {"who": "kalning", "role": "key or decipherment used", "note": "2014 Heidelberg catalogue reading of f. 93r, used as crib for set C (Kalning, Miller, Zimmermann)", "date": "2014", "source": "Kalning, Miller, Zimmermann, Cod. Pal. germ. 496-670 (2014), pp. 257-260"}
+   {
+    "who": "wattenbach",
+    "role": "key or decipherment used",
+    "note": "broke the ciphers in 1869; plaintexts of f. 1r (key A, and set C ll. 1-2) and f. 6v (key B) used to align the sign alphabets",
+    "date": "1869",
+    "source": "Wattenbach, Anzeiger für Kunde der deutschen Vorzeit NF 16 (1869), cols. 264-268"
+   },
+   {
+    "who": "kalning",
+    "role": "key or decipherment used",
+    "note": "2014 Heidelberg catalogue reading of f. 93r, used as crib for set C only (Kalning, Miller, Zimmermann)",
+    "date": "2014",
+    "source": "Kalning, Miller, Zimmermann, Cod. Pal. germ. 496-670 (2014), pp. 257-260"
+   }
+  ],
+  "parts": [
+   {
+    "label": "key A, the compiler's 24-sign 'new abc' (f. 1r)",
+    "records": "Cod. Pal. germ. 597: f. 1r ll. 3-4 (the alphabet), recipe names ff. 7r-22r, 46r-v, 54r-61r, f. 9r ll. 7-12, part of ff. 5v-6r",
+    "method": "read from existing decipherment",
+    "extent": "partial",
+    "basis": "Wattenbach 1869 printed the f. 1r plaintext; the 24-sign alphabet recovered here from the image (a-l grade H, m-ch C), checked on 'hab es' and the f. 11r heading 'niklas gank?icz'; the recipe cipher has no continuous transcription, so the extent is partial"
+   },
+   {
+    "label": "key B, stroke and figure signs (ff. 6v, 91v)",
+    "records": "f. 6v invocation (three lines); f. 91v the same set in abc order",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "Wattenbach 1869 printed the f. 6v plaintext ('In dem namen des faters ...'); aligned sign by sign here, 19 values; f. 91v agrees on its first signs"
+   },
+   {
+    "label": "set C, boxes, stars and T (ff. 1r ll. 1-2, 5v-6r, 44v, 93r)",
+    "records": "f. 93r (two lines), f. 1r ll. 1-2; f. 44v and the f. 6r glossary unread",
+    "method": "key recovered based on plaintext from external sources",
+    "extent": "partial",
+    "basis": "values fixed from the 2014 Heidelberg catalogue's reading of f. 93r (Kalning, Miller, Zimmermann) and Wattenbach's 'Das ist ein abc' for f. 1r l. 1: i, n, e, d, m, c, a, h, s, t (s, t grade C); f. 44v and the glossary's dotted-box variants not assigned"
+   }
   ]
  }
 }

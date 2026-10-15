@@ -1,10 +1,12 @@
-# La Guiche (Rome 1551), Noailles (Venice 1558), Seure (Lisbon 1558): catalogue no. 10
+# La Guiche (Rome) to Montmorency, 22 Nov 1551: catalogue no. 10 (part)
 
-Catalogue entry 10 ("La Guiche (Rome), Noailles (Venice), Seure (Lisbon)", class C). Three ambassadors' letters
-with cipher in two BnF recueils. Worked 2026-09-21 (one session, Claude Opus 5).
+Catalogue entry 10 ("La Guiche (Rome), Noailles (Venice), Seure (Lisbon)", class C) grouped three ambassadors'
+letters in two BnF recueils. Worked 2026-09-21 (one session, Claude Opus 5). Split on 14 Oct 2026 from the joint
+entry under the one-key rule: Noailles 1558 (`../noailles1558/`) and Seure 1558 (`../seure1558/`) are different
+ciphers, each with its own page; see section 2.
 
-Outcome: **La Guiche read in part (new reading); Noailles read at the time (marginal decipherment, partly
-lost in the gutter); Seure not attempted: a five-letter corpus, too large for this pass.**
+Outcome: **La Guiche read in part (new reading, key recovered ciphertext-only)**: 429 of 431 tokens have a value
+(measured, 14 Oct 2026); the struck-through opening reads only in fragments.
 
 ## 1. La Guiche → Montmorency, Rome, 22 Nov 1551 (fr. 3138 no. 22)
 
@@ -42,24 +44,13 @@ the writer. No decipherment on the leaf, the next leaf or in the margin.
   for the 15 signs above), text M where marked.
 - Prior art: web search found no edition of this letter; no decipherment in the volume.
 
-## 2. Noailles → Cardinal de Lorraine, Venice, 13 Nov 1558 (fr. 3151 no. 33)
+## 2. Noailles 1558 and Seure 1558: split off
 
-Gallica btv1b9059865k, views 60–61 (f. 59–60). The letter is in clear (Levant galleys, Candia, Corfu) with two
-short cipher passages (3 and 3 lines) on f. 60r. **The court's decipherment is written beside each block in the
-inner margin** ("…mauluaise … gouvernement … affaires"; "grand seigneur … ne luy … de la fortune …"), but the
-binding has swallowed the start of each gloss line. Read at the time; the cipher itself (about 150 signs, a
-different symbol alphabet) was not attacked. A full reading would need the page opened flat, or a solve using the
-visible gloss words as cribs.
-
-## 3. Seure → de Fresne / Henri II, Lisbon, Dec 1558 (fr. 3151 nos. 39–44)
-
-The catalogue says "no siblings", which is wrong. The volume holds six Seure letters of 12 and 27 Dec 1558 (nos.
-39–44, Gallica views ~72–88), and nos. 40/41 and 43/44 are duplicate copies. Each mixes clear text with long cipher
-blocks, about eight pages and roughly 2,000 signs in all: a homophonic symbol alphabet of about 60 signs plus
-numerals (12, 13, 23, 100), so a nomenclator. There is no decipherment on the leaves.
-The duplicates do not simply swap clear and cipher: the fleet passage (22 ships at Havana, Florida) is in clear in
-both copies seen. This is solvable in principle with a full transcription (large corpus, one key), but that is a
-multi-session job. It is left open and should be split off as its own catalogue item.
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Catalogue item 10 grouped three letters in
+three different ciphers. Noailles's Venice letter of 13 Nov 1558 (fr. 3151 no. 33, another symbol alphabet, with a
+marginal decipherment of the time) is now `../noailles1558/`; Seure's six Lisbon letters of Dec 1558 (fr. 3151 nos.
+39-44, homophonic with numeral codes) are `../seure1558/`. Each is a different cipher with its own page. This entry
+is La Guiche's letter only.
 
 ## Files
 
@@ -71,18 +62,15 @@ multi-session job. It is left open and should be split off as its own catalogue 
 
 - La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5 - blocker: open-codes; :: occurs once (conjecture 'l'Empereur', grade I), 5 only in the struck lines; the name is read 'Barnabe Adorne' (30 Sept 2026)
 - La Guiche f. 60v: the two struck-through first lines - blocker: illegible; struck through by the writer; read only in part
-- Noailles fr. 3151 no. 33 (f. 60r), start of each marginal gloss line - blocker: needs-physical-access; swallowed by the binding; needs the page opened flat
-- Noailles fr. 3151 no. 33, the cipher itself (about 150 signs) - blocker: not-attempted; not attacked; the visible gloss words could serve as cribs
-- Seure fr. 3151 nos. 39-44 (about 2,000 signs, homophonic with numerals) - blocker: not-attempted; left as a multi-session job; not transcribed
 
 ## Escalation
 
-- [x] siblings: leaf, next leaf and margin of La Guiche checked; fr. 3151 searched and the six Seure letters (nos. 39-44, duplicates 40/41, 43/44) found
-- [x] clear-pages: Noailles's marginal decipherment identified; La Guiche has none
-- [ ] known-keys: not done — no French diplomatic key of the 1550s (Tomokiyo's Henri II pages, Lasry's GL.htm) was tried on La Guiche's leftover signs, Noailles or Seure
-- [ ] print: not done — only a web search; Ribier, Lettres et memoires d'estat (1666), and the Noailles ambassade edition (Vertot 1763) not grepped for these letters
+- [x] siblings: leaf, next leaf and margin of La Guiche checked; fr. 3138 view 70 has Morvilliers' 1549 letter with its decipherment (a different key)
+- [x] clear-pages: La Guiche has no decipherment on the leaf, the next leaf or the margin
+- [n/a] known-keys: every letter sign has its value from the ciphertext-only key; the open pieces are a one-off code sign (::) and the writer's struck lines, which no letter key of the period would supply
+- [ ] print: not done — only a web search; Ribier, Lettres et memoires d'estat (1666), not grepped for this letter (Gallica and HathiTrust refused this session's requests on 14 Oct 2026)
 - [x] key-rebuild: permutation anneal (solve1.py) plus refine.py with fixed signs; qu, p, y, v fixed by context
-- [ ] retry: not done — rerun reading_raw.txt after settling the + / barred-r question; solve Noailles's cipher with the visible gloss words as cribs; transcribe and anneal the Seure corpus
+- [x] retry: the second pass of 30 Sept 2026 re-read every doubtful sign on the image with the extended key (+ = b, ff c = ss, the L2x run, X -> B in 'service'), see Corrections
 
 ## Corrections
 

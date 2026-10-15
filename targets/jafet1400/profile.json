@@ -1,0 +1,144 @@
+{
+ "schema_version": 1,
+ "target": "jafet1400",
+ "title": "P. Jafet to Francesc Climent, 15 Sep 1400, Arxiu Capitular de Barcelona (Puig y Puig 1920, app. XXXVII n. 2)",
+ "documents": [
+  {
+   "id": "jafet1400",
+   "read": "read in part",
+   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series (Puig's 'Documentos inéditos del obispo Çapera', no. 1043)",
+   "date": "15 Sep 1400",
+   "year": 1400,
+   "country": "Papacy (Avignon obedience)",
+   "route": "P. Jafet -> Francesc Climent",
+   "language": "Latin",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Puig y Puig, Pedro de Luna (Barcelona 1920), appendix XXXVII n. 2, pp. 477 n. 2, cipher passages in italics.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "letters",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "No ciphertext in hand: not imaged, not printed.",
+    "image_quality": "no images",
+    "notes": "Puig prints ~14 deciphered words (estimate from printed lines)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Not seen: no image of the ciphertext exists and Puig printed only his decipherment.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "sibling_key": "Benedict XIII's key (benedict1399, rebuilt from the p. 475 facsimile) not tested: no ciphertext.",
+  "notes": "Puig writes of 'la clave o claves'; whether this letter used Benedict XIII's key is not known. Split on 14 Oct 2026 from benedict1399."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Puig y Puig, Pedro de Luna (Barcelona 1920), appendix XXXVII n. 2",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: set up Claude Code with Opus 5.5 and posed the target with /goal from the archive-scan lead (catalogue 334), naming Puig y Puig 1920 as the outstanding check. No target-specific intervention.",
+  "tools": [
+   "Google Books in-volume search endpoint (jscmd=SearchWithinVolume2) and page-image endpoint (jscmd=click3)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-23",
+  "last_date": "2026-09-23"
+ },
+ "solution": [
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "HathiTrust record 100676638 (Puig 1920) tried in curl and the built-in browser: Cloudflare challenge, not solved. archive.org: no copy.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "Google Books full-view copy of Puig 1920 found (id CuOlkxWnk-EC, Wisconsin). Book pages and PDF were CAPTCHA-walled, but the in-volume search endpoint and signed page-image URLs answered.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "literature search",
+   "what": "In-volume search for cifra/clave/descifr: p. 466 n. 2 says italics mark the deciphered phrases and Puig rebuilt the key 'a fuerza de paciencia' from lines Climent left on docs. 1063, 461, 463; preface p. 2: 'los diez u once escritos con desconocida clave' deciphered. Appendix index lists 14 'Carta cifrada' items, 1399-1416.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "verification",
+   "what": "Appendix pages of every cipher item fetched and checked for gaps and for what Puig left unread (page-by-page check by a subagent).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split under the one-key rule from benedict1399: this letter is from another sender and its key is not shown to be Benedict XIII's (the key was rebuilt on doc. 1068 only), so it gets its own entry with no claim about its key."
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The text is Puig y Puig's printed decipherment (Pedro de Luna, 1920, appendix XXXVII n. 2), found before the attempt; no image of the cipher exists, so nothing was checked against it.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "key": "none",
+  "fraction_read": "unknown",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "The rest of the letter (doc. 1043), which Puig cites but does not print",
+    "blocker": "needs-physical-access",
+    "detail": "Not printed; the ACB original is not digitised, and may be among the papers Puig did not return."
+   }
+  ],
+  "notes": "Read by Puig y Puig in 1920 (the reading is his). Identified and listed here among the 14 cipher items of his appendix; split on 14 Oct 2026 from benedict1399 because the key is not shown to be Benedict XIII's.",
+  "credits": [
+   {
+    "who": "puig",
+    "role": "key or decipherment used",
+    "note": "printed decipherment (1920), appendix XXXVII n. 2",
+    "date": "1920",
+    "source": "Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix"
+   }
+  ]
+ }
+}

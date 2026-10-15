@@ -1,84 +1,148 @@
 {
  "schema_version": 1,
  "target": "rohan1636",
- "title": "Rohan papers and the Franco-Dutch correspondence, 1635–1636",
+ "title": "Victor Amadeus I of Savoy and Canisy to Henri de Rohan, 27 May 1636 (BnF Français 5190 nos. 214-215)",
  "documents": [
   {
-   "id": "fr3758-no100",
+   "id": "fr5190-no214",
    "read": "not read",
-   "shelfmark": "BnF Français 3758 no. 100, manuscript pp. 114–118, Gallica views 126–130",
-   "date": "30 Jun 1635",
-   "year": 1635,
-   "country": "France",
-   "route": "Fontainebleau → Châtillon and Brézé with the Franco-Dutch army",
+   "shelfmark": "BnF Français 5190 no. 214 (beyond the Gallica reproduction btv1b9059471x, which ends at manuscript p. 80)",
+   "date": "27 May 1636",
+   "year": 1636,
+   "country": "Italy",
+   "route": "Victor Amadeus I, Duke of Savoy, Piedmont -> Henri de Rohan, Valtellina",
    "language": "French",
-   "pages": 5,
-   "cleartext_in_document": "mostly clear",
-   "plaintext": {"location": ["none"], "source": "No decipherment of the symbol bands was verified."},
-   "length": {"tokens": "unknown", "unit": "mixed", "measured": false},
-   "transcription": {"by": "llm from images", "source": "Gallica views 126–130", "image_quality": "good", "notes": "Clear French copied provisionally; the cipher signs were not transcribed sign by sign."}
+   "pages": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Mémoires et lettres de Henri duc de Rohan sur la guerre de la Valteline (1758), III, pp. 76-79: printed as clear French under headings calling them 'en chiffres'; not checked against the manuscript cipher.",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown",
+    "measured": false
+   },
+   "transcription": "unknown"
   },
   {
-   "id": "fr3758-no104",
+   "id": "fr5190-no215",
    "read": "not read",
-   "shelfmark": "BnF Français 3758 no. 104, manuscript pp. 123–128, Gallica views 135–140",
-   "date": "3 Aug 1635",
-   "year": 1635,
-   "country": "France",
-   "route": "Nijmegen → Servien",
+   "shelfmark": "BnF Français 5190 no. 215 (beyond the Gallica reproduction)",
+   "date": "27 May 1636",
+   "year": 1636,
+   "country": "Italy",
+   "route": "Canisy, Piedmont -> Henri de Rohan, Valtellina",
    "language": "French",
-   "pages": 6,
-   "cleartext_in_document": "mostly clear",
-   "plaintext": {"location": ["none"], "source": "No decipherment of the symbol bands was verified."},
-   "length": {"tokens": "unknown", "unit": "mixed", "measured": false},
-   "transcription": {"by": "llm from images", "source": "Gallica views 135–140", "image_quality": "good", "notes": "Clear French copied provisionally; the cipher signs were not transcribed sign by sign."}
+   "pages": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Mémoires et lettres de Henri duc de Rohan sur la guerre de la Valteline (1758), III, pp. 76-79: printed as clear French under headings calling them 'en chiffres'; not checked against the manuscript cipher.",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown",
+    "measured": false
+   },
+   "transcription": "unknown"
   }
  ],
  "system": {
-  "types": ["undetermined"],
-  "summary": "The two 1635 letters mix clear French with cipher bands of digits and invented signs; no 1635 key was verified.",
-  "symbol_kind": "digits and symbols",
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Unknown: the manuscript ciphertext of these letters has not been seen; only their printed plaintext (1758) is in hand.",
+  "symbol_kind": "unknown",
   "distinct_symbols": "unknown",
-  "diacritics": {"used": "unknown"},
-  "homophones": {"used": "unknown"},
-  "nomenclator": {"present": "unknown"},
-  "nulls": {"present": "unknown"},
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
   "key_order": "unknown",
   "word_division": "unknown",
-  "sibling_key": "The 1637 Saint-Chamond key was inspected as a structural comparison; its use here is unverified.",
-  "notes": "The Rohan letters of 1636 may use a different key. Their paired ciphertext is unavailable in the supplied Français 5190 scan."
+  "sibling_key": "none",
+  "notes": "Whether Savoy's and Canisy's letters share one key is not established, nor whether d'Émery's letter of 25 Jan 1636 (emery1636) uses it. Split on 14 Oct 2026 (one key, one entry): BnF fr. 3758 nos. 100 and 104 (1635), formerly listed here, are George Lasry's louis1635 and chatillon1635; d'Émery's letters are emery1636."
  },
  "conditions": {
-  "prior_solution": {"exists": "no", "where": "The cipher bands of Français 3758 nos. 100 and 104 were not found in print in this search.", "found": "not found", "used": false},
-  "inputs": ["images", "cleartext context", "published reading"],
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Mémoires et lettres de Henri duc de Rohan (1758), III, pp. 76-79 (plaintext)",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "published reading"
+  ],
   "attack": "none",
   "human_role": "The user supplied the target description, archive URLs and the proposed Savoy/Canisy known-plaintext route.",
-  "tools": ["Gallica image inspection", "Google Books and catalogue search"],
-  "models": ["unknown"],
-  "sessions": 1,
+  "tools": [
+   "Gallica image inspection",
+   "Google Books and catalogue search"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": 2,
   "first_date": "2026-09-22",
-  "last_date": "2026-09-22"
+  "last_date": "2026-10-14"
  },
  "solution": [
-  {"date": "2026-09-22", "kind": "access", "what": "Checked Français 5190; view requests past 90 returned the same final image, manuscript p. 80.", "result": "partial"},
-  {"date": "2026-09-22", "kind": "literature search", "what": "Read the printed Savoy and Canisy plaintext in the 1758 Mémoires and identified Sainte-Geneviève MS 3338 as a second witness for Français 3758.", "result": "partial"},
-  {"date": "2026-09-22", "kind": "reading", "what": "Transcribed the clear prose of Français 3758 nos. 100 and 104, marking the cipher gaps.", "result": "partial"},
-  {"date": "2026-09-22", "kind": "sibling key", "what": "Inspected the published 1637 Saint-Chamond cipher as a structural comparison; no assignment to the 1635 correspondents was established.", "result": "ruled out"}
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Checked Français 5190; view requests past 90 returned the same final image, manuscript p. 80.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Read the printed Savoy and Canisy plaintext in the 1758 Mémoires et lettres (III, pp. 76-79), printed under headings that call the letters \"en chiffres\".",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former rohan1636 group under the one-key rule (George Lasry, 14 Oct 2026): this entry keeps the Savoy and Canisy letters to Rohan (fr. 5190 nos. 214-215). Français 3758 nos. 100 and 104 are George Lasry's louis1635 and chatillon1635; d'Émery's letter and Rohan's reply (nos. 171-172) are emery1636, since no shared key is shown. The earlier steps on fr. 3758 (clear-prose transcription, Saint-Chamond comparison) stay in the NOTES as history.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "No verified key or parallel plaintext for the cipher bands of Français 3758 nos. 100 and 104; the printed Savoy/Canisy plaintext could not be paired with its ciphertext because the Gallica reproduction of Français 5190 stops at p. 80.",
-  "contribution": ["none"],
+  "method_basis": "The manuscript ciphertext of the two letters is beyond the Gallica reproduction of Français 5190, so the printed 1758 plaintext could not be paired with it; no sign has a value.",
+  "contribution": [
+   "none"
+  ],
   "class": "not read",
   "key": "none",
   "fraction_read": 0,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "No enciphered token in the 1635 letters has a verified value; clear prose is excluded from the fraction.",
-  "verification": ["none"],
-  "gaps": [
-   {"item": "Français 3758 no. 100 cipher bands", "blocker": "no-key-material", "detail": "No verified key or matching plaintext."},
-   {"item": "Français 3758 no. 104 cipher bands", "blocker": "no-key-material", "detail": "No verified key or matching plaintext."}
+  "fraction_read_source": "No ciphertext in hand; no sign has a value.",
+  "verification": [
+   "none"
   ],
-  "notes": "The Savoy/Canisy letters are printed deciphered, but the matching manuscript ciphertext and d'Émery's letter are beyond the supplied Français 5190 reproduction. The surrounding clear prose of the 1635 letters is read."
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "Français 5190 nos. 214-215, the cipher",
+    "blocker": "needs-physical-access",
+    "detail": "the Gallica reproduction stops at manuscript p. 80; new images or the volume itself are needed"
+   }
+  ],
+  "notes": "The content of both letters is known from the 1758 print; the cipher and its key are not. Split on 14 Oct 2026."
  }
 }

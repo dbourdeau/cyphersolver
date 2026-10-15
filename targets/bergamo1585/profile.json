@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "bergamo1585",
- "title": "Paris nunciature (bishop of Bergamo, archbishop of Nazareth) to the Secretariat, 1585-86 (ASV Segr. Stato Francia 18; DECODE R15-R17)",
+ "title": "Paris nunciature (Girolamo Ragazzoni, bishop of Bergamo) to the Secretariat, 3 March 1586 (ASV Segr. Stato Francia 18/2; DECODE R16; R15 deciphered by Lasry)",
  "documents": [
   {
    "id": "R16",
@@ -31,36 +31,6 @@
     "source": "DECODE D1610 (TimB)",
     "image_quality": "unknown",
     "notes": "Used as found; not checked against the images."
-   },
-   "read": "read"
-  },
-  {
-   "id": "R17",
-   "shelfmark": "ASV Segr. Stato Francia 18/3, ff. 233-235 (DECODE R17)",
-   "date": "unknown",
-   "year": 1587,
-   "country": "France",
-   "route": "Paris (nunciature) -> Rome",
-   "language": "Italian",
-   "pages": 5,
-   "cleartext_in_document": "none",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No decifrato found."
-   },
-   "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
-    "unit": "symbols",
-    "measured": false
-   },
-   "transcription": {
-    "by": "DECODE",
-    "source": "DECODE D1611 (TimB)",
-    "image_quality": "unknown",
-    "notes": "Used as found."
    },
    "read": "read"
   }
@@ -93,7 +63,7 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "DECODE D3103/D3105: Lasry's F18 key (Meister p. 324), used for R15",
-  "notes": "R17 uses Meister no. 40 (variable-length, Morosini 1587), not the F18 key."
+  "notes": "R15 and R16 share the F18 key. R17, filed with them in Francia 18, is in Meister no. 40 and moved to morosini1588 on 14 Oct 2026."
  },
  "conditions": {
   "prior_solution": {
@@ -112,11 +82,12 @@
    "decode_with_key.py"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -138,40 +109,37 @@
    "date": "2026-09-21"
   },
   {
-   "kind": "literature search",
-   "what": "R17: DECODE F22 key is incomplete (full key in Meister p. 393) and its decryption file is a crash log.",
-   "result": "partial",
-   "date": "2026-09-21"
-  },
-  {
    "kind": "key from source",
    "what": "Meister p. 324 no. 2 (Ragazzoni 1583 key with nomenclator) from OCR; realigned and added to the R16 decoder with a one-digit resync.",
    "result": "worked",
    "date": "2026-09-21"
   },
   {
-   "kind": "sibling key",
-   "what": "R17 decrypted with Meister p. 393 no. 40 via targets/morosini1588/decrypt.py (LM beam search): all five pages, 5 unknown codes.",
-   "result": "worked",
-   "date": "2026-09-21"
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule: R17 (Meister no. 40, Morosini's key) moved to morosini1588 with its transcription and decryption; this entry keeps R16 in the F18 key.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "R16 was read with Lasry's F18 key filed on the R15/R16 DECODE records (D3103/D3105); its nomenclator was added from Meister p. 324 no. 2 (Ragazzoni's 1583 Paris key), and R17 was read with Meister p. 393 no. 40, the key DECODE's own R17 note names; R15 had already been read by Lasry (2020).",
-  "contribution": ["key extended or corrected", "decipherment with ambiguous key", "sender or date identified", "catalogue correction"],
+  "method_basis": "R16 was read with Lasry's F18 key filed on the R15/R16 DECODE records (D3103/D3105); its nomenclator was added from Meister p. 324 no. 2 (Ragazzoni's 1583 Paris key); R15 had already been read by Lasry (2020).",
+  "contribution": [
+   "key extended or corrected",
+   "catalogue correction"
+  ],
   "class": "read",
-  "fraction_read": 0.99,
+  "fraction_read": 0.974,
   "fraction_read_method": "measured",
-  "fraction_read_source": "R16_decryption.txt + R17_decryption.txt (scratchpad measure_A_units.py): units = plaintext letters (one per cipher pair) + one per bracketed code/name group; unread = every <..> group in R16 (unresolved codes and slips, 43 of 1,681) and [nnn?] codes in R17 (5 of 3,292). R16 0.974, R17 0.998. R15 (Lasry) not counted.",
+  "fraction_read_source": "R16_decryption.txt (scratchpad measure_A_units.py, 21 Sept 2026): units = plaintext letters (one per cipher pair) + one per bracketed code/name group; unread = every <..> group (unresolved codes and slips, 43 of 1,681). R15 (Lasry) not counted. R17 (0.998) moved to morosini1588 on 14 Oct 2026.",
   "key": "partial",
   "codes_open": {
-   "open": 7
+   "open": 2
   },
   "verification": [
    "key confirms"
   ],
-  "notes": "R15 read before (Lasry); R16 read, 18 unknowns, names 18/48 unconfirmed; R17 read with Meister no. 40. fraction_read estimated from the notes (R16: 18 unknown of ~1,410 letter pairs after the Meister nomenclator; R17: 5 unknown codes; R15 read by Lasry), not measured token by token. Measured 21 Sept 2026: 0.99 of units read (R16 0.974, R17 0.998); codes_open = R16 codes 18 and 48 plus the five R17 codes (the other R16 <..> groups are mostly transcription slips).",
+  "notes": "R15 read before (Lasry); R16 read here, names 18/48 unconfirmed. Measured 21 Sept 2026: R16 0.974 of units read; codes_open = R16 codes 18 and 48 (the other <..> groups are mostly transcription slips). R17 was split off to morosini1588 on 14 Oct 2026 (Meister no. 40, a different key).",
   "gaps": [
    {
     "item": "R16 nomenclator codes 18 and 48",
@@ -182,16 +150,23 @@
     "item": "R16 remaining ~16 unknown pairs",
     "blocker": "open-codes",
     "detail": "unknowns after the one-digit resync; mostly transcription slips in TimB transcription D1610, images not re-read"
-   },
-   {
-    "item": "R17 five unknown codes",
-    "blocker": "open-codes",
-    "detail": "Meister p. 393 no. 40 reads all five pages except 5 codes"
    }
   ],
   "credits": [
-    {"who": "lasry", "role": "key or decipherment used", "note": "F18 key (DECODE D3103/D3105) and his R15 decryption (D3102); R16 read with the key", "date": "2020", "source": "DECODE R15/R16 D3102-D3105"},
-    {"who": "meister", "role": "key or decipherment used", "note": "p. 324 no. 2 (Ragazzoni 1583 nomenclator) for R16; p. 393 no. 40 read R17", "date": "1906", "source": "A. Meister, Die Geheimschrift im Dienste der päpstlichen Kurie (1906) pp. 324, 393"}
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "F18 key (DECODE D3103/D3105) and his R15 decryption (D3102); R16 read with the key",
+    "date": "2020",
+    "source": "DECODE R15/R16 D3102-D3105"
+   },
+   {
+    "who": "meister",
+    "role": "key or decipherment used",
+    "note": "p. 324 no. 2 (Ragazzoni 1583 nomenclator) for R16",
+    "date": "1906",
+    "source": "A. Meister, Die Geheimschrift im Dienste der päpstlichen Kurie (1906) p. 324"
+   }
   ]
  }
 }

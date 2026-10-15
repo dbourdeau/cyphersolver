@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "morosini1588",
- "title": "Cardinal Morosini, legate in France, to Cardinal Montalto, 1588-89, 36 cipher enclosures (AAV Segr. Stato Francia 22, DECODE R18-R22, R27-R49, R51-R58)",
+ "title": "Cardinal Morosini, nuncio and legate in France, to Rome, 1587-89: 35 cipher enclosures in Meister's key no. 40 (AAV Segr. Stato Francia 22, DECODE R18-R22, R27-R49, R51, R52, R55-R58; Francia 18/3, DECODE R17)",
  "documents": [
   {
    "id": "meister40-set",
@@ -34,34 +34,35 @@
    }
   },
   {
-   "id": "f22b-set",
-   "shelfmark": "AAV Segr. Stato Francia 22, items 22/32-33 (DECODE R53, R54)",
-   "date": "spring 1589 (R54: Moulins, 11 May 1589)",
-   "year": 1589,
-   "country": "Vatican",
-   "route": "Tours/Moulins -> Rome",
+   "id": "R17",
+   "shelfmark": "ASV Segr. Stato Francia 18/3, ff. 233-235 (DECODE R17)",
+   "date": "1587 (not fixed within the year)",
+   "year": 1587,
+   "country": "France",
+   "route": "Paris (nunciature) -> Rome",
    "language": "Italian",
-   "pages": "unknown",
-   "cleartext_in_document": "separate passages",
+   "pages": 5,
+   "cleartext_in_document": "none",
    "plaintext": {
     "location": [
      "none"
     ],
-    "source": "No decipherment; only Lasry's partial key reconstruction (DECODE 'F22b', 2020)."
+    "source": "No decifrato found."
    },
    "length": {
-    "tokens": 1448,
+    "tokens": 5993,
     "distinct": 10,
     "unit": "symbols",
     "measured": true,
-    "file": "decode/DOC_R54_D1825_1825.txt"
+    "file": "R17_transcription_decode.txt"
    },
    "transcription": {
     "by": "DECODE",
-    "source": "DECODE volunteer transcriptions (Mar-Apr 2017)",
+    "source": "DECODE D1611 (TimB)",
     "image_quality": "unknown",
-    "notes": "Single digits counted (785 R53, 653 R54 by digit count). Some '?' digits in the transcription. Measured on DOC_R53_D1717_1717.txt + DOC_R54_D1825_1825.txt concatenated, --width 1."
-   }
+    "notes": "Used as found; single digits counted (--width 1). Moved here from bergamo1585 on 14 Oct 2026."
+   },
+   "read": "read"
   }
  ],
  "system": {
@@ -69,7 +70,7 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "Meister no. 40 (1587): homophonic letters, clusters and common words in 1-3 digit figures run together without separators, three-digit dotted nomenclator, nulls 8x; R53/R54 use a second syllabic key (F22b).",
+  "summary": "Meister no. 40 (1587): homophonic letters, clusters and common words in 1-3 digit figures run together without separators, three-digit dotted nomenclator, nulls 8x.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-3",
@@ -78,7 +79,7 @@
   "distinct_symbols": 10,
   "diacritics": {
    "used": true,
-   "note": "dot on the middle digit marks a nomenclator code (first digit in F22b)"
+   "note": "dot on the middle digit marks a nomenclator code"
   },
   "homophones": {
    "used": true,
@@ -128,13 +129,13 @@
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "none used",
+  "sibling_key": "none used (R53/R54 of the same volume are in a second key, F22b: targets/morosini1589)",
   "notes": "Decoded by beam search over segmentations scored with the shared it-cinquecento 5-gram model (decrypt.py). Null rule: 8 plus any following digit."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Key printed in Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (1906) no. 40; Lasry's partial reconstruction on DECODE R18 (DOC_3175, Oct 2020) with the note 'full key in Meister', and his partial F22b key; no plaintext posted, records listed 'partially decrypted'.",
+   "where": "Key printed in Meister, Die Geheimschrift im Dienste der paepstlichen Kurie (1906) no. 40; Lasry's partial reconstruction on DECODE R18 (DOC_3175, Oct 2020) with the note 'full key in Meister'; no plaintext posted, records listed 'partially decrypted'. R17's DECODE note names the same Meister key; its decryption file is a Java error trace.",
    "found": "before attempt",
    "used": true
   },
@@ -153,7 +154,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-09-19",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -170,21 +171,25 @@
   },
   {
    "date": "2026-09-19",
-   "kind": "solver", "technique": ["beam/DP decoding", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
    "what": "Wrote decrypt.py: beam search over 1-3 digit segmentations with the Italian 5-gram model, nomenclator for dotted codes.",
    "result": "worked"
   },
   {
    "date": "2026-09-19",
    "kind": "reading",
-   "what": "Read 34 of 36 enclosures end to end; per-item summaries written.",
+   "what": "Read the 34 Meister-key enclosures of Francia 22 end to end; per-item summaries written.",
    "result": "worked"
   },
   {
-   "date": "2026-09-19",
+   "date": "2026-09-21",
    "kind": "sibling key",
-   "what": "Applied Lasry's partial F22b reconstruction (~70 elements) to R53/R54.",
-   "result": "partial"
+   "what": "R17 (Francia 18/3, filed with the Bergamo/Nazareth despatches) decrypted with Meister no. 40 via decrypt.py: all five pages, 5 unknown codes; a Morosini-period despatch of 1587.",
+   "result": "worked"
   },
   {
    "date": "2026-09-19",
@@ -193,29 +198,28 @@
    "result": "failed"
   },
   {
-   "date": "2026-09-21",
+   "date": "2026-10-14",
    "kind": "verification",
-   "what": "Partial-reading audit: listed remaining gaps (F22b letters, off-list dotted codes, item 22/29) and open escalation steps.",
-   "result": "partial"
+   "what": "Split under the one-key rule: R53/R54 (second key F22b) moved to their own entry morosini1589; R17 moved in from bergamo1585 (same key); measure.py counts the 35 Meister-key records: 134,010 units, 195 unread (0.9985).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "Meister 1906 no. 40, the key printed for Morosini's legation, with Lasry's partial reconstruction attached to DECODE R18 before the attempt, read 34 of 36 enclosures; unseparated 1-3 digit homophones were segmented by a beam search with an Italian 5-gram model.",
-  "contribution": ["decipherment with ambiguous key", "catalogue correction"],
+  "method_basis": "Meister 1906 no. 40, the key printed for Morosini's nunciature, with Lasry's partial reconstruction attached to DECODE R18 before the attempt, read all 35 enclosures in that key (34 in Francia 22 and R17 in Francia 18); unseparated 1-3 digit homophones were segmented by a beam search with an Italian 5-gram model.",
+  "contribution": [
+   "decipherment with ambiguous key",
+   "catalogue correction",
+   "sender or date identified"
+  ],
   "class": "read",
-  "fraction_read": 0.99,
+  "fraction_read": 0.998,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
   "gaps": [
-   {
-    "item": "R53, R54 (items 22/32-33, Tours and Moulins, spring 1589)",
-    "blocker": "no-key-material",
-    "detail": "second syllabic key F22b; only Lasry's partial reconstruction (~70 elements); Meister prints only no. 40"
-   },
    {
     "item": "dotted nomenclator codes outside Meister's list (162, 191, 250, 516, 617, 716, 770; ~1 per page)",
     "blocker": "open-codes",
@@ -224,13 +228,35 @@
    {
     "item": "item 22/29",
     "blocker": "needs-physical-access",
-    "detail": "no DECODE record; not imaged"
+    "detail": "no DECODE record; not imaged; its key is not known"
+   },
+   {
+    "item": "R17 five unknown codes (519, 911, 556, 722, 561)",
+    "blocker": "open-codes",
+    "detail": "Meister no. 40 reads all five pages except these; most likely transcription slips, images not re-read"
    }
   ],
-  "notes": "Class read (21 Sept 2026): the 34 Meister-key records read end to end; only R53/R54 (about 0.6% of digits, second key F22b, no further key material) stay open, listed in gaps. fraction_read estimated: Meister-key digits 232,557 of 234,005 (99.4%) read, less ~1-3% single-letter slips and off-list codes; R53 not decoded, R54 decoded only in part. Class read in part because R53/R54 are not read.",
+  "notes": "Split 14 Oct 2026 (one key per entry): the two F22b enclosures R53/R54 are now morosini1589; R17 (Francia 18/3, read 21 Sept 2026 in bergamo1585) moved here, same key. Measured 14 Oct 2026: 0.998 of units have a value over the 35 records; codes_open counts the five R17 codes (the off-list dotted codes of Francia 22 are thought to be transcription slips, not counted).",
   "credits": [
-    {"who": "meister", "role": "key or decipherment used", "note": "Die Geheimschrift (1906) no. 40, key issued to Morosini 1587, applied to 34 enclosures", "date": "1906", "source": "A. Meister, Die Geheimschrift im Dienste der päpstlichen Kurie (Paderborn 1906) pp. 393-394, no. 40"},
-    {"who": "lasry", "role": "key or decipherment used", "note": "partial key reconstructions on DECODE R18 (DOC_3175, Oct 2020, noting \"full key in Meister\") and the F22b key used for R53/R54", "date": "2020-10", "source": "DECODE R18 DOC_3175"}
-  ]
+   {
+    "who": "meister",
+    "role": "key or decipherment used",
+    "note": "Die Geheimschrift (1906) no. 40, key issued to Morosini 1587, applied to the 34 Francia 22 enclosures and R17",
+    "date": "1906",
+    "source": "A. Meister, Die Geheimschrift im Dienste der päpstlichen Kurie (Paderborn 1906) pp. 393-394, no. 40"
+   },
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "partial key reconstruction on DECODE R18 (DOC_3175, Oct 2020), with the note 'full key in Meister'; his F22b key is credited on morosini1589",
+    "date": "2020-10",
+    "source": "DECODE R18 DOC_3175"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "targets/morosini1588/measure.py over decrypt_raw.txt (34 Francia 22 records) and R17_decryption.txt: units = decoded letters + bracketed nomenclator groups; unread = '?' letters and '[nnn?]' groups (195 of 134,010). Single-letter slips that decode to a wrong letter (1-3 per hundred by eye) are not counted.",
+  "codes_open": {
+   "open": 5
+  }
  }
 }

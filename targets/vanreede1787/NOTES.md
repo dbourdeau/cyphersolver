@@ -1,6 +1,12 @@
-# Van Reede diplomatic despatches, 1787–1793
+# Van Reede's despatches from Berlin in the Grand Chiffre, 1787–1788 (DECODE R1026, R1027)
 
-Status: read in part (R1026, R1027 read; R1893 not read).
+Status: read in part (R1026, R1027 read with the Grand Chiffre R1024; open codes and transcription misreads remain).
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. This entry joined R1026/R1027
+(William V's 1782 Grand Chiffre) with R1893 (1793), which is in a different marked three-digit code. R1893 is a
+different cipher, with its own page ([`targets/vanreede1793/`](../vanreede1793/), docs/vanreede1793.html); its files
+(`ciphertext_R1893.txt`, `analyze_1893.py` and the key-bundle scripts) moved there. The DECODE downloads (`decode/`,
+git-ignored, main checkout) and `fetch_decode.py` stay here.
 
 Target: DECODE R1026, R1027 and R1893, seven pages described as numerical
 nomenclator ciphertexts sent by Arend Willem van Reede from Berlin to Laurens
@@ -57,27 +63,24 @@ by two others, before (Prussia) explains itself on the proposals.
   groups), 4 4 3 8 (corrected above to 4433), 331, 308J9, 2637, 2800, 3160; R1027 3660
   (x2), 2800, 3J089, 2637, 1J1021, 50, 3153, 2751. 2637/2800/3660 recur and are
   probably names absent from the 1782 key.
-- **R1893 (24 Mar. 1793, to the Secret Committee, Dutch) not read.** It is a different
-  system: three-digit groups with per-digit overmarks (~ v = ¨ +), 696 tokens, 513
-  distinct marked forms, so several thousand possible values. No key among the DECODE
-  records tried (R2846, R2848, R2850, R2851, R2243) and no crib; with this ratio of
-  text to code size a ciphertext-only attack is not feasible. Closed until a key or a
-  deciphered copy turns up (Staten-Generaal secret files, NA 1.01.02).
+- R1893 (24 Mar. 1793, to the Secret Committee, Dutch) is a different system and now its
+  own entry (vanreede1793, attempted, not solved).
 - Follow-up: catalogue 217 (DECODE R1057, Van Reede to William V, 4 Feb 1792) is
   also Grand Chiffre but written as unseparated digit runs with an interlinear
   decipherment; not attempted here.
 
 Write-up: [docs/vanreede1787.html](../../docs/vanreede1787.html).
 
+- 2026-10-14: split; `fraction_read` on this key's letters only: 447/471 (94.9 %).
+
 ## Remaining gaps
-- R1893 (24 Mar 1793, 696 tokens) - blocker: no-key-material; different three-digit overmarked code, 513 distinct forms; keys R2846, R2848, R2850, R2851, R2243 tried; no crib
 - R1026/R1027 groups 2637, 2800, 3660, 1250, 331, 3160, 3153, 2751, 50 and damaged groups - blocker: open-codes; not in the 1782 R1024 key; 2637/2800/3660 recur, probably names
 - R1026/R1027 garbled passages from DECODE digit misreads - blocker: not-attempted; NOTES say a fresh transcription from the images would clear them; not done
 
 ## Escalation
 - [x] siblings: R1028 and R1029 opened as controls (R1028 decodes word for word); R1057 noted
-- [ ] clear-pages: not done — check the R1026/R1027/R1893 images for interlinear glosses beyond the 275J one and for a clear copy
-- [x] known-keys: R1024 Grand Chiffre fits R1026/R1027; R2846, R2848, R2850, R2851, R2243 tried on R1893
+- [ ] clear-pages: not done — check the R1026/R1027 images for interlinear glosses beyond the 275J one and for a clear copy
+- [x] known-keys: R1024 Grand Chiffre fits R1026/R1027
 - [ ] print: not done — Colenbrander Gedenkstukken and Vreede, Van de Spiegel en zijne tijdgenooten, for these despatches
 - [ ] key-rebuild: not done — bracket 2637/2800/3660 alphabetically inside the R1024 code order and by LM context
 - [ ] retry: not done — re-transcribe the digits from the images and rerun resolve_j.py

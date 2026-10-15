@@ -1,4 +1,10 @@
-# Charles VI → Count Leopold Viktorin Windischgrätz, 1720–22 — **read**
+# Charles VI → Count Leopold Viktorin Windischgrätz, 3 Feb 1720, in the Chancellery key R5017 — **read**
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This entry keeps No. 1 (3 Feb 1720,
+R5019/R5020), in the Court Chancellery nomenclator R5017. The three later letters (Nos. 2, 3, 6; R5021–R5024), in the
+Emperor's private key R5018, are now [`targets/windischgraetz1720b/`](../windischgraetz1720b/NOTES.md) (a different
+cipher, with its own page); `key5018.md` and `dec_R5018_letters.md` moved there. The sections below keep their
+history; figures for this entry: 221 of 223 cipher tokens of No. 1 (446 and 638 uncertain).
 
 Five autograph letters from the Emperor Charles VI to his envoy at The Hague (from 1722 his plenipotentiary at
 the Congress of Cambrai), partly in cipher. DECODE lists them as Non-decrypted: R5019 and R5020 (3 Feb 1720, autograph and
@@ -9,7 +15,7 @@ Nepomuka, Rodinný archiv Windischgrätzů. Autographs are inv. 694, karton 5. T
 karton 164, inv. 1403, sign. 103.
 
 **Result: every cipher passage in the four letters on DECODE reads directly from the two keys.** Nothing had to be
-reconstructed. Readings: `dec_R5017_letter.md` (No. 1) and `dec_R5018_letters.md` (Nos. 2, 3, 6).
+reconstructed. Readings: `dec_R5017_letter.md` (No. 1) and, since 14 Oct 2026 in `../windischgraetz1720b/`, `dec_R5018_letters.md` (Nos. 2, 3, 6).
 
 ## Prior work
 
@@ -30,7 +36,7 @@ decryption, and none was found elsewhere (web search, 19 Sept 2026).
   (401–999, 41 low-confidence cells flagged). This is the old Chancellery key, used in No. 1 before the new key arrived.
 - **R5018** is the new private key, on one sheet. Each of 24 letters has a number from 10 to 38 and a graphic sign;
   the vowels have a second number. There are about 300 codes (39–210 and two-letter groups such as ab, fb, zi) and
-  the nulls 3 4 5 6 7 9. Transcribed in `key5018.md`, with glyph crops in `key5018_glyphs/` (git-ignored). The
+  the nulls 3 4 5 6 7 9. Transcribed in `key5018.md` (now in `../windischgraetz1720b/`), with glyph crops in `key5018_glyphs/` (git-ignored, here). The
   docket on the back reads "Ziffern mit J[hr]: K[ayserlichen] M[ajestät] …".
 
 Corrections found by using the keys:

@@ -1,0 +1,182 @@
+{
+ "schema_version": 1,
+ "target": "dandini1580r73",
+ "title": "Cardinal of Como (papal Secretariat) to Anselmo Dandini, nuncio in France, Rome, 8 August 1580 (ASV Segr. Stato Francia 283C ff. 89r-90r, DECODE R73)",
+ "documents": [
+  {
+   "id": "R73",
+   "shelfmark": "ASV Segreteria di Stato, Francia 283C, ff. 89r-90r (DECODE R73)",
+   "date": "8 Aug 1580",
+   "year": 1580,
+   "country": "Papal States",
+   "route": "Rome -> Paris",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "unrelated source",
+     "separate folio"
+    ],
+    "source": "George Lasry's decryption on DECODE (DOC_R72_D3191 / DOC_R73_D3193, key DOC_R72_D3190, Oct 2020); contemporary clear copy of the f. 90r section on f. 91 (DECODE R73 attachment D1137)",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1082,
+    "unit": "code groups",
+    "measured": true,
+    "file": "measure_r73.py"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "KaJo 2017 transcription (DOC_R73_D1789) as decrypted by Lasry",
+    "image_quality": "fair",
+    "notes": "Groups counted by measure_r73.py in Lasry's decryption file (KaJo's transcription with his values); 32 illegible. Paper damaged, bleed-through. Date from the covering letter ff. 88/92 ('Di Roma a 8 d'ag.to 1580 ... Con mezzo foglio di Cifra') and the f. 91 heading."
+   },
+   "read": "read",
+   "pages": 3
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Lasry's key D3190: two-digit letter homophones with an even second digit and three-digit nomenclator groups closed by a mark.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2-3",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 51,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "titles"
+   ],
+   "unread_groups": 6
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "sibling_key": "variant",
+  "notes": "R72 (16 May 1580, dandini1580) uses the same frame and nomenclator with a different letter assignment. Distinct symbols counted in Lasry's file (including '?'). Unread groups 866^, 466^, 766^, 324^, 300^ and 744^ (in his key as 744 without the mark). Split 14 Oct 2026 from dandini1580."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "DECODE R72/R73: Lasry's key D3190 and decryption D3191 (Oct 2020); contemporary clear copy of the f. 90r section on f. 91 (R73 attachment)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code, and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "measure_r73.py"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "DECODE R72-R73 metadata, page images of R72, DOC images and DOC text files fetched with the session cookie; Lasry's key and his R73 decryption found on the records (filed under R72).",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "reading",
+   "what": "Lasry's R73 decryption (D3191) read and summarised: a princely marriage negotiation, then the King and the nun.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former combined target dandini1580 (catalogue 244) under the one-key rule (George Lasry, 14 Oct 2026): R73 is read with Lasry's key D3190; R72 uses a different letter assignment in the same frame and stays dandini1580. Lasry's decryption and KaJo's transcription moved here; measure_r73.py counts 1,040 of 1,082 groups with a value (96.1%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "access",
+   "what": "R73 page images (IMG_R73_I576-I578, ff. 89r-90r) fetched with the cookie; the record's DOC images reread: ff. 88/92 are Como's covering letter of 8 Aug 1580 ('Con mezzo foglio di Cifra'), f. 91 a clear copy headed 'Cifra ... con l're di 8 agosto 80'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "f. 91 compared by eye with Lasry's decryption of the f. 90r section: the same text line for line; differences N.S.re / M.S., darle / parlio, regina madre / <744^>.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "George Lasry recovered the key (D3190) and decrypted R73 (D3191) on DECODE in 2020; the project measured his decryption and found a contemporary clear copy of its second section on f. 91, which agrees with it; nothing re-decrypted here.",
+  "contribution": [
+   "sender or date identified"
+  ],
+  "class": "read",
+  "key": "partial",
+  "fraction_read": 0.961,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "targets/dandini1580r73/measure_r73.py on Lasry's decryption file: cipher groups; '?', unread nomenclator <NNN^> and values marked with '?' count as unread",
+  "codes_open": {
+   "open": 6,
+   "tokens_open": 6
+  },
+  "gaps": [
+   {
+    "item": "32 illegible groups",
+    "blocker": "illegible",
+    "detail": "damaged paper and bleed-through; the transcription marks them '?'"
+   },
+   {
+    "item": "nomenclator groups 866^, 466^, 766^, 324^, 300^",
+    "blocker": "open-codes",
+    "detail": "one occurrence each; no clear copy of the f. 89r section; not filled by Lasry"
+   }
+  ],
+  "grades": "unknown",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Read by Lasry; 96.1% of groups have a value in his file. Date and the f. 91 clear copy found here 14 Oct 2026.",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "prior solution",
+    "note": "key D3190 recovered and R73 decrypted (D3191), on DECODE",
+    "date": "2020",
+    "source": "DECODE R72/R73, DOC_R72_D3190, DOC_R72_D3191",
+    "published": true
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "clear copy of the f. 90r section on f. 91 ('Cifra ... con l're di 8 agosto 80'), used as a check",
+    "source": "DECODE R73 attachment D1137"
+   }
+  ]
+ }
+}

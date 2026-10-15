@@ -1,0 +1,154 @@
+{
+ "schema_version": 1,
+ "target": "bienvenut1590",
+ "title": "Bienvenut to \"Vostre Altesse\" (the duc de Nevers?), Paris, 28 February 1590 (BnF fr. 3623 no. 23; DECODE R9453)",
+ "documents": [
+  {
+   "id": "n23",
+   "shelfmark": "BnF fr. 3623 no. 23, ff. 35-36 (Gallica btv1b525245007 canvases 79-81; DECODE R9453)",
+   "date": "28 Feb 1590",
+   "year": 1590,
+   "country": "France",
+   "route": "Bienvenut (Paris) -> 'Vostre Altesse'",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "key slip f. 36r bound with the copy",
+    "partial": false
+   },
+   "length": {
+    "tokens": 26,
+    "distinct": 9,
+    "unit": "code groups",
+    "measured": true,
+    "file": "codes.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF full resolution, 2-3x crops",
+    "image_quality": "fair",
+    "notes": "Copy in clear with code numbers for nine persons/places; the 26 code numbers listed in text order in codes.txt (14 Oct 2026), the key slip in key.txt."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "A small name code: nine numbers (1-53) for persons, towns and provinces in a copy otherwise in clear, with its key bound on the next leaf.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 9,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 9,
+   "kinds": [
+    "names",
+    "places"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "sibling_key": "own key slip, f. 36r",
+  "notes": "Not the two-digit alphabet of nos. 24/25/60 (champagne1590): there 35 = a, 37 = c, 53 = i; here 35 = Mayenne, 37 = M. de Nemours, 53 = Saint-Sorlin. The two dual entries (15 villes de l'Union or Provence & Dauphine; 17 duc de Parme or Picardie) are read from context."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "the key slip bound after the copy, f. 36r; the copy itself is in clear except the code numbers",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Project-level: set up Claude Code and posed the catalogue task via a parent agent. No target-specific intervention recorded.",
+  "tools": [
+   "PIL crops"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Tomokiyo's nevers.htm and GL.htm, DECODE list for fr. 3623/3625; no prior reading; DECODE gives folios.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Gallica thumbnails of both volumes; contact sheets; full-resolution pages of ff. 35-41, 88, 111 (fr. 3623) and ff. 10, 16 (fr. 3625).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "key from source",
+   "what": "No. 23: key slip on f. 36r transcribed; every code number in the letter resolves.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "transcription",
+   "what": "The 26 code numbers of ff. 35r-v listed in text order from the full-resolution images (codes.txt); all nine values occur on the key slip f. 36r (key.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split from champagne1590 under the one-key rule (Lasry, 14 Oct 2026): no. 23's name code (35 = Mayenne, 37 = M. de Nemours, 53 = Saint-Sorlin) conflicts with the two-digit alphabet of nos. 24/25/60 (35 = a, 37 = c, 53 = i), so it is a different key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Every code number in the copy is on the key slip bound with it on f. 36r; the letter was decoded with it.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "codes.txt: 26 code numbers in ff. 35r-v, all on the key slip (key.txt): 26 of 26.",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Split on 14 Oct 2026 from champagne1590. The copy is in clear except for nine name codes; it reports the League court in Paris (Madame de Nemours, Saint-Sorlin, the Pope and Spain, Mayenne).",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "key slip bound with the copy, BnF fr. 3623 f. 36r"
+   }
+  ]
+ }
+}

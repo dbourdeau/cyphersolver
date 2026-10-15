@@ -1,6 +1,10 @@
-# Van Dedem (Constantinople) ciphers 1788–1799 — DECODE R1895, R2120, R2122, R2131
+# Van Dedem (Constantinople) to Van de Spiegel, 1788–1793 — DECODE R2120, R2122, R2131
 
-Status: attempted, open (R2120 found read at the time; R2122, R2131 partly read after the code layout was established on 4 Oct 2026, see "Second pass"; R1895 unread)
+Status: attempted, open (R2120 found read at the time; R2122, R2131 partly read after the code layout was established on 4 Oct 2026, see "Second pass")
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R1895 (26 Aug 1799, to the Burger Agent
+van der Goes) is in a different marked system, not this 1788–93 code, and is now its own entry, a different cipher
+with its own page: `../dedem1799/` (`docs/dedem1799.html`). Its row is kept in the table below for the record.
 
 Catalogue entry 225. F.G. van Dedem tot de Gelder, Dutch ambassador at Constantinople, to Grand Pensionary
 L.P. van de Spiegel (NA 3.01.26 inv. 212: R2120, R2122, R2131) and to the Agent van Staat M. van der Goes
@@ -67,7 +71,6 @@ envoy title (R1947 #407, R2053 #9).
 ## Remaining gaps
 
 - R2122 and R2131: groups with no attested value (graded "-" or "?" in `alpha/decoded_targets_v2.txt`); the alphabetical bracket narrows each but does not fix it - blocker: open-codes; more deciphered letters in this code (DECODE R1948-R1952, R2134, R2141) would test the layout on unseen text.
-- R1895 (1799, to the Burger Agent): a different, marked system - blocker: no-key-material.
 
 ## Escalation
 

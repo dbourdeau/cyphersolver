@@ -2,6 +2,8 @@
 
 Status: no write-up of our own (result by George Lasry, presented on docs/sessa1597.html)
 
+One key assumed, not tested (14 Oct 2026, one-key-per-entry audit): the entry joins two letters of different correspondences, Philip II to Sessa (31 Mar 1597, f. 145r) and Archduke Albert to Philip II (25 Aug 1596), under one key (Cp.39, 174 codes) and one count. Only the f. 145r sample was checked here; that the 1596 letter is in the same key is assumed from his report, not tested. Kept as one entry (verdict UNCLEAR, not split); to be settled by checking the 1596 letter's codes against Cp.39 or by asking George.
+
 ## Source
 
 This result is George Lasry's, obtained with ChatGPT Astra 6 and Anthropic Opus 5.5 and reported in "BnF cipher research" (10 October 2026), which he sent to Daniel Bourdeau on 13 October 2026 for publication here. The transcription, the key and the reading are his. This repository only spot-checked one sample against the Gallica image (below); it did not re-solve the cipher.

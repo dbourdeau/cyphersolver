@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "nevers1593",
- "title": "Nevers to Pisany and to Revol, August-October 1593, BnF fr. 3985 and fr. 3986 (catalogue item 21)",
+ "title": "Nevers to Pisany, 8 Sept and 14 Oct 1593, BnF fr. 3985 f. 209 and fr. 3986 f. 168, in Nevers cipher no. 46 (catalogue item 21, part)",
  "documents": [
   {
    "id": "f209",
@@ -66,93 +66,6 @@
     "image_quality": "fair",
     "notes": "NOTES give 269 tokens; measured 272. 1/7, 0/8, 3/5 confusions in the copyist's hand leave stretches garbled."
    }
-  },
-  {
-   "id": "f146v",
-   "read": "not read",
-   "shelfmark": "BnF fr. 3986 no. 68, f. 146v (canvas 287)",
-   "date": "7 Oct 1593",
-   "year": 1593,
-   "country": "France",
-   "route": "Vese -> Revol",
-   "language": "French",
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ]
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "symbols",
-    "measured": false,
-    "file": "ct_3986_f146v.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF full resolution, deskewed line cuts",
-    "image_quality": "fair",
-    "notes": "Raw measure 257 tokens but it includes crop separators and [clear markers, and some runs are faded clear cursive."
-   }
-  },
-  {
-   "id": "f157v",
-   "read": "not read",
-   "shelfmark": "BnF fr. 3986 no. 75, f. 157v (canvas 309)",
-   "date": "9 Oct 1593",
-   "year": 1593,
-   "country": "France",
-   "route": "Coire -> Revol",
-   "language": "French",
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ]
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "symbols",
-    "measured": false,
-    "file": "ct_3986_f157v.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF full resolution at 2.4x",
-    "image_quality": "poor",
-    "notes": "Raw measure 258 tokens including separators; re-read at 3.2x shows much of it is faded clear, so the cipher is over-read."
-   }
-  },
-  {
-   "id": "f88",
-   "read": "read in part",
-   "shelfmark": "BnF fr. 3985 f. 88r-v (Gallica btv1b90606498 canvases 176-177)",
-   "date": "21 Aug 1593",
-   "year": 1593,
-   "country": "France",
-   "route": "Nevers -> Revol",
-   "language": "French",
-   "pages": 2,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "Tomokiyo (henryiv2.htm) guessed 'de la [c]onversion et absolution' for R3; not supported by the key",
-    "partial": true
-   },
-   "length": {
-    "tokens": 86,
-    "unit": "symbols",
-    "measured": true,
-    "file": "f88/ct_3985_f88.txt"
-   },
-   "transcription": {
-    "by": "mixed",
-    "source": "Gallica IIIF, bitonal microfilm",
-    "image_quality": "poor",
-    "notes": "Transcribed by an outside contributor (tunarob, GitHub issue #32) with LLM help (Claude Code); R5 and R6 re-checked by us on the full-resolution image; f. 88v not re-checked. 86 = cipher tokens of f. 88r R3-R6 (first variants) as counted by f88/shuffle_control.py; f. 88v has 116 units per the contributor."
-   }
   }
  ],
  "system": {
@@ -160,7 +73,7 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "Pisany letters: Nevers cipher no. 46, a two-digit alphabet with homophones, nulls, barred, plain and double-dotted figure series for words and names; Revol letters: the Court symbol cipher no. 60.",
+  "summary": "Nevers cipher no. 46: a two-digit alphabet with homophones and nulls, and barred, plain and double-dotted figure series for words and names.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-3",
@@ -193,8 +106,8 @@
   },
   "key_order": "random",
   "word_division": "none",
-  "sibling_key": "Nevers no. 45 (single-digit null convention) and Gondi to Pisany 22 Sept 1593 with office decipherment (conventions check); key no. 60 checked on interlined Henri IV letters and the 31 Aug Instruction.",
-  "notes": "Two keys in one catalogue item; system fields describe no. 46. No. 60 is a symbol alphabet with about five homophones per letter and a syllabary."
+  "sibling_key": "Nevers no. 45 (single-digit null convention) and Gondi to Pisany 22 Sept 1593 with the office decipherment (conventions check).",
+  "notes": "Split 14 Oct 2026: the Revol letters, in the Court symbol cipher no. 60, are targets/revol1593/."
  },
  "conditions": {
   "prior_solution": {
@@ -212,7 +125,6 @@
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
   "tools": [
    "decode46.py",
-   "decode60.py",
    "segscore.py (lexicon segmentation scorer)"
   ],
   "models": [
@@ -221,7 +133,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-17",
-  "last_date": "2026-09-17"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -264,68 +176,23 @@
    "result": "worked"
   },
   {
-   "date": "2026-09-17",
-   "kind": "key from source",
-   "what": "Key no. 60 transcribed in full from fr. 3995 ff. 109-111 and checked on the interlined King's letter of 7 Oct.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-17",
-   "kind": "reading",
-   "what": "f. 146v and f. 157v transcribed and decoded; anchors only, copyist's cursive forms block the rest.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-17",
-   "kind": "literature search",
-   "what": "Instruction of 31 Aug found in print (Memoires de Nevers ii) and interlined in fr. 3985; glyph atlas begun.",
-   "result": "partial"
-  },
-  {
-   "date": "2026-10-12",
-   "kind": "transcription",
-   "what": "Outside input, issue #32 (tunarob): 14 proposed key no. 60 corrections, a 4/2+ tag split, transcription of fr. 3985 f. 88r-v and a manual partial reading of f. 88r (LLM-assisted).",
-   "result": "partial"
-  },
-  {
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "kind": "verification",
-   "what": "Each key correction checked on full-resolution fr. 3995 f. 109 and f. 111: 10 confirmed and adopted (b = o-, c flag, i hook+, o \\\\, m ɱ, u 2+, ‡/‡-loop, ♀ = u, ∩+ = g, o-o = c, o+o = y), 2 rejected (be, # in compounds); tags ſ+/4+/4+b/4/2+/n+ split.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-12",
-   "kind": "reading",
-   "what": "f. 146v and f. 157v re-tagged and re-decoded with the corrected key; unresolved 29/204 and 68/226 tokens, no new reading.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-10-12",
-   "kind": "reading",
-   "what": "f. 88r R5 'de absolution' (needs the corrected b), R6 oo+ le Roy and f++ qu'il, checked on the image; Tomokiyo's 'conversion' rejected (needs q = c).",
-   "result": "partial"
-  },
-  {
-   "date": "2026-10-12",
-   "kind": "control",
-   "technique": [
-    "statistical test"
-   ],
-   "what": "f88/shuffle_control.py: longest lexicon word over 86 R3-R6 tokens = 10 letters (absolution); 0/5000 token permutations reach it, P = 0.0002.",
+   "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): the Revol letters in key no. 60 moved to targets/revol1593/ with key60.txt, decode60.py, atlas60.md, the f. 146v/157v transcriptions and f88/. Coverage re-counted on the two Pisany letters from decode_f209.txt and decode_f168.txt: 390 of 391 figure groups resolve in key no. 46.",
    "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "The Pisany letters were read with Tomokiyo's Nevers cipher no. 46, transcribed here at full resolution from BnF fr. 3995 f. 87 and checked on Gondi's 22 Sept 1593 letter with its office decipherment; the Revol letters are in Court key no. 60; one passage of f. 88r (21 Aug) is read in part with the key as corrected from issue #32, the rest are not read.",
+  "method_basis": "The Pisany letters were deciphered with Tomokiyo's Nevers cipher no. 46, transcribed here at full resolution from BnF fr. 3995 f. 87 and checked on Gondi's 22 Sept 1593 letter with its office decipherment: f. 209 in full, f. 168 in long stretches.",
   "contribution": [
    "transcription",
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.3,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Not measurable as a token share: the Pisany letters are counted (decode_f209.txt 122/122, decode_f168.txt 268/269 figures resolve in key no. 46), but the Revol transcriptions ct_3986_f146v.txt and ct_3986_f157v.txt mix clear cursive with cipher and are not yet segmented, and four Revol passages (ff. 88, 115, 176, 198) are untranscribed, so the denominator is unknown; 0.3 is by letters (2 of 7). Unchanged after issue #32 (12 Oct 2026): f. 88r adds three words (de absolution, le Roy, qu'il), not a letter.",
+  "fraction_read": 0.997,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode_f209.txt (122 of 122 figure groups resolve) and decode_f168.txt (268 of 269): 390/391 groups given a value by key no. 46. This counts values, not sense: f. 168 still has garbled stretches in lines 2-8 where the copy's figures are misread.",
   "key": "recovered",
   "grades": "unknown",
   "verification": [
@@ -333,41 +200,32 @@
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "Two of seven letters read (Pisany); five Revol letters in key no. 60 unread, blocker palaeographic. fraction_read 0.3 is an estimate by letters (2 of 7 read, the second in stretches); no token count exists for the Revol passages.",
+  "notes": "f. 209 reads continuously; f. 168 reads in long stretches with garbled passages (figure-reading problems on a microfilm copy). Split 14 Oct 2026: the Revol letters in key no. 60 are targets/revol1593/.",
   "gaps": [
-   {
-    "item": "fr. 3986 f. 146v, Revol 7 Oct 1593 (nine cipher lines, key no. 60)",
-    "blocker": "illegible",
-    "detail": "transcribed at 2.4-3.2x but copyist's cursive forms map to two or three table entries; atlas pass started, not finished"
-   },
-   {
-    "item": "fr. 3986 f. 157v, Revol 9 Oct 1593",
-    "blocker": "illegible",
-    "detail": "faded; clear cursive and cipher run together, cipher extent not yet segmented"
-   },
-   {
-    "item": "fr. 3985 f. 88 (21 Aug), f. 115 (27 Aug, one line), f. 176 (2 Sept, no. 88/94), fr. 3986 f. 198 (23 Oct, no. 101)",
-    "blocker": "not-attempted",
-    "detail": "located and cut but never transcribed; key no. 60 is fully in hand"
-   },
-   {
-    "item": "fr. 3986 no. 68 (Vese 7 Oct)",
-    "blocker": "not-attempted",
-    "detail": "not located on the image (downloader throttled); Tomokiyo list gives candidates"
-   },
    {
     "item": "fr. 3986 f. 168, Pisany 14 Oct, garbled stretches of lines 2-8",
     "blocker": "illegible",
     "detail": "microfilm copy, 1/7, 0/8, 3/5 confusable; segscore.py did not resolve them"
    }
   ],
-  "provenance": "mixed",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "Nevers key book no. 46 (fr. 3995 f. 87) and Court key no. 60 (ff. 108-111); office decipherment of Gondi's 22 Sept 1593 letter as ground truth"},
-    {"who": "tomokiyo", "role": "pointer", "note": "identified keys no. 46 and no. 60 for these letters; henryiv2.htm lists every letter in no. 60", "source": "cryptiana nevers.htm, henryiv2.htm"},
-    {"who": "tomokiyo", "role": "prior solution", "note": "partial readings: passage 1 of f. 209 and line 1 of f. 168", "source": "cryptiana"},
-    {"who": "tunarob", "role": "key corrected", "note": "issue #32: corrections to key no. 60 (10 of 12 adopted), tag split, partial reading of f. 88r", "date": "2026-10-12", "source": "https://github.com/dbourdeau/cyphersolver/issues/32"},
-    {"who": "tunarob", "role": "transcription", "note": "issue #32: transcription of fr. 3985 f. 88r-v (116 units of f. 88v)", "date": "2026-10-12", "source": "https://github.com/dbourdeau/cyphersolver/issues/32"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Nevers key book no. 46 (fr. 3995 f. 87); office decipherment of Gondi's 22 Sept 1593 letter as ground truth"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "identified key no. 46 for the Pisany letters",
+    "source": "cryptiana nevers.htm"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "prior solution",
+    "note": "partial readings: passage 1 of f. 209 and line 1 of f. 168",
+    "source": "cryptiana"
+   }
   ]
  }
 }

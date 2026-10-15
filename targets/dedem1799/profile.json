@@ -1,0 +1,131 @@
+{
+ "schema_version": 1,
+ "target": "dedem1799",
+ "title": "Van Dedem (Constantinople) to the Burger Agent M. van der Goes, No. XVIII, 26 Aug 1799 (DECODE R1895)",
+ "documents": [
+  {
+   "id": "DECODE R1895",
+   "shelfmark": "NA The Hague, 2.01.08 (Van der Goes), inv. 346",
+   "date": "26 Aug 1799",
+   "year": 1799,
+   "country": "Batavian Republic",
+   "route": "Constantinople -> The Hague",
+   "language": "unknown",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "DECODE images R1895 P2-P4",
+    "image_quality": "good",
+    "notes": "Not transcribed. P1 is an unrelated clear page signed Schimmelpenninck; P2 and P4 hold the code, P3 is in clear."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Two- and three-digit code groups with superscript marks (x, double stroke, bar, tilde), Croiset-style; not the 1788-93 Dedem code.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Observed on the images, 21 Sept 2026; the marks' function is not established. Split from dedem1788 on 14 Oct 2026."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the record; DECODE lists it as non-decrypted.",
+   "found": "unknown",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "The human supplied the target and the DECODE cookie.",
+  "tools": [
+   "none"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched the R1895 images with the DECODE cookie together with the 1788-93 Dedem records.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Compared R1895 with the 1788-93 code: 2-3-digit groups with superscript marks, a different (Croiset-style marked) system; P1 is an unrelated clear page signed Schimmelpenninck.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): R1895 (1799) is in a marked system of 2-3-digit groups with superscript marks, not the 1788-93 homophonic word code of R2120/R2122/R2131, so it is its own entry (dedem1799); the 1788-93 letters stay in dedem1788.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Identified as a different marked code from the 1788-93 Dedem code; not transcribed, and no key for it is on DECODE or known.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Nothing transcribed or decoded.",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "R1895 code groups (P2, P4)",
+    "blocker": "no-key-material",
+    "detail": "a different marked code; no key on DECODE; not transcribed"
+   }
+  ],
+  "notes": "Status: in progress in NOTES.md (not transcribed).",
+  "credits": []
+ }
+}

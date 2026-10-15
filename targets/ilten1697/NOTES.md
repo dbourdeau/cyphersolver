@@ -1,15 +1,22 @@
-# Letters to Jobst Hermann von Ilten, 1697-1706 (GWLB Hannover, Ms XXIII 1245:4 and 1245:7)
+# Hattorf to Jobst Hermann von Ilten, Hannover, 7 November 1697, code A (GWLB Hannover, Ms XXIII 1245:4)
 
-Status: read (contemporary interlinear decipherments; transcribed and checked against the code groups)
+Status: read (contemporary interlinear decipherment; transcribed and checked against the code groups)
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Until then this entry held four letters to
+Ilten in two codes. This entry is letter A, in code A. Letters B, C, D (1705-06) are in code B and are now
+[`targets/ilten1705/`](../ilten1705/NOTES.md) (a different cipher, with its own page), with `ciphertext_B/C/D.txt`,
+`letter_D_1706.txt` and the B-C transcription (`letters_BC_1705_1706.txt`). The transcription file of A is now
+`letter_A_1697.txt`; `tables.py` here covers code A only.
 
 Catalogue entry 346, "Letters to Jobst Hermann von Ilten, Hanover-Celle, catalogued as not deciphered", class C,
 scored from the archive scan of 23 Sept 2026 (`research/oldest/scan_2026-09-23/hard_targets.md` item 8). Worked 24 Sept 2026.
 
 ## The premise was inverted
 
+
 Kalliope's records for the four letters (DE-611-HS-4135390, -4136135, -4136176, -4136197) carry the note
 **"Dechiffrierter Brief"**, which means *deciphered letter*. The scan read it as "nicht dechiffriert". The four
-letters carry 492 code groups; all but 7 have a decipherment written over them in the recipient's office.
+letters carry 492 code groups; all but 7 have a decipherment written over them in the recipient's office. Letter A's 74 groups are all glossed.
 
 The images are online after all: the GWLB digital library (Kitodo, digitale-sammlungen.gwlb.de, public domain)
 has the "Receuil de Lettres a Jobst Hermann d'Ilten", Parts I-IV, VII and VIII:
@@ -20,24 +27,16 @@ Image URL pattern: `https://digitale-sammlungen.gwlb.de/content/<METS id>/jpgs/d
 The Kitodo search form needs a POST with its own `tx_dlf[encrypted]` token (the plain GET returns "Keine Treffer").
 Images are in `img/` (git-ignored), METS in `mets/`.
 
-## The letters
+## The letter
 
 | | Date | From | Folios | Code | Groups |
 |---|---|---|---|---|---|
 | A | Hannover, 7 Nov 1697 | Johann Ernst von Hattorf | 1245:4 ff. 212r-213r | A (15-505) | 74 |
-| B | Berlin, 10 Oct 1705 | Johann Wilhelm von Heusch | 1245:7 ff. 201r-204r | B (47-1010) | 125 |
-| C | Hannover, 31 Jan 1706 | Hattorf | 1245:7 ff. 288r-289r | B | 143 |
-| D | Hannover, 25 May 1706 | Elector Georg Ludwig, countersigned Hattorf | 1245:7 ff. 329r-330r | B (German) | 150 |
 
-(Group counts: `python docs/_check_profile.py --measure targets/ilten1697/ciphertext_<x>.txt --digits`.)
+(`python docs/_check_profile.py --measure targets/ilten1697/ciphertext_A.txt --digits`: 74 groups, 57 distinct.)
 
-Transcriptions: `letters_1697_1706.txt` (A-C) and `letter_D_1706.txt` (D), clear text with each code run as
-`[groups = gloss]`. `tables.py` lists every group with every gloss it carries.
-
-- Kalliope's title for D says "Herzog Georg Wilhelm"; the letter is signed **"Georg Ludwig Churfürst"** and the
-  Kalliope creator field (Georg I.) agrees. The address leaf (f. 330r) names Ilten "jetzigem Envoyé extraordinaire
-  am Königl. Preußischen Hoffe", at Berlin.
-- The scan's "Hanover-Celle ministers and diplomats" is right for A-C; D is the Elector himself.
+Transcription: `letter_A_1697.txt`, clear text with each code run as `[groups = gloss]`. `tables.py` lists every
+group with every gloss it carries.
 
 ## Content
 
@@ -45,52 +44,30 @@ Transcriptions: `letters_1697_1706.txt` (A-C) and `letter_D_1706.txt` (D), clear
   sow discord between **Kolbe** (Wartenberg) and **Barfus** at Berlin and win the friendship of one of them;
   Ilten might do it through "la femme du premier" (Kolbe's wife), with whom he is said to stand "extremement
   bien". Hattorf himself does not think it so easy.
-- **B (1705)**: Heusch reports from Berlin that the chamberlain Count Wartensleben, back from Hanover, has put the King of Prussia in good dispositions and spoken well of Sophia Dorothea ("Madame la Princesse fille de
-  S.A.E."), without raising the marriage to the King but raising it with the Grand Chamberlain (Kolbe von
-  Wartenberg); the minister is committed to another match; Mme de Bülow and Mlle de Pöllnitz must not appear to
-  have a hand in it; it can succeed only through the Grand Chamberlain.
-- **C (1706)**: Ilten's two letters to the Elector reached him privately; Ilten is to say he knows nothing if the
-  marriage is raised at Berlin, since it is not the custom to offer the princesses of this house so soon; the
-  Elector wants the matter insinuated gracefully. Clear postscript: Goertz, Eltz, Schönborn, the Lübeck see, and
-  the threat of Charles XII coming out of Poland.
-- **D (1706)**: the Elector hears from Ilten that the King in Prussia means to ask in person for his daughter's
-  hand for the Crown Prince; Ilten is to head off the personal visit, discreetly, through the Ober-Cammerherr.
-  (The marriage of Frederick William and Sophia Dorothea took place on 28 Nov 1706.)
 
 ## Check of the contemporary decipherment
 
 - Every code run was aligned with its gloss. Code A is a small syllabary (ses = 445.71, affaires = 124.73,
   mettre = 331.107.484, Barfus = 75.256.505, vous = 500.505) with homophones (et = 237/238, la = 308/309) and
   62 as a null (`62.308... = la discorde`, `62.204... = de l'un des`, `128.445.62 = aisée`).
-- Code B is one code for all three later letters and for both languages: 977 King of Prussia, 988 Gr.
-  Chambellan / Ober-Cammerherr, 609 Princesse / Princessin, 665 Roy / König, 476 mariage, 224 de, 405.709.543
-  in-si-nu- ("insinuer", "n'insinuiés", "insinuationes"). **91 is a null** (per-son-[91]-ne,
-  de-man-[91]-de-r, and twice in D). The same group carries the same gloss wherever it recurs (`tables.py`).
-- No gloss contradicts another occurrence of its group. The glosses read as sense throughout.
+- No gloss contradicts another occurrence of its group (`tables.py`: 74 groups, 57 distinct, 0 unglossed).
 
 ## Remaining gaps
 
-- B f. 201v: group 419 after "à" (463 written above it) - blocker: open-codes; no gloss and no key; the sense
-  ("rendu justice à Madame la Princesse") is complete without it
-- C f. 288r-v: 709.276 before "juger", 78? before "trouve", 626 after "choque", 728.36? after "on" (6 tokens) -
-  blocker: open-codes; unglossed by the interliner, code B has no key; each sits in a sentence that reads
-- B/C/D: several groups at the right margin run into the binding (70?, 5?, 50?, 9?, 112?, 36?, 124?, 6?, 74?) -
-  blocker: needs-physical-access; the glosses over them are legible, so the reading does not depend on them
+None: all 74 groups carry a gloss.
 
 ## Escalation
 
-- [x] siblings: all six Kalliope items flagged "dechiffriert" in the Ilten papers fetched; the two 1743 letters
-  (Ms XXIII 1234:29,2) are a different, later code and became their own target, `targets/ilten1743/`
-- [x] clear-pages: the decipherments are interlinear on the letters themselves
-- [x] known-keys: the only key sheet Kalliope lists in the Ilten papers ("Chiffre-Tabelle", 1234:31,1 pp. 386-391) is the 1740s code, not A or B
-- [n/a] print: not searched in depth; the letters were read at the time and the glosses leave only 7 tokens
-- [n/a] key-rebuild: 7 unglossed tokens in 418; code B has ~200 distinct groups seen once or twice, too few to
-  fix syllable values outside the glossed context
-- [n/a] retry: nothing left that a retry could reach
+- [x] siblings: all six Kalliope items flagged "dechiffriert" in the Ilten papers fetched; letters B-D are code B
+  (`targets/ilten1705/`), the two 1743 letters (Ms XXIII 1234:29,2) a later code (`targets/ilten1743/`)
+- [x] clear-pages: the decipherment is interlinear on the letter itself
+- [x] known-keys: the only key sheet Kalliope lists in the Ilten papers ("Chiffre-Tabelle", 1234:31,1 pp. 386-391) is the 1740s code, not code A
+- [n/a] print: not searched in depth; the letter was read at the time and every group is glossed
+- [n/a] key-rebuild: nothing unglossed
+- [n/a] retry: nothing left
 
 ## Outcome
 
-Read from existing decipherment: the letters were deciphered in 1697-1706 and the decipherments are on the
-pages. Contribution here: found the images, corrected the catalogue premise (and the sender of D), transcribed the
-four letters with their glosses, checked every gloss against the recurrence of its groups, and identified code A
-and code B (with its null 91).
+Read from existing decipherment: the letter was deciphered in 1697 and the decipherment is on the page.
+Contribution here: found the images, corrected the catalogue premise, transcribed the letter with its glosses,
+checked every gloss against the recurrence of its groups, and identified code A (with its null 62).

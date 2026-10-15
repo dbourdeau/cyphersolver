@@ -1,0 +1,217 @@
+{
+ "schema_version": 1,
+ "target": "cattanei1430",
+ "title": "Francesco de' Cattanei (Rome) to Gianfrancesco Gonzaga, 13 and 21 Feb 1430, Archivio di Stato di Mantova (DECODE R1854 images 4-5)",
+ "documents": [
+  {
+   "id": "R1854-P4",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Mantova, Archivio Gonzaga (busta not given on DECODE), DECODE R1854 image 4",
+   "date": "13 Feb 1430",
+   "year": 1430,
+   "country": "Mantua",
+   "route": "Rome -> Mantua",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1537,
+    "distinct": 46,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ct_p4.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images via saved session cookie",
+    "image_quality": "fair",
+    "notes": "First pass by the model; second pass by a subagent against the image (209 edits).",
+    "corrections": 209
+   }
+  },
+  {
+   "id": "R1854-P5",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Mantova, Archivio Gonzaga (busta not given on DECODE), DECODE R1854 image 5",
+   "date": "21 Feb 1430",
+   "year": 1430,
+   "country": "Mantua",
+   "route": "Rome -> Mantua",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none",
+    "partial": false
+   },
+   "length": {
+    "tokens": 199,
+    "distinct": 31,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ct_p5.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images via saved session cookie",
+    "image_quality": "fair",
+    "notes": "Verso, image upside down; three cipher lines re-transcribed by a subagent."
+   }
+  }
+ ],
+ "system": {
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "sibling_key": "none (DECODE R1853 is the Gonzaga register of c. 1401-1420; no 1428-30 key)",
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution in graphic signs with signs for et, con and -rum; x written cx.",
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "notes": "Look-alikes split on the image: slanted b = i vs rounded b = o; eta vs 9; a stem-o sign = q; o-dagger-o = x. Split 14 Oct 2026 from r1854; P5 is the verso of the 21 Feb letter, photographed upside down."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "nothing for images 4-5",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: DECODE login cookie and /goal target setting. No target-specific intervention.",
+  "tools": [
+   "targets/r1854/solve.py homophonic annealer on lang/ models",
+   "targets/r1854/refine.py, occ.py"
+  ],
+  "models": [
+   "claude-opus-5-5",
+   "subagents for transcription passes"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-22",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Fetched R1854 (5 images), the R1853 register (14 images) and DECODE metadata with the saved cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Read the R1853 register keys (Malatesta keys on f. 1, 1406-1419 keys): none match the 1428-30 letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "sibling key",
+   "what": "Opened all other Mantova records on DECODE (R7858-R7888): 16th-17th century keys.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "First-pass transcription of P4 (28 lines) and P5 (3 lines).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Latin anneal on P4 gives readable Latin (post recessum, sollicitabo bullam, galeotam); key applied to P5.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Subagent second pass of P4 and P5 against the image with the key: 209 edits, glyph splits.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "P4 and P5 read in full apart from four short spots.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-30",
+   "kind": "reading",
+   "what": "P4 L14: the two signs after 'Patras' (I = i, bo = o, both well attested) are the word's ending: 'archiepiscopus de Patrasio' (Latin form of Italian Patrasso); the doubtful separate word 'io(?)' withdrawn. Letters from the rebuilt key, word division inferred.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Push to 95%: the five DECODE images re-fetched with the saved cookie (PNG, P1 1121x697 px) into img/ (git-ignored); P1 run lines, P2 L15/L28 and P4 L04/L20 cropped at 3-4x and compared with p1v2/p2v3/p4v2. P1 L05 confirms the second-pass signs; P4 L04 'leonebi' (t + = e b) cannot be read as 'Leonelli' from the image; P2 L28 confirms '= 14 j 14 P w 7 &' (l e u e n d e r).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "P4 L20 'debert onorio' re-divided: 'Nicolaus cito de Bertonorio debeat recedere' (Bertinoro), every letter as keyed (12 signs); P4 L22 'domicus noster' = dominus noster (one c/n slip, 7 signs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the R1854 entry under the one-key rule (Lasry, 14 Oct 2026): the record's four letters use four ciphers; images 4-5 (one key) are this entry. Re-count from the 5 Oct 2026 figures: P4 1,505/1,537, P5 199/199 = 1,704/1,736 (0.982).",
+   "result": "worked"
+  },
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1734 tokens, 45 types, la order 4: reading -2.244 per letter; random keys -4.662 (z 6.5); key annealed onto shuffled ciphertext best -3.016 (mean -3.057, z 28.5); annealer on the real text -2.206. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 1734, "types": 45, "tokens_per_type": 38.53, "score": -2.244, "nulls": {"random keys": {"n": 200, "mean": -4.662, "sd": 0.372, "max": -3.84, "z": 6.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.057, "sd": 0.028, "max": -3.016, "z": 28.5, "p": 0.1429}}, "power": -2.206, "verdict": "pass", "notes": "claimed per-occurrence score -2.244; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.206"}, 
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "A Latin anneal on image 4 gave readable Latin at once (post recessum, sollicitabo bullam, galeotam); a second pass checked every sign against the image with the key (209 edits, look-alikes split); the same key reads the verso, image 5.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 0.982,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_p4.md: P4 1,505 of 1,537 and P5 199 of 199 cipher signs (ct_p4.txt, ct_p5.txt, measured) read as sense = 1,704/1,736; re-counted 5 Oct 2026.",
+  "grades": "unknown",
+  "verification": ["historical consistency", "key confirms", "statistical test"],
+  "gaps": [
+   {
+    "item": "P4 L04 'leonebi ... re[d]bs', L05 'aisignata pure st', L11 'uniei ... cille', L14 'a-mhi' (about 32 signs)",
+    "blocker": "illegible",
+    "detail": "signs re-read at 10-13x on a 786-px scan; values not fixable from single occurrences"
+   }
+  ],
+  "notes": "Split 14 Oct 2026 from the four-letter R1854 entry.",
+  "credits": []
+ }
+}

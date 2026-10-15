@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "thurloe",
- "title": "Four undeciphered intercepts in the Thurloe State Papers, 1653-56 (Birch 1742; cryptiana unsolved item #9)",
+ "title": "Beverning and Vande Perre to Boreel, Westminster, 22 Aug/1 Sept 1653 (Thurloe State Papers i.435; cryptiana unsolved item #9 a)",
  "documents": [
   {
    "id": "a-beverning-1653",
@@ -31,104 +31,18 @@
     "image_quality": "no images",
     "notes": "Measured with --digits --skip '^(?!\\d)' (cipher lines only). NOTES and analyze_out.txt give 33 distinct; the measure's 36 counts a few dot-joined runs (e.g. '22.13.', '6.20.24.') as tokens. Three passages; letters 6-33 plus codes 113 117 211 222 327 329 519 527. Plaintext Dutch or French per NOTES."
    }
-  },
-  {
-   "id": "b-dugard-1656",
-   "read": "not read",
-   "shelfmark": "Bodleian Rawlinson A vol. xxxviii p. 769; printed TSP v.78-79",
-   "date": "10 June 1656",
-   "year": 1656,
-   "country": "unknown",
-   "route": "Brussels -> (White)",
-   "language": "unknown",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ]
-   },
-   "length": {
-    "tokens": 27,
-    "distinct": 19,
-    "unit": "mixed",
-    "measured": true,
-    "file": "b_dugard_1656.txt"
-   },
-   "transcription": {
-    "by": "published",
-    "source": "Birch, Thurloe State Papers (1742) via British History Online",
-    "image_quality": "no images",
-    "notes": "Measured with --skip '^(?!\\d)': 22 figures plus the letters q t y m f mixed in. A cover address ('a new direction to write to me')."
-   }
-  },
-  {
-   "id": "c-brussels-1656",
-   "read": "not read",
-   "shelfmark": "Bodleian Rawlinson A vol. xli p. 78; printed TSP v.267",
-   "date": "12 Aug 1656",
-   "year": 1656,
-   "country": "unknown",
-   "route": "Brussels -> London (to Copinger)",
-   "language": "English",
-   "cleartext_in_document": "mostly clear",
-   "plaintext": {
-    "location": [
-     "none"
-    ]
-   },
-   "length": {
-    "tokens": 16,
-    "distinct": 8,
-    "unit": "symbols",
-    "measured": true,
-    "file": "c_brussels_12aug1656.txt"
-   },
-   "transcription": {
-    "by": "published",
-    "source": "Birch, Thurloe State Papers (1742) via British History Online",
-    "image_quality": "no images",
-    "notes": "Single digits: a 12-sign name and a 4-sign word inside a clear English sentence."
-   }
-  },
-  {
-   "id": "d-waddall-1656",
-   "read": "not read",
-   "shelfmark": "Bodleian Rawlinson A vol. xli p. 642; printed TSP v.337",
-   "date": "22 Aug 1656",
-   "year": 1656,
-   "country": "unknown",
-   "route": "London -> Bruges (Jo. Waddall to 'Vanyeare')",
-   "language": "English",
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ]
-   },
-   "length": {
-    "tokens": 50,
-    "distinct": 29,
-    "unit": "code groups",
-    "measured": true,
-    "file": "d_waddall_1656.txt"
-   },
-   "transcription": {
-    "by": "published",
-    "source": "Birch, Thurloe State Papers (1742) via British History Online",
-    "image_quality": "no images",
-    "notes": "Measured with --digits, skipping all but the four cipher lines. Letters 7-86 plus codes 226 243."
-   }
   }
  ],
  "system": {
   "types": [
-   "undetermined"
+   "undetermined",
+   "nomenclator"
   ],
-  "summary": "Four unrelated short ciphers: (a) figure substitution with a small code, (b) figures mixed with letters, (c) a ten-digit cipher, (d) homophonic figures with two codes.",
-  "symbol_kind": "digits and letters",
+  "summary": "Figures 6-33 for letters (25 symbols) with eight 3-digit code groups for words, from the new code Boreel sent.",
+  "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-3",
-   "separation": "mixed"
+   "separation": "dots"
   },
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -139,9 +53,9 @@
   },
   "nomenclator": {
    "present": true,
-   "entries": 10,
+   "entries": 8,
    "kinds": "unknown",
-   "unread_groups": 10
+   "unread_groups": 8
   },
   "nulls": {
    "present": "unknown"
@@ -150,7 +64,7 @@
   "word_division": "unknown",
   "doubled_letters": "unknown",
   "sibling_key": "Every 1653-60 royalist and Commonwealth key on cryptiana (Marshall, Barwick-Hyde, Stamford, Butler, Charles II intercepted, Kingston, Westrope, Hague agent/Blake) tried; none fits.",
-  "notes": "Four separate systems, so types is undetermined for the set; NOTES read (a) as monoalphabetic letters plus a small code (8 code groups) and (d) as homophonic letters plus codes 226 243. nomenclator.entries counts the 10 code groups seen in (a) and (d)."
+  "notes": "NOTES read (a) as monoalphabetic letters plus a small code (8 code groups); the matched control shows a plain or 2-homophone Dutch/French letter cipher of this layout would have been read, so the letter part is something else (syllables, nulls, more homophones) or Birch's print is corrupt. Split on 14 Oct 2026 from the four-piece thurloe entry."
  },
  "conditions": {
   "prior_solution": {
@@ -182,87 +96,84 @@
   {
    "date": "2026-09-15",
    "kind": "transcription",
-   "what": "Extracted the four ciphertexts from Birch's Thurloe State Papers on British History Online.",
+   "what": "Extracted piece (a) from Birch's Thurloe State Papers on British History Online.",
    "result": "worked"
   },
   {
    "date": "2026-09-15",
-   "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"],
-   "what": "Frequencies and repeats of each piece (analyze.py).",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Frequencies and repeats of piece (a) (analyze.py).",
    "result": "worked"
   },
   {
    "date": "2026-09-15",
    "kind": "sibling key",
-   "what": "Applied every 1653-60 key from cryptiana to (a)-(d), scored by English/Dutch/French quadgrams; best -4.8 to -5.4 per quad against about -3.2 for real text.",
+   "what": "Applied every 1653-60 royalist and Commonwealth key from cryptiana (Marshall, Barwick-Hyde, Stamford, Butler, Charles II intercepted 1655, Kingston, Westrope, Hague agent/Blake) to piece (a) with apply_keys.py, scored by quadgram models: nothing readable.",
    "result": "failed"
   },
   {
    "date": "2026-09-15",
-   "kind": "solver", "technique": ["hill climbing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
    "what": "Hill-climb on (a) with Dutch and French quadgram LMs, bijective and homophonic, 8 restarts: best -4.71 per quad, Dutch-looking fragments only.",
    "result": "failed"
   },
   {
    "date": "2026-09-15",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "(a) as a plain alphabetical key on 10-33 with any rotation or reversal.",
    "result": "ruled out"
-  },
-  {
-   "date": "2026-09-15",
-   "kind": "crib", "technique": ["crib testing", "repeat/pattern analysis", "contextual inference"],
-   "what": "(c) 'the king' for the 4-sign word forces an impossible name pattern; unresolvable at 16 symbols.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-15",
-   "kind": "crib", "technique": ["crib testing"],
-   "what": "(d) cribs like 'horse' and 'hang' in the rich clear frame fit many assignments equally well.",
-   "result": "failed"
   },
   {
    "date": "2026-09-22",
    "kind": "control",
    "what": "Matched control for solve_a2.py on (a) (control.py, control_out.txt): synthetic texts in (a)'s exact layout (66+47+15 = 128 letters, 8 code groups), held-out Dutch/French/period-English text, 40 trials per cell, solver code unchanged. Recovered (>= 80% of letters): simple substitution 39/40 nl, 40/40 fr, 36/40 en; 25-symbol homophonic (homo, LAM 0.5, MAXH 2) 26/40 nl, 24/40 fr, 17/40 en. (a)'s own best (-4.71 nl, -4.57 fr per quad) lies below all 40 Dutch and all 40 French homophonic controls, so the negative is meaningful: (a) is long enough, and is not a <=2-homophone letter cipher of Dutch/French text as modelled.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule: pieces (b), (c), (d), each in its own cipher, moved to dugard1656, copinger1656 and waddall1656 with their ciphertext files; this entry keeps piece (a) (Beverning 1653). Shared scripts stay here.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "The four short intercepts printed in Birch's Thurloe State Papers resisted every 1653-60 key on cryptiana and quadgram annealing; a matched control shows piece (a) is long enough for the solver.",
-  "contribution": ["none"],
+  "method_basis": "Every 1653-60 key on cryptiana fails on piece (a) and quadgram annealing does not read it; a matched control shows the text is long enough for the solver, so the system is not the one modelled.",
+  "contribution": [
+   "none"
+  ],
   "class": "not read",
   "key": "none",
   "fraction_read": 0,
   "verification": [
    "none"
   ],
-  "notes": "Verdict STUCK: too short for cryptanalysis, no key online. Originals in Bodleian Rawlinson A, not digitised; sibling decipherments would be in the Nationaal Archief (a) and the Clarendon MSS (b-d), not online. Matched control run 2026-09-22 (control.py): the solver recovers synthetic texts of (a)'s layout (simple substitution 95-100%, 25-symbol homophonic 43-65% of trials), so the failure on (a) is meaningful, not a length artefact. The only commit (347fef4b5, 2026-09-15) has no model trailer.",
+  "notes": "Originals in Bodleian Rawlinson A, not digitised; a deciphered sibling despatch would be in the Nationaal Archief (Staten-Generaal liassen Engeland), not online. Matched control run 2026-09-22 (control.py): the solver recovers synthetic texts of (a)'s layout (simple substitution 95-100%, 25-symbol homophonic 43-65% of trials), so the failure is meaningful, not a length artefact. Split on 14 Oct 2026: (b)-(d) are now dugard1656, copinger1656, waddall1656. The only commit (347fef4b5, 2026-09-15) has no model trailer.",
   "gaps": [
    {
     "item": "(a) Beverning 1653, 136 groups",
     "blocker": "no-key-material",
     "detail": "Matched control shows the length suffices for the solver, which still fails: system not the one modelled. Needs the key or a deciphered sibling despatch (Nationaal Archief), and Boreel's new code for the 8 code groups."
-   },
-   {
-    "item": "(b) du Gard 1656, 27 tokens",
-    "blocker": "too-short",
-    "detail": "Cover address, no key online."
-   },
-   {
-    "item": "(c) Brussels 1656, 16 digits",
-    "blocker": "too-short",
-    "detail": "A 12-sign name and a 4-sign word."
-   },
-   {
-    "item": "(d) Waddall 1656, 50 groups",
-    "blocker": "too-short",
-    "detail": "29 distinct homophonic symbols in 50 groups; key in the Clarendon MSS, not online."
    }
   ],
   "credits": [
-    {"who": "birch", "role": "transcription", "note": "Thurloe State Papers (1742): the only witness of the four intercepts", "date": "1742"}
+   {
+    "who": "birch",
+    "role": "transcription",
+    "note": "Thurloe State Papers (1742): the only witness of the four intercepts",
+    "date": "1742"
+   }
   ]
  }
 }

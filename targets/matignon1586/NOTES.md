@@ -1,10 +1,16 @@
-# Forget / Matignon / Mayenne, BnF fr. 15572 (+ fr. 15571), 1586
+# Forget / Mayenne, BnF fr. 15572 (+ fr. 15571 f. 177), 1585–86 — Mayenne–Forget Cipher-1
 
-Status: in progress. Read in part, measured 22 Sept 2026: 28% of the target's cipher tokens read as
-sense (4,325 of 12,994 transcribed figures, 33%; 22% after a scrambled-key control), key for Cipher-1
-recovered. Cipher-3 leaves f. 276 (96.2%) and fr. 15571 f. 179 (92.9%) added 6 Oct 2026 by
-alejandrozarco (PR #25), measured separately (`f276/`, `f179/`), not yet in the total. Most gaps are workable (see "Remaining gaps"), so the target is
+Status: in progress. Read in part, measured 22 Sept 2026 and recalculated on Cipher-1 alone 14 Oct 2026: 31% of
+the target's cipher tokens read as sense (4,325 of ~14,082; 4,325 of 12,994 transcribed figures, 33%; 24% after a
+scrambled-key control), key for Cipher-1 recovered. Most gaps are workable (see "Remaining gaps"), so the target is
 not closed. Per leaf: "Coverage, measured" below; `measure.py`, `measure.json`.
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder keeps **Mayenne–Forget's
+Cipher-1** only. Matignon's **Cipher-3** leaves (fr. 15572 f. 276 and fr. 15571 f. 179, read by alejandrozarco in
+PR #25) are a different cipher with their own entry and page: [`targets/matignon1586c3/`](../matignon1586c3/NOTES.md)
+(`f276/` and `f179/` moved there). f. 79r is Cipher-1 (see below). The genuine Cipher-2 leaves, fr. 15572 ff. 218–219,
+were never attempted and are in no entry; catalogue item 12 is restored to them. fr. 15572 f. 43, solved by George
+Lasry in 2022, is not a document of this entry and carries no credit here.
 
 Catalogue item 12 (`CATALOGUE.md`), class B, solvability 5. Ten leaves that S. Tomokiyo
 (`cryptiana`, *Henry III's Cipher with Ambassadors*) marks **undeciphered** although he publishes
@@ -19,7 +25,7 @@ Tomokiyo's list, checked against the live page on 17 Sept 2026:
   (deciphered in f. 19), **ff. 78-79** and **ff. 91-92** (deciphered in the margin).
   Undeciphered: **ff. 110, 123-124, 143, 150, 154, 173, 196, 201**.
 * **Matignon's Cipher-3**: deciphered f. 189 (in f. 190), ff. 277-278 (in ff. 279-280), f. 282
-  (margin); undeciphered **f. 276**, and **f. 179 of fr. 15571**.
+  (margin); undeciphered **f. 276**, and **f. 179 of fr. 15571** (both now read; the entry `matignon1586c3`).
 * fr. 15572 **f. 43** is in the catalogue line but is *not* open: George Lasry solved it in 2022.
 * The catalogue's "fr. 15571 ff. 218-219" is a slip for **fr. 15572 ff. 218-219** (Matignon in
   Mayenne–Forget's Cipher-2).
@@ -324,11 +330,11 @@ Control: the same decoder and rule with the key's single-letter values shuffled 
 | f. 196 | 26 / 31 | 840 (+162 est.) | 376 | 0.45 | 0.07 | 0.41 |
 | f. 201 | 30 / 30 | 987 | 455 | 0.46 | 0.07 | 0.42 |
 | fr. 15571 f. 177 | 24 / 29 | 696 (+145 est.) | 167 | 0.24 | 0.14 | 0.12 |
-| f. 276 (Cipher-3) | 22 / 22 | 734 | 706 | 0.962 | 0.07 | see `f276/SOLUTION.md` (6–7 Oct 2026; lang fr-1600-letters lexicon; not in the total) |
-| fr. 15571 f. 179 (Cipher-3) | 21 / 21 | 509 | 473 | 0.929 | 0.04 | see `f179/SOLUTION.md` (6–7 Oct 2026; lang fr-1600-letters lexicon; not in the total) |
-| **total** | | **12,994 (+2,648 est.)** | **4,325** | **0.33** | | **0.26** |
+| **total** | | **12,994 (+1,088 est.)** | **4,325** | **0.33** | | **0.26** |
 
-Of the whole target (~15,642 tokens) **0.28 is read (0.22 chance-corrected)**. 90% of transcribed
+Of the whole target (~14,082 tokens) **0.31 is read (0.24 chance-corrected)**. (Until 14 Oct 2026 the denominator
+also carried ~1,560 estimated tokens for the two Cipher-3 leaves, giving 0.28 / 0.22; those leaves are now
+`matignon1586c3`, measured there: f. 276 706/734, fr. 15571 f. 179 473/509.) 90% of transcribed
 tokens are keyed; the gap between "keyed" and "read" is the transcription noise the notes describe.
 The prose estimates were high on f. 143r ("two thirds": 0.59), f. 173 ("half": 0.28), f. 201 ("two
 thirds": 0.46) and f. 177 ("a third": 0.24), and gave no figure for ff. 123-124 (0.19-0.32). f. 110
@@ -343,16 +349,21 @@ three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transc
 - unread share of ff. 143r (41%), 143v (45%), 150 (58%), 154 (53%), 173 (72%), 201 (54%) - blocker: not-attempted; single-figure slips on confusable shapes; the higher-magnification second pass that closed f. 143r l. 7 has not been run on these lines
 - f. 196: 5 of 31 lines untranscribed, 55% of transcribed tokens unread - blocker: not-attempted; part-line after *auquel*, full lines 1-3 and 13 never transcribed; f. 201 is the same despatch and a figure-by-figure crib
 - fr. 15571 f. 177: 5 of 29 lines untranscribed, 76% of transcribed tokens unread - blocker: not-attempted; smaller hand, noisy transcription, no second pass
-- Cipher-3, fr. 15572 f. 276 (canvas 285 right, 22 lines): read 6 Oct 2026, 706/734 signs (96.2%) measured, see `f276/SOLUTION.md`; open: a blot (L04), two signs not in Tomokiyo's table (L14, L18), the closing (L22) and a few short spans
-- Cipher-3, fr. 15571 f. 179 (canvas 187 left, upside down, 21 lines): transcribed and checked against Tomokiyo's magenta decipherment 6 Oct 2026, 473/509 signs (92.9%) measured, see `f179/SOLUTION.md`; open: one code sign (L13), a blot (L18), a struck sign and *la D…use* (L20), and short spans
 - names in ff. 196/201 (Sainct M-, la Bar-/la Garde, Montb-, la B-ault) - blocker: not-attempted; joint figure-by-figure reading of the two encipherments not done
 - code 49 (frequent) and the other codes valued `+` in `key.json`; name codes 82, 84, 98 - blocker: open-codes; no context fixes them yet, and the siblings ff. 14/15, 18/19, 78-79, 91-92 have not been searched for each
 
 ## Escalation
 
-- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures); f. 125r clear letter read for context. Cipher-3 ff. 277r/279-280 used to check the key (alejandrozarco, PR #25). Not yet: ff. 91-92, and the Cipher-3 siblings ff. 189/190, 282
+- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures); f. 125r clear letter read for context. Not yet: ff. 91-92 (the Cipher-3 siblings belong to matignon1586c3)
 - [x] clear-pages: f. 144 checked (a separate letter, not a clear copy of f. 143); f. 19 found to be the decipherment of f. 18; f. 125r is a clear letter, not a decipherment
-- [ ] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); Cipher-3's key (Tomokiyo's partial table) checked on ff. 277r/279-280 and used to read f. 276 (`f276/`) and fr. 15571 f. 179 (`f179/`) by alejandrozarco (PR #25); reviewed 7 Oct 2026 (re-measured, 50-shuffle control median 6.3%/3.1%)
-- [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks. His f. 179 image with interlinear decipherment was saved but not transcribed
+- [x] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); the Cipher-3 leaves and their key are matignon1586c3
+- [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks. (his f. 179 image is matignon1586c3's)
 - [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; cold and seeded solves on f. 110
 - [ ] retry: done on f. 143r (three passes) and f. 110 (3 and 5 columns); not done on ff. 123-124, 143v, 150, 154, 173, 196, 201, 177, whose unread lines have had one transcription pass only
+
+## Assumptions for George's review
+
+- Your 2022 solution of fr. 15572 f. 43, which stood on this entry as a "prior solution" credit, is removed: f. 43 is
+  not one of this entry's documents and its cipher was not identified here as Cipher-1. It is credited nowhere until
+  its key is shown.
+- f. 79r is treated as Cipher-1 (the solved key reads it); the earlier "Cipher-2 crib" values from it stay withdrawn.

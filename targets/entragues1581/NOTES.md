@@ -2,6 +2,8 @@
 
 Status: no write-up of our own (result by George Lasry, presented on docs/entragues1581.html)
 
+One key assumed, not tested (14 Oct 2026, one-key-per-entry audit): the entry joins two letters, ff. 759r-760v (the England enterprise) and ff. 780r-781v (a prisoner's statements), under the one name key of f. 761r ('Copia d una cifra trovata', 28 signs) and one count. The spot-check covered f. 759v and f. 761r only; that the ff. 780-781 signs belong to the f. 761r key is assumed from his report, not tested. Kept as one entry (verdict UNCLEAR, not split); to be settled by checking the ff. 780-781 signs against f. 761r. The sender 'd'Entragues' may also be wrong for ff. 759 (the writer names 'mons. d'Entragues' in the third person).
+
 ## Source
 
 This result is George Lasry's, obtained with ChatGPT Astra 6 and Anthropic Opus 5.5 and reported in "BnF cipher research" (10 October 2026), which he sent to Daniel Bourdeau on 13 October 2026 for publication here. The transcription, the key and the reading are his. This repository only spot-checked one sample against the Gallica image (below); it did not re-solve the cipher.

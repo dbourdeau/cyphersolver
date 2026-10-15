@@ -31,7 +31,8 @@
     "source": "DECODE's authenticated manual transcription of the ciphertext, checked against the nine scans",
     "image_quality": "good",
     "notes": "Two leaves are duplicate copies (images 5419/5421, 5420/5422). Their token sequences agree 96.7% and 99.6% and were merged, preferring readings present in the key. Marks on single digits are kept as part of the group."
-   }
+   },
+   "read": "read"
   },
   {
    "id": "R1040",
@@ -50,17 +51,18 @@
     "source": "No decipherment found. Leeuw (2000) notes that two codebooks were used."
    },
    "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
+    "tokens": 7884,
     "unit": "code groups",
-    "measured": false
+    "measured": true,
+    "file": "R1040_1765_page_stats.tsv"
    },
    "transcription": {
     "by": "DECODE",
     "source": "DECODE authenticated TXT transcription, images 5453-5475",
     "image_quality": "good",
-    "notes": "The first 1,928 groups use a different, missing key. The switch is at group 180 of image 5459."
-   }
+    "notes": "The first 1,928 groups use a different, missing key. The switch is at group 180 of image 5459. 1,928 groups in the first (missing) code, images 5453-5458 and the first 179 groups of 5459; 5,956 in the 1765 key, group 180 of 5459 to 5474"
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -159,7 +161,10 @@
   },
   {
    "date": "2026-09-20",
-   "kind": "crib", "technique": ["crib testing"],
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
    "what": "Aligned the 1784-86 plain/cipher pairs R2032, R2051 and R2052 to rebuild the missing first key of R1040. The transfers cover 2-3% and give no prose.",
    "result": "failed"
   },
@@ -198,6 +203,12 @@
    "what": "Greek-project passage: open groups read from their place in the R1038 codebook scans: 738 = grond (M), 299 = favoriet (I), 231^o = verder (I); 77^o ('Stans' in the book) and the line cut off on image 5417 still open.",
    "result": "partial",
    "date": "2026-09-30"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key review (Lasry's rule, 14 Oct 2026): R1040 changes codebook at group 180 of image 5459, so the outcome is given per key in outcome.parts: the Croiset 1765 key (R1036 and the second part of R1040, 5,256 of 5,956 groups given a value, counted from R1040_second_key_tokens.tsv) and the missing Rechteren-family code (first 1,928 groups, not solved). The entry is read in part because R1040 is not read in full.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -206,17 +217,61 @@
   "contribution": [
    "key extended or corrected"
   ],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.967,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "R1036 read; 56 groups (51 distinct rare codes) are open, mostly entries lost in the scan's binding shadow. R1040 read in part: the second segment only; the first needs the missing Rechteren key (NA inv. 158, not online).",
+  "notes": "Two keys in R1040 (one-key review, 14 Oct 2026): parts per key. R1036 read (96.7%); R1040 second part in the same 1765 key, 88.2% given a value; R1040 first part (1,928 groups) in a missing Rechteren-family code, not solved. 56 groups (51 distinct rare codes) of R1036 open, mostly entries lost in the scan's binding shadow.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "Croiset's 1765 codebook of the Russia legation (DECODE R1038), read from its scans", "source": "DECODE R1038"},
-    {"who": "decode", "role": "transcription", "note": "DECODE transcriptions of R1036 and of the R1038 key"}
-  ]
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Croiset's 1765 codebook of the Russia legation (DECODE R1038), read from its scans",
+    "source": "DECODE R1038"
+   },
+   {
+    "who": "decode",
+    "role": "transcription",
+    "note": "DECODE transcriptions of R1036 and of the R1038 key"
+   }
+  ],
+  "parts": [
+   {
+    "label": "Croiset 1765 Russia-legation codebook (DECODE R1038)",
+    "records": "R1036 (whole, 1,719 groups); R1040 from group 180 of image 5459 to image 5474 (5,956 groups)",
+    "method": "read after matching with key from external sources",
+    "extent": "partial",
+    "basis": "R1036 96.7% (1,663/1,719, measured) with 34 context values and 41 entries read from the R1038 scans; R1040 second part 5,256/5,956 groups given a value (88.2%, counted from R1040_second_key_tokens.tsv), with the R1036 context values and scan readings; no context pass yet on its own unread groups"
+   },
+   {
+    "label": "missing Rechteren-family nomenclator",
+    "records": "R1040 images 5453-5458 and the first 179 groups of image 5459 (1,928 groups)",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "neither the 1765 key nor the 1803 Croiset relative fits; crib transfers from R2032, R2051, R2052 (1784-86) cover 2-3% and give no prose; the key is probably Nationaal Archief inv. 158, not online"
+   }
+  ],
+  "fraction_read_source": "R1036 only (1,663 of 1,719 groups, R1036_codes.txt); per part in outcome.parts",
+  "gaps": [
+   {
+    "item": "R1040 first part, 1,928 groups (images 5453-5458, 5459 groups 1-179)",
+    "blocker": "no-key-material",
+    "detail": "a different, missing Rechteren-family code (probably NA inv. 158, not online); crib transfers from R2032/R2051/R2052 cover 2-3%"
+   },
+   {
+    "item": "R1040 second part, about 700 of 5,956 groups without a value",
+    "blocker": "open-codes",
+    "detail": "the 1765 key with the R1036 context values and R1038 scan readings; no context pass yet on this part's own unread groups"
+   },
+   {
+    "item": "R1036, 56 groups (51 distinct rare codes)",
+    "blocker": "illegible",
+    "detail": "entries lost in the binding shadow of the R1038 key scans, blank or too faint"
+   }
+  ],
+  "key": "partial"
  }
 }

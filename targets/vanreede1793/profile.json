@@ -1,0 +1,160 @@
+{
+ "schema_version": 1,
+ "target": "vanreede1793",
+ "title": "A. W. C. van Reede (Berlin) to the Secret Committee of the States General, 24 March 1793, in a marked three-digit code (DECODE R1893)",
+ "documents": [
+  {
+   "id": "DECODE R1893",
+   "shelfmark": "Nationaal Archief 1.01.02, Staten-Generaal, inv. 6695",
+   "date": "24 Mar 1793",
+   "year": 1793,
+   "country": "Dutch Republic",
+   "route": "Berlin -> Secret Committee, The Hague",
+   "language": "Dutch",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "length": {
+    "tokens": 696,
+    "distinct": 513,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_R1893.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DECODE document D3608",
+    "corrections": 0,
+    "image_quality": "fair",
+    "notes": "Three-digit groups include systematic overmarks and undermarks; the supplied HU language tag is erroneous."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Three-digit code groups with per-digit overmarks and undermarks (~ v = ¨ +), Dutch plaintext; 513 distinct marked forms in 696 tokens.",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {
+   "width": "3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 513,
+  "diacritics": {
+   "used": true,
+   "note": "individual digits carry several overmark/undermark forms; their function is not established"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none found: the 1793 Fagel key bundle (R2842-R2852; R2846, R2848, R2850, R2851 examined) and R2243 tried, no fit",
+  "notes": "Not the 1782 Grand Chiffre (R1024) that reads van Reede's 1787-88 despatches (vanreede1787). distinct_symbols = distinct marked forms."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "no key or reading of R1893 found on DECODE or in print",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "The human supplied the task and an existing authenticated DECODE browser cookie.",
+  "tools": [
+   "fetch_decode.py",
+   "analyze_1893.py",
+   "EasyOCR key-cell indexing (index_key_digits*.py, extract_r2851_cells.py)"
+  ],
+  "models": [
+   "GPT-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-20",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-20",
+   "kind": "access",
+   "what": "Used the existing private DECODE cookie to download the record metadata, transcription (D3608) and manuscript images of R1893.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-20",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Separated R1893 as a different system because its three-digit groups carry systematic per-digit marks absent from the earlier dispatches.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-20",
+   "kind": "sibling key",
+   "what": "Downloaded and inspected DECODE R2846 and the interlinearly decrypted control R2243 for related numerical systems.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "Keys of the 1793 Fagel key bundle on DECODE examined: R2846, R2848, R2850 and R2851 (scripts fetch_key_thumbnails.py, index_key_digits*.py, extract_r2851_cells.py), with R2243; none reads R1893.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Assessed R1893 (696 marked three-digit tokens, 513 distinct) for ciphertext-only attack; code too large for the text, no key or crib found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from vanreede1787, which had joined R1026/R1027 (William V's 1782 Grand Chiffre, R1024) with R1893 (1793, a different marked three-digit code). This profile keeps R1893 only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "R1893 uses a marked three-digit code with 513 distinct forms in 696 tokens; no key among the DECODE records tried and no crib, and at this ratio of text to code size a ciphertext-only attack is not feasible.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "No group of ciphertext_R1893.txt is claimed as read.",
+  "verification": [],
+  "notes": "Attempted, closed unread 21 Sept 2026. Needs the key or a deciphered copy (Staten-Generaal secret files, NA 1.01.02). DECODE's language tag HU is wrong (Dutch). Split 14 Oct 2026 from vanreede1787.",
+  "gaps": [
+   {
+    "item": "R1893 (24 Mar 1793, 696 tokens)",
+    "blocker": "no-key-material",
+    "detail": "different three-digit overmarked code, 513 distinct forms; keys R2846, R2848, R2850, R2851, R2243 tried; no crib"
+   }
+  ],
+  "credits": []
+ }
+}

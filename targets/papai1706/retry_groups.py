@@ -5,6 +5,7 @@ from pathlib import Path
 sys.argv = [sys.argv[0]]
 R = Path(__file__).resolve().parent
 exec(open(R/'decode.py', encoding='utf-8').read().split('if __name__')[0])
+sys.path.insert(0, str(R.parent / 'papai1710'))   # solve731.py moved there on 14 Oct 2026 (split)
 import solve731 as S
 vals = sorted({v.lower() for v in KEY.values() if len(v) <= 3 and v.isalpha()} | {''})
 def sc(t):

@@ -1,0 +1,148 @@
+{
+ "schema_version": 1,
+ "target": "beatrice1486b",
+ "title": "Beatrice d'Aragona to Eleonora d'Aragona, Buda, 2 May 1486 (DECODE R1143)",
+ "documents": [
+  {
+   "id": "R1143",
+   "shelfmark": "State Archives of Modena, Carteggio Principi Esteri, 1623, b. 2/2, 2, 18",
+   "date": "1486-05-02",
+   "year": 1486,
+   "country": "Hungary",
+   "route": "Buda -> Ferrara",
+   "language": "Italian",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition",
+     "separate folio"
+    ],
+    "source": "MDE III (1877), no. 75, pp. 93-96; manuscript decipherment slips in images P1/P4",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "MDE III (1877), no. 75, pp. 93-96; manuscript decipherment slips in images P1/P4",
+    "image_quality": "good",
+    "notes": "Identified older reading by manuscript/edition comparison; no fresh exhaustive glyph transcript. R1143 photographs include repeated views with slips moved."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "summary": "A graphic substitution alphabet for passages inside a clear Italian letter of May 1486, with contemporary decipherment slips; not reconstructed here.",
+  "notes": "Two months after R1142 (beatrice1486) announced a new cipher, so this letter may be in the new one; not established, and not grouped with it."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "MDE III (1877), no. 75, pp. 93-96; contemporary decipherment slips photographed with the leaves (images P1, P4)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Supplied target catalogue entry and pointed out available DECODE cookie.",
+  "models": [
+   "GPT-6",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-20",
+  "last_date": "2026-10-14",
+  "tools": [
+   "Python urllib (authorized DECODE downloads)",
+   "pypdf source extraction",
+   "pypdfium2 page rendering",
+   "Pillow manuscript previews"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-09-20",
+   "kind": "access",
+   "what": "Extracted five exact dates, recipients and shelfmarks from cached DECODE metadata; web reader could not open live DECODE page.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-20",
+   "kind": "access",
+   "what": "Used existing user-authorized DECODE cookie to acquire all 18 images. R1143 has repeated photographs with decipherment slips moved.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-20",
+   "kind": "literature search",
+   "what": "Located MDE III nos. 10 and 12 for both 1482 letters, III no. 75 for May 1486, IV supplement no. 45 for March cipher and III no. 54 for its closing.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-20",
+   "kind": "verification",
+   "what": "Matched dates, clear wording, cipher boundaries and R1143 manuscript slips to older readings. Rendered print confirms italics and March Virtus/Fortis/M. markers. No exhaustive key verification claimed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split from beatrice1482 under the one-key rule (Lasry, 14 Oct 2026): R1143 is two months after R1142, which encloses a new cipher; the two are not shown to share a key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The letter carries contemporary decipherment slips laid over the cipher, and MDE III (1877) no. 75 prints the reading; slips and print were matched to the DECODE images and no key was applied.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "fraction_read": "unknown",
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy",
+   "historical consistency"
+  ],
+  "notes": "Milanese support for Ippolito against Cardinal Ascanio's envoy; Andriolo to come. Six photographs show three written pages, two of them twice with the slips moved. Split on 14 Oct 2026 from beatrice1482.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "decipherment slips laid over the cipher (images P1, P4)"
+   },
+   {
+    "who": "nagy",
+    "role": "key or decipherment used",
+    "note": "printed reading in MDE III (1877) no. 75",
+    "date": "1877",
+    "source": "Magyar Diplomácziai Emlékek III (1877), IV (1878)"
+   }
+  ]
+ }
+}

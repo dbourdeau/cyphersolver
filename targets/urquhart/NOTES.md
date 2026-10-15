@@ -10,6 +10,10 @@ to 70, headed "THE CYPHRAL DISTICH" in the Maitland Club *Works* (1834) p. 417 a
 in some copies only: David Scheers photographed it in the National Library of Scotland copy H.32.a.39 (*Zealous with
 Language and Ciphers*, 2021, Urquhart appendix); the EEB-filmed copy lacks the leaf.
 
+Two cryptograms, two results (one-key review, 14 Oct 2026): the profile gives the outcome per part in `outcome.parts`
+(octastich: read with known key, 274/285 = 0.961; distich: not solved, 0/64) and README has one row per part, as
+soria1523 does. The pooled 274/349 = 0.785 is neither cryptogram's result and is kept only as a labelled total.
+
 **Status (16 Sept 2026): octastich read.** It is a book cipher on *The Jewel* itself: the k-th number, counting straight
 through the poem, is a word index into physical page k of the 1652 edition, the letter is that word's initial, and
 Urquhart took the *first* word on the page beginning with the letter he needed. Decoded from the EEBO-TCP text of

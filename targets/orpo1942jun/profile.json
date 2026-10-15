@@ -1,0 +1,176 @@
+{
+ "schema_version": 1,
+ "target": "orpo1942jun",
+ "title": "Ordnungspolizei Doppelkasten radiogram A115, Mogilev, 16 June 1942 (Weierud 2020, NARA RG 457)",
+ "documents": [
+  {
+   "id": "A115",
+   "shelfmark": "NARA RG 457 HCC Boxes 1386 and 202 (Weierud 2020), message A115 (BMR serial), SQF Nr 14",
+   "date": "16 Jun 1942",
+   "year": 1942,
+   "country": "Germany",
+   "route": "Mogilev -> ALQ via Berlin",
+   "language": "German",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Bletchley's decrypt (entry 21 of the day's German police decrypts, NARA RG 457 HCC Box 1386), typed in German, reproduced in Hanyok, Eavesdropping on Hell (NSA 2005); hsspf_decrypt_1.png. The key-free alignment found that the enciphered wording differs from the typed text (abbreviation, order or extra matter) or the layout differs from both manuals.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 223,
+    "distinct": 25,
+    "unit": "letters",
+    "measured": true,
+    "file": "a115.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Weierud 2020",
+    "image_quality": "fair",
+    "notes": "223 letters after the discriminator ARTTN: odd, so one letter lost or added; repeated digraphs counted from the end (25) against from the start (8) put the stray letter among the first nine."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "polygraphic",
+   "superencipherment"
+  ],
+  "summary": "Doppelkasten: double Playfair with two 5x5 boxes, plaintext in double lines of 17 (21 in the Army NI variant), each pair enciphered twice through the same boxes; daily key of 16 June 1942, discriminator ARTTN.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "not applicable",
+  "sibling_key": "none",
+  "notes": "Spelling conventions CH->Q, ß->SZ, X for punctuation. A different daily key from the 27 Feb 1942 messages (entry orpo1942). Whether boxes were random or keyword-built is unknown."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Bletchley's decrypt (read at the time), reproduced by Hanyok, Eavesdropping on Hell (NSA 2005)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "dk.py (reference implementation checked on both manuals, in ../orpo1942)",
+   "A115 aligners (align115c.py, align115h.py)",
+   "known-plaintext meet-in-the-middle solver (kpsolve.cs, in ../orpo1942)"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": "unknown",
+  "first_date": "unknown",
+  "last_date": "2026-09-18"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Read both German key manuals and NSA articles; confirmed double pass from November 1941.",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "A115 has 223 letters, an odd count: 25 repeated digraphs counted from the end against 8 from the start put the stray letter among the first nine.",
+   "result": "worked"
+  },
+  {
+   "kind": "control",
+   "what": "Known-plaintext solver recovers the boxes from about 80-111 pairs on synthetic data.",
+   "result": "worked"
+  },
+  {
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "EM alignment"
+   ],
+   "what": "Key-free alignment of Hanyok's A115 text to its ciphertext over many spellings and layouts.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Borki located (Kirovsk district, Mogilev region; destroyed 15 June 1942), from a reader's pointer (Ilya) and Zhukov's history of the Dirlewanger unit, which gives the same 16 dead of Pol. Batl. 51.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from orpo1942 under the one-key rule (George Lasry, 14 Oct 2026): A115 is in the daily key of 16 June 1942 (discriminator ARTTN), not the 27 Feb key, and its text exists as Bletchley's decrypt; the 27 Feb messages stay in orpo1942. align115c.py, align115h.py and hsspf_decrypt_1.png moved here.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Bletchley decrypted A115 at the time; the decrypt, typed in German, is reproduced by Hanyok (NSA 2005). Nothing was deciphered here: the key-free alignment of the decrypt to the ciphertext failed, so the boxes were not recovered.",
+  "contribution": [
+   "none"
+  ],
+  "class": "already solved",
+  "key": "none",
+  "fraction_read": 1.0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Bletchley's decrypt gives the whole message; it is not aligned letter by letter with the 223 cipher letters",
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "The decrypt checked letter by letter against the 223 cipher letters, and the key",
+    "blocker": "no-key-material",
+    "detail": "The key-free alignment over spellings, separators, numbers, layouts and lengths found no consistent fit; the exact enciphered German wording or about 80 pairs from another source are needed."
+   }
+  ],
+  "notes": "Read at the time by Bletchley. The report of the Borki massacre of 15 June 1942 (16 men of Pol. Batl. 51 killed; the village levelled and its inhabitants 'liquidated').",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Bletchley Park's decrypt of A115 (entry 21 of the German police decrypts of the day), NARA RG 457 HCC Box 1386, as reproduced by Hanyok (2005)"
+   },
+   {
+    "who": "weierud",
+    "role": "transcription",
+    "note": "German Police Doppelkastenschlüssel Messages (CryptoCellar 2020): the A115 ciphertext and Red Forms from NARA RG 457",
+    "date": "2020-08-05",
+    "source": "https://cryptocellar.org (german-police-doka-messages.pdf)"
+   },
+   {
+    "who": "ilya",
+    "role": "identification",
+    "note": "located Borki (Kirovsk district, Mogilev region) named in the A115 decrypt",
+    "date": "2026-09",
+    "source": "reader email, Sept 2026",
+    "published": false
+   }
+  ]
+ }
+}

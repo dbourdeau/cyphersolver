@@ -1,0 +1,186 @@
+{
+ "schema_version": 1,
+ "target": "throck1559",
+ "title": "Nicholas Throckmorton to Elizabeth I, Paris, 10 July 1559, in his Cipher 1: BL Add MS 4136 f. 32 (DECODE R2988)",
+ "documents": [
+  {
+   "id": "R2988",
+   "shelfmark": "BL Add MS 4136 f. 32 (old 9), main text (DECODE R2988)",
+   "date": "10 Jul 1559",
+   "year": 1559,
+   "country": "France",
+   "route": "Nicholas Throckmorton (Paris) -> Elizabeth I (London)",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "not in Forbes or CSP Foreign (only the 8 July despatches are calendared)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 729,
+    "distinct": 88,
+    "unit": "symbols",
+    "measured": false,
+    "file": "main_decrypt.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE image IMG_R2988_I20714_P.jpg, lines re-cut at measured line centres",
+    "notes": "Counted by script from the first-pass sign lines L01-L15 of main_decrypt.txt (separators and struck signs dropped); line 16 not transcribed. NOTES give ~550 signs for lines 5-15."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Throckmorton's Cipher 1: a letter alphabet of digits, letters and invented signs with homophones, nulls and dotted code signs for words and names.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 88,
+  "diacritics": {
+   "used": true,
+   "note": "a dot over a sign marks a code word"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 12
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Tomokiyo's Cipher 1 key image for Throckmorton's correspondence, attached to DECODE R2988",
+  "notes": "Corrections to the key: x and upsilon = i; y = f/h; z = m; rho = d/t; long-s t and flat-topped 6 = w; Q = be; xi and dotted q = your Majesty; zeta and doubled signs = nulls; K = all (?)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Tomokiyo identifies the cipher as his Cipher 1 and attaches the key, but no decipherment of this letter is printed (Forbes, CSP Foreign) or online",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "subagent transcription"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Tomokiyo unsolved.htm and project throckmorton notes: f. 32 carries Throckmorton's own letter of 10 July 1559 in his Cipher 1, for which Tomokiyo gives the key; no printed decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Subagent decryption of R2988 main text with Tomokiyo Cipher 1 key; crops misaligned, lines 1-5 only.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Main text re-cut at measured line centres; lines 1-4 read securely, lines 5-15 decode to English with key corrections (x,υ=i; z=m; ∫t=w; Q=be).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
+   "what": "Pass 3 over lines 5-15 (main_decrypt.txt): flat-topped 6 = w, q = u, zeta = null inside words, dotted q = your Majesty, K = all(?); lines 5-15 read at about 85% (about 470 of 550 signs); twelve code signs open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "CSP Foreign vol. 1 pp. 362-369 (BHO) and Forbes I: only the 8 July 1559 despatches are calendared; no text of the 10 July letter.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from wod1568, which had joined three systems on BL Add MS 4136 ff. 32-33: Throckmorton's Cipher 1 letter of 10 July 1559 (throck1559), the f. 32 marginal word-sign code (throck1559margin) and John Wood's 1568 line (wod1568). This profile keeps Throckmorton's 10 July 1559 letter in Cipher 1 (R2988 main text) only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Throckmorton's 10 July 1559 letter was deciphered with Tomokiyo's Cipher 1 key image for Throckmorton's correspondence, with seven values corrected; lines 1-4 secure, lines 5-15 about 85%.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.85,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "NOTES pass 3: lines 1-4 secure and lines 5-15 about 470 of 550 signs (85%); not counted sign by sign from a reading file.",
+  "codes_open": {
+   "open": 12,
+   "total": "unknown"
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Unpublished letter: Throckmorton sends a gentleman to report the French King's state, asks credit and reward for him, signs off at Paris the tenth of July. Twelve code signs open. The starred note keyed to line 13 is in the margin word code (throck1559margin). Split 14 Oct 2026 from wod1568.",
+  "gaps": [
+   {
+    "item": "twelve code signs (1k, rho, g, delta, delta, o, pi-bar etc.)",
+    "blocker": "open-codes",
+    "detail": "not on Tomokiyo's Cipher 1 key image; values guessed from context only"
+   },
+   {
+    "item": "spans marked [..] in lines 5-8, 11-14 (about 80 of 550 signs)",
+    "blocker": "illegible",
+    "detail": "small signs at DECODE resolution, crop overlap"
+   },
+   {
+    "item": "the starred note keyed to line 13",
+    "blocker": "no-key-material",
+    "detail": "written in the margin word code, a different system with its own entry (throck1559margin)"
+   }
+  ],
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "Cipher 1 key image for Throckmorton's correspondence, seven values corrected",
+    "source": "https://cryptiana.web.fc2.com/"
+   }
+  ]
+ }
+}

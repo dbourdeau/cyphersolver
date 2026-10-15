@@ -1,0 +1,179 @@
+{
+ "schema_version": 1,
+ "target": "siena14",
+ "title": "Sienese envoys to the Priori and Capitano del Popolo of Siena, before 1429 (ASSi Concistoro 2308 fasc. 2 no. 14, DECODE R4802)",
+ "documents": [
+  {
+   "id": "no14",
+   "shelfmark": "ASSi, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 14 (DECODE R4802)",
+   "year": 1420,
+   "country": "Siena",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1291,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcripts/no14_signs.tok"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "notes": "point-divided words; year unknown: Carlo Malatesta alive (<=1429); 1420 is a placeholder within c.1409-29"
+   },
+   "read": "read in part",
+   "route": "Rome? -> Siena (Priori, Capitano del Popolo)"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Italian simple substitution with a few homophones (e = TR, 2; o = 6, P; i = Q4, PD, L; a = EQ, Q, TL), word points kept, and a few code signs for persons and a number (<7H>, <Z7>, (420)).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 44,
+  "diacritics": {
+   "used": true,
+   "note": "bars on o; arcs mark nasal abbreviation"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Before 1429 (Carlo Malatesta alive). Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 14 only."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not in print or online (Meister 1902, Cecchini 1952, Senatore 2009 checked); the 1952 inventory calls the bundle 'solo parzialmente decifrate'",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Set the goal (decipher the 29 letters; try the 42 filed keys first). Instructed that DECODE records marked Decrypted are to be trusted as read.",
+  "tools": [
+   "targets/siena1421/homsolve2.py",
+   "targets/siena1421/wordsolve.py",
+   "it-cinquecento LM"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-24",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "access",
+   "what": "Found the whole busta Concistoro 2308 on DECODE (keys R4746-R4789, letters R4790-R4814, R1858), missed by the 23 Sept scan; downloaded 131 images with the project cookie (the session that worked on all the Concistoro letters).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "key from source",
+   "what": "Viewed and indexed the 43 key records of fasc. 1 (R4746-R4789); compared their alphabets by eye with this letter's signs: none fits.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "transcription",
+   "what": "No. 14 (R4802) transcribed by a subagent: ~1,300 tokens, 248 point-divided words; re-checked to split the sign OBAR into OL/OR/O after key work showed it stood for both d and m.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "wordsolve.py (spaced it-cinquecento LM, order 4/5, 10 x 300k) on no. 14 without cribs: stuck on pseudo-Italian.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "crib",
+   "technique": [
+    "simulated annealing",
+    "crib testing",
+    "repeat/pattern analysis"
+   ],
+   "what": "Hand crib on the recurring words '8 6 RR IB VB Q' = nostra/vostra, 'RR IB EQ IB 6' = stato, 'Y 6 RR IB VB' = vostr-: re-anneal gives Italian ('del nostro stato e dela nostra cita', 'considerano', 'carlo', 'toscana').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "frequency analysis"
+   ],
+   "what": "homsolve2.py (staged order 3->4 anneal, frequency-seeded restarts, swap moves) on no. 14 with NO crib reaches the same key and better score (-3991 on the corrected transcription).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "literature search",
+   "what": "No. 14 dating: Carlo Malatesta (1368-1429) alive; war of Tuscany with 'three powers' against <Z7>; not fixed (1409-14 or 1423-24 candidates).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 14 only. Fraction taken from the second reading pass (transcripts/no14_reading2.txt: 876 of 1,495 tokens in words read as sense); validation rerun on no. 14 alone.",
+   "result": "worked"
+  },
+  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 845 tokens, 35 types, it-cinquecento order 4: reading -2.153 per letter; random keys -3.953 (z 6.1); key annealed onto shuffled ciphertext best -2.793 (mean -2.828, z 29.9); annealer on the real text -2.659. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-10-14", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 845, "types": 35, "tokens_per_type": 24.14, "score": -2.153, "nulls": {"random keys": {"n": 200, "mean": -3.953, "sd": 0.296, "max": -3.304, "z": 6.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.828, "sd": 0.023, "max": -2.793, "z": 29.9, "p": 0.1429}}, "power": -2.659, "verdict": "pass", "notes": "claimed per-occurrence score -2.004; polyphony 0.043; 636 unread tokens left out; annealer on the real text from random keys reached -2.659"}, 
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "homsolve2 (staged order 3->4 annealing, frequency-seeded restarts) reached the key with no crib, the same key a hand crib had pinned first.",
+  "contribution": [
+   "key recovered",
+   "transcription",
+   "sender or date identified"
+  ],
+  "class": "read in part",
+  "key": "recovered",
+  "fraction_read": 0.586,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcripts/no14_reading2.txt COUNT: 876 of 1,495 cipher tokens in words read as sense (58.6%); 436 doubtful (29.2%), 161 unread (10.8%), 22 code signs (1.5%).",
+  "codes_open": {
+   "open": 3,
+   "tokens_open": 8
+  },
+  "verification": ["historical consistency", "statistical test"],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "doubtful and unread words (about 40% of 1,495 tokens) and the codes <7H>, <Z7>, (420)",
+    "blocker": "illegible",
+    "detail": "small signs at the DECODE resolution, mostly the first lines, lines 13-15 and the subscription; the key itself is recovered"
+   }
+  ],
+  "notes": "Sienese envoys (signed '...Marco', place Rome?) to the Priori and Capitano del Popolo, before 1429. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 14 only."
+ }
+}

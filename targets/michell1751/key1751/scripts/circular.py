@@ -22,6 +22,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import decode as b
 from common import DATA, norm, lcs
 
+# R1955's transcription moved to targets/r1955/ when the entry was split (14 Oct 2026)
+R1955 = os.path.join(DATA, '..', '..', 'r1955', 'R1955_tx.txt')
+
 FRAG = {'s', 'e', 'r', 'ent', 'ant', 'oit', 'der', 're', 'ment', 'ne'}
 MON = {'decembre': 12, 'décembre': 12, 'janvier': 1}
 
@@ -29,7 +32,7 @@ MON = {'decembre': 12, 'décembre': 12, 'janvier': 1}
 def query():
     key = b.load_key(os.path.join(DATA, 'envoy_key_lyonet.tsv'))
     Q = []
-    for code, v, conf, fl in b.decode(key, [t for t in b.load_cipher(os.path.join(DATA, 'R1955_tx.txt')) if t[0] != '||']):
+    for code, v, conf, fl in b.decode(key, [t for t in b.load_cipher(R1955) if t[0] != '||']):
         if v == '·':
             continue
         v = v.replace('princestadhouder', 'prince stadhouder').replace('PrinceStadhouder', 'prince stadhouder')

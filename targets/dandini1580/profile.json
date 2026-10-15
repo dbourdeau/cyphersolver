@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "dandini1580",
- "title": "Cardinal of Como (papal Secretariat) to Anselmo Dandini, nuncio in France, 1580 (ASV Segr. Stato Francia 283C, DECODE R72-R73)",
+ "title": "Cardinal of Como (papal Secretariat) to Anselmo Dandini, nuncio in France, 16 May 1580 (ASV Segr. Stato Francia 283C f. 52, DECODE R72)",
  "documents": [
   {
    "id": "R72",
@@ -19,43 +19,18 @@
     "source": "Contemporary decipherment written in clear below the figures on f. 52."
    },
    "length": {
-    "tokens": 519,
+    "tokens": 509,
     "unit": "code groups",
-    "measured": false
+    "measured": true,
+    "file": "measure_r72.py"
    },
    "transcription": {
     "by": "DECODE",
     "source": "SofPe 2019 transcription (DOC_R72_D1824), 1060 digits by the profile checker, parsed into groups by decrypt_r72.py",
     "image_quality": "good",
-    "notes": "Group count from the parse (509 tokens including 11 nomenclator groups and a few single-digit misreads); not re-transcribed."
-   }
-  },
-  {
-   "id": "R73",
-   "shelfmark": "ASV Segreteria di Stato, Francia 283C, ff. 89r-90r (DECODE R73)",
-   "date": "unknown",
-   "year": 1580,
-   "country": "Papal States",
-   "route": "Rome -> Paris",
-   "language": "Italian",
-   "cleartext_in_document": "none",
-   "plaintext": {
-    "location": [
-     "unrelated source"
-    ],
-    "source": "George Lasry's decryption on DECODE (DOC_R72_D3191 / DOC_R73_D3193, key DOC_R72_D3190, Oct 2020)."
+    "notes": "Group count from the DP parse (509 tokens including 24 nomenclator groups and 11 single-digit leftovers of misread figures); not re-transcribed. Counted by measure_r72.py on the parse decrypt_r72.py writes (r72_parsed.json, not committed)."
    },
-   "length": {
-    "tokens": 1082,
-    "unit": "code groups",
-    "measured": false
-   },
-   "transcription": {
-    "by": "DECODE",
-    "source": "KaJo 2017 transcription (DOC_R73_D1789) as decrypted by Lasry",
-    "image_quality": "fair",
-    "notes": "Groups counted by script in Lasry's decryption file; 32 illegible. Paper damaged, bleed-through."
-   }
+   "read": "read"
   }
  ],
  "system": {
@@ -63,7 +38,7 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "Two-digit letter homophones (second digit even in R73) and three-digit nomenclator groups closed by a mark; R72 shares the frame and nomenclator but reassigns the letter codes.",
+  "summary": "Two-digit letter homophones and three-digit nomenclator groups closed by a mark, in the frame and nomenclator of Lasry's R73 key but with the letter codes reassigned.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "2-3",
@@ -85,7 +60,7 @@
     "common words",
     "titles"
    ],
-   "unread_groups": 9
+   "unread_groups": 4
   },
   "nulls": {
    "present": false
@@ -93,12 +68,12 @@
   "key_order": "unknown",
   "word_division": "none",
   "sibling_key": "variant",
-  "notes": "R72 letter key recovered here by annealing in Lasry's R73 frame; R72 unread groups 766^, 866^, 030^, 448^; R73 866^, 466^, 766^, 324^, 300^."
+  "notes": "R72 letter key recovered here by annealing in Lasry's R73 frame; unread groups 766^, 866^, 030^, 448^. Split 14 Oct 2026: R73 (Lasry's own letter key) is now dandini1580r73."
  },
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "R72: contemporary decipherment on the leaf. R73: Lasry's decryption and key on DECODE (Oct 2020).",
+   "where": "contemporary decipherment written below the figures on f. 52",
    "found": "before attempt",
    "used": true
   },
@@ -112,14 +87,16 @@
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code, and posed the problem with /goal. No target-specific intervention recorded.",
   "tools": [
    "decrypt_r72.py (DP parse in Lasry's frame)",
-   "r72_anneal2.py (swap annealing, Italian 4-grams)"
+   "r72_anneal2.py (swap annealing, Italian 4-grams)",
+   "measure_r72.py"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -135,13 +112,19 @@
    "date": "2026-09-21"
   },
   {
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "Homophonic annealing on a naive 2-digit tokenisation of R72. Free assignment collapsed to a constant string; fixed-multiset swaps did not converge (misaligned tokens).",
    "result": "failed",
    "date": "2026-09-21"
   },
   {
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "Swap annealing of letter values on the DP parse, nomenclator words fixed as plaintext, Italian 4-grams from it-renaissance. Readable Italian at once: 'la voce et l'opinione della pratica ... con la monaca e uscita tanto publica'.",
    "result": "worked",
    "date": "2026-09-21"
@@ -151,23 +134,49 @@
    "what": "Clear block at the foot of f. 52 transcribed and recognised as the contemporary decipherment; decryption aligned with it, three codes corrected (22 l, 62 e, 72 i).",
    "result": "worked",
    "date": "2026-09-21"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former combined target (catalogue 244, R72 + R73) under the one-key rule (George Lasry, 14 Oct 2026): R72 keeps this entry with its rebuilt letter key; R73, read with Lasry's key D3190 (a different letter assignment in the same frame), is now dandini1580r73. Earlier steps are kept as recorded; R72 measured on its own key with measure_r72.py: 495 of 509 parsed tokens have a value (97.2%).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "R72 has its contemporary decipherment written out below the figures on f. 52, and R73 was already decrypted by Lasry on DECODE (D3191, key D3190, 2020); the project transcribed and checked these, and separately rebuilt R72's different letter key by annealing inside Lasry's frame and nomenclator, corrected against the leaf's decipherment.",
-  "contribution": ["key recovered"],
+  "method_basis": "R72 has its contemporary decipherment written out below the figures on f. 52; the project transcribed and checked it, and rebuilt R72's own letter key by annealing inside the frame and nomenclator of Lasry's R73 key, corrected against the leaf's decipherment.",
+  "contribution": [
+   "key recovered"
+  ],
   "class": "read",
-  "fraction_read": "unknown",
+  "fraction_read": 0.972,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
    "key confirms"
   ],
-  "notes": "R72 read (contemporary decipherment confirmed by the recovered key); R73 read by Lasry, 32 illegible groups and 5 nomenclator groups open.",
+  "notes": "R72 read (contemporary decipherment confirmed by the recovered key); four nomenclator groups open. R73 split off to dandini1580r73.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment written below the figures on f. 52 (R72)"},
-    {"who": "lasry", "role": "key or decipherment used", "note": "key D3190 (frame and nomenclator used for R72) and his R73 decryption D3191 on DECODE", "date": "2020", "source": "DECODE R72/R73, D3190, D3191"}
-  ]
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "decipherment written below the figures on f. 52 (R72)"
+   },
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "frame and nomenclator of his R73 key D3190 used to parse R72 and as fixed plaintext; his letter values do not read R72 (the R72 letter key is a different assignment, rebuilt here)",
+    "date": "2020",
+    "source": "DECODE R72, DOC_R72_D3190"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "targets/dandini1580/measure_r72.py on r72_parsed.json: cipher tokens of the DP parse; single-digit leftovers, code 32 and unread nomenclator groups count as unread",
+  "key": "recovered",
+  "codes_open": {
+   "open": 4,
+   "tokens_open": 2
+  },
+  "gaps": []
  }
 }

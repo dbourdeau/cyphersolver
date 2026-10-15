@@ -60,8 +60,8 @@ LEAVES = [
     ('fr.15572 f.196',  ['f196_cipher.txt'],   31, 'part-line after "auquel" + 30 full lines; the first three full lines and the 13th ("mo£7om...") untranscribed'),
     ('fr.15572 f.201',  ['f201_cipher.txt'],   None, ''),
     ('fr.15571 f.177',  ['f177_cipher.txt'],   29, '29 cipher lines on canvas 185 right, 24 transcribed'),
-    ('fr.15572 f.276',  [],                    27, 'Cipher-3 (Matignon); canvas 285 right; not transcribed'),
-    ('fr.15571 f.179',  [],                    25, 'Cipher-3 (Matignon); canvas 187 left, bound upside down; not transcribed'),
+    # Cipher-3 (fr. 15572 f. 276, fr. 15571 f. 179) left this entry on 14 Oct 2026 (one key per entry): it is
+    # matignon1586c3, measured there with its own key; this script measures Cipher-1 only.
 ]
 
 KEY = json.load(open('key.json', encoding='utf-8'))

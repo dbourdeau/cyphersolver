@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "target": "r4941",
+ "title": "Keresdi Bethlen collection, letter of 1648 in a different substitution, DECODE R4941 (Keresdi_Bethlen_15-05)",
+ "documents": [
+  {
+   "id": "R4941",
+   "shelfmark": "Romanian National Archives, Cluj: Keresdi_Bethlen_15-05",
+   "year": 1648,
+   "country": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "https://de-crypt.org/decrypt-web/RecordsView/4941",
+    "notes": "Images downloaded; not yet fully transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "An alphabetic substitution that the R4936/R4940 family mapping does not fit; quadgram and quintgram annealing on an extract of pages 1-2 gave no coherent Hungarian.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown"
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Supplied target records in objective file.",
+  "models": [
+   "GPT-6"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-23",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "Downloaded the four DECODE images and metadata of R4941 with the other records of R4933-R4942.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "hu-modern quadgram and quintgram annealing on a provisional extract of pages 1-2 (R4941-extract.txt; results R4941-extract-result.json, R4941-extract-5gram-result.json) gave no coherent reading; the R4936 family mapping does not fit. Long-s/f and g/q are suspected transcription confusions; pages 3-4 not inspected.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key review (Lasry's rule, 14 Oct 2026): split from transylvania1645; R4941 is in a different substitution from the R4936/R4940 family, so it is its own entry.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "method": "not solved",
+  "key": "none",
+  "verification": [
+   "none"
+  ],
+  "method_basis": "In progress: two annealing probes on a provisional extract failed; the transcription is the suspected obstacle.",
+  "notes": "In progress (split from transylvania1645, 14 Oct 2026)."
+ }
+}

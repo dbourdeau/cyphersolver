@@ -1,0 +1,129 @@
+{
+ "schema_version": 1,
+ "target": "r9319",
+ "title": "'Post Scripta' grilles of 1583: dotted sheets for clear cover letters, BayHStA Kurbayern Äußeres Archiv 4591 ff.96-114 (DECODE R9319; catalogue 161)",
+ "documents": [
+  {
+   "id": "R9319",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.96-114 (DECODE R9319)",
+   "date": "1583",
+   "year": 1583,
+   "country": "Germany",
+   "route": "unknown",
+   "language": "unknown",
+   "pages": 17,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Dot grille laid over a clear cover letter (f.115-118) that DECODE did not image."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, 3468x4624, read from crops",
+    "image_quality": "good",
+    "notes": ""
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "other"
+  ],
+  "summary": "Squared grille sheets with dots, docketed 'Post Scripta' and '...83', laid over clear cover letters: the dotted squares pick out the secret text from a letter that DECODE did not image (ff. 115-118; one shows under f.102: 'Die 4 od 5000 Cronen...').",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Split on 15 Oct 2026 from kaa4591 (catalogue 161)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "unknown",
+  "human_role": "Project-level: DECODE login cookie supplied; problem posed with /goal; the user asked for a period German model. No target-specific intervention.",
+  "tools": [],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-15"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Web search for KAA 4591 and Augurelio ciphers",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "DECODE record list from the API dump (141 records in the volume); images of the 14 targets and 30 neighbouring keys fetched with the cookie",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "R9319 identified as dot grilles laid over clear cover letters; the cover letters (ff. 115-118) are not among the DECODE images (one shows through under f.102)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591 (catalogue 161), whose fourteen records are letters in at least six systems: System A′ stays in kaa4591; Łaski's System B is kaa4591b; R9325 is fulda1576; R9367, R9416, R9424 and R9319 are r9367, r9416, r9424 and r9319; R9291 is a key fragment.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "A dot grille gives no text without the letter it was laid over, and the cover letters are not imaged on DECODE.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "verification": [],
+  "notes": "Blocked: needs images of ff. 115-118 from the archive.",
+  "gaps": [
+   {
+    "item": "the grille text",
+    "blocker": "needs-physical-access",
+    "detail": "cover letters ff. 115-118 not imaged on DECODE"
+   }
+  ],
+  "credits": []
+ }
+}

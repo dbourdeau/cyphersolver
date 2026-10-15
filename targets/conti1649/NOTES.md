@@ -1,5 +1,11 @@
 # Prince de Conti's ciphered mémoires, 26–27 March 1649 (BnF fr. 3854 nos. 41–42)
 
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This entry used to hold nos. 41–43; no. 43,
+Conti's mémoire for Laigue of 5 March 1649, is a numeric letter-and-syllable code with its own key and now has its
+own entry: [`targets/laigue1649/`](../laigue1649/NOTES.md), page `laigue1649.html` ("a different cipher, with its own
+page"). `READING43.md` and `n43/` moved there. The image list below still names canvases 245–251 (no. 43) because
+the IIIF manifest and the git-ignored images stay in this folder in the main checkout.
+
 Catalogue item 26. Worked 18 Sept 2026. **Status: read.** First deciphered by Lasry (2023). Re-deciphered independently here from my own transcription; see READING.md.
 
 ## Where the items are
@@ -51,14 +57,18 @@ cipher was brought to light by Camille Desenclos (Lachenicht & Braun 2021, p. 87
 - The images are not in the repo (see `.gitignore`). To re-fetch full resolution, use
   `https://gallica.bnf.fr/iiif/ark:/12148/btv1b52520094g/f{237,238,241,245..251}/full/full/0/native.jpg`.
 
-## No. 43 (ff. 117r–120r): the unglossed opening, read (18 Sept 2026)
+## No. 43
 
-- No. 43 is Conti's mémoire **pour Monsieur de Legue**: Laigue, his envoy to the Archduke.
-- It is in a numerical letter-and-syllable code, glossed between the lines from f. 117r l. 12 on.
-- Its first 12 lines (264 groups: the address and the purpose of the mémoire) were never deciphered. They are now
-  read in full; see `READING43.md`.
-- The key was rebuilt from the interlinear glosses and from the code's regular layout:
-  - four interleaved single-letter alphabets;
-  - syllable blocks of five, with a second homophonic series;
-  - an underlined number reverses its syllable;
-  - numbers 99–250 are nulls.
+Moved to `targets/laigue1649/` on 14 Oct 2026 (different cipher).
+
+## Measured (14 Oct 2026)
+
+`measure_4142.py`: 1,692 cipher signs outside the clear words in `transcription.txt`, 3 illegible; 1,689 of 1,692
+have a value under Lasry's key (99.8%).
+
+## Assumptions for George's review
+
+- Credit: George is credited with the prior solution of nos. 41–42 (HistoCrypt 2023: key and full text) and with the
+  key applied here; nothing on no. 43, whose code is unrelated to his key.
+- The addressee is taken as "probably Noirmoutier" from his paper; the page's recipient portrait is Louis II de La
+  Trémoille, marquis de Noirmoutier, on that basis.

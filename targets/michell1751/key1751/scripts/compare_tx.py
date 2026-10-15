@@ -3,7 +3,7 @@ fractions normalised, uncertain digits '?' kept). Prints the aligned differences
 
 usage: python scripts/compare_tx.py <ours.txt> <other.txt>
 e.g.   python scripts/compare_tx.py R1957_tx.txt ../ct.txt
-       python scripts/compare_tx.py R1955_tx.txt ../transcription_r1955.txt"""
+       python scripts/compare_tx.py ../../r1955/R1955_tx.txt ../../r1955/transcription_r1955.txt"""
 import re, sys, difflib
 
 

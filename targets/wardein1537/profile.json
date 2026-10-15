@@ -1,0 +1,270 @@
+{
+ "schema_version": 1,
+ "target": "wardein1537",
+ "title": "A Bavarian servant at Wardein to Duke Ludwig of Bavaria, 14 March 1537, BayHStA Kurbayern Äußeres Archiv 4591 ff.257-259 (DECODE R9414; catalogue 162)",
+ "documents": [
+  {
+   "id": "R9414",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.257-259 (DECODE R9414)",
+   "date": "14 Mar 1537",
+   "year": 1537,
+   "country": "Germany",
+   "route": "Wardein → Munich",
+   "language": "German",
+   "pages": 6,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Gloss over P1 l.6-8; clear opening, date and address; key rebuilt here."
+   },
+   "length": {
+    "tokens": 4675,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r9414/signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, read from crops",
+    "image_quality": "fair",
+    "notes": "transcription_v2.txt, one char per sign, '?' blots counted as signs."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic sign alphabet 'G' (own sign set, 42 signs measured), German, with a few word signs (large Ψ, swash X, K) and an unkeyed barred ∂; clear opening, date and address.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 42,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none fits: R9369 (Augurelio 1531), the System A′ key and Łaski's System B tested, no match",
+  "notes": "Split on 15 Oct 2026 from kaa4591b (catalogue 162)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Contemporary interlinear gloss over P1 l.6-8; no edition found (web search 22 Sept 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "human_role": "Project-level: DECODE login cookie; the target was assigned by the user. No target-specific intervention.",
+  "tools": [
+   "targets/wardein1537/r9414/beam2.py",
+   "targets/wardein1537/r9414/gapfill.py",
+   "lang de-1500s"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 3,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-15"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "DECODE images of R9414 (with R9403, R9415 of catalogue 162) and neighbours R9404-R9407, R9418-R9422 fetched with the cookie",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "R9369 (Augurelio's 1531 key) and the System A′ key tested on R9414 (system G)",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "R9414 transcribed (v1, then v2 on line-third crops)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "R9414 P1 l.6-8 gloss gave the first values of system G",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "R9414 annealing and de-1500s beam (beam2.py) - about 50% read",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "R9414 three visual passes over every line (cp12 logs): 77.1% then 91.3%",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search"
+   ],
+   "what": "gapfill.py one-edit lexicon search over unread R9414 words",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "literature search",
+   "what": "Web search for the Zápolya letters to the Bavarian dukes, Łaski, Augurelio, Acta Tomiciana: no edition",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "Push-to-95% pass: every unread R9414 word set beside its raw decrypt (decrypt_v2, cp12/dec_*_new) and resolved only where the decrypt itself spells the word: 'Lunden' (P1.34, the Archbishop of Lund, Charles V's negotiator with King John), 'feind' (P3.04), 'befelch' (P2.17), 'handstain' (P4.34, mining term); remaining gaps not supported by the decrypt left unread",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "transcription",
+   "what": "Full-resolution re-transcription of every non-code R9414 gap (r9414/pass4.txt); accepted 'ist', 'auch er', 'wut', 'sag wan', 'seiner', 'red'; withdrew 'handstain'; found an unkeyed barred-d sign at five gaps and the Psi code at P1.18/P1.25",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-05",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "language-model scoring"
+   ],
+   "what": "Joint LM scoring (de-1500s) of the unkeyed barred-d sign over its five R9414 places, all letters and 23 digraphs/short words, plus the large Psi word sign (proposed 'Mt.'); siblings R9403, R9415, System B key and sperantio1534 checked for both signs",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 3869 tokens, 33 types, de-1500s order 4: reading -2.249 per letter; random keys -6.676 (z 6.2); key annealed onto shuffled ciphertext best -3.639 (mean -3.69, z 54.4); annealer on the real text -2.399. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591b (catalogue 162), whose other two letters are in Łaski's System B (R9403, now with the other System B letters in kaa4591b) and system L (R9415, moved to sperantio1534). Profile, validation and measure carried over: they were already R9414's alone.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "de-1500s",
+   "file": "validation.tsv",
+   "tokens": 3869,
+   "types": 33,
+   "tokens_per_type": 117.24,
+   "score": -2.249,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.676,
+     "sd": 0.718,
+     "max": -4.951,
+     "z": 6.2,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.69,
+     "sd": 0.026,
+     "max": -3.639,
+     "z": 54.4,
+     "p": 0.1429
+    }
+   },
+   "power": -2.399,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.971; polyphony 0.043; 746 unread tokens left out; annealer on the real text from random keys reached -2.399"
+  },
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key of a new homophonic alphabet was seeded from the contemporary interlinear gloss over P1 l.6-8 and completed by annealing and beam search with the de-1500s model, then checked in four passes against the images.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "decipherment with ambiguous key"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.922,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "words of the ciphered runs: r9414/count_v2.py reading_v5.txt 958/1039; [..] counted unread",
+  "codes_open": {
+   "open": 3,
+   "total": 4,
+   "tokens_open": 10
+  },
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency",
+   "statistical test"
+  ],
+  "notes": "Under the read bar at 92.2%; the key has ambiguous homophones (alternatives in alt_v2.txt, cp12/alt_p12.txt). The barred ∂ is probably a null or mark; Ψ fits Mt. in four of six places, not counted.",
+  "gaps": [
+   {
+    "item": "code signs Ψ, swash X, K (~10 words)",
+    "blocker": "no-key-material",
+    "detail": "word signs with no key in the volume or on DECODE"
+   },
+   {
+    "item": "blotted or struck signs (~15 words)",
+    "blocker": "illegible"
+   },
+   {
+    "item": "legible unresolved words (~55)",
+    "blocker": "open-codes",
+    "detail": "after four image passes, gapfill.py and a joint LM test of the barred ∂"
+   }
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear gloss over P1 l.6-8 that seeded the key"
+   }
+  ]
+ }
+}

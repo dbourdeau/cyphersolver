@@ -159,4 +159,4 @@ PAGE_METHOD = {
     'indus': (NOT, 'none', 'Published decipherments were tested against the corpus; no reading is established.'),
 }
 # pages that report several targets, each with its own profile (the badge takes the first method in METHODS order)
-PAGE_PROFILES = {'legation': ['jqa', 'erving1807'], 'vatican': ['vatican5']}
+PAGE_PROFILES = {'vatican': ['vatican5']}

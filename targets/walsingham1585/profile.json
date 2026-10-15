@@ -14,9 +14,25 @@
    "language": "English",
    "pages": 4,
    "cleartext_in_document": "mostly clear",
-   "plaintext": {"location": ["printed edition"], "source": "CSP Scotland viii (Boyd 1914) nos. 40 and 65, calendared from Walsingham's drafts with names in clear.", "partial": false},
-   "length": {"tokens": "unknown", "unit": "code groups", "measured": false, "file": "unknown"},
-   "transcription": {"by": "llm from images", "source": "DECODE images", "image_quality": "good", "notes": "Viewed and checked against the calendar; not transcribed in full."}
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "CSP Scotland viii (Boyd 1914) nos. 40 and 65, calendared from Walsingham's drafts with names in clear.",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "code groups",
+    "measured": false,
+    "file": "unknown"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images",
+    "image_quality": "good",
+    "notes": "Viewed and checked against the calendar; not transcribed in full."
+   }
   },
   {
    "id": "R4840",
@@ -29,9 +45,25 @@
    "language": "English",
    "pages": 2,
    "cleartext_in_document": "mostly clear",
-   "plaintext": {"location": ["none"], "source": "Not calendared in CSP Scotland viii.", "partial": false},
-   "length": {"tokens": "unknown", "unit": "code groups", "measured": false, "file": "reading_R4840.txt"},
-   "transcription": {"by": "llm from images", "source": "DECODE images", "image_quality": "good", "notes": "Working transcription with gaps; the only cipher is about 20 name numbers."}
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Not calendared in CSP Scotland viii.",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "code groups",
+    "measured": false,
+    "file": "reading_R4840.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images",
+    "image_quality": "good",
+    "notes": "Working transcription with gaps; the only cipher is about 20 name numbers."
+   }
   },
   {
    "id": "R4844",
@@ -44,20 +76,54 @@
    "language": "English",
    "pages": 2,
    "cleartext_in_document": "interspersed",
-   "plaintext": {"location": ["interlinear"], "source": "Interlinear decipherment over each sign word, blotted out on purpose and illegible; not calendared in CSP Scotland viii.", "partial": true},
-   "length": {"tokens": "unknown", "unit": "mixed", "measured": false, "file": "reading_R4844.txt"},
-   "transcription": {"by": "llm from images", "source": "DECODE images", "image_quality": "good", "notes": "About fourteen sign words (roughly 120 signs) copied approximately; clear text transcribed with gaps."}
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear decipherment over each sign word, blotted out on purpose and illegible; not calendared in CSP Scotland viii.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "mixed",
+    "measured": false,
+    "file": "reading_R4844.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images",
+    "image_quality": "good",
+    "notes": "About fourteen sign words (roughly 120 signs) copied approximately; clear text transcribed with gaps."
+   }
   }
  ],
  "system": {
-  "types": ["nomenclator", "homophonic"],
+  "types": [
+   "nomenclator",
+   "homophonic"
+  ],
   "summary": "Plain-English letters with a two-digit name code for persons and countries, plus, in one letter, a few words in a sign alphabet with apparent homophones and dot/dash nulls.",
   "symbol_kind": "digits and symbols",
   "distinct_symbols": "unknown",
-  "diacritics": {"used": "unknown"},
-  "homophones": {"used": "unknown"},
-  "nomenclator": {"present": true, "entries": "unknown", "kinds": ["names", "places"], "unread_groups": 6},
-  "nulls": {"present": "unknown", "count": "unknown"},
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "names",
+    "places"
+   ],
+   "unread_groups": 6
+  },
+  "nulls": {
+   "present": "unknown",
+   "count": "unknown"
+  },
   "key_order": "unknown",
   "word_division": "kept",
   "doubled_letters": "unknown",
@@ -65,46 +131,163 @@
   "notes": "Name numbers identified from CSP Scotland viii glosses and Wotton's own reply drafts (R4841-R4843); 13, 14, 23, 30, 32, 37 open."
  },
  "conditions": {
-  "prior_solution": {"exists": "partial", "where": "CSP Scotland viii (1914) nos. 40, 65 calendar two of the four letters from Walsingham's drafts; the calendar glosses 19, 24, 39, 40 and names 20 as Morton", "found": "during attempt", "used": true},
-  "inputs": ["images", "published reading", "cleartext context"],
+  "prior_solution": {
+   "exists": "partial",
+   "where": "CSP Scotland viii (1914) nos. 40, 65 calendar two of the four letters from Walsingham's drafts; the calendar glosses 19, 24, 39, 40 and names 20 as Morton",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading",
+   "cleartext context"
+  ],
   "attack": "archive decipherment",
   "human_role": "Set the goal; the DECODE cookie saved earlier fetched the images",
-  "tools": ["DECODE API", "HathiTrust text view", "PIL crops"],
-  "models": ["claude-opus-5"],
+  "tools": [
+   "DECODE API",
+   "HathiTrust text view",
+   "PIL crops"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
   "sessions": 1,
   "first_date": "2026-09-21",
   "last_date": "2026-09-21"
  },
  "solution": [
-  {"date": "2026-09-21", "kind": "access", "what": "Fetched DECODE metadata and 18 images of R4838-R4840, R4844 with the saved cookie; also Wotton's drafts R4841-R4843.", "result": "worked"},
-  {"date": "2026-09-21", "kind": "transcription", "what": "Viewed every page: clear English letters with name numbers; only R4844 has sign-alphabet words.", "result": "worked"},
-  {"date": "2026-09-21", "kind": "literature search", "what": "CSP Scotland viii via HathiTrust text view: 28 Jul = no. 40, 7 Aug = no. 65; 21 Aug and 10 Sep not calendared; BHO paywalled.", "result": "worked"},
-  {"date": "2026-09-21", "kind": "key from source", "what": "Name code built from the calendar's bracketed glosses (19, 24, 39, 40), no. 106 (20 = Morton) and sense in Wotton's drafts (10, 11, 36).", "result": "partial"},
-  {"date": "2026-09-21", "kind": "reading", "what": "Working transcriptions of R4840 and R4844 with numbers glossed.", "result": "partial"},
-  {"date": "2026-09-21", "kind": "literature search", "what": "Looked for Wotton's sign-alphabet key on DECODE and in Tomokiyo's Elizabethan cipher pages; none found.", "result": "failed"},
-  {"date": "2026-09-21", "kind": "crib", "technique": ["crib testing", "plaintext matching"], "what": "Looked for cribs to the R4844 sign words; the interlinear decipherment is blotted out and Wotton's drafts carry no sign text. About 120 signs judged too few to break ciphertext-only.", "result": "failed"},
-  {"date": "2026-09-30", "kind": "transcription", "what": "R4840 f. 163 ll. 4-9 re-read on the image for the quotation list (30 Sept): cut after 'towards him' read as 'with the [courage] to procure the practice of 27 and 40, which as he professeth doth greatly [abuse] you, being altogether bent to [ruin] 11 course ... at 3 devotion' (M); old 'overthrow 11' corrected; 28/29/36 glosses not firmed (CSP Scotland viii unreachable, Wotton R4842 has no use of them).", "result": "partial"}
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched DECODE metadata and 18 images of R4838-R4840, R4844 with the saved cookie; also Wotton's drafts R4841-R4843.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Viewed every page: clear English letters with name numbers; only R4844 has sign-alphabet words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "CSP Scotland viii via HathiTrust text view: 28 Jul = no. 40, 7 Aug = no. 65; 21 Aug and 10 Sep not calendared; BHO paywalled.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "key from source",
+   "what": "Name code built from the calendar's bracketed glosses (19, 24, 39, 40), no. 106 (20 = Morton) and sense in Wotton's drafts (10, 11, 36).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "Working transcriptions of R4840 and R4844 with numbers glossed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Looked for Wotton's sign-alphabet key on DECODE and in Tomokiyo's Elizabethan cipher pages; none found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "Looked for cribs to the R4844 sign words; the interlinear decipherment is blotted out and Wotton's drafts carry no sign text. About 120 signs judged too few to break ciphertext-only.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-30",
+   "kind": "transcription",
+   "what": "R4840 f. 163 ll. 4-9 re-read on the image for the quotation list (30 Sept): cut after 'towards him' read as 'with the [courage] to procure the practice of 27 and 40, which as he professeth doth greatly [abuse] you, being altogether bent to [ruin] 11 course ... at 3 devotion' (M); old 'overthrow 11' corrected; 28/29/36 glosses not firmed (CSP Scotland viii unreachable, Wotton R4842 has no use of them).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key review (Lasry's rule, 14 Oct 2026): the name code and the sign alphabet of 10 Sep are two different ciphers, so the outcome is given per part: name code, key recovered from external plaintext (CSP glosses), 34 of 46 units; sign alphabet not solved, too short. The pooled 0.49 is kept only as a labelled total.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "transcription",
+   "what": "Second pass on the clear-text gaps of R4840 and R4844 from the DECODE images (clear_gaps_pass2.md): 46 places, 32 read H/C, 8 M, 6 illegible; nine corrections to the working transcriptions (e.g. 'they are all borne under one planett', 'the ffrenche K.'), not yet merged into reading_R4840/R4844.",
+   "result": "partial"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "clear letters with about 40 two-digit name codes (one name each) and an unread 14-word sign run; no letter-level cipher reading to test"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "verdict": "not applicable",
+   "notes": "clear letters with about 40 two-digit name codes (one name each) and an unread 14-word sign run; no letter-level cipher reading to test"
+  },
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "The two-digit name code was rebuilt mainly from the bracketed glosses in CSP Scotland viii (1914) nos. 40, 41, 65, 106 (19 Arran, 24 Farnihurst, 39 Gray, 40 Justice Clerk, 20 Morton, 10 the King), supplemented by sense in Wotton's drafts R4841-R4843 in the same volume; the letters are otherwise in clear.",
-  "contribution": ["transcription", "key recovered"],
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
   "gaps": [
-   {"item": "R4844 sign words (~14 words, ~120 signs)", "blocker": "too-short", "detail": "homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out"},
-   {"item": "name codes 13, 14, 23, 30, 32, 37", "blocker": "open-codes", "detail": "not glossed in CSP or Wotton drafts; context too thin"},
-   {"item": "clear-text gaps [..] in reading_R4840/R4844", "blocker": "not-attempted", "detail": "working transcriptions left gaps; no second pass recorded"}
+   {
+    "item": "R4844 sign words (~14 words, ~120 signs)",
+    "blocker": "too-short",
+    "detail": "homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out"
+   },
+   {
+    "item": "name codes 13, 14, 23, 30, 32, 37",
+    "blocker": "open-codes",
+    "detail": "not glossed in CSP or Wotton drafts; context too thin"
+   },
+   {
+    "item": "clear-text gaps [..] in reading_R4840/R4844",
+    "blocker": "illegible",
+    "detail": "second pass 14 Oct 2026 (clear_gaps_pass2.md): 32 of 46 places read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words)"
+   }
   ],
   "fraction_read": 0.49,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_R4840.txt, reading_R4844.txt + R4838/R4839 code lists in NOTES: 69 cipher units (name-code numbers, one per occurrence; each sign-alphabet word as one unit); read = name code graded H/C/M; unread = codes 13, 14, 23, 30, 32, 37, 9 and all 23 sign words in R4844. R4838/R4839 codes counted once each (occurrence counts not recorded)",
+  "fraction_read_source": "reading_R4840.txt, reading_R4844.txt + R4838/R4839 code lists in NOTES: 69 cipher units (name-code numbers, one per occurrence; each sign-alphabet word as one unit); read = name code graded H/C/M; unread = codes 13, 14, 23, 30, 32, 37, 9 and all 23 sign words in R4844. R4838/R4839 codes counted once each (occurrence counts not recorded). Pooled over two different ciphers; per part: name code 34/46 (0.74), sign alphabet 0/23 words (outcome.parts)",
   "key": "partial",
-  "codes_open": {"open": 6, "total": 18},
+  "codes_open": {
+   "open": 6,
+   "total": 18
+  },
   "grades": "unknown",
-  "verification": ["historical consistency"],
+  "verification": [
+   "historical consistency"
+  ],
   "notes": "All four letters readable; two already in print as calendar abstracts. Name code mostly identified; the ~14 sign words of 10 Sep 1585 unread. fraction_read is a rough estimate from NOTES, not a count: name numbers mostly identified (6 of 16 open), the ~14 sign words of R4844 unread.",
   "credits": [
-    {"who": "boyd", "role": "key or decipherment used", "note": "CSP Scotland viii (1914) glosses of the name code (19, 24, 39, 40; 20 Morton)", "date": "1914"}
+   {
+    "who": "boyd",
+    "role": "key or decipherment used",
+    "note": "CSP Scotland viii (1914) glosses of the name code (19, 24, 39, 40; 20 Morton)",
+    "date": "1914"
+   }
+  ],
+  "parts": [
+   {
+    "label": "two-digit name code (persons, parties, places)",
+    "records": "R4838, R4839, R4840, R4844: the numbers in all four letters",
+    "method": "key recovered based on plaintext from external sources",
+    "extent": "partial",
+    "basis": "from the bracketed glosses in CSP Scotland viii (1914) nos. 40, 41, 65, 106 and sense in Wotton's drafts R4841-R4843: 12 of 18 numbers identified (19 Arran, 24 Farnihurst, 39 Gray, 40 Justice Clerk, 20 Morton, 10 the King at H); 13, 14, 23, 30, 32, 37 open; 34 of 46 name-code units read (from the 0.49 measure over 69 units, 23 of which are sign words)"
+   },
+   {
+    "label": "sign alphabet of the 10 Sep 1585 letter",
+    "records": "R4844 (ff. 194-195): about 23 sign words, about 120 signs",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "homophonic sign alphabet with dot/dash nulls; Wotton's interlinear decipherment blotted out on purpose; no key on DECODE or in Tomokiyo, no crib in Wotton's drafts; too short to break"
+   }
   ]
  }
 }

@@ -5,6 +5,12 @@ Catalogue no. 17 (priority 5.0, class B). Opened 19 Sept 2026.
 Status: solved. Both ciphers identified and keyed; f. 370 decoded and verified letter-for-letter against the
 independent clear copy.
 
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. This entry now keeps
+**ff. 370 and 373, Maisse's Cipher (1592)**. ff. 406 and 410 (with f. 404, f. 412) are in Maisse's Cipher (1592-1593),
+a different cipher, with its own page ([`targets/maisse1593/`](../maisse1593/), docs/maisse1593.html); Tomokiyo's key
+image for it (`src/henryiv_Maisse2.png`) moved there. The notes below cover the whole catalogue item and stay here as
+the record; the fetch scripts and the git-ignored images (`img/`, `br/`, `src/`) serve both entries.
+
 Open question (22 Sept 2026, site review): profile.json has class read, fraction_read 1.0, but the key was checked
 letter for letter on f. 370 only (81 characters); ff. 373, 406 and 410 were read from the Brienne clear copy, not
 deciphered from the cipher. Decide next time whether 1.0 should stand, or whether the other three leaves should be

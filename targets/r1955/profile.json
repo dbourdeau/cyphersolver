@@ -1,0 +1,229 @@
+{
+ "schema_version": 1,
+ "target": "r1955",
+ "title": "Frederick II (ministerial rescript) to Louis Michell (London), Berlin 28 Dec 1751, KHA Prins Willem V inv. 198 (DECODE R1955), in Michell's envoy code",
+ "documents": [
+  {
+   "id": "R1955",
+   "read": "read in part",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, Prins Willem V inv. 198 (DECODE R1955)",
+   "date": "28 Dec 1751",
+   "year": 1751,
+   "country": "Prussia",
+   "route": "Berlin -> London (Dutch interceptors' copy, The Hague)",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Ministerial rescript; not in the Politische Correspondenz; no printed or online decipherment found."
+   },
+   "length": {
+    "tokens": 362,
+    "distinct": 296,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_r1955.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images P2 (first page) and P1, one line per manuscript line",
+    "image_quality": "unknown",
+    "notes": "NOTES give 295 distinct; the measured count is 296 (half-groups such as 1½ and uncertain readings marked ? count as written)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "nomenclator"
+  ],
+  "summary": "Michell's envoy code of 1751-52: a large numerical code of groups 2-5346 with half-groups (1½, 150½, 660½) and homophones even for de and que.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "dots"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true,
+   "note": "Half-groups (a fraction ½ written after the integer) are separate codes; some groups underlined once or twice, function not established."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": "unknown",
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Added by WAINUT (11 Oct 2026): the code of Michell's own reports to the King (DECODE R1050, 5 Sep 1752; R1051, 12 Nov 1751), whose contemporary Dutch decipherments give 271 code values (targets/michell1751/key1751/scripts/envoy_key.py). Not the cabinet code of R1957 (targets/michell1751/); DECODE R1953 (von der Hellen, 4 Jan 1752) is a different, smaller code.",
+  "notes": "Split 14 Oct 2026 from michell1751 under the one-key rule. 296 distinct of 362 groups (measured on transcription_r1955.txt; WAINUT's R1955_tx.txt counts 360, keeping one nine-digit run as one group)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Ministerial rescript, not in the Politische Correspondenz; no printed or online decipherment found",
+   "found": "unknown",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "transcription"
+  ],
+  "attack": "sibling key",
+  "human_role": "Supplied the DECODE login (session cookie) for the images. WAINUT contribution (11-12 Oct 2026): the images and the DECODE transcriptions of R1050/R1051 were fetched with a WAINUT DECODE account; the analysis was automated (see NOTES); human interventions on this target beyond setting the goal are not recorded.",
+  "tools": [
+   "key1751/scripts in targets/michell1751/: envoy_key.py, decode.py, coherence.py, circular.py, compare_tx.py"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-19",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-19",
+   "kind": "access",
+   "what": "Fetched DECODE R1955 (and R1957, targets/michell1751/) images with the cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "transcription",
+   "what": "R1955 (the other letter of the same date, ministerial rescript) transcribed in full: 362 groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "R1955 vs R1957: 19 shared distinct groups, chance collisions; 296 distinct in 362, commonest group 5 times: large homophonic code with nothing for ciphertext-only analysis.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "literature search",
+   "what": "Printed or online decipherment of R1955 sought; the ministerial rescripts are not in the Politische Correspondenz; none found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "sibling key",
+   "what": "DECODE R1953 (von der Hellen to the King, 4 Jan 1752) checked as a sibling of R1955: different, smaller code.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "transcription",
+   "what": "WAINUT: R1955 transcribed independently from the DECODE images (360 groups; one unsplit nine-digit run) (R1955_tx.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "statistics",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT: R1955 against the cabinet keys: v1 gives a value to 10 of 360 groups (2.8%), v2 to 20 (5.6%), against 181 of 548 (33.0%) and 381 (69.5%) for R1957: R1955 is not in the cabinet code.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "WAINUT: table of Michell's envoy code (271 codes, 512 pairs) built from DECODE's transcriptions of the contemporary Dutch decipherments of Michell's reports R1050 and R1051 (key1751/scripts/envoy_key.py; table not committed); applied to R1955: 95 of 360 groups (26.4%) decoded; adjacent decoded words attested as French word pairs 19 of 30 against 11.1 for permutations (p = 0.001; with PC 8-9 only as corpus 14 vs 9.5, p = 0.046; the right v1 decode of R1957 scores only p = 0.28 on this test).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "WAINUT circular-letter test, rule fixed in advance: LCS of R1955's 77 decoded words with each French PC 8-9 letter, z against 100 shuffles; best candidate (22 Dec 1751 - 10 Jan 1752) PC 5268 z = 2.69, highest control PC 5117 z = 4.85; no candidate qualifies; positive control finds a 17% word sample in its source at z 27.6-31.3 and in a 50% paraphrase at 5.8-10.9 (key1751/scripts/circular.py).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "literature search",
+   "what": "WAINUT prior-art check: this folder's predecessor (michell1751, Bourdeau, 19 Sep 2026) had transcribed R1955. A contemporary Dutch decipherment of R1955 may exist in Nationaal Archief 1.01.50 inv. 159 (not digitised); not consulted.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "verification",
+   "what": "WAINUT transcriptions compared with Bourdeau's (compare_tx.py): R1955 352 of 360 groups agree, 8 differences.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from michell1751 under the one-key rule (Lasry, 14 Oct 2026): R1955 is in Michell's envoy code, not the cabinet code of R1957, so it is its own entry. Fraction re-counted from R1955_reading_line.txt: 95 of 360 groups have a value.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-10-15", "verdict": "not applicable", "notes": "Whole-word code decoded in isolated fragments (95 of 360 groups, mostly single words between unread groups); the letter n-gram test has no continuous text to score. WAINUT's word-pair coherence test (19 of 30 adjacent pairs attested against 11.1 for permutations, p = 0.001) is the statistical check."}, 
+  "method": "read after matching with key from external sources",
+  "method_basis": "The contemporary Dutch decipherments of Michell's own reports R1050/R1051 (271 code values, from DECODE's transcriptions) were matched to R1955 by WAINUT: 95 of 360 groups (26.4%) take a value, against 2.8-5.6% for the cabinet code, and adjacent decoded words are coherent above chance (19/30 against 11.1, p = 0.001); fragments only.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.264,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "R1955_reading_line.txt: 95 of 360 groups with a value from the envoy table (WAINUT's group division of R1955_tx.txt), '·' counted as unread",
+  "grades": "unknown",
+  "verification": [
+   "statistical test"
+  ],
+  "codes_open": {
+   "open": "unknown",
+   "total": "unknown",
+   "tokens_open": 265
+  },
+  "gaps": [
+   {
+    "item": "R1955, 265 of 360 groups without a value in the envoy table",
+    "blocker": "no-key-material",
+    "detail": "The table comes from two decipherments of Michell's reports (R1050, R1051); further decipherments (probably KHA A31-1181) are not online, and a contemporary decipherment of R1955 may be in Nationaal Archief 1.01.50 inv. 159, not digitised. Not in print: ministerial rescripts are not in the Politische Correspondenz."
+   }
+  ],
+  "notes": "WAINUT's result (PR #29), checked here: transcription compared and fraction re-counted. The subject cannot be stated beyond Dutch affairs (the Prince Stadholder, the States) and a negotiation involving Vienna. Split 14 Oct 2026 from michell1751.",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR #29 (WAINUT): R1955 identified as Michell's envoy code and decoded in part (26.4%) with the Dutch decipherments of R1050/R1051; circular-letter test",
+    "date": "2026-10-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/29"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Dutch decipherments of Michell's reports R1050/R1051 (DECODE), source of the envoy table"
+   }
+  ]
+ }
+}

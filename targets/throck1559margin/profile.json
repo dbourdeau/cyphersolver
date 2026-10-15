@@ -1,0 +1,176 @@
+{
+ "schema_version": 1,
+ "target": "throck1559margin",
+ "title": "The marginal word-sign code on Throckmorton's leaf of 10 July 1559, BL Add MS 4136 f. 32 (DECODE R2988; catalogue 97)",
+ "documents": [
+  {
+   "id": "R2988-margin",
+   "shelfmark": "BL Add MS 4136 f. 32, lower margin and beside the subscription (DECODE R2988)",
+   "date": "8 Jul 1559 (?)",
+   "year": 1559,
+   "country": "France",
+   "route": "unknown",
+   "language": "unknown",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "probably a copy of the 8 July 1559 despatches (CSP For. i 947, 950: abstracts only; originals TNA SP 70/5)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 222,
+    "distinct": 141,
+    "unit": "code groups",
+    "measured": false,
+    "file": "margin_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE image IMG_R2988_I20714_P.jpg, crops at 2.5x, first pass",
+    "notes": "About 405 signs in 222 groups (margin_stats.py: 222 tokens, 141 types, 113 hapax); about 29 base shapes and 80 shape+dot forms; the clear year 1559 in the date line."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Word-sign system (shorthand or dotted-letter word code): small letter-like signs whose value changes with the position of dots, groups of 1-4 signs, '/' and '//' as clause marks.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 80,
+  "diacritics": {
+   "used": true,
+   "note": "dots above, right and doubled change a sign's value"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "notes": "Group statistics match English words (222 tokens, 141 types, 113 hapax; Bain windows 140/107), not letters. distinct_symbols = shape+dot forms (about 80). Not Throckmorton's Cipher 1 (throck1559) nor the Moray-Wood cipher (wod1568)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Tomokiyo, cryptiana unsolved.htm, lists it as unidentified",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "subagent transcription"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Tomokiyo unsolved.htm and project throckmorton notes: the f. 32 margin is one of the two unidentified ciphers on the Add MS 4136 leaves.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "R2988 margin tested as mirror or inverted script.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "R2988 margin sign inventory attempted; signs could not be fixed reliably from the scan.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Margin identified as a separate text dated '8 … 1559' with a starred insertion block; likely Throckmorton's copy of his 8 July despatch (CSP For. i 947/950).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "CSP Foreign vol. 1 pp. 362-369 (BHO): 8 July abstracts only; no verbatim text of the margin or of the 10 July letter.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "statistics",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Margin transcribed (~405 signs, 217 groups, ~80 sign+dot forms, mean group length 1.87, half the groups single signs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Letter-substitution rejected on group-length statistics; word-sign shorthand/code with no key or crib, so no statistical attack.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "control",
+   "what": "Margin word-level test: 222 groups, 141 types, 113 hapax, matching English word statistics (140/107); word-sign code; 51% of tokens are hapax, so at most 49% is identifiable without key or crib.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from wod1568, which had joined three systems on BL Add MS 4136 ff. 32-33: Throckmorton's Cipher 1 letter of 10 July 1559 (throck1559), the f. 32 marginal word-sign code (throck1559margin) and John Wood's 1568 line (wod1568). This profile keeps the f. 32 marginal word-sign code only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The groups have the type and hapax counts of English words, so the margin is a word-sign code; 51% of its tokens are signs used once, which no ciphertext-only method can determine, and no key or verbatim crib exists in the volume or in print.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "No group of margin_transcription.txt is claimed as read.",
+  "verification": [],
+  "notes": "Attempted, closed unread 21 Sept 2026. Probably Throckmorton's copy of the 8 July 1559 despatches; needs its key or the SP 70/5 originals as a crib. Split 14 Oct 2026 from wod1568.",
+  "gaps": [
+   {
+    "item": "f. 32 margin, about 405 signs in 222 groups",
+    "blocker": "no-key-material",
+    "detail": "word-sign code, 113 of 141 types used once; needs its key or TNA SP 70/5 (CSP For. i 947, 950)"
+   }
+  ],
+  "credits": []
+ }
+}

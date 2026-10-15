@@ -1,4 +1,6 @@
-"""Write targets/r1854/profile.json (run from targets/r1854/)."""
+"""Write targets/r1854/profile.json (run from targets/r1854/).
+SUPERSEDED 14 Oct 2026: the entry was split into r1854 (image 2), malatesta1428 (image 1), mutiliana1428 (image 3)
+and cattanei1430 (images 4-5); this script writes the old combined profile and must not be rerun."""
 import json
 
 D = '2026-09-22'

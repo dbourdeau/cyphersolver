@@ -1,0 +1,140 @@
+{
+ "schema_version": 1,
+ "target": "emery1636",
+ "title": "Michel Particelli d'Émery to Henri de Rohan, 25 January 1636, and Rohan's reply (BnF Français 5190 nos. 171-172)",
+ "documents": [
+  {
+   "id": "fr5190-no171",
+   "read": "not read",
+   "shelfmark": "BnF Français 5190 no. 171 (beyond the Gallica reproduction btv1b9059471x, which ends at manuscript p. 80)",
+   "date": "25 January 1636",
+   "year": 1636,
+   "country": "Italy",
+   "route": "Michel Particelli d'Émery, French ambassador in Savoy -> Henri de Rohan, Valtellina",
+   "language": "French",
+   "pages": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none found",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown",
+    "measured": false
+   },
+   "transcription": "unknown"
+  },
+  {
+   "id": "fr5190-no172",
+   "read": "not read",
+   "shelfmark": "BnF Français 5190 no. 172 (beyond the Gallica reproduction)",
+   "date": "early 1636",
+   "year": 1636,
+   "country": "Italy",
+   "route": "Henri de Rohan, Valtellina -> Michel Particelli d'Émery",
+   "language": "French",
+   "pages": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none found",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown",
+    "measured": false
+   },
+   "transcription": "unknown"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Unknown: the manuscript of d'Émery's cipher letter and Rohan's reply has not been seen.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "sibling_key": "none",
+  "notes": "Whether d'Émery's letter and Rohan's reply share a key, or share one with the Savoy and Canisy letters (rohan1636), is not established. Split on 14 Oct 2026 from rohan1636."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "The user supplied the target description, archive URLs and the proposed Savoy/Canisy known-plaintext route.",
+  "tools": [
+   "Gallica image inspection"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-22",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Checked Français 5190 for d'Émery's cipher letter (no. 171) and Rohan's reply (no. 172); view requests past 90 returned the same final image, manuscript p. 80.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former rohan1636 group under the one-key rule (George Lasry, 14 Oct 2026): no key shared with the Savoy and Canisy letters is shown, so d'Émery's letter and Rohan's reply are their own entry.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The two letters are beyond the Gallica reproduction of Français 5190; neither ciphertext nor plaintext has been seen.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "No ciphertext in hand.",
+  "verification": [
+   "none"
+  ],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "Français 5190 nos. 171-172",
+    "blocker": "needs-physical-access",
+    "detail": "the Gallica reproduction stops at manuscript p. 80; new images or the volume itself are needed"
+   }
+  ],
+  "notes": "Split on 14 Oct 2026 from rohan1636. If the Savoy/Canisy ciphertext is obtained and its key rebuilt from the 1758 print, test it here rather than assume it."
+ }
+}

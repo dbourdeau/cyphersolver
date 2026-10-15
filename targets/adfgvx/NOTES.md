@@ -145,3 +145,23 @@ The list entry should read "22 messages, 9 solved, 3 partly read, 10 open", with
 published alongside the other fifteen. The ten open ones need either the Childs originals (several carry
 explicit gap marks and one says "missing 10 letters"; the printed transcription is not the last word) or a key
 that was never in the Childs corpus. This file's earlier line "1 of 22 read" undercounted the field by eight.
+
+## One key at a time (14 Oct 2026)
+
+Under the one-key rule (George Lasry, 14 Oct 2026) the result is now stated per period key. The twenty-two
+messages stay one entry, because they are one filed list; `profile.json` `outcome.parts` carries one item per key
+and the README one row per part:
+
+| key | messages (Childs pages) | solved | partial | open |
+|---|---|---|---|---|
+| 1-3 Nov, length 19 | 100, 105, 109 | 3 | 0 | 0 |
+| 4-6 Nov, length 17 | 132, 146 | 2 | 0 | 0 |
+| 7-9 Nov | 171, 164 (F-G-X), 164 (VFGAG) | 1 | 2 | 0 |
+| 10-12 Nov | 176 ("missing 10 letters") | 1 | 0 | 0 |
+| CHI 13 Nov (Lasry's sixteenth, length 16) | 187 (FFVXV), AFAFF | 2 | 0 | 0 |
+| 22-24 Nov | VGADA (Childs p. 215) | 0 | 1 | 0 |
+| no known key fits | 73, 152, 153 (VFVAX), 153 (AXVAA), 158, 170, 176 (GGDAA), 189, 198, 217 | 0 | 0 | 10 |
+
+The last row is "not solved": the entry is not complete while those ten are open. Credits stay as they were:
+the published period keys (Lasry, Niebel, Kopal, Wacker), Lasry's CHI key and its two messages (his comments
+50-53), Norbert's and Baertl's 2017 readings.

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "target": "turculet1709",
+  "title": "Constantin Turculet(?) to Hetman Sieniawski(?), news from Bender, 1709 (DECODE R7481, R7482)",
+  "documents": [
+    {
+      "id": "R7481-R7482",
+      "read": "read",
+      "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 26/32 nr 5 pp. 1-3 and 5-6; DECODE R7481, R7482",
+      "date": "1709",
+      "year": 1709,
+      "country": "Moldova",
+      "route": "Constantin Turculeț(?) -> Hetman Sieniawski(?)",
+      "language": "Polish",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "interlinear",
+          "separate folio"
+        ],
+        "source": "full interlinear decipherment; p. 3 is a fair copy of the decipherment of pp. 1-2; key B printed by Kaczka 2012 fn. 22, plaintext unpublished",
+        "partial": false
+      },
+      "length": {
+        "tokens": 877,
+        "unit": "symbols",
+        "measured": true,
+        "file": "R7481_pass2.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE IMG_R7481, IMG_R7482",
+        "image_quality": "good",
+        "notes": "R7481 522 tokens (520 read; 407 and 700 unglossed nulls), R7482 355 (all read); second pass sien/R7481_pass2.txt, R7482_pass2.txt."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic",
+      "nomenclator"
+    ],
+    "summary": "A numerical substitution, comma-separated (key B, the Turculet key of Kaczka 2012 fn. 22: a=37 b=51 c=71 d=100 e=1 ... z=27), with a few code numbers and nulls (407, 700); Polish and Latin.",
+    "symbol_kind": "digits",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": true
+    },
+    "nulls": {
+      "present": true,
+      "count": 2
+    },
+    "key_order": "random",
+    "word_division": "partial",
+    "sibling_key": "Kaczka 2012 fn. 22 (key B); used to check the interlinear decipherment",
+    "notes": "Split 14 Oct 2026 from sieniawski1708."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "the contemporary interlinear decipherment; key B printed by Kaczka 2012 fn. 22, the letters not printed",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "published key"
+    ],
+    "attack": "archive decipherment",
+    "human_role": "Project-level: DECODE login cookie supplied and the target assigned in a brief (catalogue entry 333). No target-specific intervention.",
+    "tools": [
+      "DECODE JSON API and filesrv download",
+      "subagent transcription and token-by-token check"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 2,
+    "first_date": "2026-10-09",
+    "last_date": "2026-10-14"
+  },
+  "solution": [
+    {
+      "kind": "access",
+      "what": "DECODE metadata for R7460-R7507 by API; 130 images of R7462-R7507 with the session cookie; no key or decryption file on any record.",
+      "result": "worked",
+      "date": "2026-10-09"
+    },
+    {
+      "kind": "literature search",
+      "what": "Kaczka, Danubius XXX (2012) prints the Brâncoveanu/Cantacuzino letters of nr 13 and nr 5 from these originals with keys A and B; nothing on the Schenck letters, R7475, R7476, R7481-R7482, R7484-R7485.",
+      "result": "worked",
+      "date": "2026-10-09"
+    },
+    {
+      "kind": "transcription",
+      "what": "Subagents transcribed the unprinted Sieniawski pieces with their interlinear decipherments: R7475 (alphabetical homophonic table rebuilt from the gloss), R7476 and R7484-R7485 (Chomentowski's 3-digit syllabary, syllabary.tsv), R7481-R7482 (key B).",
+      "result": "worked",
+      "date": "2026-10-09"
+    },
+    {
+      "kind": "verification",
+      "what": "R7481, R7482, R7484, R7485 checked token by token against gloss and key (encipherment slips settled): 99.6%, 100%, 95.9%, 100% read as sense.",
+      "result": "worked",
+      "date": "2026-10-09"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "Entry split on 14 Oct 2026 from sieniawski1708 under the one-key rule (Lasry, 14 Oct 2026): the Vienna-Schenck letters are schenck1706; the Sieniawski letters are one entry per key: key A (sieniawski1708), key B (turculet1709), the R7475 table (r7475), the Chomentowski syllabary (chomentowski1713). ",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "method": "read from existing decipherment",
+    "method_basis": "Both letters carry a full contemporary interlinear decipherment (and p. 3 a fair copy of it), transcribed and checked token by token against Kaczka's key B; his edition did not print these letters.",
+    "contribution": [
+      "transcription",
+      "catalogue correction"
+    ],
+    "class": "read",
+    "key": "recovered",
+    "verification": [
+      "contemporary decipherment",
+      "key confirms"
+    ],
+    "notes": "Split on 14 Oct 2026 from sieniawski1708.",
+    "fraction_read": 0.998,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "R7481_pass2.txt: 520 of 522 tokens give sense (the two open are the nulls 407, 700); R7482_pass2.txt: 355 of 355; 875 of 877",
+    "codes_open": {
+      "open": 0,
+      "total": "unknown"
+    },
+    "gaps": [],
+    "credits": [
+      {
+        "who": "kaczka",
+        "role": "key or decipherment used",
+        "note": "key B (Danubius XXX, 2012, fn. 22), used to check the interlinear decipherment",
+        "date": "2012",
+        "source": "M. W. Kaczka, 'Unpublished Letters of Constantin Brâncoveanu and Constantin Stolnicul Cantacuzino, from the Polish Archives', Danubius XXX (2012), pp. 101-140"
+      },
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "full interlinear decipherment on R7481 and R7482, fair copy on R7481 p. 3"
+      }
+    ]
+  }
+}

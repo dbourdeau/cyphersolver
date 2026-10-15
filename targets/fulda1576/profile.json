@@ -1,0 +1,152 @@
+{
+ "schema_version": 1,
+ "target": "fulda1576",
+ "title": "The Fulda protest of 1576: a ciphered note in the Bavarian key volume, BayHStA Kurbayern Äußeres Archiv 4591 f.129 (DECODE R9325; catalogue 161)",
+ "documents": [
+  {
+   "id": "R9325",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 f.129 (DECODE R9325)",
+   "date": "[1576]",
+   "year": 1576,
+   "country": "Germany",
+   "route": "unknown (a note to the Bavarian court on the Fulda affair)",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; read here with key R9324 from the same volume."
+   },
+   "length": {
+    "tokens": 270,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r9325/signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, 3468x4624, read from crops",
+    "image_quality": "good",
+    "notes": "Codes per sign in r9325/reading.txt; nomenclator signs one token each; signs.txt written by decode.py."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Letter substitution with signs for doubled letters (bb, cc, dd, ee, ff, nn, ss, tt) and for sch/st/sp/ch, six null signs, and a nomenclator of the Fulda affair (Pontifex, the ecclesiastical electors, Würzburg, the abbot, chapter and dean of Fulda, the Emperor, Archdukes, Landgrave Wilhelm ...), all on key R9324 (ff. 124-127).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 35,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true,
+   "count": 6
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "own symbols",
+  "sibling_key": "R9324 (ff. 124-127, same volume), matched by its identical set of null signs",
+  "notes": "Split on 15 Oct 2026 from kaa4591 (catalogue 161)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the record; no edition found (web search 2026-09-21). The key R9324 is filed in the same volume.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Project-level: DECODE login cookie supplied; problem posed with /goal; the user asked for a period German model. No target-specific intervention.",
+  "tools": [
+   "targets/fulda1576/decode.py"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-15"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Web search for KAA 4591 and Augurelio ciphers",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "DECODE record list from the API dump (141 records in the volume); images of the 14 targets and 30 neighbouring keys fetched with the cookie",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "R9325 matched to key R9324 by identical null signs; applied",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "R9325 deciphered sign by sign with R9324: every word Latin; slips secr(e)to, iuxilio for auxilio, uoluid for voluit; the nomenclator gives Pontifex, Abbas Fuldensis, Consiliarii Caesaris, Dux Bavariae, Nuncius Apostolicus (r9325/reading.txt)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591 (catalogue 161), whose fourteen records are letters in at least six systems: System A′ stays in kaa4591; Łaski's System B is kaa4591b; R9325 is fulda1576; R9367, R9416, R9424 and R9319 are r9367, r9416, r9424 and r9319; R9291 is a key fragment. decode.py written: the key applied to the transcription gives the reading except 18 of 270 signs (c/o look-alikes, the writer's slips, and line 4, whose transcription keeps a first pass); reveal and signs.txt from it.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Key R9324, filed a few leaves earlier in the same volume, was matched to R9325 by its identical null signs and applied unchanged.",
+  "contribution": [
+   "transcription",
+   "sender or date identified"
+  ],
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "r9325/reading.txt: every word of the plain column read (three scribal slips: secrto, iuxilio, uoluid)",
+  "codes_open": {
+   "open": 0,
+   "total": 6
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "The note concerns the deposition of Abbot Balthasar von Dernbach of Fulda by his chapter and knights with Julius Echter of Würzburg (1576); dated from the nomenclator and the content.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "key R9324 in the same volume"
+   }
+  ]
+ }
+}

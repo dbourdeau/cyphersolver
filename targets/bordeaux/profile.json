@@ -14,11 +14,19 @@
    "pages": 7,
    "cleartext_in_document": "separate passages",
    "plaintext": {
-    "location": ["separate collection"],
+    "location": [
+     "separate collection"
+    ],
     "source": "No decipherment of the letter exists. The English Deciphering Branch's key sheet for 'Mr. Bordeaux' 1653 (BL Add MS 32263 f. 1, DECODE R7537) is a key, not a plaintext; it was the source of the reading.",
     "partial": true
    },
-   "length": {"tokens": 813, "distinct": 149, "unit": "mixed", "measured": true, "file": "ct2.txt"},
+   "length": {
+    "tokens": 813,
+    "distinct": 149,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ct2.txt"
+   },
    "transcription": {
     "by": "mixed",
     "source": "Tomokiyo's provisional transcription (810 tokens, 156 symbols), corrected against DECODE page images",
@@ -29,15 +37,40 @@
   }
  ],
  "system": {
-  "types": ["homophonic", "syllabic", "nomenclator"],
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
   "summary": "Letters as graphic signs and plain numbers 15-37; three diacritic-marked number series (prime, two dots, overbar) are alphabetical CV syllabaries with common words embedded; a few name codes.",
   "symbol_kind": "digits and symbols",
-  "digit_groups": {"width": "1-3", "separation": "spaces"},
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "spaces"
+  },
   "distinct_symbols": 156,
-  "diacritics": {"used": true, "note": "Prime, two dots and overbar on numbers select the syllable series; the clerk often omits them."},
-  "homophones": {"used": true, "max_per_vowel": "unknown", "max_per_consonant": "unknown"},
-  "nomenclator": {"present": true, "entries": "unknown", "kinds": ["syllables", "common words", "names"], "unread_groups": 14},
-  "nulls": {"present": "unknown"},
+  "diacritics": {
+   "used": true,
+   "note": "Prime, two dots and overbar on numbers select the syllable series; the clerk often omits them."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names"
+   ],
+   "unread_groups": 14
+  },
+  "nulls": {
+   "present": "unknown"
+  },
   "key_order": "partly alphabetical",
   "word_division": "none",
   "doubled_letters": "ll is a sign of its own",
@@ -45,41 +78,148 @@
   "notes": "14 unread: name codes 25‾ 28‾ 43‾ 332 344 396‾ and the rare tokens 6¨ 10 30' 35' 68' 98 14' 46¨."
  },
  "conditions": {
-  "prior_solution": {"exists": "in archive", "where": "English Deciphering Branch key sheet, BL Add MS 32263 f. 1 (DECODE R7537)", "found": "during attempt", "used": true},
-  "inputs": ["transcription", "images", "key from archive", "sibling key"],
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "English Deciphering Branch key sheet, BL Add MS 32263 f. 1 (DECODE R7537)",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "images",
+   "key from archive",
+   "sibling key"
+  ],
   "attack": "key from archive",
   "human_role": "Supplied the DECODE login (session cookie) for the key sheet and page images.",
-  "tools": ["6-gram French language model (lm.py)", "simulated annealing with monotone syllabary alignment (solver.py)", "matched controls (make_control.py)", "apply_key.py"],
-  "models": ["claude-fable-5-1", "claude-opus-5", "claude-opus-5-5"],
+  "tools": [
+   "6-gram French language model (lm.py)",
+   "simulated annealing with monotone syllabary alignment (solver.py)",
+   "matched controls (make_control.py)",
+   "apply_key.py"
+  ],
+  "models": [
+   "claude-fable-5-1",
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
   "sessions": 3,
   "first_date": "2026-09-16",
   "last_date": "2026-09-30"
  },
  "solution": [
-  {"date": "2026-09-16", "kind": "statistics", "technique": ["frequency analysis"], "what": "Symbol classes, token counts and IC (0.019) on the provisional transcription.", "result": "worked"},
-  {"date": "2026-09-16", "kind": "hypothesis", "technique": ["key-structure hypothesis", "key matching"], "what": "Design A from sibling keys of the same office: marked series are alphabetical syllabaries, overbar and three-digit groups are nomenclature.", "result": "worked"},
-  {"date": "2026-09-16", "kind": "literature search", "what": "Plaintext sought in Birch (Thurloe SP i) and Guizot's despatches; 30 May 1653 in neither. Found DECODE R7537, the English key for 'Mr. Bordeaux' 1653.", "result": "partial"},
-  {"date": "2026-09-16", "kind": "control", "what": "Solver recovers 99 % on design-A controls of equal length; 52 % and 9 % when 10 % of diacritics are misread.", "result": "worked"},
-  {"date": "2026-09-16", "kind": "solver", "technique": ["simulated annealing"], "what": "Ciphertext-only annealing on the real text, 21+ seeds over series orders and unit lists.", "result": "failed"},
-  {"date": "2026-09-18", "kind": "key from source", "what": "Transcribed key sheet R7537; it confirms design A exactly.", "result": "worked"},
-  {"date": "2026-09-18", "kind": "transcription", "what": "Checked the page images: 21 corrections, two merged glyphs split, lost marks restored.", "result": "worked"},
-  {"date": "2026-09-18", "kind": "reading", "what": "Applied the key plus context-derived additions; letter read except name codes and rare tokens.", "result": "worked"},
-  {"date": "2026-09-18", "kind": "verification", "what": "Duplicate of the ending (R8391) agrees token for token; content fits the Ormée negotiations of May 1653.", "result": "worked"},
-  {"date": "2026-09-30", "kind": "verification", "what": "Correction after an outside check of the write-up: the page's English for the first cipher sentence ('Ce n'est pas que si nos affaires estoyent plus florissantes nous n'eussions sujet de tesmoigner quelque mescontentement...') read 'Even if our affairs were more flourishing, we would still have reason to show some displeasure', which blurs the logic; after 'ce n'est pas que' the lone 'ne' is a full negation, so it is 'Not that, were our affairs more flourishing, we would lack cause to show some displeasure' (France has the grievance but cannot afford to show it). Page paraphrase and context paragraph corrected; the French decipherment is unchanged.", "result": "worked"}
+  {
+   "date": "2026-09-16",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Symbol classes, token counts and IC (0.019) on the provisional transcription.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "key matching"
+   ],
+   "what": "Design A from sibling keys of the same office: marked series are alphabetical syllabaries, overbar and three-digit groups are nomenclature.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "literature search",
+   "what": "Plaintext sought in Birch (Thurloe SP i) and Guizot's despatches; 30 May 1653 in neither. Found DECODE R7537, the English key for 'Mr. Bordeaux' 1653.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "control",
+   "what": "Solver recovers 99 % on design-A controls of equal length; 52 % and 9 % when 10 % of diacritics are misread.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Ciphertext-only annealing on the real text, 21+ seeds over series orders and unit lists.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "key from source",
+   "what": "Transcribed key sheet R7537; it confirms design A exactly.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transcription",
+   "what": "Checked the page images: 21 corrections, two merged glyphs split, lost marks restored.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "reading",
+   "what": "Applied the key plus context-derived additions; letter read except name codes and rare tokens.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "verification",
+   "what": "Duplicate of the ending (R8391) agrees token for token; content fits the Ormée negotiations of May 1653.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-30",
+   "kind": "verification",
+   "what": "Correction after an outside check of the write-up: the page's English for the first cipher sentence ('Ce n'est pas que si nos affaires estoyent plus florissantes nous n'eussions sujet de tesmoigner quelque mescontentement...') read 'Even if our affairs were more flourishing, we would still have reason to show some displeasure', which blurs the logic; after 'ce n'est pas que' the lone 'ne' is a full negation, so it is 'Not that, were our affairs more flourishing, we would lack cause to show some displeasure' (France has the grievance but cannot afford to show it). Page paraphrase and context paragraph corrected; the French decipherment is unchanged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Credit corrected under the one-key rule (George Lasry, 14 Oct 2026): Lasry's 2025 solution is of item B (1654), a different key that does not read item A (1653); his credit here changed from 'prior solution' to 'pointer' (the key design his item-B key showed). Item B is not a document of this entry.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
   "method_basis": "Item A (R8390, BL Add MS 4200 f. 88) was read with the English Deciphering Branch key sheet DECODE R7537 (BL Add MS 32263 f. 1, a separate key volume), found during the attempt after a ciphertext-only solver failed, then extended from context and checked against the page images and the duplicates R8391/R8393.",
-  "contribution": ["transcription", "key extended or corrected"],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
   "class": "read",
   "fraction_read": "unknown",
   "grades": "unknown",
-  "verification": ["key confirms", "matched control", "historical consistency"],
+  "verification": [
+   "key confirms",
+   "matched control",
+   "historical consistency"
+  ],
   "notes": "Solver failure explained by transcription noise, as the noisy control predicted.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "English Deciphering Branch key sheet BL Add MS 32263 f. 1 (DECODE R7537), applied to item A"},
-    {"who": "tomokiyo", "role": "transcription", "note": "provisional transcription of item A (louisxiv_bordeaux.txt), corrected here from the images", "source": "cryptiana louisxiv0.htm §3"},
-    {"who": "lasry", "role": "prior solution", "note": "item B, Mazarin to Bordeaux 22 June 1654 (R9482), solved; key on cryptiana", "date": "2025-02-19", "source": "cryptiana louisxiv0.htm (louisxiv_0mazarin.png)"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "English Deciphering Branch key sheet BL Add MS 32263 f. 1 (DECODE R7537), applied to item A"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "transcription",
+    "note": "provisional transcription of item A (louisxiv_bordeaux.txt), corrected here from the images",
+    "source": "cryptiana louisxiv0.htm §3"
+   },
+   {
+    "who": "lasry",
+    "role": "pointer",
+    "note": "his key for item B (Mazarin to Bordeaux, 22 June 1654, R9482; a different key, which does not read item A) showed the office's design, a syllabary in alphabetical order, used as the solver hypothesis for item A; not a solution of item A",
+    "date": "2025-02-19",
+    "source": "cryptiana louisxiv0.htm (louisxiv_0mazarin.png)"
+   }
   ]
  }
 }

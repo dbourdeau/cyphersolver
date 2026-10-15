@@ -2,6 +2,19 @@
 
 Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2024 but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
 
+**Split on 14 Oct 2026** under the one-key rule (George Lasry): this entry is **key A** only, the key recovered here for
+ff. 233, 239 and 288v. Two leaves that sat in it are different ciphers, each with its own page:
+- f. 333 (La Rochelle, 10 July 1586), read with Tomokiyo's f. 321 key: `targets/navarre1586/` (`docs/navarre1586.html`);
+  `ct_333.txt`, `key_321.json`, `henryiii_figure.png` and the f. 333-size controls (`control4*`, `control5*`) moved there.
+- f. 143 (Beaupréau, July 1583), a third key of the same design, not read: `targets/segur1583/` (`docs/segur1583.html`);
+  `ct_143.txt` moved there.
+f. 366 stays here as "probably this key, open" (see below); it is not counted among the entry's documents. The shared
+scripts (`solve.py`, `solve_mono.py`, `decode.py`, `control.py`, the fetch and sheet tools) stay here; the sections below
+are the record of 16 Sept 2026 and still mention ff. 143 and 333 where they were worked on.
+
+Lasry, Oct 2026: his saved decryptions (15 Oct 2024) cover **ff. 143, 233, 239 and 288v**; the credit here is for ff. 233,
+239, 288v (f. 143 is credited on segur1583).
+
 **Status: the key is recovered and the three ciphered letters of 1585–86 are read in substance.** The alphabet, the
 syllabary and the double-letter signs are fixed; a dozen word-signs written in letters (*pi*, *na*, *gne*, *H*, *L* …) and
 three nomenclature numbers (180, 215?, 900) are glossed from context or left open. The 1583 letter at f. 143 is in a different
@@ -332,3 +345,24 @@ matched controls; convergence over seeds; alphabetical order of the recovered ke
 Not checked: the f. 321 key against Tomokiyo's table token by token; the identity of the word-signs; the historical glosses
 (Casimir, Clervant, the 1579 contract, Drake). User must verify: the sender attribution before it is reported to Tomokiyo,
 and the readings marked ? before they are quoted.
+
+## Remaining gaps
+- word-signs X, gla, gna, pe, pu, e, H, L, Ne, qua and the numbers 180, 215?, 900 (16 of 482 non-null tokens) - blocker: no-key-material; the whole volume was swept and holds no other letter in this key; the key sheet and 500 Colbert 402 are not available, and the LM ranking only narrows classes
+- f. 366, lines 1-2 (probably this key; 24 tokens in all, line 3 reads escri) - blocker: too-short; the decoded strings are not French, probably names in the king's spelling, with no context to fix them
+
+## Escalation
+- [x] siblings: all 440 canvases of 500 Colbert 401 swept; Dupuy 407 to canvas 46 and fr. 17820 opened; 500 Colbert 402 not digitised
+- [x] clear-pages: none for this key; f. 321's interlinear is another key (navarre1586)
+- [x] known-keys: Tomokiyo's f. 321 key tried: same design, different values
+- [x] print: Tomokiyo's cryptiana pages (listed as unsolved); no edition of the négociation found
+- [x] key-rebuild: structured and design-constrained annealers; word-signs ranked by the LM (gloss_check.txt)
+- [x] retry: disputed digits re-read at 2x and 3x; f. 366 tried with both keys
+
+## Assumptions for George's review
+- Your 2024 credit (prior solution) is put on ff. 233, 239 and 288v here and on f. 143 in segur1583, as your saved
+  decryptions of 15 Oct 2024 document; it is not extended to ff. 321, 333 or 366.
+- f. 366 is kept out of this entry's documents because its key is only "probably" key A (low figures and the letter-sign
+  *gu*); if you count it as key A, the entry is read in part.
+- f. 143 is taken to be in a third key of the same design, as NOTES record (it does not decode with key A); not tested
+  against your 2024 key.
+

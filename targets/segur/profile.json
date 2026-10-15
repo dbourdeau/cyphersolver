@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "segur",
- "title": "Henry of Navarre to Ségur, BnF 500 de Colbert 401 ff. 233, 239, 288v, 333, 366 (1585-86)",
+ "title": "Henry of Navarre to Ségur, BnF 500 de Colbert 401 ff. 233, 239, 288v (1585-86), Navarre key A",
  "documents": [
   {
    "id": "f233",
@@ -30,7 +30,8 @@
     "source": "Gallica ark btv1b10035574w, full-resolution IIIF",
     "image_quality": "good",
     "notes": "Measured with --digits: letter-written word-signs (pi, na, etc.) excluded; NOTES give 220 tokens including them."
-   }
+   },
+   "read": "read"
   },
   {
    "id": "f239",
@@ -58,7 +59,8 @@
     "source": "Gallica IIIF",
     "image_quality": "good",
     "notes": "--digits count; NOTES give 70 tokens including letter-written signs."
-   }
+   },
+   "read": "read"
   },
   {
    "id": "f288v",
@@ -86,64 +88,8 @@
     "source": "Gallica IIIF, disputed digits re-read at 2x",
     "image_quality": "good",
     "notes": "--digits count; NOTES give 196 tokens including letter-written signs."
-   }
-  },
-  {
-   "id": "f333",
-   "shelfmark": "BnF 500 de Colbert 401 f. 333",
-   "date": "10 Jul 1586",
-   "year": 1586,
-   "country": "Navarre",
-   "route": "La Rochelle -> Ségur",
-   "language": "French",
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "Tomokiyo's key reconstructed from the f. 321 interlinear; no plaintext of f. 333 found"
    },
-   "length": {
-    "tokens": 108,
-    "distinct": 62,
-    "unit": "mixed",
-    "measured": true,
-    "file": "ct_333.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF at 2x",
-    "image_quality": "good",
-    "notes": "--digits count; NOTES give 121 tokens."
-   }
-  },
-  {
-   "id": "f366",
-   "shelfmark": "BnF 500 de Colbert 401 f. 366",
-   "date": "[autumn 1586]",
-   "year": 1586,
-   "country": "Navarre",
-   "route": "Henry of Navarre -> Ségur",
-   "language": "French",
-   "cleartext_in_document": "mostly clear",
-   "plaintext": {
-    "location": [
-     "none"
-    ]
-   },
-   "length": {
-    "tokens": 20,
-    "distinct": 18,
-    "unit": "mixed",
-    "measured": true,
-    "file": "ct_366.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF at 3x",
-    "image_quality": "good",
-    "notes": "--digits count; NOTES give 24 tokens. Found in the sweep; not on Tomokiyo's list."
-   }
+   "read": "read"
   }
  ],
  "system": {
@@ -183,13 +129,13 @@
   "key_order": "alphabetical",
   "word_division": "none",
   "doubled_letters": "special sign (1 = ée, 2 = ll, square = ss)",
-  "sibling_key": "Tomokiyo's f. 321 key (same design, shifted by eight) used to read f. 333; f. 143 (1583) is another key, not read",
-  "notes": "h has three homophones despite being a consonant; about a dozen letter-written word-signs and three numbers (180, 215?, 900) glossed or open."
+  "sibling_key": "none used: Tomokiyo's f. 321 key (same design, letters shifted by eight) was on cryptiana before the attempt but has different values; it reads f. 333 (now navarre1586), not these letters.",
+  "notes": "h has three homophones despite being a consonant; about a dozen letter-written word-signs and three numbers (180, 215?, 900) glossed or open. f. 366 (24 tokens, autograph) is probably in this key (low figures, the letter-sign gu) but two of its three lines do not read; it is noted here and not counted as a document."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Tomokiyo's reconstructed f. 321 key (sibling); no plaintext of ff. 233, 239, 288v; G. Lasry solved it independently in 2024, unpublished (private communication, 25 Sept 2026)",
+   "where": "No plaintext of ff. 233, 239, 288v found in print or online. George Lasry's saved decryptions of 15 Oct 2024 cover ff. 143, 233, 239 and 288v (his note to the project, Oct 2026); unpublished; earlier reported 25 Sept 2026 as an independent 2024 solution. Tomokiyo's f. 321 key (a sibling, different values) was on cryptiana.",
    "found": "before attempt",
    "used": true
   },
@@ -212,7 +158,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-09-15",
-  "last_date": "2026-09-16"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -230,12 +176,15 @@
   {
    "date": "2026-09-16",
    "kind": "transcription",
-   "what": "ff. 233, 239, 288v, 143 transcribed from full-resolution images.",
+   "what": "ff. 233, 239, 288v transcribed from full-resolution images (and f. 143, now segur1583).",
    "result": "worked"
   },
   {
    "date": "2026-09-16",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "Frequencies of the upper figures mod 5 show blocks of five: an alphabetical syllabary.",
    "result": "worked"
   },
@@ -247,7 +196,12 @@
   },
   {
    "date": "2026-09-16",
-   "kind": "solver", "technique": ["simulated annealing", "key matching", "contextual inference"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "key matching",
+    "contextual inference"
+   ],
    "what": "Structured annealer with the clear French as context recovers the key; syllabary start corrected from 64 to 54 by the reading.",
    "result": "worked"
   },
@@ -259,20 +213,8 @@
   },
   {
    "date": "2026-09-16",
-   "kind": "sibling key",
-   "what": "f. 333 read with Tomokiyo's f. 321 key; whole volume swept, f. 366 found.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-16",
-   "kind": "solver", "technique": ["simulated annealing", "statistical test"],
-   "what": "Free annealer on f. 333 alone fails (below unicity); matched control of the same size fails likewise.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-16",
-   "kind": "solver", "technique": ["simulated annealing", "statistical test"],
-   "what": "Design-constrained annealer re-derives the f. 333 key blind, 93 % of letter tokens; matched alphabetical control 90 %.",
+   "kind": "access",
+   "what": "Whole volume swept for further letters in this key: none; f. 366 found (probably this key). (The f. 333 reading with Tomokiyo's f. 321 key in the same session is now navarre1586.)",
    "result": "worked"
   },
   {
@@ -282,16 +224,71 @@
    "result": "failed"
   },
   {
-   "date": "2026-09-25",
-   "kind": "literature search",
-   "what": "Lasry review (email 25 Sept 2026): Lasry wrote that he had independently solved it in 2024 but never published it; kept in the ciphertext-only list with that note.",
+   "date": "2026-09-16",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "statistical test"
+   ],
+   "what": "Design-constrained annealer (alphabetical homophone counts) on the ff. 233 set: whole letter key from seed 0, 287 of 290 letter tokens (99.0 %) against key_v4.json.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 470 tokens, 103 types, fr-1600-letters order 4: reading -2.066 per letter; random keys -4.259 (z 15.1); key annealed onto shuffled ciphertext best -2.698 (mean -2.734, z 17.4); annealer on the real text -2.564. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-09-25",
+   "kind": "literature search",
+   "what": "Lasry review (email 25 Sept 2026): he wrote that he had independently solved it in 2024 but never published it; kept in the ciphertext-only list with that note. In Oct 2026 he specified that his saved decryptions (15 Oct 2024) cover ff. 143, 233, 239 and 288v.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 470 tokens, 103 types, fr-1600-letters order 4: reading -2.066 per letter; random keys -4.259 (z 15.1); key annealed onto shuffled ciphertext best -2.698 (mean -2.734, z 17.4); annealer on the real text -2.564. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): segur keeps key A (ff. 233, 239, 288v; f. 366 noted as 'probably this key', open, and kept out of documents[] because its key is not shown); f. 333 with Tomokiyo's f. 321 key moved to navarre1586; f. 143 (1583, another key) moved to segur1583."
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 470, "types": 103, "tokens_per_type": 4.56, "score": -2.066, "nulls": {"random keys": {"n": 200, "mean": -4.259, "sd": 0.145, "max": -3.769, "z": 15.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.734, "sd": 0.038, "max": -2.698, "z": 17.4, "p": 0.1429}}, "power": -2.564, "verdict": "pass", "notes": "claimed per-occurrence score -2.066; polyphony 0.0; 16 unread tokens left out; annealer on the real text from random keys reached -2.564"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "fr-1600-letters",
+   "file": "validation.tsv",
+   "tokens": 470,
+   "types": 103,
+   "tokens_per_type": 4.56,
+   "score": -2.066,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.259,
+     "sd": 0.145,
+     "max": -3.769,
+     "z": 15.1,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.734,
+     "sd": 0.038,
+     "max": -2.698,
+     "z": 17.4,
+     "p": 0.1429
+    }
+   },
+   "power": -2.564,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.066; polyphony 0.0; 16 unread tokens left out; annealer on the real text from random keys reached -2.564"
+  },
   "method": "key recovered from ciphertext-only",
-  "method_basis": "A syllabary residue test and a structured annealer with the letters' clear French as language-model context rebuilt the ff. 233/239/288v key, confirmed on matched controls; Tomokiyo's sibling f. 321 key (on cryptiana before the attempt) has different offsets and was used only for f. 333.",
+  "method_basis": "A syllabary residue test and a structured annealer with the letters' clear French as language-model context rebuilt the ff. 233/239/288v key, confirmed on matched controls; Tomokiyo's sibling f. 321 key (on cryptiana before the attempt) has different offsets and was not used for these letters.",
   "contribution": [
    "transcription",
    "key recovered",
@@ -299,14 +296,42 @@
    "sender or date identified"
   ],
   "class": "read",
-  "fraction_read": "unknown",
+  "fraction_read": 0.967,
   "grades": "unknown",
-  "verification": ["matched control", "key confirms", "historical consistency", "statistical test"],
-  "notes": "ff. 233, 239, 288v read in substance; f. 333 read with the sibling key; f. 366 left open; f. 143 (1583) another key, not read.",
+  "verification": [
+   "matched control",
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
+  "notes": "ff. 233, 239, 288v read in substance; word-signs and numbers 180, 215?, 900 open. f. 366 (probably this key) left open and outside the documents; f. 333 (Tomokiyo's f. 321 key) is navarre1586; f. 143 (1583, another key) is segur1583.",
   "first_break": "unpublished prior",
   "credits": [
-    {"who": "lasry", "role": "prior solution", "note": "solved it independently in 2024, unpublished (private communication, 25 Sept 2026)", "date": "2024", "source": "private communication, 25 Sept 2026", "published": false},
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "reconstructed f. 321 key (sibling), used to read f. 333 (extended by 24 = f, 34 = l, 36 = m)", "source": "cryptiana"}
+   {
+    "who": "lasry",
+    "role": "prior solution",
+    "note": "saved decryptions of ff. 233, 239, 288v dated 15 Oct 2024 (with f. 143, another key; see segur1583), unpublished",
+    "date": "2024-10-15",
+    "source": "private communications, 25 Sept and Oct 2026",
+    "published": false
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "validation.tsv (mk_validation.py, ff. 233/239/288v with key_v4.json): 482 non-null tokens, 466 with a value, 16 unread word-signs and numbers (X, gla, gna, pe, pu, e, H, L, Ne, qua, 180, 215?, 900); glossed word-signs counted with their gloss.",
+  "codes_open": {
+   "open": 13
+  },
+  "gaps": [
+   {
+    "item": "word-signs X, gla, gna, pe, pu, e, H, L, Ne, qua and numbers 180, 215?, 900",
+    "blocker": "no-key-material",
+    "detail": "no gloss in this volume (whole volume swept); the key sheet and 500 Colbert 402 are not available; LM ranking only suggests classes"
+   },
+   {
+    "item": "f. 366 (24 tokens, probably this key), lines 1-2",
+    "blocker": "too-short",
+    "detail": "line 3 reads escri; lines 1-2 decode to non-French, probably names in the king's spelling"
+   }
   ]
  }
 }

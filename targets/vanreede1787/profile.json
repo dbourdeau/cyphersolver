@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "vanreede1787",
- "title": "Dispatches of A. W. C. van Reede from Berlin, 1787–1793",
+ "title": "Dispatches of A. W. C. van Reede from Berlin to L. P. van de Spiegel, 1787-1788, in William V's Grand Chiffre (DECODE R1026, R1027)",
  "documents": [
   {
    "id": "DECODE R1026",
@@ -66,38 +66,6 @@
     "notes": "DECODE's J+ sign stands for different digits; each resolved by a French 6-gram model over the R1024 key values (resolve_j.py)."
    },
    "read": "read in part"
-  },
-  {
-   "id": "DECODE R1893",
-   "shelfmark": "Nationaal Archief 1.01.02, Staten-Generaal, inv. 6695",
-   "date": "24 Mar 1793",
-   "year": 1793,
-   "country": "Dutch Republic",
-   "route": "Berlin -> Secret Committee, The Hague",
-   "language": "Dutch",
-   "pages": 4,
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "partial": false
-   },
-   "length": {
-    "tokens": 696,
-    "distinct": 513,
-    "unit": "code groups",
-    "measured": true,
-    "file": "ciphertext_R1893.txt"
-   },
-   "transcription": {
-    "by": "DECODE",
-    "source": "DECODE document D3608",
-    "corrections": 0,
-    "image_quality": "fair",
-    "notes": "Three-digit groups include systematic overmarks and undermarks; the supplied HU language tag is erroneous."
-   },
-   "read": "not read"
   }
  ],
  "system": {
@@ -105,7 +73,7 @@
    "code",
    "nomenclator"
   ],
-  "summary": "R1026/R1027 use the 1782 one-part French Grand Chiffre of William V (DECODE key R1024, 1-5000); R1893 uses a distinct three-digit marked-number code.",
+  "summary": "The 1782 one-part French Grand Chiffre of William V (DECODE key R1024, 1-5000), numbers written with dots between groups.",
   "symbol_kind": "digits and symbols",
   "digit_groups": {
    "width": "variable",
@@ -113,8 +81,7 @@
   },
   "distinct_symbols": 0,
   "diacritics": {
-   "used": true,
-   "note": "R1893 marks individual digits with several overmark/undermark forms; their function is not yet established."
+   "used": false
   },
   "homophones": {
    "used": false
@@ -140,12 +107,12 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "DECODE R1024 (Grand Chiffre, KHA A29 inv. 301, 1782) reads R1026/R1027; the control R1028 confirms it.",
-  "notes": "Key entries measured from the R1024 transcription. R1893 remains a separate, unkeyed system."
+  "notes": "Key entries measured from the R1024 transcription. R1893 (1793) is a different, unkeyed marked three-digit code with its own entry (vanreede1793)."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "DECODE holds the key (R1024) and plaintext controls R1028/R1029 of the same code; no reading of R1026, R1027 or R1893 was found.",
+   "where": "DECODE holds the key (R1024) and plaintext controls R1028/R1029 of the same code; no reading of R1026 or R1027 was found.",
    "found": "during attempt",
    "used": true
   },
@@ -174,7 +141,7 @@
   {
    "date": "2026-09-20",
    "kind": "access",
-   "what": "Used the existing private DECODE cookie to download the record metadata, transcriptions, and all seven manuscript images.",
+   "what": "Used the existing private DECODE cookie to download the record metadata, transcriptions and manuscript images of R1026, R1027 (and R1893, now vanreede1793).",
    "result": "worked"
   },
   {
@@ -185,13 +152,19 @@
   },
   {
    "date": "2026-09-20",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "Compared R1026 and R1027 group inventories; they share 49 groups and therefore use the same code system.",
    "result": "worked"
   },
   {
    "date": "2026-09-20",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "Separated R1893 as a different system because its three-digit groups carry systematic per-digit marks absent from the earlier dispatches.",
    "result": "worked"
   },
@@ -200,12 +173,6 @@
    "kind": "literature search",
    "what": "Located Karl de Leeuw's account of Dutch diplomatic code practice and the Nationaal Archief catalogue entry for Van Nagell's 1787 code (current inv. 28).",
    "result": "partial"
-  },
-  {
-   "date": "2026-09-20",
-   "kind": "sibling key",
-   "what": "Downloaded and inspected DECODE R2846 and the interlinearly decrypted control R2243 for related numerical systems.",
-   "result": "failed"
   },
   {
    "date": "2026-09-21",
@@ -221,28 +188,28 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["beam/DP decoding"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding"
+   ],
    "what": "Resolved each J+ as any digit by beam search with a French 6-gram model (hellen1752 corpus); 105 groups resolved, both letters read.",
    "result": "worked"
   },
   {
-   "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["crib testing"],
-   "what": "Assessed R1893 (696 marked three-digit tokens, 513 distinct) for ciphertext-only attack; code too large for the text, no key or crib found.",
-   "result": "failed"
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from vanreede1787, which had joined R1026/R1027 (William V's 1782 Grand Chiffre, R1024) with R1893 (1793, a different marked three-digit code). This profile keeps R1026 and R1027 (Grand Chiffre) only.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "DECODE's own description names the code as likely William V's 'Grand Chiffre', and that key (R1024, 1782) read R1026 and R1027 once DECODE's catch-all J+ sign was resolved digit by digit with a French 6-gram model; R1028's DECODE plaintext served as control.",
-  "contribution": ["catalogue correction"],
+  "contribution": [
+   "catalogue correction"
+  ],
   "class": "read in part",
   "gaps": [
-   {
-    "item": "R1893 (24 Mar 1793, 696 tokens)",
-    "blocker": "no-key-material",
-    "detail": "different three-digit overmarked code, 513 distinct forms; keys R2846, R2848, R2850, R2851, R2243 tried; no crib"
-   },
    {
     "item": "R1026/R1027 groups 2637, 2800, 3660, 1250, 331, 3160, 3153, 2751, 50 and damaged groups",
     "blocker": "open-codes",
@@ -254,7 +221,7 @@
     "detail": "NOTES say a fresh transcription from the images would clear them; not done"
    }
   ],
-  "fraction_read": 0.383,
+  "fraction_read": 0.949,
   "grades": {
    "H": 0,
    "C": 0,
@@ -265,9 +232,9 @@
    "matched control",
    "historical consistency"
   ],
-  "notes": "R1026 and R1027 read (452 of 472 groups given a value; some passages still garbled by transcription misreads); R1893 not read.",
+  "notes": "R1026 and R1027 read (452 of 472 groups given a value in the NOTES count; 447/471 measured; some passages still garbled by transcription misreads). Split 14 Oct 2026: R1893 is vanreede1793.",
   "fraction_read_method": "measured",
-  "fraction_read_source": "ciphertext_R1026/R1027/R1893.txt (319+152+696 groups) against plaintext_R1026/R1027_raw.txt: groups left as [n?] counted unread (12 in R1026, 8 in R1027; 4 4 3 8 counted read as 4433), all of R1893 unread; 447/1167. Passages garbled by DECODE digit misreads counted as read",
+  "fraction_read_source": "ciphertext_R1026/R1027.txt (319+152 groups) against plaintext_R1026/R1027_raw.txt: groups left as [n?] counted unread (12 in R1026, 8 in R1027; 4 4 3 8 counted read as 4433); 447/471, the same count as before the split less R1893's 696 groups. Passages garbled by DECODE digit misreads counted as read",
   "key": "partial",
   "codes_open": {
    "open": 15,
@@ -275,7 +242,11 @@
    "tokens_open": 20
   },
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "William V's 1782 Grand Chiffre (DECODE R1024); R1028 plaintext as control"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "William V's 1782 Grand Chiffre (DECODE R1024); R1028 plaintext as control"
+   }
   ]
  }
 }

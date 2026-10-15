@@ -1,6 +1,12 @@
-# Torcy to the plenipotentiaries at Geertruidenberg (3 April 1710) and Villars to Polignac (1 June 1710)
+# Torcy to the plenipotentiaries at Geertruidenberg, Versailles, 3 April 1710 (BL Add MS 61575 ff. 38-41, DECODE R8755)
 
-Status: attempted, open (2026-10-09). Both cipher parts unread: no key on DECODE, in Add MS 61575 or in print; the French copy of Torcy's letter is in AE CP Hollande t. 223 (not online).
+Status: attempted, open (2026-10-09). The cipher part is unread: no key on DECODE, in Add MS 61575 or in print; the French copy of Torcy's letter is in AE CP Hollande t. 223 (not online).
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Until then this entry also held Villars'
+letter to Polignac of 1 June 1710 (f. 44, DECODE R8756), which is in a different code; it is now
+[`targets/villars1710/`](../villars1710/NOTES.md) (a different cipher, with its own page), with `villars_ct.txt`,
+`villars_groups.txt` and its DOC transcription. The dated sections below are the record of the joint sessions and
+still mention it; the gaps and escalation are Torcy's only.
 
 ## 2026-10-09: images and DECODE transcriptions fetched
 
@@ -72,14 +78,13 @@ spaen1808). Villars: 173 groups, 106 types, too short for anything without a key
 
 ## Remaining gaps
 - Torcy 3 Apr 1710, cipher part (f.38v-41r, 690 groups) - blocker: needs-physical-access; no key on DECODE, in Add MS 61575 or in print; the French copy is in AE CP Hollande t. 223 (La Courneuve, not digitised), and 690 groups of an 800-value two-part code are too few to rebuild
-- Villars 1 Jun 1710, cipher part (f.44, 173 groups) - blocker: no-key-material; a different code (range 3-560, 340 x10) with no key found, and too short for a ciphertext-only attack
 
 ## Escalation
 - [x] siblings: R8746-R8774 (all of Add MS 61575 on DECODE) opened; Petkum 1709 letters (key R8766) and the anonymous 10 Feb 1710 letter (R8753/R8754, Blencowe's partial decipherment, small code to ~409) are different codes; keys R8757-R8770 are English or post-1711
-- [x] clear-pages: R8755 f.38r-38v is the letter's own clear opening (transcribed, `torcy_clear.txt`), not a decipherment; R8756 has clear opening and close only
-- [x] known-keys: R8766, R8767, R8768, DECODE R587, Tomokiyo 11B (Desmarets 1710), BnF fr. 6204 Sixième clef, DE-homophone screen of the other fr. 6204 keys and Usson 1702: none fits
-- [x] print: Legrelle iv (cites the AE copy, quotes only the clear part), Torcy Journal inédit, Villars Mémoires iii, Tomokiyo blencowe2/louisxiv: no decipherment
-- [n/a] key-rebuild: nothing reads, so there is no seed; 690 groups of an 800+ value homophonic two-part code and 173 groups of the Villars code are below what a ciphertext-only rebuild needs
+- [x] clear-pages: R8755 f.38r-38v is the letter's own clear opening (transcribed, `torcy_clear.txt`), not a decipherment
+- [x] known-keys: R8766, R8767, DECODE R587, Tomokiyo 11B (Desmarets 1710), BnF fr. 6204 Sixième clef, DE-homophone screen of the other fr. 6204 keys and Usson 1702: none fits (R8768 was ruled out for Villars' letter only)
+- [x] print: Legrelle iv (cites the AE copy, quotes only the clear part), Torcy Journal inédit, Tomokiyo blencowe2/louisxiv: no decipherment
+- [n/a] key-rebuild: nothing reads, so there is no seed; 690 groups of an 800+ value homophonic two-part code are below what a ciphertext-only rebuild needs
 - [n/a] retry: nothing was read to retry
 
 ## DECODE queue

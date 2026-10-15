@@ -1,16 +1,26 @@
-# Intercepts by the Commonwealth (Thurloe State Papers, 1653-56) — cryptiana unsolved item #9
+# Beverning and Vande Perre to Boreel, Westminster, 22 Aug/1 Sept 1653 (Thurloe State Papers i.435) — cryptiana unsolved item #9 (a)
 
-Four undeciphered pieces printed in Birch's *Thurloe State Papers* (1742), full text on British History Online.
-Ciphertexts extracted to `a_*.txt` … `d_*.txt`; analysis in `analyze.py` (`analyze_out.txt`), key trials in
+Attempted, not solved: 136 groups (letters 6-33 and eight 3-digit code groups); every period key fails, and a matched
+control shows the solver would have read a letter cipher of this layout.
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Until then this entry held four undeciphered
+pieces printed in Birch's *Thurloe State Papers* (1742), grouped because they share the printed source; each is in its
+own cipher. This entry is piece (a). The others, each a different cipher with its own page:
+[`targets/dugard1656/`](../dugard1656/NOTES.md) (b, du Gard to White, 10 June 1656),
+[`targets/copinger1656/`](../copinger1656/NOTES.md) (c, Brussels to Copinger, 12 Aug 1656),
+[`targets/waddall1656/`](../waddall1656/NOTES.md) (d, Waddall to "Vanyeare", 22 Aug 1656). Their ciphertext files moved
+there; the shared scripts and outputs below stay here and cover all four.
+
+Full text on British History Online. Ciphertext `a_beverning_1653.txt` (the others now in their folders); analysis in `analyze.py` (`analyze_out.txt`), key trials in
 `apply_keys.py` (`apply_keys_out.txt`; keys harvested from cryptiana into `keys/`), solvers `solve_a*.py`
 (outputs `solve_a2_*.txt`), LMs `lm_nl.json`, `lm_fr.json` (`lm_build.py`).
 
 | | letter | size | type | verdict |
 |---|---|---|---|---|
 | a | Beverning & Vande Perre → Boreel (Paris), Westminster 1 Sept 1653 NS; TSP i.435 | 136 groups, 33 distinct: letters 6-33 (25 symbols), codes 113 117 211 222 327 329 519 527 | monoalphabetic letters + small nomenclator; plaintext Dutch (or French) | **stuck** |
-| b | du Gard's "new direction" enclosed to White, Brussels 10 June 1656; TSP v.78 | 22 symbols incl. letters q t y m f | cover address; too short | stuck |
-| c | anon., Brussels 12 Aug 1656 → Copinger; TSP v.267 | 16 single digits (`2 3 1 4 7 4 6 4 9 7 2 3 is come … to visit the 0 9 3 7`) | a name + a 4-letter word in a 10-symbol cipher | stuck |
-| d | Jo. Waddall (London) → "Vanyeare", Bruges, 22 Aug 1656; TSP v.337 | 50 groups, 29 distinct, letters 7-86 + codes 226 243 | homophonic letters + codes; English | stuck |
+| b (dugard1656) | du Gard's "new direction" enclosed to White, Brussels 10 June 1656; TSP v.78 | 22 symbols incl. letters q t y m f | cover address; too short | stuck |
+| c (copinger1656) | anon., Brussels 12 Aug 1656 → Copinger; TSP v.267 | 16 single digits (`2 3 1 4 7 4 6 4 9 7 2 3 is come … to visit the 0 9 3 7`) | a name + a 4-letter word in a 10-symbol cipher | stuck |
+| d (waddall1656) | Jo. Waddall (London) → "Vanyeare", Bruges, 22 Aug 1656; TSP v.337 | 50 groups, 29 distinct, letters 7-86 + codes 226 243 | homophonic letters + codes; English | stuck |
 
 ## What was tried
 - **Key matching** (`apply_keys.py`): every 1653-60 royalist/Commonwealth key on cryptiana (Marshall 1656-58,
@@ -23,15 +33,7 @@ Ciphertexts extracted to `a_*.txt` … `d_*.txt`; analysis in `analyze.py` (`ana
   — suggestive of Dutch ("hebben", "-ende") but not a reading. 128 letters over 25 symbols with 8 unknown code
   groups breaking the text is below what the statistics can carry; a plain alphabetical assignment on 10-33 (any
   rotation/reversal) was also excluded (`stats_a.py`).
-- **(c)** is a 10-digit cipher: "[12 symbols] is come with a great train to visit the [0 9 3 7]" (Brussels, Aug
-  1656 — the arrival of Don Juan José de Austria as governor, or a visit to Charles II's court at Bruges, are the
-  obvious contexts). Pattern of the name ABCDEDFDGEAB with the 4-letter word [H G B E] (shares 9,3,7). "the king"
-  (k-i-n-g) would force the name to read ?n?dgdfdig?n — impossible, so the digits are not simple letters, or the
-  word is not "king". Unresolvable at 16 symbols.
-- **(d)**: the clear frame is rich — "There is [6] of [3] sent to lie near [7] and six [6] of [243 226] are [3] to
-  strengthen [3], and [8] is so far out of favour now that [5] told me he had a greater mind to [3] him than [4]"
-  — but 27 distinct letter-symbols in 50 groups with homophones cannot be pinned; cribs like "horse", "hang" fit
-  many assignments equally well.
+- **(c)** and **(d)**: see their own NOTES (cribs on the name pattern, and on Waddall's clear frame).
 
 ## Where the originals are
 Bodleian **Rawlinson A** (Thurloe papers), volumes v (1653) and xxxviii/xli (1656) per Birch's marginal
@@ -84,15 +86,12 @@ distinct symbols (fewer than two occurrences per symbol).
 - (a) Beverning 1653, 136 groups - blocker: no-key-material; the matched control shows the text is long enough for
   the solver, and it still fails, so the system is not the one modelled; the key or a deciphered sibling despatch
   (Nationaal Archief, Staten-Generaal liassen Engeland) is needed. The 8 code groups need the new code Boreel sent.
-- (b) du Gard 1656, 27 tokens - blocker: too-short; a cover address, no key online.
-- (c) Brussels 1656, 16 digits - blocker: too-short; a name and a 4-letter word.
-- (d) Waddall 1656, 50 groups / 29 distinct homophonic symbols - blocker: too-short; cribs fit many assignments; key in the Clarendon MSS, not online.
 
 ## Escalation
 
 - [n/a] siblings: the sibling route (a deciphered Beverning/Nieupoort despatch to Boreel in the Nationaal Archief, Staten-Generaal liassen Engeland) is not online in transcription or images.
 - [n/a] clear-pages: no images, only Birch's 1742 print; the originals (Bodleian Rawlinson A) are not digitised.
-- [x] known-keys: every 1653-60 royalist/Commonwealth key on cryptiana applied to (a)-(d) (apply_keys.py).
+- [x] known-keys: every 1653-60 royalist/Commonwealth key on cryptiana applied (apply_keys.py, which also runs (b)-(d)).
 - [x] print: Birch's TSP and cryptiana (Tomokiyo lists it as undeciphered) checked.
 - [x] key-rebuild: hill-climb on (a) in Dutch/French/English, bijective and homophonic; alphabetical-key search; matched control run.
-- [x] retry: nothing reads, so nothing to regrade; (c) and (d) cribs retried.
+- [x] retry: nothing reads, so nothing to regrade.

@@ -1,11 +1,15 @@
-# "Ferenc Rákóczi II to unknown recipient, 4 ciphertexts" — DECODE R483, R852, R912, R922
+# "Ferenc Rákóczi II to unknown recipient": three French letters to Rákóczi — DECODE R852, R912, R922
 
 Status: read. The three French letters (R852, R912, R922) are reports *to* Rákóczi. R912 and R922 read with the
 preserved key DECODE R639 at about 97% of groups from a fresh transcription of the images. About a third of those
 groups had been deciphered at the time, between the lines: nearly all of R912's first page, the first lines of its
 pages 2 and 3, and the first two lines of R922 (recorded 30 Sept 2026, "Deciphered at the time" below). R852 has its own clear
-copy. The Latin letter R483 is Rákóczi's own (Lwów, 27 June 1711). It carries an interlinear decipherment, and its
-syllabic key has been rebuilt from that decipherment.
+copy.
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). The fourth record of catalogue item 44,
+Rákóczi's own Latin letter R483 (Lwów, 27 June 1711), is in a different cipher, a Latin syllabary whose key was
+rebuilt from its interlinear decipherment. It is now [`targets/rakoczi1711/`](../rakoczi1711/NOTES.md) (a different
+cipher, with its own page); its section below is kept as a pointer.
 
 Catalogue item 44 (class B, scored by rule). All four records are MNL OL, and the images are not in the public
 domain, so none is reproduced. Worked 21 Sept 2026. Pass 1 used DECODE's text transcriptions. Pass 2 fetched the
@@ -139,43 +143,17 @@ Writer: unsigned. R852's writer names Groffey in the third person and was at Dan
 may be the same man. Grade M. The key heading *De Monsieur de Bonac et Graffei* suggests that the key served the
 whole Bonac–Groffey correspondence.
 
-## R483: Rákóczi, Lwów, 27 June 1711 (Latin)
+## R483: moved to rakoczi1711
 
-P237 Festetics 10. d. 2. 42–44, 6 pp., 2,531 cipher groups in 180 lines (transcribed from the images, `tr/R483_p*.txt`,
-with the clerk's interlinear on the `P:` lines). The letter is signed in autograph "Franciscus Princeps" and dated in
-clear "Leopoli die 27. Junii Anno 1711". DECODE's "7 June" is wrong. It is addressed to "Fidelis nobis sincere
-dilecte", an envoy on his way to Holland who is in poor health and handles money and the mathematical instruments
-ordered from Mangold. A clear postscript deals with those instruments.
-
-**Key rebuilt.** `align483.py` aligns every cipher line with the interlinear by hard EM, with each code taking
-0–4 letters. It gives 224 codes (`R483_key_rebuilt.json`), 156 of them seen at least twice. It is a syllabic cipher
-with homophones: single letters (190/430 s, 140/380 n, 60/300 e, 20/260 a, 130/370 m), open syllables (257 re,
-428 ti, 68 se, 362 de, 96 no, 457 ri, 148 si, 92 ce, 152 co, 59 tu, 378 ta) and a few words and names.
-Decoding with the rebuilt key (`check483.py`, output `R483_key_read.txt`) reproduces 70% of the clerk's letters.
-The mismatches are rare codes, homophones seen once, and the clerk's own abbreviations. Where the clerk's words
-are doubtful, the key often settles them: "nos Regem extra dietam promulgatum non deposito [juramento] agnoscere
-non posse sine … ruina [libertatum nostrarum]", and "ne fors etiam".
-
-Content. P. 1: Rákóczi sends a copy of the "Tractatus sic dictae Pacis Carolianae" (Szatmár), which he calls a
-fraud engineered in Vienna, and reports that Archduke Charles was proclaimed king in every Hungarian county,
-contrary to the 1687 article of the Pozsony diet. P. 2: he will not recognise a king proclaimed outside a free diet.
-He appeals to the Tsar and the Polish Republic to mediate. He offers to come to a free diet in person or by
-plenipotentiaries and to recognise a lawfully crowned king, provided the confederates are restored to their
-estates. P. 3: the Allies' assurances about Hungarian liberties were a "diversio armorum" for Austria, and the war
-must go on. P. 4: Pálffy's artillery against "arcem nostram Munkatsiensem", and the restitution of Transylvanian
-liberty. P. 5: the general confederation in Poland, letters to go "per Saxoniam", the Muscovite advance, a warning
-to trust only news sent directly from Rákóczi, complaints about the Grand Chancellor's "indiscretum procedendi
-modum" and about Ráday, and letters from the Chancellor at Dukla. P. 6: receipts left with a Jew, and a member of
-the Economic Council who took treasury money for his own use.
-
-Open: an edited Latin text line by line. The material for it is here (clerk plus key reading). The key's
-single-occurrence codes (68 of 224) are grade C.
+Rákóczi's Latin letter of 27 June 1711 (P237 Festetics 10. d. 2. 42–44, 2,531 groups) was filed here until 14 Oct
+2026. R639 gives nonsense on it (`decode.py` control, `R483_key08_read.txt`, kept here with DECODE's transcription
+`DOC_R483_D2172_2172.txt`). Its transcription `tr/R483_p*.txt`, the aligner `align483.py`, `check483.py`, the
+rebuilt key and its reading are now in `../rakoczi1711/`.
 
 ## Files
 
 - `fetch_decode.py`, `fetch_img.py`: fetch the DOC transcriptions and the images (cookie from `../bordeaux/decode/`).
-- `tr/`: new transcriptions from the images (R922 p1–2, R912 p1–3, R852 p1–3, R483 p1–6).
+- `tr/`: new transcriptions from the images (R922 p1–2, R912 p1–3, R852 p1–3; R483's are in `../rakoczi1711/tr/`).
 - `decode_tr.py`: the corrected R639 table. `R922_image_read.txt`, `R912_image_read.txt`: readings.
 - `R852_clear.txt`: the contemporary clear copy of R852.
-- `align483.py`, `check483.py`, `R483_key_rebuilt.json`, `R483_key_read.txt`: the R483 key and reading.
 - `decode.py`, `R*_key08_read.txt`: pass 1 on DECODE's transcriptions.

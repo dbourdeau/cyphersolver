@@ -1,8 +1,38 @@
 {
  "schema_version": 1,
  "target": "sperantio1534",
- "title": "King John of Hungary and an agent at Buda to the dukes of Bavaria, 1534: the Sperantio file, BayHStA Kurbayern Äußeres Archiv 4591 ff.248, 250-251 (DECODE R9411, R9412)",
+ "title": "King John of Hungary and an agent at Buda to the dukes of Bavaria, 1533-1534: the system L letters (R9415 and the Sperantio file), BayHStA Kurbayern Äußeres Archiv 4591 ff.248, 250-251, 260-261 (DECODE R9415, R9411, R9412)",
  "documents": [
+  {
+   "id": "R9415",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.260-261 (DECODE R9415)",
+   "date": "18 Apr 1533",
+   "year": 1533,
+   "country": "Germany",
+   "route": "King John (Zápolya)'s side → the dukes of Bavaria, address to their agent Aurelio Augurelio",
+   "language": "Latin",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Gloss over P1 l.3 ('incrementum') and clear passages; key rebuilt here."
+   },
+   "length": {
+    "tokens": 2341,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r9415/signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, read from crops",
+    "image_quality": "fair",
+    "notes": "One char per sign; clear passages and glosses excluded by signstream.py."
+   },
+   "read": "read"
+  },
   {
    "id": "R9411",
    "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 f.248 (DECODE R9411)",
@@ -67,7 +97,7 @@
   "types": [
    "homophonic"
   ],
-  "summary": "Homophonic substitution on a graphic sign set, no word division, a few signs carrying digraphs (ch, ck, sch) and three word signs; clear Latin passages left standing in the cipher.",
+  "summary": "Homophonic substitution on a graphic sign set, no word division, a few signs carrying digraphs (ch, ck, sch) and three word signs; clear Latin passages left standing in the cipher. System L of the volume.",
   "symbol_kind": "symbols",
   "distinct_symbols": 153,
   "diacritics": {
@@ -97,7 +127,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "A contemporary interlinear decipherment of R9411 on f.248r-v (read at the time); none for R9412, and neither letter in print.",
+   "where": "A contemporary interlinear decipherment of R9411 on f.248r-v (read at the time); a one-word gloss on R9415 P1 l.3; none for R9412, and none of the three in print.",
    "found": "during attempt",
    "used": true
   },
@@ -115,16 +145,57 @@
    "lexicon Viterbi fit (fit.py)",
    "lexicon reading measure (lexread.py)",
    "n-gram LM (lang: la, de-1500s)",
-   "sign transcription from crops"
+   "sign transcription from crops",
+   "targets/sperantio1534/r9415/solve.py",
+   "targets/sperantio1534/r9415/beam.py"
   ],
   "models": [
    "claude-opus-5"
   ],
   "sessions": 3,
-  "first_date": "2026-09-22",
-  "last_date": "2026-09-22"
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-15"
  },
  "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "[R9415, as kaa4591b] R9415 transcribed one char per sign; P1 photographed upside down",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "[R9415, as kaa4591b] System A′ key (R9427 gloss) applied to R9415, whose signs look like A′",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "[R9415, as kaa4591b] R9369 (Augurelio's 1531 key) tested on R9415 (system L)",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "[R9415, as kaa4591b] R9415 P1 l.3 gloss 'incrementum' seeded the key",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "[R9415, as kaa4591b] R9415 annealing with the la model, then beam search (solve.py, beam.py)",
+   "result": "worked"
+  },
   {
    "date": "2026-09-22",
    "kind": "literature search",
@@ -139,7 +210,13 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["simulated annealing", "repeat/pattern analysis", "language-model scoring", "plaintext matching"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "repeat/pattern analysis",
+    "language-model scoring",
+    "plaintext matching"
+   ],
    "what": "[session A] Homophonic annealer (la model) on R9411: raw run collapsed onto one letter; homophone caps plus seed values from the gloss",
    "result": "partial"
   },
@@ -157,13 +234,20 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
    "what": "[session A] R9412 refit with de-1500s: free fit nulled signs (worse); joint Latin+German fit worse; seeded fit with ch/sch values",
    "result": "partial"
   },
   {
    "date": "2026-09-22",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
    "what": "[session A] From System A prior and context: z, h, r+o = h, r+ = sch, 2o = und, a+ = der, K = rr, A = b, double stem = g as well as u/v; R9412 ~84% incl. clear Latin",
    "result": "worked"
   },
@@ -217,7 +301,10 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["hill climbing"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing"
+   ],
    "what": "[session A] Key optimisers driven by that measure (lexopt.py global polys; lexopt2.py per-occurrence polys and per-line evaluation): raised coverage but degraded the German; rejected",
    "result": "failed"
   },
@@ -241,7 +328,10 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["automated search (unspecified)"],
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)"
+   ],
    "what": "[session A] Gap-level search over the uncertain signs (gapfix.py): at every unread span, all polyphone combinations plus one shape-neighbour substitution, accepted only if the span becomes a real period word. Proposed kaisers, gewachsen, kunig, menigklich, geschriben - all already in the hand reading; also proposed bad fixes (hab ich -> dauid), so used as suggestions only",
    "result": "partial"
   },
@@ -271,7 +361,11 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "key matching"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "key matching"
+   ],
    "what": "[session B] The sign set is the ↓ ω π 4 8 ÿ family of the volume; tried the two rebuilt keys for it, System A′ (kaa4591) and System L (targets/kaa4591b/r9415).",
    "result": "partial"
   },
@@ -289,19 +383,29 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["hill climbing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
    "what": "[session B] Hill-climbing the key against the la and de-1500s models with multi-letter values allowed: collapsed into 'er'/'und' filler, because per-character scoring rewards common bigrams.",
    "result": "failed"
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["hill climbing"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing"
+   ],
    "what": "[session B] Same hill-climb restricted to single-letter values: converged below the seed key, which was kept.",
    "result": "failed"
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["beam/DP decoding"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding"
+   ],
    "what": "[session B] Viterbi fit of corpus words to the sign stream, each sign allowed its alternative values and (in German) its digraphs.",
    "result": "worked"
   },
@@ -330,16 +434,55 @@
    "result": "worked"
   },
   {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "[R9415, as kaa4591b] R9415 zoom pass: join nulls after clear passages, h ligatures; 386/405 words",
+   "result": "worked"
+  },
+  {
    "date": "2026-10-05",
    "kind": "control",
    "what": "Push to 95%: wrote measure.py (cipher words only, clear text excluded, supplies unread). Checked every bracketed supply in reading_r9412.txt against run_r9412_final.txt: nine places the cipher itself spells (l.1 genedigist/herrn, l.17 and l.26 gethan, l.20 der canczler with 2 slips, l.25 ankomen v=k, l.28 komen, l.40 guet, l.47 er, l.60 was es) were un-bracketed. R9412 93.4% -> 95.3%, overall 94.2% -> 95.4% on the new measure. No new key values; the remaining [..] places were not re-transcribed.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2314 tokens, 43 types, de-1500s order 4: reading -2.958 per letter; polyphonic: 19% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"}
+  {
+   "date": "2026-10-05",
+   "kind": "reading",
+   "what": "[R9415, as kaa4591b] Push-to-95% pass: every unread R9415 word set beside its raw decrypt (decrypt.txt); 'in re' and 'omnia ea affirmavit' taken where the decrypt spells them; 'iure' (decrypt iuue) and 'hoc' rejected; count.py 388/405 (95.8%)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 2314 tokens, 43 types, de-1500s order 4: reading -2.958 per letter; polyphonic: 19% of read tokens differ from their type's commonest value. Verdict: not applicable.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): R9415 (catalogue 162, worked in kaa4591b) moved here, since this folder's NOTES show it is the same key (system L fits R9411 unchanged; values agree sign for sign). Its other catalogue-162 companions are other ciphers (R9403 Łaski's System B in kaa4591b, R9414 system G in wardein1537). Fraction re-counted over the three letters.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "de-1500s", "file": "validation.tsv", "tokens": 2314, "types": 43, "tokens_per_type": 53.81, "score": -2.958, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 19% of read tokens differ from their type's commonest value"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "de-1500s",
+   "file": "validation.tsv",
+   "tokens": 2314,
+   "types": 43,
+   "tokens_per_type": 53.81,
+   "score": -2.958,
+   "nulls": {},
+   "verdict": "not applicable",
+   "notes": "polyphonic: 19% of read tokens differ from their type's commonest value"
+  },
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The key was fixed from the contemporary interlinear decipherment over every line of R9411 (f. 248r-v) and applied to R9412 (ff. 250r-251r, same file, no decipherment), which makes up most of the text read; an independent session found the same key as System L, rebuilt earlier for R9415.",
+  "method_basis": "The key was first rebuilt for R9415 from the one-word gloss on P1 l.3 ('incrementum') by annealing and beam search, then fixed independently from the contemporary interlinear decipherment over every line of R9411 (f. 248r-v); the two agree sign for sign, and the key deciphers R9412 (ff. 250r-251r, no decipherment).",
   "contribution": [
    "transcription",
    "key recovered",
@@ -349,12 +492,16 @@
   "class": "read",
   "key": "recovered",
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over r9411/reading_r9411.txt + r9411/reading_r9412.txt, cipher words only (clear Latin/German passages left out, every supplied word counted unread): R9411 340/356, R9412 546/573, total 886/929 = 95.4% (5 Oct 2026; the old 915/996 counted clear text).",
+  "fraction_read_source": "measure.py over r9411/reading_r9411.txt + r9411/reading_r9412.txt, cipher words only (clear passages left out, every supplied word counted unread): R9411 340/356, R9412 546/573; r9415/count.py over r9415/reading.txt 388/405 (17 unread or doubtful words counted unread); total 1274/1334 = 95.5% (15 Oct 2026).",
   "codes_open": {
    "open": 0,
    "total": 5
   },
-  "verification": ["contemporary decipherment", "key confirms", "historical consistency"],
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
   "gaps": [
    {
     "item": "R9412 27 cipher words unread (fortress l.10, Caiianer l.44, bishop l.56, factor l.51, signature l.65, scattered single words) plus remaining supplies",
@@ -365,12 +512,21 @@
     "item": "R9411 16 words: 13 short gaps incl. the captain's name l.19, and supplies",
     "blocker": "illegible",
     "detail": "Blotted signs; the gloss is faint at the same places."
+   },
+   {
+    "item": "R9415 17 unread or doubtful words (listed in r9415/count.txt)",
+    "blocker": "open-codes",
+    "detail": "scattered, mostly one sign each"
    }
   ],
-  "notes": "DECODE has the direction wrong: Sperantio is the addressee on the cover, not the sender. R9411 is King John to the dukes, R9412 an agent's newsletter. The key is System L of R9415 in the same volume: one correspondence.",
-  "fraction_read": 0.954,
+  "notes": "DECODE has the direction wrong: Sperantio is the addressee on the cover, not the sender. R9411 is King John to the dukes, R9412 an agent's newsletter. The key is System L of R9415 in the same volume: one correspondence. R9415 (18 Apr 1533), where the key was first rebuilt, joined this entry on 15 Oct 2026 from kaa4591b.",
+  "fraction_read": 0.955,
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment of R9411 (f. 248r-v)"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment of R9411 (f. 248r-v) and the one-word gloss on R9415 P1 l.3"
+   }
   ]
  }
 }

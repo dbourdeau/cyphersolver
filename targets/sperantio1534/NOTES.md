@@ -1,10 +1,17 @@
-# Two ciphered letters in the Sperantio file, BayHStA KAA 4591 ff.248, 250–251 (DECODE R9411, R9412)
+# System L: R9415 and the two ciphered letters of the Sperantio file, BayHStA KAA 4591 ff.248, 250–251, 260–261 (DECODE R9415, R9411, R9412)
 
-Status: read (95.4% of cipher words, measured with `measure.py`, 5 Oct 2026; R9411 95.5%, R9412 95.3%)
+Status: read (95.5% of cipher words over the three letters, 15 Oct 2026: R9415 95.8% by `r9415/count.py`; R9411 95.5%, R9412 95.3% by `measure.py`, 5 Oct 2026)
 
 Catalogue entry 163, "Cornelio Sperantio to …, 2 ciphertexts". DECODE R9411 (f.248r–v, 2 pp. of cipher) and
 R9412 (ff.250r–251r, 3 pp. of cipher, cover f.251v). Same key volume as `targets/kaa4591/` (catalogue 161) and
-`targets/kaa4591b/` (catalogue 162); kept apart because the catalogue lists it apart.
+`targets/kaa4591b/` (catalogue 162).
+
+**15 Oct 2026, one-key rule (George Lasry, 14 Oct 2026):** R9415 (ff.260–261, 18 April 1533, catalogue 162), the letter
+for which this key (system L) was first rebuilt in `targets/kaa4591b/`, moved here with its files (`r9415/`), because
+it is the same key: system L fits R9411 unchanged and the two keys agree sign for sign (below). Its companions in
+catalogue 162 are different ciphers, each with its own page: R9403 in Łaski's System B
+([`targets/kaa4591b/`](../kaa4591b/NOTES.md)) and R9414 in system G ([`targets/wardein1537/`](../wardein1537/NOTES.md)).
+The R9415 reveal that stood on the kaa4591b page is kept as `r9415/reveal_r9415.json`.
 
 Images: DECODE, login only. DECODE's rights line: "The image is not in the public domain. Publishing it is only
 possible with the permission of the Archive"; no permission asked, so the JPEGs stay in the untracked `img/` and
@@ -43,9 +50,26 @@ w/4 e, q n, v r, x/L s, 5 a, 3 u, y t, 7 m, m i, c c, 9 o, d l, 6 d, 8 n, D f, P
 signs 2o = et/und, oo = q(u), r+ = sch, ro = h, a+ = der; ‡ before :: is a paragraph null. Language decides the
 pair signs (et in Latin, und in German).
 
-This is the key the second session called **System L**, rebuilt in `targets/kaa4591b/` for R9415 (18 April 1533, King
+This is the key the second session called **System L**, rebuilt in `targets/kaa4591b/` for R9415 (now `r9415/` here; 18 April 1533, King
 John's side to the dukes): its values agree sign for sign on the common signs (w e, x s, 3 u, v r, y t, q n,
 5 a, 7 m, 9 o, 8 n, d l, 6 d, D f, c c). The Sperantio file and R9415 are one correspondence, in one cipher.
+
+## R9415 (ff.260–261), King John's side to the dukes, 18 April 1533 — read
+
+Worked 21–22 Sept and 5 Oct 2026 in `targets/kaa4591b/` (catalogue 162); moved here 15 Oct 2026. Latin; clear
+"Datum 18 Aprilis 33"; to "illustrissimi principes … fratres" (the dukes); the address (P4, clear) is to Aurelio
+Augurelio, the dukes' agent. Signs look like the System A′ set of `targets/kaa4591/sysA`, but the values differ: the A′
+key does not fit, nor does R9369 (Augurelio's 1531 key). Key rebuilt from the P1 l.3 gloss ("… incrementum"), then
+annealing with the `la` model (`r9415/solve.py`, `anneal1/2.txt`) and a beam search (`r9415/beam.py`, `beam1.txt`);
+final key `r9415/key.txt`. Six join nulls (ȣ/⊙) follow the clear passages. Reading: `r9415/reading.txt`; count
+`r9415/count.txt` (count.py: 405 words, 17 unread or doubtful, 95.8%; 5 Oct: "in re", "omnia ea affirmavit" taken
+where the decrypt spells them, "iure" and "hoc" rejected). `r9415/signstream.py` writes `r9415/signs.txt` (2,341 signs).
+
+Content: Georgius, the dukes' servant, came back with three reasons for their urging concord at the diet of
+Pressburg; thanks. The "enemy" king (Ferdinand) opened a treaty with King John while secretly suing the Sultan for
+peace; the Sultan's own letters revealed it, so John recalled his orators and sent his governor to the Sultan at his
+request. Ferdinand boasts of peace but does not know its terms; the dukes should not believe the rumour. The Turkish
+envoy in Vienna: his speech made Ferdinand's orator in Turkey "his" orator.
 
 ## R9411 (f.248r–v), King John to the dukes of Bavaria, Buda 6 Feb 1534 — read
 
@@ -90,10 +114,11 @@ confirms the key independently of the gloss; its readings are superseded by `r94
   these lines is the remaining move.
 - R9411 13 short gaps - blocker: illegible; single words at blotted signs, and the captain's name on l.19, where
   the gloss is also faint.
+- R9415 17 unread or doubtful words (listed in `r9415/count.txt`) - blocker: open-codes; scattered, mostly one sign each; zoom pass 22 Sept and decrypt check 5 Oct 2026 done
 
 ## Escalation
 
-- [x] siblings: R9415 (System L, kaa4591b) has the same key; System A′ letters R9408–R9413 used as parallel text
+- [x] siblings: R9415 (System L, first worked in kaa4591b, now in this entry) has the same key; System A′ letters R9408–R9413 used as parallel text
   for R9412 (they read worse, no help); R9413 key compared (16 signs agree, a different key).
 - [x] clear-pages: R9411's own interlinear gloss gave the key; the only other gloss (f.251r) is the dating clause.
 - [x] known-keys: System L (R9415) and System A′ (R9427 gloss key) tried; System L fits unchanged.

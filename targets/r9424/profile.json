@@ -1,0 +1,154 @@
+{
+ "schema_version": 1,
+ "target": "r9424",
+ "title": "A letter to Duke Wilhelm V of Bavaria, 12 June 1583, in a Latin-letter cipher, BayHStA Kurbayern Äußeres Archiv 4591 ff.274-277 (DECODE R9424; catalogue 161)",
+ "documents": [
+  {
+   "id": "R9424",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.274-277 (DECODE R9424)",
+   "date": "12 Jun 1583",
+   "year": 1583,
+   "country": "Germany",
+   "route": "unknown → Duke Wilhelm V of Bavaria",
+   "language": "German",
+   "pages": 6,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Glosses over a few names on f.275r (Hildesheim, Würzburg, Eichstätt, Freising)."
+   },
+   "length": {
+    "tokens": 913,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r9424/signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, 3468x4624, read from crops",
+    "image_quality": "good",
+    "notes": "r9424/transcription.txt, glyph by glyph; signs.txt written by signstream.py (margin table on f.273v left out)."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "unknown"
+  ],
+  "summary": "German letter with cipher runs in Latin minuscules and a few invented signs (ε, ∆, ʒ, /), word-separated; IoC 0.068 flat over periods 1-8, so monoalphabetic or a code; contemporary glosses over a few single groups (names). A nomenclator fragment on the facing leaf f.273v (Cöln, Wirtemberg, Landgraf).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 29,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "R9422 (1582-83 alphabet, cut at a/b), R9420 (shift alphabet), R9421 (tabula recta) tried; none fits",
+  "notes": "Split on 15 Oct 2026 from kaa4591 (catalogue 161)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Glosses over a few names on f.275r (Hildesheim, Würzburg, Eichstätt, Freising); no edition found.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "key from archive"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: DECODE login cookie supplied; problem posed with /goal; the user asked for a period German model. No target-specific intervention.",
+  "tools": [
+   "targets/kaa4591/anneal.py",
+   "lang de-1500s",
+   "lang la"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-15"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Web search for KAA 4591 and Augurelio ciphers",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "DECODE record list from the API dump (141 records in the volume); images of the 14 targets and 30 neighbouring keys fetched with the cookie",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Constrained homophonic annealing with de-modern on R9424",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "R9422 (1582-83) Latin-letter alphabet applied to R9424",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Annealing with nulls allowed on R9424 (de-1500s, homophone caps; also Latin and Italian): failed",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591 (catalogue 161), whose fourteen records are letters in at least six systems: System A′ stays in kaa4591; Łaski's System B is kaa4591b; R9325 is fulda1576; R9367, R9416, R9424 and R9319 are r9367, r9416, r9424 and r9319; R9291 is a key fragment.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No key in the volume fits and annealing in German, Latin and Italian gives no text; the glosses over single groups suggest code groups.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "key": "none",
+  "verification": [],
+  "notes": "Attempted 21 Sept 2026 and closed: probably code groups plus transcription noise; gloss cribs too few.",
+  "gaps": [
+   {
+    "item": "the whole cipher (913 signs)",
+    "blocker": "no-key-material",
+    "detail": "R9420-R9422 do not fit; annealing fails; few gloss cribs"
+   }
+  ],
+  "credits": []
+ }
+}

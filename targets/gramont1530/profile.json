@@ -1,0 +1,193 @@
+{
+ "schema_version": 1,
+ "target": "gramont1530",
+ "title": "Gabriel, cardinal de Gramont, Rome, to Montmorency, 21 July 1530, BnF fr. 3071 no. 7 f. 17 (catalogue item 6, Gramont's cipher 1530)",
+ "documents": [
+  {
+   "id": "gramont1530",
+   "shelfmark": "BnF fr. 3071 no. 7, f. 17 (Gallica btv1b9060315f)",
+   "date": "21 July [1530]",
+   "year": 1530,
+   "country": "France",
+   "route": "Rome -> French court",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment found. Lasry decoded the text in 2023, unpublished."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica canvas 30",
+    "image_quality": "good",
+    "notes": "14 cipher lines (NOTES); no glyph-alias file kept."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution on graphic signs, two to seven homophones per letter, LL/RR/SS signs, COM and CON signs, a few code signs and nulls ('Gramont's cipher (1530)', Lasry's table for fr. 3071 f. 17; Tomokiyo's sibling fr. 3019 f. 20).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 7
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "titles"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "special sign",
+  "sibling_key": "Lasry's 2023 table 'Gramont's cipher (1530)' (GL.htm, GL/BnF_fr3071_f17.png; copy img/BnF_fr3071_f17.png); Tomokiyo's table from fr. 3019 f. 20 (img/francisGramont.png).",
+  "notes": "Lasry's table lists five unknown signs; three identified here from context: 8Δ = pape, key-ring sign = roy, ʃʃ on a stem = word-initial null. g serves B, V and E. Homophone maxima counted from Lasry's table as transcribed in fr3071_no7_gramont.md (R has 7 forms incl. ligatures; O has 4)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Key published online by Lasry (table dated 4-5 Nov 2023 on cryptiana GL.htm). Lasry also decoded this letter in 2023, unpublished (Lasry, 21 Sept 2026).",
+   "found": "after reading",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: set up Claude Code and posed the catalogue item; no target-specific intervention recorded. Relayed Lasry's 21 Sept 2026 correction on his unpublished decipherments.",
+  "tools": [
+   "Gallica image scripts (targets/gramont1529/thumbs.py, full.py, crop.py)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-18",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-18",
+   "kind": "literature search",
+   "what": "Matched the four items against Tomokiyo's francis.htm and GL.htm: four letters, four different keys, all tabulated by Lasry in 2023; no plaintext on either site.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "access",
+   "what": "Located the correct Gallica arks (fr. 3091 is btv1b9060253s, not the catalogue's) and fetched full-resolution canvases.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "key from source",
+   "what": "Applied Lasry's 'Gramont's cipher (1530)' table to the 14 cipher lines of f. 17r by eye from line strips.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "reading",
+   "what": "Read about 85 % of the cipher; identified three of Lasry's five unknown signs (8Δ = pape, key-ring = roy, ʃʃ-on-stem null). Ends of lines 1-2 and the middle of lines 5-7 at lower confidence.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "verification",
+   "what": "Dated to 21 July 1530 by the return of the Queen and the princes (Bidassoa, 1 July 1530) and Rodolfo Pio's mission as nuncio.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Correction from George Lasry: he decoded all four texts in 2023 when reconstructing the keys, but the decipherments were never published. Prior-solution record updated: a reading existed, unpublished, learned of after the reading and not used (only his keys were).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split the combined catalogue item 6 entry under the one-key rule (George Lasry, 14 Oct 2026): four letters in four keys. gramont1529 keeps fr. 3091 no. 23 (Gramont's cipher 1529); langeac1529 takes fr. 3083 no. 8 (Avranches' cipher 1); gramont1530 takes fr. 3071 no. 7 (Gramont's cipher 1530); the Mâcon letter fr. 3071 no. 4 moved to rome1536 with the other letters in Mascon's cipher. This entry is fr3071_no7_gramont.md, moved from targets/gramont1529/."
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Read with Lasry's 2023 table 'Gramont's cipher (1530)' for this letter (cryptiana GL.htm); no new cryptanalysis.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "class": "read in part",
+  "fraction_read": 0.85,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "fr3071_no7_gramont.md: 'about 85 % of the cipher is read' (ends of lines 1-2 and the middle of lines 5-7 lower confidence). No alias file kept, so not counted.",
+  "key": "partial",
+  "codes_open": {
+   "open": 2
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "ends of cipher lines 1-2 and the middle of lines 5-7 (about 15 % of the cipher)",
+    "blocker": "open-codes",
+    "detail": "the stretches carry signs Lasry's table leaves unknown (the grid sign, the crown) and the ambiguous g (B/V/E); no gloss, clear copy or decipherment of this letter exists"
+   },
+   {
+    "item": "two of Lasry's five unknown signs (crown, ꝛ-bar or ꟿ) without a value",
+    "blocker": "open-codes",
+    "detail": "each occurs too rarely here to fix from context"
+   }
+  ],
+  "notes": "About 85 % read: the Pope keeps Francisque on the mission instead of Gramont; Rodolfo Pio, bishop of Faenza, to congratulate the King on the return of the Queen and the princes.",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "2023 key table 'Gramont's cipher (1530)' for fr. 3071 f. 17 (GL.htm), applied unchanged",
+    "date": "2023-11-04",
+    "source": "cryptiana GL.htm"
+   },
+   {
+    "who": "lasry",
+    "role": "prior solution",
+    "note": "decoded this letter in 2023, never published (his correction of 21 Sept 2026)",
+    "date": "2023",
+    "published": false
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "partial table of Gramont's 1530 cipher from the sibling fr. 3019 f. 20 (cryptiana francis.htm)",
+    "source": "cryptiana francis.htm"
+   }
+  ]
+ }
+}

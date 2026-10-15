@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "michell1751",
- "title": "Frederick II to Louis Michell (London), Berlin 28 Dec 1751, KHA Prins Willem V inv. 198 (DECODE R1957; sibling ministerial rescript R1955)",
+ "title": "Frederick II to Louis Michell (London), Berlin 28 Dec 1751, KHA Prins Willem V inv. 198 (DECODE R1957), in the King's cabinet code",
  "documents": [
   {
    "id": "R1957",
@@ -15,96 +15,202 @@
    "pages": 2,
    "cleartext_in_document": "separate passages",
    "plaintext": {
-    "location": ["printed edition"],
+    "location": [
+     "printed edition"
+    ],
     "source": "Politische Correspondenz Friedrichs des Grossen 8 (1882) no. 5263, pp. 576-577, edited from the minute; matched to this copy here.",
     "partial": false
    },
-   "length": {"tokens": 550, "distinct": 293, "unit": "code groups", "measured": true, "file": "ct.txt"},
+   "length": {
+    "tokens": 550,
+    "distinct": 293,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ct.txt"
+   },
    "transcription": {
     "by": "llm from images",
     "source": "DECODE images IMG_R1957 P2 (first page) and P1",
     "image_quality": "unknown",
     "notes": "Clear heading, opening, date and signature excluded; two corrections written above the line and a few underlined groups noted in transcription.txt."
    }
-  },
-  {
-   "id": "R1955",
-   "read": "read in part",
-   "shelfmark": "Koninklijk Huisarchief, The Hague, Prins Willem V inv. 198 (DECODE R1955)",
-   "date": "28 Dec 1751",
-   "year": 1751,
-   "country": "Prussia",
-   "route": "Berlin -> London (Dutch interceptors' copy, The Hague)",
-   "language": "French",
-   "pages": 2,
-   "cleartext_in_document": "separate passages",
-   "plaintext": {"location": ["none"], "source": "Ministerial rescript; not in the Politische Correspondenz; no printed or online decipherment found."},
-   "length": {"tokens": 362, "distinct": 296, "unit": "code groups", "measured": true, "file": "transcription_r1955.txt"},
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE images P2 (first page) and P1, one line per manuscript line",
-    "image_quality": "unknown",
-    "notes": "NOTES give 295 distinct; the measured count is 296 (half-groups such as 1½ and uncertain readings marked ? count as written)."
-   }
   }
  ],
  "system": {
-  "types": ["code", "nomenclator"],
-  "summary": "Two different Prussian numerical codes: R1957 point-separated groups 2-6472 with homophones for common words; R1955 a large code of groups 2-5346 with half-groups (1½, 150½, 660½) and homophones even for de and que.",
+  "types": [
+   "code",
+   "nomenclator"
+  ],
+  "summary": "Frederick II's cabinet code of 1751 to Michell: a numerical nomenclator, point-separated groups 2-6472, with homophones for common words, separate groups for endings and phrase groups.",
   "symbol_kind": "digits",
-  "digit_groups": {"width": "1-4", "separation": "dots"},
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "dots"
+  },
   "distinct_symbols": "unknown",
-  "diacritics": {"used": true, "note": "Some R1957 groups are underlined with one to three strokes (533, 2102, 206, 211, 362, 4013); function not established. R1955 uses half-groups."},
-  "homophones": {"used": true},
-  "nomenclator": {"present": true, "entries": "unknown", "kinds": "unknown", "unread_groups": "unknown"},
-  "nulls": {"present": "unknown"},
+  "diacritics": {
+   "used": true,
+   "note": "Some groups are underlined with one to three strokes (533, 2102, 206, 211, 362, 4013); a double underline can change the value (190= roi d'Angleterre after du/au)."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": "unknown",
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
   "key_order": "unknown",
   "word_division": "unknown",
   "doubled_letters": "unknown",
-  "sibling_key": "None found: R1957 and R1955 share only 19 distinct groups (chance collisions); DECODE R1953 (von der Hellen, 4 Jan 1752) checked and is a different, smaller code. Added by WAINUT (11 Oct 2026): R1955 is in the code of Michell's own reports to the King (DECODE R1050, 5 Sep 1752; R1051, 12 Nov 1751), whose contemporary Dutch decipherments give 271 code values (key1751/scripts/envoy_key.py); R1957 shares its cabinet code with six King-to-Michell letters of Nov-Dec 1751 in Nationaal Archief 1.10.29 inv. 5177, used to rebuild that code.",
+  "sibling_key": "The same cabinet code is used in six King-to-Michell letters of Nov-Dec 1751 in Nationaal Archief 1.10.29 (Fagel) inv. 5177, whose printed concepts (PC 8) gave WAINUT the key (11 Oct 2026). The ministerial letter of the same day (DECODE R1955) is in a different code, Michell's envoy code, and is a separate entry (targets/r1955/).",
   "notes": "R1957 anchors from positional matching against the print (19 Sept): 1064 Vienne, 545 avec, 4364 faire, 4310 Sardaigne, 87 encore; 3042 was taken as dessein and 169 as de, 47 roi, 1555 1550 et suis, corrected 12 Oct 2026 after review of WAINUT's key to 3042 sur (dessein = 700), 169 que, 47 probably affaire, et suis = 15 144. ct.txt corrected for 27 groups read 0 for 8 (ct_corrections.tsv). The ms separates groups with points; the transcription files use spaces. WAINUT key reconstruction (11 Oct 2026, key1751/key_cabinet_v2_final.tsv) confirms 1064, 545, 4364, 87, gives 4310 as the phrase group 'le roi de Sardaigne', and differs on 3042 (sur; dessein = 700), 169 (que), 47 (probably affaire), 1555 1550 (opening pair; et suis = 15 144); 1900 = Pologne, 4366 = le. Its grades A/B/C measure evidence and are not the README H/C/M/I scale."
  },
  "conditions": {
-  "prior_solution": {"exists": "in print", "where": "Politische Correspondenz Friedrichs des Grossen 8 (1882) no. 5263 (R1957 only); nothing for R1955", "found": "during attempt", "used": true},
-  "inputs": ["images", "published reading", "sibling key", "transcription"],
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Politische Correspondenz Friedrichs des Grossen 8 (1882) no. 5263",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading",
+   "sibling key",
+   "transcription"
+  ],
   "attack": "none",
   "human_role": "Supplied the DECODE login (session cookie) for the images. WAINUT contribution (11-12 Oct 2026): the images and the DECODE transcriptions of R1050/R1051 were fetched with a WAINUT DECODE account; the analysis was automated (see NOTES); human interventions on this target beyond setting the goal are not recorded.",
-  "tools": ["anchors.py (positional matching of repeated groups against repeated words of the print)", "dynamic-programming alignment of code groups with the printed concepts (WAINUT research scripts, not ported)", "key1751/scripts: decode.py, lcs_test.py, eval_blind.py, envoy_key.py, coherence.py, circular.py, compare_tx.py"],
-  "models": ["claude-opus-5"],
+  "tools": [
+   "anchors.py (positional matching of repeated groups against repeated words of the print)",
+   "dynamic-programming alignment of code groups with the printed concepts (WAINUT research scripts, not ported)",
+   "key1751/scripts: decode.py, lcs_test.py, eval_blind.py, compare_tx.py"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
   "sessions": 1,
   "first_date": "2026-09-19",
   "last_date": "2026-10-12"
  },
  "solution": [
-  {"date": "2026-09-19", "kind": "access", "what": "Fetched DECODE R1957 and R1955 images with the cookie.", "result": "worked"},
-  {"date": "2026-09-19", "kind": "transcription", "what": "R1957 transcribed from both pages: clear opening and 550 code groups (transcription.txt, ct.txt).", "result": "worked"},
-  {"date": "2026-09-19", "kind": "literature search", "what": "Politische Correspondenz vol. 8 on archive.org searched by date: no. 5263 to Michell, 28 Dec 1751, opens with R1957's clear opening word for word.", "result": "worked"},
-  {"date": "2026-09-19", "kind": "verification", "what": "anchors.py: repeated groups fall in the print's order at matching relative positions (1064 Vienne x4, 4310 Sardaigne x3, 3042 dessein, 545 avec, 4364 faire, 87 encore); 550 groups for 438 words.", "result": "worked"},
-  {"date": "2026-09-19", "kind": "transcription", "what": "R1955 (the other letter of the same date, ministerial rescript) transcribed in full: 362 groups.", "result": "worked"},
-  {"date": "2026-09-19", "kind": "statistics", "technique": ["frequency analysis"], "what": "R1955 vs R1957: 19 shared distinct groups, chance collisions; 296 distinct in 362, commonest group 5 times: large homophonic code with nothing for ciphertext-only analysis.", "result": "ruled out"},
-  {"date": "2026-09-19", "kind": "literature search", "what": "Printed or online decipherment of R1955 sought; the ministerial rescripts are not in the Politische Correspondenz; none found.", "result": "failed"},
-  {"date": "2026-09-19", "kind": "sibling key", "what": "DECODE R1953 (von der Hellen to the King, 4 Jan 1752) checked as a sibling of R1955: different, smaller code.", "result": "failed"},
-  {"date": "2026-10-11", "kind": "transcription", "what": "WAINUT: six King-to-Michell letters in the cabinet code transcribed from Nationaal Archief 1.10.29 (Fagel) inv. 5177 scans 95-101 (1,813 groups; key1751/fagel5177/); their concepts are PC 8 nos. 5169, 5197, 5208, 5227, 5231, 5253.", "result": "worked"},
-  {"date": "2026-10-11", "kind": "key from source", "technique": ["plaintext matching", "beam/DP decoding", "manual reconstruction"], "what": "WAINUT: the six letters aligned with their printed concepts; partial cabinet key v1, 72 entries (key1751/key_cabinet_v1_frozen.tsv), committed before R1957 was transcribed.", "result": "partial"},
-  {"date": "2026-10-11", "kind": "transcription", "what": "WAINUT: R1957 (548 groups; two corrections written above struck groups kept as notes) and R1955 (360 groups; one unsplit nine-digit run) transcribed independently from the DECODE images (key1751/R1957_tx.txt, R1955_tx.txt).", "result": "worked"},
-  {"date": "2026-10-11", "kind": "control", "technique": ["statistical test", "plaintext matching"], "what": "WAINUT blind test: R1957 decoded with frozen v1 before PC 5263 was consulted (181 of 548 groups); LCS of the 168 decoded whole words with PC 5263 = 123 against shuffle mean 58.9, max 65 (500 shuffles); 12 other PC letters to Michell at shuffle level; per group 142 confirmed, 9 partial, 6 contradicted, 24 not checkable; a hand check gives 150 confirmed and 6 contradicted, all from two wrong v1 entries (156, 4366_) (key1751/scripts/lcs_test.py, eval_blind.py).", "result": "worked"},
-  {"date": "2026-10-11", "kind": "key from source", "technique": ["plaintext matching", "beam/DP decoding", "manual reconstruction"], "what": "WAINUT: R1957 aligned with PC 5263 (297 positions fixed by hand) and all seven letters re-aligned: cabinet key v2, 179 entries (122 A, 20 B, 37 C); 381 of 548 R1957 groups (69.5%) have a value (key1751/key_cabinet_v2_final.tsv, R1957_decipherment.tsv). Not tested on a held-out letter.", "result": "partial"},
-  {"date": "2026-10-11", "kind": "statistics", "technique": ["key matching"], "what": "WAINUT: R1955 against the cabinet keys: v1 gives a value to 10 of 360 groups (2.8%), v2 to 20 (5.6%), against 181 of 548 (33.0%) and 381 (69.5%) for R1957: R1955 is not in the cabinet code.", "result": "ruled out"},
-  {"date": "2026-10-11", "kind": "sibling key", "technique": ["key matching", "statistical test"], "what": "WAINUT: table of Michell's envoy code (271 codes, 512 pairs) built from DECODE's transcriptions of the contemporary Dutch decipherments of Michell's reports R1050 and R1051 (key1751/scripts/envoy_key.py; table not committed); applied to R1955: 95 of 360 groups (26.4%) decoded; adjacent decoded words attested as French word pairs 19 of 30 against 11.1 for permutations (p = 0.001; with PC 8-9 only as corpus 14 vs 9.5, p = 0.046; the right v1 decode of R1957 scores only p = 0.28 on this test).", "result": "partial"},
-  {"date": "2026-10-11", "kind": "crib", "technique": ["plaintext matching", "statistical test"], "what": "WAINUT circular-letter test, rule fixed in advance: LCS of R1955's 77 decoded words with each French PC 8-9 letter, z against 100 shuffles; best candidate (22 Dec 1751 - 10 Jan 1752) PC 5268 z = 2.69, highest control PC 5117 z = 4.85; no candidate qualifies; positive control finds a 17% word sample in its source at z 27.6-31.3 and in a 50% paraphrase at 5.8-10.9 (key1751/scripts/circular.py).", "result": "failed"},
-  {"date": "2026-10-12", "kind": "literature search", "what": "WAINUT prior-art check: this folder (Bourdeau, 19 Sep 2026) already matched R1957 to PC 5263 and transcribed R1955; the WAINUT match is an independent confirmation. A contemporary Dutch decipherment of R1955 may exist in Nationaal Archief 1.01.50 inv. 159 (not digitised); not consulted.", "result": "partial"},
-  {"date": "2026-10-12", "kind": "verification", "what": "WAINUT transcriptions compared with Bourdeau's (key1751/scripts/compare_tx.py): R1957 513 of 548 groups agree, 28 of 35 differences are 8 against 0; R1955 352 of 360 agree, 8 differences.", "result": "worked"},
-  {"date": "2026-10-12", "kind": "verification", "technique": ["statistical test", "plaintext matching"], "what": "Review of PR #29 (Bourdeau with Claude Opus 5.5): blind test re-run on PC 8-9 rebuilt from our own archive.org OCR (LCS 121 vs shuffle mean 58.9, max 65; 12 controls at shuffle level); v2 coverage 381/548 confirmed; v1 LF hash matches frozen_keys.sha256 (time order rests on WAINUT's private history); Fagel 100R and 099R decoded with v2 follow PC 5227 and 5231 in order; our anchors 3042 (sur) and 169 (que) corrected; ct.txt corrected for 27 0/8 misreads, v2 coverage on it 357 -> 373 of 550.", "result": "worked"}
+  {
+   "date": "2026-09-19",
+   "kind": "access",
+   "what": "Fetched DECODE R1957 (and its same-day sibling R1955, now targets/r1955/) images with the cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "transcription",
+   "what": "R1957 transcribed from both pages: clear opening and 550 code groups (transcription.txt, ct.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "literature search",
+   "what": "Politische Correspondenz vol. 8 on archive.org searched by date: no. 5263 to Michell, 28 Dec 1751, opens with R1957's clear opening word for word.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "verification",
+   "what": "anchors.py: repeated groups fall in the print's order at matching relative positions (1064 Vienne x4, 4310 Sardaigne x3, 3042 dessein, 545 avec, 4364 faire, 87 encore); 550 groups for 438 words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "transcription",
+   "what": "WAINUT: six King-to-Michell letters in the cabinet code transcribed from Nationaal Archief 1.10.29 (Fagel) inv. 5177 scans 95-101 (1,813 groups; key1751/fagel5177/); their concepts are PC 8 nos. 5169, 5197, 5208, 5227, 5231, 5253.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "beam/DP decoding",
+    "manual reconstruction"
+   ],
+   "what": "WAINUT: the six letters aligned with their printed concepts; partial cabinet key v1, 72 entries (key1751/key_cabinet_v1_frozen.tsv), committed before R1957 was transcribed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "transcription",
+   "what": "WAINUT: R1957 transcribed independently from the DECODE images (548 groups; two corrections written above struck groups kept as notes) (key1751/R1957_tx.txt); R1955 the same day (now targets/r1955/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "WAINUT blind test: R1957 decoded with frozen v1 before PC 5263 was consulted (181 of 548 groups); LCS of the 168 decoded whole words with PC 5263 = 123 against shuffle mean 58.9, max 65 (500 shuffles); 12 other PC letters to Michell at shuffle level; per group 142 confirmed, 9 partial, 6 contradicted, 24 not checkable; a hand check gives 150 confirmed and 6 contradicted, all from two wrong v1 entries (156, 4366_) (key1751/scripts/lcs_test.py, eval_blind.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "beam/DP decoding",
+    "manual reconstruction"
+   ],
+   "what": "WAINUT: R1957 aligned with PC 5263 (297 positions fixed by hand) and all seven letters re-aligned: cabinet key v2, 179 entries (122 A, 20 B, 37 C); 381 of 548 R1957 groups (69.5%) have a value (key1751/key_cabinet_v2_final.tsv, R1957_decipherment.tsv). Not tested on a held-out letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "literature search",
+   "what": "WAINUT prior-art check: this folder (Bourdeau, 19 Sep 2026) already matched R1957 to PC 5263; the WAINUT match is an independent confirmation.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "verification",
+   "what": "WAINUT transcriptions compared with Bourdeau's (key1751/scripts/compare_tx.py): R1957 513 of 548 groups agree, 28 of 35 differences are 8 against 0.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Review of PR #29 (Bourdeau with Claude Opus 5.5): blind test re-run on PC 8-9 rebuilt from our own archive.org OCR (LCS 121 vs shuffle mean 58.9, max 65; 12 controls at shuffle level); v2 coverage 381/548 confirmed; v1 LF hash matches frozen_keys.sha256 (time order rests on WAINUT's private history); Fagel 100R and 099R decoded with v2 follow PC 5227 and 5231 in order; our anchors 3042 (sur) and 169 (que) corrected; ct.txt corrected for 27 0/8 misreads, v2 coverage on it 357 -> 373 of 550.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): the ministerial letter R1955, in Michell's envoy code, moved to its own entry targets/r1955/ with its transcriptions and WAINUT's partial decoding; this entry keeps R1957 and the cabinet code.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "R1957's text is Politische Correspondenz 8 (1882) no. 5263, found during the attempt and matched to the Hague copy by the clear opening, length and positional anchors of repeated code groups; the code itself was not rebuilt. The sibling R1955 remains unread. Later contribution (WAINUT, 11 Oct 2026; outcome.parts): the cabinet code rebuilt from six Fagel 5177 letters and R1957 aligned with their printed concepts (179 entries, tested blind), and R1955 decoded in part with the contemporary Dutch decipherments of Michell's reports R1050/R1051.",
-  "contribution": ["transcription", "catalogue correction", "key extended or corrected"],
+  "method_basis": "R1957's text is Politische Correspondenz 8 (1882) no. 5263, found during the attempt and matched to the Hague copy by the clear opening, length and positional anchors of repeated code groups. Later contribution (WAINUT, 11 Oct 2026; outcome.parts): the cabinet code rebuilt from six Fagel 5177 letters and R1957 aligned with their printed concepts (179 entries, tested blind).",
+  "contribution": [
+   "transcription",
+   "catalogue correction",
+   "key extended or corrected"
+  ],
   "class": "already solved",
   "key": "partial",
   "fraction_read": "unknown",
   "grades": "unknown",
-  "verification": ["historical consistency", "key confirms"],
+  "verification": [
+   "historical consistency",
+   "key confirms"
+  ],
   "parts": [
    {
     "label": "R1957 text, the printed concept matched to the Hague copy (Bourdeau)",
@@ -119,25 +225,32 @@
     "method": "key recovered based on plaintext from external sources",
     "extent": "partial",
     "basis": "72 values from six Fagel 5177 letters aligned with their PC 8 concepts, tested blind on R1957 (LCS 123 against a shuffle maximum of 65); extended with R1957 to 179 values (122 grade A), which give a value to 381 of R1957's 548 groups (69.5%); no held-out test of the extended key."
-   },
-   {
-    "label": "R1955 in Michell's envoy code (WAINUT)",
-    "records": "DECODE R1955; key material DECODE R1050, R1051",
-    "method": "read after matching with key from external sources",
-    "extent": "partial",
-    "basis": "The contemporary Dutch decipherments of Michell's reports R1050/R1051 (271 code values, from DECODE's transcriptions) fit R1955: 95 of 360 groups (26.4%) decoded, adjacent decoded words coherent above chance (19/30 against 11.1, p = 0.001); fragments only."
    }
   ],
   "gaps": [
-   {"item": "R1955, the ministerial rescript of the same date (362 groups)", "blocker": "no-key-material", "detail": "Different large homophonic code; not in print; leads: Prussian ministerial code 1751 (GStA PK), Lyonet's decipherments, British decyphers of Michell's correspondence. WAINUT (11 Oct 2026): 95 of 360 groups decoded with the decipherments of Michell's reports R1050/R1051; the rest needs further decipherments of Michell's reports (probably KHA A31-1181, not online) or a contemporary decipherment of R1955 (possibly Nationaal Archief 1.01.50 inv. 159, not digitised)."},
-   {"item": "R1957 code table beyond the anchors", "blocker": "open-codes", "detail": "A full alignment of the 550 groups to the print was not done; the text itself is known from the print. WAINUT (11 Oct 2026) aligned it: 179 key values, 381 of 548 groups with a value; the rest are mostly one-off syllables of spelled-out words and names."}
+   {
+    "item": "R1957 code table beyond the anchors",
+    "blocker": "open-codes",
+    "detail": "A full alignment of the 550 groups to the print was not done; the text itself is known from the print. WAINUT (11 Oct 2026) aligned it: 179 key values, 381 of 548 groups with a value; the rest are mostly one-off syllables of spelled-out words and names."
+   }
   ],
-  "notes": "R1957's text is the printed minute (PC 8 no. 5263), identified here by clear opening, length and positional anchors; the code was not rebuilt, so no per-token reading and no fraction. R1955 is attempted, open. 'key confirms' refers to the positional anchors, not a full key. WAINUT contribution of 11-12 Oct 2026 (NOTES, key1751/): cabinet key rebuilt and tested blind, R1955 decoded in part; outcome.method, class, fraction_read and grades describe Bourdeau's primary result and were left unchanged; the parts carry the contribution.",
+  "notes": "R1957's text is the printed minute (PC 8 no. 5263), identified here by clear opening, length and positional anchors; no per-token reading of our own, so no fraction. 'key confirms' refers to the positional anchors and WAINUT's blind test. WAINUT contribution of 11-12 Oct 2026 (NOTES, key1751/): cabinet key rebuilt and tested blind; outcome.method and class describe Bourdeau's primary result, the parts carry the contribution. Split 14 Oct 2026: R1955 (Michell's envoy code) is targets/r1955/.",
   "provenance": "mixed",
   "credits": [
-    {"who": "politischecorrespondenz", "role": "key or decipherment used", "note": "PC 8 (1882) no. 5263, the printed minute of R1957", "date": "1882", "source": "Politische Correspondenz Friedrichs des Grossen 8 (1882) no. 5263"},
-    {"who": "lccompany", "role": "solution", "note": "PR #29 (WAINUT): cabinet code of 1751 rebuilt from Fagel 5177 letters and blind-tested on R1957; R1955 read in part", "date": "2026-10-11", "source": "https://github.com/dbourdeau/cyphersolver/pull/29"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "Dutch decipherments of Michell's reports R1050/R1051, used for R1955"}
+   {
+    "who": "politischecorrespondenz",
+    "role": "key or decipherment used",
+    "note": "PC 8 (1882) no. 5263, the printed minute of R1957",
+    "date": "1882",
+    "source": "Politische Correspondenz Friedrichs des Grossen 8 (1882) no. 5263"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR #29 (WAINUT): cabinet code of 1751 rebuilt from Fagel 5177 letters and blind-tested on R1957",
+    "date": "2026-10-11",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/29"
+   }
   ]
  }
 }

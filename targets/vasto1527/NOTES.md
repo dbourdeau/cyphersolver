@@ -1,6 +1,6 @@
 # BnF fr. 3022 no. 6: del Vasto to Charles V, Rome, early December 1527 (Cipher 2; catalogue item 7)
 
-Status: read (22 Sept 2026, 98.0% measured). Split 14 Oct 2026: no. 20 and the Ranzo letters (a different code) are now `targets/ranzo1528/`; no. 10 (Cipher 1) is a third cipher, read by Lasry and Tomokiyo, cross-reference only.
+Status: read (22 Sept 2026, 98.0% measured). Split 14 Oct 2026: no. 20 and the Ranzo letters (a different code) are now `targets/ranzo1528/`; no. 10 (Cipher 1) is a third cipher with its own key, recovered by Lasry (2023) from no. 10 itself, and read in part by Lasry and Tomokiyo; it is a separate cipher from no. 6's Cipher 2 and is a cross-reference only (one key per entry: this entry presents Cipher 2, nos. 6 and 19).
 
 Gallica ark `btv1b90601558` (view = canvas; ink folio ≈ (view+1)/2; the BnF notice's folio numbers run about
 3 higher than the ink foliation). Work done 2026-09-18; no. 6 measured and extended 2026-09-22.

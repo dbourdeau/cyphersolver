@@ -1,5 +1,12 @@
 # Jean du Bellay (London) to Montmorency, 1529 — BnF fr. 3077 and fr. 3078 (catalogue item 4)
 
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This entry is Bayonne's cipher of 1529. The
+catalogue item's fifth letter, fr. 3077 no. 23 of 28 Oct 1528 (DECODE R4254; copy Clair. 328 f. 291, R2287), is in du
+Bellay's *first* cipher, which Bourrilly and de Vaissière recovered (1905) and George Lasry solved again (2022): a
+different cipher, with its own entry, [`targets/dubellay1528/`](../dubellay1528/NOTES.md), page `dubellay1528.html`.
+Its DECODE queue records (R4254, R2287) and the Bourrilly and Lasry credits moved there. The sections below keep
+the 1528 letter where it was part of the identification of the item.
+
 Status: found already solved (9 Oct 2026). Every cipher passage of the item, and the two by-products once thought
 unread (16 June 1529, fr. 3078 p. 21; the opening of 22 Oct 1529, fr. 3005 f. 165), is printed in clear: Le Grand 1688,
 Bourrilly 1905, and Scheurer, *Correspondance du cardinal Jean du Bellay* t. I (1969), no. 12 p. 41 (16 June) and
@@ -246,3 +253,12 @@ line 7 came from the print.
   (phrases "faire dater", "semblant que Madame", "maint tour") and covers both by-products.
 - Key rebuild: the p. 21 signs fixed in this pass are listed above.
 - Retry: Gallica retried (403, Cloudflare); DECODE retried (works).
+
+## Assumptions for George's review
+
+- Credit: George is no longer credited on this entry. His 2022 solution (Tomokiyo, GL.htm "Bayonne's Cipher
+  (1528-1529)", on Clair. 329 f. 9, fitting Clair. 328 f. 291) is of du Bellay's first cipher, which none of this
+  entry's documents uses; Tomokiyo distinguishes it from the 1529 cipher (Clair. 329 f. 139). The credit is on
+  dubellay1528.
+- Bourrilly's note (1905, p. 432) says the first cipher was also used in a letter of 28 May 1529; no document of
+  this entry is of that date, so no 1529 letter here is assumed to be in the first cipher.

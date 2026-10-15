@@ -1,0 +1,153 @@
+{
+ "schema_version": 1,
+ "target": "r4248",
+ "title": "Unsigned letter to Anne de Montmorency, 1536, BnF fr. 3053 ff. 85-87 with its contemporary decipherment on f. 86 (DECODE R4248; second fr. 3053 cipher)",
+ "documents": [
+  {
+   "id": "R4248",
+   "read": "read",
+   "shelfmark": "BnF, Français 3053 f. 85 (decipherment f. 86)",
+   "date": "1536, no date on the crops",
+   "year": 1536,
+   "country": "France",
+   "route": "Rome (environs) -> the French court",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "contemporary clear decipherment on f. 86",
+    "partial": false
+   },
+   "length": {
+    "tokens": 20,
+    "unit": "symbols",
+    "measured": false,
+    "file": "R4248.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE page-crops",
+    "image_quality": "fair",
+    "notes": "About 20 cipher lines (2 on P2, ~11 on P3, ~9 on P5) in a second fr. 3053 cipher, not Mâcon's. The cipher was not transcribed sign by sign; the contemporary clear decipherment on f. 86 (P8-P9) was transcribed (about 85 % of words secure, a few [?])."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Substitution on graphic signs with homophones and nulls (30, the triple-barred cross, 22), matching Tomokiyo's second fr. 3053 table (img/francisMacon2.png); not 'Mascon's cipher'.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": true,
+   "count": 3
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none applied: Tomokiyo's second fr. 3053 table (cryptiana francis.htm) identified as this cipher's; Mascon's cipher tested and gives nonsense.",
+  "notes": "Nulls per Tomokiyo's table: 30, ǂ, 22. Signs seen: ǂ, W, ~, α, ∞, Ɛ, ꝗ, looped ʃ, φ, #, 11, z, k, 30. Not tabulated here: the f. 86 decipherment makes it unnecessary."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary clear decipherment of the passage on f. 86 of the same volume; Tomokiyo notes the f. 85 fragment is 'deciphered on f. 86' (cryptiana francis.htm). No printed plaintext.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "nothing beyond setting the target; the DECODE session cookie already in the repository served the images",
+  "tools": [
+   "PIL crops"
+  ],
+  "models": [
+   "claude-opus-5[1m]"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched the R4248 page crops (P2-P9) from DECODE with the stored cookie, as part of catalogue item 180 (rome1536).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "Applied Mâcon's key (Mascon's cipher, macon_key.md: W = LL, ~ = null, 30 = pape) to f. 85: nonsense.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Matched the glyph set to Tomokiyo's second fr. 3053 table (nulls 30, ǂ, 22; R = W; O = 3; U = α); 'ꭓ m Ɛ 3 30 11 ǂ' after 'et partant' starts JE LE CO[NSEILLOIS] as in the decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "Transcribed the full contemporary clear decipherment on f. 86 (P8-P9), about 85 % of words secure; it agrees with every clear connecting phrase left on f. 85.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split from rome1536 under the one-key rule (George Lasry, 14 Oct 2026): R4248 is in a second fr. 3053 cipher and was read from its contemporary decipherment, not with Mascon's cipher; its own entry, with R4248.md and Tomokiyo's second table moved here."
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The passage was read from the contemporary clear decipherment on f. 86, checked against the clear connecting words on f. 85; the cipher's key was identified (Tomokiyo's second fr. 3053 table) but not applied or tabulated.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "read",
+  "fraction_read": "unknown",
+  "fraction_read_source": "The f. 86 decipherment covers the whole cipher passage; R4248.md transcribes it with about 85 % of words secure (a handful marked [?]). No sign-level count.",
+  "key": "partial",
+  "grades": "unknown",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Read from the contemporary decipherment on f. 86: the writer, after a day in the country with a cardinal ('Carafe'?), urged that everything, above all the war, pass through Montmorency's hands; the cardinal of Lorraine had conceded too much in his capitulation with the pope. Writer unidentified (no signature on the crops).",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "clear decipherment of the f. 85 cipher on f. 86"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "identification",
+    "note": "second fr. 3053 table and the note that the f. 85 fragment is deciphered on f. 86 (cryptiana francis.htm)",
+    "source": "cryptiana francis.htm"
+   }
+  ]
+ }
+}

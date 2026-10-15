@@ -1,6 +1,6 @@
 # Known-keys escalation for R1128 (1519 two-tier) and R1137 (Cistarelli, two-digit figures), 2 Oct 2026.
 # Keys of the series/archive/decade available here:
-#   key21.json            1520-21 Caprile sign cipher (this folder)
+#   ../caprile1520/key21.json  1520-21 Caprile sign cipher (moved 14 Oct 2026)
 #   pairX/key.json        1519 syllabary from R1130 against its 1882 decipherment 4c (this folder)
 #   fixed1519.json        1519 one-letter-per-column values from R1133/7c (this folder)
 #   key1519_ann.json      LM-anneal 1519 table (this folder)
@@ -52,7 +52,7 @@ def r1128():
 
 def r1137(iters=60000, restarts=6):
     import anneal, fastanneal
-    seqs = anneal.runs(os.path.join(HERE, 'r1137_transcription.txt'))
+    seqs = anneal.runs(os.path.join(HERE, '..', 'cistarelli1520', 'r1137_transcription.txt'))
     toks = [t for s in seqs for t in s]
     nums = [t for t in toks if t.isdigit()]
     print('R1137 tokens', len(toks), 'numeric', len(nums), 'distinct', len(set(toks)))

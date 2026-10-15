@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "swieten1757",
- "title": "Gottfried van Swieten (Bonn) to Count Cobenzl, 1757-59, three despatches with ciphered passages (ARA Brussels SEG 1236, DECODE R955-R957)",
+ "title": "Gottfried van Swieten (Bonn) to Count Cobenzl, undated (1757-58) (ARA Brussels SEG 1236 f. 141; DECODE R955)",
  "documents": [
   {
    "id": "R955",
@@ -29,76 +29,21 @@
     "source": "DECODE DOC_R955_D1823_1823.txt (SofPe 2019)",
     "image_quality": "good",
     "notes": "DECODE digits checked against the images; runs with dropped or doubled digits re-read from the scans."
-   }
-  },
-  {
-   "id": "R957",
-   "shelfmark": "ARA Brussels, Secretairerie d'Etat et de Guerre inv. 1236 ff. 327-328; DECODE R957",
-   "date": "14 Jan 1759",
-   "year": 1759,
-   "country": "Austria (Austrian Netherlands)",
-   "route": "Bonn -> Brussels",
-   "language": "French",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No decipherment known; DECODE: non-decrypted."
    },
-   "length": {
-    "tokens": 210,
-    "unit": "code groups",
-    "measured": true,
-    "file": "cipher/R957.txt"
-   },
-   "transcription": {
-    "by": "DECODE",
-    "source": "DECODE DOC_R957_D1822_1822.txt (SofPe 2019)",
-    "image_quality": "good",
-    "notes": "DECODE digits checked against the images; runs with dropped or doubled digits re-read from the scans."
-   }
-  },
-  {
-   "id": "R956",
-   "shelfmark": "ARA Brussels, Secretairerie d'Etat et de Guerre inv. 1236 ff. 344-345; DECODE R956",
-   "date": "4 Feb 1759",
-   "year": 1759,
-   "country": "Austria (Austrian Netherlands)",
-   "route": "Bonn -> Brussels",
-   "language": "French",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No decipherment known; DECODE: non-decrypted."
-   },
-   "length": {
-    "tokens": 343,
-    "unit": "code groups",
-    "measured": true,
-    "file": "cipher/R956.txt"
-   },
-   "transcription": {
-    "by": "DECODE",
-    "source": "DECODE DOC_R956_D1958_1958.txt (XL 2020)",
-    "image_quality": "good",
-    "notes": "DECODE digits checked against the images; runs with dropped or doubled digits re-read from the scans."
-   }
+   "read": "read"
   }
  ],
  "system": {
   "types": [
    "nomenclator"
   ],
-  "summary": "Three-digit alphabetical syllabary: letters, syllables and a few words and names in alphabetical order with occasional homophones; 1757 table 202-586, a different 1759 table 100-442.",
+  "summary": "Three-digit alphabetical syllabary of 1757 (202-586): letters at the head of their sections, then their syllables, with a few homophones.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "3",
    "separation": "contiguous"
   },
-  "distinct_symbols": 150,
+  "distinct_symbols": 67,
   "diacritics": {
    "used": false
   },
@@ -112,10 +57,9 @@
    "entries": "unknown",
    "kinds": [
     "syllables",
-    "common words",
-    "names"
+    "common words"
    ],
-   "unread_groups": 21
+   "unread_groups": 3
   },
   "nulls": {
    "present": "unknown",
@@ -123,13 +67,13 @@
   },
   "key_order": "alphabetical",
   "word_division": "none",
-  "sibling_key": "R955's 1757 table (from its own decipherment): same design, different numbers.",
-  "notes": "R955 groups are dot-separated; the 1759 runs are unseparated digits inside clear text."
+  "sibling_key": "The 1759 table of swieten1759 (R956, R957): same design, different numbers.",
+  "notes": "R955 groups are dot-separated. The 1759 letters (R956, R957) are a separate entry, swieten1759."
  },
  "conditions": {
   "prior_solution": {
-   "exists": "partial",
-   "where": "R955 only: decipherment written on the page itself. R956/R957: none known, nothing in print.",
+   "exists": "in archive",
+   "where": "The decipherment is written below the numbers on f. 141 itself.",
    "found": "during attempt",
    "used": true
   },
@@ -137,7 +81,7 @@
    "images",
    "transcription"
   ],
-  "attack": "ciphertext-only",
+  "attack": "archive decipherment",
   "human_role": "Project-level: obtained a DECODE login and passed its session cookie to the model, set up Claude Code with Opus 5, and posed the problem with /goal. No target-specific intervention recorded.",
   "tools": [
    "curl (DECODE)",
@@ -154,7 +98,7 @@
  "solution": [
   {
    "kind": "access",
-   "what": "DECODE R955-R957 fetched with the session cookie: 8 page images, 3 transcriptions.",
+   "what": "DECODE R955-R957 fetched with the session cookie (8 page images, 3 transcriptions); R955 is this entry.",
    "result": "worked"
   },
   {
@@ -168,75 +112,41 @@
    "result": "worked"
   },
   {
-   "kind": "hypothesis", "technique": ["repeat/pattern analysis"],
-   "what": "R955's values applied to the 1759 runs directly and linearly rescaled to 100-442.",
-   "result": "failed"
-  },
-  {
-   "kind": "solver", "technique": ["simulated annealing", "repeat/pattern analysis", "language-model scoring"],
-   "what": "Monotone-map annealer (msolve.py) onto a sorted inventory of French units, LM score + per-letter bonus; first runs collapsed onto repeated long words (no multiplicity cap) and a score bug (sum taken as mean).",
-   "result": "failed"
-  },
-  {
-   "kind": "control",
-   "what": "Synthetic 274-group French text under a random alphabetical table: recovered verbatim once the 2-codes-per-unit cap and bonus 1.5 were set.",
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): R955 (1757 table, 202-586, read from the decipherment on its own page) stays in swieten1757; R956/R957 (the 1759 table, 100-442, rebuilt ciphertext-only) moved to swieten1759 with msolve.py, dec.py, key.json, overrides.json, runs.txt, validation.tsv. A reveal of R955 was built from the 1757 values in NOTES.md (build_reveal955.py): 86 of 89 groups valued.",
    "result": "worked"
-  },
-  {
-   "kind": "solver", "technique": ["automated search (unspecified)"],
-   "what": "8 random starts on the 491 clean 1759 groups; seed 5 gave readable French (la nouvelle convention... souverainete... imperatrice), the others gibberish.",
-   "result": "worked"
-  },
-  {
-   "kind": "transcription",
-   "what": "Four DECODE runs with dropped/doubled digits re-read from the images; a separate sign before run 1 dropped.",
-   "result": "worked"
-  },
-  {
-   "kind": "solver", "technique": ["hill climbing"],
-   "what": "Seeded polish pass with enlarged inventory drifted to worse keys.",
-   "result": "failed"
-  },
-  {
-   "kind": "crib", "technique": ["crib testing", "repeat/pattern analysis"],
-   "what": "Key corrected by hand run by run against the surrounding clear French (magazins, Contades, Broglio, comte de Pergen); x 438/439, y 441, z 442 close the table.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-30",
-   "kind": "reading",
-   "what": "R956 run 11 re-read against the alphabetical order of the table, after a slip was reported while quotations were pulled for Lasry's list: 'le major (?) general des Liegeois de Vaut' needed 238 = ge ahead of 239 g and 240 ga; by position 238 = g, 294 = lo (after 293 li), 300 between 299 ma and 303 me, giving 'le m[arechal] general des logis de Vaut' (graded I; digits confirmed on the image). key.json/overrides.json: 238 g, 294 lo, 300 marechal?. Officer probably Francois-Eugene de Vault, not verified.",
-   "result": "worked"
-  },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 551 tokens, 152 types, fr-1750-nospace order 4: reading -2.122 per letter; random keys -4.404 (z 12.8); key annealed onto shuffled ciphertext best -2.493 (mean -2.518, z 13.1); annealer on the real text -2.494. Verdict: pass.", "result": "worked"}
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1750-nospace", "file": "validation.tsv", "tokens": 551, "types": 152, "tokens_per_type": 3.62, "score": -2.122, "nulls": {"random keys": {"n": 200, "mean": -4.404, "sd": 0.179, "max": -3.974, "z": 12.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.518, "sd": 0.03, "max": -2.493, "z": 13.1, "p": 0.1429}}, "power": -2.494, "verdict": "pass", "notes": "claimed per-occurrence score -2.122; polyphony 0.0; 2 unread tokens left out; annealer on the real text from random keys reached -2.494"}, 
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "The 1759 alphabetical syllabary (R956, R957) was rebuilt by a monotone-map annealer from the ciphertext (seed 5 of 8 gave French), then corrected by hand against the clear French around each run; R955, a different 1757 table, was read from the decipherment written below its numbers.",
-  "contribution": ["transcription", "key recovered"],
-  "class": "read",
-  "fraction_read": 0.962,
-  "key": "recovered",
-  "codes_open": {
-   "open": 12,
-   "total": 150,
-   "tokens_open": 21
-  },
-  "grades": "unknown",
-  "verification": ["historical consistency", "contemporary decipherment", "statistical test"],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The clear lines written under the numbers on f. 141 are the decipherment of the ciphered sentence; aligned with the groups they give the 1757 alphabetical syllabary.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "class": "already solved",
+  "fraction_read": 1.0,
+  "key": "partial",
+  "verification": [
+   "contemporary decipherment"
+  ],
   "gaps": [
    {
-    "blocker": "open-codes",
-    "item": "232 (x2), 147 100 126 148, 170 323 441, 170 271 289 337, 357: names and one-off groups"
-   },
-   {
-    "blocker": "illegible",
-    "item": "290 313 316 313 373 (R956 run 16), digit division uncertain"
+    "item": "groups 400, 297, 586 (in \"conclure même\")",
+    "blocker": "too-short",
+    "detail": "each occurs once; the decipherment gives the word but not the split"
    }
   ],
-  "notes": "fraction_read = 1 - 21 unread of 553 groups in R956+R957; R955 read from its decipherment.",
+  "notes": "Read at the time; the 1757 table recovered from the alignment.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment written below the numbers of R955"}
-  ]
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "decipherment written below the numbers of R955 (f. 141)"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "cipher/R955.txt (89 groups): every group falls under the contemporary decipherment; 86 of them carry a value in the aligned 1757 table (NOTES.md), 400, 297 and 586 inside \"conclure même\" do not."
  }
 }

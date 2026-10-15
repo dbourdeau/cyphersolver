@@ -6,7 +6,7 @@
 #       group in the window.
 # THR is calibrated on the eight letters with Lyonet's decipherment, decoded through key_M (the same test applied
 # to text known to be sense). Lyonet letters are reported both ways; the total counts them as read (contemporary
-# decipherment), R1071 (code C) as unread.
+# decipherment). R1071 (code C) is a separate entry since 14 Oct 2026 (../affry1757c).
 import os, sys, json, glob
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 from lang import lm
@@ -48,7 +48,7 @@ def sense_r(r, g, thr):
             if val(g[i]) is not None: ok[i] = True
     return ok
 def run(thr, verbose=True):
-    U = load('U'); C = load('C')
+    U = load('U'); C = {}   # R1071 (code C) split off to ../affry1757c on 14 Oct 2026
     for f in glob.glob('transcr/R*.txt'):   # image re-transcriptions replace the DECODE parse
         r = os.path.basename(f)[:-4]
         U[r] = [int(t.split('|')[0]) for line in open(f, encoding='utf8') if not line.startswith('#') for t in line.split()]
@@ -65,12 +65,10 @@ def run(thr, verbose=True):
     if verbose:
         for r, t, s in rows:
             print(f'{r} {"lyonet" if r in LYONET else "      "} {s:4d}/{t:4d} = {s/t:.3f}')
-        print('R1071 code C    0/%d' % sum(len(g) for g in C.values()))
         und = [x for x in rows if x[0] not in LYONET]
         print('undeciphered letters: %d/%d = %.3f' % (sum(x[2] for x in und), sum(x[1] for x in und),
               sum(x[2] for x in und) / sum(x[1] for x in und)))
-        print('overall (Lyonet letters read, R1071 unread): %d/%d = %.3f' % (rd, n, rd / n))
-        print('without R1071: %.3f' % (rd / (n - sum(len(g) for g in C.values()))))
+        print('overall (Lyonet letters read): %d/%d = %.3f' % (rd, n, rd / n))
     return rows
 if __name__ == '__main__':
     thr = float(sys.argv[1]) if len(sys.argv) > 1 else -3.0

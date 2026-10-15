@@ -2,10 +2,6 @@
 
 These are the encrypted passages, with short clear-text anchors, not a full diplomatic transcription of the mostly clear letters. Page numbers refer to DECODE image suffixes; left/right identifies a spread. Numeric readings preserve irregular spelling. Editorial interpretations are separate. All recovered values are grade I (inferred here), with doubtful segments marked M. No archive key or independent plaintext was used. Standalone codes remain unvalued.
 
-## R7524
-
-Mniszech: not read. The clear Polish and Latin anchors in `r7524-cipher.txt` are not decipherments. Every one of the cipher tokens remains open. The solver candidates are failed trials, not readings.
-
 ## R7525
 
 ### Image 2, segment 0

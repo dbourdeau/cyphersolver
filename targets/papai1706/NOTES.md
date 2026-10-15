@@ -1,7 +1,13 @@
-# János Pápai (Constantinople) to Ferenc Rákóczi II, 1706–1710 — DECODE R731, R740, R741, R757, R765, R784, R793–R796, R805, R823
+# János Pápai (Constantinople) to Ferenc Rákóczi II, 1706–1710, in the envoy key R580 — DECODE R740, R741, R757, R765, R784, R793–R796, R805, R823
 
-Status: read in part — eleven of the twelve letters read with the envoy's own key (second pass: 16,641 of 16,698
-numeric groups, 99.7%); R731's graphic-sign passages transcribed tentatively and attacked, not read.
+Status: read — the eleven numeric letters read with the envoy's own key (second pass: 16,641 of 16,698 numeric
+groups, 99.7%; 16,641 of ~16,739 with DECODE's '?' tokens, 99.4%); the open groups are DECODE transcription slips.
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. R731 (6 Mar 1710,
+Belgrade), whose six passages are in a graphic-sign alphabet, is a different cipher, with its own page
+([`targets/papai1710/`](../papai1710/), docs/papai1710.html); `R731_signs.txt` and `solve731.py` moved there
+(`retry_groups.py` imports `solve731.py` from there). On the eleven numeric letters alone the read bar is met, so this
+entry is now read (it was read in part only because of R731).
 
 Catalogue entry 46 (class B, scored by rule). Worked 21 Sept 2026. Archive images are not in the public domain
 (DECODE: publishing only with the archive's permission); they are kept git-ignored in `img/`, and only derived text is
@@ -22,7 +28,7 @@ committed.
 | R757 | Caps. E Fasc. 109, pp. 85–90 | 16 May 1708 (DECODE origin "Balar") | numeric, R580 key | 2,758 | 2,695 (97.7%) |
 | R740 | Caps. H Fasc. 226, pp. 85–88 | 2 Jan 1710, Constantinople | numeric, R580 key (one passage, p. 2–3) | 168 | 168 (100%) |
 | R741 | Caps. H Fasc. 226, pp. 89–96 | 8 May 1710, Constantinople | numeric, R580 key | 1,466 | 1,458 (99.5%) |
-| R731 | Caps. H Fasc. 226, pp. 31–33 | 6 Mar 1710, Landor Fejérvár (Belgrade), signed *Pápai János* | graphic-sign substitution, six short passages | not transcribed | — |
+| R731 | Caps. H Fasc. 226, pp. 31–33 | 6 Mar 1710, Landor Fejérvár (Belgrade), signed *Pápai János* | graphic-sign substitution, six short passages (split off 14 Oct 2026: papai1710) | — | — |
 
 Group counts are what `decode.py` parses from the DECODE transcriptions (R740: transcribed here from the images,
 `R740_transcription.txt`). "In key" groups are those with a value in the key; the rest are digit slips in the
@@ -98,14 +104,9 @@ transcription, which is the cleanest).
 The readings are run-on Hungarian as the cipher gives it (no word division); the word breaks above are editorial.
 Grades: the numeric passages are H (direct table reading) except isolated groups shown as `[n]` in the reading files.
 
-## R731: not read
+## R731
 
-R731 (6 March 1710, Belgrade, signed *Pápai János*) is written in clear except six short passages in a graphic
-alphabet of perhaps 25 signs (∂, π, m-like, q, ÷, =, "11", with colons), about 350 signs in all, on p. 1 (three
-passages) and pp. 2–3 (three). DECODE has no transcription. A secure sign-by-sign transcription could not be made
-from the 2448-px camera images, and without one a monoalphabetic solve on ~350 signs is not reliable. Lead:
-the top-left corner of the key copy R581 carries a line of signs of the same family (δ, ♀, ⊔, =, :), which the DECODE
-transcriber noted as "symbols which do not occur in the key itself": probably a partial graphic alphabet.
+A different cipher (graphic signs), split off 14 Oct 2026: see `../papai1710/NOTES.md`.
 
 ## Prior work
 
@@ -136,32 +137,19 @@ Result: 16,641 of 16,698 numeric groups read (99.66%). The 57 still open are sca
 4-gram model of Pápai's own text and none wins by a clear margin (`retry_groups.tsv`). About 41 more tokens are
 marked with `?` by DECODE's transcribers (illegible to them). The reading files are `<record>_read2.txt`.
 
-**R731, the graphic signs.** The six passages were transcribed from the images at 1.8–1.9× zoom into
-`R731_signs.txt` (about 330 signs, 15 sign types plus dot clusters). The transcription is tentative: the low swash
-stroke may be a pen link rather than a sign, and the dots above and below the bars (÷, ∴, ::) were collapsed into
-one token, although they may be vowel marks. The key copy R581's corner line, read the right way up, is a line of
-the same kind of signs, not an alphabet, so it gives no key.
-
-`solve731.py` is a swap-annealing substitution solver with a 4-gram model trained on Pápai's deciphered letters.
-On a control (Pápai's own text cut to the same line lengths and enciphered at random) it recovers the text exactly
-(−8.96 per 4-gram, against −8.87 for real text). On R731 it reaches only about −10.1 under every reading tried:
-as transcribed, dots dropped, swash dropped, reversed. So R731 is not a simple Hungarian substitution *on this
-transcription*. Either signs are merged in it or the dot patterns carry letters. Neither can be settled from the
-2448-px camera images. The recurring group `~n~s` has the letter pattern of *Pasa* read backwards, but this
-did not lead to a key.
+**R731, the graphic signs.** Transcribed and attacked in this pass; the record is now in `../papai1710/NOTES.md`.
 
 **Print.** Benda (ed.), *Pápai János törökországi naplói* (Budapest: Szépirodalmi, 1963, Magyar Századok) is not
 online (antiquarian copies only). It needs a library copy.
 
 ## Remaining gaps
-- R731 (6 Mar 1710, Belgrade), six graphic-sign passages, ~330 signs - blocker: illegible; tentative transcription in R731_signs.txt; sign segmentation and dot counts cannot be fixed from the 2448-px camera images, and a control-validated substitution solver finds no Hungarian on it; needs better images or the sign alphabet
 - 57 numeric groups across R757, R765, R793–R796, R823 - blocker: illegible; split or slipped digits in DECODE's transcriptions that no key value fits by context (retry_groups.tsv); about 41 further tokens marked '?' by DECODE
 - Benda (ed.), Pápai János törökországi naplói (1963) - blocker: needs-physical-access; not online
 
 ## Escalation
 - [x] siblings: twelve Papai records (R793–R796 added from catalogue 47) plus key copies R580, R581, R452 opened
-- [x] clear-pages: R731's three pages are clear apart from the sign passages, with no interlinear or decipherment; R581's corner sign line checked (cipher, not an alphabet)
+- [x] clear-pages: interlinear decipherments of R793–R796 and R805 used; R581's corner sign line checked (cipher, not an alphabet)
 - [x] known-keys: R580/R581/R452 applied to all eleven numeric letters; no graphic alphabet among them
 - [x] print: Benda 1963 searched for online (antikvarium.hu only); DECODE and web searched, nothing printed online
-- [x] key-rebuild: numeric key extended (220 = a, splits, joins, nulls above 322, decode2.py); R731 attacked with a control-validated swap annealer (solve731.py), no solution
+- [x] key-rebuild: numeric key extended (220 = a, splits, joins, nulls above 322, decode2.py)
 - [x] retry: every off-key group rescored in context (retry_groups.py) and regraded; 57 remain

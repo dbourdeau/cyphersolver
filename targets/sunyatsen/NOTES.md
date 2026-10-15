@@ -131,6 +131,12 @@ The Ministry of Communications' intercept files (JACAR B03050088300 … B0305009
 in the same condenser family, each correspondent with its own key. See `y1916/NOTES.md` and `y1917/NOTES.md`. The Swatow
 operator original is not in B03050088300 or B03050088400.
 
+Credits (one-key review, 14 Oct 2026): `profile.json` is this telegram and its one key, so it credits only Tomokiyo's
+transcription of frame 680682. Brice Dudout (the July–November 1916 systems and the corrections to our 1916
+transcriptions) and wanglu2016 (issue #23, the 1917 telegrams) worked on other keys of the series; they are credited
+in `y1916/NOTES.md`, `y1917/NOTES.md` and on `docs/sunintercepts.html`. The series page has no profile, so their
+credits reach `contributors.html` only once the series gets one (one profile per key).
+
 ## Gaps revisited for Lasry's quotation (30 Sept 2026)
 
 Lasry asked for fewer gaps in the quoted text (翼□, the tail). Findings:

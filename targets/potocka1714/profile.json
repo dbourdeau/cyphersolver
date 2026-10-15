@@ -1,36 +1,8 @@
 {
  "schema_version": 1,
  "target": "potocka1714",
- "title": "Potocka and Mniszech to Jakub Dunin",
+ "title": "Barbara Potocka to Jakub Dunin",
  "documents": [
-  {
-   "id": "R7524",
-   "shelfmark": "ASang_teka_290/6",
-   "year": 1714,
-   "country": "Polish-Lithuanian Commonwealth",
-   "language": "Polish and Latin",
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No contemporary decipherment visible in the available images; no independent edition located."
-   },
-   "length": {
-    "tokens": 232,
-    "distinct": 77,
-    "unit": "code groups",
-    "measured": true,
-    "file": "R7524-tokens.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE full-resolution images; image suffixes and anchors in reading.md",
-    "image_quality": "fair",
-    "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
-   },
-   "read": "not read"
-  },
   {
    "id": "R7525",
    "shelfmark": "ASang_teka_301/8",
@@ -85,7 +57,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read in part"
+   "read": "read"
   },
   {
    "id": "R7527",
@@ -142,7 +114,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read in part"
+   "read": "read"
   },
   {
    "id": "R7529",
@@ -198,7 +170,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read in part"
+   "read": "read"
   },
   {
    "id": "R7534",
@@ -254,7 +226,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read in part",
+   "read": "read",
    "date": "18 January 1716"
   },
   {
@@ -271,7 +243,7 @@
     "source": "No contemporary decipherment visible in the available images; no independent edition located."
    },
    "length": {
-    "tokens": 102,
+    "tokens": 101,
     "distinct": 27,
     "unit": "code groups",
     "measured": true,
@@ -281,7 +253,7 @@
     "by": "llm from images",
     "source": "DECODE full-resolution images; image suffixes and anchors in reading.md",
     "image_quality": "fair",
-    "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
+    "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated. R7536: 101 tokens after a surplus 25 in Kinisberk was removed (5 Oct 2026)."
    },
    "read": "read in part",
    "date": "31 December 1716",
@@ -291,10 +263,9 @@
  "system": {
   "types": [
    "homophonic",
-   "nomenclator",
-   "undetermined"
+   "nomenclator"
   ],
-  "summary": "Potocka uses a partly ordered numerical alphabet with doubled homophones and person codes; Mniszech uses a separate numerical system that remains undetermined.",
+  "summary": "A partly ordered numerical alphabet with doubled homophones (25 and 50 = e) and four person codes, used by Barbara Potocka for short French and Polish passages.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "2-3",
@@ -321,7 +292,7 @@
   },
   "key_order": "partly alphabetical",
   "word_division": "partial",
-  "notes": "Counts and recovered structure describe Potocka; no key recovered for R7524. Do not double low values mechanically: e.g. 14=x but 28=b. Only listed key values are accepted."
+  "notes": "Do not double low values mechanically: e.g. 14=x but 28=b. Only listed key values are accepted. Józef Mniszech's R7524, filed with these letters, is another cipher (targets/mniszech1714)."
  },
  "conditions": {
   "prior_solution": {
@@ -334,22 +305,19 @@
    "cleartext context"
   ],
   "attack": "ciphertext-only",
-  "human_role": "Selected the ten DECODE records.",
+  "human_role": "Selected the ten DECODE records to Jakub Dunin; the nine in Potocka's alphabet form this entry.",
   "models": [
    "GPT-6",
    "claude-opus-5-5"
   ],
   "first_date": "2026-09-23",
-  "last_date": "2026-09-30",
+  "last_date": "2026-10-14",
   "tools": [
    "Shared lang.lm French and Polish quadgrams",
    "solve.py",
    "solve_mono.py",
    "solve_pl.py",
-   "Polish quintgram homophonic trials, tentative crib/null trials, regularized trial, synthetic control",
-   "prepare_reading.py; image re-reading",
-   "Polish quintgram homophonic trials, tentative crib/null trials, regularized trial, synthetic control",
-   "prepare_reading.py; image re-reading"
+   "prepare_reading.py; measure_sense.py; image re-reading"
   ]
  },
  "solution": [
@@ -361,8 +329,11 @@
   },
   {
    "date": "2026-09-23",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
-   "what": "Visual inspection of R7535 shows short numerical passages within mostly clear French; R7524 catalogue language is Polish. A single French-language solver across all letters is not yet justified.",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Visual inspection of R7535 shows short numerical passages within mostly clear French; R7524 (Mniszech, catalogue language Polish) looks different. A single French-language solver across all letters is not yet justified.",
    "result": "partial"
   },
   {
@@ -373,13 +344,19 @@
   },
   {
    "date": "2026-09-23",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "French unconstrained substitution and monoalphabetic annealing failed to give coherent text.",
    "result": "failed"
   },
   {
    "date": "2026-09-23",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "Polish monoalphabetic annealing using shared pl-modern model gives pan starosta ... and coherent Lublin/Dominican passage. Provisional key requires image verification.",
    "result": "worked"
   },
@@ -397,14 +374,8 @@
   },
   {
    "date": "2026-09-23",
-   "kind": "solver", "technique": ["simulated annealing", "crib testing", "plaintext matching"],
-   "what": "Separate Mniszech R7524 transcription tested with Polish quintgram homophonic annealing, a tentative hetmanow crib, and tentative null 33/ch=130. No coherent decipherment; these are hypotheses, not recovered values.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-23",
    "kind": "literature search",
-   "what": "Searches for Potocka/Dunin cipher and Mniszech/Dunin cipher found biographical and archive catalogue context but no decipherment. A university project identifies Potocka as Dunin's aunt; mon fils in her letters is affectionate, not evidence of maternity.",
+   "what": "Searches for a Potocka/Dunin cipher found biographical and archive catalogue context but no decipherment. A university project identifies Potocka as Dunin's aunt; mon fils in her letters is affectionate, not evidence of maternity.",
    "result": "partial"
   },
   {
@@ -427,12 +398,6 @@
   },
   {
    "date": "2026-09-23",
-   "kind": "control",
-   "what": "A 232-token synthetic Polish homophonic control with 75 observed symbols recovered only 49 positions (21.1%). Mniszech search failures are inconclusive, not evidence of impossibility.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-23",
    "kind": "reading",
    "what": "Recovered Potocka alphabet values 863/887 tokens across nine letters; literal readings retain doubtful spellings and unresolved names. R7524 remains unread.",
    "result": "partial"
@@ -452,30 +417,6 @@
   {
    "date": "2026-10-05",
    "kind": "transcription",
-   "what": "R7524 re-read at full resolution from IMG_R7524_I33989_P1/P3: all 232 figures confirmed; the writer's word division (dots within words, gaps between, '=' at line breaks) recorded for the first time in r7524-words.txt (53 cipher words, single-figure words 12, 38, 56, 133; doubled 19.19 and 28.28). The clear word filed as 'Starosty horodly' is 'spraktykowawszy'.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-05",
-   "kind": "solver", "technique": ["simulated annealing", "crib testing"],
-   "what": "R7524 word-boundary homophonic annealing (solve_r7524_words.py) with pl-modern and with a period model built from Pasek's memoirs (Wikisource) + Gutenberg Polish; also with cribs hetmanow and 15.20=ie.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-10-05",
-   "kind": "solver", "technique": ["simulated annealing", "exhaustive search"],
-   "what": "R7524 dictionary-word annealing (solve_r7524_dict.py; 49k-word Pasek+Gutenberg list, char-model fallback): 34-36 of 53 words land in the dictionary but restarts disagree completely; no stable key.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-10-05",
-   "kind": "sibling key",
-   "what": "Tested whether R7524 numbering is Potocka's table (base 14-39, homophone = 2x base) shifted (-40..40) or scaled (x1-x4).",
-   "result": "failed"
-  },
-  {
-   "date": "2026-10-05",
-   "kind": "transcription",
    "what": "Potocka doubtful segments re-read from the image crops: R7536 Kinisberk had a surplus 25 in the transcription (removed; total now 1118 tokens); R7536 le?itre (74/72, 21/19 run together) stays ambiguous; other doubtful words unchanged.",
    "result": "partial"
   },
@@ -485,21 +426,66 @@
    "what": "Measure audit: coverage.json 'valued' (77.1%) is key coverage, and 'conservative_coherent' drops whole segments by hedge words in the notes; neither measures sense. New measure_sense.py counts tokens whose word reads: Potocka 844/886 (95.3%), overall 844/1118 (75.5%).",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 862 tokens, 38 types, fr-modern order 4: reading -3.531 per letter; random keys -6.845 (z 5.7); key annealed onto shuffled ciphertext best -3.751 (mean -3.833, z 4.8); annealer on the real text -3.536. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 862 tokens, 38 types, fr-modern order 4: reading -3.531 per letter; random keys -6.845 (z 5.7); key annealed onto shuffled ciphertext best -3.751 (mean -3.833, z 4.8); annealer on the real text -3.536. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): Mniszech's R7524, another cipher, moved to mniszech1714. prepare_reading.py and measure_sense.py rerun on Potocka's nine letters only: 862/886 tokens valued (97.3%), 844/886 read as sense (95.3%); 95.3% overall, but R7527, R7534 and R7536 are below 95% each, so the entry stays read in part (read bar judged per document).",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 862, "types": 38, "tokens_per_type": 22.68, "score": -3.531, "nulls": {"random keys": {"n": 200, "mean": -6.845, "sd": 0.583, "max": -5.369, "z": 5.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.833, "sd": 0.063, "max": -3.751, "z": 4.8, "p": 0.1429}}, "power": -3.536, "verdict": "pass", "notes": "claimed per-occurrence score -3.531; polyphony 0.0; 24 unread tokens left out; annealer on the real text from random keys reached -3.536"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "fr-modern",
+   "file": "validation.tsv",
+   "tokens": 862,
+   "types": 38,
+   "tokens_per_type": 22.68,
+   "score": -3.531,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.845,
+     "sd": 0.583,
+     "max": -5.369,
+     "z": 5.7,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.833,
+     "sd": 0.063,
+     "max": -3.751,
+     "z": 4.8,
+     "p": 0.1429
+    }
+   },
+   "power": -3.536,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -3.531; polyphony 0.0; 24 unread tokens left out; annealer on the real text from random keys reached -3.536"
+  },
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The Potocka alphabet was broken by Polish monoalphabetic annealing on the R7526 postscript (lang pl-modern) and transferred to the French passages of eight other letters; no outside key or reading existed. R7524 (Mniszech) is a different system and unread.",
+  "method_basis": "The Potocka alphabet was broken by Polish monoalphabetic annealing on the R7526 postscript (lang pl-modern) and transferred to the French passages of eight other letters; no outside key or reading existed.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.7710196779964222,
-  "fraction_coherent": 0.7549194991055456,
+  "fraction_read": 0.9729119638826185,
+  "fraction_coherent": 0.9525959367945824,
   "fraction_read_method": "measured",
-  "fraction_read_source": "targets/potocka1714/reading-tokens.tsv: 1118 cipher tokens. fraction_read = key coverage (862 valued). fraction_coherent = word-level sense from measure_sense.py (sense.json, 5 Oct 2026): 844/1118 overall; Potocka's nine letters 844/886 = 95.3%; R7524 0/232.",
+  "fraction_read_source": "targets/potocka1714/reading-tokens.tsv: 886 cipher tokens in nine letters. fraction_read = key coverage (862 valued, coverage.json). fraction_coherent = word-level sense from measure_sense.py (sense.json, rerun 14 Oct 2026): 844/886.",
   "codes_open": {
    "open": 4,
    "total": 4,
@@ -509,13 +495,12 @@
    "I": 745,
    "M": 118
   },
-  "verification": ["key confirms", "historical consistency", "statistical test"],
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
   "gaps": [
-   {
-    "item": "R7524, all 232 cipher tokens",
-    "blocker": "no-key-material",
-    "detail": "separate system (77 signs, 232 figures, writer's word division recorded in r7524-words.txt); no matching key or plaintext located; flat-stream, word-boundary and dictionary-word annealing (5 Oct 2026) do not converge and the matched control fails at this length; not declared impossible."
-   },
    {
     "item": "Potocka codes 87, 94, 100, 270, 23 occurrences",
     "blocker": "open-codes",
@@ -532,6 +517,6 @@
     "detail": "re-read at full resolution 5 Oct 2026; the figures are as transcribed (one surplus 25 removed from Kinisberk), the words remain unestablished; no parallel witness."
    }
   ],
-  "notes": "Potocka letters: 844/886 tokens read as sense (95.3%), measured word by word; 862/886 valued. R7524 (Mniszech, 232 tokens) unread: a separate homophonic system, 77 signs, word-divided; ciphertext-only searches with word boundaries and a period dictionary did not converge (5 Oct 2026). Overall 75.5% sense; the target stays read in part because one document (R7524) is unread."
+  "notes": "844/886 tokens read as sense (95.3%), measured word by word; 862/886 valued. Per letter: R7525 96.4, R7526 100, R7527 94.3, R7528 98.0, R7529 97.1, R7530 96.8, R7534 82.8, R7535 96.0, R7536 93.1. Read in part: the bar is judged per document and R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) fall below it. Open: four person codes (87, 94, 100, 270; 23 tokens), figure 73, and four words not established (19 tokens). Split on 14 Oct 2026: Mniszech R7524 is targets/mniszech1714."
  }
 }

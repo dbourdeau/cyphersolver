@@ -1,6 +1,10 @@
-# The Hereditary Prince (Berlin) to William V, 12 March 1796 (DECODE R2239; siblings R2236, R2237)
+# The Hereditary Prince (Berlin) to William V, 12 March 1796 (DECODE R2239; key source R2237; R2236 split off)
 
-Status: read — R2239 read in full (21 Sept 2026); body also printed in Colenbrander 1906 (found during the attempt); R2236 not read
+Status: read — R2239 read in full (21 Sept 2026); body also printed in Colenbrander 1906 (found during the attempt)
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R2236, Dutch copies in another list, was a
+document of this entry until then and is now [`targets/r2236/`](../r2236/NOTES.md) (a different cipher, with its own
+page). This entry is R2239, read with the list rebuilt from R2237.
 
 Koninklijk Huisarchief, The Hague, A31 Prins Willem V, inv. nr. 337. Catalogue item 218 (DECODE R2236 and R2239,
 both "Non-decrypted"). Sender: Willem Frederik, the Hereditary Prince (later King William I), in Berlin. DECODE gives the
@@ -81,8 +85,7 @@ the reading rests on the aligned sense, not on every group.
 
 - R2239: entry 244 ("je [vais?] rendre compte") only. A few groups in the body still decode wrongly because of
   misread marks; the print settles those words.
-- R2236: not read. Needs its own list; the Dutch copies might be tried against Dutch vocabulary with the same
-  group rules.
+- R2236: a different list, now its own entry (`targets/r2236/`).
 - The last line of R2237 p. 7 (after "la proposition") is not in the contemporary decipherment and was not read.
 
 ## Log

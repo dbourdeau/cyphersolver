@@ -1,5 +1,13 @@
 # Ordnungspolizei Doppelkasten radiograms, 1942 (Schmeh 30 Aug 2020): not solved; what is established
 
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): this entry is the daily key of
+**27 February 1942** (D33, D34, E72, D67; 970 letters). Message A115 of 16 June 1942 is in another daily key
+(discriminator ARTTN) and has Bletchley's decrypt; it is a different cipher with its own page and folder,
+`../orpo1942jun/` (`docs/orpo1942jun.html`), where `align115c.py`, `align115h.py` and `hsspf_decrypt_1.png` now
+live. The A115 sections below are kept as the record of the attempt; `msgs.txt`, `dk.py` and `kpsolve.cs` stay here
+and are shared. C43 (XOS = OSX) may be in the 27 Feb key, but its date is not verified, so it is not listed as a
+document of this entry.
+
 Source: Frode Weierud, *German Police Doppelkastenschlüssel Messages* (CryptoCellar, 5 Aug 2020;
 `german-police-doka-messages.pdf`), from NARA RG 457 HCC Boxes 1386 and 202, posted by Schmeh on 30 Aug 2020.
 It holds six messages, which `msgs.txt` transcribes with the discriminator group removed:
@@ -98,6 +106,6 @@ scans only; not verified.
 `msgs.txt` (ciphertexts; D67 group 2/6 corrected to ZAVGO per the operator's check line), `dk.py` (reference
 implementation, verified on both manuals), `build_lm.py` (25-letter German n-gram tables), `dksolve2.cs`
 (SA / ILS / tempering, staged scoring, same-row direction switch), `kpsolve.cs` (known-plaintext solver),
-`emsolve.cs`, `relax.py` (failed attacks, kept for the record), `align115c.py` / `align115h.py` (A115 aligners),
+`emsolve.cs`, `relax.py` (failed attacks, kept for the record), `../orpo1942jun/align115c.py` / `align115h.py` (A115 aligners, moved 14 Oct 2026),
 `mksyn.py` (synthetic test sets). Sources: Weierud's PDF, both German manuals, the Truppenschlüssel paper
 (`mcts.pdf`), and the NSA articles (`wb_*.txt`, `eaves.txt`).

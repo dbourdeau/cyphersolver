@@ -1,7 +1,13 @@
 # d'Affry (The Hague) to Rouillé / Bernis, 1757-58: intercepted code letters
 
-Status: read in part (5 Oct 2026: 0.82 of all code groups read as sense by measure_sense.py, 0.89 without R1071; the
-21 Sept figure 0.86 counted groups that merely had a value; R1071 unread; write-up affry1757.html, 19 Sept 2026)
+Status: read in part (5 Oct 2026, rerun 14 Oct 2026: 0.89 of the code groups read as sense by measure_sense.py, 8,282
+of 9,306; the 21 Sept figure 0.86 counted groups that merely had a value; write-up affry1757.html, 19 Sept 2026)
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R1071, d'Affry's letter to Stainville at
+Vienna (4/7 Aug 1757), is in a different code (code C below) and is now [`targets/affry1757c/`](../affry1757c/NOTES.md)
+(a different cipher, with its own page; `cipher_C.txt` and its DOC file moved there). Codes A and B below are one
+code; the profile now lists them as one document. Figures in the sections below dated before 14 Oct include R1071
+where they say so.
 
 KHA The Hague, Prins Willem V, inv.nr. 192. DECODE R1052-R1076, R2067 (catalogue: d'Affry, 11 unsolved records).
 Images (git-ignored, `img/`) and DECODE digit transcriptions (`decode/DOC_*.txt`) fetched 19 Sept 2026 with the
@@ -147,16 +153,18 @@ measure's own under-count of about an eighth.
 
 ## Remaining gaps
 
-- R1071 (to Stainville/Choiseul, 4/7 Aug 1757), 761 groups - blocker: no-key-material; a different code; no decipherment among the images and the Nationaal Archief 1.01.50 inv. 221/223 decipherments are not digitised
 - open code groups where more than one word fits (970, 869, 109/651, 731/708, 1191, 1020, 1082, 890, 431, 373, 724, 993, 426, 427 and single groups listed as [n] in read/) - blocker: open-codes; pooled over all letters 5 Oct 2026 (pool.py), no occurrence forces one value; the decipherments NA 1.01.50 inv. 221/223 would settle them (not digitised)
 - key values that read as nonsense in place (homophone clashes in key_M, e.g. 307, 1080), most in R1074 (0.75) and R1067 (0.79) - blocker: open-codes; would need the Lyonet key sheet or NA inv. 223 decipherments
-- R1054, R1068, R1070, R1073, R1076 not re-transcribed from the images (DECODE parse with view.fix splits) - blocker: none external; lower yield, they already measure 0.75-0.95
+
+Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,
+R1073 and R1076 are measured on the DECODE parse (view.fix splits), not re-transcribed from the images; they already
+measure 0.75-0.95, and their unread groups are the open codes above.
 
 ## Escalation
 
 - [x] siblings: all R1052-R1076 and R2067 opened; eight Lyonet decipherments found among the images
 - [x] clear-pages: the "clear" pages are Lyonet's decipherments, transcribed into plain/
-- [ ] known-keys: other d'Affry codes (1755-56, and to Choiseul from Dec 1758) not sought for R1071
+- [n/a] known-keys: the key of this code was rebuilt from Lyonet's decipherments; the search for R1071's code (code C) is recorded in ../affry1757c/
 - [x] print: De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked
 - [x] key-rebuild: key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values
 - [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)

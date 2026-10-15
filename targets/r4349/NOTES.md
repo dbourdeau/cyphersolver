@@ -3,6 +3,10 @@
 **Verdict: the manuscript holds two ciphered pieces. The long one is read in full (already in print). The six-sign one,
 which is what DECODE's note describes, is not read: it is too short.**
 
+One record, two ciphers (one-key review, 14 Oct 2026): the profile gives the outcome per part in `outcome.parts`
+(colophon: read with known key, 125/125; slip: not solved, 0/6) and README has one row per part, as soria1523 does.
+The pooled 125/131 (95.4%) mixes two unrelated ciphers and is kept only as a labelled total.
+
 1. f. 19v, the scribe's dated colophon (1517): 125 letters in a vowel-shift cipher, set under chant notation. The Uppsala
    manuscript catalogue (1992) gives the rule and the reading. Transcribed here and checked; read in full.
 2. f. 1r, a slip pasted in: a short private letter in Old Swedish (the catalogue says only "Anders Larsson receives

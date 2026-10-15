@@ -14,7 +14,7 @@ for f in ['../vasto1527/memoriasparalah00goog.txt', '../vasto1527/memoriasparala
 VOC = {w for w, c in V.items() if c >= 2 or len(w) <= 3}
 F = {'N.12': ['n12_transcription.txt'], 'N.39': ['n39_transcription.txt'], 'N.41': ['n41_transcription.txt'],
      'N.45': ['n45_pp03-09_v2.txt', 'n45_pp10-15_v2.txt'], 'N.57': ['n57_transcription_v2.txt'],
-     'N.60': ['n60_transcription_v2.txt'], 'N.60old': ['n60_pp03-09.txt', 'n60_pp10-15.txt']}
+     'N.60': ['n60_transcription_v3.txt'], 'N.60old': ['n60_pp03-09.txt', 'n60_pp10-15.txt']}
 TA = TS = 0
 for n, fs in F.items():
     toks = []

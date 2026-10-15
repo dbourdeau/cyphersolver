@@ -4,6 +4,11 @@ Outcome: read in part (21 Sept 2026). Code structure, correspondents and dates e
 contemporary interlinear decipherments; 45% of the groups in the target letters get a value, but no letter reads
 through. Attempted, open for the rest.
 
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. R9586 and R9588, two
+undated Castelcicala letters in a second code (values 100–1100), are a different cipher, with their own page
+([`targets/r9586/`](../r9586/), docs/r9586.html); their `transcripts/` and `cipher/` files moved there. This entry keeps
+the 25 documents in the Segreteria di Stato code. Coverage recounted on them: 4,340 of 9,286 groups (46.7 %).
+
 Catalogue 167 (R9553, R9555–R9557, R9582–R9586, seen first, below) and catalogue 166: "Marchese di Ciscello? Principe di Castelcicala? (Paris) to unknown recipient, 15 ciphertexts",
 DECODE R9554–R9588 (ASNa, Ministero degli affari esteri, busta 2337, items 5–39).
 
@@ -31,7 +36,7 @@ DECODE R9554–R9588 (ASNa, Ministero degli affari esteri, busta 2337, items 5�
   1920 non; 2445 ter, 2448 ti, 2450 to. Across runs the order is scattered.
 - **Nulls:** a group written with a fifth figure (21900, 18900, 16480, …, ~100 cases) stands where the
   contemporary gloss has nothing. 1531 is probably a null too (ele-1531-zione = elezione beside ele-va-zione).
-- R9586 and R9588 are in a different code (values 100–1100, faint pencil syllabic glosses); not attacked.
+- R9586 and R9588 are in a different code (values 100–1100, faint pencil syllabic glosses); split off 14 Oct 2026 to `../r9586/`.
 - Some pages (R9554 p1, R9561 P4–P7) have a stroke over nearly every group: a later decoder's ticks, recorded only
   where sparse.
 
@@ -123,7 +128,6 @@ still short of what a ciphertext-only attack on this code size needs.
 ## Remaining gaps
 
 - main-code groups without a value (55% of target groups) - blocker: open-codes; two-part code of ~2,450 groups; 162 values from four interlinear cribs; solve.py LM scoring did not discriminate
-- R9586 and R9588 (different code, values 100-1100) - blocker: not-attempted; faint pencil syllabic glosses noted but not attacked
 - the 1816-19 Cifra della Segreteria di Stato codebook - blocker: needs-physical-access; not on DECODE (R9532-R9541 are 1859-60 keys); ASNa Esteri
 
 ## Escalation
@@ -133,4 +137,4 @@ still short of what a ciphertext-only attack on this code size needs.
 - [x] known-keys: R9549 (box 2317) and Borbone consular keys R9532-R9541 checked: different codes
 - [x] print: web search, Treccani DBI, Tomokiyo: no edition found
 - [x] key-rebuild: alphabetical-run bracketing and LM candidate scoring (solve.py); 54 inferred values
-- [ ] retry: not done - hand-read the 1816 letters one at a time against the Decazes/Florida crib themes with the extended runs, and try the R9586/R9588 pencil glosses
+- [ ] retry: not done - hand-read the 1816 letters one at a time against the Decazes/Florida crib themes with the extended runs

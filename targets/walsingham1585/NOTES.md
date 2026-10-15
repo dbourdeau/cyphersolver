@@ -7,6 +7,12 @@ identified. About fourteen words in a sign alphabet in the 10 Sep letter stay un
 Status: read in part (2026-09-21). Companion to [wotton1585](../wotton1585/NOTES.md), Wotton's own drafts to
 Walsingham in the same volume (R4841–R4843, catalogue 81), read by another session the same day.
 
+Two ciphers, two results (one-key review, 14 Oct 2026): the two-digit name code of all four letters and the sign
+alphabet of the 10 Sep letter are different systems, so the profile gives the outcome per part in `outcome.parts`
+and README has one row per part, as soria1523 does. Name code: key recovered from the CSP glosses (external
+plaintext), 34 of 46 occurrences read (12 of 18 numbers). Sign alphabet: not solved, too short. The pooled 0.49
+(34 of 69 units) mixes the two and is kept only as a labelled total.
+
 ## 1. What the records are
 
 Wotton's own papers from his 1585 embassy to James VI (Add MS 32657, "Hamilton papers" series of the BL). DECODE
@@ -95,15 +101,15 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 ## Remaining gaps
 - R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out
 - name codes 13, 14, 23, 30, 32, 37 - blocker: open-codes; not glossed in CSP or Wotton drafts; context too thin
-- clear-text gaps [..] in reading_R4840/R4844 - blocker: not-attempted; working transcriptions left gaps; no second pass recorded
+- clear-text gaps [..] in reading_R4840/R4844 - blocker: illegible; second pass 14 Oct 2026 on the DECODE images (`clear_gaps_pass2.md`): of 46 places, 32 read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words); nine transcription corrections found, not yet merged into the reading files
 
 ## Escalation
 - [x] siblings: Wotton drafts R4841-R4843 in the same volume read for numbers and cribs
 - [x] clear-pages: interlinear lines above the sign words examined; struck out, unreadable
 - [x] known-keys: DECODE key records and Tomokiyo Elizabethan ciphers searched; no Wotton 1585 key
 - [x] print: CSP Scotland viii checked page by page (nos. 40, 65, 106)
-- [ ] key-rebuild: not done — no anneal of the sign alphabet; would mean an English LM homophonic anneal on the ~120 signs and SP 52/38 copies for a crib
-- [ ] retry: not done — re-transcribe the [..] clear gaps and regrade the name codes
+- [n/a] key-rebuild: the name code is a list of names with no internal order to bracket, and its open numbers occur once or twice in thin context; the sign alphabet is ~120 homophonic signs with nulls and no crib, below what an anneal can fix (a crib from SP 52/38 copies would be needed first)
+- [x] retry: clear-text gaps re-read on the images 14 Oct 2026 (`clear_gaps_pass2.md`); name-code grades unchanged (the new words fix no open number)
 
 ## 2026-09-30 (quotation list for George Lasry)
 

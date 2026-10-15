@@ -1,0 +1,176 @@
+{
+ "schema_version": 1,
+ "target": "brulart1615",
+ "title": "Louis XIII to Brulart de Leon, ambassador in Venice, 15 Sep 1615 and 25 Jul 1617, BnF fr. 18043 f. 83-84 and fr. 18044 f. 109-110 (DECODE R2785, R2786)",
+ "documents": [
+  {
+   "id": "R2785",
+   "shelfmark": "BnF fr. 18043 f. 83-84 (DECODE R2785)",
+   "date": "15 Sep 1615",
+   "year": 1615,
+   "country": "France",
+   "route": "Louis XIII (Brulart de Sillery) to Brulart de Leon, Venice",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Satoshi Tomokiyo, reconstructed key on cryptiana louisxiii.htm and the DECODE record (Aug 2021); contemporary interlinear decipherment on the letter",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "not transcribed here",
+    "image_quality": "unknown",
+    "notes": "One of three DECODE images viewed (a text page: clear French with cipher runs, most with an interlinear decipherment above them); not transcribed here."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "R2786",
+   "shelfmark": "BnF fr. 18044 f. 109-110 (DECODE R2786)",
+   "date": "25 Jul 1617",
+   "year": 1617,
+   "country": "France",
+   "route": "Louis XIII (Brulart de Sillery) to Brulart de Leon, Venice",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Satoshi Tomokiyo, reconstructed key on cryptiana louisxiii.htm and the DECODE record (Aug 2021); contemporary interlinear decipherment on the letter",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "not transcribed here",
+    "image_quality": "unknown",
+    "notes": "One of three DECODE images viewed (the address leaf); not transcribed here."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "The Brulart de Leon cipher of 1615-18: letter-like signs with homophones, numbers with a virgule or an overbar for words and syllables, dotted vowels for princes, delete and repeat signs; key reconstructed by Satoshi Tomokiyo.",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {
+   "width": "unknown",
+   "separation": "unknown"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "same cipher in the other letters to Brulart de Leon in BnF fr. 18043 and fr. 18044 (Tomokiyo)",
+  "notes": "System fields from Tomokiyo's key table (DOC file on R2785/R2786, louisxiii.htm), not checked here. Split 14 Oct 2026 from louis1615 (the 1631 Sabran cipher is now sabran1631)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "DECODE R2785/R2786 (Tomokiyo, Aug 2021) and cryptiana louisxiii.htm \"Brulart de Leon\"",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "DECODE API"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched the DECODE record views for R2785 and R2786, one image of each and the key file with the shared cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Checked Tomokiyo's louisxiii.htm (DECODE's pointer): the Brulart de Leon cipher of 1615-18 reconstructed by him, both letters read with it (DECODE 'Partially decrypted', 2021); the residue probably nulls or cancelled signs. Entry closed without applying the key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former combined target louis1615 (catalogue 191) under the one-key rule (George Lasry, 14 Oct 2026): R2785/R2786 (the Brulart de Leon cipher, Tomokiyo's key) and R2748 (the 1631 Sabran cipher, Lasry's solution) are different ciphers. Folder, profile, page and ledgers separated; earlier steps kept as recorded.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Satoshi Tomokiyo read both letters in 2021 with the key he reconstructed (on DECODE and cryptiana louisxiii.htm), and the 1615 letter carries a contemporary interlinear decipherment; nothing was deciphered here and the key was not re-applied.",
+  "contribution": [
+   "none"
+  ],
+  "class": "already solved",
+  "key": "none",
+  "fraction_read": "unknown",
+  "grades": "unknown",
+  "verification": [
+   "none"
+  ],
+  "notes": "Tomokiyo leaves some symbols undeciphered (probably nulls or cancelled signs, per his DECODE notes); not re-checked here. Nothing new about the text. Catalogue entry 191 removed 21 Sept 2026.",
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "prior solution",
+    "note": "key of the Brulart de Leon cipher (1615-18) reconstructed; R2785 and R2786 read with it, residue probably nulls",
+    "date": "2021",
+    "source": "DECODE R2785, R2786; cryptiana louisxiii.htm",
+    "published": true
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment above most cipher runs of the R2785 text page",
+    "source": "DECODE R2785 image 1"
+   }
+  ]
+ }
+}

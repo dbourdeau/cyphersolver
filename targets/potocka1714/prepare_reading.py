@@ -8,15 +8,11 @@ rows.append(dict(record='7526',page='spread-right',context='Postscript',cipher=(
     english="The starosta serecki is here. I asked whether he has anything settled. He has nothing. He is going to Lublin. It is also true that he was with the Dominicans at the time when you danced with her in the field. Stabrowski told me.",
     note="Word division corrected 30 Sept 2026 (NOTES item 7): iakes tancowal (jakes tancowal, 'when you danced', second person, so the dancer is Dunin) replaces iak estancowal ('his staying with a woman'). On the image 21 27 20 25 36 closes a line as one group and 19 27 34 29 35 17 27 32 opens the next. Re-checked 30 Sept 2026 (NOTES item 8): the first figure of the last group is 36 (s), its 6 closed at the foot, not 39 (p); transcription corrected, so the name is Stabrowski (no 'p.'). serecki: the seven figures 36 25 37 25 29 20 21 are clear on the image (the 20 retouched in darker ink); the reading of the letters is firm, the starostwo is not identified (not emended to serejski or sieradzki). ⟨dzie⟩: the syllable dzie is written twice (21 25 30 16 21 25 30 16 21 25 30 35, evenly spaced, no cancellation), taken as the writer's dittography (M); dialect dzie for gdzie ('somewhere') is the alternative."))
 codes=json.loads((P/'standalone-codes.json').read_text())
-records=sorted(set(r['record'] for r in rows)|{'7524'})
+records=sorted(set(r['record'] for r in rows))  # R7524 (Mniszech, another cipher) split to targets/mniszech1714 on 14 Oct 2026
 tokens=[]; summaries={};md=['# Literal cipher readings','', 'These are the encrypted passages, with short clear-text anchors, not a full diplomatic transcription of the mostly clear letters. Page numbers refer to DECODE image suffixes; left/right identifies a spread. Numeric readings preserve irregular spelling. Editorial interpretations are separate. All recovered values are grade I (inferred here), with doubtful segments marked M. No archive key or independent plaintext was used. Standalone codes remain unvalued.','']
 for rec in records:
     md+=['## R'+rec,'']
     own=[]
-    if rec=='7524':
-        ct=re.findall(r'\d+', (P/'r7524-cipher.txt').read_text())
-        for i,n in enumerate(ct):own.append(dict(record=rec,segment='unread',position=i+1,cipher=n,plain='?',grade='',coherent=False))
-        md+=['Mniszech: not read. The clear Polish and Latin anchors in `r7524-cipher.txt` are not decipherments. Every one of the cipher tokens remains open. The solver candidates are failed trials, not readings.','']
     for idx,r in enumerate(rows):
         if r['record']!=rec:continue
         ct=r['cipher'].split(); raw=''.join(key.get(n,'<'+n+'>') for n in ct)
@@ -32,7 +28,7 @@ for rec in records:
         if r['record']!=rec:continue
         md += [f"Standalone codes, image {r['page']}: "+' '.join('<'+str(n)+'>' for n in r['tokens'])+'. Unidentified; listed separately from the passage order.','']
         for i,n in enumerate(r['tokens']):own.append(dict(record=rec,segment='codes-'+r['page'],position=i+1,cipher=str(n),plain='?',grade='',coherent=False))
-    (P/(f'R{rec}-tokens.txt' if rec=='7524' else f'R{rec}-cipher.txt')).write_text(' '.join(t['cipher'] for t in own)+'\n')
+    (P/f'R{rec}-cipher.txt').write_text(' '.join(t['cipher'] for t in own)+'\n')
     tokens+=own
     summaries[rec]=dict(tokens=len(own),valued=sum(t['plain']!='?' for t in own),conservative_coherent=sum(t['coherent'] for t in own))
 (P/'reading.md').write_text('\n'.join(md),encoding='utf8')

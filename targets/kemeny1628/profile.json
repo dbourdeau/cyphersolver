@@ -1,0 +1,131 @@
+{
+ "schema_version": 1,
+ "target": "kemeny1628",
+ "title": "Kemény collection cipher letters, DECODE R4933-R4935 (Kemény_XIX_1628)",
+ "documents": [
+  {
+   "id": "R4933",
+   "shelfmark": "Romanian National Archives, Cluj: Kemény_XIX_1628_1",
+   "year": 1658,
+   "country": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "https://de-crypt.org/decrypt-web/RecordsView/4933",
+    "notes": "Images downloaded; not yet fully transcribed."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "R4934",
+   "shelfmark": "Romanian National Archives, Cluj: Kemény_XIX_1628_2",
+   "year": 1628,
+   "country": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "https://de-crypt.org/decrypt-web/RecordsView/4934",
+    "notes": "Images downloaded; not yet fully transcribed."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "R4935",
+   "shelfmark": "Romanian National Archives, Cluj: Kemény_XIX_1628_3",
+   "year": 1628,
+   "country": "unknown",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "https://de-crypt.org/decrypt-web/RecordsView/4935",
+    "notes": "Images downloaded; not yet fully transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Not yet inspected: DECODE lists alphabet and numerical symbols (R4933), graphic signs, alphabet and numerical (R4934), alphabet (R4935). No system established.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown"
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Supplied target records in objective file.",
+  "models": [
+   "GPT-6"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-23",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-23",
+   "kind": "access",
+   "what": "Downloaded the DECODE images and metadata of R4933 (2 images), R4934 (2), R4935 (4), with the other seven records of the range R4933-R4942.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key review (Lasry's rule, 14 Oct 2026): split from transylvania1645, which grouped ten DECODE records by number range. These three are the Kemény_XIX_1628 records (another collection, writer and decade than the Keresdi Bethlen letters of 1645-48); none has been transcribed, so no key is claimed for them, shared or otherwise.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "method": "not solved",
+  "key": "none",
+  "verification": [
+   "none"
+  ],
+  "method_basis": "In progress: the images are downloaded but not transcribed; no attack yet.",
+  "notes": "In progress (split from transylvania1645, 14 Oct 2026). R4933 is catalogued 1658 but named 1628: to be resolved on the leaves."
+ }
+}

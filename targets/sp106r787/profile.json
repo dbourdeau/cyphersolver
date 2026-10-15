@@ -1,0 +1,159 @@
+{
+ "schema_version": 1,
+ "target": "sp106r787",
+ "title": "A French news letter forwarded to Henrietta Maria's household, 19/29 July 1645, in Lasry's SP106-2 key: TNA SP 106/10 ff. 216-217 (DECODE R787)",
+ "documents": [
+  {
+   "id": "R787",
+   "read": "read in part",
+   "shelfmark": "TNA SP 106/10 ff. 216-217 (DECODE R787)",
+   "date": "19/29 July 1645 (duplicate)",
+   "year": 1645,
+   "country": "England",
+   "route": "unknown writer (signed 103 62 A 104; perhaps Dr Stephen Goffe in Holland, per Lasry) -> the Queen or the King",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "George Lasry, reconstructed key 'TNA SP106-2' and interlinear plaintext of ff. 216-217 and 219 on the DECODE record, 23 Oct 2020",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1569,
+    "distinct": 74,
+    "unit": "code groups",
+    "measured": true,
+    "file": "withheld:decode/R787_ciphertext.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "Sofia Pettersson's manual transcription (DECODE, 19 Aug 2019), as aligned in Lasry's interlinear file",
+    "image_quality": "good",
+    "notes": "Images fetched with the DECODE cookie and viewed for the page crop (14 Oct 2026); transcription not redone."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Lasry's 'TNA SP106-2' key (July-Aug 1645): a numerical homophonic alphabet on the numbers 1-60 (two values for most letters, nine for I), numbers separated by commas; a nomenclator of numbers above 60 (61-75, 97, 102-121) that his key file does not list.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "commas"
+  },
+  "distinct_symbols": 74,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 9,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Same key, per Lasry's files, on f. 219 (a letter of 30 Aug 1645 inside DECODE R788, ff. 218-221; the rest of R788 is in the TNA SP 106 key)",
+  "notes": "Split on 14 Oct 2026 from the former hm1645, which joined six letters in four of Lasry's keys. Lasry's key file lists only the letter values and says 'There are no nulls'. Other entries: hm1645 (TNA SP 106 key), sp106r924 (SP106-8), sp106r929 (SP106-5)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "DECODE record files of R787 (George Lasry, 23 Oct 2020: reconstructed key, interlinear plaintext, dating notes)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "published key",
+   "published reading"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "DECODE record files",
+   "apply_key.py (key applied group by group to the transcription and compared with Lasry's plaintext)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-19",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-19",
+   "kind": "literature search",
+   "what": "Fetched the DECODE record page of R787 with the shared cookie; it links Pettersson's transcription, Lasry's reconstructed key 'TNA SP106-2' and his plaintext of ff. 216-217 and 219 (2020-10-23).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "control",
+   "what": "Re-fetched the record files and applied the key group by group to the 1569 groups of ff. 216-217 (apply_key.py): 1538 get a value, all equal to Lasry's plaintext (every line's columns line up); the 31 others are the numbers above 60 (and 9, 06) that his plaintext also leaves open.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former combined target hm1645 under the one-key rule (George Lasry, 14 Oct 2026): R787 is the only letter of the six in the SP106-2 key. Folder, profile, page and ledgers separated; the earlier step is kept as recorded.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The letter was taken from George Lasry's plaintext on the DECODE record (23 Oct 2020); his SP106-2 key, applied here only as a check, reproduces it.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "fraction_read": 0.9802,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "apply_key.py over decode/ (Pettersson's groups as aligned in Lasry's interlinear file): 1538 of 1569 cipher groups have a value in Lasry's SP106-2 key",
+  "key": "partial",
+  "codes_open": {
+   "open": 19,
+   "tokens_open": 31
+  },
+  "gaps": [
+   {
+    "item": "nomenclator numbers above 60 (61-75, 83, 97, 102-121) and two stray figures (9, 06): 19 distinct, 31 tokens",
+    "blocker": "open-codes",
+    "detail": "Not in Lasry's key; his plaintext brackets them or marks them '?'. Mostly names and titles (64 recurs five times as a party or person). The signature 103 62 A 104 is among them."
+   }
+  ],
+  "grades": "unknown",
+  "verification": [
+   "key confirms"
+  ],
+  "notes": "Nothing about the text is new: Lasry's decipherment on DECODE is the reading. Lasry dates it from its war news (Linck, Piccolomini, Enghien, Montrose, the Parlement and the duc d'Epernon) to summer 1645 and suggests it may be Goffe's letter from Holland forwarded unchanged.",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "reconstructed key 'TNA SP106-2' (July-Aug 1645) and interlinear plaintext of R787, with dating notes",
+    "date": "2020-10-23",
+    "source": "DECODE R787 record files"
+   },
+   {
+    "who": "pettersson",
+    "role": "transcription",
+    "note": "DECODE ciphertext transcription of ff. 216-217",
+    "date": "2019"
+   }
+  ]
+ }
+}

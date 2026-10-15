@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "guiche1551",
- "title": "La Guiche (Rome 1551), Noailles (Venice 1558), Seure (Lisbon 1558): BnF fr. 3138 no. 22, fr. 3151 nos. 33, 39-44",
+ "title": "La Guiche (Rome) to Montmorency, 22 Nov 1551: BnF fr. 3138 no. 22",
  "documents": [
   {
    "id": "laguiche1551",
@@ -19,8 +19,8 @@
     "source": "No decipherment on the leaf, the next leaf or in the margin; the surrounding clear text gave context."
    },
    "length": {
-    "tokens": 406,
-    "distinct": 22,
+    "tokens": 431,
+    "distinct": 24,
     "unit": "symbols",
     "measured": true,
     "file": "guiche_ct.txt"
@@ -29,36 +29,7 @@
     "by": "llm from images",
     "source": "Gallica IIIF full-resolution view 65",
     "image_quality": "good",
-    "notes": "First two lines struck through by the writer. The + versus barred-+ distinction may be conflated."
-   },
-   "read": "read in part"
-  },
-  {
-   "id": "noailles1558",
-   "shelfmark": "BnF fr. 3151 no. 33, f. 60r (Gallica btv1b9059865k view 61)",
-   "date": "1558-11-13",
-   "year": 1558,
-   "country": "France",
-   "route": "Venice -> France (Cardinal de Lorraine)",
-   "language": "French",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "margin"
-    ],
-    "source": "Contemporary decipherment in the inner margin, partly lost in the gutter."
-   },
-   "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
-    "unit": "symbols",
-    "measured": false
-   },
-   "transcription": {
-    "by": "unknown",
-    "source": "Gallica view 61",
-    "image_quality": "good",
-    "notes": "Not transcribed."
+    "notes": "First two lines struck through by the writer. 406 signs in the first pass; the 24-sign run L2x and the plain cross (b) and four-dot code sign added on 30 Sept 2026 give 431 tokens (counted from guiche_ct.txt lines L0-L12)."
    },
    "read": "read in part"
   }
@@ -86,12 +57,12 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "none",
-  "notes": "The system covers La Guiche only; Noailles and Seure use other symbol alphabets. Seure's cipher is homophonic (~60 signs) with numeral codes."
+  "notes": "Two-sign group ff+c = ss; one four-dot code sign (::) for a person. Noailles 1558 (noailles1558) and Seure 1558 (seure1558), once in the same catalogue item, use other ciphers."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "Web search found no edition; the Noailles letter has a contemporary marginal decipherment.",
+   "where": "Web search found no edition of this letter; no decipherment in the volume.",
    "found": "unknown",
    "used": false
   },
@@ -115,13 +86,13 @@
  "solution": [
   {
    "kind": "access",
-   "what": "Downloaded both Gallica volumes and located items 22, 33 and 39-44 from the BnF item list.",
+   "what": "Downloaded the Gallica volume fr. 3138 and located item 22 from the BnF item list.",
    "result": "worked",
    "date": "2026-09-21"
   },
   {
    "kind": "verification",
-   "what": "Checked for court decipherments: Noailles has one in the margin (cut by the binding); La Guiche and Seure have none.",
+   "what": "Checked for a court decipherment on the leaf, the next leaf and the margin: none.",
    "result": "worked",
    "date": "2026-09-21"
   },
@@ -132,19 +103,30 @@
    "date": "2026-09-21"
   },
   {
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "22 distinct signs, sign 3 at 16%: a simple substitution suspected.",
    "result": "worked",
    "date": "2026-09-21"
   },
   {
-   "kind": "solver", "technique": ["simulated annealing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
    "what": "Free many-to-one annealer with the fr-1530 model: collapsed onto i/x.",
    "result": "failed",
    "date": "2026-09-21"
   },
   {
-   "kind": "solver", "technique": ["simulated annealing", "repeat/pattern analysis"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "repeat/pattern analysis"
+   ],
    "what": "Permutation annealer (swap moves), 16 restarts: best run read 'le conte sainctefiore est mal satisfaict'.",
    "result": "worked",
    "date": "2026-09-21"
@@ -162,19 +144,16 @@
    "date": "2026-09-21"
   },
   {
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "plaintext matching"],
-   "what": "Seure letters (nos. 39-44): ~2,000 signs, homophonic plus nomenclator, no decipherment; left open as too large for this pass.",
-   "result": "partial",
-   "date": "2026-09-21"
-  },
-  {
    "kind": "reading",
    "what": "Corrections reported while quotations were pulled for Lasry's list, checked on guiche_ct.txt, reading_raw.txt, the key and the view 65 image: L3 gives 'lamraq?adeur de senes', so the write-up's 'de ceux de Sienes' becomes 'l'am[bass]adeur de Senes' ('bass' inferred from context, grade I); 'mal satisfaict de ..., et' restores the 'de' of L5 (a four-dot sign, not transcribed, follows it); the site's portrait strip named Henry II as recipient, corrected to Montmorency (the letter closes 'Monseigneur').",
    "result": "worked",
    "date": "2026-09-30"
   },
   {
-   "kind": "hypothesis", "technique": ["repeat/pattern analysis"],
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
    "what": "Seen on the image while checking, not yet applied: a 24-sign cipher run after 'qu'il advisera' is missing from guiche_ct.txt and gives 'a la pratique qu'aves entendu' with the key; the sign transcribed t in L3 and in '+arna+e' is a plain cross distinct from the barred r, and read as b gives 'l'ambassadeur' and 'sieur Barnabe Adorne'; F c gives ss in 'ambassadeur' and 'aussi' (L12). Needs a re-transcription pass.",
    "result": "partial",
    "date": "2026-09-30"
@@ -185,16 +164,67 @@
    "what": "La Guiche f. 60v re-read on the Gallica image to fill the quotation gaps for Lasry's list: the missing 24-sign run after 'qu'il advisera' transcribed (L2x) and read 'a la pratique qu'aves entendu' with the key unchanged; the plain cross split from the barred cross as b ('l'ambassadeur', 'Barnabe Adorne' x2); ff+c = ss ('aussi'); 'du service' in L10; the four-dot sign after 'mal satisfaict de' transcribed, one occurrence, conjectured 'l'Empereur' (grade I) from the count's imperial service; clear bridge lines read so the reading runs from the Sienese envoy to Santa Fiora.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 430 tokens, 23 types, fr-1530-despatches order 4: reading -2.612 per letter; random keys -6.746 (z 6.6); key annealed onto shuffled ciphertext best -3.679 (mean -3.704, z 31.2); annealer on the real text -2.589. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 430 tokens, 23 types, fr-1530-despatches order 4: reading -2.612 per letter; random keys -6.746 (z 6.6); key annealed onto shuffled ciphertext best -3.679 (mean -3.704, z 31.2); annealer on the real text -2.589. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): catalogue item 10 had grouped three letters in three different ciphers. La Guiche's 22-sign substitution stays in guiche1551; Noailles's Venice letter (another symbol alphabet) went to noailles1558 and Seure's six Lisbon letters (homophonic with numeral codes) to seure1558. fraction_read re-measured on La Guiche alone: 429 of 431 tokens have a value (the code sign :: and sign 5 do not).",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1530-despatches", "file": "validation.tsv", "tokens": 430, "types": 23, "tokens_per_type": 18.7, "score": -2.612, "nulls": {"random keys": {"n": 200, "mean": -6.746, "sd": 0.63, "max": -5.081, "z": 6.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.704, "sd": 0.035, "max": -3.679, "z": 31.2, "p": 0.1429}}, "power": -2.589, "verdict": "pass", "notes": "claimed per-occurrence score -2.612; polyphony 0.0; 1 unread tokens left out; annealer on the real text from random keys reached -2.589"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "fr-1530-despatches",
+   "file": "validation.tsv",
+   "tokens": 430,
+   "types": 23,
+   "tokens_per_type": 18.7,
+   "score": -2.612,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.746,
+     "sd": 0.63,
+     "max": -5.081,
+     "z": 6.6,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.704,
+     "sd": 0.035,
+     "max": -3.679,
+     "z": 31.2,
+     "p": 0.1429
+    }
+   },
+   "power": -2.589,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.612; polyphony 0.0; 1 unread tokens left out; annealer on the real text from random keys reached -2.589"
+  },
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The La Guiche letter (fr. 3138 f. 60v) has no decipherment anywhere; its 22-sign substitution was broken by swap annealing with a French 5-gram model and finished by hand from context; the Noailles marginal decipherment in fr. 3151 belongs to a different letter and was not used.",
-  "contribution": ["transcription", "key recovered", "catalogue correction"],
+  "method_basis": "The La Guiche letter (fr. 3138 f. 60v) has no decipherment anywhere; its 22-sign substitution was broken by swap annealing with a French 5-gram model and finished by hand from context.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
-  "fraction_read": 0.17,
-  "verification": ["historical consistency", "statistical test"],
-  "notes": "La Guiche read in part; Noailles read at the time; Seure open. fraction_read 0.17 is an estimate by cipher signs from the notes (La Guiche about 350 of 406, Noailles about 150 signs read at the time only in part, Seure about 2,000 signs none), not a measurement.",
+  "fraction_read": 0.995,
+  "verification": [
+   "historical consistency",
+   "statistical test"
+  ],
+  "notes": "Read in part: the text reads in substance; the struck-through opening reads in fragments and one code sign is open.",
   "gaps": [
    {
     "item": "La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5",
@@ -205,28 +235,12 @@
     "item": "La Guiche f. 60v: the two struck-through first lines",
     "blocker": "illegible",
     "detail": "struck through by the writer; read only in part"
-   },
-   {
-    "item": "Noailles fr. 3151 no. 33 (f. 60r), start of each marginal gloss line",
-    "blocker": "needs-physical-access",
-    "detail": "swallowed by the binding; needs the page opened flat"
-   },
-   {
-    "item": "Noailles fr. 3151 no. 33, the cipher itself (about 150 signs)",
-    "blocker": "not-attempted",
-    "detail": "not attacked; the visible gloss words could serve as cribs"
-   },
-   {
-    "item": "Seure fr. 3151 nos. 39-44 (about 2,000 signs, homophonic with numerals)",
-    "blocker": "not-attempted",
-    "detail": "left as a multi-session job; not transcribed"
    }
   ],
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Whole target not measurable: Noailles' ~150 signs are not transcribed and the Seure letters (~2,000 signs, not a document entry) are unread. La Guiche alone, counted from guiche_ct.txt (406 signs) against reading_raw.txt: ~352/406 = 0.87 read (unread: most of struck lines L0-L1, the name '+arna+e' x2 = 14 signs, 'lamraq?' in L3, three '?' signs); that line judgement is by eye. 0.17 kept as the by-sign estimate over the catalogue entry.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "guiche_ct.txt (431 tokens, L0-L12) against reading_raw.txt: every token has a value but the four-dot code sign (::) and sign 5 (L1). The struck-through lines L0-L1 give values that read only in fragments: about 352 of 406 first-pass signs read as sense (by eye, 21 Sept), hence fraction_coherent.",
   "key": "partial",
-  "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "court's marginal decipherment of the Noailles letter (fr. 3151)"}
-  ]
+  "credits": [],
+  "fraction_coherent": 0.87
  }
 }

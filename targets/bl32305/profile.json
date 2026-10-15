@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "bl32305",
- "title": "Paris 1719 and 'Carré' 1742-45 code letters, BL Add MS 32305 (DECODE R2963-R2974)",
+ "title": "Paris 1719 code letters, BL Add MS 32305 ff. 6-7 (DECODE R2964, R2965)",
  "documents": [
   {
    "id": "R2964",
@@ -61,93 +61,6 @@
     "image_quality": "good",
     "notes": "Same code as R2964."
    }
-  },
-  {
-   "id": "R2968",
-   "shelfmark": "BL Add MS 32305 ff. 11-12 (DECODE R2968)",
-   "date": "March 1742",
-   "year": 1742,
-   "country": "England",
-   "route": "unknown -> Mr Carre, Pall Mall, London",
-   "language": "unknown",
-   "cleartext_in_document": "none",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "none; R2969 is a contemporary frequency count of R2968+R2970"
-   },
-   "length": {
-    "tokens": 372,
-    "distinct": 208,
-    "unit": "code groups",
-    "measured": true,
-    "file": "carre/transcription_R2968.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE image",
-    "image_quality": "good",
-    "notes": "Distinct counted by parse.py after stripping underline/doubt marks; --measure counts marked variants separately (it gives 216). A bracketed dittography line is not counted."
-   }
-  },
-  {
-   "id": "R2970",
-   "shelfmark": "BL Add MS 32305 ff. 14-17 (DECODE R2970)",
-   "date": "undated; received 22 Aug 1742",
-   "year": 1742,
-   "country": "England",
-   "route": "unknown -> Mr Carre, Pall Mall, under cover to a jeweller near Charing Cross",
-   "language": "unknown",
-   "cleartext_in_document": "none",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "none; R2969 is a contemporary frequency count of R2968+R2970"
-   },
-   "length": {
-    "tokens": 470,
-    "distinct": 219,
-    "unit": "code groups",
-    "measured": true,
-    "file": "carre/transcription_R2970.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE image",
-    "image_quality": "good",
-    "notes": "Distinct counted by parse.py after stripping underline/doubt marks; --measure counts marked variants separately (it gives 226)."
-   }
-  },
-  {
-   "id": "R2972",
-   "shelfmark": "BL Add MS 32305 ff. 22-23 (DECODE R2972)",
-   "date": "19 Jan 1745",
-   "year": 1745,
-   "country": "England",
-   "route": "London -> unknown",
-   "language": "unknown",
-   "cleartext_in_document": "none",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "none; R2969 is a contemporary frequency count of R2968+R2970"
-   },
-   "length": {
-    "tokens": 481,
-    "distinct": 196,
-    "unit": "code groups",
-    "measured": true,
-    "file": "carre/transcription_R2972.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE image",
-    "image_quality": "good",
-    "notes": "Distinct counted by parse.py after stripping underline/doubt marks; --measure counts marked variants separately (it gives 216)."
-   }
   }
  ],
  "system": {
@@ -155,7 +68,7 @@
    "code",
    "nomenclator"
   ],
-  "summary": "Two-part 3-figure codes of about 900 (1719) and 800 (1742-45) groups mixing words, syllables and letters.",
+  "summary": "A two-part 3-figure code of about 900 groups mixing words, syllables and letters, in clear French letters.",
   "symbol_kind": "digits",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -174,12 +87,12 @@
   "word_division": "kept",
   "doubled_letters": "unknown",
   "sibling_key": "none",
-  "notes": "Two-part inferred from the 1719 glosses: re 36, pas 88, le 95, que 184, vous 243, a 347 are not alphabetical. Carré 1742-45: 1323 groups, 381 distinct, values 1-800; letter-homophonic anneal no better than the shuffled control; one-part test r=-0.26 against an alphabetical French word list, so two-part."
+  "notes": "Two-part inferred from the contemporary glosses: re 36, pas 88, le 95, que 184, vous 243, a 347 are not alphabetical. The Carré letters of 1742-45 (R2968/R2970/R2972), filed here until 14 Oct 2026, are a different code: targets/carre1742."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "contemporary interlinear glosses on R2964/R2965; R2963 and R2974 fully deciphered at the time",
+   "where": "contemporary interlinear glosses on R2964/R2965 (about a dozen values)",
    "found": "during attempt",
    "used": true
   },
@@ -190,9 +103,7 @@
   "attack": "ciphertext-only",
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
   "tools": [
-   "python statistics",
-   "simulated annealing",
-   "n-gram language model"
+   "python statistics"
   ],
   "models": [
    "claude-opus-5"
@@ -228,89 +139,57 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "statistics", "technique": ["plaintext matching"],
+   "kind": "statistics",
+   "technique": [
+    "plaintext matching"
+   ],
    "what": "354 groups, 191 distinct, 116 singletons, max 900; glosses not alphabetical, so a two-part code.",
    "result": "worked"
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "plaintext matching"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "plaintext matching"
+   ],
    "what": "One-part (alphabetical) code, which would let the glosses bracket the rest.",
    "result": "ruled out"
   },
   {
-   "date": "2026-09-21",
-   "kind": "access",
-   "what": "Fetched R2968, R2969, R2972 images with the DECODE cookie (R2970 already held).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "Transcribed all three letters from full-resolution images (1323 groups).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
+   "date": "2026-10-14",
    "kind": "verification",
-   "what": "Compared counts with the contemporary tally R2969 (= R2968+R2970 incl. a dittography): 22 of 25 values exact, 3 off by one.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "statistics", "technique": ["repeat/pattern analysis", "language-model scoring"],
-   "what": "381 distinct of 1323, 147 singletons, range 1-800, top value 2.3%; one repeated 5-gram; 73% of 1745 tokens use 1742 values.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing"],
-   "what": "Letter-per-group homophonic anneal against fr-modern 4-grams.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "control",
-   "what": "Same anneal on shuffled ciphertext scores the same (-2.12/-2.17 v -2.09/-2.11 per char).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "frequency analysis", "repeat/pattern analysis"],
-   "what": "One-part (alphabetical) code: band-mass correlation with an alphabetical French word list r=-0.26; top values no closer to function-word positions than random.",
-   "result": "ruled out"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "literature search",
-   "what": "Key hunt for the Carré code: viewed R2971 (different 4-figure code, to a prince, not Carré; its de=448/que=745 absent from the Carré text) and R2975-R2981 (1749-59 letter ciphers/codes, none in the Carré code); R2972 pencil marks shown to be sheet cross-references to recurring runs, not decipherments; web search for Carré, Pall Mall, the jeweller Chevening and Add MS 32305 found nothing.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "access",
-   "what": "Catalogue #79 (R2978-R2979, 'Unknown sender (Dresden)'): fetched both records' images (4 + 2 pp.) with the DECODE cookie.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "reading",
-   "what": "R2978 (f. 32, Dresden 25 Jan 1750): 2-figure letter cipher deciphered letter by letter between the lines at the time (names Mr de Guydickens). R2979 (f. 34, Hague 9 Aug 1753, 'Hanau to Fer.'): the decipherer's working copy of a 4-figure syllable/word code, glossed in part, question marks where he stopped. Closed as read at the time / read in part at the time; no new decipherment attempted.",
+   "what": "Split under the one-key rule: the Carré letters (R2968, R2970, R2972), a different code, moved to carre1742 with the carre/ folder and its solver steps; this entry keeps the Paris 1719 code (R2964, R2965). The catalogue #79 records (R2978, R2979) and R2963/R2974, read at the time in other ciphers, are context only.",
    "result": "worked"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "The Paris 1719 and Carre 1742-45 letters are two-part codes; only the contemporary interlinear glosses on R2964/R2965 give values, and the three Carre letters (1,323 groups) were transcribed and tested without a reading.",
-  "contribution": ["transcription", "sender or date identified", "catalogue correction"],
+  "method_basis": "The Paris 1719 letters are a two-part code; only the contemporary interlinear glosses on R2964/R2965 give values, and the code cannot be extended from about 700 groups.",
+  "contribution": [
+   "transcription",
+   "sender or date identified",
+   "catalogue correction"
+  ],
   "class": "not read",
   "fraction_read": 0.09,
   "verification": [
    "none"
   ],
-  "notes": "fraction_read counts the contemporary glosses in R2964 (33 of 354 groups). Needs a key, a clear copy or many more letters in the same code. The Carré letters (R2968/R2970/R2972) were transcribed in full (1323 groups) and tested; not read.",
+  "notes": "fraction_read counts the contemporary glosses in R2964 (33 of 354 groups). Needs a key, a clear copy or many more letters in the same code. The Carré letters were split off on 14 Oct 2026 to carre1742.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear glosses on R2964/R2965; R2963 and R2974 deciphered at the time"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear glosses on R2964/R2965"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "R2964 and R2965, the unglossed code groups (321 of 354 in f. 6; R2965 not transcribed)",
+    "blocker": "no-key-material",
+    "detail": "two-part code of ~900 entries, ~700 groups in all, no key, clear copy or other letter in the code"
+   }
   ]
  }
 }

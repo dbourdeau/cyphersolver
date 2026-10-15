@@ -1,0 +1,160 @@
+{
+ "schema_version": 1,
+ "target": "dubellay1528",
+ "title": "Jean du Bellay (London) to Montmorency, 28 October 1528, BnF fr. 3077 no. 23 pp. 145-147 (DECODE R4254; copy Clair. 328 f. 291, R2287)",
+ "documents": [
+  {
+   "id": "28oct1528",
+   "read": "read",
+   "shelfmark": "BnF fr. 3077 no. 23, pp. 145-147 (DECODE R4254); copy BnF Clairambault 328 f. 291 (DECODE R2287)",
+   "date": "28 Oct 1528",
+   "year": 1528,
+   "country": "England",
+   "route": "London -> the French court (Montmorency)",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Bourrilly and de Vaissiere, Ambassades en Angleterre de Jean du Bellay (1905), no. 156, pp. 430-434, cipher passages in italics, from a key the editors recovered",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "not transcribed here",
+    "image_quality": "good",
+    "notes": "DECODE R4254 images (pages and crops) and R2287 (copy) fetched 14 Oct 2026; about fifteen cipher lines on p. 146 (17 Sept 2026 notes); not transcribed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Du Bellay's first cipher (1528): invented signs for letters with word signs, the text broken by bracketed groups of null signs or uncoded phrases; key recovered by Bourrilly and de Vaissiere (1905) and again by George Lasry (2022).",
+  "symbol_kind": "symbols",
+  "digit_groups": {
+   "width": "unknown",
+   "separation": "unknown"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown",
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "same cipher in Clair. 329 f. 9 (Lasry) and a letter of 28 May 1529 (Bourrilly); differs from Bayonne's 1529 cipher (dubellay)",
+  "notes": "From Bourrilly's note 6 (p. 432): only two letters of du Bellay use it; meaningless sign groups and uncoded phrases enclosed between two fixed marks that cancel their content; some single-occurrence signs for persons not identified. Types 'homophonic' from DECODE/Tomokiyo context, not checked. Split 14 Oct 2026 from dubellay."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Bourrilly and de Vaissiere 1905 no. 156 (text in clear, key recovered, not printed); Lasry 2022 (key as an image on Tomokiyo's Cryptiana GL.htm, 'Bayonne's Cipher (1528-1529)')",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "DECODE API"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 3,
+  "first_date": "2026-09-17",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-17",
+   "kind": "literature search",
+   "what": "Identified fr. 3077 no. 23 as the letter of 28 Oct 1528 (not 1529) and found it printed in clear in Bourrilly and de Vaissiere 1905 no. 156, whose editors recovered the key of du Bellay's first cipher; Lasry's 2022 solution of the same cipher noted from Tomokiyo's GL.htm.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "access",
+   "what": "fr. 3077 canvases 143-145 (pp. 145-147) fetched from Gallica at 2000 px; the clear opening read on the leaf.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "access",
+   "what": "DECODE record pages R4254 (fr. 3077) and R2287 (Clair. 328 f. 291, the copy) saved; R2287's note that Tomokiyo's 1529 table does not fit explained by the first cipher.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former combined target dubellay (catalogue item 4) under the one-key rule (George Lasry, 14 Oct 2026): the 28 Oct 1528 letter is in du Bellay's first cipher; the 1529 letters are in Bayonne's cipher of 1529 and keep dubellay. DECODE images of R4254 and R2287 fetched; Bourrilly's note on the cipher read.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Bourrilly and de Vaissiere printed the letter with its cipher passages in clear in 1905, from a key they recovered; Lasry solved the cipher again in 2022. Nothing was deciphered here and no key was applied.",
+  "contribution": [
+   "sender or date identified"
+  ],
+  "class": "already solved",
+  "key": "none",
+  "fraction_read": "unknown",
+  "grades": "unknown",
+  "verification": [
+   "none"
+  ],
+  "notes": "The year (1528, not 1529) identified here from the content and Bourrilly. No transcription; key not applied.",
+  "credits": [
+   {
+    "who": "bourrilly",
+    "role": "prior solution",
+    "note": "28 Oct 1528 letter printed in clear with the key of the first cipher, which they recovered (1905, no. 156)",
+    "date": "1905",
+    "source": "Ambassades en Angleterre de Jean du Bellay (1905), pp. 430-434",
+    "published": true
+   },
+   {
+    "who": "lasry",
+    "role": "prior solution",
+    "note": "solved du Bellay's first (1528) cipher on Clair. 329 f. 9; per Tomokiyo his key fits Clair. 328 f. 291, the copy of this letter",
+    "date": "2022",
+    "source": "cryptiana GL.htm, 'Bayonne's Cipher (1528-1529)'",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "GL.htm: Lasry's key and its fit to Clair. 328 f. 291",
+    "source": "cryptiana GL.htm"
+   }
+  ]
+ }
+}

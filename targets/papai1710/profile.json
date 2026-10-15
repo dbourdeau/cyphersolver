@@ -1,0 +1,160 @@
+{
+ "schema_version": 1,
+ "target": "papai1710",
+ "title": "Janos Papai (Belgrade) to Ferenc Rakoczi II, 6 March 1710: six passages in a graphic-sign alphabet (DECODE R731)",
+ "documents": [
+  {
+   "id": "R731",
+   "read": "not read",
+   "shelfmark": "MNL OL G15 Caps. H Fasc. 226, pp. 31-33 (DECODE R731)",
+   "date": "6 March 1710",
+   "year": 1710,
+   "country": "Hungary",
+   "route": "Landor Fejervar (Belgrade) -> Ferenc Rakoczi II",
+   "language": "Hungarian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none"
+   },
+   "length": {
+    "tokens": 371,
+    "distinct": 15,
+    "unit": "symbols",
+    "measured": false,
+    "file": "R731_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE camera images IMG_R731_I4153-4155 (2448x3264), zoomed 1.8-1.9x; R731_signs.txt",
+    "image_quality": "fair",
+    "notes": "Six graphic-sign passages: 316 signs of 14 types plus 55 dot clusters kept as one token each (counted per character, since the file writes one character per sign and --measure splits on spaces). Tentative: the low swash may be a pen link and the dot clusters may be vowel marks."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "A graphic-sign alphabet of perhaps 25 signs (d-like, pi, m-like, q, division sign, =, '11', with colons and dot clusters) in six short passages inside a clear Hungarian letter.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 15,
+  "diacritics": {
+   "used": "unknown",
+   "note": "dots above and below the bars may be vowel marks; collapsed into one token in the transcription"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "none: R580/R581/R452 (Papai's numeric envoy key) carry no graphic alphabet; the corner sign line on R581 is cipher, not an alphabet",
+  "notes": "distinct_symbols = 14 sign types plus the dot-cluster token in R731_signs.txt. Not the numeric R580 nomenclator of papai1706."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "no decipherment on the pages, on DECODE or online; Benda's 1963 edition of Papai's Turkish diaries not checked (not online)",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Posed the target; supplied the DECODE session cookie earlier.",
+  "tools": [
+   "solve731.py (swap annealing, 4-gram model of Papai's deciphered letters)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Tried to transcribe R731's six graphic-sign passages from the camera images; signs not secure enough for a solve.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched R731 images 4153-4155 and key image R581 (3842) at full resolution.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "verification",
+   "what": "Checked R581's corner sign line (upside down): a line of cipher signs, not an alphabet; R731 pages carry no decipherment.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Transcribed R731's six graphic-sign passages at 1.8-1.9x zoom into R731_signs.txt (~330 signs, 15 types + dot clusters); tentative.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "control",
+   "what": "Validated swap-annealing solver (solve731.py) on Papai's own text enciphered at random, same line lengths: recovered exactly (-8.96/4-gram vs -8.87 real).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Annealed R731 as transcribed, without dots, without swash strokes, reversed: best -10.1/4-gram, no Hungarian.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Benda (ed.) 1963 edition of Papai's Turkish diaries: not online, antiquarian copies only.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from papai1706, which had joined Papai's eleven numeric letters in the envoy key R580/R581 with R731 (6 Mar 1710), whose passages are in a separate graphic-sign alphabet. This profile keeps R731 only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "A control-validated swap-annealing solver with a 4-gram model of Papai's own Hungarian recovers a same-length control exactly but finds no Hungarian on R731 under any reading of the tentative transcription; the sign segmentation and dot patterns cannot be fixed from the camera images.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "No sign of R731_signs.txt is claimed as read.",
+  "verification": [],
+  "notes": "Attempted, closed unread 21 Sept 2026. Needs better images (the 2448-px camera images do not settle segmentation and dots) or the sign alphabet. Split 14 Oct 2026 from papai1706.",
+  "gaps": [
+   {
+    "item": "R731 (6 Mar 1710, Belgrade), six graphic-sign passages, ~330 signs",
+    "blocker": "illegible",
+    "detail": "tentative transcription R731_signs.txt; sign segmentation and dot counts not fixable from 2448-px camera images; validated solver finds no Hungarian; needs better images or the sign alphabet"
+   }
+  ],
+  "credits": []
+ }
+}

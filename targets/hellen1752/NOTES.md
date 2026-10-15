@@ -2,6 +2,12 @@
 
 Status: in progress. No cipher plaintext or key has been verified.
 
+One-key check, 14 Oct 2026 (George Lasry's one-key rule): not split. The 1752 (R1953), 1756 (R1049) and 1763
+(R1045-R1048, R1060, R1061) letters are grouped only provisionally into code families; no key or value has been
+established for any of them, so the notes do not show that the families are distinct codes (or that they share
+one). Split them into one entry per code as soon as a code is identified; until then the page says the grouping is
+provisional and claims no shared key.
+
 KHA, Prins Willem V, inventory 196; DECODE R1045, R1047, R1048, R1049,
 R1060, R1061 and R1953. Related R1046 supplies additional 1763 material.
 

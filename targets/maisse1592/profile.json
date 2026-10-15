@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "maisse1592",
- "title": "Henri IV to Andre Hurault de Maisse, ambassador at Venice, 3 November 1592 - 27 April 1593 (BnF fr. 16093 ff. 370, 373, 406, 410)",
+ "title": "Henri IV to Andre Hurault de Maisse, ambassador at Venice, 3 and 7 November 1592, in Maisse's Cipher (1592) (BnF fr. 16093 ff. 370, 373)",
  "documents": [
   {
    "id": "f370",
@@ -32,7 +32,8 @@
     "source": "Gallica scan at native 7029x6142, read at 4.5-6x",
     "image_quality": "good",
     "notes": "Only the opening of the leaf is transcribed group by group: 80 groups of the roughly 630 on the recto. The rest reads with the same key by spot decoding."
-   }
+   },
+   "read": "read"
   },
   {
    "id": "f373",
@@ -60,73 +61,16 @@
     "by": "human (project)",
     "source": "not transcribed; read from the clear copy",
     "image_quality": "good"
-   }
-  },
-  {
-   "id": "f406",
-   "shelfmark": "BnF fr. 16093 f. 406 (canvas 457; Harlay piece 247); duplicate of f. 404, which carries a partial interlinear decipherment",
-   "date": "8 Feb 1593",
-   "year": 1593,
-   "country": "France",
-   "route": "Chartres -> Maisse at Venice",
-   "language": "French",
-   "pages": 1,
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "separate collection",
-     "interlinear"
-    ],
-    "source": "Brienne 13 = NAF 6984 fol. 171r in clear; and the contemporary interlinear decipherment on the duplicate f. 404",
-    "partial": false
    },
-   "length": {
-    "tokens": "unknown",
-    "unit": "mixed",
-    "measured": false
-   },
-   "transcription": {
-    "by": "human (project)",
-    "source": "not transcribed; read from the clear copy",
-    "image_quality": "good"
-   }
-  },
-  {
-   "id": "f410",
-   "shelfmark": "BnF fr. 16093 f. 410 (canvas 461; Harlay piece 251); f. 412 is its duplicate",
-   "date": "27 Apr 1593",
-   "year": 1593,
-   "country": "France",
-   "route": "Mantes -> Maisse at Venice",
-   "language": "French",
-   "pages": 1,
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "separate collection"
-    ],
-    "source": "Brienne 13 = NAF 6984 fol. 193v, in clear",
-    "partial": false
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "mixed",
-    "measured": false
-   },
-   "transcription": {
-    "by": "human (project)",
-    "source": "not transcribed; read from the clear copy",
-    "image_quality": "good"
-   }
+   "read": "read"
   }
  ],
  "system": {
   "types": [
    "monoalphabetic",
-   "homophonic",
    "nomenclator"
   ],
-  "summary": "Two ciphers, not one: ff. 370 and 373 use a simple substitution on a 22-letter alphabet in figures 1-22 with doubled-letter signs (66, 67, 68, 72, 73) and a sparse nomenclator above the band; ff. 404/406 and 410 use a mixed system in which letter-shaped symbols carry the letters and two-digit figures the nomenclator.",
+  "summary": "Maisse's Cipher (1592): a simple substitution on a 22-letter alphabet in figures 1-22, with doubled-letter signs (66, 67, 68, 72, 73), a second sign (omega) for d and a sparse nomenclator above the band.",
   "symbol_kind": "digits and symbols",
   "digit_groups": {
    "width": "1-2",
@@ -159,13 +103,13 @@
   "key_order": "alphabetical",
   "word_division": "kept",
   "doubled_letters": "special sign (ff, mm, nn, ss, uu)",
-  "sibling_key": "Tomokiyo's reconstructions from the sibling leaves of the same volume, published as images on cryptiana (henryiv_Maisse1.png from f. 317; henryiv_Maisse2.png from f. 344 etc.), used; Savasse (1997) reconstructed cipher 1 independently from the Manuscrit Revol",
-  "notes": "Cipher 1 key: a=7 b=8 c=9 d=10 e=11 f=1 g=2 h=3 i=4 l=5 m=6 n=12 o=13 p=14 q=15 r=16 s=17 u=19 x=20 y=21 z=22; ff=66 mm=67 nn=68 ss=72 uu=73. An omega-shaped sign on f. 370 is a second sign for d and is absent from Tomokiyo's table. Cipher 2 is the same key Henri IV calls 'le double du chiffre que j'ay envoye aud. de Breves'."
+  "sibling_key": "Tomokiyo's reconstruction from the sibling leaves of the same volume (henryiv_Maisse1.png, from f. 317), used; Savasse (1997) reconstructed it independently from the Manuscrit Revol",
+  "notes": "Key: a=7 b=8 c=9 d=10 e=11 f=1 g=2 h=3 i=4 l=5 m=6 n=12 o=13 p=14 q=15 r=16 s=17 u=19 x=20 y=21 z=22; ff=66 mm=67 nn=68 ss=72 uu=73. An omega-shaped sign on f. 370 is a second sign for d and is absent from Tomokiyo's table. ff. 406/410 use a different cipher (maisse1593)."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "A key for each of the two ciphers published by Tomokiyo as images on cryptiana, reconstructed from sibling leaves and no reading of these four published; he lists them as undeciphered (no contemporary decipherment, not unsolved), so he may have read them; contemporary clear copies of all four letters in Brienne 13 (NAF 6984), unprinted; Berger de Xivrey prints a sibling (t. III p. 719)",
+   "where": "Tomokiyo's key for Maisse's Cipher (1592), published as an image on cryptiana and reconstructed from sibling leaves; no reading of ff. 370/373 published; he lists them as undeciphered (no contemporary decipherment, not unsolved), so he may have read them; contemporary clear copies of both letters in Brienne 13 (NAF 6984), unprinted",
    "found": "during attempt",
    "used": true
   },
@@ -212,26 +156,38 @@
   },
   {
    "date": "2026-09-19",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "Blind frequency analysis of the transcription: 94% of groups in a contiguous band 1-22, commonest value 14.5%, sparse values above the band - a simple substitution with a small nomenclator, not the assumed homophonic system.",
    "result": "worked"
   },
   {
    "date": "2026-09-19",
-   "kind": "solver", "technique": ["EM alignment", "crib testing", "statistical test"],
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "crib testing",
+    "statistical test"
+   ],
    "what": "Blind known-plaintext alignment of the transcription against the Brienne clear text placed 12 groups against a shuffled-cipher control of mean 8.2 and p95 11 - at the noise floor, because the transcription mis-split 9 7 as 97 and homophony was wrongly assumed.",
    "result": "failed"
   },
   {
    "date": "2026-09-19",
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
-   "what": "The old Harlay piece numbers on each leaf (224, 226, 247, 251) matched to Berger de Xivrey's citations, which give a clear copy in fonds Brienne 13 = NAF 6984 for each; the four copies located on the images by heading and preamble.",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "The old Harlay piece numbers on the leaves (224, 226 for ff. 370, 373; 247, 251 for the 1593 leaves) matched to Berger de Xivrey's citations, which give a clear copy in fonds Brienne 13 = NAF 6984 for each; the copies located on the images by heading and preamble.",
    "result": "worked"
   },
   {
    "date": "2026-09-19",
    "kind": "key from source",
-   "what": "Tomokiyo's two key images fetched from his page (invisible in a text dump) and cipher 1 transcribed to key1.tsv.",
+   "what": "Tomokiyo's key images fetched from his page (invisible in a text dump); the cipher 1 key (henryiv_Maisse1.png) transcribed to key1.tsv.",
    "result": "worked"
   },
   {
@@ -243,7 +199,7 @@
   {
    "date": "2026-09-19",
    "kind": "reading",
-   "what": "All four letters read from the Brienne clear copies; f. 406 shown to be the duplicate of f. 404, so the four leaves are three despatches.",
+   "what": "ff. 370 and 373 read from the Brienne clear copies (fol. 102v, 104v).",
    "result": "worked"
   },
   {
@@ -251,12 +207,21 @@
    "kind": "literature search",
    "result": "partial",
    "what": "Novelty re-examined after Lasry's note on 'undeciphered'. G. Lasry (21 Sept 2026): on cryptiana 'undeciphered' means no interlinear or nearby deciphered copy, not unsolved; unsolved material is on the unsolved page. The page no longer says Tomokiyo 'never applied' his keys; the claim is a published reading only."
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from maisse1592, which had joined ff. 370/373 (Maisse's Cipher of 1592) with ff. 406/410 (Maisse's Cipher of 1592-93, the Breves cipher). This profile keeps ff. 370 and 373 (Maisse's Cipher of 1592) only.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "The content of all four letters comes from contemporary clear copies in fonds Brienne 13 (BnF NAF 6984), located through the Harlay piece numbers and Berger de Xivrey; Tomokiyo's published key for 'Maisse's Cipher (1592)' was applied only to the 81 transcribed characters of f. 370, which match the Brienne copy.",
-  "contribution": ["transcription", "catalogue correction"],
+  "method_basis": "The content of both letters comes from contemporary clear copies in fonds Brienne 13 (BnF NAF 6984), located through the Harlay piece numbers and Berger de Xivrey; Tomokiyo's published key for Maisse's Cipher (1592) was applied to the 81 transcribed characters of f. 370, which match the Brienne copy.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
   "class": "read",
   "fraction_read": 1.0,
   "verification": [
@@ -264,13 +229,32 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "The content of all four letters is settled by the contemporary clear copies. Group-by-group decipherment covers only the transcribed opening of f. 370, verified letter-for-letter; ff. 373, 406 and 410 are not transcribed, and cipher 2 was not applied.",
+  "notes": "The content of both letters is settled by the contemporary clear copies. Group-by-group decipherment covers only the transcribed opening of f. 370, verified letter-for-letter; f. 373 is not transcribed. Split 14 Oct 2026: ff. 406 and 410, in a different cipher, are maisse1593.",
   "provenance": "contributed",
   "credits": [
-    {"who": "arya", "role": "solution", "note": "PR #7: Tomokiyo's published keys applied, f. 370 deciphered and the Brienne clear copies found", "source": "https://github.com/dbourdeau/cyphersolver/pull/7"},
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "keys for both Maisse ciphers published as images on cryptiana (henryiv_Maisse1.png, henryiv_Maisse2.png)", "source": "cryptiana Henri IV page"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "contemporary clear copies of all four letters in Brienne 13 (BnF NAF 6984)"},
-    {"who": "berger", "role": "pointer", "note": "his citations of the old Harlay pièce numbers located the Brienne clear copies", "source": "Berger de Xivrey, Recueil des lettres missives de Henri IV"}
+   {
+    "who": "arya",
+    "role": "solution",
+    "note": "PR #7: Tomokiyo's published keys applied, f. 370 deciphered and the Brienne clear copies found",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/7"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "key for Maisse's Cipher (1592) published as an image on cryptiana (henryiv_Maisse1.png)",
+    "source": "cryptiana Henri IV page"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "contemporary clear copies of ff. 370 and 373 in Brienne 13 (BnF NAF 6984), fol. 102v and 104v"
+   },
+   {
+    "who": "berger",
+    "role": "pointer",
+    "note": "his citations of the old Harlay pièce numbers located the Brienne clear copies",
+    "source": "Berger de Xivrey, Recueil des lettres missives de Henri IV"
+   }
   ]
  }
 }

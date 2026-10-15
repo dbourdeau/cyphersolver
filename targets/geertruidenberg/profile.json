@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "geertruidenberg",
- "title": "Torcy to the plenipotentiaries at Geertruidenberg (3 Apr 1710) and Villars to Polignac (1 Jun 1710), BL Add MS 61575",
+ "title": "Torcy to the plenipotentiaries at Geertruidenberg, Versailles, 3 Apr 1710, BL Add MS 61575 ff. 38-41",
  "documents": [
   {
    "id": "torcy",
@@ -33,44 +33,13 @@
    },
    "route": "Versailles -> Geertruidenberg",
    "read": "not read"
-  },
-  {
-   "id": "villars",
-   "shelfmark": "BL Add MS 61575 f. 44 (DECODE R8756)",
-   "date": "1 Jun 1710",
-   "year": 1710,
-   "country": "France",
-   "language": "French",
-   "pages": 2,
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "Not in Villars' Mémoires (Vogüé) iii appendix, which prints his letters to Polignac of 24 May and 28 June 1710 only."
-   },
-   "length": {
-    "tokens": 173,
-    "distinct": 106,
-    "unit": "code groups",
-    "measured": true,
-    "file": "villars_groups.txt"
-   },
-   "transcription": {
-    "by": "mixed",
-    "source": "DECODE DOC_8756 transcription checked against the images; two corrections (575 -> 515; '_' is an underline)",
-    "image_quality": "good",
-    "notes": "A copy; clear opening and close; values 3-560."
-   },
-   "route": "camp of Arleux -> Geertruidenberg",
-   "read": "not read"
   }
  ],
  "system": {
   "types": [
    "code"
   ],
-  "summary": "Two different numerical codes. Torcy: two-part code of 800+ values with homophones (690 groups, 285 types, top group 1.7%, values to 823). Villars: a smaller code, values to 560, group 340 x10.",
+  "summary": "A two-part numerical code of 800+ values with homophones (690 groups, 285 types, top group 1.7%, values to 823).",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-3",
@@ -91,7 +60,7 @@
   },
   "key_order": "unknown",
   "sibling_key": "None found: R8766 (Torcy-Petkum 1709), R8767, R8768, DECODE R587, Tomokiyo 11B (Desmarets 1710), BnF fr. 6204 keys all ruled out",
-  "notes": "Torcy's code looks like the Foreign-Office grand chiffre of the period (cf. R8766, 774 values in an 850-cell grid), but with a different assignment."
+  "notes": "Torcy's code looks like the Foreign-Office grand chiffre of the period (cf. R8766, 774 values in an 850-cell grid), but with a different assignment. Villars' letter of 1 June 1710 (R8756), filed here until 14 Oct 2026, is a different code: targets/villars1710."
  },
  "conditions": {
   "prior_solution": {
@@ -131,31 +100,31 @@
   {
    "date": "2026-10-09",
    "kind": "access",
-   "what": "Fetched with the cookie the DECODE images of R8755 (7) and R8756 (2), the DOC transcriptions of both (Tomokiyo's, the files his dead links pointed to), and the neighbour records R8746-R8774.",
+   "what": "Fetched with the cookie the DECODE images of R8755 (7), its DOC transcription (Tomokiyo's, the file his dead link pointed to), and the neighbour records R8746-R8774.",
    "result": "worked"
   },
   {
    "date": "2026-10-09",
    "kind": "transcription",
-   "what": "Checked both DOC transcriptions against the images: Torcy agrees (notation 11^0=110 etc.; 729 confirmed by a repeat); Villars 575 -> 515 and a false gap. Transcribed the clear opening of Torcy's letter (f.38r-38v), which DECODE omits.",
+   "what": "Checked the DOC transcription against the images: it agrees (notation 11^0=110 etc.; 729 confirmed by a repeat). Transcribed the clear opening of the letter (f.38r-38v), which DECODE omits.",
    "result": "worked"
   },
   {
    "date": "2026-10-09",
    "kind": "literature search",
-   "what": "Prior-solution check: Tomokiyo's blencowe2.htm unchanged (both undeciphered), web search found no edition or decipherment.",
+   "what": "Prior-solution check: Tomokiyo's blencowe2.htm unchanged (undeciphered), web search found no edition or decipherment.",
    "result": "failed"
   },
   {
    "date": "2026-10-09",
    "kind": "sibling key",
-   "what": "Applied Tomokiyo's 11B table (Desmarets 4 June 1710 code, ~190 values) to both letters: nonsense; Villars' top group 340 absent.",
+   "what": "Applied Tomokiyo's 11B table (Desmarets 4 June 1710 code, ~190 values): nonsense.",
    "result": "ruled out"
   },
   {
    "date": "2026-10-09",
    "kind": "sibling key",
-   "what": "Checked the Add MS 61575 keys: R8766 (Torcy-Petkum, DE=43/140; Torcy's letter has 43 once, 140 never), R8767 (one-part, DE=215 absent, English names), R8768 (1715-18 Jacobite names, DE=12).",
+   "what": "Checked the Add MS 61575 keys: R8766 (Torcy-Petkum, DE=43/140; the letter has 43 once, 140 never), R8767 (one-part, DE=215 absent, English names).",
    "result": "ruled out"
   },
   {
@@ -173,19 +142,30 @@
   {
    "date": "2026-10-09",
    "kind": "literature search",
-   "what": "Legrelle iv 546 quotes the clear sentence and cites the letter in AE CP Hollande t. 223; Torcy's Journal inédit (30 Mar-3 Apr 1710) gives the context only; Villars' Mémoires iii do not print the 1 June letter to Polignac.",
+   "what": "Legrelle iv 546 quotes the clear sentence and cites the letter in AE CP Hollande t. 223; Torcy's Journal inédit (30 Mar-3 Apr 1710) gives the context only.",
    "result": "partial"
   },
   {
    "date": "2026-10-09",
-   "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis", "language-model scoring"],
-   "what": "Torcy 690 groups, 285 types, IC 0.0042, two repeated trigrams: an 800+ value homophonic two-part code, too sparse for a ciphertext-only rebuild; Villars 173 groups too short.",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
+   "what": "690 groups, 285 types, IC 0.0042, two repeated trigrams: an 800+ value homophonic two-part code, too sparse for a ciphertext-only rebuild.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule: Villars to Polignac, 1 Jun 1710 (R8756), a different code, moved to villars1710 with its transcription; this entry keeps Torcy's letter (R8755).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Both cipher parts unread: no key in Add MS 61575, on DECODE or in print fits either code; Torcy's 690 groups of an 800+ value two-part code and Villars' 173 groups are too few for a ciphertext-only rebuild. The French copy of Torcy's letter is in AE CP Hollande t. 223, not online.",
+  "method_basis": "The cipher part is unread: no key in Add MS 61575, on DECODE or in print fits; 690 groups of an 800+ value two-part code are too few for a ciphertext-only rebuild. The French copy of the letter is in AE CP Hollande t. 223, not online.",
   "contribution": [
    "transcription",
    "sender or date identified",
@@ -200,16 +180,15 @@
     "item": "Torcy 3 Apr 1710, cipher part (690 groups)",
     "blocker": "needs-physical-access",
     "detail": "no key found; French copy in AE CP Hollande t. 223, not digitised"
-   },
-   {
-    "item": "Villars 1 Jun 1710, cipher part (173 groups)",
-    "blocker": "no-key-material",
-    "detail": "different code, no key found, too short for ciphertext-only"
    }
   ],
-  "notes": "Clear opening of Torcy's letter transcribed (DECODE omits it). R8756 metadata has sender/receiver reversed.",
+  "notes": "Clear opening of the letter transcribed (DECODE omits it). Villars' letter of 1 June 1710 (R8756), a different code, was split off on 14 Oct 2026 to villars1710.",
   "credits": [
-    {"who": "tomokiyo", "role": "transcription", "note": "DECODE transcriptions of R8755 and R8756, checked against the images"}
+   {
+    "who": "tomokiyo",
+    "role": "transcription",
+    "note": "DECODE transcription of R8755, checked against the images"
+   }
   ]
  }
 }

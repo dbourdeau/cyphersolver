@@ -1,26 +1,19 @@
-# Catalogue 92: BL Add MS 4136 ff. 142-143 and 148v-149 (DECODE R9238, R9241) — NOTES
+# Catalogue 92 (part): Catherine de' Medici to Paul de Foix, 15 Jan 1563, BL Add MS 4136 ff. 148v-149 (DECODE R9241) — NOTES
 
 Status: in progress
+
+Split 14 Oct 2026: R9238 (Coligny, a different cipher) moved to `../coligny1563/`; see below.
 
 Session 2026-09-21. DECODE lists these as "... to unknown recipient, 2 Jan 1562 – 15 Jan 1563". They are two
 different letters in Patrick Forbes's deciphering file (Add MS 4136, see `targets/smith1562/NOTES.md`). Forbes copied only
 the ciphered passages, numbered, with the letter named in the margin.
 
-## R9238 (ff. 142-143): Coligny to Elizabeth, Villefranche, 12 Jan 1563: read at the time, in print
+## R9238: moved to coligny1563 (14 Oct 2026)
 
-- Margin: "L'Amiral de France à la Reine d'Angleterre, [1]2 Jan. 1562/3". DECODE read the day as "2". Passages (1)-(35)
-  in graphic signs (about 60 types), ending with the signature in cipher.
-- The copyist's margin glosses fix the letter. "sins" and "desracine" at passage (9) are *il rallie les siens …
-  de desraciner du tout l'evangile de ce royaume*, which is in the Villefranche letter of 12 Jan (Forbes, *Full View*
-  ii 272-274, "Du camp a Villefranche, 12 Jan. 1563"), not in the 2 Jan letter from Meur (Forbes ii 247-249).
-- *CSP Foreign* vi no. 76: "Admiral Coligni to the Queen … Camp at Villefranche, 12 Jan. Signed. Orig. almost entirely
-  in cipher, deciphered." So the English decipherment is on the original (TNA SP 70), and Forbes printed the clear text.
-- Closed as already solved. Key: DECODE R335 (TNA SP 106/1 f.69, 'A Cipher of the P. of Condé', endorsed 2 Dec 1562) has the same graphic signs; on it '&' and '14' are nulls and 'ω' = 'La Royne d'Angleterre', which is the heading line of f.142 ('… & 14 ω …'). Not applied beyond that check.
-- f.143 lower half starts another "L'Amiral de France à la Reine d'Angleterre" letter ("Si …", passages (1)-(7)).
-  That letter, and the passages (15)-(24) at the top of f.148, belong to catalogue 93 (R9237/R9239/R9240, "Amiral to
-  D. Angle" = Coligny to the Queen of England). The glosses there ("delivr", "surprendre", "escrire") match Forbes's
-  printed Coligny letters of late January (for example "surprendre le dict Lyon par escalade", Forbes ii c. 319).
-  Catalogue 93 is very likely in print too. That was not checked passage by passage here.
+R9238 (ff. 142-143) is Coligny to Elizabeth, camp at Villefranche, 12 Jan 1563, in the graphic-sign cipher of the
+Condé key R335, the same key as Coligny's letters of 2, 24 and 29 Jan 1563 (catalogue 93). Under the one-key rule
+(George Lasry, 14 Oct 2026) it is now part of that entry, `../coligny1563/`, where this section's record of it was
+moved; it is a different cipher from R9241's. This entry is R9241 only.
 
 ## R9241 (ff. 148v-149): Catherine de' Medici to Paul de Foix, 15 Jan 1563: attempted, open
 
@@ -130,7 +123,5 @@ Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
 
 ## DECODE corrections
 
-R9238: author Gaspard de Coligny (Admiral of France), recipient Elizabeth I, camp at Villefranche, 12 Jan 1563
-(not 2 Jan), French; deciphered at the time (CSP Foreign vi no. 76; Forbes, Full View ii); f.143 lower half begins
-another Coligny letter. R9241: f.148 top is the end of a Coligny letter (passages 15-24); the rest is Catherine de'
+R9238: queued under `coligny1563` since 14 Oct 2026. R9241: f.148 top is the end of a Coligny letter (passages 15-24); the rest is Catherine de'
 Medici to Paul de Foix, 15 Jan 1563, French, not deciphered.

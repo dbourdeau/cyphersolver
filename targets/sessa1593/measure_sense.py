@@ -10,7 +10,7 @@ for l in open(os.path.join(os.path.dirname(__file__),'sense.tsv'),encoding='utf-
 for d in T: print(f'{d}: {R[d]}/{T[d]} = {R[d]/T[d]:.3f}')
 a=sum(R[d] for d in T if d!='no68'); b=sum(T[d] for d in T if d!='no68')
 print(f'nos. 45+79+47: {a}/{b} = {a/b:.3f}')
-print(f'all four: {sum(R.values())}/{sum(T.values())} = {sum(R.values())/sum(T.values()):.3f}')
+# no. 68 (Feria-Mansfeld cipher) split off to ../ibarra1593 on 14 Oct 2026 (its rows are in ../ibarra1593/sense68.tsv)
 try:
     from lang import lm
     for d in ('no45','no79','no47'):

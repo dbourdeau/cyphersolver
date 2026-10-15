@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "wod1568",
- "title": "Catalogue 97: unidentified ciphers on BL Add MS 4136 ff. 32-33 (DECODE R2988 margin, R2989 John Wood to Cecil 1568)",
+ "title": "John Wood to Cecil, 6 September 1568: the cipher line on BL Add MS 4136 f. 33 (DECODE R2989; catalogue 97)",
  "documents": [
   {
    "id": "R2989",
@@ -9,7 +9,7 @@
    "date": "6 Sep 1568",
    "year": 1568,
    "country": "Scotland",
-   "route": "Edinburgh -> London",
+   "route": "John Wood (Edinburgh) -> William Cecil (London)",
    "language": "unknown",
    "cleartext_in_document": "separate passages",
    "plaintext": {
@@ -30,43 +30,15 @@
     "source": "DECODE image IMG_R2989_I20715_P.jpg",
     "image_quality": "good",
     "notes": "One line copied at the foot of a Throckmorton leaf; '/' separator and a '(J)' group of 5 signs."
-   }
-  },
-  {
-   "id": "R2988",
-   "shelfmark": "BL Add MS 4136 f. 32 (DECODE R2988)",
-   "date": "unknown",
-   "year": 1559,
-   "country": "unknown",
-   "route": "unknown",
-   "language": "unknown",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "none found"
    },
-   "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
-    "unit": "symbols",
-    "measured": false,
-    "file": "none"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE image IMG_R2988_I20714_P.jpg",
-    "image_quality": "good",
-    "notes": "About 300 cursive shorthand-like signs in 12 marginal lines; not transcribed."
-   }
+   "read": "not read"
   }
  ],
  "system": {
   "types": [
    "undetermined"
   ],
-  "summary": "R2989: same symbol families as the Moray-Wood 1568 cipher (x and z variants, g, o, e, f); R2988 margin: a shorthand-like sign system, undetermined.",
+  "summary": "One line of 39 symbols in the family of the Moray-Wood 1568 cipher (x and z variants, g, o, e, f), probably a letter substitution.",
   "symbol_kind": "letters and symbols",
   "distinct_symbols": 17,
   "diacritics": {
@@ -84,13 +56,13 @@
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "Throckmorton's Ciphers 1 and 3 (Tomokiyo) read the other text on the leaves, not these; Moray-Wood cipher unread.",
-  "notes": "R2989 IC 0.069 on 39 signs; opens and closes with the same trigram."
+  "sibling_key": "Moray to Wood, 13 July 1568 (Tomokiyo's transcription, unread): same symbol families, not aligned glyph for glyph",
+  "notes": "IC 0.069 on 39 symbols; opens and closes with the same trigram g x ob. The Throckmorton text on the same leaf (Cipher 3) and the f. 32 margin code are other systems with their own entries."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "Tomokiyo, cryptiana unsolved.htm, lists both as unidentified",
+   "where": "Tomokiyo, cryptiana unsolved.htm, lists it as unidentified; Bain ii 804 prints the letter with one phrase marked as cipher, which does not align with this line",
    "found": "not found",
    "used": false
   },
@@ -114,7 +86,7 @@
   {
    "date": "2026-09-21",
    "kind": "literature search",
-   "what": "Tomokiyo unsolved.htm and project throckmorton notes: the Throckmorton text is read; the margin (R2988) and the Wood line (R2989) are the open items.",
+   "what": "Tomokiyo unsolved.htm and project throckmorton notes: the Throckmorton text on f. 33 is read (Cipher 3); the John Wood line at its foot is open.",
    "result": "worked"
   },
   {
@@ -131,56 +103,13 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "crib", "technique": ["crib testing", "EM alignment", "exhaustive search"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "EM alignment",
+    "exhaustive search"
+   ],
    "what": "Exhaustive alignment of the Bain phrase (letters, nulls, syllable signs; forward and reversed; all substrings) against the line.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["plaintext matching"],
-   "what": "R2988 margin tested as mirror or inverted script.",
-   "result": "ruled out"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "R2988 margin sign inventory attempted; signs could not be fixed reliably from the scan.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "solver", "technique": ["key matching"],
-   "what": "Subagent decryption of R2988 main text with Tomokiyo Cipher 1 key; crops misaligned, lines 1-5 only.",
-   "result": "partial"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "Main text re-cut at measured line centres; lines 1-4 read securely, lines 5-15 decode to English with key corrections (x,υ=i; z=m; ∫t=w; Q=be).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["plaintext matching", "contextual inference"],
-   "what": "Margin identified as a separate text dated '8 … 1559' with a starred insertion block; likely Throckmorton's copy of his 8 July despatch (CSP For. i 947/950).",
-   "result": "partial"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "literature search",
-   "what": "CSP Foreign vol. 1 pp. 362-369 (BHO): 8 July abstracts only; no verbatim text of the margin or of the 10 July letter.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "statistics", "technique": ["plaintext matching"],
-   "what": "Margin transcribed (~405 signs, 217 groups, ~80 sign+dot forms, mean group length 1.87, half the groups single signs).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["crib testing"],
-   "what": "Letter-substitution rejected on group-length statistics; word-sign shorthand/code with no key or crib, so no statistical attack.",
    "result": "failed"
   },
   {
@@ -196,51 +125,32 @@
    "result": "worked"
   },
   {
-   "date": "2026-09-21",
-   "kind": "control",
-   "what": "Margin word-level test: 222 groups, 141 types, 113 hapax, matching English word statistics (140/107); word-sign code; 51% of tokens are hapax, so at most 49% is identifiable without key or crib.",
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from wod1568, which had joined three systems on BL Add MS 4136 ff. 32-33: Throckmorton's Cipher 1 letter of 10 July 1559 (throck1559), the f. 32 marginal word-sign code (throck1559margin) and John Wood's 1568 line (wod1568). This profile keeps John Wood's 1568 line (R2989) only.",
    "result": "worked"
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "The text reported as read is Throckmorton's own 10 July 1559 letter on f. 32 (R2988), read about 85-90% with Tomokiyo's Cipher 1 key image for Throckmorton's correspondence, with seven values corrected; the Bain crib for the Wood line did not align, and the margin code and the Wood line stay unread.",
-  "contribution": ["transcription", "key extended or corrected"],
-  "class": "read in part",
-  "fraction_read": 0.3,
-  "verification": [
-   "key confirms",
-   "historical consistency"
+  "method": "not solved",
+  "method_basis": "Bain's printed cipher phrase does not align with the 39-symbol line under any tested model, and a non-uniqueness test shows that dozens of unrelated English readings fit it, so it is undetermined by its own text.",
+  "contribution": [
+   "transcription"
   ],
-  "notes": "Of the ciphertext on the two leaves, Throckmorton's 10 July 1559 letter (f.32) is read ~85-90% (lines 1-4 secure). The f.32 margin (word-sign code, 222 groups) and Wood's 1568 line (39 signs, non-unique) are unread; fraction is over all three texts.",
-  "key": "partial",
-  "fraction_read_method": "estimated",
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "No symbol of wood_line.txt is claimed as read.",
+  "verification": [],
+  "notes": "Attempted, closed unread 21 Sept 2026. Needs the Hatfield original (Cecil Papers vol. 1) for a true crib. Split 14 Oct 2026 from wod1568.",
   "gaps": [
    {
-    "item": "10 July letter: twelve code signs",
-    "blocker": "open-codes"
-   },
-   {
-    "item": "10 July letter: ~80 of 550 signs in lines 5-14",
-    "blocker": "illegible"
-   },
-   {
-    "item": "10 July letter: starred marginal note",
-    "blocker": "no-key-material"
-   },
-   {
-    "item": "f. 32 margin, 222 groups",
-    "blocker": "no-key-material",
-    "detail": "word-sign code; needs key or SP 70/5"
-   },
-   {
-    "item": "f. 33 Wood line, 39 signs",
+    "item": "f. 33 Wood line, 39 symbols",
     "blocker": "too-short",
-    "detail": "non-unique; needs Hatfield original"
+    "detail": "no unique solution (nonunique.py); needs Hatfield, Cecil Papers vol. 1"
    }
   ],
-  "credits": [
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "Cipher 1 key image for Throckmorton's correspondence, seven values corrected", "source": "https://cryptiana.web.fc2.com/"}
-  ]
+  "credits": []
  }
 }

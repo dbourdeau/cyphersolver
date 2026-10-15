@@ -1,8 +1,98 @@
 {
  "schema_version": 1,
  "target": "kaa4591b",
- "title": "BayHStA Kurbayern Äußeres Archiv 4591: three ciphertexts to the Bavarian court, 1531-1537 (DECODE R9403, R9414, R9415; catalogue 162)",
+ "title": "Hieronymus Łaski's cipher (System B): four letters to the Bavarian court, 1529-1531, BayHStA Kurbayern Äußeres Archiv 4591 (DECODE R9322, R9323, R9417, R9403; catalogues 161 and 162)",
  "documents": [
+  {
+   "id": "R9322",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.121-122 (DECODE R9322)",
+   "date": "24 Nov 1529",
+   "year": 1529,
+   "country": "Germany",
+   "route": "Buda → Bavarian court",
+   "language": "Latin",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear decipherment over lines 1-4 and the date; rest read here with the key rebuilt from it."
+   },
+   "length": {
+    "tokens": 2472,
+    "unit": "symbols",
+    "measured": true,
+    "file": "sysB/R9322_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, 3468x4624, read from crops",
+    "image_quality": "good",
+    "notes": "Sign codes per word, aligned with the gloss words (sysB/R9322_p*.tsv); signs.txt written by signstream.py."
+   },
+   "read": "read"
+  },
+  {
+   "id": "R9323",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 f.123 (DECODE R9323)",
+   "date": "[1529-30]",
+   "year": "unknown",
+   "country": "Germany",
+   "route": "unknown",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear gloss over the first 3 lines; rest read here."
+   },
+   "length": {
+    "tokens": 637,
+    "unit": "symbols",
+    "measured": true,
+    "file": "sysB/R9323_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, 3468x4624, read from crops",
+    "image_quality": "good",
+    "notes": "Sign codes per word, aligned with the gloss words (sysB/R9323_p*.tsv); signs.txt written by signstream.py."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "R9417",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 f.264 (DECODE R9417)",
+   "date": "16 Jun [1530]",
+   "year": 1530,
+   "country": "Germany",
+   "route": "Kraków → Bavarian court",
+   "language": "Latin",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear gloss over 14 of 28 lines; rest read here."
+   },
+   "length": {
+    "tokens": 1229,
+    "unit": "symbols",
+    "measured": true,
+    "file": "sysB/R9417_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, 3468x4624, read from crops",
+    "image_quality": "good",
+    "notes": "Sign codes per word, aligned with the gloss words (sysB/R9417_p*.tsv); signs.txt written by signstream.py."
+   },
+   "read": "read"
+  },
   {
    "id": "R9403",
    "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.226-228 (DECODE R9403)",
@@ -17,7 +107,7 @@
     "location": [
      "interlinear"
     ],
-    "source": "Gloss over the first lines; rest read here with the System B key rebuilt in targets/kaa4591/sysB."
+    "source": "Gloss over the first lines; rest read here with the System B key rebuilt in sysB/ (moved here from targets/kaa4591/sysB on 15 Oct 2026)."
    },
    "length": {
     "tokens": 2452,
@@ -32,82 +122,21 @@
     "notes": "Reading-aligned: sign codes written from the reading with the key (build.py), homophone variants not kept, so the count is a reconstruction."
    },
    "read": "read"
-  },
-  {
-   "id": "R9415",
-   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.260-261 (DECODE R9415)",
-   "date": "18 Apr 1533",
-   "year": 1533,
-   "country": "Germany",
-   "route": "unknown",
-   "language": "Latin",
-   "pages": 4,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "interlinear"
-    ],
-    "source": "Gloss over P1 l.3 ('incrementum') and clear passages; key rebuilt here."
-   },
-   "length": {
-    "tokens": 2341,
-    "unit": "symbols",
-    "measured": true,
-    "file": "r9415/signs.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE JPEGs, read from crops",
-    "image_quality": "fair",
-    "notes": "One char per sign; clear passages and glosses excluded by signstream.py."
-   },
-   "read": "read"
-  },
-  {
-   "id": "R9414",
-   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.257-259 (DECODE R9414)",
-   "date": "14 Mar 1537",
-   "year": 1537,
-   "country": "Germany",
-   "route": "Wardein → Munich",
-   "language": "German",
-   "pages": 6,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "interlinear"
-    ],
-    "source": "Gloss over P1 l.6-8; clear opening, date and address; key rebuilt here."
-   },
-   "length": {
-    "tokens": 4675,
-    "unit": "symbols",
-    "measured": true,
-    "file": "r9414/signs.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE JPEGs, read from crops",
-    "image_quality": "fair",
-    "notes": "transcription_v2.txt, one char per sign, '?' blots counted as signs."
-   },
-   "read": "read in part"
   }
  ],
  "system": {
   "types": [
-   "homophonic",
    "monoalphabetic",
    "nomenclator"
   ],
-  "summary": "Three graphic-sign ciphers: Łaski's System B (monoalphabetic with word signs, e/r swapped) for R9403, and two homophonic sign alphabets, L (R9415, Latin) and G (R9414, German), with a few word signs.",
-  "symbol_kind": "letters and symbols",
-  "distinct_symbols": "unknown",
+  "summary": "Łaski's graphic cipher (System B of the volume): one sign per letter (21 letter signs, W serving c and t), a few word signs (DAG = King John, BIGX = Ferdinand, FLW probably King John's title), no word division marks beyond spaces. In R9403 (1531) the signs for e and r are the other way round and some shapes differ; on R9417 p.1 the raw decode shows the same e/r exchange.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 22,
   "diacritics": {
    "used": false
   },
   "homophones": {
-   "used": true
+   "used": false
   },
   "nomenclator": {
    "present": true,
@@ -116,45 +145,50 @@
    ]
   },
   "nulls": {
-   "present": true,
-   "count": "unknown"
+   "present": false
   },
   "key_order": "unknown",
-  "word_division": "none",
+  "word_division": "kept",
   "doubled_letters": "unknown",
-  "sibling_key": "targets/kaa4591/sysB/key_from_glosses.tsv (Łaski, from R9322/R9417) read R9403 with e/r swapped; R9369 (Augurelio 1531) and the System A′ key tested on L and G, no match",
-  "notes": "Measured distinct signs: R9403 22 (reconstructed), R9415 51, R9414 42."
+  "sibling_key": "none: the key was rebuilt from the glosses on R9322 and R9417 (sysB/key_from_glosses.tsv) and applied to R9323 and R9403",
+  "notes": "Measured distinct signs: R9322 33, R9417 23, R9323 25, R9403 22 (reconstructed from its reading). Split on 15 Oct 2026 from kaa4591 (R9322, R9323, R9417) and kaa4591b (R9403) under the one-key rule."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Contemporary interlinear glosses over a few lines of each letter; no edition found (web search 22 Sept 2026).",
+   "where": "Contemporary interlinear glosses over parts of R9322, R9323 and R9417 (and the first lines of R9403); no edition found (web searches 21 and 22 Sept 2026).",
    "found": "before attempt",
    "used": true
   },
   "inputs": [
    "images",
-   "cleartext context",
-   "sibling key"
+   "cleartext context"
   ],
   "attack": "crib",
-  "human_role": "Project-level: DECODE login cookie; the target was assigned by the user. No target-specific intervention.",
+  "human_role": "Project-level: DECODE login cookie supplied; the targets were assigned by the user. No target-specific intervention.",
   "tools": [
-   "targets/kaa4591b/r9415/solve.py",
-   "targets/kaa4591b/r9415/beam.py",
-   "targets/kaa4591b/r9414/beam2.py",
-   "targets/kaa4591b/r9414/gapfill.py",
-   "lang la",
-   "lang de-1500s"
+   "lang la"
   ],
   "models": [
    "claude-opus-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-22"
+  "last_date": "2026-10-15"
  },
  "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "DECODE record list of KAA 4591 from the API dump; images of R9322, R9323, R9417 fetched with the cookie (with the other catalogue-161 records)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "key from source",
+   "what": "Łaski cipher key rebuilt from 153 glossed word pairs on R9322/R9417; unglossed lines decoded",
+   "result": "worked"
+  },
   {
    "date": "2026-09-21",
    "kind": "access",
@@ -164,12 +198,15 @@
   {
    "date": "2026-09-21",
    "kind": "sibling key",
-   "what": "R9403 read with Łaski's System B key from targets/kaa4591/sysB",
+   "what": "R9403 read with Łaski's System B key from targets/kaa4591/sysB (now targets/kaa4591b/sysB)",
    "result": "partial"
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "R9403: e and r swapped (⋇ = e, X = r), variant sign shapes; DAG word sign = King John",
    "result": "worked"
   },
@@ -181,69 +218,9 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "R9415 transcribed one char per sign; P1 photographed upside down",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "sibling key",
-   "what": "System A′ key (R9427 gloss) applied to R9415, whose signs look like A′",
+   "kind": "literature search",
+   "what": "Web search for KAA 4591 and its ciphers (no edition found)",
    "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "sibling key",
-   "what": "R9369 (Augurelio's 1531 key) tested on R9415 (L) and R9414 (G)",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
-   "what": "R9415 P1 l.3 gloss 'incrementum' seeded the key",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing", "beam/DP decoding", "language-model scoring"],
-   "what": "R9415 annealing with the la model, then beam search (solve.py, beam.py)",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-22",
-   "kind": "reading",
-   "what": "R9415 zoom pass: join nulls after clear passages, h ligatures; 386/405 words",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "R9414 transcribed (v1, then v2 on line-third crops)",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
-   "what": "R9414 P1 l.6-8 gloss gave the first values of system G",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing", "beam/DP decoding", "language-model scoring"],
-   "what": "R9414 annealing and de-1500s beam (beam2.py) - about 50% read",
-   "result": "partial"
-  },
-  {
-   "date": "2026-09-22",
-   "kind": "reading",
-   "what": "R9414 three visual passes over every line (cp12 logs): 77.1% then 91.3%",
-   "result": "partial"
-  },
-  {
-   "date": "2026-09-22",
-   "kind": "solver", "technique": ["exhaustive search"],
-   "what": "gapfill.py one-edit lexicon search over unread R9414 words",
-   "result": "partial"
   },
   {
    "date": "2026-09-22",
@@ -252,28 +229,16 @@
    "result": "failed"
   },
   {
-   "date": "2026-10-05",
-   "kind": "reading",
-   "what": "Push-to-95% pass: every unread R9414/R9415 word set beside its raw decrypt (decrypt_v2, cp12/dec_*_new) and resolved only where the decrypt itself spells the word: R9414 'Lunden' (P1.34, the Archbishop of Lund, Charles V's negotiator with King John), 'feind' (P3.04), 'befelch' (P2.17), 'handstain' (P4.34, mining term); R9415 're', 'ea'. Remaining gaps not supported by the decrypt left unread.",
-   "result": "partial"
+   "date": "2026-10-15",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): the four letters in Łaski's System B (R9322, R9323, R9417 from kaa4591; R9403 from kaa4591b) gathered into this entry; R9414 (system G) moved to wardein1537 and R9415 (system L) to sperantio1534, whose key it shares. Words re-counted per letter (measure_sysb.py; R9403 r9403/decoded.txt).",
+   "result": "worked"
   },
-  {
-   "date": "2026-10-05",
-   "kind": "transcription",
-   "what": "Full-resolution re-transcription of every non-code R9414 gap (r9414/pass4.txt); accepted 'ist', 'auch er', 'wut', 'sag wan', 'seiner', 'red'; withdrew 'handstain'; found an unkeyed barred-d sign at five gaps and the Psi code at P1.18/P1.25",
-   "result": "partial"
-  },
-  {
-   "date": "2026-10-05",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "language-model scoring"],
-   "what": "Joint LM scoring (de-1500s) of the unkeyed barred-d sign over its five R9414 places, all letters and 23 digraphs/short words, plus the large Psi word sign (proposed 'Mt.'); siblings R9403, R9415, System B key and sperantio1534 checked for both signs",
-   "result": "failed"
-  },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3869 tokens, 33 types, de-1500s order 4: reading -2.249 per letter; random keys -6.676 (z 6.2); key annealed onto shuffled ciphertext best -3.639 (mean -3.69, z 54.4); annealer on the real text -2.399. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 862 tokens, 21 types, la order 4: reading -2.091 per letter; random keys -6.002 (z 7.4); key annealed onto shuffled ciphertext best -3.682 (mean -3.757, z 37.1); annealer on the real text -2.091. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "de-1500s", "file": "validation.tsv", "tokens": 3869, "types": 33, "tokens_per_type": 117.24, "score": -2.249, "nulls": {"random keys": {"n": 200, "mean": -6.676, "sd": 0.718, "max": -4.951, "z": 6.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.69, "sd": 0.026, "max": -3.639, "z": 54.4, "p": 0.1429}}, "power": -2.399, "verdict": "pass", "notes": "claimed per-occurrence score -1.971; polyphony 0.043; 746 unread tokens left out; annealer on the real text from random keys reached -2.399"}, 
+ "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 862, "types": 21, "tokens_per_type": 41.05, "score": -2.091, "nulls": {"random keys": {"n": 200, "mean": -6.002, "sd": 0.527, "max": -4.269, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.757, "sd": 0.045, "max": -3.682, "z": 37.1, "p": 0.1429}}, "power": -2.091, "verdict": "pass", "notes": "claimed per-occurrence score -2.002; polyphony 0.049; 3476 unread tokens left out; annealer on the real text from random keys reached -2.091"}, 
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "For R9415 and R9414 (the larger part of the text) the keys of two new homophonic systems were seeded from the contemporary interlinear glosses on each letter ('incrementum' on R9415 P1 l.3; R9414 P1 l.6-8) and completed by annealing and beam search; R9403 was read with the System B key rebuilt from glosses elsewhere in the same volume (kaa4591).",
+  "method_basis": "The key was rebuilt from 153 word pairs of the contemporary interlinear glosses on R9322 and R9417 and decodes their unglossed lines; it then read R9323 and, with e and r exchanged, R9403.",
   "contribution": [
    "transcription",
    "key recovered",
@@ -281,42 +246,43 @@
   ],
   "class": "read in part",
   "key": "recovered",
-  "fraction_read": 0.946,
+  "fraction_read": 0.953,
   "fraction_read_method": "measured",
-  "fraction_read_source": "words of the ciphered runs: r9403/decoded.txt 414/416, r9415/count.py reading.txt 388/405, r9414 count_v2.py reading_v5.txt 958/1039 (1760/1860); [..]/? counted unread",
+  "fraction_read_source": "words: measure_sysb.py over sysB/decoded.txt and sysB/R9323_decoded.txt (R9322 429/445, R9417 217/219, R9323 124/163; machine decodes, letter slips inside recognisable words counted as read) plus r9403/decoded.txt 414/416: 1184/1243",
   "codes_open": {
-   "open": 3,
-   "total": 4,
-   "tokens_open": 10
+   "open": 1,
+   "total": 3,
+   "tokens_open": "unknown"
   },
   "verification": ["contemporary decipherment", "historical consistency", "statistical test"],
-  "notes": "R9403 and R9415 pass the read bar; R9414 is at 92.2%; overall 94.6%. Keys rebuilt for all three (G has ambiguous homophones).",
+  "notes": "R9322 (96.4%), R9417 (99.1%) and R9403 (99.5%) pass the read bar; R9323 (76.1%) does not: faint signs on lines 4 and 8-10. FLW (probably the king's title) is not settled.",
   "gaps": [
    {
-    "item": "R9414 code signs Ψ, swash X, K (~10 words)",
-    "blocker": "no-key-material",
-    "detail": "word signs with no key"
+    "item": "R9323 lines 4, 8-10 (39 of 163 words)",
+    "blocker": "illegible",
+    "detail": "faint signs, several '?' in the transcription"
    },
    {
-    "item": "R9414 blotted or struck signs (~15 words)",
-    "blocker": "illegible"
-   },
-   {
-    "item": "R9414 legible unresolved words (~55)",
+    "item": "FLW word sign (R9322, R9323)",
     "blocker": "open-codes",
-    "detail": "after three passes and gapfill.py"
-   },
-   {
-    "item": "R9415 17 unread or doubtful words",
-    "blocker": "open-codes"
+    "detail": "probably King John's title; three occurrences, context does not fix it"
    },
    {
     "item": "R9403 P3 l.11-12 two words and P1 l.4 insertion",
     "blocker": "illegible"
+   },
+   {
+    "item": "R9322 16 words with doubtful signs",
+    "blocker": "illegible",
+    "detail": "'?' signs in the transcription"
    }
   ],
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear glosses on R9415 and R9414 seeding the keys; System B from glosses in the same volume"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear glosses on R9322, R9323 and R9417, from which the key was rebuilt"
+   }
   ]
  }
 }

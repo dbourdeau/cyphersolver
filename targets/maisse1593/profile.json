@@ -1,0 +1,216 @@
+{
+ "schema_version": 1,
+ "target": "maisse1593",
+ "title": "Henri IV to Andre Hurault de Maisse, ambassador at Venice, 8 February and 27 April 1593, in Maisse's Cipher (1592-1593) (BnF fr. 16093 ff. 406, 410)",
+ "documents": [
+  {
+   "id": "f406",
+   "shelfmark": "BnF fr. 16093 f. 406 (canvas 457; Harlay piece 247); duplicate of f. 404, which carries a partial interlinear decipherment",
+   "date": "8 Feb 1593",
+   "year": 1593,
+   "country": "France",
+   "route": "Chartres -> Maisse at Venice",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate collection",
+     "interlinear"
+    ],
+    "source": "Brienne 13 = NAF 6984 fol. 171r in clear; and the contemporary interlinear decipherment on the duplicate f. 404",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "human (project)",
+    "source": "not transcribed; read from the clear copy",
+    "image_quality": "good",
+    "notes": "Not transcribed group by group and not deciphered with the key; the text is read from the Brienne clear copy."
+   },
+   "read": "read"
+  },
+  {
+   "id": "f410",
+   "shelfmark": "BnF fr. 16093 f. 410 (canvas 461; Harlay piece 251); f. 412 is its duplicate",
+   "date": "27 Apr 1593",
+   "year": 1593,
+   "country": "France",
+   "route": "Mantes -> Maisse at Venice",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "Brienne 13 = NAF 6984 fol. 193v, in clear",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "human (project)",
+    "source": "not transcribed; read from the clear copy",
+    "image_quality": "good",
+    "notes": "Not transcribed group by group and not deciphered with the key; the text is read from the Brienne clear copy."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Maisse's Cipher (1592-1593), the key Henri IV also sent to Savary de Breves: letter-shaped symbols for the letters, homophonic, with two-digit figures for a nomenclator of common words and names.",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {
+   "width": "2",
+   "separation": "mixed"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Tomokiyo's reconstruction 'Maisse' Cipher 2 (BnF fr.16093, f.344 etc.)' (henryiv_Maisse2.png), in hand, not applied; ff. 398, 401, 402, 404 of the same volume carry partial interlinear decipherments",
+  "notes": "Word codes on Tomokiyo's table include vous, ceulx, est, faict, de, des, fort, par, pour, que, qui, advis, ces, comme, bon, avec, et, jay, les, luy, moy. f. 404 says in clear that Maisse kept 'le double du chiffre que j'ay envoye aud. de Breves'. Commonest figures on f. 404: 27, 10, 26, 23, 19, 21, 22, 24, 8."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "contemporary clear copies of both letters in Brienne 13 (NAF 6984) fol. 171r and 193v; f. 406's twin f. 404 carries a partial interlinear decipherment; Tomokiyo's key for the cipher published as an image on cryptiana; no reading of ff. 406/410 published",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Project-level only: the target was taken from the repository's catalogue and worked by the model in Claude Code; no target-specific intervention recorded.",
+  "tools": [
+   "Gallica IIIF fetchers (../maisse1592/fetch.py, fetchr.py, fetchb.py)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-19",
+  "last_date": "2026-09-19"
+ },
+ "solution": [
+  {
+   "date": "2026-09-19",
+   "kind": "literature search",
+   "what": "Tomokiyo's Henri IV page re-read as HTML rather than as the text dump in research/gallica_sweep/src: the four leaves fall in two different cipher sections, each with siblings in the same volume, so the entry's class B and 'no sibling found' were both wrong.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "access",
+   "what": "fr. 16093 resolved to ark btv1b90074656 by Gallica SRU and the folio-to-canvas offsets calibrated by reading folio numbers off the leaves.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "The old Harlay piece numbers 247 (f. 406) and 251 (f. 410) matched to Berger de Xivrey's citations, which give clear copies in fonds Brienne 13 = NAF 6984 (fol. 171r, 193v); located on the images by heading and preamble.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "key from source",
+   "what": "Tomokiyo's key image for this cipher (henryiv_Maisse2.png, 'Maisse' Cipher 2 (BnF fr.16093, f.344 etc.)') fetched from his page; not applied to ff. 406/410.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "reading",
+   "what": "ff. 406 and 410 read from the Brienne clear copies; f. 406 shown to be the duplicate of f. 404 (same date, same opening, one Brienne copy), so its text is also attested by f. 404's interlinear decipherment; f. 412 is the duplicate of f. 410.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "result": "partial",
+   "what": "Novelty re-examined after Lasry's note on 'undeciphered'. G. Lasry (21 Sept 2026): on cryptiana 'undeciphered' means no interlinear or nearby deciphered copy, not unsolved; unsolved material is on the unsolved page. The page no longer says Tomokiyo 'never applied' his keys; the claim is a published reading only."
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from maisse1592, which had joined ff. 370/373 (Maisse's Cipher of 1592) with ff. 406/410 (Maisse's Cipher of 1592-93, the Breves cipher). This profile keeps ff. 406 and 410 (Maisse's Cipher of 1592-93) only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The content of both letters comes from contemporary clear copies in fonds Brienne 13 (BnF NAF 6984), located through the Harlay piece numbers and Berger de Xivrey; f. 406's twin f. 404 carries a partial contemporary interlinear decipherment. Tomokiyo's key for this cipher was not applied.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "read",
+  "fraction_read": 1.0,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "notes": "The fraction is the content obtained from the clear copies; no group of ff. 406/410 was transcribed or deciphered with the key here, so the cipher itself is not verified on these leaves. Split 14 Oct 2026 from maisse1592.",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "arya",
+    "role": "solution",
+    "note": "PR #7: the Brienne clear copies found through the Harlay piece numbers; f. 406 identified as the duplicate of f. 404",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/7"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "contemporary clear copies of ff. 406 and 410 in Brienne 13 (BnF NAF 6984), fol. 171r and 193v; partial interlinear decipherment on f. 404"
+   },
+   {
+    "who": "berger",
+    "role": "pointer",
+    "note": "his citations of the old Harlay piece numbers located the Brienne clear copies",
+    "source": "Berger de Xivrey, Recueil des lettres missives de Henri IV"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "identification",
+    "note": "assigned ff. 406 and 410 to Maisse's Cipher (1592-1593) and published its key (henryiv_Maisse2.png), not applied here",
+    "source": "cryptiana Henri IV page"
+   }
+  ]
+ }
+}

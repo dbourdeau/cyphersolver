@@ -1,4 +1,14 @@
-# The cardinal de Mâcon in Rome to Montmorency, 1536-37 (BnF fr. 3053; DECODE R4233-R4248)
+# The cardinal de Mâcon in Rome to Montmorency, 1536-37, in Mascon's cipher (BnF fr. 3053, DECODE R4233-R4247; BnF fr. 3071 no. 4)
+
+**Split on 14 Oct 2026** under the one-key rule (George Lasry): this entry holds every letter read in
+**Mascon's cipher**. Two changes: (1) R4248 (fr. 3053 f. 85), in a second, unrelated fr. 3053 cipher and read from
+its contemporary decipherment on f. 86, is now its own entry, `targets/r4248/` (`docs/r4248.html`), a different
+cipher with its own page; `R4248.md` moved there. (2) The cardinal's letter of 11 April 1537 (BnF fr. 3071 no. 4),
+read on 18 Sept 2026 under `targets/gramont1529/` (catalogue item 6), is in the same key and moved here:
+`fr3071_no4/` (reading files and aliases), with the working table `macon_key.md`, the decoder `macon_decode.py` and
+the key images `keyimg/` (Lasry's fr. 3071 f. 9 table, Tomokiyo's fr. 3053 tables). The other item-6 letters are
+different ciphers with their own pages (`gramont1529`, `langeac1529`, `gramont1530`). The sections below that
+speak of "eight records" describe the 21-22 Sept work before the split.
 
 Catalogue item 180 ("Unknown sender (Rome) to Anne de Montmorency, 8 ciphertexts", class A). Session of
 21 September 2026. Everything below is unvalidated until Daniel reviews it; the evidence for each claim is named.
@@ -8,8 +18,8 @@ Catalogue item 180 ("Unknown sender (Rome) to Anne de Montmorency, 8 ciphertexts
 The "unknown sender" is **Charles Hémard de Denonville, bishop and (from December 1536) cardinal of Mâcon**,
 French ambassador to Paul III: three of the eight records are signed "Charles e. de Mascon" or "E. Card[ina]l de
 Mascon" in the clear. The cipher is **"Mascon's cipher"**, reconstructed from this very volume by S. Tomokiyo and
-re-tabulated by G. Lasry in 2023; the repository had already applied it in `targets/gramont1529/` to Mâcon's letter of
-11 April 1537 in fr. 3071. Neither Tomokiyo nor Lasry, and no edition found, gives any plaintext, so the task was
+re-tabulated by G. Lasry in 2023; the repository had already applied it (then under `targets/gramont1529/`, now
+`fr3071_no4/` here) to Mâcon's letter of 11 April 1537 in fr. 3071. Neither Tomokiyo nor Lasry, and no edition found, gives any plaintext, so the task was
 reading, not cryptanalysis. **Seven of the eight records are read in part and one (R4248) is resolved**: its
 cipher is not Mâcon's at all but a second fr. 3053 cipher, and the volume itself carries a contemporary clear
 decipherment of it on the next leaf (f. 86). Two records are read nearly throughout (R4240 ~85 %, R4247 letter 1
@@ -26,11 +36,12 @@ agree with the independent decoding word for word.
 * **S. Tomokiyo, "French Ciphers during the Reign of Francis I"** (cryptiana.web.fc2.com/code/francis.htm),
   section "BnF fr.3053 (1535-1537)": identifies the volume as letters of the bishop/cardinal of Mâcon, ambassador
   in Rome, to Montmorency, and gives his reconstruction of the cipher (tables copied at
-  `targets/gramont1529/img/francisMacon*.png`). He notes that f. 67 is from "messrs de Roudez et Lavaur" in Venice to
+  `keyimg/francisMacon.png`; his second table is `targets/r4248/img/francisMacon2.png`). He notes that f. 67 is from "messrs de Roudez et Lavaur" in Venice to
   Mâcon (= DECODE R4245), and that **one fragment on f. 85 uses a different cipher, "deciphered on f. 86"** —
   confirmed here for R4248. **No plaintext is published.**
 * **G. Lasry**, table dated 05/11/2023 for BnF fr. 3071 f. 9 ("Mascon's cipher"), on Tomokiyo's GL.htm; used in
-  `targets/gramont1529/`. Keys only, no plaintext.
+  `macon_key.md` (built 18 Sept 2026 under gramont1529). Keys only, no plaintext. Lasry also decoded the fr. 3071 no. 4
+  letter in 2023 (unpublished, his note of 21 Sept 2026); no decipherment of his of the fr. 3053 letters is recorded.
 * **DECODE** R4233-R4248, uploaded 2023, are marked "Partially decrypted" / "Decrypted" / "Non-decrypted". No
   transcription or plaintext file is attached to any of the sixteen records; the "Decrypted" marking refers to the
   cipher system being known, not to a text.
@@ -80,7 +91,7 @@ transcribed as a content crib (`pass5/dupuy44_*.md`); it confirmed "Vitelle" and
 
 Images: DECODE serves the fr. 3053 scans as horizontal page-crops; they are **not in the public domain** (BnF) and
 are git-ignored here (`targets/rome1536/img/`). Per-record readings, line by line, are in `R4233.md`, `R4234.md`,
-`R4235.md`, `R4238.md`, `R4239.md` (P2-P15), `R4239b.md` (P16-P30), `R4240.md`, `R4247.md`, `R4248.md`; third pass: `R4234_P8-P12.md`,
+`R4235.md`, `R4238.md`, `R4239.md` (P2-P15), `R4239b.md` (P16-P30), `R4240.md`, `R4247.md`, `R4248.md` (now in targets/r4248/); third pass: `R4234_P8-P12.md`,
 `R4234_P10.md`, `R4234_P15-P20.md`, `R4235_P2-P3.md`, `R4235_P8D.md`, `R4239_pass3.md`, `R4247_letter2.md`.
 
 | record | leaf | date, place | cipher | read |
@@ -198,7 +209,7 @@ are git-ignored here (`targets/rome1536/img/`). Per-record readings, line by lin
 
 Homophonic substitution, one glyph per letter, with doubled-letter signs, nulls and three code numbers
 (`20` = l'Empereur, `30` = pape, `40` = roy — no other number occurs anywhere in the eight records). The working
-table is `targets/gramont1529/macon_key.md`, decoded with `targets/gramont1529/macon_decode.py`. Corrections established here from
+table is `macon_key.md`, decoded with `macon_decode.py` (both moved here from targets/gramont1529/ on 14 Oct 2026). Corrections established here from
 glossed lines, and not in the published tables:
 
 * The big curly X (ꭓ) is **Q and U**, not N (proved by the glossed `ꭓ£+7G 8ꭓ ǂ3Δ4G 5o ǂ10D27o74g` = "quant au
@@ -220,7 +231,7 @@ glossed lines, and not in the published tables:
   lines (R4239 P3 ll. 3, 10, 12; P11 ll. 1-2, 10; P14 ll. 7, 10-11, 14), R4247 letter 2 ll. 22-27 (fragments:
   *artillerie*, {20}), R4234 P16 L6 and L15-16, P19 C3-C4, and several names (Cesane, Palmier, the Sienese
   gentleman, Ambroise's surname).
-* The **f. 85 cipher** (R4248) could be tabulated properly by aligning f. 85 against its f. 86 decipherment.
+* R4248 (the f. 85 cipher) is now `targets/r4248/`.
 * DECODE's full-page .jpeg views (R4234 P1, P4, P7, P10, P13, P14, P18) are lower-resolution duplicates of the
   crops; P14 is the inserted clear slip cropped as P15. No page of R4234 is missing.
 
@@ -231,7 +242,21 @@ holds, per cipher line, the glyph aliases, the machine decoding and a word-divid
 and per-letter confidence. Crops are made from the DECODE page-crops with PIL at 1:1 or 1.5x; `work_<rec>/` folders
 and `img/` are git-ignored (BnF rights).
 
+## The letter of 11 April 1537 (fr. 3071 no. 4), moved here 14 Oct 2026
+
+BnF fr. 3071 no. 4, ff. 9-10 (Gallica btv1b9060315f, canvases 16-19; slip f. 9bis = canvas 18). Charles Hémard de
+Denonville, cardinal de Mâcon, Rome, to Montmorency. Files: `fr3071_no4/fr3071_no4_macon.md` (first pass and the
+f. 9r ll. 3-25 reading), `fr3071_no4/macon_9r_26-34.md` (~175 of ~190 signs), `fr3071_no4/macon_9v.md` (ll. 1-16,
+~463 signs, all decoded), aliases in `fr3071_no4/aliases/`. Read apart from short spots on f. 9r; the clear text,
+in a fast secretary hand, is transcribed only loosely. Codes 20 = Empereur, 30 = pape, 40 = roy (first identified
+here). The Farnese marriage offer (Vittoria Farnese to Cosimo de' Medici) and Paul III's threat, relayed through
+Latino Giovenale, to declare for the Emperor if it is refused; Pier Luigi Farnese and Novara; the King's Turkish
+alliance "se verifie clerement"; Venice expected to follow the Pope; the King "s'amuse en Picardie"; the Venice
+ambassadors working on Alessandro Vitelli. **The slip f. 9bis is a contemporary decipherment of the f. 9v passage**,
+and the reading, made first, matches it almost word for word.
+
 ## Remaining gaps
+- fr. 3071 no. 4: seven signs on f. 9r ll. 27-28, the word before *puissance*, the name group on f. 9r l. 8; the clear text read loosely - blocker: illegible; blot and odd signs on the Gallica scan, and the slip f. 9bis covers f. 9v only
 - residue inside read lines, about 5 % of letters (R4233 passages 3, 4, 5, 7, 8, 9 ~100 letters; R4234 f16r L1/L3/L16/L24, f16v L2-3/L7/L9/L21/L27, f17r L4-5/L21/L23/L27/L30-31, f17v L14/L20, f18r L15-17; R4235 P7 L5 and two signs in passage B; R4238 ~45 letters; R4239 f35r L06/L24/L32, f35v L08; R4240 13 letters; R4247 ~40 letters) - blocker: illegible; ink legible on the Gallica native scans, but the sign runs are ambiguous (7 = N/B, 4 = C/R, Of/Up) and no clear copy or gloss covers them
 - R4239 short cipher runs in f36r L01-L06 and f35v L27-L31, and f38v L4 end, L8 end and the margin block (whose interlinear does not fit the signs) - blocker: illegible; not transcribed or not resolved in pass 5, no clear copy for them
 - proper names (the Sienese gentleman "For[?]", the count "Mer[?]le", Christofle's surname and two German captains in R4238, "Cesane", "Palmier") - blocker: open-codes; spelled in cipher but the letters do not settle to a known name
@@ -240,7 +265,16 @@ and `img/` are git-ignored (BnF rights).
 ## Escalation
 - [x] siblings: R4236, R4237, R4241-R4246 opened via the DECODE API: all status Decrypted, no transcription or plaintext file attached (six Rome letters to Montmorency 1535-37, one to Mâcon from Venice); outside catalogue 180 and left for a later session; every full-page view of R4234 opened (P10/P13/P14/P18 duplicate the crops; P14 = P15 clear slip used as crib)
 - [x] clear-pages: f. 86 decipherment of f. 85; R4234 P15 (f. 18bis) and R4235 P6 clear copies; R4239 ff. 37r-v clear copy of letter 2 (found in pass 5); margins and interlinears; Dupuy 44 companion letter to the King with its decipherment
-- [x] known-keys: Mascon's cipher (Tomokiyo; Lasry 2023, targets/gramont1529/macon_key.md); second fr. 3053 table for R4248
+- [x] known-keys: Mascon's cipher (Tomokiyo; Lasry 2023, macon_key.md); Tomokiyo's Cipher-3 table (keyimg/francisMacon3.png) not this key
 - [x] print: Tomokiyo francis.htm, Lasry GL.htm, Dodieu edition (rom.uga.edu): no plaintext
 - [x] key-rebuild: key corrections from glossed lines (ꭓ = Q/U, × = N/L, Ξ = RR, 7 = N/R/B, etc.)
 - [x] retry: pass 5 (22 Sept) re-transcribed every record by sign shape from the Gallica native scans and re-decoded with the key map + fr-1600-letters beam; every doubtful group retried and regraded against all contemporary clear texts
+
+## Assumptions for George's review
+
+- His Mascon's-cipher credit (table of 05/11/2023 for fr. 3071 f. 9) is applied to the seven fr. 3053 records on the
+  identification, made by Tomokiyo and repeated here, that his fr. 3071 f. 9 table and Tomokiyo's fr. 3053
+  reconstruction are the same key; the readings agree with the contemporary glosses in both volumes.
+- His prior-solution credit covers the fr. 3071 no. 4 letter only (his 21 Sept 2026 note on the four item-6 letters);
+  no decipherment of his of the fr. 3053 records is known.
+- No Lasry credit on R4248 (now `r4248`).

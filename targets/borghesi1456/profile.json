@@ -1,0 +1,164 @@
+{
+ "schema_version": 1,
+ "target": "borghesi1456",
+ "title": "Galgano Borghesi to Leonardo Benvoglienti, Naples, 12 May 1456 (ASSi Concistoro 2308 fasc. 2 no. 4, DECODE R4793)",
+ "documents": [
+  {
+   "id": "no04",
+   "shelfmark": "ASSi, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 4 (DECODE R4793)",
+   "year": 1456,
+   "country": "Siena",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "recipient's interlinear glosses over some runs; alphabet fragment below the text",
+    "partial": true
+   },
+   "length": {
+    "tokens": 144,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "notes": "15 cipher runs + 9 code words; counts from agent G's run transcription and reading (transcripts/no04.txt, transcripts/no04_reading.txt)"
+   },
+   "read": "read in part",
+   "date": "12 May 1456",
+   "route": "Naples -> Siena (Leonardo Benvoglienti)"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Cipher runs in capitals, digits and signs inside clear Italian, one sign per letter as far as read, with Latin code words (Calor = duca, storps = Lucca, cras = parte, Matto/Maffo = papa).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "partial",
+  "doubled_letters": "unknown",
+  "sibling_key": "R4750 (1454 Milan ambassadors) shares the code word storps; its alphabet does not fit",
+  "notes": "Key of the R4750/R4757 family by its code words, but none of the six 1450s keys filed in fasc. 1 gives the letters. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "the recipient's interlinear glosses over some runs, and an alphabet fragment below the text",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "key from archive",
+  "human_role": "Set the goal (decipher the 29 letters; try the 42 filed keys first). Instructed that DECODE records marked Decrypted are to be trusted as read.",
+  "tools": [
+   "DECODE API metadata",
+   "PIL crops",
+   "it-cinquecento LM",
+   "homophonic annealer"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-24",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "access",
+   "what": "Found the whole busta Concistoro 2308 on DECODE (keys R4746-R4789, letters R4790-R4814, R1858), missed by the 23 Sept scan; downloaded 131 images with the project cookie (the session that worked on all the Concistoro letters).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "literature search",
+   "what": "Senatore 2009 (Callisto III nelle corrispondenze diplomatiche, Revista Borja 2) cites 'una lettera in cifra di Borghesi a Benvoglienti ... Concistoro 2308, c. 4 (da Napoli, 12 maggio [1456])' and lists Concistoro 2308 as 'lettere cifrate e cifrari di ambasciatori'; no decipherment printed. Treccani DBI Borghese: none.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "sibling key",
+   "what": "Compared by eye the alphabets of the 1450s keys R4750 (Milan ambassadors 1454, same Latin code-word family: 'storpsi' = ambasciatore fiorentino), R4753, R4754, R4756, R4762 with the signs of no. 4 (1456): none produces its letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "key from source",
+   "what": "No. 4: six 1450s keys of fasc. 1 transcribed (keys/R47xx.txt); none gives the letter's values. A two-row alphabet fragment written below the letter's text (i-u) plus the recipient's interlinear glosses rebuild the key: 114/144 sign tokens read (79%), 125 with context.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-10-14", "verdict": "not applicable", "notes": "144 cipher signs in 15 short runs, most of them a few letters long, with 9 Latin code words: too few read tokens per sign type for the shuffled-text test, and the key is attested by the alphabet fragment written on the letter"}, 
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "A two-row alphabet fragment written below the letter's text (i to u, over their cipher signs) and the recipient's interlinear glosses rebuilt the key.",
+  "contribution": [
+   "key recovered",
+   "transcription",
+   "sender or date identified"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.79,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcripts/no04_reading.txt: 114 of 144 cipher sign tokens read (79%); 125 with doubtful; 19 unread.",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "19 rare signs (1, //, 8, F, x_slash, T_long, 4_hook, +, R, delta, B, b°) and code words toffe, vapor, pedesi",
+    "blocker": "too-short",
+    "detail": "each occurs once or twice; the fragment is torn on the left and no filed key fits"
+   }
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the alphabet fragment below the text and the recipient's interlinear glosses (key source)"
+   },
+   {
+    "who": "senatore",
+    "role": "identification",
+    "note": "identified no. 4 as Galgano Borghesi's letter from Naples, May 1456",
+    "date": "2009",
+    "source": "Senatore 2009"
+   }
+  ],
+  "notes": "Galgano Borghesi at Naples to Leonardo Benvoglienti, 12 May 1456. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only."
+ }
+}

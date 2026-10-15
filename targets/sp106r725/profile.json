@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "target": "sp106r725",
+  "title": "TNA SP 106/10: the codebreaker's two-figure nomenclator, c. 1623-24 (key sheet DECODE R725; worksheets R657)",
+  "documents": [
+    {
+      "id": "R657",
+      "shelfmark": "TNA, SP 106/10, ff. 128-138 (DECODE R657)",
+      "year": 1623,
+      "country": "unknown",
+      "route": "unknown",
+      "language": "Italian",
+      "pages": 9,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "interlinear",
+          "margin"
+        ],
+        "source": "the contemporary English codebreaker",
+        "partial": true
+      },
+      "length": {
+        "tokens": 0,
+        "unit": "code groups",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "not transcribed this session; nine worksheet pages in the two-figure system A."
+      },
+      "read": "not read"
+    },
+    {
+      "id": "R725",
+      "shelfmark": "TNA, SP 106/10, ff. 202-203, 205 (DECODE R725)",
+      "year": 1623,
+      "country": "England",
+      "route": "unknown",
+      "language": "Italian",
+      "pages": 3,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "partial": true
+      },
+      "length": {
+        "tokens": 0,
+        "unit": "code groups",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "the codebreaker's key sheet, pp. 1 and 3 transcribed in full (NOTES); p. 2 not yet read."
+      },
+      "read": "not applicable"
+    }
+  ],
+  "system": {
+    "types": [
+      "nomenclator",
+      "code"
+    ],
+    "summary": "A two-figure Italian nomenclator whose groups are read as a letter, a word of list 1 or a word of list 2 according to whether they carry no mark, a bar or a tick; single written letters stand for common words (a = per, z = che).",
+    "symbol_kind": "digits and letters",
+    "digit_groups": {
+      "width": "2",
+      "separation": "spaces"
+    },
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": true,
+      "note": "In system A a bar over a two-figure group makes it a word of one nomenclator list and a dot makes it a word of a second list; a bare group is a single letter. The contemporary codebreaker states this himself on the key sheet."
+    },
+    "homophones": {
+      "used": true,
+      "max_per_vowel": 2
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": "unknown",
+      "kinds": [
+        "common words",
+        "names",
+        "places",
+        "titles"
+      ],
+      "unread_groups": "unknown"
+    },
+    "nulls": {
+      "present": true,
+      "count": 3
+    },
+    "key_order": "random",
+    "word_division": "partial",
+    "sibling_key": "DECODE R725 (TNA SP 106/10 ff. 202-203, 205), the codebreaker's own reconstructed key; transcribed.",
+    "notes": "Split 14 Oct 2026 from the whole-file entry sp106box10. The nulls are the draft's 'X. Z. & serve to bee Nulles'."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "the contemporary English codebreaker's own partial solutions, written interlinearly on the intercepts themselves and summarised as a key on DECODE R725; no modern edition (the published SP 106 transcriptions cover only SP 106/1-4)",
+      "found": "during attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "key from archive"
+    ],
+    "attack": "key from archive",
+    "human_role": "nothing beyond setting the target; images fetched with the project DECODE cookie",
+    "tools": [
+      "PIL rotation and cropping"
+    ],
+    "models": [
+      "claude-opus-5[1m]"
+    ],
+    "sessions": 2,
+    "first_date": "2026-09-20",
+    "last_date": "2026-10-14"
+  },
+  "solution": [
+    {
+      "date": "2026-09-20",
+      "kind": "access",
+      "what": "Fetched DECODE metadata for R657, R660, R664, R704, R720, R721 and the pointers; identified the seventh record as R722 and a key record R725 in the same run of shelfmarks. Downloaded all 28 images with the project cookie.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "key from source",
+      "what": "Read DECODE R725, 'The Alphabett of Single Letters' - the contemporary codebreaker's fair key: a 20-value letter alphabet, a list of single letters standing for whole words, and two nomenclator word-lists.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "hypothesis",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Identified from the key sheet's own note ('It seemes there are numbers of woordes expressed by this difference of - over the figures') that a bar and a dot over a two-figure group select two different word-lists.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "hypothesis",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Dated the group from the recovered nomenclature - Marques Inichiosa (the Marques de la Inojosa, ambassador in England 1623-24), Palatinato, Il Principe, C. Barberino, Papa, Nuncio, Imbassiatore di Venetia - against DECODE's date, which is only the volume span 1558/1625.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "statistics",
+      "technique": [
+        "frequency analysis"
+      ],
+      "what": "Surveyed all 22 ciphertext pages and found they use three different systems, not one: R657 (two-figure), R660/R664/R720 (three-figure), R704/R721/R722 (letter-plus-figure). DECODE groups R720 with R704; the figures show it belongs with R660/R664.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "literature search",
+      "what": "Web search for any modern edition of SP 106/10; the published SP 106 transcription site covers only volumes 1-4, and nothing else was found.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "Entry split from sp106box10 under the one-key rule (Lasry, 14 Oct 2026): system A, the key sheet R725 and the worksheets R657. R657 has not yet been worked against the key. No new attack.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "The codebreaker's key sheet R725 is transcribed in full and explains the system, but no text in this cipher has been deciphered here: R657's worksheets have not been worked against it and no intercept in this system is among the imaged records.",
+    "contribution": [
+      "transcription",
+      "sender or date identified",
+      "catalogue correction"
+    ],
+    "class": "not read",
+    "verification": [
+      "none"
+    ],
+    "notes": "Split on 14 Oct 2026 from sp106box10. The key's vocabulary (Marques Inichiosa, C. Barberino, Palatinato) dates the whole SP 106/10 file to 1623-24. Status in progress: R657 not yet attempted.",
+    "fraction_read": 0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "no group of R657 decoded",
+    "key": "partial",
+    "codes_open": {
+      "open": "unknown",
+      "total": "unknown"
+    },
+    "gaps": [
+      {
+        "item": "R657, nine worksheet pages, against the R725 key",
+        "blocker": "not-attempted",
+        "detail": "not transcribed, never decoded with the key"
+      },
+      {
+        "item": "R725 p. 2",
+        "blocker": "not-attempted",
+        "detail": "the third key page, not yet read"
+      },
+      {
+        "item": "intercepts in this system",
+        "blocker": "needs-physical-access",
+        "detail": "none among the imaged SP 106/10 records"
+      }
+    ],
+    "credits": [
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "the Jacobean codebreaker's key sheet DECODE R725"
+      }
+    ]
+  }
+}

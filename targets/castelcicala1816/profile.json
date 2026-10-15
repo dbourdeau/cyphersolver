@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "castelcicala1816",
- "title": "Principe di Castelcicala (London, Paris) to the Marchese di Circello and Cavaliere de' Medici, Naples, 1816-1823: numeric-code despatches (ASNa Esteri 2337, DECODE R9553-R9588; catalogue 166, 167)",
+ "title": "Principe di Castelcicala (London, Paris) to the Marchese di Circello and Cavaliere de' Medici, Naples, 1816-1823: numeric-code despatches (ASNa Esteri 2337, DECODE R9553-R9589 except R9586, R9588; catalogue 166, 167)",
  "documents": [
   {
    "id": "R9554",
@@ -410,35 +410,6 @@
    "read": "read in part"
   },
   {
-   "id": "R9588",
-   "shelfmark": "ASNa, Ministero degli affari esteri, busta 2337; DECODE R9588",
-   "date": "undated",
-   "year": "unknown",
-   "country": "Kingdom of the Two Sicilies",
-   "route": "unknown -> Naples",
-   "language": "Italian",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No decipherment known; DECODE: Non-decrypted."
-   },
-   "length": {
-    "tokens": 432,
-    "unit": "code groups",
-    "measured": true,
-    "file": "cipher/R9588.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "transcripts/R9588.txt, from the DECODE images",
-    "image_quality": "good",
-    "notes": "Different code (values ~100-1100); not attacked."
-   },
-   "read": "not read"
-  },
-  {
    "id": "R9569",
    "shelfmark": "ASNa, Ministero degli affari esteri, busta 2337; DECODE R9569",
    "date": "4 Sep 1823",
@@ -756,35 +727,6 @@
     "notes": "Groups with a fifth digit are kept as written and treated as nulls."
    },
    "read": "read in part"
-  },
-  {
-   "id": "R9586",
-   "shelfmark": "ASNa, Ministero degli affari esteri, busta 2337; DECODE R9586",
-   "date": "undated",
-   "year": "unknown",
-   "country": "Kingdom of the Two Sicilies",
-   "route": "unknown",
-   "language": "Italian",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No decipherment known; DECODE: Non-decrypted."
-   },
-   "length": {
-    "tokens": 537,
-    "unit": "code groups",
-    "measured": true,
-    "file": "cipher/R9586.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "transcripts/R9586.txt, from the DECODE images",
-    "image_quality": "good",
-    "notes": "Different code (values ~100-1100); not attacked."
-   },
-   "read": "not read"
   }
  ],
  "system": {
@@ -827,7 +769,7 @@
   "key_order": "partly alphabetical",
   "word_division": "none",
   "sibling_key": "none",
-  "notes": "Runs such as 2201 che, 2205 ci, 2211 di, 2221 fi, 2230 l, 2231 l', 2232 la and 2082-2084 del, dell', della are alphabetical; the runs themselves are scattered. R9586/R9588 use a second code."
+  "notes": "Runs such as 2201 che, 2205 ci, 2211 di, 2221 fi, 2230 l, 2231 l', 2232 la and 2082-2084 del, dell', della are alphabetical; the runs themselves are scattered. R9586/R9588 use a second code and have their own entry (r9586)."
  },
  "conditions": {
   "prior_solution": {
@@ -887,7 +829,11 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
    "what": "Frequency and repeat count: 208 distinct groups in 331 over a ~2,500-group code, repeated multi-group phrases; too little text for a ciphertext-only attack.",
    "result": "ruled out"
   },
@@ -902,7 +848,10 @@
    "result": "failed"
   },
   {
-   "kind": "hypothesis", "technique": ["plaintext matching"],
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
    "what": "Neighbouring 'Decrypted' records of busta 2337 checked for the same code: R9569, R9571 and R9589 (1823) share it and carry interlinear glosses; R9590 (1830) is another code.",
    "result": "worked"
   },
@@ -912,7 +861,12 @@
    "result": "worked"
   },
   {
-   "kind": "crib", "technique": ["crib testing", "repeat/pattern analysis", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "repeat/pattern analysis",
+    "plaintext matching"
+   ],
    "what": "Glosses aligned group by group: about 110 values, syllabic and word-level, homophonic; 5-figure groups fall where the gloss has nothing (nulls); local alphabetical runs noticed.",
    "result": "worked"
   },
@@ -922,20 +876,73 @@
    "result": "partial"
   },
   {
-   "kind": "solver", "technique": ["language-model scoring", "contextual inference"],
+   "kind": "solver",
+   "technique": [
+    "language-model scoring",
+    "contextual inference"
+   ],
    "what": "Per-group candidate scoring with the it-modern 5-gram LM over known neighbours (length bonus, then PMI): no discrimination between candidates.",
    "result": "failed"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 4482 tokens, 260 types, it-modern order 4: reading -1.831 per letter; random keys -2.472 (z 7.4); key annealed onto shuffled ciphertext best -1.84 (mean -1.86, z 2.1); annealer on the real text -1.811. Verdict: underdetermined.", "result": "partial"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 4482 tokens, 260 types, it-modern order 4: reading -1.831 per letter; random keys -2.472 (z 7.4); key annealed onto shuffled ciphertext best -1.84 (mean -1.86, z 2.1); annealer on the real text -1.811. Verdict: underdetermined.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from castelcicala1816, which had included R9586 and R9588, two Castelcicala letters in a different code (values about 100-1100), with the despatches in the Segreteria di Stato code. This profile keeps the Segreteria di Stato code (25 documents) only.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "it-modern", "file": "validation.tsv", "tokens": 4482, "types": 260, "tokens_per_type": 17.24, "score": -1.831, "nulls": {"random keys": {"n": 200, "mean": -2.472, "sd": 0.086, "max": -2.248, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.86, "sd": 0.014, "max": -1.84, "z": 2.1, "p": 0.1429}}, "power": -1.811, "verdict": "underdetermined", "notes": "claimed per-occurrence score -1.831; polyphony 0.0; 4946 unread tokens left out; annealer on the real text from random keys reached -1.811"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "it-modern",
+   "file": "validation.tsv",
+   "tokens": 4482,
+   "types": 260,
+   "tokens_per_type": 17.24,
+   "score": -1.831,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -2.472,
+     "sd": 0.086,
+     "max": -2.248,
+     "z": 7.4,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -1.86,
+     "sd": 0.014,
+     "max": -1.84,
+     "z": 2.1,
+     "p": 0.1429
+    }
+   },
+   "power": -1.811,
+   "verdict": "underdetermined",
+   "notes": "claimed per-occurrence score -1.831; polyphony 0.0; 4946 unread tokens left out; annealer on the real text from random keys reached -1.811"
+  },
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "About 110 code values were aligned from the contemporary interlinear decipherments on R9566 p. 3 and the 1823 siblings R9569, R9571, R9589 in the same ASNa busta 2337, then extended by hand from repeated contexts.",
-  "contribution": ["transcription", "key recovered", "sender or date identified"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
   "class": "read in part",
-  "fraction_read": 0.429,
+  "fraction_read": 0.467,
   "fraction_read_method": "measured",
-  "fraction_read_source": "cipher/<R>.txt for all 27 documents against key.tsv (162 values, grades G/X/I): main-code groups (<5 digits; 141 five-digit nulls excluded) with a key value, 4,399 of 10,252; groups without a value counted unread. Includes the different-code R9586/R9588 (6-7%) and the glossed R9569/R9571/R9589.",
+  "fraction_read_source": "cipher/<R>.txt for the 25 main-code documents against key.tsv (162 values, grades G/X/I): groups of fewer than five digits (five-digit nulls excluded) with a key value, 4,340 of 9,286, recounted 14 Oct 2026 with corpus.py/apply.py after R9586/R9588 (another code) were split off; groups without a value counted unread. Includes the glossed R9569/R9571/R9589.",
   "key": "partial",
   "codes_open": {
    "open": 1334,
@@ -943,18 +950,15 @@
    "tokens_open": 5853
   },
   "grades": "unknown",
-  "verification": ["contemporary decipherment"],
-  "notes": "fraction_read = share of main-code groups in the target letters of catalogue 166 and 167 with any key value (key.tsv grades G/X/I; about a third of the values are unconfirmed inferences). No letter reads through; sender/recipient, dates and code structure established. Remeasured 21 Sept 2026 over all 27 documents: 0.429 (was 0.447). Having a value is not reading: no letter reads through. R9569/R9571/R9589 marked read on their contemporary interlinear decipherments.",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "fraction_read = share of main-code groups in the target letters of catalogue 166 and 167 with any key value (key.tsv grades G/X/I; about a third of the values are unconfirmed inferences). No letter reads through; sender/recipient, dates and code structure established. Remeasured 21 Sept 2026 over all 27 documents: 0.429 (was 0.447). Having a value is not reading: no letter reads through. R9569/R9571/R9589 marked read on their contemporary interlinear decipherments. Split 14 Oct 2026: R9586/R9588 (another code) moved to r9586; fraction recounted on the 25 main-code documents: 0.467.",
   "gaps": [
    {
     "item": "main-code groups without a value (55% of target groups)",
     "blocker": "open-codes",
     "detail": "two-part code of ~2,450 groups; 162 values from four interlinear cribs; solve.py LM scoring did not discriminate"
-   },
-   {
-    "item": "R9586 and R9588 (different code, values 100-1100)",
-    "blocker": "not-attempted",
-    "detail": "faint pencil syllabic glosses noted but not attacked"
    },
    {
     "item": "the 1816-19 Cifra della Segreteria di Stato codebook",
@@ -963,7 +967,11 @@
    }
   ],
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherments on R9566 p. 3, R9569, R9571, R9589"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherments on R9566 p. 3, R9569, R9571, R9589"
+   }
   ]
  }
 }

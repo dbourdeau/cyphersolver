@@ -1,16 +1,29 @@
-# Siena, Concistoro 2308: "Lettere in cifra" (catalogue 336)
+# Siena, Concistoro 2308: "Lettere in cifra" — the unread pieces (catalogue 336)
 
-Status: read in part (key recovered from the ciphertext alone for nos. 14, 18, 25; no. 4 from its own fragment; no. 1 of 1421 not photographed, needs ASSi)
+Status: attempted, open — the unread pieces of the bundle (no. 1 of 1421 not photographed, needs ASSi; nos. 7, 9, 11, 15, 17, 19, 20, 21, 23 and R4794 not deciphered, keys unknown).
+
+**Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026).** This folder held the whole bundle, in
+which each letter has its own key. The letters whose keys were recovered are now their own entries, each a different
+cipher with its own page:
+
+- no. 25 (R4813), key recovered ciphertext-only, 96.2%: [`targets/siena25/`](../siena25/NOTES.md)
+- no. 18 (R4806), key recovered ciphertext-only, 87.1%: [`targets/siena18/`](../siena18/NOTES.md)
+- no. 14 (R4802), key recovered ciphertext-only, 58.6%: [`targets/siena14/`](../siena14/NOTES.md)
+- no. 4 (R4793), Borghesi 1456, key from its own fragment, 79%: [`targets/borghesi1456/`](../borghesi1456/NOTES.md)
+- nos. 6 and 24 (R4795, R4812): deciphered by George Lasry with fasc. 1 key R4755, [`targets/siena1431/`](../siena1431/NOTES.md)
+
+Their transcriptions, keys, readings and validation moved with them. This entry keeps the access notes, the inventory,
+the key index of fasc. 1, the shared solvers (`homsolve*.py`, `wordsolve.py`, `sylsolve.py`, `prep.py`, the
+transcribed 1450s keys in `keys/`) and the **unread pieces**, which are listed together only because they are in the
+same bundle: **no shared key is claimed for them**, except that nos. 20 and 23 look like one system (same sign
+inventory), which is untested. The pieces deciphered at the time (nos. 8, 10, 13/16, 22) and no. 12 (DECODE R1858
+"Decrypted") are described below for completeness; they are other keys, not results of this project, and are not
+counted. The transcriptions of nos. 6 and 24 (`transcripts/no06*`, `no24*`) stay here as the input George Lasry's
+reading was checked against.
 
 Session of 24 September 2026. Goal set by Daniel: decipher the 29 cipher letters of ASSi Concistoro 2308, fasc. 2
 ("Lettere in cifra"), oldest dated 1421 per Meister 1902 pp. 50-51, "solo parzialmente decifrate" per the 1952
 inventory; first try the filed keys (fasc. 1) on every letter.
-
-**14 Oct 2026: nos. 6 and 24 deciphered** with key R4755 ("Cifra cum Christofano ...", fasc. 1) by George Lasry,
-with Claude and the help of ChatGPT Astra (key first recovered from the ciphertext, then matched to R4755); verified
-here on our own transcription and written up as a separate target: [`targets/siena1431/`](../siena1431/NOTES.md).
-R4755 was in the key index below (24 Sept) but was never tried on these two letters. Their entry under Remaining
-gaps, moved here: "nos. 6 + 24 (one system, ~4,300 tokens) - blocker: no-key-material; no filed key matches; ciphertext-only homophonic, null-aware and bigram solvers all fail (solver validated on a synthetic cipher of the same size); next step is a single-hand re-transcription with a fixed sign inventory."
 
 ## Access: the whole filza is on DECODE (found this session)
 
@@ -119,99 +132,13 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
   = doubled letter). Read at the time.
 - **No. 12 (R4790).** Photographed again in R1858, which DECODE marks "Decrypted": taken as read (Daniel's
   instruction, 24 Sept: trust DECODE's Decrypted status).
-- **No. 4 (R4793).** Galgano Borghesi, J.U.D., orator, Naples 17 May 1456, to Leonardo Benvoglienti. Cipher runs
-  in capitals, digits and signs, with the recipient's glosses ("duca" over the code word *Calor*, "papa",
-  "re", "pare", "presto", "chercavano"). Code word *storpsi* is R4750's "Ambasciatore fiorentino", so the key is of
-  the R4750 family, but R4750's alphabet does not produce no. 4's letters (L, N, T, Z, 1); R4753, R4756, R4762
-  also tried by eye and do not fit.
+- **No. 4 (R4793).** Galgano Borghesi, Naples 12 May 1456: key rebuilt from its own fragment; now its own entry, [`targets/borghesi1456/`](../borghesi1456/NOTES.md).
 - **No. 11 (R4800).** Donato Acciaiuoli to Lorenzo de' Medici, "ex Urbe die 13 junii 1478": a Florentine letter
   intercepted by Siena during the Pazzi war. Two cipher blocks (~11 lines). Not a Sienese key; R4752 (Bichi 1478)
   does not fit.
 - **No. 20 (R4808).** "Sacra Regia Maiestas, Serenissime princeps ac metuendissime domine, post terre pedum
   oscula": ~18 lines of continuous cipher (lowercase letters, digits, ÷), "Scriptum ... die penultimo mensis
   Martii". The largest ciphertext in the fascicle.
-
-## No. 14 (R4802): key recovered ciphertext-only (24 Sept)
-
-- Whole-page letter to the "Magnificis et potentibus dominis Prioribus [et] Capitaneo Civitatis Senarum", 23 full
-  lines + subscription, ~1,300 cipher tokens in 248 point-divided words (transcription agent B, `transcripts/no14.txt`,
-  then `no14b.txt` after splitting the old OBAR into OL / OR / O).
-- System: Italian, simple substitution with a few homophones (e = TR, 2; o = 6, P; i = Q4, PD, L; a = EQ, Q, TL;
-  à = O+")"; q/g = Z), word points kept, two or three code signs for persons (7H, Z7).
-- Attack history: plain homophonic anneal (wordsolve.py, 10 x 300k) stuck at nonsense; a hand crib ('8 6 RR IB VB Q'
-  = nostra/vostra, 'RR IB EQ IB 6' = stato, 'Y 6 RR IB VB' = vostr-) pinned the key and Italian appeared; then the
-  staged solver `homsolve2.py` (order 3 -> 4, frequency-seeded restarts, swap moves) reached the same key with no
-  crib at all ("... comandamenti ma perche noi siamo tenuti e disposti sempre ... del vostro stato e dela vostra
-  cità ... questa matina trovandosi Domenico ... per ragionare ... la impresa ... perche considerano ... Carlo ...
-  guera ... per conservatione ... servidori vostri"). So: key recovered from ciphertext only.
-- Reading in progress (agent pinning each line against the image with the key: `transcripts/no14_reading.txt`).
-- **First reading (agent B, `transcripts/no14_reading.txt`).** Envoys of Siena on a journey write to the Signoria:
-  "per la gracia di dio noi arivamo qui hieri da sera salvi e ... la nostra compagnia, e siamo pronti a seguire lo
-  nostro camino ... a seguire li vostri comandamenti ... del vostro stato e dela vostra cità e di tuta Toscana:
-  significhiamo a la Signoria vostra come questa matina, trovandosi Domenico con uno servidore di <7H> ... a
-  ragionare per spacio d'ore due ... a <7H> è dispiaciuto ... la inpresa ... per <Z7> di (420) ... ancora afferma
-  l'amico vostro che Carlo Malatesti e ogni altro sono [in] questa medesima gielosia ... Toscana unita con le ...
-  tre potentie ... discopertamente ... guera con <Z7> per conservacione da (420) e per conservacione loro ...
-  <7H> è a Napoli ... partiremo per seguire vostro viagio ... a la quale humilmente ci racomandiamo. [Roma?] ...
-  li servidori vostri ... Marco". Glyph findings: '8' is two glyphs (compact 8 = v/u; tall theta = n, = D);
-  D also covers a delta-c; 'o–o' joined = f; PLUS^dot = i; N? = u/v; arcs = nasal abbreviation; gn written ngn.
-- **Date.** Not in the text read so far. Carlo Malatesta of Rimini (1368-1429) is alive; Siena and "tuta
-  Toscana" are to join "tre potentie" in open war with <Z7> "per conservacione" of (420) and of themselves.
-  Candidates: the Ladislaus war 1409-14 (then <7H> "a Napoli" could be Ladislaus's side) or the Visconti war
-  1423-24 (Carlo Malatesta commanded for Florence; Z7 = Duke of Milan). Either way the letter is c. 1409-29,
-  i.e. at or before Meister's 1421 for no. 1: a candidate for the project's oldest-cipher record, but only if
-  the date can be fixed (second reading pass under way).
-
-## No. 25 (R4813): key recovered ciphertext-only (24 Sept)
-
-- Slip, 11 lines, 496 tokens in 65 point-divided words, 22 signs built on a running horizontal stroke (agent E,
-  `transcripts/no25.txt`). Italian, simple substitution (Sienese 'ch' spelling). homsolve2 (words=1, it-cinquecento)
-  gave the key unaided; hand fixes H = h, Y = m (`keys/no25_key.txt`).
-- Reading (first pass): "Noi aviamo chompreso che questo signiore no chavalcharà per lo modo che chostoro di qui
-  voreveno, e dilivera senza altra spesa fare di qui partirsi e d'esare chostà, e crediamo sarà sabato prossimo,
-  e farano la via di Laiaticho, e poi di là si partirano e l'altro dì sarano a Radichondoli e per quello paese e
-  ancho a Chasole ... e però richordiamo a la signoria vostra che ne' detti luoghi faciate provedere di pane,
-  vino, biada ... per fante propio significharemo a la magnificientia vostra." An armed lord's route from the
-  Volterra side (Lajatico) through Radicondoli and Casole into Sienese territory; Siena asked to provision it.
-  Undated. Verification pass (agent E, `transcripts/no25_reading.txt`, transcription rev. 2): Y and X are two glyphs
-  (Y = m, X = r), XB = z, G was S; **477 of 496 cipher signs (96.2%) in words read as Italian**, 18 signs in two
-  unclear words ('s'hadra', 'o chon grediamo'), 1 code sign TH unread. Meets the read bar.
-- 30 Sept 2026 (quotation list for George Lasry): L03 w1 'presa' re-checked on the DECODE image (4000 px). The
-  second sign is the hooked X (r), which rules out 'spesa'; the blotted first sign is a loop crossing a stem, the
-  shape of Q (p, as in 'prosimo' L04 and 'pensiamo' L10), not the plain circle-and-stem PHI (u/v/b), which would give
-  no word. So 'senza altra presa fare' stands: letters r-e-s-a H from the key, p M (blotted). Sense: 'without
-  making any further halt' (or 'taking', presa = seizure); the page's 'without further delay' is kept. The
-  opening, 'Noi aviamo chompr(e)so ... e l'altro dì sarano a Radichondoli', now reads as one continuous passage
-  with no gap and is used for the quotation. No count changes (presa was already counted as read).
-
-## No. 24 (R4812): same system as no. 6 (probable)
-
-(14 Oct 2026: confirmed; both deciphered with key R4755, see `targets/siena1431/`.)
-
-- Text side is P2 (~40 lines, continuous cipher); P1 = dorse with 8 run-over lines and the address "Magnifici et
-  potenti signiori e ... Capitano di popolo della citta di Siena". Opens in clear "Magnifici et potentes domini
-  domini mei singularissimi ... Recomendatione premissa //" like no. 6 ("Magnifici et potentes .d. .d. mei
-  singularissimi doppo humile recomandatione"), and shares no. 6's frequent 'p p' pair and W sign. Together they
-  would give ~4,000 tokens of one system: the way into no. 6.
-
-## No. 4 (R4793): Galgano Borghesi to Leonardo Benvoglienti, Naples 12 May 1456 — key rebuilt from its own fragment
-
-- Clear Italian letter with 15 cipher runs (144 sign tokens) and 9 Latin code words; a second (recipient's) hand
-  wrote interlinear glosses over some runs ("duca", "papa", "per la", "presto", "chercavano", "e cardinali",
-  "pigliasse", "per parte del duca", "al re"): this is the contemporary partial decipherment behind the 1952
-  inventory's "solo parzialmente decifrate".
-- None of the six 1450s keys filed in fasc. 1 (R4750, R4753, R4754, R4756, R4757, R4762; transcribed in `keys/`)
-  gives the letter values, though R4757 shares sign shapes and the code word Calor (there = Florentini) and R4750
-  has 'storps'. A two-row **alphabet fragment written below the letter's text** (i o_tail, l longs, m 2, n a,
-  o T, p M, q S, r g_ring, s y, t L_slant, u C; left part torn) plus the glosses rebuilt the key (`keys/no04_key.txt`):
-  114/144 sign tokens read securely (79%), 11 more from context, 19 unread (1, //, 8, F, x_slash, T_long, 4_hook,
-  +, R, delta, B, b°). Code words: Calor = duca, storps = Lucca (per the gloss), cras = parte, Matto/Maffo = papa,
-  toffe = papa?, vapor = cardinali?, pedesi = ?.
-- Sense (tentative): Borghesi asks Benvoglienti to use the cipher; at his urging King Alfonso wanted the
-  settlement to include the promises made when Lucca was besieged by the Florentines ("al capitano ... a Milano"),
-  the King made light of it ("Tunc rex parvi fecisse"); Antonio d'Arezzo reports the Duke well disposed; the Pope,
-  the Florentine clergy ("chericato de Fiorentini") and the cardinals to contribute "contra lo Turcho"; the Duke's
-  message to be referred "al re". Reading: `transcripts/no04_reading.txt`.
 
 ## No. 11 (R4800), Acciaiuoli 1478: no key in reach
 
@@ -235,15 +162,6 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
 - **No. 21 (R4809)**: informal letter "Karissimo come padre"; 107 cipher tokens / 35 signs (crosses, squares, Λ);
   signature group in cipher + "vostro". Too short alone.
 
-## No. 24 P2 transcribed (agents H, I): same system as no. 6
-
-(14 Oct 2026: this transcription, decoded with key R4755, agrees with the outside reading at 69-88%; see `targets/siena1431/`.)
-
-- P2 = 38 lines, 2,720 tokens (m.01-20: 1,414; m.21-38: 1,306), every sign in the no. 6 legend; "a PAREN" 25x,
-  "p p" ~66x, point-framed single signs (CIRC, RX+, BIGX, PHI, x) = probable name codes. With no. 6: 3,689 tokens
-  (`transcripts/no06_24all.tok`). Homophonic anneal (homsolve2, Italian, order 3-4-5, 4 x 6 restarts): no
-  convergence (-2.93/token); null-aware solver (homsolve3) running.
-
 ## Solver calibration (24 Sept)
 
 homsolve2.py breaks a synthetic Italian homophonic cipher of the same size (2,673 tokens, 58 signs, 3% nulls)
@@ -259,7 +177,7 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
   (+ PS 3 Jan) and 4 Jan 1546 s.s. = 1547; cipher only on pp. 2 and 6 (~230 signs). Key candidate by sign style:
   R4764 "Cifra con m. Bernardino Buoninsegni oratore a S. M.tà" (nulls row includes the ÷ run-opener). Transcript
   unverified (images failed to display for the transcriber) -> re-verification under way.
-- **No. 18 (R4806)**: Latin articles negotiated by Sienese orators with a king/emperor, subscribed "Niccolo Zieg[le]r
+- **No. 18 (R4806)** (now its own entry, `targets/siena18/`): Latin articles negotiated by Sienese orators with a king/emperor, subscribed "Niccolo Zieg[le]r
   Regis Secretarius" (c. 1515-20?), ~185 point-separated cipher words (~1,100 signs) inside the Latin. Transcript
   unverified -> re-verification under way.
 - **No. 22 (R4810)**: four drafts of a conspirators' letter (signal fires and smoke "alle pietre", spingarde, "la
@@ -268,43 +186,28 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
   2, 3, 8, 19 unknown). Read at the time in effect (the clear drafts).
 - **No. 29 (R4814)**: torn scrap of a word list/nomenclator ("Ungaria — 1&7", "Giovan[ni]", "Lodyo"), not a letter.
 
-## No. 18 (R4806): key recovered ciphertext-only (24 Sept)
-
-- Transcripts verified against the images (agent L: 14 tokens changed in ~1,450; `transcripts/no18v.txt`).
-- 211 point-divided cipher words, 1,456 tokens, 30 signs, inside running Latin. homsolve2 (words=1, Latin) gave the
-  key unaided (`keys/no18_key.txt`): Latin articles of a treaty between Siena and the Emperor's side (subscribed
-  "Niccolo Zieg[le]r Regis Secretarius"): "... tormenta ... lapides seu globos ... milia ducatorum pro quibus se
-  obligabit de restituendo eosdem in termino duorum mensium ... civitatem presentem statum cum omni eius
-  iurisdictione tueri et defendere teneatur ... bellum ... in partibus Pontis Valiani ... bellum Florentinis ...
-  transitum, victualia, instrumenta ad bellum necessaria, passum, foedus, intelligentia ... suis expensis centum
-  homines armigeros, sexaginta equos leves ... castella existentia infra ... miliaria prope fines Senenses que
-  caperentur ... Florentinorum ... bombarda". Ponte a Valiano = the Montepulciano war (1495-1511); Ziegler =
-  Maximilian I's secretary (d. 1526): 1510s-1520s, year not fixed. Reading (agent L, `transcripts/no18_reading.txt`):
-  **87.1% of 1,459 cipher tokens read as sense**, 10.6% doubtful, 1.4% unread, 0.9% struck. Glyph splits found on
-  the image: hooked n = q vs plain n = e; o = g vs lead-in o = o; open OO = i vs closed pair = ll; dotted signs =
-  nulls; 2 = h, PHI = pp, HX = rr. Content: Siena to ready artillery and lend the King 5,000 ducats repayable in two
-  months; B. protects Siena; Siena opens war on X. near Ponte a Valiano at the King's and Emperor's request, gives
-  passage and victuals against the Florentines, 100 men-at-arms and 60 light horse; castles taken within five miles
-  of the border go to Siena; Siena's claims against Florence judged by the Emperor; last article breaks off.
-
 ## Remaining gaps
 
 - no. 1 (1421), nos. 2, 26, 27, 28 - blocker: needs-physical-access; not among the DECODE photographs of the busta (R4790-R4814); only ASSi can supply them.
-- nos. 20 + 23 (one system, ~4,900 tokens) - blocker: no-key-material; same situation; 'f' + o^n / a / o groups behave as units, probably a syllabic or nomenclator element.
+- nos. 20 + 23 (probably one system, ~4,900 tokens) - blocker: no-key-material; homophonic, null-aware and bigram solvers fail; 'f' + o^n / a / o groups behave as units, probably a syllabic or nomenclator element.
 - no. 11 (Acciaiuoli 1478, 409 tokens) - blocker: no-key-material; Florentine cipher; Gabbrielli's key index has no key for Donato Acciaiuoli.
 - no. 17 (1528, 282 tokens) - blocker: too-short; 'cifra di Balia' not identified among the filed keys; ciphertext-only fails at this length.
 - no. 7 (363 tokens) - blocker: too-short; R4750 ruled out; nine gloss values only.
 - no. 15 (Bandini 1546-47, 229 tokens) - blocker: too-short; candidate key R4764 transcribed, sign mapping inconclusive.
 - nos. 9, 19, 21, R4794 (46-170 tokens each) - blocker: too-short; no filed key fits.
-- no. 14 doubtful and unread words (~40% of 1,291 tokens) - blocker: illegible; small signs at the DECODE resolution; the key itself is recovered.
-- no. 18 doubtful words (~12% of 1,459 tokens) - blocker: illegible; W/m/tt and dotted-null distinctions at the DECODE resolution.
-- no. 4 unread signs (19 of 144) - blocker: too-short; rare signs occurring once or twice.
 
 ## Escalation
 
-- [x] siblings: every record of the busta opened (keys R4746-R4789, letters R4790-R4814, R1858); systems pooled (nos. 6+24, 20+23); no. 13/16 pair found.
-- [x] clear-pages: no. 16 = decipherment of no. 13; decipherment on no. 8's sheet; glosses on nos. 4, 7, 10 used; no. 22 clear drafts paired with numbered drafts; no. 24 P1 = dorse, not decipherment.
-- [x] known-keys: fasc. 1 alphabets compared by eye with every letter (R4755 missed for nos. 6/24; found by George Lasry, 14 Oct 2026, see siena1431); R4750, R4753, R4754, R4756, R4757, R4762 transcribed and tested on nos. 4 and 7; R4760, R4768, R4778 on nos. 17 and 20; R4764 on no. 15; Gabbrielli vol. I index (Ilardi reel 58) for no. 11.
-- [x] print: Senatore 2009 (identifies no. 4), Meister 1902, Cecchini 1952 inventory, Treccani DBI (Borghese, Benvoglienti); no printed decipherment of any piece found. (CSP, Bain, Forbes, Fraknoi, Nuntiaturberichte, Politische Correspondenz, Parke, Lasry GL.htm, Tomokiyo do not cover Sienese chancery letters.)
-- [x] key-rebuild: nos. 14, 18, 25 keys rebuilt by staged annealing + hand pinning on the images; no. 4 from its fragment and glosses; homsolve2/homsolve3 (nulls)/sylsolve (bigrams) on the open systems.
-- [x] retry: nos. 14 and 18 re-read sign by sign on the images with the extended keys (two passes each); no. 25 re-checked word by word; doubtful words regraded in the reading files.
+- [x] siblings: every record of the busta opened (keys R4746-R4789, letters R4790-R4814, R1858); no. 13/16 pair found; the pieces with recovered keys are separate entries.
+- [x] clear-pages: no. 16 = decipherment of no. 13; decipherment on no. 8's sheet; glosses on nos. 7 and 10 used; no. 22 clear drafts paired with numbered drafts.
+- [x] known-keys: fasc. 1 alphabets compared by eye with every letter (R4755 missed for nos. 6/24; found by George Lasry, 14 Oct 2026, see siena1431); R4750, R4753, R4754, R4756, R4757, R4762 tested on no. 7; R4760, R4768, R4778 on nos. 17 and 20; R4764 on no. 15; Gabbrielli vol. I index (Ilardi reel 58) for no. 11.
+- [x] print: Meister 1902, Cecchini 1952 inventory, Senatore 2009, Treccani DBI; no printed decipherment of any of these pieces found.
+- [x] key-rebuild: homsolve2/homsolve3 (nulls)/sylsolve (bigrams) on nos. 20+23 and the short pieces; no. 7 partial key from its gloss.
+- [n/a] retry: no key was extended for these pieces, so there is nothing to rerun.
+
+## Assumptions for George's review
+
+- Nos. 6 and 24 are counted only in his siena1431; nothing of this folder's failed attempt on them is claimed.
+- The unread pieces are kept together here as one "attempted, open" entry because they are one bundle; no shared key
+  is claimed (nos. 20 and 23 only probably share a system).
+- The pieces deciphered at the time (nos. 8, 10, 13/16, 22) and no. 12 are not entered as results.

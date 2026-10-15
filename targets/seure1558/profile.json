@@ -1,0 +1,132 @@
+{
+ "schema_version": 1,
+ "target": "seure1558",
+ "title": "Seure (Lisbon) to de Fresne and Henri II, 12 and 27 Dec 1558: BnF fr. 3151 nos. 39-44",
+ "documents": [
+  {
+   "id": "seure1558",
+   "shelfmark": "BnF fr. 3151 nos. 39-44 (Gallica btv1b9059865k views ~72-88); nos. 40/41 and 43/44 duplicate copies",
+   "date": "12 and 27 Dec 1558",
+   "year": 1558,
+   "country": "France",
+   "route": "Lisbon -> France (de Fresne; Henri II)",
+   "language": "French",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "Gallica views ~72-88",
+    "image_quality": "good",
+    "notes": "Not transcribed; about eight pages and roughly 2,000 signs by eye (NOTES)."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "A homophonic symbol alphabet of about 60 signs with numeral code groups (12, 13, 23, 100), one key over six letters; not analysed.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Observations by eye from the images, 21 Sept 2026; split from guiche1551 on 14 Oct 2026. The duplicates do not simply swap clear and cipher."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the leaves; print not searched.",
+   "found": "unknown",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: set up Claude Code with Opus 5 and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "none"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Located the Seure letters in fr. 3151: six, not the one the catalogue lists (nos. 39-44; 40/41 and 43/44 duplicates).",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "plaintext matching"
+   ],
+   "what": "Seure letters (nos. 39-44): ~2,000 signs, homophonic plus nomenclator, no decipherment; left open as too large for this pass.",
+   "result": "partial",
+   "date": "2026-09-21"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): catalogue item 10 had grouped three letters in three different ciphers. La Guiche's 22-sign substitution stays in guiche1551; Noailles's Venice letter (another symbol alphabet) went to noailles1558 and Seure's six Lisbon letters (homophonic with numeral codes) to seure1558.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Surveyed only: the six letters were located and the system described from the images, but the roughly 2,000 cipher signs were not transcribed or attacked.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Nothing transcribed or deciphered.",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "The cipher of nos. 39-44 (about 2,000 signs)",
+    "blocker": "not-attempted",
+    "detail": "not transcribed; a multi-session job, then a homophonic attack on one key"
+   }
+  ],
+  "notes": "Status: in progress in NOTES.md.",
+  "credits": []
+ }
+}

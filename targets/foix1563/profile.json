@@ -1,38 +1,8 @@
 {
  "schema_version": 1,
  "target": "foix1563",
- "title": "Coligny to Elizabeth, 12 Jan 1563, and Catherine de' Medici to Paul de Foix, 15 Jan 1563, BL Add MS 4136 ff. 142-143, 148v-149 (DECODE R9238, R9241)",
+ "title": "Catherine de' Medici to Paul de Foix, 15 Jan 1563, BL Add MS 4136 ff. 148v-149 (DECODE R9241)",
  "documents": [
-  {
-   "id": "R9238",
-   "shelfmark": "BL Add MS 4136 ff. 142-143 (DECODE R9238)",
-   "date": "12 Jan 1563",
-   "year": 1563,
-   "country": "France",
-   "route": "Gaspard de Coligny (camp at Villefranche) to Elizabeth I (London)",
-   "language": "French",
-   "pages": 2,
-   "cleartext_in_document": "none",
-   "plaintext": {
-    "location": [
-     "printed edition"
-    ],
-    "source": "Forbes, Full View ii (1741) 272-274; CSP Foreign vi no. 76 ('Orig. almost entirely in cipher, deciphered')",
-    "partial": false
-   },
-   "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
-    "unit": "symbols",
-    "measured": false
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE images (Forbes's copy of the ciphered passages)",
-    "image_quality": "good",
-    "notes": "35 numbered passages in graphic signs; not transcribed. Identified by the copyist's margin glosses ('sins', 'desracine') against the printed text. f.143 lower half begins another Coligny letter (catalogue 93)."
-   }
-  },
   {
    "id": "R9241",
    "shelfmark": "BL Add MS 4136 ff. 148v-149 (DECODE R9241)",
@@ -62,14 +32,16 @@
     "source": "DECODE images (Forbes's copy)",
     "image_quality": "good",
     "notes": "First pass, passages (1)-(4); some glyph classes (z/r, b variants) may be merged. f.148 top (passages 15-24) is the end of a Coligny letter and was not transcribed."
-   }
+   },
+   "read": "read in part"
   }
  ],
  "system": {
   "types": [
-   "unknown"
+   "homophonic",
+   "nomenclator"
   ],
-  "summary": "R9238: Coligny's graphic-sign cipher, about 60 signs, deciphered at the time. R9241: Latin letters, digits, ligatures and a few two-digit numbers with clear null words (pour, car); not one of Forbes's filed keys (Throckmorton first/second/third, Croft); one-token-per-letter homophonic annealing found no language.",
+  "summary": "Paul de Foix's own cipher (Tomokiyo's reconstruction from de Foix's 1565 letters): Latin letters, digits, ligatures and two-digit word signs, homophonic, with clear null words (pour, car); several signs two-valued.",
   "symbol_kind": "digits and letters",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -87,14 +59,14 @@
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "notes": "Clear French null words as in Throckmorton's third cipher, but the sign values do not match it."
+  "notes": "Clear French null words as in Throckmorton's third cipher, but the sign values do not match it. Coligny's graphic-sign cipher (R9238), once in this entry, is a different key (coligny1563)."
  },
  "conditions": {
   "prior_solution": {
-   "exists": "in print",
-   "where": "R9238 only: Forbes, Full View ii (1741) 272-274; CSP Foreign vi (1869) no. 76. R9241: none known.",
-   "found": "during attempt",
-   "used": true
+   "exists": "no",
+   "where": "No decipherment or clear copy of R9241 known (Forbes ii, CSP Foreign vi, La Ferrière i-ii searched); the key is Tomokiyo's reconstruction from other de Foix letters.",
+   "found": "unknown",
+   "used": false
   },
   "inputs": [
    "images",
@@ -137,7 +109,11 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
    "what": "Margin glosses 'sins', 'desracine' at f.142 passage (9) match 'il rallie les siens ... desraciner du tout l'evangile' in the Villefranche letter of 12 Jan (Forbes ii 272-274), not the 2 Jan Meur letter: R9238 = CSP vi no. 76, read at the time.",
    "result": "worked"
   },
@@ -161,7 +137,12 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing", "repeat/pattern analysis", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
    "what": "Homophonic annealing with the shared lang dense 5-gram models (French, English): collapsed to runs of e/s; the model over-scores unseen repeats ('eeee' -0.26/char).",
    "result": "failed"
   },
@@ -173,25 +154,37 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "anneal3.py on R9241 in French and English, with and without nulls: no language (about -9.8/char).",
    "result": "failed"
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "anneal3.py with Italian (Renaissance), Spanish (Quijote) and Latin corpora: no language.",
    "result": "failed"
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["language-model scoring"],
+   "kind": "hypothesis",
+   "technique": [
+    "language-model scoring"
+   ],
    "what": "Two tokens per letter: token parity within each passage is flat, so the hypothesis is not supported.",
    "result": "ruled out"
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "anneal3.py SYL=1: tokens map to a letter or one of 30 French bigrams; no language.",
    "result": "failed"
   },
@@ -203,7 +196,10 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "anneal3.py on qm2_tokens.txt (French, English, French with nulls): no language.",
    "result": "failed"
   },
@@ -224,40 +220,61 @@
    "kind": "control",
    "what": "beck_control.py with lang fr-1600-letters (no spaces). Beck key -2.02/char vs 500 value-shuffled keys -4.28 +/- 0.39 (z 5.8). Overfitting control: swap-annealing a permutation of Beck's own 78 values on token-shuffled ciphertext reaches -1.93 to -2.00/char (per-char score is gameable by word-valued signs), but only 26-34% of letters in corpus words of 5+ letters against 50.6% for Beck's key on the real order (Beck's key on shuffled order: 4-7%). Independent check: 19 of 25 sign names shared with Feyseel's frozen key from de Foix's 1565 cipher (PR #21, Tomokiyo chart) give the same value, a 20th (6 = ie/je) agrees in effect. Real partial break, not at the read bar; 14 key entries rest on one occurrence each.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key split (George Lasry, 14 Oct 2026): catalogue 92's two records are in different ciphers. R9238 (Coligny to Elizabeth, 12 Jan 1563) is in the graphic-sign cipher of the Condé key R335, the same key as Coligny's other three letters of January 1563 in coligny1563 (R9237, R9239, R9240), so it moved there; foix1563 keeps R9241 (Catherine de' Medici to Paul de Foix), in de Foix's own cipher.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "The only part counted as read is R9238, identified from the copyist's margin glosses as Coligny's 12 Jan 1563 letter to Elizabeth, deciphered at the time (CSP Foreign vi no. 76) and printed in clear by Forbes, Full View ii 272-274; R9241 (Catherine de' Medici to de Foix) resisted ciphertext-only annealing and remains unread.",
+  "method": "read after matching with key from external sources",
+  "method_basis": "R9241's sign set was matched (Feyseel Nur, PR #21) to Paul de Foix's own cipher as reconstructed by S. Tomokiyo from de Foix's 1565 letters (BnF fr. 15971); the frozen 1565 key and Lawrence Beck's independent key (PR #18) agree on 19 of 25 shared signs and give a partial reading.",
   "contribution": [
    "transcription",
+   "decipherment with ambiguous key",
    "sender or date identified",
    "catalogue correction"
   ],
   "class": "read in part",
-  "key": "none",
-  "fraction_read": 0.0,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "R9238 read at the time and printed (Forbes); R9241 not read",
+  "key": "partial",
+  "fraction_read": 0.976,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "beck-preliminary/results/literal.txt: 1,013 of Beck's 1,038 tokens carry a key value (his transcription, 96 sign types). Values given, not sense: letters falling in corpus words of 5+ letters are 50.6% (beck_control.py), hence fraction_coherent.",
   "verification": [
-   "contemporary decipherment",
-   "historical consistency"
+   "matched control"
   ],
   "gaps": [
    {
-    "item": "R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563",
-    "blocker": "no-key-material",
-    "detail": "No decipherment or clear copy found; homophonic annealing negative on a first-pass transcription. Next: TNA SP 70/49-50 and French register copies."
+    "item": "R9241 passages (1)-(4)",
+    "blocker": "open-codes",
+    "detail": "conflicts between the 1565 chart and values fitted on R9241 (r m/d, z p/i, Yb l/u, 3/Z3), unvalued 80 and 93, a dozen open signs; needs a glyph audit and a de Foix letter of 1563-64"
    }
   ],
-  "notes": "Catalogue 92. R9238 closed as already solved (in print); R9241 attempted, open. Status: in progress.",
+  "notes": "Catalogue 92 (part). R9241 read in part with de Foix's key; Status: in progress. R9238 moved to coligny1563 on 14 Oct 2026.",
   "provenance": "mixed",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "English decipherment of R9238 on the original (CSP Foreign vi no. 76)"},
-    {"who": "forbes", "role": "key or decipherment used", "note": "R9238 clear text printed in Full View ii (1741) 272-274", "date": "1741", "source": "Forbes, A Full View of the Public Transactions in the Reign of Q. Elizabeth ii (1741) 272-274"},
-    {"who": "beck", "role": "solution", "note": "PR #18 (with ChatGPT): proposed partial decipherment of R9241, judged a real partial break; PR #27: five-sign audit", "date": "2026-10-03", "source": "https://github.com/dbourdeau/cyphersolver/pull/18; https://github.com/dbourdeau/cyphersolver/pull/27"},
-    {"who": "feyseel", "role": "solution", "note": "PR #21: R9241's key identified as de Foix's 1565 cipher; frozen-key partial reading, independently confirming Beck", "date": "2026-10-04", "source": "https://github.com/dbourdeau/cyphersolver/pull/21"},
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "reconstruction of Paul de Foix's 1565 cipher (henryiii.htm#Foix0), the key of R9241"}
-  ]
+   {
+    "who": "beck",
+    "role": "solution",
+    "note": "PR #18 (with ChatGPT): proposed partial decipherment of R9241, judged a real partial break; PR #27: five-sign audit",
+    "date": "2026-10-03",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/18; https://github.com/dbourdeau/cyphersolver/pull/27"
+   },
+   {
+    "who": "feyseel",
+    "role": "solution",
+    "note": "PR #21: R9241's key identified as de Foix's 1565 cipher; frozen-key partial reading, independently confirming Beck",
+    "date": "2026-10-04",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/21"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "reconstruction of Paul de Foix's 1565 cipher (henryiii.htm#Foix0), the key of R9241"
+   }
+  ],
+  "fraction_coherent": 0.506
  }
 }

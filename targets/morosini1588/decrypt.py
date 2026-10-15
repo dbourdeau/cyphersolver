@@ -182,9 +182,16 @@ def decode(items, beam=400, codes=None, nom=None, nulls=True):
 
 
 def main():
-    files = sys.argv[1:] or sorted([f for f in glob.glob(os.path.join(HERE, 'decode', 'DOC_R*_D1[678]*.txt')) if 'Francia 22' in open(f, encoding='utf-8', errors='replace').read(300) and '<ABBR' not in open(f, encoding='utf-8', errors='replace').read()])
+    # Since the 14 Oct 2026 split the F22b records R53/R54 live in ../morosini1589/decode/ (their own entry):
+    # `python decrypt.py --f22b > ../morosini1589/decrypt_raw.txt`. R17 (Francia 18/3) was decoded with this
+    # script from ../bergamo1585 before it moved here: `python decrypt.py R17_transcription_decode.txt`.
+    args = sys.argv[1:]
+    where = os.path.join(HERE, 'decode')
+    if args[:1] == ['--f22b']:
+        args, where = args[1:], os.path.join(HERE, '..', 'morosini1589', 'decode')
+    files = args or sorted([f for f in glob.glob(os.path.join(where, 'DOC_R*_D1[678]*.txt')) if 'Francia 22' in open(f, encoding='utf-8', errors='replace').read(300) and '<ABBR' not in open(f, encoding='utf-8', errors='replace').read()])
     for f in files:
-        rec = re.search(r'DOC_(R\d+)', f).group(1)
+        rec = re.search(r'(R\d+)_', os.path.basename(f)).group(1)
         b = rec in B_RECORDS
         for img, items in parse(f, dot_first=b):
             txt, per = decode(items, codes=CODES_B, nom=NOM_B, nulls=False) if b else decode(items)

@@ -1,6 +1,15 @@
-# Transylvanian cipher letters, DECODE R4933-R4942
+# Keresdi Bethlen cipher letters, 1645-1648 (DECODE R4936-R4940, R4942)
 
 Status: in progress
+
+**Split on 14 Oct 2026 (one-key rule, George Lasry).** This target first grouped the ten records R4933-R4942 by their
+DECODE number range. It now keeps the Keresdi Bethlen letters in the alphabet family of R4936/R4940 (R4936, R4940, and
+R4937, R4942, which give fragments under it), plus R4938 and R4939 of the same Keresdi_Bethlen_15 series, which are
+not yet inspected and for which no shared key is claimed. Split off, each a different cipher with its own entry:
+R4941, a different substitution (`targets/r4941/`), and the Kemény_XIX_1628 records R4933-R4935
+(`targets/kemeny1628/`). Their metadata and R4941's extract and solver results moved with them; the images stay in
+the main checkout's `transylvania1645/` folder for all three. The record table below is the original survey of all
+ten.
 
 ## Sources
 
@@ -41,7 +50,7 @@ Important transcription correction: a working shared alphabet family has c=p, p=
 
 ## Remaining gaps
 
-Nine records remain incompletely read, with many spans not attempted. These are NOT established outside blockers; continue work. R4940 still requires prior-art comparison and inclusion in the eventual group writeup. No percentage claimed for the group.
+Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or uninspected (R4938, R4939), with many spans not attempted. These are NOT established outside blockers; continue work. R4940 still requires prior-art comparison and inclusion in the eventual group writeup. No percentage claimed for the group.
 
 ## Escalation / next work
 

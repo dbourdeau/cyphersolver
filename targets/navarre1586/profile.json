@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "target": "navarre1586",
+ "title": "Henry of Navarre, La Rochelle, 10 July 1586: news-sheet to Ségur, BnF 500 de Colbert 401 f. 333, in the f. 321 key (Tomokiyo)",
+ "documents": [
+  {
+   "id": "f333",
+   "shelfmark": "BnF 500 de Colbert 401 f. 333",
+   "date": "10 Jul 1586",
+   "year": 1586,
+   "country": "Navarre",
+   "route": "La Rochelle -> Ségur",
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Tomokiyo's key reconstructed from the f. 321 interlinear; no plaintext of f. 333 found"
+   },
+   "length": {
+    "tokens": 108,
+    "distinct": 62,
+    "unit": "mixed",
+    "measured": true,
+    "file": "ct_333.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF at 2x",
+    "image_quality": "good",
+    "notes": "--digits count 108 numeric tokens (NOTES give 121 including clear-text markers and the superscript). The f. 321 key letter (La Rochelle, 11 June 1586) is the key source: every figure struck through by the decipherer and glossed between the lines; not re-transcribed."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Same chancery design as the ff. 233 key, different values: figures 12-62 for letters in alphabetical order with homophones (a 12-14 ... u 53-55, x y z, et 60-62), 63-142 a syllabary of sixteen consonant rows (b c d f g h j l m n p q r s t v) by five vowels, numbers from 162 for names.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2-3",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 62,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 5
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "S. Tomokiyo's key reconstructed from the f. 321 interlinear decipherment (cryptiana henryiii.htm; key_321.json), applied to f. 333 and extended by 24 = f, 34 = l, 36 = m, 61 = et.",
+  "notes": "162 = Le Roy de Navarre (Tomokiyo). 204, 189, 190, 166, 167 unidentified names. Five figures disagree with the French and were confirmed as written (55 in advis, 19 and 31 in à cheval, 88 in fault, 20 in marcher)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Tomokiyo's key reconstructed from the f. 321 interlinear decipherment, on cryptiana before the attempt; no plaintext of f. 333 found.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "decode.py and key_321.json (in targets/segur/)",
+   "solve.py, solve_mono.py, control.py (targets/segur/)"
+  ],
+  "models": [
+   "claude-fable-5-1"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-09-16",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-16",
+   "kind": "access",
+   "what": "Gallica IIIF fetched with a browser User-Agent.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "access",
+   "what": "Whole volume swept (440 canvases): cipher on six leaves; f. 321 (key letter with interlinear decipherment) and f. 333 are Tomokiyo's 'Henry III' pair.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "transcription",
+   "what": "f. 333 transcribed at 2x from the full-resolution IIIF image (ct_333.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "key from source",
+   "what": "f. 333 decrypted with Tomokiyo's f. 321 table; the reading forces 24 = f (frere), 34 = l (il, montera), 36 = m (comment) and 61 = et; the key is the ff. 233 key's design with letters shifted by eight and h/j rows added.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "statistical test"
+   ],
+   "what": "Free annealer on f. 333 alone fails (below unicity); matched control of the same size fails likewise.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "statistical test"
+   ],
+   "what": "Design-constrained annealer re-derives the f. 333 letter key blind under the alphabetical-design assumption: 54 of 58 letter tokens (93.1 %) against key_321.json, syllable rows weak (7 of 16 blocks); matched alphabetical control 90 %.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "transcription",
+   "what": "f. 321 at 2.4x and 3x, and strike-through removal tried: the decipherer's stroke runs through every figure, so no transcription independent of the interlinear is obtainable; recorded as Tomokiyo's ground truth.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split from segur under the one-key rule (George Lasry, 14 Oct 2026): f. 333 was read with Tomokiyo's f. 321 key, a different key from ff. 233/239/288v; its own entry. ct_333.txt, key_321.json, henryiii_figure.png and the f. 333-size controls moved here."
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "f. 333 was decrypted with Tomokiyo's key reconstructed from the f. 321 interlinear decipherment (published before the attempt), extended here by four values; a blind design-constrained re-derivation agrees on 93 % of the letter tokens but is not the source of the reading.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "sender or date identified"
+  ],
+  "class": "read",
+  "fraction_read": 0.954,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "ct_333.txt with key_321.json (letters 12-62, syllables 63-142 in 16 rows, 162 = Le Roy de Navarre): 108 numeric tokens, 103 with a value; 5 open name codes (204, 189, 190, 166, 167). Five figures confirmed as written disagree with the French (slips).",
+  "key": "partial",
+  "codes_open": {
+   "open": 5,
+   "tokens_open": 5
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "matched control",
+   "historical consistency"
+  ],
+  "notes": "f. 333 read with Tomokiyo's f. 321 key: the reistres, Navarre to mount on horseback, the levy to march; five name codes open. f. 321 itself not re-transcribed (struck through).",
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "key reconstructed from the f. 321 interlinear decipherment (cryptiana henryiii.htm), applied to f. 333 and extended by 24 = f, 34 = l, 36 = m, 61 = et",
+    "source": "cryptiana henryiii.htm"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the f. 321 interlinear decipherment from which Tomokiyo rebuilt the key"
+   }
+  ]
+ }
+}

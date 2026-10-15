@@ -2,6 +2,11 @@
 
 Catalogue item 215 (class C, scored by rule). Worked 19 Sept 2026.
 
+Split on 14 Oct 2026 under the one-key rule (George Lasry): this entry is R1957 and the King's cabinet code only. The
+ministerial letter of the same day, DECODE R1955, is in a different code (Michell's envoy code) and is now its own entry,
+[`targets/r1955/`](../r1955/) (a different cipher, with its own page, r1955.html), with its transcriptions and WAINUT's
+partial decoding. WAINUT's scripts stay in `key1751/scripts/` and serve both folders.
+
 **Outcome: found in print.** The text this cipher hides is printed in the *Politische Correspondenz Friedrichs des Grossen*,
 vol. 8 (Berlin 1882), no. 5263, pp. 576–577, "Au secrétaire Michell à Londres, Berlin, 28 décembre 1751", edited from the
 minute ("Nach dem Concept"). The copy at The Hague is the Dutch interceptors' copy of the letter as sent, in the Prussian
@@ -25,7 +30,7 @@ where 0 was read for the theta-shaped 8, list in `ct_corrections.tsv`, old file 
 1. The clear opening "J'ai reçu votre dépêche du 14 de ce mois" is word for word the opening of no. 5263. The other letter
    to Michell of the same date at The Hague (DECODE R1955, "(1)") opens "Toutes vos dépêches m'ont été bien rendues et la
    dernière est du 14e de ce mois" and uses a different code (fractional groups like 1½, 150½, 660½); it is the letter
-   DECODE's note calls "a letter of the same date with different length". R1955 is not this target and is not read here.
+   DECODE's note calls "a letter of the same date with different length". R1955 is not this target (now `targets/r1955/`).
 2. Length: 550 groups against 438 words of print after the opening, a ratio of 1.26, usual for a nomenclator that spells
    rarer words in syllables.
 3. Repeated groups fall in the same order and at the same relative places as repeated words of the print (`anchors.py`,
@@ -64,33 +69,14 @@ ministerial one (R1955) and this immediate one, both intercepted and copied in T
 - (Superseded 12 Oct 2026: WAINUT rebuilt the code, 179 values, see below.) The code is not reconstructed; a full alignment of the 550 groups to the print would give most of a Prussian 1751
   nomenclator (numbers up to ~6500, homophones for common words). Worth doing if other Prussian ciphers of 1750–52
   come up.
-- R1955 (the ministerial letter) is in a different code; the ministerial rescripts are not in the *Politische
-  Correspondenz*, so its plaintext is not in print. Not a catalogue target of its own.
+- R1955 (the ministerial letter) is in a different code; it is now its own entry, `targets/r1955/`.
 
 ## Sources
 
-- DECODE R1957 (images `IMG_R1957_I13456_P1.png`, `IMG_R1957_I13457_P2.png`) and R1955, fetched with the DECODE cookie;
+- DECODE R1957 (images `IMG_R1957_I13456_P1.png`, `IMG_R1957_I13457_P2.png`), fetched with the DECODE cookie;
   images git-ignored.
 - *Politische Correspondenz Friedrich's des Grossen*, Bd. 8 (1882), no. 5263, pp. 576–577:
   https://archive.org/details/politischecorres08freduoft
-
-## R1955, the other letter of 28 December 1751: attempted, open
-
-Worked 19 Sept 2026 (catalogue entry for DECODE R1955). Transcribed in full in `transcription_r1955.txt`.
-
-- The Dutch copy is headed *Lettre du Roi de Prusse au Secrétaire Michell du 28 Decemb. 1751* and signed *Féderic*, but
-  the *Politische Correspondenz* prints only one letter to Michell of that date (no. 5263 = R1957). This one is the
-  ministerial rescript, issued in the King's name and not printed.
-- The clear opening is *Toutes vos dépêches m'ont été bien rendues et la dernière est du 14e de ce mois*. Then come 362
-  code groups (2 to 5346, most under 3600, with half-groups 1½, 10½, 40½, 150½, 180½, 660½) and the date.
-- It shares no code with R1957: only 19 of their distinct groups coincide, and those are chance collisions.
-- 295 of the 362 groups are distinct, and the commonest (2, 230) occurs 5 times. That is a large two-part code with
-  homophones even for *de* and *que*, so ciphertext-only analysis has nothing to work with. The pair 1487 50 recurs 3×.
-- No printed or online decipherment was found. What could open it: the Prussian ministerial code of 1751 (GStA PK, I. HA
-  Rep. 96 / Rep. 9 Chiffres), Pierre Lyonet's decipherments for the States General (see K. de Leeuw, *Diplomacy &
-  Statecraft* 10, 1999), British decyphers of Michell's correspondence (BL Add MS Newcastle papers; TNA SP 107), or
-  other rescripts to Michell in the same code with known content. DECODE R1953 (von der Hellen to the King, 4 Jan 1752,
-  KHA inv. 196) was checked the same day and is in a different, smaller code (groups under ~1650, frequent repeats), so it is no sibling of R1955.
 
 ## Contributed by WAINUT, 11-12 Oct 2026: the cabinet code rebuilt; R1955 partly decoded in Michell's envoy code
 
@@ -169,58 +155,6 @@ independent v1 table decides, it favours our reading in 5 places (538 *a*, 894 *
 the reading of `ct.txt` in 2: 2439 *savoir* ("votre savoir faire", where we read 2139) and 586 *vous* (where we read
 506). In two more places `ct.txt` has 104 (*d'* in v1) where we read 184; *d'* fits neither place in the alignment.
 
-### 2. R1955: Michell's envoy code
-
-**Key material.** DECODE R1050 (Michell to Frederick II, London 5 Sep 1752) and R1051 (London 12 Nov 1751) are Hague
-copies of Michell's own reports with the contemporary Dutch decipherment written over the numbers (attributed in our
-notes to Pieter Lyonet; we have not compared the hand; on Lyonet's work for the States General see De Leeuw 1999,
-cited above). DECODE's transcriptions of them (March 2020) give each line of the decipherment above its cipher line.
-Pairing them token by token gives 512 code-word pairs for 271 codes; 5 lines with unequal counts are skipped. The code
-held over the ten months between the two reports: 40 codes occur in both, 32 with the same commonest value; 4 more
-differ only by inflection or by a tie between variants (*continuer*/*continue*, *dernier*/*dernière*, *on*/*l'on*,
-*d'*/*d*), and 4 disagree (800, 1005, 1805, 2341).
-The table derives from DECODE's transcriptions, so neither it nor they are committed here. `scripts/envoy_key.py
-<folder>` rebuilds it from DOC_R1050_*.txt and DOC_R1051_*.txt (DECODE login needed); `frozen_keys.sha256` holds the
-hash of the table used on 11 Oct.
-
-**R1955 is in that code.** The envoy table gives a value to 95 of R1955's 360 groups (26.4%), against 10 (2.8%) for
-cabinet v1 and 20 (5.6%) for v2; on R1957 it gives 30 of 548 (5.5%). Adjacent decoded words in R1955 form attested
-French word pairs more often than chance (`scripts/coherence.py`): 19 of 30 adjacent pairs, against a mean of 11.1 for
-2000 permutations of the same values (p = 0.001), with word pairs taken from our corpus of 18th-c. diplomatic French
-(French paragraphs of the Politische Correspondenz; the first 6 M characters used come from vols 8-13 only; spelling
-partly archaised, e.g. -ait to -oit, at random; not included). With PC vols 8-9 alone as corpus the result is weaker:
-14 of 30 against 9.5 (p = 0.046). The test has little power when the decoded values are mostly function words: the v1
-decode of R1957, which the LCS test shows to be right, scores 26 of 44 against 23.7 (p = 0.28).
-
-**Reading.** `R1955_reading_line.txt`, '·' for a group without a value. Legible fragments include "... avis ... sur
-... negociation avec ... de Vienne ... les difficulte(s) ... article ... du ... Prince Stadhouder ... maison ... cet
-avis et ... états ... depuis avis est ... ce projet ... nouvelle ... doit être ... des esperance(s) de ...". These are
-fragments of a trial decoding with a table from two other letters; the subject cannot be stated with confidence beyond
-Dutch affairs (the Prince Stadholder, a house, the States) and a negotiation that involves Vienna.
-
-**Circular-letter test (negative).** Hypothesis: R1955 repeats the wording of a royal letter of the same days printed
-in PC 8-9, which would then give its plaintext. The scoring rule was fixed before the results were seen
-(`scripts/circular.py`): longest common subsequence of R1955's 77 decoded words with each French PC letter of vols
-8-9, z against 100 shuffles; candidates are the letters of 22 Dec 1751 - 10 Jan 1752 (21), controls the other 1,329;
-a candidate counts only with z >= 4 and above every control. Best candidate PC 5268 (to Michell, 4 Jan 1752), z =
-2.69; highest control PC 5117, z = 4.85; no candidate qualifies. Our first run also scored five Dutch decipherments of
-royal letters to von der Hellen of 3-24 Dec 1751 (Fagel 5177, our transcriptions, not included here): z from -2.01 to
-0.57. Positive control (`--power`): a random 17% of the words of PC 5263 or 5262 scores z = 27.6 to 31.3 against its
-source and 5.8 to 10.9 against a 50% paraphrase of it, with control maxima of 2.7 to 5.3. A shared wording would have
-shown.
-
-**Transcription of R1955 against `transcription_r1955.txt`** (`scripts/compare_tx.py R1955_tx.txt
-../transcription_r1955.txt`): 352 of our 360 groups agree in sequence. Differences: the underlined run of nine digits
-without separators on l. 16 is one unsplit group in our file (best split 2 2407 2398) and "2240? 7? 2398" there, hence
-362 against 360; and 3356/3336, 194?/1949 (1949 is also our preferred reading), 247/227, 2?07/2407, 1401/1403,
-1517/1857 (p. 2 l. 1), 1321/1821 (p. 2 l. 3), ours first. The envoy table has values for 247 (*me*) and 1401
-(*depuis*) and none for 227, 1403, 1857 or 1821; that is weak support only.
-
-**Against the notes above.** We agree that R1955 is in another code than R1957, and we have nothing against its
-identification as the ministerial rescript of that day. Its code is the one Michell used for his own reports to the
-King (R1050, R1051); the King's immediate letters (R1957 and the six in Fagel 5177) use the cabinet code. Of the leads
-listed above, the contemporary Dutch decipherments (the Lyonet lead) are the one that worked.
-
 ### Established and inferred
 - Established: v1, built without R1957, predicts R1957's wording in order (LCS 123 against at most 65 for shuffles);
   grade-A v2 values recur in two or more letters; R1955 is not in the cabinet code; the envoy table fits R1955 far
@@ -245,10 +179,10 @@ listed above, the contemporary Dutch decipherments (the Lyonet lead) are the one
 - Any further letter in the cabinet code, for a held-out test of v2.
 
 ### Files (`key1751/`)
-- `fagel5177/*.txt`, `R1957_tx.txt`, `R1955_tx.txt`: WAINUT transcriptions (notation in each header).
+- `fagel5177/*.txt`, `R1957_tx.txt`: WAINUT transcriptions (notation in each header). `R1955_tx.txt` moved to `targets/r1955/` (14 Oct 2026).
 - `key_cabinet_v1_frozen.tsv`, `key_cabinet_v2_final.tsv`, `key_cabinet_v2_curated.tsv`, `frozen_keys.sha256`.
 - `blind_R1957_key_cabinet_v1_frozen_20261011T210822.txt` (the blind output as written), `blind_test_summary.txt`,
-  `align_R1957.txt`, `R1957_decipherment.tsv`, `R1955_reading_line.txt`, `circular_scores.tsv` (first run, which
+  `align_R1957.txt`, `R1957_decipherment.tsv`; `R1955_reading_line.txt` and `circular_scores.tsv` now in `targets/r1955/` (first run, which
   also scored our transcriptions of Fagel 5177 decipherments to von der Hellen).
 - `pc_michell.json`: PC 8-9 texts of the letters to Michell used here. Not included: build it locally from the UB Trier
   digital edition with `pc_html2txt.py` and `build_pc_michell.py` (git-ignored).
@@ -281,5 +215,4 @@ group *le roi de Sardaigne*.
 (357 before). The other eight differences with `R1957_tx.txt` are left as they were.
 
 Outcome: R1957 stays read from existing decipherment (the print), complete; the cabinet key is a partial key recovered
-from external plaintext (WAINUT); R1955 is read in part, 95 of 360 groups (26.4%), fragments only, with outside
-blockers (no further decipherments of Michell's reports online; NA 1.01.50 inv. 159 not digitised).
+from external plaintext (WAINUT). R1955 (read in part, 26.4%) is now `targets/r1955/`.

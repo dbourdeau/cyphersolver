@@ -3,6 +3,13 @@
 Private letter No. 21, "In the Cypher of the Legation", which is Pinckney's code. The Madison editors (PJM-SS 13:529-31)
 print Madison's interlinear decode as it stands and say the key has not been found (Weber 152-53).
 
+Page split, 14 Oct 2026 (one key, one entry): this letter was shown on the combined page `legation.html` with John
+Quincy Adams's No. 88 of 1812, which is in a different code (Adams's St Petersburg code, the = 1385). The two now have
+their own pages: this one is `docs/erving1807.html`; Adams's despatch, a different cipher with its own page, is
+`docs/jqa.html` (folder `../jqa/`). `legation.html` is a stub pointing to both. Erving's 10 Aug 1807 letter in the
+same Pinckney code is its own entry, `../erving1807aug/`. The page's reveal is built by `build_reveal.py` with the
+Pinckney key rebuilt there (`../erving1807aug/key_pinckney.tsv`).
+
 ## Sources read (2026-09-18)
 
 - **RC1**, NARA RG 59 DD Spain vol. 10 = microfilm **M31 reel 12, frames 0283-0286** (naId 188605361; manifest

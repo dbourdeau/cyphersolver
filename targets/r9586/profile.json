@@ -1,0 +1,159 @@
+{
+ "schema_version": 1,
+ "target": "r9586",
+ "title": "Castelcicala to Naples, two undated letters in a second code (ASNa Esteri 2337, DECODE R9586, R9588)",
+ "documents": [
+  {
+   "id": "R9588",
+   "shelfmark": "ASNa, Ministero degli affari esteri, busta 2337; DECODE R9588",
+   "date": "undated",
+   "year": "unknown",
+   "country": "Kingdom of the Two Sicilies",
+   "route": "Fabrizio Ruffo, principe di Castelcicala -> Naples",
+   "language": "Italian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment known; DECODE: Non-decrypted."
+   },
+   "length": {
+    "tokens": 432,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher/R9588.txt",
+    "distinct": 220
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "transcripts/R9588.txt, from the DECODE images",
+    "image_quality": "good",
+    "notes": "Second code (values about 100-1100 plus a few 1405-1952); sparse faint pencil syllabic glosses transcribed as P: lines; signed Castelcicala; not attacked."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "R9586",
+   "shelfmark": "ASNa, Ministero degli affari esteri, busta 2337; DECODE R9586",
+   "date": "undated",
+   "year": "unknown",
+   "country": "Kingdom of the Two Sicilies",
+   "route": "Fabrizio Ruffo, principe di Castelcicala -> Naples",
+   "language": "Italian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment known; DECODE: Non-decrypted."
+   },
+   "length": {
+    "tokens": 537,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher/R9586.txt",
+    "distinct": 240
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "transcripts/R9586.txt, from the DECODE images",
+    "image_quality": "good",
+    "notes": "Second code (values about 100-1100 plus a few 1405-1952); sparse faint pencil syllabic glosses transcribed as P: lines; signed Castelcicala; not attacked."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Numeric code with groups mostly 100-1100 (plus 1405, 1415, 1657, 1697, 1698, 1858, 1930, 1952), dots between groups; frequent 224, 1043, 1698, 294, 784, 319; many groups with short overbars.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2-4",
+   "separation": "dots"
+  },
+  "distinct_symbols": 344,
+  "diacritics": {
+   "used": true,
+   "note": "short overbars on many groups, not all transcribed"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none: not the Segreteria di Stato code of castelcicala1816 (key.tsv)",
+  "notes": "Faint pencil syllabic glosses over a few runs on both letters (e.g. 'ba li , che non effett in o la sol tan za'), a possible crib not yet aligned. distinct_symbols = distinct groups over both letters (cipher/R9586.txt, cipher/R9588.txt)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "sparse contemporary pencil glosses over a few runs on the leaves; no decipherment on DECODE or in print",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: DECODE session cookie, Claude Code with Opus 5, problem posed with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "subagent transcription"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-09-21"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "DECODE API metadata for R9532-R9591 and page images (with R9586, R9588) fetched with the session cookie.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "All 27 records of busta 2337 transcribed from full-resolution crops by two sub-agents; R9586 and R9588 found to be in a different code (values about 100-1100) with sparse pencil glosses; set aside, not attacked.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from castelcicala1816, which had included R9586 and R9588, two Castelcicala letters in a different code (values about 100-1100), with the despatches in the Segreteria di Stato code. This profile keeps R9586 and R9588 only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The two letters were transcribed and found to be in a second code with sparse pencil glosses; neither the glosses nor any key has been aligned with them yet.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "No group of cipher/R9586.txt or cipher/R9588.txt is claimed as read.",
+  "verification": [],
+  "notes": "In progress: transcribed 21 Sept 2026, not attacked. The pencil glosses are a possible crib. Split 14 Oct 2026 from castelcicala1816.",
+  "gaps": [
+   {
+    "item": "R9586 and R9588 (different code, values 100-1100)",
+    "blocker": "not-attempted",
+    "detail": "faint pencil syllabic glosses noted but not aligned; no key"
+   }
+  ],
+  "credits": []
+ }
+}

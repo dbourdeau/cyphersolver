@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "matignon1586",
- "title": "Forget / Mayenne / Matignon despatches of 1585-86 in Mayenne-Forget Cipher-1, BnF fr. 15572 (+ fr. 15571 f. 177), catalogue item 12",
+ "title": "Forget / Mayenne despatches of 1585-86 in Mayenne-Forget Cipher-1, BnF fr. 15572 (+ fr. 15571 f. 177), catalogue item 12",
  "documents": [
   {
    "id": "f143r",
@@ -435,7 +435,7 @@
   "word_division": "none",
   "doubled_letters": "special sign for some (yy = ss, T= = m/mm)",
   "sibling_key": "Tomokiyo's published partial tables for Mayenne-Forget Cipher-1; used as the starting key and corrected on the leaves.",
-  "notes": "87 entries in key.json, 42 of them code groups (19 marked unidentified '+', 4 names '*'). Several signs are confusable by shape (i/n/s, s/i, e/u at 0.91-0.93 correlation), so at the level of reading the cipher behaves as polyphonic and the language model chooses. A three-cipher hypothesis was made and retracted: all nine leaves tested answer to Cipher-1."
+  "notes": "87 entries in key.json, 42 of them code groups (19 marked unidentified '+', 4 names '*'). Several signs are confusable by shape (i/n/s, s/i, e/u at 0.91-0.93 correlation), so at the level of reading the cipher behaves as polyphonic and the language model chooses. A three-cipher hypothesis was made and retracted: all nine leaves tested answer to Cipher-1. Split on 14 Oct 2026 (one key per entry): Matignon's Cipher-3 leaves (fr. 15572 f. 276, fr. 15571 f. 179) are the entry matignon1586c3. f. 79r, once taken for a crib of 'Cipher-2', is Cipher-1 (the solved key reads it); the genuine Cipher-2 leaves fr. 15572 ff. 218-219 are not part of any entry (not attempted)."
  },
  "conditions": {
   "prior_solution": {
@@ -466,9 +466,9 @@
   "models": [
    "claude-opus-5"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-17",
-  "last_date": "2026-09-18"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -503,31 +503,49 @@
   },
   {
    "date": "2026-09-17",
-   "kind": "solver", "technique": ["beam/DP decoding"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding"
+   ],
    "what": "Word-aware decoder (wdec.py) tried against the character decoder on f. 143: no gain; residue is transcription.",
    "result": "failed"
   },
   {
    "date": "2026-09-17",
-   "kind": "hypothesis", "technique": ["crib testing", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
    "what": "ff. 196 and 201 identified as one despatch enciphered twice, with clear head and foot cribs.",
    "result": "worked"
   },
   {
    "date": "2026-09-17",
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
    "what": "f. 18 cipher / f. 19 clear decipherment pair found and verified (14 = que, 52 = plustost); labelled glyph exemplars mined from it.",
    "result": "worked"
   },
   {
    "date": "2026-09-17",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "Confusable figures measured at 0.91-0.93 correlation: not separable by shape, reading is polyphonic.",
    "result": "worked"
   },
   {
    "date": "2026-09-17",
-   "kind": "solver", "technique": ["beam/DP decoding", "crib testing"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "crib testing"
+   ],
    "what": "readleaf.py (segment, match exemplars, beam-decode) recovers about 70% of plaintext characters on the crib leaf; exemplars do not transfer to f. 143's hand.",
    "result": "partial"
   },
@@ -557,7 +575,11 @@
   },
   {
    "date": "2026-09-18",
-   "kind": "hypothesis", "technique": ["frequency analysis", "repeat/pattern analysis"],
+   "kind": "hypothesis",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
    "what": "Claimed ff. 123-124 and f. 110 were two further ciphers, from figure-frequency profiles; a 'rouergue' pattern on f. 79r gave five values for 'Cipher-2'.",
    "result": "failed"
   },
@@ -587,7 +609,11 @@
   },
   {
    "date": "2026-09-18",
-   "kind": "solver", "technique": ["beam/DP decoding", "statistical test"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "statistical test"
+   ],
    "what": "f. 110: automated glyph segmentation and clustering (fails its control on f. 154), seeded solve (moves 23 of 27 labels off the key), cold solve (-2.27 per figure, no continuous French).",
    "result": "failed"
   },
@@ -598,33 +624,9 @@
    "result": "worked"
   },
   {
-   "date": "2026-10-06",
+   "date": "2026-10-14",
    "kind": "verification",
-   "what": "alejandrozarco (PR #25): Tomokiyo's partial Cipher-3 table checked by hard-EM alignment of a blind transcription of sibling f. 277r against its contemporary decipherment on ff. 279-280; values added (### = et, two-stroke # = i, dotted v = u, S-shape = q and others).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-06",
-   "kind": "transcription",
-   "what": "alejandrozarco (PR #25): f. 276 (22 lines) and fr. 15571 f. 179 (21 lines) transcribed sign by sign twice, independently; reads agree on 93.8% (f. 276) and 91.5% (f. 179) of signs.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-06",
-   "kind": "reading",
-   "what": "alejandrozarco (PR #25): f. 276 deciphered with the Cipher-3 key, 698/734 signs (95.1%) in lexical runs (fr-henri4 word list); f. 179 transcribed and checked against Tomokiyo's unpublished magenta interlinear decipherment, 466/509 (91.6%). Poitou faction report naming La Rousiere, la Mare, Iehan Durant, Lansac.",
-   "result": "partial"
-  },
-  {
-   "date": "2026-10-07",
-   "kind": "control",
-   "what": "Review of PR #25: measure.py re-run reproduces 698/734 and 466/509; 50 shuffled keys give median 6.3% / 3.1% (max 21.5% / 21.0%); line structure of f. 276 L01, L21, L22 and f. 179 L18 (blot), L21 checked on the Gallica natives.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-07",
-   "kind": "control",
-   "what": "alejandrozarco, after the PR #25 review: measure.py and control_shuffle.py now take their lexicon from the shared lang/ model fr-1600-letters (corpora.text + lm.norm 'early', words >= 20 occurrences) instead of bundled word lists, which are removed. f. 276 706/734 (96.2%; 50 shuffled keys median 6.9%), f. 179 473/509 (92.9%; median 3.5%); the difference from the word list is mainly 'veullent' reaching 20 occurrences under lang normalisation. f. 276 L18 read as 'redoute la [K]; quelque chose', making the C-with-epsilon sign q and K a one-sign code word (paix? Ligue? Royne?).",
+   "what": "Split from the former combined target under the one-key rule (George Lasry, 14 Oct 2026): the two Cipher-3 leaves (f. 276, fr. 15571 f. 179; alejandrozarco, PR #25) became matignon1586c3 with their steps and credit; George Lasry's f. 43 credit (a leaf outside this target) removed. Coverage recalculated from measure.json on the Cipher-1 leaves only: 4,325 of 12,994 transcribed tokens (0.333), of ~14,082 with the untranscribed lines (0.307); chance-corrected 0.26 / 0.24. measure.py no longer lists the Cipher-3 leaves.",
    "result": "worked"
   }
  ],
@@ -638,9 +640,9 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.28,
+  "fraction_read": 0.3071,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over the transcription files (cipher_f143.txt, f143v_cipher.txt, f150/f154/f173/f196/f201/f110/f123r/f123v/f124r/f124v/f177_cipher.txt) with key.json and lm.pkl; output measure.json. Unit: cipher tokens (figures and code groups). A token is read if key.json gives it a value (BOX, '?', tokens not in the key and unidentified codes count unread) AND its decoded letters fall inside a run of >=3 corpus words (count >=20) and >=10 letters. 4,325 read of 12,994 transcribed tokens (0.333); denominator ~15,642 adds untranscribed lines (f. 110 17 rows, f. 196 5 lines, f. 177 5 lines, Cipher-3 ff. 276 and fr. 15571 f. 179 in full, estimated from line counts) -> 0.276. Scrambled-key control floor per leaf 4-14%; chance-corrected 0.26 of transcribed, 0.22 of the whole target. Keyed (value from the key, sense or not): 0.90 of transcribed tokens.",
+  "fraction_read_source": "measure.py over the Cipher-1 transcription files (cipher_f143.txt, f143v_cipher.txt, f150/f154/f173/f196/f201/f110/f123r/f123v/f124r/f124v/f177_cipher.txt) with key.json and lm.pkl; output measure.json. Unit: cipher tokens (figures and code groups). A token is read if key.json gives it a value (BOX, '?', tokens not in the key and unidentified codes count unread) AND its decoded letters fall inside a run of >=3 corpus words (count >=20) and >=10 letters. 4,325 read of 12,994 transcribed tokens (0.333); denominator ~14,082 adds the untranscribed lines of f. 110 (17 rows), f. 196 (5 lines) and f. 177 (5 lines), estimated from line counts -> 0.307 (recalculated 14 Oct 2026 without the Cipher-3 leaves, which had been counted in the denominator only). Scrambled-key control floor per leaf 4-14%; chance-corrected 0.26 of transcribed, 0.24 of the whole. Keyed (value from the key, sense or not): 0.90 of transcribed tokens.",
   "codes_open": {
    "open": 22,
    "total": 42
@@ -678,16 +680,6 @@
     "detail": "Smaller hand, noisier transcription; re-transcription not done."
    },
    {
-    "item": "Matignon's Cipher-3: fr. 15572 f. 276 (canvas 285 right, ~27 lines)",
-    "blocker": "not-attempted",
-    "detail": "Not transcribed. Siblings with contemporary decipherments exist (f. 189 in f. 190, ff. 277-278 in ff. 279-280, f. 282 margin) and Tomokiyo publishes a partial table: key material is there."
-   },
-   {
-    "item": "Matignon's Cipher-3: fr. 15571 f. 179 (canvas 187 left, bound upside down; ~25 lines)",
-    "blocker": "not-attempted",
-    "detail": "Not transcribed. img/BnFfr15571f179.jpg (from cryptiana) carries an interlinear decipherment in magenta and marginal key notes, i.e. a reading already exists; it has not been transcribed or checked here. This is the page NOTES listed as 'fr. 15571 f. 178v, fourth hand' (same slip)."
-   },
-   {
     "item": "Code 49 (frequent) and the other code groups valued '+' in key.json; name codes 82, 84, 98",
     "blocker": "open-codes",
     "detail": "No context yet fixes them; the f. 18/19 crib and siblings ff. 14/15, 78-79, 91-92 have not been searched for all of them."
@@ -698,14 +690,21 @@
     "detail": "Break off on ambiguous figures; joint reading of the two encipherments figure by figure not done."
    }
   ],
-  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring). The earlier estimate (0.28, from the Coverage prose) happens to equal the raw measurement; the prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. Cipher-3 leaves ff. 276 and fr. 15571 f. 179 are not in documents[] because they are untranscribed; they are in gaps and in the fraction's denominator.",
-  "fraction_coherent": 0.22,
-  "provenance": "mixed",
+  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'.",
+  "fraction_coherent": 0.24,
+  "provenance": "project",
   "credits": [
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial key tables for Cipher-1 and Cipher-3 (cryptiana), openings of ff. 143, 150, 154 used as checks, and his interlinear decipherment of fr. 15571 f. 179", "source": "cryptiana"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "same-volume decipherments (f. 14v in f. 15r, f. 18 in f. 19, f. 78v margin) used to verify and complete the key"},
-    {"who": "zarco", "role": "solution", "note": "PR #25: Cipher-3 leaves f. 276 deciphered with Tomokiyo's key (96.2%) and fr. 15571 f. 179 checked (92.9%)", "date": "2026-10-06", "source": "https://github.com/dbourdeau/cyphersolver/pull/25"},
-    {"who": "lasry", "role": "prior solution", "note": "fr. 15572 f. 43, in the catalogue line, solved by him in 2022 (left out of this target)", "date": "2022"}
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "partial key tables for Cipher-1 (cryptiana) and openings of ff. 143, 150, 154 used as checks",
+    "source": "cryptiana"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "same-volume decipherments (f. 14v in f. 15r, f. 18 in f. 19, f. 78v margin) used to verify and complete the key"
+   }
   ]
  }
 }

@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "coligny1563",
- "title": "Coligny to Elizabeth I, 2, 24 and 29 Jan 1563, BL Add MS 4136 ff. 141-148 (DECODE R9237, R9239, R9240)",
+ "title": "Coligny to Elizabeth I, 2, 12, 24 and 29 Jan 1563, BL Add MS 4136 ff. 141-148 (DECODE R9237, R9238, R9239, R9240)",
  "documents": [
   {
    "id": "R9237",
@@ -31,6 +31,36 @@
     "source": "not transcribed; images viewed",
     "image_quality": "good",
     "notes": "Forbes's copy of the ciphered passages only, numbered, with margin glosses."
+   }
+  },
+  {
+   "id": "R9238",
+   "shelfmark": "BL Add MS 4136 ff. 142-143 (DECODE R9238)",
+   "date": "12 Jan 1563",
+   "year": 1563,
+   "country": "France",
+   "route": "Gaspard de Coligny (camp at Villefranche) to Elizabeth I (London)",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Forbes, Full View ii (1741) 272-274; CSP Foreign vi no. 76 ('Orig. almost entirely in cipher, deciphered')",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images (Forbes's copy of the ciphered passages)",
+    "image_quality": "good",
+    "notes": "35 numbered passages in graphic signs; not transcribed. Identified by the copyist's margin glosses ('sins', 'desracine') against the printed text. f.143 lower half begins another Coligny letter (catalogue 93)."
    }
   },
   {
@@ -162,12 +192,21 @@
    "kind": "literature search",
    "what": "CSP Foreign vi on British History Online: no. 7 (2 Jan), no. 145 (24 Jan) and the 29 Jan entry are each 'in cipher, deciphered'.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key split (George Lasry, 14 Oct 2026): catalogue 92's two records are in different ciphers. R9238 (Coligny to Elizabeth, 12 Jan 1563) is in the graphic-sign cipher of the Condé key R335, the same key as Coligny's other three letters of January 1563 in coligny1563 (R9237, R9239, R9240), so it moved there; foix1563 keeps R9241 (Catherine de' Medici to Paul de Foix), in de Foix's own cipher. R9238 had been identified on 21 Sept 2026 from the margin glosses 'sins', 'desracine' as the Villefranche letter of 12 Jan 1563 (CSP Foreign vi no. 76; Forbes ii 272-274); the R335 check ('&' and '14' nulls, omega = La Royne d'Angleterre on the heading line of f.142) was made then.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "The three Coligny letters to Elizabeth (R9237, R9239, R9240) were identified from the copyist's margin glosses as letters deciphered at the time (CSP Foreign vi nos. 7, 145 and the 29 Jan 1563 entry) and printed in clear by Forbes, Full View ii (1741); the cipher itself was not deciphered here.",
-  "contribution": ["sender or date identified", "catalogue correction"],
+  "method_basis": "The four Coligny letters to Elizabeth (R9237, R9238, R9239, R9240) were identified from the copyist's margin glosses as letters deciphered at the time (CSP Foreign vi nos. 7, 76, 145 and the 29 Jan 1563 entry) and printed in clear by Forbes, Full View ii (1741); the cipher itself was not deciphered here.",
+  "contribution": [
+   "sender or date identified",
+   "catalogue correction"
+  ],
   "class": "already solved",
   "fraction_read": 1.0,
   "grades": {
@@ -176,10 +215,20 @@
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Read at the time and printed 1741; identified from margin glosses; catalogue entry 93 removed, no write-up.",
+  "notes": "Read at the time and printed 1741; identified from margin glosses; catalogue entries 93 removed and 92 narrowed, no write-up. R9238 joined from foix1563 on 14 Oct 2026.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "English decipherments of the time on the originals (TNA SP 70); CSP Foreign vi nos. 7, 145"},
-    {"who": "forbes", "role": "key or decipherment used", "note": "French clear texts printed in Full View ii (1741) 247-249, 300-303, 319-321", "date": "1741", "source": "Forbes, A Full View of the Public Transactions in the Reign of Q. Elizabeth ii (1741)"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "English decipherments of the time on the originals (TNA SP 70); CSP Foreign vi nos. 7, 76, 145"
+   },
+   {
+    "who": "forbes",
+    "role": "key or decipherment used",
+    "note": "French clear texts printed in Full View ii (1741) 247-249, 272-274, 300-303, 319-321",
+    "date": "1741",
+    "source": "Forbes, A Full View of the Public Transactions in the Reign of Q. Elizabeth ii (1741)"
+   }
   ]
  }
 }

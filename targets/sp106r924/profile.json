@@ -1,0 +1,164 @@
+{
+ "schema_version": 1,
+ "target": "sp106r924",
+ "title": "A member of Henrietta Maria's household (Paris) to Charles I, January 1646, in Lasry's SP106-8 key: TNA SP 106/10 ff. 235-236 (DECODE R924)",
+ "documents": [
+  {
+   "id": "R924",
+   "read": "read in part",
+   "shelfmark": "TNA SP 106/10 ff. 235-236 (DECODE R924)",
+   "date": "Jan [1646]",
+   "year": 1646,
+   "country": "England",
+   "route": "Henrietta Maria's household, Paris (writer signs 385) -> Charles I",
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "George Lasry, reconstructed key 'TNA SP106-8' and interlinear plaintext of ff. 235-236 and 238-240 on the DECODE record, 23 Oct 2020",
+    "partial": true
+   },
+   "length": {
+    "tokens": 2012,
+    "distinct": 214,
+    "unit": "code groups",
+    "measured": true,
+    "file": "withheld:decode/R924_ciphertext.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "Sofia Pettersson's manual transcription (DECODE, 2019, undated in the file), as aligned in Lasry's interlinear file",
+    "image_quality": "good",
+    "notes": "Images fetched with the DECODE cookie and viewed for the page crop (14 Oct 2026); transcription not redone."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Lasry's 'TNA SP106-8' key (Jan 1646): a numerical homophonic alphabet of one- and two-digit values (up to four for a vowel) with a numbered word list from 100 up (100 all, 101 are, 108 and, 141 for, 173 I, 174 in, 176 ing ...), numbers separated by colons.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 214,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Same key, per Lasry's files, on R925 (ff. 238-240, a letter of the Queen, January 1646)",
+  "notes": "Split on 14 Oct 2026 from the former hm1645, which joined six letters in four of Lasry's keys. Lasry's key file says there are no nulls; 11 low figures the key leaves without a value (21, 30, 42, 50, 16 ...) are left 'unknown' here. Other entries: hm1645 (TNA SP 106 key), sp106r787 (SP106-2), sp106r929 (SP106-5)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "DECODE record files of R924 (George Lasry, 23 Oct 2020: reconstructed key, interlinear plaintext, dating notes)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "published key",
+   "published reading"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "DECODE record files",
+   "apply_key.py (key applied group by group to the transcription and compared with Lasry's plaintext)"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-19",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-19",
+   "kind": "literature search",
+   "what": "Fetched the DECODE record page of R924 with the shared cookie; it links Pettersson's transcription, Lasry's reconstructed key 'TNA SP106-8' and his plaintext of ff. 235-236 and 238-240 (2020-10-23).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "control",
+   "what": "Re-fetched the record files and applied the key group by group to the 2012 groups of ff. 235-236 (apply_key.py): 1850 get a value; on the lines whose columns line up in Lasry's interlinear file (1604 keyed groups) every value equals his plaintext. 162 groups have no value in the key (58 distinct three-digit numbers, 11 low figures).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former combined target hm1645 under the one-key rule (George Lasry, 14 Oct 2026): R924 is the only letter of the six in the SP106-8 key. Folder, profile, page and ledgers separated; the earlier step is kept as recorded.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The letter was taken from George Lasry's plaintext on the DECODE record (23 Oct 2020); his SP106-8 key, applied here only as a check, reproduces it.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "fraction_read": 0.9195,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "apply_key.py over decode/ (Pettersson's groups as aligned in Lasry's interlinear file): 1850 of 2012 cipher groups have a value in Lasry's SP106-8 key",
+  "key": "partial",
+  "codes_open": {
+   "open": 69,
+   "tokens_open": 162
+  },
+  "gaps": [
+   {
+    "item": "three-digit word-list numbers not in Lasry's key (58 distinct, 85 tokens: 324, 428, 321, 532, 208, 797 ...)",
+    "blocker": "open-codes",
+    "detail": "Lasry leaves them in brackets; names and words of the numbered list. Not reconstructed here."
+   },
+   {
+    "item": "low figures with no value in the key (11 distinct, 77 tokens: 21, 30, 42, 50, 16 ...)",
+    "blocker": "open-codes",
+    "detail": "Lasry renders them '_'; dividers, nulls or values missing from his alphabet. Not settled here."
+   }
+  ],
+  "grades": "unknown",
+  "verification": [
+   "key confirms"
+  ],
+  "notes": "Nothing about the text is new: Lasry's decipherment on DECODE is the reading. DECODE's start date (26 June 1646) does not fit the letter's own 'Paris Jan'; queued as a correction.",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "reconstructed key 'TNA SP106-8' (Jan 1646) and interlinear plaintext of R924, with dating notes",
+    "date": "2020-10-23",
+    "source": "DECODE R924 record files"
+   },
+   {
+    "who": "pettersson",
+    "role": "transcription",
+    "note": "DECODE ciphertext transcription of ff. 235-236",
+    "date": "2019"
+   }
+  ]
+ }
+}

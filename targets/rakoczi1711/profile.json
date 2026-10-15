@@ -1,0 +1,157 @@
+{
+ "schema_version": 1,
+ "target": "rakoczi1711",
+ "title": "Ferenc Rákóczi II to an envoy bound for Holland, Lwów, 27 June 1711 (DECODE R483)",
+ "documents": [
+  {
+   "id": "R483",
+   "shelfmark": "MNL OL P237 Festetics 10. d. 2. 42-44 (DECODE R483)",
+   "date": "27 June 1711",
+   "year": 1711,
+   "country": "Poland",
+   "route": "Ferenc Rakoczi II, Lwow -> unnamed envoy bound for Holland",
+   "language": "Latin",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Full contemporary interlinear decipherment by the clerk: 2,524 of 2,531 groups lie under it (measured 14 Oct 2026); key rebuilt from it here."
+   },
+   "length": {
+    "tokens": 2531,
+    "distinct": 238,
+    "unit": "code groups",
+    "measured": true,
+    "file": "tr/R483_p1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images, MNL OL",
+    "image_quality": "good",
+    "notes": "Re-transcribed 21 Sept 2026 from the six images into tr/R483_p1-p6.txt, clerk interlinear on P: lines; DECODE text transcription (../rakoczi1704/DOC_R483_D2172_2172.txt) used as a cross-check. 2,531 groups counted over all six files with check483.py (14 Oct 2026)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Numerical Latin syllabary with homophonic letters, open syllables and a few word and name codes (238 distinct groups), not preserved; rebuilt here from the interlinear.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2-3",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 238,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "notes": "224 codes recovered by alignment (156 seen at least twice). Cipher and clear alternate within the lines. Not the R639 Bonac-Groffey table of the French letters in rakoczi1704 (R639 gives nonsense on it)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "contemporary interlinear decipherment over every ciphered stretch of the letter (DECODE R483 images)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Posed the target from the catalogue (item 44); supplied the DECODE session.",
+  "tools": [
+   "DECODE transcription fetch",
+   "hard-EM line aligner (interlinear to cipher)"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "control",
+   "what": "Applied R639 to the Latin R483: nonsense, so a different key.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "reading",
+   "what": "R483 found fully deciphered interlinearly at the time (Lwow, 27 June 1711, siege of Munkacs); key not rebuilt.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Fetched all 14 page images and re-transcribed every cipher page (R922, R912, R852, R483) with image-reading subagents; about 40% of DECODE lines corrected, two dropped lines restored.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "Rebuilt the R483 syllabic key by hard-EM alignment of 168 cipher lines with the interlinear: 224 codes; key reproduces 70% of the clerk letters.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split from rakoczi1704 under the one-key rule (Lasry, 14 Oct 2026): R483 is in its own Latin syllabary, not the R639 table of the three French letters. check483.py rerun after the move (69.9% clerk-letter agreement, output unchanged); interlinear coverage measured over tr/: 2,524 of 2,531 groups.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The clerk's contemporary interlinear decipherment covers 2,524 of the 2,531 cipher groups; it was transcribed and checked here against a 224-code key rebuilt from it by alignment.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "class": "read",
+  "key": "partial",
+  "fraction_read": 0.997,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "targets/rakoczi1711/tr/R483_p1-p6.txt: 2,524 of 2,531 cipher groups on lines with the clerk's interlinear (the other seven continue words written on the neighbouring line).",
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "Split on 14 Oct 2026 from rakoczi1704, which keeps the three French letters in the R639 table. The rebuilt key reproduces 69.9% of the clerk's letters (3,180/4,547); 68 of its 224 codes occur once (grade C). DECODE date 7 June corrected to 27 June 1711.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Clerk's interlinear decipherment of R483 (key rebuilt from it)"
+   }
+  ]
+ }
+}

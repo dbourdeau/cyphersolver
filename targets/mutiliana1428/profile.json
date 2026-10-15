@@ -1,0 +1,163 @@
+{
+ "schema_version": 1,
+ "target": "mutiliana1428",
+ "title": "Ricc. de Mutiliana (Forli) to Gianfrancesco Gonzaga, 6 Nov 1428, Archivio di Stato di Mantova (DECODE R1854 image 3)",
+ "documents": [
+  {
+   "id": "R1854-P3",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Mantova, Archivio Gonzaga (busta not given on DECODE), DECODE R1854 image 3",
+   "date": "6 Nov 1428",
+   "year": 1428,
+   "country": "Mantua",
+   "route": "Forli -> Mantua",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary letter-by-letter interlinear decipherment, faint; about two-thirds legible.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 894,
+    "distinct": 56,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ct_p3.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images via saved session cookie",
+    "image_quality": "fair",
+    "notes": "Gloss read by one subagent (p3_gloss.md), signs by a second (p3_signs.txt)."
+   }
+  }
+ ],
+ "system": {
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "sibling_key": "none (DECODE R1853 is the Gonzaga register of c. 1401-1420; no 1428-30 key)",
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution in graphic signs with nulls and three name codes (el signor Malatesta, li fioli del signor marchese, el papa).",
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "notes": "Nulls: +, hooked bar, hatched star, T, I, l, Lh, tc, quatrefoil. Split 14 Oct 2026 from r1854."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "contemporary letter-by-letter interlinear decipherment on the letter, faint, about two-thirds legible",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Project-level: DECODE login cookie and /goal target setting. No target-specific intervention.",
+  "tools": [
+   "subagent transcription passes (p3_gloss.md, p3_signs.txt)",
+   "targets/r1854/show.py"
+  ],
+  "models": [
+   "claude-opus-5-5",
+   "subagents for transcription passes"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-22",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-22",
+   "kind": "access",
+   "what": "Fetched R1854 (5 images), the R1853 register (14 images) and DECODE metadata with the saved cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "Read the R1853 register keys (Malatesta keys on f. 1, 1406-1419 keys): none match the 1428-30 letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "reading",
+   "what": "Subagent read P3's faint interlinear gloss (about two-thirds legible) and the three name codes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "transcription",
+   "what": "Subagent transcribed P3's 894 cipher signs with gloss letters attached.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "key from source",
+   "what": "P3 key from the gloss (30 sign values) plus rare signs from context; whole letter deciphered from the signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the R1854 entry under the one-key rule (Lasry, 14 Oct 2026): the record's four letters use four ciphers; image 3 is this entry. 869 of 894 signs read as sense (0.972, 5 Oct 2026 count).",
+   "result": "worked"
+  },
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 875 tokens, 50 types, it-cinquecento order 4: reading -2.145 per letter; random keys -4.343 (z 6.2); key annealed onto shuffled ciphertext best -2.864 (mean -2.909, z 22.7); annealer on the real text -2.267. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-10-15", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 875, "types": 50, "tokens_per_type": 17.5, "score": -2.145, "nulls": {"random keys": {"n": 200, "mean": -4.343, "sd": 0.357, "max": -3.567, "z": 6.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.909, "sd": 0.034, "max": -2.864, "z": 22.7, "p": 0.1429}}, "power": -2.267, "verdict": "pass", "notes": "claimed per-occurrence score -2.145; polyphony 0.0; 19 unread tokens left out; annealer on the real text from random keys reached -2.267"}, 
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was taken from the contemporary interlinear gloss over the signs (30 sign values, each attested 2-56 times; about two-thirds of the gloss legible), rare signs fixed from context, and every run deciphered from its signs rather than from the faint gloss.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "class": "read",
+  "key": "partial",
+  "fraction_read": 0.972,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_p3.md: 869 of 894 cipher signs (ct_p3.txt, measured) read as sense; re-counted 5 Oct 2026.",
+  "grades": "unknown",
+  "verification": ["contemporary decipherment", "historical consistency", "statistical test"],
+  "gaps": [
+   {
+    "item": "signs Z (2x) and fk (1x)",
+    "blocker": "too-short",
+    "detail": "no gloss over them, two and one occurrences"
+   }
+  ],
+  "notes": "Split 14 Oct 2026 from the four-letter R1854 entry. The method (adjacent plaintext rather than existing decipherment) is an assumption for George Lasry's review: the gloss is partial and the key was applied to the signs.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment of the letter, the key source"
+   }
+  ]
+ }
+}

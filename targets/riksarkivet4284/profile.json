@@ -1,0 +1,151 @@
+{
+ "schema_version": 1,
+ "target": "riksarkivet4284",
+ "title": "Latin numerical cipher letter of 1628, Riksarkivet Chifferklaver låda II:114 (DECODE R4284; from catalogue item 207)",
+ "documents": [
+  {
+   "id": "R4284",
+   "read": "not read",
+   "shelfmark": "Riksarkivet, Chifferklaver låda II:114, DECODE R4284",
+   "date": "1628",
+   "year": 1628,
+   "country": "unknown",
+   "route": "unknown -> Ludwig Camerarius?",
+   "language": "Latin",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none",
+    "partial": false
+   },
+   "length": {
+    "tokens": 822,
+    "distinct": 170,
+    "unit": "code groups",
+    "measured": true,
+    "file": "r4284_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE PDF, 4917 x 3895 spread",
+    "image_quality": "good",
+    "notes": "Agent transcription of 21 Sept 2026; about 20 multi-digit readings doubtful (possibly two numbers run together); one line written twice in the manuscript. Re-measured 14 Oct 2026 with docs/_check_profile.py --measure: 822 tokens, 170 distinct (the 21 Sept note gave 756 numbers and 108 values; the measure counts every doubtful form as its own value)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Numbers separated by commas inside a Latin letter, with Latin words in clear; many values, so probably homophonic, but the design is not established.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "commas"
+  },
+  "distinct_symbols": 170,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "A leaf filed with it tries a letter cipher on four phrases (effusorem sanguinis / pestem patriae / praeter naturalem / disturbatorem religionis); not used yet. Split on 14 Oct 2026 from riksarkivet1628 (catalogue 207)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "targets/riksarkivet1628/solve_num.py",
+   "targets/riksarkivet1628/qg.py"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched the 14 DECODE records of catalogue 207 with the project cookie; R4284 (Chifferklaver låda II:114, docketed with the letters to L. Camerarius for 1628) is one of four unrelated groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Agent transcription of R4284 (756 numbers, 108 distinct; about 20 doubtful multi-digit readings).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Homophonic Latin annealing of R4284 (8 x 250k), also over 4-number bands.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "Fetched 70 Chifferklaver låda II key records (R4259-R4329); tested the Siebenbürgen key (R4310) and the 1632 word-end-30 key (R4296) on R4284 (and R4306): no fit.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former catalogue-207 group entry riksarkivet1628 under the one-key rule (George Lasry, 14 Oct 2026); R4284 is a cipher of its own. Transcription re-measured (822 tokens, 170 distinct). No new attack.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Homophonic Latin annealing (8 x 250k, also on bands of four) gave Latin-sounding nonsense, and the two box keys tested (R4310, R4296) do not fit; 68 fetched key records and the key-test leaf are untried.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "targets/riksarkivet4284/r4284_transcription.txt: 822 tokens, none with a value.",
+  "verification": [
+   "none"
+  ],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "R4284, all number groups",
+    "blocker": "not-attempted",
+    "detail": "homophonic Latin annealing gave nonsense; only keys R4310 and R4296 of the 70 fetched key records tried; the key-test leaf is unused"
+   }
+  ],
+  "notes": "Split on 14 Oct 2026 from riksarkivet1628. Attempted, open: the escalation (other box keys, the key-test leaf, Camerarius editions) is not done."
+ }
+}

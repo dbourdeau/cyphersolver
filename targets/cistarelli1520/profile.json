@@ -1,0 +1,173 @@
+{
+ "schema_version": 1,
+ "target": "cistarelli1520",
+ "title": "Alfonso Cistarelli (Eger) to Cardinal Ippolito I d'Este, 25 July 1520, ASMo Ambasciatori Ungheria b. 4 (DECODE R1137; catalogue 158)",
+ "documents": [
+  {
+   "id": "R1137",
+   "shelfmark": "ASMo, Ambasciatori, Ungheria b. 4, Cistarelli no. 3 (DECODE R1137; Vestigia 1904)",
+   "date": "25 Jul 1520",
+   "year": 1520,
+   "country": "Hungary",
+   "route": "Alfonso Cistarelli (Eger) to Cardinal Ippolito I d'Este",
+   "language": "Italian",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false
+   },
+   "length": {
+    "tokens": 667,
+    "distinct": 42,
+    "unit": "symbols",
+    "measured": false,
+    "file": "targets/cistarelli1520/r1137_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE image, subagent transcription of two-digit groups",
+    "image_quality": "fair",
+    "notes": "584 numeric groups and 83 other signs; group boundaries inferred (no spaces)."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Two-digit figure cipher, groups mostly ending in 5 or 0, with a few letter signs (f, k, u, y), set inside clear Italian.",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {
+   "width": "2",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 42,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "notes": "Homophones on the anneal's evidence (e = 0, 25; a = 86, 80 ...). Group boundaries inferred (no spaces); a second reading of P2 L04-L07 disagrees on 13 of 92 groups. Not the Caprile 1520-21 sign cipher (caprile1520) nor the 1519 two-tier cipher (caprile1519)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "none found in ASMo, Vestigia, DECODE or print",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code with Opus 5, and posed the problem with /goal. No target-specific intervention recorded.",
+  "tools": [
+   "subagent transcription",
+   "n-gram annealing"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-02"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "DECODE R1126-R1140 metadata and images; Vestigia search Cistarelli (20 records); R1137 = Cistarelli no. 3 (Vestigia 1904).",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "A subagent transcribed R1137 P2: 584 two-digit groups and 83 other signs (667 tokens), group boundaries inferred.",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Ciphertext-only anneal on Cistarelli's R1137 with consensus fixing; phrases only (lettere per, presto, non se poteria, dua milla).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "sibling key",
+   "what": "Known keys for R1137: key21, the 1519 tables, Bonzagni 1512-14, Sadoleto 1482 and Maffeo 1489 are sign alphabets; DECODE harvest lists no Este/ASMo key 1490-1550; no numeric key to apply.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "control",
+   "what": "R1137 ciphertext-only anneal (fastanneal, order 4, 6 x 60k) against the same tokens shuffled: -2.69 vs -3.05 per token, so there is language signal, but the output gives only fragments ('auan[ti]', 'edirit[o]'); not read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "access",
+   "what": "R1137 P1, P3, P4 viewed at overview scale (the transcription had not checked them): P1 and P3 clear text, P4 address; cipher only on P2.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "transcription",
+   "what": "R1137 P2 spot-check of L04-L07 against the image (autocontrast bands, native resolution): 13 of 92 groups read differently from r1137_transcription.txt (85/95, 45/95, 0/5/6, 80/86, group boundaries); the full 584-group re-check was not completed because the image does not settle these digits.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "crib",
+   "technique": [
+    "simulated annealing",
+    "beam/DP decoding",
+    "crib testing",
+    "statistical test"
+   ],
+   "what": "R1137 crib test (r1137_crib.py, ORDER 5, 20 restarts base, 4 windows x 3 restarts x 80k per word, word-level segmentation rerank): cribs custode, agria, alfonso, debito, buda, episcopato give anneal gains -57 to -348 (mean -169), six control words -49 to -363 (mean -172); best word score is a control. No crib lands.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from caprile1519, which had joined three ciphers of the same ASMo file: the 1519 two-tier cipher (caprile1519), the 1520-21 sign cipher (caprile1520) and Cistarelli's figure cipher (cistarelli1520). This profile keeps the documents and steps of Cistarelli's figure cipher (R1137) only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Ciphertext-only annealing gives a partly consistent key and scattered phrases but no reading, and crib placement does not separate cribs from controls; no key or decipherment exists, and the only image does not settle the digits.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "No group of R1137 is claimed as read; the anneal fragments (lettere per, presto, saria meglio) are grade M at best and are not a reading (f37_*.txt, r1137_crib_out.txt).",
+  "verification": [],
+  "notes": "Attempted, open. Language signal above a shuffled control (-2.69 vs -3.05 per token), but fragments only. Blockers: transcription noise (14 % disagreement on a spot-check) on the only image, no key in the series, archive or decade. Split 14 Oct 2026 from caprile1519.",
+  "gaps": [
+   {
+    "item": "R1137, 584 two-digit groups",
+    "blocker": "needs-physical-access",
+    "detail": "the DECODE image does not settle the digits (13/92 groups disagree between two readings); no key exists; cribs = controls; a better photograph from ASMo (b. 4/26 no. 3) is the next step (judgement, not proven)"
+   }
+  ],
+  "credits": []
+ }
+}

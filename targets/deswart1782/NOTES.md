@@ -2,6 +2,13 @@
 
 Status: read (R1036, 96.7% of groups); R1040 (1787) read in part
 
+One document, two keys (one-key review, 14 Oct 2026): R1040 changes codebook at group 180 of image 5459, so the
+profile gives the outcome per key in `outcome.parts` and README has one row per part, as soria1523 does. Part 1, the
+Croiset 1765 key (R1038): R1036 whole and the second part of R1040. Part 2, the missing Rechteren-family code: the
+first 1,928 groups of R1040, not solved; the same code family as Rechteren's letter of 1785
+(`targets/rechteren1785/`, a different cipher, with its own page). The entry is read in part because R1040 is not
+read in full.
+
 ## Target
 
 Johan Isaac de Swart, Dutch resident at St Petersburg, to Pieter van Bleiswijk (Grand Pensionary), despatch of
@@ -153,3 +160,16 @@ inv. 158, which is not online. That segment is open.
 
 No published decipherment of R1036 or R1040 was found. The search covered record numbers, correspondent, dates
 and subject. The Oterleek-codes paper (HistoCrypt 2026) documents the codebook family but not these letters.
+
+## Remaining gaps
+- R1040 first part, 1,928 groups (images 5453-5458, 5459 groups 1-179) - blocker: no-key-material; a different, missing Rechteren-family code (probably NA inv. 158, not online); crib transfers from R2032/R2051/R2052 cover 2-3% and give no prose
+- R1040 second part, about 700 of 5,956 groups without a value - blocker: open-codes; the 1765 key with the R1036 context values and R1038 scan readings (5,256 given a value, R1040_second_key_tokens.tsv); no context pass yet on this part's own unread groups
+- R1036, 56 groups (51 distinct rare codes) - blocker: illegible; entries lost in the binding shadow of the R1038 scans, blank or too faint
+
+## Escalation
+- [x] siblings: R1038 (the key), R1039/R2032/R2051/R2052 plain-cipher pairs of the legation opened and aligned
+- [x] clear-pages: none on R1036 or R1040; the clear copies are on the 1784-86 sibling records only
+- [x] known-keys: 1765 Croiset key fits R1036 and R1040 part 2; the 1803 Croiset relative tried on R1040 part 1, nonsense
+- [x] print: no decipherment of R1036 or R1040 in print (Leeuw 2000, Oterleek codes HistoCrypt 2026)
+- [x] key-rebuild: 34 context values and 41 scan readings for R1036; crib transfers for R1040 part 1 (2-3%)
+- [x] retry: R1040 part 2 decoded again with the extended key (decode_1765.py includes the 34 context values and 41 scan readings); a context pass on its own ~700 unread groups is still to do

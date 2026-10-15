@@ -1,0 +1,200 @@
+{
+ "schema_version": 1,
+ "target": "r9416",
+ "title": "A Bavarian servant to his duke, and a report on the Pressburg talks, c. 1533-34, BayHStA Kurbayern Äußeres Archiv 4591 ff.262-263 (DECODE R9416; catalogue 161)",
+ "documents": [
+  {
+   "id": "R9416",
+   "shelfmark": "BayHStA Kurbayern Äußeres Archiv 4591 ff.262-263 (DECODE R9416)",
+   "date": "[c.1533-34]",
+   "year": "unknown",
+   "country": "Germany",
+   "route": "Bavarian agent(s) → the Duke of Bavaria",
+   "language": "German",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "f.262 fully glossed at the time; f.263 glossed on its first lines only, broken here."
+   },
+   "length": {
+    "tokens": 3313,
+    "unit": "symbols",
+    "measured": true,
+    "file": "r9416/signs_f263.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE JPEGs, 3468x4624, read from crops",
+    "image_quality": "good",
+    "notes": "Length is f.263 only. f.263 one char per sign in r9416/p34_v2.txt (v2 split of look-alikes); f.262 only its gloss transcribed (r9416/gloss.txt)."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Two sign sets in one record. f.262: homophonic graphic signs, glossed throughout at the time. f.263: a German homophonic substitution with about 23 frequent signs, word-separated ('io' always together), and person codes 'der d', 'der g', 'der h'.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none: f.263 broken from the ciphertext; f.262 not keyed",
+  "notes": "f.263 measured 58 distinct transcription codes (v2, with look-alike splits and doubtful signs). Split on 15 Oct 2026 from kaa4591 (catalogue 161)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "f.262 deciphered at the time (interlinear); a faint gloss over the first lines of f.263, found to agree after the break; no edition found.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: DECODE login cookie supplied; problem posed with /goal; the user asked for a period German model. No target-specific intervention.",
+  "tools": [
+   "targets/kaa4591/anneal.py",
+   "lang de-1500s"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-15"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Web search for KAA 4591 and Augurelio ciphers",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "DECODE record list from the API dump (141 records in the volume); images of the 14 targets and 30 neighbouring keys fetched with the cookie",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "R9416 f.262 gloss transcribed (read at the time)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Built de-1500s model from 145 Deutsches Textarchiv prints 1472-1609; annealing on R9416 f.263 (3150 signs) gave running German (Pressburg talks, Gritti)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "R9416 f.263 re-transcribed splitting look-alike signs found by the solver's errors",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-25",
+   "kind": "control",
+   "result": "worked",
+   "what": "Lasry (25 Sept 2026): split mixed cases. Primary method stays key from adjacent plaintext; R9416 f. 263, broken ciphertext-only, is a second part with its own Results row."
+  },
+  {
+   "date": "2026-09-30",
+   "kind": "reading",
+   "what": "R9416 f.263 recto lines 11-16 re-keyed by hand from the v2 transcription and checked word by word on the image: v2 sign z split into e (one-bar zig-zag) and s (two-bar dagger), b into d and l; lines 11-12 agree with the faint contemporary gloss ('das aus den tag zu bresburg erfolgt ist dahin auch / des Ferd tail ... mit grossem bumbb kummen sint auch'). Normalised passage (Pressburg diet, 'mit grossem Pomp', full powers, the Turkish embassy on Shrove Tuesday) in r9416/reading_p3_11-16.txt; rest of f.263 not yet re-keyed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591 (catalogue 161), whose fourteen records are letters in at least six systems: System A′ stays in kaa4591; Łaski's System B is kaa4591b; R9325 is fulda1576; R9367, R9416, R9424 and R9319 are r9367, r9416, r9424 and r9319; R9291 is a key fragment. R9416 keeps outcome.parts: f.262 and f.263 are two sign sets in one record.",
+   "result": "worked"
+  },
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 199 tokens, 25 types, de-1500s order 4: reading -2.667 per letter; polyphonic: 13% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"}
+ ],
+ "outcome": {"validation": {"date": "2026-10-15", "model": "de-1500s", "file": "validation.tsv", "tokens": 199, "types": 25, "tokens_per_type": 7.96, "score": -2.667, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 13% of read tokens differ from their type's commonest value"}, 
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The f.263 homophonic substitution (3,150 signs) was broken by constrained annealing with the de-1500s model on the first run; the faint gloss on its first lines agrees word for word. f.262 is read from its contemporary decipherment (second part).",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.06,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "mk_validation.py: 199 of the 3,313 transcription codes of f.263 (p34_v2.txt) read clean on recto lines 11-16 (the rest a working decrypt, not counted); a lower bound. f.262 not counted (signs not transcribed)",
+  "verification": ["contemporary decipherment", "historical consistency"],
+  "notes": "f.263: running German with local errors (working decrypt), recto lines 11-16 deciphered clean by hand (30 Sept 2026); codes der d / der g / der h are persons. f.262: the gloss is faint and only partly transcribed.",
+  "gaps": [
+   {
+    "item": "f.263 clean reading beyond recto lines 11-16",
+    "blocker": "open-codes",
+    "detail": "re-key the v2 transcription by hand as done for lines 11-16; one sign serves ch but the annealer gives it s"
+   },
+   {
+    "item": "f.263 person codes der d, der g, der h",
+    "blocker": "open-codes",
+    "detail": "probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once"
+   },
+   {
+    "item": "f.262 gloss lines A09-A11 and the faint words",
+    "blocker": "illegible",
+    "detail": "the contemporary gloss is faint; signs not transcribed"
+   }
+  ],
+  "parts": [
+   {
+    "label": "f. 263 (pp. 3-4), report on the Pressburg talks",
+    "records": "R9416 f. 263",
+    "method": "key recovered from ciphertext-only",
+    "extent": "partial",
+    "basis": "homophonic substitution broken by constrained annealing with the de-1500s model on 3,150 signs; the faint gloss on the first lines agrees afterwards; running German with local errors, lines 11-16 clean"
+   },
+   {
+    "label": "f. 262 (pp. 1-2), a servant's letter to his duke",
+    "records": "R9416 f. 262",
+    "method": "read from existing decipherment",
+    "extent": "partial",
+    "basis": "interlinear decipherment of the time over every line; transcribed in part (faint)"
+   }
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherment of f. 262 and the gloss over the first lines of f. 263"
+   }
+  ]
+ }
+}

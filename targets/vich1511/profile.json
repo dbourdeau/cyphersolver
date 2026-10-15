@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "target": "vich1511",
-  "title": "Ferdinand the Catholic to Jerónimo de Vich, AHN Estado 8715 N.45 (1511), N.57, N.60 (1512) and N.73 (1515)",
+  "title": "Ferdinand the Catholic to Jerónimo de Vich, AHN Estado 8715 N.45 (1511), N.57 and N.60 (1512), in the 1511-12 nomenclator",
   "documents": [
     {
       "id": "N.45",
@@ -81,46 +81,16 @@
         "source": "PARES records no decipherment; Terrateig 1963 not consulted"
       },
       "length": {
-        "tokens": 11612,
+        "tokens": 11591,
         "unit": "mixed",
         "measured": true,
-        "file": "n60_pp03-09.txt"
+        "file": "n60_transcription_v3.txt"
       },
       "transcription": {
         "by": "llm from images",
         "source": "PARES images",
         "image_quality": "unknown",
-        "notes": "Sum of the two files measured with --drop-first (6,407 + 5,205). The two transcribers of N.45 and N.60 read 'plort' differently."
-      }
-    },
-    {
-      "id": "N.73",
-      "read": "not read",
-      "shelfmark": "AHN Estado 8715 N.73 (PARES 12751418)",
-      "date": "26 Oct 1515",
-      "year": 1515,
-      "country": "Spain",
-      "route": "Pedrezuela -> Rome",
-      "language": "Spanish",
-      "cleartext_in_document": "separate passages",
-      "plaintext": {
-        "location": [
-          "none"
-        ],
-        "source": "No decipherment; no deciphered sibling in the same key"
-      },
-      "length": {
-        "tokens": 3177,
-        "distinct": 197,
-        "unit": "mixed",
-        "measured": true,
-        "file": "n73_transcription.txt"
-      },
-      "transcription": {
-        "by": "llm from images",
-        "source": "PARES images (lines/s73p*)",
-        "image_quality": "unknown",
-        "notes": "Measured with --drop-first; matches NOTES."
+        "notes": "v3 (5 Oct 2026): pp. 3-6 read at 4-5x, pp. 7-15 proofread at 4x; counted by measure.py (lines starting L). The two transcribers of N.45 and N.60 read 'plort' differently."
       }
     }
   ],
@@ -130,7 +100,7 @@
       "nomenclator",
       "syllabic"
     ],
-    "summary": "Nomenclator: homophonic alphabet of figures and marked letters plus three-letter code groups for words and syllables (N.73 is a different, unread system).",
+    "summary": "Nomenclator of 1511-12: a homophonic alphabet of figures and marked letters plus three-letter code groups for words and syllables.",
     "symbol_kind": "letters and symbols",
     "distinct_symbols": "unknown",
     "diacritics": {
@@ -190,15 +160,14 @@
     "tools": [
       "pares.py",
       "lines.py, half.py (strip cutters)",
-      "decode.py",
-      "solve73.py, solve73g.py (Spanish 5-gram annealing)"
+      "decode.py"
     ],
     "models": [
       "claude-opus-5"
     ],
     "sessions": 1,
     "first_date": "2026-09-18",
-    "last_date": "2026-09-18"
+    "last_date": "2026-10-14"
   },
   "solution": [
     {
@@ -230,12 +199,6 @@
       "kind": "reading",
       "what": "N.60 read; key at 153 groups.",
       "result": "worked"
-    },
-    {
-      "date": "2026-09-18",
-      "kind": "solver", "technique": ["simulated annealing", "language-model scoring", "contextual inference"],
-      "what": "N.73: Spanish 5-gram annealing with groups split, whole, and as context breaks.",
-      "result": "failed"
     },
     {
       "date": "2026-09-18",
@@ -273,9 +236,36 @@
       "what": "N.60 re-transcribed from the images (v2, 11,592 tokens): old '2' = & (y), &2 = x; flort liga, fiy favor, fuy exercito, mat obligado added. q/q1 split applied to N.45 and N.57 (151 q checked, 69 -> q1). Token coverage N.45 0.984, N.57 0.976, N.60 0.948; sense words 0.858/0.865/0.824. gz, phi, reg, goi still open; pp. 7-15 of N.60 read only at 2x.",
       "result": "partial"
     },
-    {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 21747 tokens, 234 types, es-golden-age order 4: reading -2.09 per letter; random keys -3.69 (z 9.0); key annealed onto shuffled ciphertext best -2.588 (mean -2.596, z 75.0); annealer on the real text -2.228. Verdict: pass.", "result": "worked"}
-   ],
-  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 21747, "types": 234, "tokens_per_type": 92.94, "score": -2.09, "nulls": {"random keys": {"n": 200, "mean": -3.69, "sd": 0.178, "max": -3.213, "z": 9.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.596, "sd": 0.007, "max": -2.588, "z": 75.0, "p": 0.1429}}, "power": -2.228, "verdict": "pass", "notes": "claimed per-occurrence score -2.186; polyphony 0.0; 792 unread tokens left out; annealer on the real text from random keys reached -2.228"}, 
+    {
+      "date": "2026-10-05",
+      "kind": "transcription",
+      "what": "N.60 pp. 7-15 proofread at 4x (v3, 35 corrections). Coverage 0.948 unchanged, sense 0.824; gz/phi/reg/goi/sid still open. L1522-L1530 not viewed.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "literature search",
+      "what": "Zurita, Historia del rey don Fernando lib. X (IFC PDF) searched: it narrates N.60's outcomes (interdict on France, Guyenne and Normandy absolved, Sforza in Milan) but prints no letter text. Terrateig 1963 and Doussinague 1944 not online; web searches found no transcription.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-11",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 21747 tokens, 234 types, es-golden-age order 4: reading -2.09 per letter; random keys -3.69 (z 9.0); key annealed onto shuffled ciphertext best -2.588 (mean -2.596, z 75.0); annealer on the real text -2.228. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): N.73 (1515, another system) moved to targets/vich1515/ with its transcription and solver scripts. Fraction re-measured on N.45/N.57/N.60 alone with measure.py (N.60 v3): 21,750 of 22,538 tokens (0.965).",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
     "method": "key recovered based on adjacent plaintext",
     "method_basis": "The nomenclator was rebuilt by aligning N.46 and N.52BIS, sibling letters in the same Vich file (AHN Estado 8715) that carry the clerk's decipherment on the following leaves, with their cipher; N.45, N.57 and N.60 were then read and filled in the rest.",
     "contribution": [
@@ -285,14 +275,9 @@
     "class": "read in part",
     "gaps": [
       {
-        "item": "N.73 (26 Oct 1515, 3,177 tokens)",
+        "item": "N.60 open groups gz, phi, reg, goi, sid (~250 tokens)",
         "blocker": "no-key-material",
-        "detail": "different system, no deciphered sibling; annealing with Spanish 5-grams failed. Alone caps the target below 0.90."
-      },
-      {
-        "item": "N.60 open groups gz, phi, reg, goi, sid and surviving letter garbles",
-        "blocker": "not-attempted",
-        "detail": "gz/phi/reg occur in no deciphered sibling; pp. 7-15 of the v2 transcription were read at 2x only and need a 4-5x pass"
+        "detail": "absent from all five deciphered siblings; re-transcribed twice (v2, v3), and context gives only medium or low proposals; Terrateig 1963 (unseen) may print the decipherment; L1522-L1530 still to be proofread"
       },
       {
         "item": "8 no-bar q tokens in N.45 and 2 q1 missing from the transcription",
@@ -300,18 +285,56 @@
         "detail": "qwork/q_decisions.tsv"
       }
     ],
-    "fraction_read": 0.865,
+    "fraction_read": 0.965,
     "fraction_read_method": "measured",
-    "fraction_read_source": "measure.py over n12/n39/n41 transcriptions, n45_pp*_v2, n57_transcription_v2, n60_transcription_v2, n73 (0/3,177, other key): 26,434/30,559 = 0.865. Per letter N.45 0.984, N.57 0.976, N.60 0.948, N.41 0.971, N.39 0.948, N.12 0.994. measure_sense.py attested-word share (a floor): N.45 0.858, N.57 0.865, N.60 0.824.",
+    "fraction_read_source": "measure.py over n45_pp*_v2, n57_transcription_v2, n60_transcription_v3 (the three documents): 21,750/22,538 = 0.965. Per letter N.45 0.984, N.57 0.976, N.60 0.948. Siblings in the same key (reference, not documents): N.41 0.971, N.39 0.948, N.12 0.994. measure_sense.py attested-word share (a floor): N.45 0.858, N.57 0.865, N.60 0.824 (5 Oct 2026).",
     "key": "partial",
     "codes_open": {
       "open": 259,
       "tokens_open": 995
     },
-    "verification": ["key confirms", "historical consistency", "statistical test"],
-    "notes": "N.45, N.57, N.60 read with about 3-8% of groups unread (5-14% counting garbled stretches); N.73 not read. fraction_read measured roughly: 12,213 of 13,381 decoded tokens in N.45/N.57/N.60 not bracketed, over those plus the 3,177 tokens of unread N.73 (0.74).",
+    "verification": [
+      "key confirms",
+      "historical consistency",
+      "statistical test"
+    ],
+    "notes": "N.45, N.57, N.60 read with about 2-5% of tokens unread (more counting garbled stretches); N.60's open groups gz, phi, reg, goi, sid have no sibling occurrence. Validation (11 Oct 2026) ran on the v2 transcriptions. Split 14 Oct 2026: N.73 of 1515, another system, is targets/vich1515/.",
+    "validation": {
+      "date": "2026-10-11",
+      "model": "es-golden-age",
+      "file": "validation.tsv",
+      "tokens": 21747,
+      "types": 234,
+      "tokens_per_type": 92.94,
+      "score": -2.09,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -3.69,
+          "sd": 0.178,
+          "max": -3.213,
+          "z": 9.0,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -2.596,
+          "sd": 0.007,
+          "max": -2.588,
+          "z": 75.0,
+          "p": 0.1429
+        }
+      },
+      "power": -2.228,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.186; polyphony 0.0; 792 unread tokens left out; annealer on the real text from random keys reached -2.228"
+    },
     "credits": [
-      {"who": "contemporary", "role": "key or decipherment used", "note": "clerk's decipherments of the siblings N.46 and N.52BIS (and N.41, N.39, N.12)"}
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "clerk's decipherments of the siblings N.46 and N.52BIS (and N.41, N.39, N.12)"
+      }
     ]
   }
 }

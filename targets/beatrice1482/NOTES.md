@@ -1,6 +1,18 @@
-# Beatrice d'Aragona: five DECODE letters
+# Beatrice d'Aragona to Eleonora d'Aragona, Pozsony, May–June 1482 (DECODE R1140, R1141)
 
-Status: found already in print; R1154 is not a cipher. See RESULT.md for verification limits.
+Status: found already in print (MDE III, 1877, nos. 10 and 12). See RESULT.md for verification limits.
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Catalogue item 160 grouped five DECODE
+records by sender. This entry keeps the two 1482 letters (R1140, R1141), in the 1482 alphabet. The others now have
+their own folders and pages (each a different cipher, or none, with its own page):
+- R1142, Buda, 8 March 1486: [`targets/beatrice1486/`](../beatrice1486/NOTES.md). Its alphabet looks different from the
+  1482 one, and the letter says it uses "the old cipher" and encloses a new one;
+- R1143, Buda, 2 May 1486: [`targets/beatrice1486b/`](../beatrice1486b/NOTES.md). Two months after the new cipher was
+  sent; not shown to share a key with R1142;
+- R1154, Naples, 29 May 1505: [`targets/beatrice1505/`](../beatrice1505/NOTES.md). Plain Italian, not a cipher.
+
+RESULT.md (the research report on all five), metadata.json, original_catalogue_entry.json and fetch_decode.py stay
+here as shared material; the OCR extracts for R1142, R1143 and R1154 moved to the new folders' `readings/`.
 
 Research begun 20 September 2026 from the user's goal-objective attachment.
 No new cryptanalytic reading claimed. The table below preserves the starting DECODE metadata; corrections and primary-source evidence are in RESULT.md.

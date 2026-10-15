@@ -107,6 +107,34 @@ Validation of the new packet reproduces 541 line-aligned readings, 6,428 cipher 
 
 This is publication of existing results, not a renewed solving run. The user ended the key-comparison exercise and requested this contribution. Original files remain untouched.
 
+## The five letters of George Lasry's package, as documents (14 Oct 2026)
+
+`profile.json` now lists every letter his edition covers (counts from `lasry/counts.json`, his non-null
+occurrences given a proposed value, tentative ones included):
+
+| profile id | letter (Lasry no.) | shelfmark | occurrences | non-null valued |
+|---|---|---|---|---|
+| fr2988f2 | 1 | BnF fr. 2988 ff. 2r-v; duplicate fr. 3019 no. 27 ff. 73r-74r (Madrid, 27 March 1528) | 818 | 764 of 790 |
+| r1894 | 2 | BnF fr. 2988 ff. 9r-10v (DECODE R1894); copy fr. 20506 ff. 136-138 (R4450) | 1,781 | 1,703 of 1,746 |
+| no20 | 3 | BnF fr. 3022 no. 20, ff. 44-47; copy Clair. 327 ff. 279-280 | 1,314 | 1,185 of 1,249 |
+| fr4050 | 4 | BnF fr. 4050 ff. 79-81 | 1,559 | 1,440 of 1,530 |
+| fr6638 | 5 | BnF fr. 6638 pp. 67-70 | 956 | 875 of 906 |
+
+Letters 4 and 5 have not been seen or transcribed by this project; Biermann's transcription gives no Gallica link
+for them. Letter 1 is transcribed here too (`n20/ranzo_c006.txt`, `c007.txt`); Rosson's key values 88.7% of its
+groups in connected runs.
+
+## Assumptions for George's review
+
+- All five letters are treated as one code, Ranzo's, on the evidence of his package: one 871-entry key reads all
+  five. For fr. 4050 and fr. 6638 this project has no independent check (no image seen, no shared-group count of
+  its own).
+- fr. 4050 and fr. 6638 carry no date in his files; the profile gives them the year 1528 of the other three, with
+  the date "unknown".
+- His credit stays a single "solution" credit covering the five letters; Rosson's covers what his page reads
+  (no. 20, the fr. 3019 duplicate of letter 1, the last lines of fr. 2988 view 20), and his key applied here
+  values letters 1-3 as measured above.
+
 ## Remaining gaps
 
 - No. 20 and the Ranzo letters of fr. 2988 ff. 9-10 (R1894/R4450): 84 groups without a value (of 3,903 parsed in all twelve files), 76 guesses, and 79.8% (no. 20) and 93.1% (R1894) in connected stretches - blocker: open-codes; Rosson's key (6 Oct 2026) reads the rest, our own annealer never did. Still to do: compare his islands with the images page by page; transcribe fr. 2988 ff. 2r-v and fr. 3019 f. 73 (the duplicate) here.

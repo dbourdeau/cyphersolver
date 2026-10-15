@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "papai1706",
- "title": "János Pápai (Constantinople) to Ferenc Rákóczi II, 1706-1710 (DECODE R731, R740, R741, R757, R765, R784, R793-R796, R805, R823)",
+ "title": "Janos Papai (Constantinople) to Ferenc Rakoczi II, 1706-1710, in the envoy key R580 (DECODE R740, R741, R757, R765, R784, R793-R796, R805, R823)",
  "documents": [
   {
    "id": "R805",
@@ -178,36 +178,6 @@
    }
   },
   {
-   "id": "R731",
-   "read": "not read",
-   "shelfmark": "MNL OL G15 Caps. H Fasc. 226, pp. 31-33 (DECODE R731)",
-   "date": "6 March 1710",
-   "year": 1710,
-   "country": "Hungary",
-   "route": "Landor Fejervar (Belgrade) -> Ferenc Rakoczi II",
-   "language": "Hungarian",
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "none"
-   },
-   "length": {
-    "tokens": 371,
-    "distinct": 15,
-    "unit": "symbols",
-    "measured": false,
-    "file": "R731_signs.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE camera images IMG_R731_I4153-4155 (2448x3264), zoomed 1.8-1.9x; R731_signs.txt",
-    "image_quality": "fair",
-    "notes": "Six graphic-sign passages: 316 signs of 14 types plus 55 dot clusters kept as one token each (counted per character, since the file writes one character per sign and --measure splits on spaces). Tentative: the low swash may be a pen link and the dot clusters may be vowel marks."
-   }
-  },
-  {
    "id": "R784",
    "read": "read",
    "shelfmark": "MNL OL G15 Caps. D Fasc. 80, pp. 110-111 (DECODE R784)",
@@ -359,7 +329,7 @@
    "syllabic",
    "nomenclator"
   ],
-  "summary": "Hungarian syllabic nomenclator, values 10-322: two homophones per letter, CV/VC syllables, and names, countries, places and months; R731 uses a separate graphic-sign alphabet.",
+  "summary": "Hungarian syllabic nomenclator, values 10-322: two homophones per letter, CV/VC syllables, and names, countries, places and months.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "2-3",
@@ -383,7 +353,7 @@
   "key_order": "partly alphabetical",
   "word_division": "none",
   "sibling_key": "DECODE R580 / R581 / R452 (Papai Janosnak adott Clavis)",
-  "notes": "Key heading: Nemzetes Vitezlo Papai Janosnak adott Clavis massa."
+  "notes": "Key heading: Nemzetes Vitezlo Papai Janosnak adott Clavis massa. R731 (1710) uses a separate graphic-sign alphabet and has its own entry (papai1710)."
  },
  "conditions": {
   "prior_solution": {
@@ -414,7 +384,7 @@
   {
    "date": "2026-09-21",
    "kind": "access",
-   "what": "Fetched the seven DECODE records, five transcriptions and the R731/R740 images with the project cookie.",
+   "what": "Fetched the DECODE records, transcriptions and the R740 images with the project cookie.",
    "result": "worked"
   },
   {
@@ -440,12 +410,6 @@
    "kind": "transcription",
    "what": "Transcribed the numeric passage of R740 from the image (168 groups) and read it in full.",
    "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "Tried to transcribe R731's six graphic-sign passages from the camera images; signs not secure enough for a solve.",
-   "result": "failed"
   },
   {
    "date": "2026-09-21",
@@ -485,7 +449,11 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "plaintext matching"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "plaintext matching"
+   ],
    "what": "R795 only 83.9% in key: 251 groups 323-740. Compared with the contemporary interlinear: the decipherer skips them, so nulls.",
    "result": "worked"
   },
@@ -497,43 +465,18 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "access",
-   "what": "Fetched R731 images 4153-4155 and key image R581 (3842) at full resolution.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "verification",
-   "what": "Checked R581's corner sign line (upside down): a line of cipher signs, not an alphabet; R731 pages carry no decipherment.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "Transcribed R731's six graphic-sign passages at 1.8-1.9x zoom into R731_signs.txt (~330 signs, 15 types + dot clusters); tentative.",
-   "result": "partial"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "control",
-   "what": "Validated swap-annealing solver (solve731.py) on Papai's own text enciphered at random, same line lengths: recovered exactly (-8.96/4-gram vs -8.87 real).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing"],
-   "what": "Annealed R731 as transcribed, without dots, without swash strokes, reversed: best -10.1/4-gram, no Hungarian.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-21",
    "kind": "literature search",
    "what": "Benda (ed.) 1963 edition of Papai's Turkish diaries: not online, antiquarian copies only.",
    "result": "failed"
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "repeat/pattern analysis", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis",
+    "contextual inference"
+   ],
    "what": "decode2.py: split run-together groups, re-join split groups, 3-digit >322 as nulls (R823 clear numerals), 220 = a from context.",
    "result": "worked"
   },
@@ -548,16 +491,27 @@
    "kind": "prediction",
    "what": "Rescored every remaining off-key group with the 4-gram model in context (retry_groups.py): no clear winner for the 57 left.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from papai1706, which had joined Papai's eleven numeric letters in the envoy key R580/R581 with R731 (6 Mar 1710), whose passages are in a separate graphic-sign alphabet. This profile keeps the eleven numeric letters (R580 key) only.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "DECODE key R580/R581, headed 'key given to János Pápai', from the same Rákóczi archive (MNL OL G15), was applied to DECODE's transcriptions of the eleven numeric letters and read 99.7% of groups.",
-  "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
-  "class": "read in part",
-  "fraction_read": 0.97,
+  "contribution": [
+   "transcription",
+   "key extended or corrected",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "class": "read",
+  "fraction_read": 0.994,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode2.py over the DECODE transcriptions: 16,641 of 16,698 numeric groups (nulls counted read); ~41 '?' tokens and R731's ~330 signs added as unread: 16,641/~17,070.",
+  "fraction_read_source": "decode2.py over the DECODE transcriptions of the eleven numeric letters: 16,641 of 16,698 numeric groups (nulls counted read); the ~41 tokens DECODE marks '?' added as unread: 16,641/~16,739. Before the split R731's ~330 signs were also counted unread (0.97).",
   "key": "partial",
   "codes_open": {
    "tokens_open": 57
@@ -571,13 +525,8 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Eleven numeric letters read at 99.7% of groups after the second pass; R731's graphic-sign passages transcribed tentatively and attacked with a control-validated solver, not read.",
+  "notes": "Eleven numeric letters read at 99.7% of groups after the second pass; 57 scattered groups (DECODE digit slips) and ~41 '?' tokens open, all blocked by the transcription. Split 14 Oct 2026: R731's graphic-sign passages are papai1710; on the eleven letters alone the read bar is met, so the class is read (was read in part).",
   "gaps": [
-   {
-    "item": "R731 (6 Mar 1710, Belgrade), six graphic-sign passages, ~330 signs",
-    "blocker": "illegible",
-    "detail": "tentative transcription R731_signs.txt; sign segmentation and dot counts not fixable from 2448-px camera images; validated solver finds no Hungarian"
-   },
    {
     "item": "57 numeric groups across R757, R765, R793-R796, R823 (+~41 '?' tokens)",
     "blocker": "illegible",
@@ -590,7 +539,11 @@
    }
   ],
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "key sheet \"given to János Pápai\" (MNL OL G15 C 43/39, DECODE R580); interlinear decipherments of R793-R796"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "key sheet \"given to János Pápai\" (MNL OL G15 C 43/39, DECODE R580); interlinear decipherments of R793-R796"
+   }
   ]
  }
 }

@@ -1,0 +1,138 @@
+{
+ "schema_version": 1,
+ "target": "r2236",
+ "title": "DECODE R2236, 'Copie No 1' and 'Copie No 2': Dutch number-cipher copies, KHA The Hague, Prins Willem V inv. 337 (catalogue 218)",
+ "documents": [
+  {
+   "id": "R2236",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, Prins Willem V, inv. 337; DECODE R2236",
+   "date": "unknown",
+   "year": 1795,
+   "country": "Prussia",
+   "route": "Willem Frederik, Hereditary Prince (Berlin) -> William V",
+   "language": "Dutch",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the record."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Viewed only (DECODE IMG_R2236_I15513-I15516); not transcribed.",
+    "image_quality": "fair",
+    "notes": "Numbers up to about 390 (copies No 1, No 2) and up to 2835 (page 1); not attacked."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Numbers to about 390 (and to 2835 on one page) between clear Dutch words; probably a numbered list like R2237's, but a different one.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "sibling_key": "R2237/R2239 French word list (hereditary1796): R2236's numbers run past it",
+  "notes": "Split on 14 Oct 2026 from hereditary1796. Viewed only, not transcribed."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "no decipherment on the record; not searched in print",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: DECODE login cookie supplied, target posed with /goal; the user asked mid-session to push further toward a full reading.",
+  "tools": [
+   "DECODE API and filesrv download",
+   "PIL rotation and strips",
+   "wordtable.py constraint table (python)",
+   "Huygens retroboeken full-text search"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-15"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched R2236, R2237, R2239 metadata and 14 images with the session cookie.",
+   "result": "worked",
+   "date": "2026-09-21"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "key matching"
+   ],
+   "what": "R2236 viewed against the R2237/R2239 word list: its numbers run to about 390 (and 2835 on one page), past the ~250-entry list, and its clear words are Dutch, not French. Not the same list; not transcribed.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split under the one-key rule from hereditary1796: R2236 is in another list, so it is its own entry, attempted and open."
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "access",
+   "result": "worked",
+   "what": "Images re-fetched with the DECODE cookie for the site crop (copy No 1, upper half)."
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Viewed but not transcribed: the numbers run past the only known list (R2237's, French) and the clear words are Dutch; no list or decipherment for it was found.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "Copie No 1, Copie No 2 and the page of numbers to 2835",
+    "blocker": "no-key-material",
+    "detail": "a different list from the R2237/R2239 French one; no list or decipherment found on the record, in the file or in print"
+   }
+  ],
+  "notes": "Split on 14 Oct 2026 from hereditary1796 (R2239, read with the R2237 list). Lead: de Leeuw, Cryptologia 25 (2001), on Euler's ciphers at William V's court, not seen.",
+  "credits": []
+ }
+}

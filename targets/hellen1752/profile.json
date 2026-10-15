@@ -164,22 +164,35 @@
       "result": "worked"
     },
     {
-      "kind": "crib", "technique": ["crib testing", "plaintext matching"],
+      "kind": "crib",
+      "technique": [
+        "crib testing",
+        "plaintext matching"
+      ],
       "what": "Searched Politische Correspondenz 9, 13, 22, 23 for printed or quoted text of these reports.",
       "result": "failed"
     },
     {
-      "kind": "statistics", "technique": ["repeat/pattern analysis"],
+      "kind": "statistics",
+      "technique": [
+        "repeat/pattern analysis"
+      ],
       "what": "Repeated-bigram comparison: three separate codes (1752, 1756, 1763).",
       "result": "worked"
     },
     {
-      "kind": "statistics", "technique": ["frequency analysis"],
+      "kind": "statistics",
+      "technique": [
+        "frequency analysis"
+      ],
       "what": "1763 code: gap 1555-2005, flat frequencies, clustered homophones (900-923 = ~5.7%, plausibly 'de').",
       "result": "partial"
     },
     {
-      "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
       "what": "One-part alphabetical code: linear mapping to PC French word list; density correlation 0.31, no readable text.",
       "result": "failed"
     },
@@ -189,7 +202,10 @@
       "result": "failed"
     },
     {
-      "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
       "what": "Two alphabetical sections (1-1555 common words, 2005-3920 rarer words): density vs. PC word lists per section, correlations -0.25 to 0.34.",
       "result": "failed"
     },
@@ -199,7 +215,11 @@
       "result": "failed"
     },
     {
-      "kind": "hypothesis", "technique": ["key-structure hypothesis", "frequency analysis"],
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis",
+        "frequency analysis"
+      ],
       "what": "One-part test on codes A (1752, R1953) and B (1756, R1049): density vs PC word lists, corr -0.08 to 0.33; flat frequencies (max 10/841, 10/511). Both are two-part codes like C.",
       "result": "failed"
     },
@@ -214,7 +234,10 @@
       "result": "worked"
     },
     {
-      "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
       "what": "20 September 2026: downgraded earlier random-code and homophone assertions; density test failures do not establish these properties.",
       "result": "partial"
     },
@@ -242,12 +265,20 @@
       "kind": "access",
       "what": "20 September 2026: browser confirmed Nationaal Archief viewer renders an empty catalogue area and a temporary scan-maintenance notice; no Fagel 5206 manuscript image retrieved.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "One-key check (George Lasry, 14 Oct 2026): the 1752, 1756 and 1763 code families are provisional and no code is identified, so distinct keys are not shown; the entry is not split and claims no shared key. To be split per code when one is identified.",
+      "result": "worked"
     }
   ],
   "outcome": {
     "method": "not solved",
     "method_basis": "No plaintext or key was found (Politische Correspondenz and the de Leeuw/Lyonet literature were searched; R2824 was rejected); the Fagel 5206 decipherments could not be retrieved.",
-    "contribution": ["none"],
+    "contribution": [
+      "none"
+    ],
     "class": "not read",
     "fraction_read": 0,
     "grades": "unknown",

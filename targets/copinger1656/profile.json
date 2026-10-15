@@ -1,0 +1,157 @@
+{
+ "schema_version": 1,
+ "target": "copinger1656",
+ "title": "Intercepted letter from Brussels to Mr Copinger, 12 Aug 1656 (Thurloe State Papers v.267): a name and a word in digits",
+ "documents": [
+  {
+   "id": "c-brussels-1656",
+   "read": "not read",
+   "shelfmark": "Bodleian Rawlinson A vol. xli p. 78; printed TSP v.267",
+   "date": "12 Aug 1656",
+   "year": 1656,
+   "country": "unknown",
+   "route": "Brussels -> London (to Copinger)",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 16,
+    "distinct": 8,
+    "unit": "symbols",
+    "measured": true,
+    "file": "c_brussels_12aug1656.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Birch, Thurloe State Papers (1742) via British History Online",
+    "image_quality": "no images",
+    "notes": "Single digits: a 12-sign name and a 4-sign word inside a clear English sentence."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "A ten-symbol digit cipher: a 12-sign name and a 4-sign word in a clear English letter.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1",
+   "separation": "spaces"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Every 1653-60 royalist and Commonwealth key on cryptiana (Marshall, Barwick-Hyde, Stamford, Butler, Charles II intercepted, Kingston, Westrope, Hague agent/Blake) tried; none fits.",
+  "notes": "Name pattern ABCDEDFDGEAB, word HGBE; the crib 'the king' forces an impossible name, so the digits are not a plain letter alphabet or the word is not 'king'. Split on 14 Oct 2026 from the four-piece thurloe entry."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Listed as undeciphered by Tomokiyo (cryptiana item #9); Birch's transcriptions are the only online witness and carry no decipherment.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "cleartext context",
+   "published key"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "unknown",
+  "tools": [
+   "apply_keys.py (period keys scored by quadgram LM)"
+  ],
+  "models": "unknown",
+  "sessions": 1,
+  "first_date": "2026-09-15",
+  "last_date": "2026-09-22"
+ },
+ "solution": [
+  {
+   "date": "2026-09-15",
+   "kind": "transcription",
+   "what": "Extracted piece (c) from Birch's Thurloe State Papers on British History Online.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Frequencies and repeats of piece (c) (analyze.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "sibling key",
+   "what": "Applied every 1653-60 royalist and Commonwealth key from cryptiana (Marshall, Barwick-Hyde, Stamford, Butler, Charles II intercepted 1655, Kingston, Westrope, Hague agent/Blake) to piece (c) with apply_keys.py, scored by quadgram models: nothing readable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "repeat/pattern analysis",
+    "contextual inference"
+   ],
+   "what": "(c) 'the king' for the 4-sign word forces an impossible name pattern; unresolvable at 16 symbols.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule from thurloe (four unrelated pieces of the Thurloe State Papers): piece (c) gets its own entry; ciphertext file moved here; shared scripts stay in targets/thurloe/.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Sixteen single digits (a name and a word) that no 1653-60 key on cryptiana reads; the crib 'the king' fails on the name pattern; too short for anything more.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Original in Bodleian Rawlinson A vol. xli, not digitised; Birch's print is the only witness. Split on 14 Oct 2026 from thurloe.",
+  "gaps": [
+   {
+    "item": "(c) Brussels 1656, 16 digits",
+    "blocker": "too-short",
+    "detail": "A 12-sign name and a 4-sign word."
+   }
+  ],
+  "credits": [
+   {
+    "who": "birch",
+    "role": "transcription",
+    "note": "Thurloe State Papers (1742): the only witness of the four intercepts",
+    "date": "1742"
+   }
+  ]
+ }
+}

@@ -3,12 +3,23 @@
 BnF français 3096, nos. 63, 65 and 66 (Gallica `btv1b9060015d`). The letters
 concern Ferrara's defection from France before the Peace of Cambrai.
 
+**One entry for one cipher (merged 14 Oct 2026, one-key rule).** The same three letters in the same key were also
+the target `sormano1529`, Arya Sanketbhai Patel's work (PR #2, 18 Sept 2026), with its own profile, page and
+outcome (read in part, 0.05, against this folder's "read"). They are now one entry: this folder, this profile and
+`docs/sormano.html`. His folder moved to `targets/sormano/arya/` unchanged (NOTES, scripts, `key_lasry.tsv`,
+`ct/`, `src/`), and `docs/sormano1529.html` is a stub pointing here. What his work adds is credited to him in the
+profile and on the page: the third sheet of no. 63 (f. 123, numbered "3", dated *penultimo de Febraro* = 27 Feb
+1529, signed Sormano and Joachin), the identification of "Ioachin" as Gian Gioacchino de Passano, seigneur de Vaux,
+no. 64 having no cipher, the "de Venetiani" gloss on f. 116v, the f. 124 margin crib, an independent derivation of
+22 key values (20 agree with Lasry's table) and the record of eight failed ciphertext-only methods on the microfilm.
+The reconciled outcome is below (## Outcome, reconciled).
+
 ## Leaves and controls
 
 | item | leaf / Gallica view | date | state |
 |---|---|---|---|
 | no. 62 | f. 113 / view 117 | 22 March 1529 | cipher with contemporary interlinear decipherment; key control |
-| no. 63 | ff. 115–116 / views 119–121 | after 23 February 1529 | target; read as far as it goes, see `n63_reading.md`; final leaf is f. 123, bound out of order (targets/sormano1529/NOTES.md), not read |
+| no. 63 | ff. 115–116, 123 / views 119–121, 127 | 27 February 1529 (*penultimo*, on f. 123r) | target; ff. 115–116 read in patches, see `n63_reading.md`; the third sheet f. 123r, bound out of order (arya/NOTES.md §1), read 14 Oct 2026, see `n63_f123r_reading.md` |
 | no. 65 | ff. 119–120 / views 123–124 | 23 February 1529 | target; read, see `n65_reading.md` / `n65_transcription.md` |
 | no. 66 | ff. 121–122 / views 125–127 | 23 February 1529 | target; docketed `duplicata`; read, see `n66_reading.md` |
 | no. 67 | f. 124 | 1529 | Sormano's `Doppio`, cipher with decipherment; second control |
@@ -63,6 +74,10 @@ wholly unciphered, so the continuation of no. 63 is not there; the end of the
 letter, and its date, still have to be located. `pages.json` covers only the
 four sides ff. 115r–116v for no. 63.
 
+**Superseded (14 Oct 2026):** the end is f. 123r, bound out of order after the duplicate, numbered "3" at the
+foot and dated *penultimo de Febraro* 1529 (found by Patel, `arya/NOTES.md` §1); its cipher is read in
+`n63_f123r_reading.md`. The image is canvas 127 (`raw/full127.jpg` in the main checkout, right half).
+
 ## Files
 
 `n65_transcription.md` / `n66_transcription.md` — line-by-line transcriptions.
@@ -90,6 +105,8 @@ This target and `targets/sormano1529/` cover the same three letters (nos. 63, 65
 unknown; `targets/sormano1529/profile.json` says read in part, 0.05. The two records should be reconciled into one outcome
 the next time either is worked; not reclassified in the review, by decision.
 
+**Resolved 14 Oct 2026:** merged into this entry; see the head of this file and ## Outcome, reconciled.
+
 ## Glyph-level XML (24 Sept 2026, pilot for George Lasry)
 
 `xml/no63.xml`, `xml/no65.xml`, `xml/no66.xml`, made by `python tools/transcription_xml.py sormano` from the
@@ -97,3 +114,43 @@ the next time either is worked; not reclassified in the review, by decision.
 with `cert="low"` wherever the Markdown has `{..}` or `(?)`, `type="null"` for (ɦ)/(ﬀ), `type="code"` for ◎ = DUCA,
 and `<gap>` for unread stretches. The Markdown records decoded letters, not sign labels, so the XML has readings and
 certainty but no sign identity. It has no coordinates either: no bounding boxes were stored.
+
+## Outcome, reconciled (14 Oct 2026)
+
+The two old profiles disagreed (this one "read", fraction unknown; sormano1529 "read in part", 0.05 estimated).
+From the evidence in both folders, judged per document:
+
+- **No. 65** (ff. 119–120): read. Transcribed throughout (`n65_transcription.md`, 3,888 glyphs in `xml/no65.xml`,
+  205 marked low-certainty, no unread stretch); about a dozen words stay (?) or in braces (foot of f. 119r, foot
+  of f. 119v, f. 120r run).
+- **No. 66** (ff. 121–122): read; 1,249 glyphs in `xml/no66.xml`, 12 short unread stretches; the clear twin of
+  no. 65 controls most of it.
+- **No. 63** (ff. 115–116, 123): read in part. On ff. 115–116 the clear text and the shorter cipher runs are read
+  but the long runs of ff. 115v–116r only in patches (252 unread stretches in `xml/no63.xml`; their length was not
+  recorded, so no token fraction can be measured). The third sheet f. 123r, found by Patel, was deciphered on
+  14 Oct 2026 with the same key (`n63_f123r_reading.md`): about 386 of 389 cipher glyphs give Italian, three signs
+  before *ricaduto* do not. It ends the letter on Naples and the captaincy, and its postscript reports letters from
+  Rome of the 18th: the Pope has relapsed, *sensa speransa di salute*, and the French cardinals should make ready
+  for a conclave (Clement VII's illness of early 1529).
+
+So the entry is **read in part** (no. 63 is not read in full), method read with known key (Lasry's key for the
+volume, verified on the glossed no. 62 and on no. 67). `fraction_read` stays unknown: the transcriptions record
+decoded letters with unread stretches of unrecorded length, not sign counts. Patel's 0.05 was an estimate made
+before the transcription here existed.
+
+Point to recheck: on f. 123r the crossbarred long-s behaves as a null three times (*q(f)uello*, *qu(f)elli*,
+*pa(f)pa*), where KEY.md, from the f. 113r gloss, makes it a fourth *e*. The f. 123r reading drops it; KEY.md is
+not changed until the sign is compared on the two leaves.
+
+## Remaining gaps
+- no. 63 ff. 115v-116r, long cipher runs read only in patches (252 unread stretches) - blocker: illegible; 44-60 px signs on the microfilm (MF 31394) whose i/o and other homophone forms differ by less than the film records (arya/NOTES.md 5b); segmentation merges and splits signs in runs with no clear word to anchor them; a new capture of the original would settle them
+- no. 65, about a dozen words marked (?) or in braces (foot of f. 119r, foot of f. 119v, f. 120r) - blocker: illegible; same cause, the glyph strings are kept in n65_transcription.md
+- no. 63 f. 123r, three signs before "ricaduto" (V 7 4 = a e i, no word) - blocker: illegible; read as written they give no word, and context alone is not used to fill them
+
+## Escalation
+- [x] siblings: nos. 62 and 67 (glossed) used as key controls; nos. 65/66 crib each other; no. 64 has no cipher; f. 123 found to be no. 63's third sheet (Patel) and deciphered
+- [x] clear-pages: interlinear decipherment f. 113 and marginal decipherment f. 124 aligned; f. 116v "de Venetiani" gloss noted
+- [x] known-keys: Lasry's 2023 key (Tomokiyo, francis.htm) applied; the Langeac-Passano Venice cipher of fr. 3000 f. 74 compared and is a different cipher
+- [x] print: Molini, Documenti di storia italiana II, does not print nos. 63, 65, 66 (Patel); Tomokiyo lists them without decipherment; fr. 2974 f. 94 (Molini's printed decipherment of Sormano's 13 April letter) not digitised, and no longer needed for the key
+- [x] key-rebuild: the null, the duca sign and four letter forms added to Lasry's table (KEY.md); Patel's independent 22 values agree on 20
+- [n/a] retry: the open stretches are limited by the image, not by the key; running them again with the same key gives nothing new until a better capture of the leaves exists

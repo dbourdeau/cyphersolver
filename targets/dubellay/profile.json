@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "dubellay",
- "title": "Jean du Bellay (London) to Montmorency, 1528-29, BnF fr. 3077 and fr. 3078 (catalogue item 4)",
+ "title": "Jean du Bellay (London) to Montmorency, 1529, BnF fr. 3077 and fr. 3078 (catalogue item 4; the 1528 letter split off to dubellay1528)",
  "documents": [
   {
    "id": "16jun1529",
@@ -186,7 +186,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "Le Grand 1688 (1529 letters incl. 30 June), Bourrilly and de Vaissiere 1905 (28 Oct 1528), Scheurer 1969 t. I (16 June 1529 block p. 41; 22 Oct 1529 opening pp. 111-112)",
+   "where": "Le Grand 1688 (1529 letters incl. 30 June), Scheurer 1969 t. I (16 June 1529 block p. 41; 22 Oct 1529 opening pp. 111-112)",
    "found": "during attempt",
    "used": true
   },
@@ -211,7 +211,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-17",
-  "last_date": "2026-10-09"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -285,11 +285,17 @@
    "kind": "verification",
    "what": "Recount for the write-up: the measure had skipped line 6 (it opens with '=', read as a comment marker). Lines labelled L0-L7; 194 signs, 191 with an established value (98.5%). Before Scheurer, lines 0-6 (181 signs) had all but four values (null, vous, faict, boxed cross).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): fr. 3077 no. 23 (28 Oct 1528) is in du Bellay's first cipher (Bourrilly 1905; Lasry 2022) and is now dubellay1528; this entry keeps Bayonne's cipher of 1529. Credits for Bourrilly (1528 key) and Lasry (1528 cipher) moved to dubellay1528.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "Every cipher passage of the catalogue item is printed in clear (Le Grand 1688; Bourrilly and de Vaissiere 1905), and so are the two by-products once thought unread: the 16 June 1529 block (Scheurer 1969 no. 12 p. 41) and the 22 Oct 1529 opening (Scheurer pp. 111-112). The project re-derived the key from the 22 June interlinear and deciphered lines 0-6 of the 16 June block from the leaf before finding Scheurer, who confirmed it.",
+  "method_basis": "Every 1529 cipher passage of the catalogue item is printed in clear (Le Grand 1688), and so are the two by-products once thought unread: the 16 June 1529 block (Scheurer 1969 no. 12 p. 41) and the 22 Oct 1529 opening (Scheurer pp. 111-112). The project re-derived the key from the 22 June interlinear and deciphered lines 0-6 of the 16 June block from the leaf before finding Scheurer, who confirmed it.",
   "contribution": [
    "key extended or corrected",
    "sender or date identified",
@@ -306,12 +312,28 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "p21_signs.txt (191 of 194 signs with an established value; the 16 June block only)",
   "credits": [
-    {"who": "legrand", "role": "key or decipherment used", "note": "Court's decipherments printed in Histoire du divorce III (1688)", "date": "1688"},
-    {"who": "bourrilly", "role": "key or decipherment used", "note": "28 Oct 1528 cipher printed in clear with their recovered key (1905, no. 156)", "date": "1905"},
-    {"who": "scheurer", "role": "key or decipherment used", "note": "Correspondance du cardinal Jean du Bellay t. I (1969): 16 June 1529 block p. 41 and 22 Oct 1529 opening pp. 111-112; confirmed and completed the reading", "date": "1969"},
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "table of Bayonne's cipher (1529), francis.htm"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment of 22 June 1529 (fr. 3078 no. 4)"},
-    {"who": "lasry", "role": "prior solution", "note": "re-solved the 1528 cipher in 2022 (GL.htm)", "date": "2022"}
+   {
+    "who": "legrand",
+    "role": "key or decipherment used",
+    "note": "Court's decipherments printed in Histoire du divorce III (1688)",
+    "date": "1688"
+   },
+   {
+    "who": "scheurer",
+    "role": "key or decipherment used",
+    "note": "Correspondance du cardinal Jean du Bellay t. I (1969): 16 June 1529 block p. 41 and 22 Oct 1529 opening pp. 111-112; confirmed and completed the reading",
+    "date": "1969"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "table of Bayonne's cipher (1529), francis.htm"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment of 22 June 1529 (fr. 3078 no. 4)"
+   }
   ]
  }
 }

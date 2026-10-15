@@ -1,0 +1,230 @@
+{
+ "schema_version": 1,
+ "target": "windischgraetz1720b",
+ "title": "Charles VI to Count Leopold Viktorin Windischgrätz, 1720-22 (DECODE R5021-R5024), the Emperor's private key R5018",
+ "documents": [
+  {
+   "id": "No. 2",
+   "read": "read",
+   "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 694 karton 5 (autograph, DECODE R5021); inv. 5 book 5 pp. 404-407 (copy, DECODE R5022)",
+   "date": "13 Apr 1720",
+   "year": 1720,
+   "country": "Austria (Emperor Charles VI)",
+   "route": "Vienna -> The Hague",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 37,
+    "unit": "mixed",
+    "measured": false,
+    "file": "dec_R5018_letters.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Register copy (book 5), DECODE images",
+    "image_quality": "unknown",
+    "notes": "Counts for Nos. 2, 3, 6 are a script count of the numbers, [sign] and two-letter code tokens in the bold cipher strings of dec_R5018_letters.md, not a --measure result; there is no separate ciphertext file."
+   }
+  },
+  {
+   "id": "No. 3",
+   "read": "read",
+   "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 5 book 5 pp. 407-409 (copy, DECODE R5023; autograph not found)",
+   "date": "24 Jul 1720",
+   "year": 1720,
+   "country": "Austria (Emperor Charles VI)",
+   "route": "Vienna -> The Hague",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 88,
+    "unit": "mixed",
+    "measured": false,
+    "file": "dec_R5018_letters.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Register copy (book 5), DECODE images",
+    "image_quality": "unknown"
+   }
+  },
+  {
+   "id": "No. 6",
+   "read": "read",
+   "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 5 book 5 pp. 414-416 (copy, DECODE R5024)",
+   "date": "11 Apr 1722",
+   "year": 1722,
+   "country": "Austria (Emperor Charles VI)",
+   "route": "Vienna -> Cambrai",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 67,
+    "unit": "mixed",
+    "measured": false,
+    "file": "dec_R5018_letters.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Register copy (book 5), DECODE images",
+    "image_quality": "unknown"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "The Emperor's private key R5018: each of 24 letters a number from 10 to 38 and a graphic sign, the vowels a second number; about 300 codes (39-210 and two-letter groups) for words and names; nulls 3-7 and 9.",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "spaces"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Not applicable: the key (R5018) survives in the same family archive and was used directly.",
+  "notes": "The copyist's signs drift (the q-with-crossbars sign serves D and once N; p with one crossbar serves Z and G), settled by the numbered letters around them. The 3 Feb 1720 letter in the Chancellery key R5017 announced this key (windischgraetz1720)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Mírka, Západočeské archivy 2012 (repr. Crypto-World 3-4/2013) describes the letters and keys but prints no decryption; none found by web search 19 Sept 2026",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive",
+   "cleartext context"
+  ],
+  "attack": "key from archive",
+  "human_role": "Supplied the DECODE login (session cookie) for images and key records.",
+  "tools": [
+   "dec.py (key application)",
+   "tile.py (image crops)"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-19",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-19",
+   "kind": "access",
+   "what": "Fetched DECODE R5017-R5024 images and record pages; the letter records point to keys R5017 and R5018.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "literature search",
+   "what": "Mírka 2012 found: describes the private key and the Reichshofrat nomenclator, prints no decryption; web search found none.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "key from source",
+   "what": "Transcribed R5018 (24-letter grid of numbers and signs, ~300 codes, nulls).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "reading",
+   "what": "Nos. 2, 3, 6 read with R5018 letter by letter; drifting copyist signs settled by the surrounding numbered letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "verification",
+   "what": "All 35 passages read as German fitting the clear context and the 1720-22 diplomacy (Alberoni's fall, Beretti Landi marriage proposal).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Entry split from windischgraetz1720 under the one-key rule (Lasry, 14 Oct 2026): Nos. 2, 3, 6 are in the private key R5018, not the Chancellery key R5017 of No. 1. Fraction measured on these three: 192/192.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "The DECODE letter records point to the Emperor's private key R5018, which Mirka (2012) had described; the project transcribed it and applied it directly to Nos. 2, 3 and 6, settling the copyist's drifting signs from the surrounding numbered letters.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "dec_R5018_letters.md: 192 cipher tokens of Nos. 2, 3, 6 (37 + 88 + 67); signs marked ? but read in context counted read.",
+  "codes_open": {
+   "open": 0,
+   "total": "unknown",
+   "tokens_open": 0
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "notes": "The key survives and was applied directly; no cryptanalysis. Nos. 4, 5 and 7 of the register are not on DECODE and have no document entry. The clear text is only summarised around the cipher passages. Split on 14 Oct 2026 from windischgraetz1720.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Emperor's private key R5018 in the family archive"
+   },
+   {
+    "who": "mirka",
+    "role": "pointer",
+    "note": "Zapadoceske archivy 2012 article describing the letters and keys",
+    "date": "2012"
+   }
+  ]
+ }
+}

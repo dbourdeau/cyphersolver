@@ -163,19 +163,32 @@
    "result": "failed"
   },
   {
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "Tried all 23 alphabet shifts on five readings of the signs (yamyud, yamymd, yanyud, yamynd, iamiud) and plain abbreviation (initials, closing formula): nothing.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key review (Lasry's rule, 14 Oct 2026): the colophon's vowel shift and the six-sign slip are two unrelated ciphers (different hand, date and system), so the outcome is given per part: colophon read with known key, 125/125; slip not solved, 0/6, too short. The pooled 95.4% is kept only as a labelled total.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "The Uppsala C-collection catalogue (1992), attached to DECODE R4349 itself, gives the vowel-to-next-letter rule and the full reading of the f. 19v colophon; the rule was applied to a new transcription and the output matched the printed reading word for word.",
-  "contribution": ["transcription", "decipherment with ambiguous key", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key",
+   "catalogue correction"
+  ],
   "class": "read in part",
   "fraction_read": 0.954,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.txt and signs.txt, cipher tokens: 125 colophon letters read, 6 slip signs unread",
+  "fraction_read_source": "pooled over the two parts, which are different ciphers (125 colophon letters read, 6 slip signs unread, reading.txt and signs.txt); per part: colophon 125/125, slip 0/6 (outcome.parts)",
   "key": "recovered",
   "codes_open": {
    "open": 0,
@@ -194,7 +207,29 @@
    }
   ],
   "credits": [
-    {"who": "uppsala", "role": "key or decipherment used", "note": "vowel-shift rule and full reading of the f. 19v colophon, entry C 513 (catalogue page attached to DECODE R4349)", "date": "1992", "source": "Mittelalterliche Handschriften der UB Uppsala, Katalog über die C-Sammlung, Bd. 5 (1992), C 513"}
+   {
+    "who": "uppsala",
+    "role": "key or decipherment used",
+    "note": "vowel-shift rule and full reading of the f. 19v colophon, entry C 513 (catalogue page attached to DECODE R4349)",
+    "date": "1992",
+    "source": "Mittelalterliche Handschriften der UB Uppsala, Katalog über die C-Sammlung, Bd. 5 (1992), C 513"
+   }
+  ],
+  "parts": [
+   {
+    "label": "colophon vowel shift (a->b e->f i->k o->p u->x)",
+    "records": "R4349: C 513 f. 19v, the 1517 colophon (125 letters)",
+    "method": "read with known key",
+    "extent": "complete",
+    "basis": "125 of 125 cipher letters read (measured, reading.txt); the Uppsala C-collection catalogue Bd. 5 (1992) gives the rule and the reading; applied to a new transcription, it matches word for word"
+   },
+   {
+    "label": "six-sign signature cipher of the f. 1r slip (later hand)",
+    "records": "R4349: the note to Anders Larsson pasted on f. 1r, six signs (signs.txt)",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "0 of 6 signs read; too short; the colophon's vowel shift fails (none of b f k p x occurs), and all alphabet shifts fail; no key, sibling or crib"
+   }
   ]
  }
 }

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "target": "sp106r704",
+  "title": "TNA SP 106/10: two Italian intercepts in a letter-and-figure syllabary, c. 1623-24 (DECODE R704, R721)",
+  "documents": [
+    {
+      "id": "R704",
+      "shelfmark": "TNA, SP 106/10, ff. 186-187 (DECODE R704)",
+      "year": 1623,
+      "country": "unknown",
+      "route": "unknown",
+      "language": "Italian",
+      "pages": 2,
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "the contemporary English codebreaker",
+        "partial": true
+      },
+      "length": {
+        "tokens": 0,
+        "unit": "code groups",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "46 numbered lines, about 700 groups per DECODE; letter-plus-figure system C; not transcribed this session."
+      },
+      "read": "not read"
+    },
+    {
+      "id": "R721",
+      "shelfmark": "TNA, SP 106/10, ff. 190-192 (DECODE R721)",
+      "year": 1623,
+      "country": "unknown",
+      "route": "unknown",
+      "language": "Italian",
+      "pages": 3,
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "interlinear",
+          "margin"
+        ],
+        "source": "the contemporary English codebreaker",
+        "partial": true
+      },
+      "length": {
+        "tokens": 0,
+        "unit": "code groups",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "image_quality": "good",
+        "notes": "26 numbered lines, about 300 groups per DECODE; system C; not transcribed this session."
+      },
+      "read": "not read"
+    }
+  ],
+  "system": {
+    "types": [
+      "syllabic"
+    ],
+    "summary": "A letter-and-figure syllabary: each group a letter followed by one or two figures (Z6 n54 m56 g42 ...), Italian; not yet analysed.",
+    "symbol_kind": "digits and letters",
+    "digit_groups": {
+      "width": "unknown",
+      "separation": "spaces"
+    },
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "notes": "Split 14 Oct 2026 from the whole-file entry sp106box10."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "the contemporary codebreaker's interlinear syllables on R704 and R721",
+      "found": "during attempt",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "none",
+    "human_role": "nothing beyond setting the target; images fetched with the project DECODE cookie",
+    "tools": [],
+    "models": [
+      "claude-opus-5[1m]"
+    ],
+    "sessions": 2,
+    "first_date": "2026-09-20",
+    "last_date": "2026-10-14"
+  },
+  "solution": [
+    {
+      "date": "2026-09-20",
+      "kind": "access",
+      "what": "Fetched DECODE metadata for R657, R660, R664, R704, R720, R721 and the pointers; identified the seventh record as R722 and a key record R725 in the same run of shelfmarks. Downloaded all 28 images with the project cookie.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-20",
+      "kind": "statistics",
+      "technique": [
+        "frequency analysis"
+      ],
+      "what": "Surveyed all 22 ciphertext pages and found they use three different systems, not one: R657 (two-figure), R660/R664/R720 (three-figure), R704/R721/R722 (letter-plus-figure). DECODE groups R720 with R704; the figures show it belongs with R660/R664.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "Entry split from sp106box10 under the one-key rule (Lasry, 14 Oct 2026): system C, R704 and R721. Not attempted yet.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "Not attempted beyond identifying the system and separating it from the other ciphers of the file; the codebreaker's interlinear syllables are on the pages.",
+    "contribution": [
+      "catalogue correction"
+    ],
+    "class": "not read",
+    "verification": [
+      "none"
+    ],
+    "notes": "Split on 14 Oct 2026 from sp106box10. Status in progress.",
+    "fraction_read": 0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "no transcription; nothing deciphered",
+    "key": "none",
+    "codes_open": {
+      "open": "unknown",
+      "total": "unknown"
+    },
+    "gaps": [
+      {
+        "item": "R704 and R721, the whole text",
+        "blocker": "not-attempted",
+        "detail": "no transcription and no gloss alignment done"
+      },
+      {
+        "item": "R723, R724",
+        "blocker": "not-attempted",
+        "detail": "fetched, not examined"
+      }
+    ],
+    "credits": []
+  }
+}

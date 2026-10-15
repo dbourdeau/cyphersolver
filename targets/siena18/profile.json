@@ -1,0 +1,147 @@
+{
+ "schema_version": 1,
+ "target": "siena18",
+ "title": "Treaty articles between Siena and the imperial side, subscribed by Niccolo Ziegler, 1510s-1520s (ASSi Concistoro 2308 fasc. 2 no. 18, DECODE R4806)",
+ "documents": [
+  {
+   "id": "no18",
+   "shelfmark": "ASSi, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 18 (DECODE R4806)",
+   "year": 1515,
+   "country": "Siena",
+   "route": "Siena <-> imperial court (articles)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1456,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcripts/no18v.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "corrections": 14,
+    "notes": "year unknown, 1510s-20s (Ziegler, Ponte a Valiano); 1515 placeholder; token count from the prep script"
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Latin simple substitution on 30 signs for the sensitive words of a Latin text, words divided by points; dotted signs are nulls; a few signs for letter pairs (PHI = pp, HX = rr).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 30,
+  "diacritics": {
+   "used": true,
+   "note": "dotted signs are nulls"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "sign",
+  "sibling_key": "none",
+  "notes": "Look-alike pairs separated on the image: hooked n = q, plain n = e; o = g, lead-in o = o; open OO = i, closed pair = ll. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 18 only."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not in print or online (Meister 1902, Cecchini 1952, Senatore 2009 checked); the 1952 inventory calls the bundle 'solo parzialmente decifrate'",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Set the goal (decipher the 29 letters; try the 42 filed keys first). Instructed that DECODE records marked Decrypted are to be trusted as read.",
+  "tools": [
+   "targets/siena1421/homsolve2.py",
+   "Latin LM"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-24",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "access",
+   "what": "Found the whole busta Concistoro 2308 on DECODE (keys R4746-R4789, letters R4790-R4814, R1858), missed by the 23 Sept scan; downloaded 131 images with the project cookie (the session that worked on all the Concistoro letters).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "key from source",
+   "what": "Viewed and indexed the 43 key records of fasc. 1 (R4746-R4789); compared their alphabets by eye with this letter's signs: none fits.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "transcription",
+   "what": "No. 18 transcribed (agent K) and re-verified on the images (agent L: 14 of about 1,450 tokens changed; transcripts/no18v.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring",
+    "key matching"
+   ],
+   "what": "No. 18 (1,456 tokens, 211 point-divided Latin cipher words, 30 signs): homsolve2 words=1 with the Latin LM recovers the key unaided (Siena-Empire treaty articles, Ponte a Valiano, Florentines).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 18 only.",
+   "result": "worked"
+  },
+  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1172 tokens, 32 types, la order 4: reading -2.464 per letter; random keys -5.005 (z 4.3); key annealed onto shuffled ciphertext best -3.003 (mean -3.027, z 26.4); annealer on the real text -2.281. Verdict: underdetermined.", "result": "partial"}
+ ],
+ "outcome": {"validation": {"date": "2026-10-14", "model": "la", "file": "validation.tsv", "tokens": 1172, "types": 32, "tokens_per_type": 36.62, "score": -2.464, "nulls": {"random keys": {"n": 200, "mean": -5.005, "sd": 0.597, "max": -3.722, "z": 4.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.027, "sd": 0.021, "max": -3.003, "z": 26.4, "p": 0.1429}}, "power": -2.281, "verdict": "underdetermined", "notes": "claimed per-occurrence score -1.967; polyphony 0.057; 298 unread tokens left out; annealer on the real text from random keys reached -2.281"}, 
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "homsolve2 with word boundaries and a Latin model gave the key from the ciphertext alone; look-alike signs then separated on the images.",
+  "contribution": [
+   "key recovered",
+   "transcription",
+   "sender or date identified"
+  ],
+  "class": "read in part",
+  "key": "recovered",
+  "fraction_read": 0.871,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcripts/no18_reading.txt counts: 1,271 of 1,459 cipher tokens read as sense (87.1%), 154 doubtful (10.6%), 21 unread (1.4%), 13 struck (0.9%).",
+  "verification": ["historical consistency"],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "doubtful and unread words (about 12% of 1,459 tokens)",
+    "blocker": "illegible",
+    "detail": "W/m/tt and dotted-null distinctions at the DECODE resolution"
+   }
+  ],
+  "notes": "Latin articles of a treaty between Siena and the imperial side, subscribed by Niccolo Ziegler, Regis Secretarius; 1510s-20s, year not fixed. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 18 only."
+ }
+}

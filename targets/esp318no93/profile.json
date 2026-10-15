@@ -1,0 +1,166 @@
+{
+ "schema_version": 1,
+ "target": "esp318no93",
+ "title": "Lorenzo Suárez (Venice, 24 Feb 1504) and the viceroy of Sicily (Messina, 27 Apr 1503) to the Catholic Monarchs: BnF Espagnol 318 nos. 93 and 94, ff. 118-121v, keys not identified (catalogue item 9)",
+ "documents": [
+  {
+   "id": "no93",
+   "shelfmark": "BnF Espagnol 318 no. 93, f. 118r-v",
+   "date": "24 Feb 1504",
+   "year": 1504,
+   "country": "Spain",
+   "route": "Lorenzo Suárez de Figueroa, Venice -> the Catholic Monarchs",
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 1016,
+    "distinct": 40,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ct93_eye.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "f. 118r lines 1-21 sign by sign; segmentation of the page gives 910 glyphs on 33 lines (targets/esp318/f118r_glyphs.pkl)",
+    "image_quality": "good",
+    "notes": "Transcribed as a character stream in which the CVC code groups are split into letter signs; covers lines 1-21 of f. 118r only."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "no94",
+   "shelfmark": "BnF Espagnol 318 no. 94, ff. 120r-121v",
+   "date": "27 Apr 1503",
+   "year": 1503,
+   "country": "Spain",
+   "route": "the viceroy of Sicily, Messina -> Ferdinand",
+   "language": "Spanish",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "mixed"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica full images (targets/esp318/full/f120r-f121v.jpg)",
+    "image_quality": "good",
+    "notes": "Not transcribed; code groups sampled only."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Both letters are built like the secretariat ciphers of Ferdinand: single invented signs for letters, with homophones, interleaved with groups of two to four Latin letters (nomenclator). Whether the two letters share one key is not established.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown; suspected: the Gran cifra of 1501-04 (Bergenroth's partial reconstruction, BNE MSS 20.211/52) or, for no. 94, the unpublished 'Cifra del visorrey' (BRAH 9/15 ff. 1-6); neither obtained",
+  "notes": "Split on 14 Oct 2026 from esp318 (the whole volume) under the one-key rule. The two letters are one entry only because both are unread with unknown keys; no shared key is claimed (their code-initial bands differ: no. 93 c/g/h/l/m/n/p/q/r/t/z, no. 94 g/l/m/n/p/r/v/z). Other entries: esp318 (no. 92), federico1497 (no. 5), esp318no95 (no. 95)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment in the volume or in print (Parisi, Galende Díaz, Tomokiyo, Quirantes)",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "seg.py, glyphs.py, cluster.py (segmentation of f. 118r; in targets/esp318/)",
+   "solve93.py (homophonic annealing against a Spanish 5-gram model)"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-fable-5-1"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-17",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-17",
+   "kind": "access",
+   "what": "Mapped the five ciphered letters in the volume from the manifest and notice; nos. 93 (f. 118r-v) and 94 (ff. 120r-121v) have no decipherment anywhere in the volume.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "statistics", "technique": ["frequency analysis"],
+   "what": "No. 93 f. 118r segmented and clustered: sign alphabet plus CVC groups; the code initials of both letters fall outside the two keys in print (Escrivà no. 1, Cifra general) and inside the band of the Gran cifra.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "solver", "technique": ["simulated annealing", "language-model scoring"],
+   "what": "No. 93 as plain homophonic letter stream (ct93_eye.txt, 1016 tokens), annealed against Spanish 5-grams from eight starts: best -3.5 nats/token against -1.8 for real Spanish; the CVC groups are atomic.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former whole-volume target esp318 under the one-key rule (George Lasry, 14 Oct 2026): nos. 93 and 94 kept together as one attempted entry with no shared-key claim. ct93_eye.txt and solve93.py moved here.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Neither letter has a key: the two keys in print are excluded by code-initial range, the suspected Gran cifra survives only as Bergenroth's partial list in a manuscript not served online, and a homophonic anneal of no. 93 failed.",
+  "contribution": ["catalogue correction"],
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "none",
+  "gaps": [
+   {
+    "item": "No. 93 (f. 118r-v), whole letter",
+    "blocker": "no-key-material",
+    "detail": "CVC nomenclator with atomic groups (homophonic anneal on ct93_eye.txt failed, -3.5 vs -1.8 nats); the suspected Gran cifra key survives only as Bergenroth's partial list (BNE MSS 20.211/52)"
+   },
+   {
+    "item": "No. 94 (ff. 120r-121v), whole letter",
+    "blocker": "not-attempted",
+    "detail": "never transcribed; Bergenroth's Gran-cifra list not tested against it"
+   }
+  ],
+  "grades": "unknown",
+  "verification": [
+   "none"
+  ],
+  "notes": "Attempted, open. Both letters are standard products of Ferdinand's secretariat; no shared key is claimed for them.",
+  "credits": []
+ }
+}

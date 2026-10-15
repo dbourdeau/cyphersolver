@@ -1,0 +1,145 @@
+{
+ "schema_version": 1,
+ "target": "sabran1631",
+ "title": "Louis XIII to Melchior de Sabran, Dijon, 28 March 1631, BnF Baluze 155 f. 79-80 (DECODE R2748)",
+ "documents": [
+  {
+   "id": "R2748",
+   "shelfmark": "BnF Baluze 155 f. 79-80 (DECODE R2748)",
+   "date": "28 Mar 1631",
+   "year": 1631,
+   "country": "France",
+   "route": "Louis XIII (Bouthillier) at Dijon to Melchior de Sabran, Genoa",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "George Lasry, 2022: key and decipherment as images on Tomokiyo's cryptiana GL.htm, \"Melchior de Sabran (1631)\"",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "source": "not transcribed here",
+    "image_quality": "unknown",
+    "notes": "Images viewed (f. 79r: two cipher paragraphs, c. 20 lines, letters, digits and signs); not transcribed here. Lasry's decipherment is an overlay on the image (GL.htm)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "The 1631 Louis XIII-Sabran cipher: lower-case letters, two-digit numbers and signs for letters, syllables and a few words, with a doubling sign; key reconstructed by George Lasry (2022).",
+  "symbol_kind": "digits and symbols",
+  "digit_groups": {
+   "width": "unknown",
+   "separation": "unknown"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown",
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "same cipher in Sabran's letters to Bouthillier, BnF fr. 4134 (1633) and fr. 4135 (1635), per Lasry",
+  "notes": "System fields from the f. 79r image and Lasry's overlay on GL.htm (syllables tion, words vous, que, par, bon, prince, a doubling mark), not checked sign by sign here. Split 14 Oct 2026 from louis1615 (the Brulart de Leon cipher of 1615-18 is now brulart1615)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "cryptiana.web.fc2.com GL.htm \"Melchior de Sabran (1631)\" (Lasry 2022, key and decipherment as images) and louisxiii.htm",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "DECODE API"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Fetched the DECODE record view for R2748 and its four images (Gallica scans of Baluze 155 f. 79-80) with the shared cookie.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "literature search",
+   "what": "Checked Tomokiyo's louisxiii.htm (DECODE's pointer) and GL.htm: R2748 solved by George Lasry in 2022, key and decipherment as images; the same cipher in Sabran's letters, fr. 4134 and fr. 4135. Entry closed without applying the key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from the former combined target louis1615 (catalogue 191) under the one-key rule (George Lasry, 14 Oct 2026): R2748 (the 1631 Sabran cipher, Lasry's solution) and R2785/R2786 (the Brulart de Leon cipher of 1615-18, Tomokiyo's key) are different ciphers. Folder, profile, page and ledgers separated; earlier steps kept as recorded. Lasry's three GL.htm images fetched to summarise the content.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "George Lasry's 2022 decipherment of both cipher passages, published as an overlay on the f. 79 image on Tomokiyo's GL.htm; nothing was deciphered here and his key was not re-applied.",
+  "contribution": [
+   "none"
+  ],
+  "class": "already solved",
+  "key": "none",
+  "fraction_read": "unknown",
+  "grades": "unknown",
+  "verification": [
+   "none"
+  ],
+  "notes": "Lasry's decipherment covers both passages; not re-checked sign by sign. Nothing new about the text. Catalogue entry 191 removed 21 Sept 2026.",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "prior solution",
+    "note": "R2748 (Louis XIII to Sabran, 1631) solved: key and decipherment as images on cryptiana GL.htm",
+    "date": "2022",
+    "source": "cryptiana GL.htm, 'Melchior de Sabran (1631)'",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "published Lasry's key and decipherment on GL.htm and listed the cipher on louisxiii.htm (DECODE's pointer)",
+    "source": "cryptiana GL.htm, louisxiii.htm"
+   }
+  ]
+ }
+}

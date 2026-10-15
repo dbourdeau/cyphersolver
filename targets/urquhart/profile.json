@@ -130,19 +130,28 @@
   },
   {
    "date": "2026-09-15",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "Octastich measured on Schmeh's 272 numbers and called a book cipher by shape; judged unattackable without the key text.",
    "result": "failed"
   },
   {
    "date": "2026-09-16",
-   "kind": "hypothesis", "technique": ["contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
    "what": "The poem names its key text (Exskybalauron): number k indexes a word on physical page k of The Jewel.",
    "result": "worked"
   },
   {
    "date": "2026-09-16",
-   "kind": "solver", "technique": ["EM alignment"],
+   "kind": "solver",
+   "technique": [
+    "EM alignment"
+   ],
    "what": "DP alignment of Schmeh's defective 272 numbers against TCP pages.",
    "result": "partial"
   },
@@ -184,19 +193,28 @@
   },
   {
    "date": "2026-10-05",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "Old 0.788 counted any decoded letter; new measure_sense.py counts exact or within-2 first-occurrence support for the reading's letter: octastich 274/285 = 0.961, overall with distich 274/349 = 0.785.",
    "result": "worked"
   },
   {
    "date": "2026-10-05",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "Distich as word indices into the octastich reading and the Decagram verse (alone and concatenated).",
    "result": "ruled out"
   },
   {
    "date": "2026-10-05",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "Fetched the 1834 Works text; distich as word- and letter-index keys into the six-line verse, Parva peto couplet (Latin and English), octastich reading and Decagram verse, alone and concatenated both orders: 76 decodes, best -6.76/char vs -5.09 English.",
    "result": "ruled out"
   },
@@ -204,6 +222,12 @@
    "date": "2026-10-14",
    "kind": "transcription",
    "what": "David Scheers (email 14 Oct 2026; Urquhart appendix of Zealous with Language and Ciphers, 2021) confirmed the 285 octastich numbers (sum 8168), found 'Colonel' at p. 149 word 2 on the EEBO images, and showed the distich printed in a 1653 Logopandecteision (NLS H.32.a.39) with 38 at position 56. ct.py DISTICH corrected (sum 1073 to 1078); 'not in the 1653 edition' withdrawn.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "One-key review (Lasry's rule, 14 Oct 2026): the octastich and the distich are two cryptograms with different, as tested, constructions, so the outcome is given per part: octastich read with known key, 274/285 (0.961); distich not solved, 0/64. The pooled 0.785 is kept only as a labelled total.",
    "result": "worked"
   }
  ],
@@ -239,12 +263,43 @@
   ],
   "notes": "Octastich read (0.961 measured as sense): line 5 re-read 5 Oct 2026 as 'And [?] overthrow his usurp'd authoritie'; 11 positions are slips or TCP gaps. Distich (64 numbers) unread, so the target stays read in part.",
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure_sense.py / measure_sense.txt: octastich 274 of 285 positions read as sense (233 exact, 41 within 2 words of the first occurrence); distich 64 unread; 274/349",
+  "fraction_read_source": "measure_sense.py / measure_sense.txt: octastich 274 of 285 positions read as sense (233 exact, 41 within 2 words of the first occurrence); distich 64 unread; 274/349; 0.785 is pooled over the two cryptograms, which are different constructions: per part, octastich 0.961, distich 0 (outcome.parts)",
   "key": "partial",
   "credits": [
-    {"who": "valsai", "role": "prior solution", "note": "octastich rule and plaintext published (Claude Fable 5.1 result); verified here without it", "date": "2026-08-31"},
-    {"who": "schmeh", "role": "transcription", "note": "272-number transcription of the octastich, used in the first measurement"},
-    {"who": "scheers", "role": "transcription", "note": "1653 distich leaf (NLS H.32.a.39) and its position 56 = 38; octastich sums and p. 149 'Colonel' checked", "date": "2026-10-14", "source": "D. Scheers, Zealous with Language and Ciphers (2021), Urquhart appendix; email 14 Oct 2026"}
+   {
+    "who": "valsai",
+    "role": "prior solution",
+    "note": "octastich rule and plaintext published (Claude Fable 5.1 result); verified here without it",
+    "date": "2026-08-31"
+   },
+   {
+    "who": "schmeh",
+    "role": "transcription",
+    "note": "272-number transcription of the octastich, used in the first measurement"
+   },
+   {
+    "who": "scheers",
+    "role": "transcription",
+    "note": "1653 distich leaf (NLS H.32.a.39) and its position 56 = 38; octastich sums and p. 149 'Colonel' checked",
+    "date": "2026-10-14",
+    "source": "D. Scheers, Zealous with Language and Ciphers (2021), Urquhart appendix; email 14 Oct 2026"
+   }
+  ],
+  "parts": [
+   {
+    "label": "octastich book cipher on The Jewel (1652): number k -> first word with the needed initial on physical page k",
+    "records": "the Cyphral Octastich and Decagram, last leaf of The Jewel (285 numbers)",
+    "method": "read with known key",
+    "extent": "complete",
+    "basis": "274 of 285 positions read as sense (0.961, measured, measure_sense.txt); rule published by Vals AI (31 Aug 2026) and verified here from the text and the numbers alone (238/284 first-occurrence hits against 0.43 for shuffled and random-page controls); 11 positions are slips or a TCP gap"
+   },
+   {
+    "label": "distich: construction unknown",
+    "records": "the Cyphral Distich, Logopandecteision (1653) last leaf / Works 1834 p. 417 (64 numbers)",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "0 of 64 read; the claimed Proquiritation rule gives 34/64, chance, and no English; page-index variants on The Jewel and Logopandecteision at chance; the verse, the Parva peto couplet and the octastich texts as index keys at noise; key text not identified"
+   }
   ]
  }
 }

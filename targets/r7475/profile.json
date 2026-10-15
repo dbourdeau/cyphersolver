@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "target": "r7475",
+  "title": "An unsigned adviser to Hetman Sieniawski, c. 1707 (DECODE R7475)",
+  "documents": [
+    {
+      "id": "R7475",
+      "read": "read",
+      "shelfmark": "Archiwum Narodowe w Krakowie, Zbiór Dzieduszyckich 26/32 nr 13 pp. 29-30; DECODE R7475",
+      "date": "1707 (by content)",
+      "year": 1707,
+      "country": "Poland",
+      "route": "an adviser in Sieniawski's camp (unsigned) -> Hetman Adam Mikołaj Sieniawski",
+      "language": "Polish",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "full letter-by-letter interlinear decipherment in a second hand",
+        "partial": false
+      },
+      "length": {
+        "tokens": 2444,
+        "distinct": 54,
+        "unit": "symbols",
+        "measured": true,
+        "file": "R7475.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE IMG_R7475 P1-P2, native-resolution crops",
+        "image_quality": "good",
+        "notes": "R7475.txt tally: 2,444 cipher numbers (2 code groups 600, 3 under ink blots); 2,434 carry a legible gloss aligned letter for letter (99.6%). Letter table in R7475_key.tsv."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic",
+      "nomenclator"
+    ],
+    "summary": "A homophonic letter table in alphabetical blocks (a=17-18, b=20-21, c=22-23 ... z=56-57; e=11-14, y=3-4, o=7-8, u=5-6), dot-separated, with a code group 600 = krol szwedzki; Polish with Latin.",
+    "symbol_kind": "digits",
+    "distinct_symbols": 54,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 1,
+      "kinds": [
+        "names"
+      ]
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "partly alphabetical",
+    "word_division": "partial",
+    "sibling_key": "none: table rebuilt from the interlinear gloss (R7475_key.tsv)",
+    "notes": "Split 14 Oct 2026 from sieniawski1708."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "the contemporary interlinear decipherment; not printed",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "archive decipherment",
+    "human_role": "Project-level: DECODE login cookie supplied and the target assigned in a brief (catalogue entry 333). No target-specific intervention.",
+    "tools": [
+      "DECODE JSON API and filesrv download",
+      "subagent transcription with gloss alignment"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 2,
+    "first_date": "2026-10-09",
+    "last_date": "2026-10-14"
+  },
+  "solution": [
+    {
+      "kind": "access",
+      "what": "DECODE metadata for R7460-R7507 by API; 130 images of R7462-R7507 with the session cookie; no key or decryption file on any record.",
+      "result": "worked",
+      "date": "2026-10-09"
+    },
+    {
+      "kind": "transcription",
+      "what": "Subagents transcribed the unprinted Sieniawski pieces with their interlinear decipherments: R7475 (alphabetical homophonic table rebuilt from the gloss), R7476 and R7484-R7485 (Chomentowski's 3-digit syllabary, syllabary.tsv), R7481-R7482 (key B).",
+      "result": "worked",
+      "date": "2026-10-09"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "Entry split on 14 Oct 2026 from sieniawski1708 under the one-key rule (Lasry, 14 Oct 2026): the Vienna-Schenck letters are schenck1706; the Sieniawski letters are one entry per key: key A (sieniawski1708), key B (turculet1709), the R7475 table (r7475), the Chomentowski syllabary (chomentowski1713). ",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "method": "read from existing decipherment",
+    "method_basis": "A full letter-by-letter contemporary decipherment stands between the lines; transcribed and aligned with the cipher, which also rebuilds the table.",
+    "contribution": [
+      "transcription",
+      "sender or date identified",
+      "catalogue correction"
+    ],
+    "class": "read",
+    "key": "recovered",
+    "verification": [
+      "contemporary decipherment",
+      "key confirms"
+    ],
+    "notes": "Split on 14 Oct 2026 from sieniawski1708. Unsigned; dated c. 1707 by content (Stanislaw's offers, the Bishop of Chelmno's mediation).",
+    "fraction_read": 0.996,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "R7475.txt: 2,434 of 2,444 numbers with a legible gloss aligned letter for letter",
+    "codes_open": {
+      "open": 0,
+      "total": 1
+    },
+    "gaps": [
+      {
+        "item": "10 of 2,444 numbers without an aligned gloss (blots L37, L38, L56, L70; smudge L40; L5, L41, L55, L73), plus the struck passage L58 and a lone '1.' (L64)",
+        "blocker": "illegible",
+        "detail": "blotted, smudged or cancelled on the page, no legible gloss (R7475.txt tally)"
+      }
+    ],
+    "credits": [
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "full letter-by-letter interlinear decipherment on R7475"
+      }
+    ]
+  }
+}

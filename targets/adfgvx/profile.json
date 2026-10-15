@@ -86,7 +86,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-15"
+  "last_date": "2026-10-14"
  },
  "solution": [
   {
@@ -109,13 +109,19 @@
   },
   {
    "date": "2026-09-15",
-   "kind": "solver", "technique": ["hill climbing"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing"
+   ],
    "what": "Norbert's block-edit method reimplemented; re-derives 7 solved pages blind and finds the 22-24 Nov partial.",
    "result": "worked"
   },
   {
    "date": "2026-09-15",
-   "kind": "solver", "technique": ["hill climbing"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing"
+   ],
    "what": "Two block edits against fifteen keys on the ten open messages; CHI key on the two page-153 messages.",
    "result": "failed"
   },
@@ -124,12 +130,21 @@
    "kind": "control",
    "what": "Key-free attack on a planted 224-letter control does not recover the key; open messages (84-240 letters) are below reach.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Outcome split into parts per period key (one key per entry): six keys with their messages (9 solved, 3 partial) and the ten messages no known key fits (not solved), from the NOTES table; README one row per part.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "The fourteen period keys published by Lasry, Niebel, Kopal and Wacker for the Childs corpus, plus Lasry's sixteenth (CHI) key from the 2017 Cipherbrain comment thread, were applied with a block-edit search; the only full reading (page 100) had already been read in 2017.",
-  "contribution": ["key extended or corrected", "catalogue correction"],
+  "contribution": [
+   "key extended or corrected",
+   "catalogue correction"
+  ],
   "class": "already solved",
   "fraction_read": "unknown",
   "grades": "unknown",
@@ -137,15 +152,97 @@
    "key confirms",
    "matched control"
   ],
-  "notes": "Nothing read here that the 2017 readers had not read; the thread consolidated and the sixteenth key rebuilt. Ten messages remain open, needing the Childs originals or an unlisted key.",
+  "notes": "Nothing read here that the 2017 readers had not read; the thread consolidated and the sixteenth key rebuilt. Ten messages remain open, needing the Childs originals or an unlisted key. Split into outcome.parts per period key on 14 Oct 2026 (one key per entry, parts because the messages form one filed set): 9 solved, 3 partial, 10 open.",
   "credits": [
-    {"who": "lasry", "role": "key or decipherment used", "note": "published period keys (with Niebel, Kopal, Wacker) and his sixteenth (CHI 13 Nov) key from Cipherbrain comment 50"},
-    {"who": "lasry", "role": "prior solution", "note": "read messages in the 2017 Cipherbrain thread (comments 50-53), incl. the CHI 13 Nov pair", "date": "2017"},
-    {"who": "niebel", "role": "key or decipherment used", "note": "published ADFGVX period keys (Lasry, Niebel, Kopal, Wacker)"},
-    {"who": "kopal", "role": "key or decipherment used", "note": "published ADFGVX period keys (Lasry, Niebel, Kopal, Wacker)"},
-    {"who": "wacker", "role": "key or decipherment used", "note": "published ADFGVX period keys (Lasry, Niebel, Kopal, Wacker)"},
-    {"who": "biermann", "role": "prior solution", "note": "'Norbert' of the 2017 Cipherbrain thread (comments 15-49): most of the solved messages; his block-edit method reimplemented here", "date": "2017"},
-    {"who": "baertl", "role": "prior solution", "note": "read a message in the 2017 Cipherbrain thread (comment 39)", "date": "2017"}
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "published period keys (with Niebel, Kopal, Wacker) and his sixteenth (CHI 13 Nov) key from Cipherbrain comment 50"
+   },
+   {
+    "who": "lasry",
+    "role": "prior solution",
+    "note": "read messages in the 2017 Cipherbrain thread (comments 50-53), incl. the CHI 13 Nov pair",
+    "date": "2017"
+   },
+   {
+    "who": "niebel",
+    "role": "key or decipherment used",
+    "note": "published ADFGVX period keys (Lasry, Niebel, Kopal, Wacker)"
+   },
+   {
+    "who": "kopal",
+    "role": "key or decipherment used",
+    "note": "published ADFGVX period keys (Lasry, Niebel, Kopal, Wacker)"
+   },
+   {
+    "who": "wacker",
+    "role": "key or decipherment used",
+    "note": "published ADFGVX period keys (Lasry, Niebel, Kopal, Wacker)"
+   },
+   {
+    "who": "biermann",
+    "role": "prior solution",
+    "note": "'Norbert' of the 2017 Cipherbrain thread (comments 15-49): most of the solved messages; his block-edit method reimplemented here",
+    "date": "2017"
+   },
+   {
+    "who": "baertl",
+    "role": "prior solution",
+    "note": "read a message in the 2017 Cipherbrain thread (comment 39)",
+    "date": "2017"
+   }
+  ],
+  "parts": [
+   {
+    "label": "key of 1-3 Nov 1918 (length 19)",
+    "records": "Childs pp. 100, 105, 109",
+    "method": "read with known key",
+    "extent": "complete",
+    "basis": "3 solved, 0 partial, 0 open. Published period key (Lasry, Niebel, Kopal, Wacker 2017); first read in the 2017 thread (p. 100 Armin, pp. 105/109 Norbert); p. 100 reproduced here by insertion search (score 140.7), pp. 105 and 109 re-derived blind by blocks.py."
+   },
+   {
+    "label": "key of 4-6 Nov 1918 (length 17)",
+    "records": "Childs pp. 132, 146",
+    "method": "read with known key",
+    "extent": "complete",
+    "basis": "2 solved. Published period key; first read by Norbert in 2017; p. 146 re-derived blind by blocks.py, p. 132 reached by gaps.py on Norbert's text unprompted."
+   },
+   {
+    "label": "key of 7-9 Nov 1918",
+    "records": "Childs pp. 171, 164 (F-G-X), 164 (VFGAG)",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "1 solved, 2 partial, 0 open. Published period key; p. 171 read by Norbert in 2017 and re-derived blind here; the two p. 164 messages (44 marked gaps each) read in part by Norbert (comments 41-44), not extended here."
+   },
+   {
+    "label": "key of 10-12 Nov 1918",
+    "records": "Childs p. 176 ('missing 10 letters')",
+    "method": "read with known key",
+    "extent": "complete",
+    "basis": "1 solved. Published period key; read by Norbert in 2017; re-derived blind here with two five-letter block edits (10, 5), (130, 5)."
+   },
+   {
+    "label": "CHI key of 13 Nov 1918 (Lasry's sixteenth, length 16)",
+    "records": "Childs p. 187 (FFVXV; p. 191) and the unnumbered AFAFF continuation",
+    "method": "read with known key",
+    "extent": "complete",
+    "basis": "2 solved. Key recovered by Lasry in the 2017 thread (comment 50) from the two-part message jointly, not on the published list; its square rebuilt here from his plaintext (24 of 36 cells); both parts re-derived blind by blocks.py."
+   },
+   {
+    "label": "key of 22-24 Nov 1918",
+    "records": "unnumbered VGADA message (Childs p. 215, 22 Nov)",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "0 solved, 1 partial. Published period key; read in part by Norbert (comment 32) and Baertl in 2017; the block search here finds the same partial; 11 marked gaps."
+   },
+   {
+    "label": "no known key fits",
+    "records": "Childs pp. 73, 152, 153 (VFVAX), 153 (AXVAA), 158, 170, 176 (GGDAA), 189, 198, 217",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "0 solved, 0 partial, 10 open. None of the fifteen keys gives text with up to two block edits (best -6.7 nats per window against -4.4 to -6.0 for the solved pages); the CHI key fails on both p. 153 messages; a key-free attack fails its planted 224-letter control. Needs the Childs originals or an unlisted key."
+   }
   ]
  }
 }

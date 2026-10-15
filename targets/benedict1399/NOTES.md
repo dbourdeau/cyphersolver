@@ -1,4 +1,14 @@
-# Benedict XIII's cipher letters to Francesc Climent, 1399–1416 (Arxiu Capitular de Barcelona) — catalogue 334
+# Benedict XIII's cipher letters to Francesc Climent, 1399–1403 (Arxiu Capitular de Barcelona) — catalogue 334
+
+Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This entry is Benedict XIII's own ten cipher
+letters (Puig app. XXVI, XXVII, XXXV, XXXVI, XXXVII, XXXIX, XLI, XLII, XLIII, LII), the key verified on the p. 475 plate
+(doc. 1068). The letters of his circle are from other senders and their key is not shown to be his (Puig: "la clave o
+claves"), so each is its own entry (a different or unverified cipher, with its own page):
+[`targets/santacruz1399/`](../santacruz1399/NOTES.md), [`targets/jafet1400/`](../jafet1400/NOTES.md),
+[`targets/exea1408/`](../exea1408/NOTES.md), [`targets/comuel1415/`](../comuel1415/NOTES.md),
+[`targets/comuel1416/`](../comuel1416/NOTES.md). The 1398 line "de clave desconocida" is
+[`targets/vico1398/`](../vico1398/NOTES.md). The sections below are the record of the joint sessions and still list
+all fourteen items; the gaps and escalation are Benedict's letters only.
 
 Status: found already read (Puig y Puig 1920); key rebuilt here from the p. 475 facsimile (second session, 23 Sept
 2026; `key.md`). Written up as `docs/benedict1399.html`.
@@ -120,12 +130,6 @@ word each.
 
 ## Remaining gaps
 
-- Fr. Pedro de Vico to Guillem Carbonell, 4 Dec 1398 (Puig app. XIX, p. 461): "Sigue una línea cifrada, de clave
-  desconocida" - blocker: needs-physical-access; Puig did not print the line, no image exists.
-- Doc. 595 of the Çapera papers: "dos claves de Climent" that Puig could not apply to any document - blocker:
-  needs-physical-access; he did not print them.
-- P. Jafet to Climent, 15 Sep 1400 (doc. 1043) and Comuel to Climent (doc. 661): cited by Puig, not printed -
-  blocker: needs-physical-access.
 - Any further cipher pieces among the ~1,532 paper documents that Puig did not print, and those not returned after
   1920–30 - blocker: needs-physical-access.
 - Plate line 4, *non approbando nec reprobando; de cardinali catan-* (7 words, 42 letters): the original has an
@@ -136,8 +140,8 @@ word each.
 - The separator groups (four on the plate, λʒ … λʒ with a dotted V or barred p inside two of them): read as null
   punctuation at sentence breaks; Puig prints nothing for them. Whether the dotted V inside is a null or a meant
   sign - blocker: too-short (four instances on one page).
-- The key applies to the other ten letters of 1399–1403, but their ciphertext is not imaged anywhere - blocker:
-  needs-physical-access.
+- The key applies to the other nine letters of Benedict of 1399–1403 (it was built by Puig from Climent's lines on
+  three of them), but their ciphertext is not imaged anywhere - blocker: needs-physical-access.
 
 ## Escalation
 
@@ -161,3 +165,13 @@ word each.
 - Baucells i Reig, J., *El fons Cisma d'Occident de l'Arxiu Capitular de la Catedral de Barcelona: catàlegs, còdexs i
   pergamins*, Barcelona: IEC 1978 (PDF at arxiu.catedralbcn.org/wp-content/uploads/2026/05/…Mn.-Baucells.pdf).
 - Archive-scan notes: `research/oldest/scan_2026-09-23/iberia.md` (Candidate 1).
+
+## Not gaps of this entry (split 14 Oct 2026)
+
+- The 1398 Vico line (unknown key): vico1398. Jafet 1400 (doc. 1043, one sentence printed) and Comuel's doc. 661: jafet1400,
+  comuel1416. Doc. 595, two keys of Climent that Puig could apply to nothing: context, not printed (needs the ACB).
+
+## Assumptions for George's review
+- Benedict XIII's ten letters are kept as one key on Puig's evidence (he built one key from Climent's lines on three of
+  them and read all ten) and on the plate check of doc. 1068; the other nine were not imaged.
+- The five letters of his circle were split off because their key is not shown to be his, not because it is shown to differ.

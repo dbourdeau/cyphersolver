@@ -64,7 +64,7 @@ def groups_b():
 def groups_c():
     return [["2","3","1","4","7","4","6","4","9","7","2","3"], ["0","9","3","7"]]
 def groups_d():
-    t = load("d_waddall_1656.txt")
+    t = load(os.path.join("..", "waddall1656", "d_waddall_1656.txt"))  # moved 14 Oct 2026
     seg = re.search(r"--- CIPHER \(inline\) ---\n(.*?)\n--- end", t, re.S).group(1)
     # keep clear words as tokens starting with '#'
     toks = re.findall(r"\d+|[A-Za-z][A-Za-z',]*", seg)

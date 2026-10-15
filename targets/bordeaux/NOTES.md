@@ -148,3 +148,13 @@ not this one (Tomokiyo).
   still have reason to show some displeasure", which makes the grievance independent of France's position. The
   paraphrase now reads "Not that, were our affairs more flourishing, we would lack cause to show some displeasure
   at the reception given to the deputies of Bordeaux". Section 05 ("What it says") gains one sentence on the point.
+
+## Assumptions for George's review (14 Oct 2026)
+
+- Credit: George's 2025 solution is of item B (Mazarin to Bordeaux, 22 June 1654, R9482), a different key that does
+  not read item A. He is therefore no longer credited with a prior solution of this entry, whose only document is
+  item A (1653). He keeps a "pointer" credit because his item-B key showed the design (syllabary numbered in
+  alphabetical order, series changing at 100) that the item-A solver used as its hypothesis. If he prefers no credit
+  at all on item A, the pointer can be dropped.
+- Item B has no entry of its own here: its ciphertext is not accessible (Mélanges de Colbert 11 is not on Gallica),
+  and the solution is his.

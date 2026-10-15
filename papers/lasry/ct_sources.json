@@ -2,14 +2,38 @@
  "_about": "Hand-checked data for the list of LLM solutions (Lasry, 25-26 Sept 2026). Sections: ct = key recovered from ciphertext only; extpt = key rebuilt from a plaintext found outside the collection (another archive, a print, a website, an unrelated record); extkey = an existing key found outside the collection and matched; borderline = key or plaintext found elsewhere in the same collection (different volume or fonds), left for Lasry to decide. Same-file siblings are not listed. primary = the original; secondary = where the target was found; found = where the key or plaintext came from. *_links are [label, url]; DECODE R-numbers are linked automatically. part = the outcome.parts label of a split target. Method, extent and the unpublished-prior note come from each profile.json.",
  "items": [
   {
-   "slug": "siena1421",
-   "profile": "siena1421",
+   "slug": "siena25",
+   "profile": "siena25",
    "section": "ct",
-   "title": "Sienese envoys and others to the government of Siena",
-   "date": "before 1429 to 1547",
-   "primary": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\"",
-   "secondary": "DECODE R4790-R4814 (no status); the archive's 1952 inventory calls the letters 'solo parzialmente decifrate'",
-   "summary": "Keys recovered from the ciphertext alone for three letters (nos. 25, 18, 14) and from an alphabet fragment for a fourth; none of the 43 keys filed with the letters fits. No. 25 reads 96.2%, no. 18 (Latin treaty articles with the Emperor) 87.1%. Several other letters in the file remain open.",
+   "title": "Sienese envoys to the Signoria of Siena (no. 25)",
+   "date": "undated",
+   "primary": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 25",
+   "secondary": "DECODE R4813 (no status); the archive's 1952 inventory calls the bundle's letters 'solo parzialmente decifrate'",
+   "summary": "A 22-sign substitution recovered from the ciphertext alone; none of the 43 keys filed with the bundle fits. 96.2% of the signs read: a lord's route by Radicondoli and Casole. Split on 14 Oct 2026 from the bundle entry siena1421.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "siena18",
+   "profile": "siena18",
+   "section": "ct",
+   "title": "Siena and the imperial side: treaty articles subscribed by Niccolo Ziegler (no. 18)",
+   "date": "1510s-1520s",
+   "primary": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 18",
+   "secondary": "DECODE R4806 (no status)",
+   "summary": "Latin cipher words recovered from the ciphertext alone with a Latin model; 87.1% of the 1,459 signs read as sense. Split on 14 Oct 2026 from siena1421.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "siena14",
+   "profile": "siena14",
+   "section": "ct",
+   "title": "Sienese envoys to the Priori and Capitano del Popolo of Siena (no. 14)",
+   "date": "before 1429",
+   "primary": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 14",
+   "secondary": "DECODE R4802 (no status)",
+   "summary": "Key recovered from the ciphertext alone (hand crib first, then the solver unaided); 58.6% of the signs in sense, 29.2% doubtful. Written while Carlo Malatesta was alive. Split on 14 Oct 2026 from siena1421.",
    "primary_links": [],
    "secondary_links": []
   },
@@ -266,13 +290,13 @@
    ]
   },
   {
-   "slug": "swieten1757",
-   "profile": "swieten1757",
+   "slug": "swieten1759",
+   "profile": "swieten1759",
    "section": "ct",
    "title": "Gottfried van Swieten to Count Cobenzl",
-   "date": "Bonn, 1757-59",
+   "date": "Bonn, 1759",
    "primary": "Archives générales du Royaume, Brussels, Secrétairerie d'État et de Guerre 1236",
-   "secondary": "DECODE R955-R957 (non-decrypted)",
+   "secondary": "DECODE R956-R957 (non-decrypted); the 1757 letter R955 (another table) is a separate entry, swieten1757",
    "summary": "The 1759 table (groups 100-442) was rebuilt ciphertext-only by monotone annealing against French, then corrected by hand. The despatches cover the Gueldre convention and Soubise's army. 96% of 553 groups read.",
    "primary_links": [],
    "secondary_links": []
@@ -293,11 +317,11 @@
    "slug": "potocka1714",
    "profile": "potocka1714",
    "section": "ct",
-   "title": "Potocka and Mniszech to Jakub Dunin",
+   "title": "Barbara Potocka to Jakub Dunin",
    "date": "1714-16",
    "primary": "Archiwum Narodowe w Krakowie, Archiwum Sanguszków",
-   "secondary": "DECODE R7524-R7530, R7534-R7536",
-   "summary": "Potocka's alphabet was broken from a Polish postscript and carried over to eight French letters; 97.3% of Potocka tokens valued. Mniszech's letter is still unread.",
+   "secondary": "DECODE R7525-R7530, R7534-R7536",
+   "summary": "Potocka's alphabet was broken from a Polish postscript and carried over to eight French letters; 95.3% of her cipher tokens read as sense, four person codes open. Mniszech's letter, another cipher, is a separate entry (not solved).",
    "primary_links": [
     [
      "szukajwarchiwach",
@@ -310,11 +334,23 @@
    "slug": "r1854",
    "profile": "r1854",
    "section": "ct",
-   "title": "Four cipher letters to Gianfrancesco Gonzaga, lord of Mantua",
-   "date": "1428-1430",
+   "title": "An unnamed Gonzaga agent (Rome) to Gianfrancesco Gonzaga, lord of Mantua",
+   "date": "9 Aug 1428",
    "primary": "Archivio di Stato di Mantova, Archivio Gonzaga",
-   "secondary": "DECODE R1854 (partially decrypted; catalogued as one letter)",
-   "summary": "Two keys rebuilt ciphertext-only: Rome, 9 Aug 1428 (96.6%) and Cattanei, Feb 1430 (96.7%). A third letter was re-deciphered from its interlinear gloss. Pandolfo Malatesta's own runs remain open. 91.5% of all signs read.",
+   "secondary": "DECODE R1854 image 2 (partially decrypted; the record, catalogued as one letter, holds four letters in four ciphers)",
+   "summary": "Homophonic key rebuilt ciphertext-only: 1,757 of 1,802 signs (97.5%). Split on 14 Oct 2026 from the four-letter R1854 entry; Cattanei's letters (cattanei1430) are a second ciphertext-only key.",
+   "primary_links": [],
+   "secondary_links": []
+  },
+  {
+   "slug": "cattanei1430",
+   "profile": "cattanei1430",
+   "section": "ct",
+   "title": "Francesco de' Cattanei (Rome) to Gianfrancesco Gonzaga, lord of Mantua",
+   "date": "13 and 21 Feb 1430",
+   "primary": "Archivio di Stato di Mantova, Archivio Gonzaga",
+   "secondary": "DECODE R1854 images 4-5 (partially decrypted; catalogued as one letter with three others)",
+   "summary": "Homophonic key rebuilt ciphertext-only: 1,704 of 1,736 signs (98.2%). Split on 14 Oct 2026 from the four-letter R1854 entry.",
    "primary_links": [],
    "secondary_links": []
   },
@@ -352,7 +388,7 @@
    "date": "22 Nov 1551",
    "primary": "BnF, français 3138 no. 22, f. 60v",
    "secondary": "BnF catalogue (Gallica harvest)",
-   "summary": "A 406-sign passage in 22 invented signs, broken by permutation annealing. It covers the Count of Santa Fiora, 'mal satisfaict' and ready to serve the king on conditions. Seure's Lisbon letters in the same file are left open.",
+   "summary": "A 406-sign passage in 22 invented signs, broken by permutation annealing. It covers the Count of Santa Fiora, 'mal satisfaict' and ready to serve the king on conditions. The Noailles and Seure letters once grouped with it are different ciphers with their own entries (split 14 Oct 2026).",
    "primary_links": [
     [
      "Gallica",
@@ -387,15 +423,15 @@
    "secondary_links": []
   },
   {
-   "slug": "kaa4591",
-   "profile": "kaa4591",
+   "slug": "r9416",
+   "profile": "r9416",
    "section": "ct",
-   "part": "R9416 pp. 3-4 (f. 263)",
+   "part": "f. 263 (pp. 3-4)",
    "title": "A Bavarian agent to the Dukes of Bavaria: the Pressburg talks",
    "date": "c. 1533-34",
    "primary": "Bayerisches Hauptstaatsarchiv, Kurbayern Äußeres Archiv 4591, f. 263",
    "secondary": "DECODE R9416",
-   "summary": "Split entry. 3,150 signs in a homophonic substitution, broken by constrained annealing against German of 1472-1609 on the first run; a faint gloss on the first lines agrees word for word. It reports the Pressburg negotiations between Ferdinand and John Zápolya, a Turkish embassy and Alvise Gritti. Running German with local errors; person codes open. The rest of this key volume was read from contemporary glosses and is not counted here.",
+   "summary": "Split entry. 3,150 signs in a homophonic substitution, broken by constrained annealing against German of 1472-1609 on the first run; a faint gloss on the first lines agrees word for word. It reports the Pressburg negotiations between Ferdinand and John Zápolya, a Turkish embassy and Alvise Gritti. Running German with local errors, recto lines 11-16 re-keyed by hand and clean; person codes open. Since 15 Oct 2026 its own entry (r9416, with f. 262 as a second part read from its contemporary decipherment); the rest of the key volume, read from contemporary glosses and keys, has other entries and is not counted here.",
    "primary_links": [],
    "secondary_links": []
   },
@@ -457,11 +493,11 @@
    "summary": "A 580-group code table (the \"THE = 972\" code) was rebuilt from the clerk's decodes in another archive, with the remaining groups inferred from their alphabetical slot. It reads 48 of the postscript's 49 groups; the 49th is a probable slip for \"man\"."
   },
   {
-   "slug": "caprile1519",
-   "profile": "caprile1519",
+   "slug": "caprile1520",
+   "profile": "caprile1520",
    "section": "extpt",
-   "title": "Giuliano Caprile and Alfonso Cistarelli (Eger, Buda) to the Este",
-   "date": "1519-21",
+   "title": "Giuliano Caprile (Buda, Esztergom) to the Este: the 1520-21 sign cipher",
+   "date": "1520-21",
    "primary": "Archivio di Stato di Modena, Ambasciatori, Ungheria b. 4",
    "primary_links": [
     [
@@ -469,7 +505,7 @@
      "https://asmo.cultura.gov.it/fileadmin/risorse/strumenti_di_corredo/ASE_Cancelleria_ambasciatori_ungheria.pdf"
     ]
    ],
-   "secondary": "DECODE R1128-R1139; Vestigia",
+   "secondary": "DECODE R1136, R1138, R1139; Vestigia 1920, 1921",
    "secondary_links": [
     [
      "Vestigia",

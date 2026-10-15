@@ -20,6 +20,13 @@ What this project added: the two struck alphabets recovered from the images and 
 printed plaintexts; a third sign set identified and partly fixed from the catalogue's crib; a survey
 of every cipher run in the book; the correction above.
 
+Three alphabets, three results (one-key review, 14 Oct 2026): the profile gives the outcome per sign alphabet in
+`outcome.parts` and README has one row per part, as soria1523 does. Key A (f. 1r, the recipe names): read from
+Wattenbach's decipherment, partial (the recipe cipher is not transcribed). Key B (ff. 6v, 91v): read from
+Wattenbach's decipherment, complete. Set C (ff. 1r ll. 1-2, 5v-6r, 44v, 93r): key recovered from the 2014
+catalogue's reading of f. 93r (external plaintext), partial; f. 44v and the f. 6r glossary unread. Wattenbach is
+credited for keys A and B and f. 1r l. 1, the catalogue (Kalning et al.) for set C only.
+
 ## The book
 Free images: https://digi.ub.uni-heidelberg.de/diglit/cpg597 (Public Domain Mark). Only the 85
 written leaves are imaged. The IIIF manifest `/diglit/iiif/cpg597/manifest.json` fetches with a

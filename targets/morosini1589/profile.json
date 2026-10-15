@@ -1,0 +1,232 @@
+{
+ "schema_version": 1,
+ "target": "morosini1589",
+ "title": "Cardinal Morosini, legate in France, to Cardinal Montalto, spring 1589, two enclosures in the second key F22b (AAV Segr. Stato Francia 22/32-33, DECODE R53, R54)",
+ "documents": [
+  {
+   "id": "R53",
+   "shelfmark": "AAV Segr. Stato Francia 22, item 22/32, image 499v (DECODE R53)",
+   "date": "spring 1589 (Tours, from the series)",
+   "year": 1589,
+   "country": "Vatican",
+   "route": "Tours -> Rome",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; only Lasry's partial key reconstruction (DECODE 'F22b', 2020)."
+   },
+   "length": {
+    "tokens": 785,
+    "distinct": 10,
+    "unit": "symbols",
+    "measured": true,
+    "file": "decode/DOC_R53_D1717_1717.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DECODE D1717 (Midas, 31 Mar 2017)",
+    "image_quality": "unknown",
+    "notes": "Single digits counted (--width 1); some '?' digits in the transcription. Not checked against the images."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "R54",
+   "shelfmark": "AAV Segr. Stato Francia 22, item 22/33, image 502r (DECODE R54)",
+   "date": "11 May 1589, Moulins",
+   "year": 1589,
+   "country": "Vatican",
+   "route": "Moulins -> Rome",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; only Lasry's partial key reconstruction (DECODE 'F22b', 2020)."
+   },
+   "length": {
+    "tokens": 663,
+    "distinct": 10,
+    "unit": "symbols",
+    "measured": true,
+    "file": "decode/DOC_R54_D1825_1825.txt"
+   },
+   "transcription": {
+    "by": "DECODE",
+    "source": "DECODE D1825 (NiLan, 6 Apr 2017)",
+    "image_quality": "unknown",
+    "notes": "Single digits counted (--width 1); some '?' digits in the transcription. Not checked against the images."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Second key of Morosini's legation (DECODE 'F22b'): syllables and letters in one- or two-digit figures run together, several homophones for common syllables, no nulls, three-digit nomenclator with a dot on the first digit.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": true,
+   "note": "dot on the first digit marks a nomenclator code"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Meister 1906 no. 40 (the other 34 Francia 22 enclosures, targets/morosini1588) is a different key",
+  "notes": "Decoded with the morosini1588 beam-search decoder (decrypt.py --f22b), Lasry's values, Italian 5-gram model."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Lasry's partial F22b key reconstruction on DECODE R53/R54 (D3187/D3188, 24 Oct 2020); no decryption posted",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "transcription",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login and passed its session cookie to the model, set up Claude Code and posed the problem; no target-specific intervention recorded.",
+  "tools": [
+   "morosini1588/decrypt.py --f22b (beam-search segmentation)",
+   "lang/ it-cinquecento model",
+   "measure_sense.py",
+   "rebuild.py"
+  ],
+  "models": [
+   "claude-opus-5"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-09-19",
+  "last_date": "2026-10-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-19",
+   "kind": "access",
+   "what": "Fetched the DECODE records R18-R58 with the session cookie; R53/R54 carry a second key file (Lasry, 'ASV - F22b').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "Wrote decrypt.py: beam search over 1-3 digit segmentations with the Italian 5-gram model, nomenclator for dotted codes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "sibling key",
+   "what": "Applied Lasry's partial F22b reconstruction (~70 elements) to R53/R54.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "verification",
+   "what": "Partial-reading audit: R53/R54 listed as the open gap of the Francia 22 entry (second key, no further key material).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "literature search",
+   "what": "Meister 1906 (OCR) searched for a second Morosini key: index lists him only at p. 393 (no. 40); no. 32 (Bishop of Brescia with Rinalducci, 1585-90) is a cover-name list, not this syllabary.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "rebuild.py: values for the 24 empty two-figure codes by coordinate ascent on the decoder's LM score, Lasry's values fixed, fitted on R53 and on R54 separately.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Held-out check of the two fits: they agree on 1 code of about 10 (84 c) and each breaks readable stretches of the other record; no value adopted, reading kept on Lasry's key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "measure_sense.py: 0.752 of decoded letters in attested Italian words (R53 0.791, R54 0.707) against 0.817 for the 34 fully read Meister-key records.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Split from morosini1588 under the one-key rule: R53/R54 (F22b key) made their own entry; transcriptions, Lasry's key files and the decoder output moved here; Lasry credit scoped to the F22b key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "George Lasry's partial reconstruction of the F22b key, filed on DECODE R53/R54 before the attempt, was applied with the morosini1588 segmenting decoder; R53 reads in most of its length, R54 in fragments; a key-rebuild from the two records was tried and not adopted.",
+  "contribution": [
+   "decipherment with ambiguous key"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "grades": "unknown",
+  "verification": [
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "R53, R54: the stretches that do not read as sense (about a quarter of R53, more of R54)",
+    "blocker": "no-key-material",
+    "detail": "Lasry's F22b reconstruction (about 70 elements) is the only key material; Meister 1906 prints no second Morosini key; no decipherment or clear copy on the records; a rebuild from these 1,448 figures does not fix the missing values"
+   },
+   {
+    "item": "R53, R54 nomenclator groups outside Lasry's list",
+    "blocker": "open-codes",
+    "detail": "few occurrences, no context yet"
+   }
+  ],
+  "notes": "Split 14 Oct 2026 from morosini1588 (one key per entry). Measured 14 Oct 2026 (sense measure, see fraction_read_source). Key-rebuild by coordinate ascent on the 24 empty two-figure codes: fits on R53 and on R54 agree on one code of about ten and break each other's readable stretches; not adopted.",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "partial reconstruction of the F22b key (about 70 elements), applied to R53/R54",
+    "date": "2020-10",
+    "source": "DECODE R53 DOC_3187, R54 DOC_3188",
+    "published": true
+   }
+  ],
+  "fraction_read": 0.752,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "targets/morosini1589/measure_sense.py: share of decoded letters in Italian word forms attested at least twice in the it-cinquecento corpora, after the LM word split (decode_updates/decryptions/R53.txt, R54.txt): R53 0.791, R54 0.707, both 893/1,187. Control: the 34 fully read Meister no. 40 records score 0.817 by the same measure. An upper bound on text read as sense."
+ }
+}

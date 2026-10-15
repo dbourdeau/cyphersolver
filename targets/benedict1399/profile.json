@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "benedict1399",
- "title": "Benedict XIII's cipher letters to Francesc Climent, 1399-1416, Arxiu Capitular de Barcelona (catalogue 334)",
+ "title": "Benedict XIII's cipher letters to Francesc Climent, 1399-1403, Arxiu Capitular de Barcelona (catalogue 334)",
  "documents": [
   {
    "id": "benedict-1399-1403",
@@ -29,63 +29,7 @@
     "by": "llm from images",
     "source": "Only one page is imaged: Puig 1920 p. 475, a halftone facsimile of the last page of XXXV (doc. 1068), via Google Books (1826 x 2500 px), deskewed and read line by line at 3-5x. Every cipher run on the plate checked word by word against Puig's text (148 words, 826 plaintext letters; src/plate475_check.tsv); no free-standing sign transcription.",
     "image_quality": "poor",
-    "notes": "Eleven ciphered letters of Benedict XIII in Puig's appendix (XXVI, XXVII, XXXV, XXXVI, XXXVII, XXXIX, XLI, XLII, XLIII, LII; the Jafet note), treated as one set. About 2,200 deciphered words. The plate check covers the only imaged page."
-   }
-  },
-  {
-   "id": "entourage-1399-1416",
-   "read": "not applicable",
-   "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident paper series (Documentos inéditos del obispo Çapera)",
-   "date": "22 Oct 1399 - 27 Jun 1416",
-   "year": 1399,
-   "country": "Papacy (Avignon obedience)",
-   "route": "Benedict XIII's entourage (Fr. P. de Santa Cruz, Avignon; Alfonso de Exea, Perpignan; Pedro Comuel, Peñíscola) -> Francesc Climent",
-   "language": "Latin",
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "printed edition"
-    ],
-    "source": "Puig y Puig 1920, appendix XXIX, LXIV, CXVI, CXXXV, cipher passages in italics.",
-    "partial": false
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "letters",
-    "measured": false
-   },
-   "transcription": {
-    "by": "unknown",
-    "source": "No ciphertext in hand.",
-    "image_quality": "no images",
-    "notes": "Four ciphered letters from the Pope's entourage to Climent."
-   }
-  },
-  {
-   "id": "vico-1398-line",
-   "read": "not read",
-   "shelfmark": "Arxiu Capitular de Barcelona, Documentos inéditos del obispo Çapera (Puig appendix XIX)",
-   "date": "4 Dec 1398",
-   "year": 1398,
-   "country": "Papacy (Avignon obedience)",
-   "route": "Fr. Pedro de Vico, Avignon -> Guillem Carbonell, canon of Barcelona",
-   "language": "unknown",
-   "cleartext_in_document": "mostly clear",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "Puig 1920 p. 461 n. 3: 'Sigue una línea cifrada, de clave desconocida'; not printed."
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "letters",
-    "measured": false
-   },
-   "transcription": {
-    "by": "unknown",
-    "source": "Not printed, no image.",
-    "image_quality": "no images"
+    "notes": "Ten ciphered letters of Benedict XIII in Puig's appendix (XXVI, XXVII, XXXV, XXXVI, XXXVII, XXXIX, XLI, XLII, XLIII, LII), treated as one set. About 2,200 deciphered words. The plate check covers the only imaged page (XXXV, doc. 1068). The letters of his circle (Santa Cruz, Jafet, Exea, Comuel) and the 1398 Vico line were split off on 14 Oct 2026."
    }
   }
  ],
@@ -116,7 +60,7 @@
   "key_order": "unknown",
   "word_division": "none",
   "sibling_key": "Two keys of Climent in the same papers (doc. 595) that Puig could not apply to any document; not printed. Clement VII's Lavinde alphabets (Meister 1906, Schlüsselsammlung I) are the nearest printed keys.",
-  "notes": "c and i share one small o on the 1920 halftone (o is a double loop) and d/p are hard to separate; the original may distinguish them. Key rebuilt from known plaintext (Puig's reading), not ciphertext-only."
+  "notes": "c and i share one small o on the 1920 halftone (o is a double loop) and d/p are hard to separate; the original may distinguish them. Key rebuilt from known plaintext (Puig's reading), not ciphertext-only. Verified on doc. 1068 only; that Benedict's other letters use it rests on Puig having built his key from Climent's lines on three of them (docs. 1063, 461, 463)."
  },
  "conditions": {
   "prior_solution": {
@@ -187,7 +131,12 @@
   },
   {
    "date": "2026-09-23",
-   "kind": "crib", "technique": ["EM alignment", "crib testing", "repeat/pattern analysis"],
+   "kind": "crib",
+   "technique": [
+    "EM alignment",
+    "crib testing",
+    "repeat/pattern analysis"
+   ],
    "what": "Known-plaintext alignment of two runs against Puig's italics: line 1-2 'cum duce Burgundie' after a dotted-V sign for the King of Aragon, line 8 'et presertim scribe qu...'. Consistent values u = cb (3x), e = delta (4x), s = T (2x), m = t (2x), d = double cross (2x), c/i = o, b = T-bar; one clash.",
    "result": "partial"
   },
@@ -211,7 +160,13 @@
   },
   {
    "date": "2026-09-23",
-   "kind": "crib", "technique": ["EM alignment", "crib testing", "repeat/pattern analysis", "language-model scoring"],
+   "kind": "crib",
+   "technique": [
+    "EM alignment",
+    "crib testing",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
    "what": "Known-plaintext alignment over all cipher runs of the plate (lines 1-6, 8-17, 23-25), word by word against Puig's italics. One sign per letter emerges: a hook, b T-bar, c/i/o o, d double cross, e delta, f flagged sigma, g 4-shape, h 2-shape, l looped d, m footed epsilon, n, p inverted T, q double-barred upright, r upright, s T, t c', u/v cb, x alpha-shape; dotted V = King of Aragon (4x). The first session's clash was a misread of joined strokes.",
    "result": "worked"
   },
@@ -232,12 +187,22 @@
    "kind": "transcription",
    "what": "Write-up pass: line 24 (modis ... absque) re-read at 5x and transcribed sign by sign as seen, 58 signs, for the site's decipher replay. It showed that o is a double loop, distinct from the single o used for c and i; one tall stroke in 'istorum' unexplained.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split under the one-key rule: the letters of Benedict's circle (Santa Cruz 1399, Jafet 1400, Exea 1408, Comuel 1415 and 1416), whose key is not shown to be his, each moved to its own entry (santacruz1399, jafet1400, exea1408, comuel1415, comuel1416), and the 1398 Vico line in an unknown key to vico1398; this entry keeps Benedict XIII's ten letters of 1399-1403."
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "The text is Puig y Puig's printed decipherment (Pedro de Luna, 1920, appendix), found before the attempt; the project then rebuilt Puig's unprinted key by aligning his printed text against the p. 475 facsimile (external plaintext) and confirmed 91.4% of the plate's letters sign by sign.",
-  "contribution": ["key recovered", "transcription", "catalogue correction"],
+  "contribution": [
+   "key recovered",
+   "transcription",
+   "catalogue correction"
+  ],
   "class": "already solved",
   "key": "recovered",
   "fraction_read": 0.914,
@@ -245,20 +210,6 @@
    "key confirms"
   ],
   "gaps": [
-   {
-    "item": "Fr. Pedro de Vico to Guillem Carbonell, 4 Dec 1398: one cipher line of unknown key (Puig app. XIX, p. 461 n. 3)",
-    "blocker": "needs-physical-access",
-    "detail": "Not printed; the ACB original is not digitised."
-   },
-   {
-    "item": "Two keys of Climent in doc. 595 that Puig could not apply",
-    "blocker": "needs-physical-access",
-    "detail": "Not printed."
-   },
-   {
-    "item": "P. Jafet to Climent 15 Sep 1400 (doc. 1043) and Comuel to Climent (doc. 661), cited by Puig but not printed",
-    "blocker": "needs-physical-access"
-   },
    {
     "item": "Plate line 4, 'non approbando nec reprobando; de cardinali catan-' (7 words, 42 letters)",
     "blocker": "illegible",
@@ -275,15 +226,21 @@
     "detail": "Read as null punctuation; whether the dotted V inside two of them is meant cannot be settled from four instances."
    },
    {
-    "item": "The other ten 1399-1403 letters' ciphertext",
+    "item": "The other nine letters' ciphertext (1399-1403)",
     "blocker": "needs-physical-access",
     "detail": "The key applies, but no image exists; Puig's reading stands for them."
    }
   ],
-  "notes": "Read by Puig y Puig in 1920 (the reading is his). Added here: Meister's second-hand ACB report identified with Puig's printed decipherments; the 14 cipher items listed; in a second session the key Puig never printed rebuilt from the p. 475 facsimile against his text (20 letters, name sign, null separators), confirming 91.4% of the plate's cipher letters sign by sign (96.3% of the legible part) with no contradiction, and correcting Puig in three places (tenendum, absque congedio, necessaria). fraction_read is the plate's sign-by-sign confirmed share, not the reading of the text, which is Puig's and complete.",
+  "notes": "Read by Puig y Puig in 1920 (the reading is his). Added here: Meister's second-hand ACB report identified with Puig's printed decipherments; the 14 cipher items listed (Benedict's ten kept here; the others split off on 14 Oct 2026); in a second session the key Puig never printed rebuilt from the p. 475 facsimile against his text (20 letters, name sign, null separators), confirming 91.4% of the plate's cipher letters sign by sign (96.3% of the legible part) with no contradiction, and correcting Puig in three places (tenendum, absque congedio, necessaria). fraction_read is the plate's sign-by-sign confirmed share, not the reading of the text, which is Puig's and complete.",
   "fraction_read_method": "measured",
   "credits": [
-    {"who": "puig", "role": "key or decipherment used", "note": "printed decipherment of 14 cipher letters (1920); his unprinted key rebuilt here from the p. 475 facsimile against his text", "date": "1920", "source": "Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix"}
+   {
+    "who": "puig",
+    "role": "key or decipherment used",
+    "note": "printed decipherment of Benedict XIII's cipher letters (1920); his unprinted key rebuilt here from the p. 475 facsimile against his text",
+    "date": "1920",
+    "source": "Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix"
+   }
   ]
  }
 }

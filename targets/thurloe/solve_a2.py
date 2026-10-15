@@ -16,7 +16,7 @@ def load_groups(which):
     if which == "b":
         return [["18","15","4","20","87","20","1"], ["12","17","24","15","8","15","17","20","18","15","9","7","6","13","20"]]
     if which == "d":
-        t = open(os.path.join(HERE, "d_waddall_1656.txt"), encoding="utf-8").read()
+        t = open(os.path.join(HERE, "..", "waddall1656", "d_waddall_1656.txt"), encoding="utf-8").read()
         seg = re.search(r"--- CIPHER \(inline\) ---\n(.*?)\n--- end", t, re.S).group(1)
         return [re.findall(r"\d+", w) for w in re.split(r"[A-Za-z][A-Za-z',]*", seg) if re.findall(r"\d+", w)]
 segs = load_groups(which)

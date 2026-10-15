@@ -10,9 +10,8 @@ def items(path,sections):
         for g,gl in re.findall(r'\[([0-9.?]+) = ([^\]]*)\]',line):
             out.append((cur,g.split('.'),gl.strip()))
     return out
-A=items('letters_1697_1706.txt','A')
-B=items('letters_1697_1706.txt','BC')+items('letter_D_1706.txt','D')
-for name,its in (('code A',A),('code B',B)):
+A=items('letter_A_1697.txt','A')
+for name,its in (('code A',A),):
     single=collections.defaultdict(list); multi=collections.defaultdict(list)
     ntok=0; unglossed=0
     for let,gs,gl in its:

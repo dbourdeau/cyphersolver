@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "hereditary1796",
- "title": "The Hereditary Prince (Berlin) to Prince Frederik, 12 March 1796 (KHA Prins Willem V inv. 337; DECODE R2239, siblings R2236, R2237)",
+ "title": "The Hereditary Prince (Berlin) to Prince Frederik, 12 March 1796 (KHA Prins Willem V inv. 337; DECODE R2239, key source R2237)",
  "documents": [
   {
    "id": "R2239",
@@ -30,34 +30,6 @@
     "source": "DECODE IMG_R2239_I15527-I15529, rotated and cut into strips",
     "image_quality": "fair",
     "notes": "The measured 881 tokens include clear words; wordtable.py counts 769 cipher groups."
-   }
-  },
-  {
-   "id": "R2236",
-   "shelfmark": "Koninklijk Huisarchief, The Hague, Prins Willem V, inv. 337; DECODE R2236",
-   "date": "unknown",
-   "year": 1795,
-   "country": "Prussia",
-   "route": "Willem Frederik, Hereditary Prince (Berlin) -> William V",
-   "language": "Dutch",
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "No decipherment on the record."
-   },
-   "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
-    "unit": "code groups",
-    "measured": false
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "Viewed only (DECODE IMG_R2236_I15513-I15516); not transcribed.",
-    "image_quality": "fair",
-    "notes": "Numbers up to about 390 (copies No 1, No 2) and up to 2835 (page 1); not attacked."
    }
   }
  ],
@@ -91,7 +63,7 @@
   "word_division": "partial",
   "doubled_letters": "unknown",
   "sibling_key": "R2237 (same list, with contemporary decipherment)",
-  "notes": "DECODE calls it a book cipher; de Leeuw (Cryptologia 2001) describes it (not seen). R2236 uses another list."
+  "notes": "DECODE calls it a book cipher; de Leeuw (Cryptologia 2001) describes it (not seen). R2236 uses another list (now r2236)."
  },
  "conditions": {
   "prior_solution": {
@@ -135,13 +107,20 @@
    "date": "2026-09-21"
   },
   {
-   "kind": "hypothesis", "technique": ["repeat/pattern analysis", "plaintext matching"],
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis",
+    "plaintext matching"
+   ],
    "what": "R2237 pp. 2-4 are the decipherment of its cipher pp. 5-7; group rules (whole, positions, drop-first k, drop-last k) worked out from aligned examples.",
    "result": "worked",
    "date": "2026-09-21"
   },
   {
-   "kind": "solver", "technique": ["beam/DP decoding"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding"
+   ],
    "what": "Automatic split of plaintext lines among groups by depth-first search: too loose (whole-word groups absorb anything), abandoned.",
    "result": "failed",
    "date": "2026-09-21"
@@ -165,7 +144,12 @@
    "date": "2026-09-21"
   },
   {
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "repeat/pattern analysis", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis",
+    "contextual inference"
+   ],
    "what": "Entries completed from alphabetical runs and R2239 context (paris, des, sans, londres, milord, elgin, haugwitz, comte, votre, reputation, republique, garanties): 70% of groups.",
    "result": "partial",
    "date": "2026-09-21"
@@ -177,7 +161,11 @@
    "date": "2026-09-21"
   },
   {
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
    "what": "Printed body aligned to the groups: fixes entries 208, 203, 209, 219, 159, 115, 202, 79, 36, 40, 95, 176, 29, 19, 114, 87.",
    "result": "worked",
    "date": "2026-09-21"
@@ -188,19 +176,82 @@
    "result": "worked",
    "date": "2026-09-21"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 687 tokens, 388 types, fr-modern order 4: reading -2.061 per letter; random keys -2.945 (z 11.4); key annealed onto shuffled ciphertext best -1.992 (mean -2.011, z -3.9); annealer on the real text -1.977. Verdict: underdetermined.", "result": "partial"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 687 tokens, 388 types, fr-modern order 4: reading -2.061 per letter; random keys -2.945 (z 11.4); key annealed onto shuffled ciphertext best -1.992 (mean -2.011, z -3.9); annealer on the real text -1.977. Verdict: underdetermined.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "result": "worked",
+   "what": "Split under the one-key rule: R2236 (Dutch copies in another list) moved to its own entry r2236; this entry keeps R2239 (with R2237 as the key source)."
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 687, "types": 388, "tokens_per_type": 1.77, "score": -2.061, "nulls": {"random keys": {"n": 200, "mean": -2.945, "sd": 0.077, "max": -2.748, "z": 11.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.011, "sd": 0.013, "max": -1.992, "z": -3.9, "p": 1.0}}, "power": -1.977, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.061; polyphony 0.0; 82 unread tokens left out; annealer on the real text from random keys reached -1.977"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "fr-modern",
+   "file": "validation.tsv",
+   "tokens": 687,
+   "types": 388,
+   "tokens_per_type": 1.77,
+   "score": -2.061,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -2.945,
+     "sd": 0.077,
+     "max": -2.748,
+     "z": 11.4,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.011,
+     "sd": 0.013,
+     "max": -1.992,
+     "z": -3.9,
+     "p": 1.0
+    }
+   },
+   "power": -1.977,
+   "verdict": "underdetermined",
+   "notes": "claimed per-occurrence score -2.061; polyphony 0.0; 82 unread tokens left out; annealer on the real text from random keys reached -1.977"
+  },
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The word list was rebuilt by aligning R2237's cipher pages with the contemporary decipherment on its pp. 2-4 (same KHA inv. 337 file), which read 59% of R2239 (70% with context); Colenbrander's Gedenkstukken II no. 752 (1906), found during the attempt, was then used as a crib for the body, and the completed entries read the opening that is not in print.",
-  "contribution": ["transcription", "key recovered", "sender or date identified"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
   "class": "read",
   "fraction_read": "unknown",
-  "verification": ["contemporary decipherment", "independent clear copy", "historical consistency"],
-  "notes": "R2239 read in full except one word (entry 244); 70% of groups read before the print was found; body agrees with Colenbrander no. 752. R2236 not read.",
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy",
+   "historical consistency"
+  ],
+  "notes": "R2239 read in full except one word (entry 244); 70% of groups read before the print was found; body agrees with Colenbrander no. 752. R2236, in another list, was split off on 14 Oct 2026 to r2236.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "contemporary decipherment bound in R2237 pp. 2-4, from which the word list was rebuilt"},
-    {"who": "colenbrander", "role": "prior solution", "note": "body printed in Gedenkstukken II no. 752, used as crib; opening not printed", "date": "1906", "source": "Colenbrander, Gedenkstukken der algemeene geschiedenis van Nederland II (1906), no. 752, pp. 910-911"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "contemporary decipherment bound in R2237 pp. 2-4, from which the word list was rebuilt"
+   },
+   {
+    "who": "colenbrander",
+    "role": "prior solution",
+    "note": "body printed in Gedenkstukken II no. 752, used as crib; opening not printed",
+    "date": "1906",
+    "source": "Colenbrander, Gedenkstukken der algemeene geschiedenis van Nederland II (1906), no. 752, pp. 910-911"
+   }
   ]
  }
 }
