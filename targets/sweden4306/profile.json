@@ -1,0 +1,228 @@
+{
+ "schema_version": 1,
+ "target": "sweden4306",
+ "title": "R4306: Dutch diplomatic cipher, transcribed with CTTS and solved with Opus 5.5",
+ "documents": [
+  {
+   "id": "R4306",
+   "read": "read in part",
+   "shelfmark": "Riksarkivet, Stockholm, Chifferklaver låda II:133; DECODE R4306",
+   "date": "Undated; pencilled 1632?; references letters of 23 February and 13 March",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "Unknown sender → unknown recipient; Amsterdam reported by earlier survey, unverified here",
+   "language": "Dutch (17th century)",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No interlinear or marginal decipherment on the supplied cipher page. No historical plaintext or matched archive key used in the contributed solution.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 461,
+    "distinct": 40,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry’s CTTS project; Codex merged separated digit boxes; current post-review transcription supplied with the Opus 5.5 solution.",
+    "image_quality": "good",
+    "notes": "35 CTTS rows, 463 selections; two date-numeral selections (285=23, d13=13) excluded from cipher counts. Position-label histogram matches transcription exactly. DECODE lists three record pages; only this one cipher page is submitted."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "An alphabetical numerical substitution, 30–52, with nulls and four unresolved three-digit nomenclator codes.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1–3",
+   "separation": "mixed"
+  },
+  "distinct_symbols": 40,
+  "diacritics": {
+   "used": false,
+   "note": "Dots/colons separate numbers; superscript marks on date numerals do not select a cipher alphabet."
+  },
+  "homophones": {
+   "used": false,
+   "max_per_vowel": 1,
+   "max_per_consonant": 1,
+   "per_letter": {
+    "a": 1,
+    "b": 1,
+    "c": 1,
+    "d": 1,
+    "e": 1,
+    "f": 1,
+    "g": 1,
+    "h": 1,
+    "i": 1,
+    "k": 1,
+    "l": 1,
+    "m": 1,
+    "n": 1,
+    "o": 1,
+    "p": 1,
+    "q": 1,
+    "r": 1,
+    "s": 1,
+    "t": 1,
+    "u": 1,
+    "w": 1,
+    "x": 1,
+    "y": 1
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 4,
+   "kinds": [
+    "names",
+    "titles"
+   ],
+   "unread_groups": 4
+  },
+  "nulls": {
+   "present": true,
+   "count": 15
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "doubled_letters": "Encoded twice; no general doubling operator established.",
+  "sibling_key": "No archive or sibling key used. Earlier survey tested R4296 and R4310 unsuccessfully.",
+  "notes": "23 alphabet positions (30–52), 21 observed; 45=q and 51=x are predictions. Source header calls this 24 letters but lists only 23. Fifteen observed null classes (34 occurrences), plus unobserved null 13 in the source key. No j, v or z assignment. Date labels 285 and d13 represent literal 23 and 13; they are not nomenclator entries."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "The 21 September repository survey reports failed attempts; DECODE is still Non-decrypted on 17 October 2026. No prior plaintext was located in the limited exact-phrase search; no priority claim.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry directed the work, supplied the CTTS material, and supplied the edited Dutch reading, English translation and contextual notes. He confirms: transcribed with CTTS, then solved with Opus 5.5. Codex packaged the PR and checked counts, glyphs and five mechanical lines.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver), transcription",
+   "Opus 5.5, cipher solution",
+   "Codex digit-box merging and contribution checks",
+   "build.py (counts, visual key, five-line mechanical excerpt only)"
+  ],
+  "models": [
+   "Claude Opus 5.5"
+  ],
+  "sessions": "unknown",
+  "first_date": "unknown",
+  "last_date": "2026-10-17"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Earlier riksarkivet1628 survey reports failed numerical attacks in multiple languages and rejected keys R4296/R4310. These are prior attempts, not new runs in this contribution.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "transcription",
+   "what": "CTTS digit selections were merged into numerical units; current supplied snapshot contains 463 selections in 35 rows. Subsequent sign corrections are recorded in the preserved source-key comments.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "solver",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "George Lasry confirms that Opus 5.5 solved the cipher after CTTS transcription. The working-key header describes crib dragging; the result is an alphabetical number mapping with nulls. No historical plaintext or external key supplied the recovery. Exact prompts and run settings are not reconstructed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "verification",
+   "what": "Matched all 463 position labels to transcription counts; counted 461 cipher elements after excluding date numerals, and reapplied the current key to exactly five manuscript lines without correcting their spelling.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "access",
+   "what": "Checked public DECODE metadata: Riksarkivet Chifferklaver låda II:133, three record pages, broad 1600–1699 catalogue range, blank correspondents/languages and Non-decrypted status. Image manager requires login; only the supplied cipher page is independently inspected here.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-17",
+   "verdict": "not applicable",
+   "notes": "The requested five manuscript lines contain only 62 literal letters, below the validator minimum of 80; no full mechanical decryption is included. No statistical accuracy claim is made."
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Transcribed with CTTS, then solved with Opus 5.5, as confirmed by George Lasry; no historical plaintext or external key used.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.9882903981264637,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "counts.json: 422 assigned letter occurrences / 427 non-null cipher occurrences. Five unresolved code occurrences; 34 nulls and two date-numeral selections excluded. Assignment coverage, not verified meaningful-reading accuracy.",
+  "fraction_coherent": "unknown",
+  "codes_open": {
+   "open": 4,
+   "total": 4,
+   "tokens_open": 5
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Directed the work and supplied the CTTS project, edited Dutch text, translation and context. Transcribed with CTTS, then solved with Opus 5.5.",
+    "date": "2026-10-17",
+    "source": "https://github.com/dbourdeau/cyphersolver/tree/main/targets/sweden4306",
+    "published": true
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Codes 105, 106, 113 and 114",
+    "blocker": "open-codes",
+    "detail": "Four identities unresolved in five occurrences. Context suggests persons, powers or courts; identities are not supplied."
+   },
+   {
+    "item": "Doubtful words and literal-versus-edited discrepancies",
+    "blocker": "open-codes",
+    "detail": "gekl…men, [v]ersoeck, ga[d]e, Mar[t]y and the final sentence remain editorial or uncertain; the five-line excerpt preserves literal ekll and alsodesaecken."
+   },
+   {
+    "item": "Year, sender, recipient and place",
+    "blocker": "open-codes",
+    "detail": "Pencilled 1632? is not an established document date. The older survey reports Amsterdam on another view, not verified from the contributed page."
+   }
+  ],
+  "notes": "Belongs to: Riksarkivet key-box and Oxenstierna ciphers. Exactly five mechanical lines included; the full Dutch reading and translation are supplied editions. No full mechanical decryption or established year/identity claimed."
+ }
+}
