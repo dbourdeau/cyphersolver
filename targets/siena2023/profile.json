@@ -1,0 +1,290 @@
+{
+ "schema_version": 1,
+ "target": "siena2023",
+ "title": "Siena nos. 20 and 23: partial ciphertext-only recovery, proposed spring 1413 setting",
+ "documents": [
+  {
+   "id": "R4808",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 20; DECODE R4808",
+   "date": "30 March, year unknown; 1413 proposed",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "Perugia → king; Muzio Attendolo Sforza → Ladislaus of Naples proposed",
+   "language": "Italian with Latin formulae",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No interlinear or marginal decipherment used. Original cleartext framing and small clear-script passages are distinct from the supplied modern edition.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1045,
+    "distinct": 48,
+    "unit": "symbols",
+    "measured": true,
+    "file": "R4808_cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry’s current CTTS transcription, with documented Codex-assisted sign and overlap review.",
+    "image_quality": "fair",
+    "notes": "16 current transcription rows; punctuation and CLEAR1-CLEAR4 blocks excluded from cipher counts; g: prefix preserves the # sign. Edited prose includes disclosed restorations."
+   }
+  },
+  {
+   "id": "R4811",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 23; DECODE R4811",
+   "date": "Undated; before 4 May deadline; spring 1413 proposed",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "Royal authority → Iacobo Spinelo and Francisco Gactule; Ladislaus of Naples proposed",
+   "language": "Italian with Latin formulae",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No interlinear or marginal decipherment used. Original cleartext framing and small clear-script passages are distinct from the supplied modern edition.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 3209,
+    "distinct": 57,
+    "unit": "symbols",
+    "measured": true,
+    "file": "R4811_cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry’s current CTTS transcription, with documented Codex-assisted sign and overlap review.",
+    "image_quality": "fair",
+    "notes": "54 current transcription rows; punctuation and CLEAR1-CLEAR4 blocks excluded from cipher counts; g: prefix preserves the # sign. Edited prose includes disclosed restorations."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Graphical homophonic substitution with six letter/word-group signs, seven uncertain name/reference signs and eleven provisional null classes.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 59,
+  "diacritics": {
+   "used": "unknown",
+   "note": "Marked and compound signs are separate CTTS classes; no general modifier rule established."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 3,
+   "per_letter": {
+    "a": 4,
+    "b": 1,
+    "c": 1,
+    "d": 1,
+    "e": 3,
+    "f": 1,
+    "g": 2,
+    "h": 1,
+    "i": 4,
+    "l": 2,
+    "m": 1,
+    "n": 1,
+    "o": 3,
+    "p": 1,
+    "q": 1,
+    "r": 1,
+    "s": 2,
+    "t": 1,
+    "v": 3
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 13,
+   "kinds": [
+    "word parts",
+    "common words",
+    "names"
+   ],
+   "unread_groups": 7
+  },
+  "nulls": {
+   "present": true,
+   "count": 11
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "Special FF, RR and SS signs; no general doubling operator established.",
+  "sibling_key": "One working key for nos. 20 and 23; Meister’s Lucca keys differ, despite a comparable 1412 Sforza sign.",
+  "notes": "59 observed classes: 34 alphabetic, six multi-letter CI/ET/FF/RE/RR/SS, seven proposed or unidentified references, eleven provisional nulls and one erased class. V covers u/v (three signs); other consonants have at most two. CLEAR1-CLEAR4 excluded. An unused n=? mapping remains in key.txt."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "No historical decipherment or matching archive key used in recovery. The supplied later survey reports no matching key among available records or exact external plaintext. Historical comparisons now support tentative names/date; no first-publication claim.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry supplied and reviewed the CTTS material and successive Italian editions, and directed recovery. Transcribed with CTTS, then solved by GPT-6 Astra. Codex prepared the contribution, revised the English translations, counted the snapshot, checked five physical lines, and cross-checked selected historical sources.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver), used for transcription",
+   "GPT-6 Astra, used to solve the cipher",
+   "build.py (inventory, visual key and short excerpt only)"
+  ],
+  "models": [
+   "GPT-6 Astra"
+  ],
+  "sessions": "unknown",
+  "first_date": "unknown",
+  "last_date": "2026-10-17"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)"
+   ],
+   "what": "The existing siena1421 collection survey records unsuccessful homophonic/null-aware attempts on nos. 20 and 23; this contribution does not rerun or claim those attempts.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction",
+    "repeat/pattern analysis"
+   ],
+   "what": "Transcribed with CTTS, then solved by GPT-6 Astra, as confirmed by George Lasry. Shared key applied to nos. 20 and 23; subsequent image and editorial review retained uncertain passages.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "transcription",
+   "what": "Imported the current CTTS snapshot and latest edited lines; 4,254 cipher occurrences, 59 observed classes. Preserved CLEAR1-CLEAR4, tentative Sforza and Paolo Orsini, repeated Name6, and the unresolved Eucebio reading.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "literature search",
+   "what": "Used the supplied keys-and-sources report and independently checked Fermo’s April 1413 parallel, Minuti’s Sforza account, Meister pp. 51 and 55–57, and later Mazzone camp records. Spring 1413 and the identities remain proposed; 1421 belongs to another Siena piece. Comparable Lucca Sforza sign is post-recovery support, not the matched alphabet.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "verification",
+   "what": "Only R4811 CTTS L6-L10 mechanically decoded: 322 signs yield 328 literal letters matching the normalized current edition, with no spelling emendation. Refreshed the visual key and English translations. Full editions remain editorial readings, not a full mechanical validation.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 322 tokens, 40 types, it-cinquecento order 4: reading -2.126 per letter; random keys -4.009 (z 7.7); key annealed onto shuffled ciphertext best -2.749 (mean -2.785, z 21.8); annealer on the real text -2.443. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-17",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 322,
+   "types": 40,
+   "tokens_per_type": 8.05,
+   "score": -2.126,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.009,
+     "sd": 0.243,
+     "max": -3.331,
+     "z": 7.7,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.785,
+     "sd": 0.03,
+     "max": -2.749,
+     "z": 21.8,
+     "p": 0.1429
+    }
+   },
+   "power": -2.443,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.126; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.443 Scope: deliberately selected R4811 L6-L10 only, not the full key or edited texts. 328 literal letters become 325 scored letters under the model normalization."
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Transcribed with CTTS, then solved by GPT-6 Astra from ciphertext patterns and original cleartext framing, without a decipherment or matched external key. Later historical comparison supports tentative identity proposals only.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "key extended or corrected",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.9894244958189867,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "counts.json: 4,023 certain non-null assignments / 4,066 non-null occurrences; excludes 41 uncertain name/reference occurrences, 2 erased tokens, and 188 provisional nulls. Coverage is not coherent-reading accuracy.",
+  "fraction_coherent": "unknown",
+  "codes_open": {
+   "open": 7,
+   "total": 7,
+   "tokens_open": 41
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Directed recovery and supplied CTTS material and current edited Italian readings. Transcribed with CTTS, then solved by GPT-6 Astra; publication, updated English translations and checks by Codex.",
+    "date": "2026-10-17",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/41",
+    "published": true
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Seven reference/name signs and historical identities/year",
+    "blocker": "open-codes",
+    "detail": "Tartaglia, Paolo Orsini and Sforza tentative; Name3-Name6 unresolved, e may be a pronoun; year/writer historical inferences."
+   },
+   {
+    "item": "Erasures, dessut, essereme, Eucebio, prout, closing abbreviation and subscription",
+    "blocker": "illegible",
+    "detail": "Uncertain or editorial passages remain in the current readable editions."
+   },
+   {
+    "item": "Nulls, compound segmentation and editorial emendations",
+    "blocker": "open-codes",
+    "detail": "Occurrence-level verification remains; selected five-line agreement is not whole-text validation."
+   }
+  ],
+  "notes": "Exactly five physical lines mechanically checked. Statistical validation, if present, applies only to that selected excerpt. Year, sender, name codes and some editorial readings remain uncertain."
+ }
+}
