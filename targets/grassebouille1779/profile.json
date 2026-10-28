@@ -1,0 +1,165 @@
+{
+ "schema_version": 1,
+ "target": "grassebouille1779",
+ "title": "Grasse and Bouillé 1779: an enciphered war plan for the defence of the French West Indies read",
+ "documents": [
+  {
+   "id": "anom-c8a-76-f196",
+   "read": "read",
+   "shelfmark": "ANOM, COL C8 A 76, fol. 196 (images 0309-0317)",
+   "date": "4 August 1779",
+   "year": 1779,
+   "country": "France",
+   "route": "Martinique -> Versailles",
+   "places": {
+    "from": "Martinique",
+    "to": "Versailles"
+   },
+   "language": "French",
+   "pages": 9,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "IREL record: \"Autre chiffre préparé par MM. de Bouillé et de Grasse\" (no summary); no gloss, no contemporary decipherment found."
+   },
+   "length": {
+    "tokens": 1318,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "IREL images (ANOM)",
+    "image_quality": "good",
+    "notes": "Running text (images 0309-0313) transcribed; the four pages of enciphered tables (0314-0317) are not transcribed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Numerical syllabary/nomenclator of about 850 numbers, homophones, code names for islands",
+  "symbol_kind": "digits",
+  "distinct_symbols": 390,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "IREL record gives no summary; not in the catalogue or targets/; web search negative (checked 28 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout set the rules (frozen key before validation, held-out check fixed in advance, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction",
+    "plaintext matching"
+   ],
+   "what": "Bouillé's key K6 (targets/bouille1778, PR #171) extended by aligning three contemporary cipher/plain pairs (ANOM C8 A 79 fols. 3/5, C8 A 81 fols. 212-213, C8 A 81 fols. 55-56) -> K7, 509 values, frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen K7 on a held-out fourth pair (Bouillé's memorandum of 14 Sept 1781, C8 A 80 fols. 113-115, 485 groups, against the contemporary 'Déchiffrement'): 0.825 words / 0.889 characters vs max 0.149 / 0.089 for 200 permuted controls; criterion fixed in advance (characters >= 0.85, words >= 0.75, above controls).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Running text of the 1779 plan read with K8 (K7 + held-out pair).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Bouillé's key rebuilt from glossed sibling letters and contemporary cipher/plain pairs, validated on a held-out pair.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.98,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "778/794 words read in their sense (757 certain, 9 probable, 12 restored, 16 unresolved; unresolved groups counted one word per number). Enciphered tables (images 0314-0317) not read.",
+  "first_break": true,
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-10-28",
+   "verdict": "pass"
+  },
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key extended with cipher/plain pairs and validated on a held-out pair; plan read, English translation",
+    "date": "2026-10-28"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "anom-c8a-76-f196",
+    "label": "Grasse and Bouillé, plan for the protection of the French colonies in America, Martinique, 4 Aug 1779",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "A small mobile squadron (8 ships, 2,500 men) based at Martinique to guard the islands in winter and strike the British elsewhere, from Florida to Newfoundland; Bouillé to command on land, Grasse at sea."
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
