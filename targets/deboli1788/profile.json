@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "target": "deboli1788",
+ "title": "Antoni Augustyn Deboli to King Stanisław August, cipher despatches from St Petersburg, 1788 (AGAD Zbiór Popielów 428; Unsolved Catalogue 417)",
+ "documents": [
+  {
+   "id": "c038_1788-05-13",
+   "shelfmark": "AGAD, Zbiór Popielów 428, no. 038, k. 74-75v",
+   "date": "1788-05-13",
+   "year": 1788,
+   "country": "Poland",
+   "route": "Antoni Augustyn Deboli, St Petersburg -> King Stanisław August, Warsaw",
+   "language": "Polish",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No same-date clear text in ZbPop 417 (it jumps from 9 to 16 May 1788)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 943,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/c038_1788-05-13.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "notes": "From AGAD scans (images 0092-0094); 0/8 loop ambiguities marked ^ and resolved by the key."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "The 1789-91 Polish syllabary-nomenclator of Daniel Bourdeau's deboli1789, in use in 1788 alongside an older code.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "separation": "dots"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "notes": "In 1788 an older code (groups to about 2450) alternates with this one through the year; 4000 marks a switch; a 9933 table carries French passages.",
+  "distinct_symbols": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Cabinet decipherments of 110 of the 112 despatches of 1788 in AGAD ZbPop 417 (same-date Polish texts); none for 13 May 1788",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "tools": [
+   "AGAD scan server",
+   "DP aligner (scripts/learn.py)"
+  ],
+  "sessions": 4,
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "AGAD letter lists ZbPop428.xml and ZbPop417.xml; scans on agadd2.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "hypothesis",
+   "what": "ZbPop 417 holds the cabinet decipherments of the older-code despatches too: 4 and 11 Jan 1788 aligned (1332 1332 = do do; 158 = ni x3).",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "statistics",
+   "what": "Pairing by date: all despatches matched except nos. 038 and 039 of 13 May 1788.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "what": "No. 038 decoded with Daniel Bourdeau's 1789 key, unchanged and frozen: 95.3% of groups with a value.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "what": "Key completed on five 1788 pairs by DP alignment (K2, K3, K4, each frozen before its validation).",
+   "result": "partial",
+   "technique": [
+    "EM alignment"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "what": "Held-out pair 11 Nov 1788 (341 groups): 0.862 of groups read as sense, exact words 0.750, characters 0.882; 200 shuffled controls at most 0.199 / 0.131 / 0.289.",
+   "result": "partial",
+   "technique": [
+    "plaintext matching"
+   ]
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Daniel Bourdeau's 1789 key, completed on 1788 cipher despatches aligned with their same-date cabinet decipherments, applied to the one despatch of the 1789-91 code that has no decipherment.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "targets/deboli1788/reading/c038_1788-05-13.decoded.txt: 911 of 943 groups with a key value; held-out pair read as sense 0.862",
+  "fraction_read": 0.862,
+  "codes_open": {
+   "open": "unknown",
+   "total": "unknown",
+   "tokens_open": 32
+  },
+  "verification": [
+   "independent clear copy",
+   "matched control"
+  ],
+  "gaps": [
+   {
+    "item": "13 May 1788 no. 038: 32 groups without a value, alternatives unsettled",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "13 May 1788 no. 039: French 9933 table not read",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "c038_1788-05-13",
+    "transcription": "transcription/c038_1788-05-13.txt",
+    "language": "pl",
+    "decryption": "reading/c038_1788-05-13.decoded.txt",
+    "reading": "reading/c038_1788-05-13.txt",
+    "translation": "reading/c038_1788-05-13_en.md",
+    "state": "read in part",
+    "read_share": 0.862,
+    "summary": "Dinner for the famous privateer lately taken into Russian service (very probably John Paul Jones); talk with Stackelberg on the King of Prussia's designs, the alliance project for the Diet ('to turn into a Confederation'), Russian aid 'when needed', Gdańsk.",
+    "note": "Key K4 = deboli1789 key_pass.tsv + 1788 additions; read_share is the held-out measure, not the 96.6% of groups with a value."
+   }
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Brice Dudout, Europe chiffrée (https://bdudout.github.io/europe-chiffree/): transcription of no. 038 and the 1788 pairs, key completion, reading in part",
+    "date": "2026-10-28"
+   },
+   {
+    "who": "bourdeau",
+    "role": "key or decipherment used",
+    "note": "Daniel Bourdeau, deboli1789 key_pass.tsv (base of key_K4.tsv)",
+    "date": "2026-10-28"
+   }
+  ],
+  "provenance": "contributed"
+ }
+}
