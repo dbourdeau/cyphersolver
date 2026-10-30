@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "target": "bell1900",
+ "title": "Alexander Graham Bell to Mabel Hubbard Bell, 27 Aug 1900, 'Unicode' commercial code telegram quoted in a letter (LoC magbell.04100117; catalogue 763)",
+ "documents": [
+  {
+   "id": "telegram",
+   "shelfmark": "Library of Congress, Alexander Graham Bell Family Papers, magbell.04100117, image 1",
+   "date": "27 Aug 1900",
+   "year": 1900,
+   "country": "United Kingdom",
+   "route": "London -> Paris",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment in the letter or the LoC record; the letter says only that Mabel may 'have some fun in deciphering'. The key is the printed Unicode phrase book.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 7,
+    "distinct": 7,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "LoC master JPEG tile.loc.gov .../magbell/041/04100117/0001.jpg (1368x2148), read at display size",
+    "image_quality": "good",
+    "notes": "Six code words and the clear name Bert. Sigma is struck out and Signinus written under it, so the By the People transcription's 'Signinas' signature is a misreading and Signinus is mid-message."
+   },
+   "read": "read",
+   "places": {
+    "from": "London",
+    "to": "Paris"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Commercial phrase code: each Latin cypher word of 'Unicode' The Universal Telegraphic Phrase-Book stands for a printed phrase.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 6,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 6,
+   "kinds": [
+    "phrases"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "notes": "The code book lists phrases alphabetically with Latin words in alphabetical order beside them; one word, one phrase."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment found in the LoC record, the By the People transcription or the project notes (checked 28 Oct 2026 and 29 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "published key",
+  "human_role": "Gave the task page URL, asked for the images to be checked, and asked for the profile, checkers and commit. The firewall was opened by the user after the first network failure.",
+  "tools": [
+   "curl",
+   "archive.org djvu text and page images",
+   "LoC item JSON and master images"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29"
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "access",
+   "what": "Read the task page (docs/solve/763.html). curl and WebFetch could not reach archive.org or loc.gov at first (network blocked); worked after the user changed the firewall.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "key from source",
+   "what": "Found the Unicode phrase book on archive.org (1896 ed. UnicodeUniversalTelegraphicPhraseBook; 1889 ed. unicodeuniversa00unkngoog) and looked the words up in the djvu text, pairing each word to its phrase by counting phrases and words per page.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "Viewed LoC images 1-3. Message as sent: Roboro, Diallage, Siquando, Adalligo, Signinus (written under a struck-out Sigma), Promulgo, Bert.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "what": "Viewed the 1896 page images pp. 5, 35, 78, 88, 95 and 96: each word sits beside the phrase the OCR pairing gave. Promulgo is the betting phrase 'Put me £1,000 to win on —'; the letter does not explain it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "what": "Plaintext: Telegram received. Glad to hear from you. Wrote to you by this morning's post. Am quite well, and writing by post. Weather very fine, sea quite smooth. [Put me £1,000 to win on —] Bert.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "The key is the printed Unicode phrase book (1896 edition), a public code book applied to the six code words; no key was recovered from the ciphertext.",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: 6 of 6 code words valued; Bert is clear text and not counted",
+  "codes_open": {
+   "open": 0,
+   "total": 6,
+   "tokens_open": 0
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [],
+  "texts": [
+   {
+    "doc": "telegram",
+    "transcription": "transcription.txt",
+    "decryption": "reading.md",
+    "reading": "reading.md",
+    "language": "en",
+    "state": "read",
+    "summary": "Bell, on the steamer Ulunda on the Thames, telegraphs his wife in a commercial code that she is to puzzle out; it says telegram received, glad to hear, wrote this morning, quite well, weather fine and sea smooth, plus one betting phrase that the letter does not explain.",
+    "read_share": 1.0,
+    "note": "Promulgo is printed as a betting phrase and kept as printed; the letter does not explain it. It is a valued code word, not a hole.",
+    "reading_review": {
+     "grade": "A",
+     "by": "claude-sonnet-5-5 (model)",
+     "date": "2026-10-29",
+     "note": "Six code words each valued from the printed page; the phrases read as a coherent telegram except Promulgo, a betting phrase kept as printed."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Code book entry for Promulgo is unexplained in context. The 1898 edition was not checked.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the printed 'Unicode' Universal Telegraphic Phrase-Book (1896 edition; 1889 edition checked in its text layer only), a commercial code book of the time",
+    "date": "1896",
+    "source": "https://archive.org/details/UnicodeUniversalTelegraphicPhraseBook",
+    "published": true
+   }
+  ]
+ }
+}
