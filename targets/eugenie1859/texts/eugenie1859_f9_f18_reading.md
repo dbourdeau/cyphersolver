@@ -15,7 +15,7 @@ etai[en]t exaltes au dela de toute expression, tous les troupes etai[en]t couver
 peine a trouver du pain.
 
 La armee aura passé aujourd’hui le Oglio sans resistance; nous suivons la armee Autrichien[ne] pas a pas. Je
-re[?] [?] des [?] le [?] [?] [?] [?] [?] [?] par ennemi.
+recueille partout des doléances relatives aux exactions commises par ennemi.
 
 Nous esperons une bataille sur Chiese, mais le ennemi parait decidement se retirer derriere le Mincio.
 

@@ -138,7 +138,13 @@
     },
     {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
     {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (NAF 11355 — Emperor–Empress code): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"},
-    {"date": "2026-10-24", "kind": "reading", "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.982 (whole), 0.948 (deciphered passages); state read in part.", "result": "partial"}
+    {"date": "2026-10-24", "kind": "reading", "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.982 (whole), 0.948 (deciphered passages); state read in part.", "result": "partial"},
+    {
+      "date": "2026-10-30",
+      "kind": "reading",
+      "what": "George Lasry, new version of his report in French (with the help of Claude Opus 5.5): f15r read in full (310 cueille, 925 partout, 381 do, 81 ances, 1099 relatives, 123 aux, 495 exact, 656 ions, 257 commises: Je recueille partout des doléances relatives aux exactions commises par l'ennemi; group 981 reread as 381); eleven readings confirmed by the alphabetical order of the codebook; codebook now 242 groups (lasry_key.csv).",
+      "result": "partial"
+    }
   ],
   "outcome": {
     "class": "read in part",
@@ -177,6 +183,13 @@
         "note": "issue #39: hand re-reading of four pages against Lasry's key; token corrections proposed; f21 a different nomenclator",
         "date": "2026-10-16",
         "source": "https://github.com/dbourdeau/cyphersolver/issues/39"
+      },
+      {
+        "who": "lasry",
+        "role": "key corrected",
+        "note": "f15r read in full; codebook revised to 242 groups",
+        "date": "2026-10-30",
+        "source": "targets/eugenie1859/lasry/report/08_naf-11355-emperorempress-code_fr.pdf"
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r. 22 Oct 2026, reading audit: the token table (four pages) and the report excerpts read; Krajcovic's corrections are not prose; fraction_read 0.841 (Lasry's figure) -> about 0.31, what the repository shows.",
