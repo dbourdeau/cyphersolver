@@ -1,0 +1,218 @@
+{
+ "schema_version": 1,
+ "target": "bouille1778",
+ "title": "Bouillé 1778: the governor of the Windward Islands to the minister of the Navy, two cipher letters and a garrison return read",
+ "documents": [
+  {
+   "id": "anom-c8a-77-f88",
+   "read": "read",
+   "shelfmark": "ANOM, COL C8 A 77, fol. 88 (no. 238)",
+   "date": "17 September 1778",
+   "year": 1778,
+   "country": "France",
+   "route": "Martinique -> Versailles",
+   "places": {
+    "from": "Fort-Royal, Martinique",
+    "to": "Versailles"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "IREL record: \"Lettre chiffrée non décryptée\"; no gloss."
+   },
+   "length": {
+    "tokens": 181,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "IREL images (ANOM)",
+    "image_quality": "good"
+   }
+  },
+  {
+   "id": "anom-c8a-77-f101",
+   "read": "read",
+   "shelfmark": "ANOM, COL C8 A 77, fol. 101 (letter no. 259 and its two returns, images 0162-0164)",
+   "date": "5 and 9 December 1778",
+   "year": 1778,
+   "country": "France",
+   "route": "Martinique -> Versailles",
+   "places": {
+    "from": "Fort-Royal, Martinique",
+    "to": "Versailles"
+   },
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "IREL record: \"Lettre et pièces jointes chiffrées non décryptées\"; no gloss."
+   },
+   "length": {
+    "tokens": 578,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "IREL images (ANOM)",
+    "image_quality": "good",
+    "notes": "Both attached returns (images 0163-0164) transcribed and read."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Numerical syllabary/nomenclator of about 850 numbers, homophones, code names for islands",
+  "symbol_kind": "digits",
+  "distinct_symbols": 390,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "IREL records say \"non décryptée\"; not in the catalogue or targets/ (checked 28 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction",
+    "plaintext matching"
+   ],
+   "what": "Key rebuilt from pencil glosses of five 1779 letters of Bouillé (C8 A 78); frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen key on the held-out glossed letter no. 363: 0.865 words / 0.850 characters vs max 0.038 / 0.165 for 200 controls.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Enlarged frozen key K6 on held-out letter no. 415 against its modern translation: 0.894 words / 0.897 characters vs max 0.182 / 0.174.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Letters nos. 238 and 259 and both returns read; returns checked by their sums (1,072 and 4,057 men).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Key rebuilt from pencil glosses of sibling letters (1779), validated on a held-out glossed letter.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.993,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "455/458 words read in their sense (437 certain, 11 probable, 7 restored, 3 unresolved).",
+  "first_break": true,
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-10-28",
+   "verdict": "pass"
+  },
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key rebuilt from 1779 glosses, validated on a held-out letter; letters and return read, English translation",
+    "date": "2026-10-28"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "anom-c8a-77-f88",
+    "label": "Bouillé to the minister, 17 Sept 1778 (no. 238), letters of no. 259 and its first return",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "Short of 817 men, Bouillé cannot attack other British islands after taking Dominica."
+   },
+   {
+    "doc": "anom-c8a-77-f101",
+    "label": "Bouillé to the minister, 5 Dec 1778 (no. 259) and its two returns (Dominica garrison; troops in Martinique), 9 Dec 1778",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "Works at Dominica nearly finished; Dominica garrison 1,072 men; troops in Martinique 4,057 present, 1,031 short."
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
