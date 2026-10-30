@@ -1691,3 +1691,11 @@ body.pg-archives .st{display:inline-block;padding:.1rem .6rem;border-radius:6px;
 body.pg-archives .st-requested,body.pg-archives .st-claimed{background:var(--blue-bg);color:var(--blue)}
 body.pg-archives .st-received,body.pg-archives .st-closed{background:var(--green-bg);color:var(--green)}
 body.pg-archives .none{color:var(--muted)}
+
+/* George Lasry's three help labels (30 Oct 2026): same colours as the stickers */
+body.pg-catalogue .pill.help-solve{color:#c8102e;border-color:#c8102e;background:#ffe24a;font-weight:700}
+body.pg-catalogue .pill.help-read{color:#4b0f8c;border-color:#4b0f8c;background:#c6f54a;font-weight:700}
+body.pg-catalogue .pill.help-obtain{color:#6b0f1a;border-color:#6b0f1a;background:#7fd8ff;font-weight:700}
+body.pg-catalogue .pill.unf{color:var(--muted,#888);border-color:currentColor;border-style:dashed}
+body.pg-solve p.frame.unconfirmed{border-left:3px dashed var(--amber);padding-left:.8rem}
+body.pg-solve p.frame.confirmed{border-left:3px solid var(--green);padding-left:.8rem}

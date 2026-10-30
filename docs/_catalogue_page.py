@@ -245,6 +245,31 @@ def solve_href(e):
     return f'solve/{e["id"]}.html'
 
 
+HELP = {'obtain': ('Help obtain', 'the document is not online: the first step is a copy, from the archive or a reading-room photograph'),
+        'read': ('Help read', 'the key material exists; what is left is the reading'),
+        'solve': ('Help solve', 'the ciphertext is online and no key is known')}
+
+
+def help_kind(e):
+    """George Lasry's three stickers (30 Oct 2026): which help the entry needs first."""
+    if e.get('access') == 'archive': return 'obtain'
+    if e.get('workable'): return 'read'
+    return 'solve'
+
+
+def frame_info(e):
+    """(state, text, href) for the page/frame where the cipher was confirmed. state: confirmed | viewed | unconfirmed."""
+    v = e.get('vetting') or {}
+    sn = v.get('seen') or {}
+    if sn.get('kind') in ('scan', 'facsimile', 'transcription'):
+        m = re.search(r'https?://\S+', sn.get('where') or '')
+        return ('confirmed', f"{sn.get('cipher', '')} ({sn.get('where', '')}; checked {v.get('date', '')} by {v.get('by', 'an LLM')})",
+                m.group(0).rstrip(').,;') if m else '')
+    if e.get('seen') != 'catalogue':
+        return ('viewed', 'The cipher was viewed on the image when the entry was written; the frame is not recorded separately.', '')
+    return ('unconfirmed', 'No one has yet confirmed the cipher on a specific page or frame. The location comes from the written description of the document, not from a page.', '')
+
+
 def row(e):
     href = solve_href(e)
     seen = '<span class="seen img" title="viewed on the image">●</span>' if seen_image(e) else '<span class="seen cat" title="catalogue description only">◇</span>'
@@ -252,6 +277,9 @@ def row(e):
     pill = f'<span class="pill{" att" if e.get("outcome") or tip else ""}"{tip}>{esc(short_outcome(e))}</span>'
     if e.get('workable'): pill += '<span class="pill work" title="the key material exists (siblings, glosses); what is left is work, not an outside blocker">no outside blocker</span>'
     if e.get('access') == 'archive': pill += '<span class="pill arch" title="the ciphertext or the key material is not online; it needs the archive to digitise it or someone to photograph it">needs archive scans</span>'
+    hk = help_kind(e)
+    pill = f'<span class="pill help-{hk}" title="{esc(HELP[hk][1])}">{HELP[hk][0]}</span>' + pill
+    if frame_info(e)[0] == 'unconfirmed': pill += '<span class="pill unf" title="no one has confirmed the cipher on a specific frame yet">frame unchecked</span>'
     link = ''.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)[:1])
     return (f'<tr class="e" data-id="{e["id"]}" data-href="{href}">'
             f'<td class="prio"><b>{priority(e):.1f}</b></td>'
@@ -316,6 +344,7 @@ def filter_keys(e):
     return {'lang': lang_keys(e), 'century': century_key(e), 'region': e['region'], 'cls': e['cls'],
             'status': 'progress' if progress(e) else 'skipped' if 'skipped' in o else 'attempted' if o.startswith('attempted') else 'new',
             'access': [k for k, on in (('online', e.get('access') != 'archive'), ('workable', e.get('workable')), ('archive', e.get('access') == 'archive')) if on],
+            'help': help_kind(e), 'frame': frame_info(e)[0],
             'source': source_key(e), 'seen': 'image' if seen_image(e) else 'catalogue',
             'counted': 'counted' if e['counted'] else 'noted'}
 
@@ -489,15 +518,16 @@ def build_html():
   {dropdown('Century', facet('century', 'Century', CENTURIES, keys), 'century')}
   {dropdown('Region', facet('region', 'Region', by_count(keys, 'region', last=('Other',)), keys), 'region')}
   {dropdown('Class', facet('cls', 'Class', CLASSES, keys), 'cls')}
-  {dropdown('Status', facet('status', 'Status', STATUSES, keys) + facet('access', 'Access', ACCESS, keys), 'status access')}
+  {dropdown('Status', facet('status', 'Status', STATUSES, keys) + facet('access', 'Access', ACCESS, keys) + facet('help', 'Help needed', [('solve', 'Help solve'), ('read', 'Help read'), ('obtain', 'Help obtain')], keys), 'status access help')}
   {dropdown('More', facet('source', 'Found in', SOURCES, keys)
             + facet('seen', 'Checked on', [('image', 'the image'), ('catalogue', 'catalogue description only')], keys)
+            + facet('frame', 'Cipher located on a frame', [('confirmed', 'confirmed'), ('viewed', 'viewed earlier'), ('unconfirmed', 'not yet confirmed')], keys)
             + facet('counted', 'Ranking', [('counted', 'counted'), ('noted', 'noted only')], keys)
             + f'''<div class="facet weights"><span class="flabel">Priority</span><span class="opts">
     <label>importance <input type="range" id="w_imp" min="0" max="100" value="{int(W['importance']*100)}"><span class="wv" id="v_imp"></span></label>
     <label>solvability <input type="range" id="w_sol" min="0" max="100" value="{int(W['solvability']*100)}"><span class="wv" id="v_sol"></span></label>
     <label>ease <input type="range" id="w_eas" min="0" max="100" value="{int(W['ease']*100)}"><span class="wv" id="v_eas"></span></label>
-    <button type="button" class="chip" id="wreset">default weights</button></span></div>''', 'source seen counted')}
+    <button type="button" class="chip" id="wreset">default weights</button></span></div>''', 'source seen frame counted')}
   <span class="count" id="count" aria-live="polite"></span>
   <button type="button" class="chip clear" id="reset" hidden>clear filters</button>
 </div>
@@ -668,6 +698,23 @@ SOLVE_JS = '''<script>(function(){var b=document.querySelector('.agentbox .copy'
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>'''
 
 
+def help_note(e):
+    hk = help_kind(e)
+    if hk != 'obtain': return ''
+    return ('<div class="callout"><p><strong>First step: obtain the document.</strong> The ciphertext is not online. '
+            'Ask the archive to digitise it, or photograph it in the reading room, and send the images in.</p></div>\n')
+
+
+STK = {'obtain': ' arc', 'read': ' alt', 'solve': ''}
+
+
+def frame_html(e):
+    st, txt, href = frame_info(e)
+    lab = {'confirmed': 'Cipher located and confirmed', 'viewed': 'Cipher viewed', 'unconfirmed': 'Cipher location not yet confirmed'}[st]
+    link = f' <a href="{esc(href)}" rel="noopener">open that page</a>' if href else ''
+    return f'<h2>Where the cipher is</h2>\n<p class="frame {st}"><b>{lab}.</b> {esc(txt)}{link}</p>\n'
+
+
 def solve_page(e, shell):
     url = SITE + solve_href(e)
     links = ' · '.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)) or '&mdash;'
@@ -698,9 +745,9 @@ def solve_page(e, shell):
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">{url}</p>
 <p>Or copy the block below into the chat. It is the whole task: what the cipher is, where the images are, what has been tried, the steps, and how to report back.</p>
-<div class="agentbox"><span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b><small>give this to your agent</small></span></span><button type="button" class="copy">Copy</button><pre id="agent">{html.escape(agent_text(e), quote=False)}</pre></div>
+<div class="agentbox"><span class="sticker{STK[help_kind(e)]}" aria-hidden="true"><span><b>{HELP[help_kind(e)][0].replace(" ", "<br>")}!</b><small>give this to your agent</small></span></span><button type="button" class="copy">Copy</button><pre id="agent">{html.escape(agent_text(e), quote=False)}</pre></div>
 
-<h2>What is known</h2>
+{frame_html(e)}{help_note(e)}<h2>What is known</h2>
 {(f'<p class="ko"><i class="k">known</i> <span class="asof">checked {fmt_day(e.get("as_of") or AS_OF)}</span> {esc(e["known"])}</p><p class="ko"><i class="o">open</i> {esc(e["open"])}</p>') if e.get("known") else ''}
 {f'<p>{parts_html(e)}</p>' if parts_html(e) else ''}
 <p><b>{"History and prior art" if e.get("known") else "Status and prior art"}.</b> {esc(e["status"])}</p>
