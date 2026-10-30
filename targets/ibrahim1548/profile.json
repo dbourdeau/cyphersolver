@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "target": "ibrahim1548",
+ "title": "Sigismund August, Frater Georg Martinuzzi and Queen Isabella to Ibrahim Pasha, ciphered copies, 1548 (catalogue 885)",
+ "documents": [
+  {
+   "id": "7-4-4",
+   "shelfmark": "HHStA Wien, StAbt Tuerkei I 7-4-4 (AIS 7040827), fol. 28-30",
+   "date": "1548",
+   "year": 1548,
+   "country": "Austria",
+   "route": "Sigismund II August -> Ibrahim Pasha (copy sent to Ferdinand I by Malvezzi)",
+   "language": "Latin",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["unknown"],
+    "source": "AIS describes a Latin exemplar filed with the 2 cipher copies; not yet seen"
+   },
+   "length": {"tokens": "unknown", "distinct": "unknown", "unit": "unknown", "measured": false},
+   "transcription": {"by": "unknown", "source": "none yet: AIS scans public, not downloaded", "image_quality": "unknown", "notes": "Vetting (29 Oct 2026) viewed image 3: about 13 lines of symbol cipher, marked A, 'Dupl. 1548'."}
+  },
+  {
+   "id": "7-4-5",
+   "shelfmark": "HHStA Wien, StAbt Tuerkei I 7-4-5 (AIS 7040824), fol. 31-34",
+   "date": "6 Jun - 2 Jul 1548",
+   "year": 1548,
+   "country": "Austria",
+   "route": "Frater Georg Martinuzzi -> Ibrahim Pasha (copy sent to Ferdinand I by Malvezzi)",
+   "language": "Latin",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["unknown"],
+    "source": "AIS describes a Latin exemplar filed with the 3 cipher copies; not yet seen"
+   },
+   "length": {"tokens": "unknown", "distinct": "unknown", "unit": "unknown", "measured": false},
+   "transcription": {"by": "unknown", "source": "none yet: AIS scans public, not downloaded", "image_quality": "unknown", "notes": "unknown"}
+  },
+  {
+   "id": "7-4-9",
+   "shelfmark": "HHStA Wien, StAbt Tuerkei I 7-4-9 (AIS 7040845), fol. 51-59",
+   "date": "1548",
+   "year": 1548,
+   "country": "Austria",
+   "route": "Malvezzi -> Ferdinand I, with two enclosed cipher copies",
+   "language": "Latin",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["unknown"],
+    "source": "unknown"
+   },
+   "length": {"tokens": "unknown", "distinct": "unknown", "unit": "unknown", "measured": false},
+   "transcription": {"by": "unknown", "source": "none yet: AIS scans public, not downloaded", "image_quality": "unknown", "notes": "Cover letter edited in Austro-Turcica 1541-1552 pp. 276-278 (not seen)."}
+  }
+ ],
+ "system": {
+  "types": ["unknown"],
+  "summary": "Symbol cipher; candidate key the Ferdinand-Malvezzi key of 1548 (DECODE R367), not yet tested.",
+  "symbol_kind": "unknown",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "R367 (targets/malvezzi1548/k367.txt) has code words for every correspondent here: Vb rex Poloniae, zos Frater Georgius, zes Regina Isabella, zis Joannes Sigismundus, Sis Ibrahim Passa."
+ },
+ "conditions": {
+  "prior_solution": {"exists": "unknown", "where": "none found in the repo, AIS descriptions or web search; Austro-Turcica 1541-1552 not seen", "found": "before attempt", "used": false},
+  "inputs": [],
+  "attack": "unknown",
+  "human_role": "Opened the catalogue item; reviewed PR #196 and pointed out that the AIS images are reachable without a login.",
+  "tools": ["curl", "Python", "web search"],
+  "models": ["claude-opus-5-5"],
+  "sessions": 2,
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-30"
+ },
+ "solution": [
+  {"kind": "literature search", "date": "2026-10-29", "what": "Searched the repo for Martinuzzi, Malvezzi and the AIS ids; found targets/malvezzi1548 and key R367 with code words for all four correspondents.", "result": "partial"},
+  {"kind": "access", "date": "2026-10-29", "what": "Read the three AIS records; took the 'Kein Zugang (Reservatbestand)' fields to mean the scans were staff-only and recorded the item as blocked.", "result": "failed"},
+  {"kind": "literature search", "date": "2026-10-29", "what": "Web search for a printed decipherment of the enclosures.", "result": "failed"},
+  {"kind": "access", "date": "2026-10-30", "what": "After review: the access fields cover the originals; the scans are public (research/aut_hhsta route, vetting viewed 7-4-4 image 3). Blocked claim withdrawn; wrote fetch_ais.py. The download failed because this session's egress proxy refused the AIS host (and web.archive.org).", "result": "failed"},
+  {"kind": "key from source", "date": "2026-10-30", "what": "Located key R367 (and R386) already transcribed in targets/malvezzi1548/k367.txt, k386.txt; not yet applied for want of a transcription.", "result": "partial"}
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "In progress: no transcription yet, so the candidate key R367 has not been applied.",
+  "contribution": ["none"],
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "none",
+  "verification": ["none"],
+  "notes": "In progress. Scans are public; next session downloads them, transcribes 7-4-4 image 3 and applies R367."
+ }
+}
