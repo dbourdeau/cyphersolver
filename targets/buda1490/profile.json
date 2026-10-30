@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "buda1490",
- "title": "Maffeo da Treviglio to Tamas Bakocz, Buda 30 Nov 1490 (MNL OL DL 46150): four pages in secret writing",
+ "title": "Maffeo da Treviglio to Tamás Bakócz, Milan 30 Nov 1490 (MNL OL DL 46150): the Sforza-Corvinus marriage and the dowry, four pages in cipher",
  "documents": [
   {
    "id": "DL46150",
@@ -9,60 +9,70 @@
    "date": "1490-11-30",
    "year": 1490,
    "country": "Hungary",
-   "route": "Buda -> Tamas Bakocz, bishop of Gyor (Latin original with seal)",
+   "route": "Milan -> Tamás Bakócz, bishop of Győr, chancellor of Hungary (Latin original, closing and address in clear)",
    "language": "Latin",
    "pages": 4,
-   "cleartext_in_document": "unknown",
+   "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate collection"
     ],
-    "source": "none: Hungaricana regest only; no publication found in the 28 Oct 2026 verification",
+    "source": "Clear minute of the same letter: ASMi Carteggio Sforzesco 642, novembre no. 8 (Vestigia document 194, vestigia.hu), transcribed in reading/clear_minute.txt; the cipher follows the corrected minute.",
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 3199,
+    "distinct": 76,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "transcription"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "Hungaricana viewer images (orig_1, orig_2 spread of pp. 2-3, orig_3)",
-    "image_quality": "poor",
-    "notes": "Not transcribed. The viewer's tile requests fail in the built-in browser (CORS) and only 829 px thumbnails are reachable."
+    "source": "Hungaricana charter 228061 images (orig_1 p. 1, orig_2 pp. 2-3, orig_3 p. 4) supplied by the user",
+    "image_quality": "fair",
+    "notes": "Claude agents from 2-3x crops; shape-only split passes (q, g, oo, h, 8, 6) and two rounds of image repairs. 41 isolated disagreements with the minute listed in transcription/suspects.md, not yet checked on the image. Length: p1-p4.txt together (docs/_check_profile.py --measure on the four files joined, labels and clear brackets dropped): 3,185 legible tokens + 14 lost (??) = 3,199; 76 labels."
    },
-   "read": "not read"
+   "read": "read in part",
+   "places": {
+    "from": "Milan",
+    "to": "Buda"
+   }
   }
  ],
  "system": {
   "types": [
    "homophonic",
-   "syllabic",
+   "polyphonic",
+   "code",
    "nomenclator"
   ],
-  "summary": "Italian monoalphabetic-homophonic cipher of letter-like signs, figures and marks, with vowel homophones, nulls, geminate and syllable signs and a small nomenclator.",
+  "summary": "Homophonic Latin cipher of letter-like signs and figures (about 60 signs carrying text), with polyphonic u/s/f signs, signs for doubled letters (ss, ll, mm, cc, tt, dd), code signs for titles and common words (the king, the duke, Maiestas sua, affinitas, non, quod, quoniam, 150,000) and nulls; no word division.",
   "symbol_kind": "letters and symbols",
-  "distinct_symbols": "unknown",
+  "distinct_symbols": 76,
   "diacritics": {
-   "used": true,
-   "note": "Superscript a/e/o/u/t/s, macron, stroke and dot turn a base sign into a syllable or another letter (q^e = re, m^a = sa, m-macron = b)."
+   "used": false
   },
   "homophones": {
    "used": true,
    "per_letter": {
-    "n": 5
+    "e": 5,
+    "i": 4,
+    "s": 5,
+    "a": 4,
+    "t": 4,
+    "u": 3
    }
   },
   "nomenclator": {
    "present": true,
-   "entries": 6,
+   "entries": 10,
    "kinds": [
-    "syllables",
     "common words",
-    "names",
-    "titles"
+    "titles",
+    "phrases"
    ],
-   "unread_groups": "unknown"
+   "unread_groups": 1
   },
   "nulls": {
    "present": true,
@@ -72,30 +82,35 @@
   "word_division": "none",
   "doubled_letters": "special sign",
   "sibling_key": "none",
-  "notes": "Per Somogyi 2016: 21 letters, 5 nulls, et/in/che signs, 5 geminates, 32 syllable signs, 6 nomenclator entries. Her key is numeric only; glyphs were pinned here via Vestigia 267/268. Unidentified signs remain (q^s+x-bar, a capital-E sign, a wavy null)."
+  "notes": "Not Maffeo's 1489 key R5411 (buda1489): a different alphabet. The second Maffeo key R5407 (ASMi cart. 1597 no. 107, 'A = ⊥') agrees on that one known value (⊥ = a here, 38 of 38) and may be this one; its record could not be opened (30 Oct 2026). Code ve (the Duke) is two signs v+e; Ga, Gp two signs G+a / G+p. y = 200,000 (2 cases, adopted in the retry); qA polyphonic s/i/t; 8C open."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "none found (28 Oct 2026 verification)",
-   "found": "before attempt",
-   "used": false
+   "where": "No decipherment of DL 46150 found (28 Oct 2026 verification). The clear minute in Milan (Vestigia 194) is a draft of the same letter, not a decipherment; found after the ciphertext-only reading had reached 79% and used for the key.",
+   "found": "during attempt",
+   "used": true
   },
   "inputs": [
-   "images"
+   "images",
+   "known plaintext"
   ],
-  "attack": "published key",
-  "human_role": "none",
+  "attack": "known plaintext",
+  "human_role": "The user (harrison-bornstein) fetched and supplied the Hungaricana images after the viewer and the CDN blocked automated access, and directed the sessions; no reading was supplied by a human.",
   "tools": [
-   "built-in browser",
-   "Hungaricana viewer"
+   "simulated annealing (scripts/hsolve.py, refine.py; la 4-gram from lang/)",
+   "decoders dec9-dec14 and per-round measures (scripts/dec14.py, measure14.py)",
+   "EM dynamic-programming alignment with the minute (scripts/ext/em_align.py, report.py)",
+   "sense measure (measure.py)",
+   "Claude agents for transcription and image checks (Pillow crops)"
   ],
   "models": [
+   "claude-opus-5-5",
    "claude-sonnet-5-5"
   ],
   "sessions": "unknown",
   "first_date": "2026-10-28",
-  "last_date": "2026-10-28"
+  "last_date": "2026-10-30"
  },
  "solution": [
   {
@@ -115,30 +130,373 @@
    "kind": "transcription",
    "what": "Looked at the 829 px thumbnail of the pp. 2-3 spread: about 26 closely written cipher lines per page, no clear text visible; layout only.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "access",
+   "what": "Direct requests to the Hungaricana tile CDN answered 403; nothing bypassed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "access",
+   "what": "The user fetched the three cipher images (p. 1, pp. 2-3, p. 4) from Hungaricana charter 228061 in their own browser and supplied them (kept out of git).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "First session's crops, transcription and solver runs under /tmp lost in a WSL restart; redone in a persistent folder.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "Pass 1 of the four pages by agents from line crops: 3,199 tokens, sign inventory.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "what": "Synthetic Latin homophonic control text of the same length and homophone structure generated (control.py) for the annealer; result not recorded.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "solver",
+   "what": "Homophonic annealing (hsolve.py, la 4-gram, frequency penalty), several restarts: Latin fragments, no reading.",
+   "result": "partial",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "crib",
+   "what": "Crib reuerendissimam dominationem uestram (P1L04-05, P1L24-25): D = m, confirmed by dictum, secum, mecum.",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "solver",
+   "what": "Re-anneal with 17 crib-fixed signs (key6): reading not better.",
+   "result": "failed",
+   "technique": [
+    "simulated annealing"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "hypothesis",
+   "what": "q, g and h each read two or three letters: the labels merge shapes; pilot split of q.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "what": "Round 1: word division of all lines, strict words read 23.4%.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "Shape-only split of q into qA / qB / 4 on every page by agents, without the decrypt (qA = s, qB = u).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "hypothesis",
+   "what": "Digraph units oH = q, Ho = p; s = h, T = b, p = x, & = et: strict 50.9%.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "Split round 2 (g, oo, h, 8, 6, 3, P): gA/gB, ooA/ooB, hA/hB, 8A/8B/8C, 6A/6B; 3 and P one shape.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "what": "Rounds 3-4: restored evidence-based values, ooA = u, ooB = s, nulls dt, A, y, ff, dx, G a: strict 70.4% (several 'nulls' later proved code signs).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "Rounds 5-6 image repairs by agents, changing a sign only where the image shows it (3G, jB, Tx, Ob, Bd, sl, wL, fo).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "what": "Round 6 (dec14, key14): X = ss, n context rule, polyphonic qB = u/s/f and s = h/f: strict words 79.2%, tokens 78.4%; 96% not reached.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "literature search",
+   "what": "Vestigia searched by date (vsearch.py): document 194 = ASMi Sforzesco 642, novembre no. 8, the clear minute of this letter; transcribed from its images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "key from source",
+   "what": "EM alignment of the cipher with the minute and key rebuilt sign by sign (key from external plaintext): tokens 95.2%, minute words 81.7% agree.",
+   "result": "worked",
+   "technique": [
+    "EM alignment",
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "what": "Ciphertext-only work checked against the minute: key14 right on 60 of 81 signs (96.2% of tokens); blind reading 396 of 424 words = 93.4% exact; code signs had been taken as nulls, ooB as u.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "what": "41 isolated one-sign disagreements listed as transcription suspects; image check not done.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "what": "Sense measure (measure.py): 534 of 624 words read as Latin sense (85.6%; 87.3% of undamaged); reading, translation and line-by-line decryption written.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "what": "Image check of the 39 transcription suspects (shape only, 3-4x crops beside exemplars): 11 fixed in p1-p3.txt, p1r-p3r.txt and scripts/data/alignment.json (crops in transcription/checks/), 19 confirmed as written (writer departures from the minute), 9 ambiguous and left. Sense measure 534 -> 544 of 624 words (87.2%; 88.9% of undamaged).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 3108 tokens, 81 types, la-letters order 4: reading -2.14 per letter; random keys -5.566 (z 9.8); key annealed onto shuffled ciphertext best -3.214 (mean -3.239, z 41.0); annealer on the real text -2.185. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "access",
+   "what": "Key R5407 (ASMi Sforzesco cart. 1597 no. 107, 'Cum Mafeo Triviliensi'): tried to open the DECODE record (de-crypt.org/decrypt-web/RecordsView/5407); refused by the session's network policy (proxy 403), and the DECODE cookie is not in this environment. Vestigia and Hungaricana also refused.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Key R5407 compared on the one value known from the 23 Oct 2026 contact sheet, A = ⊥: here ⊥ (L) is a in 38 of 38 aligned cases (one of three a-signs); in R5411 the same shape is h. Chance agreement for an unrelated key about 1 in 20 (3 a-signs of about 60 letter signs). Supports R5407 as this cipher's key; full comparison not possible from this session.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "solver",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Retry pass (scripts/retry.py -> reading/retry.md): the 80 words left unread re-run under an extended key (values the alignment gives a sign in >= 2 other places, look-alike labels of one shape family, y as a code) and regraded C+ / M / M-slip / unexplained.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Retry results adopted in measure.py: qA polyphonic s/i/t (i in circa, ipsam, animo, additione; t in affinitatem, inter, debeat; all seven confirmed as qA on the image on 29 Oct); y = ducenta milia (200,000) at P3L02 and P3L12; cotraxerat and prefatu as spelling (nasal left out); debeat (P2L20), necessarie (P3L08) and P2L22 'neque [u]ieat a quibus haberi possit' as the cipher's own wording. 544 -> 561 of 624 words (87.2% -> 89.9%). Not adopted: 2 M (reuerendissime, responso: signs ambiguous on the image), 2 M-slip (ostendit, promiserat), 47 unexplained.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Negative control of the validation (docs/_validate.py --control --quick): the reading replaced by a key annealed onto the shuffled ciphertext scores -3.316 and is underdetermined, not a pass; the real reading passes (-2.140). Language model la-letters added to lang/ for this (Latin Library letters via raw.githubusercontent.com: Piccolomini, Poggio, Petrarch, Erasmus, Cicero), since Gutenberg (la) was unreachable.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "verification",
+   "what": "Circularity with the Milan minute set out in NOTES ('The minute as evidence'): key.json, the exact-word measure, the suspect list, the damage fills and the retry's minority values all come from the minute, so agreement with it is not a confirmation. Independent evidence: the ciphertext-only key14 (before the minute was found) right on 60 of 81 signs, 96.2% of tokens, its reading 396 of 424 words exact; the LM validation (pass; annealer on the real ciphertext alone reaches -2.185 against -2.140 for the reading); Latin read where the minute differs or is silent (non, quoniam, debeat, neque uideat a quibus). The code-sign values rest on the minute alone.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "Regrade of the read words (scripts/regrade.py -> reading/regrade.md), the doubtful-reading half of the retry step: each of the 561 read words decoded again with every value a key allows. B (key.json and the ciphertext-only key14 both give it) 466; K (key.json only) 16; X (extended qA = i/t) 7; C (code signs, meaning from the minute) 72; D (needs an emendation) 0. The crossed stretches P3L04-05 'habere uelit tantum' and P2L22 'neque ... a quibus' spell out under key values. No reading withdrawn; 466 of 624 words (74.7%) read independently of the minute.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "No transcription could be made: the image viewer is not usable here, so no key was tested.",
+  "validation": {
+   "date": "2026-10-30",
+   "model": "la-letters",
+   "file": "validation.tsv",
+   "tokens": 3108,
+   "types": 81,
+   "tokens_per_type": 38.37,
+   "score": -2.14,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.566,
+     "sd": 0.351,
+     "max": -4.818,
+     "z": 9.8,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.239,
+     "sd": 0.027,
+     "max": -3.214,
+     "z": 41.0,
+     "p": 0.1429
+    }
+   },
+   "power": -2.185,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.067; polyphony 0.021; 14 unread tokens left out; annealer on the real text from random keys reached -2.185"
+  },
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "First a ciphertext-only break from the images (annealing, cribs, six reading rounds with image checks: 23% to 79% of words), then the clear minute of the same letter found in Milan (ASMi Sforzesco 642, Vestigia 194); the key was rebuilt by aligning the cipher with it.",
   "contribution": [
-   "none"
+   "transcription",
+   "key recovered"
   ],
-  "class": "not read",
-  "fraction_read": 0.0,
-  "verification": [],
-  "notes": "Attempted, open. Blocker is image access (illegible at thumbnail size). Same hand and period as buda1489, so R5411 and Somogyi's key are the first things to test on proper images.",
-  "key": "unknown",
-  "gaps": [
+  "class": "read in part",
+  "fraction_read": 0.899,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "measure.py -> measure.txt (30 Oct 2026, after the retry pass): 561 of 624 words of the cipher letter read as Latin sense under key.json and the extended values (exact 519, spelling 21, wording 14, added 7); not read: 8 on signs ambiguous on the image, 20 on unvalued or one-off signs, 24 no fitting word (writer departures), 12 with damage. Before the retry 544 (87.2%). Strict agreement with the minute: tokens 95.2%, words 81.7%.",
+  "verification": [
+   "independent clear copy",
+   "key confirms",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "key": "recovered",
+  "codes_open": {
+   "open": 1,
+   "total": 11,
+   "tokens_open": 3
+  },
+  "first_break": true,
+  "credits": [
    {
-    "item": "all four cipher pages of DL 46150",
-    "blocker": "illegible",
-    "detail": "viewer tiles blocked by CORS in the built-in browser; only 829 px thumbnails"
+    "who": "harrison-bornstein",
+    "role": "solution",
+    "note": "supplied the Hungaricana images, directed the transcription, the ciphertext-only break and the reading from the minute, and contributed the result",
+    "date": "2026-10-29"
+   },
+   {
+    "who": "vestigia",
+    "role": "key or decipherment used",
+    "note": "document 194, the clear minute ASMi Sforzesco 642 (novembre no. 8), from which the key was rebuilt"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the minute itself, ASMi Carteggio Sforzesco 642 (Milan chancery, 30 Nov 1490)"
    }
   ],
-  "credits": [],
-  "texts": [],
-  "key_file": [],
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Nothing read."
+  "gaps": [
+   {
+    "item": "8 words on signs left ambiguous by the image check (dominationem, cepit, semper, adduxit, secundum, reuerendissime, descendit, responso)",
+    "blocker": "illegible",
+    "detail": "checked on the only scan: crease, blot or between look-alike shapes; only the original would settle them"
+   },
+   {
+    "item": "15 words on letter signs standing once for a title or phrase (P1L06 Bianca, P1L10 Chancellor of Bohemia, P1L17, P3L08 'summa ducentorum milium')",
+    "blocker": "open-codes",
+    "detail": "single occurrences; meaning known from the minute only; R5407's nomenclator would name them"
+   },
+   {
+    "item": "4 words on signs with no value at that place (excellentia P1L12, reiici 8C, admittendas y, esse not enciphered)",
+    "blocker": "too-short",
+    "detail": "single cases, no second occurrence to fix a value"
+   },
+   {
+    "item": "9 words where the image confirmed the writer's own sign (cicius, amictssimo, minisse, petite, ragi, ostendare, oitendit, promisirat, et for ut)",
+    "blocker": "too-short",
+    "detail": "writer's departures, each once; intended word clear (grade I), not counted"
+   },
+   {
+    "item": "15 words with letters left out or multi-sign departures (presenis, proter x2, ali, [u]ieat, mel, et for ex, reeatur, ubeiimum, frsotum, ad, quemamthum, ssga, ainc) and the extra ff on P2L03",
+    "blocker": "too-short",
+    "detail": "each once, nothing in the extended key explains them; the shape check on the image of the ten multi-sign ones is still to do and needs the page images (not in the repository; Hungaricana refuses this session)"
+   },
+   {
+    "item": "12 words with a lost sign, mostly P3L15-21",
+    "blocker": "illegible",
+    "detail": "holes and blots; filled from the minute in the reading"
+   }
+  ],
+  "notes": "Read in part (89.9% of words after the retry pass of 30 Oct 2026, README bar 95%). Cipher made from the corrected minute: insertions and the marginal addition enciphered, deletions not. Ciphertext-only key14 verified at 93.4% word accuracy against the minute; the minute is the source of key.json and not an independent check of it (NOTES, circularity). Key R5407 (second Maffeo key) agrees on its one known value A = ⊥; record not reachable from the 30 Oct session.",
+  "texts": [
+   {
+    "doc": "DL46150",
+    "label": "DL 46150, Milan 30 Nov 1490, pp. 1-4",
+    "transcription": [
+     "transcription/p1.txt",
+     "transcription/p2.txt",
+     "transcription/p3.txt",
+     "transcription/p4.txt"
+    ],
+    "decryption": [
+     "reading/p1.md",
+     "reading/p2.md",
+     "reading/p3.md",
+     "reading/p4.md"
+    ],
+    "reading": "reading/latin.md",
+    "translation": "reading/english.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.899,
+    "summary": "Maffeo da Treviglio reports to Bishop Tamás Bakócz that Duke Gian Galeazzo Sforza welcomes the marriage alliance ('affinity') with the new king of Hungary, Vladislas II, through his sister Bianca Maria; on the dowry he moves from 150,000 to 200,000 ducats, in jewels or money, 10,000 for the bride's trousseau, and asks for envoys with a mandate or the new king's answer by the courier.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (packaging session; to be confirmed by the PR reviewer)",
+     "date": "2026-10-29",
+     "note": "Read reading/latin.md as sentences against english.md and the clear minute: coherent Latin throughout, holes marked [?word] / [...] / ⟨damage⟩ in place, densest in P1L05-L12 and P1L17 (suspect signs and title codes) and P3L15-21 (damage)."
+    },
+    "note": "89.9% of words read as sense by measure.py after the retry pass (561 of 624), under the 95% bar: read in part."
+   }
+  ],
+  "key_file": [
+   "key.json",
+   "key.md"
+  ]
  }
 }

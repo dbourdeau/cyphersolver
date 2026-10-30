@@ -1,4 +1,5 @@
-No transcription exists. See ../NOTES.md (blocker: viewer tiles unreachable, thumbnails 829 px only).
-Layout seen on the thumbnail of orig_2: two facing pages, about 26 cipher lines each, no word division.
-Put per-page token files here as p1.txt, p2.txt, p3.txt, p4.txt (one line of tokens per manuscript line, token
-alphabet of ../../buda1489/AGENT_BRIEF2.md), then run ../scripts/apply_key.py.
+Final transcription of DL 46150 (Hungaricana charter 228061; images not in git): p1.txt-p4.txt, one line per
+manuscript line ("L01: tokens"; clear text in [brackets]; "?" = doubtful token; "??" = sign lost to damage).
+Labels and split criteria: signs.md. Isolated disagreements with the clear minute, not yet checked on the image:
+suspects.md. Clear closing and address of p. 4: p4_clear.txt. (The 28 Oct stub had no transcription; the
+buda1489 key it planned to test, scripts/apply_key.py, does not fit this cipher.)

@@ -1,0 +1,46 @@
+External measure (ext/report.py on ext/alignment.json; key_external.json). Token = cipher sign (pair units count their signs). A token agrees when its unit emits a value of its key_external entry at the aligned clear position. Damage = lost signs (_), kept separate.
+Word = word of the clear minute (clear_running.txt, date line dropped). agree = every letter covered by agreeing units, no unenciphered letters; damage = has a lost sign; absent = no cipher counterpart at all.
+
+P1: tokens 1051  agree 1016 (96.7%; of undamaged 96.8%)  damage 1 (0.1%)  |  clear words 201  agree 161 (80.1%; of undamaged 80.5%)  mismatch 39  damage 1  absent 0
+P2: tokens 979  agree 941 (96.1%; of undamaged 96.3%)  damage 2 (0.2%)  |  clear words 197  agree 169 (85.8%; of undamaged 86.2%)  mismatch 27  damage 1  absent 0
+P3: tokens 947  agree 880 (92.9%; of undamaged 94.0%)  damage 11 (1.2%)  |  clear words 181  agree 139 (76.8%; of undamaged 81.3%)  mismatch 32  damage 10  absent 0
+P4: tokens 222  agree 210 (94.6%; of undamaged 94.6%)  damage 0 (0.0%)  |  clear words 37  agree 34 (91.9%; of undamaged 91.9%)  mismatch 3  damage 0  absent 0
+ALL: tokens 3199  agree 3047 (95.2%; of undamaged 95.7%)  damage 14 (0.4%)  |  clear words 616  agree 503 (81.7%; of undamaged 83.3%)  mismatch 101  damage 12  absent 0
+
+Blind-reading accuracy (key14 reading, reading.md "Latin:" lines; words not marked [?], not [...], not line-split fragments; exact match after difflib word alignment with the clear text):
+  P1: read 139  exact 129 (92.8%)
+  P2: read 129  exact 122 (94.6%)
+  P3: read 125  exact 117 (93.6%)
+  P4: read 31  exact 28 (90.3%)
+  TOTAL: read 424  exact 396 (93.4%)
+  words the reading marked [?]: 33, of which exactly right after dropping [?]: 31
+
+Read words not matching the clear text exactly:
+  P1L01 uigesimam
+  P1L11 excepi
+  P1L12 audiit
+  P1L12 que
+  P1L16 quam
+  P1L16 quam
+  P1L17 et
+  P1L17 et
+  P1L21 quocum
+  P1L23 certum
+  P2L11 ad
+  P2L14 continua
+  P2L15 quem
+  P2L17 suspensione
+  P2L20 debeas
+  P2L22 neque
+  P2L22 quibus
+  P3L02 et
+  P3L03 extendet
+  P3L04 uelit
+  P3L05 tantum
+  P3L08 uestitu
+  P3L09 necessario
+  P3L12 et
+  P3L20 condiciones
+  P4L04 et
+  P4L05 eueniet
+  P4L05 debebit

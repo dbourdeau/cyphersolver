@@ -67,6 +67,7 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 | `it-cinquecento` | Italian 1490–1620 | Guicciardini/Machiavelli + Nuntiaturberichte, 31 M | Renaissance diplomatic Italian |
 | `it-venezia` | Italian 1520–1620 | it-cinquecento + Albèri's *Relazioni degli ambasciatori veneti* (9 vols, double weight), 47 M | Venetian Senate letters and despatches (ottobon) |
 | `la` | Latin | 27 Gutenberg texts, 6.8 M | papal, imperial, humanist |
+| `la-letters` | Latin letters, classical-1520 | Latin Library (CLTK mirror on GitHub): Piccolomini, Poggio, Petrarch, Erasmus, Cicero letters, 1.9 M | 15th-c. diplomatic Latin; reachable when Gutenberg is not (buda1490) |
 | `pt-`, `da-`, `sv-`, `pl-`, `hu-`, `cy-modern` | | ~1–6 M each | language ID, northern/eastern targets |
 
 ## Known gaps

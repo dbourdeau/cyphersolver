@@ -1,0 +1,30 @@
+Sense-based measure of DL 46150 (measure.py; key.json; scripts/data/alignment.json).
+Unit: words of the cipher letter (minute words the cipher enciphers + words the cipher adds). Read = the signs give a Latin word that fits the sentence (exact, spelling variant, different wording, added word). Not read = rests on an unchecked suspect sign, an unvalued sign, or gives no fitting word. Damage (a lost sign) apart.
+
+P1: words 202  read 178 (88.1%; of undamaged 88.6%)  [exact 167, spelling 8, wording 2, added 1]  not read: suspect 3 (readable as they stand 0), unvalued 13, no sense 7  |  damage 1 (0.5%)
+P2: words 198  read 182 (91.9%; of undamaged 92.4%)  [exact 172, spelling 6, wording 4, added 0]  not read: suspect 1 (readable as they stand 0), unvalued 0, no sense 14  |  damage 1 (0.5%)
+P3: words 185  read 163 (88.1%; of undamaged 93.1%)  [exact 146, spelling 7, wording 6, added 4]  not read: suspect 4 (readable as they stand 0), unvalued 6, no sense 2  |  damage 10 (5.4%)
+P4: words 39  read 38 (97.4%; of undamaged 97.4%)  [exact 34, spelling 0, wording 2, added 2]  not read: suspect 0 (readable as they stand 0), unvalued 0, no sense 1  |  damage 0 (0.0%)
+ALL: words 624  read 561 (89.9%; of undamaged 91.7%)  [exact 519, spelling 21, wording 14, added 7]  not read: suspect 8 (readable as they stand 0), unvalued 19, no sense 24  |  damage 12 (1.9%)
+
+Read share (fraction_read): 561/624 = 0.899; of undamaged words 0.917; with the 0 readable suspect words: 0.899.
+README read bar: 95% of words read as sense -> read in part.
+
+Strict agreement with the clear minute (reading/measure_external.txt, scripts/ext/report.py): tokens 3047/3199 = 95.2% (95.7% of undamaged), minute words 503/616 = 81.7% (83.3% of undamaged).
+Blind reading (ciphertext-only key14, before the minute was found): 396 of 424 words read = 93.4% exactly right.
+
+## Words not read, by cause
+
+suspect (8): P1L04 dominatiunem(dominationem); P1L05 cupid(cepit); P1L20 semher(semper); P2L17 addunit(adduxit); P3L10 secondum(secundum); P3L17 reuerendissume(reuerendissime); P3L19 descetdit(descendit); P3L29 responst(responso)
+
+unvalued (19): P1L06 m(illustrissime); P1L06 m(domine); P1L06 m(blance); P1L10 r(magnifico); P1L10 r(domino); P1L10 r(cancellario); P1L10 r(boemie); P1L12 ehcrcentda(excellentia); P1L17 erenise(serenissimi); P1L17 t(domini); P1L17 t(regis); P1L17 t(sui); P1L17 t(necnon); P3L08 u(summa); P3L08 u(ducentorum); P3L08 u(milium); P3L09 -(esse); P3L21 reici(reiici); P3L27 admiendas(admittendas)
+
+no sense (24): P1L01 cicius(citius); P1L02 presenis(presentis); P1L11 mel(mea); P1L11 et(ex); P1L19 reeatur(reddatur); P1L19 amictssimo(amicissimo); P1L21 oitendit(ostendit); P2L02 ubeiimum(uberrimum); P2L02 frsotum(fructum); P2L07 proter(propter); P2L08 proter(propter); P2L11 ad(et); P2L14 minisse(iniuisse); P2L15 petite(petita); P2L15 quemamthum(quemadmodum); P2L22 uuieat(uideat); P2L24 ali(alias); P2L27 ragi(regi); P2L27 promisirat(promiserat); P2L28 ostendare(ostendere); P3L03 ssga(summa); P3L17 et(ut); P4L01 ainc(quod); P2L03 serenissimumdominumregemhungarie+ [code sign with no counterpart in the minute]
+
+damage (12): P1L18 tam_n(tamen); P2L16 alio_m(aliquam); P3L15 conde_eetem(condecentem); P3L15 exi_timare(existimare); P3L15 sum_(summa); P3L16 _ius(eius); P3L17 u_rum(uerum); P3L17 fat_ar(fatear); P3L18 ues_re(uestre); P3L21 uobi_(uobis); P3L21 po_int(possint); P3L28 _unc(hunc)
+
+## Read words that differ from the minute
+
+spelling (21): P1L03 oportunitate(opportunitate); P1L05 afinitatem(affinitatem); P1L08 prefatu(prefatum); P1L14 afinitatem(affinitatem); P1L20 afectu(affectu); P1L23 afinitate(affinitate); P1L27 eficacius(efficacius); P1L28 afectus(affectus); P2L05 sumo(summo); P2L10 cotraxerat(contraxerat); P2L15 suma(summa); P2L19 comemoraui(commemoraui); P2L19 suma(summa); P2L25 afirmastis(affirmastis); P3L12 suma(summa); P3L16 retraere(retrahere); P3L23 suma(summa); P3L24 sangine(sanguine); P3L25 afinibus(affinibus); P3L25 comunem(communem); P3L28 remitet(remittet)
+wording (14): P1L01 uigesimam(uigesimamquartam); P1L12 audiitque(audiuitque); P2L20 debeat(deberet); P2L22 neq(imo); P2L22 a(quod); P2L22 quibus(ambobus); P3L02 extendet(extendit); P3L04 hareut(tantum); P3L05 tantum(habere); P3L08 uestitu(uestitum); P3L08 necessarie(necessaria); P3L20 condiciones(conditiones); P4L05 euenit(euenerit); P4L05 debebit(debebitis)
+added (7): P1L25 non; P3L02 et; P3L12 et; P3L24 quoniam; P4L01 quod; P4L04 et; P3L04 uelit
