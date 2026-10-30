@@ -1,3 +1,5 @@
 # Attribution
 
 `08_naf-11355-emperorempress-code.pdf` is George Lasry's report on this item ("NAF 11355 — Emperor–Empress code"), sent to Daniel Bourdeau on 2026-10-24 with the instruction that the decryption, the translation and the reconstructed key be shown on the item's page. The decipherment, the translation and the key reconstruction are his (made with ChatGPT Astra 6 and Anthropic Opus 5.5). The manuscript images are from the Bibliothèque nationale de France, via Gallica. The other files in this folder were extracted from the PDF by `research/reading_audit/lasry_pdf_extract.py`, without editing.
+
+Update, 30 October 2026: George Lasry sent a new version of the report, `08_naf-11355-emperorempress-code_fr.pdf`, in French, made with the help of Claude Opus 5.5. It begins with the partial reconstruction of the codebook (242 groups, on one page; `images/key_1.png` is that page), then gives every folio cropped to the telegram sheet, with its decryption and a note on its context. `readable.md`, the key line of `summary.md` and `report.json` follow that version; the first PDF is kept beside it. The codebook is also in `../../lasry_key.csv`.

@@ -10,7 +10,7 @@ Source: George Lasry, report PDF `08_naf-11355-emperorempress-code.pdf` (receive
 - **Sender:** Napoleon III / Empress Eugénie (both directions)
 - **Recipient:** Empress Eugénie / Napoleon III (both directions)
 - **Year:** June 1859
-- **Key:** 233 codes, 12 letter signs, 220 in nomenclature, 1 separator
+- **Key:** 242 codes, 12 letter signs, 229 in nomenclature, 1 separator (updated 30 Oct 2026)
 - **Ciphertext:** 440 elements, 370 identified (84.1%); 4 assumed readings; 50 ?
 - **Literal plaintext:** f35r: L’ennemi s’est retiré cette nuit. — One ciphered sentence only; fatigue passage not
 

@@ -165,6 +165,32 @@ French excerpts alone are now `texts/eugenie1859_lasry_excerpts_reading.md`, pla
 
 Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.982 (v10_relabel.measure), deciphered passages 0.948 (bare ? counted as unread). His status: 15/15 pages transcribed; 9/11 cipher pages deciphered; 2 more in part. Outcome: read in part.
 
+## Lasry's update: f. 15r read, codebook revised (30 Oct 2026)
+
+George Lasry sent a new version of his report, in French (`lasry/report/08_naf-11355-emperorempress-code_fr.pdf`,
+made with the help of Claude Opus 5.5). It starts with the partial reconstruction of the codebook, then gives each
+folio cropped to the telegram sheet, its decryption with the enciphered parts in bold, and a note on its context.
+
+- f. 15r, the run left without values, now reads: 677 1074 310 925 357 381 708 81 1099 123 495 656 257 914 439 =
+  *Je re-cueille partout des do-lé-ances relatives aux exact-ions commises par l'ennemi.* Each new value falls in
+  the alphabetical order of the codebook between its neighbours (310 cueille between 297 cou and 318 dans, 925
+  partout between 916 parait and 926 pas, 381 do between 379 dites and 398 du, 81 ances between 65 al and 85 ant,
+  1099 relatives between 1094 regard and 1109 répond, 123 aux between 122 aut and 124 av, 495 exact between 494 ex
+  and 501 expr, 656 ions between 649 intention and 660 is, 257 commises between 255 comment and 262 compensé).
+- f. 15r: the group transcribed 981 is 381 on the image (981 would fall between 978 posi and 996 pre, where *do*
+  cannot stand). `lasry_tokens_f9_f15_f17_f18.tsv` is updated.
+- Eleven readings lose their question mark, each checked against the alphabetical order and the sense: 116 aura,
+  151 bataille, 1232 sur, 233 402 1162 Chiese, 773 284 mécontents, 771 matérielle, 482 1074 étrangère, 357 886
+  désolée, 1044 qui, 622 il a, and the marked codes 329z Autrichien and 1102z Sardaigne.
+- Still uncertain: *dictature* in f. 19r needs 1216 = tu, which breaks the alphabetical order (1216 lies between
+  1210 sort and 1226 sui); *Légations* and 980z *Piémont* in f. 19r; *officiers* in f. 29r.
+- The multi-group header lines (f. 5r 865 442 163 824 204 543 225; 163 455, 163 723 on ff. 29r, 32r, 35r) are not
+  deciphered: of the f. 5r line only 163 is in the codebook, and 163 opens all these lines, so they are probably a
+  separate coded header.
+- The codebook now has 242 groups (12 single letters). It is in `lasry_key.csv` (code, value; status read, uncertain
+  or assumed) and, as a page image, in `lasry/report/images/key_1.png`. `lasry/report/readable.md` follows the new
+  version; the first PDF is kept.
+
 ## Remaining gaps
 
 - the cipher pages: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
