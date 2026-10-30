@@ -1,0 +1,176 @@
+{
+ "schema_version": 1,
+ "target": "partyet1721",
+ "title": "Partyet 1721 (catalogue 541): the French consul at Cadiz to the Conseil de Marine, 7 April 1721, cipher passage read",
+ "documents": [
+  {
+   "id": "an-ae-b-i-226-f92v",
+   "read": "read",
+   "shelfmark": "Archives nationales, AE/B/I/226, fols. 92v-93",
+   "date": "7 April 1721",
+   "year": 1721,
+   "country": "Spain",
+   "route": "Cadiz -> Paris",
+   "places": {
+    "from": "Cadiz",
+    "to": "Paris"
+   },
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Inventory FRAN_IR_053989: \"[suite en chiffre, non transcrite]\"; no gloss on this letter."
+   },
+   "length": {
+    "tokens": 77,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AN virtual inventory room (SIV), image 097",
+    "image_quality": "fair",
+    "notes": "Two line ends run into the binding."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Numerical syllabary 1-465 in alphabetical order (syllables then words per initial), homophones, underlined code words",
+  "symbol_kind": "digits",
+  "distinct_symbols": 50,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Inventory says \"non transcrite\"; catalogue 541 open (checked 28 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Register AE/B/I/226 found digitised in the AN virtual inventory room (images AE-B-I-226_009-341).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction",
+    "plaintext matching"
+   ],
+   "what": "Table rebuilt from the contemporary interlinear decipherments of five neighbouring Partyet letters; frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen table on held-out glossed letters (Jan-Feb 1721): ~235 covered numbers, 0 disagreements.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "77 groups read; 392 = service from the phrase and the alphabetical block of s- words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "OCR sweep of glossed cipher letters 1717-1730 (AE/B/I/223-240): 392 = service in three glosses (1725, 1730).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Table rebuilt from contemporary decipherments of sibling letters in the same register, validated on held-out glossed letters.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "35/35 words read in their sense; 33 certain (94%), 2 probable (dernie{r}, déci{dé}: ends in the binding); 392 = service attested in glossed letters of 1725 and 1730.",
+  "first_break": true,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "table rebuilt from sibling glosses, validated on held-out letters; passage read, English translation",
+    "date": "2026-10-28"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "an-ae-b-i-226-f92v",
+    "label": "Partyet to the Conseil de Marine, Cadiz, 7 April 1721 (cipher passage)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "It is said that the latter does not act as he should for the good of the service; to be decided shortly, both sides having written to Madrid."
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}

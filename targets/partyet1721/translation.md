@@ -1,0 +1,3 @@
+# English translation
+
+[Don Pedro de los Ríos, captain general of the sea, claims to have reasons to complain of most of the authorities here; above all he is in dispute with M. Patiño on several points, and with M. Dormay, commander of the company of the marine guards, who for his part maintains that, according to the orders of the Catholic King, he is not under the orders of this general.] It is said that the latter does not act as he should for the good of the service; this will be decided shortly, both sides having written at length to Madrid on the whole matter. [Meanwhile M. Dormay leaves tomorrow to serve his quarter as sub-lieutenant of the Life Guards, and intends to join the court at Aranjuez, where it will be when he arrives.]
