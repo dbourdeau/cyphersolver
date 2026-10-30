@@ -1,0 +1,27 @@
+{
+  "note": "Places revisited in the image after decoding. Each entry records whether a word was expected before looking. All entries were expected-word checks, so none is independent confirmation of the sense.",
+  "checks": [
+    {"line": "L02", "first_pass": "158", "value_first": "late", "candidate": "1158", "value_candidate": "ve", "expected_word_first": true, "expected": "-ve of believe",
+     "image_finding": "Two upright strokes before the 5 at 6x zoom. An enlarged tile seen before decoding also looked like 1158, though my first transcription wrote 158.", "status": "adopted, image supports it", "confidence": "medium-high"},
+    {"line": "L01", "first_pass": "111", "value_first": "iect", "candidate": "110", "value_candidate": "ie", "expected_word_first": true, "expected": "ie of believe",
+     "image_finding": "Blotted. Three strokes with a small tail, no open 0 loop visible. Image does not show 110.", "status": "proposal only; transcription stays 111", "confidence": "low"},
+    {"line": "L03", "first_pass": "1095|1098 (doubt noted before decoding)", "value_first": "[blank]", "candidate": "1098", "value_candidate": "les", "expected_word_first": true, "expected": "articles",
+     "image_finding": "Final figure is flagged and could be 5 or 8. The 8 of 1158 has the same flag, so the shape cannot decide.", "status": "proposal, supported because 1095 is a blank entry and 1098 is clear in P01", "confidence": "medium-high"},
+    {"line": "L04", "first_pass": "(844|44|044)?", "value_first": "ren if 844", "candidate": "44", "value_candidate": "am", "expected_word_first": true, "expected": "amount",
+     "image_finding": "Clearly two figures, 44, at 6x zoom. The earlier blot impression came from low zoom.", "status": "adopted, image supports it", "confidence": "high"},
+    {"line": "L05", "first_pass": "(1285|1286)?", "value_first": "suc / sud", "candidate": "1288", "value_candidate": "suf", "expected_word_first": true, "expected": "sufficiently",
+     "image_finding": "Final figure has a dark upper part with a flag over a lower bowl. Compatible with 8 or 5; 8 was not in my first-pass options.", "status": "proposal only", "confidence": "medium"},
+    {"line": "L06", "first_pass": "1479", "value_first": "hi", "candidate": "1478", "value_candidate": "here", "expected_word_first": true, "expected": "here",
+     "image_finding": "Figure is a clear 9 with a long tail. Image does not support 8.", "status": "proposal only, against the image; transcription stays 1479", "confidence": "low"},
+    {"line": "L06", "first_pass": "767", "value_first": "augh", "candidate": "764", "value_candidate": "ation", "expected_word_first": true, "expected": "expectation (spelled 1395.1018.764 in P02)",
+     "image_finding": "Final figure is a long slash with a detached blob at upper left. Neither a clean 7 nor a clean closed 4 like the 4 of 764 in P02.", "status": "proposal, image ambiguous", "confidence": "medium"},
+    {"line": "L08", "first_pass": "(70|790)?", "value_first": "occup", "candidate": "no digit change", "value_candidate": "occup + past mark", "expected_word_first": true, "expected": "occurred",
+     "image_finding": "Looped 0-like figure after the 7, as in 1590 just before. 790 is lord and fails. The word search finds no 'occur' entry.", "status": "digit stays 70; sense [?occurred] is an inference", "confidence": "low-medium"},
+    {"line": "L09", "first_pass": "729", "value_first": "des", "candidate": "728", "value_candidate": "der", "expected_word_first": true, "expected": "rendering",
+     "image_finding": "Clear 9 with a long tail at zoom. Image does not support 8.", "status": "proposal only, against the image; transcription stays 729", "confidence": "low"},
+    {"line": "P02", "first_pass": "861", "value_first": "truth", "candidate": "none", "value_candidate": null, "expected_word_first": false, "expected": "no specific word; sense was awkward",
+     "image_finding": "Clear 861 at 6x zoom.", "status": "no change; sense unresolved", "confidence": "high for the digits"},
+    {"line": "P03", "first_pass": "1183 (first figure blurred)", "value_first": "until", "candidate": "683", "value_candidate": "form", "expected_word_first": true, "expected": "formally; found by searching 'form' in the tool before re-viewing the image",
+     "image_finding": "Tall ascender with a small bowl at its foot, then 8 and 3, partly overwritten. Fits 6-8-3; the group does not match the clean 1183 of L07 and L08. 1083 not fully excluded.", "status": "proposal with image support", "confidence": "medium"}
+  ]
+}
