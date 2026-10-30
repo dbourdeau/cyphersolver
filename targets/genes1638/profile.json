@@ -1,0 +1,211 @@
+{
+ "schema_version": 1,
+ "target": "genes1638",
+ "title": "Count of Siruela, Spanish ambassador at Genoa, to Philip IV, 19 May 1638 (catalogue 755): money for munitions and the Marquis Pallavicino",
+ "documents": [
+  {
+   "id": "ags-3594-156",
+   "read": "read",
+   "shelfmark": "AGS, EST,LEG,3594,156 (PARES 3586918), image 1",
+   "date": "19 May 1638",
+   "year": 1638,
+   "country": "Italy",
+   "route": "Genoa -> Madrid",
+   "places": {
+    "from": "Genoa",
+    "to": "Madrid"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No plain copy found among EST,LEG,3594,110-242."
+   },
+   "length": {
+    "tokens": 240,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "fair",
+    "notes": "Second hand of the embassy (tall long-s = s, small loop = a)."
+   }
+  },
+  {
+   "id": "ags-3594-160",
+   "read": "not applicable",
+   "shelfmark": "AGS, EST,LEG,3594,160 (PARES 3586953) image 1; plain copy 3594,159 (PARES 3586947)",
+   "date": "19 May 1638",
+   "year": 1638,
+   "country": "Italy",
+   "route": "Genoa -> Madrid",
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary plain copy 3594,159; used only to validate the key."
+   },
+   "length": {
+    "tokens": 412,
+    "unit": "symbols",
+    "measured": true,
+    "file": "validation/160_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES images",
+    "image_quality": "fair",
+    "notes": "Held-out validation text."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "the “numerical” cipher of the Genoa embassy in 1638: vowels 16–20, syllabic series of five numbers (25 ba, 30 ca, 35 sa, 40 da, 45 la), disguised syllables (consonant changed, vowel kept: ya = ra, ha = na, at = ma), single letters (m = s, ß = n, E = t) and code signs (85/86 = que, 279 = orden, hnf = Vuestra Majestad)",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 69,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "titles",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 755 open; no target folder in this repository; no plain copy of 3594,156 in the bundle (PARES survey 28 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Inventory of the 20 shelfmarks of no. 755 and survey of neighbouring PARES records: most 1638 letters have their plain copy.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Key rebuilt on 146/145, 143/142, 169/168 (cipher aligned on contemporary plain copies), frozen before each test.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out tests on 169 and 158: significant but below the pre-set criterion (0.85 chars / 0.75 words); reported.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Final held-out test 160 vs plain copy 159: 0.896 chars / 0.784 words vs control p99 0.343 / 0.204.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "3594,156 transcribed and read with K3f (+ hnf = Vuestra Majestad).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Key rebuilt from other letters of the same cipher with their contemporary plain copies, validated on a held-out pair, then applied to 3594,156.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.989,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "94 words in the cipher portion (“V. M.” counted as two): 89 certain, 3 probable (marqués, me, faltando), 1 restored from the sense (haciendo), 1 unresolved (code 197).",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key rebuilt and validated on a held-out pair; 3594,156 read, Spanish text and English translation",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "code 197 (a person)",
+    "blocker": "open-codes"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ags-3594-156",
+    "label": "Count of Siruela to Philip IV, Genoa, 19 May 1638 (AGS EST,LEG,3594,156)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "summary": "In the spring of 1638 the Spanish ambassador at Genoa had to lay in munitions on the spot. The King had ordered the Marquis Pablo Jerónimo Pallavicino (“Palavesín”) to advance him the money; the Marquis was stalling. Velasco told the King in cipher: if he failed his suppliers, they would fail him in turn."
+   }
+  ],
+  "key_file": "key_K3f.tsv",
+  "provenance": "contributed"
+ }
+}
