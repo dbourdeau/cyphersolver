@@ -1,0 +1,215 @@
+{
+ "schema_version": 1,
+ "target": "auckland1918",
+ "title": "Auckland 1918 (catalogue 757): Consul-General Winslow and the US Navy on unknown wireless signals; Vigenère keyed FEBRUARY",
+ "documents": [
+  {
+   "id": "m367-83-0113",
+   "read": "read",
+   "shelfmark": "NARA RG 59, 763.72/9377, M367 roll 83, image 0113",
+   "date": "18 February 1918",
+   "year": 1918,
+   "country": "New Zealand",
+   "route": "Auckland -> San Francisco",
+   "places": {
+    "from": "Auckland",
+    "to": "San Francisco"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment filed; the subject is known from the HMS Philomel letter (image 0111)."
+   },
+   "length": {
+    "tokens": 94,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA images",
+    "image_quality": "good",
+    "notes": "Typed copy."
+   }
+  },
+  {
+   "id": "m367-83-0114",
+   "read": "read",
+   "shelfmark": "NARA RG 59, 763.72/9377, M367 roll 83, image 0114",
+   "date": "28 February 1918",
+   "year": 1918,
+   "country": "United States",
+   "route": "Washington -> Auckland",
+   "places": {
+    "from": "Washington",
+    "to": "Auckland"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment filed."
+   },
+   "length": {
+    "tokens": 305,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA images",
+    "image_quality": "good",
+    "notes": "Typed copy; two letters overstruck."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic"
+  ],
+  "summary": "Vigenère, ordinary alphabet, periodic key FEBRUARY (name of the month)",
+  "symbol_kind": "letters",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 757 open (checked 28 Oct 2026); web search negative.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Both cables transcribed from images 0113-0114, checked on full-resolution crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis",
+    "frequency analysis"
+   ],
+   "what": "Reply only: repeats at distances 104, 56, 32 (gcd 8); IC 0.062 at period 8.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "solver",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Per-column frequency fit on the reply: Vigenère key FEBRUARY; frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Frozen key on the held-out outgoing cable: 94/94 letters of English; 0 of 1,000 shuffled controls reach its score.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Eight garbles in the reply located and restored, each forced by its word (mostly Morse confusions, two overstrikes).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Period from repeats, key from frequencies on the reply; confirmed on the other cable.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Cable 1: 94/94 letters. Cable 2: 297/305 letters direct, 8 restored garbles; every word read; final OK and 17527 not interpreted.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "key confirms",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key found and checked on the held-out cable; both cables read, garbles listed, English translation",
+    "date": "2026-10-28"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "m367-83-0113",
+    "label": "Winslow to Naval Commander San Francisco, 18 Feb 1918",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "en",
+    "state": "read",
+    "summary": "Are automatic wireless stations working between San Francisco and Honolulu on 2,000-metre wavelengths?"
+   },
+   {
+    "doc": "m367-83-0114",
+    "label": "Washington to Consul-General Auckland, 28 Feb 1918",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "en",
+    "state": "read",
+    "summary": "No automatic stations between Honolulu and San Francisco; wavelengths 4,000 m or above; a suspicious automatic station heard in the US since 15 February."
+   }
+  ],
+  "key_file": "key.txt",
+  "provenance": "contributed"
+ }
+}
