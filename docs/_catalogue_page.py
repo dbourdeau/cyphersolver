@@ -259,6 +259,11 @@ def help_kind(e):
 
 def frame_info(e):
     """(state, text, href) for the page/frame where the cipher was confirmed. state: confirmed | viewed | unconfirmed."""
+    fc = e.get('frame_check') or {}
+    if fc.get('result') == 'confirmed':
+        return ('confirmed', f"{fc.get('frame', '')}: {fc.get('saw', '')} (checked {fc.get('date', '')} by an LLM on the page)", fc.get('href', ''))
+    if fc.get('result') == 'no_cipher_at_frame':
+        return ('missing', f"The frame named in the description ({fc.get('frame', '')}) shows no cipher: {fc.get('saw', '')} {fc.get('note', '')} (checked {fc.get('date', '')})", fc.get('href', ''))
     v = e.get('vetting') or {}
     sn = v.get('seen') or {}
     if sn.get('kind') in ('scan', 'facsimile', 'transcription'):
@@ -521,7 +526,7 @@ def build_html():
   {dropdown('Status', facet('status', 'Status', STATUSES, keys) + facet('access', 'Access', ACCESS, keys) + facet('help', 'Help needed', [('solve', 'Help solve'), ('read', 'Help read'), ('obtain', 'Help obtain')], keys), 'status access help')}
   {dropdown('More', facet('source', 'Found in', SOURCES, keys)
             + facet('seen', 'Checked on', [('image', 'the image'), ('catalogue', 'catalogue description only')], keys)
-            + facet('frame', 'Cipher located on a frame', [('confirmed', 'confirmed'), ('viewed', 'viewed earlier'), ('unconfirmed', 'not yet confirmed')], keys)
+            + facet('frame', 'Cipher located on a frame', [('confirmed', 'confirmed'), ('missing', 'none at the named frame'), ('viewed', 'viewed earlier'), ('unconfirmed', 'not yet confirmed')], keys)
             + facet('counted', 'Ranking', [('counted', 'counted'), ('noted', 'noted only')], keys)
             + f'''<div class="facet weights"><span class="flabel">Priority</span><span class="opts">
     <label>importance <input type="range" id="w_imp" min="0" max="100" value="{int(W['importance']*100)}"><span class="wv" id="v_imp"></span></label>
@@ -710,7 +715,7 @@ STK = {'obtain': ' arc', 'read': ' alt', 'solve': ''}
 
 def frame_html(e):
     st, txt, href = frame_info(e)
-    lab = {'confirmed': 'Cipher located and confirmed', 'viewed': 'Cipher viewed', 'unconfirmed': 'Cipher location not yet confirmed'}[st]
+    lab = {'confirmed': 'Cipher located and confirmed', 'missing': 'No cipher at the named frame', 'viewed': 'Cipher viewed', 'unconfirmed': 'Cipher location not yet confirmed'}[st]
     link = f' <a href="{esc(href)}" rel="noopener">open that page</a>' if href else ''
     return f'<h2>Where the cipher is</h2>\n<p class="frame {st}"><b>{lab}.</b> {esc(txt)}{link}</p>\n'
 
