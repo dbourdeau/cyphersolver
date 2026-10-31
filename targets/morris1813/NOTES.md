@@ -1,6 +1,6 @@
 # Anthony Morris to James Monroe, Cadiz/Madrid 1813-15: the State Department code with its blocks reversed
 
-Status: in progress. Next step: transcribe the other coded frames, give frame 0039 a second reading, then the print search (Manning vol. 3, Woolfley).
+Status: in progress. Next step: transcribe the other coded frames, then the rest of the print search (Manning vol. 3 searched, Woolfley read in part, *Papers of James Monroe* vols. 6-7 not read).
 Contributed by WAINUT (27 Oct 2026). The code is identified: it is the State Department code already rebuilt
 in [`../jqa`](../jqa/NOTES.md) (the = 1385), and Morris's copy numbers its sixteen blocks of 100 in reverse order.
 One page (frame 0039, 554 of about 3,000 groups, some 18%) is transcribed and read in part (0.678 of its words read
@@ -25,7 +25,7 @@ of the groups blind against the image and re-tested the block order with its own
 - **The page worked here.** [Frame 0039](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-014/M31-014-0039.jpg),
   headed "4": 26 written lines, all code except a few phrases written in clear in lines 1-6 ("would induce them to",
   "an offer was made by them", "the intention of holding it", "take place"). It begins and ends in mid-sentence.
-  Its date is not on the page.
+  It carries no date itself: the dateline, Cadiz 4 January 1814, is on frame 0038, and the page runs on from it. L1-8 are the end of that cover letter (in clear on M37 roll 2 frames 395-396) and L9-26 the start of the proposal it enclosed (in clear on frames 0059-0060); see `beling/`.
 - **No contemporary decipherment** is on the frame, and the catalogue found none in the OCR of the neighbouring
   frames.
 
@@ -134,9 +134,21 @@ On the 552 groups 1-1600 of the frame:
 - **Not checked, so the content cannot yet be called new:** W. R. Manning, *Diplomatic Correspondence of the United
   States concerning the Independence of the Latin-American Nations* (1925), vol. 3, part XIII "Communications from
   Spain". This page is about the separation of Spain's colonies and an insurrection, Manning's subject; if the
-  Department deciphered the despatch on receipt, Manning may print it in clear. Also not checked: C. Woolfley, *A
-  Quaker Goes to Spain* (2012/13), and the Anthony Morris family papers at the Historical Society of Pennsylvania,
-  which may hold Morris's drafts in clear.
+  Department deciphered the despatch on receipt, Manning may print it in clear.
+- **Woolfley prints two of the coded passages.** H. L. Dufour Woolfley, *A Quaker Goes to Spain* (2013), read in part
+  (pp. 64-66, 74-80, 97-98, 180 and notes on pp. 187-198; Ebook Central page numbers, printed pages not checked), quotes
+  4 April and 11 April 1814 on p. 78, citing Dispatches 12 and 13 (notes 30, 32-33). So neither is unpublished.
+  Differences from the decode in `beling/`:
+  - 4 April: Woolfley "paid in articles", decode "paid in the articles"; "$10,000", "ten thousand dollars";
+    "great hope", "great hopes".
+  - 11 April: Woolfley "in short time", decode "in a short time"; "Not having the satisfaction", "Not having had the
+    satisfaction"; "my discretion", "a discretion"; "in the present circumstances", "under present circumstances".
+
+  The decode's groups at the 11 April places read directly on the image (1 a, 344 had, 1180 under), so he may have
+  worked from another text or edited. He also gives the = 285 and last = 157 (p. 65), which fit the reversed key.
+  11 May 1814, the coded part of 27 January 1815 and 24 March 1815 were not found in what was read.
+- **Dispatch 26.** Woolfley's note 50 (p. 191) calls Dispatch 26 of 27 January 1815 the one dispatch missing from State
+  Department files. It is at M31 roll 14 frame 0075, headed "No 26 Triplicate", and its plain text fits his description.
 - Three web searches found neither the passage nor a decipherment.
 
 ## Proposed table changes (for `../jqa/code_table.tsv`, not applied)
@@ -152,16 +164,20 @@ in the table (a slot inference); it fits here (democratic).
   and would check readings and transcription together.
 - 36 distinct groups (48 tokens) on frame 0039 without a table value - blocker: open-codes; among them 670 (5x), 904,
   1149, 1311, 163 and the figure groups 655, 657 and 659. More Morris text would test the context readings.
-- About 74% of the groups on frame 0039 were read once only - blocker: not-attempted; L17 132, L19 479 and L24 518 are
-  doubtful. A second full reading is the next step.
+- Frame 0039's reading of 31 Oct uses rereads made with the clear text in view (`beling/frame39/frame0039_rereads.md`), so a blind reread of those digits is still open - blocker: not-attempted.
+
+- Anthony Morris Family Papers, Historical Society of Pennsylvania, Collection 2018-A - blocker: needs-physical-access;
+  HSP's catalogue lists a copybook of letters, 1813-1816, to Monroe and with Erving, and Woolfley cites the collection
+  for nearly every dispatch. It may hold clear copies, which would test the readings line by line. Not seen, and whether
+  the letters are in clear is unknown.
 
 ## Escalation
 
 - [x] siblings: the code is the JQA table (`../jqa`), also used by Crawford 1813, Appleton 1823, Everett 1825 and
   Ellis 1839 (open PR #107), with the blocks reversed in Morris's copy
-- [x] clear-pages: the clear phrases in lines 1-6 fit the decode around them; no clear copy found
+- [x] clear-pages: frame 0039 has clear copies (M37 roll 2 frames 395-396; M31 roll 14 frames 0059-0060), used in the reading
 - [x] known-keys: 220 repository tables tried directly (none fits); the JQA table fits under the block reversal
-- [ ] print: Manning (1925) vol. 3 and Woolfley not checked
+- [ ] print: Manning (1925) vol. 3 searched; Woolfley read in part (section 6); *Papers of James Monroe* vols. 6-7 not read
 - [ ] key-rebuild: open slots (670, 1566 and others) need more Morris text
 - [ ] retry: the other coded frames are not transcribed
 

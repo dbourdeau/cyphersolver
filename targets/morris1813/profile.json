@@ -7,17 +7,17 @@
    "id": "f0039",
    "read": "read in part",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 12, microfilm M31 roll 14 (naId 188606645), frame 0039, page headed '4' (catalogue 650)",
-   "date": "unknown",
-   "year": "unknown",
+   "date": "4 January 1814",
+   "year": 1814,
    "country": "United States",
-   "route": "Cadiz or Madrid -> Washington",
-   "places": {"from": "Cadiz or Madrid", "to": "Washington"},
+   "route": "Cadiz -> Washington",
+   "places": {"from": "Cadiz", "to": "Washington"},
    "language": "English",
    "pages": 1,
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": ["none"],
-    "source": "No contemporary decipherment on the frame or in the OCR of the neighbouring frames (catalogue 650). A few phrases are written in clear among the groups (lines 1-6)."
+    "source": "Clear copies exist: the cover letter on M37 roll 2 frames 395-396, the enclosed proposal on M31 roll 14 frames 0059-0060. No contemporary decipherment on the frame. A few phrases are written in clear among the groups (lines 1-6)."
    },
    "length": {
     "tokens": 554,
@@ -93,11 +93,11 @@
   "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches and not tied to Morris, found here to fit Morris's groups once his sixteen blocks of 100 are taken in reverse order (block_map.tsv, recovered from the ciphertext).",
   "contribution": ["transcription", "key extended or corrected"],
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Over the whole catalogue item: frame 0039 holds 554 of about 3,050 coded groups (554 transcribed, about 2,500 on the other frames, not transcribed), and 0.678 of its words read as sense (morris1813_reading.md, research/reading_audit/v2_score.py hole rate 0.322, every [n], [?word] and supplied letter counted as a hole): 0.678 x 554 / 3,050 = about 0.12. The denominator is the catalogue's group estimate, hence estimated. 506 of 554 groups (0.913) on frame 0039 have a value in the table under block_map.tsv (decode.py).",
-  "fraction_read": 0.12,
+  "fraction_read_source": "Over the whole catalogue item: frame 0039 holds 554 of about 3,050 coded groups, and 0.965 of its words read as sense in morris1813_reading.md, counted by us with every [n], [?word] and supplied letter as a hole (not with research/reading_audit/v2_score.py): 0.965 x 554 / 3,050 = about 0.18. The denominator is the catalogue's group estimate, hence estimated. The rereads behind it were made with the clear text in view (beling/frame39/frame0039_rereads.md).",
+  "fraction_read": 0.18,
   "parts": [
    {"label": "Code identification: the JQA table with Morris's sixteen blocks of 100 in reverse order (block_map.tsv)", "method": "read after matching with key from external sources", "extent": "complete", "basis": "decode.py --controls: function-word share 0.353 under block_map.tsv against a maximum of 0.297 over 20,000 random block orders; Ford bigrams put the block_map.tsv block first for 15 of 16 Morris blocks; confirmed with independent code by the maintainer's review (0.348 / max 0.288)"},
-   {"label": "Text of frame 0039 (554 groups)", "method": "read after matching with key from external sources", "extent": "partial", "basis": "morris1813_reading.md: 0.678 of the words read as sense; 36 distinct groups (48 tokens) without a table value"},
+   {"label": "Text of frame 0039 (554 groups)", "method": "read after matching with key from external sources", "extent": "partial", "basis": "morris1813_reading.md: 0.965 of the words read as sense, with non-blind rereads and clear copies; beling/frame39/frame0039_rereads.md"},
    {"label": "Text of the other coded frames (0036-0038, 0050, 0052-0057, 0124-0125, 0191-0192; about 2,500 groups)", "method": "read after matching with key from external sources", "extent": "none", "basis": "not transcribed (gap not-attempted)"}
   ],
   "codes_open": {"open": 36, "total": 288, "tokens_open": 48},
@@ -113,19 +113,20 @@
   "gaps": [
    {"item": "frames 0036-0038, 0050, 0052-0057, 0124-0125 and 0191-0192 (about 2,500 groups)", "blocker": "not-attempted", "detail": "not transcribed; 0191-0192 are two copies of one despatch and would check readings and transcription"},
    {"item": "36 distinct groups (48 tokens) on frame 0039 with no table value, e.g. 670 (5x, [?Floridas]), 904, 1149, 1311, 163, the figure groups 655, 657 and 659", "blocker": "open-codes", "detail": "open slots in ../jqa/code_table.tsv; more Morris text would test them"},
-   {"item": "about 74% of the groups on frame 0039 read once only; L17 132, L19 479, L24 518 doubtful", "blocker": "not-attempted", "detail": "a second full reading of the frame is the next step"}
+   {"item": "digit rereads on frame 0039 made with the clear text in view", "blocker": "not-attempted", "detail": "a blind reread is still open"},
+   {"item": "Anthony Morris Family Papers, HSP Collection 2018-A: copybook of letters 1813-1816", "blocker": "needs-physical-access", "detail": "may hold clear copies; not seen"}
   ],
   "texts": [
    {
     "doc": "f0039",
-    "label": "Morris to Monroe, M31 roll 14 frame 0039 (page '4'), catalogue 650",
+    "label": "Morris to Monroe, Cadiz, 4 January 1814 and enclosed proposal, M31 roll 14 frame 0039 (page '4'), catalogue 650",
     "transcription": "morris1813_transcription.txt",
     "decryption": "morris1813_decryption.txt",
     "reading": "morris1813_reading.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.678,
-    "summary": "A page from the middle of a despatch about Spain's Floridas: a British offer 'last year' to send [troops] there 'under the [pretext] of preserving the territory to Spain, but probably with the intention of holding it'; a change in the Regency once the Cortes are organized; the 'democratic government of the United States under the administration of the Frenchified Señor Jefferson [and] Madison'; the separation of Spain's colonies; the insurrection of [West?] Florida and Baton Rouge; the claim that the territory belongs to Spain and was an integral part of the Floridas; the treason of a governor and the ambassador of a revolutionary government."
+    "read_share": 0.965,
+    "summary": "The end of Morris's cover letter of 4 January 1814, signed in code: the US should keep a force near Florida against the British, and a change in the Regency would help them. Then the start of the proposal he enclosed, whose allegations are its author's: that Jefferson and Madison worked to separate Spain's American colonies, instigated the West Florida insurrection, seized Baton Rouge and encouraged the revolutionaries of Caracas."
    }
   ],
   "key_file": ["../jqa/code_table.tsv", "block_map.tsv"],
