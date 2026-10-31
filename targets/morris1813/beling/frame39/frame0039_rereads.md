@@ -67,4 +67,4 @@ Not resolved, shown as `[?word]` in the reading: L1 1159 (prudent), L2 1187 (vic
 
 Marks fit the printed rule in several places, with the count of strokes matching the letters withdrawn across joined groups: L16 752.106 (six strokes) distress + iction gives distr-ict; L14 1515 (three) ordinance gives ordin; L22 1304 (three) Portugal gives Portu; L11 1589 (four) Ireland gives Ire.
 
-Value note: the first reading's Jeffer-son and Madi-son used 1357 = son from `../jqa/code_table.tsv`. On the M97 sheets 1351 is son and 1357 is speci, under the reversal.
+Value note: the first reading's Jeffer-son and Madi-son rest on 1357, which `../jqa/code_table.tsv` gives as 257 = soon. On the M97 sheets, under the reversal, 1351 (251) is son and 1357 (257) is speci.
