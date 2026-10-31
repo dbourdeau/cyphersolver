@@ -159,7 +159,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   if(!box||!input||!res) return;
   const btns=document.querySelectorAll('.searchbtn'), closeBtn=box.querySelector('.sclose');
   const ver=(document.currentScript&&document.currentScript.src.split('?')[1])||'';
-  let idx=null, loading=null, items=[], sel=-1, opener=null;
+  let idx=null, loading=null, bodies=null, bloading=null, items=[], sel=-1, opener=null;
   // fold case, accents and curly quotes one UTF-16 unit at a time, so an index into the folded text is an index into the original
   const foldCh=c=>{ const f=c.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[‘’]/g,"'"); return f.length===1?f:(f.length?f[0]:''); };
   const fold=s=>s.replace(/[\s\S]/g,foldCh);
@@ -167,11 +167,20 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   function load(){
     if(loading) return loading;
     msg('Loading the index…');
-    loading=fetch('search.json'+(ver?'?'+ver:'')).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
-      idx=d.map(e=>({e, ft:fold(e.t+(e.h?' '+e.h:'')), fp:fold(e.p+' '+e.y+' '+e.stt), fb:fold(e.b)}));
+    loading=fetch('search-t.json'+(ver?'?'+ver:'')).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
+      idx=d.map(e=>(e.b='', {e, ft:fold(e.t+(e.h?' '+e.h:'')), fp:fold(e.p+' '+e.y+' '+e.stt), fb:''}));
       return idx;
     }).catch(()=>{ idx=null; loading=null; msg('The search index could not be loaded.'); });
     return loading;
+  }
+  // the page and section texts are the big part of the index: fetched on the first keystroke, and the results
+  // are drawn again when they arrive (titles, places and years match in the meantime)
+  function loadBodies(){
+    if(bodies||bloading||!idx) return;
+    bloading=fetch('search-b.json'+(ver?'?'+ver:'')).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
+      bodies=d; idx.forEach((r,i)=>{ r.e.b=d[i]||''; r.fb=fold(r.e.b); });
+      if(!box.hidden) render(input.value);
+    }).catch(()=>{ bloading=null; });
   }
   function terms(q){
     const out=[], re=/"([^"]+)"|(\S+)/g; let m;
@@ -244,7 +253,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     if(!box.hidden){ input.focus(); return; }
     opener=document.activeElement; box.hidden=false; document.documentElement.classList.add('sopen');
     input.focus(); input.select();
-    load().then(()=>{ if(idx) render(input.value); });
+    load().then(()=>{ if(idx){ if(input.value.trim()) loadBodies(); render(input.value); } });
   }
   function close(){
     if(box.hidden) return;
@@ -260,7 +269,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   btns.forEach(b=>b.addEventListener('click',open));
   closeBtn.addEventListener('click',close);
   box.addEventListener('click',e=>{ if(e.target===box) close(); });
-  input.addEventListener('input',()=>render(input.value));
+  input.addEventListener('input',()=>{ if(input.value.trim()) loadBodies(); render(input.value); });
   input.addEventListener('keydown',e=>{
     if(e.key==='ArrowDown'){ e.preventDefault(); move(1); }
     else if(e.key==='ArrowUp'){ e.preventDefault(); move(-1); }

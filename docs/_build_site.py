@@ -18,7 +18,7 @@ import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261027c'
+VERSION ='20261030a'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -3889,8 +3889,8 @@ def process(path):
     return slug
 
 # ---------------------------------------------------------------------------
-# Search.  search.json is a flat list of entries that the overlay in site.js
-# loads the first time the box is opened: one entry per page (title, blurb and
+# Search.  search-t.json / search-b.json (titles, then body texts) are a flat list of entries that the overlay in
+# site.js loads when the box is opened and when the first query is typed: one entry per page (title, blurb and
 # opening text) and one per h2 section (heading and the section's text), each
 # with the URL that lands on it, plus one per entry of ../catalogue.json.  The
 # text is the page as a reader sees it, tags removed, so a word from a quoted
@@ -3941,8 +3941,14 @@ def search_entries():
     return out
 
 def write_search_index():
+    # Two files so a first visit to the search box costs the small one: search-t.json (every key but b) is what the
+    # palette fetches on opening; search-b.json (the b texts, same order) is fetched on the first keystroke.
     entries = search_entries()
-    (HERE / 'search.json').write_text(json.dumps(entries, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(',', ':'))
+    (HERE / 'search-t.json').write_text(dump([{k: v for k, v in e.items() if k != 'b'} for e in entries]), encoding='utf-8')
+    (HERE / 'search-b.json').write_text(dump([e['b'] for e in entries]), encoding='utf-8')
+    old = HERE / 'search.json'
+    if old.exists(): old.unlink()
     return len(entries)
 
 # The home page's live header (home.js): a random-cipher button, and the list of

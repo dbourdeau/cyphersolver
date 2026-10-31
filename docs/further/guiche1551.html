@@ -6,7 +6,7 @@
 <base href="../">
 <title>La Guiche to Montmorency, Rome, 22 November 1551 — read it further</title>
 <meta name="description" content="A cipher read in part (87.0%), with its open gaps and instructions for an AI agent to take it further.">
-<link rel="stylesheet" href="style.css?v=20261027c">
+<link rel="stylesheet" href="style.css?v=20261030a">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -78,7 +78,7 @@ OPEN GAPS (from NOTES.md, "## Remaining gaps")
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: leaf, next leaf and margin of La Guiche checked; fr. 3138 view 70 has Morvilliers' 1549 letter with its decipherment (a different key)
   [x] clear-pages: La Guiche has no decipherment on the leaf, the next leaf or the margin
-  [ ] print: not done — only a web search; Ribier, Lettres et memoires d'estat (1666), not grepped for this letter (Gallica and HathiTrust refused this session's requests on 14 Oct 2026)
+  [x] print: 30 Oct 2026, Ribier, Lettres et memoires d'estat (1666), Google Books OCR on archive.org (bub_gb_bOnmNv2ZLVoC, bub_gb_Tbs9UbObcPUC, bub_gb_qWTswSr32NYC; the OCR is poor): no letter of La Guiche, no Dom Diego/Santa Fiora text of Nov 1551 found. One related item: in tome II, 1548, Cardinal du Bellay to Henri II ("D'une nouvelle pratique pour Gennes") has a friar, confessor of "le Seigneur Barnabo Adorne", saying Barnabo, long in the Emperor's service, would act for France against the Imperial plan on Genoa. That supports reading the 1551 "sieur Barnabé Adorne" as the Genoese Adorno, a pro-Imperial partisan open to France (identification still grade M; printed context, not a reading of this letter)
   [x] key-rebuild: permutation anneal (solve1.py) plus refine.py with fixed signs; qu, p, y, v fixed by context
   [x] retry: the second pass of 30 Sept 2026 re-read every doubtful sign on the image with the extended key (+ = b, ff c = ss, the L2x run, X -&gt; B in 'service'), see Corrections
 
@@ -121,7 +121,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">no key known</span> La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5 - blocker: no-key-material; :: occurs once (conjecture 'l'Empereur', grade I), 5 only in the struck lines; the name is read 'Barnabe Adorne' (30 Sept 2026)</li><li><span class="gap">hard to read on the scan</span> La Guiche f. 60v: the two struck-through first lines - blocker: illegible; struck through by the writer; read only in part</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> leaf, next leaf and margin of La Guiche checked; fr. 3138 view 70 has Morvilliers' 1549 letter with its decipherment (a different key)</li><li>&#9745; <b>clear-pages</b> La Guiche has no decipherment on the leaf, the next leaf or the margin</li><li>&#9744; <b>print</b> not done — only a web search; Ribier, Lettres et memoires d'estat (1666), not grepped for this letter (Gallica and HathiTrust refused this session's requests on 14 Oct 2026)</li><li>&#9745; <b>key-rebuild</b> permutation anneal (solve1.py) plus refine.py with fixed signs; qu, p, y, v fixed by context</li><li>&#9745; <b>retry</b> the second pass of 30 Sept 2026 re-read every doubtful sign on the image with the extended key (+ = b, ff c = ss, the L2x run, X -&gt; B in 'service'), see Corrections</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> leaf, next leaf and margin of La Guiche checked; fr. 3138 view 70 has Morvilliers' 1549 letter with its decipherment (a different key)</li><li>&#9745; <b>clear-pages</b> La Guiche has no decipherment on the leaf, the next leaf or the margin</li><li>&#9745; <b>print</b> 30 Oct 2026, Ribier, Lettres et memoires d'estat (1666), Google Books OCR on archive.org (bub_gb_bOnmNv2ZLVoC, bub_gb_Tbs9UbObcPUC, bub_gb_qWTswSr32NYC; the OCR is poor): no letter of La Guiche, no Dom Diego/Santa Fiora text of Nov 1551 found. One related item: in tome II, 1548, Cardinal du Bellay to Henri II ("D'une nouvelle pratique pour Gennes") has a friar, confessor of "le Seigneur Barnabo Adorne", saying Barnabo, long in the Emperor's service, would act for France against the Imperial plan on Genoa. That supports reading the 1551 "sieur Barnabé Adorne" as the Genoese Adorno, a pro-Imperial partisan open to France (identification still grade M; printed context, not a reading of this letter)</li><li>&#9745; <b>key-rebuild</b> permutation anneal (solve1.py) plus refine.py with fixed signs; qu, p, y, v fixed by context</li><li>&#9745; <b>retry</b> the second pass of 30 Sept 2026 re-read every doubtful sign on the image with the extended key (+ = b, ff c = ss, the L2x run, X -&gt; B in 'service'), see Corrections</li></ul>
 
 
 <h2>Send a result</h2>
@@ -134,6 +134,6 @@ If you cannot open issues or pull requests, write this report for your human to 
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="further/guiche1551.html#top">Top &uarr;</a></nav>
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="site.js?v=20261027c"></script>
+<script src="site.js?v=20261030a"></script>
 </body>
 </html>
