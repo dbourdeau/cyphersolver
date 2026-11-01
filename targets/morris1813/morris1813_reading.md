@@ -17,7 +17,7 @@ Marks: `"..."` written in clear in the original; `[?word]` taken from the clear 
 - **L8, signature.** 973.1491.953.1450(c).136 is "Anthony Morris", the same groups that close the 11 April 1814 and 27 January 1815 letters. Morris signed the coded cover here, then began the proposal on the next line. The first reading had this as an unread run.
 - **L22-23, a gap in the copy.** The clear text on frames 59-60 has "by the Congress authority to annex to the States the entire province of both Floridas". Frame 0039 goes straight from "by the" to "entire provinces", so the sentence doesn't parse as coded. It looks like an omission in copying.
 - **L13 and L21.** The clear text has 1810 and "August 1813", and August 1813 is at odds with the 1810 stated earlier. L13's last figure is hard to read here (651 fits 0); frame 54 has 651.
-- **L20.** The groups are 652.655.657.654, which is 1463; the clear text has 1763 (658 would be 7). 655 is on both numerical copies, so this is probably Morris's slip.
+- **L20.** The third figure of the year can't be told on this frame (655 or 658). Frame 55 left has 652.658.657.654, which is 1763, matching the clear text, and 768 (August) for the next group.
 - **L5.** "doubt": 899 is dou, and the next group, cut at the edge with a mark, is read as completing it.
 - **[370].** Follows a full stop at L12, L21 and L24. Its value is unknown; the key cell has a z-like sign with no value.
 
