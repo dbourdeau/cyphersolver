@@ -19613,6 +19613,70 @@
    "access_note": "BNE Digital viewer, free; BNE blocked this session",
    "ark": "",
    "scored": "sweep"
+  },
+  {
+   "id": 1268,
+   "counted": true,
+   "seen": "image",
+   "source": "BNE/Hispana sweep",
+   "prior_art": "Not open: DECODE R1189 Decrypted; Tomokiyo spanish2.htm assigns the letter to the Imperial Cipher of 1544-1554 (checked 2 Nov 2026). The key has not been applied here.",
+   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
+   "decode_ids": [
+    1189
+   ],
+   "year": 1548,
+   "date": "May 1548 - Nov 1551",
+   "title": "Diego Hurtado de Mendoza (Rome, Siena) → Cardinal Granvelle: five letters, the first in cipher",
+   "correspondents": "Diego Hurtado de Mendoza → Antoine Perrenot de Granvelle",
+   "place": "Rome / Siena",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1497-1559",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, Gayangos (first part of the incomplete letter at Mss/7919/75); BDH bdh0000172694",
+   "folio_note": "first letter 'cifrada'; one letter incomplete, first part in Mss/7919/75",
+   "cls": "C",
+   "status": "BNE catalogue: 'La primera carta cifrada'. Corrected 2 Nov 2026: the cipher letter MSS/20212/29/1 is DECODE R1189, status Decrypted, 29 May 1548, homophonic with separate signs for syllables, no key named on the record. Tomokiyo (spanish2.htm) lists this card, Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548 (BDH 172694), as an example of the Imperial Cipher of 1544-1554, whose fuller reconstruction is Bertomeu Masiá 2009. Date conflict: the 29 Oct vetting read 29 March 1548 at the top of f. 1 at low zoom; DECODE and Tomokiyo give 29 May. Not re-checked, BNE blocked access on 2 Nov 2026.",
+   "why": "The imperial ambassador in Rome and governor of Siena, in the year of the Siena revolt (1551); a named, dated cipher letter.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 3,
+   "verify": "Apply the Imperial Cipher of 1544-1554 (Tomokiyo spanish2.htm, Bertomeu Masiá 2009) to f. 1; check the date on the image.",
+   "links": [
+    {
+     "label": "BDH viewer",
+     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1"
+    },
+    {
+     "label": "Europeana record",
+     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000172694"
+    }
+   ],
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172694&page=1))",
+   "vetting_note": "BDH 403 / Europeana challenge; no scan seen. Needs Chrome pass; candidate keys Lu.32 (Luo 2021), Bertomeu Masia 2009.",
+   "vetting": {
+    "date": "2026-10-29",
+    "by": "claude vetting batch c01",
+    "seen": {
+     "kind": "scan",
+     "where": "https://bnedigital.bne.es/bd/card?oid=0000172694&site=bdh (BNE Digital card, MSS/20212/29/1-6); viewer for MSS/20212/29/1 (id 1eaa4bb7-4272-4363-8fb3-c46855f34c46) opened in Chrome 29 Oct 2026, f.1 read at 0.8 scale",
+     "extent": "MSS/20212/29/1: letter of Diego Hurtado de Mendoza, Rome, 29 March 1548 (date at top right of f.1), three images; f.1 is a full page of about 20 lines wholly in symbol cipher (roughly 600 signs). The remaining letters 2-5 are the card's other Mendoza letters (May 1548-Nov 1551) and a 1551 unsigned letter from Schwaz; not opened.",
+     "cipher": "Whole-page substitution in non-Latin signs and Greek-like letters with word-dividing dots, not a clear letter with a cipher passage; no decipherment, interlinear text or key is written on f.1 (only faint show-through of the verso)."
+    },
+    "prior_art": {
+     "decode": "On DECODE, corrected 2 Nov 2026: R1189 (NLS_MSS_20212_29_1, MSS/20212/29/1), Hurtado de Mendoza to Granvelle, 29 May 1548, status Decrypted, record opened. The 29 Oct entry 'Not on DECODE' was wrong.",
+     "tomokiyo": "spanish2.htm lists 'Diego Hurtado de Mendoza to Granvelle, Rome, 29 May 1548' (BDH 172694, this card) under the Imperial Cipher of 1544-1554. The 29 Oct entry missed it.",
+     "lasry": "No Lasry paper or GL.htm entry on Hurtado de Mendoza's Rome cipher found by web search.",
+     "edition": "Real Biblioteca note (Avisos 2007) says Granvela's correspondence holds 94 Mendoza letters and 98 copies of his Rome letters, with no mention of cipher; no edition of this BNE letter found; Bertomeu Masia's books (Granvela and the Parma-Piacenza question; Bucchia) are the likely printed context and were not read.",
+     "literature": "Bucure 2025, Estudios Romanicos 'Napoles 1547: cartas cifradas y secretos de Estado' (Mendoza as ambassador in Rome writing to Charles V, four Simancas letters, a Naples-period cipher) is the closest published cipher analysis; not read in full."
+    },
+    "key_check": "Published key family: Imperial Cipher of 1544-1554 (Tomokiyo; Bertomeu Masiá 2009; Meister p. 212). Not applied to this letter here. The earlier candidates were Luo Lu.32 and the 1547 cipher in Bucure 2025.",
+    "duplicates": "known.py: only the bne_hispana candidate and an unrelated Guiche 1551 note; sibling leads 1265-1267 are other volumes; no duplicate of this letter or of Mendoza's 1548 Rome letters in catalogue.json.",
+    "verdict": "key_lookup",
+    "closed": "DECODE R1189 Decrypted and Tomokiyo assigns the letter to a published cipher, so it fails the bar's prior-art and key checks. Moved back to leads 2 Nov 2026."
+   }
   }
  ]
 }

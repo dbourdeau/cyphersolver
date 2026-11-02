@@ -19,8 +19,18 @@ only. Every remaining gap has an outside blocker (see Remaining gaps).
 
 Prior work: Galende Díaz, "La escritura cifrada durante el reinado de los Reyes Católicos y Carlos V", *Cuadernos
 de Estudios Medievales y Ciencias y Técnicas Historiográficas* 18-19 (1994) 159-178, lists /56 and /73 as ciphered
-letters of Ferdinand to John II, with no key; /64 is not in his list. No edition or decipherment of /64 or /73 was
-found (web search, 29 Oct 2026).
+letters of Ferdinand to John II, with no key; /64 is not in his list. The web search of 29 Oct 2026 found no edition or
+decipherment of /64 or /73, but it did not reach the two sources below.
+
+**Corrected 2 Nov 2026: this may not be a first reading.** Both sources were found after the reading and neither was used.
+
+- DECODE has all three letters, created 26 Aug 2019 with status Decrypted: R1183 (/64), R1177 (/73), and /56 twice (R1174,
+  R9530). R1183 and R1177 were opened: no document is listed on the record view, and both say Inline Plaintext: Yes, so the
+  status may only reflect the interlinear notes. Not settled.
+- Tomokiyo, "Spanish Ciphers before Accession of King Ferdinand: 1470-1479" (Academia.edu, Nov 2018, file ferdinand1470.pdf):
+  his abstract and blog say he reconstructed several ciphers Ferdinand used in letters to John II in the 1470s, two of them
+  "rather complex". **Not read**: Academia offers it only as a paid download and it is not at that filename on his own site. So
+  whether it treats /64 and /73, and whether its keys agree with `key_1473.md` and `key_1474.md`, is open.
 
 ## Sources
 
@@ -80,8 +90,8 @@ affairs are handled with the others. (Juana married Ferrante I of Naples in 1476
 
 - [x] siblings: /56 and /73 (Galende 1994) found and transcribed; /73 read
 - [x] clear-pages: /73's clear paragraph found to be the plaintext; /64 has no clear copy on its three images
-- [n/a] known-keys: no key of Ferdinand and John II in Galende 1994 or in the BNE records
-- [x] print: Galende 1994 checked; no edition found
+- [ ] known-keys: none in Galende 1994 or the BNE records, but Tomokiyo 2018 reconstructs ciphers of this series and is not yet read
+- [ ] print: Galende 1994 checked, no edition found; Tomokiyo 2018 not read (paid download)
 - [x] key-rebuild: d64 from the notes; d73 aligned on the clear text
 - [x] retry: transcription re-read at 8-16x after each round; decodes re-run without hand corrections
 - [ ] other Ferdinand -> John II letters in MSS/20211 (/57 1471, /80, /82 1475, /99 1476, /105 1477, /120,
@@ -89,6 +99,7 @@ affairs are handled with the others. (Juana married Ferrante I of Naples in 1476
 
 ## Next steps (ranked)
 
+0. Obtain Tomokiyo 2018 and compare its keys and letter list with this reading; open R1183 and R1177 logged in on DECODE.
 1. Ask BNE for better images of /64 (L05 and the σ- and p-signs) and /73 (*rompido*, *promendo*).
 2. Check the other MSS/20211 letters for cipher in the d64 or d73 alphabet.
 3. /56 (not part of this target's reading): read its pencil decipherment on a better image and rebuild its key.

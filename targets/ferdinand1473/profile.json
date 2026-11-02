@@ -98,9 +98,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "Galende Díaz 1994 (Cuadernos de Estudios Medievales 18-19, 159-178) lists /56 and /73 as ciphered, with no key; /64 not listed. Contemporary interlinear notes on /64 and /73 and the clear paragraph on /73.",
-   "found": "not found",
+   "exists": "online",
+   "where": "DECODE R1183 (/64) and R1177 (/73), status Decrypted since 26 Aug 2019, no document listed on the record view and Inline Plaintext: Yes, so the status may reflect only the interlinear notes. Tomokiyo, 'Spanish Ciphers before Accession of King Ferdinand: 1470-1479' (Academia.edu, Nov 2018): reconstructs ciphers of Ferdinand's 1470s letters to John II; not read (paid download), so whether it treats /64 and /73 is unconfirmed. Galende Díaz 1994 lists /56 and /73 with no key. Contemporary interlinear notes on /64 and /73 and the clear paragraph on /73.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -198,6 +198,12 @@
     "language-model scoring"
    ],
    "what": "Statistical validation (docs/_validate.py): 310 tokens, 47 types, es-golden-age order 4: reading -3.311 per letter; polyphonic: 20% of read tokens differ from their type's commonest value. Verdict: not applicable.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "literature search",
+   "what": "Prior-art review after the reading: DECODE R1183 and R1177 opened (Decrypted, no document listed); Tomokiyo, 'Spanish Ciphers before Accession of King Ferdinand: 1470-1479' (Academia.edu, Nov 2018) found, abstract and blog read, paper not read because it is a paid download. The 29 Oct record of no prior reading corrected. No key compared.",
    "result": "partial"
   }
  ],
@@ -303,6 +309,6 @@
    "key_1473.md",
    "key_1474.md"
   ],
-  "notes": "Contributed; reading_review to be recorded by the reviewer."
+  "notes": "Contributed; reading_review to be recorded by the reviewer. Prior reading unsettled (2 Nov 2026): see conditions.prior_solution. first_break left unset until Tomokiyo 2018 is read."
  }
 }
