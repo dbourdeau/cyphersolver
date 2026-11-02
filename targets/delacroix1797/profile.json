@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "target": "delacroix1797",
+  "title": "Delacroix (Paris) to Létombe (Philadelphia), despatch No. 5, 25 Messidor an V / 13 July 1797 (NARA M30 roll 4, frames 0244-0245)",
+  "documents": [
+    {
+      "id": "M30-004-0244",
+      "shelfmark": "NARA RG 59, Despatches from US Ministers to Great Britain, vol. 5, M30 roll 4, frames 0244 right, 0245",
+      "date": "13 July 1797",
+      "year": 1797,
+      "country": "France",
+      "route": "Paris -> Philadelphia",
+      "places": {
+        "from": "Paris",
+        "to": "Philadelphia"
+      },
+      "language": "unknown",
+      "pages": 3,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on frames 0236-0252; King's No. 53: 'I have no means of decyphering it.'"
+      },
+      "length": {
+        "tokens": 653,
+        "distinct": 297,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ciphertext.txt"
+      },
+      "transcription": {
+        "by": "human (project)",
+        "source": "Michael Brackx, issue #122, from the NARA frames",
+        "image_quality": "good",
+        "notes": "Clerk's copy; doubtful digits listed in the issue. Not re-collated digit by digit here."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code"
+    ],
+    "summary": "A numeric code of groups up to 1198 with neighbouring values interchanging in near-repeated passages; no value established.",
+    "symbol_kind": "digits",
+    "distinct_symbols": 297,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown",
+    "notes": "Near-repeats suggest homophones in small numeric blocks; this is an inference from context, not a recovered table."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "The minute or a decipherment may exist in AMAE CP États-Unis 47-48 or CADN 519PO/1 art. 1; not seen",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "transcription",
+      "images",
+      "cleartext context"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Daniel Bourdeau selected the target; Michael Brackx supplied the transcription.",
+    "tools": [
+      "numba annealers",
+      "Turner 1904 language model",
+      "Claude in Chrome"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02"
+  },
+  "solution": [
+    {
+      "date": "2026-11-02",
+      "kind": "access",
+      "what": "Downloaded NARA frames 0243-0245 and viewed the layout; read issue #122.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "transcription",
+      "what": "Adopted Brackx's transcription: 653 groups, 297 distinct, measured.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "literature search",
+      "what": "Read Létombe's reply No. 42 in Turner 1904: part of No. 5 probably concerns keeping his correspondence. No. 5 not printed.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "statistics",
+      "what": "Adjacent-value test: 162 against a random mean of 98 (3,000 trials, none as high).",
+      "result": "worked",
+      "technique": [
+        "statistical test"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "One-part annealer keeping numeric order alphabetical, Turner 5-gram.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "statistics",
+      "what": "Near-repeat search with aligned differences up to 3: neighbouring numbers interchange in repeated passages.",
+      "result": "worked",
+      "technique": [
+        "repeat/pattern analysis"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "hypothesis",
+      "what": "Hand phrase matching of repeats: République/gouvernement, correspondance politique, confiance, puissance; several retracted, none verified.",
+      "result": "failed",
+      "technique": [
+        "contextual inference",
+        "crib testing"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Homophonic syllable annealer with character model, tie bonus, length cap, overuse penalty.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "control",
+      "what": "Synthetic letters with known keys: true key 802-1338, annealed junk 1692-1789; the character objective cannot find the key.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "control",
+      "what": "Word-bigram Viterbi objective separates truth from junk on synthetic letters, with test text in the training corpus; search reaches token accuracy at most 0.037 unpinned, 0.60-0.65 with 51-53% of tokens pinned.",
+      "result": "failed",
+      "technique": [
+        "beam/DP decoding",
+        "simulated annealing"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Real text under word-bigram objective, cribs République, gouvernement, nonsense control: both cribs about -2130, control about -2275; cribs not separated; no output reads.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "crib testing"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "control",
+      "what": "Tenfold-longer unpinned word-bigram run on synthetic letters: token accuracy at most 0.028.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Word-placement moves with diversity constraints on synthetic letters: at most 0.031 from scratch; pinning the top 80 groups adds only 3-6 points above the pinned share.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "crib testing"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "hypothesis",
+      "what": "Strict one-part test with blocks: held-out synthetic letters -1818 to -2096 at accuracy about 0.5; real -2527 to -2719; scrambled numbers -2596 to -2810. One-part not supported.",
+      "result": "ruled out",
+      "technique": [
+        "key-structure hypothesis",
+        "simulated annealing",
+        "statistical test"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "hypothesis",
+      "what": "Alphabetical only inside blocks of 100 or 25: real and scrambled numbers indistinguishable.",
+      "result": "failed",
+      "technique": [
+        "key-structure hypothesis",
+        "simulated annealing"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Two-part search with consecutive numbers merged: synthetic accuracy at most 0.017; real output not readable.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "sibling key",
+      "what": "Seven French numeric keys in the repo applied against 50 permuted copies each: all within chance.",
+      "result": "ruled out",
+      "technique": [
+        "key matching"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "literature search",
+      "what": "Web searches; Schnakenbourg 2026 paywalled; CADN Philadelphia finding aid: 519PO/1 art. 1 holds incoming ministry letters March 1793-Feb 1798.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "No key, minute or pair found online, and ciphertext-only annealing failed calibration on synthetic letters of the same size.",
+    "contribution": [
+      "none"
+    ],
+    "class": "not read",
+    "key": "none",
+    "fraction_read": 0,
+    "verification": [],
+    "gaps": [
+      {
+        "item": "whole despatch, 653 groups",
+        "blocker": "no-key-material",
+        "detail": "no key, clear minute or sibling pair found online"
+      },
+      {
+        "item": "AMAE CP États-Unis 47-48 and CADN 519PO/1 art. 1",
+        "blocker": "needs-physical-access",
+        "detail": "not digitised as far as found"
+      }
+    ],
+    "notes": "Status in progress. Calibration shows the attack could not have found the key, so this does not show the code is unbreakable.",
+    "credits": [
+      {
+        "who": "brackx",
+        "role": "transcription",
+        "date": "2026-10-27",
+        "note": "full transcription, roll and extent corrections, Létombe reply",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/122"
+      }
+    ]
+  }
+}
