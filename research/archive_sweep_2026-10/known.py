@@ -12,7 +12,8 @@ FILES = ['catalogue.json', 'research/leads.json', 'CATALOGUE.md', 'SOLVED_CATALO
          'decode_updates/queue.json', 'research/cryptoole/snapshot.json',
          'research/catalogue_harvest/decode/views.jsonl', 'research/catalogue_harvest/decode/views_b.jsonl',
          'research/catalogue_harvest/decode/views_c.jsonl', 'research/catalogue_harvest/hcportal/index.json']
-GLOBS = ['targets/*/NOTES.md', 'research/*/*.md', 'research/*/*/*.md', 'research/*/candidates.json']
+GLOBS = ['targets/*/NOTES.md', 'research/*/*.md', 'research/*/*/*.md', 'research/*/candidates.json',
+         'research/vetting_2026-10/removed_*.json']
 
 
 def texts():
