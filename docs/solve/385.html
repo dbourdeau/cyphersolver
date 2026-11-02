@@ -49,7 +49,7 @@
     <dt>Correspondents</dt><dd>D. Fernando Teles de Faro → Francisco de Melo (later marquês de Sande)</dd>
     <dt>Place</dt><dd>The Hague</dd>
     <dt>Language</dt><dd>Portuguese</dd>
-    <dt>Held at</dt><dd>ANTT, Miscelâneas Manuscritas do Convento da Graça, tomo 1E (PT/TT/MMCG/1E) · 9 letters: 2 Nov 1658 (PT/TT/MMCG/1E/000024); 7 Feb 1659 (PT/TT/MMCG/1E/000045); 21 Feb 1659 (PT/TT/MMCG/1E/000048); 21 Mar 1659 (PT/TT/MMCG/1E/000055); 3 Mar 1659 (PT/TT/MMCG/1E/000057); 9 May 1659 (PT/TT/MMCG/1E/000067); 2 May 1659 (PT/TT/MMCG/1E/000068); 9 May 1659 (PT/TT/MMCG/1E/000069); 15 May 1659 (PT/TT/MMCG/1E/000070)</dd>
+    <dt>Held at</dt><dd>ANTT, Miscelâneas Manuscritas do Convento da Graça, tomo 1E (PT/TT/MMCG/1E) · MMCG 1E: Faro letters from 1658 (item 000024 = 2 Nov 1658); key sheet at 1E/000003; link to catalogue 390 cipher A suggested by that entry</dd>
     <dt>Images</dt><dd><a href="https://digitarq.arquivos.pt/documentDetails/557f5d0755684c89900646234ee36f53" rel="noopener">DigitArq PT/TT/MMCG/1E/000024</a> · <a href="https://digitarq.arquivos.pt/documentDetails/e802bcb52cc147b68b54fb4d6dccaaf0" rel="noopener">Volume MMCG/1E</a> · <a href="https://digitarq.arquivos.pt/documentDetails/bb2d56d8046345e6ba9dbb9526a462d0" rel="noopener">DigitArq PT/TT/MMCG/1E/000045</a> · <a href="https://digitarq.arquivos.pt/documentDetails/fcd0b114e6344ce2b7207a9397a395d1" rel="noopener">DigitArq PT/TT/MMCG/1E/000048</a></dd>
   </dl>
 </section>
@@ -70,7 +70,7 @@ THE CIPHER
   Correspondents: D. Fernando Teles de Faro → Francisco de Melo (later marquês de Sande)
   Place:          The Hague
   Language:       Portuguese (expected)
-  Held at:        ANTT, Miscelâneas Manuscritas do Convento da Graça, tomo 1E (PT/TT/MMCG/1E); 9 letters: 2 Nov 1658 (PT/TT/MMCG/1E/000024); 7 Feb 1659 (PT/TT/MMCG/1E/000045); 21 Feb 1659 (PT/TT/MMCG/1E/000048); 21 Mar 1659 (PT/TT/MMCG/1E/000055); 3 Mar 1659 (PT/TT/MMCG/1E/000057); 9 May 1659 (PT/TT/MMCG/1E/000067); 2 May 1659 (PT/TT/MMCG/1E/000068); 9 May 1659 (PT/TT/MMCG/1E/000069); 15 May 1659 (PT/TT/MMCG/1E/000070)
+  Held at:        ANTT, Miscelâneas Manuscritas do Convento da Graça, tomo 1E (PT/TT/MMCG/1E); MMCG 1E: Faro letters from 1658 (item 000024 = 2 Nov 1658); key sheet at 1E/000003; link to catalogue 390 cipher A suggested by that entry
   Images/records:
     - DigitArq PT/TT/MMCG/1E/000024: https://digitarq.arquivos.pt/documentDetails/557f5d0755684c89900646234ee36f53
     - Volume MMCG/1E: https://digitarq.arquivos.pt/documentDetails/e802bcb52cc147b68b54fb4d6dccaaf0
@@ -83,15 +83,16 @@ WHAT IS KNOWN
   Prior-art check: open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search: no edition of these letters found; E. Prestage's Portuguese-Dutch diplomatic studies not checked).
   Check first: Order scans of the letter and of the key leaf from ANTT (MMCG tome not online); read with the bound key.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/sande1660/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/sande1660/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/sande1660/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -131,7 +132,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/sande1660/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+385&amp;target=catalogue+385
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -153,7 +154,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p><b>Status and prior art.</b> 9 letters grouped. DigitArq: 'Carta de D. Fernando Teles de Faro a D. Francisco de Melo em cifra'; no decipherment noted. The volume holds its own key (1E/000003 'Cifra por que se podem entender as cartas que estão neste livro'). Not digitised; not on DECODE. 27 Oct 2026, Brice Dudout (email): not online; he has written to the archive for a quote.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 26 Oct 2026: known.py (repo, DECODE, Cryptoole: no hit), web search: no edition of these letters found; E. Prestage's Portuguese-Dutch diplomatic studies not checked)..</p>
 <p><b>Check first.</b> Order scans of the letter and of the key leaf from ANTT (MMCG tome not online); read with the bound key.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sande1660/NOTES.md" rel="noopener">targets/sande1660/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sande1660" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

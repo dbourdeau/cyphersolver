@@ -49,7 +49,7 @@
     <dt>Correspondents</dt><dd><span class="avs" title="Charles V"><img src="portrait_charles-v.jpg" alt="" loading="lazy"></span>Ramón de Cardona → Charles I</dd>
     <dt>Place</dt><dd>Naples</dd>
     <dt>Language</dt><dd>Spanish</dd>
-    <dt>Held at</dt><dd>Madrid, Biblioteca Nacional de España, Gayangos collection, BDH bdh0000173169 · four signed letters, 'en parte cifradas'; the record lists Naples 5 Mar 1517, 2 Mar 1519, 24 Dec 1520, 18 Jun 1520</dd>
+    <dt>Held at</dt><dd>Madrid, Biblioteca Nacional de España, Gayangos collection, BDH bdh0000173169 · MSS/20210/11/1: cipher on viewer pages 4-5 (about 23 lines) in the first letter; clear paragraphs give cribs (lanzas, caballos).</dd>
     <dt>Images</dt><dd><a href="http://bdh-rd.bne.es/viewer.vm?id=0000173169&page=1" rel="noopener">BDH viewer</a> · <a href="https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000173169" rel="noopener">Europeana</a></dd>
   </dl>
 </section>
@@ -70,7 +70,7 @@ THE CIPHER
   Correspondents: Ramón de Cardona → Charles I
   Place:          Naples
   Language:       Spanish (expected)
-  Held at:        Madrid, Biblioteca Nacional de España, Gayangos collection, BDH bdh0000173169; four signed letters, 'en parte cifradas'; the record lists Naples 5 Mar 1517, 2 Mar 1519, 24 Dec 1520, 18 Jun 1520
+  Held at:        Madrid, Biblioteca Nacional de España, Gayangos collection, BDH bdh0000173169; MSS/20210/11/1: cipher on viewer pages 4-5 (about 23 lines) in the first letter; clear paragraphs give cribs (lanzas, caballos).
   Images/records:
     - BDH viewer: http://bdh-rd.bne.es/viewer.vm?id=0000173169&amp;page=1
     - Europeana: https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000173169
@@ -81,15 +81,17 @@ WHAT IS KNOWN
   Prior-art check: open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Cardona not mentioned on Tomokiyo's page)
   Check first: View on BDH in a browser; try Kolosova Naples/Charles V keys (Ko.1, Ko.2) on the passages.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1511/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/federico1497/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/vich1511/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/vich1511/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -129,7 +131,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/vich1511/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+854&amp;target=catalogue+854
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -150,7 +152,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p><b>Status and prior art.</b> BNE catalogue: 'cuatro cartas con firma autógrafa, en parte cifradas'. No decipherment mentioned. Not on DECODE, not in the repo (checked 28 Oct 2026). Checked 28 Oct 2026: Verified 28 Oct: no published reading found; Cardona absent from Tomokiyo's Charles V key list. BDH scans not viewed (403 to script). Note a separate 1513 Cardona cipher entry exists (id 1041).</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Cardona not mentioned on Tomokiyo's page).</p>
 <p><b>Check first.</b> View on BDH in a browser; try Kolosova Naples/Charles V keys (Ko.1, Ko.2) on the passages.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vich1511/NOTES.md" rel="noopener">targets/vich1511/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vich1511" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/federico1497/NOTES.md" rel="noopener">targets/federico1497/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/federico1497" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

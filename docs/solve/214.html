@@ -87,16 +87,17 @@ WHAT IS KNOWN
   Outcome so far: attempted, open
   Check first: Retrieve Nationaal Archief 1.10.29, Fagel 5206 and check for 4 Jan 1752; collate doubtful figures and marks against manuscript images. Do not assume the 1763 key is the same.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/hellen1752/NOTES.md
   Related write-up: https://dbourdeau.github.io/cyphersolver/hellen1752.html
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/hellen1752/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/hellen1752/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -136,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/hellen1752/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+214&amp;target=catalogue+214
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -150,14 +151,14 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Where the cipher is</h2>
-<p class="frame viewed"><b>Cipher viewed.</b> The cipher was viewed on the image when the entry was written; the frame is not recorded separately.</p>
+<p class="frame confirmed"><b>Cipher located and confirmed.</b> Numeric code with marks; no decipherment, gloss or key on any viewed page (viewed first pages of R1045, R1047, R1048, R1049, R1060, R1061, R1953 (and R1046)). (DECODE R1045, R1047, R1048, R1049, R1060, R1061, R1953 first images fetched 2 Nov 2026 and viewed (photographs of copies, KHA Prins Willem V inv. 196).; checked 2026-11-02 by claude vetting batch L08)</p>
 <h2>What is known</h2>
 <p class="ko"><i class="k">known</i> <span class="asof">checked 27 Oct 2026</span> Nothing yet. Images and DECODE transcriptions audited and the repeated R1953 passage checked on the manuscript, 20 Sept 2026 (hellen1752); the three letter groups are code families only provisionally.</p><p class="ko"><i class="o">open</i> All seven ciphertexts (R1045, R1047-R1049, R1060, R1061, R1953) not deciphered; no key, no verified plaintext. Lead: Fagel 5206 (NA 1.10.29) decipherments of 1752-53, not retrieved.</p>
 
 <p><b>History and prior art.</b> 20 Sept 2026: attempted, open. Existing DECODE images and transcriptions audited; uncertainty-preserving parser added and repeated R1953 passage confirmed on the manuscript. No verified plaintext or key. Fagel 5206 lists digitized decipherments from 1752–1753; no matching text retrieved. 27 Oct 2026, Brice Dudout (email): Fagel 5206 has the plain copies of about 40 of von der Hellen's reports of 1752-53, but not the letters in this entry.</p>
 <p><b>Outcome so far.</b> attempted, open</p>
 <p><b>Check first.</b> Retrieve Nationaal Archief 1.10.29, Fagel 5206 and check for 4 Jan 1752; collate doubtful figures and marks against manuscript images. Do not assume the 1763 key is the same.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/hellen1752/NOTES.md" rel="noopener">targets/hellen1752/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/hellen1752" rel="noopener">the folder</a>)</li></ul>
 <p>Related write-up: <a href="hellen1752.html">hellen1752.html</a></p>
 
 <h2>Scores</h2>
