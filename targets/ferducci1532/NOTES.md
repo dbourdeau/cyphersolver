@@ -1,5 +1,7 @@
 # Niccolò Ferducci to Ferdinand I, Fiume, 19 July 1532 (catalogue 498)
 
+Status: read (Brice Dudout, 27 Oct 2026; 8 of 8 enciphered words read in their sense, 8 certain, 0 probable, 0 restored, 0 unresolved; the four probable readings {x} are in the clear text (handwriting), not in the cipher; Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#ferducci-1532
 

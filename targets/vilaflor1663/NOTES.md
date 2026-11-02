@@ -1,5 +1,7 @@
 # Afonso VI to the Count of Vila Flor, four cipher letters, 13-26 May 1663 (catalogue 391)
 
+Status: read (Brice Dudout, 27 Oct 2026; four letters, counted in signs, not words: 26 May, 633 of 633 signs read in their sense, 632 certain, 1 restored ([p]ara); 15 May (risk of a battle), 509 of 509 signs read, 5 slips settled by the second copy; 15 May (reinforcements), two copies of 2,213 and 2,357 signs agreeing with the established text at 98.7% and 99.0%; 13 May, 636 signs, about 97% read, about 15 signs corrected from the sense, 2 passages unresolved; probable signs not counted separately; Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#vilaflor-1663
 

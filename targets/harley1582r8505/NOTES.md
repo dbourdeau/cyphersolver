@@ -186,3 +186,7 @@ transcription), `ct2_p3.txt`, `ct2_p4.txt` (second, reading-guided transcription
 reading uses), `emendations_all.txt`, `merges.txt` (every emendation logged), `key.json`/`key_letters.txt` (the key),
 `reading.txt` (the reading), `control.py` (the control experiment), `solve*.py`, `basin.py`, `word.py`,
 `sweep.py`, `split.py` (the attack), `profile.json`.
+
+## fols. 264r-264v read, Brice Dudout (29 Oct 2026)
+
+With key.json unchanged, and after a blind check on the two last cipher lines of 264v (absent from b28: coverage 0.886, rank 1/201 against 200 permuted keys), the cipher lines of 264r and 264v were re-transcribed on DECODE R8010 P3/P4. b28 confused o/u, b/T, E/E3, d/Eb, X/hg, and filed several shapes under `Tu` (a lying T = c, J, a rounded U = h, a lead-in stroke); b28's 3.47 is the rising end of 3.48. The passages now read: 666 words, 95.3% in their sense (31 unresolved), e.g. "ele n'a pas despende un denier pour eu" (264v) and "ne peut desguiser ce faict d'Anuers", which dates the memoir to c. 1583 (hypothesis: the French Fury, 17 Jan 1583). See `dudout/README.md`.

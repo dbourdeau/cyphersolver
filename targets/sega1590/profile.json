@@ -1,0 +1,226 @@
+{
+ "schema_version": 1,
+ "target": "sega1590",
+ "title": "Sega 1590: Filippo Sega, Bishop of Piacenza, Paris, 26 November 1590 and 16 January 1591 (AAV Francia 32, ff. 17r-v and 71r-v), read with Meister key 65",
+ "documents": [
+  {
+   "id": "aav-francia32-f17",
+   "read": "read",
+   "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 32, f. 17r-v",
+   "date": "26 November 1590",
+   "year": 1590,
+   "country": "France",
+   "route": "Paris -> Rome",
+   "places": {
+    "from": "Paris",
+    "to": "Rome"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment of this passage found in the DECODE records of Francia 32 (R5612-R5618, R5621)."
+   },
+   "length": {
+    "tokens": 345,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R5612 (images of AAV Francia 32)",
+    "image_quality": "fair",
+    "notes": "Vowel signs over digits are decisive; six doubtful signs, listed in reading.md."
+   }
+  },
+  {
+   "id": "aav-francia32-f71",
+   "read": "read",
+   "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 32, f. 71r-v",
+   "date": "16 January 1591",
+   "year": 1591,
+   "country": "France",
+   "route": "Paris -> Rome",
+   "places": {
+    "from": "Paris",
+    "to": "Rome"
+   },
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "A registration note on f. 71r (\"Decifrata 17 ...\") shows a contemporary decipherment existed; not found in the DECODE records."
+   },
+   "length": {
+    "tokens": 185,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R5616 (images of AAV Francia 32)",
+    "image_quality": "good",
+    "notes": "Short groups inside clear text; open 3 sometimes close to 7 or 9 (listed in reading.md)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Meister key 65: letters as digit pairs, vowels as signs on the pair or on a single digit, nulls, code letters and symbols for common words, three-digit nomenclator",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 22,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of this passage in Francia 32 records on DECODE; no edition of Sega's 1590-1591 dispatches found (checked 29 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Meister key 65 recognised from Lasry's sega1591 and the gloss \"Villeroy\" over 453 in R5612.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out: letter of 21 Dec 1590, contemporary decifrato f. 230 vs key 65 on ff. 228v/231: 0.934 characters / 0.862 words; 200 permuted controls at most 0.551 / 0.492.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "F. 17r-v passage (15 lines, 345 signs) transcribed, frozen, decoded with key 65 unchanged and read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Letter of 16 Jan 1591, f. 71r-v: 18 enciphered groups transcribed, frozen, decoded with key 65 unchanged and read (52/52 words).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "not applicable",
+  "method": "read with known key",
+  "method_basis": "Published historical key (Meister 1906, no. 65) applied unchanged, validated on a held-out letter with a contemporary decipherment.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.985,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "134/136 words read in their sense over two letters: 26 Nov 1590, 82/84 (79 certain, 3 probable, 0 restored, 2 unresolved); 16 Jan 1591, 52/52 (46 certain, 6 probable).",
+  "first_break": true,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "new cipher with solution",
+    "note": "letter of 26 Nov 1590 transcribed and read with Meister key 65 (identified for Sega by George Lasry); held-out validation on the decifrato of 21 Dec 1590; letter of 16 Jan 1591 (f. 71r-v) read; English translation",
+    "date": "2026-10-29",
+    "source": "email from Brice Dudout to Daniel Bourdeau, 29 Oct 2026; merged from branch dudout/bundle-spain-italy, 30 Oct 2026"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "aav-francia32-f17",
+    "label": "Sega, Paris, 26 Nov 1590, enciphered passage f. 17r-v",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read",
+    "summary": "Sega reports the bishop's bad nature and leaning to the opposite party, out of limping religion rather than politics, and says he will temporise, showing feelings for and against him while stirring the parties to tell all they know.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Sonnet 5.5",
+     "date": "2026-10-30",
+     "note": "Read as sentences from Brice Dudout's reading.md and translation.md (not re-deciphered, not re-checked against the images): one coherent Italian sentence with two marked holes in the last clause; the final enciphered clause is left unresolved and untranslated."
+    }
+   },
+   {
+    "doc": "aav-francia32-f71",
+    "label": "Sega, Paris, 16 Jan 1591, enciphered groups f. 71r-v",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "it",
+    "state": "read",
+    "summary": "Sega on Mayenne writing something good for him to Rome, the protection of the Duke of Bavaria, the long-awaited \"pomo\", and a cause misrepresented by both sides.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Sonnet 5.5",
+     "date": "2026-10-30",
+     "note": "Read as sentences from reading.md and translation.md (not re-deciphered): the enciphered words are set inside the clear text of the letter and read coherently, but the text is abridged and the translation is in fragments."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}

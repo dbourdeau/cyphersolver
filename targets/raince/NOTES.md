@@ -360,4 +360,8 @@ Lead from research/patterns/DEEPER.md: Lasry's GL.htm tables. GL.htm itself list
 
 ## 20 Nov 1526 letter: p. 105 completed and p. 106 read, Brice Dudout (28 Oct 2026)
 
-p. 106 (Gallica view 55, left page) is a whole page in cipher continuing the 20 Nov letter; read with the same table, together with the lower 21 lines of p. 105 (agreement with trans/residue1526_reading.md: 95.6 % of letters). About 98 % of words read; open: word signs absent from the table (ℓ°, three small squares, ϖ, ⋒, ⫝, a large C). See `dudout/README.md`.
+p. 106 (Gallica view 55, left page) is a whole page in cipher continuing the 20 Nov letter; read with the same table, together with the lower 21 lines of p. 105 (agreement with trans/residue1526_reading.md: 95.6 % of letters). Count by your 95 % rule (script, recounted 28 Oct): 597 words, 572 certain, 13 probable, 8 from the sense (ℓ° ×3 the Emperor, three small squares ×2 France, ϖ Madame, escri[pt], [en]), 4 unresolved (⋒, ⫝, a large C ×2), i.e. 593 read in their sense (99.3 %). See `dudout/README.md`.
+
+## 13 May 1526 letter: whole ciphered part verified, Brice Dudout (28 Oct 2026)
+
+All 85 lines of pp. 29-31 re-read sign by sign on the full-resolution images, starting from trans/reading_v3.txt; no full-word reading of v3 contradicted, gaps filled (e.g. "deux bendes en la court", "conduict en Sivile", "par les gens de Ferrare"). Residue re-read sign by sign on 28 Oct (C08: p. 29 l. 1, p. 30 l. 34-35, p. 31 l. 4-5). Count by your 95 % rule: 1,112 words, 1,074 certain, 8 probable, 20 from the sense, 10 unresolved, i.e. 1,102 read in their sense (99.1 %). Word signs absent from the table, from the sense only: ℓ° the Emperor (or his party), the large delta the Duke of Ferrara, ʍ Raince's Roman contact (perhaps Giberti); the "two-crossbar stem" [X] and the circled cross with two rings are nulls. Held-out check p. 34 vs clear p. 17: 0.939. See `dudout/README.md`.

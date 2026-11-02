@@ -68,3 +68,7 @@ controls.
   obtained. The Catinat-Ricous "lettres chiffrées" (Vault p. 574) imply a field code of that summer: look for Ricous
   papers.
 - Print: Vault II and III searched, and they give no 15 Sept letter.
+
+## 29 Oct 2026: Aargau scans (Brice Dudout)
+The Aargauer Kantonsbibliothek sent free scans of Acta Helvetica AH 52/93 to Brice Dudout (received; study only until we ask about display).
+They are the sibling the catalogue entry asked for; not yet transcribed here. Do not publish an image until display is cleared.

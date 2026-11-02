@@ -187,3 +187,7 @@ Lasry's reading.
 - [x] print: Tomokiyo louisxiii.htm and DECODE list both as not deciphered; no edition found
 - [n/a] key-rebuild: the three conflicting signs occur once each; there is nothing to rebuild them from
 - [x] retry: every glyph re-read against view 112 (alignment.tsv), 20 Oct 2026; regraded 21 Oct 2026 against Lasry's CTTS key (second s = repeat sign)
+
+## Dudout corrections, 29 Oct 2026
+- Lasry's b1/b2 (lasry2022 'additional document') are DECODE R2077 views P3 (f. 5v) and P4 (f. 6r), Henri IV to Breves, Paris 5 Jan 1610 (BnF fr. 3541). Lasry's key restricted to the labels seen in R2077 covers 25 of 38 tokens of the 10 Nov passage, all agreeing (200 shuffles: max 0.20); the other 13 are homophones absent from R2077.
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

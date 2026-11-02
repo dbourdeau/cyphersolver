@@ -1,0 +1,205 @@
+{
+ "schema_version": 1,
+ "target": "ibrahim1548",
+ "title": "Sigismund August, Frater Georg and Queen Isabella to Ibrahim Pasha, 1548 (HHStA Wien StAbt Türkei I 7-4-4, 7-4-5, 7-4-9; catalogue 885)",
+ "documents": [
+  {
+   "id": "7-4-4",
+   "shelfmark": "Wien, Haus-, Hof- und Staatsarchiv, StAbt Türkei I 7-4-4 (AIS 7040827), f. 28-30",
+   "date": "1 June 1548",
+   "year": 1548,
+   "country": "Austria",
+   "route": "Sigismund August (Cracow) -> Ibrahim Pasha, copy sent to Ferdinand I by Malvezzi",
+   "language": "Latin",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The Latin exemplar on f. 30 (image 4) filed with the two cipher copies (f. 28, f. 29)."
+   },
+   "length": {
+    "tokens": 572,
+    "distinct": 80,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription/f29_lines_01-07.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AIS getimage.aspx, width 2400",
+    "image_quality": "good",
+    "notes": "f. 29 (copy A) transcribed sign by sign, 13 lines, 572 signs including 21 null words, by two image agents on 30 Oct 2026 (transcription/f29_lines_01-07.txt, f29_lines_08-13.txt). The agents had the Latin exemplar open, so values marked * come from it and unmarked values may be biased toward it; a blind re-transcription has not been made. f. 28 and the 7-4-5 copies not transcribed. Blind check of lines 8-10: 61.4% match against the exemplar vs 99.2% crib-assisted (transcription/blind/RESULT.md); use 61% as the independent fit."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "7-4-5",
+   "shelfmark": "Wien, Haus-, Hof- und Staatsarchiv, StAbt Türkei I 7-4-5 (AIS 7040824), f. 31-34",
+   "date": "2 July 1548",
+   "year": 1548,
+   "country": "Austria",
+   "route": "Frater Georg (Vinea) -> Ibrahim Pasha, copy sent to Ferdinand I by Malvezzi",
+   "language": "Latin",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The Latin exemplars B and C on f. 34 (image 5) and its continuation (image 6)."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false,
+    "file": "none"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AIS getimage.aspx, width 2400",
+    "image_quality": "good",
+    "notes": "Cipher not yet transcribed. Exemplar C transcribed in texts/exemplar_7-4-5_C.txt."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Graphic-sign homophonic cipher with nulls and a code list, apparently the Ferdinand-Malvezzi key of 1548 (DECODE R367); not yet tested.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "notes": "The first line of 7-4-4 f. 29 begins with the Latin-letter words Idcirco, b, d, which are nulls of the R367 key (../malvezzi1548/KEY_BRIEF.md); same sign repertoire on the page. Unverified until a line is decoded."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment found in the repository, the DECODE list, the AIS descriptions or by web search (checked 29 Oct 2026). Austro-Turcica 1541-1552 pp. 276-278 not seen.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "Daniel Bourdeau asked for the target to be started after a contributor's pull request (#196) reported the images unreachable; no target-specific intervention.",
+  "tools": [
+   "curl",
+   "PIL"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-30",
+  "last_date": "2026-10-30"
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "literature search",
+   "what": "Contributor report (PR #196, Harrison Bornstein): AIS records are Reservatbestand, no images reachable; candidate key = malvezzi1548 R367. No decipherment found in the repository, the DECODE list, AIS or on the web.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "access",
+   "what": "Re-tested image access: the detail.aspx session cookie plus getimage.aspx returns the full scans despite 'Reservatbestand'. Fetched all 22 images of the three records.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "transcription",
+   "what": "Transcribed the Latin exemplars of 7-4-4 (f. 30) and 7-4-5 (exemplar C, f. 34) from the images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "hypothesis",
+   "what": "Compared the first line of 7-4-4 f. 29 with the R367 key brief: Idcirco, b, d are listed nulls and the graphic signs match; the exemplar (about 560 letters) is the same order of length as the 13 cipher lines.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis",
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "transcription",
+   "what": "Cut 13 lines of f. 29 into 26 half-line crops (2x) and had two image agents transcribe them sign by sign, with the R367 key brief and the exemplar as crib; 572 signs, 80 sign labels, 6 left unknown.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "crib",
+   "what": "Decoded f. 29 with the R367 values and aligned the result on the Latin exemplar (global alignment, align_f29.py). The cipher is the exemplar's text from 'Sigismundus Augustus' on, preceded by a short extra passage: 462 of 473 key-derived tokens (97.7%) match; 56 tokens depend on the exemplar and are not counted. The exemplar's heading is not enciphered.",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "plaintext matching",
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "control",
+   "what": "Tabulated sign label against value: 80 labels, 15 with more than one value, the rest consistent. Two values differ from KEY_BRIEF.md (r and x look reversed; some pi and cup forms). No independent (blind) transcription has been made, so the match rate is an upper bound.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "control",
+   "what": "Blind check: one image agent transcribed f. 29 lines 8-10 from the crops and the R367 key files only (no exemplar, no crib). Against the exemplar segment its values match 70 of 114 scored tokens (61.4%), against 99.2% for the crib-assisted values of the same lines; the two transcriptions agree on 61 of 142 values. The key family is confirmed without the crib, but the earlier 97.7% overstated the independent fit.",
+   "result": "partial",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ]
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not solved",
+  "method_basis": "Cipher not yet transcribed or decoded.",
+  "verification": [
+   "none"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read": 0.0,
+  "fraction_read_source": "no cipher token has a value yet",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "credits": [
+   {
+    "who": "harrison-bornstein",
+    "role": "pointer",
+    "note": "Report on catalogue 885 (PR #196) identified the Malvezzi key R367 as the candidate and the persons covered by its code words.",
+    "date": "2026-10-29",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/196"
+   }
+  ],
+  "notes": "In progress."
+ }
+}

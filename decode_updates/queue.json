@@ -13970,8 +13970,8 @@
    "records": {
     "R7902": {
      "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Filippo Maria Visconti, Duke of Milan, to Francesco Sforza, Milan, 1 Nov 1446 (BnF italien 1583 f. 110). Deciphered in part with the Duke's key ASMi cart. 1597 no. 23 (DECODE R5323, unlabelled there): about a third of the signs; the image is too coarse to separate several homophone families, and the verso (P2) reads only after dividing out the recto show-through. Date line: \"Data Mediolani die primo Novembris\".",
+     "proposed": "Decrypted",
+     "note": "Filippo Maria Visconti, Duke of Milan, to Francesco Sforza, Milan, 1 Nov 1446 (BnF italien 1583 f. 110; image P2 is the verso, 17 cipher lines above the recto's show-through). Deciphered with the Duke's key (DECODE R5323, also R1857 image 17): recto 96.5%, verso 69.6% of non-null signs. A 19th-century copy made by deciphering this slip is in BnF italien 1597 f. 123r-v (Gallica btv1b10037396j, canvases 126-127, \"(41.) 1446 1er 9bre\"); it leaves the one name sign blank, as the key does.",
      "reading": [
       {
        "file": "decode_updates/decryptions/R7902.txt"
@@ -13992,8 +13992,8 @@
     },
     "R7907": {
      "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Filippo Maria Visconti, Duke of Milan, to Francesco Sforza, Milan, 29 Nov 1446 (BnF italien 1583 f. 136). Deciphered with the Duke's key R5323: 91.5% of non-null signs; Giovanni del Maino's mission and the defection of Sforza's men at Cremona.",
+     "proposed": "Decrypted",
+     "note": "Filippo Maria Visconti, Duke of Milan, to Francesco Sforza, Milan, 29 Nov 1446 (BnF italien 1583 f. 136). Deciphered with the Duke's key R5323 (also R1857 image 17): 95.7% of non-null signs. A 19th-century copy made by deciphering this slip is in BnF italien 1597 f. 154 (Gallica btv1b10037396j, canvas 157, \"(55.)\"). Giovanni del Maino's mission and the defection of Sforza's men at Cremona.",
      "reading": [
       {
        "file": "decode_updates/decryptions/R7907.txt"
@@ -14030,6 +14030,20 @@
      "reading": null,
      "reading_not_needed": true,
      "sent": false
+    },
+    "R7903": {
+     "decode_status": "unknown",
+     "proposed": "unknown",
+     "note": "BnF italien 1583 f. 112 (Filippo Maria Visconti to Francesco Sforza, Milan 7 Nov 1446, re-sent 8 Nov) is a letter in clear, not a cipher; a 19th-century copy is in BnF italien 1597, canvas 127 \"(42.)\".",
+     "reading": null,
+     "sent": false
+    },
+    "R1857": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "Key record (ASMi Potenze Sovrane cart. 1592, Cifrari): image 17, headed \"Filippo Maria Duca di Milano\", is the same key as R5323 and reads the Duke's cipher slips to Francesco Sforza of 1446-47 (BnF italien 1583 ff. 110-158, DECODE R7902-R7915; italien 1584 ff. 5-102). Image 11 is the Barbavara/Arrigoni - Pusterla key (BnF ital. 1584 f. 69); image 19 (\"Cum Duci Mediolani\") is another system.",
+     "reading": null,
+     "sent": false
     }
    }
   },
@@ -14050,6 +14064,81 @@
      "sent": false
     }
    }
+  },
+  "birago1448": {
+   "writeup": "birago1448",
+   "key": {
+    "decode": "R5316",
+    "lang": "IT"
+   },
+   "cite": "cyphersolver targets/birago1448/NOTES.md (29 Oct 2026)",
+   "fields": {},
+   "records": {
+    "R5316": {
+     "decode_status": "N/A",
+     "proposed": "unchanged (key record)",
+     "note": "Key sheet headed 'Andreas Biragus' (Andrea da Birago, ducal official at Pavia): simple substitution, one sign per letter, signs for et and Francesco Piccinino. It reads BnF italien 1585 f. 33 (Birago to Francesco Sforza, Pavia, 28 Feb 1448; Gallica btv1b52525947w canvas 62), whose clear duplicate is f. 32. The record's date 1450 can be narrowed to 1448.",
+     "reading": [
+      {
+       "file": "birago1448/texts/f33_decryption.txt"
+      }
+     ],
+     "sent": false
+    }
+   }
+  },
+  "asang1662": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/asang1662.html",
+   "key": {
+    "file": "targets/asang1662/key.tsv",
+    "lang": "pl",
+    "how": "recovered here from the ciphertext alone: 23 composite sign groups, annealed on a Polish letter model, tested on the held-out reverse"
+   },
+   "cite": "Brice Dudout (Europe chiffrée), 29 Oct 2026",
+   "fields": {
+    "cleartext_lang": "Polish",
+    "start_year": 1662,
+    "start_month": 7,
+    "start_day": 31
+   },
+   "records": {
+    "R7513": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Unsigned Polish letter dated 31 July 1662, a substitution of 23 composite sign groups; read in full (71 of 71 words) by Brice Dudout, key recovered ciphertext-only. Sender, recipient and place not stated.",
+     "reading": "decode_updates/decryptions/R7513.txt",
+     "sent": false
+    }
+   }
+  },
+  "buda1490": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/buda1490.html",
+   "key": {
+    "file": "targets/buda1490/key.json",
+    "lang": "LA",
+    "how": "rebuilt here by aligning MNL OL DL 46150 with its clear minute (ASMi Sforzesco 642, Vestigia 194)"
+   },
+   "cite": "Vestigia document 194 (ASMi Carteggio Sforzesco 642, novembre no. 8), the clear minute of the letter",
+   "fields": {},
+   "records": {
+    "R5407": {
+     "decode_status": "unknown (key record; DECODE not reachable from the 30 Oct 2026 session)",
+     "proposed": "(no change)",
+     "note": "30 Oct 2026: Sforzesco 1597 no. 107, headed 'Cum Mafeo Triviliensi', is a key of Maffeo da Treviglio, the Milanese agent in the Sforza-Corvinus and Sforza-Jagiellon marriage negotiations (1489-92); not the 1489-90 key of R5411. Its A = ⊥ agrees with the cipher of Maffeo's letter to Tamás Bakócz, Milan 30 Nov 1490 (Hungarian National Archives, DL 46150), where ⊥ is one of three signs for a; R5407 may be that letter's key (not yet compared sign by sign). DL 46150 was deciphered from its clear minute: see the write-up.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
+  "bell1900": {
+   "skip": "Not a DECODE target: LoC Bell Family Papers item magbell.04100117, catalogue 763 from the Library of Congress sweep; no DECODE record exists to correct."
+  },
+  "stockholm1918": {
+   "skip": "Not on DECODE: NARA M367 telegrams with no DECODE record, so nothing to correct there."
+  },
+  "ludendorff1918": {
+   "skip": "Not on DECODE: NARA M367 telegrams with no DECODE record, so nothing to correct there."
   }
  }
 }

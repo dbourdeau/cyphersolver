@@ -1,0 +1,38 @@
+BnF "Archives et manuscrits" (BAM) sweep for undeciphered cipher pieces - summary (Dudout, 29 Oct 2026)
+
+Channel: archivesetmanuscrits.bnf.fr, plain GET on resultatRechercheSimple.html (TEXTE_LIBRE_INPUT=<term>,
+all documents, digitised or not), 100 results/page, 1 request every 6 s, about 120 requests, no 403/429.
+Gallica SRU was blocked (Cloudflare 403) at the first request and was not retried; you harvested that
+channel on 17 Sep (dc.description all "chiffre", 331 records), so it is not repeated here.
+No images were viewed or downloaded: every item is "seen: catalogue" (BAM description only).
+
+Queries (TEXTE_LIBRE_INPUT) and hit counts:
+  "en chiffre" 222 | chiffrée 181 | chiffrées 160 | chiffrés 3,000 (capped)
+  chiffre (= chiffré, lemmatised) 9,769 (4,432 read, 30 pages x 100; noisy)
+  "partie chiffrée" 21 | déchiffrement 1,292 | déchiffré 35 | "non déchiffré" 10
+  "clef du chiffre" 4 | "table de chiffre" 0 | "caractères secrets" 0 | cifrada 0
+  cifra 9 | cifre 7 | cryptographie 16 | "écriture secrète" 6 | cryptogramme 2
+  ("alphabet secret", "en cifra", nomenclateur returned a 150-hit default page with 1 row: unreliable, ignored)
+Best yield: "en chiffre" (almost all relevant), then chiffrée/chiffrées (Clairambault, Cinq cents de
+Colbert, NAF, Lorraine, Arsenal say "lettres chiffrées" / "en partie chiffrées").
+
+Filtering:
+  7,749 unique articles -> 1,814 that speak of a cipher (regex; excluded foliation, "chiffres arabes",
+  numbers, accounts) -> 675 with NO decipherment / translation / transcription noted in the description
+  (354 of them flagged "Consultable sur Gallica"). Grouped by volume: 232 volumes: 93 digitised AND already in your repo, 23 digitised with zero
+  hits in your repo, 10 not digitised but in your repo, 106 not digitised with zero hits.
+  By fonds (675 articles): Français 478, Espagnol 50, Clairambault 23, NAF 17, Cinq cents de Colbert 6,
+  Lorraine 4, Italien 4, others (institutional archives, Rothschild, music, modern papers) mostly noise.
+Prior art: shelfmark counted under its spellings (fr. NNNN / Français NNNN ...) in your known.py corpus
+(repo + DECODE + Cryptoole), then by hand in our own cipher-lab ledgers and cryptiana unsolved.htm.
+
+Main finding: the digitised BnF is already almost fully swept. Of the ~80 digitised volumes with
+"en chiffre" pieces and no noted decipherment, nearly all are in your repo (Gallica harvest, DECODE)
+or already worked in our lab (Clair. 349 and 351, fr. 3980, fr. 3254, fr. 2996, fr. 4137, fr. 4102,
+NAF 1045, Portugais 33; Espagnol 132 solved in Oct 2026 per cryptiana). The new material is mostly
+NOT digitised (Ligue/Nevers, Béthune, Richelieu, Brèves) and needs BnF reproduction orders.
+Leads sent separately (leads-dudout-2026-10-29.json): Colbert 338 (two groups), Lorraine 367 f. 148,
+NAF 29073 (intranet only), fr. 11270 f. 118, fr. 3485/3486, fr. 3828/3835. Italien 258, 314 and 1636
+are already your leads 1329, 1330, 1331. The 675-article list itself is not sent as leads (catalogue
+lines only, mostly duplicates of your Gallica harvest); available on request as JSON.
+Not done: no DECODE search by shelfmark; Allemand, Anglais, Portugais and Arsenal only by keyword.

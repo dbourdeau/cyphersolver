@@ -199,3 +199,7 @@ Closed (taken out of the open list, 23 Oct 2026): R9571, R9589 English translati
 - [x] print: web search, Treccani DBI, Tomokiyo: no edition found
 - [x] key-rebuild: alphabetical-run bracketing and LM candidate scoring (solve.py); 54 inferred values
 - [x] retry (22 Oct 2026): hand-read the best unglossed stretch (R9566 p. 3 ll. 10-14) against the Decazes/Floridas crib with the alphabetical runs; 17 of 37 groups stay open, no new value fixed (reread_log.md)
+
+## Dudout corrections, 29 Oct 2026
+- DECODE R9549 (box 2317) values stop at about 1254, not 1999: the clerk writes 2 with a looped tail. Still a different code from R9586/R9588 (1100-1399 = 44% of groups against 0.3%). On the images '268 111 294 808' has 294, not 398; 863 'tan' and 867 'tal' are correctly transcribed.
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

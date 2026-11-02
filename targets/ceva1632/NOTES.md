@@ -320,3 +320,7 @@ Failures and limits of this pass:
 - [x] print: not needed for the reading - complete contemporary decipherments of both letters found on DECODE (22 Oct 2026); Nuntiaturberichte / Acta Nuntiaturae Gallicae for Ceva 1632-34 still not searched
 - [x] key-rebuild: LM beam decoder, interpolated in-domain model; whole-letter streams (run2.py); unvalued-code penalty
 - [x] retry: both letters re-transcribed from the images (r75/r84.retrans.txt) and decoded again with the 23 values: 0.914 -> 0.958; 22-23 Oct 2026: aligned with the decipherments, eight values adopted, decoded again (r75/r84.read3.txt), read (R75 0.774, R84 0.826 clean sentences)
+
+## Dudout corrections, 29 Oct 2026
+- DECODE R5625 is a letter wholly in clear (Barberini to Ceva, Rome 27 Dec 1632), not a ciphertext, so the entry's count of 62 ciphered despatches is wrong. Of seven records sampled (R5625, R5626, R5630, R5640, R5655, R5670, R5686), five of the six ciphers carry a contemporary decipherment in the same record; only R5640 (Rome, Apr 1633) has none. Lasry's key (cipher.py, unchanged) decodes R5630 f. 175 at 0.84 character agreement with the 1633 interlinear. R5670 and R5686 are from Madrid, in a different system. These cipher/decipherment pairs could fill many of the 95 open nomenclator elements.
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

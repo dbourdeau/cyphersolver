@@ -1,0 +1,308 @@
+{
+ "schema_version": 1,
+ "target": "ferdinand1473",
+ "title": "Ferdinand of Aragon, king of Sicily, to his father John II: cipher passages of 5 June 1473 (Hostalric) and 3 Nov 1474 (Zaragoza) (BNE MSS/20211/64 and /73)",
+ "documents": [
+  {
+   "id": "d64",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/20211/64 (BNE Digital bdh0000186643), recto",
+   "date": "5 June 1473",
+   "year": 1473,
+   "country": "Spain",
+   "route": "Ferdinand (Hostalric) -> John II of Aragon",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear notes of a second hand: words over part of the cipher (certificar dela gente, trayo, continos, de castilla, de aragon, mas, de quinientos, de cavallo, son, ya algunos, barçna, hi seran, semana, viene, comigo, hombres darmas) and single letters on ruled guidelines over the signs."
+   },
+   "length": {
+    "tokens": 201,
+    "distinct": 39,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/d64_transcription.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE Digital 'high' PDF, image 1 (1085 x 1187 px), read at 4-16x",
+    "image_quality": "fair",
+    "notes": "Look-alike signs separated at 12x; the σ-like 6 and the p-sign may each hide two forms the scan does not separate."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "d73",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/20211/73 (BNE Digital bdh0000186628), recto",
+   "date": "3 Nov 1474",
+   "year": 1474,
+   "country": "Spain",
+   "route": "Ferdinand (Zaragoza) -> John II of Aragon",
+   "language": "Spanish",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate paragraph",
+     "interlinear"
+    ],
+    "source": "The clear paragraph at the foot of the recto ('No res menos senyor ...') is the plaintext of the cipher; letters of a second hand stand over most signs."
+   },
+   "length": {
+    "tokens": 310,
+    "distinct": 47,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/d73_transcription.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE Digital 'high' PDF, image 1 (1114 x 1510 px), read at 4-8x and on line strips at about 7x",
+    "image_quality": "fair",
+    "notes": "Dots and rings on signs (y/y°, 3/3°, A/A.) and the /. mark are the least sure; the interlinear letters are legible only in part."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Two different homophonic letter substitutions. 1473: about 30 valued signs (letters, digits, crosses, ∞, ŧ), several for each vowel and for c, one place sign (Barcelona). 1474: bar and dotted signs, a null A, a sign for qu.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 39,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "places",
+    "syllables"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Galende Díaz 1994 (Cuadernos de Estudios Medievales 18-19, 159-178) lists /56 and /73 as ciphered, with no key; /64 not listed. Contemporary interlinear notes on /64 and /73 and the clear paragraph on /73.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Outside contribution: Michael Brackx chose the target, set the rounds (transcribe, key from the notes, re-read doubtful signs at higher zoom, siblings, review) and approved each step. Transcription, keys, decodes and readings were done by Claude Code under his direction.",
+  "tools": [
+   "BNE Digital pdf.js viewer in a browser",
+   "python"
+  ],
+  "models": [
+   "Claude Opus 5.5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29"
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "literature search",
+   "what": "Galende Díaz 1994 lists /56 (1470) and /73 (1474) as ciphered letters of Ferdinand to John II, with no key; /64 not listed; no edition found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "d64: nine cipher lines (201 signs) and the interlinear notes transcribed from the 1085-px scan at 4-6x.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "d64 key from the interlinear words and letters (dela gente, de castilla, de aragon, traygo, semana, hi seran): first decode builds sentences (troops for Perpignan).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "d64 doubtful signs re-read at 8-16x: b. r, Q f, a. i, -o- i, ooo ll, 3- y, qo o; place sign FI noted barçna (Barcelona); 'irán' for 'havrán'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "d64 p-sign split by shape (hooked = o, plain = c): the plain p also gives o (ochocientos, ciento).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "d56 (1470) transcribed: 15 lines, about 330 signs, a different (probably syllabic) cipher with a faint pencil decipherment; not attacked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "d73: eleven cipher lines (310 signs) transcribed; interlinear letters read on line strips at about 7x, about half legible.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "d73 19-sign key from the legible interlinear letters decodes 'no res menos se', 'matrimoni... in / fanta mi hermana no se', 'mossen s...'; the clear paragraph at the foot of the page begins with the same words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "beam/DP decoding",
+    "EM alignment"
+   ],
+   "what": "align1474.py aligns the 310 signs with the paragraph's 325 letters and re-estimates the key (2 passes); about 30 signs valued; 'si aya' and 'a bueltas' settled from the cipher; 'rompido' kept after a 12x check.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 310 tokens, 47 types, es-golden-age order 4: reading -3.311 per letter; polyphonic: 20% of read tokens differ from their type's commonest value. Verdict: not applicable.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-29",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 310,
+   "types": 47,
+   "tokens_per_type": 6.6,
+   "score": -3.311,
+   "nulls": {},
+   "verdict": "not applicable",
+   "notes": "polyphonic: 20% of read tokens differ from their type's commonest value"
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "d64: key rebuilt from the contemporary interlinear notes and extended by sense. d73: key read from the interlinear letters, then aligned on the clear paragraph on the same page, which is the plaintext.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.97,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "d64: 199 of 201 signs read (two open, 13 places with a value chosen by sense); d73: all of the passage read from the clear paragraph, with three doubtful words.",
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "brackx",
+    "role": "solution",
+    "note": "Directed Claude Code in transcribing BNE MSS/20211/64 and /73, rebuilding both keys and reading both cipher passages (catalogue #857); /56 transcribed.",
+    "date": "2026-10-29"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Interlinear notes on /64 and /73 and the clear paragraph on /73 (BNE MSS/20211)."
+   }
+  ],
+  "gaps": [
+   {
+    "item": "d64 L05: two signs (H C) after 'de Castilla'",
+    "blocker": "open-codes",
+    "detail": "C occurs only here; the sense wants 'con migo' or similar"
+   },
+   {
+    "item": "d64: the σ-like sign 6 and the p-sign (values chosen by sense in 13 places)",
+    "blocker": "illegible",
+    "detail": "the 1085-px scan does not separate the forms"
+   },
+   {
+    "item": "d73: 'rompido' and 'promendo'",
+    "blocker": "illegible",
+    "detail": "a better image of the clear paragraph and the cipher would settle the letters"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "d64",
+    "label": "Hostalric, 5 June 1473 (MSS/20211/64)",
+    "transcription": "transcription/d64_transcription.md",
+    "decryption": "decryption/d64_decode.txt",
+    "reading": "decryption/d64_reading.md",
+    "translation": "decryption/d64_en.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.97,
+    "summary": "Ferdinand reports the troops he brings for the relief of Perpignan: his continos and the men from Castile, more than 500 horse from Aragon, the Valencians (some already at Barcelona), 800 horse in all with 100 men-at-arms.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Sonnet 5.5), maintainer review",
+     "date": "2026-10-30",
+     "note": "Read the reading file as sentences in Spanish and checked it against the English translation; coherent, with the holes the NOTES list. Not checked against the page image by a person."
+    }
+   },
+   {
+    "doc": "d73",
+    "label": "Zaragoza, 3 Nov 1474 (MSS/20211/73)",
+    "transcription": "transcription/d73_transcription.md",
+    "decryption": "decryption/d73_decode.txt",
+    "reading": "decryption/d73_reading.md",
+    "translation": "decryption/d73_en.md",
+    "contemporary": "decryption/d73_clear.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.98,
+    "summary": "Ferdinand is astonished that the infanta Juana's marriage has not been broken off as negotiated, and asks that Mossèn Santcliment be the one sent to Naples, so that his own affairs are handled with the others.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Sonnet 5.5), maintainer review",
+     "date": "2026-10-30",
+     "note": "Read the reading file as sentences in Spanish and checked it against the English translation; coherent, with the holes the NOTES list. Not checked against the page image by a person."
+    }
+   }
+  ],
+  "key_file": [
+   "key_1473.md",
+   "key_1474.md"
+  ],
+  "notes": "Contributed; reading_review to be recorded by the reviewer."
+ }
+}

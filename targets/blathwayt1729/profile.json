@@ -1,0 +1,173 @@
+{
+ "schema_version": 1,
+ "target": "blathwayt1729",
+ "title": "Blathwayt 1729 (catalogue 826): intelligence report from Port Sainte-Marie in numerical code, read with a code table rebuilt from sister glosses",
+ "documents": [
+  {
+   "id": "huntington-mssbla-191-p5",
+   "read": "read",
+   "shelfmark": "The Huntington Library, William Blathwayt papers (Addenda), mssBLA 191, p. 5",
+   "date": "summer 1729 (forwarded 8 August 1729)",
+   "year": 1729,
+   "country": "Spain",
+   "route": "El Puerto de Santa María -> Cessnock -> London",
+   "places": {
+    "from": "El Puerto de Santa María",
+    "to": "London"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Catalogue: \"(a) undated, in cipher\"; no gloss on the sheet."
+   },
+   "length": {
+    "tokens": 141,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Huntington Digital Library, p15150coll7 61005",
+    "image_quality": "good",
+    "notes": "One group (l. 3, 103) partly covered by a blot."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "One-part numerical code book c. 1-1324: per initial, letters/syllables/short words then long words, alphabetical; homophones; numbers 1205-1213 and 1-17; nulls above 1213",
+  "symbol_kind": "digits",
+  "distinct_symbols": 400,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Huntington catalogue notes no decipherment; catalogue 826 open (checked 28 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "access",
+   "what": "Target and nine sister pieces found on the Huntington Digital Library (CONTENTdm API).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction",
+    "plaintext matching"
+   ],
+   "what": "Code table K1 rebuilt from the contemporary interlinear decipherments of seven sister pieces; frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Frozen K1 on the held-out glossed piece of 4 Aug 1729: 0.959 words / 0.952 characters vs 200 permuted controls (p99 0.024 / 0.229).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "141 groups read with K2; 17 probable words from the alphabetical place in the code book and the sense.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Code table rebuilt from contemporary decipherments of sister pieces in the same collection, validated on a held-out glossed piece.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.972,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "105/108 words read in their sense; 88 certain (81.5%), 17 probable (15.7%), 3 unresolved (2.8%).",
+  "first_break": true,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "code table rebuilt from sister glosses, validated on a held-out piece; sheet read, English translation",
+    "date": "2026-10-28",
+    "source": "email of 28 Oct 2026 and branch dudout/bundle-north-east-colonies; https://bdudout.github.io/europe-chiffree/en/documents.html#blathwayt-1729"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "huntington-mssbla-191-p5",
+    "label": "Intelligence report from Port Sainte-Marie, summer 1729 (enclosure to Newcastle, 8 Aug 1729)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "The informer thanks Milord, complains that Mr Keene does not like him nor thank him for past services, and asks for orders for his conduct during the accommodation.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Sonnet 5.5",
+     "date": "2026-10-30",
+     "note": "Read as French sentences and translated: a letter to Milord thanking him, complaining of Mr Keene and asking for orders; three unresolved holes (214, se<711>s, <pr>es) marked in the text and the 17 probable words are placed by the code book's alphabetical order. 12 of 17 sentences clean by the scorer, which counts the marked words as holes."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}

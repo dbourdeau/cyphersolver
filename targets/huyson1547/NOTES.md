@@ -1,5 +1,7 @@
 # Henry II to Suleiman the Magnificent, 1547: Malvezzi's enciphered Latin copy (catalogue 500, HHStA Türkei I 7-2-18)
 
+Status: read (Brice Dudout, 27 Oct 2026; about 97.5% of about 1,550 cipher groups read (counted group by group in part, estimated line by line elsewhere), 18 unresolved; certain, probable and restored groups not counted separately for the whole item; words not counted; Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#huyson-1547
 

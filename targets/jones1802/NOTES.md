@@ -157,3 +157,7 @@ He also reports:
 - `apply.py`: applies the 1798 key to 1802 and writes `decode_212.txt` and `decode_217.txt`. `--retry` adds
   `proposals.tsv` and writes `reading_212.txt` and `reading_217.txt`.
 - `proposals.tsv`: graded values for the groups with no 1798 value. `validation.tsv`: pairs for `docs/_validate.py`.
+
+## Dudout corrections, 29 Oct 2026
+- Held-out check of the 1798 table (ct_49/pt_51/align_1798.tsv): table from /49 f. 1r only (129 rows), tested on f. 1v: letters 0.959 (70/73, 0 wrong) against witnesses max 0.329. Groups x,2 are not fixed values. New sibling leads: IOR/L/PS/9/76/134 (Malcolm to Jones, Shiraz Aug 1800, partly in cypher) and BL Add MS 41767-41768 (Jones papers).
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

@@ -1,0 +1,181 @@
+{
+ "schema_version": 1,
+ "target": "perez1578",
+ "title": "Pérez 1578: Antonio Pérez to Don John of Austria, Madrid, 19 August 1578 (RAH 2/Ms Caja 8 no. 4), cipher passages read",
+ "documents": [
+  {
+   "id": "rah-2ms-caja8-n4",
+   "read": "read",
+   "shelfmark": "RAH, 2/Ms Caja 8 no. 4 (Fernández San Román collection)",
+   "date": "19 August 1578",
+   "year": 1578,
+   "country": "Spain",
+   "route": "Madrid -> the Netherlands",
+   "places": {
+    "from": "Madrid",
+    "to": "Netherlands (camp of Don John of Austria)"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Autograph letter, plain text with four cipher passages; no contemporary decipherment found."
+   },
+   "length": {
+    "tokens": 153,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "RAH Biblioteca Digital, images 2-3",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Numerical syllabary: number = consonant, mark after it = vowel, superscripts = final n/s/r/l; 1577 Spanish chancery table (Genoa embassy variant)",
+  "symbol_kind": "digits",
+  "distinct_symbols": 40,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not in the catalogue, Cryptoole/Cryptiana, Mignet (1845), CODOIN (full text) or Avila Seoane (2024). Not checked: G. Marañón, Antonio Pérez (1947), appendices.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "System recognised as the 1577 Genoa embassy syllabary; key K_P = Genoa K5 + 4 values from Pérez's exploration lines.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Lexical coverage on held-out lines: not separated from controls (car3 0.764 < 0.781).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Pair AGS Estado 1410,69-70: 72.4% words / 88.5% chars (controls <= 25.3 / 55.7), under the 75% word threshold.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Fresh pair AGS Estado 1410,65-66 with K_P2 frozen: 81.3% words / 87.9% chars (controls <= 16.5 / 47.8).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "70 words read: 60 certain, 9 probable, 1 unresolved.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Key of a sibling cipher (1577 Genoa embassy table, rebuilt from contemporary decipherments), adapted to Pérez's variant and validated on a fresh held-out cipher / decipherment pair.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.986,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "69/70 words read in their sense; 60 certain, 9 probable, 0 restored, 1 unresolved.",
+  "first_break": true,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "system identified, key adapted and validated on a fresh AGS pair, four passages read, English translation",
+    "date": "2026-10-29",
+    "source": "email from Brice Dudout to Daniel Bourdeau, 29 Oct 2026; merged from branch dudout/bundle-spain-italy, 30 Oct 2026"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "rah-2ms-caja8-n4",
+    "label": "Antonio Pérez to Don John of Austria, 19 Aug 1578, four cipher passages",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "summary": "The Council of Finance has \"not a single real\"; supplying what is needed is impossible; the asiento was accepted under protest that no other will be honoured.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Sonnet 5.5",
+     "date": "2026-10-30",
+     "note": "Read as sentences from Brice Dudout's reading.md and translation.md (not re-deciphered, not re-checked against the images): three of the four passages build Spanish sentences once Perez's clear text is added; one word (ningun) is left unresolved and one verb (estragar) is uncertain in sense."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}

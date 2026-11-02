@@ -35,6 +35,22 @@ ARCHIVES = [
     (r'\bTNA\b|\bSP \d+|Kew', 'The National Archives', 'Kew, London'),
     (r'\bBL\b|British Library|Harley|Cotton|Add MS', 'British Library', 'London'),
     (r'outre-mer|\bANOM\b|\bCOL [BC]', 'Archives nationales d’outre-mer', 'Aix-en-Provence'),
+    (r'ANTT|Torre do Tombo', 'Arquivo Nacional Torre do Tombo', 'Lisbon'),
+    (r'AGAD', 'Archiwum Główne Akt Dawnych', 'Warsaw'),
+    (r'GStA PK|Geheimes Staatsarchiv', 'Geheimes Staatsarchiv Preußischer Kulturbesitz', 'Berlin'),
+    (r'Rigsarkivet', 'Rigsarkivet', 'Copenhagen'),
+    (r'Krigsarkivet', 'Krigsarkivet', 'Stockholm'),
+    (r'Archives nationales(?! d.outre)|AN [A-Z]', 'Archives nationales', 'Paris'),
+    (r'Archivio di Stato di Mantova', 'Archivio di Stato di Mantova', 'Mantua'),
+    (r'Archivio di Stato di Firenze|ASF|ASFi', 'Archivio di Stato di Firenze', 'Florence'),
+    (r'Ambrosiana', 'Biblioteca Ambrosiana', 'Milan'),
+    (r'Beinecke', 'Beinecke Rare Book and Manuscript Library', 'New Haven'),
+    (r'Huntington', 'Huntington Library', 'San Marino, California'),
+    (r'Clements', 'William L. Clements Library', 'Ann Arbor'),
+    (r'Library of Congress|DLC', 'Library of Congress', 'Washington'),
+    (r'Archivo Nacional Hist|Biblioteca Nacional de Chile', 'Chilean national archive and library', 'Santiago'),
+    (r'CPDOC', 'CPDOC / Fundação Getulio Vargas', 'Rio de Janeiro'),
+    (r'UFRGS|NUPERGS', 'UFRGS, NUPERGS', 'Porto Alegre'),
     (r'Meurthe-et-Moselle', 'Archives départementales de Meurthe-et-Moselle', 'Nancy'),
     (r'\bBnF\b|Gallica|\bfr\. \d|Français \d|Colbert|Clairambault|Baluze', 'Bibliothèque nationale de France', 'Paris'),
     (r'\bASV\b|\bAAV\b|Segr\. Stato|Segreteria di Stato|Segretario di Stato|Nunziatura', 'Archivio Apostolico Vaticano', 'Vatican City'),
@@ -98,6 +114,46 @@ def kind_of(text):
     return 'visit'
 
 
+def archive_from_shelfmark(sm):
+    """Fallback for a catalogue shelfmark no ARCHIVES pattern knows: its leading institution, cut at the first comma."""
+    parts = [x.strip() for x in re.split(r',| \(', sm) if x.strip()]
+    if not parts: return 'unknown', ''
+    name = parts[0]
+    if len(parts) > 1 and len(name.split()) <= 2 and not re.search(r'Archiv|Bibli|Library|Staats|Landes|Museum', name):
+        name = parts[1]
+    return name[:70], ''
+
+
+PRINTED = r'^(Calendar of|Letters and Papers|Calendar,)'
+
+
+def cat_text(e):
+    """What the volunteer should know: the catalogue's own next step, unless the access note says something specific."""
+    n = e.get('access_note') or ''
+    if n.startswith('not online (backfilled'): return (e.get('verify') or '').strip()
+    return n.strip()
+
+
+def cat_request(e):
+    sm, note = e['shelfmark'], e.get('access_note') or ''
+    arch, city = archive_of(sm, [])
+    if arch == 'unknown': arch, city = archive_from_shelfmark(sm)
+    blob = ' '.join((note, e.get('verify') or ''))
+    kind = 'library' if re.search(PRINTED, sm) or re.search(LIBRARY, sm + ' ' + note, re.I) else            'order' if re.search(ORDER, blob, re.I) else 'visit'
+    if kind == 'library': arch, city = 'A library or database', ''
+    title = e['title'] if len(e['title']) < 150 else e['title'][:147].rstrip() + '...'
+    why = cat_text(e)
+    return dict(target=None, catalogue=e['id'], kind=kind, archive=arch, city=city, shelfmark=sm[:160],
+                need=title, why=why[:300], year=e.get('year'), cls=e.get('cls'), imp=e.get('importance'),
+                solv=e.get('solvability'), region=e.get('region'))
+
+
+def cat_open():
+    """Catalogue entries whose ciphertext or key is not online (access "archive") and that are still open."""
+    c = json.loads((ROOT / 'catalogue.json').read_text(encoding='utf-8'))['entries']
+    return [e for e in c if e.get('access') == 'archive' and (not e.get('outcome') or e['outcome'].startswith('attempted'))]
+
+
 def key(target, need):
     return target + '|' + re.sub(r'\W+', ' ', need.lower()).strip()[:90]
 
@@ -128,11 +184,27 @@ def main(dry=False, quiet=False):
                  need=need, why=why, status='open', volunteer=None, issue=None,
                  history=[dict(date=TODAY, status='open', note='from the NOTES.md Remaining gaps')])
         reqs.append(r); have[k] = r; added.append(r)
+    havecat = {r['catalogue']: r for r in reqs if r.get('catalogue')}
+    catnow = {e['id']: e for e in cat_open()}
+    for i, e in sorted(catnow.items()):
+        f = cat_request(e)
+        if i in havecat:                      # refresh the catalogue-derived fields only
+            r = havecat[i]
+            for k in ('need', 'shelfmark', 'year', 'cls', 'imp', 'solv', 'region'): r[k] = f[k]
+            if r['status'] == 'open': r.update(kind=f['kind'], archive=f['archive'], city=f['city'], why=f['why'])
+            continue
+        n += 1
+        r = dict(id=f'ar-{n:03d}', **f, status='open', volunteer=None, issue=None,
+                 history=[dict(date=TODAY, status='open', note='from catalogue.json: access "archive" (not online)')])
+        reqs.append(r); added.append(r)
+    goneC = [r for r in reqs if r.get('catalogue') and r['status'] not in ('closed', 'unavailable') and r['catalogue'] not in catnow]
+    for r in ([] if quiet else goneC): print(f"? {r['id']} catalogue {r['catalogue']}: no longer open or no longer archive-only (close it by hand)")
     gone = [r for r in reqs if r.get('target') and r['status'] not in ('closed',) and key(r['target'], r['need']) not in seen]
-    for r in ([] if quiet else added): print(f"+ {r['id']} {r['target']:18} {r['kind']:7} {r['archive']}")
+    for r in ([] if quiet else added): print(f"+ {r['id']} {str(r.get('target') or 'cat ' + str(r.get('catalogue'))):18} {r['kind']:7} {r['archive']}")
     for r in ([] if quiet else gone): print(f"? {r['id']} {r['target']}: gap no longer in NOTES.md (close it by hand)")
     if not quiet: print(f'{len(added)} added, {len(gone)} gone, {len(reqs)} in the ledger')
-    if not dry and added:
+    gone = gone + goneC
+    if not dry:
         LEDGER.write_text(json.dumps(led, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     return len(added), len(gone)
 

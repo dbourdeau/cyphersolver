@@ -172,3 +172,12 @@ concrete errand rather than a research problem.
 | `berthier.py` | structure of the cryptogram, and the compatibility check against the printed letters |
 | `an_ir.pdf` / `an_ir.txt` | the Archives nationales répertoire for AF/IV/1590–1670 |
 | `napoleon2.txt` | Tomokiyo's survey of Napoleonic ciphers, source of the variant reading |
+
+## Berthier 1812 read with the Great Cipher of 1812: a letter of King Joseph (Brice Dudout, 12 Oct 2026; added 29 Oct 2026)
+
+The 325 groups read with the deciphering table of the Great Cipher of 1812 (SHD "B n° 30", photographed by J.-F. Bouchaudy).
+The text is French, written in Spain by a king to the Emperor (Reille's dispatch enclosed, the Army of the North, the
+Salamanca dispatches): King Joseph, not Berthier; Joseph's letter to the Minister of War of 23 Dec 1812 (Du Casse IX) covers
+the same matter. Ilia Chirtulov found key and writer first (reported by Tomokiyo on Cryptiana, 12 Oct 2026); ours is an
+independent re-reading: 8 groups corrected on Vilcoq's plate (the plate reads 356, the sense requires 656), permutation
+control 0/1,000, 233 of 233 words read in their sense (225 certain, 3 probable, 5 restored). See `dudout/README.md`.

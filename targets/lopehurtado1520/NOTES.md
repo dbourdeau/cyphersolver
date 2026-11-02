@@ -1,5 +1,7 @@
 # Lope Hurtado de Mendoza to Charles V, Tordesillas, 10 December 1520 (catalogue 626)
 
+Status: read (Brice Dudout, 28 Oct 2026; about 920 cipher words, about 97.7% read: about 95.4% certain, about 2.3% probable, about 21 unresolved (each unresolved passage counted as two words); restored words not counted separately; Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 27-28 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#lope-hurtado-1520
 (Different letter and key from `lopehurtado/`, Lope Hurtado's Roman letters of 1522-1524.)

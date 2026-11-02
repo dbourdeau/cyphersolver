@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milroy telegrams (1861&ndash;62) &mdash; Read with known key</title>
+<meta name="description" content="Two Union telegrams in Stager Cipher No. 7, a word route transposition with six fixed columns, kept in General Robert Milroy&rsquo;s papers: Cox to Milroy, 3 December 1862, and Bascom, 4 December 1861. Solved by Richard Bean with Claude Opus 5 in 2026; spot-checked here against Milroy&rsquo;s own copy, nothing added.">
+<link rel="stylesheet" href="style.css?v=20261027c">
+<meta name="date" content="2026-10-31">
+<meta name="last-modified" content="2026-10-31">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="stockholm1918.html"><i class="dot stuck" aria-hidden="true"></i><b>German Foreign Office to Stockholm 1918</b><span class="yr">1918</span><span class="m">not solved</span></a></li><li><a href="ludendorff1918.html"><i class="dot stuck" aria-hidden="true"></i><b>Ludendorff to Stockholm 1918</b><span class="yr">1918</span><span class="m">not solved</span></a></li><li><a href="milroy.html" aria-current="page"><i class="dot solved" aria-hidden="true"></i><b>Milroy telegrams 1861&ndash;62</b><span class="yr">1861&ndash;62</span><span class="m">known key applied</span></a></li><li><a href="feynman.html"><i class="dot solved" aria-hidden="true"></i><b>Feynman ciphers 2 and 3</b><span class="yr">1953</span><span class="m">known key applied</span></a></li><li><a href="bell1900.html"><i class="dot solved" aria-hidden="true"></i><b>Bell to Mabel Bell 1900</b><span class="yr">1900</span><span class="m">known key applied</span></a></li><li><a href="santacruz1630.html"><i class="dot solved" aria-hidden="true"></i><b>Philip IV to Santa Cruz 1630</b><span class="yr">1630</span><span class="m">key from external plaintext</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">76</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">16</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">88</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">32</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">104</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">75</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 507 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+  <div class="cipherstrip">China quest whether transportation in reach what is if bully imboden by to forward &hellip;<br>If your information as to Imboden is confirmed, let me know by what route you shall try to reach him &hellip;</div>
+  <p class="kicker">Union telegrams to General Milroy &middot; Stager Cipher No. 7, word route transposition &middot; 1861&ndash;62 &middot; known key applied</p>
+  <h1>The Milroy telegrams, 1861&ndash;62</h1>
+  <p class="sub">Two Civil War telegrams enciphered by writing words into six columns in a set route, solved by Richard Bean in 2026; two of their routes checked here on Milroy&rsquo;s own copy.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-31">31 October 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: complete</p><!-- /outcome -->
+<p class="credits">Credits &middot; <a href="contributors.html#bean">Richard Bean</a> (key or decipherment used)</p><!-- /credits -->
+<div class="seal solved" aria-hidden="true"><span>known key</span></div>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-telegrams">The telegrams</a><a href="#the-cipher">The cipher</a><a href="#the-reading">The reading and our check</a><a href="#uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied &middot; complete</span></p>
+<dl>
+  <dt>The telegrams</dt><dd>Cox to Milroy, 3 December 1862, and a telegram of Bascom, 4 December 1861, both among the papers of General Robert H. Milroy.</dd>
+  <dt>Where</dt><dd>The text used here is Milroy&rsquo;s own copy of the Cox telegram, as transcribed in a Jasper County Library lesson plan. The transcription is unreliable in places.</dd>
+  <dt>The cipher</dt><dd>Stager Cipher No. 7: the words are entered into a grid of six fixed columns, up or down each column in a set sequence, and the plaintext is read along the rows. An indicator word gives the number of lines: &ldquo;China&rdquo; is 8, &ldquo;Turkey&rdquo; 12, &ldquo;Austria&rdquo; 9.</dd>
+  <dt>How it was read</dt><dd>Richard Bean, working with Claude Opus 5, published the solution in 2026 (listed as solved on Tomokiyo&rsquo;s cryptiana). Here, one run and one reversed run of Milroy&rsquo;s copy were found to fit Bean&rsquo;s grid.</dd>
+  <dt>What it says</dt><dd>Cox asks Milroy, if his information about Imboden is confirmed, by what route he will try to reach him and how far forward on the Moorefield road. Bascom reports that General Kelley has been told by General Halleck to hold himself in readiness to move.</dd>
+  <dt>Still open</dt><dd>Our own route search did not converge, so no part of the decipherment is independent; the full Bascom text is on the cryptiana page only.</dd>
+  <dt>Credit</dt><dd>Richard Bean found the system and the plaintexts. This page records a check and adds nothing to them.</dd>
+</dl>
+</div>
+
+<h2 id="the-telegrams"><span class="num">01</span> The telegrams</h2>
+<p>The Cox telegram, as Milroy&rsquo;s copy gives it, is a run of ordinary English words in the wrong order, with an indicator word in front (&ldquo;China&rdquo;) and a few words that are nulls or code words:</p>
+<pre>China quest whether transportation in reach what is if bully imboden
+by to forward Jrsisert also are Cumberland hole that the will the him
+route confirmed your health information let you also morsefield supply
+roads with stine at connection's for co your far try know w to fight
+as me shall hour road your and Kelley x Guusmat road country you of
+communications avoid you drink to your direction extest Mountain
+Moonfield morning star answer from can - Winchester by being</pre>
+
+<h2 id="the-cipher"><span class="num">02</span> The cipher</h2>
+<p>The words of the message are not changed; their order is. They are written into a grid of six columns, going up or down each column in a fixed sequence, and the message is read off the rows. &ldquo;China&rdquo; as the first word means eight lines. The result is a telegram that looks like a list of words but that a telegraph clerk could undo with the route.</p>
+
+<h2 id="the-reading"><span class="num">03</span> The reading and our check</h2>
+<p>Bean&rsquo;s decipherment of the Cox telegram begins &ldquo;If your information as to Imboden is confirmed, let me know by what route you shall try to reach him, also how far forward in the Moorefield Road&hellip;&rdquo; The Bascom telegram begins &ldquo;General Kelley having received directions from General Halleck to hold himself in readiness to move under orders from army head quarters&hellip;&rdquo;</p>
+<p>The check here (<code>route.py</code> in the repository folder) used Milroy&rsquo;s copy. The run &ldquo;imboden by to forward&rdquo; is column 6, rows 1 to 4, read downward, and the run &ldquo;what is if&rdquo; is column 1, rows 3 to 1, read upward. Both agree with Bean&rsquo;s grid. A blind bigram search over all six-column routes did not converge, because the transcription is unreliable and the grid holds nulls and code words, so it was not pursued.</p>
+
+<h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
+<ul>
+  <li>The transcription of Milroy&rsquo;s copy has misread words (&ldquo;Jrsisert&rdquo;, &ldquo;Guusmat&rdquo;, &ldquo;extest&rdquo;), so the full decipherment cannot be reproduced from it unaided.</li>
+  <li>Only two routes were checked. The rest of the grid, and the Bascom telegram, rest on Bean&rsquo;s published solution.</li>
+</ul>
+
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Cox to Milroy, 3 Dec 1862 (Richard Bean&#x27;s decipherment, 2026)</h3>
+<p>A Union telegram in Stager Cipher No. 7 (a word route transposition with indicator words) from Cox to General Milroy: &#x27;If your information as to Imboden is confirmed, let me know by what route you shall try to reach him, also how far forward in the Moorefield Road&#x27;. Deciphered by Richard Bean with Claude Opus 5 in 2026; the full decipherment is on Tomokiyo&#x27;s cryptiana page.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/milroy/texts/cox1862_transcription.txt">cox1862_transcription.txt</a></p><pre>Cox to Milroy, 3 Dec 1862: the telegram as in Milroy&#x27;s copy, from the Jasper County Library lesson plan transcription (unreliable in places). Copied verbatim from the raw string in route.py, 22 Oct 2026.
+
+China quest whether transportation in reach what is if bully imboden by to forward Jrsisert also are Cumberland
+hole that the will the him route confirmed your health information let you also morsefield supply roads with stine
+at connection&#x27;s for co your far try know w to fight as me shall hour road your and Kelley x Guusmat road country you of
+communications avoid you drink to your direction extest Mountain Moonfield morning star answer from can - Winchester by being</pre></details>
+<p class="ftext">Decryption: <a href="https://cryptiana.web.fc2.com/code/civilwar1b_milroy.htm">civilwar1b_milroy.htm</a></p>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/milroy.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">05</span> Sources</h2>
+<ul>
+  <li>Richard Bean with Claude Opus 5, solution of the Milroy telegrams, 2026, on S. Tomokiyo&rsquo;s <a href="https://cryptiana.web.fc2.com/code/civilwar1b_milroy.htm">Cryptiana</a>.</li>
+  <li>The Cox telegram as transcribed from Milroy&rsquo;s own copy in a Jasper County Library lesson plan.</li>
+</ul>
+<p class="muted">Notes, scripts and profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/milroy"><code>targets/milroy/</code></a>.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Solution: Richard Bean, via S. Tomokiyo, Cryptiana; Milroy&rsquo;s copy as transcribed in a Jasper County Library lesson plan</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="greenhow1861.html" rel="prev">&larr; Greenhow mourning-paper letter 1861 1861</a><a href="johnston1863.html" rel="next">Johnston to Seddon 1863 1863 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="solve-replay.js?v=20261027c" defer></script>
+<script src="site.js?v=20261027c"></script>
+</body>
+</html>

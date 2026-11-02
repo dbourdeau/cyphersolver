@@ -1,5 +1,7 @@
 # Ludwik Wąsowicz to Aleksander Michał Lubomirski, 1662-1663 (catalogue 439)
 
+Status: read (Brice Dudout, 27 Oct 2026; seven letters, cipher passages counted in number groups, not words: about 95% of the groups or more in each letter, R7504 100%, R7510 about 98.7%; certain, probable, restored and unresolved groups not counted separately (marked in reading.md); Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663
 

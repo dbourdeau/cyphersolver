@@ -86,3 +86,7 @@ Guiana studies) was not searched for a printed decipherment.
   Mar 1759 duplicata (C14 24 F° 167, 170), and ask for MAR/G/178 at Pierrefitte. Then transcribe, test the 1761
   Martinique key and the 1765 form, use clear-text and COL B cribs, and only then a ciphertext-only attack with a
   French model from `lang/` and a same-length control.
+
+## C14 25 fol. 36 (10 June 1761) read, Brice Dudout (28 Oct 2026)
+
+The C14 volumes can be viewed on IREL at volume level. In C14 24 the 1757-59 cipher passages are glossed between the lines (or duplicates of glossed copies); from them the Guiana code (about 500 numbers) was rebuilt, frozen and validated on a held-out glossed letter of 10 June 1761. The letter of the same day 'entièrement chiffrée et non traduite' (fol. 36) is read: Des Essarts's plan to clothe the garrison through Rotterdam and Surinam, and a breach of twelve toises in the royal bastion. See `dudout/README.md`.

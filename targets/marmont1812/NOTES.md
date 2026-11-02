@@ -1,5 +1,7 @@
 # Marmont to Jourdan, 1812 (catalogue 751), with Jourdan to Soult, 28 May 1812, and Jardet to Marmont (catalogue 724)
 
+Status: read in part (Brice Dudout, 28 Oct 2026; N.34, Jourdan to Soult, read: 267 of 267 cipher numbers read in their sense, 250 certain, 9 probable, 8 restored from the sense, 0 unresolved; N.73, Marmont to Jourdan, read in part: about 150 of 176 numbers (about 85%); counted in numbers, not words; Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#jourdan-1812
 

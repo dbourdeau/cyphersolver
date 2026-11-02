@@ -1,5 +1,10 @@
 {
  "portrait": {
+  "milroy": "The senders (Cox, Bascom) are minor officers named only in the telegram text and no trustworthy public-domain portrait was sought for a check-only page (decided 31 Oct 2026).",
+  "feynman": "Not a letter between people: two puzzle ciphers attributed to Feynman with no addressee, so no sender or recipient to portray (decided 31 Oct 2026).",
+  "asang1662": "Anonymous letter: neither sender nor recipient is named (the recipient is addressed only as MM Pan) and the place of writing is not stated, so there is no person to portray.",
+  "tokyo1932": "No single correspondent: about 850 intercepted messages between US Navy and State Department posts in China and Japan (Navy commanders, Consul General Cunningham, Minister Johnson, Ambassador Grew and others) and Washington; the copies are Japanese Navy intelligence files, so there is no principal sender or recipient to portray (decided 30 Oct 2026).",
+  "moscowmeteo1940": "Not a letter between named people: the sender is the Japanese Army Meteorological Department (an office) and the recipients are four successive War Ministers and Vice-Ministers of War; the cipher is Soviet weather broadcasts with no named correspondents (decided 30 Oct 2026).",
   "puebla1506": "Rodrigo González de Puebla (Wikidata Q2161285) and Miguel Pérez de Almazán (Q15816415): no P18 image; the en/de/sv Wikipedia articles on Puebla and the en/es articles on Almazán have no portrait (the es lead image for Almazán is his coat of arms at Maella); Commons search for both names finds no portrait (searched 27 Oct 2026).",
   "erbach1653": "Sender Georg Ernst zu Erbach (1629-1669): no Wikipedia article in en/de, no Wikidata item with an image, no Commons file or category (searched 27 Oct 2026); recipient Ludwig VI shown.",
   "senisteros1605": "Juan Gara de Senisteros and Juan de la Peña are minor Spanish churchmen with no Wikipedia article, Wikidata image or Commons category (searched 23 Oct 2026).",
@@ -13,6 +18,7 @@
   "vanreede1793": "Van Reede has no trustworthy portrait on Commons (none was found for the 1787 page either), and the recipient is an office, the Secret Committee of the States General.",
   "vico1398": "Neither Fr. Pedro de Vico nor Guillem Carbonell, canon of Barcelona, has a trustworthy portrait on Wikimedia Commons or Wikidata.",
   "santacruz1399": "Fr. P. de Santa Cruz is identified only by name in Puig's print; the recipient Francesc Climent has no trustworthy portrait on Commons (Wikidata Q68866337 has no image).",
+  "biglia1565": "Melchiorre Biglia has no portrait on Commons (no Wikipedia article in en, es or it); the recipient of the cipher letter is not named (a cardinal of the Curia, V.S.).",
   "jafet1400": "P. Jafet is identified only by name in Puig's note; the recipient Francesc Climent has no trustworthy portrait on Commons (Wikidata Q68866337 has no image).",
   "comuel1415": "Pedro Comuel has no portrait on Commons or Wikidata; the recipient Francesc Climent has none either (Wikidata Q68866337 has no image).",
   "comuel1416": "Pedro Comuel has no portrait on Commons or Wikidata; the recipient Francesc Climent has none either (Wikidata Q68866337 has no image).",
@@ -108,9 +114,13 @@
   "mountflorence1801": "Sender James Cole Mountflorence has no portrait on Wikidata (Q6131556, no P18), Wikipedia or Commons (searched 26 Oct 2026; the Commons hits are John Cole, Baron Mountflorence, another man); recipient Madison shown.",
   "jefferson1787": "Recipient Thomas Barclay (1728-1793), American consul general in France: no portrait on Wikimedia Commons, Wikidata Q7787374 has no image, no Wikipedia lead image (searched 27 Oct 2026); sender Jefferson shown.",
   "balfour1781": "Sender Nisbet Balfour (1743-1823): Wikipedia (en) has no lead image, Wikidata Q7040188 has no P18, no Commons file or category of him (searched 27 Oct 2026); recipient Cornwallis shown.",
+  "bell1900": "Alexander Graham Bell and Mabel Hubbard Bell are both named people, but Wikimedia (commons, wikipedia, wikidata, upload) was unreachable from the session on 29 Oct 2026 (network policy), so no public-domain portrait could be checked or cropped. Add both with docs/_add_portrait.py when Commons answers.",
+  "rubio1913": "Sender General Guillermo Rubio Navarrete (Wikidata Q5888905) has no image on Wikidata, the es.wikipedia article or Wikimedia Commons (searched 30 Oct 2026); the recipient is the Minister of War and Navy as an office, not named in the three telegrams.",
   "joao1642": "Recipient Vasco Luís da Gama, 1st marquês de Nisa: Wikidata Q94820042 has no image, pt.wikipedia's lead image is his coat of arms (CC BY-SA), no Commons category or portrait file (searched 27 Oct 2026); sender João IV shown."
  },
  "reveal": {
+  "milroy": "The decipherment is a word route transposition solved by another author; the project holds no grid-level decode of Milroy's copy, only two spot-checked runs (31 Oct 2026).",
+  "tokyo1932": "No cipher groups survive in the file (only the Japanese recovered clear text), so no passage decodes sign by sign.",
   "smallwood1777": "Not a cipher: the five marks are blanks over erased words, so no passage decodes sign by sign.",
   "reede1796": "Not solved: no passage decodes sign by sign (book code with the book unknown; the later list is not rebuilt).",
   "devil1539": "Not a cipher: the characters are a pictorial omen (tridents), so no passage decodes sign by sign.",
@@ -225,9 +235,15 @@
   "garcilaso1498": "Not deciphered: no key and no sign value is known, so no passage can be decoded sign by sign.",
   "ferdinand1634": "No ciphertext in hand: no image of SOA Plzeň, RA Trauttmansdorffů kart. 6, inv. č. 68 is online or in print, so no passage can be replayed sign by sign.",
   "manuel1910": "No passage can be deciphered sign by sign: no code group of the three telegrams has a value (no decode, no codebook; Sabugosa's code ruled out).",
-  "dorabella": "Not solved: no passage decodes sign by sign, so there is no reading to replay."
+  "dorabella": "Not solved: no passage decodes sign by sign, so there is no reading to replay.",
+  "stockholm1918": "Unread: no passage can be decoded sign by sign; only the telegram heads are decoded.",
+  "ludendorff1918": "Unread: no group has a value, so no passage can be decoded."
  },
  "snip": {
+  "milroy": "No image of the telegram was used: the text is a transcription of Milroy's copy in a library lesson plan and no scan was obtained (31 Oct 2026).",
+  "feynman": "No image exists in the project: the ciphertexts are strings copied into verify.py from a published solution (31 Oct 2026).",
+  "tokyo1932": "The only images are the JACAR scans (Ref. C05022467800 to C05022469300, National Institute for Defense Studies), which JACAR marks all rights reserved; no redistribution licence, so no crop is published. They also hold no cipher groups: only typed English clear text recovered by the Japanese Navy (checked 30 Oct 2026).",
+  "moscowmeteo1940": "The only images are the JACAR scans of the reports (Ref. C01004558500 ... C01004818600, National Institute for Defense Studies), marked all rights reserved by JACAR; no redistribution licence, so no crop is published (checked 30 Oct 2026). The tables and the worked example are transcribed in targets/moscowmeteo1940/.",
   "puebla1506": "Archivo General de Simancas, Patronato Real leg. 54 doc. 78 is online on PARES, but PARES answered HTTP 429 to every request on 27 Oct 2026. Add the crop of ll. 18-26 when it answers (recipe in targets/puebla1506/NOTES.md).",
   "smallwood1777": "No image exists to crop: the signed original is privately owned (Joseph Rubinfine, 1994) and unpublished; the Library of Congress Sprague transcript was behind a bot check. The page quotes the text as printed.",
   "saintluc1586b": "No crop of f. 260 or f. 245 in the repository yet: Brackx worked from the Gallica IIIF images (btv1b9061879d, canvases 253-254, 268-269), which were not committed; a crop is to be cut when the labels are split on the image.",
@@ -236,6 +252,9 @@
   "r9586": "Archivio di Stato di Napoli notice on DECODE R9586/R9588: not in the public domain, publishing only with permission; no crop until permission is obtained",
   "vico1398": "No image exists: the ACB original (Climent's Schism papers) is not digitised and Puig did not print the line; his only cipher facsimile (p. 475) is of Benedict XIII's letter.",
   "santacruz1399": "No image exists: the ACB original is not digitised; Puig's only cipher facsimile (p. 475) is of Benedict XIII's letter of 22 June 1400, not this one.",
+  "biglia1565": "The only images are the Università Cattolica digital library scans of Ambrosiana Trotti 22: no reuse licence, the manifest is marked No Downloadable, and no published viewer route for a small credited crop was found on 30 Oct 2026; no image is reproduced.",
+  "genes1643": "The scan is PARES 3555178 image 1 (AGS EST,LEG,3598,44). PARES answered HTTP 429 (IP-wide rate limit) to every request on 30 Oct 2026, so no crop could be cut; add one when PARES answers again.",
+  "santacruz1630": "The scans are PARES 12877198 images 32-38 (AHNOB SANTA CRUZ,C.50,D.213). PARES answered HTTP 429 (IP-wide rate limit) to every request on 30 Oct 2026, so no crop could be cut; add one when PARES answers again.",
   "jafet1400": "No image exists: the ACB original is not digitised; Puig's only cipher facsimile (p. 475) is of Benedict XIII's letter of 22 June 1400, not this one.",
   "exea1408": "No image exists: the ACB original is not digitised; Puig's only cipher facsimile (p. 475) is of Benedict XIII's letter of 22 June 1400, not this one.",
   "comuel1415": "No image exists: the ACB original is not digitised; Puig's only cipher facsimile (p. 475) is of Benedict XIII's letter of 22 June 1400, not this one.",
@@ -292,7 +311,9 @@
   "lopehurtado1520": "AGS Patronato Real, PTR,LEG,2,36,8 is online on PARES (12988891), but PARES answered HTTP 429 to all 11 requests made between 20:15 and 20:35 (CDT) on 27 Oct 2026. Add a crop of f. 1r ll. 1-4 (or f. 1v ll. 18-24, the reveal passage) when it answers; the page has a placeholder comment <!-- figure:f1r --> where the figure goes.",
   "ferducci1532": "Österreichisches Staatsarchiv, HHStA StAbt Türkei I 2-2-19 is online in the AIS (ID 6198178), but the ÖStA fee schedule (Entgelte, 9 July 2026, section 2) charges 30 euros per original, a full citation and a specimen copy for any publication of its reproductions, the web included, and the images carry no open licence (Brice Dudout's write-up shows none either). The page lists the eight groups in a table instead.",
   "huyson1547": "No crop of HHStA Türkei I 7-2-18: the Österreichisches Staatsarchiv requires notice and a publication fee before reproductions are published (Scannerordnung; schedule of fees), and the AIS record (ID 6567149) gives no reuse licence; as for r1212 and warsaw, no crop until permission is obtained. The work used the archive's own AIS images; the page shows the signs typed from the transcription (cipherstrip and reveal).",
-  "wasowicz1662": "No image can be reproduced: the DECODE images of AKPot 3227 (R7501-R7511) are restricted and were lent to Brice Dudout for study only. Whether the Archiwum Narodowe w Krakowie has public scans of AKPot 3227 (fonds 29/639) on szukajwarchiwach.gov.pl could not be checked on 27 Oct 2026: the portal answers automated requests with an Imperva bot check, which was not passed, and a web search found no unit page for the file. Check by hand; if public scans exist, a credited crop is allowed."
+  "wasowicz1662": "No image can be reproduced: the DECODE images of AKPot 3227 (R7501-R7511) are restricted and were lent to Brice Dudout for study only. Whether the Archiwum Narodowe w Krakowie has public scans of AKPot 3227 (fonds 29/639) on szukajwarchiwach.gov.pl could not be checked on 27 Oct 2026: the portal answers automated requests with an Imperva bot check, which was not passed, and a web search found no unit page for the file. Check by hand; if public scans exist, a credited crop is allowed.",
+  "champigny1744": "Archives nationales d'outre-mer, COL C8 A 56 fols. 57-57v (IREL images FRANOM23_C8A_056_0103-0104): the ANOM record page answers scripts with a proof-of-work bot check (Anubis), the contributor notes that the images carry no reuse licence, and no copy was fetched; the page shows the cipher as a strip from the transcription (30 Oct 2026).",
+  "ferdinand1473": "Biblioteca Nacional de España, MSS/20211/64 and /73 (BNE Digital bdh0000186643, bdh0000186628) are online, but BNE Digital answered HTTP 403 to every scripted request on 30 Oct 2026 and Claude in Chrome was not connected. Add the crop of /64 ll. 8-10 (or the clear paragraph of /73 beside its cipher) when the images can be fetched; the images are CC BY 4.0."
  },
  "atlas": {
   "smallwood1777": "Sent from James Mechlans Tavern, Chester County; Washington's exact position on 19 Sept 1777 (moving between Yellow Springs and the Schuylkill) is not stated.",

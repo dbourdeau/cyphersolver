@@ -76,3 +76,7 @@ Davis had no cypher (12 Jan); tells Russell the President has no instructions (1
 
 No published decipherment found (web searches 29 Oct 2026; no hit in the repository, DECODE or Cryptoole by
 `known.py`). The telegrams were deciphered at Sheridan's headquarters at the time; those copies were not looked for.
+
+## Dudout corrections, 29 Oct 2026
+- For the seven open arbitraries of telegram 29: Davis's dispatch to Grant of 12 Jan 1874 (forwarded by Augur) is probably printed in The Papers of Ulysses S. Grant vol. 25 (1874), a crib for scatter / faint / table / novel / fussy. Not checked (the Mississippi State PDF refused a script).
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

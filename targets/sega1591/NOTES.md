@@ -79,3 +79,7 @@ writes single consonants, *inuiato*, *efeto*, *fose*, *pasi*). Kept read; it is 
 ## George Lasry's report PDF (24 Oct 2026)
 
 Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.971 (v10_relabel.measure), deciphered passages 1.0 (bare ? counted as unread). His status: 1/2 pages transcribed; Deciphered. Outcome: read.
+
+## Dudout corrections, 29 Oct 2026
+- A contemporary decipherment of Sega's letter of 9 Jan 1591 exists in AAV Segr. Stato Francia 32 (DECODE R5613, view 4, headed 'Decifrato'); the profile's 'plaintext: none known' needs revising. The legation key is Meister 1906 key no. 65; checked on R5621 f. 230 (decifrato of 21 Dec 1590) against ff. 228v, 231: 268/287 letters (0.93). Related Sega 1590 letters: R5612 (26 Nov 1590, 82/84 words), R5616 f. 71r-v (16 Jan 1591, 52/52 words) read with key 65, and R5618 (2 Jul 1591) in another system. Per his email, R5615 (duplicate, early Jan 1591) reads 95.1% on its first part only.
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

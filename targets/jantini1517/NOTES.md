@@ -112,3 +112,11 @@ sibling, the cipher is not readable from the material available.
   A second session's first attempt on p. 1 (`c1126_p1.txt`, 581 columns; letter-per-column anneals: nothing).
 - 2026-09-21/22: full transcription `t1126.txt`, `t1127.txt` (agent; `seg/signs.md`); Caprile pairings; syllabary
   model; control-validated anneals; closed attempted, open.
+
+## Key found; contemporary plaintext copy identified on pp. 3-4 (Brice Dudout, 28 Oct 2026)
+
+R1126 is in the Caprile 1519 family: our Caprile key (C05a), applied unchanged, ranks 1/201 against shuffled keys on a portion
+designated in advance. Pages 3-4 of R1126 are a period clear copy of the ciphered passage (p. 3 opens with the cipher's first
+words); a key frozen before that copy was opened aligns with it at 0.765 / 0.667 (controls at most 0.35). The text is therefore not new; the contribution is the key and the identification of the copy. Reading of pp. 1-2:
+95.3% of words by sense (290 sure; probable and restored words rest on the copy). See `dudout/README.md`.
+

@@ -1,5 +1,7 @@
 # Philip IV to Cardinal Albornoz, Madrid, 24 July 1648 (catalogue 747)
 
+Status: read (Brice Dudout, 28 Oct 2026; 353 of 359 cipher groups read, about 97% certain, about 1% probable, 6 unresolved (4 of them code signs); restored groups not counted separately; counted in groups, not words; Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#albornoz-1648
 

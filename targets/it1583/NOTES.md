@@ -2,6 +2,11 @@
 
 Status: in progress. f. 68 read; f. 70 decoded, not read (reading audit, 22 Oct 2026).
 
+**29 Oct 2026: the Duke's own cipher slips of Nov-Dec 1446 in this volume (ff. 110-158) are `../visconti1446/`**, read
+with his key (DECODE R5323, second copy R1857 image 17), not the f. 68/70 alphabet. Correction to the ark noted in
+`bnf.htm`: btv1b10033686w is ital. 1587; ital. 1583 is not on Gallica (BnF Archives et manuscrits gives microfilm
+MF 16151 only). 19th-c. copies of several of its letters are in ital. 1597 (Gallica btv1b10037396j).
+
 **23 Oct 2026, re-read (REREAD_BRIEF, batch b29)**: f. 70 still *decoded, not read*. DECODE R7899 fetched (P1 the slip;
 P2 an address leaf to Francesco Sforza, not f. 70's); every sign re-checked against Lasry's overlay, no label changed;
 **#30 adopted as a null** (8 boundary occurrences in both letters; not written into `lasry2026/ctts/key.txt`, whose

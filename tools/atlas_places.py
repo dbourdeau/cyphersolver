@@ -16,7 +16,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
     'San Antonio': [29.424, -98.494], 'Austin': [30.267, -97.743], 'Chicago': [41.878, -87.630],  # augur1874
-    'Gualdo Tadino': [43.230, 12.784], 'Rimini': [44.060, 12.566], 'Pesaro': [43.910, 12.913],  # barbavara1447 (Sforza at Pesaro, 1447)
+    'Gualdo Tadino': [43.230, 12.784], 'Pavia': [45.185, 9.155], 'Rimini': [44.060, 12.566], 'Pesaro': [43.910, 12.913],  # barbavara1447 (Sforza at Pesaro, 1447)
     'Cusago': [45.448, 9.035], 'Abbiategrasso': [45.398, 8.918],  # visconti1446, visconti1447 (the Duke's residences, 1446-47)
     'Salamanca': [40.965, -5.664], 'Tordesillas': [41.500, -5.000], 'Worms': [49.632, 8.359], 'Bender': [46.83, 29.48], 'Estremoz': [38.844, -7.586],  # Dudout PRs, Oct 2026
     'Monte Estoril': [38.705, -9.397], 'Oran': [35.697, -0.633], 'Bussaco': [40.3775, -8.3692], 'Sintra': [38.7876, -9.3906],  # Portuguese royal telegrams 1903-10

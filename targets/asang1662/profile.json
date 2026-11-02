@@ -1,0 +1,206 @@
+{
+ "schema_version": 1,
+ "target": "asang1662",
+ "title": "Sanguszko archive 1662 (catalogue 443): anonymous Polish letter in a composite-group simple substitution, broken from the ciphertext and read",
+ "documents": [
+  {
+   "id": "asang-134-8",
+   "read": "read",
+   "shelfmark": "Kraków, Archiwum Narodowe, Archiwum Sanguszków, teka 134/8 (DECODE R7513)",
+   "date": "31 July 1662",
+   "year": 1662,
+   "country": "Poland",
+   "route": "unknown",
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   },
+   "language": "Polish",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment and no key in the record."
+   },
+   "length": {
+    "tokens": 320,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R7513 (2 images, full resolution)",
+    "image_quality": "good",
+    "notes": "One group partly under an ink blot (front l. 7); two groups occur once on the reverse only (O2, W)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution in which each letter is written as a composite group of three or four strokes (23 group shapes)",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 23,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue 443 open; research/polish_archives: no key or decryption file on the record; web search on the plaintext phrases (29 Oct 2026): nothing.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "access",
+   "what": "DECODE R7513 images (level-2 account) studied at full resolution; atlas of the 23 group shapes frozen before computation.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Front (254 groups) solved by injective annealing on a Polish letter model (Latin, French, German, Italian score lower); g and k corrected from the reading of the front; key frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out reverse (66 groups), one measurement: coverage 0.970; letters in lexicon words 0.864 (segmentation fixed in advance); 200 permuted keys at most 0.576, 200 shuffled texts at most 0.697.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Whole letter read; two single-occurrence groups of the reverse valued from the sense (u, f).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 320 tokens, 24 types, pl-1790 order 4: reading -2.575 per letter; random keys -5.447 (z 10.1); key annealed onto shuffled ciphertext best -3.785 (mean -3.887, z 13.3); annealer on the real text -2.865. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-30",
+   "model": "pl-1790",
+   "file": "validation.tsv",
+   "tokens": 320,
+   "types": 24,
+   "tokens_per_type": 13.33,
+   "score": -2.575,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.447,
+     "sd": 0.285,
+     "max": -4.725,
+     "z": 10.1,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.887,
+     "sd": 0.099,
+     "max": -3.785,
+     "z": 13.3,
+     "p": 0.1429
+    }
+   },
+   "power": -2.865,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.575; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.865"
+  },
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Simple substitution broken from the ciphertext of the front by annealing, validated on the held-out reverse against 200 + 200 controls.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "71/71 words read in their sense; 67 certain (94.4%), 3 probable (4.2%), 1 restored (1.4%), 0 unresolved.",
+  "first_break": true,
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "ciphertext-only break of the front, validation on the held-out reverse, full reading, English translation",
+    "date": "2026-10-29",
+    "source": "email from Brice Dudout to Daniel Bourdeau, 29 Oct 2026; merged from the Dudout bundle (dudout/bundle-ne-colonies), 30 Oct 2026"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "asang-134-8",
+    "label": "Anonymous letter, 31 July 1662, front and reverse",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "pl",
+    "state": "read",
+    "summary": "News from Riga and Hamburg that the Swedes are arming and have ordered prayers and a fast for the third time, a sure sign of war; advice not to leave the side towards the sea bare, since it is far from Lwów to Gdańsk; the Elector will surely come in August.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Sonnet 5.5",
+     "date": "2026-10-30",
+     "note": "Read as sentences from Brice Dudout's reading.md and translation.md (not re-deciphered, not re-checked against the images): three coherent Polish sentences in the spelling of the cipher, with one probable word and one restored letter; the English translation follows the Polish."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}

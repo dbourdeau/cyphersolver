@@ -116,3 +116,7 @@ cipher.
 - `ct.txt` transcription; `solve.py`, `control.py`, `run_*.log` solver runs
 - `lit/parisi2004.txt` (the model corpus); the Parisi and Villanueva Morte PDFs and the Tomokiyo pages are kept locally, git-ignored
 - `img/`, `key/` DECODE images (git-ignored; not public domain)
+
+## Dudout corrections, 29 Oct 2026
+- ct.txt checked sign by sign on the full-resolution R10180 P4/P5 images: about 310 of 315 tokens agree. Suggested: H0 token 28 g^n is the same sign as L6 y^n (so y^n); L1 has a superscript 'oto' over S8 b (not noted); L5 ends with an extra division mark after BB; L7 has a three-dot mark between B and BB; L2 opening '? i' is more likely '- TA'. No key found: the Gran Capitan keys cover only 45% / 37% of tokens by shape.
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

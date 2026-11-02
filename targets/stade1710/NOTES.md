@@ -1,5 +1,7 @@
 # Charles XII to the Council of the Realm and to his envoys, Bender, 26 April 1710 (catalogue 599)
 
+Status: read (Brice Dudout, 27 Oct 2026; 639 of 640 cipher groups read in their sense, 628 certain (by difference), 6 probable, 5 clerk's slips read from the sense, 1 unresolved (group 212); counted in groups, not words; Daniel Bourdeau's 95% rule).
+
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#stade-1710
 

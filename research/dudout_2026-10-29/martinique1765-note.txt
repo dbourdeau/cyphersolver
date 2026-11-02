@@ -1,0 +1,32 @@
+# Note for Daniel Bourdeau — the 1765 Martinique key (ANOM COL C8 A 67 f. 178) (draft, not sent)
+
+We transcribed the d'Ennery key independently from both tables: the deciphering table (image 0282, numbers 1–800)
+and the enciphering table (image 0280, printed values with hand-written numbers, 29 single letters in the header,
+48 hand-written place names). Files: martinique-1765/transcription/*.tsv (frozen, SHA-256 in SHA256.txt).
+
+1. **Same document as your key1765_ennery.tsv**, not a sibling: same folio, same images. Agreement with your table:
+   770/800 identical after normalisation, 16 spelling variants, 4 entries shortened in your file (opération(s),
+   nécessai[re, ité], septentrion[al], la Pointe de[s Nègres]) — **98.75 % agreement on the value**.
+2. **The two tables check each other**: 800 entries in 0280, 800 distinct numbers, none missing, none doubled; values
+   agree number by number except 28 (printed "capitu", written "capita" in 0282) and spelling (incessamment,
+   négociant, ustenciles). So every disputed reading in 0282 can be settled from 0280.
+3. **Suggested corrections to key1765_ennery.tsv** (each confirmed in 0280):
+   - 413 = **leur, s** (not "tour, s"; tour is 653)
+   - 535 = **ba** (not "ou"; ou is 388; 0280 prints "Ba … 535")
+   - 89 = **xu** (not "scu"; 0280: "xu … 89")
+   - 235 = **ol** (not "ot"; ot is 574)
+   - 349 = **i** (not "l"; header of 0280: J = 169, 349; l is 474)
+   - 679 = **e** (not "c"; header: E = 468, 679; c is 466)
+   - 652 = **préten** (not "prétend")
+   - 786 = **l'habitation Larcher** (initial L, same letter-form as in "Les"); 565 l'habitation la Tapy / Lapy and
+     159 les Pitons / Sitons / Litons remain uncertain (Les Pitons du Carbet is the expected place).
+   - Header letters (A 731/681, E 468/679, J 169/349, O 665/371, V 263/177 …) give the homophones of single letters.
+   - Small note: mercier1761 NOTES.md says "de = 428"; your TSV correctly has 438 = de (428 = rançon).
+4. **The key is the one actually used in 1770**: applied to d'Ennery's letter to the duc de Praslin of 16 Nov 1770
+   (ANOM C8 A 69 f. 354, image 0575, which has a contemporary interlinear decipherment), it gives
+   "je suis très foible en hommes à la Martinique, Périgord est réduit à deux cent cinquante hommes sous les armes,
+   Bouillon à trois cent trente …": 0.924 character / 0.823 word agreement with the gloss, against max 0.322 / 0.210
+   for 200 shuffled tables. The encipherer twice wrote 535 (ba) before 731 (à) where the gloss has only "à"
+   ("Médoc [535] à six cent", "l'artillerie [535] à quatre-vingts"): a slip, or a private use for "est".
+5. No unglossed d'Ennery letter has been found online yet (C8 A 69 ff. 354 and 357 are glossed; C8 A 67 f. 273 is
+   clear). If you know of one, the key reads it directly.

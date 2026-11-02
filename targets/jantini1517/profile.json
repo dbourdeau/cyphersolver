@@ -119,7 +119,11 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["plaintext matching", "contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
    "what": "Sender identified as Benedetto Fantini (DECODE misreads 'Jantini'), Ferrarese agent in Ippolito d'Este's household; only nos. 5 and 6 contain cipher, and no decipherment is in the file.",
    "result": "worked"
   },
@@ -131,13 +135,20 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
    "what": "Homophonic anneal (it-cinquecento 4-grams, unigram penalty) over p. 1 columns, with the frequent 7g/7y signs kept, merged, or treated as nulls: 6 restarts x 60k moves each.",
    "result": "failed"
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["repeat/pattern analysis"],
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
    "what": "Statistics: the three-column run 7 / g / m-with-b recurs 14 times and 7g or 7y occurs 45 times in 581 columns, too often for one letter per column; 7g and 7y behave like word signs. The unit of the cipher is unresolved.",
    "result": "partial"
   },
@@ -161,7 +172,10 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "Anneal on the adjudicated text under seven unit models (per-unit letter, 7-9 merged, bare 7 null, upper only, brackets as word codes, CV syllabary, Caprile/che pins); seeds disagree, no Italian.",
    "result": "failed"
   },
@@ -193,10 +207,35 @@
  "outcome": {
   "method": "not solved",
   "method_basis": "Both cipher pages were transcribed three times and annealed under seven unit models; controls show a word-code cipher of this shape cannot be broken ciphertext-only, and no key or decipherment was found in ASMo, Vestigia or print.",
-  "contribution": ["transcription", "sender or date identified"],
+  "contribution": [
+   "transcription",
+   "sender or date identified"
+  ],
   "class": "not read",
   "fraction_read": 0,
   "verification": [],
-  "notes": "Attempted, closed unread for lack of key material. Both pages transcribed three ways (~2-5% residual error). The bracket signs are word codes (as in Caprile 1519), leaving letter runs of about 5 signs; a matched control recovers 7%. Needs a key or crib: the Caprile 1519 key, or an ASMo decipherment."
+  "notes": "Attempted, closed unread for lack of key material. Both pages transcribed three ways (~2-5% residual error). The bracket signs are word codes (as in Caprile 1519), leaving letter runs of about 5 signs; a matched control recovers 7%. Needs a key or crib: the Caprile 1519 key, or an ASMo decipherment.",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "date": "2026-10-28",
+    "note": "Key found (Caprile 1519 family), blind-validated against the contemporary plaintext copy of the ciphered passage, identified on pp. 3-4 of R1126 (text not new); R1126 pp. 1-2 read 95.3% of words by sense (dudout/)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R1126",
+    "label": "R1126 pp. 1-2, ciphered passage (Buda, 1518), Brice Dudout",
+    "transcription": "dudout/R1126_transcription_v2.txt",
+    "decryption": "dudout/R1126_decryption.txt",
+    "reading": "dudout/R1126_reading.md",
+    "translation": "dudout/R1126_translation.md",
+    "language": "it",
+    "state": "read",
+    "summary": "The Hungarian diet of 1518: eight lords appointed to govern for the young King, the Cardinal of Esztergom and the palatine keeping power, a one-ducat hearth tax refused by the counties, and Fantini opposing raids against the Turks."
+   }
+  ],
+  "provenance": "mixed"
  }
 }

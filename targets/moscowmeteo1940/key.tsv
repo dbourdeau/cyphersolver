@@ -1,0 +1,18 @@
+# Soviet weather-cipher keys recovered by the Japanese Army Meteorological Department (陸軍氣象部), 1938-1940, as transcribed
+# from its reports (JACAR refs in the last column). Large Moscow tables of June-October 1940: tables_1940.py,
+# tables_oct1940.py, tables_jun1940.tsv, tables_oct1940.tsv, cycles_109.tsv.
+in_force_from	area	system	key	jacar
+1938-08-11 10:00	Far East	groups 1<->3 and 2<->5 exchanged; add without carrying	+4 on the station index, +3 on every other figure; group 7 = 00000	C01004558500
+1938-09-25 09:00	Far East (Irkutsk, Vladivostok, Petropavlovsk, Aleksandrovsk, Khabarovsk)	same exchange; additive per group	34563 34563 34563 34563 56789 34563	C01004559200
+1938-10-12 04:00	Far East, Irkutsk	same	75647 75647 75647 75647 43867 75647	C04120597300
+1938-10-12 04:00	Far East, other stations	same	75647 75647 75647 75647 86743 75647	C04120597300
+1938-11-12 00:00	Far East, five stations	same	13524 13524 13524 13524 34235 13524 (5th additive read 34235 by Brice Dudout on the image, first transcribed 34135)	C01004559500
+1940-02-15	Far East (Khabarovsk, Petropavlovsk, Yakutsk, Tiksi, Chita, Nagaevo, Aleksandrovsk)	11 symbols; group 1 substituted, then used as running key for the later groups; 9<->X; groups 1<->3	group 1, cipher 0123456789X -> clear 67349X25018; subtract 5 where the clear figure of group 1 is X	C01004816800
+(reported 1940-02-29)	Moscow, type 17040	one indicator figure per group substituted; it fixes the subtractor of the other four	substitution 0123456789X -> 5238X071964; subtractors 1 2 6 5 4 5 7 3 2 6 3	C01004816500
+1940-04-29	Moscow	same, new subtractors	2 5 2 6 8 3 [8] 9 6 3 9 (cell for cipher 6 badly stamped: 8 probable, 6 possible, Brice Dudout)	C01004816400
+1940-05-17 23:10	Moscow, type 05104	same	4 5 7 7 4 1 2 4 9 2 7	C01004816900
+1940-05-24 23:10	Moscow, type 05080	same	7 2 9 6 9 7 5 3 4 8 6	C01004816700
+1940-06-05 23:10	Moscow, type 05188	same	9 5 8 7 2 9 8 4 9 3 4	C01004832500
+1940-06-10	Moscow	key group aaabb in clear; 7<->X; subtract a 109-figure cycle from the start given by aaabb	tables 1 (odd days) and 2 (even days)	C01004832600
+1940-06-26	Moscow	same	tables 3 (odd days) and 4 (even days)	C01004832600
+1940-10-12 16:00	Moscow	same	October grids (odd / even days)	C01004818600

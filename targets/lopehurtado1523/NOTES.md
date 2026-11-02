@@ -103,3 +103,7 @@ The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Dig
 - [x] print: Bergenroth CSP Spain ii pp. 547-709 grepped by Salazar folio: nos. 548 and 617, the other six not calendared
 - [x] key-rebuild: key_1524.tsv (105 values, 65 confirmed) plus 1523/1524 additions from exact-count runs
 - [x] retry: 21 Sept merged key and open-code pass (`retry_2026-09-21.md`); 22 Oct sign-by-sign re-read on the images (b07): R9866, R9868, R9869 read; CSP 548 used for R9667 run C only
+
+## Dudout corrections, 29 Oct 2026
+- Pacheco y de Leyva, La politica espanola en Italia, vol. I (1919), no. 120 prints the Abbot of Najera's letter of 2 May 1523 (RAH Salazar A-28 ff. 1-2, 'claro y cifra') deciphered: this is the 'Claro' leaf noted beside R9667. The same edition prints about 33 letters of 1522 from BNE Sigt. mod. 18.678 (nos. 49-105); catalogue 1274 is closed as read.
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

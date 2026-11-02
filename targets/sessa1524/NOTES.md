@@ -199,3 +199,7 @@ deciphered occurrence anywhere), and R9898's bleed-through pages, which do not r
   Look-alike letters are about 95 of roughly 7,900 reading letters (1.2%), under the brief's 3%. The sentences hold
   outside f. 83r ll. 19-25 (already noted). Kept read, grade B, at the bar; the sense-only values stay flagged for a
   check against the triplicate's contemporary deciphering (Gayangos MS, CSP 636) or Kolosova's key if either is reached.
+
+## Dudout corrections, 29 Oct 2026
+- The period decipherment of the 14 Apr 1524 despatch (R9873) is BNE MSS/20214/52-1 ("Claro" A-D). Measured against it, our unbracketed words agree in 92.8% (1353/1458) and the [?] words in 34%. Value fixes: gul = quando (not si), hay = porque (not aunque; fum = otra), var probably como, gig = pudie-, fe = quisie-, pam = falta-, biz = yda (not venida), yer = alli (not Florencia), vol = dinero, xoc = ayuda, and others listed in his file. Same BNE volume holds four more Sessa cipher/clear pairs (52-4, -6, -10, -14) and two letters without a clear (52-7, 52-11). R9893 is a short letter of 24 Jul 1524, not 52-7; R9894 = CSP Spain ii no. 663 (29 Jul 1524), calendared with a contemporary deciphering. His extended key reads 52-7 at 94.0% of its ciphered part (under the bar).
+(Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)

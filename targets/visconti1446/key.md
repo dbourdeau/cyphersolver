@@ -12,6 +12,15 @@ against the clear text f. 16. Its right-hand word block is written cipher above 
 pp = mm, fo = di); signs not on the copy are in `texts/key_additions_A.md`. Image:
 `img/keys/R5324_IMG_R5324_I30302_P.pdf`.
 
+**A second copy of R5323: DECODE R1857 image 17** (ASMi Potenze Sovrane cart. 1592 "Cifrari", 24 key images), also
+headed "Filippo Maria Duca di Milano", found by the parallel session of 28-29 Oct 2026 and read into
+`peer/key.md`. Its sign inventory as used on the slips, with every correction found by aligning ff. 5/8 with their
+translations ff. 6/9 (96.7% / 97.8%), is `peer/working_key.md`. Corrections it adds to the table below: the c-like
+sign with a top stroke = i; S standing alone = e/et; II + 3 (or ı) = vuy; ∿ð# = Marchese di Mantova; word signs
+built on a 9 base (PER, PERCHE, NON, QUE); ft = ap; ꝛo = ir; ♀ inside words = a; 9 with a stroke = am/ad. R1857
+image 11 is the Barbavara/Arrigoni - Pusterla key (Tomokiyo's key for ital. 1584 f. 69), a sibling alphabet that
+does not read f. 5; image 19 ("Cum Duci Mediolani") is another system.
+
 Sign names are descriptive; where a sign looks like a Latin letter it is written as that letter. "barred" = a horizontal
 stroke through the sign. The copyist's shapes are given first; the slip's shapes, where calibrated, after "slip:".
 

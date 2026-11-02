@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "napoleon",
- "title": "Berthier to Napoleon, 22 December 1812 (with the unpublished letter to Marmont, 1807)",
+ "title": "King Joseph to Napoleon, December 1812 (catalogued as Berthier to Napoleon, 22 Dec 1812)",
  "documents": [
   {
    "id": "berthier1812",
@@ -9,36 +9,36 @@
    "date": "22 Dec 1812",
    "year": 1812,
    "country": "France",
-   "route": "Gumbinnen/Königsberg -> Napoleon",
+   "route": "Spain (King Joseph) -> Napoleon",
    "language": "French",
    "cleartext_in_document": "unknown",
    "plaintext": {
     "location": [
-     "printed edition"
+     "none"
     ],
-    "source": "Candidate only: Chuquet, 1812, la guerre de Russie, 3rd series (1912), Berthier's letters XIX and XXIII of 22 Dec from the same carton; no alignment made",
-    "partial": true
+    "source": "No clear copy of this letter found. Joseph's letter to the Minister of War of 23 Dec 1812 (Du Casse, Memoires et correspondance du roi Joseph, IX, 1854) covers the same matter in the same phrases; Chuquet's Berthier letters (1912) are a different text."
    },
    "length": {
-    "tokens": 326,
-    "distinct": 208,
+    "tokens": 325,
+    "distinct": 207,
     "unit": "code groups",
     "measured": true,
-    "file": "berthier_ct.txt"
+    "file": "dudout/transcription.txt"
    },
    "transcription": {
-    "by": "published",
-    "source": "Tomokiyo (cryptiana unsolved.htm, napoleon2.htm) after Vilcoq, Revue Historique de l'Armée 4 (1969)",
-    "image_quality": "no images",
-    "notes": "Opening portion only. NOTES give 325 groups and 207 distinct; measured 326/208. The two cryptiana pages disagree at 356/656."
-   }
+    "by": "llm from images",
+    "source": "Vilcoq 1969, plate after p. 24 (Persee), page 3 of the dispatch; re-read by Brice Dudout, 8 groups corrected against the online transcription",
+    "image_quality": "fair",
+    "notes": "Printed plate of the duplicate (page 3). The first 22 lines are all that is published; the rest of the letter is not."
+   },
+   "read": "read"
   }
  ],
  "system": {
   "types": [
    "code"
   ],
-  "summary": "One-part or unknown-order code of about 1200 numeric groups (2-1388), used across its whole range; 64 % hapax.",
+  "summary": "Numeric code of about 1200 groups (2-1388): the Grand Chiffre of 1812, whose deciphering table is at the SHD (B n. 30). Several numbers per frequent word (de = 13, 544, 710, 989, 1060); syllables and letters for the rest.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-4",
@@ -49,7 +49,7 @@
    "used": false
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
    "present": "unknown"
@@ -60,34 +60,40 @@
   "key_order": "unknown",
   "word_division": "unknown",
   "sibling_key": "Tomokiyo's Berthier cipher of May 1813 (et = 197, 413, 534, 821) noted, not applied.",
-  "notes": "Marmont 1807 letter not in hand (no ciphertext published), so no document entry."
+  "notes": "Marmont 1807 letter not in hand (no ciphertext published), so no document entry; it is a different cipher and has no page. Sibling letters read with the same table: marmont1812."
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unknown",
-   "where": "Archivist's note says the first copy was deciphered; Chuquet 1912 prints Berthier's 22 Dec letters in clear, unconfirmed as this text",
-   "found": "during attempt",
+   "exists": "online",
+   "where": "Ilia Chirtulov found that the Great Cipher of 1812 reads it and that the writer is King Joseph (received by S. Tomokiyo 4 Oct 2026, reported on Cryptiana 12 Oct 2026); Brice Dudout's re-reading was independent of it.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
-   "transcription"
+   "transcription",
+   "key from archive"
   ],
-  "attack": "none",
-  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "attack": "key from archive",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded. Second phase (Brice Dudout, 12 Oct 2026): chose the key, froze the table entries, re-read the plate and set the control; Claude (Anthropic) agents helped with the decoding and write-up; model versions not recorded.",
   "tools": [
-   "berthier.py (structure and compatibility statistics)"
+   "berthier.py (structure and compatibility statistics)",
+   "dudout/decode.py (table lookup)"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "unknown (Brice Dudout's agents)"
   ],
   "sessions": 1,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-15"
+  "last_date": "2026-10-12"
  },
  "solution": [
   {
    "date": "2026-09-15",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "325 groups, 207 distinct, 64 % hapax, flat occupancy over about 1200 entries: no frequency signal.",
    "result": "ruled out"
   },
@@ -108,20 +114,114 @@
    "kind": "literature search",
    "what": "Vilcoq 1969 (full ciphertext) and Napoleon's reply of 30 Dec 1812 sought online; not reachable.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Tant's ARCSI tables of Imperial great ciphers tried first: unrelated words. The Great Cipher of 1812 (SHD B n. 30, photographs by J.-F. Bouchaudy) read from the first line: 918 je, 1045 n, 1100 ait, 493 aucun, 359 nouvelles ...; the Spanish additions fit (1202 Valladolid, 1238 l'armee du nord de l'Espagne, 1388 Salamanque).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "transcription",
+   "what": "Plate re-read on Persee's high-resolution image: 8 groups differ from the online transcription, each correction makes the passage clear; the 356/656 variant settled (the plate reads 356, the sense requires 656).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "French 4-gram score of the decode -2.11 per character against -2.63 median and -2.43 best for 1,000 decodings with the table's values shuffled (0 of 1,000 reach it); model trained on Chuquet's Berthier letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Line-by-line French reading and English translation: a letter of King Joseph to the Emperor, not Berthier's; cross-checked against Joseph's letter to the Minister of War of 23 Dec 1812 (Du Casse IX).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "verification",
+   "what": "Count by the 95% rule: 233 words, 225 certain, 3 probable, 5 restored from the sense, 0 unresolved.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "The printed 325 code groups of Berthier's 22 Dec 1812 letter give no frequency signal; the probable clear text (Chuquet 1912, from AN AF/IV/1643) was located but the full ciphertext (Vilcoq 1969) could not be obtained for an alignment.",
-  "contribution": ["none"],
-  "class": "not read",
-  "fraction_read": 0,
-  "verification": [
-   "none"
+  "method": "read with known key",
+  "method_basis": "The deciphering table of the Great Cipher of 1812 (SHD B n. 30, photographs by J.-F. Bouchaudy) applied unchanged to the 325 printed groups; the decode builds French sentences, and a permutation control (0 of 1,000 shuffled tables reach its score) and the sister letter of 23 Dec 1812 confirm it.",
+  "contribution": [
+   "transcription",
+   "sender or date identified"
   ],
-  "notes": "Blocked on the full ciphertext in Vilcoq 1969; with it, a known-plaintext alignment against Chuquet becomes possible.",
+  "class": "read",
+  "fraction_read": 1.0,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "notes": "Catalogued by Tomokiyo as Berthier to Napoleon; the writer is King Joseph. Only the printed page is available; the unpublished rest needs the Archives nationales original.",
   "credits": [
-    {"who": "tomokiyo", "role": "transcription", "note": "the 325 printed code groups of Berthier's letter (from Vilcoq 1969), as given on cryptiana"}
+   {
+    "who": "tomokiyo",
+    "role": "transcription",
+    "note": "the 325 printed code groups (from Vilcoq 1969), as given on Cryptiana; he also reported Chirtulov's identification"
+   },
+   {
+    "who": "chirtulov",
+    "role": "prior solution",
+    "note": "first to find that the Great Cipher of 1812 reads it and that the writer is King Joseph (reported by Tomokiyo on Cryptiana, 12 Oct 2026)",
+    "date": "2026-10-04",
+    "source": "https://cryptiana.web.fc2.com/code/unsolved.htm",
+    "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "independent re-reading with the Great Cipher of 1812: 8 groups corrected on the plate, line-by-line reading, translation, permutation control, sister letter; emailed 29 Oct 2026 and merged from branch dudout/bundle-japan-misc",
+    "date": "2026-10-12",
+    "source": "email of 29 Oct 2026 / branch dudout/bundle-japan-misc (https://bdudout.github.io/joseph-napoleon/)",
+    "published": true
+   },
+   {
+    "who": "bouchaudy",
+    "role": "key or decipherment used",
+    "note": "photographs of the deciphering table of the Great Cipher of 1812 (SHD B n. 30), from which dudout/key_entries.tsv was read"
+   }
+  ],
+  "key": "not applicable",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "233 of 233 words of the 325 printed groups read in their sense (225 certain, 3 probable, 5 restored); the published page is page 3 of a longer letter, whose rest is not published.",
+  "first_break": false,
+  "provenance": "contributed",
+  "key_file": "dudout/key_entries.tsv",
+  "texts": [
+   {
+    "doc": "berthier1812",
+    "label": "King Joseph to Napoleon, Spain, December 1812 (the 325 printed groups, page 3 of the dispatch)",
+    "transcription": "dudout/transcription.txt",
+    "decryption": "dudout/decryption.txt",
+    "reading": "dudout/reading.md",
+    "translation": "dudout/translation.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "King Joseph, with no news from the Emperor since he left Paris, reports that his last courier was seized near Valladolid, encloses General Reille's dispatch on the Army of the North and, shaken by it, begins to propose a remedy for the concentration of forces if the Russian war continues. The letter was filed as a duplicate in Berthier's name; its text breaks off at the end of page 3.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Sonnet 5.5 (write-up check)",
+     "date": "2026-10-30",
+     "note": "reading.md and translation.md read against decryption.txt: the 22 lines build coherent French sentences with no sentence broken; the 5 restored groups are scattered and each sits in a word whose sense is fixed (reiterees, concentration, exigeat). Not checked against the plate sign by sign."
+    }
+   }
   ]
  }
 }

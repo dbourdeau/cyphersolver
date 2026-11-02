@@ -273,6 +273,15 @@
       ],
       "what": "Statistical validation (docs/_validate.py): 771 tokens, 177 types, fr-modern order 4: reading -1.971 per letter; random keys -3.593 (z 10.0); key annealed onto shuffled ciphertext best -2.258 (mean -2.282, z 15.3); annealer on the real text -2.187. Verdict: pass.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Brice Dudout (his session, 29 Oct 2026) transcribed the d'Ennery key independently from both ANOM C8 A 67 f. 178 tables (images 0282 and 0280) and found 8 values in key1765_ennery.tsv to correct, each confirmed in the enciphering table: 413 leur,s; 535 ba; 89 xu; 235 ol; 349 i; 679 e; 652 préten; 786 Larcher. Agreement with our table 770/800 identical (98.75%). Corrections applied to the TSV; not yet re-run through the reading, and not checked here against image 0280.",
+      "result": "worked"
     }
   ],
   "outcome": {

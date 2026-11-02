@@ -1,30 +1,40 @@
 # Filippo Maria Visconti to Francesco Sforza, cipher slips of Nov 1446 - Mar 1447 (BnF italien 1583, 1584)
 
-Status: read in part, written up 29 Oct 2026 (docs/visconti1446.html). Read after matching with key from external sources
-(DECODE R5323): 13,480 of 16,646 cipher signs (81.0%) over 19 slips; ten slips also have a translation or later clear
-copy filed with them; f. 110 decoded, not read (32%). f. 15 (key R5324) is targets/visconti1447/.
+Status: read in part, written up 29 Oct 2026 (docs/visconti1446.html), revised the same day after merging a parallel
+session's work. Key matched from DECODE (R5323; a second copy is R1857 image 17): 15,033 of 16,637 cipher signs (90.4%)
+over 19 slips. Sixteen slips have a decipherment of the time or a later copy (all of ital. 1584 next to the slips;
+ital. 1583 ff. 110 and 136 in BnF ital. 1597); only ff. 130, 154 and 158 are deciphered with no clear text reached.
+f. 15 (key R5324) is targets/visconti1447/.
+
+**Correction, 29 Oct 2026.** The first write-up said nine slips had no clear text. Wrong for six: ital. 1584 f. 25 is
+the contemporary decipherment of ff. 23/24, f. 73 a later copy of f. 72, f. 103 the contemporary decipherment of
+f. 102 (taken here for a "parallel letter"); f. 38, f. 84 and f. 95 are contemporary decipherments of ff. 36/37, 83 and
+94 too (only later copies had been noticed). ital. 1583 ff. 110 and 136 have 19th-c. copies in ital. 1597, made by
+deciphering the slips. Found by the parallel session's survey (`peer/slips.tsv`), checked on the images.
+The blind readings of ff. 23/24, 72, 102 agree with those clear texts on 83-88% of words (with spelling variants;
+64-73% exact; `texts/compare_clear.py`, `texts/f25_clear.md`, `f73_clear.md`, `f103_clear.md`).
 
 ## State of the reading (29 Oct 2026; read share = read tokens / non-null tokens, as measured by the workers)
 
 | slip | date | key | read | clear text filed with it | reading independent? |
 |---|---|---|---|---|---|
-| 1583 f. 110 | 1 Nov 1446 | R5323 | 32.3% (recto 39.2%, verso 15.0%; decoded, not read) | none reachable | yes |
+| 1583 f. 110 | 1 Nov 1446 | R5323 | 89.1% (recto 96.5%, verso 69.6%; parallel session's pass 2) | ital. 1597 f. 123r-v, 19th-c. copy made by decipherment | no, aligned with the copy (blind pass G: 32%) |
 | 1583 f. 130 | 25 Nov 1446 | R5323 | 88.2% (≈80% as sense) | f. 131 "Traduzione" (not reachable) | yes |
-| 1583 f. 136 | 29 Nov 1446 | R5323 | 91.5% | none | yes |
+| 1583 f. 136 | 29 Nov 1446 | R5323 | 95.7% (parallel session's pass) | ital. 1597 f. 154, 19th-c. copy made by decipherment | no (blind pass A: 91.5% by sense, 68% of words match the copy) |
 | 1583 f. 154 | 12 Dec 1446 | R5323 | 80.4% (≈70% as sense) | none reachable | yes |
 | 1583 f. 158 | 31 Dec 1446 | R5323 | 89.4% | none reachable | yes |
 | 1584 f. 5 | 10 Jan 1447 | R5323 | 96.5% | f. 6 Traduzione (contemporary): 96.5% agreement | check |
 | 1584 f. 8 | 11 Jan 1447 | R5323 | 97.8% | f. 9 Traduzione (contemporary): 96.9% | check |
 | 1584 f. 15 | 23 Jan 1447 | **R5324** | split out: `targets/visconti1447/` (one key, one entry) | | |
-| 1584 f. 24 / f. 23 | 5 Feb / dup. 24 Feb | R5323 | 95.0% / 96.7% | none | yes |
+| 1584 f. 24 / f. 23 | 5 Feb / dup. 24 Feb | R5323 | 95.0% / 96.7% | f. 25 contemporary decipherment; f. 26 later copy | yes, checked after: 84.1% / 83.2% of words |
 | 1584 f. 30 / f. 31 | 9 Feb / dup. 24 Feb | R5323 | 95.5% / 96.6% | f. 29 later copy (of f. 31) | no, read with copy in view |
-| 1584 f. 36 / f. 37 | 12 Feb / dup. 25 Feb | R5323 | 98.4% / 98.8% | f. 35 later copy | no |
+| 1584 f. 36 / f. 37 | 12 Feb / dup. 25 Feb | R5323 | 98.4% / 98.8% | f. 38 contemporary decipherment; f. 35 later copy | no |
 | 1584 f. 64 / f. 65 | 6 Mar / dup. same day | R5323 | 96.9% / 98.9% | f. 63 later copy | no |
-| 1584 f. 72 | 7 Mar 1447 | R5323 | 86.1% (≈80% as sense) | none | yes |
-| 1584 f. 83 | 11 Mar 1447 | R5323 | sample 8%, 91.2% | ff. 82r-v, 85r later copy: 99.2% | sample deciphered first |
-| 1584 f. 94 | 18 Mar 1447 | R5323 | sample 18%, 94.9% | f. 92 later copy: 98.5% | sample deciphered first |
-| 1584 f. 102 | 23 Mar 1447 (dup.) | R5323 | 94.2% | f. 103 parallel clear letter, not its text | yes |
-| 1583 f. 145 | 1 Dec 1446 | ? | not reached (not on DECODE, ital. 1583 not found on Gallica) | | |
+| 1584 f. 72 | 7 Mar 1447 | R5323 | 86.1% (≈80% as sense) | f. 73 later copy | yes, checked after: 88.3% of words |
+| 1584 f. 83 | 11 Mar 1447 | R5323 | sample 8%, 91.2% | f. 84 contemporary decipherment; ff. 82r-v, 85r later copy: 99.2% | sample deciphered first |
+| 1584 f. 94 | 18 Mar 1447 | R5323 | sample 18%, 94.9% | f. 95 contemporary decipherment; f. 92 later copy: 98.5% | sample deciphered first |
+| 1584 f. 102 | 23 Mar 1447 (dup.) | R5323 | 94.2% | f. 103 contemporary decipherment; f. 101 later copy | in part (f. 103 used as a guide in the retry): 87.5% of words |
+| 1583 f. 145 | 1 Dec 1446 | ? | not reached (not on DECODE; ital. 1583 not digitised) | ital. 1597 canvas 160, 19th-c. copy | |
 | 1583 f. 112 | 7 Nov 1446 | - | not a cipher (clear letter) | | |
 
 ## The documents
@@ -127,21 +137,29 @@ including the syllable signs ab, am, av, is, at, ar and the e homophones ÷ ·�
 - So far every slip checked has a clear text filed with it (contemporary "Traduzione" ff. 6, 9; clear f. 16; later
   clear copies ff. 29, 35, 63, 92). What is new here is the key identification (R5323, R5324 on DECODE, unlabelled) and
   any slip with no clear text: being checked (ff. 23/24, 72, 83, 94, 102; ital. 1583).
+- 29 Oct 2026, merge of the parallel session (Visconti-Sforza cipher letters 1446; its branch writeup-visconti1446,
+  0148c6e1c, not pushed; files in `peer/`, see `peer/README.md`). Taken: its f. 110 pass 2 aligned with the ital. 1597
+  copy (`texts/f110_transcription.tsv`, recto 96.5%, verso 69.6%), its f. 136 pass (95.7%), the copies
+  `texts/*_copy1597.md`, the second key copy R1857 image 17 with its corrections (`peer/key.md`, `peer/working_key.md`),
+  its survey `peer/slips.tsv`, the failed LM control `peer/lattice.py` (55.6% of ambiguous signs right on f. 136) and the
+  print check (Osio III, 1872: none of the Duke's cipher letters). `texts/import_peer.py` converts its transcriptions.
+  This folder's readings of ff. 130, 154, 158 stand (fuller than its). The survey overturned the "no clear text" claim
+  for six slips (see the correction under Status); ff. 25, 73, 103 transcribed and compared by a subagent.
 - 28 Oct 2026: target opened (Opus 5.5). Canvases mapped from thumbnails (`img/`, git-ignored). Key R5323 found and
   checked on f. 8/9 line 1.
 
 ## Remaining gaps
-- f. 110 (1 Nov 1446): 1,826 of 2,698 non-null signs unread, most of the recto body and the verso - blocker: illegible; DECODE image ~1,640 px wide, several homophone families (barred-5, barred-b) indistinguishable; verso readable only after dividing out the recto show-through; ital. 1583 not found on Gallica
+- f. 110 (1 Nov 1446): 292 of 2,689 non-null signs unread, 231 of them on the cramped verso where signs run together - blocker: illegible; binarized DECODE image, ital. 1583 not digitised (microfilm MF 16151); the 1597 copy gives the sense of the gaps
 - f. 154 (12 Dec 1446): parts of 14 lines (19.6% of non-null signs) - blocker: illegible; same DECODE resolution, page bent; two baseline-tracked passes done
-- ff. 130, 136, 158: scattered stretches that give values but no words (11.8%, 8.5%, 10.6%) - blocker: illegible; DECODE images
-- f. 72: unidentified groups and the name signs < and est (13.9%) - blocker: open-codes; the key copy leaves both labels blank and no clear text exists
-- ital. 1583 f. 145 (1 Dec 1446) and the translation f. 131 - blocker: needs-physical-access; not on DECODE, ital. 1583 not found on Gallica (the ark on the BnF record is a 1456 volume)
+- ff. 130, 158: scattered stretches that give values but no words (11.8%, 10.6%) - blocker: illegible; DECODE images, no copy in ital. 1597; f. 131 (translation of f. 130) not digitised
+- f. 72: the name signs < and est - blocker: open-codes; the key copy leaves both labels blank and the later copy f. 73 leaves < blank too; the rest of the text is in f. 73
+- ital. 1583 f. 145 (1 Dec 1446) and the translation f. 131 - blocker: needs-physical-access; not on DECODE, ital. 1583 not digitised (BnF AeM record: microfilm MF 16151; btv1b10033686w is ital. 1587); a 19th-c. copy of f. 145 is ital. 1597 canvas 160
 
 ## Escalation
 - [x] siblings: all 21 slips of the series mapped (ital. 1583, 1584); duplicates read side by side (ff. 23/24, 30/31, 36/37, 64/65)
-- [x] clear-pages: translations ff. 6, 9; later copies ff. 29, 35, 63, 82/85, 92 transcribed and compared; f. 103 shown to be a parallel letter, f. 16 belongs to f. 15 (visconti1447)
-- [x] known-keys: the 15th-c. keys of ASMi cart. 1597 (R5301-R5340) read by heading; R5323 fits, R5324 does not (it reads f. 15)
-- [x] print: Mazzatinti 1883/1887; web search for an edition or decipherment: none; Cerioni 1970 covers the later Sforza keys
-- [x] key-rebuild: name signs (Cosimo, Marchese di Mantova, Dux Mediolani) and homophones added from use (texts/key_additions_A-H.md)
+- [x] clear-pages: decipherments ff. 6, 9, 25, 103 and copies ff. 29, 35, 63, 73, 82/85, 92 transcribed and compared; ff. 38, 84, 95 identified as decipherments; ital. 1597 canvases 116-182 and ital. 1598 checked for copies of the 1446 slips (ff. 110, 136, 145 found); f. 16 belongs to f. 15 (visconti1447)
+- [x] known-keys: the 15th-c. keys of ASMi cart. 1597 (R5301-R5340) read by heading; R5323 fits, R5324 does not (it reads f. 15); R1857 image 17 is a second copy of R5323, images 11 and 19 do not fit
+- [x] print: Mazzatinti 1883/1887; Osio, Documenti diplomatici III (1872); Tomokiyo's Cryptiana; web search: none prints the Duke's letters; Cerioni 1970 covers the later Sforza keys
+- [x] key-rebuild: name signs (Cosimo, Marchese di Mantova, Dux Mediolani) and homophones added from use (texts/key_additions_A-H.md, peer/working_key.md); LM lattice decoder for the glyph classes the scans merge failed its control on f. 136 (peer/lattice.py)
 - [x] retry: ff. 23, 24, 102 re-read (worker E, 84-92% -> 94-97%); f. 154 re-transcribed on traced baselines (72.8% -> 80.4%); f. 110 second recto pass and verso show-through removal (38.7% recto -> 39.2%; verso 0 -> 15.0%)
 

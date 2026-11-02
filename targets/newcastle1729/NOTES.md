@@ -106,7 +106,10 @@ Brackx's independent pass on p. 5 agrees with the transcription of the report. F
   60920 L02 383 -> 387, 1017 -> 1019 (*et ... répon-se*). These give 937 and 1019 their values. Not re-checked on
   the images here.
 - 122 bon and 1250 (full stop) were already in the table; 974 is glossed répondu on 60907 and répon(-se) on 60920.
-- 65 avoit on 188 HDL 60918, which he also reports, is not in `sib188_60918.txt` and was not entered.
+- 65 avoit on 188 HDL 60918, which he also reports, is not in `sib188_60918.txt` and was not entered. He has since
+  (2 Nov 2026, issue #189) withdrawn it: the group is on line 2, "Roy ge or ge premier [avoit] promis sur gi", and
+  `sib188_60918.txt` already has it as 69 = avoit, which follows 68 avoit in the table's order; 65 is aime (194). So
+  65 = aime stands and 69 = avoit stands. Not re-checked on the images here.
 
 L05-L07 now give "comme je [285]is agir après le départ du [214], car Monsieur Kenne m'aime, mais il n'a aucun ordre
 des se[711]s pour moi, Monsieur, dans l'affaire passée". Context proposals (805 obligation, 1210 six, 585 ig, 1152 vos,
