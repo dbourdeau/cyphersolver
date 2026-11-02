@@ -30870,7 +30870,7 @@
    "region": "England",
    "period": "1651-1700",
    "shelfmark": "Folger Shakespeare Library, V.b.333 (1-39)",
-   "folio_note": "39 items in a volume; which item is in cipher not stated",
+   "folio_note": "item V.b.333 (29): Mary Butler, Countess of Arran, to Lady Mary Goodricke, c. 19 May 1668 (about a miscarriage); cipher on 1v-2r",
    "cls": "C",
    "status": "Catalogue: \"Another letter is partially written in cipher\". Not on DECODE, not in repo.",
    "why": "Royalist and Restoration family papers (Sir Henry Goodricke was envoy to Spain, 1678-82).",
@@ -30882,6 +30882,14 @@
     {
      "label": "Folger catalogue",
      "href": "https://catalog.folger.edu/record/232776"
+    },
+    {
+     "label": "Folger digital item V.b.333 (29)",
+     "href": "https://digitalcollections.folger.edu/bib232776-231767-vb333_29"
+    },
+    {
+     "label": "Folger Collation: Decoding early modern gossip",
+     "href": "https://www.folger.edu/blogs/collation/decoding-early-modern-gossip/"
     }
    ],
    "source": "Folger sweep",
@@ -30890,7 +30898,28 @@
    "prior_art": "open (checked 28 Oct 2026: repo known.py, DECODE list)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "scan",
+     "where": "Folger Digital Collections, V.b.333 (29), images 1 verso-2 recto (https://digitalcollections.folger.edu/bib232776-231767-vb333_29), viewed in Chrome 2 Nov 2026",
+     "extent": "item 29, ALS Mary Butler, Countess of Arran (Chapelizod), to Lady Mary Goodricke, 19 May 1668?; about 7 lines at the end of the letter on 1v-2r are enciphered, the closing 'pray burne this and excuse me with troubelling you with a long letter but I was not able to hold' is in clear",
+     "cipher": "vowel substitution: consonants left unchanged, vowels replaced by hatched ascender/descender letters (ticked strokes). No decipherment is written on or with the leaf. All 39 items of the volume were checked in the Folger item pages for 'cipher'; only item 29 carries it (so the 'which item is in cipher' question is answered)."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "not searched on cryptiana beyond web searches for the shelfmark and the Countess of Arran; no hit",
+     "lasry": "no Lasry or Waldispuhl/Kopal publication found in 3 web searches (Goodricke / Arran cipher)",
+     "edition": "Folger Collation blog, 'Decoding early modern gossip' (Alicia Petersen, 2021, https://www.folger.edu/blogs/collation/decoding-early-modern-gossip/): the cipher was cracked by Daniel Gaskell; rule 1 to 5 hatches = a e i o u, consonants plain; the coded passage is given ('I heare that ... husband is comeing to court with his wife ... I doe abhorr him for it'); a cancelled half-line read by a commenter (E. Chaghafi)",
+     "literature": "Folger catalogue V.b.333 genre term 'Cryptograms' and finding aid subject 'Ciphers (codes)'; a British Library record (Goodricke papers) mentions a letter to Lady Goodricke partly in cipher on her miscarriage, apparently a sibling, not opened"
+    },
+    "key_check": "No key held here; the key is the published rule (hatch count = vowel) and it reads the passage on the image.",
+    "duplicates": "known.py for V.b.333, Goodricke and Arran: only catalogue 823 itself. Searched Folger catalogue, finding aid and Collation blog; the BL Goodricke sibling letter is the only possible related record.",
+    "verdict": "read",
+    "closed": "Already read in 2021 by Daniel Gaskell (Folger Collation blog, Petersen): simple hatched-vowel substitution, passage decoded and published; nothing left for a ciphertext-only attack."
+   }
   },
   {
    "id": 824,
@@ -30904,7 +30933,7 @@
    "region": "England",
    "period": "1651-1700",
    "shelfmark": "Folger Shakespeare Library, V.a.682",
-   "folio_note": "tête-bêche volume, leaves 1-149; where the cipher is not stated",
+   "folio_note": "cipher entry on leaf [136] verso (upside-down, tete-beche volume); digitised on Folger Digital Collections",
    "cls": "C",
    "status": "Catalogue genre term \"Ciphers (codes)\"; notes do not say where. Not on DECODE.",
    "why": "Household recipe cipher, minor.",
@@ -30916,6 +30945,10 @@
     {
      "label": "Folger catalogue",
      "href": "https://catalog.folger.edu/record/353749"
+    },
+    {
+     "label": "Folger digital V.a.682",
+     "href": "https://digitalcollections.folger.edu/bib353749-502111"
     }
    ],
    "source": "Folger sweep",
@@ -30924,7 +30957,27 @@
    "prior_art": "open (checked 28 Oct 2026: repo known.py, DECODE list)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "scan",
+     "where": "Folger Digital Collections V.a.682 (https://digitalcollections.folger.edu/bib353749-502111), leaf [136] verso (canvas 40 of 70), viewed in Chrome 2 Nov 2026",
+     "extent": "about 5-6 lines of cursive at the foot of leaf 136v (the volume is tete-beche, so the entry is upside down in the image); Folger note: 'Leaf 136v contains an entry that appears to be a cipher'",
+     "cipher": "a block of cursive in unintelligible letter-groups, no English words readable; no decipherment or key on the leaf or on the neighbouring leaves seen; plain recipes elsewhere. System not identified; too short for a statistical attack unless it is a known recipe-book cipher."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no cryptiana entry found (web search for Folger recipe book cipher 1662)",
+     "lasry": "no Lasry work found",
+     "edition": "Folger catalogue and Manuscript Cookbooks Survey (Folgerpedia list of receipt books) record the volume; no transcription of 136v anywhere; 3 web searches (shelfmark, 'Mary Smith' 1662 cipher, Collation) found no decipherment",
+     "literature": "none found; the Folger Collation recipe-book posts do not mention this entry"
+    },
+    "key_check": "No key in the volume or series; no held key applies (single private entry, English household hand).",
+    "duplicates": "known.py for V.a.682 and Mary Smith: only catalogue 824. Not the Mary Smith 1845 recipe book at Penn (different volume).",
+    "verdict": "open"
+   }
   },
   {
    "id": 825,
@@ -30958,7 +31011,27 @@
    "prior_art": "open (checked 28 Oct 2026: repo known.py, DECODE list)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "Folger catalogue record 128984 (https://catalog.folger.edu/record/128984), read 2 Nov 2026; no digital image link on the record",
+     "extent": "3 leaves; one aphorism in cipher on leaf 1r",
+     "cipher": "archive description: 'miscellaneous notes and aphorisms, citing Lambert (presumably William Lambarde) by page number in a few places and one in cipher (leaf 1r)'; genre term Cryptograms; former Folger MS Add 908."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no hit for Hawarden / Dalton Countrey Justice end leaves",
+     "lasry": "no Lasry work found",
+     "edition": "no edition of the leaves found; 3 web searches (shelfmark, Hawarden sessions 1616 Chamberlayne Towneshend, Dalton cipher) returned only catalogue copies",
+     "literature": "none found"
+    },
+    "key_check": "None held; a single aphorism, no key material or series known.",
+    "duplicates": "known.py for X.d.542, Hawarden: only catalogue 825.",
+    "verdict": "open"
+   }
   },
   {
    "id": 827,
@@ -30974,7 +31047,7 @@
    "shelfmark": "Huntington Library, William Blathwayt papers addenda, mssBLA 186 (HDL p15150coll7 id 61211)",
    "folio_note": "4 pp. + note + cover; p. 1 has one coded run of 11 groups (659.78.73.18.438.468.470.778.190.1102.53) in an otherwise clear letter",
    "cls": "A",
-   "status": "Catalogue: 'In French, with two lines in cipher.' No decipherment noted; image viewed 28 Oct 2026, the coded run is unglossed. Group 659 and the 1-1300 range match the Port Sainte-Marie code deciphered on mssBLA 187/188, so probably the same agent network's code. Not on DECODE; not in the repo.",
+   "status": "Read in part in targets/blathwayt1729/NOTES.md: the coded run is 'L'ambassadeur <73> a ete fort <470> de cette affaire' with the Port Sainte-Marie code; HDL unreachable from this machine 2 Nov 2026.",
    "why": "The coded line follows the news that the fallen minister Ripperdá had escaped from Segovia castle and the court's request to foreign ministers to hand him over; it likely names who helped him or where he went.",
    "importance": 2,
    "solvability": 3,
@@ -30993,7 +31066,28 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)"
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "transcription",
+     "where": "transcription of the coded line in targets/blathwayt1729/NOTES.md in this repo (Brice Dudout, 28 Oct 2026; reading of the Port Sainte-Marie code, mssBLA 191), which treats 827 and 828; Huntington HDL (hdl.huntington.org) reset every connection from curl and from Chrome on 2 Nov 2026, so the image itself was not re-viewed here",
+     "extent": "one coded run of 11 groups on p. 1 in an otherwise clear French letter, 13 Sep 1728 (the catalogue says 'two lines')",
+     "cipher": "numerical code (one-part, about 1-1324); the repo notes give 659.78.73.18.438.468.470.278.190.1102.53 (the lead has 778 for 278: to be checked on the leaf) = 'L'ambassadeur <73> a ete fort <470> de cette affaire' (9 of 11 read). No decipherment is on the letter itself."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "not found: no cryptiana entry for the Huntington Blathwayt addenda known",
+     "lasry": "no Lasry work found for mssBLA",
+     "edition": "none found; Huntington catalogue notes no decipherment",
+     "literature": "Brice Dudout's unpublished write-up of mssBLA 191 (europe-chiffree site, documents.html#blathwayt-1729) gives the key; no print"
+    },
+    "key_check": "The Port Sainte-Marie code rebuilt in targets/blathwayt1729 (mssBLA 191, 105 of 108 words) reads the line except the unattested f- word 470 and the null/separator 73: held key, applied by the repo notes.",
+    "duplicates": "Same code as catalogue 826 (mssBLA 191, targets/blathwayt1729 and portstemarie1729) and 828; known.py shelfmark hit only those notes.",
+    "verdict": "partly_read",
+    "closed": "Coded line already read in 9 of 11 words with the held Port Sainte-Marie code (targets/blathwayt1729/NOTES.md); only groups 73 and 470 are open, two single words."
+   }
   },
   {
    "id": 828,
@@ -31009,7 +31103,7 @@
    "shelfmark": "Huntington Library, William Blathwayt papers addenda, mssBLA 184 (HDL p15150coll7 id 60843)",
    "folio_note": "4 pp. + note + cover; p. 1 has a handful of 4-digit name/word codes (1240, 1243, 1250, 1259) and letter signs (E. T., S.) inside clear French",
    "cls": "A",
-   "status": "Catalogue: 'In French, partly in cipher.' No decipherment noted; image viewed 28 Oct 2026, codes unglossed. 1250 also occurs in the deciphered Port Sainte-Marie code (mssBLA 187). Not on DECODE; not in the repo.",
+   "status": "Groups 1240, 1243, 1250 read as nulls/separators with the Port Sainte-Marie code (targets/blathwayt1729/NOTES.md); 1259 and E.T./S. unchecked.",
    "why": "Names the parties in Rottembourg's dealings at the Spanish court during the 1727-28 preliminaries (the Pardo convention); the codes are probably persons.",
    "importance": 2,
    "solvability": 3,
@@ -31028,7 +31122,28 @@
    "ark": "",
    "scored": "sweep",
    "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)"
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "transcription",
+     "where": "statement on Rottembourg as described in targets/blathwayt1729/NOTES.md in this repo (Brice Dudout, 28 Oct 2026; reading of the Port Sainte-Marie code, mssBLA 191), which treats 827 and 828; HDL unreachable (connection reset) on 2 Nov 2026, so the image was not re-viewed",
+     "extent": "p. 1 has 4-digit groups 1240, 1243, 1250, 1259 and signs E.T., S. inside clear French; the notes cover 1240, 1243, 1250",
+     "cipher": "same one-part numeric code as mssBLA 191; per the contemporary decipherments of the sibling letters the numbers 1240-1250 are nulls or separators, so 'et Monsieur 1240 de 1243 la Paz' reads 'et Monsieur de la Paz'. 1259 and the letter signs E.T., S. are not discussed in the notes."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no cryptiana entry known for mssBLA",
+     "lasry": "no Lasry work found",
+     "edition": "none; catalogue notes no decipherment",
+     "literature": "Dudout's unpublished write-up of mssBLA 191 only"
+    },
+    "key_check": "Port Sainte-Marie code (targets/blathwayt1729; numbers beyond about 1324 are nulls/separators) applied in the notes to 1240, 1243, 1250.",
+    "duplicates": "Related to catalogue 826/827 (same agent network and code); no duplicate of the Rottembourg statement found by known.py.",
+    "verdict": "partly_read",
+    "closed": "Coded groups are nulls/separators of an already rebuilt code (targets/blathwayt1729 notes); 1259 and the signs E.T./S. still to be checked on the leaf, nothing else hidden."
+   }
   },
   {
    "id": 829,
@@ -31059,6 +31174,10 @@
     {
      "label": "OAC finding aid, Loudoun papers",
      "href": "https://oac.cdlib.org/findaid/ark:/13030/c83n2bhm"
+    },
+    {
+     "label": "Maggs Dec 1756 Kerlerec despatch (page read 2 Nov 2026)",
+     "href": "https://store.maggs.com/products/encrypted-message-using-number-code-1bnjs6nm"
     }
    ],
    "seen": "catalogue",
@@ -31066,7 +31185,27 @@
    "prior_art": "open as far as checked (28 Oct 2026: web search Kerlerec/Lyttelton/Loudoun cipher; cryptiana not checked for Kerlerec; known.py no hits)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "OAC item page, Huntington Loudoun papers Box 151 Folder 17 (LO 2720), read in Chrome 2 Nov 2026",
+     "extent": "extent not given; one despatch",
+     "cipher": "archive description verbatim: 'In cipher.' (Louis Billouart de Kerlerec letter to Jean Baptiste Machault d'Arnouville, 28 Jan 1757)."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no Kerlerec entry found by web search (cryptiana has nothing on Louisiana)",
+     "lasry": "no Lasry work found",
+     "edition": "Pargellis, 'Loudoun Papers: Colonial, 1756-58', Huntington Library Bulletin 1933, covers the series; not checked for this item; no print of the despatch found in 3 searches",
+     "literature": "Maggs Bros stock no. 212077 (Kerlerec, New Orleans Dec 1756, number-code despatch to the Secretaire d'Etat a la Marine, single page) quotes Kahn on nomenclators; no decipherment mentioned; AN Colonies C13A holds Kerlerec's own copies, some 1758-59 despatches 'chiffrees'"
+    },
+    "key_check": "No Louisiana nomenclator held here or on DECODE; the AN C13A series might contain a key sheet (not searched online).",
+    "duplicates": "known.py for Box 151, Kerlerec, Loudoun: only catalogue entries 829/830. Possibly the same despatch family as 830 (Dec 1756, Maggs).",
+    "verdict": "open"
+   }
   },
   {
    "id": 830,
@@ -31097,6 +31236,10 @@
     {
      "label": "Maggs listing of a Dec 1756 Kerlerec cipher despatch",
      "href": "https://store.maggs.com/products/encrypted-message-using-number-code-1bnjs6nm"
+    },
+    {
+     "label": "Maggs Dec 1756 Kerlerec despatch (page read 2 Nov 2026)",
+     "href": "https://store.maggs.com/products/encrypted-message-using-number-code-1bnjs6nm"
     }
    ],
    "seen": "catalogue",
@@ -31104,7 +31247,27 @@
    "prior_art": "open as far as checked (28 Oct 2026: web search; known.py no hits)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "OAC item page, Loudoun papers Box 145 Folder 14 (LO 2335), read in Chrome 2 Nov 2026; Maggs listing page also read",
+     "extent": "letter and copy; extent not given",
+     "cipher": "archive description verbatim: 'In cipher. Enclosed in William Henry Lyttelton letter to John Campbell, 1757 April 5 (LO 3293).' Title 'letter to unidentified recipient and copy', 12 Dec 1756."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no entry for Kerlerec found",
+     "lasry": "no Lasry work found",
+     "edition": "none found; the Maggs listing (Kerlerec, New Orleans, Dec 1756, single page, to the Secretaire d'Etat a la Marine) is a sheet of the same month, a number-code despatch",
+     "literature": "Pargellis, Huntington Library Bulletin 1933 (Loudoun papers, colonial) not checked for this item"
+    },
+    "key_check": "No key held; the 'copy' may be a decipherment or a duplicate in cipher: unknown without the scan.",
+    "duplicates": "Same month and author as the Maggs despatch (possibly the same letter, original vs. intercepted copy) and a sibling of 829; known.py: no repo hit. Not merged because Maggs's sheet is addressed to the minister and the Huntington recipient is unidentified.",
+    "verdict": "open"
+   }
   },
   {
    "id": 831,
@@ -31131,6 +31294,10 @@
     {
      "label": "Huntington catalog record",
      "href": "https://catalog.huntington.org/record=b1526768"
+    },
+    {
+     "label": "BL Stowe MS 225 (Hanover Papers vol. IV, 1713-14)",
+     "href": "https://searcharchives.bl.uk/catalog/040-001953020"
     }
    ],
    "seen": "catalogue",
@@ -31138,7 +31305,27 @@
    "prior_art": "partly checked (28 Oct 2026: catalogue note cites Schnath 1984; Macpherson 1775 not checked; known.py no hits)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "Huntington catalogue b1526768 (https://catalog.huntington.org/record=b1526768), read in Chrome 2 Nov 2026",
+     "extent": "161 pieces, 393 leaves; which dispatches are ciphered not stated",
+     "cipher": "archive description: 'In French and English. Some dispatches are ciphered', subject heading 'Ciphers (codes) 18th century'; flyleaf 'No. 9 Mr. de Bothmer an 1713 pars 2'."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no entry found",
+     "lasry": "no Lasry work found",
+     "edition": "Schnath, Georg, 'Am Vorabend der hannoverschen Sukzession in England 1714: Verschollene Robethonpapiere aus Hannover in den USA aufgetaucht', Niedersachsisches Jahrbuch 56 (1984) 215-222 (title from the catalogue record); not read",
+     "literature": "BL Stowe MS 225 (Hanover Papers vol. IV, Jan 1713-Jan 1714) holds letters to Robethon marked 'Cipher, deciphered' in the BL catalogue: a parallel series with contemporary decipherments; Macpherson, Original Papers (1775) prints extracts; neither checked against this volume"
+    },
+    "key_check": "No key held; BL Stowe 225 deciphered letters of the same year and correspondents are a likely key source (not yet matched to this volume).",
+    "duplicates": "known.py for mssHM 44710, Bothmer, Robethon: no repo hit. The Huntington volume is the lost 'pars 2' of a Hanover set whose other parts are in the BL, not a duplicate.",
+    "verdict": "open"
+   }
   },
   {
    "id": 832,
@@ -31172,7 +31359,27 @@
    "prior_art": "open (checked 28 Oct 2026: catalogue, known.py)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "Huntington catalogue b1815040 (https://catalog.huntington.org/record=b1815040), read in Chrome 2 Nov 2026",
+     "extent": "11 pieces, 1769-1780, from the archive of George Macartney",
+     "cipher": "archive description: 'Some of the letters and documents are the product of the Committee of Secrecy of the Court of Directors and are written in cipher'; subject heading 'Ciphers -- Great Britain -- History -- 18th century'."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no entry found",
+     "lasry": "no Lasry work found",
+     "edition": "none found; web searches (Macartney Philippines expedition, Secret Committee, shelfmark) turned up only the Huntington records and the 1762 Manila occupation literature",
+     "literature": "Camden Fourth Series item on the 1762 Manila preparations is a different episode; the 1769-80 scheme has no cipher scholarship found"
+    },
+    "key_check": "No key held; East India Company Secret Committee cipher sheets not located anywhere searched.",
+    "duplicates": "known.py for mssHM 80328 and Macartney: no repo hit; the Huntington mssMacartney collection (1792-94 embassy) is separate.",
+    "verdict": "open"
+   }
   },
   {
    "id": 833,
@@ -31203,6 +31410,10 @@
     {
      "label": "OAC finding aid, Hamond collection",
      "href": "https://oac.cdlib.org/findaid/ark:/13030/c86w9hqc"
+    },
+    {
+     "label": "BL Add MS 89557 (Drake to Stuart)",
+     "href": "https://searcharchives.bl.uk/catalog/032-004299403"
     }
    ],
    "seen": "catalogue",
@@ -31210,7 +31421,27 @@
    "prior_art": "open (checked 28 Oct 2026: finding aid, known.py)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "OAC item page, Huntington Hamond collection Series 1 Folder 34, read in Chrome 2 Nov 2026",
+     "extent": "4 pp.",
+     "cipher": "archive description: 'Munich, Germany. (4 p.). Originally found in the John Thomas Duckworth material; partly in cipher with three pages partly obscured. Subject: Ciphers.'"
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no entry for Drake/Stuart 1803 found",
+     "lasry": "no Lasry work found",
+     "edition": "none found; BL Add MS 89557 (Drake at Munich to Stuart at Vienna, cipher sections; item 11 of 9 Dec 1803 encloses a cipher extract) and BL Drake despatch volumes 'cypher, decyphered' are the closest parallels",
+     "literature": "RMG Nelson-Drake letters (1796, partly in cipher) show Drake's ciphers; no study of the 1803 cipher found in 3 web searches"
+    },
+    "key_check": "No key held. Siblings Folder 36 (31 Oct 1803) and 37 (14 Feb 1804) carry Stuart's autograph reading of the cipher: a probable key source, not yet applied (images unreachable, HDL reset).",
+    "duplicates": "known.py for mssHamond, Drake, Stuart: only catalogue 833. BL Add MS 89557 may hold a duplicate or parallel of this letter: not compared.",
+    "verdict": "open"
+   }
   },
   {
    "id": 834,
@@ -31379,7 +31610,27 @@
    "prior_art": "open (catalogue says not deciphered; checked 28 Oct 2026)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "Huntington catalogue b1820822 (https://catalog.huntington.org/record=b1820822), read in Chrome 2 Nov 2026",
+     "extent": "one line on the front blank page, key on the back blank page, 46-page verse journal",
+     "cipher": "archive description: 'There is a line of mono alphabetic ciphering on the front blank page with the key written on the back blank page. This line has not been deciphered.'"
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no entry found",
+     "lasry": "no Lasry work found",
+     "edition": "none; web searches (journal, Barque Sarmiento 1852, poem titles) found only the Huntington catalogue and a 1852 newspaper on the Sarmiento's voyage",
+     "literature": "none on the cipher line"
+    },
+    "key_check": "The key is on the back blank page of the same volume (catalogue); not applied because the images could not be reached, so reading is a one-step lookup once seen.",
+    "duplicates": "known.py for mssHM 80821 and Cleary: no repo hit; other 'Joseph Cleary journal' records at the Huntington are related-item links, not shown to be duplicates.",
+    "verdict": "open"
+   }
   },
   {
    "id": 838,
@@ -31413,7 +31664,27 @@
    "prior_art": "open (checked 28 Oct 2026: finding aid)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "OAC finding aid c8rn3g52 (Huntington, Fuller letters to Washburn) read in Chrome 2 Nov 2026",
+     "extent": "one of eight fragments",
+     "cipher": "finding aid: 'eight fragments (one of which is a letter written in code)'; no further description."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no entry found",
+     "lasry": "no Lasry work found",
+     "edition": "none; web searches (Fuller Washburn code letter, Fuller biography code) found nothing",
+     "literature": "Fuller biographies not found to mention a code letter"
+    },
+    "key_check": "No key; a private code between boyhood friends, nothing held applies.",
+    "duplicates": "known.py for Fuller and Washburn: no repo hit.",
+    "verdict": "open"
+   }
   },
   {
    "id": 839,
@@ -31447,7 +31718,27 @@
    "prior_art": "open (checked 28 Oct 2026: finding aid)",
    "ark": "",
    "scored": "sweep",
-   "access": "archive"
+   "access": "archive",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L27",
+    "seen": {
+     "kind": "not online",
+     "where": "OAC finding aid tf858005xn, entire_text read in Chrome 2 Nov 2026",
+     "extent": "many items; finding aid series note quoted",
+     "cipher": "series note: 'The correspondence between Henry E. Huntington and Collis P. Huntington is often in code and sometimes has a de-coded copy'; folder subjects name an 'executive cipher book'."
+    },
+    "prior_art": {
+     "decode": "not on DECODE: searched the DECODE record list for the shelfmark and correspondents (no hit); known.py run 2 Nov 2026 for shelfmark and names, no repo or ledger hit other than the catalogue entry itself",
+     "tomokiyo": "no entry found",
+     "lasry": "no Lasry work found",
+     "edition": "none; web searches for the Huntington code letters and Southern Pacific code books found no edition",
+     "literature": "a Cryptologia 2011 bibliography entry lists an 'Official Cipher' (c. 1893) private cipher book with a copy at the Huntington; an ibiblio archivists list says Southern Pacific used three or four code books incl. an executive code, some at the California State Railroad Museum"
+    },
+    "key_check": "Keys exist in the same papers (executive cipher book, Southern Pacific code book 1892-97 Box 307 Folder 35) and a de-coded copy is sometimes filed with the letter: a held key would read most items; not matched to specific items.",
+    "duplicates": "known.py for Huntington and Collis: only the Eckert (catalogue 648) rows, a different series and key family.",
+    "verdict": "open"
+   }
   },
   {
    "id": 840,
@@ -31769,8 +32060,8 @@
    "language": "English",
    "region": "Americas",
    "period": "1801-1900",
-   "shelfmark": "Newberry Library, Graff f*502 (Cusk, Checklist of English manuscripts)",
-   "folio_note": "one autograph letter, unsigned, largely in cypher; extent not stated",
+   "shelfmark": "Newberry Library, VAULT folio Graff *502 (Cusk, Checklist of English manuscripts); Wilkinson affidavit Graff 4668",
+   "folio_note": "one letter, 4 pages, endorsed 'Burr Letter 22d July by Swartwout'; opens 'Your letter post marked 13th May is received'; digitised at Newberry (NBY 16330-16333)",
    "cls": "A",
    "status": "Cusk checklist: 'Autograph letter, unsigned, largely in cypher, addressed to James Wilkinson', 1806, Burr Conspiracy. Newberry also holds Wilkinson's memorandum 'explanation of the cypher used in the Burr-Wilkinson correspondence' (VAULT folio Graff 4668, digitised, nby_graff/16326). The famous 22 July 1806 Burr cipher letter was deciphered and printed at the 1807 trial, so this is probably a copy, duplicate or variant of a known letter; not confirmed. Not on DECODE (not searched by shelfmark); known.py: no hit for Newberry/Graff f*502 (the sweep first cited Case MS 7A 4, which is a Burns poem manuscript: Cusk prints the call number after the entry; corrected 28 Oct 2026). Repo has related Wilkinson and Graham 1806 entries (catalogue 482, 761) but not this item.",
    "why": "A second surviving copy or a variant of Burr's conspiracy cipher letter, with the contemporary key explanation held beside it, could settle which version Wilkinson actually received.",
@@ -31786,6 +32077,18 @@
     {
      "label": "Cusk checklist of English manuscripts (PDF)",
      "href": "https://www.newberry.org/uploads/files/English%20Manuscripts%20-%20Cusk%2C%20Sarah.%20Checklist%20of%20English%20Manuscripts%20in%20the%20Newberry%20Library%2C%201500-1865.pdf"
+    },
+    {
+     "label": "Newberry digital item: Autograph letter in cypher, July 22, 1806",
+     "href": "https://collections.newberry.org/archive/-2KXJ8ZSSB3NK5.html"
+    },
+    {
+     "label": "Wikimedia Commons copy of the Newberry scan (NBY 16330)",
+     "href": "https://commons.wikimedia.org/wiki/File:Aaron_Burr_letter_to_James_Wilkinson,_1806_(NBY_16330).jpg"
+    },
+    {
+     "label": "Wilkinson's interpretation as put in evidence (famous-trials.com)",
+     "href": "https://famous-trials.com/burr/162-letter"
     }
    ],
    "prior_art": "open as to this copy (checked 28 Oct 2026: Newberry catalogue, Cusk checklist, repo known.py; the 22 July 1806 letter itself is published, not re-checked in full)",
@@ -31794,7 +32097,28 @@
    "score_note": "Scored from the Newberry catalogue record during the Oct 2026 Newberry sweep (research/chi_newberry/); not viewed",
    "seen": "catalogue",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L28",
+    "seen": {
+     "kind": "scan",
+     "where": "Newberry Digital Collections / CARLI nby_graff 16330-16333 (Burr letter, Graff *502), viewed via the Wikimedia Commons copies 'Aaron Burr letter to James Wilkinson, 1806 (NBY 16330-16333).jpg'; Wilkinson affidavit NBY 16324-16325 (Graff 4668 memorandum); collections.newberry.org/archive/-2KXJ8ZSSB3NK5.html",
+     "extent": "One 4-page autograph-in-secretary's-hand letter, page 1 viewed in full: about 17 lines of numbers 'page.line' plus dotted/barred forms and hieroglyph signs; the dorse is endorsed 'Burr Letter 22d July by Swartwout'.",
+     "cipher": "Dictionary code (number pairs, with superscript/overline marks and symbol 'hieroglyphs'); the leaf opens 'Your letter post marked 13th May is received. I have at length 263.13...' which is the opening of the famous Burr-Wilkinson cipher letter of July 1806, in the copy Wilkinson received via Swartwout. Wilkinson's separate sheet (16324) is a sworn statement that the numbers and hieroglyphs were written by Capt. Campbell Smith in 1794-96, not a key; no decipherment is written on the cipher page."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (no Burr/Wilkinson Newberry record in the repo DECODE list; known.py 'Graff f*502' and 'Burr Wilkinson' hit only this entry).",
+     "tomokiyo": "Burr cipher letter is covered on Tomokiyo-style lists as a dictionary code (Entick); no new reading of this copy needed. Search 'Burr Wilkinson cipher letter 1806' gave only the standard accounts.",
+     "lasry": "Lasry's dictionary-code work (Dahlke/Lasry-Kopal 'Solving historical dictionary codes', arXiv 2010.04746) concerns Wilkinson's Spanish correspondence, not this letter.",
+     "edition": "Wilkinson's deciphered text was put in evidence at Burr's trial (Richmond 1807, Robertson's Report; famous-trials.com/burr/162-letter reproduces 'as interpreted by General Wilkinson'); Jefferson Papers (founders.archives.gov) and Madison Papers editors discuss the copy and its alterations.",
+     "literature": "Kahn, 'Masked Dispatches' ch. 13 (NSA) on the Burr cipher letter; Entick's dictionary key described by Easton 1807 (Jefferson Papers); searches: Burr cipher letter decipherment/Entick, Newberry Graff 502, trial 1807 text."
+    },
+    "key_check": "The key is a pocket dictionary (Entick, paged alike by Burr and Wilkinson); not held in the repo, but the plaintext is printed (trial text as interpreted by Wilkinson), so a reading exists and nothing is left to find with a key.",
+    "duplicates": "known.py (Graff f*502, Burr Wilkinson): no other repo entry; related Wilkinson entries 482 and 761 are other letters. The famous letter is the same text as this leaf; the Newberry sheet is Wilkinson's received copy, not a new variant.",
+    "verdict": "read",
+    "closed": "This Newberry leaf is the famous Burr cipher letter of 22 July 1806 (Wilkinson's received copy, endorsed 'by Swartwout'); Wilkinson's decipherment was printed at the 1807 trial. Remaining question is only comparing the leaf with the printed text."
+   }
   },
   {
    "id": 848,
@@ -31808,7 +32132,7 @@
    "region": "Other",
    "period": "1801-1900",
    "shelfmark": "Newberry Library, Edward E. Ayer Manuscript Collection, Ayer MS 1297 (Butler 1297; Lietz, Calendar of Philippine docs, 242)",
-   "folio_note": "[16] leaves; some sections and one tipped-in folded leaf in 'shorthand or code'; extent not stated",
+   "folio_note": "[16] leaves; some sections and one tipped-in folded leaf in 'shorthand or code' (Newberry); may be shorthand rather than cipher; acquired 1904 from Pedro Vindel, Madrid",
    "cls": "C",
    "status": "Catalogue record note: 'Some sections appear to be in shorthand or code. Tipped in: 1 folded leaf containing note in shorthand or code.' No decipherment noted; may be shorthand rather than cipher. Not on DECODE; known.py: no hit.",
    "why": "A private code or shorthand in a mid-19th-century Philippines notebook; low historical weight unless it hides the compiler's identity or sources.",
@@ -31820,6 +32144,10 @@
     {
      "label": "Newberry catalogue record (search 'Apuntes informes sobre Filipinas')",
      "href": "https://i-share-nby.primo.exlibrisgroup.com/discovery/search?vid=01CARLI_NBY:CARLI_NBY&query=any,contains,Apuntes%20informes%20sobre%20Filipinas"
+    },
+    {
+     "label": "Newberry catalogue record (Alma 991292808805867)",
+     "href": "https://i-share-nby.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991292808805867&vid=01CARLI_NBY:CARLI_NBY"
     }
    ],
    "prior_art": "open (checked 28 Oct 2026: Newberry catalogue only)",
@@ -31828,7 +32156,27 @@
    "score_note": "Scored from the Newberry catalogue record during the Oct 2026 Newberry sweep (research/chi_newberry/); not viewed",
    "seen": "catalogue",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L28",
+    "seen": {
+     "kind": "not online",
+     "where": "Newberry catalogue record (I-Share Primo, Alma mms 991292808805867, retrieved by its pnxs API 2026-11-02); no Newberry or CARLI digital image found",
+     "extent": "[16] leaves, bound, 22 cm; sections plus one tipped-in folded leaf",
+     "cipher": "Newberry's own note: 'Some sections appear to be in shorthand or code. Tipped in: 1 folded leaf containing note in shorthand or code.' Record also says 'Incorrectly dated by Butler and Lietz; date of \"Marzo de 1852\" on p. [4] suggests notes were made sometime after that.' The record lists reading notes on Magellan, Malaspina and Manila Bay, with a list of works to consult; no decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (repo DECODE list and known.py 'Ayer MS 1297' / 'Apuntes Filipinas': only this entry and the Newberry sweep).",
+     "tomokiyo": "No cryptiana entry; web searches for the title and 'Ayer MS 1297' found only general Ayer Philippine-manuscript guides.",
+     "lasry": "No Lasry or DECODE publication on this notebook found.",
+     "edition": "Listed only in Butler's 1937 check list (no. 1297) and Lietz, Calendar of Philippine documents in the Ayer Collection (1956), no. 242; no edition.",
+     "literature": "Searches: title + Newberry, 'shorthand or code' + Ayer Philippines, Butler/Lietz calendar; nothing on the code. The notes cite Quesada, Morata, Saavedra and 'Quince anos en las Islas Filipinas'."
+    },
+    "key_check": "No key exists or is held; for a private shorthand/code in a one-compiler notebook none of the repo's Spanish nomenclators applies. Cannot be tested without images.",
+    "duplicates": "known.py searched the shelfmark and title: no duplicate; Primo search on the title returns this single record.",
+    "verdict": "open"
+   }
   },
   {
    "id": 849,
@@ -31906,7 +32254,7 @@
    "region": "Americas",
    "period": "1901-1950",
    "shelfmark": "New York Public Library, Manuscripts and Archives Division, MssCol 176 (Bacon cipher collection), Riverbank Labs boxes 13-21 (box not cited by Schmeh)",
-   "folio_note": "One sheet: three title lines plus about 39 columns x 41 rows of invented symbols; footer: '1339 words with the names of its 56 signers (capitalization and punctuation indicated) keyed ... in 1636 C.C. characters', 'Copyright 1925'. A second Conklin copy is in the Louis Kruh collection (National Cryptologic Museum) and his 'The code word' is in the LoC Fabyan collection.",
+   "folio_note": "One sheet viewed (Schmeh photo): about 39 columns x 41 rows of invented stroke signs, three title lines of signs, footer 'Declaration of Independence ... 1636 C.C. characters, Copyright 1925' signed William H. Conklin; second Xerox copy in the Kruh collection",
    "cls": "B",
    "status": "Plaintext stated by the author (the Declaration of Independence, 1,339 words plus the 56 signers' names) but the system was never explained: 1,636 symbols for about 1,400 words means a word/abbreviation code, not a letter cipher. Schmeh (Cipherbrain, 25 Mar 2018) printed the sheet; the 15 comments identify the author (Conklin) but nobody mapped the symbols. Not on DECODE; not in the repo (known.py: Conklin, Vosiklin, Declaration of Independence).",
    "why": "A known-plaintext key recovery of a 1920s amateur code system that reached Riverbank; small historical weight, but a clean test case (full plaintext available).",
@@ -31930,7 +32278,27 @@
    "prior_art": "plaintext stated by the author; system unexplained (checked 28 Oct 2026: Cipherbrain post and comments, web search 'Conklin cryptogram')",
    "access": "online",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L28",
+    "seen": {
+     "kind": "facsimile",
+     "where": "Schmeh, Cipherbrain 25 Mar 2018: scienceblogs.de/klausis-krypto-kolumne/files/2018/03/Declaration-of-Independence-encrypted.jpg (photo of the NYPL sheet) and the footer photo; viewed in full",
+     "extent": "One sheet, a block of about 39 columns by 41 rows of invented stroke signs (about 1,600), three title lines of signs above, and a printed-style footer 'DECLARATION OF INDEPENDENCE ... COPYRIGHT 1925' signed William H. Conklin",
+     "cipher": "Hand-drawn invented glyphs built from a vertical stem with hooks and bars, about 40 columns wide, with the footer stating the plaintext and the symbol count; no key, grid legend or decipherment appears on the sheet. A sign-per-word code is the likely system (the post's commenter Gerd notes sign count is close to the word count)."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (known.py 'Conklin' hits only the catalogue; no DECODE record).",
+     "tomokiyo": "No cryptiana entry for Conklin; search 'Conklin cryptogram Declaration of Independence' found nothing.",
+     "lasry": "George Lasry commented on the Cipherbrain thread (about the Kruh collection) but no solution; no Lasry paper on it.",
+     "edition": "Not published; Kruh listing 'Conklin, Dr. W.H. The Conklin Cryptogram. A True Cipher. Two Xerox pages plus Conklin letter and other material' (National Cryptologic Museum, Kruh collection) may hold his own explanation; LoC Fabyan collection has his 'The code word'.",
+     "literature": "Searches: Cipherbrain post and 15 comments; 'Conklin Cryptogram A True Cipher'; 'C.C. characters Conklin Riverbank NYPL solved'; Kruh collection. No decipherment found; note Friedmans had left Riverbank by 1925 (commenter), so 'Riverbank file' only means the NYPL collection."
+    },
+    "key_check": "Plaintext is the Declaration of Independence with the 56 signers (1,339 words); the Declaration text can be set against the 1,636-sign count as a known-plaintext test. No existing key is held; none of the repo's keys applies to an invented 1925 glyph code.",
+    "duplicates": "known.py 'Conklin' and 'MssCol 176': only this entry and the Riverbank boxes entry (851); no other copy digitised (Kruh copy is Xerox, not online).",
+    "verdict": "open"
+   }
   },
   {
    "id": 851,
@@ -32028,7 +32396,7 @@
    "year": 1906,
    "date": "1905-1906",
    "title": "Leadbeater affair: copy of a 'cipher' note with correspondence from the mother of the fourth boy (Helen I. Dennis Collection on the Theosophical Society)",
-   "correspondents": "unknown",
+   "correspondents": "Charles W. Leadbeater (alleged author) -> Howard Maguire (boy); copy filed with correspondence of Maguire's mother",
    "place": "Chicago",
    "period": "1901-1950",
    "shelfmark": "University of Chicago Library, Hanna Holborn Gray Special Collections Research Center, Helen I. Dennis Collection on the Theosophical Society, Box 3, Folder 16",
@@ -32046,7 +32414,28 @@
    ],
    "prior_art": "open (checked 28 Oct 2026: finding aid only)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L28",
+    "seen": {
+     "kind": "not online",
+     "where": "Dennis Collection finding aid ICU.SPCL.THEOSOPHY.pdf (read), Box 3 Folder 16; folder not digitised",
+     "extent": "a copy of one note, inside a correspondence folder",
+     "cipher": "Finding aid: 'Correspondence with mother of fourth boy in Leadbeater case, 1905-1906 (with copy of \"cipher\" note)'. This is the Leadbeater 'Cipher Letter', the typewritten letter to the boy Howard Maguire, which is the text printed in the literature."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (known.py 'Leadbeater' and 'Dennis': only this entry and the Chicago sweep notes).",
+     "tomokiyo": "No cryptiana entry; the letter's code is described as simple and broken in 1906.",
+     "lasry": "No Lasry work found; 'Leadbeater cipher letter' searches returned only Theosophical history.",
+     "edition": "Pedro Oliveira, 'CWL Speaks' (2013), chapter 6 'The Cipher Letter' (read in the PDF: Leadbeater's replies, mother of the boy mentioned) and the Advisory Board papers discuss the decoded letter; Lutyens 1975 and Tillett 1982 cited for it.",
+     "literature": "Searches: Leadbeater cipher note boys Dennis; Leadbeater secret code 1906 inquiry; enfolding.org series; Wikipedia summary says the code was simple and the decoded passage was too obscene to print; its authenticity is disputed."
+    },
+    "key_check": "No key needed beyond what is known: the cipher letter was decoded in 1906 and its plaintext (Leadbeater's advice, 'sensation' passage) is the subject of the inquiry; no repo key applies.",
+    "duplicates": "known.py searches (Leadbeater, Dennis, Theosophical): no other entry.",
+    "verdict": "read",
+    "closed": "The 'cipher note' is the 1906 Leadbeater Cipher Letter, decoded at the time and discussed in print (Oliveira, CWL Speaks ch. 6); a copy in the Dennis folder adds nothing to read."
+   }
   },
   {
    "id": 854,
@@ -32343,7 +32732,7 @@
    "region": "Germany",
    "period": "1611-1650",
    "shelfmark": "Kassel, Universitätsbibliothek, 2° Ms. theol. 181 (former cover, Bl. 1/2); Popp letters in 2° Ms. chem. 19[2 and 19[5",
-   "folio_note": "the pieces in cipher are 'teilweise veröffentlicht' by R. Schmitz / A. Winkelmann, Pharmazeutische Zeitung 106 (1961), pp. 374-378",
+   "folio_note": "2 Ms. chem. 19[3 (ORKA 1381745635760; former cover now 2 Ms. theol. 181 Bl. 1/2): about 50 pages of Geheimschrift, key material at ff. 62r-62v; seen image 150 (f. 70v). Popp letters in 2 Ms. chem. 19[2 and [5.",
    "cls": "B",
    "status": "Kassel record: the items in Geheimschrift are partly published (Schmitz & Winkelmann 1961). The unpublished remainder is open. Not on DECODE, not in the repo.",
    "why": "Alchemical Geheimschrift of a famous alchemist-prince's court; the partial publication gives symbol values for the rest.",
@@ -32359,6 +32748,14 @@
     {
      "label": "Europeana",
      "href": "https://www.europeana.eu/item/2048445/item_2KAVLCFUX6L2UPF4FU6JFTC65RQUGN7I"
+    },
+    {
+     "label": "ORKA 2 Ms. chem. 19[3, f. 70v (image 150), Geheimschrift leaf",
+     "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/150/"
+    },
+    {
+     "label": "Alchemie am Kasseler Hof (2011), ORKA, no. 23 on the Geheimschrift pages",
+     "href": "https://orka.bibliothek.uni-kassel.de/viewer/image/1486550062531/27/LOG_0025/"
     }
    ],
    "ark": "",
@@ -32373,6 +32770,27 @@
     "note": "Catalogue link points to the wrong volume (19[3). ORKA site shows an Anubis proof-of-work page that clears by itself after about 10 s. Need ORKA viewer ids for 19[2, 19[5 and theol. 181.",
     "date": "2026-10-30",
     "by": "claude frame check 04"
+   },
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L28",
+    "seen": {
+     "kind": "scan",
+     "where": "ORKA Kassel viewer, 2 Ms. chem. 19[3 (https://orka.bibliothek.uni-kassel.de/viewer/image/1381745635760/150/ and /134/, /133/); ORKA full-text catalogue search 'Geheimschrift' (9 hits) and the exhibition catalogue 'Alchemie am Kasseler Hof' (Broszinski/Wiedemann 2011) no. 23, viewed in ORKA",
+     "extent": "Volume 19[3 holds about 50 pages in Geheimschrift (catalogue no. 23: 'Rezepte und Briefe an Landgraf Moritz in Geheimschrift', ff. 62r-62v illustrated). Seen: image 150 (f. 70v), an invented runic-style glyph script in 5 lines with a tipped-in slip carrying a symbol/letter table; ff. 62r-62v are clear German numbered points.",
+     "cipher": "Invented-alphabet Geheimschrift (letter substitution with a key slip and key lists in the volume, 'Schluessel zu zwei Geheimschriften' per the catalogue); partly published by Schmitz/Winkelmann 1961. No decipherment of the glyph leaves is written on them. The frame check of 30 Oct found the linked volume without a cipher page: that volume is in fact the right one (the record's annotation names theol. 181 as its former cover and Ms. chem. 19[2/[5 as the Popp letters)."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (known.py 'chem. 19' and 'Moritz Popp': only this entry and the Europeana sweep).",
+     "tomokiyo": "Not in cryptiana; web searches found no Tomokiyo page for Moritz.",
+     "lasry": "No Lasry or DECODE work found on the Kassel alchemical scripts.",
+     "edition": "Schmitz and Winkelmann, 'Ueber die alchemistischen Geheimschriften im Briefwechsel des Landgrafen Moritz von Hessen-Kassel', Pharmazeutische Zeitung 106 (1961) 374-378 (partial publication per the ORKA annotation; article not seen). Broszinski, Manuscripta chemica in quarto (2011) and the 2011 exhibition catalogue describe the volume.",
+     "literature": "Searches: Kassel Ms. chem. 19 Geheimschrift/Popp, Schmitz Winkelmann 1961 (nothing online), 'theol. 181' Kassel; Moran, 'Privilege, communication and chemiatry' (Moritz's circle) is the relevant secondary work."
+    },
+    "key_check": "A key to two scripts is in the volume itself (catalogue no. 23, ff. 62r-62v region and the slip on f. 70v); no key is held in the repo. The 1961 article's symbol table was not seen, so how much of the rest is readable with it is unknown.",
+    "duplicates": "known.py searches: no duplicate; ORKA lists other Kassel volumes with cipher alphabets (4 deg Ms. chem. 31, 44, 60[5,2) which are separate items.",
+    "verdict": "partly_read",
+    "closed": "Schmitz/Winkelmann 1961 published part of the Geheimschrift pieces and the volume carries its own key material; the rest needs the 1961 table or a rebuild from the in-volume keys."
    }
   },
   {
@@ -32387,7 +32805,7 @@
    "region": "England",
    "period": "1701-1800",
    "shelfmark": "TNA SP 35/46 (SP 35/46/4, /9, /18, /47, /59)",
-   "folio_note": "several enclosed cipher papers",
+   "folio_note": "SP 35/46/59 f. 118 'Undecyphered paper' is the only cipher text itself; /18 and /47 record cypher items 'not enclosed'; /4 and /9 Shortiss about Ward's cypher copy",
    "cls": "B",
    "status": "Catalogue: decipherers could not read it without more text. Neighbouring SP 35 ciphers exist. Not on DECODE.",
    "why": "Atterbury plot (1722-23) Jacobite cipher correspondence.",
@@ -32400,6 +32818,10 @@
     {
      "label": "TNA Discovery record",
      "href": "https://discovery.nationalarchives.gov.uk/details/r/C17214530"
+    },
+    {
+     "label": "TNA Discovery SP 35/46/59 (Undecyphered paper)",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/C17214544"
     }
    ],
    "seen": "catalogue",
@@ -32407,7 +32829,27 @@
    "prior_art": "open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)",
    "access": "archive",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L28",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery API item records C17214468 (SP 35/46/4), C17214474 (/9), C17214485 (/18), C17214530 (/47), C17214544 (/59), read 2026-11-02; none digitised",
+     "extent": "Only SP 35/46/59 (f. 118, c. 1723) is itself a cipher paper; /4 and /9 are Shortiss's letters about Mr Ward's promised copy of a cypher, /18 'The enclosed cypher ... Item not enclosed', /47 'Item not enclosed'.",
+     "cipher": "TNA description of /59: 'Folio 118. Undecyphered paper.'; /47 (f. 94, 23 Nov 1723): 'Received from Mr Willes and Mr Ashfield. They say this cannot be decyphered without vast trouble and time unless they had more of it'. So the entry's 'several enclosed cipher papers' overstates it: the surviving cipher text is the one undecyphered paper."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE (known.py 'SP 35/46' and 'Atterbury Shortiss': only this entry and leads.json UK sweep notes).",
+     "tomokiyo": "No cryptiana page for the 1723 SP 35/46 paper found.",
+     "lasry": "No Lasry or DECODE work found; nothing on SP 35/46/59.",
+     "edition": "Cruickshanks and Erskine-Hill, The Atterbury Plot (2004) covers the plot; Willes and Ashfield (Frederick, per the Historical Journal article) were the decipherers; no edition of this cipher paper found.",
+     "literature": "Searches: Atterbury plot cipher Dillon Willes Ashfield SP 35/46; Willes/Ashfield Add MS 32256 Cruickshanks; Shortiss Paris cipher Dillon Stuart Papers; none mentions /59. British Library Add MS 32256 (Deciphers of Diplomatic Papers) holds Jacobite keys (Pretender's cipher, Mar) that may serve."
+    },
+    "key_check": "Candidate keys are the Jacobite ciphers in BL Add MS 32256 and the Plunket numeral tables in SP 35/47 and 35/73; none is held here and no image of /59 exists to test them, so no key could be applied.",
+    "duplicates": "known.py searches: none; SP 35/45/78 and 35/73/52 are neighbouring pieces recorded separately in leads.json.",
+    "verdict": "open"
+   }
   },
   {
    "id": 862,
