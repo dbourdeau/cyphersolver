@@ -45,6 +45,7 @@ here), put `Status: in progress` or `Status: no write-up` in the first forty lin
 
 New finds are leads, not catalogue entries. Sweeps write `research/<sweep>/candidates.json`, and
 `research/archive_sweep_2026-10/merge.py --write` merges them into `research/leads.json`, never into `catalogue.json`.
+`research/COVERAGE.md` lists what is still unswept: check it before choosing a sweep, and remove a row when a sweep closes it.
 A lead enters the catalogue only through `python docs/_check_catalogue.py --promote <id>`, which refuses it until its
 `vetting` block meets the vetting bar in README Conventions: ciphertext seen, prior art searched in DECODE, Tomokiyo,
 Lasry, the edition and the literature, held keys ruled out, duplicates searched, verdict `open`. Never add an entry to
