@@ -754,6 +754,12 @@
    "kind": "verification",
    "what": "Reproduced all six alignments and source references; raw681/reconstructed682 letters, explicit Danville length mismatch; word shares measured separately.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-01",
+   "kind": "verification",
+   "what": "Follow-up CI required reading_review on four inherited and three new partial texts. Read their supplied prose/alignment; added explicitly labelled model reviews without changing word shares, uncertainty marks or prior attribution. Not independent transcription.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -875,7 +881,13 @@
     "state": "read",
     "read_share": 0.989,
     "summary": "At the start of Canby's campaign against Mobile, Taylor asks Maury to report in cipher the cavalry on each side of Mobile Bay, its strength and commander, to keep the cavalry close to the enemy and in telegraphic touch with D. W. Adams and headquarters, and to name a point outside the city for a courier line.",
-    "note": "read_share from research/reading_audit/v10_relabel.py: 1 hole in 89 words."
+    "note": "read_share from research/reading_audit/v10_relabel.py: 1 hole in 89 words.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex, model review of supplied prose/alignment; not independent transcription",
+     "date": "2026-11-01",
+     "note": "Coherent cavalry, communications and courier instructions. Existing [?west] and SO wording doubts preserved; this reviews supplied prose/alignment, not a fresh independent image transcription. Independent maintainer review pending."
+    }
    },
    {
     "doc": "v11-0022",
@@ -887,7 +899,13 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "Surget reports to Taylor the forwarding of Lee's and Pillow's despatches, a (false) report that Sherman had been wounded, and the permission for Federal ambulances between Big Black and Jackson; in cipher he asks that the War Department again be urged to relieve Col. Watts (probably N. G. Watts, the agent of exchange), whose habits unfit him for the position.",
-    "note": "read_share from research/reading_audit/v10_relabel.py: no holes in 102 words."
+    "note": "read_share from research/reading_audit/v10_relabel.py: no holes in 102 words.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex, model review of supplied prose/alignment; not independent transcription",
+     "date": "2026-11-01",
+     "note": "Coherent report and request to relieve Colonel Watts; cipher sentence about habits reads in context. Identity speculation remains in original notes; no new historical identification. Independent maintainer review pending."
+    }
    },
    {
     "doc": "v11-0036",
@@ -899,7 +917,13 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "Surget tells Levy at Mobile, in cipher, to see that Sam Duncan returns promptly, which is to his advantage, and adds in clear that the enemy (Wilson's raid) seem to have crossed the river at Selma going east.",
-    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1209. read_share from research/reading_audit/v10_relabel.py: no holes in 47 words."
+    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1209. read_share from research/reading_audit/v10_relabel.py: no holes in 47 words.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex, model review of supplied prose/alignment; not independent transcription",
+     "date": "2026-11-01",
+     "note": "Coherent Sam Duncan instructions and Selma report. Existing printed OR decipherment and glyph/segmentation corrections are explicitly acknowledged, not independent recovery. Independent maintainer review pending."
+    }
    },
    {
     "doc": "v11-0039",
@@ -911,7 +935,13 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "Surget passes on to Taylor at Demopolis the news, from Northern papers received by General Hodge, that Richmond fell by assault on 3 April 1865.",
-    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1216. read_share from research/reading_audit/v10_relabel.py: no holes in 31 words."
+    "note": "Earlier solution: OR Ser. I vol. 49 pt. 2 p. 1216. read_share from research/reading_audit/v10_relabel.py: no holes in 31 words.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex, model review of supplied prose/alignment; not independent transcription",
+     "date": "2026-11-01",
+     "note": "Coherent attributed newspaper report of Richmond falling by assault; contemporary report is distinguished from historical fact in preserved notes. Independent maintainer review pending."
+    }
    },
    {
     "doc": "v10-0049",
@@ -1025,7 +1055,13 @@
     "state": "read in part",
     "read_share": 0.782608695652174,
     "summary": "Provisional continuous reading of the Pensacola threat; four lexical groups remain uncertain.",
-    "note": "Known-key contextual reading. No complete prior plaintext located in bounded OR search. Cipher-only word measure in v196-0052_read_measure.txt; 5/23 marked uncertain. Overall target remains in progress. Source, method, uncertainty and manuscript/printed variants: v196-0052_reading_notes.md."
+    "note": "Known-key contextual reading. No complete prior plaintext located in bounded OR search. Cipher-only word measure in v196-0052_read_measure.txt; 5/23 marked uncertain. Overall target remains in progress. Source, method, uncertainty and manuscript/printed variants: v196-0052_reading_notes.md.",
+    "reading_review": {
+     "grade": "B",
+     "by": "OpenAI Codex, model review of supplied prose/alignment; not independent transcription",
+     "date": "2026-11-01",
+     "note": "Provisional English clauses are coherent, but Montgomery, evacuation, force and adequate remain marked uncertain. Review does not upgrade the 18/23 cipher-word share or establish these glyph corrections. Independent maintainer review pending."
+    }
    },
    {
     "doc": "v196-0010-navy",
@@ -1055,7 +1091,13 @@
     "state": "read in part",
     "read_share": 0.8333333333333334,
     "summary": "Wirt Adams instructed to resist and fall back slowly; COMPLETE VICTORY before his 9 March key-change order.",
-    "note": "Known key applied, contextual reading; no exact prior plaintext located in bounded OR search. Cipher-only word measure in v196-0031-wirt_read_measure.txt; 3/18 marked uncertain. Overall target remains in progress. Source, method, uncertainty and manuscript/printed variants: v196-0031-wirt_reading_notes.md."
+    "note": "Known key applied, contextual reading; no exact prior plaintext located in bounded OR search. Cipher-only word measure in v196-0031-wirt_read_measure.txt; 3/18 marked uncertain. Overall target remains in progress. Source, method, uncertainty and manuscript/printed variants: v196-0031-wirt_reading_notes.md.",
+    "reading_review": {
+     "grade": "B",
+     "by": "OpenAI Codex, model review of supplied prose/alignment; not independent transcription",
+     "date": "2026-11-01",
+     "note": "Coherent conditional retreat/railroad instructions with marked Baton, railroad abbreviation and Vicksburg uncertainties; retains partial status and 15/18 word measure. Independent maintainer review pending."
+    }
    },
    {
     "doc": "v196-0018-beauregard",
@@ -1097,7 +1139,13 @@
     "state": "read in part",
     "read_share": 0.9333333333333333,
     "summary": "Regiment readiness and Richmond news; unresolved Danville segmentation retained, with manuscript TOWARDS variant.",
-    "note": "Existing printed decipherment OR I/49/2 p1216, checked with known key; uncertain final glyph segmentation. Cipher-only word measure in v11-0041-maury_read_measure.txt; 1/15 marked uncertain. Overall target remains in progress. Conservatively retained in part because final seven/eight-letter name group has unresolved segmentation despite high lexical share. Source, method, uncertainty and manuscript/printed variants: v11-0041-maury_reading_notes.md."
+    "note": "Existing printed decipherment OR I/49/2 p1216, checked with known key; uncertain final glyph segmentation. Cipher-only word measure in v11-0041-maury_read_measure.txt; 1/15 marked uncertain. Overall target remains in progress. Conservatively retained in part because final seven/eight-letter name group has unresolved segmentation despite high lexical share. Source, method, uncertainty and manuscript/printed variants: v11-0041-maury_reading_notes.md.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex, model review of supplied prose/alignment; not independent transcription",
+     "date": "2026-11-01",
+     "note": "Coherent readiness question and attributed Richmond news. Danville remains marked because cipher segmentation is unresolved; retains partial status and 14/15 word measure. Independent maintainer review pending."
+    }
    }
   ],
   "key_file": [
