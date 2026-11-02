@@ -33416,7 +33416,28 @@
    "needs_archive_scan": "no",
    "access_note": "catalogue description on DigiVatLib; digitised (image viewer free), not opened for the cipher leaf",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude fleet vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://digi.vatlib.it/mss/detail/Vat.lat.9684 (record text fetched via WebFetch; leaves ff. 23r-26r, 131r-133r, 140r, 144r-146v not opened)",
+     "extent": "ff. 23r-26r cipher passages of 19 letters; decipherment of 19 letters ff. 144r-146v",
+     "cipher": "DigiVatLib contents: 'Cifre contenute in XIX lettere autografe' (ff. 23r-26r); item 39 (f. 140r) 'Decifrazione di lettere in cifra dei primi Lincei' and item 40 (ff. 144r-146v) 'Decifrazione (19) di lettere in cifra dei primi Lincei'; items 9 and 35 index the cipher words of Cesi's letters"
+    },
+    "prior_art": {
+     "decode": "Local DECODE dump (research/catalogue_harvest/decode/list.json, 10106 records) searched for Vatican Library/Lincei/Cesi holders and names: no hit. Web record search not run (search limit).",
+     "tomokiyo": "Local cryptiana copies (GL.htm, spanish2C_now.htm, venetian_now.htm, spanish2.htm) grepped for Lincei/Cesi: no hit; tomokiyo.com fetch failed (ECONNRESET); not searched on the web (search limit).",
+     "lasry": "Grepped Lasry's GL.htm locally for Lincei/Cesi: no hit; no web search (search limit).",
+     "edition": "The record's own bibliography lists Gabrieli's study of the first Lincei correspondence 1603-1630 and Partini 1986; editions not otherwise searched (search limit).",
+     "literature": "Same record bibliography (Gabrieli, Partini); no further literature search on the web (search limit)."
+    },
+    "key_check": "The volume holds its own decipherments (items 39-40) so no outside key is needed; no key from the repo was applied.",
+    "duplicates": "known.py on 'Vat. lat. 9684' and 'Lincei': only the sweep candidate; not a duplicate of any target or catalogue entry.",
+    "verdict": "read",
+    "closed": "The DigiVatLib contents description of Vat.lat.9684 itself lists decipherments with the ciphers: item 39 (f. 140r) 'Decifrazione di lettere in cifra dei primi Lincei' and item 40 (ff. 144r-146v) 'Decifrazione (19) di lettere in cifra dei primi Lincei', plus items 9 and 35 indexing the cipher words of Cesi's letters. The ciphers are read in the volume itself; not an open lead."
+   }
   },
   {
    "id": 1921,
@@ -33928,7 +33949,28 @@
    "access_note": "catalogue record only; digitisation not checked",
    "ark": "",
    "access": "archive",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude fleet vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://manuscripts.nls.uk/repositories/2/resources/16378 (collection record, read 2 Nov 2026 in Chrome); collection microfilmed as Mf.Sec.MSS.209-212, not seen",
+     "extent": "none: the cipher key papers are listed as missing from the collection",
+     "cipher": "The record's Scope and Contents states the papers giving the keys of cyphers are among the items missing from the original inventory (MS.3581 ff. 6-7 copy); no cipher item is described among Adv.MSS.29.2.1-9a (Mary of Lorraine letters, James VI papers, etc.)."
+    },
+    "prior_art": {
+     "decode": "Local DECODE dump (research/catalogue_harvest/decode/list.json, groups.json) grepped for Balcarres and Torphichen: no record. DECODE web page not fetched.",
+     "tomokiyo": "Not searched on the web (search limit; tomokiyo.com fetch ECONNRESET); local unsolved.htm grepped for Balcarres/Torphichen with no hit.",
+     "lasry": "Not searched on the web (search limit); local targets and research README grep found no Lasry note on Balcarres.",
+     "edition": "The record cites HMC First Report App. p. 124 and says many papers are published with references under each item; no cipher item described. Editions themselves not opened.",
+     "literature": "Not searched on the web (search limit); covered locally by grep only. Not needed for the verdict, which rests on the archive's own statement."
+    },
+    "key_check": "No key or ciphertext held: the keys are recorded as missing from the collection; no Balcarres or Torphichen cipher series in the repo or DECODE dump (grep Balcarres/Torphichen/Saltoun in targets NOTES, decode_updates, SOLVED_CATALOGUE, research/catalogue_harvest/decode found nothing).",
+    "duplicates": "known.py 'NLS 29.2.1' gave no hits; grep of Balcarres/Torphichen across local DECODE dump, targets/*/NOTES.md, decode_updates/queue.json and SOLVED_CATALOGUE.md found nothing.",
+    "verdict": "not_cipher",
+    "closed": "The NLS collection record itself (Chrome, manuscripts.nls.uk/repositories/2/resources/16378) says 'A few items in that inventory are missing, notably letters of Darnley and of James Sandilands, Lord Torphichen, and papers giving the keys of cyphers': the key papers are NOT in Adv.MSS.29.2.1-9a, so there is no held item to examine. The sweep text misread a note on missing items."
+   }
   },
   {
    "id": 1935,
