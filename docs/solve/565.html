@@ -46,7 +46,7 @@
   <p class="sub">The Second Margrave War (Albrecht Alcibiades) and the Peace of Augsburg years.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1552-1556</dd>
-    <dt>Correspondents</dt><dd>Ulrich Zasius ↔ Council of Nuremberg</dd>
+    <dt>Correspondents</dt><dd>Zasius (probably Johann Ulrich Zasius, not the jurist Ulrich Zasius) &lt;-&gt; Council of Nuremberg</dd>
     <dt>Place</dt><dd>Ulm / Vienna / Nuremberg</dd>
     <dt>Language</dt><dd>German</dd>
     <dt>Held at</dt><dd>Staatsarchiv Nürnberg, Reichsstadt Nürnberg, Losungamt, Akten S I L 215 No 6 and 7 (now Ratskanzlei, B-Laden, Akten B 77 Nr. 1-4) · 'z.T. verschlüsselte Briefe', 'Verschlüsselte Briefe'</dd>
@@ -67,7 +67,7 @@ You are helping a public research project read historical cipher letters that no
 THE CIPHER
   Title:          Dr Ulrich Zasius (imperial vice-chancellor) correspondence with Nuremberg, partly encrypted letters
   Date:           1552-1556
-  Correspondents: Ulrich Zasius ↔ Council of Nuremberg
+  Correspondents: Zasius (probably Johann Ulrich Zasius, not the jurist Ulrich Zasius) &lt;-&gt; Council of Nuremberg
   Place:          Ulm / Vienna / Nuremberg
   Language:       German (expected)
   Held at:        Staatsarchiv Nürnberg, Reichsstadt Nürnberg, Losungamt, Akten S I L 215 No 6 and 7 (now Ratskanzlei, B-Laden, Akten B 77 Nr. 1-4); 'z.T. verschlüsselte Briefe', 'Verschlüsselte Briefe'
@@ -80,15 +80,16 @@ WHAT IS KNOWN
   Prior-art check: open (checked 26 Oct 2026: known.py, quick web search).
   Check first: Order B 77 Nr. 1-4.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/biglia1565/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/biglia1565/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/biglia1565/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +129,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/biglia1565/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+565&amp;target=catalogue+565
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -150,7 +151,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p><b>Status and prior art.</b> Finding aid as quoted. Not on DECODE. Not digitised.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 26 Oct 2026: known.py, quick web search)..</p>
 <p><b>Check first.</b> Order B 77 Nr. 1-4.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/biglia1565/NOTES.md" rel="noopener">targets/biglia1565/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/biglia1565" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

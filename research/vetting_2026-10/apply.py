@@ -14,6 +14,8 @@ for nn in sys.argv[1:]:
         if not l: skipped.append(k); continue
         if 'unvetted' in v and 'verdict' not in v:
             l['vetting_note'] = v['unvetted']; skipped.append(k); continue
+        if isinstance(v, dict) and 'lead_updates' in v:
+            v = dict(v); l.update(v.pop('lead_updates'))
         l['vetting'] = v
         (prom if v.get('verdict') == 'open' else closed).append(int(k))
     LP.write_text(json.dumps(d, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')

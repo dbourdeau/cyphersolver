@@ -49,7 +49,7 @@
     <dt>Correspondents</dt><dd>Nanningh Keyser (Kaiser) → States General (Secrete kas)</dd>
     <dt>Place</dt><dd>Copenhagen</dd>
     <dt>Language</dt><dd>Dutch</dd>
-    <dt>Held at</dt><dd>Nationaal Archief, The Hague, 1.01.02 (Staten-Generaal), inv. 12586.29, 12586.41 · 6 letters described as partly in cipher; not digitised</dd>
+    <dt>Held at</dt><dd>Nationaal Archief, The Hague, 1.01.02 (Staten-Generaal), inv. 12586.29, 12586.41 · seven letters 'gedeeltelijk in cijfer' (inventory count 7, not 6)</dd>
     <dt>Images</dt><dd><a href="https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12586.29" rel="noopener">NA 1.01.02 inv. 12586.29</a></dd>
   </dl>
 </section>
@@ -70,7 +70,7 @@ THE CIPHER
   Correspondents: Nanningh Keyser (Kaiser) → States General (Secrete kas)
   Place:          Copenhagen
   Language:       Dutch (expected)
-  Held at:        Nationaal Archief, The Hague, 1.01.02 (Staten-Generaal), inv. 12586.29, 12586.41; 6 letters described as partly in cipher; not digitised
+  Held at:        Nationaal Archief, The Hague, 1.01.02 (Staten-Generaal), inv. 12586.29, 12586.41; seven letters 'gedeeltelijk in cijfer' (inventory count 7, not 6)
   Images/records:
     - NA 1.01.02 inv. 12586.29: https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12586.29
 
@@ -80,15 +80,16 @@ WHAT IS KNOWN
   Prior-art check: not checked
   Check first: Await the Nationaal Archief's answer on an offline digital copy; failing that, request scan-on-demand; check for decipherments in the volume.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/thurloe/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/thurloe/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/thurloe/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +129,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/thurloe/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+375&amp;target=catalogue+375
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -150,7 +151,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p><b>Status and prior art.</b> NA catalogue: partly in cipher. PHYSICAL only (checked 23 Oct 2026). Not on DECODE. 27 Oct 2026: still not digitised; the Nationaal Archief has been asked whether a digital copy exists that is not online (reply awaited).</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: not checked.</p>
 <p><b>Check first.</b> Await the Nationaal Archief's answer on an offline digital copy; failing that, request scan-on-demand; check for decipherments in the volume.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/thurloe/NOTES.md" rel="noopener">targets/thurloe/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/thurloe" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

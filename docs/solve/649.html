@@ -82,15 +82,16 @@ WHAT IS KNOWN
   Prior-art check: open (27 Oct 2026). Turner 1903 checked by Michael Brackx: No. 5 not printed; reply No. 42 printed p. 1077.
   Check first: Find the clear minute of 25 Messidor an V in AMAE CP États-Unis 47 or 48, or Nasatir &amp; Monell's calendar (1967). Alternatively, find Létombe's 1797-98 ciphered despatches with the ministry's decipherments (CP États-Unis 48; Turner prints them from the decipherment) to rebuild the code.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/jqa/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/jqa/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -130,7 +131,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/jqa/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+649&amp;target=catalogue+649
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -144,14 +145,14 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Where the cipher is</h2>
-<p class="frame viewed"><b>Cipher viewed.</b> The cipher was viewed on the image when the entry was written; the frame is not recorded separately.</p>
+<p class="frame confirmed"><b>Cipher located and confirmed.</b> A French numeric code, groups separated by full stops, no clear text beyond the heading; no decipherment or interlinear gloss on 0244 or 0245 (lower half of each scan is blank). Neighbouring frames 0236-0252 were reported without decipherment by the earlier triage and by Brackx (issue 122). (NARA M30 roll 4 images 0244 and 0245 (catalog.archives.gov/medialz/dc-metro/rg-059/603720/M30/M30-004/M30-004-0244.jpg, fetched by curl 2 Nov 2026, 4568x2952 px); checked 2026-11-02 by claude vetting batch L20)</p>
 <h2>What is known</h2>
 
 
 <p><b>Status and prior art.</b> Transcribed in full by Michael Brackx (issue #122, 27 Oct 2026; transcription in the issue). King's No. 53: 'I have no means of decyphering it'; no decipherment on frames 0236-0252. Turner, Correspondence of the French Ministers 1791-1797 (AHA 1903) does not print No. 5, but prints Létombe's reply No. 42 (22 Brumaire an VI, p. 1077, from the ministry's decipherment, CP États-Unis 48 f. 355): he will follow what the 25 Messidor despatch prescribed for keeping his political correspondence, 'dont je dicte moi-même les chiffres'. So part of No. 5 is probably about the keeping and ciphering of his political letters. Statistics: repeats 705 806 711/400 405 ×7, 474 670 1068 ×3; adjacent frequent pairs 972/973 and 81/82 hint at a one-part code, but a one-part word anneal did not converge; flat profile (top ten 14%). Not on DECODE.</p>
 <p><b>Outcome so far.</b> attempted, open Prior-art check: open (27 Oct 2026). Turner 1903 checked by Michael Brackx: No. 5 not printed; reply No. 42 printed p. 1077..</p>
 <p><b>Check first.</b> Find the clear minute of 25 Messidor an V in AMAE CP États-Unis 47 or 48, or Nasatir &amp; Monell's calendar (1967). Alternatively, find Létombe's 1797-98 ciphered despatches with the ministry's decipherments (CP États-Unis 48; Turner prints them from the decipherment) to rebuild the code.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md" rel="noopener">targets/jqa/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

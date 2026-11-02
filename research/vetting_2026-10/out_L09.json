@@ -1,0 +1,416 @@
+{
+ "335": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "Meister 1902 p. 49 (ULB Muenster 3075984) for the key; the letters themselves: ASF Signori, Responsive, old 'filza Nr. 1', no image route found",
+   "extent": "unknown: sender, folios and number of letters not identified; Gabbrielli's table has 38 signs",
+   "cipher": "Archive description (Meister 1902 p. 49): 'Cifra Decemviri di Balia 1414 (Lettere della Signoria risponsive; filza Nr. 1)', a partial homophonic alphabet rebuilt from glossed words; no ciphertext located or imaged, no decipherment seen"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches); Ilardi reel 58 (Yale Dataverse) opens at 1424 per the entry and the web search of the Yale Dataverse listing, so 1414 is not on it",
+   "tomokiyo": "no Florence 1414 item found in web searches (cryptiana + Gabbrielli + 1414); Tomokiyo's Florence material starts with the 1424 Milanese/Florentine keys",
+   "lasry": "no Lasry/DECODE work on a Florentine 1414 cipher found (searched 'Florence 1414 cifra Gabbrielli' and Voynich-forum threads on the 1424 key)",
+   "edition": "Guasti Commissioni has nothing for 1414 (entry); ASFi finding aid 'archivi antiche segnature' says Signori Responsive are 43 filze, 1340-1531, so 'filza 1' is an old number; no edition of the letters found",
+   "literature": "Meister 1902 prints only the key; web searches (Meister Anfaenge Geheimschrift Florenz 1414 Gabbrielli; ASF Signori Responsive cifre) found nothing reading these letters"
+  },
+  "key_check": "Gabbrielli's 1414 partial key is held (targets/florence1414/KEY.md, 38 signs) but there is no ciphertext to apply it to; the 1424 Zaninus/Johannes keys are a different series",
+  "duplicates": "known.py on 'Signori Responsive', 'Gabbrielli', 'Florence 1414': only this entry, targets/florence1414, research/oldest notes; no duplicate entry or sibling record",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "336": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4796, R4807, R4809 (fetched with the project helper/cookie, scratchpad only; viewed 2 Nov 2026)",
+   "extent": "R4796: one large sheet, Italian letter plus a block of about 9 lines of graphic signs (entry counts 363 signs, gloss gives nine values); R4807: small slip, 5 clear lines then 4 lines of 118-ish signs; R4809: slip with 'Karissimo come padre' and 2 sign lines (about 107 signs) plus a 3-sign closing group",
+   "cipher": "Italian letters with mixed Latin-letter, digit and graphic signs in a monoalphabetic-looking block; no decipherment written on or with R4807 or R4809; on R4796 I saw no interlinear text at the 1124 px viewed (the entry records a nine-value gloss, not re-verified here)"
+  },
+  "prior_art": {
+   "decode": "R4796/R4807/R4809 are on DECODE; R4807 and R4809 status N/A, no cleartext field filled; the other pieces of fasc. 2 are separate entries with decipherments",
+   "tomokiyo": "web search 'Siena Concistoro 2308 lettere in cifra Lasry DECODE' found no Tomokiyo item on these pieces",
+   "lasry": "Lasry's 17 Oct 2026 report (repo research/siena2308) deciphered the other pieces but not nos. 7, 19, 21; web search found nothing published on them",
+   "edition": "Concistoro inventory 1952 (link) lists the pieces only; no edition of the cipher letters found",
+   "literature": "no study of nos. 7, 19, 21 found in web searches; Ilardi reel 1503 holds the filed keys"
+  },
+  "key_check": "Filed Siena keys (R4750 and five others) are reported by the repo (targets/siena7, siena19, siena21) not to fit; I did not re-run those tests here, only confirmed the leaves are unglossed (R4807, R4809)",
+  "duplicates": "known.py on 'Concistoro 2308', 'Siena', 'R4796': the sibling pieces are separate solved entries (SOLVED_CATALOGUE); nos. 7, 19, 21 appear only here and in targets/siena7/19/21",
+  "verdict": "open"
+ },
+ "337": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "Guasti, Commissioni II 457-458 (archive.org bub_gb_3ZkvD-9ug8IC, djvu text read 2 Nov 2026); the Dieci Responsive original is not digitised",
+   "extent": "unknown: the cipher part of one letter; the printed copy breaks off with an etc.",
+   "cipher": "Guasti's printed copy ends 'Quanto piu pensiamo etc. quia multa sunt ciferata, nobis ignota. Sed infra, in fine: Faventie, 27 ottobris 1425' (checked in the archive.org text); cipher not seen anywhere, no decipherment printed"
+  },
+  "prior_art": {
+   "decode": "not on DECODE: the 32 Dieci records R3758-R3789 were viewed in the repo session of 24 Sept (targets/medici1425)",
+   "tomokiyo": "no hit for Faenza 1425 / Averardo de' Medici in web searches",
+   "lasry": "none found; no Lasry work on 1425 Florentine ciphers beyond the Ilardi key volumes",
+   "edition": "Guasti prints the clear part and the note that the ciphered passages were unknown to Albizzi's office; no other edition found",
+   "literature": "web search (Averardo de' Medici, Piero Guicciardini, Faenza 1425, Dieci di Balia) turned up only general Medici correspondence and the Ilardi reel listing (keys from 1424)"
+  },
+  "key_check": "Gabbrielli's Dieci key volume (Ilardi reel 58) starts in 1424 and the repo holds the 1424 keys (florence1429 line); no 1425 key is known and none could be applied without the ciphertext",
+  "duplicates": "known.py on 'Dieci di Balia', \"Averardo de' Medici\": only this entry and targets/medici1425; the Oct 1431 Averardo letters on DECODE are clear Italian, not siblings",
+  "verdict": "open"
+ },
+ "339": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "scan",
+   "where": "https://digitalisate-he.arcinsys.de/hstam/118_a/3954/hstam_118_a_nr_3954_0003.jpg (full image fetched by curl, 2908x3214; ff. 3-4 thumbs seen; viewed 2 Nov 2026)",
+   "extent": "ff. 3-4, about 717 number groups (303 distinct) in dot-separated three-digit figures, 8 images in the file",
+   "cipher": "German heading 'Durchlauchtigster Fuerst' followed by dense dot-separated figures, 1744 docketed; no decipherment or key on the leaf or elsewhere in the 8 images' thumbnails"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "no hit (web search Waldeck 1744 Chiffre; Tomokiyo has no Waldeck page)",
+   "lasry": "no Lasry decipherment found; HCPortal record 517 lists it undeciphered",
+   "edition": "no edition; the prince's French draft reply on f. 4v is the only dating evidence (waldeck1744)",
+   "literature": "web search 'Waldeck 1744 Chiffre HStAM 118 a 3954 entschluesselt' found nothing about this file"
+  },
+  "key_check": "No key held: nothing on Arcinsys, HCPortal or DECODE; Vienna 1740s chancery keys on DECODE are for a different correspondence; undigitised HStAM 118 a Nr. 1973-1980 could hold the key",
+  "duplicates": "known.py '118 a Nr. 3954', 'Waldeck': only this entry, README row and targets/waldeck1744 (already attempted, write-up exists); no duplicate",
+  "verdict": "open"
+ },
+ "342": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "HHStA Tuerkei I Kt. 32 Konv. 3 ff. 199-203; Viennese inventory record via Hungaricana BecsSeg/47620 (read in Chrome 2 Nov 2026); no images",
+   "extent": "ff. 199-203, five folios, wholly in cipher",
+   "cipher": "Viennese inventory (Hungaricana 47620): 'Ungnad - Miksa (teljesen sifrirozott, minden feloldas nelkuli jelentes)', i.e. a report wholly in cipher with no decipherment of any kind; sibling record 47600 (ff. 124-155, Feb 1576) is 'partly cipher, resolved between the lines'"
+  },
+  "prior_art": {
+   "decode": "not on DECODE for this despatch; Ungnad's key is R392 (OSZK Quart. Lat. 2254 f. 23); status N/A there",
+   "tomokiyo": "web search found nothing on a 1576 Ungnad despatch; Tomokiyo covers the 1575 Maximilian letters via Kopal/Waldispuehl",
+   "lasry": "no Lasry work on this despatch; Kopal and Waldispuehl (HistoCrypt) decipher 1575 Maximilian II letters, not this one",
+   "edition": "Laang 2015 inventory lists it (C.Ung.03) as undeciphered; Hungaricana inventory confirms no decipherment with it",
+   "literature": "Graf (OUP blog / Brill) on Ungnad's Istanbul cipher episode of April 1576 does not read this despatch"
+  },
+  "key_check": "Key R392 held (transcribed, targets/ungnad1576/KEY.md) and is the right key family: the Feb 1576 letter on ff. 124-155 carries interlinear resolution and the 1577 despatches were deciphered at the time; cannot be applied until a scan exists",
+  "duplicates": "known.py 'Tuerkei I Kt. 32', 'Ungnad': this entry and targets/ungnad1576 only; Hungaricana lists no other copy of ff. 199-203",
+  "verdict": "open"
+ },
+ "343": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "HHStA Tuerkei I Kt. 37 Konv. 2 ff. 1-8; Viennese inventory record via Hungaricana BecsSeg/48359 (read in Chrome 2 Nov 2026); no images",
+   "extent": "ff. 1-8, eight folios, wholly in cipher",
+   "cipher": "Viennese inventory (Hungaricana 48359): 'teljesen sifrirozott jelentes Sinzendorftol' (a report from Sinzendorff wholly in cipher), no decipherment mentioned; record 48400 shows a ciphered copy of a later report (ff. 232-243) with a second copy at ff. 76-80"
+  },
+  "prior_art": {
+   "decode": "not on DECODE; Breuner's 1575 key is R1384 (homophonic, nomenclator, status N/A) and Ungnad's R392",
+   "tomokiyo": "web search found no Tomokiyo item on Sinzendorff 1578",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Laang 2015 (C.Sin.03) lists it undeciphered; no edition",
+   "literature": "web search on Sinzendorff 1578 returned only Hungaricana inventory records and Heidelberg editions of his 1581 papers"
+  },
+  "key_check": "Candidate keys R1384 and R392 are held (targets/sinzendorff1578) but cannot be tried without images; the inventory shows ciphers with 'feloldas' appear in the 1579 files (Kt. 39), which are the better crib source",
+  "duplicates": "known.py 'Tuerkei I Kt. 37', 'Sinzendorff': this entry, targets/sinzendorff1578 and a leads.json 1578-81 line; no duplicate of ff. 1-8",
+  "verdict": "open"
+ },
+ "344": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "Slovak National Archives, Esterhazy fonds box 636; text of Antal, Marak, Zajac (HistoCrypt 2023, ecp.ep.liu.se/histocrypt/article/689) read 2 Nov 2026",
+   "extent": "six encrypted documents of 1744: one fully encrypted concept and five letters (five French, one German), one from Maria Theresa; only Fig. 6 reproduced",
+   "cipher": "Antal et al.: 'Cardbox no. 636 contains six encrypted documents ... The corresponding plain text parts are not available for these documents'; digit ciphertext, no decipherment in the box"
+  },
+  "prior_art": {
+   "decode": "box 636 not on DECODE or HCPortal (known.py; Antal et al. say archive permissions blocked the upload)",
+   "tomokiyo": "no Tomokiyo/Cryptiana page found for this item (web search on the correspondents and place)",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Antal et al. 2023 only describe the box; box 631 holds a separate German letter of 1744, boxes 634 (Kaunitz 1756-57) and 635 (concepts) have plaintext or partial plaintext",
+   "literature": "web search (Esterhazy box 636 cipher 1744 Maria Theresa) found only Antal et al. and the Dorotheum blog on the 31 July 1744 sibling letter"
+  },
+  "key_check": "Vienna chancery keys of 1740-46 on DECODE (R1562, R1574, R1593-R1598, R1601, R1644, R1691) were tested per the repo and do not reach the values; box 634's keys are for 1756-57 Kaunitz and are not tried here",
+  "duplicates": "known.py 'box 636', 'Esterhazy', 'Maria Theresa': this entry and targets/esterhazy1744; the box-634 and box-635 documents have plaintext so are not siblings of the same gap",
+  "verdict": "open"
+ },
+ "345": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery C3189519 (SP 95/136) read 2 Nov 2026; SP 87/24/33 not retrieved",
+   "extent": "unknown; a bundle of Swedish letters 1748-55 and one del Puerto letter (ff. 96-97)",
+   "cipher": "TNA catalogue title: 'Supplementary: Letters not deciphered' (SP 95/136, 1748-1755); the page says nothing on digitisation; SP 87/24/33 is calendared as an undeciphered letter from the marques del Puerto"
+  },
+  "prior_art": {
+   "decode": "SP 95/136 and SP 87/24/33 are not on DECODE; the Deciphering Branch keys R7801, R7793, R7721, R7723-R7725 are (per repo)",
+   "tomokiyo": "no Tomokiyo/Cryptiana page found for this item (web search on the correspondents and place)",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "no edition of the letters; SP 95 is described by TNA as letters to the Secretary of State from envoys, 1570s-1782",
+   "literature": "web search '\"SP 95/136\" Letters not deciphered' found only the TNA series pages"
+  },
+  "key_check": "Branch keys for Grimaldi/Canis/del Puerto (R7801) and Wynantz/Scheffer (R7721-R7725) are on DECODE and transcribed in the repo; none could be tried because no image was reached",
+  "duplicates": "known.py 'SP 95/136', 'SP 87/24', 'del Puerto': this entry, targets/sp95box136 and the DECODE update queue only",
+  "verdict": "open",
+  "lead_updates": {
+   "title": "\"Supplementary: Letters not deciphered\": Swedish and Spanish intercepts in the State Papers, 1748-55"
+  }
+ },
+ "347": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "Nationaal Archief 1.01.02 inv. 12579.26; the NA inventory page rendered no item text to my fetch (inv. 12579.122 shows digitised, 0 scans for others); inventory text relied on targets/sg1629/NOTES.md",
+   "extent": "one pak, 'diverse briefjes' (number unknown)",
+   "cipher": "NA inventory note as recorded in the repo: 'Bevat diverse briefjes in cijferschrift' (Correspondentie met de gedeputeerden te Arnhem naar aanleiding van de inval in de Veluwe, 1629); no scans, no decipherment recorded"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "no Tomokiyo page found; web searches on the 1629 invasion find nothing on ciphers",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Huygens edition of the Resolutions 1626-30 and Gelders Archief catalogue checked in the repo session of 28 Sept: nothing; my searches (Veluwe 1629 cijferschrift ontcijferd, Montecuccoli) found only the campaign history",
+   "literature": "web search found Marnix as the States' codebreaker (1570s) but nothing for 1629"
+  },
+  "key_check": "No key held; Spanish/Imperial field ciphers of 1629 are not on DECODE",
+  "duplicates": "known.py '12579', 'Staten-Generaal', 'cijferschrift': only this entry and targets/sg1629; no duplicate",
+  "verdict": "open"
+ },
+ "353": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "transcription",
+   "where": "HMC Calendar of the MSS of the Marquess of Ormonde n.s. iv (1906) p. 93, archive.org calendarofmanusc04greauoft djvu text (read 2 Nov 2026, line 9298-9301); manuscript at NLI not online",
+   "extent": "20 figures in two runs ('726 91 33 425 93 58 384 54 700 720' and '732 573 526 32 643 214 55 440') plus 445 and 342",
+   "cipher": "Calendar text: 'what he says of 445 and 342, be true 726, 91, 33 ... but it seems 732, 573 ... This is a trial whether you are skilful in deciphering, else it might have been written in plain letters'; printed without decipherment"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py hits only Cryptoole XX1678-1 and targets/ormond1678)",
+   "tomokiyo": "Cryptiana charlesii2 'An Unidentified Cipher?' lists it unsolved; his Ormond page (March 2024) covers the 1660s Ormond keys and does not mention 1678",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "HMC n.s. iv-v print the passage with no solution; NLI Sources MS UR 006261 (Ormonde to Arran, 24 Jan 1678) not retrievable (403)",
+   "literature": "web searches (the phrase; Ormond Arran 1678 cipher; Cryptiana) found no reading"
+  },
+  "key_check": "Held keys (Ormond-Longford 1680, Ormond-Anglesey 1663-64, Tomokiyo's rejected trial) put low figures on bare consonants and the 1678 Ormond-Arran code is a two-letter code per the repo; none reads the runs, which I did not re-test",
+  "duplicates": "known.py 'XX1678', 'Ormond', 'Arran': this entry, targets/ormond1678 and the Cryptoole snapshot only",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "354": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Klausis Krypto Kolumne 1 May 2016, image Catinat-1.jpg (page 1 of the Aargau leaf, viewed 2 Nov 2026); original Aargau Kantonsbibliothek, Zurlauben archive",
+   "extent": "pp. 1-2 in figures, p. 3 clear; about 591 numbers, highest 464; page 1 viewed (about 19 lines of dot-separated figures)",
+   "cipher": "Page 1 headed 'Au camp d'Ingleshem le 15 7bre 1702', 'Dup.ta' and 'Nr. 93', f. 238, then dot-separated figures; no decipherment on the leaf (page 3 clear text not viewed by me)"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "Cryptiana louisxiv.htm section 9: statistics only, 'None of the known codes above can solve this'",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Memoires et correspondance du marechal de Catinat (1819) not searched for this letter; no printed decipherment found",
+   "literature": "Schmeh/Buesser thread (2016) unsolved; commenters suggest the Bazeries 1690-91 Catinat system and point to jfbouch.fr/crypto/catinat, which I could not fetch (TLS certificate error)"
+  },
+  "key_check": "Tomokiyo reports the 1691 Grand Chiffre, d'Usson 1702 and Catinat's 1691 code do not fit, and the repo (targets/catinat1702) that the petit chiffre 1690 and 8B 1702 keys fail; the jfbouch decoding table was not reached, so it is not ruled out here",
+  "duplicates": "known.py 'Catinat', 'Zurlauben', 'Inglesheim': only this entry, targets/catinat1702 and an unrelated Louis XIV-to-Catinat 1691 lead",
+  "verdict": "open"
+ },
+ "355": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R10181 (4 images fetched with the helper, scratchpad only; image 2 viewed 2 Nov 2026)",
+   "extent": "two leaves of dot-separated numbers, 317 groups, values 2-768 (one 877), clear closing and signature on the last image",
+   "cipher": "Dot-separated figures in 16-18 lines per leaf, 'en Zifra' cover, clear closing 'Nov.e 1718' and signature; no decipherment written on the leaves"
+  },
+  "prior_art": {
+   "decode": "R10181 status 'Non-decrypted', public access; legation keys R10189-R10197 are on the same fonds",
+   "tomokiyo": "no Tomokiyo/Cryptiana page found for this item (web search on the correspondents and place)",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "no edition or calendar entry found that prints a decipherment (web search)",
+   "literature": "web searches (Fernandez Duran / San Felipe / Genova 1718 cifra; Bacallar Alberoni Genova cifra) found no study of this cipher; NoAutopilot/cipher-lab folder lists it as transcribed and blocked at the key"
+  },
+  "key_check": "All nine legation keys R10189-R10197 (Cajon 19 leg. 30, 1711-1718) tested in the repo session (targets/duran1718): none covers the range, R10194 gives nonsense; Dudout's alphabetical 880-entry word-code idea tested by annealing without result; not re-run here",
+  "duplicates": "known.py 'Fernandez Duran', 'San Felipe', 'R10181': this entry, targets/duran1718 and the DECODE update queue; R10196 is a second public numeric record, not a sibling letter",
+  "verdict": "open"
+ },
+ "356": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Klausis Krypto Kolumne 15 Jan 2016, image Luederitz-Kryptogramm-2.png (viewed 2 Nov 2026); original at the Museum fuer Kommunikation, Frankfurt",
+   "extent": "43 five-figure groups in 8 columns (5 full rows and a row of 3), addressed 'Prodrome London', signed 'British Consul.'",
+   "cipher": "Reichstelegraph form 'Telegraphie des Deutschen Reichs', Luederitzbucht, stamped 'British Consulate Luederitzbucht 9 Oct 1911', groups such as 68195 71235 37455; no decipherment on the form"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "Cryptoole XX1911-1 carries it from Cryptiana's unsolved list",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "no edition; the decyphered copy would be at TNA (FO 367/371) and was not sought",
+   "literature": "Klausis Krypto Kolumne 2016 and 2018 posts: puzzle, no solution in the posts or comments seen; web search found nothing else"
+  },
+  "key_check": "No British consular/FO code of 1911 is held in the repo; the 5-figure format fits a numeric code (possibly additive); nothing could be applied",
+  "duplicates": "known.py 'Luederitzbucht', 'Prodrome', 'XX1911': only the Cryptoole candidate lines and this entry",
+  "verdict": "open"
+ },
+ "357": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "transcription",
+   "where": "British History Online, Thurloe State Papers vii pp. 860-869 (read 2 Nov 2026); Rawlinson A 67 p. 270 not viewed",
+   "extent": "three number runs in a short letter: '71 55 45 62 47 8 and 4', '61 50 57 62 72 66 54 61 68 60', '45 58 44 50 72'",
+   "cipher": "BHO prints 'An intercepted letter', Brussels, 3 April 1660 [N.S.], Vol. lxvii p. 270, with 'Paragraph contains cyphered content - see page image' and no decipherment; letter otherwise clear ('war or peace')"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "Cryptiana thurloe.htm reproduces the letter undecoded: 'Another short intercepted letter, not in Add MS 4166, is in Thurloe State Papers, vol.7'",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Birch/Thurloe 1742 prints it bare; BHO gives no gloss",
+   "literature": "web search found only BHO and Bodleian Rawlinson A 67 box listings (no gloss mentioned)"
+  },
+  "key_check": "The repo screened all numbers against twelve transcribed key tables (research/catalogue_review_20261020/brussels_key_screen.json) with no coherent reading; partial tables remain, so not excluded; not repeated here",
+  "duplicates": "known.py 'Rawlinson A 67', 'Thurloe', 'XXXXXX-1': this entry, the Cryptoole snapshot and access_uncertain.md only",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "358": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "facsimile",
+   "where": "BNE Mss/994 f. 85 as reproduced on Cipher Mysteries (Sirtori-page-85.jpg, viewed 2 Nov 2026); BDH record and viewer opened in Chrome (151 images) but the viewer pages did not render in my session",
+   "extent": "ff. 85-87, three pages of short dotted sign groups (~27 symbols, ~800 characters)",
+   "cipher": "f. 85 viewed: 5-6 paragraphs of 1-4-sign groups separated by dots and commas, marginal 'Andru deprada', a ciphered signature; no plaintext or decipherment on the leaf"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "Cryptiana valle.htm: ff. 83-86 and 90 marked undeciphered; dates the record 7 Oct 1604 (f. 90); Valle's solution 'not preserved'",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "BNE Inventario general III (1957) pp. 214-216 describes Mss/994; no edition of the cipher letters",
+   "literature": "Caballero 2012 (Cipher Mysteries) tentative Latin reading, explicitly unverified; Gomez Hernandez transcription; Dudout 2026 (via entry) puts it at Valladolid 1604 and reads no text"
+  },
+  "key_check": "No Sirtori key is held; Valle's solution is not extant; the repo's Ottobon/Venetian keys on the same manuscript (ff. 34-38) are a different system",
+  "duplicates": "known.py 'Sirtori', 'Mss/994', 'Valle de la Cerda': Mss/994 ff. 34-38 (Ottobon, R2252) is a separate entry; ff. 85-87 appear only here and in targets/sirtori1604",
+  "verdict": "open"
+ },
+ "359": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "SOA Plzen, Klaster u Nepomuka, Trauttmansdorff family archive, karton 6 inv. 68; no image route found; Mirka 2012 (ResearchGate) cited via the entry",
+   "extent": "one letter of 13 Nov 1634, length unknown",
+   "cipher": "Archive/literature description (Mirka 2012): a contemporary copy, the only enciphered one among Ferdinand's letters to Trauttmansdorff, with a clear note at the end that Ferdinand enciphered it; cipher alphabet of two- and three-digit numbers only"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches); DECODE holds Kurz von Senftenau letters to Trauttmansdorff (inv. 200) but not this one",
+   "tomokiyo": "no hit for the 1634 letter",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Mirka 2012 reports it undeciphered; no edition",
+   "literature": "web search found Thomas Ernst's solution (MIOeG 129, 2021) of the Ferdinand III - Leopold Wilhelm cipher, the Charles Univ. thesis on Ferdinand III's coded letters to Gallas 1635-38 and Schmeh's Ferdinand III posts; none concern Trauttmansdorff 1634"
+  },
+  "key_check": "Possible key families (Ferdinand III's Gallas cipher 1635-38 in the Charles Univ. thesis; Ernst's Leopold Wilhelm key) are not held in the repo and are for other correspondents; nothing applied",
+  "duplicates": "known.py 'Trauttmansdorff', 'ferdinand1634', 'HUXXXX': this entry (already written up as ferdinand1634.html) and the Kurz von Senftenau entry; no duplicate",
+  "verdict": "open"
+ },
+ "361": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1162 images 1-2 and R1165 image 1 fetched by hand with the DECODE cookie (png names the helper misses; scratchpad only), plus R1162 transcription DOC_R1162_D3593 and status pages of R1163-R1168; viewed 2 Nov 2026",
+   "extent": "R1162 (27 Feb 1491, 2 images): Italian letter in clear with cipher passages of a few words to lines; R1165 (15 Jun 1491, 6 images): mostly graphic-sign cipher with a few clear words; seven DECODE records, six distinct despatches",
+   "cipher": "R1162 image 1 carries contemporary interlinear decipherments above the cipher words ('il regno de l'arcivescovo de Strigonio', 'la Regina', 'famiglia de l'arcivescovo', 'pocha stima'), and DECODE's transcriber typed them as PLAINTEXT lines; all seven records are DECODE status 'Partially decrypted'; the Este decipherments of whole despatches reported by Dudout are not seen"
+  },
+  "prior_art": {
+   "decode": "R1162-R1168 all 'Partially decrypted' (created 2019, Este/Hungary series); transcription R1162 lists the interlinear PLAINTEXT items",
+   "tomokiyo": "no Costabili 1491 item found",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Berzeviczy 1914 prints 1492 no. 8 per Dudout (27 Oct 2026); not verified here",
+   "literature": "no study found; the repo's costabili1493 notes cover the 1493 clear letters only"
+  },
+  "key_check": "Ferrarese Hungary keys are held in the repo only as the Ilardi/Gabbrielli families; the leaves' own interlinear glosses are the nearest key source, and Dudout reports full contemporary decipherments in the archive; no key table tested here",
+  "duplicates": "known.py 'Costabili', 'R1162', 'Ambasciatori Ungheria': targets/costabili1493 and SOLVED_CATALOGUE only; R1163 and R1164 are one letter (identical images, per the entry)",
+  "verdict": "partly_read",
+  "closed": "Contemporary interlinear decipherments of cipher words are written on the leaves (R1162 seen) and every DECODE record is 'Partially decrypted'; the useful job is transcribing the glosses and rebuilding the key, not a ciphertext-only attack"
+ },
+ "362": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "Tant, 'La lettre chiffree de Chalons en Champagne', ARCSI 2014 (www.arcsi.fr/doc/Tant/Chalons.pdf, 3 pages, read 2 Nov 2026); the letter and key images are not online",
+   "extent": "mixed clear/cipher letter in two parts, nomenclature with a vertical alphabet, homophones, code words and at least 23 nulls",
+   "cipher": "Archive/Tant description: 'Cependant malgre la nomenclature, la lettre n'a jusqu'a present jamais ete decodee. C'est un melange clair/chiffre qui se divise en deux parties'; the PDF has no images of the letter, only a 16-line partial decode"
+  },
+  "prior_art": {
+   "decode": "not on DECODE or Cryptoole (known.py, web search)",
+   "tomokiyo": "no Tomokiyo/Cryptiana page found for this item (web search on the correspondents and place)",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Pelicier 1903 inventory p. 252-253 describes the seizure and key; Tant 2014 prints a partial decode with gaps ('Mr de Guise', 'Troyes est mal assure', 'le roy d'Espagne'); the whole ciphered part is not read",
+   "literature": "web searches (Tant Delaval 1594 FF 52 Nerole) found only the ARCSI PDF; Brackx issue #80 is the only other report"
+  },
+  "key_check": "The accompanying nomenclature (key for Monsieur le Bailly Nerole) exists in the archive but is not online; Tant reads scattered words with it and asks about a second layer; no key table held here",
+  "duplicates": "known.py 'Chalons', 'Delaval', 'Nerole': no hit other than this entry and the Brackx issue",
+  "verdict": "partly_read",
+  "closed": "Tant 2014 prints a partial decipherment (16 lines, mostly fragments) made with the surviving nomenclature, so the letter is read in part; the remaining ciphered passages and any second layer need the Chalons images, which are not online"
+ },
+ "363": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "Rott, Inventaire sommaire (1610-1648 vol.) pp. 173, 177 via archive.org; BnF fr. 15913 and Arsenal 4540 f. 167 have no image route I could find",
+   "extent": "'quelques lignes chiffrees' in a copy at Arsenal 4540 f. 167 (13 Apr 1635) and further Melian letters in fr. 15913",
+   "cipher": "Rott, p. 177: '13 Avril, Soleure. Meliand a Bouthillier. Arsenal 4540. fo. 167 cop. [Quelques lignes chiffrees.]' and p. 173 the Meliand-Court cipher at fr. 15913 f. 1; no decipherment noted"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "no Tomokiyo/Cryptiana page found for this item (web search on the correspondents and place)",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Rott lists the letter without 'dechiffre'; no edition found",
+   "literature": "web search (Meliand 1635 chiffre Bouthillier Bellievre 15913) found only biographical pages and a Zurlauben letter of 1637; Brackx issue #81 is the only report"
+  },
+  "key_check": "The Meliand-Court key at fr. 15913 f. 1 exists but is not online; no 1635 French Switzerland key is held in the repo",
+  "duplicates": "known.py 'Meliand', '15913', 'Bouthillier': Bouthillier appears only in unrelated entries (Richelieu, Sabran); no duplicate",
+  "verdict": "open"
+ },
+ "364": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L09",
+  "seen": {
+   "kind": "not online",
+   "where": "target leaves BnF fr. 16026 f. 99 and pp. 130-130bis (not digitised); the sibling Colbert 427 f. 325r (Gallica btv1b10033949q, view 344) was fetched by openapi IIIF and viewed 2 Nov 2026",
+   "extent": "fr. 16026 f. 99: 'quelques chiffres'; pp. 130/130bis: partly ciphered, partly undeciphered; sibling f. 325r has about 8 lines of figures and invented signs with a marginal decipherment",
+   "cipher": "Rott I p. 197 (as given by the entry): f. 99 'Quelques chiffres, non dechiffres'; pp. 130-130bis 'partie chiffree, non dechiffree'; the viewed sibling f. 325r (23 Apr 1585) has a 12-line clear text, a cipher block and a contemporary decipherment in the left margin, which is not on the target leaves"
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py, repo DECODE harvest views, and no hit in web searches)",
+   "tomokiyo": "no Tomokiyo/Cryptiana page found for this item (web search on the correspondents and place)",
+   "lasry": "no Lasry decipherment or DECODE contribution found (web search on the shelfmark and correspondents; Lasry papers not matching)",
+   "edition": "Rott 1882 only; no edition of the cipher passages",
+   "literature": "web searches (Fleury Soleure Villeroy chiffre; Colbert 427 dechiffre) found only Ferrer-Bartomeu's study of Villeroy's secretariat, nothing on these letters; Brackx issue #82"
+  },
+  "key_check": "A partial homophonic key (17 signs from the f. 325v name group, Brackx) and the f. 325r margin decipherment are held (targets/fleury1585); a rigid slide on f. 325r was no better than chance; it cannot be applied to the target leaves until fr. 16026 is photographed",
+  "duplicates": "known.py 'Fleury', '16026', 'Clausse': this entry, README row and targets/fleury1585; the sibling f. 325 is the same project, not a separate lead",
+  "verdict": "open"
+ }
+}

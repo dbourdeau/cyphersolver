@@ -1,0 +1,428 @@
+{
+ "11": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9059845t/f36/full/1100,/0/default.jpg (BnF fr. 3181 f. 55 = canvas 36, viewed 2 Nov 2026 via curl)",
+   "extent": "f. 55 only was viewed now: about 13 lines of sign cipher (one hand, stroke/loop signs with a few Roman letters) between a clear opening ('Mons. de Rennes, j'ay receu...') and a clear continuation of about 12 lines. Colbert 390 pp. 139, 357 and Colbert 392 p. 231 were not re-opened in this pass.",
+   "cipher": "Substitution with graphic signs plus clear text in the same letter (Catherine de Medici to Bochetel, 31 Jul 1563). No interlinear or marginal decipherment on f. 55; the glossed siblings are ff. 57-58 (and Colbert 390 p. 138 etc.), other leaves."
+  },
+  "prior_art": {
+   "decode": "DECODE has the fr. 3181 / Colbert 390 records as Non-decrypted; repo ledgers (known.py 'fr. 3181', 'Colbert 390', 'Bochetel') hit only this entry, targets/rennes1563 and fiesque1567 notes; no DECODE reading or key attached to f. 55.",
+   "tomokiyo": "Tomokiyo reconstructed the Bishop of Rennes' cipher (1561-64) from the glossed letters; a WebFetch of cryptiana unsolved.htm and two WebSearches (Rennes/Bochetel cipher, Catherine de Medici cipher) did not list f. 55 as read or give a text for it; rennes1563 NOTES record the table as the source for the key.",
+   "lasry": "No Lasry paper or GL.htm entry on Bochetel/Rennes 1563 found by search or in the repo ledgers.",
+   "edition": "La Ferriere, Lettres de Catherine de Medicis (1885) prints f. 55 with the cipher passages left blank (per rennes1563 NOTES); no edition supplies the cipher text.",
+   "literature": "No study of the fr. 3181 letters found; the cipher is only treated on Tomokiyo's pages."
+  },
+  "key_check": "Tomokiyo's Rennes table, calibrated on the glossed siblings (ff. 57-58, Colbert 390), applied in targets/rennes1563 with a language-model lattice: f. 55 reaches 0.50 clean sentences on explicit holes, Colbert 390 pp. 357-358 0.27, p. 139 and Colbert 392 p. 231 0.17 (audit 22-23 Oct 2026). So the key is held and fits; what is missing is clean sign transcription, not a key.",
+  "duplicates": "known.py terms 'fr. 3181', 'Colbert 390', 'Bochetel', 'Rennes': only this entry (catalogue.json/CATALOGUE.md/README) and the target notes; no second entry for the same letters. Sibling letters ff. 52, 57 belong to the same series, not duplicates.",
+  "verdict": "key_lookup",
+  "closed": "The cipher is Tomokiyo's reconstructed Bishop of Rennes table, already held and applied here (glossed siblings give the per-hand forms); remaining holes are sign-reading problems on the five leaves, not an unknown system."
+ },
+ "15": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52524472n/f227/full/1100,/0/default.jpg (BnF fr. 3621 fol. 109 = canvas 227, viewed 2 Nov 2026)",
+   "extent": "One page: heading 'Coppie d'une lettre de Monsieur de Lorraine a Monsieur de Vaudemont', clear opening 'Mon filz...', then about 19 lines of letter-pair/ligature cipher with figures 57, 122, 123, 139, 141, 145, 137 and 'mm' marks, a clear passage on munitions and Chasteauvillain, a signature 'Charles' and a clear postscript of about 9 lines.",
+   "cipher": "Letter-pair cipher with number groups inside a clear copy. No decipherment written on or beside the page (no. 22 at fol. 31 is a separate plaintext decipherment of the January letter, not of this one)."
+  },
+  "prior_art": {
+   "decode": "DECODE R9449 is this letter, status Non-decrypted, no key; R9444 (no. 22) is the Decrypted January copy; no DECODE key attributed to Charles III or Vaudemont (lorraine1592 NOTES).",
+   "tomokiyo": "WebFetch of cryptiana unsolved.htm on 2 Nov 2026: entry 'Duke of Lorraine (1592)' marked Solved, BnF fr. 3621 'f.125' (DECODE R9449), letter to Vaudemont 18 June 1592, solved by Tomokiyo in 2025; only the opening ('J'ay este infiniment mal satisfait du peu d'execution') is quoted, no full text or key table.",
+   "lasry": "No Lasry paper on this letter; Lasry (25 Sept 2026 review, per lorraine1592 NOTES) pointed out Tomokiyo's prior solution.",
+   "edition": "No edition of the letter found: lorraine1592 NOTES checked the BnF notice and printed editions; WebSearch on Vaudemont/Lorraine 1592 returned nothing specific.",
+   "literature": "WebSearch 'Tomokiyo Lorraine Vaudemont 1592' found no study; the Desenclos-Lasry HistoCrypt 2024 paper does not cover fr. 3621 (lorraine1592 NOTES)."
+  },
+  "key_check": "Letter-pair key recovered here from the ciphertext alone (decoded about 76.6% of tokens as sense on 5 Oct 2026, 'decoded, not read' under the 22-23 Oct audit); no 1592 Lorraine key sheet in fr. 3995 or on DECODE fits (seven candidate sheets tried per lorraine1592 NOTES).",
+  "duplicates": "known.py 'fr. 3621', 'Vaudemont', 'R9449': this entry, targets/lorraine1592 and dinteville1592 notes, decode_updates queue; fr. 3621 f. 128/130 are Dinteville letters in another cipher. Same-letter duplicate search on DECODE: R9449 only.",
+  "verdict": "partly_read",
+  "closed": "Tomokiyo's cryptiana unsolved.htm lists the letter as Solved (2025, opening quoted only) and our independent decode reaches 76.6% of tokens; a reading exists but no full text is published, and ours is below the read bar.",
+  "lead_updates": {
+   "correspondents": "Charles III, duke of Lorraine -> comte de Vaudemont (Tomokiyo's page says Charles II); shelfmark: Tomokiyo cites 'f.125', the stamped folio on the leaf is 109 (canvas 227)"
+  }
+ },
+ "17": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90074656/f457 and /f461 (BnF fr. 16093 ff. 406 and 410, viewed 2 Nov 2026 via curl)",
+   "extent": "f. 406 (canvas 457): letter from the King dated Chartres 8 Feb 1593, clear opening paragraphs then about 18 lines of continuous two-sign cipher at the foot; f. 410 (canvas 461): 'Du Roy contresigne Revol Secretaire d'Estat a Mr de Maisse', Mantes 27 Apr 1593, clear opening of about 10 lines then about 23 lines of cipher.",
+   "cipher": "Homophonic sign cipher (Tomokiyo's Maisse cipher 2) in running text. No interlinear decipherment on either leaf; the contemporary clear copies are in Brienne 13 (NAF 6984 fol. 171r and 193v), a different volume."
+  },
+  "prior_art": {
+   "decode": "DECODE records for fr. 16093 are not matched to these leaves in the repo ledgers (known.py 'fr. 16093', 'Maisse', 'NAF 6984' hit only this entry and the maisse1592/maisse1593 notes).",
+   "tomokiyo": "Tomokiyo's 'Maisse's Cipher (1592-1593)' key image (henryiv_Maisse2.png) covers this cipher; WebSearch confirmed Tomokiyo's French Ciphers during the Reign of Henry IV page and Savasse (1997) for Maisse's 1590 cipher; the cryptiana page itself was not retrievable by WebFetch (404 on a guessed URL), so what it prints for ff. 406/410 is taken from maisse1593 NOTES.",
+   "lasry": "No Lasry paper on Maisse's ciphers found by search or ledger.",
+   "edition": "Brienne 13 (NAF 6984, Gallica btv1b100904592) holds clear copies of both letters, headed 'Coppie de lettre du Roy audict sieur de Maisse...'; no printed edition of these two letters was located (Lettres missives de Henri IV not checked page by page).",
+   "literature": "WebSearch on Maisse/Hurault cipher gave no separate study."
+  },
+  "key_check": "Tomokiyo's Maisse cipher 2 key applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026 (maisse1593 NOTES, wainut/decode_check.py): it gives the clear-copy text. So a held key reads the cipher; the blocks are not yet fully transcribed.",
+  "duplicates": "known.py: only this entry and targets/maisse1592 (ff. 370, 373), maisse1593. f. 404 is the same despatch as f. 406 sent by the second route; ff. 370/373 are the other two leaves, in another entry.",
+  "verdict": "key_lookup",
+  "closed": "Held key (Tomokiyo's Maisse cipher 2) reads the leaves and contemporary clear copies exist in Brienne 13 fol. 171r/193v; what remains is transcribing the cipher blocks, not breaking a cipher."
+ },
+ "19": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060633d/f268/full/1000,/0/default.jpg (BnF fr. 3984 no. 68, f. 145 = canvas 268, viewed 2 Nov 2026)",
+   "extent": "One page, about 25 lines: clear Spanish opening of 4 lines ('Deus Respuesta a dos cartas de VS...'), then about 21 lines mixing syllable signs, two-digit numbers and three-letter codes (mon, xen, ron, vul, cil), ending 'guarde Dios a VS... de Paris A 10 de Julio 1593', signed Don Diego de Ibarra.",
+   "cipher": "Spanish nomenclator/syllabary cipher (Feria-Mansfeld type) in running text. No decipherment on the leaf; canvases 232-303 were searched for one (ibarra1593 NOTES), only f. 131 deciphering f. 130 and f. 143 turned up."
+  },
+  "prior_art": {
+   "decode": "fr. 3984 no. 68 has no DECODE record in the repo ledgers (known.py 'fr. 3984', 'Ibarra', 'Feria').",
+   "tomokiyo": "Tomokiyo's Spanish cipher page (spanish3.htm, per ibarra1593 NOTES) gives the Feria-Mansfeld key and cites fr. 3984 f. 145; it gives no reading of the letter. WebFetch of nevers.htm and unsolved.htm on 2 Nov 2026 had no Ibarra/fr. 3984 no. 68 entry; WebSearch for Feria/Mansfeld/Ibarra found nothing.",
+   "lasry": "No Lasry paper on this letter found.",
+   "edition": "No edition found; BnF notice 'Lettre, avec chiffre, de D. Diego de Ibarra' (ibarra1593 NOTES).",
+   "literature": "WebSearch on Spanish ciphers of the League period found only Tomokiyo's Cryptologia 2018 paper on a 1591 Spanish cipher, not this letter."
+  },
+  "key_check": "Tomokiyo's Feria-Mansfeld table applied (keyM.tsv): reads 224 of 598 groups (37.5%) and the syllabic figures, but the three-letter word codes that carry the sense have no table; the 1592-93 office key (fr. 3995 f. 97) and Ibarra-Doria / Ibarra-Zuniga key images do not fit. Not a key lookup: the key is incomplete.",
+  "duplicates": "known.py: this entry and targets/ibarra1593, sessa1593 (the Sessa and Miranda letters of the original entry are another target). No second record of f. 145.",
+  "verdict": "open"
+ },
+ "20": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060633d/f24..f35 and f42 (BnF fr. 3984 ff. 12-17 and f. 22, thumbnail montage of canvases 20-50 and a 1000-px crop of canvas 42, viewed 2 Nov 2026)",
+   "extent": "no. 6: six leaves (ff. 12-17, canvases 24-35) of unbroken figures, about 14,500 figures, marginal 'Dup.to 14 Maggio 1593' only; no. 8 f. 22 ('Di Parigi li 15 di Maggio 1593'): continuous digit/figure text, about 30 lines.",
+   "cipher": "Continuous-figure Italian ciphers, no spaces. No decipherment is written on or with the leaves (checked canvases 20-50)."
+  },
+  "prior_art": {
+   "decode": "DECODE has no key record for these two items in the repo ledgers (known.py 'Sega', 'fr. 3984', 'R9455' hit catalogue, decode_updates queue and sega1593 notes).",
+   "tomokiyo": "Tomokiyo, Cryptologia 43(1) 2019 (doi 10.1080/01611194.2018.1503207), 'Identifying Italian ciphers from continuous-figure ciphertexts (1593)': segmented three undeciphered 1593 texts from French archives and gave a preliminary decipherment (BL catalogue abstract found by WebSearch; the article itself not read). cryptiana nevers.htm names Sega's cipher no. 35 but not these leaves.",
+   "lasry": "No Lasry item found.",
+   "edition": "WebFetch of Brice Dudout's page (bdudout.github.io/europe-chiffree/en/sega-1593.html, CC BY 4.0, 2 Nov 2026): a 'probable and partial decipherment' of no. 6 (null figures 3 and 8, letter pairs, small nomenclator, 426 = Navarra, 017 = Infanta), fewer than 30 figures (0.2%) still break it; it agrees with Tomokiyo 2019 on 98% of shared letters and credits Tomokiyo with the preliminary decipherment of nos. 6 and 8.",
+   "literature": "Dudout's page and Tomokiyo 2019 are the literature; no other study found."
+  },
+  "key_check": "No key held here; both items are read by others (Tomokiyo 2019 key and Dudout's values), not yet applied or checked by us (sega1593 NOTES, 'Nothing below has been checked here yet').",
+  "duplicates": "known.py: this entry (with the Desportes/Mauclerc groups already split off into desportes1593 and mauclerc1593) and the queue. The Sega item 'duplicate of 14 May 1593' (no. 6) is a copy of the same instruction, not a second catalogue entry.",
+  "verdict": "partly_read",
+  "closed": "Tomokiyo (Cryptologia 2019) published a preliminary decipherment of both no. 6 and no. 8, and Dudout's page gives a partial reading of no. 6 with nomenclator values; the cipher is not unread."
+ },
+ "21": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90606498/f419/full/900,/0/default.jpg (BnF fr. 3985 f. 209 = canvas 419, viewed 2 Nov 2026); the other six copies (fr. 3985 nos. 66, 116; fr. 3986 nos. 68, 75, 81, 101) were not re-opened in this pass",
+   "extent": "f. 209 (Nevers to Pisany, 8 Sept 1593): clear letter of about 22 lines with three runs of continuous two-digit figures (about 3 lines each), signed 'Louis de Gonzague'.",
+   "cipher": "Continuous digit cipher (Tomokiyo's Nevers cipher no. 46) inside running text; no decipherment written on f. 209."
+  },
+  "prior_art": {
+   "decode": "No DECODE reading in the repo ledgers (known.py 'fr. 3985', 'Pisany', 'Revol' hit only catalogue/README and targets/nevers1593, revol1593).",
+   "tomokiyo": "WebFetch of cryptiana nevers.htm on 2 Nov 2026: Nevers to Pisany fr. 3985 fol. 209 'undeciphered though one passage is shown' (cipher no. 46); fr. 3986 fol. 168 'undeciphered' with a partial reading 'Duc de Nevers ne sera receu come ambassadeur pour plusieurs raisons'; Gondy to Pisany fr. 3986 fol. 64 in no. 46. Revol is not mentioned.",
+   "lasry": "No Lasry paper on these letters found; the Desenclos-Lasry Nevers (1592) paper, found by WebSearch, treats another letter.",
+   "edition": "Memoires de Nevers ii pp. 324-513 print the Instruction of 31 Aug 1593 (a crib); no edition prints these ciphers deciphered.",
+   "literature": "The Desenclos-Lasry HistoCrypt paper on Henri IV to Nevers (1592) is the nearest literature; nothing on fr. 3985/3986."
+  },
+  "key_check": "Tomokiyo's Nevers cipher no. 46 (fr. 3995 f. 87) gives 390 of 391 groups a value for the two Pisany letters; the Revol letters are in the Court cipher no. 60 (fr. 3995 ff. 108-111), applied tentatively (three words on f. 88r). Audit of 22-23 Oct 2026: still no passage builds sentences.",
+  "duplicates": "known.py: this entry plus targets/nevers1593 and revol1593 (the same seven copies split by key on 15 Oct 2026, so this catalogue row is the combined legacy one); no separate DECODE duplicates found.",
+  "verdict": "partly_read",
+  "closed": "Tomokiyo's nevers.htm already gives a partial reading of fr. 3986 f. 168 and the key no. 46 for the Pisany letters, and the keys for both groups are held here; the entry mixes two ciphers and is not unread."
+ },
+ "30": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525245007/f83/full/900,/0/default.jpg (BnF fr. 3623 no. 24, f. 37r = canvas 83, viewed 2 Nov 2026); nos. 25, 60 and 78 not re-opened now",
+   "extent": "f. 37r, 'Du 15 juin 1590': clear letter of about 40 lines with two short runs of two-digit figures (e.g. 99 38 39 45 36 93 38 ...) and a few single code numbers (22, 51, 44, 84).",
+   "cipher": "Two-digit figure alphabet inside running text. No decipherment on the leaf (nos. 25 and 60 carry a few faint letters over single figures, per champagne1590 NOTES)."
+  },
+  "prior_art": {
+   "decode": "DECODE R9453-R9459 are these letters (nos. 23, 24, 25, 60); Non-decrypted; repo queue has corrections pending.",
+   "tomokiyo": "WebFetch of cryptiana nevers.htm (2 Nov 2026) has no fr. 3623 entry; unsolved.htm (first 100000 characters) had none either. The champagne1590 NOTES record that no. 25 was read in part with Tomokiyo's Nevers key no. 25.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition found; the Nevers Memoires print some of the correspondence but no deciphered texts of these.",
+   "literature": "WebSearch for fr. 3623 and Nevers Champagne 1590 found no study."
+  },
+  "key_check": "Two-digit alphabet rebuilt from the glossed letters (63 of 104 figures valued); Tomokiyo's Nevers key no. 25, matched by Michael Brackx (champagne1590 NOTES, 25 Oct 2026, not re-verified here), reads no. 25 in part. No key reads nos. 24 and 60 whole.",
+  "duplicates": "known.py 'fr. 3623', 'R9454', 'Champagne': this entry, targets/champagne1590, bienvenut1590 (no. 23, another key), lauriere1593; no. 78 is a separate one-group code.",
+  "verdict": "partly_read",
+  "closed": "A third-party partial reading of no. 25 with Tomokiyo's Nevers key exists (champagne1590 NOTES), and the alphabet is largely rebuilt here; cited from the target notes, not independently confirmed in this pass."
+ },
+ "36": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1955 (de-crypt.org RecordsView/1955, full-size PNG image 1 of 2 viewed 2 Nov 2026 via the cookie)",
+   "extent": "Image 1 (turned 90 degrees): the last page of a numeric nomenclator text, about 7 lines of dot-separated numbers (e.g. 1597 . 5346 . 2692 . 258 ...), ending 'a Berlin ce 28e Decemb: signe Frederic'; 362 groups over the two pages per the record.",
+   "cipher": "Numeric nomenclator (Prussian envoy code). 'signe' marks it as a copy of the rescript. No decipherment on image 1; image 2 not viewed."
+  },
+  "prior_art": {
+   "decode": "DECODE R1955 status Non-decrypted (Nomenclatures, numerical); the sibling reports R1050/R1051 carry the contemporary decipherments.",
+   "tomokiyo": "No Tomokiyo page covers Prussian 1751 envoy codes (cryptiana unsolved.htm first 100000 characters has no Michell/Frederick entry).",
+   "lasry": "No Lasry item found.",
+   "edition": "WebSearch of the Trier edition of the Politische Correspondenz found letters to Michell of 28 Sep and 2 Oct 1751 (Nr. 5109, 5113) but no 28 Dec 1751 item; targets/michell1751 notes say it is not in PC.",
+   "literature": "WebSearch found no study of Michell's Prussian code."
+  },
+  "key_check": "The envoy-code table rebuilt from R1050/R1051 matches but values only 95 of 360 groups; no other Prussian 1751 key held (r1955 NOTES).",
+  "duplicates": "known.py 'R1955', 'Michell', 'inv.nr. 198': only this entry and the target notes; R1050/R1051 are other records in the same series (the keyed reports).",
+  "verdict": "open",
+  "lead_updates": {
+   "note": "the DECODE image is a copy of the rescript ('signe Frederic'), not the original"
+  }
+ },
+ "46": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R731 (de-crypt.org RecordsView/731, full-size PNG images 1 and 2 of 3: image 1 viewed 2 Nov 2026), MNL OL G15 Caps. H Fasc. 226 pp. 31-33",
+   "extent": "p. 31 (image 1): Hungarian letter in clear with three ruled-off passages of graphic signs (about 4 lines, 3 lines and 2 lines on this page), signs separated by dots and colons; the other passages on pp. 32-33.",
+   "cipher": "Graphic-sign substitution (DECODE: simple substitution, graphic signs) inside a clear Hungarian letter from Belgrade, Papai to Rakoczi. No decipherment or gloss written on p. 31; 'Hungarian National Archives' label on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R731 Non-decrypted; the other Papai records are read with envoy key R580 (papai1706).",
+   "tomokiyo": "Tomokiyo's cryptiana unsolved.htm (first 100000 characters) has no Papai graphic-alphabet item.",
+   "lasry": "No Lasry item; the Heder (SZTAKI) paper linked from the DECODE page concerns DECODE, not this cipher.",
+   "edition": "No edition of the R731 passages located; the Archivum Rakoczianum prints letters but not the sign passages (WebSearch in Hungarian found nothing on this cipher).",
+   "literature": "Hungarian WebSearch 'Papai Rakoczi 1710 titkosiras jelias' returned only unrelated Rakoczi diplomacy pages."
+  },
+  "key_check": "Papai's numeric envoy key R580 does not apply (graphic signs); a control-validated substitution solver on a tentative ~330-sign transcription found no Hungarian (papai1710 NOTES); no graphic alphabet key held.",
+  "duplicates": "known.py 'R731', 'Papai': this entry and targets/papai1706, papai1710; R784 (another Papai letter) is another entry with key R581.",
+  "verdict": "open"
+ },
+ "57": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R664 images 1-3 (p. 1 viewed) and R660 images 1-2 (p. 1 viewed), TNA SP 106/10 ff. 167-169 and neighbours, 2 Nov 2026",
+   "extent": "R664 p. 1: a worksheet page with 'Il Repiego preso da noi di...' and numbered lines 34-45, each of three-figure code groups with Italian words and syllables written above the groups and bracketed runs; R660 p. 1: numbered lines 7-15, Italian text in clear lines alternating with code groups, interlinear glosses and cross-outs.",
+   "cipher": "Three-figure syllabic code (Venetian) with the English codebreaker's own interlinear decipherment of many groups written on the leaf (DECODE status for R664 and R660: Partially decrypted); his grid R658 gives the table."
+  },
+  "prior_art": {
+   "decode": "DECODE R664, R660 status 'Partially decrypted' (Italian cleartext), grid R658; R722/R931 are other records of the case.",
+   "tomokiyo": "Tomokiyo's unsolved.htm (first 100000 characters) has no SP 106/10 Venetian item.",
+   "lasry": "No Lasry paper on the SP 106/10 Venetian cifar found; the repo ledgers (sp106box10) cite none.",
+   "edition": "No printed edition of the codebreaker's worksheets found; TNA catalogue only.",
+   "literature": "WebSearch for the Venetian Cifer of c. 1623-25 found nothing beyond the TNA series."
+  },
+  "key_check": "Codebreaker's grid R658 gives a 102-value syllabary and about 45 values were aligned from his glosses on R664 (sp106box10 NOTES); groups 233, 312, 367, 439, 477, 534, 551, 556, 566 have no value.",
+  "duplicates": "known.py 'R664', 'R660', 'R658': this entry, decode_updates queue, targets/sp106box10; R722 (catalogue 66) and R931 (catalogue 58) are separate entries; R703 is a worksheet of 66.",
+  "verdict": "partly_read",
+  "closed": "A contemporary partial decipherment is written on the leaves (the codebreaker's interlinear glosses, DECODE 'Partially decrypted') and his grid R658 supplies the key; what is not made is a continuous reading."
+ },
+ "66": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R722 images 1-3 (images 1 and 2 viewed 2 Nov 2026), TNA SP 106/10 ff. 193-195",
+   "extent": "Image 2: lines numbered 1-15, about 420 code groups in all (three-figure), alternating with clear Italian words and short written-in letters above many groups, cross-outs; image 1: lines 45-48 plus the endorsement 'Cypher of a Venetian Secretary to the Embassador of that nation' and 'a.o 1625'.",
+   "cipher": "Three-figure syllabic/homophonic code with sparse interlinear words and the codebreaker's cancelled attempts on the leaf (DECODE status: Partially decrypted); not a continuous decipherment."
+  },
+  "prior_art": {
+   "decode": "DECODE R722 'Partially decrypted' (Nomenclatures, homophonic substitution; Italian plaintext); worksheets R703, R656, R661-R663, R667, R684, R701, R702, R720 are the codebreaker's papers.",
+   "tomokiyo": "Tomokiyo's unsolved.htm (first 100000 characters) has no Venetian 1625 item.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition; CSP Venetian not checked line by line (the letter is an intercept in the English file).",
+   "literature": "WebSearch found nothing on this intercepted Venetian letter."
+  },
+  "key_check": "The codebreaker's partial key on R701 p. 3 and clear-text junctions give four values and a few more; annealing on 420 groups did not converge (sp106r722 NOTES).",
+  "duplicates": "known.py 'R722', 'R703', 'Venetian secretary': this entry, README, decode_updates queue, targets/sp106r722; R703 was the old closed entry for the worksheet of this letter.",
+  "verdict": "partly_read",
+  "closed": "The leaf carries partial interlinear decipherment by the contemporary codebreaker and his worksheets with a partial key (R701 p. 3); DECODE lists it Partially decrypted; the code text as a whole is still unread."
+ },
+ "74": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R7927 images 1-3 viewed 2 Nov 2026 (BL Add MS 32270 ff. 16-17)",
+   "extent": "f. 16 docket 'Palm & Staremberg / German'; ff. 16v-17: German letter in clear with 14 runs of dot-separated numbers (e.g. 53.474, 38.33.799.48.40.49...), about 160 letter tokens plus 3-figure codes, and small letters written over many numbers ('n' over 23 and 33, 'der' over 230, long-s over 40).",
+   "cipher": "Homophonic numeric cipher (2-79) with 3-figure codes inside a German letter. A partial decipherment is written over the figures by the contemporary reader (DECODE status: Partially decrypted)."
+  },
+  "prior_art": {
+   "decode": "DECODE R7927 'Partially decrypted'; R7928 is the Windischgratz-Starhemberg key sheet; R7930 = cover of a Palm-Visconti letter with a worksheet.",
+   "tomokiyo": "Tomokiyo unsolved.htm (first 100000 characters) has no Palm/Starhemberg 1727 item.",
+   "lasry": "No Lasry item found; PR #21 (Feyseel) word-solver finds no German, pointing to the transcription (palm1727 NOTES).",
+   "edition": "No edition found; Add MS 32270 is the Deciphering Branch volume.",
+   "literature": "WebSearch not specific; Visconti/Palm 1727 covered in targets/visconti1727 notes."
+  },
+  "key_check": "R7928 (Windischgratz-Starhemberg key) does not fit; glossed values 33=e 23=n 10=d 15=t 40=long s 230=der from the leaf's own marks; Palm's key itself is not held.",
+  "duplicates": "known.py 'R7927', 'Palm', 'Add MS 32270': this entry, README, targets/palm1727 and visconti1727 (R7930/R7931 are the keys and covers, other entries).",
+  "verdict": "partly_read",
+  "closed": "A contemporary partial decipherment is written over the figures on the leaf (n, der, long s above recurrent groups) and DECODE lists it Partially decrypted; the cipher passages are not read through."
+ },
+ "75": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8871 images 1-2 (image 1 viewed 2 Nov 2026), BL Add MS 32280 f. 3",
+   "extent": "A ruled form headed 'Suite du No 13' / 'No 24' with 77 three-character groups (letters, digits, oe) filling 6.5 of 18 rows of 12 boxes; the rest empty.",
+   "cipher": "Trigram code groups on a copy form; no plaintext, gloss or key written on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R8871 Non-decrypted; no sibling leaf of the same series is imaged.",
+   "tomokiyo": "Tomokiyo's cryptiana pages (unsolved.htm first 100000 characters) have no Add MS 32280 entry.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition (BL Deciphering Branch papers).",
+   "literature": "WebSearch found nothing on this form."
+  },
+  "key_check": "None of the 26 DECODE key records of Add MS 32280 (R8890, R8894-R8919, 1790-1842) fits; 76 of 77 groups are distinct (r8871 NOTES).",
+  "duplicates": "known.py 'R8871', 'Add MS 32280': this entry, README, decode_updates queue; R8870 (ff. 1-2) is an unrelated numeric letter.",
+  "verdict": "open"
+ },
+ "87": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R9256 (single JPG, 3262 x 4169, viewed 2 Nov 2026), BL Add MS 4136 f. 172",
+   "extent": "Forbes tracing leaf: four ruled-off cipher passages (about 1 line each, signs in a box script with dots and strokes) at the top, upside down, with 'Henry Percy' signature and docket 'Sir Henry Percy to Sir Wm Cecill from Norham 22 July 1559'; below, the key table 'Sturmius's Cipher' (alphabet in Greek-like signs, names of princes, nulls).",
+   "cipher": "Graphic-sign cipher passages, tracing only; the Sturmius key on the same leaf is a different cipher. No decipherment of the Percy passages on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R9256 Non-decrypted; the Sturmius key is on the same record image.",
+   "tomokiyo": "Tomokiyo's elizabeth.htm and unsolved.htm (WebFetch 2 Nov 2026) have no Percy 1559 entry.",
+   "lasry": "No Lasry item found.",
+   "edition": "Calendared CSP Foreign I 1051 and Bain CSP Scotland I 501 ('a few words in cipher, deciphered by Cecill') per percy1559 NOTES; the decipherment is on the original, TNA SP 52/1, not online.",
+   "literature": "No study found."
+  },
+  "key_check": "Sturmius's key on the same leaf does not fit; Throckmorton's ciphers 1-3 and Croft (R9260-R9262) do not fit (percy1559 NOTES).",
+  "duplicates": "known.py 'R9256', 'Percy', 'Add MS 4136 f 172': this entry and targets/percy1559. Same-letter record: TNA SP 52/1 original (not imaged).",
+  "verdict": "open",
+  "lead_updates": {
+   "note": "A contemporary decipherment by Cecil exists on the original TNA SP 52/1 (not seen); leaf f. 172 also carries Sturmius's key, so the Sturmius key is on the same page, not a separate unrelated record"
+  }
+ },
+ "92": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R9241 images 1-2 (image 1 viewed 2 Nov 2026), BL Add MS 4136 ff. 148-149",
+   "extent": "f. 148: the end of the Coligny letter (numbered passages 15-24 with margin glosses 'de/livr', 'surprendr', 'enferire') and, below a ruled line, the start of the Catherine de Medici letter in a different sign set (about 8 lines of Latin letters, ligatures, digits), with the docket 'La Reine-mere de France a Mr de Foix Ambass: en Angleterre 15 Jan 1563'.",
+   "cipher": "Homophonic sign cipher (Paul de Foix's own cipher). The margin glosses belong to the Coligny letter; no decipherment of Catherine's letter on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R9241 Non-decrypted; R9238 (Coligny, same leaf run) is Decrypted.",
+   "tomokiyo": "Tomokiyo: sign set matches Paul de Foix's cipher reconstructed from his 1565 letters (foix1563 NOTES; Feyseel Nur, PR #21). cryptiana elizabeth.htm (WebFetch 2 Nov 2026) has no entry for this letter.",
+   "lasry": "No Lasry paper; Lawrence Beck's independent partial decipherment (PRs #18, #27) agrees on 19 of 25 shared signs.",
+   "edition": "Not in Forbes or CSP Foreign vi (foix1563 NOTES); Coligny's letter is printed in Forbes ii and CSP For. vi no. 76.",
+   "literature": "WebSearch for Catherine de Medici ciphers found Tomokiyo's blog section on her ciphers but nothing on this intercept."
+  },
+  "key_check": "Throckmorton's ciphers (R9260-R9262) and Croft's do not fit; Foix's reconstructed key plus Beck's partial reading cover most signs; 14 of 78 key entries rest on one occurrence and a dozen signs are unvalued (foix1563 NOTES).",
+  "duplicates": "known.py 'R9241', 'Foix', 'Add MS 4136': this entry, README, targets/coligny1563 (R9238) and foix1563. R9238 is the Coligny letter, a different item.",
+  "verdict": "partly_read",
+  "closed": "A key (Foix's own cipher, Tomokiyo's reconstruction) and Lawrence Beck's partial decipherment exist; the text is read in part but below the read bar.",
+  "lead_updates": {
+   "note": "f. 148 carries the end of the Coligny letter above the Catherine letter; docket and 15 Jan 1563 date confirmed on the image"
+  }
+ },
+ "97": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2988 (BL Add MS 4136 f. 32) and R2989 (f. 33), single JPGs 3269 x 4205, viewed 2 Nov 2026",
+   "extent": "f. 32: Throckmorton to the Queen, 10 July 1559, a full-page sign cipher of about 12 lines, plus the margin text under it (about 12 lines of cursive strokes with boxed groups and a separate 3-line starred block); f. 33: Throckmorton to Cecil 8 Aug 1559 (19 numbered sign passages) and, at the foot, John Wod's 1568 one-line sign cipher.",
+   "cipher": "The f. 32 margin and Wod's line are in unidentified systems; the main 10 July letter is in Throckmorton's Cipher 1 (DECODE note) and the 8 Aug passages in Cipher 3. No decipherment is written on either leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R2988 and R2989 are Partially decrypted, with Throckmorton's Cipher 1 key attached to R2988.",
+   "tomokiyo": "WebFetch of cryptiana unsolved.htm (2 Nov 2026): 10 July 1559 letter reads with Cipher 1 but the marginal ciphertext 'seems to be in a different, unknown cipher'; the 8 Aug letter reads with Cipher 3, while Wod's (1568) ciphertext on the same sheet is also unknown.",
+   "lasry": "No Lasry item found.",
+   "edition": "Printed abstracts CSP For. i nos. 947 and 950 (8 July 1559 despatches) are the probable source of the margin; the margin is not deciphered there (throck1559margin NOTES); Wod's line needs Hatfield, Cecil Papers vol. 1.",
+   "literature": "No study of the margin or of Wod's 1568 cipher found."
+  },
+  "key_check": "Throckmorton ciphers 1-3 (R9260/R9262), Croft and Sturmius do not read the margin or Wod's line (222 word-sign groups, 113 used once; Wod's 39 signs have no unique solution ciphertext-only).",
+  "duplicates": "known.py 'R2988', 'R2989', 'Wod': this entry, README, decode_updates queue, targets/throckmorton, throck1559margin, wod1568. The 10 July letter itself is covered by its own page (throck1559).",
+  "verdict": "open"
+ },
+ "120": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8499 (6 images, first two viewed 2 Nov 2026), BL Harley MS 1582 ff. 8-10",
+   "extent": "f. 8: about 24 lines almost wholly in graphic-sign cipher with a few clear English words ('pleasing in your highness to understand that', 'it seeming by his saying that', 'pleasur'); no gloss over the signs.",
+   "cipher": "Graphic-sign substitution with clear English interpolations (Wotton to Queen Mary, 13 June 1554). No interlinear decipherment on the leaf; the contemporary clear copy (Harley 1582 art. 2, ff. 5r-7v) is not digitised."
+  },
+  "prior_art": {
+   "decode": "DECODE R8499 Non-decrypted; the key R354 (TNA SP 106/2 f. 162, 'France 1554') is on another DECODE record.",
+   "tomokiyo": "Tomokiyo's elizabeth.htm (WebFetch 2 Nov 2026): Wotton sent Mary a new cipher on 9 May 1554 (CSP Foreign Mary), no shelfmark or solution given.",
+   "lasry": "No Lasry item found.",
+   "edition": "CSP Foreign Mary calendars the despatch; no printed text of the cipher passages found.",
+   "literature": "No study found."
+  },
+  "key_check": "DECODE R354 matched and corrected over eight passes (harley1582r8499 NOTES): about 69% of non-null signs read, 31% tentative or not sense, about 40 rare code signs unvalued.",
+  "duplicates": "known.py 'R8499', 'Harley MS 1582', 'Wotton': this entry, README, targets/harley1582r8499; R8500 (Stafford 1586, entry 118) and R8505 (entry 121) are other letters in the same volume.",
+  "verdict": "key_lookup",
+  "closed": "A held DECODE key (R354) reads most of the letter; the remainder is key corrections and rare signs, and the clear copy exists at the BL."
+ },
+ "121": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8505 (4 images, image 1 viewed 2 Nov 2026), BL Harley MS 1582 ff. 263-264",
+   "extent": "f. 263: heading 'L'Estat du Roy de Navarre & de son party en France', about 60 lines of clear French in a secretary hand with 12 inline runs of graphic signs (about 3,630 signs over the whole memoir).",
+   "cipher": "Homophonic sign alphabet inline in clear French, plus nomenclator numbers (21, 81...). No decipherment or gloss on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R8505 Non-decrypted; 4 decode_updates queue entries pending.",
+   "tomokiyo": "Not on Tomokiyo's unsolved.htm (first 100000 characters) nor elizabeth.htm.",
+   "lasry": "No Lasry item found.",
+   "edition": "WebSearch for the memoir title found no edition or other manuscript copy (only 1587-89 Navarre declarations); not checked in the BnF Archives et manuscrits catalogue.",
+   "literature": "No study of the memoir located."
+  },
+  "key_check": "Sign alphabet rebuilt from the ciphertext by annealing against a 1530-1600 French model; ten nomenclator numbers (6, 21, 26, 36, 51, 57, 72, 81, 99, 721) and about 5% illegible; no key held.",
+  "duplicates": "known.py 'R8505', 'Estat du Roy de Navarre': this entry, README, decode_updates queue, targets/harley1582r8505; R8501 (Stafford 1586) is another entry.",
+  "verdict": "open"
+ },
+ "123": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8363 (3 images, image 1 viewed 2 Nov 2026), BL Harley MS 260 ff. 398-399",
+   "extent": "f. 398: a clear letter-book copy ('the 21th of Januarie 1572', Walsingham's signature, addressed to the Lord Treasurer) in which a short run of about six signs appears after 'to' (about '21 t E 94' with a boxed copyist's placeholder); no other cipher.",
+   "cipher": "Letter-book copy, clear English except a port-name run of six signs. No decipherment or gloss."
+  },
+  "prior_art": {
+   "decode": "DECODE R8363 Non-decrypted.",
+   "tomokiyo": "Not on Tomokiyo's elizabeth.htm (WebFetch 2 Nov 2026).",
+   "lasry": "No Lasry item found.",
+   "edition": "Printed in Digges, Compleat Ambassador (1655) p. 313 with the cipher left unread (walsingham1572 NOTES).",
+   "literature": "No study found."
+  },
+  "key_check": "No 1572-73 Walsingham key survives in the repo or on DECODE; the run is too short for a solver.",
+  "duplicates": "known.py 'R8363', 'Harley MS 260', 'Digges': this entry, README, decode_updates queue, targets/walsingham1572; R8361 (entry 125) is another leaf of the letter-book.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "21 Jan 1572/3 (the leaf reads 'the 21th of Januarie 1572', old style)"
+  }
+ },
+ "125": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L07",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8361 (6 images, image 1 viewed 2 Nov 2026), BL Harley MS 260 f. 367",
+   "extent": "f. 367 (Leicester to Walsingham, Nov 1572): clear letter-book copy with two boxed [9] name codes and a short sign run near the foot (about 9 signs); further boxed names on the other images.",
+   "cipher": "Name codes and a short sign run inside a clear letter-book copy. No decipherment or gloss on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R8361 Non-decrypted.",
+   "tomokiyo": "Not on Tomokiyo's elizabeth.htm (WebFetch 2 Nov 2026).",
+   "lasry": "No Lasry item found.",
+   "edition": "The four letters are printed in Digges 1655 pp. 297-301 with the codes unread (r8361 NOTES).",
+   "literature": "No study found."
+  },
+  "key_check": "No Walsingham-Burghley 1572 key held; [3] = the Queen by context; the nine-sign run is too short for a solver.",
+  "duplicates": "known.py 'R8361', 'f 367', 'Walsingham': this entry, README, targets/r8361, feuquieres; R8363 (entry 123) is another leaf of the same letter-book.",
+  "verdict": "open"
+ }
+}

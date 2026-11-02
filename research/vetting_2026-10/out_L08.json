@@ -1,0 +1,410 @@
+{
+ "127": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8358 images P1-P2 (IMG_R8358_I38616, ~7000 px, viewed downscaled to 1500 px) fetched 2 Nov 2026 with decode_fetch.py; BL Harley MS 260 f. 262 is P2.",
+   "extent": "One letter-book copy, Burghley to Walsingham (heading \"July 1572\"), about 15 lines on f. 262: boxed numerals [3], [4] (three times), [2], a run of five signs after [3] and the letters A and F in clear English.",
+   "cipher": "Scribal copy in clear English with a few boxed numeral codes and a short sign run left unglossed (as I read the image: \"[3] reneweth the m o R. d A. [4]\", \"[3] is more given to Milan [4] then to [2]\"). No decipherment, interlining or key on f. 261v-262 (both images viewed)."
+  },
+  "prior_art": {
+   "decode": "DECODE R8358 record page fetched 2 Nov 2026: Cipher Status Non-decrypted, no key or transcription attached; the sibling Harley 260 records (R8356, R8357, R8359-R8364) are also Non-decrypted (known.py hits: targets/burghley1572, r8364, walsingham1572).",
+   "tomokiyo": "WebFetch of cryptiana.web.fc2.com/code/elizabeth.htm (2 Nov 2026): no mention of Harley MS 260, the Walsingham letter-book or this letter; its Burghley/Walsingham items are a 1571 Cotton Caligula C III slip and the 1588 Burghley/Cobham ciphers.",
+   "lasry": "No Lasry or GL.htm item for Harley 260 found: web search \"Harley MS 260 Burghley Walsingham cipher\" and Tomokiyo unsolved.htm (fetched 2 Nov 2026; Burghley/Walsingham/Harley 260 not mentioned).",
+   "edition": "Digges, The Compleat Ambassador (1655), archive.org full text searched 2 Nov 2026: the letter \"My Lord Ambassador, this day my Lord Admiral came to the Queens speech\" is printed with the cipher as \"[3] reneweth the in o A. D. F. [4]\" and \"more given to Millane [4] then to [2]\"; cipher left unread. No decipherment in the print.",
+   "literature": "BL catalogue record of Harley 260 (searcharchives.bl.uk 040-002046088) calls it a scribal Walsingham letter-book, compared with Digges; three web searches (Digges + cipher, Tomokiyo, Harley 260) found no study of its cipher items."
+  },
+  "key_check": "No Burghley-Walsingham key for 1572 on DECODE, in Tomokiyo or in print; the cipher is three boxed numerals and a five-sign run (names), too short for a solver. Repo targets/r8364 and walsingham1572 NOTES rule out the other Walsingham tables (not re-run here).",
+  "duplicates": "known.py \"Harley 260\", \"Burghley\", \"Walsingham\": other Harley 260 leaves are separate items (R8357 burghley1572, entry 125, walsingham1572, r8364); nothing else is this 5 July 1572 leaf. DECODE R8358 is the only record.",
+  "verdict": "open",
+  "lead_updates": {
+   "why": "Ciphered passages in Burghley's letter to Walsingham (ambassador in France), Westminster, July 1572, in the Walsingham letter-book; the boxed codes stand for names and are unread."
+  }
+ },
+ "129": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8356 images P1-P2 (IMG_R8356_I38606, viewed downscaled), fetched 2 Nov 2026; BL Harley MS 260 ff. 112-113 (page numbers 113 on both images).",
+   "extent": "Walsingham's letter to Burghley (Lyons, 25 June 1571) with a boxed [12] and the run \"6 1 7 4 2 H 6 H H\" in its first line, a boxed code after \"come from\" and the letter A; then the Queen's clear instructions to Walsingham copied after it.",
+   "cipher": "Letter-book copy in clear English with a few boxed numerals and a sign run; no decipherment, gloss or key on either page."
+  },
+  "prior_art": {
+   "decode": "DECODE R8356 record page: Cipher Status Non-decrypted, no key attached; sibling Harley 260 records likewise Non-decrypted.",
+   "tomokiyo": "WebFetch of cryptiana.web.fc2.com/code/elizabeth.htm (2 Nov 2026): no mention of Harley MS 260, the Walsingham letter-book or this letter; its Burghley/Walsingham items are a 1571 Cotton Caligula C III slip and the 1588 Burghley/Cobham ciphers.",
+   "lasry": "No Lasry or GL.htm item for Harley 260 found: web search \"Harley MS 260 Burghley Walsingham cipher\" and Tomokiyo unsolved.htm (fetched 2 Nov 2026; Burghley/Walsingham/Harley 260 not mentioned).",
+   "edition": "Digges, Compleat Ambassador (1655), archive.org full text searched 2 Nov 2026: the letter is printed at pp. 113-114 (\"to advertise A. that there is a practise in the stealing away of the Scotish Q.\", \"come from 54 who discovereth it to his Master\") with the opening cipher as garbled figures; unread in the print. The entry's \"p. 106\" is wrong. CSP Foreign ix 1821 (TNA SP 70 original) not seen.",
+   "literature": "BL catalogue record of Harley 260 (searcharchives.bl.uk 040-002046088) calls it a scribal Walsingham letter-book, compared with Digges; three web searches (Digges + cipher, Tomokiyo, Harley 260) found no study of its cipher items."
+  },
+  "key_check": "No 1571 Walsingham-Burghley key known; repo notes (targets/r8364) cite a TNA SP 106/2 f. 141A \"Sir Francis Walsingham Cipher, 1571\" that is not online and was not seen. The runs are short (nine signs, two boxed codes); nothing to apply.",
+  "duplicates": "known.py \"Harley 260\", \"R8356\": targets/r8356 and the entry itself only; neighbouring leaves (R8357, R8358) are different letters.",
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Walsingham to Burghley, Lyons, 25 June 1571 (letter-book copy; Queen's instructions to Walsingham follow, clear)",
+   "correspondents": "Francis Walsingham (Lyons) -> William Cecil, Lord Burghley",
+   "date": "25 Jun 1571"
+  }
+ },
+ "131": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8490 P1 (f. 80r, Ostend, 5 May 1588), R8492 P1 (f. 88r), R8495 P2 (f. 92r, 27 May 1588), R8496 P2 (dated 9 June 1588) fetched 2 Nov 2026 and viewed downscaled; BL Harley MS 287.",
+   "extent": "Four letters of Cobham to Walsingham, about 12-20 lines each in a graphic sign alphabet set into running secretary-hand English (R8490 f. 80r has 8 sign runs).",
+   "cipher": "Substitution with cursive/geometric signs and a few number codes inside clear text. No interlinear decipherment, margin gloss or key on the four leaves viewed."
+  },
+  "prior_art": {
+   "decode": "DECODE R8490, R8492, R8495, R8496 all Non-decrypted; the glossed siblings R8488 and R8493 (Mar-Apr 1588) are the source of the partial alphabet (cobham1588 NOTES); R8497 is Bodley 1590, a different cipher.",
+   "tomokiyo": "elizabeth.htm (fetched 2 Nov 2026): \"Burghley provided a cipher in April 1588\", Cobham sent Walsingham one in June 1588, Butler describes a code-word list for Cobham dated 25 May 1588; no decipherment or key reconstructed. Not on unsolved.htm.",
+   "lasry": "No Lasry/GL.htm entry for Cobham 1588 found (unsolved.htm: Cobham only as a name in the Bowes-Walsingham 1583 solution).",
+   "edition": "CSP Foreign Elizabeth vol. 21 pt 4 (British History Online) calendars Cobham letters of 1 May and 3, 6, 10 June 1588 but not these Harley 287 items (cobham1588 NOTES: no printed decipherment); BL catalogue (searcharchives 040-002046115): ff. 80r-81v partly in cipher, ff. 92r-93v \"in his newer cipher\".",
+   "literature": "Web search \"Cobham Walsingham May 1588 Ostend cipher Harley 287\" found only the BHO calendar pages and the BL catalogue; no study of the cipher."
+  },
+  "key_check": "About 20 letters of alphabet from the glossed R8488/R8493 (repo, cobham1588) do not read these runs through; the BL catalogue calls f. 92r (27 May) his \"newer cipher\", so the March-April alphabet may not transfer; R8497 Bodley key is not this cipher; the Butler code-word list of 25 May 1588 was not found online.",
+  "duplicates": "known.py \"Harley 287\", \"Cobham\": only catalogue 131, targets/cobham1588 and families 23; the glossed R8488/R8493 are siblings, not duplicates.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "5 May 1588 - 9 Jun 1588"
+  }
+ },
+ "135": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8342 P1 (IMG_R8342_I38533_P1, 7080x9600; viewed whole and the cipher passage cropped) fetched 2 Nov 2026; BL Harley MS 6988 f. 208.",
+   "extent": "Five lines of colon-separated numbers in the King's autograph, about 79 groups on the main line plus about 8 interlined or inserted (126, 165, 77, 5, 20 ...) = 88 groups (the entry's 99 is too high; agrees with targets/charlesi), strike-throughs; postscript says the cipher is the one sent by the noble friend.",
+   "cipher": "Numeric nomenclator in a clear autograph letter. No decipherment on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R8342 record: Non-decrypted; but the key is DECODE R3055 = BL Egerton MS 2550 f. 5 (per Bae's edition).",
+   "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm (fetched 2 Nov 2026), entry \"Charles I in the Isle of Wight (1648) [Solved]\": \"George Lasry also found Charles I's letter to Prince Charles, 1 August 1648, can be read with EGERTON_MS_2250 KEYS\" (image EGERTON_MS_2250_0007.jpg); Ji Ho Bae (LawAll) also found a solution dated 29 Sept 2026 (Zenodo 23043134 and 23044836). Tomokiyo writes 2250, Bae 2550.",
+   "lasry": "Per Tomokiyo, Lasry found the letter readable with the Egerton keys (confirmation only; no Lasry paper seen).",
+   "edition": "Halliwell, Letters of the Kings of England ii (1846) prints it without the cipher. Zenodo doi 10.5281/zenodo.23044836 v2.0.0 (29 Sep 2026, Ji Ho Bae; API record read, 2 files): 88-group passage deciphered with Egerton MS 2550 f.5 (R3055), 647-row key, one phrase quoted \"I would haue you looke this way to free me\", insertions complete since/brother/whose, 41 tentative key readings, transcription made after the target was known and without independent palaeographic review.",
+   "literature": "Schmeh blog \"Unsolved: the encrypted letters from Charles I to his son\" listed it unsolved before; Biermann-Bosbach-Brown 2021 solved other Isle of Wight letters."
+  },
+  "key_check": "Biermann-Bosbach-Brown 1648 nomenclator and the Titus key are excluded by targets/charlesi NOTES (not re-run). The working key is Egerton MS 2550 f. 5 (R3055): I downloaded the Zenodo zip and read R3055-complete.csv (647 rows) but did not run the author's verify.py.",
+  "duplicates": "known.py \"R8342\", \"Harley 6988\": catalogue 135, targets/charlesi (both letters), research/qa/key_split_audit; targets/charles1648 in the main checkout is the same R8342. No duplicate entry.",
+  "verdict": "read",
+  "closed": "Read by Ji Ho Bae (Zenodo, 29 Sep 2026) and per Tomokiyo by George Lasry, both with the Egerton MS 2550 f.5 key (DECODE R3055): read after matching with an external key. Caveats: 41 key readings tentative, no independent review; the plaintext was not seen in full here.",
+  "lead_updates": {
+   "outcome": "read after matching with an external key (Egerton MS 2550 f.5 = DECODE R3055; Ji Ho Bae, 29 Sep 2026; Lasry per Tomokiyo)"
+  }
+ },
+ "137": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R7768 P1-P2 and R7769 P1-P2 (BL Harley MS 7003 ff. 314-316) fetched 2 Nov 2026 and viewed downscaled; R7768 P2 and R7769 P1 are the same file (identical md5, f. 315).",
+   "extent": "Two clear English fair copies (Paris 28 Dec 1652; 3 May 1653) with 23 code numbers in five runs, e.g. \"the present estate of 228:196:188\", \"102:43:97:133:52:180\", \"57:102:58:20:30\" and \"a word to Mr 203\".",
+   "cipher": "Numeric nomenclator (values up to about 230) inside clear text; no decipherment, interlining or key on the leaves."
+  },
+  "prior_art": {
+   "decode": "DECODE R7768, R7769 Non-decrypted; no key record for 1652-53 Jermyn/Queen correspondence found in the repo DECODE dumps.",
+   "tomokiyo": "Not mentioned on elizabeth.htm or unsolved.htm (both fetched 2 Nov 2026).",
+   "lasry": "No Lasry item on Cowley or Harley 7003 found (web search Cowley \"Mr. Conleys hand\" cipher; zenodo/github 2026 search found none).",
+   "edition": "No edition with these letters found: Folger CELM Cowley introduction (celm.folger.edu) cites Sprat that Cowley ciphered and deciphered most royal letters and Nethercot 1928 on his letters, but gives no key; Miscellanea Aulica checked earlier (entry).",
+   "literature": "Web searches on Cowley as Jermyn's cipher secretary found biography only, no study of the 1650s cipher."
+  },
+  "key_check": "Applied here: the Egerton MS 2550 f. 5 key (DECODE R3055, 647 rows from Bae's Zenodo v2 table) gives 228=knight, 196=Have, 188=give; 102=by, 43=l, 97=ay, 133=doubt; 57=null, 102=by, 58=null, 20=e, 30=p: nonsense, excluded. Hyde-Barwick key excluded per conley1652 NOTES (not re-run).",
+  "duplicates": "known.py \"Harley 7003\" no hits; \"Cowley\": own entry conley1652 / README only. R7768 and R7769 share one image (f. 315) but are two letters.",
+  "verdict": "open",
+  "lead_updates": {
+   "correspondents": "Queen's court at Paris (Jermyn's office, Cowley's hand) -> unidentified royalist in Holland"
+  }
+ },
+ "152": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1854 image 1 (IMG_R1854_I8411_P1.png, 1121x697 as served) fetched 2 Nov 2026 and viewed.",
+   "extent": "One Latin letter dated \"1428. 22. aple\", Roma, signed Pandulfus archiepiscopus Patracensis; seven lines of signs in three runs (about 262 signs) between clear Latin lines.",
+   "cipher": "Letter-like signs (long-s ligatures, ʒ, H, cc ...) set into clear Latin; no decipherment on the leaf (DECODE R1854 is \"Partially decrypted\" because of its other three letters)."
+  },
+  "prior_art": {
+   "decode": "DECODE R1854 \"Mantova enciphered letters\", 5 images, status Partially decrypted, no key or plaintext attached; images 2-5 are other letters (the repo's r1854, mutiliana1428, cattanei1430).",
+   "tomokiyo": "unsolved.htm (fetched 2 Nov 2026): no Mantua 1428 item (Mantua entries are 1590/1593 only).",
+   "lasry": "No Lasry paper on this letter found; web search for Lasry/Megyesi + Mantova 1428 returned nothing.",
+   "edition": "No edition of the cipher; the Malatesta-Gonzaga letters in print (Falcioni 2023) are of 1438, without cipher; Schmidt 2022 covers Gonzaga ciphers c. 1400.",
+   "literature": "A Voynich Ninja post (Apr 2026) points to these Mantua 1426-30 letters as a target; no solution found (web searches 2 Nov 2026, incl. zenodo)."
+  },
+  "key_check": "R1853 register Malatesta keys do not fit (repo malatesta1428, controls pass); Francesco Gonzaga's ledger keys (c. 1400, Schmidt 2022) not available and not tried; no 1428 key known.",
+  "duplicates": "known.py \"Malatesta\", \"R1854\": the repo's own split entries cover images 2-5 only; this is image 1.",
+  "verdict": "open"
+ },
+ "166": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R9588 images (R9586 P1-P3, R9588 P1-P2) fetched 2 Nov 2026 and viewed; ASNa, Ministero degli affari esteri, busta 2337.",
+   "extent": "R9588: 432 groups on 2 pages; a few faint pencil/ink syllables written over about 20-30 groups; R9588 p. 2 has \"tal in che stato\".",
+   "cipher": "Plain numeric code (dot-separated groups 101-1858, a few 6000+), no clear text; a contemporary hand has glossed a handful of groups with Italian syllables, so a partial decipherment is on the leaf (about 3% of the groups)."
+  },
+  "prior_art": {
+   "decode": "DECODE R9588 Non-decrypted, no key attached; only R9586 shares this code.",
+   "tomokiyo": "Not mentioned on unsolved.htm (fetched 2 Nov 2026); no Castelcicala page found by search.",
+   "lasry": "No Lasry item on Castelcicala or ASNa Esteri 2337 found (web search).",
+   "edition": "No edition: search \"Castelcicala ambasciatore Londra cifra ASNa Esteri 2337\" gave only biographies of Fabrizio Ruffo and a general article on Neapolitan diplomatic ciphers (riviste.unimi.it), not this code.",
+   "literature": "Three web searches (Castelcicala cifra, Ruffo Londra cifrario, DECODE) found no study of this second code."
+  },
+  "key_check": "Segreteria di Stato key.tsv of the sibling letters (162 groups, targets/castelcicala1816) applied to R9588 tokens: only 28 of 432 have an entry and the frequent groups 224, 1698, 784, 319 are absent, so it is another code; 1043 and 294 are frequent here but the sibling values (desidera, dati) were not tested for sense.",
+  "duplicates": "R9588 and R9586 are different letters (first groups 483.1672.268... against 436.312.949...) in one system; known.py R9588/Castelcicala: entries 166/167 and targets/r9586 only.",
+  "verdict": "partly_read",
+  "closed": "A partial decipherment is on the leaf: the syllable glosses over a few runs (about 20-30 of 432 groups). The rest is unread and no key is known; judge whether this belongs in the catalogue as open."
+ },
+ "167": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R9586 images (R9586 P1-P3, R9588 P1-P2) fetched 2 Nov 2026 and viewed; ASNa, Ministero degli affari esteri, busta 2337.",
+   "extent": "R9586: 537 groups on 3 pages; a few faint pencil/ink syllables written over about 20-30 groups; R9586 p. 2 has a few lines of syllables (\"se dell cam bia ... ba li, che non effett ... o la sol tan za\", \"ei di san\").",
+   "cipher": "Plain numeric code (dot-separated groups 101-1858, a few 6000+), no clear text; a contemporary hand has glossed a handful of groups with Italian syllables, so a partial decipherment is on the leaf (about 3% of the groups)."
+  },
+  "prior_art": {
+   "decode": "DECODE R9586 Non-decrypted, no key attached; only R9588 shares this code.",
+   "tomokiyo": "Not mentioned on unsolved.htm (fetched 2 Nov 2026); no Castelcicala page found by search.",
+   "lasry": "No Lasry item on Castelcicala or ASNa Esteri 2337 found (web search).",
+   "edition": "No edition: search \"Castelcicala ambasciatore Londra cifra ASNa Esteri 2337\" gave only biographies of Fabrizio Ruffo and a general article on Neapolitan diplomatic ciphers (riviste.unimi.it), not this code.",
+   "literature": "Three web searches (Castelcicala cifra, Ruffo Londra cifrario, DECODE) found no study of this second code."
+  },
+  "key_check": "Segreteria di Stato key.tsv of the sibling letters (162 groups, targets/castelcicala1816) applied to R9588 tokens: only 28 of 432 have an entry and the frequent groups 224, 1698, 784, 319 are absent, so it is another code; 1043 and 294 are frequent here but the sibling values (desidera, dati) were not tested for sense.",
+  "duplicates": "R9588 and R9586 are different letters (first groups 483.1672.268... against 436.312.949...) in one system; known.py R9588/Castelcicala: entries 166/167 and targets/r9586 only.",
+  "verdict": "partly_read",
+  "closed": "A partial decipherment is on the leaf: the syllable glosses over a few runs (about 20-30 of 537 groups). The rest is unread and no key is known; judge whether this belongs in the catalogue as open."
+ },
+ "172": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4162 P2 (f. 119, full page in cipher) and R4165 P2 (f. 142, clear lines then cipher) fetched 2 Nov 2026 and viewed; Gallica fr. 15564 ark btv1b9064027v (repo guise1587).",
+   "extent": "f. 119: about 44 lines of signs, 27 May 1587; f. 142: seven clear lines and 16 cipher lines, 20 June 1587.",
+   "cipher": "Homophonic symbol substitution with a small nomenclator (guise1587 NOTES). No decipherment on the leaves; Lasry's key table is outside."
+  },
+  "prior_art": {
+   "decode": "DECODE R4162, R4165 Non-decrypted, images only (guise1587 NOTES, records of Feb 2023).",
+   "tomokiyo": "cryptiana GL.htm carries Lasry's key table \"Duke of Guise? in BnF fr.15564 and fr.15565\" (29 May 2022); no plaintext of ff. 119 or 142 published; not on unsolved.htm.",
+   "lasry": "Lasry solved the letters to Mercoeur in fr. 15564 (ff. 27, 78, 119, 142) in 2022 and published the key table and a decipherment overlay of f. 27 only (per repo notes; web search for the paper found nothing newer).",
+   "edition": "Gaston de Carne's Archives de Bretagne edition of Mercoeur's correspondence was found by search but not checked for these folios.",
+   "literature": "Web searches (Mercoeur 1587 lettres chiffrees, Lasry fr. 15564) found no study with a reading."
+  },
+  "key_check": "Lasry's key, extended by about a dozen values (guise1587), reads f. 142 into sentences with scattered holes and f. 119 only partly (0.558 clean sentences after a full re-read, per NOTES; not re-run).",
+  "duplicates": "known.py \"Francais 15564\", \"R4162\", \"Mercoeur\": guise1587 (these two folios) and mercoeur1587 (ff. 78 etc.) are separate leaves; no duplicate.",
+  "verdict": "partly_read",
+  "closed": "Read after matching with an external key (Lasry's GL.htm table), but only in part: f. 142 builds sentences with holes, f. 119 about 56%; no published plaintext."
+ },
+ "184": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4289 P2-P3 (BnF fr. 3975 f. 101, microfilm) viewed 2 Nov 2026; Gallica fr. 3975 ark btv1b90605473 canvas 185 (f. 101r) viewed at 1600 px via openapi.bnf.fr.",
+   "extent": "Three and a half written pages (ff. 101r-102v, about 110 lines), 30 Sept 1587, St-Aignan.",
+   "cipher": "Mostly clear French in a very hasty hand with code numbers and short runs of figures and signs set in; B/W microfilm. No separate decipherment (BnF notice: \"avec chiffrement et dechiffrement ... Copie\"; f. 101-102 only), but the notice says a decipherment exists with the item."
+  },
+  "prior_art": {
+   "decode": "DECODE R4289 Non-decrypted, 10 images (half-page cuts).",
+   "tomokiyo": "Tomokiyo's Nevers key no. 16 (BnF fr. 3995 f. 32v) reads the code numbers (repo vieuville1587); unsolved.htm has no 1587 Nevers/La Vieuville item.",
+   "lasry": "No Lasry item on this letter; his Nevers 1592 digit-cipher paper (dspace.ut.ee) is a different letter.",
+   "edition": "Not in Gomberville 1665 (repo search); BnF notice cc504266 describes the copy.",
+   "literature": "Search \"Nevers La Vieuville 1587 lettre chiffree\" found only Nevers cipher papers (fr. 3995 has 68 cipher tables)."
+  },
+  "key_check": "Tomokiyo no. 16 reads 42 et 43 eschevins et maire, 63 La Vieuville, 48 chasteau, 30 artillerie; the three letter runs (33 signs) do not read with it (repo; not re-run).",
+  "duplicates": "known.py \"Francais 3975\", \"Vieuville\", \"R4289\": targets/vieuville1587 only; Nevers letters of other days (R4285/R4286 etc.) are different items.",
+  "verdict": "partly_read",
+  "closed": "The key held (Tomokiyo no. 16) reads the code numbers; only three short runs (33 signs) and the illegible hasty text are open, and the BnF notice mentions a decipherment with the item."
+ },
+ "213": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1071 images P1 and P3 (IMG_R1071_I5592/I5594, photographs of a copy) fetched 2 Nov 2026 and viewed.",
+   "extent": "Three pages of dot-separated cursive groups (761 groups per the entry), 7 Aug 1757.",
+   "cipher": "Numeric code groups with flourished digits; no clear text, no decipherment, no key page on the three images."
+  },
+  "prior_art": {
+   "decode": "DECODE R1071 Non-decrypted, no key attached.",
+   "tomokiyo": "Not mentioned on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item on d'Affry 1757 found.",
+   "edition": "No edition found: searches \"d'Affry Stainville 7 aout 1757 lettre interceptee\" and Lyonet decipherments returned no hit; NA 1.01.50 inv. 221/223 decipherments are not digitised (affry1757c).",
+   "literature": "Web search found nothing on this intercept (only the 1757-58 Galatee letters, unrelated)."
+  },
+  "key_check": "The d'Affry key rebuilt from Lyonet (affry1757, ten sibling letters) gives nonsense on R1071 (repo targets/affry1757c; not re-run); no code-C key held.",
+  "duplicates": "known.py \"R1071\", \"Affry\", \"Stainville\": catalogue 213, affry1757, affry1757c only.",
+  "verdict": "open"
+ },
+ "214": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1045, R1047, R1048, R1049, R1060, R1061, R1953 first images fetched 2 Nov 2026 and viewed (photographs of copies, KHA Prins Willem V inv. 196).",
+   "extent": "Seven records: pages of dot-separated numeric groups (some underlined) between short clear French openings, dated 1752 to 1763 (R1060/R1061 dated 29 April and 22 May 1763).",
+   "cipher": "Numeric code with marks; no decipherment, gloss or key on any viewed page (viewed first pages of R1045, R1047, R1048, R1049, R1060, R1061, R1953 (and R1046))."
+  },
+  "prior_art": {
+   "decode": "DECODE R1045-R1049, R1060, R1061, R1953 all Non-decrypted, with transcription entries from 2019-2020 but no key or plaintext.",
+   "tomokiyo": "Not mentioned on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item on von der Hellen found.",
+   "edition": "Fagel 5206 holds plain copies of about 40 of his 1752-53 reports but not these (Dudout, 27 Oct, per entry); Politische Correspondenz Friedrichs des Grossen (friedrich.uni-trier.de) cites Hellen reports from The Hague but no deciphered text of these.",
+   "literature": "Three web searches (Hellen + Fagel 5206, Politische Correspondenz, Archivfuehrer) found only background, no study."
+  },
+  "key_check": "No Hellen key on DECODE or in print; the three families are provisional (hellen1752 NOTES); no key to apply.",
+  "duplicates": "known.py \"inv.nr. 196\", \"Hellen\", \"R1045\": catalogue 214, 223 (R1046) and targets/hellen1752; R1046 is a separate record.",
+  "verdict": "open"
+ },
+ "223": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1046 P1-P2 (IMG_R1046_I5494/I5495) fetched 2 Nov 2026 and viewed.",
+   "extent": "P1: clear French lead-in (Bertin, Sartine, a lit de justice) then a full page of numeric groups; P2: a clear French page (\"La Porte d'Emmerich ...\", Joachim Vos, dated April 1763).",
+   "cipher": "Numeric code groups after clear French; the clear pages are the report's open text, not a decipherment of the numbers."
+  },
+  "prior_art": {
+   "decode": "DECODE R1045-R1049, R1060, R1061, R1953 all Non-decrypted, with transcription entries from 2019-2020 but no key or plaintext.",
+   "tomokiyo": "Not mentioned on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item on von der Hellen found.",
+   "edition": "Fagel 5206 holds plain copies of about 40 of his 1752-53 reports but not these (Dudout, 27 Oct, per entry); Politische Correspondenz Friedrichs des Grossen (friedrich.uni-trier.de) cites Hellen reports from The Hague but no deciphered text of these.",
+   "literature": "Three web searches (Hellen + Fagel 5206, Politische Correspondenz, Archivfuehrer) found only background, no study."
+  },
+  "key_check": "No key for the 1763 Hellen code known; whether R1046 shares R1045/R1047 code is not established; nothing to apply.",
+  "duplicates": "known.py \"R1046\", \"Hellen\": catalogue 214 lists the other seven records; targets/hellen1752 holds all.",
+  "verdict": "open"
+ },
+ "219": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2238 P1-P3 (photographs of a copy) fetched 2 Nov 2026 and viewed.",
+   "extent": "Three photographed pages, 128 groups per the entry: P2 a clear French opening, P3 French lines with runs of numbers, P1 the close dated La Haye 1804.",
+   "cipher": "Numeric nomenclator (values to about 2510) set in clear French; no decipherment or key."
+  },
+  "prior_art": {
+   "decode": "DECODE R2238 Non-decrypted, no key attached; neighbour R2236 likewise.",
+   "tomokiyo": "Not on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item on Fagel 1804 found.",
+   "edition": "No edition: search on Fagel 1804 / Orange compensation found only general background (Oranienstein letters, 1804 five-million offer).",
+   "literature": "Web search \"Robert Fagel 1804 cipher KHA A31 902\" found nothing on the cipher."
+  },
+  "key_check": "Grand Chiffre R1024 and the KHA/Fagel/BL/Uppsala keys are excluded per targets/fagel1804 NOTES (not re-run); the code book is probably KHA A31-902 (undigitised).",
+  "duplicates": "known.py \"R2238\", \"Fagel\", \"inv. 337\": catalogue 219 and targets/fagel1804.",
+  "verdict": "open"
+ },
+ "226": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1941 P1-P4 (photos of photocopies) fetched 2 Nov 2026; all four viewed.",
+   "extent": "Letter of 12 Jan 1808 (228 groups) and annex (75 groups), signed G. C. van Spaen, with clear Dutch openings and closings (\"Hoogedele Gestrenge Heer\", \"Uwer Excellentie ... Dienaar\").",
+   "cipher": "Plain numeric code (groups 15-1339 per the entry), dot-separated; no decipherment, no key."
+  },
+  "prior_art": {
+   "decode": "DECODE R1941 record shows \"Partially decrypted\" in the repo metadata but nothing is attached (spaen1808 NOTES).",
+   "tomokiyo": "Not on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item found.",
+   "edition": "Not in Colenbrander, Gedenkstukken V (repo search); web search \"Spaen tot Voorstonden 1808 Dusseldorf cijferbrief\" found only biographies.",
+   "literature": "Searches gave background on Van der Goes and Van Spaen only."
+  },
+  "key_check": "Croiset books R1891 and R1035 do not fit (spaen1808 NOTES; not re-run); no King of Holland legation code known.",
+  "duplicates": "known.py \"R1941\", \"Spaen\": catalogue 226 and targets/spaen1808.",
+  "verdict": "open"
+ },
+ "230": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2034 P1 (IMG_R2034_I14728_P1.png, photograph of a copy) fetched 2 Nov 2026 and viewed.",
+   "extent": "One page: \"Burger Minister!\", 110 groups in six series marked by wave, caret, double stroke, overbar or plus, dated \"den Haag 30 July 1803\", signed L. van Toulon, stamp 's Rijks Archief.",
+   "cipher": "Marked numeric groups (Croiset's Correspondentiecijffer, six series); no decipherment or key on the leaf."
+  },
+  "prior_art": {
+   "decode": "DECODE R2034 Non-decrypted; same-key R1942 (Hogendorp 5 Jul 1803) and R1944/R1946 (1801) are on DECODE, the latter read from a clear copy.",
+   "tomokiyo": "Not on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition found; search surfaced a paper on a Croiset cipher system (intro signed S. E. Croiset, The Hague, 5 Aug 1803, dspace.ut.ee) but the fetch of it failed (ECONNRESET), so it was not read.",
+   "literature": "Searches (Toulon Hogendorp cijferbrief, Croiset correspondentiecijfer) found nothing on this letter."
+  },
+  "key_check": "Key = Correspondentiecijffer NA 2.21.045 inv. 34313 (physical booklet, photocopy at NA, not digitised); R1944/R1946 fix 3 of 67 words; R1035, R1038, R1891 do not fit (toulon1803 NOTES, not re-run).",
+  "duplicates": "known.py \"R2034\", \"Toulon\", \"Hogendorp\": catalogue 230, targets/toulon1803; R1942 is another letter in the same key.",
+  "verdict": "open"
+ },
+ "231": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1893 P1 and P4 (IMG_R1893_I9360, I9363) fetched 2 Nov 2026 and viewed.",
+   "extent": "Four pages of three-digit tokens with per-digit overmarks (696 tokens per the entry), Dutch clear lines at the end (\"Waarom dan ik ... in consideratie\"), 24 March 1793, signed by Van Reede.",
+   "cipher": "Numeric groups with overmarks, in Dutch; no decipherment on the images."
+  },
+  "prior_art": {
+   "decode": "DECODE R1893 Non-decrypted; siblings R1026/R1027 are read with R1024.",
+   "tomokiyo": "Not on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition found; Dudout (27 Oct, per entry): the letter is not among the public scans of NA 1.01.02 inv. 6695.",
+   "literature": "Web search found only Fagel collection background; no study."
+  },
+  "key_check": "Fagel keys R2846, R2848, R2850, R2851 and R2243 do not fit (vanreede1793 NOTES, not re-run); Fagel key books 1.10.29 inv. 1261/1263/1265 are the same family but not Van Reede's.",
+  "duplicates": "known.py \"R1893\", \"Reede\": catalogue 231 and vanreede1793; vanreede1787 is the R1024 sibling.",
+  "verdict": "open"
+ },
+ "262": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R91 P1 (IMG_R91_I682_P1.jpg, AAV watermark) fetched 2 Nov 2026 and viewed; five images on the record.",
+   "extent": "Clear Italian (Farnese letter, nunciature) then blocks of unspaced digit strings; 5 cipher pages, 2,956 digits per the entry.",
+   "cipher": "Digit cipher (one-two digit values) after clear Italian lines; no key sheet or decipherment on the page; bleed-through."
+  },
+  "prior_art": {
+   "decode": "DECODE R91 Non-decrypted (damaged, bleed-through); R92 (IA-2) is the solved companion.",
+   "tomokiyo": "unsolved.htm: \"Vatican Challenge Part 5\" listed Solved by Simon Klee, Sept 2026; no December 1541 item.",
+   "lasry": "Lasry posted the Vatican Challenge (2019); simonklee.dk/farnese-letter confirms IA-2 (April 1542, ff. 70r-73v, DECODE R92) was solved 15 Sept 2026; the article does not mention IA-1/R91.",
+   "edition": "None for R91; searches (Farnese Poggio 1541 cipher, github/zenodo 2026) found only the IA-2 coverage.",
+   "literature": "Cryptologia/HistoCrypt papal-cipher work (Lasry, Megyesi, Kopal) is the background; no paper on IA-1 found."
+  },
+  "key_check": "Klee's IA-2 key does not transfer (different design: doubled digits 0.88 of chance against 0.30, per vatican5 NOTES; not re-run).",
+  "duplicates": "known.py \"R91\", \"Spagna 1A\", \"Farnese\": catalogue 262, targets/vatican5; R92 solved separately.",
+  "verdict": "open"
+ },
+ "280": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L08",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R7524 P1 (IMG_R7524_I33989_P1.jpg) fetched 2 Nov 2026 and viewed; three images.",
+   "extent": "One letter \"Monseigneur\", 18 Mar 1714, about 14 lines with 232 figures (77 values per the entry).",
+   "cipher": "Dot-separated numbers set in clear Polish and Latin words (consilii, congressow, rempublicam, unanimi voto); no decipherment or key."
+  },
+  "prior_art": {
+   "decode": "DECODE R7524 cipher status N/A; the nine Potocka siblings are another cipher (potocka1714).",
+   "tomokiyo": "Not on unsolved.htm (fetched 2 Nov 2026).",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition; web searches (Polish and English, incl. zenodo/github 2026) found nothing.",
+   "literature": "Only a 2022 HistoCrypt paper on a 1721 papal digit cipher and a Hungarian 1700 article as parallels."
+  },
+  "key_check": "No key known; repo solver failed its control at this length (mniszech1714 NOTES).",
+  "duplicates": "known.py \"R7524\", \"Mniszech\", \"Dunin\": catalogue 280, targets/mniszech1714, potocka1714.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "18 Mar 1714"
+  }
+ },
+ "320": {
+  "unvetted": "Ciphertext not seen: Gallica Francais 5190 (ark btv1b9059471x) manifest on openapi.bnf.fr has 90 canvases ending at manuscript p. 88 (December page seen); nos. 171-172 and 214-215 are not in the scan, access is \"online\" so \"not online\" is unavailable. Needs BnF images of pp. 171-215."
+ }
+}

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>No. 127: Burghley to Walsingham (letter-book copy) — help solve it</title>
-<meta name="description" content="Ciphered letter of William Burleigh to unknown recipient, Jul 1572; what the cipher hides is not known. An unread cipher of 5 Jul 1572, with instructions for an AI agent.">
+<meta name="description" content="Ciphered passages in Burghley's letter to Walsingham (ambassador in France), Westminster, July 1572, in the Walsingham letter-book; the boxed codes stand for names and are unread. An unread cipher of 5 Jul 1572, with instructions for an AI agent.">
 <link rel="stylesheet" href="style.css?v=20261027c">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -43,7 +43,7 @@
 <section class="hero solve">
   <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 127 · class C · priority 2.5 · attempted, open</p>
   <h1>Burghley to Walsingham (letter-book copy)</h1>
-  <p class="sub">Ciphered letter of William Burleigh to unknown recipient, Jul 1572; what the cipher hides is not known.</p>
+  <p class="sub">Ciphered passages in Burghley's letter to Walsingham (ambassador in France), Westminster, July 1572, in the Walsingham letter-book; the boxed codes stand for names and are unread.</p>
   <dl class="facts">
     <dt>Date</dt><dd>5 Jul 1572</dd>
     <dt>Correspondents</dt><dd><span class="avs" title="William Cecil → Francis Walsingham"><img src="portrait_william-cecil.jpg" alt="" loading="lazy"><img src="portrait_francis-walsingham.jpg" alt="" loading="lazy"></span>William Cecil, Lord Burghley → Sir Francis Walsingham</dd>
@@ -83,6 +83,8 @@ WHAT IS KNOWN
   Check first: Search CSP / the Calendars for a decipherment; then view the images (DECODE login) and transcribe.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/r8358/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/burghley1572/NOTES.md
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/r8364/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -145,14 +147,14 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Where the cipher is</h2>
-<p class="frame viewed"><b>Cipher viewed.</b> The cipher was viewed on the image when the entry was written; the frame is not recorded separately.</p>
+<p class="frame confirmed"><b>Cipher located and confirmed.</b> Scribal copy in clear English with a few boxed numeral codes and a short sign run left unglossed (as I read the image: "[3] reneweth the m o R. d A. [4]", "[3] is more given to Milan [4] then to [2]"). No decipherment, interlining or key on f. 261v-262 (both images viewed). (DECODE R8358 images P1-P2 (IMG_R8358_I38616, ~7000 px, viewed downscaled to 1500 px) fetched 2 Nov 2026 with decode_fetch.py; BL Harley MS 260 f. 262 is P2.; checked 2026-11-02 by claude vetting batch L08)</p>
 <h2>What is known</h2>
 <p class="ko"><i class="k">known</i> <span class="asof">checked 21 Oct 2026</span> Clear letter-book copy, printed in Digges 1655 (July 1572); code [3] = the French King by context (r8358.html).</p><p class="ko"><i class="o">open</i> Codes [2], [4], [5], the monogram, letters A and F, and the five-sign run 'm o R. d A.'. Blocker: no key known; items too few and short.</p>
 
 <p><b>History and prior art.</b> DECODE R8358. Attempted here 2026-09-22: a clear letter-book copy, printed with the cipher unread in Digges 1655 (July 1572); cipher is 7 boxed name codes, a monogram, two letters and the run 'm o R. d A.'. [3] = the French King by context; the rest unread, no key known (targets/r8358/).</p>
 <p><b>Outcome so far.</b> attempted, open</p>
 <p><b>Check first.</b> Search CSP / the Calendars for a decipherment; then view the images (DECODE login) and transcribe.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r8358/NOTES.md" rel="noopener">targets/r8358/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/r8358" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r8358/NOTES.md" rel="noopener">targets/r8358/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/r8358" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/burghley1572/NOTES.md" rel="noopener">targets/burghley1572/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/burghley1572" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r8364/NOTES.md" rel="noopener">targets/r8364/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/r8364" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

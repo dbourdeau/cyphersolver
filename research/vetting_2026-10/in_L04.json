@@ -1,0 +1,715 @@
+[
+ {
+  "id": 637,
+  "title": "John J. Appleton → John Quincy Adams, Cadiz, despatch with an 18-group coded passage on the Spanish liberal government's secret English loan, printed 'no decodification'",
+  "correspondents": "John James Appleton (US chargé d'affaires ad interim at Madrid, with the Cortes at Cadiz) → John Quincy Adams, Secretary of State",
+  "date": "6 Aug 1823",
+  "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain, vol. 22 (20 May 1822-30 Dec 1823) = microfilm M31 reel 24, catalog naId 188609418",
+  "folio_note": "18 code groups in the body (Manning prints them: 1088 648 1576 794 1384 1453 347 1372 500 192 668 1384 169 1244 1501 1110 1426 1290; several OCR-uncertain); frame not located Frame located 27 Oct 2026 (NARA bulk scan, research/nara_triage_a/): M31 reel 24, frame 0134.",
+  "links": [
+   {
+    "label": "Manning vol. 3 (archive.org)",
+    "href": "https://archive.org/details/diplomaticcorres03mann"
+   },
+   {
+    "label": "NARA M31 vol. 22",
+    "href": "https://catalog.archives.gov/id/188609418"
+   }
+  ],
+  "ark": "",
+  "status": "Manning, Diplomatic Correspondence ... Independence of the Latin-American Nations (1925) vol. 3, doc. 1124, p. 2041, prints the groups with '[no decodification]'. The groups fit the code rebuilt in targets/jqa (the = 1385, of = 1576, that = 1384, and = 668; the London/St Petersburg code): with targets/jqa/code_table.tsv 16 of 18 groups take a value ('... of [794] that ... was [192] and that he had a part in England'). Not in the repo (known.py: Appleton no hits).",
+  "why": "The Spanish constitutional government's secret plan to raise money in England in the last weeks of the Cortes at Cadiz (1823), told to the US chargé by the finance minister Yandiola; directly readable with a key this repository already holds.",
+  "access": "online",
+  "source": "NARA RG 59 diplomatic despatches (via Manning 1925) sweep",
+  "language": "English",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: Manning prints it undecoded; no other decoding found)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/id/188609418?objectPage=133",
+   "frame": "viewer image 133 of 329 (pp. 18-19 of the volume); the catalogue's 'frame 0134' is the same leaf, numbered one higher",
+   "saw": "Handwritten despatch, spread with Appleton's text about Yandiola and the loan. Two lines of number groups in the body at the foot of the left page: '1088 648 [sign] 1576 794 [sign] 1384 1453 347 1372 500 / 192 668 1384 169 1244 1501 1110 1426 1290' (668 as printed by Manning, not 168); no decipherment written on the page. Plain English follows on the right page ('Yandiola inquired then when Mr. Nelson might come'). Frames 134-136 show the same despatch with no code groups.",
+   "note": "Entry's 'frame 0134' = viewer image 133 (objectPage=133).",
+   "date": "2026-10-30",
+   "by": "claude frame check 05"
+  }
+ },
+ {
+  "id": 639,
+  "title": "Joel Roberts Poinsett → James Monroe, Santiago de Chile, despatch with at least nine cipher passages printed as '(undeciphered cipher)'",
+  "correspondents": "Joel Roberts Poinsett (US special agent and consul general for Buenos Aires, Chile and Peru) → James Monroe, Secretary of State",
+  "date": "20 Feb 1813",
+  "shelfmark": "NARA RG 59, Despatches from Special Agents, vol. 3 (Poinsett 1813-23) = microfilm M37 roll 2, catalog naId 213803757; Poinsett's other 1811-14 reports ('parts in cipher') are in the Poinsett Papers vol. 4, Historical Society of Pennsylvania (Gilpin collection)",
+  "folio_note": "nine '(undeciphered cipher)' insertions in Manning's text, single words to whole clauses (on the Carreras, the Buenos Aires army, the Portuguese, the Araucanian chief); frame of the letter not located (M37 roll 2 frames 16-24 are the Poinsett list and his 'State of society' essay) Frame located 27 Oct 2026 (research/nara_triage_a/): M37 roll 2, frame 0093; a coded sibling of 14 June 1814 is at frames 0097-0099.",
+  "links": [
+   {
+    "label": "Manning vol. 2 (archive.org)",
+    "href": "https://archive.org/details/diplomaticcorres02mann"
+   },
+   {
+    "label": "NARA M37 vol. 3",
+    "href": "https://catalog.archives.gov/id/213803757"
+   }
+  ],
+  "ark": "",
+  "status": "Manning 1925 vol. 2, doc. 442, pp. 896-897, prints the despatch with '(undeciphered cipher)' at each coded passage; the State Department returned Poinsett's other letters to him in 1818, so his own copies (some 'Part in cipher', May-July 1811 from Buenos Aires, per the HSP list filmed at M37 roll 2 frames 20-22) are at HSP, possibly with plaintext drafts. Not in the repo (known.py: Poinsett no hits). Worked 28 Oct 2026 (targets/poinsett1813, write-up poinsett1813): 437 groups transcribed; the same-code letter of 14 June 1814 (no. 651) carries a clerk's decipherment, 95 values, 161 of 437 groups of 1813 get a value, no sentence reads. Other State Department rolls searched (M37 1-2, M70, M77, M84): no further letter in the code.",
+  "why": "Poinsett was an active partisan of the Carreras in the first Chilean republic; the hidden passages are his own views on the Chilean leadership and the war with Peru, otherwise unrecorded in US files.",
+  "access": "online",
+  "source": "NARA RG 59 diplomatic despatches (via Manning 1925) sweep",
+  "language": "English",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: Manning; web search found no decipherment)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/876974/M37-02/M37-02-0093.jpg",
+   "frame": "M37 roll 2, frame 0093 (two-page spread)",
+   "saw": "Handwritten English despatch about the Carreras, Lima, Buenos Aires and Monte Video with numeric code passages interlined in the text: runs of 3-4 digit numbers (about 200-1500) separated by commas, nine or more runs across both pages, no decipherment written on the page. Date of the letter not legible at this resolution; text concerns the Carreras (Jose Miguel Carrera, president of Chile) and the Portuguese troops.",
+   "note": "Matches the frame given in the entry (naId 213803757).",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  },
+  "outcome": "attempted, open"
+ },
+ {
+  "id": 641,
+  "title": "José Rafael Revenga → Colombian Secretary of Foreign Affairs, Madrid, letter partly in cipher intercepted by the French, sent to Washington by Anderson with no key",
+  "correspondents": "José Rafael Revenga (Colombian envoy in Spain) → Pedro Gual, Secretary of Foreign Affairs of Colombia (paper enclosed by Richard C. Anderson, US minister at Bogotá → John Quincy Adams)",
+  "date": "1822 (duplicate intercepted in France; delivered at Bogotá, transmitted 19 Jan 1824)",
+  "shelfmark": "NARA RG 59, Despatches from US Ministers to Colombia, vol. 3, enclosure 'No. 4' (paper in fragments) to Anderson's despatch of 19 Jan 1824 (microfilm T33)",
+  "folio_note": "a paper in fragments, written partly in cipher; Manning: 'Not printed. A postscript to Anderson's letter explains that no key to the cipher was furnished. The portions not in cipher are, alone, unintelligible.'",
+  "links": [
+   {
+    "label": "Manning vol. 2 (archive.org)",
+    "href": "https://archive.org/details/diplomaticcorres02mann"
+   }
+  ],
+  "ark": "",
+  "status": "Manning 1925 vol. 2, doc. 641, pp. 1272-73. Gual told Anderson it was the duplicate of a Revenga letter from Madrid sent through France, intercepted and opened there, then handed by Count Landos (a French agent at Cartagena, 1822) to a Colombian agent. Revenga's other cipher letters (Archivo General de la Nación, Bogotá; Archivo Santander) may share the key. Not in the repo (known.py: Revenga no hits). 27 Oct 2026 (WAINUT, PR #109; targets/revenga1822/, in progress): key recovered from the ciphertext alone; deciphered in part on a first-pass transcription of the four frames.",
+  "why": "Colombia's first envoy to Spain reporting on the 1822 negotiations for recognition, a letter the French secret service read and the Colombians passed to the US to warn of French designs.",
+  "source": "NARA RG 59 diplomatic despatches (via Manning 1925) sweep",
+  "language": "Spanish",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: Manning)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/T33/T33-03/T33-03-0056.jpg",
+   "frame": "T33 roll 3 (naId 189273979), frames 0055-0058",
+   "saw": "Anderson's despatch No. 7 of 19 Jan 1824 is on this roll; the enclosed paper is on frames 0055-0058: handwritten Spanish letter, headed on 0057 'Al Sr. Ministro de Estado y Relaciones Exteriores de Colombia', with long runs of cipher (continuous loop/stroke characters, no word breaks) between clear Spanish phrases; 0055 and 0056 are mostly cipher with clear sentences interspersed; 0058 has a continuation plus an interleaved English 'Translation' sheet addressed to the Minister of State and foreign relations of Colombia, partly blank where the cipher lies. Not read.",
+   "note": "Frames 0055-0058 of T33 roll 3, not roll 2 (roll 2 ends with Todd's despatch of 28 Jan 1824).",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 642,
+  "title": "Robert Bunch, British consul at Charleston: four unsolved letter-group cryptograms (Schmeh/Beveridge challenge)",
+  "correspondents": "Robert Bunch → unknown (British consular / Foreign Office channel)",
+  "date": "c. 1861-1864",
+  "shelfmark": "Holding not named in print: notes found by Christopher Dickey while writing 'Our Man in Charleston' (2015); scans passed to Colin Beveridge",
+  "folio_note": "Five notes; #1 a simple substitution ('stop the fools', solved); #2 c. 29 four-letter groups + 10 on reverse, #3 24 groups, #4 37 groups, #5 image only",
+  "links": [
+   {
+    "label": "Schmeh 2018 post with scans",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/2018/06/01/who-can-break-the-cryptograms-of-civil-war-spy-robert-bunch/"
+   }
+  ],
+  "ark": "",
+  "status": "Posted unsolved by Schmeh 1 June 2018; #1 read by Beveridge, #2-#5 open: Playfair, double Playfair, periodic polyalphabetic and codebook hypotheses all failed (Lasry's Playfair solver included). No later solution found 27 Oct 2026.",
+  "why": "The cipher traffic of Britain's consul-agent in the Confederacy, who reported on secession and the slave trade to Lord Russell, could show what he sent outside the official despatches.",
+  "source": "Literature sweep (US military/intelligence slice)",
+  "language": "English",
+  "seen": "catalogue",
+  "prior_art": "open for #2-#5 (checked 27 Oct 2026: Schmeh comments to 2018, web search for later solutions; #1 solved by Beveridge)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://scienceblogs.de/klausis-krypto-kolumne/2018/06/01/who-can-break-the-cryptograms-of-civil-war-spy-robert-bunch/",
+   "frame": "Schmeh 2018 post scans #1 and #2",
+   "saw": "#1 handwritten note to Lord Lyons with a few lines in script-like substitution signs (the solved one). #2 handwritten 'Charleston July 31, 1861, My dear Lord Lyons' followed by rows of four-letter capital groups (EOCH J2OL BTOU 2REH ...). Scans #3-#5 not inspected.",
+   "note": "Holding not named; images are Beveridge's photos on Schmeh's blog.",
+   "date": "2026-10-30",
+   "by": "claude frame check 05"
+  }
+ },
+ {
+  "id": 643,
+  "title": "German Army Truppenschlüssel messages, net 'pz6', 4 July 1941 (Nr. 88, 90, 91, 92, 94, 97; also 95, 96 same day)",
+  "correspondents": "German Army front-line units (call sign pz6) → same net",
+  "date": "4 Jul 1941",
+  "shelfmark": "German Army message collection (original message forms, provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); transcribed by Olaf Ostwald and Frode Weierud",
+  "folio_note": "Six pz6 messages 35+96+88+126+143+59 = 547 letters, plus Nr. 95 (74) and Nr. 96 (62) with blank addressee; facsimiles for Nr. 88, 94, 95",
+  "links": [
+   {
+    "label": "CryptoCellar unbroken TS list",
+    "href": "https://cryptocellar.org/bgac/g-army-ts-messages.html"
+   },
+   {
+    "label": "BGAC project",
+    "href": "https://cryptocellar.org/bgac/index.html"
+   },
+   {
+    "label": "CryptoCellar 1941 Message List",
+    "href": "https://cryptocellar.org/bgac/1941-msg-list.html"
+   }
+  ],
+  "ark": "",
+  "status": "CryptoCellar 1941 Message List (status 20 Oct 2026) marks 24 of the 30 messages broken in Sept 2026 (Paefgen; Davies, Willis, Khan, marked AI), DOLHA 252 only in part; pz6 Nr. 88-97 by Paefgen 21.09 and Davies 25.09; plaintexts not published. Still unbroken: EHNPZ 123 (8 Jul, net 4fc), AFUVO 26, ZUBZE 8, MZXNX 21, AAXYN 31, AOXST 91; also BCUCC Nr. 20 NF (5 Sep 1941), not in this row. See targets/ts1941pz6/ (WAINUT, PR #125; ciphertext-only attempt failed; Status: no write-up). Earlier: Listed as unbroken on CryptoCellar 'Unbroken German Army Truppenschlüssel Messages' (updated 27 Jul 2026). Truppenschlüssel is a hand cipher (simplified Doppelkasten); most of the 100+ surviving TS messages were broken by Ostwald & Weierud (Cryptologia 2021). Not in the repo (only Enigma rows of this collection are on HCPortal; Cryptoole's CryptoCellar rows were dropped wholesale as Enigma). This entry covers all 30 unbroken 1941 Truppenschlüssel messages on the CryptoCellar list, by net: net 'pz6', 4 July 1941 (Nr. 88, 90, 91, 92, 94, 97; also 95, 96 same day); net 'nfw', 3 July 1941 (Nr. 84, 85, 86); net '4fc', 8 July 1941 (Nr. 123, 129, 130); net 'f8y', 6 and 8 July 1941 (Nr. 109, 110, 121); net '8be', 25 July 1941 (Nr. 263, 264); June-September 1941 (VHRNE Nr. 284, AOXST Nr. 91, XWFEC Nr. 193, MZXNX Nr. 21, AAXYN Nr. 31, DOLHA Nr. 252, LSSLG Nr. 268, ZUBZE Nr. 8, CFQIB Nr. 281, YSGSS Nr. 56, AFUVO Nr. 26). They were dropped from the 14 Oct Cryptoole import because research/cryptoole/pull.py filtered every CryptoCellar row as Enigma.",
+  "why": "A same-day, same-net group of a WWII hand field cipher left unbroken by modern cryptanalysis: a direct test case for the paper beside the Orpo Doppelkasten target.",
+  "source": "CryptoCellar (via captured-records slice)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "broken by others Sept 2026 for 24/30 (CryptoCellar 1941 Message List, status 20 Oct 2026); unpublished; checked 27 Oct 2026",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://cryptocellar.org/bgac/spruch/04071941-088-in.pdf",
+   "frame": "Facsimile of Nr. 88 (1 page)",
+   "saw": "German Army 'Funk-Spruch' form, Spruch Nr. 88 (red), 4.7.1941, from/to 'pz6', two lines/rows of handwritten five-letter-group cipher in the grid (about 4 rows of groups) with sample groups like 'mtc2km40', 'thynu'. No plaintext.",
+   "note": "Other facsimiles on the page: Nr. 94 (04071941-094-in.pdf) and Nr. 95 (the link has 'spruch/spruch/' doubled, probably broken); only Nr. 88 was opened. Note that the cipher text on Nr. 88 is Truppenschluessel letters and digits, not plaintext.",
+   "date": "2026-10-30",
+   "by": "claude frame check 02"
+  },
+  "outcome": "attempted, open: 24/30 broken by others (unpublished); no write-up (targets/ts1941pz6/)",
+  "known": "24 of the 30 messages broken Sept 2026 (Paefgen; Davies, Willis, Khan, marked AI), plaintexts and keys unpublished; DOLHA 252 in part. pz6 Nr. 88-97 of 4 July: Paefgen 21.09, Davies 25.09.",
+  "open": "EHNPZ 123 (8 Jul, net 4fc; same net and day as broken Nr. 129-130), AFUVO 26, ZUBZE 8, MZXNX 21, AAXYN 31, AOXST 91."
+ },
+ {
+  "id": 647,
+  "title": "Telegrams from the battleship Schleswig-Holstein to a naval officer's family (Dabis) in Kiel, four 55-letter cryptograms",
+  "correspondents": "Crew member of SMS/Linienschiff Schleswig-Holstein → Dabis family, Kiel",
+  "date": "6 Jan 1939 and three later dates (11 Jan, 16 Feb, 13 Mar, years 1937-42)",
+  "shelfmark": "Private collections: Tobias Schrödel (no. 1); Patrick Hayes (nos. 2-4, with 153 pages of clear correspondence 1937-42)",
+  "folio_note": "Four telex/telegram forms, each 11 five-letter groups (55 letters); handwritten clear notes accompany some",
+  "links": [
+   {
+    "label": "Schmeh 2017 (first telex)",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/2017/09/02/who-can-decipher-this-encrypted-telex-from-a-famous-battle-ship/"
+   },
+   {
+    "label": "Schmeh 2021 (three more)",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/2021/01/03/drei-weitere-ungeloeste-verschluesselte-nachrichten-vom-kriegsschiff-schleswig-holstein/"
+   }
+  ],
+  "ark": "",
+  "status": "Unsolved per Schmeh (2017, 2021 posts; WWII list part 1). Transposition suspected from letter frequencies (Gillogly, readers). Lasry was working on them in 2021; no solution reported.",
+  "why": "A private hand cipher with a large clear-text correspondence beside it, so cribs exist.",
+  "source": "Literature sweep (captured/foreign slice; private holding)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: Schmeh posts and web search)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://scienceblogs.de/klausis-krypto-kolumne/2017/09/02/who-can-decipher-this-encrypted-telex-from-a-famous-battle-ship/",
+   "frame": "Schmeh 2017 telex image (no. 1)",
+   "saw": "Photo of the telex form: header 'SCHL HOLSTEIN 11 15 5/1 1828' to 'DABIS HOHENRADE 42 KIEL', then five-letter groups (NHET NELUI TDSEE OCBAU AMTXU DBNAN NEUFX, partly cropped). Telexes 2-4 not checked.",
+   "note": "",
+   "date": "2026-10-30",
+   "by": "claude frame check 05"
+  }
+ },
+ {
+  "id": 648,
+  "title": "US Military Telegraph (War Department telegraph office) ledgers: enciphered telegrams in the Eckert Papers ('Decoding the Civil War')",
+  "correspondents": "Lincoln, Stanton, Union commanders ↔ War Department telegraph office",
+  "date": "1861-1866",
+  "shelfmark": "Huntington Library, Thomas T. Eckert Papers (mssEC), 35 telegram ledgers; cipher books in the same papers",
+  "folio_note": "15,971 telegrams transcribed on Zooniverse, about 5,400 enciphered (route ciphers with code words)",
+  "links": [
+   {
+    "label": "Huntington: Decoding the Civil War",
+    "href": "https://www.huntington.org/verso/decoding-civil-war"
+   },
+   {
+    "label": "Smithsonian on the project",
+    "href": "https://www.smithsonianmag.com/smart-news/you-can-help-decode-thousands-top-secret-civil-war-telegrams-180959561/"
+   }
+  ],
+  "ark": "",
+  "status": "Transcription phase done; the planned decipherment phase with the Eckert cipher books is not reported as completed (checked 27 Oct 2026). Overlaps the Cryptoole draft row 'The \"Decoding the Civil War\" Project' (research/cryptoole/candidates.json, from cryptiana), which has no shelfmark; this row adds the holding. Milroy telegrams (same system) are already solved here. 27 Oct 2026 (WAINUT, PR #112; targets/eckert1862/, in progress): deciphering with the Eckert cipher books under way.",
+  "why": "Thousands of War Department cipher telegrams, keys in the same collection: a large, keyed, mechanical reading task rather than a cryptanalytic one.",
+  "source": "Literature sweep (US military/intelligence slice)",
+  "language": "English",
+  "seen": "catalogue",
+  "prior_art": "partly read at the time (ledgers often hold the cipher form; translations exist for many in OR); decipherment phase not published (checked 27 Oct 2026)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://hdl.huntington.org/digital/collection/p16003coll11/id/5137",
+   "frame": "ledger 'Received, June 27, 1863 - Jany. 24, 1864' (id 5540), Page 5 of 413",
+   "saw": "Handwritten telegram ledger page: text in ruled columns of ordinary words in scrambled order (word-transposition/route cipher with plain words), headed 'Continued'. No decipherment on it. Ledgers are online on HDL (Thomas T. Eckert Papers).",
+   "note": "Entry names no frame; page 5 of one ledger checked only.",
+   "date": "2026-10-30",
+   "by": "claude frame check 05"
+  }
+ },
+ {
+  "id": 654,
+  "title": "German Foreign Office → German Legation Stockholm, numeric-code telegrams obtained by the US Legation Stockholm (indicator groups 017/010/693)",
+  "correspondents": "Auswärtiges Amt, Berlin (signed Stumm, Bussche, 'auswaertig') → Deutsche Gesandtschaft Stockholm",
+  "date": "2 and 22-27 Jul 1918 (copies sent 4 Oct, 8 Oct and 6 Nov 1918)",
+  "shelfmark": "NARA RG 59, Decimal File 763.72/11631, 11654, 11668 and enclosures of Stockholm despatches 1421 (4 Oct 1918), 1426 (8 Oct 1918), 1475 (6 Nov 1918); microfilm M367 rolls 108, 114, 122, 141",
+  "folio_note": "Telegraph-form copies with full German headers (w-numbers, word counts, dates): M367 roll 114 frames 0415-0418 (desp. 1421: nos. 1-3), roll 141 frames 1255-1265 (desp. 1426: ten telegrams, incl. 017 733 405, 017 435 437 693, 017 149 405, 017 963 405, 017 556 405, 010 018 406), roll 122 frames 0154-0155 (desp. 1475: 017 119 943). The same texts re-cabled by Chargé Schoenfeld from Christiania as legation telegrams 1214, 1233-1237 (5-11 Oct 1918): roll 108 frames 0450, 0511-0515, 0578, 0690-0754. About 12 telegrams, each 30-120 groups of 3-5 digits (values up to ~33000, many repeats such as 4435 9405 2837 10953 23456 21890).",
+  "links": [
+   {
+    "label": "M367 roll 141 (763.72/354-13348A), naId 27158076",
+    "href": "https://catalog.archives.gov/id/27158076"
+   },
+   {
+    "label": "M367 roll 114 (763.72/11966-12000), naId 27133946",
+    "href": "https://catalog.archives.gov/id/27133946"
+   },
+   {
+    "label": "M367 roll 122 (763.72/12478-12525), naId 27140577",
+    "href": "https://catalog.archives.gov/id/27140577"
+   },
+   {
+    "label": "M367 roll 108 (763.72/11561-11720), naId 27128808",
+    "href": "https://catalog.archives.gov/id/27128808"
+   }
+  ],
+  "ark": "",
+  "status": "2 Nov 2026 (targets/stockholm1918/): transcribed, 938 groups in four numeric systems, not deciphered. 13040, 5950, 26040, the 18470 family, slider no. 1 and Bernstorff's 1917 code ruled out. Heads decoded with the Dreinummerheft (Mendelsohn 1937): Nr. 923-925 of about 2 July, Nr. 1010-1015 of 26-27 July. Needs a code book, an MI-8 or Room 40 decode, or the Berlin drafts by those numbers.",
+  "why": "German Foreign Office instructions to its Stockholm legation in the last months of the war (July 1918), obtained by US diplomats; content unknown.",
+  "access": "online",
+  "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "open as far as checked (2 Nov 2026: Mendelsohn 1937 read for this traffic, not mentioned; Zeman 1958; web); FRUS 1918 not checked page by page; an MI-8 decode may exist in RG 165 or RG 457",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialive/76/1580/27158076/content/dc-metro/rg-059/M367/M367_Box_4_122-175/M367_Roll141/M367_Roll141-1256.jpg",
+   "frame": "M367 roll 141 frames 1256-1257 (and roll 114 frame 0416)",
+   "saw": "Typed German telegram copies headed 'deutsche gesandtschaft sthlm' / 'legation allemande sthlm': 1256 is a long telegram of 4-5-digit groups (017 732 405 135 ...) in about 28 lines ending 'hintze'; 1257 has 5-digit groups plus a few clear words ('funfacht vanadopote'), about 8 lines; roll 114 frame 0416 has a further 4-digit telegram ending 'stumm'. No decipherment on the pages.",
+   "note": "The first named frame (roll 141 1255, roll 114 0415) is the covering Stockholm despatch (nos. 1426 / 1421, enclosing copies of German telegrams): no cipher there; the cipher starts on the next frame.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  },
+  "outcome": "attempted, open"
+ },
+ {
+  "id": 655,
+  "title": "German Foreign Office (Abteilung II) → German Legation Stockholm, five-letter pronounceable code-word telegrams",
+  "correspondents": "Auswärtiges Amt, Berlin → Deutsche Gesandtschaft Stockholm, Abteilung II",
+  "date": "22 Jul 1918 (copies sent Oct-Nov 1918)",
+  "shelfmark": "NARA RG 59, 763.72/11654 (Christiania tel. 1215) and enclosures of Stockholm despatches 1421 and 1475; M367 rolls 108, 114, 122",
+  "folio_note": "Roll 114 frames 0419-0420 (telegrams nos. 4 and 5 of desp. 1421: 'umsebosul lanihunci ...', 'undulanef ihoxueriwe ...', 16 and 36 groups); roll 122 frame 0158 (W894, 22 Jul: 'OZUXOWUDA UKASEETITU ...'); cabled copy roll 108 frame 0516. Groups are CVCVC pairs run together (10-letter blocks), so ~3 telegrams, ~70 code words.",
+  "links": [
+   {
+    "label": "M367 roll 114, naId 27133946",
+    "href": "https://catalog.archives.gov/id/27133946"
+   },
+   {
+    "label": "M367 roll 122, naId 27140577",
+    "href": "https://catalog.archives.gov/id/27140577"
+   },
+   {
+    "label": "M367 roll 108, naId 27128808",
+    "href": "https://catalog.archives.gov/id/27128808"
+   }
+  ],
+  "ark": "",
+  "status": "Sent unsigned, 'dates uncertain' (Stockholm 2943). No decode filed with the copies. Not on DECODE; not in the repo.",
+  "why": "A second, letter-based German code used for a separate department of the Stockholm legation (Abt. II, propaganda/intelligence) in 1918.",
+  "access": "online",
+  "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "open as far as checked (27 Oct 2026: web search, repo known.py)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialive/46/1339/27133946/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll114/M367_Roll114-0419.jpg",
+   "frame": "M367 roll 114 frames 0419-0420 (also roll 122 0158, roll 108 0516)",
+   "saw": "Typed German telegram headers 'Berlin ... Deutsche Gesandtschaft abtlg zwei Stockholm' followed by lowercase pronounceable ten-letter code words (0419: 'umsebosul lanihunci urfiohuso pekayupari / avewuoduxu wadariboau vofucfevel lanofiheta', 8 words, telegram w759/2 no. 4; 0420: w648, 5 lines of 4 words, no. 5). Roll 122 0158: w894 22/7 in capitals 'OZUXOWUDA UKASEETITU ...', 3 lines, 12 words. Roll 108 0516: Christiania tel. 1215 of 1 Oct 1918 giving telegrams 4 and 5 again, in 5-letter groups split from the 10-letter words ('umzeb ozul lanih unci ...'), typed, no decipherment on any of them.",
+   "note": "All named frames match the entry.",
+   "date": "2026-10-30",
+   "by": "claude frame check 07"
+  }
+ },
+ {
+  "id": 656,
+  "title": "German Supreme Command (GrHQu, signed Ludendorff) → German military attaché Stockholm, and Berlin → Legation / Consulate-General Stockholm, five-digit-group telegrams",
+  "correspondents": "Großes Hauptquartier (Ludendorff) → Deutscher Militärattaché Stockholm; Berlin → Légation Allemande Stockholm; Berlin → Deutsches Generalkonsulat Stockholm",
+  "date": "22-26 Jul 1918",
+  "shelfmark": "NARA RG 59, enclosures of Stockholm despatches 1426 and 1475; Christiania tels. 1233-1236 (763.72/11668); M367 rolls 141, 122, 108",
+  "folio_note": "Roll 141 frame 1264 (w791 'Sehr dringend', 'DEUTSCHER MIL ATT STOCKHOLM', '5 Teile, 1. Teil 29 Gruppen', 08762 42680 ...), frame 1257 (w769 'legation allemande sthm', 55356 06165 ...), frame 1260 approx. (w592 Generalkonsulat, 2507 18 57454 54936 ...); roll 122 frames 0156-0157 (W628 Légation Allemande 57316 87882 ...; w611 'hansa 23 juli' with code words vera/lilly/hanna/lolo between 5-digit groups); cabled copies roll 108 frames 0691-0709, 0722-0728. Five parts of ~29-40 groups for the attaché telegram alone.",
+  "links": [
+   {
+    "label": "M367 roll 141, naId 27158076",
+    "href": "https://catalog.archives.gov/id/27158076"
+   },
+   {
+    "label": "M367 roll 122, naId 27140577",
+    "href": "https://catalog.archives.gov/id/27140577"
+   },
+   {
+    "label": "M367 roll 108, naId 27128808",
+    "href": "https://catalog.archives.gov/id/27128808"
+   }
+  ],
+  "ark": "",
+  "status": "2 Nov 2026 (targets/ludendorff1918/): transcribed, 328 five-figure groups, not deciphered. Figures flat in every column, two repeats, no additive reused at any offset; every German code printed in Mendelsohn 1937 ruled out. Stockholm 2952: 'number nine to German Military Attache ... signed Ludendorff'. Needs the key or a clear copy.",
+  "why": "A very urgent Ludendorff/OHL message to the Stockholm military attaché in late July 1918, after the failure of the Marne offensive.",
+  "access": "online",
+  "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "open as far as checked (2 Nov 2026: Mendelsohn 1937, Zeman 1958, web); an MI-8 decode may exist in RG 165 or RG 457",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialive/76/1580/27158076/content/dc-metro/rg-059/M367/M367_Box_4_122-175/M367_Roll141/M367_Roll141-1264.jpg",
+   "frame": "M367 roll 141 frames 1264, 1257, 1260 (roll 122 0156 also seen)",
+   "saw": "1264: w791 GrHQu -> 'Deutscher Mil Att Stockholm', 'Sehr dringend', 5 Teile of 29/30/38/31/33 groups, about 150 five-digit groups, typed, signed Ludendorff, no decipherment. 1257: w769 'legation allemande sthlm', 'funfacht vanadopote' then 5-digit groups (about 40). 1260: w592/26 Deutsches Generalkonsulat Stockholm, about 25 five-digit groups. Roll 122 0156: W628 Legation Allmande Stockholm, 5-digit groups (about 50), typed, no decipherment.",
+   "note": "Named frames match.",
+   "date": "2026-10-30",
+   "by": "claude frame check 07"
+  },
+  "outcome": "attempted, open"
+ },
+ {
+  "id": 657,
+  "title": "Bernstorff (German Embassy Washington), second code text on the State Department cable of 11 Jan 1917 (groups 147-576), unread",
+  "correspondents": "Count Johann Heinrich von Bernstorff → Auswärtiges Amt, Berlin (via Secretary Lansing and Amembassy Berlin)",
+  "date": "11 Jan 1917",
+  "shelfmark": "NARA RG 59, 763.72111/4443 and related papers; M367 roll 166 (763.72111/4226-4500)",
+  "folio_note": "Roll 166 frames 0785-0786 (sheets 1 and 2; 0786 is not reversed): 577 groups in all (505 four-figure, 67 five-figure, 4 three-figure, 1 six-figure). Groups 0-146 are telegram No. 205; groups 147-576 are a second text in the same code.",
+  "links": [
+   {
+    "label": "M367 roll 166 (763.72111/4226-4500), naId 27179174",
+    "href": "https://catalog.archives.gov/id/27179174"
+   }
+  ],
+  "ark": "",
+  "status": "27 Oct 2026 (WAINUT, PR #115; targets/bernstorff1917/): groups 0-146 are Bernstorff's telegram No. 205 of 10 Jan 1917, printed by Bernstorff (1920, pp. 325-326) and in Official German Documents II p. 1017; aligning them gave 82 groups of a two-part four-figure code with prefix figures (not 13040; probably 0075 [?]). Written up. The memorandum on frames 0769-0775 is not the plaintext. This entry is now the second text, 430 groups in the same code, unread; catalogue 635 (5 Dec 1916) is the sibling to try.",
+  "why": "A German Embassy code telegram of the last weeks before unrestricted U-boat warfare, with a near-certain crib; a test of the 13040/0075 codes on known text.",
+  "access": "online",
+  "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "not found in print (27 Oct 2026: web search on Bernstorff/13040/Room 40, repo known.py); Room 40 probably read it at the time",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialive/74/1791/27179174/content/dc-metro/rg-059/M367/M367_Box_4_122-175/M367_Roll166/M367_Roll166-0785.jpg",
+   "frame": "M367 roll 166 frames 0785 (sheet 1) and 0786 (sheet 2)",
+   "saw": "Typed four-figure code groups, 13 per row: 0785 is sheet 1 (about 27 rows, with pencil underlinings and marginal annotations), 0786 sheet 2 (about 21 rows, stamped Department of State Jan 11 1917 Approved, Lansing). Pure numeric groups, no decipherment written on them.",
+   "note": "Matches the entry.",
+   "date": "2026-10-30",
+   "by": "claude frame check 07"
+  },
+  "outcome": "attempted, open"
+ },
+ {
+  "id": 658,
+  "title": "German Minister at Lima (Perl) ↔ German legations Santiago, Buenos Aires, Montevideo, Mexico: copies of cipher telegrams obtained by the US Legation Lima",
+  "correspondents": "German Legation Lima (Minister Perl; later Weyers) ↔ German legations in Santiago, Buenos Aires, Montevideo and Mexico",
+  "date": "May 1917 - Jan 1918",
+  "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 862.20223 (German military activities in Peru), sub-nos. 4-99",
+  "folio_note": "The 862.20223 file is scanned: M336 roll 64 (RG 64 copy, item naId 574876562), frames c. 0048-0207 and later (found 27 Oct 2026 in the NARA bulk sweep, slice J). It holds the US Legation's relays of the German code telegrams (5-figure groups), a letter code between Quito and Lima (f.0104), the Department's re-sends 'For Bell from Harrison' (f.0049-0054, 0069, 0103, 0129-0132, 0204), London's replies (f.0101 'Second undecipherable ... Fourth undecipherable'; f.0207 a verbatim English text), Lima's despatch of 6 June 1917 (f.0070-0072) and Handley's of 9 Oct 1917 (f.0205). Purport list: M973 roll 207 frames 1008-1014.",
+  "links": [
+   {
+    "label": "M973 roll 207 purport list 862.00-862.348, naId 87662081",
+    "href": "https://catalog.archives.gov/id/87662081"
+   },
+   {
+    "label": "M336 roll 64, 862.20223 file (naId 574876562)",
+    "href": "https://catalog.archives.gov/id/574876562"
+   }
+  ],
+  "ark": "",
+  "status": "Partially read at the time: London (Bell / Gunther, i.e. Room 40 via the US Embassy) cabled back the 'substance' of most batches; Lima 85 (9 Oct 1917) reports some messages could not be deciphered. Verbatim decodes not listed. Not on DECODE; not in the repo.",
+  "why": "German diplomatic traffic along the west coast of South America in 1917, with a contemporary partial reading to check against.",
+  "access": "online",
+  "source": "NARA catalogue bulk-scan triage (RG 59 1906-1950)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "substance read by Room 40 at the time per the purport list; no publication found (27 Oct 2026)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-064/537445615/M336/M336-064/M336-064-0048.jpg",
+   "frame": "M336 roll 64 frame 0048 (also 0104)",
+   "saw": "0048: pasted-up typed copies of German Lima telegrams of June 1917 ('Fourth/Fifth/Sixth, dated June eighth, German Minister Lima to the German Minister Santiago / Buenos Aires / Consul Quito'), 1-5 digit numbers (about 130 groups), signed Handley, no decipherment. 0104: telegram Lima 24 July 1917 file 862.20223/26 with a letter-code Quito-Lima text ('dobombobet fesafbefys catuhlobaz ...') and four numeric telegrams (17106 3819 14014 ...). 0101: London's reply 'Second undecipherable / Fourth undecipherable' (clear).",
+   "note": "Frame numbers in the entry match; the frames are on medialz M336-064.",
+   "date": "2026-10-30",
+   "by": "claude frame check 07"
+  }
+ },
+ {
+  "id": 669,
+  "title": "Soviet and German cipher radiograms of 1921 (Moscow ↔ Berlin, Stockholm, Christiania, Kharkov), intercepted at Constantinople by the US High Commission and never deciphered",
+  "correspondents": "Chicherin / Narkomindel Moscow ↔ Soviet representation Berlin (Kopp, Krestinsky, 'Polpred'), Stockholm, Christiania, Reval; Nikolaev → Kharkov; Auswärtiges Amt Berlin ↔ Deutsche Vertretung Moskau (Hilger); copies sent by Admiral Mark L. Bristol, US High Commissioner, Constantinople",
+  "date": "1921",
+  "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 861.00 (Political Affairs, Russia), microfilm M316 rolls 40-48 (RG 64 digital copies): file units naId 604700562 (861.00/8376-8492, Mar 1921), 604701877 (8493-8622, Apr), 604703234 (8623-8773, May-Jun), 604704577 (8774-8910, Jun-Jul), 604705830 (8911-9012, Jul-Sep), 604707113 (9013-9064, Sep-Oct), 604708415 (9065-9159, Oct-Nov), 604709981 (9160-9240, Nov-Dec), 604711297 (9241-9329, Dec 1921-Feb 1922); the War Department copies are RG 457, Archival and Historian's Source Files, 6707N 'Russian Coded Messages, 1921 (Provided by U.S. High Commissioner Constantinople)' (naId 23890165, not digitised)",
+  "folio_note": "Typed copies of intercepted radiograms, one per frame with date, route and addresses (e.g. 'MARCH 22d 1921 FROM ... TO MOSCOW 71915 67404 33684 ...'; 'SEPTEMBER 4th 1921 FROM BERLIN TO MOSCOW SCHITSCHERIN MOSKAU FUNKSPRUCH'; 'SEPTEMBER 28th 1921 FROM MOSCOW TO BERLIN POLPRED BERLIN'), mostly 4- and 5-figure groups. Frames with cipher text by roll (OCR count): M316-040 0889-0893 (5); 041 0543-1068 (61); 042 0244-1276 (83); 043 0427-1204 (42); 044 0186-1073 (56); 045 0048-0638 (22); 046 0178-1178 (45); 047 0155-1070 (64); 048 0128-0766 (13): about 390 frames, about 62,000 groups. Covering despatches: 861.00/8575 (Bristol No. 153, 20 Apr 1921, M316-041-0871: the Russian intercept operator's notes on the traffic), 040-0888 (March 1921: hopes anti-Bolshevik Russians may help find the key; Col. Castle sending similar messages to the War Department), 043-0936 (July 1921: 'unable to report any progress regarding the deciphering of the code messages of the Bolshevik Government'); 9071, 9130, 9132, 9133 (Oct-Nov 1921, Moscow-Berlin and Moscow-Christiania). M316-041-1073 'Deciphered telegrams of Soviet authorities' (Petrograd-Reval) is a separate, small set in clear.",
+  "links": [
+   {
+    "label": "M316 roll 41, 861.00/8493-8622 (naId 604701877)",
+    "href": "https://catalog.archives.gov/id/604701877"
+   },
+   {
+    "label": "Bristol No. 153 with the operator's notes (M316-041-0871)",
+    "href": "https://catalog.archives.gov/medialz/dc-metro/rg-064/530216169/M316/M316-041/M316-041-0871.jpg"
+   },
+   {
+    "label": "Intercept, 22 Mar 1921 (M316-041-0543)",
+    "href": "https://catalog.archives.gov/medialz/dc-metro/rg-064/530216169/M316/M316-041/M316-041-0543.jpg"
+   },
+   {
+    "label": "M316 roll 46, 861.00/9065-9159 (naId 604708415)",
+    "href": "https://catalog.archives.gov/id/604708415"
+   },
+   {
+    "label": "RG 457 6707N (naId 23890165)",
+    "href": "https://catalog.archives.gov/id/23890165"
+   }
+  ],
+  "ark": "",
+  "status": "Unblocked 27 Oct 2026 (NARA slice L, research/nara_triage_l/): the purport list (naId 87657409) led to the 861.00 file, which is filmed on M316 and digitised as RG 64 copies; all nine 1921 rolls fetched and the OCR read. The High Commission could not decipher the traffic and the Department records no decipherment; the War Department (MI-8) received parallel copies (RG 457 6707N). Some of the same Soviet traffic may have been read by GC&CS (HW 12, 1921) and the German side is Auswärtiges Amt traffic; neither has been checked. Distinct from 710 (Chicherin → Sukhanov 1918).",
+  "why": "A large, dated corpus of early Soviet and German diplomatic cipher radio traffic from 1921, filed as typed copies with the intercept operator's notes: the Rapallo-era Moscow-Berlin channel, unread by the Americans who collected it.",
+  "access": "online",
+  "source": "NARA bulk-scan triage C sweep",
+  "language": "Russian and German (per the intercept operator: Kopp–Chicherin traffic mostly Russian, some Chicherin telegrams German)",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-064/530216169/M316/M316-041/M316-041-0543.jpg",
+   "frame": "M316 roll 41 frame 0543",
+   "saw": "Typed copy of a radiogram 'From Moscow to Stockholm', 21 March 1921, Delsovpra Kerzhentsev, Sirius, about 11 lines of five-digit groups (30215 82750 15123 ...), operator note 'Two or three groups missing owing to interference', signed Tchicherine. No decipherment. Frame 0871 (Bristol No. 153, 20 Apr 1921) also seen: letter text with the operator's notes, no cipher.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 678,
+  "title": "Communist Party of America underground: book-cipher addresses and names in letters seized at 170 Bleecker St., New York, 1920-21",
+  "correspondents": "District organizers and members (signing D.O. 5, J. Mortin, Frederick Mayer ...) ↔ the Executive Secretary (\"EXSEC\", Paul Holt), Communist Party of America",
+  "date": "Sep 1920 - Apr 1921",
+  "shelfmark": "NARA RG 65, Investigative Case Files of the Bureau of Investigation 1908-1922, Old German Files (M1085) roll 940, case 202600 (\"202600-1775 THRU 202600-1949-1 (4 of 4)\", naId 369272950), multi-page PDFs M1085-940A, -940B, -940C (\"Copies of Letters & Documents Found at 170 Bleecker St.\")",
+  "folio_note": "OCR count: 77 runs of line/letter fraction groups (e.g. \"(New code) 3/3 3/4 2/8 3/7 1/14 - 7/3 2/7 4/4 ...\", \"Old code P 14 ... 14/15 2/1 6/4\"), about 2,400 fraction tokens over the three PDFs. 27 runs are followed by a Bureau \"Decode:\" or \"the above code reads as follows\" line; about 50 runs show no decode nearby. 940C also copies the party's own instruction for the system (count lines down, letters across on a set page; a dash between words).",
+  "links": [
+   {
+    "label": "M1085 roll 940, case 202600 (4 of 4)",
+    "href": "https://catalog.archives.gov/id/369272950"
+   }
+  ],
+  "ark": "",
+  "status": "Seen in the OCR of the digitised reel: Bureau agents copied the seized letters and decoded many of the coded addresses (class A: decodes in the same file give cribs for the page). The undecoded runs are names, addresses and telegraph covers. Not on DECODE; nothing in the repo. 27 Oct 2026 (WAINUT, PR #116; targets/cpa1920/, in progress): 28 runs and 439 tokens on the typed pages (the 77 runs / 2,400 tokens of the OCR count also took in dates and ratios); handwritten pages not yet searched. Key grid rebuilt from the Bureau's own decodes of 16 runs; the book is not identified.",
+  "why": "The early US Communist underground (after the Palmer raids) hid its contact network in a book code; the undecoded runs would name more of that network, and the system is a clean example of a period book cipher.",
+  "access": "online",
+  "source": "NARA bulk-scan triage C sweep",
+  "language": "English",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-065/833671/M1085/M1085-940/M1085-940A.pdf",
+   "frame": "M1085-940A.pdf, PDF page 15",
+   "saw": "Typed sheet headed 'Agents. For Bohemia / Armenian / English' with runs of line/letter fraction groups (4/3 - 1/14 3/4 5/5 4/7 ... 10/5 10/7 9/7 8/3 8/4 8/6 ...), about 9 lines, followed by 'Decode: (1) ... Racine, Wis. (2) Milwaukee ... (4) Peter Barry, 48 Milwaukee St.' (Bureau decode of four addresses). More fraction runs on PDF page 14 (by OCR text) and p. 939.",
+   "note": "The cipher is in the 940A PDF (1000 pp); the 940C PDF had no matching text and 940B was not examined.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 693,
+  "title": "Soviet Baltic Fleet radio cipher messages (five-figure groups) copied by the US military attaché at Riga",
+  "correspondents": "Soviet Baltic Fleet units (incl. the cruiser 'Avrora', submarine no. 6) -> Kronstadt staff",
+  "date": "4 and 24 Aug 1928",
+  "shelfmark": "NARA RG 165, MID 2503 (Russia: Navy), G-2 report 7190 / MA Riga report 6943 of 12 Oct 1928; M1443 roll 19, frames 0431-0432",
+  "folio_note": "Two messages on the digitised frames: about 45 five-figure groups (4 Aug, key 'big') and 13 groups (24 Aug, key 'dub'), with call signs.",
+  "links": [
+   {
+    "label": "M1443 roll 19 (frames 0429-0432)",
+    "href": "https://catalog.archives.gov/id/248385500"
+   }
+  ],
+  "ark": "",
+  "status": "The OCR of the frames gives the groups (read from NARA's OCR, not the image). The attaché's report gives call signs, key names and his guess at the content ('probably reports her location'). No decipherment is filed.",
+  "why": "Rare surviving Soviet naval cipher traffic of the 1920s, with external context (date, sender, probable content).",
+  "access": "online",
+  "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
+  "language": "Russian",
+  "seen": "catalogue",
+  "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-165/305261/M1443/M1443-19/M1443-19-0431.jpg",
+   "frame": "M1443 roll 19 frames 0431-0432",
+   "saw": "G-2 report 7190 / MA Riga report 6943, 12 Oct 1928, English text with Russian five-figure groups: 0431 has the 4 Aug 1928 message (about 45 five-digit groups, key 'mep', call signs zit/bup) and a 10 Aug message (about 10 groups, key 'big'); 0432 has the 24 Aug message (11 groups, key 'dub', Avrora). No decipherment, only the attache's comments.",
+   "note": "Keys per the page: 4 Aug 'mep'; 10 Aug 'big'; 24 Aug 'dub'. The entry's '4 Aug, key big' appears to be the 10 Aug message.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 705,
+  "title": "British consular cipher telegrams (Vigo → Foreign Office 1939; Gibraltar ↔ British consul Las Palmas, Lisbon/Lagos → consul Tenerife 1940), copies obtained by the German naval attaché Madrid and sent to OKW/Chi",
+  "correspondents": "British consul Vigo → Foreign Office London; British authorities Gibraltar, Lisbon, Lagos → British consuls Las Palmas and Tenerife",
+  "date": "Oct-Nov 1939 and Apr 1940",
+  "shelfmark": "NARA RG 242, T1022 (Copies of Records of the German Navy), rolls 2865 (NAID 338541514) and 2866 (NAID 338542419); OKW Ausland IV files B.Nr. 1440/39 gKdos and 3022/40",
+  "folio_note": "Roll 2865 frames 362-366: Marineattaché Madrid B.Nr. 128/39 g.Kdos (20.11.1939) 'Englische Konsularchiffer im Verkehr mit Auswärtigem Amt', copies of the Vigo consul's telegrams of 11-12.11.1939 (5-figure groups, some letter groups) on the sailing of eight German steamers; forwarded 1.12.1939 to W.F.A./Chi. (an earlier batch B.Nr. 97/39 of 21.10.1939 not located). Roll 2866 frames 503-515: Marineattaché Madrid B.Nr. 597 g (21.5.1940) 'Feindliche Schlüsseltelegramme', anonymous copies of April 1940 telegrams: 5-figure group telegrams Gibraltar → British Consul Las Palmas on Spanish telegraph forms (frames 504, 508-515), 'Nota num. 5-7' letter-group telegrams Lisbon/Lagos → British consul Tenerife (frame 507).",
+  "links": [
+   {
+    "label": "T1022 roll 2865 (NAID 338541514)",
+    "href": "https://catalog.archives.gov/id/338541514"
+   },
+   {
+    "label": "T1022 roll 2866 (NAID 338542419)",
+    "href": "https://catalog.archives.gov/id/338542419"
+   }
+  ],
+  "ark": "",
+  "status": "Not on DECODE, not in the repo. The covering letters submit the copies 'zwecks möglicher Auswertung'; no decipherment or Chi reply is filed with them on these frames. British consular traffic of 1939-40 was in hand book ciphers (figure codes with subtractor tables); the system is not identified here.",
+  "why": "British reporting from neutral Spanish ports on German blockade-runners at the start of the war, intercepted by German agents; any reading would show what the consuls reported and whether German Chi read it.",
+  "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+  "language": "English (presumed)",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: known.py; nothing found on these intercepts)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/315246058/T1022/T1022-2865/T1022-2865-00364.tif",
+   "frame": "T1022 roll 2865 frame 364 (and roll 2866 frames 504, 508)",
+   "saw": "364: typed copies of Vigo-consul telegrams of 12.11.1939 with time stamps: 5-digit numeric groups (13778 15336 ...) mixed with letter-group lines (eltib prucj ishgz ...), about 40 lines, no clear text. 362-363 (Marineattache Madrid B.Nr. 128/39, 20.11.39) are covering letters, 365 a Verfuegung, 366 a different letter. Roll 2866: 504 five-digit Gibraltar telegram with German note; 508 handwritten 5-digit groups 'Gibraltar - H.B.M. Consul Las Palmas'.",
+   "note": "Cipher is on frame 364, not 362-363.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 706,
+  "title": "French consular agent Las Palmas → Marine Casablanca, letter-cipher telegrams ('Nota num. 2-4') copied by an anonymous informant for the German naval attaché Madrid",
+  "correspondents": "Agent consulaire de France, Las Palmas → Marine (French Navy) Casablanca",
+  "date": "22-28 Apr 1940",
+  "shelfmark": "NARA RG 242, T1022 roll 2866 (NAID 338542419), frames 505-507 (OKW Ausland IV 3022/40)",
+  "folio_note": "Three short telegrams in five-letter groups: 22.4.1940 (frame 505, c. 14 groups), 'Nota num. 3' 24.4.1940 (frame 506, c. 30 groups), 'Nota num. 4' 28.4.1940 (frame 507, c. 25 groups), each with the informant's German note.",
+  "links": [
+   {
+    "label": "T1022 roll 2866 (NAID 338542419)",
+    "href": "https://catalog.archives.gov/id/338542419"
+   }
+  ],
+  "ark": "",
+  "status": "Not on DECODE, not in the repo. Submitted to OKW Ausland IV for 'mögliche Auswertung'; no decipherment on the frames. French naval traffic of 1940 used code with letter superencipherment; system not identified.",
+  "why": "French naval intelligence reporting from the Canaries in the last weeks before the German offensive in the West.",
+  "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+  "language": "French (presumed)",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: known.py)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/315246058/T1022/T1022-2866/T1022-2866-00506.tif",
+   "frame": "T1022 roll 2866 frames 505-506",
+   "saw": "505: 14 five-letter groups (NAUII ICMQO ...) '1800/22/4 Agente Consulaire France' with German informant note; 506: 'Nota - Num, 3', 24 five-letter groups, '1930/24/24 - Agente consulire France', German note. Frame 507 not viewed. No decipherment.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 707,
+  "title": "Kriegsmarine Etappendienst / OKW Abwehr IV 'Scheintelegramme' in the W.f.S. (Wörterbuch für Scheintelegramme 1930/1936: Hapag-Lloyd code + Kammwürfel transposition): radio telegrams to M.S. Havelland, Aug 1940, filed without clear text",
+  "correspondents": "OKW Ausland IV / Etappe → German merchant ship M.S. 'Havelland' (Yokohama) via DEBEG ship radio",
+  "date": "1938-Aug 1940",
+  "shelfmark": "NARA RG 242, T1022 roll 3391 (NAID 338968820), frames 877-878; system and plain/cipher pairs on rolls 3391, 3367 (NAID 338928415) and 2864 (NAID 338540609)",
+  "folio_note": "Roll 3391 frames 877 (3.8.1940, c. 160 groups, 'DGR-DZG DFB-DFQ') and 878 (1.8.1940, c. 35 groups): no Klartext on the frames. Key material in the same rolls: 3391 frames 614-617 (Jan 1940 proposal to change the W.f.S. procedure, with a worked example 'Englischer schwerer Kreuzer ...' in old and new form), 91 (telegram with code numbers glossed '0898 = unter Bezugnahme ...'); roll 3367 frames 221-230 (KALORLUX Hamburg telegrams Jan-Mar 1938 each with 'Klartext'); roll 2864 frame 837 (21.11.1938 telegram with Klartext).",
+  "links": [
+   {
+    "label": "T1022 roll 3391 (NAID 338968820)",
+    "href": "https://catalog.archives.gov/id/338968820"
+   },
+   {
+    "label": "T1022 roll 3367 (NAID 338928415)",
+    "href": "https://catalog.archives.gov/id/338928415"
+   },
+   {
+    "label": "T1022 roll 2864 (NAID 338540609)",
+    "href": "https://catalog.archives.gov/id/338540609"
+   }
+  ],
+  "ark": "",
+  "status": "Not on DECODE, not in the repo. The W.f.S. is a commercial-code (Hapag-Lloyd) dictionary with a columnar 'Kammwürfel' step; several telegrams in the same rolls are filed with their clear text, so the code list and the transposition can be rebuilt from pairs; the two 1940 radio telegrams have no clear text with them.",
+  "why": "Abwehr/Etappe instructions to a blockade-running supply ship in Japan in 1940; and a documented German naval-agent hand system with plain/cipher pairs, not on DECODE.",
+  "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+  "language": "German",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: known.py: Etappe, Vermehren, Kammwürfel: no hits)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/315246058/T1022/T1022-3391/T1022-3391-00877.tif",
+   "frame": "T1022 roll 3391 frames 877-878",
+   "saw": "Radio-Telegramm forms (DEBEG), no clear text: 877 taken 3.8.1940 10.30 GMT, DGR-DZG DFB-DFQ, heading '10 90 2 2113 = nairl errjw ...', about 150 five-letter groups in 12 lines; 878 taken 1.8.1940, '9 28 30 1701 - zgrwa ...', about 35 groups. Stamped 'IV 2311/40 gKdos'.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 709,
+  "title": "Col. Williams, Allied Mine Guard → Commanding General AEF Siberia: enciphered field message No. 5, Vladimirovka",
+  "correspondents": "Col. Williams, Commanding Officer, Allied Mine Guard (31st Infantry) → Commanding General, American Expeditionary Force Siberia, Vladivostok",
+  "date": "9 Jul 1919",
+  "shelfmark": "NARA RG 395, Records of US Army Overseas Operations and Commands, AEF Siberia historical files, microfilm M917 roll 9 (file unit naId 337865023, \"21-33.5 Headquarters, AEF in Siberia\"), frame M917-009-0963",
+  "folio_note": "One US Army Field Message form: 32 five-letter groups (160 letters), beginning LJEQE WJJOM RFAHN OVLBO, ending XXKOX XALYX (X padding). Note: 'Given to Japanese Captain 7/8/19 ... to be sent to Vladivostok by wireless'. Filed as an appendix to the Mine Guard war diary between clear field messages Nos. 2 and 4 of 7-8 July and No. 1 of 9 July.",
+  "links": [
+   {
+    "label": "M917 roll 9 file unit",
+    "href": "https://catalog.archives.gov/id/337865023"
+   },
+   {
+    "label": "frame M917-009-0963",
+    "href": "https://catalog.archives.gov/medialz/dc-metro/rg-395/649566/M917/M917-009/M917-009-0963.tif"
+   },
+   {
+    "label": "clear text: M917 roll 6 file unit",
+    "href": "https://catalog.archives.gov/id/337862017"
+   },
+   {
+    "label": "clear text: frame M917-006-0919",
+    "href": "https://catalog.archives.gov/medialz/dc-metro/rg-395/649566/M917/M917-006/M917-006-0919.tif"
+   },
+   {
+    "label": "GitHub issue 202",
+    "href": "https://github.com/dbourdeau/cyphersolver/issues/202"
+   }
+  ],
+  "ark": "",
+  "status": "Enciphered text; probable clear text found (GitHub issue 202, Harumi-Matsuba, 31 Oct 2026, checked on the images here the same day). The receiving headquarters filed its decoded copy as Inclosure VI to Intelligence Summary No. 228, NARA RG 395, M917 roll 6 (naId 337862017), frame M917-006-0919: 'Official copy of telegram received at Vladivostok 9:30 PM ... July 9, 1919 ... VLADIMIRO. Commanding General Amexforce. No. 5. July 9th. Leaving Vladimiro for Souchan this date with supplies, a detachment will return to Vladimiro following day. If practicable will meet Major Cutrer's column near Kazanka. WILLIAMS', with a 'Decoded by' line and handwritten initials. Number, date, sender, addressee and same-evening wireless receipt match frame M917-009-0963. The match rests on those headers: the 32 cipher groups (160 letters) have not been reproduced from the clear text (about 148 letters without padding; the cipher has no G or Z, the clear copy has both), and the headquarters copy may be a paraphrase. Tests reported in the issue, all negative: Beaufort cipher disk with periodic key (period 2-89, known plaintext at every offset, including reversed text, words and clauses), key changing every 2-8 letters, autokey, digraphic, transposition alone, transposition with periodic substitution (period 1-12). Not tested here: an enciphered code (MI-8 or other 1918-19 AEF code), which is the likeliest remaining reading. Earlier tests of 27 Oct 2026 (vig1919.py): IC 0.041, no periodic Vigenere/Beaufort period 2-15, JJ inside a digraph. Not in catalogue.json before the NARA triage (known.py).",
+  "why": "A field cipher of the US intervention in Siberia, sent through Japanese wireless during the July 1919 partisan fighting round the Suchan mines; it shows which system the AEF Siberia used in the field.",
+  "source": "NARA bulk_all triage (slice H)",
+  "language": "English (presumed)",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: catalogue.json/known.py, nara_triage_a-g READMEs; no web search); clear text found by Harumi-Matsuba (issue 202, 31 Oct 2026)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://catalog.archives.gov/medialz/dc-metro/rg-395/649566/M917/M917-009/M917-009-0963.tif",
+   "frame": "M917 roll 9 frame 0963",
+   "saw": "US Army Field Message No. 5, Vladimirovka 9 July 1919, to Commanding General Amex Force, Vladivostok: 32 five-letter groups in 4 lines (LJEQE WJJOM RFAHN OVLBO ... XXKOX XALYX), 'Given to Japanese Captain 7/8/19 to be sent to Vladivostok by wireless', signed Williams. No decipherment.",
+   "date": "2026-10-30",
+   "by": "claude frame check 06"
+  }
+ },
+ {
+  "id": 716,
+  "title": "Japanese Navy numeral telegram to HMS Newcastle sent by Otoshi and Yokosuka radio stations, 38 five-digit groups",
+  "correspondents": "Navy Ministry adjutant (Otoshi/Yokosuka radio) → British cruiser HMS Newcastle",
+  "date": "20 Aug 1914",
+  "shelfmark": "JACAR C11080235200; 防衛省防衛研究所, 海軍省-武往文-T-6-28, 日英海軍交渉関係書類 大正3年8月~大正6年1月",
+  "folio_note": "2 frames; 38 five-digit groups in the record text",
+  "links": [
+   {
+    "label": "JACAR C11080235200",
+    "href": "https://www.jacar.archives.go.jp/das/meta/C11080235200"
+   }
+  ],
+  "ark": "",
+  "status": "The record text gives the instruction to pass 'a numeral telegram' to Newcastle and then the groups. No key; likely a Royal Navy or joint Anglo-Japanese code, which would be outside this repository. Not viewed, not on DECODE",
+  "why": "A numeral cipher passed between the Japanese and British navies in the first month of the First World War; short, so mostly a lead for the Anglo-Japanese naval files",
+  "source": "JACAR sweep",
+  "language": "unknown",
+  "seen": "catalogue",
+  "prior_art": "open (checked 27 Oct 2026: repository dedup only)",
+  "frame_check": {
+   "result": "confirmed",
+   "href": "https://www.jacar.archives.go.jp/das/image/C11080235200#1",
+   "frame": "frame 1 (0024) and 2 of 2",
+   "saw": "Frame 1: Japanese handwritten telegram form (Navy adjutant, Otoshi and Yokosuka radio stations, 20 Aug 1914) instructing to call Newcastle (M,Q) and send a numeral telegram. Frame 2: typed 'TO NEWCASTLE' with five-digit groups in rows of 7 (23438 75267 45772 39759 95696 66895 33375 / 81896 37166 80320 32227 93377 16946 39109 ...).",
+   "note": "",
+   "date": "2026-10-30",
+   "by": "claude frame check 05"
+  }
+ }
+]
