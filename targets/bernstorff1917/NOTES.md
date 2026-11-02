@@ -3,6 +3,8 @@
 Status: contributed by WAINUT (27 Oct 2026). Read in part. The first 147 groups are Bernstorff's telegram No. 205
 of 10 Jan 1917, whose German text he printed in 1920; aligning the two gives 82 code groups. The other 430 groups
 are a second text in the same code and stay unread. The site page and the ledger rows are left to the maintainer.
+Second pass 2 Nov 2026 (section 10): the code is identified as Code 7500 from Friedman and Mendelsohn (1938), the
+sibling route is closed online, and the second text remains unread for want of a crib.
 
 Catalogue 657. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the transcription was made with a vision-capable language model and checked against the NARA scans. A second agent
@@ -76,7 +78,9 @@ re-read about 117 groups on the full-resolution scans and redid the alignment wi
 - **Not code 13040.** The 13040 text of the Zimmermann telegram (19 Jan 1917) is mostly five-figure groups in the
   range 10000-24000. This fits the published description of code **0075** (a two-part code of 10,000 groups, held
   at the Washington embassy in January 1917), as quoted second-hand from Kahn. No 0075 indicator is visible, and
-  the head 958 677 728 229 0705 is unresolved. So "0075 family" is probable, not proven [?].
+  the head 958 677 728 229 0705 is unresolved. So "0075 family" is probable, not proven [?]. **Updated 2 Nov 2026:**
+  Friedman and Mendelsohn (1938) call the code of the Bernstorff messages on this State Department route **7500**;
+  see section 10. This cable is not in their list, so the attribution stays an inference, now a strong one.
 - The 82 base groups fixed so far are in `codebook.tsv` (the key file), each with its evidence and a grade: C for
   the known plaintext, consistent at every occurrence; M for uncertain.
 
@@ -186,30 +190,91 @@ heading or a repeated formula. A run 8769 3865 2452 occurs twice (507-509, 512-5
 - code: a two-part four-figure code with prefix figures; not 13040; probably 0075 [?].
 - Suggested status: read in part (telegram No. 205 aligned; the second text open).
 
+## 10. Second pass, 2 Nov 2026: the second text, not read
+
+The aim was to read groups 147-576. They were not read. No plaintext and no sibling ciphertext could be reached.
+
+**What the second text is about.** Bernstorff's own cover letter (FRUS 1917 Supp. 1, doc. 74) says the cipher message
+"refers to the above-mentioned question" (the armed ships) "and to your note of December 18 last concerning peace
+terms". So the subject guess in section 3 now rests on the sender's words. It is still not proved that the division
+falls at group 147, or that groups 147-576 are all on that subject.
+
+**The code.** Friedman and Mendelsohn, *The Zimmermann Telegram of January 16, 1917 and its Cryptographic Background*
+(War Department 1938; archive.org 41766889080599), p. 16 and n. 40:
+
+- The Bernstorff messages sent through the State Department are "all in a code which is known as 7500", established by
+  comparing them with the plain texts in the German Hearings.
+- It is a two-part code of 10,000 phrases numbered 0000-9999, which is what section 4 found from the groups.
+- It came to America by the submarine *Deutschland*; their earliest message is dated 16 Nov 1916. They count "about a
+  dozen" 7500 messages in the American files.
+- Note 40 names Nos. 151 and 156 of 21 Nov, 164 of 1 Dec, 169 of 4 Dec 1916, 212 of 16 Jan, 222 of 21 Jan, 228 and 229
+  of 23 Jan and 239 of 27 Jan 1917, as "some of" them (one OCR layer reads 154 and 166 for 151 and 156; 154 fits
+  No. 164's text in Official German Documents).
+- This cable is not named, so 7500 is inferred from the route, date and structure. They cite a further paper,
+  Mendelsohn, *An Encipherment of the German Diplomatic Code 7500* (1938). It is not in the NSA Friedman index pages
+  (Publications, Reports, Correspondence) or on archive.org.
+
+**Why those siblings are the way in, and why they failed.** Several of those telegrams have a printed plaintext
+(Nos. 164, 169, 212, 228, 239 in Official German Documents II; 212 and others in Bernstorff 1920), so each ciphertext
+would be a new crib for the code. No ciphertext was found online:
+
+| Searched (OCR text; frame filter that does catch both sheets of this cable) | Result |
+|---|---|
+| M367: 763.72/2991-3100, 3101-3300, 3301-3515; 763.72111/3951-4225, 4501-4810; 763.72119/--150, 151-325, 326-470, 471-625; 763.72115/2201-2325, 2326-2500 | no German code sheet; roll 166 is the only hit |
+| M580: 841.857/203-495, 496-820 | one numeric frame, 2 of 45 groups shared, no sibling |
+| Bulk OCR of all RG 59 frames (`rg_59.jsonl`, first 400 characters of each flagged frame), ranked on shared groups | M367 roll 166 frame 0785 only (40 of 50); the next frames share 5 at most and are not code |
+| M973 purport lists: 701.38-701.6239, 763.72/1-763.72111/5692, 763.72119; name index card for Bernstorff | show 701.6211/399 (24 Nov 1916, code telegram asking leave for Hatzfeldt to testify) and this cable's 4443; 701.6211 is listed only in purport lists and the name index, not as a digitised file |
+
+Also searched, because the Zimmermann inquiry and the Bell-Harrison exchanges passed German cipher telegrams through
+them (purport list 87662081): 862.20212/0-350 and 862.20211/0-200, 601-1000, 1001-1175. They hold German cipher
+telegrams, mostly five-figure, but the best frames share 9% of their groups with this cable, which is near the chance
+level for 384 four-figure bases plus five-figure tails. None is in this code.
+
+**Catalogue 635 is not a crib.** The file copy, 841.857/244 (M580 roll 191 frame 0111, seen), is Grew's telegram 4691.
+It gives only "(Quote German cipher)", with the note "delivered to Ambassador by direction of the Secy 12/7/16". The
+groups went to the embassy and were not kept with the telegram. This explains the pattern: incoming ciphers left the
+Department, so only Bernstorff's outgoing messages can survive. It also corrects the next step named in the first pass.
+
+**Print.** `align_part2.py` aligns the known groups of part 2 with a text. On all of Bernstorff 1920 the best place is
+No. 205 itself (score 14.1, shared vocabulary) and no other place gives a long run; the same book's Nos. 192 and 212 do
+not fit. Official German Documents II has Bernstorff's Nos. 164, 169, 182, 188, 192 ... and only No. 205 for 10 Jan; a
+word-anchor scan of its English found nothing beyond No. 205 and the other telegrams on the same subjects. So the second
+text seems never to have been printed in those series. A State Department index card (name index, 763.72119/8814, from Berlin, 25 Jan 1920) records a published pamphlet with
+"all Bernstorff correspondence" on the peace action; it was not found, and it may be the same material. Not read in
+full: Birnbaum 1958, Doerries 1989 and Link vol. 5 (loan copies on archive.org; phrase searches gave no hit on this
+telegram, and search-inside returned 403 on Doerries and Ritter). Scherer and Grunewald vol. 1 was not reached.
+
+**What a reader could do with it.** The 82 values remain valid for 16% of the groups, and no value was added. German
+function words alone do not support a code recovery: on a two-part code one group gives no clue to another, as Friedman
+says of this very code, and a stretch of five or six unknown groups "may be filled" in endless ways. Guessing the 361
+others from context would produce a text of the model's making, so none is offered.
+
 ## Remaining gaps
 
-- Groups 147-576, the second text (430 groups) - blocker: open-codes. No printed or archival plaintext was
-  found yet, and the 82 known groups fill only 16% of it. A workable next step was not run: sibling telegrams sent
-  by the same State Department route in Dec 1916 - Jan 1917 as further cribs for this code, first catalogue 635
-  (Foreign Office to Bernstorff, 5 Dec 1916, through the US Embassy Berlin), then other Bernstorff telegrams printed
-  in Bernstorff 1920 or the Official German Documents that went this way.
-- The head groups 958 677 728 229 0705 and the end group 0278 of No. 205 - blocker: open-codes.
-- The runs 19-23, 28-30, 59-63, 120-121 and 125-131, group 7918, and the doubtful 8096 - blocker: open-codes. They
-  occur once each; a second text in this code with a known plaintext would fix them.
+- Groups 147-576, the second text (430 groups) - blocker: needs-physical-access. The crib is outside this session:
+  the Politisches Archiv draft of the telegram, a Room 40 decrypt (TNA HW 7, ADM 137), or the sibling ciphertexts
+  Friedman saw in State Department files (not on the digitised reels searched, section 10). Mendelsohn's 1938 paper
+  on Code 7500 may also help and was not found.
+- The head groups 958 677 728 229 0705 and the end group 0278 of No. 205 - blocker: needs-physical-access. Same
+  sources; a sibling with its head and signature would fix them.
+- The runs 19-23, 28-30, 59-63, 120-121 and 125-131, group 7918, and the doubtful 8096 - blocker: needs-physical-access.
+  They occur once each; a second text in this code with a known plaintext would fix them.
 
 ## Escalation
 
-- [x] siblings: Bernstorff's telegram No. 212 of 16 Jan 1917 was used as a control; other State-route German
-  telegrams of Dec 1916 to Jan 1917 in RG 59 were not checked for shared groups. This is the next step (first
-  catalogue 635, 5 Dec 1916), so part 2 stays on open-codes, not no-key-material.
+- [x] siblings: Friedman's nine named 7500 telegrams looked for on 14 reels, the RG 59 bulk OCR, purport lists and the
+  name index (section 10); no ciphertext online. Catalogue 635 holds no ciphertext (841.857/244, frame seen).
+  No. 212 stays a control only.
 - [x] clear-pages: the memorandum in clear (frames 0769-0775) is what No. 205 reports on, not its text.
-- [x] known-keys: no copy of code 0075 or 13040 was available; 13040 ruled out by its group range.
-- [x] print: Bernstorff 1920 and the Official German Documents 1923 read; they give No. 205 but not the second text.
-- [x] key-rebuild: 82 groups fixed from No. 205; not enough for part 2.
+- [x] known-keys: no copy of Code 7500 (0075) or 13040 was available; 13040 ruled out by its group range. Mendelsohn
+  1937 (archive.org 41784749082377) has 13040 and 18470 material, nothing for 7500.
+- [x] print: Bernstorff 1920 aligned by script and Official German Documents 1923 scanned; they give No. 205 but not the
+  second text. Friedman and Mendelsohn 1938 read: no groups of this code printed.
+- [x] key-rebuild: 82 groups fixed from No. 205; not enough for part 2, and no value added by guessing.
 - [x] retry: the prefix-figure rule is applied to part 2 by `decode.py` (a five-figure group takes the value of its
   four-figure base): of the 58 five-figure groups in part 2, 5 get a value this way (included in the 69); no
-  sentence follows. Beyond the siblings above, the German Foreign Office file copy of the second message (PA AA,
-  Weltkrieg / Friedensvermittlung series) or a Room 40 decrypt (TNA HW 7, ADM 137) would be the crib for part 2.
+  sentence follows. The German Foreign Office file copy of the second message (PA AA, Weltkrieg /
+  Friedensvermittlung series) or a Room 40 decrypt (TNA HW 7, ADM 137) would be the crib for part 2.
 - Statistical validation: `validation.tsv` holds the 147 groups of No. 205 with their values (27 unread);
   `python docs/_validate.py bernstorff1917` gives "underdetermined" (reading -2.062 per letter, random keys -2.008,
   key fitted to shuffled text -1.816). This is expected for a whole-word code with 1.38 tokens per type: swapping
@@ -228,4 +293,5 @@ heading or a repeated formula. A run 8769 3865 2452 occurs twice (507-509, 512-5
 - `printed_tel205_de.txt`: the German text of No. 205 as printed in 1920 (the crib).
 - `control_tel212_de.txt`: the opening of telegram No. 212 as printed in 1920 (control only).
 - `decode.py`: decryption, span check and controls (standard library only).
+- `align_part2.py`: aligns the known groups of part 2 with a printed text (section 10).
 - No images are kept here; the scans are linked above.
