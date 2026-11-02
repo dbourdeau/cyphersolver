@@ -24,3 +24,8 @@ saves full-size page images (view them with the Read tool; they are copyrighted:
 (saved as rec<id>.htm there) lists the pages; the entry's folio_note says which one. If the output says FORBIDDEN the cookie expired: stop and report.
 DECODE images are 10+ MB: shrink with PIL (Image.thumbnail((1800,1800))) into the scratch dir before viewing with Read; crop for detail.
 decode_fetch.py only matches TH_*_P<n>.jpg; records with .png thumbnails, unnumbered .jpg or .pdf-only pages need a hand-rolled fetch (see scratchpad scripts from d02).
+
+## PARES (retry, 2 Nov 2026, VPN exit in Spain)
+PARES is reachable again from the Spanish exit. Recipe (memory pares-access-and-search): `pares.cultura.gob.es/ParesBusquedas20/catalogo/show/<id>` with a FRESH cookie jar per record, read `dbCode=`, then
+ViewImage.do?accion=42&txt_descarga=1&dbCode=<dbCode>&txt_id_imagen=<n>&txt_zoom=10&txt_contraste=0&txt_polarizado=&txt_brillo=10.0&txt_contrast=1.0 (txt_zoom must be 10; max ~915x1250 px).
+BE POLITE: at most one request every 2-3 seconds, sequential, no parallel fetches, stop at the first 429 and report (we were blocked for days by an earlier sweep). Images stay in the scratchpad.
