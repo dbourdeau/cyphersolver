@@ -49,7 +49,7 @@
     <dt>Correspondents</dt><dd>German Foreign Office → Count Bernstorff, German ambassador at Washington (via Chargé Joseph C. Grew → Secretary of State)</dd>
     <dt>Place</dt><dd>Berlin</dd>
     <dt>Language</dt><dd>German</dd>
-    <dt>Held at</dt><dd>NARA RG 59, 1910-29 decimal file (World War I series; FRUS 1916 Supplement doc. 424) · FRUS prints only Grew's covering telegram: '[German cipher. Not printed.]'</dd>
+    <dt>Held at</dt><dd>NARA RG 59, 1910-29 decimal file (World War I series; FRUS 1916 Supplement doc. 424) · FRUS prints only Grew's covering telegram: '[German cipher. Not printed.]'. The file copy, 841.857/244, M580 roll 191 frame 0111, reads '(Quote German cipher)' and has no groups.</dd>
     <dt>Images</dt><dd><a href="https://history.state.gov/historicaldocuments/frus1916Supp/d424" rel="noopener">FRUS 1916 Supp. doc. 424</a></dd>
   </dl>
 </section>
@@ -70,25 +70,26 @@ THE CIPHER
   Correspondents: German Foreign Office → Count Bernstorff, German ambassador at Washington (via Chargé Joseph C. Grew → Secretary of State)
   Place:          Berlin
   Language:       German (expected)
-  Held at:        NARA RG 59, 1910-29 decimal file (World War I series; FRUS 1916 Supplement doc. 424); FRUS prints only Grew's covering telegram: '[German cipher. Not printed.]'
+  Held at:        NARA RG 59, 1910-29 decimal file (World War I series; FRUS 1916 Supplement doc. 424); FRUS prints only Grew's covering telegram: '[German cipher. Not printed.]'. The file copy, 841.857/244, M580 roll 191 frame 0111, reads '(Quote German cipher)' and has no groups.
   Images/records:
     - FRUS 1916 Supp. doc. 424: https://history.state.gov/historicaldocuments/frus1916Supp/d424
 
 WHAT IS KNOWN
-  Status: FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked.
+  Status: FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked. 2 Nov 2026 (targets/bernstorff1917/, section 10): the file copy, 841.857/244, keeps no groups; the cipher was delivered to the Ambassador on 7 Dec 1916. The telegram concerns the Arabia case. No ciphertext is known, so this entry is no crib for catalogue 657.
   Outcome so far: not yet attempted by the project
   Prior-art check: possibly read by Room 40 at the time (not checked); not in the repo
   Check first: Find the decimal-file copy (RG 59 763.72119 or 862.20212 series) on NARA; check Room 40 decrypts in TNA HW 7 / ADM 223 for 5 Dec 1916 before treating as open.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/bernstorff1917/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/bernstorff1917/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -128,7 +129,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/bernstorff1917/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+635&amp;target=catalogue+635
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -146,10 +147,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked.</p>
+<p><b>Status and prior art.</b> FRUS 1916 Supplement, The World War, doc. 424: Grew forwards 'the following cipher telegram which is said to relate to' the Washington talks; the German code text is omitted. German diplomatic traffic sent over the US channel in 1916-17 was in codes 13040/0075 and was largely read by Room 40, so a decrypt may exist in TNA (HW 7, ADM 223); not checked. 2 Nov 2026 (targets/bernstorff1917/, section 10): the file copy, 841.857/244, keeps no groups; the cipher was delivered to the Ambassador on 7 Dec 1916. The telegram concerns the Arabia case. No ciphertext is known, so this entry is no crib for catalogue 657.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: possibly read by Room 40 at the time (not checked); not in the repo.</p>
 <p><b>Check first.</b> Find the decimal-file copy (RG 59 763.72119 or 862.20212 series) on NARA; check Room 40 decrypts in TNA HW 7 / ADM 223 for 5 Dec 1916 before treating as open.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bernstorff1917/NOTES.md" rel="noopener">targets/bernstorff1917/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bernstorff1917" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
