@@ -1,0 +1,469 @@
+{
+ "365": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://francearchives.gouv.fr/fr/facomponent/34fab3520c0c5757f3d2d32c531d03817868548f (AN 402AP/13), opened 2 Nov 2026 in Chrome (no image viewer or digital object on the record)",
+   "extent": "whole box 1549-1623; extent of cipher not stated, 'Lettres chiffrées (B-V)' filed by correspondent",
+   "cipher": "Archive description: 'Lettres chiffrées (B-V) ; copies de documents ; mémoire rédigé par Mme de Mornay (Charlotte d'Arbaleste) et chiffre de sa correspondance avec Mme du Bourget.' No decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py '402AP' and 'Mornay' found no DECODE record; repo ledgers only hold this entry plus targets/mornay1593.",
+   "tomokiyo": "Searched cryptiana for Duplessis-Mornay: no page on Mornay ciphers found (WebSearch 'Mornay lettres chiffrées 402AP' returned nothing on 402AP).",
+   "lasry": "No Lasry paper or GL.htm entry on the Mornay papers found by web search or in the repo ledgers.",
+   "edition": "The 1824-25 Mémoires et correspondance (archive.org mmoiresetcorre05morn ..) print some Mornay figures; vol. 6 p. 82 n. 1 says the editors lacked the key for the bare figures; the box's own 'chiffre' is therefore not in print. Letter-by-letter match of 402AP/13 against the print was not done.",
+   "literature": "WebSearch found only a private-collection catalogue (Collection Eggimann, SHPF) listing Mornay cipher letters of 1593 and 1598; no study of the 402AP/13 cipher letters."
+  },
+  "key_check": "The inventory says the box itself contains 'chiffre de sa correspondance avec Mme du Bourget', i.e. a key for that pair; none is held here. The 1593 Dudout key and Rohan 1594 key (targets/mornay1593) concern the printed edition and were not applied since no ciphertext from the box was seen.",
+  "duplicates": "known.py '402AP', 'Mornay', 'Bourget' return this entry, catalogue 371 (printed figures, a different source) and research/archives_nationales/README.md row 1; no second entry for 402AP/13.",
+  "verdict": "open"
+ },
+ "366": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://francearchives.gouv.fr/fr/facomponent/3fbb39e1a43412140de55816491140468eed0268 (AN CC//499-545, dossier 209), opened 2 Nov 2026 in Chrome",
+   "extent": "one cipher letter inside a 9-piece police dossier; letter dated 1816, dossier dated 1820",
+   "cipher": "Archive description: 'Lettre chiffrée écrite en 1816 au général Jacquemard ; dossier de police concernant le général Jacquemard (9 pièces)', section 'Lettres anonymes et autres placards séditieux', Cour des pairs, affaire du 13 février 1820. No image; no decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py 'Jacquemard' hits only this entry, research/central_archives/candidates.json and research/archives_nationales/README.md row 2; no DECODE record.",
+   "tomokiyo": "No cryptiana page on Restoration-era police ciphers or on Jacquemard found by web search.",
+   "lasry": "No Lasry work on the Cour des pairs 1820 / Jacquemard found by web search.",
+   "edition": "WebSearch (Jacquemard 1816 lettre chiffrée, affaire du 13 février 1820, Cour des pairs) found nothing on the letter; the printed Cour des pairs procedure was not searched page by page.",
+   "literature": "Searches returned only general Bonapartist conspiracy material (Mont-de-Marsan 1816, Didier plot); nothing on this letter."
+  },
+  "key_check": "No Restoration police or Bonapartist cipher key is held in the repo; none could be tried because no ciphertext was seen.",
+  "duplicates": "known.py 'Jacquemard' and 'Cour des pairs' return only this entry and sweep files; no duplicate in catalogue.json.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "1816 (letter) in a dossier of 1820",
+   "folio_note": "dossier 209, 'Lettres anonymes et autres placards séditieux'; the cipher letter is one of 9 pieces"
+  }
+ },
+ "367": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://francearchives.gouv.fr/fr/facomponent/757ecaebe0359be70193f2e8832e4a3a1128c347 (AN O/3 dossier 7), opened 2 Nov 2026 in Chrome",
+   "extent": "one item inside an accounts dossier 1792-1832, Perruchon section dated 1800-1812",
+   "cipher": "Archive description: 'Comptes divers : Sophie, 1801-1802 ; Perruchon [à noter : une correspondance tronquée et en partie chiffrée], 1800-1812 ; Le Moine, 1803 ; ...': the cipher sits inside Perruchon's accounts, not a stand-alone letter set."
+  },
+  "prior_art": {
+   "decode": "known.py 'Perruchon' hits only this entry and research/archives_nationales/README.md row 3; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Maison du Roi / emigre-relief ciphers 1800-1812 found.",
+   "lasry": "No Lasry work known on this series (web search and repo ledgers).",
+   "edition": "No edition of the Maison du Roi emigre accounts with cipher found (searched Perruchon with 'Maison du Roi secours aux émigrés chiffre').",
+   "literature": "Nothing found on a Perruchon cipher; the inventory note is the only description."
+  },
+  "key_check": "No key held. The inventory describes an accounts dossier in which the correspondence is truncated; a key may not exist in the dossier. Not testable without images.",
+  "duplicates": "known.py 'Perruchon' and 'Maison du Roi' return only this entry and the sweep README.",
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Perruchon: truncated, partly ciphered correspondence inside an accounts dossier (AN O/3 dossier 7, Comptes divers)",
+   "folio_note": "dossier 7 groups several account files (Sophie, Perruchon, Le Moine, Laforest, Gorges, Gaspard, Fourcroi, Dubourg, Darnet, Caron); cipher noted only under Perruchon"
+  }
+ },
+ "368": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://francearchives.gouv.fr/fr/facomponent/dd47a9bee46bc34b2b025984f99e777bb5ff9543 (AN T//478/1), opened 2 Nov 2026 in Chrome",
+   "extent": "number of cipher letters not stated; box 1684-1793 holding Biron papers (Lauzun/Biron section)",
+   "cipher": "Archive description: 'Lettres et papiers privés ou officiels du général Biron ; lettres chiffrées ; sa nomination de général sous les ordres de Luckner en 1792, mémoires et quittances ...'. Series: 'Papiers de Louis Armand de Gontaut, duc de Lauzun, puis de Biron, condamné.'"
+  },
+  "prior_art": {
+   "decode": "known.py 'Biron' returns only unrelated Biron mentions (1560 Bergerac, 1588) and this entry; nothing on DECODE for T//478.",
+   "tomokiyo": "No cryptiana page on the Revolutionary general Biron (Lauzun) ciphers found by web search.",
+   "lasry": "No Lasry work on Biron 1792-93 known.",
+   "edition": "No edition of Biron's 1792-93 army letters in cipher found; printed Biron/Lauzun memoirs not matched to cipher letters.",
+   "literature": "Web search found nothing on cipher letters in the Biron papers; the series note is the only description."
+  },
+  "key_check": "No Revolutionary-army cipher key is held in the repo; none tested (no ciphertext seen).",
+  "duplicates": "known.py 'Biron' and 'T//478': only this entry; the unrelated Biron hits are 16th-century targets (memoire1560, nevers1588).",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "T//478/1 bundles Biron's 1792 letters, memoirs and quittances; the Chastel/Crozat deeds named in the same title are unrelated",
+   "title": "Papiers du général Biron (duc de Lauzun, Biron from 1788); lettres chiffrées, 1792"
+  }
+ },
+ "369": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://francearchives.gouv.fr/fr/facomponent/cd2bacbb19c1d8ce5da293833eab0417aa0d425d (AD Charente-Maritime 4 J 1524), opened 2 Nov 2026 in Chrome",
+   "extent": "'plusieurs lettres chiffrées' among correspondence, accounts and family papers 1623-1732",
+   "cipher": "Archive description: 'Boissiran, Robert de. - Correspondance (dont plusieurs lettres chiffrées), comptes, papiers de la famille, etc.' No image attached."
+  },
+  "prior_art": {
+   "decode": "known.py 'Boissiran' hits only this entry and research/archives_nationales/README.md row 5; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Boissiran or a Saintonge/Aunis private cipher found.",
+   "lasry": "No Lasry work known on this item.",
+   "edition": "WebSearch (Robert de Boissiran correspondance 1623-1732 lettres chiffrées 4 J 1524) returned nothing on Boissiran; no edition found.",
+   "literature": "Nothing found; the inventory is the only description."
+  },
+  "key_check": "No key held; the date span (1623-1732) is wide, so a single system is not assumed. The 27 Oct 2026 photograph request means no images exist yet.",
+  "duplicates": "known.py 'Boissiran' returns only this entry; no duplicate.",
+  "verdict": "open"
+ },
+ "370": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://francearchives.gouv.fr/fr/facomponent/339c3e4135ea00e8bb4bd8d1c2de261ac82851ef (Archives d'Alsace, Strasbourg, C 645), opened 2 Nov 2026 in Chrome; finding aid https://www.arcsi.fr/doc/Tant/420.pdf downloaded and read",
+   "extent": "letters 1760-1763; the arcsi.fr listing of sibling C 644 speaks of 'une vingtaine de lettres chiffrées du comte de Choiseul à M. Kau'",
+   "cipher": "Archive description of C 645: 'Lettres de M. le duc de Praslin à M. Kau ; lettres de M. le duc de Choiseul, en partie chiffrée ; lettres de M. Kau à M. de Folard, chargé d'affaires de France à Munich ; ...' (correspondence on feudal titles kept at Innsbruck). No image attached."
+  },
+  "prior_art": {
+   "decode": "known.py 'Choiseul Kau' no hits; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Kau/Choiseul/Innsbruck ciphers found (WebSearch 'Choiseul Kau Strasbourg 1760 1763 lettres chiffrées').",
+   "lasry": "No Lasry work known on this series.",
+   "edition": "No edition found; the arcsi.fr census of cipher in French archives lists C 644, C 645 and C 589/57 only as inventory entries.",
+   "literature": "Only the arcsi.fr listing; no study."
+  },
+  "key_check": "The same finding aid lists AD Bas-Rhin C 589/57: 'document pour M. Kau, a chiffrer pour correspondre avec M. le duc de Choiseul et M. le comte de Choiseul 1760, et a dechiffrer ...': a key sheet for this very correspondence, in the same archive; it is not held here and not online, so no key was applied.",
+  "duplicates": "known.py 'Choiseul Kau', 'C 645' no hits. C 644 (about twenty ciphered letters of the comte de Choiseul to Kau, 1760) is a sibling item, not yet an entry here.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "Intendance d'Alsace; siblings C 644 (c. 20 cipher letters, comte de Choiseul to Kau, 1760) and C 589/57 (key sheet, 1760)",
+   "correspondents": "duc de Choiseul, duc de Praslin, chevalier de Folard (Munich), Henneberg - M. Kau (Innsbruck/Munich)"
+  }
+ },
+ "371": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "facsimile",
+   "where": "https://archive.org/details/mmoiresetcorre06morn, page image leaf n189 (printed p. 180 of vol. 6, letter CVII, Loménie to Duplessis, 24 Feb 1595), fetched with curl 2 Nov 2026; djvu text of vol. 6 also read",
+   "extent": "printed p. 180 viewed: about 10 passages of bare figures (77.99.108.102.107.410.910.810.44.109.27.32.10, 92.210.610.22.79.10, 87.410.8 ...) among clear French; repo transcription targets/mornay1593/lomenie1595.txt has 15 passages, 95 groups (plus Duplessis Jan 1597, 90 groups)",
+   "cipher": "Numeric groups of 1-3 digits with many tens-multiples (410, 610, 810, 910) plus small numbers as names (26, 98, 11, 16). The editors set a few conjectural clear phrases in italics around the figures ('Il ne s'en faict poinct maintenant avec grade qui voudra', 'q. o. et aussi de ces trompettes avec lui') but print no decipherment of the groups themselves and no key."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (printed edition; known.py 'Mornay' only repo entries).",
+   "tomokiyo": "No Mornay page on cryptiana found; WebSearch on Mornay cipher 1593/1595 found only the Eggimann collection catalogue.",
+   "lasry": "No Lasry or GL.htm entry on Mornay figures found.",
+   "edition": "The 1824-25 edition (vol. 5 pp. 471-475, 487-488; vol. 6 pp. 179-181) prints the figures; its editors state (vol. 6 p. 82 n. 1) they lacked the key. Vol. 6 pp. 82-85 prints Mme de Rohan 1594 with decipherment (key in targets/mornay1593/rohan1594_key.tsv).",
+   "literature": "Brice Dudout (Europe chiffrée, 27 Oct 2026) read the 1593 figures; nothing published on 1595-98."
+  },
+  "key_check": "Rohan 1594 key (78 values) tried on Loménie 1595 and Duplessis 1597: no French (targets/mornay1593 step 5). Dudout's folded 1593 key (two letters per group) not yet tested on 1595-98: 1595-98 untested, so not a key_lookup.",
+  "duplicates": "known.py 'Mornay', '402AP': catalogue 365 (the AN box, a different holder) and targets/mornay1593. The 1593 passages belong to the same target but are read (Dudout); this entry covers only 1595-98.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "1593 figures read (Dudout); open: vol. 6 CVII (Loménie 24 Feb 1595, pp. 179-181, p. 180 viewed), CIX, vol. 7 (1597), vol. 8 (1598); on vol. 6 p. 180 the editors italicise a few conjectured clear phrases between the figures"
+  }
+ },
+ "372": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.koninklijkeverzamelingen.nl/archief/g/g016?active-item=g016-a0572&view-scans=g016-a0572 (KB scans viewer, 7 scans), opened in Chrome 2 Nov 2026",
+   "extent": "scan 1/7 viewed: one page, 'El Rey' heading, about 14 lines; two short cipher runs inside clear Spanish, one early in the text and one near the end (before 'Con Alonso de Cardenas ...'); scans 2-7 are dorse/guard sheets and catalogue cards",
+   "cipher": "Figures (about 3-171), signs and syllable marks in two short runs between clear lines; KB inventory note: 'NB De brief is gedeeltelijk in cijferschrift. Medeondertekend door Audres de Roca.' No decipherment, interlinear or marginal gloss on the leaf; the dorse scans show only address/docket."
+  },
+  "prior_art": {
+   "decode": "known.py 'Velada': only catalogue 755/843 (other Velada series, AGS Milan and AHNOB) and this entry; the KHA letter is not on DECODE.",
+   "tomokiyo": "No cryptiana page on Velada's 1640 London cipher found (WebSearch 'marqués de Velada 1640 embajador Inglaterra cifra').",
+   "lasry": "No Lasry paper or GL.htm entry on Velada's cipher found.",
+   "edition": "No print of the 17 Dec 1640 letter found; the Morgan Library holds 35 letters Philip IV to Velada 1636-41 (search hit; WebFetch of the Morgan page returned 403), not checked for cipher.",
+   "literature": "Only biographical literature on Velada (Wikipedia, Pérez Cuenca 2019 on Quevedo); nothing on the embassy cipher."
+  },
+  "key_check": "No 1640 Spain-England cipher is held; catalogue 755/843 are Milan-era and an AHNOB register, a different system and years, not applied. The two runs are too short for a ciphertext-only attack.",
+  "duplicates": "known.py 'Velada': catalogue 755 and 843 are different documents; no duplicate of this KHA letter. The Morgan letters of Nov 1640-Mar 1641 may be siblings but are unseen.",
+  "verdict": "open"
+ },
+ "373": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12586.49 opened 2 Nov 2026 in Chrome (inventory text only, no scan link)",
+   "extent": "inventory lists about 30 letters 'Gedeeltelijk in cijfer' (Feb-Sep 1656) of the Copenhagen embassy of Van Beuningen, Van Amerongen and Vierssen to griffier Ruysch",
+   "cipher": "Archive description per item: 'Aan griffier Ruysch, uit Kopenhagen. Gedeeltelijk in cijfer, 1656 februari 26' (also 20, 23, 27 Feb, 1, 8, 11 Mar, 9, 16 Apr, 7, 28 May, 4, 28 Jun, July, Aug, Sep ...). No decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py 'Beuningen' and '12586': no DECODE record; research/nationaal_archief README says not on DECODE.",
+   "tomokiyo": "No cryptiana page on Dutch 1656 envoy ciphers found.",
+   "lasry": "No Lasry work on 1650s Dutch States General cipher known.",
+   "edition": "WebSearch for Aitzema/RGP decipherments of the 1656 Copenhagen letters found none; Aitzema's Saken van Staet was not searched for cipher passages.",
+   "literature": "Only general Van Beuningen biography found (Wikipedia, dbnl); nothing on cipher."
+  },
+  "key_check": "Targets/beuningen1676 key is a different decade and was not applied; no ciphertext seen.",
+  "duplicates": "known.py 'Beuningen' and '12586.49': this entry only (catalogue 378 is the 1676 London volume, a different item); 375 and 377 are neighbouring inventories.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "12586.49 holds about 30 letters 'gedeeltelijk in cijfer', 26 Feb-Sep 1656, Van Beuningen/Van Amerongen/Vierssen to griffier Ruysch"
+  }
+ },
+ "374": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12589.148 opened 2 Nov 2026 in Chrome (inventory text only)",
+   "extent": "six letters carry 'Met duplicaat (zonder cijfer)': 1 Jan, 8 Jan, 26 Jan, 23 Feb, 8 Apr, 24 May 1672 (Boreel to griffier Fagel)",
+   "cipher": "Archive description: 'Brief van ordinaris ambassadeur Johan Boreel, te Londen, aan griffier Fagel. Met duplicaat (zonder cijfer), 1672 januari 8': each such letter has a duplicate 'without cipher', a clear-text copy filed with the ciphered original."
+  },
+  "prior_art": {
+   "decode": "known.py 'Boreel', '12589': no DECODE record; research/nationaal_archief README lists it as cipher/clear duplicate pairs.",
+   "tomokiyo": "No cryptiana page on Boreel 1672 found.",
+   "lasry": "No Lasry work known.",
+   "edition": "WebSearch (Boreel Londen 1672 cijfer Fagel zonder cijfer) found no edition or key; BL Hardwicke papers have translations of Boreel's 1670-71 letters, not seen.",
+   "literature": "Brouwer's article on letters captured in 1672 (Kew) is context only; nothing on this volume."
+  },
+  "key_check": "The 1676 Van Beuningen key (targets/beuningen1676) and DECODE Dutch keys are a different series; nothing applied since no ciphertext was seen.",
+  "duplicates": "known.py 'Boreel': the targets/colbert and thurloe Boreel hits are 1653 Westminster/Paris items; no duplicate of 12589.148.",
+  "verdict": "partly_read",
+  "closed": "The volume itself carries clear duplicates ('zonder cijfer') for the six cipher letters, so the content is readable without a break; what stays open is the cipher system as a crib source (ciphertext not seen). Treat as a crib set rather than an unread cipher.",
+  "lead_updates": {
+   "folio_note": "six letters with clear duplicates: 1 Jan, 8 Jan, 26 Jan, 23 Feb, 8 Apr, 24 May 1672; the inventory's 'zonder cijfer' marks the clear copies"
+  }
+ },
+ "375": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12586.49 (the page lists the preceding inv. 12586.29 and 12586.41 too) opened 2 Nov 2026 in Chrome",
+   "extent": "seven items 'gedeeltelijk in cijfer': 19 Oct 1652, 21 Dec 1652 (to griffier Ruysch), 8 Feb 1653, 23 Aug 1653, 30 Aug 1653, 6 Sep 1653 (with duplicates), 13 Oct 1653",
+   "cipher": "Archive description: 'Brief van gedeputeerde Nanningh Kaiser, te Kopenhagen, aan griffier Ruysch. Gedeeltelijk in cijfer. Met bijlagen ...'. No decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py 'Keyser' and '12586.29': no DECODE record.",
+   "tomokiyo": "No cryptiana page on Kaiser/Keyser 1652-53 found.",
+   "lasry": "No Lasry work known.",
+   "edition": "No edition found (WebSearch on Nanningh Keyser/Kaiser Copenhagen 1652 cijfer returned nothing relevant).",
+   "literature": "No literature on the cipher found."
+  },
+  "key_check": "No Dutch envoy cipher of 1652-53 is held; targets/thurloe and colbert hold 1653 Dutch ciphers (Beverning/Vande Perre) of a different correspondence, not applied without ciphertext.",
+  "duplicates": "known.py 'Keyser': no other entry for Kaiser; 12586.29/.41 only here.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "seven letters 'gedeeltelijk in cijfer' (inventory count 7, not 6)"
+  }
+ },
+ "376": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12585.74 opened 2 Nov 2026 in Chrome (inventory text only)",
+   "extent": "inventory of 12585.74 shows six Rumpf letters 'Gedeeltelijk in cijfer': 26 May 1677 (two, one a duplicate), 24 Aug 1677, 4 Sep 1677, 9 Apr 1678, 25 May 1678 (duplicate)",
+   "cipher": "Archive description: 'Brief van resident Rumpf, te Stockholm, aan griffier Fagel. Gedeeltelijk in cijfer, 1677 september 4'. Only Rumpf's letters carry the note on this page; no decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py 'Schaep': only this entry and the nationaal_archief sweep; no DECODE record.",
+   "tomokiyo": "No cryptiana page on Dutch Stockholm residents 1674-78 found.",
+   "lasry": "No Lasry work known.",
+   "edition": "WebSearch found no edition of the Rumpf letters.",
+   "literature": "No literature on this cipher found."
+  },
+  "key_check": "No ciphertext seen, nothing tried; the Rumpf code could be the same States General resident cipher as Boreel 1672, unknown.",
+  "duplicates": "known.py 'Schaep': only catalogue 376; neighbouring 12585.67-.73 not individually opened.",
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Resident Rumpf, Stockholm, to the States General: letters partly in cipher, 1677-1678 (inv. 12585.74)",
+   "correspondents": "Christiaan Constantijn Rumpf → griffier Fagel / States General",
+   "date": "1677-1678",
+   "folio_note": "cipher noted on 12585.74 only for Rumpf (six letters 1677-78); Schaep's volumes 12585.67-.73 were not opened and are not shown to hold cipher"
+  }
+ },
+ "377": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12586.93 and 12586.69 opened 2 Nov 2026 in Chrome (inventory text only)",
+   "extent": "three Van Wijngaerden letters 'Gedeeltelijk in cijfer': 3 Sep 1671 (12586.93), 23 Aug 1672 and 1 Oct 1672 (12586.94, the latter with enclosures)",
+   "cipher": "Archive description: 'Brief van extra-ordinaris ambassadeur Daniël van Wijngaerden, te Kopenhagen, aan griffier Fagel. Gedeeltelijk in cijfer ...'. Inv. 12586.69 (1660) lists letters of Pieter Vogelsang and Jacob Le Maire with NO cipher note; Slingelandt is not named on it."
+  },
+  "prior_art": {
+   "decode": "known.py 'Slingelandt': no DECODE record.",
+   "tomokiyo": "No cryptiana page found on Dutch envoy ciphers at Copenhagen 1671-72.",
+   "lasry": "No Lasry work known.",
+   "edition": "No edition found.",
+   "literature": "No literature on the cipher found."
+  },
+  "key_check": "No Dutch Copenhagen cipher of 1671-72 is held; Boreel 1672 clear duplicates (catalogue 374) would be the nearest crib source but belong to a different envoy and were not applied.",
+  "duplicates": "known.py 'Slingelandt': only this entry and the nationaal_archief sweep; 12586.69 is Vogelsang 1660 per inventory, so the Slingelandt half is unconfirmed.",
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Van Wijngaerden, Copenhagen, to the States General: three letters partly in cipher, 1671-1672 (inv. 12586.93-.94)",
+   "correspondents": "Daniel van Wijngaerden → griffier Fagel",
+   "date": "1671-1672",
+   "shelfmark": "Nationaal Archief, The Hague, 1.01.02 (Staten-Generaal), inv. 12586.93, 12586.94",
+   "folio_note": "12586.69 (1660) is Vogelsang/Le Maire and shows no cipher note: dropped; Slingelandt not confirmed"
+  }
+ },
+ "378": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12589.165 opened 2 Nov 2026 in Chrome (inventory text only)",
+   "extent": "two items: Van Beuningen, Westminster, 19 May 1676, 'grotendeels in cijfer. Met bijlagen (in cijfer)', and an extract of a Van Beuningen letter to the Raadspensionaris with a French enclosure in cipher, Nov 1676; the other 1675-76 letters in the volume are listed without cipher",
+   "cipher": "Archive description: 'Brief van ambassadeur Van Beuningen, te Westminster, aan \"Wel Edele Gestrenge Heer\", grotendeels in cijfer. Met bijlagen (in cijfer), 1676 mei 19'. No decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py 'Beuningen', '12589': no DECODE record for 12589.165.",
+   "tomokiyo": "No cryptiana page on this item; Tomokiyo covers other Van Beuningen/Dutch ciphers only generally.",
+   "lasry": "No Lasry work on this SG volume found; the repo reading of the Fagel collection letter is by Feyseel Nur.",
+   "edition": "No edition found by search.",
+   "literature": "Only repo literature: targets/beuningen1676 (NA 3.01.18 inv. 249, Van Beuningen to Fagel 23 May/2 June 1676)."
+  },
+  "key_check": "Likely key family: targets/beuningen1676 recovered a Van Beuningen London 1676 system (homophonic letters, colon-marked words, alphabetical nomenclator) from glossed siblings in NA 3.01.18 inv. 248-250. Whether it reads these two SG items cannot be said without seeing them, so not key_lookup yet; it is the first thing to try once scans exist.",
+  "duplicates": "Overlaps in subject and year with targets/beuningen1676 (a different NA fonds, 3.01.18 Fagel) but not the same letters: that target's letter is 23 May/2 June 1676 to Fagel; these are 19 May and Nov 1676 items in the SG archive.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "only two items of 12589.165 are in cipher: 19 May 1676 and a Nov 1676 extract/enclosure; key family: targets/beuningen1676"
+  }
+ },
+ "379": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12587.144 and 12587.203 opened 2 Nov 2026 in Chrome (inventory text only)",
+   "extent": "12587.144 (1657): three items 'Ontcijferde brief van Willem Boreel, ambassadeur in Frankrijk' (May 1657); 12587.203 (1686): one letter of Wassenaar Starrenburg, 8 Mar 1686, 'Gedeeltelijk in cijfer'",
+   "cipher": "Archive description 1657: 'Ontcijferde brief van Willem Boreel, ambassadeur in Frankrijk, te Parijs, aan griffier N.C. Ruijsch, met kopie, 1657 mei 4' (a deciphered letter); 1686: 'Brief van ambassadeur Willem van Wassenaar Starrenburg, te Parijs, aan griffier Fagel. Gedeeltelijk in cijfer, 1686 maart 8'."
+  },
+  "prior_art": {
+   "decode": "known.py 'Wassenaar': research/nationaal_archief README only; no DECODE record.",
+   "tomokiyo": "No cryptiana page found on these Paris letters.",
+   "lasry": "No Lasry work known; targets/battier1686 is a sibling 1686 case in the repo.",
+   "edition": "No edition found; the 1657 'Ontcijferde brief' items are the States General clerks' own decipherments.",
+   "literature": "No literature found."
+  },
+  "key_check": "The 1686 letter may share the code of targets/battier1686 (Dutch envoy 1686), not tested because no ciphertext was seen.",
+  "duplicates": "known.py 'Wassenaar': only here and the sweep README; the 1657 half is Willem Boreel's Paris letters.",
+  "verdict": "partly_read",
+  "closed": "For 1657 the inventory itself lists deciphered letters ('Ontcijferde brief') of Willem Boreel, so that content is already read with the file; the single 1686 letter remains unread but is one item. Ciphertext not seen.",
+  "lead_updates": {
+   "correspondents": "Willem Boreel (1657); Willem van Wassenaar Starrenburg (1686) → griffier Ruysch / Fagel",
+   "folio_note": "12587.144: three items already deciphered ('Ontcijferde brief', May 1657); 12587.203: one letter 8 Mar 1686 partly in cipher"
+  }
+ },
+ "381": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://digitarq.arquivos.pt/documentDetails/30c31db086484982a18654cb2ed285dd (PT/TT/MMCG/4B/000141), opened 2 Nov 2026 in Chrome (no digital object or viewer on the record or its parent volume)",
+   "extent": "one letter (p. 667), part in cipher",
+   "cipher": "DigitArq: 'Carta de Duarte Nunes da Costa para D. Vasco Luís da Gama, 5.º conde da Vidigueira', in the unit 'Correspondência para o Conde da Vidigueira' (1642-1647); catalogue scope note says part of the letter is in cipher. No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "known.py 'Nunes da Costa' and 'Vidigueira': no DECODE or Cryptoole record for this item.",
+   "tomokiyo": "No cryptiana page on Nunes da Costa/Hamburg 1642 found.",
+   "lasry": "No Lasry work on this volume known; Lasry's Portuguese papers (Histocrypt) concern 1646/1649 Dutch Brazil letters.",
+   "edition": "No edition found; Laranjo Coelho's Cartas de D. João IV ao Conde da Vidigueira (Academia Portuguesa da História 1940-42) is the King's letters.",
+   "literature": "Studia Rosenthaliana 21 biography of Duarte Nunes da Costa found; no mention of cipher."
+  },
+  "key_check": "Other Nisa/Vidigueira ciphers in the repo (MSLIV 1016/1017, catalogue 383) share no ciphertext with this item; none applied (no images).",
+  "duplicates": "known.py 'Nunes da Costa': catalogue 382/383 are separate letters to the same addressee; no duplicate.",
+  "verdict": "open"
+ },
+ "382": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://digitarq.arquivos.pt/documentDetails/20c05edc078c4592a803d59394d8accf (PT/TT/MMCG/4B/000030), opened 2 Nov 2026 in Chrome (no digital object; the volume record has no viewer link)",
+   "extent": "one letter (p. 177), part in cipher",
+   "cipher": "DigitArq scope note: 'Parte da carta está escrita em cifra.' Title: 'Carta de Pero Mendes de Sampaio para D. Vasco Luís da Gama, 5.º conde da Vidigueira'. The volume listing item 000002 says the book holds Sampaio's letters written from Rome, mostly 1645-1647."
+  },
+  "prior_art": {
+   "decode": "known.py 'Mendes de Sampaio': no DECODE record.",
+   "tomokiyo": "No cryptiana page on Pero Mendes de Sampaio found.",
+   "lasry": "No Lasry work known.",
+   "edition": "No edition found; Laranjo Coelho's 1940-42 edition prints the King's letters.",
+   "literature": "No literature on a Sampaio cipher found."
+  },
+  "key_check": "None held; Sampaio wrote from Rome, so a Rome-Portugal cipher of the 1640s would be the thing to look for, not held here.",
+  "duplicates": "known.py 'Mendes de Sampaio': this entry only; same volume as catalogue 381.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "c. 1645-1647 (Rome)",
+   "place": "Rome",
+   "folio_note": "MMCG 4B 000030 = tomo 4B p. 177; volume item 000002 describes Sampaio's letters as written from Rome mostly 1645-47"
+  }
+ },
+ "383": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "scan",
+   "where": "https://digitarq.arquivos.pt/fileViewer/1bfdb5d27fe049d7af1599290b3ebb03 (PT/TT/MSLIV/1017, 'Notícias do senhor rei D. João IV. Cartas aos governadores do reino. Tomo II', images m0223, m0228, m0229, m0230), viewed in Chrome 2 Nov 2026",
+   "extent": "m0228 (copyist's p. 224): letter 'De El Rei de 27 de M.o de 1645' (Alcântara) to the Conde Almirante, ambassador, sending Taquet's letter, followed by 'Copia da carta de Taquet Decifrada' ('Tive carta de Felipe Rolim de 15 de Dez.ro ...'), continuing on m0229 (p. 225)",
+   "cipher": "No ciphertext: the volume copies Taquet's letter already DECIPHERED ('Copia da carta de Taquet Decifrada'); the cipher letter itself is not transcribed. Plain Portuguese copyist's hand."
+  },
+  "prior_art": {
+   "decode": "known.py 'Taquet' and 'MSLIV': no DECODE or Cryptoole record; catalogue 383 only.",
+   "tomokiyo": "No cryptiana page on Taquet/Fernando de la Houe found.",
+   "lasry": "No Lasry work on this channel found; his Portuguese cipher papers (Dutch Brazil 1646, 1649) are other letters.",
+   "edition": "Laranjo Coelho, Cartas de El-Rei D. João IV ao Conde da Vidigueira (Academia Portuguesa da História 1940-42): catalogue record found, text not opened.",
+   "literature": "A Portuguese historical article (found by search) names Francisco Taquet as codename of friar Fernando de la Houe, D. João IV's agent linked with the infante D. Duarte; no cipher study."
+  },
+  "key_check": "No key needed: the decipherment is in the volume.",
+  "duplicates": "known.py 'Taquet': only this entry. Date check: the letter found is dated 27 [May] 1645 (between letters of 29 Apr and 20 Jun 1645 on m0223-m0230), not 28 Apr as the entry says; item 00223 was not pinned to a leaf, so the entry's 28 Apr letter may be a further one.",
+  "verdict": "read",
+  "closed": "The MSLIV 1017 copy gives Taquet's letter in a contemporary decipherment ('Copia da carta de Taquet Decifrada', m0228-m0229); the cipher text was not copied, so there is nothing to break in this copy.",
+  "lead_updates": {
+   "date": "27 May 1645 (letter on m0228; entry's 28 Apr not confirmed)",
+   "folio_note": "MSLIV 1017 is 'Cartas aos governadores do reino, Tomo II'; Taquet decipherment on copyist's pp. 224-225 = images m0228-m0229"
+  }
+ },
+ "384": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://digitarq.arquivos.pt/documentDetails/628eab268253440a88e6851580893637 (PT/TT/CPN/0017/00001), opened 2 Nov 2026 in Chrome (no digital object)",
+   "extent": "a composite item of letters 1657-1659 (title adds 1660) from Duque de Coulande, Mazarin, Orsini, Sousa Coutinho and Vieira da Silva to Francisco de Melo",
+   "cipher": "DigitArq scope note: 'Contém documentos cifrados do cardeal Orsini e do secretário de Estado Vieira da Silva.' Languages French, Italian, Portuguese. Old shelfmark Liv. 549. No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "known.py 'Francisco de Melo': no DECODE/Cryptoole record for CPN 17/1; entries 385 and others for Melo are separate.",
+   "tomokiyo": "No cryptiana page on the Orsini/Vieira da Silva ciphers to Melo found.",
+   "lasry": "No Lasry work known on this item.",
+   "edition": "No edition found (WebSearch Orsini Vieira da Silva Francisco de Melo cifra); Prestage's diplomatic-relations volume not checked.",
+   "literature": "Search returned only Orsini as protector of Portugal at Rome (Orsini archive in Rome); nothing on cipher."
+  },
+  "key_check": "Catalogue 390 (sande1660, Melo/Sande papers) holds a recovered Dutch-embassy cipher A of 1657-59, unrelated to Orsini/Vieira da Silva, not applied. No key held for Lisbon-to-Melo.",
+  "duplicates": "known.py 'Francisco de Melo' lists 384, 385, 390 and other Hague-embassy entries; CPN/0017 only here.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "1657-1659 (DigitArq production dates; title adds 1660)",
+   "folio_note": "Condes da Ponte mç. 17 n.º 1 (old Liv. 549); the cipher items are Orsini's and Vieira da Silva's"
+  }
+ },
+ "385": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L10",
+  "seen": {
+   "kind": "not online",
+   "where": "https://digitarq.arquivos.pt/documentDetails/557f5d0755684c89900646234ee36f53 (PT/TT/MMCG/1E/000024, 2 Nov 1658), opened 2 Nov 2026 in Chrome (no digital object on it or on the volume record)",
+   "extent": "nine letters grouped; item 000024 = letter of 2 Nov 1658",
+   "cipher": "DigitArq: 'Carta de D. Fernando Teles de Faro a D. Francisco de Melo em cifra' (tomo 1E f. 24); the volume title says Teles de Faro, ambassador in Holland, wrote to Francisco de Melo; the volume lists its own key (1E/000003 'Cifra por que se podem entender as cartas que estão neste livro'). No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "known.py 'Teles de Faro': only catalogue 385/390 and sweep files; no DECODE record.",
+   "tomokiyo": "No cryptiana page on Teles de Faro found.",
+   "lasry": "No Lasry work found; his Portuguese ciphertext papers are 1646/1649 Brazil items.",
+   "edition": "WebSearch found no edition of the letters; Prestage's Diplomatic Relations of Portugal with France, England and Holland 1640-1668 not checked for cipher; a Dutch 1659 pamphlet answers Teles de Faro's manifesto.",
+   "literature": "No literature on the ciphered letters found."
+  },
+  "key_check": "The volume contains its own key sheet (1E/000003) which would read these letters but is not held here; catalogue 390 (targets/sande1660) recovered a Dutch-embassy cipher A of 1657-59 (scans m0265-m0273) whose writer may be Teles de Faro; not applied since no ciphertext of 385 was seen. Not key_lookup until the key sheet is on hand.",
+  "duplicates": "known.py 'Teles de Faro' and 'Francisco de Melo': catalogue 390 (Luís de Miranda Pereira liv. 1) is a different shelfmark that may copy the same letters; entries for Luís Álvares Ribeiro and Conde de Miranda are other writers.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "MMCG 1E: Faro letters from 1658 (item 000024 = 2 Nov 1658); key sheet at 1E/000003; link to catalogue 390 cipher A suggested by that entry"
+  }
+ }
+}

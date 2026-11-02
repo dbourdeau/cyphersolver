@@ -1,0 +1,340 @@
+{
+ "437": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.szukajwarchiwach.gov.pl (search 'Kinnera Karol VI', 2 Nov 2026 in Chrome): result 1/2/0/-/3001, tag 'brak skanów/zdjęć'; AGAD calendar https://www.agad.gov.pl/inwentarze/c02p.xml",
+   "extent": "one 'poszyt' of 6 leaves, 206 x 334 mm; amount of cipher not stated",
+   "cipher": "Archive description: '[Szyfr]. Karol VI, wybrany cesarz rzymski do Franciszka Wilhelma Kinnera, sekretarza poselstwa przy dworze polskim i saskim: w sprawach politycznych', Wiedeń 25 Dec 1728. The catalogue title is the single word 'Szyfr'; no decipherment is mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py 'Kinner' found no DECODE record, only this entry and research/polish_archives; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Charles VI / Kinner / AGAD Zbior dokumentow papierowych found (WebSearch 'Kinner Zbior dokumentow papierowych szyfr 1728' returned only AGAD front pages and journal lists).",
+   "lasry": "No Lasry, Waldispühl/Rous or other DECRYPT-group item on a Charles VI instruction to Kinner found (web searches 'Franz Wilhelm Kinner 1728 Warschau Chiffre' and the German-language equivalent).",
+   "edition": "No edition or calendar found: searches on Kinner, Karl VI 1728 and the Polish-Saxon court returned nothing naming him; szukajwarchiwach lists only the one catalogue record and no scan.",
+   "literature": "No study found of the 1728 imperial instructions to Kinner; the Vienna HHStA Polonica volumes are the likely home of the clear drafts, not checked online."
+  },
+  "key_check": "No key held for imperial (Vienna) chancery ciphers of 1728 in the repo or on DECODE; the Vienna copies of the same instruction (HHStA) are not online. Nothing could be applied because no ciphertext is visible.",
+  "duplicates": "known.py 'Kinner' and 'AGAD Kinner': this entry and the Polish archives sweep only; searched szukajwarchiwach for Kinner / Charles VI 1728: one record. No second unit for the same letter.",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive",
+   "scan_status": "szukajwarchiwach.gov.pl record 1/2/0/-/3001 carries 'brak skanow/zdjec' (no scans), checked 2 Nov 2026"
+  }
+ },
+ "450": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF A0073297 images 107 and 125 (lbiiif.riksarkivet.se/arkis!A0073297_00107, _00125, fetched by curl 2 Nov 2026) and the repo survey targets/duben1764/NOTES.md of all 223 images",
+   "extent": "images 87-127: about 20 letters of dot-separated 3-digit numeric groups (1-~790) from Düben to Gyldenstolpe and the Queen, 1764-65, two systems A and B; images 216-220 key tables",
+   "cipher": "Image 107: a full page of dot-separated numeric groups facing a French clear page. Image 125 (15 Nov 1765): the number lines carry an INTERLINEAR French decipherment in the writer's/recipient's hand over most lines ('de cette Cour, relativement au mariage du Prince Royal ...'), with horizontal rules fencing the unglossed lines. So a decipherment is written on the leaf for that letter; the other cipher pages seen have none."
+  },
+  "prior_art": {
+   "decode": "known.py 'Lovisa Ulrika' and 'Düben': no DECODE record; the only ledger hits are catalogue 450 and targets/duben1764.",
+   "tomokiyo": "Searched cryptiana by name (Düben, Gyldenstolpe, Lovisa Ulrika): no page found; WebSearch 'Düben Gyldenstolpe Lovisa Ulrika 1764 chiffer' returned only biographies.",
+   "lasry": "No Lasry paper or GL.htm entry on the Lovisa Ulrika K 259 volume found.",
+   "edition": "Frederick II's letter of 3 March 1765 in the group is printed in Politische Correspondenz 24 no. 15458 (Dudout email 27 Oct; a search found the vol. 24 digital edition at friedrich.uni-trier.de but not that number, so not verified here); no edition of Düben's own code letters found.",
+   "literature": "Searches on Lovisa Ulrika's secret correspondence found only general biography; the crown prince's travel cipher on image 219 is noted in repo as printed in Svenska Akademiens Handlingar 29."
+  },
+  "key_check": "Three key tables sit in the same volume (images 218-220); targets/duben1764 range-checked them: the letters use 1-~790 with nothing in 8xx-9xx and the frequent groups do not fall where the tables put them, so none reads the ciphertext as is. The 15 Nov 1765 gloss shows the values vary through the text; no fixed table reconstructs it (fb.py 0.61-0.64 against controls 0.985).",
+  "duplicates": "known.py 'Lovisa Ulrika', 'Düben', 'Mörner' hits: catalogue 450 itself and targets/duben1764 only; no second entry for K 259 and no DECODE duplicate.",
+  "verdict": "partly_read",
+  "closed": "The 15 Nov 1765 letter (image 125 etc.) carries an interlinear decipherment on the leaf (36 of 47 number lines); the rest of the cipher letters are unread and no key is established.",
+  "lead_updates": {
+   "prior_art": "partial: interlinear decipherment of the 15 Nov 1765 letter written on the leaf (images 124R-126, viewed 2 Nov 2026); Frederick II letter of 3 Mar 1765 printed in PC 24 no. 15458 (Dudout)"
+  }
+ },
+ "451": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet NAD https://sok.riksarkivet.se/arkiv/Mb2fCDZmVKA0HNB5YnLcl1 (SE/RA/2404/I A 2/149); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "volume 1712-1714; cipher letters not counted; some 1713 cipher letters moved here from SE/RA/2404/I A 1/28",
+   "cipher": "Archive description: 'J.A. Meyerfeldt. Åtskilliga chiffrerade' (several in cipher). Not digitised (research/riksarkivet README: 'Not scanned'). No decipherment noted."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); research/scandinavia/decode_nordic.txt sweep of 26 Oct lists nothing for Pomerania.",
+   "tomokiyo": "No cryptiana page on Meyerfeldt or Swedish Pomerania ciphers found (searched cryptiana via WebSearch 'Meyerfeldt chiffer Pommern Karl XII').",
+   "lasry": "No Lasry or DECRYPT-project item on Swedish Great Northern War chancery ciphers found (WebSearch 'Swedish chancery cipher keys 1700-1730' returned only Saxon-Polish Flemming/Wackerbarth keys and Thirty Years' War material).",
+   "edition": "No edition found: Meyerfeldt's printed letters (NDB: Villius 1951, Poltava reports 1709) are a different period and clear text.",
+   "literature": "WebSearch 'Meijerfeldt Stettin Stralsund 1713 chiffer' returned biography only (governor-general 27 Mar 1713, Stettin handed to the Russians); no study of his cipher letters."
+  },
+  "key_check": "Swedish chancery keys of the period are held in Riksarkivet (SE/RA/202 Chifferklaver, per the 24 Oct sweep); none is held in the repo or on DECODE for this item, and no ciphertext was seen, so no key could be applied.",
+  "duplicates": "known.py 'Meyerfeldt' hits: catalogue 451, research/riksarkivet/README.md and research/scandinavia; no second entry or DECODE duplicate; Vellingk (452) is a separate series.",
+  "verdict": "open"
+ },
+ "452": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet NAD https://sok.riksarkivet.se/arkiv/SnEPZEQ26agrfPQpC1N8L3 (SE/RA/1411/E/E VI/1); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "volume from 1714; amount of cipher not stated",
+   "cipher": "Archive description: 'sände rapporter, delvis i chiffer' (sent reports, partly in cipher). Not digitised; no decipherment noted."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); known.py 'Vellingk' hit only the Scandinavia sweep files.",
+   "tomokiyo": "No cryptiana page on Vellingk found (WebSearch 'Mauritz Vellingk Hamburg 1714 chiffer').",
+   "lasry": "No Lasry item found; the only Great Northern War cipher literature surfaced was Rous/Waldispühl/Megyesi on Saxon-Polish keys.",
+   "edition": "No edition found; Vellingk's 1711 letter to the Swedish resident in Hamburg is calendared at TNA (C8951209) but is clear and an earlier episode.",
+   "literature": "WebSearch 'Vellingk Hamburg 1714 Stenbock Meyerfeldt chiffer' returned Bremen-Verden campaign background only."
+  },
+  "key_check": "Swedish chancery keys of the period are held in Riksarkivet (SE/RA/202 Chifferklaver, per the 24 Oct sweep); none is held in the repo or on DECODE for this item, and no ciphertext was seen, so no key could be applied. A 'Chiffer' item with Stenbock/Meyerfeldt enclosures in Vellingk's own collection (SE/RA/720626/E/E 6015) is the likely key and is also not scanned.",
+  "duplicates": "known.py 'Vellingk': catalogue 452 and the Scandinavia sweep only; no duplicate of this volume found.",
+  "verdict": "open"
+ },
+ "453": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet NAD https://sok.riksarkivet.se/arkiv/8TtlIVq4RKzLK5xGrqPuW1 (SE/RA/757/36/II/48); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "one duplicate copy of an own-hand report, 24 Mar 1631; cipher extent not stated",
+   "cipher": "Archive description: 'Ang. finansförvaltningen (duplett, delvis chiffrerad)' (on the finance administration, duplicate, partly ciphered). Not digitised; no decipherment noted."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); DECODE holds Chifferklaver lada II (royal chancery keys) as a key source but no record for this item.",
+   "tomokiyo": "No cryptiana page on Johan Casimir or Gustav II Adolf chancery ciphers of 1631 found.",
+   "lasry": "No Lasry item on this report found; WebSearch 'Kanslichiffer Gustav II Adolf 1620-talet' returned chancery-organisation history only.",
+   "edition": "Not in Bezold's Briefe des Pfalzgrafen Johann Casimir (that edition is the 16th-century Palatine, a different man); no edition of the 1631 report found. Axel Oxenstierna's Skrifter och brevväxling is the possible print source, not checked page by page.",
+   "literature": "NDB (Kromnow 1974) mentions his 1631 finance role; no study of this cipher report found."
+  },
+  "key_check": "Royal chancery keys of 1620-1650 survive (SE/RA/202/1 Kanslichiffer; DECODE Chifferklaver lada II) but none is held here and no ciphertext is available to try.",
+  "duplicates": "known.py 'Johan Casimir': catalogue 453 and Scandinavia/Riksarkivet sweep files only; the word 'duplett' means a duplicate of a letter whose original may sit elsewhere in 757/36, not searched.",
+  "verdict": "open"
+ },
+ "454": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet NAD https://sok.riksarkivet.se/arkiv/8xhhfFJ3K4YiVLPUOVRtW2 (SE/RA/25.3/4/II/7/B (b)); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "3 pages, sealed full power of 6 May 1677 (item b); item a of 12 Apr 1676 is clear",
+   "cipher": "Archive description: 'Latin, delvis i chiffer' (Latin, partly in cipher). Not digitised; no decipherment noted. The clear 1676 power in the same folder would be a formula crib."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); known.py 'Nijmegen' hits only the Spanish Balbases/Ronquillo targets, not this document.",
+   "tomokiyo": "No cryptiana page on a Swedish full power for Nijmegen found.",
+   "lasry": "No Lasry item found; the Nijmegen items in the repo ledgers are Spanish (Balbases) ciphers.",
+   "edition": "No edition found (searches 'Karl XI fullmakt Nijmegen 1677', 'Nimwegen 1677 schwedische Gesandte Vollmacht'); the Bodleian Clarendon MS 110 holds copies of all envoys' credentials, whether the Swedish power includes the cipher part is unknown.",
+   "literature": "Only general Nijmegen congress background found; nothing on the ciphered clause."
+  },
+  "key_check": "Swedish chancery keys of the period are held in Riksarkivet (SE/RA/202 Chifferklaver, per the 24 Oct sweep); none is held in the repo or on DECODE for this item, and no ciphertext was seen, so no key could be applied.",
+  "duplicates": "known.py 'Nijmegen' and 'Johan Casimir' sibling: no duplicate; 1676 clear power (item a) is a separate item, not a copy of this one.",
+  "verdict": "open"
+ },
+ "456": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet NAD https://sok.riksarkivet.se/arkiv/4ZLvmY4qW4kTpF4CHarEq0 (SE/RA/720290/I/01/D/14); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "mixed volume of Utrikesexpeditionen papers, Russian war; amount of cipher not stated",
+   "cipher": "Archive description: 'Svenska sändebudet i Peterburg apostiller i chiffer till K.M:t' (the Swedish envoy in St Petersburg, apostilles in cipher to the King). Not digitised; no decipherment noted."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); no Swedish-Russia envoy series on DECODE per the 26 Oct Nordic sweep.",
+   "tomokiyo": "No cryptiana page on Swedish envoys in St Petersburg found.",
+   "lasry": "No Lasry item found; WebSearch for Swedish envoy St Petersburg cipher 1718-1809 returned only Dutch (Six van Oterleek codebook) and WWI/1940s Swedish-Soviet items.",
+   "edition": "No edition found; the 1717 Gyllenborg London cipher affair surfaced but is a different envoy and place.",
+   "literature": "No study of these apostilles found; the entry spans 1718-1809 so the volume probably holds more than one cipher."
+  },
+  "key_check": "Swedish 18th-century chancery keys (SE/RA/202/5-11) are in Riksarkivet and not held here; with no ciphertext seen none could be tried.",
+  "duplicates": "known.py 'St Petersburg' style searches found only the 24 Oct Riksarkivet sweep and this entry; no duplicate.",
+  "verdict": "open"
+ },
+ "457": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet NAD https://sok.riksarkivet.se/arkiv/wt8nKZaXvqkj23pkpznzh1 (SE/RA/720290/I/12/2/153); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "one volume item of unsigned letters, c. 1800-1838; amount not stated",
+   "cipher": "Archive description: 'Welin - Östergren, brev i chiffer och icke undertecknade' (letters in cipher and unsigned). Not digitised; no decipherment noted."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); known.py 'Mörner' hits only targets/duben1764 (a postscript to Mme Mörner, unrelated) and the sweep files.",
+   "tomokiyo": "No cryptiana page on Adolf Göran Mörner or the Esplunda archive found.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition found; Mörner (1773-1838) letters in Uppsala's S:t Barthélemy collection are clear catalogue records, not these.",
+   "literature": "Searches 'Esplunda arkiv Mörner brev i chiffer' and 'Mörner Esplunda inkommande brev chiffer' found nothing on the cipher letters."
+  },
+  "key_check": "No key for this correspondent or for the 'Welin - Östergren' alphabetical range is held; a cipher letter's key may sit in the same Mörner papers, not scanned.",
+  "duplicates": "known.py 'Mörner': this entry and Scandinavia sweep only; no duplicate.",
+  "verdict": "open"
+ },
+ "458": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet NAD https://sok.riksarkivet.se/arkiv/kno2B2yUpoLPYZDpuIgUd4 (SE/RA/720266/03/08/~/2,5); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "one file of papers c. 1809; amount not stated; unclear whether the 'chiffer' items are ciphertext or keys",
+   "cipher": "Archive description: 'Spionrapporter, chiffer handlingar rörande revolutionen 1809' (spy reports, cipher documents on the 1809 revolution). Not digitised; no decipherment noted."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); known.py 'Crusenstolpe' hits only the Scandinavia sweep.",
+   "tomokiyo": "No cryptiana page on Swedish 1809 coup ciphers or the Crusenstolpe papers found.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition found; Adlersparre's '1809 års revolution och dess män' (1849) is a printed source on the coup but was not matched against this file.",
+   "literature": "Searches on the Crusenstolpe papers and 1809 cipher/spy material returned only coup background."
+  },
+  "key_check": "No key held; with the content type unknown (ciphertext vs key) nothing could be tried.",
+  "duplicates": "known.py 'Crusenstolpe': this entry only; no duplicate.",
+  "verdict": "open"
+ },
+ "462": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Riksarkivet/Krigsarkivet NAD https://sok.riksarkivet.se/arkiv/UvvVpNlRLKEsM7Bb8zHMy2 and two sibling records (SE/KrA/0200/007:H/F VI vols 9, 10, 12, 13); NAD record page not re-opened: sok.riksarkivet.se redirects to an ALTCHA checkbox captcha in Chrome (2 Nov 2026, not clicked); the archive's description is quoted as recorded in the 24 Oct Riksarkivet sweep.",
+   "extent": "boxes F VI/9, 10, 12, 13 (1917-18) and F VI/1b-33; counts not stated",
+   "cipher": "Archive description: 'Ryska och engelska telegram i klartext och code' (Russian and English telegrams in clear text and in code). Whether decoded versions sit with the code groups is not stated. Not digitised."
+  },
+  "prior_art": {
+   "decode": "not on DECODE (known.py and the 26 Oct DECODE list: no record for this series); known.py found no DECODE record for the Swedish General Staff telegrams.",
+   "tomokiyo": "No cryptiana page on the Swedish General Staff WWI intercepts found.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition of the telegrams; the Swedish reading of Russian traffic is described in Beckman and McKay, Swedish Signal Intelligence 1900-1945 (Routledge 2002) and Fredholm's AFIO article (Swedish codebreakers read Russian telegrams within a week of the outbreak of war).",
+   "literature": "Beckman/McKay and Fredholm found by search; they establish wartime Swedish reading of Russian codes, so the boxes may well hold contemporary decodes. Herslow's notes (SE/RA/721594) did not appear in any result."
+  },
+  "key_check": "Key lead only: Lt-Col Carl Herslow's notes on Russian WWI ciphers (SE/RA/721594) include transcripts of the Russian 3- and 4-figure codes; not held here.",
+  "duplicates": "known.py 'WWI Krigsarkivet' style searches: this entry and the 24 Oct sweep only; no duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "prior_art": "partly read at the time (Swedish General Staff section read Russian traffic from 1914, Beckman/McKay 2002, Fredholm AFIO 2015); whether these boxes hold the decodes is unknown"
+  }
+ },
+ "464": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "https://daisy.rigsarkivet.dk/arkivserie_detaljer?heid=3245448&henid=3245448, opened by curl 2 Nov 2026; Rigsarkivet search tilgængelighed 'Intet' (28 Oct)",
+   "extent": "one unit, number of letters not stated; dating 12.04.1712 - 27.05.1712 as catalogued",
+   "cipher": "Daisy: 'Opsnappede chifferbreve fra chevalier Lagau' (intercepted cipher letters), medium 'Original, Papir'; note: 'According to a contemporary Danish endorsement, chevalier Lagau was French legation secretary in Stockholm, and the letters were addressed to the French ambassador in Stockholm, comte de La Marck.' No image link, no decipherment mentioned."
+  },
+  "prior_art": {
+   "decode": "known.py 'Lagau' found no DECODE record; not on DECODE.",
+   "tomokiyo": "No cryptiana page on Lagau or La Marck found.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition or calendar of the Danish intercepts found; McCord Museum (Lagau letter summaries Oct-Dec 1719) and TNA SP 78/163 (La Marck to Dubois, 7 Jan 1719) are the only related records and concern different letters.",
+   "literature": "WebSearch 'Lagau La Marck Stockholm intercepted cipher letters Copenhagen' and the Danish 'Opsnappede chifferbreve Danske Kongers Historie' search found nothing beyond the McCord and TNA records and the Gyllenborg 1717 affair."
+  },
+  "key_check": "No French Stockholm legation key of 1712 or 1717-20 is held in the repo or on DECODE; targets/lagau1712 lists the French foreign-ministry keys as the place to look once the system is known.",
+  "duplicates": "known.py 'Lagau' returns catalogue 464 and targets/lagau1712 only; Rigsarkivet series search for 'Lagau' gave this one series and no sibling unit.",
+  "verdict": "open",
+  "lead_updates": {
+   "date_note": "1712 dating doubtful: McCord says Lagau became La Marck's secretary in Stockholm in 1717 and returned in 1720, so 1719-20 is likely"
+  }
+ },
+ "465": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "scan",
+   "where": "https://api.rigsarkivet.dk/ao/v1/images/48574060 (copybook image 109, pp. 104-105; fetched 2 Nov 2026, 4128x3436) and Arkivalieronline epid 15552891 (255 images)",
+   "extent": "about 200 letters 2 Jan - 24 June 1675; cipher on about 356 page sides (repo survey, estimated); image 109 has some 263 cipher tokens",
+   "cipher": "Image 109 (Biermann to Meyercron, 23 Mar 1675): French letter with long runs of numbers (343, 526, 589, 623 ...) mixed with signs (X, pi-like, w, q ...) copied into the register; no interlinear decipherment on the leaf. A key sheet exists separately (TKUA 'Chiffer' image 55) which reads this letter."
+  },
+  "prior_art": {
+   "decode": "known.py 'Biermann' hits only catalogue 465 and targets/biermann1675; no DECODE record for the copybook.",
+   "tomokiyo": "No cryptiana page on the Danish German Chancery ciphers of 1675 found.",
+   "lasry": "No Lasry item found; Norbert Biermann (the codebreaker) is a different person and surfaced only on French ciphers.",
+   "edition": "Brice Dudout's Europe chiffrée site prints readings of 37 letters to Høeg (The Hague) and Meyercrone (Paris), Jan-June 1675 with key K55 (documents.html#hoeg-1675, #meyercrone-1675; per his 27 Oct email, repo copy in targets/biermann1675/dudout). A search for the site did not surface it, so not verified on the web here.",
+   "literature": "Web searches (Danish diplomatic ciphers 17th century Tyske Kancelli; Europe chiffrée Dudout Biermann 1675) found no other study."
+  },
+  "key_check": "Key K55 (TKUA 'Chiffer' 1670-1709 image 55, held in targets/biermann1675/dudout/key_K55.tsv) reads the Høeg and Meyercron letters (23 Mar 1675 letter: 262 of 263 tokens, 99.6%); letters to Lilienkron, Gioë, Schröder, Reetz, Lindenow, Klingenberg, Lincker and Lente are under other numbering and unread.",
+  "duplicates": "known.py 'Biermann': catalogue 465 and targets/biermann1675 only; the survey in the repo found no second copybook; the key volume is a separate unit (Daisy heid 2132747).",
+  "verdict": "partly_read",
+  "closed": "Letters to Høeg and Meyercron (about 37, Jan-June 1675) are read with key K55 (Dudout, and the repo); the rest of the copybook, with other number families, is open.",
+  "lead_updates": {
+   "prior_art": "partial: 37 letters to Høeg and Meyercron read with key K55 (Dudout, Europe chiffrée; targets/biermann1675); image 109 viewed 2 Nov 2026 with no decipherment on the leaf"
+  }
+ },
+ "467": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "https://daisy.rigsarkivet.dk/arkivserie_detaljer?heid=1289136&henid=1289136, opened by curl 2 Nov 2026",
+   "extent": "one letter of 1626; series 1626-1630; media 'Original, Papir' and 'Brugskopi, Mikrofilm 35 mm' (no digital image link on the page)",
+   "cipher": "Daisy remarks: 'A. Brev til Morten Madsen Lime fra: Else Iversdatter Vandal 1626 (cifferskrift). B. Brev til Else Iversdatter Vandel fra: Iver Vandal 1630.' No decipherment mentioned; not scanned online."
+  },
+  "prior_art": {
+   "decode": "known.py 'Vandal' found no DECODE record, only the Scandinavia sweep.",
+   "tomokiyo": "No cryptiana page on Danish noble correspondence of 1626 or on Lime/Vandal found.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition found: Danish journal articles (Personalhistorisk Tidsskrift etc.) give the Lime-Wandal marriage c. 1602 and Lime's death c. 1640 but print no cipher letter.",
+   "literature": "Three searches (Else Iversdatter Vandal Lime 1626 cifferskrift; Danish noblewoman cipher letter; Ribe Lime Wandal krypteret brev) found only genealogy and unrelated Saxon/Oxenstierna cipher papers."
+  },
+  "key_check": "No key or comparable private Danish cipher of 1626 is held; with only the description to go on nothing could be tried.",
+  "duplicates": "known.py 'Vandal': this entry only; no sibling letter in the series is described as cipher (item B, 1630, is not).",
+  "verdict": "open"
+ },
+ "468": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "https://daisy.rigsarkivet.dk/arkivserie_detaljer?heid=3140080&henid=3140080, opened by curl 2 Nov 2026",
+   "extent": "series 1940-1942 of the Foreign Ministry, medium 'Original, Papir'; volume count not stated",
+   "cipher": "Daisy title: 'Indkomne ciffer- og kodetelegrammer' (incoming cipher and code telegrams), creator Udenrigsministeriet 1940-1942. No description beyond the title; the series may hold the decoded texts."
+  },
+  "prior_art": {
+   "decode": "known.py found no DECODE record for the Danish Foreign Ministry telegrams.",
+   "tomokiyo": "No cryptiana page on Danish 1940-42 diplomatic telegrams found.",
+   "lasry": "No Lasry item found.",
+   "edition": "No edition of the series found; FRUS 1941 vol. II prints the US side of Copenhagen telegrams, not these.",
+   "literature": "Searches (Udenrigsministeriet ciffer- og kodetelegrammer; Danish legations coded telegrams; the Rigsarkivet occupation-sources survey on core.ac.uk) found nothing on the cipher systems used in 1940-42."
+  },
+  "key_check": "No Danish Foreign Ministry codebook of 1940-42 is held; the title does not say which systems appear.",
+  "duplicates": "known.py 'Udenrigsministeriet' style searches: this entry only; no duplicate series found.",
+  "verdict": "open"
+ },
+ "470": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L13",
+  "seen": {
+   "kind": "not online",
+   "where": "Bodleian MS. e Mus. 203 pp. 218-226 (archives.bodleian.ox.ac.uk returned Anubis 'Access Denied' to WebFetch 2 Nov); EMLO work cb69093b... stayed on 'Loading' in Chrome (2 Nov 2026)",
+   "extent": "four letters (nos. 50-53 of Wallis's 1653 collection), 9 pp. in the Bodleian copy",
+   "cipher": "EMLO notes for each: 'The letter is not deciphered; however, the cipher appears to be based on the substitution of numeric values.' Dominic Winter lot 375 (7 Oct 2020): the last letters were 'left unsolved as exercises for aspirant cryptographers'. Not digitised."
+  },
+  "prior_art": {
+   "decode": "known.py 'Wallis' found no DECODE record under these shelfmarks (DECODE has an unrelated Brasset record R9429 of 1648).",
+   "tomokiyo": "cryptiana 'two syllabic challenges 1653-1654' (WebFetch 2 Nov) lists a Bordeaux letter of 1653 in BL Add MS 4200 as appearing undeciphered and unsolved; this may be a copy of no. 50 (Brasset to Bordeaux, 4 Apr 1653), not confirmed.",
+   "lasry": "No Lasry item on the Wallis challenge letters found.",
+   "edition": "No. 52 (Buckingham) was printed with interlinear decipherment and key in John Davys, An Essay on the Art of Decyphering (London 1737) pp. 24-29 (456 of 480 groups read; transcribed in targets/wallis1653). Nos. 50, 51, 53 have no edition found.",
+   "literature": "Atlas Obscura and Dominic Winter on the 2020 sale and the Bodleian/BL catalogues were searched; none reports nos. 50, 51 or 53 solved."
+  },
+  "key_check": "Wallis's 49 deciphered letters with their keys sit in the same volume (not digitised, not held); Davys's key reads only no. 52. No key was tried on nos. 50, 51, 53 because no ciphertext was seen.",
+  "duplicates": "known.py 'Wallis': targets/wallis1653 and this entry only; BL Add MS 4200 Bordeaux 1653 may duplicate no. 50, unchecked; the private 2020 copy duplicates the Bodleian letters.",
+  "verdict": "partly_read",
+  "closed": "Letter no. 52 (Buckingham) is deciphered in print (Davys 1737, key and 456/480 groups); nos. 50, 51, 53 remain unread and blocked on Bodleian access.",
+  "lead_updates": {
+   "split": "no. 52 is a read letter; offer nos. 50, 51, 53 separately if images are obtained",
+   "note": "cryptiana lists BL Add MS 4200 Bordeaux 1653 as undeciphered; possibly the same letter as no. 50"
+  }
+ },
+ "459": {
+  "unvetted": "Riksarkivet record page blocked by an ALTCHA captcha in Chrome on 2 Nov 2026 (redirect from sok.riksarkivet.se/arkiv/... to /captcha, not clicked), and curl returns 403; access is not 'archive' and no image route exists, so the cipher could not be seen. Needs the user to clear the captcha in a tab, then re-run; catalogue-only entry whose 'chiffer' may be a key."
+ },
+ "460": {
+  "unvetted": "Riksarkivet record page blocked by an ALTCHA captcha in Chrome on 2 Nov 2026 (redirect from sok.riksarkivet.se/arkiv/... to /captcha, not clicked), and curl returns 403; access is not 'archive' and no image route exists, so the cipher could not be seen. Needs the user to clear the captcha in a tab, then re-run; catalogue-only entry, content of the 'CHIFFER' volume undescribed."
+ },
+ "461": {
+  "unvetted": "Riksarkivet record page blocked by an ALTCHA captcha in Chrome on 2 Nov 2026 (redirect from sok.riksarkivet.se/arkiv/... to /captcha, not clicked), and curl returns 403; access is not 'archive' and no image route exists, so the cipher could not be seen. Needs the user to clear the captcha in a tab, then re-run; catalogue-only entry, probably a merchant's private numeric cipher (Härnösand)."
+ },
+ "463": {
+  "unvetted": "Riksarkivet record page blocked by an ALTCHA captcha in Chrome on 2 Nov 2026 (redirect from sok.riksarkivet.se/arkiv/... to /captcha, not clicked), and curl returns 403; access is not 'archive' and no image route exists, so the cipher could not be seen. Needs the user to clear the captcha in a tab, then re-run; catalogue title only, may be captured keys or intercepts."
+ },
+ "471": {
+  "unvetted": "Not seen: the SP 29 leaves are only in Gale State Papers Online (blocked); TNA Discovery API search for Behn/Antwerp/Astrea in SP 29 returns 0 records; EMLO work pages stay on 'Loading' in Chrome and WebFetch gets only the page shell (2 Nov 2026). Access is not 'archive'. Dudout's claim that the Taylor Editions (Oxford 2025) print the decipherment could not be verified by three web searches (Behn Antwerp letters Halsall Taylor Editions; SP 29/169 f.155; Behn cipher), so the verdict cannot be settled from the leaf."
+ }
+}

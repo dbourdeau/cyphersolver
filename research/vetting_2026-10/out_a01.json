@@ -1,0 +1,93 @@
+{
+ "1578": {
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch a01",
+   "seen": {
+    "kind": "scan",
+    "where": "Not re-fetched in this batch. The same document, AGS PTR,LEG,54,13 = PARES 2208053 (Paz Catalogo V no. 4715), was viewed on 2 Nov 2026 as images 1-4 for catalogue entry 625: frame check p01 (image 1, 43R) and vetting batch L03 (images 1-4).",
+    "extent": "Per entry 625: two full pages of about 38 dense lines (43R/43V), 12 lines and loose signs on 44R, docket on 44V.",
+    "cipher": "Dense stroke-and-numeral cipher, no clear words, no decipherment on the page (as recorded for 625). Lead 1578 is a second row for the same Paz item, not a second document."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: known.py 'Patronato Real', '4715', 'Puebla' gave only catalogue.json entry 625, leads and CATALOGUE.md rows; no DECODE record.",
+    "tomokiyo": "Tomokiyo spanish.htm lists only the Puebla code; entry 625 records a 2 Nov 2026 search with no entry for Paz 4715.",
+    "lasry": "No Lasry reading of Paz 4715 known to the repo (entry 625 prior_art) and none in known.py.",
+    "edition": "Paz, Catalogo V (1912) no. 4715 'Ni descifrado'; Bergenroth CSP Spain i not grepped here; entry 625 notes the 1868 Supplement starts in 1498.",
+    "literature": "Nothing published on this cipher found by entry 625's searches; no new source here."
+   },
+   "key_check": "Same as entry 625: Puebla's Roman-numeral code (PTR leg. 52 doc. 33) is the first key to try and is not yet applied; nothing new was tried for the duplicate row.",
+   "duplicates": "known.py shows lead 1578 and catalogue 625 carry the identical Paz no. 4715 text ('Documento en cifra con sobre ingles ... 2 hoj. fol., en mal estado'), same title and score note. 625 already maps it to PTR,LEG,54,13 (PARES 2208053). Duplicate of catalogue 625.",
+   "verdict": "duplicate",
+   "closed": "Same Paz no. 4715 document as catalogue entry 625 (AGS PTR,LEG,54,13, PARES 2208053); keep 625, drop lead 1578."
+  }
+ },
+ "1579": {
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch a01",
+   "seen": {
+    "kind": "not online",
+    "where": "BL catalogue searcharchives.bl.uk, Mss Eur G37/8/4 (record 040-000800306) and its parts, read in Chrome on 2 Nov 2026: ff.54-60, ff.61-66, f.67, ff.68-69, ff.70-72, ff.73-74 and ff.2-53 scope notes; Mss Eur G37/7/20 ff.12-13. The Digitised Content field of 8/4 is empty: reading room only.",
+    "extent": "ff.54-66 (13 folios of Watts cipher letters), f.67 (one code letter, Mir Jafar articles), ff.73-74 (Scrafton, one in cypher); plus ff.2-53 (52 folios of Watts letters nos. 44-83, 23 Apr-11 Jun 1757, cypher with translations).",
+    "cipher": "BL descriptions: ff.54-60 'Letters in cypher, probably in William Watts' handwriting ... being numbers 62, 72 and 77-79 but lack any translation'; ff.61-66 'similar in format ... but lack either dates or numbers. Both contain parts which have been decrypted'; f.67 'Letter in code ... articles of the agreement with Mir Jafar'; ff.2-53 'sent in cypher and survive both as cyphers and translations'."
+   },
+   "prior_art": {
+    "decode": "No DECODE hit: known.py on the shelfmark and names, grep of research/catalogue_harvest/decode dumps for Clive, Plassey, Scrafton, Mir Jafar, Francis; web search for de-crypt.org + Mss Eur G37 returned only BL catalogue pages.",
+    "tomokiyo": "Web search for Tomokiyo cryptiana with Clive, Plassey, Watts and Scrafton found nothing; known.py shows no cryptiana page for this series.",
+    "lasry": "No Lasry paper, GL.htm entry or DECODE record on Clive or Watts ciphers found (web search Lasry + East India Company + Watts 1757; repo grep).",
+    "edition": "Watts's letters of 1757 are printed from the Clive and Orme papers (Hill, Bengal in 1756-57, 3 vols, 1905; Watts, Memoirs of the Revolution in Bengal, Gutenberg 52518 prints the 2 May articles). Whether Hill prints the ff.54-66 cipher letters in decrypted form was not checked page by page (Hill not reachable in this batch).",
+    "literature": "Searches for Plassey cipher literature and the Indian Antiquary vol. 47 Watts articles found no study of the Watts-Clive cipher or any recovered code; BL describes no printed decipherment."
+   },
+   "key_check": "No Watts-Clive key is held in the repo or in DECODE. The BL itself supplies the material: translations of Watts nos. 44-83 at ff.2-53 give plaintext for the same cipher, and the lists at G37/7/20 ff.1-13 are described as 'numbered cyphers' with notes on use. No key could be applied without the images.",
+   "duplicates": "known.py on 'Mss Eur G37', 'Watts', 'Scrafton', 'Clive': only the leads 1579/1580 and the sweep README; no target or catalogue entry. Not a duplicate of any held item.",
+   "verdict": "open",
+   "lead_updates": {
+    "access": "archive",
+    "access_note": "BL Mss Eur G37/8/4 is not digitised (Digitised Content field empty on searcharchives.bl.uk, 2 Nov 2026); reading room or a BL image order. Needs a scan from the BL.",
+    "folio_note": "Correction: ff.68-69 are an incomplete set of decrypts of letters from an unidentified correspondent (probably Watts); ff.70-72 are a Select Committee letter partly in cypher, partly plain; the lead's 'decryption attached to ff.70-72' was wrong. ff.54-60 = Watts nos. 62, 72, 77-79 with no translation; ff.61-66 undated and unnumbered, partly decrypted; ff.2-53 = nos. 44-83 with translations (the crib corpus).",
+    "status_append": "Vetted 2 Nov 2026 from the BL catalogue only: ff.54-60 lack any translation; ff.2-53 carry cipher plus translation (crib material for a key rebuild); G37/7/20 ff.12-13 list Watts's letters 28 Apr-26 Jun 1757 with cipher/plain flags. Best target of the batch; order scans of ff.2-67.",
+    "prior_art": "open (checked 2 Nov 2026: BL catalogue, DECODE dumps, known.py, web searches for Tomokiyo, Lasry, Hill and the literature; no printed decipherment found, Hill not read)"
+   }
+  }
+ },
+ "1580": {
+  "vetting": {
+   "date": "2026-11-02",
+   "by": "claude vetting batch a01",
+   "seen": {
+    "kind": "not online",
+    "where": "BL catalogue searcharchives.bl.uk, Mss Eur G37/9/1 ff.7-10, searched in Chrome on 2 Nov 2026; no digitised content shown.",
+    "extent": "4 folios, two letters of 5 Jan 1768-30 Nov 1774 (dates as catalogued); the cipher is part of one letter.",
+    "cipher": "BL: 'Two letters from P. Francis to Clive concerning events in India. One is partly in cypher.'"
+   },
+   "prior_art": {
+    "decode": "No DECODE hit: known.py on the shelfmark and names, grep of research/catalogue_harvest/decode dumps for Clive, Plassey, Scrafton, Mir Jafar, Francis; web search for de-crypt.org + Mss Eur G37 returned only BL catalogue pages.",
+    "tomokiyo": "No cryptiana entry for Philip Francis or Clive found by web search; none in known.py.",
+    "lasry": "No Lasry or GL.htm mention of Francis or Clive ciphers found.",
+    "edition": "Parkes and Merivale, Memoirs of Sir Philip Francis (1867) and Francis Letters (1901): web searches found no mention of a cypher letter to Clive; the volumes were not read page by page. Note Clive died Nov 1774 and Francis sailed April 1774, so the date range is the file's, not the letter's.",
+    "literature": "Searches (Francis + Clive + cypher, Francis cipher India 1770s) found nothing on a Francis cipher. Sibling item Mss Eur G37/9/2 (photostats of two letters, sender and recipient unknown, 'possibly a very idiosyncratic shorthand or possibly a cypher') turned up in the searches and is a separate possible lead."
+   },
+   "key_check": "No Francis or Clive key held in the repo or DECODE; the cipher passage is a few lines, so no key could be tried or is likely to be recoverable without a second ciphered letter.",
+   "duplicates": "known.py 'Philip Francis', 'Clive': only leads 1579/1580 and the sweep files; no target or catalogue entry.",
+   "verdict": "open",
+   "lead_updates": {
+    "access": "archive",
+    "access_note": "BL Mss Eur G37/9/1 not shown as digitised on searcharchives.bl.uk (2 Nov 2026); needs a scan from the BL.",
+    "status_append": "Vetted 2 Nov 2026 from catalogue only; very short passage, low solvability. Related: Mss Eur G37/9/2 photostats, possibly cypher."
+   }
+  }
+ },
+ "1581": {
+  "unvetted": "cipher vs shorthand / the checked notebook is plain English; the actual cipher item (AL340, Rogers 1968 finding aid) not seen"
+ },
+ "1582": {
+  "unvetted": "Both items (Hull U DDHO/3/19 and 3/30) are one-item 'Notes of mistakes in Reichenbach's cypher / in a cypher' (Hull catalogue pages read in Chrome 2 Nov 2026; no description, no images), so they are probably corrections lists, not ciphertext; verdict cannot be set without seeing them. Better targets in the same series: U DDHO/3/3 (copies of Grumkow-Reichenbach correspondence, Feb-May 1730, 48 items) and U DDHO/3/6 (King of Prussia-Reichenbach letters, 14 Mar-13 May 1730), which may be ciphered or carry the key; check those first. Web searches for Reichenbach cipher/Hotham found no decipherment. Needs a Hull scan or reading-room visit."
+ },
+ "1583": {
+  "unvetted": "cipher vs shorthand / the checked notebook is plain English; the actual cipher item (AL340, Rogers 1968 finding aid) not seen"
+ },
+ "1584": {
+  "unvetted": "SOAS library catalogue record pages (library.soas.ac.uk/Record/PP_MS_1.EPRE.1.56.284 and .56.64) showed a browser error page in Chrome on 2 Nov 2026, so only search-engine snippets of the item descriptions were seen, and no images exist online. Snippets show most telegrams are catalogued with gist ('Telegram in code. Congratulation to Stanley & Emin', 'Cipher telegram regarding Tippoo Tib' with code, translation and cost), one 'to Inheritor ... No translation', and 'P.L. McDermott to H.M. Stanley p.177 Enclosing private telegraph code'. That points to a commercial/private telegraph code with translations and a key-bearing enclosure, not a lead. Searches found no study or DECODE record. Retry the SOAS pages (or Archives Hub PP MS 1 records) to confirm which items lack a translation; the private telegraph code enclosure is the key to find."
+ }
+}
