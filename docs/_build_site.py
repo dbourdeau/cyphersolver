@@ -438,6 +438,11 @@ PAGES = [
          blurb='Two ciphered despatches of 1632 from the Francia 346 dossier (DECODE R75, R84) that George Lasry, who reconstructed the dossier&rsquo;s key in 2020, had not deciphered. His variable-length key was applied, with a language model choosing among divisions of the unseparated digit stream; the result agrees with R75&rsquo;s partial 1632 interlinear decipherment on 77.5% of letters. Six nomenclator values were added; 117 elements stay open.',
          quote='&ldquo;&hellip;conseguenze che tengano disunita per un lungo pezzo la Francia, e sotto giogo alle esterne violenze, o almeno impotente a soccorrer li suoi alleati.&rdquo;',
          rights='Manuscript rights: Archivio Apostolico Vaticano, via DECODE'),
+    dict(slug='genes1638', label='Siruela to Philip IV 1638', year='1638', y=1638.38, place='Genoa &rarr; Madrid', st='solved', stt='key from external plaintext',
+         title='Siruela to Philip IV, 19 May 1638',
+         blurb='A cipher letter of the Spanish ambassador at Genoa about a marquis who was stalling on money for munitions. Brice Dudout rebuilt the numerical cipher on neighbouring letters that survive with a contemporary clear copy, tested it on a held-out pair (0.896 of characters), and read this letter, which has no clear copy.',
+         quote='&ldquo;que el marqu&eacute;s de Legan&eacute;s &hellip;&rdquo; (code 250, read here as Pallavicino)',
+         rights='Letter: Archivo General de Simancas, Estado leg. 3594 no. 156, via PARES; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='genes1643', label='Eraso to Philip IV 1643', year='1643', y=1643.05, place='Genoa &rarr; Madrid', st='solved', stt='read',
          title='Juan de Eraso to Philip IV, Genoa, 18 January 1643',
          blurb='A short cipher letter of Spain&rsquo;s ambassador at Genoa (AGS Estado leg. 3598 no. 44) whose plain original is not online. Brice Dudout learned the 1643 table on other letters of the bundle and tested it on a held-out pair (0.881 of characters, 0.834 of words; a first test fell below the criterion and is reported), then read 135 of 137 words. The Grand Duke of Tuscany answers the request for troops by referring it to his resident in Madrid, which Eraso calls a way of gaining time. Contributed by Brice Dudout.',
@@ -1349,6 +1354,11 @@ PAGES = [
          blurb='Charles XII&rsquo;s letter from Bender to the Swedish Council of the Realm, with a second copy for his envoys in London and The Hague, in a Swedish nomenclator of about 1,100 numbers in alphabetical order (NLA Stade Rep. 5a Nr. 670). Brice Dudout rebuilt the key from a ciphered troop list and its clear draft in the same file, tested it on letters not used to build it, and deciphered both copies: 639 of 640 groups. After the Danish defeat at Helsingborg the King offers Denmark peace under the mediation of the Maritime Powers and gives the Council a free hand to agree an armistice, even for a whole year. Contributed by Brice Dudout.',
          quote='&ldquo;s&aring; &auml;re wi ben&auml;gne att inga med Konungen i B.B. en billig fred under Sj&ouml;makternas mediation&rdquo;',
          rights='Manuscript images: Nieders&auml;chsisches Landesarchiv, Abt. Stade (Public Domain Mark), via Archivportal-D'),
+    dict(slug='partyet1721', label='Partyet at Cadiz 1721', year='1721', y=1721.27, place='Cadiz &rarr; Paris', st='solved', stt='known key applied',
+         title='Partyet to the Conseil de Marine, 7 April 1721',
+         blurb='Six enciphered lines in the French consul at Cadiz&rsquo;s report on a quarrel among Spanish naval officers, marked not transcribed in the Archives nationales inventory. Brice Dudout read them with the consulate&rsquo;s numerical table, rebuilt from the interlinear decipherments of neighbouring letters.',
+         quote='&ldquo;On dit que ce dernier n&rsquo;agit pas comme il le devroit pour le bien du service&hellip;&rdquo;',
+         rights='Letter: Archives nationales, AE/B/I/226 fols. 92v&ndash;93; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='palm1727', label='Palm 1727', year='1727', y=1727.2, place='London &rarr; Starhemberg', st='stuck', stt='key not found',
          title='Palm to Starhemberg and Visconti, 1727',
          blurb='A German letter of the Emperor&rsquo;s resident in London with fourteen passages in a homophonic cipher with a small nomenclator, a few groups glossed at the time. The key filed beside it belongs to Windischgr&auml;tz and contradicts the glosses. A ciphertext-only solver failed on 162 letter tokens, and a matched control shows the text is too short; not deciphered.',
@@ -1380,6 +1390,16 @@ PAGES = [
          blurb='SP 106/7 f. 33 (DECODE R597), catalogued as a partly decrypted letter, is an English instruction sheet for a syllabic code in two keys, used with Baron Stosch, the British spy at Rome and Florence. The syllable is written over every group of its worked example, and the whole sheet is transcribed.',
          quote='&ldquo;Les Adherens du Pretendant se donnent beaucoup de mouvement &agrave; Rome&rdquo;',
          rights='The National Archives, Kew, via DECODE R597'),
+    dict(slug='bouille1778', label='Bouill&eacute; to the Navy 1778', year='1778', y=1778.7, place='Martinique &rarr; Versailles', st='solved', stt='known key applied',
+         title='Bouill&eacute; to the minister of the Navy, 1778',
+         blurb='Two cipher letters and two troop returns after the capture of Dominica, marked not decrypted in the ANOM inventory. Brice Dudout read them with a key rebuilt from the pencil glosses on the same governor&rsquo;s 1779 letters (0.894 of words on a held-out letter); 455 of 458 words are read.',
+         quote='&ldquo;l&rsquo; et at de la situation des troupes&rdquo;',
+         rights='Letters: Archives nationales d&rsquo;outre-mer, COL C8 A 77; reading by Brice Dudout, Europe chiffr&eacute;e'),
+    dict(slug='damas1787', label='Damas to the Navy 1787', year='1787', y=1787.84, place='Martinique &rarr; Versailles', st='solved', stt='known key applied',
+         title='Damas to the minister of the Navy, 1787',
+         blurb='A governor&rsquo;s plan for war with Britain during the Dutch crisis, enciphered in Bouill&eacute;&rsquo;s cipher of 1778, which the margin names. Brice Dudout read it with that key unchanged: 298 of 302 words.',
+         quote='&ldquo;si la [guerre] avec l&rsquo;[Angleterre] avoit lieu&hellip;&rdquo;',
+         rights='Letter: Archives nationales d&rsquo;outre-mer, COL C8 B 16 no. 61; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='vanreede1793', label='Van Reede 1793', year='1793', y=1793.23, place='Berlin &rarr; The Hague', st='stuck', stt='not solved',
          title='Van Reede to the Secret Committee, 24 March 1793',
          blurb='The Dutch envoy in Berlin to the Secret Committee of the States General (Nationaal Archief 1.01.02 inv. 6695, DECODE R1893), in a code of three-digit groups with marks over single digits: 696 groups in 513 distinct forms. Not the Grand Chiffre of his earlier despatches; the 1793 keys on DECODE do not fit, there is no crib, and the text is too short to rebuild a code this large. WAINUT rebuilt the code from 44 cipher/clear pairs of his other despatches (PR #66) and decoded the letter in part, recorded as a proposal.',
@@ -4053,6 +4073,10 @@ IMAGES['waddall1656'] = ('waddall1656_tsp5_p337.jpg','The cipher words in Waddal
 IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the telegram: UNIEK &ndash; CXNKVNED, JJTRRK, ISLX &ndash; KFYHJEER', 'National Archives, RG 109, naId 3854726, image 1, via the National Archives Catalog')
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
+IMAGES['damas1787'] = None
+IMAGES['bouille1778'] = None
+IMAGES['partyet1721'] = None
+IMAGES['genes1638'] = None
 IMAGES['feynman'] = None
 IMAGES['greenhow1861'] = ('greenhow1861_lead.jpg', 'Side 1, lines 4&ndash;10: &hellip;ck is hourly expec[r]ted. they beleive this: the atta[ck] will [b]e simultaneou[s] &hellip;', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 1634036, image 1, via the National Archives Catalog')
 IMAGES['jordan1861'] = ('jordan1861_lead.jpg', 'The left block of the burnt fragment, inverted: HAR with &ldquo;h a r&rdquo; under it, SCOTT, HANS FIELD FORTIFICATION', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 6925618, image 1, via the National Archives Catalog; inverted and contrast-stretched here')

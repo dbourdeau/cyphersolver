@@ -2391,7 +2391,10 @@
 {"id": "k-ferdinand1473", "label": "Ferdinand to John II, Hostalric 1473 (BNE MSS/20211/64): homophonic letter key", "kind": "rebuilt here", "by": "Michael Brackx", "year": 1473, "note": "About 30 values from the second hand's interlinear words and letters, extended by sense; targets/ferdinand1473/key_1473.md."},
 {"id": "k-ferdinand1474", "label": "Ferdinand to John II, Zaragoza 1474 (BNE MSS/20211/73): homophonic letter key", "kind": "rebuilt here", "by": "Michael Brackx", "year": 1474, "note": "Read from the interlinear letters, then aligned on the clear paragraph at the foot of the page; targets/ferdinand1473/key_1474.md."},
 {"id": "k-unicode-1896", "label": "'Unicode' Universal Telegraphic Phrase-Book (1896 edition; 1889 edition checked in its text layer only)", "kind": "contemporary key", "by": "", "year": 1896, "note": "Commercial code book: one Latin cypher word for each printed phrase, in alphabetical order. Public on archive.org (UnicodeUniversalTelegraphicPhraseBook, unicodeuniversa00unkngoog)."},
-{"id": "k-auckland1918-february", "label": "Auckland 1918 Vigen\u00e8re key FEBRUARY (rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1918, "note": "Ordinary-alphabet Vigen\u00e8re with the month's name as key, found from repeats in the Washington reply (period 8) and confirmed on the outgoing cable of 18 February."}
+{"id": "k-auckland1918-february", "label": "Auckland 1918 Vigen\u00e8re key FEBRUARY (rebuilt here)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1918, "note": "Ordinary-alphabet Vigen\u00e8re with the month's name as key, found from repeats in the Washington reply (period 8) and confirmed on the outgoing cable of 18 February."},
+{"id": "k-bouille1778-k6", "label": "Bouillé's cipher of 1778-1782, key K6 (rebuilt from the 1779 pencil glosses)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1778, "note": "Numerical syllabic nomenclator of about 850 numbers; 490 values rebuilt from the interlinear pencil glosses of Bouillé's 1779-80 letters (ANOM COL C8 A 78-79), frozen before validation. Held-out letter no. 415: 0.894 of words, 0.897 of characters, against at most 0.182 and 0.174 for 200 permuted keys."},
+{"id": "k-partyet1721", "label": "Cadiz consulate cipher 1719-1722, numerical table 1-465 (rebuilt from the interlinear glosses)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1721, "note": "Alphabetical numerical table, syllables then words for each initial, rebuilt from the contemporary interlinear decipherments of five neighbouring Partyet letters (AE/B/I/226) and frozen before validation on held-out glossed letters of January-February 1721."},
+{"id": "k-genes1638-k3f", "label": "Spanish embassy at Genoa, numerical cipher of 1638 (key K3f)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1638, "note": "Vowels 16-20, syllabic series of five numbers, disguised syllables and code signs; rebuilt on the pairs 3594,146/145, 143/142 and 169/168 of the same bundle and frozen before the held-out test on 3594,160/159 (0.896 of characters, 0.784 of words)."}
  ],
  "links": [
 {"key": "k-vierra-feynman", "target": "feynman", "how": "read unchanged", "note": "re-enciphering both plaintexts: 228 of 231 positions of no. 3, first 118 characters of no. 2"},
@@ -3806,7 +3809,11 @@
 {"key": "k-ferdinand1473", "target": "ferdinand1473", "how": "rebuilt from", "note": "199 of 201 signs of the 1473 passage; two open, 13 values chosen by sense"},
 {"key": "k-ferdinand1474", "target": "ferdinand1473", "how": "rebuilt from", "note": "all 310 signs of the 1474 passage aligned on its clear paragraph; three doubtful words"},
 {"key": "k-unicode-1896", "target": "bell1900", "how": "read unchanged", "note": "all six code words found on the 1896 pages 5, 35, 78, 88, 95, 96, each beside the phrase it carries"},
-{"key": "k-auckland1918-february", "target": "auckland1918", "how": "rebuilt from", "note": "period 8 from repeats TKUTZMS/IFOSRLI/EERMS, key from column frequencies, held-out check on the outgoing cable (94/94 letters)"}
+{"key": "k-auckland1918-february", "target": "auckland1918", "how": "rebuilt from", "note": "period 8 from repeats TKUTZMS/IFOSRLI/EERMS, key from column frequencies, held-out check on the outgoing cable (94/94 letters)"},
+{"key": "k-bouille1778-k6", "target": "bouille1778", "how": "rebuilt from", "note": "key rebuilt from the pencil glosses of five 1779 letters and frozen; applied to the two unglossed 1778 letters and their returns"},
+{"key": "k-bouille1778-k6", "target": "damas1787", "how": "read unchanged", "note": "the margin says 'Chiffre du 25 avril 1778'; K6 covers 92% of the groups and reads the 1787 letter unchanged"},
+{"key": "k-partyet1721", "target": "partyet1721", "how": "rebuilt from", "note": "table rebuilt from the interlinear decipherments of neighbouring letters, frozen, then applied to the unglossed passage"},
+{"key": "k-genes1638-k3f", "target": "genes1638", "how": "rebuilt from", "note": "key rebuilt from the contemporary plain copies in the same bundle, frozen, then applied to 3594,156 which has no plain copy"}
  ],
  "sources": [
   {
@@ -4431,7 +4438,10 @@
 {"source": "s-cyphersolver", "key": "k-poinsett1814"},
 {"source": "s-cyphersolver", "key": "k-ferdinand1473"},
 {"source": "s-cyphersolver", "key": "k-ferdinand1474"},
-{"source": "s-cyphersolver", "key": "k-auckland1918-february"}
+{"source": "s-cyphersolver", "key": "k-auckland1918-february"},
+{"source": "s-cyphersolver", "key": "k-bouille1778-k6"},
+{"source": "s-cyphersolver", "key": "k-partyet1721"},
+{"source": "s-cyphersolver", "key": "k-genes1638-k3f"}
  ],
  "unlinked": {
   "milroy": "Stager Cipher No. 7 route grid published by Richard Bean (cryptiana, 2026); two runs checked here, no key file rebuilt or reused",

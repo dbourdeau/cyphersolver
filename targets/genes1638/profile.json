@@ -161,7 +161,7 @@
    "result": "worked"
   }
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-02", "verdict": "not applicable", "notes": "The key was validated in the target's own pre-registered held-out test (3594,160 against its clear copy 3594,159: 0.896 of characters, 0.784 of words; 200 permuted-value controls at the 99th percentile 0.343 and 0.204); the n-gram validator was not rerun."}, 
   "class": "read",
   "key": "recovered",
   "method": "key recovered based on plaintext from external sources",
@@ -209,6 +209,15 @@
      "date": "2026-10-31",
      "note": "Read as sentences 31 Oct 2026: coherent Spanish dispatch (Palavesín delaying the royal order on munitions money); one unresolved group (197, a name) and a few {probable} words, scattered."
     }
+   },
+   {
+    "doc": "ags-3594-160",
+    "label": "Validation letter AGS EST,LEG,3594,160 (contemporary clear copy 3594,159)",
+    "transcription": "validation/160_cipher.txt",
+    "decryption": "validation/159_plain.txt",
+    "language": "es",
+    "state": "not prose",
+    "summary": "A held-out cipher letter of the same ambassador, 19 May 1638, kept apart while the key was built and then read with the frozen key against its contemporary clear copy 3594,159; used only to test the key, not a reading of ours."
    }
   ],
   "key_file": "key_K3f.tsv",
