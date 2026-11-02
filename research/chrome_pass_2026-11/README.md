@@ -9,25 +9,33 @@ built by `make_candidates.py`; all rows are leads, not catalogue entries. Most a
 | Portal | Earlier | This pass | Result |
 |---|---|---|---|
 | szukajwarchiwach.gov.pl | Imperva check, not one search (`polish_archives`) | Opens. 67 terms (Polish, French, German, Latin, Italian, Russian), 1,883 records to 1950, 843 with a cipher word in title or note | 19 rows |
-| BNE Digital (bnedigital.bne.es) | WAF, Cloudflare (`bne_hispana`) | Opens. 51 terms on `f=ficha`, 851+ records, about 80 manuscripts | 8 rows. **Partial, see below** |
+| BNE Digital (bnedigital.bne.es) | WAF, Cloudflare (`bne_hispana`) | Opens. 51 terms on `f=ficha`, 851+ records, about 80 manuscripts | 10 rows. **Partial: BNE then blocked access** |
 | RAH Biblioteca Digital | Anubis check | Opens. 30 terms | 0 new: only Morillo and Isabel II records, already leads |
 | Internet Culturale | TLS failure, CAPTCHA | Opens. 56 terms, manuscripts filter, 179 records | 0 new rows: Dudout's sweep already holds the real ones |
 | DigiVatLib, opac.vatlib.it | 403 | `ERR_CONNECTION_RESET` in Chrome; TLS error 35 in curl | **Not swept.** Network-level from this machine; try another network |
 | Archives Hub | Cloudflare | Check cleared in one tab, not by Claude. That tab then stopped answering the tools, and a fresh tab was challenged again | **Not swept.** Stopped after three tries |
 
-## Best leads
+## Vetting result (2 Nov 2026)
 
-1. **Pedro Vara → Ferdinand, Dueñas, 7 Oct 1470 (BNE MSS/20215/36).** Image seen: mixed clear and cipher with interlinear
-   glosses. Not on DECODE or in the repo. Weeks from `targets/ferdinand1473` d56.
-2. **Ferdinand → John II, 1476-79 (BNE MSS/20211).** At least ten more letters match "cifrada". This answers Next steps 2
-   in `targets/ferdinand1473/NOTES.md`. Not viewed.
-3. **Branicki → Potocki, 1757 (AGAD 1/338/0/1/446).** Image seen: clear French opening, then about ten lines of neat letter
-   cipher. Catalogued "nierozwiązany".
-4. **Betański letters (AGAD 1/338/0/1/128-143).** Interlinear solutions on some, none on others: the best key route here.
-5. **Leopold I → Charles II, Prague, 14 Apr 1680 (BNE RES/261/58).** Autograph "carta cifrada". Not viewed.
-6. **Besieged Smolensk → Krzysztof Radziwiłł, 1 June 1633 (AGAD 1/354/0/2.1/1116).** Scans online; cipher not seen yet.
+Each row was checked against the vetting bar: `prior_a.json`, `prior_b.json` and `prior_c.json` hold the prior-art searches
+per lead, and `vet_apply.py` applied the results. Of 29 rows:
 
-Also **AGAD 1/338/0/1/1398-1401**: image of 1398 seen, a full page of dense cipher.
+- **Promoted to the catalogue (2):** 1578 Branicki → Potocki, May 1757 (AGAD 1/338/0/1/446), about 50 lines of letter cipher, seen;
+  1587 Chrzanowski, Constantinople, 9 Sept 1788 (archive-only, from the archive's wording; key ZbPop 450 cannot be tried until
+  the letter is ordered).
+- **Closed as read (2):** 1603 Ferrante Gonzaga 1548 (decipherment on a separate sheet; R1188); 1604 Saint-Mauris 1548 (R1185).
+- **Corrected:** 1598 narrowed to Ferdinand → John II, 4 Nov 1478 (R1172): the other nine letters of the group are deciphered on
+  DECODE. My first row was wrong to present them as open. 1582 redated from 1768 to 1708: the catalogue's date is wrong.
+- **Held as leads (25),** each with its reason in `vetting_note`. Most useful next tests: 1581 Dahku 1715 (graphic signs, compare
+  DECODE R7460 and R7461); 1579 and 1583 (try key 1/338/0/1/1196); 1601 and 1602 (only need the leaf viewed); 1588 Smolensk (read
+  Nagielski 2000 first).
+
+Limits: the Polish viewer serves 800-pixel images. A 3,500-pixel `_max` file answers at a guessed URL, but the site's own viewer
+did not use it and the site offers "order a larger format", so it was not used. Key 1196 could not be fully read at 800 pixels.
+Tomokiyo 2018 (Academia, 403) was not read. Konopczyński on Branicki was not opened, so a quotation of 1578 there is not excluded.
+
+For the record outside these rows: DECODE lists R1183 (/64) and R1177 (/73) as deciphered, but `targets/ferdinand1473` NOTES does not
+mention them or cite Tomokiyo 2018, so its contamination record needs review. Catalogue 1268 says "Not on DECODE" but appears to be R1189.
 
 ## Catalogue corrections to make (not done here)
 
@@ -59,10 +67,10 @@ V/63, V/64, V/123.
 
 ## Not finished
 
-- **BNE:** "cifrado" (123 hits) and "descifrada" were never read. "cifra" stopped at offset 500 of 790, "cifras" at 100 of
-  177. Most shelfmarks in the Ferdinand series and the MSS/2408-15 (Villahermosa), MSS/8695 (Fuentes), MSS/20212/37 (Juan José),
-  MSS/20210/36 (Colonna) matches were not checked for cipher. BNE began serving "Verificación de Seguridad" after about 25
-  card fetches, so I stopped. Resume gently, by hand-paced navigation.
+- **BNE blocked access on 2 Nov 2026** ("Página de bloqueo", Cloudflare 1000-series page), after 429s and 403s. Stopped there, and do not
+  retry from another network: ask BNE, or resume with its permission. Read by then: every term except "xifrada", and the rest of
+  "cifra" (from 500 of 790), "cifras" (from 125 of 177) and "nomenclator" (from 50 of 88). The re-check of zero-hit terms found them
+  real, except "xifrada", still unconfirmed. Unviewed BNE rows cannot pass the gate until then.
 - **Polish portal:** only pre-1900 rows were read: 564 keyword records from 1900-1950 and 115 Radom records (58/387) were
   not triaged, and the harvest sits in that Chrome profile's localStorage (`szh`), not on disk. Rows with no scan flag need AGAD.
   "Szyfrowe" lost a re-search after a tab freeze, but its counts and pages were taken on the first run. Letter-level prior art is

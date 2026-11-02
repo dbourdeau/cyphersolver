@@ -125,6 +125,16 @@ R = [
         "On DECODE as R1185 (Cryptoole status open). Returned by BNE's search for 'cifrada'. Not viewed. DECODE record not opened.", 'Tomokiyo records a Granvelle-Saint Mauris cipher of 1547-48 (PP1), which should fit.', 3, 4, 1,
         [{'label': 'BNE card', 'href': BN + 'dfaf8047-c3c5-400a-851e-02c291cc9a92'}], access='BNE Digital viewer, free; CC BY 4.0', prior='not fully open: key family known to Tomokiyo; read status of this letter not checked (2 Nov 2026)', portal='BNE Digital', decode_ids=[1185],
         verify='Open R1185; apply the Granvelle-Saint Mauris key.'),
+    row(1684, '1670s-1690s', 'Antonio de Mendoza Caamaño y Sotomayor, marquis of Villagarcía: diplomatic correspondence, volumes matched as cipher by BNE', 'Antonio de Mendoza Caamaño, II marquis of Villagarcía ↔ various', 'Genoa, Venice', 'Spanish', 'Spain', '1651-1700',
+        'BNE, Correspondencia diplomática de Antonio de Mendoza Caamaño y Sotomayor, tomos 3, 4, 8, 9, 11, 13, 14, 17, 18 (shelfmarks not read)', 'nine volumes; extent of cipher unknown', 'C',
+        "All nine returned by BNE's field search for 'cifrado'; the matching field was not seen. The volume notes on Europeana contain no cipher word, so the cipher is unconfirmed. Per BNE and the DBE this is the II marquis (1638-1714), at Genoa from 1672 and Venice 1677-91. Not viewed: BNE blocked access on 2 Nov 2026.",
+        'Spanish embassy files at Venice during the War of the Holy League, if they do hold cipher.', 3, 2, 3,
+        [{'label': f'tomo {t}', 'href': BN + i} for t, i in [(3, 'bafe8c96-2090-4c14-a48d-e265723b5f32'), (4, '49480a9a-9249-4eca-811e-9fe2d2657e01'), (8, 'e2aecac4-24ea-4525-a17e-f56db008bacd'), (9, '0a5fd854-799e-428b-bab0-99e9306913e7'), (11, '3b205f2d-243c-494a-a773-e66c5ac7a531'), (13, '8e3d9ad8-7a2f-41de-9c2b-b6c711e842a0'), (14, '8d019cc7-d63c-4892-a91d-ec34e16e773b'), (17, '48145573-3de8-4e82-a386-7e04a21ce27c'), (18, '15628d19-22c9-43e6-b119-12b2a2e70ab3')]],
+        access='BNE Digital viewer, free; BNE blocked this session', prior=ESP, portal='BNE Digital', verify='Open each card to see why it matched; sample the volumes for cipher.'),
+    row(1681, '12 Jan 1681', 'Diego Crolope → uncertain recipient: letter matched as cipher by BNE', 'Diego Crolope (name doubtful) → unknown', 'unknown', 'Spanish', 'Spain', '1651-1700', 'BNE, bdh0000173166 (shelfmark not read)', 'not seen', 'C',
+        "Returned by BNE's field search on a cipher term; the matching field was not seen. Its Europeana record does not mention cipher (notes: 'Nombre de remitente dudoso', 'Manchas de humedad'). Weak. Not viewed: BNE blocked access on 2 Nov 2026.",
+        'Unknown until seen.', 1, 2, 3, [{'label': 'BNE card', 'href': BN + '8b0f5fc5-5240-4104-8392-76cf341135c4'}],
+        access='BNE Digital viewer, free; BNE blocked this session', prior=ESP, portal='BNE Digital', verify='Open the card and the leaf; drop this row if there is no cipher.'),
 ]
 for r in R:
     r.pop('cls_note', None)
