@@ -9542,8 +9542,8 @@
     "date": "2026-10-30",
     "by": "claude frame check 11"
    },
-   "access": "archive",
    "scan_status": "szukajwarchiwach.gov.pl record 1/2/0/-/3001 carries 'brak skanow/zdjec' (no scans), checked 2 Nov 2026",
+   "access": "archive",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L13",
@@ -11133,7 +11133,6 @@
    "outcome": "attempted, open: blocked, not digitised (Rigsarkivet, TKUA, Danske Kongers Historie fasc. 358; scans to order from Rigsarkivet) (28 Oct 2026, targets/lagau1712/)",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: One unit; not scanned. Daisy series: \"Opsnappede chifferbreve\" (intercepted ciphe...)",
-   "date_note": "1712 dating doubtful: McCord says Lagau became La Marck's secretary in Stockholm in 1717 and returned in 1720, so 1719-20 is likely",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L13",
@@ -11153,7 +11152,8 @@
     "key_check": "No French Stockholm legation key of 1712 or 1717-20 is held in the repo or on DECODE; targets/lagau1712 lists the French foreign-ministry keys as the place to look once the system is known.",
     "duplicates": "known.py 'Lagau' returns catalogue 464 and targets/lagau1712 only; Rigsarkivet series search for 'Lagau' gave this one series and no sibling unit.",
     "verdict": "open"
-   }
+   },
+   "date_note": "1712 dating doubtful: McCord says Lagau became La Marck's secretary in Stockholm in 1717 and returned in 1720, so 1719-20 is likely"
   },
   {
    "id": 465,
@@ -11463,8 +11463,8 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...53; DECODE has a different Brasset record R9429, Oct 1648). Order or view images of MS. e Mus. 203 pp. 218-226 (Digital Bodleian has no imag...)",
-   "split": "no. 52 is a read letter; offer nos. 50, 51, 53 separately if images are obtained",
    "note": "cryptiana lists BL Add MS 4200 Bordeaux 1653 as undeciphered; possibly the same letter as no. 50",
+   "split": "no. 52 is a read letter; offer nos. 50, 51, 53 separately if images are obtained",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L13",
@@ -15184,62 +15184,6 @@
    }
   },
   {
-   "id": 541,
-   "counted": true,
-   "year": 1721,
-   "date": "1721",
-   "title": "Partyet, French consul at Cadiz → Conseil de Marine: '[suite en chiffre, non transcrite]'",
-   "correspondents": "Pierre-Nicolas Partyet → Conseil de Marine",
-   "place": "Cadiz",
-   "language": "French",
-   "region": "France",
-   "period": "1701-1800",
-   "shelfmark": "Archives nationales, AE/B/I/211-240 (Correspondance des consuls de France à Cadix), fol. 92-93v",
-   "folio_note": "1 letter",
-   "cls": "A",
-   "status": "AN inventory: '[suite en chiffre, non transcrite]'; other Cadiz 'lettres chiffrées' of 1719-82 are summarised. The 24 Oct Archives nationales sweep closed the consular letters whose content the inventory summarises; this inventory marks the cipher part as not transcribed.",
-   "why": "Spanish naval and financial affairs (Patiño) in 1721.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 FranceArchives / Archives nationales sweep (research/central_archives/); not viewed",
-   "verify": "Consult the volume; key from Cadiz siblings.",
-   "links": [
-    {
-     "label": "FranceArchives",
-     "href": "https://francearchives.gouv.fr/fr/facomponent/db83b483c981c3a44e01009691a9b37c749dd5ac"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "FranceArchives / Archives nationales sweep",
-   "prior_art": "open (checked 26 Oct 2026: repo known.py, web search)",
-   "ark": "",
-   "scored": "sweep",
-   "access": "archive",
-   "access_note": "FranceArchives record has no viewer and no \"numérisé\" note; check the AN/ANOM site before ordering (checked 28 Oct 2026)",
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L16",
-    "seen": {
-     "kind": "transcription",
-     "where": "targets/partyet1721/NOTES.md and key.tsv in this repo (Brice Dudout, 28 Oct 2026); AN AE/B/I/226 fols. 92v-93, SIV FRAN_IR_053989 image 097",
-     "extent": "77 cipher numbers, 35 words, 7 Apr 1721",
-     "cipher": "Numeric table 1-465 for syllables and words; inventory says '[suite en chiffre, non transcrite]'; Dudout's reading covers all 35 words (33 certain, 2 probable)"
-    },
-    "prior_art": {
-     "decode": "not on DECODE (repo harvest list)",
-     "tomokiyo": "Tomokiyo cryptiana not found to treat this item (web search 2 Nov 2026 on writer and cipher terms)",
-     "lasry": "no Lasry decipherment of this item known (repo targets and known.py searched; web search 2 Nov 2026)",
-     "edition": "first published decipherment, to our knowledge (Dudout write-up https://bdudout.github.io/europe-chiffree/en/documents.html#partyet-1721)",
-     "literature": "Dudout's documents page lists Partyet 1721 among 40 deciphered documents"
-    },
-    "key_check": "Key rebuilt from glossed neighbouring letters of the same register (31 Mar-19 May 1721) and validated on held-out letters; no disagreement on ~235 numbers.",
-    "duplicates": "known.py run on the shelfmark and correspondents (2 Nov 2026): only this entry's own rows in catalogue.json/CATALOGUE.md/candidates.json; no other catalogue id or target folder covers it. target folder partyet1721 is this same letter.",
-    "verdict": "read",
-    "closed": "Read by Brice Dudout 28 Oct 2026 (35 of 35 words, targets/partyet1721); not an open target"
-   }
-  },
-  {
    "id": 543,
    "counted": true,
    "year": 1759,
@@ -15823,8 +15767,8 @@
     "date": "2026-10-30",
     "by": "claude frame check 05"
    },
-   "access": "archive",
    "extent": "about 7 lines in figures (Aguttes lot 249)",
+   "access": "archive",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L17",
@@ -16574,8 +16518,8 @@
     "date": "2026-10-30",
     "by": "claude frame check 01"
    },
-   "access": "archive",
    "note": "GR Rep. 39 Nr. 289 is dated Jan 1557 (not 1556), Nr. 58 is Mar-Jul 1552",
+   "access": "archive",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L17",
@@ -21517,14 +21461,14 @@
    "seen": "catalogue",
    "source": "NARA bulk-scan triage C sweep",
    "prior_art": "open (checked 27 Oct 2026: repo known.py, nara_military + nara_catalog READMEs; no published reading found)",
-   "score_note": "Rescored 27 Oct 2026 from the M316 OCR (slice L); frames not yet viewed",
+   "score_note": "Rescored 27 Oct 2026 from the M316 OCR (slice L); sample frames viewed 2 Nov 2026",
    "year": 1921,
    "date": "1921",
    "title": "Soviet and German cipher radiograms of 1921 (Moscow ↔ Berlin, Stockholm, Christiania, Kharkov), intercepted at Constantinople by the US High Commission and never deciphered",
    "correspondents": "Chicherin / Narkomindel Moscow ↔ Soviet representation Berlin (Kopp, Krestinsky, 'Polpred'), Stockholm, Christiania, Reval; Nikolaev → Kharkov; Auswärtiges Amt Berlin ↔ Deutsche Vertretung Moskau (Hilger); copies sent by Admiral Mark L. Bristol, US High Commissioner, Constantinople",
    "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 861.00 (Political Affairs, Russia), microfilm M316 rolls 40-48 (RG 64 digital copies): file units naId 604700562 (861.00/8376-8492, Mar 1921), 604701877 (8493-8622, Apr), 604703234 (8623-8773, May-Jun), 604704577 (8774-8910, Jun-Jul), 604705830 (8911-9012, Jul-Sep), 604707113 (9013-9064, Sep-Oct), 604708415 (9065-9159, Oct-Nov), 604709981 (9160-9240, Nov-Dec), 604711297 (9241-9329, Dec 1921-Feb 1922); the War Department copies are RG 457, Archival and Historian's Source Files, 6707N 'Russian Coded Messages, 1921 (Provided by U.S. High Commissioner Constantinople)' (naId 23890165, not digitised)",
    "folio_note": "Typed copies of intercepted radiograms, one per frame with date, route and addresses (e.g. 'MARCH 22d 1921 FROM ... TO MOSCOW 71915 67404 33684 ...'; 'SEPTEMBER 4th 1921 FROM BERLIN TO MOSCOW SCHITSCHERIN MOSKAU FUNKSPRUCH'; 'SEPTEMBER 28th 1921 FROM MOSCOW TO BERLIN POLPRED BERLIN'), mostly 4- and 5-figure groups. Frames with cipher text by roll (OCR count): M316-040 0889-0893 (5); 041 0543-1068 (61); 042 0244-1276 (83); 043 0427-1204 (42); 044 0186-1073 (56); 045 0048-0638 (22); 046 0178-1178 (45); 047 0155-1070 (64); 048 0128-0766 (13): about 390 frames, about 62,000 groups. Covering despatches: 861.00/8575 (Bristol No. 153, 20 Apr 1921, M316-041-0871: the Russian intercept operator's notes on the traffic), 040-0888 (March 1921: hopes anti-Bolshevik Russians may help find the key; Col. Castle sending similar messages to the War Department), 043-0936 (July 1921: 'unable to report any progress regarding the deciphering of the code messages of the Bolshevik Government'); 9071, 9130, 9132, 9133 (Oct-Nov 1921, Moscow-Berlin and Moscow-Christiania). M316-041-1073 'Deciphered telegrams of Soviet authorities' (Petrograd-Reval) is a separate, small set in clear.",
-   "status": "Unblocked 27 Oct 2026 (NARA slice L, research/nara_triage_l/): the purport list (naId 87657409) led to the 861.00 file, which is filmed on M316 and digitised as RG 64 copies; all nine 1921 rolls fetched and the OCR read. The High Commission could not decipher the traffic and the Department records no decipherment; the War Department (MI-8) received parallel copies (RG 457 6707N). Some of the same Soviet traffic may have been read by GC&CS (HW 12, 1921) and the German side is Auswärtiges Amt traffic; neither has been checked. Distinct from 710 (Chicherin → Sukhanov 1918).",
+   "status": "Unblocked 27 Oct 2026 (NARA slice L, research/nara_triage_l/): the purport list (naId 87657409) led to the 861.00 file, which is filmed on M316 and digitised as RG 64 copies; all nine 1921 rolls fetched and the OCR read. The High Commission could not decipher the traffic and the Department records no decipherment; the War Department (MI-8) received parallel copies (RG 457 6707N). Some of the same Soviet traffic may have been read by GC&CS (HW 12, 1921) and the German side is Auswärtiges Amt traffic; neither has been checked. Distinct from 710 (Chicherin → Sukhanov 1918). Worked 2 Nov 2026. Letter traffic in the file is a columnar transposition with a key per telegram: two deciphered and removed from this entry's open work (targets/lejava1921/, targets/voikov1921/); others in targets/voikov1921b/, targets/stomoniakov1921/. Figure traffic, the core of this entry, still unread: no group value recovered (targets/kopp1921/, targets/karakhan1921/). HW 12 and RG 457 still unchecked.",
    "why": "A large, dated corpus of early Soviet and German diplomatic cipher radio traffic from 1921, filed as typed copies with the intercept operator's notes: the Rapallo-era Moscow-Berlin channel, unread by the Americans who collected it.",
    "importance": 3,
    "solvability": 2,
@@ -21564,6 +21508,7 @@
     "date": "2026-10-30",
     "by": "claude frame check 06"
    },
+   "outcome": "attempted, open",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L04",
@@ -27270,7 +27215,7 @@
    "shelfmark": "AGS, EST,LEG,3594-3637: EST,LEG,3594,143; EST,LEG,3594,146; EST,LEG,3594,147; EST,LEG,3594,149; EST,LEG,3594,151; EST,LEG,3594,156; EST,LEG,3594,158; EST,LEG,3594,160; EST,LEG,3594,165; EST,LEG,3594,169; EST,LEG,3598,15; EST,LEG,3598,41; EST,LEG,3598,44; EST,LEG,3600,43; EST,LEG,3600,166; EST,LEG,3600,182; EST,LEG,3600,199; EST,LEG,3602,56; EST,LEG,3637,33; EST,LEG,3637,39",
    "folio_note": "20 items; images online",
    "cls": "C",
-   "status": "PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"/\"en cifra\"). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Not in the repo (known.py: no hits for the legajos; the Velada hits are catalogue 372, a 1640 England letter, another key).",
+   "status": "EST,LEG,3594,156 (Velasco y la Cueva to Philip IV, 19 May 1638) has no contemporary plain copy and was read by Brice Dudout (key rebuilt on the plain-copy pairs of the same bundle; see targets/genes1638/); the 1638 letters with a plain copy (143/142, 146/145, 147/144, 158/157, 160/159, 169/168) were already deciphered at the time. Eraso's 1643 letter 3598,44 is targets/genes1643/. The remaining letters (3598, 3600, 3602, 3637, 1643-1651) are in other ciphers and were not attempted. PARES hits (27 Oct 2026, \"carta cifrada\"/\"cifrada\"/\"en cifra\") are pointers only.",
    "why": "Philip IV-period Italian cipher letters (Catalan and Neapolitan revolts, 1640s); the Osuna Rome letters of the same years with deciphered copies are cribs for the keys of the period.",
    "importance": 2,
    "solvability": 3,
@@ -27375,6 +27320,7 @@
     "date": "2026-11-02",
     "by": "claude frame check p02"
    },
+   "outcome": "attempted, open",
    "vetting": {
     "date": "2026-11-02",
     "by": "claude vetting batch L06",
@@ -27457,78 +27403,6 @@
     "duplicates": "known.py M1486, Olarovsky, Russian Consul (2 Nov 2026): only this entry and its CATALOGUE.md row; no duplicate.",
     "verdict": "partly_read",
     "closed": "Consulate decipherment worksheets are filmed with part of the run (and the 1900s circulars were deciphered at the time); the remainder (1891-1897 bigram circulars) has no filmed worksheet or key, so only that residue is open."
-   }
-  },
-  {
-   "id": 757,
-   "counted": true,
-   "year": 1918,
-   "date": "18 Feb - 1 Mar 1918",
-   "title": "US Consul-General Auckland ↔ Naval Commander San Francisco / Washington, cipher cables on unknown wireless signals heard in New Zealand; the reply could not be read by its recipient",
-   "correspondents": "Alfred A. Winslow, American Consul-General, Auckland → Naval Commander, San Francisco (18 Feb 1918); unidentified US Government office, Washington D.C. (probably the Navy Department) → American Consul-General, Auckland (received 1 Mar 1918)",
-   "place": "Auckland ↔ San Francisco / Washington",
-   "language": "English (plaintext unknown)",
-   "region": "Other",
-   "period": "1901-1950",
-   "shelfmark": "NARA, RG 59, Central Decimal File 1910-29, 763.72 (European War), microfilm M367 roll 83, file unit '763.72/9366-9450: Feb.-Apr. 1918' (naId 27107744); Auckland despatches No. 370 (26 Feb 1918) and No. 375 (4 Mar 1918) with enclosures",
-   "folio_note": "M367 roll 83 f.0110 (No. 370, 'Mysterious Wireless Calls in South Pacific', 26 Feb 1918); f.0111 (enclosure: Staff Paymaster W. J. Brown for the Naval Adviser to the NZ Government, HMS Philomel, Wellington, 14 Feb 1918, asking whether an unknown automatic W/T transmission heard on 2000 m on 11/12 Feb was US Californian-Honolulu traffic); f.0112 (No. 375, 4 Mar 1918, 'Coded Cablegram with reference to Wireless Stations'); f.0113 (copy of the cable sent 18 Feb 1918 to the Naval Commander, San Francisco: c. 20 five-letter groups, 98 letters, 'FVFRO TFKFX JTQII ...'); f.0114 (copy of the reply received 1 Mar 1918 from Washington 'usgovt', 37 counted words: ten-letter groups 'Ssblnodyym dncrvjjwij nakgtrtlme ...', c. 360 letters).",
-   "cls": "B",
-   "status": "Found in the slice L caps/word rerun of RG 59 (the early groups' missing detectors). Whole reel OCR read (fetched 27 Oct 2026). Winslow writes on 4 Mar that the reply is one 'which I am at a loss to know from whence it came, further than it was sent from Washington, D.C., I rather suppose from the Navy Department', and asks that it be passed to them: the recipient could not decipher it, and no clear text or decode is filed on the reel. The outgoing cable's content is known in substance from the Philomel letter (a crib: wireless, 2000 metres, Honolulu, automatic working). known.py: no hits for 763.72/9366, 27107744, Winslow; not in catalogue.json or earlier nara_* triage.",
-   "why": "A US Government cipher cable of 1918 that its own addressee could not read, filed with its context: a small test of US Navy/State cipher systems of the First World War, with a near-crib for the outgoing message.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 4,
-   "score_note": "Scored from the reel OCR during the Oct 2026 NARA caps/word rerun of the early groups (research/nara_triage_l/); frames not yet viewed",
-   "verify": "View M367 roll 83 f.0113-0114 and transcribe both cables; identify the systems (the consul's outgoing cable may be in a State Department code or cipher of 1918; the reply's ten-letter groups suggest paired five-letter code groups, perhaps a Navy code with a superencipherment); look for the Navy Department's answer in RG 45 / RG 38 and later 763.72 numbers and in the Auckland consular post files (RG 84).",
-   "links": [
-    {
-     "label": "NARA file unit 27107744 (M367 roll 83, 763.72/9366-9450)",
-     "href": "https://catalog.archives.gov/id/27107744"
-    },
-    {
-     "label": "Cable sent 18 Feb 1918 (f.0113)",
-     "href": "https://catalog.archives.gov/medialive/44/1077/27107744/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll83/M367_Roll83-0113.jpg"
-    },
-    {
-     "label": "Reply received 1 Mar 1918 (f.0114)",
-     "href": "https://catalog.archives.gov/medialive/44/1077/27107744/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll83/M367_Roll83-0114.jpg"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "NARA caps/word rerun triage L",
-   "prior_art": "open (checked 27 Oct 2026: known.py, catalogue.json, nara_* sweep folders)",
-   "ark": "",
-   "scored": "sweep",
-   "frame_check": {
-    "result": "confirmed",
-    "href": "https://catalog.archives.gov/medialive/44/1077/27107744/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll83/M367_Roll83-0113.jpg",
-    "frame": "M367 roll 83 frames 0113-0114",
-    "saw": "0113: 'Sent February 18 1918', to 'Naval Commander San Francisco', 17 five-letter groups in 3 lines (FVFRO TFKFX JTQII ...), signed American Consul General. 0114: '(COPY) Received March 1, 1918', Washington DC via Pacific, 'usgovt', 37 words: 31 ten-letter lowercase groups in 8 lines (Ssblnodyym dncrvjjwij ...) plus a final 'yrjmp 17527'. No decipherment.",
-    "note": "Outgoing cable is 17 groups (c. 85 letters), not the c. 20 groups / 98 letters in the entry.",
-    "date": "2026-10-30",
-    "by": "claude frame check 06"
-   },
-   "status_append": "2 Nov 2026 vetting: the cables are Vigenere with key FEBRUARY and are already read (targets/auckland1918); the claim that the addressee could not read the reply is not supported.",
-   "vetting": {
-    "date": "2026-11-02",
-    "by": "claude vetting batch L06",
-    "seen": {
-     "kind": "scan",
-     "where": "https://catalog.archives.gov/medialive/44/1077/27107744/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll83/M367_Roll83-0114.jpg (downloaded by curl 2 Nov 2026) and frame 0113 as seen in the 30 Oct frame check",
-     "extent": "0114: reply 'Received March 1, 1918', Washington via Pacific, 37 words, 31 ten-letter lowercase groups in 8 lines plus 'yrjmp 17527'; 0113: outgoing cable of 18 Feb 1918, 17 five-letter groups.",
-     "cipher": "Letter groups (5-letter outgoing, 10-letter reply). No decipherment on the frames. Decrypted here as a check: Vigenere, key FEBRUARY, applied to the first 40 letters of the reply gives 'noautomaticwireleshstationsusedbetweenho' (English, 'no automatic wireless stations used between Ho[nolulu]')."
-    },
-    "prior_art": {
-     "decode": "Not on DECODE (NARA RG 59 item, not a DECODE harvest source; known.py Winslow hits only targets/auckland1918).",
-     "tomokiyo": "No cryptiana page on this cable pair; searched Auckland 1918 wireless cipher cable, nothing.",
-     "lasry": "No Lasry entry for it.",
-     "edition": "Read by Brice Dudout, 28 Oct 2026 (targets/auckland1918/NOTES.md: both cables read, outgoing 94/94 letters, reply 305/305 in sense); the 4 March 1918 despatch is in the same file but no clear text is filed on the reel.",
-     "literature": "Published at bdudout.github.io/europe-chiffree (documents.html#auckland-1918); no other study found."
-    },
-    "key_check": "Key FEBRUARY (Vigenere, ordinary alphabet) recovered by Dudout from the reply (period 8 from repeats TKUTZMS and IFOSRLI) and applied to the outgoing cable; I re-checked it on the first 40 letters of the reply (readable English).",
-    "duplicates": "known.py 'Winslow', 'Auckland': targets/auckland1918 is this item; no other duplicate. The entry's note that the recipient could not read the reply is not supported: the key is the same as for his own cable (Dudout).",
-    "verdict": "read",
-    "closed": "Read in full by Brice Dudout (targets/auckland1918): Vigenere with key FEBRUARY, outgoing cable 94/94, reply 305/305 letters; key re-checked on the first line of the reply."
    }
   },
   {
@@ -52477,7 +52351,118 @@
    }
   },
   {
-   "id": 1579,
+   "id": 1578,
+   "counted": true,
+   "year": 1757,
+   "date": "May 1757 (dateline on the letter; the day is not read at this resolution)",
+   "title": "Jan Klemens Branicki → Antoni Potocki, voivode of Bełz: letter mostly in cipher, catalogued unsolved",
+   "correspondents": "Jan Klemens Branicki → Antoni Potocki",
+   "place": "unknown",
+   "language": "French (clear opening)",
+   "region": "Poland-Lithuania",
+   "period": "1701-1800",
+   "shelfmark": "AGAD, Zbiór Anny z Potockich Ksawerowej Branickiej (zesp. 338), 1/338/0/1/446",
+   "folio_note": "5 scans: cover, p. 1 with 3 clear French lines then about 10 lines of cipher, a two-page opening with about 37 more, end cover. About 50 lines, some 2,000 letters.",
+   "cls": "C",
+   "status": "Catalogue: 'List w większej części szyfrowany nierozwiązany'. Scan 2 viewed: clear French opening, then a neat run of lower-case letters and some digits with no interlinear decipherment.",
+   "why": "Hetman Branicki was the head of the anti-Czartoryski party during the Seven Years War; his cipher can open the rest of this fonds.",
+   "importance": 4,
+   "solvability": 5,
+   "difficulty": 2,
+   "score_note": "Scored from the images during the Nov 2026 Chrome pass (research/chrome_pass_2026-11/).",
+   "verify": "Transcribe scans 2-5; try a monoalphabetic and small-homophonic solve in French.",
+   "links": [
+    {
+     "label": "scans",
+     "href": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/28224155"
+    }
+   ],
+   "seen": "image",
+   "source": "Chrome pass, szukajwarchiwach",
+   "prior_art": "open as far as checked (2 Nov 2026: known.py; one web search on the correspondents found nothing on this cipher; Tomokiyo, Lasry, edition not searched)",
+   "needs_archive_scan": "no",
+   "access_note": "scans public on szukajwarchiwach.gov.pl, no login",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "Claude session (Chrome pass vetting, 2 Nov 2026)",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/28224155 (scans 2-4 of 5 viewed at the public 800-pixel size in Chrome)",
+     "extent": "About 50 lines of about 40 letters each across three pages, after a clear French opening on p. 1.",
+     "cipher": "Evenly spaced lower-case letters, a few digits and no word divisions. No interlinear or marginal decipherment on the pages viewed; the catalogue says nierozwiązany."
+    },
+    "prior_art": {
+     "decode": "Not found. research/catalogue_harvest/decode/list.json (10,106 records, dump of 30 Oct 2026) and the views dumps have no 'Branick', no AGAD holder, and 'Potock' only for Barbara Potocka to Dunin (R7525-R7536). Live DECODE was not queried.",
+     "tomokiyo": "Not found. Downloaded cryptiana.web.fc2.com code/crypto.htm and code/GL.htm and grepped Polish, Poland, Potock, Branick, Warsaw, Saxon, 1757: only 16th-century Batory and election items and Brienne to the Queen of Poland 1646. The rest of the site was not crawled; a site-restricted web search returned nothing from it.",
+     "lasry": "Not found. GL.htm (Lasry's decipherments as listed by Tomokiyo) has no Branicki, Potocki or AGAD item; web search 'Lasry ... Polish 18th century letters AGAD Warsaw' returned no Polish 18th-century work by him. His private records and unindexed files could not be checked.",
+     "edition": "No edition of this letter found. Searched Bartoszewicz and Branicki letters: the nearest is Listy Wojciecha Jakubowskiego do J. K. Branickiego 1758-1771 (Warsaw 1882), a different correspondent, not opened. Konopczynski, Polska w dobie wojny siedmioletniej (1909-), appears only as a citation; its text and notes were not opened, so a quotation of this letter there is not ruled out.",
+     "literature": "No study of this letter or of a Branicki cipher found. Czeppe, Kwartalnik Historyczny 111 (2004) 3, says the King wrote to Hetman Branicki demanding the key to the enciphered parts of Stankiewicz's intercepted letters to him (her note 46; Stanisław August's reign, so after 1764; exact date not extracted), so the hetman's circle held keys; it prints none. Rous 2024 (Flemming-Wackerbarth) covers other correspondents and was seen only as metadata."
+    },
+    "key_check": "Fonds key 1/338/0/1/1196 ('Pour déchiffrer') was viewed: a numbered French code table, while this letter is letter cipher, so it does not apply as a table; it was not applied letter by letter. The solved sibling no. 135 (1766) is 3-digit numbers with French between the lines, another system. Letters 128 and 130 of the fonds look like the same letter cipher but carry no solution.",
+    "duplicates": "known.py on 1/338/0/1, zesp. 338, Branicki, Branicka, Antoni Potocki, Potocki, AGAD: hits are the lead itself, chrome_pass files, and unrelated entries (cat. 435 is Ignacy Potocki 1782, fonds 335; deboli1789 only mentions Branicki in its content). No duplicate found. Not on the targets/ list.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1587,
+   "counted": true,
+   "year": 1788,
+   "date": "9 Sept 1788",
+   "title": "Kajetan Chrzanowski, Polish resident at Constantinople → Department of Foreign Interests: letter in an unsolved cipher",
+   "correspondents": "Kajetan Chrzanowski → Departament Interesów Cudzoziemskich",
+   "place": "Constantinople",
+   "language": "unknown",
+   "region": "Poland-Lithuania",
+   "period": "1701-1800",
+   "shelfmark": "AGAD, Archiwum Koronne Warszawskie, 1/3/0/33/80, teczka 758, nr 1443",
+   "folio_note": "not seen",
+   "cls": "B",
+   "status": "Catalogue: 'Pisany nie rozwiązanym szyfrem, zapewne różne wiadomości polityczne'.",
+   "why": "Russo-Turkish war of 1787-92, at the start of the Four-Year Sejm; the cabinet keys in Zbiór Popielów are candidates.",
+   "importance": 4,
+   "solvability": 1,
+   "difficulty": 3,
+   "score_note": "Scored from the archive description during the Nov 2026 Chrome pass (research/chrome_pass_2026-11/); not viewed",
+   "verify": "Order the letter; test Zbiór Popielów 450 (Constantinople chiffre).",
+   "links": [
+    {
+     "label": "record",
+     "href": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17710151"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Chrome pass, szukajwarchiwach",
+   "prior_art": "open as far as checked (2 Nov 2026: known.py; one web search on the correspondents found nothing on this cipher; Tomokiyo, Lasry, edition not searched)",
+   "needs_archive_scan": "yes",
+   "access_note": "catalogue record only; no scans flagged on szukajwarchiwach, AGAD order needed",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "Claude session (Chrome pass vetting, 2 Nov 2026)",
+    "seen": {
+     "kind": "not online",
+     "where": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17710151 (catalogue record; the unit shows no scans)",
+     "extent": "One letter, length unknown.",
+     "cipher": "Archive description: 'Pisany nie rozwiązanym szyfrem, zapewnie różne wiadomości polityczne'. No decipherment noted."
+    },
+    "prior_art": {
+     "decode": "known.py on Chrzanowski and 1/3/0/33/80: only the lead rows. Not in the DECODE dumps.",
+     "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish entry and nothing on Stanisław August's envoys at Constantinople.",
+     "lasry": "Saved GL.htm has no hit for Poland or Polish; web searches found no Lasry paper on Chrzanowski.",
+     "edition": "Web searches found no edition of Chrzanowski's reports; no PSB entry for Kajetan surfaced in the results. The archive description itself calls it 'nie rozwiązanym szyfrem'.",
+     "literature": "Topaktaş Üstüner 2018 ('How a Polish Diplomat Describes the Ottoman Balkans in 1780's: Kajetan Chrzanowski') record found, text not read. Dutkiewicz, Przegląd Historyczny 32 (1934-35), mentions him in the Potocki mission context; no cipher discussion found."
+    },
+    "key_check": "No key held in the repo for Constantinople. The lead's candidate ZbPop 450 (Constantinople chiffre, AGAD) is not in the repo; README key leads say the 1/12/0/-/445-452 chiffres have scans online. Not fetched here and not applied, because the ciphertext is not available. Deboli keys are for another post; not tried.",
+    "duplicates": "known.py on Chrzanowski, Departament; catalogue and leads scan: no other row. No check against ZbPop Constantinople series despatches was possible.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 1608,
    "counted": true,
    "seen": "catalogue",
    "source": "Archives Hub sweep",
@@ -52534,7 +52519,7 @@
    }
   },
   {
-   "id": 1580,
+   "id": 1609,
    "counted": true,
    "seen": "catalogue",
    "source": "Archives Hub sweep",

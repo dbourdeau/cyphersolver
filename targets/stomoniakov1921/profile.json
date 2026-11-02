@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "target": "stomoniakov1921",
+  "title": "Unbroken letter messages to Stomoniakov, Moscow to Berlin, April-June 1921 (NARA M316 rolls 42-43)",
+  "documents": [
+    {
+      "id": "voikov-16jun",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316, frame 043-0436",
+      "date": "16 Jun 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Moscow -> Berlin",
+      "places": {
+        "from": "Moscow",
+        "to": "Berlin"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 451,
+        "distinct": "unknown",
+        "unit": "letters",
+        "measured": true,
+        "file": "m0616.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Tail lost."
+      }
+    },
+    {
+      "id": "voikov-5may",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316, frame 042-0614",
+      "date": "5 May 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Moscow -> Berlin",
+      "places": {
+        "from": "Moscow",
+        "to": "Berlin"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 208,
+        "distinct": "unknown",
+        "unit": "letters",
+        "measured": true,
+        "file": "m0505.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Complete."
+      }
+    },
+    {
+      "id": "krasin-16may",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316, frame 042-0627",
+      "date": "16 May 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Moscow -> Berlin",
+      "places": {
+        "from": "Moscow",
+        "to": "Berlin"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 157,
+        "distinct": "unknown",
+        "unit": "letters",
+        "measured": true,
+        "file": "m0516.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Complete."
+      }
+    },
+    {
+      "id": "lejava-26apr",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316, frame 042-0250",
+      "date": "26 Apr 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Moscow -> Berlin",
+      "places": {
+        "from": "Moscow",
+        "to": "Berlin"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 226,
+        "distinct": "unknown",
+        "unit": "letters",
+        "measured": true,
+        "file": "m0426.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Start lost."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "undetermined"
+    ],
+    "summary": "Letter groups with near-Russian letter statistics, same headings as the letters deciphered in lejava1921 and voikov1921. No key found, so the system is not shown for these.",
+    "symbol_kind": "letters",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "GC&CS read other Soviet links in 1921 (Tiltman); HW 12 and RG 457 6707N not seen; no reading of this message found",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Named the catalogue entry and asked to keep attacking the letter traffic.",
+    "tools": [
+      "NARA catalogue OCR and images",
+      "simulated annealing",
+      "lang engine with a Russian corpus from ru.wikipedia"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02"
+  },
+  "solution": [
+    {
+      "date": "2026-11-02",
+      "kind": "access",
+      "what": "Fetched the OCR of the M316 reels and found runs of 5-letter groups, then fetched the frame image.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "statistics",
+      "what": "The letter traffic to Stomoniakov (2,310 letters, OCR) has Russian letter frequencies with no substitution.",
+      "result": "worked",
+      "technique": [
+        "frequency analysis"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Each message over widths with shuffled controls, Voikov 16 June to 450,000 steps at widths 19-36; level with controls.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ]
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "No key found on any of the four.",
+    "contribution": [
+      "transcription"
+    ],
+    "class": "not read",
+    "fraction_read": 0,
+    "key": "none",
+    "verification": [],
+    "notes": "Widths above 36 untested. Some have letter profiles unlike Russian, so the model may be wrong for them."
+  }
+}

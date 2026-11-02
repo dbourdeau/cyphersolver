@@ -1,0 +1,228 @@
+{
+ "1584": {
+  "prior_art": {
+   "decode": "known.py on Chomętowski and on 1/3/0/33/79 hit only this lead; the spelling Chomentowski hits DECODE R7476, R7484, R7485 (AN Kraków, letters to Sieniawski, target chomentowski1713), not these AGAD items.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish, Chomętowski, Augustus II or Porte-embassy entry (only a Louis XIV Constantinople page, unrelated).",
+   "lasry": "Saved GL.htm (targets/gramont1529) has no hit for Poland, Polish, Chom or Augustus II; web searches found no Lasry paper on this embassy.",
+   "edition": "Gościecki, Poselstwo wielkie (Lwów 1732) found on Europeana but not read; it is a narrative account. Web searches found no edition of these AGAD letters. Teki Rzymskie and Elementa were not searched for this lead.",
+   "literature": "Perłakowski 2020 (Władza i polityka, 107-121) read in PDF: cites AKW DzT 79/549, 79/551, 79/572 and a 'szyfrowana korespondencja Goltza' (BCz 694-695/IV) but no decipherment from these items. Rous, Waldispühl and Megyesi 2024 cover Flemming and Wackerbarth, not this embassy."
+  },
+  "key_check": "Held: targets/chomentowski1713/syllabary.tsv, a three-digit syllabary rebuilt from Chomentowski's own letters to Sieniawski, 1713-14. This is the first key to try, ahead of the Sieniawski keys the lead names. Not applied: no ciphertext of these AGAD items is in the repo. The archive's own solution sheets and code nr 1062 were not seen.",
+  "duplicates": "known.py on Chomętowski, Chometowski, Chomentowski, Sieniawski, 1/3/0/33/79. The AGAD shelfmarks appear only on leads 1584 and 1585. Target chomentowski1713 is the same envoy and years in another repository; no check of whether any AGAD item is a copy of those letters was possible.",
+  "red_flags": "Same envoy already worked: chomentowski1713 (read in part, written up), and its key is held. The lead itself lists contemporary solutions (nr 881, 1041, 1044, 1057) and code nr 1062, so some items are read at the time. Items not seen; szukajwarchiwach blocked curl (Incapsula) and returned empty to WebFetch.",
+  "searches": [
+   "Chomętowski poselstwo do Porty 1712-1714 szyfr listy szyfrowane Sieniawski",
+   "Gościecki 1732 Poselstwo Chomętowskiego do Porty Ottomańskiej edition, Perlakowski 2020 Chomętowski Turcja",
+   "Stanisław Chomętowski wojewoda mazowiecki szyfr klucz kod 1713 list Augusta II Porta Archiwum Koronne Warszawskie Turcja teczka edycja listów",
+   "Rous Waldispühl Megyesi Flemming Wackerbarth encrypted correspondence August II cipher tables 1711 Porte Polish"
+  ]
+ },
+ "1585": {
+  "prior_art": {
+   "decode": "known.py on 1/3/0/33/79 hit only the lead rows; correspondents unknown, so no name search of the DECODE dumps was possible beyond Augustus II and Porte context in the title.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish, Saxon or Augustus II entry; nothing on a 1711 Polish letter.",
+   "lasry": "Saved GL.htm has no hit for Poland, Polish or Augustus II; web searches found no Lasry paper on these letters.",
+   "edition": "Web searches found no edition. Kaczka 2012 (Danubius, Brâncoveanu letters from Polish archives) came up and is about letters to Sieniawski; not opened to check for these three, and the letters' writer is unknown.",
+   "literature": "Web searches in Polish and English on a Saxon prince and hospodar marriage plan of 1711 found nothing on the plan or on a cipher letter about it. Rous 2024 is on Flemming and Wackerbarth; not checked for these items."
+  },
+  "key_check": "No key tried: ciphertext not in the repo and not seen. Candidates only: lead 1584's solution sheet nr 881 lies close to these nr 884-887; targets/sieniawski1708 (Wallachian chancellery key, 1709-14) fits the hospodar subject; chomentowski1713 syllabary is later. No reason yet to expect any of them to fit.",
+  "duplicates": "known.py on 1/3/0/33/79, Sieniawski; repo candidates.json and leads.json scanned: only this lead has teczka 544. Whether these letters duplicate DECODE R7468-R7483 Wallachian material could not be tested without seeing them.",
+  "red_flags": "No sign of print or a reading found. Possible contemporary solution nearby (lead 1584's nr 881, same unit series); unverified. Items not seen; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "secret marriage Saxon prince daughter hospodar Wallachia 1711 Augustus II Porte Brâncoveanu ciphered letter Polish archives",
+   "królewicz saski małżeństwo córka hospodara wołoskiego 1711 August II Porta list szyfrowany Mikołaj Mawrokordat Fryderyk August plan",
+   "Rous Waldispühl Megyesi Flemming Wackerbarth encrypted correspondence August II cipher tables 1711 Porte Polish"
+  ]
+ },
+ "1586": {
+  "prior_art": {
+   "decode": "known.py on Giuliani, Giugliani, Julianis, Załuski, 1/3/0/33/80: only this lead (Giuliani also hits an unrelated 1630s Dominican in targets/lucca). Not in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish or Saxon entry and nothing on Giuliani.",
+   "lasry": "Saved GL.htm has no hit for Poland or Polish; web searches found no Lasry paper on Giuliani.",
+   "edition": "Web searches for Załuski correspondence and Giuliani letters found no edition of these. Abrahamowicz's Katalog covers Turkish documents to 1672, so not these. The printed Epistolae Załuskiana were not opened.",
+   "literature": "Leipzig MyMSS person record 'Giugliani, Francesco dei', Polish interpreter at the Porte, confirms the person only. No study of his reports or ciphers found."
+  },
+  "key_check": "No key in the repo. The lead lists cipher tables at AGAD (teczka 726, nr 1373-1375) sent from Dresden 21 Mar 1742, plus solution sheets; not seen. A key-lookup route exists at the archive. Repo keys of the period (deboli 1788-89) are a different post and era; not tried, no ciphertext here.",
+  "duplicates": "known.py terms above and catalogue/leads scan: no other Giuliani row. README key leads note a neighbour, 1/3/0/33/80 teczka 684 nr 1273-1275 (Łopuski, Benoe, 1742), which is a different correspondent.",
+  "red_flags": "Solution sheets exist for some letters and the tables are in the same unit series, so this may be read at the time or a key lookup rather than open. Addressee Załuski is only 'probably'. Not seen; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "Giuliani tłumacz w Turcji 1744 listy szyfrem Załuski Franciszek Giuliani dragoman Polish Constantinople correspondence Korespondencja Załuskiego",
+   "Archiwum Koronne Warszawskie dział turecki Inwentarz Abrahamowicz Katalog dokumentów tureckich szyfrowane listy Giuliani 1744 tłumacz polski Stambuł",
+   "Francesco Giuliani interprete del re di Polonia Costantinopoli 1744 dragoman letters cipher Saxony Dresden Brühl"
+  ]
+ },
+ "1587": {
+  "prior_art": {
+   "decode": "known.py on Chrzanowski and 1/3/0/33/80: only the lead rows. Not in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish entry and nothing on Stanisław August's envoys at Constantinople.",
+   "lasry": "Saved GL.htm has no hit for Poland or Polish; web searches found no Lasry paper on Chrzanowski.",
+   "edition": "Web searches found no edition of Chrzanowski's reports; no PSB entry for Kajetan surfaced in the results. The archive description itself calls it 'nie rozwiązanym szyfrem'.",
+   "literature": "Topaktaş Üstüner 2018 ('How a Polish Diplomat Describes the Ottoman Balkans in 1780's: Kajetan Chrzanowski') record found, text not read. Dutkiewicz, Przegląd Historyczny 32 (1934-35), mentions him in the Potocki mission context; no cipher discussion found."
+  },
+  "key_check": "No key held in the repo for Constantinople. The lead's candidate ZbPop 450 (Constantinople chiffre, AGAD) is not in the repo; README key leads say the 1/12/0/-/445-452 chiffres have scans online. Not fetched here and not applied, because the ciphertext is not available. Deboli keys are for another post; not tried.",
+  "duplicates": "known.py on Chrzanowski, Departament; catalogue and leads scan: no other row. No check against ZbPop Constantinople series despatches was possible.",
+  "red_flags": "None found suggesting it was read or printed. 'Unsolved' is the archive description's word, not a tested result. Not seen; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "Kajetan Chrzanowski rezydent Konstantynopol 1788 szyfr raporty Departament Interesów Cudzoziemskich",
+   "Chrzanowski chargé d'affaires Polish Constantinople 1788 despatch cipher Stanisław August Ottoman war Dutkiewicz raport Sejm Czteroletni",
+   "Chrzanowski Kajetan Polski Słownik Biograficzny rezydent Stambuł szyfr Chrzanowski Bułhakow Potocki 1788 korespondencja dyplomatyczna Turcja edycja"
+  ]
+ },
+ "1588": {
+  "prior_art": {
+   "decode": "known.py on Radziwill, Radziwiłł, Krzysztof Radziwi, Smolensk, Smoleńsk, Sokoliński, Drucki, 1/354/0: no record of this letter in the DECODE dumps or ledgers.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish, Radziwill or Smolensk entry.",
+   "lasry": "Saved GL.htm has no hit for Radziw or Smolensk; web searches found no Lasry paper on the Smolensk letters.",
+   "edition": "IN PRINT, SIBLINGS: M. Nagielski, 'Szyfrowane depesze Samuela Stanisława Sokolińskiego ze Smoleńska z 1633 r.', Miscellanea Historico-Archivistica XI (2000), 287-304, read in AGAD's PDF. Prints 5 deciphered letters to Radziwiłł, 31 May to 30 June 1633 (31 May; 6+8, 14, 22, 30 June). None is dated 1 June. Only the first letter and the headings of the others were read closely.",
+   "literature": "Nagielski, Folia Historica 111 (2022), cites the depesze and calls them cipher correspondence of May-June 1633. Lipiński, Przegląd Historyczno-Wojskowy 5 (1932), 197, 205 quotes April 1633 letters per Nagielski; not read directly. Kupisz, Smoleńsk 1632-1634, not read."
+  },
+  "key_check": "No key held in the repo. Nagielski says a fragment of the 31 May letter allowed the decipherment and cites a contemporary 'Kopia listów ... wszystkich numero 7 cyframi pisanych', AGAD AR dz. II nr 1115, the unit next to this lead's nr 1116. He gives no key table. Printed plaintext could serve as cribs if nr 1116 shares the cipher; untested, as the scans were not seen.",
+  "duplicates": "known.py terms above; catalogue and leads scan: no other Smolensk row. Not established whether nr 1116 is one of the 7 letters of the nr 1115 fascicle. Its date, 1 June, is one day from the printed 31 May letter, and the catalogue's sender wording differs; they could be separate or the same letter. Open question.",
+  "red_flags": "STRONG. Five sibling letters are printed deciphered and a contemporary clear copy of the 7-letter fascicle sits in the neighbouring unit AR dz. II nr 1115. Nagielski prints 5 of 7, so the 1 June letter may be in nr 1115 even if not printed. Nagielski describes the two he left out as 1634 and 1640 letters, which does not square with 7 from 1633. Scans of nr 1116 not seen; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "list szyfrowany oblężeni w Smoleńsku 1633 Krzysztof Radziwiłł szyfr wojna smoleńska źródła edycja",
+   "Sprawy wojenne Krzysztofa Radziwiłła Listy Smoleńsk 1633 oblężenie list do hetmana edycja Smoleńsk Kotłubaj Żegota",
+   "\"Szyfrowane depesze\" Samuela Stanisława Sokolińskiego ze Smoleńska z 1633 r. Nagielski",
+   "Sokoliński Smoleńsk 1633 szyfrowane depesze edycja Studia i Materiały do Historii Wojskowości Radziwiłł listy z oblężonego Smoleńska",
+   "Miscellanea Historico-Archivistica 2000 t. XI Szyfrowane depesze Sokolińskiego ze Smoleńska Nagielski pdf",
+   "Nagielski \"Szyfrowane depesze\" Sokoliński Miscellanea Historico-Archivistica XI 2000 spis treści"
+  ]
+ },
+ "1589": {
+  "prior_art": {
+   "decode": "known.py on Radziejowski, Tomasz Zamoyski, Zamoyski, Zamojski, 1/358/0: only a generic Radziejowski 1690/1698 note in research/chi_polish and sweep README lines. Not in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish, Zamoyski or Radziejowski entry.",
+   "lasry": "Saved GL.htm has no hit for Zamoyski or Poland; web searches found no Lasry paper on this correspondence.",
+   "edition": "Web searches found no edition of Radziejowski's letters. Milewski's edition of Szyszkowski's letters to Zamoyski (1623-26) uses the same fonds and is a different correspondent. Volume 363 itself not seen.",
+   "literature": "Dorobisz 2014 on Zamoyski and the Swedish question found (abstract only; no cipher or Radziejowski in it). Szelągowski's Wielka wojna pruska (1905) and Wisner's Livonian war study cited, not read. No cipher study found."
+  },
+  "key_check": "No key in the repo for this correspondence or period in Poland. Target kurtz1639 is an Imperial key of a different court and decade; not tried. No ciphertext seen, so nothing could be applied.",
+  "duplicates": "known.py terms above; catalogue and leads scan: no other row for this volume. A Stanisław Radziejowski of 1670 in the web results is a different man.",
+  "red_flags": "The cipher itself is doubtful: the lead says the catalogue wording was cut off ('w tym trzy listy pi[sane ...]'), and only the search term matched. It may read 'pisane' in something else. Must be confirmed on the record; szukajwarchiwach blocked to scripts, so not done here.",
+  "searches": [
+   "Stanisław Radziejowski wojewoda rawski listy do Tomasza Zamoyskiego 1626 1627 szyfr pisane szyfrem",
+   "Radziejowski wojewoda rawski 1627 list Tomasz Zamoyski wojna pruska korespondencja Archiwum Zamoyskich edycja szyfr",
+   "Tomasz Zamoyski korespondencja listy szyfrem 1626 1627 Radziejowski starosta łomżyński dworzanin Zygmunta III intrygi Radziejowski Prusy Gustaw Adolf"
+  ]
+ },
+ "1590": {
+  "prior_art": {
+   "decode": "known.py on Pinocci, Pinoc, Prażmowski, 1/3/0/10/38: only the lead rows. Not in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish or Pinocci entry.",
+   "lasry": "Saved GL.htm has no hit for Pinocci or Poland; web searches found no Lasry paper on Pinocci.",
+   "edition": "Web searches (Polish, Italian, English, including Teki Rzymskie and Elementa terms) found no printed text of this letter. Targosz 1967 monograph on Pinocci, with transcripts from the ANK family archive, was identified but not read, so a print there is not excluded.",
+   "literature": "Targosz (monograph 1967; PSB t. 26 entry) named via bookhistory.uw.edu.pl; not read. TNA SP 88/10/228 records Pinocci as an envoy in a 1659 document, not this letter. No cipher study found."
+  },
+  "key_check": "No key held in the repo. README key leads name AGAD 1/3/0/1/08b nr 043 (Morsztyn at Stockholm, 1655, solution written above) and 10/300/0/22/300,31/9h (chancery cipher 1655-56) as period candidates; neither is in the repo and neither was tried. No ciphertext here.",
+  "duplicates": "known.py on Pinocci, Pinoc, Prażmowski; catalogue and leads scan: no other Pinocci row. The addressee is still 'to confirm' on the lead.",
+  "red_flags": "None found for a reading, but Targosz 1967 is unchecked and could print it. Catalogue wording 'szyfr w sprawie wojny' does not show how much is cipher. Not seen; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "Girolamo Pinocci letter 1659 cipher Prażmowski Hieronim Pinocci szyfr korespondencja edycja",
+   "Hieronim Pinocci 1659 sekretarz królewski listy z Prus Oliwa pokój Szwecja Moskwa Prażmowski kanclerz biskup łucki Kubala Pinocci",
+   "Girolamo Pinocci cifra lettere Teki Rzymskie Elementa ad fontium editiones 1659 residente Polish king Vienna Pinocci resident"
+  ]
+ },
+ "1591": {
+  "prior_art": {
+   "decode": "HIT. known.py on Lubomirski: catalogue 442 'Unknown → Jerzy Sebastian Lubomirski, cipher slips, August 1662', AN Kraków ASang teka 282/2, DECODE R7520-R7522, three 1-page records, receiver 'Lubomirski Jerzy', status N/A, no key or decryption file. DECODE images not opened here.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish or Lubomirski entry.",
+   "lasry": "Saved GL.htm has no hit for Lubomirski; web searches found no Lasry paper. Catalogue 442 records none either.",
+   "edition": "Web searches found no print of these letters; a BK PAN record of Lubomirski's letter to the king of 31 Aug 1662 came up and is not ciphered as far as the record says.",
+   "literature": "Web searches on Morsztyn, Lubomirski and the rokosz found no discussion of August 1662 cipher letters; Kersten's and Kochowski's works were not read."
+  },
+  "key_check": "No key tried: ciphertext not seen. Candidates only: targets/wasowicz1662 holds a nineteenth-century number table for Wąsowicz's letters to Aleksander Michał Lubomirski, 1662-63, a brother's circle; cat. 442 records graphic, letter and number symbols, so a fit is uncertain. Catalogue 441 and 443 are same-archive siblings, unsolved.",
+  "duplicates": "LIKELY DUPLICATE of catalogue 442: same addressee, same month, three items, same fonds (Archiwum Sanguszków, AN Kraków). Shelfmark forms differ (29/637/0/1.3/9071 against teka 282/2) and no concordance was available to prove they match. Related but distinct: cat. 441 (R7517-19) and 443 (R7513, 31 July 1662).",
+  "red_flags": "Probable duplicate of catalogue 442 (DECODE R7520-R7522). Concordance from unit 9071 to teka 282/2 not confirmed; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "Jerzy Sebastian Lubomirski 1662 listy szyfrowane Morsztyn szyfr Archiwum Sanguszków rokosz",
+   "Morsztyn Lubomirski 1662 szyfr list szyfrem marszałek Lubomirski Kochowski Kersten Rokosz zdekodowane Sanguszko korespondencja Jerzy Sebastian sierpień 1662",
+   "Lubomirski cipher letters 1662 DECODE Kraków Sanguszko deciphered historical cipher Polish nobility 17th century nomenclator"
+  ]
+ },
+ "1592": {
+  "prior_art": {
+   "decode": "known.py on Małachowski and 35/94/0: catalogue 436 (Garnysz and Małachowski, 1789, Nabytki 125) and research sweep rows, none this letter. Not in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish or Małachowski entry.",
+   "lasry": "Saved GL.htm has no hit for Poland or Polish; web searches found no Lasry paper on this letter.",
+   "edition": "Web searches found no print of this letter. The fonds description (Akta ze zbiorów Muzeum KUL) did not surface online. The IH PAN Korespondencja polityczna series was not found to reach 1791 at Dresden.",
+   "literature": "Three searches found nothing confirming Jan Nepomucen Małachowski as envoy in Saxony; only a family-page mention. A 1791 news digest mentions the note to the Saxon elector on the throne. No cipher study found."
+  },
+  "key_check": "No key held for Dresden in the repo. Catalogue 433 notes the Cabinet's keys ZbPop 445-454 at AGAD; README says 445-452 have scans online; not fetched and not applied. The Deboli K4 key belongs to St Petersburg; not tried, no ciphertext of this letter is here.",
+  "duplicates": "Related, not shown duplicate: catalogue 433 (Polish minister at Dresden → Stanisław August, 1791, ZbPop 429, 38 pieces). This one is in Lublin, addressee unknown; whether it is a copy of a despatch in 429 could not be tested. Catalogue 436 is 1789.",
+  "red_flags": "No sign of reading or print. Possible copy or draft of a despatch in cat. 433's series, untested. Envoy identity unconfirmed by the searches. Not seen; unit shows 0 scans per the lead, and szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "Jan Nepomucen Małachowski poseł w Saksonii grudzień 1791 list szyfr sukcesja saska Drezno korespondencja",
+   "poseł polski w Dreźnie 1791 Małachowski Jan Nepomucen misja elektor saski sukcesja tronu Stanisław August Zielińska Michalski szyfrowane depesze",
+   "Akta ze zbiorów Muzeum KUL Archiwum Państwowe w Lublinie zespół 94 list Małachowski 1791 Saksonia"
+  ]
+ },
+ "1593": {
+  "prior_art": {
+   "decode": "known.py on 'Forbes, secretary', Forbes, Wessel, 39/592: Forbes hits are the unrelated English Full View of Public Transactions; Wessel hits are Wesselényi. No record of this letter in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish, Wessel or Forbes entry.",
+   "lasry": "Saved GL.htm has no hit for Poland or Polish; web searches found no Lasry paper on this letter.",
+   "edition": "Web searches found no print. The Bartoszewicz family archive finding aid (Ugorowicz, Łódź 2008) was identified but not read.",
+   "literature": "Pułaski, Szkice i poszukiwania historyczne (bc.radom.pl), per a search summary, describes Teodor Wessel's Bar Confederation papers as including letters written in cipher; not opened, and no Forbes link. St Andrews SSNE Forbes entries found show no tie to Wessel."
+  },
+  "key_check": "No key in the repo for Wessel's circle. No ciphertext in the repo; the 4 online scans could not be opened (szukajwarchiwach blocked to curl and WebFetch; Chrome excluded), so no key was tried. A short partial cipher may be undecidable.",
+  "duplicates": "known.py terms above; catalogue and leads scan: no other Forbes or Wessel row for Poland. The row's date is undated, and 1760 is an assignment, so no date search was possible.",
+  "red_flags": "None for print or reading. The year 1760 on the row is not from the catalogue ('undated'), so the period is unknown. Cipher extent unknown, scans not viewed here.",
+  "searches": [
+   "Forbes sekretarz podskarbiego Teodora Wessla list szyfr XVIII wiek Bartoszewicz archiwum",
+   "Teodor Wessel podskarbi koronny sekretarz Forbes Szkot Scot Warsaw 18th century Forbes secretary treasurer Poland Bar Confederation",
+   "Archiwum rodziny Bartoszewiczów Archiwum Państwowe w Łodzi zespół 592 Wessel Forbes korespondencja konfederacja barska szyfr"
+  ]
+ },
+ "1594": {
+  "prior_art": {
+   "decode": "known.py on Radziwiłł, Radziwill, 1/354/0: only M. K. Radziwiłł 1669 (cat. 440, R7512) and unrelated rows. Neither item is in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish or Radziwill entry.",
+   "lasry": "Saved GL.htm has no hit for Radziw; web searches found no Lasry paper on either item.",
+   "edition": "Web searches found no print of either item. A Przegląd Historyczny 1956 piece on 1656 documents from the Radziwiłł archive came up in results, but its PDF returned 404 when fetched, so it was not read. Correspondents are unknown, which limits the search.",
+   "literature": "Searches on Bogusław and Janusz Radziwiłł 1656, and Karol Radziwiłł and the Bar Confederation 1769, found no cipher discussion. Konopczyński's Konfederacja barska was not read."
+  },
+  "key_check": "No key in the repo for either item, and neither item was seen. Cat. 440 (M. K. Radziwiłł 1669) is unsolved and not usable. Nothing applied; two different ciphers are probable and each would need its own check.",
+  "duplicates": "known.py on Radziwiłł, Radziwill, 1/354/0; catalogue and leads scan: no row with these two shelfmarks. The record pages could not be opened to identify writer or addressee, so a date-and-name search was not possible.",
+  "red_flags": "Two unrelated items in one row. The 1656 item is one piece in a 76-scan unit, not located. Writer and addressee unknown, so the prior-art check is weak. The unread 1956 article is unresolved for the 1656 item.",
+  "searches": [
+   "Bogusław Radziwiłł Janusz 1656 list post scriptum szyfrowany szyfr; konfederacja barska 1769 Karol Radziwiłł listy szyfrowane",
+   "Radziwiłł 1769 konfederacja barska dodatek cyfrowany Karol Stanisław Radziwiłł Panie Kochanku szyfr listy Archiwum Radziwiłłów dział IV",
+   "Radziwiłł 1656 ciphered postscript letter Bogusław Radziwiłł Deluge Swedish cipher Archiwum Radziwiłłów dział IV edition Kotljarchuk"
+  ]
+ },
+ "1595": {
+  "prior_art": {
+   "decode": "known.py on Deboli and 1/3/0/2/58: catalogue 412-421 (ZbPop series) and targets deboli1788-1791, none with this shelfmark. Catalogue 416 says the 1787 ZbPop series is not on DECODE.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish or Deboli entry.",
+   "lasry": "Saved GL.htm has no hit for Deboli; web searches found no Lasry paper on Deboli.",
+   "edition": "Zielińska and Danilczyk's IH PAN volumes print 1780-82 per catalogue 412 and the search results; Łojek 1964 prints 1791-92. Nothing found printing a 1787 despatch from this file. Łojek's Misja Debolego (1962) was not read; Zielińska 2003 on the Kaniów letters was not read for this item.",
+   "literature": "Rolnik 2025 (Ignatianum) read in PDF: says the correspondence was enciphered and cites ZbPop 415, 420, 421 and APP 192, not this file. Łojek 1962 is the monograph on the 1787-92 mission. No cipher study found."
+  },
+  "key_check": "Not tried, and it cannot be: no ciphertext of this item exists in the repo, and no 1787 Deboli cipher file either (file search under targets/deboli*; NOTES say 1783-87 units are unscanned). Held keys: deboli1789/key_pass.tsv, deboli1788/key_K4.tsv. deboli1791 NOTES say 4 Jan 1788 uses a different code from code A, so a 1787 fit is not assured.",
+  "duplicates": "Related: catalogue 416 (Deboli → King, 1787, ZbPop 3, 83 pieces, not scanned). This is another shelfmark in the Archiwum Koronne. Could be a stray or copy of one of those despatches; untestable without a scan. Date within 1787 unknown.",
+  "red_flags": "Key lookup is likely if a 1787 code matches the Deboli family, but that is untested. Possible copy of a despatch in cat. 416. Item not seen; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "Deboli 1787 depesze szyfrowane Petersburg Archiwum Koronne Warszawskie Antoni Augustyn Deboli raporty szyfr Zbiór Popielów",
+   "Deboli Petersburg 1787 cipher despatch Kaniów Catherine II Stanisław August dépêche chiffrée Zielińska Korespondencja Deboli edycja tom 1787",
+   "Archiwum Koronne Warszawskie 1787 Deboli depesza szyfr same liczby Stanisław August szyfrowana korespondencja gabinet królewski Kicińska Rosja",
+   "Polish diplomatic ciphers 18th century Poland-Lithuania cipher history szyfry dyplomatyczne Stanisław August Deboli Cryptologia HistoCrypt"
+  ]
+ },
+ "1596": {
+  "prior_art": {
+   "decode": "known.py on Tyszkiewicz, Poniatowsk, 1/346/0: no hits beyond the lead rows and an unrelated Poniatowski in targets/stade1710. Not in the DECODE dumps.",
+   "tomokiyo": "cryptiana code/crypto.htm index fetched: no Polish, Poniatowski or Tyszkiewicz entry.",
+   "lasry": "Saved GL.htm has no hit for Poland or Polish; web searches found no Lasry paper on this correspondence.",
+   "edition": "Web searches found no edition of these letters. The printed inventory (Józefowiczówna, Inwentarz archiwum księcia Józefa Poniatowskiego i Marii Teresy Tyszkiewiczowej, Warsaw 1987, 273 pp.) is the source of the wording and was not read.",
+   "literature": "Biographical sources on Maria Teresa Poniatowska only (Wikipedia, voyages.ideoz.fr, serock.pl); none mentions cipher or chiffre letters. Searches in Polish and English found no cipher study."
+  },
+  "key_check": "No key in the repo for this circle. No ciphertext seen, and the catalogue does not establish that any cipher exists, so there is nothing to try against a key.",
+  "duplicates": "known.py terms above; catalogue and leads scan: no other row for this fonds. No correspondent names are given, so no name search of siblings was possible.",
+  "red_flags": "Probably not a cipher: 'nie rozszyfrowana' in this inventory may mean an unidentified signature or an illegible hand, as the lead itself warns; nothing found supports a cipher. Not seen; the 1987 inventory not read; szukajwarchiwach blocked to scripts.",
+  "searches": [
+   "Maria Teresa Tyszkiewiczowa korespondencja szyfr listy Tyszkiewiczowa Józef Poniatowski siostra archiwum zespół 346 AGAD",
+   "Tyszkiewiczowa Maria Teresa z Poniatowskich listy nierozszyfrowane podpisy korespondencja księcia Józefa Poniatowskiego archiwum Askenazy 1812",
+   "Maria Teresa Tyszkiewicz née Poniatowska letters cipher Napoleonic Jablonna papers Prince Józef Poniatowski's sister correspondence edition chiffre"
+  ]
+ }
+}
