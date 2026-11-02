@@ -1,0 +1,7 @@
+… they may stay with it and in league with the French; and in the end Farnese is resolved only to accept any compensation, however poor, for Piacenza alone, things remaining as they are.
+
+This is the whole story and the commentary on the Emperor's letter. I do not write it in that letter, because it is partly small particulars and partly frivolities of these people; but to do my duty, and for the information of the business, Your Lordship may show it to Monseigneur and, if need be, to His Majesty.
+
+Here comes in the publication of the Interim. Since then they have agreed to turn it into a bargaining matter, writing to Sfondrato to find out whether the legates must be sent, and to offer them on condition that they are to examine the Interim and then approve it. The haste that His Holiness shows over the judgement on the translation [of the Council] is to take up the negotiation again, which they think the Interim has left loose; and this is to put on a little show and display resolve.
+
+Having read the text of the ratification, I find, as I wrote, some Spanish turns of phrase that are not said very Latinly, and other words that could be better without changing the sense, and some rules of grammar badly kept. As this is my trade more than judging the sentences, I can give my opinion on it; I will send by the first courier one [copy] with the notes, because I fear being taken for a pedant, and I would [not] want to lose my reputation.
