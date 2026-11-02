@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auckland cables (1918) &mdash; Key recovered from ciphertext-only</title>
+<meta name="description" content="Two US Navy cables of February 1918 between the American Consul-General at Auckland and Washington, about an unknown automatic wireless transmitter heard in New Zealand. Both are a Vigen&egrave;re cipher with the key FEBRUARY, found by Brice Dudout from the repeats in the reply and confirmed on the outgoing cable; every word is read.">
+<link rel="stylesheet" href="style.css?v=20261027c">
+<meta name="date" content="2026-11-02">
+<meta name="last-modified" content="2026-11-02">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="auckland1918.html" aria-current="page"><i class="dot solved" aria-hidden="true"></i><b>Auckland cables 1918</b><span class="yr">Feb&ndash;Mar 1918</span><span class="m">ciphertext-only break</span></a></li><li><a href="milroy.html"><i class="dot solved" aria-hidden="true"></i><b>Milroy telegrams 1861&ndash;62</b><span class="yr">1861&ndash;62</span><span class="m">known key applied</span></a></li><li><a href="feynman.html"><i class="dot solved" aria-hidden="true"></i><b>Feynman ciphers 2 and 3</b><span class="yr">1953</span><span class="m">known key applied</span></a></li><li><a href="bell1900.html"><i class="dot solved" aria-hidden="true"></i><b>Bell to Mabel Bell 1900</b><span class="yr">1900</span><span class="m">known key applied</span></a></li><li><a href="santacruz1630.html"><i class="dot solved" aria-hidden="true"></i><b>Philip IV to Santa Cruz 1630</b><span class="yr">1630</span><span class="m">key from external plaintext</span></a></li><li><a href="genes1643.html"><i class="dot solved" aria-hidden="true"></i><b>Eraso to Philip IV 1643</b><span class="yr">1643</span><span class="m">key from external plaintext</span></a></li></ul></div><div class="grp outc"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><i class="dot solved" aria-hidden="true"></i><b>Ciphertext-only break</b><b class="sh">Ciphertext-only</b><span class="n">77</span></a></li><li><a href="writeups.html#kind=extpt"><i class="dot solved" aria-hidden="true"></i><b>Key from external plaintext</b><b class="sh">Ext. plaintext</b><span class="n">16</span></a></li><li><a href="writeups.html#kind=adjpt"><i class="dot solved" aria-hidden="true"></i><b>Key from adjacent plaintext</b><b class="sh">Adj. plaintext</b><span class="n">88</span></a></li><li><a href="writeups.html#kind=extkey"><i class="dot solved" aria-hidden="true"></i><b>External key matched</b><b class="sh">External key</b><span class="n">32</span></a></li><li><a href="writeups.html#kind=known"><i class="dot solved" aria-hidden="true"></i><b>Known key applied</b><b class="sh">Known key</b><span class="n">104</span></a></li><li><a href="writeups.html#kind=deciph"><i class="dot solved" aria-hidden="true"></i><b>Existing decipherment</b><b class="sh">Existing reading</b><span class="n">95</span></a></li><li><a href="writeups.html#kind=notsolved"><i class="dot stuck" aria-hidden="true"></i><b>Not solved</b><b class="sh">Not solved</b><span class="n">73</span></a></li><li><a href="writeups.html#kind=na"><i class="dot found" aria-hidden="true"></i><b>Not applicable</b><b class="sh">Not applicable</b><span class="n">18</span></a></li><li><a href="writeups.html#kind=other"><i class="dot todo" aria-hidden="true"></i><b>Not yet classified</b><b class="sh">Unclassified</b><span class="n">1</span></a></li><li><a href="writeups.html#kind=survey"><i class="dot todo" aria-hidden="true"></i><b>Surveys</b><b class="sh">Surveys</b><span class="n">2</span></a></li></ul></div><div class="foot"><a class="all" href="writeups.html">All 506 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+<section class="hero">
+  <div class="cipherstrip">FVFRO TFKFX JTQII CQITJ MTRRN SOJQO &hellip;<br>FEBRU ARYFE BRUAR YFEBR UARYF EBRUA &hellip;<br>ARE AUTOMATIC WIRELESS STATIONS WORKING BETWEEN SAN FRANCISCO AND HONOLULU ON TWO THOUSAND METRE WAVELENGTHS</div>
+  <p class="kicker">Consul-General Auckland &harr; Washington &middot; Vigen&egrave;re, key FEBRUARY &middot; 18 Feb &ndash; 1 Mar 1918 &middot; key recovered from ciphertext-only</p>
+  <h1>The Auckland cables, February 1918</h1>
+  <p class="sub">Two wireless-station cables between Auckland and Washington, enciphered with the name of the month as the key, and read in full by Brice Dudout.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-02">2 November 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: complete</p><!-- /outcome -->
+<p class="credits">Contributed by <a href="contributors.html#dudout">Brice Dudout</a> (solution)</p><!-- /credits -->
+<div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-cables">The two cables</a><a href="#the-cipher">The cipher and the key</a><a href="#the-reading">The reading</a><a href="#uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; complete</span></p>
+<dl>
+  <dt>The cables</dt><dd>On 18 February 1918 Alfred A. Winslow, American Consul-General at Auckland, cabled the Naval Commander at San Francisco. Washington answered on 28 February; the reply reached Auckland on 1 March.</dd>
+  <dt>Where</dt><dd>US National Archives, RG 59, Central Decimal File 763.72/9377, microfilm M367 roll 83, images 0113&ndash;0114. Catalogue item 757.</dd>
+  <dt>The cipher</dt><dd>A Vigen&egrave;re cipher on the ordinary alphabet. The key is the word FEBRUARY, the name of the month, and it is the same for both cables.</dd>
+  <dt>How it was read</dt><dd>The period of 8 shows in the repeats of the reply, and the column frequencies give the key. It was then frozen and applied unchanged to the outgoing cable, which had not been used: all 94 letters came out as English.</dd>
+  <dt>What it says</dt><dd>Winslow asks whether automatic wireless stations work between San Francisco and Honolulu on two-thousand-metre wavelengths. Washington says they do not, that all US wavelengths are 4,000 m or above, and that a suspicious automatic station has been heard in the US since 15 February.</dd>
+  <dt>Still open</dt><dd>The final &ldquo;OK&rdquo; and the number 17527 are not interpreted. The images were not seen here; the work rests on the typed transcription.</dd>
+  <dt>Credit</dt><dd>Brice Dudout found the key, read the cables and listed the garbles, working with Claude Opus 5.5 agents. He says it is the first published decipherment, to his knowledge; we have not searched independently.</dd>
+</dl>
+</div>
+
+<h2 id="the-cables"><span class="num">01</span> The two cables</h2>
+<p>On 12 February 1918, at 3.50 in the morning New Zealand time, a station in New Zealand heard an unknown transmitter on about 2,000 metres, working &ldquo;automatic&rdquo; (too fast to tell dots from dashes). Staff Paymaster W. J. Brown, for the Naval Adviser to the New Zealand Government, wrote on 14 February that it reminded the listeners of Nauru while that station was under German control. An American journal had reported automatic working being installed between California and Honolulu, so he asked for a check by cable.</p>
+<p>The Consul-General at Auckland cabled the question on 18 February. The reply from an unnamed office in Washington, probably the Navy Department, is dated 28 February, 10 a.m. Winslow does not say he could not read it. His despatch of 4 March says only that he did not know which office it came from &ldquo;further than it was sent from Washington, D.C.&rdquo; The catalogue entry, which said the recipient could not read the reply, is corrected by this.</p>
+
+<h2 id="the-cipher"><span class="num">02</span> The cipher and the key</h2>
+<p>Both cables are a Vigen&egrave;re on the ordinary alphabet: plain letter plus key letter, modulo 26. The outgoing cable is in 5-letter groups (94 letters). The reply is in 10-letter &ldquo;words&rdquo; (305 letters) followed by the number 17527.</p>
+<p>The key was found on the reply alone. The repeats TKUTZMS (104 letters apart), IFOSRLI (32) and EERMS (56) share the divisor 8, and the index of coincidence at period 8 is 0.062. A frequency fit on each of the eight columns gives FEBRUARY. The key was frozen, with its SHA-256 recorded, and then applied without change to the outgoing cable, which had not been used in finding it. That cable decrypts to 94 of 94 letters of continuous English. None of 1,000 shuffles of the same ciphertext, decrypted with the same key, reaches its English letter-frequency score.</p>
+<p>A monthly key word gave almost no security in 1918, as the period shows in the repeats. The State Department had codes of its own; these two cables show a consul and the Navy making do with an elementary method.</p>
+<p>We re-decrypted both cables from the typed transcription with FEBRUARY on 2 November 2026, and the output matches the reading below letter for letter, including the garbles.</p>
+
+<h2 id="the-reading"><span class="num">03</span> The reading</h2>
+<figure class="creveal" data-src="reveal/auckland1918.json"></figure>
+<p><strong>18 February (Winslow to the Naval Commander, San Francisco):</strong> &ldquo;Are automatic wireless stations working between San Francisco and Honolulu on two thousand metre wavelengths?&rdquo;</p>
+<p><strong>28 February (Washington to Auckland):</strong> &ldquo;No automatic wireless stations used between Honolulu and San Francisco. Stations can receive while sending. All wavelengths used four thousand meters or above. Suspicious automatic station heard in this country since February fifteenth on following wavelengths: forty-two hundred, ten thousand, eleven thousand and fifteen thousand meters.&rdquo;</p>
+<p>So the transmitter heard on 2,000 m was not American. We have not tried to identify the 4,200, 10,000, 11,000 and 15,000 m transmitters Washington mentions.</p>
+
+<h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
+<ul>
+<li>Eight letters of the reply do not decrypt directly: six are transmission errors, mostly typical Morse confusions (i/t, g/w, z/p, z/x), and two are overstruck on the Auckland copy (groups 10 and 28). Each is forced by its word, and all eight are listed in the decryption file. Restored in the reading: wireles[s], peri[o]d, w[h]ile, [p]eriod, febr[u]ary, [f]ollowing, fort[y], [a]nd, [t]housand.</li>
+<li>&ldquo;PERIOD&rdquo; stands for the full stop, and in one place the encipherer left out an O in the clear while the key stayed in step.</li>
+<li>The final &ldquo;OK&rdquo; and the number 17527 are not interpreted.</li>
+<li>The transcription was made by AI from the NARA images and has not been checked by a person against them. The images were not fetched for this page, so it carries no snip of the cipher.</li>
+</ul>
+
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Winslow to Naval Commander San Francisco, 18 Feb 1918</h3>
+<p>Are automatic wireless stations working between San Francisco and Honolulu on 2,000-metre wavelengths?</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/transcription.txt">transcription.txt</a></p><pre># NARA RG 59, Central Decimal File 1910-29, 763.72/9377, microfilm M367 roll 83.
+# Transcribed from the NARA images (letters as typed on the Auckland copies). Images not included: see links in NOTES.md.
+
+## Cable 1: image 0113, sent 18 Feb 1918, American Consul-General Auckland -&gt; Naval Commander, San Francisco
+FVFRO TFKFX JTQII CQITJ MTRRN SOJQO IINRH SYTNC JRTRH FIYSG JJWOR LILPE ILLJZ SOKQO KFTYT RHDDC YVFNU VVJJR HKBS
+
+## Cable 2: image 0114, &quot;Office of Origin: Washington D C&quot;, &quot;Via Pacific&quot;, 37 words, dated 28 [Feb] 10 am,
+## remarks &quot;usgovt pbam&quot;, received 1 Mar 1918, to American Consul General Auckland; closing number and signature as typed
+# groups 10 (fexieehisz, letter 7) and 28 (ermsvjunuj, letter 10) are overstruck on the copy
+ssblnodyym dncrvjjwij nakgtrtlme uzjxxvynym ssmlfurliw bezrrlhmtt ipvpnhtkut zmswdrhrva jmwvqgzjjw fexieehisz idrjqabmyl vllxijosvb ksvinhfsxe ougekcwwpi ubftjtfico uqzwqzwifs xevkimrrng tkutzmslfr ldzlyljjwo llyvzjcntc kicidaiwkm gkyeermsog ilcmbmoxqa mcqioxnhjd tvuznwffzr eiydkcsxif osrliimvpe ermsvjunuj shgzztvcsz ifosrliqfk yrjmp 17527
+Dnc</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/decryption.txt">decryption.txt</a></p><pre># Vigenere decryption, key FEBRUARY (P = C - K mod 26, ordinary alphabet), key restarted at the first letter of each cable.
+
+## Cable 1 (18 Feb 1918)
+FVFRO TFKFX JTQII CQITJ MTRRN SOJQO IINRH SYTNC JRTRH FIYSG JJWOR LILPE ILLJZ SOKQO KFTYT RHDDC YVFNU VVJJR HKBS
+FEBRU ARYFE BRUAR YFEBR UARYF EBRUA RYFEB RUARY FEBRU ARYFE BRUAR YFEBR UARYF EBRUA RYFEB RUARY FEBRU ARYFE BRUA
+AREAU TOMAT ICWIR ELESS STATI ONSWO RKING BETWE ENSAN FRANC ISCOA NDHON OLULU ONTWO THOUS ANDME TREWA VELEN GTHS
+= ARE AUTOMATIC WIRELESS STATIONS WORKING BETWEEN SAN FRANCISCO AND HONOLULU ON TWO THOUSAND METRE WAVELENGTHS
+
+## Cable 2 (28 Feb 1918), letters as transcribed (garbles left in)
+SSBLNODYYM DNCRVJJWIJ NAKGTRTLME UZJXXVYNYM SSMLFURLIW BEZRRLHMTT IPVPNHTKUT ZMSWDRHRVA JMWVQGZJJW FEXIEEHISZ IDRJQABMYL VLLXIJOSVB KSVINHFSXE OUGEKCWWPI UBFTJTFICO UQZWQZWIFS XEVKIMRRNG TKUTZMSLFR LDZLYLJJWO LLYVZJCNTC KICIDAIWKM GKYEERMSOG ILCMBMOXQA MCQIOXNHJD TVUZNWFFZR EIYDKCSXIF OSRLIIMVPE ERMSVJUNUJ SHGZZTVCSZ IFOSRLIQFK YRJMP
+FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYF
+NOAUTOMATI CWIRELESHS TATIONSUSE DBETWEENHO NOLULUANDS ANFRANCISC OPERIDSTAT IONSCANREC EIVEWGILES ENDINGCERI ODALLWAVEL ENGTHSUSED FOURTHOUSA NDMETERSOR ABOVEPERIO DSUSPICIOU SAUTOMATIC STATIONHEA RDINTHISCO UNTRYSINCE FEBRJARYFI FTEENTHONP OLLOWINGWA VELENGTHSF ORTITWOHUN DREDTENTHO USANDELEVE NTHOUSANDL NDFIFTEENV HOUSANDMET ERSOK
+= NO AUTOMATIC WIRELES[S] STATIONS USED BETWEEN HONOLULU AND SAN FRANCISCO PERI[O]D STATIONS CAN RECEIVE W[H]ILE SENDING [P]ERIOD ALL WAVELENGTHS USED FOUR THOUSAND METERS OR ABOVE PERIOD SUSPICIOUS AUTOMATIC STATION HEARD IN THIS COUNTRY SINCE FEBR[U]ARY FIFTEENTH ON [F]OLLOWING WAVELENGTHS FORT[Y] TWO HUNDRED TEN THOUSAND ELEVEN THOUSAND [A]ND FIFTEEN [T]HOUSAND METERS &lt;OK&gt;
+
+## Garbles in cable 2 (group.letter: cipher read -&gt; cipher needed; Morse read / needed; word)
+2.9	i -&gt; t	.. / -	WIRELES[S]
+9.6	g -&gt; h	--. / ....	W[H]ILE
+10.7	h -&gt; u	.... / ..-	[P]ERIOD *
+21.5	d -&gt; o	-.. / ---	FEBR[U]ARY
+22.10	g -&gt; w	--. / .--	[F]OLLOWING
+25.4	z -&gt; p	--.. / .--.	FORT[Y]
+28.10	j -&gt; y	.--- / -.--	[A]ND *
+29.10	z -&gt; x	--.. / -..-	[T]HOUSAND
+* overstruck letter on the Auckland copy.
+PERI[O]D: an O left out of the plaintext by the encipherer (the key stays in step).
+The final OK and the number 17527 are outside the text and not interpreted.</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/reading.md">reading.md</a></p><pre># Established text (English, telegraphic; punctuation added, PERIOD written as a comma + period)
+
+Restored letters (the cipher has another letter, see decryption.txt): wireles[s], peri[o]d, w[h]ile, [p]eriod, febr[u]ary, [f]ollowing, fort[y], [a]nd, [t]housand. The two final letters OK are not interpreted.
+
+**Cable 1, Auckland to San Francisco, 18 Feb 1918.** Are automatic wireless stations working between San Francisco and Honolulu on two thousand metre wavelengths?
+
+**Cable 2, Washington to Auckland, 28 Feb 1918.** No automatic wireless stations used between Honolulu and San Francisco, period. Stations can receive while sending, period. All wavelengths used four thousand meters or above, period. Suspicious automatic station heard in this country since February fifteenth on following wavelengths: forty two hundred, ten thousand, eleven thousand and fifteen thousand meters.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/translation.md">translation.md</a></p><pre># Plain sense
+
+18 February (Winslow): “Are automatic wireless stations working between San Francisco and Honolulu on two thousand metre wavelengths?”
+
+28 February (Washington): “No automatic wireless stations used between Honolulu and San Francisco. Stations can receive while sending. All wavelengths used four thousand meters or above. Suspicious automatic station heard in this country since February fifteenth on following wavelengths: forty-two hundred, ten thousand, eleven thousand and fifteen thousand meters.”</pre></details>
+<h3>Washington to Consul-General Auckland, 28 Feb 1918</h3>
+<p>No automatic stations between Honolulu and San Francisco; wavelengths 4,000 m or above; a suspicious automatic station heard in the US since 15 February.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/transcription.txt">transcription.txt</a></p><pre># NARA RG 59, Central Decimal File 1910-29, 763.72/9377, microfilm M367 roll 83.
+# Transcribed from the NARA images (letters as typed on the Auckland copies). Images not included: see links in NOTES.md.
+
+## Cable 1: image 0113, sent 18 Feb 1918, American Consul-General Auckland -&gt; Naval Commander, San Francisco
+FVFRO TFKFX JTQII CQITJ MTRRN SOJQO IINRH SYTNC JRTRH FIYSG JJWOR LILPE ILLJZ SOKQO KFTYT RHDDC YVFNU VVJJR HKBS
+
+## Cable 2: image 0114, &quot;Office of Origin: Washington D C&quot;, &quot;Via Pacific&quot;, 37 words, dated 28 [Feb] 10 am,
+## remarks &quot;usgovt pbam&quot;, received 1 Mar 1918, to American Consul General Auckland; closing number and signature as typed
+# groups 10 (fexieehisz, letter 7) and 28 (ermsvjunuj, letter 10) are overstruck on the copy
+ssblnodyym dncrvjjwij nakgtrtlme uzjxxvynym ssmlfurliw bezrrlhmtt ipvpnhtkut zmswdrhrva jmwvqgzjjw fexieehisz idrjqabmyl vllxijosvb ksvinhfsxe ougekcwwpi ubftjtfico uqzwqzwifs xevkimrrng tkutzmslfr ldzlyljjwo llyvzjcntc kicidaiwkm gkyeermsog ilcmbmoxqa mcqioxnhjd tvuznwffzr eiydkcsxif osrliimvpe ermsvjunuj shgzztvcsz ifosrliqfk yrjmp 17527
+Dnc</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/decryption.txt">decryption.txt</a></p><pre># Vigenere decryption, key FEBRUARY (P = C - K mod 26, ordinary alphabet), key restarted at the first letter of each cable.
+
+## Cable 1 (18 Feb 1918)
+FVFRO TFKFX JTQII CQITJ MTRRN SOJQO IINRH SYTNC JRTRH FIYSG JJWOR LILPE ILLJZ SOKQO KFTYT RHDDC YVFNU VVJJR HKBS
+FEBRU ARYFE BRUAR YFEBR UARYF EBRUA RYFEB RUARY FEBRU ARYFE BRUAR YFEBR UARYF EBRUA RYFEB RUARY FEBRU ARYFE BRUA
+AREAU TOMAT ICWIR ELESS STATI ONSWO RKING BETWE ENSAN FRANC ISCOA NDHON OLULU ONTWO THOUS ANDME TREWA VELEN GTHS
+= ARE AUTOMATIC WIRELESS STATIONS WORKING BETWEEN SAN FRANCISCO AND HONOLULU ON TWO THOUSAND METRE WAVELENGTHS
+
+## Cable 2 (28 Feb 1918), letters as transcribed (garbles left in)
+SSBLNODYYM DNCRVJJWIJ NAKGTRTLME UZJXXVYNYM SSMLFURLIW BEZRRLHMTT IPVPNHTKUT ZMSWDRHRVA JMWVQGZJJW FEXIEEHISZ IDRJQABMYL VLLXIJOSVB KSVINHFSXE OUGEKCWWPI UBFTJTFICO UQZWQZWIFS XEVKIMRRNG TKUTZMSLFR LDZLYLJJWO LLYVZJCNTC KICIDAIWKM GKYEERMSOG ILCMBMOXQA MCQIOXNHJD TVUZNWFFZR EIYDKCSXIF OSRLIIMVPE ERMSVJUNUJ SHGZZTVCSZ IFOSRLIQFK YRJMP
+FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYFEBRUA RYFEBRUARY FEBRUARYFE BRUARYFEBR UARYF
+NOAUTOMATI CWIRELESHS TATIONSUSE DBETWEENHO NOLULUANDS ANFRANCISC OPERIDSTAT IONSCANREC EIVEWGILES ENDINGCERI ODALLWAVEL ENGTHSUSED FOURTHOUSA NDMETERSOR ABOVEPERIO DSUSPICIOU SAUTOMATIC STATIONHEA RDINTHISCO UNTRYSINCE FEBRJARYFI FTEENTHONP OLLOWINGWA VELENGTHSF ORTITWOHUN DREDTENTHO USANDELEVE NTHOUSANDL NDFIFTEENV HOUSANDMET ERSOK
+= NO AUTOMATIC WIRELES[S] STATIONS USED BETWEEN HONOLULU AND SAN FRANCISCO PERI[O]D STATIONS CAN RECEIVE W[H]ILE SENDING [P]ERIOD ALL WAVELENGTHS USED FOUR THOUSAND METERS OR ABOVE PERIOD SUSPICIOUS AUTOMATIC STATION HEARD IN THIS COUNTRY SINCE FEBR[U]ARY FIFTEENTH ON [F]OLLOWING WAVELENGTHS FORT[Y] TWO HUNDRED TEN THOUSAND ELEVEN THOUSAND [A]ND FIFTEEN [T]HOUSAND METERS &lt;OK&gt;
+
+## Garbles in cable 2 (group.letter: cipher read -&gt; cipher needed; Morse read / needed; word)
+2.9	i -&gt; t	.. / -	WIRELES[S]
+9.6	g -&gt; h	--. / ....	W[H]ILE
+10.7	h -&gt; u	.... / ..-	[P]ERIOD *
+21.5	d -&gt; o	-.. / ---	FEBR[U]ARY
+22.10	g -&gt; w	--. / .--	[F]OLLOWING
+25.4	z -&gt; p	--.. / .--.	FORT[Y]
+28.10	j -&gt; y	.--- / -.--	[A]ND *
+29.10	z -&gt; x	--.. / -..-	[T]HOUSAND
+* overstruck letter on the Auckland copy.
+PERI[O]D: an O left out of the plaintext by the encipherer (the key stays in step).
+The final OK and the number 17527 are outside the text and not interpreted.</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/reading.md">reading.md</a></p><pre># Established text (English, telegraphic; punctuation added, PERIOD written as a comma + period)
+
+Restored letters (the cipher has another letter, see decryption.txt): wireles[s], peri[o]d, w[h]ile, [p]eriod, febr[u]ary, [f]ollowing, fort[y], [a]nd, [t]housand. The two final letters OK are not interpreted.
+
+**Cable 1, Auckland to San Francisco, 18 Feb 1918.** Are automatic wireless stations working between San Francisco and Honolulu on two thousand metre wavelengths?
+
+**Cable 2, Washington to Auckland, 28 Feb 1918.** No automatic wireless stations used between Honolulu and San Francisco, period. Stations can receive while sending, period. All wavelengths used four thousand meters or above, period. Suspicious automatic station heard in this country since February fifteenth on following wavelengths: forty two hundred, ten thousand, eleven thousand and fifteen thousand meters.</pre></details>
+<details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/translation.md">translation.md</a></p><pre># Plain sense
+
+18 February (Winslow): “Are automatic wireless stations working between San Francisco and Honolulu on two thousand metre wavelengths?”
+
+28 February (Washington): “No automatic wireless stations used between Honolulu and San Francisco. Stations can receive while sending. All wavelengths used four thousand meters or above. Suspicious automatic station heard in this country since February fifteenth on following wavelengths: forty-two hundred, ten thousand, eleven thousand and fifteen thousand meters.”</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/auckland1918/key.txt">key.txt</a></p>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/auckland1918.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">05</span> Sources</h2>
+<ul>
+<li>NARA, RG 59, Central Decimal File 1910&ndash;29, 763.72/9377, microfilm M367 roll 83, images 0110&ndash;0114: <a href="https://catalog.archives.gov/id/27107744">catalog.archives.gov/id/27107744</a> (public domain; not reproduced here).</li>
+<li>Brice Dudout, <a href="https://bdudout.github.io/europe-chiffree/en/documents.html#auckland-1918">Europe chiffr&eacute;e, Auckland 1918</a>.</li>
+</ul>
+<p class="muted">Working files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/auckland1918">targets/auckland1918/</a> in the repository.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Cables: US National Archives, RG 59, 763.72/9377, M367 roll 83 (public domain); reading by Brice Dudout, Europe chiffr&eacute;e</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="adfgvx.html" rel="prev">&larr; ADFGVX 1918</a><a href="tokyo1932.html" rel="next">Tokyo reads the State Department 1932 1932 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=8aa864f8" defer></script>
+<script src="solve-replay.js?v=20261027c" defer></script>
+<script src="site.js?v=20261027c"></script>
+</body>
+</html>

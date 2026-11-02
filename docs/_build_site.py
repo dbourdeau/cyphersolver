@@ -2274,6 +2274,11 @@ PAGES = [
          title='Twenty-two garbled ADFGVX messages of November 1918',
          blurb='German radio messages from the Eastern Front on Schmeh&rsquo;s list of ADFGVX messages that would not decrypt. The keys were published in 2017; the messages fail because letters were lost in transmission. The known keys were applied with a search for up to two garbled blocks: nine messages decrypt (as in the 2017 comment thread), three in part, and ten give nothing under any of the fifteen keys.',
          quote='9 solved &middot; 3 partial &middot; 10 open &middot; best open score &minus;6.9 against &minus;4.4 to &minus;6.0 solved'),
+    dict(slug='auckland1918', label='Auckland cables 1918', year='Feb&ndash;Mar 1918', y=1918.14, place='Auckland &harr; Washington', st='solved', stt='key recovered from ciphertext-only',
+         title='The Auckland cables, February 1918',
+         blurb='Two cables between the American Consul-General at Auckland and Washington about an unknown automatic wireless transmitter heard in New Zealand. Both are a Vigen&egrave;re with the key FEBRUARY, found from the repeats in the reply by Brice Dudout and confirmed on the outgoing cable; every word is read.',
+         quote='&ldquo;Are automatic wireless stations working between San Francisco and Honolulu on two thousand metre wavelengths?&rdquo;',
+         rights='Cables: US National Archives, RG 59, 763.72/9377, M367 roll 83 (public domain); reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='tokyo1932', label='Tokyo reads the State Department 1932', year='1932', y=1932.4, place='China, Tokyo &rarr; Washington (intercepted in Japan)', st='partial', stt='read in part',
          title='Tokyo reads the State Department, 1932 (Japanese Navy copies of American telegrams)',
          blurb='Sixteen bundles of the Japanese Navy Minister&rsquo;s records for 1932 hold about 850 intercepted American telegrams, copied as the clear text the Navy&rsquo;s cryptanalysts had recovered, with no cipher groups (JACAR C05022467800&ndash;C05022469300). Brice Dudout inventoried them, transcribed eight bundles and compared 53 State Department telegrams with FRUS: about 77% of the words recovered, 45&ndash;95% by telegram, and the confidential passages not read. The wrong words are alphabetical neighbours of the true ones (63 of 137 share the initial against 6.3% for shuffled controls), which fits a one-part code and is compatible with the Gray code. Contributed by Brice Dudout.',
@@ -4047,6 +4052,7 @@ IMAGES['dedem1799'] = ('dedem1799_p2.jpg', 'R1895, image 2 (turned upright): the
 IMAGES['waddall1656'] = ('waddall1656_tsp5_p337.jpg','The cipher words in Waddall&rsquo;s clear frame', 'Thomas Birch, A Collection of the State Papers of John Thurloe (1742), vol. 5 p. 337, via the Internet Archive')
 IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the telegram: UNIEK &ndash; CXNKVNED, JJTRRK, ISLX &ndash; KFYHJEER', 'National Archives, RG 109, naId 3854726, image 1, via the National Archives Catalog')
 IMAGES['milroy'] = None
+IMAGES['auckland1918'] = None
 IMAGES['feynman'] = None
 IMAGES['greenhow1861'] = ('greenhow1861_lead.jpg', 'Side 1, lines 4&ndash;10: &hellip;ck is hourly expec[r]ted. they beleive this: the atta[ck] will [b]e simultaneou[s] &hellip;', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 1634036, image 1, via the National Archives Catalog')
 IMAGES['jordan1861'] = ('jordan1861_lead.jpg', 'The left block of the burnt fragment, inverted: HAR with &ldquo;h a r&rdquo; under it, SCOTT, HANS FIELD FORTIFICATION', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 6925618, image 1, via the National Archives Catalog; inverted and contrast-stretched here')
