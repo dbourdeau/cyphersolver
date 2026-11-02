@@ -1,0 +1,18 @@
+# Validation of key K7 (key_K7.json, SHA-256 8ca16a1d...): ONE measurement on a fresh pair named before download.
+# Cipher: AGS PTR,LEG,2,1,99 (PARES 12987701; letter from Vitoria, 5 Dec 1521), image 2, second cipher passage, 10 lines,
+# 254 tokens, transcribed and frozen before any reading of the plain text. Plain: Danvila, MHE XXXVIII (same letter,
+# "(En cifra.) Ahora platicamos con los alemanes..."). 13 tokens excluded (abbreviations, and the plain words glimpsed while
+# locating the letter: "con los alemanes que se dize son", exclusion declared before transcription). 200 shuffled-key controls
+# (seed 20261028). Criterion fixed in advance: characters >= 0.85 and >= best control + 0.30; words reported.
+real: characters 0.882 (n=170); code groups 0.789 (n=71); words 0.770 (n=135); excluded tokens 13 / 254
+characters: controls median 0.041, p99 0.159, max 0.176; rank 1/201
+code groups: controls median 0.000, p99 0.085, max 0.211; rank 1/201
+words: controls median 0.007, p99 0.096, max 0.119; rank 1/201
+CRITERION: 0.882 >= 0.85 and 0.882 >= 0.176 + 0.30 = 0.476 -> K7 VALIDATED
+
+# History (all single measurements on held-out pairs, each pair then moved to training):
+# K1 on 2,1,30 (13 Nov 1520): characters 0.636 (controls max 0.212).
+# K3 on 2,1,68 (15 Mar 1521): characters 0.851 but words 0.541 -> first version withdrawn on 28 Oct 2026.
+# K4 on 2,1,85 (8 Aug 1521) vs 2,1,83: characters 0.783 -> failed.
+# K6 on 2,1,88 (30 Aug 1521) vs Danvila: characters 0.813 -> failed.
+# K7 = training letters 2,1,23, 30, 32, 61, 68, 70, 71, 73, 85, 88 (+ sign shapes re-read blind by Brice Dudout on 3 plates).
