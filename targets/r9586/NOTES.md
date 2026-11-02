@@ -10,7 +10,8 @@ docs/castelcicala1816.html). Shared material stays there: the DECODE metadata (`
 git-ignored, not public domain; main checkout `targets/castelcicala1816/img/IMG_R9586_*`).
 
 Catalogue items 166 (R9588) and 167 (R9586) were restored on 14 Oct 2026, narrowed to these records, as
-"attempted, open".
+"attempted, open". Removed 2 Nov 2026 as partly read on the strength of a few glosses, then restored the same day as
+one entry, catalogue 166, because both letters are in one code (167 merged into it).
 
 ## The letters
 

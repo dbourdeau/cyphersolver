@@ -1751,6 +1751,70 @@
    }
   },
   {
+   "id": 166,
+   "counted": true,
+   "year": 1816,
+   "date": "undated (1816–23?)",
+   "title": "Principe di Castelcicala to Naples, two undated letters in a second code (R9586, R9588)",
+   "correspondents": "Fabrizio Ruffo, principe di Castelcicala → Naples (recipient not named on the leaf)",
+   "place": "Paris, France",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1801-1900",
+   "shelfmark": "ASNa, Ministero degli affari esteri 2337 (DECODE R9586, R9588)",
+   "folio_note": "",
+   "cls": "C",
+   "status": "Narrowed 14 Oct 2026 (one key per entry) to R9588; the other 14 records of the item are in the Segreteria di Stato code and read in part in targets/castelcicala1816/. R9588 is in a second code (groups mostly 100–1100), shared only with R9586 (item 167); 432 groups transcribed (targets/r9586/), sparse pencil syllabic glosses; not attacked yet. Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "A letter of the Neapolitan ambassador in a code not otherwise used in the series; the pencil glosses may give a crib.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Scores of entry 166 carried over unchanged when it was narrowed to R9588 (14 Oct 2026).",
+   "verify": "Align the pencil glosses with their groups (targets/r9586/transcripts/R9588.txt), then extend through repeats with R9586.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R9588",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/9588"
+    }
+   ],
+   "seen": "image",
+   "source": "DECODE",
+   "decode_ids": [
+    9586,
+    9588
+   ],
+   "scored": "vetted",
+   "outcome": "attempted, open",
+   "known": "R9588: 432 groups transcribed, sparse pencil syllabic glosses noted (r9586.html). Former siblings in the Segreteria di Stato code: key rebuilt from four interlinear decipherments, 46.7% of groups valued, no letter reads through (castelcicala1816.html).",
+   "open": "All 969 groups (R9586 537, R9588 432); not attacked. The few pencil syllable glosses (about 20-30 groups on each letter) are an untried crib.",
+   "as_of": "2026-10-21",
+   "workable": true,
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: images)",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L08; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "scan",
+     "where": "DECODE R9586 pp.1-3 and R9588 pp.1-2, fetched and viewed 2 Nov 2026 (batch L08); ASNa, Ministero degli affari esteri, busta 2337.",
+     "extent": "R9586: 537 groups on 3 pages. R9588: 432 groups on 2 pages. About 20-30 groups glossed on each letter.",
+     "cipher": "Plain numeric code (dot-separated groups 101-1858, a few 6000+), no clear text. A contemporary hand glossed a handful of groups with Italian syllables; no running decipherment is written on or with either letter."
+    },
+    "prior_art": {
+     "decode": "DECODE R9588 Non-decrypted, no key attached; only R9586 shares this code.",
+     "tomokiyo": "Not mentioned on unsolved.htm (fetched 2 Nov 2026); no Castelcicala page found by search.",
+     "lasry": "No Lasry item on Castelcicala or ASNa Esteri 2337 found (web search).",
+     "edition": "No edition: search \"Castelcicala ambasciatore Londra cifra ASNa Esteri 2337\" gave only biographies of Fabrizio Ruffo and a general article on Neapolitan diplomatic ciphers (riviste.unimi.it), not this code.",
+     "literature": "Three web searches (Castelcicala cifra, Ruffo Londra cifrario, DECODE) found no study of this second code."
+    },
+    "key_check": "Segreteria di Stato key.tsv of the sibling letters (162 groups, targets/castelcicala1816) applied to R9588 tokens: only 28 of 432 have an entry and the frequent groups 224, 1698, 784, 319 are absent, so it is another code; 1043 and 294 are frequent here but the sibling values (desidera, dati) were not tested for sense.",
+    "duplicates": "R9588 and R9586 are different letters (first groups 483.1672.268... against 436.312.949...) in one system; known.py R9588/Castelcicala: entries 166/167 and targets/r9586 only.",
+    "verdict": "open"
+   },
+   "restored_from": "removed_2026-11-02 #166, #167"
+  },
+  {
    "id": 169,
    "counted": true,
    "year": 1525,
@@ -2757,6 +2821,85 @@
     "duplicates": "known.py 'fr. 3993', 'Nevers', 'Villeroy', 'nevers1595' (2 Nov): the item is catalogue 277 only; fr. 3993 no. 133 (18 Aug 1595, next letter to Villeroy) is all clear; no other record of the same letter.",
     "verdict": "open"
    }
+  },
+  {
+   "id": 279,
+   "counted": true,
+   "year": 1648,
+   "date": "1648",
+   "title": "Keresdi Bethlen collection, letter of 1648 in a substitution of its own (R4941)",
+   "correspondents": "unknown → unknown (Transylvania)",
+   "place": "Transylvania",
+   "language": "Hungarian",
+   "region": "Central Europe",
+   "period": "1611-1650",
+   "shelfmark": "Romanian National Archives, Cluj, Keresdi_Bethlen_15-05 (DECODE R4941)",
+   "ark": "",
+   "folio_note": "",
+   "cls": "C",
+   "seen": "image",
+   "source": "DECODE",
+   "status": "Checked 22 Sept 2026: DECODE R4933-R4942 are N/A with no decryption attached, and no published reading was found; the collection is at the Romanian National Archives in Cluj, not Sibiu. Split by system 14 Oct 2026 (one key per entry). Narrowed 23 Oct 2026: R4937, R4940 and R4942 read with the Bethlen family key recovered ciphertext-only, and R4939 broken ciphertext-only in its own key and read (targets/transylvania1645/, transylvania1645.html); they leave the catalogue. Still open: R4936 (decoded with the family key, not read: g/q look-alikes the 1,704-px scan cannot separate), R4938 (three short spans decoded, one word unread), R4941 (a different substitution, targets/r4941/) and the Kemény XIX records R4933-R4935 (targets/kemeny1628/). Narrowed to the unread part and restored 2 Nov 2026.",
+   "why": "Transylvania under George I Rákóczi, around the peace of Linz (1645).",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 3,
+   "score_note": "Scored by hand from the new-solves sweep of 22 Sept 2026 (catalogue descriptions, Tomokiyo's cryptiana pages, Gallica notices, calendars and recent literature); not yet viewed on the image. Kind: solve candidate (no known key).",
+   "verify": "Add a Hungarian model to lang/; tokenise and anneal.",
+   "links": [
+    {
+     "label": "DECODE R4941",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/4941"
+    }
+   ],
+   "decode_ids": [
+    4941
+   ],
+   "scored": "vetted",
+   "prior_art": "open (checked 22 Sept 2026)",
+   "outcome": "attempted, open",
+   "known": "Bethlen family key (c=p, p=c, g=u, q=t) recovered ciphertext-only 23 Sept 2026; R4937, R4940, R4942 read with it and R4939 broken in its own paired alphabet, 23 Oct 2026 (transylvania1645.html).",
+   "open": "The whole cipher: Hungarian annealing on a provisional extract of pp.1-2 gave no coherent text; pp.3-4 not inspected (targets/r4941).",
+   "as_of": "2026-10-21",
+   "access": "online",
+   "access_note": "online (backfilled 28 Oct 2026 from the entry: link DECODE R4936 (https://de-crypt.org/decrypt-web/RecordsView/4936))",
+   "frame_check": {
+    "result": "confirmed",
+    "href": "https://de-crypt.org/decrypt-web/RecordsView/4936 page 1",
+    "frame": "R4936 p.1 (and p.2); R4934 p.1; R4938, R4941, R4935 pp.1-4 viewed only as thumbnails",
+    "saw": "R4936 p.1: Hungarian letter head (19 Zboron, 20 Gorliczen...) then numbered paragraphs 1 and 2 and a long letter-substitution cipher (roman lowercase letter strings like 'cyhxavoyvkinly...' in 20+ lines, ligatured Z/L capitals), with clear Hungarian words interspersed; p.2 continues. R4934 p.1: mixed numeral/sign cipher block of about 8 lines below a signature dated 12 ... 1617. R4938/R4941 thumbnails look like further letter-cipher paragraphs; R4935 pages look like clear text letters (not confirmed). No decipherment seen.",
+    "date": "2026-10-30",
+    "by": "claude frame check d02"
+   },
+   "decode_ids_open": [
+    4933,
+    4935,
+    4936,
+    4938,
+    4941
+   ],
+   "note": "R4934 carries its own interlinear decipherment (brown ink above the signs); treat as read at the time",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude vetting batch L02; narrowed 2 Nov 2026",
+    "seen": {
+     "kind": "scan",
+     "where": "DECODE R4941 images, fetched 23 Sept 2026 (targets/r4941, R4941-extract.txt from pp.1-2); thumbnails again in frame check d02, 30 Oct 2026.",
+     "extent": "R4941: 4 pp.; cipher extracted from pp.1-2, pp.3-4 not inspected.",
+     "cipher": "Letter-substitution cipher, listed on DECODE as alphabet, status N/A; a different substitution from the Bethlen family key. No decipherment is on the leaves seen."
+    },
+    "prior_art": {
+     "decode": "DECODE R4933-R4942 all status 4 (N/A) with no decryption attached; the DECODE list shows inline plaintext on R4934 and R4938, matching the interlinear letters seen on R4934.",
+     "tomokiyo": "Tomokiyo's Unsolved Historical Ciphers page (local copy unsolved.htm in the repo) grepped 2 Nov 2026: no Transylvanian or Bethlen item; web search found Lang's 'Real Life Cryptology' and Andea 2016 on Transylvanian ciphers, nothing on these letters.",
+     "lasry": "No Lasry paper or GL.htm entry on Bethlen/Kemeny letters found; the repo's own transylvania1645 target (2026) recovered the Bethlen family key ciphertext-only.",
+     "edition": "No edition of the Kemeny XIX 1628 or Keresdi Bethlen cipher letters found in web search; Lang 2018 (open access) discusses Hungarian cipher practice generally and was not checked page by page.",
+     "literature": "Lang, Real Life Cryptology (AUP 2018) and Andea (Anuarul Inst. George Baritiu 2016) cover the genre; neither names these records in the search snippets."
+    },
+    "key_check": "Bethlen family key (c=p, p=c, g=u, q=t, targets/transylvania1645) reads R4937, R4939, R4940 and R4942 but does not fit R4941, tested in targets/r4941. No other key held.",
+    "duplicates": "known.py Keresdi / R4941 (2 Nov 2026): only targets/r4941, targets/transylvania1645 and the removed entry 279; no second record of this letter.",
+    "verdict": "open"
+   },
+   "restored_from": "removed_2026-11-02 #279"
   },
   {
    "id": 280,
