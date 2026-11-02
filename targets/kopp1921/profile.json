@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "target": "kopp1921",
+  "title": "Kopp and Lutovinov to Chicherin, figure table, Berlin to Moscow, April-May 1921 (NARA M316 rolls 41-42; catalogue 669)",
+  "documents": [
+    {
+      "id": "kopp-16apr-p1",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316 roll 41, frame 0876",
+      "date": "16 Apr 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Berlin -> Moscow",
+      "places": {
+        "from": "Berlin",
+        "to": "Moscow"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 379,
+        "distinct": 151,
+        "unit": "code groups",
+        "measured": true,
+        "file": "kopp0876_ct.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "poor",
+        "notes": "Blurred carbon; 3/5/6/8 uncertain; one partial last line not transcribed."
+      }
+    },
+    {
+      "id": "kopp-16apr-p2",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316 roll 41, frame 0877",
+      "date": "16 Apr 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Berlin -> Moscow",
+      "places": {
+        "from": "Berlin",
+        "to": "Moscow"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 193,
+        "distinct": 101,
+        "unit": "code groups",
+        "measured": true,
+        "file": "kopp0877_ct.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "poor",
+        "notes": "Page 2 of the same telegram, signed Kopp; three or four groups lost at the start per the typist."
+      }
+    },
+    {
+      "id": "lutovinov-417",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316 roll 42, frame 0953",
+      "date": "23 May 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Berlin -> Moscow",
+      "places": {
+        "from": "Berlin",
+        "to": "Moscow"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 145,
+        "distinct": 92,
+        "unit": "code groups",
+        "measured": true,
+        "file": "lutowinoff417_ct.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Funkspruch Nr 417, signed Lutowinoff; sharp type; first group overstruck and left out."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "undetermined"
+    ],
+    "summary": "A 4-figure table with literal phrase repeats, so no additive on it: first pair in 01-09, 10-13, 15, or round 20-90; second in 01-31 or round 40-90. No value of any group is known. Larger 4- and 5-figure traffic in the same file is unread too.",
+    "symbol_kind": "digits",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "GC&CS read other Soviet links in 1921 (Tiltman); HW 12 and RG 457 6707N not seen; no reading of these messages found",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Named the target.",
+    "tools": [
+      "NARA OCR text",
+      "NARA catalogue OCR and images",
+      "simulated annealing",
+      "shared language engine with a Russian corpus from ru.wikipedia"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02"
+  },
+  "solution": [
+    {
+      "date": "2026-11-02",
+      "kind": "access",
+      "what": "Fetched the OCR of the nine M316 reels with research/nara_reels/reels.py and viewed the covering despatch 861.00/8575 (frames 041-0871, 0872).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "literature search",
+      "what": "Tiltman, Experiences 1920-1939: Soviet dinome tables under transposition, discriminant DELEGAT, read by GC&CS from April 1921 on the London link. Web searches found no reading of this traffic and nothing on the Murashenko method.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "statistics",
+      "technique": [
+        "repeat/pattern analysis",
+        "statistical test"
+      ],
+      "what": "Segmented 625 frames into 1,478 runs, 66,640 groups (OCR): counters every 25 groups, discriminant words, Austrian 0-19999 traffic, plain repeats on the Angora and Christiania runs, raised dinome IC on many 5-figure runs.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "transcription",
+      "what": "Transcribed four frames by eye: 042-0953, 042-0255 (sharp), 041-0876, 0877 (blurred).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "hypothesis",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring",
+        "key-structure hypothesis"
+      ],
+      "what": "First pair and second pair as chained consonant + vowel tables, annealed against Russian, with shuffled controls.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "statistics",
+      "technique": [
+        "statistical test"
+      ],
+      "what": "Mutual information between neighbouring pairs against shuffles: strong inside a group, none or weak from second pair to next first pair (Karakhan z 0.0, Kopp/Lutovinov z 2.2).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Second-pair stream as monoalphabetic Russian: -3.69 per character against -3.69 for the shuffled control and -2.11 for real text.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Aligned dinomes of the 5-figure runs: contact test and swap anneal to Russian; no Russian came out.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis",
+        "EM alignment",
+        "statistical test"
+      ],
+      "what": "Clustered 4-figure messages as the small table code plus a periodic numerical key (Nr 461). Periods 14 and 2 scored above shuffles, but 14 is the typed line length, only 9-15% of stripped groups fall in the known vocabulary, and no single odd-even difference stands out.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring",
+        "exhaustive search"
+      ],
+      "what": "Columnar widths 5-36 in both read directions, double columnar up to 5 x 5, with synthetic tests and shuffled controls; no text.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "literature search",
+      "what": "Lenin PSS 52 no. 314 (7 May 1921, in cipher to Kopp) compared with Moscow messages of that date: no fit shown. DVP IV crawl stopped after 22 pages when the site refused this machine.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis"
+      ],
+      "what": "The shared indicator 01135 as a shared key: the key from Nr 1883 applied to the other 01135 message at every gap from 0 to 120 scored -4.97, barely above random keys (best -5.07).",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "crib",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Scanned English corpora and two George Wither texts for a window matching the recovered key rank pattern: best 10/24, chance level; key source not found.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Small figure table as one letter per group under the corrected model: same score as shuffled text (-2.43 to -2.50 against -2.40 to -2.54); collapses into repeated letters.",
+      "result": "ruled out"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "Ciphertext-only attempts gave no group value; every hypothesis failed its control and no code book or plaintext was found.",
+    "contribution": [
+      "transcription",
+      "catalogue correction"
+    ],
+    "class": "not read",
+    "fraction_read": 0,
+    "key": "none",
+    "verification": [],
+    "notes": "Blocked on a code book, a matching plaintext or the HW 12 / RG 457 papers. The letter traffic in the same file is split off by key: lejava1921, voikov1921, voikov1921b, stomoniakov1921; karakhan1921 is a different table.",
+    "credits": []
+  }
+}

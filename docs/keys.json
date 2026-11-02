@@ -1,5 +1,7 @@
 {
  "keys": [
+{"id": "k-voikov1921", "label": "Voikov 1 June 1921 column key (24 columns)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1921, "note": "Recovered from the ciphertext by annealing."},
+{"id": "k-lejava1921", "label": "Lejava 5 April 1921 column key (11 columns)", "kind": "rebuilt here", "by": "cyphersolver", "year": 1921, "note": "Recovered from the ciphertext by annealing."},
 {"id": "k-vierra-feynman", "label": "Two alternating substitution alphabets for Feynman ciphers 2 and 3 (David Vierra)", "kind": "scholar's key", "by": "David Vierra", "year": 1953, "found": 2023, "note": "A1 = MANYREQUS.HVBCID.OLWGZX.K., A2 = JHAZTENYXMLOCUFBQVKPSGW.D.; used alternately word by word, even-length words reversed, word boundaries dropped. Published May 2023, re-applied here."},
 {"id": "k-r5316", "label": "Andreas Biragus (DECODE R5316, ASMi Carteggio Sforzesco cart. 1597 no. 16)", "kind": "DECODE key record", "by": "Milanese chancery", "year": 1448, "note": "One sign per letter, signs for et and Francesco Piccinino; undescribed on DECODE (dated 1450 there). Connected to BnF ital. 1585 f. 33 on 29 Oct 2026."},
 {"id": "k-r5323", "label": "Filippo Maria Duca di Milano (ASMi Carteggio Sforzesco cart. 1597 no. 23, DECODE R5323)", "kind": "DECODE key record", "by": "Visconti chancery (18th-century archive copy)", "year": 1446, "note": "Homophonic alphabet with up to six signs a letter, a full vowel-consonant syllable table, twelve word signs, about fourteen name signs and twelve nulls. Catalogued on DECODE with no names; identified for the Duke's 1446-47 slips in BnF ital. 1583-1584 (Oct 2026). A second copy of the same key is DECODE R1857 image 17."},
@@ -2397,6 +2399,8 @@
 {"id": "k-genes1638-k3f", "label": "Spanish embassy at Genoa, numerical cipher of 1638 (key K3f)", "kind": "rebuilt here", "by": "cyphersolver (Brice Dudout)", "year": 1638, "note": "Vowels 16-20, syllabic series of five numbers, disguised syllables and code signs; rebuilt on the pairs 3594,146/145, 143/142 and 169/168 of the same bundle and frozen before the held-out test on 3594,160/159 (0.896 of characters, 0.784 of words)."}
  ],
  "links": [
+{"key": "k-voikov1921", "target": "voikov1921", "how": "rebuilt from", "note": "Recovered from the ciphertext by annealing."},
+{"key": "k-lejava1921", "target": "lejava1921", "how": "rebuilt from", "note": "Recovered from the ciphertext by annealing."},
 {"key": "k-vierra-feynman", "target": "feynman", "how": "read unchanged", "note": "re-enciphering both plaintexts: 228 of 231 positions of no. 3, first 118 characters of no. 2"},
 {"key": "k-r5316", "target": "birago1448", "how": "read unchanged", "note": "all 513 signs of f. 33 on the key; checked against the clear duplicate f. 32"},
 {"key": "k-r5323", "target": "visconti1446", "how": "read unchanged", "note": "reads all twenty R5323 slips of Nov 1446 - Mar 1447; checked against the translations ff. 6 and 9 (96.5%, 96.9%); name signs and a few homophones added from use"},
@@ -3842,6 +3846,8 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-voikov1921"},
+{"source": "s-cyphersolver", "key": "k-lejava1921"},
 {"source": "s-cyphersolver", "key": "k-augur1874"},
 {"source": "s-cyphersolver", "key": "k-portstemarie1729"},
 {"source": "s-decode", "key": "k-r7501"},
@@ -4444,6 +4450,7 @@
 {"source": "s-cyphersolver", "key": "k-genes1638-k3f"}
  ],
  "unlinked": {
+  "kopp1921": "Not solved: no key recovered or identified.",
   "milroy": "Stager Cipher No. 7 route grid published by Richard Bean (cryptiana, 2026); two runs checked here, no key file rebuilt or reused",
   "duben1764": "Not read: no key found for the May 1764 letter. Key table 219 (targets/duben1764/payne2026/key219.txt) is not this letter's key; it decodes the cipher groups of Schück's printed letter 143 (February 1771), see payne2026/KEY219_PROVENANCE.md (PR #185).",
   "carlos1903": "deciphered from the decodes of the time (the card m0060 and the ink decode on m0058); no key: only four group values follow from the repeats, and the codebook was not found",

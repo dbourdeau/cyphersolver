@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "target": "karakhan1921",
+  "title": "Karakhan to Kopp, Nr 1979/S, Moscow to Berlin, 29 April 1921 (NARA M316 roll 42, frame 0255)",
+  "documents": [
+    {
+      "id": "nr1979",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316, frame 042-0255",
+      "date": "29 Apr 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Moscow -> Berlin",
+      "places": {
+        "from": "Moscow",
+        "to": "Berlin"
+      },
+      "language": "unknown",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 181,
+        "distinct": "unknown",
+        "unit": "letters",
+        "measured": true,
+        "file": "karakhan_ct.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Start lost to interference per the typist."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "undetermined"
+    ],
+    "summary": "A 4-figure table: first pair nearly always a digit 4-7 and an odd digit, second pair two adjacent digits; phrases repeat, so no additive. Values unknown.",
+    "symbol_kind": "digits",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "GC&CS read other Soviet links in 1921 (Tiltman); HW 12 and RG 457 6707N not seen; no reading of this message found",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Named the catalogue entry and asked to keep attacking the letter traffic.",
+    "tools": [
+      "NARA catalogue OCR and images",
+      "simulated annealing",
+      "lang engine with a Russian corpus from ru.wikipedia"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02"
+  },
+  "solution": [
+    {
+      "date": "2026-11-02",
+      "kind": "transcription",
+      "what": "Transcribed from the image.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Two-table letter anneal against Russian with shuffled controls.",
+      "result": "ruled out",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ]
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "No group value recovered.",
+    "contribution": [
+      "transcription"
+    ],
+    "class": "not read",
+    "fraction_read": 0,
+    "key": "none",
+    "verification": [],
+    "notes": "No other message in the OCR scan has this shape."
+  }
+}

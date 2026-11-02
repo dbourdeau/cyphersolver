@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "target": "lejava1921",
+  "title": "Lejava to Stomoniakov via Kopp, Nr 1196, Moscow to Berlin, 5 April 1921 (NARA M316 roll 41, frame 0787)",
+  "documents": [
+    {
+      "id": "nr1196",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316, frame 041-0787",
+      "date": "5 Apr 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Moscow -> Berlin",
+      "places": {
+        "from": "Moscow",
+        "to": "Berlin"
+      },
+      "language": "ru",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 167,
+        "distinct": "unknown",
+        "unit": "letters",
+        "measured": true,
+        "file": "m0405.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Complete; numbers in clear 01004-01720."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "transposition"
+    ],
+    "summary": "A columnar transposition of Russian in Latin letters: frequencies are Russian with no substitution, and the recovered key gives Russian text. Q is the soft or hard sign; punctuation is spelled out.",
+    "symbol_kind": "letters",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "GC&CS read other Soviet links in 1921 (Tiltman); HW 12 and RG 457 6707N not seen; no reading of this message found",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Named the catalogue entry and asked to keep attacking the letter traffic.",
+    "tools": [
+      "NARA catalogue OCR and images",
+      "simulated annealing",
+      "lang engine with a Russian corpus from ru.wikipedia"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02"
+  },
+  "solution": [
+    {
+      "date": "2026-11-02",
+      "kind": "access",
+      "what": "Fetched the OCR of the M316 reels and found runs of 5-letter groups, then fetched the frame image.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "statistics",
+      "what": "The letter traffic to Stomoniakov (2,310 letters, OCR) has Russian letter frequencies with no substitution.",
+      "result": "worked",
+      "technique": [
+        "frequency analysis"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "transcription",
+      "what": "Transcribed the message from the image, 167 letters.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Low-width scan with a shuffled control at each width: width 11 scored -3.47 against -4.47.",
+      "result": "worked",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Polished: -2.74, close to held-out Russian (-2.14).",
+      "result": "worked",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "verification",
+      "what": "Reads as one payment instruction with slips explained letter by letter.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {"validation": {"date": "2026-11-02", "verdict": "not applicable", "notes": "Transposition: letters are unchanged, so the token-key test does not apply; shuffled-letter controls are in the notes."}, 
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "The 11-column key came from annealing against a Russian model with no crib, and gives a coherent payment instruction.",
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "class": "read",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "decryption.txt, letters",
+    "key": "recovered",
+    "verification": [
+      "historical consistency"
+    ],
+    "notes": "Fedorovskii and Litvinov are identified from context, not confirmed.",
+    "texts": [
+      {
+        "doc": "nr1196",
+        "label": "Nr 1196, 5 April 1921",
+        "transcription": "m0405.txt",
+        "decryption": "decryption.txt",
+        "reading": "reading.txt",
+        "translation": "translation.md",
+        "language": "ru",
+        "state": "read",
+        "reading_review": {
+          "grade": "B",
+          "by": "claude-opus-5-5",
+          "date": "2026-11-02",
+          "note": "Read by the model as sentences item by item; no independent reader yet."
+        },
+        "read_share": 1.0,
+        "summary": "Moscow tells the Berlin trade office to inform Fedorovskii that an order has gone to Litvinov to transfer fifty thousand gold rubles to Berlin, to pay for the orders of the Scientific-Technical Department."
+      }
+    ],
+    "key_file": "m0405.txt.key.json"
+  }
+}

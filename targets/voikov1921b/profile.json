@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "target": "voikov1921b",
+  "title": "Voikov to Stomoniakov, numbers 01135-35283, Moscow to Berlin, 1 June 1921 (NARA M316 roll 42, frame 1272)",
+  "documents": [
+    {
+      "id": "cont",
+      "shelfmark": "NARA RG 59, 861.00, microfilm M316, frame 042-1272",
+      "date": "1 Jun 1921",
+      "year": 1921,
+      "country": "Soviet Russia",
+      "route": "Moscow -> Berlin",
+      "places": {
+        "from": "Moscow",
+        "to": "Berlin"
+      },
+      "language": "ru",
+      "pages": 1,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the file; Bristol reports none."
+      },
+      "length": {
+        "tokens": 398,
+        "distinct": "unknown",
+        "unit": "letters",
+        "measured": true,
+        "file": "msgB2.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "NARA M316 frame, RG 64 digital copy",
+        "image_quality": "good",
+        "notes": "Two parts around an interference gap of about 42 letters."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "transposition"
+    ],
+    "summary": "A columnar transposition of Russian in Latin letters: frequencies are Russian with no substitution, and the recovered key gives Russian text. Q is the soft or hard sign; punctuation is spelled out.",
+    "symbol_kind": "letters",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "unknown",
+      "where": "GC&CS read other Soviet links in 1921 (Tiltman); HW 12 and RG 457 6707N not seen; no reading of this message found",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Named the catalogue entry and asked to keep attacking the letter traffic.",
+    "tools": [
+      "NARA catalogue OCR and images",
+      "simulated annealing",
+      "lang engine with a Russian corpus from ru.wikipedia"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02"
+  },
+  "solution": [
+    {
+      "date": "2026-11-02",
+      "kind": "access",
+      "what": "Fetched the OCR of the M316 reels and found runs of 5-letter groups, then fetched the frame image.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "statistics",
+      "what": "The letter traffic to Stomoniakov (2,310 letters, OCR) has Russian letter frequencies with no substitution.",
+      "result": "worked",
+      "technique": [
+        "frequency analysis"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "hypothesis",
+      "what": "Same indicator as Nr 1883, so same key: every gap from 0 to 120 scored -4.97 at best, near random keys.",
+      "result": "ruled out",
+      "technique": [
+        "key-structure hypothesis"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "solver",
+      "what": "Own key at width 20, gap about 42: -3.09; opens prod, same vocabulary, some columns still misplaced.",
+      "result": "partial",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ]
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "Key partly recovered; the decode does not yet form sentences.",
+    "contribution": [
+      "transcription"
+    ],
+    "class": "not read",
+    "fraction_read": 0,
+    "key": "partial",
+    "verification": [],
+    "notes": "Continuation of voikov1921 by its opening, with a different key."
+  }
+}
