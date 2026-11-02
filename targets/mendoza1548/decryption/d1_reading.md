@@ -1,0 +1,7 @@
+… puedan quedar con ella y en liga con franceses; y al cabo [Fernés] solo se resuelve en [aceptar] qualquier recompensa, aunque sea ruin, por [sola] Placencia, quedando desta manera.
+
+Esta es toda la historia y el comento [a] la carta del Emperador. [Yo] [no] lo escrivo en ella por ser parte menudencias en particular y parte liviandades destos; pero por hazer lo que devo, y para información de los negocios, lo puede V. S. mostrar a [Monseñor], y si es menester a Su Majestad.
+
+Aquí entra la publicación del Ínterin. Después han acordado de meterlo a barato, [escriviendo] al Sfondrato que [sepa] [si] es menester imbiar los legados, y los ofrezca con condición que [hayan] de examinar el Ínterin [y] después [aprobarlo]. [Que] la priesa que Su Santidad da al [juizio] de la traslación es por [tornar] a travar la [plática], que piensan con el Ínterin queda [desasida]; y esto por hazer un poco de portada y mostrar ánimo.
+
+Después de haver leído la escritura de la ratificación hallo, como escreví, algunas locutiones españolas que no se dicen muy latinamente, y otras palabras que [podrían] estar mejor sin mudar la sentencia, y algunas reglas de gramática mal guardadas. Como este es mi oficio más [que] el [juzgar] de las sentencias, [puedo] [dezir] en ello mi parecer; [embiaré] con [el] primer [correo] [una] con [los] apuntamientos, porque temo [quedarme] [por] pedante, [y] [no] [querría] perder mi [reputación].

@@ -1,0 +1,307 @@
+{
+ "schema_version": 1,
+ "target": "mendoza1548",
+ "title": "Diego Hurtado de Mendoza, imperial ambassador in Rome, to Antoine Perrenot de Granvelle, bishop of Arras: cipher letter, Rome, 29 May 1548 (BNE MSS/20212/29/1)",
+ "documents": [
+  {
+   "id": "d1",
+   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/20212/29/1 (BNE Digital bdh0000172694); first part of the letter in MSS/7919/75",
+   "date": "29 May 1548",
+   "year": 1548,
+   "country": "Italy",
+   "route": "Diego Hurtado de Mendoza (Rome) -> Antoine Perrenot de Granvelle, bishop of Arras",
+   "language": "Spanish",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Interlinear syllables of the time over L01-L04 (L04 only its first words), L21-L25 and M1-M2. The whole letter, deciphered, is printed in Bertomeu Masiá 2009, doc. 34 (found during the attempt; used to align the unglossed lines)."
+   },
+   "length": {
+    "tokens": 702,
+    "distinct": 135,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/d1_transcription.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE Digital 'high' PDF: f. 1r (1069 x 1405 px) and f. 1v (left half of 2070 x 1427 px), read on slope-following crops at about 3x",
+    "image_quality": "poor",
+    "notes": "Signs 10-14 px high and vowel marks 2-3 px: most marks not seen, so a base sign often stands for several syllables. A large 8-loop (y) and the small m sign were first merged and then split; lines 5-19 were read twice. The largest image BNE serves."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "The Spanish chancery syllabary used in 1547-1548 by Pedro de Toledo, Charles V, Diego Hurtado de Mendoza and Granvelle (Bucuré 2025): consonant signs with vowel marks, syllable signs, single letters with homophones, double-consonant signs (ll), code groups (Su Majestad, Su Santidad, Vuestra Señoría, franceses) and dotted nulls.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 135,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "titles",
+    "common words",
+    "syllables"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "notes": "135 kinds of sign as transcribed: many are a base with a mark, and some marks are not seen on the scan. Homophones counted as seen: e has ʃ, ω, 5; a has n, ꝺ̂, 6; s has ꝺ and mo; r has d and the no-shaped sign. Two glyphs look like clear words: de (lo) and no (r)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Decipherment of the time between the lines over part of the letter (L01-L04, L21-L25, M1-M2). The whole letter, deciphered, in M. J. Bertomeu Masiá, La guerra secreta de Carlos V contra el Papa (Valencia/Murcia 2009), doc. 34, pp. 267-270. The cipher system (not this letter) in Bucuré, Estudios Románicos 34 (2025) 47-61.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "published key",
+   "published reading"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Outside contribution: Michael Brackx chose the target, set the rounds (find the decipherment, transcribe, rebuild the key, decode by hand, look for a printed edition, use it as a check when stuck), passed a Google CAPTCHA to open the edition's preview in Chrome, and approved each step. Transcription, key, decoder and reading were done by Claude Code under his direction.",
+  "tools": [
+   "BNE Digital viewer in a browser (JPEGs taken out of the PDF and cropped)",
+   "Google Books preview of the edition (Chrome)",
+   "python (dec1548.py)"
+  ],
+  "models": [
+   "Claude Opus 5.5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-02",
+  "last_date": "2026-11-02"
+ },
+ "solution": [
+  {
+   "date": "2026-11-02",
+   "kind": "access",
+   "what": "BNE Digital 'high' PDF of MSS/20212/29/1 opened in the viewer; JPEGs taken out of the PDF and cropped. No larger image: same JPEG in the page PDF, no IIIF, the older 1336 px image (Europeana) no longer served.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "what": "Faint interlinear syllables found over L01-L04 (catalogue: 'no decipherment noted'); read by position over the signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "literature search",
+   "what": "Bucuré 2025 reconstructs the same cipher from Neapolitan letters of 1547 and lists about 35 code words; dide, mta and vitis (written ritib here) occur in the letter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "what": "All 31 cipher lines transcribed on slope-following crops; the interlinear decipherment resumes at L21 and on f. 1v M1-M2.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Glossed lines aligned sign for syllable (L21-L23, L25, M2 in full; L01-L04 and L24 in part): 194 pairs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "Unglossed lines decoded with the gloss pairs, Bucuré's values and the sign families (t, m, p): desta manera, no lo escrivo en ella, en particular y parte, destos, de V.S. mostrar, menester a Su Majestad, publicación, traslación; two other readings of this stage (pues ha de ver, de partir) proved wrong.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "The large 8-loop (y) split from the small m sign it had been merged with; lines 5-19 read again in the sign names of the glossed lines.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "literature search",
+   "what": "The BNE record cites Bertomeu Masiá 2009; its Google Books preview prints the letter as doc. 34, dated 29 May 1548, first part in MSS/7919/75. The date checked on the image: Mayo, not março.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "The unglossed lines (the rest of L04, L05-L20, M3-M6) aligned sign by syllable with the text they carry, checked against the edition (424 pairs, kept apart in key_pairs_crib.txt): de lo, no r, e. lo, ȧ ha, ꝶ4 me, ɔo fo, ─ go, Ẍ pri, the name Fernés and the code franceses.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "dec1548.py decodes all 31 lines with the merged key, no hand corrections: 692 of 702 tokens valued, 178 with two values (vowel marks not seen). The reading supplies in brackets what neither decode nor gloss gives (34 places).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Bracketed places of the reading re-read on the image: four misread signs corrected (L06 a crossed y ÿ̶ se, not β; L10 ꝓo mo, not ꝓ; L12 7̇ and the dotted big loop ꝸ̇ ra, giving a barato; L12 ꝗ̈ cri, not a null), and the dotted ꝺ found to stand for da as well as que. Brackets 38 -> 34.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "what": "Sign names normalised to one Unicode form (NFC): Ṿ had been stored two ways and was missed by the decoder. L24's gloss aligned in part (ė ra, ri; ʒ jo, as ʒ yo in the 1554 key). Unread tokens 16 -> 10.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-02",
+   "verdict": "not applicable",
+   "notes": "Syllabary with homophones and unseen vowel marks: 135 sign types over 702 tokens (about 5 per type); the letter model cannot separate a reading from a fitted key on so few tokens per type. The reading rests on the decipherment of the time and the printed decipherment."
+  },
+  "class": "read",
+  "key": "partial",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "About a third of the key's pairs (194 of 618) come from the interlinear decipherment of 1548 on the letter; the rest (424) from aligning the unglossed lines with the printed decipherment (Bertomeu Masiá 2009). Words that neither the decode nor the gloss gives in full are bracketed in the reading.",
+  "parts": [
+   {
+    "label": "reading of the glossed lines (L01-L04, L21-L25, M1-M2)",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "complete",
+    "basis": "The interlinear syllables of 1548, aligned with the signs; the decode where they are faint."
+   },
+   {
+    "label": "reading of the unglossed lines (rest of L04, L05-L20, M3-M6)",
+    "method": "key recovered based on plaintext from external sources",
+    "extent": "complete",
+    "basis": "Decoded with the key; values the scan leaves open chosen by context and checked against the printed decipherment; 34 words or parts of words not given by the decode are bracketed as supplied."
+   },
+   {
+    "label": "key",
+    "method": "key recovered based on plaintext from external sources",
+    "extent": "partial",
+    "basis": "618 sign-syllable pairs over 120 sign types (194 from the 1548 glosses, 424 from the edition alignment); 99% of tokens valued; vowel marks of the base signs not seen."
+   }
+  ],
+  "first_break": false,
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.986,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcription/d1_transcription.md: 702 cipher tokens (dots excluded), 692 with a value or a null in dec1548.py; 178 print two values. The reading brackets 34 supplied words or parts of words.",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "brackx",
+    "role": "solution",
+    "note": "Directed Claude Code in transcribing the cipher of BNE MSS/20212/29/1, rebuilding the key, decoding the letter and correcting its date (catalogue #1268).",
+    "date": "2026-11-02"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Interlinear decipherment of 1548 on MSS/20212/29/1 (L01-L04, L21-L25, M1-M2)."
+   },
+   {
+    "who": "bertomeu",
+    "role": "prior solution",
+    "note": "La guerra secreta de Carlos V contra el Papa (2009), doc. 34: the letter printed with its cipher deciphered; used as a check."
+   },
+   {
+    "who": "bucure",
+    "role": "key or decipherment used",
+    "note": "Nápoles 1547: cartas cifradas y secretos de Estado (Estudios Románicos 34, 2025): partial key and code words of the same cipher."
+   }
+  ],
+  "gaps": [
+   {
+    "item": "vowel marks of base signs (V, ꝺ̇, ꝗ, ÿ, ÿʃ, aꝶ, ɔo)",
+    "blocker": "illegible",
+    "detail": "2-3 px on the 1069 px scan; 178 tokens keep two values"
+   },
+   {
+    "item": "34 words or parts of words in the reading not given by the decode or the gloss",
+    "blocker": "illegible",
+    "detail": "supplied by context and checked against the printed decipherment; marked [ ] in d1_reading.md"
+   },
+   {
+    "item": "10 sign types (10 tokens) without a value: one each in L01-L04, L09, L11, L17 and M1, and two in the end group of M6",
+    "blocker": "too-short",
+    "detail": "each met once or twice; the M6 ones come after the last word and are probably nulls"
+   },
+   {
+    "item": "MSS/7919/75, the first part of the letter",
+    "blocker": "needs-physical-access",
+    "detail": "not digitised on BNE Digital; the first part of the letter, outside this target"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "d1",
+    "label": "Rome, 29 May 1548 (MSS/20212/29/1)",
+    "transcription": "transcription/d1_transcription.md",
+    "decryption": "decryption/d1_decode.txt",
+    "reading": "decryption/d1_reading.md",
+    "translation": "decryption/d1_en.md",
+    "language": "es",
+    "state": "read",
+    "summary": "Farnese will take any compensation for Piacenza; the papal side means to use the Interim as a bargaining point through Sfondrato and the legates, and the Pope's haste over the translation of the Council is for show; Mendoza finds Spanish turns of phrase and faults of Latin grammar in the text of the ratification and will send his notes.",
+    "note": "The reading is the decode with the rebuilt key; glossed lines follow the decipherment of 1548. Values left open by the scan were chosen by context and checked against the printed decipherment; words the decode does not give are bracketed (NOTES.md, Reading)."
+   }
+  ],
+  "key_file": "key_1548.md",
+  "notes": "Contributed; reading_review to be recorded by the reviewer. Catalogue row 1268 should give the date as 29 May 1548 (not 29 Mar), say that the letter is partly deciphered between the lines, that its first part is MSS/7919/75, and that it is printed in Bertomeu Masiá 2009, doc. 34. contributors.json needs entries for bertomeu and bucure.",
+  "human_check": {
+   "date": "2026-11-02",
+   "by": "Michael Brackx (brackx)",
+   "passage": "d1, BNE MSS/20212/29/1 f. 1r: L21, L22 and the first half of L23 (después de haver leído la escritura de la ratificación hallo como escreví algunas locutiones españolas que), with the interlinear decipherment of 1548; and the unglossed L06-L07 (Emperador. Yo no lo escrivo en ella por ser parte menudencias en particular y parte liviandades)",
+   "result": "confirmed",
+   "note": "Glossed lines, on crops of the BNE image, strip by strip: the sign counts (3, 7, 8, 5; 4, 7, 6, 6; 4, 6) match the transcription, and each interlinear syllable stands over the sign it is paired with, with nothing over the dotted null in L22. Remarks: the last syllable of L21, over n̈, reads fa or fu rather than fi (the next line continues -ca-ción); in L22 vi could be read ui; the second half of L23 was not checked. Unglossed L06-L07 (no gloss, so sign counts and shapes only): counts 4, 9, 6, 7; 3, 8, 5, 7 match. Remarks: L06's sign then transcribed ∞o is written ɔo (the first o open, like an inverted c; renamed ɔo in the transcription, and a closed oo in L09 split from it); its ÿo has no dots; T° has an extra stroke and looks almost like I; the stroke before ꝓ° belongs to M; in L07 the dot after β sits closer to the following V. The crops, sign counts, shapes and gloss syllables were shown by Claude Code; the comparison with the image was the checker's own."
+  }
+ }
+}
