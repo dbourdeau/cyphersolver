@@ -1,0 +1,309 @@
+{
+ "1563": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Manrique 6 Jan 1554 (fd98f7be, cc. 16-17) and Bresegno 5 Oct 1548 (385ede35, cc. 15-16, 22).",
+    "extent": "Manrique 1554: one letter from Rome in Spanish; two paragraphs of dense symbol cipher (about 14 lines on c. 16r) between clear Spanish opening and closing lines; c. 16v and 17 blank except address. Bresegno 1548: whole page c. 15r in cipher (about 45 lines of symbol and digit signs) with a clear Spanish opening.",
+    "cipher": "Manrique: unknown monoalphabetic or homophonic symbol set (letter-like signs with stroke variants) plus digit-like signs; no decipherment, interlining or gloss on c. 16-17. Bresegno: the decipherment is bound in as c. 22 (clear Spanish page headed 'il decifrato del n. 8'), so that letter was read at the time and is not open."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: web search for 'Juan Manrique 1554 Ferrante Gonzaga' found nothing printed; the CSP Spain 1555 Manrique de Lara letter is a different date; Bresegno's 1548 content (Moron's account of the Fiesco confession) is in the clear c. 22 only.",
+    "literature": "Literature: Estudios Romanicos articles on Charles V ciphers (Juan Fernandez Manrique de Lara) found by search concern imperial ciphers, not this Rome-to-Ferrante letter; no study of these two letters found."
+   },
+   "key_check": "No Spanish imperial key for Manrique/Rome 1554 held in repo or DECODE harvest (known.py 'Manrique' only hits unrelated Ormanetto and Sinzendorff entries). Bresegno's c. 22 decipherment is a possible crib for the Rome 1548 signs, but Manrique 1554 is six years later and a different writer; no test run, so not ruled out. Narrow the lead to Manrique 1554.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Manrique, Bresegno, Brezeno terms: no other record.",
+   "verdict": "open"
+  },
+  "lead_updates": {
+   "folio_note": "Manrique 6 Jan 1554 cc. 16-17: cipher on c. 16r only; Bresegno 5 Oct 1548 cc. 15-16, 22 is deciphered (c. 22 bound clear text): treat as read; vetted open for Manrique only.",
+   "status_append": "Vetted 2 Nov 2026 on Estense IIIF scans: Manrique 1554 has no decipherment; Bresegno 1548 has one on c. 22."
+  }
+ },
+ "1564": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Rossi di San Secondo 4 and 8 Nov 1537 (2d0df6d1 cc. 31-32, 4a838739 cc. 33-34); Muzio 11 and 12 Jan 1550 (3b88f5b4 cc. 3-4, 9af96fa2 cc. 5-6). Gosellini 1555 (cc. 7-10) is not among the lead's links and was NOT viewed.",
+    "extent": "Rossi 1537: two letters, both almost entirely in a dense symbol cipher (about 25 lines on c. 31r and 25 on c. 32r in the first; about 22 lines in the second), clear text only in the address and a closing sentence. Muzio 1550 (Rome, signed 'Il Mutio'): clear Italian with a block of about 18 lines of cipher on c. 3r and shorter blocks on c. 4r; the second letter has about 6 cipher lines.",
+    "cipher": "Rossi: homophonic symbol alphabet (about 20 shapes plus dots) written without word breaks; Muzio: letter-and-digit signs with loops, a different system. No decipherment, interlinear text or contemporary key on any leaf; versos blank except addresses."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: Ronchini's 1864 Lettere di Girolamo Muzio from the Parma archive print a Muzio letter to Ferrante Gonzaga about the Mendes Benveniste inheritance; web search did not show whether the Modena autographs of Jan 1550 are among them or whether cipher passages were read there. Not verified.",
+    "literature": "Literature: Estense cipher studies found in web search ('La parola incognita. Cifre e cifrari alla Corte estense'; Cavicchioli on Francesco I's Roman correspondence) cover the ASMo Cancelleria cifrari and content, not these autograph letters; nothing decrypts them."
+   },
+   "key_check": "No San Secondo or Muzio key held in repo (known.py: no hits for Rossi San Secondo, Muzio Girolamo, Gosellini). The deciphered sibling in the fonds named in the lead (Francesco d'Este to Ferrante, 13 Apr 1546, Lettera E cc. 42-45) is a different writer and year; it was not tested here, so it remains an untried crib source.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself (Muzio hits are Muzio Attendolo Sforza, unrelated).",
+   "verdict": "open"
+  }
+ },
+ "1565": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Camillo Capilupi 8 May 1545 (13076923, cc. 15-16), 23 Feb 1546 (ce5fb6b7, c. 48), 28 Feb 1546 (d2db1750, cc. 49-50).",
+    "extent": "8 May 1545 (Worms): about 3 pages (c. 15r to 16r) nearly all in cipher, about 25-30 lines per page, clear only a few lines and the dateline 'Da Vormatia alli 8 di Maggio 1545'. 23 Feb 1546: about 8 lines of unbroken digit strings (about 400 digits) inside clear Italian. 28 Feb 1546: a block of about 7 lines of digit strings on c. 49r, rest clear Italian.",
+    "cipher": "1545 letter: symbol set (letter-like shapes with superscript marks); the 1546 letters: continuous digit strings (a numeric table or nomenclator, digits 1-9 only). No decipherment on any leaf; the lines on c. 16v of the 1545 letter are a later plain-Italian docket summarising the content, not a decipherment."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: web search for Camillo Capilupi with Ferrante Gonzaga, Worms 1545 and cipher found nothing printed; the Capilupi correspondence is in the Mantua Gonzaga archive and ASMo and was not shown printed with the cipher resolved. Not exhaustively checked.",
+    "literature": "Literature: Masaryk University and Verbum studies of Gonzaga-archive ciphers turned up in web search but concern Mantuan ciphers c. 1400 and the Gonzaga archive generally, not these letters; no study of Capilupi ciphers found."
+   },
+   "key_check": "No Capilupi or Gonzaga key of 1545-46 held in repo; known.py 'Capilupi' finds no entry other than the lead. The 1546 digit strings were not run against any key.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Capilupi term gives no other record.",
+   "verdict": "open"
+  }
+ },
+ "1566": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Ercole II to Cornelio Bentivoglio 28 May 1559 (165f6b9d, cc. 50-51), Claudio Ariosto 15 Jul 1559 (f3fe3e9c, c. 1), Alfonso II to Claudio Ariosto 14 Apr 1576 (898fdfe5, cc. 76-77).",
+    "extent": "Ercole II 28 May 1559: about 40 lines on c. 50r of symbol lines set between clear lines of Italian (closing 'Da Ferrara alli 28 di Maggio 1559' clear). Ariosto 15 Jul 1559 (Milan): clear letter with two lines of a Greek-and-Roman letter-like symbol cipher. Alfonso II 14 Apr 1576: whole letter in cipher over 3 pages (about 60 lines of lower-case letter-forms in groups), a clear closing paragraph.",
+    "cipher": "Three different systems: Ercole 1559 symbols (about 25 shapes), Ariosto 1559 mixed Greek/Roman forms with superscripts, Alfonso 1576 Latin letter-forms. No decipherment, interlinear or gloss on any leaf (the docket 'Este Ercole II Duca di Ferrara' is a catalogue annotation)."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: no edition found by search for Ercole II d'Este to Bentivoglio 1559 or Alfonso II to Ariosto 1576 cipher letters; the ASMo Cancelleria ducale Cifrario (8 buste) is archival, not printed.",
+    "literature": "Literature: Estense cipher studies found in web search ('La parola incognita. Cifre e cifrari alla Corte estense'; Cavicchioli on Francesco I's Roman correspondence) cover the ASMo Cancelleria cifrari and content, not these autograph letters; nothing decrypts them."
+   },
+   "key_check": "No Este key of 1559-1576 held in repo (known.py Bentivoglio/Ariosto hit only Mazarin to Bentivoglio 1646 and unrelated notes). ASMo Cifrario boxes not consulted (not online). Not ruled out.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Ariosto, Bentivoglio, Autografoteca searched, nothing for these letters.",
+   "verdict": "open"
+  }
+ },
+ "1567": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Francesco I d'Este to Bolognesi, Modena, 7 Feb 1630 (466c929f cc. 7-8), 15 Feb 1630 (3ac41f1e cc. 9-10), 15 Feb 1630 (4b2f1bef cc. 11-12), 22 Feb 1630 (92cc5498 cc. 16-17). The other letters of the lead (1634-1647) were not among the links and were not viewed.",
+    "extent": "Four letters of the duke countersigned by Don Fulvio Testi (1630): each a short clear opening followed by 12-20 lines of cipher, about 250-450 signs per letter; versos blank apart from addresses.",
+    "cipher": "One system across the four letters: a small set of plus-sign, angle-bracket, v/n/l-like and numeral-like signs written without word breaks (about 20 shapes), a monoalphabetic or homophonic substitution of the Modenese chancery. No decipherment, interlining or key on any of the 16 leaves."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: Doglio's Lettere di Fulvio Testi (Laterza 1967, vols 1609-33, 1634-37, 1638-46) was identified by web search but not opened; it prints Testi's own letters, and whether these ducal ciphers to Bolognesi are printed or resolved there was not checked.",
+    "literature": "Literature: Cavicchioli's study of Francesco I's Roman correspondence was found by search; it covers content, not these ciphers. No study decrypting them found."
+   },
+   "key_check": "No Este chancery key of 1630 held in repo (known.py Testi/Bolognesi/Forni/Ottonelli: no relevant hit). ASMo Cancelleria Cifrario not consulted. The lead says two 1630 letters are deciphered (c. 15 and c. 22): those leaves were not among the links and were not viewed, so they remain an untried crib source.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Testi, Bolognesi, Forni, Ottonelli: no other record (the Testi hits are the word 'testing').",
+   "verdict": "open"
+  }
+ },
+ "1568": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Starhemberg to Riva, Vienna 31 May 1721 (ab7fcc2d cc. 17-18), 20 Mar 1726 (3e57081d cc. 21-22), 19 Feb 1727 (e7f7d383 cc. 23-24), 27 Feb 1726 (c9644661 cc. 5-8). The Selvatico 1722 letters were not among the links and were not viewed.",
+    "extent": "31 May 1721: about 12 lines of dot-separated numbers inside clear Italian. 20 Mar 1726: whole letter c. 21r-22v mostly in number groups (about 70 lines, groups 1-330) with clear Italian lines between. 19 Feb 1727: clear French with one run of about 6 lines of numbers on c. 23r. 27 Feb 1726: the number runs carry an INTERLINEAR decipherment written above them (cc. 5-6) and the same closing group 4.115.33.326.",
+    "cipher": "Numeric nomenclator with dot-separated groups from 1 to about 330 (single-letter values and word codes, underlined groups for nulls or code words). The 27 Feb 1726 interlinear readings supply the key for the same code, and the 20 Mar 1726 and 19 Feb 1727 letters carry the same closing group 4.115.33.326, so they are in the same system and are not ciphertext-only."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: Lindgren and Timms, 'The correspondence of Agostino Steffani and Giuseppe Riva, 1720-1728' (RMA Research Chronicle) was found by search and prints Riva's Steffani letters; it was not opened and whether it covers the Starhemberg number passages was not checked.",
+    "literature": "Literature: Riva's London role (Senesino negotiations, Steffani) is documented in Cambridge Opera Journal and RMA articles; none discusses Starhemberg's number code."
+   },
+   "key_check": "A key exists in the file itself: the interlinear decipherment of the 27 Feb 1726 letter (cc. 5-8) of the same writer and code. Applying it to the 20 Mar 1726 and 19 Feb 1727 letters (same closing group) is a key lookup plus code-table extension, not a ciphertext-only break; not run in this vetting.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself (Starhemberg hits are Palm to Starhemberg 1727 and the Goess/Mercy 1757 entries, different code and persons).",
+   "verdict": "key_lookup",
+   "closed": "Same-writer interlinear decipherment (27 Feb 1726, cc. 5-8) supplies the code for the 1726-27 letters; read by extending that key, not an open ciphertext-only target."
+  }
+ },
+ "1569": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Olivazzi 17 Apr 1725 (849b6bb7 cc. 1-2), Antonio Ferdinando Gonzaga duke of Guastalla 24 Jul 1717 (848189d6 cc. 15-16), Girolamo Augustoni 9 Oct 1612 (516e565f c. 1).",
+    "extent": "Olivazzi 1725: Italian letter of about 40 lines with a cipher block of about 55 number groups on c. 2r. Guastalla 1717: the whole letter, 4 pages, in a figure cipher (about 150 lines of digit groups, signature and a clear closing sentence). Augustoni 1612: clear Italian opening and about 20 lines of a Greek-letter-like substitution, rest clear.",
+    "cipher": "Three unrelated systems: Olivazzi numeric nomenclator; Guastalla digit figure cipher (digits 3,4,5,6,8 dominate); Augustoni Greek-and-Latin letter forms (monoalphabetic with variants). No decipherment or interlinear anywhere (recto and verso viewed)."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: no edition found; the Guastalla duke 1717 and Augustoni 1612 letters have no printed text in any source turned up by search (Olivazzi and Augustoni could not be identified in search results).",
+    "literature": "Literature: Estense cipher studies found in web search ('La parola incognita. Cifre e cifrari alla Corte estense'; Cavicchioli on Francesco I's Roman correspondence) cover the ASMo Cancelleria cifrari and content, not these autograph letters; nothing decrypts them."
+   },
+   "key_check": "No key held in repo for Guastalla 1717, Olivazzi 1725 or Augustoni 1612 (known.py: no hit for the three names or Guastalla). No Guastalla chancery key available online. Not ruled out.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Augustoni, Olivazzi, Guastalla searched: no other record.",
+   "verdict": "open"
+  }
+ },
+ "1570": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "scan",
+    "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Vittoria Gonzaga, Santa Chiara: 2 Apr 1686 (c9e23554 cc. 3-4), 13 Apr 1688 (bf531a45 cc. 11-12), 4 Sep 1691 (e7f8b77c cc. 22-23), 16 Oct 1691 (6d986a52 cc. 20-21).",
+    "extent": "Four letters to a brother, each in clear Italian with one to three short blocks of number groups: 2 Apr 1686 about 20 lines; 13 Apr 1688 two blocks of about 4 lines; 4 Sep 1691 two blocks of about 3 lines; 16 Oct 1691 two blocks of 8-10 lines. About 400 groups in all.",
+    "cipher": "Short numeric nomenclator: groups of 2-4 digits strung together (recurring 1550, 50, 30, 75, 10, 2, 507) without word breaks, run on within clear sentences. No decipherment, interlining or key on any leaf."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
+    "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
+    "edition": "Edition: no edition found; web searches for Vittoria Gonzaga, Santa Chiara, 1686-1691 letters returned nothing printed.",
+    "literature": "Literature: no study of this nun's cipher found; the Gonzaga cipher studies found concern other centuries."
+   },
+   "key_check": "No key held in repo for these letters (known.py 'Vittoria Gonzaga' and 'Santa Chiara' hit only the lead). About 400 digit groups in total is short for a ciphertext-only attack on a nomenclator; no held key to test.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Vittoria Gonzaga and Santa Chiara searched: no other record.",
+   "verdict": "open"
+  }
+ },
+ "1571": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "facsimile",
+    "where": "Gallica btv1b10033937d (Cinq cents de Colbert 338), IIIF at openapi.bnf.fr, views f87, f88, f111, f112 viewed 2 Nov 2026 (each canvas is a two-page spread; right-hand page number = 2 x view - 33)",
+    "extent": "p. 141 (29 Aug 1573) and p. 143: a CLEAR Latin letter signed Johannes Bazinus, Cracow, to the Polish estates, no cipher. pp. 189-190 (15 Sept 1573, French, 'Madame...' to Catherine de Medicis): about 15 lines of cipher on p. 189 inside a clear French letter. pp. 191-192 (15 Sept 1573, French, signed Bazin): about 38 lines of cipher on p. 191 recto, clear French on p. 190 and 192.",
+    "cipher": "Symbol cipher with letter-like glyphs, dots and double strokes (about 30 shapes, in blocks of 5-9 signs), with clear French words interspersed (janvier, may, Valence) that look like unenciphered names or dates; no decipherment, interlinear text or key on the leaves viewed. The lead's addressee is wrong: the cipher letters are to Catherine de Medicis, not Henri of Anjou, and p. 141 is not cipher."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo: web searches (cryptiana, Montluc Polish embassy, Catherine de Medici ciphers, Bazin) found a Catherine/Marie de Medici cipher page but nothing on the 1573 Polish embassy or Bazin.",
+    "lasry": "Lasry: web search for Lasry/Histocrypt on French Wars of Religion ciphers found 'Deciphering a Letter from the French Wars of Religion' (Sennecey, ambassador of the Catholic League in Rome): a different letter and writer; nothing on Bazin or Poland.",
+    "edition": "Edition: Gellard on Catherine's letters and Choisnin's memoires turned up in search, but no print of Bazin's 15 Sept 1573 cipher letters; Jean Bazin was not identified in any result (Montluc's secretary assumed from context, not confirmed).",
+    "literature": "Literature: Epistemè 2024 (Kuperty-Tsur on Choisnin and the Polish reaction to St Bartholomew) and Montluc biographies mention the embassy; none discusses its cipher."
+   },
+   "key_check": "No Montluc/Bazin Polish-embassy key held in repo or DECODE harvest (known.py: Bazin only hits the lead; Montluc none). Catherine's other cipher keys for Poland not identified; none tried. Not ruled out.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Bazin, Montluc, Monluc, Cinq cents de Colbert 338 searched: nothing else.",
+   "verdict": "open"
+  },
+  "lead_updates": {
+   "title": "Jean Bazin (Montluc's embassy) to Catherine de Medicis, Cracow, 15 Sept 1573: two letters partly in cipher",
+   "correspondents": "Johannes Bazinus (Bazin) to Catherine de Medicis",
+   "folio_note": "Cinq cents de Colbert 338 pp. 189-190 and 191-192 (Gallica views f111, f112); p. 141 is a clear Latin letter",
+   "language": "French",
+   "status_append": "Vetted 2 Nov 2026 on Gallica: cipher on pp. 189 and 191; addressee Catherine, not Henri; p. 141 clear."
+  }
+ },
+ "1572": {
+  "unvetted": "Luigi d'Este letters in Colbert 338: viewed Gallica btv1b10033937d views f233, f246, f262, f268, f272 (2 Nov 2026) but the BAM page numbers (433, 459, 491, 503, 511) do not map cleanly (foliation drifts: f233 shows a full-page symbol-cipher spread with French text in the left margin, f262 and f268 show clear French despatches, f272 shows a full cipher page); I could not tell which cipher leaves are Luigi d'Este's, nor whether the French marginal text on f233 is a contemporary decipherment, nor compare with Tomokiyo's henryiii.htm Luigi d'Este table or the fr. 16041 table. Needs a page-by-page pass of views 230-275 with the BAM item list. No prior-art or duplicate verdict claimed."
+ },
+ "1573": {
+  "unvetted": "Lorraine 367 (Gallica btv1b90007170, 172 ff., 289 views): fetched views f150-f199 via openapi IIIF (2 Nov 2026) but they show 16th-17th c. German Reichstag-type documents and tables, no French Lille despatches and no cipher; the 'deux depeches chiffrees' from f. 148 could not be located (folio vs view drift, BAM gives no folio beyond f. 148). Needs the BAM item list for f. 148 onward and a pass through the remaining views. No duplicate or prior-art verdict claimed."
+ },
+ "1574": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "not online",
+    "where": "BnF Archives et manuscrits records cc1256467/cb5337 and cb5333 (NAF 29073, dossier 3 Amerique, ff. 15-16 and 20-22); the BAM says digitised but consultable only on BnF professional workstations",
+    "extent": "Two letters (ff. 15-16 and 20-22); extent of cipher not stated in the catalogue.",
+    "cipher": "BAM: 'lettre chiffree, destinataire inconnu, 14 juin [1776]' and 'lettre chiffree, non signee, adressee a M. Hortalez'; no scan available, so no decipherment can be excluded from the images."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo: web search for Beaumarchais/Hortalez cipher found no cryptiana page; American Revolution ciphers (Ralph Weber) cover Lee/Deane/Bancroft codes, not Beaumarchais.",
+    "lasry": "Lasry: web search found no Lasry or DECODE item on Beaumarchais or Hortalez.",
+    "edition": "Edition: Morton and Spinelli, Beaumarchais Correspondance (Nizet, volume for Feb 1773 to Dec 1776, 1969) exists per search and may print or calendar these letters and their cipher status; not opened, so not excluded.",
+    "literature": "Literature: Hortalez & Cie and Beaumarchais-and-the-American-war literature found (Gutenberg Lomenie, encyclopedia entries) say nothing of a cipher letter of 14 Jun 1776; the Beaumarchais family papers are still being inventoried by BnF."
+   },
+   "key_check": "No key of the 1776 Beaumarchais/Vergennes circle held in repo or DECODE harvest (known.py NAF 29073, Hortalez, Beaumarchais: only the lead). Cannot be tested without scans.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself.",
+   "verdict": "open"
+  }
+ },
+ "1575": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "not online",
+    "where": "BnF Archives et manuscrits record cc425888/cd0e157 (Francais 11270, f. 118); not digitised",
+    "extent": "Two original letters, 22 June 1761; cipher extent not stated.",
+    "cipher": "BAM: 'Deux lettres originales chiffrees, et en partie non dechiffrees, du marechal de Broglie, 22 juin 1761': the catalogue itself records that they were partly deciphered, so a period decipherment sits on or with them."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo: web search (Broglie 1761 chiffre) found nothing.",
+    "lasry": "Lasry: web search found nothing on Broglie ciphers; a 2024 'Cipher key instructions in early modern Europe' article lists 1761 keys but was not tied to Broglie.",
+    "edition": "Edition: the Broglie to Xavier de Saxe correspondance (1759-61, Broglie and Vernier) and UK State Papers copies of Broglie letters of 30 Jul 1761 exist; none shown to print these 22 June 1761 letters.",
+    "literature": "Literature: nothing on this item found by three searches (Broglie 1761 chiffre, Francais 11270, Broglie cipher cryptanalysis)."
+   },
+   "key_check": "No Broglie 1761 key held in repo or DECODE harvest (known.py Broglie, 11270: only the lead). The partial period decipherment mentioned by BAM would be a crib but is not seen.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself.",
+   "verdict": "partly_read",
+   "closed": "BnF's own catalogue says the two letters were partly deciphered at the time, so they are not a ciphertext-only target; the existing decipherment was not seen (not online) and the undeciphered part could be reopened when a scan is obtained."
+  }
+ },
+ "1576": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "not online",
+    "where": "BnF Archives et manuscrits records cc499533/cd0e59 (fr. 3485) and cc49954b/cd0e318 (fr. 3486); not digitised",
+    "extent": "15 letters of Nov 1602 to May 1605, each described 'Lettre, avec chiffre'; extent of cipher not stated.",
+    "cipher": "BAM: each 'Lettre, avec chiffre' (Henri IV to Philippe de Bethune, ambassador in Rome); no scan, so the presence of a decipherment cannot be excluded."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo: web search (Henri IV Bethune Rome cipher, Berger de Xivrey) found no cryptiana page on this series.",
+    "lasry": "Lasry: web search found nothing on Henri IV to Bethune ciphers.",
+    "edition": "Edition: Halphen, Lettres inedites du roi Henri IV a M. de Bethune (1894, 14 Aug - 31 Dec 1602, printed from a BnF manuscript), Lajeunie (1952, 1602-04) and Berger de Xivrey's Recueil (vol. VI for 1603-06) print this correspondence; their treatment of the cipher passages was not checked, so several of the 15 letters may be in print, resolved.",
+    "literature": "Literature: a Cambridge article on the Rome embassy cites BnF fr. 3484, 3487, 3489, 3492, 3496; nothing on ciphers found."
+   },
+   "key_check": "Siblings fr. 3484 nos. 7, 8, 12 (1601, Henri IV to Bethune) are read in the repo's SOLVED_CATALOGUE with a Villeroy-office key; the same chancery key very probably reads fr. 3485/3486 (not tested: no scan). A held key makes this a key lookup, not ciphertext-only work.",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Bethune, 3485, 3486 searched: only the sibling fr. 3484 reading.",
+   "verdict": "key_lookup",
+   "closed": "Same-series key held (fr. 3484 Villeroy-office key) and Halphen 1894 / Lajeunie 1952 print the 1602-04 letters; cipher leaves not seen (not online)."
+  }
+ },
+ "1577": {
+  "vetting": {
+   "date": "2026-10-29",
+   "by": "claude vetting batch n02",
+   "seen": {
+    "kind": "not online",
+    "where": "BnF Archives et manuscrits record cc502685/cd0e170 (fr. 3828 nos. 8, 10, 17, 18, 19, 21, 26; fr. 3835 no. 15); not digitised",
+    "extent": "8 letters of Apr-May 1629, each 'Lettre, avec chiffre'; extent of cipher not stated.",
+    "cipher": "BAM: each 'Lettre, avec chiffre' (Richelieu to Rance, and to the queen); no scan, so no decipherment can be excluded."
+   },
+   "prior_art": {
+    "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
+    "tomokiyo": "Tomokiyo: web search found nothing on Richelieu to Rance ciphers.",
+    "lasry": "Lasry: web search found nothing on this series.",
+    "edition": "Edition: Avenel, Lettres, instructions diplomatiques et papiers d'Etat du cardinal de Richelieu (vol. 1628-1630, 1858) prints this series; the repo's own reading of the sibling fr. 3829 ff. 87, 89 (SOLVED_CATALOGUE 7, reading audit 22-23 Oct 2026) was found word for word in Avenel, so these 1629 Suse/Privas letters are very probably printed too; Avenel's text of fr. 3828 nos. 8-26 was not individually checked.",
+    "literature": "Literature: Wikipedia on Privas and Les Papiers de Richelieu t. 4 (1629) found by search; no cipher study."
+   },
+   "key_check": "Key held: the fr. 3829 reading of Richelieu to Rance 1629 (repo SOLVED_CATALOGUE) shows the same series code; applying it to fr. 3828 was not tested (no scan).",
+   "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Rance, Richelieu, 3828, 3835, 3829 searched: sibling reading only.",
+   "verdict": "key_lookup",
+   "closed": "Sibling fr. 3829 letters of the same Rance series are read with a held key and found in Avenel 1858; fr. 3828/3835 leaves not seen (not online) and Avenel not checked page by page."
+  }
+ }
+}

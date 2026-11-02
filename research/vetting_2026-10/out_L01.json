@@ -1,0 +1,422 @@
+{
+ "10": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "Gallica fr. 3151 views 61-62 (ark btv1b9059865k, openapi.bnf.fr IIIF f61, 1600 px), viewed in frame check 02 on 30 Oct 2026; also targets/noailles1558/ (Brackx files copied 28 Oct, decode reproduced by check_brackx.py).",
+   "extent": "Three cipher blocks, about 260 signs: A and B (3 lines each) on f. 60r, C (7 lines) on f. 60v; French, one homophonic symbol alphabet with nulls and two word signs.",
+   "cipher": "Symbol cipher in rows inside clear French text. The court's decipherment of the time is written in the inner margin of f. 60r (start of each gloss line hidden by the binding) and in the outer margin of f. 60v (nearly complete): a decipherment IS on the leaf, so this is not an unread cipher."
+  },
+  "prior_art": {
+   "decode": "No DECODE record for fr. 3151 no. 33 found in the repo DECODE dumps (known.py 3151 / Noailles: only catalogue and ledger hits); nothing on DECODE to correct.",
+   "tomokiyo": "Site-limited cryptiana search (Noailles, Venice, Cardinal de Lorraine, 1558, 2 Nov 2026): no page; only an unrelated Danzay/Lorraine mention. Not in Tomokiyo.",
+   "lasry": "No Lasry paper or GL.htm entry for Noailles 1558 found; Lasry's BnF 'unmarked symbol' set (Cryptologia) is a different group. Seure's neighbouring letters (fr. 3151 nos. 39-44) were solved by Angus Robinson (PR #40).",
+   "edition": "No edition found with this cipher passage: searches on Noailles Venise 1558, Charriere Negociations de la France dans le Levant and Cateau-Cambresis returned no edition containing it.",
+   "literature": "Michael Brackx (issue #113, 27 Oct 2026) transcribed all signs and recovered the key from the margin glosses plus a French 5-gram model; reproduced here 28 Oct: 244 of 260 non-null signs valued (93.8%), 12 tentative. WebSearch 'BnF fr. 3151 Noailles Brackx' found nothing outside the repo (only the BnF catalogue noting letter 33 as in cipher)."
+  },
+  "key_check": "Brackx key (in repo, targets/noailles1558/brackx/key_r5.tsv) reads all three blocks; La Guiche 1551 and Seure 1558 keys are different alphabets (checked in their targets). Key recovered from adjacent plaintext (the margin glosses).",
+  "duplicates": "known.py '3151' and 'Noailles' found only catalogue 10 and the split Seure/Guiche entries; no duplicate.",
+  "verdict": "partly_read",
+  "closed": "Court decipherment of 1558 in the margins plus Brackx key (key from adjacent plaintext) reproduced here at 93.8% signs valued; remaining: binding-hidden gloss starts and 12 tentative values."
+ },
+ "13": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "Gallica fr. 15564 f. 151 (slip on the right of view 164, ark btv1b9064027v, openapi.bnf.fr IIIF), viewed in frame check 11 on 30 Oct 2026.",
+   "extent": "Six short cipher runs, 217 signs of 55 kinds (Greek letters, squares, digits), interleaved with 6 lines of clear French; slip dated 'ce xxvj juin' with initials MR.",
+   "cipher": "Runs of symbol cipher between clear words; no decipherment written on or with the slip."
+  },
+  "prior_art": {
+   "decode": "Not a DECODE record in the repo dumps (known.py 15564 / Mercoeur finds only DECODE R4155-R4167 for other fr. 15564 letters, which Lasry's key reads, and this entry).",
+   "tomokiyo": "Tomokiyo (unsolved.htm 'Letters from Duke of Guise?', per targets/mercoeur1586 notes) lists it as undeciphered; cryptiana site search of 2 Nov 2026 found no further page.",
+   "lasry": "Lasry found f. 151 is not in his 2022 fr. 15564 key (reported by Tomokiyo); WebSearch 'Mercoeur fr. 15564 Lasry' found only Lasry's Colbert 500 / League papers, nothing on f. 151.",
+   "edition": "No edition found: searches 'Mercoeur Bretagne lettre chiffree 26 juin 1586' and fr. 15564 returned nothing relevant.",
+   "literature": "No literature found beyond the above; the Mercoeur-League correspondence (R4155-R4167) was read here with Lasry's key."
+  },
+  "key_check": "Lasry's fr. 15564 key, the Mayenne-Forget key and Clair. 357 keys were tried (targets/mercoeur1586, 21 Sept 2026): none fits; 217 signs are too few for ciphertext-only.",
+  "duplicates": "known.py (15564, Mercoeur): other Mercoeur letters (catalogue 171, 172, 173) are different slips; no duplicate of f. 151.",
+  "verdict": "open"
+ },
+ "53": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R5005-R5008 (Saxon Main State Archive Dresden 10731 Nr. 12), viewed in frame check d01 on 30 Oct 2026; targets/zeschau1841/ transcription of R5005.",
+   "extent": "Four letters, 18 Jan 1841 - 26 Oct 1843; R5005 about 3,969 digits transcribed, R5006-R5008 not transcribed.",
+   "cipher": "Continuous cursive digit strings without separators inside clear French/German; a two-digit syllabary (7 values from rubbed-out pencil: 11 la, 70 pre, 82 m, 34 i, 29 er, 40 e, 46 que). No full decipherment on the pages."
+  },
+  "prior_art": {
+   "decode": "DECODE R5005-R5008 held in repo dumps; no key record for this series (checked per targets/zeschau1841 notes).",
+   "tomokiyo": "Nothing in Tomokiyo (targets/zeschau1841 notes; cryptiana search for Zeschau / Seebach found nothing).",
+   "lasry": "No Lasry paper known; WebSearch 'DECODE Zeschau Seebach cipher' returned only unrelated Saxon 1761 key material (cipher key instructions article) and the Oterleek codebook.",
+   "edition": "No edition found: WebSearch (Zeschau Seebach Chiffre Hauptstaatsarchiv 10731; Zeschau Petersburg Korrespondenz Edition) found only archive catalogue hits and Deutsche Biographie; no printed Zeschau-Seebach edition.",
+   "literature": "Literature search found no study of Saxon 1840s ciphers; Deutsche Biographie gives Zeschau as Saxon statesman, no mention of cipher."
+  },
+  "key_check": "No Saxon 1841-43 key in repo or DECODE; Saxon keys on DECODE date from 1761. Two-digit syllabary attack failed ciphertext-only.",
+  "duplicates": "known.py (R5005, Zeschau, Seebach): only this entry and its target; no duplicate.",
+  "verdict": "open"
+ },
+ "58": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R931 = TNA SP 106/10 f. 251, viewed in frame check 11 on 30 Oct 2026; targets/sp106r931/ transcription.",
+   "extent": "One slip, about 9 lines, ~190 numbers 10-260, 104 distinct; a few English words and circled numbers (1)(2)(3).",
+   "cipher": "Numeric nomenclator-style cipher with clear English words between groups; no full decipherment on the slip."
+  },
+  "prior_art": {
+   "decode": "DECODE R931 record only; DECODE lists keys R9115-R9119 (Charles I-Culpeper) and Lasry's SP 106 1645-46 keys, none fits (targets/sp106r931).",
+   "tomokiyo": "Cryptiana post 'a bundle of ciphers of Lord Digby' (Oct 2024) fetched: concerns BL Add MS 72438 Digby keys (captured 15 Oct 1645, after this September letter) and R8687/R8723; says nothing on SP 106/10 f. 251.",
+   "lasry": "No Lasry decipherment of SP 106/10 f. 251 found; WebSearch 'SP 106/10 September 1645 Digby Nicholas Lasry' found none.",
+   "edition": "CSP Domestic 1645-7 results gave no calendar entry for this slip; BL Trumbull 197 / Add MS 33596 hold Digby-captured keys and Sept 1645 intercepts (13-14 Sept) with decipherment above the words, a different item.",
+   "literature": "No literature on this slip found."
+  },
+  "key_check": "Lasry 1645-46 SP 106 keys, Goring R932 key and Charles I-Culpeper R9117/R9118 excluded (targets/sp106r931). Untried: Digby keys of Add MS 72438 ff. 25-99 / Trumbull 197, not held in the repo.",
+  "duplicates": "known.py (R931, SP 106/10 f. 251): only catalogue 58 and sp106r931; R722 (catalogue 66) is a different letter.",
+  "verdict": "open"
+ },
+ "70": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2968, R2970, R2972 (BL Add MS 32305 ff. 11-12, 14-17, 22-23), viewed in frame check d01 on 30 Oct 2026; transcribed in full in targets/carre1742/.",
+   "extent": "Three letters to Mr Carre, Pall Mall, Mar 1742 - 19 Jan 1745; 1,323 groups, 381 distinct, values 1-800.",
+   "cipher": "Pure three-digit number code in lines; no decipherment on the sheets. R2969 is a frequency count, not a key. Two-part code of about 800 entries."
+  },
+  "prior_art": {
+   "decode": "DECODE R2968/R2970/R2972 held in repo dumps; no key record for the Carre code in Add MS 32305 or neighbouring volumes (targets/carre1742).",
+   "tomokiyo": "Not in Tomokiyo (cryptiana searched for BL deciphering-branch codes, no Carre hit).",
+   "lasry": "No Lasry decipherment known; WebSearch 'Add MS 32305 Carre Pall Mall 1742' returned only the BL Add MS 32253-32309 cipher series description and Willes family hits.",
+   "edition": "No edition found: Add MS 32305 sits in the cipher/decipher series, not a printed calendar.",
+   "literature": "BL blog 'ciphers in British Library manuscripts' and Willes papers (Add MS 45518-45523) are generic; nothing on Carre."
+  },
+  "key_check": "No key held; the Paris 1719 code of Add MS 32305 (entry 78) is a different code (overlap tested in targets/carre1742).",
+  "duplicates": "known.py (R2968, Carre, 32305): split from entry 78 on 14 Oct 2026; no other duplicate.",
+  "verdict": "open"
+ },
+ "76": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8870 (BL Add MS 32280 ff. 1-2), viewed in frame check d01 on 30 Oct 2026 and 21 Sept 2026; targets/r8870/ transcription.",
+   "extent": "Three pages, 901 numeric code groups, values 1-1647, hyphenated syllable compounds, ending 'Duplicata'.",
+   "cipher": "Numeric syllabic code; no decipherment on the leaves."
+  },
+  "prior_art": {
+   "decode": "DECODE R8870; the 27 key records of Add MS 32280 (R8890 French 6001+, R8894-R8919 Dutch 1823-42) checked, none fits (targets/r8870/keycheck.md).",
+   "tomokiyo": "Not in Tomokiyo (no cryptiana hit for Add MS 32280).",
+   "lasry": "No Lasry decipherment known to the repo ledgers.",
+   "edition": "BL catalogue web searches (Add MS 32280 numerical code Duplicata) returned only Newcastle Papers catalogue entries, nothing on this letter.",
+   "literature": "No literature found."
+  },
+  "key_check": "27 key records of Add MS 32280 tried and ruled out; a ~1,650-group code cannot be rebuilt from 901 tokens.",
+  "duplicates": "known.py (R8870, 32280): only this entry and r8870 notes; no duplicate.",
+  "verdict": "open"
+ },
+ "77": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R7707 (BL Add MS 32287 ff. 37-40), viewed in frame check d01 on 30 Oct 2026 and 22 Sept 2026.",
+   "extent": "f. 37r: about 9 lines, 205 invented cursive signs; ff. 38-40 a contemporary codebreaker's tallies, sign tables and guesses.",
+   "cipher": "Dotted cursive sign cipher on f. 37; ff. 38-40 are an analysis sheet, not a reading ('Duplicata', docket 4 Aout 1728). No plaintext written."
+  },
+  "prior_art": {
+   "decode": "DECODE R7707 only; no key for this sign alphabet on DECODE.",
+   "tomokiyo": "Not in Tomokiyo (no cryptiana hit).",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "WebSearch for Add MS 32287 f. 37 1728 returned only Newcastle correspondence catalogue pages (Add MS 32755, 32758); no edition.",
+   "literature": "No literature found."
+  },
+  "key_check": "IoC 1.07; mono, periodic and Quagmire anneals failed; no Add MS 32287 key fits (Goertz French key R7691 is f. 2 of the same volume, a different system).",
+  "duplicates": "known.py (R7707, 32287): only this entry; no duplicate.",
+  "verdict": "open"
+ },
+ "78": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2964 and R2965 (BL Add MS 32305 ff. 6-7), viewed in frame check d01 on 30 Oct 2026 and 21 Sept 2026; targets/bl32305/ (R2964 transcribed).",
+   "extent": "Two letters, Paris, 7 and 10 Feb 1719; R2964 354 groups in f. 6, R2965 not transcribed.",
+   "cipher": "Two-part 3-figure code; about 33 of 354 groups in R2964 carry contemporary glosses (que, vous, le, re, a); the glosses are partial, not a decipherment."
+  },
+  "prior_art": {
+   "decode": "DECODE R2964/R2965; no key record for this 1719 Paris code in Add MS 32305 (targets/bl32305).",
+   "tomokiyo": "Not in Tomokiyo.",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "WebSearch Add MS 32305 Paris February 1719 Stanhope returned Newcastle correspondence entries only; no edition.",
+   "literature": "No literature found."
+  },
+  "key_check": "Carre 1742 code (entry 70) tested: different code. About 33 glossed groups give a partial crib, insufficient for an ~900-entry code.",
+  "duplicates": "known.py (R2964, R2965): R2963 and R2974 (deciphered at the time) already dropped; Carre letters split to entry 70.",
+  "verdict": "open"
+ },
+ "128": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R8357 (BL Harley MS 260 ff. 143-145), page 4 viewed in frame check d01 on 30 Oct 2026; targets/burghley1572/ transcription.",
+   "extent": "Two short code items on f. 143v inside a clear English letter (about one line of signs: 'ʒ368' and '45 □477ה ⌐□⌐418').",
+   "cipher": "Clear letter-book copy with two short nomenclator groups; no decipherment written. The cipher is trivially small."
+  },
+  "prior_art": {
+   "decode": "DECODE R8357 dated 1572 in error (letter is 2 Sept 1571); no key on DECODE.",
+   "tomokiyo": "Tomokiyo elizabeth page has no Burghley-Walsingham key for 1570-73 (targets/burghley1572 notes); cryptiana search of 2 Nov found nothing.",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "Printed in full by Digges, The Compleat Ambassador (1655) pp. 123-124 with the groups undeciphered; the BL Harley 260 catalogue notes Digges garbles Sept-Oct 1571 letters. CSP Foreign ix does not calendar it.",
+   "literature": "WebSearch (Burghley Walsingham 2 Sept 1571 Digges) found only Harley 260 catalogue notes and Digges; no study of the code items."
+  },
+  "key_check": "No key known on DECODE, in Tomokiyo or in print; two groups cannot be solved blind.",
+  "duplicates": "known.py (R8357, Harley 260, Burghley): only this entry and burghley1572; catalogue 127 (R8358, 1572) is a different letter.",
+  "verdict": "open",
+  "lead_updates": {
+   "date": "2 Sep 1571 (DECODE gives 1572 in error)"
+  }
+ },
+ "156": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1126 (ASMo Ungheria b. 4, Fantini no. 5, Vestigia 1849) and R1127 (no. 6, Vestigia 1851), viewed in frame check 11 on 30 Oct 2026; targets/jantini1517/.",
+   "extent": "R1126: pp. 1-2, about 18 + 25 lines, 1,370 columns transcribed; R1127: 5 short lines in a damaged leaf of 6 Mar 1518.",
+   "cipher": "Two-tier sign cipher (small letter-like strokes with superscript marks) after clear Italian lines; no decipherment on the file. DECODE 'partially decrypted' reflects clear passages."
+  },
+  "prior_art": {
+   "decode": "DECODE R1126-R1127 (author 'Jantini' is Fantini; date and origin wrong); no key record.",
+   "tomokiyo": "Not in Tomokiyo; cryptiana search for Caprile / Eger / Este / Fantini found no matching page.",
+   "lasry": "No Lasry decipherment known; the cipher is of the Caprile 1519 syllabic family.",
+   "edition": "Vestigia has no clear copy of nos. 5-6; WebSearch (Fantini Buda Eger 1517 Este cifra) found no edition; the Hungarian National Archives page (mnl.gov.hu) on the Caprili cipher covers only Caprili / Vesach.",
+   "literature": "Hungarian-language literature on Caprili and Ippolito (omp.ppke.hu, ECEHS 2025) discusses the Eger court, not Fantini's cipher."
+  },
+  "key_check": "Caprile 1519 key does not fit; syllabary anneal fails; the Cremonini 2017 Cifrario b. 8 fasc. 4 sheets are not held for this hand.",
+  "duplicates": "known.py (R1126, Fantini, Jantini): only this entry and jantini1517; no duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "correspondents": "Benedetto Fantini (DECODE 'Jantini') -> unidentified Este recipient, Buda 1517 and Eger 6 Mar 1518"
+  }
+ },
+ "157": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1128 (ASMo Ungheria b. 4, Caprile 9 Mar 1519), viewed in frame check 11 on 30 Oct 2026; targets/caprile1519/.",
+   "extent": "Seven to eight lines, 183 columns of two-tier sign cipher, then a clear Italian explanation that he writes in cipher because his adversary intercepted his letters.",
+   "cipher": "Two-tier cipher (small letter over a base sign). No decipherment on R1128; its siblings R1129-R1135 were deciphered in 1882 (Vestigia b/c copies) or interlined."
+  },
+  "prior_art": {
+   "decode": "DECODE R1128; siblings R1129-R1135 on DECODE are the key material.",
+   "tomokiyo": "Not in Tomokiyo (cryptiana search found no Caprile page).",
+   "lasry": "No Lasry decipherment of R1128; Lasry/Somogyi 2025 key concerns the 1520-21 letters (caprile1520).",
+   "edition": "A 19th-century ASMo reconstruction of the 1519 key is printed small in Cremonini 2017 (figs. 17.1-17.3; ASMo Cifrario b. 8 fasc. 4; pointer Brackx, issue #121). The MNL page names Giuliano Caprili (sic) as author of the cipher, used also by Perotto Vesach.",
+   "literature": "WebSearch (Caprile Pistofilo 1519 Eger Cremonini Somogyi) confirmed the Caprili / Vesach cipher at mnl.gov.hu but no decipherment of R1128."
+  },
+  "key_check": "The 1519 tables rebuilt from R1133/7c and R1130/4c give no signal on R1128 (2 Oct 2026); the 1882 sibling decipherments and Cremonini sheets would supply a key, not yet applied: no key held that reads it. Note: workable: key can be rebuilt from the 1882 sibling decipherments (no outside blocker).",
+  "duplicates": "known.py (R1128, Caprile): split 14 Oct 2026 from caprile1520 and cistarelli1520; no other duplicate.",
+  "verdict": "open"
+ },
+ "158": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1137 (ASMo Ungheria b. 4/26 no. 3, Vestigia 1904), p. 2 viewed in frame check 11 on 30 Oct 2026; targets/cistarelli1520/.",
+   "extent": "About 17 lines of two-digit groups on p.2: 584 groups plus 83 signs transcribed.",
+   "cipher": "Continuous numeric cipher (2-digit groups mostly ending in 5 or 0) with clear Italian around it; DECODE 'Partially decrypted' but no decipherment on the leaves."
+  },
+  "prior_art": {
+   "decode": "DECODE R1137: 'Partially decrypted', images login-only, not public domain (permission of ASMo needed).",
+   "tomokiyo": "Not in Tomokiyo (cryptiana search found no Cistarelli page).",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "Vestigia (vestigia.hu) holds the item; no edition with a decipherment found (WebSearch Cistarelli Ippolito d'Este 1520 Eger returned only the MNL Caprili page).",
+   "literature": "Hungarian National Archives pages on Eger ciphers name Caprili and Vesach; nothing on Cistarelli."
+  },
+  "key_check": "Caprile 1519 and 1520-21 keys tested (knownkeys.py r1137) and fail; ciphertext-only anneal gives fragments only; 14% digit disagreement between two readings.",
+  "duplicates": "known.py (R1137, Cistarelli): catalogue 846 (Cistarelli, Krakow 14 Oct 1520) is a separate letter in the same folder.",
+  "verdict": "open"
+ },
+ "161": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R9367 (BayHStA Kurbayern Aeusseres Archiv 4591; targets/r9367 give f. 169, 22 March 1535), page 1 viewed in frame check d01 on 30 Oct 2026.",
+   "extent": "One German letter, cipher runs filling most lines; 143 cipher words, 78 read (54.5%, upper bound).",
+   "cipher": "Symbol cipher (square, plus, hash-like signs) in a German letter; key found in the volume's key register R9423 block 2_4. Decoded with the known register key, partial: # and O open; Lasry's test (22 Oct) says not yet read."
+  },
+  "prior_art": {
+   "decode": "DECODE R9367 and the key register R9423 (same volume); the other 13 records of this entry were split to kaa4591, kaa4591b, fulda1576, r9416, r9424, r9319.",
+   "tomokiyo": "Not in Tomokiyo.",
+   "lasry": "R9424 key recovered by Ryan Xu (issue #89); R9319 deciphered by Leighton ZBLG 37 (1974); WebSearch for Lasry / Xu / Cologne war found no separate publication.",
+   "edition": "WebSearch found only K.-H. Ludwig citing KAA 4591 cipher material (1525 Salzburg), confirming the volume is a key collection.",
+   "literature": "Leighton 1974 covers R9319 only; no edition of R9367."
+  },
+  "key_check": "Register key 2_4 applied and partly fits (name signs behave as nulls / dividers); remaining # (13x) and O open. Note: entry now covers R9367 only; the other 13 DECODE records of the old grouping were split out.",
+  "duplicates": "known.py (R9424, R9367, 4591): the other records live in their own targets; entry narrowed to R9367.",
+  "verdict": "partly_read",
+  "closed": "R9367 decoded with the volume's own key (read with known key), 54.5% of cipher words; not a complete reading.",
+  "lead_updates": {
+   "title": "Letter in cipher, 22 March 1535 (BayHStA KAA 4591, DECODE R9367)"
+  }
+ },
+ "169": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2877 (Beinecke Mellon MS 29, c. 1525), p.1 f. 63r and p.4 zodiac table viewed in frame check d01 on 30 Oct 2026; Beinecke catalogue (pre1600ms.beinecke.library.yale.edu, mell029) read; free IIIF at collections.library.yale.edu/catalog/17388793.",
+   "extent": "About 234 letters: zodiac 'si chiama' table and recipe lists on ff. 1v-2v plus a pastedown copy; a further line on f. 63r.",
+   "cipher": "Substituted words in a Latin-letter cipher inside an alchemical codex (Lumen luminum, pseudo-Elias of Cortona); no key or clear copy on the leaves."
+  },
+  "prior_art": {
+   "decode": "DECODE R2877 'Non-decrypted'; DECODE frames it as a letter by Elia da Cortona, which is wrong: it is a codex with no recipient.",
+   "tomokiyo": "Tomokiyo covers diplomatic ciphers, not alchemy (targets/mellon29 notes); cryptiana search returned nothing.",
+   "lasry": "No Lasry paper on Mellon 29 found.",
+   "edition": "Beinecke catalogue says the text is unidentified in the literature and notes the cipher on the first pastedown and ff. 1v-2r; no edition of the cipher.",
+   "literature": "WebSearch (Mellon MS 29 Lumen luminum cipher decipherment) found no published decipherment; results about Voynich and Sloane 1902 are unrelated."
+  },
+  "key_check": "Simple substitution, homophonic, progressive, Vigenere and Alberti attacks failed with a working control; possibly invented secret names. No key known.",
+  "duplicates": "known.py (R2877, Mellon): only this entry and mellon29; no duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "title": "Beinecke Mellon MS 29, Lumen luminum (pseudo-Elias of Cortona), alchemical codex c. 1525 - cipher on ff. 1v-2v",
+   "correspondents": "none (not a letter)",
+   "date": "c. 1525"
+  }
+ },
+ "193": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2285 p.1 = BnF Clairambault 325 f. 84 (17th-c. copy, Gallica ark btv1b90006916), viewed in frame check 11 on 30 Oct 2026; targets/bayard1526/.",
+   "extent": "Three cipher lines (lines 17-19 of page 1), 56 signs of 29 kinds, in a clear letter.",
+   "cipher": "Symbol cipher (Greek-like letters, nulls, crosses) drawn by a copyist in the middle of the clear text; no decipherment written over or beside it."
+  },
+  "prior_art": {
+   "decode": "DECODE R2285 only; no key record for Bayard's Toledo cipher.",
+   "tomokiyo": "Tomokiyo guessed 'Bayard' as the chevalier; targets notes identify Gilbert Bayard, secretary of the king; cryptiana search found no decipherment.",
+   "lasry": "No Lasry decipherment known; Lasry deciphered other Clairambault ciphers (Clair. 326, Perez 1527) per Tomokiyo 2026.",
+   "edition": "Printed by Champollion-Figeac, Captivite du roi Francois Ier (1847) CCXVIII with the cipher omitted.",
+   "literature": "WebSearch of the 1847 volume confirms the edition; cipher not given."
+  },
+  "key_check": "Calvimont and Raince 1526 keys do not fit; 56 signs are too few blind. Original (source volume V. 41 f. 4) not found. Note: 17th-c. copy, not the original; margin 'V. 41. f. 4'.",
+  "duplicates": "known.py (R2285, Bayard, Clairambault 325): only this entry and bayard1526; no duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "correspondents": "Gilbert Bayard (secretary of the king, at Toledo) -> Anne de Montmorency"
+  }
+ },
+ "206": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4350 = KB Stockholm I.g.18 (114-page PDF), PDF p.34 viewed with the cookie helper in frame check 12 on 2 Nov 2026 and on 22 Sept 2026; targets/goertz1717/.",
+   "extent": "Five cipher passages (809 numeric groups, 175 distinct, values 1-848) in a German peace memorandum of 1717, PDF pp. 34, 35, 37, 38, 41.",
+   "cipher": "Numeric nomenclator groups separated by points inside a copyist's German text; no decipherment on the pages."
+  },
+  "prior_art": {
+   "decode": "DECODE R4350 'Non-decrypted'; the only Goertz key on DECODE (R7691, French 4-digit code, BL Add MS 32287 f. 2) does not fit.",
+   "tomokiyo": "Cryptiana site search (Goertz, Murberg, 1717) returned nothing.",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "No edition: WebSearch for Murberg / I.g.18 found only 1717 printed Gyllenborg-Goertz letters (the interception affair); not this memorandum.",
+   "literature": "WebSearch (Goertz Chiffre Schluessel Riksarkivet) found only that Gyllenborg destroyed his key and that British decipherers read the 1717 Swedish correspondence in a different code."
+  },
+  "key_check": "R7691 ruled out; ciphertext-only annealing (homophonic letter, alphabetical syllabary) failed even on a synthetic control; German chancery key in Riksarkivet not held.",
+  "duplicates": "known.py (R4350, Murberg, Goertz): only this entry and goertz1717; no duplicate.",
+  "verdict": "open"
+ },
+ "207": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4284, R4333, R4338 (Riksarkivet, TNA of Sweden), viewed in frame check d02 on 30 Oct 2026; targets/riksarkivet4284/ (R4284 transcription).",
+   "extent": "Remaining: R4284 (Latin 1628, 822 groups), R4333-R4335 (Rusdorff to Oxenstierna 1628), R4338-R4341 (Swedish, June 1633).",
+   "cipher": "Mixed: R4284 numeric line plus symbol cipher with pencil note 'Chifferdaru'; R4333 continuous numeric cipher; R4338 Swedish letter with interlinear code-number glosses (partly glossed at the time)."
+  },
+  "prior_art": {
+   "decode": "DECODE R4284-R4341; R4282 (Lasry, decode4282), R4306 (Lasry, sweden4306), R4336-R4337 (Lasry, rusdorff1625) and Bremen R4330-R4331 already read and removed.",
+   "tomokiyo": "Not in Tomokiyo for these records (cryptiana search returned nothing).",
+   "lasry": "Lasry deciphered R4282, R4306 (with CTTS and Opus 5.5) and R4336-R4337; R4284, R4333-R4335, R4338-R4341 not by him.",
+   "edition": "No edition found; Riksarkivet's Oxenstierna database covers 1636-54; the DECODE paper on Heusner 1637 (Oxenstierna) mentions Camerarius and Beaumont keys.",
+   "literature": "WebSearch (Riksarkivet Oxenstierna cipher 1628 Rusdorff Camerarius) found no decipherment of these records."
+  },
+  "key_check": "Latin annealing and two box keys failed on R4284; R4333-R4335 are not the 1625 Rusdorff key; R4338-R4341 not attacked. Note: split by cipher: R4284 / R4333-R4335 / R4338-R4341 each its own entry.",
+  "duplicates": "known.py (R4284, R4306, R4336): the removed records have their own targets; the remaining records are not elsewhere.",
+  "verdict": "partly_read",
+  "closed": "Entry is a multi-cipher composite; R4338-R4341 were glossed in part at the time, the others unread. Needs splitting by key."
+ },
+ "218": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R2236 pp.1-4 (KHA The Hague, Prins Willem V inv. 337), viewed in frame check d02 on 30 Oct 2026; targets/r2236/.",
+   "extent": "Four pages, 17-25 lines of digit groups per page, Dutch copies No 1 and No 2 (numbers to about 390) plus a page of numbers to 2835; not transcribed.",
+   "cipher": "Photocopies of numeric cipher with a few clear words; no decipherment on the pages."
+  },
+  "prior_art": {
+   "decode": "DECODE R2236 'Non-decrypted'; sibling R2239 read here with a word list rebuilt from R2237; R2236 runs past that list.",
+   "tomokiyo": "Not in Tomokiyo.",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "R2239 body printed in Colenbrander 1906; WebSearch found a 1993 De Achttiende Eeuw note that Colenbrander ignored the coded correspondence (Van Spaen and the hereditary prince); no edition of R2236.",
+   "literature": "No study of the Dutch copies located."
+  },
+  "key_check": "R2237 word list (French) does not read R2236; the Dutch list was not found.",
+  "duplicates": "known.py (R2236, R2239): R2239 read in hereditary1796; entry already narrowed to R2236.",
+  "verdict": "open"
+ },
+ "225": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1895 pp.1-4 (NA The Hague 2.01.08 inv. 346), viewed in frame check d02 on 30 Oct 2026; targets/dedem1799/.",
+   "extent": "Pages 2-4: 14-17 lines of 3-digit groups per page, not transcribed; p.1 is a misfiled clear leaf (Schimmelpenninck).",
+   "cipher": "Marked numeric code (two- and three-digit groups with superscript marks and underlines); no decipherment on the pages."
+  },
+  "prior_art": {
+   "decode": "DECODE R1895; no key record for the 1799 code.",
+   "tomokiyo": "Not in Tomokiyo.",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "No edition found; the Nationaal Archief finding aid 2.21.006.46 (Dedem) mentions the legation archive separately; no cipher key listed.",
+   "literature": "WebSearch (Dedem Constantinopel 1799 van der Goes cijfer) found Waldeck's Van der Goes dissertation and Boom's Dedem biography, neither on cipher keys."
+  },
+  "key_check": "1788-93 Dedem codebook (Kroll, NA 1.02.20 inv. 785) does not apply: different marked code (checked in dedem1799 notes).",
+  "duplicates": "known.py (R1895, Dedem): siblings R2120 / R2122 / R2131 read (dedem1788); no duplicate of R1895.",
+  "verdict": "open"
+ },
+ "233": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L01",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R1469 pp.1-4 of 7 viewed in frame check d02 on 30 Oct 2026; R1470 viewed 21 Sept 2026; targets/roell1809/.",
+   "extent": "13 pages, 2,585 groups (931 distinct) to about 3,300, transcribed.",
+   "cipher": "Dense 3-4 digit groups separated by points, headed 'Memoire', unaddressed and unsigned; heavily homophonic, no group above 1%; no decipherment on the scans."
+  },
+  "prior_art": {
+   "decode": "DECODE R1469-R1470 'Non-decrypted'; no key record.",
+   "tomokiyo": "Not in Tomokiyo.",
+   "lasry": "No Lasry decipherment known.",
+   "edition": "No edition found; Roell's papers NA 2.21.008.78 list Dedem and Croiset letters 1808-09 but no codebook.",
+   "literature": "WebSearch (Roell Dedem 1809 cijfer sleutel Croiset) and Dutch cipher searches found nothing on this code."
+  },
+  "key_check": "Dedem 1788-93, Spaen 1808 and Fagel 1804 codes tested: overlap at chance.",
+  "duplicates": "known.py (R1469, R1470, Roell): only this entry and roell1809; no duplicate.",
+  "verdict": "open"
+ }
+}

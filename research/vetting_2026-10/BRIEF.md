@@ -31,3 +31,16 @@ pct: crops at 1600 px. In ital. 1584 canvas = folio + ~4 at the start but drifts
 Block output format: {id: block} or {id: {"unvetted": reason}} (apply.py also accepts {"vetting": block}).
 CEHM-Carso scans DO open in Chrome with no login (c03): https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/<FONDO>/<seg>/<seg>/<item>/<CLASS>.jzd&fn=<record id>
 (e.g. /DLI/2/292/1/DLI.2.292.1.jzd&fn=112619); or click "Formato Digital" on a FichaBasica page. Zoom into cipher leaves before judging.
+
+## Round 2 (2 Nov 2026) tools now available
+VPN exit in Spain is on (PARES reachable: recipe in frame_check_2026-10/BRIEF.md, 3 s between requests, stop at first 429). DECODE cookie works:
+python C:\Users\dbour\cypher-leads\research\frame_check_2026-10\decode_fetch.py <record> <scratch dir>\decode\r<record> (images are copyright: scratchpad only; some records use
+.png/.jpeg/.pdf names the helper misses, fetch by hand with the same cookie). CEHM-Carso scans open in Chrome (viewer URL pattern above). Hungaricana renders in Chrome.
+Academia Sinica: homepage reachable on the VPN; images need a reader account: do not create one; record the blocker. Output file names: out_<batch>.json for in_<batch>.json (e.g. in_n01 -> out_n01).
+Block format: {id: block} or {id: {"unvetted": reason}}. Cover every id. The first-pass lessons apply: do >=3 searches per lead you vet, view the ciphertext yourself for "open", never infer.
+
+## Legacy catalogue entries (in_LNN.json -> out_LNN.json)
+These entries (ids < 861) are already in the catalogue but never went through the vetting bar. Vet them the same way (block format as above). The entry's own fields
+(status, prior_art, outcome, frame_check) are leads, not proof: re-check. A verdict other than open (read, partly_read, duplicate, key_lookup, not_cipher) is
+the useful finding for this group: say exactly what shows it. frame_check.result "confirmed" already gives you a viewed page: reuse it in seen (kind scan) and
+check prior art, keys and duplicates. Leave an entry out as {"unvetted": reason} if you cannot establish a verdict honestly.

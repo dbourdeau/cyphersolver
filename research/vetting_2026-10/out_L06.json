@@ -1,0 +1,424 @@
+{
+ "752": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/13455820 (FILIPINAS,915,N.23, images 1-10 viewed by ViewImage.do, 2 Nov 2026) and https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/7182041 (FILIPINAS,920,N.26, images 2,3,4,9,10,13,16,19,21,24,26,27 viewed)",
+   "extent": "915,N.23: images 1-3 a clear letter 'Manila 31 de agosto de 1781, El Governador: Descifrada una carta que ha remitido por la via de Canton dice asi:' with the decipherment (dated 10 July 1782 on image 3); images 5-6 the cipher letter itself 'Por Canton' (about 2 pages of 3-4 digit number groups with small strokes under them). 920,N.26: 28 images, all viewed samples are clear Spanish: a cover letter of Pedro Manuel de Arandia, Manila 16 July 1755, enclosing a 'Copia' of his letter of 11 January 1755 'dirigi en Cifra por la via de Zamboanga' and the copy itself (a clear text on the Moro war), signed and docketed 1756.",
+   "cipher": "Numeric figure cipher (3-4 digit groups, strokes below) on 915,N.23 images 5-6. A contemporary decipherment is written with the cipher in the same file (images 1-3, the governor's own letter 'descifrada ... dice asi'); the 1755 item (920,N.26) holds no cipher on any viewed image, only the clear copy of the letter once sent in cipher."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (no AGI Filipinas record in research/catalogue_harvest/decode dumps; known.py 'Filipinas 915', 'Filipinas 920', 'Basco', 'Arandia' returned only catalogue rows of the same series).",
+   "tomokiyo": "No cryptiana page on Philippine governors' ciphers found (web search for Basco 1781 cifra, Filipinas cifra Canton; nothing).",
+   "lasry": "No Lasry paper or GL.htm entry for Manila ciphers known to the repo or found by web search.",
+   "edition": "Web searches for Basco's 1781 letter via Canton and Arandia's 1755 Moro letter found no edition; the decipherment filed in the legajo is the only text.",
+   "literature": "Spanish and English searches on Basco y Vargas 1781 and Philippine governors' cipher correspondence returned only biographies and trade studies, no cipher study."
+  },
+  "key_check": "No key needed: the decipherment filed with the cipher letter gives the text. The cipher itself (3-4 digit numbers) has no key in the repo or DECODE; the same series rows (catalogue 734 FILIPINAS,915,N.7 of 1780, the 1757 Arandia entry) were not tested as a key source.",
+  "duplicates": "known.py 'Filipinas 915', 'Basco', 'Arandia': siblings are catalogue 734 (915,N.7, 27 Jun 1780) and the 1757 Arandia entry; no duplicate of these two files. The pair 915,N.23 + 920,N.26 is not a pair of cipher letters: 920,N.26 is the clear copy.",
+  "verdict": "read",
+  "closed": "915,N.23: decipherment written with the cipher letter in the same file (images 1-3, 'Descifrada una carta ... dice asi'); 920,N.26: clear copy of the letter once sent in cipher, no cipher on the images viewed. Nothing left to read from the images; the cipher letter itself (images 5-6) is read from the existing decipherment.",
+  "lead_updates": {
+   "date": "1781 (915,N.23, letter of 31 Aug 1781, received 1782) and 1755 (920,N.26); the entry's date order is swapped against the images",
+   "folio_note": "915,N.23 = Basco's time (1781), decipherment on images 1-3, cipher on images 5-6; 920,N.26 = Arandia 1755, a clear 'Copia' of the letter once sent in cipher, no cipher seen"
+  }
+ },
+ "753": {
+  "unvetted": "Eight items viewed (3572274, 3572428, 3576845, 3578951 by the earlier frame check; 3581180, 3581202, 3582537, 3582744 = EST,LEG,1418,47/50/81/82 opened 2 Nov 2026 via ViewImage.do): no decipherment on any page, but the bundle is not one cipher. 1418,47/50 (1585, two-digit letters with strokes, 'Item' runs), 1418,81 (copia, Roma 10 May 1585) and 1418,82 (Roma 17 May 1585, signed, to Juan de Idiaquez) are signed Rome letters, so 'unattributed' is wrong for them (cf. research/pares_ags: Olivares 1572-88). 1410,77 and 1410,135 (1577) belong to the Genoa-embassy syllabary whose key K_P2 (targets/perez1578/key.tsv, validated by Brice Dudout on 1410,65-66 and 78-79) was not applied: it needs a transcription of 1410,77 and 135 that I did not make, so key_check cannot be written honestly. Split into per-system leads (1551 symbol and Greek-like cursive; 1577 Genoa syllabary; 1585 Rome) and apply K_P2 to 1410,77 and 135 before vetting."
+ },
+ "754": {
+  "unvetted": "Only 3 of 58 items opened (frame check) and none re-opened here: a 58-item bundle of Padilla (1571), Oviedo, Idiaquez, Mendoza, Vivas letters in several different keys cannot be vetted as one block. Needed: pair each 'Carta cifrada' with its 'Duplicado' and any 'descifrada' copy across legajos 1401-1432, apply the Toledo 1565 key (targets/toledo1565) and Brice Dudout's 1577 Genoa key K_P2 (targets/perez1578/key.tsv) to the 1565-77 items, and split the bundle by sender and cipher before promotion. Searches (Padilla Genoa 1571 cifra, Estado 1401, Genoa embassy ciphers) found no edition or study of these ciphers."
+ },
+ "755": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3586798 (EST,LEG,3594,143, images 1-2) and https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3586814 (3594,146 'Copia', image 1), fetched with ViewImage.do 2 Nov 2026; further read items in targets/genes1638 (3594,156) and targets/genes1643 (3598,44)",
+   "extent": "3594,143 (Genoa, 28 May 1638, signed original): clear opening line then about 38 lines of numeric/letter cipher on image 1 and about 14 on image 2, clear close and signature of the ambassador; 3594,146 a Copia with the same cipher body (about 33 + 22 lines). The entry covers 20 items 1638-1651 (EST,LEG,3594, 3598, 3600, 3602, 3637).",
+   "cipher": "Genoa embassy numerical cipher of 1638 (vowels 16-20, syllable series, code signs, per targets/genes1638). The bundle EST,LEG,3594 keeps contemporary plain copies next to most 1638 letters (143/142, 146/145, 147/144, 158/157, 160/159, 169/168), i.e. existing decipherments; no gloss on the cipher pages themselves."
+  },
+  "prior_art": {
+   "decode": "No Genoa/Simancas 1638 record on DECODE found in the harvest dumps (known.py 'leg. 3594', 'Velasco y la Cueva').",
+   "tomokiyo": "Tomokiyo's Spanish pages list no Genoa 1638 key (web search, cryptiana Genoa 1638: nothing).",
+   "lasry": "No Lasry key for Genoa 1638 found; Lasry's Spanish-embassy work concerns Rome/Madrid keys of other decades.",
+   "edition": "No edition of Velasco's or Eraso's cipher letters found; Magdaleno's Estado catalogue gives only summaries.",
+   "literature": "Read by Brice Dudout (Europe chiffree, 28 Oct 2026): 3594,156 (Siruela to Philip IV, 19 May 1638, 98.9% of words) in targets/genes1638 and 3598,44 (Eraso, 18 Jan 1643, ~98%) in targets/genes1643; each came with a rebuilt key (key_K3f.tsv, key_K4b.tsv)."
+  },
+  "key_check": "Keys held: key_K3f.tsv (1638 Velasco) validated on 3594,160/159 at 0.896 of characters; key_K4b.tsv (1643 Eraso). The 1638 items with plain copies are already decipherments; the 1643-1651 items (3598, 3600, 3602, 3637) are other ciphers and were not attempted here.",
+  "duplicates": "targets/genes1638 (catalogue 755, item 3594,156) and targets/genes1643 (3598,44) are items of this same entry already read; known.py 'Velasco y la Cueva', 'Briceno Ronquillo' hit those targets and research/pares_ags. Velada hits are catalogue 372 (1640 England letter, another key).",
+  "verdict": "partly_read",
+  "closed": "Two items (3594,156 and 3598,44) read in full by Brice Dudout with their own keys; most 1638 items have contemporary plain copies in the same bundle; the 1643-1651 items (3598,15,41; 3600; 3602; 3637) remain unread."
+ },
+ "757": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://catalog.archives.gov/medialive/44/1077/27107744/content/dc-metro/rg-059/M367/M367_Box_3_70-121/M367_Roll83/M367_Roll83-0114.jpg (downloaded by curl 2 Nov 2026) and frame 0113 as seen in the 30 Oct frame check",
+   "extent": "0114: reply 'Received March 1, 1918', Washington via Pacific, 37 words, 31 ten-letter lowercase groups in 8 lines plus 'yrjmp 17527'; 0113: outgoing cable of 18 Feb 1918, 17 five-letter groups.",
+   "cipher": "Letter groups (5-letter outgoing, 10-letter reply). No decipherment on the frames. Decrypted here as a check: Vigenere, key FEBRUARY, applied to the first 40 letters of the reply gives 'noautomaticwireleshstationsusedbetweenho' (English, 'no automatic wireless stations used between Ho[nolulu]')."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (NARA RG 59 item, not a DECODE harvest source; known.py Winslow hits only targets/auckland1918).",
+   "tomokiyo": "No cryptiana page on this cable pair; searched Auckland 1918 wireless cipher cable, nothing.",
+   "lasry": "No Lasry entry for it.",
+   "edition": "Read by Brice Dudout, 28 Oct 2026 (targets/auckland1918/NOTES.md: both cables read, outgoing 94/94 letters, reply 305/305 in sense); the 4 March 1918 despatch is in the same file but no clear text is filed on the reel.",
+   "literature": "Published at bdudout.github.io/europe-chiffree (documents.html#auckland-1918); no other study found."
+  },
+  "key_check": "Key FEBRUARY (Vigenere, ordinary alphabet) recovered by Dudout from the reply (period 8 from repeats TKUTZMS and IFOSRLI) and applied to the outgoing cable; I re-checked it on the first 40 letters of the reply (readable English).",
+  "duplicates": "known.py 'Winslow', 'Auckland': targets/auckland1918 is this item; no other duplicate. The entry's note that the recipient could not read the reply is not supported: the key is the same as for his own cable (Dudout).",
+  "verdict": "read",
+  "closed": "Read in full by Brice Dudout (targets/auckland1918): Vigenere with key FEBRUARY, outgoing cable 94/94, reply 305/305 letters; key re-checked on the first line of the reply.",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: the cables are Vigenere with key FEBRUARY and are already read (targets/auckland1918); the claim that the addressee could not read the reply is not supported."
+  }
+ },
+ "758": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://catalog.archives.gov/medialive/83/5051/19505183/content/dc-metro/rg-059/M862/Box_09/JPG/M862_Roll342/M862_Roll342-0505.jpg and -0509.jpg (downloaded by curl 2 Nov 2026, about 3300x5000 px)",
+   "extent": "0505: copy no. 35, Musquiz 25 June 1906, Guajardo to Governor Cardenas, about 20 lines of English text with 15-18 two-digit code numbers in runs (88 80 18 99 le 11 33 86 ... 30 83 98 10); 0509: copy of 2 July 1906, about 25 lines, runs like '32, 25, 42, 49, 30' and '10, 35, 70, 18'. The reel holds 9 frames (0505-0513) of copies, about 270-450 code numbers.",
+   "cipher": "Two-digit numeric code replacing words and names inside English-translated copies (the clear words are the Senate subcommittee's English rendering of the Spanish telegrams); numbers recur in whole runs ('10 35 30 18' and '10 35 70 18'), suggesting letter or syllable groups for names. No decipherment or key on the frames; the Department's memoranda say the Mexican Embassy could not read it."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (NARA RG 59 numerical file; known.py 'Kickapoo', 'Muzquiz', 'Guajardo' gave only this catalogue row).",
+   "tomokiyo": "No cryptiana page on Coahuila/Mexican state codes of 1906 found.",
+   "lasry": "No Lasry entry.",
+   "edition": "Three web searches (Kickapoo Muzquiz telegram code; Senate Committee on Indian Affairs hearings 1907 at Eagle Pass, Douglas, Shawnee; Teller, Guajardo, Cardenas) found only library catalogue records of the printed hearings (Mar 1907 and Nov-Dec 1907); the printed volumes' text could not be searched, so a printed decipherment is not excluded.",
+   "literature": "No study of the Coahuila telegraph code found; one search hit says only that Mexico refused cipher telegrams in 1913."
+  },
+  "key_check": "No Mexican state or governors' code is held in the repo or known in print; Root's telegram says the Embassy 'does not know the code'. No key tried; the repeated runs do not fit one value per letter with an obvious crib. Not a key lookup on present evidence.",
+  "duplicates": "known.py 'Kickapoo', 'Muzquiz', 'Guajardo', 'Teller': only this entry; no target or DECODE record. Not a duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: frames 0505 and 0509 viewed; code numbers stand in English-rendered copies; the printed 1907 Senate hearings (Mexican Kickapoo) not yet text-searched for a decipherment."
+  }
+ },
+ "762": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://www.theodorerooseveltcenter.org/digital-library/o266250/ (image viewed in my own Chrome tab 2 Nov 2026 and zoomed; LC reel 413 frame 0026)",
+   "extent": "One typed White House telegram form, Washington, May 27 1903, to Hon. John Hay, Secretary of State, signed Theodore Roosevelt: about 25 five-digit groups in 4 lines (56169 41276 of 18427s 47373? 33900 52844 think / it 25361 ... 58597 ... 38401 10000 ... 42778 / 34036 53279 at ... 28040 43758 36556 16440 11698 the / 53664 53149 ... 34553 36885) with a few plain English words (of, think, it, at, the) between the groups.",
+   "cipher": "Five-digit numeric code groups mixed with plain function words; a book code of the 1903 State Department or a commercial code. No decipherment, decode or gloss on the page (the TR Center record says only 'Coded message')."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (US presidential papers; known.py 'Roosevelt Hay' no hits).",
+   "tomokiyo": "No cryptiana page on this telegram; Tomokiyo's pages cover other Roosevelt-period material only in passing (searched).",
+   "lasry": "No Lasry entry.",
+   "edition": "Searches of the TR Center library, Morison's Letters of Theodore Roosevelt vol. 3 and FRUS 1903 found no printed text for a 27 May 1903 Roosevelt to Hay telegram; Hay's telegrams of May and July 1903 in the TR Center are plain.",
+   "literature": "Schmeh's blog 'Unsolved: a telegram from US President Theodore Roosevelt' is a different telegram (1898, to Dewey, codeword cipher); no study of the 1903 item found."
+  },
+  "key_check": "No State Department five-digit code book of 1903 is held in the repo (searched known.py 'Roosevelt Hay'); no key could be applied. The plain words between groups give only 'think it ... at the' as cribs.",
+  "duplicates": "known.py 'Roosevelt Hay', 'Roosevelt': no duplicate; the TR Center subject 'cipher and telegraph codes' lists other items, not checked one by one. Hay's received copy was not located.",
+  "verdict": "open",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: image viewed and zoomed; about 25 five-digit groups with plain words; no decode filed; key not available."
+  }
+ },
+ "793": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "facsimile",
+   "where": "https://scienceblogs.de/klausis-krypto-kolumne/files/2020/12/Utah-Cryptogram-1.png (Klaus Schmeh's blog, copy from Ken Alford; downloaded and viewed 2 Nov 2026); the Beinecke original is not online",
+   "extent": "Page 1: headed 'Great Salt Lake City July 21th 1858', 22 lines of continuous lowercase cursive letters; page 2 similar (about 14 lines).",
+   "cipher": "Letter cipher with no word division; the lines are full of alphabet runs ('abcdlmmnopstvwxyggrs', 'lmnopgrstuvwxyggrs', 'ghijklmnopggk') interleaved with irregular text, so a large share of the letters look like fillers or a keyed table. No plaintext, key or decipherment on the leaf."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Utah', 'Salt Lake' give only this row and research/us_beinecke_folger).",
+   "tomokiyo": "No cryptiana page on a Utah War cipher letter found.",
+   "lasry": "No Lasry entry.",
+   "edition": "Schmeh's blog (11 Dec 2020) says the letter is undecoded; searches (Utah War cipher letter 21 July 1858; Utah Expedition undecoded cipher letter Yale) found no solution or edition; the Beinecke catalogue says 'Undecoded cipher letter'.",
+   "literature": "Mormon cipher history (nothingwavering.org 'Codes and ciphers in Mormon history', parts 2-3) describes Larrabee, Patterson and Kane's 1858 Bible-keyed cipher (a keyword Vigenere-type table built from line initials of Genesis); no source ties the 21 July 1858 letter to it."
+  },
+  "key_check": "Candidate not tested: Kane/Larrabee/Patterson-style keyed table cipher (keyword from first letters of lines of a Genesis chapter, per the Mormon-history source). The alphabet runs in the text do not look like a plain Vigenere output, and no keyword is known, so I do not claim it is ruled out.",
+  "duplicates": "known.py 'Utah', 'Salt Lake', 'S-4203': only this entry and the Beinecke sweep files; the Yale 4 Feb 1858 Kane cipher (with a translation not in Kane's hand) is a different item.",
+  "verdict": "open",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: Schmeh's copy viewed; alphabet-run structure noted; Kane/Patterson keyed-table cipher is the first system to test."
+  }
+ },
+ "798": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://collections.library.yale.edu/iiif/2/16601228/full/1400,/0/default.jpg and .../16601230/... (Yale oid 16601191, images 2 and 4 viewed 2 Nov 2026)",
+   "extent": "Image 2: the cipher passages of the 8 Jan 1700 letter, about 17 lines of English on a half sheet with inline numeric code ('the 1940 Man is put into the hands of the Secretary of that country', '91' above 'Dec'), with underlinings ('should be brought', 'to an Issue') and interlinear glosses in the same hand; image 4: docket 'Whitehall Earl Jersey Jan 8th 1700'. Only a handful of code numbers (1940, 91 and a few others), not a cipher block.",
+   "cipher": "English letter with a few nomenclator numbers (1940 for a country or person, 91 for a month or name); the decoded words are written over the numbers in the leaf (the sense of the text is complete without a key)."
+  },
+  "prior_art": {
+   "decode": "DECODE R2868 is listed 'Non-decrypted' (de-crypt.org record not opened: images need the cookie, and the only cipher on the leaf is a few numbers).",
+   "tomokiyo": "No cryptiana page on the Manchester papers' 1700 Jersey letters found.",
+   "lasry": "No Lasry entry.",
+   "edition": "Printed in Christian Cole, Memoirs of Affairs of State (1733), p. 94 per the entry; the Yale catalogue describes Jersey's neighbouring letters of Jan 1700 as 'deciphered and printed in Cole' (pp. 96, 102). Cole not read page by page.",
+   "literature": "Searches of Cole 1733 and the Yale Manchester papers records (16601191-16601199) confirm the series is a decipherment-in-print series; Camden Third Series introduction cites Cole pp. 116 for the same correspondence."
+  },
+  "key_check": "No numeric key needed to read it: the glossed words stand on the leaf. The code numbers (1940, 91) are not in a held table; Cole's print is the only key evidence.",
+  "duplicates": "known.py 'Jersey', 'Manchester': catalogue 796 is Jersey to Manchester, 15 Apr 1700 (another letter); no duplicate of 798. The cryptoole listing GB16XX-128 is this letter.",
+  "verdict": "partly_read",
+  "closed": "Decipherment written on the leaf as interlinear words and printed by Cole 1733 p. 94 ('not quite correctly'); only a few code numbers, so the letter is read; the numbers 1940 and 91 themselves are not tabulated. Nothing to solve ciphertext-only.",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: image 2 viewed; inline code numbers with interlinear glosses and a printed decipherment in Cole; cipher not a block."
+  }
+ },
+ "836": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://hdl.huntington.org/digital/iiif/p15150coll7/18373/full/1600,/0/default.jpg (f. 1r), .../18403/... (f. 16r) and .../18407/... (f. 18r), downloaded 2 Nov 2026",
+   "extent": "f. 16r: bottom margin, 4 lines of about 25-30 signs each (about 110 signs) of angular and curved symbols with a date line '3rd ... 1651'; f. 1r: head of the leaf, one line of strokes beside 'This Booke was written in the yeare 1386' in a 17th-century hand, and a second note at the foot dated 1648; f. 18r: a short run of 4-5 signs in the right margin.",
+   "cipher": "Private symbol cipher or shorthand of a 17th-century owner (neither a Hoccleve text nor a known alphabet); no plaintext, key or decipherment on any of the three leaves."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Hoccleve', 'HM 744': only research/us_huntington files).",
+   "tomokiyo": "No cryptiana page on this note found (searched).",
+   "lasry": "No Lasry entry.",
+   "edition": "Huntington/Digital Scriptorium/Biblissima records of HM 744 and Tremaine's 1968 edition describe the Hoccleve text, not the cipher notes; web search for HM 744 'notes in cipher 1648 1651' returned nothing on them.",
+   "literature": "Provenance in the records runs Ashburnham, Dunn (sale 1913), Yates Thompson; no study of the 17th-century owner's cipher found."
+  },
+  "key_check": "No 17th-century English shorthand (Shelton, Willis, Rich) or symbol alphabet table is held in the repo; the signs were not compared with them beyond the glance at the images. Not a key lookup on present evidence.",
+  "duplicates": "known.py 'Hoccleve', 'HM 744': the only hits are the us_huntington sweep files. Not a duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: f. 1r, 16r, 18r viewed; f. 16r has 4 lines (about 110 signs) of symbols dated 1651; shorthand systems of the period not yet compared."
+  }
+ },
+ "845": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/3954500 (FRIAS,C.128,D.17, images 1, 2, 5 viewed 2 Nov 2026 by ViewImage.do, images 3-4 fetched)",
+   "extent": "Image 1: one page of about 45 lines of slash-separated cover words (badillo, granoso, ogil, hubaro, alfaro, gotalua...) with several runs of 6-12 symbols; images 2-4: two-page spreads, heavily stained, 'ORIGINAL DETERIORADO', apparently the same slash-separated word runs in dense columns (not clear prose) over the whole spread; image 5: a stained torn page of dense script with some symbols.",
+   "cipher": "Cover-word code (a small stock of repeated words standing for letters or syllables, separated by slashes) with short symbol runs; images 2-4 look like further pages of the same code rather than a key table. No plaintext or gloss seen on any image."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Frias', 'Villena', 'badillo' give only this row and unrelated FRIAS entries).",
+   "tomokiyo": "Not on Tomokiyo's Spanish pages (reported by Dudout; my web search for 15th-century Castilian cover-word code found nothing).",
+   "lasry": "No Lasry entry.",
+   "edition": "Galende Diaz's cipher studies (the 2013 and earlier Reyes Catolicos papers, found by search) say Castilian cipher texts before the end of the 15th century are rare and mostly steganographic or literal; none mentions a Frias/Villena letter.",
+   "literature": "Searches (carta cifrada Garcia Villena Tellez Giron; cover-word code Castile; Bertomeu 2012 'Las cifras espanolas en el siglo XV' cited) found no work on this letter."
+  },
+  "key_check": "No Castilian 15th-century table is held in the repo; the cover words repeat (badillo, granoso, ogil) so frequency analysis of the word stream is possible but was not run in this vetting. Not a key lookup.",
+  "duplicates": "known.py 'Villena', 'Frias': only catalogue 845 and unrelated AHNOB FRIAS rows (C.81, C.28, C.1442). Not a duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "5 images, all viewed 2 Nov 2026: image 1 one page of slash-separated cover words with symbol runs; images 2-4 two-page spreads of the same type of text (stained, deteriorated); image 5 torn page with a few symbols. Much more cipher text than the first page alone.",
+   "status_append": "2 Nov 2026 vetting: images viewed; extent is about 5 images, not one page."
+  }
+ },
+ "846": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Vestigia 1908 image 1 (HU_MNL_OL_X_10891_DF_294963.JPG), local copy in the main checkout targets/caprile1519/img/v/v1908_1.jpg, viewed 2 Nov 2026 (the vestigia.hu viewer returned an error page from my Chrome tab and a 500 to curl)",
+   "extent": "Black-and-white photocopy, one page: about 20 lines of clear Italian (letter to Alfonso I, Krakko 14 Oct 1520, news of Cardinal Ippolito's death), one cipher line of two-digit numbers at about line 7, and about 7 lines of two-digit cipher at the foot, washed out and mostly illegible.",
+   "cipher": "Two-digit numeric figure cipher (groups ending mostly in 5 or 0, plus f, k, u, y) of the Eger family (R1137, catalogue 158). No decipherment or gloss on the page."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (R1137 is the 25 Jul 1520 sibling letter; V1908 is not there).",
+   "tomokiyo": "No cryptiana page on Cistarelli's cipher.",
+   "lasry": "No Lasry reading; George Lasry's one-key rule split Cistarelli from Caprile (targets/caprile1519 notes).",
+   "edition": "Vestigia holds only the photocopy; Kristof 2025 and Domokos on Eger-Ferrara letters (found by search) discuss Caprili's letters, not this cipher line.",
+   "literature": "Somogyi's work on Caprili's cipher (2025) concerns his sign cipher; the web search found no source on Cistarelli's figure cipher."
+  },
+  "key_check": "Key tried: the anneal key of targets/cistarelli1520 (e = 0, 25; a = 86, 80; o = 70, 10; i = 45; t = 95; ...) and Brice Dudout's key for the family read one line (line 7); the foot lines are lost in the photocopy, so neither reads more than fragments. The original at ASMo is needed.",
+  "duplicates": "known.py 'Cistarelli': targets/cistarelli1520 is this very letter (attempted 28 Oct 2026, not read) and catalogue 158 is the Eger sibling with the same cipher. Not a duplicate of any other entry.",
+  "verdict": "open",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: photocopy viewed (one cipher line plus about 7 foot lines); no new reading; vestigia.hu/kereses is dead, use /documents/1908."
+  }
+ },
+ "849": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://collections.carli.illinois.edu/digital/iiif/nby_dig/2714/full/1400,/0/default.jpg (downloaded and viewed 2 Nov 2026)",
+   "extent": "One page: 'Ex eodem lib. Mst.' and the heading of a table 'serveth them who are desirous to use a form of Characters to write in that maner that no man shall reade'; a 3x3 grid, each cell giving three letters with dots (a.k.t, b.l.u, c.m.i, d.n.x, e.o.y, f.p.z, g.q, s.r.&, s.w); below, two lines of cipher characters separated by a semicolon.",
+   "cipher": "A pigpen-type table: the cell outline of the grid gives the group, the number of dots (none, one, two) the letter. The page carries its own key, so the two sample lines can be read at once; I checked the first two signs of line 1 (open box with no dot = e, right-hand-bracket cell = d), matching the 'edward' of the item's alt-text transcription."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Case MS 5017': only research/chi_newberry and chi_consortium notes).",
+   "tomokiyo": "Not on Tomokiyo; a standard pigpen/Freemason-type variant (searched).",
+   "lasry": "No Lasry entry; not a historical-cipher problem.",
+   "edition": "Satterley, 'Robert Ashley and the authorship of Newberry MS 5017' (Manuscript Studies 6.2) and the Newberry's transcription project describe the volume; they do not discuss this table.",
+   "literature": "Searches (Newberry Case MS 5017 characters table cipher; Book of Magical Charms) found nothing on the cipher page; the book is a magical commonplace book (Ashley, d. 1641)."
+  },
+  "key_check": "The key is on the page: pigpen-style table. Applied to the first two samples: the alt-text readings 'edward; eliet' and 'writ; tsis' are consistent with it. The other pages of the volume (case_ms_5017_070_o2 'code') were not paged here.",
+  "duplicates": "known.py 'Case MS 5017': no catalogue duplicate; research/chi_consortium README says it is already catalogue 849. Not a duplicate.",
+  "verdict": "key_lookup",
+  "closed": "The page contains its own cipher table and two short sample lines (about 10 signs); the entry is a key, not an unsolved text.",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: page viewed; pigpen-type grid with dots; samples decode with it ('edward; eliet', 'writ; tsis'); other pages of the volume still to be paged for further cipher material."
+  }
+ },
+ "854": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://bnedigital.bne.es/bd/es/viewer?id=a06f5018-54ae-4c8c-b11b-17d2e4e0d079 (MSS/20210/11/1, viewer pages 4, 5 and 7 viewed in my own Chrome tab 2 Nov 2026; bdh0000173169)",
+   "extent": "First of the four letters (11 viewer pages): page 4 right leaf about 19 lines of dense symbol cipher after a clear paragraph about 'lancas' (an army of lances and horse), page 5 left leaf 4 more cipher lines, then clear Spanish; pages 3 and 7 clear. Letters 2-4 (viewer ids 95b556a7..., 7f6e40bc..., a84df16f...) not paged.",
+   "cipher": "A sign alphabet (angular letter-like signs with dots and strokes) in long runs inside a clear letter; the clear text around it gives cribs (lanzas, caballos, armada, capitanias). No interlinear decipherment, gloss or marginal key on pages 4, 5, 7."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Cardona': only catalogue rows 854 and 1041, the 1513 Cardona entry).",
+   "tomokiyo": "Cardona is absent from Tomokiyo's Charles V key list (spanish2C.htm checked 28 Oct); my search for Cardona 1517 Naples cipher found nothing.",
+   "lasry": "No Lasry key for the Naples viceroyalty 1517-20 known; Vich 1511-12 (targets/vich1511) and Nino 1522 are other Naples/Rome ciphers.",
+   "edition": "Searches (Ramon de Cardona cartas a Carlos I 1517 1520 cifradas Gayangos) found no edition or decipherment of these four letters.",
+   "literature": "Cipher studies of the Catholic Kings and Charles V (Galende, Parisi 2020, Pich-Ponce) do not list Cardona's letters."
+  },
+  "key_check": "Keys held: Cardona's 1513 cipher entry (catalogue 1041) was not available as a key; Vich 1511-12 key (targets/vich1511) and Escriva (Parisi 2020, targets/federico1497) are sign alphabets of the same chancery period but were not applied because the signs here were not transcribed. Not a key lookup on present evidence.",
+  "duplicates": "known.py 'Cardona': catalogue 854 and 1041 (Cardona 1513, a different set of letters). No duplicate of these four letters.",
+  "verdict": "open",
+  "lead_updates": {
+   "folio_note": "MSS/20210/11/1: cipher on viewer pages 4-5 (about 23 lines) in the first letter; clear paragraphs give cribs (lanzas, caballos)."
+  }
+ },
+ "855": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://bnedigital.bne.es/bd/es/viewer?id=d04c0f93-e7c7-48d8-a640-7163b75511c2 (MSS/20214/61/1, viewer page 2 viewed in my own Chrome tab 2 Nov 2026; bdh0000172763)",
+   "extent": "Letter 1 of 6 (3 viewer pages): the opening on page 2 has about 6 cipher passages (symbol and digit runs) on both leaves, each with the decipherment written above or beside it in a second, bolder hand (e.g. 'En lo del donativo', 'si el armada viene o no', 'quanto' above groups) and a marginal note on the left; the other five letters (viewer ids 3ec8aa35..., 107ed2f9..., 73d577b3..., 60b440d1..., bfd9e8e1...) were not paged: two ids tried (3ec8aa35, 60b440d1) opened other documents' pages (MSS/20214/61/2 verso, /5 page 2, clear), so the id list in the entry does not map letter to viewer in order.",
+   "cipher": "Sign-and-digit cipher in a Spanish letter of 1554, with a contemporary interlinear decipherment in the same leaf; the clear text of the letter is complete without the key."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Siguenza', 'Granvelle': catalogue rows only).",
+   "tomokiyo": "Sigüenza not on Tomokiyo's Granvelle key list; Pich-Ponce 2023 PP1/PP3 are Granvelle-family keys (Estudios Romanicos) for Renard letters, not shown to apply.",
+   "lasry": "No Lasry entry.",
+   "edition": "No edition of the six letters found by search (Cardinal of Siguenza Naples 1554 cartas Granvelle cifra); the in-leaf decipherment is the contemporary reading.",
+   "literature": "Pich-Ponce (Estudios Romanicos 2025, THEL/CHMO 2023) treat Granvelle-Renard ciphers of 1553-56 only."
+  },
+  "key_check": "Granvelle-family PP1/PP3 (Pich-Ponce) and the Gonzaga sibling bdh0000172697 (decipherment as crib, research/bne_hispana README) were not applied; the interlinear gloss of letter 1 replaces the need for a key on that letter.",
+  "duplicates": "known.py 'Siguenza', 'Granvelle': catalogue 855 only (plus a Granvelle correspondence entry for San Vicente, different). Not a duplicate.",
+  "verdict": "partly_read",
+  "closed": "Letter 1 carries an interlinear decipherment written on the leaf (existing decipherment); the other five letters were not paged, so I cannot say whether they are glossed too.",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: letter 1 (viewer page 2) has interlinear decipherment of its cipher passages; the entry's viewer id list does not map letters in order, re-resolve from the BDH card."
+  }
+ },
+ "856": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://bnedigital.bne.es/bd/es/viewer?id=314d610a-37b4-4537-b7a3-0aa2254cefb2 (Carta de Antonio Maria di Saboya, bdh0000172729, viewer page 2 viewed in my own Chrome tab 2 Nov 2026)",
+   "extent": "Page 2 (the middle opening of 3 pages): 3 cipher passages at the top right of the right leaf in sign cipher with the decipherment written in a second hand above and between the lines ('Il Duca di Savoya a lassare / la militia di ... Spagna', 'sua altezza per sapere che risposta', 'li bauqua fatto') and a marginal note at lower left; pages 1 and 3 are clear Italian.",
+   "cipher": "Short sign-cipher runs (about 8 lines) in a clear Italian letter, London 11 Jan 1555; the decipherment is written on the leaf above them."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Savoia', 'Mss/7913': research/bne_hispana and europeana README only).",
+   "tomokiyo": "Not on Tomokiyo's pages (searched; the only Mss/7913 hit is the 1548 Saint-Mauris letter).",
+   "lasry": "No Lasry entry.",
+   "edition": "The Modena Este Cancelleria ambasciatori Inghilterra inventory lists letters to Antonio Maria di Savoia di Collegno (Mar-Jul 1554) but no 1555 cipher; no edition of this despatch found.",
+   "literature": "No cipher study of Ferrarese ambassadors in London found (web search Antonio Maria di Savoia 1555 lettera cifrata)."
+  },
+  "key_check": "No key needed for the glossed passages; the Ferrarese cipher key is not held. The unglossed remainder (if any) is not identified: all cipher runs seen on page 2 carry a gloss.",
+  "duplicates": "known.py 'Savoia': only unrelated rows (birago, bizozola); the entry's other Mss/7913 item (MSS/7913/127) is a different letter. Not a duplicate.",
+  "verdict": "read",
+  "closed": "Decipherment written above the cipher runs on the leaf itself (viewer page 2), all passages seen glossed; the letter is read from the existing decipherment.",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: page 2 viewed; interlinear decipherment above every cipher run seen."
+  }
+ },
+ "858": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://imagines.manuscriptorium.com/loris/HUL___-HUL___URKLEHMANN5918PWTN4-de/id1_vorderseite/full/!1400,1400/0/default.jpg (downloaded and viewed 2 Nov 2026; Heidelberg digi.ub.uni-heidelberg.de/diglit/lehm593)",
+   "extent": "One page, about 25 lines of 17th-century French (headed 'Monsieur de Rusdorf', 1630); two enciphered names written as dot-separated numbers in the opening lines: '4931: 4879. 29. 40. 64. 31. 36. 97. 24.' and '22. 41. 64. 38. 48. 74. 35. 64. 66. 60. 72. 65. 40. 46. 12. 13. 1274.' (about 25 groups in all, mixing 2-digit and 4-digit values); the rest clear French (religion, restitution, the Emperor).",
+   "cipher": "A name code of numbers inside a clear letter; no decipherment above the groups. Only the recto is exposed."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Rusdorf', 'Frederick V': only the Riksarkivet Rusdorff entries and the Elizabeth Stuart entry).",
+   "tomokiyo": "No Tomokiyo page on the Palatine exile ciphers of 1630.",
+   "lasry": "Lasry's key for Rusdorff 1625 (targets/rusdorff1625) is a different cipher; see key_check.",
+   "edition": "Rusdorf's Memoires et negociations secretes (Leipzig 1789) print his correspondence; the printed letter was not located page by page, so a printed text with the names is not excluded.",
+   "literature": "Heidelberg and monasterium.net describe the leaf as a letter of Frederick V with the encrypted names of the persons in the negotiation; searches found no study."
+  },
+  "key_check": "Lasry's 1625 table (24 letters, 3 two-digit homophones each, 24 apart: A 16/40/64, B 20/44/68 ... runs of 4) applied to the two name groups gives K A A X F ... and O G A S C P ..., which are not names: ruled out. Rusdorff 1628 (R4333-35) uses 8-13 and 100-107, also absent here. The 4-digit values (4931, 4879, 1274) are unlike both.",
+  "duplicates": "known.py 'Rusdorf', 'Frederick V': no duplicate; the Elizabeth Stuart correspondence entry is a different series.",
+  "verdict": "open",
+  "lead_updates": {
+   "shelfmark": "Heidelberg University Library, Urk. Lehmann 593 (digi.ub.uni-heidelberg.de/diglit/lehm593); the Manuscriptorium pid reads URKLEHMANN5918PWTN4, the Heidelberg shelfmark is Lehmann 593"
+  }
+ },
+ "5": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90598430/f16/full/1400,/0/default.jpg and f17 (BnF fr. 2984 microfilm, canvas n = leaf 2n-3; downloaded and viewed 2 Nov 2026); canvases f33, f35, f37 also viewed (clear French)",
+   "extent": "pp. 29-31 (13 May 1526, no. 7): three full pages of dense sign cipher (about 35 lines each) ending with a clear French close and signature 'Rome ... mai 1526 / Nicolas Raince'; no gloss on these pages. Other letters of the entry carry glossed leaves (pp. 25, 41, 121-123) or print (Mignet 1886, Bourrilly 1901).",
+   "cipher": "Tomokiyo's 1526 sign cipher (word signs plus letter signs). No decipherment on pp. 29-31; the 9 June letter has its clear duplicate at p. 17 ff. per Mignet."
+  },
+  "prior_art": {
+   "decode": "DECODE 4228 (fr. 3040 f. 21, 1526, Decrypted) and 3696 (fr. 3091 f. 19, 1529, Decrypted) are other Raince letters; none for pp. 29-31.",
+   "tomokiyo": "Tomokiyo published the 1526 key (2020) and a 1529 key (raince.html in the repo); web search for the page returned only generic results, so repo notes (targets/raince/NOTES.md) are the source.",
+   "lasry": "Lasry's reading audit of 22-23 Oct 2026 judged the 13 May and 20 Nov passages decoded, not read; Brice Dudout then read the 20 Nov residue (p. 105-106, ~98% of words, PR #163).",
+   "edition": "Mignet 1886 and Bourrilly 1901 print cipher passages of the 17 June and 20 August letters; no print of 13 May found (Pastor IX app. 38 is the 26 Nov letter).",
+   "literature": "Grethen 1887 not digitised; nothing else found."
+  },
+  "key_check": "Tomokiyo's 1526 key re-measured and applied (CALIBRATION.md, trans/residue1526_reading.md): about 13% unresolved glyphs and two word signs not in the key on pp. 29-31; sentences do not build through (0.513 plain). Key available, reading incomplete.",
+  "duplicates": "known.py 'Raince': targets/raince is this entry; other Raince items (fr. 3040 f. 21, fr. 3091 f. 19) are separate DECODE-decrypted letters. No other duplicate.",
+  "verdict": "partly_read",
+  "closed": "Of the eight letters, those with contemporary interlinear or printed decipherments and the 20 Nov residue (Dudout, ~98%) are read; the 13 May letter (pp. 29-31, three pages of cipher) is decoded with Tomokiyo's key but not yet read."
+ },
+ "7": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90601558/f52/full/900,/0/default.jpg (BnF fr. 3022, downloaded 2 Nov 2026; canvas f52 shows the cipher leaf, f48-f50 the clear Spanish despatches that precede it)",
+   "extent": "f52 right-hand leaf: about 35 lines of sign-and-number groups (initial letter + number) across a full page; no. 20 as a whole is ff. 44r-46v, about 1,314 tokens (3,900 groups for the family).",
+   "cipher": "Ranzo's code (initial letter + number, non-alphabetical numbering). No French decipherment exists; Clair. 327 ff. 279-280 is an undeciphered copy."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (no Ranzo record).",
+   "tomokiyo": "Not on Tomokiyo's pages; the cryptiana blog's 2026 post on unsolved Charles V ciphers lists the 11 April 1528 Italian memoir as unsolved at the time.",
+   "lasry": "George Lasry and, independently, Paolo Rosson recovered the key from ciphertext only (6 Oct 2026, PRs #35, #45); no. 20 measures 94.4% (targets/ranzo1528).",
+   "edition": "No edition; the cryptiana blog and the repo are the only sources found by search.",
+   "literature": "Lasry's Cryptologia paper on 57 BnF letters covers sibling ciphers of fr. 3022 but not this one (searched)."
+  },
+  "key_check": "Lasry's and Rosson's keys applied in targets/ranzo1528: 94.4% of tokens, 74 of 1,314 tokens (27 groups) with no value and 47 tentative Lasry values unconfirmed; just under the 95% read bar.",
+  "duplicates": "known.py 'Ranzo': targets/ranzo1528 is this entry; its other items (nos. 6, 10) are read elsewhere (vasto1527). No other duplicate.",
+  "verdict": "partly_read",
+  "closed": "Key recovered ciphertext-only by Lasry and Rosson; no. 20 deciphered at 94.4% of tokens, not yet read in sense; the 74 open tokens need checking against the images."
+ },
+ "9": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L06",
+  "seen": {
+   "kind": "scan",
+   "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52503046q/f446/full/1100,/0/default.jpg (BnF Espagnol 318, f. 118r = canvas 446, downloaded and viewed 2 Nov 2026)",
+   "extent": "f. 118r: one full page of about 35 lines of sign cipher (CVC-type groups with strokes), top mark '+', folio numbered 118; no gloss, interlining or clear text on the page; f. 118v is the continuation.",
+   "cipher": "Ferdinand's secretariat sign cipher; no decipherment on or with the leaf; the neighbours no. 92, 94, 95 have their own keys (Cifra general; Brackx's no. 94 key; Lasry's CTTS key for no. 95)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (Espagnol 318 is a BnF item).",
+   "tomokiyo": "Tomokiyo's cryptiana post on ciphers in the reign of Ferdinand and Isabella lists Espagnol 318; no. 93 is not given a key.",
+   "lasry": "Lasry deciphered no. 95 recto (PR #75) with his own key; no. 93 untouched.",
+   "edition": "Parisi 2020 (Studi di storia medioevale e di diplomatica) prints no. 5 (Escriva, Naples); Bergenroth's partial list of the Gran cifra (BNE MSS 20.211/52) is not online; no print of no. 93 found.",
+   "literature": "Galende Diaz 1994 (Cifra general, no. 92) and Pich-Ponce do not treat no. 93."
+  },
+  "key_check": "Keys tried (targets/esp318no93): Escriva no. 1, Cifra general and no. 94's key do not fit (code initials and inventories barely overlap); a homophonic anneal of 1,016 signs failed (CVC groups are atomic). The suspected Gran cifra survives only as Bergenroth's partial list.",
+  "duplicates": "known.py '318': targets/esp318, esp318no94, esp318no95 are the former siblings, split off; entry 9 is narrowed to no. 93. No other duplicate.",
+  "verdict": "open",
+  "lead_updates": {
+   "status_append": "2 Nov 2026 vetting: f. 118r viewed, about 35 lines of sign cipher, no gloss; keys of nos. 5, 92, 94, 95 do not read it."
+  }
+ }
+}
