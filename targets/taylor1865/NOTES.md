@@ -379,3 +379,71 @@ Thus COME RETRIBUTION is supported in the Brent channel on 8 March, while
 the 9 March orders tell Wirt Adams and D.W. Adams to adopt it. The recipient-
 specific chronology is essential: the orders do not date its first use at
 headquarters, much less the entire Confederacy.
+
+## 1 November 2026 — community check and local continuation
+
+PR #186 was merged by dbourdeau on 29 Oct 01:30:55 UTC (28 Oct Pacific).
+No comments/reviews or later upstream target changes were found in today's
+GitHub check. User requested research only, stopping submission preparation.
+
+The 8 March Brent message (vol.196 fr0052 p99) now follows COME RETRIBUTION
+continuously: STRONG is split STR / ONG at the line break. The final MOVING
+FROM NORTH follows naturally from the beginning. 116/124 working candidate
+letters agree with the contextual reconstruction; Montgomery, evacuated,
+force and adequate retain uncertainty labels. This improves the prior partial
+without silently replacing its historical file. No complete-reading claim.
+
+The 4 February Taylor–Davis Navy telegram (vol.196 fr0010 p15) has an existing
+printed decipherment, OR I/49/1 p955. A long downstream sequence matches COME
+RETRIBUTION, pushing our selected image-checked examples back into February.
+The beginning has a garbled eight-letter VESSELS group. An apparent missing
+letter in A FARCE was resolved on a fresh enlarged crop: UYIFPG contains a
+narrow I, so no insertion is needed. These revisions are explicit in the alignment. The raw ending FTXIIUCGO gives OPERATING exactly, revealing a wording variant:
+manuscript "never co-operating with the army" versus printed "never in
+co-operation with the army." No IN insertion or final-two-letter correction
+is required. This supports channel-specific
+early use, not a universal switch or first-use date. Full caveats and provenance:
+REPORT-2026-11-01.md; reproducer nov1_analysis.py; raw candidates and reconstructed
+streams nov1_alignment.json/.tsv, nov1_controls.txt. No submission changes.
+
+### Further coverage in the same 1 November session
+
+- Vol196 fr0031 p56,21February, Taylor/Bullock to Wirt Adams: COMPLETE VICTORY,
+  76/80 candidate positions; provisional full sense, uncertain M&O abbreviation.
+  This is a direct old-key witness for an addressee of the9March change order.
+- Vol196 fr0018 p31,10February, Taylor to Beauregard: COME RETRIBUTION,
+  174/203 positions; heavily provisional, decoded not read. Brigades/furloughs/
+  Mobile-versus-east movement. New reading marks all unresolved words.
+- Vol11 fr0077b p149,20April: equipment telegram now aligns over80 cipher
+  letters,79 direct. **of any** is clear; OF must not advance the key. Complete
+  existing printed decipherment OR I/49/2 p1255, one final D/F ambiguity.
+- Vol11 fr0041 p79,8April: readiness of Maury's regiment and Richmond news.
+  Existing decipherment OR I/49/2 p1216 located after known-key reading.
+  Manuscript TOWARDS versus printed TOWARD; final Danville group remains
+  uncertain in segmentation. This frame has one cipher telegram, not two;
+  the next clear telegram merely requests a reply "in cypher."
+
+All six session documents have separate reading files, raw/reconstructed
+alignment, key controls, and exact image URLs (`nov1_sources.json`).
+Additional OR I/47/2,47/3,52/2 and Rowland Davis vol5,6,7 OCR searches did not
+locate the January18 counterpart; this does not establish nonpublication.
+April10 gaps remain. April11 fr0046 re-inspection and exploratory key tests
+remain unresolved; uncertain transcription prevents inference of a new key.
+
+Final community follow-up: PR#111 comments are the27October review and reply;
+no later discussion was found there. The accepted earlier work remains the
+latest upstream target update. All new1November findings remain local.
+
+Final source check: vol10 fr0054 p102 is15January1865 Taylor–Davis, printed
+in full OR I/45/2 p785. COMPLETE VICTORY matches opening/later phrase patterns;
+full raw transcription still needed. `v10-0054_prior-print.md` labels its
+predicted cipher groups explicitly; they must not be mistaken for raw evidence.
+This fills a prior-print lead, not a new plaintext recovery.
+
+### Follow-up submission
+
+At the user's subsequent request, this work is now documented for a follow-up PR.
+Six new profile records carry measured cipher-only word shares and full candidate
+transcription/alignment/prose files. Navy and equipment have model-reviewed
+readings; Brent, Wirt and Richmond remain in part, Beauregard decoded not read.
+No independent human review or full-collection completion is claimed.
