@@ -88,6 +88,17 @@ values, most of them plain `ꝗ` (*que/vo*).
 - Some decipherments are partly lost in the gutter (H32a, H36). They were completed from the H15Corpus where it
   reads further, and are otherwise marked in brackets.
 
+## Licence note: the decipherment column is not under CC BY 4.0
+
+The cipher transcriptions, the decodes and the key values in these files are the contributor's work and fall under the
+project licence (CC BY 4.0 for text and data, MIT for code). **The decipherment-of-the-time column in
+`h32_transcription.md`, `h33_transcription.md`, `h36_transcription.md` and `h44_transcription.md` is a different matter.**
+It largely follows the H15Corpus transcriptions of these letters, checked on the images. The H15Corpus states no
+licence, so that column is **not covered by the project's CC BY 4.0 licence**, and the maintainer has not obtained
+permission to reuse it. It is kept here for checking the key and is credited below; it is not offered for reuse. If the
+corpus's directors object or ask for it to be removed, cut that column to the key words and leave the cipher and its
+values (decided by the maintainer, 2 Nov 2026).
+
 Source of the decipherment transcriptions: Lola Pons y Eva Bravo-García (dirs.): H15Corpus, disponible en línea:
 <http://historia15.us.es/H15corpus/> [fecha de consulta: 02/11/2026], documents GRANVELA-H-0032, 0033, 0036, 0044. The
 site states no licence; its citation form is used here.
