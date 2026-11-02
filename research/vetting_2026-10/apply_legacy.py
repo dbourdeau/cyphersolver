@@ -14,7 +14,10 @@ for nn in sys.argv[1:]:
         v = v.get('vetting', v)
         if 'unvetted' in v and 'verdict' not in v: continue
         upd = v.pop('lead_updates', None)
-        if upd: e.update(upd)
+        if upd:
+            add = upd.pop('links_add', None)
+            e.update(upd)
+            if add: e.setdefault('links', []).extend(add if isinstance(add, list) else [{'label': 'item', 'href': add}])
         e['vetting'] = v
         ok += 1
         if v.get('verdict') != 'open':

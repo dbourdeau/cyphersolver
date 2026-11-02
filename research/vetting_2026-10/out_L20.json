@@ -1,0 +1,140 @@
+{
+ "649": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L20",
+  "seen": {
+   "kind": "scan",
+   "where": "NARA M30 roll 4 images 0244 and 0245 (catalog.archives.gov/medialz/dc-metro/rg-059/603720/M30/M30-004/M30-004-0244.jpg, fetched by curl 2 Nov 2026, 4568x2952 px)",
+   "extent": "Two openings of the duplicate copy of Delacroix No. 5, Paris 25 Messidor an V: French heading ('Dup. (Copy)', 'No. 5 Duplicata', 'Le Ministre des relations exterieures') then page after page of dotted numeric groups (e.g. 806.711.405.63.972 / 278.417.800.441.39), values up to about 1200",
+   "cipher": "A French numeric code, groups separated by full stops, no clear text beyond the heading; no decipherment or interlinear gloss on 0244 or 0245 (lower half of each scan is blank). Neighbouring frames 0236-0252 were reported without decipherment by the earlier triage and by Brackx (issue 122)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE as far as the repo ledgers show (known.py 'Delacroix', 'Letombe': only research/nara_triage_a README hits, no DECODE record); no separate DECODE search by me.",
+   "tomokiyo": "No cryptiana page found for this despatch (web searches 2 Nov 2026 returned nothing on it); cryptiana itself not searched page by page.",
+   "lasry": "No Lasry reading known; web search 'Delacroix Letombe 25 messidor an V depeche chiffree 1797 King No. 53' (2 Nov 2026) returned nothing on this document.",
+   "edition": "Turner, Correspondence of the French Ministers 1791-1797 (AHA 1903) does not print No. 5 but prints Letombe's reply No. 42 (22 Brumaire an VI, p. 1077, from the ministry's decipherment, CP Etats-Unis 48 f. 355), per Brackx; King No. 53 says 'I have no means of decyphering it'.",
+   "literature": "Web search 2 Nov 2026 (messidor an V, Delacroix, Letombe, King No. 53): no printed decipherment; the Archives diplomatiques copy with decipherment is not online."
+  },
+  "key_check": "No French Directory-era ministry code is held in the repo: targets/jqa (US State Dept code), Armstrong, Pinckney and the Dedem 1788 code are different systems; none applied because no table for the 1797 French code exists here. The printed Letombe reply No. 42 is the only plaintext tied to the despatch and is too short to anchor a table.",
+  "duplicates": "known.py 'Delacroix', 'Letombe', 'Létombe': no other catalogue or target entry for this despatch (only research/nara_triage_a README and the attempted-open note, commit fda1d20e5). Frames 0244-0245 are the duplicate copy; no second copy elsewhere found.",
+  "verdict": "open"
+ },
+ "650": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L20",
+  "seen": {
+   "kind": "scan",
+   "where": "NARA M31 roll 14 image 0039 (catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-014/M31-014-0039.jpg, fetched 2 Nov 2026, 2560x3072 px)",
+   "extent": "One page headed '4', 26 lines of dotted numeric groups (about 550 groups) with a few clear phrases ('would induce them to', 'an offer was made by them', 'the intention of holding it', 'take place'); other coded frames 0036-0038, 0050, 0052-0057, 0124-0125, 0191-0192 (about 3,000 groups per the catalogue) not looked at",
+   "cipher": "Numeric code (groups to about 1600) with subscript marks (s, c, 333) and strokes; no interlinear decipherment on the leaf; most frequent groups 285 and 76."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Morris', 'Cadiz': no DECODE record; targets/morris1813 states none).",
+   "tomokiyo": "No cryptiana page found; web search 'Anthony Morris Cadiz 1813 Monroe cipher code' (2 Nov 2026) gave no hit.",
+   "lasry": "No Lasry reading found (same search).",
+   "edition": "No printed decipherment: Manning vol. 3 searched by the repo target; Woolfley, A Quaker Goes to Spain (Lehigh 2013) discusses the mission, no cipher reading located; Papers of James Monroe vols. 6-7 not read.",
+   "literature": "Web search 2 Nov 2026 (Morris Cadiz Monroe cipher despatches): only Founders letters and Woolfley's book; nothing on the code."
+  },
+  "key_check": "Key held: targets/jqa/code_table.tsv (State Department code, the = 1385) with the sixteen blocks of 100 in reverse order (targets/morris1813/block_map.tsv: Morris 100*i+r = JQA 100*(15-i)+r). I checked it myself on the first lines of frame 0039: 140 it, 977 appears, 1069 to, 928 me, 284 that, 285 the, 76 of, 1549 United States, then 285 the, 721 51 554 dem-o-cre, 999 104 at-ic, 329 937 govern-ment, 76 of, 285 the, 1549 United States, 1180 under: 'it appears to me that ... democratic government of the United States under the', fluent English. So the lead's note that signature groups do not match JQA is wrong: they match with the block order reversed.",
+  "duplicates": "known.py 'Morris', 'Cadiz': targets/morris1813 (same document, WAINUT contribution) is the only hit; nothing else in the catalogue.",
+  "verdict": "key_lookup",
+  "closed": "The held JQA/State Department code table with blocks reversed reads frame 0039 as sense (spot check of about 35 groups); only that frame is transcribed in the repo, the other coded frames are unread.",
+  "lead_updates": {
+   "status": "Code identified 2 Nov 2026: the State Department code of targets/jqa with its blocks of 100 in reverse order (Morris 100*i+r = JQA 100*(15-i)+r); frame 0039 reads as sense ('it appears to me that ... democratic government of the United States under the'); the other coded frames are not yet transcribed.",
+   "links_add": [
+    {
+     "label": "Repo target morris1813 (key and reading)",
+     "href": "targets/morris1813/NOTES.md"
+    }
+   ]
+  }
+ },
+ "628": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L20",
+  "seen": {
+   "kind": "not online",
+   "where": "Massachusetts Historical Society, Adams Family Papers (microfilm reel 393); NARA catalog item 55028996 is only Adams's cover letter to Pickering, 1 Apr 1799",
+   "extent": "Two letters of J. A. B. Rozier to Talleyrand, 27 Oct 1798 (6 Brumaire VII) and 22 Nov 1798 (2 Frimaire VII, postscript 3 Frimaire) with an extract of Rozier to Hedouville, forwarded in the Gibraltar packet; 'long' per Pickering",
+   "cipher": "Archive description (NARA 55028996): Adams submits 'a packet of papers sent by the United States Consul at Gibraltar, but they have not been deciphered'; Hamilton Papers note: 'Both letters are in code'; Adams: 'These numbers'. A numerical cipher or code; the ciphertext is not online."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Astrea', 'Gibraltar', 'Rozier': only targets/astrea1799 and an unrelated Behn lead).",
+   "tomokiyo": "No cryptiana page found (American case of 1799; web search below found none).",
+   "lasry": "No Lasry reading known.",
+   "edition": "Papers of Alexander Hamilton vol. 23 pp. 12-13 and 200 (Founders Online Hamilton/01-23-02-0010 and 01-23-02-0200) and Adams Papers 99-02-02-3399 describe the packet; no plaintext printed. Pickering to Hamilton 18 Jun 1799: Rozier's key matched the intercepted letters in every passage examined.",
+   "literature": "WebSearch 2 Nov 2026 'Rozier Talleyrand Astrea Gibraltar cipher dispatches 1799 Pickering Adams deciphered': only the Founders documents above, no decipherment text. targets/astrea1799 (in progress) records the same and no image."
+  },
+  "key_check": "Rozier's own key was shown to Pickering in 1799 but is not preserved or printed as far as found; no French consular code of 1798 is held in the repo, so nothing could be applied.",
+  "duplicates": "known.py 'Astrea', 'Rozier', 'Gibraltar': only targets/astrea1799 (same item, catalogue 628); no other duplicate.",
+  "verdict": "open"
+ },
+ "632": {
+  "date": "2026-11-02",
+  "by": "claude vetting batch L20",
+  "seen": {
+   "kind": "not online",
+   "where": "NARA catalog series 628803 (RG 107), 604437 (RG 108), 4486363, 5081118, 5131597 (RG 393); only RG 107 item 3854723 is digitised (viewed by targets/union1864 on 27 Oct 2026, not by me)",
+   "extent": "RG 107 Telegrams in Cipher 1864 (1 ft 4 in), RG 108 vols. 177A-C, RG 393 press copies 1865 (0.5 in), telegrams sent in cipher 1866-67 (2 in), cipher telegrams 1868 (1 in)",
+   "cipher": "NARA descriptions: RG 107 'telegrams in cipher ... accompanying most of the telegrams are worksheets that were used in deciphering'; RG 108 'fair copies of telegrams'; RG 393 1866-67 'These records are in cipher'. Union War Department route ciphers."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (known.py 'Telegrams in Cipher': only the repo's targets/union1864 and army1865).",
+   "tomokiyo": "No cryptiana page found for these NARA series; the web search below found nothing on them.",
+   "lasry": "No Lasry reading known for these series.",
+   "edition": "Union route ciphers documented by Plum (1882) and Bates (1907); the Official Records print many telegrams in clear (Butler to Biggs, OR I.40.3 p. 432, is the digitised RG 107 item, stamped 'Deciphered' with its worksheet).",
+   "literature": "WebSearch 2 Nov 2026 (Union Army cipher telegrams RG 107 worksheets): results concern the Huntington Eckert archive and Stager's cipher books, nothing on these NARA series."
+  },
+  "key_check": "Union route cipher: its key is the daily route and code-word list in the War Department cipher books (nos. 1-12), not held here as tables; RG 107 worksheets and RG 108 fair copies carry plaintext, so most items were read at the time; only post-war RG 393 series may be ciphertext only.",
+  "duplicates": "known.py 'Telegrams in Cipher', 'Press Copies of Cipher': overlaps catalogue 680 (targets/army1865), which holds the same three RG 393 naIds (4486363, 5081118, 5131597); merge with 680. targets/union1864 covers 632.",
+  "verdict": "open"
+ },
+ "659": {
+  "unvetted": "title-only file; no evidence of cipher content seen"
+ },
+ "662": {
+  "unvetted": "title-only file; no evidence of cipher content seen"
+ },
+ "614": {
+  "unvetted": "Archive-only AGS item (Paz IV p. 14 'Parte en cifra'); done: known.py (no hits beyond own entry), one web search on Paz/K 1639/Bergenroth (nothing), the lead's own 26 Oct CSP Spain check. Missing: DECODE and Tomokiyo searches and a check of CSP Spain II 1524 for the 8 April points; not enough for a block."
+ },
+ "619": {
+  "unvetted": "No image: PARES full-text search found no item record for K 1498 (frame_check 2 Nov 2026); my web search for Chantonay 1562 cipher found nothing; Dudout's note that RAH 'Negociaciones con Francia' covers it is unverified. Needs RAH/Paz volume check and an AGS scan; access is not 'archive' so 'not online' is not allowed."
+ },
+ "620": {
+  "unvetted": "Despatches not digitised; Paz II pp. 143-145 only. The key (AHN Estado 193 Exp. 66, PARES 12709762) was not opened or applied by me; web search on Viana Eguiluz cipher 1729-30 found only a study of his Basque-language letters (Ulibarri Orueta), nothing on a decipherment. Needs the key viewed and that study checked for ciphered passages."
+ },
+ "621": {
+  "unvetted": "No image or item record on PARES for Estado leg. 587 (frame_check 2 Nov 2026); legajo number uncertain; access is not 'archive'. Not searched beyond known.py and the lead's notes."
+ },
+ "622": {
+  "unvetted": "No image or item record on PARES for Estado leg. 563 (frame_check 2 Nov 2026); Leone 2025 on Requesens's Italian ciphers not checked for the Flanders letters; access is not 'archive'."
+ },
+ "623": {
+  "unvetted": "Legajo ambiguous (499 or 500), not searched on PARES (frame_check 2 Nov 2026); language unknown; Luo 2021 key not checked; access is not 'archive'."
+ },
+ "624": {
+  "unvetted": "No PARES record for Estado leg. 2126 (frame_check 2 Nov 2026) and the legajo number is unconfirmed; unknown whether the letters are enciphered; access is not 'archive'."
+ },
+ "627": {
+  "unvetted": "No PARES/PTR record found (frame_check 2 Nov 2026); Paz V no. 1521 shows a cataloguer held a key; printed CDCV not checked; access is not 'archive'."
+ },
+ "633": {
+  "unvetted": "Original (Seward Papers, LC roll 98) not online; Weber's book gives only prose and six groups (frame_check 30 Oct); my web search found no Keefer/Bazaine source (a CIA article suggests the Atlantic cable may have been sent in clear, unverified). Needs the LC roll or Girard 1930 before a verdict."
+ },
+ "634": {
+  "unvetted": "The telegram is not located (no NARA item named; Weber pp. 106, 131 only); targets/vienna1873 closed it unread for no ciphertext and no full 1867 codebook. Nothing to see; needs NARA RG 59 / M46 images."
+ },
+ "635": {
+  "unvetted": "Viewed by frame_check 12: M580 reel 191 image 0111 carries 'Quote German cipher' as a placeholder; the German cipher text is absent from the file as filmed and FRUS omits it. No ciphertext exists online; a Room 40 decrypt (TNA HW 7 / ADM 223) not checked."
+ },
+ "640": {
+  "unvetted": "I viewed M37 roll 2 frames 0021-0022 (typed HSP list of Poinsett's reports 1811-15): it marks 10 May, 25 Jul and 30 Jul 1811 'Part in cipher' (16 Jun 1811 carries a hand annotation), but the letters are in the HSP Poinsett Papers vol. 4, not in the filmed file (NARA copies were returned to Poinsett in 1818). No ciphertext seen; web search found nothing on a decipherment; HSP calendar (1941) on HathiTrust not searched (bot check)."
+ },
+ "660": {
+  "unvetted": "Title-only NARA RG 457 item (NR 4568, 18 Oct 1937, naId 2811333), not digitised; only known.py (no hits) done and no web search of my own; too thin for a block."
+ },
+ "661": {
+  "unvetted": "Title-only NARA RG 457 item (NR 4407, naId 2811167), not digitised; known.py no hits; my web search for 'Pino Roca' 'Primitivo Yella' 1942 found nothing; too thin for a block."
+ }
+}
