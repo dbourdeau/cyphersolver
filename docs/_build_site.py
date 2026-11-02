@@ -154,6 +154,11 @@ PAGES = [
          blurb='Asko Parpola&rsquo;s Dravidian readings checked on two independent corpora, then 2,364 hypotheses registered before testing (1,224 held, 1,140 failed), with Linear B and Ur III seal legends as controls. The grammar a reading must fit is set out: an ending slot chosen by the name&rsquo;s last sign, line breaks that never split a word unit, numerals fixed with what they count. Seal names are individual compositions, as Linear B personal names are. No sign value is established.',
          quote='255 435 690 740 &middot; 705 33 520 &middot; 2 + fish, not 6 + fish, is the commonest count',
          rights='CISI vol. 1 (Joshi and Parpola 1987); signs drawn in the indus-website font'),
+    dict(slug='adrian1520', label='Adrian of Utrecht to Charles V 1520', year='1520', y=1520.69, place='Valladolid &rarr; Charles V', st='solved', stt='key from external plaintext',
+         title='Adrian of Utrecht to Charles V, 9 September 1520',
+         blurb='Six cipher lines in the regent of Castile&rsquo;s letter during the Comuneros revolt, printed in 1897 without them as not translatable. Brice Dudout rebuilt the Cardinal&rsquo;s dotted trigraph code from his other letters, validated it on a fresh pair (0.882 of characters), and read the paragraph: 44 of 46 words.',
+         quote='&ldquo;que no solamente se mueven contra [vuestra] majestad, mas aun contra todos los grandes&hellip;&rdquo;',
+         rights='Letter: Archivo General de Simancas, PTR,LEG,2,1,19, via PARES; reading by Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='lopehurtado1520', label='Lope Hurtado 1520', year='1520', y=1520.94, place='Tordesillas &rarr; Charles V', st='solved', stt='read',
          title='Lope Hurtado de Mendoza to Charles V, Tordesillas, 10 December 1520',
          blurb='A letter wholly in cipher, written five days after the governors&rsquo; army retook Tordesillas from the Comuneros and sent with a clear letter of the same day that Danvila printed. An archivist&rsquo;s slip points to the key of a letter of 23 September, which does not fit. Brice Dudout rebuilt the key, a homophonic letter substitution of about 37 signs with dotted sigla for persons, from the ciphertext alone and checked it on lines kept out of the work; about 97.7% of some 920 cipher words give sense. The Admiral wants a settlement with the Junta, the Marquis of Denia is hated, the army is badly commanded, and the vacant sees are to be held back.',
@@ -4088,6 +4093,7 @@ IMAGES['waddall1656'] = ('waddall1656_tsp5_p337.jpg','The cipher words in Waddal
 IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the telegram: UNIEK &ndash; CXNKVNED, JJTRRK, ISLX &ndash; KFYHJEER', 'National Archives, RG 109, naId 3854726, image 1, via the National Archives Catalog')
 IMAGES['milroy'] = None
 IMAGES['auckland1918'] = None
+IMAGES['adrian1520'] = None
 IMAGES['damas1787'] = None
 IMAGES['bouille1778'] = None
 IMAGES['partyet1721'] = None
