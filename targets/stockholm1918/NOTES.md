@@ -104,11 +104,17 @@ It never mentions Stockholm or any of these marks.
 4. **Slider no. 1 (Mendelsohn p. 98), all 1,000 settings, against 13040 and the Verkehrsbuch groups he prints.** The
    rebuilt slider reproduces his worked example (41259 to 40429 at 718). The best settings produce nonsense
    (18111 to Einverstaendnis). Ruled out for these sets.
-5. **Printed cribs.** Zeman, *Germany and the Revolution in Russia 1915–1918* (1958), has nothing from Berlin to
+5. **Terminal pairs, which survive page renumbering** (`work/terminal.py`, `work/terminal2.py`). A family member should share the
+   last-two-figure profile of its family. Nothing beyond chance. A against 13040 first reached 0.864 (control maximum 0.868), then
+   z = 1.9 on the 270 clean group-word pairs, across many comparisons: noise. The Bernstorff text, as a control, gave z = -3.1.
+6. **The "Dutchman" codes, in part.** Mendelsohn prints only their double-numbered pages. 18470 groups converted through those lists
+   for 37000, 29000 and 2500, against shuffled pairs: all inside the control range (best: B on 37000, 12 hits, control mean 7.1, maximum
+   17). This covers only a fraction of each code. 20000 could not be parsed from the OCR.
+7. **Printed cribs.** Zeman, *Germany and the Revolution in Russia 1915–1918* (1958), has nothing from Berlin to
    Stockholm of these days. FRUS was not checked page by page. No German text of any of these telegrams was found.
 
-Not tested: the "Dutchman" codes 2500, 37000, 29000, 20000, 9700, 5300 (Mendelsohn describes them, but the page tables
-were never printed). C's range would fit a code of that shape, but that is only a range [?].
+Not tested beyond the partial lists in step 6: the "Dutchman" codes 2500, 37000, 29000, 20000; not tested at all: 9700, 5300 (Mendelsohn
+describes them, but the full page tables were never printed). C's range would fit a code of that shape, but that is only a range [?].
 
 ## Remaining gaps
 
