@@ -1,0 +1,13 @@
+# Validation of key K4: ONE measurement, protocol hashed before computation (longlee-1590 C07).
+# Cipher: letter of 1 April 1590 in the same volume (BNE Mss/994 ff. 64-65v, same hand and cipher), reserved portion
+# f. 65r + f. 65v ll. 1-13 (45 lines), never opened, cropped or looked at before the measurement; transcribed by shape
+# and frozen, then decoded with K4. Plain: A. Mousset, Dépêches diplomatiques de M. de Longlée (Paris 1912) pp. 394-396,
+# edited from the original (AE Mémoires et documents Espagne 237 ff. 122-123); the BNE holds the duplicate, so some
+# divergence of spelling and copying is expected. Semi-global alignment; 200 shuffled-key controls.
+# Criterion fixed in advance: characters >= 0.85 and >= best control + 0.30; words not decisive.
+# Declared contamination: Mousset's text of 1 April had been read at the outset (identification), not the reserved cipher.
+letters decoded: 1561 (unknown signs 33)
+characters: 0.8744   controls mean 0.3045, max 0.361  -> threshold 0.661
+words:      0.6466   controls mean 0.1011, max 0.1537
+CRITERION: 0.874 >= 0.85 and >= 0.661 -> K4 VALIDATED
+Earlier keys K1 (calibrated on the 3 March letter), K2 and K3 were not validated; their test portions then went into training.

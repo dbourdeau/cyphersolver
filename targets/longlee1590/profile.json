@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "target": "longlee1590",
+ "title": "Longlée to Henri IV, duplicate of a dispatch from Madrid [Dec 1589 - Feb 1590]: unpublished, read in part (85.8%)",
+ "documents": [
+  {
+   "id": "bne-mss994-f67",
+   "read": "read in part",
+   "shelfmark": "BNE, Mss/994, piece 6, ff. 67r-67v",
+   "date": "[December 1589 - February 1590], probably 25 February 1590",
+   "year": 1590,
+   "country": "Spain",
+   "route": "Pierre de Ségusson, sieur de Longlée, Madrid -> Henri IV",
+   "places": {
+    "from": "Madrid",
+    "to": "Henri IV"
+   },
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment known; not in Mousset 1912 (nothing between 15 Oct 1588 and 3 Mar 1590).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 2044,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R2253 images (not reproduced)",
+    "image_quality": "fair",
+    "notes": "Shapes labelled with a frozen atlas; 12 doubtful signs re-read on a plate by Brice Dudout (rules pre-registered)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic"
+  ],
+  "summary": "Longlée’s nomenclator: an alphabet of homophonic signs (letters, digits, symbols) and a few signs for short words; the same hand as the two edited letters of the volume. Starting point: the table printed by Mousset (pp. lviii–lix), corrected on the hand of these copies",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 63,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Mousset 1912 (two sister letters only); Cryptiana (henryiii) mentions the three BNE letters without a reading; this repository (no entry); quick search of Ruble and CSP Foreign 1589-96.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "first_date": "2026-10-29",
+  "last_date": "2026-11-02",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "K0 = Mousset's printed table; K1 calibrated on the hand of the 3 March 1590 copy (edited text).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-30",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K1, K2, K3 tested on held-out parts of the edited letters: not validated; portions moved to training.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K4, one measurement on the reserved part of the 1 April 1590 letter vs Mousset pp. 394-396: 0.874 of characters (1561 letters) vs 200 controls max 0.361; words 0.647.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "reading",
+   "what": "Ff. 67r-67v decoded with K4 unchanged; 12 doubtful signs re-read by Brice Dudout on a plate (pre-registered rules); Daniel's rule: 85.8%.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "Mousset's printed table (1912) recalibrated on this hand with the two sister letters he edits; key K4 validated by a single measurement on a reserved portion of the 1 April 1590 letter.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.858,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (reading.md): 480 cipher words, 313 certain, 99 probable, 7 restored, 61 unresolved (estimated words per segment); certain + probable = 412/480.",
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-02",
+   "verdict": "pass",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): key K4 frozen, then one measurement on the reserved part of the 1 April 1590 letter (f. 65r + f. 65v ll. 1-13, 1561 letters, never looked at before) against Mousset 1912 pp. 394-396: characters 0.874 vs 200 shuffled-key controls max 0.361 (mean 0.304); words 0.647 (controls max 0.154). Criterion fixed in advance: characters >= 0.85 and >= best control + 0.30. Earlier keys K1-K3 not validated."
+  },
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key K4 recalibrated from Mousset's table and validated on a held-out portion; ff. 67r-67v transcribed and read in part (85.8%); sign shapes re-read by Brice Dudout",
+    "date": "2026-11-02"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "61 words in unresolved segments (doubtful sign shapes in this copy, mostly f. 67v)",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "bne-mss994-f67",
+    "label": "Longlée to Henri IV, duplicate of a dispatch, Madrid [Dec 1589 - Feb 1590] (BNE Mss/994 ff. 67r-67v)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.858,
+    "summary": "Pierre de Ségusson, sieur de Longlée, the French resident at Madrid, wrote in cipher to Henry IV early in 1590. The packet was intercepted: its copy, “Dupp. d’une despesche”, is now in the Biblioteca Nacional de España, with two other letters of Longlée that the Spaniards had deciphered by Luis Valle de la Cerda. Those two letters (3 March and 1 April 1590) were edited by Albert Mousset in 1912 from the originals at the French Foreign Office; this one was not, and no contemporary decipherment accompanies the copy. We publish the reading as far as we could take it, gaps included: 85.8% of the words, below the 95% threshold we hold ourselves to. It shows an envoy of the Duke of Mercœur at Madrid asking that Philip II declare openly against Henry IV and seize the goods of royalist Frenchmen.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-02",
+     "note": "Read as sentences 2 Nov 2026 (French, read in part): f. 67r is coherent throughout except a few segments (duplicate sent by Bayonne; no war preparations beyond the fleet of 60-80 ships; arrival on the 21st of Tornasoni, sent by the Duke of Mercoeur to ask Philip II to declare against Henri IV, ban trade with royalist Frenchmen and seize their goods and ships; Roissieu expected for Mayenne; money 'pour entretenir la guerre'); f. 67v is patchier (Duke of Sessa to Rome, Count of Olivares, no dispatch from the King since 3 November, 'la defence de l'eglise catholique'). 480 words, 313 certain, 99 probable, 7 restored, 61 unresolved (estimated) = 85.8%, so grade B and read in part. Key K4 validated by one measurement on a held-out portion (characters 0.874 vs controls max 0.361)."
+    }
+   }
+  ],
+  "key_file": "key_K4.tsv",
+  "provenance": "contributed"
+ }
+}
