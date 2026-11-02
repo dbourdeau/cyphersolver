@@ -1,6 +1,6 @@
 # Longlée to Henri IV, duplicate of a dispatch from Madrid [December 1589 - February 1590] (BNE Mss/994, ff. 67r-67v)
 
-Status: read in part (Brice Dudout, 2 Nov 2026; 481 cipher words: 313 certain, 102 probable, 8 restored, 58 unresolved (estimated); 86.3% read, below the 95% rule).
+Status: in progress. Read in part (Brice Dudout, 2 Nov 2026; 481 cipher words: 313 certain, 102 probable, 8 restored, 58 unresolved (estimated); 86.3% read, below the 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Published there as an explained partial reading:
 https://bdudout.github.io/europe-chiffree/en/documents.html#longlee-1590
