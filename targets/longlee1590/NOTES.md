@@ -43,3 +43,14 @@ count), `translation.md` (English summary), `key_K4.tsv`, `validation.txt`.
 ## Method
 
 Method: (1) protocol written and hashed (SHA-256) before any computation, at every stage; (2) starting key: Mousset’s table; key adjusted to the hand of these copies by calibration on the edited letters (3 March and the beginning of 1 April); atlas of sign shapes frozen; (3) keys K1 to K3 were not validated; key K4 is validated by a single measurement on a portion never looked at before the measurement (letter of 1 April 1590, f. 65r and f. 65v ll. 1–13: 45 lines, 1,561 letters), transcribed by shape and frozen, compared with the text edited by Mousset (pp. 394–396): character agreement 0.874 against at best 0.361 for 200 shuffled-key controls (mean 0.305); word agreement 0.647 (controls ≤ 0.154); criterion fixed in advance: ≥ 0.85 and ≥ best control + 0.30; (4) the letter read here was transcribed by shape, the transcription frozen before each decoding, then decoded mechanically with K4, never retouched; (5) sign-shape re-reading by Brice Dudout on two plates of 12 doubtful signs each (pick the shape seen, no value or gloss shown), with rules of application pre-registered and hashed before the answers; three signs turned out to be double, segmentation corrected and declared; (6) reading and count under Daniel’s rule, each unresolved segment counted for the number of words it covers (estimated), not as one. All SHA-256 fingerprints are in the working folder.
+
+## Remaining gaps
+- 58 words in unresolved segments, mostly f. 67v (f. 67v is 80.8% read, f. 67r 89.2%) - blocker: illegible; hesitant or look-alike sign shapes (Ω, 9 and ϱ; small attached loops) in the only images used, the DECODE study images R2253 views 4 and 5. The validated key is not at fault.
+
+## Escalation
+- [x] siblings: the two other letters of the piece (ff. 64-65v, 1 April 1590; ff. 68-69, 3 March 1590) are edited by Mousset (1912) and were used to calibrate and validate the key
+- [n/a] clear-pages: no clear copy or decipherment of this letter is on the DECODE images or in the volume (the heading says the Spaniards read it without a counter-key)
+- [x] known-keys: Mousset's printed table (K0) and the keys K1-K3 were tried; K1-K3 failed validation and K4 was adopted
+- [x] print: Mousset 1912 (nothing for 15 Oct 1588 - 3 Mar 1590), Cryptiana, Ruble and the Calendar of State Papers, Foreign 1589-1596 (not read page by page) checked; nothing found
+- [x] key-rebuild: Mousset's table recalibrated on the hand of these copies (K4), validated at 0.874 of characters on a reserved portion of the 1 April letter
+- [ ] retry: two plates of doubtful signs were re-read on 2 November 2026 and the letter re-decoded with K4 unchanged (85.8% to 86.3%). Not tried: a sharper scan of ff. 67r-67v (BNE Digital was not checked), which could resolve the remaining shapes
