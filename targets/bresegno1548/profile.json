@@ -1,0 +1,258 @@
+{
+ "schema_version": 1,
+ "target": "bresegno1548",
+ "title": "Bernardo Bresegno to Ferrante Gonzaga, Rome, 5 Oct 1548 (catalogue 1563, first letter): a transcription job, read in part on the signs",
+ "documents": [
+  {
+   "id": "bresegno-1548-10-05",
+   "read": "read in part",
+   "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Lettera B, Brezeno (abate), cc. 15-16, 22 (cipher c. 15r)",
+   "date": "5 October 1548",
+   "year": 1548,
+   "country": "Italy",
+   "route": "Bernardo Bresegno, Rome -> Ferrante Gonzaga, governor of Milan",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary decipherment of the whole cipher bound in as c. 22r ('il decifrato del n. 8'), checked at full size (clear_c22r.txt). Interlinear glosses in a lighter ink over the first lines of c. 15r agree with it. A transcription job, not a break."
+   },
+   "length": {
+    "tokens": 708,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_c15r.txt",
+    "distinct": 130
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico Media Library (Estense) IIIF images, full size",
+    "image_quality": "good",
+    "notes": "Pass 2 blind (no key, no c. 22r), about 708 signs; pass 1 on L01-L06 made first; their disagreements on L01-L06 settled on crops. Independent blind check of about 287 signs (L01-L04, L19-L24): 16 raw disagreements (5.6%); after zoom the solver was wrong at 2-3 places (0.7-1.0%); the certain and the probable fix are applied. Four digit placements were also settled on crops after the check. L07-L24 rest on one blind pass, apart from crops at L17-L19 and the check's L19-L24."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Consonant signs with a vowel number written above them (2 a, 3 e, 4 i, 5 o, 6 u), bare signs for vowels and lone consonants, groups for doubled letters (bar ss, bir rr, barn ssi) and a few code groups (Os V. Ex., Per su Mag., Ar Papa, mi Cardenal, Gra Bolona, Bran Duque de Florencia). About 30 base signs. No word division.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 6,
+   "kinds": [
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": 4
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "groups: bar ss, bir rr, barn ssi; the sign hs is ll",
+  "notes": "Not the Imperial syllabary of ferrante1549 (dots and bars for the vowel) and not the table of PR #216. cifuentes1534 describes a similar digit system; not compared. Bare o is e and also c before h; bare a is o and, by a rule added after the freeze, p before s or ms. Nulls: x. at the start, i, and the closing groups bor and bur (no counterpart in c. 22r; taken as nulls without proof)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary decipherment on c. 22r of the same file gives the whole text. No edition or study found: three web searches on 3 Nov 2026 (Bresegno/Brezeno, Ferrante Gonzaga 1548, Morone, Campori; Fierravante, Tor di Nona) and the catalogue's vetting of 29 Oct.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "WAINUT chose the target from the catalogue and set the rules (sign names fixed before decoding, blind passes, key frozen before the held-out test, independent check). AI language-model agents transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Lodovico Media Library IIIF images",
+   "scripts/decrypt.py, reading.py, check_marks.py, diff_clear.py, heldout.py, align_em.py (standard library)",
+   "scripts/fetch_tiles.py, line_strips.py (Pillow and the images)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "c. 15r and c. 22r fetched full size from the Estense IIIF service as tiles, one request a second.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Two web searches and the catalogue's vetting: no edition or study of the letter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Sign names fixed with no values (SIGN_CONVENTIONS.md); pass 1 on L01-L06; pass 2 blind on all 24 lines, about 708 signs. Raw agreement on L01-L06: 143 of 168 signs (85.1%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "solver",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Pass 2 L01-L16 aligned with c. 22r by segmental EM (0-4 letters per sign); table frozen as key_frozen.tsv. An alignment over all 24 lines, held-out lines included, had been written a few minutes before the freeze.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Held-out L17-L24, pass 2 signs, frozen key, against c. 22r: 0.869 of 367 clear letters in order; best of 200 shuffled tables 0.327. Not fully blind (see the solver step).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Decrypted with key.tsv (frozen key, late code groups, and a post hoc rule for bare a); marked reading checked unit by unit by reading.py check.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent blind check (VERIFY.md): about 287 signs; the solver was wrong at 2-3 after zoom (0.7-1.0%); the check's own blind L19-L24 through the frozen key gives 0.872. Verdict: downgrade from read to read in part.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Corrections on crops: L02 d^5 and L19 #^2 7^2 from the check; digit placement at L02 (twice), L03, L05, L17 settled after the check; L04 L^5 kept doubtful. Verbatim words 196 -> 204 of 250.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "The text is the contemporary decipherment on c. 22r. The key was rebuilt from the pairs of c. 15r and c. 22r (L01-L16), frozen and tested on L17-L24; the reading is checked against the signs and every departure is marked. On the signs alone 204 of 250 words (81.6%) are verbatim, under the 95% bar.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.816,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/reading.py check: 250 words (a code group counts as one), 204 verbatim from the signs, 46 with at least one marked departure. All 250 read as sense only through c. 22r.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the decipherment bound in as c. 22r, which gives the whole text"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from the c. 15r / c. 22r pairs and tested on held-out lines; reading checked against the signs",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "c. 15r, from the Estense images; blind pass of all 24 lines",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on L01-L04 and L19-L24; no human palaeographer",
+    "date": "2026-11-03"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "bresegno-1548-10-05",
+    "label": "Bresegno to Ferrante Gonzaga, Rome, 5 Oct 1548, c. 15r",
+    "transcription": "transcription_c15r.txt",
+    "decryption": "decryption_c15r.txt",
+    "reading": "reading_c15r.md",
+    "translation": "translation_c15r.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.816,
+    "summary": "Cardinal Morone told Bresegno that Fierrauante had been confronted with his brother-in-law in the Castel Sant'Angelo. The brother-in-law, put to the rope in Tor di Nona, confessed a plan of his own to hold the Palace with 300 men until the Duke of Florence sent help. He said he had put it to Ferrante, who would act only with the Emperor's leave, and that he had made promises in Ferrante's name. Bresegno asks Ferrante to keep it to himself.",
+    "note": "Transcription job. Words 250: 204 (81.6%) verbatim from the signs, 46 with a marked repair; the full text is c. 22r's. 196 before the independent check; 198 with the two sign fixes it settled; six more from digit placements settled on crops after it, not independent of c. 22r.",
+    "reading_review": {
+     "grade": "A",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "reading_c15r.md (A): reads as coherent sense throughout, because it is c. 22r's text, and the marks are machine-checked. Weak places: 'sin al calle' (the sense 'alzalle' is an editorial guess); 'a este q' (who 'este' is); the code groups {Gra}, {Bran}, {mi} and {barn} occur once or twice and rest only on c. 22r; L24 'a el el Papa' and the trailing {bor} 2 {bur} are taken as nulls without proof. 54 of 250 words carried repairs when reviewed (46 now). translation_c15r.md (A): faithful to c. 22r; 'losquales le sostuuiessen' was rendered 'who would hold him there', where 'support/hold out for him' is closer (since changed). Fierrauante is left unidentified, and the file says so. decryption_c15r.txt (B): raw syllable decryption, reproduced byte for byte; not a standalone reading."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "L07-L24 second reader",
+    "blocker": "not-attempted",
+    "detail": "One blind pass only, apart from the check's L19-L24 and crops at L17-L19."
+   },
+   {
+    "item": "Digit placement in L07-L24",
+    "blocker": "not-attempted",
+    "detail": "Checked on crops only at L17, L18 and L19."
+   },
+   {
+    "item": "L04 L^5",
+    "blocker": "illegible",
+    "detail": "A small 5 at the upper right of the L; kept doubtful."
+   },
+   {
+    "item": "Code groups Gra, Bran, mi, barn",
+    "blocker": "too-short",
+    "detail": "One or two uses each; values rest on c. 22r."
+   },
+   {
+    "item": "L24 closing groups bor 2 bur and 'a el el Papa'",
+    "blocker": "open-codes",
+    "detail": "No counterpart in c. 22r; taken as nulls without proof."
+   },
+   {
+    "item": "Glossator's digits",
+    "blocker": "illegible",
+    "detail": "Some superscript digits may be the contemporary decipherer's additions; checked only in L04 and L06."
+   },
+   {
+    "item": "Fierrauante",
+    "blocker": "not-attempted",
+    "detail": "Not identified."
+   },
+   {
+    "item": "Second letter of catalogue 1563 (Juan Manrique, Rome, 6 Jan 1554)",
+    "blocker": "no-key-material",
+    "detail": "Different key, no decipherment in the file; not part of this target."
+   }
+  ]
+ }
+}
