@@ -1,0 +1,279 @@
+{
+ "schema_version": 1,
+ "target": "rakoczi1632",
+ "title": "George I Rákóczi's memorial for his envoy to Gustavus Adolphus, 1631-32 (Munich, BSB Clm 10401 n.139; not in the catalogue): fol. 491r read in part from Camerarius's interlinear gloss, fol. 491v-492v not done",
+ "documents": [
+  {
+   "id": "f491r",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10401 (Collectio Camerariana 51), n.139, fol. 491r",
+   "date": "undated (1631-32 from content)",
+   "year": 1632,
+   "country": "Germany",
+   "route": "George I Rákóczi, Prince of Transylvania -> his envoy to the King of Sweden (copy in Ludwig Camerarius's papers)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear decipherment in Ludwig Camerarius's hand over nearly every cipher word. A transcription job, not a break."
+   },
+   "length": {
+    "tokens": 474,
+    "unit": "symbols",
+    "measured": true,
+    "file": "words_f491r.tsv",
+    "distinct": 73
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ IIIF images of the BSB microfilm (bsb00117497, scan 1199), full size 1442 px wide",
+    "image_quality": "fair",
+    "notes": "Two passes (strips 1.1x, bands 2x), 8 disagreements settled on 3x crops. Independent blind read of about 508 signs (fol. 491r lines 1-28 and the first five lines of fol. 491v): 17 raw differences (3.3%); after full-size crops the solver was wrong in 2 (0.4%), 9 stay ambiguous on the microfilm. Microfilm only; no colour scan."
+   }
+  },
+  {
+   "id": "f491v_492v",
+   "read": "not read",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10401 (Collectio Camerariana 51), n.139, fol. 491v-492v",
+   "date": "undated (1631-32 from content)",
+   "year": 1632,
+   "country": "Germany",
+   "route": "George I Rákóczi, Prince of Transylvania -> his envoy to the King of Sweden (copy in Ludwig Camerarius's papers)",
+   "language": "Latin",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear decipherment in Camerarius's hand, as on fol. 491r. A transcription job, not done."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ IIIF images of the BSB microfilm (bsb00117497, scans 1200-1202)",
+    "image_quality": "fair",
+    "notes": "Only 12 glossed words at the head of fol. 491v transcribed, as a held-out test of the key."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution of Latin letters by numbers 1-99 written with dots between groups, about ten extra signs, and 3-digit code groups for names (217.11.99 and 218.88 King of Sweden, 307 Principes). Cipher words embedded in clear Latin. Two to nine homophones per letter; u after q not written. Some groups take two letter values.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 73,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 3,
+   "kinds": [
+    "names",
+    "titles"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false,
+   "count": 0
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Two groups take two values on fol. 491r (28 d and i; 76 d and o); on fol. 491v 44 and {s} also take a second value. Not the DECODE R639 table of rakoczi1704/1707 (3 of 229 glossed occurrences agree)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Ludwig Camerarius's interlinear decipherment on the same pages. No printed edition found: Szilágyi, Okirattár (1882) and Okmánytár I. Rákóczy György svéd és franczia szövetkezéseinek történetéhez (1873) searched by OCR phrase search, no hit; other editions not searched (3 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "WAINUT set the task and the rules; AI language-model agents transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "MDZ IIIF images and full-text search",
+   "scripts in this folder (crops, mark check, held-out test, key comparison)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "Scans 1197-1206 of bsb00117497 and the Halm 1874 catalogue page fetched from the MDZ IIIF service, one request at a time, about 1 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Fol. 491r in two passes (strips 1.1x, half-width bands 2x); digits recorded before the glosses were used; 8 disagreements settled on 3x crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Table of 72 entries built only from glossed pairs on fol. 491r, then frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Held-out fol. 491v, 12 glossed words, 87 letters: frozen key agrees on 79 (90.8%); 2000 shuffled tables mean 5.5, best 25. The expected letters were aligned by hand after seeing the cipher, which can only raise the score.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "DECODE R639 table (targets/rakoczi1704, rakoczi1707) on the glossed pairs: 3 of 229 occurrences agree; a different cipher.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Fol. 491r decrypted and read; scripts/check_marks.py rebuilds the decryption and fails on any unmarked departure from the key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "One web search; OCR phrase search of Szilágyi 1882 on MEK: no edition found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent blind check (VERIFY.md): about 508 signs, solver wrong in 2 after crops (0.4%); rebuild byte-identical; reading grade B; must-fix list.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "After the check: word 41 first group 86 (not 80) on the full-size crop; word 44 found glossed (deserent).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Szilágyi 1873 Okmánytár (BSB copy) searched with the MDZ IIIF search service: no hit for eleven distinctive words; like clauses only in later French-alliance conditions (p. 27).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Table built from Camerarius's interlinear gloss on fol. 491r, frozen, then tested on the gloss of fol. 491v. On fol. 491r 'read by the key' therefore means 'consistent with the gloss'; only the held-out test is independent evidence for the key.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.23,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Fol. 491r is 1 of 4 cipher pages (pages of like size on the microfilm); on it 65 of 69 cipher words are read (54 by the key, 11 from the gloss only). 0.25 x 0.94 = 0.23.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key built from Camerarius's glosses; fol. 491r read",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "fol. 491r and the head of fol. 491v, from MDZ microfilm images",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on fol. 491r lines 1-28 and the head of fol. 491v; no human palaeographer",
+    "date": "2026-11-03"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f491r",
+    "label": "fol. 491r",
+    "transcription": "transcription_f491r.txt",
+    "decryption": "decryption_f491r.txt",
+    "reading": "reading_f491r.md",
+    "translation": "translation_f491r.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.942,
+    "summary": "Memorial for an envoy of the Prince of Transylvania: travel discreetly to the King of Sweden and treat with him, Saxony, the other Protestant electors and the United Princes. If they ask the Prince to join the common cause, they must swear not to desert him in good or bad fortune, to aid him in person if needed, to make no peace without his knowledge and will, and should he die to take over the care and defence of his heirs. The page ends mid-sentence.",
+    "note": "69 cipher words: 54 read by the frozen key, 11 from the gloss only where the cipher departs from the key, 4 not read. Plus 78 clear Latin words (3 doubtful). Fol. 491v-492v not done. The reading review below predates two fixes it asked for: word 41 is now substantiasque (first group 86) and word 44 <deserent> (glossed).",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "The Latin reads as coherent, continuous sense: travel orders, then the alliance conditions (an oath not to desert in good or bad fortune, aid in person, no separate peace, care of the heirs), and the English matches. Weak places: [?Itinere] [?a] se (the word boundary is unclear); [?agat] (41 = g from context only); [?substantiarumque] (the crop gives 86, so the key reads substantiasque); [?deserent] (actually glossed); [?de]fensionem (decodes 'ie'); the final [...] (decodes a-?-e-l-a-t-u-n-t, or a-?-e-l-a-b-u-n-t with 44 = b as on 491v); coniungamus where the cipher spells constr-g-amus; 10 words from the gloss only, including adveniant where the cipher has -ent. The page ends mid-sentence."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "Fol. 491v-492v",
+    "blocker": "not-attempted",
+    "detail": "Three cipher pages with interlinear gloss; a transcription job with this table, which already needs second values for 44 and {s}."
+   },
+   {
+    "item": "Words 2, 11, 65, 69 of fol. 491r",
+    "blocker": "illegible",
+    "detail": "[?Itinere] (word boundary), [?agat] (41 = g from context only), [?de] (decodes ie), final word decodes a-?-e-l-a-t-u-n-t, gloss not legible."
+   },
+   {
+    "item": "Single-sign doubts",
+    "blocker": "illegible",
+    "detail": "5/8, 0/6, 1/4, 25/28, 80/86 confusions on the microfilm; a colour scan of the original would settle most."
+   },
+   {
+    "item": "Prior art",
+    "blocker": "not-attempted",
+    "detail": "Szilágyi 1873 and 1882 searched by OCR, no hit. Okmánytár II (1874), Actes et documents (1874), Swedish editions and the Stockholm originals not checked."
+   },
+   {
+    "item": "Clear text",
+    "blocker": "not-attempted",
+    "detail": "A first transcription only; [?a], [?usque], [?illam] doubtful."
+   }
+  ]
+ }
+}
