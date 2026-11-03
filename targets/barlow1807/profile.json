@@ -1,0 +1,289 @@
+{
+ "schema_version": 1,
+ "target": "barlow1807",
+ "title": "Sir George Barlow to Thomas Grenville, Fort William, 12 Feb 1807 (catalogue 1245): the number cipher read in part, against Buchanan's plan for a church establishment in India; a second letter, to George Tierney, in clear",
+ "documents": [
+  {
+   "id": "feb12",
+   "read": "read in part",
+   "shelfmark": "Cleveland Public Library, John G. White collection, Zamboni note no. 159; DPLA item e4082bb91cf5f55ec10516bc367df12d, images 1-22 of 26",
+   "date": "12 February 1807",
+   "year": 1807,
+   "country": "United States",
+   "route": "Sir George Barlow, Fort William (Calcutta) -> Thomas Grenville",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "pages": 20,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment with the letter. One web search found no printed decipherment or edition; the Dropmore (Grenville) papers and the India Office records were not searched."
+   },
+   "length": {
+    "tokens": 3884,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_12feb1807.txt",
+    "distinct": 128
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Wikimedia Commons images of the DPLA item, about 1100 x 1380 px",
+    "image_quality": "fair",
+    "notes": "Two independent sign-first passes per image by two different AI language-model agents, no key; 458 differences settled by eye on crops and logged. Independent blind check of images 8, 16 and 19 (697 signs): 15 raw differences (2.2%); after crops the solver was wrong at 3 signs (0.4%), all corrected; 6 signs stay ambiguous and their words are marked doubtful. The count of 3884 number signs (letter signs and four-digit groups) was made with scripts/parse.py over images 1-20; distinct 128 includes lone signs outside the 91-sign key."
+   }
+  },
+  {
+   "id": "jun15",
+   "read": "not applicable",
+   "shelfmark": "Cleveland Public Library, John G. White collection, Zamboni note no. 159; DPLA item e4082bb91cf5f55ec10516bc367df12d, images 23-26 of 26",
+   "date": "15 June 1807",
+   "year": 1807,
+   "country": "United States",
+   "route": "Sir George Barlow, Fort William (Calcutta) -> George Tierney",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Written in clear; no cipher. A separate letter, not a cover for the letter of 12 Feb 1807."
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Wikimedia Commons images of the DPLA item",
+    "image_quality": "fair",
+    "notes": "440 clear words, transcribed in the same two passes; no blind check."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Clear English with the sensitive words in numbers. One number stands for one letter, with homophones (two-digit signs, plus a few three-digit e's and a u); each word is a run of numbers separated by commas and closed by a stop. Six signs (10, 11, 12, 20, 21, 22) mostly stand where no letter belongs and are read as nulls; four-digit groups are codes (4990 India, 5650 British) or nulls (1100, 2200, 1000). The clerk leaves out letters, mostly vowels.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2-4",
+   "separation": "commas"
+  },
+  "distinct_symbols": 91,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 6,
+   "kinds": [
+    "places",
+    "common words"
+   ],
+   "unread_groups": 4
+  },
+  "nulls": {
+   "present": true,
+   "count": 9
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "distinct_symbols is the 91 signs of the frozen key. Codes: 4990 India (7 places), 5650 British (4 places); 4845, 4600, 4087 and 5089 occur once each and are open. That signs 10, 11, 12, 20, 21 and 22 are nulls everywhere is not proved: in read words the readings drop 273 of them, keep 11 as their key letter and change 4. Three key errors are known from the held-out pages: 80 is c (not n), 99 is b (not i), and 58 (m) is missing."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "One web search (Barlow, Grenville, 1807, ecclesiastical establishment, Buchanan, Vellore, cipher) found the catalogue record and context only (Buchanan's 1805 Memoir, the 1807 printed papers on the Bengal government). The Dropmore papers and the India Office records were not searched, so a clear copy in London is possible. No target or open PR for Barlow or Grenville in this repository (3 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 1245) and the rules; AI language-model agents transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Wikimedia Commons images of the DPLA item",
+   "scripts in this folder (A/B diff, patch log, simulated annealing against an English corpus, held-out count, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "26 images fetched from Wikimedia Commons with scripts/fetch.py. The first runs stopped on HTTP 429 after page 13; a later run at one request per 30 s fetched pages 14-26.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Each image transcribed twice, independently and sign first, with no key, by two different AI language-model agents; every difference settled by eye on 1.5x crops (269 on images 1-13, 189 on images 14-26) and logged in disagreements.tsv; 79 patches in patches.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Key annealed on the cipher words of images 1-13 against an English 4-gram and word model. A key annealed on pages 1-5 matched the final key on 125 of 144 signs of page 6 (87%). Key frozen after pages 1-13 (key_final.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "crib",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Four-digit groups tested at every place: 4990 India and 5650 British fit every occurrence; 4845, 4600, 4087 and 5089 occur once each and are left open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Held-out images 14-19, never seen when the key was frozen: 100 of 221 cipher words read with no repair (45.2%), 52 with signs dropped only, 48 with a changed letter, 21 doubtful. Graded against our own reading, not against an independent text. Showed three key errors (80 = c, 99 = b, 58 = m missing).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Letter put in order by catchwords and sense (images 15-18, 1-14, 19-20) and read with every departure from the frozen key marked; scripts/check_marks.py fails on any unmarked departure. 1192 of 1379 words read with no letter changed (86.4%).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "First independent check (VERIFY.md): blind transcription of images 8, 16 and 19 (697 signs), 15 raw differences, 3 solver errors after crops, all corrected; status 'read' found not to hold and changed to 'read in part'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Second independent check (VERIFY.md): rebuild byte for byte, counts reproduced, letter read as sentences (grade B; image 3 grade C). Four reading changes asked for and made: image 7 convention -> conviction (sign 80 = c) and the next doubtful word read as conuiction; image 10 or -> of (the sign is 85 on a 4x crop, so a changed letter); image 14 it -> with.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "One web search: SNAC/DPLA catalogue record, Buchanan's 1805 Memoir and the 1807 printed papers on the Bengal government; no edition or decipherment of these letters found.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The key was annealed on the number runs against an English language model, with the clear words of the letter as context; no decipherment, clear copy or sister key was used. Frozen after images 1-13 and tested on images 14-19.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.864,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py over images 1-19 of the letter of 12 Feb 1807: 1192 of 1379 words (713 clear, 666 cipher) read with no letter changed; dropped nulls and supplied omitted letters allowed. Code groups are outside the 1379. 1311 (95.1%) are read only if the 119 words with a letter changed from context are counted.",
+  "verification": [
+   "independent verification",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key recovered from the number runs; the letter of 12 Feb 1807 read in part",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "both letters, from the Wikimedia Commons images of the DPLA item",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "two independent AI readers, one blind on images 8, 16 and 19; no human palaeographer",
+    "date": "2026-11-03"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "feb12",
+    "label": "Barlow to Grenville, 12 Feb 1807, images 15-18, 1-14, 19-20",
+    "transcription": "transcription_12feb1807.txt",
+    "decryption": "decryption_12feb1807.txt",
+    "reading": "reading_12feb1807.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.864,
+    "summary": "Barlow, acting Governor-General, argues against the plan, reported in the newspapers and urged in Claudius Buchanan's Memoir, for an ecclesiastical establishment in India. After the recent troubles among the native troops on the coast, a church backed by the state would raise religious alarm, give the discontented a weapon and endanger British rule; government has already had to stop religious disputes at the college. He proposes instead to name respectable clergymen to the existing clerical offices at the presidencies, with adequate allowances.",
+    "note": "Words 1379 on images 1-19: 1192 read with no letter changed (86.4%); 1311 read as sense if the 119 words with a letter changed from context are counted; 68 cipher words doubtful. Image 3 is in effect not read. The letter is in English, so no translation is given.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "Read as sentences 3 Nov 2026. The argument can be followed from start to end: Barlow opposes Buchanan's proposed ecclesiastical establishment because it risks religious alarm after the troubles on the coast, and proposes respectable clergymen with adequate allowances instead. Image 3 does not parse and is not read (grade C for that page). Holes of four or more words remain on images 8 and 18. Three words the review found wrong or doubtful against the sense ('convention' for 'conviction', 'or' for 'of', 'it' for 'with') have since been corrected and are counted as changed letters."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "Image 3",
+    "blocker": "illegible",
+    "detail": "Holes are marked, but the page does not parse ('[?ato310] to contemplate without [?emotion] ...'); not read."
+   },
+   {
+    "item": "Image 8, four-word hole",
+    "blocker": "not-attempted",
+    "detail": "'auowed [?dotr] [?snrt] [?sntmies] of the [?shtratrpsdimployd]', the subject of 'to excite it'."
+   },
+   {
+    "item": "Image 18, four-word hole",
+    "blocker": "not-attempted",
+    "detail": "'[?mfap] [?iit] [?oott] [?accomplishing]'."
+   },
+   {
+    "item": "Code groups 4845, 4600, 4087, 5089",
+    "blocker": "open-codes",
+    "detail": "One place each. Fort William fits 4845, but one place proves nothing."
+   },
+   {
+    "item": "Key errors at signs 80, 99 and 58",
+    "blocker": "too-short",
+    "detail": "Shown by the held-out pages. A corrected key is not made, because no unseen cipher text is left to test it on."
+   },
+   {
+    "item": "Nulls 10, 11, 12, 20, 21, 22",
+    "blocker": "not-attempted",
+    "detail": "Read as nulls by one stated rule (NOTES.md); not proved for every place."
+   },
+   {
+    "item": "Blind reading beyond images 8, 16 and 19",
+    "blocker": "not-attempted",
+    "detail": "The other pages were settled by one reader who knew the key for pages 7-19."
+   },
+   {
+    "item": "Prior art",
+    "blocker": "not-attempted",
+    "detail": "The Dropmore (Grenville) papers and the India Office records were not searched; a clear copy may exist."
+   }
+  ]
+ }
+}
