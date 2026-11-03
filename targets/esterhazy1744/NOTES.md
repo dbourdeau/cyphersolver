@@ -155,3 +155,14 @@ Images of both records were supplied by the contributor (not committed). Transcr
 - VI. HA, Nl Mardefeld, A. v. (1719-1748): his papers, which might hold drafts or cipher material; contents not seen.
 
 The report of 5 Oct 1744 itself has **not** been seen, so it is not yet confirmed that it exists or that it is the same text.
+
+## 3 Nov 2026, later: where Mardefeld's 1744 letters are, from Liechtenhan 1998
+
+F.-D. Liechtenhan, "La Russie d'Élisabeth vue par des diplomates prussiens (1)", *Cahiers du monde russe* 39/3 (1998), 253-282, cites Mardefeld's letters to the King by file and folio (PDF supplied by the contributor; read by OCR, so check numbers on the page):
+
+- **I. HA Rep. 96, Nr. 55 C:** letter of 11 Jan 1744 at fol. 13 (n. 66), letter of 26 May 1744 at fol. 178 (n. 44). The file therefore starts about January 1744 and is at fol. 178 by late May. **Nr. 55 D is the likelier place for October**, by inference only; nobody here has seen it.
+- **I. HA GR, Rep. 11 Auswärtige Beziehungen, Nr. 171-175 Moskau (Russland), Konv. 46 B:** fol. 295 is cited for "la description de Mardefeld en 1744" (n. 19). The date of that piece is the only dating evidence for the Konvolut, so Konv. 46 is a candidate series for 1744, not a confirmed one. Other Konvolute cited: 49 C, 50 B, 54 E (the 1746 memorandum), 56 A (1748).
+
+This corrects the shorter citation "Rep. XI Russland 91" used above: request the series as Rep. 11, Nr. 171-175 Moskau (Russland).
+
+Context, not evidence for this letter: Mardefeld's own memorandum says Goldbach deciphered foreign ministers' despatches only when they were carelessly enciphered, and the article quotes a Russian postal report on his mail of 1745 (n. 105). So his post was watched. It does not show that this despatch was copied.
