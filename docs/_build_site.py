@@ -2006,6 +2006,11 @@ PAGES = [
          blurb='Intercepted despatches of the Prussian envoy at The Hague, in numerical nomenclators. The DECODE transcriptions were audited and corrected; no key was recovered and no enciphered passage was decoded. Digitised decipherments of Hellen letters of 1752&ndash;53 in Fagel 5206 are an untested lead.',
          quote='No verified plaintext; a concrete archival lead for 1752.',
          rights='Source manuscripts: KHA, Prins Willem V, inventory 196; one crop of R1953, via DECODE'),
+    dict(slug='martinique1778', label='Bouill&eacute; to the Navy 1780-82', year='1780&ndash;82', y=1780.4, place='Martinique &rarr; Versailles', st='partial', stt='read in part',
+         title='Bouill&eacute; to the Navy minister, Martinique, 1780&ndash;1782',
+         blurb='Three cipher-only letters of the governor general of the Windward Islands: a troop return (24 May 1780), a provisions return (14 November 1780) and a long letter on the defence of the islands (24 November 1782). A key of 507 groups was read off the clerks&rsquo; glosses on five letters of 1779 and decodes them as French sentences, 93.6&ndash;95.9% of their groups; the same key reads the 1778 letters first read by Brice Dudout.',
+         quote='&ldquo;ma pr&eacute;sence devient inutile ici&rdquo;',
+         rights='Letters: Archives nationales d&rsquo;outre-mer, COL C8 A 79 and C8 A 81, via recherche-anom.culture.gouv.fr'),
     dict(slug='balfour1781', label='Balfour to Cornwallis 1781', year='1781', y=1781.2, place='Charleston &rarr; Cornwallis', st='solved', stt='read',
          title='Nisbet Balfour&rsquo;s intercepted cipher dispatches, 1781',
          blurb='Two cipher dispatches of the Charleston commandant to Cornwallis (March 1781) and his letter to Stewart (August 1781), taken by the Americans and filed in the Papers of the Continental Congress with a decipherment between the lines. The ring key of the British &ldquo;Common cipher&rdquo; and its moving setting were rebuilt from it, and all 6,349 numbers deciphered again by program: 99.8% English, control 0&ndash;2%. Saberton had found no evidence these ciphers were broken.',
@@ -4102,6 +4107,7 @@ IMAGES['auckland1918'] = None
 IMAGES['adrian1520'] = None
 IMAGES['damas1787'] = None
 IMAGES['bouille1778'] = None
+IMAGES['martinique1778'] = ('martinique1778_lead.jpg', 'The opening of Bouill&eacute;&rsquo;s letter of 24 May 1780 (no. 415): the clear words J&rsquo;ai l&rsquo;honneur de vous envoyer, then the dotted code numbers', 'Archives nationales d&rsquo;outre-mer, COL C8 A 79 f. 70, via recherche-anom.culture.gouv.fr')
 IMAGES['partyet1721'] = None
 IMAGES['genes1638'] = None
 IMAGES['feynman'] = None
