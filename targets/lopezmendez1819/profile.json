@@ -1,0 +1,235 @@
+{
+ "schema_version": 1,
+ "target": "lopezmendez1819",
+ "title": "Luis López Méndez (London) to Simón Bolívar, 29 Jan 1819: 15 cipher words read from context by a partial table, read in part",
+ "documents": [
+  {
+   "id": "agn-saa-i-17-25-d24-ff226-228",
+   "read": "read in part",
+   "shelfmark": "AGN Colombia, Sección Archivo Anexo, Grupo I, Historia, HISTORIA.SAA-I.17,25,D.24, ff. 226-228 (cipher on ff. 227v-228r)",
+   "date": "29 Jan 1819",
+   "year": 1819,
+   "country": "Venezuela",
+   "route": "London -> Simón Bolívar, Venezuela",
+   "language": "Spanish",
+   "pages": 5,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment over or beside the cipher words; the unit holds no key and no clear copy.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 70,
+    "distinct": 21,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGN Colombia DataViva, record 66b0cd4f151c9d47762a2382, gallery index 11 (f. 227v) and 12 (f. 228r), 1684 x 1999 px",
+    "corrections": 1,
+    "image_quality": "fair",
+    "notes": "Second reader, blind, on 3x crops: all 70 letters agree; 2-3 of 42 digits undecided, about 3 of 70 symbols (4%), none changing a letter value. Rechecked at 4-7x: the 3 on the first i of i3 l e4 l is clear; the first m on f. 228r is m1 (the correction); the stroke over the last t of t1 l e4 t stays open."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Letters with a digit 1-7 written above: letter + digit, and each bare letter, behave as single fixed symbols in this 70-sign sample (e1 = b, e2 = f, e3 = l, e4 = r, e5 = t, e6 = v, e7 = y).",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 21,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "separator symbol",
+  "notes": "distinct_symbols counts 20 symbols with a value and the unvalued t with an extra stroke. homophones unknown: none is needed for the 14 read words, but 'Maracaibo' would need one (a written t, where a = l elsewhere). nulls unknown: 70 signs are too few to say. key_order: within each base letter the plain values rise with the digit (e: b f l r t v y; i: d p; m: c z; o: h o; t: m s). That is an observation on this small sample. Commas separate the cipher words."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The catalogue's vetting of 28 Oct 2026 (research/latam_vetting/1523_sample.txt) gave a first context reading, with 'cinco meses'. Otherwise none found: not on DECODE or cryptiana, no hit in 15 O'Leary volumes on archive.org, one web search of 2 Nov 2026. Bákula 1949, the Archivo del Libertador and Mondolfi's biography were not reached, so prior art is open.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "human_role": "WAINUT set the task (catalogue 1523) and the rules; the AI agents fetched the images, transcribed, built the table, read and checked. No target-specific human intervention, and no person has checked the reading against the images.",
+  "tools": [
+   "DataViva public API",
+   "solve.py (table, decryption, checks and control; standard library)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
+  "sessions": 2,
+  "first_date": "2026-11-02",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-02",
+   "kind": "access",
+   "what": "Images of ff. 227r-228r fetched from the DataViva public API at 1684 x 1999 px, one request at a time.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "what": "All cipher words transcribed from the images: 15 words, 70 signs, 42 with a digit.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference",
+    "repeat/pattern analysis"
+   ],
+   "what": "Table built from the clear context and the vetting's first reading: 20 symbols cover 69 signs, 0 conflicts in both directions. The table comes from the assumed plaintext, so this tests consistency only. 'cinco meses' corrected to 'cinco veces'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "verification",
+   "what": "Second reader, blind, on 3x crops: all 70 letters agree; about 3 of 70 symbols (4%) undecided, all digits. Own script: 0 conflicts. Its shuffle test: 76 of 20,000 without conflict. One search found no source for the jailings. It found the status word and the key claim overstated and 'Maracaibo' a proposal.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Must-fix pass on the images at 4-7x: first m on f. 228r is m1; the 3 on the first i of i3 l e4 l is clear; the last t of t1 l e4 t has an extra stroke, left open. Line numbers recounted: l. 17-18, 23 and 27 on f. 227v.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Plain words swapped among cipher words of equal length, 14 words, 20,000 trials: 62 without conflict, all 62 the true assignment. A mild test. The earlier 'held-out' test is withdrawn: its two words use only symbols already seen.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "statistics",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Within each base letter the plain values rise with the digit (e: b f l r t v y). Not assumed in building the table; supports e6 = v. Not checked by the second reader.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "14 of 15 words read as sense, in sentences with the clear text. 'Maracaibo' kept as a guess: its fourth sign is written t, while a = l in all eleven other places.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "literature search",
+   "what": "One web search in Spanish found no edition or decipherment; one search found no source for an imprisonment of López Méndez in London in 1818-19. The rift with MacGregor over recruiting was found. Not reached: Bákula 1949, Archivo del Libertador, Mondolfi.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Nearest category only: a partial table guided by the clear text around the cipher words, fitting the 15 words without conflict. It is not a recovered key.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.986,
+  "fraction_coherent": 0.871,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcription.txt and decryption.txt: 69 of 70 signs have a value; 61 of 70 signs are in the 14 words that read as sense. By words 14 of 15 (read_share 0.933).",
+  "verification": [
+   "independent verification"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "15 cipher words read in part from context with a partial table; 'meses' corrected to 'veces'",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "all 70 signs from the DataViva images of ff. 227v-228r",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "blind second reading of the signs and a rerun of the fit by a second agent of the same contributor, not an outside check",
+    "date": "2026-11-02"
+   },
+   {
+    "who": "bourdeau",
+    "role": "key or decipherment used",
+    "note": "the catalogue's vetting gave the first context reading and the first values (research/latam_vetting/1523_sample.txt)",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "[?Maracaibo]: the fourth sign (written t, extra stroke above) and the identification of the word",
+    "blocker": "too-short",
+    "detail": "a = l in all eleven other places; needs a homophone, a slip or a different word"
+   },
+   {
+    "item": "the rest of the table (q, u, j, x, k, ñ and most cells outside column e)",
+    "blocker": "no-key-material",
+    "detail": "70 signs cannot fill it; no other letter in this table was found"
+   },
+   {
+    "item": "e1 = b, t1 = m and d1 = g",
+    "blocker": "too-short",
+    "detail": "these values rest on context alone"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "agn-saa-i-17-25-d24-ff226-228",
+    "label": "The 15 cipher words, ff. 227v-228r",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.933,
+    "summary": "Pressing Bolívar for funds, López Méndez says in cipher that he has been jailed five times and released on bail; no other source for this was found. Mac Gregor, he says, has done untold harm to the cause; he joined an expedition of his, for [?Maracaibo], and left it. Mac Gregor is now trying to go to Santafé.",
+    "note": "Only the bold words are cipher; the clear text is there to give sentences. Editorial repairs are marked {E1}-{E4} in reading.md."
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Corrects the catalogue's vetting reading 'cinco meses': the third and fifth signs are m1 and t3, two symbols, so 'meses' does not fit. The jailings rest on the cipher alone. Prior art is open, so first_break is not set."
+ }
+}
