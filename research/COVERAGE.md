@@ -44,12 +44,12 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | Biblissima, CCFr | Anubis; redirect to an authentication page | `calames_biblissima` |
 | Alvin | Anubis; five searches only | `scandinavia` |
 | HathiTrust full text and catalogue | Blocked; that sweep's "single biggest gap" | `hathitrust` |
-| ArchiveGrid | 403 or challenge | `chi_newberry` |
-| APS, Gilder Lehrman, Virginia, New-York Historical, Maryland | 403, WAF or host unreachable | `us_societies` |
-| archives.yale.edu detail pages | 403; the records themselves were searched through Quicksearch | `us_beinecke_folger` |
+| New-York Historical (NYU finding-aid search), Maryland Center (site search returns nothing) | Human check; site fault. Reached only through ArchiveGrid | `sweep_2026-11_us_blocked` |
+| Benson finding aids in TARO | API ignores the query | `sweep_2026-11_us_blocked` |
+| BYU CONTENTdm images (`cdm15999.contentdm.oclc.org`) | Times out from this network; holds the Sfondrati letters | `sweep_2026-11_us_blocked` |
+| Morgan Library record pages (`themorgan.org/literary-historical/`) | Cloudflare checkbox; needs the owner in Chrome. ArchiveGrid gives the description only | `sweep_2026-11_us_blocked` |
 | LAC collection search | Cloudflare; `nouvelle-france.org` is the working route | `canada_lac` |
 | AGN Argentina, national libraries of Peru, Argentina and Colombia, dLOC | Unreachable or JS-only | `canada_latam` |
-| UT Benson | Anubis for curl | `latam_mexico` |
 | ABNB (Bolivia) | Cloudflare | `latam_southcone` |
 
 **BNE Digital:** blocked access outright on 2 Nov 2026. Do not retry from another network: ask BNE, or resume with its
