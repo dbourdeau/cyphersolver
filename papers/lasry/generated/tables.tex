@@ -4,22 +4,22 @@
 \toprule
 outcome method & $n$ & complete & partial \\
 \midrule
-key from ciphertext only & 29 & 19 & 10 \\
-key from external plaintext & 11 & 8 & 3 \\
-key from adjacent plaintext & 39 & 19 & 20 \\
-\quad\emph{key recovered, all routes} & \emph{79} & \emph{46} & \emph{33} \\
-external key matched & 17 & 12 & 5 \\
-known key applied & 81 & 53 & 28 \\
-existing decipherment & 56 & 53 & 3 \\
+key from ciphertext only & 43 & 16 & 21 \\
+key from external plaintext & 12 & 6 & 6 \\
+key from adjacent plaintext & 47 & 18 & 27 \\
+\quad\emph{key recovered, all routes} & \emph{102} & \emph{40} & \emph{62} \\
+external key matched & 26 & 8 & 13 \\
+known key applied & 88 & 42 & 36 \\
+existing decipherment & 104 & 89 & 14 \\
 \midrule
-not solved & 59 & -- & -- \\
+not solved & 114 & -- & -- \\
 \midrule
-not applicable & 23 & -- & -- \\
+not applicable & 49 & -- & -- \\
 \midrule
-all targets & 315 & 164 & 69 \\
+all targets & 483 & 179 & 117 \\
 \bottomrule
 \end{tabular}
-\caption{\label{tab:methods} Outcome method and extent for the 315 targets. The first three methods recover the key here; the next two apply a key that already existed; the sixth transcribes and checks a decipherment that already existed. Complete means the read bar of Section~\ref{sec:schema} is met.}
+\caption{\label{tab:methods} Outcome method and extent for the 483 targets. The first three methods recover the key here; the next two apply a key that already existed; the sixth transcribes and checks a decipherment that already existed. Complete means the read bar of Section~\ref{sec:schema} is met.}
 \end{table}
 
 \begin{table}[t]
@@ -28,17 +28,17 @@ all targets & 315 & 164 & 69 \\
 \toprule
 century & $n$ & plaintext language & $n$ \\
 \midrule
-14th c. & 1 & French & 97 \\
-15th c. & 13 & Italian & 56 \\
-16th c. & 148 & English & 55 \\
-17th c. & 70 & Spanish & 35 \\
-18th c. & 49 & German & 31 \\
-19th c. & 15 & Latin & 19 \\
-20th c. & 7 & Dutch & 13 \\
-undated & 12 & Hungarian & 5 \\
+14th c. & 3 & French & 120 \\
+15th c. & 34 & English & 88 \\
+16th c. & 183 & Italian & 80 \\
+17th c. & 93 & German & 48 \\
+18th c. & 94 & Spanish & 43 \\
+19th c. & 28 & Latin & 34 \\
+20th c. & 28 & Dutch & 14 \\
+undated & 20 & Polish & 9 \\
 \bottomrule
 \end{tabular}
-\caption{\label{tab:corpus} The corpus by century of the earliest document and by plaintext language (a target with letters in two languages counts under both; 13 languages in all).}
+\caption{\label{tab:corpus} The corpus by century of the earliest document and by plaintext language (a target with letters in two languages counts under both; 17 languages in all).}
 \end{table}
 
 \begin{table}[t]
@@ -48,13 +48,13 @@ undated & 12 & Hungarian & 5 \\
 \toprule
 starting point & $n$ & recovered & applied & existed & not solved \\
 \midrule
-ciphertext only & 66 & 23 & 0 & 4 & 39 \\
-crib from clear text & 27 & 22 & 2 & 1 & 2 \\
-decipherment or known plaintext & 48 & 21 & 5 & 21 & 1 \\
-a key (archive, print, sibling) & 113 & 12 & 89 & 6 & 6 \\
-none recorded & 38 & 1 & 2 & 24 & 11 \\
+ciphertext only & 110 & 38 & 4 & 4 & 64 \\
+crib from clear text & 30 & 22 & 1 & 3 & 4 \\
+decipherment or known plaintext & 83 & 26 & 6 & 43 & 8 \\
+a key (archive, print, sibling) & 139 & 14 & 102 & 14 & 9 \\
+none recorded & 72 & 2 & 1 & 40 & 29 \\
 \midrule
-all & 292 & 79 & 98 & 56 & 59 \\
+all & 434 & 102 & 114 & 104 & 114 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:attack} Outcome by what the attack started from (profile field conditions.attack). Columns: key recovered here (from ciphertext only, adjacent or external plaintext); key applied (a known key, or an external key matched to the document); a decipherment already existed; not solved. Targets classed not applicable are left out.}
@@ -67,14 +67,14 @@ all & 292 & 79 & 98 & 56 & 59 \\
 \toprule
 cipher family & $n$ & recovered & applied & existed & not solved \\
 \midrule
-homophonic or simple + nomenclator & 142 & 38 & 59 & 30 & 15 \\
-substitution, no nomenclator & 40 & 21 & 10 & 6 & 3 \\
-code or codebook & 36 & 6 & 10 & 7 & 13 \\
-syllabic nomenclator & 34 & 10 & 15 & 5 & 4 \\
-undetermined & 31 & 2 & 2 & 6 & 21 \\
-transposition, polygraphic, polyalphabetic & 9 & 2 & 2 & 2 & 3 \\
+homophonic or simple + nomenclator & 179 & 45 & 66 & 47 & 21 \\
+code or codebook & 72 & 15 & 9 & 16 & 32 \\
+undetermined & 66 & 2 & 3 & 16 & 45 \\
+syllabic nomenclator & 49 & 10 & 20 & 12 & 7 \\
+substitution, no nomenclator & 48 & 24 & 11 & 9 & 4 \\
+transposition, polygraphic, polyalphabetic & 20 & 6 & 5 & 4 & 5 \\
 \midrule
-all & 292 & 79 & 98 & 56 & 59 \\
+all & 434 & 102 & 114 & 104 & 114 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:family} Outcome by cipher family, from the system types in the profile. Columns as in Table~\ref{tab:attack}.}
@@ -87,14 +87,14 @@ all & 292 & 79 & 98 & 56 & 59 \\
 \toprule
 prior reading & $n$ & recovered & applied & existed & not solved \\
 \midrule
-none known & 82 & 28 & 16 & 0 & 38 \\
-existed, known before the attempt & 102 & 22 & 52 & 25 & 3 \\
-existed, found during the attempt & 75 & 15 & 24 & 29 & 7 \\
-existed, found after or not at all & 15 & 11 & 4 & 0 & 0 \\
+none known & 129 & 41 & 23 & 0 & 65 \\
+existed, known before the attempt & 151 & 24 & 51 & 62 & 14 \\
+existed, found during the attempt & 100 & 21 & 30 & 39 & 10 \\
+existed, found after or not at all & 20 & 11 & 6 & 1 & 2 \\
 existed, when found unknown & 3 & 0 & 1 & 2 & 0 \\
-unknown & 15 & 3 & 1 & 0 & 11 \\
+unknown & 31 & 5 & 3 & 0 & 23 \\
 \midrule
-all & 292 & 79 & 98 & 56 & 59 \\
+all & 434 & 102 & 114 & 104 & 114 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:prior} Outcome by whether a reading of the text existed anywhere before this project, and when it was found (the contamination question). Columns as in Table~\ref{tab:attack}.}
@@ -107,13 +107,13 @@ all & 292 & 79 & 98 & 56 & 59 \\
 \toprule
 ciphertext tokens & $n$ & recovered & applied & existed & not solved \\
 \midrule
-$<$ 250 & 74 & 15 & 16 & 13 & 30 \\
-250--999 & 75 & 22 & 23 & 13 & 17 \\
-1,000--4,999 & 64 & 21 & 31 & 6 & 6 \\
-$\geq$ 5,000 & 26 & 11 & 14 & 0 & 1 \\
-unknown & 53 & 10 & 14 & 24 & 5 \\
+$<$ 250 & 113 & 23 & 22 & 25 & 43 \\
+250--999 & 119 & 27 & 34 & 19 & 39 \\
+1,000--4,999 & 89 & 33 & 29 & 16 & 11 \\
+$\geq$ 5,000 & 31 & 12 & 14 & 4 & 1 \\
+unknown & 82 & 7 & 15 & 40 & 20 \\
 \midrule
-all & 292 & 79 & 98 & 56 & 59 \\
+all & 434 & 102 & 114 & 104 & 114 \\
 \bottomrule
 \end{tabular}}
 \caption{\label{tab:length} Outcome by ciphertext length (enciphered tokens summed over the documents of a target). Columns as in Table~\ref{tab:attack}.}
@@ -126,36 +126,73 @@ all & 292 & 79 & 98 & 56 & 59 \\
 \toprule
 target & year & language & system & tokens & key order & extent \\
 \midrule
-siena1421 & 1420 & Italian, Latin & homophonic or simple + nomenclator & 13237 & random & partial \\
-r1854 & 1428 & Italian, Latin & homophonic or simple + nomenclator & 4694 & not applicable & partial \\
-soria1523 & 1523 & Spanish & homophonic or simple + nomenclator & -- & unknown & complete \\
+siena14 & 1420 & Italian & homophonic or simple + nomenclator & 1291 & random & none \\
+r1854 & 1428 & Latin & homophonic or simple + nomenclator & 1802 & not applicable & complete \\
+cattanei1430 & 1430 & Latin & substitution, no nomenclator & 1736 & not applicable & partial \\
+siena25 & 1450 & Italian & substitution, no nomenclator & 496 & random & complete \\
+siena18$^\dagger$ & 1496 & Latin & homophonic or simple + nomenclator & 1469 & random & complete \\
+esp318no95$^\dagger$ & 1497 & Spanish & homophonic or simple + nomenclator & 1364 & unknown & partial \\
+vich1515 & 1515 & Spanish & homophonic or simple + nomenclator & 3177 & unknown & none \\
+soria1523 & 1523 & Spanish & homophonic or simple + nomenclator & -- & unknown & partial \\
+ranzo1528$^\dagger$ & 1528 & Italian & code or codebook & 8224 & random & partial \\
 rangone1530 & 1529 & Italian & substitution, no nomenclator & 264 & unknown & partial \\
-joachim1530 & 1530 & Italian & homophonic or simple + nomenclator & 402 & unknown & complete \\
-guiche1551 & 1551 & French & substitution, no nomenclator & 406 & unknown & partial \\
-memoire1560 & 1560 & French & code or codebook & 1715 & unknown & complete \\
-labbe1582$^\dagger$ & 1577 & French & substitution, no nomenclator & 576 & unknown & complete \\
-harley1582r8505 & 1585 & French & substitution, no nomenclator & 3564 & random & complete \\
-segur & 1585 & French & syllabic nomenclator & 594 & alphabetical & complete \\
-lorraine1592 & 1592 & French & homophonic or simple + nomenclator & 1109 & unknown & partial \\
+joachim1530 & 1530 & Italian & homophonic or simple + nomenclator & 402 & unknown & partial \\
+guiche1551 & 1551 & French & substitution, no nomenclator & 431 & unknown & partial \\
+memoire1560 & 1560 & French & code or codebook & 1715 & unknown & partial \\
+r9424 & 1583 & German & homophonic or simple + nomenclator & 913 & random & partial \\
+harley1582r8505 & 1585 & French & substitution, no nomenclator & 3564 & random & none \\
+segur & 1585 & French & syllabic nomenclator & 466 & alphabetical & complete \\
+lorraine1592$^\dagger$ & 1592 & French & homophonic or simple + nomenclator & 1109 & unknown & none \\
 stowe166 & 1593 & English & homophonic or simple + nomenclator & 126 & unknown & complete \\
 segura1596 & 1596 & Spanish & substitution, no nomenclator & 125 & unknown & complete \\
+senisteros1605 & 1605 & Spanish & substitution, no nomenclator & 1447 & unknown & complete \\
+anhalt1610 & 1610 & German & undetermined & 242 & not applicable & none \\
 ferdinand1619 & 1619 & German & homophonic or simple + nomenclator & 4181 & partly alphabetical & complete \\
-warsaw & 1627 & Italian & syllabic nomenclator & 465 & alphabetical & complete \\
-transylvania1645 & 1628 & Hungarian & undetermined & 23 & unknown & partial \\
-harley286 & 1635 & Latin & substitution, no nomenclator & 281 & random & complete \\
-marburg1635 & 1635 & German & substitution, no nomenclator & 590 & unknown & complete \\
+warsaw & 1627 & Italian & syllabic nomenclator & 465 & alphabetical & none \\
+harley286 & 1635 & Latin & substitution, no nomenclator & 281 & random & partial \\
+marburg1635 & 1635 & German & substitution, no nomenclator & 590 & unknown & partial \\
 malsburg1637$^\dagger$ & 1637 & French, German & transposition, polygraphic, polyalphabetic & 13487 & not applicable & partial \\
-mercy1648 & 1648 & Spanish & homophonic or simple + nomenclator & 529 & random & partial \\
+transylvania1645 & 1645 & Hungarian & undetermined & 4785 & unknown & partial \\
+mercy1648$^\dagger$ & 1648 & Spanish & homophonic or simple + nomenclator & 529 & random & partial \\
 wesselenyi1664 & 1664 & Latin & homophonic or simple + nomenclator & 244 & alphabetical & complete \\
-sieniawski1708 & 1706 & German, Polish & homophonic or simple + nomenclator & 6738 & alphabetical & partial \\
-potocka1714 & 1714 & French, Latin, Polish & homophonic or simple + nomenclator & 1119 & partly alphabetical & partial \\
-kauderbach1754 & 1754 & French & homophonic or simple + nomenclator & 8512 & random & complete \\
-swieten1757 & 1758 & French & homophonic or simple + nomenclator & 642 & alphabetical & complete \\
-r1892 & 1795 & Dutch, French & substitution, no nomenclator & 2067 & random & complete \\
+schenck1706 & 1706 & German & homophonic or simple + nomenclator & 1181 & alphabetical & partial \\
+potocka1714 & 1715 & French, Polish & homophonic or simple + nomenclator & 886 & partly alphabetical & partial \\
+kauderbach1754 & 1754 & French & homophonic or simple + nomenclator & 8512 & random & partial \\
+swieten1759 & 1759 & French & homophonic or simple + nomenclator & 553 & alphabetical & complete \\
+r1892 & 1795 & Dutch, French & substitution, no nomenclator & 2067 & random & partial \\
+mountflorence1801 & 1801 & English & code or codebook & 39 & alphabetical & complete \\
 soglia1848 & 1848 & Italian & code or codebook & 955 & alphabetical & complete \\
+augur1874 & 1874 & English & transposition, polygraphic, polyalphabetic & 246 & not applicable & partial \\
+sunyatsen & 1916 & Chinese & transposition, polygraphic, polyalphabetic & 177 & partly alphabetical & complete \\
+lejava1921 & 1921 & Ru & transposition, polygraphic, polyalphabetic & 167 & unknown & complete \\
+voikov1921 & 1921 & Ru & transposition, polygraphic, polyalphabetic & 615 & unknown & complete \\
 egmond & -- & French & substitution, no nomenclator & 774 & unknown & complete \\
-sp106r927 & -- & French & substitution, no nomenclator & 1348 & unknown & complete \\
+r9416 & -- & German & substitution, no nomenclator & 3313 & unknown & partial \\
+sp106r927 & -- & French & substitution, no nomenclator & 1348 & unknown & partial \\
 \bottomrule
 \end{tabular}}
-\caption{\label{tab:ct} The 29 targets whose key was recovered from the ciphertext alone. $^\dagger$~worked by \Contributor.}
+\caption{\label{tab:ct} The 43 targets whose key was recovered from the ciphertext alone. $^\dagger$~solved in part by an outside contributor.}
 \end{table*}
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+outcome method & $n$ & complete & partial \\
+\midrule
+key from ciphertext only & 52 & 28 & 22 \\
+key from external plaintext & 9 & 6 & 3 \\
+key from adjacent plaintext & 46 & 17 & 28 \\
+external key matched & 9 & 2 & 6 \\
+known key applied & 34 & 15 & 18 \\
+existing decipherment & 19 & 9 & 10 \\
+\midrule
+not solved & 3 & -- & -- \\
+\midrule
+not applicable & 1 & -- & -- \\
+\midrule
+all contributed targets & 173 & 77 & 87 \\
+\bottomrule
+\end{tabular}
+\caption{\label{tab:contrib} Outcome method and extent for the 173 contributed targets: those whose solution is credited to someone outside the project. The model figures of Table~\ref{tab:methods} leave them out.}
+\end{table}

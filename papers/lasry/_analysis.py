@@ -5,9 +5,8 @@
 Writes papers/lasry/generated/{macros,tables,appendix}.tex, so that no figure in the paper is typed by hand, and the
 data release papers/lasry/targets.csv + codebook.md (via docs/_export_profiles.py), filtered to the same corpus.
 
-Corpus: the paper covers classical ciphers of European origin dated 1350 to 1950, the range the DECODE collection
-covers. The famous targets (docs/_check_writeup.py FAMOUS) keep no profile. OUT_OF_SCOPE lists the profiled targets
-that fall outside that range or origin; they are left out of every number, table and the data release.
+Corpus: the paper covers historical (classical) ciphers of any region dated 1350 to 1950. The famous targets (docs/_check_writeup.py FAMOUS) keep no profile. OUT_OF_SCOPE lists the profiled targets
+that fall outside that range; they are left out of every number, table and the data release.
 
 Outcome: outcome.method (George Lasry's categories, docs/_methods.py) says how the text was obtained, and extent
 (complete / partial, docs/_methods.extent) says how much of it. The unit of analysis is the target (one profile);
@@ -28,11 +27,9 @@ OUT = HERE / 'generated'
 OUT.mkdir(exist_ok=True)
 U = 'unknown'
 
-# profiled targets outside the paper's corpus (European classical ciphers, 1350-1950)
+# profiled targets outside the paper's corpus (historical ciphers, 1350-1950, any region since 28 Oct 2026)
 OUT_OF_SCOPE = {
-    'armstrong': 'United States', 'erving1807': 'United States', 'jqa': 'United States', 'debosnys': 'United States',
-    'milroy': 'United States', 'roosevelt': 'United States', 'feynman': 'United States, 1953',
-    'scorpion': 'United States, 1991', 'sunyatsen': 'China', 'zhongshan': 'China',
+    'feynman': 'United States, 1953', 'scorpion': 'United States, 1991',
     'kaliningrad': 'modern find, undated', 'copenhagen': 'undated slip, no archival context',
 }
 YEAR_MIN, YEAR_MAX = 1350, 1950
@@ -100,7 +97,8 @@ def load():
             frac=o.get('fraction_read') if isinstance(o.get('fraction_read'), (int, float)) and not isinstance(o.get('fraction_read'), bool) else None,
             frac_method=o.get('fraction_read_method'),
             verification=set(as_list(o.get('verification'))), contribution=set(as_list(o.get('contribution'))),
-            ndocs=len(docs)))
+            ndocs=len(docs), prov=o.get('provenance') or 'project',
+            credits=[x for x in as_list(o.get('credits')) if isinstance(x, dict)]))
     return ps, skipped
 
 
@@ -184,8 +182,28 @@ def group_table(ps, keyf, label, caption, tag, order=None):
     return '\n'.join(out)
 
 
+SOLVER_ROLES = ('solution', 'new cipher with solution')
+
+
+def solvers(t):
+    """Contributor ids credited with the solution of a target."""
+    return [c['who'] for c in t['credits'] if c.get('role') in SOLVER_ROLES]
+
+
+def llm_assisted(t):
+    """True when the profile records a language model among the models (the contributor's own tools included)."""
+    ms = t['prof']['conditions'].get('models')
+    txt = ' '.join(ms if isinstance(ms, list) else [str(ms)]).lower()
+    return any(k in txt for k in ('claude', 'gpt', 'codex', 'language model', 'wainut', 'llm', 'opus', 'sonnet', 'fable'))
+
+
 def main():
-    ps, skipped = load()
+    everyone, skipped = load()
+    # contributed results are the contributors' own (contribute.html: "kept out of the model's figures"); they are
+    # reported in their own section, table and appendix. Mixed targets (the model and an outside solver) stay in the
+    # model figures and carry a dagger.
+    cs = [t for t in everyone if t['prov'] == 'contributed']
+    ps = [t for t in everyone if t['prov'] != 'contributed']
     M = {}
     def m(name, v): M[name] = v
     by = collections.Counter(t['method'] for t in ps)
@@ -317,20 +335,89 @@ def main():
     # the working record: the repository's commit history and the target folders
     import subprocess
     def git(*a): return subprocess.run(['git', '-C', str(ROOT), *a], capture_output=True, text=True, encoding='utf-8').stdout
-    span = ('--since=2026-09-14', '--until=2026-09-25')
+    span = ('--since=2026-09-14', '--until=' + (datetime.date.fromisoformat(max(lasts + firsts)) + datetime.timedelta(days=1)).isoformat())
+    m('Ndays', (datetime.date.fromisoformat(max(lasts + firsts)) - datetime.date.fromisoformat(firsts[0])).days + 1)
     m('Ncommits', f'{len(git("log", *span, "--format=%H", "HEAD").split()):,}')
     m('Ncommitsmodel', f'{len(git("log", *span, "-i", "--grep=Co-Authored-By: Claude", "--format=%H", "HEAD").split()):,}')
-    # targets committed by a second contributor (outside pull requests), from the git authors of the target folder
-    owner = {'Daniel Bourdeau', 'Dan Bourdeau', 'dbourdeau'}
-    other = [t for t, f in zip(ps, [MT.profile_paths()[t['target']].parent for t in ps])
-             if set(git('log', '--format=%an', 'HEAD', '--', f.relative_to(ROOT).as_posix()).split('\n')) - owner - {''}]
+    other = [t for t in ps if t['prov'] == 'mixed']
     m('Nexternal', len(other)); m('Nexternalworked', sum(1 for t in other if t['method'] != NA))
     m('Nexternalobtained', sum(1 for t in other if t['method'] not in (NA, NOT)))
-    ext_ids = {id(t) for t in other}
-    for t in ps: t['external'] = id(t) in ext_ids
+    for t in ps: t['external'] = t['prov'] == 'mixed'
     folders = [MT.profile_paths()[t['target']].parent for t in ps]
     m('Nnotes', sum(1 for f in folders if (f / 'NOTES.md').exists()))
     m('Ncode', sum(1 for f in folders if any(f.rglob('*.py')) or any(f.rglob('*.cs'))))
+
+
+    # ---- contributed solutions: the contributors' own results, reported apart from the model figures
+    import re
+    reg = json.loads((ROOT / 'contributors.json').read_text(encoding='utf-8'))['contributors']
+    name = {c['id']: c['name'] for c in reg}
+    cworked = [t for t in cs if t['method'] != NA]
+    cobt = [t for t in cworked if t['method'] != NOT]
+    m('Ncontrib', len(cs)); m('Ncontribworked', len(cworked)); m('Ncontribobtained', len(cobt))
+    m('Ncontribcomplete', sum(1 for t in cobt if t['ext'] == 'complete')); m('Ncontribpartial', sum(1 for t in cobt if t['ext'] == 'partial'))
+    cby = collections.Counter(t['method'] for t in cs)
+    for meth in MT.METHODS:
+        k = ABBR[meth]
+        m('Nc' + k, cby[meth])
+        m('Nc' + k + 'complete', sum(1 for t in cs if t['method'] == meth and t['ext'] == 'complete'))
+        m('Nc' + k + 'partial', sum(1 for t in cs if t['method'] == meth and t['ext'] == 'partial'))
+    m('Ncontribrecovered', sum(1 for t in cs if t['method'] in MT.KEY_RECOVERED))
+    who = collections.defaultdict(list)
+    for t in cs + [t for t in ps if t['prov'] == 'mixed']:
+        for w in dict.fromkeys(solvers(t)): who[w].append(t)
+    people = sorted(who, key=lambda w: -len(who[w]))
+    m('NcontribTop', len(who[people[0]])); m('Ncontributors', len(people)); m('Nmixed', sum(1 for t in ps if t['prov'] == 'mixed'))
+    m('Nallworked', len([t for t in everyone if t['method'] != NA]))
+    m('Nalltargets', len(everyone))
+    cyears = [t['year'] for t in cs if t['year']]
+    m('NcontribYearMin', min(cyears)); m('NcontribYearMax', max(cyears))
+    cl = collections.Counter(l for t in cs for l in t['langs'])
+    m('NcontribLanguages', len(cl))
+    m('NcontribCountries', len({c for t in cs for c in t['ctry']}))
+    cfirst = sorted(t['first'][:10] for t in cs if t['first'][:4] == '2026')
+    m('ContribDateFirst', dstr(cfirst[0]) if cfirst else '?')
+
+    # per-contributor table (names in the camera-ready version only; the submission shows C1, C2 ...)
+    EOL = ' \\\\'
+    cr = [r'\begin{table}[t]', r'\centering\small', r'\resizebox{\columnwidth}{!}{%', r'\begin{tabular}{@{}lrrrrrrrr@{}}', r'\toprule',
+          r'contributor & $n$ & CT & APT & EPT & EK & KK & DEC & NS' + EOL, r'\midrule']
+    for i, w in enumerate(people, 1):
+        ts = who[w]; c = collections.Counter(t['method'] for t in ts)
+        cr.append('\\Who{C%d}{%s} & %d & ' % (i, tex(name.get(w, w)), len(ts)) + ' & '.join(str(c[x]) for x in (CT, ADJ_PT, EXT_PT, EXT_KEY, KNOWN, DECIPH, NOT)) + EOL)
+    cr += [r'\bottomrule', r'\end{tabular}}',
+           r'\caption{\label{tab:contributors} Targets by the contributor credited with the solution, for the contributed targets and the mixed ones of Table~\ref{tab:methods}. A target with two solvers counts under each. Method abbreviations as in Table~\ref{tab:all}.}',
+           r'\end{table}', '']
+    (OUT / 'contributors_table.tex').write_text('\n'.join(cr), encoding='utf-8')
+    cred = ', '.join('%s (%d)' % (tex(name.get(w, w)), len(who[w])) for w in people)
+    (OUT / 'contributors.tex').write_text('\\newcommand{\\ContribCredits}{' + cred + '}\n', encoding='utf-8')
+
+    # contributed table, to be appended to the tables below
+    crow = [r'\begin{table}[t]', r'\centering\small', r'\begin{tabular}{@{}lrrr@{}}', r'\toprule',
+            r'outcome method & $n$ & complete & partial' + EOL, r'\midrule']
+    for meth in MT.METHODS:
+        if meth in (NA, NOT): crow.append(r'\midrule')
+        if meth in (NA, NOT):
+            crow.append('%s & %d & -- & --' % (SHORT[meth], cby[meth]) + EOL)
+        else:
+            crow.append('%s & %d & %d & %d' % (SHORT[meth], cby[meth], M['Nc' + ABBR[meth] + 'complete'], M['Nc' + ABBR[meth] + 'partial']) + EOL)
+    crow += [r'\midrule', 'all contributed targets & %d & %d & %d' % (len(cs), M['Ncontribcomplete'], M['Ncontribpartial']) + EOL, r'\bottomrule', r'\end{tabular}',
+             r'\caption{\label{tab:contrib} Outcome method and extent for the %d contributed targets: those whose solution is credited to someone outside the project. The model figures of Table~\ref{tab:methods} leave them out.}' % len(cs),
+             r'\end{table}', '']
+    CONTRIB_TABLE = '\n'.join(crow)
+
+    # appendix rows for the contributed targets
+    ident = {w: 'C%d' % i for i, w in enumerate(people, 1)}
+    cA = [r'{\scriptsize', r'\begin{longtable}{@{}llrlllr@{}}',
+          r'\caption{\label{tab:allcontrib} The contributed targets, by date of the earliest document, with the credited solver (Table~\ref{tab:contributors}). Methods as in Table~\ref{tab:all}.}\\',
+          r'\toprule', r'target & solver & year & language & method & extent & tokens' + EOL, r'\midrule', r'\endfirsthead',
+          r'\toprule', r'target & solver & year & language & method & extent & tokens' + EOL, r'\midrule', r'\endhead', r'\bottomrule', r'\endlastfoot']
+    for t in sorted(cs, key=lambda t: (t['year'] or 9999, t['target'])):
+        sv = ', '.join('\\Who{%s}{%s}' % (ident.get(w, 'C?'), tex(name.get(w, w))) for w in dict.fromkeys(solvers(t))) or '--'
+        cA.append('%s & %s & %s & %s & %s & %s & %s' % (tex(t['target']), sv, t['year'] or '--', tex(', '.join(sorted(t['langs'])) or '--'),
+                                                     ABBR[t['method']], t['ext'], t['tokens'] if t['tokens'] else '--') + EOL)
+    cA += [r'\end{longtable}}', '']
+    CONTRIB_APPENDIX = '\n'.join(cA)
 
     # ---- macros
     names = {'0': 'Zero', '1': 'One', '2': 'Two', '3': 'Three', '4': 'Four', '5': 'Five', '6': 'Six', '7': 'Seven', '8': 'Eight', '9': 'Nine'}
@@ -392,26 +479,28 @@ def main():
         rows.append(f'{mark(t)} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
                     f'{t["tokens"] if t["tokens"] else "--"} & {tex(t["key_order"])} & {t["ext"]} \\\\')
     rows += ['\\bottomrule', '\\end{tabular}}',
-             f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone. $^\\dagger$~worked by \\Contributor.}}', '\\end{table*}', '']
+             f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone. $^\\dagger$~solved in part by an outside contributor.}}', '\\end{table*}', '']
     T.append('\n'.join(rows))
+    T.append(CONTRIB_TABLE)
     (OUT / 'tables.tex').write_text('\n'.join(T), encoding='utf-8')
 
     # ---- appendix
     head = 'target & year & language & system & method & extent & tokens \\\\'
     A = ['\\onecolumn', '{\\scriptsize', '\\begin{longtable}{@{}llrlllr@{}}',
          '\\caption{\\label{tab:all} Every target in the corpus, by date of the earliest document. Methods: '
-         + '; '.join(f'{ABBR[x]} {SHORT[x]}' for x in MT.METHODS) + '. $^\\dagger$~worked by \\Contributor. Full profiles are in the data release.}\\\\',
+         + '; '.join(f'{ABBR[x]} {SHORT[x]}' for x in MT.METHODS) + '. $^\\dagger$~solved in part by an outside contributor. Full profiles are in the data release.}\\\\',
          '\\toprule', head.replace('target & year', 'target & year'), '\\midrule', '\\endfirsthead',
          '\\toprule', head, '\\midrule', '\\endhead', '\\bottomrule', '\\endlastfoot']
     for t in sorted(ps, key=lambda t: (t['year'] or 9999, t['target'])):
         A.append(f'{mark(t)} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
                  f'{ABBR[t["method"]]} & {t["ext"]} & {t["tokens"] if t["tokens"] else "--"} \\\\')
     A += ['\\end{longtable}}', '']
+    A.append(CONTRIB_APPENDIX)
     (OUT / 'appendix.tex').write_text('\n'.join(A), encoding='utf-8')
 
     # ---- data release, same corpus
     rows_ = []
-    for t in ps:
+    for t in everyone:
         prof = t['prof']
         base = {'target': t['target'], 'title': prof['title']}
         for sect in ('system', 'conditions', 'outcome'): ex.flat(prof[sect], sect, base)
@@ -419,7 +508,8 @@ def main():
         base['solution.kinds'] = '; '.join(x.get('kind', '') for x in t['steps'])
         base['solution.failed_steps'] = sum(1 for x in t['steps'] if x.get('result') in ('failed', 'ruled out'))
         base['documents.count'] = t['ndocs']
-        base['worked_by'] = 'second contributor' if t['external'] else 'first author'
+        base['provenance'] = t['prov']
+        base['solved_by'] = '; '.join(name.get(w, w) for w in dict.fromkeys(solvers(t))) if t['prov'] != 'project' else 'project'
         for d in prof['documents']: rows_.append({**base, **ex.flat(d, 'doc', {})})
     cols = []
     for r in rows_:
