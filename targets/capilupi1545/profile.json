@@ -1,0 +1,314 @@
+{
+ "schema_version": 1,
+ "target": "capilupi1545",
+ "title": "Camillo Capilupi to Ferrante Gonzaga, Worms, 8 May 1545 (catalogue 1565): read in part; cc. 48 and 49r not read",
+ "documents": [
+  {
+   "id": "c15_16",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera C, Capilupi, Camillo, cc. 15-16",
+   "date": "8 May 1545",
+   "year": 1545,
+   "country": "Germany",
+   "route": "Worms -> Ferrante I Gonzaga (recipient uncertain in the catalogue)",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment found in the file; the docket on c. 16v gives the headings in the clear."
+   },
+   "length": {
+    "tokens": 1530,
+    "unit": "symbols",
+    "measured": false,
+    "distinct": 50
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF images, native size",
+    "image_quality": "good",
+    "corrections": 18,
+    "notes": "Pass 1 with no key; pass 2 and pass 3 with the key in view, logged in pass2_changes.tsv and pass3_changes.tsv. Blind sample of 184 signs of c. 15v: 5.4% disagreement, 1.6% after the reader's two label failures."
+   },
+   "pages": 3
+  },
+  {
+   "id": "c48",
+   "read": "not read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera C, Capilupi, Camillo, c. 48",
+   "date": "23 February 1546",
+   "year": 1546,
+   "country": "unknown",
+   "route": "Camillo Capilupi -> Ippolito Capilupi",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 304,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF images",
+    "image_quality": "fair",
+    "notes": "Digits, one pass."
+   },
+   "pages": 1
+  },
+  {
+   "id": "c49r",
+   "read": "not read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera C, Capilupi, Camillo, cc. 49-50, c. 49r",
+   "date": "28 February 1546",
+   "year": 1546,
+   "country": "unknown",
+   "route": "Camillo Capilupi",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 337,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF images",
+    "image_quality": "fair",
+    "notes": "Digits, one pass. cc. 49v-50 not worked."
+   },
+   "pages": 1
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic alphabet of about 37 signs for Italian, with nulls marked by a subscript 8 or 9, double letters written as pseudo-words (bur, bor, bar, mur, F r), five code words, and ordered null strings. No word division.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 50,
+  "diacritics": {
+   "used": true,
+   "note": "A subscript 8 or 9 cancels the sign; a raised 9 on the stroke makes it the sign p."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 5,
+   "kinds": [
+    "names",
+    "titles"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "special sign: pseudo-words bur tt, bor ss, bar rr, mur ll, F r cc",
+  "notes": "K stands for o and also where u or v is needed. Subscript 9 under Z may be a g in three places; not tested."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found. Open: an essay by Lino Chiesi on the Capilupi-Gonzaga correspondence and a calendar entry for Camillo Capilupo were not seen (3 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 1565) and the rules; AI language-model agents located the letters, transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Estense IIIF images",
+   "scripts in this folder (annealer, concordance, held-out test, mark checker)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "Images fetched from Estense IIIF; native size by region requests.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "cc. 15-16 transcribed sign by sign from enlarged strips with no key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "hypothesis",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Neighbouring Capilupi tables (1556, 1560) tried on the letter; neither fits.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Homophonic annealing on Italian 4-grams; subscript marks found to cancel a sign by scoring with and without them.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Table frozen on c. 15r, applied to cc. 15v-16r: -7.435 per letter against shuffled tables mean -10.168, best -9.326. Scrambled sign order control also passes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "statistics",
+   "what": "Digits of cc. 48 and 49r: no fixed pair grid; stopped as too short, with no matched control.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent blind check: 184 signs of c. 15v before any solver file, 10 differences, 5.4%; 3 of 184, 1.6%, after the reader's two label failures. Key confirmed; status corrected; 19 unmarked repairs found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Pass 3 on crops where the sense broke: signs changed on 8 lines plus v05, clear text on 2 lines. Found with the sense in view, not blind.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Reading rebuilt from a marked source; every repair marked and checked by script.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Four web searches found no edition; the Chiesi essay and one calendar entry not seen.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key recovered by homophonic annealing on the signs of c. 15r and refined by hand; no pairs and no contemporary decipherment. Code words by context; two are confirmed by the docket on c. 16v.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.68,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "cc. 15-16: 233 of 293 cipher words read as sense, 214 with no restored or changed letter (scripts/check_marks.py c15_16). cc. 48 and 49r, 641 digits, perhaps 50 words if letters take 2-3 digits, are unread; 233 of about 343 gives this rough share of the whole.",
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key recovered from ciphertext; cc. 15-16 read in part",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "cc. 15-16, first pass of cc. 48 and 49r, from Estense images",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one blind AI reader inside the project; no human palaeographer, no outside check",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Doubtful words in cc. 15-16 and the K, Z9 and open-ring questions",
+    "blocker": "not-attempted",
+    "detail": "A blind second read and a fuller homophone table may settle several. Listed in NOTES.md."
+   },
+   {
+    "item": "Five unordered strings (L26, v12, v20, r04, r07)",
+    "blocker": "not-attempted",
+    "detail": "Counted as not read, 8 words. Not proved null. v12 is partly text."
+   },
+   {
+    "item": "Code words Quan and Lus",
+    "blocker": "open-codes",
+    "detail": "Quan very likely the Cardinal of Augsburg, context only; Lus one use."
+   },
+   {
+    "item": "cc. 48 and 49r, cc. 49v-50",
+    "blocker": "not-attempted",
+    "detail": "Digits, one pass. The \"too short\" judgement has no matched control."
+   },
+   {
+    "item": "Blind reader for c. 15r, c. 15v from v09, c. 16r and the pass 3 corrections",
+    "blocker": "not-attempted",
+    "detail": "Only 184 signs had a blind reader."
+   },
+   {
+    "item": "Prior art",
+    "blocker": "not-attempted",
+    "detail": "Chiesi essay and one calendar entry not seen."
+   }
+  ],
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": "c15_16",
+    "label": "cc. 15-16, 8 May 1545",
+    "transcription": [
+     "transcription_c15r.txt",
+     "transcription_c15v.txt",
+     "transcription_c16r.txt"
+    ],
+    "decryption": "decryption_c15_16.txt",
+    "reading": "reading_c15_16.md",
+    "translation": "translation_c15_16.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.795,
+    "summary": "A cardinal, very likely Otto Truchsess, dictates news to Capilupi at Worms for Ferrante Gonzaga: the Marchese del Vasto, Prince Doria and Genoa, the Farnese marriage, whether there will be war this year, and his wish to have Ferrante at court to urge the Emperor against the Lutherans.",
+    "note": "Cipher words 293: as sense 233 (79.5%), no restored or changed letter 214 (73.0%), 26 doubtful, 23 code words, 11 not read."
+   }
+  ]
+ }
+}

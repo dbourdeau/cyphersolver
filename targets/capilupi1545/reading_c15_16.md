@@ -1,0 +1,19 @@
+# Catalogue 1565: Camillo Capilupi to Ferrante Gonzaga, Worms, 8 May 1545 (cc. 15-16)
+
+Mi ha chiamato questa mattina {QUAN} <null> et mi ha detto ch'io scriva all'Ecc.tia V.ra queste cose ch'io scrivero in ziffera, comettendomi a tenerle quanto piu posso secrete et desidererebbe che fussero diziferate da quella persona di cui piu si fida.
+
+Cerca la cosa del {SED} che {IMA} [?conosce] la sua vanita et instabilita c'hora vole et disvole, ama et disama et percio quella non po erra[r]e a risponderli come ha [f]atto dimostrando lei non esser mai stata da [?lei] disunita anci haver [...] [?sempre] datto con [...] come ricercava il servitio di {ULIR} [?et] i merti suoi et che le dorrebbe che sua S.ta havesse havuto altra opinione. {QUAN} <null>
+
+Cerca il principe Doria dice che sta bene [?col] {SED} per rispetto de le cose [di] Genova a le [?quali] il m. {SED} po giovar? et per conto del affare che ha con messer Adam et che anch'esso e persona la quale vole essere visitata° spesso con lettre il che non havendo egli fatto per non esser suo costume ne haver ocio di scriver lettre vane ne ha havuto querele alcuna volta fatte con l'ambasciador di Genova.
+
+cerca il matrimonio col si[g]no[r] Ottavio dice che Farnese vi[e]n a la cort[e] per parole so[l]e non ch'egli habbia cio tentato da se ma si ben tenuto modo con [...] d[i]pingendoli la ruina del papa et [?de] la chiesa se'l papa non si accomodava con l' Imp. parendoli importare assai {QUAN} <null> a le cose di {ULIR} cosi verso il [?fin] come verso la Magna et Francia che fusse opinione {QUAN} [...] che'l papa et l'imperadore fussero ben accomodati insieme ma che percio non sono anchor [?d'accordo] et se Farnes[e] non [?viene] ben risoluto [?haveria] datto m[e]glio di remanersene.
+
+questo prohemio mi ha fatto per dimostrarme che di cio che si tratt[a]ra si dara capo a lui et secondo il [?procedere] di Farnese o fino o sincero si potra conietturare s'anco [?quel] suo matrimonio si move puramente o pure malitiosamente di che <null> {QUAN} {IMA} sara avisata ed intorno alla cosa di mi egli ha pensato come sia qui {LUS} il quale e persona che cerca stare ben con tutti di voler da se con esso lui far querela di questa mostrando di haverne inteso da Napoli et molto meravigliarsene et far ch'egli da se ne scriva una bona lettra al mi avertendolo amorevolmente affar {QUAN} [...] [?aver] conto di cui [?deve] et non lauda che queste cose vadano ad orecchie di ulir per non dargli da pensar [?senza] causa di questi mali intendimenti [?tra] l'uno et l'altro.
+
+cerca poi quello c'habbia da essere de la vita di {IMA} dice che facendosi o non face[n]dosi impresa di [g]uerra questo a[nn]o pensa che {IMA} non si [?haver] stare a [?Mantova] et pero tanto che quella consideri un poco bene in caso pure che [...] {QUAN} non si facesse [g]uerra se a {IMA} metteria meglio o vero esser chiamata anch'essa qui et [?venirci] in poi [?v'avere] reputatione de le cose sue perche vi se trattara forse de le cose di monsignor d'Orliens ove [?e] o andarsene [?altrove] et che poi riserba il parer suo.
+
+Io quando mi parlava di Far[n]ese presa l'occasione e li ricordai del priorato mi rispose che quella non dubitasse perche essendo esso° qui {IMA} ci e piu piu presente che se ci fusse perche potrebbe gli dire de le cose che V. Ecc.tia non direbbe. [...] {QUAN} [?d']Ago[s]ta desidera qui {IMA} perche l'aiutasse ad essortar° {ULIR} a domar Lutera[n]i cioe alc.o d'essi perche gli pare che non havera mai piu {QUAN} [...] si bella occasione come h[o]ra.
+
+Da Vormatia alli 8 di Maggio 1545:
+
+Cerca quella badia della quale V. Ecc.tia scrive io parlai con {QUAN}. nel fine del ragionamento dimandandogli io se haveva da scriver altro mi rispose e venuto [?Idiaquez] scrivono di [?Ispagna] di mala maniera ma di cio ne scrivero poi io, ne cercai altro.
