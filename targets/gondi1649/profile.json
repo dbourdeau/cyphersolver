@@ -1,0 +1,252 @@
+{
+ "schema_version": 1,
+ "target": "gondi1649",
+ "title": "Giovanni Battista Gondi to Commendator Galilei, 11 May 1649 (Biblioteca Estense, not in the catalogue): the cipher of c. 1r read, key recovered from the interlinear decipherment",
+ "documents": [
+  {
+   "id": "c1r",
+   "read": "read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gondi, Giovanni Battista, cc. 1-2 (cipher on c. 1r, lower half)",
+   "date": "11 May 1649",
+   "year": 1649,
+   "country": "Italy",
+   "route": "Giovanni Battista Gondi -> Commendator Galilei",
+   "language": "Italian",
+   "pages": 4,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary decipherment written between the cipher lines; it covers all of the cipher, and the library's catalogue record says so ('decifrata in interlinea'). A transcription job, not a break."
+   },
+   "length": {
+    "tokens": 538,
+    "distinct": 16,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_c1r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico Media Library IIIF images, full size",
+    "image_quality": "good",
+    "notes": "Pass 1 by eye on full-size crops; pass 2 by a separate AI language-model agent on cipher-only bands, blind (no key, no clear, no decipherment). 39 of 558 signs differed before adjudication on crops. Independent blind check of L04, L07-L09, L11-L13: 2 of 280 signs differed (0.7%), 0 solver errors after zoom, one place (L09 start) unresolved. tokens and distinct count signs only (commas, dots and clear words out; barred signs separate, doubtful marks merged)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyphonic",
+   "nomenclator"
+  ],
+  "summary": "Tuscan letter cipher: vowels are single digits (3 a, 4 u/v, 5 o, 6 e, 7 i), consonants a digit plus 0 (10 c/b, 30 l/r, 40 n/s, 50 m, 60 t) or one sign (W d/z, 9 p/q, 1 g/f, 2 g). Several consonant signs stand for two letters. Barred signs are short words; three-figure groups beginning with 2 are words, names and titles. Double letters written once. No word division.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 16,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 15,
+   "kinds": [
+    "common words",
+    "word parts",
+    "titles"
+   ],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "written once",
+  "notes": "Codes: 7^ non, 5^ che, 4^ e, W^ per, 6^ chi (inside richiamata), W0 con, 217 di/de/del, 261 Signor, 262 V.S., 264 S.E., 267 S.A., 223 Vicere, 252 quelli; 273 Vicere from context only; the pair 5 8 (L09) unread, possibly a null. 2 = g occurs once, on a doubtful sign, so homophones are not claimed. distinct_symbols counts sign shapes in the transcription with barred forms separate."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary interlinear decipherment on c. 1r itself; the library's catalogue record notes it. One web search (3 Nov 2026) and a search of this repository found no edition or modern decipherment of the letter; Gondi papers at Penn (Kislak) and the Morgan Library were seen only as search hits.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT chose the letter from its own sweep of the Estense catalogue and set the rules (signs copied before decoding, blind second pass, key frozen before the held-out test, independent check). AI language-model agents transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Lodovico Media Library IIIF images",
+   "scripts/decode.py, check_marks.py, count_words.py (standard library)",
+   "scripts/fetch.py, strips.py, zoom.py, pass2_blind.py (need the images and Pillow; zoom.py numpy; pass2_blind.py a local model helper not included)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "IIIF manifest of cc. 1-2 read; overviews and full-size regions of the cipher on c. 1r fetched one request at a time, 1 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "This repository (catalogue, leads, targets, research notes, open PRs) searched for Gondi, Galilei and 1649; one web search for an edition or decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Pass 1: signs of the 14 cipher lines copied by eye on full-size crops, before any decoding.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Pass 2: a separate AI language-model agent copied the signs from cipher-only bands, with no key, no clear text and no decipherment. 39 of 558 signs differed; each of the 25 disputed places settled on full-size crops (pass 2 right at 9).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "solver",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Signs of L00-L06 paired with the interlinear decipherment over them; sign values and code groups taken from the pairs and frozen (key_frozen.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Held-out L07-L13 (148 sign units) decoded with the frozen rows only: agrees with the reading on 139 (93.9%); the other 9 are values first seen after the freeze; no frozen value contradicted. Graded against our own gloss-informed reading, not an independent text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Decrypted and read; every departure from the signs marked and checked by scripts/check_marks.py. Two places where the signs differ from the contemporary decipherment (pesar, malis.) kept as the signs give them.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent blind check (VERIFY.md): 280 signs of L04, L07-L09, L11-L13, 2 differences (0.7%), 0 solver errors after zoom, L09 start unresolved; decode and mark check reproduced byte for byte; readings graded A, B, B. Verdict fix.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "The check's fixes applied: script scrubbed, counts made consistent and restated per sign-bearing word, one mistranslation corrected, loosely read clear text marked rough, the limit of the held-out test stated. One disagreement logged (99 against its 98 of 101 words).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was taken from the contemporary decipherment written between the cipher lines of L00-L06, frozen, and tested on L07-L13. The decipherment covers the whole cipher, so this is a transcription job: the content was never secret. What is new is the key and the check of the cipher against the decipherment. The key is partial only in that the pair 5 8 is unread and code 273 rests on context.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.98,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/count_words.py: 99 of 101 sign-bearing cipher words read from the signs under the cipher's conventions (double letters written once count as read; che and et are value repairs from unbarred signs; the restored a on L07 has no sign and is not counted). Not read: the pair 5 8; context only: code 273. The independent check counts 98 of 101 (0.97); we could not reproduce that. Without the value repairs 97/101; also without the doubtful-sign words and pesar 94/101. The clear text of the letter is outside this figure.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key recovered from the interlinear decipherment; the cipher of c. 1r read",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "the cipher of c. 1r, from Estense images; one blind second pass by an AI agent",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on 280 signs of seven lines; no human palaeographer",
+    "date": "2026-11-03"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "c1r",
+    "label": "11 May 1649, c. 1r (cipher lines)",
+    "transcription": "transcription_c1r.txt",
+    "decryption": "decryption_c1r.txt",
+    "reading": "reading_c1r.md",
+    "translation": "translation_c1r.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 0.98,
+    "summary": "Gondi tells Galilei to find out whether the Viceroy (S.E.) thinks nothing more is needed or simply does not want Galilei there. The Grand Duke has not yet decided to recall him and waits for categorical answers from Vincenzio de' Medici on a chapter of a paper of the Viceroy sent the week before; his reply to the Viceroy's letter will follow. In Milan the Viceroy's notions were very badly received, and the Grand Duke had rightly taken offence.",
+    "note": "Words 102 (86 verbatim, 9 double letters written once, 2 on a doubtful sign, 2 value repairs, 1 restored, 2 context or unread). The line-by-line marked form is reading_marked_c1r.txt; scripts/check_marks.py checks it against the signs.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "Read as sentences 3 Nov 2026; the cipher text makes sense throughout. reading_marked_c1r.txt graded A: coherent and fully mark-checked; weak places pesar (a forced literal reading of p-e-n/s-a-l/r; the decipherer has 'pensiero di'), che and et from unbarred signs, 5 8 unread, 273 Vicere from context only. reading_c1r.md graded B: cipher parts good, but two clear phrases were read loosely and not marked ('Se gia havessi detto gia a V.S.', 'portarla a S.A.', which the reviewer reads 'portar all'A.S.'). translation_c1r.md graded B: sense right overall, but 'da far la prima di aver veduto' was mistranslated 'make the first one before' (should be 'do it before having seen'); 'weighing' for pesar is a stretch, as its note admits. The mistranslation and the loose clear text were fixed afterwards; the files were not re-graded."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "Pair 5 8 at the start of L09",
+    "blocker": "too-short",
+    "detail": "One occurrence before 'aver veduto'; the decipherer writes 'havere'. The independent check reads 5 0? B. Unread either way."
+   },
+   {
+    "item": "Code 273, L13",
+    "blocker": "too-short",
+    "detail": "Read as Vicere from its place under the gloss 'Vic.Re' only (223 is Vicere on L06). A second letter of this correspondence would settle it."
+   },
+   {
+    "item": "Doubtful signs in replica (L07) and ragione (L13)",
+    "blocker": "illegible",
+    "detail": "Settled by sense and marked; the check sees a clean 2 in ragione."
+   },
+   {
+    "item": "che (L01) and et (L12)",
+    "blocker": "illegible",
+    "detail": "Read from a 5 and a 4 that show no bar; the bar may be shared or faint."
+   },
+   {
+    "item": "Blind reading of L00-L03, L05, L06, L10",
+    "blocker": "not-attempted",
+    "detail": "The independent check copied seven lines; the others have only our own blind pass 2."
+   },
+   {
+    "item": "Clear text of the letter, cc. 1r-2v",
+    "blocker": "not-attempted",
+    "detail": "Read only around the cipher, roughly; two phrases are marked rough."
+   },
+   {
+    "item": "Identity of the Commendator Galilei and of the Viceroy",
+    "blocker": "not-attempted",
+    "detail": "Not named in the document; one web search found nothing."
+   }
+  ]
+ }
+}
