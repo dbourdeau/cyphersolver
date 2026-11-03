@@ -175,6 +175,9 @@ def mark(t): return tex(t['target']) + ('$^\\dagger$' if t.get('external') else 
 def pct(a, b): return f'{100 * a / b:.0f}' if b else '0'
 
 
+# The paper reports the project's own work. Set True to add the contributed targets (provenance 'contributed') as a
+# lower block in each group table, a section, a table and an appendix list; the paper's text would need them back too.
+INCLUDE_CONTRIBUTED = False
 CONTRIBUTED = []          # set in main(): the contributed targets, shown under the project targets in each group table
 
 
@@ -192,19 +195,22 @@ def group_table(ps, keyf, label, caption, tag, order=None):
     keys = [k for k in (order or sorted(seen, key=lambda k: -(sum(rp.get(k, {}).values()) + sum(rc.get(k, {}).values())))) if k in seen]
     out = [r'\begin{table}[t]', r'\centering\small', r'\resizebox{\columnwidth}{!}{%', r'\begin{tabular}{@{}lrrrrr@{}}', r'\toprule',
            label + r' & $n$ & recovered & applied & existed & not solved \\']
-    for title, rows in (('project targets', rp), ('contributed targets', rc)):
-        out += [r'\midrule', r'\multicolumn{6}{@{}l}{\emph{' + title + r'}} \\']
+    two = bool(CONTRIBUTED)
+    for title, rows in ((('project targets', rp), ('contributed targets', rc)) if two else (('', rp),)):
+        out.append(r'\midrule')
+        if two: out.append(r'\multicolumn{6}{@{}l}{\emph{' + title + r'}} \\')
         tot = collections.Counter()
         for k in keys:
             r = rows.get(k, collections.Counter()); tot.update(r)
             if not sum(r.values()): continue
-            out.append(r'\quad ' + (tex(k) if '$' not in str(k) else k) + f' & {sum(r.values())} & ' + ' & '.join(str(r[g]) for g in GROUPS) + r' \\')
-        out.append(r'\quad\emph{all} & ' + str(sum(tot.values())) + ' & ' + ' & '.join(str(tot[g]) for g in GROUPS) + r' \\')
+            out.append((r'\quad ' if two else '') + (tex(k) if '$' not in str(k) else k) + f' & {sum(r.values())} & ' + ' & '.join(str(r[g]) for g in GROUPS) + r' \\')
+        out.append(r'\midrule' if not two else '')
+        out.append((r'\quad\emph{all} & ' if two else r'all & ') + str(sum(tot.values())) + ' & ' + ' & '.join(str(tot[g]) for g in GROUPS) + r' \\')
     cols = ('Columns: key recovered (from ciphertext only, adjacent or external plaintext); key applied (a known '
             'key, or an external key matched to the document); a decipherment already existed; not solved. Targets '
             'classed not applicable are left out.}') if tag == 'attack' else 'Columns as in Table~\\ref{tab:attack}.}'
     out += [r'\bottomrule', r'\end{tabular}}',
-            r'\caption{\label{tab:' + tag + '} ' + caption + r" Upper block: the project's targets; lower block: the contributed targets of Section~\ref{sec:contrib}. " + cols,
+            r'\caption{\label{tab:' + tag + '} ' + caption + (r" Upper block: the project's targets; lower block: the contributed targets of Section~\ref{sec:contrib}. " if two else ' ') + cols,
             r'\end{table}', '']
     return '\n'.join(out)
 
@@ -223,7 +229,7 @@ def main():
     # reported in their own section, table and appendix. Mixed targets (the model and an outside solver) stay in the
     # model figures and carry a dagger.
     cs = [t for t in everyone if t['prov'] == 'contributed']
-    CONTRIBUTED.extend(cs)
+    if INCLUDE_CONTRIBUTED: CONTRIBUTED.extend(cs)
     ps = [t for t in everyone if t['prov'] != 'contributed']
     M = {}
     def m(name, v): M[name] = v
@@ -527,7 +533,7 @@ def main():
     rows += ['\\bottomrule', '\\end{tabular}}',
              f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone. $^\\dagger$~solved in part by an outside contributor.}}', '\\end{table*}', '']
     T.append('\n'.join(rows))
-    T.append(CONTRIB_TABLE)
+    if INCLUDE_CONTRIBUTED: T.append(CONTRIB_TABLE)
     (OUT / 'tables.tex').write_text('\n'.join(T), encoding='utf-8')
 
     # ---- appendix
@@ -541,12 +547,12 @@ def main():
         A.append(f'{mark(t)} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
                  f'{ABBR[t["method"]]} & {t["ext"]} & {t["tokens"] if t["tokens"] else "--"} \\\\')
     A += ['\\end{longtable}}', '']
-    A.append(CONTRIB_APPENDIX)
+    if INCLUDE_CONTRIBUTED: A.append(CONTRIB_APPENDIX)
     (OUT / 'appendix.tex').write_text('\n'.join(A), encoding='utf-8')
 
     # ---- data release, same corpus
     rows_ = []
-    for t in everyone:
+    for t in (everyone if INCLUDE_CONTRIBUTED else ps):
         prof = t['prof']
         base = {'target': t['target'], 'title': prof['title']}
         for sect in ('system', 'conditions', 'outcome'): ex.flat(prof[sect], sect, base)
