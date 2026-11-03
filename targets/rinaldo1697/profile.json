@@ -1,0 +1,249 @@
+{
+ "schema_version": 1,
+ "target": "rinaldo1697",
+ "title": "Rinaldo d'Este to \"Marchese Taddeo\", 6 Jun 1697 (not in the catalogue): letter cipher read from the interlinear decipherment, many code groups open",
+ "documents": [
+  {
+   "id": "c73",
+   "read": "read in part",
+   "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Lettera R, Rinaldo, duca di Modena, cc. 73r-73v (cc. 73-74)",
+   "date": "6 June 1697",
+   "year": 1697,
+   "country": "Italy",
+   "route": "Rinaldo d'Este, duke of Modena -> \"Marchese Taddeo\" (recipient uncertain)",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary decipherment written between the lines over most of the cipher on 73r and 73v; faint or missing in places. A transcription job, not a break."
+   },
+   "length": {
+    "tokens": 216,
+    "distinct": 44,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_c73.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF images (edl-jarvis.cultura.gov.it), full-size regions",
+    "image_quality": "good",
+    "notes": "Two blind passes per page by vision-model runs on bands with the gloss masked, adjudicated on the band images by an AI agent. Independent blind read of 214 groups (73r L02-L11, all of 73v): 3 differences (1.4%); after full-size crops 1 certain and 1 probable error of ours (both in ministro, corrected) and 1 open case (V06, now marked)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Letters as two-digit numbers in a reversed Italian alphabet (a 24 ... z 4); code groups of three digits (107-196) and a few two-digit numbers outside the alphabet for words and word parts. Double letters written once. Groups often separated by dots.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 44,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 22,
+   "kinds": [
+    "common words",
+    "word parts",
+    "titles",
+    "names"
+   ],
+   "unread_groups": 10
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "partial",
+  "doubled_letters": "written once",
+  "notes": "Alphabet reversed: a 24, c 22, d 21, e 20, f 19, g 18, h 17, i 16, l 15, m 14, n 13, o 12, p 11, r 9, s 8, t 7, u 6, z 4. Codes read from the gloss: 186 per, 160 spedizione, 187 che, 131 S.M.C., 189 le, 110 ordin-, 190 del, 188 la, 19P ma (third digit a crossed rho, not identified). Proposed only: 130, 94, 139, 116, 25, 183, 107. Open: 196, 193, 191, 175, 91, 57, 55 and the V06 group 52?. Entries = distinct code groups seen (22); unread_groups = the open ones (10)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary interlinear decipherment on the leaves themselves. No edition or modern decipherment found: this repository's catalogue, leads, targets and open PRs checked for Rinaldo, Rangoni, Taddeo; two web searches on 3 Nov 2026.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "WAINUT found the letter in a sweep of the Estense digital collections and set the rules (blind sign passes with the gloss masked, key frozen before the held-out page, independent check). AI language-model agents transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Estense IIIF images",
+   "scripts/fetch.py, bands.py (need Pillow and the images)",
+   "scripts/check_marks.py (standard library)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), vision-capable for the transcription"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "Canvases of cc. 73-74 fetched from the Estense IIIF service, one request at a time; cipher regions of 73r and 73v at full size.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Two blind vision-model passes per page on bands with the gloss masked, no key; disagreements settled on the band images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "what": "Letter key read from the interlinear decipherment over the 73r pairs (pericoloso, longo, sue funzione, suo stato), frozen before 73v was decoded.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Held-out 73v: frozen key against a key-free model reading of the 73v gloss, 33 of 43 gloss letters agree (shuffled tables mean 2.3, best 15); 83 of 88 letter groups covered; bigram score secondary.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Decrypted and read with code values from the gloss; holes and proposals marked; check_marks.py passes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent blind check (VERIFY.md): 214 groups, 3 differences; found the ministro misread (a false key value 10 = i), a false method claim, a mistranslation on V12-V13 and unused gloss values.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Corrections applied on full-size crops: ministro 14 16 13 16? 8; V06 marked as possible code 52?; gloss values 187, 131, 189, 110, 190, 188, 19P checked; word counter corrected.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Catalogue, leads, targets and open PRs of this repository; two web searches. No edition or decipherment found.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The letter key and the code values come from the contemporary interlinear decipherment on the same leaves. The key was frozen on 73r and tested on 73v. A transcription job, not a break.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.662,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py: 45 of 68 cipher words read as sense (28 verbatim, 5 with a marked repair, 12 with a code value read from the gloss over that place); 12 hold a proposed code value and 11 an open code. Clear text not counted.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "letter key and code values read from the interlinear decipherment; the cipher of 6 Jun 1697 read in part",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "the cipher of cc. 73r-73v, from Estense images",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on 214 groups (73r L02-L11, all of 73v); no human palaeographer",
+    "date": "2026-11-03"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "c73",
+    "label": "6 Jun 1697, cc. 73r-73v",
+    "transcription": "transcription_c73.txt",
+    "decryption": "decryption_c73.txt",
+    "reading": "reading_marked_c73.txt",
+    "translation": "reading_c73.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.662,
+    "summary": "Rinaldo writes of an illness that holds up an expedition and hopes it is neither dangerous nor long. He asks that from there the Catholic plenipotentiaries at the peace congress be ordered to assist the minister. Sweden is named by proposal only. Much of 73r is still holes.",
+    "note": "Words 68: 45 read as sense, 12 with a proposed code value, 11 with an open code. reading_c73.md gives the passages in context with an English translation.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "Read line by line 3 Nov 2026, before the corrections in NOTES.md. Follows the groups and marks the holes. Weak places it did not name then: 'cot.' (cotesta?), 'sime' (not a word), 'listu[183]' (the gloss reads more like 'sistu-azione'), ministro resting on the misread 10, 'a p [189] ni pote-' split wrongly (the gloss gives p[le]nipotenz.), and V06 treated as text. The same reviewer graded the continuous reading and translation (reading_c73.md) C: 73r mostly holes as continuous sense, 'Catholic powers' for 'Catholic plenipotentiaries', 'compendo' translated without marking the supplied letter, 'institu-' a guess against the gloss, 'of Sp.' treating a possible code as text. These points are corrected or marked in the current files; neither file has been re-graded since."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "Open codes 196, 193, 191, 175, 91, 57, 55 and the second 130",
+    "blocker": "open-codes",
+    "detail": "Gloss faint, cut off or not read over them. Other Rinaldo cipher letters of 1697 in the same fonds would help."
+   },
+   {
+    "item": "V06 line end, 52? or clear 'Sp.'",
+    "blocker": "illegible",
+    "detail": "The signs fit this hand's 5 and rho-2; a gloss word (Caggio?) stands beside them."
+   },
+   {
+    "item": "19P third digit",
+    "blocker": "illegible",
+    "detail": "A crossed rho shape that matches no digit of this hand."
+   },
+   {
+    "item": "Proposed values 130, 94, 139, 116, 25, 183, 107",
+    "blocker": "not-attempted",
+    "detail": "Each rests on one unchecked gloss reading or on context."
+   },
+   {
+    "item": "listu[183] on V07",
+    "blocker": "illegible",
+    "detail": "The groups give l i s t u; the gloss over them reads more like 'sistu-'. Not settled."
+   },
+   {
+    "item": "Clear text and cc. 74r-74v",
+    "blocker": "not-attempted",
+    "detail": "Clear text read only around the cipher."
+   },
+   {
+    "item": "Recipient",
+    "blocker": "not-attempted",
+    "detail": "'Marchese Taddeo'; Taddeo Rangoni is a suggestion, not checked."
+   },
+   {
+    "item": "Prior art",
+    "blocker": "not-attempted",
+    "detail": "Two web searches only; no Modena literature opened."
+   }
+  ]
+ }
+}
