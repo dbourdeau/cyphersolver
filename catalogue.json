@@ -44874,6 +44874,62 @@
     "duplicates": "known.py on 'SP 36/73' and 'Jacobite cipher': the leads.json row for SP 36/73/3 (O'Brien, excluded as deciphered) is a different item; no entry for SP 36/73/2.",
     "verdict": "open"
    }
+  },
+  {
+   "id": 1855,
+   "counted": true,
+   "year": 1600,
+   "date": "31 Oct 1600",
+   "title": "François Savary de Brèves (Constantinople) → Sillery: original almost entirely in cipher",
+   "correspondents": "François Savary, comte de Brèves → Nicolas Brûlart de Sillery",
+   "place": "Péra (Constantinople)",
+   "language": "French",
+   "region": "France",
+   "period": "1598-1610",
+   "shelfmark": "Institut de France, Bibliothèque, Collection Godefroy, Ms Godefroy 263, f. 30",
+   "folio_note": "1 letter, \"presque entièrement chiffré\"",
+   "cls": "C",
+   "status": "Calames: original almost entirely ciphered.",
+   "why": "Brèves was ambassador at the Porte; the repo holds his 1603 and 1610 ciphers (breves1603, breves1610), so a key may exist.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the Calames description during the Nov 2026 sweep (research/sweep_2026-11_calames_rest/); not viewed",
+   "verify": "Compare with the Brèves nomenclators already worked in targets/; request images of f. 30.",
+   "links": [
+    {
+     "label": "Calames notice",
+     "href": "https://calames.abes.fr/pub/ms/IF1B10861"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Calames rest sweep (Godefroy supplement)",
+   "prior_art": "open as far as checked (2 Nov 2026: known.py on Revest, Chamoux, Godefroy 262/263/266; Calames notice only; Tomokiyo, Lasry and edition not searched)",
+   "needs_archive_scan": "yes",
+   "access_note": "Calames record only; no image link on the notice",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-02",
+    "by": "claude fleet vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Calames notice https://calames.abes.fr/pub/ms/IF1B10861 (Institut de France, Ms Godefroy 263 f.30), fetched 2 Nov 2026; it carries no digitisation link.",
+     "extent": "One letter, f.30, Savary de Breves to Sillery, 31 Oct 1600, subject 'Pera'; the notice gives no count of groups.",
+     "cipher": "Calames description: 'Original, presque entierement chiffre'. The notice mentions no decipherment, transcription or interlinear reading. No leaf seen (not online), so system and any written-in decipherment are unconfirmed."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: no Breves/Savary/Sillery/Godefroy 263 record in the local DECODE dump (research/catalogue_harvest/decode/*.json title list) and none in decode_updates/queue.json.",
+     "tomokiyo": "Tomokiyo's Savary de Breves cipher page covers 1602-1603 (rebuilt from fr. 16144, original key found at BnF fr. 3462 f.103); a cryptiana WebSearch found nothing on a 1600 Breves-Sillery letter or on Godefroy 263. Local copies (clair357/henryiii.htm, louis1615/louisxiii.htm) only say Breves' later ciphers differ from the Henri III ones.",
+     "lasry": "No Lasry or HistoCrypt item on the Institut de France Godefroy collection found in the WebSearches run; the local GL.htm pages have no Breves/Sillery/Godefroy 263 entry.",
+     "edition": "No edition found. WebSearch 'Savary de Breves Sillery 31 octobre 1600 Godefroy 263' returned no edition of this letter; the Calames notice gives no print reference.",
+     "literature": "Only general Breves literature surfaced (Wikipedia, Panaite on Ms Turc 130, ARCE record of the Ambassador's Notebook); nothing on cipher or decipherment of this letter. Not exhaustively searched."
+    },
+    "key_check": "The Breves key held here (targets/breves1603/key.md, BnF fr. 3462 f.103) is the 1602-1603 cipher and the 1604 'chiffre reforme pour Levant' is different; a 1600 letter predates both, so neither can be applied without a scan, and no 1600 Breves key is held in the repo or on DECODE.",
+    "duplicates": "known.py 'Godefroy 263', 'Breves', 'Sillery': Godefroy 263 f.21 (catalogue, 'avec passage chiffre') and f.24 (calames sweep candidate) are different letters; breves1603 (fr. 3541, 1603) and breves1610 (fr. 3789) are other letters and archives. No entry for f.30 elsewhere.",
+    "verdict": "open"
+   }
   }
  ]
 }
