@@ -226,7 +226,13 @@
     "state": "read in part",
     "read_share": 0.933,
     "summary": "Pressing Bolívar for funds, López Méndez says in cipher that he has been jailed five times and released on bail; no other source for this was found. Mac Gregor, he says, has done untold harm to the cause; he joined an expedition of his, for [?Maracaibo], and left it. Mac Gregor is now trying to go to Santafé.",
-    "note": "Only the bold words are cipher; the clear text is there to give sentences. Editorial repairs are marked {E1}-{E4} in reading.md."
+    "note": "Only the bold words are cipher; the clear text is there to give sentences. Editorial repairs are marked {E1}-{E4} in reading.md.",
+    "reading_review": {
+     "grade": "A",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "Read as sentences 3 Nov 2026. I applied key.tsv to every sign and got the decryption as given: 'he estado preso cinco veces y he salido con fianza', 'mac gregor', 'para mar[?] caibo' and 'santa fe'. Set into the clear text around them, these make sound Spanish sentences, and the English follows them closely. There is one hole. In 'Maracaibo' the fourth sign is t? and not l, the sign used for a everywhere else, so that place name is a context guess and the reading flags it as one. Two weaker points: the 20-symbol table was built from the assumed plaintext and has not been checked against any other letter from López Méndez, though repeat patterns such as Gregor, cinco and veces support it. Also, the clear-text word is 'podria' in reading.md but 'podrá' in the transcription comments, which does not affect the cipher words."
+    }
    }
   ],
   "key_file": "key.tsv",
