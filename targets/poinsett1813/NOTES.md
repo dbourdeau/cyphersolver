@@ -118,3 +118,10 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
    third copy of the 14 June 1814 letter, or a copy of the 1813 one, with its own decode (it might fill group 39).
 
 Prior art (27 Oct 2026): Manning 1925 has no decode; web search found none; not in the repo before this folder.
+
+## Contribution (Brice Dudout, 3 Nov 2026)
+
+Poinsett's despatch of 29 June 1811 (HSP, Poinsett Papers vol. 1, folder 10) has 19 groups in this code with the plain
+text written over them: four values of `key_1814.tsv` are confirmed and 13 are new (`dudout/key_1811_additions.tsv`).
+With them, 170 of the 437 groups of the 1813 letter have a value (was 161); no sentence reads yet. The despatches of
+20 March and 11 April 1811 are in a second code, with a "decyphered" sheet for 11 April. Details in `dudout/README.md`.
