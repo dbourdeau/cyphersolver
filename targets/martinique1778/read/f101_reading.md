@@ -1,0 +1,1 @@
+[J']ai l'honneur de vous envoyer l'état de situation des troupes de la Martinique au 1er de ce mois et celui de la garnison de la Dominique. Les travaux pour la sûreté de cette dernière colonie approchent de leur fin, et elle est dans ce moment en état de défense.

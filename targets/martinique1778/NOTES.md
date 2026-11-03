@@ -1,6 +1,8 @@
 # Bouillé to the minister, Martinique, 17 September 1778 (ANOM C8 A 77 f. 88, no. 238) - catalogue 1202, with the 1203 letters surveyed
 
-Status: in progress (read in part: key for Bouillé's code recovered from interlinear decipherments of 1779 letters; f. 88 is a monthly troop return, 96.7% (175/181 tokens) after the f. 144 pairing of 3 Nov 2026 (earlier 91.7% of tokens valued after the 3 Nov 2026 merge of five interlinear letters, 85.6% inside dictionary words by a strict proxy; 14 groups still open; 3 Nov 2026)
+Status: read in part (written up 3 Nov 2026 as martinique1778.html: key of 507 groups from the 1779 glosses; C8 A 79 f. 70, f. 19 and C8 A 81 f. 114-116 read at 95.8%, 93.6%, 95.9% of groups; f. 88 and f. 101 were deciphered first by Brice Dudout, bouille1778; the sense proxy of f. 88 is 92.8%). Remaining gaps and blockers below.
+
+Prior art found at write-up time (3 Nov 2026): Brice Dudout's page bouille1778 (28 Oct 2026) read f. 88 and f. 101 with a 490-value key from the same glosses. His page was not used for this reading; the two keys agree where they overlap (667 im, 568 vuide, 138 Dominica).
 
 Catalogue 1202 (this letter; f. 101 of 5 Dec 1778 surveyed, not transcribed) and 1203 (C8 A 78-81; surveyed, three interlinear letters partly paired).
 Written in the checkout cyph-merge, not committed.
