@@ -166,3 +166,7 @@ F.-D. Liechtenhan, "La Russie d'Élisabeth vue par des diplomates prussiens (1)"
 This corrects the shorter citation "Rep. XI Russland 91" used above: request the series as Rep. 11, Nr. 171-175 Moskau (Russland).
 
 Context, not evidence for this letter: Mardefeld's own memorandum says Goldbach deciphered foreign ministers' despatches only when they were carelessly enciphered, and the article quotes a Russian postal report on his mail of 1745 (n. 105). So his post was watched. It does not show that this despatch was copied.
+
+### Archive request, 3 Nov 2026
+
+Jozef Krajčovič sent the enquiry to the GStA PK on 3 Nov 2026. It asks about Mardefeld's report of 5 Oct 1744 (Rep. 96 Nr. 55 D/C; Rep. 11 Nr. 171-175 Moskau, Konv. 46), the form it survives in, the rescript of 15 Sept 1744, any cipher key, and a quote for digital copies. No reply yet. The archive says it does not usually confirm receipt.
