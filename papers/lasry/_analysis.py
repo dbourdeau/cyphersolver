@@ -175,26 +175,37 @@ def mark(t): return tex(t['target']) + ('$^\\dagger$' if t.get('external') else 
 def pct(a, b): return f'{100 * a / b:.0f}' if b else '0'
 
 
+CONTRIBUTED = []          # set in main(): the contributed targets, shown under the project targets in each group table
+
+
 def group_table(ps, keyf, label, caption, tag, order=None):
-    """Rows = keyf values; columns = the four method groups (not applicable left out)."""
-    rows = collections.OrderedDict()
-    for t in ps:
-        if t['method'] == NA: continue
-        rows.setdefault(keyf(t), collections.Counter())[GROUP[t['method']]] += 1
-    keys = [k for k in (order or sorted(rows, key=lambda k: -sum(rows[k].values()))) if k in rows]
-    out = ['\\begin{table}[t]', '\\centering\\small', '\\resizebox{\\columnwidth}{!}{%', '\\begin{tabular}{@{}lrrrrr@{}}', '\\toprule',
-           f'{label} & $n$ & recovered & applied & existed & not solved \\\\', '\\midrule']
-    tot = collections.Counter()
-    for k in keys:
-        r = rows[k]; tot.update(r)
-        out.append(f'{tex(k) if "$" not in str(k) else k} & {sum(r.values())} & ' + ' & '.join(str(r[g]) for g in GROUPS) + ' \\\\')
-    out += ['\\midrule', f'all & {sum(tot.values())} & ' + ' & '.join(str(tot[g]) for g in GROUPS) + ' \\\\',
-            '\\bottomrule', '\\end{tabular}}',
-            f'\\caption{{\\label{{tab:{tag}}} {caption} ' +
-            ('Columns: key recovered here (from ciphertext only, adjacent or external plaintext); key applied (a known '
-             'key, or an external key matched to the document); a decipherment already existed; not solved. Targets '
-             'classed not applicable are left out.}' if tag == 'attack' else 'Columns as in Table~\\ref{tab:attack}.}'),
-            '\\end{table}', '']
+    """Rows = keyf values; columns = the four method groups (not applicable left out). Upper block: the project's
+    targets; lower block: the contributed targets (same rows, same columns)."""
+    def tally(ts):
+        rows = collections.OrderedDict()
+        for t in ts:
+            if t['method'] == NA: continue
+            rows.setdefault(keyf(t), collections.Counter())[GROUP[t['method']]] += 1
+        return rows
+    rp, rc = tally(ps), tally(CONTRIBUTED)
+    seen = list(dict.fromkeys(list(rp) + list(rc)))
+    keys = [k for k in (order or sorted(seen, key=lambda k: -(sum(rp.get(k, {}).values()) + sum(rc.get(k, {}).values())))) if k in seen]
+    out = [r'\begin{table}[t]', r'\centering\small', r'\resizebox{\columnwidth}{!}{%', r'\begin{tabular}{@{}lrrrrr@{}}', r'\toprule',
+           label + r' & $n$ & recovered & applied & existed & not solved \\']
+    for title, rows in (('project targets', rp), ('contributed targets', rc)):
+        out += [r'\midrule', r'\multicolumn{6}{@{}l}{\emph{' + title + r'}} \\']
+        tot = collections.Counter()
+        for k in keys:
+            r = rows.get(k, collections.Counter()); tot.update(r)
+            if not sum(r.values()): continue
+            out.append(r'\quad ' + (tex(k) if '$' not in str(k) else k) + f' & {sum(r.values())} & ' + ' & '.join(str(r[g]) for g in GROUPS) + r' \\')
+        out.append(r'\quad\emph{all} & ' + str(sum(tot.values())) + ' & ' + ' & '.join(str(tot[g]) for g in GROUPS) + r' \\')
+    cols = ('Columns: key recovered (from ciphertext only, adjacent or external plaintext); key applied (a known '
+            'key, or an external key matched to the document); a decipherment already existed; not solved. Targets '
+            'classed not applicable are left out.}') if tag == 'attack' else 'Columns as in Table~\\ref{tab:attack}.}'
+    out += [r'\bottomrule', r'\end{tabular}}',
+            r'\caption{\label{tab:' + tag + '} ' + caption + r" Upper block: the project's targets; lower block: the contributed targets of Section~\ref{sec:contrib}. " + cols,
+            r'\end{table}', '']
     return '\n'.join(out)
 
 
@@ -206,19 +217,13 @@ def solvers(t):
     return [c['who'] for c in t['credits'] if c.get('role') in SOLVER_ROLES]
 
 
-def llm_assisted(t):
-    """True when the profile records a language model among the models (the contributor's own tools included)."""
-    ms = t['prof']['conditions'].get('models')
-    txt = ' '.join(ms if isinstance(ms, list) else [str(ms)]).lower()
-    return any(k in txt for k in ('claude', 'gpt', 'codex', 'language model', 'wainut', 'llm', 'opus', 'sonnet', 'fable'))
-
-
 def main():
     everyone, skipped = load()
     # contributed results are the contributors' own (contribute.html: "kept out of the model's figures"); they are
     # reported in their own section, table and appendix. Mixed targets (the model and an outside solver) stay in the
     # model figures and carry a dagger.
     cs = [t for t in everyone if t['prov'] == 'contributed']
+    CONTRIBUTED.extend(cs)
     ps = [t for t in everyone if t['prov'] != 'contributed']
     M = {}
     def m(name, v): M[name] = v
@@ -399,6 +404,16 @@ def main():
     m('Nallworked', len([t for t in everyone if t['method'] != NA]))
     m('Nalltargets', len(everyone))
     cyears = [t['year'] for t in cs if t['year']]
+    ccto = [t for t in cworked if t['attack'] == 'ciphertext-only']
+    m('Nccto', len(ccto)); m('NcctoCT', sum(1 for t in ccto if t['method'] == CT))
+    cclean = [t for t in cworked if t['prior'] == 'no']
+    m('Ncclean', len(cclean)); m('Nccleanobtained', sum(1 for t in cclean if t['method'] != NOT))
+    m('NccleanCT', sum(1 for t in cclean if t['method'] == CT))
+    cko = collections.Counter(t['key_order'] for t in cs if t['method'] == CT)
+    m('NcCTalpha', cko['alphabetical'] + cko['partly alphabetical']); m('NcCTrandom', cko['random'] + cko['keyword-derived'])
+    m('NcCTunknownorder', sum(1 for t in cs if t['method'] == CT) - M['NcCTalpha'] - M['NcCTrandom'])
+    m('NcCTprior', sum(1 for t in cs if t['method'] == CT and t['prior'] != 'no'))
+    m('Ncsteps', sum(len(t['steps']) for t in cs)); m('Ncdocs', sum(t['ndocs'] for t in cs))
     m('NcontribYearMin', min(cyears)); m('NcontribYearMax', max(cyears))
     cl = collections.Counter(l for t in cs for l in t['langs'])
     m('NcontribLanguages', len(cl))
