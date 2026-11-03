@@ -1,0 +1,275 @@
+{
+ "schema_version": 1,
+ "target": "camerarius1621",
+ "title": "Ludwig Camerarius to Count Johann Albrecht of Solms, Bremen, 24 May / 3 June 1622 (not in the catalogue): a code letter transcribed from its contemporary decipherment, 94% of tokens",
+ "documents": [
+  {
+   "id": "n194",
+   "read": "read in part",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10397 (Camerariana 47), n.194, fol. 413r, 413v, 416r",
+   "date": "24 May / 3 June 1622",
+   "year": 1622,
+   "country": "Germany",
+   "route": "Ludwig Camerarius, Bremen -> Count Johann Albrecht II of Solms-Braunfels (Grand Master of the Household of Frederick V)",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Interlinear decipherment in a second, fainter hand over most code groups (55 of 60 glossed or valued from glosses elsewhere). A transcription of an already deciphered letter, not a break."
+   },
+   "length": {
+    "tokens": 844,
+    "unit": "mixed",
+    "measured": true,
+    "file": "n194/transcription_n194.txt",
+    "distinct": "unknown"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ IIIF images of the microfilm (bsb00116446 scans 797, 798, 799; second exposure 800), 1418 px wide",
+    "image_quality": "poor",
+    "notes": "Code digits read twice at two scales by the solver (both passes the solver's own); clear text by eye from strips. Independent blind read of fol. 416r: 3 of 12 code groups differed at first (1 solver error, 1393 -> 1394, now fixed); 4 of 9 glosses (1 solver error, 1682, now marked); about 18% of clear-text words, mostly the checker's own holes, 5-6 places now marked doubtful. Six words lie under a pasted slip."
+   }
+  },
+  {
+   "id": "series",
+   "read": "not read",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10397 (Camerariana 47), n.129-210 except n.194",
+   "date": "February 1621 - late 1622",
+   "year": 1621,
+   "country": "Germany",
+   "route": "Ludwig Camerarius -> Count Johann Albrecht II of Solms-Braunfels",
+   "language": "German",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Every letter checked by eye (about 30 scans) carries interlinear decipherments; single groups are left unglossed here and there. Transcription jobs, not breaks."
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "MDZ IIIF images of the microfilm (bsb00116446 scans 581-906)",
+    "image_quality": "poor",
+    "notes": "Not transcribed. A machine count by an AI language-model agent gave about 4,500 code groups in about 75 pieces; approximate."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic"
+  ],
+  "summary": "Code numbers of 2-4 digits (about 40 to 3200) for words, names and titles, written into German clear text, in rough alphabetical order of the plaintext (a one-part code), with several numbers for frequent values; numbers below about 70 are homophonic letters for spelling words not in the list.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 87,
+   "kinds": [
+    "names",
+    "places",
+    "titles",
+    "common words"
+   ],
+   "unread_groups": 5
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "notes": "87 key entries rebuilt from glossed pairs only (n.63 of Clm 10398, a copy with the meanings written over, and the glosses of the Solms letters). Homophones: Chursachsen 552/553/554; König in Dennemarck 1683/1687; König in Böhmen 1684 and probably 1682; Erzstift 923/934. Letter numbers from n.63: d=60, r=49, o=43, s=50, t=63, e=19, n=42, d=12. Camerarius names himself in code (484)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The interlinear glosses on the letter are a contemporary or early decipherment. No modern edition or decipherment of the Camerarius-Solms letters was found in web searches (3 Nov 2026), but F. H. Schubert, Ludwig Camerarius (1955; 2nd ed. 2013) and the Briefe und Akten zur Geschichte des Dreissigjaehrigen Krieges series were not opened; either may quote these letters. Nothing in the content is claimed as new.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "none",
+  "human_role": "WAINUT set the task (a sweep for code letters with no contemporary decipherment) and the rules; AI language-model agents surveyed the series, transcribed, rebuilt the key from glossed pairs, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "MDZ IIIF images",
+   "scripts in this folder (mark check and rebuild, held-out test, alphabetical-order test, crops)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-02",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-02",
+   "kind": "access",
+   "what": "Clm 10397 scans 540-912 and Clm 10398 scans 287-290 and 469 fetched from the MDZ IIIF service, one request at a time, about 1 s apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "statistics",
+   "what": "Code groups counted per page by an AI language-model agent; gloss presence then checked by eye on about 30 scans. Every letter checked is glossed: no ciphertext-only letter in the series.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "n.194 (three pages): clear text and 60 code groups, digits read twice at two scales; glosses recorded per group.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Code list of 87 entries rebuilt from glossed pairs in n.63 and the Solms letters; n.194 decoded and read in German and English.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Held-out: n.63 values (other volume, other recipient) against the n.194 glosses: 18 occurrences of 11 groups, 14 agree (13 strict), 0 disagree, 4 untestable. Alphabetical order: 72 firm values, 3 out of order, each explained.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent check (VERIFY.md): blind read of fol. 416r, 12 code groups, 9 glosses, about 190 words; rebuild byte-identical. Found 1393 for 1394, a misread gloss over 1682 (K. i. B., not K. in D.), a doubtful 43, a legible gloss over 1344 and five unmarked doubtful words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Fixes checked on crops at 2.6-5x and applied: 1394; 1682 and 43 marked doubtful; 1344 gloss Gr. hofm.; six clear-text words marked. Recount 796 of 844 tokens (94.3%), down from 95.3%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Web searches for an edition of the Camerarius-Solms letters: none found. Schubert's biography and the Briefe und Akten series not opened.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "The letter carries interlinear decipherments in a second hand; the code values come from those glosses and from the glosses of n.63 and other Solms letters. A transcription, not a break.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.943,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py n194: clear-text words 784, 43 not read; code groups 60, 55 read; 796 of 844 tokens. Words marked [?word] count as not read.",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "code list rebuilt from glossed pairs; letter n.194 decoded and read in part",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "letter n.194 of Clm 10397, from MDZ images of the microfilm",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on fol. 416r; no human palaeographer",
+    "date": "2026-11-03"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "n194",
+    "label": "n.194, Bremen, 24 May / 3 June 1622, fol. 413r-416r",
+    "transcription": "n194/transcription_n194.txt",
+    "decryption": "n194/decryption_n194.txt",
+    "reading": "n194/reading_n194.md",
+    "translation": "n194/translation_n194.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.943,
+    "summary": "From Bremen during his mission to the Lower Saxon Circle, Camerarius reports that the Bremen diet refused the archbishop's triple levy, that imperial envoys at Lueneburg will ask the Circle for a contribution to be granted only if the Elector Palatine is restored, that Electoral Saxony quarters troops in Thuringia, that Christian IV is taken up with Osnabrueck and Verden and goes to Norway in June, and that Christian of Brunswick has raised 100,000 thalers from the Eichsfeld.",
+    "note": "796 of 844 tokens (94.3%), below the 95% bar. Open: 1513 and 2472 (no legible gloss), [2]858 (under a pasted slip), 1682 (gloss K. i. B., King of Bohemia; earlier read as Denmark), 43 (von Dohna, doubtful), 43 clear-text words.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "Mostly coherent sense. Weak places: l.3-4 '[?de] [?Morz]'; l.22-23 '[?seiner] [?Bleib] ... [?resignat]' does not parse; l.28 1513 unread; l.36 '[?...] in hoc p[unct]o'; l.72 'violentia zuerhalten', with 1682 disputed (Denmark or Bohemia); l.78-81 under the pasted slip, and 'Oberpfalz mit verlang[en]' unsure; l.83 'Herr Grosshofmeister wie auch von Dohna hinaus' has no verb and 43 is doubtful. Translation also graded B: it filled holes by interpretation ('to keep off violence', '[i.e. Solms himself]', '[go] out', '[?Imperial governor]'); these are now marked as conjectures. Decryption graded B: mechanical output, rebuilt byte-identical by check_marks.py."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "1513, fol. 413r l. 28",
+    "blocker": "illegible",
+    "detail": "Gloss not legible on the microfilm; no other occurrence seen."
+   },
+   {
+    "item": "2472, fol. 413v l. 69",
+    "blocker": "illegible",
+    "detail": "Gloss not legible; alphabetical slot suggests Reichstag; marked doubtful."
+   },
+   {
+    "item": "[2]858, fol. 416r l. 82",
+    "blocker": "illegible",
+    "detail": "Left of the group under a pasted slip; gloss B. Gabor fits 2858."
+   },
+   {
+    "item": "1682, fol. 416r l. 72",
+    "blocker": "illegible",
+    "detail": "Gloss read K. i. B. (King of Bohemia) on re-examination; it is the only source for 1682; marked doubtful."
+   },
+   {
+    "item": "43, fol. 416r l. 83",
+    "blocker": "illegible",
+    "detail": "Gloss v. Dona, but 43 is o in the n.63 letter table and out of alphabetical slot; may be 143."
+   },
+   {
+    "item": "Clear text under the pasted slip, fol. 416r ll. 78-82",
+    "blocker": "illegible",
+    "detail": "Six words; needs the original or a colour scan."
+   },
+   {
+    "item": "Other letters of the series (n.129-210)",
+    "blocker": "not-attempted",
+    "detail": "About 74 glossed letters; transcription jobs with this key."
+   },
+   {
+    "item": "Prior art",
+    "blocker": "not-attempted",
+    "detail": "Schubert, Ludwig Camerarius (1955; 2013) and the Briefe und Akten series not opened."
+   }
+  ]
+ }
+}
