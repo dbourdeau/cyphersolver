@@ -1,0 +1,240 @@
+{
+ "schema_version": 1,
+ "target": "ercole1559",
+ "title": "Ercole II d'Este to Cornelio Bentivoglio, 28 May 1559, cc. 50-51 (catalogue 1566): transcription job on a contemporary interlinear decipherment, read in part; Ariosto c. 1 not solved",
+ "documents": [
+  {
+   "id": "ercole-1559-05-28",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 50-51",
+   "date": "28 May 1559",
+   "year": 1559,
+   "country": "Italy",
+   "route": "Ferrara -> Tuscany (Bentivoglio, lieutenant of the King of France)",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A contemporary brown-ink hand writes the plain text between the cipher lines of c. 50r. Transcribed only as a first reading: gloss_c50r_firstread.txt."
+   },
+   "length": {
+    "tokens": 870,
+    "distinct": 21,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_cc50r_1559-05-28.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico Media Library IIIF images",
+    "image_quality": "good",
+    "notes": "Pass 3 re-copied row by row with the gloss masked, one dot to one sign, by a reader who had read the gloss and the older copy, so sign-first but not blind. 33 places changed from pass 2. Log in sign_changes_c50r.tsv. distinct leaves out the # and ? used for blots and unsettled signs."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "One-to-one substitution of Italian: 20 signs for 20 letters, plus one sign L for et. One dot above each sign. No nulls, no code groups, no word division.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 21,
+  "diacritics": {
+   "used": false,
+   "note": "One dot above each sign, filled or open; no value found. The dots give a count of signs that needs no language."
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "Sign names are the transcriber's, in key_1559.tsv. 2 occurs with a round or square loop and ] as a small closed loop; each is treated as one sign. L for et is the one word sign."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary interlinear decipherment on c. 50r. Web searches on 2-3 Nov 2026 found no edition. Not opened: ASMo Cifrario, the printed history of Montalcino, Bentivoglio's correspondence.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 1566) and the rules; AI language-model agents transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Lodovico Media Library IIIF images",
+   "scripts/check_decryption.py, check_marks.py (standard library)",
+   "scripts/e_key.py, final_1559.py, row_copy.py, row_zoom.py (need the images and work files)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-02",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-02",
+   "kind": "access",
+   "what": "Fetched the leaves by IIIF at full size. The brown-ink hand between the cipher lines is a decipherment, not show-through as it looks at 25%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "what": "Two passes, read after the gloss had been read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Table-free hill-climb on rows 1-9, signs against the gloss: all 20 letters, 388 of 407 gloss letters matched.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Key frozen and applied to rows 10-19 of pass 2: 382 of 398 gloss letters; shuffled tables, best 42.0%. Weak, as the signs had bent toward the gloss. On pass 3: 367 of 398.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent AI check, 147 signs read blind: 8 raw disagreements (5.4%), 7 of them transcription errors (4.8%), all toward the gloss.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Pass 3 with the gloss masked: all seven corrections hold, 33 places changed, 870 signs. Third-pass readings at the end of the letter go against the gloss.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "197 words, 195 as sense, 181 with no restored or changed letter (91.9%). Bar 188.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Ariosto c. 1: this key gives nothing on about 35 signs. Stopped.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Web searches only; the Modena State Archive series were not opened.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key built by aligning rows 1-9 of the signs with the contemporary interlinear decipherment, frozen, tested on rows 10-19. A transcription job, not a break. The text follows the signs, not the gloss.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.919,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py 50: 181 of 197 words carry no restored, changed or doubtful letter; 195 of 197 read as sense. Bar 188. Ariosto c. 1 is not a document of this entry.",
+  "verification": [
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "catalogue 1566: letter of 28 May 1559, key from the interlinear decipherment, text re-copied with the gloss masked",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "all cipher of c. 50r, from Lodovico images",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Heavy signs in rows 07, 10, 13 and 17; blots of rows 01 and 10",
+    "blocker": "illegible",
+    "detail": "The ink hides them. Multispectral images might settle them."
+   },
+   {
+    "item": "[?haura]",
+    "blocker": "illegible",
+    "detail": "Crowded signs."
+   },
+   {
+    "item": "Readings of rows 16-19 that go against the gloss",
+    "blocker": "not-attempted",
+    "detail": "They need a second reader."
+   },
+   {
+    "item": "The gloss",
+    "blocker": "not-attempted",
+    "detail": "First reading only; rows 04, 10, 13 and 14 incomplete; the hand is not identified."
+   },
+   {
+    "item": "c. 50v, end of the clear text",
+    "blocker": "not-attempted",
+    "detail": "Read only for sense."
+   },
+   {
+    "item": "Ariosto c. 1, 15 Jul 1559, about 35 signs",
+    "blocker": "too-short",
+    "detail": "No pairs, unknown system; not this key."
+   },
+   {
+    "item": "Prior art: ASMo Cifrario, Bentivoglio's correspondence",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ercole-1559-05-28",
+    "label": "Ercole II d'Este to Cornelio Bentivoglio, Ferrara, 28 May 1559, cc. 50-51",
+    "transcription": "transcription_cc50r_1559-05-28.txt",
+    "decryption": "decryption_cc50r_1559-05-28.txt",
+    "reading": "reading_cc50-51_1559-05-28.md",
+    "translation": "reading_cc50-51_1559-05-28.md",
+    "contemporary": "gloss_c50r_firstread.txt",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.919,
+    "summary": "The Pope will not receive the ambassadors of those lords. Ercole, weaker than the Pope, must take care, and has heard that the two Kings' capitulation leaves the Sienese unable to give themselves to whom they wish. He asks Bentivoglio for his opinion.",
+    "note": "Words 197: as sense 195, no restored or changed letter 181. A transcription job. English stands in the reading file, sentence by sentence."
+   }
+  ],
+  "key_file": "key_1559.tsv",
+  "validation": {
+   "date": "2026-11-03",
+   "verdict": "not applicable",
+   "notes": "The key is tied to the signs by the interlinear decipherment. Rows 10-19 on pass 3: 367 of 398 gloss letters; shuffled tables, best 42.0% on pass 2. docs/_validate.py was not run."
+  }
+ }
+}

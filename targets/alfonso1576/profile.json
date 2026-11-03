@@ -1,0 +1,224 @@
+{
+ "schema_version": 1,
+ "target": "alfonso1576",
+ "title": "Alfonso II d'Este to the protonotary at Venice, 14 Apr 1576, cc. 76-77 (catalogue 1566): key recovered from the ciphertext, letter read, by a narrow margin",
+ "documents": [
+  {
+   "id": "alfonso-1576-04-14",
+   "read": "read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Alfonso II d'Este, duca di Ferrara, cc. 76-77",
+   "date": "14 Apr 1576",
+   "year": 1576,
+   "country": "Italy",
+   "route": "Ferrara (catalogue) -> Venice (later note on c. 77r)",
+   "places": {
+    "from": "Ferrara",
+    "to": "Venice"
+   },
+   "language": "Italian",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves. The ASMo ambassadors' series, where a minute may stand, was not opened."
+   },
+   "length": {
+    "tokens": 3703,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_cc76-77_1576-04-14.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico Media Library IIIF images",
+    "image_quality": "good",
+    "notes": "Pass 1 blind to language; pass 2 not blind, 14 signs changed on crops; pass 3 read all 339 q-forms by tail, by a reader who knew the text. Blind check on 287 signs before pass 3: 6 raw disagreements (2.1%), transcription wrong at 2 (0.7%). Logs in sign_changes_cc76-77.tsv and q_tails.tsv. distinct leaves out the # used for a blot."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution of Italian in Latin letter forms: 20 signs for the 20 letters, five nulls (x, y, k, & and 3), and the digit 7 for itself. No word division and no code groups. The null x often stands between identical signs.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false,
+   "note": "Some signs of the second hand have a stroke above. These were not recorded, and their function is open."
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true,
+   "count": 5
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "Runs in the table: a-d to z u t s, e-h to a b c d, q-t to e f g h. Two hands: nulls 8.4% in the first, 1.2% in the second. The q-form is two signs: looped tail g = s, straight tail with a short foot q = m."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Web searches on 2-3 Nov 2026 found no edition or decipherment. The docket of c. 77v shows that the letter was read in its own day. Not opened: ASMo, Cancelleria ducale, Cifrario (8 buste) and the ambassadors' series. Search results do not settle this.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 1566) and the rules; AI language-model agents transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Lodovico Media Library IIIF images",
+   "scripts/solve_ct.py, solve_bij.py, heldout.py (numpy)",
+   "scripts/check_decryption.py, check_marks.py (standard library)",
+   "scripts/align_signs.py, tailsheets.py, qgal.py, zoomq.py, tailtest.py, apply_tails.py (need the images and work files)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-02",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-02",
+   "kind": "access",
+   "what": "Fetched the leaves by IIIF. No decipherment on them.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "what": "Pass 1 on straightened half-lines, written down before any value was known. One change, z to 7 at c. 76r l. 2, was made without a log entry and has been logged since.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "Quadgram search on period Italian, 10 restarts, no crib. Eight of ten runs landed on one solution, which read as Italian apart from the nulls.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "c. 76r and the rest broken separately. Not set up in advance: the whole-text key is 21 minutes older than the split, and whoever ran it knew the key. Key from c. 76r on the rest scores -10.17 per position; 200 shuffled tables, best -13.38. Reproduced with a separate model: -10.18; 500 shuffled tables, best -13.56.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-02",
+   "kind": "transcription",
+   "what": "Pass 2, not blind: the reading walked against the signs, 50 disagreements viewed on crops, 14 signs changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent AI check of the first version, sign-first on 287 signs: 6 raw disagreements (2.1%), transcription wrong at 2 (0.7%). A sealed tail test, 37 of 37 plus 17 of 17, refuted the first version's claim that one shape stood for g and q. Its other findings are in VERIFY.md.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Pass 3: q and g split, all 339 read by tail; 338 agree with sense, 1 conflict at c. 77r l. 9. Not language-blind. c. 76r l. 2 corrected. Marks rebuilt and enforced by check_marks.py.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Recount: 740 words, 737 as sense, 706 with no restored or changed letter (95.4%). Bar 703.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Web searches only; the Modena State Archive series were not opened.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Quadgram search on the signs with no crib, tested by breaking c. 76r and the rest separately. That hold-out was not set up in advance.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.954,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/check_marks.py 76: 706 of 740 words carry no restored, changed or doubtful letter; 737 of 740 read as sense. By hand: first 535 of 557 (96.1%), second and postscript 171 of 183 (93.4%). The margin over the bar is three words.",
+  "verification": [
+   "matched control",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "catalogue 1566: key recovered from the ciphertext, letter of 14 Apr 1576 read",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "all cipher of cc. 76-77, from Lodovico images",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Doubtful words [?puntino], a [?ti], [?gagliarde]",
+    "blocker": "too-short",
+    "detail": "Each occurs once or twice."
+   },
+   {
+    "item": "Docket of c. 77v",
+    "blocker": "illegible",
+    "detail": "Partly lost in the fold."
+   },
+   {
+    "item": "Prior art: ASMo Cifrario and ambassadors' series",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "alfonso-1576-04-14",
+    "label": "Alfonso II d'Este to the protonotary, 14 Apr 1576, cc. 76-77",
+    "transcription": "transcription_cc76-77_1576-04-14.txt",
+    "decryption": "decryption_cc76-77_1576-04-14.txt",
+    "reading": "reading_cc76-77_1576-04-14.md",
+    "translation": "reading_cc76-77_1576-04-14.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 0.954,
+    "summary": "The duke tells his agent how to handle an unnamed man who fears stricter proceedings: he was never in Este pay, Ferrara cannot shelter him, and he is to get fifty scudi. A second hand turns to oils and almonds, a Roman complaint and the prisoners of Rovigo.",
+    "note": "Words 740: as sense 737, no restored or changed letter 706. English stands in the reading file, sentence by sentence."
+   }
+  ],
+  "key_file": "key_1576.tsv",
+  "notes": "Open checks, not unread pieces of the cipher, are in NOTES.md: second-hand strokes above signs not recorded, no fresh key-free copy of the whole text, clear end and signature a first reading.",
+  "validation": {
+   "date": "2026-11-03",
+   "verdict": "not applicable",
+   "notes": "The key was tested in the target's own split, which was not set up in advance: -10.17 against best -13.38 of 200 shuffled tables, reproduced at -10.18 against best -13.56 of 500. docs/_validate.py was not run."
+  }
+ }
+}
