@@ -84,9 +84,9 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-10-09",
-  "last_date": "2026-10-09"
+  "last_date": "2026-11-03"
  },
  "solution": [
   {
@@ -130,6 +130,30 @@
    "kind": "hypothesis", "technique": ["repeat/pattern analysis"],
    "what": "Ciphertext-only attack not run: 176 groups from a code of about 2,000 entries, 89% of them distinct, give nothing for a solver to fit. Needs the other five documents or the 1744 key.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "hypothesis", "technique": ["contextual inference"],
+   "what": "From the clear text ('La refutation de l'Imprimé de la Cour de Vienne est trop solide') and PC III / Koser, Preussische Staatsschriften I: the sender is probably not Austrian; Axel von Mardefeld to Frederick II proposed. Inferred; the 5 Oct relation is not quoted in print.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Enhanced Figure 6: mirrored show-through of the verso gives clear-text scraps and a few groups (transcription/fig6_verso_showthrough.txt); low confidence, not counted.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "statistics", "technique": ["repeat/pattern analysis"],
+   "what": "140 of 157 distinct groups occur once. 6 of 12 groups in the 3xxx block stand at a line edge (22 of 176 slots, permutation p about 0.001, noticed post hoc).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "what": "Scanned 71 key tables held in the repository by coverage; applied R596 (values to 3293) with its null rules: 98 of 176 null, near chance (57%), no sentence. DECODE metadata search found R4366 (BL Add MS 32276 f. 37, 1744, 'Prufsia'), not tested: login needed.",
+   "result": "ruled out"
   }
  ],
  "outcome": {
@@ -157,6 +181,11 @@
     "item": "the 1744 key",
     "blocker": "no-key-material",
     "detail": "no DECODE key of 1740-1746 fits; candidates are the HHStA Staatskanzlei Russland/Sachsen keys of 1744, not on DECODE"
+   },
+   {
+    "item": "Prussian-sender hypothesis (Mardefeld to Frederick II) and its key",
+    "blocker": "needs-physical-access",
+    "detail": "Mardefeld's deciphered relation of 5 Oct 1744 should be sought in the GStA PK, Berlin; DECODE R4366 and R4367 need a login to test"
    }
   ],
   "notes": "Closed attempted, open: blocked on images of box 636 and on the 1744 key."

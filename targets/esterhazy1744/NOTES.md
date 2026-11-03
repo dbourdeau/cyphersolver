@@ -110,3 +110,32 @@ file header.
    they are cribs for box 636.
 3. In Vienna (HHStA): the Staatskanzlei Chiffrenschlüssel for Russia and Saxony of 1744, and the key Dorotheum says
    accompanies the Maria Theresa–Esterházy letters of 1744.
+
+## 3 Nov 2026: the sender may be Prussian, which changes where to look for the key
+
+This revises the sender discussion and the key candidates above. It does not read the letter. The method stays *not solved*.
+
+**Hypothesis: Axel von Mardefeld, Prussian envoy at the Russian court, to Frederick II. Inferred, not established.**
+
+- The clear text praises "la refutation de l'Imprimé de la Cour de Vienne" as "trop solide". An Austrian envoy would hardly write that to Maria Theresa, or call his own court "la Cour de Vienne" in this way, so the Rosenberg reading above looks unlikely. The print need not concern the Botta affair either.
+- The dispute fits. Vienna printed its *Beantwortung* of Dohna's declaration on 22 Aug 1744. Berlin answered with the *Widerlegung … Scheingründe* (Berlin, Gäbert, 1744), French title *Refutation du Memoire publié par la Cour de Vienne* (Koser, *Preussische Staatsschriften* I, 477-482; *Politische Correspondenz* III, 265 n. 1).
+- Mardefeld is addressed "à Moscou" in 1744 and his reports are quoted in French ("J'ai reçu les ordres…", PC III, reports of 21 May and others). No. 1621 (29 Oct 1744) acknowledges his relations of 28 Sept and 1 Oct, so a report of 5 Oct fits his rhythm. "Re- & Postscripts" fits a ministerial rescript with a postscript.
+- Open points. The 5 Oct relation is not quoted in PC III. The French *Refutation* went to the legations only on 20 Oct (Koser), so a paper received with a rescript of 15 Sept would be the German text or a manuscript, and that link is unproved. Another anti-Viennese court's envoy is not excluded. Nothing here explains for certain why the sheet is in the Esterházy papers. Vienna did hold intercepted Prussian despatches that autumn (the printed Schmettau papers of 16 Oct 1744), and Rosenberg passed one to Bestuzhev (Berlin to Mardefeld, 15 Dec 1744, quoted by Koser), but this does not show that this letter was intercepted.
+
+**If this holds, the key and the plaintext are Prussian, not Viennese.** The HHStA Russia/Saxony keys are then the wrong place for this letter (the other box-636 letters, including Maria Theresa's, are a separate question).
+
+- *Text:* the received, deciphered relation should be in the Geheimes Staatsarchiv PK, Berlin, Russia series (series not checked; I. HA Rep. 11 Russland or Rep. 96 are the likely ones). A matched copy would allow a key from external plaintext.
+- *Key:* DECODE R4366, BL Add MS 32276 f. 37, dated 1744, "Prufsia", sender "Scholing?", a British Deciphering Branch table. Only 200 px thumbnails were seen; it needs a DECODE login. It may belong to another Prussian correspondent. R4367 (1745, Andrié) is a weaker second. R2824 ("cipher_Prussia_1746") was already rejected as a Prussian lead in `targets/hellen1752/AUDIT_2026-09-20.md`.
+
+**Also new**
+
+- Keys tested: 71 tables in this repository scanned by coverage. R596 (values to 3293) applied with its null rules gives 98 of 176 nulls, close to the 57% expected by chance, and no sentence: ruled out. The envoy table of `targets/r1955/` was not tested.
+- The 3xxx block: 6 of 12 such groups stand first or last on a line, against 22 of 176 slots (permutation p about 0.001). The pattern was noticed after looking, so it is only a pointer. It may mean names, nulls or a habit of the copyist.
+- Verso show-through in the figure: `transcription/fig6_verso_showthrough.txt`. Low confidence, not counted. It includes "… que ce Marquis [?] y est arrivé", so the same document has more clear text and more groups in the same value range.
+- Ciphertext-only: still not run, for the reason given above. 140 of the 157 distinct groups occur once.
+
+Sources: *Politische Correspondenz Friedrich's des Grossen* III and IV (Internet Archive `politischecorres03freduoft`, `politischecorres04fred`); Koser, *Preussische Staatsschriften* I (`bub_gb_HUguAAAAMAAJ`). OCR text, checked only where quoted; page references should be confirmed on the images.
+
+### Remaining gaps, added 3 Nov 2026
+- the sender hypothesis and its plaintext - blocker: needs-physical-access; request Mardefeld's relation of 5 Oct 1744 from the GStA PK, Berlin
+- key test against R4366/R4367 - blocker: needs-physical-access; DECODE login needed for full images and transcriptions
