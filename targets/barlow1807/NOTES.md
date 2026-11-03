@@ -116,7 +116,7 @@ Earlier notes called 4990 a sentence-end marker. That was wrong.
   stopped after five lines and was run again; the cut-off run is kept as `trans_raw/p17_A_truncated.txt`.
 - **Settling.** Every A/B difference was settled by eye on 1.5x crops, sign first: 269 on images 1-13 and 189 on
   images 14-26. Each is logged in `disagreements.tsv` (page, line, position, pass A, pass B, final, reason).
-- **Patches.** `patches.tsv` (79 entries) holds every change to pass A: B readings taken, catchwords, interlined and
+- **Patches.** `patches.tsv` (80 entries) holds every change to pass A: B readings taken, catchwords, interlined and
   struck figures, run splits and doubt notes. `scripts/apply_patches.py` asserts that each old text is present.
 - **Run splits.** These are decided on the digit pairs, never on the expected word: image 18 "5,140" -> 51,40; image
   10 "3355,4340" -> 33,55,43,40.
