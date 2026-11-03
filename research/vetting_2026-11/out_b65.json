@@ -1,0 +1,178 @@
+{
+ "1017": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b65",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "LP Henry VIII vol. 17 (archive.org letterspapersfor17greauoft djvu text, read 3 Nov 2026) no. 1051 pp. 590-591 footnote; Haynes State Papers 1740 (IA bim_eighteenth-century_a-collection-of-state-pa_1740) p. 1-3 OCR; HMC Salisbury Pt I (IA calendarofmanusc01grea_1) no. 79; Hatfield MS 231 itself not online",
+   "extent": "first two lines of a one-page letter; the rest is clear English",
+   "cipher": "LP footnote: 'The first two lines are described by the transcriber as being in cipher undeciphered.' The manuscript was not seen; HMC Salisbury Pt I no. 79 (8 Nov 1542) summarises the letter with no mention of cipher, and the Haynes OCR of pp. 2-3 is too garbled to show whether the two lines were printed as signs."
+  },
+  "searches": [
+   {
+    "query": "Norfolk Suffolk Hertford 8 November 1542 letter cipher Hatfield Haynes State Papers Solway Moss",
+    "result": "Only BHO LP Henry VIII Nov 1542 calendar pages (11 Nov letter cites Hatfield MS 231 no. 103); no cipher commentary on the 8 Nov letter."
+   },
+   {
+    "query": "Calendar of the Manuscripts of the Marquis of Salisbury Part I 1542 Hertford Norfolk in cipher Hatfield MS 231",
+    "result": "Library catalogue records only; I opened Part I myself on IA (calendarofmanusc01grea_1): no. 79 (Council of the North to Hertford, 8 Nov) summarises 4,000 men, Rutland, Cumberland and says nothing of cipher or decipherment."
+   },
+   {
+    "query": "Tudor cipher 1542 Henry VIII border letters Hertford Duke of Norfolk cipher undeciphered cryptiana",
+    "result": "Nothing on 1542 border letters; only generic Tudor and Mary Stuart cipher pages; the LP editorial rule 'cipher undeciphered' was found in the LP preface (IA text)."
+   },
+   {
+    "query": "IA full-text grep of LP Henry VIII vol. 17 for 'cipher' (letterspapersfor17greauoft djvu)",
+    "result": "no. 1051 footnote is the only note for this letter: first two lines in cipher undeciphered; other cipher items in the volume are Vienna/French ones."
+   }
+  ],
+  "prior_art": {
+   "decode": "Ran known.py (searches the harvested DECODE dump) for 'Hatfield MS 231' and 'Hertford': hits only this lead and the sweep files, no DECODE record for the letter.",
+   "tomokiyo": "Web searches for Hertford/Norfolk 1542 cipher and Tudor border cipher found nothing in Tomokiyo's cryptiana for this letter.",
+   "lasry": "No Lasry paper, GL.htm item or DECODE record on Henry VIII 1542 border correspondence found in web search or known.py.",
+   "edition": "LP Henry VIII 17 no. 1051 (opened, IA text) states the two lines are cipher 'undeciphered'; HMC Salisbury Pt I no. 79 (opened) summarises with no cipher; Haynes 1740 p. 1-3 (opened, OCR too poor to see the two lines). No printed decipherment.",
+   "literature": "Searches for scholarship on Tudor ciphers of the 1540s found only Mary Stuart and Holbein/Catherine of Aragon work; nothing on this letter."
+  },
+  "key_check": "No key for this Norfolk, Suffolk and Browne border-command cipher is held in the repo, on DECODE (known.py) or in the calendars; with two lines of cipher only, no statistical attack is possible even with the image.",
+  "duplicates": "known.py on 'Hatfield MS 231' and 'Hertford': only this lead and research/ia_pass2_a candidates; no catalogue entry, target or DECODE duplicate.",
+  "verdict": "open"
+ },
+ "1252": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b65",
+  "seen": {
+   "kind": "scan",
+   "where": "Wellcome MS.309 (b19695561) via iiif.wellcomecollection.org: canvas 60 (page 57) and canvas 267 (page 262) viewed at 900 px on 3 Nov 2026; catalogue via api.wellcomecollection.org works/vq9e75rz",
+   "extent": "pp. 1-178 wholly in cipher per catalogue, pp. 179-207 partly; page 57 seen as a full page of 24 lines of sign groups separated by commas, no gloss; page 262 carries Kohn's own signs and '1889'",
+   "cipher": "Page 57 is a full ruled page of about 24 lines of small hand-drawn signs (plus-, theta-, lambda-, pi-like forms), word groups divided by commas, no interlinear plaintext. Page 262 shows four lines of signs in a different, larger hand ending '1889', Kohn's cipher note ('In my end is my beginning ... November 1889' per the catalogue). No decipherment is written on the leaves seen."
+  },
+  "searches": [
+   {
+    "query": "\"Occulta scripta chymica\" Gerlach Girlach Wellcome MS 309 cipher decipherment",
+    "result": "Wellcome catalogue records and alchemywebsite mss716 (lists MS 309 only as 'in cypher'); no report of a decipherment or transcription."
+   },
+   {
+    "query": "Julius Kohn 1889 cipher key alchemical manuscript Wellcome 51 symbols Gottersdorf Naumburg 1572 Severinus Drescher",
+    "result": "Same catalogue text; Kohn keys also noted on other Wellcome MSS (MS.4366, MS.871) but nothing saying anyone applied Kohn's key to MS 309 or published the plaintext."
+   },
+   {
+    "query": "Johannes Girlachius Guerlizensis alchemy manuscript cipher Moorat catalogue Wellcome Western Manuscripts Girlach",
+    "result": "No Moorat entry text, no article; 2024 Tartu thesis 'Sources of Alchemical Cryptography' surfaced (full text unreachable, ECONNRESET) but its abstract speaks only of the genre."
+   },
+   {
+    "query": "known.py Gerlach / Occulta scripta / Wellcome MS 309 (harvested DECODE dump and repo)",
+    "result": "Only this lead and research/uk_libraries; the Ungnad hit is Stephan Gerlach's Tage-Buch, unrelated."
+   }
+  ],
+  "prior_art": {
+   "decode": "Ran known.py (harvested DECODE dump) for 'Gerlach', 'Occulta scripta' and 'Wellcome MS 309': no DECODE record; only this lead, uk_libraries sweep files and an unrelated Ungnad note.",
+   "tomokiyo": "Web searches for Gerlach/Girlach Occulta scripta chymica and Wellcome 51-symbol cipher returned nothing from Tomokiyo's cryptiana.",
+   "lasry": "No Lasry paper, GL.htm item or DECODE record on Wellcome MS 309 found in web search or known.py.",
+   "edition": "No edition or transcription: Wellcome catalogue and alchemywebsite mss716 (opened) list sections 'in cypher, German' with no text; no printed decipherment found.",
+   "literature": "Searched alchemical cipher literature (HistoCrypt Sloane 1902 paper, Tartu 2024 survey, Wellcome Kohn-key notes): none treats MS 309; Kohn's key being bound in does not show a reading was ever published."
+  },
+  "key_check": "Kohn's 1889 reversed Z-A alphabet and a loose key sheet are in the volume (pp. 260-262, per the catalogue; p. 262 seen, sign table not transcribed). Not yet tested. A key does not block the lead; no reading of the text found.",
+  "key_in_volume": "Julius Kohn's manuscript key (cipher written out Z-A, pp. 260-261) inserted in Wellcome MS.309; modern 19th-century key, not tested here.",
+  "duplicates": "known.py on 'Gerlach', 'Occulta scripta' and 'Wellcome MS 309': no catalogue entry, target or DECODE record for this manuscript.",
+  "verdict": "open"
+ },
+ "1253": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b65",
+  "seen": {
+   "kind": "scan",
+   "where": "CUDL MS-LAMBETH-02086 via the IIIF manifest cudl.lib.cam.ac.uk/iiif/MS-LAMBETH-02086 and images.lib.cam.ac.uk, f. 1r viewed at 1000 px on 3 Nov 2026; item notes read from cudl.lib.cam.ac.uk/view/MS-LAMBETH-02086.json",
+   "extent": "f. 1r: five lines of cipher at the top of the page above a clear Bacon anecdote; CUDL notes further cipher entries on ff. 3v, 4v, 9r and an English-in-Greek-letters entry on f. 45r",
+   "cipher": "The top of f. 1r carries five lines of small characters mixing Greek-style consonant forms with the digits 1-6 (e.g. groups like '3 815 92', '35525'), word-spaced, no gloss on the leaf. The CUDL note reads 'two entries in Rawley's cipher (a mixture of Greek characters and Arabic numerals)'; f. 9r entry 'K. of σ3λλ6.'"
+  },
+  "searches": [
+   {
+    "query": "William Rawley miscellany Lambeth MS 2086 cipher Greek characters Arabic numerals deciphered Bacon anecdote",
+    "result": "Only GEMMS/CUDL/Biblissima catalogue records, Gallup biliteral-cipher claims (fringe), nothing deciphering it; CELM cites Spedding and Kiernan for selected apophthegms from this MS."
+   },
+   {
+    "query": "Scriptorium Rawley's miscellany Lambeth MS 2086 Todd Catalogue cipher Bacon anecdotes transcription",
+    "result": "Catalogue records; CUDL describes the two ciphers (Greek letters plus numerals; English in Greek characters on f. 45r) but gives no readings."
+   },
+   {
+    "query": "Robertson Oxford Francis Bacon Apophthegms Rawley miscellany Lambeth 2086 cipher entries deciphered",
+    "result": "Led to Spedding's Works vol. 7 section 'Some additional apophthegms selected from a common-place book of Dr. Rawley's' and Kiernan OFB (CELM); Taylor and Francis chapter by Robertson returned HTTP 403."
+   },
+   {
+    "query": "IA full text of Spedding Works vol. 13 (worksfrancisbac31rawlgoog) pp. 406-410: Rawley's common-place book, Lambeth MS 1034",
+    "result": "Opened: Spedding prints the f. 1r first entry deciphered and gives the key in a footnote: 'consonants being written in Greek characters, and the six vowels represented by the six numerals; 1=a, 2=e, 3=i, 4=o, 5=u, 6=y'; apophthegm 18 footnote 'written in cipher'."
+   }
+  ],
+  "prior_art": {
+   "decode": "Ran known.py (harvested DECODE dump) on 'Rawley' and 'Lambeth Palace Library MS 2086' on 3 Nov 2026: no DECODE record; hits are this lead, the uk_libraries sweep and a catalogue entry for a different Rawley commonplace book (Osborn).",
+   "tomokiyo": "Web searches for Rawley's cipher and MS 2086 found nothing in Tomokiyo's cryptiana.",
+   "lasry": "No Lasry or GL.htm item on Rawley's miscellany found in web search.",
+   "edition": "Spedding, Works of Francis Bacon vol. 13 pp. 406-410 (opened on IA, Lambeth 'MSS No. 1034' = now MS 2086): prints the first cipher entry (f. 1r) in plain English and states the key. Kiernan's OFB edition and Robertson's chapter could not be opened.",
+   "literature": "No Cryptologia or HistoCrypt paper found; only Baconian biliteral-cipher fringe writing; the 1860s Spedding note is the prior decipherment."
+  },
+  "key_check": "Spedding's printed key (consonants as Greek characters, vowels as numerals 1-6 = a, e, i, o, u, y) is on record; not yet tested here against the f. 1r signs; it explains the digit-plus-Greek look seen on the leaf.",
+  "key_held": "Key printed by Spedding (Works vol. 13, p. 407 note): vowels a e i o u y = digits 1-6, consonants = Greek letter forms; consonant table not given there.",
+  "duplicates": "known.py on 'Rawley' and 'Lambeth Palace Library MS 2086': only this lead, uk_libraries files and a catalogue entry for a different Rawley commonplace book (Osborn); not the same manuscript.",
+  "verdict": "partly_read",
+  "closed": "Spedding (Works of Francis Bacon vol. 13, 1872, pp. 406-410, from Lambeth 'MSS No. 1034') printed the f. 1r cipher entry deciphered as an apophthegm about Lord St Alban and stated the key; apophthegm 18 is also marked as in cipher. Other cipher entries (ff. 3v, 4v, 9r, 45r) are not shown to be printed, so the reading is partial."
+ },
+ "1264": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b65",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "Cambridge UL ArchiveSearch record 1737575 (HTTP 403 to curl and WebFetch; text obtained via web-search excerpt of the catalogue scope note); CUDL manifest for Dd.6.4 returned HTTP 500; the volume itself was not seen. Zamick's 1933 St Andrews PhD thesis PDF (research-repository.st-andrews.ac.uk/handle/10023/21267) was opened and read in part.",
+   "extent": "Notebook of Edmund Castell, 1651-1672, written from both ends, pp. 212-364 blank, the rest letter copies",
+   "cipher": "ArchiveSearch scope note: 'The remainder of the book is almost entirely filled with copies of letters, chiefly written in cypher, including Castell's correspondence with the principal Orientalists of the day'. Zamick's thesis shows this 'cypher' is Castell's modified version of Willis's shorthand."
+  },
+  "searches": [
+   {
+    "query": "Edmund Castell notebook copies of letters chiefly written in cypher Cambridge University Library Dd.6.4",
+    "result": "Returned the ArchiveSearch scope note (letters 'chiefly written in cypher', cross-refs Dd.6.63, Dd.11.39, Dd.12.15) and Morris Zamick's 1933 St Andrews thesis transcribing Castell's cipher-writings."
+   },
+   {
+    "query": "Zamick 1933 'Dr. Edmund Castell 1606-1685' thesis Dd 6.4 shorthand Willis transliteration (full PDF opened)",
+    "result": "Thesis (465 pp.) says many documents are in shorthand or cypher, that Castell used a modification of Willis's shorthand, and prints transliterated letters citing 'Cambridge MS Dd 6.4' (abbreviation Dd, e.g. pp. 133 and 460) and Dd 11.39 'Cp.' entries."
+   },
+   {
+    "query": "known.py Castell / Zamick / Heptaglot (harvested DECODE dump and repo)",
+    "result": "No DECODE or target record for Castell's notebooks; hits are only unrelated Castellan/Castellanos catalogue entries and this lead."
+   }
+  ],
+  "prior_art": {
+   "decode": "Ran known.py (harvested DECODE dump) on 'Castell', 'Zamick', 'Heptaglot': no DECODE record for Castell's notebooks; only unrelated Castellanos/castellan hits.",
+   "tomokiyo": "Web search for Castell cypher notebook found nothing in Tomokiyo's cryptiana.",
+   "lasry": "No Lasry or GL.htm item on Edmund Castell found by web search or known.py.",
+   "edition": "Zamick, PhD thesis, St Andrews 1933 (opened): 'a collection of letters and documents ... mainly transcribed from his cipher-writings', transliterates letters from Cambridge MS Dd 6.4 and Dd 11.39; this is a decipherment on record, though not every letter of Dd 6.4 is shown to be covered.",
+   "literature": "Zamick explains Castell's script as a modification of Willis's shorthand, so the 'cypher' of the catalogue is shorthand, not a secret cipher system."
+  },
+  "key_check": "No cipher key is needed: Zamick identifies the writing as Castell's variant of Willis's shorthand and says it is easier to read than to describe; no key held in the repo.",
+  "duplicates": "known.py on 'Castell' and 'Dd.6.4': only this lead and the uk_libraries sweep files; no catalogue entry or target.",
+  "verdict": "partly_read",
+  "closed": "Zamick's 1933 St Andrews thesis (opened) transliterates Castell's 'cypher' letters, citing Dd 6.4 pages (e.g. pp. 133, 460), and shows the script is a modified Willis shorthand rather than a cipher; the Dd.6.4 leaves were not seen and not every letter is shown as transcribed."
+ },
+ "1348": {
+  "unvetted": "needs Chrome: https://manus.iccu.sbn.it/risultati-ricerca-manoscritti/-/manus-search/detail/572700 (Liferay JS shell, the 'scritture cifrate' description could not be re-read by curl). Triv. 1054 is a 15th-c. Dante Purgatorio/Paradiso codex (Macchi binding sheet, Porro 1884 Cod. N. 1054, owners Jacobillus and Paulus Gualdus); no digital copy found; three searches (shelfmark, probationes pennae cifrate, Gualdo) found nothing on the jottings, so no ciphertext is shown."
+ },
+ "1353": {
+  "unvetted": "needs Chrome: https://drrp.digital.utsc.utoronto.ca/61220/utsc65994 (and node/24575): curl gets only the Anubis proof-of-work bot wall. Series-level record (registers 2-7), no identifiable cipher page; web searches (DRRP register 5, Capi del Consiglio dei Dieci Costantinopoli cifra) show metadata-only records and no cipher page; ASVe scans would need ordering."
+ },
+ "1382": {
+  "unvetted": "ANRI inventory PDF returns 403 to curl and WebFetch; the same finding aid on Nationaal Archief 2.10.14 (PDF opened, p. 74) says only 'Inv.nr. 24 wordt bewaard in het Arsip Nasional te Jakarta. De inhoud van de telegrammen is veelal cryptisch'. No scan, no ciphertext shown; searches found no code or cipher study of this series. Needs a reproduction request to ANRI Jakarta."
+ },
+ "1387": {
+  "unvetted": "Nationaal Archief 2.10.62 inventory PDF opened (p. 571): inv. 2914 is 'Stukken betreffende door Bk. Makassar onderschepte, bij Republikeinse groeperingen gebruikte coderingen. 1946, 1 omslag', openbaar but not scanned; cannot tell code tables from coded messages, and the description alone does not show ciphertext. Two searches found no study of these Makassar intercepts. Needs a scan order at the Nationaal Archief."
+ },
+ "1452": {
+  "unvetted": "needs Chrome: https://historiamexicana.colmex.mx/index.php/RHM/article/view/1751 (Cloudflare wall) for the Alaman 1825 letter article. AGN Guia record (curl read) is one line: 'Carta cifrada donde se habla de una expedicion a Cuba' in Gobernacion vol. 85 exp. 2, no images; Narvaez 2008 (Documenta et Instrumenta 6, opened) covers Michelena/Alaman ciphers but not this expediente; ciphertext not shown, so no verdict."
+ },
+ "1469": {
+  "unvetted": "needs Chrome: CEHM reader scans (account) for the unopened items, e.g. https://www.cehm.org.mx/Buscador/FichaBasica/507906?Tipo=A (CLXXXVI.9.860/861), 5.431 (507473), 5.435 (507477), 5.445 (507487), 12.1195, 15.1448. Catalogue text (curl) says only 'Al parecer viene en clave'; the three items seen in the c04 Chrome pass were clear text, cover words or a cover-phrase key sheet, so a cluster-level lead with no confirmed ciphertext."
+ }
+}

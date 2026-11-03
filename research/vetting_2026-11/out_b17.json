@@ -1,0 +1,64 @@
+{
+ "1676": {
+  "unvetted": "Archive-only Archivportal-D record (GStA PK I. HA GR Rep. 49 R Nr. 129): says seized 'Chiffren' and army lists, but no ciphertext shown by the description; no scan, copy order needed. Web prior-art searches not run."
+ },
+ "1677": {
+  "unvetted": "Archive-only record (SStA Bautzen 50120 Baruth Nr. 808): 'Geheimschrift' is a heading in an envoy's instruction file, not shown to be ciphertext; no scan online. Prior art not searched."
+ },
+ "1678": {
+  "unvetted": "Archive-only record (SHStA 12527 Nachlass Friedrich Christian Nr. 266): only mentions 'Verwendung von Geheimschrift', no ciphertext shown; no digitisation flagged. Prior art not searched."
+ },
+ "1679": {
+  "unvetted": "Digitised in SHStA viewer (10026 Geheimes Kabinett Loc. 00704/02) but viewer needs Chrome, and the aid only says a cipher was sought: needs Chrome: https://www.archivportal-d.de/item/DXM66LTCGXYAJAUPPD4FTLQ7BICTLF5O"
+ },
+ "1680": {
+  "unvetted": "Archive-only record (SHStA 10026 Nr. 0317 Bl. 39-67): description says faded letters possibly in secret ink, no cipher shown; likely not cipher but unseen, no scan. Not retried without images."
+ },
+ "1681": {
+  "unvetted": "Digitised in SHStA viewer (Loc. 00959/08) but viewer needs Chrome; description is invisible writing made visible, not clearly cipher: needs Chrome: https://www.archivportal-d.de/item/VFQNNONTQJ2ZCA5NCQODCZKPDOBMAZWY"
+ },
+ "1682": {
+  "unvetted": "Prior key_lookup closure no longer valid under the new rule, but record (Loc. 30004/01 Chiffres, Gesandtschaft Wien 1816ff.) is a key bundle with no ciphertext described and lead cluster mixes Loc. 3000/3034; no volume seen, no web prior-art search by me."
+ },
+ "1683": {
+  "unvetted": "Prior key_lookup closure no longer valid, but this is a cluster of undated key bundles (Loc. 3233, 8236/05,/11,/12) with no identifiable ciphertext document; volumes not seen, not individually fetched, web prior art unsearched."
+ },
+ "1685": {
+  "unvetted": "Archivportal-D record (11248 Kriegsministerium Nr. 7307, fetched 3 Nov): lists 'A cipher for the Saxon king' and telegram copies that appear to be plaintext; no ciphertext shown, not digitised, to be used in HStA Dresden."
+ },
+ "1684": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b17",
+  "seen": {
+   "kind": "not online",
+   "where": "https://www.archivportal-d.de/item/J63BEAICIQ3YEDZGIMYHHGY4LZEYALKB (Archivportal-D record fetched 3 Nov 2026; no digital object, 'Zu benutzen im Hauptstaatsarchiv Dresden')",
+   "extent": "One Akte, 10731 Sächsische Gesandtschaft für Russland, Nr. 59, 'Geschäftskorrespondenz' 1855-1865; extent not stated",
+   "cipher": "Archive description: 'a book of diplomatic instructions with cipher and telegrams, some of it encrypted' ('Buch mit gesandtschaftlichen Instruktionen inkl. Chiffre und Telegrammen (teilw. verschlüsselt)'); the file otherwise covers inheritance, passport and petition matters."
+  },
+  "prior_art": {
+   "decode": "known.py on the shelfmark, 'Gesandtschaft Russland Chiffre Telegramme 1855' and the 1801-1900 Saxon legation terms searched the harvested DECODE dump: only this lead's own row and sweep candidate, no DECODE record.",
+   "tomokiyo": "Web search for Saxon legation St Petersburg 1850s cipher with Tomokiyo/cryptiana terms returned nothing on Saxony; no Tomokiyo entry found.",
+   "lasry": "Web searches (Lasry/HistoCrypt/Cryptologia with Saxon legation Russia 1855) found no Lasry paper or GL.htm entry for Saxon 1850s traffic.",
+   "edition": "No edition or calendar of Saxon St Petersburg legation papers found by search; the 1855-65 file is routine consular correspondence, only catalogued in Archivportal-D/DDB.",
+   "literature": "Searches for decipherment of Saxon 1855 telegrams found only unrelated Crimean War diplomacy and Adams-era US despatches; no Cryptologia or HistoCrypt item on it."
+  },
+  "searches": [
+   {
+    "query": "Sächsische Gesandtschaft St. Petersburg 1855 Chiffre verschlüsselte Telegramme entziffert",
+    "result": "Only DDB/Archivportal catalogue entries for other Saxon files (Loc. 03233/06 cipher volume etc.); no decipherment of this file."
+   },
+   {
+    "query": "\"10731 Sächsische Gesandtschaft für Russland\" Nr. 59 Geschäftskorrespondenz cipher decipherment",
+    "result": "Nothing on the file or fonds; unrelated Adams despatches and NSA items returned."
+   },
+   {
+    "query": "Saxon legation St Petersburg 1850s diplomatic cipher telegrams Crimean War Cryptologia OR HistoCrypt OR Lasry OR tomokiyo",
+    "result": "No Saxon-specific cipher literature; only a blog on Russian Vigenere use before the Crimean War and general Crimean diplomacy articles."
+   }
+  ],
+  "key_check": "The same item holds a cipher ('Chiffre') beside the encrypted telegrams per the description; not seen. No key held in the repo for 10731; Saxon Dresden keys on DECODE stop at R2334 (1799-1806), so none tested.",
+  "key_in_volume": "Description says the book of instructions includes the Chiffre.",
+  "duplicates": "known.py on the shelfmark and fonds name: only this lead and its sweep candidate row; no catalogue entry or target for 10731 Nr. 59.",
+  "verdict": "open"
+ }
+}

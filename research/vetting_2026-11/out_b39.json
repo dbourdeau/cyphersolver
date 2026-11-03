@@ -1,0 +1,51 @@
+{
+ "1423": {
+  "unvetted": "needs Chrome: https://public.ucrlib.aspace.cdlib.org/repositories/3/archival_objects/16197 (UCR ArchivesSpace is a JS-only shell to curl, 404 on the old OAC route; Calisphere item URLs return an empty 202 to curl and WebFetch). Web searches (Godoi Machain 1878 in code; Godoi decipher) return only the finding-aid wording 'mostly written in code (2 leaves)', no decipherment, but no scan was seen."
+ },
+ "1424": {
+  "unvetted": "needs Chrome: https://historicnewton.catalogaccess.com/archives/10132 (403 to curl). Search for Loud Carruth cipher postcards found nothing in Schmeh's blog; no images found online; the card 'deciphered and transcribed' is held by Historic Newton only. Description shows ciphertext exists but no scan could be seen; may need a request to Historic Newton."
+ },
+ "1425": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b39",
+  "seen": {
+   "kind": "scan",
+   "where": "https://objects.lib.uidaho.edu/bunkerhill/small/bunkerhill122_sm.jpg and bunkerhill122.pdf, plus metadata.csv of the Bunker Hill Labor Collection (463 items); bunkerhill13.pdf and bunkerhill225.pdf (text layer)",
+   "extent": "about 35 telegrams subject-tagged codes (Apr-Dec 1899); bunkerhill122 (3 Sep 1899, Bradley to Granger, 17 words); a handwritten code word list (bunkerhill13, MG367_84_102) and a handwritten list deciphering the code of MG367_86-087 (bunkerhill225)",
+   "cipher": "Seen on bunkerhill122: typed Latin/Spanish-looking code words ('Tegpegeratus me Kellogg option cymbals justin terrovibus maravillar debir verzuckt') with a pencilled decipherment below ('Peperatus: Please send copy of this to me Kellogg. Option executed by Chas Sweeny in the year 1897 to purchase Last Chance Mining Co $400,000'). So a commercial code, with readings and code keys filed in the same collection."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) 'Bunker Hill': no DECODE record, only this lead and the sweep notes.",
+   "tomokiyo": "No Cryptiana page for Bunker Hill / Coeur d'Alene telegrams found by web search.",
+   "lasry": "Not in Lasry's papers or GL.htm as far as search showed; a commercial telegraph code, not a historical cipher he treats.",
+   "edition": "The collection's own metadata records the decipherments: 'handwritten note possibly deciphering message' (MG367_86-004), 'The code in MG 367-86-87 is deciphered' (86-088), 'Code key; handwritten' (84_102); no printed edition.",
+   "literature": "Web search (Bunker Hill 1899 telegrams code deciphered codebook) returns only the UIdaho catalogue records; no study."
+  },
+  "key_check": "Code key lists exist in the collection (MG367_84_102 and a decipherment list MG367_86-088); not tested against the other ~30 telegrams here.",
+  "key_in_volume": "MG367_84_102 'List and descriptions of code words' (1900) and MG367_86-088 deciphering the code of 86-087; also 'note of enclosure of code terms' in 84_045.",
+  "duplicates": "known.py 'Bunker Hill' and 'Burbidge': no catalogue entry or target for the same documents.",
+  "verdict": "partly_read",
+  "closed": "Decipherments are on record in the collection itself: pencilled reading on the leaf of bunkerhill122 (seen), a handwritten code word list (bunkerhill13, text layer seen) and a list deciphering MG367_86-087 (bunkerhill225). Most of the other ~30 telegrams carry no reading, so a catalogue entry is possible only as the unread remainder; verdict left to the session."
+ },
+ "1426": {
+  "unvetted": "needs Chrome: https://historicpittsburgh.org/islandora/object/pitt%3A31735064659596 (bot challenge to curl and WebFetch). Search snippets show catalogue records giving plain-language decodings ('small plunge' = Homestead; 7 and 11 Jul 1892) and a Pitt lesson plan 'Decoding the Homestead Strike' that uses a decoding book, so decipherments probably exist; the lesson PDF URL 404s. Needs a look at the records and the book to settle read vs open."
+ },
+ "1427": {
+  "unvetted": "needs Chrome: http://cdm17191.contentdm.oclc.org/cdm/ref/collection/chc5006/id/2876 (host does not resolve to curl; atom.library.miami.edu finding aid is JS-gated). Web search on Fernandez Cavada cipher/Cuban Heritage Collection found no study; the key sheets 2876 and 2912 and the four letters were not seen."
+ },
+ "1429": {
+  "unvetted": "needs Chrome: http://cplorg.contentdm.oclc.org/cdm/ref/collection/p4014coll9/id/50900 (host unreachable to curl; IIIF 404). Checked Dropmore (HMC Fortescue) vol. 9 full text on archive.org: Barlow appears only for a red ribbon, no cipher or printed decipherment; SNAC and TNA search show only the 1807 description. Scan not seen, so no verdict."
+ },
+ "1430": {
+  "unvetted": "needs Chrome: http://images.indianahistory.org/cdm/ref/collection/ONWT/id/1583 (host unreachable; digital.library.in.gov record page empty to curl). Search for the 1796 Baldwin/Breckenridge letter found nothing about the code names; the glosses may make it readable already, unseen."
+ },
+ "1431": {
+  "unvetted": "needs Chrome: http://indianamemory.contentdm.oclc.org/cdm/ref/collection/p16066coll13/id/3133 (unreachable). Pitman's Trials for Treason at Indianapolis (archive.org trialsfortreas00pitm) prints Exhibit No. 13, 'a letter in secret cipher' of the Sons of Liberty with its plaintext, and testimony on a book-page-line cipher; the Indiana State Library image (used on indyencyclopedia.org, seen: only a portrait plate of the defendants) is not confirmed to be that exhibit. Likely read in 1865, unconfirmed."
+ },
+ "1432": {
+  "unvetted": "needs Chrome: http://dmr.bsu.edu/cdm/ref/collection/LSTACivWar/id/2072 (host unreachable; digital.library.in.gov/Record/BSU_LSTACivWar-2072 empty to curl). Title-only record 'Coded letter'; searches for Ammen coded letter found nothing; scan never seen."
+ },
+ "1433": {
+  "unvetted": "needs Chrome: https://preserve.lehigh.edu/digital-special-collections/i-remain/letter-1862-august-16-630-pm-general-gb-mcclellan-washington (429 then bot challenge). Prior art found: Assarpour and Boklan, 'How We Broke the Union Code (148 Years Too Late)', Cryptologia 34(3) 2010, pp. 200-210, deciphers an undeciphered Porter to McClellan Union route-cipher letter without codebooks; likely this item (1862, Porter to McClellan) but the date and the Lehigh identity are unconfirmed without opening the paper or the item. Probably verdict read."
+ }
+}

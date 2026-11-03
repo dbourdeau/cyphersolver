@@ -1,0 +1,182 @@
+{
+ "1568": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b64",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest; viewed 3 Nov 2026: 27 Feb 1726 (c9644661, canvas 2, c. 5v) and 20 Mar 1726 (3e57081d, canvas 2, c. 21v); the Selvatico 1722 letters have no record link and were not opened",
+   "extent": "27 Feb 1726 c. 5v: about 8 lines of dot-separated number groups (1-~330) with Italian words written above the groups. 20 Mar 1726 c. 21v: about 9 lines of number groups inside clear Italian, nothing written above them.",
+   "cipher": "Numeric nomenclator, dot-separated groups, some underlined. On the 27 Feb 1726 leaf a contemporary INTERLINEAR decipherment (words such as 'estremita', 'apparenza', 'rinunzie') sits over the groups. On the 20 Mar 1726 leaf the groups carry no gloss. The catalogue marks 27 Feb and 6 Mar 1726 as 'decifrata in interlinea' and the other letters only 'parzialmente cifrata'."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump plus repo) on Starhemberg, Selvatico, Riva and Autografoteca Campori: only this lead's own rows and unrelated Starhemberg entries (catalogue Goess/Mercy 1757); the live DECODE site was not searched record by record.",
+   "tomokiyo": "Web searches 'Starhemberg Riva 1726 lettera cifrata decifrata Estense' and 'Selvatico Estense Riva 1722 cifra' returned the Steffani/Riva literature and Estense cipher pages, no cryptiana page on these letters.",
+   "lasry": "Searched Lasry/Megyesi/Kopal with Estense, Riva and 18th-century Italian ciphers: only the 1721 papal cipher paper and papal-cipher work, nothing on Starhemberg or Selvatico; GL.htm not consulted for these names.",
+   "edition": "Lindgren and Timms, 'The correspondence of Agostino Steffani and Giuseppe Riva, 1720-1728' (RMA Research Chronicle 36, 2003) covers Steffani/Riva letters; the PDF host esf.ccarh.org reset the connection three times so it was not opened, and it is not shown to print Starhemberg or Selvatico letters.",
+   "literature": "Searches on Riva's London role found only Handel/Steffani musicology (Timms, Music and Letters 1998); no study of the Starhemberg number code."
+  },
+  "key_check": "The interlinear glosses on 27 Feb 1726 (cc. 5-8) and 6 Mar 1726 (cc. 9-10, 19-20) give values for the same code; the 20 Mar 1726 and 19 Feb 1727 letters share its closing group, so they are in that system. Not applied here.",
+  "key_held": "Interlinear glosses of 27 Feb and 6 Mar 1726 (same writer, same code); extending them to the unglossed letters has not been tried.",
+  "duplicates": "known.py on Starhemberg, Selvatico, Riva, Campori: no catalogue entry, target or DECODE record for this correspondence; only this lead's rows.",
+  "verdict": "partly_read",
+  "closed": "Two of the Starhemberg letters (27 Feb and 6 Mar 1726) are deciphered interlinear on the leaf itself (27 Feb confirmed by eye, 3 Nov 2026). The unglossed letters (31 May 1721, 20 Mar 1726 seen with no gloss, 19 Feb 1727, Selvatico 1722) remain unread but share the glossed code and the Lindgren/Timms edition was not opened; split them into a new lead if wanted."
+ },
+ "450": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b64",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF A0073297 image 119 (lbiiif.riksarkivet.se/arkis!A0073297_00119, fetched by curl and viewed 3 Nov 2026), plus images 107 and 125 and the survey in targets/duben1764/NOTES.md",
+   "extent": "System B ('Chiffer n:o 2'), images 118-124: Duben to the Queen, 5 Oct 1764 - 15 Nov 1765, about 2,072 groups pooled; image 119 alone shows 16 lines on the left page and 5 on the right",
+   "cipher": "Image 119 (5 Oct 1764 letter): full pages of dot-separated 1-3 digit numeric groups (e.g. 716.632.544..., 126.607.3) with scribe's vertical strokes between runs and some underlined groups; no words written above or between the lines. The clear page filed at image 120 is a draft in different composition, not a decipherment (tested in targets/duben1764)."
+  },
+  "prior_art": {
+   "decode": "known.py on 'Lovisa Ulrika', 'Duben', 'K 259': no DECODE record; only catalogue entry 450's lead rows and targets/duben1764 (the repo's own working file for this item).",
+   "tomokiyo": "Web search 'Tomokiyo cryptiana Sweden 1760s Lovisa Ulrika cipher Riksarkivet Duben' found no cryptiana page; hits were Mary Queen of Scots and Biermann items.",
+   "lasry": "Web search for Lasry/Kopal/Megyesi with Louisa Ulrika, Swedish diplomatic nomenclator and Gustav III found only papal-cipher and 1637 Oxenstierna letter papers; nothing on K 259.",
+   "edition": "Politische Correspondenz Friedrichs des Grossen 24 prints Frederick's 3 Mar 1765 letter (no. 15458, per Dudout); the Trier edition search returned neighbouring numbers but not that one. No edition of Duben's own code letters turned up.",
+   "literature": "Searches 'Duben Gyldenstolpe Lovisa Ulrika chiffer 1764' and 'Louisa Ulrika Duben cipher 1764 Hats Caps' returned only biographies (Ulrika Eleonora von Duben, Lovisa Ulrika) and no study of this cipher."
+  },
+  "key_check": "Three key tables sit in the same volume (images 218-220); targets/duben1764 range-checked them: letters use 1-~790, nothing in 8xx-9xx, frequent groups fall in the wrong places, so none reads the text as is. Not tested group by group.",
+  "key_in_volume": "Images 216-220 'Chiffernycklar': a Swedish key (121-999), the crown prince's 1770-71 travel cipher (printed in Svenska Akademiens Handlingar 29), a 'marque' key (111-948); range-checked, none fits as is.",
+  "duplicates": "known.py 'Lovisa Ulrika', 'Duben', 'K 259': the lead's own rows and targets/duben1764 (in progress, same item, not a finished reading); no second catalogue entry and no DECODE duplicate.",
+  "searches": [
+   {
+    "query": "Duben Gyldenstolpe Lovisa Ulrika chiffer 1764 dechiffrering hemlig korrespondens",
+    "result": "Only Wikipedia/royal-palace biographies of Ulrika Eleonora von Duben and Lovisa Ulrika; no decipherment or cipher study of the Duben/Gyldenstolpe letters."
+   },
+   {
+    "query": "Louisa Ulrika Duben cipher 1764 Hats Caps secret correspondence deciphered",
+    "result": "Nothing on this volume; unrelated decipherments (1724 UCL letter, Saxon-Polish ciphers, Biermann) and the same biographies."
+   },
+   {
+    "query": "Politische Correspondenz Friedrichs des Grossen Band 24 Nr. 15458 Duben Chiffre Schweden 1765",
+    "result": "Trier edition pages for neighbouring Vol. 24 numbers (15448, 15588, 15591 to Cocceji in Stockholm); no Duben cipher letter printed or deciphered."
+   },
+   {
+    "query": "Lasry Kopal Megyesi 18th century Swedish diplomatic cipher numeric nomenclator Gustav III queen Louisa Ulrika decipherment",
+    "result": "Papal-cipher paper, Oxenstierna 1637 letter and DECRYPT project pages; nothing on Lovisa Ulrika."
+   }
+  ],
+  "verdict": "open"
+ },
+ "1616": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b64",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet IIIF A0073297 image 101 (lbiiif.riksarkivet.se/arkis!A0073297_00101, fetched by curl and viewed 3 Nov 2026), plus image 125 and targets/duben1764/NOTES.md",
+   "extent": "System A: 6 Mar 1764 (images 101R-102L, 641 groups, 49 unread signs) and the 15 Nov 1765 letter (images 124R-126, 742 groups, 36 of 47 lines glossed)",
+   "cipher": "Image 101: right-hand page headed 'ce 6 de Mars 1764' with about 17 lines of dot-separated numeric groups (4.83.445.196.552.185...) and strokes between runs; the left page carries more number lines. Nothing is written above or between the lines of the 6 Mar letter. The 15 Nov 1765 letter, by contrast, has an interlinear French gloss over most lines."
+  },
+  "prior_art": {
+   "decode": "known.py 'Lovisa Ulrika', 'Duben', 'Morner': no DECODE record; only catalogue 450 rows and targets/duben1764.",
+   "tomokiyo": "Web search for Tomokiyo cryptiana with Lovisa Ulrika/Duben/Riksarkivet returned nothing on Sweden's 1760s ciphers; no page for system A.",
+   "lasry": "Lasry/Kopal/Megyesi search on Swedish 18th-century nomenclators found no paper on this volume.",
+   "edition": "Only Frederick II's 3 Mar 1765 letter is printed (PC 24 no. 15458); the 6 Mar 1764 St Petersburg letter and Duben's code letters are in no edition found.",
+   "literature": "Searches on Gyldenstolpe/Saldern/Lovisa Ulrika secret correspondence found biographies only; the 15 Nov 1765 gloss is the one decipherment on record and it fixes no table (fb.py 0.61-0.64 against controls 0.985)."
+  },
+  "key_check": "The 15 Nov 1765 gloss and the three tables at images 218-220 were tested in targets/duben1764: no fixed table reproduces the gloss, so none yet reads the 6 Mar 1764 letter.",
+  "key_held": "Interlinear gloss of the 15 Nov 1765 letter (system A, 36 lines) in the same volume; it shows values varying through the text, so it is not a usable table.",
+  "duplicates": "known.py on the names and 'K 259': lead 450 (system B, same volume, different letters) and targets/duben1764; this lead is the system A half and is not the same ciphertext as 450.",
+  "searches": [
+   {
+    "query": "Nils Philip Gyldenstolpe Lovisa Ulrika 1764 1765 Saldern chiffrerade brev Duben drottningens hemliga korrespondens",
+    "result": "Biographies and library catalogue cards only; no mention of the 6 Mar 1764 letter or any decipherment."
+   },
+   {
+    "query": "Tomokiyo cryptiana Sweden 1760s Lovisa Ulrika cipher Riksarkivet Duben",
+    "result": "No cryptiana page; results were Mary Queen of Scots, Biermann and Uppsala papers unrelated to this volume."
+   },
+   {
+    "query": "Lovisa Ulrika 6 mars 1764 chiffer Gyldenstolpe St Petersburg brev Riksarkivet K 259 dechiffrerad",
+    "result": "Wikipedia/SKBL biographies, manuscripta.se records of Vitterhetsakademien letters 1753-59 and Gyldenstolpe letters of 1766; no record of K 259 or of any decipherment of the 1764 letters."
+   },
+   {
+    "query": "Louisa Ulrika secret cipher letters Mörner Gyldenstolpe 1765 Crown Prince marriage Russia Panin deciphered",
+    "result": "Coup of 1756, Louisa Ulrika and Gyldenstolpe-Gustav 1766 marriage letters (bibliography), no mention of ciphers; the only decipherment on record is the interlinear gloss on the 15 Nov 1765 leaf."
+   }
+  ],
+  "verdict": "open",
+  "note": "Scope: the 6 Mar 1764 letter and the 11 unglossed lines of 15 Nov 1765; the glossed lines of 15 Nov 1765 already have a decipherment on the leaf."
+ },
+ "441": {
+  "unvetted": "Letter seen (DECODE R7517 p.1: Polish text with two runs of continuous digits, no gloss) but the printed edition Listy Jana Andrzeja Morsztyna, ed. Ochmann-Staniszewska (Wroclaw 2002, 378 pp., contains Morsztyn to Lubomirski letters) could not be opened, so prior art is unanswered; the letter may be printed there with the cipher expanded. Needs the volume (library) or a Polish full-text search; no Lasry or Tomokiyo item found in 4 searches."
+ },
+ "444": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b64",
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R7533 p.2 (de-crypt.org/decrypt-web/RecordsView/7533, image IMG_R7533_I34022_P2 fetched with decode_fetch.py to scratch and viewed 3 Nov 2026); R7532 pp.1-2 and R7533 p.1 viewed in the 2 Nov pass",
+   "extent": "R7533 p.2 (f. 309): about 22 lines of slash-separated groups of letters and digits (db.8.23./b.8.n.b./...), plus 3 clear Polish lines on p.1 verso. R7532 p.2 about 8 lines.",
+   "cipher": "Polish letter ending in a block of dotted letter-and-number groups separated by slashes (45.88.36.r, n.b.a., b.69.36 ...), mixed single letters, two-digit numbers and slashes; no plaintext written above or between the lines on R7533 p.2."
+  },
+  "prior_art": {
+   "decode": "known.py on R7532, R7533, R7523 and Sanguszko: only this lead's rows; DECODE status 'N/A, cipher type unknown, private ciphertext', no key or decryption file attached to R7532/R7533 (record page fetched 3 Nov).",
+   "tomokiyo": "Web search 'DECODE Archiwum Narodowe w Krakowie Sanguszko cipher letters' and the local unsolved.htm copy: no cryptiana page on Sanguszko ciphers.",
+   "lasry": "Web search for Polish early modern ciphers in Cryptologia/HistoCrypt found Chodkiewicz 1574, Wackerbarth-Flemming and Hungarian work, nothing on the Sanguszko archive or this letter.",
+   "edition": "No edition of Jozef Paulin Sanguszko's letters to his mother found; the nearest print is Stasiewicz's study 'Barbara Sanguszkowa i Elzbieta Druzbacka w swietle nowych zrodel' (2011), a biography not opened here and not shown to print cipher letters.",
+   "literature": "Search 'Jozef Paulin Sanguszko Barbara Dunin Sanguszkowa listy szyfr' returned Piramowicz letters (Saeculum Christianum 2016) and biographies only; no cipher study."
+  },
+  "key_check": "Sanguszko-archive key records R7515 (a=5/10/15) and R7460/R7461 are held (targets/potocka1714) and did not fit Potocka; not applied here (no transcription). R7523, the same sender's glossed sibling, gives symbol values for a different cipher.",
+  "key_held": "R7515 and R7460/R7461 (Sanguszko archive keys, held); R7523 interlinear. Not tested on R7532/R7533.",
+  "duplicates": "known.py R7523/R7532/R7533/Sanguszko: no catalogue entry or target; related but separate target potocka1714 (Barbara's own letters, same archive). R7523 of the same teka is glossed and is outside this lead.",
+  "searches": [
+   {
+    "query": "Jozef Paulin Sanguszko Barbara Dunin Sanguszkowa listy szyfr szyfrowane litery cyfry XVIII wiek",
+    "result": "Biographies of Barbara Sanguszko, Piramowicz letters of 1781 and a 1994 note on a Greek-consonant cipher in an unnamed letter collection; no cipher study of Jozef Paulin's letters."
+   },
+   {
+    "query": "DECODE de-crypt.org Archiwum Narodowe w Krakowie Sanguszko cipher letters Polish 17th century decrypted",
+    "result": "No DECODE Sanguszko record in web results (only Amade, Esterhazy, Palffy fonds mentioned in a HistoCrypt paper); nothing decrypted from this archive."
+   },
+   {
+    "query": "Polish early modern ciphers Sanguszko archive cryptography Cryptologia HistoCrypt Polish nomenclator 17th 18th century",
+    "result": "Saxon-Polish Wackerbarth ciphers, Zdzarowski 16th c. ciphers, Lang's Hungarian study; none touches the Sanguszko letters."
+   },
+   {
+    "query": "Sanguszko ASang teka 408 szyfr list do matki Barbary Dunin rozszyfrowany",
+    "result": "Piramowicz letters to Barbara Sanguszkowa (Saeculum Christianum 2016), Jagiellonian Library and IPN Sanguszko listings; no teka 408 cipher, decipherment or edition found."
+   }
+  ],
+  "verdict": "open"
+ },
+ "1938": {
+  "unvetted": "Title-only record: the description does not show ciphertext (catalogue summary 'matched cipher', letter of [1586] to Henri IV, MS 647 f. 218 within the Anthony Bacon papers MSS 647-62). Lambeth CalmView returns 403/timeouts to curl and WebFetch; 3 web searches (Casenowe, MS 647 f. 218, TNA Discovery) found no item record. Needs Chrome: https://archives.lambethpalacelibrary.org.uk/CalmView/catalogsearch.aspx?src=CalmView.Catalog (search Casenowe / MS 647) to read the item description and see whether a cipher leaf exists."
+ },
+ "1990": {
+  "unvetted": "Only the catalogue line ('Latin and cypher. 1 f.') is known; MS 941 is Miscellaneous Papers 1603-1715 and item 182 is unseen. Lambeth CalmView returns 403 and timed out twice to curl, and WebFetch timed out; web searches (MS 941 item, King of Spain/Cardinal Albert intercept) found no item-level record, edition or decipherment. Needs Chrome: https://archives.lambethpalacelibrary.org.uk/CalmView/Record.aspx?src=CalmView.Catalog&id=MSS%2f929-942%2f941 to read item 182 and see if a cipher string survives or is deciphered."
+ },
+ "1977": {
+  "unvetted": "Arcinsys pages (curl 3 Nov 2026) show Cal. Br. 15 Nr. 2225 (1738, ca. 11 Bl., 'z.T. in Chiffre verfasst') and Nr. 2233 (1738-39, 'z.T. in Chiffre') as 'Original Akte' only, with no Digitalisat, so no leaf can be seen. Georg Christian von Knorr (Reichshofrat, converted 1738) is documented in biographical sources but no edition or decipherment was found in 2 searches. The Hanoverian Geheime Rate habitually wrote decipherments between the lines (targets/mecklenburg1734), so 'no decipherment' cannot be claimed without a scan: needs an archive scan from NLA Hannover."
+ },
+ "1980": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b64",
+  "seen": {
+   "kind": "not online",
+   "where": "Arcinsys Niedersachsen record 5536294 (NLA Wolfenbuettel VI Hs 15 Nr. 143), fetched by curl 3 Nov 2026: representations 'Original Akte' and 'Sicherungsfilm', no Digitalisat",
+   "extent": "one unit, 1733-1776, folio box of loose sheets: letters, a deed, eye descriptions, algebra rules in 9 copies and a 'Zeremonialbuch (Handschrift in Geheimschrift)'",
+   "cipher": "Archive description: 'Allerlei Schriftstuecke, zum Teil in Geheimschrift geschrieben, den ... Okulistenorden betreffend' and 'Zeremonialbuch (Handschrift in Geheimschrift)'; index term 'Codex Copiale'."
+  },
+  "prior_art": {
+   "decode": "known.py on Veltheim, Okulisten and Copiale: no DECODE record and no repo target for this unit; the Copiale cipher itself is not a DECODE entry here.",
+   "tomokiyo": "Not found on Tomokiyo's cryptiana in the web searches run; the Copiale cipher is widely documented elsewhere.",
+   "lasry": "Searches found Knight, Megyesi and Schaefer's 2011 decipherment of the Copiale cipher (BUCC 2011; JRFF 2012) of the Oculist order, which is the same society.",
+   "edition": "Uppsala (su.se, Decipherment of Historical Manuscripts, Copiale page) publishes, since Feb 2012, extra Oculist-archive files from Wolfenbuettel with transliteration and deciphered German text; the page states a parallel manuscript is at the Staatsarchiv Wolfenbuettel; no shelfmarks given there.",
+   "literature": "Aloys Henning's essay on the Oculist society (Festschrift Muehlpfordt 1999) is the cited German source; Wikipedia and the Smithsonian blog repeat the decipherment."
+  },
+  "key_check": "The published Copiale key and the Uppsala deciphered transcriptions apply to this society's cipher; not tried on Nr. 143 because the unit is not digitised.",
+  "key_held": "Copiale key published by Knight, Megyesi and Schaefer (2011); the Uppsala extra-file transcriptions of the Wolfenbuettel Oculist papers.",
+  "duplicates": "known.py on Veltheim/Okulisten/Copiale: no other lead or catalogue entry for VI Hs 15 Nr. 143 (catalogue 242 N Veltheim entries are different units).",
+  "verdict": "partly_read",
+  "closed": "Nr. 143 is the Wolfenbuettel Oculist-order archive (index term Codex Copiale), the society of the Copiale cipher solved in 2011; Uppsala has published deciphered German text of the Wolfenbuettel Oculist papers (Feb 2012). Exact correspondence of each leaf of Nr. 143 to the published files is not confirmed, and the unit is not online.",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "896": {
+  "unvetted": "Danvila, Historia critica de las Comunidades (Memorial historico espanol 35-40, read on archive.org 3 Nov 2026) prints Lope Hurtado's letters to Charles V of 29 Nov, 6 Dec and 10 Dec 1520 (also 5 Dec from Penaflor) from AGS Patronato Real, Comunidades, leg. 2, in clear with no cipher note: if Paz no. 189's cipher letter is among them it is already printed deciphered. Which of Paz's seven letters is the cipher one is not established (PARES mapping and the Paz page both blocked), so neither open nor read can be claimed; needs the Paz Catalogo V p. 29-32 text (Google Books CAPTCHA, needs Chrome: https://books.google.com/books?id=V0hQAQAAMAAJ&pg=PA29&q=cifra) and a comparison with MHE 36 pp. 521, 685-688."
+ }
+}

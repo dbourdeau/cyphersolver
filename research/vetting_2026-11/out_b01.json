@@ -1,0 +1,130 @@
+{
+ "2066": {
+  "unvetted": "Archive description only ('Some letters are partially in code'); ArchiveGrid record 122611963 returns 403 to curl/WebFetch so the holder's wording could not be read, and it is unclear that a cipher rather than abbreviation survives. 3 web searches (Compton/Kerr, LVA, 'partially in code') found no finding aid or scan. Needs Chrome: https://researchworks.oclc.org/archivegrid/collection/data/122611963 then an LVA finding aid."
+ },
+ "2067": {
+  "unvetted": "Holder not identified (shelfmark 'University of Virginia?'); ArchiveGrid 122539403 returns 403 and a web search for the Lantz Mills 1863 diary found nothing. Description 'some words and phrases in code' does not show a cipher. Needs Chrome: https://researchworks.oclc.org/archivegrid/collection/data/122539403"
+ },
+ "2068": {
+  "unvetted": "Possible printed decipherment not checked: Camden Fifth Series (Michel de Seure edition, Cambridge Core, 403) cites CSPF Elizabeth II no. 906 p. 480 for a Marie de Lorraine letter to the cardinal of 27 March 1560, and cryptiana mary.htm lists a key SP53/23 no.2/8; Nachef-Patarin-Dubois-Nayt 2016 text not reachable and the BHO page pp476-496 did not load by curl. Needs Chrome: https://www.british-history.ac.uk/cal-state-papers/foreign/vol2/pp476-496 (entry 906) and the Cambridge Core Camden volume."
+ },
+ "2069": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b01",
+  "seen": {
+   "kind": "not online",
+   "where": "Morgan Library record https://www.themorgan.org/literary-historical/81778 (MA 1346-218, Fairfax Murray Collection); record page returns 403 to scripts, description read via search-engine snippet",
+   "extent": "one signed letter, Milan, 24 Oct 1562; extent of cipher not stated beyond the description",
+   "cipher": "Morgan describes it as \"Letter signed (largely in cipher) : Milan, to Conte Giovanni Anguissola, 1562 Oct. 24\"; no scan online, so no decipherment could be looked for on the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo, leads) on Pescara, Anguissola, Francesco Ferdinando: only this lead's own row and an unrelated Anguissola relative in the ital. 1584 copies; no DECODE record for this letter.",
+   "tomokiyo": "No Tomokiyo cryptiana page for Pescara or Anguissola found by web search or in the repo.",
+   "lasry": "Searched Lasry/HistoCrypt/DECRYPT for Pescara and Anguissola: nothing; GL.htm has nothing on this letter.",
+   "edition": "Searched Italian and English web for a Pescara-Anguissola 1562 edition or calendar: none found; the Morgan record has no summary or transcription.",
+   "literature": "Search for Pescara, Trent 1562, cipher in Cryptologia/HistoCrypt: no study of Pescara's Milan ciphers found."
+  },
+  "searches": [
+   {
+    "query": "Pescara Anguissola 1562 lettera in cifra Milano Morgan Library marchese di Pescara governatore decifrata",
+    "result": "Only the Morgan record (MA 1346-218, 'largely in cipher'); no decipherment or edition."
+   },
+   {
+    "query": "Francesco Ferdinando d'Avalos marchese di Pescara 1562 Anguissola cifra lettera Milano governatore corrispondenza",
+    "result": "Morgan record plus a dealer listing of an unciphered April 1562 letter to Sfondrati; nothing deciphered."
+   },
+   {
+    "query": "Pescara Trent 1562 Council of Trent Philip II envoy cipher letters deciphered Anguissola Lasry OR Tomokiyo OR Cryptologia",
+    "result": "No Pescara or Anguissola hit; only unrelated DECRYPT/Philip II cipher papers."
+   }
+  ],
+  "key_check": "No key for Pescara's Milan correspondence found in the repo, on DECODE (known.py) or in print by web search; none tested.",
+  "duplicates": "known.py on 'Pescara', 'Anguissola', 'Francesco Ferdinando' and the Morgan shelfmark: no catalogue entry or target for this letter; the Anguissola hits belong to an unrelated ital. 1584 target.",
+  "verdict": "open"
+ },
+ "2070": {
+  "unvetted": "Ribier not reached: the only Google scan of Ribier tome II on archive.org (bub_gb_qWTswSr32NYC) has no Dec 1551 or Bayonne entry in its OCR and appears partial; Morgan/ArchiveGrid 270477800 give 403. Two web searches found only the SNAC/Morgan description 'Autograph signature to letter (in cipher) : Orleans, to M. de Bayonne, 1551 Dec. 15'. Needs Chrome: the ArchiveGrid record, and Ribier II full text (Google Books) for 15 Dec 1551."
+ },
+ "2071": {
+  "unvetted": "Ribier II prints much of the Babou correspondence (Sede Vacante pages cite pp. 827-830) but the available archive.org scan (bub_gb_qWTswSr32NYC) has no 'Babou' or Aug 1558 hit and appears partial; Morgan/ArchiveGrid 270477885 give 403. Search found only the SNAC description 'much of which is in cipher'. Needs Chrome: the ArchiveGrid record and a complete Ribier II for 13 Aug 1558."
+ },
+ "2072": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b01",
+  "verdict": "read",
+  "closed": "Printed with the names resolved: Correspondance de Bossuet (ed. Urbain-Levesque, Grands Ecrivains), t. XI, letter 1830, 'A l'abbe Bossuet, A Meaux, 30 decembre 1698', autograph communicated by Pearson & Co. London (archive.org correspondancede11bossuoft_djvu.txt, line about 2014); the note on the pseudonyms ('Les deux pseudonymes designent le meme personnage') shows the editors read the code names. The autograph's cipher is name pseudonyms in a plain text.",
+  "seen": {
+   "kind": "transcription",
+   "where": "https://archive.org/download/correspondancede11bossuoft/correspondancede11bossuoft_djvu.txt (OCR of the edition), letter 1830",
+   "extent": "one letter, about 25 lines printed",
+   "cipher": "The printed text and its notes give the resolved names ('le fils de qqq et Sans peur' with the editor's gloss); the Morgan autograph was not viewed."
+  },
+  "prior_art": {
+   "decode": "known.py: no DECODE record for this letter; related Bossuet 1697-98 items are on GL.htm NAF 28227(9).",
+   "tomokiyo": "No separate Tomokiyo page found for this letter; repo bossuet target covers other letters.",
+   "lasry": "GL.htm lists Bossuet letters to the abbe Bossuet 1697-98 (NAF 28227(9)), not this Morgan letter.",
+   "edition": "Printed in Correspondance de Bossuet t. XI, letter 1830, with pseudonyms resolved in notes.",
+   "literature": "Web search found the edition and Davin, Les jansenistes politiques; nothing else."
+  },
+  "key_check": "The 41 numerical codes and pseudonyms on NAF 28227(9) are the same habit; the reading is on record in the edition so no key test was needed.",
+  "duplicates": "known.py 'abbe Bossuet': catalogue 550 (22 Dec 1699 letter) and target bossuet are different letters; no duplicate of this 30 Dec 1698 letter."
+ },
+ "2073": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b01",
+  "seen": {
+   "kind": "not online",
+   "where": "Morgan Library record https://www.themorgan.org/literary-historical/122558 (MA 23779.1, 6 pages, removed from Propert, History of the miniature art, 1887); 403 to scripts, record text read via search snippet",
+   "extent": "letter plus a cipher copy, 6 pages, Brussels, 23 May 1655",
+   "cipher": "Morgan describes it as \"Letter and copy in cipher signed : Brussels, to Pope Alexander VII, 1655 May 23\"; no scan online, so no decipherment could be looked for on the leaf."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump and repo) on Christina, Alexander VII, 1655: only the sweep's own row and an unrelated Spanish lead; no DECODE record.",
+   "tomokiyo": "No Tomokiyo page for Christina of Sweden letters to Alexander VII found; the Christina-Azzolino cipher (Bildt 1899) is a different correspondence.",
+   "lasry": "No Lasry or HistoCrypt study of Christina's 1655 cipher found by web search.",
+   "edition": "Arckenholtz, Memoires concernant Christine, and kingkristina.blogspot transcriptions checked by search: only 1660-61 letters to Alexander VII are cited; the 23 May 1655 letter was not located, and Arckenholtz was not opened.",
+   "literature": "Search of Cryptologia/HistoCrypt terms with Christina, Azzolino, 1655: nothing on this letter."
+  },
+  "searches": [
+   {
+    "query": "Christina of Sweden 1655 letter Alexander VII Brussels cipher copy Morgan Library Arckenholtz chiffre",
+    "result": "Morgan record 122558 only; no decipherment or edition."
+   },
+   {
+    "query": "Christina of Sweden cipher letters Alexander VII 1655 Azzolino cifra decipherment cryptology Cryptologia Queen Christina cipher",
+    "result": "Azzolino/Bildt 1899 cipher is the Christina-Azzolino correspondence, not this letter; no Cryptologia article."
+   },
+   {
+    "query": "Kristina 1655 Brussels letter to Pope Alexander VII 23 May 1655 cipher edition Arckenholtz Memoires concernant Christine",
+    "result": "Arckenholtz cited for 1660-61 letters only; 23 May 1655 not found in any print."
+   }
+  ],
+  "key_check": "Azzolino-Christina cipher of Bildt 1899 is a different correspondence and was not tested; no key for this letter found in repo or DECODE.",
+  "duplicates": "known.py 'Alexander VII', 'Christina': no catalogue entry or target for this letter; the ia_pass2_c lead is Spanish 1655-56 papers, different.",
+  "verdict": "open"
+ },
+ "2074": {
+  "unvetted": "The Morgan record (MA 489.101, read via search snippet) says Rawdon wants Doyle to see Cornwallis for information 'impossible to enter upon by Letter'; the quote about giving a Cypher concerns a cipher for someone else, so the description does not show ciphertext in the letter. Record page 403. Needs Chrome: https://www.themorgan.org/literary-historical/103264 to see whether the letter has cipher; Cornwallis Papers PRO 30/11 Rawdon cipher letters are already a separate lead."
+ },
+ "2075": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b01",
+  "verdict": "partly_read",
+  "closed": "Morgan MA 1267 records (read via search snippets; pages 403 to scripts): a Lake letter 'written primarily in cipher' adds 'MA 1267.3 has the text of this letter without the ciphers', so a contemporary clear text of that letter is on record in the same volume; the 7 Sept letter is a triplicate of MA 1267.11 in English and ciphers. The undated and 7 Sept letters have no clear copy stated; the Morgan scans were not seen.",
+  "seen": {
+   "kind": "not online",
+   "where": "Morgan Library MA 1267 (Pulteney correspondence vol. 10), records near https://www.themorgan.org/literary-historical/386785",
+   "extent": "3 letters Lake to Murray, 1804",
+   "cipher": "Morgan: \"See MA 1267.3 for the text of this letter without the ciphers\"; \"written primarily in cipher\"."
+  },
+  "prior_art": {
+   "decode": "known.py on MA 1267, Lake, Holkar: no DECODE record.",
+   "tomokiyo": "No Tomokiyo page for Lake/Murray 1804 found.",
+   "lasry": "No Lasry item found for Lake/Murray 1804.",
+   "edition": "MA 1267.3 is a clear text of the 9 Nov letter on record in the volume.",
+   "literature": "Searched Lake Murray 1804 cipher: only Morgan catalogue records."
+  },
+  "key_check": "No key held; the clear copy MA 1267.3 would give a crib for the others; not seen.",
+  "duplicates": "known.py: sweep rows only; the asia_india Barry Close/Holkar lead is a different letter."
+ }
+}

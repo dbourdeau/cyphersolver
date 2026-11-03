@@ -6,7 +6,7 @@
 
 "b" and "r" stand for every out_bNN or out_rNN file. A lead the review left unvetted keeps its note. A lead closed key_lookup with no
 reading on record loses that verdict, because a key no longer closes a lead (rule of 3 Nov 2026)."""
-import collections, json, pathlib, sys
+import collections, json, pathlib, re, sys
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(ROOT / 'docs'))
@@ -38,6 +38,8 @@ def blocks(names):
                 l['vetting'].pop('verdict')
             tally['unvetted'] += 1; continue
         b = dict(b)
+        if re.match(r'[bcr]\d\d', str(b.get('by'))):
+            b['by'] = 'claude leads review batch ' + b['by']
         l.update(b.pop('lead_updates', None) or {})
         l['vetting'] = b
         l.pop('vetting_note', None)

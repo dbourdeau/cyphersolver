@@ -1,0 +1,120 @@
+{
+ "1964": {
+  "unvetted": "needs Chrome: https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?&repositoryCode=PL-53&term=szyfr&levelName=clevel&t=fa&recordId=PL-53-892%2F0&c=C44583420 . Archives Portal Europe returns the Cloudflare 'Just a moment' page to curl and WebFetch, so the PL-53 unit 799 record (6 letters, 'lacinski szyfr', Berczeny 1710-11) was not read and no leaf or scan was seen; the description alone does not show ciphertext survives. known.py (Berczeny, Rakoczi, 'unit 799') found only this lead's own sweep row and unrelated Rakoczi catalogue entries (Papai 1710, Klement 1710, Comenius 1655). Web searches (Berczeny/Bercsenyi szyfr AGAD 1710; Rakoczi rejtjelkulcs P 396) found Lang's and Revay 1974's studies of Rakoczi ciphers but no decipherment of this unit; the Archivum Rakoczianum edition of the 1708-11 Bercsenyi correspondence was not opened."
+ },
+ "1965": {
+  "unvetted": "needs Chrome: https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?&repositoryCode=PL-53&term=szyfr&levelName=clevel&t=fa&recordId=PL-53-892%2F0&c=C44583608 . Archives Portal Europe is behind Cloudflare for curl and WebFetch, so the PL-53 unit 987 record (Rakoczi, 9 letters 1713-17, 'szyfr') was not opened and no leaf was seen; 'szyfr' in the description does not show ciphertext survives. known.py (Rakoczi, 'unit 987') found only the sweep row and other Rakoczi catalogue entries. Web search for Rakoczi exile-period ciphers and the P 396 keys found Revay 1974 and Lang (Rakoczi's French homophonic system with Sieniawska) but no decipherment of these letters; keys at HU-MNL P 396 no. 379 / 11345 are held in Budapest, untested."
+ },
+ "1966": {
+  "unvetted": "SOAS Library catalogue (library.soas.ac.uk/Record/MS_380667.03, Dodwell papers 'Various letters & notebook') did not resolve from curl or WebFetch (ENOTFOUND), and the Archives Portal Europe copy is behind Cloudflare (needs Chrome: https://www.archivesportaleurope.net/advanced-search/search-in-archives/results-(archives)/?&repositoryCode=GB-102&term=cypher&levelName=clevel&t=fa&recordId=gb102-ms380667&c=C1100115814 ), so no leaf or full description was seen. Found: the web-search snippet of the SOAS record says 'cypher letter from Dupleix, 30 May 1752'. Prior art not excluded: Furber's typescripts of Dupleix correspondence Jan-May 1752 (archive.org DupleixPapersFurber, from AD Essonne E 3750) include Dupleix letters of 30 May 1752 with numeric cipher passages, and I could not tell whether the SOAS item is a copy of one. known.py found no Dupleix 1752 hit."
+ },
+ "1136": {
+  "unvetted": "Umbrella record for 63 cipher-marked items in TNA PRO 30/11 (Cornwallis Papers), not one document. TNA Discovery API (e.g. PRO 30/11/3/6-7, 16 Aug 1780, 'Letters in number cipher taken from Baron de Kalb') confirms the items are catalogued as cipher but digitised=false, so no leaf can be seen; Saberton 2010 (The Cornwallis Papers, Naval & Military Press) and his JAR 2019 article are the edition that decodes the Common Cipher letters and are not online. Web search (Cornwallis Papers Saberton Common cipher) found only the JAR post 'Decoding British ciphers used in the South, 1780-81' and a Discovery record 'mostly in cipher, not deciphered', no per-item concordance. Needs splitting into single items and a Saberton check before any item can be vetted."
+ },
+ "1137": {
+  "unvetted": "Series-level record for 25 items in TNA PRO 30/55 (Carleton Papers), not one document. TNA Discovery API confirms the item types but digitised=false: 55/16/147 is a 'Proposed Cypher' (Haldimand, 26 May 1779; a key, not a ciphertext), 55/19/98 is 'Clinton to Haldimand. Letter in cypher' (22 Oct 1779), 55/24/76 is a cipher letter noted as matching a British Museum copy (a decipherment exists). No Report on Canadian Archives (Haldimand) or Saberton check per item; web search for the Carleton/Haldimand cypher found no deciphering source. known.py PRO 30/55 found only the sweep rows. Needs splitting by item."
+ },
+ "1138": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b35",
+  "verdict": "partly_read",
+  "seen": {
+   "kind": "transcription",
+   "where": "Warburton, Memoirs of Prince Rupert and the Cavaliers (1849) vol. III, archive.org memoirsofprincer03warbuoft_djvu.txt, pp. 27-28, 73-74, 100, 125-131; TNA Discovery API records for D(W)1778/I/i/37, /39, /45",
+   "extent": "12 items 1644-45 in the Staffordshire catalogue; the printed text of /39 (10 Oct 1644), /45 (31 Mar 1645) and /56 read in Warburton; no Staffordshire scans online (digitised false)",
+   "cipher": "Staffordshire catalogue: 'In code' (/37 Master of the Horse, 30 Apr 1644; /39 'Digby and the Prince now friends on the surface ... in code'; /45 'Army movements ... in code'). Warburton prints the same letters as plain English with only Rupert's and Digby's names left as '[Rupert cipher]' / '[Cipher for Digby]', so a decipherment is in print."
+  },
+  "prior_art": {
+   "decode": "known.py (D(W)1778, Legge) searches the harvested DECODE dump: no Legge-Rupert record; siblings /56 and /59 are already catalogue 864 and 865.",
+   "tomokiyo": "Cryptiana posts 'A bundle of ciphers of Lord Digby' (Oct 2024) and 'Cipher letters to Charles I' (Sep 2023) read: they cover Digby and Richmond keys in BL Add MSS 18982-3, not these Legge letters.",
+   "lasry": "No Lasry paper or GL.htm entry on the Dartmouth/Legge letters found; Rupert keys in SP 106 / Add MS 18982 are the candidates.",
+   "edition": "Warburton 1849 vol. III prints /39 (pp. 27-28, 10 Oct 1644), /45 (p. 73-74, Hereford 31 Mar 1645), /54 (p. 100) and Digby's 30 June 1645 letter /56 (pp. 125-128) as plain text, checked in the archive.org full text.",
+   "literature": "Eva Scott's Rupert biography cites Warburton for the Legge letters; HMC Dartmouth report not opened. No modern decipherment found."
+  },
+  "key_check": "Rupert-Legge nomenclature not held; BL Add MS 18982-3 and SP 106 keys (Rupert, Digby, Richmond) exist but were not tried here because the printed plaintext already exists for half the items.",
+  "duplicates": "known.py D(W)1778 and Legge: /56 is catalogue 864 and /59 is catalogue 865; no other row for /37-/55.",
+  "closed": "Six of 12 items have a decipherment in print: Warburton 1849 (archive.org full text) gives /39 vol. III pp. 27-28, /45 pp. 73-74 (Hereford 31 Mar 1645), /54 p. 100 and /56 pp. 125-128; /37 matches Warburton II pp. 406-408 by content. Items /46 /47 /48 /49 /53 /55 and /59 were not found in Warburton and remain candidates for single-item leads. Note catalogue 864 (/56, 'coded part not deciphered') is in print in Warburton III pp. 125-128 and should be re-checked."
+ },
+ "1139": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b35",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery API record 6c291438-302c-45c4-94d6-2c707d152818 (Kresen Kernow RS/1/1054), digitised=false",
+   "extent": "one letter, 15 Aug 1644; length unknown (no images)",
+   "cipher": "Kresen Kernow description via Discovery: 'From Duke of Richmond and Lennox to Prince Rupert, (mainly in code); description of Duke of Richmond'."
+  },
+  "prior_art": {
+   "decode": "known.py (RS/1/1054, Richmond) searches the harvested DECODE dump and the repo: only this lead's own sweep rows; no DECODE record for a Richmond-Rupert 1644 letter.",
+   "tomokiyo": "Cryptiana 'Cipher letters to Charles I of England' (Sep 2023) mentions 'the D: of Richemonds Cyfer' in BL Add MS 18983 ff.15-16 (1645); 'A bundle of ciphers of Lord Digby' (Oct 2024) fetched and has no Kresen Kernow item.",
+   "lasry": "No Lasry paper or GL.htm entry on a Richmond-Rupert 1644 letter found in two searches.",
+   "edition": "Warburton 1849 vols II-III full text from archive.org grepped for Richmond and Aug 1644: no Richmond to Rupert letter of 15 Aug 1644 printed (the Aug 15 Boconnock letter there is Digby's). No calendar found for the Kresen Kernow RS series.",
+   "literature": "Cryptologia 2022 'Wilmot's blots' article (Royalist cipher June 1644) covers other letters; no decipherment of this Richmond letter found."
+  },
+  "key_check": "Richmond's own cipher is attested ('D: of Richemonds Cyfer', Add MS 18983) and Tomokiyo has reconstructed a related Charles-Rupert cipher; not held here, not tested; BL Add MS 18982 keys also untried.",
+  "key_held": "Richmond/Charles I cipher reconstructed from BL Add MS 18983 ff.15-16 (Tomokiyo, Cryptiana Sep 2023); untested against this letter.",
+  "duplicates": "known.py RS/1/1054 and Richmond: only this lead's own sweep rows; no catalogue entry or target for this letter.",
+  "searches": [
+   {
+    "query": "Duke of Richmond Lennox letter to Prince Rupert 15 August 1644 Boconnock cipher code Kresen Kernow RS/1/1054",
+    "result": "No page for this letter; surfaced BL index of Richmond-Rupert letters (1645, partly cipher) and Cryptiana's 'D: of Richemonds Cyfer' note; nothing deciphering the 15 Aug 1644 item."
+   },
+   {
+    "query": "Royalist cipher Prince Rupert Legge Richmond Digby letters in cipher deciphered Lasry Rupert cipher key",
+    "result": "Found Cryptiana Digby bundle and Charles I cipher posts and BL catalogue records; no Richmond 1644 decipherment, nothing from Lasry on Richmond."
+   },
+   {
+    "query": "Warburton Memoirs of Prince Rupert full text grep Richmond August 1644 (archive.org memoirsofprincer03warbuoft)",
+    "result": "Ran the grep on the full text: 15 Aug 1644 entry is Digby from Boconnock, no Richmond to Rupert letter printed."
+   }
+  ]
+ },
+ "1140": {
+  "unvetted": "Extent of the code is unknown and no leaf was seen. TNA Discovery API for OG/BB/492 (Isle of Wight RO, 6 Nov 1648, digitised=false) gives a mostly plain calendar ('the treaty is postponed for 14 days ... if Osborne comes to you, use him well') followed by '[Letter partly in code]', so it may be only a few coded words, and the addressee is not named. Two web searches (Oglander OG/BB/492; Oglander Newport treaty partly in code) found only the Oglander Collection overview and no edition or decipherment. known.py Oglander: only the sweep rows. Needs the record page or a scan at the Isle of Wight Record Office to size the cipher."
+ },
+ "1143": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b35",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive"
+  },
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery API record C7328029 (SP 78/113/57 f.106), digitised=false",
+   "extent": "one despatch, f.106, 24 Feb 1657; length unknown (no images)",
+   "cipher": "TNA Discovery description: 'Folio 106: Despatch largely in cipher from [Wm. Swyfte].'"
+  },
+  "prior_art": {
+   "decode": "known.py (SP 78/113, Swyfte) searches the harvested DECODE dump and the repo: only this lead's own rows and the TNA sweep; no DECODE record.",
+   "tomokiyo": "Cryptiana mention of Thurloe's agents' ciphers found in a search but no post on Swyfte or this despatch.",
+   "lasry": "No Lasry or GL.htm entry on Lockhart/Swyfte or Thurloe-era Paris ciphers found.",
+   "edition": "Opened Birch's Thurloe State Papers vol. 6 (archive.org collectionofstat06thur full text) for Feb 1657: Swyft appears only as Lockhart's secretary (a Needham letter to him); no Swyft despatch of 24 Feb (N.S. or 14 Feb O.S.) is printed; Lockhart's Paris letters of Feb 1657 are printed with some cipher groups still as bare numbers. BHO pages for the volume redirect-loop to curl and WebFetch, so the archive.org text was used. No calendar covers SP 78 for 1657.",
+   "literature": "Search for Swyfte/Lockhart Paris 1657 cipher found only BHO Thurloe pages and BL cipher-key catalogue records; nothing on a decipherment of SP 78/113/57."
+  },
+  "key_check": "Thurloe/Lockhart numeric nomenclature (cipher groups visible in Thurloe vol. 6, e.g. 'ing497may not prejudice him in 418 348 343') is not a full key; BL holds about thirty Thurloe-office codes; none tried here.",
+  "key_held": "Partial: groups left undeciphered in Birch's print of Lockhart's Feb 1657 letters (Thurloe vol. 6); no full key; not tested.",
+  "duplicates": "known.py SP 78/113 and Swyfte: only lead 1143 itself and its sweep rows; no catalogue entry or target.",
+  "searches": [
+   {
+    "query": "\"Swyfte\" Paris 1657 Thurloe despatch cipher deciphered \"SP 78/113\"",
+    "result": "Found SP 78/113/64 (9 Mar 1657, Swyfte's hand) and BHO Thurloe pages; nothing says SP 78/113/57 was deciphered or printed."
+   },
+   {
+    "query": "William Swyfte English agent Paris 1656 1657 Cromwell Thurloe letters cipher",
+    "result": "Only novel results for Will Swyfte; BL Thurloe cipher-key records; no decipherment of this despatch. Birch's text shows Swyft was Lockhart's secretary."
+   },
+   {
+    "query": "Tomokiyo cryptiana Commonwealth Protectorate ciphers Thurloe Lockhart Swyfte cipher decipherment",
+    "result": "Cryptiana pointers to Thurloe's agents' ciphers; no post on Swyfte or Lockhart's Feb 1657 despatches."
+   }
+  ]
+ },
+ "1146": {
+  "unvetted": "Seven items from different archives and decades (SP 81/44/225 Roe July 1638 'postscript in cipher'; SP 81/46/273 c.1639 'Portion in cipher concerning Prince Palatine and France'; SP 84/130/27 c.Nov 1625 'Portion in cipher concerning Mansfelt'; SP 77/28/643 Gerbier c.1638 'cipher letter on Taylor's accusations'; plus SP 81/37/284, 81/38/250, 77/6/229), none digitised (TNA Discovery API, digitised=false), so no leaf seen. Akkerman, Correspondence of Elizabeth Stuart vol. II (OUP 2011; seven ciphers deciphered, Gerbier letterbook key reconstructed) is the edition most likely to print the Roe and Gerbier passages and is not online; a search for Akkerman's ciphers returned only reviews. known.py (SP 81/44) shows only the sweep rows. Needs splitting into single items and an Akkerman index check."
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "1303": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b61",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Internet Archive full text of 'Adventure v089 n01 [1934-07]' (archive.org/details/AdventureV089N01193407), 'Ask Adventure' column, OCR djvu text around line 15650",
+   "extent": "three lines of 30 digits (90 digits), written in ink without spacing on plain letter paper, per the printed request",
+   "cipher": "Read the OCR text of the column: 'The figures below, which appear to be some kind of code or cipher, were found by a friend of mine while examining some valuable old letters and papers', signed T. F. Riddell, Champaign, Ill.; the three digit lines are printed (OCR has two digit errors, so the digits must be taken from Schmeh's transcription); the expert Francis H. Bent offers no solution and only refers the writer to the War Department, Bureau of Investigation and a crime lab. No decipherment is printed with it."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo, Cryptoole list) on 'Ridell', 'Adventure': hits only this lead's own rows; the message is not on DECODE.",
+   "tomokiyo": "Not in Tomokiyo's cryptiana lists as far as a web search for the digit string and 'Adventure 1934 cipher' showed; no decipherment recorded there.",
+   "lasry": "No Lasry paper or GL.htm entry mentions the Adventure 1934 numeric message (searched by title and digits).",
+   "edition": "The July 1934 issue itself prints only the request and Bent's non-answer; the text of the issue was searched for a later reader solution and none is in this issue. The editors reportedly never received a solution (Schmeh).",
+   "literature": "Reprinted in Cryptologia 12(4) 1988 (R. A. J. Matthews, 'A pulp magazine cipher') with no solution; Schmeh (Cipherbrain 22 Apr 2018) reports Wagner and Biermann found nothing; Pulpflakes 2018 also says no solution known."
+  },
+  "searches": [
+   {
+    "query": "\"Ridell\" Adventure magazine 1934 cipher 90 digits solved",
+    "result": "Schmeh 2018 post and Pulpflakes 2018 both say no solution known; Wikipedia List of ciphertexts has no solved entry."
+   },
+   {
+    "query": "942293906259174689397998395946 cipher",
+    "result": "No page carries this digit string as a known or solved cipher; only SEO filler."
+   },
+   {
+    "query": "Cryptologia 1988 Adventure magazine 1934 unsolved numeric cryptogram Champaign Illinois letters papers",
+    "result": "Cryptologia 12(4) 1988 Matthews 'A pulp magazine cipher' listed; reprint reports no solution."
+   }
+  ],
+  "key_check": "No key exists or is held; the writer says it was found among old letters, origin unknown. Tried nothing here beyond reading the column: the 'Poe codebook' reader solution was reported as fitted and rejected by Schmeh's thread.",
+  "duplicates": "known.py on 'Ridell', 'Adventure', 'Ask Adventure' (3 Nov 2026): only this lead's own rows in leads.json and research/us_wars; no catalogue entry or target for it.",
+  "verdict": "open",
+  "lead_updates": {
+   "access": "online"
+  }
+ },
+ "1304": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b61",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Dealer page images https://www.americanstampdealer.com/images/cipher2.jpg (back of the cover, 533x901) and cipher1.jpg (front), from the Kaufmann article page",
+   "extent": "back of one cover: 8 short lines of dotted numbers (5 to 7 numbers each), each with a plain word written beneath it",
+   "cipher": "Numbers 1-23 separated by dots, each line with the plaintext letters written spaced under the numbers: c a i s s o n; i t c h (?) with 'A disagreeable'; c a n t e e n; p o t t e s w o o d (struck through); l o u s e; t r o u t (?); p i r a t e d; and a last signature-like scrawl read as 'Trevy'. The decipherment is on the leaf itself, in the writer's hand."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'Rawlings', 'Keswick': hits only this lead's own rows; no DECODE record.",
+   "tomokiyo": "Not carried in Tomokiyo's cryptiana unsolved or US lists (t_us/t_unsolved scan and web search found nothing).",
+   "lasry": "No Lasry paper or GL.htm entry for this cover.",
+   "edition": "Kaufmann, American Stamp Dealer & Collector article 'A Mysterious Confederate Cipher Cover' prints the cover words as the partial decoded message; the Keswick Depot census lists no further text.",
+   "literature": "Schmeh, Cipherbrain 20 Dec 2018: comments (schorsch's number-to-letter table, SantaColoma's reading) work on the same glosses; no published full analysis."
+  },
+  "key_check": "No key held or in print; the numbers are a homophonic table (a letter has several numbers) not one of the four known Confederate Vigenere keys; the glosses on the leaf give the table directly.",
+  "duplicates": "known.py on 'Rawlings', 'Keswick', 'Hardaway' (3 Nov 2026): only this lead's own rows (leads.json, research/us_wars); no catalogue entry or target.",
+  "verdict": "read",
+  "closed": "Every number line on the back of the cover has its plaintext letters written beneath it in the writer's own hand (caisson, canteen, potteswood struck out, louse, pirated, and 'itch', 'trout', 'Trevy' as the odd ones), which is an interlinear decipherment on the leaf; the cipher is a self-glossed homophonic jotting, so nothing remains to solve beyond the table the glosses already give."
+ },
+ "1305": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b61",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Schmeh Cipherbrain 24 Feb 2019 post images (files/2019/02/Yardley-Challenge.png, 463x527, the book plate captioned 'A Type of Love Letter Held Up by the Censor', and 2014 Yardley-Cryptogram.png); the book text itself is on archive.org (american-black-chamber-ii-watermark)",
+   "extent": "one page of about 20 lines of symbol cipher with a 900 QUE margin note (plate in the book); the online book text OCR does not carry the symbols",
+   "cipher": "Plate seen: a full page of symbol-cipher lines (crosses, circles, bars) with a hand-ticked margin; the post prints the plaintext reached by Krauss and Jan beneath it, so a decipherment is on record for most of the message."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'Yardley', 'Black Chamber': hits are other Yardley catalogue entries (Mauborgne 1917, Nauen), not this plate.",
+   "tomokiyo": "Not carried in Tomokiyo's cryptiana lists as far as searched; no decipherment recorded there.",
+   "lasry": "No Lasry paper or GL.htm entry for the Yardley 1931 challenge cryptogram found.",
+   "edition": "The 1931 book prints the cryptogram with no plaintext; the archive.org text (581 KB djvu) was grepped for 'Mexico City' and 'we are doing' and finds no solution in the book.",
+   "literature": "Schmeh 2019 prints the readers' reading: 'MEXICO CITY WE ARE DOING WELL ON OUR JOB GET HARD ON THEM OUR AIM IS TO SEND THEM TO HELL', with a tail still gapped; Friedman's pencil attempt in his copy noted by a commenter."
+  },
+  "key_check": "No key exists (a simple substitution solved by the readers); nothing held here.",
+  "duplicates": "known.py on 'Yardley', 'Black Chamber' (3 Nov 2026): no entry for this plate; catalogue Yardley entries are other documents.",
+  "verdict": "partly_read",
+  "closed": "A decipherment of most of the plate is on record: Armin Krauss and Jan's reading in Schmeh's post of 24 Feb 2019 ('MEXICO CITY ... WE ARE DOING WELL ON OUR JOB GET HARD ON THEM ...'), with only a tail of the message gapped, so the main text is already prior art."
+ },
+ "1249": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b61",
+  "seen": {
+   "kind": "facsimile",
+   "where": "Wikimedia Commons File:Encoded_letter_of_Gabriel_Luetz_d_Aramon_after_1546_with_partial_deciphering.jpg, 3034x2058 exhibition photo of 2007 (viewed at 1920 px); Commons gives 'photographed at Ecouen Museum', no inventory number",
+   "extent": "one open bound register, two pages, about 40 lines of sign cipher",
+   "cipher": "Seen: a bound volume open at two pages of crosses, bars and numeral-like signs in running lines, with clear French words written in the interlinear spaces and margins above many sign groups, i.e. an interlinear (contemporary or later) partial decipherment on the leaf; the object is a register page, not a single letter, and the volume is not identified."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) on 'Aramon', 'Ecouen': only this lead's own rows and repo target huyson1547; not on DECODE.",
+   "tomokiyo": "Not found in Tomokiyo's cryptiana by search on Aramon plus cipher.",
+   "lasry": "No Lasry paper or GL.htm entry on an Aramon letter found.",
+   "edition": "No edition identified: Chesneau's Voyage de M. d'Aramon (Schefer 1887) is a narrative, not the despatches; the Ecouen 2009-10 Francois I and Soliman exhibition catalogue not opened.",
+   "literature": "Web searches (Ecouen, Aramon chiffre, Henri II cipher box bulletin ARCSI) found no article on this object or its decipherment."
+  },
+  "key_check": "No key held for this object; huyson1547 code words not applied because the signs cannot be transcribed from a display photo.",
+  "duplicates": "known.py on 'Aramon', 'Ecouen' (3 Nov 2026): the lead's own rows, huyson1547 (a different Huyson/Aramon document), no catalogue entry.",
+  "verdict": "partly_read",
+  "closed": "The Commons title says 'with partial deciphering' and the photo shows clear words interlined above many sign groups on the open register pages, so a decipherment of part of the text is already written on the leaf; the object itself is not identified and only a display photo exists, so no fresh target arises until the Ecouen/Joconde record is found."
+ },
+ "1299": {
+  "unvetted": "needs Chrome: https://bibliotheques-numeriques.defense.gouv.fr/emd/impression/document/2bc715e2-0c87-4ded-899c-253d205989e5 (curl gets a Cloudflare challenge or a refused connection, WebFetch ECONNRESET). It is only an inventory notice, no ciphertext seen; Pusch, Louisiana History 49/4 (2008) reconstructs Kerlerec's code for 1752-63 letters and is not opened, so prior art is unanswered."
+ },
+ "1300": {
+  "unvetted": "needs Chrome: https://historiamexicana.colmex.mx/index.php/RHM/article/download/1751/1569 (Cloudflare 403 to curl). Cluster-level record (Obregon 1825 despatches beyond Narvaez's two decodings, no identified item or scan online); Narvaez, Historia Mexicana 231 (2009) and the AHGE legajo unopened, so prior art unanswered."
+ },
+ "1301": {
+  "unvetted": "Torrens notes 2 (23 Jan) and 3 (9 Apr) 1826: no scan online; Narvaez, Memorias Acad. Mex. Hist. 49 (2007-08) pp. 7-43 and his 2019 book (Criptografia diplomatica 1813-1926, SRE) not found online, so whether the notes are deciphered in print is unanswered. Narvaez EHMCM 38 (open PDF read, https://moderna.historicas.unam.mx/index.php/ehm/article/download/17768/16948/25169) confirms notes 2 and 3 are dense numeric cipher plus code but covers the 1829 diary."
+ },
+ "1551": {
+  "unvetted": "needs Chrome: https://www.internetculturale.it/it/16/search/detail?instance=magindice&case=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AAutografiPalatini%3AMachiavelli_IV_104 (image files return 404 or 'Preview non disponibile' to curl). Editions that would decide it, Machiavelli Opere III (UTET 1984) no. 181 and Bausi 2022, are not online; an earlier Chrome look found only about 5 signs for one name."
+ },
+ "1552": {
+  "unvetted": "needs Chrome: https://www.internetculturale.it/it/16/search/detail?instance=magindice&case=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AAutografiPalatini%3Avol_VI_n_38 (image files 404 to curl). The covering edition, Lorenzo de' Medici Lettere VI (Giunti 1990) nos. 542/542 A, is not online (three web searches), so whether the slip is printed deciphered is unanswered."
+ },
+ "1553": {
+  "unvetted": "needs Chrome: https://www.internetculturale.it/it/16/search/detail?instance=magindice&case=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AAutografiPalatini%3Avol_VI_n_62 (curl gets the record XML but the images return 404 or 'Preview non disponibile'). The covering edition, Lorenzo de' Medici Lettere XVI (Boninger, Giunti 2011), is not online, and Marco Vito (Vienna) works on Medici ciphers of 1486-91, so prior art is unanswered."
+ }
+}

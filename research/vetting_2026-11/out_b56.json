@@ -1,0 +1,200 @@
+{
+ "1257": {
+  "unvetted": "needs Chrome: https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/824398 (Rawl. A. 286 fol. 60) and /archival_objects/828080 (Rawl. C. 392); Bodleian archives site answers curl with an Anubis proof-of-work page (7 KB), so the catalogue text and any digitised leaf could not be read. Web search shows only the catalogue lines (A.286 fol. 60 and fol. 72 partly in cipher); no edition of the Robinson papers, no key, no decipherment found; 863/1151 are the SP 91 Moscow series, a different document set."
+ },
+ "1258": {
+  "unvetted": "needs Chrome: https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/7831 (MS. Carte 212). TNA Discovery gives the catalogue line 'written with a kind of cipher by the help of substituted words (partly deciphered)', and web search found no print or decipherment of the volume, but the Bodleian page (Anubis proof-of-work) could not be opened, so it is unknown whether a decipherment is interlined or whether the volume is copies and breviates in plain; lead 873 is the same volume already closed as a duplicate of this lead."
+ },
+ "1884": {
+  "unvetted": "SP 105/60/168 is Stepney's own letter to Kinsky of 8/18 Jan 1694 (TNA Discovery C6822068, read by curl: 'Gives contents of this letter which is entirely in cipher'); the cipher letter from Paget is only summarised, so no ciphertext is shown to survive on f. 168, and the item is not digitised. Needs an image of f. 168 (TNA Kew) or a neighbouring folio; not a not_cipher either, since the leaf was not seen. Lead 1150 (Stepney SP 105/58-60) tracks /60/121, /123, /135, not this folio."
+ },
+ "1885": {
+  "unvetted": "IOR/G/17/5 ff. 228-232 is described by the BL/TNA catalogue only as 'Copy of cipher letter from Sir Robert Ainslie to Peter Michell' (TNA Discovery record read by curl; not digitised); it does not show whether the copy holds cipher groups or is the deciphered text read in Court on 17 Aug 1779. Web searches (Ainslie Michell Suez 1779) found no print or decipherment. Needs the volume at the India Office reading room."
+ },
+ "1886": {
+  "unvetted": "IOR/G/17/6 Part 1 ff. 59-68 is catalogued only as 'Copy of cipher letter from Sir Robert Ainslie to the Marquis of Carmarthen ... Marked U.P.' (BL record 041-000176650 read by curl: Digitised Content blank, one item); ten folios may be a deciphered copy rather than ciphertext, and nothing shows which. Web search for Ainslie 1787 cipher found no print or decipherment. Needs the volume at the India Office reading room."
+ },
+ "66": {
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R722 page 2 (IMG_R722_I4123_P2.png, full-size fetched 3 Nov 2026 to scratch; TNA SP 106/10 ff. 193-195); record lists three page images",
+   "extent": "Page 2: about 14 numbered lines of three-figure groups across the whole leaf (about 420 groups in the transcription), many struck through; short Italian words and syllables written between the groups ('Per mi che', 'Jo mi credo che').",
+   "cipher": "Three-figure homophonic/syllabic code groups in lines. The codebreaker's attempts are written over them: scattered Italian words, cancelled values and a few resolved groups, not a continuous decipherment; DECODE status 'Partially decrypted' (Nomenclatures, Homophonic substitution)."
+  },
+  "prior_art": {
+   "decode": "DECODE R722 (record page fetched 3 Nov 2026 and known.py over the harvested dump): 'Partially decrypted', Nomenclatures + Homophonic substitution, plaintext 'probably Italian'; no decryption attached; worksheets R703 R656 R661-R663 R667 R684 R701 R702 R720 are other pages of the same file.",
+   "tomokiyo": "Searched 'Cryptiana OR Tomokiyo Venetian secretary cipher 1625 England SP 106': no Tomokiyo or Cryptiana item on this letter; unsolved.htm in the repo has no Venetian 1625 entry.",
+   "lasry": "Searched Lasry/DECRYPT/HistoCrypt with 'Venetian cipher 1625 SP 106': nothing; GL.htm has no SP 106/10 Venetian entry.",
+   "edition": "CSP Venetian vols 18 and 19 (BHO, Hinds) cover 1625: the Pesaro dispatches print Venice's own deciphered texts, but searches on 'Cypher of a Venetian Secretary' and Spinola/Breda/Bethune found no printed reading of this intercepted letter; SP 106 is not calendared in CSP Domestic.",
+   "literature": "Web search found nothing on this intercept; Venetian cipher history (cifrista, Council of Ten cipher change of March 1625 in CSP Venetian) is background only."
+  },
+  "key_check": "No full key held. R701 p.3 (the codebreaker's partial key) and clear-text junctions give four values and a few more; annealing on 420 groups did not converge (targets/sp106r722). Neither blocks the lead.",
+  "key_held": "Codebreaker's partial key R701 p. 3 held on DECODE and in the repo; partial only, tested without reaching a reading.",
+  "duplicates": "known.py 'R722' 'SP 106/10' (3 Nov 2026): this lead, catalogue 58 (R931, a different letter), targets/sp106r722; R703 is the worksheet of this same letter. No other entry for ff. 193-195.",
+  "searches": [
+   {
+    "query": "\"Cypher of a Venetian Secretary\" 1625 Spinola Breda State Papers Venetian ambassador England",
+    "result": "No hit on the endorsement; only CSP Venetian vol. 18-19 entries for Breda/Pesaro 1625, none printing this letter."
+   },
+   {
+    "query": "SP 106/10 Venetian cipher 1625 deciphered Calendar of State Papers Domestic Charles I intercepted Venetian",
+    "result": "Nothing on SP 106/10; hits were Charles I 1648 and Restoration key material."
+   },
+   {
+    "query": "Cryptiana OR Tomokiyo Venetian secretary cipher 1625 England State Papers SP 106 codebreaker",
+    "result": "No 1625 Venetian item; a 1628 Dover seizure of Contarini's papers in CSP Venetian is the nearest, not this letter."
+   },
+   {
+    "query": "Calendar of State Papers Venetian 1625 Pesaro secretary cipher letter Spinola Breda Bethune Pope intercepted decipher",
+    "result": "Vol. 18-19 Pesaro dispatches and the Council of Ten cipher-change order of March 1625 only; no reading of the intercepted letter."
+   }
+  ],
+  "verdict": "open",
+  "date": "2026-11-03",
+  "by": "claude leads review batch b56"
+ },
+ "74": {
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R7927 (4 images fetched 3 Nov 2026 to scratch; page 2 viewed full-size), BL Add MS 32270 ff. 16-17",
+   "extent": "Page 2 shows a German letter in clear with about 14 dot-separated numeric runs (e.g. 53.474, 38.33.799.48.40.49, 9.23.40.34.39.41.37) of 2-79 plus 3-digit codes (230, 432, 423, 380); roughly 160 letter tokens plus codes.",
+   "cipher": "Homophonic number cipher inside a German letter; a few numbers carry small letters or words written over them by the contemporary reader ('n' over 23 and 33, 'der' over 230, a long-s sign over 40). These are scattered value glosses, not a decipherment of the passages; DECODE status 'Partially decrypted'."
+  },
+  "prior_art": {
+   "decode": "DECODE R7927 'Partially decrypted' (Author Palm, receiver Staremberg, BL Add MS 32270 ff. 16-17); R7928 is the Windischgraetz-Starhemberg key sheet, R7930 the cover of a Palm-Visconti letter; no decryption attached (record page and known.py over the harvested dump).",
+   "tomokiyo": "Tomokiyo unsolved.htm in the repo and the cryptiana.blogspot 2025 index: no Palm or Starhemberg 1727 item (only an unsolved Adam Starhemberg 1758).",
+   "lasry": "No Lasry paper or GL.htm entry on Palm 1727; PR #21 (Feyseel) word-solver result in the repo finds no German, pointing to the transcription.",
+   "edition": "Searched Palm/Starhemberg 14 March 1727: only the printed Sinzendorf letter to Palm of 20 Feb 1727 and Palm's memorial of 2 March (BHO Letters relating to the Treaty of Vienna) turn up, plain texts, not this cipher; Add MS 32270 is catalogued as cipher keys and deciphers of German States despatches, and no Calendar covers 1727 foreign papers.",
+   "literature": "Searches on Deciphering Branch, Walpole/Townshend and Palm's intercepted correspondence found no HistoCrypt or Cryptologia article on this letter."
+  },
+  "key_check": "R7928 (Windischgraetz-Starhemberg key) does not fit; values glossed on the leaf (33=e, 23=n, 10=d, 15=t, 40=long s, 230=der) are the only values; 5-gram annealing on 162 tokens failed. Palm's own key not held.",
+  "key_in_volume": "Add MS 32270 is the Deciphering Branch's volume of keys and deciphers; the clear copy of this letter was not located online.",
+  "duplicates": "known.py 'Palm' 'Add MS 32270' 'R7927' (3 Nov 2026): this lead, targets/palm1727 and visconti1727 (R7930/R7931 keys and covers); the other Palm hits (Palmela, Las Palmas) are unrelated.",
+  "searches": [
+   {
+    "query": "Palm Starhemberg 14 March 1727 London letter cipher Add MS 32270 Deciphering Branch Visconti",
+    "result": "BL catalogue gives Add MS 32270 as cipher keys; nothing on the letter; Visconti hits were Milanese 15th c."
+   },
+   {
+    "query": "Karl Josef Palm Imperial resident London 1727 intercepted letter Starhemberg deciphered Walpole Townshend Deciphering Branch",
+    "result": "Only the printed Sinzendorf letter, Palm's memorial and his dismissal of 1727 (BHO); no intercept or decipherment."
+   },
+   {
+    "query": "cryptiana Palm 1727 Austrian cipher Starhemberg Vienna letters British Library Add MS 32270 decipher DECODE",
+    "result": "Cryptiana 2025 has only Starhemberg 1758; HistoCrypt Austrian items concern Maximilian II 1575; nothing on Palm."
+   }
+  ],
+  "verdict": "open",
+  "date": "2026-11-03",
+  "by": "claude leads review batch b56"
+ },
+ "207": {
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4333 (4 images), R4334 (3), R4335 (3) fetched 3 Nov 2026 to scratch and viewed; Riksarkivet, Oxenstiernska samlingen E 701",
+   "extent": "R4333: p.1 a small slip with a few numeric groups and a line of clear text, p.3 a page of about 20 lines of dotted two-digit numbers; p.2 and p.4 volume photos. R4334: address leaf, a Latin letter page with a left-hand list of headwords, volume title leaf '1624-1625'. R4335: Latin letters, page 1 headed 'd. 10 Nov. 1624' (pencil), with names written in shifted letters.",
+   "cipher": "R4333 is a continuous numeric cipher (DECODE: Numerical, Non-decrypted). R4334 and R4335 are Latin letters in clear with proper names and some words in a letter-shifted alphabet (heading 'Hkktrsghr ds fdmdgqd Cnlhmd' set against 'Illustrissime et generose Domine'), DECODE: Alphabet, Non-decrypted. No decipherment is written on any page. The 1624 dates conflict with the lead's 1628."
+  },
+  "prior_art": {
+   "decode": "DECODE R4333, R4334, R4335 all 'Non-decrypted' with no plaintext attached (record pages fetched 3 Nov 2026; known.py hits only this lead and the Rusdorff 1625 key remark).",
+   "tomokiyo": "Not in Tomokiyo's unsolved.htm (repo copy) or Cryptiana; web search 'Rusdorff Oxenstierna cipher' returned only the Waldispuehl and Kopal Heusner 1637 paper.",
+   "lasry": "Lasry read R4336-R4337 (Rusdorff, London, Feb 1625, PR #72), R4282 and R4306; none of R4333-R4335; searched 'Lasry Rusdorff Oxenstierna cipher' and found nothing newer.",
+   "edition": "Rusdorff's Memoires et negociations secretes (Leipzig 1789) draw on his own papers (Camerarius family collection in Munich), not Stockholm, and was not found online to open; AOSB (Axel Oxenstiernas skrifter och brefvexling) Avd. 2 volumes are by correspondent (Horn, Bonde, De la Gardie, Spens/Rutgers) and none for Rusdorff was found; the archive.org volumes opened by full text had no Rusdorff letter of 1624 or 1628.",
+   "literature": "Waldispuehl and Kopal (Cryptologia 2024) on Heusner 1637 is another Oxenstierna cipher; no study of Rusdorff to Oxenstierna 1624-28 found."
+  },
+  "key_check": "The rusdorff1625 key (R4336-R4337) does not fit R4333 (already tested in the repo); R4333 numeric values 8-13 and 100-107 are not in the box keys tried; R4335's simple letter shift is evident from the heading and is not yet a tested key.",
+  "key_held": "rusdorff1625 key (Lasry, PR #72) held and tried on R4333 without a fit; the Riksarkivet key box R4259-R4329 not yet tried.",
+  "duplicates": "known.py R4333 / Rusdorff Oxenstierna (3 Nov 2026): this lead, targets/rusdorff1628; R4284 and R4338-R4341 are separate entries (lead 1614); R4336-R4337 read, not here.",
+  "searches": [
+   {
+    "query": "Rusdorff Oxenstierna 1628 Den Haag Brief Chiffre Riksarkivet Oxenstierna E 701 Latin letters 1624 cipher",
+    "result": "Only Heusner 1637 (E 622 A) and Riksarkivet volume references; nothing on E 701."
+   },
+   {
+    "query": "Johann Joachim Rusdorff Memoires et negociations Camerarius Oxenstierna 1624 1628 letters edition cipher deciphered",
+    "result": "1789 Leipzig Memoires and a Munich manuscript of Rusdorff's letters 1628-29 in the catalogue, no cipher mention."
+   },
+   {
+    "query": "Lasry Rusdorff Oxenstierna cipher Riksarkivet DECODE homophonic 1625 CTTS decipherment other Oxenstierna letters 1624",
+    "result": "Nothing on Rusdorff; Heusner 1637 and Lasry's Bourbon 1649 only."
+   }
+  ],
+  "verdict": "open",
+  "date": "2026-11-03",
+  "by": "claude leads review batch b56"
+ },
+ "1614": {
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4338 (3 pages), R4339 (4), R4340 (3), R4341 (2), PDF images fetched 3 Nov 2026 to scratch and viewed as contact sheets; Riksarkivet, Oxenstiernska samlingen E 708",
+   "extent": "R4338: Swedish letter Hamburg 8/18 June 1633 (2 pp., fol. 20-21). R4339: letter Lubeck 27 June 1633 plus a Latin postscriptum (fol. 27-29). R4340: Hamburg 15 Aug 1633 (fol. 32-34). R4341: 2 pp. dated Feb 1635, not 1633. Numeric code runs in every letter, dozens per letter.",
+   "cipher": "Swedish letters in clear with runs of dot-separated numbers (two-digit and four-digit values: 1328, 3192, 3105, 4025). Interlinear plaintext words are written over a minority of the numbers on R4338 (pp.1-2, e.g. over 1328 and 3105) and over a larger share on R4341 p.2; R4339 and R4340 runs are mostly bare numbers. These are partial contemporary glosses, not a decipherment; DECODE status 'Non-decrypted'."
+  },
+  "prior_art": {
+   "decode": "DECODE R4338-R4341 all 'Non-decrypted', Numerical, no plaintext attached (record pages fetched 3 Nov 2026); known.py hits only this lead, lead 207 and status notes.",
+   "tomokiyo": "Not in Tomokiyo's unsolved.htm (repo copy); Cryptiana and web search on Salvius/Oxenstierna 1633 cipher found nothing.",
+   "lasry": "Lasry read R4282, R4306 and R4336-R4337 from the same Riksarkivet series; searches found no Lasry or Waldispuehl item on E 708 or on Salvius.",
+   "edition": "AOSB (Axel Oxenstiernas skrifter och brefvexling) Senare afdelningen volumes on archive.org (Horn, Bonde and others, 8 volumes full-text searched): no letter of 8/18 June, 27 June or 15 Aug 1633 and no Salvius letters; the Riksarkivet Oxenstierna database (Anubis page, not opened) covers 1636-54; no Avd. 2 volume for Salvius found.",
+   "literature": "Waldispuehl and Kopal on Heusner 1637 is the only Oxenstierna-cipher paper found; Salvius's Hamburg residency 1631-34 appears only in biographies without cipher mention."
+  },
+  "key_check": "No key for these records held; R4338 p.1 gloss values (e.g. 1328, 3192, 3105) are the only readings; the rusdorff1625 key is a different cipher; key records R4259-R4329 not tried.",
+  "key_in_volume": "Interlinear glosses on the letters themselves (R4338, R4341) are the key source in the volume; no separate key leaf seen.",
+  "duplicates": "known.py R4338 / 'E 708' (3 Nov 2026): this lead and lead 207 (R4333-R4335, a different cipher) only; R4341 dated 1635 sits in the same series.",
+  "searches": [
+   {
+    "query": "Salvius Hamburg Oxenstierna 1633 brev chiffer dechiffrerat Axel Oxenstiernas skrifter och brefvexling",
+    "result": "Salvius biography only; Heusner 1637 paper; no decipherment of 1633 letters."
+   },
+   {
+    "query": "Johan Adler Salvius Hamburg residentship 1633 cipher letters Oxenstierna Riksarkivet E 708 chiffer",
+    "result": "Salvius resident in Hamburg 1631-34; nothing about E 708 or ciphers."
+   },
+   {
+    "query": "Oxenstiernska samlingen E 708 Salvius Hamburg Lubeck 1633 1635 brev Axel Oxenstierna kodade chiffer nyckel",
+    "result": "Heusner E 622 A paper and Riksarkivet database page; no E 708 item."
+   },
+   {
+    "query": "Salvius Axel Oxenstierna 1633 Hamburg brev Andra afdelningen brefvexling band innehall",
+    "result": "AOSB Avd. 2 volumes are by correspondent (Spens/Rutgers Bd 13 etc.); none for Salvius found."
+   }
+  ],
+  "verdict": "open",
+  "date": "2026-11-03",
+  "by": "claude leads review batch b56"
+ },
+ "1615": {
+  "seen": {
+   "kind": "scan",
+   "where": "DECODE R4933 (2 images) and R4935 (4 images) fetched 3 Nov 2026 to scratch and viewed as contact sheets; Romanian National Archives, Cluj, Kemeny XIX",
+   "extent": "R4933: 2 pages, a folded Hungarian letter with '1658' written at the head and the body in long strings of lowercase letters (letter-substitution cipher). R4935: 4 pages of Hungarian cursive that read as ordinary letter text, with no cipher strings visible.",
+   "cipher": "R4933 is a continuous Hungarian letter in letter substitution (DECODE: Alphabet, Numerical; status N/A), no plaintext written over it. R4935 appears to be a clear-text letter with no ciphered passage seen, so the cipher content of this lead rests on R4933; the date 1658 on the leaf contradicts the 1628 in the shelfmark."
+  },
+  "prior_art": {
+   "decode": "DECODE R4933 and R4935 status N/A, no decryption attached (record pages fetched 3 Nov 2026); R4934 of the same file carries a brown-ink interlinear reading, not these two.",
+   "tomokiyo": "Not in Tomokiyo's unsolved.htm (repo copy); Cryptiana search for Transylvanian princely ciphers found nothing on Kemeny XIX.",
+   "lasry": "No Lasry or GL.htm item on Kemeny or Cluj; the repo's transylvania1645 work recovered the Bethlen key, which does not read Kemeny.",
+   "edition": "Searched Kemeny Janos 1658 rejtjeles level in Hungarian: his autobiography (Szalay 1856, Windisch 1986) is printed but no edition of Kemeny XIX cipher letters appears; the Szeged article on Transylvanian secret correspondence 1623-1658 treats the system, not these letters.",
+   "literature": "Lang, Real Life Cryptology (AUP 2018) and the Romanian-language article on Transylvanian cipher writing cover the genre; neither names Kemeny XIX or R4933 in the snippets seen."
+  },
+  "key_check": "Bethlen family key held (transylvania1645) does not fit the Kemeny records; R4934's interlinear glosses are a possible key source but were not applied to R4933; no print key found.",
+  "key_held": "Bethlen key (repo) does not fit the Kemeny substitution; R4934 glosses held on DECODE, untested on R4933.",
+  "duplicates": "known.py R4933 / Kemeny / R4935 (3 Nov 2026): this lead, targets/kemeny1628; R4936-R4941 are separate Bethlen-file records; no catalogue entry covers R4933.",
+  "searches": [
+   {
+    "query": "Kemeny Janos levelek 1658 titkosiras Kemeny XIX Roman Nemzeti Leveltar Kolozsvar megfejtes rejtjeles level",
+    "result": "Nothing specific; Lang's Real Life Cryptology and Kemeny's autobiography editions only."
+   },
+   {
+    "query": "Kemeny Janos 1658 rejtjeles level megfejtese Erdely fejedelem titkosiras kriptografia kiadas",
+    "result": "Szeged article on Transylvanian secret correspondence to 1658; no decipherment of Kemeny letters."
+   },
+   {
+    "query": "Transylvanian princes cipher letters Kemeny Rakoczi 1650s deciphered cryptology Hungary DECODE Kemeny collection Cluj",
+    "result": "Romanian paper on cipher writing in Transylvania XVI-XVII, Chotari on Rakoczi letters; nothing on Kemeny XIX."
+   }
+  ],
+  "verdict": "open",
+  "date": "2026-11-03",
+  "by": "claude leads review batch b56"
+ }
+}

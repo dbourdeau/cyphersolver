@@ -1,0 +1,68 @@
+{
+ "1562": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b63",
+  "seen": {
+   "kind": "scan",
+   "where": "Biblioteca Estense, Lodovico Media Library record 3409a92a-8c78-44bc-a7c4-920fbacb3126 (IIIF manifest edl-jarvis.cultura.gov.it/meta/iiif/3409a92a-8c78-44bc-a7c4-920fbacb3126/manifest); canvases 0009r-0012v downloaded at 1300 px and looked at on 3 Nov 2026",
+   "extent": "c. 9r clear Spanish text; c. 10r about 22 lines of cipher (signs plus syllabic groups such as lab, leb, den, gos, pre, ral) from the fifth line down; c. 11r about 14 lines of cipher in two blocks, then 'De Genoua a vij de março M.D.xxvij' and the signature; cc. 9v, 10v, 11v, 12r/v carry no further cipher",
+   "cipher": "Spanish letter, signed Genoa 7 March 1527, partly in cipher: a mixed system of single signs (loops, crosses, 4, L, 11, 3) and three-letter syllabic groups (lab, leb, den, gos). The cipher stretches are written in the running text with no interlinear or marginal plaintext, and no separate clear copy or decipherment is filed with the four leaves (cc. 9-12); the blank leaves carry only the address and a later hand 'Lope de Soria'."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump, repo ledgers) on 'Soria Lannoy': hits only catalogue entries for Charles V to Soria 1523/1524 and the repo targets soria1523 and soria1527; no record for this Lannoy letter or for the Autografoteca Campori in DECODE.",
+   "tomokiyo": "Tomokiyo cryptiana habsburg.htm (fetched 3 Nov 2026) mentions Soria only as the recipient of Charles V's 'complicated Spanish-style cipher'; unsolved.htm has no Soria, Lannoy or Genoa 1527 item; no page reads this letter.",
+   "lasry": "Lasry's papers and GL.htm: web search 'Lope de Soria cipher Charles V Genoa 1527 decipherment Lasry' found only the Pierrot/Loria Charles V 1547 Saint-Mauris letter, nothing on Soria to Lannoy; repo GL.htm copies have no hit.",
+   "edition": "Calendar of State Papers Spain III.2 (British History Online), 'Spain: March 1527, 1-10' pp. 79-94, opened and searched for Soria and Lannoy: only Perez to Soria (item 32*) and a footnote on Lannoy, no Soria to Lannoy of 7 March; a printed Lannoy edition was not found.",
+   "literature": "Galende Diaz, Hispania 52/181 (1992) pp. 493-520 on Soria's cipher correspondence and Kolosova's 2017 thesis on Charles V's ciphers 1521-27 cover the RAH Salazar letters to the Emperor, not Modena Autografoteca Campori; no Cryptologia or HistoCrypt item on this letter found."
+  },
+  "key_check": "Soria's own ciphers of the 1520s are held in the repo (targets/soria1523 keys A and B, targets/soria1527). The letter shares loop and cross signs with key B but its syllabic groups lab/leb/den differ from key B; no sign transcription or trial decode was run in this batch, so no key is claimed to read it.",
+  "key_held": "targets/soria1523 key A and key B, targets/soria1527 key: held in the repo, not applied to this letter in this batch (a key never blocks a lead).",
+  "duplicates": "known.py on 'Soria Lannoy', 'Lannoy', 'Autografoteca Campori' and the Lodovico id: no catalogue entry or target holds this letter; Soria entries are Charles V to Soria 1523/1524 (RAH) and Soria to Charles V (soria1527). CSP Spain does not calendar it.",
+  "searches": [
+   {
+    "query": "Lope de Soria Lannoy Genova marzo 1527 carta cifrada Autografoteca Campori Estense",
+    "result": "Returned Galende Diaz 1992 and Kolosova 2017 on Soria's ciphers and CSP Spain pages; no mention of an Estense Campori letter of 7 March 1527 or of any decipherment."
+   },
+   {
+    "query": "Soria to Lannoy 7 March 1527 Genoa ambassador cipher letter deciphered Calendar State Papers Spain",
+    "result": "Led to CSP Spain III.2; opened March 1-10 1527 pages: no Soria to Lannoy letter; the calendar marks other Soria letters 'contemporary deciphering on separate sheet' but not this one."
+   },
+   {
+    "query": "Lope de Soria cipher Charles V Genoa 1527 decipherment Lasry Cryptologia OR HistoCrypt OR Tomokiyo",
+    "result": "Only the 2022 Charles V 1547 Saint-Mauris decipherment (Loria) and a 1537 CSP note; nothing on Soria's 1527 letters to Lannoy."
+   },
+   {
+    "query": "Calendar of State Papers Spain vol 3 part 2 March 1527 1-10 Soria Lannoy",
+    "result": "BHO page opened and searched directly (pp. 79-94): no item for this letter."
+   }
+  ],
+  "verdict": "open"
+ },
+ "894": {
+  "unvetted": "Cluster of four HHStA Tuerkei I items by four writers (6-1-26 Adorno 1545, 6-1-28 Mailath 1545, 7-2-23 Zapolya 1547, 3-1-11 news sheet 1533). AIS pages for 6-1-26 and 7-2-23 fetched 3 Nov 2026: both Reservatbestand ('Kein Zugang'), thumbnails only, 'teilweise chiffriert' / 'urspruenglich chiffriert, chiffriertes Schreiben liegt bei'; 6-1-28 and 3-1-11 are already leads 1760 and 1759. 6-1-26 is printed in Austro-Turcica 1541-1552 (Nehring, Munich 1995) pp. 47-48 and Petritsch Regesten no. 84, neither openable online, so a printed decipherment is unexcluded. Needs splitting per item (6-1-26 and 7-2-23 as own leads) and the Austro-Turcica volume."
+ },
+ "1167": {
+  "unvetted": "Series-level LBC record only (MIBA01C525, Archivio Archinto, 21 vols 1683-1720); page fetched 3 Nov 2026: no holder, inventory or images linked, only 'si segnala la presenza di lettere cifrate'. Web searches (Archinto nuncio cifrate, ASMi Archinto) found no volume or letter with cipher. No individual ciphertext identifiable; needs the Archivio Archinto's own inventory."
+ },
+ "1168": {
+  "unvetted": "Series-level LBC record only (MIBA00359B, Comune di Milano Dicasteri Ambasciatori agenti, 125 units 1516-1751); page fetched 3 Nov 2026: 'frequente l'uso di un linguaggio cifrato' in the 17th c., no images, unit list not reachable by fetch. Web searches found nothing on Milan civic legates' ciphers. No individual ciphertext identifiable; needs the Archivio storico civico unit inventory (Santoro, Dicasteri)."
+ },
+ "1320": {
+  "unvetted": "Cipher seen 3 Nov 2026 on Gallica italien 1590 via openapi.bnf.fr (btv1b10037390v): f.285 slip signed Antonius, about 6 lines of cipher signs, f.392 dated 8 Sept (1464), 9 lines pure cipher, signed Antonius, no gloss on either leaf. Unvetted because the covering edition cannot be opened: Dispacci sforzeschi da Napoli vol. VI (1464 to 15 July 1465, Senatore et al., print only, searches found no online text) and Trezzo's filed 'Traduzione' leaves in ital. 1589/1590 were not matched leaf by leaf; a printed or filed decipherment cannot be excluded."
+ },
+ "1321": {
+  "unvetted": "Cipher seen 3 Nov 2026 on Gallica italien 1591 (btv1b100373919, image index 358-359 = f.348-349): Bianco's letter from Lyon 6 June 1466, clear text then about 14 lines of cipher on f.348 and about 9 more on f.349 before the signature, no gloss. Unvetted because the covering editions cannot be opened: Mandrot, Depeches des ambassadeurs milanais IV (1923; not on archive.org) and Kendall-Ilardi, Dispatches vol. III (1981, borrow-only, 401 on full text). A printed decipherment cannot be excluded."
+ },
+ "1329": {
+  "unvetted": "needs Chrome: BnF Archives et manuscrits / Gallica for Italien 258 (https://archivesetmanuscrits.bnf.fr and https://gallica.bnf.fr). curl gets Cloudflare 403 on both, web search found no ark, and openapi.bnf.fr needs the ark. Cipher not seen. Sarpi's letters to Groslot are printed (Busnelli 1931, Wikisource Lettere) but no source on Giusti's cipher letters was found."
+ },
+ "1330": {
+  "unvetted": "needs Chrome: BnF Archives et manuscrits / Gallica for Italien 314 ff. 70-78 (https://archivesetmanuscrits.bnf.fr). Cloudflare 403 to curl, no ark found by web search, openapi.bnf.fr needs the ark. Tomokiyo league.htm and mayenne.htm (fetched 3 Nov 2026) list League ciphers only in BnF fr. 3974-3983, nothing from italien 314. Cipher and the f.78 table not seen."
+ },
+ "1542": {
+  "unvetted": "Description does not show ciphertext: SNAC and CHM record read 3 Nov 2026 ('seven military telegraph cipher notebooks that Fuller and Plum both used' plus 389 p. letterpress copies), no images online; the notebooks are as likely keys as cryptograms (Plum 1882 prints the Union ciphers). Needs a CHM scan or finding aid showing enciphered telegrams."
+ },
+ "1543": {
+  "unvetted": "Description shows no ciphertext: catalogue says only 'possibly in code' (CPL Box 8 item 86.40.15); the CPL finding aid returns empty to curl and WebFetch, no images online, web search found no transcription of the Ruggles order of 19 Feb 1864. Needs a CPL scan to know whether any cipher exists."
+ }
+}

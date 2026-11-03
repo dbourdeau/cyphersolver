@@ -1,0 +1,158 @@
+{
+ "1287": {
+  "unvetted": "needs Chrome: PMA finding aid (pmalibrary.libraryhost.com/repositories/3/resources/287) confirms ledgers 'written primarily in code. This code has not yet been deciphered' and a Social Security number key in the puzzles series (archival_object 64418), but digital object 22426 links only to a Dropbox folder via https://rb.gy/1ayzqy (curl 403; the Dropbox page it resolves to is titled 'File Deleted'), so no scan could be opened; check in Chrome whether the images exist."
+ },
+ "1288": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b46",
+  "seen": {
+   "kind": "not online",
+   "where": "Penn PACSCL finding aid https://findingaids.library.upenn.edu/records/LEHIGH_SCMS0137 (Lehigh SC MS 0137); Lehigh ArchivesSpace resource 268 sits behind a Cloudflare Turnstile and no digital object or scan was found",
+   "extent": "One ledger-type book of 301 numbered pages with 55 letters and notes and about 770 telegrams, Dec 1911 to Oct 1912, 'some in code, some in partial code'",
+   "cipher": "Finding aid: 'The collection contains ciphered, coded confidential telegrams'; 'The business messages have an interesting code system based on German terminology (e.g. \"Bleiplatte, Koolhaus, Kopfmuskel, Kornjahres, Musikhaus, Stubenbett\")'; Johnston's code name is Kornjahres. A word-substitution telegraph code; the description mentions no decipherment."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump) 'Archibald Johnston' 'Schwab': only this lead, its sweep candidates and access_uncertain.md; nothing on DECODE for Bethlehem Steel 1912.",
+   "tomokiyo": "Web search 'cryptiana Tomokiyo ... Archibald Johnston' returned only the Argyll/Falconer Cryptomenysis hit (a different Archibald); no Bethlehem Steel entry found in Cryptiana.",
+   "lasry": "Web search with Lasry/Cryptologia and Kornjahres found only Lasry, Niebel and Andersson on German attache messages 1900-1915 (Cryptologia 2021), unrelated to Bethlehem Steel.",
+   "edition": "No printed edition: the letterbook is unpublished; the Lehigh finding aid and exhibit page (exhibits.lib.lehigh.edu gift-exhibit) describe 'ciphered, coded, confidential telegrams' and give no key or reading.",
+   "literature": "Searches on Johnston/Kornjahres decoded and on Bethlehem Steel 1912 telegraph code decipherment found Wikipedia, a WFMZ 1906 coded-cable anecdote and codebook listings only; no study of this code."
+  },
+  "key_check": "No code book is in the repo or on DECODE; the finding aid names the code as German-word based, so a published commercial code (Lieber's, ABC 5th ed., Bentley's) could be tried, but none was tested because no ciphertext image is online.",
+  "duplicates": "known.py 'Archibald Johnston', 'Schwab': only lead 1288 and its sweep files; no catalogue entry or target on Bethlehem Steel or Johnston.",
+  "searches": [
+   {
+    "query": "Archibald Johnston Bethlehem Steel 1912 coded telegrams Schwab code Kornjahres decoded",
+    "result": "Lehigh finding aid and ArchivesSpace pages, Wikipedia, WFMZ; no decoded text or key for the Kornjahres code."
+   },
+   {
+    "query": "Lehigh University SCMS 0137 Archibald Johnston letterbook telegrams code Bleiplatte Koolhaus",
+    "result": "Only the Lehigh and Penn finding aids repeating the code-word list; no scan or reading."
+   },
+   {
+    "query": "Bethlehem Steel Schwab Grace South America 1912 telegraph code book cipher Johnston Argentina Chile navy decipherment",
+    "result": "Generic telegraph codebook listings (Lieber, Slater); nothing on this correspondence."
+   },
+   {
+    "query": "Lasry OR Tomokiyo OR Cryptologia Bethlehem Steel telegraph code 1912 Johnston Schwab Kornjahres",
+    "result": "Only Lasry et al. 2021 on German attache messages and the Lehigh pages; no link to this letterbook."
+   }
+  ],
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "1289": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b46",
+  "seen": {
+   "kind": "not online",
+   "where": "Penn PACSCL finding aid https://findingaids.library.upenn.edu/records/HAVERFORD_HCS.003.125 and Haverford ArchivesSpace hcs-023-125 (Cloudflare 403 to curl); no digital object linked",
+   "extent": "One letter, 20 January 1856, Joel Cadbury (Haverford 1852-56) to his brother; length of the cipher passage not given",
+   "cipher": "Finding aid: 'The letter includes text written in a cipher.' No scan or transcription is online, and the description records no reading."
+  },
+  "prior_art": {
+   "decode": "known.py 'Joel Cadbury' 'Haverford': only this lead and its sweep files; not on DECODE.",
+   "tomokiyo": "Web search 'cryptiana Tomokiyo ... Joel Cadbury' found nothing on this letter (only the 1986 Cryptologia 'Cadbury Code Confidential' chocolate advertisement, unrelated).",
+   "lasry": "No Lasry paper or GL.htm entry for a Haverford student letter turned up in the searches run.",
+   "edition": "One unpublished letter given by Henry J. Cadbury in 1954; the finding aid mentions no transcription and no edition exists.",
+   "literature": "Three searches (Joel Cadbury 1856 Haverford cipher decoded; hot water tank grand jury Cadbury cipher; Joel Cadbury secret writing transcription) found only catalogue records, no decipherment."
+  },
+  "key_check": "No key is known for a Haverford student cipher of 1856; no held key applies and none was tested because the ciphertext is not online.",
+  "duplicates": "known.py 'Joel Cadbury' and 'Haverford' found only lead 1289 and sweep files; no catalogue or target entry.",
+  "searches": [
+   {
+    "query": "Joel Cadbury 1856 Haverford letter cipher decoded",
+    "result": "Penn and Haverford catalogue records of HCS.003.125 only; no decoded text."
+   },
+   {
+    "query": "Haverford College student 1856 letter cipher Cadbury hot water tank grand jury Quaker Special Collections",
+    "result": "Same catalogue record plus other Cadbury family papers; no transcription or digitised copy."
+   },
+   {
+    "query": "\"Joel Cadbury\" Haverford 1856 brother letter secret writing cipher Cadbury family papers transcription",
+    "result": "Joel Cadbury Jr. correspondence series listings (archival_objects 51660-51666); none mentions this cipher being solved."
+   }
+  ],
+  "verdict": "open",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "1290": {
+  "unvetted": "needs Chrome: https://finding-aids.lib.unc.edu/04794/ - finding-aids.lib.unc.edu fails TLS from curl and WebFetch (curl code 000, ECONNRESET) and Wayback gave 429, so the folder, any digital copy and the exact cipher wording could not be read for the Isaac L. McIntosh letters. A search snippet of the finding aid says Isaac was a private in the 28th North Carolina, wounded and captured at Gettysburg (not a Richmond hospital as the lead says); web searches found no decipherment."
+ },
+ "1291": {
+  "unvetted": "needs Chrome: https://finding-aids.lib.unc.edu/01152/ - finding-aids.lib.unc.edu fails TLS from curl and WebFetch (curl code 000, ECONNRESET) and Wayback gave 429, so the folder, any digital copy and the exact cipher wording could not be read for the George W. Gift cipher letter. Web search found the finding-aid wording ('a letter containing a substitution cipher, evidently devised by Gift') and UNC Civil War blog posts transcribing other Gift letters, none the cipher letter."
+ },
+ "1292": {
+  "unvetted": "needs Chrome: https://finding-aids.lib.unc.edu/02769/ - finding-aids.lib.unc.edu fails TLS from curl and WebFetch (curl code 000, ECONNRESET) and Wayback gave 429, so the folder, any digital copy and the exact cipher wording could not be read for the Gordon coded message of 24 Jul 1877. Web search for the 24 July 1877 coded message found nothing outside the finding aid."
+ },
+ "1293": {
+  "unvetted": "needs Chrome: MHS Robert Treat Paine Papers vol. 2 edition pages fetched (RTP2d054: Paine's draft 'endorsed \"from & to Lavinia\" followed by a brief note in undeciphered code'; RTP2d191: reply 'in shorthand and has not been deciphered'), but the edition prints no ciphertext, Paine wrote shorthand widely and a cipher is not established; the facsimile viewer under https://www.masshist.org/collection-guides/view/fa0271 is JavaScript-only, so the leaf must be seen in Chrome before open or not_cipher."
+ },
+ "1294": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b46",
+  "seen": {
+   "kind": "not online",
+   "where": "MHS Winthrop Sargent Papers microfilm-edition guide https://www.masshist.org/collection-guides/view/fa0261 (Detailed Description and 'Cipher Key' section); Adam Matthew Frontier Life facsimiles are subscription-only and were not opened",
+   "extent": "Short passages in the diaries, e.g. Diary Vol. 2 (1 Oct 1793 to 1 Jan 1796) and the entry on the death of his wife and child; collection is 8 boxes and 12 volumes",
+   "cipher": "Guide: 'In a few instances, primarily in his diaries, Sargent used a cipher, substituting letters or numbers to conceal certain passages. The diary entry describing his feelings at the death of his wife and child, for example, is written in cipher.' and 'brief cipher notations about his mistress and the birth of a child'. The ciphertext leaves themselves are not viewable here."
+  },
+  "prior_art": {
+   "decode": "known.py 'Winthrop Sargent' 'fa0261': only this lead and sweep files; not on DECODE.",
+   "tomokiyo": "Web search 'cryptiana Tomokiyo Winthrop Sargent ...' returned nothing on Sargent; no Cryptiana entry found.",
+   "lasry": "No Lasry paper or GL.htm item found for Sargent in the searches run.",
+   "edition": "The MHS guide (microfilm edition, NHPRC) prints the cipher key and summarises the entries but prints no deciphered text; Frontier Life pages are login-only so a transcription there is unchecked.",
+   "literature": "Searches on Sargent diary cipher key, Frontier Life Sargent diary 1793-1796 cipher transcription, and Sargent mistress child diary cipher found no published reading or study."
+  },
+  "key_check": "The MHS guide prints Sargent's own substitution key (digits 1-8 and letters, e.g. his name as BD4UA6H5 CM62P4U); it was not tested because no ciphertext image could be opened.",
+  "key_held": "Key printed in the MHS collection guide 'Cipher Key' section (fa0261); held as a web page, not tested against any leaf.",
+  "duplicates": "known.py 'Winthrop Sargent' and 'fa0261' returned only lead 1294 and sweep files; no catalogue entry or target on Sargent.",
+  "searches": [
+   {
+    "query": "Winthrop Sargent diary cipher key wife death deciphered Northwest Territory secretary",
+    "result": "Wikipedia, Frontier Life catalogue pages and MHS Winthrop family editions; no decipherment of the Sargent cipher."
+   },
+   {
+    "query": "Frontier Life Adam Matthew Winthrop Sargent diary 1793-1796 cipher passages transcription",
+    "result": "Login-only Frontier Life catalogue pages and a War Department Papers item on a 1798 Sargent code letter marked mostly illegible; no cipher transcription seen."
+   },
+   {
+    "query": "Winthrop Sargent mistress child diary cipher Cincinnati 1795 historian reveals coded entry",
+    "result": "Nothing confirming a published reading of the coded entries."
+   },
+   {
+    "query": "cryptiana Tomokiyo Winthrop Sargent OR \"Archibald Johnston\" OR \"Joel Cadbury\" cipher",
+    "result": "No Sargent entry in Cryptiana or Tomokiyo's lists."
+   }
+  ],
+  "verdict": "open"
+ },
+ "1295": {
+  "unvetted": "Kimball-Griswold (MHS fa0549): the guide only says 'Beginning in 1869, portions of the diary entries are written in code' and 'Some portions are written in code' in John C. Kimball's diaries; it does not say what kind of code (it could be shorthand) and no ciphertext, scan or volume is identified (the guide lists no digital copies), so the cipher is not shown to exist; a web search for a coded Kimball diary found nothing. Needs the diary volumes seen at MHS."
+ },
+ "1296": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch b46",
+  "seen": {
+   "kind": "not online",
+   "where": "MHS guide https://www.masshist.org/collection-guides/view/fa0153 (series II, Box 1 Folder 9, 72 images at /collection-guides/digitized/fa0153/b1-f09); the JavaScript viewer rendered no images to curl, so no leaf was opened",
+   "extent": "Journal of Edwin Clarence Howard at Liberia College, 9 Feb-27 Jun 1865 (not late 18th century as the lead says), roughly half in code",
+   "cipher": "Guide: 'some of the journal is written in code'. MHS Beehive post 'Decoding Black Masculinity' says the code is 'a mere shift to the right of each letter in the alphabet' mixed with French."
+  },
+  "prior_art": {
+   "decode": "known.py 'DeGrasse' 'fa0153': lead and sweep files only; not on DECODE.",
+   "tomokiyo": "Not found in the Cryptiana searches run.",
+   "lasry": "Not found in the searches run.",
+   "edition": "MHS Beehive blog (Crystal Lynn Webster, Aug 2019) records the decipherment: a one-letter alphabet shift (example 'gdq' = 'her'), with passages decoded; no full transcription printed.",
+   "literature": "Search 'Edwin Clarence Howard journal Liberia College 1865 code deciphered' found the Beehive post and Wikipedia on Howard."
+  },
+  "key_check": "Key is a simple alphabetic shift described in the Beehive post; no further key needed.",
+  "duplicates": "known.py 'DeGrasse' and 'fa0153': only lead 1296 and sweep files.",
+  "verdict": "partly_read",
+  "closed": "MHS Beehive post (www.masshist.org/beehiveblog/2019/08/decoding-black-masculinity-love-medicine-in-the-diary-entries-of-edwin-clarence-howard) states Webster cracked the code, a one-letter shift, and quotes decoded entries, but says much of the diary remains undecoded: a decipherment is on record, partial; the journal is 1865, not the lead's late 18th century."
+ }
+}
