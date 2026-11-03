@@ -1,20 +1,22 @@
 """Build key_bouille.tsv (Bouillé code, 1778-79) from the interlinear pair files and apply it to the 1778 letter (transcription.txt).
 
-Pair files: pairs1779_f123.txt (C8 A 78 f. 123) and pairs1779_f3_f31.txt (f. 3 and f. 31). Provenance is kept per value
+Pair files: pairs1779_f123.txt (C8 A 78 f. 123), pairs1779_f3_f31.txt and pairs1779_f3_f31_more.txt (f. 3 and f. 31), pairs1779_f5_f144.txt (f. 5, f. 144; merged 3 Nov 2026). Provenance is kept per value
 (source letter + count); values that differ between sources are kept as 'a/b' and listed as conflicts.
 Tentative values (hypotheses from context, no interlinear) live in tentative.tsv and are applied only with --tentative.
 """
 import re, collections, os, sys
 H = os.path.dirname(os.path.abspath(__file__))
-SRC = [('pairs1779_f123.txt', 'f123'), ('pairs1779_f3_f31.txt', None)]
+SRC = [('pairs1779_f123.txt', 'f123'), ('pairs1779_f3_f31.txt', None), ('pairs1779_f3_f31_more.txt', None), ('pairs1779_f5_f144.txt', None), ('pairs1779_f144_p2.txt', None), ('pairs1779_f144_p3.txt', None)]
 vals = collections.defaultdict(lambda: collections.defaultdict(list))   # group -> value -> [source tags]
 for fn, default in SRC:
     for l in open(os.path.join(H, fn), encoding='utf8'):
-        m = re.match(r'(l\d+|f\d+-\w+):(.*)', l)
+        m = re.match(r'(l\d+|f\d+[a-z]?-[\w-]+):(.*)', l)
         if not m: continue
         tag = default or m.group(1).split('-')[0]
         for g, v in re.findall(r'(\d+)=(\S+)', m.group(2)):
-            vals[g][v.replace('_', ' ').rstrip('?')].append(tag)
+            v = v.replace('_', ' ').rstrip('?')
+            if not v or not re.search('[A-Za-zÀ-ÿ]', v): continue   # '298=?' = label unreadable
+            vals[g][v if v == 'M.' else v.lower()].append(tag)
 key, conflicts = {}, {}
 def fold(s): return re.sub("[éèe']", '', s)
 with open(os.path.join(H, 'key_bouille.tsv'), 'w', encoding='utf8') as f:

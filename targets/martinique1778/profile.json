@@ -369,11 +369,119 @@
    "technique": [
     "repeat/pattern analysis"
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Paired the interlinear decipherments of C8 A 78 f.31 (rest, both images), f.3 (images 0004-0006), f.5 (0007) and f.144 (0233) with subagents reading 0.8-1.0 scale crops: about 1450 group readings from f.3/f.31 (365 distinct pairs) and about 325 from f.5/f.144 (pairs1779_f3_f31_more.txt, pairs1779_f5_f144.txt). Arks found: f.5 zn401yssvxxy, f.144 zn401qkkpmkw.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Tested the LLM key-editor fills of research/keyedit (Test 4/5) against the new pairs. Of the fills on groups that occur in the pairs, the two first Sonnet runs were right on 12 and wrong on 17; the later Haiku/Sonnet/held-out runs right on 1 of 20. Independently confirmed: 103=u, 665=pa, 531=autant, 5=at, 491=an, 321=pas, 402=di; wrong: 545 (it, not trois/men), 195 (ni), 272 (i), 320 (mi), 412 (du), 443 (y), 454 (mille), 516 (tro), 622 (ces), 845 (ga). 619, 667, 495, 26, 260, 509, 138, 710 do not occur in any paired letter. 46 reads aux twice and avec? twice: open.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "what": "Merged the f.31, f.3, f.5 and f.144 pairs into key_bouille.tsv (123 -> 346 groups) and re-applied it to f.88: 166 of 181 tokens valued (91.7%, was 68.0%), strict sense proxy 85.6% (was 58.0%); text reads as the monthly troop return with garrison 3300 men, Martinique/Guadeloupe halves. Conflicts 46 aux/avec and 12 i/e unresolved.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "hypothesis",
+   "what": "Read 13 of the 14 open f.88 groups from word frames (impatience, ministre de la marine, vuide, permet, entreprendre, pouvant, verrai, fournie, tant en troupes réglées): 667 im, 495 minist, 710 marine, 568 i, 809 per, 146 entre, 619 va, 481 suffisante, 509 ra, 260 i, 645 fo, 819 tant, 26 gl. None occurs in a paired letter, so none is checked; kept in tentative.tsv, not in the key. 138 stays open.",
+   "result": "partial",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Transcribed C8 A 77 f.101 image 0162 (6 lines, cipher only) and decoded it with the key: reads as the same return plus garrison of the newly taken colony and 'les travaux ... approchent de leur fin'. Second frame for 619=va and 103=u (travaux); gives 138 = la Dominique, 577 = tra, 678 = fin, 208 = j'ai by context. Not interlinear, so these stay tentative.",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Image check of f.31 (0046 l.7) and f.101 0163: 46 = avec (gloss 'auec'; 'aux l'escadre' ungrammatical), 12 = i; 645 = fo confirmed by the f.101 table header 'fournie par les garnisons de la Martinique et la Guadeloupe'; 138 = la Dominique from the same header. Pair files corrected, key regenerated.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Transcribed the f.101 enclosure table (image 0163): header repeats the f.88 garrison sentence; rows decode as unit names and figures. Number words (quarante) give 819 = qu and 73 = ar, replacing the f.88 guess 819 = tant; 279 now doubtful (single 'pri?' in f.31 vs 'cent [279]-ante sept' in the table).",
+   "result": "worked",
+   "technique": [
+    "other"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "what": "Paired the rest of f.144 (images 0234-0246, 13 pages, 275 lines, two agents) and merged: key_bouille.tsv 346 -> 507 groups; f.88 175/181 tokens valued from interlinear (96.7%), strict proxy 92.8%. Context readings tested: held 809 per, 146 entre, 619 va, 138 la Dominique, 645 fo, 577 tra; corrected 710 guerre (not marine), 509 rai, 819 soit (not qu), 279 non (not pri), 73 not ar.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "what": "Applied the 507-value key to the cipher-only letter C8 A 79 f.19 (no. 23, 14 Nov 1780; 157 groups transcribed by agent from image 0029): 147 groups valued (93.6%), reads as a provisions return ('subsistances ... magasins du roi ... du commerce ... situation toujours infiniment précaire'). No interlinear gloss exists for this letter.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "what": "Applied the key to the cipher-only letter C8 A 79 f.70 (no. 415, 24 May 1780; 190 groups from image 0107): 182 valued (95.8%), troop return for Martinique, Dominica, Grenada and St Vincent, 'il manque au régiment de la Martinique ... pour le mettre au complet ... lui faire passer des recrues'. Blue-pencil gloss on the last two lines agrees.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "key from source",
+   "what": "Applied the key to the cipher blocks of C8 A 81 f.114-116 (no. 12, 24 Nov 1782; 1297 groups from images 0195-0203, two translation-slip pages partly hidden): 1244 valued (95.9%), reads as a defence letter (colonies in état de défense, garrison states, Grenade/Guadeloupe/St-Christophe, 'ma présence devenant inutile ici'). Confirms 26 = gl in 'troupes réglées' and 481 = suffisante. C8 A 78 f.1 (Chiffre de 1777, Grasse) is a different code the key does not read.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Used the f.19, f.70, f.114 readings to settle the key conflicts: 25 = meme, 345 = c, 103 = u, 307 = ba; 260 = incessamment fits f.70 and f.88 (context). Checked 538 on the f.88 image: reads 538 clearly, yet the f.101 table needs 538 = sept; f.88 'ef 538 c ti f s' needs fe (f.123 has 658) so 538 is polyphonic or a slip.",
+   "result": "partial",
+   "technique": [
+    "plaintext matching"
+   ]
   }
  ],
  "outcome": {
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "Key for the Bouillé code (values to 845) read off the interlinear decipherments of letters of 1779 in the same volume series (C8 A 78 f. 123 fully paired; f. 3 and f. 31 partly), same code shown statistically for f. 88; applied to the 1778 letter: 68.0% of tokens valued, 58.0% inside dictionary words (strict proxy), a readable monthly troop return with 67 groups open.",
+  "method_basis": "Key for the Bouillé code (values to 845, 507 groups) read off the interlinear decipherments of 1779 letters in the same volume series (C8 A 78 f. 123, f. 31, f. 3, f. 5, f. 144 in full), same code shown statistically for f. 88; applied to the 1778 letter: 175 of 181 tokens valued from interlinear pairs (96.7%), strict dictionary proxy 92.8%; 5 tokens still on context readings or unread.",
   "contribution": [
    "transcription",
    "key recovered",
@@ -381,20 +489,20 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.58,
+  "fraction_read": 0.928,
   "fraction_read_method": "measured",
   "verification": [],
-  "notes": "Read in part, about 58% by the strict dictionary proxy (overstates: it accepts word-shaped strings); the 95% read bar is far off. Most of f. 3 (3 images), f. 31 (2 images), f. 5 and f. 144 (interlinear) are untranscribed and would extend the key; f. 101 (5 Dec 1778) and the cipher-only letters f. 1, C8 A 79 f. 19, f. 70 are in the same code.",
+  "notes": "Read in part, 92.8% by the strict dictionary proxy (overstates: accepts word-shaped strings); the 95% bar is not quite reached by that measure, 96.7% of tokens are valued. Open: 6 tokens, conflicts 25/345/307/103, cipher-only letters f. 1, f. 19, f. 70, f. 114, minutes C8 A 77 ff. 31, 43 and MAR/G/178 (needs physical access).",
   "gaps": [
    {
-    "item": "67 of 109 distinct groups of f. 88 (58 tokens unvalued)",
-    "blocker": "not-attempted",
-    "detail": "interlinear decipherments on C8 A 78 f. 3, f. 5, f. 31 (most of it), f. 144 not yet paired"
+    "item": "5 of 181 tokens of f. 88 without interlinear value (667, 495, 568, 481, 260)",
+    "blocker": "no-key-material",
+    "detail": "none occurs in a glossed letter; all glossed letters (f. 3, 5, 31, 123, 144) are paired; context readings only"
    },
    {
-    "item": "f. 101 (5 Dec 1778) and its table enclosure (image 0163); cipher-only letters C8 A 78 f. 1, C8 A 79 f. 19, f. 70",
-    "blocker": "not-attempted",
-    "detail": "same code; to be read once the key is extended"
+    "item": "cipher-only letter C8 A 78 f. 1 (Grasse, 'Chiffre de 1777', 560 groups transcribed)",
+    "blocker": "no-key-material",
+    "detail": "different code from the Bouillé key; needs the 1777 code or the decipherment of the first copy"
    },
    {
     "item": "minister's ciphered minutes C8 A 77 ff. 31, 43; MAR/G/178 keys",
