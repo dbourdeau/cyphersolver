@@ -139,3 +139,19 @@ Sources: *Politische Correspondenz Friedrich's des Grossen* III and IV (Internet
 ### Remaining gaps, added 3 Nov 2026
 - the sender hypothesis and its plaintext - blocker: needs-physical-access; request Mardefeld's relation of 5 Oct 1744 from the GStA PK, Berlin
 - key test against R4366/R4367 - blocker: needs-physical-access; DECODE login needed for full images and transcriptions
+
+## 3 Nov 2026, later: R4366 and R4367 tested, both ruled out; GStA files located
+
+Images of both records were supplied by the contributor (not committed). Transcriptions are in `keys/`; both are first passes.
+
+- **R4366** (BL Add MS 32276 ff. 37-38v, docket "Scholings Papers. Prussian. 1744"): a table to 1075, filled only to about 950, values 1-54 torn. 44 of the 78 sample groups in 55-950 fall on filled cells; distinct values 39 of 71 (55%), against a fill rate of 52% (P = 0.34). 80 sample groups lie above the table. The decode gives no sentence. Ruled out for this letter (`keys/test_r4366.py`).
+- **R4367** (ff. 40-41, docket "Andrié 1745. Old Cyphers out of Use"): 1-2198, no 3xxx. Under a code of that range, 164 groups would all miss 1738-2198 with probability about 1.7e-17, while its 2001+ cells hold common items such as "Vre Majesté". The decode gives no sentence. Ruled out for this letter (`keys/test_r4367.py`).
+- These tests say nothing against the Mardefeld hypothesis: they show only that these two Prussian tables are not this code.
+
+**GStA PK files (Archivportal-D, read 3 Nov 2026; catalogue entries only, no documents seen, no digitisation shown):**
+
+- I. HA Rep. 96, Nr. 55 C and Nr. 55 D, both "Schriftwechsel mit dem preußischen bevollmächtigten Minister Axel Freiherr von Mardefeld in St. Petersburg und Moskau", 1744 (Geheimes Kabinett). The entries do not say which holds October. Neighbours: Nr. 55 B (1743), Nr. 55 E (1745).
+- I. HA GR, Rep. XI Russland: the ministerial series, likely for a report answering "Re- & Postscripts". Cited for a 1746 Mardefeld text as "Rep. XI Russland 91, 54 E" (vostlit edition); the 1744 file numbers were not found online.
+- VI. HA, Nl Mardefeld, A. v. (1719-1748): his papers, which might hold drafts or cipher material; contents not seen.
+
+The report of 5 Oct 1744 itself has **not** been seen, so it is not yet confirmed that it exists or that it is the same text.
