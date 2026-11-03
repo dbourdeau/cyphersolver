@@ -492,6 +492,11 @@ PAGES = [
          blurb='BL Harley MS 286 f. 61, catalogued on DECODE as a letter of an unknown sender, is D&rsquo;Ewes&rsquo;s private Latin log of his infant son&rsquo;s convulsion fits, in the alphabet he invented at school. The key of this simple substitution was recovered from the slip alone, from probable words, and checked against weekdays, moon phases and his Autobiography. 96.5% of the words are deciphered.',
          quote='&ldquo;in quorum tertia os ipsius pene ad aurem dextram convulsum, quod ante numquam observavi&rdquo;',
          rights='Manuscript images: British Library, via DECODE R7759'),
+    dict(slug='gonzaga1549', label='Charles V to Gonzaga 1549', year='1549', y=1549.87, place='Brussels &rarr; Milan', st='partial', stt='read in part',
+         title='Charles V to Ferrante Gonzaga, Brussels, 14 November 1549, and four shorter passages',
+         blurb='Charles V&rsquo;s orders to his governor of Milan on Parma, almost solid cipher from c. 60r to c. 62r, with no decipherment in the file. Deciphered with the Imperial Cipher of 1544&ndash;1554 as Bertomeu Masi&aacute; reconstructed it and Tomokiyo pictures it, extended by hand. Gonzaga is told not to make terms with Ottavio Farnese, and when he may still seize Parma. By eye, with the sense in view; 93% of the signs are firm; several code words are open, and &ldquo;the Pollo&rdquo; is very probably the Pope.',
+         quote='&ldquo;nunca havemos querido emprender hasta qui ninguna cosa por via de guerra avierta&rdquo;',
+         rights='Biblioteca Estense Universitaria, Modena, Autografoteca Campori, CC BY-NC-SA'),
     dict(slug='vargas1552', label='Vargas to Charles V 1552', year='1552', y=1552.65, place='Venice &rarr; Charles V', st='solved', stt='read',
          title='Francisco de Vargas to Charles V, Venice, 25 August 1552',
          blurb='The imperial ambassador at Venice wrote most of this letter in the Imperial Cipher of 1544&ndash;1554, and a second hand wrote the whole decipherment on the leaves, in the margins, at the page feet and between the lines. Tomokiyo had recorded it; the decipherment was transcribed from the sixteen DECODE images and checked against the clear words left in the cipher lines and the recurring code groups. Vargas suspects the Pope of working with France over Siena and warns Charles against any settlement there with the Pope or the French.',
@@ -2715,6 +2720,7 @@ IMAGES['stockholm1918'] = ('stockholm1918_lead.jpg', 'Nr. 1014, 26 July 1918: ty
 IMAGES['ludendorff1918'] = ('ludendorff1918_lead.jpg', 'The Ludendorff telegram, 26 July 1918: typed copy by the US Legation, Stockholm', 'National Archives (US), RG 59, M367 roll 141 frame 1264, via the NARA catalogue')
 IMAGES['camus1586'] = None
 IMAGES['malicorne1586'] = None
+IMAGES['gonzaga1549'] = ('gonzaga1549_lead.jpg', 'c. 60v, lines 19-21 of the letter of 14 November 1549', 'Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. IV c. 60v, via the Estense Digital Library (CC BY-NC-SA)')
 IMAGES['vargas1552'] = ('vargas1552_lead.jpg', 'Archive image 0002: the struck-through cipher block with the decipherment in the left margin', 'Archivo General de Simancas, Estado leg. 1320 ff. 35-38, image 0002, via DECODE R9967')
 IMAGES['transylvania1645'] = ('transylvania1645_lead.jpg', 'R4937, 1646: running cipher letters with clear words such as Cum satisfactione Evangelicorum', 'Romanian National Archives, Cluj, Keresdi Bethlen 15 (1646), via DECODE R4937')
 IMAGES['vetesi1705'] = None

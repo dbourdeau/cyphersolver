@@ -1,3 +1,4 @@
+# Already applied; ids here predate the renumbering of 1989-1996 to 2041-2048 in the merge with main.
 """Key-test results and the 3 Nov 2026 rule change: a cipher with its key filed in the same volume, and no decipherment, may enter the catalogue.
 
 Closes 2026 as read (the one key that could be tested showed a decipherment), 1690 as duplicate of 2004, then writes vetting blocks

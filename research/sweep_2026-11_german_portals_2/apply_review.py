@@ -1,3 +1,4 @@
+# Already applied; ids here predate the renumbering of 1989-1996 to 2041-2048 in the merge with main.
 """Apply the 3 Nov 2026 lead review (review_hessen, review_ni_labw, review_bayern) to research/leads.json through the gate.
 
 open -> vetting block written, then --promote; read, partly_read, duplicate, key_lookup, not_cipher -> --close with the reason;

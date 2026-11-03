@@ -4,7 +4,7 @@ Arcinsys Hessen and Niedersachsen, Landesarchiv BW, bavarikon, gda.bayern.de (St
 (HAB). Follows `sweep_2026-11_german_portals` (2 Nov), which used six Arcinsys terms, kept LABW only to 1750, did not touch
 gda.bayern.de and could not reach HAB. Here every harvest runs from a script, with one request a second, and no bot check was met.
 
-Result: 52 new leads (ids 1989-2040), **6 promoted** to the catalogue, 3 old leads closed.
+Result: 52 new leads (ids 1997-2048; 1989-1996 were taken on main by the UK retest, so this sweep's were renumbered to 2041-2048), **6 promoted** to the catalogue, 3 old leads closed.
 
 ## Result by portal
 
@@ -56,7 +56,7 @@ Same-volume cases from other sweeps were not re-reviewed: 1252 (Wellcome MS 309,
 | 2014 | NLA WO 1 Alt 22 Nr. 786-788, Gross's 404 reports from Moscow and St Petersburg, 1731-40, "in Chiffern" | Not online; archive's description |
 | 2007 | BayHStA MA Politisches Archiv 9, Gravenreuth at Napoleon's headquarters, 1805, "aufgelöst und nicht aufgelöst" | Not online; archive's description |
 | 2001 | BayHStA Grassegger-Sammlung 15280, letter to Gise on the Polish crown, 1667 | Not online; archive's description |
-| 1994 | BayHStA Kasten blau 61/3, Wippermann, 1639-51, "nicht aufgelöste Chiffren" | Not online; archive's description |
+| 2046 | BayHStA Kasten blau 61/3, Wippermann, 1639-51, "nicht aufgelöste Chiffren" | Not online; archive's description |
 
 The prior-art searches behind these are web searches and `known.py`; several sources appeared only as snippets and are marked so in the vetting blocks. Tomokiyo's site was not read page by page.
 
