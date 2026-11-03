@@ -1,6 +1,6 @@
 # Grasse and Bouillé 1779: an enciphered war plan for the defence of the French West Indies
 
-Status: read (Brice Dudout, 28 Oct 2026; fol. 196, Bouillé's code, text and tables: 1,252 of 1,266 words read in their sense, 1,194 certain, 12 probable, 46 restored, 14 unresolved; fol. 191, cipher of 1777, text and tables: 1299 of 1326 words read in their sense, 1243 certain, 36 probable, 20 restored, 27 unresolved; Daniel Bourdeau's 95% rule).
+Status: in progress. Not yet written up: fol. 191 (code M, key_codeM_K6.tsv) is a different cipher from fol. 196 and must be split into its own folder first (one key per entry, Lasry 14 Oct 2026). Read (Brice Dudout, 28 Oct 2026; fol. 196, Bouillé's code, text and tables: 1,252 of 1,266 words read in their sense, 1,194 certain, 12 probable, 46 restored, 14 unresolved; fol. 191, cipher of 1777, text and tables: 1299 of 1326 words read in their sense, 1243 certain, 36 probable, 20 restored, 27 unresolved; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Not in the catalogue. Write-up prepared for https://bdudout.github.io/europe-chiffree/en/documents.html#grasse-bouille-1779 (published).
 
