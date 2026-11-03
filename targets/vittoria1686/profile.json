@@ -1,0 +1,214 @@
+{
+ "schema_version": 1,
+ "target": "vittoria1686",
+ "title": "Vittoria Gonzaga, nun at Santa Chiara, Naples, to her brother, 1686-91 (catalogue 1570): number passages read in part",
+ "documents": [
+  {
+   "id": "numbers",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 3-4, 11-12, 20-21, 22-23",
+   "date": "1686 - 16 October 1691",
+   "year": 1686,
+   "country": "Italy",
+   "route": "Santa Chiara, Naples -> her brother (not named)",
+   "language": "Italian",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment found on the leaves viewed."
+   },
+   "length": {
+    "tokens": 808,
+    "unit": "code groups",
+    "measured": false,
+    "distinct": 27
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF images; cc. 20r, 21r, 22v at native size, the rest at about 1400 px",
+    "image_quality": "good",
+    "notes": "cc. 20r, 21r, 22v complete. 21 changes logged in retranscription_log_1570.tsv. Blind sample of 57 groups: 8.8% disagreement, all resolved on zoom, none against the solver."
+   },
+   "pages": 8
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Simple substitution by number, spaces kept: the alphabet numbered in fives with neighbouring pairs swapped; o usually 7, u/v 2; a few three-digit code groups.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 27,
+  "diacritics": {
+   "used": true,
+   "note": "A stroke over a group doubles the letter (one use)."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 4,
+   "kinds": [
+    "common words",
+    "titles"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "written twice; one stroke over a group",
+  "notes": "10, 20, 40 and 45, 55, 85 and 3, 5 are close in this hand; a lone letter rests partly on sense."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found; one web search, 3 Nov 2026.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 1570) and the rules; AI language-model agents located the letters, transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Estense IIIF images",
+   "scripts in this folder (decoder, mark checker)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Number passages of cc. 3v, 4r, 11r, 20r, 22r, 23r, 21r transcribed at about 1400 px.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "crib",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "Table built by hand from cc. 3v and 4r using word divisions and context; swapped-pair pattern noticed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent blind check: 57 groups, 5 disagreements, 8.8%, all resolved on zoom, none against the solver; -10.452 against shuffled mean -15.147, best -13.197. Annealing with no key recovered 11 of 18 letter values.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "All number lines of cc. 20r, 21r, 22v transcribed from native-size tiles, key known; 21 changes logged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Reading rebuilt from a marked source and checked by script.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "One web search found no edition.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Table built by hand from the numbers of cc. 3v and 4r with their word divisions and the context of the clear text around them; no contemporary decipherment. Annealing with no key on a blind sample recovered 11 of 18 letter values.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.869,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading_numbers.md, scripts/check_marks.py numbers: 172 of 198 number words read as sense. Number words only; pages listed in NOTES.md.",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "number table recovered; number passages read in part",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "number passages, from Estense images",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one blind AI reader inside the project; no human palaeographer, no outside check",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Native-size re-read of cc. 3v, 4r, 11r, 22r, 23r",
+    "blocker": "not-attempted",
+    "detail": "Read at about 1400 px, typed after the table was known."
+   },
+   {
+    "item": "Blind second read of cc. 20r, 21r, 22v",
+    "blocker": "not-attempted",
+    "detail": "Only 57 groups had a blind reader."
+   },
+   {
+    "item": "Code groups 109, 182, 159",
+    "blocker": "open-codes",
+    "detail": "One or two uses each."
+   },
+   {
+    "item": "c. 12v not viewed; clear parts of the letters not transcribed",
+    "blocker": "not-attempted",
+    "detail": "Nothing blocks them."
+   }
+  ],
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": "numbers",
+    "label": "Number passages, cc. 3v-23r",
+    "transcription": "transcription_numbers.txt",
+    "decryption": "decryption_numbers.txt",
+    "reading": "reading_numbers.md",
+    "translation": "translation_numbers.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.869,
+    "summary": "Estate and grain business from a convent in Naples: the sequestration of San Paolo by Don Paolo Ruffo, and a request for licensed grain that she turned aside because the Camera held the licences for the State of Milan.",
+    "note": "Number words 198: as sense 172 (86.9%), no restored or changed letter 172 (86.9%), 17 doubtful, 9 not read."
+   }
+  ]
+ }
+}
