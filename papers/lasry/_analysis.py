@@ -48,7 +48,7 @@ WORKED = [CT, EXT_PT, ADJ_PT, EXT_KEY, KNOWN, DECIPH, NOT]          # every meth
 
 
 LANGS = ['French', 'English', 'Italian', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish', 'Portuguese',
-         'Swedish', 'Danish', 'Catalan', 'Castilian', 'Czech', 'Russian', 'Greek', 'Occitan', 'Scots', 'Norwegian', 'Turkish']
+         'Swedish', 'Danish', 'Catalan', 'Castilian', 'Czech', 'Russian', 'Japanese', 'Chinese', 'Arabic', 'Persian', 'Hebrew', 'Korean', 'Greek', 'Occitan', 'Scots', 'Norwegian', 'Turkish']
 
 
 def norm_langs(raw):
@@ -59,6 +59,20 @@ def norm_langs(raw):
         if 'Castilian' in hits: hits = (hits - {'Castilian'}) | ({'Spanish'} if 'Catalan' not in hits or 'Latin' not in hits else set())
         out |= hits or {str(r).split()[0].strip(',;()').capitalize()}
     return out - {'None', 'Unknown', 'Undetermined', 'N/a'}
+
+
+REGIONS = [('North America', ('United States', 'Confederate', 'Canada')),
+           ('Latin America', ('Mexico', 'Argentina', 'Peru', 'Colombia', 'Martinique', 'Brazil', 'Cuba', 'Chile')),
+           ('East Asia', ('Japan', 'China', 'Korea')),
+           ('Middle East and South Asia', ('Turkey', 'Ottoman', 'Persia', 'Egypt', 'India', 'Baghdad')),
+           ('Oceania', ('New Zealand', 'Australia'))]
+EUROPE = 'Europe'
+
+
+def regions_of(country):
+    """Regions named in a free-text country field ('United States (cipher); Japan (copies)' -> two); Europe by default."""
+    hit = [r for r, keys in REGIONS if any(k in str(country) for k in keys)]
+    return hit or [EUROPE]
 
 
 def as_list(v): return v if isinstance(v, list) else []
@@ -97,6 +111,8 @@ def load():
             frac=o.get('fraction_read') if isinstance(o.get('fraction_read'), (int, float)) and not isinstance(o.get('fraction_read'), bool) else None,
             frac_method=o.get('fraction_read_method'),
             verification=set(as_list(o.get('verification'))), contribution=set(as_list(o.get('contribution'))),
+            region=collections.Counter(r for x in docs if x.get('country') not in (None, U) for r in regions_of(x['country'])).most_common(1)[0][0]
+                   if any(x.get('country') not in (None, U) for x in docs) else U,
             ndocs=len(docs), prov=o.get('provenance') or 'project',
             credits=[x for x in as_list(o.get('credits')) if isinstance(x, dict)]))
     return ps, skipped
@@ -236,6 +252,18 @@ def main():
     m('NsixteenthC', cen['16th']); m('NseventeenthC', cen['17th']); m('NfifteenthC', cen['15th'])
     m('NfourteenthC', cen['14th']); m('NeighteenthC', cen['18th']); m('NnineteenthC', cen['19th']); m('NtwentiethC', cen['20th'])
     m('NmodernC', cen['19th'] + cen['20th'])
+
+    # regions (the first country field of each document; Europe unless a non-European country is named)
+    rg = collections.Counter(t['region'] for t in ps)
+    m('Nregions', len([r for r in rg if r not in (EUROPE, U)]) + 1)
+    m('NEurope', rg[EUROPE]); m('NnonEurope', len(ps) - rg[EUROPE] - rg[U]); m('NregionUnknown', rg[U])
+    m('NnonEuropeObtained', sum(1 for t in obtained if t['region'] not in (EUROPE, U)))
+    m('NnonEuropeCT', sum(1 for t in ps if t['region'] not in (EUROPE, U) and t['method'] == CT))
+    for key, r in (('NA', 'North America'), ('LA', 'Latin America'), ('EA', 'East Asia'), ('ME', 'Middle East and South Asia'), ('OC', 'Oceania')):
+        m('NR' + key, rg[r])
+    crg = collections.Counter(t['region'] for t in cs)
+    m('NcontribnonEurope', len(cs) - crg[EUROPE] - crg[U]); m('NcontribEurope', crg[EUROPE])
+    m('NcontribnonEuropeObtained', sum(1 for t in cs if t['region'] not in (EUROPE, U) and t['method'] not in (NA, NOT)))
 
     # starting point
     cto = [t for t in worked if t['attack'] == 'ciphertext-only']
@@ -464,6 +492,9 @@ def main():
                        ['\\bottomrule', '\\end{tabular}',
                         f'\\caption{{\\label{{tab:corpus}} The corpus by century of the earliest document and by plaintext language '
                         f'(a target with letters in two languages counts under both; {len(langs)} languages in all).}}', '\\end{table}', '']))
+    T.append(group_table(ps, lambda t: t['region'] if t['region'] != U else 'not recorded', 'region (most documents)',
+                         'Outcome by region of the correspondence: the region named by most documents of the target (Europe where no other is named).', 'region',
+                         order=[EUROPE, 'North America', 'Latin America', 'East Asia', 'Middle East and South Asia', 'Oceania', 'not recorded']))
     T.append(group_table(ps, attack_group, 'starting point', 'Outcome by what the attack started from (profile field conditions.attack).', 'attack',
                          order=['ciphertext only', 'crib from clear text', 'decipherment or known plaintext', 'a key (archive, print, sibling)', 'none recorded']))
     T.append(group_table(ps, family, 'cipher family', 'Outcome by cipher family, from the system types in the profile.', 'family'))
