@@ -25,7 +25,7 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | Hungary, Czech lands, Slovakia | MNL, Národní archiv, Moravian archives | Only through other sweeps |
 | Italian state archives | Turin, Genoa | No shelfmarks |
 | Italian state archives | Naples, Palermo | Shelfmarks, but no sweep of the archives themselves |
-| German libraries | Berlin SBB, Wolfenbüttel | Almost nothing |
+| German libraries | Wolfenbüttel HAB (Extravagantes; `diglib.hab.de` resets from this network, printed Heinemann catalogue grepped in `sweep_2026-11_german_portals_2`) | Almost nothing |
 | National libraries | Portuguese BNP, Dutch KB | No sweep |
 | Other | Africa | Little or nothing |
 
@@ -61,8 +61,7 @@ permission (`chrome_pass_2026-11`).
 |---|---|
 | KBR, Bibliothèque nationale de Luxembourg | `belgium_lux` |
 | Danish KB manuscripts, Krigsarkivet beyond the NAD notes | `scandinavia` |
-| bavarikon, gda.bayern.de | `central_archives` |
-| Landesarchiv BW, Arcinsys Hessen and Niedersachsen, GStA's own database, HStA Dresden | `archivportal_d` |
+| GStA's own database, HStA Dresden | `archivportal_d` |
 | Departmental archives with their own viewers | `calames_biblissima` |
 
 ## Started and not finished

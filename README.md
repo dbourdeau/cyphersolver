@@ -838,7 +838,7 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   quotes the archive's description); (2) **prior art**, each searched and its result written: the DECODE record,
   Tomokiyo's cryptiana, Lasry's papers and GL.htm, the printed calendar or edition (a calendar's "cipher
   undeciphered" usually means the editor deciphered it and printed the text), and the literature (HistoCrypt,
-  Cryptologia, a scholar search); (3) **key check**: no key held here or in print reads it, so it is not a key lookup;
+  Cryptologia, a scholar search); (3) **key check**: no key held elsewhere or in print reads it, so it is not a key lookup. A key filed in the same volume or unit does not disqualify it (rule changed 3 Nov 2026, Daniel Bourdeau) as long as no decipherment or printed text exists: the entry records the key in `vetting.key_in_volume`, says whether it was tested, and shows a "key in volume" pill;
   (4) **duplicates**: `research/archive_sweep_2026-10/known.py` run on the shelfmark, DECODE ids, correspondents and
   date; (5) **verdict** `open`, with date and who checked. `python docs/_check_catalogue.py --lead <id>` says what a lead
   still lacks, `--promote <id>` moves a passing lead into the catalogue under the same id, `--close` records a lead

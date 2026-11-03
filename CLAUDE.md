@@ -48,7 +48,8 @@ New finds are leads, not catalogue entries. Sweeps write `research/<sweep>/candi
 `research/COVERAGE.md` lists what is still unswept: check it before choosing a sweep, and remove a row when a sweep closes it.
 A lead enters the catalogue only through `python docs/_check_catalogue.py --promote <id>`, which refuses it until its
 `vetting` block meets the vetting bar in README Conventions: ciphertext seen, prior art searched in DECODE, Tomokiyo,
-Lasry, the edition and the literature, held keys ruled out, duplicates searched, verdict `open`. Never add an entry to
+Lasry, the edition and the literature, keys held elsewhere ruled out (a key in the same volume is allowed if no decipherment exists; record it in
+`vetting.key_in_volume`), duplicates searched, verdict `open`. Never add an entry to
 `catalogue.json` by hand or by script around the gate. `python docs/_check_catalogue.py` must print `result: valid`
 before a commit that touches `catalogue.json`. The SessionStart audit (section L) lists any entry that fails.
 
