@@ -43,3 +43,10 @@ MacDonald's cipher table, 1820); TCD MS 9383/1196, MS 9385/1254, MS 9501/5307 (D
 
 MIC/438/5-6 (PRONI) and the MS 649 images decide the two best leads. Still unreached: the TCD manuscripts catalogue and NLW. A UK
 exit is untested.
+
+## Vetting, 3 Nov 2026 (`vet_2026-11-03.py`)
+
+Promoted as archive-only, no ciphertext seen: 1989 (Bacon, MS 649), 1991 (Drake, PRONI), 1992 (Drake, RMG CRK/4/136).
+Closed as read: 1993 (printed in Castlereagh Correspondence v, 428), 1994 (clear draft is D3030/4980).
+Held as leads, with `vetting_note`: 1990 (extent unknown), 1995 (T-series copy), 1996 (probably readable from the Lansdowne 1163 register).
+Not checked: FO 28 copies of Drake, Nicolas's Nelson vol. 2, Tosh's thesis, Birch's folio notes (poor OCR).
