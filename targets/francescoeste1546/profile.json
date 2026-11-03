@@ -1,0 +1,233 @@
+{
+ "schema_version": 1,
+ "target": "francescoeste1546",
+ "title": "Francesco d'Este to Ferrante Gonzaga, 13 Apr 1546 (new find, not in the catalogue): c. 42r read through the contemporary interlinear decipherment, cc. 42v-43r not transcribed",
+ "documents": [
+  {
+   "id": "letter",
+   "read": "read in part",
+   "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Lettera E, Este (d'), Francesco (1516-1578), cc. 42-45 (cipher on cc. 42r, 42v, 43r)",
+   "date": "13 April 1546",
+   "year": 1546,
+   "country": "Italy",
+   "route": "Francesco d'Este -> Ferrante Gonzaga",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary decipherment written above every cipher line (catalogue record of the library: 'Lettera parzialmente cifrata (ma decifrata in interlinea)'). A transcription job, not a break."
+   },
+   "length": {
+    "tokens": 476,
+    "distinct": 33,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_c42r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Estense IIIF images (edl-jarvis.cultura.gov.it), full size",
+    "image_quality": "good",
+    "notes": "c. 42r only: three blind agent passes settled by majority, then corrected on enlarged full-size crops after an independent blind transcription of the whole page (VERIFY.md: about 22 of 463 signs wrong, 4.8%, plus a 4-sign group omitted, before the fixes). One sign doubtful. cc. 42v-43r (about 1,370 signs) have only two unsettled agent passes. The letter has about 1,830 cipher signs in all."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Letter substitution with about 45 invented signs, many shaped like Latin or Greek letters; most letters have two or more homophones (s: n+o, square; a: q, L; d: pi, e; i: x, omega). Some signs are written as ligatures (raised o + v = r, o + cross = e). The writer's superscript digits 6 and 4 stand over some sign groups; the decipherer copies them instead of a word.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 33,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "notes": "New item, not in the catalogue as far as found: entry 1564 names it only as a deciphered sibling in the same fonds. 33 distinct signs on c. 42r. The 6/4-marked groups (11 on c. 42r) are not understood: code markers or nulls. Not the key of ferrante1549, ercole1544, Bresegno 1548 or Marignano 1546."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary interlinear decipherment on the leaves. No edition or modern decipherment found: catalogue, targets and open PRs of this repository, two web searches (3 Nov 2026). Gonzaga correspondence editions not opened.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "WAINUT set the task (a sweep of the Estense letters) and the rules; AI language-model agents transcribed, aligned, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "Estense IIIF images",
+   "scripts in this folder (blind agent passes, majority settling, DP/EM alignment, held-out test, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "Overviews and full-size regions of cc. 42r, 42v, 43r fetched from the Estense IIIF service, one request at a time.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Sign inventory with no values; blind agent passes A and B (all three pages) and C (c. 42r, half lines) on bands that cut away most of the gloss; c. 42r settled by majority.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "beam/DP decoding"
+   ],
+   "what": "Each cipher line of c. 42r aligned with its interlinear decipherment by dynamic programming (unit = sign or sign pair); P(letter | unit) by hard EM.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Key frozen on c. 42r L00-L06, applied to L07-L13: 176 of 215 letters (81.9%); 500 shuffled tables mean 24.2%, max 39.5% (after the corrections; 75.5% before).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "what": "Key frozen on c. 42r (pass A), applied to unsettled passes of 42v and 43r against a machine read of their gloss: 73.1% (pass A), 67.2% (pass B) of 1,151 letters; shuffled tables mean 28%, max 40%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "Independent blind transcription of all of c. 42r (483 sign names) and gloss read by an AI reader not involved in solving (VERIFY.md): 4.8% of signs wrong plus a 4-sign group omitted, three gloss misreads, check_marks blind to dropped letters, vendor names and local paths in scripts. Verdict: fix.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Corrections applied on enlarged full-size crops (validation/corrections_2026-11-03.tsv); one disagreement on a sign name (L10, y not psi); 'signoria' resolved as 4; the second 'da' in L13 left doubtful. Gloss: de, volerne, tutto.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Reading rebuilt; check_marks now also requires the reading's letters to equal the decipherment per line (fault injection: a deleted no-sign mark fails).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Catalogue, targets, open PRs; two web searches. No edition found. Gonzaga correspondence editions not opened.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "c. 42r is read through the contemporary interlinear decipherment, checked sign by sign against a key aligned from the same page. The key was tested on held-out lines of c. 42r and on 42v-43r, but 42v-43r are not transcribed.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.23,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "c. 42r has 476 of about 1,830 cipher signs of the letter (26%, the total from unsettled agent passes); 85 of its 96 word slots read as sense (88.5%).",
+  "verification": [
+   "independent verification",
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "new find in the Estense letters; key aligned from the interlinear decipherment, c. 42r read in part",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "c. 42r from the Estense images, corrected after the blind check",
+    "date": "2026-11-03"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind on all of c. 42r; no human palaeographer",
+    "date": "2026-11-03"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "letter",
+    "label": "13 Apr 1546, c. 42r",
+    "transcription": "transcription_c42r.txt",
+    "decryption": "decryption_c42r.txt",
+    "reading": "reading_c42r.md",
+    "translation": "translation_c42r.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.885,
+    "summary": "His Majesty will not deal with the affairs of Sicily, on which Francesco had written of his own interest after the death of the Marchese del Vasto, until the consultation in Spain. Granvelle has promised to help him. Francesco regrets the delay but is glad of it, since Ferrante may come meanwhile, without whom the Emperor will decide nothing.",
+    "note": "Words 85: all carried by signs; 57 sign for sign with no mark, 28 with at least one marked unit. 11 groups under the writer's 6/4 digits unread: 85 of 96 word slots (88.5%), 57 of 96 (59.4%) with no mark. cc. 42v-43r not transcribed.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for WAINUT; a model reading, not a person), independent of the solver",
+     "date": "2026-11-03",
+     "note": "Given before the fixes of 3 Nov 2026. Coherent sense, because it is the contemporary gloss. Weak places named: 'do l'animo' (gloss reads de); 'volere' (gloss reads volerne); 'da lei mai'/'ever' (gloss is not mai; signs give tutto); 'me ne allitigo'/'I take my stand' (manuscript: allegro, 'I am glad of it'); 'Ella ben mi dispiace' (E che); 'did not stop me from doing it' (future tense). The 6/4 groups are unread; 'struck' groups are an interpretation. All named misreads were then corrected on crops; the 6/4 groups remain unread."
+    }
+   }
+  ],
+  "key_file": "key_c42r.tsv",
+  "gaps": [
+   {
+    "item": "cc. 42v-43r, 40 cipher lines",
+    "blocker": "not-attempted",
+    "detail": "Only two unsettled agent passes; the key test shows the key fits. A transcription job against the interlinear gloss."
+   },
+   {
+    "item": "Superscript 6 and 4 groups (11 on c. 42r)",
+    "blocker": "open-codes",
+    "detail": "The decipherer copies the digits rather than a word; code markers or nulls."
+   },
+   {
+    "item": "Second sign of the second 'da', c. 42r L13",
+    "blocker": "illegible",
+    "detail": "L or the u-shaped a; marked doubtful."
+   },
+   {
+    "item": "cc. 43v-45v",
+    "blocker": "not-attempted",
+    "detail": "Not examined."
+   },
+   {
+    "item": "Prior art",
+    "blocker": "not-attempted",
+    "detail": "Gonzaga correspondence editions not opened."
+   }
+  ]
+ }
+}
