@@ -283,6 +283,7 @@ def row(e):
     if e.get('workable'): pill += '<span class="pill work" title="the key material exists (siblings, glosses); what is left is work, not an outside blocker">no outside blocker</span>'
     if e.get('access') == 'archive': pill += '<span class="pill arch" title="the ciphertext or the key material is not online; it needs the archive to digitise it or someone to photograph it">needs archive scans</span>'
     if (e.get('vetting') or {}).get('key_in_volume'): pill += '<span class="pill work" title="a key is filed in the same volume or unit and no decipherment exists; a reading would be read with known key">key in volume</span>'
+    if (e.get('vetting') or {}).get('key_held'): pill += '<span class="pill work" title="a key is held here, on DECODE or in print, and no decipherment is known">key held</span>'
     hk = help_kind(e)
     pill = f'<span class="pill help-{hk}" title="{esc(HELP[hk][1])}">{HELP[hk][0]}</span>' + pill
     if frame_info(e)[0] == 'unconfirmed': pill += '<span class="pill unf" title="no one has confirmed the cipher on a specific frame yet">frame unchecked</span>'

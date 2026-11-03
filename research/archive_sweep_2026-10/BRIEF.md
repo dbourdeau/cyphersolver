@@ -32,7 +32,7 @@ an old calendar usually means the editor deciphered it himself.
 
 Vetting, if you can go further. A row can carry a `vetting` block (fields in `docs/_check_catalogue.py`): the scan
 viewed (where, how much cipher, no decipherment with it), each of DECODE, Tomokiyo, Lasry, the edition and the
-literature searched with its result, keys held elsewhere ruled out (a key in the same volume is allowed, named in `key_in_volume`), duplicates searched, verdict `open`. Rows with a complete
+literature searched with its result, keys recorded (a key in the volume or held elsewhere is allowed if no decipherment exists, named in `key_in_volume` or `key_held`), duplicates searched, verdict `open`. Rows with a complete
 block can be promoted straight after merge; rows without one wait in `research/leads.json`. A few well-vetted rows
 are worth more to the catalogue than many unviewed ones, but list the unviewed ones too: they are the leads queue.
 
