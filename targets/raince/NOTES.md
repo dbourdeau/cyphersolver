@@ -1,6 +1,6 @@
 # Nicolas Raince, Rome, 1526 and 1529 (BnF fr. 2984, fr. 3040, fr. 3091)
 
-Status: in progress (20 Nov 1526: p. 105 and p. 106 read by Brice Dudout, 27 Oct 2026, about 98% of words; the 13 May letter, pp. 29-31, still decoded, not read)
+Status: in progress (both residues now read by Brice Dudout at full IIIF resolution: 20 Nov 1526 pp. 105-106 about 98% of words (27 Oct 2026), 13 May 1526 pp. 29-31 1,102 of 1,112 words, 99.1% (28 Oct 2026, PR #166); two word signs absent from the key remain open; class not yet reviewed for reclassification to read)
 
 Catalogue item 5 (the "gamble" of the five-item goal list). Two sessions, 17 September 2026.
 Everything below is unvalidated until Daniel reviews it; the evidence for each claim is named.
@@ -341,7 +341,6 @@ not tracked; re-fetch with
 `https://gallica.bnf.fr/iiif/ark:/12148/btv1b90598430/f<n>/full/full/0/native.jpg`.
 
 ## Remaining gaps
-- pp. 29-31 (13 May 1526), decoded, not read - blocker: not-attempted; Brice Dudout (27 Oct 2026) found the microfilm resolves at Gallica IIIF full/max on 3x half-line crops, so the illegible verdict of session 3 (2x token crops) no longer holds; re-read pp. 29-31 that way
 - word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (three times on pp. 105-106: the one France should break with) - blocker: no-key-material; too few occurrences, no clear copy
 
 ## Escalation
@@ -350,7 +349,7 @@ not tracked; re-fetch with
 - [x] known-keys: Tomokiyo 1526 key re-measured (CALIBRATION.md); 1529 key noted as a different system
 - [x] print: Mignet 1886, Bourrilly 1901, Tomokiyo, DECODE, Pastor IX (app. 38 = 26 Nov 1526 f.109, parallel wording, not this text) checked; Grethen 1887 not digitised anywhere found
 - [x] key-rebuild: shape-constrained hill climb (solve140.py), per-token classifier htr2.py, 6-gram LM beam decode2.py
-- [x] p. 105-106 read by Brice Dudout at full IIIF resolution (27 Oct 2026, `dudout/`); pp. 29-31 to be retried the same way
+- [x] p. 105-106 read by Brice Dudout at full IIIF resolution (27 Oct 2026, `dudout/`); pp. 29-31 retried the same way and read (28 Oct 2026, PR #166)
 - [x] retry: session 3 re-read all 106 lines off the images (trans/reading_v3.txt); sense measure 0.476 -> 0.850
 - [x] re-read 23 Oct 2026 (batch b32): reading_v3 set out as trans/residue1526_reading.md, 0.513 plain / 0.713 explicit holes; Gallica manifest (still microfilm) and DECODE checked; kept decoded, not read
 

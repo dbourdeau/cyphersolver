@@ -238,9 +238,9 @@
    "transcription"
   ],
   "class": "read in part",
-  "fraction_read": 0.4,
+  "fraction_read": 0.98,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "By cipher lines: the 20 Nov 1526 residue (p. 105 lower 21 lines and p. 106, 35 lines, 56 in all) is read by Brice Dudout at about 98% of words (dudout/reading.md); the 13 May residue (pp. 29-31, about 85 lines) stays decoded, not read; 56 of about 141 residue lines. Estimated on review, 27 Oct 2026. The 22 Oct audit figure for the project's own decode was 0.",
+  "fraction_read_source": "By cipher lines: the 20 Nov 1526 residue (p. 105 lower 21 lines and p. 106, 35 lines, 56 in all) is read by Brice Dudout at about 98% of words (dudout/reading.md); the 13 May residue (pp. 29-31, about 85 lines) is read by him at 1,102 of 1,112 words, 99.1% (dudout/may1526_*, PR #166). Re-estimated 3 Nov 2026 from his two counts, not re-measured with the checker. Class left 'read in part' pending the maintainer's review; the two open word signs have no key material.",
   "key": "partial",
   "codes_open": {
    "open": 2,
@@ -253,11 +253,6 @@
   ],
   "notes": "All 106 lines hand-read from the images in session 3; fraction is sense-measured (old 0.66 counted characters). Limit is microfilm resolution.",
   "gaps": [
-   {
-    "item": "pp. 29-31 (13 May 1526), decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "Dudout reports that the microfilm resolves at Gallica IIIF full/max on 3x half-line crops, so the earlier illegible verdict (2x token crops) no longer holds; re-reading pp. 29-31 that way is the next step"
-   },
    {
     "item": "word signs absent from Tomokiyo's key ([X] two-crossbar stem; ℓ° [Y], three times on pp. 105-106, the one France should break with)",
     "blocker": "no-key-material",
@@ -290,6 +285,7 @@
    {
     "doc": "residue1526_may",
     "label": "Raince to Montmorency, Rome, 13 May 1526 (BnF fr. 2984 no. 7, pp. 29-31): ciphered part, reading by Brice Dudout",
+    "transcription": "trans/reading_v3.txt",
     "decryption": "dudout/may1526_decryption.txt",
     "reading": "dudout/may1526_reading.md",
     "language": "fr",
