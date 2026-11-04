@@ -1,0 +1,110 @@
+{
+ "2168": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch c26",
+  "seen": {
+   "kind": "scan",
+   "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1701-1704, Nachl. Francke 11,2/14, PPN1853543845 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1853543845&PHYSID=PHYS_0181): no. 62 scan 154, no. 71 scans 171-172, no. 75 scans 181-182; no. 75 read from the stitched half-size images",
+   "extent": "No. 75 (8 Nov 1704, 'ad Illm. Dnum Paul. de Rada in Hungar.'): about 40 runs of numbers over two pages, including marginal insertions. Nos. 62 and 71: no number groups on the leaf; both only discuss the cipher ('Characterem ... Cryptum' on scan 154, 'Cyfras' on scan 172)",
+   "cipher": "Numeric cipher, in-line numbers separated by points (e.g. 33.3.25.51.80.50.57.3 under 'Jacobi', 13.14 under 'Angliae, Belgii'). Letters are written over the groups, red glosses over code numbers ('Turcam', 'Gallum', 'rex Prussiae', 'Regem Galliae'). Every cipher run on scans 181-182 carries a gloss, including those in the margin, so Kalliope's 'an einigen Stellen dekodiert' understates it. Checked run by run by eye; the glosses were not re-derived against a rebuilt table"
+  },
+  "prior_art": {
+   "decode": "known.py over the harvested DECODE dump for Francke 11,2/14, Jablonski and Ráday: only this lead's own rows and a scan note, no DECODE record",
+   "tomokiyo": "No Cryptiana page surfaced in web searches on Jablonski, Ráday and Rákóczi ciphers; the decipherment here is the gloss on the leaf itself",
+   "lasry": "No Lasry paper or GL.htm item surfaced for Jablonski-Ráday; known.py found none in the repo",
+   "edition": "The decipherment is on the draft itself. Hungaricana (Chrome) carries only reviews of Benda, Ráday Pál iratai 1703-1706 (1955), not its text, so the received copies were not checked; this does not affect the verdict",
+   "literature": "Web searches on Jablonski, Ráday, Geheimschrift and Briefkonzeptbuch found Láng, Real Life Cryptology and Révay 1974 on Rákóczi's ciphers, with nothing shown on this letter"
+  },
+  "key_check": "No key on the leaves seen. No. 62 refers to a cipher description in an adjoining sheet ('in Charta adjuncta'), which is not on scan 154. No table was built or tested, because the glosses give the plaintext",
+  "key_held": "Benda, Levéltári Közlemények 25 (1954), lists a clavis for the Jablonski correspondence in the Ráday archive, with 44 Jablonski-Ráday letters 1704-1711 (from the first pass; not re-opened, not tested). Fiedler 1858 (FRA II/17, Anhang) prints Rákóczi keys naming Jablonski, not tested on this letter",
+  "duplicates": "known.py on 'Francke 11,2/14', Jablonski, Ráday: this lead's own rows plus research/oldest/scan_2026-09-23/hard_targets.md, which names the same drafts. No catalogue entry or target holds them; targets/rakoczi1711 only mentions 'domino Jablonski' in R483",
+  "verdict": "read",
+  "closed": "Nachl. Francke 11,2/14 : 75 carries its decipherment on the leaf: every numeric run on scans 181-182 of PPN1853543845 has letters or code glosses written over it. Nos. 62 (scan 154) and 71 (scans 171-172) hold no ciphertext and only discuss the key"
+ },
+ "2169": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch c26",
+  "seen": {
+   "kind": "scan",
+   "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1705, Nachl. Francke 11,2/15, PPN1853543950 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1853543950&PHYSID=PHYS_0037): no. 8 scans 23-25, no. 13 scans 37-39, no. 33 scans 71-72",
+   "extent": "Three drafts on eight pages. Red numbers over chosen words and phrases on scans 23, 24, 37, 38, 39, 71 and 72; none seen on scan 25 at viewer scale",
+   "cipher": "The draft is clear Latin, with red numeric groups written above the words to be enciphered (e.g. 'Regem Galliae Pacem' with 24.192.52.117 . 257.39 . 160.85.117 above on scan 72). So the plaintext is the text under each group, for no. 33 as well as nos. 8 and 13. One exception on scan 72: Jablonski quotes two number runs (204.155.275.30.147.111.18 ... and 95.137.112.15.48.137.12.178.144.187.16.90.85.45) from Ráday's letter, unglossed, saying they seem to have strayed in from another cipher ('ex aliena Cifra')"
+  },
+  "prior_art": {
+   "decode": "known.py over the harvested DECODE dump for 'Francke 11,2/15' and Jablonski: only this lead's own rows, no DECODE record",
+   "tomokiyo": "No Cryptiana page surfaced for the 1705 Jablonski-Ráday drafts; the plaintext is the draft's own Latin",
+   "lasry": "No Lasry paper or GL.htm item surfaced for these drafts; known.py found none in the repo",
+   "edition": "Hungaricana (Chrome) search for Jablonski Ráday Berlin 1705 returned three articles and no text of Benda, Ráday Pál iratai 1703-1706 (1955). Unopened, but the plaintext is on the leaf, so it does not affect the verdict",
+   "literature": "Gebei, Agria 50 (2017), on Ráday's embassies surfaced on Hungaricana and names Jablonski; only the search snippet was read. Nothing on these drafts' cipher turned up"
+  },
+  "key_check": "No key on the leaves. A table could be built from the number-over-word pairs, but this was not done. The 1705 numbers run higher than the 1704 ones, so the system may differ from no. 75 of 1704; not compared in detail",
+  "key_held": "Benda, Levéltári Közlemények 25 (1954): clavis for the Jablonski correspondence in the Ráday archive (from the first pass; not re-opened, not tested)",
+  "duplicates": "known.py on 'Francke 11,2/15', Jablonski, Ráday: this lead's own rows plus research/oldest/scan_2026-09-23/hard_targets.md. No catalogue entry or target holds them",
+  "verdict": "read",
+  "closed": "Nos. 8, 13 and 33 of Nachl. Francke 11,2/15 are enciphering drafts: clear Latin with the red number groups written above it (PPN1853543950, scans 23-24, 37-39, 71-72). The only unglossed numbers are two runs on scan 72 quoted from Ráday's incoming letter, which Jablonski says came from another cipher"
+ },
+ "2170": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch c26",
+  "seen": {
+   "kind": "scan",
+   "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1706-1707, Nachl. Francke 11,2/16, PPN1853544159 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1853544159&PHYSID=PHYS_0086): no. 42 scans 86-87, no. 44 scans 91-92",
+   "extent": "Two drafts on four full pages, with number lines above nearly every line of Latin (scans 86, 87, 91) and most of the P.S. on scan 92",
+   "cipher": "Clear Latin draft with numeric groups written over it line by line. No. 42, 7 Dec 1706, 'Ad Dn. Paul. de Rada': numbers over the whole text. No. 44, 14 Feb 1707, 'ad Dn. Paul. Rabaj': the same, signed with a cover name read as 'Ernesto Petersonio', with a P.S. on scan 92, so the leaf shows the cipher that its Kalliope record only tags. The 'R I' margin mark of no. 42 was not located at viewer scale"
+  },
+  "prior_art": {
+   "decode": "known.py over the harvested DECODE dump for 'Francke 11,2/16', Jablonski and Petersonius: only this lead's rows, no DECODE record",
+   "tomokiyo": "No Cryptiana page surfaced for the 1706-07 drafts; the plaintext is the Latin under the numbers",
+   "lasry": "No Lasry paper or GL.htm item surfaced for these drafts; known.py found none in the repo",
+   "edition": "Benda, Ráday Pál iratai II 1707-1708 (1961) appears on Hungaricana only as reviews (Levéltári Közlemények 34, Századok 1962), so it stays unopened; the plaintext is on the leaf, so it does not affect the verdict",
+   "literature": "Web searches on Jablonski and Rákóczi ciphers gave Láng and Révay 1974 in general, with nothing shown on these drafts"
+  },
+  "key_check": "No key on the leaves. A table could be built from the number-over-word pairs, but this was not done; not compared with the Rákóczi keys in the repo",
+  "key_held": "Benda, Levéltári Közlemények 25 (1954): clavis for the Jablonski correspondence in the Ráday archive (from the first pass; not re-opened, not tested)",
+  "duplicates": "known.py on 'Francke 11,2/16', Jablonski, Ráday, 'Ernesto Petersonio': this lead's own rows plus research/oldest/scan_2026-09-23/hard_targets.md. No catalogue entry or target holds them",
+  "verdict": "read",
+  "closed": "Nos. 42 and 44 of Nachl. Francke 11,2/16 are enciphering drafts: the full Latin plaintext sits under the numeric groups written line by line above it (PPN1853544159, scans 86-87 and 91-92)"
+ },
+ "2171": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch c26",
+  "seen": {
+   "kind": "scan",
+   "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1711-1712, Nachl. Francke 11,2/17, PPN185354437X, scan 124 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN185354437X&PHYSID=PHYS_0124); the whole of no. 91, since scan 125 starts no. 92",
+   "extent": "Very little: one run of five groups, 55.175.20.200.338 ('ideoq 55.175.20.200.338 plura poterit pro S.V. efficere'), plus the code number 237 twice in a quoted German passage. All else on the page is clear Latin and German",
+   "cipher": "In-line numeric groups with no gloss above them or in the margin: the letter leaves the five-group run and 237 unexplained. The marginal notes on the page are additions to the Latin, not decipherments"
+  },
+  "prior_art": {
+   "decode": "known.py over the harvested DECODE dump for '11,2/17', Klement, Jablonski: this lead's own rows and the unrelated catalogue 504; no DECODE record of this draft",
+   "tomokiyo": "Web search naming Tomokiyo/Cryptiana, Rákóczi, Jablonski and Klement 1712 returned no page on this letter",
+   "lasry": "The same search returned Lasry's Mary Stuart and other work only, nothing on Rákóczi-Jablonski; known.py found none in the repo",
+   "edition": "Fiedler, Actenstücke II (FRA II/17, 1858, IA fontesrerumaust22kommgoog): the table of contents for January 1712 lists no Jablonski to Rákóczi letter of 5 Jan, and the edition prints Klement's papers. Benda, Ráday Pál iratai 1709-1711 (2003) ends before this date and names Jablonski once (first pass). Thaly's letter-books hold Rákóczi's outgoing letters. STARS holds 11,2/17:58 but 11,2/17:91 was not found (first pass; a further listing page failed to parse in Chrome)",
+   "literature": "Hungaricana for Jablonski Rákóczi 1712 Klement gave only Buzási on Mányoki citing Fiedler. Web searches gave Láng and Révay 1974 in general; Révay was not opened"
+  },
+  "key_check": "Tested Fiedler's printed key I, 'Chifres avec le Prince Rákóczi' (FRA II/17, Anhang III, from p. 625), on the groups, using the IA OCR. 55=mi, 175=lo, 20=R, 200=D, 338=rabi give 'Milord Raby', and 237=princeps. The sense fits, since the Lord Raby/Strafford is at The Hague in these months. This test is mine and is not on record elsewhere",
+  "key_held": "Fiedler 1858 (FRA II/17, Anhang III), key I, printed for Klement's correspondence with Rákóczi, tested: it gives 'Milord Raby' and 'princeps' (see key_check). Not checked against the printed page image, OCR only",
+  "duplicates": "known.py on '11,2/17', Klement, Jablonski, Ráday. Hits: this lead's own rows; catalogue 504 (Rákóczi to Klement, 6 Jan 1710, HHStA) is a different letter; targets/rakoczi1711 mentions Jablonski in R483, a different letter. No duplicate",
+  "verdict": "open",
+  "searches": [
+   {
+    "query": "Jablonski letter Rákóczi January 1712 Klement The Hague Prince Eugene journey England Geheimschrift cipher Danzig decipher",
+    "result": "No page on this draft; STARS items 66 and 67 (Jablonski letters of Sep 1711 and Jan 1712, other than this one), Láng and Révay in bibliographies"
+   },
+   {
+    "query": "Rákóczi ciphers Jablonski Berlin Tomokiyo cryptiana OR Lasry OR Láng Rákóczi key numeric Klement Hague 1712 deciphered",
+    "result": "Nothing on the Jablonski-Rákóczi cipher or a decipherment of this letter; only Lasry's and Tomokiyo's other work and the Hungarian bibliography"
+   },
+   {
+    "query": "Hungaricana: Jablonski Rákóczi 1712 Klement",
+    "result": "Two hits, both Buzási on the painter Mányoki, citing Fiedler for Jablonski to Klement letters and Rákóczi to Klement of 30 Jan 1712; no print of this draft"
+   },
+   {
+    "query": "Fiedler Actenstücke zur Geschichte Franz Rákóczy's 1858 Fontes rerum Austriacarum Band 17 Jablonski Klement Volltext",
+    "result": "Led to the IA text; its contents for Dec 1711-Jan 1712 have no Jablonski to Rákóczi letter of 5 Jan 1712, and its Anhang III prints the keys tested in key_check"
+   }
+  ]
+ },
+ "2172": {
+  "unvetted": "Not digitised, so ff. 2-10 are still unseen. Handschriftenportal record for Ms. germ. fol. 109 (Paul Grebener: Prophezeihungen, 1573, 144 Bl., description by Degering/Riecke) shows 'Digital images: 0'. SBB Digitalisierte Sammlungen in Chrome: \"Ms. germ. fol. 109\" 0 hits, 'Grebner Seidenfaden' 0, 'Wahrsagungen Prophezeihungen Grebner' 0, 'Grebener' only 5 unrelated prints, 'germ. fol. 109' filtered to Handschrift 3 hits, of which the two read are service catalogues (Ms. Cat. A 557) and the third was not read. Web search on Grebner, the shelfmark and 'Chiffreschrift' found nothing; the Grebner bibliography lists Berlin ms. germ. fol. 49 instead. Needed: an SBB scan of Bl. 2-10, to decide whether 'Chiffreschrift' is a true cipher or a cryptic script, and whether a decipherment is on the leaf. Only the description 'Bl. 2-10 Wahrsagungen in Chiffreschrift' is known."
+ }
+}

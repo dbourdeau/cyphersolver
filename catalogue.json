@@ -63714,6 +63714,400 @@
     "duplicates": "known.py 'Salazar': no catalogue entry, target or other lead for José María or Luis María de Salazar; ArchiveGrid search found no second copy.",
     "verdict": "open"
    }
+  },
+  {
+   "id": 2159,
+   "counted": true,
+   "year": 1559,
+   "date": "23 Apr 1559",
+   "title": "Ercole II d'Este → Claudio Ariosto, letter in cipher with postscript (sister of the open 15 Jul 1559 Ariosto letter)",
+   "correspondents": "Ercole II d'Este → Claudio Ariosto",
+   "place": "Ferrara",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 39-41",
+   "folio_note": "6 canvases; both pages of the letter mostly symbol cipher; postscript cc. 40-41.",
+   "cls": "B",
+   "status": "Record: 'Lettera cifrata. Allegato post scriptum (cc. 40-41).' Catalogue 1566 (targets/ercole1559) holds Ercole II cc. 50-51 and Ariosto c. 1, the latter not solved; this letter is a new shelfmark and adds ciphertext, probably in the same key. No decipherment noted. Manifest uuid(s): 8d50f9af-95d8-405e-a3a4-f66933e69af1.",
+   "why": "More text for the unsolved 1559 Este-Ariosto cipher, which raises the odds of a solution.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Compare the symbol set with Ariosto c. 1 and Ercole II cc. 50-51.",
+   "links": [
+    {
+     "label": "Ercole II → Ariosto 23 Apr 1559 record",
+     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=8d50f9af-95d8-405e-a3a4-f66933e69af1"
+    },
+    {
+     "label": "Ercole II → Ariosto 23 Apr 1559 IIIF manifest",
+     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/8d50f9af-95d8-405e-a3a4-f66933e69af1/manifest"
+    }
+   ],
+   "source": "Biblioteca Estense (Lodovico) sweep",
+   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
+   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
+   "needs_archive_scan": "no",
+   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b68",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense IIIF manifest 8d50f9af-95d8-405e-a3a4-f66933e69af1: all 6 canvases (cc. 39r-41v) viewed 4 Nov 2026; enlarged crops of 39r and 40r checked for faint interlinear writing",
+     "extent": "Cipher runs alternate with clear on 39r, 39v, 40r, 40v and 41r: about 50 lines carry cipher, many of them wholly. 39v closes 'Da Ferrara alli 23 April 1559'; 40r is headed 'Post.'; 41v is blank show-through.",
+     "cipher": "Greek-like and Latin-like signs in spaced lines, with small digits above many signs, set between clear Italian words. No decipherment on any of the five pages: enlarged crops show only the digits above the signs and one small correction over a run near the foot of 39v. The later note 'Monsig. Ariosti Claudio (Milano)' is at the foot of 39v."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump and repo ledgers) on 'Claudio Ariosto' and '8d50f9af': catalogue 1566 (other shelfmarks) and this lead only. A dump search, not a live one; no DECODE record for this Campori letter.",
+     "tomokiyo": "cryptiana italian.htm and habsburg.htm fetched: no Ercole II or Ariosto cipher of 1559; habsburg.htm has only an Emperor-Ferrara cipher tied to 1509.",
+     "lasry": "Web search naming Lasry, Tomokiyo and the Este cipher returned their other papers (Mary Stuart, Conti, Viete), nothing on Ercole II in 1559.",
+     "edition": "No edition of Ercole II's letters to Claudio Ariosto found; the Modena ambasciatori series is unpublished as far as the searches show. 'La parola incognita' (Este ciphers) came up and stops well before 1559 by its summary.",
+     "literature": "Searches found Claudio Ariosto only later, as an Este envoy at Venice in 1592 and in a Ferrara manuscript of 1580-86 newsletters; nothing on this letter's cipher."
+    },
+    "searches": [
+     {
+      "query": "Ercole II d'Este Claudio Ariosto ambasciatore Milano 1559 lettera cifra aprile 1559",
+      "result": "Laruccia 2024 on Italian diplomats, the ASMo ambasciatori listing, an article on Este ciphers; nothing on this letter."
+     },
+     {
+      "query": "cifra Este Ercole II 1559 cifrario decifrazione Tomokiyo cryptiana Lasry Este cipher Claudio Ariosti Milano governatore lettere",
+      "result": "Lasry and Tomokiyo papers on other ciphers; no Este 1559 decipherment."
+     },
+     {
+      "query": "\"Claudio Ariosti\" segretario Ercole II agente Milano Ferrara 1559 carteggio Autografoteca Campori",
+      "result": "A Ferrara catalogue item of newsletters to Claudio Ariosto 1580-86 and a BL letter to him at Venice 1592; no edition of this letter and no decipherment."
+     }
+    ],
+    "key_check": "targets/ercole1559/key_1559.tsv (Bentivoglio, 28 May 1559) not applied: its one-dot signs differ from these shapes with digits above, and that target's notes show it fails on Ariosto c. 1. No key held fits by shape.",
+    "key_held": "None that reads it. Ariosto c. 1 of 15 Jul 1559 (targets/ercole1559 notes) has the same kind of Greek-Roman signs with digits above, about 35 signs and unsolved: a sibling for testing, not a key.",
+    "duplicates": "known.py on 'Claudio Ariosto' and the uuid; catalogue 1566 holds Ercole II cc. 50-51 and Ariosto c. 1, not cc. 39-41. Not a duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 2160,
+   "counted": true,
+   "year": 1547,
+   "date": "8 Jan 1547",
+   "title": "Ercole II d'Este → 'secretario domino Claudio', letter partly in cipher",
+   "correspondents": "Ercole II d'Este → secretary Claudio (Ariosto?)",
+   "place": "Ferrara",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 16-17",
+   "folio_note": "4 canvases; mostly clear, some cipher.",
+   "cls": "B",
+   "status": "Record: 'Il destinatario è indicato come: secretario [...] domino Claudio[...]. Lettera in parte cifrata.' No decipherment noted. Manifest uuid(s): 89e1bdc6-a46d-4627-9770-efbd17e544fb.",
+   "why": "An earlier Este cipher to the same secretary; possibly the same family as the 1559 letters.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Measure the cipher amount at full resolution.",
+   "links": [
+    {
+     "label": "Ercole II 8 Jan 1547 record",
+     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=89e1bdc6-a46d-4627-9770-efbd17e544fb"
+    },
+    {
+     "label": "Ercole II 8 Jan 1547 IIIF manifest",
+     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/89e1bdc6-a46d-4627-9770-efbd17e544fb/manifest"
+    }
+   ],
+   "source": "Biblioteca Estense (Lodovico) sweep",
+   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
+   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
+   "needs_archive_scan": "no",
+   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b68",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense IIIF manifest 89e1bdc6-a46d-4627-9770-efbd17e544fb: all 4 canvases (cc. 16r-17v) viewed 4 Nov 2026; enlarged crops of the cipher block on 16v",
+     "extent": "One block on 16v, 9 lines of unbroken cipher, roughly 350 signs. 16r is all clear, 17r blank, 17v address ('secretario ... Claudio'). Closes 'Ferrarie viij Jan. 15[4]7', with a modern pencil '1547(?)' beside it.",
+     "cipher": "Latin-letter-like signs (g, h, n, r, y, b, delta-like forms) with small digits and strokes above many of them, a solid block between clear paragraphs. No decipherment: enlarged crops of all 9 lines show no interlinear words, and neither the margins nor 17v carry one. It is a different sign set from the Greek-like 1559 letter cc. 39-41."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested dump and repo ledgers) on 'Claudio Ariosto' and '89e1bdc6': this lead and its sweep rows only for this document. No DECODE record seen. A dump search.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched and searched for Ferrara, Este, Ariosto: no cipher of Ercole II around 1547.",
+     "lasry": "Web searches on the Este cipher in the 1540s returned the Charles V to Saint-Mauris paper of 1547 (Lasry and others), a Habsburg cipher, not this one.",
+     "edition": "No edition of Ercole II's letters of 1547 found. The Della Casa-Farnese correspondence 1546-47 came up and is not this series. No calendar covers the Campori autographs.",
+     "literature": "Searches for secretary Claudio with Ercole II in 1546-47 found nothing that identifies him or discusses this cipher; the addressee stays as the record gives it."
+    },
+    "searches": [
+     {
+      "query": "Ercole II d'Este 8 gennaio 1547 lettera in cifra secretario Claudio Ariosto Strasburgo Smalcalda inviato corte imperiale",
+      "result": "A clear Ercole II letter of 10 Mar 1547 in a sale record and Lodovico Ariosto material; nothing on this letter."
+     },
+     {
+      "query": "Este ducal cipher 1540s Ferrara secretary Claudio Ariosto sent to Charles V court 1546 1547 Ercole II dispatches cifra decipher",
+      "result": "News on the Charles V cipher of 1547 and a Venetian cipher appendix; no Este dispatch of 1547."
+     },
+     {
+      "query": "Autografoteca Campori Ercole II d'Este lettere 1547 \"in parte cifrata\" edizione Modena Biblioteca Estense segretario Claudio",
+      "result": "No edition; a Morgan Ercole II letter of Oct 1547, 'La parola incognita', and Della Casa-Farnese; none holds this text."
+     }
+    ],
+    "key_check": "ercole1544, ercole1559 and alfonso1576 keys are other systems by shape (ercole1559 one-dot signs; 1544 a Gonzaga half-shift) and were not applied. No Este key of the 1540s held.",
+    "duplicates": "known.py on 'Claudio Ariosto' and the uuid; catalogue 1566 has other shelfmarks. No entry holds cc. 16-17.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 2162,
+   "counted": true,
+   "year": 1537,
+   "date": "6 May 1537",
+   "title": "Federico II Gonzaga, duke of Mantua → Ferrante Gonzaga, with an enclosure partly in cipher",
+   "correspondents": "Federico II Gonzaga → Ferrante Gonzaga",
+   "place": "Mantua",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Federico II, duca di Mantova, sfasc. II, cc. 12-15",
+   "folio_note": "8 canvases; enclosure cc. 13-14 with many lines of symbol cipher.",
+   "cls": "C",
+   "status": "Record: 'In allegato (cc. 13-14) un documento parzialmente cifrato.' No decipherment noted. Manifest uuid(s): 22b3126b-3b70-4ede-a33b-1adf4a4491f6.",
+   "why": "A Mantuan ducal cipher of 1537, when Ferrante was viceroy of Sicily.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Count cipher groups; look for Gonzaga keys of the 1530s in Mantua.",
+   "links": [
+    {
+     "label": "Federico II 6 May 1537 record",
+     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=22b3126b-3b70-4ede-a33b-1adf4a4491f6"
+    },
+    {
+     "label": "Federico II 6 May 1537 IIIF manifest",
+     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/22b3126b-3b70-4ede-a33b-1adf4a4491f6/manifest"
+    }
+   ],
+   "source": "Biblioteca Estense (Lodovico) sweep",
+   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
+   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
+   "needs_archive_scan": "no",
+   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b68",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense IIIF manifest 22b3126b-3b70-4ede-a33b-1adf4a4491f6: all 8 canvases (cc. 12r-15v) viewed 4 Nov 2026; enlarged crops of the top of 13r and 13v and the foot of 12r",
+     "extent": "Cipher on 13r (about 24 lines in two headed sections) and the top of 13v (about 10 lines). 12r is the clear covering letter, 'Da Mantoua agli vj de Maggio MDXXXVII'; 12v, 14r, 14v, 15r are blank or show-through; 15v is the address and docket.",
+     "cipher": "Groups of small Latin letters and digits (ipux, xel, li3b, ugidigi, 30) run on with clear Italian words ('Acciochè ella comprendi, ch'io no ho parlato di sopra senza raggione'), and two section headings are themselves cipher ('4l 54fila xagi'). No decipherment: enlarged crops show none above the lines, and none is in the margins or on cc. 14-15."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested dump and repo ledgers) on 'Federico II Gonzaga' and '22b3126b': only this lead and its sweep rows. No DECODE record seen. A dump search, not a live one.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched and searched for Gonzaga, Mantua: nothing on a Mantuan cipher of 1537.",
+     "lasry": "Web search naming Lasry, DECODE and Gonzaga ciphers of the 1530s gave only a 2022 study of Gonzaga ciphers around 1400; no Lasry work on 1537.",
+     "edition": "No edition of Federico II's letters to Ferrante found. Odorici's 1865 Muley-Hassen letters to Ferrante (1537-47) and the Palermo viceregal letters came up; neither is this series.",
+     "literature": "Studies of Ferrante in Sicily appear (Palermo repository) and date his arrival to March 1537; none mentions this enclosure or its cipher."
+    },
+    "searches": [
+     {
+      "query": "Federico II Gonzaga Ferrante Gonzaga 6 maggio 1537 lettera cifra Mantova carteggio edizione",
+      "result": "Gonzaga archive inventories and the Masaryk study of Gonzaga ciphers; no edition of this letter."
+     },
+     {
+      "query": "Gonzaga cipher 1530s Mantua Federico II duke ciphers Archivio Gonzaga study deciphered letter Ferrante viceroy Sicily 1537 Tunis Lasry DECODE",
+      "result": "Studies of ciphers around 1400 and a clear 1537 Goletta letter in ASMn; no decipherment of a 1537 cipher to Ferrante."
+     },
+     {
+      "query": "Ferrante Gonzaga viceré di Sicilia 1537 lettere del duca Federico Gonzaga maggio 1537 Tamalio Molfetta Campori cifrata",
+      "result": "Biographical pages and Palermo studies of the viceroyalty; nothing on this enclosure."
+     }
+    ],
+    "key_check": "None held for Mantua in the 1530s. targets/ercole1544 and ferrante1549 are later systems of other shapes and were not applied. The Mantuan cipher ledgers in ASMn were not reached.",
+    "duplicates": "known.py on 'Federico II Gonzaga' and the uuid: no catalogue entry or target holds this letter.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 2164,
+   "counted": true,
+   "year": 1576,
+   "date": "2 Sep 1576",
+   "title": "Alfonso II del Carretto, marquis of Finale → Lodovico Allaria and Paolo Fenocchio, letter partly in cipher",
+   "correspondents": "Alfonso II del Carretto → Lodovico Allaria and Paolo Fenocchio",
+   "place": "Regensburg (Ratisbona)",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1560-1589",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera D, Del Carretto, Alfonso II (sec. XVI), c. 10",
+   "folio_note": "2 canvases; upper half of c. 10 in cipher.",
+   "cls": "C",
+   "status": "Record: 'Lettera parzialmente cifrata.' No decipherment noted. Dan's 'Del Carretto' hits are Ottone del Carretto (Milan, 1520s), not this. Manifest uuid(s): ca09c927-df47-423e-adbb-dc4fdac1a851.",
+   "why": "The marquis of Finale, in conflict with his subjects and Genoa in the 1560s-70s; a small private cipher.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Count symbols.",
+   "links": [
+    {
+     "label": "Del Carretto 2 Sep 1576 record",
+     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=ca09c927-df47-423e-adbb-dc4fdac1a851"
+    },
+    {
+     "label": "Del Carretto 2 Sep 1576 IIIF manifest",
+     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/ca09c927-df47-423e-adbb-dc4fdac1a851/manifest"
+    }
+   ],
+   "source": "Biblioteca Estense (Lodovico) sweep",
+   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
+   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
+   "needs_archive_scan": "no",
+   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b68",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense IIIF manifest ca09c927-df47-423e-adbb-dc4fdac1a851: both canvases (10r, 10v) viewed 4 Nov 2026 at 1900 px high",
+     "extent": "c. 10r: 11 lines of cipher at the head, plus a 5-line cipher insertion in the left margin; roughly 450 signs. The clear text below ends 'Di Ratisbona il 2 di settembre 1576', signed 'il principe marchese del Finale'. 10v is the address to Allaria and Fenocchio at Milan.",
+     "cipher": "Word-spaced signs, Latin and Greek-like (x, omega-like, q, k, a crossed t), with strike-outs. No decipherment: nothing interlinear except one small sign group over a line 1 correction, in the same cipher, and 10v carries no clear version."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested dump and repo ledgers) on 'Del Carretto', 'Finale', 'ca09c927': hits are this lead and unrelated Ottone and Oton del Carretto entries. A dump search, not a live one; no DECODE record seen.",
+     "tomokiyo": "cryptiana italian.htm and crypto.htm fetched and searched for Finale and Carretto: no such cipher.",
+     "lasry": "No Lasry work on Finale or Alfonso II del Carretto came up in three searches or in the repo.",
+     "edition": "No edition of Alfonso II's letters found. Cavagna 2012 reconstructs his library from a book list, and reviews say few autographs of his survive; Edelmayer's article treats the fief politically. Neither is shown to print this letter.",
+     "literature": "Edelmayer (Memoria y Civilizacion) and the Finale museum history cover the exile and the imperial commissioners; nothing on cipher, Allaria, Fenocchio or the 1576 stay at Regensburg."
+    },
+    "searches": [
+     {
+      "query": "Alfonso II del Carretto marchese di Finale 1576 Ratisbona dieta lettera cifra Lodovico Allaria Paolo Fenocchio agenti Milano",
+      "result": "Biography and Cavagna's library study; nothing on the agents or the letter."
+     },
+     {
+      "query": "Alfonso II Carretto Finale 1576 Regensburg Emperor Maximilian II Genoa Finale restituzione lettere cifrate edizione Silla Storia del Finale",
+      "result": "Edelmayer on Maximilian II and Finale, Maximilian's death at Regensburg in Oct 1576; no cipher letters and no edition."
+     },
+     {
+      "query": "marchese del Finale Alfonso Carretto cipher letter 1576 Biblioteca Estense Campori cifra Scarampi \"Donna Leonora\" Cavassola dottore",
+      "result": "Cavagna reviews and museum pages only; none of the people named in the clear text and no decipherment."
+     }
+    ],
+    "key_check": "No key held for Finale; Ottone del Carretto's ciphers of the 1450s and Oton Enrique's of the 1660s are other people and periods and were not applied.",
+    "duplicates": "known.py on 'Del Carretto', 'Finale', uuid: other Carretto entries are different people. No duplicate.",
+    "verdict": "open"
+   }
+  },
+  {
+   "id": 2176,
+   "counted": true,
+   "year": 1624,
+   "date": "8 Apr 1624",
+   "title": "'Francesco Rota' → 'Mons. Vatron' in London, The Hague 8 Apr 1624, mostly in code",
+   "correspondents": "'Francesco Rota' (per Goetz and Gardiner the Capuchin P. Alexander of Hales) → 'Mons. Vatron', London",
+   "place": "The Hague",
+   "language": "Italian",
+   "region": "Germany",
+   "period": "1611-1650",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10398 (Collectio Camerariana vol. 48), n. 106",
+   "folio_note": "Clm 10398 scan 469 (fol. 233).",
+   "cls": "C",
+   "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 95: \"Lettera di Francesco Rota à Mr. Vatron à Londre, Haia 8 Apr. 1624 (von Lud. Cam. geschrieben, grossentheils in Chiffern)\". Cover names: n. 107 is 'Francesco Rota al Sign. Lod. Camerario, Bruxelles 29 Apr.', so 'Rota' is a cover used in this channel. Mostly cipher; Italian plaintext. Not on DECODE (repo dumps have no BSB Clm 103xx). Image: https://www.digitale-sammlungen.de/en/view/bsb00116447?page=1 (IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116447/manifest). Viewed by WAINUT on 3 Nov 2026 (scan 469): Italian clear text with run-together two-digit numbers and the letters g, p, t, c, x and & as code signs; no decipherment on the page, so ciphertext-only. Names the Capuchin Giacinto ('Non erubesco Evangelium', cf. n. 108). Not the code of Camerarius's 1621-22 letters to Solms (WAINUT's separate camerarius1621 submission). Not attempted.",
+   "why": "A cover-named letter from the Capuchin mission of 1623-24, in two-digit code with letter signs. Halm says Ludwig Camerarius wrote it, which would make this leaf a copy; the hand was not checked.",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from Halm's catalogue entry during the Nov 2026 bavarikon/BSB sweep (research/wainut_leads_2026-11-03/); the volume's scans are confirmed online (MDZ, from microfilm, legible), the cipher leaves not yet located in them",
+   "verify": "Transcribe scan 469 in two passes; look for other 'Rota' pieces (n. 107, n. 108) that may carry the same system with glosses.",
+   "links": [
+    {
+     "label": "MDZ scans Clm 10398",
+     "href": "https://www.digitale-sammlungen.de/en/view/bsb00116447?page=1"
+    },
+    {
+     "label": "Halm 1874 catalogue entry",
+     "href": "https://www.digitale-sammlungen.de/en/view/bsb11184610?page=105"
+    },
+    {
+     "label": "MDZ Clm 10398 scan 469 (n. 106)",
+     "href": "https://www.digitale-sammlungen.de/en/view/bsb00116447?page=469"
+    }
+   ],
+   "seen": "image",
+   "source": "bavarikon / BSB digital collections sweep",
+   "prior_art": "open (checked 3 Nov 2026: quick web search on Camerarius + cipher/Chiffre/Solms found no decipherment; DECODE dumps in the repo have no BSB Clm 103xx item; repo grep 'Camerari' on origin/main, 3 Nov 2026: Riksarkivet R4284 and catalogue 207/1614 (Oxenstierna E 701/E 708, letters to 'Camerarius?'), no BSB item)",
+   "needs_archive_scan": "no",
+   "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch c25",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00116447 scan 469 (Clm 10398, fol. 233, piece number 106), read at 1418 px. Scan 470, the verso, is blank; scan 471 is n. 107.",
+     "extent": "One page, about 26 lines of letter, with code on most lines up to the close (about 20 lines). Not counted by machine; no transcription made.",
+     "cipher": "Italian clear text with runs of two-digit numbers ('21 10 22 x 49', '94 40 20', '50 30 90') and the signs g, p, t, c, x, r, n and & mixed in with numbers ('g 34', 'g 27', 'c 94'). Nothing is written over or beside any group: no decipherment on the leaf. Dated 'Haia 8 Aprile 1624', signed 'Fran.co Rota', addressed 'A Monsieur Monsieur Vatron Londre'."
+    },
+    "prior_art": {
+     "decode": "known.py 'Clm 10398', 'Francesco Rota', 'Vatron', 'Giacinto', 'Hyacinth', 'Alexander von Hales' (harvested DECODE dump included): only this lead and the note in targets/camerarius1621; no DECODE record.",
+     "tomokiyo": "Cryptiana unsolved.htm fetched and searched this pass: no Camerari, Rota or Vatron entry for this letter. First pass: web search on Tomokiyo with Hyacinth of Casale, Maximilian and 1624 returned only his Mary Stuart work.",
+     "lasry": "Web search on Lasry with Camerarius and Palatine cipher 1624 returned only unrelated papers (Mary Stuart, Catholic League); known.py finds no Rota or Vatron row among the repo's Lasry material.",
+     "edition": "Rusdorf, Mémoires et négociations secrètes (ed. Cuhn, 1789), Google Books full view kmZeAAAAcAAJ (hits run to p. 702; volume number not checked), searched inside: it covers the Rota mission from London at length (Feb 1624, pp. 161-275; Rota resolved to go to The Hague, p. 252; dispatched, p. 253) and prints letters of April 1624 (pp. 280-300), but 'Vatron' and 'Watron' give 0 hits, 'Haye 8 Avril' 0, 'Rota Camerarius' 0, and 'chiffre' only pp. 163 and 265, neither this letter. The volume labelled Volume 2 (M4B-0ou3Tb0C) gave 0 on every term, including '1624', so its search did not work and it was not read; kmZeAAAAcAAJ already runs well past April 1624 (hits to Dec 1624 and beyond), so the date falls there. Khevenhüller, Annales Ferdinandei Tom. X (1623-27), MDZ bsb10866796, full-text API: 'Vatron', 'Watron', 'Rusdorf', 'Camerarius' 0; 'Rota' once, an unrelated auditor (scan 686); the Capuchin mission is at pp. 422-423 (scan 231, read), Maximilian denying he ever gave the Capuchin a commission and naming Pater Jacinto and the nuncio at Brussels as the ones who could show it, with no letter of 8 April and no cipher. Goetz, Briefe und Akten N.F. II/1 (1907), opened in full text by the first pass (archive.org briefeundaktenz00duchgoog): prints Coll. Camerariana XLVIII n. 108, summarises n. 107 and n. 110, quotes n. 111, has no Vatron and does not cite n. 106. Söltl, Religionskrieg, full text: Rota at The Hague March-April 1624, no Vatron.",
+     "literature": "Gardiner, History of England V ch. XLVII and Krüner, Johann von Rusdorf (1876) describe the mission without this letter. Schubert, Ludwig Camerarius (1955/2013) is not online and was not seen. Searches on Rota, Vatron and cipher found no decipherment."
+    },
+    "key_check": "camerarius1621 key.tsv does not fit: its code is German and one-part, with groups up to about 3200, while this letter uses two-digit numbers and letter signs in Italian. Not attempted. Goetz cites Hyacinth and Alexander reports in cipher ('Chiffr. Or./Abschr.', Munich St.A. K. schw. 442/19), an untested possible route to the same family; no key found on record.",
+    "duplicates": "known.py 'Clm 10398', 'Francesco Rota', 'Vatron': only this lead, its sweep and targets/camerarius1621/NOTES.md, which lists n. 106 as outside that target. No catalogue entry.",
+    "searches": [
+     {
+      "query": "Francesco della Rota Capuchin 1624 Frederick V Palatine London The Hague nuncio Bagno negotiation",
+      "result": "CSP Venice March-April 1624: a Capuchin's London talks on Bavaria and the Palatine failed, then he passed The Hague for Brussels. No letter text and no cipher."
+     },
+     {
+      "query": "\"Francesco della Rota\" OR \"Francesco da Rota\" Capuchin letter 1624 Vatron Camerarius intercepted cipher Palatine",
+      "result": "Nothing on Vatron or on this letter; no decipherment. Only general Venetian items on intercepted post."
+     },
+     {
+      "query": "Gardiner History of England Capuchin \"Francesco della Rota\" 1624 Frederick Maximilian electorate Rota Hague Brussels nuncio",
+      "result": "Led to Gardiner vol. V ch. XLVII: 'A Capuchin friar, travelling under the assumed name of Francesco della Rota', with offers from Bavaria. Narrative only, this letter not given."
+     },
+     {
+      "query": "Briefe und Akten zur Geschichte des Dreissigjährigen Krieges Neue Folge II 1 1623-1624 Goetz Rota Kapuziner Francesco della Rota Pfalz London",
+      "result": "No direct hit; the volume was then found on archive.org and opened. Index: 'Rota, Francesco della, s. Alexander, P.' (Alexander of Hales). n. 106 not cited and Vatron absent."
+     },
+     {
+      "query": "Schubert \"Ludwig Camerarius\" 1955 Biographie Pater Alexander von Hales Rota Den Haag April 1624 Verhandlung Kapuziner Pfalzgraf Brief",
+      "result": "Bibliographic records and reviews of Schubert only; nothing on this letter, and the book is not online."
+     },
+     {
+      "query": "Tomokiyo cryptiana Capuchin Hyacinth of Casale cipher 1624 Maximilian Bavaria Palatine letter; Lasry decipherment Camerarius Palatine cipher 1624",
+      "result": "Only Mary Stuart and Catholic League papers; nothing on the Rota or Hyacinth ciphers."
+     },
+     {
+      "query": "Google Books inside Rusdorf Mémoires kmZeAAAAcAAJ: Vatron; Watron; Rota; Avril 1624; Capucin; Camerarius; chiffre; déchiffrée; Rota Haye; Haye 8 Avril",
+      "result": "Full view. Vatron and Watron 0; Rota and Capucin at their 10-hit caps, all on the London talks of 1624 (pp. 161-329); déchiffrée only p. 163, the nuncio's letter to the Capuchin; no letter of 8 April 1624 from The Hague."
+     },
+     {
+      "query": "MDZ full-text API bsb10866796 (Khevenhüller Annales Tom. X): Rota; Vatron; Watron; Rusdorf; Capuciner; Alexander; Camerarius; Ziffer; Ziffern; Haag",
+      "result": "Vatron, Watron, Rusdorf, Camerarius 0. Capuciner scans 230-231 give the mission, read at scan 231 (pp. 422-423); Alexander scan 671 is a mission to Paris. No letter from Rota and no decipherment."
+     },
+     {
+      "query": "Google Books \"Rota\" \"Vatron\" 1624 Haia Camerarius OR Rusdorf",
+      "result": "Google: not many great matches, no result on the page. Nothing names Vatron with this letter."
+     }
+    ],
+    "verdict": "open"
+   }
   }
  ]
 }

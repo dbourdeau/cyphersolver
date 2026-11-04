@@ -1,0 +1,184 @@
+{
+ "2157": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b68",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifest e9ed90dd-b470-4059-83c4-7985f677ef00, all 12 canvases (cc. 3r-8v) viewed at 1900 px high on 4 Nov 2026; Lodovico record read",
+   "extent": "One cipher page: c. 7r, about 23 lines, digits mixed with clear words. c. 7v is show-through only. cc. 6r-6v and 8r-8v are the clear letter (signed, April 1580); c. 3r has the address and a clear summary with an 'In cifra' section; c. 4 is a stub; c. 5r is the decipherment, c. 5v show-through.",
+   "cipher": "c. 7r: run-together two-digit groups with even second digit, plus three-digit groups with a mark (388+), between clear words. c. 5r, headed in clear 'Cifra con lre di roma di 4 aprile 80', is a full clear text of it, about 15 lines. Start and end match: both open 'La proposta che V.S. scrive' and close on 'offitio' with His Majesty; the clear stretches of c. 7r ('et viene in cognitione', 'trouaranno fatto', 'parlandogline apertamente') recur in c. 5r at the same places, with the cipher stretches written out between them."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump and repo ledgers) on 'Dandini' and uuid e9ed90dd: hits are this lead and the separate target dandini1580 (R72, R73, ASV Francia 283C). No DECODE record of this Modena copy. A dump search, not a live one.",
+   "tomokiyo": "Not looked for on cryptiana beyond the web search below; the decipherment on c. 5r settles the verdict.",
+   "lasry": "Lasry's key D3190 is for a different letter of the series (R73, ff. 89-90); no Lasry work on this Modena letter found in the repo.",
+   "edition": "Acta Nuntiaturae Gallicae 8 (Cloulas, Correspondance du nonce en France Anselmo Dandino 1578-1581) covers this correspondence, partly in summary; not opened. Not needed for the verdict, since the decipherment is in the unit itself.",
+   "literature": "One web search (Gallio, Dandini, 4 Apr 1580, Jesuit, Scotland) returned the Cloulas volume only, nothing on this letter."
+  },
+  "searches": [
+   {"query": "Cardinal of Como Gallio Dandini nunzio Francia 4 aprile 1580 cifra padre gesuita Scozia re liberare Acta Nuntiaturae Gallicae", "result": "Catalogue records of Cloulas's Acta Nuntiaturae Gallicae 8; nothing on this letter or its cipher; volume text not online in the results."}
+  ],
+  "key_check": "No key needed: the clear text is c. 5r. The digit frame (even second digit, marked three-digit groups such as 388+) is the frame of targets/dandini1580; its letter table was not run against c. 7r.",
+  "key_held": "targets/dandini1580 (R72 table) and Lasry D3190 (R73) share the frame by eye; not tested on c. 7r. c. 7r with c. 5r would give a further letter table of the 1580 series.",
+  "duplicates": "known.py on 'Autografoteca Campori', 'Dandini', 'e9ed90dd': no catalogue entry or target holds this letter. Same correspondence as dandini1580, different letter and archive.",
+  "verdict": "read",
+  "closed": "Contemporary decipherment of the whole cipher: c. 5r holds a clear text of all of c. 7r (seen; openings, closes and intervening clear stretches compared). Filed with the letter, as the record says."
+ },
+ "2158": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b68",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifests 56f7c9f3-6083-4ee1-bd3b-4628f3e25569 (cc. 1-3) and 767e3b8d-82f8-4aeb-b4bf-0c869a06f627 (cc. 4-6): all 12 canvases viewed 4 Nov 2026; enlarged crops of 1r, 1v, 4r, 4v, 6r for each cipher run",
+   "extent": "Runs on 1r (1), 1v (5), 4r (4), 4v (about 7), 6r (3). None on 3r, 3v, 6v (clear); 2 and 5 are address leaves. Letters close 'ali [day blank] Xbre 1549' (3v) and 'ali 13 Xbre 1549' (6v). Each run is a few words.",
+   "cipher": "Signs inside the clear text; contemporary gloss in a darker, smaller hand over the runs. Glossed: 1r ferrara; 1v ferrara, Il voler dell'Imp., salviati e inclinato a francia, la tardezza del scrivere a S. M.ta; 4r Salviati, ferrara, concilio, Salviati; 4v Roma, a fernon et ad Oratis, don Diego, In Conclavi, Duca Ottavio (over a struck run), il vescovo di Pola, Don diego; 6r servir a S.M., mal grado, il duca Ottavio. Not directly under a gloss: 1v 'hggo...cmmis' after the M.ta gloss, the left part of the 1v line under the Francia gloss, and 4v 'del. ...mygeorsomy' on the line after the fernon gloss."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested dump and repo ledgers) on 'Lodron', '56f7c9f3', '767e3b8d': only this lead and its WAINUT sweep rows. No DECODE record. A dump search, not a live one.",
+   "tomokiyo": "No cryptiana page on Lodron; the Imperial Cipher page (spanish2.htm) concerns Ferrante's imperial cipher, a different sign system from these Latin-letter-like runs.",
+   "lasry": "No Lasry work on Lodron found by the web search or in the repo.",
+   "edition": "No edition of these letters found. Bonora, Aspettando l'imperatore (2014), covers Ferrante and the 1549 conclave; not opened. Its text would not change that the gloss is on the leaf.",
+   "literature": "One web search (Lodron, Ferrante, Dec 1549, conclave, Salviati) found background on the conclave and nothing on these letters."
+  },
+  "searches": [
+   {"query": "Sigismondo Lodron Ferrante Gonzaga December 1549 letter conclave Salviati cifra Parma Ottavio Farnese vescovo di Pola", "result": "Conclave background, Bonora 2014, a conclavist's report to Mendoza of 19 Dec 1549; no Lodron letter and no decipherment."}
+  ],
+  "key_check": "No key on record. WAINUT's note: not the ercole1544 half-shift, and the ferrante1549 table does not give 'Don Diego'. Not retested here. The glosses supply pairs for a key.",
+  "duplicates": "known.py on 'Lodron' and both uuids: no catalogue entry or target holds these letters.",
+  "verdict": "partly_read",
+  "closed": "Contemporary interlinear decipherment on the leaves covers nearly all runs: every run on 1r, 4r and 6r has one, and on 1v and 4v all but three stretches, listed in seen.cipher. Those stretches may continue a neighbouring gloss or be padding, but nothing on the leaf deciphers them."
+ },
+ "2159": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b68",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifest 8d50f9af-95d8-405e-a3a4-f66933e69af1: all 6 canvases (cc. 39r-41v) viewed 4 Nov 2026; enlarged crops of 39r and 40r checked for faint interlinear writing",
+   "extent": "Cipher runs alternate with clear on 39r, 39v, 40r, 40v and 41r: about 50 lines carry cipher, many of them wholly. 39v closes 'Da Ferrara alli 23 April 1559'; 40r is headed 'Post.'; 41v is blank show-through.",
+   "cipher": "Greek-like and Latin-like signs in spaced lines, with small digits above many signs, set between clear Italian words. No decipherment on any of the five pages: enlarged crops show only the digits above the signs and one small correction over a run near the foot of 39v. The later note 'Monsig. Ariosti Claudio (Milano)' is at the foot of 39v."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested DECODE dump and repo ledgers) on 'Claudio Ariosto' and '8d50f9af': catalogue 1566 (other shelfmarks) and this lead only. A dump search, not a live one; no DECODE record for this Campori letter.",
+   "tomokiyo": "cryptiana italian.htm and habsburg.htm fetched: no Ercole II or Ariosto cipher of 1559; habsburg.htm has only an Emperor-Ferrara cipher tied to 1509.",
+   "lasry": "Web search naming Lasry, Tomokiyo and the Este cipher returned their other papers (Mary Stuart, Conti, Viete), nothing on Ercole II in 1559.",
+   "edition": "No edition of Ercole II's letters to Claudio Ariosto found; the Modena ambasciatori series is unpublished as far as the searches show. 'La parola incognita' (Este ciphers) came up and stops well before 1559 by its summary.",
+   "literature": "Searches found Claudio Ariosto only later, as an Este envoy at Venice in 1592 and in a Ferrara manuscript of 1580-86 newsletters; nothing on this letter's cipher."
+  },
+  "searches": [
+   {"query": "Ercole II d'Este Claudio Ariosto ambasciatore Milano 1559 lettera cifra aprile 1559", "result": "Laruccia 2024 on Italian diplomats, the ASMo ambasciatori listing, an article on Este ciphers; nothing on this letter."},
+   {"query": "cifra Este Ercole II 1559 cifrario decifrazione Tomokiyo cryptiana Lasry Este cipher Claudio Ariosti Milano governatore lettere", "result": "Lasry and Tomokiyo papers on other ciphers; no Este 1559 decipherment."},
+   {"query": "\"Claudio Ariosti\" segretario Ercole II agente Milano Ferrara 1559 carteggio Autografoteca Campori", "result": "A Ferrara catalogue item of newsletters to Claudio Ariosto 1580-86 and a BL letter to him at Venice 1592; no edition of this letter and no decipherment."}
+  ],
+  "key_check": "targets/ercole1559/key_1559.tsv (Bentivoglio, 28 May 1559) not applied: its one-dot signs differ from these shapes with digits above, and that target's notes show it fails on Ariosto c. 1. No key held fits by shape.",
+  "key_held": "None that reads it. Ariosto c. 1 of 15 Jul 1559 (targets/ercole1559 notes) has the same kind of Greek-Roman signs with digits above, about 35 signs and unsolved: a sibling for testing, not a key.",
+  "duplicates": "known.py on 'Claudio Ariosto' and the uuid; catalogue 1566 holds Ercole II cc. 50-51 and Ariosto c. 1, not cc. 39-41. Not a duplicate.",
+  "verdict": "open",
+  "lead_updates": {"place": "Ferrara"}
+ },
+ "2160": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b68",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifest 89e1bdc6-a46d-4627-9770-efbd17e544fb: all 4 canvases (cc. 16r-17v) viewed 4 Nov 2026; enlarged crops of the cipher block on 16v",
+   "extent": "One block on 16v, 9 lines of unbroken cipher, roughly 350 signs. 16r is all clear, 17r blank, 17v address ('secretario ... Claudio'). Closes 'Ferrarie viij Jan. 15[4]7', with a modern pencil '1547(?)' beside it.",
+   "cipher": "Latin-letter-like signs (g, h, n, r, y, b, delta-like forms) with small digits and strokes above many of them, a solid block between clear paragraphs. No decipherment: enlarged crops of all 9 lines show no interlinear words, and neither the margins nor 17v carry one. It is a different sign set from the Greek-like 1559 letter cc. 39-41."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested dump and repo ledgers) on 'Claudio Ariosto' and '89e1bdc6': this lead and its sweep rows only for this document. No DECODE record seen. A dump search.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched and searched for Ferrara, Este, Ariosto: no cipher of Ercole II around 1547.",
+   "lasry": "Web searches on the Este cipher in the 1540s returned the Charles V to Saint-Mauris paper of 1547 (Lasry and others), a Habsburg cipher, not this one.",
+   "edition": "No edition of Ercole II's letters of 1547 found. The Della Casa-Farnese correspondence 1546-47 came up and is not this series. No calendar covers the Campori autographs.",
+   "literature": "Searches for secretary Claudio with Ercole II in 1546-47 found nothing that identifies him or discusses this cipher; the addressee stays as the record gives it."
+  },
+  "searches": [
+   {"query": "Ercole II d'Este 8 gennaio 1547 lettera in cifra secretario Claudio Ariosto Strasburgo Smalcalda inviato corte imperiale", "result": "A clear Ercole II letter of 10 Mar 1547 in a sale record and Lodovico Ariosto material; nothing on this letter."},
+   {"query": "Este ducal cipher 1540s Ferrara secretary Claudio Ariosto sent to Charles V court 1546 1547 Ercole II dispatches cifra decipher", "result": "News on the Charles V cipher of 1547 and a Venetian cipher appendix; no Este dispatch of 1547."},
+   {"query": "Autografoteca Campori Ercole II d'Este lettere 1547 \"in parte cifrata\" edizione Modena Biblioteca Estense segretario Claudio", "result": "No edition; a Morgan Ercole II letter of Oct 1547, 'La parola incognita', and Della Casa-Farnese; none holds this text."}
+  ],
+  "key_check": "ercole1544, ercole1559 and alfonso1576 keys are other systems by shape (ercole1559 one-dot signs; 1544 a Gonzaga half-shift) and were not applied. No Este key of the 1540s held.",
+  "duplicates": "known.py on 'Claudio Ariosto' and the uuid; catalogue 1566 has other shelfmarks. No entry holds cc. 16-17.",
+  "verdict": "open"
+ },
+ "2161": {
+  "unvetted": "needs Chrome: https://catalog.hathitrust.org/Search/Home?lookfor=%22Algunas+cartas+de+don+Diego+Hurtado+de+Mendoza%22 (Hathi 403 to curl; archive.org has no copy). Unopened editions that could print this letter: Vazquez and Rose, Algunas cartas 1538-1552 (Yale 1935); Varo Zafra, Cartas (Granada 2016), section Roma y Siena (only the 16-page sample read); Losi 1998 on Mendoza at Siena. Leaves seen, all 14 canvases of e02077fa: cipher is real and in the Imperial Cipher family (signs mo, no, omega as in targets/mendoza1548): c. 44r about 18 lines with no gloss; c. 46v 4 lines with a clear note in the margin beside them ('por fas o nefas ... a los hijos') that may be their decipherment, not checked; c. 40v one struck cipher line with clear 'El Cauuan ha visto los fitios' under it. Slip c. 43 is a clear topic list, not a key. Keys on record, not run: targets/mendoza1548/key_1548.md, Tomokiyo spanish2.htm, Meister p. 212, Bertomeu Masia 2009. Searches: 4 run, none finds this letter.",
+  "lead_updates": {"place": "Siena"}
+ },
+ "2162": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b68",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifest 22b3126b-3b70-4ede-a33b-1adf4a4491f6: all 8 canvases (cc. 12r-15v) viewed 4 Nov 2026; enlarged crops of the top of 13r and 13v and the foot of 12r",
+   "extent": "Cipher on 13r (about 24 lines in two headed sections) and the top of 13v (about 10 lines). 12r is the clear covering letter, 'Da Mantoua agli vj de Maggio MDXXXVII'; 12v, 14r, 14v, 15r are blank or show-through; 15v is the address and docket.",
+   "cipher": "Groups of small Latin letters and digits (ipux, xel, li3b, ugidigi, 30) run on with clear Italian words ('Acciochè ella comprendi, ch'io no ho parlato di sopra senza raggione'), and two section headings are themselves cipher ('4l 54fila xagi'). No decipherment: enlarged crops show none above the lines, and none is in the margins or on cc. 14-15."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested dump and repo ledgers) on 'Federico II Gonzaga' and '22b3126b': only this lead and its sweep rows. No DECODE record seen. A dump search, not a live one.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched and searched for Gonzaga, Mantua: nothing on a Mantuan cipher of 1537.",
+   "lasry": "Web search naming Lasry, DECODE and Gonzaga ciphers of the 1530s gave only a 2022 study of Gonzaga ciphers around 1400; no Lasry work on 1537.",
+   "edition": "No edition of Federico II's letters to Ferrante found. Odorici's 1865 Muley-Hassen letters to Ferrante (1537-47) and the Palermo viceregal letters came up; neither is this series.",
+   "literature": "Studies of Ferrante in Sicily appear (Palermo repository) and date his arrival to March 1537; none mentions this enclosure or its cipher."
+  },
+  "searches": [
+   {"query": "Federico II Gonzaga Ferrante Gonzaga 6 maggio 1537 lettera cifra Mantova carteggio edizione", "result": "Gonzaga archive inventories and the Masaryk study of Gonzaga ciphers; no edition of this letter."},
+   {"query": "Gonzaga cipher 1530s Mantua Federico II duke ciphers Archivio Gonzaga study deciphered letter Ferrante viceroy Sicily 1537 Tunis Lasry DECODE", "result": "Studies of ciphers around 1400 and a clear 1537 Goletta letter in ASMn; no decipherment of a 1537 cipher to Ferrante."},
+   {"query": "Ferrante Gonzaga viceré di Sicilia 1537 lettere del duca Federico Gonzaga maggio 1537 Tamalio Molfetta Campori cifrata", "result": "Biographical pages and Palermo studies of the viceroyalty; nothing on this enclosure."}
+  ],
+  "key_check": "None held for Mantua in the 1530s. targets/ercole1544 and ferrante1549 are later systems of other shapes and were not applied. The Mantuan cipher ledgers in ASMn were not reached.",
+  "duplicates": "known.py on 'Federico II Gonzaga' and the uuid: no catalogue entry or target holds this letter.",
+  "verdict": "open"
+ },
+ "2163": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b68",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifests 5f3a8744-621b-458e-afec-a696a6e5d627 (cc. 17-19) and e801746d-f7c5-47e0-aa2d-5ab1c0ac30df (cc. 44-47): all 14 canvases viewed 4 Nov 2026; enlarged crops of 17r, 44v, 46v, the 47v docket",
+   "extent": "Two different cases. cc. 17-19: 17r is a signed postscript of 10 May 1545, about 11 lines of cipher with clear; 18r is a separate clear sheet; the rest blank or address. cc. 44-47: digit runs on 44r (6 lines), 44v (about 20), 46r (4), 46v (4); 45r-45v all clear; 47 address and docket.",
+   "cipher": "17r: signs with digits set above and below them, clear words between. 18r is a clear text of the postscript, dated 'x di maggio 1545': it opens as 17r does ('Poscr. mandata la lettera ala posta ha trovato') and carries the clear stretches of 17r in place ('consideri un poco bene in caso pure che', 'forse dele cose di'), with the cipher written out (Mons. di Granvella, a Mantova, Mons. d'Orliens). cc. 44-46: continuous digits with vertical strokes; enlarged crops of 44v and 46v and the leaf views of 44r and 46r show no decipherment."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested dump and repo ledgers) on 'Capilupi', 'Bolduch', '5f3a8744', 'e801746d': catalogue 1564 and 1565 (other shelfmarks) and this lead. No DECODE record for these two. A dump search.",
+   "tomokiyo": "No cryptiana page on Camillo Capilupi: italian.htm and crypto.htm searched; a search naming Capilupi found none.",
+   "lasry": "No Lasry work on Capilupi's ciphers found in the two searches or the repo.",
+   "edition": "No edition of these two letters found. CSP Venice-type Mantuan calendar entries print Capilupi to Cardinal Ercole in May 1545 with a contemporary decipher: a sibling, not these. Chiesi's essay on the Capilupi-Gonzaga letters not seen.",
+   "literature": "Nothing on the Bolduch letter of Dec 1545 in two web searches; targets/capilupi1545 lists its own searches on the 1545 letters, with no edition."
+  },
+  "searches": [
+   {"query": "Camillo Capilupi Ferrante Gonzaga December 1545 Bolduch 's-Hertogenbosch letter cifra Piacenza Parma Farnese Granvelle", "result": "A calendar entry of May 1545, Capilupi to Cardinal Ercole, 'Ciphered letter with contemporary decipher'; nothing on the December letter."},
+   {"query": "Capilupi Camillo agente Ferrante Gonzaga corte imperiale 1545 lettere cifrate Chiesi carteggio Capilupi-Gonzaga Calendar State Papers Mantua Venice 1545 decipher", "result": "Other cipher studies only; no Capilupi edition and nothing on either shelfmark."}
+  ],
+  "key_check": "No key tested. targets/capilupi1545/key.tsv (cc. 15-16, 8 May 1545) treats digit marks under signs as nulls, which fits the marks on 17r, but the leaves were not compared and the key was not applied. The digits of cc. 44-46 were not run against the unread digits of c. 48 and c. 49r or the digit material in Ercole fonds cc. 88-92.",
+  "key_held": "targets/capilupi1545/key.tsv (signs, 8 May 1545), not shown to be the same key. If it is, c. 18r gives that target a clear text written two days later.",
+  "duplicates": "known.py on Capilupi terms; catalogue 1565 holds cc. 15-16, c. 48, cc. 49-50. These shelfmarks are new, so no duplicate.",
+  "verdict": "partly_read",
+  "closed": "One of the two letters has a contemporary decipherment: the postscript c. 17r is written out in clear on c. 18r. The other, Bolduch Dec 1545 (cc. 44-46), has none on any leaf and no reading was found; it could stand as its own lead."
+ },
+ "2164": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b68",
+  "seen": {
+   "kind": "scan",
+   "where": "Estense IIIF manifest ca09c927-df47-423e-adbb-dc4fdac1a851: both canvases (10r, 10v) viewed 4 Nov 2026 at 1900 px high",
+   "extent": "c. 10r: 11 lines of cipher at the head, plus a 5-line cipher insertion in the left margin; roughly 450 signs. The clear text below ends 'Di Ratisbona il 2 di settembre 1576', signed 'il principe marchese del Finale'. 10v is the address to Allaria and Fenocchio at Milan.",
+   "cipher": "Word-spaced signs, Latin and Greek-like (x, omega-like, q, k, a crossed t), with strike-outs. No decipherment: nothing interlinear except one small sign group over a line 1 correction, in the same cipher, and 10v carries no clear version."
+  },
+  "prior_art": {
+   "decode": "known.py (harvested dump and repo ledgers) on 'Del Carretto', 'Finale', 'ca09c927': hits are this lead and unrelated Ottone and Oton del Carretto entries. A dump search, not a live one; no DECODE record seen.",
+   "tomokiyo": "cryptiana italian.htm and crypto.htm fetched and searched for Finale and Carretto: no such cipher.",
+   "lasry": "No Lasry work on Finale or Alfonso II del Carretto came up in three searches or in the repo.",
+   "edition": "No edition of Alfonso II's letters found. Cavagna 2012 reconstructs his library from a book list, and reviews say few autographs of his survive; Edelmayer's article treats the fief politically. Neither is shown to print this letter.",
+   "literature": "Edelmayer (Memoria y Civilizacion) and the Finale museum history cover the exile and the imperial commissioners; nothing on cipher, Allaria, Fenocchio or the 1576 stay at Regensburg."
+  },
+  "searches": [
+   {"query": "Alfonso II del Carretto marchese di Finale 1576 Ratisbona dieta lettera cifra Lodovico Allaria Paolo Fenocchio agenti Milano", "result": "Biography and Cavagna's library study; nothing on the agents or the letter."},
+   {"query": "Alfonso II Carretto Finale 1576 Regensburg Emperor Maximilian II Genoa Finale restituzione lettere cifrate edizione Silla Storia del Finale", "result": "Edelmayer on Maximilian II and Finale, Maximilian's death at Regensburg in Oct 1576; no cipher letters and no edition."},
+   {"query": "marchese del Finale Alfonso Carretto cipher letter 1576 Biblioteca Estense Campori cifra Scarampi \"Donna Leonora\" Cavassola dottore", "result": "Cavagna reviews and museum pages only; none of the people named in the clear text and no decipherment."}
+  ],
+  "key_check": "No key held for Finale; Ottone del Carretto's ciphers of the 1450s and Oton Enrique's of the 1660s are other people and periods and were not applied.",
+  "duplicates": "known.py on 'Del Carretto', 'Finale', uuid: other Carretto entries are different people. No duplicate.",
+  "verdict": "open",
+  "lead_updates": {"place": "Regensburg (Ratisbona)"}
+ }
+}

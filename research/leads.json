@@ -34737,7 +34737,35 @@
    "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
    "seen": "image",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b68",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense IIIF manifest e9ed90dd-b470-4059-83c4-7985f677ef00, all 12 canvases (cc. 3r-8v) viewed at 1900 px high on 4 Nov 2026; Lodovico record read",
+     "extent": "One cipher page: c. 7r, about 23 lines, digits mixed with clear words. c. 7v is show-through only. cc. 6r-6v and 8r-8v are the clear letter (signed, April 1580); c. 3r has the address and a clear summary with an 'In cifra' section; c. 4 is a stub; c. 5r is the decipherment, c. 5v show-through.",
+     "cipher": "c. 7r: run-together two-digit groups with even second digit, plus three-digit groups with a mark (388+), between clear words. c. 5r, headed in clear 'Cifra con lre di roma di 4 aprile 80', is a full clear text of it, about 15 lines. Start and end match: both open 'La proposta che V.S. scrive' and close on 'offitio' with His Majesty; the clear stretches of c. 7r ('et viene in cognitione', 'trouaranno fatto', 'parlandogline apertamente') recur in c. 5r at the same places, with the cipher stretches written out between them."
+    },
+    "prior_art": {
+     "decode": "known.py (harvested DECODE dump and repo ledgers) on 'Dandini' and uuid e9ed90dd: hits are this lead and the separate target dandini1580 (R72, R73, ASV Francia 283C). No DECODE record of this Modena copy. A dump search, not a live one.",
+     "tomokiyo": "Not looked for on cryptiana beyond the web search below; the decipherment on c. 5r settles the verdict.",
+     "lasry": "Lasry's key D3190 is for a different letter of the series (R73, ff. 89-90); no Lasry work on this Modena letter found in the repo.",
+     "edition": "Acta Nuntiaturae Gallicae 8 (Cloulas, Correspondance du nonce en France Anselmo Dandino 1578-1581) covers this correspondence, partly in summary; not opened. Not needed for the verdict, since the decipherment is in the unit itself.",
+     "literature": "One web search (Gallio, Dandini, 4 Apr 1580, Jesuit, Scotland) returned the Cloulas volume only, nothing on this letter."
+    },
+    "searches": [
+     {
+      "query": "Cardinal of Como Gallio Dandini nunzio Francia 4 aprile 1580 cifra padre gesuita Scozia re liberare Acta Nuntiaturae Gallicae",
+      "result": "Catalogue records of Cloulas's Acta Nuntiaturae Gallicae 8; nothing on this letter or its cipher; volume text not online in the results."
+     }
+    ],
+    "key_check": "No key needed: the clear text is c. 5r. The digit frame (even second digit, marked three-digit groups such as 388+) is the frame of targets/dandini1580; its letter table was not run against c. 7r.",
+    "key_held": "targets/dandini1580 (R72 table) and Lasry D3190 (R73) share the frame by eye; not tested on c. 7r. c. 7r with c. 5r would give a further letter table of the 1580 series.",
+    "duplicates": "known.py on 'Autografoteca Campori', 'Dandini', 'e9ed90dd': no catalogue entry or target holds this letter. Same correspondence as dandini1580, different letter and archive.",
+    "verdict": "read",
+    "closed": "Contemporary decipherment of the whole cipher: c. 5r holds a clear text of all of c. 7r (seen; openings, closes and intervening clear stretches compared). Filed with the letter, as the record says."
+   }
   },
   {
    "id": 2158,
@@ -34784,85 +34812,34 @@
    "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
    "seen": "image",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2159,
-   "counted": true,
-   "year": 1559,
-   "date": "23 Apr 1559",
-   "title": "Ercole II d'Este → Claudio Ariosto, letter in cipher with postscript (sister of the open 15 Jul 1559 Ariosto letter)",
-   "correspondents": "Ercole II d'Este → Claudio Ariosto",
-   "place": "Ferrara (presumed)",
-   "language": "Italian",
-   "region": "Italy",
-   "period": "1497-1559",
-   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 39-41",
-   "folio_note": "6 canvases; both pages of the letter mostly symbol cipher; postscript cc. 40-41.",
-   "cls": "B",
-   "status": "Record: 'Lettera cifrata. Allegato post scriptum (cc. 40-41).' Catalogue 1566 (targets/ercole1559) holds Ercole II cc. 50-51 and Ariosto c. 1, the latter not solved; this letter is a new shelfmark and adds ciphertext, probably in the same key. No decipherment noted. Manifest uuid(s): 8d50f9af-95d8-405e-a3a4-f66933e69af1.",
-   "why": "More text for the unsolved 1559 Este-Ariosto cipher, which raises the odds of a solution.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Compare the symbol set with Ariosto c. 1 and Ercole II cc. 50-51.",
-   "links": [
-    {
-     "label": "Ercole II → Ariosto 23 Apr 1559 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=8d50f9af-95d8-405e-a3a4-f66933e69af1"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b68",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense IIIF manifests 56f7c9f3-6083-4ee1-bd3b-4628f3e25569 (cc. 1-3) and 767e3b8d-82f8-4aeb-b4bf-0c869a06f627 (cc. 4-6): all 12 canvases viewed 4 Nov 2026; enlarged crops of 1r, 1v, 4r, 4v, 6r for each cipher run",
+     "extent": "Runs on 1r (1), 1v (5), 4r (4), 4v (about 7), 6r (3). None on 3r, 3v, 6v (clear); 2 and 5 are address leaves. Letters close 'ali [day blank] Xbre 1549' (3v) and 'ali 13 Xbre 1549' (6v). Each run is a few words.",
+     "cipher": "Signs inside the clear text; contemporary gloss in a darker, smaller hand over the runs. Glossed: 1r ferrara; 1v ferrara, Il voler dell'Imp., salviati e inclinato a francia, la tardezza del scrivere a S. M.ta; 4r Salviati, ferrara, concilio, Salviati; 4v Roma, a fernon et ad Oratis, don Diego, In Conclavi, Duca Ottavio (over a struck run), il vescovo di Pola, Don diego; 6r servir a S.M., mal grado, il duca Ottavio. Not directly under a gloss: 1v 'hggo...cmmis' after the M.ta gloss, the left part of the 1v line under the Francia gloss, and 4v 'del. ...mygeorsomy' on the line after the fernon gloss."
     },
-    {
-     "label": "Ercole II → Ariosto 23 Apr 1559 IIIF manifest",
-     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/8d50f9af-95d8-405e-a3a4-f66933e69af1/manifest"
-    }
-   ],
-   "source": "Biblioteca Estense (Lodovico) sweep",
-   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
-   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
-   "needs_archive_scan": "no",
-   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
-   "seen": "image",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2160,
-   "counted": true,
-   "year": 1547,
-   "date": "8 Jan 1547",
-   "title": "Ercole II d'Este → 'secretario domino Claudio', letter partly in cipher",
-   "correspondents": "Ercole II d'Este → secretary Claudio (Ariosto?)",
-   "place": "unknown",
-   "language": "Italian",
-   "region": "Italy",
-   "period": "1497-1559",
-   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 16-17",
-   "folio_note": "4 canvases; mostly clear, some cipher.",
-   "cls": "B",
-   "status": "Record: 'Il destinatario è indicato come: secretario [...] domino Claudio[...]. Lettera in parte cifrata.' No decipherment noted. Manifest uuid(s): 89e1bdc6-a46d-4627-9770-efbd17e544fb.",
-   "why": "An earlier Este cipher to the same secretary; possibly the same family as the 1559 letters.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Measure the cipher amount at full resolution.",
-   "links": [
-    {
-     "label": "Ercole II 8 Jan 1547 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=89e1bdc6-a46d-4627-9770-efbd17e544fb"
+    "prior_art": {
+     "decode": "known.py (harvested dump and repo ledgers) on 'Lodron', '56f7c9f3', '767e3b8d': only this lead and its WAINUT sweep rows. No DECODE record. A dump search, not a live one.",
+     "tomokiyo": "No cryptiana page on Lodron; the Imperial Cipher page (spanish2.htm) concerns Ferrante's imperial cipher, a different sign system from these Latin-letter-like runs.",
+     "lasry": "No Lasry work on Lodron found by the web search or in the repo.",
+     "edition": "No edition of these letters found. Bonora, Aspettando l'imperatore (2014), covers Ferrante and the 1549 conclave; not opened. Its text would not change that the gloss is on the leaf.",
+     "literature": "One web search (Lodron, Ferrante, Dec 1549, conclave, Salviati) found background on the conclave and nothing on these letters."
     },
-    {
-     "label": "Ercole II 8 Jan 1547 IIIF manifest",
-     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/89e1bdc6-a46d-4627-9770-efbd17e544fb/manifest"
-    }
-   ],
-   "source": "Biblioteca Estense (Lodovico) sweep",
-   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
-   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
-   "needs_archive_scan": "no",
-   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
-   "seen": "image",
-   "ark": "",
-   "scored": "sweep"
+    "searches": [
+     {
+      "query": "Sigismondo Lodron Ferrante Gonzaga December 1549 letter conclave Salviati cifra Parma Ottavio Farnese vescovo di Pola",
+      "result": "Conclave background, Bonora 2014, a conclavist's report to Mendoza of 19 Dec 1549; no Lodron letter and no decipherment."
+     }
+    ],
+    "key_check": "No key on record. WAINUT's note: not the ercole1544 half-shift, and the ferrante1549 table does not give 'Don Diego'. Not retested here. The glosses supply pairs for a key.",
+    "duplicates": "known.py on 'Lodron' and both uuids: no catalogue entry or target holds these letters.",
+    "verdict": "partly_read",
+    "closed": "Contemporary interlinear decipherment on the leaves covers nearly all runs: every run on 1r, 4r and 6r has one, and on 1v and 4v all but three stretches, listed in seen.cipher. Those stretches may continue a neighbouring gloss or be padding, but nothing on the leaf deciphers them."
+   }
   },
   {
    "id": 2161,
@@ -34901,46 +34878,8 @@
    "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
    "seen": "image",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2162,
-   "counted": true,
-   "year": 1537,
-   "date": "6 May 1537",
-   "title": "Federico II Gonzaga, duke of Mantua → Ferrante Gonzaga, with an enclosure partly in cipher",
-   "correspondents": "Federico II Gonzaga → Ferrante Gonzaga",
-   "place": "unknown",
-   "language": "Italian",
-   "region": "Italy",
-   "period": "1497-1559",
-   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Federico II, duca di Mantova, sfasc. II, cc. 12-15",
-   "folio_note": "8 canvases; enclosure cc. 13-14 with many lines of symbol cipher.",
-   "cls": "C",
-   "status": "Record: 'In allegato (cc. 13-14) un documento parzialmente cifrato.' No decipherment noted. Manifest uuid(s): 22b3126b-3b70-4ede-a33b-1adf4a4491f6.",
-   "why": "A Mantuan ducal cipher of 1537, when Ferrante was viceroy of Sicily.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Count cipher groups; look for Gonzaga keys of the 1530s in Mantua.",
-   "links": [
-    {
-     "label": "Federico II 6 May 1537 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=22b3126b-3b70-4ede-a33b-1adf4a4491f6"
-    },
-    {
-     "label": "Federico II 6 May 1537 IIIF manifest",
-     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/22b3126b-3b70-4ede-a33b-1adf4a4491f6/manifest"
-    }
-   ],
-   "source": "Biblioteca Estense (Lodovico) sweep",
-   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
-   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
-   "needs_archive_scan": "no",
-   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
-   "seen": "image",
-   "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "Editions still not opened in full. Varo Zafra, Cartas (Granada 2016): no online copy, and no Google Books volume found for it (only its 16-page sample was read earlier). Vazquez and Rose, Algunas cartas 1538-1552 (Yale 1935): HathiTrust catalog and babel both stop at a Cloudflare check, not clicked; Google Books FM0PAQAAMAAJ (1973 reprint) is snippet-only and its zero counts are unreliable, since 'Gonzaga' gives 0 hits while its 'Ferrante' hits print 'Ferrante de Gonzaga'. Losi 1998 (Google shNpAAAAMAAJ) is snippet-only too. Need Varo Zafra's Roma y Siena section, or Algunas cartas in full text."
   },
   {
    "id": 2163,
@@ -34987,46 +34926,39 @@
    "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
    "seen": "image",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2164,
-   "counted": true,
-   "year": 1576,
-   "date": "2 Sep 1576",
-   "title": "Alfonso II del Carretto, marquis of Finale → Lodovico Allaria and Paolo Fenocchio, letter partly in cipher",
-   "correspondents": "Alfonso II del Carretto → Lodovico Allaria and Paolo Fenocchio",
-   "place": "unknown",
-   "language": "Italian",
-   "region": "Italy",
-   "period": "1560-1589",
-   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera D, Del Carretto, Alfonso II (sec. XVI), c. 10",
-   "folio_note": "2 canvases; upper half of c. 10 in cipher.",
-   "cls": "C",
-   "status": "Record: 'Lettera parzialmente cifrata.' No decipherment noted. Dan's 'Del Carretto' hits are Ottone del Carretto (Milan, 1520s), not this. Manifest uuid(s): ca09c927-df47-423e-adbb-dc4fdac1a851.",
-   "why": "The marquis of Finale, in conflict with his subjects and Genoa in the 1560s-70s; a small private cipher.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 3,
-   "verify": "Count symbols.",
-   "links": [
-    {
-     "label": "Del Carretto 2 Sep 1576 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=ca09c927-df47-423e-adbb-dc4fdac1a851"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b68",
+    "seen": {
+     "kind": "scan",
+     "where": "Estense IIIF manifests 5f3a8744-621b-458e-afec-a696a6e5d627 (cc. 17-19) and e801746d-f7c5-47e0-aa2d-5ab1c0ac30df (cc. 44-47): all 14 canvases viewed 4 Nov 2026; enlarged crops of 17r, 44v, 46v, the 47v docket",
+     "extent": "Two different cases. cc. 17-19: 17r is a signed postscript of 10 May 1545, about 11 lines of cipher with clear; 18r is a separate clear sheet; the rest blank or address. cc. 44-47: digit runs on 44r (6 lines), 44v (about 20), 46r (4), 46v (4); 45r-45v all clear; 47 address and docket.",
+     "cipher": "17r: signs with digits set above and below them, clear words between. 18r is a clear text of the postscript, dated 'x di maggio 1545': it opens as 17r does ('Poscr. mandata la lettera ala posta ha trovato') and carries the clear stretches of 17r in place ('consideri un poco bene in caso pure che', 'forse dele cose di'), with the cipher written out (Mons. di Granvella, a Mantova, Mons. d'Orliens). cc. 44-46: continuous digits with vertical strokes; enlarged crops of 44v and 46v and the leaf views of 44r and 46r show no decipherment."
     },
-    {
-     "label": "Del Carretto 2 Sep 1576 IIIF manifest",
-     "href": "https://edl-jarvis.cultura.gov.it/meta/iiif/ca09c927-df47-423e-adbb-dc4fdac1a851/manifest"
-    }
-   ],
-   "source": "Biblioteca Estense (Lodovico) sweep",
-   "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
-   "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
-   "needs_archive_scan": "no",
-   "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
-   "seen": "image",
-   "ark": "",
-   "scored": "sweep"
+    "prior_art": {
+     "decode": "known.py (harvested dump and repo ledgers) on 'Capilupi', 'Bolduch', '5f3a8744', 'e801746d': catalogue 1564 and 1565 (other shelfmarks) and this lead. No DECODE record for these two. A dump search.",
+     "tomokiyo": "No cryptiana page on Camillo Capilupi: italian.htm and crypto.htm searched; a search naming Capilupi found none.",
+     "lasry": "No Lasry work on Capilupi's ciphers found in the two searches or the repo.",
+     "edition": "No edition of these two letters found. CSP Venice-type Mantuan calendar entries print Capilupi to Cardinal Ercole in May 1545 with a contemporary decipher: a sibling, not these. Chiesi's essay on the Capilupi-Gonzaga letters not seen.",
+     "literature": "Nothing on the Bolduch letter of Dec 1545 in two web searches; targets/capilupi1545 lists its own searches on the 1545 letters, with no edition."
+    },
+    "searches": [
+     {
+      "query": "Camillo Capilupi Ferrante Gonzaga December 1545 Bolduch 's-Hertogenbosch letter cifra Piacenza Parma Farnese Granvelle",
+      "result": "A calendar entry of May 1545, Capilupi to Cardinal Ercole, 'Ciphered letter with contemporary decipher'; nothing on the December letter."
+     },
+     {
+      "query": "Capilupi Camillo agente Ferrante Gonzaga corte imperiale 1545 lettere cifrate Chiesi carteggio Capilupi-Gonzaga Calendar State Papers Mantua Venice 1545 decipher",
+      "result": "Other cipher studies only; no Capilupi edition and nothing on either shelfmark."
+     }
+    ],
+    "key_check": "No key tested. targets/capilupi1545/key.tsv (cc. 15-16, 8 May 1545) treats digit marks under signs as nulls, which fits the marks on 17r, but the leaves were not compared and the key was not applied. The digits of cc. 44-46 were not run against the unread digits of c. 48 and c. 49r or the digit material in Ercole fonds cc. 88-92.",
+    "key_held": "targets/capilupi1545/key.tsv (signs, 8 May 1545), not shown to be the same key. If it is, c. 18r gives that target a clear text written two days later.",
+    "duplicates": "known.py on Capilupi terms; catalogue 1565 holds cc. 15-16, c. 48, cc. 49-50. These shelfmarks are new, so no duplicate.",
+    "verdict": "partly_read",
+    "closed": "One of the two letters has a contemporary decipherment: the postscript c. 17r is written out in clear on c. 18r. The other, Bolduch Dec 1545 (cc. 44-46), has none on any leaf and no reading was found; it could stand as its own lead."
+   }
   },
   {
    "id": 2165,
@@ -35065,7 +34997,42 @@
    "access_note": "IIIF scans online on Lodovico / Estense Digital Library, CC BY-NC-SA, no login",
    "seen": "image",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b69",
+    "seen": {
+     "kind": "scan",
+     "where": "IIIF manifest c8490bb4-f0bf-41a3-bd85-4c41aead033f, canvases 0059r (47ad723c...) and 0059v (d72c664d...), downloaded 4 Nov 2026 to scratch. The server caps a request at 1200 px wide, so 59r was read whole and again in five overlapping bands (scale about 40%); 59v whole, plus the margin crop at full scale.",
+     "extent": "All of 59r: about 24 lines mixing clear Spanish with Greek-capital-like signs (B, T, Y, Omega, Lambda, Sigma, Psi and others), the last two lines wholly clear. 59v: blank except a Campori stamp and one short vertical cipher line in the outer margin.",
+     "cipher": "Every cipher run on 59r, band by band from 'dia de gran toque' at the top to the last cipher line above the two clear closing lines, has a letter-by-letter gloss in a smaller hand written over it; a recurring sign group carries one abbreviation mark. I found no unglossed cipher run. The margin line on 59v is glossed too, roughly 'cifra con su de...' (end not made out)."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Alvaro de Sande', 'Sande (de), Alvaro', 'Autografoteca Campori' (the harvested DECODE dump): no record of this letter; only this lead's own row and sweep.",
+     "tomokiyo": "Search 'Tomokiyo cryptiana Lasry Alvaro de Sande ...' returned nothing on Sande; no cryptiana page on him surfaced. Not needed for the verdict: the decipherment is on the leaf.",
+     "lasry": "Same search: Lasry's results were the Mary Stuart papers and others, nothing on Sande or Modena. GL.htm was not opened for this name.",
+     "edition": "The contemporary interlinear decipherment on c. 59r is the prior art. No printed edition of this fragment found by the searches below.",
+     "literature": "Searches on Sande + cifra + Estense/Campori, and on Sande at Djerba (Fernandez Duro's Gelves material surfaced), found no study of this letter."
+    },
+    "searches": [
+     {
+      "query": "Alvaro de Sande carta cifrada descifrada 1550s Biblioteca Estense Campori cifra maestre de campo",
+      "result": "Nothing on Sande or this leaf; only general Habsburg cipher articles (Besancon 1554, Saint-Mauris 1547)."
+     },
+     {
+      "query": "Álvaro de Sande cifra Djerba Gelves 1560 letter deciphered Lanzave La Goleta Sebastián Gentil",
+      "result": "Djerba biography and Fernandez Duro's edition only; no cipher letter of Sande named."
+     },
+     {
+      "query": "Tomokiyo cryptiana Lasry Alvaro de Sande cipher Spanish 16th century letter Modena Estense decipherment Sande landgrave",
+      "result": "Mary Stuart and unrelated Lasry papers; nothing on Sande or the Estense."
+     }
+    ],
+    "key_check": "No separate key sought or tested: one letter is written above each sign, so the gloss itself gives the sign table. targets/sande1660 is the Portuguese Marques de Sande, unrelated.",
+    "duplicates": "known.py on the shelfmark and names: only this lead's own row, wainut candidates and README. No catalogue entry or target holds this leaf.",
+    "verdict": "read",
+    "closed": "Contemporary letter-by-letter decipherment written between the lines over every cipher run on c. 59r, and over the short margin line on c. 59v; both leaves read on the scan, 4 Nov 2026. Lodovico record: 'decifrato nell'interlinea'. Still only a sign-table and transcription job if wanted."
+   }
   },
   {
    "id": 2166,
@@ -35112,7 +35079,42 @@
    "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
    "seen": "image",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b69",
+    "seen": {
+     "kind": "scan",
+     "where": "Lodovico/IIIF, Donati, Sigismondo: c. 1 b5c4fc9a, c. 2 64ef953a, c. 3 5907be21-6d78-4031-a033-c9787b16ddd1, c. 4 b15b5995-1377-41fc-9dc1-0d1cfc663514. Rectos read at 1200 px with crops of 3r and 1r, versos at 400-1200 px. cc. 5-16 (other records in the folder) looked at on a 400 px contact sheet only.",
+     "extent": "c. 3r about 21 lines and c. 4r 9 lines of continuous digits with a few clear words; 3v and 4v carry no cipher, only show-through and, on 4v, a docket. c. 1r 19 lines and c. 2r 8 lines of Italian clear.",
+     "cipher": "cc. 3-4 are both headed 'Di Roma li XI di Marzo 1617', foot note 'a Mons. Nunzio in Francia'; a figure cipher in unspaced digits. Clear words left in the cipher agree with the clear leaves: 'gia', 'haura', 'hauendo' on 3r in c. 1r; 'per il quale' and 'hauena' three times on 4r in c. 2r. Word-level comparison only, no digit-by-digit collation. c. 1r and c. 2r are dated the same day. No interlinear gloss on cc. 3-4."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Sigismondo Donati', 'Guido Bentivoglio', 'Donati, Sigismondo': no DECODE record in the harvested dump; only this lead's own row.",
+     "tomokiyo": "Search on cryptiana + papal cipher 1617 + Bentivoglio found no Tomokiyo page on this letter; only his 2019 paper on Italian continuous-figure ciphers (1593).",
+     "lasry": "Same search: Lasry, Megyesi and Kopal, 'Deciphering papal ciphers from the 16th to the 18th Century' (Cryptologia 2021) surfaced; not opened and not shown to cover this letter.",
+     "edition": "The decipherment is the two clear leaves cc. 1-2. De Steffani's Nunziatura di Francia (1863-70) was not opened: it prints Bentivoglio's own letters, and whether it holds this incoming one is unknown.",
+     "literature": "Searches on Donati + Bentivoglio 1617 found only editions and biographies. NLI's list of Fondo Borghese has 'deciphered and code-letters' of the Paris nuncio Feb 1617-Nov 1618, the opposite direction."
+    },
+    "searches": [
+     {
+      "query": "Sigismondo Donati Guido Bentivoglio 1617 nunziatura Francia cifra lettere Nunziatura di Francia Bentivoglio cifre edition",
+      "result": "De Steffani, Scarabelli and Strozzi transcripts listed; nothing on these Modena leaves."
+     },
+     {
+      "query": "Bentivoglio nunzio Francia marzo 1617 cifra Borghese \"11 marzo 1617\" accomodamento d'Italia Savoia Milano lettera decifrata Barberini Nunziatura Francia",
+      "result": "No item for 11 March 1617; Folger Strozzi transcripts of Secretariat letters to the French nuncios noted."
+     },
+     {
+      "query": "cryptiana Tomokiyo papal cipher 1617 Borghese nuncio France Bentivoglio numerical cipher Lasry papal nuncio cipher Paul V decipherment",
+      "result": "General papal cipher papers and NLI Fondo Borghese list; none names this letter."
+     }
+    ],
+    "key_check": "No key held or tested. The digit-to-letter table could be rebuilt from the pairs cc. 3/1 and cc. 4/2, not done here.",
+    "duplicates": "known.py on names and shelfmark: this lead's own row and wainut sweep only. Dudout's Estense list and the catalogue have no Donati entry.",
+    "verdict": "read",
+    "closed": "Both cipher letters have their decipherment in the same folder: c. 1 for c. 3 and c. 2 for c. 4 (Lodovico: 'Scioglie la lettera cifrata a c. 3' / 'a c. 4'), same date, shared clear words agree. A later note on 1v calls it a letter in cipher 'con sua spiegazione'. Cipher leaves are online, contrary to the lead."
+   }
   },
   {
    "id": 2167,
@@ -35147,7 +35149,42 @@
    "score_note": "Scored from the Lodovico record and a low-resolution look at the scans during the Nov 2026 Estense sweep (research/wainut_leads_2026-11-03/)",
    "prior_art": "open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b69",
+    "seen": {
+     "kind": "transcription",
+     "where": "Genziana Ricci, 'La lettera cifrata di Lucrezia Borgia', Il Giornalino (Storie di Pianura), archive.org item giornalino-lettera-cifrata-lucrezia-borgia_202501, read in its OCR text, which shows a reproduction of the letter and a transcription. Lodovico record 8f9df0a4 read: 'NOTE: Lettera cifrata', shelfmark as in the lead, no IIIF manifest (404). The facsimile image itself was not viewed; ASMo's original was not seen.",
+     "extent": "One letter, about 12-14 lines going by the OCR of the reproduction; exact extent not measured.",
+     "cipher": "Ricci describes 'simboli grafici ed alfabetici' and prints the deciphered text, dated Ferrara 8 Oct 1510, on the fall of Stellata, signed Lucretia, with a few [...] gaps, and a contemporary note: 'Cavossi questa cum la ziffra da Mantua'."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Lucrezia Borgia', 'b. 141', 'Stellata': no DECODE record in the harvested dump; research/ia_meta/README.md already notes the letter as decrypted by D. Palma.",
+     "tomokiyo": "No Tomokiyo page on this letter came up in the three searches below; none needed, as the reading is on record.",
+     "lasry": "No Lasry reading came up in the same searches; the decipherment on record is by the Palma family.",
+     "edition": "Palma, Palma and Palma, 'La lettera svelata di Lucrezia Borgia', Quaderni Estensi 5 (2013), pp. 510-524, cited in the Kheiro magazine article found by search; I did not open it. Text as printed in Ricci was read.",
+     "literature": "Ricci's article; Kheiro magazine articles on Palma; a CNR seminar flyer, 'Svelata la corrispondenza in codice tra Lucrezia Borgia e Alfonso I d'Este'. ASMo teaching PDF describes the cipher; not opened (host unreachable)."
+    },
+    "searches": [
+     {
+      "query": "Lucrezia Borgia lettera cifrata 8 ottobre 1510 Alfonso d'Este Archivio di Stato di Modena",
+      "result": "Confirms the letter as ASMo Casa e Stato b. 141 n. 12.79, cipher in graphic symbols, shown in the 'La parola incognita' exhibition."
+     },
+     {
+      "query": "Daniele Palma decifrazione lettera cifrata Lucrezia Borgia 1510 Stellata \"ziffra da Mantua\"",
+      "result": "Cites Palma, Palma and Palma, Quaderni Estensi 5 (2013) pp. 510-524."
+     },
+     {
+      "query": "Palma \"La lettera svelata di Lucrezia Borgia\" Quaderni Estensi 5 2013 analisi del sistema criptografico",
+      "result": "Article itself not found online; CNR flyer lists the Palmas' talk on the coded correspondence."
+     }
+    ],
+    "key_check": "Contemporary note says it was read with 'la ziffra da Mantua'. A key of about 1512 between the two is mentioned in ASMo material. Neither was tested here.",
+    "duplicates": "known.py: only this lead's own row, ia_meta and italian_catalogues README mentions; no catalogue entry or target.",
+    "verdict": "read",
+    "closed": "Deciphered by Daniele Palma and family. Text printed in Ricci's Giornalino article (archive.org item above, with [...] gaps) and analysis cited as Quaderni Estensi 5 (2013) pp. 510-524 (not opened). The letter also carries a contemporary note of decipherment, 'Cavossi questa cum la ziffra da Mantua'."
+   }
   },
   {
    "id": 2168,
@@ -35190,7 +35227,29 @@
    "needs_archive_scan": "partly",
    "access_note": "no SBB digitisation link in Kalliope; single letters of the Jablonski draft books are online as PDFs in the PRINT Migration Network (UCF STARS), not yet matched to these numbers",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch c26",
+    "seen": {
+     "kind": "scan",
+     "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1701-1704, Nachl. Francke 11,2/14, PPN1853543845 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1853543845&PHYSID=PHYS_0181): no. 62 scan 154, no. 71 scans 171-172, no. 75 scans 181-182; no. 75 read from the stitched half-size images",
+     "extent": "No. 75 (8 Nov 1704, 'ad Illm. Dnum Paul. de Rada in Hungar.'): about 40 runs of numbers over two pages, including marginal insertions. Nos. 62 and 71: no number groups on the leaf; both only discuss the cipher ('Characterem ... Cryptum' on scan 154, 'Cyfras' on scan 172)",
+     "cipher": "Numeric cipher, in-line numbers separated by points (e.g. 33.3.25.51.80.50.57.3 under 'Jacobi', 13.14 under 'Angliae, Belgii'). Letters are written over the groups, red glosses over code numbers ('Turcam', 'Gallum', 'rex Prussiae', 'Regem Galliae'). Every cipher run on scans 181-182 carries a gloss, including those in the margin, so Kalliope's 'an einigen Stellen dekodiert' understates it. Checked run by run by eye; the glosses were not re-derived against a rebuilt table"
+    },
+    "prior_art": {
+     "decode": "known.py over the harvested DECODE dump for Francke 11,2/14, Jablonski and Ráday: only this lead's own rows and a scan note, no DECODE record",
+     "tomokiyo": "No Cryptiana page surfaced in web searches on Jablonski, Ráday and Rákóczi ciphers; the decipherment here is the gloss on the leaf itself",
+     "lasry": "No Lasry paper or GL.htm item surfaced for Jablonski-Ráday; known.py found none in the repo",
+     "edition": "The decipherment is on the draft itself. Hungaricana (Chrome) carries only reviews of Benda, Ráday Pál iratai 1703-1706 (1955), not its text, so the received copies were not checked; this does not affect the verdict",
+     "literature": "Web searches on Jablonski, Ráday, Geheimschrift and Briefkonzeptbuch found Láng, Real Life Cryptology and Révay 1974 on Rákóczi's ciphers, with nothing shown on this letter"
+    },
+    "key_check": "No key on the leaves seen. No. 62 refers to a cipher description in an adjoining sheet ('in Charta adjuncta'), which is not on scan 154. No table was built or tested, because the glosses give the plaintext",
+    "key_held": "Benda, Levéltári Közlemények 25 (1954), lists a clavis for the Jablonski correspondence in the Ráday archive, with 44 Jablonski-Ráday letters 1704-1711 (from the first pass; not re-opened, not tested). Fiedler 1858 (FRA II/17, Anhang) prints Rákóczi keys naming Jablonski, not tested on this letter",
+    "duplicates": "known.py on 'Francke 11,2/14', Jablonski, Ráday: this lead's own rows plus research/oldest/scan_2026-09-23/hard_targets.md, which names the same drafts. No catalogue entry or target holds them; targets/rakoczi1711 only mentions 'domino Jablonski' in R483",
+    "verdict": "read",
+    "closed": "Nachl. Francke 11,2/14 : 75 carries its decipherment on the leaf: every numeric run on scans 181-182 of PPN1853543845 has letters or code glosses written over it. Nos. 62 (scan 154) and 71 (scans 171-172) hold no ciphertext and only discuss the key"
+   }
   },
   {
    "id": 2169,
@@ -35233,7 +35292,29 @@
    "needs_archive_scan": "partly",
    "access_note": "no SBB digitisation link; check PRINT Migration Network PDFs (UCF STARS) and SBB",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch c26",
+    "seen": {
+     "kind": "scan",
+     "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1705, Nachl. Francke 11,2/15, PPN1853543950 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1853543950&PHYSID=PHYS_0037): no. 8 scans 23-25, no. 13 scans 37-39, no. 33 scans 71-72",
+     "extent": "Three drafts on eight pages. Red numbers over chosen words and phrases on scans 23, 24, 37, 38, 39, 71 and 72; none seen on scan 25 at viewer scale",
+     "cipher": "The draft is clear Latin, with red numeric groups written above the words to be enciphered (e.g. 'Regem Galliae Pacem' with 24.192.52.117 . 257.39 . 160.85.117 above on scan 72). So the plaintext is the text under each group, for no. 33 as well as nos. 8 and 13. One exception on scan 72: Jablonski quotes two number runs (204.155.275.30.147.111.18 ... and 95.137.112.15.48.137.12.178.144.187.16.90.85.45) from Ráday's letter, unglossed, saying they seem to have strayed in from another cipher ('ex aliena Cifra')"
+    },
+    "prior_art": {
+     "decode": "known.py over the harvested DECODE dump for 'Francke 11,2/15' and Jablonski: only this lead's own rows, no DECODE record",
+     "tomokiyo": "No Cryptiana page surfaced for the 1705 Jablonski-Ráday drafts; the plaintext is the draft's own Latin",
+     "lasry": "No Lasry paper or GL.htm item surfaced for these drafts; known.py found none in the repo",
+     "edition": "Hungaricana (Chrome) search for Jablonski Ráday Berlin 1705 returned three articles and no text of Benda, Ráday Pál iratai 1703-1706 (1955). Unopened, but the plaintext is on the leaf, so it does not affect the verdict",
+     "literature": "Gebei, Agria 50 (2017), on Ráday's embassies surfaced on Hungaricana and names Jablonski; only the search snippet was read. Nothing on these drafts' cipher turned up"
+    },
+    "key_check": "No key on the leaves. A table could be built from the number-over-word pairs, but this was not done. The 1705 numbers run higher than the 1704 ones, so the system may differ from no. 75 of 1704; not compared in detail",
+    "key_held": "Benda, Levéltári Közlemények 25 (1954): clavis for the Jablonski correspondence in the Ráday archive (from the first pass; not re-opened, not tested)",
+    "duplicates": "known.py on 'Francke 11,2/15', Jablonski, Ráday: this lead's own rows plus research/oldest/scan_2026-09-23/hard_targets.md. No catalogue entry or target holds them",
+    "verdict": "read",
+    "closed": "Nos. 8, 13 and 33 of Nachl. Francke 11,2/15 are enciphering drafts: clear Latin with the red number groups written above it (PPN1853543950, scans 23-24, 37-39, 71-72). The only unglossed numbers are two runs on scan 72 quoted from Ráday's incoming letter, which Jablonski says came from another cipher"
+   }
   },
   {
    "id": 2170,
@@ -35272,7 +35353,29 @@
    "needs_archive_scan": "partly",
    "access_note": "no SBB digitisation link; check PRINT Migration Network PDFs (UCF STARS) and SBB",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch c26",
+    "seen": {
+     "kind": "scan",
+     "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1706-1707, Nachl. Francke 11,2/16, PPN1853544159 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1853544159&PHYSID=PHYS_0086): no. 42 scans 86-87, no. 44 scans 91-92",
+     "extent": "Two drafts on four full pages, with number lines above nearly every line of Latin (scans 86, 87, 91) and most of the P.S. on scan 92",
+     "cipher": "Clear Latin draft with numeric groups written over it line by line. No. 42, 7 Dec 1706, 'Ad Dn. Paul. de Rada': numbers over the whole text. No. 44, 14 Feb 1707, 'ad Dn. Paul. Rabaj': the same, signed with a cover name read as 'Ernesto Petersonio', with a P.S. on scan 92, so the leaf shows the cipher that its Kalliope record only tags. The 'R I' margin mark of no. 42 was not located at viewer scale"
+    },
+    "prior_art": {
+     "decode": "known.py over the harvested DECODE dump for 'Francke 11,2/16', Jablonski and Petersonius: only this lead's rows, no DECODE record",
+     "tomokiyo": "No Cryptiana page surfaced for the 1706-07 drafts; the plaintext is the Latin under the numbers",
+     "lasry": "No Lasry paper or GL.htm item surfaced for these drafts; known.py found none in the repo",
+     "edition": "Benda, Ráday Pál iratai II 1707-1708 (1961) appears on Hungaricana only as reviews (Levéltári Közlemények 34, Századok 1962), so it stays unopened; the plaintext is on the leaf, so it does not affect the verdict",
+     "literature": "Web searches on Jablonski and Rákóczi ciphers gave Láng and Révay 1974 in general, with nothing shown on these drafts"
+    },
+    "key_check": "No key on the leaves. A table could be built from the number-over-word pairs, but this was not done; not compared with the Rákóczi keys in the repo",
+    "key_held": "Benda, Levéltári Közlemények 25 (1954): clavis for the Jablonski correspondence in the Ráday archive (from the first pass; not re-opened, not tested)",
+    "duplicates": "known.py on 'Francke 11,2/16', Jablonski, Ráday, 'Ernesto Petersonio': this lead's own rows plus research/oldest/scan_2026-09-23/hard_targets.md. No catalogue entry or target holds them",
+    "verdict": "read",
+    "closed": "Nos. 42 and 44 of Nachl. Francke 11,2/16 are enciphering drafts: the full Latin plaintext sits under the numeric groups written line by line above it (PPN1853544159, scans 86-87 and 91-92)"
+   }
   },
   {
    "id": 2171,
@@ -35311,7 +35414,47 @@
    "needs_archive_scan": "partly",
    "access_note": "sister letter online at UCF STARS; this one not yet located online",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch c26",
+    "seen": {
+     "kind": "scan",
+     "where": "SBB Digitalisierte Sammlungen, Briefkonzeptbuch 1711-1712, Nachl. Francke 11,2/17, PPN185354437X, scan 124 (https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN185354437X&PHYSID=PHYS_0124); the whole of no. 91, since scan 125 starts no. 92",
+     "extent": "Very little: one run of five groups, 55.175.20.200.338 ('ideoq 55.175.20.200.338 plura poterit pro S.V. efficere'), plus the code number 237 twice in a quoted German passage. All else on the page is clear Latin and German",
+     "cipher": "In-line numeric groups with no gloss above them or in the margin: the letter leaves the five-group run and 237 unexplained. The marginal notes on the page are additions to the Latin, not decipherments"
+    },
+    "prior_art": {
+     "decode": "known.py over the harvested DECODE dump for '11,2/17', Klement, Jablonski: this lead's own rows and the unrelated catalogue 504; no DECODE record of this draft",
+     "tomokiyo": "Web search naming Tomokiyo/Cryptiana, Rákóczi, Jablonski and Klement 1712 returned no page on this letter",
+     "lasry": "The same search returned Lasry's Mary Stuart and other work only, nothing on Rákóczi-Jablonski; known.py found none in the repo",
+     "edition": "Fiedler, Actenstücke II (FRA II/17, 1858, IA fontesrerumaust22kommgoog): the table of contents for January 1712 lists no Jablonski to Rákóczi letter of 5 Jan, and the edition prints Klement's papers. Benda, Ráday Pál iratai 1709-1711 (2003) ends before this date and names Jablonski once (first pass). Thaly's letter-books hold Rákóczi's outgoing letters. STARS holds 11,2/17:58 but 11,2/17:91 was not found (first pass; a further listing page failed to parse in Chrome)",
+     "literature": "Hungaricana for Jablonski Rákóczi 1712 Klement gave only Buzási on Mányoki citing Fiedler. Web searches gave Láng and Révay 1974 in general; Révay was not opened"
+    },
+    "key_check": "Tested Fiedler's printed key I, 'Chifres avec le Prince Rákóczi' (FRA II/17, Anhang III, from p. 625), on the groups, using the IA OCR. 55=mi, 175=lo, 20=R, 200=D, 338=rabi give 'Milord Raby', and 237=princeps. The sense fits, since the Lord Raby/Strafford is at The Hague in these months. This test is mine and is not on record elsewhere",
+    "key_held": "Fiedler 1858 (FRA II/17, Anhang III), key I, printed for Klement's correspondence with Rákóczi, tested: it gives 'Milord Raby' and 'princeps' (see key_check). Not checked against the printed page image, OCR only",
+    "duplicates": "known.py on '11,2/17', Klement, Jablonski, Ráday. Hits: this lead's own rows; catalogue 504 (Rákóczi to Klement, 6 Jan 1710, HHStA) is a different letter; targets/rakoczi1711 mentions Jablonski in R483, a different letter. No duplicate",
+    "verdict": "read",
+    "searches": [
+     {
+      "query": "Jablonski letter Rákóczi January 1712 Klement The Hague Prince Eugene journey England Geheimschrift cipher Danzig decipher",
+      "result": "No page on this draft; STARS items 66 and 67 (Jablonski letters of Sep 1711 and Jan 1712, other than this one), Láng and Révay in bibliographies"
+     },
+     {
+      "query": "Rákóczi ciphers Jablonski Berlin Tomokiyo cryptiana OR Lasry OR Láng Rákóczi key numeric Klement Hague 1712 deciphered",
+      "result": "Nothing on the Jablonski-Rákóczi cipher or a decipherment of this letter; only Lasry's and Tomokiyo's other work and the Hungarian bibliography"
+     },
+     {
+      "query": "Hungaricana: Jablonski Rákóczi 1712 Klement",
+      "result": "Two hits, both Buzási on the painter Mányoki, citing Fiedler for Jablonski to Klement letters and Rákóczi to Klement of 30 Jan 1712; no print of this draft"
+     },
+     {
+      "query": "Fiedler Actenstücke zur Geschichte Franz Rákóczy's 1858 Fontes rerum Austriacarum Band 17 Jablonski Klement Volltext",
+      "result": "Led to the IA text; its contents for Dec 1711-Jan 1712 have no Jablonski to Rákóczi letter of 5 Jan 1712, and its Anhang III prints the keys tested in key_check"
+     }
+    ],
+    "closed": "Only six groups, 55.175.20.200.338 and 237 twice, no gloss (SBB PPN185354437X scan 124). Fiedler 1858 (FRA II/17, Anhang III, key I) prints a key that gives 'Milord Raby' and 'princeps'. That test was made in this review on OCR of the key; no earlier reading is on record. Too small and too easily opened for a catalogue entry."
+   }
   },
   {
    "id": 2172,
@@ -35346,7 +35489,8 @@
    "needs_archive_scan": "unknown",
    "access_note": "no digitisation in the Handschriftenportal record",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "Not digitised, so ff. 2-10 are still unseen. Handschriftenportal record for Ms. germ. fol. 109 (Paul Grebener: Prophezeihungen, 1573, 144 Bl., description by Degering/Riecke) shows 'Digital images: 0'. SBB Digitalisierte Sammlungen in Chrome: \"Ms. germ. fol. 109\" 0 hits, 'Grebner Seidenfaden' 0, 'Wahrsagungen Prophezeihungen Grebner' 0, 'Grebener' only 5 unrelated prints, 'germ. fol. 109' filtered to Handschrift 3 hits, of which the two read are service catalogues (Ms. Cat. A 557) and the third was not read. Web search on Grebner, the shelfmark and 'Chiffreschrift' found nothing; the Grebner bibliography lists Berlin ms. germ. fol. 49 instead. Needed: an SBB scan of Bl. 2-10, to decide whether 'Chiffreschrift' is a true cipher or a cryptic script, and whether a decipherment is on the leaf. Only the description 'Bl. 2-10 Wahrsagungen in Chiffreschrift' is known."
   },
   {
    "id": 2173,
@@ -35382,7 +35526,8 @@
    "access_note": "no digitisation listed",
    "ark": "",
    "access": "archive",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "Images needed from Staatsbibliothek zu Berlin for Fragm. var. 575: the Handschriftenportal record (/api/kods and /api/tei read 4 Nov 2026) gives only 'Nicht entzifferte Geheimschrift (Fragm.)', 2 Bl., Pergament, with no date, no origin and no digitised copy (/api/digitizeds returned 0). Nobody has seen a leaf, so cipher versus an unidentified or constructed script cannot be settled. Web search on the shelfmark found nothing else; known.py hits only this lead's own sweep."
   },
   {
    "id": 2174,
@@ -35418,7 +35563,28 @@
    "access_note": "not digitised",
    "ark": "",
    "access": "archive",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b70",
+    "seen": {
+     "kind": "not online",
+     "where": "Kalliope full record DE-611-HS-2852550 (read in full), and Lanz, Correspondenz des Kaisers Karl V., vol. 2 (1845), no. 446, p. 263, archive.org correspondenzde01chargoog full text",
+     "extent": "3 folders, 382 leaves; the only 'Geheimschrift' in the record is Bl. 155-161, a copy of the imperial councillors' opinion of Oct 1536. Ranke's leaves themselves were not seen (not digitised).",
+     "cipher": "Kalliope: 'Bl.155-161 die Abschrift des Gutachtens ... beginnend mit \"Suppl.I, tome I f.341. Geheimschrift. Combien que lon ne peust resoldre ce que v[ot]re mat[jeste] devra faire\"'. The copy's incipit is plain French: 'Geheimschrift' is Ranke's note that the Brussels original was in cipher, not ciphertext in the copy."
+    },
+    "prior_art": {
+     "decode": "known.py on DE-611-HS-2852550 and 'Ranke Quellen XIV' (harvested DECODE dump included): only this lead's own rows; no DECODE record.",
+     "tomokiyo": "Not searched separately: the item holds no ciphertext, and the text behind it is printed by Lanz.",
+     "lasry": "Not searched separately: the item holds no ciphertext, and the text behind it is printed by Lanz.",
+     "edition": "Lanz vol. 2 no. 446 p. 263 prints the same text in clear: 'Gutachten der Räthe des Kaisers (Ref. rel. 2. Spl. I. f. 341. Orig. ganz in Chiffern)', Oct 1536. Opened in the archive.org text; the shelf reference and incipit match Ranke's.",
+     "literature": "Kalliope itself records Ranke's use (SW 4 p. 72 n. 2, p. 26 n. 3) and the Lanz edition for the matching excerpt at Bl. 35-36."
+    },
+    "key_check": "No key concerned: the copy is plaintext. Any Charles V cipher question belongs to the Brussels original, already printed in clear by Lanz.",
+    "duplicates": "known.py 'Ranke Quellen XIV', 'DE-611-HS-2852550': no other document. Catalogue 526 (Ranke Segment III) is a different unit, as the lead says.",
+    "verdict": "not_cipher",
+    "closed": "Ranke's copy is plaintext French: Kalliope quotes the opening of Bl. 155-161 after his note 'Geheimschrift', which marks the cipher of the Brussels original (AGR Ref. rel. Suppl. I f. 341). Lanz vol. 2 no. 446 p. 263 prints that original in clear and says 'Orig. ganz in Chiffern'."
+   }
   },
   {
    "id": 2175,
@@ -35453,50 +35619,8 @@
    "needs_archive_scan": "unknown",
    "access_note": "no digitisation listed",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2176,
-   "counted": true,
-   "year": 1624,
-   "date": "8 Apr 1624",
-   "title": "'Francesco Rota' → 'Mr. Vatron' in London, The Hague 8 Apr 1624, written by Ludwig Camerarius, mostly in cipher",
-   "correspondents": "Ludwig Camerarius (as 'Francesco Rota') → 'Mr. Vatron', London",
-   "place": "The Hague",
-   "language": "Italian",
-   "region": "Germany",
-   "period": "1611-1650",
-   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10398 (Collectio Camerariana vol. 48), n. 106",
-   "folio_note": "Clm 10398 scan 469 (fol. 233).",
-   "cls": "C",
-   "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 95: \"Lettera di Francesco Rota à Mr. Vatron à Londre, Haia 8 Apr. 1624 (von Lud. Cam. geschrieben, grossentheils in Chiffern)\". Cover names: n. 107 is 'Francesco Rota al Sign. Lod. Camerario, Bruxelles 29 Apr.', so 'Rota' is a cover used in this channel. Mostly cipher; Italian plaintext. Not on DECODE (repo dumps have no BSB Clm 103xx). Image: https://www.digitale-sammlungen.de/en/view/bsb00116447?page=1 (IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116447/manifest). Viewed by WAINUT on 3 Nov 2026 (scan 469): Italian clear text with run-together two-digit numbers and the letters g, p, t, c, x and & as code signs; no decipherment on the page, so ciphertext-only. Names the Capuchin Giacinto ('Non erubesco Evangelium', cf. n. 108). Not the code of Camerarius's 1621-22 letters to Solms (WAINUT's separate camerarius1621 submission). Not attempted.",
-   "why": "A covert Palatine channel to London in 1624, the year of the Anglo-Dutch-Palatine alliance talks, run under cover names.",
-   "importance": 4,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from Halm's catalogue entry during the Nov 2026 bavarikon/BSB sweep (research/wainut_leads_2026-11-03/); the volume's scans are confirmed online (MDZ, from microfilm, legible), the cipher leaves not yet located in them",
-   "verify": "Transcribe scan 469 in two passes; look for other 'Rota' pieces (n. 107, n. 108) that may carry the same system with glosses.",
-   "links": [
-    {
-     "label": "MDZ scans Clm 10398",
-     "href": "https://www.digitale-sammlungen.de/en/view/bsb00116447?page=1"
-    },
-    {
-     "label": "Halm 1874 catalogue entry",
-     "href": "https://www.digitale-sammlungen.de/en/view/bsb11184610?page=105"
-    },
-    {
-     "label": "MDZ Clm 10398 scan 469 (n. 106)",
-     "href": "https://www.digitale-sammlungen.de/en/view/bsb00116447?page=469"
-    }
-   ],
-   "seen": "image",
-   "source": "bavarikon / BSB digital collections sweep",
-   "prior_art": "open (checked 3 Nov 2026: quick web search on Camerarius + cipher/Chiffre/Solms found no decipherment; DECODE dumps in the repo have no BSB Clm 103xx item; repo grep 'Camerari' on origin/main, 3 Nov 2026: Riksarkivet R4284 and catalogue 207/1614 (Oxenstierna E 701/E 708, letters to 'Camerarius?'), no BSB item)",
-   "needs_archive_scan": "no",
-   "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
-   "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "Images needed from Staatsbibliothek zu Berlin for Ms. theol. lat. oct. 184, ff. 264r and 265r: the Handschriftenportal shows no digitised copy (/api/digitizeds returned 0; record read via /api/kods and /api/tei: 266 + I Bl., Magdeburg, 1501-1510), and the library's own wording is hedged ('Geheimschrift (?)'), beside pen trials and an alphabet. Without seeing the leaves this may be pen trials rather than cipher. Web search on the shelfmark found nothing more."
   },
   {
    "id": 2177,
@@ -35535,7 +35659,29 @@
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b70",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00116446 scans 213-221 (Clm 10397 fol. 104-108), all read at 1418 px; scans 222-234 seen only on a 260-px contact sheet. Print: Fürstlich Anhaltische geheime Cantzley (1621), Tübingen FoXIIa347a_qt, pp. 107-111 read (pp. 99-106 fetched in part, not read).",
+     "extent": "n. 60 = scans 213-217 (dated 11/21 Aug 1619); n. 61 = scans 217-221 (dated 14/24 Aug 1619): several hundred code groups in 9 pages. n. 62 onward (scan 221 on) uses numbers too.",
+     "cipher": "French clear text with 2-4 digit code numbers and two-digit spelled runs. Interlinear glosses only in part: scan 213 (con, Ferdinand, remotion, abdication, Ferdinand), scan 214 (about a dozen, e.g. l'election, A.H.V.Dona, C.Palatin, Gr. Schlick, Anhalt), scan 215 (A.H.z.D., Le Bar. Achatio de dona, A.V.P., accord), scan 217 (Anhalt), scan 220 (porte, A.V.D., emanciper, pas, un, confus). Scans 216, 218, 219 and 221 (n. 60-61 part) show none: most groups have no gloss."
+    },
+    "prior_art": {
+     "decode": "known.py 'Clm 10397', 'Dohna', 'Achatius' (harvested DECODE dump included): only this lead, its sweep and camerarius1621; no DECODE record of these letters.",
+     "tomokiyo": "Not found in web searches on Dohna, Prague 1619 and cipher; Cryptiana's pages not browsed. The 1621 print settles the verdict.",
+     "lasry": "Web searches and known.py show nothing from Lasry on these letters; GL.htm not opened. The 1621 print settles the verdict.",
+     "edition": "Anhaltische geheime Cantzley (1621), 'Trewhertzige Warnung' pp. 107-110, gives a German paraphrase naming Dona. Margins of scans 213 and 221 cite it ('Anhalt. Cantzley, mihi pag. 101', 'pag. 110'). Documenta Bohemica vol. 2 (1972) was not opened.",
+     "literature": "Web searches on Dohna, Prague and Aug 1619 found no modern decipherment. The print's use of captured Anhalt papers is standard (Koser, Kanzleienstreit, cited by Goetz)."
+    },
+    "key_check": "No key found. Partial code list from the leaf glosses: 101 abdication, 122 A. von Dohna, 731 Anhalt, 743/744 C. Palatin, 748/750 Saxony, 1082 election, 1561 Gr. Schlick, 2010 Ferdinand. Numbers do not match camerarius1621 (1684-7 kings there); a different code. Not tested further.",
+    "key_held": "Not a held key: only the glosses on these leaves and the n. 62 glosses (814 Böhmisch Stände, 1373 Anhalt, 2859 resoudre, 1097 l'Engelland), usable as a start for rebuilding one. Not tested on the unglossed groups.",
+    "duplicates": "known.py 'Clm 10397', 'Dohna', 'Achatius': no catalogue entry or target for n. 60-61. targets/camerarius1621 is n. 129-210 of the same volume, a separate series.",
+    "verdict": "partly_read",
+    "closed": "Partly read in two places: scattered interlinear glosses on scans 213-215, 217 and 220, and a 1621 printed German paraphrase in the Anhaltische geheime Cantzley pp. 107-110. It renders coded passages: scan 215 '101 de 2010' = p. 108 'Principal Punct wegen der abdication'; scan 214 Schlick and Saxony = p. 107; scan 221 '2025 sans nombre' = p. 110 'ohne Zahl'. Paraphrase only: most groups stay unglossed, and no group-by-group reading exists."
+   }
   },
   {
    "id": 2178,
@@ -35574,7 +35720,28 @@
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b70",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00116446 scan 355 (Clm 10397 fol. 173, piece number 85), read at 1418 px with the neighbouring scans 343-360 on contact sheets",
+     "extent": "One page, 12 code groups in German clear text with Latin and French phrases.",
+     "cipher": "Glosses written over 11 of the 12 groups: 867, 1858, 120, 1116, 1687 'K.D.', 1695, 2263 'H.H.C.', 1190, 3240, 3357, 1059. Only 484 has none; in camerarius1621 key.tsv 484 = Camerarius. Closes 'Dec: 1622', signed 'Le vostre', docketed 'Fürst Christian zu Anhalt'."
+    },
+    "prior_art": {
+     "decode": "known.py 'Clm 10397', 'Christian von Anhalt', 'Anhalt' (harvested DECODE dump included): no record of this letter.",
+     "tomokiyo": "Not found in the web search on Christian of Anhalt, Dec 1622 and cipher; Cryptiana's pages not browsed. The leaf's own glosses settle the verdict.",
+     "lasry": "Not found in that search or in known.py; GL.htm not opened. The leaf's own glosses settle the verdict.",
+     "edition": "Not looked for beyond one search: no printed text found. Halm 1874 p. 91 prints the misdated catalogue entry only.",
+     "literature": "Web search on Christian of Anhalt, Camerarius and Dec 1622 found no discussion of this letter."
+    },
+    "key_check": "Compared with camerarius1621 key.tsv: 1687 'K.D.' (König in Dennemarck) and 484 fit; 1116 and 2263 'H.H.C.' read differently there (Fürst Christian, doubtful; Pfaltz). So a shared code is not established. Not tested further.",
+    "duplicates": "known.py 'Clm 10397', 'Christian von Anhalt': no catalogue entry or target; camerarius1621 covers n. 129-210, not n. 85.",
+    "verdict": "read",
+    "closed": "Deciphered between the lines on the leaf: scan 355 (fol. 173) carries a gloss over 11 of its 12 code groups; the twelfth, 484, is Camerarius in the sibling key on record. Halm's year 1632 is wrong: the leaf reads 20 Dec 1622."
+   }
   },
   {
    "id": 2179,
@@ -35617,7 +35784,28 @@
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b70",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00112117 scans 181-182 (Clm 10382, piece number 46), read at 1418 px and in enlarged crops of every cipher line",
+     "extent": "Two pages: about 75 code groups of 3-4 digits, plus about 15 runs of two-digit spelled letters.",
+     "cipher": "German clear text with code numbers and letter runs, each with an interlinear gloss in the same faint ink: 2737 'Ob. Fuchs', 3515 'Stuttgart', 2224 'kommen', '32,29,65,26,11,66,67,59,20' 'verharret', 1732 'Mansfeld', 2389 'Liga', '23,65,12,33,36,28,59,17' 'brauchen'. No group or run was found unglossed. Scan 182 is signed '741 / Carl Pawel'."
+    },
+    "prior_art": {
+     "decode": "known.py 'Clm 10382', 'Carl Pawel', 'Fuchs' (harvested DECODE dump included): no record of this letter. The Fuchs hits are other documents (catalogue Fuchsstein, a Danish key).",
+     "tomokiyo": "Not found in the web search on Pawel, Fuchs and Württemberg 1624; Cryptiana's pages not browsed. The leaf's glosses settle the verdict.",
+     "lasry": "Not found in that search or in known.py; GL.htm not opened. The leaf's glosses settle the verdict.",
+     "edition": "No print found in one search. Halm 1874 p. 59 records 'in Chiffern mit Auflösungen', which the leaf confirms.",
+     "literature": "Web search on Carl Pawel, Oberst Fuchs and Frederick V found nothing on this report."
+    },
+    "key_check": "The glosses give about 90 code pairs: a key source. Whether it is the camerarius1621 code is unsettled and untested here: 2737 Ob. Fuchs was not compared in full against that list.",
+    "duplicates": "known.py 'Clm 10382', 'Carl Pawel': this lead and its sibling lead for Clm 10382 scans 470, 476-477, a different piece. No catalogue entry or target.",
+    "verdict": "read",
+    "closed": "Fully deciphered between the lines on the leaf: scans 181-182 of Clm 10382 gloss every code group and letter run seen (crops of all cipher lines checked). Halm's 'in Chiffern mit Auflösungen' is right, but the leaf's date reads 25 Nov 1624, not 15 Nov."
+   }
   },
   {
    "id": 2180,
@@ -35656,7 +35844,28 @@
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b70",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00112116 scans 137-138 (Clm 10380, piece number 25), read at 1418 px and in enlarged crops of the code passages",
+     "extent": "Two pages: about 40 code groups of 3-4 digits (up to 8592) and about 15 spelled runs of two-digit numbers, in Latin clear text.",
+     "cipher": "Glosses over the code and runs: 4684 legioni, 5087 milit., 5683 occupatio, 8344 vectigalis, 3500 Germania, 7260 R.S., '40,42,30,64,28,66,35,32,22,39,45' Erfordiam, 4628 Landgravio, 4742 Lipsiae, 3048 facta, 2427 decreta, 5967 patriam. No group found unglossed. Closes 'Datum Hallae in Saxonia 15/25 Sept. 1631'; docket '7/17 Octob. 1631'."
+    },
+    "prior_art": {
+     "decode": "known.py 'Clm 10380', 'Joachim Camerarius' (harvested DECODE dump included): no record of this letter.",
+     "tomokiyo": "Not found in the web search on Joachim IV, Halle and Sept 1631; Cryptiana's pages not browsed. The leaf's glosses settle the verdict.",
+     "lasry": "Not found in that search or in known.py; GL.htm not opened. The leaf's glosses settle the verdict.",
+     "edition": "No print found in one search. Halm 1874 p. 55 gives only 'z. Th. in Chiffern'; it does not mention the glosses.",
+     "literature": "Web search returned biographical notes on Joachim IV and the BSB record of Clm 10380; nothing on this letter."
+    },
+    "key_check": "The glosses give about 55 pairs: a key source. Same volume scans 247-250 (L. Camerarius, The Hague 1636, n. 60-61) also carry glossed code; not compared.",
+    "duplicates": "known.py 'Clm 10380', 'Joachim Camerarius': this lead and its sweep only. No catalogue entry or target.",
+    "verdict": "read",
+    "closed": "Deciphered between the lines on the leaf: scans 137-138 of Clm 10380 gloss every code group and spelled run seen (crops checked). Halm's 'z. Th. in Chiffern' omits this, and the lead's 'check whether a decipherment is written' is answered yes."
+   }
   },
   {
    "id": 2181,
@@ -35664,13 +35873,13 @@
    "year": 1624,
    "date": "s.d. (among pieces of 1624)",
    "title": "Letter to the Emperor, undated, partly in cipher (filed among Gabriel Bethlen's letters of 1624)",
-   "correspondents": "unknown (perhaps Gabriel Bethlen) → Emperor Ferdinand II",
+   "correspondents": "unknown agent → a Protestant king, not the Emperor (Halm's 'an den Kaiser' does not fit the text; Frederick V is the likely addressee)",
    "place": "unknown",
    "language": "unknown",
    "region": "Central Europe",
    "period": "1611-1650",
    "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10403 (Collectio Camerariana vol. 53), n. 65",
-   "folio_note": "Halm 1874 numbers the pieces (n. 65), not folios; the whole volume is scanned on MDZ. ",
+   "folio_note": "Piece 65 = MDZ scans 411-413, fol. 192-193; cipher on scan 412 only.",
    "cls": "C",
    "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 123: \"Schreiben an den Kaiser s. d. zum Theil in Chiffern\". Neighbouring n. 64 and 73 are 'Gabrielis regis Hung. ep. ad Imperatorem, Cassoviae 29 Mai 1624'. Volume (Cam. 53) taken from the catalogue's running head; check. Not on DECODE (repo dumps have no BSB Clm 103xx). Image: https://www.digitale-sammlungen.de/en/view/bsb00116451?page=1 (IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116451/manifest).",
    "why": "Bethlen-Habsburg diplomacy of 1624, copied or intercepted for the Palatine side.",
@@ -35689,13 +35898,34 @@
      "href": "https://www.digitale-sammlungen.de/en/view/bsb11184610?page=133"
     }
    ],
-   "seen": "catalogue",
+   "seen": "image",
    "source": "bavarikon / BSB digital collections sweep",
    "prior_art": "open (checked 3 Nov 2026: quick web search on Camerarius + cipher/Chiffre/Solms found no decipherment; DECODE dumps in the repo have no BSB Clm 103xx item; repo grep 'Camerari' on origin/main, 3 Nov 2026: Riksarkivet R4284 and catalogue 207/1614 (Oxenstierna E 701/E 708, letters to 'Camerarius?'), no BSB item)",
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b71",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00116451 (Clm 10403), scans 411-413 (piece marked 65, fol. 192-193); scans 300-420 on contact sheets to locate it; Halm 1874 p. 123 (bsb11184610 canvas 133) read",
+     "extent": "One cipher passage only: scan 412, about 8 lines, roughly 45 groups, inside a German letter. Scans 411 and 413 read in full: clear German, no cipher.",
+     "cipher": "Mixed system in clear German: 2-digit numbers, 4-digit numbers (1410, 2638, 1779, 1829, 2880, 1007) and doubled letters (ZZ, Yy, Pp, Gg, KK, Ff). A contemporary interlinear gloss stands over nearly every group (Herr, Mit, schreiben, zugelassen, künfftigen, Junium, Feind, halsten). Two runs show no gloss on the zoom: 31.26.8.25.13 (line 2) and 43.31.24.19.51 (last line). Microfilm, read with zoom; not transcribed."
+    },
+    "prior_art": {
+     "decode": "known.py on the harvested dump for 'Clm 10403' and 'Camerarius': only this lead and its sweep row, no DECODE record of this volume.",
+     "tomokiyo": "cryptiana code/crypto.htm fetched and grepped for Camerarius, Bethlen, Oxenstierna, Thirty, Palatin, Pfalz: no entry for this letter.",
+     "lasry": "GL.htm copy in targets/vasto1527/prior grepped for the same terms and Clm/Munich: nothing on this letter.",
+     "edition": "No edition of this letter found; search on Bethlen 1624, Palatine agent and Camerarius returned general Bethlen history only. Halm 1874 p. 123 only lists it.",
+     "literature": "No study of this letter found; the decipherment on record is the interlinear gloss on the leaf itself."
+    },
+    "key_check": "No separate key looked for. Sample numbers (1007, 1410, 1628, 1829, 2880) are absent from targets/camerarius1621/key.tsv, so that key gives no test here; the code was not compared further.",
+    "duplicates": "known.py 'Clm 10403', 'Camerarius', 'Fegraeus': only this lead's own rows. Not the same as Pawel 1624 (Clm 10382 n. 46) or catalogue 207/1614.",
+    "verdict": "partly_read",
+    "closed": "Clm 10403 n. 65, scan 412: contemporary interlinear gloss over nearly every group of the single cipher passage; the runs 31.26.8.25.13 and 43.31.24.19.51 are unglossed."
+   }
   },
   {
    "id": 2182,
@@ -35709,7 +35939,7 @@
    "region": "Scandinavia",
    "period": "1611-1650",
    "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10406 (Collectio Camerariana vol. 56), n. 74 et 77",
-   "folio_note": "n. 74 = MDZ scans 283-284: fol. 1 (scan 283) all clear German; fol. 2 (scan 284) has cipher in about 9 of 27 lines, dated 'Helsingör den 11 Julij 1632', signed 'Johan Fegraeus'. n. 77 (21 July) not located; Halm also lists an 'n. 77 aus Brüssel', so the numbers may be confused.",
+   "folio_note": "n. 74 = MDZ scans 283-284 (cipher on 284); n. 77 = scan 289, Helsingör 21 July 1632, signed Fegraeus. The 'n. 77 aus Brüssel' is the separate extract on scan 291.",
    "cls": "A",
    "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 131: \"Schreiben von Joh. Fegraeus aus Helsingör vom 11 u. 21 Juli, z. Th. in Chiffern mit beigesetzter Auflösung\". Decipherment written beside the cipher: a key source for other Fegraeus or Camerarius-network letters, e.g. the Riksarkivet cipher filed with Camerarius's letters of 1628 (R4284, in the repo, not broken). Not on DECODE (repo dumps have no BSB Clm 103xx). Image: https://www.digitale-sammlungen.de/en/view/bsb00116454?page=1 (IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116454/manifest). Located by WAINUT on 3 Nov 2026, not read: a mixed system of 4-digit code numbers for words and names (1418, 1420, 1726, 1745, 2102, 2935, 3168, 3906 ...), 2-digit numbers for letters and letter-like signs for short words ('rr' = und, glossed twice). 3168 = 'Kön. Mt.' and 1745 = 'gute' twice each. Not Camerarius's 1621-22 code (3168 and 1420 fall in the wrong alphabetical places there). One draft pass of scan 284 only; the glosses are cramped and partly illegible on the microfilm.",
    "why": "Swedish intelligence from the Sound in the summer of Lützen; the key may bear on R4284.",
@@ -35738,7 +35968,28 @@
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b71",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00116454 (Clm 10406): scans 283-284 (n. 74, 11 July 1632) and 289 (n. 77, Helsingør 21 July 1632, signed Fegraeus), both read at full size; scans 281-304 on a contact sheet; Halm 1874 p. 131 read",
+     "extent": "Scan 284: about 12 lines mixed with clear text. Scan 289: about 25 lines mixed with clear text. Scan 283 read in full: clear German, no cipher. Scans 285-288 on the sheet and 288 at full size belong to other pieces, no cipher.",
+     "cipher": "4-digit code numbers, 2-digit numbers and doubled-letter signs (rr, nn, mm) in clear German, with interlinear glosses over most groups in both letters. Groups with no gloss remain, e.g. scan 284 'mm. L. nn. a. 15.59.53.80.24.78' and the run 56.11.26.32.70.64.47.53.75.57.73.77.72.14.55. Not transcribed; some glosses are cramped on the microfilm."
+    },
+    "prior_art": {
+     "decode": "known.py on the harvested dump for 'Clm 10406' and 'Fegraeus': only this lead and its sweep row; no DECODE record.",
+     "tomokiyo": "cryptiana code/crypto.htm grepped for Fegraeus, Camerarius, Oxenstierna: no entry.",
+     "lasry": "GL.htm copy in the repo grepped for Fegraeus, Camerarius and Clm: no entry.",
+     "edition": "Halm 1874 p. 131 records 'z. Th. in Chiffern mit beigesetzter Auflösung'. Searches for Fegraeus with Oxenstierna's correspondence found no printed text of these letters.",
+     "literature": "Searches on Fegraeus, Helsingør 1632 and Camerarius found nothing on him; the only reading on record is the gloss on the leaves."
+    },
+    "key_check": "No key sheet found. Lead's finding that this is not Camerarius's 1621-22 code was not contradicted: 3168, 1745, 1420 are absent from targets/camerarius1621/key.tsv. Glossed pairs could serve R4284 (lead's suggestion), not tested.",
+    "duplicates": "known.py 'Clm 10406', 'Fegraeus', 'Camerarius': no catalogue entry or target for this document. R4284 is a different letter.",
+    "verdict": "partly_read",
+    "closed": "Clm 10406 n. 74 (scan 284) and n. 77 (scan 289) carry interlinear decipherments over most groups, as Halm says; some groups on both leaves are unglossed. Scan 283 has no cipher."
+   }
   },
   {
    "id": 2183,
@@ -35777,7 +36028,8 @@
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting_note": "Bierther, Briefe und Akten N.F. II/8 (1982) could not be read at this date. HathiTrust catalog and babel full-text search both stopped at a Cloudflare 'Performing security verification' page in Chrome, not clicked; no MDZ copy of this volume was seen in the MDZ search (the results viewed were older works, not checked to the end), and the Historische Kommission page lists it as print; De Gruyter Brill has it (ISBN 9783486498011) for purchase only. Google Books holds two scans, eEPWsb6K5vEC and 5a8yAQAAIAAJ, both snippet-only (no page view; each query shows at most 3 short hits). Its Chronologisches Aktenregister is the decisive place, and p. 810, which should list about 21-25 Oct 1633, never surfaces: pp. 809 and 811 came up, but no p. 810 hit in 16 further queries on each scan. '1633 X 22' gives 0 on one scan and only pp. 805, 353, 861 on the other, though the book cites letters of 22 Oct (pp. 371, 401, 405), so that zero is the gap, not evidence. Need p. 810 and the Geleen index entry from a library copy."
   },
   {
    "id": 2184,
@@ -35790,8 +36042,8 @@
    "language": "unknown",
    "region": "Germany",
    "period": "1611-1650",
-   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10416 (Collectio Camerariana vol. 66), n. 58",
-   "folio_note": "Halm 1874 numbers the pieces (n. 58), not folios; the whole volume is scanned on MDZ. ",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10415 (Collectio Camerariana vol. 65), n. 58",
+   "folio_note": "n. 58 = MDZ bsb00116463 scan 329, fol. 161; verso scan 330 blank. Halm p. 164 has running head Cam. 65; the next piece, n. 59 Ferdinand II on scan 331, confirms the volume.",
    "cls": "C",
    "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 164: \"Brief an einen geistlichen Churfürsten (?) in Chiffern geschrieben, Osnabrugi 13 Aug. 1633\". Whole letter in cipher; no decipherment noted. Osnabrück was under Swedish siege in Aug 1633 (taken in September). Not on DECODE (repo dumps have no BSB Clm 103xx). Image: https://www.digitale-sammlungen.de/en/view/bsb00116464?page=1 (IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116464/manifest).",
    "why": "Catholic correspondence from besieged Osnabrück, probably intercepted; same year and side as n. 206 in Clm 10406, perhaps the same cipher.",
@@ -35810,13 +36062,53 @@
      "href": "https://www.digitale-sammlungen.de/en/view/bsb11184610?page=174"
     }
    ],
-   "seen": "catalogue",
+   "seen": "image",
    "source": "bavarikon / BSB digital collections sweep",
    "prior_art": "open (checked 3 Nov 2026: quick web search on Camerarius + cipher/Chiffre/Solms found no decipherment; DECODE dumps in the repo have no BSB Clm 103xx item; repo grep 'Camerari' on origin/main, 3 Nov 2026: Riksarkivet R4284 and catalogue 207/1614 (Oxenstierna E 701/E 708, letters to 'Camerarius?'), no BSB item)",
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch c25",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00116463 scan 329 (Clm 10415, fol. 161, piece number 58), microfilm, read whole at 1200 px with two crops at 1000 px. Scan 330 is blank (first pass).",
+     "extent": "One page: about 28 framed lines of cipher, not counted by machine; no transcription made.",
+     "cipher": "Framed block of word-divided groups of digits and letter signs ('2047oEi', '203y205bo', '250100'), between a clear salutation 'Rme Illme Princeps ac Domine Dne Clementissime' and a clear closing 'Rmae et Illmae Celsitudinis Vrae'. The last line ends in clear '... Raptissime Osnabrugi 1633 13 Aug'; signed with initials C. L."
+    },
+    "prior_art": {
+     "decode": "known.py 'Clm 10415', 'Clm 10416', 'Osnabrugi', 'Osnabrück 1633' (harvested DECODE dump included): only this lead, its sweep row and sibling n. 59-60; no DECODE record.",
+     "tomokiyo": "Cryptiana unsolved.htm fetched and searched: no Osnabr or Camerari entry; its only 1633 hits are unrelated. Web search on Tomokiyo with the Thirty Years' War, 1633, Wartenberg and Osnabrück returned nothing on this letter.",
+     "lasry": "Web search on Lasry with the Camerariana, 1633, Osnabrück and Wartenberg returned no result on the letter; known.py finds no row for it among the repo's Lasry material.",
+     "edition": "Bierther, Briefe und Akten N.F. II/8 (1982), the volume that would cover this date, is available to me as Google Books snippets only (eEPWsb6K5vEC, 5a8yAQAAIAAJ), with no page view; HathiTrust stopped at a Cloudflare check and De Gruyter Brill is purchase only. Searched inside on eEPWsb6K5vEC: '1633 VIII 13' reaches the Chronologisches Aktenregister at p. 797 (the snippet shows Stücklin an Maximilian, Wien; places Regensburg and Hall/Inntal; Aldringen an Maximilian Nr. 176; Bf. von Augsburg), and p. 794 (Maximilian an Richel, a note). '1633 VIII 13 Osnabrück' 0, '1633 VIII 13 Bonn' 0, 'Osnabrück 1633 VIII' 0, 'Osnabrück, 13. Aug' 0, 'Chiffre Osnabrück' 0, 'Osnabrück 13. August Chiffre' 0, 'Bf. von Osnabrück 1633 Aug.' 0, 'Wartenberg 13. Aug.' 0, 'Camerariana' 0. The register does print Osnabrück as a place ('1633 V 16 [Osnabrück]', p. 782), so these zeros have force, but snippets show only part of p. 797 and each query shows few hits. No such letter appears for the date. Khevenhüller, Annales Tom. XII (MDZ bsb10866798, full-text API): Osnabrück as campaign narrative, 'Chiffre' and 'Ziffern' 0. Forst's Wartenberg correspondence ends in 1631 by its title, so it does not cover this date; not opened.",
+     "literature": "Web search on Osnabrück, 13 Aug, 1633, Chiffre, Wartenberg and Clm 10415 returned no result on the letter; Halm 1874 p. 164 records it as in Chiffern with no decipherment. No Cryptologia or HistoCrypt paper on it was found by these searches."
+    },
+    "key_check": "No key found on record for this cipher and none tested. Its digit-and-letter groups do not look like the plain two-digit numbers of Clm 10406 n. 206 (lead 2183), so that sibling gives no shortcut.",
+    "duplicates": "known.py 'Clm 10415': no hits. 'Clm 10416' and 'Osnabrugi': this lead, its sweep row and sibling lead n. 59-60, another piece. No catalogue entry or target.",
+    "searches": [
+     {
+      "query": "Google Books inside Bierther eEPWsb6K5vEC: 1633 VIII 13; 1633 VIII 13 Osnabrück; 1633 VIII 13 Bf. von; 1633 VIII 13 Köln; Osnabrück 1633 VIII; 13. Aug. 1633; Chiffre Osnabrück",
+      "result": "Snippet-only. Register p. 797 and p. 794 for the date, with no Osnabrück entry; '13. Aug. 1633' pp. 261, 255, 256 are Bavarian court letters. Queries pairing Osnabrück with the date or with Chiffre give 0."
+     },
+     {
+      "query": "Osnabrück \"13 Aug\" 1633 Chiffre Brief Wartenberg Camerariana Clm 10415 entschlüsselt",
+      "result": "Google: no exact match, and no result shown without quotes. Nothing on this letter and no decipherment."
+     },
+     {
+      "query": "Tomokiyo cryptiana Thirty Years War cipher 1633 Catholic League Wartenberg Osnabrück letter deciphered",
+      "result": "Mary Stuart coverage, Cryptiana's general lists and this project's own pages; nothing on the Osnabrück letter. Cryptiana unsolved.htm then fetched: no Osnabr entry."
+     },
+     {
+      "query": "Lasry decipherment Collectio Camerariana Munich 1633 cipher Osnabrück Swedish intercepted letter Wartenberg",
+      "result": "Google shows only related-search suggestions on Mary Stuart, no result for this letter or the Camerariana."
+     }
+    ],
+    "note": "Corrections: lead's shelfmark and MDZ links point to Clm 10416 / bsb00116464, the wrong volume. Salutation 'Rme Illme Princeps' and closing 'Rmae et Illmae Celsitudinis Vrae' are clear; dated 'Raptissime Osnabrugi 1633. 13 Aug.'; signed with initials I read as C. L. The address names a reverend prince, not an elector as such: Bishop Wartenberg, who had left for Bonn, is as possible as Elector Ferdinand. Faint marks over two lines look like show-through; check at colour resolution. Forst's Wartenberg correspondence ends 1631 from memory, not opened. Searches run: Osnabrück 13 Aug 1633 cipher; Clm 10415 + Chiffern; Bierther volume. None found a decipherment. No key tested. This pass: the two faint traces (over line 2 of the block, and over the line near the bottom that begins '410') were zoomed at 1000 px on the microfilm scan. They are pale, do not line up with the groups and could not be read; the scan cannot say whether they are show-through or erased gloss, so check a colour image if one is made. The edition evidence is search-inside on a snippet-only volume, as described in prior_art.edition.",
+    "verdict_held": "open"
+   },
+   "vetting_note": "Hold, session review 4 Nov 2026: batch c25 said open, but Bierther, Briefe und Akten N.F. II/8 (1982) could only be searched in snippets, register p. 797 only in part, and two faint traces on the microfilm leaf (Clm 10415 scan 329) could not be read. Needs the volume opened and a colour image. Same gap as lead 2183, which stayed unvetted."
   },
   {
    "id": 2185,
@@ -35830,7 +36122,7 @@
    "region": "Germany",
    "period": "1611-1650",
    "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10416 (Collectio Camerariana vol. 66), n. 59-60",
-   "folio_note": "Halm 1874 numbers the pieces (n. 59-60), not folios; the whole volume is scanned on MDZ. ",
+   "folio_note": "n. 59 = MDZ scans 512-516; n. 60 = scan 518. Halm's running head Cam. 66 is right. n. 58 (scans 504-511) is Latin with no cipher seen.",
    "cls": "C",
    "status": "Halm, Verzeichniss der handschriftlichen Sammlung der Camerarii (1874), p. 171: \"n. 58 Consilium pro duce Wolfgango Wilhelmo Palatino Neoburgico (de iure successionis in Palatinatu rhenano). n. 59. 60 Von der Succession im Königreich Böhmen (beide Schriften z. Th. in Chiffern)\". The running head says Cam. 66, but piece numbering restarts (another n. 58 on p. 164), so this may be vol. 67 (Clm 10417, bsb00116465); check. Not on DECODE (repo dumps have no BSB Clm 103xx). Image: https://www.digitale-sammlungen.de/en/view/bsb00116464?page=1 (IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00116464/manifest).",
    "why": "Policy papers on the Bohemian and Palatine successions, partly enciphered.",
@@ -35849,13 +36141,35 @@
      "href": "https://www.digitale-sammlungen.de/en/view/bsb11184610?page=181"
     }
    ],
-   "seen": "catalogue",
+   "seen": "image",
    "source": "bavarikon / BSB digital collections sweep",
    "prior_art": "open (checked 3 Nov 2026: quick web search on Camerarius + cipher/Chiffre/Solms found no decipherment; DECODE dumps in the repo have no BSB Clm 103xx item; repo grep 'Camerari' on origin/main, 3 Nov 2026: Riksarkivet R4284 and catalogue 207/1614 (Oxenstierna E 701/E 708, letters to 'Camerarius?'), no BSB item)",
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b71",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00116464 (Clm 10416): scans 512, 514, 516, 518 at high resolution; scans 503-511, 513, 515, 517, 519-523 on contact sheets; scan 509 at full width; Halm 1874 p. 171 read",
+     "extent": "n. 59 = scans 512-516 (fol. 251 ff.), n. 60 = scan 518 (fol. 254): dozens of code groups through clear German. n. 58 (scans 504-511, Latin) shows no cipher on the sheets or on scan 509 at full width.",
+     "cipher": "Code numbers of 2-4 digits and 2-digit spelled runs in clear German, with an interlinear gloss over most groups (289 Böhmischen, 2760 Succession, 2714.488 Spanische Cantzley, 554 Ch. Saxen, 1113 fürsten, 2721 Stände). Some repeats and short groups carry no gloss, e.g. later 3028 on scan 514. Scans 513 and 515 seen on sheets only. Not transcribed."
+    },
+    "prior_art": {
+     "decode": "known.py on the harvested dump for 'Clm 10416' and 'Camerarius': only this lead and its sweep row; no DECODE record.",
+     "tomokiyo": "cryptiana code/crypto.htm grepped for Camerarius, Palatin, Pfalz: no entry for these papers.",
+     "lasry": "GL.htm copy grepped for Camerarius, Clm and Munich: no entry for these papers.",
+     "edition": "Search for the Wolfgang Wilhelm consilium and 'Von der Succession' with Camerarius found only biography of Wolfgang Wilhelm; no printed text. Halm p. 171 only lists them.",
+     "literature": "No study found. The reading on record is the gloss on the leaves; targets/camerarius1621 covers Clm 10397-10398 and does not cite this volume."
+    },
+    "key_check": "Same code as targets/camerarius1621/key.tsv on this evidence: 554 = Chursachsen and 2714 = Spanische agree with the glosses here, and 1113, 2721, 2760 fall in the key's alphabetical order. Only these values compared.",
+    "key_held": "targets/camerarius1621/key.tsv (Camerarius code of 1621-22), compared on the values named in key_check; these glosses could extend it.",
+    "duplicates": "known.py 'Clm 10416', 'Clm 10417', 'Camerarius': no catalogue entry or target for this document. Sibling by code: targets/camerarius1621.",
+    "verdict": "partly_read",
+    "closed": "Clm 10416 n. 59-60 (scans 512-516, 518) carry an interlinear decipherment over most code groups; some groups are unglossed and scans 513 and 515 were seen on sheets only. n. 58 shows no cipher."
+   }
   },
   {
    "id": 2186,
@@ -35891,21 +36205,57 @@
    "access_note": "No online images found; reading room or scan order",
    "ark": "",
    "access": "archive",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b71",
+    "seen": {
+     "kind": "not online",
+     "where": "KB Primo API record alma99122282254105763 (soeg.kb.dk/primaws/rest/pub/pnxs), Additamenta 163 kvart; no images in the record",
+     "extent": "11 leaves per the catalogue; amount of ciphertext unknown until seen.",
+     "cipher": "Catalogue title: 'Prøver paa en dansk Chiffer-Skrift med Nøgle. (1750; selvbiografisk). 11 Bl.' Samples of a cipher script with its key; the leaves were not seen."
+    },
+    "searches": [
+     {
+      "query": "Ahmon Nielsen Gøhr \"Chiffer-Skrift\" 1750 Additamenta 163 4to",
+      "result": "Arnamagnæan and other Scandinavian manuscript hits only; nothing names Gøhr or this cipher."
+     },
+     {
+      "query": "Gøhr Ahmon Nielsen 1750 dansk chifferskrift selvbiografi Krarup Katalog Universitetsbibliotekets Haandskrifter Additamenta",
+      "result": "Unrelated Danish autobiographies and a Krarup family genealogy; no mention of Gøhr, no transcription."
+     },
+     {
+      "query": "\"Ahmon\" Gøhr Danish 18th century \"Chiffer\" manuscript Royal Library Copenhagen cipher autobiography decoded dagbog",
+      "result": "Copiale and Lindenfels 1819 only, both unrelated; no decipherment of Gøhr's text."
+     }
+    ],
+    "prior_art": {
+     "decode": "known.py on the harvested dump for 'Gøhr' and 'Additamenta 163': only this lead's row; not on DECODE.",
+     "tomokiyo": "cryptiana code/crypto.htm fetched and grepped for Gøhr, Ahmon, Danish: only 'A Danish Diplomatic Cipher' of the 17th century, a different subject; nothing on Gøhr.",
+     "lasry": "GL.htm copy in the repo grepped for Gøhr and Copenhagen manuscripts of 1750: no entry.",
+     "edition": "No edition of Gøhr's text found in three searches. The only print reference is the catalogue citation Krarup II, 256, a manuscript catalogue, not opened.",
+     "literature": "No article on Ahmon Nielsen Gøhr or this cipher found in Danish or English searches."
+    },
+    "key_check": "Key is in the manuscript per the catalogue title; not seen and not tested, because no images are online.",
+    "key_in_volume": "The title says 'med Nøgle'; key not seen, not tested.",
+    "duplicates": "known.py 'Gøhr', 'Additamenta 163': only this lead's row in leads.json and the sweep; no catalogue entry or target.",
+    "verdict_held": "open"
+   },
+   "vetting_note": "Hold, session review 4 Nov 2026: batch said open from the catalogue title alone, 'Prøver paa en dansk Chiffer-Skrift med Nøgle'. Samples with their key may stand beside their plaintext, and no leaf is online. Needs a KB scan of Additamenta 163 kvart."
   },
   {
    "id": 2187,
    "counted": true,
-   "year": 1630,
-   "date": "about 1630 (one letter dated at Calmar(?) 1630; not checked leaf by leaf)",
+   "year": 1629,
+   "date": "1624-1629 on the leaves read (scan 418 about 1624; 448 July 1626; 471 Feb 1629; 476 Calmar 3 July 1629; 486 Calmar 10 Oct 1629)",
    "title": "Letters to Ludwig Camerarius with long two-digit cipher passages and interlinear decipherments (Radziwiłł, Lithuania, the Grand Duke, Hungary, Sweden)",
-   "correspondents": "unknown → Ludwig Camerarius",
-   "place": "Calmar(?) and unknown",
+   "correspondents": "Pfalzgraf Johann Casimir (of Zweibrücken-Kleeburg) → Ludwig Camerarius",
+   "place": "Calmar and elsewhere",
    "language": "German (glosses)",
    "region": "Germany",
    "period": "1611-1650",
-   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10382 (Collectio Camerariana vol. 32), n. 139-140 and following (MDZ scans 470, 476-477)",
-   "folio_note": "MDZ scans 470 and 476-477: long 2-digit cipher passages with interlinear decipherments. Seen on a thumbnail sweep and one look; not transcribed.",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10382 (Collectio Camerariana vol. 32), Johann Casimir series within n. 106-164, cipher seen in n. 138, 140 and others (MDZ scans 418-486)",
+   "folio_note": "Scans 469-471 = n. 138; 475-477 = n. 140; further cipher on 418, 447-448, 482, 486.",
    "cls": "A",
    "status": "Halm's 1874 wording checked during the sweep does not mark these pieces as cipher; found by WAINUT on 3 Nov 2026 while paging Clm 10382 for Pawel n. 46. Glosses seen include 'Radziwill', 'Littaw', 'Großfürsten', 'Hungarn', 'Schweden'. Not transcribed. Not on DECODE (repo dumps have no BSB Clm 103xx).",
    "why": "Swedish, Polish-Lithuanian and Muscovite news in the Camerarius channel around 1630, with the key recoverable from the glosses.",
@@ -35930,7 +36280,28 @@
    "needs_archive_scan": "no",
    "access_note": "Whole volume digitised from microfilm on digitale-sammlungen.de (MDZ), free, IIIF; no login",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-04",
+    "by": "claude leads review batch b71",
+    "seen": {
+     "kind": "scan",
+     "where": "MDZ bsb00112117 (Clm 10382): scans 418, 447-448, 469-471, 476-477, 482, 486 read at high resolution; scans 340-462 (every sixth), 413-472 and 473-512 on contact sheets; Halm 1874 p. 60 read",
+     "extent": "Long 2-digit passages: scan 470 is almost wholly cipher; shorter runs on 418, 447-448, 469, 471, 477, 482, 486, including rotated marginal runs. Letters run 1624-1629 on these leaves. Scans 340-412 were only sampled.",
+     "cipher": "Run-together 2-digit numbers (about 14-98) in clear German with a word-by-word interlinear gloss over nearly every group on the leaves read (Radziwill, Mein Bruder, Lithaw, Schweden, Rex, Anglus, Mosca, Mansfelt). Some groups have no gloss, e.g. 9392.4339.31 on scan 471 and the ringed marginal groups on 470-471. Not transcribed."
+    },
+    "prior_art": {
+     "decode": "known.py on the harvested dump for 'Clm 10382', 'Johann Casimir', 'Kleeburg': only this lead, n. 46 and an unrelated Palatine note; no DECODE record.",
+     "tomokiyo": "cryptiana code/crypto.htm grepped for Casimir, Camerarius, Palatin, Pfalz: no entry for these letters.",
+     "lasry": "GL.htm copy grepped for Casimir, Camerarius and Clm: no entry. Waldispühl and Kopal mention a 'Camerarius key' (Stålhane 1934), not these letters.",
+     "edition": "Halm 1874 p. 60 lists these as original letters of Pfalzgraf Johann Casimir to Camerarius 1622-1638, no cipher note. Search found no edition of them.",
+     "literature": "Search on Johann Casimir, Radziwill, Kalmar and cipher found archive entries only; Stålhane 1934 not opened. The reading on record is the gloss on the leaves."
+    },
+    "key_check": "No key sheet found. Not compared in detail with Pawel 1624 or the Fegraeus code; the 2-digit system here is unlike the 4-digit code of targets/camerarius1621. Scans glossed enough to rebuild the table.",
+    "duplicates": "known.py 'Clm 10382', 'Johann Casimir', 'Kleeburg', 'Radziwill': no catalogue entry or target for these letters. Lead for Pawel n. 46 is another piece of the volume.",
+    "verdict": "partly_read",
+    "closed": "Clm 10382 scans 418, 447-448, 469-471, 476-477, 482, 486: a word-by-word interlinear decipherment covers nearly every group, with some groups unglossed; scans 340-412 were only sampled."
+   }
   }
  ]
 }

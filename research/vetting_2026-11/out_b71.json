@@ -1,0 +1,160 @@
+{
+ "2181": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b71",
+  "seen": {
+   "kind": "scan",
+   "where": "MDZ bsb00116451 (Clm 10403), scans 411-413 (piece marked 65, fol. 192-193); scans 300-420 on contact sheets to locate it; Halm 1874 p. 123 (bsb11184610 canvas 133) read",
+   "extent": "One cipher passage only: scan 412, about 8 lines, roughly 45 groups, inside a German letter. Scans 411 and 413 read in full: clear German, no cipher.",
+   "cipher": "Mixed system in clear German: 2-digit numbers, 4-digit numbers (1410, 2638, 1779, 1829, 2880, 1007) and doubled letters (ZZ, Yy, Pp, Gg, KK, Ff). A contemporary interlinear gloss stands over nearly every group (Herr, Mit, schreiben, zugelassen, künfftigen, Junium, Feind, halsten). Two runs show no gloss on the zoom: 31.26.8.25.13 (line 2) and 43.31.24.19.51 (last line). Microfilm, read with zoom; not transcribed."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested dump for 'Clm 10403' and 'Camerarius': only this lead and its sweep row, no DECODE record of this volume.",
+   "tomokiyo": "cryptiana code/crypto.htm fetched and grepped for Camerarius, Bethlen, Oxenstierna, Thirty, Palatin, Pfalz: no entry for this letter.",
+   "lasry": "GL.htm copy in targets/vasto1527/prior grepped for the same terms and Clm/Munich: nothing on this letter.",
+   "edition": "No edition of this letter found; search on Bethlen 1624, Palatine agent and Camerarius returned general Bethlen history only. Halm 1874 p. 123 only lists it.",
+   "literature": "No study of this letter found; the decipherment on record is the interlinear gloss on the leaf itself."
+  },
+  "key_check": "No separate key looked for. Sample numbers (1007, 1410, 1628, 1829, 2880) are absent from targets/camerarius1621/key.tsv, so that key gives no test here; the code was not compared further.",
+  "duplicates": "known.py 'Clm 10403', 'Camerarius', 'Fegraeus': only this lead's own rows. Not the same as Pawel 1624 (Clm 10382 n. 46) or catalogue 207/1614.",
+  "verdict": "partly_read",
+  "closed": "Clm 10403 n. 65, scan 412: contemporary interlinear gloss over nearly every group of the single cipher passage; the runs 31.26.8.25.13 and 43.31.24.19.51 are unglossed.",
+  "lead_updates": {
+   "correspondents": "unknown agent → a Protestant king, not the Emperor (Halm's 'an den Kaiser' does not fit the text; Frederick V is the likely addressee)",
+   "folio_note": "Piece 65 = MDZ scans 411-413, fol. 192-193; cipher on scan 412 only.",
+   "seen": "image"
+  }
+ },
+ "2182": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b71",
+  "seen": {
+   "kind": "scan",
+   "where": "MDZ bsb00116454 (Clm 10406): scans 283-284 (n. 74, 11 July 1632) and 289 (n. 77, Helsingør 21 July 1632, signed Fegraeus), both read at full size; scans 281-304 on a contact sheet; Halm 1874 p. 131 read",
+   "extent": "Scan 284: about 12 lines mixed with clear text. Scan 289: about 25 lines mixed with clear text. Scan 283 read in full: clear German, no cipher. Scans 285-288 on the sheet and 288 at full size belong to other pieces, no cipher.",
+   "cipher": "4-digit code numbers, 2-digit numbers and doubled-letter signs (rr, nn, mm) in clear German, with interlinear glosses over most groups in both letters. Groups with no gloss remain, e.g. scan 284 'mm. L. nn. a. 15.59.53.80.24.78' and the run 56.11.26.32.70.64.47.53.75.57.73.77.72.14.55. Not transcribed; some glosses are cramped on the microfilm."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested dump for 'Clm 10406' and 'Fegraeus': only this lead and its sweep row; no DECODE record.",
+   "tomokiyo": "cryptiana code/crypto.htm grepped for Fegraeus, Camerarius, Oxenstierna: no entry.",
+   "lasry": "GL.htm copy in the repo grepped for Fegraeus, Camerarius and Clm: no entry.",
+   "edition": "Halm 1874 p. 131 records 'z. Th. in Chiffern mit beigesetzter Auflösung'. Searches for Fegraeus with Oxenstierna's correspondence found no printed text of these letters.",
+   "literature": "Searches on Fegraeus, Helsingør 1632 and Camerarius found nothing on him; the only reading on record is the gloss on the leaves."
+  },
+  "key_check": "No key sheet found. Lead's finding that this is not Camerarius's 1621-22 code was not contradicted: 3168, 1745, 1420 are absent from targets/camerarius1621/key.tsv. Glossed pairs could serve R4284 (lead's suggestion), not tested.",
+  "duplicates": "known.py 'Clm 10406', 'Fegraeus', 'Camerarius': no catalogue entry or target for this document. R4284 is a different letter.",
+  "verdict": "partly_read",
+  "closed": "Clm 10406 n. 74 (scan 284) and n. 77 (scan 289) carry interlinear decipherments over most groups, as Halm says; some groups on both leaves are unglossed. Scan 283 has no cipher.",
+  "lead_updates": {
+   "folio_note": "n. 74 = MDZ scans 283-284 (cipher on 284); n. 77 = scan 289, Helsingör 21 July 1632, signed Fegraeus. The 'n. 77 aus Brüssel' is the separate extract on scan 291."
+  }
+ },
+ "2183": {
+  "unvetted": "Edition not opened: Briefe und Akten zur Geschichte des Dreißigjährigen Krieges, Neue Folge, Teil II Band 8, Januar 1633 - Mai 1634, ed. Kathrin Bierther (1982), the series on Maximilian I and his allies; no online copy found (web search, archive.org 0 hits; the MDZ search page gave no usable result to curl, so it may still be on MDZ or need a library). Cipher itself is confirmed: Clm 10406 scans 653-655 (n. 206), about 40 lines of run-together 2-digit numbers in clear German, no gloss, signed by both electors, address to Guyn de Geleen on scan 656.",
+  "lead_updates": {
+   "folio_note": "n. 206 = MDZ bsb00116454 scans 653-656 (fol. 184-185): cipher on 653-655, address on 656.",
+   "seen": "image"
+  },
+  "note": "Correction: Halm's 'in Chiffern' overstates it; the letter is clear German with long cipher passages. Numbers run about 11-36, which suggests a small substitution alphabet. Searches run: Anselm Casimir + Geleen + 22 Oct 1633; Geleen 1633 + Kurköln + intercepted; Bierther volume. None found a decipherment. No key tested."
+ },
+ "2184": {
+  "unvetted": "Edition not opened: Briefe und Akten zur Geschichte des Dreißigjährigen Krieges, Neue Folge, Teil II Band 8, Januar 1633 - Mai 1634, ed. Kathrin Bierther (1982), no online copy found. Cipher itself is confirmed, but in Clm 10415, not Clm 10416: bsb00116463 scan 329 (piece 58, fol. 161), about 28 framed lines of a digit-and-letter sign cipher, no decipherment seen; scan 330 blank.",
+  "lead_updates": {
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10415 (Collectio Camerariana vol. 65), n. 58",
+   "folio_note": "n. 58 = MDZ bsb00116463 scan 329, fol. 161; verso scan 330 blank. Halm p. 164 has running head Cam. 65; the next piece, n. 59 Ferdinand II on scan 331, confirms the volume.",
+   "seen": "image"
+  },
+  "note": "Corrections: lead's shelfmark and MDZ links point to Clm 10416 / bsb00116464, the wrong volume. Salutation 'Rme Illme Princeps' and closing 'Rmae et Illmae Celsitudinis Vrae' are clear; dated 'Raptissime Osnabrugi 1633. 13 Aug.'; signed with initials I read as C. L. The address names a reverend prince, not an elector as such: Bishop Wartenberg, who had left for Bonn, is as possible as Elector Ferdinand. Faint marks over two lines look like show-through; check at colour resolution. Forst's Wartenberg correspondence ends 1631 from memory, not opened. Searches run: Osnabrück 13 Aug 1633 cipher; Clm 10415 + Chiffern; Bierther volume. None found a decipherment. No key tested."
+ },
+ "2185": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b71",
+  "seen": {
+   "kind": "scan",
+   "where": "MDZ bsb00116464 (Clm 10416): scans 512, 514, 516, 518 at high resolution; scans 503-511, 513, 515, 517, 519-523 on contact sheets; scan 509 at full width; Halm 1874 p. 171 read",
+   "extent": "n. 59 = scans 512-516 (fol. 251 ff.), n. 60 = scan 518 (fol. 254): dozens of code groups through clear German. n. 58 (scans 504-511, Latin) shows no cipher on the sheets or on scan 509 at full width.",
+   "cipher": "Code numbers of 2-4 digits and 2-digit spelled runs in clear German, with an interlinear gloss over most groups (289 Böhmischen, 2760 Succession, 2714.488 Spanische Cantzley, 554 Ch. Saxen, 1113 fürsten, 2721 Stände). Some repeats and short groups carry no gloss, e.g. later 3028 on scan 514. Scans 513 and 515 seen on sheets only. Not transcribed."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested dump for 'Clm 10416' and 'Camerarius': only this lead and its sweep row; no DECODE record.",
+   "tomokiyo": "cryptiana code/crypto.htm grepped for Camerarius, Palatin, Pfalz: no entry for these papers.",
+   "lasry": "GL.htm copy grepped for Camerarius, Clm and Munich: no entry for these papers.",
+   "edition": "Search for the Wolfgang Wilhelm consilium and 'Von der Succession' with Camerarius found only biography of Wolfgang Wilhelm; no printed text. Halm p. 171 only lists them.",
+   "literature": "No study found. The reading on record is the gloss on the leaves; targets/camerarius1621 covers Clm 10397-10398 and does not cite this volume."
+  },
+  "key_check": "Same code as targets/camerarius1621/key.tsv on this evidence: 554 = Chursachsen and 2714 = Spanische agree with the glosses here, and 1113, 2721, 2760 fall in the key's alphabetical order. Only these values compared.",
+  "key_held": "targets/camerarius1621/key.tsv (Camerarius code of 1621-22), compared on the values named in key_check; these glosses could extend it.",
+  "duplicates": "known.py 'Clm 10416', 'Clm 10417', 'Camerarius': no catalogue entry or target for this document. Sibling by code: targets/camerarius1621.",
+  "verdict": "partly_read",
+  "closed": "Clm 10416 n. 59-60 (scans 512-516, 518) carry an interlinear decipherment over most code groups; some groups are unglossed and scans 513 and 515 were seen on sheets only. n. 58 shows no cipher.",
+  "lead_updates": {
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10416 (Collectio Camerariana vol. 66), n. 59-60",
+   "folio_note": "n. 59 = MDZ scans 512-516; n. 60 = scan 518. Halm's running head Cam. 66 is right. n. 58 (scans 504-511) is Latin with no cipher seen.",
+   "seen": "image"
+  }
+ },
+ "2186": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b71",
+  "seen": {
+   "kind": "not online",
+   "where": "KB Primo API record alma99122282254105763 (soeg.kb.dk/primaws/rest/pub/pnxs), Additamenta 163 kvart; no images in the record",
+   "extent": "11 leaves per the catalogue; amount of ciphertext unknown until seen.",
+   "cipher": "Catalogue title: 'Prøver paa en dansk Chiffer-Skrift med Nøgle. (1750; selvbiografisk). 11 Bl.' Samples of a cipher script with its key; the leaves were not seen."
+  },
+  "searches": [
+   {
+    "query": "Ahmon Nielsen Gøhr \"Chiffer-Skrift\" 1750 Additamenta 163 4to",
+    "result": "Arnamagnæan and other Scandinavian manuscript hits only; nothing names Gøhr or this cipher."
+   },
+   {
+    "query": "Gøhr Ahmon Nielsen 1750 dansk chifferskrift selvbiografi Krarup Katalog Universitetsbibliotekets Haandskrifter Additamenta",
+    "result": "Unrelated Danish autobiographies and a Krarup family genealogy; no mention of Gøhr, no transcription."
+   },
+   {
+    "query": "\"Ahmon\" Gøhr Danish 18th century \"Chiffer\" manuscript Royal Library Copenhagen cipher autobiography decoded dagbog",
+    "result": "Copiale and Lindenfels 1819 only, both unrelated; no decipherment of Gøhr's text."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py on the harvested dump for 'Gøhr' and 'Additamenta 163': only this lead's row; not on DECODE.",
+   "tomokiyo": "cryptiana code/crypto.htm fetched and grepped for Gøhr, Ahmon, Danish: only 'A Danish Diplomatic Cipher' of the 17th century, a different subject; nothing on Gøhr.",
+   "lasry": "GL.htm copy in the repo grepped for Gøhr and Copenhagen manuscripts of 1750: no entry.",
+   "edition": "No edition of Gøhr's text found in three searches. The only print reference is the catalogue citation Krarup II, 256, a manuscript catalogue, not opened.",
+   "literature": "No article on Ahmon Nielsen Gøhr or this cipher found in Danish or English searches."
+  },
+  "key_check": "Key is in the manuscript per the catalogue title; not seen and not tested, because no images are online.",
+  "key_in_volume": "The title says 'med Nøgle'; key not seen, not tested.",
+  "duplicates": "known.py 'Gøhr', 'Additamenta 163': only this lead's row in leads.json and the sweep; no catalogue entry or target.",
+  "verdict": "open"
+ },
+ "2187": {
+  "date": "2026-11-04",
+  "by": "claude leads review batch b71",
+  "seen": {
+   "kind": "scan",
+   "where": "MDZ bsb00112117 (Clm 10382): scans 418, 447-448, 469-471, 476-477, 482, 486 read at high resolution; scans 340-462 (every sixth), 413-472 and 473-512 on contact sheets; Halm 1874 p. 60 read",
+   "extent": "Long 2-digit passages: scan 470 is almost wholly cipher; shorter runs on 418, 447-448, 469, 471, 477, 482, 486, including rotated marginal runs. Letters run 1624-1629 on these leaves. Scans 340-412 were only sampled.",
+   "cipher": "Run-together 2-digit numbers (about 14-98) in clear German with a word-by-word interlinear gloss over nearly every group on the leaves read (Radziwill, Mein Bruder, Lithaw, Schweden, Rex, Anglus, Mosca, Mansfelt). Some groups have no gloss, e.g. 9392.4339.31 on scan 471 and the ringed marginal groups on 470-471. Not transcribed."
+  },
+  "prior_art": {
+   "decode": "known.py on the harvested dump for 'Clm 10382', 'Johann Casimir', 'Kleeburg': only this lead, n. 46 and an unrelated Palatine note; no DECODE record.",
+   "tomokiyo": "cryptiana code/crypto.htm grepped for Casimir, Camerarius, Palatin, Pfalz: no entry for these letters.",
+   "lasry": "GL.htm copy grepped for Casimir, Camerarius and Clm: no entry. Waldispühl and Kopal mention a 'Camerarius key' (Stålhane 1934), not these letters.",
+   "edition": "Halm 1874 p. 60 lists these as original letters of Pfalzgraf Johann Casimir to Camerarius 1622-1638, no cipher note. Search found no edition of them.",
+   "literature": "Search on Johann Casimir, Radziwill, Kalmar and cipher found archive entries only; Stålhane 1934 not opened. The reading on record is the gloss on the leaves."
+  },
+  "key_check": "No key sheet found. Not compared in detail with Pawel 1624 or the Fegraeus code; the 2-digit system here is unlike the 4-digit code of targets/camerarius1621. Scans glossed enough to rebuild the table.",
+  "duplicates": "known.py 'Clm 10382', 'Johann Casimir', 'Kleeburg', 'Radziwill': no catalogue entry or target for these letters. Lead for Pawel n. 46 is another piece of the volume.",
+  "verdict": "partly_read",
+  "closed": "Clm 10382 scans 418, 447-448, 469-471, 476-477, 482, 486: a word-by-word interlinear decipherment covers nearly every group, with some groups unglossed; scans 340-412 were only sampled.",
+  "lead_updates": {
+   "correspondents": "Pfalzgraf Johann Casimir (of Zweibrücken-Kleeburg) → Ludwig Camerarius",
+   "date": "1624-1629 on the leaves read (scan 418 about 1624; 448 July 1626; 471 Feb 1629; 476 Calmar 3 July 1629; 486 Calmar 10 Oct 1629)",
+   "year": 1629,
+   "place": "Calmar and elsewhere",
+   "shelfmark": "Munich, Bayerische Staatsbibliothek, Clm 10382 (Collectio Camerariana vol. 32), Johann Casimir series within n. 106-164, cipher seen in n. 138, 140 and others (MDZ scans 418-486)",
+   "folio_note": "Scans 469-471 = n. 138; 475-477 = n. 140; further cipher on 418, 447-448, 482, 486."
+  }
+ }
+}
