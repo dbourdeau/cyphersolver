@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "target": "chenmi1916",
+ "title": "辰密 (Chenmi): 4 numeric telegrams of Huang Xing's circle, Tokyo <-> Shanghai, 3 June - 13 June 1916 (JACAR)",
+ "documents": [
+  {
+   "id": "chenmi-1916",
+   "read": "read",
+   "shelfmark": "JACAR B03050089200, B03050089300, B03050089400 (特定人ノ発受郵便物取調): N05, N13, N16, N26 (prefix 6591 1378 = 辰密)",
+   "date": "3 June - 13 June 1916",
+   "year": 1916,
+   "country": "Japan",
+   "route": "Tokyo <-> Shanghai",
+   "places": {
+    "from": "Tokyo",
+    "to": "Shanghai"
+   },
+   "language": "Chinese (classical telegraphic)",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the copies; the texts are not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts (黃興等電稿) nor found online.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 239,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "JACAR scans; transcribed with Claude (first trials with Codex), every digit re-read blind by Brice Dudout",
+    "image_quality": "fair",
+    "notes": "Clear prefix 6591 1378 left out of the count."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "superencipherment"
+  ],
+  "summary": "The Chinese telegraph code (明密 book) with its pages, columns and rows renumbered by hand for the 辰密 correspondent (S. Tomokiyo); equivalently key C92 as a formula (key.md).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "4",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "notes": "Digits written in kanji numerals in a grid, read in columns right to left; the first two groups are a clear prefix naming the code book. One key, one entry: split from targets/numeric1916, as its NOTES propose."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None known: not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts (nothing between 8 and 20 June), nor online (Wenmi, Juin 1916 article). 黃興集 and Li Yuanhong's correspondence not yet checked.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-10-12",
+  "last_date": "2026-11-04",
+  "human_role": "Brice Dudout read the digits on the JACAR scans (blind re-reading), proposed the reading order of the grids, chose leads and criteria; Claude wrote the solvers, tests and log, proposed hypotheses, readings and translations; Codex made early trials.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
+   "OpenAI Codex (early trials)"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10",
+   "kind": "transcription",
+   "what": "Forms read in columns right to left, four-digit groups; every digit re-read blind by Brice Dudout.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "key-structure hypothesis"
+   ],
+   "what": "Rongmi and Gongmi keys failed; permuted-page + permuted tens/units model annealed on N13, N16, N26 (201 groups).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "The page table found follows the countdown of numbers without a zero, then imposed; 劈 for 力 and 滠 for 灰, both from groups ending 9, gave the rule units 9 = 10; N05 (not in the search, no prefix) then reads through.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-19",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Contributor (Wenmi verify.py): the key reproduces every published raw text from the re-read digits; score far above 200 random keys of the same form and 200 digit shuffles. Rerun independently in targets/numeric1916 (20 Oct 2026).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "S. Tomokiyo (Cryptiana): the 辰密 key is a 明密 code book with pages, columns and rows renumbered by hand; the contributor checked the exact factorisation over all group values (mingmi.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "reading",
+   "what": "Readings and translations as on the Wenmi page; counted by Daniel's rule: 232 certain, 7 probable, 0 unresolved or illegible of 239.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key search scored with a telegraph-code language model, without cribs or plaintext; only the form dates served as checks (key.md, NOTES.md).",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule on reading.md: 232 certain + 7 probable of 239 groups (0 unresolved).",
+  "verification": [
+   "historical consistency",
+   "key confirms",
+   "independent verification"
+  ],
+  "gaps": [
+   {
+    "item": "7 characters read as probable (one-digit variants or context)",
+    "blocker": "illegible",
+    "detail": "Marked {x} in reading.md; the decryption keeps the figure's own value."
+   }
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "new cipher with solution",
+    "note": "辰密: digits re-read on the JACAR scans, key C92 recovered with Claude (Opus 5.5), readings, translations and context",
+    "date": "2026-10-19",
+    "source": "https://bdudout.github.io/wenmi/en/chenmi.html",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "identification",
+    "note": "the 辰密 key read as a renumbered 明密 code book (pages, columns and rows rewritten by hand), shown on a June 1916 edition of the 明密碼電報書; credited on the Wenmi page",
+    "date": "2026-10-23",
+    "source": "https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm",
+    "published": true
+   }
+  ],
+  "texts": [
+   {
+    "doc": "chenmi-1916",
+    "label": "辰密 (Chenmi), 4 telegrams, 3 June - 13 June 1916",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "zh",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Four telegrams from Tokyo to the Hunanese group's address in Shanghai (ヒツキン, 277 Avenue Joffre): Shandong and Bo Wenwei; the joint telegram to Li Yuanhong, Cen Chunxuan and the provinces; an elite division under Zhao Hengti for Li Yuanhong; 300 yuan for Jiang Fangzhen.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-04",
+     "note": "Read as sentences 4 Nov 2026 (Chinese, classical telegraphic): all four telegrams read straight through (Shandong offer to Bo Wenwei; the joint telegram to Li Yuanhong and Cen Chunxuan; an elite division under Zhao Hengti for Li; 300 yuan to Baili). 239 groups, 7 probable readings, none unresolved: read, grade A."
+    }
+   }
+  ],
+  "key_file": "key.md",
+  "provenance": "contributed"
+ }
+}
