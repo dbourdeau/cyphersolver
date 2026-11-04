@@ -49,7 +49,7 @@ to Madame, to warn her of these plots.
 Four days later Alberto da Carpi came, who had been at Viterbo for more than thirty days under colour of taking the
 baths, but in truth because of the league made with Your Majesty, so as not to leave shamefully and to take from there
 the road that suited him, since by the chapter on rebels he may not be in Rome nor in any other land of the Church. For
-my part I hold that the new plots have brought him back and that he does not sleep on them; and the datary ‹ka ϑ g x›
+my part I hold that the new plots have turned him and that he does not sleep on them; and the datary ‹ka ϑ g x›
 Monsieur ‹ϑ g x ges› has not yet come to the palace. I have not wished to tell it to His Holiness until I see what he
 decides on the confirmation of the said [league]. I have given him the form which ‹sof kon›, as Your Majesty's
 advocate advised, of which he sent me a copy. It is now eight days, and although I asked for an answer they do not
