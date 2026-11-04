@@ -8504,41 +8504,28 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...eric-only runs. Key sheets 2197 (5 items) are on-site only; order copies. Order NRS copies of 2197 and the listed letters in one req...)",
-   "vetting_note": "needs Chrome: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD406%2f1%2f2184 (curl and WebFetch both 403; per-item NRS descriptions not readable). Prior art is real: Gardiner's Hamilton Papers (Camden Soc. 1880, archive.org hamiltonpapersbe00hamirich, opened) prints Lanerick-period letters partly in cipher with the decipherments in italics, e.g. no. 143 James Fenne to Edward Edgar 21 Jun 1648, so some listed items may be printed; which of GD406/1/2183, 2184, 2186, 2188, 2190, 2193, 2218 are those cannot be settled without the NRS item pages (not online; no scan seen). DECODE not holding it per known.py; overlap with targets/hamilton per its NOTES."
-  },
-  {
-   "id": 1251,
-   "counted": true,
-   "seen": "catalogue",
-   "prior_art": "open (checked 28 Oct 2026: web search, known.py; NRS catalogue only)",
-   "year": 1632,
-   "date": "22 Sep 1632 (O.S. 12 Sep)",
-   "title": "Sir Henry Vane to unknown, Ulm, entirely in cipher except the postscript",
-   "correspondents": "Sir Henry Vane (ambassador) → unknown (probably Hamilton)",
-   "place": "Ulm",
-   "language": "English",
-   "region": "England",
-   "period": "1611-1650",
-   "shelfmark": "NRS GD406/1/2192",
-   "folio_note": "one letter; also GD406/1/181 (Vane, Mentz, 15 Jan 1631/32, partly in cipher)",
-   "cls": "C",
-   "status": "NRS: 'in cipher, [undeciphered], apart from the postscript'. Not on DECODE (checked). Not in repo. Checked 28 Oct 2026: Vane, Ulm 1632, wholly in cipher except postscript (NRS); 1632 is outside the c.1645-48 Hamilton key (2197), so it needs its own key. No decipherment found.",
-   "why": "Vane's mission to Gustavus Adolphus in the Thirty Years War.",
-   "importance": 3,
-   "solvability": 2,
-   "difficulty": 4,
-   "score_note": "Scored from the archive description during the Oct 2026 UK libraries sweep (research/uk_libraries/); not viewed (NRS)",
-   "verify": "Request scan from NRS; ask whether 2197 holds a 1630s key",
-   "links": [
-    {
-     "label": "NRS GD406/1/2192",
-     "href": "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD406%2f1%2f2192"
-    }
-   ],
-   "source": "UK libraries sweep (NRS)",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "needs Chrome: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD406%2f1%2f2192 (curl gets a Cloudflare 403 ('Just a moment') on the NRS catalogue record; known.py finds only this lead and sweep files; web searches on the correspondents and shelfmark found no decipherment and no printed text; read the record for any decipherment note; Gardiner's Hamilton Papers/CSP Domestic volume for Vane's 1632 Ulm despatches not opened)"
+   "vetting": {
+    "date": "2026-11-03",
+    "by": "claude leads review batch c12",
+    "seen": {
+     "kind": "not online",
+     "where": "NRS catalogue item records GD406/1/2181-2234, read one by one in Chrome 3 Nov 2026; no scan online",
+     "extent": "About 22 items, 17 Dec 1647 - Mar 1648, per the NRS records; lengths not stated",
+     "cipher": "NRS descriptions, e.g. 2183 'King Charles I, Carisbrooke, to [ ]. Undeciphered.'; 2212 'Partly in cipher; deciphered'; 2213 'Printed in Camden Soc. pp. 152-3'"
+    },
+    "prior_art": {
+     "decode": "known.py on the harvested DECODE dump for GD406/1/2184, 2190, 2197 and Lanerick: only this lead, its sweep row, the README row and targets/hamilton; no DECODE record.",
+     "tomokiyo": "Cryptiana charlesii.htm (copy in targets/hamilton) covers Charles I's letters to the Prince and Worsley of 1647-48 and the 1650 letters; no Lanark, Lanerick or Hamilton 1647-48 hit in a grep.",
+     "lasry": "A web search on these letters surfaced no Lasry paper; local GL.htm copy (targets/gramont1529) has no Hamilton, Lanark or Lanerick hit.",
+     "edition": "Printed: Gardiner, Hamilton Papers (Camden 1880), italic decipherments from no. 91 (4 Jan 1648) on; NRS notes 2213 at pp. 152-3 and 2214 at pp. 151-2. HMC 1887 pp. 117-19 summarises 2212, 2215, 2227 (nos. 293, 274, 290). HMC Supplementary 1932 pp. 70-4 prints a March 1648 letter with cipher passages in italics (Internet Archive search-inside).",
+     "literature": "Biermann/Bosbach/Brown read the Sept-Nov 1648 letters of Charles I to his son, not these; a search on Carisbrooke Dec 1647 cipher, Lanark and Hamilton found nothing on them."
+    },
+    "key_check": "No key tried: none in hand. Gardiner p. xxi says the letters came without a key; the 2197 sheets are on site only, not tested.",
+    "key_in_volume": "GD406/1/2197 'Keys for ciphers used in the correspondence of the Duke of Hamilton', c 1645, 5 items, same series; on site, not seen, not tested.",
+    "duplicates": "known.py terms above; targets/hamilton NOTES lists 2181, 2189, 2191, 2194-2196, 2206, 2232, 2288 only as other undeciphered items and is about the 1650 letters, so it is no duplicate of the whole.",
+    "verdict": "partly_read",
+    "closed": "Part of this row is deciphered on record: 2212, 2213, 2214, 2227 are marked deciphered, with 2213 and 2214 printed in Camden 1880 pp. 151-3 and 2212, 2227 summarised in HMC 1887 p. 119. SPLIT NEEDED: no reading found for the Charles I group 2183 (18 Dec 1647), 2184 (17 Jan), 2186 (17 Dec 1647), 2188 (2 Jan), 2190 (29 Jan, 3 items), nor for 2216 and 2223; these look like a separate lead, not yet vetted as open. Compare first: 2193 (25 Mar 1648) with HMC 1887 no. 299 of the same date '[Deciphered, not printed]'; 2218 (15 Feb) with HMC no. 278 of the same date 'only partially deciphered'; 2215 is HMC no. 274, summarised from its clear postscript."
+   }
   },
   {
    "id": 1253,
@@ -8930,7 +8917,7 @@
    "source": "UK libraries sweep (NRS)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "needs Chrome: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD16%2f34%2f1 (curl gets a Cloudflare 403 ('Just a moment') on the NRS catalogue record; known.py finds only this lead and sweep files; web searches on the correspondents and shelfmark found no decipherment and no printed text; record shows only 'addressed in cypher' copies; Mary Stuart/Beaton cipher literature and HMC Airlie report not opened)"
+   "vetting_note": "NRS GD16/34/1 read in Chrome: 'Copies of 3 letters addressed in cypher by Lord Ogilvy to James Beaton ... they deal mostly with the actions of the regent, the Earl of Morton'; originals 'now in Blairs College'. The content summary leaves open whether the copies are ciphertext or clear transcripts, so ciphertext is not shown. Needs an NRS scan or the Blairs originals (Scottish Catholic Archives JB series, not checked item by item). One search on Ogilvy/Beaton 1577-81 found no edition or reading."
   },
   {
    "id": 1260,
@@ -8966,7 +8953,7 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...used' is included; may already have been read. Not in repo. Request scans; test the cipher note on the letter. open (checked 29 Oct...)",
-   "vetting_note": "needs Chrome: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD124%2f15%2f1256 (curl gets a Cloudflare 403 ('Just a moment') on the NRS catalogue record; known.py finds only this lead and sweep files; web searches on the correspondents and shelfmark found no decipherment and no printed text; a 'note of the cipher' is in the file so a decipherment may exist; HMC Mar and Kellie Supplementary Report (1930) not opened, search could not locate its text)"
+   "vetting_note": "NRS GD124/15/1256 read in Chrome: 'Letter in cipher [? from Earl of Mar] describing a political crisis within the Jacobite Court at Rome ... calumnies were loaded on 'Manley' (Mar). Note of the cipher used.' 2 documents. The cataloguer summarised the content, so it may be a cant-name letter or carry its decipherment; that needs an NRS scan. HMC Mar and Kellie 1904 and Supplementary 1930 opened: no 'Manley' and not printed. Stuart Papers beyond the printed calendar not checked."
   },
   {
    "id": 1261,
@@ -9000,7 +8987,7 @@
    "source": "UK libraries sweep (NRS)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "needs Chrome: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=CH12%2f12%2f1877 (curl gets a Cloudflare 403 ('Just a moment') on the NRS catalogue record; known.py finds only this lead and sweep files; web searches on the correspondents and shelfmark found no decipherment and no printed text; record says only 'copy of cipher'; whether ciphertext or key sheet is unclear; Stuart Papers calendar not opened)"
+   "vetting_note": "NRS CH12/12/1877 read in Chrome: 'Copy in Bishop Robert Keith's hand of cipher, possibly Prince Charles to his father', 1745, file level, on site. 'Copy of cipher' does not say whether this is a ciphertext or a key sheet, and no extent is given; needs an NRS scan. One search found Keith's 1745 letter copies in The Lyon in Mourning but no cipher; the Stuart Papers calendar was not opened."
   },
   {
    "id": 1262,
@@ -9034,41 +9021,7 @@
    "source": "UK libraries sweep (NRS)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "needs Chrome: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD112%2f39%2f132%2f1 (curl gets a Cloudflare 403 ('Just a moment') on the NRS catalogue record; known.py finds only this lead and sweep files; web searches on the correspondents and shelfmark found no decipherment and no printed text; several items, none individually seen; HMC 6th report (Breadalbane) not opened; web search found only unrelated Glenorchy letters)"
-  },
-  {
-   "id": 1263,
-   "counted": true,
-   "seen": "catalogue",
-   "prior_art": "open (checked 29 Oct 2026: web search only; cryptiana not checked item by item)",
-   "year": 1710,
-   "date": "Jul 1710 - Dec 1711",
-   "title": "Mar to Lord Grange, letters with cipher passages (Mar and Kellie)",
-   "correspondents": "Earl of Mar → Lord Grange",
-   "place": "London / Whitehall",
-   "language": "English",
-   "region": "England",
-   "period": "1701-1800",
-   "shelfmark": "NRS GD124/15/975/7-20, 1024/30",
-   "folio_note": "about 10 letters; NRS search matched cipher in the descriptions",
-   "cls": "C",
-   "status": "Not checked beyond the NRS hit list; may only mention a key.",
-   "why": "Union-era politics.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 UK libraries sweep (research/uk_libraries/); not viewed (NRS)",
-   "verify": "Read descriptions for which letters carry cipher.",
-   "links": [
-    {
-     "label": "GD124/15/975/7",
-     "href": "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD124%2f15%2f975%2f7"
-    }
-   ],
-   "source": "UK libraries sweep (NRS)",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "needs Chrome: https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/details.aspx?reference=GD124%2f15%2f975%2f7 (curl gets a Cloudflare 403 ('Just a moment') on the NRS catalogue record; known.py finds only this lead and sweep files; web searches on the correspondents and shelfmark found no decipherment and no printed text; about 10 letters, may only mention a key; HMC Mar and Kellie Supplementary Report not opened)"
+   "vetting_note": "NRS records read in Chrome. Cipher shown only in part: GD112/39/132/1 (Forrester, 3 Jul 1680) 'note in cipher at end'; 137/10 (16 May 1685) 'names in numerical cipher'; 122/13 (Argyll, 28 Nov 1676) 'refers to acquaintances in cipher by number'; 288/11 (Townshend, 25 Jun 1728) 'Postscript in cipher'. 133/4 (28 Dec 1681) only 'suggests making a cipher', and 271/22 (1714) says no cipher needed. Blocker: the HMC report on the Breadalbane papers (volume unconfirmed; Terry's index points to 'Breadalbane, Earl of, Taymouth Castle') could not be located on archive.org, so the edition question is unanswered. Split to 132/1 and 288/11 when retried."
   },
   {
    "id": 1264,
@@ -9178,7 +9131,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000173419&page=1))",
-   "vetting_note": "needs Chrome: http://bdh-rd.bne.es/viewer.vm?id=0000173419 and bnedigital.bne.es/bd/card?oid=0000173419&site=bdh. curl got HTTP 403 (BNE) or a Cloudflare challenge (Europeana, UB); no leaf seen, so no ciphertext shown. Web searches for the correspondents and cipher found no decipherment of this item, but see-the-cipher is unmet. Context: Reales Perez 2025 reconstructs Mary's 1546 cipher from two letters to Nicolas Perrenot (Cryptiana Mar 2026 says no specimen seen); no reading of the BNE letter found."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000173419, ciphered letter among the ten still not located; no leaf seen."
   },
   {
    "id": 1267,
@@ -9219,7 +9172,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000172732&page=1))",
-   "vetting_note": "needs Chrome: http://bdh-rd.bne.es/viewer.vm?id=0000172732 (BNE MSS/20214/52, 16 PDFs unopened). curl got HTTP 403 (BNE) or a Cloudflare challenge (Europeana, UB); no leaf seen, so no ciphertext shown. Web searches for the correspondents and cipher found no decipherment of this item, but see-the-cipher is unmet. Context: Kolosova Ko.1 known for Sessa; no reading of this volume found."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BNE MSS/20214/52 (BDH 0000172732), 15 PDFs beyond 52/1-4b unseen; CSP Spain 1525-29 not compared."
   },
   {
    "id": 1269,
@@ -9260,7 +9213,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000186678&page=1))",
-   "vetting_note": "needs Chrome: http://bdh-rd.bne.es/viewer.vm?id=0000186678 (MSS/20212/43, letters 5-8,10-12). curl got HTTP 403 (BNE) or a Cloudflare challenge (Europeana, UB); no leaf seen, so no ciphertext shown. Web searches for the correspondents and cipher found no decipherment of this item, but see-the-cipher is unmet. Context: BNE says the cipher sits on a separate sheet/interlinear, i.e. a decipherment may accompany it (prior art); Kolosova Ko.12/Ko.17, Luo Lu.15 exist."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BNE MSS/20212/43 (BDH 0000186678), letters 5-8 and 10-12 unseen; the two partly ciphered letters not located."
   },
   {
    "id": 1270,
@@ -9305,7 +9258,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000186690&page=1))",
-   "vetting_note": "needs Chrome: http://bdh-rd.bne.es/viewer.vm?id=0000186690 (seven letters undated on card). curl got HTTP 403 (BNE) or a Cloudflare challenge (Europeana, UB); no leaf seen, so no ciphertext shown. Web searches for the correspondents and cipher found no decipherment of this item, but see-the-cipher is unmet. Context: 1521-22 letters covered by Tomokiyo AlonsoSanchez.htm; 1497 letter is catalogue 1014."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000186690, seven letters undated on the card; those outside 1497 and 1521-22 not identified."
   },
   {
    "id": 1271,
@@ -9346,7 +9299,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1))",
-   "vetting_note": "needs Chrome: http://bdh-rd.bne.es/viewer.vm?id=0000141369 (Mss/18619, check shelfmark vs Mss/18428). curl got HTTP 403 (BNE) or a Cloudflare challenge (Europeana, UB); no leaf seen, so no ciphertext shown. Web searches for the correspondents and cipher found no decipherment of this item, but see-the-cipher is unmet. Context: Herrero Garcia 2023 (Avisos) cites Mss. 18428 for Mirabel letters of 1622; Rodriguez Gomez has published Gondomar cipher readings, not these."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000141369 (Mss/18619; check against Mss. 18428); ciphered letters not located."
   },
   {
    "id": 1272,
@@ -9387,7 +9340,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000064262&page=1))",
-   "vetting_note": "needs Chrome: http://bdh-rd.bne.es/viewer.vm?id=0000064262 (Dormer tomo VI). curl got HTTP 403 (BNE) or a Cloudflare challenge (Europeana, UB); no leaf seen, so no ciphertext shown. Web searches for the correspondents and cipher found no decipherment of this item, but see-the-cipher is unmet."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000064262, Dormer tomo VI; cipher locations in the volume unknown."
   },
   {
    "id": 1273,
@@ -9428,7 +9381,7 @@
    "scored": "sweep",
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000042230&page=1))",
-   "vetting_note": "needs Chrome: http://bdh-rd.bne.es/viewer.vm?id=0000042230 (Papeles varios, 64 images). curl got HTTP 403 (BNE) or a Cloudflare challenge (Europeana, UB); no leaf seen, so no ciphertext shown. Web searches for the correspondents and cipher found no decipherment of this item, but see-the-cipher is unmet."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000042230, Papeles varios (64 images); the Olivares letter not reached."
   },
   {
    "id": 1274,
@@ -17058,7 +17011,7 @@
    "access_note": "BNE Digital viewer, free; BNE blocked this session",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "needs Chrome: BNE Digital returned HTTP 403 to curl and WebFetch (viewer and card); https://bnedigital.bne.es/bd/es/card?id=8b0f5fc5-5240-4104-8392-76cf341135c4 . Europeana API record for 'Crolope' (bdh0000173166) lists only 'Nombre de remitente dudoso' and 'Manchas de humedad', so no cipher is shown by the description; leaf not seen. Weak."
+   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Card read: bnedigital card id=8b0f5fc5-5240-4104-8392-76cf341135c4 gives MSS/20210/46, 2 h., 1681, notes 'Nombre de remitente dudoso || Manchas de humedad'; no cipher in the card. Leaf not seen, so neither cipher nor not_cipher is shown."
   },
   {
    "id": 1607,
