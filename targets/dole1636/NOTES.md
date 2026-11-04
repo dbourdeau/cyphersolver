@@ -1,5 +1,7 @@
 # Siege of Dole, June-July 1636: the "points" cipher of the Parlement and Antoine Brun (BM Besançon Ms 1594)
 
+Status: in progress. Not yet written up: no site page or README row. Classed read (96.9%), so it is ready for the /writeup skill. The status below is the contributor's.
+
 Status: read (Brice Dudout, 4 Nov 2026; key recovered and validated; fols. 191 + 127v 128 words, 113 certain, 11 probable, 4 unresolved = 96.9%; clear text already printed by Longin 1912, found after the reading).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Not in the catalogue; no DECODE record.
