@@ -1,5 +1,7 @@
 # Ercole Gonzaga to Ferrante Gonzaga (catalogue 1556): cc. 78-79 and cc. 174-175, Modena, Autografoteca Campori; with seven letters in the same cipher (catalogue 1554, cc. 113-120)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+
 Status, 3 Nov 2026: key confirmed on a contemporary decipherment; neither letter is read. cc. 78r-79r and cc. 174r, 174v, 175v are read in part. c. 175r is decoded, not read. The seven letters of catalogue 1554 are decoded, not read (section below). Prior art is open: see below. Nothing here is claimed as new.
 
 Contributed by WAINUT. The work was done with AI language-model agents. An independent agent made the blind check and the final check named below.

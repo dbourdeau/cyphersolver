@@ -1,5 +1,7 @@
 # Ferrante Gonzaga 1549: letters of Charles V (catalogue 1560) and Prince Philip (catalogue 1561), Biblioteca Estense, Autografoteca Campori
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+
 Status, 3 Nov 2026: read in part. One long break, Charles V of 14 Nov 1549 (cc. 60r-62r): 811 of 910 words verbatim from the signs, 864 with marked repairs. No document of either entry is read in full. Prior art is open: see below. Nothing here is claimed as new.
 
 Catalogue 1560 and 1561 are one target because the letters use one key. Contributed by WAINUT. The work was done with AI language-model agents. Reading was done sign first: shapes were copied, then decoded, and only then checked for sense. Separate agents made the blind passes and the independent check named below.

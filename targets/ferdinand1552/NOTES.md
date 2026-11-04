@@ -1,5 +1,7 @@
 # 1332: Ferdinand I to Castaldo, Oct 1552 (Ambrosiana G 275 inf.)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+
 Status: read in part (3 Nov 2026), for the entry as a whole. The one letter with no contemporary decipherment is read; the other three
 are transcription jobs, not done.
 
