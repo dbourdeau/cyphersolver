@@ -37,3 +37,12 @@ Work date: 2026-09-22 (the rohan1636 session). The source audit is in
 
 Request images of Français 5190 nos. 171–172. If a Rohan key is rebuilt from the Savoy/Canisy letters (rohan1636),
 test it here.
+
+## Brice Dudout: the letters are in print (credit added 4 Nov 2026)
+
+On 28 Oct 2026, Brice Dudout's session filled the "print: not done" gap. Zurlauben (ed.), *Mémoires et lettres de
+Henri duc de Rohan sur la guerre de la Valteline* (1758), vol. II pp. 503-508, prints both letters in clear:
+- "Lettre en chiffres de M. d'Hemery, du 25 janvier, reçue le 8 février 1636", on Toiras's plan from the Ticino side, a bridge near Oleggio, the castle of Arona, and a start on 8 March;
+- "Réponse à M. d'Hemery, par M. le duc de Rohan", on recruits by the end of April and bread for the infantry.
+
+The preface of vol. I names the editor's source as the "Registre des dépêches du duc de Rohan", Bibliothèque du Roi, ancien fonds 9786. That is Français 5190 itself (Anc. 9786(2)), a register of copies. So the clear text is a period decipherment copied into the register. The cipher originals received by Rohan have not been located. OCR on the Internet Archive: `MmoiresEtLettresDeHenriDucDeRoh1` (vol. II). Credited `dudout`, role "pointer". Not checked here.
