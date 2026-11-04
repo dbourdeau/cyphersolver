@@ -1,0 +1,169 @@
+{
+ "schema_version": 1,
+ "target": "desnoyers1659",
+ "title": "Des Noyers 1659: Pierre Des Noyers to Ismaël Boulliau, note in cipher on Marie Mancini, [Danzig, December 1659] (BnF Fr. 13020 f. 297): contemporary decipherment transcribed, key rebuilt",
+ "documents": [
+  {
+   "id": "bnf-fr13020-f297",
+   "read": "read",
+   "shelfmark": "BnF, Français 13020, f. 297 (Gallica btv1b9061314b, view 608)",
+   "date": "[December 1659]",
+   "year": 1659,
+   "country": "Poland",
+   "route": "Danzig -> Paris",
+   "places": {
+    "from": "Danzig",
+    "to": "Paris"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear decipherment (gloss) above each group, probably by Boulliau."
+   },
+   "length": {
+    "tokens": 24,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica, view 608 (full resolution)",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "syllabic"
+  ],
+  "summary": "Two-digit numerical nomenclator (00-99): letters and syllables; a mark above a group (ring, circumflex, cross, bar, accent) makes it a code word",
+  "symbol_kind": "digits",
+  "distinct_symbols": 88,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Contemporary interlinear gloss on the manuscript; not printed in the 1859 edition of the letters (which prints the other passages of 1658-1659).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "The 1656 sign key (f. 315) tested on the glossed passages: 0/41 agreements on groups 3-39 (controls mean 0.001); no sign of its alphabet.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "hypothesis",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Table rebuilt from cipher / gloss pairs of 12 passages: 88 groups, 88.8% consistency (code words 97.2%, controls <= 34%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Leave-one-out check of f. 297 against the other 11 passages: 24 groups, 18 certain, 2 probable, 4 restored from the gloss only.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read from existing decipherment",
+  "method_basis": "Existing contemporary decipherment: interlinear gloss of the time, checked group by group against a table rebuilt from the other glossed passages of the same correspondence.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "12/12 words read in their sense; 6 certain, 2 probable, 4 restored, 0 unresolved.",
+  "first_break": false,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear gloss of the time on f. 297 (probably by Boulliau) gives the clear text; the eleven other glossed passages of Fr. 13020 (1658-1659) give the key",
+    "date": "2026-10-29"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "cipher and gloss of f. 297 transcribed and checked group by group; the 00-99 nomenclator with marks rebuilt from the twelve glossed passages of Fr. 13020 (key.tsv, key recovered); the 1656 key of f. 315 ruled out; English translation. Content existing (contemporary gloss), not a solution",
+    "date": "2026-10-29"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "bnf-fr13020-f297",
+    "label": "Pierre Des Noyers to Ismaël Boulliau, note in cipher, [Dec 1659]",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "But for the Queen, no one would wait for the death of the Prince of Spain to break off the marriage; la Mancini must be very bold.",
+    "note": "Existing: the text is the contemporary interlinear gloss, checked against the rebuilt table; 12 words, 6 certain, 2 probable, 4 restored, 0 unresolved.",
+    "reading_review": {
+     "grade": "A",
+     "by": "AI language-model agent (Claude Opus 5.5, for Brice Dudout; a model reading, not a person)",
+     "date": "2026-11-04",
+     "note": "Read as sentences 4 Nov 2026: one complete French sentence of 1659 in the spelling of the time ('despagne', 'ardie' = hardie), coherent with its plain-text frame and with the news of the Spanish marriage and Marie Mancini in late 1659."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "mixed"
+ }
+}
