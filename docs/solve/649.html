@@ -41,7 +41,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 649 · class B · priority 6.0 · attempted, open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 649 · class B · priority 6.0 · in progress</p>
   <h1>Delacroix (French Foreign Minister) → Létombe (French consul general, Philadelphia), despatch No. 5 entirely in a French numeric code, copy sent by Rufus King</h1>
   <p class="sub">A Directory instruction to the French chargé/consul general in Philadelphia days before Delacroix left office and on the eve of the XYZ mission, which Rufus King obtained in London (probably from Grenville's decipherers); its content is not known from the US side.</p>
   <dl class="facts">
@@ -55,6 +55,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/delacroix1797/NOTES.md" rel="noopener">targets/delacroix1797</a> is working on this cipher (status: in progress (not deciphered; attempted 2 Nov 2026, no reading; blocked on the clear minute or a key, which need archive access)). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://dbourdeau.github.io/cyphersolver/solve/649.html</p>
@@ -63,6 +64,10 @@
 This page: https://dbourdeau.github.io/cyphersolver/solve/649.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/delacroix1797/NOTES.md  (status: in progress (not deciphered; attempted 2 Nov 2026, no reading; blocked on the clear minute or a key, which need archive access))
 
 THE CIPHER
   Title:          Delacroix (French Foreign Minister) → Létombe (French consul general, Philadelphia), despatch No. 5 entirely in a French numeric code, copy sent by Rufus King
@@ -77,20 +82,21 @@ THE CIPHER
     - frame 0245: https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M30/M30-004/M30-004-0245.jpg
 
 WHAT IS KNOWN
-  Status: Transcribed in full by Michael Brackx (issue #122, 27 Oct 2026; transcription in the issue). King's No. 53: 'I have no means of decyphering it'; no decipherment on frames 0236-0252. Turner, Correspondence of the French Ministers 1791-1797 (AHA 1903) does not print No. 5, but prints Létombe's reply No. 42 (22 Brumaire an VI, p. 1077, from the ministry's decipherment, CP États-Unis 48 f. 355): he will follow what the 25 Messidor despatch prescribed for keeping his political correspondence, 'dont je dicte moi-même les chiffres'. So part of No. 5 is probably about the keeping and ciphering of his political letters. Statistics: repeats 705 806 711/400 405 ×7, 474 670 1068 ×3; adjacent frequent pairs 972/973 and 81/82 hint at a one-part code, but a one-part word anneal did not converge; flat profile (top ten 14%). Not on DECODE.
-  Outcome so far: attempted, open
+  Status: Transcribed in full by Michael Brackx (issue #122, 27 Oct 2026; transcription in the issue). King's No. 53: 'I have no means of decyphering it'; no decipherment on frames 0236-0252. Turner, Correspondence of the French Ministers 1791-1797 (AHA 1903) does not print No. 5, but prints Létombe's reply No. 42 (22 Brumaire an VI, p. 1077, from the ministry's decipherment, CP États-Unis 48 f. 355): he will follow what the 25 Messidor despatch prescribed for keeping his political correspondence, 'dont je dicte moi-même les chiffres'. So part of No. 5 is probably about the keeping and ciphering of his political letters. Statistics: repeats 705 806 711/400 405 ×7, 474 670 1068 ×3; adjacent frequent pairs 972/973 and 81/82 hint at a one-part code, but a one-part word anneal did not converge; flat profile (top ten 14%). Not on DECODE. 2 Nov 2026: worked in targets/delacroix1797/, still unread. Near-repeated passages interchange neighbouring numbers (e.g. 417 269/416 268, 123 151/124 152), which suggests homophones in small numeric blocks, and a calibrated one-part test found no alphabetical order (real text overlaps scrambled numbers; the method recovers about half of a synthetic one-part letter). Annealers failed calibration on synthetic letters of the same size; seven French keys in the repo are within chance.
+  Outcome so far: In progress here, in targets/delacroix1797/ (earlier: attempted, open).
   Prior-art check: open (27 Oct 2026). Turner 1903 checked by Michael Brackx: No. 5 not printed; reply No. 42 printed p. 1077.
-  Check first: Find the clear minute of 25 Messidor an V in AMAE CP États-Unis 47 or 48, or Nasatir &amp; Monell's calendar (1967). Alternatively, find Létombe's 1797-98 ciphered despatches with the ministry's decipherments (CP États-Unis 48; Turner prints them from the decipherment) to rebuild the code.
+  Check first: Find the clear minute of 25 Messidor an V in AMAE CP États-Unis 47 or 48, or Nasatir &amp; Monell's calendar (1967). Alternatively, find Létombe's 1797-98 ciphered despatches with the ministry's decipherments (CP États-Unis 48; Turner prints them from the decipherment) to rebuild the code. New lead: CADN Nantes, Philadelphia consulate 519PO/1 art. 1 (ministry letters received, March 1793-Feb 1798).
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/delacroix1797/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/jqa/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/delacroix1797/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/jqa/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/delacroix1797/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -131,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/jqa/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/delacroix1797/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+649&amp;target=catalogue+649
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -149,10 +155,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Transcribed in full by Michael Brackx (issue #122, 27 Oct 2026; transcription in the issue). King's No. 53: 'I have no means of decyphering it'; no decipherment on frames 0236-0252. Turner, Correspondence of the French Ministers 1791-1797 (AHA 1903) does not print No. 5, but prints Létombe's reply No. 42 (22 Brumaire an VI, p. 1077, from the ministry's decipherment, CP États-Unis 48 f. 355): he will follow what the 25 Messidor despatch prescribed for keeping his political correspondence, 'dont je dicte moi-même les chiffres'. So part of No. 5 is probably about the keeping and ciphering of his political letters. Statistics: repeats 705 806 711/400 405 ×7, 474 670 1068 ×3; adjacent frequent pairs 972/973 and 81/82 hint at a one-part code, but a one-part word anneal did not converge; flat profile (top ten 14%). Not on DECODE.</p>
-<p><b>Outcome so far.</b> attempted, open Prior-art check: open (27 Oct 2026). Turner 1903 checked by Michael Brackx: No. 5 not printed; reply No. 42 printed p. 1077..</p>
-<p><b>Check first.</b> Find the clear minute of 25 Messidor an V in AMAE CP États-Unis 47 or 48, or Nasatir &amp; Monell's calendar (1967). Alternatively, find Létombe's 1797-98 ciphered despatches with the ministry's decipherments (CP États-Unis 48; Turner prints them from the decipherment) to rebuild the code.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md" rel="noopener">targets/jqa/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa" rel="noopener">the folder</a>)</li></ul>
+<p><b>Status and prior art.</b> Transcribed in full by Michael Brackx (issue #122, 27 Oct 2026; transcription in the issue). King's No. 53: 'I have no means of decyphering it'; no decipherment on frames 0236-0252. Turner, Correspondence of the French Ministers 1791-1797 (AHA 1903) does not print No. 5, but prints Létombe's reply No. 42 (22 Brumaire an VI, p. 1077, from the ministry's decipherment, CP États-Unis 48 f. 355): he will follow what the 25 Messidor despatch prescribed for keeping his political correspondence, 'dont je dicte moi-même les chiffres'. So part of No. 5 is probably about the keeping and ciphering of his political letters. Statistics: repeats 705 806 711/400 405 ×7, 474 670 1068 ×3; adjacent frequent pairs 972/973 and 81/82 hint at a one-part code, but a one-part word anneal did not converge; flat profile (top ten 14%). Not on DECODE. 2 Nov 2026: worked in targets/delacroix1797/, still unread. Near-repeated passages interchange neighbouring numbers (e.g. 417 269/416 268, 123 151/124 152), which suggests homophones in small numeric blocks, and a calibrated one-part test found no alphabetical order (real text overlaps scrambled numbers; the method recovers about half of a synthetic one-part letter). Annealers failed calibration on synthetic letters of the same size; seven French keys in the repo are within chance.</p>
+<p><b>Outcome so far.</b> In progress here, in targets/delacroix1797/ (earlier: attempted, open). Prior-art check: open (27 Oct 2026). Turner 1903 checked by Michael Brackx: No. 5 not printed; reply No. 42 printed p. 1077..</p>
+<p><b>Check first.</b> Find the clear minute of 25 Messidor an V in AMAE CP États-Unis 47 or 48, or Nasatir &amp; Monell's calendar (1967). Alternatively, find Létombe's 1797-98 ciphered despatches with the ministry's decipherments (CP États-Unis 48; Turner prints them from the decipherment) to rebuild the code. New lead: CADN Nantes, Philadelphia consulate 519PO/1 art. 1 (ministry letters received, March 1793-Feb 1798).</p>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/delacroix1797/NOTES.md" rel="noopener">targets/delacroix1797/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/delacroix1797" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/NOTES.md" rel="noopener">targets/jqa/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
