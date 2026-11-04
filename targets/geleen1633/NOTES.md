@@ -1,5 +1,7 @@
 # The Electors of Mainz and Cologne to Gottfried Huyn von Geleen, [Cologne] 22 October 1633 (BSB Clm 10406, no. 206)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part (84.2%, key from ciphertext only), with escalation steps still open. The status below is the contributor's.
+
 Status: read in part (Brice Dudout, 4 Nov 2026; 221 cipher words: 151 certain, 35 probable, 8 restored, 27 unresolved; 84.2% read, below the 95% rule; 19 words lost in the binding cap it at 91.4%).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Lead no. 2183 found by WAINUT
