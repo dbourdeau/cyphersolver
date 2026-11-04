@@ -1,6 +1,6 @@
 # Nicolas Raince, Rome, 1526 and 1529 (BnF fr. 2984, fr. 3040, fr. 3091)
 
-Status: in progress (both residues now read by Brice Dudout at full IIIF resolution: 20 Nov 1526 pp. 105-106 about 98% of words (27 Oct 2026), 13 May 1526 pp. 29-31 1,102 of 1,112 words, 99.1% (28 Oct 2026, PR #166); two word signs absent from the key remain open; class not yet reviewed for reclassification to read)
+Status: read in part (the maintainer decided on 4 Nov 2026 to keep this class; both residues read by Brice Dudout at full IIIF resolution: 20 Nov 1526 pp. 105-106 about 98% of words (27 Oct 2026), 13 May 1526 pp. 29-31 1,102 of 1,112 words, 99.1% (28 Oct 2026, PR #166); two word signs absent from the key remain open, with no key material)
 
 Catalogue item 5 (the "gamble" of the five-item goal list). Two sessions, 17 September 2026.
 Everything below is unvalidated until Daniel reviews it; the evidence for each claim is named.
