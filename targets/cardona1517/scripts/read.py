@@ -4,7 +4,8 @@
   python3 scripts/read.py ctx GROUP ...   every context of the given code groups (5 tokens each side)
 
 Output: sign letters in lower case, code groups in UPPER CASE; a probable or doubtful value carries a trailing '?';
-signs and code groups with no value print as [sign] and {group}. Frame marks (ratio, ¶) are dropped.
+signs and code groups with no value print as [sign] and {group}; a null (value 0) prints nothing. Frame marks
+(ratio, ¶) are dropped.
 """
 import sys, os, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -20,6 +21,7 @@ CODE_LIKE = lambda t: is_code(t) or (len(t) == 2 and t.isalpha() and t.islower()
 
 def show(t):
     v = KEY.get(t)
+    if v == '0': return ' '          # null
     if CODE_LIKE(t):
         if not v: return f' {{{t}}} '
         return f' {v.upper()}{"?" if STATUS.get(t) in ("doubtful", "probable") else ""} '

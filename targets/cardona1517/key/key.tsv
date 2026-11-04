@@ -1,5 +1,5 @@
 # cardona1517 key (4 Nov 2026). kind: sign = letter sign (labels as in transcription/*), group = code group.
-# value: letter(s) for a sign; word for a group. class: firm / probable / doubtful / open (see NOTES.md, Key).
+# value: letter(s) for a sign; word for a group; 0 = null. class: firm / probable / doubtful / open (see NOTES.md, Key).
 # basis: how the value was obtained (runs = annealer runs agreeing; context = read from its occurrences).
 kind	label	value	class	basis	tokens
 sign	m#	a	firm	6/6 words-only runs	86
@@ -33,13 +33,13 @@ sign	q	n	firm	6/6 round 2	11
 sign	&	p	firm	6/6 words-only runs	9
 sign	E	rr	firm	read by context	8
 sign	EO	re	firm	read by context	8
-sign	ll	on	firm	6/6 words-only runs	8
+sign	ll	e	probable	read by context (draft 4): A20 recelo, D02 terra, D17 padre, A15 vieren, A07 pareciera; the runs gave on 6/6, overruled	8
 sign	T	se	firm	6/6 round 3	8
 sign	o	e	firm	6/6 words-only runs	8
 sign	7	i	firm	6/6 words-only runs	7
 sign	p#	m	firm	6/6 words-only runs	7
 sign	#o	m	firm	6/6 round 2	6
-sign	A	si	firm	6/6 words-only runs	6
+sign	A	ll	probable	read by context (draft 4): D14 Ballon (Baglioni), D17 degollado, A01 and A03 preuillegio; the runs gave si 6/6, overruled	6
 sign	D	ta	firm	6/6 round 3	6
 sign	o+	u	firm	read by context	6
 sign	t#	z	firm	6/6 round 2	5
@@ -54,7 +54,7 @@ sign	o#	os	firm	6/6 round 2	2
 sign	t	ad	firm	6/6 round 2	2
 sign	ε	t	firm	read by context	2
 sign	a	as	firm	6/6 round 2	1
-sign	h	di	firm	6/6 words-only runs	1
+sign	h	gi	doubtful	read by context (draft 4): A03 preuillegios; 1 token; the runs gave di	1
 sign	ll-	z	firm	6/6 words-only runs	1
 sign	ll°	ra	firm	6/6 round 2	1
 sign	r	i	firm	6/6 round 2	1
@@ -83,7 +83,7 @@ group	fao	me	firm	6/6 round 2	15
 group	sol	con	firm	6/6 words-only runs	13
 group	fup	mi	firm	6/6 words-only runs	11
 group	tep	e	firm	6/6 round 2	11
-group	zes	e	firm	6/6 round 3	11
+group	zes	0	doubtful	null by context (draft 4): A19 en ningun, A20 no hay persona, C13 en breue; the runs gave e	11
 group	zus	ir	firm	6/6 words-only runs	11
 group	gnc	ni	firm	6/6 words-only runs	10
 group	rio	al	firm	6/6 words-only runs	10
@@ -91,7 +91,7 @@ group	fus	papa	firm	read by context	9
 group	zen	el	firm	read by context	9
 group	mj	pues	firm	read by context	8
 group	mo	por	firm	6/6 words-only runs	8
-group	nag	qu	firm	6/6 round 2	8
+group	nag	que	firm	read by context (draft 4): followed by an e group or ello/la/su in every occurrence (QU E, QU ELLO); the runs gave qu	8
 group	sam	y	firm	6/6 round 2	8
 group	tak	la	firm	6/6 round 3	8
 group	top	a	firm	6/6 words-only runs	8
@@ -127,7 +127,7 @@ group	mog	ma	firm	6+/8 round 4	2
 group	pe	aun	firm	6/6 round 3	2
 group	ref	santidad	firm	6+/8 round 4	2
 group	rop	esta	firm	6/6 round 3	2
-group	sim	e	firm	6/6 round 3	2
+group	sim	0	doubtful	null by context (draft 4): C11 un numero; the runs gave e	2
 group	ten	ellos	firm	6/6 round 3	2
 group	tim	esse	firm	6/6 round 3	2
 group	foy	ano	firm	8/8 round 5	1
@@ -147,11 +147,11 @@ group	tu	son	firm	8/8 round 5	1
 group	tun	estado	firm	6/6 words-only runs	1
 group	zag	luego	firm	6+/8 round 4	1
 group	zog	lugar	firm	8/8 round 5	1
-group	tud	ser	probable	4-5/6 chancery run 1	5
+group	tud	dar	doubtful	read by context (draft 4): C12 que-dar-en (quedaren), B03 sin dar; the runs gave ser 4-5/6	5
 group	gap	po	probable	4-5/6 chancery run 1	3
 group	po	sa	probable	4-5/6 chancery run 1	3
 group	miz	o	probable	4-5/6 chancery run 1	2
-group	tic	he	probable	4-5/6 chancery run 1	2
+group	tic	dezir	firm	read by context (draft 4): D18 he oydo dezir que, C27 que dezir sino remitirme a ellos	2
 group	tuf	des	probable	4-5/6 chancery run 1	2
 group	gaq	ii	probable	4-5/6 chancery run 1	1
 group	noy	ay	probable	4-5/6 chancery run 1	1
@@ -166,21 +166,21 @@ group	faq	do	doubtful	model filler, round 3	2
 group	sif	sentencia	doubtful	context, tentative	2
 group	zue	ca	doubtful	model filler, round 3	2
 group	giz	fauor	doubtful	context, tentative	1
-group	sal	-	open	-	4
+group	sal	cosa	probable	read by context and class rule (s_l = c, like sol con) (draft 4): C03 [dos] cosas la primera, C17, C23	4
 group	gie	-	open	-	3
 group	mod	-	open	-	2
 group	nis	-	open	-	2
 group	rel	-	open	-	2
 group	sot	-	open	-	2
-group	toq	-	open	-	2
+group	toq	da	doubtful	read by context (draft 4): B06 me mande da-r, D11 da-re	2
 group	er	-	open	-	1
 group	feg	-	open	-	1
 group	fek	-	open	-	1
 group	ga	-	open	-	1
 group	gae	-	open	-	1
-group	gec	-	open	-	1
+group	gec	necesario	probable	read by context and class rule (g_c = n, like gnc ni) (draft 4): C10 es necesario reduzirlos	1
 group	gee	-	open	-	1
-group	mel	-	open	-	1
+group	mel	mando	doubtful	read by context (draft 4): D18 que se mando ir	1
 group	mie	-	open	-	1
 group	na	-	open	-	1
 group	nac	-	open	-	1

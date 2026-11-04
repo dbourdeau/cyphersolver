@@ -5,8 +5,9 @@
 - **Code groups.** The frequent code groups are read; about a quarter of the code types (mostly single
   occurrences) are open.
 - **Confirmation.** Two historical names confirm the key: *al magnífico Burgès de Petrucis* (Borghese Petrucci, 1517)
-  and *Ian Paulo Basionio … han degollado* (Giampaolo Baglioni, beheaded in Rome in June 1520).
-- **Reading.** Long passages read, but most sentences still have holes.
+  and *[Io]han Paulo Ballón … han degollado* (Giampaolo Baglioni, beheaded in Rome in June 1520).
+- **Reading.** Long passages read, but many sentences still have holes (about 75% of the plaintext letters read as
+  sense; about half of the sentences without a hole).
 
 Issue #262 (status report, then update).
 
@@ -51,8 +52,8 @@ Aragonese chancery nomenclator, the family of Charles de Lannoy's Naples cipher 
 lenguaje secreto de la diplomacia de Carlos V (1521-1527)*, thesis, Valencia 2017, http://hdl.handle.net/10550/66216,
 pp. 65-89).
 
-- **Letter signs.** Homophonic, about 60 types in use. Several stand for letter pairs (`Lo` *re*, `ll` *on*, `A`
-  *si*, `x#` *qu*, `z#o` *as*). Capital `E` is *rr*, as in Lannoy's table.
+- **Letter signs.** Homophonic, about 60 types in use. Several stand for letter pairs (`Lo` *re*, `A` *ll*, `x#` *qu*,
+  `z#o` *as*). Capital `E` is *rr*, as in Lannoy's table.
 - **Code groups.** Three letters, consonant + vowel + consonant, with initials f g m n p r s t z; a few have two
   letters (`mo` *por*, `mj` *pues*, `fe` *gente*). **They stand for whole words** (*que, de, en, lo, se, el papa, Su
   Santidad, cosa, gente…*). The short ones are now and then also used as syllables (*par-la-me-nto*, *mag-ni-fico*,
@@ -87,6 +88,7 @@ annealer from vich1515 (#94).
 | 6 | wsa5 on Cardona with the option list restricted to **whole words** | **top 6 runs agree on 85-94% of sign tokens**; 35 of 63 sign types 6/6 |
 | 7 | Chancery model (`build_lm_chancery.py`: Celestina, Villa's *Memorias*, vich1511 clear letters; no Quijote) with 34 signs fixed | frequent code groups agree (67-83% of group tokens pairwise) |
 | 8-11 | Rounds 2-5: firm values fixed, the rest re-annealed (16-32 runs each), reading by context between rounds | remaining signs and about 60 more code types settled |
+| 12 | Context pass after the first PR version: the stretches that decoded but did not read, sign by sign and group by group, with the class rule; a word-segmentation score (`scripts/coverage.py`) as a check | 2 signs and 2 groups overruled against unanimous runs, 4 groups read, 2 groups found to be nulls (below) |
 
 In step 6 the Quijote-built model still filled rare groups with its own names (`zen fus` = *don quijote*); step 7
 removed that.
@@ -102,7 +104,23 @@ removed that.
 
 The runs' value was overruled where the image or every context disagreed:
 - `E` *rr*: the runs gave *st* (they cannot produce *rr*);
-- `o+` *u* (runs: *al*); `fid` *la* (runs: *a*).
+- `o+` *u* (runs: *al*); `fid` *la* (runs: *a*);
+- step 12, against 6/6 runs:
+  - `A` *ll* (runs: *si*): D14 *Ballón* (the Spanish form of Baglioni), D17 *degollado*, A01 and A03 *preuillegio*;
+  - `ll` *e* (runs: *on*): A20 *recelo*, D02 *terra*, D17 *padre han degollado*, A15 *vieren*;
+- step 12, against the runs' *qu*, *he* and *e*:
+  - `nag` *que*: always followed by an *e* group or *ello*/*la*/*su*;
+  - `tic` *dezir*: D18 *he oído dezir que*, C27 *que dezir, sino remitirme a ellos*;
+  - `zes` and `sim` are probably nulls: A19 *en ningún*, A20 *no hay persona*, C11 *un número*, C13 *en breue*.
+
+Step 12 also read, by context and the class rule:
+- `sal` *cosa* (C03 *[dos] cosas: la primera … en segundo*);
+- `gec` *necesario* (C10 *es necesario reduzirlos*);
+- tentatively `mel` *mando*, `toq` *da* and `tud` *dar* (C12 *que-dar-en*).
+
+The word-segmentation score alone did not find these: it proposed `t#` *s*, which context refutes (*dize*, *traço*).
+The solver cannot represent *ll*, *rr* or *gi*, so `A` (*ll*) and `E` (*rr*) could never get their values from it.
+`ll` (*e*) shows that values agreed by all runs can still be wrong where a sign is rare and its neighbours unsettled.
 
 Each change is logged in the key's `basis` column.
 
@@ -112,8 +130,8 @@ Each change is logged in the key's `basis` column.
 
 | | firm | probable | doubtful | open |
 |---|---|---|---|---|
-| signs | 57 | 2 | 0 | 5 |
-| code groups | 79 | 14 | 7 | 26 |
+| signs | 54 | 4 | 1 | 5 |
+| code groups | 78 | 14 | 12 | 22 |
 
 - **firm:** agreed by the runs (6/6, or 6+/8 later) or read by context in every occurrence.
 - **probable:** 4-5/6 in an early run, not re-tested.
@@ -130,22 +148,25 @@ The two confirmations:
 - **1517 (C16-C20):** *…lo que el papa esto le dize … al magnífico Burgès de Petrucis*. Borghese Petrucci, former
   lord of Siena, brother of Cardinal Alfonso Petrucci, executed in the summer of 1517 for the plot against Leo X. The
   passage goes on *su deseo era vivir y morir debazo [de la] protección del papa, y su padre y los suyos…*
-- **1520 (D14, D17):** *Ian Paulo Basionio … han degollado*. Giampaolo Baglioni, lord of Perugia, beheaded in
-  Castel Sant'Angelo on Leo X's order in June 1520. Around it: *se procederá en la [?sentencia]*, *los
+- **1520 (D14, D17):** *de [Io]han Paulo Ballón y [Io]han Ur[…]* and *[Io]han Paulo, que a su padre han
+  degollado*. Giampaolo Baglioni, lord of Perugia, beheaded in Castel Sant'Angelo on Leo X's order in June 1520. The
+  words before the second name are unread; the phrase fits Baglioni's sons, whose father was beheaded. Around it: *se procederá en la [?sentencia]*, *los
   [?cardenales] y Su Santidad de pronunciar…*, *se proceda en ellos*.
 
 Other readings tie the cipher to the clear text around it:
 - *de entretener la dicha gente … pues que no tene con que pagarles* (C05-C06);
 - *es que han quitado la cárcel* (B01);
 - *la imposibilidad* (B04);
-- *el gasto … se ha de despedir los cincuenta [?lanças]* (A21-A22);
+- *el gasto … se ha[n] de despedi[r] los cincuenta [...]* (A21-A22);
 - *a parte de Gaeta, porque fiziera Su Santidad…* (A17);
 - *me ha parecido tener la paga* (D10);
-- *parlamento* (D08, D11).
+- *parlamento* (D08, D11);
+- *los es necesario reduzirlos … a un número que a los pareciere, y que sean tales los que [?quedaren]* (C10-C12);
+- *en este he oído dezir que se [?mandó] ir a los dichos* (D18).
 
 ## Remaining gaps
 
-- 26 code types without a value and 7 doubtful, most once or twice (the commonest open ones: `sal` 4 tokens, `gie` 3; doubtful `gnd` *mes* reads in neither place, *la causa del* `gnd` *de Abruço*) - blocker: no-key-material; BRAH 9/15 ff. 1-6 (DECODE R9815-R9820) is the candidate key, and its images need DECODE access, not available here
+- 22 code types without a value and 12 doubtful, most once or twice (the commonest open one: `gie` 3 tokens; probably names: *las cosas de* `nac` *y* `feg`; doubtful `gnd` *mes* reads in neither place, *la causa del* `gnd` *de Abruço*) - blocker: no-key-material; BRAH 9/15 ff. 1-6 (DECODE R9815-R9820) is the candidate key, and its images need DECODE access, not available here
 - rare signs `=`, `c#`, `7+`, `S`, `^L#` (1-7 tokens each); `o+` may be two shapes (B09 prefers *al*) - blocker: needs-physical-access; at 1,070 px several small signs are hard to separate, and no larger image is published
 - garbled runs A09 *pedrona … rroarribare*, C18 *nuuosacredo*, D07 *ato…rondacreracho*, and `fax` (5 tokens, *esto* in C16 but *cardenales* in D03 and A11, perhaps two groups confused) - blocker: needs-physical-access; probably a misread or an open sign; the published scan was checked and is the largest available, so a recheck needs a better image from the BNE
 
@@ -156,7 +177,7 @@ Other readings tie the cipher to the clear text around it:
 - [x] known-keys: the vich1511 and vich1515 keys and Lannoy's Naples key (Kolosova 2017) compared sign by sign and group by group; same family, different values; the candidate key BRAH 9/15 ff. 1-6 needs DECODE access
 - [x] print: the BNE record cites no edition, and web searches found none of these letters; Kolosova 2017 (Lannoy's key) and Galende Díaz 1994 (the BRAH 9/15 key book) consulted
 - [x] key-rebuild: sign alphabet recovered ciphertext-only by joint annealing (whole-word code options, Lannoy's class rule, chancery model), then five fixing rounds
-- [x] retry: rounds 2-5 re-annealed every unfixed sign and group with the firm values held; the unread groups were then retried by hand from context; the last pass changed only rare groups
+- [x] retry: rounds 2-5 re-annealed every unfixed sign and group with the firm values held; the unread groups were then retried by hand from context, and a last context pass (step 12) re-read every stretch that did not make words
 
 ## Files
 
@@ -167,6 +188,7 @@ Other readings tie the cipher to the clear text around it:
 | `decryption/decode.txt` | line-by-line decryption |
 | `decryption/reading.md` | reading with holes, English, summaries |
 | `scripts/load.py`, `scripts/read.py` | load the transcription; decode (`read.py text`) or show the contexts of a group (`read.py ctx GROUP`) |
+| `scripts/coverage.py` | word-segmentation score of the decode, and of alternative values for signs and groups (step 12) |
 | `scripts/wsa5.c`, `scripts/real5.py` | the annealer with the class rule, and its driver |
 | `scripts/syl.py`, `scripts/drv.py` | task building and run helpers (from vich1515) |
 | `scripts/build_lm_chancery.py` | the chancery model and the whole-word option list |
