@@ -1,0 +1,14 @@
+# Validation of the key: ONE measurement, protocol written and hashed (SHA-256) before it (PROTOCOLE.md c18d088a...).
+# Training: fol. 200 block 1 only (177 numbers = 177 letters of the period marginal gloss, exact 1:1 alignment); key = majority letter
+# per number, frozen (key_B.tsv 764c8d39...) before the held-out block was decrypted.
+# Held out: fol. 200 block 2 (341 numbers), compared with its period marginal gloss, letters only, difflib ratio.
+# Controls: 200 permutations of the key values (seed 1636). Thresholds fixed in advance: >= 0.85 and >= max(controls) + 0.30.
+chars = 0.9072   controls max = 0.229   controls mean = 0.1309   n = 341
+unknown numbers in the held-out block: 17, 21, 50 (no value in training; given h, f, x by the gloss afterwards)
+decision: VALIDATED
+decrypted:  encorequenousuoyonsquelqueperilauostreariueepourauoirestetropdi??eeneaumoinsilnestpaspossibledelamettreplusauloingetuautmieu??asarcerquelauec?osequetoutperdremaisnousesperonsquagissantdebonnesorte?ardimentetcourageusementcommeuousscauresbien?aireetnousac?euantlerestedenose??ortspouruoussecondertoutiraanostregloireetalacon?usiondenosennemis
+gloss:      encequenousvoyonsquelquelegerperilavostrearriveepouravoirestetropdiffereeneantmoinsilnestpaspossibledelamettreplusauloingetvaultmieuxhazarderquelquechosequetoutperdremaisnousesperonsquagissantdebonnesortehardimentetcourageusementcommevousscaurezbienfaireetnousachevanslerestedenoseffortspourvoussecondertoutiraanostregloireetalaconfusiondenosennemys
+
+# After the reading (not pre-registered): letter agreement of the mechanical decryption of the unglossed passages with the clear
+# printed by É. Longin (1912) from Brun's drafts: fols. 191 + 127v 0.967 (584 vs 589 letters); all passages incl. fol. 181 0.963.
+# Second ciphered copy fol. 183 read with the key and compared with the period clear copy fol. 182: identical apart from vous/nous, ou/a.
