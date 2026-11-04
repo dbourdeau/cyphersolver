@@ -1,0 +1,186 @@
+{
+ "schema_version": 1,
+ "target": "geleen1633",
+ "title": "Electors of Mainz and Cologne to Geleen, 22 October 1633: unpublished, read in part (84.2%)",
+ "documents": [
+  {
+   "id": "bsb-clm10406-206",
+   "read": "read in part",
+   "shelfmark": "Munich, BSB, Clm 10406, no. 206 (Collectio Camerariana 56), fols. 184r-185v",
+   "date": "22 October 1633",
+   "year": 1633,
+   "country": "Germany",
+   "route": "Anselm Casimir, Elector of Mainz, and Ferdinand, Elector of Cologne, [Cologne] -> Gottfried Huyn von Geleen, League army",
+   "places": {
+    "from": "Cologne",
+    "to": "Geleen (in the field; his letter came from Rheinberg)"
+   },
+   "language": "German",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment known. Bierther, Briefe und Akten NF II/8 (1982) treats the episode from Munich archives; not online; snippet search did not find this letter.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1187,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "MDZ bsb00116454 views 653-655 (microfilm, Public Domain Mark 1.0)",
+    "image_quality": "fair",
+    "notes": "Microfilm of the bound volume: line ends of view 654 lost in the gutter. Made without key values, frozen before key building."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "simple substitution: each letter is a two-digit number (12 to 36), written run together, without word division, in the middle of the clear text; 22 working values (e = 17, n = 31…), two rare numbers without a sure value (33, 38). Key reconstructed here (table below)",
+  "symbol_kind": "digits",
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "DECODE (no Clm 103xx/104xx); this repository (no folder, origin/main c9e114cb); Cryptiana; Halm 1874 catalogue (listed only); Bierther, Briefe und Akten NF II/8 (1982), not online, Google Books snippet search negative for this letter and for Menselius; Wikipedia/ADB on Geleen.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-04",
+  "last_date": "2026-11-04",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Known keys Camerarius 1621, Rákóczi 1632, Kurz 1638-39 tested by a frozen applicability criterion: none applies.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "manual reconstruction"
+   ],
+   "what": "Key K from the letter minus held-out lines (German 4-gram model, then three corrections from the clear context).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on held-out lines P3.1-P3.5 (186 cipher letters): M5 0.656 vs 200 controls max 0.113; M_lm -2.512 vs max -4.182.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "reading",
+   "what": "Whole letter decoded with K unchanged and read by Daniel's rule: 84.2% (binding losses on fol. 184v).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Simple substitution of two-digit numbers inside German clear text; key by annealing on the letter minus five held-out lines, validated on them.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.842,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (reading.md): 221 cipher words, 151 certain, 35 probable, 8 restored, 27 unresolved; certain + probable = 186/221.",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-04",
+   "verdict": "pass",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): protocol hashed before transcription; key K frozen; one measurement on lines P3.1-P3.5 (186 cipher letters, never used for the key): M5 (share of letters covered by German words >= 5 letters) 0.656 vs 200 shuffled-key controls max 0.113 (median 0.000); M_lm -2.512 vs max -4.182. Threshold fixed in advance: M5 >= 0.60 and above all controls on both measures."
+  },
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, key K recovered and validated on held-out lines; letter read in part (84.2%)",
+    "date": "2026-11-04"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "WAINUT found the lead (no. 2183): this ciphered letter in BSB Clm 10406 (Camerariana 56).",
+    "date": "2026-11-04"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "19 words lost in the binding gutter of fol. 184v (microfilm of the bound volume)",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "values of 33 and 38 (rare)",
+    "blocker": "no-key-material"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "bsb-clm10406-206",
+    "label": "Electors of Mainz and Cologne to Geleen, 22 Oct 1633 (BSB Clm 10406 no. 206)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.842,
+    "summary": "In the autumn of 1633 the Catholic League had almost no army left in the north. Hildesheim was besieged by the troops of Brunswick-Lüneburg, allies of the Swedes; Kniphausen and Melander’s Hessians held the County of Mark. The Archbishop-Elector of Mainz, Anselm Casimir Wambolt von Umstadt, in exile at Cologne, and the Elector of Cologne, Ferdinand of Bavaria, answered Gottfried Huyn von Geleen, the League’s major-general (Generalwachtmeister), on 22 October. The letter, signed in their own hands, is in clear, but everything about troops, money and people is in cipher: about 1,180 two-digit numbers slipped into the sentences. There is no contemporary decipherment on the document. We publish the reading as far as we could take it, gaps included: 84.2% of the cipher words. Most of the rest is lost in the binding of the volume, invisible on the digitised microfilm.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-04",
+     "note": "Read as sentences 4 Nov 2026 (German, read in part): fol. 184r reads throughout (relief of besieged Hildesheim, advice to Bönninghausen, Kniphausen joined with the Hessians, at least a thousand horse for Geleen); fol. 184v loses its line ends in the binding (3,000 reichsthalers by bill of exchange, a larger sum counted to Lerchenfeld, expenses to be repaid); fol. 185r reads throughout (reward promised by 'den sambtlichen unirten catholischen bundsstanden'; the Hamburg correspondent Menselius and a Jew held by Geleen). 221 words, 151 certain, 35 probable, 8 restored, 27 unresolved = 84.2%, so grade B and read in part. Key validated by one measurement on held-out lines (M5 0.656 vs controls max 0.113)."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
