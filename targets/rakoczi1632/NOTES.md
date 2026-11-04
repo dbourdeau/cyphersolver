@@ -1,5 +1,7 @@
 # rakoczi1632: George I Rákóczi's instructions for Germany, 1632 (BSB Clm 10401 n.139)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Not in the catalogue. Found in WAINUT's sweep for cipher documents with a contemporary decipherment; Halm's
 manuscript catalogue (1874) names the cipher and Camerarius's solution. Contributed by WAINUT, 3 Nov 2026.
 

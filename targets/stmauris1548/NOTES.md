@@ -1,5 +1,7 @@
 # Jean de Saint-Mauris to Ferrante Gonzaga, 1547-1548: cipher letters (Biblioteca Estense, Autografoteca Campori)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Status, 3 Nov 2026: **read in part.** The table is a homophonic substitution: one sign for one letter, and a few signs
 for a doubled letter. Two letters are read in part; two are not transcribed. No contemporary decipherment of these
 letters was found, apart from a reader's gloss over about six rows of c. 3r, so the reading is a break.

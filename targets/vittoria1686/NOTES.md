@@ -1,5 +1,7 @@
 # vittoria1686: Vittoria Gonzaga to her brother, catalogue 1570
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Worked 3 Nov 2026 by WAINUT with AI language-model agents viewing the images. No human palaeographer has checked it.
 
 Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 3-4, 11-12, 20-21, 22-23. Letters of a nun at Santa Chiara, Naples, 1686-91.

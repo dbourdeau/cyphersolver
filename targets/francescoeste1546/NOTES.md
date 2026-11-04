@@ -1,5 +1,7 @@
 # Francesco d'Este to Ferrante Gonzaga, 13 Apr 1546 (new find, Biblioteca Estense; not in the catalogue)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Status, 3 Nov 2026: **read in part. c. 42r is read through the contemporary interlinear decipherment; cc. 42v-43r (40
 cipher lines) are not transcribed, only a key test was run on them.** This is a transcription job, not a break: a
 contemporary decipherment is written above every cipher line.

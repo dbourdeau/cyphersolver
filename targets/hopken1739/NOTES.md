@@ -1,5 +1,7 @@
 # Catalogue 1771: Höpken and Carlson, Constantinople, to the King of Sweden, 1739-41
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/21 (R0003582, 568 images). Work of 3 Nov 2026, contributed by
 WAINUT. Scope was deliberately narrow: four images with interlinear French (255, 256, 257, 260) and one bare cipher
 postscript (263), out of a volume with well over a hundred pages of numbers.

@@ -1,5 +1,7 @@
 # Rinaldo d'Este, duke of Modena, to "Marchese Taddeo", 6 Jun 1697, cc. 73r-73v (Biblioteca Estense)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Not in the catalogue; found in a sweep of the Estense digital collections for letters with cipher. No catalogue number.
 
 Status, 3 Nov 2026: **read in part**. Every letter group is read with a key recovered from the interlinear decipherment.

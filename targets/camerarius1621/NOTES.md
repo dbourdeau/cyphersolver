@@ -1,5 +1,7 @@
 # camerarius1621: Ludwig Camerarius's code of 1621-22 (letters to Count Johann Albrecht of Solms, BSB Clm 10397)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Status, 3 Nov 2026: **read in part** (borderline). One letter (n.194) transcribed and decoded; 796 of 844 tokens read
 (94.3%), below the 95% bar after the independent check's fixes (the first count, 95.3%, did not survive it). Outcome
 method "read from existing decipherment": the Solms letters carry interlinear decipherments in a second hand, so this

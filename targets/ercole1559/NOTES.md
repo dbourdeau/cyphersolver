@@ -1,5 +1,7 @@
 # ercole1559: Ercole II d'Este to Cornelio Bentivoglio, 28 May 1559 (catalogue 1566)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
+
 Status: read in part (3 Nov 2026), as a transcription job. Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Ercole II d'Este, duca di Ferrara, cc. 50-51.
 
 Catalogue 1566 holds three letters in three systems. One key, one entry: this folder has the 1559 letter to Bentivoglio and a note on Ariosto's c. 1, which is not solved, and `targets/alfonso1576` has the 1576 letter.

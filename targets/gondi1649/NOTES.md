@@ -1,5 +1,7 @@
 # Giovanni Battista Gondi to Commendator Galilei, 11 May 1649 (new find, Biblioteca Estense)
 
+Status: in progress. Not yet written up: no site page or README row. Classed read, so it is ready for the /writeup skill. The status below is the contributor's.
+
 Not in the catalogue and not on DECODE: found in a sweep of the Estense Autografoteca Campori for letters marked as
 ciphered. No catalogue number.
 
