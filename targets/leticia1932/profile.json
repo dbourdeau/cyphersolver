@@ -1,0 +1,183 @@
+{
+ "schema_version": 1,
+ "target": "leticia1932",
+ "title": "Leticia crisis cipher telegrams, Amazonas 1932 (catalogue 1526): alphabetic telegrams read, numeric No. 143 open",
+ "documents": [
+  {
+   "id": "garv224",
+   "read": "read in part",
+   "shelfmark": "AGN Colombia, CO.AGN.AP.GARV..2.2.4, ff. 103-170 (cipher telegrams)",
+   "date": "9-27 September 1932",
+   "year": 1932,
+   "country": "Colombia",
+   "route": "Ministerio de Guerra, Bogotá <-> Gen. Amadeo Rodríguez Vergara, Puerto Asís",
+   "places": {
+    "from": "Bogotá",
+    "to": "Puerto Asís"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary clear texts for five telegrams (ff. 117, 127, 137, 139, 157) and a pencil gloss on f. 141; none for the other eleven.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 787,
+    "unit": "mixed",
+    "measured": true,
+    "file": "reading.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGN Colombia DataViva images (not reproduced)",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "polyalphabetic"
+  ],
+  "summary": "Seven day-of-week simple-substitution alphabets (Sección I key, 31 Jan 1931), vowels to vowels; day and D/R in clear at the head.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 27,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Key in the same fonds (GARV..1.1.4); contemporary clear texts of five telegrams in the file; Daniel Bourdeau's sample reading of ff. 149 and 153 (research/latam_vetting, 28 Oct 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "first_date": "2026-11-04",
+  "last_date": "2026-11-04",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "sibling key",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Daniel Bourdeau transcribes the key GARV..1.1.4 f. 44r and reads ff. 149 and 153 (research/latam_vetting).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Key re-transcribed (identical) and frozen; one held-out measurement on No. 82: 0.977 characters vs best of 200 permuted keys 0.381.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-04",
+   "kind": "reading",
+   "what": "All alphabetic cipher telegrams of GARV..2.2.4 read: 787 words, 99.5%; f. 151 (numeric) not attempted.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "Contemporary day-of-week key in the same fonds (GARV..1.1.4 f. 44r), transcribed by Daniel Bourdeau, confirmed and validated on a held-out telegram.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.995,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule (reading.md): 787 cipher words of the alphabetic system, 759 certain, 24 probable, 4 unresolved; f. 151 (numeric, about 160 numbers) unread and not in the count.",
+  "verification": [
+   "matched control",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-04",
+   "verdict": "pass",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): key frozen, one measurement on telegram No. 82 (661 letters): characters 0.977, words 0.854, vs best of 200 permuted keys 0.381 / 0.039. Criterion fixed in advance: >= 0.85 and >= best control + 0.30."
+  },
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Sección I key of 31 Jan 1931 (GARV..1.1.4 f. 44r) and the contemporary clear texts of five telegrams in the file",
+    "date": "1931",
+    "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "all the alphabetic cipher telegrams of GARV..2.2.4 transcribed and read (787 words, 99.5%), key validated on a held-out telegram; builds on Daniel Bourdeau's key transcription and sample reading of ff. 149 and 153",
+    "date": "2026-11-04"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "five telegrams checked against their contemporary clear texts in the file (ff. 117, 127, 137, 139, 157) and the f. 141 gloss",
+    "date": "2026-11-04"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "f. 151, telegram No. 143 (about 160 numbers, numeric system)",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "four unresolved words (ff. 107, 153, 159, 170)",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "garv224",
+    "label": "Cipher telegrams Bogotá <-> Puerto Asís, 9-27 Sept 1932 (GARV..2.2.4, alphabetic system)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.995,
+    "summary": "Cipher telegrams between the Ministry of War in Bogotá and Gen. Amadeo Rodríguez Vergara, civil and military chief of the Amazonas, at Puerto Asís, 9-27 September 1932, the first weeks after the Peruvian seizure of Leticia (1 Sept 1932): ammunition from Bofors, the gunboats Cartagena, Santa Marta and Barranquilla, the state of the troops (499 men, corrected to 599), the move to Caucayá, the passage of Güepí, the Napo and the risk of a conflict with Ecuador, Peruvian reinforcements to Loreto, censorship of soldiers' letters.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-04",
+     "note": "Read as sentences 4 Nov 2026 against translation.md: coherent military Spanish throughout in telegraphic style (troop states, gunboats, Bofors ammunition, the Manaos report on the steamer Nariño, Güepí, the Ecuador/Napo question); keying slips normalised in the reading. Unresolved: zeffe (f. 107), pascama (f. 153), hsla (f. 159), gixhtlo (f. 170); f. 153 does not fully construe around relator/yo. Grade B because the clear words of most telegrams were not transcribed, so the sentences are the cipher parts only."
+    }
+   }
+  ],
+  "key_file": "key_garv114_f44.tsv",
+  "provenance": "contributed"
+ }
+}
