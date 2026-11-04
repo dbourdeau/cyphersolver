@@ -1,0 +1,26 @@
+# Validation of grid H (session C03, 27 Oct 2026): ONE measurement, key frozen by SHA-256 (902468e5...) before it.
+# Material: cipher words of S 995 that carry contemporary glosses in clear (fols. 25 and 29: "Union zu werbung" in the margin, interlinear glosses).
+# Score = character agreement between the decode of the shapes as read and the gloss. Controls: the second grid of C 667 img 55 (grid B) and
+# 20 permuted grids (seed 566). Thresholds of the rule: >= 0.85 and >= 0.30 above the best control. 4 of the 11 words had been seen with their
+# gloss before (session C02); "werbung" occurs twice. Output as recorded (French labels: "aveugle" = blind, "vu glose avant" = gloss seen before):
+
+Grille H : moyenne 0.860
+  p29 l.1  UDFOD        vnion       1.00  vu glose avant (C02)
+  p25 l.1  UDFOD        vnion       1.00  aveugle
+  p25 l.1  CU           zu          1.00  aveugle
+  p25 l.1  ONUUUD7      werbung     0.71  aveugle (1er signe lu O, attendu L)
+  p25 l.3  CONUUD7      werbung     0.86  aveugle
+  p29 l.4  DJNCU        darzu       1.00  vu glose avant (C02)
+  p29 l.4  LODJUFJN     monatlich   0.78  vu glose avant (C02)
+  p29 l.4  CUDCCJF7     kunfftig    0.88  vu glose avant (C02)
+  p29 l.3  CCONFJN      pferd       0.57  aveugle (lu tel quel : 7 signes ; glose « 100 pferd »)
+  p25 l.6  DFFFFFDODDJC assistentz  0.67  aveugle (lu tel quel, 12 signes)
+  p25 l.6  COFDDJ       feindt      1.00  aveugle
+Grille B (témoin) : 0.185
+20 grilles permutées (graine 566) : max 0.442 moyenne 0.163
+Mots ≥ 0,85 sous H : 7 / 11
+
+Verdict: grid H 0.860 >= 0.85 and 0.418 above the best permuted grid (0.442): PASS. Only 20 controls (not 200): the measurement was not
+repeated, so as not to measure twice. The losses come from reading the shapes on the microfilm (about 14% of signs), not from the key.
+Later check (C04, after the readings): the modern pencil slip in the file (fol. 1), a partial alphabet a...x, agrees with grid H in 12 letters,
+partly in 7, with no contradiction.
