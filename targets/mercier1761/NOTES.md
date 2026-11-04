@@ -132,3 +132,13 @@ decipherment. Not on DECODE. Not on cryptiana.
 - [x] print: web search on shelfmark, correspondents, date and "chiffre" + Martinique 1761; FranceArchives; nothing printed.
 - [x] key-rebuild: key rebuilt from the sibling's interlinear decipherment (~110 values) and extended from context in three rounds with kwic.py (89.1% valued, 81.5% sense measured); ciphertext-only annealing tried first and failed its control.
 - [x] retry: the three odd spots re-checked on the images (two encipherer slips, one confirmed); every open group dumped with kwic.py and retried in context; 22 values added; re-measured 93.0% valued, 86.7% sense; a final pass added attaqué/mille/voi and C-grade values: 94.3% valued, 92.2% sense. Single-occurrence word codes remain, not filled to avoid guesses.
+
+## Brice Dudout: d'Ennery 1765 key corrected (credit added 4 Nov 2026)
+
+Brice Dudout transcribed the d'Ennery key (`key1765_ennery.tsv`) independently from both ANOM C8 A 67 f. 178 tables
+(enciphering table 0280, deciphering table 0282) on 29 Oct 2026. 770 of 800 values agree; 7 values were corrected and
+confirmed on the enciphering table (413 leur, 535 ba, 89 xu, 235 ol, 349 i, 679 e, 652 préten), with the place name
+786 Larcher. The corrections were applied to the TSV here on 29 Oct (see the solution log). He also validated the same
+table on d'Ennery's glossed letter of 16 Nov 1770 (C8 A 69 f. 354): 0.924 characters and 0.823 words, against 200
+shuffled keys at most 0.322 and 0.210. Note: `research/dudout_2026-10-29/martinique1765-note.txt`. Credited `dudout`,
+role "key corrected". The ANOM images were used for study only and are not copied here.
