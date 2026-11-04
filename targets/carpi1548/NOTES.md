@@ -1,5 +1,7 @@
 # carpi1548: Cardinal Rodolfo Pio di Carpi (Rome) to Antoine Perrenot de Granvelle, Aug–Dec 1548 (catalogue 1265)
 
+Status: in progress. Data only: no profile.json, no reading, no site page yet, and catalogue row 1265 is not yet updated (read at the time and in print, key published in Bertomeu Masia 2009, p. 162). The transcription was not compared with the BNE scans by the maintainer.
+
 Data for issue #228: the digit transcription of the letter of 6 Aug 1548 and of the last cipher block of the
 September letter, the contemporary decipherment of the August letter, a key rebuilt from that letter alone, and the
 scripts that align and decode. There is no `profile.json` or reading here; the target page and the catalogue
