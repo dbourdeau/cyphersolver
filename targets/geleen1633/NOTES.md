@@ -51,7 +51,7 @@ Method: (1) protocol written and hashed (SHA-256) before transcription, with fiv
 - 19 words cut or lost where the line ends of fol. 184v vanish into the gutter - blocker: needs-physical-access; the volume was microfilmed bound, only the original or a new photograph shows them (caps the reading at 91.4%)
 - 2 word ends at the cut (le, non) - blocker: needs-physical-access; same gutter
 - 4 words whose written numbers contradict the expected word (Statt, Weg, Wachtmeister, richten) - blocker: illegible; blind re-reading 4 Nov 2026 confirmed the numbers as transcribed, the enlarged microfilm gives no other reading
-- 2 runs without a recognisable word (derdselfemlh, anewerder) - blocker: open-codes; no value change in the key explains them
+- 2 runs without a recognisable word (derdselfemlh, anewerder) - blocker: illegible; re-inspected on the MDZ images (views 653, 654) 4 Nov 2026: in derdselfemlh the film shows 17 22 13 17 18 3?/2? 17 23 18 25 with no clear second 21 and 2/3/5 and 7/8 not separable, so derselbe mehr is possible but not verifiable; in anewerder the film shows 30 ?1 17 19 17 22 (17|21 17) 22 where one pair reads as 11, not a number of the key. The microfilm does not settle either; the transcription is left as written
 - values of 33 and 38 - blocker: no-key-material; rare, no clear context
 
 ## Escalation
