@@ -459,6 +459,11 @@ PAGES = [
          blurb='Four Swedish letters to Axel Oxenstierna of June 1633 (Riksarkivet, Oxenstierna collection E 708, DECODE R4338&ndash;R4341, dated 1646 there), mostly clear with two- and four-digit code numbers, some glossed between the lines at the time. Opened and dated, not yet transcribed; the writer is unidentified.',
          quote='1328 &middot; 3192 &middot; 3105 &middot; 1564 &middot; undeciphered',
          rights='Manuscript rights: Riksarkivet, Stockholm, via DECODE'),
+    dict(slug='geleen1633', label='Electors to Geleen 1633', year='1633', y=1633.8, place='Cologne &rarr; Geleen&rsquo;s army', st='partial', stt='key from ciphertext only &middot; partial',
+         title='The Electors of Mainz and Cologne to Geleen, 22 October 1633',
+         blurb='A letter to the League general Gottfried Huyn von Geleen on the relief of Hildesheim and the army&rsquo;s pay, with the sensitive words in two-digit numbers. Brice Dudout recovered the key from the numbers alone, tested it on five held-out lines (0.656 of letters in German words against at most 0.113 for shuffled keys) and read 186 of 221 cipher words. Nineteen words are lost in the binding of the microfilm, which caps the reading at 91.4%.',
+         quote='&ldquo;Kniphausen mit Hessen sich coniungirt starck impegnirt&rdquo;',
+         rights='Bayerische Staatsbibliothek, Munich (Public Domain Mark 1.0, via MDZ)'),
     dict(slug='ceva1632', label='Barberini to Ceva 1632', year='1632', y=1632, place='Rome &rarr; Paris', st='solved', stt='read',
          title='Francesco Barberini to Nuncio Ceva, 1632',
          blurb='Two ciphered despatches of 1632 from the Francia 346 dossier (DECODE R75, R84) that George Lasry, who reconstructed the dossier&rsquo;s key in 2020, had not deciphered. His variable-length key was applied, with a language model choosing among divisions of the unseparated digit stream; the result agrees with R75&rsquo;s partial 1632 interlinear decipherment on 77.5% of letters. Six nomenclator values were added; 117 elements stay open.',
@@ -2909,6 +2914,7 @@ IMAGES['clair460bar'] = None
 IMAGES['clair460num'] = None
 IMAGES['dampierre1589'] = None
 IMAGES['dole1636'] = None
+IMAGES['geleen1633'] = ('geleen1633_lead.jpg', 'Fol. 184r: two-digit cipher numbers run together between clear German words', 'Bayerische Staatsbibliothek, Clm 10406 no. 206, fol. 184r (view 653), via MDZ, Public Domain Mark 1.0')
 IMAGES['dubellay1555'] = None
 IMAGES['dubellay65'] = None
 IMAGES['dupuy155'] = None
