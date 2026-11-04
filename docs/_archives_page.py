@@ -87,7 +87,8 @@ def row(r, bypage):
     flag = '<span class="gapflag" title="A reading is already under way; this gap is what stops it">reading stalled here</span>' if src == 'gap' else ''
     text = ' '.join(x for x in (r['id'], r.get('target') or '', str(r.get('catalogue') or ''), r['archive'], r.get('city', ''),
                                 r.get('shelfmark', ''), r['need'], r.get('why', ''), r.get('region') or '', KIND[k][0])).lower()
-    return (f'<li class="rq" data-kind="{k}" data-src="{src}" data-status="{r["status"]}" data-q="{attr(text)}">'
+    cid = f' id="c{r["catalogue"]}"' if is_cat(r) else ''
+    return (f'<li class="rq"{cid} data-kind="{k}" data-src="{src}" data-status="{r["status"]}" data-q="{attr(text)}">'
             f'<div class="hd"><span class="id">{r["id"]}</span><span class="kd kd-{k}">{KIND[k][0]}</span>{target_link(r, bypage)}{flag}</div>'
             f'<p class="nd">{esc(r["need"])}</p>{shelf}{why}'
             f'<div class="ft">{act}{who(r)}{issue}</div></li>')
@@ -195,6 +196,8 @@ document.getElementById('openall').addEventListener('click',function(){{secs.for
 document.getElementById('closeall').addEventListener('click',function(){{secs.forEach(function(x){{x.open=false;}});}});
 [].forEach.call(document.querySelectorAll('details.toc a'),function(a){{a.addEventListener('click',function(){{var d=document.querySelector(a.getAttribute('href'));if(d){{d.hidden=false;d.open=true;}}}});}});
 render();
+var hm=/^#(c\d+)$/.exec(location.hash),he=hm&&document.getElementById(hm[1]);
+if(he){{var hd=he.closest('details.arch');if(hd){{hd.hidden=false;hd.open=true;}}he.classList.add('hit');he.scrollIntoView();}}
 }})();
 </script>
 </body>

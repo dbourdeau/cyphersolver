@@ -245,6 +245,21 @@ def solve_href(e):
     return f'solve/{e["id"]}.html'
 
 
+_ARCH = None
+
+
+def entry_href(e):
+    """Where a catalogue row leads: a 'Help obtain' entry needs an archive, not an agent prompt, so it goes to its
+    request on the To the Archive page (archives.html#c<id>) when the ledger has one; every other entry to its own page."""
+    global _ARCH
+    if _ARCH is None:
+        f = pathlib.Path(__file__).resolve().parent.parent / 'archive_requests.json'
+        rq = json.loads(f.read_text(encoding='utf-8')).get('requests', []) if f.is_file() else []
+        _ARCH = {str(r['catalogue']) for r in rq if r.get('catalogue') and not r.get('target') and r.get('status') in ('open', 'claimed', 'requested')}
+    if help_kind(e) == 'obtain' and str(e['id']) in _ARCH: return f'archives.html#c{e["id"]}'
+    return solve_href(e)
+
+
 HELP = {'obtain': ('Help obtain', 'the document is not online: the first step is a copy, from the archive or a reading-room photograph'),
         'read': ('Help read', 'the key material exists; what is left is the reading'),
         'solve': ('Help solve', 'the ciphertext is online and no key is known')}
@@ -276,7 +291,7 @@ def frame_info(e):
 
 
 def row(e):
-    href = solve_href(e)
+    href = entry_href(e)
     seen = '<span class="seen img" title="viewed on the image">●</span>' if seen_image(e) else '<span class="seen cat" title="catalogue description only">◇</span>'
     tip = f' title="being worked in targets/{", targets/".join(f for f, _, _ in progress(e))}/"' if progress(e) else ''
     pill = f'<span class="pill{" att" if e.get("outcome") or tip else ""}"{tip}>{esc(short_outcome(e))}</span>'
@@ -397,7 +412,7 @@ def status_html(E):
 
     def one(e, field):
         t = e.get(field) or e['status']
-        return f'<li><a href="{solve_href(e)}">no. {e["id"]}</a> <b>{esc(e["title"])}</b> <span class="d">{esc(e["date"])}</span> &mdash; {esc(t)}</li>'
+        return f'<li><a href="{entry_href(e)}">no. {e["id"]}</a> <b>{esc(e["title"])}</b> <span class="d">{esc(e["date"])}</span> &mdash; {esc(t)}</li>'
 
     gone_rows = ''.join(
         f'<tr id="e{i}g"><td>{i}</td><td>' + '<br>'.join(
