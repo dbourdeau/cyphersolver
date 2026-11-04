@@ -1,0 +1,20 @@
+# Validation of key K: ONE measurement, protocol hashed before transcription (PROTOCOLE SHA-256 73a1dc23...).
+# Held out: all cipher tokens of view 655 (fol. 185r) from the top to the clear word "Bedanken" (lines P3.1-P3.5, 186 cipher letters),
+# excluded by code from key building. No contemporary decipherment exists, so the test is a language test:
+# M5 = share of cipher-derived letters covered by German words of >= 5 letters (frozen lexicon: repo lang/de + Merian corpus + names);
+# M_lm = mean log-probability per cipher letter, 4-gram character model trained on Merian (17th-century German).
+# Controls: 200 keys obtained by shuffling the values of K among its numbers (seed 1633).
+# Thresholds fixed in advance: VALIDATED if M5 >= 0.60 and M5 > max(controls) and M_lm > max(controls).
+# Output as recorded (French labels: "témoins" = controls, "DÉCISION : VALIDÉE" = validated):
+
+H = ['P3.1', 'P3.2', 'P3.3', 'P3.4', 'P3.5']
+P3.1 ZUMBESTENNICHTSERWINDENLASNENUNDEUCHDINGEGEN
+P3.2 UORGEWISUERSICHERNDASUOLCHEEWEREMERITAUND
+P3.3 GETREWEDINSTENUONUNSUNDDENSAMBTLICHEN
+P3.4 UNIRTENCATHOLBUNDSSTANDENSITWURCKLICH[am]
+P3.5 DANCKREMUNERIRTWERDENSOULEN[Bedanken uns im]
+K : M5=0.656  M_lm=-2.512  (lettres chiffrées 186, lettres LM 186)
+témoins M5 : max=0.113 médiane=0.000 ; M_lm : max=-4.182 médiane=-4.786
+rang K : M5 > 200/200 ; M_lm > 200/200
+DÉCISION : VALIDÉE
+info M5 la = 0.167
