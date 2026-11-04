@@ -1,5 +1,5 @@
 # Deboli → Stanisław August, St Petersburg cipher despatches, 1788 (Unsolved Catalogue 417)
-Status: no write-up. Read in part, and deliberately not written up by the maintainer's decision of 4 Nov 2026: the escalation steps are not done and the read share is about 0.86, under the 95% bar. Contributor's status: read in part (Brice Dudout, 28 Oct 2026; no. 038 of 13 May 1788, 911 of 943 groups with a key value, about 0.86 read as sense on a held-out pair).
+Status: read in part, written up (4 Nov 2026). Contributor's status: read in part (Brice Dudout, 28 Oct 2026; no. 038 of 13 May 1788, 911 of 943 groups with a key value, about 0.86 read as sense on a held-out pair).
 
 Contributed by Brice Dudout (Europe chiffrée, https://bdudout.github.io/europe-chiffree/), with Claude Opus 5.5 agents.
 The key is Daniel Bourdeau's 1789 key (`targets/deboli1789/key_pass.tsv`), completed on 1788 pairs.
@@ -78,3 +78,23 @@ with a key value** that `read.py` counts (911 of 943). Hence "read in part".
 
 Next step: a group-by-group human review of 038 (and of the held-out pair) to settle the alternatives and holes; the
 French table of 039 from the 9 May 1788 pair.
+
+## Scope: despatch 039 is not part of this entry
+
+No. 039 (13 May 1788, k. 76-77v) opens in a different table (groups 2300-3409, framed by 9933, the French table also seen in
+December 1789), so under the one-key-one-entry rule it belongs in its own entry, not here. The 9 May 1788 despatch
+(428 k. 71-73) uses the same 9933 table and has its French clear text (417 k. 113-114): a pair to start that table.
+
+## Remaining gaps
+
+- 13 May 1788 no. 038: 32 groups without a value in K4, and 11 groups with unsettled alternatives (e.g. 637 list|ła, 360 ie|nie) - blocker: open-codes; each occurs too few times in the learning pairs and no context narrows them.
+
+## Escalation
+
+- [x] siblings: every despatch of ZbPop 428 except nos. 038 and 039 has a same-date decipherment in ZbPop 417; five of them (20 May, 30 May, 3 June, 29 Aug, 4 Nov 1788) were used as learning pairs and 8 Aug and 11 Nov as held-out pairs
+- [x] clear-pages: the cabinet's Polish decipherments in ZbPop 417 are the clear texts and were aligned for each pair; none exists for no. 038
+- [x] known-keys: Bourdeau's 1789 key (`deboli1789/key_pass.tsv`, K3) was the starting point, and K4 beats it by a small margin (0.862 against 0.859 on 11 Nov 1788)
+- [x] print: a web search on 4 Nov 2026 found no printed edition of the 1788 despatches; the Institute of History's *Korespondencja polityczna Stanisława Augusta* has Deboli volumes for 1781, 1782 and a 2015 volume of the king's correspondence with Deboli and Cieciszowski, none for 1788
+- [x] key-rebuild: K4 = the 1789 key plus three frozen extension stages learned only on 1788 pairs (12 values and 3 nulls, 6 values attested at least twice, 11 automatic alternatives)
+- [x] retry: no. 038 was decoded with the final K4 after the third stage; the 32 groups without a value stay open
+
