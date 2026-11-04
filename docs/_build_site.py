@@ -508,6 +508,11 @@ PAGES = [
          blurb='Two cipher letters of 27 May 1636 from Victor Amadeus I of Savoy and from Canisy to Henri de Rohan (BnF fr. 5190 nos. 214&ndash;215). Their plaintext is printed in Rohan&rsquo;s M&eacute;moires et lettres (1758), but the Gallica reproduction of the volume ends before them, so the print could not be paired with the cipher. The 1635 letters once filed here are George Lasry&rsquo;s louis1635 and chatillon1635.',
          quote='&ldquo;il sera n&eacute;cessaire que vous logiez 2000 hommes et 200 chevaux en la Vall&eacute;e de Mazoc&rdquo; (the 1758 print)',
          rights='Biblioth&egrave;que nationale de France (catalogue; no image)'),
+    dict(slug='dole1636', label='Siege of Dole 1636', year='1636', y=1636.5, place='Dole &rarr; the relief army', st='solved', stt='key from adjacent plaintext',
+         title='The siege of Dole, 1636: the &ldquo;points&rdquo; cipher',
+         blurb='Letters from Dole, besieged by Cond&eacute;, to the relief army of the Marquis of Conflans, June&ndash;July 1636, with one number per letter set between clear words. Brice Dudout learnt the key from the period gloss in the margin of one folio, tested it on a held-out block (0.907 of letters against at most 0.229 for shuffled keys) and read the unglossed letters: 124 of 128 words. The clear text was already printed by Longin in 1912.',
+         quote='&ldquo;le plus tost que vous pourez venir sera le meilleur&rdquo;',
+         rights='Biblioth&egrave;que municipale de Besan&ccedil;on (images not reproduced)'),
     dict(slug='harley286', label='D&rsquo;Ewes&rsquo;s cipher log 1635', year='1635&ndash;36', y=1635.3, place='Suffolk (private record)', st='partial', stt='read in part',
          title='Sir Simonds D&rsquo;Ewes, cipher log of his son&rsquo;s fits, 1635&ndash;36',
          blurb='BL Harley MS 286 f. 61, catalogued on DECODE as a letter of an unknown sender, is D&rsquo;Ewes&rsquo;s private Latin log of his infant son&rsquo;s convulsion fits, in the alphabet he invented at school. The key of this simple substitution was recovered from the slip alone, from probable words, and checked against weekdays, moon phases and his Autobiography. 96.5% of the words are deciphered.',
@@ -2903,6 +2908,7 @@ IMAGES['clair460alpha'] = None
 IMAGES['clair460bar'] = None
 IMAGES['clair460num'] = None
 IMAGES['dampierre1589'] = None
+IMAGES['dole1636'] = None
 IMAGES['dubellay1555'] = None
 IMAGES['dubellay65'] = None
 IMAGES['dupuy155'] = None
