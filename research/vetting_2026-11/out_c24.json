@@ -1,0 +1,95 @@
+{
+ "1945": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c24",
+  "seen": {
+   "kind": "scan",
+   "where": "Gelders Archief, 0439 Huizen Waardenburg en Neerijnen, inv. 124, https://permalink.geldersarchief.nl/CA57BD7A9396402C8AFC64E42D37AC0E (viewer read in Chrome); APE record 0439-124 confirms the title.",
+   "extent": "All 64 scans of the folder viewed in this pass (scans 1-13, 16, 26 at full viewer width, the rest at 0.75 of it; scan 8 also zoomed in the viewer). Duncan's letters in French, docketed 1730 Jan 28 to 1731. Blank or nearly blank versos: 24, 28, 32, 39, 40, 52, 56, 60. Ciphertext on 4 scans, belonging to two letters: scans 1-4 (signed 'L... 20 Janvier 1730', Q: N:) and scans 5-8 (docket '1730 ... 30'). About 17 lines of cipher by eye, not measured: scan 2 two lines, scan 6 about seven, scan 7 about six, scan 8 two. The other 60 scans have no cipher strings, including all the 'Pour vous seul' letters (scans 9, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61).",
+   "cipher": "Actual ciphertext: unbroken runs of digits mixed with a few letter forms, set inside clear French, with cover names in clear beside them (E: E:, F: F:, A, C, D, L). Samples read at viewer zoom, single glyphs uncertain. Scan 2, last lines: 'provisionnellement 76a5ug0 463h56a2 874ed5aq u7 g0deges 24M5u56a2 4e25e05n7. Il s'y rendra'. Scan 6, lines 1-2: 'Si C n'a pas communiqué jusqu'ici a F: F: 703u567n3672 4609m2570e465m3246009754 21732r0976e4236, qu'il lui a envoié'. Scan 8: 'ce que A a dit a 67035524609732en875 he4056 907713625e4370.' Groups such as 67, 46, 4609 and 975 recur. No decipherment between the lines or in the margin on scans 2, 6, 7 or 8; the marginal text on scans 4, 6 and 8 is clear French from the writer. Earlier scans 1, 4, 20, 30, 55 were correct that they hold no digits, but they missed the four leaves that do."
+  },
+  "searches": [
+   {
+    "query": "Hobbe van Aylva Joan Duncan brieven geheimschrift 1730 1731 huis Waardenburg Neerijnen archief",
+    "result": "Nothing on these letters: general Dutch cipher articles (Elizabeth Stuart, Gerbier) only. Run by batch c22."
+   },
+   {
+    "query": "Geyl \"Willem IV en Engeland\" Duncan Vere Aylva 1730 1731 cijfer brieven prins van Oranje \"Quem Nosti\"",
+    "result": "Geyl's De Gids 1924 text opened: Duncan and d'Aylva named as influential, sources Huisarchief and PRO; no cipher, no Waardenburg, no 1730-31 letters. Run by batch c22."
+   },
+   {
+    "query": "\"Quem Nosti\" Joan Duncan Willem IV brieven 1730 Aylva bedekte namen sleutel Rosendael Torck cifre",
+    "result": "Biography of Duncan as Raad en Requestmeester and STCN odes only; no edition or decipherment of these letters. Run by batch c22."
+   },
+   {
+    "query": "\"Huizen Waardenburg en Neerijnen\" inventaris Van Aylva Willem IV brieven Duncan Vere gepubliceerd edition Geyl bron",
+    "result": "Jaarboek 1903 report on the Huisarchief and Geyl's English correspondence 1734-43 (later dates); no printing of inv. 124. Run by batch c22."
+   },
+   {
+    "query": "Joan Duncan Hobbe van Aylva 1730 letters Rosendael Torck Willem IV cipher numbers decipherment \"Duncan\" Orange party Friesland",
+    "result": "Run in this batch: only d'Avaux 1684 (Lasry), Perwich 1670 and a Portuguese spy 1646 in HistoCrypt and press; nothing on Duncan, Aylva or these letters."
+   },
+   {
+    "query": "cryptiana Tomokiyo Dutch cipher 1730 Prince of Orange Duncan Aylva OR \"van Aylva\" number cipher Willem IV stadholder Friesland",
+    "result": "Run in this batch: Cryptiana posts on Huygens and d'Avaux and the 1739 Dutch military cipher, none on Duncan, Aylva or a 1730 Orange cipher."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for Aylva, Hobbe van Aylva, Joan Duncan, 0439 and Waardenburg, rerun in this batch: only this lead and its sweep; the Aylva hits noted by c22 are the 1795 family jargon list A35-488-1, another key.",
+   "tomokiyo": "Cryptiana code/GL.htm fetched in this batch and grepped for Aylva, Duncan, Gelders, Waardenburg: 0 hits. A web search naming Tomokiyo, Duncan and Aylva gave no Cryptiana page on these letters.",
+   "lasry": "GL.htm covers Lasry's listed readings and has no hit for Duncan or Aylva; web searches gave only his 1684 d'Avaux paper, a different collection; known.py shows no Lasry item in the repo for inv. 124.",
+   "edition": "No edition of inv. 124 found. Geyl's Engelsche correspondentie covers 1734-43, not 1730-31. Jaarboek 1903 (DBNL) describes Huisarchief no. 189, 'Quem Nosti' letters 1734-38 with a key to cover names, a separate series.",
+   "literature": "Geyl, De Gids 1924, has no cipher content on Duncan. One De Leeuw chapter (UvA PDF, text search) has no hit for Duncan, Aylva or 1730-31; the rest of that book was not searched. No HistoCrypt or Cryptologia hit in the searches run."
+  },
+  "key_check": "Key inv. 126 tested only in part, and it did not open the strings. Cover names on these leaves do match its tables (scan 1 and scan 2). 'Supplement du Chiffre' (scan 9) gives pairs 42-89 only: paired from the start, the scan 8 string gives 67 N, then 03 and 24, and the scan 6 string 46 C, then 09, all outside the table, and the strings also hold letter forms the table has no place for. The letter table on scan 5 (a x, b r, c p ...) substitutes letters, not digits. Key sheets read: 1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 15, 17, 19, 20; sheets 6, 7, 8, 14, 16, 18 were seen only as thumbnails, which look like versos. No full transcription or solver run was done, so the digit system of the strings is not established.",
+  "key_in_volume": "Gelders Archief 0439 inv. 126, 'Sleutels tot het geheimschrift, 1730, 1731', 20 scans online. Scan 1 'Extract uit het groot Chyffer': Rosendael E:E:, Veldwen D:D:, de Burggraaf C:C:, Torck F:F:, Chesterfield O, and others. Scan 2: more cover names and signs. Scan 3 and 15: numbered lists (30 de Hr v. Ittersum, 70 Deventer, 800 Luisius, 900 Grumbkow ...). Scan 5: letter-for-letter table. Scan 9 'Supplement du Chiffre': A 42/43 to Z 88/89. Scan 11 'No 6': another cover list. Scan 19: printed 'Table de Chiffre' with instructions.",
+  "duplicates": "known.py Aylva, Hobbe van Aylva, Joan Duncan, 0439, Waardenburg, rerun in this batch: only this lead, lead 1946 (inv. 125, other writer, same key) and research/sweep_2026-11_ape. Not the same document as 1946.",
+  "verdict": "open",
+  "lead_updates": {
+   "access_note": "Scans online at Gelders Archief, inventory 0439: inv. 124 (64 scans), key inv. 126 (20). Cipher strings are on inv. 124 scans 2, 6, 7, 8 only. The BotStopper page passes on its own in Chrome; 403 to WebFetch."
+  }
+ },
+ "1946": {
+  "date": "2026-11-03",
+  "by": "claude leads review batch c24",
+  "seen": {
+   "kind": "scan",
+   "where": "Gelders Archief, 0439 Huizen Waardenburg en Neerijnen, inventory row 125 in the viewer at https://www.geldersarchief.nl/bronnen/archieven?mizig=210&miadt=37&miaet=1&micode=0439&minr=4399997&miview=inv2 (read in Chrome); APE record 0439-125 confirms the title.",
+   "extent": "All 134 scans viewed in this batch, scans 1-134 with none left out, at the same fit-page view as inv. 124 (0.75 or 0.8 of viewer width, a few at full width, scan 10 also zoomed). Viewing covered every scan for digit runs and signs; the running text was not transcribed. Scans that first showed a blank pane, a loading wheel or a blur were reloaded until sharp: 15, 18, 38, 52, 54, 57, 59, 76, 77, 84, 87, 120, 123, 134. None failed to render, including scan 38. Blank or show-through-only versos: 4, 20, 24, 28, 32, 48, 52, 59, 60, 71, 72, 80, 83, 84, 88, 92, 100, 121, 122, 123, 124, 127, 128. Slips laid over a page at 25-29, 105-109 and 130-134 were photographed lifted too, so the text under them is seen. Dutch letters 'Doorluchtigste Prins' signed H. Vere, 's Hage 23 May to 11 Sept 1731, and memoranda ('Memorie'); scans 45-47 a draft letter in French to the King, 'Projet de la lettre que Z pourroit ecrire a N'; scans 125-126, 129-130 French copies (Seville declaration, marquis de la Paz letter); scans 131-133 a draft letter in French.",
+   "cipher": "No digit runs and no running sign cipher on any of the 134 scans. Clear Dutch with cover names: Z and N throughout, O, E.E., F.F., D:D:, S.S., Y.Y. Isolated code numbers that stand for names or terms, one at a time in clear sentences, on scans including 10 (800, 850), 12 (750), 14 (950, 800, 900), 16 (900), 21 (900), 22 (750), 31 (960, 970, 900), 34 (970, 750), 44 (750), 57 (900, 750), 67 (750), 73, 74 and 94 (750). Single sign ⊞ on scans 11, 15, 22, 55, 66. The writer glosses two numbers himself at scan 31, in a postscript: '960 in de Memorie vermeld is de Heer Borck en 970 de Heer ...'. No interlinear or marginal decipherment."
+  },
+  "searches": [
+   {
+    "query": "H. Vere prins van Oranje Willem IV 1731 brieven geheimschrift sleutel Aylva Friesland stadhouder",
+    "result": "DBNL Jaarboek 1903 (Huisarchief): no. 189, 'Quem Nosti' letters 1734-38 with a key to cover names, 'de grote Veer (H. Vere?)'. Not this folder and no decipherment. Run by batch c22."
+   },
+   {
+    "query": "Henry Vere Hendrik de Vere 1731 Prince of Orange Willem IV Domeinraad Nassau Domains agent The Hague letters cipher Hobbe Baerdt van Sminia Aylva stalmeester",
+    "result": "Nothing on Vere's 1731 letters; unrelated Hague cipher items, such as Holdernesse 1749-51. Run by batch c22."
+   },
+   {
+    "query": "Vere 1731 \"Doorluchtigste Prins\" Domeinraad Dutch cipher key \"groot chyffer\" Prince of Orange Tomokiyo cryptiana Lasry decode Dutch stadholder Friesland cipher 18th century",
+    "result": "De Leeuw's Cryptology and statecraft and Lasry's 1684 d'Avaux paper as background; nothing on this folder or its key. Run by batch c22."
+   },
+   {
+    "query": "\"Vere\" 1731 Willem IV Prince of Orange Grumbkow Luiscius negotiation Prussia succession William III letters Gelders Archief Waardenburg Neerijnen",
+    "result": "Run in this batch: Grumbkow biographies and older Prussian memorials in the National Archives catalogue; nothing on Vere, this folder or a cipher."
+   }
+  ],
+  "prior_art": {
+   "decode": "known.py on the harvested DECODE dump for H. Vere, 0439 and Waardenburg, rerun in this batch: only this lead, 1945 and the sweep; 'Vere' is not otherwise recorded.",
+   "tomokiyo": "Cryptiana code/GL.htm fetched in this batch and grepped for 'vere ', Gelders, Waardenburg: 0 hits. The earlier Tomokiyo search naming Vere, 1731 and the Domeinraad found no page on this folder.",
+   "lasry": "GL.htm covers Lasry's listed readings and has no hit for this folder. The search gave Lasry's 1684 d'Avaux paper only, a different collection; known.py shows no Lasry item for Vere in the repo.",
+   "edition": "No edition of inv. 125 found. Geyl's Engelsche correspondentie covers 1734-43, later than this 1731 folder. The Jaarboek 1903 report lists only the Huisarchief series.",
+   "literature": "Geyl, De Gids 1924, mentions no Vere letters or cipher (its 'Veere' is the town). One De Leeuw chapter text-searched, no Vere or 1731 hit; rest of that book not searched."
+  },
+  "key_check": "Key inv. 126 spot-tested on what appears and it fits; not applied to every occurrence. Scan 15 of the key, headed 'Chyffer' and dated 1 June 1731, and key scan 3 give 750 een Accommodement, 800 De Heer Luisius, 850 De Scheiding, 900 De Heer Grumbkow, 950 Anglois, and key scan 3 ends with 960 and 970 (Borck and a second name), matching Vere's own postscript at scan 31; scan 10 '800' and '850', scan 12 '750 met N' and scan 21 '900' read sensibly with them. Key scan 1: Zyne Hoogheit Z, De Koning van Pruissen N, Chesterfield O; scan 45 'Projet de la lettre que Z pourroit ecrire a N', about the succession of King William, agrees. Key scan 2 gives the sign ⊞ for 'Huiwelyk met Engeland'.",
+  "key_in_volume": "Gelders Archief 0439 inv. 126, 'Sleutels tot het geheimschrift, 1730, 1731', 20 scans online: scan 1 'Extract uit het groot Chyffer', scan 2 more names and signs, scans 3 and 15 numbered lists, scan 9 'Supplement du Chiffre' A 42/43 to Z 88/89. The number alphabet of scan 9 is not in use on any of the 134 scans of this folder.",
+  "duplicates": "known.py H. Vere, 0439, Waardenburg, rerun in this batch: only this lead, lead 1945 (inv. 124, other writer, same key) and research/sweep_2026-11_ape. Not the same document as 1945.",
+  "verdict": "not_cipher",
+  "closed": "Every scan of the folder viewed, 1-134 of 134, none left unread and none failing to render. They show only clear Dutch and French with cover names, isolated code numbers standing for names and terms (750, 800, 850, 900, 950, 960, 970) and the single sign ⊞. Those spot-tested are glossed by key inv. 126 (scans 1, 2, 3, 15). The inventory's 'gedeeltelijk in geheimschrift' is met by these. No digit runs like those of inv. 124 scans 2, 6, 7, 8, and no running sign cipher. The view was fit-page, looking for ciphertext; the Dutch was not transcribed word by word.",
+  "lead_updates": {
+   "access_note": "Scans online at Gelders Archief, inventory 0439: inv. 125 (134 scans), key inv. 126 (20). All 134 viewed: cover names and isolated code numbers only, no digit runs. The BotStopper page passes on its own in Chrome; 403 to WebFetch."
+  }
+ }
+}
