@@ -39,3 +39,14 @@ Nothing below has been checked here yet. It is what Brice Dudout's email of 19 O
 2. Check Brice's no. 8 key on the Gallica images of f. 22r-v.
 3. Then write up as a contributed result (provenance contributed or mixed), credit `dudout` with role "solution",
    and Tomokiyo as prior solution if his 2019 decipherment covers it.
+
+## Brice Dudout: comparison with Tomokiyo 2019 (credit added 4 Nov 2026)
+
+This is the comparison that Next step 1 asks for. Brice Dudout received Tomokiyo 2019 from the author on 22 Oct 2026.
+He aligned his no. 6 reading line by line on the reading in Tomokiyo's appendix, using the manuscript lines.
+- His render v14 (22 Oct 2026) was made before he saw the article. It agrees with Tomokiyo's letter on 0.975 of the aligned places.
+- Most differences came from his transcription, not the key. He took 27 corrections from Tomokiyo (23 cases of 0 for 6, 4 of 6 for 0) and two values from Tomokiyo's Table 1.3 (97 = s, 61 = b). Three of Tomokiyo's queried values (05, 64, 69) were not taken, because the alignment contradicts them. The result, render v16 (23 Oct 2026, published on his page), agrees on 0.981.
+- No. 8: the consonant table is the same as Tomokiyo's. The vowels are the same except 71 (Brice o, Tomokiyo u).
+- Priority: Tomokiyo 2019 has the segmentation, the alphabet and the first reading of both items. Brice's own additions are nomenclator values that Tomokiyo leaves as numbers (426 Navarra, 017/617 Infanta, 002 S.S., 007 Spagna, among others) and a translation.
+
+Credited `dudout`, role "verification". Not re-checked here. The article itself is not copied, since it is a paywalled publication.
