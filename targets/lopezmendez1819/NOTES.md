@@ -1,5 +1,7 @@
 # Luis López Méndez to Simón Bolívar, London, 29 Jan 1819 (catalogue 1523)
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+
 Status: **read in part, cipher words only.** 14 of the 15 cipher words (93%) read as sense; the 15th, "[?Maracaibo]", is a context guess. These are words read from context, with a partial table consistent with them. This is a plaintext-guided partial table, not a recovered key.
 
 Fifteen underlined words in the letter read as "he estado preso cinco veces y he salido con fianza", "Mac Gregor", "para [?Maracaibo]" and "Santafé". The table fits them without conflict. It has not been checked against a biography or against another López Méndez cipher letter, because none was found or reached.

@@ -1,5 +1,7 @@
 # alfonso1576: Alfonso II d'Este to the protonotary at Venice, 14 Apr 1576 (catalogue 1566)
 
+Status: in progress. Not yet written up: no site page or README row. Classed read (narrowly), so it is ready for the /writeup skill. The status below is the contributor's.
+
 Status: read (3 Nov 2026), by a narrow margin. Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera E, Este (d'), Alfonso II d'Este, duca di Ferrara, cc. 76-77.
 
 Catalogue 1566 holds three letters in three systems. One key, one entry: this folder has the 1576 letter, and `targets/ercole1559` has the 1559 letter to Bentivoglio and the note on Ariosto's c. 1.

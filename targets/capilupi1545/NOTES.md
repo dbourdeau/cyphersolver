@@ -1,5 +1,7 @@
 # capilupi1545: Camillo Capilupi to Ferrante Gonzaga, catalogue 1565
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+
 Worked 3 Nov 2026 by WAINUT with AI language-model agents viewing the images. No human palaeographer has checked it.
 
 | Document | Status | Cipher words | As sense (A) | No restored or changed letter (C) |

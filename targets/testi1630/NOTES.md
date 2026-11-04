@@ -1,5 +1,7 @@
 # 1567 Francesco I d'Este / Fulvio Testi to Ottavio Bolognesi, 1630-1636: read in part
 
+Status: in progress. Not yet written up: no site page or README row. Read in part, or not read, with escalation steps still open (see its status below, Remaining gaps and Escalation). The status below is the contributor's.
+
 Status: read in part (3 Nov 2026). Of the 13 letters in entry 1567, 7 are read, c. 13r is read in part (8 lines), 5 are
 unread. "Read" means the cipher of that letter. cc. 20 rests on a one-word margin. cc. 73-74 is read, provisional. The key
 was got from a later clear copy, c. 22, not by cryptanalysis. Prior art is open: we do not claim that any of this is new.
