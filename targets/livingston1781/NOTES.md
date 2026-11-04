@@ -92,3 +92,13 @@ Columbia's Jay Papers catalogue, web search. Tomokiyo's cryptiana has no page on
 Existing decipherment: the draft's interlinear glosses and Jay's key-sheet entry give the whole line. The work was
 finding them, transcribing the ALS line, and checking the three witnesses against each other and against the
 printed Thomson form.
+
+## Brice Dudout: independent reading of the addition line (credit added 4 Nov 2026)
+
+On 27 Oct 2026, the same day and without this folder, Brice Dudout's session read the line by another route. It
+aligned the ALS (the lost Palfrey numbering) word by word on the triplicate (Thomson code, whose key survives). The
+letter's own text gives 226 = e (re-ception, met, finesse), 69 = b ("can be"), 346 = d (pride) and 398 = to. Hence
+be 600, de 602 and the e of all six, with c, f, g, h from the order and from Livingston's entries on Jay's key sheet
+(ldpd:50144 p. 2). It also found that the syllables end in e, not r. The result is the same as this folder's reading
+from the draft's glosses, which has priority. Credited `dudout`, role "verification". A second fragment on ALS p. 3
+("500 need 203, 2?4 = 90.149, 193.51.221") was not read; only 149 = er is sure.
