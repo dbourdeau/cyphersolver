@@ -203,3 +203,12 @@ deciphered occurrence anywhere), and R9898's bleed-through pages, which do not r
 ## Dudout corrections, 29 Oct 2026
 - The period decipherment of the 14 Apr 1524 despatch (R9873) is BNE MSS/20214/52-1 ("Claro" A-D). Measured against it, our unbracketed words agree in 92.8% (1353/1458) and the [?] words in 34%. Value fixes: gul = quando (not si), hay = porque (not aunque; fum = otra), var probably como, gig = pudie-, fe = quisie-, pam = falta-, biz = yda (not venida), yer = alli (not Florencia), vol = dinero, xoc = ayuda, and others listed in his file. Same BNE volume holds four more Sessa cipher/clear pairs (52-4, -6, -10, -14) and two letters without a clear (52-7, 52-11). R9893 is a short letter of 24 Jul 1524, not 52-7; R9894 = CSP Spain ii no. 663 (29 Jul 1524), calendared with a contemporary deciphering. His extended key reads 52-7 at 94.0% of its ciphered part (under the bar).
 (Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)
+
+## Contribution (Brice Dudout, 4 Nov 2026): BNE MSS/20214/52-7 read in part
+
+Sessa's long letter of 24 July 1524 (BNE MSS/20214/52-7, no period clear; not in CSP Spain ii, not R9893 nor R9894) is
+transcribed (1,340 code groups) and read in part with key KS4: this folder's key extended only from contemporary
+cipher/clear pairs (BNE 52-1 with R9873, 52-4, 52-10, 52-14, and R9893), frozen, then validated once on the held-out
+pair BNE 52-6 (4 Jun 1524): characters 0.860, words 0.772, 200 shuffled-key controls max 0.274 / 0.174. Of the 670
+cipher words, 590 are certain, 33 probable, 7 restored and 40 unresolved: 94.0%, under the 95% bar. Files and limits
+in `dudout/README.md`.

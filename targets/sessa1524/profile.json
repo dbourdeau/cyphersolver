@@ -95,6 +95,37 @@
     "image_quality": "unknown",
     "notes": "Clear and cipher interleaved throughout; heavy bleed-through on ff. 150v-151r and 155v. Token count as for r9873 (includes f~ and quoted clear words). Read as sense (measure_read.py): 79.8% with pass-17 tentative values, 77.9% strict."
    }
+  },
+  {
+   "id": "bne52-7",
+   "read": "read in part",
+   "shelfmark": "BNE MSS/20214/52-7 (Gayangos papers; Biblioteca Digital Hispánica, CC BY 4.0)",
+   "date": "24 Jul 1524",
+   "year": 1524,
+   "country": "Spain",
+   "route": "Rome -> Charles V's court",
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment with it; not in CSP Spain ii (July 1524: nos. 661-663 only); DECODE R9893 (same day) and R9894 (29 Jul, CSP ii 663) are other letters.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1340,
+    "unit": "code groups",
+    "measured": true,
+    "file": "dudout/bne52-7_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE digitisation, views 000-002 (not reproduced)",
+    "image_quality": "fair",
+    "notes": "Brice Dudout's contribution (dudout/README.md). 1,340 code groups + 531 words in clear; the r-like sign split into three forms (A/B/C) after a pre-registered blind plate; read at 120 ppi by one reader."
+   }
   }
  ],
  "system": {
@@ -356,7 +387,8 @@
   ],
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "the court's decipherments of sibling letters in Salazar A-31 (ff. 138/140, 170-172, 322-324, R9893) and R9898's marginal decipherments"},
-    {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain ii 636-638 (R9873) used as a topic crib", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), nos. 636-638"}
+    {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain ii 636-638 (R9873) used as a topic crib", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), nos. 636-638"},
+    {"who": "dudout", "role": "solution", "note": "BNE MSS/20214/52-7 transcribed and read in part (94.0% of the cipher words) with key KS4 (this folder's key extended from the BNE pairs 52-1, 52-4, 52-10, 52-14 and R9893, validated on held-out 52-6); see dudout/README.md", "date": "2026-10-29", "source": "Biblioteca Nacional de España, MSS/20214/52 (CC BY 4.0)"}
   ],
   "texts": [
    {
@@ -412,6 +444,24 @@
     "language": "es",
     "reading": "r9898_reading.md",
     "state": "decoded, not read"
+   },
+   {
+    "doc": "bne52-7",
+    "label": "BNE MSS/20214/52-7, Rome, 24 Jul 1524 (Brice Dudout)",
+    "transcription": "dudout/bne52-7_transcription.txt",
+    "decryption": "dudout/bne52-7_reading.md",
+    "reading": "dudout/bne52-7_reading.md",
+    "translation": "dudout/bne52-7_en.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.94,
+    "summary": "Sessa reports the Pope's words: Italy confused since the viceroy left; the Pope pressed to join a league that England wants, which he has not and will not consent to; news by way of Bourbon; the French suspicious and fearful; the bishop of Bayeux now an avowed French ambassador; Casale to England; Alberto Pio back from Viterbo; the confirmation of the league; Pescara takes Saluzzo, the army unpaid. Key KS4 (your key + five BNE cipher/clear pairs and R9893) validated on the held-out pair 52-6; 630 of 670 cipher words read (94.0%).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-04",
+     "note": "Read as sentences 4 Nov 2026 (Spanish 1524, read in part): views 000-001 read as continuous sentences (the Pope's message on the league, Bourbon, the French, the datary and the archbishop of Capua, Bayeux, Casale, Sigismondo, Alberto Pio, the confirmation of the league); view 002 holds except one run (V2gL04-05, 'para ‹gab›rse y ‹...› otros franceses'). 670 cipher words: 590 certain, 33 probable, 7 restored, 40 unresolved = 94.0%, so grade B and read in part. Key KS4 validated by one measurement on held-out BNE 52-6 (characters 0.860, words 0.772; 200 controls max 0.274/0.174)."
+    }
    }
   ],
   "key_file": "key_working.md"
