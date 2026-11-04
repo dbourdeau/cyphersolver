@@ -166,3 +166,15 @@ Scripts: `scripts/decode.py`, `scripts/check_marks.py`, `scripts/count_words.py`
 time, 1 s apart), `scripts/strips.py`, `scripts/zoom.py` (need Pillow, numpy and the images) and `scripts/pass2_blind.py`
 (needs Pillow, the images and a local model helper that is not included) are a record of the method. No images are
 included; `scripts/fetch.py` fetches them from the manifest above.
+
+## Note, 4 Nov 2026: class corrected to read in part; not written up
+
+The profile class was "read" (98.0% of the sign-bearing words, strictest count 93.1%). Three gaps are marked
+`not-attempted` (a blind reading of L00-L03, L05, L06 and L10 beyond the one independent check; the clear text of
+cc. 1r-2v; the identity of the Commendator Galilei and the Viceroy), and the read bar allows no gap `not-attempted`, so
+the class is now "read in part" and the target stays `Status: in progress`. The first two need the Estense images, which
+were not reachable from the maintainer's session. A web search for the Commendator Galilei on 4 Nov 2026 found nothing
+(it supports only that Gondi was first secretary of state to Ferdinando II from 1641); Brovadan's 2020 chapter on Gondi's
+letters and the Florentine state archive (Mediceo del Principato) are untried. Also still missing: a statistical
+validation record (`docs/_validate.py --write` or `--na` with a reason).
+
