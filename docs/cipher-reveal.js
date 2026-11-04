@@ -24,9 +24,9 @@
       <div class="cr-ctl"><button type="button" class="cr-play">&#8635; Replay</button>
       <button type="button" class="cr-mode" aria-pressed="false">Cipher only</button></div></div>
       <div class="cr-bar"><i></i></div>
-      <div class="cr-tiles"></div>
+      <div class="cr-tiles" translate="no"></div>
       <p class="cr-info" aria-live="polite"><span>${ciph.length} ${unit} &middot; ${read} read &middot; ${key.size} distinct.</span> <span class="cr-hint">Hover or tab to a group to trace it through the text and the key.</span></p>
-      <details class="cr-key"><summary>The key for this passage <span>${key.size} ${unit}</span></summary><div class="cr-grid"></div>${d.key_note?`<p class="cr-note">${esc(d.key_note)}</p>`:''}</details>
+      <details class="cr-key"><summary>The key for this passage <span>${key.size} ${unit}</span></summary><div class="cr-grid" translate="no"></div>${d.key_note?`<p class="cr-note">${esc(d.key_note)}</p>`:''}</details>
       ${d.caption?`<figcaption>${esc(d.caption)}</figcaption>`:''}`;
     const box=fig.querySelector('.cr-tiles'), grid=fig.querySelector('.cr-grid'), info=fig.querySelector('.cr-info'), bar=fig.querySelector('.cr-bar i');
     const words=toks.some(t=>t.w); let wd=null, solo=true;   // solo: the open word takes no more groups

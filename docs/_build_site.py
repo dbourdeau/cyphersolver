@@ -88,6 +88,7 @@ def normalise(s):
                                                                            # use .meta again in the body for notes
     s = re.sub(r'(?<![\w-])(?:targets|research)/', '', s)   # repo paths gained these prefixes on 26 Sept 2026; a move is not an edit
     s = re.sub(r'\?v=\w+', '', s)      # version stamps vanish without a trace, so a newly stamped src hashes as before
+    s = s.replace(' translate="no"', '')       # added by protect_text(); not an edit
     s = re.sub(r' ?<span class="credit">[^<]*</span>| data-credit="[^"]*"', '', s)   # figure credits, added flush
     for pat in GENERATED: s = re.sub(pat, ' ', s, flags=re.S)
     return re.sub(r'\s+', ' ', s).strip()
@@ -3146,7 +3147,7 @@ def lasry_report_html(page):
                     if rec: out.append(fig(rec, leaf_credit(e.get('folio')), f'The manuscript lines of the excerpt ({html.escape(e.get("folio") or "")}).{see}'))
                 ex = ''.join(f'<p>{lr_inline(x)}</p>' for x in e.get('excerpt') or [])
                 tr = ''.join(f'<p>{lr_inline(x)}</p>' for x in e.get('translation') or [])
-                out.append(f'<div class="lr-pair"><div><h4>Excerpt</h4>{ex}</div>' + (f'<div><h4>Translation</h4>{tr}</div>' if tr else '') + '</div>')
+                out.append(f'<div class="lr-pair"><div class="lr-excerpt"><h4>Excerpt</h4>{ex}</div>' + (f'<div><h4>Translation</h4>{tr}</div>' if tr else '') + '</div>')
         # Readable text, in full
         rt = (rd / 'readable.md').read_text(encoding='utf-8')
         body = ['<h3 id="lasry-readable">Readable text</h3>',
@@ -3706,6 +3707,20 @@ def credit_figures(s):
         return fig.replace('</figure>', f'<figcaption>{span.strip()}</figcaption></figure>', 1)
     return re.sub(r'<figure((?! class="(?:party|lead))[^>]*)>.*?</figure>', add, s, flags=re.S)
 
+NO_TRANSLATE_CLASSES = ('cipherstrip', 'lr-readable', 'lr-excerpt', 'cr-tiles', 'cr-grid')
+
+def protect_text(s):
+    """translate="no" on ciphertext, transcriptions, original-language readings and keys, so a browser's page
+    translation leaves them alone: every <pre> and <code>, the classes above, and any element with a non-English lang."""
+    def mark(m):
+        tag, attrs = m.group(1), m.group(2)
+        return m.group(0) if re.search(r'\btranslate=', attrs) else f'<{tag}{attrs} translate="no">'
+    s = re.sub(r'<(pre|code)(?![\w-])([^>]*)>', mark, s)
+    cls = '|'.join(NO_TRANSLATE_CLASSES)
+    s = re.sub(r'<(?!html)([a-z][a-z0-9]*)([^>]*\bclass="(?:[^"]*\s)?(?:%s)(?:\s[^"]*)?"[^>]*)>' % cls, mark, s)
+    s = re.sub(r'<(?!html)([a-z][a-z0-9]*)([^>]*\blang="(?!en)[^"]*"[^>]*)>', mark, s)
+    return s
+
 def process(path):
     slug = path.stem
     s = path.read_text(encoding='utf-8')
@@ -3881,6 +3896,7 @@ def process(path):
             s = re.sub(r'<!-- cards:start -->.*?<!-- cards:end -->', lambda m: cards, s, flags=re.S)
         else:
             s = re.sub(r'(<h2(?: id="writeups")?><span class="num">01</span> Write-ups</h2>\s*)<div class="cards">.*?</div>\n(?=\n<h2)', lambda m: m.group(1) + cards + '\n', s, count=1, flags=re.S)
+    s = protect_text(s)
     after = content_hash(s)
     if after != rec['hash']:     # a generated element normalise() does not know about
         print(f'  note: {slug} rehashed after build; check normalise()')
