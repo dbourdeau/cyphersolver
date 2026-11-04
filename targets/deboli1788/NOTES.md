@@ -1,5 +1,5 @@
 # Deboli → Stanisław August, St Petersburg cipher despatches, 1788 (Unsolved Catalogue 417)
-Status: read in part (Brice Dudout, 28 Oct 2026; no. 038 of 13 May 1788, 911 of 943 groups with a key value, about 0.86 read as sense on a held-out pair).
+Status: no write-up. Read in part, and deliberately not written up by the maintainer's decision of 4 Nov 2026: the escalation steps are not done and the read share is about 0.86, under the 95% bar. Contributor's status: read in part (Brice Dudout, 28 Oct 2026; no. 038 of 13 May 1788, 911 of 943 groups with a key value, about 0.86 read as sense on a held-out pair).
 
 Contributed by Brice Dudout (Europe chiffrée, https://bdudout.github.io/europe-chiffree/), with Claude Opus 5.5 agents.
 The key is Daniel Bourdeau's 1789 key (`targets/deboli1789/key_pass.tsv`), completed on 1788 pairs.
